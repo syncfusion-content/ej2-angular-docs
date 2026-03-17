@@ -1,15 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Component, OnInit } from '@angular/core';
-import { GridModule, PageService, GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { GridComponent, GridModule, PageService, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-standalone: true,
+  imports: [ GridModule ],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' [selectionSettings]='selectionOptions' height='268px'>
             <e-columns>
@@ -33,6 +28,3 @@ export class AppComponent implements OnInit {
     this.selectionOptions = { type: 'Multiple' };
   }
 }
-
-
-

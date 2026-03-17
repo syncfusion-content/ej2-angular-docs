@@ -1,15 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, ToolbarService, PdfExportService ,GridComponent, ToolbarItems,PageService} from '@syncfusion/ej2-angular-grids';
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, PageService, PdfExportService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { Query } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [GridModule],
-providers: [PdfExportService, ToolbarService, PageService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PdfExportService, ToolbarService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
@@ -55,6 +53,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-

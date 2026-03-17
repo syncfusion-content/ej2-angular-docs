@@ -14,19 +14,25 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component incl
 
 ## Set up editing
 
-Before using editing in the grid, understand that the component needs the [Edit](https://ej2.syncfusion.com/angular/documentation/api/grid/edit) module to unlock all editing features. The `Edit` module is a service that powers all create, read, update, and delete operations. Without it, editing features cannot work.
+Before using editing in the grid, understand that the component needs the [EditService](https://ej2.syncfusion.com/angular/documentation/api/grid/edit) module to unlock all editing features. The `EditService` is a service that powers all create, read, update, and delete operations. Without it, editing features cannot work.
 
-Inject the `Edit` module into the Grid component's `Inject` services array to enable editing:
+Inject the `EditService` to the providers array.
 
 ```ts
-import { Inject, Edit } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridComponent, EditService, ToolbarService, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 
-<GridComponent>
-  <Inject services={[Edit]} />
-</GridComponent>
+@Component({
+    selector: 'app-root',
+    providers: [EditService, ToolbarService, PageService, SortService]
+    template: `
+    <ejs-grid [dataSource]='data'>
+    </ejs-grid>`, 
+})
+export class AppComponent {
+  public data: any[] = [...];
+}
 ```
-
-The `Inject` component tells the grid to load the `Edit` module when the component initializes. This happens automatically when the page loads.
 
 ## Enable editing
 
@@ -42,11 +48,10 @@ Editing requires a primary key column to support full CRUD functionality. Define
 
 Edit actions can be initiated by double-clicking a row or by selecting a row and clicking the `Edit` button in the toolbar. Records can be added by clicking the `Add` button in the toolbar or via an external trigger that invokes the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/edit#addrecord) method. Use `Save` and `Cancel` to commit or discard changes from the toolbar during edit mode. Deletion is performed by selecting the target row and clicking the `Delete` button.
 
-For CRUD operations, inject the [EditService](https://ej2.syncfusion.com/angular/documentation/api/grid/edit) module in the `@NgModule.providers` section.
-
 To explore available edit modes and types in Angular Grid, refer to the following video:
 
 {% youtube "https://www.youtube.com/watch?v=RefC_z4Nnmg" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,8 +97,8 @@ The Grid component provides the option to disable editing for specific columns. 
 
 To permanently disable editing for a column, set the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowediting) property to `false` on the column. This prevents editing for that column across all rows:
 
-```js
-<ColumnDirective field='OrderID' allowEditing={false} />
+```html
+<e-column field='OrderID' [allowEditing]='false'></e-column>
 ```
 
 ### Dynamic column disabling
@@ -282,9 +287,9 @@ The following example demonstrates to edit complex nested data. The "FirstName" 
 
 ## Editing foreign key columns
 
-The Syncfusion Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the DropDownList component during editing. This flexibility is particularly useful for customizing the editor for foreign key columns. By default, the Syncfusion Grid renders the DropDownList component as the editor for foreign key columns during editing. However, this behavior can be enhanced and customized by leveraging the [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) property for the column using `ng-template`. The `editTemplate` property allows specification of a cell edit template that serves as an editor for a particular column, accepting either a template string or an HTML element ID.
+The Syncfusion Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the `DropDownList` component during editing. This flexibility is particularly useful for customizing the editor for foreign key columns. By default, the Syncfusion Grid renders the `DropDownList` component as the editor for foreign key columns during editing. However, this behavior can be enhanced and customized by leveraging the [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) property for the column using `ng-template`. The `editTemplate` property allows specification of a cell edit template that serves as an editor for a particular column, accepting either a template string or an HTML element ID.
 
-In the following code example, the "Employee Name" is a foreign key column. When editing, the ComboBox component is rendered instead of DropDownList.
+In the following code example, the "Employee Name" is a foreign key column. When editing, the `ComboBox` component is rendered instead of `DropDownList`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -304,9 +309,9 @@ The Syncfusion Angular Grid enables enforcement of constraints to prevent duplic
 
 To prevent adding duplicate rows in the grid, follow these steps:
 
-1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered "Order ID" already exists in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource). This allows editing an existing row without triggering a duplicate error.
+1. Implement Custom Validation: Define the "orderIdCustomValidation" function to check whether the entered "Order ID" already exists in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource). This allows editing an existing row without triggering a duplicate error.
 
-2. Add Dynamic Validation Rules: Create the `orderIDRules` object to enforce unique "Order ID" values. Dynamically add this rule to the form during the `save` action.
+2. Add Dynamic Validation Rules: Create the "orderIDRules" object to enforce unique "Order ID" values. Dynamically add this rule to the form during the `save` action.
 
 3. Handle Validation in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event: In the `actionBegin` event, check if the `requestType` is `save`. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
 
@@ -358,7 +363,7 @@ The following example demonstrates external CRUD operations with a custom toolba
 
 Instead of editing data in the grid itself, custom forms can be used to edit selected rows. When a row is selected in the grid, the corresponding data is populated in an external form. Changes made in the external form update the grid data.
 
-The `rowSelected` event can be used to capture row selection and populate external form fields with the selected row's data. The following example demonstrates editing using an external form.
+The [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#rowselected) event can be used to capture row selection and populate external form fields with the selected row's data. The following example demonstrates editing using an external form.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -378,8 +383,8 @@ If editing or deleting only works for the first row in the grid, the [isPrimaryK
 
 **Solution**: Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` on the column that contains unique identifiers:
 
-```ts
-<ColumnDirective field='OrderID' headerText='Order ID' width='100' isPrimaryKey={true} />
+```html
+<e-column field='OrderID' headerText='Order ID' width='100' isPrimaryKey='true'></e-column>
 ```
 
 ## Make a grid column always editable

@@ -1,12 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,GroupService,SortService,GridComponent,EditService,FilterService,ToolbarService,} from "@syncfusion/ej2-angular-grids";import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, ViewChild } from "@angular/core";
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { data } from "./datasource";
+import { data } from './datasource';
+import { Component, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { EditService, FilterService, GridComponent, GridModule, GroupService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+
 @Component({
- imports: [GridModule,ButtonModule],
- standalone: true,
+  imports: [GridModule,ButtonModule],
+  standalone: true,
   selector: "app-root",
   templateUrl: "app.component.html",
   providers: [GroupService, ToolbarService, SortService, EditService, FilterService],

@@ -1,27 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ChangeEventArgs, DropDownListComponent, } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
-import { GridComponent, EditSettingsModel  } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, EditSettingsModel, GridComponent, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ToolbarModule,
-        DropDownListAllModule
-    ],
-
-providers: [ToolbarService, EditService],
-standalone: true,
+    imports: [GridModule,ToolbarModule,DropDownListAllModule ],
+    providers: [ToolbarService, EditService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px' [editSettings]='editSettings'>
                 <ng-template #toolbarTemplate let-data>
@@ -72,6 +58,3 @@ export class AppComponent implements OnInit {
         (this.dropDown as DropDownListComponent).placeholder = args.itemData.text as string;
     }
 }
-
-
-

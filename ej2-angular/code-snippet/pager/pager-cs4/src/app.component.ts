@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { PagerModule, Pager, PagerDropDown } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { Pager, PagerDropDown, PagerModule } from '@syncfusion/ej2-angular-grids';
 
 Pager.Inject(PagerDropDown);
 
@@ -21,6 +20,3 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     }
 }
-
-
-

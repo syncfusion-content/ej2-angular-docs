@@ -1,13 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
 import { orderDetails } from './datasource';
-import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, PageService, RowDDService, SelectionService, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [GridModule],
+    imports: [GridModule],
     providers: [PageService, SelectionService, RowDDService],
     standalone: true,
     selector: 'app-root',
@@ -41,6 +37,3 @@ export class AppComponent implements OnInit {
         this.selectionOptions = { type: 'Multiple' };
     }
 }
-
-
-

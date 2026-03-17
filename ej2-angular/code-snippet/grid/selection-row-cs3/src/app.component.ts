@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser';
+import { data, Order } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data ,Order} from './datasource';
-import { GridModule,GridComponent, SelectionSettingsModel,PageSettingsModel,RowSelectingEventArgs, RowSelectEventArgs, RowDeselectEventArgs, RowDeselectingEventArgs} from '@syncfusion/ej2-angular-grids';
+import { GridComponent, GridModule, PageSettingsModel, RowDeselectEventArgs, RowDeselectingEventArgs, RowSelectEventArgs, RowSelectingEventArgs, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({

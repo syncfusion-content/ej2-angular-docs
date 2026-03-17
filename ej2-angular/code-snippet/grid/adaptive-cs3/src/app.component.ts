@@ -1,18 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ColumnChooserService, GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, EditService, 
-    SelectionService, ExcelExportService, PdfExportService, 
-    ToolbarService, GroupService, GridComponent } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ColumnChooserService, EditService, ExcelExportService, FilterService, GridComponent, GridModule, GroupService, PageService, PdfExportService, SelectionService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [GridModule],
-providers: [PageService, GroupService, SortService, FilterService, EditService,
-            ToolbarService, SelectionService, ExcelExportService, PdfExportService, ColumnChooserService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PageService, GroupService, SortService, FilterService, EditService, ToolbarService, SelectionService, ExcelExportService, PdfExportService, ColumnChooserService],
+    standalone: true,
     selector: 'app-root',
     template: `
         <div class="e-adaptive-demo e-bigger">

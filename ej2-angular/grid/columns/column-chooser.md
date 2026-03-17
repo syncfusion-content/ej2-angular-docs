@@ -14,7 +14,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid includes a bui
 
 To enable the Column Chooser, configure the following properties in the Grid component:
 
-- To use the Column Chooser, inject the `ColumnChooserService` in the providers array of `AppModule`.
+- To use the Column Chooser, inject the `ColumnChooserService` to the providers array.
 - Set the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid#showcolumnchooser) property to `true`.
 
 {% tabs %}
@@ -128,7 +128,7 @@ Here is an example for sort the column chooser list based on sort direction:
 
 The Grid also supports displaying only selected columns in the column chooser. This is helpful when only specific columns need to be shown in the column chooser, making it easier to focus on the most important ones.
 
-Specific columns can be shown in the column chooser by setting [selectedColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/columnchoosereventargs) in the event argument of the `beforeOpenColumnChooser` event.
+Specific columns can be shown in the column chooser by setting [selectedColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/columnchoosereventargs) in the event argument of the [beforeOpenColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#beforeopencolumnchooser) event.
 
 Here is an example for show only specific columns in the column chooser:
 
@@ -188,7 +188,7 @@ The Column Chooser template feature supports full customization of the column ch
 
 In this example, a Syncfusion<sup style="font-size:70%">&reg;</sup> `TreeView` component is rendered inside the column chooser. The Syncfusion<sup style="font-size:70%">&reg;</sup> `TreeView` package installation is described in the [documentation](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started). The `columnChooserSettings.template` property renders the `TreeView` with checkboxes. Checkbox selection is handled using the [nodeClicked](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeclicked) and [keyPress](https://ej2.syncfusion.com/angular/documentation/api/treeview#keypress) events, organizing columns into "Order Details", "Shipping Details", and "Delivery Status".
 
-The column chooser footer is customized using the `columnChooserSettings.footerTemplate` reference variable, which is assigned an `ng-template`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `Click` event. Additionally, the header is customized using the `columnChooserSettingsHeaderTemplate` reference variable, which is assigned an `ng-template` to include a title and an icon.
+The column chooser footer is customized using the `columnChooserSettings.footerTemplate` reference variable, which is assigned an `ng-template`, replacing the default buttons with customized "Apply" and "Close" buttons. The "Apply" button updates column visibility based on selection, while the "Close button closes the column chooser via the `Click` event. Additionally, the header is customized using the `columnChooserSettingsHeaderTemplate` reference variable, which is assigned an `ng-template` to include a title and an icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

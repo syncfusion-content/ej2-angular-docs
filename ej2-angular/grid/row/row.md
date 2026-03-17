@@ -12,14 +12,13 @@ domainurl: ##DomainURL##
 
 Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow interaction with the data in the grid. Rows can be selected, edited, sorted, filtered, and configured to trigger events based on actions.
 
-
-**Key Row Management Features:**
-- Dynamic row styling based on data conditions
-- Customizable row heights for optimal content display
-- Interactive hover effects and visual feedback
-- Frozen rows for persistent header information
-- Programmatic row addition, modification, and visibility control
-- Comprehensive row data access and manipulation methods
+**Key row management features:**
+- Dynamic row styling based on data conditions.
+- Customizable row heights for optimal content display.
+- Interactive hover effects and visual feedback.
+- Frozen rows for persistent header information.
+- Programmatic row addition, modification, and visibility control.
+- Comprehensive row data access and manipulation methods.
 
 ## Styling rows 
 
@@ -239,9 +238,9 @@ In the following example, the `frozenRows` property is set to "3". This configur
 > * Row virtualization is supported with frozen rows for enhanced performance.
 > * Frozen rows functionality can be combined with frozen columns for complete grid section freezing.
 
-### Frozen Row Line Color Customization
+### Frozen row line color customization
 
-Frozen row visual appearance can be customized through CSS styling to match application design requirements. The **.e-frozenrow-border** class provides the styling target for frozen row borders.
+Frozen row visual appearance can be customized through CSS styling to match application design requirements. The `.e-frozenrow-border` class provides the styling target for frozen row borders.
 
 ```css
 .e-grid .e-frozenrow-border {
@@ -313,7 +312,7 @@ In the Grid, rows can be shown or hidden based on some external action, such as 
 
 The `getRowsObject` method returns an array of row objects that represents all the rows in the grid. This method can be used to iterate through all the rows and access their data and index.
 
-The [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#getrowbyindex) method returns the HTML element of a row at the specified index. This method can be used to retrieve a specific row and apply changes to it.
+The getRowByIndex method returns the HTML element of a row at the specified index. This method can be used to retrieve a specific row and apply changes to it.
 
 In the following example, the "onCheckBoxChange" method checks whether the checkbox is checked or not. If it is checked, the method iterates through all the rows in the grid using the `getRowsObject` method. For each row, it checks whether the value in the "CustomerID" column is equal to "VINET". If it is, the index of that row is obtained using the `getRowByIndex` method and hidden by setting its display style to "none". The index of the hidden row is also added to an array called "hiddenRows".
 
@@ -417,7 +416,7 @@ Grid provides several methods to retrieve row data and elements. This feature is
     const rowElement = this.grid.getRowByIndex(rowIndex);
     ```
 
-2. [getRowIndexByPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid#getrowindexbyprimarykey):The method allows the row index to be retrieved based on a specific primary key value or row data.
+2. [getRowIndexByPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid#getrowindexbyprimarykey): This method allows the row index to be retrieved based on a specific primary key value or row data.
 
     ```ts
     const rowIndex = this.grid.getRowIndexByPrimaryKey(primaryKey);

@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Sorts, DataStateChangeEventArgs } from '@syncfusion/ej2-angular-grids';
+import { DataStateChangeEventArgs, Sorts } from '@syncfusion/ej2-angular-grids';
 import { Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root',
 })

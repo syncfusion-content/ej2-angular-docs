@@ -1,24 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-
-
-import { Component, NgIterable, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ColumnModel } from '@syncfusion/ej2-angular-grids';
+import { Component, NgIterable, OnInit } from '@angular/core';
+import { ColumnModel, FilterService, GridModule, GroupService, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-        SortService,
-        FilterService,
-        GroupService],
-standalone: true,
+  imports: [ GridModule ],
+  providers: [PageService,SortService, FilterService, GroupService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data'>
     <e-columns>

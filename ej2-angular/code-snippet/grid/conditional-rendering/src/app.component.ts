@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { data } from './datasource';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',

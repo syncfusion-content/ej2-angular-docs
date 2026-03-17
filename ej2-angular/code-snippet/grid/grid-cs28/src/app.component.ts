@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   imports: [ GridModule,ButtonModule],

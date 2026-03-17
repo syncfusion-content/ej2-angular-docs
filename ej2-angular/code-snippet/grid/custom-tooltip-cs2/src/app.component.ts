@@ -1,24 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { TooltipModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-import { Component, OnInit } from '@angular/core';
-import { QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
-import { Tooltip } from '@syncfusion/ej2-popups';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridModule, QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
+import { TooltipModule } from '@syncfusion/ej2-angular-popups';
+import { Tooltip } from '@syncfusion/ej2-popups';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule,
-        TooltipModule
-    ],
-standalone: true,
+    imports: [ GridModule, ButtonModule, TooltipModule ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='315' (queryCellInfo)='tooltip($event)' >
                     <e-columns>
@@ -42,7 +31,3 @@ export class AppComponent implements OnInit {
         }, (args as any).cell as HTMLTableCellElement);
     }
 }
-
-
-
-

@@ -32,7 +32,7 @@ filterSettings |- |-
 searchSettings |- |-
 selectedRowIndex |- |-
 
-The grid will persist only the last selected row index.
+> The grid will persist only the last selected row index.
 
 ## Restore initial Grid state
 
@@ -40,7 +40,7 @@ In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, 
 
 The following steps describe the process of resetting the grid to its initial state, even when the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid#enablepersistence) property is enabled.
 
-### Changing component id
+### Changing component Id
 
 Restoring the initial state of the grid can be achieved by changing the component ID. This causes the grid to be treated as a new instance, reverting to default settings.
 
@@ -266,7 +266,7 @@ window.localStorage.setItem('gridOrders', JSON.stringify(value)); //"gridOrders"
 
 ## Prevent columns from persisting
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, certain settings may need to be excluded from being saved when the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid#enablepersistence) feature is turned on. When the `enablePersistence` property is `true`, grid properties such as [Grouping](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings) [Paging](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings), [Filtering](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings), [Sorting](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings), and [Columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) persist. To prevent specific properties from being persisted, the `addOnPersist` method can be used.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, certain settings may need to be excluded from being saved when the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid#enablepersistence) feature is turned on. When the `enablePersistence` property is `true`, grid properties such as [Grouping](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings), [Paging](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings), [Filtering](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings), [Sorting](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings), and [Columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) persist. To prevent specific properties from being persisted, the `addOnPersist` method can be used.
 
 The following example demonstrates preventing grid columns from persisting. Override the `addOnPersist` method in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event and remove the columns from the key list given for persistence.
 

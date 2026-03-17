@@ -1,21 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, IFilterCreate, IFilterWrite } from '@syncfusion/ej2-angular-grids'
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { createElement } from '@syncfusion/ej2-base';
-import { GridComponent, ForeignKeyService, FilterService, IFilter, FilterSettingsModel, Filter } from '@syncfusion/ej2-angular-grids';
-import { DataManager } from '@syncfusion/ej2-data';
-import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 import { data, fEmployeeData } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
+import { Filter, FilterService, FilterSettingsModel, ForeignKeyService, GridComponent, GridModule, IFilter, IFilterCreate, IFilterWrite } from '@syncfusion/ej2-angular-grids';
+import { createElement } from '@syncfusion/ej2-base';
+import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-standalone: true,
+    imports: [ GridModule ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='315' [allowFiltering]='true'
         [filterSettings]='filteroption'>
@@ -63,6 +55,3 @@ export class AppComponent implements OnInit {
         this.employeeData = fEmployeeData;
     }
 }
-
-
-

@@ -57,7 +57,7 @@ Customize the pager options in the Syncfusion<sup style="font-size:70%">&reg;</s
 
 ### Change page size 
 
-TThe Grid supports adjusting the number of records shown per page for flexible data presentation. The [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize) property defines the initial number of records shown, replacing the default value of "12".
+The Grid supports adjusting the number of records shown per page for flexible data presentation. The [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize) property defines the initial number of records shown, replacing the default value of "12".
 
 The following example demonstrates modifying the page size dynamically using a textbox value and an external button click:
 
@@ -75,7 +75,7 @@ The following example demonstrates modifying the page size dynamically using a t
 
 ### Change page count 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports customizing the number of page links shown in the pager through the [pageSettings.pageCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagecount) property. The default value is **8**, and it can be adjusted to enhance navigation, especially when handling large datasets..
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports customizing the number of page links shown in the pager through the [pageSettings.pageCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagecount) property. The default value is "8", and it can be adjusted to enhance navigation, especially when handling large datasets.
 
 The example below demonstrates updating the page count dynamically using a textbox value and an external button click:
 
@@ -131,16 +131,14 @@ The following example demonstrates toggling this behavior using an [EJ2 Toggle S
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports customizing the pager through the [pagerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#template) property, allowing replacement of default pager controls with custom elements.
 
-Within the template, context values such as [currentPage](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#currentpage), [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize), [pageCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagecount),[totalPages](https://ej2.syncfusion.com/angular/documentation/api/grid/pagertemplatecontext#totalpages), [totalRecordsCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pagertemplatecontext#totalrecordscount), [pagerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#template) `pagerTemplate` ,    are available for building customized pager layouts.
+Within the template, context values such as [currentPage](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#currentpage), [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize), [pageCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagecount),[totalPages](https://ej2.syncfusion.com/angular/documentation/api/grid/pagertemplatecontext#totalpages), [totalRecordsCount](https://ej2.syncfusion.com/angular/documentation/api/grid/pagertemplatecontext#totalrecordscount), `pagerTemplate` are available for building customized pager layouts.
 
 The example below demonstrates using a [NumericTextBox](https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started) within the pager via the `pagerTemplate` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { NumericTextBoxModule,ChangeEventArgs } from '@syncfusion/ej2-angular-inputs'
+import { NumericTextBoxModule,ChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { data } from './datasource';
 import {GridModule, PageService,GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -322,11 +320,8 @@ The following example demonstrates using these events to display notification me
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,GridComponent, PageService } from '@syncfusion/ej2-angular-grids'
+import { GridModule,GridComponent, PageService, PageEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { PageEventArgs } from '@syncfusion/ej2-grids';
 import { orderDetails } from './datasource';
 
 @Component({

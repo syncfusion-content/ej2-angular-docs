@@ -1,11 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService, ExcelExportService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
-import { GridComponent, ExportDetailTemplateEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DetailRowService, ExcelExportService, ExportDetailTemplateEventArgs, GridComponent, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+
 @Component({
     imports: [ GridModule],
     providers: [DetailRowService, ExcelExportService, ToolbarService],
@@ -221,6 +218,3 @@ export class AppComponent implements OnInit {
         };
     }
 }
-
-
-

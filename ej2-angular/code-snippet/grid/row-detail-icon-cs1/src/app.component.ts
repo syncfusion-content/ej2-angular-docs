@@ -1,22 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService } from '@syncfusion/ej2-angular-grids'
-
-import { Component } from '@angular/core';
 import { employeeData } from './datasource';
+import { Component } from '@angular/core';
+import { DetailRowService, GridModule } from '@syncfusion/ej2-angular-grids';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 let instance: Internationalization = new Internationalization();
 
 @Component({
-imports: [
-        
-        GridModule        
-    ],
-
-providers: [DetailRowService],
-standalone: true,
+    imports: [GridModule ],
+    providers: [DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `<div class="control-section">
                 <ejs-grid #grid [dataSource]='data' id='Grid'>

@@ -45,7 +45,7 @@ Selected records export functionality enables generating Excel or CSV documents 
 
 To export only the selected records, utilize the `exportProperties.dataSource` property in the `toolbarClick` event.
 
-To export the selected records from the grid to an Excel or CSV file, follow these steps:
+Follow these steps to export the selected records from the Grid to a Excel or CSV file:
 
 1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event of the Grid.
 
@@ -146,7 +146,7 @@ To implement the show or hide columns feature during Excel export in the Grid, f
 
 1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event of the Syncfusion Angular Grid.
 
-2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column#visible) property of the column to **true** or **false**.
+2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column#visible) property of the column to `true` or `false`.
 
 3. Export the Syncfusion Angular Grid to Excel document using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/grid#csvexport)  method.
 
@@ -285,7 +285,6 @@ Header text rotation support enables customizing the column header styles, such 
 To achieve this requirement, use the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#excelheaderquerycellinfo) event of the Grid. This event is triggered when creating a column header for the Excel document to be exported. By customizing the column header within this event, the header text can be easily rotated to a certain degree in the exported Grid, making the data presentation in the Excel document more visually appealing and tailored to specific requirements.
 
 In the following demo, using the `rotation` property of the style argument in the `excelHeaderQueryCellInfo` event, the header text of the column header can be rotated in the excel exported document.
-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

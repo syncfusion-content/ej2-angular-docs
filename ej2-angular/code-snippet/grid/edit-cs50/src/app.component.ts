@@ -1,25 +1,15 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit } from '@angular/core';
-import { DropDownList } from '@syncfusion/ej2-dropdowns';
-import { Query } from '@syncfusion/ej2-data';
 import { cascadeData } from './datasource';
-import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, EditSettingsModel, GridModule, IEditCell, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { Query } from '@syncfusion/ej2-data';
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [
-        
+    imports: [
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -28,10 +18,9 @@ imports: [
         TextBoxModule,
         MultiSelectModule,
         AutoCompleteModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+        ],
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
                 <e-columns>
@@ -123,5 +112,3 @@ export class AppComponent implements OnInit {
         }}
     }
 }
-
-

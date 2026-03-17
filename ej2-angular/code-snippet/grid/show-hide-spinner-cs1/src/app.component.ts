@@ -1,17 +1,11 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { enableRipple } from '@syncfusion/ej2-base'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
+import { enableRipple } from '@syncfusion/ej2-base';
 
 @Component({
-    imports: [
-        ButtonModule,
-        GridModule
-    ],
-
+    imports: [ ButtonModule, GridModule ],
     providers: [PageService,],
     standalone: true,
     selector: 'app-root',

@@ -1,27 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, EditService, ToolbarService, AggregateService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AggregateService, EditService, FilterService, GridComponent, GridModule, PageService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                EditService,
-                ToolbarService,
-                AggregateService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PageService, SortService, FilterService, EditService, ToolbarService, AggregateService],
+    standalone: true,
     selector: 'app-root',
     template: `<div class="e-adaptive-demo e-bigger">
                     <div class="e-mobile-layout">
@@ -83,5 +67,3 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
     }
 }
-
-

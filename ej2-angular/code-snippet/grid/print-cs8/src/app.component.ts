@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, PageSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, NgModule, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GridComponent, GridModule, PageService, PageSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [ GridModule],
@@ -50,4 +48,3 @@ export class AppComponent implements OnInit {
         (document.querySelector('head') as Element).appendChild(styleElement);
     }
 }
-

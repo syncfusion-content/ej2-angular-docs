@@ -1,20 +1,11 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { L10n } from '@syncfusion/ej2-base';
+import { columnDataType, data } from './datasource';
 import { Component, OnInit } from '@angular/core';
-import { data, columnDataType } from './datasource';
-import { EditEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditEventArgs, EditService, EditSettingsModel, GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { L10n } from '@syncfusion/ej2-base';
 
 L10n.load({
     'en-US': {
@@ -27,7 +18,6 @@ L10n.load({
 
 @Component({
     imports: [
-
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -37,7 +27,6 @@ L10n.load({
         MultiSelectModule,
         AutoCompleteModule
     ],
-
     providers: [EditService, ToolbarService, SortService, PageService],
     standalone: true,
     selector: 'app-root',

@@ -1,34 +1,17 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, SortService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { FilterService, GridComponent, GridModule, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService, SortService, FilterService],
-standalone: true,
+    imports: [ GridModule, DropDownListAllModule ],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
         <label style="padding: 10px 10px 26px 0"> Change the loading indicator type: </label>
-        <ejs-dropdownlist
-        #dropdown
-        style="margin-top:5px"
-        index="0"
-        width="120"
-        [dataSource]="ddlData"
-        [fields]='fields'
-        (change)="valueChange($event)">
-        </ejs-dropdownlist>
+        <ejs-dropdownlist #dropdown style="margin-top:5px" index="0" width="120" [dataSource]="ddlData" [fields]='fields' (change)="valueChange($event)"></ejs-dropdownlist>
     </div>
     <ejs-grid #grid id="grid" style="padding: 10px 10px" [dataSource]='data' [allowPaging]='true' [allowSorting]='true' [allowFiltering]='true' [pageSettings]='pageSettings' [loadingIndicator]='loadingIndicator'>
         <e-columns>
@@ -69,5 +52,3 @@ export class AppComponent implements OnInit {
         }
     } 
 }
-
-

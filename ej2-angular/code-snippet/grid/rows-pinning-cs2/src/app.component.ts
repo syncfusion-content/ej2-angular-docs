@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, PageSettingsModel  } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, PageService, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 export interface RowData {
   TaskID: number; 
@@ -14,7 +11,7 @@ export interface RowData {
 }
 
 @Component({
-imports: [GridModule],
+    imports: [GridModule],
     providers: [PageService],
     standalone: true,
     selector: 'app-root',

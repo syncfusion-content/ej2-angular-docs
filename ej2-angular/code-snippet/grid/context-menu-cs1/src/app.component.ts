@@ -1,33 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import {
-    ContextMenuService, PageService, ResizeService, SortService, GroupService, EditService,
-    PdfExportService, ExcelExportService
-} from '@syncfusion/ej2-angular-grids'
-
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ContextMenuItem, } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { ContextMenuItem, EditSettingsModel, GridModule,  ContextMenuService, PageService, ResizeService, SortService, GroupService, EditService, PdfExportService, ExcelExportService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ContextMenuService,
-        PageService,
-        ResizeService,
-        SortService,
-        GroupService,
-        EditService,
-        PdfExportService,
-        ExcelExportService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [ ContextMenuService, PageService, ResizeService, SortService, GroupService, EditService, PdfExportService,ExcelExportService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' id="gridcomp" allowPaging='true' [allowExcelExport]='true'
     [allowPdfExport]='true' height='220px' [allowSorting]='true' [allowGrouping]='true' [contextMenuItems]="contextMenuItems" 
@@ -70,6 +48,3 @@ export class AppComponent implements OnInit {
         ]
     }
 }
-
-
-

@@ -1,23 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { stringData } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FilterService, GridComponent, GridModule, GroupService, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [PageService, SortService, FilterService,GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #Grid [dataSource]='data'>
                 <e-columns>
@@ -31,7 +19,7 @@ standalone: true,
 export class AppComponent implements OnInit {
   @ViewChild('Grid')
   public grid: GridComponent;
-    public data: object[];
+    public data!: object[];
     ngOnInit(): void {
         this.data = stringData;
     }

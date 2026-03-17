@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { columnDataType, data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data,  columnDataType } from './datasource';
-import { EditSettingsModel,  GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { EditService, EditSettingsModel, GridComponent, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [ GridModule, ButtonModule],
@@ -20,15 +17,10 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
         <div class="control-section"  style="padding-top:20px">
             <ejs-grid #grid id="Grid" [dataSource]='data' [editSettings]='editSettings' height='273'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' 
-                    width=120 [validationRules]='orderIDRules' isPrimaryKey='true'>
-                    </e-column>
-                    <e-column field='CustomerID' [validationRules]='customerIDRules' 
-                    headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' 
-                    [validationRules]='cityIDRules' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' 
-                    [validationRules]='shipIDRules' width=150></e-column>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120 [validationRules]='orderIDRules' isPrimaryKey='true'></e-column>
+                    <e-column field='CustomerID' [validationRules]='customerIDRules' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' [validationRules]='cityIDRules' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' [validationRules]='shipIDRules' width=150></e-column>
                 </e-columns>
             </ejs-grid>
         </div> `
@@ -101,6 +93,3 @@ export class AppComponent implements OnInit {
         return names[Math.floor(Math.random() * names.length)];
     }
 }
-
-
-

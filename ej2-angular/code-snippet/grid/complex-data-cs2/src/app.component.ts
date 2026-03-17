@@ -1,16 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { DataManager, ODataV4Adaptor, Query } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [ GridModule ],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' allowPaging='true' [query]='query' [height]='315'>

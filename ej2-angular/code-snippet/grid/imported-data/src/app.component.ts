@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { UploaderModule,RemovingEventArgs, UploaderComponent } from '@syncfusion/ej2-angular-inputs'
-import { DialogModule, DialogComponent } from '@syncfusion/ej2-angular-popups'
+import { GridModule, EditService, PageService, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids'
+import { UploaderModule,RemovingEventArgs, UploaderComponent } from '@syncfusion/ej2-angular-inputs';
+import { DialogModule, DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { Component, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import * as XLSX from 'xlsx';
 
 interface CustomFile {

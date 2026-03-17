@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Column resizing in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows adjusting column widths dynamically to fit content and improve data readability. This feature provides flexibility in customizing the grid layout based on data requirements and screen size.
 
-To enable column resizing, set the [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/grid#allowresizing) property to `true` and inject the `ResizeService` in the provider section of `AppModule`. Once enabled, columns can be resized by clicking and dragging the right edge of the column header. The column width updates immediately during the drag operation, providing real-time visual feedback.
+To enable column resizing, set the [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/grid#allowresizing) property to `true` and inject the `ResizeService` in the providers section. Once enabled, columns can be resized by clicking and dragging the right edge of the column header. The column width updates immediately during the drag operation, providing real-time visual feedback.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -201,11 +201,8 @@ The following example demonstrates practical use of resize events:
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ResizeService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, ResizeArgs, Column } from '@syncfusion/ej2-angular-grids';
+import { GridModule, ResizeService ,GridComponent, ResizeArgs, Column } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({

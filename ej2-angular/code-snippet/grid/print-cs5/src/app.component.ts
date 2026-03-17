@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService, GridModel, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule,ChangeEventArgs} from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { DetailRowService, GridComponent, GridModel, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [ GridModule,DropDownListAllModule],

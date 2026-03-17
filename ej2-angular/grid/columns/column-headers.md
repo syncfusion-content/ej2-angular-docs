@@ -406,7 +406,7 @@ To change header text for all columns, loop through the columns collection and s
 
 ## Change the orientation of header text
 
-By default, column header text in the Grid is oriented horizontally. In data visualization scenarios—especially grids with many columns where horizontal headers consume excessive space—rotating the header text vertically, diagonally, or at a custom angle optimizes layout and enhances visual hierarchy and readability. This can be achieved by applying a custom CSS class to the header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column#customattributes) property, then defining CSS transformations.
+By default, column header text in the Grid is oriented horizontally. In data visualization scenarios especially grids with many columns where horizontal headers consume excessive space rotating the header text vertically, diagonally, or at a custom angle optimizes layout and enhances visual hierarchy and readability. This can be achieved by applying a custom CSS class to the header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column#customattributes) property, then defining CSS transformations.
 
 Follow these steps to change header text orientation in Grid:
 
@@ -445,7 +445,7 @@ setHeaderHeight(args) {
 
 ```
 
-The following example demonstrates changing the orientation of the "Freight" column header text to 90 degrees:
+The following example demonstrates changing the orientation of the "Freight" column header text to "90" degrees:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -461,13 +461,13 @@ The following example demonstrates changing the orientation of the "Freight" col
 
 ## Translate header text using ngx-translate 
 
-The ngx-translate library provides `internationalization (i18n)` and `localization (l10n)` support for Angular applications. With ngx-translate, Angular applications can be easily translated into multiple languages.
+The `ngx-translate` library provides `internationalization (i18n)` and `localization (l10n)` support for Angular applications. With `ngx-translate`, Angular applications can be easily translated into multiple languages.
 
 In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, ngx-translate can be used to translate the header text of the Grid's columns. There are two ways to achieve this: through header text and through header template.
 
 ### Through header text  
 
-To translate the header text of the Grid's columns using `gx-translate` through header text, use the `translate` pipe for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property.
+To translate the header text of the Grid's columns using `ngx-translate` through header text, use the `translate` pipe for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property.
 
 **Step 1**: Create and Configure the TranslateService
 
@@ -563,7 +563,7 @@ export class AppComponent {
 {% endtabs %}
 
 
-**Step 3**: Import the `TranslateModule` and `TranslateLoader` in the app.module.ts file. Also import the `HttpClientModule` to enable HTTP requests for loading translation files.
+**Step 3**: Import the `TranslateModule` and `TranslateLoader` in the **app.module.ts** file. Also import the `HttpClientModule` to enable HTTP requests for loading translation files.
 
 ```ts
 

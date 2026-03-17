@@ -1,10 +1,8 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule,  } from '@angular/platform-browser'
-import { GridModule, GridComponent, Column, ColumnModel } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Column, ColumnModel, GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [
@@ -54,8 +52,3 @@ export class AppComponent implements OnInit {
         this.dataSet = data;
     }
 }
-
-
-
-
-

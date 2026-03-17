@@ -1,7 +1,4 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { SelectionSettingsModel, ColumnModel, EditService, EditSettingsModel, FilterService, FilterSettingsModel, 
- GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { SelectionSettingsModel, ColumnModel, EditService, EditSettingsModel, FilterService, FilterSettingsModel, GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit } from '@angular/core';
 import { ordersTrackData, OrderTrackModel } from './datasource';
 
@@ -51,6 +48,3 @@ export class AppComponent implements OnInit {
         return data.Status !== 'Cancelled';
     }
 }
-
-
-

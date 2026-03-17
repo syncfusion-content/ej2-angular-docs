@@ -35,25 +35,25 @@ The following code snippet shows server configuration using ASP.NET Core Control
 
 ```typescript
 
-        public ActionResult PdfExport([FromForm] string gridModel)
-        {
-            GridPdfExport exp = new GridPdfExport();
-            Grid gridProperty = ConvertGridObject(gridModel);
-            return exp.PdfExport<OrdersDetails>(gridProperty, orddata);
-        }
+public ActionResult PdfExport([FromForm] string gridModel)
+{
+    GridPdfExport exp = new GridPdfExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    return exp.PdfExport<OrdersDetails>(gridProperty, orddata);
+}
 
-        private Grid ConvertGridObject(string gridProperty)
-        {
-           Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
-           GridColumnModel cols = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
-           GridModel.Columns = cols.columns;
-           return GridModel;
-        }
+private Grid ConvertGridObject(string gridProperty)
+{
+    Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
+    GridColumnModel cols = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
+    GridModel.Columns = cols.columns;
+    return GridModel;
+}
 
-        public class GridColumnModel
-        {
-            public List<GridColumn> columns { get; set; }
-        }
+public class GridColumnModel
+{
+    public List<GridColumn> columns { get; set; }
+}
         public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();

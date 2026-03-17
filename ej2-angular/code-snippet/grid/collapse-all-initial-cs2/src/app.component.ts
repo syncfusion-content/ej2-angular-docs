@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, GroupService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [GroupService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' (rowSelected)='rowSelected($event)' height='267px'>
                 <e-columns>
@@ -41,8 +31,4 @@ export class AppComponent implements OnInit {
         alert('row index: ' + (args as any).row.getAttribute('aria-rowindex'));
         alert('column index: ' + (args as any).target.getAttribute('aria-colindex'));
     }
-
 }
-
-
-

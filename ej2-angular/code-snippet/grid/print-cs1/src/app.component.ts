@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ToolbarService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [toolbar]='toolbarOptions' height='272px'>
                 <e-columns>
@@ -36,6 +26,3 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['Print'];
     }
 }
-
-
-

@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FreezeService, SelectionService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { EditService, FreezeService, GridModule, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-    ],
-
-providers: [FreezeService, SelectionService, EditService, ToolbarService],
-standalone: true,
+  imports: [ GridModule,],
+  providers: [FreezeService, SelectionService, EditService, ToolbarService],
+  standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=315 [allowSelection]='false' [enableHover]='false'>
     <e-columns>
@@ -39,6 +31,3 @@ export class AppComponent implements OnInit {
       this.data=data
     }
 }
-
-
-

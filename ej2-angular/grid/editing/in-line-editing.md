@@ -88,11 +88,11 @@ Programmatic CRUD operations enable creating, reading, updating, and deleting da
 
 | Method | Description | Usage |
 |--------|-------------|-------|
-| [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#addrecord) | Add a new record to the grid | Pass the `data` parameter to add a record. Use the `index` parameter for a specific position. Without parameters, creates an empty row at index zero |
-| [startEdit](https://ej2.syncfusion.com/angular/documentation/api/grid#startedit) | Change the selected row to edit state | First select the row, then invoke this method. The selected row enters edit mode immediately. Without row selection along with default `showConfirmDialog` enabled state, "No records selected for edit operation" dialog appears |
-| [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterow) | Update row data in the data source | Provide the row `index` and the updated `data` as parameters. The data source updates accordingly |
-| [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/grid#setcellvalue) | Update a particular cell in a row | Provide the primary key value, field name, and new value. Changes appear visually in the UI only (not persisted). Useful for unbound columns, auto-calculated columns, and formula columns |
-| [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord) | Remove a selected row from the grid | First select the row, then invoke this method. The selected row is immediately removed. Without row selection along with default `showConfirmDialog` enabled state, "No records selected for delete operation" dialog appears |
+| [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#addrecord) | Add a new record to the grid | Pass the `data` parameter to add a record. Use the `index` parameter for a specific position. Without parameters, creates an empty row at index zero. |
+| [startEdit](https://ej2.syncfusion.com/angular/documentation/api/grid#startedit) | Change the selected row to edit state | First select the row, then invoke this method. The selected row enters edit mode immediately. Without row selection along with default `showConfirmDialog` enabled state, "No records selected for edit operation" dialog appears. |
+| [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterow) | Update row data in the data source | Provide the row `index` and the updated `data` as parameters. The data source updates accordingly. |
+| [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/grid#setcellvalue) | Update a particular cell in a row | Provide the primary key value, field name, and new value. Changes appear visually in the UI only (not persisted). Useful for unbound columns, auto-calculated columns, and formula columns. |
+| [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord) | Remove a selected row from the grid | First select the row, then invoke this method. The selected row is immediately removed. Without row selection along with default `showConfirmDialog` enabled state, "No records selected for delete operation" dialog appears. |
 
 > In both `Normal` and `Dialog` editing modes, these methods can be used.
 
@@ -174,7 +174,7 @@ Multiple rows can be deleted programmatically using the following methods.
         this.grid.deleteRecord();
     ```
 
-2. [deleteRow](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterow) - This method deletes a visible row by providing the corresponding <tr> element. Use `getSelectedRows` to retrieve the selected rows and iterate over them. For each row, pass the <tr> element to `deleteRow` to initiate deletion. This approach enables selective deletion based on the <tr> elements obtained from `getSelectedRows`.
+2. [deleteRow](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterow) - This method deletes a visible row by providing the corresponding `<tr>` element. Use `getSelectedRows` to retrieve the selected rows and iterate over them. For each row, pass the `<tr>` element to `deleteRow` to initiate deletion. This approach enables selective deletion based on the `<tr>` elements obtained from `getSelectedRows`.
 
     ```ts
         const selectedRows: any[] = this.grid.getSelectedRows();

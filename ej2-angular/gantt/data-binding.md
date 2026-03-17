@@ -635,7 +635,7 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/data-binding/expandState/src/app.ts %}
+{% include code-snippet/gantt/data-binding/expandState/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

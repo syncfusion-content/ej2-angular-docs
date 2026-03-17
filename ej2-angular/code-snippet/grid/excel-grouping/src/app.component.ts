@@ -1,17 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DropDownListModule,DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
-import { PageService, SortService, FilterService, GroupService, ToolbarService, ExcelExportService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, ExcelQueryCellInfoEventArgs, ExcelHeaderQueryCellInfoEventArgs, Column, Cell, ExcelStyle } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DropDownListComponent, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Cell, Column, ExcelExportService, ExcelHeaderQueryCellInfoEventArgs, ExcelQueryCellInfoEventArgs, ExcelStyle, FilterService, GridComponent, GridModule, GroupService, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [GridModule,DropDownListModule],
-providers: [PageService,SortService,FilterService,GroupService,ToolbarService,ExcelExportService],
-standalone: true,
+    imports: [GridModule,DropDownListModule],
+    providers: [PageService,SortService,FilterService,GroupService,ToolbarService,ExcelExportService],
+    standalone: true,
     selector: 'app-root',
     template: `   
             <div style="display: flex; align-items: center;">

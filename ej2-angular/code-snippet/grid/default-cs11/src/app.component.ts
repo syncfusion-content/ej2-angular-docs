@@ -1,24 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService,DetailRowService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild, ViewContainerRef, Inject, AfterViewInit } from '@angular/core';
 import { data, employeeData } from './datasource';
+import { AfterViewInit, Component, Inject, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { DetailRowService, FilterService, GridModule, GroupService, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-        SortService,
-        FilterService,
-        GroupService,DetailRowService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PageService, SortService, FilterService, GroupService,DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='parentData' height='315px' [childGrid]='childGrid'>
                     <e-columns>
@@ -66,6 +53,3 @@ export class AppComponent implements OnInit, AfterViewInit {
         };
     }
 }
-
-
-

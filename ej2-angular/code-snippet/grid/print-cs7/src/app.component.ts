@@ -1,20 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, PageSettingsModel, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Column, GridComponent, GridModule, PageService, PageSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
-
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ToolbarService, PageService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [ToolbarService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' (toolbarClick)='toolbarClick($event)' (printComplete)='printComplete()'
                 [allowPaging]='true' [pageSettings]='pageOptions' [toolbar]='toolbarOptions'>
@@ -61,4 +53,3 @@ export class AppComponent implements OnInit {
         this.pageOptions = { pageSize: 6 };
     }
 }
-

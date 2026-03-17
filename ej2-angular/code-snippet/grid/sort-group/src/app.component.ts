@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService, SortService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { GroupSettingsModel,SortSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, GroupService, GroupSettingsModel, SortService, SortSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [GroupService, SortService],
-standalone: true,
+    imports: [GridModule ],
+    providers: [GroupService, SortService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [allowGrouping]='true' [allowSorting]='true' [sortSettings]='sortOptions'  [groupSettings]='groupOptions' height='267px'>
                     <e-columns>

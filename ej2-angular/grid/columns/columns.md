@@ -55,11 +55,11 @@ Column types can be explicitly defined using the `type` property. For example:
 * `boolean`: Represents `true` or `false` values from the data source. Values can be edited. By default, values are displayed as text, but can be shown as checkboxes by setting the `displayAsCheckBox` property.
 * `checkbox`: When a column type is set to `checkbox`, it enables row selection. By default, the Grid allows multiple records to be selected, as the `selectionSettings` automatically defaults to multiple selection.
 
-> For more details, see [Checkbox](https://ej2.syncfusion.com/angular/documentation/grid/columns/columns#render-boolean-value-as-checkbox).
+> For more information on rendering boolean values as a checkbox, refer to the [Checkbox](https://ej2.syncfusion.com/angular/documentation/grid/columns/columns#render-boolean-value-as-checkbox) section.
 
 ## Column Width
 
-The Grid allocates column space using the [width](https://ej2.syncfusion.com/angular/documentation/api/grid#width) property. Widths can be defined in **pixels** (e.g., "100" for "100px"), as a **percentage** (e.g., "25%" for one‑quarter of the grid width), or set to **auto** to let the Grid size the column automatically based on its content.
+The Grid allocates column space using the [width](https://ej2.syncfusion.com/angular/documentation/api/grid#width) property. Widths can be defined in **pixels** (e.g., "100" for "100px"), as a **percentage** (e.g., "25%" for one-quarter of the grid width), or set to "auto" to let the Grid size the column automatically based on its content.
 
 ### Understanding column width distribution  
 
@@ -77,26 +77,26 @@ The Grid allocates column space using the [width](https://ej2.syncfusion.com/ang
 
 1. **Auto** 
 
-Column width is automatically calculated based on the content within the column cells. If the content exceeds the specified width in the `e-column`, it is truncated with an ellipsis (…) at the end. To allow a column to adjust its width dynamically based on content, set the width property of the `e-column` to "auto".
+    Column width is automatically calculated based on the content within the column cells. If the content exceeds the specified width in the `e-column`, it is truncated with an ellipsis (…) at the end. To allow a column to adjust its width dynamically based on content, set the width property of the `e-column` to "auto".
 
-A Grid can combine both flexible and fixed-width columns to create a balanced layout. For example, consider three columns "Order ID", "Customer Name", and "Freight". The "Customer Name" column automatically adjusts its width based on the length of the names, while the "Order ID" and "Freight" columns remain fixed. This ensures that numeric fields stay consistent while text fields expand as needed.
+    A Grid can combine both flexible and fixed-width columns to create a balanced layout. For example, consider three columns "Order ID", "Customer Name", and "Freight". The "Customer Name" column automatically adjusts its width based on the length of the names, while the "Order ID" and "Freight" columns remain fixed. This ensures that numeric fields stay consistent while text fields expand as needed.
 
-   ```html
-   <e-column field='OrderID' headerText='Order ID' textAlign='Right' width='auto'></e-column>
-   ```
+      ```html
+      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width='auto'></e-column>
+      ```
 2. **Percentage**
 
-Column width can be defined as a percentage relative to the total width of the grid container. For example, assigning "25%" to a column will allocate one-fourth of the grid's width to that column. This approach is useful for distributing space proportionally across columns.
+    Column width can be defined as a percentage relative to the total width of the grid container. For example, assigning "25%" to a column will allocate one-fourth of the grid's width to that column. This approach is useful for distributing space proportionally across columns.
 
-   ```html
-   <e-column field='OrderID' headerText='Order ID' textAlign='Right' width='25%'></e-column>
+      ```html
+      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width='25%'></e-column>
    ```
 3. **Pixel**
 
-The column width can be defined using an absolute pixel value. For example, setting a column width to "100px" means the column will always occupy "100" pixels, regardless of the grid container's size. The width for `e-column` can be set as pixels in the Grid configuration as shown below:
+    The column width can be defined using an absolute pixel value. For example, setting a column width to "100px" means the column will always occupy "100" pixels, regardless of the grid container's size. The width for `e-column` can be set as pixels in the Grid configuration as shown below:
 
-   ```html
-   <e-column field='OrderID' headerText='Order ID' textAlign='Right' width='100'></e-column>
+      ```html
+      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width='100'></e-column>
    ```
 
 {% tabs %}
@@ -313,7 +313,7 @@ In the below example, the "numberFormatOptions" object is used as the `format` p
 
 {% previewsample "page.domainurl/samples/grid/column-format-cs2" %}
 
-> Learn more about [custom date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-formats) and [custom number formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-number-formatting-and-parsing).
+> For more information, refer to the [custom date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-formats) and [custom number formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-number-formatting-and-parsing) sections.
 
 ## Align the text of content
 
@@ -578,7 +578,7 @@ Column-specific actions like filtering, grouping, sorting, resizing, reordering,
 
 Column style customization enables changes to the appearance of columns in the Grid control based on design needs. Properties like font, background color, and other styles can be modified. Grid events, CSS, properties, or methods can be used to customize column styles.
 
-For more information, refer to this [documentation](https://ej2.syncfusion.com/angular/documentation/grid/cell#customize-cell-styles).
+For more information refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/cell#customize-cell-styles).
 
 ## Manipulating columns
 

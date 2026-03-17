@@ -41,6 +41,7 @@ interface ColumnDataType {
 
 @Component({
     selector: 'app-root',
+    providers: [ToolbarService, PdfExportService],
     template: `<ejs-grid #grid id="ColumnTemplateGrid" [dataSource]="data" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"
                [allowPdfExport]="true" (pdfQueryCellInfo)="pdfQueryCellInfo($event)" height='273px'>
                     <e-columns>
@@ -159,6 +160,7 @@ interface DataType {
 }
 @Component({
     selector: 'app-root',
+    providers: [ToolbarService, PdfExportService],
     template: `<ejs-grid #grid [dataSource]="data" id="DetailTemplateGrid" [toolbar]="toolbar" [allowPdfExport]="true"
         (toolbarClick)="toolbarClick($event)" (exportDetailTemplate)="exportDetailTemplate($event)" height="273px">
             <ng-template #detailTemplate let-data>
@@ -396,6 +398,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
     selector: 'app-root',
+    providers: [GroupService, ToolbarService, PdfExportService],
     template: `<ejs-grid #grid id="CaptionTemplateGrid" [dataSource]="data" [allowGrouping]="true" [groupSettings]="groupOptions"
                [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)" [allowPdfExport]="true"
                (exportGroupCaption)="exportGroupCaption($event)" height='245px'>

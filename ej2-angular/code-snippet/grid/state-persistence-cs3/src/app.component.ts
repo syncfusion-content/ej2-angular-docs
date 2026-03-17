@@ -1,22 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridModule, FilterService, PageService, GridComponent, GroupService, SortService, ReorderService } from '@syncfusion/ej2-angular-grids';
-import { enableVersionBasedPersistence } from '@syncfusion/ej2-base';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { FilterService, GridComponent, GridModule, GroupService, PageService, ReorderService, SortService } from '@syncfusion/ej2-angular-grids';
+import { enableVersionBasedPersistence } from '@syncfusion/ej2-base';
 
 enableVersionBasedPersistence(true);
 
 @Component({
-imports: [
-        CommonModule,
-        GridModule,
-        ButtonModule
-    ],
-
-standalone: true,
+    imports: [CommonModule, GridModule,ButtonModule],
+    standalone: true,
     selector: 'app-root',
     template: `<h4 id='message'>{{message}}</h4>
     <button ejs-button *ngFor="let v of versions" [id]="'restore' + v" (click)="clickHandler('v.' + v)">Version {{ v }}</button>

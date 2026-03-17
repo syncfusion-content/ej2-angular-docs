@@ -1,25 +1,20 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService, PageService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { L10n, loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
-import { Component, OnInit } from '@angular/core';
+import { cagregorian } from './ca-gregorian.json';
+import { currencies } from './currencies.json';
 import { data } from './datasource';
-import cagregorian from './ca-gregorian.json';
-import currencies from './currencies.json';
-import numbers from './numbers.json';
-import timeZoneNames from './timeZoneNames.json';
-import numberingSystems from './numberingSystems.json'
-import deDELocalization from './locale.json'
+import { deDELocalization } from './locale.json';
+import { numberingSystems } from './numberingSystems.json';
+import { numbers } from './numbers.json';
+import { timeZoneNames } from './timeZoneNames.json';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, GroupService, PageService } from '@syncfusion/ej2-angular-grids';
+import { L10n, loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 
 L10n.load(deDELocalization);
 
 @Component({
-imports: [ GridModule ],
-providers: [GroupService, PageService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [GroupService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [allowGrouping]="true" height='240px'>
                 <e-columns>
@@ -52,6 +47,3 @@ export class AppComponent implements OnInit {
         this.formatOptions = { format: 'C2', useGrouping: false, minimumSignificantDigits: 1, maximumSignificantDigits: 3 }
     }
 }
-
-
-

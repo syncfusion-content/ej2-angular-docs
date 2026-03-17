@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService,Column, GridComponent, TextAlign} from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, ViewChild } from '@angular/core';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Column, GridComponent, GridModule, PageService, TextAlign } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({

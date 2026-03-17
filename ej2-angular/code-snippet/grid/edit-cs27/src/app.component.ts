@@ -1,10 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { EditEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { EditEventArgs, EditService, EditSettingsModel, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [ GridModule,ButtonModule],
@@ -17,15 +14,10 @@ import { EditEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-
                     <ejs-grid [dataSource]='data' [editSettings]='editSettings' 
                     [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='240px'>
                         <e-columns>
-                            <e-column field='EmployeeID' headerText='Employee ID' textAlign= 'Right'  
-                            isPrimaryKey='true'  [validationRules]='orderIDRules' width=100>
-                            </e-column>
-                            <e-column field='EmployeeName' headerText='Employee Name'
-                            [validationRules]='customerNameRules' width=120 format= 'C2'></e-column>
-                            <e-column field='Role' headerText='Role' 
-                            [validationRules]='roleIDRules' width=120></e-column>
-                            <e-column field='EmployeeCountry' headerText='Employee Country' 
-                            editType= 'dropdownedit' width=150></e-column>
+                            <e-column field='EmployeeID' headerText='Employee ID' textAlign= 'Right' isPrimaryKey='true'  [validationRules]='orderIDRules' width=100></e-column>
+                            <e-column field='EmployeeName' headerText='Employee Name' [validationRules]='customerNameRules' width=120 format= 'C2'></e-column>
+                            <e-column field='Role' headerText='Role' [validationRules]='roleIDRules' width=120></e-column>
+                            <e-column field='EmployeeCountry' headerText='Employee Country' editType= 'dropdownedit' width=150></e-column>
                         </e-columns>
                     </ejs-grid>
                 </div>`
@@ -67,6 +59,3 @@ export class AppComponent implements OnInit {
         this.isAddable = !this.isAddable;
     }
 }
-
-
-

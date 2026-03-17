@@ -1,20 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, SortService, FilterService  } from '@syncfusion/ej2-angular-grids'
-
-
-
 import { Component, OnInit } from '@angular/core';
+import { FilterService, GridModule, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, SortService, FilterService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data'>
                 <e-columns>
@@ -37,6 +28,3 @@ export class AppComponent implements OnInit {
         });
     }
 }
-
-
-

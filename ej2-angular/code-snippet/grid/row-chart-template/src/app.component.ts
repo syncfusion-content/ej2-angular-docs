@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-import { ChartModule, ChartAllModule, CategoryService, ColumnSeriesService, LineSeriesService, ChartAnnotationService, LegendService } from '@syncfusion/ej2-angular-charts';
-import { Component } from '@angular/core';
 import { employeeData, employeePerformanceData } from './datasource';
+import { Component } from '@angular/core';
+import { CategoryService, ChartAllModule, ChartAnnotationService, ChartModule, ColumnSeriesService, LegendService, LineSeriesService } from '@syncfusion/ej2-angular-charts';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',

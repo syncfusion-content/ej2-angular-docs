@@ -1,10 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridComponent,GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { TextBoxModule,TextBoxComponent } from '@syncfusion/ej2-angular-inputs'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     imports: [ GridModule, ButtonModule,TextBoxModule],
@@ -42,6 +40,3 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).search(searchText);
     }
 }
-
-
-

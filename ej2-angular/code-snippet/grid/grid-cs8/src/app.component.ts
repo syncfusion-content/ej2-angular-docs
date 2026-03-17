@@ -1,23 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SortService, ColumnMenuService, PageService } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ColumnMenuService, GridComponent, GridModule, PageService, SortService, SortSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
-import { SortSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-standalone: true,
+    imports: [GridModule],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' id="gridcomp" allowPaging='true' allowSorting='true'
      showColumnMenu='true' [sortSettings]='sortSettings' [columnMenuItems]='columnMenuItems' (columnMenuClick)='columnMenuClick($event)'>
@@ -47,6 +35,3 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 }
-
-
-

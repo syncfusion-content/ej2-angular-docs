@@ -1,28 +1,22 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 import { purchaseData } from './datasource';
-import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import {  EditService, EditSettingsModel, GridComponent, GridModule, IEditCell, PageService, PageSettingsModel, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 
 @Component({
   imports: [
-    GridModule,
-    DatePickerAllModule,
-    FormsModule,
-    TimePickerModule,
-    FormsModule,
-    TextBoxModule,
-    MultiSelectModule,
-    AutoCompleteModule
+      GridModule,
+      DatePickerAllModule,
+      FormsModule,
+      TimePickerModule,
+      FormsModule,
+      TextBoxModule,
+      MultiSelectModule,
+      AutoCompleteModule
   ],
   providers: [EditService, ToolbarService, SortService, PageService],
   standalone: true,

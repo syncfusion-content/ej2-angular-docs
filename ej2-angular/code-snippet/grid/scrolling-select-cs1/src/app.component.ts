@@ -1,10 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService,RowSelectEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids'
-import { DropDownListModule,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
- 
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, GridComponent, GridModule, PageService, RowSelectEventArgs, ToolbarService } from '@syncfusion/ej2-angular-grids';
+
 @Component({
     imports: [GridModule,DropDownListModule ],
     providers: [PageService, ToolbarService, EditService],
@@ -65,6 +63,3 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).getContent().children[0].scrollTop = rowHeight * (this.grid as GridComponent).getSelectedRowIndexes()[0];
     }
 }
-
-
-

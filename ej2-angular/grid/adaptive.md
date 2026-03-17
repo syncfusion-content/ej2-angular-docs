@@ -54,14 +54,15 @@ import { data } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [GridModule,DropDownListModule],
-providers: [PageService,
-                SortService,
-                FilterService,
-                EditService,
-                ToolbarService,
-                AggregateService],
-standalone: true,
+    imports: [GridModule,DropDownListModule],
+    providers: [
+        PageService,
+        SortService,
+        FilterService,
+        EditService,
+        ToolbarService,
+        AggregateService],
+    standalone: true,
     selector: 'app-root',
     template: `
 
@@ -191,23 +192,16 @@ By default, adaptive UI layout is rendered in both mobile devices and desktop mo
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, EditService, 
-    SelectionService, ExcelExportService, PdfExportService, 
-    ToolbarService, AggregateService, GroupService, GridComponent,
-    ResizeService, ReorderService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, PageService, SortService, FilterService, EditService, SelectionService, ExcelExportService, PdfExportService, 
+ToolbarService, AggregateService, GroupService, GridComponent, ResizeService, ReorderService } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [GridModule],
-providers: [PageService, GroupService, SortService, FilterService, EditService,
-            ToolbarService, AggregateService, SelectionService, ExcelExportService,
-            PdfExportService, ResizeService, ReorderService],
-standalone: true,
+    imports: [GridModule],
+    providers: [ PageService, GroupService, SortService, FilterService, EditService,ToolbarService, AggregateService, SelectionService, ExcelExportService,PdfExportService, ResizeService, ReorderService],
+    standalone: true,
     selector: 'app-root',
     template: `
         <div class="e-adaptive-demo e-bigger">

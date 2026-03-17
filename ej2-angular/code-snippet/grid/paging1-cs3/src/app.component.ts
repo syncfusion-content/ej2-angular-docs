@@ -1,12 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { GridComponent, InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
-import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, GridComponent, GridModule, InfiniteScrollService, PageService, PageSettingsModel, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 const names = ['TOM', 'Hawk', 'Jon', 'Chandler', 'Monica', 'Rachel', 'Phoebe', 'Gunther', 'Ross', 'Geller', 'Joey', 'Bing', 'Tribbiani',
  'Janice', 'Bong', 'Perk', 'Green', 'Ken', 'Adams'];
@@ -28,15 +22,9 @@ const data = (count: any) => {
 };
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListModule 
-        
-        ],
-
-providers: [PageService, ToolbarService, EditService, InfiniteScrollService],
-standalone: true,
+    imports: [ GridModule, DropDownListModule ],
+    providers: [PageService, ToolbarService, EditService, InfiniteScrollService],
+    standalone: true,
     selector: 'app-root',
     template: `
            <div style="display: flex">
@@ -82,6 +70,3 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).refresh();    
     }
 }
-
-
-

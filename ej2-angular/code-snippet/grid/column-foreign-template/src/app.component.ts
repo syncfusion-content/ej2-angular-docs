@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { customerData, orderDetails } from './datasource';
 import { CommonModule } from '@angular/common';
-import { GridModule, ForeignKeyService } from '@syncfusion/ej2-angular-grids';
-import { orderDetails, customerData } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { ForeignKeyService, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   standalone: true,
   imports: [CommonModule, GridModule],
+  providers: [ForeignKeyService],
   selector: 'app-root',
   template: `    
     <ejs-grid #grid id="Grid" [dataSource]="data" height="320px">
@@ -21,7 +22,6 @@ import { orderDetails, customerData } from './datasource';
         <e-column field="ShipCountry" headerText="Ship Country" width="150"></e-column>
       </e-columns>
     </ejs-grid>`,
-  providers: [ForeignKeyService],
 })
 export class AppComponent implements OnInit {
   public data?: object[];

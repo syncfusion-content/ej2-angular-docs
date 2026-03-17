@@ -1,13 +1,10 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ToolbarItems, EditSettingsModel, EditService, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { EditService, EditSettingsModel, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
     imports: [GridModule],
-
     providers: [ToolbarService, EditService],
     standalone: true,
     selector: 'app-root',

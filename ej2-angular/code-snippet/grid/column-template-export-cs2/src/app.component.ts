@@ -1,11 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ToolbarService, ExcelExportService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
-import { GridComponent, ExcelQueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { ExcelExportService, ExcelQueryCellInfoEventArgs, GridComponent, GridModule, GroupService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({

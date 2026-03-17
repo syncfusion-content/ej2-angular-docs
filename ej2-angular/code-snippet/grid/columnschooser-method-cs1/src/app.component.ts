@@ -1,23 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ColumnChooserService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { ColumnChooserService, GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
-
-providers: [ColumnChooserService],
-standalone: true,
+    imports: [ GridModule, ButtonModule ],
+    providers: [ColumnChooserService],
+    standalone: true,
     selector: 'app-root',
     template: ` <button id='show' ej-button class='e-flat' (click)='show()'> open Column Chooser </button>
                 <ejs-grid #grid [dataSource]='data' [height]='280' [showColumnChooser]= 'true'>
@@ -45,6 +34,3 @@ export class AppComponent implements OnInit {
         (this.grid as any).columnChooserModule.openColumnChooser(200, 50); // give X and Y axis
     }
 }
-
-
-

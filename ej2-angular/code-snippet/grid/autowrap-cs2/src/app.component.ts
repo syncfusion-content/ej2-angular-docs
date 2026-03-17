@@ -1,34 +1,17 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { inventoryData } from './datasource';
-import { GridComponent, GridLine} from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridLine, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService],
-standalone: true,
+    imports: [ GridModule, DropDownListAllModule ],
+    providers: [PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
-    <label style="padding:  5px 5px 5px 0"> Change the grid lines: </label> 
-    <ejs-dropdownlist
-    id="value"
-    #dropdown
-    index="0"
-    width="100"
-    [dataSource]="ddlData"
-    (change)="valueChange($event)"></ejs-dropdownlist>
+        <label style="padding:  5px 5px 5px 0"> Change the grid lines: </label> 
+        <ejs-dropdownlist id="value" #dropdown index="0" width="100" [dataSource]="ddlData" (change)="valueChange($event)"></ejs-dropdownlist>
     </div>
     <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' height='290' gridLines='Default'>
         <e-columns>
@@ -61,6 +44,3 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).gridLines = args.value as GridLine
     }
 }
-
-
-

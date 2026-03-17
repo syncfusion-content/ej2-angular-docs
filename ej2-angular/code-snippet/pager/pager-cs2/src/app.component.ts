@@ -1,10 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { PagerModule } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { PagerModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [
@@ -22,6 +18,3 @@ export class AppComponent implements OnInit{
     ngOnInit(): void {
     }
 }
-
-
-

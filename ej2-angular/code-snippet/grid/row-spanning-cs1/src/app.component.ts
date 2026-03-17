@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, GridModule, FreezeService, SortService } from '@syncfusion/ej2-angular-grids';
 import { telecastData } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FreezeService, GridComponent, GridModule, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',

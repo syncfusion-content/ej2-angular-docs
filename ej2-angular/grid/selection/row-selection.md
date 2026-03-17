@@ -80,7 +80,7 @@ To achieve this, utilize the [selectRow](https://ej2.syncfusion.com/angular/docu
 
 Additionally, by handling the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid, maintain the selection of the desired row after completing the paging action.
 
-The following example demonstrates selecting rows on any page based on their index value using the actionComplete and change events:
+The following example demonstrates selecting rows on any page based on their index value using the `actionComplete` and change events:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -484,7 +484,7 @@ The Grid provides several events related to row selection that allow responding 
 
 [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselected): This event is triggered when a particular selected row is deselected. Use this event to perform actions or validations when a row is no longer selected.
 
-In the following example, row selection is canceled when the value of "Customer ID" is equal to "VINET" within the `rowSelecting` event. The background color changes to green when the value of "Freight" is greater than 10 and less than or equal to 140, triggering the `rowDeselected` event. The background color changes to red when the value of "Freight" is less than or equal to 10 during the `rowDeselected` event. Furthermore, the background color changes to yellow when the value of "Freight" is greater than 140 during the `rowDeselected` event. A notification message is displayed to indicate which event was triggered whenever a row is selected.
+In the following example, row selection is canceled when the value of "Customer ID" is equal to "VINET" within the `rowSelecting` event. The background color changes to green when the value of "Freight" is greater than "10" and less than or equal to "140", triggering the `rowDeselected` event. The background color changes to red when the value of "Freight" is less than or equal to "10" during the `rowDeselected` event. Furthermore, the background color changes to yellow when the value of "Freight" is greater than "140" during the `rowDeselected` event. A notification message is displayed to indicate which event was triggered whenever a row is selected.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -637,7 +637,7 @@ export class AppComponent {
 
 ```
 
-**Step 4:** On the server side, create a controller named "GridController.cs" under the "Controllers" folder to handle incoming requests and process selected records. Add the following code:
+**Step 4:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
 
 ```cs
 
@@ -723,7 +723,7 @@ namespace SelectedReacord.Server.Controllers
 
 ```
 
-**Step 5:** Create a model class named "OrdersDetails.cs" under the "Models" folder in the server-side project to represent the order data. Add the following code:
+**Step 5:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 namespace SelectedReacord.Server.Models
@@ -787,7 +787,7 @@ namespace SelectedReacord.Server.Models
 
 ```
 
-**Step 7:** In the "Program.cs" file, add the following code:
+**Step 7:** In the **Program.cs** file, add the following code:
 
 ```cs
 
@@ -823,7 +823,7 @@ app.Run();
 
 The following screenshot shows passing of selected records to the server:
 
-![Pass selected records to server using ajax](../grid/images/row-selected-record.png)
+![Pass selected records to server using ajax](../../grid/images/row-selected-record.png)
 
 ## Pass selected records to server using FETCH
 
@@ -889,7 +889,7 @@ export class AppComponent {
 
 ```
 
-**Step 4:** On the server side, create a controller named "GridController.cs" under the "Controllers" folder to handle incoming requests and process selected records. Add the following code:
+**Step 4:** On the server side, create a controller named **GridController.cs** under the "Controllers" folder to handle incoming requests and process selected records. Add the following code:
 
 ```cs
 
@@ -975,7 +975,7 @@ namespace SelectedReacord.Server.Controllers
 
 ```
 
-**Step 5:** Create a model class named "OrdersDetails.cs" under the "Models" folder in the server-side project to represent the order data. Add the following code:
+**Step 5:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 namespace SelectedReacord.Server.Models
@@ -1075,4 +1075,4 @@ app.Run();
 
 The following screenshot shows passing selected records to the server:
 
-![Pass selected records to server using fetch](../grid/images/row-selected-record.png)
+![Pass selected records to server using fetch](../../grid/images/row-selected-record.png)

@@ -1,24 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
-import { DetailRowService, GridComponent, getPrintGridModel, Row, Column,
-     ToolbarService, printGridInit, GridModel, HierarchyGridPrintMode } from '@syncfusion/ej2-angular-grids';
+import { GridModule, DetailRowService, GridComponent, getPrintGridModel, Row, Column,ToolbarService, printGridInit, GridModel, HierarchyGridPrintMode, PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { extend } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,SortService,FilterService,DetailRowService, ToolbarService,GroupService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [PageService,SortService,FilterService,DetailRowService, ToolbarService,GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='pData' [childGrid]='childGrid' [toolbar]='["Print"]'
      hierarchyPrintMode='Expanded' allowPaging=true [pageSettings]="{pageSize: 4}" (actionBegin)="actionBegin($event)" >
@@ -78,6 +66,3 @@ export class AppComponent implements OnInit {
         return obj;
     }
 }
-
-
-

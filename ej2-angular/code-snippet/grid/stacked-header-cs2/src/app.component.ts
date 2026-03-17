@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService,ColumnModel } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit } from '@angular/core';
 import { orderDetails } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ColumnModel, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   imports: [ GridModule,DropDownListAllModule],

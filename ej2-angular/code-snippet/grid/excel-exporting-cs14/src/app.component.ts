@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ExcelExportService,DetailRowService, GridComponent,ToolbarItems,ExcelExportProperties,GridModel } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { DetailRowService, ExcelExportProperties, ExcelExportService, GridComponent, GridModel, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({

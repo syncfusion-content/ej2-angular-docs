@@ -1,23 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, FilterService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { FilterService, FilterSettingsModel, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-                FilterService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [PageService, FilterService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' >
                 <e-columns>
@@ -40,6 +28,3 @@ export class AppComponent implements OnInit {
         };
     }
 }
-
-
-

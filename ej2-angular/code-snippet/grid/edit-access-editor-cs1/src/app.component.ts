@@ -1,34 +1,15 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component } from '@angular/core';
-import { EditSettingsModel, ToolbarItems, EditEventArgs } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, DropDownListModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditEventArgs, EditService, EditSettingsModel, GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DatePickerAllModule,
-        FormsModule,
-        TimePickerModule,
-        FormsModule,
-        TextBoxModule,
-        MultiSelectModule,
-        AutoCompleteModule,
-        DropDownListModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+  imports: [ GridModule, DatePickerAllModule,FormsModule, TimePickerModule, FormsModule,TextBoxModule, MultiSelectModule, AutoCompleteModule, DropDownListModule ],
+  providers: [EditService, ToolbarService, SortService, PageService],
+  standalone: true,
   selector: 'app-root',
   template: `
         <ejs-grid [dataSource]="data"  height='250px' [editSettings]="editSettings" [toolbar]="toolbar" (actionComplete)="access($event)">

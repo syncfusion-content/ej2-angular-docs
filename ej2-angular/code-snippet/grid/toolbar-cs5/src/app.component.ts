@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
-import { ToolbarItems, EditSettingsModel, GridModule, GridComponent,ToolbarService, EditService } from '@syncfusion/ej2-angular-grids';
-import { AutoCompleteAllModule, ChangeEventArgs} from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { AutoCompleteAllModule, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, EditSettingsModel, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',

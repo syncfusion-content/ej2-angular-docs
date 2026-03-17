@@ -1,31 +1,29 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common'; 
-import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { ReactiveFormsModule, FormsModule } from '@angular/forms'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TabAllModule,SelectingEventArgs,TabComponent } from '@syncfusion/ej2-angular-navigations'
-import { DropDownList } from '@syncfusion/ej2-dropdowns';
+import { ColumnDataType, data } from './datasource';
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { DataUtil } from '@syncfusion/ej2-data';
-import { data, ColumnDataType } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
-import { CheckBoxAllModule,ButtonModule} from '@syncfusion/ej2-angular-buttons';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ButtonModule, CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { DialogEditEventArgs, EditService, EditSettingsModel, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
+import { SelectingEventArgs, TabAllModule, TabComponent } from '@syncfusion/ej2-angular-navigations';
+import { DataUtil } from '@syncfusion/ej2-data';
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [
-        
+    imports: [
         ButtonModule,
         CheckBoxAllModule,
         TabAllModule,
         GridModule,
-        DropDownListAllModule, ReactiveFormsModule, FormsModule,CommonModule,NumericTextBoxAllModule
+        DropDownListAllModule, 
+        ReactiveFormsModule, 
+        FormsModule,
+        CommonModule,
+        NumericTextBoxAllModule
     ],
-
-providers: [EditService, ToolbarService],
-standalone: true,
+    providers: [EditService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     templateUrl: `tablikeedit.html`
 })
@@ -124,6 +122,3 @@ export class AppComponent implements OnInit {
             (this.grid as GridComponent).endEdit();     
     }
 }
-
-
-

@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
-import { DataManager, WebApiAdaptor, Query, ReturnOption } from '@syncfusion/ej2-data';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
+import { DataManager, Query, ReturnOption, WebApiAdaptor } from '@syncfusion/ej2-data';
 
 const SERVICE_URI: string = 'https://ej2services.syncfusion.com/production/web-services/';
 
@@ -53,7 +51,7 @@ export class AppComponent implements OnInit {
         this.getData.executeQuery(new Query()).then((e: ReturnOption) => {
             this.result = e.result as Order[];
             this.statusMessage = `Data fetched successfully! Total Records: ${this.result.length}`;
-        }).catch((error) => {
+        }).catch(() => {
             this.statusMessage = "Error fetching data!";
         });
     }

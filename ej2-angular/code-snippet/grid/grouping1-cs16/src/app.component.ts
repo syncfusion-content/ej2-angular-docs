@@ -1,14 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService,GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule,CheckBoxModule,RadioButtonModule,SwitchModule,ChangeEventArgs } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule, ChangeEventArgs, CheckBoxModule, RadioButtonModule, SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, GroupService, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule,ButtonModule,CheckBoxModule,RadioButtonModule,SwitchModule],
-providers: [GroupService],
-standalone: true,
+  imports: [ GridModule,ButtonModule,CheckBoxModule,RadioButtonModule,SwitchModule],
+  providers: [GroupService],
+  standalone: true,
   selector: 'app-root',
   template: `
     <div>

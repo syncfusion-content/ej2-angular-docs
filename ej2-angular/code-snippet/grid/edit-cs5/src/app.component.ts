@@ -1,22 +1,14 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
+import { columnDataType, data } from './datasource';
 import { Component, OnInit } from '@angular/core';
-import { data, columnDataType } from './datasource';
-import { BeforeBatchAddArgs, BeforeBatchDeleteArgs, CellEditArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { FormsModule } from '@angular/forms';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { BeforeBatchAddArgs, BeforeBatchDeleteArgs, CellEditArgs, EditService, EditSettingsModel, GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
+    imports: [ 
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -26,10 +18,9 @@ imports: [
         MultiSelectModule,
         AutoCompleteModule,
         ButtonModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+        ],
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<div style="padding:0px 0px 20px 0px">
                 <button ejs-button id="sample" (click)="btnClick($event)">Grid is Addable</button> 
@@ -84,6 +75,3 @@ export class AppComponent implements OnInit {
         this.isAddable = !this.isAddable;
     }
 }
-
-
-

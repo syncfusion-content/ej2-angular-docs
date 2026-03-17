@@ -1,26 +1,20 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-import { MessageModule } from '@syncfusion/ej2-angular-notifications'
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { CheckBoxSelectionService, DropDownListAllModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { FilterService, FilterSettingsModel, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
+import { MessageModule } from '@syncfusion/ej2-angular-notifications';
 
 @Component({
-imports: [
-        
-        GridModule,
-        MultiSelectModule,
-        DropDownListAllModule,
-        CheckBoxModule,
-        MessageModule
-    ],
-
-providers: [FilterService, PageService,CheckBoxSelectionService],
-standalone: true,
+  imports: [ 
+    GridModule,
+    MultiSelectModule,
+    DropDownListAllModule,
+    CheckBoxModule,
+    MessageModule
+      ],
+  providers: [FilterService, PageService,CheckBoxSelectionService],
+  standalone: true,
   selector: 'app-root',
   template: `<div class='message'>{{actionBeginMessage}}</div><div class='message'>{{actionCompleteMessage}}</div>
     <ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px' (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)">

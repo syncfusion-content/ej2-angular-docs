@@ -25,7 +25,7 @@ For Table blocks, you can configure layout and structure using the [properties](
 | columns | Defines the columns of the table, including their types and headers. | `[]` |
 | rows | Defines the rows of the table, each containing cells tied to columns. | `[]` |
 
-### BlockType & Properties
+### Block type & properties
 
 The following example demonstrates how to pre-configure a `Table` block in the editor.
 
@@ -91,3 +91,18 @@ The Block Editor supports table column resizing. You can drag column borders to 
 The Block Editor supports selecting full rows, single or multiple using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift based multiple selection is also supported: select a row, hold Shift, and click a non adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
 
 This sample demonstrates the `Table` block multiple row and column selection and deletion support in the Block Editor.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/table-block/table-feature/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/block-types/table-block/table-feature/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/block-types/table-block/table-feature/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/block-editor/blocks/block-types/table-block/table-feature" %}

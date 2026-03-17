@@ -184,7 +184,7 @@ The following steps demonstrate overcoming the limitation in the Syncfusion Grid
         }
     ```
 
-4. Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the grid component.
+4. Render "Load Next Set" button and "Load Previous Set" button at bottom and top of the grid component.
 
     ```typescript
         <button ejs-button cssClass="e-info prevbtn" (onClick)="prevBtnClick($event)" content="Load Previous Set..."></button>
@@ -200,7 +200,7 @@ The following steps demonstrate overcoming the limitation in the Syncfusion Grid
         <button ejs-button cssClass="e-info nxtbtn" (onClick)="nxtBtnClick($event)" content="Load Next Set..."></button>
     ```
 
-5. While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
+5. While click on the "Load Next Set" / "Load Previous Set" button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
 
     ```typescript
         // Triggered when clicking the Previous/ Next button.

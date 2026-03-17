@@ -1,11 +1,9 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridAllModule, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { DataStateChangeEventArgs, DataSourceChangedEventArgs, SortService, FilterService, CommandColumnService, SearchService, ColumnChooser, isComplexField } from '@syncfusion/ej2-angular-grids';
-import { EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
 import { CrudService } from './crud.service';
-import { Subscription } from 'rxjs';
-import { Query } from '@syncfusion/ej2-data';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ColumnChooser, CommandColumnService, DataSourceChangedEventArgs, DataStateChangeEventArgs, EditService, FilterService, GridAllModule, GridComponent, isComplexField, PageService, SearchService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { Query } from '@syncfusion/ej2-data';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',

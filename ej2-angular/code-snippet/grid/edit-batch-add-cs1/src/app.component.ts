@@ -1,31 +1,26 @@
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids';
-import { DatePickerAllModule, TimePickerModule  } from '@syncfusion/ej2-angular-calendars';
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
-import { AutoCompleteModule, MultiSelectModule, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
-import { Component, ViewChild } from '@angular/core';
-import { GridComponent, NewRowPosition } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, DropDownListModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, GridComponent, GridModule, NewRowPosition, PageService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DatePickerAllModule,
-        FormsModule,
-        TimePickerModule,
-        FormsModule,
-        TextBoxModule,
-        MultiSelectModule,
-        AutoCompleteModule,
-        DropDownListModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+    imports: [
+            GridModule,
+            DatePickerAllModule,
+            FormsModule,
+            TimePickerModule,
+            FormsModule,
+            TextBoxModule,
+            MultiSelectModule,
+            AutoCompleteModule,
+            DropDownListModule
+        ],
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
         <div style="display: flex">

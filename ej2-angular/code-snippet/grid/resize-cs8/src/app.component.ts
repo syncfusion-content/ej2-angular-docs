@@ -1,27 +1,17 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ResizeService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, ResizeMode } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule, ResizeMode, ResizeService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule, DropDownListAllModule],
-
-providers: [ResizeService],
-standalone: true,
+  imports: [ GridModule, DropDownListAllModule],
+  providers: [ResizeService],
+  standalone: true,
   selector: 'app-root',
   template: `
   <div style="display: flex">
-  <label style="padding: 5px 5px 5px 0"> Change the resize mode: </label>
-  <ejs-dropdownlist
-  index="0"
-  width="150"
-  [dataSource]="ddlData"
-  (change)="valueChange($event)"></ejs-dropdownlist>
+    <label style="padding: 5px 5px 5px 0"> Change the resize mode: </label>
+    <ejs-dropdownlist index="0" width="150" [dataSource]="ddlData" (change)="valueChange($event)"></ejs-dropdownlist>
   </div>
   <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' [allowResizing]='true' height='290px'>
     <e-columns>
@@ -50,6 +40,3 @@ export class AppComponent implements OnInit {
     (this.grid as GridComponent).resizeSettings.mode = (args.value as ResizeMode);
   }
 }
-
-
-

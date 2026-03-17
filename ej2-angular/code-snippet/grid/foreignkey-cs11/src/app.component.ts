@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
-
-
-import { Component, OnInit } from '@angular/core';
 import { data, employeeData } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { ForeignKeyService, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ForeignKeyService],
-standalone: true,
+    imports: [GridModule],
+    providers: [ForeignKeyService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='315'>
                     <e-columns>
@@ -35,6 +27,3 @@ export class AppComponent implements OnInit {
         this.employeeData = employeeData;
     }
 }
-
-
-

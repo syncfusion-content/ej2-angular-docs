@@ -1,14 +1,12 @@
-import { NgModule, ViewChild } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { CheckBoxComponent, CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
-import { DataUtil } from '@syncfusion/ej2-data'; 
-import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
-import { DropDownListModule,DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
+import { DropDownListComponent, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
+import { DataManager, DataUtil, WebApiAdaptor } from '@syncfusion/ej2-data';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 let hostUrl: string = 'https://services.syncfusion.com/js/production/api/orders';
+
 @Component({
     imports: [GridModule, DropDownListModule, CheckBoxModule],
     standalone: true,

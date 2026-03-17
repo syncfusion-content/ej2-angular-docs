@@ -34,7 +34,7 @@ You can configure the CollapsibleHeading using the property `level` inside the `
 
 You can control whether a block is expanded or collapsed using the [isExpanded](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockModel#isExpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to `Collapsible` blocks.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Configuring CollapsibleHeading block
@@ -65,6 +65,21 @@ You can control whether a block is expanded or collapsed using the [isExpanded](
 
 This example shows how to configure `CollapsibleHeading` and `CollapsibleParagraph` blocks.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/children/toggle-block/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/children/toggle-block/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/children/toggle-block/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/block-editor/blocks/children/toggle-block" %}
+
 ### Configure placeholder
 
 You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockModel#placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
@@ -89,7 +104,7 @@ You can configure placeholder text for block using the [placeholder](https://ej2
 
 Quote blocks are styled for displaying quotations or excerpts. Render a Quote block by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockModel#blockType) to `Quote`. Editing is now more natural with multi‑line support—pressing Enter creates a new line inside the block, and pressing Enter again on an empty line exits the quote.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding quote block
@@ -108,23 +123,26 @@ Quote blocks are styled for displaying quotations or excerpts. Render a Quote bl
 ```
 The following sample demonstrates how to configure quote block.
 
-### Configure placeholder
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/children/quote/src/app.component.ts %}
+{% endhighlight %}
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockModel#placeholder) property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/children/quote/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/children/quote/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
 
-```typescript
-// Adding placeholder value to blocktype
-{
-    blockType: 'Quote',
-    properties: { placeholder: 'Quote'}
-}
-```
+{% previewsample "page.domainurl/samples/block-editor/blocks/children/quote" %}
 
 ## Configure callout block
 
 Callout blocks highlight important information such as notes, warnings, or tips. Render one by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockModel#blockType) to `Callout`.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding callout block
@@ -144,3 +162,17 @@ Callout blocks highlight important information such as notes, warnings, or tips.
 
 The following sample demonstrates how to configure callout block.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/blocks/children/callout/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/blocks/children/callout/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/blocks/children/callout/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/block-editor/blocks/children/callout" %}

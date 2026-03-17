@@ -1,19 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-standalone: true,
+    imports: [ GridModule],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data'>
                 <e-columns>
@@ -36,6 +27,3 @@ export class AppComponent implements OnInit {
         this.data = data.slice(0, 8);
     }
 }
-
-
-

@@ -1,9 +1,9 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
 import { CommonModule } from '@angular/common';
-import { GridModule, ToolbarService, ExcelExportService, GridComponent, ToolbarItems, ExcelExportCompleteArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ExcelExportCompleteArgs, ExcelExportService, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { Query } from '@syncfusion/ej2-data';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import { data } from './datasource';
 
 @Component({
   selector: 'app-root',

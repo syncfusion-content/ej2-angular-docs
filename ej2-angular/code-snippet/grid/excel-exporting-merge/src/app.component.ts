@@ -1,7 +1,6 @@
-import { GridModule, ToolbarService, ExcelExportService, FilterService, ExcelQueryCellInfoEventArgs, ExcelExportCompleteArgs } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ExcelExportCompleteArgs, ExcelExportService, ExcelQueryCellInfoEventArgs, FilterService, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({

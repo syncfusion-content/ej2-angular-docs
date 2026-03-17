@@ -159,11 +159,7 @@ To disable default form validation rules in the grid, use the following approach
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the ability to add validation rules for fields not present in the column model. This feature prevents erroneous or inconsistent data from being submitted, enhancing the reliability of application data.
 
-To add validation rules, utilize the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event along with the [addRules](https://ej2.syncfusion.com/documentation/api/form-validator#addrules) method.
-
-The following approach uses the `addRules` method to add validation rules for custom editors in the `actionComplete` event:
-
-Example:
+To add validation rules, utilize the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event along with the [addRules](https://ej2.syncfusion.com/documentation/api/form-validator#addrules) method. The following approach uses the `addRules` method to add validation rules for custom editors in the `actionComplete` event:
 
 ```typescript
     actionComplete(args: DialogEditEventArgs) {

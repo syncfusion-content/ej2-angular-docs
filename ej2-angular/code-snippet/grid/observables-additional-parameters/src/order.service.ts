@@ -1,13 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {
-  DataStateChangeEventArgs,
-  Sorts,
-  DataResult,
-} from '@syncfusion/ej2-angular-grids';
-import { Observable } from 'rxjs';
-import { Subject } from 'rxjs';
-import { map } from 'rxjs';
+import { map, Observable, Subject } from 'rxjs';
+import {DataStateChangeEventArgs, Sorts, DataResult,} from '@syncfusion/ej2-angular-grids';
 
 @Injectable()
 export class DataService extends Subject<DataStateChangeEventArgs> {

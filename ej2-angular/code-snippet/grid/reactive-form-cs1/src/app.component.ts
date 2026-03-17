@@ -1,27 +1,26 @@
-
-import { CommonModule } from '@angular/common'; 
-import { GridModule, EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
-import { ReactiveFormsModule, FormsModule } from '@angular/forms'
-import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
+import { orderDetails } from './datasource';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { AbstractControl, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
-import {TextAreaModule} from '@syncfusion/ej2-angular-inputs';
-import { Component, OnInit } from '@angular/core';
-import { orderDetails } from './datasource';
-import { DialogEditEventArgs, SaveEventArgs } from '@syncfusion/ej2-angular-grids';
+import { DialogEditEventArgs, EditService, GridModule, PageService, SaveEventArgs, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { NumericTextBoxAllModule, TextAreaModule } from '@syncfusion/ej2-angular-inputs';
 import { DataUtil } from '@syncfusion/ej2-data';
-import { FormGroup, AbstractControl, FormControl, Validators } from '@angular/forms';
 
 @Component({
-imports: [
-        
+    imports: [
         GridModule,
-        NumericTextBoxAllModule, DatePickerAllModule,CommonModule,
-        DropDownListAllModule, ReactiveFormsModule, FormsModule,TextAreaModule
-    ],
-
-providers: [EditService, ToolbarService, PageService],
-standalone: true,
+        NumericTextBoxAllModule, 
+        DatePickerAllModule,
+        CommonModule,
+        DropDownListAllModule, 
+        ReactiveFormsModule, 
+        FormsModule,
+        TextAreaModule
+        ],
+    providers: [EditService, ToolbarService, PageService],
+    standalone: true,
     selector: 'app-root',
     templateUrl: `reactive-form.html`
 })
@@ -108,6 +107,3 @@ export interface IOrderModel {
     ShipCountry?: string;
     ShipAddress?: string;
 }
-
-
-

@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import {GridModule, PageService, RowDataBoundEventArgs, GridModel ,DetailRowService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { childData, employeeData } from './datasource';
 import { Component, OnInit } from '@angular/core';
-import { employeeData, childData } from './datasource';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DetailRowService, GridModel, GridModule, PageService, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 interface Employee {
@@ -58,8 +56,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-
-
-

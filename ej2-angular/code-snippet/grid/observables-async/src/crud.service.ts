@@ -1,10 +1,9 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders} from '@angular/common/http';
-import { DataManager, Query } from '@syncfusion/ej2-data';
 import { Customer } from './customers';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { map } from 'rxjs';
-import { DataStateChangeEventArgs, DataSourceChangedEventArgs } from '@syncfusion/ej2-grids';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { DataManager, Query } from '@syncfusion/ej2-data';
+import { DataSourceChangedEventArgs, DataStateChangeEventArgs } from '@syncfusion/ej2-grids';
+import { BehaviorSubject, map, Observable } from 'rxjs';
 
 interface sortInfo {
   name: string
@@ -169,6 +168,3 @@ export class CrudService {
     return this.http.put(this.customersUrl, state.data, httpOptions);
   }
 }
-
-
-

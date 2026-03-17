@@ -175,7 +175,7 @@ The inline toolbar now includes `transform` options to quickly convert blocks be
 
 #### Built-in default transform block options
 
-Below are the built-in tranform block options available:
+Below are the built-in transform block options available:
 
 | Built-in transform Block Types          |
 |-----------------------------------------|
@@ -205,11 +205,41 @@ Added inline link formatting in the toolbar, by link item click, link dialog ope
 
 The following example demonstrates how to customize the transform, inline code, link items.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/transform-item/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/transform-item/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/transform-item/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/block-editor/editor-menus/inline-toolbar/transform-item" %}
+
 #### Font and background color support
 
 Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#fontColorSettings), [backgroundColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#backgroundColorSettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
 
 The following example demonstrates how to customize the font and background color toolbar items.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/color-item/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/color-item/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/color-item/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/block-editor/editor-menus/inline-toolbar/color-item" %}
 
 ### Customize Inline Toolbar
 

@@ -52,7 +52,7 @@ The following sample demonstrates the configuration of a paragraph block in the 
 
 You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/basestylesprop) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding placeholder
@@ -87,7 +87,7 @@ Heading blocks create document titles and section headers. These blocks help str
 
 By using the [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties), you can set the heading level using the `level` property, with `1` being the highest level (title) and `4` being the lowest (subsection).
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding heading block
@@ -140,7 +140,7 @@ You can configure placeholder text for block using the [placeholder](https://ej2
 
 A Divider block inserts a horizontal line to separate content. Render it by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) to `Divider`.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding divider block

@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { PageService, ToolbarService, GridModule} from '@syncfusion/ej2-angular-grids';
-import { DataManager, Query } from '@syncfusion/ej2-data';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { DataManager, Query } from '@syncfusion/ej2-data';
+
 @Component({
   imports: [GridModule],
   providers: [PageService, ToolbarService],

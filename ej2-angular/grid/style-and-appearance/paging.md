@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The appearance of the paging elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and the pager current page numeric element.
 
-## Customize the Grid Pager Root
+## Customize the Grid pager root
 
 The `.e-gridpager` class is used to style the pager root element.
 
@@ -25,7 +25,7 @@ The `.e-gridpager` class is used to style the pager root element.
 
 ![Grid pager root element](../images/grid-pager-root-element.png)
 
-## Customize the Grid Pager Container
+## Customize the Grid pager container
 
 The `.e-pagercontainer` class is used to style the pager container element.
 
@@ -38,7 +38,7 @@ The `.e-pagercontainer` class is used to style the pager container element.
 
 ![Grid pager container element](../images/grid-pager-container-element.png)
 
-## Customize the Grid Pager Navigation Elements
+## Customize the Grid pager navigation elements
 
 The classes `.e-prevpagedisabled`, `.e-prevpage`, `.e-nextpage`, `.e-nextpagedisabled`, `.e-lastpagedisabled`, `.e-lastpage`, .`e-firstpage`, and `.e-firstpagedisabled` are used to style the various pager navigation elements.
 

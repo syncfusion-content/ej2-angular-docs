@@ -1,20 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService } from '@syncfusion/ej2-angular-grids'
-
+import { columnDataType, data, employeeData } from './datasource';
 import { Component, OnInit } from '@angular/core';
-import { employeeData, data,columnDataType } from './datasource';
-import { DetailDataBoundEventArgs, Grid } from '@syncfusion/ej2-angular-grids';
+import { DetailDataBoundEventArgs, DetailRowService, Grid, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule        
-    ],
-
-providers: [DetailRowService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='315' width='auto' 
               (detailDataBound)='detailDataBound($event)'>
@@ -52,6 +43,3 @@ export class AppComponent implements OnInit {
         detail.appendTo((e.detailElement as HTMLElement).querySelector('.custom-grid') as HTMLElement);
     }
 }
-
-
-

@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { GridComponent, GridAllModule } from '@syncfusion/ej2-angular-grids';
+import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
+import { GridAllModule, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 describe('AppComponent', () => {
 

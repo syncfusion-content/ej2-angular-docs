@@ -1,13 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FreezeService, PageService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { EditService, FreezeService, GridModule, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { DatePicker } from '@syncfusion/ej2-calendars';
+
 @Component({
-imports: [GridModule],
-providers: [FreezeService, PageService, EditService, ToolbarService],
-standalone: true,
+  imports: [GridModule],
+  providers: [FreezeService, PageService, EditService, ToolbarService],
+  standalone: true,
     selector: 'app-root',
     template: `
     <ejs-grid [dataSource]='data' height='250px' [frozenColumns]='2' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' [pageSettings]='pageSettings'>

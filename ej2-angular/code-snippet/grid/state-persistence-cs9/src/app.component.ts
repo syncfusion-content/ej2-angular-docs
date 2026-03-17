@@ -1,24 +1,24 @@
-import { NgModule,Component, OnInit, ViewChild  } from '@angular/core'
-import { Observable } from 'rxjs';
 import { OrdersService } from './order.service';
-import { GridModule, GridComponent, DataStateChangeEventArgs, PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
 import { AsyncPipe } from '@angular/common';
+import { Component, ViewChild } from '@angular/core';
+import { DataStateChangeEventArgs, FilterService, GridComponent, GridModule, GroupService, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 import { getStateEventArgument } from '@syncfusion/ej2-grids';
+import { Observable } from 'rxjs';
 
 @Component({
-imports: [ GridModule, AsyncPipe],
-standalone: true,
-selector: 'app-root',
-template: `<ejs-grid #persistGrid height="170" id="persistGrid" [dataSource]="data | async" [enablePersistence]="true" allowPaging="true" [pageSettings]="pageSettings" allowSorting="true" [sortSettings]="sortSettings" allowFiltering="true" [filterSettings]="filterSettings" allowGrouping="true" [groupSettings]="groupSettings" (created)="created()" (dataStateChange)="dataStateChange($event)">
-              <e-columns>
-                <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120 ></e-column>
-                <e-column field='CustomerID' headerText='Customer ID' width=150 ></e-column>
-                <e-column field='ShipCity' headerText='Ship City' width=150 ></e-column>
-                <e-column field='ShipName' headerText='Ship Name' width=150 ></e-column>
-              </e-columns>
-            </ejs-grid>`,
-    providers: [GroupService, SortService, FilterService, PageService]
-})
+    imports: [ GridModule, AsyncPipe],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-grid #persistGrid height="170" id="persistGrid" [dataSource]="data | async" [enablePersistence]="true" allowPaging="true" [pageSettings]="pageSettings" allowSorting="true" [sortSettings]="sortSettings" allowFiltering="true" [filterSettings]="filterSettings" allowGrouping="true" [groupSettings]="groupSettings" (created)="created()" (dataStateChange)="dataStateChange($event)">
+                  <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120 ></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150 ></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150 ></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150 ></e-column>
+                  </e-columns>
+                </ejs-grid>`,
+        providers: [GroupService, SortService, FilterService, PageService]
+    })
 export class AppComponent {
     @ViewChild('persistGrid', { static: true }) grid!: GridComponent;
     public data: Observable<DataStateChangeEventArgs>;

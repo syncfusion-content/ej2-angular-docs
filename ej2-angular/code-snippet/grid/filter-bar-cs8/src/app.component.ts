@@ -1,14 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, IFilterUI, parentsUntil } from '@syncfusion/ej2-angular-grids';
-import { ComboBox, DropDownList, MultiSelect} from '@syncfusion/ej2-dropdowns';
-import { DataManager, DataUtil, Predicate, Query } from '@syncfusion/ej2-data';
+import { Component, ViewChild } from '@angular/core';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { CheckBoxSelectionService, DropDownListAllModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { FilterService, GridComponent, GridModule, IFilterUI, PageService, parentsUntil } from '@syncfusion/ej2-angular-grids';
 import { DatePicker } from '@syncfusion/ej2-calendars';
+import { DataManager, DataUtil, Predicate, Query } from '@syncfusion/ej2-data';
+import { ComboBox, DropDownList, MultiSelect } from '@syncfusion/ej2-dropdowns';
 import { NumericTextBox } from '@syncfusion/ej2-inputs';
 
 @Component({

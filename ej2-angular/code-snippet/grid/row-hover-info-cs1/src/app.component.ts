@@ -1,20 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { TooltipModule } from '@syncfusion/ej2-angular-popups'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
+import { TooltipModule } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
-        GridModule,
-        TooltipModule
-    ],
-
-standalone: true,
+  imports: [GridModule, TooltipModule ],
+  standalone: true,
   selector: 'app-root',
   template: `<div id='show' style="padding:0px 0px 20px 0px;" ></div>
             <ejs-grid #grid [dataSource]='data' (rowDataBound)='rowDataBound($event)'>
@@ -64,4 +55,3 @@ export class AppComponent implements OnInit {
   }
 
 }
-

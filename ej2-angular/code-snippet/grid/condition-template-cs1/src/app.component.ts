@@ -1,9 +1,7 @@
-import { NgModule, } from '@angular/core'
-import { BrowserModule, } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { categoryData } from './datasource';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { categoryData } from './datasource';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [ CommonModule, GridModule],
@@ -33,6 +31,3 @@ export class AppComponent implements OnInit {
         this.data = categoryData;
     }
 }
-
-
-

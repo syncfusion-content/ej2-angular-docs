@@ -1,20 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { categoryData } from './datasource';
-import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FilterService, GridModule, GroupService, PageService, PageSettingsModel, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule, CommonModule ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
-standalone: true,
+  imports: [ GridModule, CommonModule ],
+  providers: [ PageService, SortService, FilterService, GroupService],
+  standalone: true,
   selector: 'app-root',
   template: `<div class="control-section">
     <ejs-grid #grid [dataSource]="data" allowPaging="true" allowFiltering="true" [pageSettings]="pageSettings" [filterSettings]="filterOptions" >

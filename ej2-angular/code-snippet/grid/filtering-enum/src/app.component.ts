@@ -1,7 +1,7 @@
+import { data, FileType, OrderData } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridModule,GridComponent,FilterService } from '@syncfusion/ej2-angular-grids';
-import { DropDownListModule, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { data, OrderData, FileType } from './datasource';
+import { ChangeEventArgs, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { FilterService, GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   imports: [GridModule, DropDownListModule],
