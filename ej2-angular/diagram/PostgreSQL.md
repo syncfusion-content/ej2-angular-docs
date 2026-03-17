@@ -187,7 +187,7 @@ npm install -D @types/express @types/pg @types/cors @types/node typescript tsx n
 
 Create a **server/.env** file with the following configuration:
 
-```env
+```
 DB_USER=postgres
 DB_PASSWORD=your_password
 DB_HOST=localhost

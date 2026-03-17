@@ -25,6 +25,6 @@ export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
     public textEdit(args: ITextEditEventArgs): void {
-        // Handle textEdit event for custom logic
+        // Handle double-click event for custom logic
     }
 }

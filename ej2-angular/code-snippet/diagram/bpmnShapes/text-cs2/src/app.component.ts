@@ -16,7 +16,7 @@ Diagram.Inject(BpmnDiagrams);
       <ejs-symbolpalette
         id="symbolpalette"
         width="100%"
-        height="160px"
+        height="150px"
         [symbolHeight]="100"
         [symbolWidth]="100"
         [palettes]="palettes"

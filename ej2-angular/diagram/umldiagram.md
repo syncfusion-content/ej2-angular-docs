@@ -22,15 +22,15 @@ The UML class diagram shapes are explained as follows.
 
 ### Class
 
-A class defines a group of objects that share common specifications, features, constraints, and semantics. To create a class object, the classifier should be defined using the [`class`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassifiershapemodel#class) notation. This notation serves as a foundational element in object-oriented programming, encapsulating the characteristics and behavior that objects belonging to the class will exhibit.
+A class defines a group of objects that share common specifications, features, constraints, and semantics. To create a class object, the classifier should be defined using the [`class`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel/#class) notation. This notation serves as a foundational element in object-oriented programming, encapsulating the characteristics and behavior that objects belonging to the class will exhibit.
 
-Define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmodel#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmodel#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmodel#methods) of the class using the class property of node.
+Define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel/#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel/#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel/#methods) of the class using the class property of node.
 
-The attribute's [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassattributemodel#name), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassattributemodel#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassattributemodel#scope) properties allow you to define the name, data type, and visibility of the attribute.
+The attribute's [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#name), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#scope) properties allow you to define the name, data type, and visibility of the attribute.
 
-The method's [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmethodmodel#name), [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmethodmodel#parameters), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmethodmodel#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmethodmodel#scope) properties allow you to define the name, parameter, return type, and visibility of the methods.
+The method's [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#name), [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#parameters), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#scope) properties allow you to define the name, parameter, return type, and visibility of the methods.
 
-The method [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/methodargumentsmodel) object properties allow you to define the name and type of the parameter.
+The method [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#parameters) object properties allow you to define the name and type of the parameter.
 
 The following code example illustrates how to create a class.
 
@@ -48,13 +48,13 @@ The following code example illustrates how to create a class.
 
 ### Interface
 
-An [`interface`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassifiershapemodel#interface) is a specific type of classifier that represents a declaration of a cohesive set of public features and obligations. When creating an interface, define the classifier property using the interface notation. This concept in object-oriented programming outlines a contract for classes to implement, specifying the required methods and behaviors without providing implementation details.
+An [`interface`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel/#interface) is a specific type of classifier that represents a declaration of a cohesive set of public features and obligations. When creating an interface, define the classifier property using the interface notation. This concept in object-oriented programming outlines a contract for classes to implement, specifying the required methods and behaviors without providing implementation details.
 
-Define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlinterfacemodel#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlinterfacemodel#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlinterfacemodel#methods) of the interface using the interface property of the node.
+Define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel/#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel/#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel/#methods) of the interface using the interface property of the node.
 
-The attribute's [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassattributemodel#name), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassattributemodel#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassattributemodel#scope) properties allow you to define the name, data type, and visibility of the attribute.
+The attribute's [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#name), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#scope) properties allow you to define the name, data type, and visibility of the attribute.
 
-The method's [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmethodmodel#name), [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmethodmodel#parameters), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmethodmodel#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassmethodmodel#scope) properties allow you to define the name, parameter, return type, and visibility of the methods.
+The method's [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#name), [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#parameters), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#scope) properties allow you to define the name, parameter, return type, and visibility of the methods.
 
 The method parameter object properties of name and type allow you to define the name and type of the parameter.
 
@@ -74,9 +74,9 @@ The following code example illustrates how to create an interface.
 
 ### Enumeration
 
-To create an enumeration, set the classifier property of the node as [`enumeration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassifiershapemodel#enumeration). Define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlenumerationmodel#name) and enumerate the [`members`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlenumerationmodel#members) of the enumeration using the appropriate enumeration property of the node. This process encapsulates a set of distinct values within the enumeration, allowing for clear representation of specific, named constants within a system.
+To create an enumeration, set the classifier property of the node as [`enumeration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel/#enumeration). Define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlEnumerationModel/#name) and enumerate the [`members`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlEnumerationModel/#members) of the enumeration using the appropriate enumeration property of the node. This process encapsulates a set of distinct values within the enumeration, allowing for clear representation of specific, named constants within a system.
 
-You can set a name for the enumeration members collection using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlclassattributemodel#name) property of members collection.
+You can set a name for the enumeration members collection using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#name) property of members collection.
 
 The following code example illustrates how to create an enumeration.
 
@@ -127,7 +127,7 @@ The association property allows you to define the type of association. The defau
 
 ### Aggregation
 
-Aggregation is a binary association between a property and one or more composite objects that group together a set of instances. Aggregation is decorated with a hollow diamond. To create an aggregation shape, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationshipmodel#relationship) of connector shape as "Aggregation".
+Aggregation is a binary association between a property and one or more composite objects that group together a set of instances. Aggregation is decorated with a hollow diamond. To create an aggregation shape, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) of connector shape as "Aggregation".
 
 The following code example illustrates how to create an aggregation.
 
@@ -145,7 +145,7 @@ The following code example illustrates how to create an aggregation.
 
 ### Composition
 
-Composition is a strong form of aggregation. The composition is decorated with a black diamond. To create a composition shape, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationshipmodel#relationship) property of the connector shape as "Composition".
+Composition is a strong form of aggregation. The composition is decorated with a black diamond. To create a composition shape, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) property of the connector shape as "Composition".
 
 The following code example illustrates how to create a composition.
 
@@ -165,7 +165,7 @@ The following code example illustrates how to create a composition.
 
 Inheritance is also called "generalization". Inheritance is a binary taxonomic directed relationship between a more general classifier (super class) and a more specific classifier (subclass). Inheritance is shown as a line with hollow triangle.
 
-To create an inheritance, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationshipmodel#relationship) as "inheritance".
+To create an inheritance, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) as "inheritance".
 
 The following code example illustrates how to create an inheritance.
 
@@ -183,7 +183,7 @@ The following code example illustrates how to create an inheritance.
 
 ### Dependency
 
-Dependency is a directed relationship used to show that some UML elements need or depend on other model elements for specifications. Dependency is shown as a dashed line with an open arrow. To create a dependency, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationshipmodel#relationship) property of the connector shape as "dependency".
+Dependency is a directed relationship used to show that some UML elements need or depend on other model elements for specifications. Dependency is shown as a dashed line with an open arrow. To create a dependency, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) property of the connector shape as "dependency".
 
 The following code example illustrates how to create a dependency.
 
@@ -212,11 +212,11 @@ By default, the multiplicity is considered as "OneToOne".
 
 The multiplicity property in UML allows you to specify a large number of elements or some collection of elements.
 
-The shape multiplicity's [`source`](https://ej2.syncfusion.com/angular/documentation/api/diagram/classifiermultiplicitymodel#source) property sets the source label to the connector and the [`target`](https://ej2.syncfusion.com/angular/documentation/api/diagram/classifiermultiplicitymodel#target) property sets the target label to the connector.
+The shape multiplicity's [`source`](https://ej2.syncfusion.com/angular/documentation/api/diagram/classifierMultiplicityModel/#source) property sets the source label to the connector and the [`target`](https://ej2.syncfusion.com/angular/documentation/api/diagram/classifierMultiplicityModel/#target) property sets the target label to the connector.
 
-To set optionality or cardinality for the connector source label, use the [`optional`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicitylabelmodel#optional) property.
+To set optionality or cardinality for the connector source label, use the [`optional`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel/#optional) property.
 
-The [`lowerBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicitylabelmodel#lowerBounds) and [`upperBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicitylabelmodel#upperBounds) can be natural constants or constant expressions evaluated to natural (non-negative) numbers. Upper bound can also be specified as asterisk '*' which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
+The [`lowerBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel/#lowerBounds) and [`upperBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel/#upperBounds) can be natural constants or constant expressions evaluated to natural (non-negative) numbers. Upper bound can also be specified as asterisk '*' which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
 
 The following code example illustrates how to customize the multiplicity.
 
@@ -238,7 +238,7 @@ In UML nodes, child elements such as member, method and attribute can be added e
 
 ### Adding UML child through code
 
-The [`addChildToUmlNode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#addchildtoumlnode) method is used for dynamically adding a child to the UML node during runtime, providing flexibility in modifying the diagram structure programmatically.
+The [`addChildToUmlNode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addchildtoumlnode) method is used for dynamically adding a child to the UML node during runtime, providing flexibility in modifying the diagram structure programmatically.
 
 The following code example illustrates how to add members, methods and attributes to UML node at runtime.
 
@@ -262,7 +262,7 @@ To include a child, select a node, move the mouse outside it, and position the p
 
 ## Adding UML Nodes in Symbol palette
 
-UML built-in shapes are easily rendered in a symbol palette. The [`symbols`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palettemodel#symbols) property of [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palettemodel) is used to define UML symbols with the necessary classes and methods. This feature allows you to add a collection of predefined UML symbols to the palette, making your UML diagramming application more versatile.
+UML built-in shapes are easily rendered in a symbol palette. The [`symbols`](https://ej2.syncfusion.com/angular/documentation/api/diagram/paletteModel/#symbols) property of [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/paletteModel/) is used to define UML symbols with the necessary classes and methods. This feature allows you to add a collection of predefined UML symbols to the palette, making your UML diagramming application more versatile.
 
 The following code example showcases the rendering of UML built-in shapes in a symbol palette.
 
@@ -331,7 +331,7 @@ The following code illustrates how to create UmlActivity shapes.
 
 ### UML Activity connector
 
-To establish a UML Activity connector, specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationshipmodel#type) of connector shape as "UmlActivity" and define the flow as either "Exception," "Control," or "Object." This configuration delineates the nature of the connection, allowing for precise representation of the interaction within the activity diagram.
+To establish a UML Activity connector, specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#type) of connector shape as "UmlActivity" and define the flow as either "Exception," "Control," or "Object." This configuration delineates the nature of the connection, allowing for precise representation of the interaction within the activity diagram.
 
 The following code illustrates how to create a UmlActivity connector.
 

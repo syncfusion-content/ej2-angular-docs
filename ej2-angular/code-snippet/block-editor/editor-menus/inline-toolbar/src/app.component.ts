@@ -24,12 +24,17 @@ export class AppComponent {
         },
         {
             blockType: 'Quote',
-            content: [
-                {
-                    contentType: ContentType.Text,
-                    content: 'Select any text in the editor to open the Inline Toolbar'
-                }
-            ]
+            properties:{
+                children:[{
+                    blockType: 'Paragraph',
+                    content: [
+                        {
+                            contentType: ContentType.Text,
+                            content: 'Select any text in the editor to open the Inline Toolbar'
+                        }
+                    ]
+                }]
+            }
         }
     ];
     customToolbarItems = [ 'Bold', 'Italic' ];

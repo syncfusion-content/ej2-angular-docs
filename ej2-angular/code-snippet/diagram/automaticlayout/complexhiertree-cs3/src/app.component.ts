@@ -13,7 +13,7 @@ Diagram.Inject(DataBinding, ComplexHierarchicalTree, LineDistribution);
   providers: [HierarchicalTreeService, DataBindingService],
   standalone: true,
   selector: 'app-container',
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="500px"
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="590px"
     [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'
     [layout]='layout' [dataSourceSettings]='source'></ejs-diagram>`,
   encapsulation: ViewEncapsulation.None

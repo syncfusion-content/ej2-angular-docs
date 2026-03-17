@@ -11,8 +11,8 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
     selector: "app-container",
     template: ` <label>(CTRL+X)</label><button (click)="cut()">Cut</button>
     <label>(CTRL+C)</label> <button (click)="copy()">Copy</button>
-    <label>(CTRL+V)</label><button (click)="paste()">Paste</button>
-    <button (click)="pasteObject()">Paste Defined Object</button>
+    <label>(CTRL+V)</label><button (click)="past()">Past</button>
+    <button (click)="pastObject()">Past Defined Object</button>
     <ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' >
         <e-nodes>
         <e-node id='node1' [offsetX]=140 [offsetY]=100 [width]=100 [height]=80><e-node-annotations>
@@ -48,11 +48,11 @@ export class AppComponent {
     public copy(): void {
         (this.diagram as DiagramComponent).copy()
     }
-    public paste(): void {
+    public past(): void {
         (this.diagram as DiagramComponent).paste()
     }
 
-    public pasteObject(): void {
+    public pastObject(): void {
         let nodes = [
             {
                 id: 'n1',

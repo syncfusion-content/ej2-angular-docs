@@ -119,7 +119,6 @@ The Diagram component supports keyboard navigation, allowing users who rely on a
 The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html) guidelines, making it accessible for users who rely on keyboard navigation. The following keyboard shortcuts are supported:
 
 **Selection and Clipboard Operations**
-
 | **Command** | **Action** |
 | --- | --- |
 | Ctrl + A | Select All |
@@ -128,7 +127,6 @@ The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG
 | Ctrl + V | Paste |
 
 **Edit Operations**
-
 | **Command** | **Action** |
 | --- | --- |
 | Ctrl + Z | Undo |
@@ -136,7 +134,6 @@ The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG
 | Delete | Delete |
 
 **Navigation and Movement**
-
 | **Command** | **Action** |
 | --- | --- |
 | <kbd>Up Arrow</kbd> | Move selected object up |
@@ -145,7 +142,6 @@ The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG
 | <kbd>Right Arrow</kbd> | Move selected object right |
 
 **Annotation Editing**
-
 | **Command** | **Action** |
 | --- | --- |
 | <kbd>Enter</kbd> | Start annotation edit |

@@ -18,7 +18,7 @@ The expanded subprocess automatically adjusts its size to accommodate child elem
 
 ### Create BPMN Expanded SubProcess
 
-To create an expanded subprocess, configure the shape as [`activity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnactivitymodel) and set [`collapsed`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnsubprocessmodel#collapsed) to false. Enable the [`AllowDrop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeconstraints) constraint to allow child nodes to be dropped inside the expanded subprocess container.
+To create an expanded subprocess, configure the shape as [`activity`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bpmnActivityModel/) and set [`collapsed`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcessModel/#collapsed) to false. Enable the [`AllowDrop`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints/) constraint to allow child nodes to be dropped inside the expanded subprocess container.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ To create an expanded subprocess, configure the shape as [`activity`](https://ej
 
 ### Add BPMN Nodes into Expanded SubProcess
 
-The [`processes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnsubprocessmodel#processes) property is an array collection that defines the child node values for the BPMN subprocess. This allows you to programmatically specify which BPMN elements should be contained within the expanded subprocess during initialization.
+The [`processes`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcessModel/#processes) property is an array collection that defines the child node values for the BPMN subprocess. This allows you to programmatically specify which BPMN elements should be contained within the expanded subprocess during initialization.
 
 The following code example demonstrates how to define child processes within an expanded subprocess:
 
@@ -60,7 +60,7 @@ This interactive behavior ensures that the subprocess container always properly 
 
 #### Add and Remove Processes Programmatically
 
-The expanded subprocess supports dynamic process management through dedicated methods. Use the [`addProcess`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#addprocess) method to add new child processes at runtime, and the [`removeProcess`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#removeprocess) method to remove existing processes. These methods provide programmatic control over subprocess content without requiring manual manipulation.
+The expanded subprocess supports dynamic process management through dedicated methods. Use the [`addProcess`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#addprocess) method to add new child processes at runtime, and the [`removeProcess`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#removeprocess) method to remove existing processes. These methods provide programmatic control over subprocess content without requiring manual manipulation.
 
 The following example demonstrates how to implement dynamic process addition and removal:
 

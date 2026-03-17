@@ -42,7 +42,7 @@ export class AppComponent {
          * paramter 1 - Rotate item
          * paramter 2 - angle to be rotated
          */
-        (this.diagram as DiagramComponent).rotate(node, -45);
+        (this.diagram as DiagramComponent).rotate(node, -45); //Brings to front
 
     }
 }

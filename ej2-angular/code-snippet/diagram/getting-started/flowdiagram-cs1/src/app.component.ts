@@ -1,4 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
 import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagrams'
+
+
+
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
 import {
   FlowShapeModel,
@@ -8,10 +13,13 @@ import {
 } from "@syncfusion/ej2-angular-diagrams";
 
 @Component({
-imports: [         DiagramModule    ],
+imports: [
+         DiagramModule
+    ],
+
 providers: [ ],
 standalone: true,
-  selector: "app-root",
+  selector: "app-container",
   template: `<ejs-diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'>
     <e-nodes>
         <e-node id='node1' [offsetX]=300 [offsetY]=50 [shape]='terminator'>
@@ -64,7 +72,7 @@ standalone: true,
 </ejs-diagram>`,
   encapsulation: ViewEncapsulation.None
 })
-export class App {
+export class AppComponent {
   @ViewChild("diagram")
   public diagram?: DiagramComponent;
   public terminator?: FlowShapeModel;
