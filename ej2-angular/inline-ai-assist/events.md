@@ -16,14 +16,52 @@ This section describes the Inline AI Assist events that will be triggered when a
 
 The Inline AI Assist component triggers the [created](../api/inline-ai-assist#created) event when the component rendering is completed.
 
+Below sample demonstrates the usage of commandSettings in Inline Assist component
+
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/events/created/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/events/created/src/app.component.ts %}
+{% endhighlight %}
+{% endtabs %}
+
 ## promptRequest
 
 The [promptRequest](../api/inline-ai-assist#promptrequest) event is triggered when the prompt request is made in the Inline AI Assist component.
+
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/events/prompt-request/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/events/prompt-request/src/app.component.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 ## open
 
 The [open](../api/inline-ai-assist#open) event is triggered when the Inline AI Assist popup is opened.
 
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/events/open/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/events/open/src/app.component.ts %}
+{% endhighlight %}
+{% endtabs %}
+
 ### close
 
 The [close](../api/inline-ai-assist#close) event is triggered when the Inline AI Assist popup is closed.
+
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/events/close/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/events/close/src/app.component.ts %}
+{% endhighlight %}
+{% endtabs %}

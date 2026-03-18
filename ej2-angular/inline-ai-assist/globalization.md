@@ -23,6 +23,42 @@ The Inline AI Assist can be localized to any culture by defining the text of the
 
 The below example shows adding the German culture locale(`de-DE`)
 
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/globalization/localization/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/globalization/localization/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/inline-ai-assist/globalization/localization/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/globalization/localization/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/inline-ai-assist/globalization/localization" %}
+
 ## RTL
 
 RTL provides an option to switch the text direction and layout of the Inline AI Assist component from right to left by setting the [enableRtl](../api/inline-ai-assist#enablertl) property to `true`.
+
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/globalization/enable-rtl/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/globalization/enable-rtl/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/inline-ai-assist/globalization/enable-rtl/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/globalization/enable-rtl/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/inline-ai-assist/globalization/enable-rtl" %}
