@@ -1,0 +1,121 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
+
+#wrapper {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.speech-info-panel {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.speech-status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.speech-status label {
+    font-weight: 600;
+    color: #333;
+    min-width: 120px;
+}
+
+.status-indicator {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.status-indicator.ready {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-indicator.recording {
+    background-color: #ffebee;
+    color: #c62828;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.transcript-display {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    min-height: 60px;
+    max-height: 120px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin: 10px 0;
+}
+
+.error-message {
+    background-color: #ffebee;
+    border: 1px solid #ef5350;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 15px;
+    display: none;
+}
+
+.error-text {
+    color: #c62828;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#wrapper .e-view-container {
+    margin: auto;
+    height: 400px;
+}
+
+#wrapper .e-banner-view {
+    margin-left: 0;
+}
+
+#wrapper .banner-content .e-listen-icon:before {
+    font-size: 25px;
+}
+
+#wrapper .banner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    #wrapper {
+        width: 100%;
+    }
+}

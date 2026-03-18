@@ -1,0 +1,44 @@
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
+
+#editableText {
+  width: 100%;
+  min-height: 120px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+/* Custom response template styling */
+.responseItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.responseItemContent .response-header {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.responseItemContent .responseContent {
+  margin-left: 35px;
+}
+
+.responseItemContent .response-header .e-assistview-icon:before {
+  margin-right: 10px;
+}
+
+.e-response-item-template .e-toolbar-items {
+  margin-left: 35px;
+}

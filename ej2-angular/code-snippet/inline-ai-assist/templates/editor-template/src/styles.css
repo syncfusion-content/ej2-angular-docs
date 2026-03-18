@@ -1,0 +1,41 @@
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
+
+#editableText {
+  width: 100%;
+  min-height: 120px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+/* Custom editor template styling */
+.custom-footer {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+#promptTextArea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 0;
+  font-family: inherit;
+}
+
+#sendPrompt {
+  padding: 5px 15px;
+  align-self: flex-end;
+  white-space: nowrap;
+}

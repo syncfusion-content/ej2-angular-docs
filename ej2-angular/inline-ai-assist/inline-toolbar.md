@@ -16,13 +16,9 @@ You can render the inline toolbar items by using the `items` property in the [in
 
 By default, the inline toolbar renders the `send` item which allows users to send the prompt text.
 
-In the following example, Inline AI Assist component rendered with footer toolbar items such as `send` icon.
-
 ## Adding custom items
 
 You can use the [inlineToolbarSettings](../api/inline-ai-assist#inlinetoolbarsettings) property to add custom items for the inline toolbar in the Inline AI Assist. The custom items will be added with the existing built-in items in the inline toolbar.
-
-> To know more about the items, please refer to the [items](#items) section.
 
 ## Items
 
@@ -62,7 +58,25 @@ You can use the `cssClass` property to customize the toolbar item.
 
 You can change the alignment of toolbar item by using the `align` property. It supports three types of alignments such as `Left`, `Center` and `Right`. By default, the value is `Left`.
 
-In the following example, toolbar item type is set with `Right`.
+Below sample demonstrates the addition of custom toolbar items with the usage of above mentioned properties in Inline Assist component.
+
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/props/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/props/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/props/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/props/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/inline-ai-assist/inline-toolbar/props" %}
 
 ### Enabling tab key navigation in toolbar
 
@@ -82,12 +96,12 @@ import { InlineAIAssistComponent, InlineToolbarSettingsModel, InlineAIAssistModu
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the Inline AI Assist component
-    template: `<ejs-inlineaiassist #inlineaipromptInst id="inlineaipromptInst" [inlineToolbarSettings]="inlineToolbarSettings"></ejs-inlineaiassist>`
+    template: `<ejs-inlineaiassist #inlineAssistComponent id="inlineAssistComponent" [inlineToolbarSettings]="inlineToolbarSettings"></ejs-inlineaiassist>`
 })
 
 export class AppComponent {
-    @ViewChild('inlineaipromptInst')
-    public inlineaipromptInst!: InlineAIPromptComponent;
+    @ViewChild('inlineAssistComponent')
+    public inlineAssistComponent!: InlineAIAssistComponent;
 
     public inlineToolbarSettings: InlineToolbarSettingsModel = {
         items: [
@@ -114,12 +128,12 @@ import { InlineAIAssistComponent, InlineToolbarSettingsModel, InlineAIAssistModu
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the Inline AI Assist component
-    template: `<ejs-inlineaiassist #inlineaipromptInst id="inlineaipromptInst" [inlineToolbarSettings]="inlineToolbarSettings"></ejs-inlineaiassist>`
+    template: `<ejs-inlineaiassist #inlineAssistComponent id="inlineAssistComponent" [inlineToolbarSettings]="inlineToolbarSettings"></ejs-inlineaiassist>`
 })
 
 export class AppComponent {
-    @ViewChild('inlineaipromptInst')
-    public inlineaipromptInst!: InlineAIPromptComponent;
+    @ViewChild('inlineAssistComponent')
+    public inlineAssistComponent!: InlineAIAssistComponent;
 
     public inlineToolbarSettings: InlineToolbarSettingsModel = {
         items: [
@@ -138,12 +152,75 @@ In this case, the user can switch between the two Toolbar items using the Tab an
 
 You can use the `template` property to add custom toolbar item in the Inline AI Assist.
 
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/template/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/template/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/template/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/template/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/inline-ai-assist/inline-toolbar/template" %}
+
 ## Toolbar positioning
 
 You can use the [toolbarPosition](../api/inline-ai-assist/inlineToolbarSettingsModel#toolbarPosition) property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
 
 By settings toolbarPosition as `Bottom`, footer items will be rendered at the bottom with a dedicated footer area.
 
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/inline-ai-assist/inline-toolbar/toolbar-position" %}
+
 ## Item click
 
 The [itemClick](../api/inline-ai-assist/inlineToolbarSettingsModel#itemclick) event is triggered when the inline toolbar item is clicked.
+
+```ts
+import { Component, ViewChild } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InlineAIAssistComponent, InlineToolbarSettingsModel, InlineAIAssistModule, ToolbarItemClickEventArgs } from '@syncfusion/ej2-angular-interactive-chat';
+
+@Component({
+    imports: [ FormsModule, ReactiveFormsModule, InlineAIAssistModule ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the Inline AI Assist component
+    template: `<ejs-inlineaiassist #inlineAssistComponent id="inlineAssistComponent" [inlineToolbarSettings]="inlineToolbarSettings"></ejs-inlineaiassist>`
+})
+
+export class AppComponent {
+    @ViewChild('inlineAssistComponent')
+    public inlineAssistComponent!: InlineAIAssistComponent;
+
+    public inlineToolbarSettings: InlineToolbarSettingsModel = {
+        itemClick: (args: ToolbarItemClickEventArgs) => {
+            // Your actions here
+        }
+    };
+
+}
+
+```

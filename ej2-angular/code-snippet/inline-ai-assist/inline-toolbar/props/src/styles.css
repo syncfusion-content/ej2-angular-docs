@@ -1,0 +1,29 @@
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
+
+#editableText {
+  width: 100%;
+  min-height: 120px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid;
+}
+/* Custom toolbar button styling */
+.custom-toolbar-btn {
+  background-color: #e8f5e9;
+  border: 1px solid #4caf50;
+  color: #2e7d32;
+}
+
+.custom-toolbar-btn:hover {
+  background-color: #c8e6c9;
+}

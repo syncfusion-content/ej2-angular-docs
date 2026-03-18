@@ -49,3 +49,23 @@ You can use the `tooltip` property to specify the tooltip text to be displayed o
 ## Configure item select
 
 The [itemSelect](../api/inline-ai-assist/responseSettingsModel#itemselect) event is triggered when an item is selected from the response popup in the Inline AI Assist component.
+
+Below sample demonstrates the usage of `responseSettings` property in Inline Assist component.
+
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/response-settings/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/inline-ai-assist/response-settings/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/inline-ai-assist/response-settings/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/response-settings/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/inline-ai-assist/response-settings" %}

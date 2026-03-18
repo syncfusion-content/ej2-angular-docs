@@ -1,15 +1,19 @@
-@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
 
-
-#wrapper {
-  height: 350px;
-  width: 650px;
-  margin: 0 auto;
+#editableText {
+  width: 100%;
+  min-height: 120px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid;
 }

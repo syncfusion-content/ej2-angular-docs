@@ -1,53 +1,53 @@
-import { InlineAIAssistModule, InlineAIAssistComponent } from '@syncfusion/ej2-angular-interactive-chat';
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
-import { InlinePromptRequestEventArgs } from '@syncfusion/ej2-interactive-chat';
+import { ViewChild, Component } from '@angular/core';
+import { InlineAIAssistModule, InlineAIAssistComponent, InlinePromptRequestEventArgs, ResponseSettingsModel, ResponseItemSelectEventArgs } from '@syncfusion/ej2-angular-interactive-chat';
+
 
 @Component({
-        imports: [ InlineAIAssistModule ],
-        standalone: true,
-        selector: 'app-root',
-        // specifies the template string for the Inline AI Assist component
-        template: `
-            <select id="responseMode" (change)="onModeChange($event)">
-                <option value="Popup">Popup</option>
-                <option value="Inline">Inline</option>
-            </select>
-
-            <input id="messageInput" placeholder="Type a message..." />
-
-            <div ejs-inlineaiassist #inlineAssistComponent
-                 [target]="'#messageInput'"
-                 responseMode="Popup"
-                 popupWidth="500px"
-                 (promptRequest)="onPromptRequest($event)">
-            </div>
-        `
+    imports: [InlineAIAssistModule ],
+    standalone: true,
+    selector: 'app-root',
+    templateUrl: './app.component.html',
 })
 
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
     @ViewChild('inlineAssistComponent')
     public inlineAssistComponent!: InlineAIAssistComponent;
+    
+    public responseMode: string = 'Popup';
 
-    ngAfterViewInit(): void {
-        this.inlineAssistComponent.showPopup();
-    }
-
-    public onModeChange(event: Event): void {
-        const select = event.target as HTMLSelectElement;
-        const mode = select.value;
-        if (this.inlineAssistComponent) {
-            this.inlineAssistComponent.responseMode = mode;
-            this.inlineAssistComponent.showPopup();
+    public itemSelect = (args: ResponseItemSelectEventArgs) => {
+        if (args.command.label === 'Accept') {
+            const editable = document.getElementById('editableText') as HTMLElement | null;
+            if (editable) {
+                editable.innerHTML = '<p>' + this.inlineAssistComponent.prompts[this.inlineAssistComponent.prompts.length - 1 ].response + '</p>';
+            }
+            this.inlineAssistComponent.hidePopup();
+        } else if (args.command.label === 'Discard') {
+            this.inlineAssistComponent.hidePopup();
         }
     }
 
+    public responseSetting: ResponseSettingsModel = {
+        itemSelect:  this.itemSelect
+    }
+    
+    onClick(): void {
+        this.inlineAssistComponent.showPopup();
+    }
+    
+    onModeChange(event: Event): void {
+        const selectElement = event.target as HTMLSelectElement;
+        this.responseMode = selectElement.value;
+        this.inlineAssistComponent.responseMode = selectElement.value;
+        this.inlineAssistComponent.showPopup();
+    }
+
     public onPromptRequest = (args: InlinePromptRequestEventArgs) => {
-        const prompt = args.prompt;
         setTimeout(() => {
-            const sampleResponse = "**You asked:** " + prompt + "\n" +
-                "This is a demonstration response from Syncfusion InlineAIAssist.\n" +
-                "In your real application, send the prompt to an AI service here.";
-            this.inlineAssistComponent.addResponse(sampleResponse, true);
+        let defaultResponse = 'For real-time prompt processing, connect to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+
+        this.inlineAssistComponent.addResponse(defaultResponse);
+
         }, 1000);
     };
 }
