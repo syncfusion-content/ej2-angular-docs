@@ -26,7 +26,7 @@ Reactive forms take a programmatic, model-driven approach to handling forms with
 
 In this example, a `FormGroup` with relevant `FormControls` is created during the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event. When saving, the form is validated, and, if successful, the grid updates using the data from the FormGroup.
 
-{% tabs %}`
+{% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reactive-form-cs1/src/app.component.ts %}
 {% endhighlight %}

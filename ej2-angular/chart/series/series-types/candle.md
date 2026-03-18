@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The Candle series, similar to the Hilo Open Close series, is used to represent the low, high, open, and closing prices over time. It is commonly used in financial charts to visualize stock price movements.
 
-<img src="../../../../images/candle.png" alt="Candle chart showing data trends over time">
+<img src="../../../images/candle.png" alt="Candle chart showing data trends over time">
 
 * **Green Hollow Candle** - Occurs when the closing price is higher than both the opening price and the previous candle’s closing price. This pattern signals strong bullish momentum.
 * **Green Filled Candle** - Occurs when the closing price is lower than the opening price but still higher than the previous candle’s closing price. This suggests an overall upward trend with some short-term weakness.

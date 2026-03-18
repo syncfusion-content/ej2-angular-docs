@@ -6,7 +6,7 @@ import { Column, EditService, EditSettingsModel, GridComponent, GridModule, Page
     imports: [ GridModule],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' allowPaging='true' [editSettings]='editSettings' (dataBound)="dataBound()">
+    template: `<ejs-grid #grid [dataSource]='data' height='280px' allowPaging='true' [editSettings]='editSettings' (dataBound)="dataBound()">
                </ejs-grid>`,
     providers: [EditService, PageService]
 })

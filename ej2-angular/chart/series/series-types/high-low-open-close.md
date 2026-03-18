@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 To render a [`hiloOpenClose`](https://www.syncfusion.com/angular-components/angular-charts/chart-types/ohlc-chart) series in your chart, you need to follow a few steps to configure it correctly.
 
-<img src="../../../../images/high-low.png" alt="High low open close chart showing data trends over time">
+<img src="../../../images/high-low.png" alt="High low open close chart showing data trends over time">
 
 Here's how to configure it:
 

@@ -21,21 +21,15 @@ import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
     providers: [EditService, ToolbarService, SortService, PageService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' 
-               [toolbar]='toolbar' height='273'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right'
-                    isPrimaryKey='true' [validationRules]='orderIDRules' width=100>
-                    </e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' 
-                    [validationRules]='customerIDRules' width=120></e-column>
-                    <e-column field='Freight'  [validationRules]='freightRules' 
-                    headerText='Freight' textAlign= 'Right'
-                    editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' 
-                    editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
+    template: `
+    <ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273'>
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' [validationRules]='orderIDRules' width=100></e-column>
+            <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' width=120></e-column>
+            <e-column field='Freight'  [validationRules]='freightRules' headerText='Freight' textAlign= 'Right' editType= 'numericedit' width=120 format= 'C2'></e-column>
+            <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
+        </e-columns>
+    </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 

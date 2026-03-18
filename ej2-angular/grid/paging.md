@@ -176,8 +176,6 @@ import {GridModule, PageService,GridComponent, PageSettingsModel } from '@syncfu
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-   
-
     @ViewChild('grid')
     public grid?: GridComponent;
     public data: Object[] = [];

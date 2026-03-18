@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 To render a `hilo` series in your chart, you need to follow a few steps to configure it correctly.
 
-<img src="../../../../images/hilo.png" alt="Hilo chart showing data trends over time">
+<img src="../../../images/hilo.png" alt="Hilo chart showing data trends over time">
 
 Here's a concise guide on how to do this:
 

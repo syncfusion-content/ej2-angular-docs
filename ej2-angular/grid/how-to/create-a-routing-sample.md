@@ -101,5 +101,3 @@ With this approach, clicking "Grid 1" or "Grid 2" loads the respective grid comp
 {% include code-snippet/grid/routing-cs1/src/home/home.component.html %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/routing-cs1" %}

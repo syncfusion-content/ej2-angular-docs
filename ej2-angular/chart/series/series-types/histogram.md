@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 A histogram displays data distribution by grouping numeric values into bins and showing their frequencies as vertical bars.
 
-<img src="../../../../images/histogram.png" alt="Histogram displaying data distribution">
+<img src="../../../images/histogram.png" alt="Histogram displaying data distribution">
 
 To render a [histogram](https://www.syncfusion.com/angular-components/angular-charts/chart-types/histogram-chart) series in your chart, you need to follow a few steps to configure it correctly.
 

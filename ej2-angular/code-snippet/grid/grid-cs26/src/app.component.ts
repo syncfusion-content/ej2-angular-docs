@@ -9,12 +9,12 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
   providers: [PageService],
   standalone: true,
   selector: 'app-root',
-  template: `<div style="display: flex">
-              <label style="padding: 5px 5px 0 0;">Align the text of header text :</label>
-              <ejs-dropdownlist index="0" width="100" 
-              [dataSource]="alignmentData" (change)="changeAlignment($event)">
-              </ejs-dropdownlist>
-            </div>
+  template: `
+      <div style="display: flex">
+        <label style="padding: 5px 5px 0 0;">Align the text of header text :</label>
+          <ejs-dropdownlist index="0" width="100" 
+          [dataSource]="alignmentData" (change)="changeAlignment($event)"></ejs-dropdownlist>
+      </div>
             <div class="control-section" style="padding-top:5px">
               <ejs-grid #grid [dataSource]='data' height='295px' >
                 <e-columns>

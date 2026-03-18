@@ -7,7 +7,7 @@ import { EmitType } from '@syncfusion/ej2-base';
     imports: [ GridModule ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [height]='300' [width]='width' [gridLines]='gridLines'
+    template: `<ejs-grid [dataSource]='data' height='300px' [width]='width' [gridLines]='gridLines'
        [allowTextWrap]='textWrap' (queryCellInfo)='queryCellInfoEvent($event)'>
         <e-columns>
             <e-column field='EmployeeID' headerText='Employee ID' width='150' textAlign="Right" isPrimaryKey=true></e-column>

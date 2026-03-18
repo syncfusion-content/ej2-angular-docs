@@ -7,7 +7,7 @@ import { ColumnModel, FilterService, GridModule, GroupService, PageService, Sort
   providers: [PageService,SortService, FilterService, GroupService],
   standalone: true,
   selector: 'app-root',
-  template: `<ejs-grid #grid [dataSource]='data'>
+  template: `<ejs-grid #grid [dataSource]='data' height='330'>
     <e-columns>
     <e-column *ngFor="let column of columns" [field]="column.field" [headerText]="column.headerText"></e-column> 
     </e-columns>

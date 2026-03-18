@@ -6,7 +6,7 @@ import { GridModule } from '@syncfusion/ej2-angular-grids';
     imports: [ GridModule ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data'>
+    template: `<ejs-grid [dataSource]='data' height='300px'>
                </ejs-grid>`
 })
 export class AppComponent implements OnInit {

@@ -203,14 +203,10 @@ The following example demonstrates getting selected row indexes using the `getSe
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { GridComponent, SelectionSettingsModel,GridModule, PageService, EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -230,14 +226,10 @@ standalone: true,
         <ejs-grid #grid [dataSource]="data" height="300px" 
         [selectionSettings]="selectionOptions">
           <e-columns>
-            <e-column field="OrderID" headerText="Order ID" textAlign="Right" 
-            width="120"></e-column>
-            <e-column field="CustomerID" headerText="Customer ID" width="150">
-            </e-column>
-            <e-column field="ShipCity" headerText="Ship City" width="150">
-            </e-column>
-            <e-column field="ShipName" headerText="Ship Name" width="150">
-            </e-column>
+            <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-column>
+            <e-column field="CustomerID" headerText="Customer ID" width="150"></e-column>
+            <e-column field="ShipCity" headerText="Ship City" width="150"></e-column>
+            <e-column field="ShipName" headerText="Ship Name" width="150"></e-column>
           </e-columns>
         </ejs-grid>`
 })
@@ -283,14 +275,11 @@ The following example demonstrates retrieving selected records from various page
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import {GridModule, PageService, EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel, PageSettingsModel,GridModule, PageService, EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -386,14 +375,10 @@ The following example displays the selected row count using the `getSelectedReco
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { GridModule, PageService,EditService, ToolbarService, FilterService,GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids;
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -489,12 +474,9 @@ In the following example, row selection is canceled when the value of "Customer 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule} from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data ,Order} from './datasource';
-import { GridModule,GridComponent, SelectionSettingsModel,PageSettingsModel,RowSelectingEventArgs, RowSelectEventArgs, RowDeselectEventArgs, RowDeselectingEventArgs} from '@syncfusion/ej2-angular-grids';
+import { GridModule, GridModule,GridComponent, SelectionSettingsModel,PageSettingsModel,RowSelectingEventArgs, RowSelectEventArgs, RowDeselectEventArgs, RowDeselectingEventArgs} from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({

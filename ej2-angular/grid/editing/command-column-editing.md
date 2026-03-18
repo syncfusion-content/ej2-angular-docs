@@ -38,10 +38,10 @@ The following built-in command buttons are available:
 
 | Command Button | Actions |
 |----------------|---------|
-| `Edit` | Enables inline editing for the current row |
-| `Delete` | Removes the current row from the grid |
-| `Save` | Updates changes made to the edited row |
-| `Cancel` | Discards changes and exits edit mode |
+| `Edit` | Enables inline editing for the current row. |
+| `Delete` | Removes the current row from the grid. |
+| `Save` | Updates changes made to the edited row. |
+| `Cancel` | Discards changes and exits edit mode.|
 
 The example below illustrates to display CRUD action buttons in a column using the `command` column property:
 

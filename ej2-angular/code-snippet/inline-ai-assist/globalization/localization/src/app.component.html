@@ -1,0 +1,13 @@
+<div id="container" style="height: 350px; width: 650px;">
+    <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" (click)="onClick()">Content Summarize</button>
+    <div id="editableText" contenteditable="true">
+        <p>Inline AI Assist component provides intelligent text processing capabilities that enhance user productivity. It leverages advanced natural language processing to understand context and deliver precise suggestions. Users can seamlessly integrate AI-powered features into their applications.</p>
+        <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
+    </div>
+    <ejs-inlineaiassist id="defaultInlineAssist" #inlineAssistComponent
+        [relateTo]="'#summarizeBtn'"
+        [responseSettings] = "responseSetting"
+        [locale]='locale'
+        (promptRequest)="onPromptRequest($event)">
+    </ejs-inlineaiassist>
+</div>

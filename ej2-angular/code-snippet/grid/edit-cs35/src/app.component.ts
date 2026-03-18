@@ -29,7 +29,6 @@ let salaryDetails: { [key: string]: Object }[] = [
 
 ];
 
-
 @Component({
     imports: [
         GridModule,
@@ -45,19 +44,15 @@ let salaryDetails: { [key: string]: Object }[] = [
     providers: [EditService, ToolbarService, SortService, PageService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' 
-               [toolbar]='toolbar'(load)="load()" (actionBegin)="actionBegin($event)" height='273px'>
-                <e-columns>
-                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right'
-                     isPrimaryKey='true' width=120></e-column>
-                    <e-column field='Role' headerText='Role' width=120 
-                     editType= 'dropdownedit' [edit]='roleParams'></e-column>
-                    <e-column field='Salary' headerText='Salary' textAlign= 'Right'
-                     editType= 'dropdownedit' width=160 [edit]='salaryParams'></e-column>
-                    <e-column field='Address' headerText='Address' [validationRules]='addressRules' 
-                    width=160></e-column>
-                </e-columns>
-                </ejs-grid>`
+    template: `
+    <ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'(load)="load()" (actionBegin)="actionBegin($event)" height='273px'>
+        <e-columns>
+            <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' isPrimaryKey='true' width=120></e-column>
+            <e-column field='Role' headerText='Role' width=120 editType= 'dropdownedit' [edit]='roleParams'></e-column>
+            <e-column field='Salary' headerText='Salary' textAlign= 'Right' editType= 'dropdownedit' width=160 [edit]='salaryParams'></e-column>
+            <e-column field='Address' headerText='Address' [validationRules]='addressRules' width=160></e-column>
+        </e-columns>
+    </ejs-grid>`
 })
 export class AppComponent implements OnInit {
     public data?: object[];
@@ -110,12 +105,10 @@ export class AppComponent implements OnInit {
 
             case 'Sales':
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
-
                 break;
 
             case 'Support':
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
-
                 break;
 
             case 'Engineer':
@@ -125,12 +118,10 @@ export class AppComponent implements OnInit {
 
             case 'TeamLead':
                 formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
-
                 break;
 
             case 'Manager':
                 formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
-
                 break;
         }
     }
@@ -145,7 +136,6 @@ export class AppComponent implements OnInit {
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
-
                 break;
 
             case 'Support':
@@ -153,7 +143,6 @@ export class AppComponent implements OnInit {
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
-
                 break;
 
             case 'Engineer':
@@ -161,7 +150,6 @@ export class AppComponent implements OnInit {
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
-
                 break;
 
             case 'TeamLead':
@@ -169,15 +157,13 @@ export class AppComponent implements OnInit {
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
-
                 break;
 
             case 'Manager':
                 if ((salary >= 50000) && (salary < 70000))
                     return true;
                 else
-                    formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
-
+                  formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
                 break;
         }
         return false;
@@ -191,7 +177,6 @@ export class AppComponent implements OnInit {
     actionBegin(args: EditEventArgs) {
         window.role = (args.rowData as columnDataType)['Role'];
     }
-
 }
 
 declare global {

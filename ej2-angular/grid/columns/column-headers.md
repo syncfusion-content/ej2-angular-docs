@@ -43,13 +43,11 @@ The following example demonstrates custom elements rendered for the "Customer ID
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule, SwitchModule  } from '@syncfusion/ej2-angular-buttons'
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ButtonModule, SwitchModule, ChangeEventArgs  } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
   imports: [ GridModule, DropDownListAllModule, ButtonModule,SwitchModule ],
@@ -57,12 +55,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
   selector: 'app-root',
   template: `<ejs-grid [dataSource]="data" height="315px">
               <e-columns>
-                <e-column
-                  field="OrderID"
-                  headerText="Order ID"
-                  textAlign="Right"
-                  width="120">
-                </e-column>
+                <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-column>
                 <e-column field="CustomerID" headerText="Customer ID" width="140">
                   <ng-template #headerTemplate let-data>
                     <div>
@@ -125,10 +118,8 @@ The `headerText` property of each sub-header column sets the display text. The a
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService,ColumnModel } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { GridModule,PageService,ColumnModel } from '@syncfusion/ej2-angular-grids';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit } from '@angular/core';
 import { orderDetails } from './datasource';
 

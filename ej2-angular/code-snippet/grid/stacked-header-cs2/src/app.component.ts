@@ -9,7 +9,7 @@ import { ColumnModel, GridModule, PageService } from '@syncfusion/ej2-angular-gr
   standalone: true,
   selector: 'app-root',
   template: `<div>
-              <ejs-grid [dataSource]="data" allowPaging="true">
+              <ejs-grid [dataSource]="data" allowPaging="true" height='245px'>
                 <e-columns>
                   <e-column field="OrderID" width="120" textAlign="Center">
                     <ng-template #headerTemplate let-data>

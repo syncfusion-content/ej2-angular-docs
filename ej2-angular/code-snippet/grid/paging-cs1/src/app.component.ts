@@ -7,7 +7,7 @@ import { FilterService, GridModule, GroupService, PageService, SortService } fro
     providers: [PageService, SortService, FilterService, GroupService ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data'>
+    template: `<ejs-grid [dataSource]='data' height='340'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>

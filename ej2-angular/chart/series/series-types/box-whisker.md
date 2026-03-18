@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The box and whisker chart is a statistical visualization tool that displays the distribution of numerical data through quartiles. It shows the median, quartiles, and outliers of a dataset, making it ideal for comparing distributions across different categories or identifying data variability and outliers.
 
-<img src="../../../../images/box-and-whisker.png" alt="Box and Whisker chart showing data trends">
+<img src="../../../images/box-and-whisker.png" alt="Box and Whisker chart showing data trends">
 
 To render a `box and whisker` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 

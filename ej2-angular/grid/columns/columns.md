@@ -212,15 +212,6 @@ Template columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gri
 
 In this example, the date pipe formats the "Order Date" value as a date in the format "dd/MMM/yyyy".
 
-
-```ts
- <e-column field='OrderDate' headerText='Order Date' textAlign='Right' width=120>
-   <ng-template #template let-data>
-     {{ data.OrderDate | date:'dd/MMM/yyyy' }}
-   </ng-template>
- </e-column>
-```
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}

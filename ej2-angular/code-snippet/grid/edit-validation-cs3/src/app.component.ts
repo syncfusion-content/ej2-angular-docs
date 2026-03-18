@@ -28,11 +28,9 @@ import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
             <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="273"
             (actionComplete)="actionComplete($event)">
                 <e-columns>
-                    <e-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" 
-                    [validationRules]="orderIDRules" width="100"></e-column>
+                   <e-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" [validationRules]="orderIDRules" width="100"></e-column>
                    <e-column field="CustomerID" headerText="Customer ID" width="120" ></e-column>
-                   <e-column field="Freight" headerText="Freight" textAlign="Right" 
-                   [validationRules]="freightRules" editType="numericedit" width="120" format="C2"></e-column>
+                   <e-column field="Freight" headerText="Freight" textAlign="Right" [validationRules]="freightRules" editType="numericedit" width="120" format="C2"></e-column>
                    <e-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150">
                    </e-column>
                 </e-columns>

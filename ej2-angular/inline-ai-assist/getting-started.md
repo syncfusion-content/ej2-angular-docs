@@ -95,12 +95,18 @@ ng serve
 The following example illustrates the output in your browser.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/getting-started/src/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/inline-ai-assist/getting-started/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/inline-ai-assist/getting-started/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/getting-started/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,12 +117,18 @@ The following example illustrates the output in your browser.
 You can use the `relateTo` property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/relateTo/src/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/inline-ai-assist/relateTo/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/inline-ai-assist/relateTo/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/relateTo/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,12 +139,18 @@ You can use the `relateTo` property to position the Inline AI Assist relative to
 The `target` property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/target/src/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/inline-ai-assist/target/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/inline-ai-assist/target/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/target/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -143,12 +161,18 @@ The `target` property specifies the element or CSS selector where the Inline AI 
 Responses can be shown in two modes: `Inline` (updates content in-place) and `Popup` (shows responses in a floating popup). Toggle this behavior with the `responseMode` property.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/inline-ai-assist/response-mode/src/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/inline-ai-assist/response-mode/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/inline-ai-assist/response-mode/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="styles.css" %}
+{% include code-snippet/inline-ai-assist/response-mode/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
