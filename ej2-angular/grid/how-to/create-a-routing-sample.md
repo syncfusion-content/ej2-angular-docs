@@ -12,22 +12,22 @@ domainurl: ##DomainURL##
 
 Angular routing is a core feature that manages navigation within a single-page application (SPA), providing seamless transitions between different views or components without refreshing the page.
 
-With routing, different routes are configured to URL paths and the component that should render for each path is specified—enabling dynamic loading and a responsive user interface.
+With routing, different routes are configured to URL paths and the component that should render for each path is specified enabling dynamic loading and a responsive user interface.
 
 **1. Creating an Angular application and integrating Syncfusion Grid:**
 
 Begin by creating a new Angular project and enabling routing during setup. Follow the [getting started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) guide for details. To support routing, create at least two components for navigation using:
 
-```
+```bash
 ng generate component component-name
 ```
 Replace `component-name` with a desired component name. This command generates the TypeScript file, HTML template, styles, and corresponding test file for the component. Repeat for each component to create.
 
 **2. Defining routes:**
 
-Create an `app-routing.module.ts` file in the app directory. Import the components and define a `Routes` array mapping URL paths to components. For example:
+Create an **app-routing.module.ts** file in the app directory. Import the components and define a `Routes` array mapping URL paths to components. For example:
 
-```
+```ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -51,7 +51,7 @@ export class AppRoutingModule { }
 
 In the root module (**app.module.ts**) file import the `AppRoutingModule` and add it to the imports array.
 
-```
+```ts
 import { AboutComponent } from './about.component';
 ```
 
@@ -59,7 +59,7 @@ import { AboutComponent } from './about.component';
 
 Add router links to the component template using the `routerLink` attribute on anchor tags. Use `<router-outlet>` in the root template where the active component should be rendered.
 
-```
+```ts
 <nav>
   <ul>
     <li><a routerLink="/">Home</a></li>
@@ -101,5 +101,3 @@ With this approach, clicking "Grid 1" or "Grid 2" loads the respective grid comp
 {% include code-snippet/grid/routing-cs1/src/home/home.component.html %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/routing-cs1" %}

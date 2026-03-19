@@ -1,9 +1,8 @@
-import { ViewChild} from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ExcelExportService, DetailRowService, GridComponent, ToolbarItems, ExcelExportProperties, GridModel, DetailDataBoundEventArgs, ColumnModel } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data, employeeData } from './datasource';
-import { ClickEventArgs } from "@syncfusion/ej2-angular-navigations";
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ColumnModel, DetailDataBoundEventArgs, DetailRowService, ExcelExportProperties, ExcelExportService, GridComponent, GridModel, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+
 @Component({
     imports: [ GridModule],
     providers: [ExcelExportService, ToolbarService, DetailRowService],

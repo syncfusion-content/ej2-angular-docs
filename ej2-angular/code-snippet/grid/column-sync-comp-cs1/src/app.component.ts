@@ -1,23 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule,
-        DropDownListModule
-    ],
-
-standalone: true,
+    imports: [ GridModule,  ButtonModule, DropDownListModule ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='300'>
                     <e-columns>
@@ -45,6 +34,3 @@ export class AppComponent implements OnInit {
         this.dropData = ['Order Placed', 'Processing', 'Delivered'];
     }
 }
-
-
-

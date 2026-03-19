@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
-import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 import { Component, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, RowDDService, RowDragEventArgs, SelectionService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [ GridModule],
@@ -51,6 +48,3 @@ export class AppComponent {
         (this.grid as GridComponent).reorderRows(value, (args.dropIndex as number));
     }
 }
-
-
-

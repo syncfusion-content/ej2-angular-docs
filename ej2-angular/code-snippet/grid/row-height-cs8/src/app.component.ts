@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,RowDataBoundEventArgs,DetailRowService} from '@syncfusion/ej2-angular-grids'
+import { columnDataType, data } from './datasource';
 import { Component, OnInit } from '@angular/core';
-import { data , columnDataType} from './datasource';
+import { DetailRowService, GridModule, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [ GridModule],
@@ -36,6 +34,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

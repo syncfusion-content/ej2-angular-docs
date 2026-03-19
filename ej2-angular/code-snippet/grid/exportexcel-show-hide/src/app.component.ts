@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ExcelExportService, ColumnModel } from '@syncfusion/ej2-angular-grids'
-import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, Column } from '@syncfusion/ej2-angular-grids';
+import { Component, ViewChild } from '@angular/core';
+import { Column, ColumnModel, ExcelExportService, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({

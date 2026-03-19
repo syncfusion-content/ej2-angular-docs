@@ -12,9 +12,7 @@ domainurl: ##DomainURL##
 
 The filter bar feature provides a row of input fields directly below the grid headers, enabling instant data filtering. Each column displays an input field where filter criteria can be entered, and the grid updates immediately to show matching results.
 
-For grid filtering setup and configuration, refer to the [Filtering](filtering#set-up-filtering).
-
-To activate the filter bar, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true`.
+To activate the filter bar, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true` and include the `FilterService` in the providers array.
 
 **Filter bar expressions:**
 
@@ -57,17 +55,17 @@ The Syncfusion Angular Grid filter bar operates in two distinct modes that deter
 
 When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#mode) is set to `OnEnter`, the filter bar captures filter criteria but delays filtering execution until the <kbd>Enter</kbd> key is pressed. This mode is beneficial when:
 
-- Users need to enter complex filter criteria without triggering multiple filtering operations
-- Working with large datasets where immediate filtering might cause performance issues
-- Users prefer to review and confirm their filter criteria before applying changes
+- Users need to enter complex filter criteria without triggering multiple filtering operations.
+- Working with large datasets where immediate filtering might cause performance issues.
+- Users prefer to review and confirm their filter criteria before applying changes.
 
 **Immediate Mode:**
 
 When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#mode) is set to `Immediate`, the filter bar applies filtering instantly as users type or modify filter criteria. This mode provides:
 
-- Real-time filtering feedback and immediate result previews
-- Enhanced user experience for quick data searches
-- Instant visual confirmation of filter effects
+- Real-time filtering feedback and immediate result previews.
+- Enhanced user experience for quick data searches.
+- Instant visual confirmation of filter effects.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,16 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService, GroupService, GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids'
+import { base64AlgeriaFont, data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data, base64AlgeriaFont } from './datasource';
+import { GridComponent, GridModule, GroupService, PdfExportProperties, PdfExportService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
 
 @Component({
-imports: [ GridModule],
-
-providers: [PdfExportService, ToolbarService, GroupService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [PdfExportService, ToolbarService, GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='245px' [allowPdfExport]='true'
     [allowGrouping]='true' [groupSettings]='groupOptions' (toolbarClick)='toolbarClick($event)'>
@@ -62,6 +59,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageSettingsModel, FilterSettingsModel, PageService, FilterService, SortService,  } from '@syncfusion/ej2-angular-grids';
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { FilterService, FilterSettingsModel, GridModule, PageService, PageSettingsModel, SortService } from '@syncfusion/ej2-angular-grids';
 
 export interface RowData {
   TaskID: number; 
@@ -14,9 +11,9 @@ export interface RowData {
 }
 
 @Component({
-imports: [GridModule],
-providers: [PageService, FilterService, SortService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PageService, FilterService, SortService],
+    standalone: true,
     selector: 'app-root',
     template: `<div>
                  <ejs-grid [dataSource]='data' height="250" [allowPaging]="true" [pageSettings]="pageSettings" [allowSorting]="true" [allowFiltering]="true" [filterSettings]="filterSettings" [isRowPinned]="isRowPinned">
@@ -49,4 +46,3 @@ export class AppComponent implements OnInit {
         return false;
     }
 }
-

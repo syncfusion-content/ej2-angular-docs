@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid includes a customizable toolbar positioned above the grid for accessing various actions and functionalities. Both built-in and custom toolbar items can be added to meet specific application requirements.
 
-## Built-in Toolbar Items
+## Built-in toolbar items
 
 Built-in toolbar items in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provide predefined actions to perform standard operations within the grid. These items can be added by defining the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property as a collection of built-in items. Each item is rendered as a button with an icon and text. The following table lists the built-in toolbar items and their respective actions.
 
@@ -46,7 +46,7 @@ The following example demonstrates enabling built-in toolbar items such as `Prin
 
 > The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property supports configuring both built-in and custom items.
 
-### Show Only Icons in Built-in Toolbar Items
+### Show only icons in built-in toolbar items
 
 To display only icons in the built-in toolbar items of the grid, use CSS to hide the text portion of the buttons. Add the following CSS style to the application:
 
@@ -71,7 +71,7 @@ This is demonstrated in the following sample:
   
 {% previewsample "page.domainurl/samples/grid/toolbaricon-cs1" %}
 
-### Customize Built-in Toolbar Items
+### Customize built-in toolbar items
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows customization of the built-in toolbar items to meet specific requirements. This customization can include adding, removing, or modifying toolbar items, as well as handling custom actions when toolbar buttons are clicked.
 
@@ -140,7 +140,7 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/toolbar-customization" %}
 
-## Custom Toolbar Items
+## Custom toolbar items
 
 Custom toolbar items in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allow addition of personalized functionality to the toolbar. These items can be added by defining the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property as a collection of [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects. These objects define the custom items and their corresponding actions. The actions for customized toolbar items are defined in the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event.
 
@@ -161,7 +161,7 @@ By default, custom toolbar items are positioned on the left side of the toolbar.
 > * The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property supports built-in and custom items.
 > * If a toolbar item does not match a built-in name, it is treated as a custom toolbar item.
 
-## Both Built-in and Custom Items in Toolbar
+## Both built-in and custom items in toolbar
 
 The toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports a combination of built-in and custom toolbar items to provide standard and custom actions within the same toolbar.
 
@@ -227,15 +227,15 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/toolbar-cs4" %}
 
-## Add Custom Components to the Grid Toolbar Using Template
+## Add custom components to the Grid toolbar using template
 
 The Syncfusion Angular Grid provides the flexibility to customize its toolbar by embedding custom components using the [template](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel#template) property of the [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel). Custom UI elements such as buttons, dropdowns, or input controls can be added directly into the toolbar, alongside built-in actions like `Add`, `Edit`, and `Delete` to enhance user interaction and provide seamless integration with grid operations.
 
-In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) is rendered in the toolbar using an Angular `ng-template`, which is passed to the toolbar item's `template` property through a "TemplateRef". The `AutoComplete` is populated with unique "Ship City" values from the grid’s data. When a value is selected from the `AutoComplete`, the grid is updated by invoking its `search` method, dynamically filtering the displayed records in the "Ship City" column based on the input. Using `ng-template` together with Angular’s "@ViewChild" enables embedding interactive controls such as dropdowns or search fields and controlling the grid programmatically.
+In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) is rendered in the toolbar using an Angular `ng-template`, which is passed to the toolbar item's `template` property through a "TemplateRef". The `AutoComplete` is populated with unique "Ship City" values from the grid's data. When a value is selected from the `AutoComplete`, the grid is updated by invoking its `search` method, dynamically filtering the displayed records in the "Ship City" column based on the input. Using `ng-template` together with Angular's `@ViewChild` enables embedding interactive controls such as dropdowns or search fields and controlling the grid programmatically.
 
  Additionally, the [change](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#change) event of the `AutoComplete` is used to trigger a search operation within the grid. When a value is selected or typed, the event handler invokes the grid's [search](https://ej2.syncfusion.com/angular/documentation/api/grid#search) method, dynamically filtering the displayed records in the "Ship City" column based on the input.
 
-{% tabs %}y
+{% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/toolbar-cs5/src/app.component.ts %}
 {% endhighlight %}
@@ -247,7 +247,7 @@ In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/d
   
 {% previewsample "page.domainurl/samples/grid/toolbar-cs5" %} 
 
-## Custom Toolbar Items in a Specific Position
+## Custom toolbar items in a specific position
 
 Custom toolbar items in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid can be positioned in specific locations by modifying the default placement. This enables precise control of each custom toolbar item's positioning according to specific requirements and desired layout within the grid.
 

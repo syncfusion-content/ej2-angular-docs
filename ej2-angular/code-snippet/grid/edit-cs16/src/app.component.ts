@@ -1,24 +1,15 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { columnDataType, data } from './datasource';
-import { EditSettingsModel, ToolbarItems, SaveEventArgs, IEditCell, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { FocusInEventArgs } from '@syncfusion/ej2-angular-inputs';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, EditSettingsModel, GridComponent, GridModule, IEditCell, PageService, PageSettingsModel, SaveEventArgs, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { FocusInEventArgs, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
-imports: [
+    imports: [
         CommonModule,
         GridModule,
         DatePickerAllModule,
@@ -30,9 +21,8 @@ imports: [
         AutoCompleteModule,
         RichTextEditorAllModule
     ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
         <ejs-grid #normalgrid [dataSource]="data" allowPaging="true" [pageSettings]="pageOptions"
@@ -106,6 +96,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-

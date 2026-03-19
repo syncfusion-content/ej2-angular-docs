@@ -1,22 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { inventoryData } from './datasource';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { GridComponent, ClipMode } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ClipMode, GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,DropDownListAllModule
-    ],
-
-providers: [PageService],
-standalone: true,
+  imports: [ GridModule,DropDownListAllModule ],
+  providers: [PageService],
+  standalone: true,
   selector: 'app-root',
   template: `
     <div style="display: flex">
@@ -57,6 +47,3 @@ export class AppComponent implements OnInit {
     (this.grid as GridComponent).refresh();
   }
 }
-
-
-

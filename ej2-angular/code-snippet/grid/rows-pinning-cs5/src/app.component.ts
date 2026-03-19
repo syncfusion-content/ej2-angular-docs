@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, EditService, EditSettingsModel, PageSettingsModel  } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { EditService, EditSettingsModel, GridModule, PageService, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 export interface RowData {
   TaskID: number; 
@@ -14,13 +11,9 @@ export interface RowData {
 }
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, EditService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [PageService, EditService],
+    standalone: true,
     selector: 'app-root',
     template: `<div>
                  <ejs-grid [dataSource]='data' height="215"  [isRowPinned]="isRowPinned"  [allowPaging]="true" [pageSettings]="pageSettings" [editSettings]="editSettings" [isRowPinned]="isRowPinned" height="200">

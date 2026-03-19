@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { NumericTextBoxModule,ChangeEventArgs } from '@syncfusion/ej2-angular-inputs'
-import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { data } from './datasource';
-import {GridModule, PageService,GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { GridComponent, GridModule, PageService, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs, NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     imports: [ GridModule, NumericTextBoxModule ],

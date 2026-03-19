@@ -144,7 +144,7 @@ Custom edit controls, such as a [DatePicker](https://ej2.syncfusion.com/angular/
 | `write` | Writes the value to the editor | Sets the initial or updated value in the editor |
 | `destroy` | Destroys the editor instance | Cleans up resources when editing is complete |
 
-The following example demonstrates rendering a DatePicker component in the frozen "OrderDate" column. The DatePicker allows date selection during edit mode and properly integrates with the grid's editing life cycle.
+The following example demonstrates rendering a `DatePicker` component in the frozen "OrderDate" column. The DatePicker allows date selection during edit mode and properly integrates with the grid's editing life cycle.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/frozencolumns-cs5/src/app.component.ts %}

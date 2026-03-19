@@ -1,16 +1,12 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
-import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { EditService, EditSettingsModel, GridComponent, GridModule, IEditCell, PageService, PageSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { Query } from '@syncfusion/ej2-data';
-import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [GridModule],
-standalone: true,
+    imports: [GridModule],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [toolbar]='toolbar'>
                 <e-columns>
@@ -67,6 +63,3 @@ export class AppComponent implements OnInit {
         };
     }
 }
-
-
-

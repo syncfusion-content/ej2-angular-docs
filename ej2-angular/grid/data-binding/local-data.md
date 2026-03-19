@@ -106,7 +106,7 @@ app.Run();
 
 **Step 4:** Create a basic Angular Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
 
-**Step 5:** In the client-side code, establish a connection to the SignalR hub and configure grid data binding in the "fetch.component.ts" file:
+**Step 5:** In the client-side code, establish a connection to the SignalR hub and configure grid data binding in the **fetch.component.ts** file:
 
 ```typescript
 import { Component, ViewChild } from '@angular/core';
@@ -189,7 +189,7 @@ export class FetchDataComponent {
 }
 ```
 
-**Step 6:** Create a controller on the server to manage data operations such as fetching, updating, inserting, and deleting records. Create a "HomeController.cs" file under the **Controllers** folder with the following code:
+**Step 6:** Create a controller on the server to manage data operations such as fetching, updating, inserting, and deleting records. Create a **HomeController.cs** file under the **Controllers** folder with the following code:
 
 ```cs
 using System;
@@ -299,7 +299,7 @@ public class Predicates
 }
 ```
 
-**Step 7:** Define a model class to represent the data structure. Create an "OrdersDetails.cs" file under the **Models** folder with the following code:
+**Step 7:** Define a model class to represent the data structure. Create an **OrdersDetails.cs** file under the **Models** folder with the following code:
 
 ```cs
 using System;
@@ -382,7 +382,7 @@ To import Excel data into the grid, follow these steps:
 2. Parse the Excel file data using `XLSX` library.
 3. Bind the resulting JSON to the grid.
 
-The following example demonstrates Excel data import into the grid utilizing the [Uploader](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started) component's `change` event with the `XLSX` library:
+The following example demonstrates Excel data import into the grid utilizing the `Uploader` component's `change` event with the `XLSX` library:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -682,22 +682,19 @@ import { data } from './datasource';
 @Component({
   selector: 'app-root',
   template: `
-       <ejs-grid #Grid (load)='load()' (created)='created()' >
-           <e-columns>
-                <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                <e-column field='CustomerID' headerText='Customer ID' textAlign='Right' width=120></e-column>
-                <e-column field='Quantity' headerText='Quantity' textAlign='Right' width=120></e-column>
-                <e-column field='CustomerAddress' headerText='Ship Address' textAlign='Right' width=120></e-column>
-            </e-columns>
-       </ejs-grid>`
+    <ejs-grid #Grid (load)='load()' (created)='created()' >
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+            <e-column field='CustomerID' headerText='Customer ID' textAlign='Right' width=120></e-column>
+            <e-column field='Quantity' headerText='Quantity' textAlign='Right' width=120></e-column>
+            <e-column field='CustomerAddress' headerText='Ship Address' textAlign='Right' width=120></e-column>
+        </e-columns>
+    </ejs-grid>`
 })
 export class AppComponent implements OnInit {
  
   @ViewChild('Grid') public grid?: GridComponent;
   public isDataLoading = true;
-
-  ngOnInit(): void {
-  }
   
   load() {
     if (this.isDataLoading) { 
@@ -992,14 +989,14 @@ import { Ajax } from '@syncfusion/ej2-base';
 @Component({
     selector: 'app-root',
     template: `
-                <ejs-grid #Grid allowPaging="true" [pageSettings]="pageSettings" (created)='created()' (load)='load()'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' textAlign='Right' width=120></e-column>
-                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' textAlign='Right' width=120></e-column>
-                </e-columns>
-                </ejs-grid>`
+    <ejs-grid #Grid allowPaging="true" [pageSettings]="pageSettings" (created)='created()' (load)='load()'>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' textAlign='Right' width=120></e-column>
+        <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' textAlign='Right' width=120></e-column>
+    </e-columns>
+    </ejs-grid>`
 })
 export class AppComponent implements OnInit {
     public data?: object[];
@@ -1093,11 +1090,7 @@ interface DataType {
 }
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [PageService],
 standalone: true,
   selector: 'app-root',

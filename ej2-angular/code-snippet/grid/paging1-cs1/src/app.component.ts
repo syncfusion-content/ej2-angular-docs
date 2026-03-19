@@ -1,43 +1,22 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import {
-    ButtonModule,
-    CheckBoxModule,
-    RadioButtonModule,
-    SwitchModule,
-} from '@syncfusion/ej2-angular-buttons';
-import { GridModule, PageService, ToolbarService, EditService, GroupService, FilterService, SortService, ReorderService, ColumnMenuService, ColumnChooserService } from '@syncfusion/ej2-angular-grids'
-import { L10n, setCulture } from '@syncfusion/ej2-base';
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
-import { GridComponent, PageSettingsModel, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
-import arAELocalization from './locale.json';
+import { arAELocalization } from './locale.json';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, ButtonModule, CheckBoxModule, RadioButtonModule,SwitchModule, } from '@syncfusion/ej2-angular-buttons';
+import { ColumnChooserService, ColumnMenuService, EditService, EditSettingsModel, FilterService, GridComponent, GridModule, GroupService, PageService, PageSettingsModel, ReorderService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { L10n } from '@syncfusion/ej2-base';
 
 L10n.load(arAELocalization);
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule,
-        CheckBoxModule,
-        RadioButtonModule,
-        SwitchModule,
-    ],
-
-providers: [PageService, ToolbarService, EditService, 
-        GroupService, FilterService, SortService, 
-        ReorderService, ColumnMenuService, ColumnChooserService],
-standalone: true,
+    imports: [ GridModule, ButtonModule,CheckBoxModule,RadioButtonModule,SwitchModule],
+    providers: [ PageService, ToolbarService, EditService, GroupService, FilterService, SortService, ReorderService, ColumnMenuService, ColumnChooserService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div>
-    <label style="padding: 10px 10px">
-    Enable or diable RTL mode
-    </label>
-    <ejs-switch id="switch" (change)="onSwitchChange($event)"></ejs-switch>
-  </div>
+      <label style="padding: 10px 10px"> Enable or diable RTL mode</label>
+      <ejs-switch id="switch" (change)="onSwitchChange($event)"></ejs-switch>
+    </div>
     <ejs-grid #grid [dataSource]='data' [allowSorting]='true' [allowReordering]='true' 
     [allowFiltering]='true' [allowGrouping]='true' [editSettings]="editSettings" [toolbar]="toolbar" 
     [enableRtl]='true' [locale]='locale' [allowPaging]='true' [pageSettings]='pageOptions'
@@ -75,6 +54,3 @@ export class AppComponent implements OnInit {
         }
       }
 }
-
-
-

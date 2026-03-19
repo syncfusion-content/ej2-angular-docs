@@ -1,13 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser';
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { FilterService, PageService, GridComponent,GridModule, GroupService  } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FilterService, GridComponent, GridModule, GroupService, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule ],
-providers: [GroupService, FilterService, PageService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [GroupService, FilterService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #Orders [dataSource]='data' [enablePersistence]='true' [allowPaging]='true' [allowFiltering]='true'
            height='210px' (actionBegin)='actionBegin()'>
@@ -32,5 +30,4 @@ export class AppComponent implements OnInit {
     actionBegin() {
         (this.grid as GridComponent).query.addParams('dataSource', 'data');
     }
-
 }

@@ -1,27 +1,20 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule, CheckBoxModule, SwitchModule } from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit } from '@angular/core';
-import { FilterSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { ButtonModule, ChangeEventArgs, CheckBoxModule, SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { CheckBoxSelectionService, DropDownListAllModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { FilterService, FilterSettingsModel, GridModule, PageService, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
+    imports: [ 
         GridModule,
         MultiSelectModule,
         DropDownListAllModule,
         CheckBoxModule,
         ButtonModule,
         SwitchModule
-    ],
-
-providers: [FilterService, PageService,CheckBoxSelectionService],
-standalone: true,
+        ],
+    providers: [FilterService, PageService,CheckBoxSelectionService],
+    standalone: true,
     selector: 'app-root',
     template: ` <div class='container'>
                     <label for="checked"> <b> Show filter bar status </b> </label>

@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ColumnChooserService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ColumnChooserService, GridComponent, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ToolbarService, ColumnChooserService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [ToolbarService, ColumnChooserService],
+    standalone: true,
     selector: 'app-root',
     template: ` <button id='show' ejs-button class='e-primary' (click)='show()'> open Column Chooser </button>
                 <ejs-grid #grid [dataSource]='data' [height]='280' [showColumnChooser]= 'true'>

@@ -1,20 +1,15 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService, PageService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-
-import { L10n } from '@syncfusion/ej2-base';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { PageSettingsModel, EditSettingsModel,ToolbarItems } from '@syncfusion/ej2-angular-grids';
-import frFRLocalization from './locale.json';
+import { frFRLocalization } from './locale.json';
+import { Component, OnInit } from '@angular/core';
+import { EditService, EditSettingsModel, GridModule, GroupService, PageService, PageSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { L10n } from '@syncfusion/ej2-base';
 
 L10n.load(frFRLocalization);
 
 @Component({
-imports: [ GridModule] ,
-
-providers: [GroupService, PageService, EditService, ToolbarService],
-standalone: true,
+    imports: [ GridModule] ,
+    providers: [GroupService, PageService, EditService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [locale]='locale' [allowGrouping]='true' [allowPaging]='true'
              [pageSettings]='pageOptions' [editSettings]='editSettings' [toolbar]='toolbar' height='200px'>
@@ -41,6 +36,3 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'];
     }
 }
-
-
-

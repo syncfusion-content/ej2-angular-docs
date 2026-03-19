@@ -1,31 +1,20 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { addImage } from './add';
 import { data } from './datasource';
 import { deleteImage } from './delete';
-import { addImage } from './add';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { GridComponent, EditSettingsModel} from '@syncfusion/ej2-angular-grids';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { ClickEventArgs } from '@syncfusion/ej2-buttons';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { EditService, EditSettingsModel, GridComponent, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
+    imports: [ 
         GridModule,
         ToolbarModule,
         ButtonModule
-    ],
-
-providers: [ToolbarService, EditService],
-standalone: true,
+        ],
+    providers: [ToolbarService, EditService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px' [editSettings]='editSettings'>
                 <ng-template #toolbarTemplate let-data>
@@ -93,6 +82,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-

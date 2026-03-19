@@ -1,9 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
 import { stackedHeaderData } from './datasource';
-import { ColumnModel, GridModule, PageService, ToolbarService, ColumnChooserService, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { TreeView } from '@syncfusion/ej2-angular-navigations';
+import { Component, ViewChild } from '@angular/core';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+import { ColumnChooserService, ColumnModel, GridComponent, GridModule, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TreeView, TreeViewModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
   imports: [GridModule, ButtonModule, TreeViewModule],

@@ -1,20 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ReorderService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, ReorderService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ReorderService],
-standalone: true,
+    imports: [ GridModule  ],
+    providers: [ReorderService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowReordering]='true' [allowSelection]='false' height='315px'>
                 <e-columns>
@@ -35,4 +26,3 @@ export class AppComponent implements OnInit {
         this.customAttributes = {class: 'customcss'};
     }
 }
-

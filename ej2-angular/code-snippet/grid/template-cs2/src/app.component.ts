@@ -1,29 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData, SelectedRecordDataType } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { DialogComponent } from '@syncfusion/ej2-angular-popups';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { FilterService, GridComponent, GridModule, GroupService, PageService, SortService } from '@syncfusion/ej2-angular-grids';
+import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
-        ButtonModule,
-        GridModule,DialogModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
-standalone: true,
+    imports: [ButtonModule, GridModule,DialogModule ],
+    providers: [PageService,SortService, FilterService, GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <ejs-grid #grid [dataSource]='data' height='315px'>
@@ -70,7 +54,3 @@ export class AppComponent implements OnInit {
         this.selectedRecord = data;
     }
 }
-
-
-
-

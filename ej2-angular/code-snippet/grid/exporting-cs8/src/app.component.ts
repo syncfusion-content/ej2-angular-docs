@@ -1,39 +1,23 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService, DetailRowService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
-import {
-    GridComponent,
-    ToolbarItems,
-    PdfExportProperties,
-    GridModel,
-    
-} from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { DetailRowService, GridModule, PdfExportService, ToolbarService, GridComponent, ToolbarItems, PdfExportProperties, GridModel, } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
-
-providers: [PdfExportService, ToolbarService, DetailRowService],
-standalone: true,
+    imports: [ GridModule, DropDownListAllModule ],
+    providers: [PdfExportService, ToolbarService, DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `
-  <div style="display: flex">
-    <label style="padding: 10px 10px 26px 0"> Change the hierarchy export mode: </label>
-    <ejs-dropdownlist
-    style="margin-top:5px"
-    #dropDownList
-    index="0"
-    width="150"
-    [dataSource]="ddlData"></ejs-dropdownlist>
+    <div style="display: flex">
+        <label style="padding: 10px 10px 26px 0"> Change the hierarchy export mode: </label>
+        <ejs-dropdownlist
+        style="margin-top:5px"
+        #dropDownList
+        index="0"
+        width="150"
+        [dataSource]="ddlData"></ejs-dropdownlist>
     </div>
     <ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' [childGrid]='childGrid'
     height='220px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
@@ -88,19 +72,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

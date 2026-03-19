@@ -23,10 +23,7 @@ Here's an example of using the `detailTemplate` property in the Grid component:
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, DetailRowService } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
 

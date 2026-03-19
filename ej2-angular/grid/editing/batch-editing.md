@@ -106,9 +106,9 @@ Confirmation dialogs provide an additional layer of protection when performing c
 
 | Action | Confirmation Trigger |
 |--------|---------------------|
-| **Save Changes** | Appears when clicking `Update` button in toolbar |
-| **Cancel Changes** | Appears when clicking `Cancel` button to discard edits |
-| **Delete Record** | Appears when deleting a row during batch mode |
+| **Save Changes** | Appears when clicking `Update` button in toolbar. |
+| **Cancel Changes** | Appears when clicking `Cancel` button to discard edits. |
+| **Delete Record** | Appears when deleting a row during batch mode. |
 
 Enable the confirmation dialog by setting [editSettings.showConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#showconfirmdialog) to `true` in the `editSettings` configuration. The default value is `true`.
 

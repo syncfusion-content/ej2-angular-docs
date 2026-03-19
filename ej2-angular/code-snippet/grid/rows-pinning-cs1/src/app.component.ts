@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule  } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+
 export interface RowData {
   TaskID: number; 
   Title: string;  
@@ -11,12 +10,8 @@ export interface RowData {
   Assignee?: string;   
 }
 @Component({
-imports: [
-        
-        GridModule
-    ],
-providers: [],
-standalone: true,
+    imports: [ GridModule],
+    standalone: true,
     selector: 'app-root',
     template: `<div>
                  <ejs-grid [dataSource]='data' height="260" [isRowPinned]="isRowPinned">

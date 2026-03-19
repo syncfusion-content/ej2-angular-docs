@@ -1,20 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ExcelExportService, FilterService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit, ViewChild  } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ExcelExportService, FilterService, GridComponent, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ExcelExportService, ToolbarService, FilterService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [ExcelExportService, ToolbarService, FilterService],
+    standalone: true,
     selector: 'app-root',
     template: `<div class="control-section">
                     <ejs-grid #grid [dataSource]='data' allowPaging='true' 
@@ -59,6 +51,3 @@ export class AppComponent  implements OnInit {
         }
     }
 }
-
-
-

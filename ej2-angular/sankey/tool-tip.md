@@ -119,3 +119,13 @@ To disable tooltips:
 
 ```typescript
 const tooltip = { enable: false };
+```
+## Key Considerations
+
+- **Keep Text Concise**: Keep tooltip text concise and readable.
+- **Ensure Contrast**: Ensure sufficient contrast for tooltip text and background.
+- **Use Format Strings**: Prefer `nodeFormat` and `linkFormat` for simple content customization without requiring custom rendering logic.
+- **Animation Tuning**: Tune animation durations to balance responsiveness and polish.
+- **Performance**: Use format strings instead of complex rendering logic for better performance.
+- **Relevant Information**: Show only relevant and helpful information.
+- **Consistent Styling**: Maintain consistent tooltip styling across your application.

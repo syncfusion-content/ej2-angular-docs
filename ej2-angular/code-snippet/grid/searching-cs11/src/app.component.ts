@@ -1,24 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems,SearchSettingsModel } from '@syncfusion/ej2-angular-grids'; 
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule, SearchService, SearchSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
-
-providers: [SearchService, ToolbarService],
-standalone: true,
+    imports: [ GridModule,DropDownListAllModule ],
+    providers: [SearchService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
@@ -70,6 +58,3 @@ export class AppComponent implements OnInit {
       (this.grid as GridComponent).searchSettings.operator = args.value as string; 
     }
  }
-
-
-

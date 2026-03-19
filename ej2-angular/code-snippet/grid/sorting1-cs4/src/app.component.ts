@@ -1,17 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, SortService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, SortEventArgs, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        GridModule
-    ],
-
-providers: [SortService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [SortService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="margin-left:100px;"><p style="color:red;" id="message">{{ message }}</p></div>
@@ -43,6 +37,3 @@ export class AppComponent implements OnInit {
         this.message = requestType + ' action completed for ' + columnName + ' column';
     }
 }
-
-
-

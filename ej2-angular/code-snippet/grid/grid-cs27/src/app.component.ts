@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
-import { data } from "./datasource";
-import {TooltipAllModule, TooltipComponent, TooltipEventArgs } from "@syncfusion/ej2-angular-popups";
-import { GridModule, PageService} from '@syncfusion/ej2-angular-grids'
+import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
+import { TooltipAllModule, TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
 
 @Component({
   imports: [TooltipAllModule, GridModule],

@@ -118,29 +118,28 @@ The following example demonstrates server-side CSV export implementation:
 
 ```typescript
 
-        public ActionResult CsvGridExport([FromForm] string gridModel)
-        {
-            GridExcelExport exp = new GridExcelExport();
-            Grid gridProperty = ConvertGridObject(gridModel);
-            return exp.CsvExport<OrdersDetails>(gridProperty, orddata);
-        }
+public ActionResult CsvGridExport([FromForm] string gridModel)
+{
+    GridExcelExport exp = new GridExcelExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    return exp.CsvExport<OrdersDetails>(gridProperty, orddata);
+}
 
-        private Grid ConvertGridObject(string gridProperty)
-        {
-           Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
-           GridColumnModel cols = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
-           GridModel.Columns = cols.columns;
-           return GridModel;
-        }
+private Grid ConvertGridObject(string gridProperty)
+{
+    Grid GridModel = (Grid)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(Grid));
+    GridColumnModel cols = (GridColumnModel)Newtonsoft.Json.JsonConvert.DeserializeObject(gridProperty, typeof(GridColumnModel));
+    GridModel.Columns = cols.columns;
+    return GridModel;
+}
 
-        public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
-        {
-            IEnumerable DataSource = OrdersDetails.GetAllRecords();
-            DataOperations operation = new DataOperations();
-            int count = DataSource.Cast<OrdersDetails>().Count();
-            return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
-        }
-
+public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
+{
+    IEnumerable DataSource = OrdersDetails.GetAllRecords();
+    DataOperations operation = new DataOperations();
+    int count = DataSource.Cast<OrdersDetails>().Count();
+    return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
+}
 ```
 
 And on the client:

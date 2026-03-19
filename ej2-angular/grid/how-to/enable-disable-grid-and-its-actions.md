@@ -17,30 +17,28 @@ To control the enabled or disabled state of the grid and its actions, follow the
 **Step 1:** Define a CSS class to visually and functionally disable the grid.
 
 ```css
-    .disablegrid {
-        pointer-events: none;
-        opacity: 0.4;
-    }
-    .wrapper {
-        cursor: not-allowed;
-    }
-
+.disablegrid {
+    pointer-events: none;
+    opacity: 0.4;
+}
+.wrapper {
+    cursor: not-allowed;
+}
 ```
 
 **Step 2:** Add or remove the CSS class on the Grid's parent element within the button click event handler.
 
 ```typescript
-    public btnClick():void {
-      if (this.Grid.element.classList.contains('disablegrid')) {
-          this.Grid.element.classList.remove('disablegrid');
-          document.getElementById("GridParent").classList.remove('wrapper');
-      }
-      else {
-          this.Grid.element.classList.add('disablegrid');
-          document.getElementById("GridParent").classList.add('wrapper');
-      }
+public btnClick():void {
+    if (this.Grid.element.classList.contains('disablegrid')) {
+        this.Grid.element.classList.remove('disablegrid');
+        document.getElementById("GridParent").classList.remove('wrapper');
     }
-
+    else {
+        this.Grid.element.classList.add('disablegrid');
+        document.getElementById("GridParent").classList.add('wrapper');
+    }
+}
 ```
 
 In the following example, clicking the button toggles enabling or disabling the grid and all its actions.

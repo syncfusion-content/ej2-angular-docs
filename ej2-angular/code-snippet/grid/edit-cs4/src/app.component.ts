@@ -1,35 +1,25 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { productData } from './datasource';
-import { EditSettingsModel, ToolbarItems, IEditCell, GridComponent, CellEditArgs
-} from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, GridModule, PageService, SortService, ToolbarService , GridComponent, EditSettingsModel, ToolbarItems, IEditCell, CellEditArgs} from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { ChangeEventArgs, NumericTextBox } from '@syncfusion/ej2-inputs';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DatePickerAllModule,
-        FormsModule,
-        TimePickerModule,
-        FormsModule,
-        TextBoxModule,
-        MultiSelectModule,
-        AutoCompleteModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+  imports: [
+      GridModule,
+      DatePickerAllModule,
+      FormsModule,
+      TimePickerModule,
+      FormsModule,
+      TextBoxModule,
+      MultiSelectModule,
+      AutoCompleteModule
+      ],
+  providers: [EditService, ToolbarService, SortService, PageService],
+  standalone: true,
   selector: 'app-root',
   template: `
       <ejs-grid #grid id="grid" [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" 
@@ -125,5 +115,3 @@ export class AppComponent implements OnInit {
     }
   }
 }
-
-

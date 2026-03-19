@@ -1,12 +1,11 @@
-import { GridModule, ToolbarService ,PrintEventArgs} from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, PrintEventArgs, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule],
-providers: [ToolbarService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [toolbar]='toolbarOptions' height='272px' (beforePrint)="beforePrint($event)">
                 <e-columns>
@@ -36,6 +35,3 @@ export class AppComponent implements OnInit {
             (args.element as HTMLElement).insertBefore(div, (args.element as HTMLElement).childNodes[0]);
     }
 }
-
-
-

@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService,Column, GridComponent, TextAlign} from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, ViewChild } from '@angular/core';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Column, GridComponent, GridModule, PageService, TextAlign } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
@@ -11,12 +9,12 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
   providers: [PageService],
   standalone: true,
   selector: 'app-root',
-  template: `<div style="display: flex">
-              <label style="padding: 5px 5px 0 0;">Align the text of header text :</label>
-              <ejs-dropdownlist index="0" width="100" 
-              [dataSource]="alignmentData" (change)="changeAlignment($event)">
-              </ejs-dropdownlist>
-            </div>
+  template: `
+      <div style="display: flex">
+        <label style="padding: 5px 5px 0 0;">Align the text of header text :</label>
+          <ejs-dropdownlist index="0" width="100" 
+          [dataSource]="alignmentData" (change)="changeAlignment($event)"></ejs-dropdownlist>
+      </div>
             <div class="control-section" style="padding-top:5px">
               <ejs-grid #grid [dataSource]='data' height='295px' >
                 <e-columns>

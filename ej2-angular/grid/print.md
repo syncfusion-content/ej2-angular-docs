@@ -173,7 +173,7 @@ Example: adding a title to the grid print output:
   
 {% previewsample "page.domainurl/samples/grid/print-method" %}
 
-## Optimized Approaches for Printing Full Data Sets
+## Optimized approaches for printing full data sets
 
 Printing very large datasets can cause browser performance issues because rendering many DOM elements may slow or hang the browser. The Grid supports virtualization for interactive viewing, but virtualization (rows and columns) is not supported for printing. If all data must be printed, export to [Excel](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting), [CSV](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting), or [PDF](https://ej2.syncfusion.com/angular/documentation/grid/pdf-export/pdf-export) and print the exported file with a desktop application.
 

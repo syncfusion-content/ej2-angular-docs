@@ -15,7 +15,8 @@ The foreign key column in the Syncfusion<sup style="font-size:70%">&reg;</sup> A
 To enable the foreign key column in the Grid:
 
 **Step 1: Inject the ForeignKey module**
- Inject the `ForeignKeyService` in the `AppModule` providers
+
+Inject the `ForeignKeyService` to the providers array.
 
    ```typescript
    import { ForeignKeyService } from '@syncfusion/ej2-angular-grids';
@@ -36,9 +37,9 @@ Configure the foreign key column using three essential properties:
 
 * [foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue): The field from the foreign data source to display in the Grid (e.g., "FirstName" to show employee names).
 
-   ```html
-   <e-column field='EmployeeID' headerText='Employee ID' foreignKeyValue='FirstName' foreignKeyField='EmployeeID' [dataSource]='employeesData'></e-column>
-   ```
+```html
+<e-column field='EmployeeID' headerText='Employee ID' foreignKeyValue='FirstName' foreignKeyField='EmployeeID' [dataSource]='employeesData'></e-column>
+```
 
 > The `foreignKeyField` property should match the field name in the foreign data source that represents the foreign key relationship, and the `foreignKeyValue` property should specify the field from the foreign data source that will be displayed in the grid.
 
@@ -164,7 +165,7 @@ By default, aggregations (sum, average, count, etc.) are not supported in foreig
 
 1. Define a foreign key column in the Grid.
 2. Implement a custom aggregate function to calculate the aggregation for the foreign key column.
-3. Set the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#customaggregate) property to the custom aggregate function.
+3. Set the `customAggregate` property to the custom aggregate function.
 
 **Custom aggregate behavior:**
 

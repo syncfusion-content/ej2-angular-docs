@@ -60,7 +60,7 @@ The following example displays the sum of the "Freight" field in the footer of e
   
 {% previewsample "page.domainurl/samples/grid/aggregates-group-cs1" %}
 
-> Inside the template, access each aggregate value using its [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) name. For example, use `props.Sum` to read the sum aggregate.
+> Inside the template, access each aggregate value using its [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) name. For example, use `data.sum` to access the sum aggregate and `data.max` to access the maximum aggregate.
 
 ## Group caption aggregates
 

@@ -40,7 +40,7 @@ Exporting only the selected records from the Syncfusion<sup style="font-size:70%
 
 To export only the selected records, utilize the [exportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) property in the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event. 
 
-To export the selected records from the grid to a PDF file, follow these steps:
+Follow these steps to export the selected records from the Grid to a PDF file:
 
 1. Handle the `toolbarClick` event of the Grid.
 
@@ -51,8 +51,6 @@ To export the selected records from the grid to a PDF file, follow these steps:
 4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method.
 
 The following example demonstrates exporting the selected records to a PDF document.
-
-Example for exporting selected records:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -274,7 +272,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component prov
 
 This can be achieved by utilizing the [pdfExportProperties.allowHorizontalOverflow](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#allowhorizontaloverflow) property of the grid.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](https://ej2.syncfusion.com/angular/documentation/api/switch#checked) property, and the export action is performed accordingly when the toolbar is clicked.
+The following example uses the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component to enable or disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch state, the property is updated using the [checked](https://ej2.syncfusion.com/angular/documentation/api/switch#checked) value, and the PDF export is performed when the toolbar is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,20 +1,11 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { L10n } from '@syncfusion/ej2-base';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, EditSettingsModel, GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { L10n } from '@syncfusion/ej2-base';
 
 L10n.load({
     'en-US': {
@@ -26,8 +17,7 @@ L10n.load({
 });
 
 @Component({
-imports: [
-        
+    imports: [
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -36,10 +26,9 @@ imports: [
         TextBoxModule,
         MultiSelectModule,
         AutoCompleteModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+        ],
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
      (actionComplete)="actionComplete($event)" height='273px'>
@@ -75,7 +64,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-
-

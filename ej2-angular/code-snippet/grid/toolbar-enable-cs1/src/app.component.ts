@@ -1,32 +1,19 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
-import {
-    ButtonModule,
-    CheckBoxModule,
-    RadioButtonModule,
-    SwitchModule,
-} from '@syncfusion/ej2-angular-buttons'
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { data } from './datasource';
-import { GridComponent , GroupSettingsModel} from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs,  ButtonModule, CheckBoxModule, RadioButtonModule,SwitchModule, } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, GroupService, GroupSettingsModel, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        
+    imports: [
         GridModule,
         ButtonModule,
         CheckBoxModule,
         RadioButtonModule,
         SwitchModule,
-    ],
-
-providers: [ToolbarService, PageService,GroupService],
-standalone: true,
+        ],
+    providers: [ToolbarService, PageService,GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div>
@@ -77,6 +64,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

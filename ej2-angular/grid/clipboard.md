@@ -14,8 +14,8 @@ The clipboard feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> An
 
 Interaction keys | Description
 -----|-----
-<kbd>Ctrl + C</kbd> | Copy selected rows or cells to the clipboard
-<kbd>Ctrl + Shift + H</kbd> | Copy selected rows or cells with header to the clipboard
+<kbd>Ctrl + C</kbd> | Copy selected rows or cells to the clipboard.
+<kbd>Ctrl + Shift + H</kbd> | Copy selected rows or cells with header to the clipboard.
 
 Examples below show grid configuration for clipboard operations. Configure the grid's `dataSource` and `selectionSettings` properties.
 
@@ -53,7 +53,7 @@ To copy selected rows or cells data to the clipboard using external buttons, uti
 
 The AutoFill feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid copies values from a selected cell range into target cells by dragging the AutoFill handle. This provides a fast method for populating repetitive or sequential data.
 
-**Using the AutoFill Feature:**
+**AutoFill to copy data:**
 
 1. Select the cells containing the data to copy.
 

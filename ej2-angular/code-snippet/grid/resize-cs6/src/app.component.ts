@@ -1,30 +1,19 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ResizeService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule, ResizeService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [ GridModule,DropDownListAllModule,TextBoxModule,ButtonModule ],
-providers: [ResizeService],
-standalone: true,
+  imports: [ GridModule,DropDownListAllModule,TextBoxModule,ButtonModule ],
+  providers: [ResizeService],
+  standalone: true,
   selector: 'app-root',
   template: `
     <div style="display:flex;">
       <label style="padding: 5px 5px 5px 0">Change the field: </label>
-      <ejs-dropdownlist
-        id="value"
-        #dropdown
-        index="0"
-        width="120"
-        [fields]="field"
-        [dataSource]="ddlData"
-      ></ejs-dropdownlist>
+      <ejs-dropdownlist id="value" #dropdown index="0" width="120" [fields]="field" [dataSource]="ddlData" ></ejs-dropdownlist>
     </div>
     <div>
       <label style="padding: 5px 5px 0 0">Enter the width: </label>
@@ -64,6 +53,3 @@ export class AppComponent implements OnInit {
     (this.grid as GridComponent).refreshColumns();
   }
 }
-
-
-

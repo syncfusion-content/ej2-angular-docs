@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ResizeService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, ResizeArgs, Column } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Column, GridComponent, GridModule, ResizeArgs, ResizeService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ResizeService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [ResizeService],
+    standalone: true,
     selector: 'app-root',
     template: ` 
     <div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
@@ -65,8 +55,4 @@ export class AppComponent implements OnInit {
         }
 
     }
-
 }
-
-
-

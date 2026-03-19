@@ -1,35 +1,21 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, ReorderService, FilterService, GroupService, ColumnChooserService, 
-AggregateService, ToolbarService, SelectionService, RowDDService,   } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { PageSettingsModel, ToolbarItems, SearchSettingsModel, SelectionSettingsModel, 
-    FilterSettingsModel, GroupSettingsModel, EditSettingsModel, SortSettingsModel } from '@syncfusion/ej2-angular-grids';
-  
+import { Component, OnInit } from '@angular/core';
+import { ToolbarItems,SearchSettingsModel,SelectionSettingsModel, GridModule, AggregateService, ToolbarService, SelectionService, RowDDService,FilterSettingsModel, GroupSettingsModel, EditSettingsModel, SortSettingsModel,PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    
-    ],
-
-providers: [PageService,
-        SortService,
-        ReorderService,
-        FilterService,
-        GroupService,
-        AggregateService,
-        ToolbarService,
-        SelectionService,
-        RowDDService,
-        ColumnChooserService  ],
-standalone: true,
+    imports: [GridModule],
+    providers: [
+            PageService,
+            SortService,
+            ReorderService,
+            FilterService,
+            GroupService,
+            AggregateService,
+            ToolbarService,
+            SelectionService,
+            RowDDService,
+            ColumnChooserService  ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [pageSettings]="pageSettings" [searchSettings]='searchOptions' [toolbar]='toolbarOptions'  [allowReordering]='true' [allowSorting]="true"
     [allowReordering]='true' [allowRowDragAndDrop]='true' [selectionSettings]='selectionOptions' [selectedRowIndex]='6' [allowSorting]="true" [sortSettings]='sortOptions'

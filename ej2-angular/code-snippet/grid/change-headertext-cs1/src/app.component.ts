@@ -1,11 +1,9 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,GridComponent,PageService} from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule,DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
-import {TextBoxModule,TextBoxComponent} from '@syncfusion/ej2-angular-inputs'
-import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   imports: [ GridModule,ButtonModule,DropDownListAllModule,TextBoxModule],

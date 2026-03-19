@@ -1,18 +1,15 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { data } from './datasource';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { CommandModel, CommandClickEventArgs, GridComponent, Column, IRow, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { CommandClickEventArgs, CommandColumnService, CommandModel, EditService, EditSettingsModel, GridComponent, GridModule, IRow } from '@syncfusion/ej2-angular-grids';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [GridModule,DialogModule, CommonModule],
-providers: [EditService, CommandColumnService],
-standalone: true,
-  selector: 'app-root',
-  template: `
+    imports: [GridModule,DialogModule, CommonModule],
+    providers: [EditService, CommandColumnService],
+    standalone: true,
+    selector: 'app-root',
+    template: `
         <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" (commandClick)="commandClick($event)" height="310px">
         <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="100"></e-column>

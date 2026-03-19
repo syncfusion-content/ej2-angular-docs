@@ -1,25 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { employeeData } from './datasource';
-import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
+import { Component, NgModule, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DetailRowService, GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
+import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule ,
-        TextBoxModule       
-    ],
-
-providers: [DetailRowService],
-standalone: true,
+  imports: [ GridModule, ButtonModule , TextBoxModule],
+  providers: [DetailRowService],
+  standalone: true,
   selector: 'app-root',
   template: `
         <div style="display: inline-block; padding: 0px 5px 0px 0px">

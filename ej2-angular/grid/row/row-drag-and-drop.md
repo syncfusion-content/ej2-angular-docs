@@ -12,16 +12,16 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides built-in support for seamless row drag and drop functionality. This feature enables effortless row rearrangement within the grid by dragging and dropping rows to new positions. Additionally, rows can be transferred between grids, as well as dragged and dropped to custom components, providing powerful flexibility for complex data management scenarios.
 
-**Key Capabilities:**
-- Reorder rows within the same grid
-- Transfer rows between multiple grid instances
-- Drag rows to custom Angular components
-- Customize drag behavior with events and settings
-- Hide drag icons for seamless interaction
+**Key capabilities:**
+- Reorder rows within the same grid.
+- Transfer rows between multiple grid instances.
+- Drag rows to custom Angular components.
+- Customize drag behavior with events and settings.
+- Hide drag icons for seamless interaction.
 
-To use the row drag and drop feature in Grid component, inject the `RowDDService` in the provider section of the `AppModule`. The `RowDDService` handles the row drag and drop functionality within the Grid component. Once the `RowDD` service is injected, use the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#allowrowdraganddrop) and [targetID](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDropSettings#targetid) properties to enable and configure the row drag and drop feature in the Grid.
+To use the row drag and drop feature in Grid component, inject the `RowDDService` to the providers array. The `RowDDService` handles the row drag and drop functionality within the Grid component. Once the `RowDD` service is injected, use the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#allowrowdraganddrop) and [targetID](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDropSettings#targetid) properties to enable and configure the row drag and drop feature in the Grid.
 
-## Drag and drop within the grid 
+## Drag and drop within the Grid 
 
 The drag and drop feature allows rearranging rows within the grid by dragging them using a drag icon. To activate this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#allowrowdraganddrop) property to `true`.
 
@@ -39,7 +39,7 @@ The following example demonstrates drag and drop within the Grid:
   
 {% previewsample "page.domainurl/samples/grid/dragndrop-cs3" %}
 
-## Drag and drop to another grid 
+## Drag and drop to another Grid 
 
 The grid row drag and drop allows drag grid rows and drop to another grid. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#allowrowdraganddrop) property to `true` in the source Grid component.
 
@@ -60,13 +60,13 @@ The following example demonstrates row drag and drop between different Grid comp
 {% previewsample "page.domainurl/samples/grid/dragndrop-cs1" %}
 
 > * Row drag and drop functionality is not supported with virtual scrolling and frozen rows and columns mode.
-> * The `RowDDService` must be injected in the provider section of **AppModule** to enable row drag and drop features.
+> * The `RowDDService` must be injected in the providers section.
 
 ## Drag and drop to custom component 
 
 The Grid supports row drag-and-drop into custom components, enabling seamless data transfer without manual copy-paste. To enable this feature, set the `allowRowDragAndDrop` property to `true` and specify the target component's "ID" in the `targetID` property of the `rowDropSettings` object.
 
-In the following example, selected grid rows are dragged and dropped into a TreeView component using the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdrop) event. Upon successful drop, the corresponding grid row is removed and its data is inserted into the custom component:
+In the following example, selected grid rows are dragged and dropped into a `TreeView` component using the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdrop) event. Upon successful drop, the corresponding grid row is removed and its data is inserted into the custom component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -217,5 +217,5 @@ The row drag and drop feature offers focused functionality, working seamlessly w
 
 ## See also
 
-- [Sorting data in the Syncfusion Grid](https://help.syncfusion.com/angular/grid/sorting)
-- [Filtering data in the Syncfusion Grid](https://help.syncfusion.com/angular/grid/filtering)
+* [Sorting data in the Syncfusion Grid](https://help.syncfusion.com/angular/grid/sorting)
+* [Filtering data in the Syncfusion Grid](https://help.syncfusion.com/angular/grid/filtering)

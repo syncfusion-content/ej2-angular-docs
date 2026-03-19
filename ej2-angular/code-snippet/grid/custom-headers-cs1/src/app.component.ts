@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
-import { GridComponent,GridModule } from '@syncfusion/ej2-angular-grids';
+
 const SERVICE_URI: string ='https://services.syncfusion.com/angular/production/';
 class CustomAdaptor extends WebApiAdaptor {
   override beforeSend(args:any, xhr:any, settings:any) {

@@ -12,16 +12,26 @@ domainurl: ##DomainURL##
 
 The infinite scrolling feature in the grid is a powerful tool for seamlessly handling extensive datasets by dynamically loading data as the vertical scrollbar reaches the end of the viewport. In infinite scrolling mode, a new block of data is loaded on-demand each time the scrollbar approaches the end, optimizing rendering performance by fetching only the required data blocks and reducing initial load time and memory usage. In this context, a block refers to the number of rows defined by the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize) property, if not explicitly specified, the grid automatically calculates it based on the viewport and row height.
 
-Injecting the `InfiniteScroll` module into the Grid component's `Inject` services array is required to enable infinite scrolling:
+To enable infinite scrolling, include the `InfiniteScrollService` in the providers array.
 
 ```ts
-import { Inject, InfiniteScroll } from '@syncfusion/ej2-angular-grids';
+import { Component } from '@angular/core';
+import { InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
 
-<GridComponent>
-  <Inject services={[InfiniteScroll]} />
-</GridComponent>
+@Component({
+  selector: 'app-root',
+  providers:[InfiniteScrollService ]
+  template: `
+    <ejs-grid [enableInfiniteScrolling]="true" height="400">
+      <e-columns>
+        <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-column>
+        <!-- define other columns here -->
+      </e-columns>
+    </ejs-grid>
+  `
+})
+export class AppComponent { }
 ```
-
 
 Infinite scrolling feature can be enabled by setting the [enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid#enableinfinitescrolling) property to `true`. The [height](https://ej2.syncfusion.com/angular/documentation/api/grid#height) property must also be specified to define the scrollable area of the grid. Refer to this [section](./scrolling#set-width-and-height) for grid basic scrolling setup and configurations.
 

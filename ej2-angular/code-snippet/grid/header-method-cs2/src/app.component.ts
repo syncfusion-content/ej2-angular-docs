@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridComponent,GridModule,PageService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { orderDetails } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   imports: [ GridModule],
@@ -46,5 +44,4 @@ export class AppComponent implements OnInit {
     const index = (this.grid as GridComponent).getColumnIndexByUid('grid-column2');
     ((this.grid as GridComponent).getColumnHeaderByIndex(index) as HTMLElement).style.color = 'green';
   }
-
 }

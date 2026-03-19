@@ -1,15 +1,12 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService, FilterSettingsModel, GridComponent} from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { FilterService, FilterSettingsModel, GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [GridModule, ButtonModule],
-
-providers: [FilterService, PageService, ],
-standalone: true,
+  imports: [GridModule, ButtonModule],
+  providers: [FilterService, PageService, ],
+  standalone: true,
   selector: 'app-root',
   template: `
   <div>
@@ -45,5 +42,4 @@ export class AppComponent implements OnInit {
       (this.grid as GridComponent).clearFiltering()
     }
   }
-
 }

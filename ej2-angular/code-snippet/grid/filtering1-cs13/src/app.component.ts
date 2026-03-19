@@ -1,14 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { Data } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { CheckBoxSelectionService, DropDownListAllModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Data, FilterService, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 const old = Data.prototype.generateQuery;
 Data.prototype.generateQuery = function() {
@@ -18,16 +12,14 @@ Data.prototype.generateQuery = function() {
 };
 
 @Component({
-imports: [
-        
+    imports: [
         GridModule,
         MultiSelectModule,
         DropDownListAllModule,
         CheckBoxModule
-    ],
-
-providers: [FilterService, PageService,CheckBoxSelectionService],
-standalone: true,
+        ],
+    providers: [FilterService, PageService,CheckBoxSelectionService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [pageSettings]='initialPage'
      [allowGrouping]="true" [groupSettings]="groupOptions" [allowPaging]='true'>
@@ -53,6 +45,3 @@ export class AppComponent implements OnInit {
         this.initialPage = { pageSize: 5 };
     }
 }
-
-
-

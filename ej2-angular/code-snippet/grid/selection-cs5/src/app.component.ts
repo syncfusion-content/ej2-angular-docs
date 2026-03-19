@@ -1,22 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { data, Order } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data ,Order} from './datasource';
-import { GridComponent, SelectionSettingsModel, FilterSettingsModel, PageSettingsModel, ToolbarItems, EditSettingsModel, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
+import { EditService, EditSettingsModel, FilterService, FilterSettingsModel, GridComponent, GridModule, PageService, PageSettingsModel, RowDataBoundEventArgs, SelectionSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [EditService, ToolbarService, PageService, FilterService],
-standalone: true,
+    imports: [GridModule ],
+    providers: [EditService, ToolbarService, PageService, FilterService],
+    standalone: true,
     selector: 'app-root',
     template:`<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [allowFiltering]='true' 
              [allowSelection]='true' [selectionSettings]='selectionOptions' 
@@ -64,6 +53,3 @@ export class AppComponent implements OnInit {
         args.isSelectable = (args.data as Order).List % 5 === 0;
     }
 }
-
-
-

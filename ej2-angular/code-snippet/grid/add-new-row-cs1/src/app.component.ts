@@ -1,29 +1,14 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService} from '@syncfusion/ej2-angular-grids'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
+import { data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { EditSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
-import {data} from './datasource';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { EditService, EditSettingsModel, GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        GridModule,
-        FormsModule,
-        TimePickerModule,
-        FormsModule,
-        TextBoxModule,
-        ButtonModule 
-        
-    ],
-
-providers: [EditService],
-standalone: true,
+    imports: [ GridModule, FormsModule, TimePickerModule, FormsModule, TextBoxModule, ButtonModule ],
+    providers: [EditService],
+    standalone: true,
     selector: 'app-root',
     template: `<div style="padding:0px 0px 20px 0px">
                     <button ejs-button id='add' (click)='addRow()'>Add New Row</button>

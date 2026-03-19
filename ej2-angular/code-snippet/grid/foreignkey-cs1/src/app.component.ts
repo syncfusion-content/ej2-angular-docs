@@ -1,17 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
-import { createElement } from '@syncfusion/ej2-base';
-import { ForeignKeyService, EditService, IEditCell, EditSettingsModel, ToolbarService, Column } from '@syncfusion/ej2-angular-grids';
-import { DataManager, Query } from '@syncfusion/ej2-data';
-import { AutoComplete } from '@syncfusion/ej2-angular-dropdowns';
 import { data, employeeData } from './datasource';
-
+import { Component, OnInit } from '@angular/core';
+import { AutoComplete } from '@syncfusion/ej2-angular-dropdowns';
+import { Column, EditService, EditSettingsModel, ForeignKeyService, GridModule, IEditCell, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { createElement } from '@syncfusion/ej2-base';
+import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [GridModule ],
-standalone: true,
+    imports: [GridModule ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='270' [editSettings]='editoption' [toolbar]='toolbar'>
                     <e-columns>

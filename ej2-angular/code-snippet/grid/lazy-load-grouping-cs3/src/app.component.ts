@@ -1,15 +1,11 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-import {  LazyLoadGroupService, GroupService, VirtualScrollService  } from '@syncfusion/ej2-angular-grids';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, GroupService, GroupSettingsModel, LazyLoadGroupService, VirtualScrollService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [GridModule],
-providers: [LazyLoadGroupService, GroupService, VirtualScrollService ],
-standalone: true,
+    imports: [GridModule],
+    providers: [LazyLoadGroupService, GroupService, VirtualScrollService ],
+    standalone: true,
     selector: 'app-root',
     template: ` 
     <ejs-grid [dataSource]='data' [enableVirtualization]='true' [allowGrouping]='true' [groupSettings]='groupSettings' height='290px'>
@@ -31,5 +27,3 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 }
-
-

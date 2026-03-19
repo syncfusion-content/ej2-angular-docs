@@ -53,7 +53,7 @@ Use the following code to create a Grid component. For setup instructions, refer
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
-// import your datasource file here
+// import datasource file here
 import { stringData } from './datasource'; 
 
 @Component({
@@ -114,15 +114,15 @@ describe('AppComponent', () => {
 Access the GridComponent instance using `@ViewChild('Grid')`. In `beforeEach`, create the AppComponent instance:
 
 ```typescript
-    // The component variable stores an instance of AppComponent
-    let component: AppComponent;
-    // The fixture variable manages the testing environment
-    let fixture: ComponentFixture<AppComponent>;
+// The component variable stores an instance of AppComponent
+let component: AppComponent;
+// The fixture variable manages the testing environment
+let fixture: ComponentFixture<AppComponent>;
 
-    beforeEach(() => {
-        fixture = TestBed.createComponent(AppComponent);
-        component = fixture.componentInstance;
-    });
+beforeEach(() => {
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+});
 ```
 
 **IV. Write the test case in an `it` block:**
@@ -156,8 +156,8 @@ The following example demonstrates creating the grid sample and writing a Jasmin
 
 The test command is defined in the `scripts` section of `package.json` as `test`. Run the tests with:
 
-```
+```bash
 ng test
 ```
 
->A sample of Unit Jasmine testing in DataGrid can be found [here](https://github.com/SyncfusionExamples/DataGrid-unit-testing-angular).
+> A sample of Unit Jasmine testing in DataGrid can be found [here](https://github.com/SyncfusionExamples/DataGrid-unit-testing-angular).

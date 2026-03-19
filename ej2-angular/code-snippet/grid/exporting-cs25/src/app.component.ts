@@ -1,20 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService,AggregateService } from '@syncfusion/ej2-angular-grids'
-
+import { Cell, data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data, Cell } from './datasource';
-import { GridComponent, ToolbarItems, PdfHeaderQueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
+import { AggregateService, GridComponent, GridModule, PdfExportService, PdfHeaderQueryCellInfoEventArgs, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PdfExportService, ToolbarService,AggregateService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PdfExportService, ToolbarService,AggregateService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)' (pdfHeaderQueryCellInfo)="pdfHeaderQueryCellInfo($event)">
                     <e-columns>
@@ -51,6 +43,3 @@ export class AppComponent implements OnInit {
 
     }
 }
-
-
-

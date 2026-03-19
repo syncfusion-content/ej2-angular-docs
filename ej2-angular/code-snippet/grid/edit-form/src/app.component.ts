@@ -1,12 +1,9 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule, NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
 import { Component, ViewChild } from '@angular/core';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { GridComponent, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
+import { FormsModule } from '@angular/forms';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, GridComponent, GridModule, PageService, RowSelectEventArgs, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { NumericTextBoxAllModule, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import{ data } from "./datasource"
 
 @Component({
@@ -105,4 +102,3 @@ export class Order {
   Freight?: number;
   ShipCountry?: string;
 }
-

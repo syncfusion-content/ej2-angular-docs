@@ -1,11 +1,8 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ColumnChooserService, GridComponent } from '@syncfusion/ej2-angular-grids'
-import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems } from '@syncfusion/ej2-angular-grids';
-import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, NgModule, OnInit, ViewChild } from '@angular/core';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { ColumnChooserService, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
     imports: [ GridModule,SwitchModule],

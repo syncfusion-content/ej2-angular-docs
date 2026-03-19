@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService,ColumnModel } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit } from '@angular/core';
 import { orderDetails } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ColumnModel, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   imports: [ GridModule,DropDownListAllModule],
@@ -11,7 +9,7 @@ import { orderDetails } from './datasource';
   standalone: true,
   selector: 'app-root',
   template: `<div>
-              <ejs-grid [dataSource]="data" allowPaging="true">
+              <ejs-grid [dataSource]="data" allowPaging="true" height='245px'>
                 <e-columns>
                   <e-column field="OrderID" width="120" textAlign="Center">
                     <ng-template #headerTemplate let-data>

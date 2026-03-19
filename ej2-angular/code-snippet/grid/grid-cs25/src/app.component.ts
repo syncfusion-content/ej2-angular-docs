@@ -1,22 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { RowDataBoundEventArgs, EditSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { MouseEventArgs } from '@syncfusion/ej2-base';
+import { Component, OnInit } from '@angular/core';
+import { EditSettingsModel, GridModule, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-standalone: true,
-
+    imports: [ GridModule],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid id="grid" [dataSource]='data' (rowDataBound)='rowDataBound($event)' [editSettings]='editSettings'>
                 <e-columns>
@@ -44,6 +32,3 @@ export class AppComponent implements OnInit {
     })
     }
 }
-
-
-

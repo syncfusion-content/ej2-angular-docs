@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, GridModule, ToolbarService, ColumnChooserService } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ColumnChooserService, GridComponent, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',

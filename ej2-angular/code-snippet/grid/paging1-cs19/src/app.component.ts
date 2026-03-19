@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,GridComponent, PageService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { PageEventArgs } from '@syncfusion/ej2-grids';
 import { orderDetails } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
+import { PageEventArgs } from '@syncfusion/ej2-grids';
 
 @Component({
     imports: [ GridModule],

@@ -1,22 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems,SearchEventArgs, KeyboardEventArgs } from '@syncfusion/ej2-angular-grids';
-import { Query, Predicate } from '@syncfusion/ej2-data';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, KeyboardEventArgs, SearchEventArgs, SearchService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { Predicate, Query } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [SearchService, ToolbarService],
-standalone: true,
+    imports: [GridModule ],
+    providers: [SearchService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' height='272px' (actionBegin)="actionBegin($event)" (keyPressed)="keyPressed($event)">
                 <e-columns>
@@ -88,6 +78,3 @@ export class AppComponent implements OnInit {
         }
       }
 }
-
-
-

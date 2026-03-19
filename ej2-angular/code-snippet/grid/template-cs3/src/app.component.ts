@@ -1,28 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
-import { GridComponent, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
-import { DataManager, Query, DataResult } from '@syncfusion/ej2-data';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { FilterService, GridComponent, GridModule, GroupService, PageService, RowDataBoundEventArgs, SortService } from '@syncfusion/ej2-angular-grids';
+import { DataManager, DataResult, Query } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        
-        ButtonModule,
-        GridModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
-standalone: true,
+    imports: [ButtonModule, GridModule],
+    providers: [PageService,SortService, FilterService, GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #Grid [dataSource]='data' [childGrid]='childGrid' (rowDataBound)="rowDataBound($event)">
                     <e-columns>
@@ -73,6 +58,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

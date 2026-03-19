@@ -12,16 +12,16 @@ domainurl: ##DomainURL##
 
 The row template feature in Grid allows customization of the appearance and layout of rows. This feature displays custom content such as images, buttons, or other controls within the rows.
 
-**Key Capabilities:**
-- Custom HTML layouts for individual rows
-- Integration with Syncfusion controls and third-party components
-- Advanced formatting and data presentation options
-- Chart and visualization embedding within rows
-- Complete control over row styling and behavior
+**Key capabilities:**
+- Custom HTML layouts for individual rows.
+- Integration with Syncfusion controls and third-party components.
+- Advanced formatting and data presentation options.
+- Chart and visualization embedding within rows.
+- Complete control over row styling and behavior.
 
 Enable the row template feature by setting the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property of the Grid component. This property accepts an Angular template that defines the custom layout for each row, providing access to row data through template context.
 
-## Basic Row Template Implementation
+## Basic row template implementation
 
 The following example presents employee information with the employee "Photo" in the first column and other details such as "Name", "Address", etc. in the second column of each row.
 
@@ -79,7 +79,7 @@ The following example presents employee information with the employee "Photo" in
   
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs9" %}
 
-## Row Template with formatting
+## Row template with formatting
 
 By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property to format the values displayed in each column. When the [rowtemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#rowtemplate) feature is used, customized formatting can be applied directly within the template.
 
@@ -90,9 +90,7 @@ The following example demonstrates defining a global formatting function for a d
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,DetailRowService } from '@syncfusion/ej2-angular-grids'
+import { GridModule,DetailRowService } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
 import { Internationalization } from '@syncfusion/ej2-base';
@@ -183,7 +181,7 @@ export interface DateFormat extends Window {
 > When using the `rowTemplate` feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, keep in mind that any formatting applied to columns using the `format` property will not work inside the template.
 
 
-## Render Syncfusion<sup style="font-size:70%">&reg;</sup> Controls in Row Template
+## Render Syncfusion<sup style="font-size:70%">&reg;</sup> controls in row template
 
 Row templates support embedding interactive Syncfusion controls, transforming static grid content into dynamic, interactive interfaces. This capability enables creation of inline editors, dashboard-like interfaces, and complex data input scenarios within grid rows.
 
@@ -194,27 +192,23 @@ The following example demonstrates various Syncfusion controls integrated within
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons';
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
 import { Component } from '@angular/core';
 import { orderDatas } from './datasource';
 
 @Component({
-imports: [
-        GridModule,
-        ChipListModule,
-        DatePickerAllModule,
-        DropDownListAllModule,
-        NumericTextBoxAllModule
-    ],
-
-
-standalone: true,
+  imports: [
+      GridModule,
+      ChipListModule,
+      DatePickerAllModule,
+      DropDownListAllModule,
+      NumericTextBoxAllModule
+      ],
+  standalone: true,
     selector: 'app-root',
     template: `<div>
                 <ejs-grid #grid [dataSource]="data">
@@ -286,8 +280,6 @@ The following example demonstrates performance charts embedded within employee d
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { ChartModule, ChartAllModule, CategoryService, ColumnSeriesService, LineSeriesService, ChartAnnotationService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component } from '@angular/core';

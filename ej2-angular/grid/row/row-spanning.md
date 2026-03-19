@@ -83,7 +83,7 @@ This example demonstrates the `enableRowSpan` property for merging cells vertica
 
 > Row spanning can also be controlled at the column level. Set `enableRowSpan` to `false` in a column definition to disable merging for that column.
 
-### Limitation
+## Limitation
 
 * Virtualization
 * Infinite Scrolling

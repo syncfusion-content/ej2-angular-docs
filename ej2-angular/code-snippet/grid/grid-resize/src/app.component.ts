@@ -1,24 +1,17 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ResizeService } from '@syncfusion/ej2-angular-grids'
-import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { TextBoxComponent, NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, ResizeService } from '@syncfusion/ej2-angular-grids';
+import { NumericTextBoxComponent, NumericTextBoxModule, TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        GridModule,
-        NumericTextBoxModule,
-        ButtonModule
-    ],
-
-providers: [ResizeService],
-standalone: true,
+  imports: [
+      GridModule,
+      NumericTextBoxModule,
+      ButtonModule
+      ],
+  providers: [ResizeService],
+  standalone: true,
   selector: 'app-root',
   template: `
   <div style="display: flex">
@@ -71,6 +64,3 @@ export class AppComponent implements OnInit {
     (parentDiv as HTMLElement).style.height = (this.heightTextBox as NumericTextBoxComponent).element.value + 'px';
   }
 }
-
-
-

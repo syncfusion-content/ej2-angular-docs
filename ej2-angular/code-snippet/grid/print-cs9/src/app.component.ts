@@ -1,28 +1,30 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-import { LineSeriesService, DateTimeService, DataLabelService,StackingColumnSeriesService,CategoryService,
-       StepAreaSeriesService,SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-       SelectionService,ScatterSeriesService
-    } from '@syncfusion/ej2-angular-charts'
-
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { ChartComponent } from '@syncfusion/ej2-angular-charts';
-import { GridComponent,PageService, ActionEventArgs, PrintEventArgs } from '@syncfusion/ej2-angular-grids';
-import { Query, DataManager } from '@syncfusion/ej2-data';
 import { orderData } from './datasource';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { AccumulationChartModule, AccumulationDataLabelService, AccumulationTooltipService, ChartComponent, ChartModule, PieSeriesService, StepAreaSeriesService,SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService, SelectionService,ScatterSeriesService } from '@syncfusion/ej2-angular-charts';
+import { ActionEventArgs, GridComponent, GridModule, PageService, PrintEventArgs } from '@syncfusion/ej2-angular-grids';
+import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({
     imports: [ ChartModule, AccumulationChartModule, GridModule,ButtonModule],
-
-    providers: [ LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService,CategoryService,
-                StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-                PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService, SelectionService,ScatterSeriesService
-                ,PageService],
+    providers: [ 
+        LineSeriesService, 
+        DateTimeService, 
+        DataLabelService, 
+        StackingColumnSeriesService,
+        CategoryService,
+        StepAreaSeriesService, 
+        SplineSeriesService, 
+        ChartAnnotationService, 
+        LegendService, 
+        TooltipService, 
+        StripLineService,
+        PieSeriesService, 
+        AccumulationTooltipService, 
+        AccumulationDataLabelService, 
+        SelectionService,
+        ScatterSeriesService,
+        PageService],
     standalone: true,
     selector: 'app-root',
     template: `

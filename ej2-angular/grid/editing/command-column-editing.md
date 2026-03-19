@@ -16,26 +16,32 @@ The command column editing feature enables the addition of CRUD (Create, Read, U
 
 Command column editing is activated through the [commands](https://ej2.syncfusion.com/angular/documentation/api/grid/column#commands) property. This property specifies which command buttons display in the command column, such as `Edit`, `Delete`, `Save`, and `Cancel`.
 
-For full CRUD functionality, inject the `CommandColumnService` module into the `@NgModule.providers` section. This service supports the required logic for handling command column actions.
+To enable command column functionality, include the `CommandColumnService` module into the component's providers array. This service supports the required logic for handling command column actions.
 
 ```ts
-import { GridComponent, ColumnsDirective, ColumnDirective, Inject } from '@syncfusion/ej2-angular-grids';
-import { CommandColumn } from '@syncfusion/ej2-angular-grids';
+import { Component } from '@angular/core';
+import { GridComponent, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids';
 
-<GridComponent>
-  <Inject services={[CommandColumn]} />
-  {/* Grid configuration */}
-</GridComponent>
+@Component({
+  selector: 'app-root',
+  template: `<ejs-grid [dataSource]='data'>
+    <!-- Grid configuration -->
+  </ejs-grid>`,
+  providers: [EditService, CommandColumnService]
+})
+export class AppComponent {
+  public data: any[] = [...];
+}
 ```
 
 The following built-in command buttons are available:
 
 | Command Button | Actions |
 |----------------|---------|
-| `Edit` | Enables inline editing for the current row |
-| `Delete` | Removes the current row from the grid |
-| `Save` | Updates changes made to the edited row |
-| `Cancel` | Discards changes and exits edit mode |
+| `Edit` | Enables inline editing for the current row. |
+| `Delete` | Removes the current row from the grid. |
+| `Save` | Updates changes made to the edited row. |
+| `Cancel` | Discards changes and exits edit mode.|
 
 The example below illustrates to display CRUD action buttons in a column using the `command` column property:
 
@@ -62,20 +68,18 @@ The following example demonstrates to display custom command buttons using the `
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { GridModule, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { CommandModel, CommandClickEventArgs, GridComponent, Column, IRow, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [GridModule, DialogModule],
-providers: [EditService, CommandColumnService],
-standalone: true,
-  selector: 'app-root',
-  template: `
+    imports: [GridModule, DialogModule],
+    providers: [EditService, CommandColumnService],
+    standalone: true,
+    selector: 'app-root',
+    template: `
         <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" (commandClick)="commandClick($event)" height="310px">
         <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="100"></e-column>

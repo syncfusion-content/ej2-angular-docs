@@ -40,11 +40,11 @@ The following example demonstrates basic filter menu usage in the Syncfusion Ang
 The filter menu provides enhanced customization capabilities by allowing replacement of default filter components with custom ones. This enables creation of more intuitive filtering experiences tailored to specific data and user requirements.
 
 By default, the filter menu provides:
-- **AutoComplete** component for string type columns
-- **NumericTextBox** for number type columns  
-- **DropDownList** component for boolean type columns
-- **DatePicker** for date type columns
-- **DateTimePicker** for datetime type columns
+- **`AutoComplete`** component for string type columns.
+- **`NumericTextBox`** for number type columns.
+- **`DropDownList`** component for boolean type columns.
+- **`DatePicker`** for date type columns.
+- **`DateTimePicker`** for datetime type columns.
 
 To implement custom filter components, use the [column.filter.ui](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filter) property and define the following functions:
 
@@ -73,11 +73,11 @@ The following example demonstrates rendering a DropDownList component for the "C
 
 ## Show 24 hours time format in filter dialog
 
-The Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog.
+The Grid provides a feature to display time in a "24-hour" format in date or datetime column filter dialogs.
 
-By default, the filter dialog displays time in 12-hour format (AM/PM) for date or datetime columns. To customize this, set the column type as `datetime` and format as "M/d/y HH:mm". Then, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype) as `filterafteropen` and set the `timeFormat` of the `DateTimepicker` to "HH:mm".
+By default, filter dialogs display time in "12-hour" format (AM/PM) for date or datetime columns. To customize this behavior, set the column type as `datetime` and format as "M/d/y HH:mm". The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype) as `filterafteropen` can be used to set the `timeFormat` of the `DateTimepicker` to "HH:mm".
 
-Here is an example that demonstrates the 24-hour time format in the filter dialog:
+Here is an example that demonstrates the "24-hour" time format in the filter dialog:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -159,7 +159,7 @@ Each column type uses a default component in the filter menu, which can be custo
 
 > Refer to the Getting Started documentation and API Reference for complete feature details
 
-In the example provided below, the "Order ID" and "Freight" columns are numeric columns. When the filter dialog opens for these columns, a `NumericTextBox` with a spin button displays by default. However, using the `params` property, the spin button is hidden specifically for the "Order ID" column.
+In the following example, the "Order ID" and "Freight" columns are numeric columns. When the filter dialog opens for these columns, a `NumericTextBox` with a spin button displays by default. The `params` property can be used to hide the spin button specifically for the "Order ID" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -231,29 +231,23 @@ The following example demonstrates filter menu event handling in the Syncfusion 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-import { MessageModule } from '@syncfusion/ej2-angular-notifications'
-
+import { GridModule, FilterService, PageService,FilterSettingsModel} from '@syncfusion/ej2-angular-grids'
+import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { MessageModule } from '@syncfusion/ej2-angular-notifications';
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { data } from './datasource';;
 
 @Component({
-imports: [
-        
-        GridModule,
-        MultiSelectModule,
-        DropDownListAllModule,
-        CheckBoxModule,
-        MessageModule
-    ],
-
-providers: [FilterService, PageService,CheckBoxSelectionService],
-standalone: true,
+  imports: [    
+    GridModule,
+    MultiSelectModule,
+    DropDownListAllModule,
+    CheckBoxModule,
+    MessageModule
+  ],
+  providers: [FilterService, PageService,CheckBoxSelectionService],
+  standalone: true,
   selector: 'app-root',
   template: `<div class='message'>{{actionBeginMessage}}</div><div class='message'>{{actionCompleteMessage}}</div>
     <ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px' (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)">
@@ -319,7 +313,7 @@ export class AppComponent implements OnInit {
 
 When using the filter menu, the UI displays operators for all columns based on the data type of the first data it encounters. If the first data is empty or null, the operators may not display correctly. To resolve this issue:
 
-**Explicitly Define Data Type:** When defining columns in your Angular Grid component, explicitly specify the data type for each column using the `type` property within the columns configuration:
+**Explicitly Define Data Type:** When defining columns in an Angular Grid component, explicitly specify the data type for each column using the `type` property within the columns configuration:
 
 ```ts
 <ejs-grid [dataSource]='data'>
@@ -331,11 +325,11 @@ When using the filter menu, the UI displays operators for all columns based on t
 </ejs-grid>
 ```
 
-**Handle Null or Empty Data:** If your data source contains null or empty values, ensure these values are appropriately handled within your data source or by preprocessing your data to maintain consistency.
+**Handle Null or Empty Data:** If the data source contains null or empty values, these values should be appropriately handled within the data source or by preprocessing the data to maintain consistency.
 
-**Check Data Types in Data Source:** Verify that the data types specified in the column definitions match the actual data types in your data source. Mismatched data types can lead to unexpected behavior.
+**Check Data Types in Data Source:** The data types specified in the column definitions must match the actual data types in the data source. Mismatched data types can lead to unexpected behavior.
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
-* [How to change loading indicator in Angular Grid](../data-binding/data-binding#loading-animation)
+* [Filter using Wildcard and LIKE operator](./filtering#wildcard-and-like-operator-filter)
+* [Change loading indicator in Angular Grid](../data-binding/data-binding#loading-animation)

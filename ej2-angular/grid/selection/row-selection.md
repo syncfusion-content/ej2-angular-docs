@@ -80,7 +80,7 @@ To achieve this, utilize the [selectRow](https://ej2.syncfusion.com/angular/docu
 
 Additionally, by handling the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid, maintain the selection of the desired row after completing the paging action.
 
-The following example demonstrates selecting rows on any page based on their index value using the actionComplete and change events:
+The following example demonstrates selecting rows on any page based on their index value using the `actionComplete` and change events:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -203,14 +203,10 @@ The following example demonstrates getting selected row indexes using the `getSe
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { GridComponent, SelectionSettingsModel,GridModule, PageService, EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -230,14 +226,10 @@ standalone: true,
         <ejs-grid #grid [dataSource]="data" height="300px" 
         [selectionSettings]="selectionOptions">
           <e-columns>
-            <e-column field="OrderID" headerText="Order ID" textAlign="Right" 
-            width="120"></e-column>
-            <e-column field="CustomerID" headerText="Customer ID" width="150">
-            </e-column>
-            <e-column field="ShipCity" headerText="Ship City" width="150">
-            </e-column>
-            <e-column field="ShipName" headerText="Ship Name" width="150">
-            </e-column>
+            <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-column>
+            <e-column field="CustomerID" headerText="Customer ID" width="150"></e-column>
+            <e-column field="ShipCity" headerText="Ship City" width="150"></e-column>
+            <e-column field="ShipName" headerText="Ship Name" width="150"></e-column>
           </e-columns>
         </ejs-grid>`
 })
@@ -283,14 +275,11 @@ The following example demonstrates retrieving selected records from various page
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import {GridModule, PageService, EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel, PageSettingsModel,GridModule, PageService, EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -386,14 +375,10 @@ The following example displays the selected row count using the `getSelectedReco
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { GridModule, PageService,EditService, ToolbarService, FilterService,GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids;
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -484,17 +469,14 @@ The Grid provides several events related to row selection that allow responding 
 
 [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselected): This event is triggered when a particular selected row is deselected. Use this event to perform actions or validations when a row is no longer selected.
 
-In the following example, row selection is canceled when the value of "Customer ID" is equal to "VINET" within the `rowSelecting` event. The background color changes to green when the value of "Freight" is greater than 10 and less than or equal to 140, triggering the `rowDeselected` event. The background color changes to red when the value of "Freight" is less than or equal to 10 during the `rowDeselected` event. Furthermore, the background color changes to yellow when the value of "Freight" is greater than 140 during the `rowDeselected` event. A notification message is displayed to indicate which event was triggered whenever a row is selected.
+In the following example, row selection is canceled when the value of "Customer ID" is equal to "VINET" within the `rowSelecting` event. The background color changes to green when the value of "Freight" is greater than "10" and less than or equal to "140", triggering the `rowDeselected` event. The background color changes to red when the value of "Freight" is less than or equal to "10" during the `rowDeselected` event. Furthermore, the background color changes to yellow when the value of "Freight" is greater than "140" during the `rowDeselected` event. A notification message is displayed to indicate which event was triggered whenever a row is selected.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule} from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data ,Order} from './datasource';
-import { GridModule,GridComponent, SelectionSettingsModel,PageSettingsModel,RowSelectingEventArgs, RowSelectEventArgs, RowDeselectEventArgs, RowDeselectingEventArgs} from '@syncfusion/ej2-angular-grids';
+import { GridModule, GridModule,GridComponent, SelectionSettingsModel,PageSettingsModel,RowSelectingEventArgs, RowSelectEventArgs, RowDeselectEventArgs, RowDeselectingEventArgs} from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
@@ -637,7 +619,7 @@ export class AppComponent {
 
 ```
 
-**Step 4:** On the server side, create a controller named "GridController.cs" under the "Controllers" folder to handle incoming requests and process selected records. Add the following code:
+**Step 4:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
 
 ```cs
 
@@ -723,7 +705,7 @@ namespace SelectedReacord.Server.Controllers
 
 ```
 
-**Step 5:** Create a model class named "OrdersDetails.cs" under the "Models" folder in the server-side project to represent the order data. Add the following code:
+**Step 5:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 namespace SelectedReacord.Server.Models
@@ -787,7 +769,7 @@ namespace SelectedReacord.Server.Models
 
 ```
 
-**Step 7:** In the "Program.cs" file, add the following code:
+**Step 7:** In the **Program.cs** file, add the following code:
 
 ```cs
 
@@ -823,7 +805,7 @@ app.Run();
 
 The following screenshot shows passing of selected records to the server:
 
-![Pass selected records to server using ajax](../grid/images/row-selected-record.png)
+![Pass selected records to server using ajax](../../grid/images/row-selected-record.png)
 
 ## Pass selected records to server using FETCH
 
@@ -889,7 +871,7 @@ export class AppComponent {
 
 ```
 
-**Step 4:** On the server side, create a controller named "GridController.cs" under the "Controllers" folder to handle incoming requests and process selected records. Add the following code:
+**Step 4:** On the server side, create a controller named **GridController.cs** under the "Controllers" folder to handle incoming requests and process selected records. Add the following code:
 
 ```cs
 
@@ -975,7 +957,7 @@ namespace SelectedReacord.Server.Controllers
 
 ```
 
-**Step 5:** Create a model class named "OrdersDetails.cs" under the "Models" folder in the server-side project to represent the order data. Add the following code:
+**Step 5:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 namespace SelectedReacord.Server.Models
@@ -1075,4 +1057,4 @@ app.Run();
 
 The following screenshot shows passing selected records to the server:
 
-![Pass selected records to server using fetch](../grid/images/row-selected-record.png)
+![Pass selected records to server using fetch](../../grid/images/row-selected-record.png)

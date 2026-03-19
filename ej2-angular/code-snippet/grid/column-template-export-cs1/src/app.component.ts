@@ -1,14 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ToolbarService, PdfExportService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
-import { Column, GridComponent, Hyperlink, Image, PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { Column, GridComponent, GridModule, GroupService, PdfExportService, PdfQueryCellInfoEventArgs, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 interface PdfGridImage {
@@ -23,16 +16,9 @@ interface ColumnDataType {
 }
 
 @Component({
-imports: [
-        
-        ButtonModule,
-        GridModule
-    ],
-
-providers: [ToolbarService,
-        PdfExportService,
-        GroupService,],
-standalone: true,
+    imports: [ ButtonModule, GridModule ],
+    providers: [ToolbarService, PdfExportService, GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id="ColumnTemplateGrid" [dataSource]="data" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"
                [allowPdfExport]="true" (pdfQueryCellInfo)="pdfQueryCellInfo($event)" height='273px'>

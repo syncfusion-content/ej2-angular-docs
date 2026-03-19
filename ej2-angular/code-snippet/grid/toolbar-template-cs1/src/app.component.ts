@@ -1,25 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, GroupService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ToolbarModule
-    ],
-
-providers: [ToolbarService, GroupService],
-standalone: true,
+    imports: [ GridModule, ToolbarModule ],
+    providers: [ToolbarService, GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px' [allowGrouping]='true' [groupSettings]='groupOptions'>
                     <ng-template #toolbarTemplate let-data>
@@ -63,6 +51,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

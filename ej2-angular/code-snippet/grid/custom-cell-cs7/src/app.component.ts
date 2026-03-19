@@ -1,20 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-@Component({
-imports: [
-        
-        GridModule        
-    ],
+import { Component, OnInit } from '@angular/core';
+import { DetailRowService, GridModule } from '@syncfusion/ej2-angular-grids';
 
-providers: [DetailRowService],
-standalone: true,
+@Component({
+    imports: [ GridModule],
+    providers: [DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [enableHover]='false' [allowSelection]='false' [height]='315' [rowHeight]='60'>
                     <e-columns>
@@ -31,5 +22,3 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 }
-
-

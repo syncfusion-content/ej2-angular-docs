@@ -1,12 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-
-
-
 import { Component, OnInit } from '@angular/core';
-import { VirtualScrollService } from '@syncfusion/ej2-angular-grids';
-import { PageSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { EditService, EditSettingsModel, GridModule, PageService, PageSettingsModel, ToolbarItems, ToolbarService, VirtualScrollService } from '@syncfusion/ej2-angular-grids';
 
 let virtualData: any = [];
 let names: string[] = ['hardire', 'abramjo01', 'aubucch01', 'Hook', 'Rumpelstiltskin', 'Belle', 'Emma', 'Regina', 'Aurora', 'Elsa', 'Anna',
@@ -40,13 +33,9 @@ function dataSource(): void {
 }
 dataSource();
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, ToolbarService, EditService, VirtualScrollService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PageService, ToolbarService, EditService, VirtualScrollService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height='290px' [enableColumnVirtualization]=true
                 [pageSettings]='options' [editSettings]='editSettings' [toolbar]='toolbar'>
@@ -99,6 +88,3 @@ export class AppComponent implements OnInit {
         this.options = { pageSize: 50 };
     }
 }
-
-
-

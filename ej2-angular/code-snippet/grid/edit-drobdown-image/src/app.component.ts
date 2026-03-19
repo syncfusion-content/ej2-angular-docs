@@ -1,20 +1,13 @@
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, SortService, PageService } from '@syncfusion/ej2-angular-grids';
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars';
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns';
-import { Component, ViewChild } from '@angular/core';
 import { columnDataType, data, employeeData } from './datasource';
-import { GridComponent, EditService, ToolbarService, ToolbarItems, EditSettingsModel, ForeignKeyService, SaveEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, DropDownListModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, EditSettingsModel, ForeignKeyService, GridComponent, GridModule, PageService, SaveEventArgs, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
+    imports: [
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -24,10 +17,9 @@ imports: [
         MultiSelectModule,
         AutoCompleteModule,
         DropDownListModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService, ForeignKeyService],
-standalone: true,
+        ],
+    providers: [EditService, ToolbarService, SortService, PageService, ForeignKeyService],
+    standalone: true,
     selector: 'app-root',
     template: `
             <ejs-grid #grid [dataSource]="data" [allowPaging]="true" [pageSettings]="pageSettings" (actionBegin)="actionBegin($event)" [editSettings]="editOptions" [toolbar]="toolbarItems" height="250px"> >

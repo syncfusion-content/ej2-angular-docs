@@ -1,26 +1,17 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { CommonModule } from '@angular/common'; 
-import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { ReactiveFormsModule, FormsModule } from '@angular/forms'
-import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { DialogEditEventArgs, SaveEventArgs} from '@syncfusion/ej2-angular-grids';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { DialogEditEventArgs, EditService, GridModule, SaveEventArgs, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
 import { DataUtil } from '@syncfusion/ej2-data';
-import { FormGroup } from '@angular/forms';
 
 @Component({
-imports: [
-        
-        GridModule,
-        NumericTextBoxAllModule, DatePickerAllModule, DropDownListAllModule,ReactiveFormsModule, FormsModule,CommonModule
-    ],
-
-providers: [EditService, ToolbarService],
-standalone: true,
+    imports: [GridModule,NumericTextBoxAllModule, DatePickerAllModule, DropDownListAllModule,ReactiveFormsModule, FormsModule,CommonModule],
+    providers: [EditService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     templateUrl: `template-driven.html`
 })

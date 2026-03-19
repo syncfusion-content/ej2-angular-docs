@@ -268,7 +268,7 @@ The following example demonstrates loading a translation object for "German (de)
 
 Translation loading enables specifying translation objects for different cultures such as "German", "Arabic", and "French" so the grid displays content in the chosen language.
 
-Please verify that JSON module support is enabled in **tsconfig.json** as mentioned earlier in this guide.
+Please verify that JSON module support is enabled in **tsconfig.json** as mentioned earlier in this [guide](#loading-translations-for-de-culture).
 
 The following example demonstrates loading a translation object for "French (fr)" by setting the `locale` to "fr-FR" and using `L10n.load` from the `ej2-base` module.
 
@@ -304,16 +304,7 @@ loadCldr(
   numberingSystems
 );
 ```
-**Step 2:** To import JSON files, enable JSON module resolution in TypeScript by setting `resolveJsonModule` to `true` in `tsconfig.json`. Also set `esModuleInterop` to `true` to improve module interoperability, as shown below:
-
-```ts
-{
-  compilerOptions: {
-    resolveJsonModule: true,
-    esModuleInterop: true,
-  }
-}
-```
+**Step 2:** Please verify that JSON module support is enabled in **tsconfig.json** as mentioned earlier in this [guide](#loading-translations-for-de-culture).
 
 **Step 3:** Change the default culture and currency code using the `setCulture` and `setCurrencyCode` methods.
 
@@ -372,16 +363,7 @@ The Right-to-Left (RTL) feature switches text direction and layout from left-to-
 
 Enable RTL by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/grid#enablertl) property to `true`. This adjusts the Grid's text direction and layout for right-to-left languages.
 
-To work with JSON files, enable JSON module resolution in TypeScript by setting `resolveJsonModule` to `true` in `tsconfig.json`. Also set `esModuleInterop` to `true` to improve module interoperability, as shown below:
-
-```ts
-{
-  compilerOptions: {
-    resolveJsonModule: true,
-    esModuleInterop: true,
-  }
-}
-```
+Please verify that JSON module support is enabled in **tsconfig.json** as mentioned earlier in this [guide](#loading-translations-for-de-culture).
 
 The example below adds an [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) to enable or disable RTL for the "Arabic (ar-AE)" locale. When toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/index-default#change) event updates the grid's `enableRtl` property.
 

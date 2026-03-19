@@ -1,27 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService,DetailRowService } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { childColumnDataType, childData, employeeData } from './datasource';
 import { Component, OnInit } from '@angular/core';
-import { childData, employeeData, childColumnDataType } from './datasource';
+import { DetailDataBoundEventArgs, DetailRowService, FilterService, GridModel, GridModule, GroupService, IGrid, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 import { DataManager, Query } from '@syncfusion/ej2-data';
-import { GridModel, DetailDataBoundEventArgs, IGrid } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-        SortService,
-        FilterService,
-        GroupService,
-        DetailRowService],
-standalone: true,
+    imports: [GridModule ],
+    providers: [PageService, SortService, FilterService,GroupService, DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='parentData' height='265px' [childGrid]='childGrid' (detailDataBound)='detailDataBound($event)'>
                     <e-columns>
@@ -56,6 +41,4 @@ export class AppComponent implements OnInit {
         (childGrid as IGrid).query = new Query();
         (childGrid as IGrid).dataSource = childGridData;
     }
-
-
 }

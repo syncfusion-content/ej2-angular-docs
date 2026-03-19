@@ -1,14 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { addImage, data } from './datasource';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { EditService, GridModule, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { DataManager } from '@syncfusion/ej2-data';
-import { data, addImage } from './datasource';
 
 @Component({
-imports: [ GridModule],
-providers: [PageService, EditService, ToolbarService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [PageService, EditService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `
         <div class="control-section">

@@ -1,23 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { EditService, FilterService, GridComponent, GridModule, PageService, SelectionSettingsModel, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
-imports: [
-        
-        GridModule,
-        SwitchModule
-    ],
-
-providers: [EditService, ToolbarService, PageService, FilterService],
-standalone: true,
+  imports: [GridModule, SwitchModule ],
+  providers: [EditService, ToolbarService, PageService, FilterService],
+  standalone: true,
   selector: 'app-root',
   template: `
         <div style="padding: 0px 0px 20px 0px">
@@ -54,9 +44,3 @@ export class AppComponent implements OnInit {
     (this.grid as GridComponent).selectionSettings.enableToggle = !(args.checked as boolean);
   }
 }
-
-
-
-
-
-

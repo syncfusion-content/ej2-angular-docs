@@ -1,28 +1,18 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { FormsModule } from '@angular/forms'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { FilterService, GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 import { DataUtil } from '@syncfusion/ej2-data';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
+    imports: [
         GridModule,
         DropDownListAllModule,
         FormsModule
-    ],
-
-providers: [PageService,
-                FilterService],
-standalone: true,
+        ],
+    providers: [PageService, FilterService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' >
                 <e-columns>
@@ -53,6 +43,3 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 }
-
-
-

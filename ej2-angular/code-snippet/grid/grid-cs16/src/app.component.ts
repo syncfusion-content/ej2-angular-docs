@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-@Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
 
-standalone: true,
+@Component({
+    imports: [GridModule, ButtonModule],
+    standalone: true,
     selector: 'app-root',
     template: ` <button id='show' ejs-button cssClass="e-info" (click)='show()'> Show </button>
                 <button id='hide' ejs-button cssClass="e-info" (click)='hide()'> Hide </button>
@@ -41,5 +31,3 @@ export class AppComponent implements OnInit {
         (this.grid as any).hideColumns('Customer ID', 'headerText'); // hide by HeaderText
     }
 }
-
-

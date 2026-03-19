@@ -16,7 +16,7 @@ This structure enhances data readability and navigation, especially when working
 
 To enable the Hierarchy Grid feature:
 
-1. Inject the `DetailRowService` in the provider section of the **AppModule**. This service is essential for handling the hierarchy grid functionality.
+1. Inject the `DetailRowService` in the providers section. This service is essential for handling the hierarchy grid functionality.
 
 2. Define the [childGrid](https://ej2.syncfusion.com/angular/documentation/api/grid#childgrid) property in the grid configuration. This property contains the settings for the child grid, such as its columns and data source.
 
@@ -39,7 +39,7 @@ The following example demonstrates enabling the hierarchy feature in the grid, w
 > * The Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [DetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#detailtemplate) is enabled.
 
-## Mapping Parent-Child Grids with different field names
+## Mapping parent-child Grids with different field names
 
 By default, the Grid uses the same field name in both the parent and child grids to establish a hierarchical relationship through the [queryString](https://ej2.syncfusion.com/angular/documentation/api/grid#querystring) property. However, it also supports scenarios where the parent and child data sources use different key fields.
 
@@ -64,8 +64,6 @@ In the following example, the `load` event is used to customize the mapping valu
 ## Expand child grid initially
 
 Child rows in a hierarchical grid can be expanded automatically during the initial load by calling the [expand](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expand) method within the grid's [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event. This ensures that nested data becomes visible when the grid is rendered, without requiring manual interaction.
-
-In the following example, the third record is expanded on load by using the `expand` method inside the `dataBound` event. 
 
 In the provided example, the third record of the grid is expanded by utilizing the `expand` method within the `dataBound` event.
 
@@ -319,32 +317,32 @@ To hide the expand/collapse icon in parent row when no records in child grid, fo
 
 1. Create a CSS class with custom style: Define a CSS class to override the default appearance of the expand/collapse cell. This style is used to adjust the look of the parent row when selected or hovered.
 
-```css
-    .e-row[aria-selected="true"] .e-customizedexpandcell {
-        background-color: #e0e0e0;
-    }
+    ```css
+        .e-row[aria-selected="true"] .e-customizedexpandcell {
+            background-color: #e0e0e0;
+        }
 
-    .e-grid.e-gridhover tr[role='row']:hover {
-        background-color: #eee;
-    }
-```
+        .e-grid.e-gridhover tr[role='row']:hover {
+            background-color: #eee;
+        }
+    ```
 
 2. Implement the `rowDataBound` event handler: The `rowDataBound` event is triggered for each row as data is bound. In this event, verify whether the parent row has any corresponding child records. If no child records are found, clear the cell containing the expand/collapse icon and apply the custom CSS class.
 
-```typescript
-    public rowDataBound(args: RowDataBoundEventArgs) {
-        const parentData: number = (args.data as Employee)['EmployeeID'];
-        const childrecord: object[] = new DataManager(childData as JSON[]).
-            executeLocal(new Query().where('EmployeeID', 'equal', parentData, true));
-        if (childrecord.length === 0) {
-            // Here hide which parent row has no child records
-            const rowElement = args.row as HTMLTableRowElement;
-            const cellElement= rowElement.querySelector('td') as HTMLTableCellElement
-            cellElement.innerHTML = ' '; 
-            cellElement.className = 'e-customizedexpandcell';
+    ```typescript
+        public rowDataBound(args: RowDataBoundEventArgs) {
+            const parentData: number = (args.data as Employee)['EmployeeID'];
+            const childrecord: object[] = new DataManager(childData as JSON[]).
+                executeLocal(new Query().where('EmployeeID', 'equal', parentData, true));
+            if (childrecord.length === 0) {
+                // Here hide which parent row has no child records
+                const rowElement = args.row as HTMLTableRowElement;
+                const cellElement= rowElement.querySelector('td') as HTMLTableCellElement
+                cellElement.innerHTML = ' '; 
+                cellElement.className = 'e-customizedexpandcell';
+            }
         }
-    }
-```
+    ```
 
 The following example demonstrates hiding the expand/collapse icon for the row where the "Employee ID" is "1", since it has no corresponding child records.
 
@@ -456,7 +454,7 @@ To style the child grid's pager container, apply the following CSS. The `.e-page
 
 **Customizing the child grid pager navigation elements**
 
-To style the child grid's pager navigation buttons, apply the following CSS. These selectors target all navigation states, allowing customization of their `background color`.
+To style the child grid's pager navigation buttons, apply the following CSS. These selectors target all navigation states, allowing customization of their `background-color`.
 
 ```css
 .e-detailcell .e-grid .e-gridpager .e-prevpagedisabled,
@@ -675,7 +673,7 @@ The grouping-related elements in the child grid can be styled through CSS. This 
 
 **Customizing the child grid group header**
 
-To customize the appearance of the child grid's group header, target the `.e-groupdroparea` element and apply the desired background-color:
+To customize the appearance of the child grid's group header, target the `.e-groupdroparea` element and apply the desired `background-color`:
 
 ```css
 .e-detailcell .e-grid .e-groupdroparea {
