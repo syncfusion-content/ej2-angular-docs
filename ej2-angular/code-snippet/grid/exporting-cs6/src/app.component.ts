@@ -1,24 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
-
-
-
-
-
+import { purchaseData } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { purchaseData} from './datasource';
-import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, GridModule, PdfExportService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PdfExportService, ToolbarService],
-standalone: true,
+    imports: [GridModule ],
+    providers: [PdfExportService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px'
              [allowPdfExport]='true' (pdfHeaderQueryCellInfo)='pdfHeaderQueryCellInfo($event)' (toolbarClick)='toolbarClick($event)'>
@@ -65,7 +53,3 @@ interface PdfHeaderQueryCellInfoEventArgs {
         };
     };
 }
-
-
-
-

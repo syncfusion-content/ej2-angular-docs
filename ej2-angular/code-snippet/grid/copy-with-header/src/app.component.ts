@@ -1,16 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { SelectionSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule, ButtonModule ],
-
-standalone: true,
+    imports: [ GridModule, ButtonModule ],
+    standalone: true,
     selector: 'app-root',
     template: `
     <button ejs-button id='copy' cssClass="e-outline" (click)='copy()'>Copy</button>
@@ -43,6 +38,3 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).copy(true);
     }
 }
-
-
-

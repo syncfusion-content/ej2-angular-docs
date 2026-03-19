@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The scrolling feature in the Angular Grid component enables seamless navigation through content extending beyond the visible grid area. Scrollbars automatically appear when content exceeds the grid dimensions configured via the [height](https://ej2.syncfusion.com/angular/documentation/api/grid#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/grid#width) properties.
 
-Scrollbar behavior:
+**Scrollbar behavior:**
 
 * **Vertical scrollbar**: Appears when total row height exceeds the grid element height.
 * **Horizontal scrollbar**: Appears when total column width exceeds the grid element width.
@@ -114,7 +114,7 @@ The following example demonstrates the `hideScroll` method implementation with t
 
 Dual scrollbar rendering at top and bottom positions enhances horizontal navigation for large datasets. This configuration enables convenient scrolling from either position.
 
-Implementation steps:
+**Implementation steps:**
 
 | Step | Action | Details |
 |------|--------|---------|

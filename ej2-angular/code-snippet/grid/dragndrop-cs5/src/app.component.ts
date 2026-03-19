@@ -1,23 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
-import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid'
-
-import { Component, ViewChild,OnInit } from '@angular/core';
 import { sampleGridData } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, PageService, RowDDService, RowDragEventArgs, SelectionService } from '@syncfusion/ej2-angular-grids';
+import { TreeGridAllModule, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
-import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
-import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        TreeGridAllModule
-    ],
-
-providers: [PageService, SelectionService, RowDDService],
-standalone: true,
+  imports: [GridModule, TreeGridAllModule],
+  providers: [PageService, SelectionService, RowDDService],
+  standalone: true,
   selector: 'app-root',
   template: ` <ejs-grid #grid id='Grid' [dataSource]='sourceData' [allowPaging]="true"
               [pageSettings]="true" [allowSelection]="true" [allowRowDragAndDrop]="true" 

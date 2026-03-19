@@ -155,27 +155,22 @@ The following example demonstrates obtaining the selected row cell indexes using
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel, PageSettingsModel, ISelectedCell } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel, PageSettingsModel, ISelectedCell,GridModule, PageService,EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        CommonModule,
-        GridModule,
-        ButtonModule,
-        DialogModule 
-    ],
-
-providers: [EditService, ToolbarService, PageService, FilterService],
-standalone: true,
+  imports: [
+      CommonModule,
+      GridModule,
+      ButtonModule,
+      DialogModule 
+      ],
+  providers: [EditService, ToolbarService, PageService, FilterService],
+  standalone: true,
   selector: 'app-root',
   template: `
         <div style="padding: 20px 0px">
@@ -285,13 +280,9 @@ In the following example, cell selection is canceled when the value of "Ship Cou
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
 import { Order, data } from './datasource';
-import { GridComponent, SelectionSettingsModel,PageSettingsModel,CellSelectEventArgs,CellSelectingEventArgs,
-CellDeselectEventArgs} from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel,PageSettingsModel,CellSelectEventArgs,CellSelectingEventArgs,GridModule,CellDeselectEventArgs} from '@syncfusion/ej2-angular-grids';
 
 @Component({
   imports: [ GridModule],

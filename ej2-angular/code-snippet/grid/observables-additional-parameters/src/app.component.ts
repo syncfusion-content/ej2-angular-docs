@@ -1,32 +1,27 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { HttpClient, HttpClientModule } from '@angular/common/http'
-import { PageService, SortService, GroupService, PdfExportService, ExcelExportService, FilterService, EditService, ToolbarService, AggregateService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-grids';
-import { Query } from '@syncfusion/ej2-data';
 import { DataService } from './order.service';
+import { CommonModule } from '@angular/common';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AggregateService, DataStateChangeEventArgs, EditService, ExcelExportService, FilterService, GridComponent, GridModule, GroupService, PageService, PdfExportService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { Query } from '@syncfusion/ej2-data';
 import { Observable } from 'rxjs';
-import { CommonModule } from '@angular/common'
-@Component({
-imports: [
-      CommonModule,
-      GridModule,
-      HttpClientModule,
-    ],
 
-providers: [PageService,
-                SortService,
-                FilterService,
-                EditService,
-                ToolbarService,
-                GroupService,
-                PdfExportService, ExcelExportService,
-                AggregateService,HttpClient,DataService ],
-standalone: true,
+@Component({
+  imports: [CommonModule, GridModule, HttpClientModule,],
+  providers: [
+      PageService,
+      SortService,
+      FilterService,
+      EditService,
+      ToolbarService,
+      GroupService,
+      PdfExportService, 
+      ExcelExportService,
+      AggregateService,
+      HttpClient,
+      DataService
+   ],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data | async' [query]="query" allowPaging='true' [pageSettings]='pageOptions' 
               allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)'>

@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { GridModule, FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-grids';
-import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { FilterService, FilterSettingsModel, GridModule, PageService, SortService } from '@syncfusion/ej2-angular-grids';
+import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
   imports: [GridModule],

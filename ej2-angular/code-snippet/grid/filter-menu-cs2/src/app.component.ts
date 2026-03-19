@@ -1,16 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService,FilterSettingsModel, IFilter, IFilterCreate, IFilterWrite, IFilterRead } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule,DropDownList } from '@syncfusion/ej2-angular-dropdowns'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { DataManager } from '@syncfusion/ej2-data';
+import { Component, OnInit } from '@angular/core';
+import { DropDownList, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { FilterService, FilterSettingsModel, GridModule, IFilter, IFilterCreate, IFilterRead, IFilterWrite, PageService } from '@syncfusion/ej2-angular-grids';
 import { createElement } from '@syncfusion/ej2-base';
+import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [ GridModule,DropDownListAllModule],
-providers: [FilterService, PageService],
-standalone: true,
+  imports: [ GridModule,DropDownListAllModule],
+  providers: [FilterService, PageService],
+  standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px'>
                 <e-columns>

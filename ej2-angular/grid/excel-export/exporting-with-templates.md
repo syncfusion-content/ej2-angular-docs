@@ -55,22 +55,15 @@ In the following sample, the detail row content is formatted by specifying the [
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService, ExcelExportService, ToolbarService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
-import { GridComponent, ExportDetailTemplateEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ExportDetailTemplateEventArgs,GridModule, DetailRowService, ExcelExportService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-@Component({
-imports: [
-        
-        GridModule        
-    ],
 
-providers: [DetailRowService, ExcelExportService, ToolbarService],
-standalone: true,
+@Component({
+    imports: [GridModule],
+    providers: [DetailRowService, ExcelExportService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]="data" id="DetailTemplateGrid" [toolbar]="toolbar" [allowExcelExport]="true"
         (toolbarClick)="toolbarClick($event)" (exportDetailTemplate)="exportDetailTemplate($event)" height="273px">
@@ -303,18 +296,15 @@ In the following sample, the customized caption text is exported to Excel using 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService, ToolbarService, ExcelExportService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
-import { GridComponent, GroupSettingsModel, ExportGroupCaptionEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, GroupSettingsModel, ExportGroupCaptionEventArgs,GridModule, GroupService, ToolbarService, ExcelExportService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [GridModule],
-providers: [GroupService, ToolbarService, ExcelExportService],
-standalone: true,
+    imports: [GridModule],
+    providers: [GroupService, ToolbarService, ExcelExportService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id="CaptionTemplateGrid" [dataSource]="data" [allowGrouping]="true" [groupSettings]="groupOptions"
                [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)" [allowExcelExport]="true"

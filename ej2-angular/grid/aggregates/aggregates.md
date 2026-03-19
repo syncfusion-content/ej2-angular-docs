@@ -16,7 +16,7 @@ The Aggregates feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angul
 - `Group Footer`: aggregate values for each group of records.
 - `Group Caption`: summary information shown alongside the group title.
 
-The aggregate feature is enabled by injecting the `AggregateService` module into the `@NgModule.providers` section.
+The aggregate feature is enabled by injecting the `AggregateService` module to the providers array.
 
 Aggregates in the Angular Grid are linked to columns using a few key properties:
 
@@ -122,7 +122,7 @@ By default, aggregate values are shown in the footer, group footer, and group ca
 
 ## Built-in aggregate types
 
-The Syncfusion Angular Grid component provides built-in aggregate types, specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property of an aggregate column. Multiple aggregate types can be used by providing an array of aggregate type strings.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides built-in aggregate types, specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property of an aggregate column. Multiple aggregate types can be used by providing an array of aggregate type strings.
 
 - `Sum`: Calculates the total of all values in the column.
 - `Average`: Calculates the mean of all values.

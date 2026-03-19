@@ -1,26 +1,19 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService } from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-
+import { data, numericOperatorsData, stringOperatorsData } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Column, GridComponent} from '@syncfusion/ej2-angular-grids';
-import { data, stringOperatorsData, numericOperatorsData } from './datasource';
-import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { ChangeEventArgs, CheckBoxSelectionService, DropDownListAllModule, DropDownListComponent, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Column, FilterService, GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
+  imports: [
         GridModule,
         MultiSelectModule,
         DropDownListAllModule,
         CheckBoxModule, 
         ButtonModule
-    ],
-
-providers: [FilterService, PageService, CheckBoxSelectionService],
-standalone: true,
+      ],
+  providers: [FilterService, PageService, CheckBoxSelectionService],
+  standalone: true,
   selector: 'app-root',
   templateUrl: 'app.component.html',
 })

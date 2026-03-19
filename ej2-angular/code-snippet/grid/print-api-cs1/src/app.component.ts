@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, PageService, PageSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ToolbarService, PageService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [ToolbarService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' printMode='CurrentPage' [allowPaging]='true'
                [pageSettings]='pageOptions' [toolbar]='toolbarOptions'>
@@ -39,6 +29,3 @@ export class AppComponent implements OnInit {
         this.pageOptions = { pageSize: 6 };
     }
 }
-
-
-

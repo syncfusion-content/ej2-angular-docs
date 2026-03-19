@@ -1,28 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule } from '@angular/forms'
-import { GridModule, PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
-
+import { data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import {data} from './datasource';
+import { FormsModule } from '@angular/forms';
+import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons';
+import { FilterService, GridComponent, GridModule, GroupService, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        FormsModule,
-        GridModule,
-        ButtonAllModule
-    ],
-
-providers: [
-        PageService,
-        SortService,
-        FilterService,
-        GroupService
-    ],
-standalone: true,
+    imports: [ FormsModule, GridModule, ButtonAllModule ],
+    providers: [ PageService, SortService, FilterService, GroupService ],
+    standalone: true,
     selector: 'app-root',
     template: `<div style="padding:0px 0px 20px 0px">
                 <button ejs-button (click)=next($event)>Change datasource and column</button>

@@ -1,23 +1,15 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService, PageService } from '@syncfusion/ej2-angular-grids'
-
-import { L10n, } from '@syncfusion/ej2-base';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
-import deDELocalization from './locale.json'
+import { deDELocalization } from './locale.json';
+import { Component, OnInit } from '@angular/core'
+import { GridModule, GroupService, PageService, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { L10n } from '@syncfusion/ej2-base';
 
 L10n.load(deDELocalization);
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [GroupService, PageService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [GroupService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [locale]='locale' [allowGrouping]='true' [allowPaging]='true'
              [pageSettings]='pageOptions' height='220px'>
@@ -40,6 +32,3 @@ export class AppComponent implements OnInit {
         this.pageOptions = { pageSize: 6 };
     }
 }
-
-
-

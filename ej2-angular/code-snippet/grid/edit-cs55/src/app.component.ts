@@ -1,10 +1,7 @@
-import { NgModule, ViewChild } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { EditService, EditSettingsModel, GridComponent, GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   imports: [GridModule, FormsModule],

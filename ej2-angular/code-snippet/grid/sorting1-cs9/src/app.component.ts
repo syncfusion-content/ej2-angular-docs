@@ -1,26 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, SortService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SortDirection } from '@syncfusion/ej2-angular-grids';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule, SortDirection, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [SortService],
-standalone: true,
+    imports: [GridModule, ButtonModule, DropDownListAllModule ],
+    providers: [SortService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
@@ -101,6 +88,3 @@ export class AppComponent implements OnInit {
         );
       }
 }
-
-
-

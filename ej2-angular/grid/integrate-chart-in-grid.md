@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 Grid and Chart integration in Syncfusion<sup style="font-size:70%">&reg;</sup> enables visualizing tabular data by linking the grid with a chart. Selected data can be rendered interactively as bar, line, or pie charts via the [ContextMenu](https://ej2.syncfusion.com/angular/documentation/grid/context-menu) feature. This integration is suitable for dashboards, reporting tools, and other data-driven applications where tabular and visual representations improve analysis and decision making.
 
-## Steps for Chart Integration
+## Steps for Chart integration
 
-Follow these steps to integrate charts into the grid:
+Refer to the sections below to configure and enable chart integration in the Grid.
 
-### Dependencies
+### Required dependencies
 
 Below is the list of minimum dependencies required to integrate chart functionality into the grid:
 
@@ -37,7 +37,7 @@ Below is the list of minimum dependencies required to integrate chart functional
     |-- @syncfusion/ej2-charts
 ```
 
-### Setup Angular Environment
+### Setup Angular environment
 
 Use [Angular CLI](https://github.com/angular/angular-cli) to setup Angular applications. Install Angular CLI using the following command:
 
@@ -45,7 +45,7 @@ Use [Angular CLI](https://github.com/angular/angular-cli) to setup Angular appli
 npm install -g @angular/cli
 ```
 
-### Create an Angular Application
+### Create an Angular application
 
 Start a new Angular application using the Angular CLI command:
 
@@ -65,7 +65,7 @@ Navigate to the created project folder:
 cd my-app
 ```
 
-### Add Syncfusion Angular Packages
+### Add Syncfusion Angular packages
 
 All Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
 
@@ -79,11 +79,11 @@ npm install @syncfusion/ej2-grid-chart --save
 {% endhighlight %}
 {% endtabs %}
 
-### Import Syncfusion CSS Styles
+### Import Syncfusion CSS styles
 
 Syncfusion Angular controls include [built-in themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) available in installed packages. Apply themes by importing required CSS files from the node_modules directory.
 
-To use the **Material** theme, add the following imports to the **src/styles.css** file:
+To use the "Material" theme, add the following imports to the **src/styles.css** file:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
@@ -99,15 +99,15 @@ To use the **Material** theme, add the following imports to the **src/styles.css
 @import '../node_modules/@syncfusion/ej2-grid-chart/styles/material3.css';
 ```
 
-## Chart Integration via Context Menu in Grid
+## Chart integration via context menu in Grid
 
-This section explains grid rendering of charts dynamically based on interactions within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular grid using the context menu. **Right-clicking** on selected rows presents chart types such as bar, pie, or line for immediate visualization. This enhances interactivity and provides a quick analytical view.
+This section explains grid rendering of charts dynamically based on interactions within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular grid using the context menu. **Right-clicking** on selected rows presents chart types such as `bar`, `pie`, or `line` for immediate visualization. This enhances interactivity and provides a quick analytical view.
 
 For example, in a sales dashboard, selecting records for specific products can display a comparative bar or pie chart that shows online sales versus retail sales or revenue trends across months.
 
-### Implementation Steps
+### Implementation steps
 
-**Step 1: Inject Required Modules**
+**Step 1: Inject required modules**
 
 Import necessary modules from Grid, Chart, and GridChart packages, and inject the `ContextMenuService` to enable context menu functionality:
 
@@ -125,7 +125,7 @@ import { ChartModel } from '@syncfusion/ej2-charts';
 })
 ```
 
-**Step 2: Define Chart Options in Grid Context Menu**
+**Step 2: Define Chart options in Grid context menu**
 
 Add chart visualization options as context menu items within the grid configuration using the [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenuitems) property. These items allow right-clicking on selected rows to choose a chart type for visualization.
 
@@ -139,9 +139,9 @@ export class AppComponent implements OnInit {
 }
 ```
 
-**Step 3: Initialize GridChart Instance on Grid Creation**
+**Step 3: Initialize GridChart instance on Grid creation**
 
-Inside the grid’s [created](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#created) event, instantiate a `GridChart` object. This instance is used to render charts dynamically based on the selected grid data.
+Inside the grid's [created](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#created) event, instantiate a `GridChart` object. This instance is used to render charts dynamically based on the selected grid data.
 
 ```typescript
 created(): void {
@@ -154,7 +154,7 @@ created(): void {
 
 This ensures chart instance readiness for seamless context menu interaction.
 
-**Step 4: Handle Context Menu Click to Render Chart**
+**Step 4: Handle context menu click to render Chart**
 
 Use the [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenuclick) event to determine the selected chart type and render it with the `gridChart.render` method.
 
@@ -226,7 +226,7 @@ The following complete example demonstrates chart integration into grid context 
 
 {% previewsample "page.domainurl/samples/grid/chart-intergration-cs1" %}
 
-### Enable Export Functionality in GridChart
+### Enable export functionality in GridChart
 
 GridChart export functionality enables saving or sharing charts in multiple formats. This is useful for preserving visualizations or including charts in reports and presentations.
 
@@ -240,18 +240,18 @@ gridChart = new GridChart({
 
 When enabled, the property panel appears alongside chart popups and offers three main configuration sections:
 
-**Chart Types:** Choose from a variety of chart types, including Column, Line, Pie, and others.
+**Chart types:** Choose from a variety of chart types, including Column, Line, Pie, and others.
 
-**Chart Data:** Configure category axis and series fields for data visualization.
+**Chart data:** Configure category axis and series fields for data visualization.
 
-**Formatting Options:** Adjust styling properties such as chart style, title style, legend appearance, series settings, and axes formatting.
+**Formatting options:** Adjust styling properties such as chart style, title style, legend appearance, series settings, and axes formatting.
 
-* **Chart Style:**
+* **Chart style:**
 
   * **Margin:** Adjust [margins](https://ej2.syncfusion.com/angular/documentation/api/chart/margin) around charts (top, bottom, left, right) for better layout spacing.
   * **Color:** Set distinct colors for different chart elements to improve visual clarity.
 
-* **Title Style:**
+* **Title style:**
 
   * **Legend:** Toggle legend visibility and customize font, size, color, and position.
   * **Series:** Enable/disable tooltips and customize [Series](https://ej2.syncfusion.com/angular/documentation/api/chart/series) colors and data labels based on categories.
@@ -262,7 +262,7 @@ When enabled, the property panel appears alongside chart popups and offers three
   * **Title:** Adjust text, font, size, color, and rotation.
   * **Label:** Modify text, font, size, color, and rotation for better presentation.
 
-### Customize Chart Models
+### Customize Chart models
 
 [Accumulation Charts](https://ej2.syncfusion.com/angular/documentation/accumulation-chart/getting-started) (for example, pie charts) can be customized using the `accumulationChart` property of the `model` object. This property configures titles, legends, data labels, and visual styles for accumulation-type visualizations.
 

@@ -1,31 +1,26 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { ReactiveFormsModule, FormsModule } from '@angular/forms'
-import { CheckBoxAllModule, ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
 import { data } from './datasource';
-import { DataUtil } from '@syncfusion/ej2-data';
-import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
-import { Dialog } from '@syncfusion/ej2-popups';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ButtonModule, CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { DialogEditEventArgs, EditService, EditSettingsModel, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { DataUtil } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        CommonModule,
-        CheckBoxAllModule,
-        GridModule,
-        ButtonModule,
-        DropDownListAllModule, ReactiveFormsModule, FormsModule,
-        NumericTextBoxModule
-    ],
-
-providers: [EditService, ToolbarService],
-standalone: true,
+  imports: [
+      CommonModule,
+      CheckBoxAllModule,
+      GridModule,
+      ButtonModule,
+      DropDownListAllModule, 
+      ReactiveFormsModule, 
+      FormsModule,
+      NumericTextBoxModule
+      ],
+  providers: [EditService, ToolbarService],
+  standalone: true,
   selector: 'app-root',
   templateUrl: `wizardtemplate.html`
 })

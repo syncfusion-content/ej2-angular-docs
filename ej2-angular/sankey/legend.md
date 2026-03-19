@@ -10,12 +10,16 @@ domainurl: ##DomainURL##
 
 # Legend in Angular Sankey component
 
-A legend provides a visual key that helps users understand the categories represented by nodes in the Sankey diagram. The legend also communicates the meanings and groupings represented within the diagram. Additionally, the Sankey diagram supports comprehensive legend configuration including positioning, styling, customization, and interactive behaviors. To use legend functionality, inject the `SankeyLegend` provider/module when needed.
+A legend provides a visual key that helps users understand the categories and meanings represented by nodes in the Sankey Chart. The Sankey Chart provides comprehensive legend configuration options including positioning, styling, customization, and interactive behaviors. You can enable and customize the legend using the `legend` property and by injecting the `SankeyLegend` module.
+
+This guide covers legend configuration, positioning strategies, customization options, and dynamic legend rendering events.
 
 ## Legend Settings Properties
 
+The `legendSettings` property provides comprehensive options to configure legend appearance, behavior, and positioning. The following properties are commonly used:
+
 | Property | Type | Default | Description |
-|----------|------|---------|-------------|
+|---------|------|---------|-------------|
 | visible | boolean | true | Shows or hides the legend. |
 | position | string | 'Auto' | Position of the legend (Auto, Top, Bottom, Left, Right, Custom). |
 | width | string | null | Width of the legend container. |
@@ -31,9 +35,9 @@ A legend provides a visual key that helps users understand the categories repres
 | enableHighlight | boolean | true | Enables highlighting of related nodes/links when a legend item is clicked. |
 | isInversed | boolean | false | Inverts the legend layout. |
 
-These properties allow configuration of visibility, size, layout, spacing, background, highlighting behavior, and interactive behavior for legend items.
-
 ## Basic Legend Configuration
+
+Here is an example of enabling and customizing the legend:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -43,18 +47,19 @@ These properties allow configuration of visibility, size, layout, spacing, backg
 {% include code-snippet/sankey/legend/configuration-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
+
 {% previewsample "page.domainurl/samples/sankey/legend/configuration-cs1" %}
 
-# Legend Position
+## Legend Position
 
 Control the legend position using the `position` property with the following options:
 
-- **'Top'** – Legend appears above the Sankey diagram  
-- **'Bottom'** – Legend appears below the Sankey diagram  
-- **'Left'** – Legend appears to the left  
-- **'Right'** – Legend appears to the right  
-- **'Auto'** – Automatically positioned based on available space  
-- **'Custom'** – Allows specifying exact coordinates using the `location` property  
+- **Top** – Legend appears above the Sankey diagram  
+- **Bottom** – Legend appears below the Sankey diagram  
+- **Left** – Legend appears to the left  
+- **Right** – Legend appears to the right  
+- **Auto** – Automatically positioned based on available space  
+- **Custom** – Allows specifying exact coordinates using the `location` property  
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,17 +69,12 @@ Control the legend position using the `position` property with the following opt
 {% include code-snippet/sankey/legend/position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
+
 {% previewsample "page.domainurl/samples/sankey/legend/position-cs1" %}
 
-# Customized Legend
+## Customized Legend
 
-Customize legend appearance using options such as:
-
-- background  
-- opacity  
-- shape size  
-- padding  
-- highlight behavior  
+Customize the legend appearance with properties like background color, opacity, shape sizing, padding, and interactive highlighting. The following example demonstrates comprehensive legend styling:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,11 +84,12 @@ Customize legend appearance using options such as:
 {% include code-snippet/sankey/legend/customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
+
 {% previewsample "page.domainurl/samples/sankey/legend/customization-cs1" %}
 
-# Custom Legend Position
+## Custom Legend Position
 
-Use `position="Custom"` and specify exact X/Y coordinates using the `location` property for precise placement.
+Position the legend at a specific location using the `Custom` position setting. When using `Custom` position, specify the exact X and Y coordinates where the legend should appear. This provides precise control over legend placement:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,13 +99,14 @@ Use `position="Custom"` and specify exact X/Y coordinates using the `location` p
 {% include code-snippet/sankey/legend/custom-position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
+
 {% previewsample "page.domainurl/samples/sankey/legend/custom-position-cs1" %}
 
-# Advanced Legend Configuration
+## Advanced Legend Configuration
 
-## Dynamic Legend Customization
+### Dynamic Legend Customization
 
-Use the `legendItemRendering` event to modify legend items dynamically before rendering. This is useful for conditional styling, applying category‑based colors, or modifying text.
+Use the `legendItemRendering` event to modify legend items dynamically before rendering. This is useful for conditional styling, applying category-based colors, or modifying text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,4 +116,5 @@ Use the `legendItemRendering` event to modify legend items dynamically before re
 {% include code-snippet/sankey/legend/rendering-event-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
+
 {% previewsample "page.domainurl/samples/sankey/legend/rendering-event-cs1" %}

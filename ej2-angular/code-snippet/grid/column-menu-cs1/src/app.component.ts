@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { SortService, GroupService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-grids';
-import { GroupSettingsModel, FilterSettingsModel, ColumnMenuClickEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { ColumnMenuClickEventArgs, ColumnMenuService, FilterService, FilterSettingsModel, GridModule, GroupService, GroupSettingsModel, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-standalone: true,
+    imports: [ GridModule ],
+    standalone: true,
+    providers: [SortService, GroupService, ColumnMenuService, PageService, FilterService]
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' id='gridcomp' allowPaging='true' allowGrouping='true' allowSorting='true' showColumnMenu='true'
         [groupSettings]='groupOptions' allowFiltering='true' [filterSettings]='filterSettings' [columnMenuItems]='columnMenuItems'
@@ -26,8 +18,7 @@ standalone: true,
             <e-column field='ShipCity' headerText='Ship City' width='150' ></e-column>
         </e-columns>
     </ejs-grid>
-                `,
-    providers: [SortService, GroupService, ColumnMenuService, PageService, FilterService]
+                `
 })
 export class AppComponent implements OnInit {
 
@@ -67,6 +58,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

@@ -1,16 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser';
-
+import { customerData, data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data, customerData } from './datasource';
-import { GridModule, ToolbarService, GridComponent, ToolbarItems, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, GridModule, RowSelectEventArgs, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 type carType = { CustomerID: string, CustomerName: string, ContactName: string };
 
 @Component({
-imports: [GridModule],
-providers: [ToolbarService],
-standalone: true,
+    imports: [GridModule],
+    providers: [ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #mastergrid id="mastergrid" [dataSource]='masterdata' [selectedRowIndex]="1" [toolbar]='toolbar' (rowSelected)="onRowSelected($event)" (beforePrint)="beforePrint($event)">
         <e-columns>

@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-
-
 import { Component, OnInit } from '@angular/core';
-import { InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
-import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { EditService, GridModule, InfiniteScrollService, PageService, PageSettingsModel, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 const names = ['TOM', 'Hawk', 'Jon', 'Chandler', 'Monica', 'Rachel', 'Phoebe', 'Gunther', 'Ross', 'Geller', 'Joey', 'Bing', 'Tribbiani',
  'Janice', 'Bong', 'Perk', 'Green', 'Ken', 'Adams'];
@@ -27,13 +21,9 @@ const data = (count: any) => {
 };
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, ToolbarService, EditService, InfiniteScrollService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [PageService, ToolbarService, EditService, InfiniteScrollService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=300 [enableInfiniteScrolling]='true' [pageSettings]='options'>
                 <e-columns>
@@ -54,6 +44,3 @@ export class AppComponent implements OnInit {
         this.options = { pageSize: 50 };
     }
 }
-
-
-

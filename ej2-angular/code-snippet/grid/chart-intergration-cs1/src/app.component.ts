@@ -1,10 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ContextMenuClickEventArgs, ContextMenuService, GridModule, ContextMenuItem, GridComponent, IGrid} from '@syncfusion/ej2-angular-grids';
-import { CategorySeries, ChartChanges, ChartPopupArgs, GridChart } from '@syncfusion/ej2-grid-chart';
-import { ChartModel } from '@syncfusion/ej2-charts';
 import { salesDatas } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ContextMenuClickEventArgs, ContextMenuItem, ContextMenuService, GridComponent, GridModule, IGrid } from '@syncfusion/ej2-angular-grids';
+import { ChartModel } from '@syncfusion/ej2-charts';
+import { CategorySeries, ChartChanges, ChartPopupArgs, GridChart } from '@syncfusion/ej2-grid-chart';
 
 @Component({
   imports: [ GridModule],

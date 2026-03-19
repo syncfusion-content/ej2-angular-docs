@@ -1,19 +1,12 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent,ColumnModel } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { ColumnModel, FilterService, GridComponent, GridModule, GroupService, PageService, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule, ButtonModule ],
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
-standalone: true,
+    imports: [ GridModule, ButtonModule ],
+    providers: [ PageService, SortService, FilterService, GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<button ejs-button id='add' cssClass="e-info" (click)='addColumns()'> Add Column</button>
                <button ejs-button id='delete' cssClass="e-info" (click)='deleteColumns()'> Delete Column</button>
@@ -36,25 +29,22 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     addColumns(): void {
-    const grid = this.grid!;
-    const cols = grid.columns as ColumnModel[];
-    cols.push(
-      { field: 'EmployeeID', headerText: 'EmployeeID', width: 120 },
-      {
-        field: 'OrderDate',
-        headerText: 'Order Date',
-        width: 120,
-        type: 'date',
-        format: 'yMd',
-      }
-    );
-    grid.refreshColumns();
-  }
+        const grid = this.grid!;
+        const cols = grid.columns as ColumnModel[];
+        cols.push(
+            { field: 'EmployeeID', headerText: 'EmployeeID', width: 120 },
+            {
+                field: 'OrderDate',
+                headerText: 'Order Date',
+                width: 120,
+                type: 'date',
+                format: 'yMd',
+            }
+        );
+        grid.refreshColumns();
+    }
     deleteColumns(): void {
         (this.grid as GridComponent).columns.pop();
         (this.grid as GridComponent).refreshColumns();
     }
 }
-
-
-

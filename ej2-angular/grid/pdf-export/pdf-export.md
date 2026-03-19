@@ -12,9 +12,7 @@ domainurl: ##DomainURL##
 
 The PDF export feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid exporting grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
 
-To enable PDF export in the Grid, set the [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpdfexport) property to `true` and use the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method.
-
-To use PDF export, inject the `PdfExport` module in the Grid.
+To enable PDF export in the Grid, set the [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpdfexport) property to `true` and use the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method. To use PDF export, inject the `PdfExportService` module to the providers array.
 
 The following example demonstrates performing a PDF export action in the grid.
 
@@ -36,7 +34,7 @@ Displaying a spinner while exporting in the Syncfusion<sup style="font-size:70%"
 
 To show or hide a spinner while exporting the grid, use the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#hidespinner) methods within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event.
 
-The `toolbarClick` event triggers when a toolbar item in the Grid is clicked. Within the event handler, verify if the clicked "item" relates to PDF export by checking for the `Grid_pdfexport` identifier. When matched, call the `showSpinner` method on the Grid instance to display the spinner.
+The `toolbarClick` event triggers when a toolbar item in the Grid is clicked. Within the event handler, verify if the clicked "item" relates to PDF export by checking for the "Grid_pdfexport" identifier. When matched, call the `showSpinner` method on the Grid instance to display the spinner.
 
 To hide the spinner after export completes, bind the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexportcomplete) event and call the `hideSpinner` method on the Grid instance.
 
@@ -82,7 +80,7 @@ Custom aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angula
 
 To utilize custom aggregation, specify the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) property as `Custom` and provide the `customAggregate` function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property.
 
-Within the `customAggregateFn` function, receive input data containing a `result` property. The function calculates the count of objects where the "Ship Country" field equals "Brazil" and returns the count with a descriptive label.
+Within the "customAggregateFn" function, receive input data containing a `result` property. The function calculates the count of objects where the "Ship Country" field equals "Brazil" and returns the count with a descriptive label.
 
 The following example shows exporting the Grid with a custom aggregate that calculates the "Brazil" count in the "Ship Country" column.
 

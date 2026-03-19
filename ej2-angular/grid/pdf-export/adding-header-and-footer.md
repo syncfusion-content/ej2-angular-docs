@@ -174,7 +174,7 @@ The following example demonstrates adding a header and footer to the exported gr
 
 The column header can be repeated on every page of an exported PDF document. This feature ensures that the column header remains visible and easily identifiable, even when data spans multiple pages in the exported PDF document.
 
-By default, the column header appears only on the first page of the PDF document. Enabling the `repeatHeader` property of the "pdfGrid" object to `true` to display the column header on every page. This behavior can be implemented using the [pdfHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfheaderquerycellinfo) event of the Grid.
+By default, the column header appears only on the first page of the PDF document. Enabling the `repeatHeader` property of the `pdfGrid` object to `true` to display the column header on every page. This behavior can be implemented using the [pdfHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfheaderquerycellinfo) event of the Grid.
 
 The following example demonstrates repeating the column header on every page of the exported PDF document using the `pdfHeaderQueryCellInfo` event.
 

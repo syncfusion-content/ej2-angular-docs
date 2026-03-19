@@ -14,14 +14,26 @@ Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg
 
 ## Set up filtering
 
-To use filtering functionality, inject `FilterService` in the provider section of `AppModule`.
+To use filtering functionality, inject `FilterService` to the providers array.
 
 ```js
-import { Inject, Filter } from '@syncfusion/ej2-angular-grids';
 
-<GridComponent>
-  <Inject services={[Filter]} />
-</GridComponent>
+import { GridModule,FilterService } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    imports: [GridModule],
+    providers: [PageService,SortService,FilterService,GroupService],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [allowSorting]="true"
+                [allowFiltering]="true" [pageSettings]="pageSettings">
+                <e-columns>
+                    <!-- Add column definitions here -->
+                </e-columns>
+                </ejs-grid>`
+})
 ```
 
 ## Enable filtering
@@ -111,27 +123,27 @@ The available operators and its supported data types are:
 
 Operator |Description |Supported Types
 -----|-----|-----
-startsWith |Checks whether a value begins with the specified value. |String
-endsWith |Checks whether a value ends with specified value. |String
-contains |Checks whether a value contains with specified value. |String
-doesnotstartwith |Checks whether the value does not begin with the specified value. |String
-doesnotendwith |Checks whether the value does not end with the specified value. |String
-doesnotcontain |Checks whether the value does not contain the specified value. |String
-equal |Checks whether a value equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
-notEqual |Checks whether a value not equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
-greaterThan |Checks whether a value is greater than with specified value. |Number &#124; Date
-greaterThanOrEqual|Checks whether a value is greater than or equal to specified value. |Number &#124; Date
-lessThan |Checks whether a value is less than with specified value. |Number &#124; Date
-lessThanOrEqual |Checks whether a value is less than or equal to specified value. |Number &#124; Date
-isnull |Returns the values that are null. |String &#124; Number &#124; Date
-isnotnull |Returns the values that are not null. |String &#124; Number &#124; Date
-isempty |Returns the values that are empty. |String
-isnotempty |Returns the values that are not empty. |String
-between|Filter the values based on the range between the start and end specified values. |Number &#124; Date
-in |Filters multiple records in the same column that exactly match any of the selected values. |String &#124; Number &#124; Date
-notin |Filters multiple records in the same column that do not match any of the selected values. |String &#124; Number &#124; Date
+`startsWith` |Checks whether a value begins with the specified value. |String
+`endsWith` |Checks whether a value ends with specified value. |String
+`contains` |Checks whether a value contains with specified value. |String
+`doesnotstartwith` |Checks whether the value does not begin with the specified value. |String
+`doesnotendwith` |Checks whether the value does not end with the specified value. |String
+`doesnotcontain` |Checks whether the value does not contain the specified value. |String
+`equal` |Checks whether a value equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
+`notEqual` |Checks whether a value not equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
+`greaterThan` |Checks whether a value is greater than with specified value. |Number &#124; Date
+`greaterThanOrEqual` |Checks whether a value is greater than or equal to specified value. |Number &#124; Date
+`lessThan` |Checks whether a value is less than with specified value. |Number &#124; Date
+`lessThanOrEqual` |Checks whether a value is less than or equal to specified value. |Number &#124; Date
+`isnull` |Returns the values that are null. |String &#124; Number &#124; Date
+`isnotnull` |Returns the values that are not null. |String &#124; Number &#124; Date
+`isempty` |Returns the values that are empty. |String
+`isnotempty` |Returns the values that are not empty. |String
+`between`|Filter the values based on the range between the start and end specified values. |Number &#124; Date
+`in` |Filters multiple records in the same column that exactly match any of the selected values. |String &#124; Number &#124; Date
+`notin` |Filters multiple records in the same column that do not match any of the selected values. |String &#124; Number &#124; Date
 
-> By default, the grid uses different filter operators for different column types. The default filter operator for string columns is "startswith", for numeric columns is "equal", and for boolean columns is "equal".
+> By default, the grid uses different filter operators for different column types. The default filter operator for string columns is `startswith`, for numeric columns is `equal`, and for boolean columns is `equal`.
 
 ## Wildcard and LIKE operator filter
 
@@ -360,7 +372,7 @@ The following example demonstrates programmatic filtering using single and multi
 
 Retrieve filtered records using available methods and properties in the Grid component when working with data that matches currently applied filters.
 
-**1.Using the getFilteredRecords() method**
+**1. Using the getFilteredRecords() method**
 
 The [getFilteredRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getfilteredrecords) method obtains an array of records that match currently applied filters on the grid.
 
@@ -381,7 +393,7 @@ The following example demonstrates getting filtered data using the `getFilteredR
   
 {% previewsample "page.domainurl/samples/grid/filter-cs9" %}
 
-**2.Using the properties in the FilterEventArgs object**
+**2. Using the properties in the FilterEventArgs object**
 
 Alternatively, use properties available in the [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs) object to obtain filter record details:
 
@@ -428,27 +440,23 @@ The following example demonstrates filtering prevention for the "Ship City" colu
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-import { MessageModule } from '@syncfusion/ej2-angular-notifications'
+import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { MessageModule } from '@syncfusion/ej2-angular-notifications';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { FilterSettingsModel, GridComponent, FilterEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridModule, FilterService, PageService,FilterSettingsModel, GridComponent, FilterEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
+    imports: [
         GridModule,
         MultiSelectModule,
         DropDownListAllModule,
         CheckBoxModule,
         MessageModule
-    ],
-
-providers: [FilterService, PageService,CheckBoxSelectionService],
-standalone: true,
+        ],
+    providers: [FilterService, PageService,CheckBoxSelectionService],
+    standalone: true,
     selector: 'app-root',
     template: `<div id='message'>{{message}}</div><ejs-grid #grid [dataSource]='data' [allowFiltering]='true' height='273px' (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)">
                 <e-columns>

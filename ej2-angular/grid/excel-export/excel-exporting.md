@@ -16,7 +16,7 @@ The Excel export feature in the Angular Grid component enables exporting Grid da
 
 Excel export configuration in the Grid component requires the following setup:
 
-**Module injection**: Inject the `ExcelExport` module into the grid. This module provides the necessary services for exporting data to Excel or CSV formats.
+**Module injection**: Inject the `ExcelExportService` module into the providers array. This module provides the necessary services for exporting data to Excel or CSV formats.
 
 **Enable export**: Set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/grid#allowexcelexport) property to `true`. This property activates the Excel and CSV export options in the Grid.
 
@@ -65,9 +65,7 @@ The following example demonstrates displaying the spinner during Excel export in
 
 The Grid component provides a convenient way to export data to Excel or CSV format. With the Excel or CSV export feature, a custom data source can be defined while exporting. This allows exporting data that is not necessarily bound to the grid, which can be generated or retrieved based on application logic.
 
-Export custom data to Excel or CSV—even if not currently used in the Grid—by specifying the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) property in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) object.
-
-Example: Export dynamically defined data:
+Export custom data to Excel or CSV even if not currently used in the Grid by specifying the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) property in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -342,8 +340,6 @@ Microsoft Excel permits up to seven nested levels in outlines. So that in the gr
 
 Remove the header row from the exported file by clearing header cells in the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#excelheaderquerycellinfo) event and removing the row in the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#created) event.
 
-Example: Export grid data without a header row:
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-delete/src/app.component.ts %}
@@ -382,7 +378,7 @@ Passing additional parameters to the server when exporting data in the Syncfusio
 
 This can be achieved by utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid#query) property and the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event. Within the `query` property, the `addParams` method can be invoked to add parameters to the request.
 
-The following example demonstrates to pass additional parameters to the server when Excel exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically "recordcount" as 15, are passed using the `addParams` method and displayed as a message:
+The following example demonstrates to pass additional parameters to the server when Excel exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically "recordcount" as "15", are passed using the `addParams` method and displayed as a message:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

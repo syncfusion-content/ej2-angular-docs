@@ -1,7 +1,6 @@
-import { GridModule, ToolbarService, PdfExportService, PdfQueryCellInfoEventArgs, PdfExportCompleteArgs } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, PdfExportCompleteArgs, PdfExportService, PdfQueryCellInfoEventArgs, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { PdfGridCell } from '@syncfusion/ej2-pdf-export';
 

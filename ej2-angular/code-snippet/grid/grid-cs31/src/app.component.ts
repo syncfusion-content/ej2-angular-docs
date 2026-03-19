@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { RowDataBoundEventArgs, EditSettingsModel, GridComponent, PageSettingsModel, } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { EditSettingsModel, GridComponent, GridModule, PageService, PageSettingsModel, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers:[PageService],
-standalone: true,
+    imports: [GridModule],
+    providers:[PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' (rowDataBound)='rowDataBound($event)' [editSettings]='editSettings' allowPaging="true" [pageSettings]="pageSettings"  [height]='295'>
                 <e-columns>

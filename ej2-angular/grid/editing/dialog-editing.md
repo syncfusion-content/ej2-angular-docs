@@ -33,9 +33,9 @@ The following example demonstrates to enable dialog editing in the Angular Grid 
 The edit dialog is a modal window that isolates the editing form and prevents grid interaction until the dialog closes. Customize this dialog to match application needs by handling the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event.
 
 **Customizable options**:
-- Header text, close button visibility, and height
-- Button text and localization strings
-- Dialog behavior based on the editing action
+- Header text, close button visibility, and height.
+- Button text and localization strings.
+- Dialog behavior based on the editing action.
 
 Use the `requestType` parameter to identify which action triggered the event and apply appropriate customizations:
 

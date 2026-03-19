@@ -1,19 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser';
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridModule,GridComponent, ToolbarItems, ToolbarService, PdfExportService, ExcelExportService } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ExcelExportService, GridComponent, GridModule, PdfExportService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { Query } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PdfExportService, ToolbarService,ToolbarService, PdfExportService, ExcelExportService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [PdfExportService, ToolbarService,ToolbarService, PdfExportService, ExcelExportService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [allowPaging]='true'
     [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' [allowExcelExport]='true'
@@ -58,6 +52,3 @@ export class AppComponent implements OnInit {
         (this.grid as any).query = (this as any).queryClone;
     }
 }
-
-
-

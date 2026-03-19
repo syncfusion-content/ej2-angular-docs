@@ -1,4 +1,5 @@
 import { DataUtil } from '@syncfusion/ej2-data';
+
 export function getData(dataCount?: number): object {
   let check: boolean[] = [true, false];
   let Employees: string[] = [

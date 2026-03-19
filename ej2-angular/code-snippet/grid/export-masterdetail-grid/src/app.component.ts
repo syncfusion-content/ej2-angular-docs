@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { customerData, data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data, customerData } from './datasource';
-import { GridComponent, ToolbarItems, ExcelExportProperties, RowSelectEventArgs,GridModule, ToolbarService, ExcelExportService} from '@syncfusion/ej2-angular-grids';
+import { ExcelExportProperties, ExcelExportService, GridComponent, GridModule, RowSelectEventArgs, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 type carType = { CustomerID: string, CustomerName: string, ContactName: string };

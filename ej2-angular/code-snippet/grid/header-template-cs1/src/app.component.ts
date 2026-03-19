@@ -1,10 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule, SwitchModule  } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { ButtonModule, SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
@@ -54,5 +52,4 @@ export class AppComponent implements OnInit {
   onSwitchToggle(args:ChangeEventArgs) {
     this.headerText = args.checked ? 'Purchase Date' : 'Order Date';
   }
-
 }

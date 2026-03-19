@@ -1,14 +1,11 @@
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService,DetailRowService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data, employeeData } from './datasource';
-import {  GridModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { DetailRowService, GridModel, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule],
-providers: [PageService,
-        DetailRowService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [PageService, DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='parentData' height='315px' [childGrid]='childGrid'>
                     <e-columns>
@@ -37,6 +34,3 @@ export class AppComponent implements OnInit {
         this.parentData = employeeData;
     }
 }
-
-
-

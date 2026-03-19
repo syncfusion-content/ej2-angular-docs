@@ -1,9 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,GridComponent,DetailRowService } from '@syncfusion/ej2-angular-grids'
-import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { DetailRowService, GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({

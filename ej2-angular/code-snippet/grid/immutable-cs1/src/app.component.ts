@@ -1,10 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, ViewChild, OnInit } from "@angular/core";
-import { GridComponent, RowDataBoundEventArgs, SelectionSettingsModel } from "@syncfusion/ej2-angular-grids";
-import { data } from "./datasource";
+import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, PageService, RowDataBoundEventArgs, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 interface CustomRowDataBoundEventArgs extends RowDataBoundEventArgs {
   column: {
@@ -24,13 +20,9 @@ interface DataType {
 }
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService],
-standalone: true,
+  imports: [ GridModule ],
+  providers: [PageService],
+  standalone: true,
   selector: 'app-root',
   template: `
       <button  #addtop ejs-button class="e-control e-btn e-lib e-info" (click)="addTopEvent()">Add rows Data</button>
@@ -146,5 +138,4 @@ export class AppComponent implements OnInit {
     const names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
     return names[Math.floor(Math.random() * names.length)];
   }
-
 }

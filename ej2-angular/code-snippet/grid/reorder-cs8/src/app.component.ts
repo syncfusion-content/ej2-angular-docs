@@ -1,23 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ReorderService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, ReorderService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
-
-providers: [ReorderService],
-standalone: true,
+    imports: [ GridModule, ButtonModule ],
+    providers: [ReorderService],
+    standalone: true,
     selector: 'app-root',
     template: `<button ejs-button id='reordersingle' cssClass="e-info" (click)='reorderSingleColumnByTargetIndex()'>Reorder single column</button>
      <button ejs-button id='reordermultiple' cssClass="e-info" (click)='reorderMultipleColumnByTargetIndex()'>Reorder Multiple columns</button>
@@ -46,6 +35,3 @@ export class AppComponent implements OnInit {
         (this.gridObj as GridComponent).reorderColumnByTargetIndex(['OrderID', 'CustomerID'], 3); // move columns with field name "OrderID" and "CustomerID" to index 3
     }
 }
-
-
-

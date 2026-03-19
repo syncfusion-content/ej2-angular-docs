@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-import { SwitchModule} from '@syncfusion/ej2-angular-buttons'
-
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
-import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { EditService, GridComponent, GridModule, InfiniteScrollService, PageService, PageSettingsModel, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 const names = ['TOM', 'Hawk', 'Jon', 'Chandler', 'Monica', 'Rachel', 'Phoebe', 'Gunther', 'Ross', 'Geller', 'Joey', 'Bing', 'Tribbiani',
@@ -28,14 +23,9 @@ const data = (count: any) => {
 };
 
 @Component({
-imports: [
-        
-        GridModule,
-        SwitchModule
-        ],
-
-providers: [PageService, ToolbarService, EditService, InfiniteScrollService],
-standalone: true,
+    imports: [ GridModule, SwitchModule ],
+    providers: [PageService, ToolbarService, EditService, InfiniteScrollService],
+    standalone: true,
     selector: 'app-root',
     template: `
             <div style="padding: 20px 0px 20px 0px">

@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, GroupService} from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { Data, } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { Data, GridModule, GroupService, PageService } from '@syncfusion/ej2-angular-grids';
 import { Query } from '@syncfusion/ej2-data';
 
 const oldGenerateQuery = Data.prototype.generateQuery;
@@ -46,6 +43,3 @@ export class AppComponent implements OnInit {
         this.initialPage = { pageSize: 5 };
     }
 }
-
-
-

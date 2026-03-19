@@ -1,15 +1,12 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { CommandModel, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { CommandColumnService, CommandModel, EditService, EditSettingsModel, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule, CommonModule ],
-providers: [EditService, CommandColumnService],
-standalone: true,
+    imports: [ GridModule, CommonModule ],
+    providers: [EditService, CommandColumnService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' height='310px'>
                 <e-columns>
@@ -37,7 +34,3 @@ export class AppComponent implements OnInit {
         { type: 'Cancel', buttonOption: { cssClass: 'e-flat', iconCss: 'e-cancel-icon e-icons' } }];
     }
 }
-
-
-
-

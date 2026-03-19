@@ -1,28 +1,23 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import {
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { 
+  EditService, 
+  FilterService, 
+  GridModule,
+  PageService, 
+  ToolbarService, 
   GridComponent,
   SelectionSettingsModel,
   PageSettingsModel,
   ColumnSelectEventArgs,
   ColumnSelectingEventArgs,
   ColumnDeselectEventArgs,
-  Column,
-} from '@syncfusion/ej2-angular-grids';
+  Column, } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [EditService, ToolbarService, PageService, FilterService],
-standalone: true,
+  imports: [ GridModule],
+  providers: [EditService, ToolbarService, PageService, FilterService],
+  standalone: true,
   selector: 'app-root',
   template: `<p id="message">{{ message }}</p>
             <div style="padding: 20px 0px 0px 0px">

@@ -1,22 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DetailRowService } from '@syncfusion/ej2-angular-grids'
-
-
-
+import { columnDataType, data } from './datasource';
 import { Component, OnInit } from '@angular/core';
-import { data, columnDataType } from './datasource';
-import { QueryCellInfoEventArgs, Column } from '@syncfusion/ej2-angular-grids';
+import { Column, DetailRowService, GridModule, QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule        
-    ],
-
-providers: [DetailRowService],
-standalone: true,
+  imports: [ GridModule ],
+  providers: [DetailRowService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-grid [dataSource]='data' [enableHover]='false' [allowSelection]='false' [height]='315' (queryCellInfo)='customizeCell($event)'>
                     <e-columns>
@@ -49,6 +38,3 @@ export class AppComponent implements OnInit {
     }
   }
 }
-
-
-

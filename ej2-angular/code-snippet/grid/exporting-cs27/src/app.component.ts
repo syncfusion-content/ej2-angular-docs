@@ -1,34 +1,19 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
-import {
-    ButtonModule,
-    CheckBoxModule,
-    RadioButtonModule,
-    SwitchModule,
-} from '@syncfusion/ej2-angular-buttons'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SwitchComponent, ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule,} from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, PdfExportProperties, PdfExportService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule,
-        CheckBoxModule,
-        RadioButtonModule,
-        SwitchModule,
-    ],
-
-providers: [PdfExportService, ToolbarService],
-standalone: true,
+    imports: [
+            GridModule,
+            ButtonModule,
+            CheckBoxModule,
+            RadioButtonModule,
+            SwitchModule,
+        ],
+    providers: [PdfExportService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div>
@@ -75,6 +60,3 @@ export class AppComponent implements OnInit {
         
     }
 }
-
-
-

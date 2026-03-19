@@ -1,29 +1,26 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-import { ReactiveFormsModule, FormsModule } from '@angular/forms'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { DataUtil } from '@syncfusion/ej2-data';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule, CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ButtonModule, CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { DialogEditEventArgs, EditService, EditSettingsModel, GridComponent, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
+import { DataUtil } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
+    imports: [
         CommonModule,
         ButtonModule,
         CheckBoxAllModule,
         TabAllModule,
         GridModule,
-        DropDownListAllModule, ReactiveFormsModule, FormsModule
-    ],
-
-providers: [EditService, ToolbarService],
-standalone: true,
+        DropDownListAllModule, 
+        ReactiveFormsModule, 
+        FormsModule
+        ],
+    providers: [EditService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     templateUrl: `tablikeedit.html`
 })
@@ -83,6 +80,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

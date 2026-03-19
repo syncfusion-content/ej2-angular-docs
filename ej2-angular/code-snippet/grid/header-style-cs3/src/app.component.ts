@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule ,PageService} from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 import { Cell, Column, HeaderCellInfoEventArgs } from '@syncfusion/ej2-grids';
 
 @Component({
@@ -42,5 +40,4 @@ export class AppComponent implements OnInit {
       (args.node as Element).classList.add('customcss');
     }
   }
-
 }

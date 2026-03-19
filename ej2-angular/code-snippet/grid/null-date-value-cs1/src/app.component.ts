@@ -1,8 +1,6 @@
-
-import { GridModule, SortService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, SortEventArgs, SortService } from '@syncfusion/ej2-angular-grids';
 
 let action: string;
 
@@ -48,4 +46,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-

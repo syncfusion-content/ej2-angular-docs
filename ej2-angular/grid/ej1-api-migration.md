@@ -161,7 +161,7 @@ This article provides comprehensive guidance for migrating Grid component APIs f
 |Reorder Columns| **Method:** *reorderColumns(fromFieldName, toFieldName)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.reorderColumns("OrderID", "CustomerID");`<br> &nbsp;`}`<br>`}` | **Method:** *reorderColumns(fromFieldName, toFieldName)*<br/><br/> `@ViewChild('grid') Grid: GridComponent;`<br>`this.Grid.reorderColumns("OrderID", "CustomerID");`
 |Reorder Rows| **Method:** *reorderRows(indexes, toIndex)* <br><br>`export class AppComponent {`<br>&nbsp;`@ViewChild('grid') Grid: EJComponents<any, any>;`<br> &nbsp;`ngAfterViewInit(){`<br>&nbsp;&nbsp;`this.Grid.widget.reorderRows([0,1],3);`<br> &nbsp;`}`<br>`}` | Not Applicable
 
-### Context Menu
+## Context Menu
 
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |
@@ -169,7 +169,7 @@ This article provides comprehensive guidance for migrating Grid component APIs f
 |Triggers when context menu item is clicked| **Event:** *contextClick* <br><br>`<ej-grid #grid (contextClick) = "contextClick($event)”>`<br>`</ej-grid>`<br> **TS** <br>`contextClick(e: any){}`| **Event:** *contextMenuClick* <br><br>`<ejs-grid (contextMenuClick)='contextMenuClick($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`contextMenuClick(args: any): void{}`
 |Triggers when context menu opens| **Event:** *contextOpen* <br><br>`<ej-grid #grid (contextOpen) = "contextOpen($event)”>`<br>`</ej-grid>`<br> **TS** <br>`contextOpen(e: any){}`| **Event:** *contextMenuOpen* <br><br>`<ejs-grid (contextMenuOpen)='contextMenuOpen($event)'>`<br>`</ejs-grid>`<br> **TS** <br>`contextMenuOpen(args: any): void{}`
 
-### Toolbar
+## Toolbar
 
 | Behavior | API in Essential JS 1 | API in Essential JS 2 |
 |--------- | ----------- | ----------- |

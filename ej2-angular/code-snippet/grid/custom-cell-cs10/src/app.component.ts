@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,DetailRowService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { DetailRowService, GridModule } from '@syncfusion/ej2-angular-grids';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 const instance: Internationalization = new Internationalization();
@@ -77,7 +75,3 @@ export class AppComponent implements OnInit {
 export interface DateFormat extends Window {
     format?: (value: Date) => string;
 }
-
-
-
-

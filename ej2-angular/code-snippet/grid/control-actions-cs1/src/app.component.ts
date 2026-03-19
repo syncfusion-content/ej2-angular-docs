@@ -1,18 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, SortService, FilterService, GroupService, ReorderService, ToolbarService, ResizeService, } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { FilterService, GridModule, GroupService, PageService, ReorderService, ResizeService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [GroupService, PageService, SortService, ReorderService, FilterService, ToolbarService, ResizeService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [GroupService, PageService, SortService, ReorderService, FilterService, ToolbarService, ResizeService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowPaging]='true'[allowSorting]='true' [allowFiltering]='true'  [allowReordering]='true' [allowResizing]='true' [toolbar]="toolbar" [allowGrouping]='true'>
                 <e-columns>

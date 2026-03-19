@@ -1,19 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
-
-
-import { Component, OnInit } from '@angular/core';
-import { EditSettingsModel, ToolbarItems, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { data, employeeData } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { EditService, EditSettingsModel, ForeignKeyService, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-standalone: true,
+    imports: [ GridModule ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' [height]='315'>
                     <e-columns>
@@ -40,6 +31,3 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
 }
-
-
-

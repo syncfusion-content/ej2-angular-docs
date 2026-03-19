@@ -14,7 +14,7 @@ The Grid component provides built-in support for sorting data-bound columns in a
 
 Sorting a particular column is accomplished by clicking on its column header. Each click on the header toggles the sort order between `Ascending` and `Descending`.
 
-To use the sorting feature, inject the `SortService` in the provider section of **AppModule**.
+To use the sorting feature, inject the `SortService` to the providers array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ To use the sorting feature, inject the `SortService` in the provider section of 
 
 The Grid component provided option to apply initial sorting by setting the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) property to the desired [field](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#field) and sort [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#direction). This feature is useful for displaying data in a specific order when the grid initially loads.
 
-The following example demonstrates setting [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) for "Order ID" and "Ship City" columns with a specified [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#direction).
+The following example demonstrates setting `sortSettings.columns` for "Order ID" and "Ship City" columns with a specified [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#direction).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,9 +77,7 @@ To clear multi-column sorting for a particular column, press <kbd>Shift</kbd> wh
 
 The Grid component provides the ability to prevent sorting for a particular column. This is useful when certain columns should not be included in the sorting process. 
 
-This is achieved by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowsorting) property of the particular column to `false`. 
-
-The following example demonstrates disabling sorting for "Customer ID" column.
+This is achieved by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowsorting) property of the particular column to `false`. The following example demonstrates disabling sorting for "Customer ID" column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -169,7 +167,7 @@ The following example demonstrates sorting with a foreign key column enabled, wh
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs10" %}
 
-> Make sure to inject the `ForeignKeyService` in the provider section of the **AppModule** to ensure its availability throughout the application.
+> Make sure to inject the `ForeignKeyService` in the provider section to ensure its availability throughout the application.
 
 **Sort foreign key column based on text for remote data**
 
@@ -260,7 +258,7 @@ public class ItemsController : ODataController
 
 ## Perform sorting based on its culture
 
-Perform sorting based on culture in the Grid can be achieved by utilizing the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) property. By setting the `locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
+Performing sorting based on culture in the grid can be achieved by utilizing the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) property. By setting the `locale` property to the desired culture code, sorting is enabled based on that specific culture. This applies locale-specific sorting rules and ensures accurate ordering for different languages and regions.
 
 In the following example, sorting is performed based on the "ar" locale using the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column#sortcomparer) property.
 
@@ -278,7 +276,7 @@ In the following example, sorting is performed based on the "ar" locale using th
 
 ## Customizing the sort icon
 
-Sort icon customization in the Grid is accomplished by overriding the default grid classes `.e-icon-ascending` and `.e-icon-descending` with custom content using CSS. The desired icons or symbols are specified using the `content` property as shown below:
+Sort icon customization in the grid is accomplished by overriding the default grid classes `.e-icon-ascending` and `.e-icon-descending` with custom content using CSS. The desired icons or symbols are specified using the `content` property as shown below:
 
 ```css
 .e-grid .e-icon-ascending::before {
@@ -327,9 +325,9 @@ The following example demonstrates adding sort columns to a grid. The `DropDownL
 
 ### Remove sort columns
 
-External removal of sort columns is accomplished using the `removeSortColumn` method provided by the Grid component. This method removes the sorting applied to a specific column.
+External removal of sort columns is accomplished using the "removeSortColumn" method provided by the Grid component. This method removes the sorting applied to a specific column.
 
-The following example demonstrates removing sort columns. The `DropDownList` component selects the column. When an external button is clicked, the `removeSortColumn` method removes the selected sort column.
+The following example demonstrates removing sort columns. The `DropDownList` component selects the column. When an external button is clicked, the "removeSortColumn" method removes the selected sort column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -361,30 +359,27 @@ The following example demonstrates to clear the sorting using `clearSorting` met
 	  
 {% previewsample "page.domainurl/samples/grid/sorting1-cs6" %}
 
-## Sorting Events
+## Sorting events
 
-The Grid component provides two events that are triggered during the sorting action such as [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete). These events can be used to perform any custom actions before and after the sorting action is completed.
+The Grid component provides two events that are triggered during the sorting action such as `actionBegin` and `actionComplete`. These events can be used to perform any custom actions before and after the sorting action is completed.
 
-1. **actionBegin**: [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event is triggered before the sorting action begins. It provides a way to perform any necessary operations before the sorting action takes place. This event provides a parameter that contains the current grid state, including the current sorting column, direction, and data.
+1. **[actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin)**: This event is triggered before the sorting action begins. It provides a way to perform any necessary operations before the sorting action takes place. This event provides a parameter that contains the current grid state, including the current sorting column, direction, and data.
 
-2. **actionComplete**: [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event is triggered after the sorting action is completed. It provides a way to perform any necessary operations after the sorting action has taken place. This event provides a parameter that contains the current grid state, including the sorted data and column information.
+2. **[actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete)**: This event is triggered after the sorting action is completed. It provides a way to perform any necessary operations after the sorting action has taken place. This event provides a parameter that contains the current grid state, including the sorted data and column information.
 
-The following example demonstrates the use of the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events work when sorting is performed. The `actionBegin` event event is used to cancel the sorting of the OrderID column. The `actionComplete` event is used to display a message.
+This example demonstrates that the `actionBegin` event is used to cancel sorting for the "OrderID" column, while the `actionComplete` event displays a message after the sorting action finishes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, SortService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, SortService, SortEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [GridModule],
-providers: [SortService],
-standalone: true,
+    imports: [GridModule],
+    providers: [SortService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="margin-left:100px;"><p style="color:red;" id="message">{{ message }}</p></div>

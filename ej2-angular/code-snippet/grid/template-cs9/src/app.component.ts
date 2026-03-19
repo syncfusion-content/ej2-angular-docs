@@ -1,8 +1,8 @@
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
 
 @Component({
     imports: [

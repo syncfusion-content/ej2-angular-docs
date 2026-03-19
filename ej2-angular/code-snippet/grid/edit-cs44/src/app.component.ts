@@ -1,23 +1,13 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { cascadeData } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, DropDownListModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, EditSettingsModel, GridComponent, GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
+    imports: [
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -26,10 +16,9 @@ imports: [
         TextBoxModule,
         MultiSelectModule,
         AutoCompleteModule
-    ],
-
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+        ],
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid  #grid [dataSource]='data' (load)="load()" [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
                 <e-columns>
@@ -62,6 +51,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-

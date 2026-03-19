@@ -200,10 +200,7 @@ In the following example, column selection is canceled when the value of `field`
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, PageService,EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import {
@@ -217,13 +214,9 @@ import {
 } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [EditService, ToolbarService, PageService, FilterService],
-standalone: true,
+  imports: [ GridModule],
+  providers: [EditService, ToolbarService, PageService, FilterService],
+  standalone: true,
   selector: 'app-root',
   template: `<p id="message">{{ message }}</p>
             <div style="padding: 20px 0px 0px 0px">

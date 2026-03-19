@@ -1,22 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-
-
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { EditService, EditSettingsModel, GridModule, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import { ToolbarItems,EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ToolbarService, EditService],
-standalone: true,
+    imports: [GridModule ],
+    providers: [ToolbarService, EditService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="margin-left:180px"><p style="color:red;" id="message">{{message}}</p></div>
@@ -49,6 +39,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

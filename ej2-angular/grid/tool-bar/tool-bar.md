@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing users to generate downloadable files in formats like Excel, CSV, or PDF.
 
-Enable the toolbar by injecting `ToolbarService` in the provider section of the **AppModule**. This service provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom toolbar items.
+Enable the toolbar by injecting `ToolbarService` in the providers section. This service provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom toolbar items.
 
 The following example demonstrates enabling toolbar items in the grid:
 
@@ -28,7 +28,7 @@ The following example demonstrates enabling toolbar items in the grid:
   
 {% previewsample "page.domainurl/samples/grid/toolbar-cs2" %}
 
-## Enable or Disable toolbar items
+## Enable or disable toolbar items
 
 Dynamically enable or disable toolbar items to control user actions based on application logic. Use the [enableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/grid#enabletoolbaritems) method to toggle availability of specific toolbar items as needed.
 
@@ -46,7 +46,7 @@ In the following example, the [EJ2 Toggle Switch Button component](https://ej2.s
   
 {% previewsample "page.domainurl/samples/grid/toolbar-enable-cs1" %}
 
-## Add Toolbar at the Bottom of the Grid
+## Add toolbar at the bottom of the Grid
 
 By default, the toolbar is placed at the top of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid. Adding the toolbar at the bottom of the grid keeps important actions and functionality consistently visible and easily accessible, eliminating the need for scrolling to locate toolbar operations.
 
@@ -66,7 +66,7 @@ The following example shows adding toolbar items at the bottom using the grid's 
   
 {% previewsample "page.domainurl/samples/grid/toolbar-enable-cs2" %}
 
-## Customize Toolbar Buttons Using CSS
+## Customize toolbar buttons using CSS
 
 Enhance the visual presentation of toolbar buttons in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid by modifying their appearance with CSS styles. This flexible approach creates a cohesive user interface tailored to application design requirements.
 

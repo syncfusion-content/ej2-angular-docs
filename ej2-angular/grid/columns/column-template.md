@@ -16,7 +16,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component prov
 
 ## Render image in a column
 
-To render an image in a grid column, define a template for the column using the `template` property. The `template` property accepts either an HTML element or a function that returns an HTML element. When using a function-based template, the Grid passes the current row's data as the "props" parameter. This allows accessing field values from the data source directly within the template (e.g., "props.EmployeeID", "props.ImageURL").
+To render an image in a grid column, define a column template using the `template` property. In Angular, the template is provided using the `ng-template` directive, where the current row data is exposed through a local template variable (for example, let-data). This allows access to field values from the data source directly within the template, such as "data.EmployeeID" or "data.ImageURL".
 
 The following example demonstrates defining a `template` for the "Employee Image" field that displays an image element. The `template` property is set to a function that returns an HTML element containing an image tag with "src" and "alt" attributes.
 
@@ -65,9 +65,9 @@ export class AppComponent implements OnInit {
 
 ## Render hyperlink in a column
 
-The Grid component provides support for rendering hyperlink columns and performing navigation on click using the `template` property. This feature is useful when displaying data that requires a link to another page or website. The template function receives the row data as "props", allowing access to field values. In the template, attach event handlers (for example, `onClick`) to trigger custom logic when the element is clicked. The event handler receives the click event and any additional parameters passed to it.
+The Grid component provides support for rendering hyperlink columns and performing navigation on click using the `template` property. This feature is useful when displaying data that requires a link to another page or website. In Angular, the current row data is exposed through a local template variable `let-data`, allowing access to field values. In the template, attach event handlers (for example, `(click)`) to trigger custom logic when the element is clicked. The event handler receives the click event and any additional parameters passed to it.
 
-The following example shows a hyperlink column in the Grid where the "hyperLinkTemplate" function returns an anchor tag that calls the `onClick` handler when clicked, opening a URL in a new window.
+The following example shows a hyperlink column in the Grid where the template renders an anchor tag that calls the `onClick` handler when clicked, opening a URL in a new window.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -329,9 +329,9 @@ The following example demonstrates rendering a RadioButton in the "Order Status"
 
 ## Using conditional template
 
-The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property supports conditional rendering using Angular directives like `*ngIf`. This allows displaying different template elements based on data conditions. Complex conditional logic may impact rendering performance, so minimize DOM  manipulation where possible.
+The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property supports conditional rendering using Angular directives like `*ngIf`. This allows displaying different template elements based on data conditions. Complex conditional logic may impact rendering performance, so minimize DOM manipulation where possible.
 
-The following example demonstrates rendering a checkbox conditionally based on the "Discontinued" field value. The template uses a ternary operator to check if "props.Discontinued" is `true`. If `true`, it renders a checked checkbox; otherwise, it renders an unchecked checkbox. 
+The following example demonstrates rendering a checkbox conditionally based on the "Discontinued" field value. The template uses Angular's `*ngIf` directive to check if `data.Discontinued` is `true`. If `true`, it renders a checked checkbox; otherwise, it renders an unchecked checkbox. 
 
 ```
 <e-column headerText='Discontinued' width='150' textAlign='Center'>
@@ -512,10 +512,8 @@ The following example enables Aria labels for the "Employee Image" column and di
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
 

@@ -1,26 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, DetailRowService } from '@syncfusion/ej2-angular-grids'
-
-
-
-
-import { Component, OnInit } from '@angular/core';
 import { data, employeeData, ParentDetailsDataType } from './datasource';
-import { GridModel, ParentDetails } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { DetailRowService, FilterService, GridModel, GridModule, PageService, ParentDetails, SortService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-        SortService,
-        FilterService,
-        DetailRowService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PageService, SortService, FilterService, DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="margin-left:100px;">
@@ -61,6 +46,3 @@ export class AppComponent implements OnInit {
         this.parentData = employeeData;
     }
 }
-
-
-

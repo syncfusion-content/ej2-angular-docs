@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ResizeService, ToolbarService, ColumnChooserService,PageService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ActionEventArgs, GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActionEventArgs, ColumnChooserService, GridComponent, GridModule, PageService, ResizeService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   imports: [GridModule],

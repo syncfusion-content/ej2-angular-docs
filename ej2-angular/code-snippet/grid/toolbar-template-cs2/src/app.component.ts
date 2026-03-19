@@ -1,26 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService,  PdfExportService, ExcelExportService  } from '@syncfusion/ej2-angular-grids'
-import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { ExcelExportService, GridComponent, GridModule, PdfExportService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ToolbarModule,
-        ButtonModule
-    ],
-
-providers: [ToolbarService, PdfExportService, ExcelExportService],
-standalone: true,
+    imports: [GridModule,ToolbarModule, ButtonModule ],
+    providers: [ToolbarService, PdfExportService, ExcelExportService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px'  [allowExcelExport]="true" [allowPdfExport]="true">
                 <ng-template #toolbarTemplate let-data>
@@ -60,6 +47,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

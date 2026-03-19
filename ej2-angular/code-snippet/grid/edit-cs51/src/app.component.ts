@@ -1,23 +1,12 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, GroupService  } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { cascadeData } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent, SelectionSettingsModel, KeyboardEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { EditService, EditSettingsModel, GridComponent, GridModule, GroupService, KeyboardEventArgs, SelectionSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        FormsModule,
-    ],
-
-providers: [EditService, ToolbarService, GroupService],
-standalone: true,
+    imports: [ GridModule,FormsModule ],
+    providers: [EditService, ToolbarService, GroupService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid  #grid [dataSource]='data' (keyPressed)="keyPressed($event)" [editSettings]='editSettings' [toolbar]='toolbar' height='247px' allowGrouping="true" [selectionSettings]='selectionOptions' >
                 <e-columns>
@@ -103,6 +92,3 @@ export class AppComponent implements OnInit {
     }
 
 }
-
-
-

@@ -107,7 +107,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows dynam
 
 To create dynamically generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component using the ngFor directive, first define an array of column objects in the component.ts file. Each column object should include a [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property, which will be used to bind the corresponding properties of the `e-column` component.
 
-Here is an example of dynamically generating columns in the grid using the \*ngFor` directive:`
+Here is an example of dynamically generating columns in the grid using the `*ngFor` directive:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,7 +132,7 @@ To use the `valueAccessor` property, define the column with the property and pro
 * `data`: represents the data record for the corresponding row.
 * `column`: represents the current column object.
 
-In the provided code, the `currencyFormatter` function takes the Freight value of the data object, appends the Euro symbol to it, and returns the formatted string. The `concatenateFields` function concatenates the ShipCity and ShipRegion values of the data object and returns the combined string.
+In the provided code, the `currencyFormatter` function takes the Freight value of the data object, appends the "Euro" symbol to it, and returns the formatted string. The `concatenateFields` function concatenates the "ShipCity" and "ShipRegion" values of the data object and returns the combined string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

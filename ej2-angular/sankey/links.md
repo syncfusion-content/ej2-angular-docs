@@ -26,6 +26,8 @@ The `linkStyle` property allows you to customize opacity, curvature, color blend
 
 ## Basic Link Customization
 
+Customize global link appearance using the `linkStyle` property.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sankey/links/customization-cs1/src/app.component.ts %}
@@ -39,15 +41,65 @@ The `linkStyle` property allows you to customize opacity, curvature, color blend
 
 ## Link Curvature and Color
 
-Use `curvature` to control the link bend and `colorType` to determine whether links inherit source, target, or blended colors.
+The `curvature` property controls the bend of the links, affecting the visual flow representation:
 
-## Link Thickness
+- **Value 0**: Creates straight lines between nodes
+- **Value 0.5-0.7**: Creates moderate curves (often preferred for readability)
+- **Value 1.0**: Creates maximum curvature with smooth paths
 
-Link thickness is driven by the `value` property on the link data; larger values render thicker links.
+Choose curvature values based on your data density and aesthetic preferences:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/sankey/links/curvature-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/sankey/links/curvature-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/sankey/links/curvature-cs1" %}
+
+## Link Color Type
+
+The `colorType` property determines how links are colored, providing flexibility in visual representation:
+
+- **'Source'**: Links inherit the color of their source node (useful for tracking origin)
+- **'Target'**: Links inherit the color of their target node (useful for tracking destination)
+- **'Blend'**: Links display a smooth gradient blend of source and target node colors (default - recommended for most cases)
+
+The color type you choose affects how users perceive flow relationships in the diagram:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/sankey/links/colortype-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/sankey/links/colortype-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/sankey/links/colortype-cs1" %}
+
+## Link Value and Thickness
+
+The link thickness is determined by the `value` property in the link data. This quantitative value is automatically mapped to the visual thickness of the link:
+
+- **Larger values**: Create thicker links (proportional to the value)
+- **Smaller values**: Create thinner links
+- **Equal values**: Create links of equal thickness
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/sankey/links/thickness-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/sankey/links/thickness-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/sankey/links/thickness-cs1" %}
 
 ## Advanced Link Configuration
 
-Use the `linkRendering` event to customize individual links dynamically during rendering.
+Use the `linkRendering` event to customize link appearance dynamically during the render process. This event is triggered for each link before rendering, allowing you to apply conditional styling based on flow values, source-target combinations, or other data attributes:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

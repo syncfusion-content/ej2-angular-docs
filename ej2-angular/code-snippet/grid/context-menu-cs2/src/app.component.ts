@@ -1,23 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, ContextMenuService,  } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
-import { GridComponent, ContextMenuItemModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ContextMenuItemModel, ContextMenuService, GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ContextMenuService, PageService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [ContextMenuService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='grid' [dataSource]='data' [allowSelection]='true' 
                 [allowPaging]='true'height='265px' [contextMenuItems]='contextMenuItems' 
@@ -48,6 +37,3 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
-

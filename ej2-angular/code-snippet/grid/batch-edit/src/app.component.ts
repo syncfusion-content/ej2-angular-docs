@@ -1,22 +1,14 @@
-import { NgModule } from '@angular/core'
-import { FormsModule } from '@angular/forms'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
-import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { AutoCompleteModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { EditService, EditSettingsModel, GridComponent, GridModule, PageService, SortService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 
 @Component({
     imports: [
-
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -26,7 +18,6 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
         MultiSelectModule,
         AutoCompleteModule
     ],
-
     providers: [EditService, ToolbarService, SortService, PageService],
     standalone: true,
     selector: 'app-root',
@@ -58,7 +49,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
-            this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
+        this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
         this.orderIDrules = { required: true, number: true };
         this.customerIDrules = { required: true };
         this.freightrules = { min: 1, max: 1000 };
@@ -102,6 +93,3 @@ export class AppComponent implements OnInit {
             (this.grid as GridComponent).getColumnByIndex(parseInt(args.getAttribute('aria-colindex') as string) - 1).field);
     }
 }
-
-
-

@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService,FilterSettingsModel} from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { FilterService, FilterSettingsModel, GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [GridModule],
@@ -44,6 +42,3 @@ export class AppComponent implements OnInit {
         };
     }
 }
-
-
-

@@ -1,55 +1,32 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, EditService, ToolbarService, AggregateService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AggregateService, EditService, FilterService, GridComponent, GridModule, PageService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                EditService,
-                ToolbarService,
-                AggregateService],
-standalone: true,
+    imports: [GridModule],
+    providers: [PageService, SortService, FilterService, EditService, ToolbarService, AggregateService],
+    standalone: true,
     selector: 'app-root',
-    template: `<div class="e-adaptive-demo e-bigger">
-                    <div class="e-mobile-layout">
-                        <div class="e-mobile-content">
-                           <ejs-grid #adaptive id="adaptivebrowser" [dataSource]='data' enableAdaptiveUI='true'
-                    height='100%' allowPaging='true' allowFiltering='true'
-                    allowSorting='true' [editSettings]='editSettings'
+    template: `
+    <div class="e-adaptive-demo e-bigger">
+        <div class="e-mobile-layout">
+            <div class="e-mobile-content">
+                <ejs-grid #adaptive id="adaptivebrowser" [dataSource]='data' enableAdaptiveUI='true'height='100%' allowPaging='true' allowFiltering='true' allowSorting='true' [editSettings]='editSettings'
                     [filterSettings]='filterSettings' [toolbar]='toolbar' (load)='onLoad()'>
                     <e-columns>
-                        <e-column field='SNO' headerText='S NO' width='150' isPrimaryKey='true' [validationRules]='orderidrules'>
-                        </e-column>
-                        <e-column field='Model' headerText='Model' width='200' editType='dropdownedit'
-                            [validationRules]='customeridrules'>
-                        </e-column>
+                        <e-column field='SNO' headerText='S NO' width='150' isPrimaryKey='true' [validationRules]='orderidrules'></e-column>
+                        <e-column field='Model' headerText='Model' width='200' editType='dropdownedit' [validationRules]='customeridrules'></e-column>
                         <e-column field='Developer' headerText='Developer' width='200' [validationRules]='customeridrules' [filter]='menuFilter'></e-column>
-                        <e-column field='ReleaseDate' headerText='Released Date' width='200' type='date' format='yMMM' editType='datepickeredit'>
+                        <e-column field='ReleaseDate' headerText='Released Date' width='200' type='date' format='yMMM' editType='datepickeredit'></e-column>
                         <e-column field='AndroidVersion' headerText='Android Version' width='200' [validationRules]='customeridrules' [filter]='checkboxFilter'></e-column>
                         </e-column>
                     </e-columns>
                 </ejs-grid>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="datalink">Source:
-                  <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"
-                    target="_blank">Wikipedia: List of Android smartphones</a>
-                    </div>
-                </div>`
+            </div>
+        </div>
+        <br />
+        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones" target="_blank">Wikipedia: List of Android smartphones</a></div>
+    </div>`
 })
 
 export class AppComponent implements OnInit {
@@ -83,5 +60,3 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
     }
 }
-
-

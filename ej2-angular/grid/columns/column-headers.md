@@ -43,13 +43,11 @@ The following example demonstrates custom elements rendered for the "Customer ID
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule, SwitchModule  } from '@syncfusion/ej2-angular-buttons'
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ButtonModule, SwitchModule, ChangeEventArgs  } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
   imports: [ GridModule, DropDownListAllModule, ButtonModule,SwitchModule ],
@@ -57,12 +55,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
   selector: 'app-root',
   template: `<ejs-grid [dataSource]="data" height="315px">
               <e-columns>
-                <e-column
-                  field="OrderID"
-                  headerText="Order ID"
-                  textAlign="Right"
-                  width="120">
-                </e-column>
+                <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-column>
                 <e-column field="CustomerID" headerText="Customer ID" width="140">
                   <ng-template #headerTemplate let-data>
                     <div>
@@ -125,10 +118,8 @@ The `headerText` property of each sub-header column sets the display text. The a
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService,ColumnModel } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { GridModule,PageService,ColumnModel } from '@syncfusion/ej2-angular-grids';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit } from '@angular/core';
 import { orderDetails } from './datasource';
 
@@ -406,7 +397,7 @@ To change header text for all columns, loop through the columns collection and s
 
 ## Change the orientation of header text
 
-By default, column header text in the Grid is oriented horizontally. In data visualization scenarios—especially grids with many columns where horizontal headers consume excessive space—rotating the header text vertically, diagonally, or at a custom angle optimizes layout and enhances visual hierarchy and readability. This can be achieved by applying a custom CSS class to the header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column#customattributes) property, then defining CSS transformations.
+By default, column header text in the Grid is oriented horizontally. In data visualization scenarios especially grids with many columns where horizontal headers consume excessive space rotating the header text vertically, diagonally, or at a custom angle optimizes layout and enhances visual hierarchy and readability. This can be achieved by applying a custom CSS class to the header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/grid/column#customattributes) property, then defining CSS transformations.
 
 Follow these steps to change header text orientation in Grid:
 
@@ -445,7 +436,7 @@ setHeaderHeight(args) {
 
 ```
 
-The following example demonstrates changing the orientation of the "Freight" column header text to 90 degrees:
+The following example demonstrates changing the orientation of the "Freight" column header text to "90" degrees:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -461,13 +452,13 @@ The following example demonstrates changing the orientation of the "Freight" col
 
 ## Translate header text using ngx-translate 
 
-The ngx-translate library provides `internationalization (i18n)` and `localization (l10n)` support for Angular applications. With ngx-translate, Angular applications can be easily translated into multiple languages.
+The `ngx-translate` library provides `internationalization (i18n)` and `localization (l10n)` support for Angular applications. With `ngx-translate`, Angular applications can be easily translated into multiple languages.
 
 In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, ngx-translate can be used to translate the header text of the Grid's columns. There are two ways to achieve this: through header text and through header template.
 
 ### Through header text  
 
-To translate the header text of the Grid's columns using `gx-translate` through header text, use the `translate` pipe for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property.
+To translate the header text of the Grid's columns using `ngx-translate` through header text, use the `translate` pipe for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property.
 
 **Step 1**: Create and Configure the TranslateService
 
@@ -563,7 +554,7 @@ export class AppComponent {
 {% endtabs %}
 
 
-**Step 3**: Import the `TranslateModule` and `TranslateLoader` in the app.module.ts file. Also import the `HttpClientModule` to enable HTTP requests for loading translation files.
+**Step 3**: Import the `TranslateModule` and `TranslateLoader` in the **app.module.ts** file. Also import the `HttpClientModule` to enable HTTP requests for loading translation files.
 
 ```ts
 

@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, SearchService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [SearchService, ToolbarService],
-standalone: true,
+    imports: [GridModule ],
+    providers: [SearchService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' (created)='created()' height='273' width='100%'>
                 <e-columns>
@@ -45,6 +35,3 @@ export class AppComponent implements OnInit {
         });
     }
 }
-
-
-

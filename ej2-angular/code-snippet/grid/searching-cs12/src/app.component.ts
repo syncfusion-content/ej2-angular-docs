@@ -1,13 +1,11 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Component, OnInit, Inject, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridModule, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component,  OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [GridModule],
-providers: [ToolbarService],
-standalone: true,
+  imports: [GridModule],
+  providers: [ToolbarService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data' allowPaging="true" [pageSettings]='pageSettings' [toolbar]='toolbar' (created)="created($event)" height='273px'>
            <e-columns>
@@ -46,5 +44,3 @@ export class AppComponent implements OnInit {
     ((this.grid as any).element.querySelector(".e-input-group.e-search .e-input") as any).value = "";
   }
 }
-
-

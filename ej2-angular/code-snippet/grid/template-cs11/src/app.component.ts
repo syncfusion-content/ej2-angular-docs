@@ -1,16 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-    ChipListModule,
-    GridModule
-],
-standalone: true,
+    imports: [ ChipListModule, GridModule],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height='315px'>
                     <e-columns>

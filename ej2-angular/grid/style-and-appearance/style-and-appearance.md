@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Grid component offers various ways to customize its appearance using both default CSS and custom themes. Common approaches:
 
-**Default CSS Overrides**
+**Default CSS overrides**
 
 Custom CSS can override the default styles of the Grid component. This allows changes to colors, fonts, paddings, and more. Inspect the generated HTML of the grid using browser developer tools to identify the relevant CSS classes and styles.
 
@@ -37,7 +37,7 @@ Syncfusion's Theme Studio tool allows creation of custom themes for all controls
 3. Customize various aspects of the control's appearance, such as colors, typography, and spacing.
 4. Download the generated CSS file and include it in the Angular project.
 
-## Customize the Grid Root element
+## Customize the Grid root element
 
 The `.e-grid` class is used to style the root element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
 

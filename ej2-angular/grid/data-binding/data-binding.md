@@ -32,7 +32,7 @@ To achieve this, the [loadingIndicator.indicatorType](https://ej2.syncfusion.com
 - `Spinner` (default)
 - `Shimmer`
 
-The following example demonstrates setting the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/javascript/documentation/api/grid/loadingindicatormodel#indicatortype) property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/index-default#change) event of the `DropDownList` component. The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method is used to apply the changes and display the updated loading indicator type.
+The following example demonstrates setting the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/index-default#change) event of the `DropDownList` component. The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method is used to apply the changes and display the updated loading indicator type.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,7 @@ The following example demonstrates adding a new record to the data source throug
 
 ## Dynamically change the datasource or columns or both
 
-he Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component supports dynamic modification of the data source, columns, or both. This feature refreshes the grid's content and structure without requiring a complete page reload.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component supports dynamic modification of the data source, columns, or both. This feature refreshes the grid's content and structure without requiring a complete page reload.
 
 To achieve dynamic changes, the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#changedatasource) method can be utilized. This method enables updating the data source, columns, or both, based on application requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset. The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 

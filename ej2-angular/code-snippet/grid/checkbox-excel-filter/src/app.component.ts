@@ -1,10 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, FilterService, SortService } from '@syncfusion/ej2-angular-grids'
 import { Component, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { Query, DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { FilterService, GridComponent, GridModule, PageService, SortService } from '@syncfusion/ej2-angular-grids';
+import { DataManager, Query, UrlAdaptor } from '@syncfusion/ej2-data';
 
 const SERVICE_URI: string = 'https://services.syncfusion.com/angular/production/';
 @Component({
@@ -37,5 +33,4 @@ export class AppComponent {
       this.pageSettings = { pageCount: 5 };
       this.filterSettings = { type: 'Excel', enableInfiniteScrolling: true };
   };
-
 }

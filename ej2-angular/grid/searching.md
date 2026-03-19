@@ -14,7 +14,7 @@ The Syncfusion Angular Grid includes a powerful built-in searching feature that 
 
 ## Enable searching
 
-To use the searching feature, need to inject `SearchService` in the provider section.
+To use the searching feature, need to inject `SearchService` in the providers section.
 
 In addition, a search text box can be placed directly in the grid [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) to provide a convenient place to enter search criteria. This can be done by injecting the `Toolbar` module into the grid and configuring the `toolbar` property with `Search` item.
 
@@ -32,7 +32,7 @@ The following example demonstrates enabling the `toolbar` with search option in 
   
 {% previewsample "page.domainurl/samples/grid/searching-cs1" %}
 
-> * The clear icon is shown in the Data Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the grid.
+> * The clear icon is shown in the Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the grid.
 > * In Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
 
 ## Initial search
@@ -209,7 +209,7 @@ In the following example, the `actionBegin` event checks if a column has formatt
 
 ## Perform search operation in Grid using multiple keywords
 
-The Grid component supports searching with multiple keywords simultaneously. This enables narrowing search results by matching multiple conditions at once. For example, finding records where CustomerID contains "A" AND ShipCountry contains "US".
+The Grid component supports searching with multiple keywords simultaneously. This enables narrowing search results by matching multiple conditions at once. For example, finding records where CustomerID contains "A" and ShipCountry contains "US".
 
 Implementation of multi-keyword search:
 
@@ -236,7 +236,7 @@ On the other hand, the [actionComplete](https://ej2.syncfusion.com/angular/docum
 
 > By using multiple keywords, searches are more flexible and powerful. Keywords are split by a delimiter and combined using `OR` logic, meaning the grid displays records matching any of the provided keywords.
 
-## Ignoring Accents While Searching
+## Ignoring accents while searching
 
 By default, the search operation distinguishes between characters with and without accents (diacritics). For example, searching for "Chai" does not find "Chäi". Set the [searchSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings#ignoreaccent) property to `true` to make the search accent-insensitive.
 

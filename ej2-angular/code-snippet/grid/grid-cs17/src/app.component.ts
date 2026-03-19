@@ -1,21 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, Column, TextAlign } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Column, GridComponent, GridModule, TextAlign } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListModule
-    ],
-
-standalone: true,
+    imports: [ GridModule, DropDownListModule ],
+    standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">

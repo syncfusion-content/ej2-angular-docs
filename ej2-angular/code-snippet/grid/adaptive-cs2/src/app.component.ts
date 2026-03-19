@@ -1,33 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, EditService, ToolbarService, AggregateService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, RowRenderingDirection } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
-import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { AggregateService, EditService, FilterService, GridComponent, GridModule, PageService, RowRenderingDirection, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                EditService,
-                ToolbarService,
-                AggregateService],
-standalone: true,
+    imports: [ GridModule, DropDownListModule ],
+    providers: [PageService, SortService, FilterService, EditService, ToolbarService, AggregateService],
+    standalone: true,
     selector: 'app-root',
     template: `
-
         <div style="display: flex; padding: 0px 0px 20px 200px">
             <label style="padding: 30px 17px 0 0;"> Select row rendering mode :</label>
             <ejs-dropdownlist #dropdown style="padding: 26px 0 0 0" index="0" width="150" 
@@ -112,5 +93,3 @@ export class AppComponent implements OnInit {
         (this.grid as GridComponent).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
     }
 }
-
-

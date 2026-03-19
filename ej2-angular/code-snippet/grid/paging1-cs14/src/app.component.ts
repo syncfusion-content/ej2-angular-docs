@@ -1,13 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { Component, OnInit } from '@angular/core';
 import { orderDetails } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule],
-providers: [PageService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]='initialPage'>
                     <e-columns>

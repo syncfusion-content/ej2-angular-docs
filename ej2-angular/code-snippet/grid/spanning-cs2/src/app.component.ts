@@ -1,22 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit } from '@angular/core';
-import { QueryCellInfoEventArgs, GridLine, Column } from '@syncfusion/ej2-angular-grids';
 import { columnSpanData, ColumnSpanDataType } from './datasource';
+import { Component, OnInit } from '@angular/core';
+import { Column, GridLine, GridModule, QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-
-standalone: true,
+    imports: [ GridModule ],
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [height]='300' [width]='width' [gridLines]='gridLines'
+    template: `<ejs-grid [dataSource]='data' height='300px' [width]='width' [gridLines]='gridLines'
        [allowTextWrap]='textWrap' (queryCellInfo)='queryCellInfoEvent($event)'>
         <e-columns>
             <e-column field='EmployeeID' headerText='Employee ID' width='150' textAlign="Right" isPrimaryKey=true></e-column>
@@ -142,6 +133,3 @@ export class AppComponent implements OnInit {
         this.textWrap = true;
     }
 }
-
-
-

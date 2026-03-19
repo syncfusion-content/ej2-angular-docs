@@ -1,18 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ReorderService, ColumnModel,Column } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { Column, ColumnModel, GridComponent, GridModule, ReorderService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        GridModule,
-        ButtonModule
-    ],
-providers: [ReorderService],
-standalone: true,
+  imports: [ GridModule, ButtonModule ],
+  providers: [ReorderService],
+  standalone: true,
     selector: 'app-root',
     template: `<button ejs-button id='reorderColumn' cssClass="e-info" (click)='reorderColumnUsingColumnModel()'>Reorder Column</button>
      <button ejs-button id='reorderChildColumn' cssClass="e-info" (click)='reorderChildColumnUsingColumnModel()'>Reorder Stacked ChildColumn</button>

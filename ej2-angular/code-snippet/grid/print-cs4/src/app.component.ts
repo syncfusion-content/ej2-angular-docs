@@ -1,22 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, PrintEventArgs, ToolbarItems, PageSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule, PageService, PageSettingsModel, PrintEventArgs, SelectionSettingsModel, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { createElement } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ToolbarService, PageService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [ToolbarService, PageService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='grid' [dataSource]='data' [allowPaging]='true'
                [pageSettings]='pageOptions' [selectionSettings]="selectionSettings" (beforePrint)='beforePrint($event)' [toolbar]='toolbarOptions'>

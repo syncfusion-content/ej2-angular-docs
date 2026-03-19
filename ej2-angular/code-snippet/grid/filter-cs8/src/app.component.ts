@@ -1,26 +1,18 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
-import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { FilterSettingsModel,GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { CheckBoxSelectionService, DropDownListAllModule, MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { FilterService, FilterSettingsModel, GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
+    imports: [  
         GridModule,
         MultiSelectModule,
         DropDownListAllModule,
         ButtonModule
     ],
-
-providers: [FilterService, PageService,CheckBoxSelectionService],
-standalone: true,
+    providers: [FilterService, PageService,CheckBoxSelectionService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <button ejs-button cssClass="e-outline" (click)="onSingleValueFilter()">Filter with single value</button>
@@ -60,6 +52,3 @@ export class AppComponent implements OnInit {
         ]); 
     }
 }
-
-
-

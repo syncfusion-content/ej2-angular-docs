@@ -1,18 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { inventoryData } from './datasource';
-import { GridComponent, TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChangeEventArgs, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule, PageService, TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule, DropDownListAllModule],
-providers: [PageService],
-standalone: true,
+  imports: [ GridModule, DropDownListAllModule],
+  providers: [PageService],
+  standalone: true,
   selector: 'app-root',
   template: ` 
     <div style="display: flex">
@@ -53,8 +47,4 @@ export class AppComponent implements OnInit {
   valueChange(args: ChangeEventArgs): void {
     (this.grid as GridComponent).textWrapSettings.wrapMode = args.value as WrapMode;
   }
-
 }
-
-
-

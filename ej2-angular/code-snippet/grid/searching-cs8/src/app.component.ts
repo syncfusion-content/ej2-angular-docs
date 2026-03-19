@@ -1,11 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, SearchEventArgs, GridComponent, QueryCellInfoEventArgs, Column } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Column, GridComponent, GridModule, QueryCellInfoEventArgs, SearchEventArgs, SearchService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 interface ColumnData{
   [key: string]: number| string;
@@ -19,13 +14,9 @@ interface ColumnData{
 
 }
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [SearchService, ToolbarService],
-standalone: true,
+    imports: [ GridModule ],
+    providers: [SearchService, ToolbarService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' (actionBegin)="actionBegin($event)" (queryCellInfo)="queryCellInfo($event)" height='273' width='100%'>
                 <e-columns>
@@ -76,8 +67,3 @@ export class AppComponent implements OnInit {
         cellEl.innerHTML = highlighted;
    }
 }
-
-
-
-
-

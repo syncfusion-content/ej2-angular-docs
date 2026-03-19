@@ -192,20 +192,21 @@ The Grid provides keyboard navigation and follows WAI‑ARIA [keyboard interacti
 -----|----- | -----
 <kbd>Ctrl + left arrow or right arrow</kbd> | <kbd>Command + left arrow or right arrow</kbd> | Moves the selected header column to the left or right.
 
-**Windows**  | **MAC** | **To do this**
------|----- | -----
-<kbd>Enter</kbd> | <kbd>Enter</kbd> | Executes sorting (ascending or descending) on a column when its header element is focused.
-<kbd>Ctrl + Enter</kbd> | <kbd>Command + Enter</kbd> | Executes multi-sorting on a column when its header element is focused.
-<kbd>Shift + Enter</kbd> | <kbd>Shift + Enter</kbd> | Removes sorting from the currently focused header column.
-<br>
 
-> The <kbd>Command</kbd> and <kbd>Control</kbd> keys on Mac devices can be interchanged. When this switch occurs, use the <kbd>Command</kbd> key in place of the <kbd>Control</kbd> key and the <kbd>Control</kbd> key in place of the <kbd>Command</kbd> key for the above listed key interactions with Mac devices. For example, after switching the keys to group the columns when the header element is focused use <kbd>Command + Space</kbd> and for expanding the visible groups use <kbd>Ctrl + Down Arrow</kbd>.
+| **Windows** | **Mac** | **Action** |
+|-------------|----------|-------------|
+| <kbd>Enter</kbd> | <kbd>Enter</kbd> | Applies sorting (cycles through ascending → descending → none) on the focused column. |
+| <kbd>Ctrl</kbd> + <kbd>Enter</kbd> | <kbd>Command</kbd> + <kbd>Enter</kbd> | Adds the focused column to **multi-sorting**. |
+| <kbd>Shift</kbd> + <kbd>Enter</kbd> | <kbd>Shift</kbd> + <kbd>Enter</kbd> | Removes sorting from the focused column. 
+
+
+> * The <kbd>Command</kbd> and <kbd>Control</kbd> keys on Mac devices can be interchanged. 
+> * When this switch occurs, use the <kbd>Command</kbd> key in place of the <kbd>Control</kbd> key and the <kbd>Control</kbd> key in place of the <kbd>Command</kbd> key for the above listed key interactions with Mac devices. 
+> * For example, after switching the keys to group the columns when the header element is focused use <kbd>Command + Space</kbd> and for expanding the visible groups use <kbd>Ctrl + Down Arrow</kbd>.
 
 ### Preventing Default Key Actions
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the capability to disable the default key action behavior according to application needs.
-
-This allows the application to intercept and modify the response when specific keys are pressed within the web interface.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the capability to disable the default key action behavior according to application needs. This allows the application to intercept and modify the response when specific keys are pressed within the web interface.
 
 To disable the default key action in the grid, use the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#keypressed) event.
 
@@ -231,7 +232,7 @@ Use the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/i
 
 The example below demonstrates using shortcut keys to execute grid actions via the `keyPressed` event. Define the following custom shortcuts within the event to execute different grid actions:
 
-* Pressing N adds a new record.
+* Pressing <kbd>N</kbd> adds a new record.
 * Pressing <kbd>Ctrl + S</kbd> saves a record by calling `endEdit`.
 * Pressing <kbd>Ctrl + D</kbd> deletes a record.
 * Pressing <kbd>Ctrl + A</kbd> selects all rows.
@@ -268,36 +269,29 @@ The accessibility compliance of the Grid component is shown in the following sam
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, ReorderService, FilterService, GroupService, ColumnChooserService, 
-AggregateService, ToolbarService, SelectionService, RowDDService,   } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { PageSettingsModel, ToolbarItems, SearchSettingsModel, SelectionSettingsModel, 
-    FilterSettingsModel, GroupSettingsModel, EditSettingsModel, SortSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { PageSettingsModel, ToolbarItems, SearchSettingsModel,SelectionSettingsModel,GridModule, PageService, SortService, ReorderService, FilterService, GroupService, ColumnChooserService, 
+AggregateService, ToolbarService, SelectionService, RowDDService,FilterSettingsModel,GroupSettingsModel, EditSettingsModel, SortSettingsModel } from '@syncfusion/ej2-angular-grids';
   
-
 @Component({
-imports: [GridModule],
-providers: [
-        PageService,
-        SortService,
-        ReorderService,
-        FilterService,
-        GroupService,
-        AggregateService,
-        ToolbarService,
-        SelectionService,
-        RowDDService,
-        ColumnChooserService  ],
-standalone: true,
-selector: 'app-root',
-template: `
+    imports: [GridModule],
+    providers: [
+            PageService,
+            SortService,
+            ReorderService,
+            FilterService,
+            GroupService,
+            AggregateService,
+            ToolbarService,
+            SelectionService,
+            RowDDService,
+            ColumnChooserService  ],
+    standalone: true,
+    selector: 'app-root',
+    template: `
     <ejs-grid [dataSource]='data' [allowPaging]="true" [pageSettings]="pageSettings" 
-    [searchSettings]='searchOptions'   [toolbar]='toolbarOptions'  [allowReordering]='true' [allowSorting]="true"
-    [allowReordering]='true' [allowRowDragAndDrop]='true' [selectionSettings]='selectionOptions' [selectedRowIndex]='6' [allowSorting]="true" [sortSettings]='sortOptions'
+    [searchSettings]='searchOptions'   [toolbar]='toolbarOptions'  [allowReordering]='true' [allowSorting]="true" [allowReordering]='true' [allowRowDragAndDrop]='true' [selectionSettings]='selectionOptions' [selectedRowIndex]='6' [allowSorting]="true" [sortSettings]='sortOptions'
     [allowFiltering]="true" [filterSettings]='filterOptions' [allowGrouping]="true" [groupSettings]='groupOptions' [editSettings]='editSettings' [showColumnChooser]= 'true'>
         <e-columns>
             <e-column type="checkbox" width=50></e-column>

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property to customize the text shown in group row titles.  This feature enhances the visual presentation of grouped data by allowing the display of grouped values, record counts, and custom HTML elements such as icons or images.
 
-The [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property allows for flexible customization. The `data` parameter within the template provides access to properties such as `field` (the column's field name), `headerText` (column's header display text), `key` (grouped value), and `count` (number of grouped records). These properties provide dynamic values that can be integrated into the caption for context-aware display.
+The `captionTemplate` property allows for flexible customization. The `data` parameter within the template provides access to properties such as `field` (the column's field name), `headerText` (column's header display text), `key` (grouped value), and `count` (number of grouped records). These properties provide dynamic values that can be integrated into the caption for context-aware display.
 
 The following example illustrates displaying the `headerText`, `key`, and `count` within a customized group caption.
 
@@ -120,7 +120,7 @@ Localization can be achieved using the `L10n.load()` and `setCulture()` methods 
 
 ## Render custom component in group caption
 
-The Grid supports rendering custom components within group captions using the `captionTemplate` property. This functionality enables the integration of interactive UI elements such as buttons, icons, or dropdowns directly within the group caption row, enhancing both functionality and presentation.
+The Grid supports rendering custom components within group captions using the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property. This functionality enables the integration of interactive UI elements such as buttons, icons, or dropdowns directly within the group caption row, enhancing both functionality and presentation.
 
 In the example below, the [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component is rendered through the caption template, with its text value dynamically assigned based on the group key.
 

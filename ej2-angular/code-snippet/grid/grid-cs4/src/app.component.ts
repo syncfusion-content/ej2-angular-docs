@@ -1,16 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, EditSettingsModel, EditService, Column, PageService } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Column, EditService, EditSettingsModel, GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [ GridModule],
-standalone: true,
+    imports: [ GridModule],
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' allowPaging='true' [editSettings]='editSettings' (dataBound)="dataBound()">
+    template: `<ejs-grid #grid [dataSource]='data' height='280px' allowPaging='true' [editSettings]='editSettings' (dataBound)="dataBound()">
                </ejs-grid>`,
     providers: [EditService, PageService]
 })
@@ -29,6 +25,3 @@ export class AppComponent implements OnInit {
         (((this.grid as GridComponent).columns[0]) as Column).isPrimaryKey = true;
     }
 }
-
-
-

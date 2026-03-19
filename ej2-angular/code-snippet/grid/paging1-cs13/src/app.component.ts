@@ -1,14 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,GridComponent, PageService } from '@syncfusion/ej2-angular-grids'
-import { SwitchModule,SwitchComponent } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit, ViewChild } from '@angular/core';
 import { orderDetails } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SwitchComponent, SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { GridComponent, GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [GridModule,SwitchModule],
-providers: [PageService],
-standalone: true,
+    imports: [GridModule,SwitchModule],
+    providers: [PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
         <div style="padding: 20px 0px 20px 0px">

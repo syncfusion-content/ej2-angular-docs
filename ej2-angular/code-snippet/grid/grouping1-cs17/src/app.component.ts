@@ -1,22 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GroupSettingsModel,GridComponent } from '@syncfusion/ej2-angular-grids';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule, GroupService, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        GridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [GroupService],
-standalone: true,
+  imports: [ GridModule,ButtonModule, DropDownListAllModule ],
+  providers: [GroupService],
+  standalone: true,
     selector: 'app-root',
     template: `
     <div style="display: flex">
