@@ -18,13 +18,17 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Skills eliminate common issues 
 
 Choose one of the following commands to install [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components skills](https://github.com/syncfusion.com/angular-ui-components-skills.git) based on your preference. Users can also explore Syncfusion skills from the [marketplace](https://skills.sh/syncfusion/).
 
-```bash
-# Install all component skills at once
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+// Install all component skills at once
 npx skills add syncfusion/angular-ui-components-skills -y
 
-# Choose and install skills interactively from the terminal
+// Choose and install skills interactively from the terminal
 npx skills add syncfusion/angular-ui-components-skills
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 This registers the Syncfusion<sup style="font-size:70%">&reg;</sup> skill pack so your AI assistant can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills).
 
