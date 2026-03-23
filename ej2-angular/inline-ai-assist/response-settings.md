@@ -64,7 +64,7 @@ Below sample demonstrates the usage of `responseSettings` property in Inline Ass
 {% include code-snippet/inline-ai-assist/response-settings/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/response-settings/styles.css %}
+{% include code-snippet/inline-ai-assist/response-settings/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

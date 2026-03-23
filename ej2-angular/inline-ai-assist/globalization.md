@@ -35,7 +35,7 @@ The below example shows adding the German culture locale(`de-DE`)
 {% include code-snippet/inline-ai-assist/globalization/localization/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/globalization/localization/styles.css %}
+{% include code-snippet/inline-ai-assist/globalization/localization/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,7 +57,7 @@ RTL provides an option to switch the text direction and layout of the Inline AI 
 {% include code-snippet/inline-ai-assist/globalization/enable-rtl/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/globalization/enable-rtl/styles.css %}
+{% include code-snippet/inline-ai-assist/globalization/enable-rtl/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

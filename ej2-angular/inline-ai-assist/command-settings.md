@@ -70,7 +70,7 @@ Below sample demonstrates the usage of `commandSettings` property in Inline Assi
 {% include code-snippet/inline-ai-assist/command-settings/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/command-settings/styles.css %}
+{% include code-snippet/inline-ai-assist/command-settings/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

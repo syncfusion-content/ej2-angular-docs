@@ -28,7 +28,7 @@ You can use the [editorTemplate](../api/inline-ai-assist#editortemplate) propert
 {% include code-snippet/inline-ai-assist/templates/editor-template/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/templates/editor-template/styles.css %}
+{% include code-snippet/inline-ai-assist/templates/editor-template/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,7 +50,7 @@ You can use the [responseTemplate](../api/inline-ai-assist#responsetemplate) pro
 {% include code-snippet/inline-ai-assist/templates/response-template/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/templates/response-template/styles.css %}
+{% include code-snippet/inline-ai-assist/templates/response-template/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
