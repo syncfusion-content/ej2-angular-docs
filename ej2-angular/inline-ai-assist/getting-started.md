@@ -106,7 +106,7 @@ The following example illustrates the output in your browser.
 {% include code-snippet/inline-ai-assist/getting-started/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/getting-started/styles.css %}
+{% include code-snippet/inline-ai-assist/getting-started/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -128,7 +128,7 @@ You can use the `relateTo` property to position the Inline AI Assist relative to
 {% include code-snippet/inline-ai-assist/relateTo/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/relateTo/styles.css %}
+{% include code-snippet/inline-ai-assist/relateTo/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -150,7 +150,7 @@ The `target` property specifies the element or CSS selector where the Inline AI 
 {% include code-snippet/inline-ai-assist/target/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/target/styles.css %}
+{% include code-snippet/inline-ai-assist/target/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -172,7 +172,7 @@ Responses can be shown in two modes: `Inline` (updates content in-place) and `Po
 {% include code-snippet/inline-ai-assist/response-mode/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/response-mode/styles.css %}
+{% include code-snippet/inline-ai-assist/response-mode/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

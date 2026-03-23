@@ -26,7 +26,7 @@ You can use the [addResponse](../api/inline-ai-assist#addresponse) public method
 {% include code-snippet/inline-ai-assist/methods/add-response/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/methods/add-response/styles.css %}
+{% include code-snippet/inline-ai-assist/methods/add-response/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,7 +48,7 @@ You can use the [executePrompt](../api/inline-ai-assist#executeprompt) method to
 {% include code-snippet/inline-ai-assist/methods/execute-prompt/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/methods/execute-prompt/styles.css %}
+{% include code-snippet/inline-ai-assist/methods/execute-prompt/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -76,7 +76,7 @@ Below sample demonstrates the usage of `showPopup` and `hidePopup` methods in In
 {% include code-snippet/inline-ai-assist/methods/show-hide-commandpopup/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/methods/show-hide-commandpopup/styles.css %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-commandpopup/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,7 +104,7 @@ Below sample demonstrates the usage of `showCommandPopup` and `hideCommandPopup`
 {% include code-snippet/inline-ai-assist/methods/show-hide-componentpopup/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/methods/show-hide-componentpopup/styles.css %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-componentpopup/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

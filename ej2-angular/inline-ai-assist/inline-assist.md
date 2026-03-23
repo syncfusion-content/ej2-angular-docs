@@ -26,7 +26,7 @@ You can use the [prompt](../api/inline-ai-assist#prompt) property to define the 
 {% include code-snippet/inline-ai-assist/prompt/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/prompt/styles.css %}
+{% include code-snippet/inline-ai-assist/prompt/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,7 +50,7 @@ You can use the [prompts](../api/inline-ai-assist#prompts) property to retrieve 
 {% include code-snippet/inline-ai-assist/prompts/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/prompts/styles.css %}
+{% include code-snippet/inline-ai-assist/prompts/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -90,7 +90,7 @@ Below sample demonstrates the usage of above root level properties in Inline Ass
 {% include code-snippet/inline-ai-assist/inline-assist/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/inline-assist/styles.css %}
+{% include code-snippet/inline-ai-assist/inline-assist/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

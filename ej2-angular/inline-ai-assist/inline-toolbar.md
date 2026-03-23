@@ -72,7 +72,7 @@ Below sample demonstrates the addition of custom toolbar items with the usage of
 {% include code-snippet/inline-ai-assist/inline-toolbar/props/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/inline-toolbar/props/styles.css %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/props/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,7 +164,7 @@ You can use the `template` property to add custom toolbar item in the Inline AI 
 {% include code-snippet/inline-ai-assist/inline-toolbar/template/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/inline-toolbar/template/styles.css %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/template/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -188,7 +188,7 @@ By settings toolbarPosition as `Bottom`, footer items will be rendered at the bo
 {% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/styles.css %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
