@@ -12,7 +12,11 @@ domainurl: ##DomainURL##
 
 The Sankey component provides extensive customization options to create visualizations that match your specific design requirements and data presentation needs. From styling and theming to advanced visual techniques, the component enables complete control over appearance and behavior.
 
+This guide covers comprehensive customization techniques including styling, theming, color mapping, and visual customization strategies.
+
 ## Styling Overview
+
+The Sankey Chart supports multiple levels of styling customization:
 
 - **Global Styling**: Apply consistent styles to all elements
 - **Element-Level Styling**: Customize specific nodes, links, or labels
@@ -53,7 +57,7 @@ Configure link appearance using `linkStyle` to control opacity, curvature and co
 
 {% previewsample "page.domainurl/samples/sankey/customization/link-styling-cs1" %}
 
-## Individual Element Customization
+## Custom Node Appearance
 
 You can set properties on each node object to override global styles or use rendering events such as `nodeRendering`, `linkRendering`, and `labelRendering` to apply dynamic, data-driven styles.
 
@@ -117,7 +121,6 @@ Map colors to categories or value ranges using rendering events or by preprocess
 Set a theme globally or on the component to apply consistent visuals across the diagram. For Angular, apply the theme via global styles or component inputs depending on the package.
 
 ```typescript
-// Example: configure theme via component input or global CSS variables
 const theme = 'Material';
 ```
 
@@ -134,7 +137,7 @@ const theme = 'Material';
 
 ## Tooltip Customization
 
-Use template-based tooltips or format strings for nodes and links to display contextual information.
+Create custom tooltip templates for rich content:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -189,18 +192,42 @@ const onNodeLeave = (args) => { args.node.highlightOpacity = 0.3; };
 
 ## Performance Optimization
 
-For diagrams with many nodes and links, follow these recommendations:
+For charts with many nodes and links, optimize rendering performance:
 
-- Use global `nodeStyle` and `linkStyle` instead of customizing each element individually
-- Reduce heavy calculations inside rendering events
-- Cache computed values where possible
+1. **Use Global Styles**: Apply global `nodeStyle` and `linkStyle` instead of individual customization
+2. **Minimize Calculations**: Reduce complex calculations in rendering events
+3. **Conditional Rendering**: Only customize visible elements in viewport
+4. **Cache Results**: Cache computed styles and colors
+
 
 ## Customization Best Practices
 
-- **Consistency:** Maintain consistent colors and sizes across diagrams
-- **Performance:** Avoid expensive per-item logic during rendering
-- **Accessibility:** Don't rely only on color; ensure contrast and provide textual alternatives
-- **Maintainability:** Keep styling logic separate from business logic
+### Key Considerations
+
+1. **Consistency**
+   - Maintain consistent color schemes across nodes and links
+   - Use meaningful colors that represent data categories
+   - Apply visual hierarchy through size and opacity
+
+2. **Performance**
+   - Avoid complex calculations in rendering events
+   - Use global styles when possible
+   - Optimize for large datasets
+
+3. **Accessibility**
+   - Don't rely solely on color for information
+   - Ensure sufficient contrast ratios
+   - Provide alternative representations
+
+4. **User Experience**
+   - Use intuitive color mapping
+   - Provide clear visual feedback for interactions
+   - Maintain visual consistency with your application
+
+5. **Maintainability**
+   - Document custom styling logic
+   - Use reusable style functions
+   - Separate styling from business logic
 
 ## Example: Comprehensive Customization
 
