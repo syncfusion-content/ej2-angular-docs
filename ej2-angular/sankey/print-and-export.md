@@ -10,11 +10,13 @@ domainurl: ##DomainURL##
 
 # Print and Export in Angular Sankey component
 
-The Sankey component supports printing and exporting to PNG, JPEG, SVG, and PDF using the `print()` and `export()` APIs.
+The Sankey Chart provides comprehensive print and export functionality, enabling users to generate static files in multiple formats (PNG, JPEG, SVG, PDF) or print the diagram directly. This is useful for reports, documentation, sharing, and offline access.
+
+This guide covers printing the chart and exporting to various formats with customization options.
 
 ## Print
 
-Call the `print()` method to open the browser print dialog for the Sankey diagram.
+Print the Sankey Chart directly to paper or PDF using the `print()` method. This opens the browser's print dialog, allowing users to select printer settings and output format:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,7 +31,20 @@ Call the `print()` method to open the browser print dialog for the Sankey diagra
 
 ## Export
 
-Use `export()` to generate files. Examples below show export formats and custom options.
+Export the Sankey Chart to various file formats using the `export()` method. This allows you to generate standalone files suitable for sharing, archiving, or embedding in documents.
+
+### Export Formats
+
+The Sankey Chart supports exporting to the following formats:
+
+- **PNG** - Portable Network Graphics (raster format, good for web)
+- **JPEG** - Joint Photographic Experts Group (compressed raster, smaller file size)
+- **SVG** - Scalable Vector Graphics (vector format, scalable without quality loss)
+- **PDF** - Portable Document Format (ideal for printing and archiving)
+
+### Export with Default Settings
+
+Export the chart using default settings with a default filename:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,24 +57,9 @@ Use `export()` to generate files. Examples below show export formats and custom 
 
 {% previewsample "page.domainurl/samples/sankey/print-export/export-formats-cs1" %}
 
-## Export Events
-
-Use `beforeExport` and `exportCompleted` events to customize the export lifecycle.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sankey/print-export/before-export-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sankey/print-export/before-export-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/sankey/print-export/before-export-cs1" %}
-
 ## Export with Custom Options
 
-Export the Sankey Chart with a custom filename and selected export format.
+Export the chart with a custom filename and format selection to control output file names and type:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,6 +71,25 @@ Export the Sankey Chart with a custom filename and selected export format.
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/sankey/print-export/export-custom-cs1" %}
+
+## Export Events
+
+### Before Export Event
+
+Use the `beforeExport` event to customize the export process before the file is generated. This allows you to modify chart properties, add watermarks, or perform pre-export calculation
+
+Use the `beforeExport` event to customize the export process:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/sankey/print-export/before-export-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/sankey/print-export/before-export-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/sankey/print-export/before-export-cs1" %}
 
 ## Export Completed Event
 

@@ -10,24 +10,30 @@ domainurl: ##DomainURL##
 
 # Nodes in Angular Sankey component
 
-Nodes are the fundamental building blocks of a Sankey diagram, representing sources, sinks, and intermediaries. The Sankey component provides customization options for global node styles and per-node overrides. Additionally: Nodes represent sources, targets, and intermediate entities in flow diagrams, and customization of their appearance helps create visually meaningful and interactive flow diagrams.
+Nodes are the fundamental building blocks of a Sankey Chart, representing sources, targets, and intermediate entities in flow diagrams. The Sankey Chart provides extensive customization options for node appearance, enabling you to create visually meaningful and interactive flow diagrams.
+
+This guide covers node customization including styling, individual appearance changes, opacity control, positioning, and dynamic rendering events.
 
 ## Node Appearance
 
-Configure global appearance using `nodeStyle` (width, padding, fill, stroke, opacity, highlightOpacity, inactiveOpacity). Individual nodes can override these values. Also: the `nodeStyle` property allows customizing the visual appearance of all nodes, providing a unified style that can be overridden for specific nodes or via rendering events.
+The nodeStyle property allows you to customize the visual appearance of all nodes in the Sankey Chart. This provides a unified style for all nodes, which can be overridden at the individual node level or through rendering events.
 
 ### Node Style Properties
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| width | number | 20 | Width of node rectangle in pixels. |
-| padding | number | 10 | Spacing between nodes and labels. |
-| fill | string | null | Fill color; falls back to theme if not set. |
-| stroke | string | '' | Border color for nodes. |
-| strokeWidth | number | 1 | Border stroke width. |
-| opacity | number | 1 | Default opacity for nodes. |
-| highlightOpacity | number | 1 | Opacity when highlighted. |
-| inactiveOpacity | number | 0.3 | Opacity for inactive nodes. |
+| width | number | 20 | Width of the node rectangle in pixels. |
+| padding | number | 10 | Spacing between nodes and their labels. |
+| fill | string | null | Fill color of nodes. If not specified, theme color is used. |
+| stroke | string | '' | Stroke color of node borders. |
+| strokeWidth | number | 1 | Width of the node border stroke. |
+| opacity | number | 1 | Opacity of the node (0 to 1). |
+| highlightOpacity | number | 1 | Opacity of node when highlighted. |
+| inactiveOpacity | number | 0.3 | Opacity of inactive nodes (when interacting with others). |
+
+## Global Node Customization
+
+Customize the global node appearance by configuring the `nodeStyle` property with properties such as fill color, stroke, width, padding, and opacity levels. Here is an example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,7 +48,7 @@ Configure global appearance using `nodeStyle` (width, padding, fill, stroke, opa
 
 ## Individual Node Customization
 
-Override per-node color and label properties directly in your data model. Additionally: each node can have its own color and appearance settings that override the global `nodeStyle`, useful when highlighting specific nodes or creating custom color schemes.
+Beyond global styling, you can customize the appearance of specific nodes by setting individual properties. Each node can have its own `color`, styling, and appearance settings that override the global `nodeStyle` configuration. This approach is useful when you want certain nodes to stand out or follow a specific color scheme:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,10 +63,13 @@ Override per-node color and label properties directly in your data model. Additi
 
 ## Opacity and Interaction
 
-Use `opacity`, `highlightOpacity`, and `inactiveOpacity` to control visual feedback during interactions. Additionally:  
-- **opacity** defines normal visibility,  
-- **highlightOpacity** applies when nodes are hovered or highlighted,  
-- **inactiveOpacity** dims unrelated nodes during interaction to emphasize active relationships.
+Control how nodes appear during user interactions. The Sankey Chart provides three opacity properties:
+
+- **`opacity`**: The default opacity of nodes in their normal state (0 to 1)
+- **`highlightOpacity`**: The opacity when a node is highlighted or hovered
+- **`inactiveOpacity`**: The opacity of nodes that are not actively being interacted with
+
+Configure these properties to provide visual feedback and improve the interactivity experience:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,6 +90,8 @@ This is useful when manually arranging nodes to avoid overlaps or create specifi
 - **Horizontal orientation** → offset moves nodes vertically  
 - **Vertical orientation** → offset moves nodes horizontally
 
+This property is useful for manually arranging nodes to avoid overlaps or create specific flow patterns:
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sankey/nodes/offset-cs1/src/app.component.ts %}
@@ -91,6 +102,12 @@ This is useful when manually arranging nodes to avoid overlaps or create specifi
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/sankey/nodes/offset-cs1" %}
+
+## Advanced Node Configuration
+
+### Dynamic Node Customization
+
+Use the `nodeRendering` event to customize node appearance dynamically during the render process. This event is triggered for each node before it is rendered, allowing you to apply conditional styling, calculate colors based on data values, or modify properties based on context. This is the most powerful way to create data-driven node visualizations:
 
 ## Node Rendering Event
 

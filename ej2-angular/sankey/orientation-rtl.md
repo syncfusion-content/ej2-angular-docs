@@ -10,20 +10,24 @@ domainurl: ##DomainURL##
 
 # Orientation and RTL in Angular Sankey component
 
-The Sankey component supports flexible layout options including horizontal and vertical orientations, and right-to-left (RTL) rendering for localized applications.
+The Sankey Chart supports flexible layout options including horizontal and vertical orientations, as well as right-to-left (RTL) rendering for international applications. These features enable you to create localized and directionally appropriate visualizations.
+
+This guide covers orientation options and RTL configuration for different languages and reading directions.
 
 ## Orientation
 
-Control layout using the `orientation` property.
+Control the layout direction of the Sankey Chart using the orientation property. The orientation determines how nodes are arranged and how links flow through the diagram.
 
-### Options
+### Orientation Options
 
-| Option       | Description                            |
-|--------------|----------------------------------------|
-| 'Horizontal' | Nodes flow from left to right (default). |
-| 'Vertical'   | Nodes flow from top to bottom.           |
+| Option | Description |
+|--------|-------------|
+| 'Horizontal' | Nodes flow from left to right. Links flow horizontally between nodes. (Default) |
+| 'Vertical' | Nodes flow from top to bottom. Links flow vertically between nodes. |
 
-## Horizontal Example
+## Horizontal Orientation
+
+The default orientation displays nodes horizontally across the chart, with flows moving from left to right. This is the standard layout for most Sankey diagrams:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +40,9 @@ Control layout using the `orientation` property.
 
 {% previewsample "page.domainurl/samples/sankey/orientation-rtl/horizontal-cs1" %}
 
-## Vertical Example
+## Vertical Orientation
+
+Display nodes vertically with flows moving from top to bottom. This layout is useful for depicting hierarchical relationships or processes that flow downward:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,9 +55,9 @@ Control layout using the `orientation` property.
 
 {% previewsample "page.domainurl/samples/sankey/orientation-rtl/vertical-cs1" %}
 
-## RTL Support
+## Right-to-Left (RTL) Support
 
-Enable RTL with `enableRtl: true` to mirror layouts and align text for RTL languages.
+Enable RTL rendering for languages that read from right to left (such as Arabic, Hebrew, and Persian) using the `enableRtl` property. RTL mode reverses the horizontal flow direction and mirrors the layout:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
