@@ -14,7 +14,7 @@ Links are the connecting paths that visualize flow between nodes. Each link conn
 
 ## Link Style Properties
 
-The `linkStyle` property allows you to customize opacity, curvature, color blending and interaction behaviors.
+The `linkStyle` property allows you to customize the visual appearance of all links in the Sankey Chart. These properties control opacity, highlighting behavior, curvature, and color blending.
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
@@ -26,7 +26,7 @@ The `linkStyle` property allows you to customize opacity, curvature, color blend
 
 ## Basic Link Customization
 
-Customize global link appearance using the `linkStyle` property.
+Customize the appearance of all links using the `linkStyle` property to set global opacity levels, curvature, and color blending behavior:  
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,6 +98,8 @@ The link thickness is determined by the `value` property in the link data. This 
 {% previewsample "page.domainurl/samples/sankey/links/thickness-cs1" %}
 
 ## Advanced Link Configuration
+
+### Dynamic Link Customization
 
 Use the `linkRendering` event to customize link appearance dynamically during the render process. This event is triggered for each link before rendering, allowing you to apply conditional styling based on flow values, source-target combinations, or other data attributes:
 

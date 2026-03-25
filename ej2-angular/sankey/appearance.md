@@ -49,7 +49,7 @@ Use percentage-based dimensions for responsive layouts that adapt to container s
 
 {% previewsample "page.domainurl/samples/sankey/appearance/responsive-cs1" %}
 
-## Background and Border Customization
+## Background Customization
 
 Customize the background and border of the Sankey diagram to match your application's theme.
 
@@ -71,7 +71,11 @@ Customize the background and border of the Sankey diagram to match your applicat
 
 {% previewsample "page.domainurl/samples/sankey/appearance/background-cs1" %}
 
+## Border Customization
+
 ### Border Properties
+
+Customize the border of the Sankey Chart container.
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
@@ -117,6 +121,8 @@ Control the spacing around the chart content using margins.
 ## Theme
 
 The Sankey component provides multiple built-in themes to customize the visual appearance. Apply a theme using the `theme` property.
+
+### Theme Configuration
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -12,9 +12,11 @@ domainurl: ##DomainURL##
 
 Labels display descriptive text associated with nodes in the Sankey diagram, improving readability and interpretation. Additionally, labels make the diagram more understandable and interpretable, and the component provides comprehensive label customization options including visibility control, font styling, individual label configuration, and dynamic rendering events.
 
+This guide covers label appearance configuration, visibility control, font styling, and advanced label customization.
+
 ## Label Settings Properties
 
-Use `labelSettings` to control global label appearance for nodes. Also: configure global label styling for all nodes by setting properties like font size, color, font family, and font weight.
+The `labelSettings` property provides options to control label appearance, text styling, and visibility. These properties apply globally to all node labels.
 
 ### Label Configuration Properties
 
@@ -27,6 +29,10 @@ Use `labelSettings` to control global label appearance for nodes. Also: configur
 | fontWeight | string | '400' | Font weight (e.g., '700' for bold). |
 | fontStyle | string | 'normal' | Font style (e.g., 'italic'). |
 | padding | number | 10 | Padding around label text. |
+
+Configure global label styling for all nodes by setting properties like font size, color, font family, and font weight
+
+Here is an example of customizing label appearance:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +60,13 @@ Set `labelSettings.visible` to `false` to hide labels when space is limited. Add
 
 ## Font Styling
 
-Customize font properties via `labelSettings` to control `fontSize`, `fontFamily`, `fontWeight`, `fontStyle`, and `color`. Additionally: apply custom font styling such as adjusting text size, specifying families (Arial, Times New Roman), controlling thickness (400 or 700), applying italic/normal styles, and setting color.
+Apply custom font styling to all labels using properties such as:
+
+- **`fontSize`**: Adjust text size (e.g., '12px', '14px')
+- **`fontFamily`**: Specify font family (e.g., 'Arial', 'Times New Roman')
+- **`fontWeight`**: Control text thickness ('400' = normal, '700' = bold)
+- **`fontStyle`**: Apply text styling ('normal' or 'italic')
+- **`color`**: Set text color (hex or color names)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,7 +80,7 @@ Customize font properties via `labelSettings` to control `fontSize`, `fontFamily
 
 ## Individual Node Labels
 
-Override labels for specific nodes by setting the `label` object on node definitions.
+Customize the appearance of specific node labels by configuring the `label` property on each node object. This allows you to override global label settings for specific nodes, enabling data-driven label customization:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

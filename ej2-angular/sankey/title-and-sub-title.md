@@ -10,16 +10,18 @@ domainurl: ##DomainURL##
 
 # Title and Subtitle in Angular Sankey component
 
-The Sankey component supports adding descriptive titles and subtitles to provide context for diagrams. Both can be styled and aligned. Additionally: These text elements help users quickly understand the purpose and content of the diagram, and you can customize text, styling, alignment, and appearance using dedicated properties.
+The Sankey Chart supports adding descriptive titles and subtitles to provide context and information about your data visualization. These text elements help users quickly understand the purpose and content of the diagram. You can fully customize the text, styling, alignment, and appearance using dedicated properties.
+
+This guide covers title and subtitle configuration, styling options, and best practices for effective diagram labeling.
 
 ## Properties
 
 | Property | Type | Description |
 |----------|------|-------------|
-| title | string | The main title text. Also: displayed at the top of the chart. |
-| subTitle | string | The subtitle text. Also: displayed below the main title. |
-| titleStyle | object | Styling options for the title. |
-| subTitleStyle | object | Styling options for the subtitle. |
+| title | string | The main title text displayed at the top of the chart. |
+| subTitle | string | The subtitle text displayed below the main title. |
+| titleStyle | object | Styling options for the title text. |
+| subTitleStyle | object | Styling options for the subtitle text. |
 
 ## Title/Subtitle Style Properties
 
@@ -35,7 +37,9 @@ Both `titleStyle` and `subTitleStyle` support the following properties:
 | opacity | number | 1 | Text opacity (0 to 1). |
 | textAlignment | string | 'Center' | Text alignment ('Left', 'Center', 'Right'). |
 
-## Examples
+## Basic Title and Subtitle
+
+Add a main title and descriptive subtitle to your Sankey Chart to provide context about the data visualization:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,7 +69,7 @@ Apply custom styling to both the title and subtitle, including font properties, 
 
 ## Title Only (Without Subtitle)
 
-Add only a title to the Sankey diagram when a subtitle is not needed.
+Add only a title to the Sankey Chart when a subtitle is not needed. This provides a clean, minimal header for your visualization:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
