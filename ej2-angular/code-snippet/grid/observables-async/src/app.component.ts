@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
   <div>
     <ejs-grid #grid [dataSource]='data | async' allowPaging="true" allowGrouping="true" [groupSettings]="groupOptions" 
     allowSorting="true" [sortSettings]="sortOptions" allowFiltering="true" [filterSettings]="filterOptions" [editSettings]='editSettings' [toolbar]='toolbar'
-    (dataSourceChanged)='dataSourceChanged($event)' (dataStateChange)= 'dataStateChange($event)' height='120px'>
+    (dataSourceChanged)='dataSourceChanged($event)' (dataStateChange)= 'dataStateChange($event)' height='150px'>
       <e-columns>
         <e-column field='id' headerText='Order ID' width='90' textAlign='Right' [validationRules]='orderIDRules' isPrimaryKey='true'></e-column>
         <e-column field="CustomerName" headerText="Customer Name" width="100"></e-column>

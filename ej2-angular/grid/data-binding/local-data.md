@@ -14,7 +14,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a str
 
 Assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasource) property. Optionally, provide the local data source using an instance of the `DataManager`.
 
-The following example demonstrates local data binding implementation in the Angular Grid component:
+The following example demonstrates the local data binding feature in the Angular Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -1173,7 +1173,7 @@ export class AppComponent implements OnInit {
   updateEvent(): void {
     let count = 0;
     let newRowData = (this.rowData as any).map((row: any) => {
-      if (row.ShipName === 'Bueno Foods') {
+    if (row.ShipName === 'Hanari Carnes') {
         count++;
         return { ...row, 'ShipName': "Gems Chevalier" };
       } else {
@@ -1208,7 +1208,7 @@ export class AppComponent implements OnInit {
   }
 
   generateShipName(): string {
-    const names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
+    const names = ['Que Delícia', 'Hanari Carnes', 'Island Trading', 'Laughing Bacchus Winecellars'];
     return names[Math.floor(Math.random() * names.length)];
   }
 }

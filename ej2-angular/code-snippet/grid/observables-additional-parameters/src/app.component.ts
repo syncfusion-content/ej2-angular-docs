@@ -24,7 +24,7 @@ import { Observable } from 'rxjs';
   standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data | async' [query]="query" allowPaging='true' [pageSettings]='pageOptions' 
-              allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)'>
+              allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)' height='250px'>
                 <e-columns>
                   <e-column field='OrderID' headerText='Order ID' width='90' textAlign='Right'></e-column>
                   <e-column field="CustomerID" headerText="Customer Name" width="100"></e-column>

@@ -13,7 +13,7 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
         <label style="padding: 10px 10px 26px 0"> Change the loading indicator type: </label>
         <ejs-dropdownlist #dropdown style="margin-top:5px" index="0" width="120" [dataSource]="ddlData" [fields]='fields' (change)="valueChange($event)"></ejs-dropdownlist>
     </div>
-    <ejs-grid #grid id="grid" style="padding: 10px 10px" [dataSource]='data' [allowPaging]='true' [allowSorting]='true' [allowFiltering]='true' [pageSettings]='pageSettings' [loadingIndicator]='loadingIndicator'>
+    <ejs-grid #grid id="grid" style="padding: 5px 5px" height="200" [dataSource]='data' [allowPaging]='true' [allowSorting]='true' [allowFiltering]='true' [pageSettings]='pageSettings' [loadingIndicator]='loadingIndicator'>
         <e-columns>
             <e-column field='EmployeeID' headerText='Employee ID' width='130' textAlign='Right'></e-column>
             <e-column field='Employees' headerText='Employee Name' width='145'></e-column>
