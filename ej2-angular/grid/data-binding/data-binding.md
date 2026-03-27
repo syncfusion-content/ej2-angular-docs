@@ -85,13 +85,13 @@ The following example demonstrates adding a new record to the data source throug
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component supports dynamic modification of the data source, columns, or both. This feature refreshes the grid's content and structure without requiring a complete page reload.
 
-To achieve dynamic changes, the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#changedatasource) method can be utilized. This method enables updating the data source, columns, or both, based on application requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset. The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
+To achieve dynamic changes, the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#changedatasource) method allows updating the grid's data source dynamically. This method enables updating the data source, columns, or both, based on application requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset. The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
 **1. Change both data source and columns:**
 
 To modify both the existing columns and the data source, pass both arguments to the `changeDataSource` method. The following example demonstrates changing both the data source and columns.
 
-Assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource) property to bind local data to the grid. The code below provides an example creating a data source for the grid.
+Assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource) property to bind local data to the grid. The code below provides an example of creating a data source for the grid.
 
 ```typescript
 export let data: Object[] = [
@@ -141,7 +141,7 @@ this.gridInstance.changeDataSource(null, column);
 
 **3. Modify only the data source:**
 
-Change the entire data source in the grid using the `changeDataSource` method. Provide the data source as the first argument; the optional second argument can specify new columns for the grid. If columns are not specified, the grid auto-generates columns based on the data source. The following example demonstrates modifying the data source.
+The `changeDataSource` method provides option to change the entire data source in the grid by passing the new data source as the first argument. The optional second argument can specify new columns for the grid. Provide the data source as the first argument; the optional second argument can specify new columns for the grid. If columns are not specified, the grid auto-generates columns based on the data source. The following example demonstrates modifying the data source.
 
 Assign a JavaScript object array to the `dataSource` property to bind local data to the grid. The code below provides an example of creating a new data source for the grid.
 

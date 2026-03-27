@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Task Dependency in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure task dependencies in the Syncfusion Angular Gantt Chart component for establishing relationships, managing offsets, and handling validation.
+description: Learn how to configure task dependencies in the Syncfusion Angular Gantt Chart for establishing relationships, managing offsets, and handling validation.
 platform: ej2-angular
 control: Task dependency
 documentation: ug
@@ -89,15 +89,15 @@ The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/angular/documentati
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/taskdependency/durationunits-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/taskdependency/predecessor-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/taskdependency/durationunits-cs1/src/main.ts %}
+{% include code-snippet/gantt/taskdependency/predecessor-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/gantt/taskdependency/durationunits-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/taskdependency/predecessor-cs2" %}
 
 ## Disable automatic dependency offset updates
 

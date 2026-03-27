@@ -47,6 +47,7 @@ import {
 export class AppComponent {
   tooltipConfig = {
     enable: true,
+    nodeTemplate: '${name}: ${value} TBtu',
     linkTemplate: '<b>${sourceNodeName} to ${targetNodeName}</b><br/>Value: <b>${value}</b>'
   };
 }
