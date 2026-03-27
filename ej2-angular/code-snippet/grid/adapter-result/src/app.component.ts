@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 import { DataManager, Query, ReturnOption, WebApiAdaptor } from '@syncfusion/ej2-data';
 
-const SERVICE_URI: string = 'https://ej2services.syncfusion.com/production/web-services/';
+const SERVICE_URI: string = 'https://services.syncfusion.com/angular/production/';
 
 // Define an interface for Order data.
 interface Order {

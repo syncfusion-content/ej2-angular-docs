@@ -16,7 +16,7 @@ interface DataType {
   Freight: number;
   ShipName: string;
   ShipCity: string;
-  isNewlyAdded: boolean;
+  isNewlyAdded?: boolean;
 }
 
 @Component({
@@ -100,7 +100,7 @@ export class AppComponent implements OnInit {
   updateEvent(): void {
     let count = 0;
     let newRowData = (this.rowData as any).map((row: any) => {
-      if (row.ShipName === 'Bueno Foods') {
+      if (row.ShipName === 'Hanari Carnes') {
         count++;
         return { ...row, 'ShipName': "Gems Chevalier" };
       } else {
@@ -135,7 +135,7 @@ export class AppComponent implements OnInit {
   }
 
   generateShipName(): string {
-    const names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
+     const names = ['Que Delícia','Hanari Carnes','Tortuga Restaurante','Ricardo Adocicados'];
     return names[Math.floor(Math.random() * names.length)];
   }
 }

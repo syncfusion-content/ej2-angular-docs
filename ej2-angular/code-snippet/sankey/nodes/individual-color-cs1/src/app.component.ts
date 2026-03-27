@@ -22,12 +22,12 @@ import {
           [legendSettings]="legendSettings">
 
           <e-sankey-nodes>
-            <e-sankey-node id="Agricultural Waste"></e-sankey-node>
-            <e-sankey-node id="Biomass Residues"></e-sankey-node>
-            <e-sankey-node id="Bio-conversion" ></e-sankey-node>
-            <e-sankey-node id="Liquid Biofuel" ></e-sankey-node>
-            <e-sankey-node id="Electricity" ></e-sankey-node>
-            <e-sankey-node id="Heat"></e-sankey-node>
+            <e-sankey-node id="Agricultural Waste" color="#f41212"></e-sankey-node>
+            <e-sankey-node id="Biomass Residues"  color="#aed62c"></e-sankey-node>
+            <e-sankey-node id="Bio-conversion"  color="#259bc3"></e-sankey-node>
+            <e-sankey-node id="Liquid Biofuel" color="#0e11af"></e-sankey-node>
+            <e-sankey-node id="Electricity" color="#7a0e92"></e-sankey-node>
+            <e-sankey-node id="Heat" color="#c5b9bb"></e-sankey-node>
           </e-sankey-nodes>
 
           <e-sankey-links>
