@@ -1,11 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-import { GanttComponent, GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { EditService, GanttComponent, GanttModule } from '@syncfusion/ej2-angular-gantt';
 import { SwitchComponent, SwitchModule } from '@syncfusion/ej2-angular-buttons';
 import { GanttData } from './data';
 
 @Component({
     selector: 'app-root',
     standalone: true,
+    providers: [EditService],
     imports: [GanttModule, SwitchModule],
     template: `<div class="switch-container">
     <label>Auto Update Predecessor Offset</label>
