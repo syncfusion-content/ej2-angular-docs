@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential<sup style="font-size:70%">&reg;</sup> JS 2)
+# Syncfusion® Angular UI Components (Essential® JS 2)
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI (Essential<sup style="font-size:70%">&reg;</sup> JS 2) offers a comprehensive suite of modern, TypeScript-based Angular components that are built from the ground up to align with Angular’s core architecture. These components are engineered for high performance and support Tree-Shaking, which helps minimize application bundle size by removing unused code. Designed with flexibility in mind, each component is lightweight, modular, and responsive, ensuring seamless integration into any Angular application. Additionally, the components are touch-friendly and optimized for both desktop and mobile experiences, making them ideal for building rich, interactive, and accessible user interfaces across a wide range of devices.
 
@@ -117,6 +117,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treemap/getting-started">TreeMap</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/bullet-chart/getting-started">Bullet Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/kanban/getting-started">Kanban</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sankey/getting-started">Sankey</a></div>
         <div><p class="controlcategory">BUTTONS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button/getting-started">Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button-group/getting-started">ButtonGroup</a></div>
@@ -216,10 +217,10 @@ If you need assistance beyond what's covered in the documentation, we offer seve
 
 - [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli)
 
-- [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs)
-
 - [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular on ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core)
 
 - [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular on ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc)
 
 - [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Tree Shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking)
+
+- [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Lazy Loading](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/lazy-loading-support)

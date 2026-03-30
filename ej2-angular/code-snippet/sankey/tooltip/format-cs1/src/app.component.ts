@@ -45,9 +45,9 @@ import {
     </div>`
 })
 export class AppComponent {
-  tooltipConfig = {
+  public tooltipConfig = {
     enable: true,
     nodeTemplate: '${name}: ${value} TBtu',
-    linkTemplate: '<b>${sourceNodeName} to ${targetNodeName}</b><br/>Value: <b>${value}</b>'
+    linkTemplate: '${start.name}: ${start.out} TBtu → ${target.name}: ${target.in} TBtu'
   };
 }
