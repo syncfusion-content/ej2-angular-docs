@@ -1,17 +1,10 @@
 import { Component } from '@angular/core';
-import { SankeyAllModule } from '@syncfusion/ej2-angular-charts';
+import { SankeyAllModule, SankeyTooltipRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 import {
   SankeyTooltipService,
   SankeyLegendService,
   SankeyExportService
 } from '@syncfusion/ej2-angular-charts';
-
-// You can put this interface in a separate file (e.g. sankey.interfaces.ts) and import it
-export interface SankeyTooltipRenderEventArgs {
-  node: any;     // SankeyNode type (from @syncfusion/ej2-angular-charts)
-  link: any;     // SankeyLink type
-  text: string;
-}
 
 @Component({
   imports: [SankeyAllModule],
@@ -29,7 +22,7 @@ export interface SankeyTooltipRenderEventArgs {
     width="90%"
     height="450px"
     [tooltip]="{ enable: true }"
-    (tooltipRender)="onTooltipRender($event)">
+    (tooltipRendering)="onTooltipRender($event)">
 
     <e-sankey-nodes>
       <e-sankey-node id="Agricultural Waste"></e-sankey-node>
