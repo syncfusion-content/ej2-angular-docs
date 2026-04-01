@@ -53,7 +53,7 @@ The Django REST Framework backend serves as the core data service, managing API 
 
 1. Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command prompt opened with  <kbd>Win+R</kbd> or macOS terminal launched with <kbd>Cmd+Space</kbd> ).
 
-2. Before creating the `Django` project, set up a virtual environment. A virtual environment keeps project dependencies isolated, ensuring that package installations do not affect other projects.
+2. Before creating the Django project, set up a virtual environment. A virtual environment keeps project dependencies isolated, ensuring that package installations do not affect other projects.
 
     The following commands create and activate the environment:
     ```bash
@@ -65,12 +65,12 @@ The Django REST Framework backend serves as the core data service, managing API 
     ```bash
     pip install django djangorestframework django-filter django-cors-headers mssql-django pyodbc
     ```
-    - `mssql-django` enables `Django` to connect to SQL Server through `pyodbc`.
+    - `mssql-django` enables Django to connect to SQL Server through `pyodbc`.
     - For Django settings reference, see [databases](https://docs.djangoproject.com/en/6.0/ref/settings/#databases).
 
-4. Initialize the `Django` Project and Application:
+4. Initialize the Django Project and Application:
 
-    For this guide, a `Django` project named **django_server** is created, along with a new application module, using the following commands:
+    For this guide, a Django project named **django_server** is created, along with a new application module, using the following commands:
 
     ```bash
     django-admin startproject django_server
@@ -109,7 +109,7 @@ This step updates the file to establish the SQL Server connection and enable ess
     **Line breakdown:**
     - **ENGINE**: Database backend; for SQL Server via `mssql-django`, set to `mssql`.
     - **NAME**: Database name to connect to (e.g., **LibraryDB**).
-    - **USER**: SQL Server login used by `Django`.
+    - **USER**: SQL Server login used by Django.
     - **PASSWORD**: Password for the above user.
     - **HOST**: Server/instance name or address (e.g., **(localdb)\MSSQLLocalDB** or a hostname).
     - **OPTIONS.driver**: ODBC driver to use (e.g., **ODBC Driver 18 for SQL Server**). Must be installed on the machine.
@@ -203,7 +203,7 @@ This step updates the file to establish the SQL Server connection and enable ess
 
 ### Step 3: Define models
 
-A `Django` model defines the way data is stored and accessed in the database. Each model maps to a database table and exposes its fields as structured records that can be queried, created, updated, and deleted by the application and API.
+A Django model defines the way data is stored and accessed in the database. Each model maps to a database table and exposes its fields as structured records that can be queried, created, updated, and deleted by the application and API.
 
 **Instructions:**
 
@@ -247,7 +247,7 @@ A `Django` model defines the way data is stored and accessed in the database. Ea
     ```
 3. Create database migrations:
 
-    `Django` migrations are the mechanism that convert model definitions into real SQL Server tables and columns. Whenever a model is created or modified, migrations ensure the database structure stays updated.
+    Django migrations are the mechanism that convert model definitions into real SQL Server tables and columns. Whenever a model is created or modified, migrations ensure the database structure stays updated.
 
     **Generate a new migration**
 
@@ -280,7 +280,7 @@ A `Django` model defines the way data is stored and accessed in the database. Ea
 
     **Purpose of migrations:**
 
-    Migrations act as a bridge between the `Python` models and the SQL Server database.
+    Migrations act as a bridge between the Python models and the SQL Server database.
     - Every change in a model (new field, renamed field, removed field, new model) is recorded as a migration.
     - These changes are applied safely without writing SQL manually.
     - The database structure remains consistent across all environments (development, staging, production).
@@ -382,12 +382,12 @@ class BookLendingViewSet(viewsets.ModelViewSet):
         headers = self.get_success_headers(serializer.data)
         return Response(output_data, status=status.HTTP_201_CREATED, headers=headers)
 ```
-> A detailed breakdown of `DataManager` payloads mapping to `Django` operations (filtering, sorting, paging, searching, selection, and CRUD) will be explained in the [Data Operations](#perform-data-operations) & [CRUD](#performing-crud-operations) section.
+> A detailed breakdown of `DataManager` payloads mapping to Django operations (filtering, sorting, paging, searching, selection, and CRUD) will be explained in the [Data Operations](#perform-data-operations) & [CRUD](#performing-crud-operations) section.
 
 
 ## Integrate Syncfusion Angular Grid with Django REST Framework
 
-The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a `Django` backend.
+The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
 
 ### Step 1: Creating the Angular client application
 
@@ -473,7 +473,7 @@ This response format ensures seamless interaction between the Angular Grid and b
     ```
     **Explanation:**
 
-    - **url** - Base API endpoint exposed by the `Django` router.
+    - **url** - Base API endpoint exposed by the Django router.
     - **adaptor** - Converts Grid operations into standard REST requests.
     - **crossDomain** - Enables communication with a backend running on a different port.
 
@@ -1107,7 +1107,7 @@ Execute the below commands to run the client application:
 ng serve
 ```
 
-## Complete Sample Repository
+## Complete sample repository
 
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-django-server) repository.
 

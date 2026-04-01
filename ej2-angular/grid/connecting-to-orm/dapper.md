@@ -1315,7 +1315,7 @@ When sorting is performed in the Grid, a request is sent to the server with the 
 
 ![Sorting Operation Payload](../images/dapper_sort.png)
 
-## Step 10: Perform CRUD operations
+### Step 10: Perform CRUD operations
 
 CRUD operations allow adding new records, modifying existing records, and removing items that are no longer relevant. The `DataManager` posts a specific action for each operation so that the server can route to the appropriate handler.
 
@@ -1413,7 +1413,7 @@ In **RoomsController.cs**, implement the "Insert" method:
 3. The new record is added to the "Rooms" table via the repository.
 4. The Grid automatically refreshes to display the new record.
 
-When a new record added in the Grid, a request is sent to the server with the following payload.
+When a new record is added in the Grid, a request is sent to the server with the following payload.
 
 ![Insert Operation Payload](../images/dapper_add.png)
 
@@ -1567,11 +1567,11 @@ In **RoomsController.cs**, implement the batch method:
         }
 ```
 
-> This method is triggered when the Grid is operating in [Batch](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing) Edit mode.
+> This method is triggered when the Grid is operating in [Batch](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing) edit mode.
 
 **What happens behind the scenes:**
 
-- The Grid collects all added, edited, and deleted records in Batch Edit mode.
+- The Grid collects all added, edited, and deleted records in `Batch` edit mode.
 - The combined batch request is passed to the CustomAdaptor’s `batchRequest` method.
 - Each modified record, added and deleted records are processed using the `Batch` method in **RoomsController.cs** file.
 - All repository operations persist changes to the SQL database.
@@ -1583,7 +1583,7 @@ When a batch update is performed in the Grid, a request is sent to the server wi
 
 Now the adaptor supports bulk modifications with atomic database synchronization. All CRUD operations are now fully implemented, enabling comprehensive data management capabilities within the Angular Grid.
 
-## Step 11: Complete code
+### Step 11: Complete code
 
 Here is the complete and final Angular component (**src/app/app.ts**) with all features integrated:
 
@@ -1689,7 +1689,7 @@ export class AppComponent {
 
 > - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` for a column that contains unique values.
 > - The [editType](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property can be used to specify the desired editor for each column.
-> - [type](https://ej2.syncfusion.com/angular/documentation/api/grid/columnmodel#type) property of the Grid columns specifies the data type of a grid column.
+> - The [type](https://ej2.syncfusion.com/angular/documentation/api/grid/columnmodel#type) property of the Grid columns specifies the data type of a grid column.
 
 Here is the complete Controller **RoomsController.cs** file:
 
@@ -1861,9 +1861,9 @@ ng serve
 - **Filter**: Click on column headers to access Excel-style filtering options.
 - **Sort**: Click on column headers to sort data in ascending or descending order.
 - **Pagination**: Navigate through records using page numbers at the bottom of the Grid.
-- **Add**: Click the "Add" button to create a new reservation with auto-generated ReservationId.
-- **Edit**: Click the "Edit" button to modify existing reservations.
-- **Delete**: Click the "Delete" button to remove reservations (with confirmation).
+- **Add**: Click the `Add` button to create a new reservation.
+- **Edit**: Click the `Edit` button to modify existing reservations.
+- **Delete**: Click the `Delete` button to remove reservations.
 - **Validation**: Form fields are validated before saving (e.g., required fields, email format).
 
 ## Complete sample repository

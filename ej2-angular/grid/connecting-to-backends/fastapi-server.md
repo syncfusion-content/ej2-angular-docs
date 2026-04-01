@@ -230,7 +230,7 @@ The router centralizes data loading, read pipelines for grid operations, and mut
         return any(k in payload for k in DM_READ_KEYS)
     ```
 
-7. Implement a "GET" guard and a unified "POST" handler so that the endpoint accepts only `UrlAdaptor` HTTP POST calls, routing them through the appropriate pipeline for either read or CRUD operations.
+7. Implement a `GET` guard and a unified `POST` handler so that the endpoint accepts only `UrlAdaptor` HTTP POST calls, routing them through the appropriate pipeline for either read or CRUD operations.
 
     ```python
     @router.get('/')
@@ -288,7 +288,7 @@ The router centralizes data loading, read pipelines for grid operations, and mut
 - The handler executes a clear sequence for reads that applies searching, filtering, sorting, projection, and paging in an intuitive order.  
 - The CRUD branch delegates to focused helpers that update the in‑memory list and then persist the change to disk.  
 - The design keeps the controller thin while allowing the data operation modules to remain reusable and independently testable.  
-- The explicit "GET" guard protects the endpoint from unsupported transports so that all interactions pass through the single "POST" contract.  
+- The explicit `GET` guard protects the endpoint from unsupported transports so that all interactions pass through the single `POST` contract.  
 
 The handlers in the "data_actions" and "crud_actions" modules are explained in detail in the integration section below.
 
@@ -1041,7 +1041,7 @@ ng serve
 
 Open the URL shown in the terminal which is typically **http://localhost:4200/**.
 
-## Complete Sample Repository
+## Complete sample repository
 
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-fastapi-server-master) repository.
 

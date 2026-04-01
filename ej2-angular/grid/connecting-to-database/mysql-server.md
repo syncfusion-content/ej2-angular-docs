@@ -1050,7 +1050,7 @@ When sorting is performed in the Grid, a request is sent to the server with the 
 
 CRUD operations allow adding new records, modifying existing records, and removing items that are no longer relevant. The `DataManager` posts a specific action for each operation so that the server can route to the appropriate handler.
 
-Editing operations in the Grid are enabled through configuring the [Edit Settings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true` in the **app.component.html**. Then inject the `EditService` module in the `providers` property of the angular component.
+Editing operations in the Grid are enabled through configuring the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true` in the **app.component.html**. Then inject the `EditService` module in the `providers` property of the angular component.
 
 **src/app/app.component.ts**:
 
@@ -1174,7 +1174,7 @@ In **GridController.cs**, implement the "Insert" method:
 3. The new record is added to the `Transactions` collection.
 4. The Grid automatically refreshes to display the new record.
 
-When a new record added in the Grid, a request is sent to the server with the following payload.
+	When a new record is added in the Grid, a request is sent to the server with the following payload.
 
 ![Insert Operation Payload](../images/mysql-grid-add.png)
 
@@ -1225,7 +1225,7 @@ In **GridController.cs**, implement the update method:
 4. All properties are updated with the new values.
 5. The Grid refreshes to display the updated record.
 
-When a record updated in the Grid, a request is sent to the server with the following payload.
+When a record is updated in the Grid, a request is sent to the server with the following payload.
 
 ![Update Operation Payload](../images/mysql-grid-edit.png)
 
@@ -1270,11 +1270,11 @@ In **GridController.cs**, implement the delete method:
 1. A record is selected and the `Delete` button is clicked.
 2. The CustomAdaptor's `remove` method is called.
 3. The `Remove` method in **GridController.cs** file is called.
-4. The record is located in the database by its ID.
+4. The record is located in the database by its "ID".
 5. The record is removed from the "Transactions" collection.
 6. The Grid refreshes to remove the deleted record from the UI.
 
-When a record deleted in the Grid, a request is sent to the server with the following payload.
+When a record is deleted in the Grid, a request is sent to the server with the following payload.
 
 ![Delete Operation Payload](../images/mysql-grid-delete.png)
 
@@ -1417,7 +1417,7 @@ export class AppComponent implements OnInit {
 
 > - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/grid/columns#isprimarykey) to `true` for a column that contains unique values.
 > - The [editType](https://ej2.syncfusion.com/angular/documentation/grid/columns#edittype) property can be used to specify the desired editor for each column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-> - [type](https://ej2.syncfusion.com/angular/documentation/grid/columns#type) property of the Grid columns specifies the data type of a grid column.
+> - The [type](https://ej2.syncfusion.com/angular/documentation/grid/columns#type) property of the Grid columns specifies the data type of a grid column.
 
 Here is the complete Controller **GridController.cs** file:
 

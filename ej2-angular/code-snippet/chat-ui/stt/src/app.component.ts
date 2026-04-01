@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, NgZone, ChangeDetectorRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, NgZone, ChangeDetectorRef, AfterViewInit } from '@angular/core';
 import { SpeechToTextModule, SpeechToTextComponent, TranscriptChangedEventArgs } from '@syncfusion/ej2-angular-inputs';
 import { ChatUIModule, ChatUIComponent } from '@syncfusion/ej2-angular-interactive-chat';
 import { UserModel } from '@syncfusion/ej2-interactive-chat';
@@ -52,7 +52,7 @@ import { UserModel } from '@syncfusion/ej2-interactive-chat';
         </div>
       </div>
       `
-  });
+  })
 export class AppComponent implements AfterViewInit {
     @ViewChild('chatUIComponent') chatUIComponent!: ChatUIComponent;
     @ViewChild('speechToText') speechToTextInstance!: SpeechToTextComponent;
