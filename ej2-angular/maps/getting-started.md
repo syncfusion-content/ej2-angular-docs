@@ -201,14 +201,14 @@ This example uses the tooltip, data label, and legend features. Import the MapsT
 
  ```javascript
     import { Component } from '@angular/core';
-    import { LegendService, DataLabelService, MapsTooltipService, MapsModule} from '@syncfusion/ej2-angular-maps';
+    import { LegendService, DataLabelService, MapsTooltipService, MapsModule } from '@syncfusion/ej2-angular-maps';
 
     @NgModule({
         imports: [
             MapsModule,
         ],
         standalone: true,
-        providers: [ LegendService, DataLabelService,MapsTooltipService ]
+        providers: [ LegendService, DataLabelService, MapsTooltipService ]
     })
 
 ```
