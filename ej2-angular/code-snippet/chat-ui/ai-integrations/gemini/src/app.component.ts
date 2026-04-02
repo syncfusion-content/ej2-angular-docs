@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import {ChatUIModule, UserModel, ChatUI, ToolbarSettingsModel} from '@syncfusion/ej2-angular-interactive-chat';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import * as marked from 'marked';
+import { marked } from 'marked';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +27,7 @@ import * as marked from 'marked';
   `,
   standalone: true,
   imports: [ChatUIModule],
-});
+})
 
 export class AppComponent {
   @ViewChild('chatUI') public chatUI!: ChatUI;

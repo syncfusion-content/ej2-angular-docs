@@ -134,7 +134,7 @@ GO
 
 After executing this script, the ticket records are stored in the "Tickets" table within the "TicketsDb" database. The database is now ready for integration with the ASP.NET Core Web application.
 
-### Step 2: Create a New ASP.NET Core project
+### Step 2: Create a new ASP.NET Core project
 
 Before installing NuGet packages, a new ASP.NET Core Web Application must be created.
 
@@ -455,7 +455,7 @@ The Program.cs configuration is now complete and Entity Framework Core is proper
 
 ## Integrating Syncfusion Angular Grid
 
-The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a SQL Server database.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a SQL Server database.
 
 ### Step 1: Creating the Angular client application
 
@@ -803,7 +803,7 @@ namespace Grid_EntityFramework.Server.Controllers
 
 **Paging details:**
 
-- The Grid sends page size `Take` and skip count `Skip` parameters to the server.
+- The Grid sends page size `take` and skip count `skip` parameters to the server.
 - The `operation.PerformSkip()` method skips the specified number of records.
 - The `operation.PerformTake()` method retrieves only the required number of records for the current page.
 - The total count is calculated before paging to display the total number of records.
@@ -819,7 +819,7 @@ Searching allows finding records by entering keywords in the search box.
 
 **Instructions:**
 
-1. Ensure the toolbar includes the `Search` item.
+1. Ensure the toolbar includes the `search` item.
 
 ```ts
 // File: src/app/app.component.ts
@@ -1008,7 +1008,7 @@ namespace Grid_EntityFramework.Server.Controllers
 - Open the filter menu from any of the column header.
 - Select filtering criteria (equals, contains, greater than, less than, etc.).
 - Click the "Filter" button to apply the filter.
-- The "UrlDataSource" method receives the filter criteria in `Where` property.
+- The "UrlDataSource" method receives the filter criteria in `where` property.
 - Results are filtered accordingly and displayed in the DataGrid.
 
 When filtering is performed in the Grid, a request is sent to the server with the following payload.
@@ -1111,7 +1111,7 @@ namespace Grid_EntityFramework.Server.Controllers
 
 - Click on the column header to sort in ascending order.
 - Click again to sort in descending order.
-- The "UrlDataSource" method receives the sort criteria in `Sorted` property.
+- The "UrlDataSource" method receives the sort criteria in `sorted` property.
 - Records are sorted accordingly and displayed in the DataGrid.
 
 When sorting is performed in the Grid, a request is sent to the server with the following payload.
@@ -1182,7 +1182,7 @@ export class AppComponent implements OnInit {
 
 Record insertion allows new tickets to be added directly through the Grid component. The adaptor processes the insertion request, performs any required business‑logic validation, and saves the newly created record to the SQL database.
 
-Implement the `insert` method in (**src/app/CustomAdaptor.ts**) to handle record insertion within the `CustomAdaptor` class:
+Implement the "insert" method in (**src/app/CustomAdaptor.ts**) to handle record insertion within the `CustomAdaptor` class:
 
 ```ts
   public override insert(dm: DataManager, data: DataResult) {
@@ -1215,8 +1215,8 @@ In **TicketsController.cs**, implement the "Insert" method:
 
 **What happens behind the scenes:**
 
-1. The form data is collected and validated in the CustomAdaptor's `insert` method.
-2. The `Insert` method in **TicketsController.cs** file is called.
+1. The form data is collected and validated in the CustomAdaptor's "insert" method.
+2. The "Insert" method in **TicketsController.cs** file is called.
 3. The new record is added to the "Ticket" collection.
 4. The DataGrid automatically refreshes to display the new record.
 
@@ -1230,7 +1230,7 @@ When a new record added in the Grid, a request is sent to the server with the fo
 
 Record modification allows ticket details to be updated directly within the Grid. The adaptor processes the edited row, validates the updated values, and applies the changes to the SQL database while ensuring data integrity is preserved.
 
-Implement the `update` method in (**src/app/CustomAdaptor.ts**) to handle record update within the `CustomAdaptor` class:
+Implement the "update" method in (**src/app/CustomAdaptor.ts**) to handle record update within the `CustomAdaptor` class:
 
 ```ts
   public override update(dm: DataManager, _keyField: string, value: any) {
@@ -1261,15 +1261,15 @@ In **TicketsController.cs**, implement the update method:
 
 **What happens behind the scenes:**
 
-1. The modified data is collected and validated in the CustomAdaptor's `update` method.
-2. The `Update` method in **TicketsController.cs** file is called.
+1. The modified data is collected and validated in the CustomAdaptor's "update" method.
+2. The "Update" method in **TicketsController.cs** file is called.
 3. The existing record is retrieved from the database by "ID".
 4. All properties are updated with the new values.
 5. The DataGrid refreshes to display the updated record.
 
 Now modifications are synchronized to the database and reflected in the grid UI.
 
-When a record updated is in the Grid, a request is sent to the server with the following payload.
+When a record is updated is in the Grid, a request is sent to the server with the following payload.
 
 ![Update Operation Payload](../images/entityframework-editing.png)
 
@@ -1277,7 +1277,7 @@ When a record updated is in the Grid, a request is sent to the server with the f
 
 Record deletion allows tickets to be removed directly from the DataGrid. The adaptor captures the delete request, executes the corresponding SQL DELETE operation, and updates both the database and the grid to reflect the removal.
 
-Implement the `remove` method in (**src/app/CustomAdaptor.ts**) to handle record deletion within the `CustomAdaptor` class:
+Implement the "remove" method in (**src/app/CustomAdaptor.ts**) to handle record deletion within the `CustomAdaptor` class:
 
 ```ts
   public override remove(dm: DataManager, keyField: string, value: any) {
@@ -1311,8 +1311,8 @@ In **TicketsController.cs**, implement the delete method:
 **What happens behind the scenes:**
 
 1. A record is selected and the `Delete` button is clicked.
-2. The CustomAdaptor's `remove` method is called.
-3. The `Remove` method in **TicketsController.cs** file is called.
+2. The CustomAdaptor's "remove" method is called.
+3. The "Remove" method in **TicketsController.cs** file is called.
 4. The record is located in the database by its ID.
 5. The record is removed from the `_db.Tickets` collection.
 6. The Grid refreshes to remove the deleted record from the UI.
@@ -1384,11 +1384,11 @@ In **TicketsController.cs**, implement the batch method:
         }
 ```
 
-> This method is triggered when the Grid is operating in [Batch](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing) Edit mode.
+> This method is triggered when the Grid is operating in [Batch](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing) edit mode.
 
 **What happens behind the scenes:**
 
-- The Grid collects all added, edited, and deleted records in Batch Edit mode.
+- The Grid collects all added, edited, and deleted records in `Batch` edit mode.
 - The combined batch request is passed to the CustomAdaptor’s `batchRequest` method.
 - Each modified record, added and deleted records are processed using `BatchUpdate` method in **TicketsController.cs** file.
 - All repository operations persist changes to the SQL database.
@@ -1488,7 +1488,7 @@ export class AppComponent implements OnInit {
 
 > - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` for a column that contains unique values.
 > - The [editType](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property can be used to specify the desired editor for each column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-> - [type](https://ej2.syncfusion.com/angular/documentation/api/grid/columnmodel#type) property of the Grid columns specifies the data type of a grid column.
+> - The [type](https://ej2.syncfusion.com/angular/documentation/api/grid/columnmodel#type) property of the Grid columns specifies the data type of a grid column.
 
 Here is the complete Controller **TicketsController.cs** file:
 
@@ -1653,9 +1653,9 @@ ng serve
 - **Filter**: Click on column headers to apply filters.
 - **Sort**: Click on column headers to sort data in ascending or descending order.
 - **Pagination**: Navigate through records using page numbers.
-- **Add**: Click the "Add" button to create a new tickets.
-- **Edit**: Click the "Edit" button to modify existing tickets.
-- **Delete**: Click the "Delete" button to remove tickets.
+- **Add**: Click the `Add` button to create a new ticket.
+- **Edit**: Click the `Edit` button to modify existing tickets.
+- **Delete**: Click the `Delete` button to remove tickets.
 
 ## Complete Sample Repository
 

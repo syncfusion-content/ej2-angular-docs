@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
                 if ((this.grid as GridComponent).isEdit){
                     (this.grid as GridComponent).endEdit();
                 }
-                let index: number = parseInt(((e.target as HTMLElement).getAttribute("Index") as string));
+                let index: number = parseInt(((e.target as HTMLElement).getAttribute("data-index") as string));
                 (this.grid as GridComponent).selectRow(index);
                 (this.grid as GridComponent).startEdit();
             }

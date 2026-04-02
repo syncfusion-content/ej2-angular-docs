@@ -10,7 +10,7 @@ import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat'
     template: `<div ejs-aiassistview #aiAssistViewComponent [enableAttachments]="enableAttachments" (promptRequest)="onPromptRequest()" [attachmentSettings]="attachmentSettings" ></div>`
 })
 
-export class App {
+export class AppComponent {
     @ViewChild('aiAssistViewComponent')
     public aiAssistViewComponent!: AIAssistViewComponent;
 

@@ -17,8 +17,8 @@ The EJ2 Chart component is a high-performance, interactive visualization library
 ## Key features of Chart Component are as follows:
 
 * [**Title & Subtitle:**](./title-subtitle)
-    * Title: Displays a clear heading summarizing the purpose of the chart.
-    * Subtitle: Offers optional supporting context below the main title.
+    * **Title**: Displays a clear heading summarizing the purpose of the chart.
+    * **Subtitle**: Offers optional supporting context below the main title.
 
 * [**Axis:**](./axis/axis-overview) Configures the X and Y axes, including labels, intervals, gridlines, and formatting options for accurate mapping of data.
 * [**Series:**](./series/series-overview) Represents collections of data points rendered as line, bar, area, column, or other series types for comparison and analysis.

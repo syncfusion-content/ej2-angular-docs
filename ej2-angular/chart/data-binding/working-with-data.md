@@ -15,13 +15,14 @@ domainurl: ##DomainURL##
 The Angular Chart component supports multiple data binding approaches to suit different application scenarios. Data can be bound from local JSON arrays, dynamically loaded on demand with lazy loading, or fetched from remote services using various adaptor patterns. This guide covers all available data binding methods, helping you choose the right approach for your use case based on data size, performance requirements, and backend architecture.
 
 ## Choosing a data binding approach
-| Method | Best For | Advantages | Considerations |
-|--------|----------|------------|-----------------|
-| Local data | Small to medium datasets | Simple setup, no network latency, instant rendering | All data must be in memory |
-| Common datasource | Multiple series sharing data | Reduces redundancy, single update point | Limited to data common across series |
-| Lazy loading | Large datasets with scrolling | Loads only visible data, better performance | Requires server-side pagination |
-| Remote data (OData/WebAPI) | Backend-driven data | Scalable, centralized data management, real-time updates | Network latency, requires service setup |
-| Offline mode | Data caching with client-side actions | Eliminates repeated requests, faster interactions | Initial load time, memory constraints |
+
+| Method                | Best For                           | Advantages                                             | Considerations                         |
+|-----------------------|-------------------------------------|---------------------------------------------------------|------------------------------------------|
+| Local data            | Small to medium datasets            | Simple setup, no network latency, instant rendering     | All data must be in memory               |
+| Common datasource     | Multiple series sharing data        | Reduces redundancy, single update point                 | Limited to data common across series     |
+| Lazy loading          | Large datasets with scrolling       | Loads only visible data, better performance             | Requires server-side pagination          |
+| Remote data (OData/WebAPI) | Backend-driven data          | Scalable, centralized data management, real-time updates | Network latency, requires service setup  |
+| Offline mode          | Data caching with client-side actions | Eliminates repeated requests, faster interactions       | Initial load time, memory constraints    |
 
 ## Local data
 

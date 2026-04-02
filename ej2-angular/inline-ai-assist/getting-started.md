@@ -112,9 +112,9 @@ The following example illustrates the output in your browser.
 
 {% previewsample "page.domainurl/samples/inline-ai-assist/getting-started" %}
 
-## Configure relateTo property
+## RelateTo and target configuration
 
-You can use the `relateTo` property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
+You can use the `relateTo` property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement. The `target` property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -133,28 +133,6 @@ You can use the `relateTo` property to position the Inline AI Assist relative to
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/inline-ai-assist/relateTo" %}
-
-## Configure target property
-
-The `target` property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
-
-{% tabs %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/inline-ai-assist/target/src/app.component.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/inline-ai-assist/target/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/inline-ai-assist/target/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="styles.css" %}
-{% include code-snippet/inline-ai-assist/target/src/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/inline-ai-assist/target" %}
 
 ## Response display modes
 

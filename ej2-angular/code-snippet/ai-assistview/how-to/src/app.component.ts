@@ -141,7 +141,7 @@ export class AppComponent {
   @ViewChild('grpListObj') public grpListObj!: ListViewComponent;
   @ViewChild('leftList') public leftList!: ListViewComponent;
   @ViewChild('sideObj') public sideObj!: SidebarComponent;
-  @ViewChild('closeButton') closeButton: ButtonComponent;
+  @ViewChild('closeButton') closeButton!: ButtonComponent;
   @ViewChild('toggleButton') toggleButton!: ButtonComponent;
   @ViewChild('bannerContent') bannerContent!: ElementRef<HTMLDivElement>;
   @ViewChild('grpListObj') listviewGrp!: ElementRef<HTMLDivElement>;
