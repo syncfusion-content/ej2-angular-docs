@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the Chat UI component
-    template: `<div id="chatui" ejs-chatui [user]="currentUserModel" (created)="onCreated()" [enableAttachments]="enableAttachments" [attachmentSettings]="attachmentSettings"></div>`
+    template: `<div id="chatui" ejs-chatui [user]="currentUserModel" [enableAttachments]="enableAttachments" [attachmentSettings]="attachmentSettings"></div>`
 })
 
 export class AppComponent {

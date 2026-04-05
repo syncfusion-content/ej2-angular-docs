@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
             visible: true
         };
 
-        this.vietnamLabel = {
+        this.vietnamLabelSettings = {
             visible: true,
             text: 'Vietnam',
             background: '#E8F5E9',
@@ -72,7 +72,7 @@ export class AppComponent implements OnInit {
             showOverlapText: true
         };
 
-        this.indonesiaLabel = {
+        this.indonesiaLabelSettings = {
             visible: true,
             text: 'Indonesia',
             background: '#FFF3E0',
@@ -82,7 +82,7 @@ export class AppComponent implements OnInit {
             showOverlapText: true
         };
 
-        this.franceLabel = {
+        this.franceLabelSettings = {
             visible: true,
             text: 'France',
             background: '#E3F2FD',
@@ -92,7 +92,7 @@ export class AppComponent implements OnInit {
             showOverlapText: true
         };
 
-        this.polandLabel = {
+        this.polandLabelSettings = {
             visible: true,
             text: 'Poland',
             background: '#F3E5F5',
@@ -102,7 +102,7 @@ export class AppComponent implements OnInit {
             showOverlapText: true
         };
 
-        this.mexicoLabel = {
+        this.mexicoLabelSettings = {
             visible: true,
             text: 'Mexico',
             background: '#FBE9E7',

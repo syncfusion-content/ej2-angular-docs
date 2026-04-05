@@ -24,7 +24,7 @@ export class AppComponent {
             { type: 'Button', iconCss: 'e-icons e-chat-trash', tooltip: 'Delete' }
         ],
         itemClicked: (args: MessageToolbarItemClickedEventArgs) => {
-            if (args.item.prefixIcon === 'e-icons e-chat-forward') {
+            if (args.item?.prefixIcon === 'e-icons e-chat-forward' && args.message) {
                 const newMessageObj = {
                     id: 'chat-message-' + (this.chatUI.messages.length + 1).toString(),
                     isForwarded: true,

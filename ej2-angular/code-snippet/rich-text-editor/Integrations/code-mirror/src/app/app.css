@@ -4,3 +4,9 @@
 .e-rte-code-mirror-enabled .e-rte-content {
     display: none !important;  /* To hide the editor area when custom source code enabled. */
 }
+.e-rte-srctextarea {
+    display: none !important;  /* To hide the editor area when custom source code enabled. */
+}
+.e-source-content {
+    display: block !important;
+}

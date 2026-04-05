@@ -45,7 +45,7 @@ import {
     </div>`
 })
 export class AppComponent {
-  tooltipConfig = {
+  public tooltipConfig = {
     enable: true,
     textStyle: {
       fontFamily: 'Arial',

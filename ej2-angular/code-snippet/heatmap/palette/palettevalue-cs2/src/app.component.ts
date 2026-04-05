@@ -1,0 +1,71 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { HeatMapModule } from '@syncfusion/ej2-angular-heatmap'
+import { LegendService } from '@syncfusion/ej2-angular-heatmap'
+
+
+
+
+import { Component, ViewEncapsulation } from '@angular/core';
+
+@Component({
+    imports: [
+        HeatMapModule
+    ],
+
+    providers: [LegendService],
+    standalone: true,
+    selector: 'my-app',
+    template:
+        `<ejs-heatmap id='container' style="display:block;" [dataSource]='dataSource' [xAxis]='xAxis' [yAxis]='yAxis'
+       [titleSettings]='titleSettings' [paletteSettings]='paletteSettings' [legendSettings]='legendSettings'>
+        </ejs-heatmap>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent {
+
+    dataSource: Object[] = [
+        [73, 39, 26, 39, 94, 0],
+        [93, 58, 53, 38, 26, 68],
+        [99, 28, 22, 4, 66, 90],
+        [14, 26, 97, 69, 69, 3],
+        [7, 46, 47, 47, 88, 6],
+        [41, 55, 73, 23, 3, 79],
+        [56, 69, 21, 86, 3, 33],
+        [45, 7, 53, 81, 95, 79],
+        [60, 77, 74, 68, 88, 51],
+        [25, 25, 10, 12, 78, 14],
+        [25, 56, 55, 58, 12, 82],
+        [74, 33, 88, 23, 86, 59]];
+
+    titleSettings: Object = {
+        text: 'Sales Revenue per Employee (in 1000 US$)',
+        textStyle: {
+            size: '15px',
+            fontWeight: '500',
+            fontStyle: 'Normal',
+            fontFamily: 'Segoe UI'
+        }
+    };
+    xAxis: Object = {
+        labels: ['Nancy', 'Andrew', 'Janet', 'Margaret', 'Steven',
+            'Michael', 'Robert', 'Laura', 'Anne', 'Paul', 'Karin', 'Mario'],
+    };
+    yAxis: Object = {
+        labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
+    };
+    public paletteSettings: Object = {
+        palette: [
+            { startValue: 1, endValue: 30, minColor: '#0000FF', maxColor: '#008000' },
+            { startValue: 30, endValue: 60, minColor: '#808080', maxColor: '#ffa500' },
+            { startValue: 60, endValue: 90, minColor: '#355C7D', maxColor: '#C06C84' }
+        ],
+        type: "Gradient"
+    };
+    public legendSettings: Object = {
+        visible: true,
+    };
+}
+
+
+

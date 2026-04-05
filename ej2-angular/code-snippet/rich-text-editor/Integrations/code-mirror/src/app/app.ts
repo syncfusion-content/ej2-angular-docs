@@ -58,12 +58,13 @@ export class App  {
             this.rteObj!.rootContainer.classList.remove('e-rte-code-mirror-enabled');
             this.rteObj!.focusIn();
         } else {
+            const sourceContentContainer = this.rteObj!.rootContainer.querySelector('.e-source-content') as HTMLElement;
             this.rteObj!.rootContainer.classList.add('e-rte-code-mirror-enabled');
             this.rteObj!.rootContainer.classList.remove('e-source-code-enabled');
             const editorVlaue: string = (this.rteObj!.element.querySelector('.e-rte-srctextarea') as HTMLTextAreaElement).value;
             if (!mirrorView) {
                 mirrorView = createElement('div', { className: 'rte-code-mirror', id: id, styles: 'display: none;' });
-                this.rteObj!.rootContainer.appendChild(mirrorView);
+                sourceContentContainer!.appendChild(mirrorView);
                 this.renderCodeMirror(mirrorView, editorVlaue === null ? '' : editorVlaue);
             }
             else {

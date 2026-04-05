@@ -46,7 +46,6 @@ import {
   `
 })
 export class AppComponent {
-
   public labelSettings = {
     visible: true
   };

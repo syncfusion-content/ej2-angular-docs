@@ -61,8 +61,7 @@ export class AppComponent {
     visible: true
   };
 
-  
-  onLabelRendering(args: SankeyLabelRenderEventArgs): void {
+  onLabelRendering(args:SankeyLabelRenderEventArgs): void {
     if (args.text ==="Agricultural Waste 84.152") {
       args.labelStyle.fontWeight = 'bold';
       args.labelStyle.color = '#FF6B6B';

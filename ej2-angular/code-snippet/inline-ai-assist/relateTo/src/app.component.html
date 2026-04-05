@@ -6,6 +6,7 @@
     </div>
     <ejs-inlineaiassist id="defaultInlineAssist" #inlineAssistComponent
         [relateTo]="'#summarizeBtn'"
+        [target]="'#container'"
         [responseSettings] = "responseSetting"
         popupWidth="500px"
         (promptRequest)="onPromptRequest($event)">

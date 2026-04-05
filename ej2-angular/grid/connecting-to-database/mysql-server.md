@@ -19,12 +19,12 @@ The [Syncfusion Angular Grid](https://ej2.syncfusion.com/angular/documentation/g
 
 **Key benefits of LINQ2DB for MySQL and Syncfusion Grid integration:**
 
-- **Lightweight Performance**: Minimal overhead compared to Entity Framework, ideal for web applications requiring fast database access.
-- **LINQ Support**: Use familiar LINQ syntax for database queries instead of raw SQL strings.
-- **Type Safety**: Strong typing reduces runtime errors and provides IntelliSense support.
-- **Built-in Security**: Automatic parameterization prevents SQL injection attacks.
-- **MySQL-Specific**: Full support for MySQL 5.7+ and MySQL 8.0+ with proper collation and character encoding handling.
-- **Minimal Configuration**: Simple setup with straightforward connection string management.
+- **Lightweight performance**: Minimal overhead compared to Entity Framework, ideal for web applications requiring fast database access.
+- **LINQ support**: Use familiar LINQ syntax for database queries instead of raw SQL strings.
+- **Type safety**: Strong typing reduces runtime errors and provides IntelliSense support.
+- **Built-in security**: Automatic parameterization prevents SQL injection attacks.
+- **MySQL-specific**: Full support for MySQL 5.7+ and MySQL 8.0+ with proper collation and character encoding handling.
+- **Minimal configuration**: Simple setup with straightforward connection string management.
 - **Compatibility with Syncfusion DataManager**: Works seamlessly with Syncfusion Grid's built-in data operations (filtering, sorting, paging, searching).
 
 ## Prerequisites
@@ -140,7 +140,7 @@ Install-Package linq2db -Version 6.1.0
 Install-Package linq2db.MySql -Version 6.1.0
 Install-Package MySqlConnector -Version 2.5.0
 dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version 9.0.0
-dotnet add package Syncfusion.EJ2.Base --version 32.2.3
+dotnet add package Syncfusion.EJ2.AspNet.Core --version 32.2.3
 ```
 
 **Method 2: Using NuGet Package Manager UI:**
@@ -151,7 +151,7 @@ dotnet add package Syncfusion.EJ2.Base --version 32.2.3
    - **linq2db.MySql** (version 6.1.0)
    - **MySqlConnector** (version 2.5.0)
    - **Microsoft.AspNetCore.Mvc.NewtonsoftJson** (version 9.0.0)
-   - **Syncfusion.EJ2.Base** (version 32.2.3)
+   - **Syncfusion.EJ2.AspNet.Core** (version 32.2.3)
 
 All required packages are now installed.
 
@@ -270,7 +270,7 @@ namespace Grid_MySQL.Server.Data
 - **MySqlVersion.MySql80**: Specifies MySQL 8.0+ compatibility. Use **MySql57** for MySQL 5.7.
 - **MySqlProvider.MySqlConnector**: Uses the modern MySqlConnector library instead of the legacy MySql.Data.
 - **InlineParameters**: When set to `true`, enables inline parameter logging, making SQL debugging easier.
-- **Transactions Property**: Returns an **ITable<Transactions>** interface that allows LINQ queries against the transactions table.
+- **Transactions Property**: Returns an `ITable<Transactions>` interface that allows LINQ queries against the transactions table.
 - **Connection String**: Retrieved from the **MySqlConn** entry in **appsettings.json** configured in Step 6.
 
 The AppDataConnection class is now ready for use in controllers.
@@ -701,7 +701,7 @@ On the server side create a file **GridController.cs** and add the "UrlDatasourc
 
 **Paging details:**
 
-- The Grid sends page size `Take` and skip count `Skip` parameters to the server.
+- The Grid sends page size `take` and skip count `skip` parameters to the server.
 - The `operation.PerformSkip()` method skips the specified number of records.
 - The `operation.PerformTake()` method retrieves only the required number of records for the current page.
 - The total count is calculated before paging to display the total number of records.
@@ -817,7 +817,7 @@ Update the "UrlDatasource" method in the **GridController.cs** file to handle se
 
 **Searching details:**
 
-- When text is entered in the search box and <kbd>Enter</kbd> is pressed, the Grid sends a search request to the server.
+- When text is entered in the search box and <kbd>Enter</kbd> key is pressed, the Grid sends a search request to the server.
 - The "UrlDatasource" method receives the search criteria in `Search` parameter.
 - The `operation.PerformSearching()` method filters the data based on the search term.
 - Results are returned and displayed in the Grid.
@@ -929,7 +929,7 @@ Update the "UrlDatasource" method in the **GridController.cs** file to handle fi
 - Open the filter menu from any of the column header.
 - Select filtering criteria (equals, contains, greater than, less than, etc.).
 - Click the "Filter" button to apply the filter.
-- The "UrlDatasource" method receives the filter criteria in `Where` property.
+- The "UrlDatasource" method receives the filter criteria in `where` property.
 - Results are filtered accordingly and displayed in the Grid.
 
 When filtering is performed in the Grid, a request is sent to the server with the following payload.
@@ -1039,7 +1039,7 @@ Update the "UrlDatasource" method in the **GridController.cs** file to handle so
 
 - Click on the column header to sort in ascending order.
 - Click again to sort in descending order.
-- The "UrlDatasource" method receives the sort criteria in `Sorted`.
+- The "UrlDatasource" method receives the sort criteria in `sorted`.
 - Records are sorted accordingly and displayed in the Grid.
 
 When sorting is performed in the Grid, a request is sent to the server with the following payload.
@@ -1050,7 +1050,7 @@ When sorting is performed in the Grid, a request is sent to the server with the 
 
 CRUD operations allow adding new records, modifying existing records, and removing items that are no longer relevant. The `DataManager` posts a specific action for each operation so that the server can route to the appropriate handler.
 
-Editing operations in the Grid are enabled through configuring the [Edit Settings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true` in the **app.component.html**. Then inject the `EditService` module in the `providers` property of the angular component.
+Editing operations in the Grid are enabled through configuring the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true` in the **app.component.html**. Then inject the `EditService` module in the `providers` property of the angular component.
 
 **src/app/app.component.ts**:
 
@@ -1134,7 +1134,7 @@ export class AppComponent implements OnInit {
 
 Record insertion allows new transactions to be added directly through the Grid component. The adaptor processes the insertion request, performs any required business‑logic validation, and saves the newly created record to the MySQL database.
 
-Implement the `insert` method in (**src/app/custom-adaptor.ts**) to handle record insertion within the `CustomAdaptor` class:
+Implement the "insert" method in (**src/app/custom-adaptor.ts**) to handle record insertion within the `CustomAdaptor` class:
 
 ```ts
   public override insert(dm: DataManager, data: DataResult) {
@@ -1169,12 +1169,12 @@ In **GridController.cs**, implement the "Insert" method:
 
 **What happens behind the scenes:**
 
-1. The form data is collected and validated in the CustomAdaptor's `insert` method.
-2. The `Insert` method in **GridController.cs** file is called.
+1. The form data is collected and validated in the CustomAdaptor's "insert" method.
+2. The "Insert" method in **GridController.cs** file is called.
 3. The new record is added to the `Transactions` collection.
 4. The Grid automatically refreshes to display the new record.
 
-When a new record added in the Grid, a request is sent to the server with the following payload.
+	When a new record is added in the Grid, a request is sent to the server with the following payload.
 
 ![Insert Operation Payload](../images/mysql-grid-add.png)
 
@@ -1182,7 +1182,7 @@ When a new record added in the Grid, a request is sent to the server with the fo
 
 Record modification allows transaction details to be updated directly within the Grid. The adaptor processes the edited row, validates the updated values, and applies the changes to the **MySQL database** while ensuring data integrity is preserved.
 
-Implement the `update` method in (**src/app/custom-adaptor.ts**) to handle record update within the `CustomAdaptor` class:
+Implement the "update" method in (**src/app/custom-adaptor.ts**) to handle record update within the `CustomAdaptor` class:
 
 ```ts
   public override update(dm: DataManager, _keyField: string, value: any) {
@@ -1219,13 +1219,13 @@ In **GridController.cs**, implement the update method:
 
 **What happens behind the scenes:**
 
-1. The modified data is collected and validated in the CustomAdaptor's `update` method.
-2. The `Update` method in **GridController.cs** file is called.
+1. The modified data is collected and validated in the CustomAdaptor's "update" method.
+2. The "Update" method in **GridController.cs** file is called.
 3. The existing record is retrieved from the database by ID.
 4. All properties are updated with the new values.
 5. The Grid refreshes to display the updated record.
 
-When a record updated in the Grid, a request is sent to the server with the following payload.
+When a record is updated in the Grid, a request is sent to the server with the following payload.
 
 ![Update Operation Payload](../images/mysql-grid-edit.png)
 
@@ -1233,7 +1233,7 @@ When a record updated in the Grid, a request is sent to the server with the foll
 
 Record deletion allows transactions to be removed directly from the Grid. The adaptor captures the delete request, executes the corresponding **MySQL DELETE** operation, and updates both the database and the grid to reflect the removal.
 
-Implement the `remove` method in (**src/app/custom-adaptor.ts**) to handle record deletion within the `CustomAdaptor` class:
+Implement the ""remove" method in (**src/app/custom-adaptor.ts**) to handle record deletion within the `CustomAdaptor` class:
 
 ```ts
   public override remove(dm: DataManager, keyField: string, value: any) {
@@ -1268,13 +1268,13 @@ In **GridController.cs**, implement the delete method:
 **What happens behind the scenes:**
 
 1. A record is selected and the `Delete` button is clicked.
-2. The CustomAdaptor's `remove` method is called.
-3. The `Remove` method in **GridController.cs** file is called.
-4. The record is located in the database by its ID.
+2. The CustomAdaptor's "remove" method is called.
+3. The "Remove" method in **GridController.cs** file is called.
+4. The record is located in the database by its "ID".
 5. The record is removed from the "Transactions" collection.
 6. The Grid refreshes to remove the deleted record from the UI.
 
-When a record deleted in the Grid, a request is sent to the server with the following payload.
+When a record is deleted in the Grid, a request is sent to the server with the following payload.
 
 ![Delete Operation Payload](../images/mysql-grid-delete.png)
 
@@ -1417,7 +1417,7 @@ export class AppComponent implements OnInit {
 
 > - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/grid/columns#isprimarykey) to `true` for a column that contains unique values.
 > - The [editType](https://ej2.syncfusion.com/angular/documentation/grid/columns#edittype) property can be used to specify the desired editor for each column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-> - [type](https://ej2.syncfusion.com/angular/documentation/grid/columns#type) property of the Grid columns specifies the data type of a grid column.
+> - The [type](https://ej2.syncfusion.com/angular/documentation/grid/columns#type) property of the Grid columns specifies the data type of a grid column.
 
 Here is the complete Controller **GridController.cs** file:
 

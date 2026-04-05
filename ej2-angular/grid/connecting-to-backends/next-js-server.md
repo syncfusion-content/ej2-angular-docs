@@ -311,7 +311,7 @@ export class Doctors {
 </ejs-grid>
 ```
 
-The [Implement data operations](#step-3-implement-data-operations-on-server-side) section already includes a code example that sends filter parameters from the Grid to the Next.js server using the `dataStateChange` event handler. When filtering is applied in the Grid, the `dataStateChange` event provides the current filter details through its `where` parameter. 
+The [implement data operations](#step-3-implement-data-operations-on-server-side) section already includes a code example that sends filter parameters from the Grid to the Next.js server using the `dataStateChange` event handler. When filtering is applied in the Grid, the `dataStateChange` event provides the current filter details through its `where` parameter. 
 
 The image below illustrates the filter state being passed to the `where` property of the `dataStateChange` event arguments.
 
@@ -402,7 +402,7 @@ export class Doctors {
 </ejs-grid>
 ```
 
-The [Implement data operations](#step-3-implement-data-operations-on-server-side) section already includes a code example that sends search parameters from the Grid to the Next.js server using the `dataStateChange` event handler. When searching is applied in the Grid, the `dataStateChange` event provides the current search details through its `search` parameter. 
+The [implement data operations](#step-3-implement-data-operations-on-server-side) section already includes a code example that sends search parameters from the Grid to the Next.js server using the `dataStateChange` event handler. When searching is applied in the Grid, the `dataStateChange` event provides the current search details through its `search` parameter. 
 
 The image below illustrates the search state being passed to the `search` property of the `dataStateChange` event arguments.
 
@@ -467,7 +467,7 @@ export class Doctors {
 </ejs-grid>
 ```
 
-The [Implement data operations](#step-3-implement-data-operations-on-server-side) section already includes a code example that sends sort parameters from the Grid to the Next.js server using the `dataStateChange` event handler. When sorting is applied in the Grid, the `dataStateChange` event provides the current sort details through its `sorted` parameter.
+The [implement data operations](#step-3-implement-data-operations-on-server-side) section already includes a code example that sends sort parameters from the Grid to the Next.js server using the `dataStateChange` event handler. When sorting is applied in the Grid, the `dataStateChange` event provides the current sort details through its `sorted` parameter.
 
 The image below illustrates the sort state being passed to the `sorted` property of the `dataStateChange` event arguments.
 
@@ -538,7 +538,7 @@ export class Doctors {
 </ejs-grid>
 ```
 
-The [Implement data operations](#step-3-implement-data-operations-on-server-side) section already includes a code example that sends page parameters from the Grid to the Next.js server using the `dataStateChange` event handler. When paging is applied in the Grid, the `dataStateChange` event provides the current page details through its `skip` and `take` parameter. 
+The [implement data operations](#step-3-implement-data-operations-on-server-side) section already includes a code example that sends page parameters from the Grid to the Next.js server using the `dataStateChange` event handler. When paging is applied in the Grid, the `dataStateChange` event provides the current page details through its `skip` and `take` parameter. 
 
 The image below illustrates the page state being passed to the `skip` and `take` property of the `dataStateChange` event arguments.
 
@@ -634,7 +634,7 @@ export async function POST(request: NextRequest) {
 }
 ```
 
-The `dataSourceChanged` event handler in the **doctors.ts** file is responsible for sending an asynchronous request to the server based on the Grid’s add record details provided in the event arguments. Once the server ("POST") method response is received, the `endEdit` method is invoked within the `dataSourceChanged` event to complete the Grid operation.
+The `dataSourceChanged` event handler in the **doctors.ts** file is responsible for sending an asynchronous request to the server based on the Grid’s add record details provided in the event arguments. Once the server (`POST`) method response is received, the `endEdit` method is invoked within the `dataSourceChanged` event to complete the Grid operation.
 
 The image illustrates the newly inserted data passed to the server through the `dataSourceChanged` event arguments in the Grid:
 

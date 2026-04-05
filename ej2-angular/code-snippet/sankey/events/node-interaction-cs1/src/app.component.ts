@@ -21,8 +21,8 @@ import { SankeyNodeEventArgs } from '@syncfusion/ej2-angular-charts';
         <ejs-sankey
           width="90%"
           height="450px"
-          (nodeMouseClick)="onNodeMouseClick($event)"
-          (nodeMouseEnter)="onNodeMouseEnter($event)">
+          (nodeClick)="onNodeMouseClick($event)"
+          (nodeEnter)="onNodeMouseEnter($event)">
 
           <e-sankey-nodes>
             <e-sankey-node id="Agricultural Waste"></e-sankey-node>

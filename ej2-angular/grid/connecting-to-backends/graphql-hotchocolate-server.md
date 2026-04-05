@@ -181,7 +181,7 @@ namespace AngularApp1.Server.Models
 }
 ```
 
-**Purpose**: This model class defines the structure of order records and provides an in-memory data source through the `GetAllRecords()` method. This eliminates the need for a database during development and testing.
+**Purpose**: This model class defines the structure of order records and provides an in-memory data source through the "GetAllRecords()" method. This eliminates the need for a database during development and testing.
 
 ### Step 4: Configure HotChocolate GraphQL in Program.cs
 
@@ -255,12 +255,12 @@ app.Run();
 
 **Configuration details:**
 
-- **AddGraphQLServer()**: Registers the HotChocolate GraphQL server with dependency injection.
-- **AddQueryType<Query>()**: Registers the Query type that handles all read operations.
-- **AddMutationType<Mutation>()**: Registers the Mutation type that handles all write operations (create, update, delete).
-- **AddFiltering()**, **AddSorting()**, **AddProjections()**: Adds support for filtering, sorting, and field selection capabilities.
-- **MapGraphQL("/graphql")**: Maps the GraphQL endpoint to `/graphql`.
-- **AddCors**: Enables cross-origin requests from the Angular client running on Angular development server.
+- `AddGraphQLServer()`: Registers the HotChocolate GraphQL server with dependency injection.
+- `AddQueryType<Query>()`: Registers the Query type that handles all read operations.
+- `AddMutationType<Mutation>()`: Registers the Mutation type that handles all write operations (create, update, delete).
+- `AddFiltering()`, `AddSorting()`, `AddProjections()`: Adds support for filtering, sorting, and field selection capabilities.
+- `MapGraphQL("/graphql")`: Maps the GraphQL endpoint to `/graphql`.
+- `AddCors`: Enables cross-origin requests from the Angular client running on Angular development server.
 
 ### Step 5: Configure Syncfusion DataManagerInput types
 
@@ -272,7 +272,7 @@ Create a new folder named **GraphQL** in the **AngularApp1.Server** project.
 
 **Create DataManagerInput.cs:**
 
-Create a new file **GraphQL/DataManagerInput.cs** with the following content:
+Create a new file (**GraphQL/DataManagerInput.cs**) with the following content:
 
 ```cs
 using System.Collections.Generic;
@@ -351,11 +351,11 @@ This format ensures the Grid can properly handle paging, display total record co
 
 ## Perform data operations in server
 
-The HotChocolate GraphQL backend handles all data operations such as filtering, searching, sorting, and paging. These operations are applied to the dataset based on the grid state received from the client through the `DataManagerInput` parameter.
+The HotChocolate GraphQL backend handles all data operations such as filtering, searching, sorting, and paging. These operations are applied to the dataset based on the grid state received from the client through the "DataManagerInput" parameter.
 
-### Step 7: Create GraphQL Query resolver
+**Create GraphQL Query resolver**
 
-A query resolver in HotChocolate is a method that handles data retrieval requests. The query resolver receives the `DataManagerInput` parameter, applies the requested operations, and returns data in the format expected by Syncfusion Grid.
+A query resolver in HotChocolate is a method that handles data retrieval requests. The query resolver receives the "DataManagerInput" parameter, applies the requested operations, and returns data in the format expected by Syncfusion Grid.
 
 **Create Query.cs:**
 
@@ -700,7 +700,7 @@ if (datamanager?.Take.HasValue == true)
 
 CRUD operations are handled by GraphQL mutations. Mutations are special GraphQL operations that modify data on the server, such as creating, updating, or deleting records.
 
-### Step 8: Create GraphQL Mutation resolver
+**Create GraphQL Mutation resolver**
 
 A mutation resolver in HotChocolate is a method that handles data modification requests. Each CRUD operation (Create, Update, Delete) is implemented as a separate mutation method.
 
@@ -1005,7 +1005,7 @@ The `$datamanager` variable contains all operation details (paging, sorting, fil
 
 ### Step 5: Enable paging feature
 
-Paging divides large datasets into smaller, manageable pages based on offset and page size. When paging is performed in the Grid, the `skip` and `take` values are sent to the server through the `DataManagerInput` parameter.
+Paging divides large datasets into smaller, manageable pages based on offset and page size. When paging is performed in the Grid, the `skip` and `take` values are sent to the server through the "DataManagerInput" parameter.
 
 **Enable paging in the Grid:**
 
@@ -1068,7 +1068,7 @@ The image illustrates the paging details (`skip` and `take`) included in the ser
 
 ### Step 6: Enable searching feature
 
-Searching provides the capability to find specific records by entering keywords into the search box. When a search action is performed in the Grid, the `GraphQLAdaptor` sends the search key and the target fields through the "search" parameter of the "DataManagerInput".
+Searching provides the capability to find specific records by entering keywords into the search box. When a search action is performed in the Grid, the `GraphQLAdaptor` sends the search key and the target fields through the `search` parameter of the "DataManagerInput".
 
 **Enable searching in the Grid:**
 
@@ -1123,13 +1123,13 @@ Open the **app.component.ts** file, inject the `ToolbarService` to the providers
 
 **Searching details included in request payload:**
 
-The image below displays the "search" parameter values.
+The image below displays the `search` parameter values.
 
 ![GraphQL-HotChocolate-Searching](../images/GraphQL-HotChocolate-Searching.png)
 
 ### Step 7: Enable sorting feature
 
-The sorting feature in the Grid allows records to be organized in ascending or descending order based on one or more columns. The `GraphQLAdaptor` automatically passes the sorting details to the server through the "sorted" parameter of the "DataManagerInput".
+The sorting feature in the Grid allows records to be organized in ascending or descending order based on one or more columns. The `GraphQLAdaptor` automatically passes the sorting details to the server through the `sorted` parameter of the "DataManagerInput".
 
 **Enable sorting in the Grid:**
 
@@ -1183,13 +1183,13 @@ Open the **app.component.ts** file, inject the `SortService` to the providers.
 
 **Sorting details included in request payload:**
 
-The image below shows the values passed to the "sorted" parameter.
+The image below shows the values passed to the `sorted` parameter.
 
 ![GraphQL-HotChocolate-Sorting](../images/GraphQL-HotChocolate-Sorting.png)
 
 ### Step 8: Enable filtering feature
 
-Filtering narrows down records by specifying conditions on column values. Records can be filtered using checkbox filters or comparison operators such as equals, greater than, or less than. The `GraphQLAdaptor` automatically passes the filter conditions to the server through the "where" parameter of the "DataManagerInput".
+Filtering narrows down records by specifying conditions on column values. Records can be filtered using checkbox filters or comparison operators such as equals, greater than, or less than. The `GraphQLAdaptor` automatically passes the filter conditions to the server through the `where` parameter of the "DataManagerInput".
 
 **Enable filtering in the Grid:**
 
@@ -1241,7 +1241,7 @@ Open the **app.component.ts** file, inject the `FilterService` to the providers.
 
 **Filtering details included in request payload:**
 
-The image illustrates the serialized "where" condition passed from the DataManager.
+The image illustrates the serialized `where` condition passed from the DataManager.
 
 ![GraphQL-HotChocolate-Filtering](../images/GraphQL-HotChocolate-Filtering.png)
 
@@ -1255,9 +1255,9 @@ Open the **app.component.ts** file and inject all required services (`ToolbarSer
 
 Defines GraphQL mutations for CRUD operations using the `getMutation` function:
 
-- **Insert mutation**: Creates new records
-- **Update mutation**: Modifies existing records
-- **Delete mutation**: Removes records
+- **Insert mutation**: Creates new records.
+- **Update mutation**: Modifies existing records.
+- **Delete mutation**: Removes records.
 
 ```js
 [app.component.ts]
@@ -1516,30 +1516,30 @@ Test the following Grid operations in the Angular application:
 
 **Paging:**
 
-- Click on page numbers or use page size dropdown
-- Verify that data loads correctly for each page
+- Click on page numbers or use page size dropdown.
+- Verify that data loads correctly for each page.
 
 **Sorting:**
 
-- Click on column headers to sort
-- Verify ascending and descending sort orders
+- Click on column headers to sort.
+- Verify ascending and descending sort orders.
 
 **Filtering:**
 
-- Click the filter icon in any column header
-- Apply filter conditions and verify results
+- Click the filter icon in any column header.
+- Apply filter conditions and verify results.
 
 **Searching:**
 
-- Use the search box in the toolbar
-- Verify that search works across all columns
+- Use the search box in the toolbar.
+- Verify that search works across all columns.
 
 **CRUD operations:**
 
-- Click `Add` to create new records
-- Click `Edit` to modify existing records
-- Click `Delete` to remove records
-- Verify that changes are reflected immediately
+- Click `Add` to create new records.
+- Click `Edit` to modify existing records.
+- Click `Delete` to remove records.
+- Verify that changes are reflected immediately.
 
 ## Complete sample repository
 
@@ -1551,12 +1551,12 @@ A complete working sample of the Angular Grid with HotChocolate GraphQL backend 
 
 **Repository contents:**
 
-- Complete ASP.NET Core backend with HotChocolate GraphQL configuration
-- Angular frontend with Syncfusion Grid and `GraphQLAdaptor` setup
-- Sample data models and in-memory data source
-- GraphQL queries and mutations for all CRUD operations
-- Data operation implementations (filtering, sorting, paging, searching)
-- Ready-to-run Visual Studio solution
+- Complete ASP.NET Core backend with HotChocolate GraphQL configuration.
+- Angular frontend with Syncfusion Grid and `GraphQLAdaptor` setup.
+- Sample data models and in-memory data source.
+- GraphQL queries and mutations for all CRUD operations.
+- Data operation implementations (filtering, sorting, paging, searching).
+- Ready-to-run Visual Studio solution.
 
 **Clone and run:**
 

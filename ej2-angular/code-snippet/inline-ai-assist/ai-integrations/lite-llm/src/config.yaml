@@ -1,0 +1,15 @@
+# LiteLLM proxy configuration (YAML)
+
+model_list:
+  - model_name: openai/gpt-4o-mini      # Alias your frontend will use
+    litellm_params:
+      model: gpt-4o-mini                # OpenAI base model name
+      api_key: {{Your_API_Key}}
+
+router_settings:
+  # Optional: master_key for proxy authentication
+  # master_key: test_key
+  cors:
+    - "*"
+  cors_allow_origins:
+    - "*"

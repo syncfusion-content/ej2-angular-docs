@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { ChatUIModule, UserModel, ChatUI, ToolbarSettingsModel,} from '@syncfusion/ej2-angular-interactive-chat';
 import { AzureOpenAI } from 'openai';
-import * as marked from 'marked';
+import { marked } from 'marked';
 
 const azureOpenAIApiKey = 'Your_Azure_OpenAI_API_Key';
 const azureOpenAIEndpoint = 'Your_Azure_OpenAI_Endpoint';
@@ -38,7 +38,7 @@ const client = new AzureOpenAI({
   </div>`,
   standalone: true,
   imports: [ChatUIModule],
-});
+})
 
 export class AppComponent {
   @ViewChild('chatUI') public chatUI!: ChatUI;
@@ -62,7 +62,7 @@ export class AppComponent {
         temperature: 0.7,
       });
 
-      const responseText: string = completion.choices[0].message.content.trim() || 'No response received.';
+      const responseText: string = completion.choices[0]?.message?.content?.trim() || 'No response received.';
 
       this.chatUI.addMessage({
         text: marked.parse(responseText) as string,

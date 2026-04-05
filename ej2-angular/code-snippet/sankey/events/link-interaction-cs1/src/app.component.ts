@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SankeyAllModule } from '@syncfusion/ej2-angular-charts';
 import { SankeyLinkEventArgs } from '@syncfusion/ej2-angular-charts';
 
@@ -10,7 +10,7 @@ import { SankeyLinkEventArgs } from '@syncfusion/ej2-angular-charts';
     <div class="control-pane">
       <div class="control-section" id="sankey-container">
 
-        <ejs-sankey width="90%" height="450px" (linkMouseClick)="onLinkClick($event)" (linkMouseEnter)="onLinkMouseEnter($event)">
+        <ejs-sankey width="90%" height="450px" (linkClick)="onLinkClick($event)" (linkEnter)="onLinkMouseEnter($event)">
           <e-sankey-nodes>
             <e-sankey-node id="Agricultural Waste"></e-sankey-node>
             <e-sankey-node id="Biomass Residues"></e-sankey-node>
@@ -33,7 +33,7 @@ import { SankeyLinkEventArgs } from '@syncfusion/ej2-angular-charts';
     </div>
   `
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   onLinkClick(args: SankeyLinkEventArgs): void {
     console.log('Link clicked', args.link);
   }
@@ -41,6 +41,4 @@ export class AppComponent implements OnInit {
   onLinkMouseEnter(args: SankeyLinkEventArgs): void {
     console.log('Link hovered:', args.link);
   }
-
-  ngOnInit(): void {}
 }
