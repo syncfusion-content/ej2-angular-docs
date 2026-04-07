@@ -16,7 +16,7 @@ domainurl: ##DomainURL##
 **Application architecture:**
 
 - **Backend**: Express.js server (Node.js) - Handles REST API endpoints, patient data CRUD operations, and business logic.
-- **Frontend**: Angular application - Displays the Syncfusion Grid UI with `UrlAdaptor` for seamless data binding.
+- **Frontend**: Angular application - Displays the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid UI with `UrlAdaptor` for seamless data binding.
 - **Data Model**: Hospital Patient Management System with comprehensive patient information.
 
 ## Prerequisites
@@ -36,13 +36,13 @@ domainurl: ##DomainURL##
 | 2    | Handle server-side filtering, searching, sorting, and paging for efficient data processing         | [View](#performing-data-operations)                           |
 | 3    | Handle server-side CRUD actions                                                                     | [View](#performing-crud-operations)                           |
 | 4    | Start servers locally and access the backend                                                        | [View](#run-the-server-application)                           |
-| 5    | Create an Angular project and configure Syncfusion Grid with UrlAdaptor                             | [View](#connecting-syncfusion-angular-grid-with-expressjs)    |
+| 5    | Create an Angular project and configure Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with UrlAdaptor                             | [View](#connecting-syncfusion-angular-grid-with-expressjs)    |
 | 6    | Start servers locally and access the frontend                                                       | [View](#run-the-application)                                  |
 | 7    | Explore a complete working sample on GitHub                                                         | [View](#complete-sample-repository)                           |
 
 ## Setting up the Express.js backend using Node.js
 
-The Express.js backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion Angular Grid.
+The Express.js backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 ### Step 1: Create the Express server and install required packages
 
@@ -52,7 +52,7 @@ For this implementation, an Express.js server is created to manage a **Hospital 
 
 **Create project root folder:**
 
-Open a terminal (for example, an integrated terminal in Visual Studio Code, Windows Command prompt opened with <kbd>Win+R</kbd>, or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following commands:
+Open a terminal (for example, an integrated terminal in Visual Studio Code, Windows Command Prompt opened with <kbd>Win+R</kbd> or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following commands:
 
 ```bash
 mkdir ej2-angular-grid-with-express-js
@@ -227,7 +227,7 @@ export function generatePatients(count: number): Patient[] {
 }
 ```
 
-**Purpose**: This utility generates 1000 patient records in-memory, eliminating the need for a real database during development and testing.
+**Purpose**: This utility generates "1000" patient records in-memory, eliminating the need for a real database during development and testing.
 
 ### Step 5: Setup npm scripts for development
 
@@ -514,7 +514,7 @@ Create a new Angular application using Angular CLI, which provides a faster deve
 
 ### Step 1: Create Angular application
 
-Open a terminal (for example, an integrated terminal in Visual Studio Code, Windows Command prompt opened with <kbd>Win+R</kbd>, or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following commands (navigate to the root `ej2-angular-grid-with-express-js` directory first):
+Open a terminal (for example, an integrated terminal in Visual Studio Code, Windows Command Prompt opened with <kbd>Win+R</kbd> or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following commands (navigate to the root **ej2-angular-grid-with-express-js** directory first):
 
 ```bash
 ng new client --routing --style=css
@@ -525,14 +525,14 @@ This command creates an Angular application named **client** with routing and CS
 
 ### Step 2: Install Syncfusion packages
 
-Install the necessary Syncfusion packages using npm:
+Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages using npm:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
 ```
 
-### Step 3: Include Syncfusion Stylesheets
+### Step 3: Include Syncfusion stylesheets
 
 Once dependencies are installed, include the required CSS files in the **src/styles.css** file:
 
@@ -554,7 +554,7 @@ For this project, the "Material 3" theme is applied. Other themes can be selecte
 
 ### Step 4: Configure DataManager for REST API communication
 
-The Syncfusion [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) acts as a communication layer between the Angular Grid and backend services. It sends all Grid operations such as reading data, sorting, filtering, searching, paging, and performing CRUD actions—to the server in a standardized format.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) acts as a communication layer between the Angular Grid and backend services. It sends all Grid operations such as reading data, sorting, filtering, searching, paging, and performing CRUD actions—to the server in a standardized format.
 
 The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) is a built‑in adaptor that formats requests for REST‑style endpoints, such as the Express.js REST Framework API. It defines the request structure and processes the server responses. The `UrlAdaptor` converts Grid actions into HTTP POST requests and handles the JSON responses returned by the server, enabling the Grid to manage and display data seamlessly.
 
@@ -583,7 +583,7 @@ export const patientDataManager = new DataManager({
 
 ### Step 5: Create the Grid component
 
-Create an Angular component that renders the Syncfusion Grid and connects it to the Express.js backend at (**client/src/app/components/patient-grid.component.ts**).
+Create an Angular component that renders the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and connects it to the Express.js backend at (**client/src/app/components/patient-grid.component.ts**).
 
 ```typescript
 
@@ -614,9 +614,9 @@ export class PatientGridComponent {
 }
 ```
 
-### Enable paging
+### Step 6: Enable paging
 
-The paging feature divides Grid records into multiple pages, improving performance and usability when handling large datasets. Enable paging by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpaging) property to `true` and injecting the `Page` module. Without the `Page` module, the pager will not render. Customize pager behavior using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#pagesettings) property.
+The paging feature divides Grid records into multiple pages, improving performance and usability when handling large datasets. Enable paging by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpaging) property to `true` and injecting the `PageService` module into the `providers` property. Without the `PageService` module, the pager will not render. Customize pager behavior using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#pagesettings) property.
 
 ```typescript
 
@@ -643,9 +643,9 @@ When paging is performed in the Grid, a request is sent to the server with the f
 
 ![Paging_Payload](../images/grid-expressjs-paging.png)
 
-### Enable filtering
+### Step 7: Enable filtering
 
-The filtering feature enables searching and refining Grid records based on column values. Enable filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true` and injecting the `Filter` module. Without the `Filter` module, the filter bar will not render. Customize filtering options using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#filtersettings) property.
+The filtering feature enables searching and refining Grid records based on column values. Enable filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true` and injecting the `FilterService` module into the `providers` property. Without the `FilterService` module, the filter bar will not render. Customize filtering options using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#filtersettings) property.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -671,7 +671,7 @@ When filtering is performed in the Grid, a request is sent to the server with th
 
 ![Filtering_Payload](../images/grid-expressjs-filtering.png)
 
-### Enable searching
+### Step 8: Enable searching
 
 Enabling the search functionality involves integrating a search text box directly into the grid's toolbar. This allows entering search criteria conveniently within the grid interface. To add the search item to the grid's toolbar, use the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property and add `Search` item.
 
@@ -700,9 +700,9 @@ When searching is performed in the Grid, a request is sent to the server with th
 
 ![Searching_Payload](../images/grid-expressjs-searching.png)
 
-### Enable sorting
+### Step 9: Enable sorting
 
-The sorting feature allows ordering Grid records by clicking column headers. Enable sorting by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true` and injecting the `Sort` module. Without the `Sort` module, clicking headers will not sort the data. Customize sorting behavior using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#sortsettings) property.
+The sorting feature allows ordering Grid records by clicking column headers. Enable sorting by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true` and injecting the `SortService` module into the `providers` property. Without the `SortService` module, clicking headers will not sort the data. Customize sorting behavior using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#sortsettings) property.
 
 ```typescript
 
@@ -732,7 +732,7 @@ When sorting is performed in the Grid, a request is sent to the server with the 
 
 ![Sorting_Payload](../images/grid-expressjs-sorting.png)
 
-### Enable CRUD actions
+### Step 10: Enable CRUD actions
 
 Enabling editing functionality within the grid requires configuring the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting) properties within the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) to `true`.
 

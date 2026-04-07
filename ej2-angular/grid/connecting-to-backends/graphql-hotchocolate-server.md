@@ -41,7 +41,7 @@ domainurl: ##DomainURL##
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Set up and configure the HotChocolate GraphQL backend using ASP.NET Core | [View](#setting-up-the-hotchocolate-graphql-backend-using-aspnet-core) |
-| 2 | Integrate the Syncfusion Angular Grid with HotChocolate GraphQL API | [View](#integrating-syncfusion-angular-grid-with-hotchocolate-graphql) |
+| 2 | Integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with HotChocolate GraphQL API | [View](#integrating-syncfusion-angular-grid-with-hotchocolate-graphql) |
 | 3 | Implement data operations including filtering, searching, sorting, and paging | [View](#perform-data-operations-in-server) |
 | 4 | Perform CRUD operations | [View](#perform-crud-operations-in-server) |
 | 5 | Run the HotChocolate GraphQL application | [View](#running-the-application) |
@@ -49,7 +49,7 @@ domainurl: ##DomainURL##
 
 ## Setting up the HotChocolate GraphQL backend using ASP.NET Core
 
-The HotChocolate GraphQL backend acts as the central data service, handling queries and mutations that power the Syncfusion Angular Grid.
+The HotChocolate GraphQL backend acts as the central data service, handling queries and mutations that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 ### Step 1: Create the ASP.NET Core project with Angular template
 
@@ -264,15 +264,9 @@ app.Run();
 
 ### Step 5: Configure Syncfusion DataManagerInput types
 
-Syncfusion Data Grid sends all operation details (paging, sorting, filtering, and searching) as a single request object. HotChocolate GraphQL requires a clear, typed structure to understand these values.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Grid sends all operation details (paging, sorting, filtering, and searching) as a single request object. HotChocolate GraphQL requires a clear, typed structure to understand these values.
 
-**Create GraphQL folder:**
-
-Create a new folder named **GraphQL** in the **AngularApp1.Server** project.
-
-**Create DataManagerInput.cs:**
-
-Create a new file (**GraphQL/DataManagerInput.cs**) with the following content:
+Create a new folder named **GraphQL** in the **AngularApp1.Server** project and create a new file (**GraphQL/DataManagerInput.cs**) with the following content:
 
 ```cs
 using System.Collections.Generic;
@@ -318,7 +312,7 @@ Here are the details of DataManagerInput parameter type:
 
 ### Step 6: Create the return type for GraphQL queries
 
-Syncfusion Grid expects the server response to follow a specific structure that includes both the data array and the total count of records. This structure is essential for enabling features like paging, filtering, and data binding.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Grid expects the server response to follow a specific structure that includes both the data array and the total count of records. This structure is essential for enabling features like paging, filtering, and data binding.
 
 **Create OrdersReturnType.cs:**
 
@@ -342,7 +336,7 @@ namespace AngularApp1.Server.GraphQL
 
 **Required response format:**
 
-The response must follow this structure to work with Syncfusion Grid:
+The response must follow this structure to work with Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
 - **Result**: The list of data displayed in the current view, supporting on-demand loading for large datasets.
 - **Count**: The total count of records in the dataset before paging is applied.
@@ -351,11 +345,11 @@ This format ensures the Grid can properly handle paging, display total record co
 
 ## Perform data operations in server
 
-The HotChocolate GraphQL backend handles all data operations such as filtering, searching, sorting, and paging. These operations are applied to the dataset based on the grid state received from the client through the "DataManagerInput" parameter.
+The HotChocolate GraphQL backend handles all data operations such as filtering, searching, sorting, and paging. These operations are applied to the dataset based on the grid state received from the client through the `DataManagerInput` parameter.
 
-**Create GraphQL Query resolver**
+### Step 7: Create GraphQL Query resolver
 
-A query resolver in HotChocolate is a method that handles data retrieval requests. The query resolver receives the "DataManagerInput" parameter, applies the requested operations, and returns data in the format expected by Syncfusion Grid.
+A query resolver in HotChocolate is a method that handles data retrieval requests. The query resolver receives the `DataManagerInput` parameter, applies the requested operations, and returns data in the format expected by Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
 **Create Query.cs:**
 
@@ -700,7 +694,7 @@ if (datamanager?.Take.HasValue == true)
 
 CRUD operations are handled by GraphQL mutations. Mutations are special GraphQL operations that modify data on the server, such as creating, updating, or deleting records.
 
-**Create GraphQL Mutation resolver**
+### Step 8: Create GraphQL Mutation resolver
 
 A mutation resolver in HotChocolate is a method that handles data modification requests. Each CRUD operation (Create, Update, Delete) is implemented as a separate mutation method.
 
@@ -769,7 +763,7 @@ namespace AngularApp1.Server.GraphQL
 
 Insert operation creates a new order record in the dataset. When the `Add` button is clicked and submits the new record, this mutation receives the data and persists it.
 
-The `AddOrder` mutation method:
+The "AddOrder" mutation method:
 
 1. Receives the new order data through the `OrdersDetailsInput` parameter.
 2. Creates a new `OrdersDetails` instance with the provided values.
@@ -795,7 +789,7 @@ public OrdersDetails AddOrder(OrdersDetailsInput input)
 
 Update operation modifies an existing order record. When a row is edited and changes are saved, this mutation receives the modified data and updates the record.
 
-The `UpdateOrder` mutation method:
+The "UpdateOrder" mutation method:
 
 1. Receives the primary key (`key`), key column name, and updated values (`input`).
 2. Finds the existing record using the primary key.
@@ -823,7 +817,7 @@ public OrdersDetails? UpdateOrder(int key, string? keyColumn, OrdersDetailsInput
 
 Delete operation removes an order record from the dataset. When the delete button is clicked and confirmed, this mutation removes the record from the data source.
 
-The `DeleteOrder` mutation method:
+The "DeleteOrder" mutation method:
 
 1. Receives the primary key (`orderID`) of the record to delete.
 2. Finds the existing record using the primary key.
@@ -844,11 +838,11 @@ The backend configuration is now complete. The next step is to create the Angula
 
 ## Integrating Syncfusion Angular Grid with HotChocolate GraphQL
 
-After configuring the HotChocolate GraphQL backend, the next step is to set up the Angular frontend and integrate it with the Syncfusion Grid component using the `GraphQLAdaptor`.
+After configuring the HotChocolate GraphQL backend, the next step is to set up the Angular frontend and integrate it with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component using the `GraphQLAdaptor`.
 
 ### Step 1: Install Syncfusion packages in Angular project
 
-Navigate to the Angular client project and install the required Syncfusion packages.
+Navigate to the Angular client project and install the required Syncfusion<sup style="font-size:70%">&reg;</sup> packages.
 
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-data --save
@@ -879,11 +873,11 @@ Once the dependencies are installed, the required CSS files are made available i
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/tailwind3.css';
 ```
 
-For this project, the "Tailwind3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
+For this project, the "Tailwind3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
 
 ### Step 3: Configure GraphQLAdaptor with DataManager
 
-The `GraphQLAdaptor` is a built-in Syncfusion adaptor specifically designed for GraphQL APIs. It handles data operations by generating appropriate GraphQL queries and mutations based on Grid actions.
+The `GraphQLAdaptor` is a built-in Syncfusion<sup style="font-size:70%">&reg;</sup> adaptor specifically designed for GraphQL APIs. It handles data operations by generating appropriate GraphQL queries and mutations based on Grid actions.
 
 **Update app.component.html:**
 
@@ -1005,7 +999,7 @@ The `$datamanager` variable contains all operation details (paging, sorting, fil
 
 ### Step 5: Enable paging feature
 
-Paging divides large datasets into smaller, manageable pages based on offset and page size. When paging is performed in the Grid, the `skip` and `take` values are sent to the server through the "DataManagerInput" parameter.
+Paging divides large datasets into smaller, manageable pages based on offset and page size. When paging is performed in the Grid, the `skip` and `take` values are sent to the server through the `DataManagerInput` parameter.
 
 **Enable paging in the Grid:**
 
@@ -1253,7 +1247,7 @@ CRUD operations (Create, Read, Update, Delete) are supported in the Grid for man
 
 Open the **app.component.ts** file and inject all required services (`ToolbarService` and `EditService`) at the component level. These services will be used for all CRUD operations.
 
-Defines GraphQL mutations for CRUD operations using the `getMutation` function:
+Defines GraphQL mutations for CRUD operations using the "getMutation" function:
 
 - **Insert mutation**: Creates new records.
 - **Update mutation**: Modifies existing records.
@@ -1357,7 +1351,7 @@ Configure the [editSettings](https://ej2.syncfusion.com/angular/documentation/ap
 </ejs-grid>
 ```
 
-The insert mutation is configured in the `getMutation` function shown in the [Configure services and edit settings](#step-10-enable-crud-operations-with-getmutation) section above.
+The insert mutation is configured in the `getMutation` function shown in the [configure services and edit settings](#step-10-enable-crud-operations-with-getmutation) section above.
 
 **Insert details included in request payload:**
 
@@ -1422,7 +1416,7 @@ Configure the [editSettings](https://ej2.syncfusion.com/angular/documentation/ap
 </ejs-grid>
 ```
 
-The delete mutation is configured in the `getMutation` function shown in the [Configure services and edit settings](#step-10-enable-crud-operations-with-getmutation) section above.
+The delete mutation is configured in the `getMutation` function shown in the [configure services and edit settings](#step-10-enable-crud-operations-with-getmutation) section above.
 
 
 **Delete details included in request payload:**
@@ -1461,7 +1455,7 @@ The backend server will start on **https://localhost:xxxx** (or the port specifi
 Once the application starts:
 
 1. The browser will automatically open at **https://localhost:xxxx**.
-2. The Angular application will load with the Syncfusion Grid component.
+2. The Angular application will load with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
 3. The Grid will automatically fetch data from the HotChocolate GraphQL API.
 
 ### Step 3: Test GraphQL endpoint
@@ -1547,12 +1541,12 @@ A complete working sample of the Angular Grid with HotChocolate GraphQL backend 
 
 **GitHub repository:**
 
-[Syncfusion Angular Grid with HotChocolate GraphQL Sample](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-hotchocolate-server)
+[Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with HotChocolate GraphQL Sample](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-hotchocolate-server)
 
 **Repository contents:**
 
 - Complete ASP.NET Core backend with HotChocolate GraphQL configuration.
-- Angular frontend with Syncfusion Grid and `GraphQLAdaptor` setup.
+- Angular frontend with Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and `GraphQLAdaptor` setup.
 - Sample data models and in-memory data source.
 - GraphQL queries and mutations for all CRUD operations.
 - Data operation implementations (filtering, sorting, paging, searching).
@@ -1568,7 +1562,7 @@ dotnet run --project AngularApp1.Server
 
 ## See also
 
-* [Getting Started with Syncfusion Angular Grid](../getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](../getting-started)
 * [HotChocolate Documentation](https://chillicream.com/docs/hotchocolate/v13)
 * [GraphQL Official Documentation](https://graphql.org/learn/)
 * [Syncfusion GraphQLAdaptor Documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor)

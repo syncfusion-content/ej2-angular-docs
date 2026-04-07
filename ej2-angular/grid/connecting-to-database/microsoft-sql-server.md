@@ -19,11 +19,11 @@ The [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](https://www.
 
 **Key benefits of SqlClient:**
 
-- **Secure by Design**: Enforces parameterized queries to help prevent SQL injection attacks.
-- **High Performance**: Provides efficient, low‑level access to SQL Server with minimal overhead.
-- **Asynchronous Support**: Supports async database operations for better scalability in web APIs.
-- **Full SQL Control**: Allows precise control over SQL queries, stored procedures, and transactions.
-- **Official Microsoft Provider**: Maintained and supported by Microsoft for long‑term compatibility with SQL Server.
+- **Secure by design**: Enforces parameterized queries to help prevent SQL injection attacks.
+- **High performance**: Provides efficient, low‑level access to SQL Server with minimal overhead.
+- **Asynchronous support**: Supports async database operations for better scalability in web APIs.
+- **Full SQL control**: Allows precise control over SQL queries, stored procedures, and transactions.
+- **Official Microsoft provider**: Maintained and supported by Microsoft for long‑term compatibility with SQL Server.
 
 ## Prerequisites
 
@@ -38,14 +38,14 @@ Ensure the following software and packages are installed before proceeding:
 | @syncfusion/ej2-angular-grids | Latest | Angular Grid component |
 | @syncfusion/ej2-data | Latest | DataManager and adaptors |
 | Microsoft.Data.SqlClient (NuGet) | Latest | SQL Server connectivity |
-| Syncfusion.EJ2 (NuGet) | Latest | Server helpers (DataManagerRequest, DataOperations) |
+| Syncfusion.EJ2.AspNet.Core | Latest | Server helpers (DataManagerRequest, DataOperations) |
 
 ## Key topics
 
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Setting up and configuring a Microsoft SQL Server–backed ASP.NET Core Web API using ADO.NET SqlClient | [View](#setting-up-the-sql-server-environment-for-sqlclient) |
-| 2 | Integrating the Syncfusion Angular Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
+| 2 | Integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
 | 3 | Implementing server‑side data operations including paging, searching, filtering, and sorting | [View](#step-6-implement-paging-feature) |
 | 4 | Performing full CRUD and batch operations from the Angular Grid against the SQL Server database | [View](#step-10-perform-crud-operations) |
 | 6 | Run the applications | [View](#running-the-application) |
@@ -54,7 +54,7 @@ Ensure the following software and packages are installed before proceeding:
 
 ## Setting up the SQL server environment for SqlClient
 
-First, the **SQL Server database** structure must be created to store ticket records.
+First, create the **SQL Server database** structure required to store ticket records.
 
 **Instructions:**
 
@@ -123,14 +123,14 @@ dotnet new webapi -n Grid_MSSQL.Server
 cd Grid_MSSQL.Server
 ```
 
-Add the SQL Server client library and Syncfusion server‑side helper packages.
+Add the SQL Server client library and Syncfusion<sup style="font-size:70%">&reg;</sup> server‑side helper packages.
 
 ```bash
 dotnet add package Microsoft.Data.SqlClient
-dotnet add package Syncfusion.EJ2
+dotnet add package Syncfusion.EJ2.AspNet.Core
 ```
 
-The Web API exposes HTTP endpoints that are used by the Grid to perform read and data modification operations. The Syncfusion server helper package provides the required types for processing grid requests and applying data operations on the server.
+The Web API exposes HTTP endpoints that are used by the Grid to perform read and data modification operations. The Syncfusion<sup style="font-size:70%">&reg;</sup> server helper package provides the required types for processing grid requests and applying data operations on the server.
 
 ### Step 2: Create the data model
 
@@ -138,8 +138,8 @@ A data model is a C# class that represents the structure of a database table. Th
 
 **Instructions:**
 
-1. Create a new folder named "Data" in the application project.
-2. Inside the "Data" folder, create a new file named **Tickets.cs**.
+1. Create a new folder named **Data** in the application project.
+2. Inside the **Data** folder, create a new file named **Tickets.cs**.
 3. Define the **Tickets** class with the following code:
 
 ```csharp
@@ -242,7 +242,7 @@ A repository class is an intermediary layer that handles all database operations
 
 **Instructions:**
 
-1. Inside the "Data" folder, create a new file named **TicketRepository.cs**.
+1. Inside the **Data** folder, create a new file named **TicketRepository.cs**.
 2. Define the **TicketRepository** class with the following code:
 
 ```csharp
@@ -515,12 +515,12 @@ A connection string contains the information needed to connect the application t
 | ----------- | ------------- |
 | Data Source | The address of the SQL Server instance (server name, IP address, or localhost) |
 | Initial Catalog | The database name (in this case, "NetworkSupportDB") |
-| Integrated Security | Set to "True" for Windows Authentication; use "False" with Username/Password for SQL Authentication |
+| Integrated Security | Set to `True` for Windows Authentication; use `False` with Username/Password for SQL Authentication |
 | Connect Timeout | Connection timeout in seconds (default is 15) |
-| Encrypt | Enables encryption for the connection (set to "True" for production environments) |
-| Trust Server Certificate | Whether to trust the server certificate (set to "False" for security) |
+| Encrypt | Enables encryption for the connection (set to `True` for production environments) |
+| Trust Server Certificate | Whether to trust the server certificate (set to `False` for security) |
 | Application Intent | Set to "ReadWrite" for normal operations or "ReadOnly" for read-only scenarios |
-| Multi Subnet Failover | Used in failover clustering scenarios (typically "False") |
+| Multi Subnet Failover | Used in failover clustering scenarios (typically `False`) |
 
 The database connection string has been configured successfully.
 
@@ -605,7 +605,7 @@ This setup registers controllers, enables a permissive CORS policy for developme
 
 ## Integrating Syncfusion Angular Grid
 
-The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with the SQL Server database.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with the SQL Server database.
 
 ### Step 1: Creating the Angular client application
 
@@ -618,7 +618,7 @@ cd grid_mssql.client
 
 ### Step 2: Adding Syncfusion packages
 
-Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt.
+Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages using the below command in Visual Studio Code terminal or Command prompt.
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -640,7 +640,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 3: Add Syncfusion Angular Grid
 
@@ -775,7 +775,7 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 **Instructions:**
 
 1. Open the (**src/app/app.component.ts**) file and create a property with CRUD and search options.
-2. And Inject the `ToolbarService` modules in the component `providers` property.
+2. And Inject the `ToolbarService` modules into the component `providers` property.
 3. Then in Grid component (**src/app/app.component.html**) include the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) property.
 
 **src/app/app.component.ts**:
@@ -826,15 +826,13 @@ export class AppComponent implements OnInit {
 | `Cancel` | Cancels the current edit or add action. |
 | `Search` | Displays a search box to find records. |
 
-The toolbar has been successfully added.
-
 ### Step 6: Implement paging feature
 
 Paging divides large datasets into smaller pages to improve performance and usability.
 
 **Instructions:**
 
-1. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to `true` and inject the `PageService` module in the providers property to enable paging in the Grid.
+1. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to `true` and inject the `PageService` module into the `providers` property to enable paging in the Grid.
 
     Update (**app.component.ts**):
 
@@ -880,7 +878,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
     </ejs-grid>
     ```
 
-2. On the API controller create a file **TicketsController.cs** and add the **List** method provided below and handle paging using `DataOperations.PerformSkip` and `DataOperations.PerformTake`.
+2. On the API controller create a file **TicketsController.cs** and add the "List" method provided below and handle paging using `_dataOps.PerformSkip` and `_dataOps.PerformTake`.
 
     ```csharp
     using Microsoft.AspNetCore.Mvc;
@@ -919,7 +917,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
 
 - The Grid sends `skip` and `take` values to the server through the `CustomAdaptor`.
 - The controller receives a `DataManagerRequest` and applies `PerformSkip` and `PerformTake`.
-- `count` is calculated before paging, and `{ result, count }` is returned when `RequiresCounts = true`.
+- The `count` is calculated before paging, and `{ result, count }` is returned when `RequiresCounts = true`.
 - The Grid renders the requested page and navigation controls based on the returned shape.
 
 When paging is performed in the Grid, a request is sent to the server with the following payload.
@@ -932,7 +930,8 @@ Searching allows finding records by entering keywords in the search box.
 
 **Instructions:**
 
-1. Include the `Search` item in the toolbar and inject the `ToolbarService` service.
+1. Ensure the toolbar includes the `Search` item.
+2. Inject the `ToolbarService` module into the `providers` property of the "AppComponent".
 
     Update (**app.component.ts**):
 
@@ -1017,8 +1016,8 @@ Searching allows finding records by entering keywords in the search box.
 
 **Searching details:**
 
-- Entering a term and pressing **Enter** sends search descriptors in the `search` property.
-- `DataOperations.PerformSearching()` applies the search term across all searchable fields.
+- Entering a term and pressing <kbd>Enter</kbd> key sends search descriptors in the `search` property.
+- `_dataOps.PerformSearching()` applies the search term across all searchable fields.
 - Filtered data is counted and then paged; the shaped response is returned to the client.
 
 When searching is performed in the Grid, a request is sent to the server with the following payload.
@@ -1031,8 +1030,8 @@ Filtering allows restricting data based on column values using the Excel filter 
 
 **Instructions:**
 
-1. Enable filtering by setting **[allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering)** and injecting the `FilterService` module.
-2. Configure **[filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettingsmodel)** for customizing filter type.
+1. Enable filtering by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) and injecting the `FilterService` module.
+2. Configure [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettingsmodel) for customizing filter type.
 
     Update (**app.component.ts**):
 
@@ -1120,7 +1119,7 @@ Filtering allows restricting data based on column values using the Excel filter 
 **Filtering details:**
 
 - The Excel filter UI builds filter predicates on the client and sends them in the `where` property.
-- `DataOperations.PerformFiltering()` applies predicates against the in-memory data set.
+- `_dataOps.PerformFiltering()` applies predicates against the in-memory data set.
 - Filtering executes before count and paging to ensure accurate total counts.
 
 When filtering is performed in the Grid, a request is sent to the server with the following payload.
@@ -1222,7 +1221,7 @@ Sorting enables arranging records in ascending or descending order based on colu
 **Sorting details:**
 
 - Clicking a column header creates sort descriptors that arrive in the `sorted` property.
-- `DataOperations.PerformSorting()` orders the sequence based on field name and sort direction.
+- `_dataOps.PerformSorting()` orders the sequence based on field name and sort direction.
 - Sorting executes before count and paging to return correct page slices.
 
 When sorting is performed in the Grid, a request is sent to the server with the following payload.
@@ -1305,9 +1304,9 @@ public async Task<IActionResult> Insert([FromBody] CRUDModel<Tickets> args)
 **Insert action details:**
 
 1. The Grid collects row values and posts a `CRUDModel<Tickets>` payload to `/insert`.
-2. The controller validates the payload and calls `InsertAsync`.
-3. The repository generates `PublicTicketId` when missing and sets timestamps.
-4. ADO.NET executes the `INSERT` statement and returns the new `TicketId`.
+2. The controller validates the payload and calls "InsertAsync".
+3. The repository generates "PublicTicketId" when missing and sets timestamps.
+4. ADO.NET executes the `INSERT` statement and returns the new "TicketId".
 5. The API returns the created record; the Grid refreshes and displays the new row.
 
 When a new record is added in the Grid, a request is sent to the server with the following payload.
@@ -1335,8 +1334,8 @@ public async Task<IActionResult> Update([FromBody] CRUDModel<Tickets> args)
 **Update action details:**
 
 1. The Grid posts the updated row via `CRUDModel<Tickets>` to `/update`.
-2. The controller validates the payload and `TicketId`.
-3. The repository updates fields and sets `UpdatedAt`.
+2. The controller validates the payload and "TicketId".
+3. The repository updates fields and sets "UpdatedAt".
 4. ADO.NET executes the `UPDATE` statement.
 5. The API returns the updated entity; the Grid reflects the modification.
 
@@ -1371,7 +1370,7 @@ public async Task<IActionResult> Remove([FromBody] CRUDModel<Tickets> args)
 4. ADO.NET executes the `DELETE` statement.
 5. The API returns acknowledgment; the Grid removes the row.
 
-When a record is deleted in the Grid, a request is sent to the server with the following payload.
+When a record deleted in the Grid, a request is sent to the server with the following payload.
 
 ![Delete Operation Payload](../images/mssql-grid-delete.png)
 
@@ -1492,7 +1491,7 @@ The following snippets assemble the final Angular Grid configuration used in the
 > - The [editType](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property can be used to specify the desired editor for each column.
 > - The behavior of default editors can be customized using the [edit.params](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property of the Grid column.
 > - The [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) property specifies the data type of a Grid column.
-> - The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property allows rendering custom elements in a column instead of the default field value.
+> - The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that allows rendering custom elements in a column instead of the default field value.
 
 
 **App component:**
@@ -1746,7 +1745,7 @@ ng serve --open
 
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-MSSQL).
 
-The application now provides a complete end‑to‑end ticket management workflow using the Syncfusion Angular Grid with server‑side processing and direct integration with Microsoft SQL Server.
+The application now provides a complete end‑to‑end ticket management workflow using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with server‑side processing and direct integration with Microsoft SQL Server.
 
 ## See also
 

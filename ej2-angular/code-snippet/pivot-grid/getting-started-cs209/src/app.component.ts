@@ -1,41 +1,42 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
-
-
-
+import { PivotViewAllModule, PivotFieldListAllModule, PDFExportService, PdfExportProperties } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
-import { Pivot_Data } from './datasource';
+import { salesData } from './datasource';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
-imports: [
-        
+    imports: [
         PivotViewAllModule,
         PivotFieldListAllModule
     ],
-
-
-standalone: true,
-  selector: 'app-container',
-  template: `<div class="col-md-8">
-  <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' [width]=width></ejs-pivotview>
-  <ejs-pivotview #pivotview1 id='PivotView1' [dataSourceSettings]=dataSourceSettings1 allowPdfExport='true' [width]=width></ejs-pivotview></div>
+    providers: [PDFExportService],
+    standalone: true,
+    selector: 'app-container',
+    styleUrls: ['./app.component.css'],
+    template: `<div class="col-md-8">
+  <div id='PivotTable1Container' class='pivot-container'>
+    <ejs-pivotview #PivotTable1 id='PivotTable1' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true' [width]=width></ejs-pivotview>
+  </div>
+  <div id='PivotTable2Container' class='pivot-container'>
+    <ejs-pivotview #PivotTable2 id='PivotTable2' [dataSourceSettings]=dataSourceSettings1 allowPdfExport='true' [width]=width></ejs-pivotview>
+  </div>
+</div>
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
-export class AppComponent implements OnInit {
-  public width?: string;
-  public dataSourceSettings?: DataSourceSettingsModel;
-  public dataSourceSettings1?: DataSourceSettingsModel;
-  public button?: Button;
-  public firstGridPdfExport?: Promise<Object>;
 
-    @ViewChild('pivotview', {static: false})
+export class AppComponent implements OnInit {
+    public width?: string;
+    public dataSourceSettings?: DataSourceSettingsModel;
+    public dataSourceSettings1?: DataSourceSettingsModel;
+    public button?: Button;
+
+    @ViewChild('PivotTable1', { static: false })
     public pivotGridObj?: PivotView;
 
-    @ViewChild('pivotview1')
+    @ViewChild('PivotTable2')
     public pivotGridObj1?: PivotView;
 
     ngOnInit(): void {
@@ -43,38 +44,46 @@ export class AppComponent implements OnInit {
         this.width = "100%";
 
         this.dataSourceSettings = {
-            dataSource: Pivot_Data as IDataSet[],
+            dataSource: salesData as IDataSet[],
             expandAll: false,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
+            rows: [{ name: 'Region', caption: 'Region' }],
+            columns: [{ name: 'Product', caption: 'Product' }],
+            values: [
+                { name: 'Sales', caption: 'Q4 Sales' },
+                { name: 'ProfitMargin', caption: 'Profit Margin' }
+            ],
+            formatSettings: [
+                { name: 'Sales', format: 'C0' },
+                { name: 'ProfitMargin', format: '0\'%\'' }
+            ],
+            filterSettings: [{ name: 'Product', items: ['Laptop'], type: 'Include' }]
         };
 
         this.dataSourceSettings1 = {
-            dataSource: Pivot_Data as IDataSet[],
+            dataSource: salesData as IDataSet[],
             expandAll: false,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [],
-            valueSortSettings: { headerText: 'FY 2015##Q1##Amount', headerDelimiter: '##', sortOrder: 'Descending' }
+            rows: [{ name: 'Region', caption: 'Region' }],
+            columns: [{ name: 'Product', caption: 'Product' }],
+            values: [
+                { name: 'Units', caption: 'Units Sold' },
+                { name: 'Sales', caption: 'Q4 Sales' }
+            ],
+            formatSettings: [
+                { name: 'ProfitMargin', format: '0\'%\'' },
+                { name: 'Sales', format: 'C0' }
+            ],
+            filterSettings: [{ name: 'Product', items: ['Smartphone'], type: 'Include' }]
         };
 
         this.button = new Button({ isPrimary: true });
         this.button.appendTo('#export');
 
         this.button.element.onclick = (): void => {
-            this.firstGridPdfExport = this.pivotGridObj?.grid.pdfExport({}, true);
-            this.firstGridPdfExport?.then((pdfData: Object) => {
-                this.pivotGridObj1?.pdfExport({}, false, pdfData);
-            });
+            const pdfExportProperties: PdfExportProperties = {
+                multipleExport: { type: 'AppendToPage', blankSpace: 100 },
+                pivotTableIds: ['PivotTable1', 'PivotTable2']
+            };
+            this.pivotGridObj1?.pdfExport(pdfExportProperties, true);
         };
     }
 }
-
-
-
