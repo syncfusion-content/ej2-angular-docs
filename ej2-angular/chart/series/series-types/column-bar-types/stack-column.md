@@ -22,7 +22,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StackingColumn` in your chart configuration. This indicates that the data should be represented as a stacked column chart, where each column consists of multiple segments stacked on top of each other.
 
-2. **Inject the StackingColumnSeries module**: Use the `@NgModule.providers` method to inject the `StackingColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering stacked column series are available in your chart.
+2. **Provide StackingColumnSeriesService**: Use the `@NgModule.providers` method to inject the `StackingColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering stacked column series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

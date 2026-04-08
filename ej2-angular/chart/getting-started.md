@@ -5,7 +5,7 @@ description:  Checkout and learn about Getting started with Angular Chart compon
 platform: ej2-angular
 control: Getting started 
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://ej2.syncfusion.com
 ---
 
 # Getting started with Angular Chart component
@@ -99,6 +99,12 @@ The above command will perform the following configurations:
 - Add the `@syncfusion/ej2-angular-charts` package and peer dependencies to your `package.json`.
 - Import the Chart component in your application.
 
+Alternative (manual install):
+
+```bash
+npm install @syncfusion/ej2-angular-charts --save
+```
+
 For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
@@ -115,9 +121,9 @@ ng add @syncfusion/ej2-angular-charts
 
 ### Angular compatibility compiled package(ngcc)
 
-For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:       
 
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+> Note: `ngcc` is the legacy Angular compatibility compiler. For modern projects we recommend using the Ivy-distribution packages (installable via `ng add ...`). ngcc-tagged packages may still be required for some older Angular 12–15 projects, but Angular 16+ favors Ivy-only packages. If you must use an ngcc-tagged package, consult the Syncfusion troubleshooting guide linked below for migration tips.
 
 ```bash
 npm add @syncfusion/ej2-angular-charts@32.1.19-ngcc
@@ -133,11 +139,31 @@ Or add the dependency to `package.json`:
 }
 ```
 
+See the ngcc troubleshooting guide: https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility
+
 ## Add Chart component
 
 Modify the template in `app.component.ts` file to render the Charts component `[src/app/app.component.ts]`.
 
 Note: `ChartAllModule` exports all chart feature modules and is convenient for examples and quick setup. To reduce bundle size in real apps, import only the feature modules you need (for example, `LineSeriesService`, `LegendService`, etc.). `ChartModule` is the core module; `ChartAllModule` bundles all features for convenience.
+
+Best practice (selective imports):
+
+```javascript
+import { Component } from '@angular/core';
+import { ChartModule, LineSeriesService, LegendService } from '@syncfusion/ej2-angular-charts';
+
+@Component({
+  imports: [ChartModule],
+  standalone: true,
+  selector: 'app-container',
+  providers: [LineSeriesService, LegendService],
+  template: `<ejs-chart id='chart-container'></ejs-chart>`
+})
+export class AppComponent { }
+```
+
+This keeps the final bundle smaller than importing `ChartAllModule`.
 
 ```javascript
 
@@ -227,7 +253,6 @@ This section explains how to plot the following JSON data to the Chart.
         }
     }
 ```
-
 Add [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective) to the Chart in the component template using the `<e-series-collection>` and `<e-series>` child directives. Map the JSON fields `month` and `sales` to the series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#yname) properties, and set the JSON array as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#datasource) property.
 
 Since the JSON contains category data, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisdirective#valuetype) for the horizontal axis (primaryXAxis) to `Category`. By default, the axis valueType is `Numeric`.

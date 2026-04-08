@@ -20,7 +20,7 @@ Here's how to configure it:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `HiloOpenClose` in your chart configuration. This indicates that the data should be represented as a high-low-open-close chart, which displays the high, low, open, and close values for each data point, providing a comprehensive visualization of stock price movements.
 
-2. **Inject the HiloOpenCloseSeries module**: Use the `@NgModule.providers` method to inject the `HiloOpenCloseSeriesService` into your chart. This step is essential, as it ensures that the necessary functionalities for rendering high-low-open-close series are available in your chart.
+2. **Provide HiloOpenCloseSeriesService**: Use the `@NgModule.providers` method to inject the `HiloOpenCloseSeriesService` into your chart. This step is essential, as it ensures that the necessary functionalities for rendering high-low-open-close series are available in your chart.
 
 3. **Provide high, low, open, and close values**: The `HiloOpenClose` series requires five fields (x, high, low, open, and close) to accurately display the stock's high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
 

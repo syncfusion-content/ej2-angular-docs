@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 ## Spline Area
 
-A spline area chart fills the area beneath a smooth spline curve
+A spline area chart fills the area beneath a smooth spline curve.
 
 <img src="../../../../images/spline-area.png" alt="Spline Area chart showing data trends over time">
 

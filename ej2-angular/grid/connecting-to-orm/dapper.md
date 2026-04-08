@@ -49,7 +49,8 @@ Ensure the following software and packages are installed before proceeding:
 | 5 | Implement the repository pattern with Dapper for efficient data access | [View](#step-6-create-the-repository-class) |
 | 6 | Create an Angular Grid component that supports searching, filtering, sorting, paging, and CRUD operations | [View](#integrating-syncfusion-angular-grid) |
 | 7 | Handle bulk operations and batch updates | [View](#step-10-perform-crud-operations) |
-| 8 | Complete end‑to‑end reservation management workflow using the Syncfusion Angular Grid with server‑side processing and SQL Server integration | [View](#step-11-complete-code)  |
+| 8 | Complete end‑to‑end reservation management workflow using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with server‑side processing and SQL Server integration | [View](#step-11-complete-code)  |
+| 9 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
 
 
 ## Setting up the SQL Server environment with Dapper
@@ -132,11 +133,11 @@ Before installing NuGet packages, a new ASP.NET Core Web Application must be cre
    - **Framework**: Select .NET 10.0 (or latest available)
 6. Click **Create**.
 
-Visual Studio will create the project with the default structure, including folders like **Controllers** and configuration files. The ASP.NET Core project is now ready for integration with Dapper and Syncfusion components.
+Visual Studio will create the project with the default structure, including folders like **Controllers** and configuration files. The ASP.NET Core project is now ready for integration with Dapper and Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
 ### Step 3: Install required NuGet packages
 
-NuGet packages are software libraries that add functionality to the application. These packages enable Dapper, SQL Server connectivity, and Syncfusion Grid integration.
+NuGet packages are software libraries that add functionality to the application. These packages enable Dapper, SQL Server connectivity, and Syncfusion<sup style="font-size:70%">&reg;</sup> Grid integration.
 
 **Method 1: Using Package Manager Console**
 
@@ -168,7 +169,7 @@ A data model is a C# class that represents the structure of a database table. Th
 
 1. Create a new folder named **Data** in the ASP.NET Core project.
 2. Inside the **Data** folder, create a new file named **Reservation.cs**.
-3. Define the **Reservation** class with the following code:
+3. Define the "Reservation" class with the following code:
 
 ```csharp
 using System.ComponentModel.DataAnnotations;
@@ -300,7 +301,7 @@ A repository class is an intermediary layer that handles all database operations
 **Instructions:**
 
 1. Inside the **Data** folder, create a new file named **ReservationRepository.cs**.
-2. Define the **ReservationRepository** class with the following code: 
+2. Define the "ReservationRepository" class with the following code: 
 
 ```csharp
 using Dapper;
@@ -522,7 +523,7 @@ A controller is an ASP.NET Core component that handles HTTP requests from the cl
 
 1. Create a new folder named **Controllers** in the project root (if it doesn't exist).
 2. Inside the **Controllers** folder, create a new file named **RoomsController.cs**.
-3. Define the **RoomsController** class with the following code:
+3. Define the "RoomsController" class with the following code:
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
@@ -670,7 +671,7 @@ The controller has been successfully created and is ready to handle requests fro
 
 ## Integrating Syncfusion Angular Grid
 
-The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a SQL Server database.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a SQL Server database.
 
 ### Step 1: Creating the Angular client application
 
@@ -683,7 +684,7 @@ cd grid_dapper.client
 
 ### Step 2: Adding Syncfusion packages
 
-Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt.
+Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages using the below command in Visual Studio Code terminal or Command prompt.
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -706,7 +707,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 
 ```
 
-For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 3: Add Syncfusion Angular Grid
 
@@ -757,7 +758,7 @@ export class AppComponent {
 
 ### Step 4: Implement the CustomAdaptor
 
-The Syncfusion Angular Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
 The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Dapper to query the SQL Server database and return the results.
 
@@ -851,7 +852,7 @@ export class CustomAdaptor extends UrlAdaptor {
 
 The `CustomAdaptor` class has been successfully implemented with all data operations.
 
- ### Step 5: Add toolbar with CRUD and search options
+### Step 5: Add toolbar with CRUD and search options
 
 The toolbar provides buttons for adding, editing, deleting records, and searching the data.
 
@@ -909,8 +910,6 @@ export class AppComponent {
 | `Cancel` | Cancels the current edit or add operation. |
 | `Search` | Displays a search box to find records. |
 
-The toolbar has been successfully added.
-
 ### Step 6: Implement paging feature
 
 The paging feature allows efficient loading of large data sets through on‑demand loading.
@@ -918,7 +917,7 @@ The paging feature allows efficient loading of large data sets through on‑dema
 **Instructions:**
 
 1. Paging in the Grid is enabled by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to `true`.
-2. And injecting the `PagerService` module in the `providers` property of the "AppComponent".
+2. And injecting the `PagerService` module into the `providers` property of the "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -1020,7 +1019,7 @@ Searching allows finding records by entering keywords in the search box.
 **Instructions:**
 
 1. Ensure the toolbar includes the `Search` item.
-2. Inject the `ToolbarService` module in the `providers` property of the "AppComponent".
+2. Inject the `ToolbarService` module into the `providers` property of the "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -1105,7 +1104,7 @@ namespace Grid_Dapper.Server.Controllers
 
 **Searching details:**
 
-- When text is entered in the search box and Enter is pressed, the Grid sends a search request to the server.
+- When text is entered in the search box and <kbd>Enter</kbd> key is pressed, the Grid sends a search request to the server.
 - The "List" method receives the search criteria in `search` parameter.
 - The `operation.PerformSearching()` method filters the data based on the search term.
 - Results are returned and displayed in the Grid.
@@ -1121,7 +1120,7 @@ Filtering enables the data to be narrowed down based on column values through a 
 **Instructions:**
 
 1. Filtering is enabled by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) property to `true`.
-2. Inject the `FilterService` module in the `providers` property of the "AppComponent".
+2. Inject the `FilterService` module into the `providers` property of the "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -1209,7 +1208,7 @@ namespace Grid_Dapper.Server.Controllers
 - Select filtering criteria (equals, contains, greater than, less than, etc.).
 - Click the "Filter" button to apply the filter.
 - The "List" method receives the filter criteria in `where` property.
-- Results are filtered accordingly and displayed in the DataGrid.
+- Results are filtered accordingly and displayed in the Grid.
 
 When filtering is performed in the Grid, a request is sent to the server with the following payload.
 
@@ -1222,7 +1221,7 @@ Sorting enables arranging records in ascending or descending order based on colu
 **Instructions:**
 
 1. Sorting can be enabled by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) property to `true`.
-2. Inject the `SortService` module in the `providers` property of the "AppComponent".
+2. Inject the `SortService` module into the `providers` property of the "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -1309,17 +1308,17 @@ namespace Grid_Dapper.Server.Controllers
 - Click on the column header to sort in ascending order.
 - Click again to sort in descending order.
 - The "List" method receives the sort criteria in `sorted` property.
-- Records are sorted accordingly and displayed in the DataGrid.
+- Records are sorted accordingly and displayed in the Grid.
 
 When sorting is performed in the Grid, a request is sent to the server with the following payload.
 
 ![Sorting Operation Payload](../images/dapper_sort.png)
 
-### Step 10: Perform CRUD operations
+## Step 10: Perform CRUD operations
 
 CRUD operations allow adding new records, modifying existing records, and removing items that are no longer relevant. The `DataManager` posts a specific action for each operation so that the server can route to the appropriate handler.
 
-Editing operations in the Grid are enabled through configuring the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/gridModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true`. Inject the `EditService` and `ToolbarService` modules in the `providers` property of "AppComponent".
+Editing operations in the Grid are enabled through configuring the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/gridModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true`. Inject the `EditService` and `ToolbarService` modules into the `providers` property of "AppComponent".
 
 Update (**app.ts**):
 
@@ -1567,7 +1566,7 @@ In **RoomsController.cs**, implement the batch method:
         }
 ```
 
-> This method is triggered when the Grid is operating in [Batch](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing) edit mode.
+> This method is triggered when the Grid is operating in [Batch](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing) Edit mode.
 
 **What happens behind the scenes:**
 
@@ -1833,10 +1832,10 @@ Follow the steps below to set up and run both the backend server and the Angular
 
 - Open a terminal or Package Manager Console, navigate to the **Grid_Dapper.Server** project directory, and run the following commands to build and start the backend server:
 
-```bash
-dotnet build
-dotnet run
-```
+    ```bash
+    dotnet build
+    dotnet run
+    ```
 
 - The backend server should start and listen on **https://localhost:7000** (or the port shown in the terminal).
 - Test the API endpoint by opening **https://localhost:7000/api/rooms/ping** in a browser, where you should see a JSON response similar to `{\"ok\": true, \"time\": \"2025-03-02T10:30:00Z\"}`.
@@ -1847,9 +1846,9 @@ dotnet run
 
 Execute the following command:
 
-```bash
-ng serve
-```
+    ```bash
+    ng serve
+    ```
 
 - Navigate to **http://localhost:4200** (Angular default port), where the application automatically connects to the backend API at **https://localhost:7000/api/rooms**.
 
@@ -1861,9 +1860,9 @@ ng serve
 - **Filter**: Click on column headers to access Excel-style filtering options.
 - **Sort**: Click on column headers to sort data in ascending or descending order.
 - **Pagination**: Navigate through records using page numbers at the bottom of the Grid.
-- **Add**: Click the `Add` button to create a new reservation.
+- **Add**: Click the `Add` button to create a new reservation with auto-generated ReservationId.
 - **Edit**: Click the `Edit` button to modify existing reservations.
-- **Delete**: Click the `Delete` button to remove reservations.
+- **Delete**: Click the `Delete` button to remove reservations (with confirmation).
 - **Validation**: Form fields are validated before saving (e.g., required fields, email format).
 
 ## Complete sample repository

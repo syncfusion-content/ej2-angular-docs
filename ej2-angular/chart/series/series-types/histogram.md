@@ -22,7 +22,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Histogram` in your chart configuration. This indicates that the data should be represented as a histogram chart, providing a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet format.
 
-2. **Inject the HistogramSeries module**: Use the `@NgModule.providers` method to inject the `HistogramSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering histogram series are available in your chart.
+2. **Provide HistogramSeriesService**: Use the `@NgModule.providers` method to inject the `HistogramSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering histogram series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

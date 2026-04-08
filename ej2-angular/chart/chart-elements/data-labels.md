@@ -28,7 +28,7 @@ Data labels can be added to a chart series by enabling the [`visible`](https://e
   
 {% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs1" %}
 
->Note: To use datalabel feature, inject `DataLabelService` into the `@NgModule.providers`.
+>**Note**: To use datalabel feature, inject `DataLabelService` into the `@NgModule.providers`.
 
 ## Position
 

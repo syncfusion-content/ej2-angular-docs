@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cross hair and track ball in Angular Chart component | Syncfusion
-description: Learn here all about Cross hair and track ball in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Crosshair and Trackball in Angular Chart component | Syncfusion
+description: Learn here all about Crosshair and trackball in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Cross hair and track ball 
+control: Crosshair and trackball 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cross hair and track ball in Angular Chart component
+# Crosshair and trackball in Angular Chart component
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 
@@ -28,7 +28,7 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/an
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs1" %}
 
-## Tooltip for axis
+## Axis tooltip
 
 Tooltip label for an axis can be enabled by using [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairTooltipModel#enable)
 property of [`crosshairTooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crosshairtooltip) in the corresponding axis.
@@ -61,7 +61,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshai
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs3" %}
 
->Note: To use crosshair feature, inject `CrosshairService` into the `@NgModule.providers`.
+>**Note**: To use crosshair feature, inject `CrosshairService` into the `@NgModule.providers`.
 
 ## Snap to data
 

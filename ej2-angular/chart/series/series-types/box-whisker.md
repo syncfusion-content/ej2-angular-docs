@@ -20,7 +20,7 @@ To render a `box and whisker` series in your chart, you need to follow a few ste
 
 1. **Set the series type**: Define the series [type](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `BoxAndWhisker` in your chart configuration. This indicates that the data should be represented as a box and whisker chart, which will plot segments to illustrate the statistical distribution of the data.
 
-2. **Inject the BoxAndWhiskerSeries module**: Use the `@NgModule.providers` method to inject the `BoxAndWhiskerSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering box and whisker series are available in your chart.
+2. **Provide BoxAndWhiskerSeriesService**: Use the `@NgModule.providers` method to inject the `BoxAndWhiskerSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering box and whisker series are available in your chart.
 
 3. **Data requirements**: The y field of the Box and Whisker series requires a minimum of five numerical values per data point to calculate the statistical quartiles (minimum, first quartile, median, third quartile, and maximum). Each array of values represents one box plot segment.
 

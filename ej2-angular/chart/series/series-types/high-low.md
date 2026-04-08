@@ -20,7 +20,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Hilo` in your chart configuration. This indicates that the data should be represented as a hilo chart, which shows the high and low values for each data point, illustrating price movements in stocks and providing a clear visualization of price ranges.
 
-2. **Inject the HiloSeries module**: Use the `@NgModule.providers` method to inject the `HiloSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering hilo series are available in your chart.
+2. **Provide HiloSeriesService**: Use the `@NgModule.providers` method to inject the `HiloSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering hilo series are available in your chart.
 
 3. **Provide high and low values**: The `Hilo` series requires two y-values for each data point. You need to specify both the high and low values. The high value represents the maximum price, while the low value represents the minimum price of the stock.
 

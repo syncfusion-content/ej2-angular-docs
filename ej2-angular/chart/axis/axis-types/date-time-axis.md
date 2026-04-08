@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date time axis in Angular Chart component | Syncfusion
+title: DateTime axis in Angular Chart component | Syncfusion
 description: Learn here all about Date time axis in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Date time axis 
@@ -32,7 +32,7 @@ To know about the DateTime axis, you can watch this video:
   
 {% previewsample "page.domainurl/samples/chart/axis/datetime-cs10" %}
 
->Note: To use the DateTime axis, inject `DateTimeService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) property of the axis to `DateTime`.
+>**Note:** To use the DateTime axis, inject `DateTimeService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) property of the axis to `DateTime`.
 
 ## DateTimeCategory Axis
 
@@ -50,7 +50,7 @@ The DateTimeCategory axis is used to render date-time values with non-linear int
   
 {% previewsample "page.domainurl/samples/chart/axis/datetime-cs11" %}
 
->Note: To use the DateTimeCategory axis, inject `DateTimeCategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) of axis to `DateTimeCategory`.
+>**Note:** To use the DateTimeCategory axis, inject `DateTimeCategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) of axis to `DateTimeCategory`.
 
 ### Range
 

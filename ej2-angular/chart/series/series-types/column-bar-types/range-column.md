@@ -21,7 +21,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `RangeColumn` in your chart configuration. This indicates that the data should be represented as a range column chart, which is ideal for visualizing data that has both minimum and maximum values for each category. This is especially useful for visualizing data ranges, such as temperature fluctuations over time, stock prices, or any other data with upper and lower bounds.
 
-2. **Inject the RangeColumnSeries module**: Use the `@NgModule.providers` method to inject the `RangeColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range column series are available in your chart.
+2. **Provide RangeColumnSeriesService**: Use the `@NgModule.providers` method to inject the `RangeColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range column series are available in your chart.
 
 3. **Provide high and low values**: The `RangeColumn` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum range, while the low value represents the minimum range for each data point. These values define the upper and lower boundaries of the column for each point on the chart.
 

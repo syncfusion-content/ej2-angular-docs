@@ -16,7 +16,7 @@ A [technical indicator](https://www.syncfusion.com/angular-components/angular-ch
 
 <img src="../../images/technical-indicator.png" alt="Chart showing technical indicators for analysis">
 
-Chart supports 10 types of technical indicators.
+The chart component supports 10 different types of technical indicators.
 
 ## Accumulation Distribution
 
@@ -52,11 +52,11 @@ ATR measures the stock volatility by comparing the current value with the previo
   
 {% previewsample "page.domainurl/samples/chart/technical-indicators/atr-cs1" %}
 
-## Bollinger Band
+## BollingerBand
 
 A chart overlay that shows the upper and lower limits of normal price movements based on the standard deviation of prices.
-To render a Bollinger Band, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `BollingerBand` and inject `BollingerBandsService` into the `@NgModule.providers`.
-Bollinger band will be represented by three lines (upperLine, lowerLine, signalLine). Bollinger Band default values of the [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#period) is 14 and [`standardDeviations`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#standarddeviation) is 2.
+To render a BollingerBand, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `BollingerBand` and inject `BollingerBandsService` into the `@NgModule.providers`.
+The BollingerBand indicator is represented by three lines: upperLine, lowerLine, and signalLine. Bollinger Band default values of the [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#period) is 14 and [`standardDeviations`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#standarddeviation) is 2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,7 +88,7 @@ Bollinger band will be represented by three lines (upperLine, lowerLine, signalL
 
 ## Exponential Moving Average (EMA)
 
-Moving average Indicators are used to define the direction of the trend. To render an EMA Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Ema` and inject `EMAIndicatorService` into the `@NgModule.providers`.
+Moving average indicators are used to define the direction of the trend. To render an EMA Indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Ema` and inject `EMAIndicatorService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 
 ## Momentum
 
-Momentum shows the speed at which the price of the stock is changing. To render a Momentum indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Momentum` and inject `MomentumIndicatorService` into the `@NgModule.providers`. Momentum indicator will be represented by two lines (upperLine, signalLine). In momentum indicator the upperBand value is always rendered at the value 100.
+Momentum shows the speed at which the price of the stock is changing. To render a Momentum indicator, use indicator [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#type) as `Momentum` and inject `MomentumIndicatorService` into the `@NgModule.providers`. Momentum indicator will be represented by two lines (upperLine, signalLine). In the Momentum indicator, the upper band is always rendered at the value 100.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -250,7 +250,7 @@ Moving average indicators are used to define the direction of the trend. To rend
 
 **Customization of Technical Indicators**
 
-`stroke`, `stroke-width`, and `color` of signalLine can be customized by using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#fill), [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#width) and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#dasharray) properties. The [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#period) property is used to predict the data forecast calculations. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#field) value is used to compare the current price with previous price. It is applicable to Bollinger bands and moving averages. The [`showZones`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#showzones) property is used to show/hide the overBought and overSold regions. It is applicable for RSI and stochastic indicators.
+`stroke`, `stroke-width`, and `color` of signalLine can be customized by using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#fill), [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#width) and [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#dasharray) properties. The [`period`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#period) property is used to predict the data forecast calculations. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#field) value is used to compare the current price with previous price. It is applicable to Bollingerbands and moving averages. The [`showZones`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#showzones) property is used to show/hide the overBought and overSold regions. It is applicable for RSI and stochastic indicators.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -266,7 +266,7 @@ Moving average indicators are used to define the direction of the trend. To rend
 
 **Data Source**
 
-Usually technical indicators are added along with a financial series. The [`seriesName`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#seriesname) represents the series, the data of which has to be analyzed through indicators.
+Technical indicators are usually associated with a financial series. The [`seriesName`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#seriesname) represents the series, the data of which has to be analyzed through indicators.
 
 Technical indicators can also be added without series using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/technicalIndicatorModel#datasource) property of indicator.
 
@@ -286,3 +286,4 @@ Technical indicators can also be added without series using [`dataSource`](https
 
 To render an Indicator, it is mandatory to inject `LineSeriesService` module.
 In addition to that, MACD Indicator requires `ColumnSeriesService` and BollingerBands requires `RangeAreaSeriesService`.
+

@@ -71,5 +71,4 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 | [emptyPointSettings](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#emptypointsettings) | How to render empty/null points (gap, zero, average, etc.). |
 | [errorBar](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#errorbar) | Configuration to render error bars for each point. |
 | [trendlines](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#trendlines) | Add trendlines (Linear, Polynomial, Moving Average, etc.). |
-| [marker](https://ej2.syncfusion.com/angular/documentation/api/chart/markersettingsmodel) | Configuration object for highlighting individual data points with symbols (circle, diamond, etc.). |
 | [dataLabel](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelsettingsmodel) | Configuration object for displaying the value of each data point directly on the chart. |

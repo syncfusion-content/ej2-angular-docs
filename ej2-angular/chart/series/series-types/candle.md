@@ -25,7 +25,7 @@ To render a [`candle`](https://www.syncfusion.com/angular-components/angular-cha
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Candle` in your chart configuration. This indicates that the data should be represented as a candle chart, providing a detailed view of stock price fluctuations by displaying the high, low, open, and close values for each time period.
 
-2. **Inject the CandleSeries module**: Use the `@NgModule.providers` method to inject the `CandleSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering candle series are available in your chart.
+2. **Provide CandleSeriesService**: Use the `@NgModule.providers` method to inject the `CandleSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering candle series are available in your chart.
 
 3. **Provide high, low, open, and close values**: The `Candle` series requires five fields (x, high, low, open, and close) to accurately display the stock's high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
 

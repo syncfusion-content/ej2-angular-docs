@@ -16,7 +16,7 @@ The chart provides selection support for both series and individual data points 
 
 ![Selection](../../images/selection.gif)
 
->When the mouse is clicked on the data points, the corresponding series legend will also be selected.
+> **Note:** When the mouse is clicked on the data points, the corresponding series legend will also be selected.
 
 We have different types of selection modes for selecting the data. They are,
 
@@ -44,7 +44,7 @@ We have different types of selection modes for selecting the data. They are,
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/selection-cs1" %}
 
->Note: To use select feature, we need to Inject `SelectionService` into the `NgModule.providers`.
+>**Note**: To use select feature, we need to Inject `SelectionService` into the `NgModule.providers`.
 
 ## Series
 

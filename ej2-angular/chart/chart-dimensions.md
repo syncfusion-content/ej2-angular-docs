@@ -22,7 +22,7 @@ Chart can render to its container size. You can set the size via inline or CSS 
 </div>
 ```
 
-```javascript
+```ts
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -87,4 +87,4 @@ when the height is ‘50%’, chart renders to half of the container height.
   
 {% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs3" %}
 
-> Note:  When you do not specify the size, it takes `450px` as the height and window size as its width.
+> **Note:** When you do not specify the size, the chart uses `450px` as the default height and the window size as its width.

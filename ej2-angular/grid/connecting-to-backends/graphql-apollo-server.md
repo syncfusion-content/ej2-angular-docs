@@ -40,7 +40,7 @@ domainurl: ##DomainURL##
 |---|---------|-------|
 | 1 | Setting up and configuring the GraphQL backend using Apollo | [View](#setting-up-the-graphql-backend-using-apollo) |
 | 2 | Set up the Apollo Server | [View](#step-6-setting-up-the-apollo-server) |
-| 3 | Integrating Syncfusion Angular Grid with Apollo GraphQL | [View](#integrating-syncfusion-angular-grid-with-apollo-graphql) |
+| 3 | Integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with Apollo GraphQL | [View](#integrating-syncfusion-angular-grid-with-apollo-graphql) |
 | 4 | Perform data operations including filtering, sorting, searching, and paging | [View](#step-4-add-toolbar-with-crud-and-search-options) |
 | 5 | Perform CRUD operations | [View](#perform-crud-operations) |
 | 6 | Run the GraphQL application | [View](#running-the-application) |
@@ -48,9 +48,9 @@ domainurl: ##DomainURL##
 
 ## Setting up the GraphQL backend using Apollo
 
-The Apollo GraphQL backend acts as the primary data layer, handling all queries and mutations required by the Syncfusion Angular Grid.
+The Apollo GraphQL backend acts as the primary data layer, handling all queries and mutations required by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
-### Step 1: Create the GraphQL server and install required packages
+### Step 1: Create the GraphQL server and Install required packages
 
 Before configuring the GraphQL API, a new folder must be created to host the GraphQL server. This folder will contain the server configuration, required dependencies, and sample data used for processing GraphQL queries.
 
@@ -58,7 +58,7 @@ For this guide, a GraphQL server named **GridServer** is created using Node.js a
 
 **Create project folder:**
 
-Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>Win+R</kbd>, or macOS Terminal launched with <kbd>Cmd+Space</kbd> ) and run the following command to create and navigate into the project folder:
+Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>Win+R</kbd> or macOS Terminal launched with <kbd>Cmd+Space</kbd> ) and run the following command to create and navigate into the project folder:
 
 ```bash
 mkdir GridServer
@@ -234,7 +234,7 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
       params: JSON
     }
     ```
-    > For detailed information about **DataManagerInput** type refer to [Configuring Syncfusion DataManagerInput schema](#step-3-configuring-syncfusion-datamanagerinput-schema)
+    > For detailed information about **DataManagerInput** type refer to [configuring Syncfusion<sup style="font-size:70%">&reg;</sup> DataManagerInput schema](#step-3-configuring-syncfusion-datamanagerinput-schema)
 
 8. Define the Query type to expose the "getExpenses" operation that returns the list of "expenses":
 
@@ -259,7 +259,7 @@ The GraphQL schema defines the structure of the "expense" data model and the ser
 
 ### Step 3: Configuring Syncfusion DataManagerInput schema
 
-Syncfusion Grid sends all operation details paging, sorting, filtering, and searching as a single request object. GraphQL requires a clear, typed structure to understand these values. 
+Syncfusion<sup style="font-size:70%">&reg;</sup> Grid sends all operation details paging, sorting, filtering, and searching as a single request object. GraphQL requires a clear, typed structure to understand these values. 
 
 Syncfusion’s [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) follows a fixed schema when sending operation details from the client. To ensure seamless integration, the GraphQL backend defines a corresponding input type that mirrors this structure.
 
@@ -271,7 +271,7 @@ Here are the details of **DataManagerInput** parameter type.
 
 | Parameters       | Description                                                                     |
 | ---------------- | ------------------------------------------------------------------------------- |
-| `requiresCounts` | If it is "true" then the total count of records will be included in response. |
+| `requiresCounts` | If it is `true` then the total count of records will be included in response. |
 | `skip`           | Holds the number of records to skip.                                            |
 | `take`           | Holds the number of records to take.                                            |
 | `sorted`         | Contains details about current sorted column and its direction.                 |
@@ -424,7 +424,7 @@ Previously, the CRUD mutation types were defined in the **schema.graphql** file.
     | **2. Locate Index** | Find the index of the expense matching the provided key. | `const index = expenses.findIndex(item => item.expenseId === key)` |
     | **3. Validate Existence** | Ensure a matching record exists before deletion. | `if (index === -1) return false` |
     | **4. Remove Record** | Delete the record at the located index from the array. | `expenses.splice(index, 1)` |
-    | **5. Return Status** | Indicate whether deletion occurred. | Returns "true" if deleted, "false" if not found. |
+    | **5. Return Status** | Indicate whether deletion occurred. | Returns `true` if deleted, `false` if not found. |
 
 ---
 
@@ -485,7 +485,7 @@ Previously, the CRUD mutation types were defined in the **schema.graphql** file.
     });
     ```
 
-3. Update **package.json** Scripts:
+3. Update (**package.json**) Scripts:
 
     ```JSON
     {
@@ -502,15 +502,15 @@ Now all required GraphQL types, queries, mutations and Apollo Server configurati
 
 ## Integrating Syncfusion Angular Grid with Apollo GraphQL
 
-Open a Visual Code terminal or Command prompt and run the below command.
+Open a Visual Code terminal or Command Prompt and run the below command.
 
 ```bash
 ng new GridClient
 cd GridClient
 ```
-This creates an Angular application named **GridClient**, which serves as the base for configuring the Syncfusion Grid and displaying data retrieved from the server.
+This creates an Angular application named **GridClient**, which serves as the base for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and displaying data retrieved from the server.
 
-The integration process begins by installing the required Syncfusion Angular Grid packages before establishing the GraphQL connection.
+The integration process begins by installing the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid packages before establishing the GraphQL connection.
 
 ### Step 1: Adding Syncfusion packages
 
@@ -520,7 +520,7 @@ To use Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component and Datam
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data
 ```
-- `@syncfusion/ej2-angular-grids` –  required to use the Syncfusion Angular Grid component.
+- `@syncfusion/ej2-angular-grids` –  required to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
 - `@syncfusion/ej2-data` – Provides data utilities for binding and manipulating Grid data.
 
 ### Step 2: Including required Syncfusion stylesheets
@@ -542,11 +542,11 @@ Once the dependencies are installed, the required CSS files are made available i
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
 
 ```
-For this project, the "Material3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
+For this project, the "Material3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
 
 ### Step 3: Configure GraphQL Adaptor
 
-Integrate the Grid component with the GraphQL server, Syncfusion provides a built‑in [GraphQLAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor) that translates the user interaction into GraphQL requests, enabling efficient communication with GraphQL servers.
+Integrate the Grid component with the GraphQL server, Syncfusion<sup style="font-size:70%">&reg;</sup> provides a built‑in [GraphQLAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor) that translates the user interaction into GraphQL requests, enabling efficient communication with GraphQL servers.
 
 **What is a GraphQL Adaptor?**
 
@@ -567,7 +567,7 @@ The required response format includes:
   - **result**: The list of data to be displayed in the current Grid view.
   - **count**: The total number of records available in the dataset.
 
-The `GraphQLAdaptor` needs to be configured to the Syncfusion `DataManager` to convert the user interaction into GraphQL‑compatible requests. To enable this setup, configure the `DataManager` with the `GraphQLAdaptor`, specify the GraphQL server’s response format, and define the query. Finally, assign this `DataManager` instance to the Grid component.
+The `GraphQLAdaptor` needs to be configured to the Syncfusion<sup style="font-size:70%">&reg;</sup> `DataManager` to convert the user interaction into GraphQL‑compatible requests. To enable this setup, configure the `DataManager` with the `GraphQLAdaptor`, specify the GraphQL server’s response format, and define the query. Finally, assign this `DataManager` instance to the Grid component.
 
 **Instructions:**
 
@@ -640,7 +640,7 @@ query getExpenses($datamanager: DataManagerInput) {}
   - `getExpenses` - Name of the query (must match resolver name with camelCase).
   - `($datamanager: DataManagerInput)` - Parameter declaration.
     - `$datamanager` - Variable name (referenced as $dataManager throughout the query).
-    - `: DataManagerInput` - Type specification.
+    - `DataManagerInput` - Type specification.
 
 ```
 getExpenses(datamanager: $datamanager) {}
@@ -660,7 +660,7 @@ count
 
   **Line breakdown:**
   - `count` - Returns total number of records (used for pagination).
-    - Example: If 150 total expense records exist, count = 150.
+    - Example: If "150" total expense records exist, count = "150".
     - Grid uses this to calculate the number of pages that exist.
   - `result` - Contains the array of expense records.
     - `{ ... }` - List of fields to return for each record.
@@ -705,7 +705,7 @@ When the backend executes the query, it returns a JSON response in this exact st
 |------|---------|---------|
 | `data` | Root object returned for every successful GraphQL query. | Always present in successful response. |
 | `getExpenses` | Matches the GraphQL query name; contains paginated expense data. | Contains count and result. |
-| `count` | Total number of records available. | 1 (in this example) |
+| `count` | Total number of records available. | "1" (in this example) |
 | `result` | Array of expenses objects. | [ {...}, {...} ] |
 | Each field in result | Matches GraphQL query field names | Field values from database. |
 
@@ -717,7 +717,7 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 **Instructions:**
 
 1. Open the **app.component.html** file.
-2. Update the Grid component to include the [Toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) property with CRUD and search options:
+2. Update the `Grid` component to include the [Toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) property with CRUD and search options:
 
     ```html
     <ejs-grid
@@ -754,10 +754,10 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 
 Paging divides large datasets into smaller pages to improve performance and usability.
 
-During pagination, the `GraphQLAdaptor` sends the paging details through "skip" and "take" parameters of the "DataManagerInput". These details are converted to the [paging query](https://ej2.syncfusion.com/angular/documentation/data/querying#paging) and passed to the `DataManager` ensuring that data is returned in paged segments and allowing smooth navigation through large datasets.
+During pagination, the `GraphQLAdaptor` sends the paging details through `skip` and `take` parameters of the "DataManagerInput". These details are converted to the [paging query](https://ej2.syncfusion.com/angular/documentation/data/querying#paging) and passed to the `DataManager` ensuring that data is returned in paged segments and allowing smooth navigation through large datasets.
 
 **Instructions:**
-1. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property "true" to enable paging in the Grid.
+1. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property `true` to enable paging in the Grid.
 
     ```html
     <ejs-grid
@@ -854,13 +854,13 @@ The image illustrates the paging details (`skip` and `take`) included in the ser
 
 The resolver processes the Grid’s `skip` and `take` parameters and returns the total count along with the paged result. Paging feature is now active with "20" records per page.
 
-> To use [Row Virtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling), inject the `VirtualScroll` service and set [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) property to "true". When virtualization is enabled, the grid automatically sends the correct "skip" and "take" values to the server.The resolver does not require any additional modifications. The Grid inherently handles all virtual block requests, ensuring the expected behavior without additional configuration.
+> To use [Row Virtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling), inject the `VirtualScroll` service and set [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling) property to `true`. When virtualization is enabled, the grid automatically sends the correct `skip` and `take` values to the server.The resolver does not require any additional modifications. The Grid inherently handles all virtual block requests, ensuring the expected behavior without additional configuration.
 
 ### Step 6: Implement searching feature
 
 The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) provides buttons for searching the data.
 
-When a search action is performed in the Grid, the `GraphQLAdaptor` sends the search key and the target fields through the `search` parameter of the "DataManagerInput". These values are converted as the [search query](https://ej2.syncfusion.com/angular/documentation/data/querying#searching) and processed through the `DataManager`.
+When a search action is performed in the Grid, the `GraphQLAdaptor` sends the search key and the target fields through the "search" parameter of the "DataManagerInput". These values are converted as the [search query](https://ej2.syncfusion.com/angular/documentation/data/querying#searching) and processed through the `DataManager`.
 
 **Instructions:**
 
@@ -939,7 +939,7 @@ When a search action is performed in the Grid, the `GraphQLAdaptor` sends the se
  
 **Searching details included in request payloads:**
 
-The image below displays the `search` parameter values.
+The image below displays the "search" parameter values.
 
 ![GraphQLAdaptor-Apollo-Searching](../images/GraphQL-apollo-Search.png)
 
@@ -948,11 +948,11 @@ The image below displays the `search` parameter values.
 
 Sorting allows the user to organize records by clicking on column headers to arrange data in ascending or descending order.
 
-The `GraphQLAdaptor` automatically passes the sorting details to the server through the `sorted` parameter of the "DataManagerInput" and the details are converted to the [sorting query](https://ej2.syncfusion.com/angular/documentation/data/querying#sorting) and executed through the `DataManager` to get the sorted data.
+The `GraphQLAdaptor` automatically passes the sorting details to the server through the "sorted" parameter of the "DataManagerInput" and the details are converted to the [sorting query](https://ej2.syncfusion.com/angular/documentation/data/querying#sorting) and executed through the `DataManager` to get the sorted data.
 
 **Instructions:**
 
-1. To enable sorting in the Grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) property to "true".
+1. To enable sorting in the Grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) property to `true`.
 
     ```html
     <ejs-grid
@@ -1031,7 +1031,7 @@ The `GraphQLAdaptor` automatically passes the sorting details to the server thro
 
 **Sorting details included in request payloads:**
 
-The image below shows the values passed to the `sorted` parameter.
+The image below shows the values passed to the "sorted" parameter.
 
 ![GraphQLAdaptor-apollo-Sorting](../images/GraphQL-apollo-Sort.png)
 
@@ -1039,7 +1039,7 @@ The image below shows the values passed to the `sorted` parameter.
 
 Filtering allows the user to narrow down records by specifying conditions on column values. Users can filter by selecting checkbox filters or using comparison operators like equals, greater than, less than, etc. 
 
-The `GraphQLAdaptor` automatically passes the filter conditions to the server through the `where` parameter of the "DataManagerInput". In the server, the filter parameters are converted to the Syncfusion [filter query](https://ej2.syncfusion.com/angular/documentation/data/querying#filtering) and executed through the `DataManager` to get the filtered data.
+The `GraphQLAdaptor` automatically passes the filter conditions to the server through the "where" parameter of the "DataManagerInput". In the server, the filter parameters are converted to the Syncfusion<sup style="font-size:70%">&reg;</sup> [filter query](https://ej2.syncfusion.com/angular/documentation/data/querying#filtering) and executed through the `DataManager` to get the filtered data.
 
 **Instructions:**
 
@@ -1200,14 +1200,14 @@ The `GraphQLAdaptor` automatically passes the filter conditions to the server th
       | `dataManager.Where` | List of filter conditions from the Grid. |
       | `parseArg(datamanager?.where)` | Safely parses **where** into an object/array; returns it as‑is if already an object; returns undefined on invalid JSON.|
       | `whereArg` | The parsed value from "parseArg"; expected to be an array of filter predicates. |
-      | `buildPredicate(predicate)` | Recursively converts the filter block/tree into a Syncfusion Predicate. |
+      | `buildPredicate(predicate)` | Recursively converts the filter block/tree into a Syncfusion<sup style="font-size:70%">&reg;</sup> Predicate. |
       | `predicate.isComplex` | Indicates a predicate that contains nested predicates which must be processed recursively. |
       | `predicate.predicates[]` | The list of child predicates in a complex predicated. Each child can itself be a complex group or a simple predicate. |
       | `predicate.condition` | Logical combiner for children: **AND** or **OR**. |
       | `predicate.field` | Column/field name to filter (e.g., "employeeName", "category", "employeeEmail"). |
       | `predicate.operator`| Operator string (equal, contains, greaterthan, etc.) passed into new Predicate(...). |
       | `performFiltering(filterString)`| Parses the where string, builds a combined Predicate chain (AND/OR), and applies it to query via query.where(combinedPredicate).|
-      |`query.where(rootPredicate)`| Applies the final (combined) Predicate to the Syncfusion Query when a root predicate exists.|
+      |`query.where(rootPredicate)`| Applies the final (combined) Predicate to the Syncfusion<sup style="font-size:70%">&reg;</sup> Query when a root predicate exists.|
 
 
 **Supported Filter Operators:**
@@ -1226,7 +1226,7 @@ The `GraphQLAdaptor` automatically passes the filter conditions to the server th
 
 **Filtering details included in request payloads:**
 
-The image illustrates the serialized `where` condition passed from the DataManager.
+The image illustrates the serialized "where" condition passed from the DataManager.
 
 ![GraphQLAdaptor-apollo-Filtering](../images/GraphQL-apollo-Filter.png)
 
@@ -1245,7 +1245,7 @@ The backend GraphQL resolver receives this nested structure through the `where` 
 
 CRUD operations (Create, Read, Update, Delete) allow users to manage data through the Grid. The Grid provides built-in dialogs and buttons to perform these operations, while the backend resolvers handle the actual data modifications.
 
-To enable editing features in the Syncfusion Angular Grid, configure the Grid's `editSettings` and provide the required services `ToolbarService` and `EditService` in the component metadata.
+To enable editing features in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, configure the Grid's `editSettings` and provide the required services `ToolbarService` and `EditService` in the component metadata.
 
  ```html
  [app.component.html]
@@ -1296,11 +1296,11 @@ export class AppComponent {
 
 The `getMutation` function in the `GraphQLAdaptor` handles the Grid CRUD actions by sending the appropriate mutation for each action (insert, update, or delete) to the GraphQL server.
 
-> Previously, the required mutation definitions and schema for CRUD operations were created in the **resolver.ts** and **schema.graphql** files. The next step is to enable CRUD actions in the client Data Grid by using the GraphQL adaptor.
+> Previously, the required mutation definitions and schema for CRUD operations were created in the **resolver.ts** and **schema.graphql** files. The next step is to enable CRUD actions in the client Grid by using the GraphQL adaptor.
 
 **Insert:**
 
-The Insert operation enables adding new "expense" records to the existing list. When the Add button in the toolbar is selected, the Grid opens a dialog that displays input fields for entering "expense" details. 
+The Insert operation enables adding new "expense" records to the existing list. When the `Add` button in the toolbar is selected, the Grid opens a dialog that displays input fields for entering "expense" details. 
 
 After the required data is submitted, the GraphQL mutation sends the new "expense" record to the backend for processing and storage.
 
@@ -1349,7 +1349,7 @@ When the user clicks the Add button, fills the dialog, and submits, the `GraphQL
 
 **Update:**
 
-The Update operation enables editing of existing "expense" records. When the Edit option in the toolbar is selected and a row is chosen, the Grid opens a dialog displaying the current values of the selected record. 
+The Update operation enables editing of existing "expense" records. When the `Edit` option in the toolbar is selected and a row is chosen, the Grid opens a dialog displaying the current values of the selected record. 
 
 After the required modifications are submitted, a GraphQL mutation sends the updated record to the backend for processing.
 
@@ -1392,7 +1392,7 @@ Open the **app.component.ts** file Configure the `getMutation` function in the `
   ```
 **Update mutation request parameters:**
 
-When the user clicks the Edit button, modifies the dialog, and submits, the `GraphQLAdaptor` constructs the mutation with these parameters:
+When the user clicks the `Edit` button, modifies the dialog, and submits, the `GraphQLAdaptor` constructs the mutation with these parameters:
 
 ![GraphQL-apollo-updateRecord](../images/GraphQL-apollo-Update.png)
 
@@ -1401,7 +1401,7 @@ When the user clicks the Edit button, modifies the dialog, and submits, the `Gra
 
 The Delete operation enables removal of "expense" records from the application. When the `Delete` option in the `toolbar` is selected and a row is marked for removal, a confirmation prompt appears. After confirmation, a GraphQL mutation sends a delete request to the backend containing only the primary key value.
 
-Open the **app.component.ts** and Configure the `getMutation` function in the `GraphQLAdaptor` to return the delete mutation that matches the "deleteExpense" mutation defined in the schema.
+Open the **app.component.ts** and configure the `getMutation` function in the `GraphQLAdaptor` to return the delete mutation that matches the "deleteExpense" mutation defined in the schema.
 
   ```ts
   [app.component.ts]
@@ -1438,11 +1438,11 @@ Open the **app.component.ts** and Configure the `getMutation` function in the `G
   ```
 **Delete mutation request parameters:**
 
-When the user clicks the Delete button, selects a row to delete, and confirms the deletion, the `GraphQLAdaptor` constructs the mutation with minimal parameters:
+When the user clicks the `Delete` button, selects a row to delete, and confirms the deletion, the `GraphQLAdaptor` constructs the mutation with minimal parameters:
 
 ![GraphQL-apollo-deleteRecord](../images/GraphQL-apollo-Delete.png)
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editsettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to "true" for a specific Grid Column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editsettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to `true` for a specific Grid Column, ensuring that its value is unique.
 
 
 ## Running the application
@@ -1497,13 +1497,13 @@ syncfusion-angular-grid-with-apollo-server-/
 └── README.md
 ```
 
-## Complete sample repository
+## Complete Sample Repository
 
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-apollo-server) repository.
 
-This guide provides a modern, high‑performance architecture in which the Syncfusion Angular Grid integrates seamlessly with an Apollo‑powered GraphQL backend.
+This guide provides a modern, high‑performance architecture in which the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid integrates seamlessly with an Apollo‑powered GraphQL backend.
 
 ## See also
-- [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+- [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
 - [Grid cell customization with templates](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template)
 - [Optimized performance with virtual scrolling](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling)

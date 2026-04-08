@@ -14,7 +14,7 @@ The legend provides information about the series rendered in the chart and helps
 
 <img src="../../images/legend.png" alt="Chart with visible legend for series identification">
 
-To get started quickly with legends in angular Charts, refer to this video:
+To get started quickly with legends in Angular Charts, refer to the following video:
 
 {% youtube "https://www.youtube.com/watch?v=jfQ-7ftHodI" %}
 
@@ -214,7 +214,7 @@ You can customize the animation while clicking legend by setting [`enableAnimati
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs48" %}
 
-## Collapsing legend item
+## Collapse legend item
 
 By default, series name will be displayed as legend. To skip the legend for a particular series, you can give empty string to the series name.
 
@@ -311,7 +311,7 @@ You can customize the legend items by using the [`template`](https://ej2.syncfus
         
 {% previewsample "page.domainurl/samples/chart/axis/category-cs55" %}
 
->Note: To use legend feature, inject `LegendService` into the `@NgModule.Providers`.
+>**Note**: To use legend feature, inject `LegendService` into the `@NgModule.Providers`.
 
 ## Customize each shape in legend
 

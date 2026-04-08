@@ -22,7 +22,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StackingBar100` in your chart configuration. This indicates that the data should be represented as a 100% stacked bar chart, with segments that show the percentage contribution of each part.
 
-2. **Inject the StackingBarSeries module**: Use the `@NgModule.providers` method to inject the `StackingBarSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the 100% stacked bar series are available in your chart.
+2. **Provide StackingBarSeriesService**: Use the `@NgModule.providers` method to inject the `StackingBarSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the 100% stacked bar series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -35,17 +35,17 @@ Ensure the following software and packages are installed before proceeding:
 | Angular CLI | 16 or later | Create and run Angular apps |
 | .NET SDK | 8.0 or later | Build and run ASP.NET Core Web API |
 | SQL Server | 2019 or later | Database server |
-| Microsoft.Data.SqlClient (NuGet) | 7.0.0 or later | SQL Server connectivity |
-| Syncfusion.EJ2.AspNet.Core | 33.1.45 or later | Server helpers (DataManagerRequest, DataOperations) |
-| @syncfusion/ej2-angular-grids | 33.1.45 or later | Angular Grid component |
-| @syncfusion/ej2-data | 33.1.45 or later | DataManager and adaptors |
+| @syncfusion/ej2-angular-grids | Latest | Angular Grid component |
+| @syncfusion/ej2-data | Latest | DataManager and adaptors |
+| Microsoft.Data.SqlClient (NuGet) | Latest | SQL Server connectivity |
+| Syncfusion.EJ2.AspNet.Core | Latest | Server helpers (DataManagerRequest, DataOperations) |
 
 ## Key topics
 
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Setting up and configuring a Microsoft SQL Server–backed ASP.NET Core Web API using ADO.NET SqlClient | [View](#setting-up-the-sql-server-environment-for-sqlclient) |
-| 2 | Integrating the Syncfusion Angular Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
+| 2 | Integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
 | 3 | Implementing server‑side data operations including paging, searching, filtering, and sorting | [View](#step-6-implement-paging-feature) |
 | 4 | Performing full CRUD and batch operations from the Angular Grid against the SQL Server database | [View](#step-10-perform-crud-operations) |
 | 6 | Run the applications | [View](#running-the-application) |
@@ -54,7 +54,7 @@ Ensure the following software and packages are installed before proceeding:
 
 ## Setting up the SQL server environment for SqlClient
 
-First, the **SQL Server database** structure must be created to store ticket records.
+First, create the **SQL Server database** structure required to store ticket records.
 
 **Instructions:**
 
@@ -123,14 +123,14 @@ dotnet new webapi -n Grid_MSSQL.Server
 cd Grid_MSSQL.Server
 ```
 
-Add the SQL Server client library and Syncfusion server‑side helper packages.
+Add the SQL Server client library and Syncfusion<sup style="font-size:70%">&reg;</sup> server‑side helper packages.
 
 ```bash
 dotnet add package Microsoft.Data.SqlClient
 dotnet add package Syncfusion.EJ2.AspNet.Core
 ```
 
-The Web API exposes HTTP endpoints that are used by the Grid to perform read and data modification operations. The Syncfusion server helper package provides the required types for processing grid requests and applying data operations on the server.
+The Web API exposes HTTP endpoints that are used by the Grid to perform read and data modification operations. The Syncfusion<sup style="font-size:70%">&reg;</sup> server helper package provides the required types for processing grid requests and applying data operations on the server.
 
 ### Step 2: Create the data model
 
@@ -138,8 +138,8 @@ A data model is a C# class that represents the structure of a database table. Th
 
 **Instructions:**
 
-1. Create a new folder named "Data" in the application project.
-2. Inside the "Data" folder, create a new file named **Tickets.cs**.
+1. Create a new folder named **Data** in the application project.
+2. Inside the **Data** folder, create a new file named **Tickets.cs**.
 3. Define the **Tickets** class with the following code:
 
 ```csharp
@@ -242,7 +242,7 @@ A repository class is an intermediary layer that handles all database operations
 
 **Instructions:**
 
-1. Inside the "Data" folder, create a new file named **TicketRepository.cs**.
+1. Inside the **Data** folder, create a new file named **TicketRepository.cs**.
 2. Define the **TicketRepository** class with the following code:
 
 ```csharp
@@ -605,7 +605,7 @@ This setup registers controllers, enables a permissive CORS policy for developme
 
 ## Integrating Syncfusion Angular Grid
 
-The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with the SQL Server database.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with the SQL Server database.
 
 ### Step 1: Creating the Angular client application
 
@@ -618,7 +618,7 @@ cd grid_mssql.client
 
 ### Step 2: Adding Syncfusion packages
 
-Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt.
+Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages using the below command in Visual Studio Code terminal or Command prompt.
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -640,7 +640,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 3: Add Syncfusion Angular Grid
 
@@ -775,7 +775,7 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 **Instructions:**
 
 1. Open the (**src/app/app.component.ts**) file and create a property with CRUD and search options.
-2. And Inject the `ToolbarService` modules in the component `providers` property.
+2. And Inject the `ToolbarService` modules into the component `providers` property.
 3. Then in Grid component (**src/app/app.component.html**) include the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) property.
 
 **src/app/app.component.ts**:
@@ -826,15 +826,13 @@ export class AppComponent implements OnInit {
 | `Cancel` | Cancels the current edit or add action. |
 | `Search` | Displays a search box to find records. |
 
-The toolbar has been successfully added.
-
 ### Step 6: Implement paging feature
 
 Paging divides large datasets into smaller pages to improve performance and usability.
 
 **Instructions:**
 
-1. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to `true` and inject the `PageService` module in the providers property to enable paging in the Grid.
+1. Set the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to `true` and inject the `PageService` module into the `providers` property to enable paging in the Grid.
 
     Update (**app.component.ts**):
 
@@ -880,7 +878,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
     </ejs-grid>
     ```
 
-2. On the API controller create a file **TicketsController.cs** and add the **List** method provided below and handle paging using `_dataOps.PerformSkip` and `_dataOps.PerformTake`.
+2. On the API controller create a file **TicketsController.cs** and add the "List" method provided below and handle paging using `_dataOps.PerformSkip` and `_dataOps.PerformTake`.
 
     ```csharp
     using Microsoft.AspNetCore.Mvc;
@@ -932,7 +930,8 @@ Searching allows finding records by entering keywords in the search box.
 
 **Instructions:**
 
-1. Include the `Search` item in the toolbar and inject the `ToolbarService` service.
+1. Ensure the toolbar includes the `Search` item.
+2. Inject the `ToolbarService` module into the `providers` property of the "AppComponent".
 
     Update (**app.component.ts**):
 
@@ -1017,7 +1016,7 @@ Searching allows finding records by entering keywords in the search box.
 
 **Searching details:**
 
-- Entering a term and pressing the <kbd>Enter</kbd> key sends search descriptors in the `search` property.
+- Entering a term and pressing <kbd>Enter</kbd> key sends search descriptors in the `search` property.
 - `_dataOps.PerformSearching()` applies the search term across all searchable fields.
 - Filtered data is counted and then paged; the shaped response is returned to the client.
 
@@ -1031,7 +1030,7 @@ Filtering allows restricting data based on column values using the Excel filter 
 
 **Instructions:**
 
-1. Enable filtering by setting **[allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering)** and injecting the `FilterService` module.
+1. Enable filtering by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) and injecting the `FilterService` module.
 2. Configure [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettingsmodel) for customizing filter type.
 
     Update (**app.component.ts**):
@@ -1367,11 +1366,11 @@ public async Task<IActionResult> Remove([FromBody] CRUDModel<Tickets> args)
 
 1. A record is selected and the `Delete` button is clicked.
 2. The Grid posts the key to `/remove` using `CRUDModel`.
-3. The controller parses the key and calls "DeleteAsync".
+3. The controller parses the key and calls `DeleteAsync`.
 4. ADO.NET executes the `DELETE` statement.
 5. The API returns acknowledgment; the Grid removes the row.
 
-When a record is deleted in the Grid, a request is sent to the server with the following payload.
+When a record deleted in the Grid, a request is sent to the server with the following payload.
 
 ![Delete Operation Payload](../images/mssql-grid-delete.png)
 
@@ -1492,7 +1491,7 @@ The following snippets assemble the final Angular Grid configuration used in the
 > - The [editType](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property can be used to specify the desired editor for each column.
 > - The behavior of default editors can be customized using the [edit.params](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property of the Grid column.
 > - The [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) property specifies the data type of a Grid column.
-> - The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property allows rendering custom elements in a column instead of the default field value.
+> - The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that allows rendering custom elements in a column instead of the default field value.
 
 
 **App component:**
@@ -1746,7 +1745,7 @@ ng serve --open
 
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-MSSQL).
 
-The application now provides a complete end‑to‑end ticket management workflow using the Syncfusion Angular Grid with server‑side processing and direct integration with Microsoft SQL Server.
+The application now provides a complete end‑to‑end ticket management workflow using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with server‑side processing and direct integration with Microsoft SQL Server.
 
 ## See also
 

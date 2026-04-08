@@ -22,7 +22,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Column` in your chart configuration. This indicates that the data should be represented as a column chart, which is ideal for comparing different categories of data or tracking changes over time.
 
-2. **Inject the ColumnSeries module**: Use the `@NgModule.providers` method to inject the `ColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering column series are available in your chart.
+2. **Provide ColumnSeriesService**: Use the `@NgModule.providers` method to inject the `ColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering column series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

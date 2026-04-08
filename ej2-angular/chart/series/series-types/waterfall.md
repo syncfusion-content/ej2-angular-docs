@@ -21,7 +21,7 @@ To render a `waterfall` series in your chart, you need to follow a few steps to 
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Waterfall` in your chart configuration. This indicates that the data should be represented as a waterfall chart, which helps illustrate the cumulative effect of sequentially introduced positive and negative values.
 
-2. **Inject the WaterfallSeries module**: Use the `@NgModule.providers` method to inject the `WaterfallSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering waterfall series are available in your chart.
+2. **Provide WaterfallSeriesService**: Use the `@NgModule.providers` method to inject the `WaterfallSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering waterfall series are available in your chart.
 
 3. **Configure intermediate and cumulative sums**: Use the [`intermediateSumIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#intermediatesumindexes) property to represent intermediate sum values, and the [`sumIndexes`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#sumindexes) property to represent cumulative sum values.
 

@@ -19,15 +19,15 @@ Entity Framework Core (EF Core) is a software tool that simplifies database oper
 
 **Key benefits of Entity Framework Core**
 
-- **Automatic SQL generation**: Entity Framework Core generates optimized SQL queries automatically, eliminating the need to write raw SQL code.
-- **Type safety**: Work with strongly-typed objects instead of raw SQL strings, reducing errors.
-- **Built-in security**: Automatic parameterization prevents SQL injection attacks.
-- **Version control for databases**: Manage database schema changes version-by-version through migrations.
-- **Familiar syntax**: Use LINQ (Language Integrated Query) syntax, which is more intuitive than raw SQL strings.
+- **Automatic SQL Generation**: Entity Framework Core generates optimized SQL queries automatically, eliminating the need to write raw SQL code.
+- **Type Safety**: Work with strongly-typed objects instead of raw SQL strings, reducing errors.
+- **Built-in Security**: Automatic parameterization prevents SQL injection attacks.
+- **Version Control for Databases**: Manage database schema changes version-by-version through migrations.
+- **Familiar Syntax**: Use LINQ (Language Integrated Query) syntax, which is more intuitive than raw SQL strings.
 
 **What is SQLite?**
 
-**SQLite** is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. Unlike other database management systems, SQLite is not a client-server database engine. Rather, it is embedded into the end program.
+[SQLite](https://www.sqlite.org/docs.html) is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. Unlike other database management systems, SQLite is not a client-server database engine. Rather, it is embedded into the end program.
 
 ## Prerequisites
 
@@ -51,10 +51,10 @@ Ensure the following software and packages are installed before proceeding:
 | 3 | Install necessary NuGet packages for Entity Framework Core and Syncfusion | [View](#step-3-install-required-nuget-packages) |
 | 4 | Create data models and DbContext for database communication | [View](#step-4-create-the-data-model) |
 | 5 | Configure connection strings and register services | [View](#step-6-configure-connection-string-in-appsettingsjson) |
-| 6 | Create an Angular Grid component that supports searching, filtering, sorting, paging, and CRUD operations | [View](#integrating-syncfusion-Angular-grid) |
-| 7 | Handle bulk operations and batch updates | [View](#step-9-perform-crud-operations) |
+| 6 | Create an Angular Grid component that supports searching, filtering, sorting, paging, and CRUD operations | [View](#integrating-syncfusion-angular-grid) |
+| 7 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
 
-## Setting up the SQLite Environment for Entity Framework Core
+## Setting Up the SQLite Environment for Entity Framework Core
 
 ### Step 1: Create the Database and Table in SQLite
 
@@ -120,17 +120,17 @@ Before installing NuGet packages, a new ASP.NET Core Web Application with Angula
 8. Click **Create**.
 
 Visual Studio will create a solution with two projects:
-- **Grid_SQLite.Server**: The ASP.NET Core backend with Controllers, and configuration files
-- **grid_sqlite.client**: The Angular + Vite frontend client application
+- **Grid_SQLite.Server**: The ASP.NET Core backend with Controllers, and configuration files.
+- **grid_sqlite.client**: The Angular + Vite frontend client application.
 
 ### Step 3: Install required NuGet packages
 
-NuGet packages are software libraries that add functionality to the application. These packages enable Entity Framework Core, SQLite connectivity, and Syncfusion Grid integration.
+NuGet packages are software libraries that add functionality to the application. These packages enable Entity Framework Core, SQLite connectivity, and Syncfusion<sup style="font-size:70%">&reg;</sup> Grid integration.
 
 **Method 1: Using .NET CLI (Recommended)**
 
 1. Open a terminal in Visual Studio 2022 (View → Terminal).
-2. Navigate to your project directory.
+2. Navigate to the project directory.
 3. Run the following commands in sequence:
 
 ```bash
@@ -272,9 +272,9 @@ namespace Grid_SQLite.Server.Data
 
 **Explanation:**
 
-- The "[Key]" attribute marks the "Id" property as the primary key (a unique identifier for each record).
+- The `[Key]` attribute marks the "Id" property as the primary key (a unique identifier for each record).
 - Each property represents a column in the database table.
-- The "?" symbol indicates that a property is nullable (can be empty).
+- The `?` symbol indicates that a property is nullable (can be empty).
 
 The data model has been successfully created.
 
@@ -546,7 +546,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the "Bootstrap 5" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 2: Add Syncfusion Angular Grid
 
@@ -687,7 +687,7 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 **Instructions:**
 
 1. Open the (**src/app/app.ts**) file.
-2. Inject the `ToolbarService` in to the `providers` array of the "AppComponent".
+2. Inject the `ToolbarService` into the `providers` array of the "AppComponent".
 3. Update the Grid component to include the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) property with CRUD and search options:
 
 ```ts
@@ -739,8 +739,6 @@ export class AppComponent {
 | `Cancel` | Cancels the current edit or add operation. |
 | `Search` | Displays a search box to find records. |
 
-The toolbar has been successfully added.
-
 ### Step 5: Implement paging feature
 
 The paging feature allows efficient loading of large data sets through on‑demand loading.
@@ -748,7 +746,7 @@ The paging feature allows efficient loading of large data sets through on‑dema
 **Instructions:**
 
 1. Paging in the Grid is enabled by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowpaging) property to `true`.
-2. And injecting the `PagerService` module in the `providers` property of the "AppComponent".
+2. And injecting the `PagerService` module into the `providers` property of the "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -849,7 +847,7 @@ Searching allows finding records by entering keywords in the search box.
 **Instructions:**
 
 1. Ensure the toolbar includes the `Search` item.
-2. No additional code changes are required.
+2. Inject the `ToolbarService` module into the `providers` property of the "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -932,7 +930,7 @@ namespace Grid_SQLite.Server.Controllers
 
 - When text is entered in the search box and <kbd>Enter</kbd> key is pressed, the Grid sends a search request to the server.
 - The "UrlDataSource" method receives the search criteria in `search` parameter.
-- The `PerformSearching()` method filters the data based on the search term.
+- The `operation.PerformSearching()` method filters the data based on the search term.
 - Results are returned and displayed in the Grid.
 
 When searching is performed in the Grid, a request is sent to the server with the following payload.
@@ -946,8 +944,7 @@ Filtering allows restricting data based on column values using a menu interface.
 **Instructions:**
 
 1. Filtering is enabled by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) property to `true`.
-2. Inject the `FilterService` module in the `providers` property of the "AppComponent".
-3. Configure [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettingsmodel) for customizing filter type.
+2. Inject the `FilterService` module into the `providers` property of the "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -1047,7 +1044,7 @@ Sorting enables arranging records in ascending or descending order based on colu
 **Instructions:**
 
 1. Sorting can be enabled by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) property to `true`.
-2. Inject the `SortService` module in the `providers` property of the "AppComponent".
+2. Inject the `SortService` module into the `providers` property of the "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -1143,7 +1140,7 @@ When sorting is performed in the Grid, a request is sent to the server with the 
 
 CRUD operations allow adding new records, modifying existing records, and removing items that are no longer relevant. The `DataManager` posts a specific action for each operation so that the server can route to the appropriate handler.
 
-Editing operations in the Grid are enabled through configuring the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/gridModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true`. Inject the `EditService` and `ToolbarService` modules in the `providers` property of "AppComponent".
+Editing operations in the Grid are enabled through configuring the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/gridModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true`. Inject the `EditService` and `ToolbarService` modules into the `providers` property of "AppComponent".
 
 ```ts
 // File: src/app/app.ts
@@ -1344,7 +1341,7 @@ In **AssetController.cs**, implement the delete method:
 1. A record is selected and the `Delete` button is clicked.
 2. The CustomAdaptor's "remove" method is called.
 3. The "Remove" method in **AssetController.cs** file is called.
-4. The record is located in the database by its ID.
+4. The record is located in the database by its "ID".
 5. The record is removed from the `_db.Assets` collection.
 6. The Grid refreshes to remove the deleted record from the UI.
 
@@ -1706,9 +1703,9 @@ Since the project is created using the ASP.NET Core with Angular template, both 
 
 **Step 4: Verify the application is running**
 
-- The application should open automatically in your default browser
+- The application should open automatically in the default browser
 - The Angular frontend will be served through the ASP.NET Core server
-- All API calls to **https://localhost:7066/api/asset** will be handled by the backend
+- All API calls to **https://localhost:7066/api/asset/** will be handled by the backend
 
 The asset management application is now running and ready to use.
 
@@ -1726,3 +1723,10 @@ The asset management application is now running and ready to use.
 ## Complete Sample Repository
 
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-SQLite).
+
+
+## See also
+
+  - [Dynamic data loading](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling)
+  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

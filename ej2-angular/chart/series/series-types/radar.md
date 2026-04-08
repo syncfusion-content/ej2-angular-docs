@@ -20,7 +20,7 @@ To render a [radar](https://www.syncfusion.com/angular-components/angular-charts
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Radar` in your chart configuration. This indicates that the data should be represented as a radar chart, which is ideal for plotting data points on a circular grid.
 
-2. **Inject the RadarSeries module**: Use the `@NgModule.providers` method to inject the `RadarSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering radar series are available in your chart.
+2. **Provide RadarSeriesService**: Use the `@NgModule.providers` method to inject the `RadarSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering radar series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

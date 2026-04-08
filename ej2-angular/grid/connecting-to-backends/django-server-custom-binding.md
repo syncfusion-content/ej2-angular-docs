@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Syncfusion Angular Grid with Django REST Framework
 
-This guide explains connecting the Syncfusion Angular Grid to a **Django REST Framework (DRF)** backend with **Custom Binding**. Custom Binding provides full control over the Grid’s communication with the server: the Grid raises events for data operations (paging, sorting, filtering, searching) and CRUD,  client code calls DRF endpoints, and DRF returns standardized results.
+This guide explains connecting the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid to a **Django REST Framework (DRF)** backend with **Custom Binding**. Custom Binding provides full control over the Grid’s communication with the server: the Grid raises events for data operations (paging, sorting, filtering, searching) and CRUD,  client code calls DRF endpoints, and DRF returns standardized results.
 
 **Difference between Custom Binding and UrlAdaptor:**
 
-With **UrlAdaptor**, the Syncfusion DataManager serializes all Grid actions into a single, framework‑specific payload posted to one endpoint.
+With [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor), the Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager serializes all Grid actions into a single, framework‑specific payload posted to one endpoint.
 
-**Custom Binding** provides full, manual control over request design. The Grid raises events (`dataStateChange`, `dataSourceChanged`), and the client code shapes the request (query string, body, headers) and targets specific RESTful endpoints.  
+**Custom Binding** provides full, manual control over request design. The Grid raises events ([dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange), [dataSourceChanged](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasourcechanged)), and the client code shapes the request (query string, body, headers) and targets specific RESTful endpoints.  
 
 Since Django REST Framework expects standard REST patterns, calls can be designed to match DRF conventions, for example, `GET` for actions like paging, filtering, sorting, searching, and `POST/PUT/DELETE` for CRUD, while responses return the simple `{ result, count }` structure that the Grid can bind to.
 
@@ -36,7 +36,7 @@ In short, Custom Binding means the contract (requests and responses) is owned by
 | # | Topics | Link |
 |---|---------|------|
 | 1 | Set up Django REST Framework and connect it to Microsoft SQL Server | [View](#setting-up-the-django-rest-framework-for-microsoft-sql-database) |
-| 2 | Create and configure the Angular application with the Syncfusion Angular Grid | [View](#integrate-syncfusion-angular-grid-with-django-rest-framework-custom-binding) |
+| 2 | Create and configure the Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid | [View](#integrate-syncfusion-angular-grid-with-django-rest-framework-custom-binding) |
 | 3 | Handle server-side data operations (paging/sorting/filtering/searching) with Custom Binding | [View](#perform-data-operations) |
 | 4 | Enable create, update, and delete operations with Custom Binding | [View](#performing-crud-operations) |
 | 5 | Run the Django and Angular applications locally for development | [View](#running-the-application) |
@@ -48,7 +48,7 @@ The DRF backend exposes REST endpoints the Grid calls from client-side event han
 ### Step 1: Set up the Django REST Framework server and install required packages
 
 **Instructions:**
-1. Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command prompt opened with <kbd>Win+R</kbd>, or macOS Terminal launched with <kbd>Cmd+Space</kbd> ).
+1. Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>Win+R</kbd> or macOS Terminal launched with <kbd>Cmd+Space</kbd> ).
 
 2. Before creating the Django project, set up a virtual environment. A virtual environment keeps project dependencies isolated, ensuring that package installations do not affect other projects.
 
@@ -66,14 +66,14 @@ The DRF backend exposes REST endpoints the Grid calls from client-side event han
     - `mssql-django` enables Django to connect to SQL Server through `pyodbc`.
     - For Django settings reference, see [databases](https://docs.djangoproject.com/en/6.0/ref/settings/#databases).
 
-4. Initialize the Django project and Application:
+4. Initialize the Django project and application:
 
-    For this guide, a Django project named **django_server** is created, along with a new application module, using the following commands:
+      For this guide, a Django project named **django_server** is created, along with a new application module, using the following commands:
 
-    ```bash
-    django-admin startproject django_server .
-    python manage.py startapp library
-    ```
+      ```bash
+      django-admin startproject django_server
+      python manage.py startapp library
+      ```
 The **django_server** folder is now created. This initializes the project structure and creates the library app, which will contain the models, views, and API logic for the Django REST Framework backend.
 
 ### Step 2: Configure Django settings
@@ -336,7 +336,7 @@ A Django REST Framework router automatically generates RESTful routes for the "B
 
 2. Register the "BookLendingViewSet" with a DRF router:
 
-    Add the following code to define the "api/lendings" route.
+    Add the following code to define the `api/lendings` route.
 
     ```python
     [django_server/urls.py]
@@ -468,13 +468,13 @@ ViewSet configured for RESTful reads and writes aligned with Custom Binding.
 
 ## Integrate Syncfusion Angular Grid with Django REST Framework (Custom Binding)
 
-The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
 
 ### Step 1 : Creating the Angular client application
 
 Create a new Angular application using the Angular CLI, which provides a complete development environment optimized for Angular development.
 
-Open a Visual Studio Code terminal or Command prompt and run the below command:
+Open a Visual Studio Code terminal or Command Prompt and run the below command:
 
 ```bash
 ng new client
@@ -483,18 +483,18 @@ cd client
 
 This command creates an Angular application named **client** with the essential folder structure and files required to begin development immediately.
 
-The integration process begins by installing the required Syncfusion Angular Grid packages before establishing the DRF API.
+The integration process begins by installing the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid packages before establishing the DRF API.
 
 ### Step 2: Install Syncfusion Grid packages
 
-Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt:
+Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages using the below command in Visual Studio Code terminal or Command Prompt:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-data --save
 ```
 
-- **@syncfusion/ej2-angular-grids** – Required package for integrating the Syncfusion Grid component in Angular.
-- **@syncfusion/ej2-data** – Provides data utilities for binding and manipulating Grid data.
+- `@syncfusion/ej2-angular-grids` – Required package for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component in Angular.
+- `@syncfusion/ej2-data` – Provides data utilities for binding and manipulating Grid data.
 
 ### Step 3: Including required Syncfusion stylesheets
 
@@ -515,11 +515,11 @@ Once the dependencies are installed, the required CSS files are made available i
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the `Bootstrap 5.3` theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
+For this project, the "Bootstrap 5.3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
 
 ### Step 4: Create the Grid component
 
-Create a new component with the Syncfusion Grid and include the basic column definitions to render the Grid. This component will serve as the base for integrating custom binding and data operations.
+Create a new component with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and include the basic column definitions to render the Grid. This component will serve as the base for integrating custom binding and data operations.
 
 **Instructions:**
 
@@ -567,7 +567,7 @@ Create a new component with the Syncfusion Grid and include the basic column def
 
 ### Step 5: Create a client API service for DRF query-string model
 
-This step builds a lightweight client service that translates Syncfusion Grid state (paging, sorting, filtering, searching) into **Django REST Framework (DRF)** query parameters and calls REST endpoints for **read** and **CRUD**. The service centralizes request/response handling so components stay small and focused on UI.
+This step builds a lightweight client service that translates Syncfusion<sup style="font-size:70%">&reg;</sup> Grid state (paging, sorting, filtering, searching) into **Django REST Framework (DRF)** query parameters and calls REST endpoints for **read** and **CRUD**. The service centralizes request/response handling so components stay small and focused on UI.
 
 **Instructions:**
 
@@ -576,7 +576,7 @@ This step builds a lightweight client service that translates Syncfusion Grid st
    - A `request` helper for JSON GET/POST/PUT/DELETE.
    - `buildQueryParams()` to convert Grid state into DRF query params (`page`, `page_size`, `ordering`, `search`, field filters with `__in`, `__icontains`, etc.).
    - `fetchLendings()` for server-side data operations returning `{ result, count }`.
-   - `createLending`, `updateLending`, `deleteLending` for CRUD.
+   - "createLending", "updateLending", "deleteLending" for CRUD.
 3. Update `API_BASE_URL` if the backend runs on a different host/port.
 
 ```typescript
@@ -777,19 +777,19 @@ interface Predicate {
 - **Single service boundary:** Centralizes HTTP logic (base URL, headers, verbs) so components stay UI‑focused and Custom Binding calls remain consistent.
 - **State → DRF params:** `buildQueryParams()` converts Grid state into DRF‑friendly query parameters:
   - Paging → `page`, `page_size` derived from `skip`/`take`.
-  - Sorting → `ordering` list (e.g., `author_name,-borrowed_date`).
+  - Sorting → `ordering` list (e.g., "author_name", "borrowed_date").
   - Search → `search` space‑separated terms for DRF `SearchFilter`.
   - Filters → field operators (`__icontains`, `__istartswith`, `__lte`, etc.) and list filters via `__in`.
 - **Date multi‑select:** Date columns are normalized to `YYYY‑MM‑DD` (UTC) and merged as `<date_field>__in=…`, matching Excel‑style multi‑select in the Grid while avoiding timezone shifts.
 - **Read shape for Custom Binding:** `fetchLendings()` returns `{ result, count }`. `result` binds to Grid rows; `count` drives the pager without extra round trips.
-- **CRUD alignment:** `createLending` (POST), `updateLending` (PUT), and `deleteLending` (DELETE) match DRF endpoints expected by `ModelViewSet`, enabling `dataSourceChanged` to complete edits with `endEdit()`.
+- **CRUD alignment:** "createLending" (POST), "updateLending" (PUT), and "deleteLending" (DELETE) match DRF endpoints expected by `ModelViewSet`, enabling `dataSourceChanged` to complete edits with `endEdit()`.
 - **Resilience & clarity:** `request()` handles JSON and `204 No Content`. `keepColonsReadable()` preserves legibility in DevTools, and helper mappers keep filter translation explicit and maintainable.
 
-The client service bridges Syncfusion Grid Custom Binding with DRF's REST API and query parameter conventions.
+The client service bridges Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Custom Binding with DRF's REST API and query parameter conventions.
 
 ### Step 6: Integrate Syncfusion Angular Grid with custom binding
 
-The Syncfusion Angular Grid custom databinding feature integrates with the Django REST API through event-driven calls. Grid actions (paging, sorting, filtering, searching) are sent via **dataStateChange**, and CRUD is sent via **dataSourceChanged**. The component uses the shared `apiClient` service (created in the previous step) to translate Grid state into DRF query parameters and to call REST endpoints.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid custom databinding feature integrates with the Django REST API through event-driven calls. Grid actions (paging, sorting, filtering, searching) are sent via **dataStateChange**, and CRUD is sent via **dataSourceChanged**. The component uses the shared `apiClient` service (created in the previous step) to translate Grid state into DRF query parameters and to call REST endpoints.
 
 **Instructions:**
 
@@ -1101,7 +1101,7 @@ Deleted data passed to the server through the `dataSourceChanged` event argument
 
 ## Running the application
 
-Open a terminal or Command prompt. Start the Django server first, and then run the Angular client.
+Open a terminal or Command Prompt. Start the Django server first, and then run the Angular client.
 
 ### Run the Django server
 
@@ -1167,7 +1167,7 @@ The complete folder structure looks like below:
 
 For a complete working implementation of this example, refer the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-custom-binding-with-django-server) repository.
 
-The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion Angular Grid front end.
+The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid front end.
 
 ## See also
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Connecting MySQL server to Syncfusion Angular Grid Using LINQ2DB
 
-The [Syncfusion Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) supports binding data from a MySQL database. This documentation demonstrates integrating MySQL with Syncfusion Angular Grid using LINQ2DB (Light-weight ORM) for data operations with the use of `CustomAdaptor` to build a Transaction Management Application.
+The [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) supports binding data from a MySQL database. This documentation demonstrates integrating MySQL with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid using LINQ2DB (Light-weight ORM) for data operations with the use of `CustomAdaptor` to build a Transaction Management Application.
 
 **What is LINQ2DB?**
 
@@ -123,11 +123,11 @@ Before installing NuGet packages, a new ASP.NET Core Web Application must be cre
    - **Framework**: Select .NET 8.0 (or latest available)
 6. Click **Create**.
 
-Visual Studio will create the project with the default structure, including folders like **Controllers**, **Models**, **Views**, and configuration files. The ASP.NET Core project is now ready for integration with LINQ2DB and Syncfusion components.
+Visual Studio will create the project with the default structure, including folders like **Controllers**, **Models**, **Views**, and configuration files. The ASP.NET Core project is now ready for integration with LINQ2DB and Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
 ### Step 3: Install required NuGet packages
 
-NuGet packages are software libraries that add functionality to the application. These packages enable LINQ2DB, MySQL connectivity, and Syncfusion Grid integration.
+NuGet packages are software libraries that add functionality to the application. These packages enable LINQ2DB, MySQL connectivity, and Syncfusion<sup style="font-size:70%">&reg;</sup> Grid integration.
 
 **Method 1: Using Package Manager Console:**
 
@@ -371,7 +371,7 @@ The services are now successfully registered and the application is ready to han
 
 ## Integrating Syncfusion Angular Grid
 
-The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with MySQL database.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with MySQL database.
 
 ### Step 1: Creating the Angular client application
 
@@ -384,7 +384,7 @@ cd grid_mysql.client
 
 ### Step 2: Adding Syncfusion packages
 
-Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt.
+Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages using the below command in Visual Studio Code terminal or Command prompt.
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -406,7 +406,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 3: Add Syncfusion Angular Grid
 
@@ -452,7 +452,7 @@ And update (**src/app/app.component.html**):
 
 ### Step 4: Implement the CustomAdaptor
 
-The Syncfusion Angular Grid can bind data from a **MySQL server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid can bind data from a **MySQL server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
 The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using LINQ2DB to query the MySQL database and return the results.
 
@@ -542,7 +542,7 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 **Instructions:**
 
 1. Open the (**src/app/app.component.ts**) file and create a property with CRUD and search options.
-2. And Inject the `ToolbarService` modules in the component `providers` property.
+2. And Inject the `ToolbarService` modules into the component `providers` property.
 3. Then in Grid component (**src/app/app.component.html**) include the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) property.
 
 **src/app/app.component.ts**:
@@ -599,8 +599,6 @@ export class AppComponent implements OnInit {
 | `Cancel` | Cancels the current edit or add operation. |
 | `Search` | Displays a search box to find records. |
 
-The toolbar has been successfully added.
-
 ### Step 6: Implement paging feature
 
 The paging feature allows efficient loading of large data sets through on‑demand loading.
@@ -608,7 +606,7 @@ The paging feature allows efficient loading of large data sets through on‑dema
 **Instructions:**
 
 1. Paging in the Grid is enabled by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/grid/paging) property to `true`.
-2. And injecting the the `PageService` module in the component `providers` property.
+2. And injecting the the `PageService` module into the component `providers` property.
 
 **src/app/app.component.ts**:
 
@@ -718,7 +716,7 @@ Searching allows finding records by entering keywords in the search box.
 **Instructions:**
 
 1. Ensure the toolbar includes the `Search` item.
-2. Inject the `SearchService` modules in the component `providers` property.
+2. Inject the `ToolbarService` module into the `providers` property of the "AppComponent".
 
 **src/app/app.component.ts**:
 
@@ -730,7 +728,6 @@ import {
   GridModule,
   ToolbarItems,
   ToolbarService,
-  SearchService,
 } from '@syncfusion/ej2-angular-grids';
 import { DataManager } from '@syncfusion/ej2-data';
 import { CustomAdaptor } from './custom-adaptor';
@@ -740,7 +737,7 @@ import { CustomAdaptor } from './custom-adaptor';
   standalone: true,
   templateUrl: './app.component.html',
   imports: [CommonModule, GridModule],
-  providers: [ToolbarService, SearchService],
+  providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
   @ViewChild('grid', { static: true }) grid!: GridComponent;
@@ -818,7 +815,7 @@ Update the "UrlDatasource" method in the **GridController.cs** file to handle se
 **Searching details:**
 
 - When text is entered in the search box and <kbd>Enter</kbd> key is pressed, the Grid sends a search request to the server.
-- The "UrlDatasource" method receives the search criteria in `Search` parameter.
+- The "UrlDatasource" method receives the search criteria in `search` parameter.
 - The `operation.PerformSearching()` method filters the data based on the search term.
 - Results are returned and displayed in the Grid.
 
@@ -833,7 +830,7 @@ Filtering allows restricting data based on column values using a menu interface.
 **Instructions:**
 
 1. Filtering is enabled by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowfiltering) property to `true`.
-2. Then injecting the `FilterService` module in the `providers` property.
+2. Then injecting the `FilterService` module into the `providers` property.
 
 **src/app/app.component.ts**:
 
@@ -943,7 +940,7 @@ Sorting enables arranging records in ascending or descending order based on colu
 **Instructions:**
 
 1. Sorting can be enabled by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#allowsorting) property to `true`.
-2. Then injecting the `SortService` module in the `providers` property.
+2. Then injecting the `SortService` module into the `providers` property.
 
 **src/app/app.component.ts**:
 
@@ -1050,7 +1047,7 @@ When sorting is performed in the Grid, a request is sent to the server with the 
 
 CRUD operations allow adding new records, modifying existing records, and removing items that are no longer relevant. The `DataManager` posts a specific action for each operation so that the server can route to the appropriate handler.
 
-Editing operations in the Grid are enabled through configuring the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true` in the **app.component.html**. Then inject the `EditService` module in the `providers` property of the angular component.
+Editing operations in the Grid are enabled through configuring the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) properties ([allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel#allowdeleting)) to `true` in the **app.component.html**. Then inject the `EditService` module into the `providers` property of the angular component.
 
 **src/app/app.component.ts**:
 
@@ -1174,7 +1171,7 @@ In **GridController.cs**, implement the "Insert" method:
 3. The new record is added to the `Transactions` collection.
 4. The Grid automatically refreshes to display the new record.
 
-	When a new record is added in the Grid, a request is sent to the server with the following payload.
+When a new record is added in the Grid, a request is sent to the server with the following payload.
 
 ![Insert Operation Payload](../images/mysql-grid-add.png)
 
@@ -1225,7 +1222,7 @@ In **GridController.cs**, implement the update method:
 4. All properties are updated with the new values.
 5. The Grid refreshes to display the updated record.
 
-When a record is updated in the Grid, a request is sent to the server with the following payload.
+When a record updated in the Grid, a request is sent to the server with the following payload.
 
 ![Update Operation Payload](../images/mysql-grid-edit.png)
 
@@ -1270,7 +1267,7 @@ In **GridController.cs**, implement the delete method:
 1. A record is selected and the `Delete` button is clicked.
 2. The CustomAdaptor's "remove" method is called.
 3. The "Remove" method in **GridController.cs** file is called.
-4. The record is located in the database by its "ID".
+4. The record is located in the database by its ID.
 5. The record is removed from the "Transactions" collection.
 6. The Grid refreshes to remove the deleted record from the UI.
 
