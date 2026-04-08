@@ -14,8 +14,6 @@ imports: [
         PivotViewAllModule,
         PivotFieldListAllModule
     ],
-
-
 standalone: true,
   selector: 'app-container',
   providers: [PDFExportService,VirtualScrollService],

@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 **Application architecture:**
 - **Backend**: Flask server (Python) - Handles REST API endpoints, task data CRUD operations, and business logic.
-- **Frontend**: Angular application - Displays the Syncfusion DataGrid UI with **custom data binding** for seamless data binding.
+- **Frontend**: Angular application - Displays the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid UI with **custom data binding** for seamless data binding.
 - **Data Model**: Task Management System with comprehensive task information.
 
 ## Prerequisites
@@ -29,20 +29,20 @@ domainurl: ##DomainURL##
 | TypeScript                  | 5.x or later                 | Client-side type safety                 |
 | Angular CLI                 | 18.x or later                | Angular development tool                |
 
-## Key Topcis
+## Key topcis
 
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Setting up and configuring the Flask backend using Python | [View](#setting-up-the-flask-backend-using-python) |
 | 2 | Performing data operations in server with filtering, searching, sorting, and paging for efficient data processing | [View](#perform-data-operations-in-server) |
 | 3 | Performing CRUD operations in server with REST endpoints | [View](#perform-crud-operations-in-server) |
-| 4 | Connecting Syncfusion Angular Grid with Flask API and configuring Syncfusion Grid with custom binding | [View](#connecting-syncfusion-angular-grid-with-flask-api) |
+| 4 | Connecting Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with Flask API and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with custom binding | [View](#connecting-syncfusion-angular-grid-with-flask-api) |
 | 5 | Running the application by starting servers locally and accessing the frontend | [View](#run-the-application) |
 | 6 | Exploring a complete working sample in the complete sample repository on GitHub | [View](#complete-sample-repository) |
 
 ## Setting up the Flask backend using Python
 
-The Flask backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion Angular Grid.
+The Flask backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 ### Step 1: Create the Flask server and install required packages
 
@@ -52,7 +52,7 @@ For this implementation, a Flask server is created to manage a **Task Management
 
 **Create project root folder:**
 
-Open a terminal (for example, an integrated terminal in Visual Studio Code, Windows Command Prompt opened with <kbd>Win+R</kbd>, or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following commands.
+Open a terminal (for example, an integrated terminal in Visual Studio Code, Windows Command Prompt opened with <kbd>Win+R</kbd> or macOS Terminal launched with <kbd>Cmd+Space</kbd>) and run the following commands.
 
 ```bash
 mkdir angular-grid-flask-api
@@ -300,11 +300,11 @@ def apply_paging(rows, skip, take):
     return rows[skip: skip + int(take)]
 ```
 
-### GET request endpoint
+**GET request endpoint:**
 
 The Flask GET endpoint retrieves task data with applied filtering, searching, sorting, and paging operations. The endpoint accepts a grid state parameter containing all operation details and returns the result in the standardized format.
 
-Ensure the response follows a structured format that includes both the current view dataset and the total data count. This approach supports on-demand data loading and enables the client to handle operations such as paging or filtering effectively when using Syncfusion custom data binding.
+Ensure the response follows a structured format that includes both the current view dataset and the total data count. This approach supports on-demand data loading and enables the client to handle operations such as paging or filtering effectively when using Syncfusion<sup style="font-size:70%">&reg;</sup> custom data binding.
 
 The required response format includes:
 
@@ -385,7 +385,7 @@ def update_task(item_id: int):
     return jsonify({"message": "not found"}), 404
 ```
 
-The "update_task" function locates the existing record by its primary key, replaces it with the updated data, persists the changes to the JSON file, and returns the updated record. If the record is not found, it returns a 404 error.
+The "update_task" function locates the existing record by its primary key, replaces it with the updated data, persists the changes to the JSON file, and returns the updated record. If the record is not found, it returns a "404" error.
 
 ### Delete
 
@@ -404,7 +404,7 @@ def delete_task(item_id: int):
 
 The "delete_task" function finds the record by its primary key, removes it from the tasks list, persists the changes to the JSON file, and returns the deleted record. If the record is not found, it returns a 404 error.
 
-### Running the Flask server
+**Running the Flask server**
 
 To run the Flask application, execute the following command in the **server** directory:
 
@@ -429,7 +429,7 @@ cd client
 
 ### Step 2: Install Syncfusion packages
 
-Install the Syncfusion Angular Grid and DataManager packages:
+Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid and DataManager packages:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -453,11 +453,11 @@ Include the required CSS files in the (**src/styles.css**) file:
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 4: Create the Grid component
 
-Create a new Angular component in `client/src/app/app.component.ts` and `client/src/app/app.component.html` that renders the Syncfusion Grid. This component will serve as the base for integrating custom data binding and data operations.
+Create a new Angular component in "client/src/app/app.component.ts" and "client/src/app/app.component.html" that renders the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This component will serve as the base for integrating custom data binding and data operations.
 
 **app.component.ts:**
 ```ts
@@ -493,7 +493,7 @@ export class AppComponent implements AfterViewInit {
 
 ### Step 5: Integrate Syncfusion Angular Grid with custom data binding
 
-The Syncfusion Angular Grid custom data binding feature seamlessly integrates with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application-specific workflows and enabling efficient handling of large datasets. The custom data binding feature interacts with backend APIs through two key events.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid custom data binding feature seamlessly integrates with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application-specific workflows and enabling efficient handling of large datasets. The custom data binding feature interacts with backend APIs through two key events.
 
 - **[dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange)**: Triggered when the Grid performs actions such as paging, sorting, or filtering. It provides the current state details (skip, take, sorted, where, search), which are sent to the API so the request can be processed and data returned in the required `{ result:[], count:100 }` format.
 
@@ -727,7 +727,7 @@ The `dataSourceChanged` event handler checks the action type from the event argu
 
 ### Step 8: Enable paging
 
-The paging feature divides Grid records into multiple pages, improving performance and usability when handling large datasets. Enable paging by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpaging) property to `true` and injecting the `PageService` module in the `providers` property. Customize pager behavior using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#pagesettings) property.
+The paging feature divides Grid records into multiple pages, improving performance and usability when handling large datasets. Enable paging by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpaging) property to `true` and injecting the `PageService` module into the `providers` property. Customize pager behavior using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#pagesettings) property.
 
 **app.component.ts:**
 
@@ -773,7 +773,7 @@ The image illustrates that the page state is passed to the `skip` and `take` pro
 
 ### Step 9: Enable filtering
 
-The filtering feature enables searching and refining Grid records based on column values. Enable filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true` and injecting the `FilterService` module in the `providers` property. Customize filtering options using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#filtersettings) property.
+The filtering feature enables searching and refining Grid records based on column values. Enable filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true` and injecting the `FilterService` module into the `providers` property. Customize filtering options using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#filtersettings) property.
 
 **app.component.ts:**
 ```ts
@@ -815,7 +815,7 @@ The image below illustrates that the filter state is passed to the `where` prope
 
 ### Step 10: Enable searching
 
-The search feature in the Grid allows records to be located and filtered using keywords. Enable searching by adding `Search` to the Grid's [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) items and injecting the `ToolbarService` module in the `providers` property.
+The search feature in the Grid allows records to be located and filtered using keywords. Enable searching by adding `Search` to the Grid's [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) items and injecting the `ToolbarService` module into the `providers` property.
 
 **app.component.ts:**
 ```ts
@@ -856,7 +856,7 @@ The image illustrates that the search state is passed to the `search` property o
 
 ### Step 11: Enable sorting
 
-The sorting feature allows ordering Grid records by clicking column headers. Enable sorting by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true` and injecting the `SortService` module in the `providers` property.
+The sorting feature allows ordering Grid records by clicking column headers. Enable sorting by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true` and injecting the `SortService` module into the `providers` property.
 
 **app.component.ts:**
 ```ts
@@ -967,7 +967,7 @@ Deleted data passed to the server through the `dataSourceChanged` event argument
 
 Both the backend Flask server and the frontend Angular application need to run simultaneously for the Grid to function properly.
 
-### Prerequisites for running
+**Prerequisites for running**
 
 Before starting the servers, the following must be available:
 - Two terminal windows or tabs open (one for backend, one for frontend).
@@ -1031,7 +1031,7 @@ For a complete working implementation, refer to the [GitHub](https://github.com/
 
 The repository contains the complete Flask backend implementation with all API endpoints, business logic, data models, and a ready-to-run Angular frontend application.
 
-The application now provides a complete solution for integrating the Syncfusion Angular Grid with Flask API backend, enabling seamless data operations with a modern, user-friendly interface.
+The application now provides a complete solution for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with Flask API backend, enabling seamless data operations with a modern, user-friendly interface.
 
 ## See also
 

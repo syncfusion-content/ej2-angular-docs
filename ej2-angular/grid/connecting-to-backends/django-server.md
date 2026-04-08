@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Syncfusion Angular Grid with Django REST Binding POST Request Data
 
-The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) combined with Django REST Framework and Microsoft SQL Server provides a robust, scalable data‑driven application architecture. The Syncfusion Angular Grid delivers a rich, high‑performance client‑side experience with advanced features like paging, sorting, filtering, searching and CRUD operations.
+The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) combined with Django REST Framework and Microsoft SQL Server provides a robust, scalable data‑driven application architecture. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid delivers a rich, high‑performance client‑side experience with advanced features like paging, sorting, filtering, searching and CRUD operations.
 
 **What is Django REST Framework?**
 
@@ -36,7 +36,7 @@ The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/g
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Set up Django REST Framework and connect it to a Microsoft SQL Server database | [View](#setting-up-the-django-rest-framework-for-microsoft-sql-database) |
-| 2 | Create and configure the Angular application with the Syncfusion Angular Grid| [View](#integrate-syncfusion-angular-grid-with-django-rest-framework) |
+| 2 | Create and configure the Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid| [View](#integrate-syncfusion-angular-grid-with-django-rest-framework) |
 | 3 | Handle server‑side data operations such as filtering, searching, sorting, and paging | [View](#perform-data-operations) |
 | 4 | Enable create, update, and delete operations from the Grid using DRF | [View](#performing-crud-operations) |
 | 5 | Run the Django and Angular applications | [View](#running-the-application) |
@@ -45,13 +45,13 @@ The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/g
 
 ## Setting up the Django REST Framework for Microsoft SQL database
 
-The Django REST Framework backend serves as the core data service, managing API requests that provide the data powering the Syncfusion Angular Grid.
+The Django REST Framework backend serves as the core data service, managing API requests that provide the data powering the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 ### Step 1: Set up the Django REST Framework server and install required packages
 
 **Instructions:**
 
-1. Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command prompt opened with  <kbd>Win+R</kbd> or macOS terminal launched with <kbd>Cmd+Space</kbd> ).
+1. Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with  <kbd>Win+R</kbd> or macOS terminal launched with <kbd>Cmd+Space</kbd> ).
 
 2. Before creating the Django project, set up a virtual environment. A virtual environment keeps project dependencies isolated, ensuring that package installations do not affect other projects.
 
@@ -387,11 +387,11 @@ class BookLendingViewSet(viewsets.ModelViewSet):
 
 ## Integrate Syncfusion Angular Grid with Django REST Framework
 
-The Syncfusion Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
 
 ### Step 1: Creating the Angular client application
 
-Open a Visual Studio Code terminal or Command prompt and run the below command:
+Open a Visual Studio Code terminal or Command Prompt and run the below command:
 
 ```bash
 ng new client
@@ -400,17 +400,17 @@ cd client
 
 This command creates a Angular application named **client** with the essential folder structure and files required to begin development immediately.
 
-The integration process begins by installing the required Syncfusion Angular Grid packages before establishing the DRF API.
+The integration process begins by installing the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid packages before establishing the DRF API.
 
 ### Step 2: Install Syncfusion Grid packages
 
-Install the necessary Syncfusion packages using the below command in Visual Studio Code terminal or Command prompt:
+Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages using the below command in Visual Studio Code terminal or Command Prompt:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-data --save
 ```
-- **@syncfusion/ej2-angular-grids** – Required package for integrating the Syncfusion Grid component in Angular.
-- **@syncfusion/ej2-data** – Provides data utilities for binding and manipulating Grid data.
+- `@syncfusion/ej2-angular-grids` – Required package for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component in Angular.
+- `@syncfusion/ej2-data` – Provides data utilities for binding and manipulating Grid data.
 
 ### Step 3: Including required Syncfusion stylesheets
 
@@ -431,11 +431,11 @@ Once the dependencies are installed, the required CSS files are made available i
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
 ```
 
-For this project, the `Bootstrap 5.3` theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance) documentation to learn more about theming and customization options.
+For this project, the "Bootstrap 5.3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance) documentation to learn more about theming and customization options.
 
 ### Step 4: Configure DataManager with Django REST Framework (DRF)
 
-The Syncfusion `DataManager` acts as a communication layer between the Angular Grid and backend services. It sends all Grid operations—such as reading data, sorting, filtering, searching, paging, and performing CRUD actions—to the server in a standardized format.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> `DataManager` acts as a communication layer between the Angular Grid and backend services. It sends all Grid operations—such as reading data, sorting, filtering, searching, paging, and performing CRUD actions—to the server in a standardized format.
 
 The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) is a built‑in adaptor that formats requests for REST-style endpoints, like the Django REST Framework API. It serializes all Grid actions and posts them to the DRF API endpoint, then processes the JSON responses returned by the server.
 
@@ -612,7 +612,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
 
     **Explanation:**
 
-    - The **read()** method calculates the total number of matching records after applying search, filters, and sorting.
+    - The "read()" method calculates the total number of matching records after applying search, filters, and sorting.
     - The queryset is sliced using the skip and take values to obtain the current page.
     - When requiresCounts is present, the result includes:
         - a list of records for the requested page.
@@ -903,7 +903,7 @@ When multiple checkbox values are selected for the same column (e.g., (book-titl
 
 - Top‑level predicates across different fields are combined using AND logic.
 - Nested predicates within the same field are combined using OR logic.
-- This enables expressions such as:(author_name = "Mia Lee" OR author_name = "Emma Clark").
+- This enables expressions such as: (author_name = "Mia Lee" OR author_name = "Emma Clark").
 
 
 ## Performing CRUD operations
@@ -1083,11 +1083,11 @@ def _handle_remove(viewset, payload) -> Response:
 
 ![Delete_Payload](../images/grid-django-crud-delete.png)
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editsettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to "true" for a specific Grid Column which has unique values.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editsettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to `true` for a specific Grid Column which has unique values.
 
 ## Running the application
 
-Open a terminal or Command prompt. Start the Django server first and then run the Angular client.
+Open a terminal or Command Prompt. Start the Django server first and then run the Angular client.
 
 ### Run the Django server
 
@@ -1112,7 +1112,7 @@ ng serve
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-django-server) repository.
 
 
-The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion Angular Grid front end.
+The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid front end.
 
 ## See also
 - [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # PDF export in Angular Pivotview component
 
-The Angular Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpdfexport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method to generate and download the PDF file.
+The Angular Pivot Table allows exporting pivot table data as a PDF document. To enable PDF export, inject the `PDFExportService` into the Pivot Table and set the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpdfexport) property to **true**. Once enabled, use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method to generate and download the PDF file.
 
 In the following example, an external button is used to start the PDF export process. When the user clicks the button, the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method is called so that the Pivot Table data can be saved as a PDF file.
 
@@ -26,25 +26,15 @@ In the following example, an external button is used to start the PDF export pro
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs208" %}
 
-## Multiple pivot table exporting
+## Multiple Pivot Table exporting
 
-The PDF export option allows users to save data from multiple Pivot Tables into a single PDF file. Each Pivot Table appears on a separate page in the exported document, making it easy to review and share information from multiple tables at once.
+Multiple Pivot Tables can be exported to the same or different pages in a single PDF file for easy comparison. Each Pivot Table requires a unique HTML element ID, such as **PivotTable1** and **PivotTable2**. To export multiple Pivot Tables, provide their IDs in the `pivotTableIds` property of the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfexportproperties/), then pass the configured [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfexportproperties/) to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method with `isMultipleExport` set to **true** to enable multiple Pivot Table export mode.
 
-To export multiple Pivot Tables into a single PDF document, use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method. This method accepts the following parameters:
+> Note: PivotView PDF export uses Grid's PdfExportProperties model for configuration.
 
-- `pdfExportProperties` (optional): Configures export options for the table and chart. See the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfexportproperties/) API reference for details.
-- `isMultipleExport` (optional): Set to **true** for the first Pivot Table to create a new multi-page PDF file. For additional tables, set to **false** to add them to the same file.
-- `pdfDoc` (optional): The PDF document object returned from the previous export. Use this to add more Pivot Tables to the same PDF.
-- `isBlob` (optional): Set to **true** to save the PDF document as blob data.
-- `exportBothTableAndChart` (optional): When the [`displayOption.view`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOption/#view) property is set to **Both** this exports both table and chart data into a single PDF document.
+### Same page
 
-**Steps to export multiple Pivot Tables:**
-
-1. Call [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) on the first Pivot Table with `isMultipleExport` set to **true** to start the export process.
-2. Once the PDF data for the first table is ready, pass it as the `pdfDoc` parameter to the next Pivot Table's [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) call with `isMultipleExport` set to **false**.
-3. Repeat this process for each additional Pivot Table you want to include.
-
-The following code example shows how clicking the Export button exports both tables to a single PDF file, with each table on its own page:
+To export multiple Pivot Tables on the same page, set the `multipleExport.type` property to **AppendToPage** in [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfexportproperties/). Blank space between the Pivot Tables can be added by using the `multipleExport.blankSpace` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,6 +47,22 @@ The following code example shows how clicking the Export button exports both tab
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs209" %}
+
+### New page
+
+To export each Pivot Table on a separate page, set the `multipleExport.type` property to **NewPage** in [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfexportproperties/).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs333/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs333/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs333" %}
 
 ## Export table and chart into the same document
 
@@ -308,9 +314,13 @@ Users can control how many Pivot Table columns appear on each page of the export
 
 ### Changing the table's column width and row height while exporting
 
-You can adjust column width and row height in the PDF document when exporting data from the Pivot Table by handling the [`onPdfCellRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#onpdfcellrender) event. To set the width of specific columns during export, use the `args.column.width` property inside this event.
+The column width and row height in the PDF document can be adjusted when exporting data from the Pivot Table by handling the [`pdfHeaderQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfheaderquerycellinfo) and [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfquerycellinfo) events. These changes apply only to the exported PDF and do not affect the on-screen Pivot Table display.
 
-For example, the **"Unit Sold"** column under **"FY 2015"** can be set to a width of **60** pixels as shown in the example below.
+#### Adjusting column width
+
+To set the width of specific columns during export, use the [`pdfHeaderQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfheaderquerycellinfo) event. This event triggers for each header cell during PDF export. Check if the current header cell matches the target column by comparing the level name using `args.gridCell.valueSort.levelName`, which contains the exact row and column level name of the current cell. If it matches, use the column index (`args.gridCell.colIndex`) to locate the column in the `pdfGrid` columns collection, which holds the current PDF grid and allows adjustment of specific column widths during export. Then set the **width** property with the desired value in **points**.
+
+For example, the **"Units Sold"** column under **"FY 2015"** can be set to a width of **250 points**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -324,7 +334,11 @@ For example, the **"Unit Sold"** column under **"FY 2015"** can be set to a widt
 
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs320" %}
 
-Similarly, if you want to change the height of a particular row in the PDF document, you can use the `args.cell.height` property inside the same [onPdfCellRender](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#onpdfcellrender) event. For instance, the **"Mountain Bikes"** row under **"France"** can be set to a height of **30** pixels as shown below.
+#### Adjusting row height
+
+To change the height of a particular row in the PDF document, use the [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfquerycellinfo) event. Check if the current row matches the target row by comparing the row headers using `args.data.rowHeaders`, which holds the string value of the row header level names. If it matches, set the `args.cell.gridRow.height` property with the desired value in **points**.
+
+For example, the **"Mountain Bikes"** row under **"France"** can be set to a height of **100 points**:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -338,7 +352,115 @@ Similarly, if you want to change the height of a particular row in the PDF docum
 
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs321" %}
 
-> Note: To use this option, make sure that [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablevirtualization) is set to **true**. Additionally, both `VirtualScrollService` and `PDFExportService` must be injected into the Pivot Table.
+### Customize the pivot report during export
+
+The Pivot Table report can be modified before exporting by applying filters, adding formatting, or performing drill operations. These modifications apply only to the Pivot Table exported to the PDF file and do not affect the Pivot Table displayed on the screen. To modify the export behavior, use the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#beforeexport) event. This event is triggered right before the export operation begins.
+
+In the following example, the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#beforeexport) event is used to expand all Pivot Table headers by setting the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettingsmodel#expandall) property to **true**. The `generateGridData` method is then called to obtain the updated [`pivotValues`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pivotvalues). The updated [`pivotValues`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pivotvalues) are assigned to [`args.dataCollections`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeexporteventargs#datacollections) for the export. Finally, [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettingsmodel#expandall) is set to **false** again to restore the original state of the Pivot Table.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs334/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs334/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs334" %}
+
+### Exporting with row and column cells spanning
+
+Exporting data from the Pivot Table with cell spanning preserves the row and column cell layout in the exported PDF. The [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfquerycellinfo) event allows customization of cell span properties during the PDF export process to match the Pivot Table UI layout.
+
+In the [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfquerycellinfo) event, customize the following cell span properties:
+
+- `args.cell.rowSpan` - Defines the number of rows a cell should span in the exported PDF.
+- `args.cell.colSpan` - Defines the number of columns a cell should span in the exported PDF.
+
+In the following code example, the row and column spans are adjusted for empty cells in the Pivot Table and during PDF export.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs335/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs335/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs335" %}
+
+### Exporting with hyperlinks and images
+
+The Pivot Table allows adding hyperlinks and images to cells during PDF export. The [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfquerycellinfo) event handles row and value cells, while the [`pdfHeaderQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfheaderquerycellinfo) event handles header cells. Both events provide access to the [hyperlink](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfquerycellinfoeventargs#hyperlink) property to set URLs in cells and the [image](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfquerycellinfoeventargs#image) property to add images to cells.
+
+> PDF export supports base64 strings for exporting images.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs336/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs336/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs336" %}
+
+## Exporting with custom aggregates
+
+The Pivot Table supports exporting data with custom calculations beyond the default options such as **Sum**, **Count**, or **Average**. Custom aggregates allow for advanced analytical scenarios where standard calculations are not sufficient.
+
+To export with custom aggregates, follow these steps:
+
+1. Define custom aggregate names using the [localization](https://ej2.syncfusion.com/angular/documentation/pivotview/globalization-and-localization#localization) option. These names appear in the Pivot Table's aggregation menu.
+2. Add custom aggregation types to the aggregate menu during Pivot Table initialization using the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#databound) event.
+3. Use the [`aggregateCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#aggregatecellinfo) event to define the calculation logic for each custom type. This event triggers for every aggregate cell, allowing custom calculations to be applied.
+4. Once the calculations are defined, call the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method to export the Pivot Table with all custom aggregations applied.
+
+For more information about adding custom aggregation types, see the [custom aggregation documentation](https://ej2.syncfusion.com/angular/documentation/pivotview/how-to/add-custom-aggregation-type-in-menu).
+
+The following example shows how to add two custom aggregate types to the aggregate menu: **CustomAggregateType 1**, which calculates a weighted average, and **CustomAggregateType 2**, which calculates the percentage of the total.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs337/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs337/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs337" %}
+
+## Exporting with custom date format
+
+The Pivot Table component allows applying custom date formatting to date-type fields added to the row and column axes. This formatting maintains consistency between the rendered pivot table and the exported PDF file. Configure custom date formatting through the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettingsmodel#formatsettings) property by following these steps:
+
+1. Set the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#name) property to the target date field.
+2. Set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#type) property to **date** to identify the field as a date type.
+3. Set the [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#format) property to the desired date format pattern (for example, `"EEE, MMM d, ''yy"`).
+
+After configuration, call the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method to export the Pivot Table with the applied formatting.
+
+The following example demonstrates exporting a Pivot Table with a custom date format. The date field uses the pattern `"EEE, MMM d, ''yy"` to display dates in the format: weekday abbreviation, month abbreviation, day, and two-digit year (for example, Sun, May 8, '23).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs338/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs338/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs338" %}
 
 ## Changing the pivot table style while exporting
 
@@ -400,33 +522,61 @@ You can also use custom fonts when exporting if you need support for languages o
 
 > Non-English alphabets can also be exported correctly when you specify a suitable font.
 
-## Virtual Scroll Data
+### Apply custom styles based on specific conditions
 
-When working with large amounts of data in the Pivot Table, the virtual scroll option allows users to efficiently export all the table data as a complete PDF document, without any slowdown or performance issues. This method uses PivotEngine export to manage and export extensive datasets smoothly. To use this option, make sure to enable the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpdfexport) property and use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method in the Pivot Table.
+When exporting Pivot Table data to PDF, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfquerycellinfo) event. In this event, the cell information can be accessed through the [`args.data`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfquerycellinfoeventargs#data) property, and its style properties, such as [`backgroundColor`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfstyle#backgroundcolor), [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfstyle#fontfamily), and [`textPenColor`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfstyle#textpencolor), can be customized. These changes apply only to the exported PDF and do not affect the on-screen Pivot Table display
 
-> To use PivotEngine export, inject the `PDFExportService` module into the Pivot Table.
-> When virtual scrolling is enabled, PivotEngine export is used automatically.
+The following example demonstrates how to apply conditional formatting to the **Sold** field values in the exported PDF document. Values below **700** units are highlighted in **red**, while values of **700** units or more are highlighted in **green**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs216/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs339/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs216/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs339/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs339" %}
+
+## Enabling horizontal overflow
+
+The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the maximum page limits. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [allowHorizontalOverflow](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfexportproperties#allowhorizontaloverflow) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfexportproperties/) object to **true**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs340/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs340/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs216" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs340" %}
 
-### Repeat row headers
+## Export only the current page
 
-When exporting the Pivot Table as a PDF using the PivotEngine export option, the row headers are repeated on each page by default. This helps users easily identify rows when viewing larger tables split across multiple PDF pages.
+By default, the Pivot Table exports all data records. When working with large datasets, this can result in larger file sizes. To optimize file size and performance, only the data records currently visible in the viewport can be exported by setting the [`exportAllPages`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#exportallpages) property to **false**.
 
-If you want to turn off the repeated row headers in your PDF, set the [`allowRepeatHeader`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeExportEventArgs/#allowrepeatheader) property to **false** inside the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#beforeexport) event. Make sure you are using the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method with the PivotEngine export.
+> This option is applicable only when the virtualization or paging functionality is enabled.
 
-> To use PivotEngine export, inject the `PDFExportService` module in the Pivot Table.
-> By default, repeating row headers is enabled in the PivotEngine export.
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs218/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs218/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs218" %}
+
+## Repeat row headers
+
+By default, row headers are repeated on each page when exporting the Pivot Table as a PDF. This allows easy identification of rows in larger tables that extend across multiple pages. To turn off repeated row headers, set the [`allowRepeatHeader`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeExportEventArgs/#allowrepeatheader) property to **false** within the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#beforeexport) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -440,23 +590,37 @@ If you want to turn off the repeated row headers in your PDF, set the [`allowRep
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs217" %}
 
-### Export all pages
+## Repeat column headers on every page
 
-The Pivot Table allows users to export the entire set of virtual data—meaning all records used to create the complete table—as a PDF document. By default, when virtual scrolling is enabled, the pivot engine will export all data. If you want to export only the data currently shown in the visible area of the Pivot Table, set the [`exportAllPages`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#exportallpages) property to **false**. To make use of the pivot engine export, include the `PDFExportService` module in your Pivot Table.
-
-> By default, the pivot engine export is performed automatically when virtual scrolling is enabled.
+By default, column headers are repeated on each page when exporting the Pivot Table as a PDF. This ensures consistent column identification across multi-page documents. To prevent column headers from repeating on each page, use the [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettingsModel/#pdfquerycellinfo) event. In this event, access the `pdfGrid` object through `args.cell.row.pdfGrid`, which holds the current PDF grid and allows component over the repeat header behavior. Then set its `repeatHeader` property to **false** to disable the repetition.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs218/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs341/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs218/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs341/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs218" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs341" %}
+
+## Show spinner during export
+
+When exporting data, displaying a spinner provides visual feedback to users that the export process is in progress. To show a spinner, invoke the `showWaitingPopup` method in the button's click event before calling the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method. After the export is complete, use the [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#exportcomplete) event to trigger the `hideWaitingPopup` method, which hides the spinner and indicates that the export has finished.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs342/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs342/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs342" %}
 
 ## Events
 
