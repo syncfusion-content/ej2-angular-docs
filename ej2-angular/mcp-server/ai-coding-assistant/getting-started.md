@@ -12,9 +12,132 @@ domainurl: ##DomainURL##
 
 The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** is designed to streamline the development workflow for Angular applications that use Syncfusion<sup style="font-size:70%">&reg;</sup> components. It leverages contextual knowledge of the Syncfusion component library to generate code snippets, configuration examples, and guided explanations—reducing documentation lookups and increasing productivity.
 
+## Prerequisites
+
+Before you begin, ensure you have:
+
+* Required [Node.js](https://nodejs.org/en/) version >= 18
+* A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
+* Active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key)
+* Angular application (existing or new); see [Quick Start](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli)
+* Active Syncfusion<sup style="font-size:70%">&reg;</sup> license(any of the following):  
+  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)  
+  - [Free Community License](https://www.syncfusion.com/products/communitylicense)  
+  - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
+
 ## Installation
 
-Follow the [Installation Guide](../installation) to set up the MCP Server in your development environment.
+This section guides you through installing and configuring the Syncfusion MCP Server in your development environment.
+
+### Getting your API Key
+
+Get your Syncfusion API key from the [API Key page](https://www.syncfusion.com/account/api-key) and store it in a `.txt` or `.key` file:
+
+```json
+"env": {
+  "Syncfusion_API_Key_Path": "D:\\syncfusion-key.txt"
+}
+```
+
+> Users can also set the API key directly using `"Syncfusion_API_Key": "YOUR_API_KEY"` in the env configuration.
+
+### Setting up in MCP Clients
+
+Create a configuration file in your project folder to install the server for your workspace as shown below:
+
+**Important:** Replace `YOUR_API_KEY_FILE_PATH` with the path to your API key file.
+
+{% tabs %}
+{% highlight bash tabtitle="VS Code" %}
+
+// Create a `.vscode/mcp.json` file in your workspace with the MCP server configuration:
+
+{
+  "servers": {
+    "sf-angular-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@syncfusion/angular-assistant@latest"],
+      "env": {
+        "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
+        // or
+        // "Syncfusion_API_Key": "YOUR_API_KEY"
+      }
+    }
+  }
+}
+
+{% endhighlight %}
+{% highlight bash tabtitle="Cursor" %}
+
+// Create a `.cursor/mcp.json` file in your workspace with the MCP server configuration:
+
+{
+  "mcpServers": {
+    "sf-angular-mcp": {
+      "command": "npx",
+      "args": ["-y", "@syncfusion/angular-assistant@latest"],
+      "env": {
+        "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
+        // or
+        // "Syncfusion_API_Key": "YOUR_API_KEY"
+      }
+    }
+  }
+}
+
+{% endhighlight %}
+{% highlight bash tabtitle="Code Studio" %}
+
+// Create a `.codestudio/mcp.json` file in your workspace with the MCP server configuration:
+
+{
+  "servers": {
+    "sf-angular-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@syncfusion/angular-assistant@latest"],
+      "env": {
+        "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
+        // or
+        // "Syncfusion_API_Key": "YOUR_API_KEY"
+      }
+    }
+  }
+}
+
+// After creating the file, click Start in the inline action to install the server.
+
+{% endhighlight %}
+{% highlight bash tabtitle="JetBrains" %}
+
+// Open AI Assistant chat, type /, and select Add Command
+// Click ➕ Add on the MCP settings page
+// Choose STDIO and select JSON configuration
+
+{
+  "mcpServers": {
+    "sf-angular-mcp": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@syncfusion/angular-assistant@latest"
+      ],
+      "env": {
+        "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
+        // or
+        // "Syncfusion_API_Key": "YOUR_API_KEY"
+      }
+    }
+  }
+}
+
+// Click OK, then click Apply. The server starts and shows Connected status.
+
+{% endhighlight %}
+{% endtabs %}
+
+**Verify Installation:** Check your editor's MCP Server list for `sf-angular-mcp` with "Connected" status to confirm successful installation.
 
 ## Usage
 
@@ -42,6 +165,19 @@ Activate the AI Coding Assistant in your IDE by using the `#sf_angular_assistant
 5. **Start Fresh**: Begin a new chat for new topics to maintain clean context.
 
 > Always review AI-generated code before using it in production.
+
+## Troubleshooting
+
+If you encounter issues during installation or while using the MCP server, refer to the solutions below:
+
+| Issue | Solution |
+|-------|----------|
+| **Clear npm cache** | Run `npx clear-npx-cache` and restart your IDE to resolve package caching issues |
+| **Server failed to start** | Update to Node.js 18+, verify JSON syntax in config file, and restart your IDE |
+| **Invalid API key** | Verify your key is active at [Syncfusion Account Page](https://syncfusion.com/account/api-key) |
+| **Incorrect API key config** | For the file path: Verify file location and content. For inline key: Check key is properly updated |
+| **Wrong config file location** | VS Code: `.vscode/mcp.json` <br/> CodeStudio: `.codestudio/mcp.json` <br/> Cursor: `.cursor/mcp.json` in the workspace root |
+| **Check IDE logs** | VS Code/CodeStudio: Output panel → "MCP" • Cursor: Developer Console for MCP errors |
 
 ## What's Next
 
