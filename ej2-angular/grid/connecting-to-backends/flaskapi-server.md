@@ -457,7 +457,7 @@ For this project, the "Bootstrap 5.3" theme is applied. Other themes can be sele
 
 ### Step 4: Create the Grid component
 
-Create a new Angular component in "client/src/app/app.component.ts" and "client/src/app/app.component.html" that renders the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This component will serve as the base for integrating custom data binding and data operations.
+Create a new Angular component in (**client/src/app/app.component.ts**) and (**client/src/app/app.component.html**) that renders the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This component will serve as the base for integrating custom data binding and data operations.
 
 **app.component.ts:**
 ```ts
@@ -495,9 +495,9 @@ export class AppComponent implements AfterViewInit {
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid custom data binding feature seamlessly integrates with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application-specific workflows and enabling efficient handling of large datasets. The custom data binding feature interacts with backend APIs through two key events.
 
-- **[dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange)**: Triggered when the Grid performs actions such as paging, sorting, or filtering. It provides the current state details (skip, take, sorted, where, search), which are sent to the API so the request can be processed and data returned in the required `{ result:[], count:100 }` format.
+- [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange): Triggered when the Grid performs actions such as paging, sorting, or filtering. It provides the current state details (skip, take, sorted, where, search), which are sent to the API so the request can be processed and data returned in the required `{ result:[], count:100 }` format.
 
-- **[dataSourceChanged](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasourcechanged)**: Triggered during CRUD operations (Create, Update, Delete). It provides the affected record along with the action type, which is sent to the API to execute the corresponding insert, update, or delete operation.
+- [dataSourceChanged](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasourcechanged): Triggered during CRUD operations (Create, Update, Delete). It provides the affected record along with the action type, which is sent to the API to execute the corresponding insert, update, or delete operation.
 
 Since the `dataStateChange` event does not fire on the first render, use the `ngAfterViewInit` lifecycle hook to load the initial dataset when the component initializes. In the Grid component, define a "fetchData" function to send the grid state to the Flask API and bind the returned data.
 
@@ -1035,6 +1035,6 @@ The application now provides a complete solution for integrating the Syncfusion<
 
 ## See also
 
-  - [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
-  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)
+  - [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+  - [Validation rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

@@ -1202,6 +1202,6 @@ The application now provides a fully integrated "product" management workflow us
 
 ## See also
 
-- [Types of Editing](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping)
-- [Excel Export](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting)
-- [Integration with Filter UIs](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu#custom-component-in-filter-menu)
+- [Types of editing](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping)
+- [Excel export](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting)
+- [Integration with filter UIs](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu#custom-component-in-filter-menu)

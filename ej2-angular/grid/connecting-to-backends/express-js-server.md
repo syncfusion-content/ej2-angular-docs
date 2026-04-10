@@ -857,6 +857,6 @@ The repository contains the complete Express.js backend implementation with all 
 
 ## See also
 
-  - [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
-  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)
+  - [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+  - [Validation rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)
