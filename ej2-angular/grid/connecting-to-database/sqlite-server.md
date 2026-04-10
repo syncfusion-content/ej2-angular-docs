@@ -410,7 +410,7 @@ A connection string contains the information needed to connect the application t
 
 **Instructions:**
 
-1. Open the `appsettings.json` file in the project root.
+1. Open the **appsettings.json** file in the project root.
 2. Add or update the `ConnectionStrings` section with the SQLite connection details:
 
 ```json
@@ -603,7 +603,7 @@ The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the A
 
 **Instructions:**
 
-1. Create a new **custom-adaptor.ts** file in the (**app**) folder.
+1. Create a new **custom-adaptor.ts** file in the **app** folder.
 2. Add the following code inside this file:
 
 ```ts
@@ -930,7 +930,7 @@ namespace Grid_SQLite.Server.Controllers
 
 - When text is entered in the search box and <kbd>Enter</kbd> key is pressed, the Grid sends a search request to the server.
 - The "UrlDataSource" method receives the search criteria in `search` parameter.
-- The `operation.PerformSearching()` method filters the data based on the search term.
+- The `PerformSearching()` method filters the data based on the search term.
 - Results are returned and displayed in the Grid.
 
 When searching is performed in the Grid, a request is sent to the server with the following payload.
@@ -1417,8 +1417,8 @@ In **AssetController.cs**, implement the batch method:
 **What happens behind the scenes:**
 
 - The Grid collects all added, edited, and deleted records in `Batch` edit mode.
-- The combined batch request is passed to the CustomAdaptor’s `batchRequest` method.
-- Each modified record, added and deleted records are processed using `BatchUpdate` method in **AssetController.cs** file.
+- The combined batch request is passed to the CustomAdaptor’s "batchRequest" method.
+- Each modified record, added and deleted records are processed using "BatchUpdate" method in **AssetController.cs** file.
 - All repository operations persist changes to the SQL database.
 - The Grid refreshes to display the updated, added, and removed records in a single response.
 
@@ -1720,7 +1720,7 @@ The asset management application is now running and ready to use.
 - **Edit**: Click the `Edit` button to modify existing assets.
 - **Delete**: Click the `Delete` button to remove assets.
 
-## Complete Sample Repository
+## Complete sample repository
 
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-SQLite).
 
@@ -1728,5 +1728,5 @@ A complete, working sample implementation is available in the [GitHub repository
 ## See also
 
   - [Dynamic data loading](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/infinite-scrolling)
-  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
-  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)
+  - [Validation rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

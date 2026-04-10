@@ -485,7 +485,7 @@ Previously, the CRUD mutation types were defined in the **schema.graphql** file.
     });
     ```
 
-3. Update (**package.json**) Scripts:
+3. Update **package.json** Scripts:
 
     ```JSON
     {
@@ -860,7 +860,7 @@ The resolver processes the Grid’s `skip` and `take` parameters and returns the
 
 The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbar) provides buttons for searching the data.
 
-When a search action is performed in the Grid, the `GraphQLAdaptor` sends the search key and the target fields through the "search" parameter of the "DataManagerInput". These values are converted as the [search query](https://ej2.syncfusion.com/angular/documentation/data/querying#searching) and processed through the `DataManager`.
+When a search action is performed in the Grid, the `GraphQLAdaptor` sends the search key and the target fields through the `search` parameter of the "DataManagerInput". These values are converted as the [search query](https://ej2.syncfusion.com/angular/documentation/data/querying#searching) and processed through the `DataManager`.
 
 **Instructions:**
 
@@ -939,7 +939,7 @@ When a search action is performed in the Grid, the `GraphQLAdaptor` sends the se
  
 **Searching details included in request payloads:**
 
-The image below displays the "search" parameter values.
+The image below displays the `search` parameter values.
 
 ![GraphQLAdaptor-Apollo-Searching](../images/GraphQL-apollo-Search.png)
 
@@ -948,7 +948,7 @@ The image below displays the "search" parameter values.
 
 Sorting allows the user to organize records by clicking on column headers to arrange data in ascending or descending order.
 
-The `GraphQLAdaptor` automatically passes the sorting details to the server through the "sorted" parameter of the "DataManagerInput" and the details are converted to the [sorting query](https://ej2.syncfusion.com/angular/documentation/data/querying#sorting) and executed through the `DataManager` to get the sorted data.
+The `GraphQLAdaptor` automatically passes the sorting details to the server through the `sorted` parameter of the "DataManagerInput" and the details are converted to the [sorting query](https://ej2.syncfusion.com/angular/documentation/data/querying#sorting) and executed through the `DataManager` to get the sorted data.
 
 **Instructions:**
 
@@ -1031,7 +1031,7 @@ The `GraphQLAdaptor` automatically passes the sorting details to the server thro
 
 **Sorting details included in request payloads:**
 
-The image below shows the values passed to the "sorted" parameter.
+The image below shows the values passed to the `sorted` parameter.
 
 ![GraphQLAdaptor-apollo-Sorting](../images/GraphQL-apollo-Sort.png)
 
@@ -1039,7 +1039,7 @@ The image below shows the values passed to the "sorted" parameter.
 
 Filtering allows the user to narrow down records by specifying conditions on column values. Users can filter by selecting checkbox filters or using comparison operators like equals, greater than, less than, etc. 
 
-The `GraphQLAdaptor` automatically passes the filter conditions to the server through the "where" parameter of the "DataManagerInput". In the server, the filter parameters are converted to the Syncfusion<sup style="font-size:70%">&reg;</sup> [filter query](https://ej2.syncfusion.com/angular/documentation/data/querying#filtering) and executed through the `DataManager` to get the filtered data.
+The `GraphQLAdaptor` automatically passes the filter conditions to the server through the `where` parameter of the "DataManagerInput". In the server, the filter parameters are converted to the Syncfusion<sup style="font-size:70%">&reg;</sup> [filter query](https://ej2.syncfusion.com/angular/documentation/data/querying#filtering) and executed through the `DataManager` to get the filtered data.
 
 **Instructions:**
 
@@ -1226,7 +1226,7 @@ The `GraphQLAdaptor` automatically passes the filter conditions to the server th
 
 **Filtering details included in request payloads:**
 
-The image illustrates the serialized "where" condition passed from the DataManager.
+The image illustrates the serialized `where` condition passed from the DataManager.
 
 ![GraphQLAdaptor-apollo-Filtering](../images/GraphQL-apollo-Filter.png)
 
@@ -1241,7 +1241,7 @@ When a user selects multiple checkbox values for the same column (e.g., (categor
 The backend GraphQL resolver receives this nested structure through the `where` parameter and processes it using the recursive "buildNestedPredicate" function, allowing it to handle multi‑level AND/OR combinations for fields like category, employeeEmail, amount, and other expense attributes.
 
 
-### Perform CRUD operations
+### Step 9: Perform CRUD operations
 
 CRUD operations (Create, Read, Update, Delete) allow users to manage data through the Grid. The Grid provides built-in dialogs and buttons to perform these operations, while the backend resolvers handle the actual data modifications.
 
@@ -1497,7 +1497,7 @@ syncfusion-angular-grid-with-apollo-server-/
 └── README.md
 ```
 
-## Complete Sample Repository
+## Complete sample repository
 
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-apollo-server) repository.
 

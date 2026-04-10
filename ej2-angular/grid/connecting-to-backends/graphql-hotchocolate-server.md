@@ -316,7 +316,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Grid expects the server respons
 
 **Create OrdersReturnType.cs:**
 
-Create a new file **GraphQL/OrdersReturnType.cs** with the following content:
+Create a new file (**GraphQL/OrdersReturnType.cs**) with the following content:
 
 ```cs
 using System.Collections.Generic;
@@ -345,15 +345,15 @@ This format ensures the Grid can properly handle paging, display total record co
 
 ## Perform data operations in server
 
-The HotChocolate GraphQL backend handles all data operations such as filtering, searching, sorting, and paging. These operations are applied to the dataset based on the grid state received from the client through the `DataManagerInput` parameter.
+The HotChocolate GraphQL backend handles all data operations such as filtering, searching, sorting, and paging. These operations are applied to the dataset based on the grid state received from the client through the **DataManagerInput** parameter.
 
-### Step 7: Create GraphQL Query resolver
+**Create GraphQL Query resolver**
 
-A query resolver in HotChocolate is a method that handles data retrieval requests. The query resolver receives the `DataManagerInput` parameter, applies the requested operations, and returns data in the format expected by Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
+A query resolver in HotChocolate is a method that handles data retrieval requests. The query resolver receives the **DataManagerInput** parameter, applies the requested operations, and returns data in the format expected by Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
 **Create Query.cs:**
 
-Create a new file **GraphQL/Query.cs** with the following basic structure:
+Create a new file (**GraphQL/Query.cs**) with the following basic structure:
 
 ```cs
 using System.Linq;
@@ -694,13 +694,13 @@ if (datamanager?.Take.HasValue == true)
 
 CRUD operations are handled by GraphQL mutations. Mutations are special GraphQL operations that modify data on the server, such as creating, updating, or deleting records.
 
-### Step 8: Create GraphQL Mutation resolver
+**Create GraphQL Mutation resolver**
 
 A mutation resolver in HotChocolate is a method that handles data modification requests. Each CRUD operation (Create, Update, Delete) is implemented as a separate mutation method.
 
 **Create Mutation.cs:**
 
-Create a new file **GraphQL/Mutation.cs** with the following content:
+Create a new file (**GraphQL/Mutation.cs**) with the following content:
 
 ```cs
 using System.Linq;
@@ -819,7 +819,7 @@ Delete operation removes an order record from the dataset. When the delete butto
 
 The "DeleteOrder" mutation method:
 
-1. Receives the primary key (`orderID`) of the record to delete.
+1. Receives the primary key ("orderID") of the record to delete.
 2. Finds the existing record using the primary key.
 3. Removes the record from the list.
 4. Returns `true` if successful, `false` if the record was not found.
@@ -999,7 +999,7 @@ The `$datamanager` variable contains all operation details (paging, sorting, fil
 
 ### Step 5: Enable paging feature
 
-Paging divides large datasets into smaller, manageable pages based on offset and page size. When paging is performed in the Grid, the `skip` and `take` values are sent to the server through the `DataManagerInput` parameter.
+Paging divides large datasets into smaller, manageable pages based on offset and page size. When paging is performed in the Grid, the `skip` and `take` values are sent to the server through the **DataManagerInput** parameter.
 
 **Enable paging in the Grid:**
 
@@ -1247,7 +1247,7 @@ CRUD operations (Create, Read, Update, Delete) are supported in the Grid for man
 
 Open the **app.component.ts** file and inject all required services (`ToolbarService` and `EditService`) at the component level. These services will be used for all CRUD operations.
 
-Defines GraphQL mutations for CRUD operations using the "getMutation" function:
+Defines GraphQL mutations for CRUD operations using the `getMutation` function:
 
 - **Insert mutation**: Creates new records.
 - **Update mutation**: Modifies existing records.
@@ -1383,7 +1383,7 @@ Configure the [editSettings](https://ej2.syncfusion.com/angular/documentation/ap
 </ejs-grid>
 ```
 
-The update mutation is configured in the `getMutation` function shown in the [Configure services and edit settings](#step-10-enable-crud-operations-with-getmutation) section above.
+The update mutation is configured in the `getMutation` function shown in the [configure services and edit settings](#step-10-enable-crud-operations-with-getmutation) section above.
 
 
 **Update details included in request payload:**
@@ -1562,8 +1562,8 @@ dotnet run --project AngularApp1.Server
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](../getting-started)
-* [HotChocolate Documentation](https://chillicream.com/docs/hotchocolate/v13)
-* [GraphQL Official Documentation](https://graphql.org/learn/)
-* [Syncfusion GraphQLAdaptor Documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor)
-* [ASP.NET Core Documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-10.0)
+* [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](../getting-started)
+* [HotChocolate documentation](https://chillicream.com/docs/hotchocolate/v13)
+* [GraphQL official documentation](https://graphql.org/learn/)
+* [Syncfusion GraphQLAdaptor documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor)
+* [ASP.NET Core documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-10.0)

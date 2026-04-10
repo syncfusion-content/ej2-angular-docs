@@ -288,7 +288,7 @@ The router centralizes data loading, read pipelines for grid operations, and mut
 - The handler executes a clear sequence for reads that applies searching, filtering, sorting, projection, and paging in an intuitive order.  
 - The CRUD branch delegates to focused helpers that update the in‑memory list and then persist the change to disk.  
 - The design keeps the controller thin while allowing the data operation modules to remain reusable and independently testable.  
-- The explicit `GET` guard protects the endpoint from unsupported transports so that all interactions pass through the single "POST" contract.  
+- The explicit `GET` guard protects the endpoint from unsupported transports so that all interactions pass through the single `POST` contract.  
 
 The handlers in the "data_actions" and "crud_actions" modules are explained in detail in the integration section below.
 
@@ -1049,6 +1049,6 @@ The application demonstrates a complete product management workflow with a Syncf
 
 ## See also
 
-  - [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
-  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)
+  - [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+  - [Validation rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

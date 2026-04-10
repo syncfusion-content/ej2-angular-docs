@@ -764,7 +764,7 @@ The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the A
 
 **Instructions:**
 
-1. Create a new **custom-adaptor.ts** file in the (**app**) folder.
+1. Create a new **custom-adaptor.ts** file in the **app** folder.
 2. Add the following code inside this file:
 
 ```ts
@@ -1003,8 +1003,8 @@ namespace Grid_Dapper.Server.Controllers
 **Paging details:**
 
 - The Grid sends page size `take` and skip count `skip` parameters to the server.
-- The `operation.PerformSkip()` method skips the specified number of records.
-- The `operation.PerformTake()` method retrieves only the required number of records for the current page.
+- The `PerformSkip()` method skips the specified number of records.
+- The `PerformTake()` method retrieves only the required number of records for the current page.
 - The total count is calculated before paging to display the total number of records.
 - Results are returned and displayed in the Grid with pagination controls.
 
@@ -1106,7 +1106,7 @@ namespace Grid_Dapper.Server.Controllers
 
 - When text is entered in the search box and <kbd>Enter</kbd> key is pressed, the Grid sends a search request to the server.
 - The "List" method receives the search criteria in `search` parameter.
-- The `operation.PerformSearching()` method filters the data based on the search term.
+- The `PerformSearching()` method filters the data based on the search term.
 - Results are returned and displayed in the Grid.
 
 When searching is performed in the Grid, a request is sent to the server with the following payload.
@@ -1314,7 +1314,7 @@ When sorting is performed in the Grid, a request is sent to the server with the 
 
 ![Sorting Operation Payload](../images/dapper_sort.png)
 
-## Step 10: Perform CRUD operations
+### Step 10: Perform CRUD operations
 
 CRUD operations allow adding new records, modifying existing records, and removing items that are no longer relevant. The `DataManager` posts a specific action for each operation so that the server can route to the appropriate handler.
 
@@ -1516,7 +1516,7 @@ When a record is deleted in the Grid, a request is sent to the server with the f
 
 Batch operations combine multiple insert, update, and delete actions into a single request, minimizing network overhead by applying all changes atomically to the SQL database.
 
-Implement the `batchRequest` method in (**src/custom-adaptor.ts**) to handle multiple record updates in a single request within the `CustomAdaptor` class:
+Implement the "batchRequest" method in (**src/custom-adaptor.ts**) to handle multiple record updates in a single request within the `CustomAdaptor` class:
 
 ```ts
   public override batchRequest(dm: DataManager, changes: BatchChanges) {
@@ -1571,8 +1571,8 @@ In **RoomsController.cs**, implement the batch method:
 **What happens behind the scenes:**
 
 - The Grid collects all added, edited, and deleted records in `Batch` edit mode.
-- The combined batch request is passed to the CustomAdaptor’s `batchRequest` method.
-- Each modified record, added and deleted records are processed using the `Batch` method in **RoomsController.cs** file.
+- The combined batch request is passed to the CustomAdaptor’s "batchRequest" method.
+- Each modified record, added and deleted records are processed using the "Batch" method in **RoomsController.cs** file.
 - All repository operations persist changes to the SQL database.
 - The Grid refreshes to display the updated, added, and removed records in a single response.
 
@@ -1846,9 +1846,9 @@ Follow the steps below to set up and run both the backend server and the Angular
 
 Execute the following command:
 
-    ```bash
-    ng serve
-    ```
+```bash
+ng serve
+```
 
 - Navigate to **http://localhost:4200** (Angular default port), where the application automatically connects to the backend API at **https://localhost:7000/api/rooms**.
 

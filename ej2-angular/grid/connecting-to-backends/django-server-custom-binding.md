@@ -105,7 +105,7 @@ This step updates the file to establish the SQL Server connection and enable ess
     }
     ```
     **Line breakdown:**
-    - **ENGINE**: Database backend; for SQL Server via `mssql-django`, set to `"mssql"`.
+    - **ENGINE**: Database backend; for SQL Server via `mssql-django`, set to "mssql".
     - **NAME**: Database name to connect to (e.g., **LibraryDB**).
     - **USER**: SQL Server login used by Django.
     - **PASSWORD**: Password for the above user.
@@ -281,7 +281,7 @@ A Django model defines the way data is stored and accessed in the database. Each
         - The database structure remains consistent across all environments (development, staging, production).
         - Whenever a model is modified in the future:
             ```bash
-                makemigrations → migrate
+            makemigrations → migrate
             ```
     This sequence updates the database schema automatically.
 
@@ -1171,6 +1171,6 @@ The application now offers a reliable, scalable solution for managing book lendi
 
 ## See also
 
-- [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-- [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
-- [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)
+- [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+- [Validation rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+- [Filter menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

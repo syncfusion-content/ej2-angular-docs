@@ -107,7 +107,7 @@ This step updates the file to establish the SQL Server connection and enable ess
     }
     ```
     **Line breakdown:**
-    - **ENGINE**: Database backend; for SQL Server via `mssql-django`, set to `mssql`.
+    - **ENGINE**: Database backend; for SQL Server via `mssql-django`, set to "mssql".
     - **NAME**: Database name to connect to (e.g., **LibraryDB**).
     - **USER**: SQL Server login used by Django.
     - **PASSWORD**: Password for the above user.
@@ -608,7 +608,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
             return 'rows', paged_queryset, total_count, requires_counts
     ```
 
-    > All `DataManager` operations searching, filtering, sorting, and paging are invoked through the `read()` method of the "DataManagerEngine" class in (**library/services/datamanager/engine.py**) file.
+    > All `DataManager` operations searching, filtering, sorting, and paging are invoked through the "read()" method of the "DataManagerEngine" class in (**library/services/datamanager/engine.py**) file.
 
     **Explanation:**
 
@@ -1115,6 +1115,6 @@ For a complete working implementation of this example, refer to the following [G
 The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid front end.
 
 ## See also
-- [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+- [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
 - [Grid cell customization with templates](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template)
 - [Optimized performance with virtual scrolling](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling)
