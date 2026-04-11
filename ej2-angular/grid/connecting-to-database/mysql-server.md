@@ -700,8 +700,8 @@ On the server side create a file **GridController.cs** and add the "UrlDatasourc
 **Paging details:**
 
 - The Grid sends page size `take` and skip count `skip` parameters to the server.
-- The `operation.PerformSkip()` method skips the specified number of records.
-- The `operation.PerformTake()` method retrieves only the required number of records for the current page.
+- The `PerformSkip()` method skips the specified number of records.
+- The `PerformTake()` method retrieves only the required number of records for the current page.
 - The total count is calculated before paging to display the total number of records.
 - Results are returned and displayed in the Grid with pagination controls.
 
@@ -816,7 +816,7 @@ Update the "UrlDatasource" method in the **GridController.cs** file to handle se
 
 - When text is entered in the search box and <kbd>Enter</kbd> key is pressed, the Grid sends a search request to the server.
 - The "UrlDatasource" method receives the search criteria in `search` parameter.
-- The `operation.PerformSearching()` method filters the data based on the search term.
+- The `PerformSearching()` method filters the data based on the search term.
 - Results are returned and displayed in the Grid.
 
 When searching is performed in the Grid, a request is sent to the server with the following payload.
@@ -1222,7 +1222,7 @@ In **GridController.cs**, implement the update method:
 4. All properties are updated with the new values.
 5. The Grid refreshes to display the updated record.
 
-When a record updated in the Grid, a request is sent to the server with the following payload.
+When a record is updated in the Grid, a request is sent to the server with the following payload.
 
 ![Update Operation Payload](../images/mysql-grid-edit.png)
 
@@ -1267,7 +1267,7 @@ In **GridController.cs**, implement the delete method:
 1. A record is selected and the `Delete` button is clicked.
 2. The CustomAdaptor's "remove" method is called.
 3. The "Remove" method in **GridController.cs** file is called.
-4. The record is located in the database by its ID.
+4. The record is located in the database by its "ID".
 5. The record is removed from the "Transactions" collection.
 6. The Grid refreshes to remove the deleted record from the UI.
 
@@ -1279,7 +1279,7 @@ When a record is deleted in the Grid, a request is sent to the server with the f
 
 Batch operations combine multiple insert, update, and delete actions into a single request, minimizing network overhead and ensuring transactional consistency by applying all changes atomically to the MySQL database.
 
-Implement the `batchRequest` method in (**src/app/custom-adaptor.ts**) to handle multiple record updates in a single request within the `CustomAdaptor` class:
+Implement the "batchRequest" method in (**src/app/custom-adaptor.ts**) to handle multiple record updates in a single request within the `CustomAdaptor` class:
 
 ```ts
   public override batchRequest(dm: DataManager, changes: BatchChanges) {
@@ -1301,8 +1301,8 @@ Implement the `batchRequest` method in (**src/app/custom-adaptor.ts**) to handle
 **What happens behind the scenes:**
 
 - The Grid collects all added, edited, and deleted records in `Batch` edit mode.
-- The combined batch request is passed to the CustomAdaptor's `batchRequest` method.
-- Each modified record, added and deleted records are processed using `BatchUpdate` method in **GridController.cs** file.
+- The combined batch request is passed to the CustomAdaptor's "batchRequest" method.
+- Each modified record, added and deleted records are processed using "BatchUpdate" method in **GridController.cs** file.
 - All repository operations persist changes to the MySQL database.
 - The Grid refreshes to display the updated, added, and removed records in a single response.
 
@@ -1413,7 +1413,7 @@ export class AppComponent implements OnInit {
 ```
 
 > - Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/grid/columns#isprimarykey) to `true` for a column that contains unique values.
-> - The [editType](https://ej2.syncfusion.com/angular/documentation/grid/columns#edittype) property can be used to specify the desired editor for each column.(https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+> - The [editType](https://ej2.syncfusion.com/angular/documentation/grid/columns#edittype) property can be used to specify the desired editor for each column.
 > - The [type](https://ej2.syncfusion.com/angular/documentation/grid/columns#type) property of the Grid columns specifies the data type of a grid column.
 
 Here is the complete Controller **GridController.cs** file:
@@ -1595,8 +1595,8 @@ The application consists of two parts: the ASP.NET Core backend server and the A
 Open a terminal or Package Manager Console, navigate to the **Grid_MySQL.Server** project directory, and run the following command:
 
 ```powershell
-    dotnet build
-    dotnet run
+dotnet build
+dotnet run
 ```
 
 The server will start and listen on **http://localhost:5283** (or the port shown in the terminal). Keep this terminal open.
@@ -1619,9 +1619,9 @@ The Angular development server will start and typically run on **http://localhos
 - **Filter**: Click on column headers to apply filters.
 - **Sort**: Click on column headers to sort data in ascending or descending order.
 - **Pagination**: Navigate through records using page numbers.
-- **Add**: Click the "Add" button to create a new transaction.
-- **Edit**: Click the "Edit" button to modify existing transactions.
-- **Delete**: Click the "Delete" button to remove transactions.
+- **Add**: Click the `Add` button to create a new transaction.
+- **Edit**: Click the `Edit` button to modify existing transactions.
+- **Delete**: Click the `Delete` button to remove transactions.
 
 ## Complete sample repository
 
@@ -1631,6 +1631,6 @@ The application now provides a complete solution for managing transaction data w
 
 ## See also
 
-  - [Types of Edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
-  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)
+  - [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+  - [Validation rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

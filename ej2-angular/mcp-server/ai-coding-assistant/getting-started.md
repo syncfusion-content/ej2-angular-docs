@@ -31,7 +31,7 @@ This section guides you through installing and configuring the Syncfusion MCP Se
 
 ### Getting your API Key
 
-Get your Syncfusion API key from the [API Key page](https://www.syncfusion.com/account/api-key) and store it in a `.txt` or `.key` file:
+Before proceeding with the MCP installation, generate your Syncfusion API key from the [API Key page](https://www.syncfusion.com/account/api-key) and store it in a `.txt` or `.key` file:
 
 ```json
 "env": {

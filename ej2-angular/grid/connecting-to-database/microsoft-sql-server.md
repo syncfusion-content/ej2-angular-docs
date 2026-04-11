@@ -35,10 +35,10 @@ Ensure the following software and packages are installed before proceeding:
 | Angular CLI | 16 or later | Create and run Angular apps |
 | .NET SDK | 8.0 or later | Build and run ASP.NET Core Web API |
 | SQL Server | 2019 or later | Database server |
-| @syncfusion/ej2-angular-grids | Latest | Angular Grid component |
-| @syncfusion/ej2-data | Latest | DataManager and adaptors |
-| Microsoft.Data.SqlClient (NuGet) | Latest | SQL Server connectivity |
-| Syncfusion.EJ2.AspNet.Core | Latest | Server helpers (DataManagerRequest, DataOperations) |
+| Microsoft.Data.SqlClient (NuGet) | 7.0.0 or later | SQL Server connectivity |
+| Syncfusion.EJ2.AspNet.Core | 33.1.45 or later | Server helpers (DataManagerRequest, DataOperations) |
+| @syncfusion/ej2-angular-grids | 33.1.45 or later | Angular Grid component |
+| @syncfusion/ej2-data | 33.1.45 or later | DataManager and adaptors |
 
 ## Key topics
 
@@ -48,8 +48,8 @@ Ensure the following software and packages are installed before proceeding:
 | 2 | Integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
 | 3 | Implementing server‑side data operations including paging, searching, filtering, and sorting | [View](#step-6-implement-paging-feature) |
 | 4 | Performing full CRUD and batch operations from the Angular Grid against the SQL Server database | [View](#step-10-perform-crud-operations) |
-| 6 | Run the applications | [View](#running-the-application) |
-| 7 | Explore a complete working sample | [View](#complete-sample-repository) |
+| 5 | Run the applications | [View](#running-the-application) |
+| 6 | Explore a complete working sample | [View](#complete-sample-repository) |
 
 
 ## Setting up the SQL server environment for SqlClient
@@ -878,7 +878,7 @@ Paging divides large datasets into smaller pages to improve performance and usab
     </ejs-grid>
     ```
 
-2. On the API controller create a file **TicketsController.cs** and add the "List" method provided below and handle paging using `_dataOps.PerformSkip` and `_dataOps.PerformTake`.
+2. On the API controller create a file **TicketsController.cs** and add the "List" method provided below and handle paging using `PerformSkip` and `PerformTake` methods.
 
     ```csharp
     using Microsoft.AspNetCore.Mvc;
@@ -1016,8 +1016,8 @@ Searching allows finding records by entering keywords in the search box.
 
 **Searching details:**
 
-- Entering a term and pressing <kbd>Enter</kbd> key sends search descriptors in the `search` property.
-- `_dataOps.PerformSearching()` applies the search term across all searchable fields.
+- Entering a term and pressing the <kbd>Enter</kbd> key sends search descriptors in the `search` property.
+- `PerformSearching()` method applies the search term across all searchable fields.
 - Filtered data is counted and then paged; the shaped response is returned to the client.
 
 When searching is performed in the Grid, a request is sent to the server with the following payload.
@@ -1119,7 +1119,7 @@ Filtering allows restricting data based on column values using the Excel filter 
 **Filtering details:**
 
 - The Excel filter UI builds filter predicates on the client and sends them in the `where` property.
-- `_dataOps.PerformFiltering()` applies predicates against the in-memory data set.
+- `PerformFiltering()` method applies predicates against the in-memory data set.
 - Filtering executes before count and paging to ensure accurate total counts.
 
 When filtering is performed in the Grid, a request is sent to the server with the following payload.
@@ -1132,7 +1132,7 @@ Sorting enables arranging records in ascending or descending order based on colu
 
 **Instructions:**
 
-1. Enable sorting with **[allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting)** set to `true` and inject the `SortService` module.
+1. Enable sorting with [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) set to `true` and inject the `SortService` module.
 
     Update (**app.component.ts**):
 
@@ -1221,7 +1221,7 @@ Sorting enables arranging records in ascending or descending order based on colu
 **Sorting details:**
 
 - Clicking a column header creates sort descriptors that arrive in the `sorted` property.
-- `_dataOps.PerformSorting()` orders the sequence based on field name and sort direction.
+- `PerformSorting()` method orders the sequence based on field name and sort direction.
 - Sorting executes before count and paging to return correct page slices.
 
 When sorting is performed in the Grid, a request is sent to the server with the following payload.
@@ -1366,7 +1366,7 @@ public async Task<IActionResult> Remove([FromBody] CRUDModel<Tickets> args)
 
 1. A record is selected and the `Delete` button is clicked.
 2. The Grid posts the key to `/remove` using `CRUDModel`.
-3. The controller parses the key and calls `DeleteAsync`.
+3. The controller parses the key and calls "DeleteAsync".
 4. ADO.NET executes the `DELETE` statement.
 5. The API returns acknowledgment; the Grid removes the row.
 
@@ -1749,6 +1749,6 @@ The application now provides a complete end‑to‑end ticket management workflo
 
 ## See also
 
-  - [Types of Editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
-  - [Validation Rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
-  - [Filter Menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)
+  - [Types of editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
+  - [Validation rules](https://ej2.syncfusion.com/angular/documentation/grid/editing/validation)
+  - [Filter menu](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu)

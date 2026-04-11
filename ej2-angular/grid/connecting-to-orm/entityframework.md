@@ -789,8 +789,8 @@ namespace Grid_EntityFramework.Server.Controllers
 **Paging details:**
 
 - The Grid sends page size `take` and skip count `skip` parameters to the server.
-- The `query.Skip()` method skips the specified number of records.
-- The `query.Take()` method retrieves only the required number of records for the current page.
+- The `Skip()` method skips the specified number of records.
+- The `Take()` method retrieves only the required number of records for the current page.
 - The total count is calculated before paging to display the total number of records.
 - Results are returned and displayed in the Grid with pagination controls.
 
@@ -1313,7 +1313,7 @@ When a record is deleted in the Grid, a request is sent to the server with the f
 
 Batch operations combine multiple insert, update, and delete actions into a single request, minimizing network overhead by applying all changes atomically to the SQL database.
 
-Implement the `batchRequest` method in (**src/app/CustomAdaptor.ts**) to handle multiple record updates in a single request within the `CustomAdaptor` class:
+Implement the "batchRequest" method in (**src/app/CustomAdaptor.ts**) to handle multiple record updates in a single request within the `CustomAdaptor` class:
 
 ```ts
   public override batchRequest(dm: DataManager, changes: BatchChanges) {
@@ -1375,8 +1375,8 @@ In **TicketsController.cs**, implement the batch method:
 **What happens behind the scenes:**
 
 - The Grid collects all added, edited, and deleted records in `Batch` edit mode.
-- The combined batch request is passed to the CustomAdaptor’s `batchRequest` method.
-- Each modified record, added and deleted records are processed using `BatchUpdate` method in **TicketsController.cs** file.
+- The combined batch request is passed to the CustomAdaptor’s "batchRequest" method.
+- Each modified record, added and deleted records are processed using "BatchUpdate" method in **TicketsController.cs** file.
 - All repository operations persist changes to the SQL database.
 - The Grid refreshes to display the updated, added, and removed records in a single response.
 
@@ -1649,6 +1649,6 @@ A complete, working sample implementation is available in the [GitHub](https://g
 
 ## See also
 
-- [Types of Editing](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping)
-- [Excel Export](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting)
-- [Integration with Filter UIs](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu#custom-component-in-filter-menu)
+- [Types of editing](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping)
+- [Excel export](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting)
+- [Integration with filter UIs](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filter-menu#custom-component-in-filter-menu)
