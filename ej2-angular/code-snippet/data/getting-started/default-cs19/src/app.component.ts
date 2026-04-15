@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { DataManager, Query } from '@syncfusion/ej2-data';
+import { DataManager, Query, ODataV4Adaptor, ReturnOption } from '@syncfusion/ej2-data';
 
+const SERVICE_URL = 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/';
 @Component({
     imports: [CommonModule],
     standalone: true,
     selector: 'app-root',
     templateUrl: './app.template.html',
-    styles: [
-        `.e-table {
+    styles: [`
+        .e-table {
             border: solid 1px #e0e0e0;
             border-collapse: collapse;
             font-family: Roboto;
@@ -29,18 +29,16 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
             vertical-align: middle;
             white-space: nowrap;
             width: auto;
-        }`
+        }
+        `
     ]
 })
-
 export class AppComponent implements OnInit {
 
-    public items?: object[] | any;
+    public items: object[] | any = [];
 
     public ngOnInit(): void {
-        this.items = new DataManager(data as JSON[]).executeLocal(new Query().take(8));
+        new DataManager({ url: SERVICE_URL, adaptor: new ODataV4Adaptor(), offline: true})
+        .executeQuery(new Query().take(8)).then((e: ReturnOption) => this.items = e.result as object[]).catch((e) => true);
     }
 }
-
-
-

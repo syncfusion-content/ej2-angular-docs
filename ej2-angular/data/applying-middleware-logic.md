@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Applying Middleware logic in in Angular Data component | Syncfusion
-description: Learn here all about Applying Middleware logic in Syncfusion Angular Data component of Syncfusion Essential JS 2 and more.
+title: Angular DataManager - Applying Middleware logic | Syncfusion
+description: Use middleware logic in Syncfusion Angular DataManager to add authentication, validate requests, or transform responses.
 platform: ej2-angular
-control: Cache 
+control: Applying Middleware logic
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Applying Middleware logic in Angular Data control
+# Applying Middleware logic in Angular DataManager
 
-The Syncfusion DataManager allows you to implement middleware logic in your application. It enables you to modify requests and responses before they are sent to the server or processed by the client. This is useful for tasks such as authentication, validation, logging, and response transformation. You can apply middleware using two methods: `applyPreRequestMiddlewares` and `applyPostRequestMiddlewares`. The following sections provide a detailed explanation of these methods.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager supports applying middleware logic to modify requests and responses during data processing. This capability is useful for handling tasks such as authentication, validation, logging, and transforming response data. Middleware can be applied through two methods: `applyPreRequestMiddlewares` and `applyPostRequestMiddlewares`, each serving a specific stage in the data handling workflow.
 
 **Pre-Request Middleware**
 
-The `applyPreRequestMiddlewares` method runs before a request is sent to the backend. It allows you to modify request headers, query parameters, or payloads. This is commonly used for adding authentication tokens, restructuring requests, or validating data before it is sent. The following code snippet demonstrates how to add an authorization token:
+The `applyPreRequestMiddlewares` method executes before a request is sent to the server. It enables modification of request headers, query parameters, or payloads. This is commonly used for adding authentication tokens, restructuring requests, or performing validations. The following code snippet demonstrates how to add an authorization token:
 
 ```ts
 
@@ -28,7 +28,7 @@ this.dataManager.applyPreRequestMiddlewares([
 
 **Post-Request Middleware**
 
-The `applyPostRequestMiddlewares` method runs after a response is received from the server but before binding the data to a component. It allows you to modify, filter, or restructure response data as needed. The following code snippet demonstrates how to format response data:
+The `applyPostRequestMiddlewares` method runs after a response is received from the server but before the data is bound to a component. It allows filtering, formatting, or restructuring the response to meet application requirements. The following code snippet demonstrates how to format response data:
 
 ```ts
 
@@ -44,17 +44,16 @@ this.dataManager.applyPostRequestMiddlewares([
 
 ```
 
-**Supported Data Adaptors**
+**Supported data adaptors**
 
-Middleware functions work with various DataManager adaptors, including [WebApiAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), and `CustomAdaptor`. They can be used for both local and remote data processing. By using middleware, you can enhance the flexibility, security, and efficiency of data handling in your applications.
+Middleware functions are supported across multiple DataManager adaptors, including the [WebApiAdaptor](./adaptors/webapi-adaptor), [ODataAdaptor](./adaptors/odatav4-adaptor), and [CustomAdaptor](./adaptors/custom-adaptor), and can be applied to both local and remote data operations. This enhances flexibility, security, and overall control of data processing.
 
-The following code example demonstrates how to use Syncfusion's [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/url-adaptor) while applying middleware logic to modify requests and responses. Before sending a request to the backend, the `applyPreRequestMiddlewares` method retrieves an authentication token from an external middleware server and adds it to the request headers. If the middleware server fails to return a valid token, the DataManager failure event is triggered to handle the error.
-
-Similarly, the `applyPostRequestMiddlewares` method processes the response before updating the component. This ensures that any necessary modifications, such as data transformation or filtering, are applied before binding the response to the UI. These middleware methods enhance request handling, improve security, and provide better control over data processing in the applications.
+The example demonstrates using the [UrlAdaptor](./adaptors/url-adaptor) with middleware to adjust requests and responses. Before sending a request, `applyPreRequestMiddlewares` fetches an authentication token from an external server and adds it to the request headers. If the token retrieval fails, the DataManager failure event handles the error. Likewise, `applyPostRequestMiddlewares` processes the server response before it is bound to the UI, enabling any required transformations or filtering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
+
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query, UrlAdaptor } from '@syncfusion/ej2-data';
 import { CommonModule } from '@angular/common';
@@ -65,25 +64,25 @@ import { CommonModule } from '@angular/common';
     selector: 'app-root',
     templateUrl: './app.template.html',
     styles: [`
-            .e-table {
-                border: solid 1px #e0e0e0;
-                border-collapse: collapse;
-                font-family: Roboto;
-            }
+        .e-table {
+            border: solid 1px #e0e0e0;
+            border-collapse: collapse;
+            font-family: Roboto;
+        }
 
-            .e-table td, .e-table th {
-                border-style: solid;
-                border-width: 1px 0 0;
-                border-color: #e0e0e0;
-                display: table-cell;
-                font-size: 14px;
-                line-height: 20px;
-                overflow: hidden;
-                padding: 8px 21px;
-                vertical-align: middle;
-                white-space: nowrap;
-                width: auto;
-            }
+        .e-table td, .e-table th {
+            border-style: solid;
+            border-width: 1px 0 0;
+            border-color: #e0e0e0;
+            display: table-cell;
+            font-size: 14px;
+            line-height: 20px;
+            overflow: hidden;
+            padding: 8px 21px;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: auto;
+        }
     `]
 })
 export class AppComponent implements OnInit {
@@ -115,23 +114,26 @@ export class AppComponent implements OnInit {
             //Handle DataManager failure event.
         }
 
-        // Method to apply middleware after receiving a response from the server
+        // Method to apply middleware after receiving a response from the server.
         dataManager.applyPostRequestMiddlewares = async (response: string | Object): Promise<object> => {
             return response;
         };
     }
 }
+
 {% endraw %}
 {% endhighlight %}
 
 {% highlight html tabtitle="app.template.html" %}
 {% raw %}
+
 <table class='e-table'>
     <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
     <tr *ngFor="let item of items">
         <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
     </tr>
 </table>
+
 {% endraw %}
 {% endhighlight %}
 {% endtabs %} 

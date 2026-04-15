@@ -1,7 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: '[group]',
+    standalone: true,
+    selector: '[group]',              // Attribute selector used on <tbody>.
+    imports: [CommonModule],
     template: `
     <tr><td>{{data.field}} - {{data.key}}</td><td></td><td></td></tr>
     <tr *ngFor="let item of data.items">
