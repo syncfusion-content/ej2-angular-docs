@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Templates in Syncfusion Angular Components
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components provide a pre-defined layout or structure that defines how the component should be rendered on the user interface. When you need to customize the component's appearance or functionality to meet specific application needs, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components offer template support to achieve this.
 
@@ -26,7 +26,9 @@ To access component data within the template, use the `let-data` attribute. Here
 
 Let's explore how templates enhance the Grid component with a custom template:
 
-```js
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% raw %}
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -57,4 +59,9 @@ export class AppComponent implements OnInit {
         ];
     }
 };
-```
+{% endraw %}
+{% endhighlight %}
+{% endtabs %}
+
+  
+{% previewsample "page.domainurl/samples/common/template-cs1" %}
