@@ -36,7 +36,7 @@ The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/g
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Set up Django REST Framework and connect it to a Microsoft SQL Server database | [View](#setting-up-the-django-rest-framework-for-microsoft-sql-database) |
-| 2 | Create and configure the Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid| [View](#integrate-syncfusion-angular-grid-with-django-rest-framework) |
+| 2 | Create and configure the Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid| [View](#integrate-syncfusion-angular-grid-with-django-rest-framework-post-request) |
 | 3 | Handle server‑side data operations such as filtering, searching, sorting, and paging | [View](#perform-data-operations) |
 | 4 | Enable create, update, and delete operations from the Grid using DRF | [View](#performing-crud-operations) |
 | 5 | Run the Django and Angular applications | [View](#running-the-application) |
@@ -385,7 +385,7 @@ class BookLendingViewSet(viewsets.ModelViewSet):
 > A detailed breakdown of `DataManager` payloads mapping to Django operations (filtering, sorting, paging, searching, selection, and CRUD) will be explained in the [Data Operations](#perform-data-operations) & [CRUD](#performing-crud-operations) section.
 
 
-## Integrate Syncfusion Angular Grid with Django REST Framework
+## Integrate Syncfusion Angular Grid with Django REST Framework (POST Request)
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
 
