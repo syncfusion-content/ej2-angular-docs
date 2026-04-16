@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Export and import reports as JSON through custom toolbar options
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component allows users to save and restore report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings)) through custom toolbar options. This functionality simplifies report management by allowing users to export settings as a JSON file and import them later to restore the Pivot Table configuration.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component allows users to save and restore report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings)) through custom toolbar options. This functionality simplifies report management by allowing users to export settings as a JSON file and import them later to restore the Pivot Table configuration.
 
 ## Customizing the Toolbar
 
@@ -18,11 +18,11 @@ To enable the export and import functionality, you can customize the Pivot Table
 
 ### Save Button
 
-The **Save** button is rendered as an anchor element, allowing users to download the current report (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings)) as a JSON file. When the **Save** button is clicked, the current report settings are retrieved using the [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#getpersistdata) method. These settings are then converted into a JSON string and wrapped in a Blob object. A temporary anchor element is created, the Blob URL is assigned to its href attribute, and a click event is triggered to download a file named **pivot.json**. The downloaded file contains all pivot table settings, including configurations for rows, columns, values, and filters, allowing users to preserve their current setup for future use.
+The **Save** button is rendered as an anchor element, allowing users to download the current report (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings)) as a JSON file. When the **Save** button is clicked, the current report settings are retrieved using the [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#getpersistdata) method. These settings are then converted into a JSON string and wrapped in a Blob object. A temporary anchor element is created, the Blob URL is assigned to its href attribute, and a click event is triggered to download a file named **pivot.json**. The downloaded file contains all pivot table settings, including configurations for rows, columns, values, and filters, allowing users to preserve their current setup for future use.
 
 ### Open Button
 
-The **Open** button is rendered as an input file element and allows users to select a JSON file containing report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings)) from their file system. When a file is selected, the [change](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) event retrieves the report configuration from the JSON file and assigns it to the Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component.
+The **Open** button is rendered as an input file element and allows users to select a JSON file containing report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings)) from their file system. When a file is selected, the [change](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) event retrieves the report configuration from the JSON file and assigns it to the Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component.
 
 Here is an example demonstrating how to add **Save** and **Open** buttons to the toolbar and handle exporting and importing report configurations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component:
 

@@ -18,14 +18,14 @@ Follow these steps to create a Web API service that retrieves data from a Snowfl
 1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**.
 2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
 
-![Creating an ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
+![Creating an ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.webp)
 
 ### Step 2: Install the Snowflake NuGet Package
 To enable Snowflake database connectivity:
 1. Open the **NuGet Package Manager** in your project solution and search for [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/).
 2. Install the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/) package to add Snowflake support.
 
-![Installing the Snowflake.Data NuGet package](../images/snowflake-data-nuget-package-install.png)
+![Installing the Snowflake.Data NuGet package](../images/snowflake-data-nuget-package-install.webp)
 
 ### Step 3: Create a Web API Controller
 1. Under the **Controllers** folder, create a new Web API controller named **PivotController.cs**.
@@ -123,7 +123,7 @@ namespace MyWebService.Controllers
 1. Access the Web API endpoint at `https://localhost:44378/Pivot` to view the JSON data retrieved from the Snowflake database.
 2. The browser will display the JSON data, as shown below.
 
-![JSON data from the Web API endpoint](../images/snowflake-code-web-app.png)
+![JSON data from the Web API endpoint](../images/snowflake-code-web-app.webp)
 
 ## Connecting the Pivot Table to a Snowflake Database Using the Web API Service
 
@@ -134,7 +134,7 @@ This section explains how to connect the Pivot Table component to a Snowflake da
 2. Ensure your Angular project is configured with the necessary EJ2 Pivot Table dependencies.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **app.component.ts** file, map the Web API URL (`https://localhost:44378/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/).
+1. In the **app.component.ts** file, map the Web API URL (`https://localhost:44378/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
 2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```typescript
@@ -162,8 +162,8 @@ export class AppComponent implements OnInit {
 
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the **app.component.ts** file to structure the data retrieved from the Snowflake database.
-2. Add fields to the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
-3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showfieldlist) property to **true** and including the `FieldListService` module in the providers section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+2. Add fields to the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
+3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property to **true** and including the `FieldListService` module in the providers section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
 
 Here’s the updated sample code for **app.component.ts** with the report configuration and field list support:
 
@@ -209,7 +209,7 @@ export class AppComponent implements OnInit {
 2. The Pivot Table will display the data fetched from the Snowflake database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
-![Pivot Table bound with Snowflake database](../images/snowflake-data-binding.png)
+![Pivot Table bound with Snowflake database](../images/snowflake-data-binding.webp)
 
 ### Additional Resources
 Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a Snowflake database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Snowflake-database-to-pivot-table) repository.

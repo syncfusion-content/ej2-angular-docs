@@ -14,8 +14,8 @@ The Pivot Chart in the Syncfusion Angular Pivot Table component helps users visu
 
 Users can display the pivot chart component individually with pivot values and modify the report dynamically using the field list and grouping bar. The [`displayOption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOptionModel/) property in the Pivot Table allows users to control the visibility of both the grid and chart components. This property includes the following options:
 
-* [`view`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOptionModel/#view): Determines whether the Pivot Table component displays only the grid, only the chart, or both components.
-* [`primary`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOptionModel/#primary): Specifies which component (grid or chart) appears as the primary view during initial loading. This option applies only when the [`view`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOptionModel/#view) property is set to **Both**.
+* [`view`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayoptionmodel#view): Determines whether the Pivot Table component displays only the grid, only the chart, or both components.
+* [`primary`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayoptionmodel#primary): Specifies which component (grid or chart) appears as the primary view during initial loading. This option applies only when the [`view`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayoptionmodel#view) property is set to **Both**.
 
 > To use the Pivot Chart, be sure to inject the `PivotChartService` module into your application.
 
@@ -35,7 +35,7 @@ The following sample shows the pivot chart component based on the pivot report b
 
 ## Data Binding
 
-The Pivot Table component supports both local and remote data binding options to populate data in the pivot chart. Users can bind data to the component using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasource) property, which accepts either an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) for remote data sources or a JavaScript object array collection for local data. For further details, [refer here](./data-binding).
+The Pivot Table component supports both local and remote data binding options to populate data in the pivot chart. Users can bind data to the component using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property, which accepts either an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) for remote data sources or a JavaScript object array collection for local data. For further details, [refer here](./data-binding).
 
 ## Chart Types
 
@@ -126,7 +126,7 @@ In accumulation charts, you can use the drill down and drill up options to explo
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs225" %}
 
-![output](images/expand_collapse.png)
+![output](images/expand_collapse.webp)
 
 ### Column Headers and Delimiters
 
@@ -235,7 +235,7 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 ## Field List
 
-The field list makes it easy to add, remove, or rearrange fields in the pivot chart, so you can display exactly the data you need. To show the field list in the Pivot Chart, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showfieldlist) property of the Pivot Table to **true**. When you make changes with the field list, the pivot chart updates right away to show the new results. To learn more about the field list and how it works, see the [field list](./field-list) topic in the documentation.
+The field list makes it easy to add, remove, or rearrange fields in the pivot chart, so you can display exactly the data you need. To show the field list in the Pivot Chart, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property of the Pivot Table to **true**. When you make changes with the field list, the pivot chart updates right away to show the new results. To learn more about the field list and how it works, see the [field list](./field-list) topic in the documentation.
 
 The sample below demonstrates the field list shown in `Popup` mode within the pivot chart.
 
@@ -253,7 +253,7 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 
 ## Grouping Bar
 
-You can display the grouping bar in the Pivot Chart by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showgroupingbar) property to **true**. When enabled, the grouping bar in the pivot chart shows a drop-down list on the value axis. This drop-down lets users select from the value fields defined in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/). Users can switch between these fields to update the chart based on the selected value field. This method of selection is the default behavior in the Pivot Chart component. For more details about how the grouping bar works, refer to the [grouping bar](./grouping-bar) documentation.
+You can display the grouping bar in the Pivot Chart by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showgroupingbar) property to **true**. When enabled, the grouping bar in the pivot chart shows a drop-down list on the value axis. This drop-down lets users select from the value fields defined in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). Users can switch between these fields to update the chart based on the selected value field. This method of selection is the default behavior in the Pivot Chart component. For more details about how the grouping bar works, refer to the [grouping bar](./grouping-bar) documentation.
 
 > When there are multiple axes, buttons appear on the value axis instead of the drop-down list.
 
@@ -301,7 +301,7 @@ By default, the pivot chart uses the first value field (measure) from your repor
 
 ## Multiple Axis
 
-The pivot chart can be drawn with multiple value fields by setting the [`enableMultipleAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/#enablemultipleaxis) property to **true** in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/). In the following code sample, the pivot chart displays both value fields "Sold" and "Amount" from the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/).
+The pivot chart can be drawn with multiple value fields by setting the [`enableMultipleAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/#enablemultipleaxis) property to **true** in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/). In the following code sample, the pivot chart displays both value fields "Sold" and "Amount" from the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
 
 > Multiple axis support is not applicable for accumulation chart types like pie, doughnut, pyramid, and funnel.
 

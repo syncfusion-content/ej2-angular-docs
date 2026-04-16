@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # PDF export in Angular Pivotview component
 
-The Angular Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpdfexport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method to generate and download the PDF file.
+The Angular Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpdfexport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method to generate and download the PDF file.
 
-In the following example, an external button is used to start the PDF export process. When the user clicks the button, the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method is called so that the Pivot Table data can be saved as a PDF file.
+In the following example, an external button is used to start the PDF export process. When the user clicks the button, the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method is called so that the Pivot Table data can be saved as a PDF file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ In the following example, an external button is used to start the PDF export pro
 
 The PDF export option allows users to save data from multiple Pivot Tables into a single PDF file. Each Pivot Table appears on a separate page in the exported document, making it easy to review and share information from multiple tables at once.
 
-To export multiple Pivot Tables into a single PDF document, use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method. This method accepts the following parameters:
+To export multiple Pivot Tables into a single PDF document, use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method. This method accepts the following parameters:
 
 - `pdfExportProperties` (optional): Configures export options for the table and chart. See the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfexportproperties/) API reference for details.
 - `isMultipleExport` (optional): Set to **true** for the first Pivot Table to create a new multi-page PDF file. For additional tables, set to **false** to add them to the same file.
@@ -40,8 +40,8 @@ To export multiple Pivot Tables into a single PDF document, use the [`pdfExport`
 
 **Steps to export multiple Pivot Tables:**
 
-1. Call [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) on the first Pivot Table with `isMultipleExport` set to **true** to start the export process.
-2. Once the PDF data for the first table is ready, pass it as the `pdfDoc` parameter to the next Pivot Table's [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) call with `isMultipleExport` set to **false**.
+1. Call [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) on the first Pivot Table with `isMultipleExport` set to **true** to start the export process.
+2. Once the PDF data for the first table is ready, pass it as the `pdfDoc` parameter to the next Pivot Table's [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) call with `isMultipleExport` set to **false**.
 3. Repeat this process for each additional Pivot Table you want to include.
 
 The following code example shows how clicking the Export button exports both tables to a single PDF file, with each table on its own page:
@@ -60,7 +60,7 @@ The following code example shows how clicking the Export button exports both tab
 
 ## Export table and chart into the same document
 
-If you want to export both the table and the chart from the Pivot Table into a single PDF file, set the [`displayOption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOptionModel/) property to **Both**. Then, when you use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method, make sure to set the `exportBothTableAndChart` option to **true**. This will include both the data table and its chart in one PDF document when you export.
+If you want to export both the table and the chart from the Pivot Table into a single PDF file, set the [`displayOption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOptionModel/) property to **Both**. Then, when you use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method, make sure to set the `exportBothTableAndChart` option to **true**. This will include both the data table and its chart in one PDF document when you export.
 
 The following example shows how you can set this up in your application:
 
@@ -220,7 +220,7 @@ The below code illustrates the PDF export customization options.
 
 ### Changing the file name while exporting
 
-The PDF export provides an option to change the file name of the document before exporting. To change the file name, define the [`fileName`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#filename) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method.
+The PDF export provides an option to change the file name of the document before exporting. To change the file name, define the [`fileName`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#filename) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object and pass it as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -236,7 +236,7 @@ The PDF export provides an option to change the file name of the document before
 
 ### Changing page orientation while exporting
 
-When exporting the Pivot Table as a PDF, users can choose the page orientation of the document. By default, the PDF is exported in **Portrait** orientation. If you want to change the orientation to **Landscape**, set the [`pageOrientation`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#pageorientation) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object. Then, pass this object as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method. This lets you select either Portrait or Landscape orientation based on your needs before saving the exported PDF.
+When exporting the Pivot Table as a PDF, users can choose the page orientation of the document. By default, the PDF is exported in **Portrait** orientation. If you want to change the orientation to **Landscape**, set the [`pageOrientation`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#pageorientation) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object. Then, pass this object as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method. This lets you select either Portrait or Landscape orientation based on your needs before saving the exported PDF.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -252,7 +252,7 @@ When exporting the Pivot Table as a PDF, users can choose the page orientation o
 
 ### Changing page size while exporting
 
-When exporting Pivot Table data to PDF, users can select a specific page size for the PDF document. To set the page size, define the [`pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#pagesize) property within the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object, and pass this object as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method.
+When exporting Pivot Table data to PDF, users can select a specific page size for the PDF document. To set the page size, define the [`pageSize`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#pagesize) property within the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object, and pass this object as a parameter to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method.
 
 You can choose from various page sizes, such as Letter, Note, Legal, A0, A1, A2, A3, A5, A6, A7, A8, A9, B0, B1, B2, B3, B4, B5, Archa, Archb, Archc, Archd, Arche, Flsa, HalfLetter, Letter11x17, and Ledger.
 
@@ -342,7 +342,7 @@ Similarly, if you want to change the height of a particular row in the PDF docum
 
 ## Changing the pivot table style while exporting
 
-When you export the Pivot Table as a PDF document, you can change the colors used for headers, captions, and records. To do this, use the [`theme`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#theme) property inside the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object. Pass this object to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method. This allows you to adjust how the Pivot Table looks in the exported PDF.
+When you export the Pivot Table as a PDF document, you can change the colors used for headers, captions, and records. To do this, use the [`theme`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#theme) property inside the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object. Pass this object to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method. This allows you to adjust how the Pivot Table looks in the exported PDF.
 
 > By default, the Material theme is applied to the exported PDF document.
 
@@ -402,7 +402,7 @@ You can also use custom fonts when exporting if you need support for languages o
 
 ## Virtual Scroll Data
 
-When working with large amounts of data in the Pivot Table, the virtual scroll option allows users to efficiently export all the table data as a complete PDF document, without any slowdown or performance issues. This method uses PivotEngine export to manage and export extensive datasets smoothly. To use this option, make sure to enable the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpdfexport) property and use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method in the Pivot Table.
+When working with large amounts of data in the Pivot Table, the virtual scroll option allows users to efficiently export all the table data as a complete PDF document, without any slowdown or performance issues. This method uses PivotEngine export to manage and export extensive datasets smoothly. To use this option, make sure to enable the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpdfexport) property and use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method in the Pivot Table.
 
 > To use PivotEngine export, inject the `PDFExportService` module into the Pivot Table.
 > When virtual scrolling is enabled, PivotEngine export is used automatically.
@@ -423,7 +423,7 @@ When working with large amounts of data in the Pivot Table, the virtual scroll o
 
 When exporting the Pivot Table as a PDF using the PivotEngine export option, the row headers are repeated on each page by default. This helps users easily identify rows when viewing larger tables split across multiple PDF pages.
 
-If you want to turn off the repeated row headers in your PDF, set the [`allowRepeatHeader`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeExportEventArgs/#allowrepeatheader) property to **false** inside the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#beforeexport) event. Make sure you are using the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method with the PivotEngine export.
+If you want to turn off the repeated row headers in your PDF, set the [`allowRepeatHeader`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeExportEventArgs/#allowrepeatheader) property to **false** inside the [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#beforeexport) event. Make sure you are using the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method with the PivotEngine export.
 
 > To use PivotEngine export, inject the `PDFExportService` module in the Pivot Table.
 > By default, repeating row headers is enabled in the PivotEngine export.
@@ -506,7 +506,7 @@ The event provides the following parameters:
 
 ### ExportComplete
 
-The [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#exportcomplete) event is triggered after the Pivot Table data has been successfully exported to a PDF document. This event allows you to access blob stream data for further processing by setting the `isBlob` parameter to **true** when calling the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#pdfexport) method.
+The [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#exportcomplete) event is triggered after the Pivot Table data has been successfully exported to a PDF document. This event allows you to access blob stream data for further processing by setting the `isBlob` parameter to **true** when calling the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method.
 
 The event provides the following parameters:
 

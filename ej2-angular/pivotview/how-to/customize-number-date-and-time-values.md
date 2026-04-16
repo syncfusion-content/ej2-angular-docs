@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # Customize number, date and time values in Angular Pivotview component
 
-You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/). This configuration is applied during component initialization to ensure consistent data presentation across the pivot view.
+You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). This configuration is applied during component initialization to ensure consistent data presentation across the pivot view.
 
 ## Number formatting
 
 For numeric fields, the formatting settings include the following properties:
 
-* [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettingsModel/#name): Specifies the field name to which the formatting should be applied.
-* [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettingsModel/#format): Defines the number format pattern for the respective field (e.g., 'N2' for two decimal places, 'C' for currency).
+* [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#name): Specifies the field name to which the formatting should be applied.
+* [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#format): Defines the number format pattern for the respective field (e.g., 'N2' for two decimal places, 'C' for currency).
 
-> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#manipulating-numbers) options in [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#formatsettings) itself.
+> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#manipulating-numbers) options in [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) itself.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,11 +37,11 @@ For numeric fields, the formatting settings include the following properties:
 
 For date and time fields, the formatting settings include these properties:
 
-* [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettingsModel/#name): Specifies the field name to which the formatting should be applied.
-* [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettingsModel/#format): Defines the date/time format pattern for the respective field (e.g., 'dd/MM/yyyy', 'MMM yyyy').
-* [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettingsModel/#type): Specifies the format type to be used for the respective field (Date, Time, or DateTime).
+* [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#name): Specifies the field name to which the formatting should be applied.
+* [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#format): Defines the date/time format pattern for the respective field (e.g., 'dd/MM/yyyy', 'MMM yyyy').
+* [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#type): Specifies the format type to be used for the respective field (Date, Time, or DateTime).
 
-> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#manipulating-datetime) options in [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#formatsettings) itself.
+> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#manipulating-datetime) options in [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) itself.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

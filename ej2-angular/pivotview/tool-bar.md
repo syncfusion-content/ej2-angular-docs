@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Tool bar in Angular Pivotview component
 
-The toolbar in the Angular Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showtoolbar) property to **true**. Additionally, the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar) property accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
+The toolbar in the Angular Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showtoolbar) property to **true**. Additionally, the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) property accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
 
 The following table lists the built-in toolbar options and their actions:
 
@@ -29,7 +29,7 @@ The following table lists the built-in toolbar options and their actions:
 | Grand Total | Shows or hides grand totals in the pivot table |
 | Conditional Formatting | Opens a pop-up to apply formatting to cells based on conditions |
 | Number Formatting | Opens a pop-up to apply number formatting to cells |
-| Field List | Opens the field list pop-up to configure the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) |
+| Field List | Opens the field list pop-up to configure the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) |
 | MDX | Displays the MDX query used to retrieve data from an OLAP data source. **Note**: This option applies only to OLAP data sources. |
 
 > The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
@@ -70,17 +70,17 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/angular/documentation/pivotview/pivot-chart#multiple-axis).
 
-![Switching to multiple axes](images/chart-option.png)
+![Switching to multiple axes](images/chart-option.webp)
 
 The pivot chart supports three modes for multiple axes: `Stacked`, `Single`, and `Combined`. Users can select a mode from the "Multiple Axis Mode" dropdown list, which appears after clicking the **More...** option in the chart type dropdown menu.
 
-![Multiple axis mode options](images/multiple-axis-mode.png)
+![Multiple axis mode options](images/multiple-axis-mode.webp)
 
 ## Show or hide legend
 
 In the pivot chart, you can show or hide the legend dynamically using an option in the chart type drop-down menu on the toolbar. This allows you to control whether the legend appears alongside the chart. For accumulation chart types, such as pie, doughnut, pyramid, and funnel, the legend is hidden by default. You can enable or disable the legend using a built-in checkbox available in the drop-down menu.
 
-![Chart legend](images/chart-legend.png)
+![Chart legend](images/chart-legend.webp)
 
 ## Adding custom option to the toolbar
 
@@ -120,7 +120,7 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
   
 {% previewsample "page.domainurl/samples/pivot-grid/toolbarTemplate-cs1" %}
 
-Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar) property in the pivot table.
+Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) property in the pivot table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,7 +140,7 @@ Another option allows framing a custom toolbar item using HTML elements and incl
 
 You can save the current Pivot Table report as a JSON file and load it back into the Pivot Table whenever needed. This allows you to store your report settings, such as row, column, and value configurations, and reuse them later.
 
-To save a report, use the [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#getpersistdata) method to retrieve the current Pivot Table settings. These settings are then converted to a JSON file and downloaded to your chosen location. To load a report, select a JSON file containing the saved settings, and the Pivot Table will update to reflect those settings using the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings) property.
+To save a report, use the [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#getpersistdata) method to retrieve the current Pivot Table settings. These settings are then converted to a JSON file and downloaded to your chosen location. To load a report, select a JSON file containing the saved settings, and the Pivot Table will update to reflect those settings using the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property.
 
 The following code example shows how to save and load a Pivot Table report as a JSON file. By clicking an external "Save" button, the `saveData` method is triggered to save the current report settings as a JSON file. Similarly, clicking an external "Load" button triggers the `readBlob` method to load a JSON file and restore the report settings.
 
@@ -164,11 +164,11 @@ SQL Server is a relational database management system (RDBMS) that can be used t
 
 **1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
 
-![Create ASP.NET Core Web App project](images/azure-asp-core-web-service-create.png)
+![Create ASP.NET Core Web App project](images/azure-asp-core-web-service-create.webp)
 
 **2.** To connect a SQL Server database using the Microsoft SqlClient in our application, we need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **Microsoft.Data.SqlClient** and install it.
 
-![Add the NuGet package Microsoft.Data.SqlClient to the project](images/ms-data-sqlclient-nuget-package-install.png)
+![Add the NuGet package Microsoft.Data.SqlClient to the project](images/ms-data-sqlclient-nuget-package-install.webp)
 
 **3.** Under the **Controllers** folder, create a Web API controller (aka, PivotController.cs) file that aids in data communication with the Pivot Table.
 
@@ -505,11 +505,11 @@ namespace MyWebApp.Controllers
 
 ```
 
-![The current report has been saved in the SQL database](images/output_save_report.png)
+![The current report has been saved in the SQL database](images/output_save_report.webp)
 
 In the meantime, you can save a duplicate of the current report to the SQL Server database with a different name by selecting **"Save as current report"** from the toolbar. The [saveReport](#savereport) event will then be triggered with the new report name **"Sample Report 1"** and the current report. You can save them to the SQL Server database after passing them to the Web API service, as mentioned above.
 
-![Copy of the current report has been saved in the SQL database](images/output_save_as_report.png)
+![Copy of the current report has been saved in the SQL database](images/output_save_as_report.webp)
 
 #### Loading a report
 
@@ -660,7 +660,7 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Loading a report from SQL database](images/output_load_report.png)
+![Loading a report from SQL database](images/output_load_report.webp)
 
 #### Renaming a report
 
@@ -826,7 +826,7 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Renaming a report in the SQL database](images/output_rename_report.png)
+![Renaming a report in the SQL database](images/output_rename_report.webp)
 
 #### Deleting a report
 
@@ -975,13 +975,13 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Deleting a report from the SQL database](images/output_remove_report.png)
+![Deleting a report from the SQL database](images/output_remove_report.webp)
 
 #### Adding a report
 
 When you select the **"Create a new report"** option from the toolbar, the [newReport](#newreport) event is triggered, followed by the [saveReport](#savereport) event. To save this new report to the SQL database, use the [saveReport](#savereport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
 
-![Adding a report in the SQL database](images/output_new_report.png)
+![Adding a report in the SQL database](images/output_new_report.webp)
 
 ### Limitations with respect to report manipulation
 
@@ -1005,7 +1005,7 @@ The [`loadReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotvie
 
 ### NewReport
 
-The [`newReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#newreport) event is triggered when a user clicks the **New Report** icon in the toolbar. This event allows the user to create a new report and add it to the report list. The event provides a parameter, [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/newReportArgs/#report), which contains details about the new report. By using this event, users can easily start fresh with a new set of data configurations in the Pivot Table, managed through the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#datasourcesettings) property.
+The [`newReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#newreport) event is triggered when a user clicks the **New Report** icon in the toolbar. This event allows the user to create a new report and add it to the report list. The event provides a parameter, [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/newReportArgs/#report), which contains details about the new report. By using this event, users can easily start fresh with a new set of data configurations in the Pivot Table, managed through the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property.
 
 ### RenameReport
 
@@ -1055,10 +1055,10 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 
 ### ActionBegin
 
-The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actionbegin) event triggers when a user starts an action in the toolbar, such as switching between the pivot table and pivot chart, changing chart types, applying conditional formatting, or exporting data. This event helps users identify the action being performed and provides options to control it. It includes the following parameters:
+The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionbegin) event triggers when a user starts an action in the toolbar, such as switching between the pivot table and pivot chart, changing chart types, applying conditional formatting, or exporting data. This event helps users identify the action being performed and provides options to control it. It includes the following parameters:
 
-* [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionBeginEventArgs/#datasourcesettings): Contains the current report settings of the pivot table, including the data source, rows, columns, values, filters, and format settings.
-* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionBeginEventArgs/#actionname): Indicates the name of the action being performed. Below is a list of toolbar actions and their corresponding names:
+* [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#datasourcesettings): Contains the current report settings of the pivot table, including the data source, rows, columns, values, filters, and format settings.
+* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#actionname): Indicates the name of the action being performed. Below is a list of toolbar actions and their corresponding names:
 
    | Action | Action Name |
    |------|-------------|
@@ -1077,9 +1077,9 @@ The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotvi
    | Sub-totals menu | Hide sub-totals, Show row sub-totals, Show column sub-totals, Show sub-totals |
    | Grand totals menu | Hide grand totals, Show row grand totals, Show column grand totals, Show grand totals |
 
-* [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionBeginEventArgs/#cancel): Allows users to stop the current action by setting this option to **true**.
+* [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#cancel): Allows users to stop the current action by setting this option to **true**.
 
-In the example below, the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actionbegin) event is used to prevent the "Add new report" and "Save current report" actions by setting `args.cancel` to **true**. This stops these specific toolbar actions from proceeding. The code demonstrates how to control toolbar interactions effectively.
+In the example below, the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionbegin) event is used to prevent the "Add new report" and "Save current report" actions by setting `args.cancel` to **true**. This stops these specific toolbar actions from proceeding. The code demonstrates how to control toolbar interactions effectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -1095,10 +1095,10 @@ In the example below, the [`actionBegin`](https://ej2.syncfusion.com/angular/doc
 
 ### ActionComplete
 
-The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actioncomplete) event triggers after a toolbar action, such as switching between a pivot table and pivot chart, changing chart types, applying conditional formatting, or exporting data, is completed. This event helps users track the completion of these actions at runtime. It includes the following parameters:
+The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actioncomplete) event triggers after a toolbar action, such as switching between a pivot table and pivot chart, changing chart types, applying conditional formatting, or exporting data, is completed. This event helps users track the completion of these actions at runtime. It includes the following parameters:
 
-- [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionCompleteEventArgs/#datasourcesettings): Contains the current data source settings, including the input data, rows, columns, values, filters, and format settings.
-- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionCompleteEventArgs/#actionname): Indicates the name of the completed action. The table below lists the toolbar actions and their corresponding names:
+- [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#datasourcesettings): Contains the current data source settings, including the input data, rows, columns, values, filters, and format settings.
+- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actionname): Indicates the name of the completed action. The table below lists the toolbar actions and their corresponding names:
 
    | Action | Action Name |
    |------|-------------|
@@ -1116,7 +1116,7 @@ The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
    | Sub-totals menu | Sub-totals hidden, Row sub-totals shown, Column sub-totals shown, Sub-totals shown |
    | Grand totals menu | Grand totals hidden, Row grand totals shown, Column grand totals shown, Grand totals shown |
 
-- [`actionInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionCompleteEventArgs/#actioninfo): Provides specific details about the completed action, such as the report name when adding a new report.
+- [`actionInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actioninfo): Provides specific details about the completed action, such as the report name when adding a new report.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -1132,9 +1132,9 @@ The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 
 ### ActionFailure
 
-The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actionfailure) event occurs when a user action in the Pivot Table does not complete as expected. This event helps users understand what went wrong during interactions with the grouping bar.
+The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionfailure) event occurs when a user action in the Pivot Table does not complete as expected. This event helps users understand what went wrong during interactions with the grouping bar.
 
-- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionFailureEventArgs/#actionname): Identifies which user action did not succeed. The table below lists the actions and their corresponding names:
+- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#actionname): Identifies which user action did not succeed. The table below lists the actions and their corresponding names:
 
    | Action | Action Name | 
    |------|-------------|
@@ -1153,7 +1153,7 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
    | Sub-totals menu | Hide sub-totals, Show row sub-totals, Show column sub-totals, Show sub-totals |
    | Grand totals menu | Hide grand totals, Show row grand totals, Show column grand totals, Show grand totals |
 
-- [`errorInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionFailureEventArgs/#errorinfo): Provides details about the error that occurred for the specific user action.
+- [`errorInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#errorinfo): Provides details about the error that occurred for the specific user action.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

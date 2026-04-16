@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 <!-- markdownlint-disable MD009 -->
 # Load desired report from list as default in Angular Pivot Table
 
-By default, the pivot table displays with the report configuration defined in the component initialization. To load a specific report from a previously saved report collection during the initial rendering process, configure the desired report name within the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#databound) event. This approach allows the pivot table to automatically apply the selected report's configuration, including field arrangements, filters, and formatting settings, as soon as the component completes its data binding process.
+By default, the pivot table displays with the report configuration defined in the component initialization. To load a specific report from a previously saved report collection during the initial rendering process, configure the desired report name within the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#databound) event. This approach allows the pivot table to automatically apply the selected report's configuration, including field arrangements, filters, and formatting settings, as soon as the component completes its data binding process.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

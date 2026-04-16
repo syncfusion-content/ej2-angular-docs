@@ -22,7 +22,7 @@ With both internationalization and localization, you can make sure the Pivot Tab
 
 For more details:
 - Learn about [`Internationalization`](https://ej2.syncfusion.com/angular/documentation/common/internationalization) for formatting dates and numbers.
-- Read about [`Localization`](https://ej2.syncfusion.com/angular/documentation/common/localization) for translating text content.
+- Read about [`Localization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) for translating text content.
 
 ## Internationalization
 
@@ -40,7 +40,7 @@ Install the `CLDR-Data` package using the following command to get the CLDR JSON
 npm install cldr-data --save
 ```
 
-After installation, you can find culture-specific JSON data in the `/node_modules/cldr-data` location. For more information about CLDR-Data, visit this [link](http://cldr.unicode.org/index/cldr-spec/json).
+After installation, you can find culture-specific JSON data in the `/node_modules/cldr-data` location. For more information about CLDR-Data, visit this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
 **Step 2: download locale packages**
 
@@ -61,11 +61,11 @@ loadCldr(
   require('cldr-data/main/fr-CH/timeZoneNames.json'));
 ```
 
-The internationalization library helps format number, date, and time values in the Pivot Table component using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) configuration.
+The internationalization library helps format number, date, and time values in the Pivot Table component using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettings) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) configuration.
 
 **Step 4: set the culture**
 
-Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#locale) property as shown in the example below:
+Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#locale) property as shown in the example below:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +80,7 @@ Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/docum
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs110" %}
 
 > * In the above example, the `Amount` field is formatted using [`NumberFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/internationalization#manipulating-numbers). For date formats, value strings are formatted using [`DateFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/internationalization#manipulating-datetime).
-> * The default [`locale`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#locale) value is `en-US`. To change from the `en-US` culture to a different culture, update the `locale` property accordingly.
+> * The default [`locale`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#locale) value is `en-US`. To change from the `en-US` culture to a different culture, update the `locale` property accordingly.
 > * You can find more details about supported format strings for number and date formats [`here`](https://ej2.syncfusion.com/angular/documentation/common/internationalization#supported-format-string).
 
 ### Decimal separators
@@ -107,7 +107,7 @@ The following example shows how decimal separators appear when using the `Deutsc
 
 The [`Localization`](https://ej2.syncfusion.com/documentation/common/api-l10n.html) option allows you to translate the default text content of the Pivot Table into different languages. This makes the component more accessible to users from various regions by displaying text in their preferred language.
 
-The Pivot Table contains static text elements such as drop area messages, field list titles, and other interface labels that can be translated to different cultures (Arabic, German, French, etc.). You can achieve this by setting the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#locale) property and providing the appropriate translation object.
+The Pivot Table contains static text elements such as drop area messages, field list titles, and other interface labels that can be translated to different cultures (Arabic, German, French, etc.). You can achieve this by setting the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#locale) property and providing the appropriate translation object.
 
 The following table shows the locale keywords and their corresponding default text values used in the Pivot Table:
 
@@ -573,7 +573,7 @@ The following example shows how to display the Pivot Table in German (`Deutsch`)
 
 ## Right-to-left (RTL)
 
-Right-to-left (RTL) support makes the Pivot Table more accessible and user-friendly for people who read and write in right-to-left languages such as Arabic, Farsi, and Urdu. This feature adjusts the text direction and layout of the entire Pivot Table from a left-to-right to a right-to-left orientation. To enable RTL in the Pivot Table, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablertl) property to **true**.
+Right-to-left (RTL) support makes the Pivot Table more accessible and user-friendly for people who read and write in right-to-left languages such as Arabic, Farsi, and Urdu. This feature adjusts the text direction and layout of the entire Pivot Table from a left-to-right to a right-to-left orientation. To enable RTL in the Pivot Table, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#enablertl) property to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -590,4 +590,4 @@ Right-to-left (RTL) support makes the Pivot Table more accessible and user-frien
 ## See Also
 
 * [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/internationalization)
-* [Localization](https://ej2.syncfusion.com/angular/documentation/common/localization)
+* [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization)
