@@ -196,7 +196,7 @@ The Grid provides keyboard navigation and follows WAI‑ARIA [keyboard interacti
 | **Windows** | **Mac** | **Action** |
 |-------------|----------|-------------|
 | <kbd>Enter</kbd> | <kbd>Enter</kbd> | Applies sorting (cycles through ascending → descending → none) on the focused column. |
-| <kbd>Ctrl</kbd> + <kbd>Enter</kbd> | <kbd>Command</kbd> + <kbd>Enter</kbd> | Adds the focused column to **multi-sorting**. |
+| <kbd>Ctrl</kbd> + <kbd>Enter</kbd> | <kbd>Command</kbd> + <kbd>Enter</kbd> | Adds the focused column to **multi‑sorting**. |
 | <kbd>Shift</kbd> + <kbd>Enter</kbd> | <kbd>Shift</kbd> + <kbd>Enter</kbd> | Removes sorting from the focused column. 
 
 

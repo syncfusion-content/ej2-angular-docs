@@ -36,10 +36,10 @@ export class AppComponent implements OnInit {
     public items?: object[] | any;
 
     public ngOnInit(): void {
-        this.items = new DataManager({ 
+        const dataManager = new DataManager({ 
             json: data, 
             adaptor: new JsonAdaptor() 
         });
-        this.items.executeLocal(new Query().take(8));
+        this.items = dataManager.executeLocal(new Query().take(8));
     }
 }

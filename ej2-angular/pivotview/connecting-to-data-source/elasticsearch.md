@@ -20,13 +20,13 @@ Follow these steps to create a Web API service that retrieves data from an Elast
 1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**.
 2. Follow the instructions in the [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) to set up the project.
 
-![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.webp)
 
 ### Step 2: Install the NEST NuGet Package
 1. Open the **NuGet Package Manager** in your project solution.
 2. Search for the **NEST** package and install it to enable connectivity with the Elasticsearch server.
 
-![Add the NuGet package NEST to the project](../images/next-nuget-package-install.png)
+![Add the NuGet package NEST to the project](../images/next-nuget-package-install.webp)
 
 ### Step 3: Create a Web API Controller
 1. In the **Controllers** folder, create a new Web API controller named **PivotController.cs**.
@@ -85,7 +85,7 @@ Here’s the sample code for the **PivotController.cs** file:
 1. Access the Web API endpoint at `https://localhost:44323/Pivot` to view the JSON data retrieved from the Elasticsearch database.
 2. The browser will display the JSON data, as shown below.
 
-![Hosted Web API URL](../images/elasticsearch-data.png)
+![Hosted Web API URL](../images/elasticsearch-data.webp)
 
 ## Connecting the Pivot Table to an Elasticsearch Database Using the Web API Service
 
@@ -96,7 +96,7 @@ This section explains how to connect the Pivot Table component to an Elasticsear
 2. Ensure your Angular project is configured with the necessary EJ2 Pivot Table dependencies.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **app.component.ts** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/).
+1. In the **app.component.ts** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
 2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```typescript
@@ -124,8 +124,8 @@ export class AppComponent implements OnInit {
 
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the **app.component.ts** file to structure the data retrieved from the Elasticsearch database.
-2. Add fields to the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
-3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showfieldlist) property to **true** and including the `FieldListService` module in the providers section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+2. Add fields to the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
+3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property to **true** and including the `FieldListService` module in the providers section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
 
 Here’s the updated sample code for **app.component.ts** with the report configuration and field list support:
 
@@ -171,7 +171,7 @@ export class AppComponent implements OnInit {
 2. The Pivot Table will display the data fetched from the Elasticsearch database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
-![Pivot Table bound with Elasticsearch database](../images/elasticsearch-data-binding.png)
+![Pivot Table bound with Elasticsearch database](../images/elasticsearch-data-binding.webp)
 
 ### Additional Resources
 Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Elasticsearch database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Elasticsearch-database-to-pivot-table) repository.

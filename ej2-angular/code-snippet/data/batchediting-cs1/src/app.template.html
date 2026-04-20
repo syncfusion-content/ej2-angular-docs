@@ -2,13 +2,13 @@
     <input type="number" id='OrderID' placeholder="Order ID" [(ngModel)]="edit.OrderID" />
     <input type="text" id="CustomerID" placeholder="Customer ID" [(ngModel)]="edit.CustomerID"/>
     <input type="number" id="EmployeeID" placeholder="Employee ID" [(ngModel)]="edit.EmployeeID"/>
-    <input type="button" value="Insert" (click)="insert('addedRecords')" />
-    <input type="button" value="Update" (click)="insert('changedRecords')" />
-    <input type="button" value="Remove" (click)="insert('deletedRecords')" />
+    <input type="button" value="Insert" (click)="batchChanges('addedRecords')" />
+    <input type="button" value="Update" (click)="batchChanges('changedRecords')" />
+    <input type="button" value="Remove" (click)="batchChanges('deletedRecords')" />
 </div>
 <div class="e-form">
     <label>Click to Save changes: </label>
-    <input type="button" value="Save Changes" (click)="save()" />
+    <input type="button" value="Save Changes" (click)="saveChanges()" />
 </div>
 <table class='e-table'>
     <tr>

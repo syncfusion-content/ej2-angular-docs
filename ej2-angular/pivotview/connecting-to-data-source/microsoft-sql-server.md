@@ -106,7 +106,7 @@ namespace PivotController.Controllers
 1. Access the Web API endpoint at `https://localhost:7139/pivot` to view the JSON data retrieved from the SQL Server database.
 2. The browser will display the JSON data, as shown below, ready to be used by the Pivot Table.
 
-![Hosted Web API URL](../images/code-web-app.jpeg)
+![Hosted Web API URL](../images/code-web-app.webp)
 
 ## Connecting the Pivot Table to the Hosted Web API URL
 
@@ -117,7 +117,7 @@ This section explains how to connect the Pivot Table component to a Microsoft SQ
 2. Ensure your Angular project is configured with the necessary EJ2 Pivot Table dependencies by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/pivotview/getting-started) documentation.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **app.component.ts** file, map the hosted Web API URL (`https://localhost:7139/pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/).
+1. In the **app.component.ts** file, map the hosted Web API URL (`https://localhost:7139/pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
 2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```typescript
@@ -146,8 +146,8 @@ export class AppComponent implements OnInit {
 
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the **app.component.ts** file to structure the data retrieved from the SQL Server database.
-2. Add fields to the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to define how data fields are organized and aggregated in the Pivot Table.
-3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showfieldlist) property to **true** and including the `FieldListService` module in the providers section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+2. Add fields to the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to define how data fields are organized and aggregated in the Pivot Table.
+3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property to **true** and including the `FieldListService` module in the providers section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
 
 Here’s the updated sample code for **app.component.ts** with the report configuration and field list support:
 
@@ -185,7 +185,7 @@ export class AppComponent implements OnInit {
 2. The Pivot Table will display the data fetched from the SQL Server database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
-![Pivot Table bound with SQL database](../images/sql-data-binding.png)
+![Pivot Table bound with SQL database](../images/sql-data-binding.webp)
 
 ### Additional Resources
 Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a SQL Server database in the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.

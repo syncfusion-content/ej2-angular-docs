@@ -14,13 +14,13 @@ domainurl: ##DomainURL##
 
 A bubble series displays data as bubbles where the size of each bubble is proportional to a third value (z-value), and the position is determined by the x and y values.
 
-<img src="../../../../images/bubble.png" alt="Bubble chart displaying data points with varying sizes representing three-dimensional data">
+<img src="../../../images/bubble.png" alt="Bubble chart displaying data points with varying sizes representing three-dimensional data">
 
 To render a [bubble](https://www.syncfusion.com/angular-components/angular-charts/chart-types/bubble-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Bubble` in your chart configuration. This indicates that the data should be displayed as a bubble series in the chart.
 
-2. **Inject the BubbleSeries module**: Inject the `BubbleSeriesService` into your chart using the `@NgModule.providers` array. This step is essential, as it ensures that the necessary functionalities for rendering the bubble series are available in your chart.
+2. **Provide BubbleSeriesService**: Inject the `BubbleSeriesService` into your chart using the `@NgModule.providers` array. This step is essential, as it ensures that the necessary functionalities for rendering the bubble series are available in your chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,7 +128,7 @@ Data points with `null` or `undefined` values are considered empty. Empty data p
 
 **Mode**
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -82,7 +82,7 @@ Multiple levels of labels can be displayed on an axis using the [`multiLevelLabe
 • Text style
 • Border
 
->Note: To use multilevel label feature, inject `MultiLevelLabel` into the `@NgModule.providers`.
+> **Note:** To use multilevel label feature, inject `MultiLevelLabel` into the `@NgModule.providers`.
 
 ### Categories
 

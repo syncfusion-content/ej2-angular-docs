@@ -16,14 +16,14 @@ Follow these steps to create a Web API service that retrieves data from a MySQL 
 1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**
 2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
 
-![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.webp)
 
 ### Step 2: Install the MySql.Data NuGet Package
 To enable MySQL database connectivity in your application:
 1. Open the **NuGet Package Manager** in your project solution and search for **MySql.Data**.
 2. Install the **MySql.Data** package to add MySQL database support.
 
-![Add the NuGet package MySql.Data to the project](../images/mysql-data-nuget-package-install.png)
+![Add the NuGet package MySql.Data to the project](../images/mysql-data-nuget-package-install.webp)
 
 ### Step 3: Create a Web API Controller
 1. In the **Controllers** folder, create a new file named **PivotController.cs**.
@@ -115,7 +115,7 @@ In the **PivotController.cs** file, define a **Get** method that calls **GetMySQ
 1. Access the Web API endpoint at `https://localhost:7146/Pivot` to view the JSON data retrieved from the MySQL database.
 2. The browser will display the JSON data, as shown below.
 
-![Hosted Web API URL](../images/mysql-data.png)
+![Hosted Web API URL](../images/mysql-data.webp)
 
 ## Connecting the Pivot Table to a MySQL Database Using the Web API Service
 
@@ -126,7 +126,7 @@ This section explains how to connect the pivot table to a MySQL database by fetc
 2. Ensure all necessary Syncfusion EJ2 Pivot Table dependencies are installed in your Angular project.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **app.component.ts** file, map the Web API URL (`https://localhost:7146/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/).
+1. In the **app.component.ts** file, map the Web API URL (`https://localhost:7146/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
 2. Below is the sample code to configure the pivot table to fetch data from the Web API:
 
 ```typescript
@@ -156,8 +156,8 @@ export class AppComponent implements OnInit {
 
 ### Step 3: Define the Pivot Table Report
 1. Configure the pivot table report in the **app.component.ts** file to structure the data retrieved from the MySQL database.
-2. Use the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) to define how data fields are organized and aggregated.
-3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showfieldlist) property to **true** and including the `FieldListService` module in the providers. This allows users to interactively modify the pivot table’s structure by adding or rearranging fields.
+2. Use the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#filters) properties of [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to define how data fields are organized and aggregated.
+3. Enable the field list by setting the [showFieldList](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property to **true** and including the `FieldListService` module in the providers. This allows users to interactively modify the pivot table’s structure by adding or rearranging fields.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -190,7 +190,7 @@ export class AppComponent implements OnInit {
 2. The pivot table will display the data fetched from the MySQL database via the Web API, structured according to the defined report.
 3. The resulting pivot table will look like this:
 
-![Pivot table bound with MySQL database](../images/pivottable-with-mysql-data.png)
+![Pivot table bound with MySQL database](../images/pivottable-with-mysql-data.webp)
 
 ### Additional Resources
 Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MySQL database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MySQL-database-to-pivot-table) repository.

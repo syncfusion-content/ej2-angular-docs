@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The drill-through feature in the pivot table allows users to view the raw data behind aggregated values by opening a detailed grid dialog. When this dialog appears, you can customize the edit behavior of specific columns to provide appropriate input controls based on their data types.
 
-Using the [`drillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#drillthrough) event, you can define the edit type for any column in the drill-through grid. This is accomplished by checking the column name within the event handler and setting the appropriate edit type using the [`editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittype) property of the grid column.
+Using the [`drillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#drillthrough) event, you can define the edit type for any column in the drill-through grid. This is accomplished by checking the column name within the event handler and setting the appropriate edit type using the [`editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property of the grid column.
 
 ## Edit type options
 
@@ -25,7 +25,7 @@ The following edit types are available for different data types:
 * [`DatePicker`](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started) - For date data type
 * [`DateTimePicker`](https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started) - For date time data type
 
-> The [`editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edittype) property must be set based on the column's data type. For example, string data will not work properly with numeric text box edit type.
+> The [`editType`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittype) property must be set based on the column's data type. For example, string data will not work properly with numeric text box edit type.
 
 ## Implementation example
 

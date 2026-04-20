@@ -32,7 +32,7 @@ To know more about annotations, you can check on this video:
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs7" %}
 
->Note: To use annotation feature in chart, we need to inject `ChartAnnotationService` into the `@NgModule.providers`.
+>**Note**: To use annotation feature in chart, we need to inject `ChartAnnotationService` into the `@NgModule.providers`.
 
 ## Region
 
@@ -50,11 +50,11 @@ Annotations can be positioned relative to either the overall `Chart` area or a s
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs8" %}
 
-## Co-ordinate Units
+## Coordinate Units
 
 Use the [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits) property to define how annotation coordinates are interpreted. Choose between:
 - **Pixel** – The annotation is positioned using fixed pixel values within the chart area.  
-- **Point** – The annotation is positioned based on chart data points ([`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) values).
+- **Point** – The annotation is positioned based on chart data points ([`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) values).   
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,9 +84,9 @@ Annotation provides [`verticalAlignment`](https://ej2.syncfusion.com/angular/doc
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs10" %}
 
-## Adding y-axis sub title through annotation
+## Adding y-axis subtitle through annotation
 
-By setting text div in the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective#content) option of annotation object, you can add a sub title to the chart y-axis. Specify the [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits) value as `Pixel` and customize the [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) location of the text.
+By setting text div in the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective#content) option of annotation object, you can add a subtitle to the chart y-axis. Specify the [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits) value as `Pixel` and customize the [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) location of the text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

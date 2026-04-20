@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Line Chart in Angular Charts | Syncfusion
-description: Learn here all about Line Chart in Syncfusion Angular Charts component of Syncfusion Essential JS 2 and more.
+description: Learn all about the Line Chart in Syncfusion Angular Charts (Essential JS 2).
 platform: ej2-angular
 control: Line Chart
 documentation: ug
@@ -21,7 +21,7 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Line` in your chart configuration. This indicates that the data should be represented as a line chart, which is ideal for visualizing trends over time or across categories.
 
-2. **Inject the LineSeries module**: Use the `@NgModule.providers` method to inject the `LineSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering line series are available in your chart.
+2. **Provide LineSeriesService**: Add `LineSeriesService` to your `providers` (module or component) so the chart can render Line series. This ensures the necessary functionality for rendering line series is available.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

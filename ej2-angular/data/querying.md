@@ -1,28 +1,45 @@
 ---
 layout: post
-title: Querying in Angular Data component | Syncfusion
-description: Learn here all about Querying in Syncfusion Angular Data component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Angular DataManager - Querying | Syncfusion
+description: Learn here all about Querying in Syncfusion Angular DataManager for filtering, sorting, paging, searching, grouping, aggregation, projection, expand, and hierarchical data.
 control: Querying 
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Querying in Angular Data component
+# Querying in Angular DataManager
 
-In this section, you will see in detail about how to build query using [`Query`](https://ej2.syncfusion.com/documentation/api/data/query/) class and consume
-the data source.
+The `Query` class in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataManager is used to build structured queries that interact with a data source. The queries define operations such as filtering, sorting, paging, and grouping, making it easier to retrieve and manipulate data in a consistent way.
+
+By combining DataManager with the `Query` class, data operations can be executed either locally or against a remote service, depending on the configuration. This approach ensures that data handling remains efficient and flexible across different scenarios.
+
+Key capabilities of `Query` class:
+- **Filtering**: Retrieve records that match specific conditions.
+- **Sorting**: Arrange records in ascending or descending order.
+- **Paging**: Limit the number of records returned at once.
+- **Grouping**: Organize records into logical categories.
 
 ## Specifying resource name using `from`
 
-The [`from`](https://ej2.syncfusion.com/documentation/api/data/query/#from) method is used to specify the resource name or table name from where the data should be retrieved.
+The `Query` class allows defining the source from which data should be retrieved. The `from` method specifies the resource name, such as a table or endpoint, and sets the context for all subsequent query operations. Once the resource is defined, filtering, sorting, paging, and other operations can be applied seamlessly to that target source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs12/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs12/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -34,14 +51,24 @@ The [`from`](https://ej2.syncfusion.com/documentation/api/data/query/#from) meth
 
 ## Projection using `select`
 
-The [`select`](https://ej2.syncfusion.com/documentation/api/data/query/#select) method is used to select particular fields or columns from the data source.
+The `select` method in the `Query` class is used to project specific fields from a data source. Instead of retrieving all columns, select allows choosing only the required fields. This reduces the amount of data returned, minimizes payload size, and improves performance by limiting unnecessary information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs13/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs13/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -51,17 +78,26 @@ The [`select`](https://ej2.syncfusion.com/documentation/api/data/query/#select) 
   
 {% previewsample "page.domainurl/samples/data/getting-started/default-cs13" %}
 
-## Eager loading navigation properties
+## Loading related data with `expand`
 
-You can use the [`expand`](https://ej2.syncfusion.com/documentation/api/data/query/#expand) method to eagerly load navigation properties. The navigation properties
-values are accessed using appropriate field names separated by dot(.) sign.
+The `expand` method in the `Query` class is used to include related records when retrieving data. This technique, known as eager loading, ensures that navigation properties are fetched along with the main dataset. By expanding relationships, hierarchical or associated data can be accessed directly using dot‑separated field notation, making complex data retrieval more efficient.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/expand-cs1/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/expand-cs1/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -73,17 +109,24 @@ values are accessed using appropriate field names separated by dot(.) sign.
 
 ## Sorting
 
-You can use the [`sortBy`](https://ej2.syncfusion.com/documentation/api/data/query/#sortby) method to perform sort operation in the
-data source. Default sorting order is **ascending**. To change the sort order, either you can
-specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentation/api/data/query/#sortby) as **descending** or use the
-[`sortByDesc`](https://ej2.syncfusion.com/documentation/api/data/query/#sortbydesc) method.
+The `sortBy` method in the `Query` class arranges records in "ascending" order by default, while `sortByDesc` applies "descending" order. Alternatively, the descending parameter in sortBy can be used to specify sort direction. These methods enable precise control over data ordering based on selected fields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs14/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs14/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -97,15 +140,24 @@ specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentati
 
 ## Filtering
 
-You can use the [`where`](https://ej2.syncfusion.com/documentation/data/api-query.html#where) method to build filter criteria which allows you to get reduced view of
-records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.html#where) method can also be chained to form multiple filter criteria.
+The `where` method in the `Query` class defines filter conditions to retrieve records that match specific criteria. Multiple filters can be combined using chainable syntax, enabling precise and efficient queries for complex scenarios.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs15/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs15/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -117,8 +169,7 @@ records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.h
 
 ### Filter Operators
 
-Filter operators are generally used to specify the filter type. The various filter operators
-supported by [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) is listed below.
+Filter operators are generally used to specify the filter type. The various filter operators supported by DataManager is listed below.
 
 * greaterthan
 * greaterthanorequal
@@ -130,20 +181,28 @@ supported by [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/d
 * endswith
 * contains
 
-> These filter operators are used for creating filter query using
-[`where`](https://ej2.syncfusion.com/documentation/api/data/query/#where) method and [`Predicate`](https://ej2.syncfusion.com/documentation/api/data/predicate/) class.
+> These filter operators are used for creating filter query using `where` method and `Predicate` class.
 
-### Build complex filter criteria using `Predicate`
+### Complex filter criteria using `Predicate`
 
-Sometimes chaining [`where`](https://ej2.syncfusion.com/documentation/api/data/query/#where) method is not sufficient to create very
-complex filter criteria, in such cases we can use [`Predicate`](https://ej2.syncfusion.com/documentation/api/data/predicate/) class to create composite filter criteria.
+The `Predicate` class enables advanced filtering by combining multiple conditions using logical operators like AND and OR. It offers a structured approach to building complex queries beyond simple chaining, supporting powerful and flexible data filtering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs16/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs16/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -155,16 +214,24 @@ complex filter criteria, in such cases we can use [`Predicate`](https://ej2.sync
 
 ## Searching
 
-You can use the [`search`](https://ej2.syncfusion.com/documentation/api/data/query/#search) method to create search criteria, it
-differs from the filter in the way that search criteria will applied to all fields in the data
-source whereas filter criteria will be applied to a particular field.
+The `search` method in the `Query` class  performs a global search by applying a keyword across all fields in the dataset. It retrieves records with matches in any column, enabling broad and efficient data exploration beyond field‑specific filtering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs17/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs17/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -174,20 +241,35 @@ source whereas filter criteria will be applied to a particular field.
   
 {% previewsample "page.domainurl/samples/data/getting-started/default-cs17" %}
 
-> You can search particular fields by passing the field name collection in the second argument of [`search`](https://ej2.syncfusion.com/documentation/api/data/query/#search) method.
+> To perform a search on specific fields, provide an array of field names as the second argument to the [search](https://ej2.syncfusion.com/documentation/api/data/query/#search) method.
 
 ## Grouping
 
-[`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) allow you to group records by category. The
-[`group`](https://ej2.syncfusion.com/documentation/api/data/query/#group) method is used to add group query.
+The `group` method in the `Query` class organizes records into logical categories based on specified fields. This enables hierarchical structuring of data, making it easier to aggregate and present related records together. When combined with the DataManager, grouping supports efficient data analysis and visualization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/group-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/group-cs1/src/app.template.html %}
+{% highlight ts tabtitle="group.component.ts" %}
+{% include code-snippet/data/group-cs1/src/group.component.ts %}
 {% endhighlight %}
+
+{% highlight html tabtitle="app.template.html" %}
+{% raw %}
+
+<table class='e-table' >
+    <tr>
+        <th>Order ID</th>
+        <th>Customer ID</th>
+        <th>Employee ID</th>
+    </tr>
+    <tbody group *ngFor="let item of items" [data]='item' ></tbody>
+</table>
+
+{% endraw %}
+{% endhighlight %}
+
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/group-cs1/src/main.ts %}
@@ -196,19 +278,28 @@ source whereas filter criteria will be applied to a particular field.
   
 {% previewsample "page.domainurl/samples/data/group-cs1" %}
 
-> Multiple grouping can be done by simply chaining the [`group`](https://ej2.syncfusion.com/documentation/api/data/query/#group) method.
+> Multiple grouping can be done by simply chaining the `group` method.
 
 ## Paging
 
-You can query paged data using [`page`](https://ej2.syncfusion.com/documentation/data/api-query.html#page) method. This allow you to query
-particular set of records based on the page size and index.
+The `page` method in the `Query` class retrieves records based on a specified page index and page size. This approach divides large datasets into smaller segments, improving performance and reducing memory consumption by loading only the required portion of data at a time.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs18/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs18/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -220,7 +311,7 @@ particular set of records based on the page size and index.
 
 ## Aggregation
 
-The [`aggregate`](https://ej2.syncfusion.com/react/documentation/data/querying/#aggregation) method allows you to get aggregated value for a field based on the type.
+The `aggregate` method in the `Query` class computes statistical summaries such as sum, average, count, minimum, and maximum for specified fields within a dataset. This enables concise metric derivation, supporting analytical evaluation and reporting without requiring manual calculations.
 
 The built-in aggregate types are,
 
@@ -236,8 +327,19 @@ The built-in aggregate types are,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/aggregate-cs1/src/app.component.ts %}
 {% endhighlight %}
+
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/aggregate-cs1/src/app.template.html %}
+{% raw %}
+
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+    <tr><td></td><td></td><td>Min: {{min}}</td></tr>
+</table>
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -246,27 +348,3 @@ The built-in aggregate types are,
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/data/aggregate-cs1" %}
-
-## Hierarchical query
-
-You can use the [`hierarchy`](https://ej2.syncfusion.com/documentation/api/data/query/#hierarchy) method to build nested query.
-The hierarchical queries are commonly required when you use foreign key binding.
-
-The [`foreignKey`](https://ej2.syncfusion.com/documentation/api/data/query/#foreignkey) method is used to specify the key field of the
-foreign table and the second argument of the [`hierarchy`](https://ej2.syncfusion.com/documentation/api/data/query/#hierarchy) method
-accepts a selector function which selects the records from the foreign table.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/hierarchy-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/hierarchy-cs1/src/app.template.html %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/hierarchy-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/data/hierarchy-cs1" %}

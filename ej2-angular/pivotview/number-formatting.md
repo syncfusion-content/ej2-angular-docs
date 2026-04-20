@@ -23,12 +23,12 @@ The Pivot Table component supports the following display formats for numeric val
 
 ## Defining number format settings
 
-To configure number formats for numeric values, use the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#formatsettings) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/). Use the following main properties within the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#formatsettings) option to define how values are formatted:
+To configure number formats for numeric values, use the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). Use the following main properties within the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) option to define how values are formatted:
 
 ### Essential formatting properties
 
-* [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettingsModel/#name): Specifies the field name to which the formatting should be applied.
-* [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettingsModel/#format): Defines the format pattern for the respective field.
+* [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#name): Specifies the field name to which the formatting should be applied.
+* [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#format): Defines the format pattern for the respective field.
 
 ### Format type codes
 
@@ -63,7 +63,7 @@ You can also format the values at runtime using the formatting dialog. This opti
 
 ## Custom format
 
-Custom format lets you display numbers in your preferred pattern by setting the [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettingsModel/#format) property within the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#formatsettings). You can use one or more format specifiers (shown in the table below) to control how values appear in the Pivot Table.
+Custom format lets you display numbers in your preferred pattern by setting the [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#format) property within the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings). You can use one or more format specifiers (shown in the table below) to control how values appear in the Pivot Table.
 
 | Specifier | Description | Input | Format Output |
 | ------- |--------------- | ---------------- | --------------- |
@@ -91,7 +91,7 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 ## Toolbar
 
-Number formatting can be applied instantly at runtime through the built-in dialog, accessible from the toolbar. To enable this, set both the [`allowNumberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allownumberformatting) and [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showtoolbar) properties to **true**, and include the **NumberFormatting** option in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbar) property. The toolbar will then automatically display the "Number Formatting" icon. Clicking this icon opens the dialog, allowing you to specify number formats for value fields directly within the Pivot Table.
+Number formatting can be applied instantly at runtime through the built-in dialog, accessible from the toolbar. To enable this, set both the [`allowNumberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allownumberformatting) and [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showtoolbar) properties to **true**, and include the **NumberFormatting** option in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) property. The toolbar will then automatically display the "Number Formatting" icon. Clicking this icon opens the dialog, allowing you to specify number formats for value fields directly within the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

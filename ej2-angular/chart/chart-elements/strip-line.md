@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-The Angular Chart component supports horizontal and vertical strip lines, providing visual guides to highlight specific ranges in the chart area. Strip lines can be added to both axes and fully customized based on visual and functional requirements. To use strip line features, inject `StriplineService` into the `@NgModule.providers`.
+The Angular Chart component supports both horizontal and vertical strip lines, which act as visual guides to highlight specific ranges within the chart area. Strip lines can be added to both axes and fully customized based on visual and functional requirements. To use strip line features, inject `StriplineService` into the `@NgModule.providers`.
 
 <img src="../../images/stripline.png" alt="Chart with striplines emphasizing ranges">
 
-## Horizontal Strip lines
+## Horizontal striplines
 
 Horizontal strip lines are created by adding the [`stripline`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#striplines) configuration to the vertical axis and setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stripLineSettingsModel#visible) property to `true`. They highlight horizontal ranges in the chart, and multiple strip lines can be added to the same axis.
 

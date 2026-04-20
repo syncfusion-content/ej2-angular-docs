@@ -111,7 +111,7 @@ The Syncfusion Angular Grid provides the ability to display context menu items o
 
 This functionality can be implemented using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event and the context menu's [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#beforeopen) event.
 
-Using the Grid's `onclick` event listener, the clicked position values are captured through the `ngAfterViewInit` method, which is ideal for DOM related interactions and operations requiring access to rendered elements. These captured positions are then passed to the context menu's open method within the `onclick` event. Additionally, the default right-click behavior is prevented using the Grid's `created` event.
+Using the Grid's `onclick` event listener, the clicked position values are captured through the `ngAfterViewInit` method, which is ideal for DOM related interactions and operations requiring access to rendered elements. These captured positions are then passed to the context menu's open method within the `onclick` event. Additionally, the default right‑click behavior is prevented using the Grid's `created` event.
 
 The following example demonstrates showing the context menu on left click using the `created` event:
 

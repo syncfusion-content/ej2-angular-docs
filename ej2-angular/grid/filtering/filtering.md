@@ -123,18 +123,18 @@ The available operators and its supported data types are:
 
 Operator |Description |Supported Types
 -----|-----|-----
-`startsWith` |Checks whether a value begins with the specified value. |String
-`endsWith` |Checks whether a value ends with specified value. |String
-`contains` |Checks whether a value contains with specified value. |String
+`startsWith` |Checks whether a value begins with the specified value. |String
+`endsWith` |Checks whether a value ends with specified value. |String
+`contains` |Checks whether a value contains with specified value. |String
 `doesnotstartwith` |Checks whether the value does not begin with the specified value. |String
 `doesnotendwith` |Checks whether the value does not end with the specified value. |String
 `doesnotcontain` |Checks whether the value does not contain the specified value. |String
-`equal` |Checks whether a value equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
-`notEqual` |Checks whether a value not equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
-`greaterThan` |Checks whether a value is greater than with specified value. |Number &#124; Date
-`greaterThanOrEqual` |Checks whether a value is greater than or equal to specified value. |Number &#124; Date
-`lessThan` |Checks whether a value is less than with specified value. |Number &#124; Date
-`lessThanOrEqual` |Checks whether a value is less than or equal to specified value. |Number &#124; Date
+`equal` |Checks whether a value equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
+`notEqual` |Checks whether a value not equal to specified value. |String &#124; Number &#124; Boolean &#124; Date
+`greaterThan` |Checks whether a value is greater than with specified value. |Number &#124; Date
+`greaterThanOrEqual` |Checks whether a value is greater than or equal to specified value. |Number &#124; Date
+`lessThan` |Checks whether a value is less than with specified value. |Number &#124; Date
+`lessThanOrEqual` |Checks whether a value is less than or equal to specified value. |Number &#124; Date
 `isnull` |Returns the values that are null. |String &#124; Number &#124; Date
 `isnotnull` |Returns the values that are not null. |String &#124; Number &#124; Date
 `isempty` |Returns the values that are empty. |String

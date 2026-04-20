@@ -16,7 +16,7 @@ Data editing allows users to modify chart data points interactively by dragging 
 
 ![DataEditing](../../images/data-edit.gif)
 
-## Enable Data Editing
+## Enable data editing
 
 To activate data editing, set the [enable](https://ej2.syncfusion.com/angular/documentation/api/chart/dragsettingsmodel#enable) property to **true** in the [dragSettings](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#dragsettings) of the corresponding series.
 
@@ -38,4 +38,4 @@ These options help control both the visual feedback and the valid value range wh
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/data-editing-cs1" %}
 
->Note: To use data editing feature, inject `DataEditingService` into the `@NgModule.providers`.
+>**Note**: To use data editing feature, inject `DataEditingService` into the `@NgModule.providers`.

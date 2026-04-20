@@ -30,7 +30,7 @@ To know about logarithmic axis, you can check on this video:
   
 {% previewsample "page.domainurl/samples/chart/axis/log-cs5" %}
 
-> Note: To use the logarithmic axis, inject `LogarithmicService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#valuetype) property of the axis to `Logarithmic`.
+> **Note:** To use the logarithmic axis, inject `LogarithmicService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#valuetype) property of the axis to `Logarithmic`.
 
 ## Range
 

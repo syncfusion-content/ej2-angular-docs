@@ -61,9 +61,9 @@ Flat JSON has a simple key-value structure without nesting, which is suitable fo
 
 ## Implementation
 
-You can convert complex JSON to flat JSON programmatically and bind it to the pivot table using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasource) property in the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#load) event.
+You can convert complex JSON to flat JSON programmatically and bind it to the pivot table using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property in the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#load) event.
 
-In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasource) property, then modifying the field names in the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) and [columns](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettingsModel/#columns) based on the converted flat JSON under [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) in the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#load) event.
+In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property, then modifying the field names in the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) and [columns](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#columns) based on the converted flat JSON under [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) in the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#load) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

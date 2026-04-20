@@ -19,7 +19,7 @@ To enable grouping, set the [allowGrouping](https://ej2.syncfusion.com/angular/d
 The [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings) property provides options to customize grouping behavior, such as:
 
 - Showing or hiding the group drop area.
-- Controlling how grouped columns are displayed.
+- Controlling Grouped Column Display.
 - Defining custom caption templates for grouped rows.
 
 {% tabs %}

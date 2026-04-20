@@ -20,7 +20,7 @@ To render a [bar](https://www.syncfusion.com/angular-components/angular-charts/c
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Bar` in your chart configuration. This indicates that the data should be represented as a bar chart, which makes it easy to compare values across categories.
 
-2. **Inject the BarSeries module**: Use the `@NgModule.providers` method to inject the `BarSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering bar series are available in your chart.
+2. **Provide BarSeriesService**: Add `BarSeriesService` to your `providers` (module or component) so the chart can render Bar series. This ensures the necessary functionality for rendering bar series is available.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

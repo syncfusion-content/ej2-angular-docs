@@ -10,7 +10,6 @@ domainurl: ##DomainURL##
 
 # Category axis in Angular Chart component
 
-<!-- markdownlint-disable MD036 -->
 
 The category axis is used to represent string-based values instead of numeric values. It is commonly used for displaying discrete categories such as names, labels, or textual groupings along an axis.
 
@@ -30,11 +29,11 @@ To know about category axis, you can check on this video:
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs21" %}
 
->Note: To use the category axis, inject `CategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#valuetype-any) property of the axis to `Category`.
+>**Note:** To use the category axis, inject `CategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#valuetype-any) property of the axis to `Category`.
 
 <!-- markdownlint-disable MD036 -->
 
-## Labels Placement
+## Label Placement
 
 <!-- markdownlint-disable MD036 -->
 

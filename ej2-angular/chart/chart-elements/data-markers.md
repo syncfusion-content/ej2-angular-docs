@@ -3,7 +3,7 @@ layout: post
 title: Data markers in Angular Chart component | Syncfusion
 description: Learn here all about Data markers in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Data markers 
+control: Data markers
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -46,7 +46,7 @@ Assign different shapes to markers such as Rectangle, Circle, Diamond, Triangle,
   
 {% previewsample "page.domainurl/samples/chart/data-marker/marker-cs2" %}
 
->Note : To know more about the marker shape type refer the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettings#shape).
+>**Note** : To know more about the marker shape type refer the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettings#shape).
 
 ## Images
 
@@ -112,7 +112,7 @@ Marker can be filled with the series color by setting the [`isFilled`](https://e
   
 {% previewsample "page.domainurl/samples/chart/data-marker/marker-cs6" %}
 
-## Customize the marker with different shape using event
+## Customize marker shape using events
 
 Use the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) event to customize marker shapes. In the handler, set the `shape` for each data point as needed.
 

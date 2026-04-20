@@ -7,7 +7,7 @@ import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids';
     providers: [GroupService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' height='267px'>
+    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' height='300px'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                         <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>

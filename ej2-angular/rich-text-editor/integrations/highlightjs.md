@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Higlight.js in Angular Rich Text Editor | Syncfusion
+title: Highlight.js in Angular Rich Text Editor | Syncfusion
 description: Learn here all about Highlight.js in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Highlight.js
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate highlight.js into the Angular Rich Text Editor
+# Integrate Highlight.js into the Angular Rich Text Editor
 
-This guide shows how to integrate `highlight.js` - syntax highlighting with the Syncfusion Angular `RichTextEditor` so code blocks stay highlighted while editing and in preview/export.
+The [Highlight.js](https://highlightjs.org/) integration with the Syncfusion Angular Rich Text Editor allows for syntax highlighting, ensuring that code blocks remain highlighted during editing, previewing, and exporting.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Install the highlight.js package using the following command:
 npm install highlight.js
 ```
 
-## Configure highlight.js for the Rich Text Editor
+## Configure Highlight.js for the Rich Text Editor
 
 ### Step 1: Configure editor content target
 
@@ -39,7 +39,7 @@ npm install highlight.js
 
 ### Step 2: Register languages and load theme
 
-- Import the `highlight.js`core and the language modules you need module into your Angular component.
+- Import the `highlight.js` core and the language modules you need into your Angular component.
 
 ```typescript
 import highlight from 'highlight.js/lib/common';
@@ -76,7 +76,7 @@ Option B — import from `src/styles.css`:
 - Use `change` event to re-run highlighting after edits.
 
 ### Step 4: Add Highlight.js Styles to Ensure Proper Code Block Rendering
-To ensure that Highlight.js styles correctly apply inside the Rich Text Editor and override the default RTE code block formatting, include the following Highlight.js style rules in your app.css file.
+To ensure that Highlight.js styles correctly apply inside the Rich Text Editor and override the default Rich Text Editor code block formatting, include the following Highlight.js style rules in your app.css file.
 
 ```css
 .e-richtexteditor .e-rte-content .e-content pre code, 
@@ -110,5 +110,5 @@ The following examples demonstrate how Highlight.js can be seamlessly integrated
 ## Additional Resources
 
 - GitHub Repository: [Angular Rich Text Editor with Highlight.js](https://github.com/SyncfusionExamples/angular-richtexteditor-highlightjs/tree/master)
-- Highlight.js: https://highlightjs.org/
-- Syncfusion RichTextEditor API: https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/
+- [Highlight.js](https://highlightjs.org)
+- [Syncfusion RichTextEditor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor)

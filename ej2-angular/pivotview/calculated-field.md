@@ -16,21 +16,21 @@ The calculated field feature enables users to create custom value fields using m
 
 Users can create calculated fields in two convenient ways:
 - **Interactive Method**: Using the built-in dialog accessible from the Field List UI.
-- **Code-Based Method**: Configuring fields programmatically using the [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/) property.
+- **Code-Based Method**: Configuring fields programmatically using the [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldsettings) property.
 
-To enable the calculated field functionality, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowcalculatedfield) property to **true**. Once enabled, a "CALCULATED FIELD" button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can create and manage custom fields using an intuitive interface.
+To enable the calculated field functionality, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowcalculatedfield) property to **true**. Once enabled, a "CALCULATED FIELD" button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can create and manage custom fields using an intuitive interface.
 
 ### Defining calculated fields programmatically
 
-You can define calculated fields programmatically using the [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/) property. This approach is ideal for pre-configuring specific calculations. The following properties are essential for creating a calculated field:
+You can define calculated fields programmatically using the [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldsettings) property. This approach is ideal for pre-configuring specific calculations. The following properties are essential for creating a calculated field:
 
-- [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#name): Specifies a unique name for the calculated field.
-- [`formula`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#formula): Defines the mathematical expression using existing field names and arithmetic operators.
-- [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/): Configures the number format for displaying calculated results.
+- [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldsettings#name): Specifies a unique name for the calculated field.
+- [`formula`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldsettings#formula): Defines the mathematical expression using existing field names and arithmetic operators.
+- [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettings): Configures the number format for displaying calculated results.
 
 To use the calculated field feature, you must inject the `CalculatedFieldService` module into the pivot table.
 
-> **Note**: The calculated field feature applies only to value fields. By default, calculated fields created programmatically are added to the field list and calculated field dialog UI. To display a calculated field in the pivot table UI, it must be added to the [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#values) property, as shown in the code below.
+> **Note**: The calculated field feature applies only to value fields. By default, calculated fields created programmatically are added to the field list and calculated field dialog UI. To display a calculated field in the pivot table UI, it must be added to the [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values) property, as shown in the code below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,10 +72,10 @@ To edit an existing calculated field:
 4. Make changes to the field name, formula, or format as needed.
 5. Click **OK** to apply the changes.
 
-![Editing the calculated field](images/calculatdfield-grouping-edit1.png)
+![Editing the calculated field](images/calculatdfield-grouping-edit1.webp)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-grouping-edit2.png)
+![Editing the calculated field formula](images/calculatdfield-grouping-edit2.webp)
 
 ## Renaming an existing calculated field
 
@@ -89,10 +89,10 @@ To rename a calculated field:
 4. Replace the existing name with your preferred name.
 5. Click **OK** to save the new name.
 
-![Editing the calculated field](images/calculatdfield-renaming1.png)
+![Editing the calculated field](images/calculatdfield-renaming1.webp)
 <br/>
 
-![Renaming the calculated field](images/calculatdfield-renaming2.png)
+![Renaming the calculated field](images/calculatdfield-renaming2.webp)
 
 ## Editing an existing calculated field formula
 
@@ -109,10 +109,10 @@ To edit an existing calculated field formula:
 
 The pivot table will automatically refresh to reflect the updated calculations.
 
-![Editing the calculated field](images/calculatdfield-field-edit1.png)
+![Editing the calculated field](images/calculatdfield-field-edit1.webp)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-field-edit2.png)
+![Editing the calculated field formula](images/calculatdfield-field-edit2.webp)
 
 ## Reusing an existing formula in a new calculated field
 
@@ -128,19 +128,19 @@ To reuse an existing formula:
 6. Modify the formula further if needed, or use it as is.
 7. Click **OK** to create the new calculated field.
 
-![Dragging the existing calculated field](images/calculatdfield-reusing1.png)
+![Dragging the existing calculated field](images/calculatdfield-reusing1.webp)
 <br/>
 
-![Dragging field to formula](images/calculatdfield-reusing2.png)
+![Dragging field to formula](images/calculatdfield-reusing2.webp)
 <br/>
 
-![Reusing the existing calculated field formula](images/calculatdfield-reusing3.png)
+![Reusing the existing calculated field formula](images/calculatdfield-reusing3.webp)
 
 ## Applying formatting to calculated field values
 
 Formatting calculated field values enhances the readability and insight of your data in the pivot table. You can apply different formats using the calculated field dialog in the UI or programmatically through code.
 
-To format calculated field values in your code, use the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/) property. For more information about supported number formats, refer to the documentation [here](https://ej2.syncfusion.com/angular/documentation/pivotview/number-formatting).
+To format calculated field values in your code, use the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettings) property. For more information about supported number formats, refer to the documentation [here](https://ej2.syncfusion.com/angular/documentation/pivotview/number-formatting).
 
 ### Formatting through the user interface
 
@@ -154,13 +154,13 @@ To apply formatting to calculated field values via the user interface, use the b
 
 > **Note:** By default, **None** is selected in the dropdown.
 
-![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png)
+![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.webp)
 
 ### Applying custom formatting
 
 For specific formatting requirements, select the **Custom** option from the "Format" dropdown. This allows you to enter custom format patterns that meet your exact display needs.
 
-![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.png)
+![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.webp)
 
 ## Supported operators and functions for the calculated field formula
 
@@ -298,21 +298,21 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 ### CalculatedFieldCreate
 
-The [`calculatedFieldCreate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#calculatedfieldcreate) event enables you to validate and manage calculated field details before they are applied to the pivot table. This ensures data accuracy and prevents invalid configurations. The event is triggered when the "OK" button is clicked to close the calculated field dialog, allowing you to modify or validate the calculated field information before it is saved.
+The [`calculatedFieldCreate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#calculatedfieldcreate) event enables you to validate and manage calculated field details before they are applied to the pivot table. This ensures data accuracy and prevents invalid configurations. The event is triggered when the "OK" button is clicked to close the calculated field dialog, allowing you to modify or validate the calculated field information before it is saved.
 
 **Event Parameters:**
 
 The event provides the following parameters to facilitate interaction with calculated field data:
 
-* [`calculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldCreateEventArgs/#calculatedfield): Contains the calculated field information (new or existing) that was entered in the dialog.
+* [`calculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldcreateeventargs#calculatedfield): Contains the calculated field information (new or existing) that was entered in the dialog.
 
-* [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/): Provides access to the current [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/) of the pivot table.
+* [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldsettings): Provides access to the current [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldsettings) of the pivot table.
 
-* [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldCreateEventArgs/#cancel): A boolean property that prevents the dialog changes from being applied when set to **true**.
+* [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldcreateeventargs#cancel): A boolean property that prevents the dialog changes from being applied when set to **true**.
 
-* [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldCreateEventArgs/#datasourcesettings): Contains the current data source configuration, including input data, rows, columns, values, filters, and format settings.
+* [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldcreateeventargs#datasourcesettings): Contains the current data source configuration, including input data, rows, columns, values, filters, and format settings.
 
-* [`fieldName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldCreateEventArgs/#fieldname): Specifies the name of the field being created or updated.
+* [`fieldName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldcreateeventargs#fieldname): Specifies the name of the field being created or updated.
 
 **Example:**
 
@@ -332,7 +332,7 @@ The following example shows how to prevent users from creating calculated fields
 
 ### ActionBegin
 
-The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actionbegin) event allows you to control and monitor calculated field operations before they are executed, enabling you to validate or restrict user actions as needed.
+The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionbegin) event allows you to control and monitor calculated field operations before they are executed, enabling you to validate or restrict user actions as needed.
 
 This event is triggered when users interact with calculated field functionality in the following ways:
 - Clicking the calculated field button
@@ -343,9 +343,9 @@ The event provides the following parameters to help you handle these interaction
 
 **Event Parameters:**
 
-- [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionBeginEventArgs/#datasourcesettings): Contains the current data source configuration, including input data, rows, columns, values, filters, format settings, and other pivot table settings.
+- [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#datasourcesettings): Contains the current data source configuration, including input data, rows, columns, values, filters, format settings, and other pivot table settings.
 
-- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionBeginEventArgs/#actionname): Identifies the specific action the user is attempting to perform. The table below lists the available actions and their corresponding names:
+- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#actionname): Identifies the specific action the user is attempting to perform. The table below lists the available actions and their corresponding names:
 
 | User Action | Action Name |
 |-------------|-------------|
@@ -353,15 +353,15 @@ The event provides the following parameters to help you handle these interaction
 | [Edit icon click for calculated field](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar) | Edit calculated field |
 | [Context menu in calculated field dialog tree view](./calculated-field#Calculated-Field) | Calculated field context menu |
 
-- [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionBeginEventArgs/#fieldinfo): Provides information about the selected field when the action involves a specific field.
+- [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#fieldinfo): Provides information about the selected field when the action involves a specific field.
 
 > **Note**: This parameter is available only when the action involves a specific field, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
 
-- [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionBeginEventArgs/#cancel): A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action from proceeding.
+- [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#cancel): A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action from proceeding.
 
 **Example:**
 
-The example below illustrates how to prevent access to the calculated field dialog by canceling the action triggered when a user clicks the calculated field button. This is achieved by setting the **args.cancel** property to **true** within the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actionbegin) event:
+The example below illustrates how to prevent access to the calculated field dialog by canceling the action triggered when a user clicks the calculated field button. This is achieved by setting the **args.cancel** property to **true** within the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionbegin) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -377,30 +377,30 @@ The example below illustrates how to prevent access to the calculated field dial
 
 ### ActionComplete
 
-The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actioncomplete) event enables you to track when calculated field operations are successfully completed in the Pivot Table. This event is useful for performing additional actions or logging activities after users create or modify calculated fields.
+The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actioncomplete) event enables you to track when calculated field operations are successfully completed in the Pivot Table. This event is useful for performing additional actions or logging activities after users create or modify calculated fields.
 
 The event provides the following parameters to help you handle completed operations:
 
 **Event Parameters:**
 
-- [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionCompleteEventArgs/#datasourcesettings): Contains the updated data source configuration, including input data, rows, columns, values, filters, format settings, and other pivot table settings after the operation is completed.
+- [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#datasourcesettings): Contains the updated data source configuration, including input data, rows, columns, values, filters, format settings, and other pivot table settings after the operation is completed.
 
-- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionCompleteEventArgs/#actionname): Identifies the specific action completed by the user. The table below lists the available actions and their corresponding names:
+- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actionname): Identifies the specific action completed by the user. The table below lists the available actions and their corresponding names:
 
 | User Action | Action Name |
 |-------------|-------------|
 | [Creating calculated field](./calculated-field#calculated-field) | Calculated field applied |
 | [Editing calculated field](./calculated-field#editing-through-the-field-list-and-the-grouping-bar) | Calculated field edited |
 
-- [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionCompleteEventArgs/#fieldinfo): Provides information about the selected field when the action involves a specific field.
+- [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#fieldinfo): Provides information about the selected field when the action involves a specific field.
 
 > **Note**: This parameter is available only when the action involves a specific field, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
 
-- [`actionInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionCompleteEventArgs/#actioninfo): Contains detailed information about the completed action. For calculated field operations, this includes the complete calculated field information, its formula, and the field name.
+- [`actionInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actioninfo): Contains detailed information about the completed action. For calculated field operations, this includes the complete calculated field information, its formula, and the field name.
 
 **Example:**
 
-The example below demonstrates how to use the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actioncomplete) event to log information when calculated field operations are completed:
+The example below demonstrates how to use the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actioncomplete) event to log information when calculated field operations are completed:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -416,9 +416,9 @@ The example below demonstrates how to use the [`actionComplete`](https://ej2.syn
 
 ### ActionFailure
 
-The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#actionfailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionfailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
-* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionFailureEventArgs/#actionname): It holds the name of the current action failed. The following are the UI actions and their names:
+* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#actionname): It holds the name of the current action failed. The following are the UI actions and their names:
 
    | Action | Action Name |
    |------|-------------|
@@ -426,7 +426,7 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
    | [`Edit icon in calculated field`](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
    | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#Calculated-Field)| Calculated field context menu|
 
-* [`errorInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotActionFailureEventArgs/#errorinfo): It holds the error information of the current UI action.
+* [`errorInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#errorinfo): It holds the error information of the current UI action.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

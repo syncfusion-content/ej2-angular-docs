@@ -55,7 +55,7 @@ To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/an
 * Grouping, which takes additional time to splitting the raw items into the provided format.
 * Date Formatting, which takes additional time to convert date format.
 * Date Formatting with sorting, here additionally full date time format should be framed to perform sorting along with the provided date format which lags the performance.
-* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
+* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) or [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
 * Even if virtual scrolling is enabled, not only is the current view port data retrieved, but also the data for the immediate previous page and the immediate next page. As a result, when the end user scrolls slightly ahead or behind, the next or previous page data is displayed immediately without requiring a refresh. **Note:** If the pivot table's width and height are large, the loading data count in the current, previous, and next viewport (pages) will also increase, affecting performance.
 
 ## Virtual scrolling for static field list
@@ -65,8 +65,8 @@ Virtual scrolling works automatically with "Popup" field lists when you set the 
 Here's how to make virtual scrolling work with a static field list:
 
 1. Enable virtual scrolling in the PivotTable component by setting the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablevirtualization) property to **true**, which improves performance for large datasets.
-2. Connect the PivotFieldList component to the PivotTable component using the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#load) event.
-3. Ensure synchronization between the pivot table and field list by updating the pivot table’s report configuration with the field list’s report configuration during the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#load) event.
+2. Connect the PivotFieldList component to the PivotTable component using the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#load) event.
+3. Ensure synchronization between the pivot table and field list by updating the pivot table’s report configuration with the field list’s report configuration during the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#load) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

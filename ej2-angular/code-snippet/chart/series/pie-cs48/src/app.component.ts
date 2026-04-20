@@ -14,7 +14,7 @@ standalone: true,
     template: `<ejs-accumulationchart id="chart-container" [title]='title' [legendSettings]='legendSettings' 
         [tooltip]='tooltip' (legendRender)='legendRender($event)'>
         <e-accumulation-series-collection>
-            <e-accumulation-series [dataSource]='piedata' xName='Browser' yName='Users' type='Pie' 
+            <e-accumulation-series [dataSource]='piedata'  [radius]='radius'  xName='Browser' yName='Users' type='Pie' 
                 pointColorMapping='Color' [dataLabel]='dataLabel'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>`
@@ -25,22 +25,30 @@ export class AppComponent implements OnInit {
     public legendSettings?: Object;
     public tooltip?: Object;
     public dataLabel?: Object;
-    
+    public radius?: string;
     ngOnInit(): void {
         this.piedata = StatisticsDetails;
         this.title = 'Mobile Browser Statistics';
         this.legendSettings = {
+            
+            itemPadding: 25,
+            width: '105',
             visible: true,
             template: `<div style="display:flex; align-items:center; gap:8px; padding:4px 0; line-height:1.1;">
-        <div style="display:flex; flex-direction:column;">
-            <span class="browser-name" style="font-weight:800; font-size:14px; color:;"></span>
-            <span class="browser-info" style="font-size:12px; opacity:0.85;"></span>
-        </div>
-     </div>`
+            <div style="display:flex; flex-direction:column;">
+            <div style="display:flex; flex-direction:column;">
+                <span class="browser-name" style="font-weight:800; font-size:14px; color:;"></span>
+                <span class="browser-name" style="font-weight:800; font-size:14px; color:;"></span>
+                <span class="browser-info" style="font-size:12px; opacity:0.85;"></span>
+                <span class="browser-info" style="font-size:12px; opacity:0.85;"></span>
+            </div>
+            </div>
+         </div>`
         };
         this.tooltip = {
             enable: true
         };
+        this.radius =  '65%';
         this.dataLabel = {
             visible: true,
             format: '{value}M',
@@ -50,12 +58,15 @@ export class AppComponent implements OnInit {
 
     public legendRender(args: any): void {
         const pt: any = StatisticsDetails.find((item: any) => item.Browser === args.text);
-        const browser = args.text;
-        const users = pt?.Users;
-        const color = args.fill;
-        args.template = (args.template as string)
-            .replace('color:;', `color:${color};`)
-            .replace('<span class="browser-name"', `<span class="browser-name">${browser}`)
-            .replace('<span class="browser-info"', `<span class="browser-info"><b>${users} million</b> people use ${browser}`);
+        args.template = args.template
+        .replace("></span>", ">" + args.text + "</span>")
+          
+        .replace(
+          
+          "></span>",
+              
+          ">" + pt.Users + "millon people use " + args.text + "</span>",
+              
+        );
     }
 }

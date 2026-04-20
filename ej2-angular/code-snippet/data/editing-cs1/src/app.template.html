@@ -2,7 +2,7 @@
     <input type="number" id='OrderID' placeholder="Order ID" [(ngModel)]="edit.OrderID" />
     <input type="text" id="CustomerID" placeholder="Customer ID" [(ngModel)]="edit.CustomerID" *ngIf="show"/>
     <input type="number" id="EmployeeID" placeholder="Employee ID" [(ngModel)]="edit.EmployeeID" *ngIf="show"/>
-    <input type="button" [value]="text" id="manipulate" (click)="insert()" />
+    <input type="button" [value]="text" id="manipulate" (click)="insertRecord()" />
 </div>
 <table class='e-table'>
     <tr>

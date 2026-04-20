@@ -64,11 +64,11 @@ ng new my-app --style=scss
 
 * During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
-![Initial_setup](images/SSR.png)
+![Initial_setup](images/SSR.webp)
 
 * Select the required AI tool or 'none' if you do not need any AI tool.
 
-![Initial_setup](images/Ai.png)
+![Initial_setup](images/Ai.webp)
 
 Once the project is created, navigate to the project folder to begin working with your new Angular application:
 

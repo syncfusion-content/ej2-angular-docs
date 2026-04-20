@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 Error bars are graphical representations of the variability of data and are used on graphs to indicate the error or uncertainty in a reported measurement.
 
-<img src="../../../../images/error-bar.png" alt="Error bar chart showing data variability">
+<img src="../../../images/error-bar.png" alt="Error bar chart showing data variability">
 
 To render error bars for the series in your chart, follow these steps:
 
-1. **Set visibility**: Set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#visible) property to **true** for the error bars to be displayed.
+1. **Set visibility**: Set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#visible) property to **true** for the error bars to be displayed.
 
 2. **Inject the ErrorBar module**: Use the `@NgModule.providers` method to inject the `ErrorBar` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering error bar series are available in your chart.
 
@@ -40,7 +40,7 @@ To render error bars for the series in your chart, follow these steps:
 
 ## Error bar type
 
-To change the error bar rendering type, use the [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#type) option of error bar. To change the error bar line length, you can use the [`verticalError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#verticalerror) property.
+To change the error bar rendering type, use the [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#type) option of error bar. To change the error bar line length, you can use the [`verticalError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#verticalerror) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,7 +56,7 @@ To change the error bar rendering type, use the [`type`](https://ej2.syncfusion.
 
 ## Customizing error bar type
 
-To customize the error bar type, set the error bar [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#type) to `Custom`, and then change the horizontal or vertical positive and negative error values for the error bar.
+To customize the error bar type, set the error bar [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#type) to `Custom`, and then change the horizontal or vertical positive and negative error values for the error bar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,7 +76,7 @@ To customize the error bar type, set the error bar [`type`](https://ej2.syncfusi
 
 ## Error bar mode
 
-The error bar mode is used to define whether the error bar line is drawn horizontally, vertically, or on both sides. To change the error bar mode, use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#mode) option.
+The error bar mode is used to define whether the error bar line is drawn horizontally, vertically, or on both sides. To change the error bar mode, use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#mode) option.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +96,7 @@ The error bar mode is used to define whether the error bar line is drawn horizon
 
 ## Error bar direction
 
-To change the direction of the error bars to plus, minus, or both sides, use the [`direction`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#direction) property.
+To change the direction of the error bars to plus, minus, or both sides, use the [`direction`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#direction) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,7 +116,7 @@ To change the direction of the error bars to plus, minus, or both sides, use the
 
 ## Customizing error bar cap
 
-To customize the length, width, opacity, and fill color of the error bar caps, you can use the [`errorBarCap`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#errorbarcap) property.
+To customize the length, width, opacity, and fill color of the error bar caps, you can use the [`errorBarCap`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#errorbarcap) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,7 +136,7 @@ To customize the length, width, opacity, and fill color of the error bar caps, y
 
 ## Customizing error bar color
 
-To customize the error bar color for individual errors, use the [`errorBarColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#errorbarcolormapping) property. You can also customize the vertical error, horizontal error, horizontal negative and positive error, and vertical negative and positive error for an individual point using the [`verticalError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#verticalerror), [`horizontalError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#horizontalerror), [`horizontalNegativeError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#horizontalnegativeerror), [`horizontalPositiveError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#horizontalpositiveerror), [`verticalNegativeError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#verticalnegativeerror), and [`verticalPositiveError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel/#verticalpositiveerror) properties.
+To customize the error bar color for individual errors, use the [`errorBarColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#errorbarcolormapping) property. You can also customize the vertical error, horizontal error, horizontal negative and positive error, and vertical negative and positive error for an individual point using the [`verticalError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#verticalerror), [`horizontalError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#horizontalerror), [`horizontalNegativeError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#horizontalnegativeerror), [`horizontalPositiveError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#horizontalpositiveerror), [`verticalNegativeError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#verticalnegativeerror), and [`verticalPositiveError`](https://ej2.syncfusion.com/angular/documentation/api/chart/errorBarSettingsModel#verticalpositiveerror) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
