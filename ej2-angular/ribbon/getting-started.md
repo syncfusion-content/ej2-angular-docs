@@ -89,16 +89,16 @@ To specify the `ngcc` package in the `package.json` file, add the `-ngcc` suffix
 Import the required CSS theme files for the Ribbon component and its dependencies into your `styles.css` file.
 
 ```css
-@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css'; 
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';    
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import "../node_modules/@syncfusion/ej2-ribbon/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-angular-ribbon/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css'; 
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';    
+@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-ribbon/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-angular-ribbon/styles/tailwind3.css";
 ```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Ribbon component
