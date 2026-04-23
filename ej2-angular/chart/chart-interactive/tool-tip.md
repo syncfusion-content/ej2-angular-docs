@@ -166,7 +166,7 @@ The [`highlightColor`](https://ej2.syncfusion.com/angular/documentation/api/char
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs6" %}
 
-## Hide tooltip in Angular Chart component
+## Hide tooltip
 
 Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event to hide tooltips for deselected series. When a series is deselected, cancel the tooltip in the event.
 
@@ -182,7 +182,7 @@ Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/c
   
 {% previewsample "page.domainurl/samples/chart/how-to-cs9" %}
 
-## Percentage tooltip in Angular Chart component
+## Percentage tooltip
 
 Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event to display percentage values for pie points. Compute the percentage from `args.point.y` and `args.series.sumOfPoints`, then set the formatted result on `args.content`.
 
@@ -198,7 +198,7 @@ Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/c
   
 {% previewsample "page.domainurl/samples/chart/how-to-cs15" %}
 
-## Tooltip format in Angular Chart component
+## Tooltip format
 
 Use the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event to read the current point's x value and format it with `formatDate` for display in the tooltip.
 
@@ -216,7 +216,7 @@ The output will appear as follows,
   
 {% previewsample "page.domainurl/samples/chart/how-to-cs21" %}
 
-## Tooltip as table in Angular Chart component
+## Tooltip as table
 
 Render a table in the tooltip using the tooltip template.
 

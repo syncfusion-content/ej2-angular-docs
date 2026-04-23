@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+import { PivotViewAllModule, PivotFieldListAllModule, PDFExportService } from '@syncfusion/ej2-angular-pivotview'
 
 
 
@@ -18,7 +18,7 @@ imports: [
         PivotFieldListAllModule
     ],
 
-
+providers: [PDFExportService],
 standalone: true,
   selector: 'app-container',
   template: `<div class="col-md-8">

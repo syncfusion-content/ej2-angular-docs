@@ -102,7 +102,7 @@ By setting text div in the [`content`](https://ej2.syncfusion.com/angular/docume
 
 ## Annotation customization
 
-### Dotted line in Angular Chart component
+### Dotted line
 
 Set the annotation [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits) to `Point` to place dotted lines at specific data point positions using their [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#y) values.
 
@@ -118,7 +118,7 @@ Set the annotation [`coordinateUnits`](https://ej2.syncfusion.com/angular/docume
   
 {% previewsample "page.domainurl/samples/chart/how-to-cs6" %}
 
-### Footer in Angular Chart component
+### Footer
 
 Use annotations to add both a watermark and a footer to the chart. Initialize custom elements with the [`annotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel) property and provide the HTML to render via the [`content`](https://ej2.syncfusion.com/angular/documentation/api/chart/annotationDirective#content) option. For a watermark, supply the text "syncfusion" and position it using the desired [`coordinateUnits`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAnnotationSettingsModel#coordinateunits).
 
@@ -154,7 +154,7 @@ Use the [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAn
   
 {% previewsample "page.domainurl/samples/chart/how-to-cs8" %}
 
-### Stacking total in Angular Chart component
+### Stacking total
 
 To show the total at each stacked data point, handle the [`annotationRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#annotationrender) event to compute the series' stacked value and update the annotation content before it renders.
 

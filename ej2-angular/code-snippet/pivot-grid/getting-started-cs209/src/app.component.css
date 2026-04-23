@@ -42,6 +42,18 @@
     line-height: 1;
 }
   
+#PivotTable1Container {
+    margin-bottom: 20px;
+}
+
+.pivot-container {
+    padding: 10px;
+}
+
+#PivotTable1 {
+    margin-bottom: 20px;
+}
+
 .sb-icon-profit::before {
     content: '\e234';
     padding-left: 30px;
