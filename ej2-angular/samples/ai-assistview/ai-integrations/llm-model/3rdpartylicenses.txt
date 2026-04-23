@@ -34,9 +34,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-lists
 SEE LICENSE IN license
 
-@syncfusion/ej2-markdown-converter
-SEE LICENSE IN license
-
 @syncfusion/ej2-navigations
 SEE LICENSE IN license
 

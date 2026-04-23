@@ -82,10 +82,10 @@ To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 Add SpeechToText component's styles as given below in `style.css`.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
 ```
 
 ## Adding the Syncfusion SpeechToText component
@@ -137,11 +137,11 @@ The following example demonstrates a default SpeechToText component.
 
 {% previewsample "page.domainurl/samples/speech-to-text/getting-started/index" %}
 
-> The [SpeechToText](../api/speech-to-text/) component requires an active internet connection and must be used in a browser that supports the [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) Web Speech API.
+> The [SpeechToText](../api/speech-to-text) component requires an active internet connection and must be used in a browser that supports the [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) Web Speech API.
 
 ## Customizing button content
 
-The content of the SpeechToText button can be customized for its active and inactive states. Use the [`content`](../api/speech-to-text/buttonSettingsModel/#content) property to define the text for the start listening state and the [`stopContent`](../api/speech-to-text/buttonSettingsModel/#stopContent) property for the stop listening state. These properties are configured within the [`buttonSettings`](../api/speech-to-text/#buttonSettings) property.
+The content of the SpeechToText button can be customized for its active and inactive states. Use the [`content`](../api/speech-to-text/buttonSettingsModel#content) property to define the text for the start listening state and the [`stopContent`](../api/speech-to-text/buttonSettingsModel#stopContent) property for the stop listening state. These properties are configured within the [`buttonSettings`](../api/speech-to-text#buttonSettings) property.
 
 The following example shows how to configure `buttonSettings` in the SpeechToText component.
 
