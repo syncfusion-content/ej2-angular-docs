@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The drill-down and drill-up features in the PivotTable component allow users to expand or collapse hierarchical data for detailed or summarized views. When a field member(s) contains child items, expand and collapse icons automatically appear in the corresponding row or column header. Clicking these icons expands the selected item to display its child members or collapses it to show a summarized view. If a field member(s) does not have any further levels to display, the icons will not appear.
 
-![output](images/drill.webp)
+![output](images/drill.png)
 
 ## Drill position
 
@@ -22,7 +22,7 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 > This feature is built-in and works automatically every time you expand or collapse data, making the pivot table faster and more efficient
 
-![output](images/drill_position.webp)
+![output](images/drill_position.png)
 
 ## Expand All
 
