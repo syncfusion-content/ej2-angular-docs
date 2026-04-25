@@ -72,10 +72,10 @@ To edit an existing calculated field:
 4. Make changes to the field name, formula, or format as needed.
 5. Click **OK** to apply the changes.
 
-![Editing the calculated field](images/calculatdfield-grouping-edit1.webp)
+![Editing the calculated field](images/calculatdfield-grouping-edit1.png)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-grouping-edit2.webp)
+![Editing the calculated field formula](images/calculatdfield-grouping-edit2.png)
 
 ## Renaming an existing calculated field
 
@@ -89,10 +89,10 @@ To rename a calculated field:
 4. Replace the existing name with your preferred name.
 5. Click **OK** to save the new name.
 
-![Editing the calculated field](images/calculatdfield-renaming1.webp)
+![Editing the calculated field](images/calculatdfield-renaming1.png)
 <br/>
 
-![Renaming the calculated field](images/calculatdfield-renaming2.webp)
+![Renaming the calculated field](images/calculatdfield-renaming2.png)
 
 ## Editing an existing calculated field formula
 
@@ -109,10 +109,10 @@ To edit an existing calculated field formula:
 
 The pivot table will automatically refresh to reflect the updated calculations.
 
-![Editing the calculated field](images/calculatdfield-field-edit1.webp)
+![Editing the calculated field](images/calculatdfield-field-edit1.png)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-field-edit2.webp)
+![Editing the calculated field formula](images/calculatdfield-field-edit2.png)
 
 ## Reusing an existing formula in a new calculated field
 
@@ -128,13 +128,13 @@ To reuse an existing formula:
 6. Modify the formula further if needed, or use it as is.
 7. Click **OK** to create the new calculated field.
 
-![Dragging the existing calculated field](images/calculatdfield-reusing1.webp)
+![Dragging the existing calculated field](images/calculatdfield-reusing1.png)
 <br/>
 
-![Dragging field to formula](images/calculatdfield-reusing2.webp)
+![Dragging field to formula](images/calculatdfield-reusing2.png)
 <br/>
 
-![Reusing the existing calculated field formula](images/calculatdfield-reusing3.webp)
+![Reusing the existing calculated field formula](images/calculatdfield-reusing3.png)
 
 ## Applying formatting to calculated field values
 
@@ -154,13 +154,13 @@ To apply formatting to calculated field values via the user interface, use the b
 
 > **Note:** By default, **None** is selected in the dropdown.
 
-![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.webp)
+![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png)
 
 ### Applying custom formatting
 
 For specific formatting requirements, select the **Custom** option from the "Format" dropdown. This allows you to enter custom format patterns that meet your exact display needs.
 
-![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.webp)
+![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.png)
 
 ## Supported operators and functions for the calculated field formula
 

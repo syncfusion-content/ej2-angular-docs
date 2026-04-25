@@ -126,7 +126,7 @@ In accumulation charts, you can use the drill down and drill up options to explo
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs225" %}
 
-![output](images/expand_collapse.webp)
+![output](images/expand_collapse.png)
 
 ### Column Headers and Delimiters
 

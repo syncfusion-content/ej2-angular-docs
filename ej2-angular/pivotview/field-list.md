@@ -101,7 +101,7 @@ The field list provides a simple way to organize fields in different orders, mak
 
 > By default, fields are displayed in the default order as they appear in the data source.
 
-![Field list with sorting options](images/fieldlist-default-sort.webp)
+![Field list with sorting options](images/fieldlist-default-sort.png)
 
 ### Sort fields in a desired order
 
@@ -143,7 +143,7 @@ Organizing fields into custom folders in the Field List helps users manage and l
 
 The Field List allows users to quickly modify their data analysis by selecting or unselecting fields as needed. Using the checkbox beside each field, users can easily add fields to include them in the report or remove fields to exclude them from the current analysis at runtime.
 
-![Field List with checkboxes for adding or removing fields](images/fieldlist_treeview.webp)
+![Field List with checkboxes for adding or removing fields](images/fieldlist_treeview.png)
 
 ## Remove specific field(s) from displaying
 
@@ -165,56 +165,56 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 To rearrange fields, users can drag a field from the Field List and drop it into the desired axis (column, row, value, or filter) using the drag-and-drop holder. This allows users to modify the report dynamically during runtime, adjusting the layout to suit their needs.
 
-![output](images/fieldlist_axes.webp)
+![output](images/fieldlist_axes.png)
 
 ## Filtering members
 
 Users can filter members in the row, column, and filter axes by selecting the filter icon next to each field. This opens a dialog where users can choose to include or exclude specific members from the Pivot Table. To learn more about filtering members, [refer to the filtering documentation](./filtering).
 
-![Filter icon next to each field](images/fieldlist_filtericon.webp)
+![Filter icon next to each field](images/fieldlist_filtericon.png)
 
-![Filter dialog to include or exclude members](images/fieldlist_editor.webp)
+![Filter dialog to include or exclude members](images/fieldlist_editor.png)
 
-![Pivot Table after filtering members](images/fieldlist_filteringgrid.webp)
+![Pivot Table after filtering members](images/fieldlist_filteringgrid.png)
 
 ## Sorting members
 
 The Pivot Table allows users to sort members in the row and column axes using a sort icon next to each field. By clicking this icon, users can arrange members in either ascending or descending order at runtime. This option helps users organize data in a way that suits their needs. For more details on sorting members, [refer here](./sorting).
 
-![Sorting the field list](images/fieldlist_sorticon.webp)
+![Sorting the field list](images/fieldlist_sorticon.png)
 <br/>
 
-![Sorted pivot table](images/fieldlist_sortgrid.webp)
+![Sorted pivot table](images/fieldlist_sortgrid.png)
 
 ## Calculated fields
 
 The calculated field option allows users to create a new field based on existing fields from the data source using basic arithmetic operations, such as addition, subtraction, multiplication, and division. To use this option in the Field List UI, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowcalculatedfield) property in the Pivot Table to **true**. When enabled, a button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can define a new calculated field. For more details on calculated fields, refer to [this section](./calculated-field).
 
-![Enabling calculated field in Field List UI](images/gs_calc_button.webp)
+![Enabling calculated field in Field List UI](images/gs_calc_button.png)
 <br/>
 
-![Creating new calculated field](images/gs_calc_dialog.webp)
+![Creating new calculated field](images/gs_calc_dialog.png)
 <br/>
 
-![New calculated field named Total Amount has been added in the Pivot Table](images/gs_calc_grid.webp)
+![New calculated field named Total Amount has been added in the Pivot Table](images/gs_calc_grid.png)
 
 ## Changing aggregation type of value fields at runtime
 
 Users can perform calculations on a group of values by selecting an aggregation type. Each value field in the Field List appears with a dropdown icon. Clicking this icon allows users to choose an aggregation type, such as sum, average, or count, at runtime. Once selected, the Pivot Table updates automatically to reflect the chosen aggregation type for the values. For more details on aggregation, refer to [aggregation](./aggregation).
 
-![Icon to change aggregation type](images/aggregation_fl_icon.webp)
+![Icon to change aggregation type](images/aggregation_fl_icon.png)
 <br/>
 
-![List of pre-defined aggregation types](images/fieldlist_aggregation_avg.webp)
+![List of pre-defined aggregation types](images/fieldlist_aggregation_avg.png)
 <br/>
 
-![Resultant Pivot Table shows that the average aggregation type has been applied to the Unit Sold value field](images/fieldlist_aggregation_grid.webp)
+![Resultant Pivot Table shows that the average aggregation type has been applied to the Unit Sold value field](images/fieldlist_aggregation_grid.png)
 
 ## Defer layout update
 
 The defer layout update option allows users to update the Pivot Table only when needed, instead of after every change in the Field List. To enable this option, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowdeferlayoutupdate) property to **true** in the Pivot Table. When enabled, a checkbox appears in the Field List, checked by default. Users can uncheck this checkbox to make changes without updating the Pivot Table immediately, and then apply all changes at once. For more details on defer layout update, refer to [defer update](./defer-update).
 
-![Defer layout update checkbox](images/fieldlist_deferupdate.webp)
+![Defer layout update checkbox](images/fieldlist_deferupdate.png)
 
 ## Show built-in Field List (Popup) over specific target
 

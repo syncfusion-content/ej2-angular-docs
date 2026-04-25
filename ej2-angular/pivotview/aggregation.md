@@ -69,10 +69,10 @@ For each value field, the aggregation type can be set using the property [`type`
 You can dynamically modify the aggregation type for value fields in the Pivot Table component through the UI at runtime. Value fields, displayed in the grouping bar and field list, include a dropdown icon that allows you to select from various aggregation types (e.g., **Sum**, **Average**, **Count**). Once you select a new aggregation type, the pivot table updates instantly to reflect the change, providing a seamless experience for data analysis.
 
 <!-- markdownlint-disable MD012 -->
-![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.webp)
+![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.png)
 <br/>
 
-![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.webp)
+![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.png)
 
 ## Show desired aggregation types in its dropdown menu
 

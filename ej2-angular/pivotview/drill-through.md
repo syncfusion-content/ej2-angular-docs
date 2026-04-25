@@ -112,7 +112,7 @@ export class AppComponent {
 }
 ```
 
-![output](images/maxrows.webp)
+![output](images/maxrows.png)
 
 ## Events
 
