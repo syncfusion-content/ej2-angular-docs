@@ -100,7 +100,7 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the "Value", "Condition" and "Format" options based on user requirement and click "OK". To remove a conditional format, click the "Delete" icon besides the respective condition.  
 
-![output](images/cformatting_remove.webp)
+![output](images/cformatting_remove.png)
 
 ## Event
 

@@ -70,17 +70,17 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/angular/documentation/pivotview/pivot-chart#multiple-axis).
 
-![Switching to multiple axes](images/chart-option.webp)
+![Switching to multiple axes](images/chart-option.png)
 
 The pivot chart supports three modes for multiple axes: `Stacked`, `Single`, and `Combined`. Users can select a mode from the "Multiple Axis Mode" dropdown list, which appears after clicking the **More...** option in the chart type dropdown menu.
 
-![Multiple axis mode options](images/multiple-axis-mode.webp)
+![Multiple axis mode options](images/multiple-axis-mode.png)
 
 ## Show or hide legend
 
 In the pivot chart, you can show or hide the legend dynamically using an option in the chart type drop-down menu on the toolbar. This allows you to control whether the legend appears alongside the chart. For accumulation chart types, such as pie, doughnut, pyramid, and funnel, the legend is hidden by default. You can enable or disable the legend using a built-in checkbox available in the drop-down menu.
 
-![Chart legend](images/chart-legend.webp)
+![Chart legend](images/chart-legend.png)
 
 ## Adding custom option to the toolbar
 
@@ -164,11 +164,11 @@ SQL Server is a relational database management system (RDBMS) that can be used t
 
 **1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
 
-![Create ASP.NET Core Web App project](images/azure-asp-core-web-service-create.webp)
+![Create ASP.NET Core Web App project](images/azure-asp-core-web-service-create.png)
 
 **2.** To connect a SQL Server database using the Microsoft SqlClient in our application, we need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **Microsoft.Data.SqlClient** and install it.
 
-![Add the NuGet package Microsoft.Data.SqlClient to the project](images/ms-data-sqlclient-nuget-package-install.webp)
+![Add the NuGet package Microsoft.Data.SqlClient to the project](images/ms-data-sqlclient-nuget-package-install.png)
 
 **3.** Under the **Controllers** folder, create a Web API controller (aka, PivotController.cs) file that aids in data communication with the Pivot Table.
 
@@ -505,11 +505,11 @@ namespace MyWebApp.Controllers
 
 ```
 
-![The current report has been saved in the SQL database](images/output_save_report.webp)
+![The current report has been saved in the SQL database](images/output_save_report.png)
 
 In the meantime, you can save a duplicate of the current report to the SQL Server database with a different name by selecting **"Save as current report"** from the toolbar. The [saveReport](#savereport) event will then be triggered with the new report name **"Sample Report 1"** and the current report. You can save them to the SQL Server database after passing them to the Web API service, as mentioned above.
 
-![Copy of the current report has been saved in the SQL database](images/output_save_as_report.webp)
+![Copy of the current report has been saved in the SQL database](images/output_save_as_report.png)
 
 #### Loading a report
 
@@ -660,7 +660,7 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Loading a report from SQL database](images/output_load_report.webp)
+![Loading a report from SQL database](images/output_load_report.png)
 
 #### Renaming a report
 
@@ -826,7 +826,7 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Renaming a report in the SQL database](images/output_rename_report.webp)
+![Renaming a report in the SQL database](images/output_rename_report.png)
 
 #### Deleting a report
 
@@ -975,13 +975,13 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Deleting a report from the SQL database](images/output_remove_report.webp)
+![Deleting a report from the SQL database](images/output_remove_report.png)
 
 #### Adding a report
 
 When you select the **"Create a new report"** option from the toolbar, the [newReport](#newreport) event is triggered, followed by the [saveReport](#savereport) event. To save this new report to the SQL database, use the [saveReport](#savereport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
 
-![Adding a report in the SQL database](images/output_new_report.webp)
+![Adding a report in the SQL database](images/output_new_report.png)
 
 ### Limitations with respect to report manipulation
 

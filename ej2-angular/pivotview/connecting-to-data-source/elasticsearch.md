@@ -20,13 +20,13 @@ Follow these steps to create a Web API service that retrieves data from an Elast
 1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**.
 2. Follow the instructions in the [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) to set up the project.
 
-![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.webp)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
 ### Step 2: Install the NEST NuGet Package
 1. Open the **NuGet Package Manager** in your project solution.
 2. Search for the **NEST** package and install it to enable connectivity with the Elasticsearch server.
 
-![Add the NuGet package NEST to the project](../images/next-nuget-package-install.webp)
+![Add the NuGet package NEST to the project](../images/next-nuget-package-install.png)
 
 ### Step 3: Create a Web API Controller
 1. In the **Controllers** folder, create a new Web API controller named **PivotController.cs**.
@@ -85,7 +85,7 @@ Here’s the sample code for the **PivotController.cs** file:
 1. Access the Web API endpoint at `https://localhost:44323/Pivot` to view the JSON data retrieved from the Elasticsearch database.
 2. The browser will display the JSON data, as shown below.
 
-![Hosted Web API URL](../images/elasticsearch-data.webp)
+![Hosted Web API URL](../images/elasticsearch-data.png)
 
 ## Connecting the Pivot Table to an Elasticsearch Database Using the Web API Service
 
@@ -171,7 +171,7 @@ export class AppComponent implements OnInit {
 2. The Pivot Table will display the data fetched from the Elasticsearch database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
-![Pivot Table bound with Elasticsearch database](../images/elasticsearch-data-binding.webp)
+![Pivot Table bound with Elasticsearch database](../images/elasticsearch-data-binding.png)
 
 ### Additional Resources
 Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Elasticsearch database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Elasticsearch-database-to-pivot-table) repository.

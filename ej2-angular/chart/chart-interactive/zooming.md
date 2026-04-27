@@ -131,7 +131,7 @@ Using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/a
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/scrollbar-cs1" %}
 
-### Initial scrollbar in Angular Chart component
+### Initial scrollbar
 
 Show the scrollbar on initial render by setting a `zoomFactor` on `primaryXAxis`, setting `isZoomed` to `true` in the [`load`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#load) event, and setting `enableScrollbar` to `true` in `zoomSettings`.
 

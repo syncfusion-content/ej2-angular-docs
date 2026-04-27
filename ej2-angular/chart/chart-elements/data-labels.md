@@ -305,7 +305,7 @@ The appearance of the last value label can be customized using style properties 
 
 {% previewsample "page.domainurl/samples/chart/last-value-label-customization" %}
 
-## Prevent data label in Angular Chart component
+## Prevent data label
 
 Hide data labels for points whose value is 0 using the [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) event. In the handler, check `args.point.y` and set `args.cancel` to `true` when it equals 0.
 

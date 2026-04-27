@@ -131,7 +131,6 @@ The diagram component is divided into individual feature-wise modules. To use a 
 * `ConnectorEditingService` - Inject this provider to edit connector segments.
 * `ComplexHierarchicalTreeService` - Inject this provider for complex hierarchical tree structures.
 * `DataBindingService` - Inject this provider to populate nodes from a given data source.
-* `DiagramCollaborationService` - Inject this provider to enable real-time collaborative editing in diagrams.
 * `DiagramContextMenuService` - Inject this provider to manipulate the context menu.
 * `HierarchicalTreeService` - Inject this provider to use hierarchical tree structures.
 * `LayoutAnimationService` - Inject this provider to add animation to layouts.
@@ -146,7 +145,7 @@ The diagram component is divided into individual feature-wise modules. To use a 
 These modules should be injected into the providers section of the root NgModule or component class:
 
 ```javascript
-import { BpmnDiagramsService, ComplexHierarchicalTreeService, ConnectorBridgingService, ConnectorEditingService, DataBindingService, DiagramCollaborationService, DiagramContextMenuService, DiagramModule, Ej1SerializationService, HierarchicalTreeService, LayoutAnimationService, MindMapService, PrintAndExportService, RadialTreeService, SnappingService, SymmetricLayoutService, UndoRedoService } from '@syncfusion/ej2-angular-diagrams';
+import { BpmnDiagramsService, ComplexHierarchicalTreeService, ConnectorBridgingService, ConnectorEditingService, DataBindingService, DiagramContextMenuService, DiagramModule, Ej1SerializationService, HierarchicalTreeService, LayoutAnimationService, MindMapService, PrintAndExportService, RadialTreeService, SnappingService, SymmetricLayoutService, UndoRedoService } from '@syncfusion/ej2-angular-diagrams';
 import { Component } from "@angular/core";
 
 @Component({
@@ -154,7 +153,7 @@ imports: [
          DiagramModule
     ],
 
-   providers: [ HierarchicalTreeService, MindMapService, RadialTreeService, ComplexHierarchicalTreeService, DataBindingService, SnappingService, PrintAndExportService, BpmnDiagramsService, SymmetricLayoutService, ConnectorBridgingService, UndoRedoService, LayoutAnimationService, DiagramContextMenuService, ConnectorEditingService, DiagramCollaborationService, Ej1SerializationService ],
+   providers: [ HierarchicalTreeService, MindMapService, RadialTreeService, ComplexHierarchicalTreeService, DataBindingService, SnappingService, PrintAndExportService, BpmnDiagramsService, SymmetricLayoutService, ConnectorBridgingService, UndoRedoService, LayoutAnimationService, DiagramContextMenuService, ConnectorEditingService,Ej1SerializationService ],
    standalone: true,
   selector: "app-container",
   // specifies the template string for the diagram component

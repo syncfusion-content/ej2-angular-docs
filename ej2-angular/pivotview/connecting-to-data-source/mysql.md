@@ -16,14 +16,14 @@ Follow these steps to create a Web API service that retrieves data from a MySQL 
 1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**
 2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
 
-![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.webp)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
 ### Step 2: Install the MySql.Data NuGet Package
 To enable MySQL database connectivity in your application:
 1. Open the **NuGet Package Manager** in your project solution and search for **MySql.Data**.
 2. Install the **MySql.Data** package to add MySQL database support.
 
-![Add the NuGet package MySql.Data to the project](../images/mysql-data-nuget-package-install.webp)
+![Add the NuGet package MySql.Data to the project](../images/mysql-data-nuget-package-install.png)
 
 ### Step 3: Create a Web API Controller
 1. In the **Controllers** folder, create a new file named **PivotController.cs**.
@@ -115,7 +115,7 @@ In the **PivotController.cs** file, define a **Get** method that calls **GetMySQ
 1. Access the Web API endpoint at `https://localhost:7146/Pivot` to view the JSON data retrieved from the MySQL database.
 2. The browser will display the JSON data, as shown below.
 
-![Hosted Web API URL](../images/mysql-data.webp)
+![Hosted Web API URL](../images/mysql-data.png)
 
 ## Connecting the Pivot Table to a MySQL Database Using the Web API Service
 
@@ -190,7 +190,7 @@ export class AppComponent implements OnInit {
 2. The pivot table will display the data fetched from the MySQL database via the Web API, structured according to the defined report.
 3. The resulting pivot table will look like this:
 
-![Pivot table bound with MySQL database](../images/pivottable-with-mysql-data.webp)
+![Pivot table bound with MySQL database](../images/pivottable-with-mysql-data.png)
 
 ### Additional Resources
 Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MySQL database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MySQL-database-to-pivot-table) repository.
