@@ -35,15 +35,18 @@ Run the following commands one after the other in the terminal:
 1. **Install dependencies**  
    Run the command below to install all necessary packages related to the blocks, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, and the sample browser.
 
-    ![Installing the required dependencies](images/installing-the-required-dependencies.png)
-
+     ```bash
+    npm install 
+    ```
     This will download and install all the dependencies listed in the **package.json** file.
 
 2. **Serve the App Locally**  
     Once the dependencies are installed, you can run the app locally by starting the Angular local development server. To do so, run the following command.
     
-    ![Running the Angular development server](images/running-the-angular-development-server.png)
-
+     ```bash
+    ng serve 
+    ```
+    
     This command will start the local development server, and you'll see an output in the terminal indicating the app is running. Typically, it will display a local host URL like this:
 
     ![Local development server running](images/local-development-server-running.png)
