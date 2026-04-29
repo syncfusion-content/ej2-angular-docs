@@ -199,7 +199,7 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
 While copying and pasting the HTML code, you'll notice that Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are used. To incorporate them into **my-angular-app**, install the necessary packages and add the corresponding modules to the **src -> app -> app.component.ts** file for the app to run.
 
-In the simple sign-in block, components such as textbox, checkbox and button are used. After copying and pasting the code into the HTML file, open the **package.json** file and add the required packages: `@syncfusion/ej2-angular-buttons` and `@syncfusion/ej2-angular-inputs`. For more details about other Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component packages, refer to this [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular).
+In the simple sign-in block, components such as [textbox](https://ej2.syncfusion.com/angular/documentation/textbox/getting-started), [checkbox](https://ej2.syncfusion.com/angular/documentation/check-box/getting-started) and [button](https://ej2.syncfusion.com/angular/documentation/button/getting-started) are used. After copying and pasting the code into the HTML file, open the **package.json** file and add the required packages: `@syncfusion/ej2-angular-buttons` and `@syncfusion/ej2-angular-inputs`. For more details about other Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component packages, refer to this [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular).
 
 ![Adding required packages for Syncfusion components](images/adding-required-packages-for-syncfusion-components.png)
 
