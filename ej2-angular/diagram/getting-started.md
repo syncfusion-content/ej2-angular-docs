@@ -94,7 +94,6 @@ Combined CSS files are available in the Essential JS 2 package root folder. Refe
 @import '../node_modules/@syncfusion/ej2-angular-diagrams/styles/material3.css';
 @import "../node_modules/@syncfusion/ej2-angular-base/styles/material3.css";
 @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
 @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
 ```
 
