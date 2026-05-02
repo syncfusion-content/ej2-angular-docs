@@ -18,6 +18,7 @@ To enable specific features in the Angular Grid component, inject the required v
 | [SortService](https://ej2.syncfusion.com/angular/documentation/api/grid/sort) | Inject this service to enable sorting functionality. |
 | [FilterService](https://ej2.syncfusion.com/angular/documentation/api/grid/filter) | Inject this service to enable filtering functionality. |
 | [GroupService](https://ej2.syncfusion.com/angular/documentation/api/grid/group) | Inject this service to enable grouping functionality. |
+| `LazyLoadGroupService`| Inject this service to enable lazy load grouping feature.|
 | [EditService](https://ej2.syncfusion.com/angular/documentation/api/grid/edit) | Inject this service to enable editing functionality. |
 | `AggregateService` | Inject this service to enable aggregate operations in the Grid. |
 | [ColumnChooserService](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooser) | Inject this service to enable the column chooser feature. |
@@ -32,10 +33,9 @@ To enable specific features in the Angular Grid component, inject the required v
 | `RowDDService` | Inject this service to enable row drag-and-drop functionality. |
 | [SearchService](https://ej2.syncfusion.com/angular/documentation/api/grid/search) | Inject this service to enable the search feature. This service is included by default. |
 | [SelectionService](https://ej2.syncfusion.com/angular/documentation/api/grid/selection) | Inject this service to enable row and cell selection. This service is included by default. |
-| [ScrollService](https://ej2.syncfusion.com/angular/documentation/api/grid/scroll) | Inject this service to enable grid scrolling. This service is included by default. |
-| [PrintService](https://ej2.syncfusion.com/angular/documentation/api/grid/print) | Inject this service to enable the print feature. This service is included by default. |
+| `VirtualScrollService`| Inject this service to enable virtual scrolling feature.|
+| `InfiniteScrollService`| Inject this service to enable infinite scrolling feature.|
 | [ToolbarService](https://ej2.syncfusion.com/angular/documentation/api/grid/toolbar) | Inject this service to enable toolbar actions. |
-| `VirtualScrollService` | Inject this service to enable virtual scrolling. |
 | `ExcelExportService` | Inject this service to enable Excel export functionality. |
 | `PdfExportService` | Inject this service to enable PDF export functionality. |
 
