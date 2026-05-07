@@ -16,7 +16,7 @@ MongoDB's schema-less design seamlessly supports complex scheduling data, making
 
 ## What is MongoDB?
 
-[MongoDB](https://www.mongodb.com/) is a highly scalable, document-oriented NoSQL database designed to store and manage large volumes of flexible, JSON-like data. It enables developers to work with dynamic schemas, making it easy to model complex and evolving application data without rigid table structures.
+[MongoDB](https://www.mongodb.com) is a highly scalable, document-oriented NoSQL database designed to store and manage large volumes of flexible, JSON-like data. It enables developers to work with dynamic schemas, making it easy to model complex and evolving application data without rigid table structures.
 
 ## Overview
 This integration enables full CRUD (Create, Read, Update, Delete) operations for calendar events using:
@@ -382,7 +382,7 @@ All changes will be reflected in the connected **MongoDB** database in real time
 
 2. **Dates stored as strings:** Convert StartTime/EndTime to Date objects on the server before inserting/updating. Otherwise, Scheduler rendering/timezone math may be off.
 
-3. **Immutable _id on update:** Remove _id from payload prior to updateOne (MongoDB forbids changing _id) [mongodb.com](https://www.mongodb.com/docs/drivers/node/v6.15/usage-examples/updateOne/).
+3. **Immutable _id on update:** Remove _id from payload prior to updateOne (MongoDB forbids changing _id) [mongodb.com](https://www.mongodb.com/docs/drivers/node/v6.15/usage-examples/updateOne).
 
 4. **Missing CSS → broken editor/pickers:** Include Scheduler CSS (via ng add or styles.css) per [getting‑started docs](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started#adding-css-reference).
 

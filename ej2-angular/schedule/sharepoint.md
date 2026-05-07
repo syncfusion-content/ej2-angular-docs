@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Scheduler in SharePoint Framework
 
-This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project and integrating the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component](https://www.syncfusion.com/angular-components/angular-scheduler).
+This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev) project and integrating the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component](https://www.syncfusion.com/angular-components/angular-scheduler).
 
 SharePoint Framework (SPFx) is a development model and framework provided by Microsoft for building custom solutions and extensions for SharePoint and Microsoft Teams. It is a modern, client-side framework that allows developers to create web parts, extensions, and customizations that can be deployed and used within SharePoint sites and Teams applications.
 
@@ -24,7 +24,7 @@ SharePoint Framework (SPFx) is a development model and framework provided by Mic
 
 Create a new SPFx project using the following command,
 
-**Step 1:** To initiate the creation of a new [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project, use the following command:
+**Step 1:** To initiate the creation of a new [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev) project, use the following command:
 
 ```bash
 yo @microsoft/sharepoint

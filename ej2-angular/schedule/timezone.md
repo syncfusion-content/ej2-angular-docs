@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Timezone support in Angular Schedule component
 
-The Scheduler component uses the current system timezone by default. To schedule events according to a different timezone, use the [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#timezone) property. In addition to applying a specific timezone at the Scheduler level, individual appointments can have their own timezones using the [`startTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#endtimezone) properties within the event fields collection.
+The Scheduler component uses the current system timezone by default. To schedule events according to a different timezone, use the [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#timezone) property. In addition to applying a specific timezone at the Scheduler level, individual appointments can have their own timezones using the [`startTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field#endtimezone) properties within the event fields collection.
 
 > Note: The **timezone** property applies only to appointment processing and the current time indicator.
 
@@ -38,7 +38,7 @@ The following code example displays an appointment from 9:00 AM to 10:00 AM when
 
 ## Set a specific timezone for the Scheduler
 
-When a timezone is set through the [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#timezone) property, appointments are displayed according to the Scheduler's timezone, regardless of the user's system timezone. In the following example, appointments are shown in Eastern Time (UTC -05:00).
+When a timezone is set through the [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#timezone) property, appointments are displayed according to the Scheduler's timezone, regardless of the user's system timezone. In the following example, appointments are shown in Eastern Time (UTC -05:00).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +54,7 @@ When a timezone is set through the [`timezone`](https://helpej2.syncfusion.com/a
 
 ## Display events on same time everywhere with no time difference
 
-Setting [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#timezone) to UTC for Scheduler will display the appointments on same time as in the database for all the users in different time zone.
+Setting [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#timezone) to UTC for Scheduler will display the appointments on same time as in the database for all the users in different time zone.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,7 +70,7 @@ Setting [`timezone`](https://helpej2.syncfusion.com/angular/documentation/api/sc
 
 ## Assign specific timezones to events
 
-It is possible to set different timezone for Scheduler events by setting [`startTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field/#endtimezone) properties within the [`eventSettings`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) option. It allows each appointment to maintain different timezone and displays on Scheduler with appropriate time differences.
+It is possible to set different timezone for Scheduler events by setting [`startTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field#starttimezone) and [`endTimezone`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/field#endtimezone) properties within the [`eventSettings`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/eventSettings) option. It allows each appointment to maintain different timezone and displays on Scheduler with appropriate time differences.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

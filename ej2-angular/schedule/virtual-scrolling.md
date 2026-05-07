@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Virtual scrolling in Angular Schedule component
 
-Virtual scrolling support in the Scheduler component enhances performance when working with a substantial number of resources and events. This feature allows large sets of resources and events to load dynamically in the timeline views as users scroll, resulting in a seamless user experience. Enable virtual scrolling by setting the [`allowVirtualScrolling`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#allowvirtualscrolling) property to `true` within the specific timeline view settings. In the Agenda view, enable the same property in the agenda view configuration to allow virtual loading of events.
+Virtual scrolling support in the Scheduler component enhances performance when working with a substantial number of resources and events. This feature allows large sets of resources and events to load dynamically in the timeline views as users scroll, resulting in a seamless user experience. Enable virtual scrolling by setting the [`allowVirtualScrolling`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views#allowvirtualscrolling) property to `true` within the specific timeline view settings. In the Agenda view, enable the same property in the agenda view configuration to allow virtual loading of events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ By default, the Scheduler retrieves all relevant appointments within the current
 
 With this feature enabled, the Scheduler fetches events from remote services solely for the appointments currently visible in the viewport, optimizing data retrieval. Additional appointment data is fetched from the server on-demand as new resources enter the viewport during scrolling.
 
-Enable this feature by setting the [`enableLazyLoading`](https://ej2.syncfusion.com/angular/documentation/api/schedule/viewsModel/#enablelazyloading) property to `true` in the appropriate view settings.
+Enable this feature by setting the [`enableLazyLoading`](https://ej2.syncfusion.com/angular/documentation/api/schedule/viewsModel#enablelazyloading) property to `true` in the appropriate view settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,7 +93,7 @@ namespace LazyLoadingServices.Controllers
 
 **Note:**  
 * The property will be effective, when large number of resources and appointments bound to the Scheduler.
-* This property is applicable only when [resource grouping](https://ej2.syncfusion.com/angular/documentation/api/schedule/group/#resources) is enabled in Scheduler.
+* This property is applicable only when [resource grouping](https://ej2.syncfusion.com/angular/documentation/api/schedule/group#resources) is enabled in Scheduler.
 
 ## See Also
 

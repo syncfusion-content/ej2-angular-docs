@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Schedule component
 
-The Scheduler utilizes the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource) property of Scheduler can be assigned either an instance of `DataManager` or a JavaScript object array collection. Scheduler supports the following data binding methods:
+The Scheduler utilizes the `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) property of Scheduler can be assigned either an instance of `DataManager` or a JavaScript object array collection. Scheduler supports the following data binding methods:
 
 * Local data
 * Remote data
 
 ## Binding local data
 
-To bind local JSON data to the Scheduler, assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource) option of the Scheduler within the `eventSettings` property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Scheduler `dataSource` property.
+To bind local JSON data to the Scheduler, assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) option of the Scheduler within the `eventSettings` property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Scheduler `dataSource` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,11 +37,11 @@ To bind local JSON data to the Scheduler, assign a JavaScript object array to th
 
 ## Binding remote data
 
-The Scheduler supports binding to various remote data services. To configure this, create an instance of `DataManager`, supply the remote service URL to the `url` option, and assign it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource) property within `eventSettings`.
+The Scheduler supports binding to various remote data services. To configure this, create an instance of `DataManager`, supply the remote service URL to the `url` option, and assign it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource) property within `eventSettings`.
 
 ### Using ODataV4Adaptor
 
-[ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. The following example demonstrates how to retrieve data from an ODataV4 service using DataManager. To connect with ODataV4 service endpoints, utilize the `ODataV4Adaptor` within `DataManager`.
+[ODataV4](https://www.odata.org/documentation) is a standardized protocol for creating and consuming data. The following example demonstrates how to retrieve data from an ODataV4 service using DataManager. To connect with ODataV4 service endpoints, utilize the `ODataV4Adaptor` within `DataManager`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,7 +57,7 @@ The Scheduler supports binding to various remote data services. To configure thi
 
 ### Filter events using the in-built query
 
-To enable server-side filtering operations based on specific conditions, set the [`includeFiltersInQuery`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/eventSettingsModel/#includefiltersinquery) API to true. This allows the filter query to include the start date, end date, and recurrence rule, enabling the request to retrieve only the relevant data from the server.
+To enable server-side filtering operations based on specific conditions, set the [`includeFiltersInQuery`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/eventSettingsModel#includefiltersinquery) API to true. This allows the filter query to include the start date, end date, and recurrence rule, enabling the request to retrieve only the relevant data from the server.
 
 This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
 
@@ -95,7 +95,7 @@ You can create a custom adaptor by extending one of the built-in adaptors. The f
 
 ## Loading data via AJAX post
 
-You can bind the event data through external ajax request and assign it to the [`dataSource`][`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource)property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
+You can bind the event data through external ajax request and assign it to the [`dataSource`][`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource)property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
 
 `[src/app/app.ts]`
 
@@ -134,7 +134,7 @@ export class AppComponent implements OnInit {
 
 ## Passing additional parameters to the server
 
-To send additional custom parameters in the server-side request, use the `addParams` method of `Query`. Assign this `Query` object with the custom parameters to the [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#query) property of Scheduler.
+To send additional custom parameters in the server-side request, use the `addParams` method of `Query`. Assign this `Query` object with the custom parameters to the [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#query) property of Scheduler.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,13 +148,13 @@ To send additional custom parameters in the server-side request, use the `addPar
   
 {% previewsample "page.domainurl/samples/schedule/data-bind-cs4" %}
 
-> Parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#query) property are sent with the data request to the server on every Scheduler action.
+> Parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#query) property are sent with the data request to the server on every Scheduler action.
 
 ## Handling failure actions
 
-When Scheduler interacts with the server, server-side exceptions may occur. These error messages or exception details can be accessed client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionfailure) event of Scheduler.
+When Scheduler interacts with the server, server-side exceptions may occur. These error messages or exception details can be accessed client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionfailure) event of Scheduler.
 
-The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionfailure) event contains all error details returned from the server.
+The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionfailure) event contains all error details returned from the server.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,7 +168,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
   
 {% previewsample "page.domainurl/samples/schedule/data-bind-cs5" %}
 
-> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionfailure) event is triggered not only when the server returns errors, but also when an exception occurs during Scheduler CRUD operations.
+> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionfailure) event is triggered not only when the server returns errors, but also when an exception occurs during Scheduler CRUD operations.
 
 ## Scheduler CRUD actions
 
@@ -304,7 +304,7 @@ namespace ScheduleSample.Controllers
 
 ## Configuring Scheduler with Google API service
 
-We have assigned our custom created Google Calendar url to the DataManager and assigned the same to the Scheduler [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#datasource). Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s [`dataBinding`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#databinding) event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
+We have assigned our custom created Google Calendar url to the DataManager and assigned the same to the Scheduler [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#datasource). Since the events data retrieved from the Google Calendar will be in its own object format, therefore it needs to be resolved manually within the Scheduler’s [`dataBinding`](https://ej2.syncfusion.com/angular/documentation/api/schedule#databinding) event. Within this event, the event fields needs to be mapped properly and then assigned to the result.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

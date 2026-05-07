@@ -32,7 +32,7 @@ In case, if you need to add some other additional fields to the editor window, t
 
 ### Creation using addEvent method
 
-Appointments can be dynamically created by using the [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#addevent) method. You can add a single appointment or multiple appointment objects with this method. The following example demonstrates how to create multiple appointments simultaneously:
+Appointments can be dynamically created by using the [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#addevent) method. You can add a single appointment or multiple appointment objects with this method. The following example demonstrates how to create multiple appointments simultaneously:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,7 +95,7 @@ Additionally, a regular expression validation is applied to the Location field. 
   
 {% previewsample "page.domainurl/samples/schedule/default-cs28" %}
 
-To prevent users from creating appointments on weekends, use the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionbegin) event to check for the desired condition and restrict creation as needed.
+To prevent users from creating appointments on weekends, use the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionbegin) event to check for the desired condition and restrict creation as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,9 +124,9 @@ You can open the default editor window filled with appointment details by double
 
 ### Updating using saveEvent method
 
-Appointments can be edited and updated programmatically using the [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#saveevent) method. The following examples show both normal and recurring event updates.
+Appointments can be edited and updated programmatically using the [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#saveevent) method. The following examples show both normal and recurring event updates.
 
-**Normal event**: To edit an event (for example, updating the subject of the event with ID `3`), modify the event object and pass it to [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#saveevent). The `Id` field must match an existing event in the Scheduler data source.
+**Normal event**: To edit an event (for example, updating the subject of the event with ID `3`), modify the event object and pass it to [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#saveevent). The `Id` field must match an existing event in the Scheduler data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,11 +140,11 @@ Appointments can be edited and updated programmatically using the [`saveEvent`](
   
 {% previewsample "page.domainurl/samples/schedule/default-cs30" %}
 
-**Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely [`RecurrenceID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceid) mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the [`RecurrenceID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceid) field value. The [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#saveevent) method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
+**Recurring event** - The following code example shows how to edit a single occurrence of a recurring event. In this case, the modified data should hold an additional field namely [`RecurrenceID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrenceid) mapping to its parent recurring event's Id value. Also, this modified occurrence will be considered as a new event in the Scheduler dataSource, where it is linked with its parent event through the [`RecurrenceID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrenceid) field value. The [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#saveevent) method takes 2 arguments, first one accepting the modified event data object and second argument accepting either of the 2 text values - `EditOccurrence` or `EditSeries`.
 
 When the second argument is passed as `EditOccurrence`, which means that the passed event data is a single modified occurrence - whereas if the second argument is passed as `EditSeries`, it means that the modified data needs to be edited as a whole series and therefore no new event object will be maintained in the Scheduler dataSource.
 
-In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceexception) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceexception)` values, refer the [recurring events](./appointments#adding-exceptions) topic.
+In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrenceexception) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrenceexception)` values, refer the [recurring events](./appointments#adding-exceptions) topic.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -194,9 +194,9 @@ Recurring appointments can be edited as a single occurrence or as an entire seri
 
 **Editing single occurrence** - When you double click on a recurring event, a popup prompts you to choose either to edit the single event or entire series. From this, if you choose to select **EDIT EVENT** option, a single occurrence of the recurring appointment alone will be edited. The following process takes place while editing a single occurrence,
 
-* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`recurrenceID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceid) field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
+* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`recurrenceID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrenceid) field will be added to it, that holds the `id` value of the parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
 
-* The parent recurring event needs to be updated with appropriate [`recurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceexception) field to hold the edited occurrence appointment's date collection.
+* The parent recurring event needs to be updated with appropriate [`recurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrenceexception) field to hold the edited occurrence appointment's date collection.
 
 Therefore, when a single occurrence is edited from a recurring event, the batch action takes place by allowing both the `Add` and `Edit` action requests to take place together.
 
@@ -298,13 +298,13 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### How to edit from the current and following events of a series
 
-The recurring appointments can be edited from current and following events when enable the property [`editFollowingEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#editfollowingevents).
+The recurring appointments can be edited from current and following events when enable the property [`editFollowingEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#editfollowingevents).
 
 **Editing Following Events** - When you double click on a recurring event, a popup prompts you to choose either to edit the single event or Edit Following Events or entire series. From this, if you choose to select **EDIT FOLLOWING EVENTS** option, a current and following events of the recurring appointment will be edited. The following process takes place while editing a following events,
 
-* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`followingID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#followingid) field will be added to it, that holds the [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#id) value of the immediate parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
+* A new event will be created from the parent event data and added to the Scheduler dataSource, with all its default field values overwritten with the newly modified data and additionally, the [`followingID`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#followingid) field will be added to it, that holds the [`id`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#id) value of the immediate parent recurring event. Also, a new `Id` will be generated for this event in the dataSource.
 
-* The parent recurring event needs to be updated with appropriate [`recurrenceRule`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrencerule) field to hold the modified occurrence appointment's end date.
+* The parent recurring event needs to be updated with appropriate [`recurrenceRule`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrencerule) field to hold the modified occurrence appointment's end date.
 
 Therefore, when a following events are edited from a recurring event, the batch action takes place by allowing the `Add`, `Edit` and `Delete` action requests to take place together.
 
@@ -376,7 +376,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### Restricting edit action based on specific criteria
 
-To prevent editing appointments during non-working hours, use the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionbegin) event to check for appropriate conditions.
+To prevent editing appointments during non-working hours, use the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/schedule#actionbegin) event to check for appropriate conditions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -407,9 +407,9 @@ When you double click an event, the default editor window will be opened which i
 
 ### Deletion using deleteEvent method
 
-Appointments can be programmatically removed using the [`deleteEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#deleteevent) method. The following code examples shows how to edit the normal and recurring events.
+Appointments can be programmatically removed using the [`deleteEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#deleteevent) method. The following code examples shows how to edit the normal and recurring events.
 
-**Normal event**: Pass the appointment’s `Id` or the event object to [`deleteEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#deleteevent) to delete normal Scheduler appointments.
+**Normal event**: Pass the appointment’s `Id` or the event object to [`deleteEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#deleteevent) to delete normal Scheduler appointments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -474,7 +474,7 @@ The recurring events can be deleted in either of the following two ways.
 **Single occurrence** - When you attempt to delete the recurring events, a popup prompts you to choose either to delete the single event or entire series. From this, if you choose to select **DELETE EVENT** option, a single occurrence of the recurring appointment alone will be removed. The following process takes place while removing a single occurrence,
 
 * The selected occurrence will be deleted from the Scheduler user interface.
-* In code, the parent recurring event object will be updated with appropriate [`recurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrenceexception) field, to hold the deleted occurrence appointment's date collection.
+* In code, the parent recurring event object will be updated with appropriate [`recurrenceException`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrenceexception) field, to hold the deleted occurrence appointment's date collection.
 
 Therefore, when a single occurrence is deleted from a recurring event, the `update` action takes place on the parent recurring event as shown in the following code example.
 
@@ -529,12 +529,12 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 
 ### How to delete only the current and following events of a series
 
-The recurring events can be deleted from current and following events only when enable [`editFollowingEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/#editfollowingevents) property.
+The recurring events can be deleted from current and following events only when enable [`editFollowingEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings#editfollowingevents) property.
 
 **Delete Following Events** - When you attempt to delete the recurring events, a popup prompts you to choose either to delete the single event or Following Events or entire series. From this, if you choose to select **FOLLOWING EVENT** option, a current and following events of the recurring appointment alone will be removed. The following process takes place while removing a single occurrence,
 
 * The selected occurrence and the following events in same series will be deleted from the Scheduler user interface.
-* In code, the parent recurring event object will be updated with appropriate [`recurrenceRule`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field/#recurrencerule) field, to update the end date of the recurring events.
+* In code, the parent recurring event object will be updated with appropriate [`recurrenceRule`](https://ej2.syncfusion.com/angular/documentation/api/schedule/field#recurrencerule) field, to update the end date of the recurring events.
 
 Therefore, when following events are deleted from a recurring event, the `remove` and `update` action takes place on the immediate parent recurring event as shown in the following code example.
 

@@ -40,6 +40,6 @@ The required modules should be injected into the Scheduler using the `@NgModule.
 })
 ```
 
-**Note:** If the Scheduler's [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#currentview) property is set to a view for which the corresponding module has not been injected, a script error will occur, and the Scheduler will fail to render.
+**Note:** If the Scheduler's [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule#currentview) property is set to a view for which the corresponding module has not been injected, a script error will occur, and the Scheduler will fail to render.
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to know how to present and manipulate data.
