@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Timescale in Angular Schedule component
 
-Time slots are the cells displayed in the Day, Week, and Work Week views of the Scheduler (in vertical views on the leftmost position and in timeline views at the top). The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#timescale) property lets you control the duration of these slots. It includes these sub-options:
+Time slots are the cells displayed in the Day, Week, and Work Week views of the Scheduler (in vertical views on the leftmost position and in timeline views at the top). The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timescale) property lets you control the duration of these slots. It includes these sub-options:
 
-* [`enable`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/#enable) - When set to `true`, allows the Scheduler to display the appointments accurately against the exact time duration. If set to `false`, all the appointments of a day will be displayed one below the other with no grid lines displayed. Its default value is `true`.
-* [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/#interval) – Defines the time duration on which the time axis to be displayed either in 1 hour or 30 minutes interval and so on. It accepts the values in minutes and defaults to 60.
-* [`slotCount`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/#slotcount) – Decides the number of slot count to be split for the specified time interval duration. It defaults to 2, thus displaying two slots to represent an hour(each slot depicting 30 minutes duration).
+* [`enable`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#enable) - When set to `true`, allows the Scheduler to display the appointments accurately against the exact time duration. If set to `false`, all the appointments of a day will be displayed one below the other with no grid lines displayed. Its default value is `true`.
+* [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#interval) – Defines the time duration on which the time axis to be displayed either in 1 hour or 30 minutes interval and so on. It accepts the values in minutes and defaults to 60.
+* [`slotCount`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#slotcount) – Decides the number of slot count to be split for the specified time interval duration. It defaults to 2, thus displaying two slots to represent an hour(each slot depicting 30 minutes duration).
 
 >Note: The upper limit for rendering slots within a single day, utilizing the **interval** and **slotCount** properties of the **timeScale**, stands at 1000. This constraint aligns with the maximum **colspan** value permissible for the **table** element, also capped at 1000. This particular restriction is relevant exclusively to the `TimelineDay`, `TimelineWeek` and `TimelineWorkWeek` views.
 
 ## Setting different time slot duration
 
-The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/#interval) and [`slotCount`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/#slotcount) properties can be used together on the Scheduler to set different time slot duration which is depicted in the following code example. Here, six time slots together represents an hour.
+The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#interval) and [`slotCount`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#slotcount) properties can be used together on the Scheduler to set different time slot duration which is depicted in the following code example. Here, six time slots together represents an hour.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,10 +38,10 @@ The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/schedule/t
 
 ## Customizing time cells using template
 
-The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/) property provides template options for custom rendering:
+The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale) property provides template options for custom rendering:
 
-* [`majorSlotTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/#majorslottemplate) - The template option to be applied for major time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
-* [`minorSlotTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale/#minorslottemplate) - The template option to be applied for minor time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
+* [`majorSlotTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#majorslottemplate) - The template option to be applied for major time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
+* [`minorSlotTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScale#minorslottemplate) - The template option to be applied for minor time slots. Here, the template accepts either the string or HTMLElement as template design and then the parsed design is displayed onto the time cells. The time details can be accessed within this template.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -62,7 +62,7 @@ The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/
 
 ## Hide the timescale
 
-The grid lines which indicates the exact time duration can be enabled or disabled on the Scheduler, by setting `true` or `false` to the `enable` option within the [`timeScale`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#timescale) property. It's default value is `true`.
+The grid lines which indicates the exact time duration can be enabled or disabled on the Scheduler, by setting `true` or `false` to the `enable` option within the [`timeScale`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#timescale) property. It's default value is `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,7 +80,7 @@ The grid lines which indicates the exact time duration can be enabled or disable
 
 ## Highlighting current date and time
 
-By default, Scheduler indicates current date with a highlighted date header on all views, as well as marks accurately the system's current time on specific views such as Day, Week, Work Week, Timeline Day, Timeline Week and Timeline Work Week views. To stop highlighting the current time indicator on Scheduler views, set `false` to the [`showTimeIndicator`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/#showtimeindicator) property which defaults to `true`.
+By default, Scheduler indicates current date with a highlighted date header on all views, as well as marks accurately the system's current time on specific views such as Day, Week, Work Week, Timeline Day, Timeline Week and Timeline Work Week views. To stop highlighting the current time indicator on Scheduler views, set `false` to the [`showTimeIndicator`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#showtimeindicator) property which defaults to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

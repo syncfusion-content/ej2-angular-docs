@@ -24,7 +24,7 @@ By default, the recurrence editor provides five repeat options:
 * Monthly
 * Yearly
 
-You can customize the recurrence editor to display only specific repeat options, such as `Daily` and `Weekly`, by setting the [`frequencies`](https://ej2.syncfusion.com/angular/documentation/api/recurrence-editor/#frequencies) property.
+You can customize the recurrence editor to display only specific repeat options, such as `Daily` and `Weekly`, by setting the [`frequencies`](https://ej2.syncfusion.com/angular/documentation/api/recurrence-editor#frequencies) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,7 @@ By default, the recurrence editor provides three end options:
 * Until
 * Count
 
-You can customize the recurrence editor to display only specific end options, such as `Until` and `Count`, by setting the [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor/#endtypes) property.
+You can customize the recurrence editor to display only specific end options, such as `Until` and `Count`, by setting the [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor#endtypes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
