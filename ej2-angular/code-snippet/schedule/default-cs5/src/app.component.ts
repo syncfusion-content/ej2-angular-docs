@@ -18,13 +18,13 @@ export class AppComponent {
     public data: object[] = [{
         Id: 1,
         Subject: 'Paris',
-        StartTime: new Date(2018, 0, 28, 10, 0),
-        EndTime: new Date(2018, 0, 28, 12, 30),
+        StartTime: new Date(2026, 0, 28, 10, 0),
+        EndTime: new Date(2026, 0, 28, 12, 30),
         IsAllDay: false,
         RecurrenceRule: 'FREQ=DAILY;INTERVAL=1;COUNT=8',
-        RecurrenceException: '20180129T043000Z,20180131T043000Z,20180202T043000Z'
+        RecurrenceException: '20260129T043000Z,20260131T043000Z,20260202T043000Z'
     }];
-    public selectedDate: Date = new Date(2018, 0, 28);
+    public selectedDate: Date = new Date(2026, 0, 28);
     public eventSettings: EventSettingsModel = {
         dataSource: this.data
     };
