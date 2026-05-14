@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Syncfusion® Angular UI Builder Skill for AI Assistants | Syncfusion®
-description: Install Syncfusion® Angular UI Builder to generate production-ready Angular components from natural-language prompts.
+title: Syncfusion® Angular UI Composer Skill for AI Assistants | Syncfusion®
+description: Install Syncfusion® Angular UI Composer to generate production-ready Angular components from natural-language prompts.
 control: Skills
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® Angular UI Builder Skill for AI Assistants
+# Syncfusion® Angular UI Composer Skill for AI Assistants
 
-**Syncfusion® Angular UI Builder** is an AI-powered skill and companion agent that accelerates Angular application development by transforming natural-language UI requirements into production-ready components using Syncfusion® Angular UI libraries. 
+**Syncfusion® Angular UI Composer** is an AI-powered skill and companion agent that accelerates Angular application development by transforming natural-language UI requirements into production-ready components using Syncfusion® Angular UI libraries. 
 
 Integrated with your AI-powered IDE, it leverages deep knowledge of **Syncfusion® components** to deliver accurate and ready-to-use code.
-By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, Angular UI Builder helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
+By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, Angular UI Composer helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
 
 ## Prerequisites
 
-Before installing Angular UI Builder, ensure the following:
+Before installing Angular UI Composer, ensure the following:
 
 - Install [APM (Agent Package Manager)](https://microsoft.github.io/apm/getting-started/installation/#quick-install-recommended)
 - Required [Node.js](https://nodejs.org/en) version ≥ 18
@@ -56,7 +56,7 @@ Before installing Angular UI Builder, ensure the following:
 
 ## Installation
 
-Before installing Angular UI Builder, ensure that APM (Agent Package Manager) is installed and available in your environment.
+Before installing Angular UI Composer, ensure that APM (Agent Package Manager) is installed and available in your environment.
 
 ### Verify APM Installation
 
@@ -66,39 +66,40 @@ Run the following command to confirm APM is installed:
 apm --version
 ```
 
-### Install the Syncfusion® Angular UI Builder package using APM
+### Install the Syncfusion® Angular UI Composer package using APM
 
-Use the APM CLI to install the Angular UI Builder skill for your preferred environment:
+Use the APM CLI to install the Angular UI Composer skill for your preferred environment:
 
 {% tabs %}
 {% highlight bash tabtitle="Copilot" %}
 
 // By default, it installs to the GitHub Copilot target
 
-apm install Syncfusion/angular-ui-builder
+apm install Syncfusion/angular-ui-composer
 
 {% endhighlight  %}
-
 {% highlight bash tabtitle="Cursor" %}
 
-apm install Syncfusion/angular-ui-builder -t cursor
+apm install Syncfusion/angular-ui-composer -t cursor
 
 {% endhighlight  %}
-
 {% highlight bash tabtitle="Code Studio" %}
 
 // For Code Studio, refer to the note below to configure the agent location explicitly to use it in the chat.
 
-apm install Syncfusion/angular-ui-builder
+apm install Syncfusion/angular-ui-composer
 
 {% endhighlight  %}
+{% highlight bash tabtitle="Codex" %}
 
+apm install Syncfusion/angular-ui-composer -t codex
+
+{% endhighlight  %}
 {% highlight bash tabtitle="Claude" %}
 
-apm install Syncfusion/angular-ui-builder -t claude
+apm install Syncfusion/angular-ui-composer -t claude
 
 {% endhighlight  %}
-
 {% endtabs %}
 
 After installation, the following artifacts are added to your project for the GitHub Copilot target:
@@ -106,19 +107,20 @@ After installation, the following artifacts are added to your project for the Gi
 - `.agent/skills/` – contains the skill files
 - `.github/agents/` – contains the agent configuration
 
-For details on supported deployment targets, refer to the [documentation](https://microsoft.github.io/apm/reference/cli-commands/#apm-targets---show-resolved-deployment-targets).
+For details on supported deployment targets, refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targets/#detection-signals).
 
 > For Syncfusion® Code Studio, users must explicitly configure the agent location to use it in the chat. Refer to the [documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/usersettings#agent-file-locations).
 
-## How the Syncfusion® Angular UI Builder Skill Works
+## How the Syncfusion® Angular UI Composer Skill Works
 
 1. **Intent Analysis** — Parse the user's prompt to identify component types and high-level layout intent.
 2. **Project Detection** — Automatically detects project framework, package manager, and existing themes.
 3. **Component Mapping** — Map intent to Syncfusion® components and required feature modules.
 4. **Theming & Design System**  
    Load required theming guidelines and confirm key design choices:
-   - CSS framework (Tailwind, Bootstrap, Material, or Greenfield(custom theme))
+   - CSS framework (Tailwind, Bootstrap, Material, or Greenfield(custom theme)). If no themes detected in the existing project, Greenfield and Syncfusion Tailwind3 theme are shown as the default option—proceed with this or change the theme as preferred.
    - Syncfusion theme (Tailwind3, Bootstrap5, Material3, fluent2)
+   - Light and Dark Mode
    - Core design basics (colors, spacing, typography, responsiveness, accessibility)
 5. **Code Generation** — Produce Angular components with TypeScript, HTML templates, and CSS/SCSS styling.
 6. **Dependency Management** — Recommend or install required Syncfusion® packages and peer dependencies.
@@ -136,17 +138,17 @@ Key enforcement points:
 
 ## Using the AI Assistant
 
-After installing Angular UI Builder with APM, the relevant agent and skill files are added to your project under:
+After installing Angular UI Composer with APM, the relevant agent and skill files are added to your project under:
 
 - `.agent/skills/` (skill files)
-- `.github/agents/` (Angular UI builder agent configuration, based on the selected target)
+- `.github/agents/` (Angular UI composer agent configuration, based on the selected target)
 
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `angular-ui-builder` agent from the **Agent dropdown**.
+2. In the chat panel, select the `syncfusion-angular-ui-composer` agent from the **Agent dropdown**.
 
-![Set Agent](images/UI-Builder-Agent.png)
+![Set Agent](images/UI-Composer-Agent.png)
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
@@ -161,7 +163,7 @@ Create a CMS Admin Dashboard UI featuring a collapsible sidebar with navigation 
 {% endpromptcard %}
 {% endpromptcards %}
 
-Generated code follows best practices with accessible, semantic HTML, responsive mobile-first layouts, strong TypeScript typing, and built-in security measures such as input validation and avoidance of hardcoded secrets.
+Generated code follows best practices with accessible, semantic HTML, responsive mobile-first layouts, strong TypeScript typing, and built-in security measures such as input validation and avoidance of embedded secrets.
 
 ## Troubleshooting
 
