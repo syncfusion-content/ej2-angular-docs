@@ -78,13 +78,11 @@ Use the APM CLI to install the Angular UI Composer skill for your preferred envi
 apm install Syncfusion/angular-ui-composer
 
 {% endhighlight  %}
-
 {% highlight bash tabtitle="Cursor" %}
 
 apm install Syncfusion/angular-ui-composer -t cursor
 
 {% endhighlight  %}
-
 {% highlight bash tabtitle="Code Studio" %}
 
 // For Code Studio, refer to the note below to configure the agent location explicitly to use it in the chat.
@@ -92,13 +90,16 @@ apm install Syncfusion/angular-ui-composer -t cursor
 apm install Syncfusion/angular-ui-composer
 
 {% endhighlight  %}
+{% highlight bash tabtitle="Codex" %}
 
+apm install Syncfusion/angular-ui-composer -t codex
+
+{% endhighlight  %}
 {% highlight bash tabtitle="Claude" %}
 
 apm install Syncfusion/angular-ui-composer -t claude
 
 {% endhighlight  %}
-
 {% endtabs %}
 
 After installation, the following artifacts are added to your project for the GitHub Copilot target:
@@ -106,7 +107,7 @@ After installation, the following artifacts are added to your project for the Gi
 - `.agent/skills/` – contains the skill files
 - `.github/agents/` – contains the agent configuration
 
-For details on supported deployment targets, refer to the [documentation](https://microsoft.github.io/apm/reference/cli-commands/#apm-targets---show-resolved-deployment-targets).
+For details on supported deployment targets, refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targets/#detection-signals).
 
 > For Syncfusion® Code Studio, users must explicitly configure the agent location to use it in the chat. Refer to the [documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/usersettings#agent-file-locations).
 
@@ -117,8 +118,9 @@ For details on supported deployment targets, refer to the [documentation](https:
 3. **Component Mapping** — Map intent to Syncfusion® components and required feature modules.
 4. **Theming & Design System**  
    Load required theming guidelines and confirm key design choices:
-   - CSS framework (Tailwind, Bootstrap, Material, or Greenfield(custom theme))
+   - CSS framework (Tailwind, Bootstrap, Material, or Greenfield(custom theme)). If no themes detected in the existing project, Greenfield and Syncfusion Tailwind3 theme are shown as the default option—proceed with this or change the theme as preferred.
    - Syncfusion theme (Tailwind3, Bootstrap5, Material3, fluent2)
+   - Light and Dark Mode
    - Core design basics (colors, spacing, typography, responsiveness, accessibility)
 5. **Code Generation** — Produce Angular components with TypeScript, HTML templates, and CSS/SCSS styling.
 6. **Dependency Management** — Recommend or install required Syncfusion® packages and peer dependencies.
@@ -161,7 +163,7 @@ Create a CMS Admin Dashboard UI featuring a collapsible sidebar with navigation 
 {% endpromptcard %}
 {% endpromptcards %}
 
-Generated code follows best practices with accessible, semantic HTML, responsive mobile-first layouts, strong TypeScript typing, and built-in security measures such as input validation and avoidance of hardcoded secrets.
+Generated code follows best practices with accessible, semantic HTML, responsive mobile-first layouts, strong TypeScript typing, and built-in security measures such as input validation and avoidance of embedded secrets.
 
 ## Troubleshooting
 
