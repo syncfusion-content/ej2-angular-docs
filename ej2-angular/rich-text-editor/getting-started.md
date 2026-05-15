@@ -23,7 +23,7 @@ To get started quickly with the Angular Rich Text Editor using CLI and Schematic
 You can use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install Angular CLI use the following command.
 
 ```bash
-npm install -g @angular/cli@21.0.1
+npm install -g @angular/cli
 ```
 
 ## Create an Angular Application
@@ -33,7 +33,7 @@ Create a new Angular application using the following Angular CLI command:
 ```bash
 ng new my-app
 ```
-This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
 
 ![Initial_setup](images/getting-started/Initial-setup.png)
 
@@ -43,7 +43,7 @@ Then the CLI also displays an additional prompt asking whether to enable Serverâ
 
 ![Server_Side_Rendering_Setup](images/getting-started/SSR.png)
 
-For this setup, select **No**, as the Rich Text Editor does not require SSR or SSG for basic configuration.
+For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
 Then the CLI displays another prompt related to AI tooling support, as shown below:
 
@@ -68,7 +68,7 @@ npm install @syncfusion/ej2-angular-richtexteditor
 ## Adding CSS reference
 
 The following CSS files are available in **../node_modules/@syncfusion** package folder.
-This can be referenced in [src/styles.css] using the following code.
+This can be referenced in **[src/styles.css]** using the following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
@@ -83,7 +83,7 @@ This can be referenced in [src/styles.css] using the following code.
 
 ## Module Injection
 
-To create a Rich Text Editor with enhanced functionality, inject the required modules. The following modules extend the basic capabilities of the Rich Text Editor:
+The following modules are used to utilize the basic capabilities of the Rich Text Editor:
 
 * **HtmlEditorService** - Inject this module to use Rich Text Editor as html editor.
 * **ImageService** - Inject this module to use image feature in Rich Text Editor.
@@ -97,52 +97,18 @@ These modules should be injected into the **providers** section of root **NgModu
 
 ## Adding Rich Text Editor component
 
-Modify the template in the [src/app/app.component.ts] file to render the Rich Text Editor component. Add the Angular Rich Text Editor by using the `<ejs-richtexteditor>` selector in the `template` section of the app.component.ts file.
+Modify the template in the [src/app/app.ts] file to render the Rich Text Editor component. Add the Angular Rich Text Editor by using the `<ejs-richtexteditor>` selector in the `template` section of the app.ts file.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rich-text-editor/getting-started/basic-editor/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started/basic-editor/src/main.ts %}
 {% endhighlight %}
 
 {% highlight css tabtitle="styles.css" %}
 {% include code-snippet/rich-text-editor/getting-started-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started/basic-editor" %}
 
-## Configure the toolbar
-
-Customize the toolbar using the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#toolbarsettings) property to define specific tools. The following example demonstrates basic toolbar configuration:
-
-```typescript
-import { RichTextEditorModule, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
-import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService } from '@syncfusion/ej2-angular-richtexteditor';
-
-@Component({
-    imports: [RichTextEditorModule],
-    selector: 'app-root',
-    template: `
-        <ejs-richtexteditor [toolbarSettings]="tools" [value]="value"></ejs-richtexteditor>
-    `,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService],
-})
-export class App {
-    public tools: ToolbarSettingsModel = {
-        items: ['Undo', 'Redo', '|', 'Bold', 'Italic', 'Underline', 'StrikeThrough', '|', 'FontName',
-        'FontSize', 'FontColor', 'BackgroundColor', '|', 'SubScript', 'SuperScript', '|', 'LowerCase',
-        'UpperCase', '|', 'Formats', 'Alignments', '|', 'OrderedList', 'UnorderedList', '|', 'Indent',
-        'Outdent', '|', 'CreateLink', 'Image', '|', 'ClearFormat', 'Print', 'SourceCode', '|', 'FullScreen'],
-    };
-
-    public value: string = `<p>The Syncfusion Rich Text Editor, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul> <li> <p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes.</p> </li> <li> <p>Bulleted and numbered lists.</p> </li> <li> <p>Handles images, hyperlinks, videos, hyperlinks, uploads, etc.</p> </li> <li> <p>Contains undo/redo manager. </p> </li> </ul><p><img alt="Sky with sun" src="https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png" width="309" style="min-width: 10px; min-height: 10px; width: 309px; height: 174px;" class="e-rte-image e-imginline" height="174"></p>`;
-}
-```
 
 ## Run the application
 
@@ -151,24 +117,6 @@ Use the following command to run the application in the browser.
 ```bash
 ng serve --open
 ```
-
-Output will be displayed as follows
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started/editor-with-toolbar/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started/editor-with-toolbar/src/main.ts %}
-{% endhighlight %}
-
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor/getting-started-cs1/src/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started/editor-with-toolbar" %}
 
 ## See also
 
