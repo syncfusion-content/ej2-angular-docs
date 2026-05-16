@@ -1,38 +1,46 @@
-import { NgModule} from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+// Import the required treegrid modules from the treegrid package.
+import { TreeGridModule, PageService, SortService, FilterService, EditService, ToolbarService, PageSettingsModel, FilterSettingsModel, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid'
 import { Component, OnInit } from '@angular/core';
-import { sampleData } from './datasource';
-import { PageSettingsModel, SortSettingsModel } from '@syncfusion/ej2-angular-treegrid';
+// Import TreeGrid data from external file.
+import { data } from './datasource';
 
 @Component({
-  imports: [TreeGridModule ],
-
-    providers: [PageService, SortService, FilterService],
+    imports: [TreeGridModule ],
+    // Inject required TreeGrid features
+    providers: [PageService, SortService, FilterService, EditService, ToolbarService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' [sortSettings]="sortSettings"
-                [allowFiltering]="true" [allowSorting]="true"
-                childMapping='subtasks' [allowPaging]="true" [pageSettings]='pageSettings'>
-                    <e-columns>
-                        <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
-                        <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                        <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
-                        <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
-                    </e-columns>
-               </ejs-treegrid>`
+    template: `
+        <ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks' [allowFiltering]='true' [filterSettings]='filterSettings'
+        [allowSorting]='true' [allowPaging]='true' [pageSettings]='pageSettings' [editSettings]='editSettings' [toolbar]='toolbar'>
+            <e-columns>
+                <e-column field='TaskID' headerText='Task ID' textAlign='Right' [isPrimaryKey]='true' [validationRules]='taskIDRules' width=70></e-column>
+                <e-column field='TaskName' headerText='Task Name' [validationRules]='taskNameRules' textAlign='Left' width=120></e-column>
+                <e-column field='StartDate' headerText='Start Date' textAlign='Right' format='yMd' editType='datepickeredit' width=90></e-column>
+                <e-column field='EndDate' headerText='End Date' textAlign='Right' format='yMd' editType='datepickeredit' width=90></e-column>
+                <e-column field='Duration' headerText='Duration' editType='numericedit' textAlign='Right' width=80></e-column>
+            </e-columns>
+        </ejs-treegrid>
+    `
 })
 export class AppComponent implements OnInit {
 
-    public data?: Object[];
-    public sortSettings?: SortSettingsModel;
+    public data?: object[];
     public pageSettings?: PageSettingsModel;
+    public filterSettings?: FilterSettingsModel;
+    public editSettings?: EditSettingsModel; 
+    public toolbar?: ToolbarItems[]; 
+    public taskIDRules?: object; 
+    public taskNameRules?: object;
 
     ngOnInit(): void {
-        this.data = sampleData;
-        this.sortSettings = { columns: [{ field: 'taskName', direction: 'Ascending' }, { field: 'taskID', direction: 'Descending' }]  };
+        this.data = data;
         this.pageSettings = { pageSize: 6 };
+        this.filterSettings = { type: 'CheckBox' }
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.taskIDRules = { required: true, number: true };
+        this.taskNameRules = { required: true };
     }
 }
 

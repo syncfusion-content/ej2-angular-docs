@@ -8,35 +8,44 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Module in Angular Grid component
+# Modules in Angular Grid component
 
 To enable specific features in the Angular Grid component, inject the required value provider modules listed below.
 
-| Module | Description |
-|------|-------------|
-| [PageService](https://ej2.syncfusion.com/angular/documentation/api/grid/page) | Inject this service to enable paging functionality. |
-| [SortService](https://ej2.syncfusion.com/angular/documentation/api/grid/sort) | Inject this service to enable sorting functionality. |
-| [FilterService](https://ej2.syncfusion.com/angular/documentation/api/grid/filter) | Inject this service to enable filtering functionality. |
-| [GroupService](https://ej2.syncfusion.com/angular/documentation/api/grid/group) | Inject this service to enable grouping functionality. |
-| `LazyLoadGroupService`| Inject this service to enable lazy load grouping feature.|
-| [EditService](https://ej2.syncfusion.com/angular/documentation/api/grid/edit) | Inject this service to enable editing functionality. |
-| `AggregateService` | Inject this service to enable aggregate operations in the Grid. |
-| [ColumnChooserService](https://ej2.syncfusion.com/angular/documentation/api/grid/columnChooser) | Inject this service to enable the column chooser feature. |
-| `ColumnMenuService` | Inject this service to enable the column menu feature. |
-| `CommandColumnService` | Inject this service to enable command column functionality. |
-| [ContextMenuService](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenu) | Inject this service to enable the context menu feature. |
-| [DetailRowService](https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow) | Inject this service to enable the detail template feature. |
-| [ForeignKeyService](https://ej2.syncfusion.com/angular/documentation/api/grid/foreignkey) | Inject this service to enable foreign key column support. |
-| `FreezeService` | Inject this service to enable frozen columns and rows. |
-| `ResizeService` | Inject this service to enable column resizing. |
-| [ReorderService](https://ej2.syncfusion.com/angular/documentation/api/grid/reorder) | Inject this service to enable column reordering. |
-| `RowDDService` | Inject this service to enable row drag-and-drop functionality. |
-| [SearchService](https://ej2.syncfusion.com/angular/documentation/api/grid/search) | Inject this service to enable the search feature. This service is included by default. |
-| [SelectionService](https://ej2.syncfusion.com/angular/documentation/api/grid/selection) | Inject this service to enable row and cell selection. This service is included by default. |
-| `VirtualScrollService`| Inject this service to enable virtual scrolling feature.|
-| `InfiniteScrollService`| Inject this service to enable infinite scrolling feature.|
-| [ToolbarService](https://ej2.syncfusion.com/angular/documentation/api/grid/toolbar) | Inject this service to enable toolbar actions. |
-| `ExcelExportService` | Inject this service to enable Excel export functionality. |
-| `PdfExportService` | Inject this service to enable PDF export functionality. |
+| Feature | Module | Description |
+|--------|--------|-------------|
+| [Paging](./paging) | `PageService` | Inject this module to use paging feature. |
+| [Sorting](./sorting) | `SortService` | Inject this module to use sorting feature. |
+| [Filtering](./filtering/filtering) | `FilterService` | Inject this module to use filtering feature. |
+| [Grouping](./grouping/grouping) | `GroupService` | Inject this module to use grouping feature. |
+| [Lazy Load Grouping](./grouping/lazy-load-grouping) | `LazyLoadGroupService` | Inject this module to use lazy load grouping feature. |
+| [Editing](./editing/edit) | `EditService` | Inject this module to use editing feature. |
+| [Aggregates](./aggregates/aggregates) | `AggregateService` | Inject this module to use aggregate feature. |
+| [Column Chooser](./columns/column-chooser) | `ColumnChooserService` | Inject this module to use column chooser feature. |
+| [Column Menu](./columns/column-menu) | `ColumnMenuService` | Inject this module to use column menu feature. |
+| [Command Column](./editing/command-column-editing) | `CommandColumnService` | Inject this module to use command column feature. |
+| [Context Menu](./context-menu) | `ContextMenuService` | Inject this module to use context menu feature. |
+| [Detail Row](./row/detail-template) | `DetailRowService` | Inject this module to use detail template feature. |
+| [Foreign Key](./columns/foreign-key-column) | `ForeignKeyService` | Inject this module to use foreign key feature. |
+| [Resize](./columns/column-resizing) | `ResizeService` | Inject this module to use resize feature. |
+| [Reordering](./columns/column-reorder) | `ReorderService` | Inject this module to use reorder feature. |
+| [Row Drag and Drop](./row/row-drag-and-drop) | `RowDDService` | Inject this module to use row drag and drop feature. |
+| [Virtual Scrolling](./scrolling/virtual-scrolling) | `VirtualScrollService` | Inject this module to use virtual scrolling feature. |
+| [Infinite Scrolling](./scrolling/infinite-scrolling) | `InfiniteScrollService` | Inject this module to use infinite scrolling feature. |
+| [Toolbar](./tool-bar/tool-bar) | `ToolbarService` | Inject this module to use toolbar feature. |
+| [Excel Export](./excel-export/excel-exporting) | `ExcelExportService` | Inject this module to use excel export feature. |
+| [PDF Export](./pdf-export/pdf-export) | `PdfExportService` | Inject this module to use PDF export feature. |
 
-Add the required modules to the providers array in the root `NgModule` or directly in the component class to enable the corresponding Grid features.
+The following example demonstrates how to enable basic features such as Paging, Sorting, Filtering, Toolbar and Editing by importing required modules from `@syncfusion/ej2-angular-grids` and injecting them into the grid component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/grid/sorting-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/sorting-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/sorting-cs1" %}
