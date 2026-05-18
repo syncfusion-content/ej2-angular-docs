@@ -18,8 +18,8 @@ const data: object[] = [
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                         <e-column field='CustomerName' headerText='Customer Name' width=100></e-column>
-                        <e-column field='Freight' headerText='Freight' width=120></e-column>
-                        <e-column field='Orderdate' headerText='Order Date' width=100></e-column>
+                        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=100></e-column>
+                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=120></e-column>
                         <e-column field='ShipCountry' headerText='Ship Country' width=100></e-column>
                     </e-columns>
                 </ejs-grid>`

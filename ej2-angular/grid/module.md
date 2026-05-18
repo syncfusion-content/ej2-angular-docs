@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modules in Angular Grid component
+# Modules in Angular Grid Component
 
-To enable specific features in the Angular Grid component, inject the required value provider modules listed below.
+Syncfusion Angular Grid modules help optimize your application’s bundle size by including only the features you need. To enable a specific Grid feature, import and inject the corresponding Feature Module into your Grid configuration. The available Grid Feature Modules include:
 
 | Feature | Module | Description |
 |--------|--------|-------------|
@@ -35,6 +35,8 @@ To enable specific features in the Angular Grid component, inject the required v
 | [Toolbar](./tool-bar/tool-bar) | `ToolbarService` | Inject this module to use toolbar feature. |
 | [Excel Export](./excel-export/excel-exporting) | `ExcelExportService` | Inject this module to use excel export feature. |
 | [PDF Export](./pdf-export/pdf-export) | `PdfExportService` | Inject this module to use PDF export feature. |
+
+## Enabling basic features
 
 The following example demonstrates how to enable basic features such as Paging, Sorting, Filtering, Toolbar and Editing by importing required modules from `@syncfusion/ej2-angular-grids` and injecting them into the grid component.
 

@@ -35,12 +35,41 @@ To Create a new application, refer the below command
 ng new syncfusion-angular-app
 ```
 
-Navigate to the created project folder by using following command:
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
 ```sh
 cd syncfusion-angular-app
 ```
 
 >Refer [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
+
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Adding Dependencies
 
@@ -146,7 +175,7 @@ imports: [FileManagerModule, FileManagerAllModule ],
 </ejs-filemanager>`
 })
 
-export class AppComponent {
+export class App {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
   public ajaxSettings: object = {
     url: this.hostUrl + 'api/FileManager/FileOperations'
@@ -182,7 +211,7 @@ The following samples shows the basic File Manager component in browser:
 
 ## File Download support
 
-To enable the download operation, initialize the `downloadUrl` property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of the File Manager component.
+To enable the download operation, initialize the [downloadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#downloadurl) property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of the File Manager component.
 
 ```typescript
 import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
@@ -196,7 +225,7 @@ imports: [FileManagerModule, FileManagerAllModule ],
 </ejs-filemanager>`
 })
 
-export class AppComponent {
+export class App {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
   public ajaxSettings: object = {
     url: this.hostUrl + 'api/FileManager/FileOperations',
@@ -207,7 +236,7 @@ export class AppComponent {
 
 ## File Upload support
 
-To perform the upload operation, initialize the `uploadUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager Component.
+To perform the upload operation, initialize the [uploadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#uploadurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager Component.
 
 ```typescript
 import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
@@ -221,7 +250,7 @@ imports: [FileManagerModule, FileManagerAllModule ],
   </ejs-filemanager>`
 })
 
-export class AppComponent {
+export class App {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
   public ajaxSettings: object = {
     url: this.hostUrl + 'api/FileManager/FileOperations',
@@ -232,7 +261,7 @@ export class AppComponent {
 
 ## Image Preview support
 
-To perform the image preview support in the File Manager component, need to initialize the `getImageUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager component.
+To perform the image preview support in the File Manager component, need to initialize the [getImageUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#getimageurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,7 +298,7 @@ import { Component } from '@angular/core';
   standalone: true,
   providers: [NavigationPaneService, ToolbarService, DetailsViewService]
 })
-export class AppComponent { }
+export class App { }
 ```
 
 {% tabs %}
@@ -358,18 +387,19 @@ The following code snippet demonstrates specifying the current path in File Mana
 
 ```typescript
 
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager';
 @Component({
     selector: 'app-root',
-    styleUrls: ['app/app.component.css'],
-    template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
+    imports: [FileManagerModule],
+    template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings' [path]='path'>
     </ejs-filemanager>`
 })
-export class AppComponent {
-    public ajaxSettings: object;
-    public path: string;
+export class App implements OnInit {
+    public ajaxSettings: object = {};
+    public path: string = '/Pictures/Employees';
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+    
     public ngOnInit(): void {
         this.ajaxSettings = {
             url: this.hostUrl + 'api/FileManager/FileOperations',
@@ -377,8 +407,6 @@ export class AppComponent {
             uploadUrl: this.hostUrl + 'api/FileManager/Upload',
             downloadUrl: this.hostUrl + 'api/FileManager/Download'
         };
-        // Specify the required current path
-        this.path = '/Food';
     };
 }
 ```

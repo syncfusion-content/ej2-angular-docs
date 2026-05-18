@@ -8,12 +8,9 @@ import { Component } from '@angular/core';
   providers: [NavigationPaneService, ToolbarService, DetailsViewService],
   standalone: true,
   selector: 'app-root',
-  template: `<ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings' [toolbarSettings]='toolbarSettings'
-  [navigationPaneSettings]='navigationPaneSettings' height="375px"></ejs-filemanager>`
+  template: `<ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings' height="375px"></ejs-filemanager>`
 })
-export class AppComponent {
-  public toolbarSettings?: any;
-  public navigationPaneSettings?: any;
+export class App {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
   public ajaxSettings: object = {
     url: this.hostUrl + 'api/FileManager/FileOperations',

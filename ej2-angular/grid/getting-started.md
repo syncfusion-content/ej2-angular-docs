@@ -24,7 +24,7 @@ To get started quickly with Angular Grid using CLI and Schematics, you can check
 
 Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
-## SetUp the Angular application
+## Setup the Angular application
 
 A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
@@ -84,7 +84,7 @@ To install the Grid component, use the following command:
 npm install @syncfusion/ej2-angular-grids --save
 
 ```
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Adding CSS reference
 
 The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css**
 
@@ -111,11 +111,10 @@ Modify the template in the **src/app/app.ts** file to render the grid component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/grid/paging-cs1/src/app.component.ts %}
+{% include code-snippet/grid/getting-started/src/app.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging-cs1/src/main.ts %}
+{% include code-snippet/grid/getting-started/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

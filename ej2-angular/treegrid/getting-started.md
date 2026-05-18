@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular TreeGrid component
+# Getting Started With Angular TreeGrid Component
 
 This section outlines the steps required to create an Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid and demonstrates basic usage of the [Angular TreeGrid control](https://www.syncfusion.com/angular-components/angular-tree-grid) within an Angular CLI application.
 
@@ -22,7 +22,7 @@ To get started quickly with the Angular TreeGrid using CLI and Schematics, refer
 
 Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
-## SetUp the Angular application
+## Setup the Angular application
 
 A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
@@ -82,7 +82,7 @@ To install the TreeGrid component, use the following command:
 npm install @syncfusion/ej2-angular-treegrid --save
 ```
 
-## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
+## Adding CSS reference
 
 The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css** 
 
@@ -109,10 +109,10 @@ Modify the template in the **src/app/app.ts** file to render the treegrid compon
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/treegrid/getting-started-cs1/src/app.component.ts %}
+{% include code-snippet/treegrid/getting-started/src/app.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/getting-started-cs1/src/main.ts %}
+{% include code-snippet/treegrid/getting-started/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

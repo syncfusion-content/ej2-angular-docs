@@ -136,14 +136,14 @@ After installing Angular UI Composer with APM, the relevant agent and skill file
 
 To start using the skill:
 
-1. Open your supported IDE.
-2. In the chat panel, select the `syncfusion-angular-ui-composer` agent from the **Agent dropdown**.
+1.Open your supported IDE.
+2.In the chat panel, select the `syncfusion-angular-ui-composer` agent from the **Agent dropdown**.
 
 ![Set Agent](images/UI-Composer-Agent.png)
 
-3. Start prompting the agent with a clear description of your UI requirements.
+3.Start prompting the agent with a clear description of your UI requirements.
 
-Examples Prompts:
+**Examples Prompts:**
 
 {% promptcards %}
 {% promptcard Authentication %}
@@ -153,6 +153,7 @@ Create a login page with the Tailwind 3 theme using a centered card layout conta
 Create a CMS Admin Dashboard UI featuring a collapsible sidebar with navigation items for Dashboard, Content, Users, Analytics, and Settings; a top header (AppBar) showing the title "CMS Admin Dashboard" on the left and a user name with profile icon on the right; and a main content area that includes three compact summary cards in a single row displaying Total Content, Total Users, and Active Sessions (each card showing a label, relevant icon, prominent count value, and percentage change from last month), followed by a "Content Management" section with a filterable and data grid containing columns for Title, Author, Status, Date, and Actions (with edit and delete buttons), and finally two charts displayed side by side—a bar chart titled "Content Over Time" and a donut chart titled "Content by Category"—using realistic sample data for both the grid (10–12 rows) and the charts.
 {% endpromptcard %}
 {% endpromptcards %}
+
 
 Generated code follows best practices with accessible, semantic HTML, responsive mobile-first layouts, strong TypeScript typing, and built-in security measures such as input validation and avoidance of embedded secrets.
 
@@ -184,7 +185,7 @@ Any Skills-compatible agent that reads local skill files (Code Studio, VS Code, 
 Yes. Supported agents automatically load relevant skills based on your query.
 
 **Can I customize the generated styles?**
-Yes — the skill supports choosing Tailwind, Bootstrap, Material, or a custom theme; generated components include clear integration points for style adjustments.
+Yes. The skill supports choosing Tailwind, Bootstrap, Material, or a custom theme; generated components include clear integration points for style adjustments.
 
 **Does it modify files automatically?**
 The skill proposes changes and requires confirmation for insertion; automatic dependency installation may be offered depending on agent permissions.
