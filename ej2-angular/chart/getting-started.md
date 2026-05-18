@@ -91,19 +91,13 @@ Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages ar
 This guide uses the [Angular Chart component](https://www.syncfusion.com/angular-components/angular-charts) for demonstration. Add the Angular Chart component with:
 
 ```bash
-ng add @syncfusion/ej2-angular-charts
+npm install @syncfusion/ej2-angular-charts --save
 ```
 
 The above command will perform the following configurations:
 
 - Add the `@syncfusion/ej2-angular-charts` package and peer dependencies to your `package.json`.
 - Import the Chart component in your application.
-
-Alternative (manual install):
-
-```bash
-npm install @syncfusion/ej2-angular-charts --save
-```
 
 For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
 
@@ -143,29 +137,31 @@ See the ngcc troubleshooting guide: https://ej2.syncfusion.com/angular/documenta
 
 ## Add Chart component
 
-Modify the template in `app.component.ts` file to render the Charts component `[src/app/app.component.ts]`.
+Modify the template in `app.ts` file to render the Chart component `[src/app/app.ts]`.
 
-Note: `ChartAllModule` exports all chart feature modules and is convenient for examples and quick setup. To reduce bundle size in real apps, import only the feature modules you need (for example, `LineSeriesService`, `LegendService`, etc.). `ChartModule` is the core module; `ChartAllModule` bundles all features for convenience.
+Note: `ChartAllModule` exports all chart feature modules and is convenient for examples and quick setup. To reduce bundle size in real apps, import only the feature modules you need (for example, `LineSeriesService`, `CategoryService`, etc.). `ChartModule` is the core module; `ChartAllModule` bundles all features for convenience.
 
 Best practice (selective imports):
 
-```javascript
+```typescript
+
 import { Component } from '@angular/core';
-import { ChartModule, LineSeriesService, LegendService } from '@syncfusion/ej2-angular-charts';
+import { ChartModule, LineSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts';
 
 @Component({
   imports: [ChartModule],
   standalone: true,
-  selector: 'app-container',
-  providers: [LineSeriesService, LegendService],
+  selector: 'app-root',
+  providers: [LineSeriesService, CategoryService],
   template: `<ejs-chart id='chart-container'></ejs-chart>`
 })
-export class AppComponent { }
+export class App { }
+
 ```
 
 This keeps the final bundle smaller than importing `ChartAllModule`.
 
-```javascript
+```typescript
 
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ChartAllModule } from '@syncfusion/ej2-angular-charts';
@@ -173,19 +169,18 @@ import { ChartAllModule } from '@syncfusion/ej2-angular-charts';
 @Component({
     imports: [ChartAllModule],
     standalone: true,
-    selector: 'app-container',
-    // specifies the template string for the Charts component
+    selector: 'app-root',
     template: `<ejs-chart id='chart-container'></ejs-chart>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent { }
+export class App { }
 
 ```
 
-Now use the `app-container` selector in the `index.html` file instead of the default one.
+Now use the `app-root` selector in the `index.html` file instead of the default one.
  
 ```html
-<app-container></app-container>
+<app-root></app-root>
 ```
 
 Use the `ng serve` command to run the application in the browser.
@@ -194,54 +189,14 @@ Use the `ng serve` command to run the application in the browser.
 ng serve
 ```
 
-The below example shows a basic Chart.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/initialize-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/initialize-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/getting-started/initialize-cs1" %}
-
-## Module injection
-
-Chart components are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the `app.component.ts`. In the current application, we are going to modify the above basic Chart to visualize sales data for a particular year. For this application we are going to use line series, tooltip, data label, category axis and legend feature of the Chart. Please find relevant feature service name and description as follows.
-
-* `LineSeriesService` - Inject this provider to use line series.
-* `LegendService` - Inject this provider to use legend feature.
-* `TooltipService` - Inject this provider to use tooltip feature.
-* `DataLabelService` - Inject this provider to use datalabel feature.
-* `CategoryService`  - Inject this provider to use category feature.
-
-Now import the above-mentioned modules from the Chart package and inject them into the Chart component through the `provider` section.
-
- ```javascript
-    import { Component } from '@angular/core';
-    import { ChartAllModule, LineSeriesService, LegendService, TooltipService, DataLabelService, CategoryService } from '@syncfusion/ej2-angular-charts';
-
-    @Component({
-        imports: [ChartAllModule],
-        standalone: true,
-        selector: 'app-container',
-        providers: [LineSeriesService, LegendService, TooltipService, DataLabelService, CategoryService]
-    })
-    export class AppComponent { }
- ```
-
 ## Populate Chart with data
 
 This section explains how to plot the following JSON data to the Chart.
 
-```javascript
-    export class AppComponent implements OnInit {
-        public chartData: Object[];
+```typescript
+    export class App implements OnInit {
+        public chartData?: Object[];
         ngOnInit(): void {
-            // Data for chart series
             this.chartData = [
                 { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
                 { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
@@ -253,49 +208,50 @@ This section explains how to plot the following JSON data to the Chart.
         }
     }
 ```
+
+The below example shows a basic Chart.
+
+```typescript
+
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, LineSeriesService, LegendService } from '@syncfusion/ej2-angular-charts';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    imports: [ChartModule],
+    providers: [CategoryService, LineSeriesService, LegendService],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [legendSettings]='legendSettings'>
+                  <e-series-collection>
+                      <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales' name='Sales'></e-series>
+                  </e-series-collection>
+                </ejs-chart>`
+})
+export class App implements OnInit {
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public legendSettings?: Object;
+    ngOnInit(): void {
+        this.chartData = [
+            { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
+            { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
+            { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
+            { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
+            { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
+            { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
+        ];
+        this.primaryXAxis = {
+            valueType: 'Category'
+        };
+        this.legendSettings = { visible: false };
+    }
+}
+
+```
+
 Add [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective) to the Chart in the component template using the `<e-series-collection>` and `<e-series>` child directives. Map the JSON fields `month` and `sales` to the series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#yname) properties, and set the JSON array as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#datasource) property.
 
 Since the JSON contains category data, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisdirective#valuetype) for the horizontal axis (primaryXAxis) to `Category`. By default, the axis valueType is `Numeric`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs4/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs4/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs4" %}
-
-The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisdirective#labelformat) property of axis. Here, `{value}` acts as a placeholder for each axis label.
-
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs5/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs5/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs5" %}
-
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipsettingsmodel#enable) property as `true` in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartmodel#tooltip) object and by injecting `TooltipService` into the component's `providers` array.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/getting-started/tooltip-cs2" %}
 
 > You can refer to our [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Charts example](https://ej2.syncfusion.com/angular/demos/#/material/chart/line) that shows various Chart types and how to represent time-dependent data, showing trends in data at equal intervals.

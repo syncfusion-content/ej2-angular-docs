@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Performance tips for ##Platform_Name## Gantt Component | Syncfusion
-description: Check out and learn here all about how to improve the loading performance of ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+title: Performance tips for Angular Gantt Chart Component | Syncfusion
+description: Check out and learn here all about how to improve the loading performance of Angular Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Gantt performance
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -57,17 +56,13 @@ Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documen
 
 When integrating images or template elements into Gantt columns, use the [Column Template](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-template) feature instead of customizing data through [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) events. These events trigger for each row and cell, potentially causing rendering delays and element persistence issues over time.
 
-### Optimizing loading performance by referring individual script and CSS
-
-Enhance initial rendering performance by using the [Custom Resource Generator (CRG)](https://crg.syncfusion.com) to download only required component scripts. The default ej2.min.js includes all Syncfusion components, which may increase load times. CRG allows selective component and module selection, reducing bundle size and improving loading performance.
-
 ### Performance benchmarks
 
 The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
 
 **Test environment**
 
-- Component Version: Syncfusion Angular Gantt 32.1.19
+- Component Version: Syncfusion Angular Gantt 33.1.44
 - Angular Version: 20.1.0
 - Browser: Edge 138
 - Operating System: Windows 11
@@ -156,34 +151,6 @@ For additional guidance on OnPush strategy implementation:
 ## Microsoft Excel limitations for large exports
 
 Microsoft Excel supports only 1,048,576 records per sheet by default, making direct export of millions of records unfeasible. For large datasets, consider exporting to CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel. For detailed Excel specifications, refer to the [Microsoft documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3).
-
-## Tree shaking and bundle size optimization
-
-The Syncfusion Angular Gantt Chart component supports tree shaking through modular, tree-shakable packages. Import specific modules based on requirements:
-
-```typescript
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { FilterService, SortService, SelectionService } from '@syncfusion/ej2-angular-gantt';
-```
-
-The following table shows example production build sizes with incremental feature additions:
-
-| **Module**          | **Raw size** | **Transfer size** |
-|---------------------|--------------|-----------------------------|
-| Empty app           | 220.26 kB    | 60.71 kB                    |
-| GanttModule         | 2.55 MB      | 473.29 kB                   |
-| + SortService       | 2.56 MB      | 475.69 kB                   |
-| + SelectionService  | 2.58 MB      | 477.38 kB                   |
-| + FilterService     | 2.99 MB      | 538.76 kB                   |
-| + ReorderService    | 3.00 MB      | 541.35 kB                   |
-| + ExcelService      | 3.14 MB      | 569.72 kB                   |
-
-- **Raw size**: Uncompressed bundle size  
-- **Transfer size**: Compressed size for network transfer
-
-Tree shaking maintains manageable bundle sizes by including only imported features. Using `GanttAllModule` significantly increases bundle size by including all features regardless of usage.
-
-For detailed implementation, refer to the [Syncfusion Angular Tree Shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking) documentation.
 
 ## See also
 
