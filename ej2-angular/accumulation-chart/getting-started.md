@@ -5,14 +5,12 @@ description:  Checkout and learn about Getting started with Angular Accumulation
 platform: ej2-angular
 control: Getting started 
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://ej2.syncfusion.com
 ---
-
-<!-- markdownlint-disable MD036 -->
 
 # Getting started with Angular Accumulation Chart component
 
-This section explains the steps required to create a simple Angular Accumulation Chart and demonstrates the basic usage of the Chart component in an Angular environment.
+This section explains the steps required to create a simple Angular Accumulation Chart and demonstrates the basic usage of the Accumulation Chart component in an Angular environment.
 
 > Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
@@ -82,14 +80,14 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> AccumulationChart package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Accumulation Chart package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
 This guide uses the Angular Accumulation Chart component for demonstration. Add the Angular Accumulation Chart component with:
 
 ```bash
-ng add @syncfusion/ej2-angular-charts
+npm install @syncfusion/ej2-angular-charts --save
 ```
 
 The above command will perform the following configurations:
@@ -113,19 +111,53 @@ ng add @syncfusion/ej2-angular-charts
 
 ### Angular compatibility compiled package(ngcc)
 
-For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+For applications not compiled with Ivy, use the `ngcc` tagged packages:       
 
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+> Note: `ngcc` is the legacy Angular compatibility compiler. For modern projects we recommend using the Ivy-distribution packages (installable via `ng add ...`). ngcc-tagged packages may still be required for some older Angular 12–15 projects, but Angular 16+ favors Ivy-only packages. If you must use an ngcc-tagged package, consult the Syncfusion troubleshooting guide linked below for migration tips.
 
-```bash		
-npm add @syncfusion/ej2-angular-charts@32.1.19-ngcc		
+```bash
+npm add @syncfusion/ej2-angular-charts@32.1.19-ngcc
 ```
 
-## Add accumulationChart component
+Or add the dependency to `package.json`:
 
-Modify the template in `app.component.ts` file to render the Accumulation Charts component `[src/app/app.component.ts]`.
+```json
+{
+  "dependencies": {
+    "@syncfusion/ej2-angular-charts": "32.1.19-ngcc"
+  }
+}
+```
 
-```javascript
+See the ngcc troubleshooting guide: https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility
+
+## Add Accumulation Chart component
+
+Modify the template in `app.ts` file to render the Accumulation Chart component `[src/app/app.ts]`.
+
+Note: `AccumulationChartAllModule` exports all accumulation chart feature modules and is convenient for examples and quick setup. To reduce bundle size in real apps, import only the feature modules you need (for example, `PieSeriesService`, `AccumulationLegendService`, etc.). `AccumulationChartModule` is the core module; `AccumulationChartAllModule` bundles all features for convenience.
+
+Best practice (selective imports):
+
+```typescript
+
+import { Component } from '@angular/core';
+import { AccumulationChartModule, PieSeriesService, AccumulationLegendService } from '@syncfusion/ej2-angular-charts';
+
+@Component({
+  imports: [AccumulationChartModule],
+  standalone: true,
+  selector: 'app-root',
+  providers: [PieSeriesService, AccumulationLegendService],
+  template: `<ejs-accumulationchart id="pie-container"></ejs-accumulationchart>`
+})
+export class App { }
+
+```
+
+This keeps the final bundle smaller than importing `AccumulationChartAllModule`.
+
+```typescript
 
 import { AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts';
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -133,19 +165,18 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
     imports: [AccumulationChartAllModule],
     standalone: true,
-    selector: 'app-container',
-    // specifies the template string for the Accumulation Charts component
+    selector: 'app-root',
     template: `<ejs-accumulationchart id="pie-container"></ejs-accumulationchart>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent { }
+export class App { }
 
 ```
 
-Now use the `app-container` selector in the `index.html` file instead of the default one.
+Now use the `app-root` selector in the `index.html` file instead of the default one.
  
 ```html
-<app-container></app-container>
+<app-root></app-root>
 ```
 
 Use the `ng serve` command to run the application in the browser.
@@ -154,18 +185,64 @@ Use the `ng serve` command to run the application in the browser.
 ng serve
 ```
 
-## Pie series
+## Populate Accumulation Chart with data
 
-By default, a pie series is rendered when JSON data is assigned to the series [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#datasource) property. Map JSON fields to the series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#yname) properties to bind data correctly. 
+This section explains how to plot the following JSON data to the Accumulation Chart.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs7/src/app.component.ts %}
-{% endhighlight %}
+```typescript
+    export class App implements OnInit {
+        public piedata?: Object[];
+        ngOnInit(): void {
+            this.piedata = [
+                { x: 'Jan', y: 3 }, { x: 'Feb', y: 3.5 },
+                { x: 'Mar', y: 7 }, { x: 'Apr', y: 13.5 },
+                { x: 'May', y: 19 }, { x: 'Jun', y: 23.5 },
+                { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
+                { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 },
+                { x: 'Nov', y: 9 }, { x: 'Dec', y: 3.5 }
+            ];
+        }
+    }
+```
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs7/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/pie-cs7" %}
+The below example shows a basic Accumulation Chart.
+
+```typescript
+
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
+import { PieSeriesService, AccumulationLegendService } from '@syncfusion/ej2-angular-charts';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+    imports: [AccumulationChartModule],
+    providers: [PieSeriesService, AccumulationLegendService],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-accumulationchart id="pie-container" [legendSettings]='legendSettings'>
+                  <e-accumulation-series-collection>
+                      <e-accumulation-series [dataSource]='piedata' xName='x' yName='y'>
+                      </e-accumulation-series>
+                  </e-accumulation-series-collection>
+              </ejs-accumulationchart>`
+})
+export class App implements OnInit {
+    public piedata?: Object[];
+    public legendSettings?: Object;
+    ngOnInit(): void {
+        this.piedata = [
+            { x: 'Jan', y: 3 }, { x: 'Feb', y: 3.5 },
+            { x: 'Mar', y: 7 }, { x: 'Apr', y: 13.5 },
+            { x: 'May', y: 19 }, { x: 'Jun', y: 23.5 },
+            { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
+            { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 },
+            { x: 'Nov', y: 9 }, { x: 'Dec', y: 3.5 }
+        ];
+        this.legendSettings = {
+            visible: false
+        };
+    }
+}
+
+```
+
+By default, a pie series is rendered when JSON data is assigned to the series [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#datasource) property. Map JSON fields to the series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#yname) properties to bind data correctly.

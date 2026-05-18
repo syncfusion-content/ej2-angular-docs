@@ -15,21 +15,6 @@ This section explains how to create a simple Syncfusion **Chat** component and c
 To get started quickly with the Angular Chat UI component, you can check out this video tutorial:
 {% youtube "https://www.youtube.com/watch?v=01mflB3c8WQ" %}
 
-## Dependencies
-
-The following list of dependencies are required to use the Angular Chat UI component in your application.
-
-```javascript
-|-- @syncfusion/ej2-angular-interactive-chat
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-dropdowns
-```
-
 ## Setup angular environment
 
 You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
@@ -40,48 +25,42 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using the Angular CLI.
+Create a new Angular application using the following Angular CLI command:
 
-```
+```bash
 ng new my-app
+```
+This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
+
+![Initial_setup](images/getting-started/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Then the CLI also displays an additional prompt asking whether to enable Server‑Side Rendering (SSR) and Static Site Generation (SSG), as shown below:
+
+![Server_Side_Rendering_Setup](images/getting-started/SSR.png)
+
+For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+Then the CLI displays another prompt related to AI tooling support, as shown below:
+
+![AI_Tool_Setup](images/getting-started/AI-Tool.png)
+
+Any preferred option can be selected based on the development workflow or project needs.
+
+Next, navigate to the project folder:
+
+```bash
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Chat UI package
+## Adding Syncfusion Chat UI package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-interactive-chat`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48) package to the application.
+All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Install the Chat UI component with the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-interactive-chat --save
+npm install @syncfusion/ej2-angular-interactive-chat
 ```
-
-### Angular compatibility compiled package(ngcc)
-
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-interactive-chat@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48-ngcc) package to the application.
-
-```bash
-npm install @syncfusion/ej2-angular-interactive-chat@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-interactive-chat:"27.1.48-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
 ## Adding CSS reference
 
@@ -111,10 +90,26 @@ import { ChatUIModule } from '@syncfusion/ej2-angular-interactive-chat';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the Chat UI component
-    template: `<div ejs-chatui id='chatui'></div>`
+    template: `<div ejs-chatui ></div>`
 })
 export class AppComponent  { }
 ```
+## Configure User
+
+To define the chat content, use the `user` property assigns an identity to the current user, which is essential for distinguishing the user's messages from those of other participants.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/defaultmessages/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/defaultmessages/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chat-ui/defaultmessages" %}
+
 
 ## Run the application
 
@@ -137,20 +132,3 @@ The following example illustrates the output in your browser.
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/getting-started" %}
-
-## Configure Messages and User
-
-To define the chat content, use the `<e-messages>` tag to group all messages, and the `<e-message>` tag for each individual message. The `user` property assigns an identity to the current user, which is essential for distinguishing the user's messages from those of other participants.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/defaultmessages/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/defaultmessages/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/chat-ui/defaultmessages" %}
-```

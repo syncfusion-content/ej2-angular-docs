@@ -12,22 +12,6 @@ domainurl: ##DomainURL##
 
 This guide explains how to create and configure the Block Editor component in a new Angular application.
 
-## Dependencies
-
-The list of dependencies required to use the Block Editor component in your application is given below:
-
-```javascript
-|-- @syncfusion/ej2-angular-blockeditor
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-splitbuttons
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-inputs
-```
-
 ## Set up Angular Environment
 
 Use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI globally, run the following command.
@@ -38,49 +22,41 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Create a new Angular application using the Angular CLI.
+Create a new Angular application using the following Angular CLI command:
 
-```
+```bash
 ng new my-app
+```
+This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
+
+![Initial_setup](images/getting-started/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Then the CLI also displays an additional prompt asking whether to enable Server‑Side Rendering (SSR) and Static Site Generation (SSG), as shown below:
+
+![Server_Side_Rendering_Setup](images/getting-started/SSR.png)
+
+For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+Then the CLI displays another prompt related to AI tooling support, as shown below:
+
+![AI_Tool_Setup](images/getting-started/AI-Tool.png)
+
+Any preferred option can be selected based on the development workflow or project needs.
+
+Next, navigate to the project folder:
+
+```bash
 cd my-app
 ```
+## Adding Syncfusion Block Editor package
 
-## Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Block Editor Package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can find all Syncfusion Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
-
-Syncfusion<sup style="font-size:70%">&reg;</sup>  provides two package structures for Angular components:
-
-1.  **Ivy library distribution package**: For modern Angular applications.
-2.  **Angular compatibility compiler (ngcc) package**: For legacy Angular applications.
-
-### Ivy Library Distribution Package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) use the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and are compatible with Angular version 12 and newer.
-
-Install the [`@syncfusion/ej2-angular-blockeditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/30.1.37) package with the following command.
+All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Install the Block Editor component with the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-blockeditor --save
+npm install @syncfusion/ej2-angular-blockeditor
 ```
-
-### Angular Compatibility Compiled (ngcc) Package
-
-For applications using Angular versions below 12, use the legacy (ngcc) package. of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Install the [`@syncfusion/ej2-angular-blockeditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-blockeditor/v/30.1.37-ngcc) package with the following command.
-
-```bash
-npm install @syncfusion/ej2-angular-blockeditor@ngcc --save
-```
-
-To specify the ngcc package in the `package.json` file, add the `-ngcc` suffix to the package version.
-
-```bash
-@syncfusion/ej2-angular-blockeditor:"20.4.38-ngcc"
-```
-
-> **Note**: If the `--tag ngcc` is not specified during installation, the Ivy library package will be installed by default, which may cause compatibility issues in older Angular versions.
 
 ## Add CSS Reference
 

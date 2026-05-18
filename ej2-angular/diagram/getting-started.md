@@ -30,7 +30,7 @@ The main files used in this guide are:
 
 N> In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
 
-N> If your application uses an older NgModule-based structure, import `DiagramModule` in your application module instead of adding it to the standalone component `imports` collection.
+N> If your application uses an older NgModule-based structure, import `DiagramModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
 
 ## Step 1: Set up the Angular environment
 
@@ -42,7 +42,7 @@ npm install -g @angular/cli
 
 ## Step 2: Create an Angular application
 
-Create a new Angular application using the below command.
+Create a new Angular application using the following command.
 
 ```bash
 ng new my-diagram-app
@@ -112,7 +112,7 @@ N> The component selector must match the root element used in the `src/index.htm
 N> The Diagram component must have a valid height. If the height is not set, the Diagram canvas may not be visible.
 
 
-## Create your first Diagram with nodes and connectors
+## Step 6: Create your first Diagram with nodes and connectors
 
 This section explains how to create a simple flowchart by adding nodes, customizing their appearance, and connecting them using connectors.
 
@@ -222,7 +222,7 @@ In this example:
 * [`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#getnodedefaults) applies common width, height, fill color, and stroke color to all nodes.
 * [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#getconnectordefaults) applies common connector settings, such as orthogonal routing and target arrows.
 
-## Step 6: Run the application
+## Step 7: Run the application
 
 Run the application using the following command:
 
@@ -230,8 +230,6 @@ Run the application using the following command:
 npm start
 ```
 
-Open the generated local URL in the browser. The application displays an empty Diagram canvas.
-
-The output will appear as follows:
+Open the generated local URL in the browser. The application displays the diagram as shown below:
 
  ![Getting started](./images/Getting-started.png)

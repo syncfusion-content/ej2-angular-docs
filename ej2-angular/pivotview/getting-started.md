@@ -18,6 +18,10 @@ To get started quickly with Angular Pivot Table, you can watch this video:
 
 {% youtube "https://www.youtube.com/watch?v=HXTnI9XhVSw" %}
 
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+
 ## Setup Angular Environment
 
 Setting up the Angular environment properly ensures smooth development and deployment of your Pivot Table application. To streamline this process, you can use the [`Angular CLI`](https://github.com/angular/angular-cli), which provides a comprehensive toolkit for Angular application development.
@@ -27,6 +31,8 @@ Install Angular CLI globally on your system using the following command:
 ```bash
 npm install -g @angular/cli
 ```
+
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
 ### Installing a Specific Version
 
@@ -75,6 +81,8 @@ Once the project is created, navigate to the project folder to begin working wit
 ```bash
 cd my-app
 ```
+
+> **Note:** In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Dependencies
 
@@ -157,9 +165,13 @@ The following CSS files are available in the `../node_modules/@syncfusion` packa
 @import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
 @import '../node_modules/@syncfusion/ej2-angular-pivotview/styles/material3.css';
 ```
+
+> Ensure that the import order aligns with the component's dependency sequence.
+
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
 ## Browser compatibility
 
@@ -308,6 +320,16 @@ export class App implements OnInit {
 }
 ```
 
+## Run the application
+
+Running the Pivot Table application allows you to see your changes and data in real time directly in the browser, making it easy to check your results.
+
+To start the application, open a command prompt in your project folder and run the following command. This will compile the project and automatically open it in your browser.
+
+```sh
+ng serve --open
+```
+
 ## Applying formatting to a value field
 
 Formatting allows you to present numerical data in a more readable and meaningful way, making your Pivot Table more user-friendly and professional. For example, you can display amount values with currency symbols or show numerical values with specific decimal places.
@@ -388,9 +410,11 @@ To enable the field list, set the [`showFieldList`](https://ej2.syncfusion.com/a
 
 > The `FieldListService` module must be injected for the field list to render properly with the Pivot Table component. Without this service, the field list will not be available.
 
+> In the below code example, the data source of the Pivot Table is referred from the `datasource.ts` file.
+
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs105/src/app.component.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs105/src/app/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -398,11 +422,9 @@ To enable the field list, set the [`showFieldList`](https://ej2.syncfusion.com/a
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs105/src/datasource.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs105/src/app/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs105" %}
 
 ## Enable Grouping Bar
 
@@ -413,8 +435,8 @@ Users can also use the grouping bar to sort, filter, or remove fields quickly wi
 > The `GroupingBarService` module must be injected for the grouping bar to render properly with the Pivot Table component. Without this service, the grouping bar will not be available.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs106/src/app.component.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs106/src/app/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -422,11 +444,9 @@ Users can also use the grouping bar to sort, filter, or remove fields quickly wi
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs106/src/datasource.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs106/src/app/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs106" %}
 
 ## Exploring Filter Axis
 
@@ -435,8 +455,8 @@ The filter axis helps users display only the most relevant information in the Pi
 The following example shows how to add fields to the filter axis in an Angular Pivot Table:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs107/src/app.component.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs107/src/app/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -444,11 +464,9 @@ The following example shows how to add fields to the filter axis in an Angular P
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs107/src/datasource.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs107/src/app/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs107" %}
 
 ## Calculated field
 
@@ -465,8 +483,8 @@ Users can add calculated fields in two ways:
 Below is a sample code that shows how to set up calculated fields both through code-behind and using the popup dialog:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs108/src/app.component.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs108/src/app/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -474,21 +492,9 @@ Below is a sample code that shows how to set up calculated fields both through c
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs108/src/datasource.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs108/src/app/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs108" %}
-
-## Run the application
-
-Running the Pivot Table application allows you to see your changes and data in real time directly in the browser, making it easy to check your results.
-
-To start the application, open a command prompt in your project folder and run the following command. This will compile the project and automatically open it in your browser.
-
-```sh
-ng serve --open
-```
 
 ## Building in Production Mode
 
@@ -527,8 +533,8 @@ ng serve -c production
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs109/src/app.component.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs109/src/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -536,11 +542,9 @@ ng serve -c production
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs109/src/datasource.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs109/src/app/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs109" %}
 
 <!-- markdownlint-disable MD028 -->
 > In Angular, the `ViewChild` method lets you access the Pivot Table component instance directly in your code. It has the following parameters:

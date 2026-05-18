@@ -12,18 +12,6 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple **AI AssistView** component and configure its available functionalities in Angular.
 
-## Dependencies
-
-The following list of dependencies is required to use the Angular AI AssistView component in your application. The component is distributed as part of the `@syncfusion/ej2-angular-interactive-chat` package.
-
-```javascript
-|-- @syncfusion/ej2-angular-interactive-chat
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-inputs
-```
-
 ## Set up Angular environment
 
 You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
@@ -32,50 +20,44 @@ You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up 
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+## Create an Angular Application
 
-Start a new Angular application using the following Angular CLI command.
+Create a new Angular application using the following Angular CLI command:
 
-```
+```bash
 ng new my-app
+```
+This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
+
+![Initial_setup](images/getting-started/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Then the CLI also displays an additional prompt asking whether to enable Server‑Side Rendering (SSR) and Static Site Generation (SSG), as shown below:
+
+![Server_Side_Rendering_Setup](images/getting-started/SSR.png)
+
+For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+Then the CLI displays another prompt related to AI tooling support, as shown below:
+
+![AI_Tool_Setup](images/getting-started/AI-Tool.png)
+
+Any preferred option can be selected based on the development workflow or project needs.
+
+Next, navigate to the project folder:
+
+```bash
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> AI AssistView package
+## Adding Syncfusion AI AssistView package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-interactive-chat`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48) package to the application.
+All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Install the AI AssistView component with the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-interactive-chat --save
+npm install @syncfusion/ej2-angular-interactive-chat
 ```
-
-### Angular compatibility compiled package (ngcc)
-
-For projects using Angular versions below 12, you can use the legacy (`ngcc`) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below.
-
-Add the [`@syncfusion/ej2-angular-interactive-chat@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48-ngcc) package to the application.
-
-```bash
-npm install @syncfusion/ej2-angular-interactive-chat@ngcc --save
-```
-
-To specify the `ngcc` package in the `package.json` file, add the `-ngcc` suffix to the package version, as shown below.
-
-```bash
-@syncfusion/ej2-angular-interactive-chat:"27.1.48-ngcc"
-```
-
->Note: If the `ngcc` tag is not specified while installing the package, the Ivy Library Package will be installed, which may cause warnings in pre-Ivy applications.
 
 ## Adding CSS reference
 
@@ -103,7 +85,7 @@ import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the AI AssistView component
-    template: `<div ejs-aiassistview id='aiAssistView'></div>`
+    template: `<div ejs-aiassistview ></div>`
 })
 export class AppComponent  { }
 ```

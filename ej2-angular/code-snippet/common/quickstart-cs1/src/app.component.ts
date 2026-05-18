@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { GridAllModule } from '@syncfusion/ej2-angular-grids'
-
-
-
-
 import { enableRipple } from '@syncfusion/ej2-base';
 import { Component } from '@angular/core';
 
@@ -14,12 +10,9 @@ enableRipple(true);
 
 @Component({
 imports: [
-        
         ButtonModule,
         GridAllModule
     ],
-
-
 standalone: true,
   selector: 'app-root',
   template: `
