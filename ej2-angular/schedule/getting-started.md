@@ -37,39 +37,11 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. You can find all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages on [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) use the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. Use the following command to install the latest Ivy package.
-
-Add [`@syncfusion/ej2-angular-schedule`](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/v/32.1.19) package to the application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. To use the Schedule component in your Angular application, install the [@syncfusion/ej2-angular-schedule](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/) package from npm.
 
 ```bash
 npm install @syncfusion/ej2-angular-schedule --save
 ```
-
-### Angular compatibility compiled (NGCC) package
-
-For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-schedule@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/v/32.1.19-ngcc) package to the application.
-
-```bash
-npm install @syncfusion/ej2-angular-schedule@ngcc --save
-```
-
-To specify the NGCC package in `package.json`, add the `-ngcc` suffix to the version number.
-
-```bash
-@syncfusion/ej2-angular-schedule:"32.1.19-ngcc"
-```
-
->**Note**: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
 ## Adding CSS reference
 
@@ -87,68 +59,36 @@ The necessary CSS files for the Schedule component are located in the `ej2-angul
 @import '../node_modules/@syncfusion/ej2-angular-schedule/styles/material3.css';
 ```
 
-## Module injection
+## Initialize the Schedule component and configure module injection
 
-The Schedule component includes several view types that are available as individual modules. To use these views, you must inject the required modules. The available modules are:
+This section explains how to set up the Syncfusion Angular Schedule component in your application by registering the necessary services (such as Day, Week, WorkWeek, Month, and Agenda) in the providers array, and rendering the Scheduler component in the template.
 
-*   **Day**: For displaying the day view.
-*   **Week**: For displaying the week view.
-*   **WorkWeek**: For displaying the work week view.
-*   **Month**: For displaying the month view.
-*   **Year**: For displaying the year view.
-*   **Agenda**: For displaying the agenda view.
-*   **MonthAgenda**: For displaying the month agenda view.
-*   **TimelineViews**: For displaying timeline day, timeline week, and timeline work week views.
-*   **TimelineMonth**: For displaying the timeline month view.
-*   **TimelineYear**: For displaying the timeline year view.
-
-Inject these modules into the Schedule component using the `providers` array in your `app.component.ts` file, as shown below. Only the injected views will be available in the Schedule.
-
-`[src/app/app.component.ts]`
+`[src/app/app.ts]`
 
 ```typescript
 import { Component } from '@angular/core';
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, TimelineYearService } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
-  selector: 'app-root',
-  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, TimelineYearService]
-  // ...
+	imports: [
+		ScheduleModule
+	],
+	standalone: true,
+	selector: 'app-root',
+	providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
+	// Specifies the template string for the Schedule component
+	template: `<ejs-schedule></ejs-schedule>`
 })
-export class AppComponent { }
+export class App { }
 ```
 
-## Initialize the Schedule component
+Run the following command in the terminal to start the development server. This compiles the project, launches a local server, and allowing you to view changes in real time during development.
 
-Modify the template in `[src/app/app.component.ts]` to render the `ejs-schedule` component.
-
-`[src/app/app.component.ts]`
-
-```typescript
-import { Component } from '@angular/core';
-import { ScheduleModule, View } from '@syncfusion/ej2-angular-schedule';
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
-
-@Component({
-  imports: [       
-    ScheduleModule
-  ],
-  standalone: true,
-  selector: 'app-root',
-  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
-  // Specifies the template string for the Schedule component
-  template: `<ejs-schedule></ejs-schedule>`
-})
-export class AppComponent { }
 ```
-
-Now, run the application using the following command.
-
-```bash
 npm start
 ```
 
-The output will display an empty Schedule component.
+> Above demo will display the empty scheduler.
 
 ## Populating appointments
 
@@ -156,165 +96,90 @@ To populate the Schedule with appointments, you can use either a local JSON arra
 
 The `StartTime` and `EndTime` fields are mandatory for each appointment. The following example uses default fields like `Id`, `Subject`, `StartTime`, and `EndTime`.
 
-`[src/app/app.component.ts]`
+`[src/app/app.ts]`
 
 ```typescript
-
-import { ScheduleModule, ScheduleAllModule } from '@syncfusion/ej2-angular-schedule'
 import { Component } from '@angular/core';
-import { EventSettingsModel } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService, EventSettingsModel } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
-imports: [       
-      ScheduleModule, ScheduleAllModule
-    ],
-  standalone: true,
-  selector: 'app-root',
-  // specifies the template string for the Schedule component
-  template: `<ejs-schedule [eventSettings]='eventSettings'></ejs-schedule>`
+	imports: [
+		ScheduleModule
+	],
+	standalone: true,
+	selector: 'app-root',
+	providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
+	// specifies the template string for the Schedule component
+	template: `<ejs-schedule [eventSettings]='eventSettings'></ejs-schedule>`
 })
-export class AppComponent {
-  public data: object[] = [{
-    Id: 1,
-    Subject: 'Meeting',
-    StartTime: new Date(2018, 1, 15, 10, 0),
-    EndTime: new Date(2018, 1, 15, 12, 30)
-  }];
-  public eventSettings: EventSettingsModel = {
-    dataSource: this.data
-  };
+export class App {
+	public data: object[] = [{
+		Id: 1,
+		Subject: 'Meeting',
+		StartTime: new Date(new Date().setHours(9, 0, 0)),
+		EndTime: new Date(new Date().setHours(10, 0, 0))
+	}];
+	public eventSettings: EventSettingsModel = {
+		dataSource: this.data
+	};
 }
 ```
-
-You can also provide different names to these default fields, for which the custom names of those fields must be mapped appropriately within `fields` property as shown below.
-
-```typescript
-
-import { ScheduleModule, ScheduleAllModule } from '@syncfusion/ej2-angular-schedule'
-import { Component } from '@angular/core';
-import { DayService, WeekService, MonthService, WorkWeekService, EventSettingsModel, AgendaService } from '@syncfusion/ej2-angular-schedule';
-
-@Component({
-imports: [       
-      ScheduleModule, ScheduleAllModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
-    // Specifies the template string for the Schedule component
-    template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate'
-    [eventSettings]='eventSettings'></ejs-schedule>`
-  })
-  export class AppComponent {
-    public data: object [] = [{
-      id: 2,
-      eventName: 'Meeting',
-      startTime: new Date(2018, 1, 15, 10, 0),
-      endTime: new Date(2018, 1, 15, 12, 30),
-      isAllDay: false
-    }];
-    public selectedDate: Date = new Date(2018, 1, 15);
-    public eventSettings: EventSettingsModel = {
-      dataSource: this.data,
-      fields: {
-        id: 'id',
-        subject: { name: 'eventName' },
-        isAllDay: { name: 'isAllDay' },
-        startTime: { name: 'startTime' },
-        endTime: { name: 'endTime' },
-      }
-    };
-  }
-
-```
-
-For a full list of available appointment fields, refer to the [event fields documentation](./appointments#event-fields).
 
 ## Setting the date
 
 By default, the Schedule component displays the current system date. To set a specific date, use the [`selectedDate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#selecteddate) property.
 
-`[src/app/app.component.ts]`
+`[src/app/app.ts]`
 
 ```typescript
-
-import { ScheduleModule, ScheduleAllModule, View } from '@syncfusion/ej2-angular-schedule'
 import { Component } from '@angular/core';
-import { DayService, WeekService, MonthService, WorkWeekService, AgendaService } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
-imports: [       
-      ScheduleModule, ScheduleAllModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
-    // specifies the template string for the Schedule component
-    template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate'></ejs-schedule>`
+	imports: [
+		ScheduleModule
+	],
+	standalone: true,
+	selector: 'app-root',
+	providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
+	// specifies the template string for the Schedule component
+	template: `<ejs-schedule [selectedDate]='selectedDate'></ejs-schedule>`
 })
-export class AppComponent {
-  public selectedDate: Date = new Date(2018, 1, 15);
+export class App {
+	public selectedDate: Date = new Date(2026, 4, 18);
 }
-
 ```
 
 ## Setting the view
 
-The default view of the Schedule is `Week`. To change the current view, set the [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule#currentview) property to one of the following view names:
+The default view of the Schedule is `Week`. To change the current view, set the [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule#currentview) property to one of the following default view names:
 
 *   Day
 *   Week
 *   WorkWeek
 *   Month
-*   Year
 *   Agenda
-*   MonthAgenda
-*   TimelineDay
-*   TimelineWeek
-*   TimelineWorkWeek
-*   TimelineMonth
-*   TimelineYear
 
 ```typescript
-
-import { ScheduleModule, ScheduleAllModule, View } from '@syncfusion/ej2-angular-schedule'
 import { Component } from '@angular/core';
-import { DayService, WeekService, MonthService, WorkWeekService, AgendaService } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService, View } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
-imports: [       
-      ScheduleModule, ScheduleAllModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
-    // specifies the template string for the Schedule component
-    template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [currentView]='currentView' ></ejs-schedule>`
-  })
-export class AppComponent {
-  public selectedDate: Date = new Date(2018, 1, 15);
-  public currentView: View = 'Month';
+	imports: [
+		ScheduleModule
+	],
+	standalone: true,
+	selector: 'app-root',
+	providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
+	// specifies the template string for the Schedule component
+	template: `<ejs-schedule [currentView]='currentView' ></ejs-schedule>`
+})
+export class App {
+	public currentView: View = 'Day';
 }
 ```
 
-## Individual view customization
+## See also
 
-Each individual Scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone.
-This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
-
-The output will display the Scheduler with the specified view configuration.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/views-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/views-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/schedule/views-cs1" %}
-
-> You can also explore our [Angular Schedule Example](https://ej2.syncfusion.com/angular/demos/#/material3/schedule/overview), which shows how to use toolbar buttons to interact with Schedule features.
-```
+* [Explore available views and their customization options](./views.md)
+* [Explore appointments and event data handling](./appointments.md)

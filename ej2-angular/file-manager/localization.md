@@ -138,3 +138,21 @@ The following example demonstrates how to localize the File Manager to German la
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/file-manager/localization-cs1" %}
+
+## Rendering component in right-to-left direction
+
+It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablertl) API to true.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/rtl-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/rtl-cs1/src/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/rtl-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/rtl-cs1" %}

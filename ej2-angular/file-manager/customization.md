@@ -28,7 +28,7 @@ The following customization options are available in the File Manager component:
 
 ## Context menu customization
 
-The context menu settings, such as items to be displayed on files, folders, and layout, as well as click behavior and visibility, can be customized using the [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#contextmenusettings) property.
+The context menu settings, such as items to be displayed on files, folders, and layout, as well as click behavior and visibility, can be customized using the [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#contextmenusettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ The context menu settings, such as items to be displayed on files, folders, and 
 
 ## Details view customization
 
-The details view settings like column width, header text, and template for each field can be customized using the [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#detailsviewsettings) property.
+The details view settings like column width, header text, and template for each field can be customized using the [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#detailsviewsettings) property.
 This allows you to control how file and folder information is displayed in the details view.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ This allows you to control how file and folder information is displayed in the d
 
 ## Navigation pane customization
 
-The navigation pane settings like minimum and maximum width, visibility, and sort order can be customized using the [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#navigationpanesettings) property. This helps you optimize the file navigation experience for your users.
+The navigation pane settings like minimum and maximum width, visibility, and sort order can be customized using the [navigationPaneSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#navigationpanesettings) property. This helps you optimize the file navigation experience for your users.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,9 +82,9 @@ The navigation pane settings like minimum and maximum width, visibility, and sor
 
 ## Show/Hide file extension
 
-The file extensions are displayed in the File Manager by default. This can be hidden by disabling the [showFileExtension](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showfileextension) property.
+The file extensions are displayed in the File Manager by default. This can be hidden by disabling the [showFileExtension](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showfileextension) property.
 
-In File Manager, the [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#fileload) and [fileOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
+In File Manager, the [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/file-manager#fileload) and [fileOpen](https://ej2.syncfusion.com/angular/documentation/api/file-manager#fileopen) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ In File Manager, the [fileLoad](https://ej2.syncfusion.com/angular/documentation
 
 ## Show/Hide hidden items
 
-The File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showhiddenitems) property.
+The File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showhiddenitems) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +120,7 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 
 ## Show/Hide thumbnail images in large icons view
 
-The thumbnail images are displayed in the File Manager's large icons view by default. This can be hidden by disabling the [showThumbnail](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showthumbnail) property.
+The thumbnail images are displayed in the File Manager's large icons view by default. This can be hidden by disabling the [showThumbnail](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showthumbnail) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,7 +138,7 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 
 ## Toolbar customization
 
-The toolbar settings like items to be displayed in the toolbar and their visibility can be customized using the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#toolbarsettings) property. This allows you to include only the tools relevant to your application's requirements.
+The toolbar settings like items to be displayed in the toolbar and their visibility can be customized using the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#toolbarsettings) property. This allows you to include only the tools relevant to your application's requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,7 +160,7 @@ The toolbar settings like items to be displayed in the toolbar and their visibil
 
 ## Upload customization
 
-The upload settings like minimum and maximum file size and enabling auto upload can be customized using the [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#uploadsettings) property. These settings help control what files users can upload and how the upload process behaves.
+The upload settings like minimum and maximum file size and enabling auto upload can be customized using the [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#uploadsettings) property. These settings help control what files users can upload and how the upload process behaves.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -193,3 +193,60 @@ The tooltip value can be customized by adding extra content to the title of the 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/file-manager/tooltip-cs1" %}
+
+## Maintaining Component State on Page Reload
+
+The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablepersistence) property which maintains the following,
+* Previous view of the File Manager - [View](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view)
+* Previous navigation path of the File Manager - [Path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path)
+* Previous selected items of the File Manager - [SelectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#selecteditems)
+
+For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/angular/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/angular/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/persistence-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/persistence-cs1/src/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/persistence-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/persistence-cs1" %}
+
+>**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager#refreshfiles) method.
+
+## Specifying the current path of the File Manager
+
+The current path of the File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path) property.
+
+The following code snippet demonstrates specifying the current path in File Manager on rendering.
+
+```typescript
+
+import { Component, OnInit } from '@angular/core';
+import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager';
+@Component({
+    selector: 'app-root',
+    imports: [FileManagerModule],
+    template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings' [path]='path'>
+    </ejs-filemanager>`
+})
+export class App implements OnInit {
+    public ajaxSettings: object = {};
+    public path: string = '/Pictures/Employees';
+    public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+    
+    public ngOnInit(): void {
+        this.ajaxSettings = {
+            url: this.hostUrl + 'api/FileManager/FileOperations',
+            getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
+            uploadUrl: this.hostUrl + 'api/FileManager/Upload',
+            downloadUrl: this.hostUrl + 'api/FileManager/Download'
+        };
+    };
+}
+```
