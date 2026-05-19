@@ -92,7 +92,7 @@ This command will perform the following configurations:
 
 - Add the `@syncfusion/ej2-angular-grids` package and peer dependencies to your `package.json`.
 - Import the Grid component in your application.
-- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
+- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material3 theme in `angular.json`.
 
 For more details on version compatibility, refer to the [Version Compatibility](../upgrade/version-compatibility) section.
 
@@ -168,16 +168,6 @@ This command compiles your application and serves it through a development serve
 You can also watch the following video to quickly get started with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component:
 
 {% youtube "https://www.youtube.com/watch?v=lk83TlHQ95c" %}
-
-## Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Showcase Samples
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers a variety of sample applications that showcase the use of Angular UI components:
-
-* [Expense Tracker](https://ej2.syncfusion.com/showcase/angular/expensetracker/#/dashboard)
-* [Diagram Builder](https://ej2.syncfusion.com/showcase/angular/diagrambuilder/#/home)
-* [Web Mail](https://ej2.syncfusion.com/showcase/angular/webmail/#/home)
-* [Appointment Planner](https://ej2.syncfusion.com/showcase/angular/appointmentplanner/#/dashboard)
-* [Stock Chart](https://ej2.syncfusion.com/showcase/angular/stockchart/#/stockChart)
 
 ## See Also
 

@@ -61,7 +61,7 @@ This command performs the following configurations in your Angular application:
 
 - Adds the `@syncfusion/ej2-angular-grids` package and its dependencies to `package.json`.
 - Imports `GridModule` into your application's default standalone component `app.ts`.
-- Registers Syncfusion<sup style="font-size:70%">&reg;</sup>'s default Material theme in `angular.json`.
+- Registers Syncfusion<sup style="font-size:70%">&reg;</sup>'s default Material3 theme in `angular.json`.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 

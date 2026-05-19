@@ -88,7 +88,7 @@ dotnet build
    - `ClientApp/`: Contains the Angular application
    - `Controllers/`: Houses ASP.NET Core API controllers
    - `Pages/`: Contains Razor pages (if any)
-   - `Program.cs`: Configures ASP.NET Core services and middleware
+   - `Program.cs`: Configures ASP.NET Core services and middle ware
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package
 
@@ -227,7 +227,7 @@ Add the required CSS files to style your Syncfusion<sup style="font-size:70%">&r
 {% endhighlight %}
 {% endtabs %}
 
-These imports provide the Material theme styling for various UI components that the Grid depends on. The imports should be in this specific order to ensure proper styling.
+These imports provide the Material3 theme styling for various UI components that the Grid depends on. The imports should be in this specific order to ensure proper styling.
 
 ## Run the Application
 

@@ -5,116 +5,183 @@ description:  Checkout and learn about Getting started with Angular Maps compone
 platform: ej2-angular
 control: Getting started 
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://ej2.syncfusion.com
 ---
 
 # Getting started with Angular Maps component
 
-This section explains the steps required to create a map and demonstrates the basic usage of the Maps component.
+This section explains the steps required to create a simple [Angular Maps](https://www.syncfusion.com/angular-components/angular-maps-library) and demonstrates the basic usage of the Maps component in an Angular environment.
 
-You can explore some useful features in the Maps component using the following video.
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+
+To get started quickly with Angular Maps using CLI and Schematics, view the following video:
 
 {% youtube "https://www.youtube.com/watch?v=kwE6ikF7QYQ" %}
 
-## Dependencies
+## Prerequisites
 
-The following is a list of the dependencies required to use the Maps component.
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
-```javascript
-|-- @syncfusion/ej2-angular-maps
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-angular-maps
-    |-- @syncfusion/ej2-maps
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-svg-base
-    |-- @syncfusion/ej2-data
-```
+## Setup Angular environment
 
-## Setup Angular Environment
-
-Prerequisites: Node.js (LTS) and npm must be installed before creating an Angular project.
-
-Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI with one of the following approaches depending on preference.
+A straightforward approach to begin with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular Application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Create a new Angular application with the Angular CLI:
+### Installing a specific version
+
+To install a particular version of Angular CLI, use:
 
 ```bash
-ng new my-app
-cd my-app
+npm install -g @angular/cli@21.0.0
 ```
+
+## Create an Angular application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](./images/MapProviders/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](./images/MapProviders/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Maps package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are published on npm under the `@syncfusion` scope. The Angular distribution is available in two package formats:
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
-
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler (ngcc) package for legacy compilation and rendering
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>=20.2.36) use the Ivy distribution to support the Angular Ivy rendering engine. These packages are compatible with Angular version 21 and other latest angular versions. Install the Ivy package with the following command:
-
-Add [`@syncfusion/ej2-angular-maps`](https://www.npmjs.com/package/@syncfusion/ej2-angular-maps/v/32.1.19) package to the application.
+This guide uses the [Angular Maps component](https://www.syncfusion.com/angular-components/angular-maps-library) for demonstration. Add the Angular Maps component with:
 
 ```bash
 npm install @syncfusion/ej2-angular-maps --save
 ```
 
-### Angular compatibility compiled package (ngcc)
+The above command will perform the following configurations:
 
-For Angular versions earlier than 12, use the legacy ngcc package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Install the ngcc package with:
+- Add the `@syncfusion/ej2-angular-maps` package and peer dependencies to your `package.json`.
+- Import the Maps component in your application.
 
-Add [`@syncfusion/ej2-angular-maps@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-maps/v/32.1.19-ngcc) package to the application.
+For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
+2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.
+
+### Ivy library distribution package
+
+Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:	
+	
+```bash		
+ng add @syncfusion/ej2-angular-maps		
+```	
+
+### Angular compatibility compiled package(ngcc)
+
+For applications not compiled with Ivy, use the `ngcc` tagged packages:       
+
+> Note: `ngcc` is the legacy Angular compatibility compiler. For modern projects we recommend using the Ivy-distribution packages (installable via `ng add ...`). ngcc-tagged packages may still be required for some older Angular 12–15 projects, but Angular 16+ favors Ivy-only packages. If you must use an ngcc-tagged package, consult the Syncfusion troubleshooting guide linked below for migration tips.
 
 ```bash
-npm install @syncfusion/ej2-angular-maps@ngcc --save
+npm add @syncfusion/ej2-angular-maps@32.1.19-ngcc
 ```
 
-To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version, for example:
+Or add the dependency to `package.json`:
 
-```bash
-@syncfusion/ej2-angular-maps:"32.1.19-ngcc"
+```json
+{
+  "dependencies": {
+    "@syncfusion/ej2-angular-maps": "32.1.19-ngcc"
+  }
+}
 ```
 
-> Note: If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
+See the ngcc troubleshooting guide: https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility
 
 ## Add Maps component
 
-Modify the template in `app.component.ts` file to render the Maps component
-`[src/app/app.component.ts]`.
+Modify the template in `app.ts` file to render the Maps component `[src/app/app.ts]`.
 
-```javascript
+Note: `MapsAllModule` exports all maps feature modules and is convenient for examples and quick setup. To reduce bundle size in real apps, import only the feature modules you need (for example, `AnnotationsService`, `BubbleService`, etc.). `MapsModule` is the core module; `MapsAllModule` bundles all features for convenience.
 
-import { MapsModule } from '@syncfusion/ej2-angular-maps'
-import { Component, ViewEncapsulation } from '@angular/core';
+Best practice (selective imports):
+
+```typescript
+
+import { Component } from '@angular/core';
+import { MapsModule, AnnotationsService, BubbleService } from '@syncfusion/ej2-angular-maps';
 
 @Component({
-imports: [
-        MapsModule
-    ],
-    standalone: true,
-    selector: 'app-container',
-  // specifies the template string for the maps component
-  template: `<ejs-maps id='maps-container'></ejs-maps>`,
-  encapsulation: ViewEncapsulation.None
+  imports: [MapsModule],
+  standalone: true,
+  selector: 'app-root',
+  providers: [AnnotationsService, BubbleService],
+  template: `<ejs-maps id='maps-container'></ejs-maps>`
 })
-export class AppComponent  { }
+export class App { }
 
 ```
 
-Add the `world_map` GeoJSON data to the **app.component.ts** file.
+This keeps the final bundle smaller than importing `MapsAllModule`.
 
-Note: Refer to the world_map GeoJSON data at Syncfusion Downloads: https://www.syncfusion.com/downloads/support/directtrac/general/ze/world-map-2091224620. This data must be imported into `src/app/app.component.ts`.
+```typescript
 
-```javascript
+import { MapsAllModule } from '@syncfusion/ej2-angular-maps';
+import { Component, ViewEncapsulation } from '@angular/core';
+
+@Component({
+    imports: [MapsAllModule],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-maps id='maps-container'></ejs-maps>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class App { }
+
+```
+
+Add the `world_map` GeoJSON data to the **app.ts** file.
+
+Note: Refer to the world_map GeoJSON data at Syncfusion Downloads: https://www.syncfusion.com/downloads/support/directtrac/general/ze/world-map-2091224620. This data must be imported into `src/app/app.ts`.
+
+```typescript
 import { world_map } from './world-map';
 ```
 
@@ -125,91 +192,48 @@ Bind the **world_map** data to the **shapeData** property of the **layer** in th
     // specifies the template string for the maps component
     template: `<ejs-maps id='maps-container'>
                 <e-layers>
-                    <e-layer [shapeData] = 'shapeData'></e-layer>
+                    <e-layer [shapeData]='shapeData'></e-layer>
                 </e-layers>
                </ejs-maps>`
 })
-export class AppComponent {
+export class App {
   public shapeData: object = world_map;
 }
 ```
 
-<!-- markdownlint-disable MD033 -->
-
-Now use the <code>app-container</code> in the **index.html** instead of default one.
-
+Now use the `app-root` selector in the `index.html` file instead of the default one.
+ 
 ```html
-<app-container></app-container>
+<app-root></app-root>
 ```
 
-```typescript
-@Component({
-    selector: 'app-container'
-})
+Use the `ng serve` command to run the application in the browser.
+
+```bash
+ng serve
 ```
 
-* Now run the application in the browser using the below command.
-
-  ```
-  npm start
-  ```
-
-The below example shows a basic map.
+The below example shows a basic Map.
 
 ```typescript
 
-import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { MapsModule } from '@syncfusion/ej2-angular-maps';
 import { Component } from '@angular/core';
 import { world_map } from './world-map';
 
 @Component({
-imports: [
-        MapsModule
-    ],
+    imports: [MapsModule],
     standalone: true,
     selector: 'app-root',
-    // specifies the template string for the maps component
     template: `<ejs-maps id='maps-container'>
                 <e-layers>
-                    <e-layer [shapeData] = 'shapeData'></e-layer>
+                    <e-layer [shapeData]='shapeData'></e-layer>
                 </e-layers>
                </ejs-maps>`
 })
-export class AppComponent {
+export class App {
   public shapeData: object = world_map;
 }
-
-```
-
-## Module Injection
-
-The Maps component is divided into feature-specific modules. To use a feature, inject its module with the `Maps.Inject()` method. The available modules and their purposes are:
-
-* `AnnotationsService` - Inject this provider to use annotations feature.
-* `BubbleService` - Inject this provider to use bubble feature.
-* `DataLabelService` - Inject this provider to use data label feature.
-* `HighlightService` - Inject this provider to use highlight feature.
-* `LegendService` - Inject this provider to use legend feature.
-* `MarkerService` - Inject this provider to use marker feature.
-* `MapsTooltipService` - Inject this provider to use tooltip series.
-* `NavigationLineService` - Inject this provider to use navigation lines feature.
-* `SelectionService` - Inject this provider to use selection feature.
-* `ZoomService` - Inject this provider to use zooming and panning feature.
-* `PolygonService` - Inject this provider to use polygon feature.
-
-This example uses the tooltip, data label, and legend features. Import the MapsTooltip, DataLabel, and Legend modules from `@syncfusion/ej2-angular-maps`.
-
- ```javascript
-    import { Component } from '@angular/core';
-    import { LegendService, DataLabelService, MapsTooltipService, MapsModule} from '@syncfusion/ej2-angular-maps';
-
-    @NgModule({
-        imports: [
-            MapsModule,
-        ],
-        standalone: true,
-        providers: [ LegendService, DataLabelService,MapsTooltipService ]
-    })
 
 ```
 
@@ -217,7 +241,7 @@ This example uses the tooltip, data label, and legend features. Import the MapsT
 
 This section explains how to bind GeoJSON data to the map.
 
-```javascript
+```typescript
 
 let usMap: object =
 {
@@ -236,8 +260,6 @@ let usMap: object =
 
 Map elements are rendered within layers. Add a layer collection to the Maps using the [`layers`](https://ej2.syncfusion.com/angular/documentation/api/maps/layersettingsmodel) property, then bind the GeoJSON data to the [`shapeData`](https://ej2.syncfusion.com/angular/documentation/api/maps/layersettings#shapedata) property.
 
-[`app.module.ts`]
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs34/src/app.component.ts %}
@@ -250,9 +272,8 @@ Map elements are rendered within layers. Add a layer collection to the Maps usin
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs34" %}
 
-<!-- markdownlint-disable MD022 -->
 ## Bind data source to map
-<!-- markdownlint-disable MD009 -->
+
 The following layer properties are used to bind a data source to the map.
 
 * dataSource
@@ -277,26 +298,6 @@ The JSON object "electionData" is used as data source below.
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs35" %}
 
-## Apply Color Mapping
-
-The Color Mapping feature supports customization of shape colors based on the underlying value of shape received from bounded data. Specify the field name from which the values have to be compared for the shapes in [`colorValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel#colorvaluepath) property in [`shapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel).
-
-Specify color and value in [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel#colormapping) property. Here '#D84444' is specified for 'Trump' and '#316DB5' is specified for 'Clinton'.
-
-[`app.module.ts`]
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs36/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs36/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs36" %}
-
 ## Add Title for Maps
 
 You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/titleSettingsModel) property to the map to provide quick information to the user about the shapes rendered in the map.
@@ -312,52 +313,3 @@ You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/d
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs37" %}
-
-## Enable Legend
-
-You can show legend for the maps by setting true to the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) object and by injecting the `LegendService` module using `@NgModule.providers` method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs38/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs38/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs38" %}
-
-## Add Data Label
-
-You can add data labels to show additional information of the shapes in map. This can be achieved by setting [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel#visible) property to true in the [`dataLabelSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel) object and by injecting `DataLabelService` module using `@NgModule.providers` method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs39/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs39/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs39" %}
-
-## Enable Tooltip
-
-The tooltip is useful when you cannot display information by using the data labels due to space constraints.
-You can enable tooltip by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel#visible) property as true in [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/tooltipSettingsModel) object and by injecting `MapsTooltipService` module using `@NgModule.providers` method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs40/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs40/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/maps/default-map/datetime-cs40" %}

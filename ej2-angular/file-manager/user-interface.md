@@ -38,6 +38,44 @@ A lightweight version with essential functionality for simple use cases, includi
 
 ![Basic File Manager](./images/default-ui.png)
 
+## Injecting Services for Overview
+
+The basic File Manager includes a context menu, large-icons view, and breadcrumb navigation. You can extend its functionality by injecting additional feature modules:
+
+* Toolbar: Provides quick access to common operations
+* Navigation pane: Shows folder hierarchy for easy navigation
+* Details view: Displays files and folders in a detailed list format
+
+Import and inject these modules as providers in your `app.component.ts`:
+
+```typescript
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager';
+import { Component } from '@angular/core';
+
+@Component({
+  imports: [
+    FileManagerModule
+  ],
+  standalone: true,
+  providers: [NavigationPaneService, ToolbarService, DetailsViewService]
+})
+export class App { }
+```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/overview-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/overview-cs1/src/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/overview-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/overview-cs1" %}
+
 ## Toolbar
 
 The toolbar provides quick access to common file operations through a set of action buttons. It's an injectable module that must be included before rendering the File Manager.

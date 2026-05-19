@@ -8,28 +8,26 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular File Manager component
+# Getting Started with Angular File Manager component
 
 The File Manager component provides a graphical user interface for browsing, managing, and organizing files and folders. This section explains how to create a simple **File Manager** component and its basic usage.
 
 ## Prerequisites
 
-To get started with **File Manager** component, ensure the compatible versions of Angular and Typescript.
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
-* Angular : `4+`
-* Typescript : `2.6+`
+## Setup the Angular application
 
-## Setting up angular project
-
-Angular provides the easiest way to set up Angular CLI projects using the Angular CLI tool.
-
-Install the CLI application globally to your machine by using following command.
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```sh
 npm install -g @angular/cli
 ```
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-To Create a new application, refer the below command
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
 
 ```sh
 ng new syncfusion-angular-app
@@ -67,68 +65,19 @@ ng new syncfusion-angular-app --style=scss
 cd syncfusion-angular-app
 ```
 
->Refer [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
-
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding Dependencies
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
 
-The following list of dependencies are required to use the File Manager component in your application:
-
-```javascript
-|-- @syncfusion/ej2-angular-filemanager
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-layouts
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-splitbuttons
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-grids
-    |-- @syncfusion/ej2-filemanager
-```
-
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-filemanager`](https://www.npmjs.com/package/@syncfusion/ej2-angular-filemanager/v/32.1.19) package to the application.
+To install the File Manager component, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-filemanager --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+## Adding CSS reference
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-filemanager@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-filemanager/v/32.1.19-ngcc) package to the application.
-
-```bash
-npm install @syncfusion/ej2-angular-filemanager@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below:
-
-```bash
-@syncfusion/ej2-angular-filemanager:"32.1.19-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Adding style sheet to the application
-
-To render the File Manager component, import the File Manager and its dependent components' styles as shown below in `[src/styles.css]`.
+The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css**
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
@@ -142,58 +91,15 @@ To render the File Manager component, import the File Manager and its dependent 
 @import '../node_modules/@syncfusion/ej2-angular-filemanager/styles/material3.css';
 ```
 
-Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+> Ensure that the import order aligns with the component's dependency sequence.
 
-```css
-@import 'node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-layouts/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-grids/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-filemanager/styles/material3.css';
-```
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
->Note: To refer the combined component styles, use Syncfusion<sup style="font-size:70%">&reg;</sup> [`CRG`](https://crg.syncfusion.com) (Custom Resource Generator) in your application.
+## Add File Manager component
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> component
+Modify the template in the **src/app/app.ts** file to render the File Manager component. Add the Angular File Manager by using `<ejs-filemanager>` selector in `template` section of the **app.ts** file.
 
-Add the File Manager component by using `<ejs-filemanager>` selector in `template` section of the `app.component.ts` file.
-Refer the File Manager component snippet in `app.component.ts` as follows.
-
-```typescript
-import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
-import { Component } from '@angular/core';
-
-@Component({
-imports: [FileManagerModule, FileManagerAllModule ],
-  standalone: true,
-  selector: 'app-root',
-  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
-</ejs-filemanager>`
-})
-
-export class App {
-  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-  public ajaxSettings: object = {
-    url: this.hostUrl + 'api/FileManager/FileOperations'
-  };
-}
-```
-
->**Note:** The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) property must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send file operation request to the server. The File Manager service link is provided in the `hostUrl` variable.
-
-## Run the application
-
-Use the npm start command to run the application in the browser:
-
-```sh
-npm start
-```
-
-The following samples shows the basic File Manager component in browser:
+The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) property must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send file operation request to the server. The File Manager service link is provided in the `hostUrl` variable.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,204 +115,20 @@ The following samples shows the basic File Manager component in browser:
   
 {% previewsample "page.domainurl/samples/file-manager/getting-started-cs1" %}
 
-## File Download support
 
-To enable the download operation, initialize the [downloadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#downloadurl) property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of the File Manager component.
+## Run the application
 
-```typescript
-import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
-import { Component } from '@angular/core';
+Use the npm start command to run the application in the browser:
 
-@Component({
-imports: [FileManagerModule, FileManagerAllModule ],
-  standalone: true,
-  selector: 'app-root',
-  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
-</ejs-filemanager>`
-})
-
-export class App {
-  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-  public ajaxSettings: object = {
-    url: this.hostUrl + 'api/FileManager/FileOperations',
-    downloadUrl: this.hostUrl + 'api/FileManager/Download'
-  };
-}
+```sh
+npm start
 ```
 
-## File Upload support
+## See also
 
-To perform the upload operation, initialize the [uploadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#uploadurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager Component.
-
-```typescript
-import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
-import { Component } from '@angular/core';
-
-@Component({
-imports: [FileManagerModule, FileManagerAllModule ],
-  standalone: true,
-  selector: 'app-root',
-  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
-  </ejs-filemanager>`
-})
-
-export class App {
-  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-  public ajaxSettings: object = {
-    url: this.hostUrl + 'api/FileManager/FileOperations',
-    uploadUrl: this.hostUrl + 'api/FileManager/Upload'
-  };
-}
-```
-
-## Image Preview support
-
-To perform the image preview support in the File Manager component, need to initialize the [getImageUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#getimageurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager component.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/getting-started-cs2/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/file-manager/getting-started-cs2/src/styles.css %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/getting-started-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/file-manager/getting-started-cs2" %}
-
-## Injecting feature modules
-
-The basic File Manager includes a context menu, large-icons view, and breadcrumb navigation. You can extend its functionality by injecting additional feature modules:
-
-* Toolbar: Provides quick access to common operations
-* Navigation pane: Shows folder hierarchy for easy navigation
-* Details view: Displays files and folders in a detailed list format
-
-Import and inject these modules as providers in your `app.component.ts`:
-
-```typescript
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager';
-import { Component } from '@angular/core';
-
-@Component({
-  imports: [
-    FileManagerModule
-  ],
-  standalone: true,
-  providers: [NavigationPaneService, ToolbarService, DetailsViewService]
-})
-export class App { }
-```
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/overview-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/file-manager/overview-cs1/src/styles.css %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/overview-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/file-manager/overview-cs1" %}
-
->**Note:** The appearance of the File Manager can be customized by using [cssClass](https://ej2.syncfusion.com/angular/documentation/api/file-manager#cssclass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
-
-## Switching initial view of the File Manager
-
-The initial view of the File Manager can be changed to details or largeicons view with the help of [view](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view) property. By default, the File Manager will be rendered in large icons view.
-When the File Manager is initially rendered, [created](https://ej2.syncfusion.com/angular/documentation/api/file-manager#created) will be triggered. This event can be utilized for performing operations once the File Manager has been successfully created.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/view-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/file-manager/view-cs1/src/styles.css %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/view-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/file-manager/view-cs1" %}
-
-## Maintaining component state on page reload
-
-The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablepersistence) property which maintains the following,
-* Previous view of the File Manager - [View](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view)
-* Previous navigation path of the File Manager - [Path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path)
-* Previous selected items of the File Manager - [SelectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#selecteditems)
-
-For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://ej2.syncfusion.com/angular/documentation/api/file-manager#success) event will be triggered and [failure](https://ej2.syncfusion.com/angular/documentation/api/file-manager#failure) event will be triggered if the request gets failed.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/persistence-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/file-manager/persistence-cs1/src/styles.css %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/persistence-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/file-manager/persistence-cs1" %}
-
->**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager#refreshfiles) method.
-
-## Rendering component in right-to-left direction
-
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablertl) API to true.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/rtl-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/file-manager/rtl-cs1/src/styles.css %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/rtl-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/file-manager/rtl-cs1" %}
-
-## Specifying the current path of the File Manager
-
-The current path of the File Manager can be specified initially or dynamically using the [path](https://ej2.syncfusion.com/angular/documentation/api/file-manager#path) property.
-
-The following code snippet demonstrates specifying the current path in File Manager on rendering.
-
-```typescript
-
-import { Component, OnInit } from '@angular/core';
-import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager';
-@Component({
-    selector: 'app-root',
-    imports: [FileManagerModule],
-    template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings' [path]='path'>
-    </ejs-filemanager>`
-})
-export class App implements OnInit {
-    public ajaxSettings: object = {};
-    public path: string = '/Pictures/Employees';
-    public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    
-    public ngOnInit(): void {
-        this.ajaxSettings = {
-            url: this.hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-            downloadUrl: this.hostUrl + 'api/FileManager/Download'
-        };
-    };
-}
-```
+* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](./file-operations#ajax-settings-configuration)
+* [Injecting Services for Overview](./user-interface#injecting-services-for-overview)
+* [File Manager Views](./views)
+* [File Manager File Operations](./file-operations)
+* [File Manager Upload](./upload)
+* [File Manager Customization](./customization)
