@@ -33,7 +33,7 @@ The following table outlines the fundamental operations supported by the File Ma
 
 ## Folder Upload support
 
-To enable directory (folder) upload functionality in the File Manager, set the [directoryUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettings/#directoryupload) property to true within the `uploadSettings` property. This setting determines whether users can upload entire folders or just individual files.
+To enable directory (folder) upload functionality in the File Manager, set the [directoryUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettings#directoryupload) property to true within the `uploadSettings` property. This setting determines whether users can upload entire folders or just individual files.
 
 The directory upload feature is supported for the following file service providers:
 * Physical file service provider
@@ -851,7 +851,7 @@ The following table outlines the request parameters for *GetImage* operations:
 
 The response returns the image as a file stream.
 
->Note: You can customize File Manager requests using the [beforeSend](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforesend) event. This allows you to pass additional information to the File Manager in file operation responses for customization purposes.
+>Note: You can customize File Manager requests using the [beforeSend](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforesend) event. This allows you to pass additional information to the File Manager in file operation responses for customization purposes.
 
 ## File request and response contents
 
@@ -1041,3 +1041,75 @@ The following table shows the default context menu items and their corresponding
         </td>
     </tr>
 </table>
+
+## Ajax Settings Configuration
+
+The File Manager's [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
+
+## File Download support
+
+To enable the download operation, initialize the [downloadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#downloadurl) property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of the File Manager component.
+
+```typescript
+import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
+import { Component } from '@angular/core';
+
+@Component({
+imports: [FileManagerModule, FileManagerAllModule ],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
+</ejs-filemanager>`
+})
+
+export class App {
+  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+  public ajaxSettings: object = {
+    url: this.hostUrl + 'api/FileManager/FileOperations',
+    downloadUrl: this.hostUrl + 'api/FileManager/Download'
+  };
+}
+```
+
+## File Upload support
+
+To perform the upload operation, initialize the [uploadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#uploadurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager Component.
+
+```typescript
+import { FileManagerModule, FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager'
+import { Component } from '@angular/core';
+
+@Component({
+imports: [FileManagerModule, FileManagerAllModule ],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
+  </ejs-filemanager>`
+})
+
+export class App {
+  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+  public ajaxSettings: object = {
+    url: this.hostUrl + 'api/FileManager/FileOperations',
+    uploadUrl: this.hostUrl + 'api/FileManager/Upload'
+  };
+}
+```
+
+## Image Preview support
+
+To perform the image preview support in the File Manager component, need to initialize the [getImageUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#getimageurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/getting-started-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/getting-started-cs2/src/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/getting-started-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/getting-started-cs2" %}

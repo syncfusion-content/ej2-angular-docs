@@ -88,7 +88,7 @@ dotnet build
    - `ClientApp/`: Contains the Angular application
    - `Controllers/`: Houses ASP.NET Core API controllers
    - `Pages/`: Contains Razor pages (if any)
-   - `Program.cs`: Configures ASP.NET Core services and middleware
+   - `Program.cs`: Configures ASP.NET Core services and middle ware
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Package
 
