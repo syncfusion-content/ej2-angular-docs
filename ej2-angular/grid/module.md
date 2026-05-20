@@ -44,9 +44,11 @@ The following example demonstrates how to enable basic features such as Paging, 
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/grid/sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/sorting-cs1/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid/sorting-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
   

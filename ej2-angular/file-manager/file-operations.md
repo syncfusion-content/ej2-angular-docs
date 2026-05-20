@@ -1046,7 +1046,7 @@ The following table shows the default context menu items and their corresponding
 
 The File Manager's [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/index-default#ajaxsettings) property allows you to configure the URLs for various file operations including file operations, upload, download, and image preview.
 
-## File Download support
+### File Download support
 
 To enable the download operation, initialize the [downloadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#downloadurl) property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of the File Manager component.
 
@@ -1071,7 +1071,7 @@ export class App {
 }
 ```
 
-## File Upload support
+### File Upload support
 
 To perform the upload operation, initialize the [uploadUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#uploadurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager Component.
 
@@ -1096,7 +1096,7 @@ export class App {
 }
 ```
 
-## Image Preview support
+### Image Preview support
 
 To perform the image preview support in the File Manager component, need to initialize the [getImageUrl](https://ej2.syncfusion.com/angular/documentation/api/file-manager/ajaxsettingsmodel#getimageurl) property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) of File Manager component.
 

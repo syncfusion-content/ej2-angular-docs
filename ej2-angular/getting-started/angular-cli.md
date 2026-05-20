@@ -10,11 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Using Angular CLI and TypeScript
 
-This guide provides a step-by-step walkthrough for setting up an Angular project using TypeScript with Angular CLI, alongside integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to enhance your application's functionality.
+This guide provides step-by-step instructions for setting up an Angular project using TypeScript with Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components to enhance your application's functionality.
 
 The Angular CLI is a powerful command-line tool that simplifies the creation, management, and building of Angular applications, enabling a quick start to development.
-
-> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
 ## Prerequisites
 
@@ -28,54 +26,12 @@ A straightforward approach to beginning with Angular is to create a new applicat
 npm install -g @angular/cli
 ```
 
-> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need information more information about the standalone architecture, refer to the [Standalone Guide](./angular-standalone).
-
-### Installing a Specific Version
-
-To install a particular version of Angular CLI, use:
-
-```bash
-npm install -g @angular/cli@21.0.0
-```
-
 ## Create a New Application
 
 With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
 ng new syncfusion-angular-app
-```
-
-* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
-
-```bash
-
-? Which stylesheet format would you like to use? (Use arrow keys)
-> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
-  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
-  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
-  Less            [ http://lesscss.org                                             ]
-
-```
-
-* By default, a CSS-based application is created. Use SCSS if required:
-
-```bash
-ng new syncfusion-angular-app --style=scss
-```
-
-* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
-
-![Initial_setup](../images/SSR.png)
-
-* Select the required AI tool or 'none' if you do not need any AI tool.
-
-![Initial_setup](../images/Ai.png)
-
-* Navigate to your newly created application directory:
-
-```bash
-cd syncfusion-angular-app
 ```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages
@@ -88,38 +44,28 @@ This guide uses the [Angular Grid Component](https://www.syncfusion.com/angular-
 ng add @syncfusion/ej2-angular-grids
 ```
 
-This command will perform the following configurations:
+This command performs the following automatic configurations:
 
-- Add the `@syncfusion/ej2-angular-grids` package and peer dependencies to your `package.json`.
-- Import the Grid component in your application.
-- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material3 theme in `angular.json`.
+- Adds `@syncfusion/ej2-angular-grids` package and peer dependencies
+- Imports the Grid component in your application
+- Registers the Material3 theme in `angular.json`
 
-For more details on version compatibility, refer to the [Version Compatibility](../upgrade/version-compatibility) section.
+**For version compatibility**, see the [Version Compatibility](../upgrade/version-compatibility) guide.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
-2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
-```bash		
-ng add @syncfusion/ej2-angular-grids		
-```		
-For applications not compiled with Ivy, use the `ngcc` tagged packages:		
+**Legacy Support:** For older Angular projects using ngcc (Angular 15 and below):
 
-```bash		
-npm add @syncfusion/ej2-angular-grids@20.2.38-ngcc		
+```bash
+npm add @syncfusion/ej2-angular-grids@20.2.38-ngcc
 ```
 
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility).		
+> **Note:** Angular 16+ no longer supports ngcc. For questions, refer to the [FAQ](../common/troubleshooting/ngcc-compatibility).		
 
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
 
-The `Material3` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
-
-To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the Grid component:
- 
+To import styles for specific components, add only what you need:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
@@ -133,39 +79,74 @@ To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> compon
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
 ```
 
-> Ensure that the import order aligns with the component's dependency sequence.
+> Import order should match the component's dependency sequence.
 
-For using SCSS styles, refer to [this guide](../common/how-to/sass).
+See the [SCSS guide](../common/how-to/sass) for SCSS styles.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component into your Angular application, use the `<ejs-grid>` selector in your component template. Define properties and specify columns using `<e-columns>` and `<e-column>` elements. These elements enable customization of each column's properties such as field name, header text, and data type. 
+Now, you can add the Angular Grid component to your **src/app/app.ts** file using the `<ejs-grid>` selector and bind data through the `dataSource` property. Define and customize columns using the `<e-columns>` and `<e-column>` elements.
 
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/common/quickstart1-cs1/src/app.component.ts %}
-{% endhighlight %}
+```typescript
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/quickstart1-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
+import { Component } from '@angular/core';
+import { GridAllModule } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [GridAllModule],
+  template: `
+    <h1>Syncfusion Angular Grid</h1>
+
+    <ejs-grid [dataSource]="data" height="300">
+      <e-columns>
+        <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="120"></e-column>
+        <e-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="100"></e-column>
+        <e-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="120"></e-column>
+      </e-columns>
+    </ejs-grid>
+  `
+})
+export class App {
+  public data: Object[] = [
+    {
+      OrderID: 10248,
+      CustomerID: 'VINET',
+      OrderDate: new Date(1996, 6, 4),
+      Freight: 32.38
+    },
+    {
+      OrderID: 10249,
+      CustomerID: 'TOMSP',
+      OrderDate: new Date(1996, 6, 5),
+      Freight: 11.61
+    },
+    {
+      OrderID: 10250,
+      CustomerID: 'HANAR',
+      OrderDate: new Date(1996, 6, 8),
+      Freight: 65.83
+    }
+  ];
+}
+
+```
+
+{% previewsample "page.domainurl/samples/common/quickstart1-cs1" %}
 
 ## Run the application
 
-To run your Angular application, execute the following command in your terminal:
+To run the application, use the following command:
 
 ```bash
 ng serve
 ```
 
-{% previewsample "page.domainurl/samples/common/quickstart1-cs1" %}
+The application compiles and launches on a development server. Open http://localhost:4200 to view it.
 
-This command compiles your application and serves it through a development server. Once the command completes, open http://localhost:4200 in your web browser to view your running application.
-
->Note: If your application displays a license banner, it indicates that a license key is required to continue using Syncfusion<sup style="font-size:70%">&reg;</sup> components. Visit our [Licensing Overview](../licensing/overview) page to learn how to obtain and register your license key.
-
-You can also watch the following video to quickly get started with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component:
+**Video Guide:**
 
 {% youtube "https://www.youtube.com/watch?v=lk83TlHQ95c" %}
 
