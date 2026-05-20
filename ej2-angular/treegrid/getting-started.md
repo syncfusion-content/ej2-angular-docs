@@ -18,19 +18,21 @@ To get started quickly with the Angular TreeGrid using CLI and Schematics, refer
 
 {% youtube "https://www.youtube.com/watch?v=2LJKv7rao6Y" %}
 
-## Prerequisites
+## Setup Angular environment
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
-
-## Setup the Angular application
-
-A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
+Use the [Angular CLI](https://github.com/angular/angular-cli) to set up Angular applications. To install Angular CLI, execute:
 
 ```bash
 npm install -g @angular/cli
 ```
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. For more information about the standalone architecture, refer to the [Standalone Guide](./angular-standalone).
 
-> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+### Installing a specific version
+To install a particular version of Angular CLI, use:
+
+```bash
+npm install -g @angular/cli@21.0.0
+```
 
 ## Create a new application
 
@@ -74,17 +76,17 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid packages
 
 To install the TreeGrid component, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-treegrid --save
-```
 
+```
 ## Adding CSS reference
 
-The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css** 
+The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css**
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
@@ -99,9 +101,7 @@ The following CSS files are available in the **../node_modules/@syncfusion** pac
 @import '../node_modules/@syncfusion/ej2-angular-treegrid/styles/material3.css';
 ```
 
-> Ensure that the import order aligns with the component's dependency sequence.
-
-For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
+For using SCSS styles, refer to [this guide](../common/how-to/sass).
 
 ## Add TreeGrid component
 

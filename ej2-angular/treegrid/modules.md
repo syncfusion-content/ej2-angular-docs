@@ -39,8 +39,11 @@ Syncfusion Angular TreeGrid modules help optimize your application's bundle size
 The following example demonstrates how to enable basic features such as Paging, Sorting, Filtering, Toolbar and Editing by importing required modules from `@syncfusion/ej2-angular-treegrid` and injecting them into the treegrid component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs5/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/getting-started-cs5/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs5/src/main.ts %}

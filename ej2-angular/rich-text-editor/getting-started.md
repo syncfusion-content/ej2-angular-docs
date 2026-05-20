@@ -18,6 +18,10 @@ To get started quickly with the Angular Rich Text Editor using CLI and Schematic
 
 {% youtube "https://www.youtube.com/watch?v=wrod5Rzg85o" %}
 
+## Prerequisites
+
+This guide uses the Angular CLI to manage Angular applications. It requires Node `24.13.0` or higher. For more information about Angular CLI and its features, refer the [Angular CLI](https://github.com/angular/angular-cli).
+
 ## Setup Angular Environment
 
 You can use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install Angular CLI use the following command.
@@ -81,6 +85,8 @@ This can be referenced in **[src/styles.css]** using the following code.
 @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material3.css';
 ```
 
+I> You can also refer to the [themes section](https://ej2.syncfusion.com/angular/documentation/appearance/overview) for details about built-in themes and CSS references for individual controls.
+
 ## Module Injection
 
 The following modules are used to utilize the basic capabilities of the Rich Text Editor:
@@ -90,8 +96,6 @@ The following modules are used to utilize the basic capabilities of the Rich Tex
 * **LinkService** - Inject this module to use link feature in Rich Text Editor.
 * **QuickToolbarService** - Inject this module to use quick toolbar feature for the target element.
 * **ToolbarService** - Inject this module to use Toolbar feature.
-
-These modules should be injected into the **providers** section of root **NgModule** or component class.
 
 > Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/module).
 
