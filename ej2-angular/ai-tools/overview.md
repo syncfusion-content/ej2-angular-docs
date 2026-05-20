@@ -20,7 +20,7 @@ This guide shows the user which AI approach fits the workflow and how to get rel
 
 We provide two tools to solve this knowledge gap:
 
-### MCP Server (Model Context Protocol)
+## MCP Server (Model Context Protocol)
 
 Think of this as giving the AI a direct phone line to Syncfusion's documentation. While the user working, when the AI encounters a component it's not sure about, it can look it up in real-time.
 
@@ -32,7 +32,7 @@ The benefit is immediate: as the user ask the IDE AI to generate code, it's pull
 
 [Install MCP Server](https://ej2.syncfusion.com/angular/documentation/mcp-server/installation)
 
-### Component Skills
+## Component Skills
 
 These are reference documents that teach AI about Syncfusion the way the user would teach a colleague. They live in the project, so the IDE AI can reference them offline.
 

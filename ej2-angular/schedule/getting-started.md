@@ -32,6 +32,29 @@ Create a new Angular application using the following Angular CLI command.
 
 ```bash
 ng new my-app
+```
+
+This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
+
+![Stylesheet setup prompt](images/schedule-angular-setup-image1.png)
+
+For this setup, when prompted for the styling option, choose the appropriate configuration. Here we selected `CSS`.
+
+Then the CLI also displays an additional prompt whether to enable Server Side Rendering (SSR), and Static Site Generation (SSG) as shown below:
+
+![SSR SST setup prompt](images/schedule-angular-setup-image2.png)
+
+For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration. Here we selected `No`.
+
+Then the CLI displays another prompt related to AI tooling support, as shown below:
+
+![AI setup prompt](images/schedule-angular-setup-image3.png)
+
+Any preferred option can be selected based on the development workflow or project needs. Here we selected `None`.
+
+Next, navigate to the project folder:
+
+```bash
 cd my-app
 ```
 
@@ -85,7 +108,7 @@ export class App { }
 Run the following command in the terminal to start the development server. This compiles the project, launches a local server, and allowing you to view changes in real time during development.
 
 ```
-npm start
+ng serve
 ```
 
 > Above demo will display the empty scheduler.

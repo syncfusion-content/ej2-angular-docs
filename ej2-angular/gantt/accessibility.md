@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about accessibility in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Accessibility
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -28,22 +28,21 @@ The accessibility compliance for the Gantt Chart component provides detailed ins
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
-| Accessibility Criteria | Compatibility |
-| -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Mobile Device Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Axe-core](https://www.npmjs.com/package/axe-core) Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| Accessibility Criteria                                                                  | Compatibility                                                                                      |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Section 508](https://www.section508.gov/) Support                                      | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| Screen Reader Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| Right-To-Left Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| Color Contrast                                                                          | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| Mobile Device Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| Keyboard Navigation Support                                                             | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| [Axe-core](https://www.npmjs.com/package/axe-core) Accessibility Validation             | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 
 ### WCAG 2.2 compliance details
 
 The Gantt Chart component achieves **Level AA compliance** for most WCAG 2.2 criteria. The **Intermediate** rating reflects specific limitations including complex data relationships where advanced dependency visualizations may not provide complete programmatic relationships for assistive technologies, dynamic content updates where certain real-time data changes in large datasets may require additional ARIA live region implementation, and custom templates where user-defined templates may require additional accessibility considerations depending on content complexity.
-
 
 ## WAI-ARIA attributes
 
@@ -51,59 +50,81 @@ The Gantt Chart component implements comprehensive [WAI-ARIA](https://www.w3.org
 
 ### Core ARIA implementation
 
-| Attributes | Purpose | Implementation Context |
-| --- | --- | --- |
-| `grid (role)` | Applied to the `e-table` element representing the Grid portion of the Gantt Chart component | Provides semantic structure for the data grid area |
-| `gridcell (role)` | Applied to `td` elements within the `e-table`, representing individual work cells in the Gantt grid | Enables cell-by-cell navigation for screen readers |
-| `columnheader (role)` | Applied to `th` elements within the `e-table`, representing header cells in the Grid table | Provides column identification and sorting information |
-| `separator (role)` | Applied to the `e-split-bar` element, representing the splitter between the Grid table and Chart sections | Indicates resizable boundary between interface sections |
-| `dialog (role)` | Applied to the `e-dialog` element, representing modal dialog boxes | Manages focus and provides modal interaction patterns |
-| `toolbar (role)` | Applied to the `e-gantt-toolbar` element, representing the component's toolbar | Groups related actions and provides toolbar navigation |
+| Attributes            | Purpose                                                                                                   | Implementation Context                                  |
+| --------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| `grid (role)`         | Applied to the `e-table` element representing the Grid portion of the Gantt Chart component               | Provides semantic structure for the data grid area      |
+| `gridcell (role)`     | Applied to `td` elements within the `e-table`, representing individual work cells in the Gantt grid       | Enables cell-by-cell navigation for screen readers      |
+| `columnheader (role)` | Applied to `th` elements within the `e-table`, representing header cells in the Grid table                | Provides column identification and sorting information  |
+| `separator (role)`    | Applied to the `e-split-bar` element, representing the splitter between the Grid table and Chart sections | Indicates resizable boundary between interface sections |
+| `dialog (role)`       | Applied to the `e-dialog` element, representing modal dialog boxes                                        | Manages focus and provides modal interaction patterns   |
+| `toolbar (role)`      | Applied to the `e-gantt-toolbar` element, representing the component's toolbar                            | Groups related actions and provides toolbar navigation  |
 
 ### Dynamic ARIA properties
 
-| Attributes | Purpose | Dynamic Behavior |
-| --- | --- | --- |
-| `aria-label` | Provides descriptive information for UI elements including timeline cells, taskbars, labels, dependency lines, and event markers | Dynamically updates based on task names, dates, progress, and relationships |
-| `aria-selected` | Applied to Gantt chart rows with a default value of **false**. Changes to **true** when users select a grid cell or task | Updates during selection changes to maintain current selection state |
-| `aria-expanded` | Applied to parent task rows. Value changes to **true** when expanding and **false** when collapsing parent tasks | Reflects hierarchical task structure state changes |
-| `aria-grabbed` | Applied to taskbars during taskbar editing operations to indicate drag state | Activated during drag-and-drop operations for accessibility feedback |
-| `aria-describedby` | Links tasks to detailed descriptions, tooltips, or error messages | Dynamically associates contextual information with interactive elements |
-| `aria-rowindex` | Applied to grid rows to indicate position within the complete dataset | Updates based on current view and virtualization state |
-| `aria-colindex` | Applied to grid cells to indicate column position | Maintains column identification during horizontal scrolling |
+| Attributes         | Purpose                                                                                                                          | Dynamic Behavior                                                            |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| `aria-label`       | Provides descriptive information for UI elements including timeline cells, taskbars, labels, dependency lines, and event markers | Dynamically updates based on task names, dates, progress, and relationships |
+| `aria-selected`    | Applied to Gantt chart rows with a default value of **false**. Changes to **true** when users select a grid cell or task         | Updates during selection changes to maintain current selection state        |
+| `aria-expanded`    | Applied to parent task rows. Value changes to **true** when expanding and **false** when collapsing parent tasks                 | Reflects hierarchical task structure state changes                          |
+| `aria-grabbed`     | Applied to taskbars during taskbar editing operations to indicate drag state                                                     | Activated during drag-and-drop operations for accessibility feedback        |
+| `aria-describedby` | Links tasks to detailed descriptions, tooltips, or error messages                                                                | Dynamically associates contextual information with interactive elements     |
+| `aria-rowindex`    | Applied to grid rows to indicate position within the complete dataset                                                            | Updates based on current view and virtualization state                      |
+| `aria-colindex`    | Applied to grid cells to indicate column position                                                                                | Maintains column identification during horizontal scrolling                 |
+
+The Syncfusion Angular Gantt Chart component is structured using a combined TreeGrid and chart architecture for rendering its grid (table) and timeline sections. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for the treegrid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools, it is important to note that these limitations do not affect the readability or usability of the Gantt content in screen readers.
+
+The accessibility checker tools highlight the following known issues:
+
+* The `<table>` element with `role="presentation"` or `role="none"` contains structural elements such as `<th>`.
+* Verify that the table is not being used solely to format text content in columns unless the table can be properly linearized.  
+* Content is not placed within a landmark element.  
+* Verify that the `<div>` element with `role="grid"` provides proper keyboard access.  
+* The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.  
+* Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.  
+* None of the descendant elements with `role="row"` are tabbable.  
+* The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.  
+* The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.  
+* The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.  
+* The tabbable element with role `"columnheader"` is not a widget role.  
+* The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.  
+* The element with `role="rowgroup"` does not contain required child elements with role `"row"`.  
+* The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.  
+* The `cellspacing` attribute is deprecated for the `<table>` element in HTML5.  
+* The ARIA attribute `aria-label` is not valid for a `<div>` element with `role="term"`.  
+* The ARIA attribute `aria-label` is not valid for a `<div>` element with the implicit `"generic"` role.  
 
 ## Keyboard navigation
 
 The Gantt Chart component provides comprehensive keyboard navigation support following [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guidelines. This ensures full functionality for users relying on assistive technologies or keyboard-only navigation patterns.
 
-| **Press** | **To do this** | **Context** |
-| --- | --- | --- |
-| <kbd>Alt + J</kbd> | Focus Gantt Chart component | Global application shortcut |
-| <kbd>Tab / Shift + Tab</kbd> | Focus the next or previous element | Standard tab navigation |
-| <kbd>Home</kbd> | Selects the first row | Grid and chart areas |
-| <kbd>End</kbd> | Selects the last row | Grid and chart areas |
-| <kbd>DownArrow</kbd> | Moves the row selection downward | Row navigation |
-| <kbd>UpArrow</kbd> | Moves the row selection upward | Row navigation |
-| <kbd>LeftArrow</kbd> | Moves the cell focus/cell selection left side | Cell navigation |
-| <kbd>RightArrow</kbd> | Moves the cell focus/cell selection right side | Cell navigation |
-| <kbd>Ctrl + Up Arrow</kbd> | Collapses all tasks | Hierarchy management |
-| <kbd>Ctrl + Down Arrow</kbd> | Expands all tasks | Hierarchy management |
-| <kbd>Ctrl + Shift + Up Arrow</kbd> | Collapses the selected row | Individual task control |
-| <kbd>Ctrl + Shift + Down Arrow</kbd> | Expands the selected row | Individual task control |
-| <kbd>Enter</kbd> | Saves request | During edit operations |
-| <kbd>Esc</kbd> | Cancels request | During edit operations |
-| <kbd>Insert</kbd> | Adds a new row | Quick task creation |
-| <kbd>Ctrl + Insert</kbd> | Opens addRowDialog | Detailed task creation |
-| <kbd>Ctrl + F2</kbd> | Opens editRowDialog | Task editing |
-| <kbd>Delete</kbd> | Deletes the selected row | Task removal |
-| <kbd>Shift + F5</kbd> | Focus specific task | Task location |
-| <kbd>Ctrl + Shift + F</kbd> | Focus search functionality | Data filtering |
-| <kbd>Ctrl + Z</kbd> | Undo the last action | Operation reversal |
-| <kbd>Ctrl + Y</kbd> | Redo the last action | Operation restoration |
-| <kbd>Shift + DownArrow</kbd> | Extends the cell selection downwards | Multi-cell selection |
-| <kbd>Shift + UpArrow</kbd> | Extends the cell selection upwards | Multi-cell selection |
-| <kbd>Shift + LeftArrow</kbd> | Extends the cell selection to the left side | Multi-cell selection |
-| <kbd>Shift + RightArrow</kbd> | Extends the cell selection to the right side | Multi-cell selection |
+| **Press**                            | **To do this**                                 | **Context**                 |
+| ------------------------------------ | ---------------------------------------------- | --------------------------- |
+| <kbd>Alt + J</kbd>                   | Focus Gantt Chart component                    | Global application shortcut |
+| <kbd>Tab / Shift + Tab</kbd>         | Focus the next or previous element             | Standard tab navigation     |
+| <kbd>Home</kbd>                      | Selects the first row                          | Grid and chart areas        |
+| <kbd>End</kbd>                       | Selects the last row                           | Grid and chart areas        |
+| <kbd>DownArrow</kbd>                 | Moves the row selection downward               | Row navigation              |
+| <kbd>UpArrow</kbd>                   | Moves the row selection upward                 | Row navigation              |
+| <kbd>LeftArrow</kbd>                 | Moves the cell focus/cell selection left side  | Cell navigation             |
+| <kbd>RightArrow</kbd>                | Moves the cell focus/cell selection right side | Cell navigation             |
+| <kbd>Ctrl + Up Arrow</kbd>           | Collapses all tasks                            | Hierarchy management        |
+| <kbd>Ctrl + Down Arrow</kbd>         | Expands all tasks                              | Hierarchy management        |
+| <kbd>Ctrl + Shift + Up Arrow</kbd>   | Collapses the selected row                     | Individual task control     |
+| <kbd>Ctrl + Shift + Down Arrow</kbd> | Expands the selected row                       | Individual task control     |
+| <kbd>Enter</kbd>                     | Saves request                                  | During edit operations      |
+| <kbd>Esc</kbd>                       | Cancels request                                | During edit operations      |
+| <kbd>Insert</kbd>                    | Adds a new row                                 | Quick task creation         |
+| <kbd>Ctrl + Insert</kbd>             | Opens addRowDialog                             | Detailed task creation      |
+| <kbd>Ctrl + F2</kbd>                 | Opens editRowDialog                            | Task editing                |
+| <kbd>Delete</kbd>                    | Deletes the selected row                       | Task removal                |
+| <kbd>Shift + F5</kbd>                | Focus specific task                            | Task location               |
+| <kbd>Ctrl + Shift + F</kbd>          | Focus search functionality                     | Data filtering              |
+| <kbd>Ctrl + Z</kbd>                  | Undo the last action                           | Operation reversal          |
+| <kbd>Ctrl + Y</kbd>                  | Redo the last action                           | Operation restoration       |
+| <kbd>Shift + DownArrow</kbd>         | Extends the cell selection downwards           | Multi-cell selection        |
+| <kbd>Shift + UpArrow</kbd>           | Extends the cell selection upwards             | Multi-cell selection        |
+| <kbd>Shift + LeftArrow</kbd>         | Extends the cell selection to the left side    | Multi-cell selection        |
+| <kbd>Shift + RightArrow</kbd>        | Extends the cell selection to the right side   | Multi-cell selection        |
 
 ## Error handling and validation accessibility
 
@@ -117,6 +138,7 @@ The Gantt Chart component provides accessible error handling and validation feed
     </ejs-gantt>
     <div role="alert" aria-live="assertive" class="sr-only" #errorRegion></div>`
 })
+
 
 export class AccessibleGanttComponent {
   @ViewChild('errorRegion') errorRegion: ElementRef;
@@ -147,7 +169,7 @@ export class AccessibleGanttComponent {
 
 The Gantt Chart component provides comprehensive accessibility support for mobile and touch devices through the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableadaptiveui) property, ensuring individuals with disabilities can effectively interact with the component across all device types.
 
-Touch gesture accessibility includes single tap equivalent to click for task selection and activation, double tap to open task editing dialog or activate focused elements, long press to open context menu with full keyboard navigation support, swipe gestures for horizontal scrolling through timeline with appropriate announcements, and pinch to zoom for timeline scaling with accessibility feedback. These gestures are optimized for assistive touch technologies and provide haptic feedback where supported by the device platform.
+Touch gesture accessibility includes single tap equivalent to click for task selection and activation, double tap to open task editing dialog or activate focused elements, long press to open context menu with full keyboard navigation support, swipe gestures for horizontal scrolling through timeline with appropriate announcements, and pinch to zoom for timeline scaling with accessibility feedback. These gestures are optimized for assistive touch technologies and provide tactile feedback where supported by the device platform.
 
 ## Testing accessibility
 
