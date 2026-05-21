@@ -37,7 +37,7 @@ Create a folder named `my-project` in your desired location. This folder will co
 
 ## Step 2: Set up the Angular environment
 
-Start by opening your project terminal on your system **(Command Prompt, PowerShell, or Terminal)**.
+Start by opening your project in the terminal on your system **(Command Prompt, PowerShell, or Terminal)**.
 
 Use [Angular CLI](https://github.com/angular/angular-cli) to create and manage Angular applications. Install Angular CLI globally using the following command:
 
@@ -114,10 +114,10 @@ import { Component, OnInit } from '@angular/core';
 import { AccumulationChartModule, PieSeriesService, AccumulationLegendService } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+    selector: 'app-root',
+    standalone: true,
     imports: [AccumulationChartModule],
     providers: [PieSeriesService, AccumulationLegendService],
-    standalone: true,
-    selector: 'app-root',
     template: `
         <ejs-accumulationchart 
             id="pie-container" 

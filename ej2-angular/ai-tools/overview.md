@@ -27,7 +27,7 @@ This guide outlines the most suitable AI approach for different needs and explai
 
 Syncfusion provides two tools designed to address this challenge:
 
-### MCP Server (Model Context Protocol)
+## MCP Server (Model Context Protocol)
 
 MCP Server provides the AI with direct access to up-to-date Syncfusion documentation. When the AI encounters an unfamiliar component, it retrieves current information in real-time instead of guessing from outdated training data.
 
@@ -40,7 +40,7 @@ This ensures that IDE-based AI uses up-to-date and accurate Syncfusion informati
 
 [Install MCP Server](https://ej2.syncfusion.com/angular/documentation/mcp-server/installation)
 
-### Component Skills
+## Component Skills
 
 Component Skills are reference documents stored within a project that enable AI to effectively build with Syncfusion. They function as structured documentation that the AI can access, interpret, and follow during development.
 

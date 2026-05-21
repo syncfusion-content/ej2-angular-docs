@@ -10,7 +10,7 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt'
     encapsulation: ViewEncapsulation.None
 })
 
-export class AppComponent implements OnInit {
+export class App implements OnInit {
     public data?: object[];
     public taskSettings?: object;
 

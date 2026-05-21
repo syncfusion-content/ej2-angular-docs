@@ -41,7 +41,7 @@ Create a folder named `my-project` in your desired location. This folder will co
 
 ## Step 2: Set up the Angular environment
 
-Start by opening your project terminal on your system **(Command Prompt, PowerShell, or Terminal)**.
+Start by opening your project in the terminal on your system **(Command Prompt, PowerShell, or Terminal)**.
 
 Use [Angular CLI](https://github.com/angular/angular-cli) to create and manage Angular applications. Install Angular CLI globally using the following command:
 
@@ -89,12 +89,12 @@ Update the `src/app/app.ts` file as follows:
 
 ```typescript
 import { Component } from '@angular/core';
-import { StockChartAllModule } from '@syncfusion/ej2-angular-charts';
+import { StockChartModule } from '@syncfusion/ej2-angular-charts';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ChartModule],
+  imports: [StockChartModule],
   providers: [],
   template: `<ejs-stockchart id='stock-chart-container'></ejs-stockchart>`
 })
@@ -115,13 +115,13 @@ Update the `src/app/app.ts` file as follows:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { ChartModule, StockChartModule, DateTimeService, CandleSeriesService } from '@syncfusion/ej2-angular-charts';
+import { StockChartModule, DateTimeService, CandleSeriesService } from '@syncfusion/ej2-angular-charts';
 
 @Component({
-    imports: [ChartModule, StockChartModule],
-    providers: [DateTimeService, CandleSeriesService],
-    standalone: true,
     selector: 'app-root',
+    standalone: true,
+    imports: [StockChartModule],
+    providers: [DateTimeService, CandleSeriesService],
     template: `
         <ejs-stockchart 
             id="stock-chart-container" 
