@@ -36,21 +36,21 @@ ng new my-app
 
 This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
 
-![Stylesheet setup prompt](images/schedule-angular-setup-image1.png)
+![Stylesheet setup prompt](images/schedule-angular-setup1.png)
 
-For this setup, when prompted for the styling option, choose the appropriate configuration. Here we selected `CSS`.
+By default, it will create a CSS-based application.
 
 Then the CLI also displays an additional prompt whether to enable Server Side Rendering (SSR), and Static Site Generation (SSG) as shown below:
 
-![SSR SST setup prompt](images/schedule-angular-setup-image2.png)
+![SSR SST setup prompt](images/schedule-angular-setup2.png)
 
-For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration. Here we selected `No`.
+For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
 Then the CLI displays another prompt related to AI tooling support, as shown below:
 
-![AI setup prompt](images/schedule-angular-setup-image3.png)
+![AI setup prompt](images/schedule-angular-setup3.png)
 
-Any preferred option can be selected based on the development workflow or project needs. Here we selected `None`.
+Any preferred option can be selected based on the development workflow or project needs.
 
 Next, navigate to the project folder:
 
