@@ -39,6 +39,6 @@ const data: object[] = [
     `
 })
 
-export class AppComponent {
+export class App {
     public data: object[] = data;
 }

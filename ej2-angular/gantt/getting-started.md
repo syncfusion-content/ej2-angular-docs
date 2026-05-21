@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Gantt Chart
+title: Getting Started with Syncfusion Angular Gantt Chart
 description: Learn how to install and render your first Angular Gantt Chart with hierarchical task data, field mapping, and timeline visualization.
 platform: ej2-angular
 control: Getting started
@@ -10,11 +10,14 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Gantt Chart
 
-This guide shows how to create an Angular application with the Gantt Chart component, configure task data, and render a timeline view with hierarchical tasks.
+The **Syncfusion Angular Gantt Chart** is a UI component designed to visualize and manage project schedules using a timeline view. It supports hierarchical task structures, automatic scheduling, and rich interactive features.
+
+This guide demonstrates how to create an Angular application, configure task data, and render a basic Gantt Chart.
 
 ## Prerequisites
 
-- Node.js 18.19 or later
+Ensure the following prerequisites are installed:
+- Node.js **18.19 or later**
 - npm or yarn package manager
 - Basic knowledge of Angular framework
 
@@ -36,11 +39,17 @@ Install the Gantt Chart package:
 ng add @syncfusion/ej2-angular-gantt
 ```
 
-This command installs the package, imports the Gantt module, and registers the default theme in `angular.json`.
+This command performs the following:
+
+- Installs required dependencies
+- Imports the Gantt module
+- Registers default theme styles in `angular.json`.
 
 ## Add theme styles
 
-Import the basic Gantt Chart styles in your `src/styles.css`:
+The Gantt component requires specific CSS files for proper rendering.
+
+Import the basic Gantt Chart styles into `src/styles.css`:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css';
@@ -51,7 +60,7 @@ Import the basic Gantt Chart styles in your `src/styles.css`:
 @import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
 ```
 
-> **Note:** When using features like editing, toolbar, filtering, or dialogs:
+> **Note:** Additional styles are required when enabling advanced features such as editing, toolbar, or dialogs:
 > ```css
 > /* For editing, toolbar, and dialog features */
 > @import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
@@ -65,7 +74,14 @@ Import the basic Gantt Chart styles in your `src/styles.css`:
 > @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
 > ```
 
-## Create sample data
+### How styles are applied
+
+The imported CSS files are added to the global stylesheet (`src/styles.css`).  
+Angular automatically applies these styles to all components in the application.
+
+No additional configuration is required in the TypeScript (`.ts`) files.
+
+## Create sample task data
 
 Define a simple task list with hierarchical relationships. Each task must have a `StartDate` and either a `Duration` or `EndDate` to render properly.
 
@@ -81,9 +97,9 @@ public data = [
 ];
 ```
 
-## Configure task fields
+## Configure task fields mapping
 
-Map your data fields to Gantt Chart properties using `taskFields`:
+Map the data fields to Gantt Chart properties using `taskFields`:
 
 ```typescript
 public taskSettings = {
@@ -102,14 +118,13 @@ public taskSettings = {
 | `id` | Unique task identifier | Yes |
 | `name` | Task display name | Yes |
 | `startDate` | Task start date | Yes |
-| `duration` | Task duration in days | Yes* |
+| `duration` | Task duration in days | Yes |
 | `parentID` | Parent task ID for hierarchy | No |
-
-*Either `duration` or `endDate` is required for a task to render properly.
 
 ## Render the Gantt component
 
-Put it all together in **src/app/app.component.ts** (Angular 19 and below) or **src/app/app.ts** (Angular 20+):
+Update the component file:
+**src/app/app.ts** (Angular 20+):
 
 ```typescript
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -142,6 +157,9 @@ export class App {
 }
 ```
 
+> **Note for Angular 19 and earlier versions:**  
+> The Gantt component configuration should be defined in the `app.component.ts` file.
+
 ## Run the application
 
 ```bash
@@ -150,19 +168,19 @@ ng serve --open
 
 ## Output
 
-You will see a Gantt Chart with:
+The Gantt Chart displays:
 
 - Task hierarchy with parent-child relationships
 - Timeline view showing task bars
 - Automatically calculated dates based on duration
 
-The chart displays two parent tasks (Product launch, Development) with subtasks shown in a tree structure. Task bars are rendered on the timeline, sized according to their duration and start dates.
+The chart displays two parent tasks (Project initiation, Project estimation) with subtasks shown in a tree structure. Task bars are rendered on the timeline, sized according to their duration and start dates.
 
 You can preview the following sample by clicking the **Preview Sample** button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/gantt/getting-started/run-application-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/getting-started/run-application-cs1/src/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
