@@ -10,20 +10,26 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Markdown Editor Component
 
-This section explains the steps required to create a simple Angular Markdown Editor component and configure its available functionalities.
+The Syncfusion Angular Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section explains the steps required to create a simple Angular Markdown Editor component and configure its available functionalities.
 
 To enable the quick Markdown editing feature, inject `MarkdownEditorService` in the provider section of AppComponent.
 
-Refer to the video below for guidance on building a Markdown editor with the Angular Rich Text Editor.
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+
+To get started quickly with the Angular Markdown Editor using CLI and Schematics, refer to this video tutorial:
 
 {% youtube "https://www.youtube.com/watch?v=6fly8220gL8" %}
+
+## Prerequisites
+
+This guide uses the Angular CLI to manage Angular applications. It requires Node `24.13.0` or higher. For more information about Angular CLI and its features, refer the [Angular CLI](https://github.com/angular/angular-cli).
 
 ## Setup Angular Environment
 
 You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
 ```bash
-npm install -g @angular/cli@21.0.1
+npm install -g @angular/cli
 ```
 
 ## Create an Angular Application
@@ -33,21 +39,21 @@ Start a new Angular application using below Angular CLI command.
 ```bash
 ng new my-app
 ```
-This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
 
-![Initial_setup](images/Initial-setup.png)
+![Initial_setup](../rich-text-editor/images/getting-started/Initial-setup.png)
 
 By default, it will create a CSS-based application.
 
 Then the CLI also displays an additional prompt asking whether to enable Server‑Side Rendering (SSR) and Static Site Generation (SSG), as shown below:
 
-![Server_Side_Rendering_Setup](images/SSR.png)
+![Server_Side_Rendering_Setup](../rich-text-editor/images/getting-started/SSR.png)
 
-For this setup, select **No**, as the Rich Text Editor does not require SSR or SSG for basic configuration.
+For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
 Then the CLI displays another prompt related to AI tooling support, as shown below:
 
-![AI_Tool_Setup](images/AI-Tool.png)
+![AI_Tool_Setup](../rich-text-editor/images/getting-started/AI-Tool.png)
 
 Any preferred option can be selected based on the development workflow or project needs.
 
@@ -69,7 +75,7 @@ npm install @syncfusion/ej2-angular-richtexteditor
 ## Adding CSS reference
 
 The following CSS files are available in **../node_modules/@syncfusion** package folder.
-This can be referenced in [src/styles.css] using following code.
+This can be referenced in **[src/styles.css]** using the following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
@@ -81,25 +87,26 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
 @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material3.css';
 ```
+
+I> You can also refer to the [themes section](https://ej2.syncfusion.com/angular/documentation/appearance/overview) for details about built-in themes and CSS references for individual controls.
+
 ## Module Injection
 
-To create Markdown Editor with additional features, inject the required modules. The following modules are used to extend Markdown Editor's basic functionality.
+The following modules are used to utilize the basic capabilities of the Markdown Editor:
 
 * **MarkdownEditor** - Inject this module to use Rich Text Editor as markdown editor.
 * **Image** - Inject this module to use image feature in Markdown Editor.
 * **Link** - Inject this module to use link feature in Markdown Editor.
 * **Toolbar** - Inject this module to use Toolbar feature.
 
-These modules should be injected into the **providers** section of root **NgModule** or component class.
-
 > Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/module).
 
 ## Adding Markdown Editor component
 
-Modify the template in the [src/app/app.component.ts] file to render the Markdown Editor component. Add the Angular Markdown Editor by using the `<ejs-richtexteditor>` selector in the `template` section of the app.component.ts file.
+Modify the template in the [src/app/app.ts] file to render the Markdown Editor component. Add the Angular Markdown Editor by using the `<ejs-richtexteditor>` selector in the `template` section of the app.ts file.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/markdown-editor/markdown-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -110,36 +117,7 @@ Modify the template in the [src/app/app.component.ts] file to render the Markdow
 {% include code-snippet/markdown-editor/markdown-cs2/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/markdown-editor/markdown-cs2" %}
 
-## Configure the Toolbar
-
-Configure the toolbar with custom tools using items field of [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#toolbarsettings) property in your application.
-
-```typescript
-
-import { Component } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, MarkdownEditorService , HtmlEditorService, ImageService, LinkService, TableService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
-
-@Component({
-    imports: [
-        RichTextEditorModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor id='markdown-editor' [editorMode]='mode' [toolbarSettings]='tools' [value]="value"></ejs-richtexteditor>`,
-    providers: [ToolbarService, HtmlEditorService, MarkdownEditorService, ImageService, LinkService, TableService]
-})
-
-export class AppComponent {
-    public mode: string = 'Markdown';
-    public value: string ='In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation. The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.';
-    public tools: ToolbarSettingsModel = {
-      items: [ 'Bold', 'Italic', 'StrikeThrough', 'InlineCode', 'SuperScript', 'SubScript', '|', 'Formats', 'Blockquote', '|', 'OrderedList', 'UnorderedList', 'CreateLink', 'Image', 'CreateTable', '|', 'Undo', 'Redo', ],
-    };
-}
-```
 
 ## Run the application
 
@@ -148,22 +126,6 @@ Use the following command to run the application in the browser.
 ```bash
 ng serve --open
 ```
-Output will be displayed as follows
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/markdown-editor/markdown-tools/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/markdown-editor/markdown-tools/src/main.ts %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/markdown-editor/markdown-tools/src/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/markdown-editor/markdown-tools" %}
 
 ## See also
 
