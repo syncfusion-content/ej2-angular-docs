@@ -13,16 +13,7 @@ MIT
 @syncfusion/ej2-angular-base
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-buttons
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-dropdowns
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-inputs
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-popups
 SEE LICENSE IN license
 
 @syncfusion/ej2-angular-richtexteditor
@@ -64,10 +55,16 @@ SEE LICENSE IN license
 @syncfusion/ej2-inputs
 SEE LICENSE IN license
 
+@syncfusion/ej2-interactive-chat
+SEE LICENSE IN license
+
 @syncfusion/ej2-layouts
 SEE LICENSE IN license
 
 @syncfusion/ej2-lists
+SEE LICENSE IN license
+
+@syncfusion/ej2-markdown-converter
 SEE LICENSE IN license
 
 @syncfusion/ej2-navigations
