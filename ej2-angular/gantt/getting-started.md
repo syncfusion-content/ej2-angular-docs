@@ -23,12 +23,47 @@ Ensure the following prerequisites are installed:
 
 ## Installation
 
-Create a new Angular application using Angular CLI:
+Create a new Angular application using the Angular CLI:
 
 ```bash
 npm install -g @angular/cli
-ng new my-gantt-app
-cd my-gantt-app
+```
+Once the Angular CLI is installed, run the following command to generate a new application:
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](./images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](./images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
 ```
 
 > This guide uses Angular 21+ with standalone components. For compatibility with other Angular versions, see the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility).
@@ -181,10 +216,6 @@ You can preview the following sample by clicking the **Preview Sample** button.
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/gantt/getting-started/run-application-cs1/src/app.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/run-application-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
