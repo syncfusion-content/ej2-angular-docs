@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Enter and Shift+Enter Key Configuration in Angular Rich Text Editor Component
 
-Rich Text Editor allows customization of the Enter and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
+The Rich Text Editor allows customization of the Enter and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
 
 ## Enter key configuration
 
-By default, pressing the Enter key in the Rich Text Editor creates a new `<p>` tag. You can customize this behavior using the [`enterKey`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enterkey) property.
+By default, pressing the Enter key in the Rich Text Editor creates a new `<p>` tag. You can customize this behavior using the [enterKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enterkey) property.
 
 **Available Options**
 
@@ -40,7 +40,7 @@ When you customize the Enter key, the editor will create the specified tag when 
 
 ## Shift+Enter key configuration
 
-By default, pressing Shift+Enter in the Rich Text Editor inserts a `<br>` tag. You can customize this behavior using the [`shiftEnterKey`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#shiftEnterkey) property.
+By default, pressing Shift+Enter in the Rich Text Editor inserts a `<br>` tag. You can customize this behavior using the [shiftEnterKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#shiftEnterkey) property.
 
 **Available Options**
 

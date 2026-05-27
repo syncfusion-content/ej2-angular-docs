@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { AsyncSettingsModel, SuccessEventArgs, UploaderComponent, UploaderModule } from '@syncfusion/ej2-angular-inputs';
-import { RichTextEditorModule, RichTextEditorComponent, ToolbarSettingsModel, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, RichTextEditorComponent, ToolbarSettingsModel, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     imports: [
@@ -11,7 +11,7 @@ import { RichTextEditorModule, RichTextEditorComponent, ToolbarSettingsModel, To
     selector: 'app-root',
     template: `<ejs-richtexteditor #editor id='editor' [toolbarSettings]='tools' [(value)]='value'></ejs-richtexteditor>
   <ejs-uploader #uploadObj id='editorCustomWordUpload' allowedExtensions='.docx,.doc,.rtf' [asyncSettings]='asyncSettings' (success)='onUploadSuccess($event)' style="display: none;" ></ejs-uploader>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService]
 })
 
 export class AppComponent {

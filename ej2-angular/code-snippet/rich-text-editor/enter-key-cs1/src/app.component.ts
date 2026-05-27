@@ -1,6 +1,7 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { RichTextEditorModule, RichTextEditorComponent, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, RichTextEditorComponent, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 import { DropDownListModule, DropDownListComponent, FieldSettingsModel } from '@syncfusion/ej2-angular-dropdowns';
+
 @Component({
     imports: [
         RichTextEditorModule,
@@ -27,8 +28,9 @@ import { DropDownListModule, DropDownListComponent, FieldSettingsModel } from '@
         <ejs-richtexteditor id='editor' #editor [height]='editorHeight' [(value)]='value'></ejs-richtexteditor>
     </div>`,
     encapsulation: ViewEncapsulation.None,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService]
 })
+
 export class AppComponent {
     @ViewChild('editor')
     public editorObj?: RichTextEditorComponent;

@@ -45,20 +45,20 @@ The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includ
 
 | **Property** | **Functionalities** |
 | --- | --- |
-| role="toolbar" | This attribute added to the ToolBar element describes the actual role of the element. |
-| aria-orientation     | Indicates the ToolBar orientation. Default value is `horizontal`. |
-| aria-haspopup       | Indicates the popup mode of the Toolbar. Default value is false. When popup mode is enabled,  attribute value has to be changed to `true`. | |
+| role="toolbar" | This attribute added to the Toolbar element describes the actual role of the element. |
+| aria-orientation     | Indicates the Toolbar orientation. Default value is `horizontal`. |
+| aria-haspopup       | Indicates the popup mode of the Toolbar. Default value is false. When popup mode is enabled, the attribute value has to be changed to `true`. |
 | aria-disabled       | Indicates the disabled state of the toolbar. |
 | aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Rich Text Editor to indicate the popup as a child element. |
 
-For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Toolbar`](https://ej2.syncfusion.com/angular/documentation/toolbar/accessibility) documentation.
+For more details on Toolbar ARIA attributes, refer to the [Accessibility of Toolbar](https://ej2.syncfusion.com/angular/documentation/toolbar/accessibility) documentation.
 
 * The Rich Text Editor element is assigned the role of `application`.
 
 | **Property** | **Functionalities** |
 | --- | --- |
 | role="application" | This attribute added to the Rich Text Editor element describes the actual role of the element. |
-| aria-disabled       | Indicates the disabled state of the ToolBar. |
+| aria-disabled       | Indicates the disabled state of the Toolbar. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,13 +74,13 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 
 ## Keyboard navigation
 
-The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
+The Rich Text Editor component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
 
 For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/keyboard-support) documentation.
 
 ### Customizing shortcut keys
 
-You can customize shortcut keys using the [`formatter`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

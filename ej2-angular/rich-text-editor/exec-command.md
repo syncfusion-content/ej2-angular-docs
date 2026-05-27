@@ -32,7 +32,7 @@ The executeCommand is used to perform command for the modification of content in
 | justifyLeft | Align the content with left margin. | `rteObj.executeCommand('justifyLeft');`|
 | justifyRight | Align the content with right margin. | `rteObj.executeCommand('justifyLeft');`|
 | undo | Allows to undo the actions. | `rteObj.executeCommand('undo');`|
-| createLink | Creates a hyperlink to a text or image to a specific location in the content. | `rteObj.executeCommand('createLink',{ text: 'Links', url: 'http://', title : 'Link' });` |
+| createLink | Creates a hyperlink to a text or image to a specific location in the content. | `rteObj.executeCommand('createLink',{ text: 'Links', url: 'http://', title : 'Link', selection: selection  });` |
 | indent | Allows to increase the indent level of the content. | `rteObj.executeCommand('indent');`|
 | insertHTML | Insert the html content to the current cursor position. | `rteObj.executeCommand('insertHTML', 'inserted an html');`|
 | insertOrderedList | Create a new list item(numbered). | `rteObj.executeCommand('insertOrderedList');`|
@@ -48,7 +48,7 @@ The executeCommand is used to perform command for the modification of content in
 | applyFormatPainter | Apply the copied format to the selected text. | `rteObj.executeCommand('applyFormatPainter');`|
 | escapeFormatPainter | Remove the previously copied format and disable the sticky mode | `rteObj.executeCommand('escapeFormatPainter');`|
 | insertVideo | Insert a video to the current cursor position. | `rteObj.executeCommand('insertVideo', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Ocean-Waves.mp4', cssClass: 'e-rte-video'});` |
-| insertAudio | Insert a audio to the current cursor position. | `rteObj.executeCommand('insertAudio', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Audio.wav', cssClass: 'e-rte-audio'});` |
+| insertAudio | Insert an audio to the current cursor position. | `rteObj.executeCommand('insertAudio', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Audio.wav', cssClass: 'e-rte-audio'});` |
 
 
 >Note: The `ExecuteCommand` public method is not supported in Syncfusion Markdown Editor.

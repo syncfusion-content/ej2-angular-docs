@@ -1,33 +1,41 @@
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor'
 import { Component, ViewChild } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent  } from '@syncfusion/ej2-angular-richtexteditor';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
 import { UploadingEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     imports: [
-        RichTextEditorAllModule
+        RichTextEditorModule
     ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' #sample [insertImageSettings]='insertImageSettings' [toolbarSettings]='toolbarSettings' (imageUploading)='onImageUploading($event)'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService ]
+    template: `<ejs-richtexteditor id='defaultRTE' #sample [value]="value" [insertImageSettings]='insertImageSettings' [toolbarSettings]='toolbarSettings' (imageUploading)='onImageUploading($event)'></ejs-richtexteditor>`,
+    providers: [ToolbarService, LinkService, ImageService, QuickToolbarService, PasteCleanupService, HtmlEditorService]
 })
 
-export class AppComponent  {
+export class AppComponent {
     @ViewChild('sample') public rteObj?: RichTextEditorComponent;
 
+    private hostUrl: string =
+        'https://services.syncfusion.com/angular/production/';
+
     public toolbarSettings: Object = {
-    items: ['Bold', 'Italic', 'Underline', 'StrikeThrough','|',
-        'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
-        'LowerCase', 'UpperCase', '|',
-        'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
-        'Outdent', 'Indent', '|',
-        'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
-        'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
+        items: ['Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
+            'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
+            'LowerCase', 'UpperCase', '|',
+            'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
+            'Outdent', 'Indent', '|',
+            'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
+            'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
     };
+
+    public value: string =
+        "<p>The Rich Text Editor component is the WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update content. Users can format their content using standard toolbar commands.</p>";
+
     public insertImageSettings: object = {
-        saveUrl: "https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save",
-        path: "../Images/"
+        saveUrl: this.hostUrl + 'api/RichTextEditor/SaveFile',
+        removeUrl: this.hostUrl + 'api/RichTextEditor/DeleteFile',
+        path: this.hostUrl + 'RichTextEditor/',
     };
 
     public onImageUploading = (args: UploadingEventArgs) => {

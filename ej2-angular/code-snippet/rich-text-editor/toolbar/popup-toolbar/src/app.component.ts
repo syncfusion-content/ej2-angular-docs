@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, PasteCleanupService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
-  imports: [
-    RichTextEditorModule
-  ],
+  imports: [ RichTextEditorModule ],
   standalone: true,
   selector: 'app-root',
-  template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools' [(value)]='value'></ejs-richtexteditor>`,
-  providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
+  template: `<ejs-richtexteditor [toolbarSettings]="tools" [(value)]='value' [width]=350></ejs-richtexteditor>`,
+  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService]
 })
 
 export class AppComponent {

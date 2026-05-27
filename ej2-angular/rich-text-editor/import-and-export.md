@@ -28,6 +28,8 @@ The following example shows how to configure `ImportWord`:
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/samples/rich-text-editor/import-cs1" %}
+
 ## Secure importing with authentication
 
 The Rich Text Editor provides functionality to import Word documents with authentication for secure importing.
@@ -138,8 +140,6 @@ public class RichTextEditorController : Controller
 
 ```
 
-{% previewsample "page.domainurl/samples/rich-text-editor/import-cs1" %}
-
 ## Exporting content to PDF and Microsoft Word
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
@@ -157,6 +157,8 @@ The following example demonstrates how to configure the `ExportWord` and `Export
 {% include code-snippet/rich-text-editor/export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "page.domainurl/samples/rich-text-editor/export-cs1" %}
 
 ## Secure exporting with authentication
 
@@ -317,9 +319,7 @@ public class RichTextEditorController : Controller
 
 ```
 
-{% previewsample "page.domainurl/samples/rich-text-editor/export-cs1" %}
-
-### Exporting Rich Text Editor content to PDF or word using external tools
+### Exporting Rich Text Editor content to PDF or Word using external tools
 
 By default, when exporting content from the Angular Rich Text Editor to generate PDF or Word documents using external tools (instead of Syncfusion’s built-in export services), the editor’s internal styles are not included in the retrieved HTML. This can lead to formatting inconsistencies in the final output.
 

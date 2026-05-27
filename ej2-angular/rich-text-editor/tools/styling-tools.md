@@ -30,7 +30,7 @@ You can add the `FontName` tool to the toolbar in the Rich Text Editor using [to
 ```typescript
 
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     selector: 'app-root',
@@ -38,7 +38,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@s
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 })
 export class AppComponent {
-    public tools: object = {
+    public tools: ToolbarSettingsModel = {
         items: ['FontName']
     };
 }
@@ -101,7 +101,7 @@ You can add the `FontSize` tool to the toolbar in the Rich Text Editor using [to
 ```typescript
 
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     selector: 'app-root',
@@ -109,7 +109,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@s
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 })
 export class AppComponent {
-    public tools: object = {
+    public tools: ToolbarSettingsModel = {
         items: ['FontSize']
     };
 }
@@ -140,7 +140,7 @@ You can add the `FontColor` and `BackgroundColor` tools to the toolbar in the Ri
 ```typescript
 
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     selector: 'app-root',
@@ -148,7 +148,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@s
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 })
 export class AppComponent {
-    public tools: object = {
+    public tools: ToolbarSettingsModel = {
         items: ['FontColor', 'BackgroundColor']
     };
 }

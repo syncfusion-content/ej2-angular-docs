@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Implementing Ctrl+s Shortcut for Value Updates in Angular Rich Text Editor Component
+# Implementing the Ctrl+S Shortcut for Value Updates in the Angular Rich Text Editor Component
 
-To implement this functionality, you bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>s</kbd> key press using its keyCode.
+To implement this functionality, you need to bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>S</kbd> key press using the keyCode.
 
-In the `keydown` event handler, the `updateValue` method is called to update the [`value`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#value) property and then you can save the content in the required database using the same.
+In the `keydown` event handler, the `updateValue` method is called to update the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#value) property, and then you can save the content to the required database using the same.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

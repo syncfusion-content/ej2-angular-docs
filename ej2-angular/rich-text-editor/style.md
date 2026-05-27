@@ -108,61 +108,18 @@ Use the following CSS to customize the border color in the Rich Text Editor's co
 
 Programmatically highlight a portion of the text in the editor by setting the background color. This can be achieved by applying a background style to the selected text using the Rich Text Editor's `executeCommand` method.
 
-```typescript
 
-import { Component, ViewChild } from '@angular/core';
-import {
-  NodeSelection,
-  RichTextEditorAllModule,
-} from '@syncfusion/ej2-angular-richtexteditor';
-import {
-  ToolbarService,
-  LinkService,
-  ImageService,
-  HtmlEditorService,
-  RichTextEditorComponent,
-} from '@syncfusion/ej2-angular-richtexteditor';
-import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/highlight-text/src/app.component.ts %}
+{% endhighlight %}
 
-@Component({
-    imports: [RichTextEditorModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `<div><button (click)="setBackground()" class="e-btn" style="margin:5px">Apply</button>
-  <ejs-richtexteditor #editor [value]="value"></ejs-richtexteditor></div>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
-})
-export class AppComponent implements AfterViewInit {
-   
-    @ViewChild('editor')
-    public editorObj!: RichTextEditorComponent;
-
-    public value: string =
-        "<p>The Rich Text Editor component is the WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update content. Users can format their content using standard toolbar commands.</p>";
-
-    private nodeSelection: NodeSelection = new NodeSelection();
-
-    setBackground() {
-        const rteContent = (this.editorObj as any).contentModule.getDocument();
-        const firstParagraph = (this.editorObj as any).contentModule
-        .getEditPanel()
-        .querySelector('p');
-
-        if (firstParagraph && firstParagraph.firstChild) {
-        this.nodeSelection.setSelectionText(
-            rteContent,
-            firstParagraph.firstChild,
-            firstParagraph.firstChild,
-            4, // Start index
-            20 // End index
-        );
-        this.editorObj.executeCommand('backColor', 'yellow');
-        }
-    }
-}
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/highlight-text/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/rich-text-editor/highlight-text" %}
 
 ## See also
 

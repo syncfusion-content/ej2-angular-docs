@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { UploaderModule } from '@syncfusion/ej2-angular-inputs';
-import { RichTextEditorModule, RichTextEditorComponent, ToolbarSettingsModel, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, RichTextEditorComponent, ToolbarSettingsModel, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
     imports: [
         RichTextEditorModule,
@@ -9,7 +9,7 @@ import { RichTextEditorModule, RichTextEditorComponent, ToolbarSettingsModel, To
     standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor #editor id='editor'  [enableXhtml]='true' [toolbarSettings]='tools' [(value)]='value'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService]
 })
 export class AppComponent {
     @ViewChild('editor')

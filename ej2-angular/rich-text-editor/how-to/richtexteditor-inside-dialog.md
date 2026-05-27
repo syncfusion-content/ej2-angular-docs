@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrating Rich Text Editor in Dialog Components
+# Integrating the Angular Rich Text Editor into a Dialog Component
 
 When rendering the Rich Text Editor inside a Dialog component, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 
-To resolve this issue, we can utilize the [`refreshUI`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#refreshui) method of the Rich Text Editor in conjunction with the [`open`](https://ej2.syncfusion.com/angular/documentation/api/dialog#open) event. This approach ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog is visible.
+To resolve this issue, we can utilize the [refreshUI](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#refreshui) method of the Rich Text Editor in conjunction with the [open](https://ej2.syncfusion.com/angular/documentation/api/dialog#open) event. This approach ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog is visible.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

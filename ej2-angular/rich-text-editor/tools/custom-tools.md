@@ -14,7 +14,7 @@ The Angular Rich Text Editor allows you to create your own commands to its toolb
 
 This sample shows how to add your own commands to the toolbar of the Rich Text Editor. The “Ω” command is added to insert special characters in the editor. By clicking the “Ω” command, it will show the special characters list, and then choose the character to be inserted in the editor.
 
-The following code snippet illustrates custom tool with tooltip text which will be included in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) field of the toolbarSettings property.
+The following code snippet illustrates custom tool with tooltip text which will be included in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) field of the `toolbarSettings` property.
 
 For a quick guide on custom toolbar configuration, refer to this video tutorial:
 

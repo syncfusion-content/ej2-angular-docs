@@ -6,7 +6,7 @@ import { RichTextEditorModule, ToolbarService, LinkService, ImageService, Resize
     standalone: true,
     styleUrls: ['app.style.css'],
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='editor' [enableResize]="true" [value]='value'>
+    template: `<ejs-richtexteditor id='editor' [enableResize]="true" [value]='value' [width]=350 [height]=350>
     </ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, ResizeService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
