@@ -56,6 +56,25 @@ The following ARIA attributes are used in the Scheduler.
 | aria-describedby | It indicates editor dialog content description to the user through assistive technologies. |
 | aria-disabled | Attribute is set to the appointment element to indicates the disabled state of the Scheduler.
 
+The Syncfusion® Angular Scheduler component uses a complex table structure to render calendar views (such as day, week, and month). As a result, automated accessibility tools (such as IBM Equal Access Accessibility Checker) may report the following warnings:
+
+- **Table has no headers identified:** Some tables rendered by the Scheduler do not have headers explicitly identified, which may trigger warnings in accessibility checkers.
+
+- **Complex table does not have headers for each cell properly defined with 'header' or 'scope':** The Scheduler's internal table structure may not define headers for every cell using the `header` or `scope` attributes, leading to additional warnings.
+
+- **Label text is located after its associated text input or <select> element:** Certain form fields and dropdowns within the built-in editor windows place the label after the input control, which may flag standard layout order validation.
+
+- **The 'for' attribute is not the 'id' of a valid element:** In the built-in scheduler editor window with multiple resources enabled, internal reference links between a label and its input component may trigger missing reference warnings in automated checkers.
+
+- **Accessible name does not match or contain the visible label text:** Certain interactive elements within the component may have mismatched programmatic names compared to their displayed labels, which can be flagged by label-matching verification tools. This behavior occurs specifically in the Month View date headers and the Agenda View appointment elements.
+
+- **Text contrast does not meet the minimum WCAG AA requirements:** Certain elements with specific text sizes and weights may fail standard color contrast ratio checks under default theme settings. This behavior occurs specifically in Adaptive Mode when utilizing Multiple Resources.
+
+- **The combobox 'aria-expanded' attribute is false, but the combobox popup is visible:** The aria-expanded attribute remains false even when the combobox popup is visible in the Editor Window drop-down components because the component uses a custom composite layout to render standard dropdown elements, which automated verification tools flag as a layout or state mismatch.
+
+- **The tabbable element's role 'cell' is not a widget role:**  
+The tabbable element's role cell is not a widget role, which can trigger errors in automated accessibility checkers because a standard cell role is not recognized as an interactive widget by default. This behavior occurs specifically in the multiple resource Timeline views.
+
 ## Keyboard interaction
 
 All the Scheduler actions can be controlled via keyboard keys by using the `allowKeyboardInteraction` property which is set to `true` by default. The following are the standard keys that work on Scheduler.
