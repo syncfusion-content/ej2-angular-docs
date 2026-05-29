@@ -24,44 +24,78 @@ To access component data within the template, use the `let-data` attribute. Here
 </ng-template>
 ```
 
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages
+
+```bash
+ng add @syncfusion/ej2-angular-grids
+```
+
+## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles
+
+To import styles for specific components, add only what you need:
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
+```
+
 Let's explore how templates enhance the Grid component with a custom template:
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
-import { Component, OnInit } from '@angular/core';
+Modify your `src/app/app.component.ts` file to incorporate the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component:
+
+```typescript
+import { GridAllModule } from '@syncfusion/ej2-angular-grids'
+
+import { enableRipple } from '@syncfusion/ej2-base';
+import { Component } from '@angular/core';
+
+// enable ripple effects
+enableRipple(true);
 
 @Component({
-    selector: 'app-root',
-    template: `<div class="control-section">
-        <ejs-grid #grid [dataSource]='data'>
-            <e-columns>
-                <e-column field='OrderID' headerText='OrderID' width='100'></e-column>
-                <e-column field='CustomerID' headerText='CustomerID' width='100'></e-column>
-                <e-column field='ShipCountry' headerText='ShipCountry' width='100'>
-                    <ng-template #template let-data>
-                        <div class="template">{{data.ShipCountry}}</div>
-                    </ng-template>
-                </e-column>
-            </e-columns>
-        </ejs-grid>
-    </div>`
-});
+imports: [
 
-export class AppComponent implements OnInit {
+GridAllModule
+],
 
-    public data: object[];
-    ngOnInit(): void {
-        this.data = [
-            { OrderID: 10248, CustomerID: 'VINET', ShipCountry: 'France' },
-            { OrderID: 10249, CustomerID: 'TOMSP', ShipCountry: 'Germany' },
-            { OrderID: 10250, CustomerID: 'HANAR', ShipCountry: 'Brazil' }
-        ];
-    }
-};
-{% endraw %}
-{% endhighlight %}
-{% endtabs %}
 
+standalone: true,
+selector: 'app-root',
+template: `
+<h1>
+Syncfusion Angular UI Grid!
+</h1>
+
+<ejs-grid [dataSource]='data'>
+<e-columns>
+<e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+<e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+<e-column field='ShipCountry' headerText='ShipCountry' width='100'>
+<ng-template #template let-data>
+<div class="template">{{data.ShipCountry}}</div>
+</ng-template>
+</e-column>
+</e-columns>
+</ejs-grid>
+`
+})
+export class AppComponent {
+public data: Object[] = [
+{ OrderID: 10248, CustomerID: 'VINET', ShipCountry: 'France' },
+{ OrderID: 10249, CustomerID: 'TOMSP', ShipCountry: 'Germany' },
+{ OrderID: 10250, CustomerID: 'HANAR', ShipCountry: 'Brazil' }
+];
+
+}
+
+```
   
 {% previewsample "page.domainurl/samples/common/template-cs1" %}
