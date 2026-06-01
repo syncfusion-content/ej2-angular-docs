@@ -62,7 +62,7 @@ The Syncfusion® Angular Scheduler component uses a complex table structure to r
 
 - **Complex table does not have headers for each cell properly defined with 'header' or 'scope':** The Scheduler's internal table structure may not define headers for every cell using the `header` or `scope` attributes, leading to additional warnings.
 
-- **Label text is located after its associated text input or <select> element:** Certain form fields and dropdowns within the built-in editor windows place the label after the input control, which may flag standard layout order validation.
+- **Label text is located after its associated text input or &lt;select&gt; element:** Certain form fields and dropdowns within the built-in editor windows place the label after the input control, which may flag standard layout order validation.
 
 - **The 'for' attribute is not the 'id' of a valid element:** In the built-in scheduler editor window with multiple resources enabled, internal reference links between a label and its input component may trigger missing reference warnings in automated checkers.
 
