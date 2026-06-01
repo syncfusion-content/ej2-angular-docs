@@ -30,27 +30,27 @@ Before installing Angular UI Builder, ensure the following:
 
 ## Key Benefits
 
-### **AI-Driven UI Generation**
+**AI-Driven UI Generation**
 - Transforms prompts into fully developed Angular components rather than just partial code snippets.
 - Automatically selects appropriate Syncfusion® components and features
 - Produces structured, maintainable code
 
-### **Component Usage & API Accuracy**
+**Component Usage & API Accuracy**
 - Uses correct Syncfusion® component APIs
 - Injects required feature modules (paging, sorting, filtering, etc.)
 - Avoids unsupported or deprecated patterns
 
-### **Patterns & Best Practices**
+**Patterns & Best Practices**
 - Recommended component composition and services
 - Event handling aligned with Angular standards
 - Secure and scalable coding patterns
 
-### **Accessibility & Responsiveness**
+**Accessibility & Responsiveness**
 - WCAG 2.1 AA–aligned output
 - Semantic HTML with ARIA support
 - Mobile-first responsive layouts
 
-### **Design-System Integration**
+**Design-System Integration**
 - Supports Tailwind, Bootstrap, Material, or custom themes
 - Ensures consistent Syncfusion® styling and theme usage
 
