@@ -18,7 +18,7 @@ BPMN (Business Process Model and Notation) gateways are crucial elements that co
 
 A gateway is represented as a diamond shape and serves as a decision point that controls the sequence flow within a process. Gateways can split a single incoming flow into multiple outgoing flows or merge multiple incoming flows into a single outgoing flow.
 
-To create a gateway in the Angular Diagram component, set the shape property of the node to "gateway" and configure the [`gateway`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnGateway/) property with the appropriate gateway type. The following code example demonstrates how to create a basic BPMN gateway.
+To create a gateway in the Angular Diagram component, set the shape property of the node to "gateway" and configure the [`gateway`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnGateway) property with the appropriate gateway type. The following code example demonstrates how to create a basic BPMN gateway.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

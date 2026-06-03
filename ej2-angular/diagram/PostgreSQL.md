@@ -36,7 +36,7 @@ Ensure availability of the following software:
 
 ### Installing PostgreSQL
 
-Download PostgreSQL from the official website: [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
+Download PostgreSQL from the official website: [https://www.postgresql.org/download/](https://www.postgresql.org/download)
 
 
 **Installation Steps:**
@@ -1036,5 +1036,5 @@ export const appConfig: ApplicationConfig = {
 - [Syncfusion® Angular Diagram Documentation](https://ej2.syncfusion.com/angular/documentation/diagram/getting-started)
 - [DataManager API Reference](https://ej2.syncfusion.com/angular/documentation/data/getting-started)
 - [Organizational Chart Layout](https://ej2.syncfusion.com/angular/documentation/diagram/automatic-layout#organizational-chart)
-- [PostgreSQL Node.js Driver](https://node-postgres.com/)
+- [PostgreSQL Node.js Driver](https://node-postgres.com)
 - [Express REST API Best Practices](https://expressjs.com/en/guide/routing.html)

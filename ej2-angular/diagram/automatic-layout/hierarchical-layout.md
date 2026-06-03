@@ -14,7 +14,7 @@ The hierarchical tree layout arranges nodes in a tree-like structure where nodes
 
 ## Hierarchical tree layout with nodes and connectors
 
-To arrange nodes in a hierarchical structure, specify the layout [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#type) as **HierarchicalTree**. This approach provides full control over node and connector definitions while leveraging automatic positioning.
+To arrange nodes in a hierarchical structure, specify the layout [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#type) as **HierarchicalTree**. This approach provides full control over node and connector definitions while leveraging automatic positioning.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

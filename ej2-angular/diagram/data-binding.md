@@ -18,12 +18,12 @@ Data binding in the Diagram component works by mapping data source fields to dia
 
 The Diagram component exposes several data-related properties that control how data is mapped to diagram elements:
 
-* **[`dataManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/#datamanager)** - Defines the data source as a collection of objects or DataManager instance
-* **[`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/#id)** - Specifies the unique identifier field for each data item
-* **[`parentId`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/#parentid)** - Defines the parent field to establish hierarchical relationships
-* **[`root`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/#root)** - Sets the root node for the diagram hierarchy
+* **[`dataManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#datamanager)** - Defines the data source as a collection of objects or DataManager instance
+* **[`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#id)** - Specifies the unique identifier field for each data item
+* **[`parentId`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#parentid)** - Defines the parent field to establish hierarchical relationships
+* **[`root`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#root)** - Sets the root node for the diagram hierarchy
 
-For complete property details, refer to the [`DataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/) API documentation.
+For complete property details, refer to the [`DataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel) API documentation.
 
 ## Data Binding Types
 
@@ -56,7 +56,7 @@ Remote data binding enables the diagram to fetch data from server endpoints usin
 
 The DataManager handles data communication, while Query objects generate the requests that DataManager processes. This architecture provides powerful data manipulation capabilities including filtering, sorting, and paging.
 
-For comprehensive DataManager information, see the [`DataManager documentation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/).
+For comprehensive DataManager information, see the [`DataManager documentation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,17 +79,17 @@ The Diagram component supports Create, Read, Update, and Delete (CRUD) operation
 The diagram can simultaneously read from two data sources: one for nodes and another for connectors. This separation provides greater flexibility when dealing with complex data relationships.
 
 **Node data source configuration:**
-* Set the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/#datasource) property to define the node data collection
-* Use the [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/#id) property to specify the unique identifier field
+* Set the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#datasource) property to define the node data collection
+* Use the [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#id) property to specify the unique identifier field
 
 **Connector data source configuration:**
-* Configure the [`connectionDataSource`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/#connectionDataSource) property for connector data
-* Set [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel/#sourceID) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel/#targetID) to establish connections
-* Define connection points using [`sourcePointX`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel/#sourcePointX), [`sourcePointY`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel/#sourcePointY), [`targetPointX`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel/#targetPointX), and [`targetPointY`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel/#targetPointY)
+* Configure the [`connectionDataSource`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#connectionDataSource) property for connector data
+* Set [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel#sourceID) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel#targetID) to establish connections
+* Define connection points using [`sourcePointX`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel#sourcePointX), [`sourcePointY`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel#sourcePointY), [`targetPointX`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel#targetPointX), and [`targetPointY`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionDataSourceModel#targetPointY)
 
 **Priority handling:** When both parent-child relationships in the main data source and explicit connectors in the connectionDataSource are defined, the explicit connectors take priority for rendering.
 
-**Custom fields:** Use the [`customFields`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel/#customFields) property in crudAction to maintain additional information for both nodes and connectors.
+**Custom fields:** Use the [`customFields`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel#customFields) property in crudAction to maintain additional information for both nodes and connectors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,7 +109,7 @@ The diagram supports real-time data modifications through CRUD action configurat
 
 #### Creating New Data (InsertData)
 
-Configure the [`create`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel/#create) property to handle new node and connector additions:
+Configure the [`create`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel#create) property to handle new node and connector additions:
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -143,7 +143,7 @@ export class AppComponent {
 
 #### Updating Existing Data (UpdateData)
 
-Configure the [`update`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel/#update) property to handle modifications to existing nodes and connectors:
+Configure the [`update`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel#update) property to handle modifications to existing nodes and connectors:
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -177,7 +177,7 @@ export class AppComponent {
 
 #### Deleting Data (DeleteData)
 
-Configure the [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel/#destroy) property to handle node and connector deletions:
+Configure the [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel#destroy) property to handle node and connector deletions:
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';

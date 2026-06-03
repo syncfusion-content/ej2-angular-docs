@@ -1,7 +1,7 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, DataSourceModel, DecoratorModel, DiagramModule, HierarchicalTreeService,
-  DataBindingService, DataBinding, ImageElement, StackPanel, TextElement, Container, HierarchicalTree } from '@syncfusion/ej2-angular-diagrams';
+  DataBindingService, DataBinding, ImageElement, StackPanel, TextElement, HierarchicalTree } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 Diagram.Inject(DataBinding, HierarchicalTree);
@@ -51,7 +51,7 @@ export class AppComponent {
   }
 
   //Function to add the Template of the Node.
-  public setNodeTemplate(node: NodeModel): Container {
+  public setNodeTemplate(node: NodeModel): StackPanel {
 
     // Create an outer StackPanel as container to contain image and text elements
     let container = new StackPanel();

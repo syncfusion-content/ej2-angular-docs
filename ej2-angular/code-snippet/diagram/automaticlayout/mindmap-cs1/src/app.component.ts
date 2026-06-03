@@ -80,7 +80,7 @@ export class AppComponent {
 
   //Sets the default properties for all the Nodes
   public getNodeDefaults(node: NodeModel): NodeModel {
-    node.annotations = [{ content: (node.data as { Label: 'string' }).Label }];
+    node.annotations = [{ content: (node.data as { Label: string }).Label }];
     node.width = 100; node.height = 40;
     return node;
   }

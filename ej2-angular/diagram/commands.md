@@ -27,11 +27,11 @@ The commands in diagram component are used to perform various interactions withi
 
 ## Alignment Commands
 
-The alignment command enables you to align selected or defined objects, such as nodes and connectors, with respect to the selection boundary or the first selected object. The [`align`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#align) method parameters are explained below.
+The alignment command enables you to align selected or defined objects, such as nodes and connectors, with respect to the selection boundary or the first selected object. The [`align`](https://ej2.syncfusion.com/angular/documentation/api/diagram#align) method parameters are explained below.
 
 ### Alignment Options
 
-The [`Alignment Options`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentOptions/) defines the alignment position of objects to be aligned.
+The [`Alignment Options`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentOptions) defines the alignment position of objects to be aligned.
 
 |Alignment|Description|
 |----|----|
@@ -50,7 +50,7 @@ Defines the objects to be aligned. This is an optional parameter. By default, al
 
 ### Alignment Mode
 
-[`Alignment Mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentMode/) defines the specific mode with respect to which the objects are aligned. This is an optional parameter. The default alignment mode is `Object`. The accepted values of the argument "alignment mode" are as follows.
+[`Alignment Mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentMode) defines the specific mode with respect to which the objects are aligned. This is an optional parameter. The default alignment mode is `Object`. The accepted values of the argument "alignment mode" are as follows.
 
 The table below shows the alignment as `Left` for different alignment modes.
 
@@ -77,11 +77,11 @@ The following code example illustrates how to align all the selected objects at 
 
 ## Distribute Commands
 
-The [`distribute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#distribute) method enables you to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary. The [`distribute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#distribute) method parameters are explained below.
+The [`distribute`](https://ej2.syncfusion.com/angular/documentation/api/diagram#distribute) method enables you to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary. The [`distribute`](https://ej2.syncfusion.com/angular/documentation/api/diagram#distribute) method parameters are explained below.
 
 ### Distribute Options
 
-The factors for distributing shapes using [`DistributeOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/distributeOptions/#distributeoptions) are listed as follows:
+The factors for distributing shapes using [`DistributeOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/distributeOptions#distributeoptions) are listed as follows:
 
 |Distribute option| Description|
 |----|----|
@@ -116,11 +116,11 @@ The following code example illustrates how the nodes are distributed using the `
 
 ## Sizing Commands
 
-The [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#samesize) command enables you to size all selected nodes to match the size of the first selected object or the first node in the objects collection you provide as the second parameter. The parameters for the [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#samesize) method are explained below.
+The [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#samesize) command enables you to size all selected nodes to match the size of the first selected object or the first node in the objects collection you provide as the second parameter. The parameters for the [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#samesize) method are explained below.
 
 ### Sizing Options
 
-[`SizingOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/sizingOptions/) include:
+[`SizingOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/sizingOptions) include:
 
 |Sizing options|Description|
 |----|----|
@@ -150,15 +150,15 @@ The following code example illustrates how to execute the size commands.
 
 ## Clipboard Commands
 
-Clipboard commands are used to cut, copy, or paste selected elements in the diagram using the [`cut`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#cut), [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#copy), and [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#paste) methods. You can also use keyboard shortcuts for these actions. For detailed information on using these methods refer to the table below.
+Clipboard commands are used to cut, copy, or paste selected elements in the diagram using the [`cut`](https://ej2.syncfusion.com/angular/documentation/api/diagram#cut), [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram#copy), and [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram#paste) methods. You can also use keyboard shortcuts for these actions. For detailed information on using these methods refer to the table below.
 
 | Command (Shortcut key) | Description |
 |---------|-------------|
-| `Cut` (CTRL+X)  | Removes the selected elements from the diagram and places them onto the diagram's clipboard. This operation is performed using the [`cut`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#cut) method. |
-| `Copy`(CTRL+C)  | Duplicates the selected elements and places them onto the diagram's clipboard without removing them from their original location. Use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#copy) method for this operation. |
-| `Paste`(CTRL+V) | Inserts the elements stored on the diagram's clipboard (nodes and connectors) into the diagram. This can be done using the [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#paste) method. |
+| `Cut` (CTRL+X)  | Removes the selected elements from the diagram and places them onto the diagram's clipboard. This operation is performed using the [`cut`](https://ej2.syncfusion.com/angular/documentation/api/diagram#cut) method. |
+| `Copy`(CTRL+C)  | Duplicates the selected elements and places them onto the diagram's clipboard without removing them from their original location. Use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram#copy) method for this operation. |
+| `Paste`(CTRL+V) | Inserts the elements stored on the diagram's clipboard (nodes and connectors) into the diagram. This can be done using the [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram#paste) method. |
 
-The [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#paste) method optionally accepts a collection of nodes or connectors to be added to the diagram.
+The [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram#paste) method optionally accepts a collection of nodes or connectors to be added to the diagram.
 
 The following code illustrates how to execute the clipboard commands.
 
@@ -180,8 +180,8 @@ Grouping commands are used to group or ungroup selected elements in the diagram.
 
 | Commands (Shortcut key) | Description|
 |----|----|
-| [`group`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#group) (CTRL+G) | Combines the selected nodes and connectors into a single group, allowing you to move, resize, or apply other operations to all grouped elements as a unit. |
-| [`ungroup`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#ungroup) (CTRL+Shift+U) | Splits a previously grouped set of nodes and connectors into individual elements, enabling you to modify or manipulate them separately. |
+| [`group`](https://ej2.syncfusion.com/angular/documentation/api/diagram#group) (CTRL+G) | Combines the selected nodes and connectors into a single group, allowing you to move, resize, or apply other operations to all grouped elements as a unit. |
+| [`ungroup`](https://ej2.syncfusion.com/angular/documentation/api/diagram#ungroup) (CTRL+Shift+U) | Splits a previously grouped set of nodes and connectors into individual elements, enabling you to modify or manipulate them separately. |
 
 The following code examples demonstrate how to use the grouping commands in diagram:
 
@@ -199,7 +199,7 @@ The following code examples demonstrate how to use the grouping commands in diag
 
 ## Rotate Commands
 
-The [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#rotate) commands in the diagram allow users to rotate selected elements by specified angles. These commands are useful for adjusting the rotation angle of nodes or shapes within the diagram.
+The [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/diagram#rotate) commands in the diagram allow users to rotate selected elements by specified angles. These commands are useful for adjusting the rotation angle of nodes or shapes within the diagram.
 
 | Parameter | Type | Description |
 |----------|-------|-------------|
@@ -228,7 +228,7 @@ You can also use CTRL+R to rotate clockwise and CTRL+L to rotate anti-clockwise.
 
 ### Bring to Front Command
 
-The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringtofront) command visually brings the selected element to the front over all the other overlapped elements. The following code illustrates how to execute the `bringToFront` command.
+The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringtofront) command visually brings the selected element to the front over all the other overlapped elements. The following code illustrates how to execute the `bringToFront` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -244,7 +244,7 @@ The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 
 ### Send to Back Command
 
-The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#sendtoback) command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the `sendToBack` command.
+The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendtoback) command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the `sendToBack` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -260,7 +260,7 @@ The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/
 
 ### Move Forward Command
 
-The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#moveforward) command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the `moveForward` command.
+The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#moveforward) command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the `moveForward` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -276,7 +276,7 @@ The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram
 
 ### Send Backward Command
 
-The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#sendbackward) command visually moves the selected element behind the underlying element. The following code illustrates how to execute the `sendBackward` command.
+The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendbackward) command visually moves the selected element behind the underlying element. The following code illustrates how to execute the `sendBackward` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -290,11 +290,11 @@ The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagra
   
 {% previewsample "page.domainurl/samples/diagram/commands/sendbackward-cs1" %}
 
-The Z-order commands can also be performed using keyboard shortcuts. For more information, refer to the [`keyboard commands`](./interaction#keyboard).
+The Z-order commands can also be performed using keyboard shortcuts. For more information, refer to the [`keyboard commands`](./interaction#keyboard-shortcuts).
 
 ## Zoom Commands
 
-The [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#zoom) command is used to zoom-in and zoom-out the diagram view.
+The [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/diagram#zoom) command is used to zoom-in and zoom-out the diagram view.
 
 The following code illustrates how to zoom-in/zoom out the diagram.
 
@@ -324,11 +324,11 @@ For more information about zoom refer to the [zoom](./scroll-settings#update-zoo
 
 ## Nudge Commands
 
-The [`nudge`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#nudge) commands move the selected elements towards up, down, left, or right by 1 pixel. The parameters of the [`nudge`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#nudge) method are explained below.
+The [`nudge`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nudge) commands move the selected elements towards up, down, left, or right by 1 pixel. The parameters of the [`nudge`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nudge) method are explained below.
 
 | Parameter    | Type           | Description                                                      |
 |--------------|-----------|-----------|
-| direction    |[`NudgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nudgeDirection/) | Defines the direction in which the objects should be moved.      |
+| direction    |[`NudgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nudgeDirection) | Defines the direction in which the objects should be moved.      |
 | x (optional) | number         | The horizontal distance by which the selected objects should be moved. |
 | y (optional) | number         | The vertical distance by which the selected objects should be moved.   |
 | type (optional) | string      | A string that defines the type of nudge action.                           |
@@ -366,9 +366,9 @@ N> The position change event will not trigger when using keyboard keys to move a
 
 ## BringIntoView
 
-The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringintoview) command brings the specified rectangular region into the viewport of the diagram, ensuring that it is visible within the current view.
+The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringintoview) command brings the specified rectangular region into the viewport of the diagram, ensuring that it is visible within the current view.
 
-The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringintoview) method takes a single parameter, an object that defines the rectangular region to bring into view. This object should include properties such as x, y, width, and height to specify the exact region to be made visible.
+The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringintoview) method takes a single parameter, an object that defines the rectangular region to bring into view. This object should include properties such as x, y, width, and height to specify the exact region to be made visible.
 
 The following code illustrates how to execute the `bringIntoView` command.
 
@@ -386,9 +386,9 @@ The following code illustrates how to execute the `bringIntoView` command.
 
 ## BringToCenter
 
-The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringtocenter) command brings the specified rectangular region of the diagram content within the viewport.
+The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringtocenter) command brings the specified rectangular region of the diagram content within the viewport.
 
-The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringtocenter) method takes a single parameter, an object that defines the rectangular region to be centered. This object should include properties such as x, y, width, and height to specify the exact region to be brought to the center.
+The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringtocenter) method takes a single parameter, an object that defines the rectangular region to be centered. This object should include properties such as x, y, width, and height to specify the exact region to be brought to the center.
 
 The following code illustrates how to execute the `bringToCenter` command.
 
@@ -406,21 +406,21 @@ The following code illustrates how to execute the `bringToCenter` command.
 
 ## FitToPage Commands
 
-The [`fitToPage`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#fittopage) command helps to fit the diagram content into the view with respect to either width, height, or the entire content. The fitToPage method takes one parameter, [`IFitOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/), which specifies the options for fitting the diagram to the page.
+The [`fitToPage`](https://ej2.syncfusion.com/angular/documentation/api/diagram#fittopage) command helps to fit the diagram content into the view with respect to either width, height, or the entire content. The fitToPage method takes one parameter, [`IFitOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions), which specifies the options for fitting the diagram to the page.
 
 ### Fit Options
 
-The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/fitModes/#mode) parameter defines whether the diagram has to be horizontally/vertically fit into the viewport with respect to width, height, or entire bounds of the diagram.
+The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/fitModes#mode) parameter defines whether the diagram has to be horizontally/vertically fit into the viewport with respect to width, height, or entire bounds of the diagram.
 
-The [`region`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRegions/#region) parameter defines the region that has to be drawn as an image.
+The [`region`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRegions#region) parameter defines the region that has to be drawn as an image.
 
-The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/#margin) parameter defines the region/bounds of the diagram content that is to be fit into the view.
+The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#margin) parameter defines the region/bounds of the diagram content that is to be fit into the view.
 
-The [`canZoomIn`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/#canzoomin) parameter enables/disables zooming to fit the smaller content into a larger viewport.
+The [`canZoomIn`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#canzoomin) parameter enables/disables zooming to fit the smaller content into a larger viewport.
 
-The [`canZoomOut`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/#canzoomout) parameter enables or disables zooming out to fit larger content into a smaller viewport.
+The [`canZoomOut`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#canzoomout) parameter enables or disables zooming out to fit larger content into a smaller viewport.
 
-The [`customBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/#custombounds) parameter defines the custom region that has to be fit into the viewport.
+The [`customBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#custombounds) parameter defines the custom region that has to be fit into the viewport.
 
 The following code illustrates how to execute the `FitToPage` command.
 
@@ -438,19 +438,19 @@ The following code illustrates how to execute the `FitToPage` command.
 
 ## Command Manager
 
-The Diagram provides support for mapping or binding command execution to specific key gestures. It includes built-in commands and allows for the definition of custom commands through the [`commandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager/#commands). Custom commands are executed when the specified key gesture is recognized.
+The Diagram provides support for mapping or binding command execution to specific key gestures. It includes built-in commands and allows for the definition of custom commands through the [`commandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager#commands). Custom commands are executed when the specified key gesture is recognized.
 
 ## Custom Command
 
 To define a custom command, you need to specify the following properties:
 
-* [`execute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command/#execute): A method to be executed.
-* [`canExecute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command/#canexecute): A method to define whether the command can be executed at the moment.
-* [`gesture`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keyGestureModel/#gesture): A combination of [`Keys`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keys/#key) and [`KeyModifiers`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keyModifiers/#keymodifiers).
-* [`parameter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command/#parameter): Defines any additional parameters that are required at runtime.
-* [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command/#name): Defines the name of the command.
+* [`execute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#execute): A method to be executed.
+* [`canExecute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#canexecute): A method to define whether the command can be executed at the moment.
+* [`gesture`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#gesture): A combination of [`Keys`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keys#key) and [`KeyModifiers`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keyModifiers#keymodifiers).
+* [`parameter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#parameter): Defines any additional parameters that are required at runtime.
+* [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#name): Defines the name of the command.
 
-To explore the properties of custom commands, refer to [`commands`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command/#commands).
+To explore the properties of custom commands, refer to [`commands`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#commands).
 
 The following code example illustrates how to use the command manager to clone a node and change the fill color of a node while pressing `G` and `Shift+G` or `Alt+G`, respectively:
 

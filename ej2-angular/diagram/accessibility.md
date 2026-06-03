@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Diagram Component
 
-The Diagram component provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications through attributes like `aria-label`, providing information to assistive technologies such as screen readers.
+The Diagram component provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg) specifications through attributes like `aria-label`, providing information to assistive technologies such as screen readers.
 
 The following table outlines accessibility compliance for the Diagram component:
 
@@ -40,7 +40,7 @@ The following table outlines accessibility compliance for the Diagram component:
 
 ## WAI-ARIA attributes
 
-The Diagram component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) patterns to meet accessibility requirements. The following ARIA attributes are used in the Diagram component:
+The Diagram component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg) patterns to meet accessibility requirements. The following ARIA attributes are used in the Diagram component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -119,6 +119,7 @@ The Diagram component supports keyboard navigation, allowing users who rely on a
 The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html) guidelines, making it accessible for users who rely on keyboard navigation. The following keyboard shortcuts are supported:
 
 **Selection and Clipboard Operations**
+
 | **Command** | **Action** |
 | --- | --- |
 | Ctrl + A | Select All |
@@ -127,6 +128,7 @@ The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG
 | Ctrl + V | Paste |
 
 **Edit Operations**
+
 | **Command** | **Action** |
 | --- | --- |
 | Ctrl + Z | Undo |
@@ -134,6 +136,7 @@ The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG
 | Delete | Delete |
 
 **Navigation and Movement**
+
 | **Command** | **Action** |
 | --- | --- |
 | <kbd>Up Arrow</kbd> | Move selected object up |
@@ -142,6 +145,7 @@ The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG
 | <kbd>Right Arrow</kbd> | Move selected object right |
 
 **Annotation Editing**
+
 | **Command** | **Action** |
 | --- | --- |
 | <kbd>Enter</kbd> | Start annotation edit |

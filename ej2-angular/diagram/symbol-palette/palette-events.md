@@ -14,7 +14,7 @@ The Symbol Palette component provides several events that trigger during user in
 
 ## DragEnter event
 
-The [`DragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs/) event triggers when a symbol enters the diagram surface while being dragged from the symbol palette. This event allows developers to customize the appearance of the dragged symbol or validate drop targets dynamically based on the diagram's current state.
+The [`DragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs) event triggers when a symbol enters the diagram surface while being dragged from the symbol palette. This event allows developers to customize the appearance of the dragged symbol or validate drop targets dynamically based on the diagram's current state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ The [`DragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/i
 
 ## DragLeave event
 
-The [`DragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragLeaveEventArgs/) event occurs when a dragged symbol leaves the diagram surface without being dropped. This event is particularly useful for cleaning up temporary visual changes applied during the drag operation or resetting any modified states.
+The [`DragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragLeaveEventArgs) event occurs when a dragged symbol leaves the diagram surface without being dropped. This event is particularly useful for cleaning up temporary visual changes applied during the drag operation or resetting any modified states.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ The [`DragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/i
 
 ## DragOver event
 
-The [`DragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragOverEventArgs/) event triggers continuously while a symbol is being dragged over the diagram surface. This event provides real-time feedback during drag operations and enables developers to implement dynamic drop validation.
+The [`DragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragOverEventArgs) event triggers continuously while a symbol is being dragged over the diagram surface. This event provides real-time feedback during drag operations and enables developers to implement dynamic drop validation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ The [`DragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iD
 
 ## Drop event
 
-The [`Drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDropEventArgs/) event triggers when a symbol is successfully dropped onto the diagram surface. This event serves as the final step in the drag-and-drop process and provides access to both the dropped symbol and the target location.
+The [`Drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDropEventArgs) event triggers when a symbol is successfully dropped onto the diagram surface. This event serves as the final step in the drag-and-drop process and provides access to both the dropped symbol and the target location.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +78,7 @@ The [`Drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDropE
 
 ## PaletteExpanding event
 
-The [`PaletteExpanding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteExpandArgs/) event triggers when a palette group is expanded or collapsed within the symbol palette. This event enables developers to control palette expansion behavior and implement custom logic based on palette state changes.
+The [`PaletteExpanding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteExpandArgs) event triggers when a palette group is expanded or collapsed within the symbol palette. This event enables developers to control palette expansion behavior and implement custom logic based on palette state changes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,7 +94,7 @@ The [`PaletteExpanding`](https://ej2.syncfusion.com/angular/documentation/api/di
 
 ## PaletteSelectionChange event
 
-The [`PaletteSelectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteSelectionChangeArgs/) event triggers when the selection changes within the symbol palette. This event provides information about both the previously selected and newly selected symbols, enabling developers to respond to selection changes appropriately.
+The [`PaletteSelectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteSelectionChangeArgs) event triggers when the selection changes within the symbol palette. This event provides information about both the previously selected and newly selected symbols, enabling developers to respond to selection changes appropriately.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

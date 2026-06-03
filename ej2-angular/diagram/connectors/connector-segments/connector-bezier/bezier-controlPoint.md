@@ -14,7 +14,7 @@ Bezier control points determine the curvature and shape of bezier connector segm
 
 ## Configure Bezier Segment Smoothness
 
-When working with multiple bezier segments, maintain visual consistency by configuring the smoothness behavior of control points using the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel/) property of the connector. The smoothness property controls how adjacent control points respond when one is modified.
+When working with multiple bezier segments, maintain visual consistency by configuring the smoothness behavior of control points using the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel) property of the connector. The smoothness property controls how adjacent control points respond when one is modified.
 
 | BezierSmoothness Value | Description | Output |
 |-------- | -------- | -------- |
@@ -37,7 +37,7 @@ When working with multiple bezier segments, maintain visual consistency by confi
 
 ## Control Bezier Control Points Visibility
 
-Configure which control points are visible during interaction using the [`controlPointsVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/controlPointsVisibility/) property within [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel/). This property provides granular control over control point display for different connector segments.
+Configure which control points are visible during interaction using the [`controlPointsVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/controlPointsVisibility) property within [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel). This property provides granular control over control point display for different connector segments.
 
 | ControlPointsVisibility Value | Description | Output |
 |-------- | -------- | -------- |

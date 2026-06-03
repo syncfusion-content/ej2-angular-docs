@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Organizational Chart Layout in Angular Diagram Control
 
-An organizational chart is a diagram that displays the hierarchical structure of an organization, showing reporting relationships and roles within the company. The Angular Diagram component provides specialized support for creating professional organizational charts through automatic layout algorithms. To create an organizational chart, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#type) property of the layout to `OrganizationalChart`.
+An organizational chart is a diagram that displays the hierarchical structure of an organization, showing reporting relationships and roles within the company. The Angular Diagram component provides specialized support for creating professional organizational charts through automatic layout algorithms. To create an organizational chart, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#type) property of the layout to `OrganizationalChart`.
 
 ## Prerequisites
 
@@ -63,7 +63,7 @@ This manual approach provides complete control over the chart structure and is s
 
 ## Advanced Layout Customization with getLayoutInfo
 
-The [`getLayoutInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel/#getlayoutinfo) method provides granular control over how each subtree within the organizational chart is arranged. This method is invoked for every node during the layout process, allowing customization of orientation, alignment, spacing, and special node types like assistants.
+The [`getLayoutInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#getlayoutinfo) method provides granular control over how each subtree within the organizational chart is arranged. This method is invoked for every node during the layout process, allowing customization of orientation, alignment, spacing, and special node types like assistants.
 
 The organizational chart layout engine parses the hierarchy starting from the root node and processes each subtree. By overriding the `getLayoutInfo` method, developers can customize the arrangement of child nodes based on specific business requirements.
 

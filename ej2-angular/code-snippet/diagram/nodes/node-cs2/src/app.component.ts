@@ -13,9 +13,9 @@ import {
   standalone: true,
   selector: 'app-container',
   template: `
-      <ejs-symbolpalette id="symbolpalette"width="10%" height="700px" [palettes]="palettes" [symbolHeight]=80 [symbolWidth]=80 >
+      <ejs-symbolpalette id="symbolpalette"width="30%" height="700px" [palettes]="palettes" [symbolHeight]=80 [symbolWidth]=80 >
       </ejs-symbolpalette>
-      <ejs-diagram #diagram id="diagram" width="74%" height="700px" [getNodeDefaults] ='getNodeDefaults'>
+      <ejs-diagram #diagram id="diagram" width="70%" height="700px" [getNodeDefaults] ='getNodeDefaults'>
           <e-nodes>
               <e-node id='node1' [offsetX]=150 [offsetY]=150></e-node>
           </e-nodes>

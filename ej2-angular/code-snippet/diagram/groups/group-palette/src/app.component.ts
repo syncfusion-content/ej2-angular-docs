@@ -13,10 +13,12 @@ import { ExpandMode } from '@syncfusion/ej2-navigations';
   providers: [],
   standalone: true,
   selector: "app-container",
-  template: `<ejs-symbolpalette #symbolpalette id="symbolpalette" [expandMode]="expandMode" width="30%" [palettes]="palettes" >
+  template: `<div style="display: flex;">
+      <ejs-symbolpalette #symbolpalette id="symbolpalette" [expandMode]="expandMode" width="30%" [palettes]="palettes" >
       </ejs-symbolpalette>
       <ejs-diagram #diagram id="diagram" width="70%" height="645px" [nodes]='nodes' (created)='created($event)'>
-      </ejs-diagram>`,
+      </ejs-diagram>
+      </div>`,
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

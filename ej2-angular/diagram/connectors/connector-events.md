@@ -16,7 +16,7 @@ The Diagram component provides comprehensive event support for connectors, allow
 
 Triggers when a connector is clicked by the user. This event is useful for implementing custom actions, showing context menus, or displaying connector-specific information.
 
-The following code example demonstrates how to handle the [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iClickEventArgs/) event in the diagram:
+The following code example demonstrates how to handle the [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iClickEventArgs) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ The following code example demonstrates how to handle the [`click`](https://ej2.
 
 Triggers when a connector is selected or unselected. This event allows you to implement custom selection logic, update property panels, or perform actions based on selection state changes.
 
-The following code example demonstrates how to handle the [`selection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selectionchange) event in the diagram:
+The following code example demonstrates how to handle the [`selection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram#selectionchange) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +48,7 @@ The following code example demonstrates how to handle the [`selection change`](h
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorSelectEvent-cs1" %}
 
-You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iSelectionChangeEventArgs/) to true, as shown in the code snippet below:
+You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iSelectionChangeEventArgs) to true, as shown in the code snippet below:
 
 ```ts
    public selectionChange = function (args: ISelectionChangeEventArgs): void {
@@ -64,7 +64,7 @@ You can prevent selection by setting the `cancel` property of [`SelectionChangeE
 
 Triggers when a connector's position changes during dragging operations. This event is essential for implementing validation, snapping behavior, or custom positioning logic.
 
-The following code example demonstrates how to handle the [`position change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDraggingEventArgs/) event in the diagram:
+The following code example demonstrates how to handle the [`position change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDraggingEventArgs) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +78,7 @@ The following code example demonstrates how to handle the [`position change`](ht
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorpositionEvent-cs1" %}
 
-You can prevent dragging by setting the `cancel` property of [`DraggingEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDraggingEventArgs/) to true, as shown in the code snippet below:
+You can prevent dragging by setting the `cancel` property of [`DraggingEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDraggingEventArgs) to true, as shown in the code snippet below:
 
  ```ts
  public positionChange = function (args: IDraggingEventArgs): void {
@@ -93,7 +93,7 @@ You can prevent dragging by setting the `cancel` property of [`DraggingEventArgs
 
 Triggers when a connector's source or target point connects to or disconnects from nodes. This event is crucial for implementing connection validation, automatic routing updates, or maintaining data relationships.
 
-The following code example demonstrates how to handle the [`connection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iConnectionChangeEventArgs/) event in the diagram:
+The following code example demonstrates how to handle the [`connection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iConnectionChangeEventArgs) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -111,7 +111,7 @@ The following code example demonstrates how to handle the [`connection change`](
 
 Triggers when a connector's source point is modified through dragging or programmatic changes. This event enables validation of source connections and implementation of custom connection rules.
 
-The following code example demonstrates how to handle the [`source Point change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iendchangeeventargs/) event in the diagram:
+The following code example demonstrates how to handle the [`source Point change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iendchangeeventargs) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -125,7 +125,7 @@ The following code example demonstrates how to handle the [`source Point change`
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorSourcepointEvent-cs1" %}
 
-You can prevent source point dragging by setting the `cancel` property of [`EndChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs/) to true, as shown in the code snippet below:
+You can prevent source point dragging by setting the `cancel` property of [`EndChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs) to true, as shown in the code snippet below:
 
 ```ts
  public sourcePointChange = function (args: IEndChangeEventArgs): void {
@@ -140,7 +140,7 @@ You can prevent source point dragging by setting the `cancel` property of [`EndC
 
 Triggers when a connector's target point is modified through dragging or programmatic changes. This event allows validation of target connections and enforcement of connection constraints.
 
-The following code example demonstrates how to handle the [`target Point change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs/) event in the diagram:
+The following code example demonstrates how to handle the [`target Point change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -154,7 +154,7 @@ The following code example demonstrates how to handle the [`target Point change`
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorTargetpointEvent-cs1" %}
 
-You can prevent target point dragging by setting the `cancel` property of [`EndChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs/) to true, as shown in the code snippet below:
+You can prevent target point dragging by setting the `cancel` property of [`EndChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs) to true, as shown in the code snippet below:
 
 ```ts
  public targetPointChange = function (args: IEndChangeEventArgs): void {
@@ -170,7 +170,7 @@ You can prevent target point dragging by setting the `cancel` property of [`EndC
 
 Triggers when connector segments are added or removed at runtime. This event is essential for tracking dynamic changes to connector paths and implementing custom segment management logic.
 
-The following code example demonstrates how to handle the [`segment collection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isegmentcollectionchangeeventargs/) event in the diagram:
+The following code example demonstrates how to handle the [`segment collection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isegmentcollectionchangeeventargs) event in the diagram:
 
 Use `CTRL+Shift+Click` on connector to add/remove segments.
 
@@ -190,7 +190,7 @@ Use `CTRL+Shift+Click` on connector to add/remove segments.
 
 Triggers when connector segments are adjusted or edited by the user. This event enables custom validation and modification of segment positions during interactive editing.
 
-The following code example demonstrates how to handle the [`segment change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isegmentchangeeventargs/) event in the diagram:
+The following code example demonstrates how to handle the [`segment change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isegmentchangeeventargs) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,7 +204,7 @@ The following code example demonstrates how to handle the [`segment change`](htt
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorSegmentEvent-cs1" %}
 
-You can prevent segment editing by setting the `cancel` property of [`SegmentChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isegmentchangeeventargs/) to true, as shown in the code snippet below:
+You can prevent segment editing by setting the `cancel` property of [`SegmentChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isegmentchangeeventargs) to true, as shown in the code snippet below:
 
 ``` ts
 public segmentChange = function (args: ISegmentChangeEventArgs): void {
@@ -221,7 +221,7 @@ public segmentChange = function (args: ISegmentChangeEventArgs): void {
 
 Triggers when connectors are added to or removed from the diagram. This event is fundamental for tracking diagram modifications and implementing undo/redo functionality or change tracking systems.
 
-The following code example demonstrates how to handle the [`collection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs/) event in the diagram:
+The following code example demonstrates how to handle the [`collection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs) event in the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -235,7 +235,7 @@ The following code example demonstrates how to handle the [`collection change`](
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorcollectionEvent-cs1" %}
 
-You can prevent changes to the diagram collection, such as adding or deleting connectors, by setting the `cancel` property of [`CollectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs/) to true, as shown in the code snippet below:
+You can prevent changes to the diagram collection, such as adding or deleting connectors, by setting the `cancel` property of [`CollectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs) to true, as shown in the code snippet below:
 
 ``` ts
 public collectionChange = function (args: ICollectionChangeEventArgs): void {

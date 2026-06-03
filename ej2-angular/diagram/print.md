@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Print in Angular Diagram Component
 
-The Angular Diagram component provides comprehensive printing capabilities that allow users to generate high-quality printed outputs of their diagrams. The [`print`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#print) method enables printing the diagram as an image with extensive customization options for different printing scenarios.
+The Angular Diagram component provides comprehensive printing capabilities that allow users to generate high-quality printed outputs of their diagrams. The [`print`](https://ej2.syncfusion.com/angular/documentation/api/diagram#print) method enables printing the diagram as an image with extensive customization options for different printing scenarios.
 
 ```typescript
 import { PrintAndExport } from '@syncfusion/ej2-angular-diagrams';
@@ -28,7 +28,7 @@ N> To print diagrams, inject the `PrintAndExport` service into the diagram compo
 
 ## Print Options
 
-The diagram printing behavior can be extensively customized using the [`printOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions/) parameter. These options provide control over the printed output's layout, size, and content selection.
+The diagram printing behavior can be extensively customized using the [`printOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions) parameter. These options provide control over the printed output's layout, size, and content selection.
 
 The available print options are detailed in the table below:
 
@@ -44,7 +44,7 @@ The available print options are detailed in the table below:
 
 ### Region
 
-The [`region`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions/#region) property allows selective printing of specific diagram areas. This feature is particularly useful when working with large diagrams where only certain sections need to be printed.
+The [`region`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions#region) property allows selective printing of specific diagram areas. This feature is particularly useful when working with large diagrams where only certain sections need to be printed.
 
 The following code example illustrates how to print the diagram based on different regions:
 
@@ -62,7 +62,7 @@ The following code example illustrates how to print the diagram based on differe
 
 ### Multiple pages
 
-Large diagrams can be printed across multiple pages by setting the [`multiplePage`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions/#multiplepage) property to true. This feature automatically divides the diagram content across multiple print pages while maintaining proper scaling and alignment.
+Large diagrams can be printed across multiple pages by setting the [`multiplePage`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions#multiplepage) property to true. This feature automatically divides the diagram content across multiple print pages while maintaining proper scaling and alignment.
 
 The following code example demonstrates how to enable multiple page printing:
 
@@ -80,7 +80,7 @@ The following code example demonstrates how to enable multiple page printing:
 
 ### Margin
 
-Print margins can be customized using the [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions/#margin) property, which accepts an object specifying the spacing for all four sides of the printed output. This ensures proper spacing and professional appearance of printed diagrams.
+Print margins can be customized using the [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions#margin) property, which accepts an object specifying the spacing for all four sides of the printed output. This ensures proper spacing and professional appearance of printed diagrams.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +96,7 @@ Print margins can be customized using the [`margin`](https://ej2.syncfusion.com/
 
 ### Page width and Page height
 
-The [`pageWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions/#pagewidth) and [`pageHeight`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions/#pageheight) properties control the dimensions of the printed output. These settings are particularly important when printing to specific paper sizes or when precise scaling is required.
+The [`pageWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions#pagewidth) and [`pageHeight`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions#pageheight) properties control the dimensions of the printed output. These settings are particularly important when printing to specific paper sizes or when precise scaling is required.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,7 +112,7 @@ The [`pageWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/i
 
 ### Page Orientation
 
-The [`pageOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions/#pageorientation) property determines how the diagram is oriented on the printed page:
+The [`pageOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPrintOptions#pageorientation) property determines how the diagram is oriented on the printed page:
 
 * **Landscape** - Prints with page width greater than page height, ideal for wide diagrams
 * **Portrait** - Prints with page height greater than page width, suitable for tall diagrams

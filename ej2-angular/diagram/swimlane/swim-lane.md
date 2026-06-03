@@ -16,7 +16,7 @@ Swimlanes are specialized diagram nodes that visualize business processes by org
 
 ## Create a swimlane
 
-To create a swimlane, set the node's shape type to [`swimlane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel/). Swimlanes are arranged horizontally by default and require proper configuration of headers and lanes to function correctly.
+To create a swimlane, set the node's shape type to [`swimlane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel). Swimlanes are arranged horizontally by default and require proper configuration of headers and lanes to function correctly.
 
 The following code example demonstrates how to define a basic swimlane object:
 
@@ -59,7 +59,7 @@ Lanes are arranged from left to right, with the header positioned at the top. Th
 
 ## Headers
 
-The header serves as the primary identifying element of a swimlane, providing a title or description for the entire swimlane container. The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/) property allows customization of both content and appearance. Headers also serve as the primary interaction point for swimlane operations such as selection and dragging.
+The header serves as the primary identifying element of a swimlane, providing a title or description for the entire swimlane container. The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel) property allows customization of both content and appearance. Headers also serve as the primary interaction point for swimlane operations such as selection and dragging.
 
 The following code example shows how to define and configure a swimlane header:
 
@@ -77,7 +77,7 @@ The following code example shows how to define and configure a swimlane header:
 
 ### Header customization
 
-Swimlane headers can be extensively customized to match design requirements and improve visual clarity. The dimensions can be controlled using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#width/) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#height/) properties. Visual styling, including background color and text formatting, can be applied through the [`style`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#style/) property. The swimlane's orientation can be controlled using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel/#orientation/) property.
+Swimlane headers can be extensively customized to match design requirements and improve visual clarity. The dimensions can be controlled using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel#height) properties. Visual styling, including background color and text formatting, can be applied through the [`style`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel#style) property. The swimlane's orientation can be controlled using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel#orientation) property.
 
 The following code example demonstrates comprehensive header customization:
 

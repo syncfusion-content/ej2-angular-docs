@@ -24,9 +24,9 @@ The Overview component is essential when working with:
 
 ## Create Overview Component
 
-To implement an overview, configure the [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#sourceid) property to reference the target diagram's identifier. This establishes the connection between the overview and the main diagram.
+To implement an overview, configure the [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel#sourceid) property to reference the target diagram's identifier. This establishes the connection between the overview and the main diagram.
 
-Define the overview dimensions using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel/#height) properties to ensure optimal visibility and performance.
+Define the overview dimensions using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/overview/overviewModel#height) properties to ensure optimal visibility and performance.
 
 The following code demonstrates basic overview implementation:
 

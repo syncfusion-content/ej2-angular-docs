@@ -14,7 +14,7 @@ This guide explains how to load and visualize organizational chart data stored i
 
 **What is LINQ2DB?**
 
-[LINQ2DB](https://linq2db.github.io/) is a lightweight object-relational mapping (ORM) library for .NET that simplifies database access. It enables applications to query relational databases such as MySQL using LINQ syntax, providing a type-safe and efficient way to retrieve data without the overhead of larger ORM frameworks.
+[LINQ2DB](https://linq2db.github.io) is a lightweight object-relational mapping (ORM) library for .NET that simplifies database access. It enables applications to query relational databases such as MySQL using LINQ syntax, providing a type-safe and efficient way to retrieve data without the overhead of larger ORM frameworks.
 
 **Key benefits of LINQ2DB:**
 
@@ -66,7 +66,7 @@ MySQL Server provides the relational database engine used to store organizationa
 
 MySQL Workbench is a graphical tool used to connect to MySQL Server, manage databases, execute SQL queries, and inspect data.
 
-1. Download MySQL Workbench Installer version 8.0.47 from [mysql-workbench](https://dev.mysql.com/downloads/workbench/)
+1. Download MySQL Workbench Installer version 8.0.47 from [mysql-workbench](https://dev.mysql.com/downloads/workbench)
 2. Run the installer and follow the setup wizard.
    - Choose the setup type as **Complete**.
    - Click **Finish** after installing MySQL Workbench.

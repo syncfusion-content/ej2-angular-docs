@@ -14,7 +14,7 @@ Ports in Angular Diagram components support various interactive features that en
 
 ## Draw connector from port
 
-Ports can serve as connection points for creating connectors dynamically. Enable the `Draw` constraint on the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#constraints) property to allow users to draw connectors directly from ports. The default connector segment type is **Orthogonal**, providing structured, right-angled connections suitable for flowcharts and organizational diagrams.
+Ports can serve as connection points for creating connectors dynamically. Enable the `Draw` constraint on the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#constraints) property to allow users to draw connectors directly from ports. The default connector segment type is **Orthogonal**, providing structured, right-angled connections suitable for flowcharts and organizational diagrams.
 
 This feature is particularly useful in scenarios where users need to create connections interactively, such as building workflow diagrams or network topologies.
 
@@ -111,10 +111,10 @@ Port interactions trigger specific events that enable custom handling and applic
 
 | Event| Description| Use Cases |
 |----|----|----|
-| [`Click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iClickEventArgs/)   | Triggers when a port is clicked | Custom selection logic, context menus |
-| [`Element Draw`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iElementDrawEventArgs/)  | Triggers when drawing a connector from a port | Validation, custom connector properties |
-| [`Position Change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDraggingEventArgs/)  | Triggers when a port is dragged | Position validation, layout updates |
-| [`Connection Change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iConnectionChangeEventArgs/) | Triggers when a connector connects or disconnects from a port | Relationship tracking, data validation |
+| [`Click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iClickEventArgs)   | Triggers when a port is clicked | Custom selection logic, context menus |
+| [`Element Draw`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iElementDrawEventArgs)  | Triggers when drawing a connector from a port | Validation, custom connector properties |
+| [`Position Change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDraggingEventArgs)  | Triggers when a port is dragged | Position validation, layout updates |
+| [`Connection Change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iConnectionChangeEventArgs) | Triggers when a connector connects or disconnects from a port | Relationship tracking, data validation |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -36,9 +36,9 @@ The shape of a Bezier connector can be interactively modified by dragging its se
 
 The curvature of a Bezier segment is determined by its control points. There are two primary ways to define the position of these control points:
 
-*   **Fixed Positioning (`point1`, `point2`)**: When you use the [`point1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment/#point1) and [`point2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment/#point2) properties, the control points are set at fixed coordinates. These points remain stationary even when the connector's start or end points are moved. This is useful for creating static, predictable curves.
+*   **Fixed Positioning (`point1`, `point2`)**: When you use the [`point1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#point1) and [`point2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#point2) properties, the control points are set at fixed coordinates. These points remain stationary even when the connector's start or end points are moved. This is useful for creating static, predictable curves.
 
-*   **Dynamic Positioning (`vector1`, `vector2`)**: When you use the [`vector1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment/#vector1) and [`vector2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment/#vector2) properties, the control points are defined by a vector (angle and distance) from the connector's endpoints. This approach allows the curve to adapt dynamically while maintaining its original shape relative to the endpoints.
+*   **Dynamic Positioning (`vector1`, `vector2`)**: When you use the [`vector1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#vector1) and [`vector2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#vector2) properties, the control points are defined by a vector (angle and distance) from the connector's endpoints. This approach allows the curve to adapt dynamically while maintaining its original shape relative to the endpoints.
 
 #### Using Fixed Points
 
@@ -124,7 +124,7 @@ When `allowSegmentReset` is `false`, the custom positions of the control points 
 
 The interactive thumbs used to edit Bezier segments have a default size of 10x10 pixels. This size can be customized either globally for all connectors or on a per-connector basis using the `segmentThumbSize` property.
 
-To change the thumb size for all Bezier connectors in the diagram, set the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentthumbsize) property in the diagram's model.
+To change the thumb size for all Bezier connectors in the diagram, set the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#segmentthumbsize) property in the diagram's model.
 
 To customize the thumb size for a specific connector, you must first disable the `InheritSegmentThumbSize` constraint and then set the connector's individual `segmentThumbSize` property.
 

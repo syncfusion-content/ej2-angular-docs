@@ -14,7 +14,7 @@ Bezier connectors in diagrams provide smooth, curved connections between nodes w
 
 ## Interactive Editing of Bezier Segments
 
-The intermediate control points between adjacent bezier segments can be edited interactively during runtime based on the [`segmentEditOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegmentEditOrientation/) property within the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel/) configuration. This property determines the directional constraints applied when users drag the intermediate points to reshape the connector.
+The intermediate control points between adjacent bezier segments can be edited interactively during runtime based on the [`segmentEditOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegmentEditOrientation) property within the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel) configuration. This property determines the directional constraints applied when users drag the intermediate points to reshape the connector.
 
 ### Segment Edit Orientation Options
 
@@ -27,7 +27,7 @@ The following table describes the available orientation modes and their interact
 
 ## Implementation Example
 
-The following code demonstrates how to configure bezier connectors with interactive segment editing using both the [`smoothness`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSmoothness/) property for curve refinement and the `segmentEditOrientation` property for interaction control:
+The following code demonstrates how to configure bezier connectors with interactive segment editing using both the [`smoothness`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSmoothness) property for curve refinement and the `segmentEditOrientation` property for interaction control:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

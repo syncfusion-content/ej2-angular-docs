@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 A UML sequence diagram is a type of interaction diagram that visualizes how objects communicate with each other over time. These diagrams show the sequence of messages exchanged between participants, making them essential for understanding system interactions, API workflows, and process flows.
 
-The Syncfusion® Angular Diagram component provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel/). This specialized model enables the creation of sequence diagrams with proper UML notation and automated layout capabilities.
+The Syncfusion® Angular Diagram component provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel). This specialized model enables the creation of sequence diagrams with proper UML notation and automated layout capabilities.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ A sequence diagram comprises several essential elements that work together to re
 
 ### Participants
 
-[UmlSequenceParticipantModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceParticipantModel/) represents the entities that participate in the interaction sequence. Participants appear as rectangular boxes at the top of the diagram, with lifelines extending vertically downward to show their existence throughout the interaction timeline.
+[UmlSequenceParticipantModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceParticipantModel) represents the entities that participate in the interaction sequence. Participants appear as rectangular boxes at the top of the diagram, with lifelines extending vertically downward to show their existence throughout the interaction timeline.
 
 #### Participant Types
 
@@ -71,7 +71,7 @@ The following code example demonstrates how to create different types of partici
 
 ### Messages
 
-[UmlSequenceMessageModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceMessageModel/) represents communication between participants. Messages are displayed as arrows connecting lifelines and indicate the flow of information or requests between system components.
+[UmlSequenceMessageModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceMessageModel) represents communication between participants. Messages are displayed as arrows connecting lifelines and indicate the flow of information or requests between system components.
 
 #### Message Types and Usage
 
@@ -114,7 +114,7 @@ The following example shows how to create different types of messages between pa
 
 ### Activation Boxes
 
-[UmlSequenceActivationBoxModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceActivationBoxModel/) represents periods when a participant is actively processing or executing operations. Activation boxes appear as thin rectangles overlaid on participant lifelines, indicating the duration of active processing between specific messages.
+[UmlSequenceActivationBoxModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceActivationBoxModel) represents periods when a participant is actively processing or executing operations. Activation boxes appear as thin rectangles overlaid on participant lifelines, indicating the duration of active processing between specific messages.
 
 #### UmlSequenceActivationBoxModel Properties
 
@@ -142,7 +142,7 @@ The following example demonstrates how to create activation boxes that span spec
 
 ### Fragments
 
-[UmlSequenceFragmentModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceFragmentModel/) represents logical groupings of messages based on specific conditions or control structures. Fragments appear as rectangular enclosures that visually organize conditional logic, loops, and alternative execution paths within sequence diagrams.
+[UmlSequenceFragmentModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceFragmentModel) represents logical groupings of messages based on specific conditions or control structures. Fragments appear as rectangular enclosures that visually organize conditional logic, loops, and alternative execution paths within sequence diagrams.
 
 #### Fragment Applications
 
@@ -155,7 +155,7 @@ Fragments are essential for modeling:
 
 #### Fragment Types
 
-The [UmlSequenceFragmentType](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceFragmentType/) enum defines the following fragment types:
+The [UmlSequenceFragmentType](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceFragmentType) enum defines the following fragment types:
 
 | Fragment Type  | Description  | Use Cases | Example  |  
 |---------------|-------------|-----------|--------|  
@@ -199,7 +199,7 @@ The following example illustrates how to create fragments with different conditi
 
 ### Adjusting Participant Spacing
 
-The [spaceBetweenParticipants](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel/#spaceBetweenParticipants) property controls the horizontal spacing between participants in the sequence diagram. Adjust this value to accommodate longer message labels or improve diagram readability.
+The [spaceBetweenParticipants](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel#spaceBetweenParticipants) property controls the horizontal spacing between participants in the sequence diagram. Adjust this value to accommodate longer message labels or improve diagram readability.
 
 ```ts
 // Define the UML Sequence Diagram model with custom spacing

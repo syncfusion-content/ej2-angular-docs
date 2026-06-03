@@ -14,7 +14,7 @@ Connectors are objects used to create links between two points, nodes, or ports 
 
 ## Create Connector
 
-Connectors can be created by defining the source and target points. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#properties). The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel/#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization.
+Connectors can be created by defining the source and target points. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#properties). The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization.
 
 ```typescript
 <e-connectors>
@@ -29,7 +29,7 @@ To create and customize the connectors easily in the Angular Diagram component, 
 
 ## Add connectors through connectors collection
 
-The [`sourcePoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcepoint) and [`targetPoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetpoint) properties of connector allow you to define the end points of a connector.
+The [`sourcePoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourcepoint) and [`targetPoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetpoint) properties of connector allow you to define the end points of a connector.
 
 The following code example illustrates how to add a connector through connector collection.
 
@@ -47,7 +47,7 @@ The following code example illustrates how to add a connector through connector 
 
 ## Add/Remove connector at runtime
 
-Connectors can be added at runtime by using the public method [`add`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#add) and can be removed at runtime by using the public method [`remove`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#remove). These methods are useful when you need to dynamically modify diagram structure based on user interactions or data changes.
+Connectors can be added at runtime by using the public method [`add`](https://ej2.syncfusion.com/angular/documentation/api/diagram#add) and can be removed at runtime by using the public method [`remove`](https://ej2.syncfusion.com/angular/documentation/api/diagram#remove). These methods are useful when you need to dynamically modify diagram structure based on user interactions or data changes.
 
 The following code example illustrates how to add a connector at runtime.
 
@@ -65,7 +65,7 @@ The following code example illustrates how to add a connector at runtime.
 
 ## Add collection of connectors at runtime
 
-The collection of connectors can be dynamically added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method. Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs/) event will be triggered.
+The collection of connectors can be dynamically added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addelements) method. Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs) event will be triggered.
 
 The following code illustrates how to add a collection of connectors at runtime.
 
@@ -103,7 +103,7 @@ The following code example illustrates how to add connectors to the palette.
 
 Connectors can be interactively drawn by clicking and dragging on the diagram surface. This feature enables users to create connections dynamically during diagram creation or editing.
 
-To draw a connector, you have to activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](https://ej2.syncfusion.com/documentation/api/diagram/#tool) property and you need to set the `connector` object by using the [`drawingObject`](https://ej2.syncfusion.com/documentation/api/diagram/#drawingobject) property. The following code example illustrates how to draw a connector at runtime.
+To draw a connector, you have to activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](https://ej2.syncfusion.com/documentation/api/diagram#tool) property and you need to set the `connector` object by using the [`drawingObject`](https://ej2.syncfusion.com/documentation/api/diagram#drawingobject) property. The following code example illustrates how to draw a connector at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,7 +117,7 @@ To draw a connector, you have to activate the drawing tool by setting `DrawOnce`
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectordrawtool-cs1" %}
 
-For more information about drawing connectors, refer to [`Draw Connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject).
+For more information about drawing connectors, refer to [`Draw Connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram#drawingobject).
 
 ## Update Connector at Runtime
 
@@ -159,7 +159,7 @@ The following code example illustrates how to clone a connector.
 
 The connector defaults functionality allows you to define default properties for all connectors in the diagram. This is triggered when the diagram is initialized, providing an opportunity to customize connector properties globally rather than setting them individually for each connector.
 
-The following code example explains how to customize connector defaults using [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#getconnectordefaults).
+The following code example explains how to customize connector defaults using [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram#getconnectordefaults).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,7 +177,7 @@ The following code example explains how to customize connector defaults using [`
 
 ### Connection with nodes
 
-The [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceid) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetid) properties allow you to define the nodes to be connected. When these properties are set, the connector will automatically attach to the specified nodes and move with them when the nodes are repositioned.
+The [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceid) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetid) properties allow you to define the nodes to be connected. When these properties are set, the connector will automatically attach to the specified nodes and move with them when the nodes are repositioned.
 
 The following code example illustrates how to connect two nodes.
 
@@ -193,7 +193,7 @@ The following code example illustrates how to connect two nodes.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs1" %}
 
-When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints/) from Default, the node accepts only an outgoing connection to dock in it. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints/) from Default, the node accepts only an incoming connection to dock in it.
+When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an outgoing connection to dock in it. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an incoming connection to dock in it.
 
 When you remove both InConnect and OutConnect NodeConstraints from Default, the node restricts connectors from establishing connections to it.
 
@@ -225,7 +225,7 @@ export class AppComponent {
 
 ### Connections with ports
 
-The [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceportid) and [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetportid) properties allow you to create connections between specific points of source and target nodes. This provides more precise control over where connectors attach to nodes.
+The [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceportid) and [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetportid) properties allow you to create connections between specific points of source and target nodes. This provides more precise control over where connectors attach to nodes.
 
 The following code example illustrates how to create port to port connections.
 
@@ -255,7 +255,7 @@ The `sourcePortID` or `targetPortID` can be changed at runtime by modifying thes
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsportupdate-cs1" %}
 
-When you set PortConstraints to [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints/), the port accepts only an incoming connection to dock in it. Similarly, when you set PortConstraints to [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints/), the port accepts only an outgoing connection to dock in it.
+When you set PortConstraints to [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints), the port accepts only an incoming connection to dock in it. Similarly, when you set PortConstraints to [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints), the port accepts only an outgoing connection to dock in it.
 
 When you set PortConstraints to None, the port restricts connectors from establishing connections to it.
 
@@ -340,7 +340,7 @@ The following gif illustrates how the connector automatically re-routes the segm
 
 ![LineRouting GIF](../images/lineRouting.GIF.gif)
 
-In some situations, diagrams with automatic line routing enabled may need to exclude specific connectors from automatic routing. The auto routing feature can be disabled for specific connectors using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints) property of the connector as shown in the following code snippet.
+In some situations, diagrams with automatic line routing enabled may need to exclude specific connectors from automatic routing. The auto routing feature can be disabled for specific connectors using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#constraints) property of the connector as shown in the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

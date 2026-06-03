@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Overview
 
-[`BPMN Flows`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow/) are connecting lines that define relationships and information flow between BPMN elements in business process diagrams. These flows are essential for modeling how activities, events, and gateways interact within a process workflow.
+[`BPMN Flows`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow) are connecting lines that define relationships and information flow between BPMN elements in business process diagrams. These flows are essential for modeling how activities, events, and gateways interact within a process workflow.
 
 BPMN flows are categorized into three main types:
 
@@ -22,7 +22,7 @@ BPMN flows are categorized into three main types:
 
 ## Association flow
 
-[`BPMN Association`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow/) flows connect BPMN flow objects with their corresponding text annotations or artifacts. Association flows are represented as dotted lines with open arrowheads and do not affect the sequence or execution of the process.
+[`BPMN Association`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow) flows connect BPMN flow objects with their corresponding text annotations or artifacts. Association flows are represented as dotted lines with open arrowheads and do not affect the sequence or execution of the process.
 
 The association flow supports three types:
 
@@ -56,7 +56,7 @@ N> The default value for the property `association` is **default**.
 
 ## Sequence flow
 
-A [`Sequence`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow/) flow defines the execution order of activities, events, and gateways within a BPMN process. Sequence flows are represented by solid lines with closed arrowheads and control the flow of the process from one element to the next.
+A [`Sequence`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow) flow defines the execution order of activities, events, and gateways within a BPMN process. Sequence flows are represented by solid lines with closed arrowheads and control the flow of the process from one element to the next.
 
 The sequence flow supports three types:
 
@@ -90,7 +90,7 @@ N> The default value for the property `sequence` is **normal**.
 
 ## Message flow
 
-A [`Message`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow/) flow represents the exchange of messages between different participants or pools in a BPMN process. Message flows are depicted as dashed lines and show communication that crosses organizational boundaries.
+A [`Message`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow) flow represents the exchange of messages between different participants or pools in a BPMN process. Message flows are depicted as dashed lines and show communication that crosses organizational boundaries.
 
 The message flow supports three types:
 

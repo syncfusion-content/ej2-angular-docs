@@ -84,7 +84,6 @@ export class AppComponent {
 
   onPrintClick() {
     const printOptions: IPrintOptions = {};
-    printOptions.mode = 'Data';
     printOptions.region = 'PageSettings';
     printOptions.multiplePage = true;
     printOptions.margin = { left: 0, top: 0, bottom: 0, right: 0 };

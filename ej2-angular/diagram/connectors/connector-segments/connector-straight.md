@@ -14,7 +14,7 @@ Straight connector segments create direct linear connections between two points 
 
 ## Creating straight segments
 
-To create a straight line connector, specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/segments/) of the segment as **Straight** and add it to the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#segments) collection. You must also specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type) property for the connector itself. The following code example demonstrates how to create a basic straight segment connector.
+To create a straight line connector, specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/segments) of the segment as **Straight** and add it to the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#segments) collection. You must also specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#type) property for the connector itself. The following code example demonstrates how to create a basic straight segment connector.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ To create a straight line connector, specify the [`type`](https://ej2.syncfusion
 
 ## Defining segment end points
 
-The [`point`](https://ej2.syncfusion.com/angular/documentation/api/diagram/straightSegment/#point) property of a straight segment allows you to define its end point coordinates. This provides precise control over where each segment terminates, enabling complex connector paths composed of multiple straight segments. The following code example illustrates how to define the end point of a straight segment.
+The [`point`](https://ej2.syncfusion.com/angular/documentation/api/diagram/straightSegment#point) property of a straight segment allows you to define its end point coordinates. This provides precise control over where each segment terminates, enabling complex connector paths composed of multiple straight segments. The following code example illustrates how to define the end point of a straight segment.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,7 +58,7 @@ Straight segments can be removed by clicking the segment end point while holding
 
 ### Programmatic editing
 
-You can also add or remove segments programmatically using the [`editSegment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#editsegment) method of the diagram component. This provides API-level control over connector segment manipulation.
+You can also add or remove segments programmatically using the [`editSegment`](https://ej2.syncfusion.com/angular/documentation/api/diagram#editsegment) method of the diagram component. This provides API-level control over connector segment manipulation.
 
 The following example demonstrates how to add segments to a straight connector programmatically.
 

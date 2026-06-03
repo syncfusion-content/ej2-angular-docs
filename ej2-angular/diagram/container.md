@@ -32,7 +32,7 @@ Container nodes require specific configuration to enable child element managemen
 
 ### Setting a Header
 
-Headers provide textual identification for containers and can be fully customized for appearance and behavior. The [header](https://ej2.syncfusion.com/angular/documentation/api/diagram/containerModel/#header) property accepts text content, while the header's [style](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel/#style) property controls visual formatting including fonts, colors, and alignment.
+Headers provide textual identification for containers and can be fully customized for appearance and behavior. The [header](https://ej2.syncfusion.com/angular/documentation/api/diagram/containerModel#header) property accepts text content, while the header's [style](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel#style) property controls visual formatting including fonts, colors, and alignment.
 
 The following example shows header configuration with custom styling:
 

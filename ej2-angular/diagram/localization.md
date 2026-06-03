@@ -14,7 +14,7 @@ The EJ2 Angular Diagram component supports localization functionality, allowing 
 
 ## Localize Diagram context menu
 
-To localize the diagram context menu, define the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#locale) property of the diagram with the preferred culture. The example below demonstrates localization using 'de-DE', the locale code for German as used in Germany.
+To localize the diagram context menu, define the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/diagram#locale) property of the diagram with the preferred culture. The example below demonstrates localization using 'de-DE', the locale code for German as used in Germany.
 
 ```typescript
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -89,9 +89,9 @@ The following code example demonstrates the complete locale settings for the con
 
 ## Localize Symbol palette
 
-Enable the search functionality in the symbol palette using the [`enableSearch`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#enablesearch) property. The search box supports localization to match the application's target language.
+Enable the search functionality in the symbol palette using the [`enableSearch`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel#enablesearch) property. The search box supports localization to match the application's target language.
 
-To localize the symbol palette search box, define the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#locale) property of the symbol palette with the preferred culture. The example below uses 'de-DE' for German localization.
+To localize the symbol palette search box, define the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel#locale) property of the symbol palette with the preferred culture. The example below uses 'de-DE' for German localization.
 
 The following code demonstrates symbol palette localization:
 

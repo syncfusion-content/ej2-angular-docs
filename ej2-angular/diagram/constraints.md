@@ -92,7 +92,7 @@ export class AppComponent {
 }
 ```
 
-For more information about diagram constraints, refer to [DiagramConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints/).
+For more information about diagram constraints, refer to [DiagramConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints).
 
 N> By default, the following constraints are enabled in the diagram:
 <br/>* Zoom
@@ -253,7 +253,7 @@ Refer sample below
   
 {% previewsample "page.domainurl/samples/diagram/constraints/constraints-cs1" %}
 
-For more information about node constraints, refer to [NodeConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints/).
+For more information about node constraints, refer to [NodeConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints).
 
 N>By default, the following constraints are enabled for nodes:
 <br/>* Select
@@ -442,7 +442,7 @@ Refer sample below
   
 {% previewsample "page.domainurl/samples/diagram/constraints/constraints-cs2" %}
 
-For more information about connector constraints, refer to [ConnectorConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints/).
+For more information about connector constraints, refer to [ConnectorConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints).
 
 N>By default, the following constraints are enabled for connectors:
 <br/>* Select
@@ -582,7 +582,7 @@ Refer sample below
   
 {% previewsample "page.domainurl/samples/diagram/constraints/constraints-cs3" %}
 
-For more information about port constraints, refer to [PortConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints/).
+For more information about port constraints, refer to [PortConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints).
 
 N> By default, the following constraints are enabled for ports:
 <br/>* InConnect
@@ -673,7 +673,7 @@ Refer sample below
   
 {% previewsample "page.domainurl/samples/diagram/constraints/constraints-cs4" %}
 
-For more details about annotation constraints, refer to [AnnotationConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationConstraints/#AnnotationConstraints/).
+For more details about annotation constraints, refer to [AnnotationConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationConstraints#AnnotationConstraints).
 
 ## Selector Constraints
 
@@ -766,7 +766,7 @@ Refer sample below
   
 {% previewsample "page.domainurl/samples/diagram/constraints/constraints-cs5" %}
 
-For more information about selector constraints, refer to [SelectorConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorConstraints/).
+For more information about selector constraints, refer to [SelectorConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorConstraints).
 
 N> By default, the following constraints are enabled for selected items:
 <br/>* Rotate
@@ -845,7 +845,7 @@ Refer sample below
   
 {% previewsample "page.domainurl/samples/diagram/constraints/constraints-cs6" %}
 
-For more information about snap constraints, refer to [SnapConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapConstraints/).
+For more information about snap constraints, refer to [SnapConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapConstraints).
 
 N> By default, the following constraints are enabled for snap functionality:
 <br/>* ShowLines
@@ -901,7 +901,7 @@ Refer sample below
   
 {% previewsample "page.domainurl/samples/diagram/constraints/constraints-cs7" %}
 
-For more information about boundary constraints, refer to [BoundaryConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/boundaryConstraints/).
+For more information about boundary constraints, refer to [BoundaryConstraints](https://ej2.syncfusion.com/angular/documentation/api/diagram/boundaryConstraints).
 
 ## Inherit Behaviors
 

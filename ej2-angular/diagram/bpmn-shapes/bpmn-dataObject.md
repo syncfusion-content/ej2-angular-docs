@@ -16,7 +16,7 @@ A BPMN data object represents information that flows through a business process.
 
 ## Creating Data Objects
 
-To create a BPMN data object in the Angular Diagram component, define a node with its `shape.type` property set to **Bpmn** and its `shape.shape` property set to **DataObject**. The [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnDataObject/#type) property determines whether the data object represents input data, output data, or a collection of data items.
+To create a BPMN data object in the Angular Diagram component, define a node with its `shape.type` property set to **Bpmn** and its `shape.shape` property set to **DataObject**. The [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnDataObject#type) property determines whether the data object represents input data, output data, or a collection of data items.
 
 ### Basic Data Object Configuration
 

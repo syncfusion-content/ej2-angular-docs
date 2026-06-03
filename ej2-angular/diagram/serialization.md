@@ -28,7 +28,7 @@ To save and load the diagram in Angular, refer to the below video link.
 
 ### Basic Save Operation
 
-The [`saveDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#savediagram) method serializes the entire diagram configuration into a JSON string. This method captures all diagram elements, their properties, and the current state.
+The [`saveDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#savediagram) method serializes the entire diagram configuration into a JSON string. This method captures all diagram elements, their properties, and the current state.
 
 ```typescript
 //returns serialized string of the Diagram
@@ -55,7 +55,7 @@ The diagram can also be saved as raster or vector image files. For more informat
 
 ### Basic Load Operation
 
-The [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#loaddiagram) method recreates the diagram from serialized JSON data. This method accepts the previously saved JSON string as a parameter.
+The [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaddiagram) method recreates the diagram from serialized JSON data. This method accepts the previously saved JSON string as a parameter.
 
 ```typescript
 export class AppComponent {
@@ -83,7 +83,7 @@ N> Before loading a new diagram, the existing diagram content is automatically c
 
 ### Handling Load Completion
 
-The [`loaded`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#loaded) event triggers when all diagram elements finish loading through the [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#loaddiagram) method. Use this event to perform post-load customizations or validations.
+The [`loaded`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaded) event triggers when all diagram elements finish loading through the [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaddiagram) method. Use this event to perform post-load customizations or validations.
 
 ```typescript
 
@@ -111,7 +111,7 @@ The loaded event provides the following arguments:
 
 ### Preventing Default Values
 
-The [`preventDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/serializationSettingsModel/#preventdefaults) property within [`serializationSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/serializationSettingsModel/) reduces the size of serialized data by excluding default properties. This optimization improves performance when handling large diagrams or frequent save operations.
+The [`preventDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/serializationSettingsModel#preventdefaults) property within [`serializationSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/serializationSettingsModel) reduces the size of serialized data by excluding default properties. This optimization improves performance when handling large diagrams or frequent save operations.
 
 When enabled, only explicitly set properties are included in the JSON output, significantly reducing file size and improving load times.
 
@@ -158,7 +158,7 @@ The uploader requires:
 
 ### Overview
 
-The [`Diagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram/) component supports importing and exporting diagrams using Mermaid syntax. Mermaid is a markdown-inspired syntax for creating diagrams programmatically, enabling easy diagram creation and sharing across different platforms.
+The [`Diagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram) component supports importing and exporting diagrams using Mermaid syntax. Mermaid is a markdown-inspired syntax for creating diagrams programmatically, enabling easy diagram creation and sharing across different platforms.
 
 This functionality supports:
 - Mind maps
@@ -167,7 +167,7 @@ This functionality supports:
 
 ### Saving Diagrams as Mermaid Syntax
 
-The [`saveDiagramAsMermaid`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#savediagramasmermaid) method converts compatible diagrams into Mermaid syntax format. This method works specifically with Flowchart and Mind map layouts.
+The [`saveDiagramAsMermaid`](https://ej2.syncfusion.com/angular/documentation/api/diagram#savediagramasmermaid) method converts compatible diagrams into Mermaid syntax format. This method works specifically with Flowchart and Mind map layouts.
 
  ```typescript
 //returns the serialized Mermaid string of the Diagram
@@ -177,7 +177,7 @@ data = this.diagram.saveDiagramAsMermaid();
 
 ### Loading Diagrams from Mermaid Syntax
 
-The [`loadDiagramFromMermaid`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#loaddiagramfrommermaid) method creates diagrams from Mermaid syntax data, automatically generating the appropriate layout and styling.
+The [`loadDiagramFromMermaid`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaddiagramfrommermaid) method creates diagrams from Mermaid syntax data, automatically generating the appropriate layout and styling.
 
 #### Loading Flowchart Layout
 
