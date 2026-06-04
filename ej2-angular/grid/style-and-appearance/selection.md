@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Selection Customization in Angular Grid Component
 
-The appearance of selection in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the row selection background, cell selection background, and column selection background.
+The appearance of selection in the Angular Data Grid component can be customized using CSS. Here are examples for customizing the row selection background, cell selection background, and column selection background.
 
 ## Customizing the row selection background
 

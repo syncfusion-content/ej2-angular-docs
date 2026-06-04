@@ -28,7 +28,7 @@ The following example demonstrates rendering the custom toolbar `toolbarTemplate
 
 ## Render image with text in custom toolbar
 
-Rendering an image with text in custom toolbar in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables easy display of an image along with text in the toolbar of the grid. This feature enhances the visual presentation of the grid, providing additional context and improving the overall experience.
+Rendering an image with text in custom toolbar in Angular Data Grid enables easy display of an image along with text in the toolbar of the grid. This feature enhances the visual presentation of the grid, providing additional context and improving the overall experience.
 
 Use `ng-template` along with the `DomSanitizer` service and the `bypassSecurityTrustResourceUrl` method to securely present an image as a base64-encoded string.
 

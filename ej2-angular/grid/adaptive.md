@@ -34,7 +34,7 @@ The following sample demonstrates to enable adaptive dialogs in the Syncfusion A
 
 ## Vertical row rendering
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid introduces vertical row rendering, which displays row elements in a vertical order. This presentation enhances data visibility in scenarios where a vertical layout is preferable. Set the [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property to `Vertical`.
+The Angular Data Grid introduces vertical row rendering, which displays row elements in a vertical order. This presentation enhances data visibility in scenarios where a vertical layout is preferable. Set the [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property to `Vertical`.
 
 > The default row rendering mode is `Horizontal`.
 

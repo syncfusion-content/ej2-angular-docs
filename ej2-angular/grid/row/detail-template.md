@@ -273,7 +273,7 @@ export class AppComponent implements OnInit {
 
 ## Customize detail template icon
 
-The detail template icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid expands or collapses the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. To customize this icon, override the following CSS styles:
+The detail template icon in the Angular Data Grid expands or collapses the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. To customize this icon, override the following CSS styles:
 
 
 **Default Icon CSS Classes:**

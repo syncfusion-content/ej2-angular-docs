@@ -39,7 +39,7 @@ Syncfusion's Theme Studio tool allows creation of custom themes for all controls
 
 ## Customize the Grid root element
 
-The `.e-grid` class is used to style the root element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
+The `.e-grid` class is used to style the root element of the Angular Grid component.
 
 ```css
 .e-grid {

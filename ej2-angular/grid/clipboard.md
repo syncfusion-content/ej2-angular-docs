@@ -33,7 +33,7 @@ Examples below show grid configuration for clipboard operations. Configure the g
 
 ## Copy to clipboard by external buttons
 
-Copying data to the clipboard using external buttons in the Syncfusion Angular Grid enables programmatic triggering of copy operations, enhancing usability, particularly for those unfamiliar with keyboard shortcuts.
+Copying data to the clipboard using external buttons in the Angular Data Grid enables programmatic triggering of copy operations, enhancing usability, particularly for those unfamiliar with keyboard shortcuts.
 
 To copy selected rows or cells data to the clipboard using external buttons, utilize the [copy](https://ej2.syncfusion.com/angular/documentation/api/grid/clipboard#copy) method available in the grid component. The `copy` method accepts an optional parameter `withHeader` (boolean) to include column headers in the copied data. This is demonstrated in the following example:
 
@@ -51,7 +51,7 @@ To copy selected rows or cells data to the clipboard using external buttons, uti
 
 ## AutoFill
 
-The AutoFill feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid copies values from a selected cell range into target cells by dragging the AutoFill handle. This provides a fast method for populating repetitive or sequential data.
+The AutoFill feature in the Angular Data Grid copies values from a selected cell range into target cells by dragging the AutoFill handle. This provides a fast method for populating repetitive or sequential data.
 
 **AutoFill to copy data:**
 
@@ -90,7 +90,7 @@ The following example demonstrates to enable the autofill feature in the grid:
 
 ## Paste
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports pasting clipboard content into selected cells for quick data entry and updates. Standard shortcuts allow copying and pasting between ranges within the grid or between the grid and external applications.
+The Angular Data Grid supports pasting clipboard content into selected cells for quick data entry and updates. Standard shortcuts allow copying and pasting between ranges within the grid or between the grid and external applications.
 
 Follow these steps to use the paste feature in the grid:
 

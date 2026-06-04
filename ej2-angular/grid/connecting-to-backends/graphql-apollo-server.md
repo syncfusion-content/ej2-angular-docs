@@ -510,7 +510,7 @@ cd GridClient
 ```
 This creates an Angular application named **GridClient**, which serves as the base for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and displaying data retrieved from the server.
 
-The integration process begins by installing the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid packages before establishing the GraphQL connection.
+The integration process begins by installing the required Angular Data Grid packages before establishing the GraphQL connection.
 
 ### Step 1: Adding Syncfusion packages
 

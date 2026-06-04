@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Cell Customization and Styling in Angular Grid Component
 
-A cell in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component represents the smallest unit of data within the grid. Each cell corresponds to the intersection of a row and a column, and it is responsible for displaying the value associated with that specific row-column combination. Cells can display plain text, formatted values, or fully customized content, making them highly flexible for presenting structured data in a grid layout. to create interactive and visually appealing data presentations.
+A cell in the Angular Data Grid component represents the smallest unit of data within the grid. Each cell corresponds to the intersection of a row and a column, and it is responsible for displaying the value associated with that specific row-column combination. Cells can display plain text, formatted values, or fully customized content, making them highly flexible for presenting structured data in a grid layout. to create interactive and visually appealing data presentations.
 
 ## Displaying the HTML content
 

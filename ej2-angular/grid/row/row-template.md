@@ -81,7 +81,7 @@ The following example presents employee information with the employee "Photo" in
 
 ## Row template with formatting
 
-By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property to format the values displayed in each column. When the [rowtemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#rowtemplate) feature is used, customized formatting can be applied directly within the template.
+By default, Angular Data Grid provides the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property to format the values displayed in each column. When the [rowtemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#rowtemplate) feature is used, customized formatting can be applied directly within the template.
 
 Implement custom formatting by defining component methods that handle formatting logic. These methods can be invoked directly within the template to format values according to specific requirements.
 
@@ -178,7 +178,7 @@ export interface DateFormat extends Window {
   
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs10" %}
 
-> When using the `rowTemplate` feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, keep in mind that any formatting applied to columns using the `format` property will not work inside the template.
+> When using the `rowTemplate` feature in Angular Data Grid, keep in mind that any formatting applied to columns using the `format` property will not work inside the template.
 
 
 ## Render Syncfusion<sup style="font-size:70%">&reg;</sup> controls in row template
@@ -271,7 +271,7 @@ export class AppComponent {
 
 ## Render Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Chart in row template
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides flexibility to include custom controls such as Chart within the rows of the Grid. This feature enhances Grid interactivity by displaying graphical representations of data instead of plain text.
+The Angular Data Grid component provides flexibility to include custom controls such as Chart within the rows of the Grid. This feature enhances Grid interactivity by displaying graphical representations of data instead of plain text.
 
 Chart integration requires proper module imports and data preparation for each chart instance. The [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property accepts chart components with appropriate data binding and configuration.
 

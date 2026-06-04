@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Validation in Angular Grid Component
 
-Data validation ensures that information entered or modified in the grid follows specific validation rules, preventing errors and maintaining accuracy. The Angular Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in validation support to make this process easy and effective.
+Data validation ensures that information entered or modified in the grid follows specific validation rules, preventing errors and maintaining accuracy. The Angular Grid component in Syncfusion provides built-in validation support to make this process easy and effective.
 
 > For basic grid editing setup and configuration, refer to the [Editing Feature Setup](../editing/edit.md#set-up-editing) section.
 

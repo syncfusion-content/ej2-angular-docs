@@ -78,7 +78,7 @@ cd syncfusion-angular-app
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid packages
 
-To install the Grid component, use the following command:
+To install the Angular Data Grid component, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save

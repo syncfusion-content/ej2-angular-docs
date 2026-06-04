@@ -148,7 +148,7 @@ In the below demo, `DropDownList` is rendered with custom data source for the "S
 
 ### Enable filtering in DropDownList editor
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides filtering for the `DropDownList` within the edit form. This feature enables selection of options from a predefined list and easier search for specific items using the built-in filtering feature.  
+The Angular Data Grid component provides filtering for the `DropDownList` within the edit form. This feature enables selection of options from a predefined list and easier search for specific items using the built-in filtering feature.  
 
 Enable filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) property to `true` within the edit params. This will enable the filtering feature in the `DropDownList`.
 
@@ -274,7 +274,7 @@ Example with dynamic min date:
 
 ## Accessing editor component instances
 
-Accessing editor components in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables seamless interaction with editor instances associated with cells during editing or adding actions. This feature is especially valuable when performing custom actions, retrieving data from the editor, or manipulating its properties during editing or adding operations in the grid.
+Accessing editor components in the Angular Data Grid enables seamless interaction with editor instances associated with cells during editing or adding actions. This feature is especially valuable when performing custom actions, retrieving data from the editor, or manipulating its properties during editing or adding operations in the grid.
 
 Access the component instance from the component element using the `ej2_instances` property. This property provides access to the instance of the editor component associated with a cell.
 
@@ -300,7 +300,7 @@ Render custom editors for grid columns using the [editTemplate](https://ej2.sync
 
 ### Render textArea in the edit form 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows rendering a `textArea` within the Grid's edit form for a specific column. This feature is especially valuable when there is a need to edit and display multi-line text content, providing an efficient way to manage extensive text data within the Grid's columns.
+The Angular Data Grid allows rendering a `textArea` within the Grid's edit form for a specific column. This feature is especially valuable when there is a need to edit and display multi-line text content, providing an efficient way to manage extensive text data within the Grid's columns.
 
 To render a textArea in the edit form, it is necessary to define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template that is used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
@@ -338,7 +338,7 @@ Override the default Enter key behavior in multiline textboxes by using the `sto
 
 ### Render AutoComplete in the edit form
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows rendering an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component within the grid's edit form for a specific column. This feature is especially valuable when there is a need to provide a dropdown like auto suggestion and input assistance for data entry in the grid's columns.
+The Angular Data Grid allows rendering an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component within the grid's edit form for a specific column. This feature is especially valuable when there is a need to provide a dropdown like auto suggestion and input assistance for data entry in the grid's columns.
 
 To render an `AutoComplete` component in the edit form, it is necessary to define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
@@ -360,7 +360,7 @@ The following example demonstrates to render an `AutoComplete` component in the 
 
 ### Render MaskedTextBox in the edit form
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows rendering an [MaskedTextBox](https://ej2.syncfusion.com/angular/documentation/maskedtextbox/getting-started) component within the grid's edit form for a specific column. This feature is especially useful when there is a need to provide masked input fields that require a specific format, such as phone numbers or postal codes.
+The Angular Data Grid allows rendering an [MaskedTextBox](https://ej2.syncfusion.com/angular/documentation/maskedtextbox/getting-started) component within the grid's edit form for a specific column. This feature is especially useful when there is a need to provide masked input fields that require a specific format, such as phone numbers or postal codes.
 
 To render a MaskedTextBox component in the edit form, it is necessary to define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
@@ -380,7 +380,7 @@ Here's an example to render a MaskedTextBox component in the "Customer Number" c
 
 ### Render DropDownList component in edit form 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows rendering a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component within the Grid's edit form for a specific column. This feature is valuable when there is a need to provide a convenient way to select options from a predefined list while editing data in the grid's edit form.
+The Angular Data Grid allows rendering a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component within the Grid's edit form for a specific column. This feature is valuable when there is a need to provide a convenient way to select options from a predefined list while editing data in the grid's edit form.
 
 To render a DropDownList component in the edit form, it is necessary to define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
@@ -400,7 +400,7 @@ The following example demonstrates to render a `DropDownList` component in the "
 
 ### Render images in the DropDownList editor component using the item template 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows rendering images in the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/templates#item-template) editor component. This feature is valuable when there is a need to display images for each item in the dropdown list of a particular column, enhancing the visual representation of the data.
+The Angular Data Grid allows rendering images in the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/templates#item-template) editor component. This feature is valuable when there is a need to display images for each item in the dropdown list of a particular column, enhancing the visual representation of the data.
 
 To render a `DropDownList` in the edit form, it is necessary to define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template that is used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
@@ -510,7 +510,7 @@ export class AppComponent {
 
 ### Render Multiple columns in DropDownList component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports rendering a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component within the Grid's edit form for a specific column. This feature is useful for displaying detailed information for each item in the dropdown list during column editing.
+The Angular Data Grid supports rendering a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component within the Grid's edit form for a specific column. This feature is useful for displaying detailed information for each item in the dropdown list during column editing.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -626,7 +626,7 @@ export class AppComponent implements OnInit {
 
 ### Render ComboBox component in edit form
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports rendering a [ComboBox](https://helpstaging.syncfusion.com/ej2-angular/combo-box/getting-started) component within the Grid's edit form for a specific column. This feature is useful for providing a drop-down selection with auto-suggestions for data entry.
+The Angular Data Grid supports rendering a [ComboBox](https://helpstaging.syncfusion.com/ej2-angular/combo-box/getting-started) component within the Grid's edit form for a specific column. This feature is useful for providing a drop-down selection with auto-suggestions for data entry.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -646,7 +646,7 @@ The following example demonstrates to render a `ComboBox` component in the "Ship
 
 ### Render TimePicker component in edit form
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports rendering a [TimePicker](https://ej2.syncfusion.com/angular/documentation/timepicker/getting-started) component within the grid's edit form for a specific column. This feature is useful for providing a time input, such as appointment times or event schedules, for editing in the grid.
+The Angular Data Grid supports rendering a [TimePicker](https://ej2.syncfusion.com/angular/documentation/timepicker/getting-started) component within the grid's edit form for a specific column. This feature is useful for providing a time input, such as appointment times or event schedules, for editing in the grid.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -666,7 +666,7 @@ The following example demonstrates to render a `TimePicker` component in the "Or
 
 ### Render MultiSelect component in edit form
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports rendering a [MultiSelect](https://ej2.syncfusion.com/angular/documentation/multi-select/getting-started) component within the Grid's edit form, enabling selection of multiple values from a dropdown list when editing a specific column. This feature is useful when multiple selections are required for a column.
+The Angular Data Grid supports rendering a [MultiSelect](https://ej2.syncfusion.com/angular/documentation/multi-select/getting-started) component within the Grid's edit form, enabling selection of multiple values from a dropdown list when editing a specific column. This feature is useful when multiple selections are required for a column.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -686,7 +686,7 @@ The following example demonstrates to render a `MultiSelect` component in the "S
 
 ### Render RichTextEditor component in edit form
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows rendering the [RichTextEditor](../../rich-text-editor/getting-started) component within the edit form. This enables formatting and styling text content using bold, italic, underline, bullet lists, numbered lists, and other formatting options.
+The Angular Data Grid allows rendering the [RichTextEditor](../../rich-text-editor/getting-started) component within the edit form. This enables formatting and styling text content using bold, italic, underline, bullet lists, numbered lists, and other formatting options.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -708,7 +708,7 @@ The following example demonstrates to render a `RichTextEditor` component in the
 
 ### Render Upload component in edit form  
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows rendering an [Uploader](../../uploader/getting-started) component within the grid's edit form. This enables uploading and managing files or images in a specific column during data editing.
+The Angular Data Grid allows rendering an [Uploader](../../uploader/getting-started) component within the grid's edit form. This enables uploading and managing files or images in a specific column during data editing.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -834,7 +834,7 @@ export interface columnDataType{
 
 ## Rendering custom cell editors using external functions
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides powerful capabilities for rendering custom cell editors, enabling the addition of specialized custom components to specific columns. This feature is essential for editing cell values using custom input elements or controls tailored to specific data types or workflows.
+The Angular Data Grid provides powerful capabilities for rendering custom cell editors, enabling the addition of specialized custom components to specific columns. This feature is essential for editing cell values using custom input elements or controls tailored to specific data types or workflows.
 
 To utilize the custom cell editor template feature, implement these four essential functions:
 

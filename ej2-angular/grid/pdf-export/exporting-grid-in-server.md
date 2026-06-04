@@ -288,7 +288,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 ## Passing additional parameters to the server during export
 
-Passing additional parameters to the server when exporting data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides flexibility to include extra information or customize the export process based on specific requirements.
+Passing additional parameters to the server when exporting data in the Angular Grid provides flexibility to include extra information or customize the export process based on specific requirements.
 
 This is achieved by utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid#query) property and the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event. Within the `query` property, invoke the `addParams` method to add parameters to the request.
 
