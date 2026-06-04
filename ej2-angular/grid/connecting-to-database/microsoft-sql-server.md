@@ -45,7 +45,7 @@ Ensure the following software and packages are installed before proceeding:
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Setting up and configuring a Microsoft SQL Server–backed ASP.NET Core Web API using ADO.NET SqlClient | [View](#setting-up-the-sql-server-environment-for-sqlclient) |
-| 2 | Integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
+| 2 | Integrating the Angular Data Grid with the ASP.NET Core Web API using DataManager and CustomAdaptor | [View](#integrating-syncfusion-angular-grid) |
 | 3 | Implementing server‑side data operations including paging, searching, filtering, and sorting | [View](#step-6-implement-paging-feature) |
 | 4 | Performing full CRUD and batch operations from the Angular Grid against the SQL Server database | [View](#step-10-perform-crud-operations) |
 | 5 | Run the applications | [View](#running-the-application) |

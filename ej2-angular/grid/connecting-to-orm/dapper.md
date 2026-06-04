@@ -49,7 +49,7 @@ Ensure the following software and packages are installed before proceeding:
 | 5 | Implement the repository pattern with Dapper for efficient data access | [View](#step-6-create-the-repository-class) |
 | 6 | Create an Angular Grid component that supports searching, filtering, sorting, paging, and CRUD operations | [View](#integrating-syncfusion-angular-grid) |
 | 7 | Handle bulk operations and batch updates | [View](#step-10-perform-crud-operations) |
-| 8 | Complete end‑to‑end reservation management workflow using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with server‑side processing and SQL Server integration | [View](#step-11-complete-code)  |
+| 8 | Complete end‑to‑end reservation management workflow using the Angular Data Grid with server‑side processing and SQL Server integration | [View](#step-11-complete-code)  |
 | 9 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
 
 

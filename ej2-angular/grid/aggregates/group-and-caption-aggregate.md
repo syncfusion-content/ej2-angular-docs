@@ -66,7 +66,7 @@ The following example displays the sum of the "Freight" field in the footer of e
 
 Group caption aggregates are displayed in the caption cells at the top of each group, providing a quick summary of the grouped data. To render these aggregates, use the [groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupcaptiontemplate) property, which allows to display aggregate values in the group caption cells.
 
-The following example displays the max of the "Freight" field in the each group caption cell using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:
+The following example displays the max of the "Freight" field in the each group caption cell using the Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

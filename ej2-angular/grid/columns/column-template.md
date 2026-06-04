@@ -304,7 +304,7 @@ The following example shows the Progress Bar component in the Grid "Freight" col
 
 ### Render RadioButton in a column 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) within a column using the `template` property. This feature is useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+The Angular Data Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) within a column using the `template` property. This feature is useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
 
 The following example demonstrates rendering a RadioButton in the "Order Status" column of the Grid by defining the `template` property.
 

@@ -360,7 +360,7 @@ The following example demonstrates hiding the expand/collapse icon for the row w
 
 ## Child Grid expand and collapse events
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides [detailExpand](https://ej2.syncfusion.com/angular/documentation/api/grid#detailexpand) and [detailCollapse](https://ej2.syncfusion.com/angular/documentation/api/grid#detailcollapse) events, triggered before a detail row(parent row) is expanded or collapsed. These events provide control over the expand/collapse behavior by allowing conditional logic through event arguments.
+The Angular Data Grid component provides [detailExpand](https://ej2.syncfusion.com/angular/documentation/api/grid#detailexpand) and [detailCollapse](https://ej2.syncfusion.com/angular/documentation/api/grid#detailcollapse) events, triggered before a detail row(parent row) is expanded or collapsed. These events provide control over the expand/collapse behavior by allowing conditional logic through event arguments.
 
 In the example below, expansion is prevented for the "Nancy" row, and collapse is prevented for the "Andrew" row.
 

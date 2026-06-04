@@ -110,7 +110,7 @@ In the following code, resizing is disabled for the "Ship City" column:
 
 ## Resizing modes
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides flexible column resizing behavior through the [ResizeSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettingsModel#resizesettingsmodel) interface. The [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettings#mode) property determines the way the Grid handles space distribution when columns are resized.
+The Angular Data Grid component provides flexible column resizing behavior through the [ResizeSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettingsModel#resizesettingsmodel) interface. The [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettings#mode) property determines the way the Grid handles space distribution when columns are resized.
 
 **Available resize modes:**
 

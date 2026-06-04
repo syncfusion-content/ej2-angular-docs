@@ -53,7 +53,7 @@ The Grid's content can be printed using an external button by calling the `print
 
 ## Print visible page 
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid prints all pages. Use the [printMode](https://ej2.syncfusion.com/angular/documentation/api/grid#printmode) property to control what is printed. To print only the current visible page, set `printMode` to `CurrentPage`.
+By default, the Angular Data Grid prints all pages. Use the [printMode](https://ej2.syncfusion.com/angular/documentation/api/grid#printmode) property to control what is printed. To print only the current visible page, set `printMode` to `CurrentPage`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

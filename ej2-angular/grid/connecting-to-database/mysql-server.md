@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Connecting MySQL server to Syncfusion Angular Grid Using LINQ2DB
 
-The [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) supports binding data from a MySQL database. This documentation demonstrates integrating MySQL with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid using LINQ2DB (Light-weight ORM) for data operations with the use of `CustomAdaptor` to build a Transaction Management Application.
+The [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) supports binding data from a MySQL database. This documentation demonstrates integrating MySQL with Angular Data Grid using LINQ2DB (Light-weight ORM) for data operations with the use of `CustomAdaptor` to build a Transaction Management Application.
 
 **What is LINQ2DB?**
 
@@ -371,7 +371,7 @@ The services are now successfully registered and the application is ready to han
 
 ## Integrating Syncfusion Angular Grid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with MySQL database.
+The Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with MySQL database.
 
 ### Step 1: Creating the Angular client application
 
