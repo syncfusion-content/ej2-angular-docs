@@ -48,7 +48,7 @@ domainurl: ##DomainURL##
 
 ## Setting up the GraphQL backend using Apollo
 
-The Apollo GraphQL backend acts as the primary data layer, handling all queries and mutations required by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
+The Apollo GraphQL backend acts as the primary data layer, handling all queries and mutations required by the Angular Data Grid.
 
 ### Step 1: Create the GraphQL server and Install required packages
 
@@ -520,7 +520,7 @@ To use Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component and Datam
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data
 ```
-- `@syncfusion/ej2-angular-grids` –  required to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
+- `@syncfusion/ej2-angular-grids` –  required to use the Angular Data Grid component.
 - `@syncfusion/ej2-data` – Provides data utilities for binding and manipulating Grid data.
 
 ### Step 2: Including required Syncfusion stylesheets
@@ -1245,7 +1245,7 @@ The backend GraphQL resolver receives this nested structure through the `where` 
 
 CRUD operations (Create, Read, Update, Delete) allow users to manage data through the Grid. The Grid provides built-in dialogs and buttons to perform these operations, while the backend resolvers handle the actual data modifications.
 
-To enable editing features in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, configure the Grid's `editSettings` and provide the required services `ToolbarService` and `EditService` in the component metadata.
+To enable editing features in the Angular Data Grid, configure the Grid's `editSettings` and provide the required services `ToolbarService` and `EditService` in the component metadata.
 
  ```html
  [app.component.html]
@@ -1501,7 +1501,7 @@ syncfusion-angular-grid-with-apollo-server-/
 
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-apollo-server) repository.
 
-This guide provides a modern, high‑performance architecture in which the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid integrates seamlessly with an Apollo‑powered GraphQL backend.
+This guide provides a modern, high‑performance architecture in which the Angular Data Grid integrates seamlessly with an Apollo‑powered GraphQL backend.
 
 ## See also
 - [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)
