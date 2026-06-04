@@ -839,7 +839,7 @@ Here's an example of using the `beforeRender` event to add a custom tooltip to a
 
 ## Customize header text styles 
 
-Header styling enables visual distinction and emphasizes important columns or data categories within the grid. Customizing header appearance through font, background color, and other styles meets specific design requirements and improves information hierarchy. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides multiple approaches for header customization through CSS, properties, methods, or event-based styling.
+Header styling enables visual distinction and emphasizes important columns or data categories within the grid. Customizing header appearance through font, background color, and other styles meets specific design requirements and improves information hierarchy. The Angular Data Grid component provides multiple approaches for header customization through CSS, properties, methods, or event-based styling.
 
 ### Using CSS
 
@@ -905,7 +905,7 @@ The following example demonstrates customizing the appearance of the "OrderID" a
 
 ### Using method 
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides methods to customize column header appearance:
+The Angular Data Grid component provides methods to customize column header appearance:
 
 | # | Method | Description |
 |---|--------|-------------|
@@ -972,7 +972,7 @@ The following example demonstrates using the `refreshHeader` method to update th
 
 ## Get header element 
 
-Accessing header elements programmatically is necessary for advanced customizations, styling, or interaction handling that go beyond built-in configuration options. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides multiple methods to retrieve specific header elements by various identifiers, enabling direct DOM manipulation or reading header metadata.
+Accessing header elements programmatically is necessary for advanced customizations, styling, or interaction handling that go beyond built-in configuration options. The Angular Data Grid provides multiple methods to retrieve specific header elements by various identifiers, enabling direct DOM manipulation or reading header metadata.
 
 | # | Method | Description | Example |
 |---|--------|-------------|---------|

@@ -1191,13 +1191,13 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 ## Sending additional parameters to the server
 
-The Syncfusion Grid component enables inclusion of custom parameters in data requests. This feature proves particularly useful when providing additional information to the server for enhanced processing capabilities.
+The Angular Data Grid component enables inclusion of custom parameters in data requests. This feature proves particularly useful when providing additional information to the server for enhanced processing capabilities.
 
 By utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid#query) property of the grid along with the `addParams` method of the Query class, custom parameters can be incorporated into data requests for every grid action.
 
 To enable custom parameters in data requests for the grid component:
 
-**1. Bind the Query Object to the Grid**:  Assign the initialized query object to the `query` property of the Angular Data Grid component.
+**1. Bind the Query Object to the Grid**:  Assign the initialized query object to the `query` property of the Grid component.
 
 **2. Initialize the Query Object:** Create a new instance of the Query class and use the `addParams` method to add the custom parameters.
 

@@ -266,7 +266,7 @@ The following example demonstrates rendering foreign key values in a column temp
 
 ## Enable multiple foreign key columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component supports enabling multiple foreign key columns with editing options. This allows display of columns from foreign data sources in the Grid component.
+The Angular Data Grid component supports enabling multiple foreign key columns with editing options. This allows display of columns from foreign data sources in the Grid component.
 
 In the following example, "Customer Name" and "Ship City" are foreign key columns displaying the "ContactName" and "City" columns from their respective foreign data sources. This demonstrates that a single Grid row can display related information from multiple external data sources.
 
@@ -284,7 +284,7 @@ In the following example, "Customer Name" and "Ship City" are foreign key column
 
 ## Edit template in foreign key column using remote data
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows customization of the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component is used for editing foreign key columns. However, a different component can be rendered by configuring the [column.edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property.
+Angular Data Grid allows customization of the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component is used for editing foreign key columns. However, a different component can be rendered by configuring the [column.edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property.
 
 The following example demonstrates a complete implementation with Angular and ASP.NET Core. An [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component is rendered as the edit template for the "EmployeeID" foreign key column. The `dataSource` property of the `AutoComplete` component is set to the employees data from the remote API, and the [field](https://helpej2.syncfusion.com/angular/documentation/api/grid/column#field) property is configured to display the "FirstName" field as the value.
 

@@ -40,7 +40,7 @@ Here's an example code snippet that demonstrates defining columns manually in th
 
 Columns are automatically created when the `columns` option is not defined during Grid initialization. In this case, the Grid generates columns based on the fields in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource). Each field in the data source is displayed as a column, and the field name appears in the column header.
 
-The following code snippet enables auto-generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
+The following code snippet enables auto-generated columns in the Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,7 +84,7 @@ onDataBound(event: any): void {
 
 ### Defining column properties for auto-generated columns
 
-Auto-generated columns can be customized to meet specific requirements by modifying properties such as [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type), [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format), and [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column#width) for auto-generated columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, use the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event of the Grid component. The event is triggered after data has been loaded into the Grid, ensuring that all columns are created and available. At this point, the necessary options for the auto-generated columns can be configured.
+Auto-generated columns can be customized to meet specific requirements by modifying properties such as [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type), [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format), and [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column#width) for auto-generated columns in Angular Data Grid, use the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event of the Grid component. The event is triggered after data has been loaded into the Grid, ensuring that all columns are created and available. At this point, the necessary options for the auto-generated columns can be configured.
 
 In the below example, `width` is set for the "OrderID" column, `type` is set for the "Order Date" column and `format` is set for the "Freight" and "Order Date" columns.
 {% tabs %}
@@ -101,11 +101,11 @@ In the below example, `width` is set for the "OrderID" column, `type` is set for
 
 ## Dynamic column generation 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows dynamic generation of columns at runtime based on the provided data. This feature is useful when displaying data with varying columns depending on specific requirements or dynamic data sources.
+The Angular Data Grid component allows dynamic generation of columns at runtime based on the provided data. This feature is useful when displaying data with varying columns depending on specific requirements or dynamic data sources.
 
 ### Using ngFor directive
 
-To create dynamically generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component using the ngFor directive, first define an array of column objects in the component.ts file. Each column object should include a [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property, which will be used to bind the corresponding properties of the `e-column` component.
+To create dynamically generated columns in the Angular Data Grid component using the ngFor directive, first define an array of column objects in the component.ts file. Each column object should include a [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property, which will be used to bind the corresponding properties of the `e-column` component.
 
 Here is an example of dynamically generating columns in the grid using the `*ngFor` directive:
 
@@ -121,7 +121,7 @@ Here is an example of dynamically generating columns in the grid using the `*ngF
   
 {% previewsample "page.domainurl/samples/grid/dynamic-column-cs1" %}
 
-> The data source or columns can be changed dynamically in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid by using the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#changedatasource) method. For more information, please refer to [this](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/data-binding#dynamically-change-the-datasource-or-columns-or-both) section.
+> The data source or columns can be changed dynamically in the Angular Data Grid by using the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#changedatasource) method. For more information, please refer to [this](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/data-binding#dynamically-change-the-datasource-or-columns-or-both) section.
 
 ### Using valueAccessor property
 
@@ -192,7 +192,7 @@ Serial number display in the Grid for every row can be achieved using the [rowDa
 * `currentPage`: The current page number.
 * `rowIndex`: The index of the row within the current page.
 
-Here is an example code snippet that demonstrates displaying serial numbers in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the `rowDataBound` event:
+Here is an example code snippet that demonstrates displaying serial numbers in an Angular Data Grid using the `rowDataBound` event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,7 +208,7 @@ Here is an example code snippet that demonstrates displaying serial numbers in a
 
 ## Complex data binding
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component supports complex data binding by using the dot (.) operator in the [column.field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field). This feature is particularly useful when dealing with nested or complex data structures.
+The Angular Data Grid component supports complex data binding by using the dot (.) operator in the [column.field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field). This feature is particularly useful when dealing with nested or complex data structures.
 
 ### Using local data
 

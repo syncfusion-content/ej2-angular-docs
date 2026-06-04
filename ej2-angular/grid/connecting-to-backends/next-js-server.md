@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 [Next.js](https://nextjs.org/) is a powerful Angular framework designed for building full-stack web applications. It includes built‑in features such as server‑side rendering, automatic code splitting, intuitive routing, and API routes, providing a solid foundation for developing modern, high‑performance applications.
 
-This guide walks through integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with a Next.js backend, creating a hybrid architecture where the UI layer is powered fully by Angular while data operations are handled by server‑side endpoints exposed by Next.js. In this setup, the Angular application hosts the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component in the browser, and all CRUD operations, pagination, and data processing requests are routed to RESTful API handlers implemented within the Next.js server.
+This guide walks through integrating the Angular Data Grid with a Next.js backend, creating a hybrid architecture where the UI layer is powered fully by Angular while data operations are handled by server‑side endpoints exposed by Next.js. In this setup, the Angular application hosts the Angular Data Grid component in the browser, and all CRUD operations, pagination, and data processing requests are routed to RESTful API handlers implemented within the Next.js server.
 
 ## Prerequisites
 
@@ -105,7 +105,7 @@ export async function GET(request: NextRequest) {
 
 ## Connecting Syncfusion Angular Grid with Next.js
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Next.js backend.
+The Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Next.js backend.
 
 ### Step 1: Creating the Angular client application
 
@@ -856,7 +856,7 @@ Open **http://localhost:4200** in the browser.
 
 A complete, working sample implementation is available in the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-nextjs-server) repository.
   
-The application now provides a complete solution for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with Next.js server, enabling seamless data operations with a modern, user-friendly interface.
+The application now provides a complete solution for integrating the Angular Data Grid with Next.js server, enabling seamless data operations with a modern, user-friendly interface.
 
 ## See also
 

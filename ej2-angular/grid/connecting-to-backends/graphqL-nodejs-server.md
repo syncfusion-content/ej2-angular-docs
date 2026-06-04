@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 [GraphQL](https://graphql.org/learn/introduction/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 
-**Traditional REST APIs** and GraphQL differ mainly in the way data is requested and returned: **REST APIs expose** multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data, while GraphQL uses a single endpoint where queries define the exact fields needed, enabling precise responses and allowing related data to be retrieved efficiently in one request. This makes GraphQL especially useful for **Angular Grid integration**, the **reason** is data‑centric UI components require well‑structured and selective datasets to support efficient filtering, reduce network calls, and improve overall performance.
+**Traditional REST APIs** and GraphQL differ mainly in the way data is requested and returned: **REST APIs expose** multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data, while GraphQL uses a single endpoint where queries define the exact fields needed, enabling precise responses and allowing related data to be retrieved efficiently in one request. This makes GraphQL especially useful for **Angular Data Grid integration**, the **reason** is data‑centric UI components require well‑structured and selective datasets to support efficient filtering, reduce network calls, and improve overall performance.
 
 **Key GraphQL concepts:**
 - **Queries**: A query is a request to read data. Queries do not modify data; they only retrieve it.
@@ -1198,7 +1198,7 @@ Open a terminal or Command Prompt. Run the server application first, then start 
 
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-server) repository.
 
-The application now provides a fully integrated "product" management workflow using the Syncfusion Angular Grid connected to a Node.js GraphQL backend.
+The application now provides a fully integrated "product" management workflow using the Angular Data Grid connected to a Node.js GraphQL backend.
 
 ## See also
 

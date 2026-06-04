@@ -404,7 +404,7 @@ The integration process begins by installing the required Angular Data Grid pack
 
 ### Step 2: Install Syncfusion Grid packages
 
-Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages using the below command in Visual Studio Code terminal or Command Prompt:
+Install the necessary Angular Data Grid packages using the below command in Visual Studio Code terminal or Command Prompt:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-data --save
@@ -435,7 +435,7 @@ For this project, the "Bootstrap 5.3" theme is used. A different theme can be se
 
 ### Step 4: Configure DataManager with Django REST Framework (DRF)
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> `DataManager` acts as a communication layer between the Angular Grid and backend services. It sends all Grid operations—such as reading data, sorting, filtering, searching, paging, and performing CRUD actions—to the server in a standardized format.
+The Angular Data Grid `DataManager` acts as a communication layer between the Angular Grid and backend services. It sends all Grid operations—such as reading data, sorting, filtering, searching, paging, and performing CRUD actions—to the server in a standardized format.
 
 The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) is a built‑in adaptor that formats requests for REST-style endpoints, like the Django REST Framework API. It serializes all Grid actions and posts them to the DRF API endpoint, then processes the JSON responses returned by the server.
 
