@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Server-Side Excel Export
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides server-side Excel export functionality using the Grid server export library. This approach enables Excel export operations to execute on the server, delivering enhanced security and flexibility. Server-side export requires configuring server dependencies and implementing the necessary server configuration.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid component provides server-side Excel export functionality using the Grid server export library. This approach enables Excel export operations to execute on the server, delivering enhanced security and flexibility. Server-side export requires configuring server dependencies and implementing the necessary server configuration.
 
 > For client-side Excel export setup, refer to the [Excel Export Feature Guide](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-exporting).
 

@@ -41,7 +41,7 @@ domainurl: ##DomainURL##
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Set up and configure the HotChocolate GraphQL backend using ASP.NET Core | [View](#setting-up-the-hotchocolate-graphql-backend-using-aspnet-core) |
-| 2 | Integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with HotChocolate GraphQL API | [View](#integrating-syncfusion-angular-grid-with-hotchocolate-graphql) |
+| 2 | Integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with HotChocolate GraphQL API | [View](#integrating-syncfusion-angular-grid-with-hotchocolate-graphql) |
 | 3 | Implement data operations including filtering, searching, sorting, and paging | [View](#perform-data-operations-in-server) |
 | 4 | Perform CRUD operations | [View](#perform-crud-operations-in-server) |
 | 5 | Run the HotChocolate GraphQL application | [View](#running-the-application) |
@@ -49,7 +49,7 @@ domainurl: ##DomainURL##
 
 ## Setting up the HotChocolate GraphQL backend using ASP.NET Core
 
-The HotChocolate GraphQL backend acts as the central data service, handling queries and mutations that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
+The HotChocolate GraphQL backend acts as the central data service, handling queries and mutations that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid.
 
 ### Step 1: Create the ASP.NET Core project with Angular template
 
@@ -1541,7 +1541,7 @@ A complete working sample of the Angular Grid with HotChocolate GraphQL backend 
 
 **GitHub repository:**
 
-[Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with HotChocolate GraphQL Sample](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-hotchocolate-server)
+[Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with HotChocolate GraphQL Sample](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-hotchocolate-server)
 
 **Repository contents:**
 
@@ -1562,7 +1562,7 @@ dotnet run --project AngularApp1.Server
 
 ## See also
 
-* [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](../getting-started)
+* [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid](../getting-started)
 * [HotChocolate documentation](https://chillicream.com/docs/hotchocolate/v13)
 * [GraphQL official documentation](https://graphql.org/learn/)
 * [Syncfusion GraphQLAdaptor documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor)

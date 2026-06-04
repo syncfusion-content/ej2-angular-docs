@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Connecting SQL Server to Syncfusion Angular Grid Using Dapper
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid supports binding data from SQL Server using the lightweight **Dapper** micro‑ORM. This modern approach provides a simpler, more direct alternative where raw SQL control is preferred.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from SQL Server using the lightweight **Dapper** micro‑ORM. This modern approach provides a simpler, more direct alternative where raw SQL control is preferred.
 
 ## What is Dapper?
 
@@ -49,7 +49,7 @@ Ensure the following software and packages are installed before proceeding:
 | 5 | Implement the repository pattern with Dapper for efficient data access | [View](#step-6-create-the-repository-class) |
 | 6 | Create an Angular Grid component that supports searching, filtering, sorting, paging, and CRUD operations | [View](#integrating-syncfusion-angular-grid) |
 | 7 | Handle bulk operations and batch updates | [View](#step-10-perform-crud-operations) |
-| 8 | Complete end‑to‑end reservation management workflow using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with server‑side processing and SQL Server integration | [View](#step-11-complete-code)  |
+| 8 | Complete end‑to‑end reservation management workflow using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with server‑side processing and SQL Server integration | [View](#step-11-complete-code)  |
 | 9 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
 
 
@@ -671,7 +671,7 @@ The controller has been successfully created and is ready to handle requests fro
 
 ## Integrating Syncfusion Angular Grid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a SQL Server database.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a SQL Server database.
 
 ### Step 1: Creating the Angular client application
 
@@ -758,7 +758,7 @@ export class AppComponent {
 
 ### Step 4: Implement the CustomAdaptor
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
 The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Dapper to query the SQL Server database and return the results.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Clipboard in Angular Grid Component
 
-The clipboard feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enables copying selected rows or cells to the system clipboard for use in other applications. The grid supports keyboard shortcuts for quick copy operations.
+The clipboard feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables copying selected rows or cells to the system clipboard for use in other applications. The grid supports keyboard shortcuts for quick copy operations.
 
 Interaction keys | Description
 -----|-----
@@ -51,7 +51,7 @@ To copy selected rows or cells data to the clipboard using external buttons, uti
 
 ## AutoFill
 
-The AutoFill feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid copies values from a selected cell range into target cells by dragging the AutoFill handle. This provides a fast method for populating repetitive or sequential data.
+The AutoFill feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid copies values from a selected cell range into target cells by dragging the AutoFill handle. This provides a fast method for populating repetitive or sequential data.
 
 **AutoFill to copy data:**
 
@@ -90,7 +90,7 @@ The following example demonstrates to enable the autofill feature in the grid:
 
 ## Paste
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports pasting clipboard content into selected cells for quick data entry and updates. Standard shortcuts allow copying and pasting between ranges within the grid or between the grid and external applications.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid supports pasting clipboard content into selected cells for quick data entry and updates. Standard shortcuts allow copying and pasting between ranges within the grid or between the grid and external applications.
 
 Follow these steps to use the paste feature in the grid:
 

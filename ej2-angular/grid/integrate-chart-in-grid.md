@@ -101,7 +101,7 @@ To use the "Material" theme, add the following imports to the **src/styles.css**
 
 ## Chart integration via context menu in Grid
 
-This section explains grid rendering of charts dynamically based on interactions within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular grid using the context menu. **Right-clicking** on selected rows presents chart types such as `bar`, `pie`, or `line` for immediate visualization. This enhances interactivity and provides a quick analytical view.
+This section explains grid rendering of charts dynamically based on interactions within the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid using the context menu. **Right-clicking** on selected rows presents chart types such as `bar`, `pie`, or `line` for immediate visualization. This enhances interactivity and provides a quick analytical view.
 
 For example, in a sales dashboard, selecting records for specific products can display a comparative bar or pie chart that shows online sales versus retail sales or revenue trends across months.
 

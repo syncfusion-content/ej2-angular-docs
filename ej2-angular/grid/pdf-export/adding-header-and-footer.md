@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Adding Header and Footer in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enables customized header and footer sections to be added in exported PDF documents. This feature supports custom text, page numbers, lines, page size configuration, and orientation changes for header and footer sections.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables customized header and footer sections to be added in exported PDF documents. This feature supports custom text, page numbers, lines, page size configuration, and orientation changes for header and footer sections.
 
 ## Adding text in header and footer
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports adding custom text to the `header` or `footer` sections of exported PDF documents.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid supports adding custom text to the `header` or `footer` sections of exported PDF documents.
 
 The `header` section of a PDF document is positioned at the top of each page and provides a space for additional information or branding elements such as company logos, document titles, dates, or other information that repeats consistently across every page.
 
@@ -125,7 +125,7 @@ const exportProperties: PdfExportProperties = {
 
 ## Insert an image in header and footer
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports inclusion of images in the header and footer sections of exported PDF documents. This feature enables addition of custom logos, branding elements, or other relevant images to enhance document presentation.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid supports inclusion of images in the header and footer sections of exported PDF documents. This feature enables addition of custom logos, branding elements, or other relevant images to enhance document presentation.
 
 Images can be represented using base64 strings in `.jpeg` format. This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property of the Grid component.
 

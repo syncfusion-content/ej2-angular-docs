@@ -36,13 +36,13 @@ domainurl: ##DomainURL##
 | 1 | Setting up and configuring the Flask backend using Python | [View](#setting-up-the-flask-backend-using-python) |
 | 2 | Performing data operations in server with filtering, searching, sorting, and paging for efficient data processing | [View](#perform-data-operations-in-server) |
 | 3 | Performing CRUD operations in server with REST endpoints | [View](#perform-crud-operations-in-server) |
-| 4 | Connecting Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with Flask API and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with custom binding | [View](#connecting-syncfusion-angular-grid-with-flask-api) |
+| 4 | Connecting Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with Flask API and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with custom binding | [View](#connecting-syncfusion-angular-grid-with-flask-api) |
 | 5 | Running the application by starting servers locally and accessing the frontend | [View](#run-the-application) |
 | 6 | Exploring a complete working sample in the complete sample repository on GitHub | [View](#complete-sample-repository) |
 
 ## Setting up the Flask backend using Python
 
-The Flask backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
+The Flask backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid.
 
 ### Step 1: Create the Flask server and install required packages
 
@@ -429,7 +429,7 @@ cd client
 
 ### Step 2: Install Syncfusion packages
 
-Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid and DataManager packages:
+Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid and DataManager packages:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -493,7 +493,7 @@ export class AppComponent implements AfterViewInit {
 
 ### Step 5: Integrate Syncfusion Angular Grid with custom data binding
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid custom data binding feature seamlessly integrates with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application-specific workflows and enabling efficient handling of large datasets. The custom data binding feature interacts with backend APIs through two key events.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid custom data binding feature seamlessly integrates with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application-specific workflows and enabling efficient handling of large datasets. The custom data binding feature interacts with backend APIs through two key events.
 
 - [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange): Triggered when the Grid performs actions such as paging, sorting, or filtering. It provides the current state details (skip, take, sorted, where, search), which are sent to the API so the request can be processed and data returned in the required `{ result:[], count:100 }` format.
 
@@ -1031,7 +1031,7 @@ For a complete working implementation, refer to the [GitHub](https://github.com/
 
 The repository contains the complete Flask backend implementation with all API endpoints, business logic, data models, and a ready-to-run Angular frontend application.
 
-The application now provides a complete solution for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with Flask API backend, enabling seamless data operations with a modern, user-friendly interface.
+The application now provides a complete solution for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) with Flask API backend, enabling seamless data operations with a modern, user-friendly interface.
 
 ## See also
 

@@ -47,7 +47,7 @@ Use the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid
 
 ## Customize pager options 
 
-Customize the pager options in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings) object:
+Customize the pager options in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid using the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings) object:
  
 - `pageCount`: Number of pages to display in the pager.
 - `currentPage`: Denotes the active page.
