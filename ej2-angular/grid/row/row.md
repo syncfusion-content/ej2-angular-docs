@@ -22,7 +22,7 @@ Each row typically represents a single record or item from a data source. Rows i
 
 ## Styling rows 
 
-Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows modification of row appearance to meet specific design requirements. This feature is useful when highlighting certain rows or changing the font style, background color, and other properties of the row to enhance the visual appeal of the grid. To customize the row styles in the grid, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides CSS, properties, methods, and event support.
+Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid allows modification of row appearance to meet specific design requirements. This feature is useful when highlighting certain rows or changing the font style, background color, and other properties of the row to enhance the visual appeal of the grid. To customize the row styles in the grid, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides CSS, properties, methods, and event support.
 
 ### Using event
 

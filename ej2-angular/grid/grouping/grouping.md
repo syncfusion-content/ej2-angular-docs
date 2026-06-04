@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular Grid Component
 
-The grouping feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables data to be organized into a hierarchical structure, allowing records to be expanded and collapsed for improved readability and analysis.
+The grouping feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enables data to be organized into a hierarchical structure, allowing records to be expanded and collapsed for improved readability and analysis.
 
 The group feature is enabled by injecting the `GroupService` to the providers array.
 

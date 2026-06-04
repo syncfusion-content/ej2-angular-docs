@@ -1031,7 +1031,7 @@ For a complete working implementation, refer to the [GitHub](https://github.com/
 
 The repository contains the complete Flask backend implementation with all API endpoints, business logic, data models, and a ready-to-run Angular frontend application.
 
-The application now provides a complete solution for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with Flask API backend, enabling seamless data operations with a modern, user-friendly interface.
+The application now provides a complete solution for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with Flask API backend, enabling seamless data operations with a modern, user-friendly interface.
 
 ## See also
 

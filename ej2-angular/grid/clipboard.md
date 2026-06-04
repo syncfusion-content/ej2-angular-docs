@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Clipboard in Angular Grid Component
 
-The clipboard feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables copying selected rows or cells to the system clipboard for use in other applications. The grid supports keyboard shortcuts for quick copy operations.
+The clipboard feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enables copying selected rows or cells to the system clipboard for use in other applications. The grid supports keyboard shortcuts for quick copy operations.
 
 Interaction keys | Description
 -----|-----

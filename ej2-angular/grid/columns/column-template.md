@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Template in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that enables rendering custom elements in a column instead of the default field value. This feature is ideal for displaying images, buttons, hyperlinks, or other custom content within a column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that enables rendering custom elements in a column instead of the default field value. This feature is ideal for displaying images, buttons, hyperlinks, or other custom content within a column.
 
 > When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for grid actions like sorting, filtering, or editing. It is essential to define the `field` property of the column to perform any grid actions.
 

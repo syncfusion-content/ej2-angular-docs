@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Connecting SQL Server to Syncfusion Angular Grid Using Dapper
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports binding data from SQL Server using the lightweight **Dapper** micro‑ORM. This modern approach provides a simpler, more direct alternative where raw SQL control is preferred.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid supports binding data from SQL Server using the lightweight **Dapper** micro‑ORM. This modern approach provides a simpler, more direct alternative where raw SQL control is preferred.
 
 ## What is Dapper?
 

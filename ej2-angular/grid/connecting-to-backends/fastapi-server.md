@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connecting the Syncfusion Angular Grid with FastAPI backend
 
-[FastAPI](https://fastapi.tiangolo.com/) is a modern, high‑performance Python web framework for building RESTful APIs with automatic OpenAPI documentation and robust validation. In a REST architecture, the server exposes resource‑oriented endpoints and relies on standard HTTP verbs while the client exchanges well structured JSON payloads. FastAPI combines asynchronous I/O, type hints, and Pydantic validation to produce low‑latency APIs that Angular applications can call reliably. This design is particularly effective for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid because every grid action translates to a predictable JSON contract that the backend can process consistently and efficiently. 
+[FastAPI](https://fastapi.tiangolo.com/) is a modern, high‑performance Python web framework for building RESTful APIs with automatic OpenAPI documentation and robust validation. In a REST architecture, the server exposes resource‑oriented endpoints and relies on standard HTTP verbs while the client exchanges well structured JSON payloads. FastAPI combines asynchronous I/O, type hints, and Pydantic validation to produce low‑latency APIs that Angular applications can call reliably. This design is particularly effective for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid because every grid action translates to a predictable JSON contract that the backend can process consistently and efficiently. 
 
 ## Prerequisites
 

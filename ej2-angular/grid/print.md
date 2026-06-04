@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Print in Angular Grid Component
 
-The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid generates a printable representation of the grid for offline access or documentation. Enable printing via the grid's toolbar or by calling the [print](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#print) method.
+The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid generates a printable representation of the grid for offline access or documentation. Enable printing via the grid's toolbar or by calling the [print](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#print) method.
 
 Enable printing in the grid by configuring the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property and adding `Print` to the list of toolbar items. This displays a `Print` button on the grid toolbar, and clicking it triggers the grid’s printing functionality.
 

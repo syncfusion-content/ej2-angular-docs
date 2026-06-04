@@ -605,7 +605,7 @@ This setup registers controllers, enables a permissive CORS policy for developme
 
 ## Integrating Syncfusion Angular Grid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with the SQL Server database.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with the SQL Server database.
 
 ### Step 1: Creating the Angular client application
 

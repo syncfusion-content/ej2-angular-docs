@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Globalization in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides a Globalization feature (global and local) that enhances application accessibility for people from different regions and language backgrounds. Data can be displayed in preferred languages and formats, improving the overall user experience.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid component provides a Globalization feature (global and local) that enhances application accessibility for people from different regions and language backgrounds. Data can be displayed in preferred languages and formats, improving the overall user experience.
 
 ## Localization
 

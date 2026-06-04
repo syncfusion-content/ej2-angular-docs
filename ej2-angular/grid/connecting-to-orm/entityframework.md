@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Connecting SQL Server to Syncfusion Grid Using Entity Framework
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports binding data from a SQL Server database. This documentation demonstrates integrating SQL Server with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid using **Entity Framework Core (EF Core)** for data operations with both `UrlAdaptor` and `CustomAdaptor` approaches.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid supports binding data from a SQL Server database. This documentation demonstrates integrating SQL Server with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid using **Entity Framework Core (EF Core)** for data operations with both `UrlAdaptor` and `CustomAdaptor` approaches.
 
 **What is Entity Framework Core?**
 
