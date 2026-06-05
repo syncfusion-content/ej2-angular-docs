@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping Customization in Angular Grid component
 
-The appearance of grouping elements in the Angular Data Grid component can be customized using CSS. Here are examples for customizing the group header, group expand/collapse icons, group caption row, and grouping indent cell.
+The appearance of grouping elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 
 ## Customize the group drop area header
 

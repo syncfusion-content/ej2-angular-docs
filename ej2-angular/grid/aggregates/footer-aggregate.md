@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Footer Aggregate in Angular Grid Component
 
-The Angular Data Grid supports calculating and displaying aggregate values in the footer cells. These footer aggregates are computed from all rows in the grid. The [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#footertemplate) property can be used to customize the rendering of aggregate values in the footer cells, allowing formatted text or custom layouts to be displayed.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports calculating and displaying aggregate values in the footer cells. These footer aggregates are computed from all rows in the grid. The [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#footertemplate) property can be used to customize the rendering of aggregate values in the footer cells, allowing formatted text or custom layouts to be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

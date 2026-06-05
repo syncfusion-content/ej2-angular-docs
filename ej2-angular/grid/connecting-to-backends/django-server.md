@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Syncfusion Angular Grid with Django REST Binding POST Request Data
 
-The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) combined with Django REST Framework and Microsoft SQL Server provides a robust, scalable data‑driven application architecture. The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) delivers a rich, high‑performance client‑side experience with advanced features like paging, sorting, filtering, searching and CRUD operations.
+The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) combined with Django REST Framework and Microsoft SQL Server provides a robust, scalable data‑driven application architecture. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid delivers a rich, high‑performance client‑side experience with advanced features like paging, sorting, filtering, searching and CRUD operations.
 
 **What is Django REST Framework?**
 
@@ -36,7 +36,7 @@ The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/g
 | # | Topics | Link |
 |---|---------|-------|
 | 1 | Set up Django REST Framework and connect it to a Microsoft SQL Server database | [View](#setting-up-the-django-rest-framework-for-microsoft-sql-database) |
-| 2 | Create and configure the Angular application with the Angular Data Grid| [View](#integrate-syncfusion-angular-grid-with-django-rest-framework-post-request) |
+| 2 | Create and configure the Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid| [View](#integrate-syncfusion-angular-grid-with-django-rest-framework-post-request) |
 | 3 | Handle server‑side data operations such as filtering, searching, sorting, and paging | [View](#perform-data-operations) |
 | 4 | Enable create, update, and delete operations from the Grid using DRF | [View](#performing-crud-operations) |
 | 5 | Run the Django and Angular applications | [View](#running-the-application) |
@@ -45,7 +45,7 @@ The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/g
 
 ## Setting up the Django REST Framework for Microsoft SQL database
 
-The Django REST Framework backend serves as the core data service, managing API requests that provide the data powering the Angular Data Grid.
+The Django REST Framework backend serves as the core data service, managing API requests that provide the data powering the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 ### Step 1: Set up the Django REST Framework server and install required packages
 
@@ -387,7 +387,7 @@ class BookLendingViewSet(viewsets.ModelViewSet):
 
 ## Integrate Syncfusion Angular Grid with Django REST Framework (POST Request)
 
-The Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
 
 ### Step 1: Creating the Angular client application
 
@@ -400,7 +400,7 @@ cd client
 
 This command creates a Angular application named **client** with the essential folder structure and files required to begin development immediately.
 
-The integration process begins by installing the required Angular Data Grid packages before establishing the DRF API.
+The integration process begins by installing the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid packages before establishing the DRF API.
 
 ### Step 2: Install Syncfusion Grid packages
 
@@ -1112,7 +1112,7 @@ ng serve
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-django-server) repository.
 
 
-The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Angular Data Grid front end.
+The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid front end.
 
 ## See also
 - [Types of edit](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit-types)

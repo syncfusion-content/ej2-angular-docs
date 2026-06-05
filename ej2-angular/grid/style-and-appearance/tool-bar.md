@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Toolbar Customization in Angular Grid Component
 
-The appearance of the toolbar in the Angular Data Grid component can be customized using CSS. Here are examples for customizing the toolbar root element and toolbar button element.
+The appearance of the toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the toolbar root element and toolbar button element.
 
 ## Customize the toolbar root element
 

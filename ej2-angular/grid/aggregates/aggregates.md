@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Aggregates in Angular Grid Component
 
-The Aggregates feature in [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides built-in calculations such as sum, average, count, minimum, and maximum for specific columns. The results can be displayed in different sections of the grid.
+The Aggregates feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides built-in calculations such as sum, average, count, minimum, and maximum for specific columns. The results can be displayed in different sections of the grid.
 
 - `Footer`: overall summary values for the entire grid.
 - `Group Footer`: aggregate values for each group of records.
@@ -122,7 +122,7 @@ By default, aggregate values are shown in the footer, group footer, and group ca
 
 ## Built-in aggregate types
 
-The Angular Data Grid component provides built-in aggregate types, specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property of an aggregate column. Multiple aggregate types can be used by providing an array of aggregate type strings.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides built-in aggregate types, specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property of an aggregate column. Multiple aggregate types can be used by providing an array of aggregate type strings.
 
 - `Sum`: Calculates the total of all values in the column.
 - `Average`: Calculates the mean of all values.

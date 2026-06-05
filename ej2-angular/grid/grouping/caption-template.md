@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Group Row Title Customization in Angular Grid
 
-The Angular Data Grid provides the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property to customize the text shown in group row titles.  This feature enhances the visual presentation of grouped data by allowing the display of grouped values, record counts, and custom HTML elements such as icons or images.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property to customize the text shown in group row titles.  This feature enhances the visual presentation of grouped data by allowing the display of grouped values, record counts, and custom HTML elements such as icons or images.
 
 The `captionTemplate` property allows for flexible customization. The `data` parameter within the template provides access to properties such as `field` (the column's field name), `headerText` (column's header display text), `key` (grouped value), and `count` (number of grouped records). These properties provide dynamic values that can be integrated into the caption for context-aware display.
 
