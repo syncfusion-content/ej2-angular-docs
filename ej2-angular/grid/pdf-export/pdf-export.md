@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # PDF Export in Angular Grid Component
 
-The PDF export feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) exporting grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
+The PDF export feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) exporting grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
 
 To enable PDF export in the Grid, set the [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#allowpdfexport) property to `true` and use the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method. To use PDF export, inject the `PdfExportService` module to the providers array.
 

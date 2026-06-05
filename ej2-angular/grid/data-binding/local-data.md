@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Local Data in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows data to be displayed and manipulated within the grid without the need for external server calls, making it particularly useful for scenarios involving static or locally stored data.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows data to be displayed and manipulated within the grid without the need for external server calls, making it particularly useful for scenarios involving static or locally stored data.
 
 Assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasource) property. Optionally, provide the local data source using an instance of the `DataManager`.
 

@@ -834,7 +834,7 @@ export interface columnDataType{
 
 ## Rendering custom cell editors using external functions
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides powerful capabilities for rendering custom cell editors, enabling the addition of specialized custom components to specific columns. This feature is essential for editing cell values using custom input elements or controls tailored to specific data types or workflows.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides powerful capabilities for rendering custom cell editors, enabling the addition of specialized custom components to specific columns. This feature is essential for editing cell values using custom input elements or controls tailored to specific data types or workflows.
 
 To utilize the custom cell editor template feature, implement these four essential functions:
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Foreign Key Column in Angular Grid Component
 
-The foreign key column in the Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component displays related data from a foreign key data source. This feature enables representation of foreign key relationships between data sources, displaying meaningful values instead of raw key identifiers.
+The foreign key column in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component displays related data from a foreign key data source. This feature enables representation of foreign key relationships between data sources, displaying meaningful values instead of raw key identifiers.
 
 To enable the foreign key column in the Grid:
 

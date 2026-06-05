@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # PDF Export Options in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides the ability to customize PDF export options. This flexibility enables greater control over the exported content and layout to meet specific requirements.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides the ability to customize PDF export options. This flexibility enables greater control over the exported content and layout to meet specific requirements.
 
 The PDF export action can be customized using the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) property. The `pdfExportProperties` property enables exporting the current page records, selected records, or filtered records. Additionally, page alignments can be customized using the `pdfExportProperties` property.
 

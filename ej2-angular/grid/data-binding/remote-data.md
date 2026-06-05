@@ -1197,7 +1197,7 @@ By utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/gr
 
 To enable custom parameters in data requests for the grid component:
 
-**1. Bind the Query Object to the Grid**:  Assign the initialized query object to the `query` property of the Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component.
+**1. Bind the Query Object to the Grid**:  Assign the initialized query object to the `query` property of the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component.
 
 **2. Initialize the Query Object:** Create a new instance of the Query class and use the `addParams` method to add the custom parameters.
 

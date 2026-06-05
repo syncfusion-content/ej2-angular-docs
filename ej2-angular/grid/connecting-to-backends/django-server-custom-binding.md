@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Syncfusion Angular Grid with Django REST Framework
 
-This guide explains connecting the Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) to a **Django REST Framework (DRF)** backend with **Custom Binding**. Custom Binding provides full control over the Grid’s communication with the server: the Grid raises events for data operations (paging, sorting, filtering, searching) and CRUD,  client code calls DRF endpoints, and DRF returns standardized results.
+This guide explains connecting the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) to a **Django REST Framework (DRF)** backend with **Custom Binding**. Custom Binding provides full control over the Grid’s communication with the server: the Grid raises events for data operations (paging, sorting, filtering, searching) and CRUD,  client code calls DRF endpoints, and DRF returns standardized results.
 
 **Difference between Custom Binding and UrlAdaptor:**
 

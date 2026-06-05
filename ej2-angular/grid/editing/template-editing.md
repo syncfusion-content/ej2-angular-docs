@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Template Editing in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. Angular templates enable defining the structure and content of cells within the grid.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. Angular templates enable defining the structure and content of cells within the grid.
 
 > For grid basic editing setup and configuration, refer to the [Edit Feature Setup](./edit#set-up-editing).
 

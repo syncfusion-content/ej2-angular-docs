@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Reorder in Angular Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component allows reordering columns by drag and drop of a particular column header from one position to another position within the grid. This feature can be enabled by injecting the `ReorderService` to the providers array.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component allows reordering columns by drag and drop of a particular column header from one position to another position within the grid. This feature can be enabled by injecting the `ReorderService` to the providers array.
 
 To enable column reordering in the Grid, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowreordering) property to `true` in the grid.
 

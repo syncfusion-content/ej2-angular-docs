@@ -135,7 +135,7 @@ Column formatting serves as a powerful feature in Angular Data Grid, enabling cu
 
 ### Number formatting
 
-Number formatting enables customization of numeric value display in Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) columns. Standard numeric format strings or custom numeric format strings specify the desired presentation. The `format` property of Grid columns can be used to specify the number format for numeric columns.
+Number formatting enables customization of numeric value display in [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) columns. Standard numeric format strings or custom numeric format strings specify the desired presentation. The `format` property of Grid columns can be used to specify the number format for numeric columns.
 
 Format |Description |Remarks
 -------|-------|-------

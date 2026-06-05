@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Grid Component
 
-This guide demonstrates how to set up and configure the Syncfusion Angular Grid component, from initial installation through enabling core features like paging, sorting, filtering, and grouping.
+This guide demonstrates how to set up and configure the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component, from initial installation through enabling core features like paging, sorting, filtering, and grouping.
 
 > Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
