@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Data binding is a fundamental technique that empowers the Grid component to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) utilizes the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started), which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid utilizes the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started), which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
 The Grid supports two primary data binding methods:
 
@@ -25,7 +25,7 @@ To learn about binding local, remote, or observable data to the Angular Grid, se
 
 ## Loading indicator
 
-The Angular Data Grid provides a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the grid's current state and actions, such as sorting, filtering, grouping, and more.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the grid's current state and actions, such as sorting, filtering, grouping, and more.
 
 To achieve this, the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/angular/documentation/api/grid/loadingIndicatorModel) property of the grid can be utilized, which supports two types of indicators:
 
@@ -48,7 +48,7 @@ The following example demonstrates setting the `loadingIndicator.indicatorType` 
 
 ## Refresh the datasource using property
 
-Refreshing the data shown in a Angular Data Grid involves updating the data that the grid displays dynamically. This operation reflects changes in the underlying data without reloading the entire page or component.
+Refreshing the data shown in a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid involves updating the data that the grid displays dynamically. This operation reflects changes in the underlying data without reloading the entire page or component.
 
 To achieve this, use the [datasource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasource) property in conjunction with the [setProperties] method. This ensures the grid reflects changes in the `dataSource` without requiring a complete page or component reload.
 
@@ -83,7 +83,7 @@ The following example demonstrates adding a new record to the data source throug
 
 ## Dynamically change the datasource or columns or both
 
-The Angular Data Grid component supports dynamic modification of the data source, columns, or both. This feature refreshes the grid's content and structure without requiring a complete page reload.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component supports dynamic modification of the data source, columns, or both. This feature refreshes the grid's content and structure without requiring a complete page reload.
 
 To achieve dynamic changes, the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#changedatasource) method allows updating the grid's data source dynamically. This method enables updating the data source, columns, or both, based on application requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset. The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
@@ -204,13 +204,13 @@ The following example demonstrates preventing local time zone conversion for dat
 
 ## Set custom headers using a custom adaptor
 
-Custom headers in HTTP requests are used to send additional information such as authentication tokens, API keys, or metadata required by the server. These headers improve security and enable better control over data communication. In the Angular Data Grid, custom headers can be added when making API requests, ensuring that each request carries the necessary information for server-side validation and processing.
+Custom headers in HTTP requests are used to send additional information such as authentication tokens, API keys, or metadata required by the server. These headers improve security and enable better control over data communication. In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, custom headers can be added when making API requests, ensuring that each request carries the necessary information for server-side validation and processing.
 
 This method is particularly useful when integrating the grid with authenticated APIs, where requests must include authorization tokens or other security credentials to ensure secure access.
 
 To achieve this, extend the `WebApiAdaptor` to create a custom adaptor. The `beforeSend` method in the custom adaptor enables modification of request headers before sending them to the server, ensuring that every request from the grid includes the required headers.
 
-The following example demonstrates setting custom headers using the custom adaptor in Angular Data Grid.
+The following example demonstrates setting custom headers using the custom adaptor in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

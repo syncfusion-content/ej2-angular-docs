@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Reorder in Angular Grid component
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component allows reordering columns by drag and drop of a particular column header from one position to another position within the grid. This feature can be enabled by injecting the `ReorderService` to the providers array.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows reordering columns by drag and drop of a particular column header from one position to another position within the grid. This feature can be enabled by injecting the `ReorderService` to the providers array.
 
 To enable column reordering in the Grid, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowreordering) property to `true` in the grid.
 
@@ -39,7 +39,7 @@ The following example demonstrates column reordering in the Grid component:
 
 ## Prevent reordering for particular column
 
-By default, all columns in the Angular Data Grid can be reordered when the grid-level [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowreordering) property is set to `true`. However, there may be specific columns that should remain in a fixed position and not be reordered. To prevent reordering for a particular column, set the `allowReordering` property of that column to `false` in the column definition.
+By default, all columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid can be reordered when the grid-level [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowreordering) property is set to `true`. However, there may be specific columns that should remain in a fixed position and not be reordered. To prevent reordering for a particular column, set the `allowReordering` property of that column to `false` in the column definition.
 
 In the following example, the "ShipCity" column is prevented from being reordered by setting its `allowReordering` property to `false`:
 
@@ -182,7 +182,7 @@ This shows the method handling reordering of both normal and stacked header colu
 
 ## Column Reorder events
 
-The Angular Data Grid component provides events that are triggered during different stages of the column reordering process. These events make it possible to run custom actions or show the current status while columns are being reordered through drag-and-drop.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides events that are triggered during different stages of the column reordering process. These events make it possible to run custom actions or show the current status while columns are being reordered through drag-and-drop.
 
 The Grid component supports the following column reorder events:
 

@@ -216,7 +216,7 @@ The following example demonstrates hiding the default filter icons while filteri
 
 ## Filter menu events
 
-The Angular Data Grid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, an argument named `requestType` specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action) being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, custom logic can be implemented or messages displayed.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, an argument named `requestType` specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action) being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, custom logic can be implemented or messages displayed.
 
 **Event types and their purposes**:
 

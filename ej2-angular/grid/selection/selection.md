@@ -145,7 +145,7 @@ Persist selection maintains selected items across data manipulation and grid ref
 To enable persist selection, set the [selectionSettings.persistSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#persistselection) property to `true`.
 
 > * Persist selection requires at least one "primary key" column in the grid for proper identification and retention of selected items. set the [column.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/columnmodel#isprimarykey) as `true` to define the "primary key" column.
-> * The `persistSelection` feature is not supported for cell selections in the Angular Data Grid component.
+> * The `persistSelection` feature is not supported for cell selections in the Syncfusion<sup style="font-size:70%">&reg;</sup> angular Grid component.
 > * The `persistSelection` feature is only supported for grid `Multiple` type selections.
 
 The following example demonstrates persist selection for rows and columns using the `selectionSettings.persistSelection` property:

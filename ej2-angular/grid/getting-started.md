@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Grid Component
 
-This guide demonstrates how to set up and configure the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component, from initial installation through enabling core features like paging, sorting, filtering, and grouping.
+This guide demonstrates how to set up and configure the Syncfusion Angular Grid component, from initial installation through enabling core features like paging, sorting, filtering, and grouping.
 
 > Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
@@ -76,7 +76,7 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding Angular Data Grid packages
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid packages
 
 To install the Grid component, use the following command:
 
@@ -128,8 +128,6 @@ bootstrapApplication(App, appConfig)
 ```bash
 ng serve --open
 ```
-
-N> Looking for the full Angular Data Grid component overview, features, pricing, and documentation? Visit the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) page.
 
 ## See also
 

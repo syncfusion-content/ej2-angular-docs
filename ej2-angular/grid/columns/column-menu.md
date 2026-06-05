@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column menu in Angular Grid Component
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides a built-in column menu that offers quick access to essential column operations, such as sorting, grouping, filtering, column chooser, and autofit. This menu appears when the menu icon in a column header is clicked, enabling streamlined interaction with grid data. The column menu can be enabled by setting the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid#showcolumnmenu) property to `true` in the Grid configuration and injecting the `ColumnMenuService` module to the providers array.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a built-in column menu that offers quick access to essential column operations, such as sorting, grouping, filtering, column chooser, and autofit. This menu appears when the menu icon in a column header is clicked, enabling streamlined interaction with grid data. The column menu can be enabled by setting the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid#showcolumnmenu) property to `true` in the Grid configuration and injecting the `ColumnMenuService` module to the providers array.
 
 The default column menu items are displayed in the following table.
 
@@ -59,7 +59,7 @@ The following example demonstrates disabling the column menu for the "Order ID" 
 
 ## Adding custom column menu items
 
-The custom column menu item feature in Angular Data Grid allows extending the default column menu with additional options or replacing it entirely with custom items, depending on requirements. These items are defined using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuItemModel) objects. Each object specifies attributes such as `text`, `id`, and `iconCss` to represent the custom menu item.
+The custom column menu item feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows extending the default column menu with additional options or replacing it entirely with custom items, depending on requirements. These items are defined using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuitems) property, which accepts a collection of [columnMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuItemModel) objects. Each object specifies attributes such as `text`, `id`, and `iconCss` to represent the custom menu item.
 
 The functionality of these items is implemented through the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid#columnmenuclick) event. This event is triggered whenever a menu item is selected, enabling identification of the item by its `id` and execution of the corresponding action.
 
@@ -97,7 +97,7 @@ The following example demonstrates hiding the `Filter` item in the column menu f
 
 ## Render nested column menu
 
-Nested column menus in the Angular Data Grid provide an organized way to display extended options within column headers. Instead of listing all actions at the same level, items can be grouped into sub-menus, making the menu easier to navigate and more structured. This feature is enabled through the `columnMenuItems` property, which accepts an array of built-in menu item strings or custom menu item objects. By defining items with nested structures, additional actions related to a column can be grouped logically under sub-menus.
+Nested column menus in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provide an organized way to display extended options within column headers. Instead of listing all actions at the same level, items can be grouped into sub-menus, making the menu easier to navigate and more structured. This feature is enabled through the `columnMenuItems` property, which accepts an array of built-in menu item strings or custom menu item objects. By defining items with nested structures, additional actions related to a column can be grouped logically under sub-menus.
 
 The `columnMenuItems` property can be set up to include a nested menu, such as "Sub Menu", alongside the existing default column menu items. This allows the column menu to display both the standard options and additional grouped actions within a structured sub-menu.
 
@@ -150,7 +150,7 @@ Here is an example that demonstrates customizing the column menu icon in the Syn
 
 ## Column menu events
 
-Column menu events in the Angular Data Grid provide ways to customize behavior when the menu is opened or when an item is clicked. These events make it possible to extend functionality or apply specific logic based on user interactions.
+Column menu events in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provide ways to customize behavior when the menu is opened or when an item is clicked. These events make it possible to extend functionality or apply specific logic based on user interactions.
 
 | Event | Description |
 |-------|-------------|

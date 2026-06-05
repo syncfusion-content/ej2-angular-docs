@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Globalization in Angular Grid Component
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides a Globalization feature (global and local) that enhances application accessibility for people from different regions and language backgrounds. Data can be displayed in preferred languages and formats, improving the overall user experience.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides a Globalization feature (global and local) that enhances application accessibility for people from different regions and language backgrounds. Data can be displayed in preferred languages and formats, improving the overall user experience.
 
 ## Localization
 
-The Angular Data Grid includes a built-in [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) library that allows customization of text used in the grid to match different languages or cultural preferences. The library enables changing static text on various elements such as the group drop area and pager information to languages like "Arabic", "German", "French", and more.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid includes a built-in [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) library that allows customization of text used in the grid to match different languages or cultural preferences. The library enables changing static text on various elements such as the group drop area and pager information to languages like "Arabic", "German", "French", and more.
 
 Define the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) property and a translation object to configure localized text.
 
@@ -289,7 +289,7 @@ The following example demonstrates loading a translation object for "French (fr)
 
 ### Switch the different localization
 
-The Angular Data Grid supports switching localization between cultures, allowing dynamic changes based on application requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports switching localization between cultures, allowing dynamic changes based on application requirements.
 
 Switching localization requires the following steps:
 
@@ -327,7 +327,7 @@ An example demonstrates switching to the "French" culture and setting the curren
 
 ### Set different locale text for two Grids in same page
 
-The Angular Data Grid allows configuring different [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) settings for multiple Grids displayed on the same page. By using the `L10n.load` function to define translations for specific languages so each Grid applies the appropriate localized text for headers, toolbar items, and action buttons.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows configuring different [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) settings for multiple Grids displayed on the same page. By using the `L10n.load` function to define translations for specific languages so each Grid applies the appropriate localized text for headers, toolbar items, and action buttons.
 
 For example, one Grid can use the "fr-FR" locale to display "French" text, while another Grid uses "en-US" and keeps the default "English" text. This shows that each Grid can have its own localization without affecting the others
 

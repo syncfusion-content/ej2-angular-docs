@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Template in Angular Grid Component
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that enables rendering custom elements in a column instead of the default field value. This feature is ideal for displaying images, buttons, hyperlinks, or other custom content within a column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that enables rendering custom elements in a column instead of the default field value. This feature is ideal for displaying images, buttons, hyperlinks, or other custom content within a column.
 
 > When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for grid actions like sorting, filtering, or editing. It is essential to define the `field` property of the column to perform any grid actions.
 
@@ -121,7 +121,7 @@ export class AppComponent implements OnInit {
 
 ## Render other components in a column
 
-The Angular Data Grid supports rendering custom components in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property. This allows integration of Syncfusion components like LineChart, ColorPicker, or DropDownList within a grid column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports rendering custom components in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property. This allows integration of Syncfusion components like LineChart, ColorPicker, or DropDownList within a grid column.
 
 > To support grid actions like editing with custom components, configure the `editSettings` property (e.g., `{ allowEditing: true, mode: 'Normal' }`). Refer to the [editSettings documentation](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings) for details.
 
@@ -304,7 +304,7 @@ The following example shows the Progress Bar component in the Grid "Freight" col
 
 ### Render RadioButton in a column 
 
-The Angular Data Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) within a column using the `template` property. This feature is useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) within a column using the `template` property. This feature is useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
 
 The following example demonstrates rendering a RadioButton in the "Order Status" column of the Grid by defining the `template` property.
 
@@ -361,7 +361,7 @@ The following example demonstrates rendering a checkbox conditionally based on t
 
 ## Getting the row object by clicking on the template element
 
-The Angular Data Grid allows retrieving the row object of a selected record when clicking a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) element. This is useful for performing custom actions based on the selected record.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows retrieving the row object of a selected record when clicking a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) element. This is useful for performing custom actions based on the selected record.
 
 The following example demonstrates a button element rendered in the "Employee Data" column with an `onClick` event handler that calls the "showDetails" method. The method receives the complete row data object as a parameter, which provides access to all field values for that record and enables displaying the information in a dialog popup.
 
@@ -503,11 +503,11 @@ The following example demonstrates adding a template column using an external bu
 
 ## Enhancing Grid performance by enabling or disabling Aria Labels
 
-By default, the Angular Data Grid automatically adds custom "aria-label" attributes to template cells. These attributes combine the cell value, the identifier "is template cell", and the column header name. Aria labels are accessibility features that help screen readers understand the content and purpose of cells.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid automatically adds custom "aria-label" attributes to template cells. These attributes combine the cell value, the identifier "is template cell", and the column header name. Aria labels are accessibility features that help screen readers understand the content and purpose of cells.
 
 However, in applications with many template columns, these labels can slightly impact rendering performance. To improve performance, disable aria labels for non-critical template columns by setting the `enableAriaLabel` property to `false` in the `templateOptions` of those columns. If accessibility support is required, set it to `true` to retain aria labels.
 
-The following example enables Aria labels for the "Employee Image" column and disables them for the "First Name" column in the Angular Data Grid.
+The following example enables Aria labels for the "Employee Image" column and disables them for the "First Name" column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
