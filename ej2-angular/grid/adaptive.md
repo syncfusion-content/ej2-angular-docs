@@ -251,7 +251,7 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/adaptive-cs3" %}
 
-N> N> Looking for the full responsive Angular Data Grid component overview, features, pricing, and documentation? Visit the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) page.
+N> Looking for the full responsive Angular Charts component overview, features, pricing, and documentation? Visit the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) page.
 
 ## See Also
 
