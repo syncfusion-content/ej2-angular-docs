@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Toolbar in Angular Grid Component
 
-The toolbar in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing users to generate downloadable files in formats like Excel, CSV, or PDF.
+The toolbar in the Angular Data Grid component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing users to generate downloadable files in formats like Excel, CSV, or PDF.
 
 Enable the toolbar by injecting `ToolbarService` in the providers section. This service provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom toolbar items.
 
@@ -48,7 +48,7 @@ In the following example, the [EJ2 Toggle Switch Button component](https://ej2.s
 
 ## Add toolbar at the bottom of the Grid
 
-By default, the toolbar is placed at the top of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid. Adding the toolbar at the bottom of the grid keeps important actions and functionality consistently visible and easily accessible, eliminating the need for scrolling to locate toolbar operations.
+By default, the toolbar is placed at the top of the Angular Data Grid. Adding the toolbar at the bottom of the grid keeps important actions and functionality consistently visible and easily accessible, eliminating the need for scrolling to locate toolbar operations.
 
 To add the toolbar at the bottom of the grid, use the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event. By handling this event, the toolbar items can be dynamically inserted at the desired position in the grid layout.
 
@@ -68,7 +68,7 @@ The following example shows adding toolbar items at the bottom using the grid's 
 
 ## Customize toolbar buttons using CSS
 
-Enhance the visual presentation of toolbar buttons in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid by modifying their appearance with CSS styles. This flexible approach creates a cohesive user interface tailored to application design requirements.
+Enhance the visual presentation of toolbar buttons in the Angular Data Grid by modifying their appearance with CSS styles. This flexible approach creates a cohesive user interface tailored to application design requirements.
 
 The appearance of the built-in toolbar buttons can be modified by applying the following CSS styles.
 

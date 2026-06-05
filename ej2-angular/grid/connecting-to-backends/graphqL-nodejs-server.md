@@ -35,7 +35,7 @@ domainurl: ##DomainURL##
 | # | Topics | Link |
 |---|--------|-------|
 | 1 | Set up and configure the GraphQL backend using Node.js | [View](#setting-up-the-graphql-backend-using-nodejs) |
-| 2 | Integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with the GraphQL API | [View](#integrating-syncfusion-angular-grid-with-graphql) |
+| 2 | Integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with the GraphQL API | [View](#integrating-syncfusion-angular-grid-with-graphql) |
 | 3 | Implement data operations including filtering, searching, sorting, and paging | [View](#step-4-add-toolbar-with-crud-and-search-options) |
 | 4 | Perform CRUD operations | [View](#step-9-perform-crud-operations) |
 | 5 | Run the GraphQL application | [View](#running-the-application) |
@@ -43,7 +43,7 @@ domainurl: ##DomainURL##
 
 ## Setting up the GraphQL backend using Node.js
 
-The GraphQL backend acts as the central data service, handling queries and mutations that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
+The GraphQL backend acts as the central data service, handling queries and mutations that power the Angular Data Grid.
 
 ### Step 1: Create the GraphQL server and install required packages
 
@@ -345,7 +345,7 @@ Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages 
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
 ```
-- `@syncfusion/ej2-angular-grids` – Required for using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
+- `@syncfusion/ej2-angular-grids` – Required for using the Angular Data Grid component.
 - `@syncfusion/ej2-data` – Provides data utilities for advanced data operations in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager.
 
 ### Step 2: Including required Syncfusion stylesheets
