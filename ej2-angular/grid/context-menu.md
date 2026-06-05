@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Context Menu in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component includes a context menu that appears on right-click anywhere within the grid. The context menu provides quick access to actions such as sorting, filtering, and editing without navigating away from the grid.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component includes a context menu that appears on right-click anywhere within the grid. The context menu provides quick access to actions such as sorting, filtering, and editing without navigating away from the grid.
 
 Enable the context menu by configuring the grid's [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenuitems) property. The property accepts the default set of menu items or a custom collection of objects.
 
@@ -88,7 +88,7 @@ The following example demonstrates enabling the context menu feature in the grid
 
 ## Custom context menu items
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports adding custom context menu items to the default menu.
+The Angular Data Grid supports adding custom context menu items to the default menu.
 
 Custom items are defined by setting the `contextMenuItems` property to a collection of [contextMenuItemModel](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenumodule) objects. Menu item actions are handled through the [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#contextmenuclick) event.
 
@@ -130,7 +130,7 @@ The following example demonstrates showing the context menu on left click using 
 
 ## Enable or disable context menu items
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports enabling or disabling default and custom context menu items via the context menu's [enableItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#enableitems) method. Call `enableItems` with `true` to enable items or `false` to disable them.
+The Angular Data Grid supports enabling or disabling default and custom context menu items via the context menu's [enableItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#enableitems) method. Call `enableItems` with `true` to enable items or `false` to disable them.
 
 The example below uses the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component to toggle a menu item. When the switch changes state, the `change` event updates the `Copy` item by calling `enableItems`.
 
@@ -147,7 +147,7 @@ The example below uses the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com
 
 ## Show or hide context menu items
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports showing or hiding default and custom context menu items using the context menu's [showItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#showitems) and [hideItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#hideitems) methods. Pass the target items as an argument to these methods.
+The Angular Data Grid supports showing or hiding default and custom context menu items using the context menu's [showItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#showitems) and [hideItems](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#hideitems) methods. Pass the target items as an argument to these methods.
 
 The example below demonstrates the use of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component. Its `change` event triggers either `showItems` or `hideItems` to modify the `Edit Record` and `Delete Record` items accordingly.
 

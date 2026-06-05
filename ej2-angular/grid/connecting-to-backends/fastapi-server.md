@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connecting the Syncfusion Angular Grid with FastAPI backend
 
-[FastAPI](https://fastapi.tiangolo.com/) is a modern, high‑performance Python web framework for building RESTful APIs with automatic OpenAPI documentation and robust validation. In a REST architecture, the server exposes resource‑oriented endpoints and relies on standard HTTP verbs while the client exchanges well structured JSON payloads. FastAPI combines asynchronous I/O, type hints, and Pydantic validation to produce low‑latency APIs that Angular applications can call reliably. This design is particularly effective for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid because every grid action translates to a predictable JSON contract that the backend can process consistently and efficiently. 
+[FastAPI](https://fastapi.tiangolo.com/) is a modern, high‑performance Python web framework for building RESTful APIs with automatic OpenAPI documentation and robust validation. In a REST architecture, the server exposes resource‑oriented endpoints and relies on standard HTTP verbs while the client exchanges well structured JSON payloads. FastAPI combines asynchronous I/O, type hints, and Pydantic validation to produce low‑latency APIs that Angular applications can call reliably. This design is particularly effective for the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) because every grid action translates to a predictable JSON contract that the backend can process consistently and efficiently. 
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ domainurl: ##DomainURL##
 | 1 | Configure a FastAPI REST backend that implements the Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager POST contract | [View](#setting-up-the-fastapi-backend) |
 | 2 | Implement server‑side data operations—including paging, sorting, searching, filtering | [View](#perform-server-side-data-operations) |
 | 3 | Add full CRUD support with insert, update, and delete operations persisted on the server | [View](#perform-server-side-crud-operations) |
-| 4 | Integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with the backend using DataManager and the UrlAdaptor | [View](#integrating-syncfusion-angular-grid-with-fastapi) |
+| 4 | Integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with the backend using DataManager and the UrlAdaptor | [View](#integrating-syncfusion-angular-grid-with-fastapi) |
 | 5 | Run the FastAPI and Angular applications locally for development | [View](#running-the-application) |
 | 6 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
 
@@ -709,7 +709,7 @@ At this point, the server configuration supports all Grid data operations, inclu
 
 ## Integrating Syncfusion Angular Grid with FastAPI
 
-This section demonstrates binding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid to a FastAPI endpoint using the DataManager and the `UrlAdaptor`. The DataManager standardizes the way the Grid serializes its actions into a request body, and the `UrlAdaptor` formats the transport to align with a RESTful endpoint that accepts POST requests for both reads and mutations.
+This section demonstrates binding the Angular Data Grid to a FastAPI endpoint using the DataManager and the `UrlAdaptor`. The DataManager standardizes the way the Grid serializes its actions into a request body, and the `UrlAdaptor` formats the transport to align with a RESTful endpoint that accepts POST requests for both reads and mutations.
 
 [DataManager]((https://ej2.syncfusion.com/angular/documentation/data/getting-started)) is a data layer that sends all Grid actions (read, sort, filter, search, paging, CRUD) to the backend. It standardizes the way components communicate with remote services and handles query serialization.
 
@@ -1045,7 +1045,7 @@ Open the URL shown in the terminal which is typically **http://localhost:4200/**
 
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-fastapi-server-master) repository.
 
-The application demonstrates a complete product management workflow with a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid connected to a Python FastAPI REST backend through a single, predictable transport.
+The application demonstrates a complete product management workflow with a Angular Data Grid connected to a Python FastAPI REST backend through a single, predictable transport.
 
 ## See also
 

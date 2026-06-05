@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Displaying Custom Templates in Angular Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid permits the use of custom helper functions within `ng-template` directives inside column templates. This enables creating complex, data-driven templates and integrating utility logic for formatting or display customization.
+The Angular Data Grid permits the use of custom helper functions within `ng-template` directives inside column templates. This enables creating complex, data-driven templates and integrating utility logic for formatting or display customization.
 
 In the example below, the "Customer Rating" column uses a custom template with the `*ngFor` directive to iterate through an array and generate a collection of `<span>` elements representing stars. The `ngClass` directive is used in conjunction with a helper method (such as `isRatingGreater`) to dynamically set CSS classes for each star, supporting custom logic for interactive or conditionally styled UI.
 

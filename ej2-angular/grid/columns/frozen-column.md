@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Column Pinning (Frozen) in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component enables pinning (freezing) columns to lock them in place on the left, right, or a fixed position, ensuring they remain visible during horizontal scrolling. This feature ensures that essential data, such as identifiers or action buttons, remains accessible while navigating large datasets.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component enables pinning (freezing) columns to lock them in place on the left, right, or a fixed position, ensuring they remain visible during horizontal scrolling. This feature ensures that essential data, such as identifiers or action buttons, remains accessible while navigating large datasets.
 
 > Frozen columns require careful configuration to avoid rendering issues. Ensure they are within the grid’s viewport and test rendering across different screen sizes for responsiveness.
 
 ## Freeze multiple columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows freezing multiple columns using the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) property, which specifies the number of columns to freeze on the left side. This ensures that the specified columns remain fixed while the remaining columns can be scrolled horizontally.
+The Angular Data Grid allows freezing multiple columns using the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) property, which specifies the number of columns to freeze on the left side. This ensures that the specified columns remain fixed while the remaining columns can be scrolled horizontally.
 
 The following example sets the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) property to "2", freezing the first two columns on the left side of the grid.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component follows major accessibility guidelines and standards, including the [Americans with Disabilities Act (ADA)](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and [WAI‑ARIA roles](https://www.w3.org/TR/wai-aria#roles). These standards ensure the grid is usable with assistive technologies and keyboard‑only navigation.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component follows major accessibility guidelines and standards, including the [Americans with Disabilities Act (ADA)](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and [WAI‑ARIA roles](https://www.w3.org/TR/wai-aria#roles). These standards ensure the grid is usable with assistive technologies and keyboard‑only navigation.
 
 The accessibility compliance for the Grid component is outlined below.
 
@@ -206,7 +206,7 @@ The Grid provides keyboard navigation and follows WAI‑ARIA [keyboard interacti
 
 ### Preventing Default Key Actions
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the capability to disable the default key action behavior according to application needs. This allows the application to intercept and modify the response when specific keys are pressed within the web interface.
+The Angular Data Grid provides the capability to disable the default key action behavior according to application needs. This allows the application to intercept and modify the response when specific keys are pressed within the web interface.
 
 To disable the default key action in the grid, use the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#keypressed) event.
 
@@ -224,7 +224,7 @@ To disable the default key action in the grid, use the [keyPressed](https://ej2.
 
 ### Custom shortcut keys to perform grid actions
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows improving the usability of keyboard shortcuts for various grid actions and navigation.
+The Angular Data Grid component allows improving the usability of keyboard shortcuts for various grid actions and navigation.
 
 Besides the built-in keyboard navigation features, custom keyboard shortcuts can be created to perform specific tasks.
 
@@ -246,7 +246,7 @@ Additionally, the default actions for these keyboard shortcuts related to groupi
 * <kbd>Delete</kbd>
 * <kbd>Enter</kbd>
 
-Add further custom shortcuts and actions as required to enhance the capabilities of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component.
+Add further custom shortcuts and actions as required to enhance the capabilities of the Angular Data Grid component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

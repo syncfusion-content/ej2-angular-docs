@@ -24,7 +24,7 @@ To configure this in the grid, use the following properties on the `AggregateCol
 
 Group footer aggregates appear in the footer row of each group and display summary values calculated from that group's records. To render values in the group footer, use the `groupFooterTemplate` property in the `AggregateColumnDirective`.
 
-The following example displays the sum of the "Freight" field in the footer of each group using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:
+The following example displays the sum of the "Freight" field in the footer of each group using the Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,7 +66,7 @@ The following example displays the sum of the "Freight" field in the footer of e
 
 Group caption aggregates are displayed in the caption cells at the top of each group, providing a quick summary of the grouped data. To render these aggregates, use the [groupCaptionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupcaptiontemplate) property, which allows to display aggregate values in the group caption cells.
 
-The following example displays the max of the "Freight" field in the each group caption cell using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid:
+The following example displays the max of the "Freight" field in the each group caption cell using the Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,7 +106,7 @@ The following example displays the max of the "Freight" field in the each group 
 
 ## Disable page wise aggregates for grouping
 
-In some cases, disabling the page-wise aggregates for grouping is necessary. By default, when grouping is enables with pagination, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid calculates group aggregates only for the current page.
+In some cases, disabling the page-wise aggregates for grouping is necessary. By default, when grouping is enables with pagination, the Angular Data Grid calculates group aggregates only for the current page.
 
 To calculate aggregates across the entire grouped data, set the [groupSettings.disablePageWiseAggregates](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablepagewiseaggregates) property to `true`.
 

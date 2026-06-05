@@ -119,3 +119,5 @@ For comprehensive guidance on OnPush implementation and handling child component
 Microsoft Excel supports a maximum of "1,048,576" records per worksheet, making it unsuitable for exporting millions of records. For large datasets, export data in CSV (Comma-Separated Values) format or other formats designed for handling substantial data volumes more efficiently than Excel.
 
 Consider implementing chunked exports or server-side export processing for datasets exceeding Excel limitations. Refer to [Microsoft Excel specifications and limits](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) for detailed information on Excel constraints.
+
+N> Looking for the Angular Data Grid component high performance, features, pricing, and documentation? Visit the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid/performance) page.
