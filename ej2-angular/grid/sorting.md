@@ -119,7 +119,7 @@ The following example demonstrates defining a custom `sortComparer` function for
 
 ### Display null values always at bottom 
 
-By default, "null" values in a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid are displayed at the top when sorting in descending order and at the bottom when sorting in ascending order. However, "null" values can be configured to always display at the bottom of the grid regardless of sort direction. This is achieved by utilizing the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column#sortcomparer) method. This feature is particularly useful when working with data sets where "null" values need to be clearly separated from actual data entries.
+By default, "null" values in a Angular Data Grid are displayed at the top when sorting in descending order and at the bottom when sorting in ascending order. However, "null" values can be configured to always display at the bottom of the grid regardless of sort direction. This is achieved by utilizing the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column#sortcomparer) method. This feature is particularly useful when working with data sets where "null" values need to be clearly separated from actual data entries.
 
 The example below demonstrates displaying "null" values at the bottom of the grid while sorting the "Order Date" column in both ascending and descending order.
 

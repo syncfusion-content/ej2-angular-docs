@@ -292,7 +292,7 @@ The following example demonstrates a complete implementation with Angular and AS
 
 **Step 2:** Create a simple Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
 
-**Step 3:** In the Angular component HTML file (e.g., **src/app.component.html**), define the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with the necessary configurations, including a foreign key column for "EmployeeID":
+**Step 3:** In the Angular component HTML file (e.g., **src/app.component.html**), define the Angular Data Grid with the necessary configurations, including a foreign key column for "EmployeeID":
 
 ```typescript
 <ejs-grid #grid [dataSource]='data' [height]='260' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging="true">

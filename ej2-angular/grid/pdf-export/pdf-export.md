@@ -30,7 +30,7 @@ The following example demonstrates performing a PDF export action in the grid.
 
 ## Show spinner while exporting
 
-Displaying a spinner while exporting in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enhances the experience by providing visual indication during the export process. This indicates the export progress and prevents confusion about operation status.
+Displaying a spinner while exporting in the Angular Data Grid enhances the experience by providing visual indication during the export process. This indicates the export progress and prevents confusion about operation status.
 
 To show or hide a spinner while exporting the grid, use the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#hidespinner) methods within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event.
 
@@ -76,7 +76,7 @@ The following example demonstrates rendering a custom data source during PDF exp
 
 ## Exporting with custom aggregate
 
-Custom aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid export grid data with additional calculated values based on specific requirements. This feature displays a comprehensive data view in the exported file by incorporating aggregated information needed for analysis or reporting purposes.
+Custom aggregates in the Angular Data Grid export grid data with additional calculated values based on specific requirements. This feature displays a comprehensive data view in the exported file by incorporating aggregated information needed for analysis or reporting purposes.
 
 To utilize custom aggregation, specify the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) property as `Custom` and provide the `customAggregate` function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property.
 
@@ -170,7 +170,7 @@ interface itemType {
 
 ## Exporting with cell and row spanning
 
-Exporting data from the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with cell and row spanning maintains cell and row layout in the exported data. This feature is useful when the Grid contains merged cells or rows and the same structure needs preservation in the exported file.
+Exporting data from the Angular Data Grid with cell and row spanning maintains cell and row layout in the exported data. This feature is useful when the Grid contains merged cells or rows and the same structure needs preservation in the exported file.
 
 To achieve this, utilize the [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/querycellinfoeventargs#rowspan) and [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs#colspan) properties in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event of the Grid. This event allows definition of span values for specific cells. Additionally, customize the appearance of Grid cells during export using the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event of the Grid.
 
@@ -192,7 +192,7 @@ The following example demonstrates export with cell and row spanning using `quer
 
 ## Merge duplicate cells in specific column and export in Grid
 
-Duplicate cells(based on their values) in a specific column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid can be merged based on their values. This can be achieved by enabling the [enableRowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablerowspan) property in the Grid. Additionally, duplicate cells in the specified column can be merged during PDF export by using the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event. This feature enhances data readability and provides a clearer visual presentation both in the UI and in exported documents.
+Duplicate cells(based on their values) in a specific column of the Angular Data Grid can be merged based on their values. This can be achieved by enabling the [enableRowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablerowspan) property in the Grid. Additionally, duplicate cells in the specified column can be merged during PDF export by using the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event. This feature enhances data readability and provides a clearer visual presentation both in the UI and in exported documents.
 
 The following example demonstrates merging duplicate cells in the "Order ID" column in both Grid view and export:
 
@@ -210,7 +210,7 @@ The following example demonstrates merging duplicate cells in the "Order ID" col
 
 ## Exporting with custom date format
 
-The exporting functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid exports grid data with custom date formats. This feature is useful when exporting grid data requires customized date values.
+The exporting functionality in the Angular Data Grid exports grid data with custom date formats. This feature is useful when exporting grid data requires customized date values.
 
 To apply a custom date format to Grid columns during export, use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property. This property allows definition of a custom format using format options.
 
@@ -230,7 +230,7 @@ The following example demonstrates exporting Grid data with a custom date format
 
 ## Exporting multiple grids
 
-Exporting multiple grids in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid component exports different grids for side-by-side comparison in external applications on the same or different pages of a PDF file. Each grid is identified by its unique ID. Specify which grids to export by listing their "IDs" in the [exportGrids](https://ej2.syncfusion.com/angular/documentation/api/grid#exportgrids) property.
+Exporting multiple grids in the Angular Data Grid component exports different grids for side-by-side comparison in external applications on the same or different pages of a PDF file. Each grid is identified by its unique ID. Specify which grids to export by listing their "IDs" in the [exportGrids](https://ej2.syncfusion.com/angular/documentation/api/grid#exportgrids) property.
 
 ### Same page
 
@@ -282,7 +282,7 @@ Multiple grids exporting feature is not supported with server side exporting.
 
 ## Exporting hierarchy grid
 
-Exporting a hierarchy grid in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid component generates a PDF document that includes the master grid along with its child grids. This feature is useful when exporting hierarchical data with its related details.
+Exporting a hierarchy grid in the Angular Data Grid component generates a PDF document that includes the master grid along with its child grids. This feature is useful when exporting hierarchical data with its related details.
 
 To achieve this, customize the exporting behavior by using the `pdfExportProperties.hierarchyExportMode` property of the Grid.
 
@@ -310,7 +310,7 @@ The following example demonstrates exporting a hierarchical grid to a PDF docume
 
 ### Format the child grid columns before exporting
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid allows customization of the child Grid's PDF export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetaildatabound) event, which triggers for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the PDF document.
+The Angular Data Grid allows customization of the child Grid's PDF export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetaildatabound) event, which triggers for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the PDF document.
 
 In the following example, the `exportDetailDataBound` event modifies the "Order Date" column of the child Grid. By setting the column's [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property, the date values display as `dd/MM/yyyy` when exported to PDF document.
 
@@ -328,7 +328,7 @@ In the following example, the `exportDetailDataBound` event modifies the "Order 
 
 ## Remove header row while exporting
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid PDF exporting feature provides option to remove the header row from the exported file. This is useful when exporting grid data without including the header values in the exported document.
+The Angular Data Grid PDF exporting feature provides option to remove the header row from the exported file. This is useful when exporting grid data without including the header values in the exported document.
 
 To achieve this, utilize the [pdfHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfheaderquerycellinfo) event of the Grid. This event allows customization of the header cells during the PDF export process. By handling this event, remove the header row from the exported file by not providing any content and height for the header cells. This ensures that the exported file contains only the data rows without header information.
 

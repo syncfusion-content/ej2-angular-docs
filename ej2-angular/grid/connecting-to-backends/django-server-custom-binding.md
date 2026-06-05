@@ -36,7 +36,7 @@ In short, Custom Binding means the contract (requests and responses) is owned by
 | # | Topics | Link |
 |---|---------|------|
 | 1 | Set up Django REST Framework and connect it to Microsoft SQL Server | [View](#setting-up-the-django-rest-framework-for-microsoft-sql-database) |
-| 2 | Create and configure the Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid | [View](#integrate-syncfusion-angular-grid-with-django-rest-framework-custom-binding) |
+| 2 | Create and configure the Angular application with the Angular Data Grid | [View](#integrate-syncfusion-angular-grid-with-django-rest-framework-custom-binding) |
 | 3 | Handle server-side data operations (paging/sorting/filtering/searching) with Custom Binding | [View](#perform-data-operations) |
 | 4 | Enable create, update, and delete operations with Custom Binding | [View](#performing-crud-operations) |
 | 5 | Run the Django and Angular applications locally for development | [View](#running-the-application) |
@@ -468,7 +468,7 @@ ViewSet configured for RESTful reads and writes aligned with Custom Binding.
 
 ## Integrate Syncfusion Angular Grid with Django REST Framework (Custom Binding)
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
+The Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
 
 ### Step 1 : Creating the Angular client application
 
@@ -483,7 +483,7 @@ cd client
 
 This command creates an Angular application named **client** with the essential folder structure and files required to begin development immediately.
 
-The integration process begins by installing the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid packages before establishing the DRF API.
+The integration process begins by installing the required Angular Data Grid packages before establishing the DRF API.
 
 ### Step 2: Install Syncfusion Grid packages
 
@@ -789,7 +789,7 @@ The client service bridges Syncfusion<sup style="font-size:70%">&reg;</sup> Grid
 
 ### Step 6: Integrate Syncfusion Angular Grid with custom binding
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid custom databinding feature integrates with the Django REST API through event-driven calls. Grid actions (paging, sorting, filtering, searching) are sent via **dataStateChange**, and CRUD is sent via **dataSourceChanged**. The component uses the shared `apiClient` service (created in the previous step) to translate Grid state into DRF query parameters and to call REST endpoints.
+The Angular Data Grid custom databinding feature integrates with the Django REST API through event-driven calls. Grid actions (paging, sorting, filtering, searching) are sent via **dataStateChange**, and CRUD is sent via **dataSourceChanged**. The component uses the shared `apiClient` service (created in the previous step) to translate Grid state into DRF query parameters and to call REST endpoints.
 
 **Instructions:**
 
@@ -1167,7 +1167,7 @@ The complete folder structure looks like below:
 
 For a complete working implementation of this example, refer the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-custom-binding-with-django-server) repository.
 
-The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid front end.
+The application now offers a reliable, scalable solution for managing book lending records with a robust Django REST API on Microsoft SQL Server and a Angular Data Grid front end.
 
 ## See also
 

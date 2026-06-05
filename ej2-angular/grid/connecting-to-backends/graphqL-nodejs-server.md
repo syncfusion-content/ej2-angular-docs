@@ -43,7 +43,7 @@ domainurl: ##DomainURL##
 
 ## Setting up the GraphQL backend using Node.js
 
-The GraphQL backend acts as the central data service, handling queries and mutations that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid.
+The GraphQL backend acts as the central data service, handling queries and mutations that power the Angular Data Grid.
 
 ### Step 1: Create the GraphQL server and install required packages
 
@@ -345,7 +345,7 @@ Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages 
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
 ```
-- `@syncfusion/ej2-angular-grids` – Required for using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid component.
+- `@syncfusion/ej2-angular-grids` – Required for using the Angular Data Grid component.
 - `@syncfusion/ej2-data` – Provides data utilities for advanced data operations in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager.
 
 ### Step 2: Including required Syncfusion stylesheets

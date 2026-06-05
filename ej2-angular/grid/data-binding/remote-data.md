@@ -372,7 +372,7 @@ The Grid component provides powerful options for dynamically inserting, deleting
 
 **Integrating CRUD Operations**
 
-To implement CRUD operations using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid, follow these steps:
+To implement CRUD operations using Angular Data Grid, follow these steps:
 
 1. **Configure grid settings:** Set up the grid to allow editing, adding, and deleting operations, and specify the `toolbar` options that will provide access to these features.
 
@@ -954,7 +954,7 @@ The Grid component provides powerful options for dynamically inserting, deleting
 
 **Integrating CRUD Operations**
 
-To implement CRUD operations using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid, follow these steps:
+To implement CRUD operations using Angular Data Grid, follow these steps:
 
 1. **Configure grid settings:** Set up the grid to allow editing, adding, and deleting operations, and specify the `toolbar` options that will provide access to these features.
 

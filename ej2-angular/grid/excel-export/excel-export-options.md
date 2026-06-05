@@ -16,7 +16,7 @@ The Excel or CSV export action can be tailored using the [excelExportProperties]
 
 ## Export current page records
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid provides option to generate Excel or CSV documents that include only the currently displayed page records. This feature improves export performance and file size management by limiting the exported content to the visible page.
+The Angular Data Grid provides option to generate Excel or CSV documents that include only the currently displayed page records. This feature improves export performance and file size management by limiting the exported content to the visible page.
 
 To export the current page of the grid to an Excel or CSV document, specify the [exportType](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#exporttype) property. This property defines which records to export with two available options:
 
@@ -92,7 +92,7 @@ The following example demonstrates exporting grouped records to an Excel documen
 
 ## Export with hidden columns
 
-Hidden column export functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enables including hidden columns in the exported Excel document. This feature is useful when columns are hidden in the UI but still need to be included in the exported document for comprehensive data reporting.
+Hidden column export functionality in the Angular Data Grid enables including hidden columns in the exported Excel document. This feature is useful when columns are hidden in the UI but still need to be included in the exported document for comprehensive data reporting.
 
 To export hidden columns of the grid to an Excel or CSV file, set the [includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#includehiddencolumn) property to `true` in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) property.
 

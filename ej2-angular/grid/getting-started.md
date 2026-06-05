@@ -76,7 +76,7 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid packages
+## Adding Angular Data Grid packages
 
 To install the Grid component, use the following command:
 

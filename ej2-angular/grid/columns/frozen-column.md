@@ -16,7 +16,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https:/
 
 ## Freeze multiple columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid allows freezing multiple columns using the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) property, which specifies the number of columns to freeze on the left side. This ensures that the specified columns remain fixed while the remaining columns can be scrolled horizontally.
+The Angular Data Grid allows freezing multiple columns using the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) property, which specifies the number of columns to freeze on the left side. This ensures that the specified columns remain fixed while the remaining columns can be scrolled horizontally.
 
 The following example sets the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#frozencolumns) property to "2", freezing the first two columns on the left side of the grid.
 

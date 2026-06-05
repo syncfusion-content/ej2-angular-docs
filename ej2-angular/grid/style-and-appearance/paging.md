@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Paging Customization in Angular Grid Component
 
-The appearance of the paging elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid component can be customized using CSS. Here are examples for customizing the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and the pager current page numeric element.
+The appearance of the paging elements in the Angular Data Grid component can be customized using CSS. Here are examples for customizing the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and the pager current page numeric element.
 
 ## Customize the Grid pager root
 

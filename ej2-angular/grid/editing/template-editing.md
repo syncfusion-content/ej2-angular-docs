@@ -89,7 +89,7 @@ The following code example demonstrates the usage of the `isAdd` property in an 
 
 ### Render editors as components
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid provides a powerful feature enabling dynamic rendering of Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 controls as form editors during the editing process. This functionality delivers feature-rich controls for data entry within the edit form.
+The Angular Data Grid provides a powerful feature enabling dynamic rendering of Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 controls as form editors during the editing process. This functionality delivers feature-rich controls for data entry within the edit form.
 
 To achieve this by utilizing the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the Grid and specifying `requestType` as `beginEdit` or `add`.
 
@@ -108,7 +108,7 @@ The following code example illustrates rendering the `DropDownList` component in
 
 ### Get value from editor
 
-The get value from editor feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enables reading, formatting, and updating the current editor value before saving. This feature provides significant value when specific actions must be performed on data, such as formatting or validation, before committing to the underlying data source.
+The get value from editor feature in the Angular Data Grid enables reading, formatting, and updating the current editor value before saving. This feature provides significant value when specific actions must be performed on data, such as formatting or validation, before committing to the underlying data source.
 
 To implement this feature, utilize the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event with the `requestType` set to `save`.
 
@@ -125,7 +125,7 @@ In the following code example, the freight value has been formatted and updated.
 
 ### Set focus to a particular column editor
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enables control of focus behavior for input elements in edit forms. By default, the first input element in the dialog receives focus when the dialog is opened. However, when the first input element is disabled or hidden, a different valid input element can receive focus. This can be achieved using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid, where the `requestType` is set to `beginEdit`.
+The Angular Data Grid enables control of focus behavior for input elements in edit forms. By default, the first input element in the dialog receives focus when the dialog is opened. However, when the first input element is disabled or hidden, a different valid input element can receive focus. This can be achieved using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid, where the `requestType` is set to `beginEdit`.
 
 In the following code example, the "Customer ID" column receives focus.
 
@@ -140,7 +140,7 @@ In the following code example, the "Customer ID" column receives focus.
 
 ### Disable default form validation
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid provides built-in support for [Angular form validation](https://v17.angular.io/guide/form-validation) to ensure data integrity and accuracy during editing. Scenarios may arise where disabling the default form validation rules is necessary. This can be achieved using the [removeRules](https://helpej2.syncfusion.com/documentation/api/form-validator#removerules) method within the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid.
+The Angular Data Grid provides built-in support for [Angular form validation](https://v17.angular.io/guide/form-validation) to ensure data integrity and accuracy during editing. Scenarios may arise where disabling the default form validation rules is necessary. This can be achieved using the [removeRules](https://helpej2.syncfusion.com/documentation/api/form-validator#removerules) method within the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid.
 
 To disable default form validation rules in the grid, use the following approach:
 
@@ -157,7 +157,7 @@ To disable default form validation rules in the grid, use the following approach
 
 ### Add validation rules for custom editors
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid provides the ability to add validation rules for fields not present in the column model. This feature prevents erroneous or inconsistent data from being submitted, enhancing the reliability of application data.
+The Angular Data Grid provides the ability to add validation rules for fields not present in the column model. This feature prevents erroneous or inconsistent data from being submitted, enhancing the reliability of application data.
 
 To add validation rules, utilize the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event along with the [addRules](https://ej2.syncfusion.com/documentation/api/form-validator#addrules) method. The following approach uses the `addRules` method to add validation rules for custom editors in the `actionComplete` event:
 

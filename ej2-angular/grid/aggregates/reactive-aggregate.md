@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Reactive Aggregate in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid supports reactive aggregates, which automatically recalculate and update aggregate values in real time whenever the data changes.
+The Angular Data Grid supports reactive aggregates, which automatically recalculate and update aggregate values in real time whenever the data changes.
 
 ## Auto-update aggregates in Batch editing
 

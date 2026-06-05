@@ -42,7 +42,7 @@ domainurl: ##DomainURL##
 
 ## Setting up the Flask backend using Python
 
-The Flask backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid.
+The Flask backend acts as the central REST API service, handling HTTP requests and responses that power the Angular Data Grid.
 
 ### Step 1: Create the Flask server and install required packages
 
@@ -429,7 +429,7 @@ cd client
 
 ### Step 2: Install Syncfusion packages
 
-Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid and DataManager packages:
+Install the Angular Data Grid and DataManager packages:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -493,7 +493,7 @@ export class AppComponent implements AfterViewInit {
 
 ### Step 5: Integrate Syncfusion Angular Grid with custom data binding
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid custom data binding feature seamlessly integrates with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application-specific workflows and enabling efficient handling of large datasets. The custom data binding feature interacts with backend APIs through two key events.
+The Angular Data Grid custom data binding feature seamlessly integrates with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application-specific workflows and enabling efficient handling of large datasets. The custom data binding feature interacts with backend APIs through two key events.
 
 - [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange): Triggered when the Grid performs actions such as paging, sorting, or filtering. It provides the current state details (skip, take, sorted, where, search), which are sent to the API so the request can be processed and data returned in the required `{ result:[], count:100 }` format.
 

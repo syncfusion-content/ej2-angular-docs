@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Connecting SQL Server to Angular Grid Using ASP.NET Core Web API
 
-The [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a Microsoft SQL Server database through an ASP.NET Core Web API using ADO.NET SqlClient. This modern architecture provides a secure and scalable alternative to accessing the database directly from the client, while enabling efficient server‑side processing for paging, sorting, and filtering. By leveraging Angular for the UI and ASP.NET Core with SqlClient for data access, applications maintain a clear separation between presentation and data layers and retain full control over SQL Server interactions.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a Microsoft SQL Server database through an ASP.NET Core Web API using ADO.NET SqlClient. This modern architecture provides a secure and scalable alternative to accessing the database directly from the client, while enabling efficient server‑side processing for paging, sorting, and filtering. By leveraging Angular for the UI and ASP.NET Core with SqlClient for data access, applications maintain a clear separation between presentation and data layers and retain full control over SQL Server interactions.
 
 **What is Microsoft SqlClient?**
 
@@ -685,7 +685,7 @@ This completes the Angular UI setup required to display and manage ticket data u
 
 ### Step 4: Implement the CustomAdaptor
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
+The Angular Data Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
 The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using ADO.NET SqlClient to query the SQL Server database and return the results.
 
@@ -1745,7 +1745,7 @@ ng serve --open
 
 A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-database/syncfusion-angular-grid-MSSQL).
 
-The application now provides a complete end‑to‑end ticket management workflow using the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid with server‑side processing and direct integration with Microsoft SQL Server.
+The application now provides a complete end‑to‑end ticket management workflow using the Angular Data Grid with server‑side processing and direct integration with Microsoft SQL Server.
 
 ## See also
 

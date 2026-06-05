@@ -48,7 +48,7 @@ domainurl: ##DomainURL##
 
 ## Setting up the GraphQL backend using Apollo
 
-The Apollo GraphQL backend acts as the primary data layer, handling all queries and mutations required by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid.
+The Apollo GraphQL backend acts as the primary data layer, handling all queries and mutations required by the Angular Data Grid.
 
 ### Step 1: Create the GraphQL server and Install required packages
 
@@ -510,7 +510,7 @@ cd GridClient
 ```
 This creates an Angular application named **GridClient**, which serves as the base for configuring the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and displaying data retrieved from the server.
 
-The integration process begins by installing the required Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid packages before establishing the GraphQL connection.
+The integration process begins by installing the required Angular Data Grid packages before establishing the GraphQL connection.
 
 ### Step 1: Adding Syncfusion packages
 
@@ -520,7 +520,7 @@ To use Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component and Datam
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data
 ```
-- `@syncfusion/ej2-angular-grids` –  required to use the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid component.
+- `@syncfusion/ej2-angular-grids` –  required to use the Angular Data Grid component.
 - `@syncfusion/ej2-data` – Provides data utilities for binding and manipulating Grid data.
 
 ### Step 2: Including required Syncfusion stylesheets
@@ -1245,7 +1245,7 @@ The backend GraphQL resolver receives this nested structure through the `where` 
 
 CRUD operations (Create, Read, Update, Delete) allow users to manage data through the Grid. The Grid provides built-in dialogs and buttons to perform these operations, while the backend resolvers handle the actual data modifications.
 
-To enable editing features in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid, configure the Grid's `editSettings` and provide the required services `ToolbarService` and `EditService` in the component metadata.
+To enable editing features in the Angular Data Grid, configure the Grid's `editSettings` and provide the required services `ToolbarService` and `EditService` in the component metadata.
 
  ```html
  [app.component.html]

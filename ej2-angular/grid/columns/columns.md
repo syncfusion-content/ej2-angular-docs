@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Grid Component
 
-In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid, columns are the fundamental building blocks that display data from a data source. Each column maps to a specific field in the data source and is responsible for rendering values in the required format. For example, a dataset containing customer details such as "ID", "Name", "Email", and "Purchase Date" will present each field as an individual column in the Grid.
+In Angular Data Grid, columns are the fundamental building blocks that display data from a data source. Each column maps to a specific field in the data source and is responsible for rendering values in the required format. For example, a dataset containing customer details such as "ID", "Name", "Email", and "Purchase Date" will present each field as an individual column in the Grid.
 
 A column definition commonly includes the following properties:
 - `field`: The [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) property establishes the connection between the dataset and the column by mapping a data source field to a grid column. This property is required for performing data operations between the Grid and the data source.
@@ -113,7 +113,7 @@ The Grid allocates column space using the [width](https://ej2.syncfusion.com/ang
 
 ## Column formatting
 
-Column formatting serves as a powerful feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid, enabling customization of data display in grid columns. Different formatting options can be applied to columns to meet specific needs, including number formatting with defined patterns, date formatting according to particular locales, and the use of templates for column values.
+Column formatting serves as a powerful feature in Angular Data Grid, enabling customization of data display in grid columns. Different formatting options can be applied to columns to meet specific needs, including number formatting with defined patterns, date formatting according to particular locales, and the use of templates for column values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,7 +208,7 @@ Example: Set `format: "yyyy-MMM-dd"` and `locale: "es-AR"` for Spanish (Argentin
 
 ### Format template column values
 
-Template columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid enable customization of column value appearance through HTML templates. Number formatting can also be applied within template columns to control the display of values. To format values in a column template, use the Angular pipes and the `format` property.
+Template columns in Angular Data Grid enable customization of column value appearance through HTML templates. Number formatting can also be applied within template columns to control the display of values. To format values in a column template, use the Angular pipes and the `format` property.
 
 In this example, the date pipe formats the "Order Date" value as a date in the format "dd/MMM/yyyy".
 
@@ -259,7 +259,7 @@ export class AppComponent implements OnInit {
 
 ### Custom formatting
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid supports customizing the formatting of data in its columns. Custom formats can be applied to numeric or date fields to display values in a specific style as required. The `format` property is used to define these custom formats.
+Angular Data Grid supports customizing the formatting of data in its columns. Custom formats can be applied to numeric or date fields to display values in a specific style as required. The `format` property is used to define these custom formats.
 
 A custom format string must contain one or more of the following standard date/time symbols.
 
@@ -371,14 +371,14 @@ Example implementation:
 
 ## AutoFit columns
 
-The AutoFit feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid allows columns to automatically adjust their widths based on the maximum content width within each column. This ensures that all cell values are fully visible without truncation or wrapping.
+The AutoFit feature in the Angular Data Grid allows columns to automatically adjust their widths based on the maximum content width within each column. This ensures that all cell values are fully visible without truncation or wrapping.
 
 **Usage:**
 
 - Hover the mouse over a column header. A resizer icon appears on the right edge of the header.
 - Double-click the resizer icon to resize the column to fit its longest content.
 
-To display the resizer icon on column headers while hovering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid:
+To display the resizer icon on column headers while hovering in the Angular Data Grid:
 
 - Set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid#allowresizing) property to `true` in the Grid component.
 - Inject the `Resize` module from `@syncfusion/ej2-angular-grids`and inject **ResizeService**.
@@ -460,7 +460,7 @@ The following example demonstrates auto-fitting columns with specific rows. The 
 
 ## Lock columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid allows locking columns to prevent reordering and automatically position them first. This can be achieved by setting the [lockColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/column#lockcolumn) property to `true`.
+The Angular Data Grid allows locking columns to prevent reordering and automatically position them first. This can be achieved by setting the [lockColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/column#lockcolumn) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -479,7 +479,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid allows lo
 
 ## Show or hide columns
 
-Column visibility in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid can be shown or hidden dynamically through built-in properties and methods. This feature helps customize which columns appear based on specific needs.
+Column visibility in the Angular Data Grid can be shown or hidden dynamically through built-in properties and methods. This feature helps customize which columns appear based on specific needs.
 
 > At least one column must always remain visible.
 
@@ -544,7 +544,7 @@ External buttons can control column visibility by field name using the `showColu
 
 ## Controlling Grid actions per column
 
-Column-specific actions like filtering, grouping, sorting, resizing, reordering, editing, and searching in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid can be enabled or disabled using these properties:
+Column-specific actions like filtering, grouping, sorting, resizing, reordering, editing, and searching in the Angular Data Grid can be enabled or disabled using these properties:
 
 * [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowediting): Controls editing.
 * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#allowfiltering): Controls filtering.
@@ -573,11 +573,11 @@ For more information refer to the [documentation](https://ej2.syncfusion.com/ang
 
 ## Manipulating columns
 
-This section explains working with columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid, including accessing columns, changing column settings, and adding or removing columns using the Grid's properties, methods, and events.
+This section explains working with columns in the Angular Data Grid, including accessing columns, changing column settings, and adding or removing columns using the Grid's properties, methods, and events.
 
 ### Accessing Columns
 
-Accessing columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid is done using these grid methods:
+Accessing columns in the Angular Data Grid is done using these grid methods:
 
 | Method | Description | Example |
 |--------|-------------|---------|
@@ -626,7 +626,7 @@ New columns can be added using the `push` method to add the column object to the
 
 ### Refreshing columns
 
-The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#refreshcolumns) method of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid can be used to refresh the columns in the grid. This method is useful when grid columns need to be updated dynamically based on user actions or data changes.
+The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#refreshcolumns) method of the Angular Data Grid can be used to refresh the columns in the grid. This method is useful when grid columns need to be updated dynamically based on user actions or data changes.
 
 ```ts
 this.grid.refreshColumns();
@@ -634,7 +634,7 @@ this.grid.refreshColumns();
 
 ## Responsive columns
 
-Column visibility in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid can be toggled based on screen size using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/grid/column#hideatmedia) property. This property accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html) to control when columns appear or hide.
+Column visibility in the Angular Data Grid can be toggled based on screen size using the [hideAtMedia](https://ej2.syncfusion.com/angular/documentation/api/grid/column#hideatmedia) property. This property accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html) to control when columns appear or hide.
 
 This example shows a Grid with three columns: "Order ID", "Customer ID", and "Freight". The "OrderID" column uses `hideAtMedia` set to "(min-width: 700px)", hiding the column when the browser width is "700px" or less.
 

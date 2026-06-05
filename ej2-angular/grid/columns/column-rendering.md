@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Rendering in Angular Grid Component
 
-Columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid define the structure and presentation of data. This section outlines manual, automatic, and dynamic rendering approaches to ensure clarity and flexibility in grid design.
+Columns in the Angular Data Grid define the structure and presentation of data. This section outlines manual, automatic, and dynamic rendering approaches to ensure clarity and flexibility in grid design.
 
 The column definitions serve as the data source schema in the grid. Grid operations such as sorting, filtering, and grouping are performed based on column definitions. The [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) property of the grid column is necessary to map the data source values to the grid columns.
 
@@ -22,7 +22,7 @@ The column definitions serve as the data source schema in the grid. Grid operati
 
 To define columns manually in the grid, use the `e-columns` element to define the columns and represent each column with its respective properties such as [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field), [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext), [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type), and [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column#width) set accordingly. This allows customization of the column's behavior and appearance based on requirements.
 
-Here's an example code snippet that demonstrates defining columns manually in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid:
+Here's an example code snippet that demonstrates defining columns manually in the Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
