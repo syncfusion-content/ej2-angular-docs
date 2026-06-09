@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Getting started with Angular TreeGrid component | Syncfusion
-description: Learn how to get started with the Angular TreeGrid component in Syncfusion Essential JS 2, including installation, configuration, and basic usage.
+title: Getting started with Angular Tree Grid component | Syncfusion
+description: Learn how to get started with the Angular Tree Grid component in Syncfusion Essential JS 2, including installation, configuration, and basic usage.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started With Angular TreeGrid Component
+# Getting Started With Angular Tree Grid Component
 
-This section outlines the steps required to create an Essential<sup style="font-size:70%">&reg;</sup> JS 2 TreeGrid and demonstrates basic usage of the [Angular TreeGrid control](https://www.syncfusion.com/angular-components/angular-tree-grid) within an Angular CLI application.
+This section outlines the steps required to create an Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid and demonstrates basic usage of the [Angular Tree Grid control](https://www.syncfusion.com/angular-components/angular-tree-grid) within an Angular CLI application.
 
 > Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
-To get started quickly with the Angular TreeGrid using CLI and Schematics, refer to the following video:
+To get started quickly with the Angular Tree Grid using CLI and Schematics, refer to the following video:
 
 {% youtube "https://www.youtube.com/watch?v=2LJKv7rao6Y" %}
 
@@ -76,9 +76,9 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid packages
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Tree Grid packages
 
-To install the TreeGrid component, use the following command:
+To install the Tree Grid component, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-treegrid --save
@@ -103,9 +103,9 @@ The following CSS files are available in the **../node_modules/@syncfusion** pac
 
 For using SCSS styles, refer to [this guide](../common/how-to/sass).
 
-## Add TreeGrid component
+## Add Tree Grid component
 
-Modify the template in the **src/app/app.ts** file to render the treegrid component. Add the Angular TreeGrid by using `<ejs-treegrid>` selector in `template` section of the **app.ts** file.
+Modify the template in the **src/app/app.ts** file to render the tree grid component. Add the Angular Tree Grid by using `<ejs-treegrid>` selector in `template` section of the **app.ts** file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
