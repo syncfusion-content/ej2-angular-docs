@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Row Drag and Drop in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides built-in support for seamless row drag and drop functionality. This feature enables effortless row rearrangement within the grid by dragging and dropping rows to new positions. Additionally, rows can be transferred between grids, as well as dragged and dropped to custom components, providing powerful flexibility for complex data management scenarios.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides built-in support for seamless row drag and drop functionality. This feature enables effortless row rearrangement within the grid by dragging and dropping rows to new positions. Additionally, rows can be transferred between grids, as well as dragged and dropped to custom components, providing powerful flexibility for complex data management scenarios.
 
 **Key capabilities:**
 - Reorder rows within the same grid.
@@ -84,11 +84,11 @@ In the following example, selected grid rows are dragged and dropped into a `Tre
 
 ## Hide drag and drop icons
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid displays drag icon in each row when enabling the row drag and drop feature. To hide these icons, set the [targetID](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDropSettings) object to the current Grid's ID.
+By default, the Angular Data Grid displays drag icon in each row when enabling the row drag and drop feature. To hide these icons, set the [targetID](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDropSettings) object to the current Grid's ID.
 
 When `targetID` references the Grid's own ID, the Grid renders without drag helper icons. Customize drag and drop behavior by binding to the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdrop) event. Within the event handler, prevent the default action by setting `args.cancel` to `true`, then reorder rows using the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/grid#reorderrows) method.
 
-The following example demonstrates hide drag and drop icons in the Syncfusion<sup style="font-size:70%">&reg;</sup> angular Grid:
+The following example demonstrates hide drag and drop icons in the Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

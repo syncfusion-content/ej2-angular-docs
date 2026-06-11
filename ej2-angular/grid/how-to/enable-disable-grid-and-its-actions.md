@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Enable or Disable Grid and its Actions in Angular Grid Component
 
-Enabling or disabling the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid and its actions is essential for managing interaction based on application state. This approach enhances usability and ensures controlled access to grid operations.
+Enabling or disabling the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) and its actions is essential for managing interaction based on application state. This approach enhances usability and ensures controlled access to grid operations.
 
 To control the enabled or disabled state of the grid and its actions, follow these steps:
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column resizing in Angular Grid Component
 
-Column resizing in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component allows adjusting column widths dynamically to fit content and improve data readability. This feature provides flexibility in customizing the grid layout based on data requirements and screen size.
+Column resizing in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component allows adjusting column widths dynamically to fit content and improve data readability. This feature provides flexibility in customizing the grid layout based on data requirements and screen size.
 
 To enable column resizing, set the [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/grid#allowresizing) property to `true` and inject the `ResizeService` in the providers section. Once enabled, columns can be resized by clicking and dragging the right edge of the column header. The column width updates immediately during the drag operation, providing real-time visual feedback.
 
@@ -110,7 +110,7 @@ In the following code, resizing is disabled for the "Ship City" column:
 
 ## Resizing modes
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides flexible column resizing behavior through the [ResizeSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettingsModel#resizesettingsmodel) interface. The [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettings#mode) property determines the way the Grid handles space distribution when columns are resized.
+The Angular Data Grid component provides flexible column resizing behavior through the [ResizeSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettingsModel#resizesettingsmodel) interface. The [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettings#mode) property determines the way the Grid handles space distribution when columns are resized.
 
 **Available resize modes:**
 

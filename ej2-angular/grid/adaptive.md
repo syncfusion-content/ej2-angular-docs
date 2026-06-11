@@ -14,7 +14,7 @@ The Grid user interface (UI) was redesigned to provide an optimal viewing experi
 
 ## Render adaptive dialogs
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid offers a valuable feature for rendering adaptive dialogs, specifically designed to enhance usability on smaller screens. This feature proves especially useful for optimizing the interface on devices with limited screen real estate. The functionality is achieved by enabling the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid#enableadaptiveui) property, allowing the grid to render filter, sort, and edit dialogs in full-screen mode.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) offers a valuable feature for rendering adaptive dialogs, specifically designed to enhance usability on smaller screens. This feature proves especially useful for optimizing the interface on devices with limited screen real estate. The functionality is achieved by enabling the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid#enableadaptiveui) property, allowing the grid to render filter, sort, and edit dialogs in full-screen mode.
 
 Additionally, apply the `e-bigger` class to the grid's parent element to enable the adaptive view.
 
@@ -34,7 +34,7 @@ The following sample demonstrates to enable adaptive dialogs in the Syncfusion A
 
 ## Vertical row rendering
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid introduces vertical row rendering, which displays row elements in a vertical order. This presentation enhances data visibility in scenarios where a vertical layout is preferable. Set the [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property to `Vertical`.
+The Angular Data Grid introduces vertical row rendering, which displays row elements in a vertical order. This presentation enhances data visibility in scenarios where a vertical layout is preferable. Set the [rowRenderingMode](https://ej2.syncfusion.com/angular/documentation/api/grid#rowrenderingmode) property to `Vertical`.
 
 > The default row rendering mode is `Horizontal`.
 
@@ -250,6 +250,8 @@ export class AppComponent implements OnInit {
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/adaptive-cs3" %}
+
+N> Looking for the full responsive Angular Data Grid component overview, features, pricing, and documentation? Visit the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) page.
 
 ## See Also
 

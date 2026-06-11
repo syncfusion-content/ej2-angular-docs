@@ -1541,7 +1541,7 @@ A complete working sample of the Angular Grid with HotChocolate GraphQL backend 
 
 **GitHub repository:**
 
-[Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with HotChocolate GraphQL Sample](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-hotchocolate-server)
+[Angular Data Grid with HotChocolate GraphQL Sample](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-hotchocolate-server)
 
 **Repository contents:**
 
@@ -1562,7 +1562,7 @@ dotnet run --project AngularApp1.Server
 
 ## See also
 
-* [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid](../getting-started)
+* [Getting started with Angular Data Grid](../getting-started)
 * [HotChocolate documentation](https://chillicream.com/docs/hotchocolate/v13)
 * [GraphQL official documentation](https://graphql.org/learn/)
 * [Syncfusion GraphQLAdaptor documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors#graphql-adaptor)

@@ -53,7 +53,7 @@ The border color of spanned cells can be customized through the  [QueryCellInfo]
 
 ## Column spanning using enableColumnSpan property    
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid introduces a simplified approach to horizontally merge cells using the [enableColumnSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablecolumnspan) property. 
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) introduces a simplified approach to horizontally merge cells using the [enableColumnSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablecolumnspan) property. 
 
 When the `enableColumnSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event. These merged cells are visually combined into a single cell, improving readability.
 

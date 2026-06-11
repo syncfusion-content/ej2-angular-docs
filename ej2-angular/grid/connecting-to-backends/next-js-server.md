@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 [Next.js](https://nextjs.org/) is a powerful Angular framework designed for building full-stack web applications. It includes built‑in features such as server‑side rendering, automatic code splitting, intuitive routing, and API routes, providing a solid foundation for developing modern, high‑performance applications.
 
-This guide walks through integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with a Next.js backend, creating a hybrid architecture where the UI layer is powered fully by Angular while data operations are handled by server‑side endpoints exposed by Next.js. In this setup, the Angular application hosts the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component in the browser, and all CRUD operations, pagination, and data processing requests are routed to RESTful API handlers implemented within the Next.js server.
+This guide walks through integrating the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) with a Next.js backend, creating a hybrid architecture where the UI layer is powered fully by Angular while data operations are handled by server‑side endpoints exposed by Next.js. In this setup, the Angular application hosts the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component in the browser, and all CRUD operations, pagination, and data processing requests are routed to RESTful API handlers implemented within the Next.js server.
 
 ## Prerequisites
 
@@ -105,7 +105,7 @@ export async function GET(request: NextRequest) {
 
 ## Connecting Syncfusion Angular Grid with Next.js
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Next.js backend.
+The Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Next.js backend.
 
 ### Step 1: Creating the Angular client application
 
@@ -146,7 +146,7 @@ For this project, the "Material 3" theme is applied. Other themes can be selecte
 
 ### Step 3: Add Syncfusion Angular Grid component with Next.js
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides [custom data binding](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/remote-data#custom-binding), which enables seamless integration with external API services. With this feature, the grid can fetch data from a Next.js server and efficiently display health care details. It supports search, filter, sort, and pagination capabilities, making it easy to navigate and manage large datasets.
+The Angular Data Grid provides [custom data binding](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/remote-data#custom-binding), which enables seamless integration with external API services. With this feature, the grid can fetch data from a Next.js server and efficiently display health care details. It supports search, filter, sort, and pagination capabilities, making it easy to navigate and manage large datasets.
 
 In the created angular application, generate a component "doctors" using the below command in Visual Studio Code terminal or Command Prompt:
 
@@ -209,7 +209,7 @@ export class Doctors {
 
 **Custom data binding workflow**:
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports custom data binding, enabling seamless integration with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application‑specific workflows and enabling efficient handling of large datasets. The custom data binding feature can interact with backend APIs through two key events.
+The Angular Data Grid supports custom data binding, enabling seamless integration with external API services. When Grid actions such as paging, sorting, filtering, or CRUD operations are performed, requests are sent to the API. The API processes these operations and returns the results in the required format, giving complete control over application‑specific workflows and enabling efficient handling of large datasets. The custom data binding feature can interact with backend APIs through two key events.
 
 - [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange): Triggered when the Grid performs actions such as paging, sorting, or filtering. It provides the current state details, which are sent to the API so the request can be processed and data returned in the required "{ result:[], count:100 }" format.
 
@@ -856,7 +856,7 @@ Open **http://localhost:4200** in the browser.
 
 A complete, working sample implementation is available in the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-nextjs-server) repository.
   
-The application now provides a complete solution for integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid with Next.js server, enabling seamless data operations with a modern, user-friendly interface.
+The application now provides a complete solution for integrating the Angular Data Grid with Next.js server, enabling seamless data operations with a modern, user-friendly interface.
 
 ## See also
 
