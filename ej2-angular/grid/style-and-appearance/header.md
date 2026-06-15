@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Header in Angular Grid component
 
-The appearance of the header elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Here are examples for customizing the grid header, header cell, and header cell div element.
+The appearance of the header elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the grid header, header cell, and header cell div element.
 
 ## Customize the Grid header root
 

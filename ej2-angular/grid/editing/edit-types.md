@@ -148,7 +148,7 @@ In the below demo, `DropDownList` is rendered with custom data source for the "S
 
 ### Enable filtering in DropDownList editor
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides filtering for the `DropDownList` within the edit form. This feature enables selection of options from a predefined list and easier search for specific items using the built-in filtering feature.  
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides filtering for the `DropDownList` within the edit form. This feature enables selection of options from a predefined list and easier search for specific items using the built-in filtering feature.  
 
 Enable filtering by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) property to `true` within the edit params. This will enable the filtering feature in the `DropDownList`.
 
@@ -274,7 +274,7 @@ Example with dynamic min date:
 
 ## Accessing editor component instances
 
-Accessing editor components in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables seamless interaction with editor instances associated with cells during editing or adding actions. This feature is especially valuable when performing custom actions, retrieving data from the editor, or manipulating its properties during editing or adding operations in the grid.
+Accessing editor components in the Angular Data Grid enables seamless interaction with editor instances associated with cells during editing or adding actions. This feature is especially valuable when performing custom actions, retrieving data from the editor, or manipulating its properties during editing or adding operations in the grid.
 
 Access the component instance from the component element using the `ej2_instances` property. This property provides access to the instance of the editor component associated with a cell.
 
@@ -686,7 +686,7 @@ The following example demonstrates to render a `MultiSelect` component in the "S
 
 ### Render RichTextEditor component in edit form
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows rendering the [RichTextEditor](../../rich-text-editor/getting-started) component within the edit form. This enables formatting and styling text content using bold, italic, underline, bullet lists, numbered lists, and other formatting options.
+The Angular Data Grid allows rendering the [RichTextEditor](../../rich-text-editor/getting-started) component within the edit form. This enables formatting and styling text content using bold, italic, underline, bullet lists, numbered lists, and other formatting options.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -708,7 +708,7 @@ The following example demonstrates to render a `RichTextEditor` component in the
 
 ### Render Upload component in edit form  
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows rendering an [Uploader](../../uploader/getting-started) component within the grid's edit form. This enables uploading and managing files or images in a specific column during data editing.
+The Angular Data Grid allows rendering an [Uploader](../../uploader/getting-started) component within the grid's edit form. This enables uploading and managing files or images in a specific column during data editing.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -834,7 +834,7 @@ export interface columnDataType{
 
 ## Rendering custom cell editors using external functions
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides powerful capabilities for rendering custom cell editors, enabling the addition of specialized custom components to specific columns. This feature is essential for editing cell values using custom input elements or controls tailored to specific data types or workflows.
+The Angular Data Grid provides powerful capabilities for rendering custom cell editors, enabling the addition of specialized custom components to specific columns. This feature is essential for editing cell values using custom input elements or controls tailored to specific data types or workflows.
 
 To utilize the custom cell editor template feature, implement these four essential functions:
 

@@ -42,7 +42,7 @@ domainurl: ##DomainURL##
 
 ## Setting up the Express.js backend using Node.js
 
-The Express.js backend acts as the central REST API service, handling HTTP requests and responses that power the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid.
+The Express.js backend acts as the central REST API service, handling HTTP requests and responses that power the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid).
 
 ### Step 1: Create the Express server and install required packages
 

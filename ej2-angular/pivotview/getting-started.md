@@ -124,6 +124,8 @@ Modify the template in the **src/app/app.ts** file to render the Pivot Table com
 
 {% endtabs %}
 
+N> If you move the Pivot Table component template code into **src/app/app.html**, ensure to clear all auto-generated markup and styles from the file before moving. This prevents layout conflicts and helps ensure that Syncfusion components render correctly.
+
 ## Run the application
 
 ```bash
