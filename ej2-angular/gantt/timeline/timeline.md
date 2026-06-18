@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timeline in Angular Gantt Chart component | Syncfusion
+title: Timeline in Angular Gantt Chart Component | Syncfusion
 description: Learn how to configure timelines in the Syncfusion Angular Gantt Chart component with view modes, zooming, weekend highlighting, and templates.
 platform: ej2-angular
 control: Timeline
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timeline in Angular Gantt Chart component
+# Timeline in Angular Gantt Chart Component
 
 The timeline in the Angular Gantt Chart component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
@@ -132,13 +132,13 @@ The Gantt Chart control supports rendering a fixed timeline range using the [vie
 
 When `viewStartDate` and `viewEndDate` are set to concrete Date values, the timeline rendering is restricted to the inclusive range [viewStartDate, viewEndDate].
 
-* When `viewStartDate` is set to **auto**:
-  * If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
-  * If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
+- When `viewStartDate` is set to **auto**:
+  - If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
+  - If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
 
-* When `viewEndDate` is set to **auto**: 
-  * If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
-  * If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white-space in the timeline area, the end date is automatically extended to fill the chart width.
+- When `viewEndDate` is set to **auto**:
+  - If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
+  - If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white-space in the timeline area, the end date is automatically extended to fill the chart width.
 
 > Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
 
@@ -155,7 +155,7 @@ In the Gantt Chart component, you can customize the week start day using the [we
 {% include code-snippet/gantt/timeline/week-startday-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/week-startday-cs1" %}
 
 ## Customize automatic timescale update action
@@ -171,7 +171,7 @@ In the Gantt Chart component, the schedule timeline will be automatically update
 {% include code-snippet/gantt/timeline/timescale-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/timescale-cs1" %}
 
 ## Dynamically change timeline mode
@@ -186,7 +186,7 @@ You can dynamically change the timeline mode in the Gantt Chart by updating the 
 {% include code-snippet/gantt/timeline/change-timeline-mode/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/change-timeline-mode" %}
 
 ## Timeline cells tooltip
@@ -206,7 +206,7 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 {% include code-snippet/gantt/tooltip/timelinecell-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/tooltip/timelinecell-cs1" %}
 
 ## Highlight weekends
@@ -226,13 +226,14 @@ Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/angular/d
 {% include code-snippet/gantt/timeline/show-weekend-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/show-weekend-cs1" %}
 
 **Limitations:**
-* The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
-* Non-working hours cannot be excluded when `showWeekend` is set to **false**.
-* Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
+
+- The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
+- Non-working hours cannot be excluded when `showWeekend` is set to **false**.
+- Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
 
 ## Navigating Gantt Timeline
 
@@ -255,7 +256,7 @@ You can adjust the Gantt chart view by shifting the timeline forward or backward
 {% include code-snippet/gantt/timeline/span-time-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/timeline/span-time-cs1" %}
 
 ## Timeline template
@@ -264,9 +265,9 @@ In the Gantt Chart component, you can customize timeline cells using the [timeli
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 
-* `date`: Defines the date of the timeline cells.
-* `value`: Defines the formatted date value that will be displayed in the timeline cells.
-* `tier`: Defines whether the cell is part of the top or bottom tier.
+- `date`: Defines the date of the timeline cells.
+- `value`: Defines the formatted date value that will be displayed in the timeline cells.
+- `tier`: Defines whether the cell is part of the top or bottom tier.
 
 The following code example how to customize the top tier to display the week's weather details and the bottom tier to highlight working and non-working days, with formatted text for holidays.
 
@@ -283,10 +284,39 @@ The following code example how to customize the top tier to display the week's w
 {% include code-snippet/gantt/tooltip/timelinecell-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/tooltip/timelinecell-cs2" %}
 
+## Infinite timeline scrolling
+
+The [enableInfiniteTimelineScroll](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableinfinitetimelinescroll) property enables infinite horizontal scrolling by dynamically extending the visible timeline range as the user navigates. Set `enableInfiniteTimelineScroll` to **true** to enable this behavior.
+
+**Key behaviors**
+
+- When `enableInfiniteTimelineScroll` is enabled, the timeline automatically extends in the forward direction as the user scrolls using the horizontal scrollbar or clicks the forward scroll arrow.
+- In the backward direction, the timeline extends only when the user clicks the backward scroll arrow. Scrolling or dragging the scrollbar backward does not trigger timeline extension.
+- Infinite scrolling extends only the visible timeline range and does not modify the project dates.
+
+This feature enables exploration of long project schedules without manually updating the timeline range.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/timeline/infinite-timeline-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/timeline/infinite-timeline-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/timeline/infinite-timeline-cs1/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/gantt/timeline/infinite-timeline-cs1" %}
+
 ## See also
+
 - [How to configure taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
 - [How to zoom the timeline?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming)
 - [How to configure non-working days?](https://ej2.syncfusion.com/angular/documentation/gantt/scheduling-tasks#weekend--non-working-days)
