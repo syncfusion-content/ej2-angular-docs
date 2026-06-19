@@ -6,6 +6,7 @@ platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
+canonical_url: "https://www.syncfusion.com/angular-components/angular-diagram"
 ---
 
 # Getting Started with Angular Diagram Component
