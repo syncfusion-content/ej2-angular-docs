@@ -112,7 +112,7 @@ The [MCP Server installation](https://ej2.syncfusion.com/angular/documentation/m
 
 **Option 2: Install Component Skills**
 
-The [Syncfusion Skills installation](https://ej2.syncfusion.com/angular/documentation/skills/component-skills) provides reference documents stored directly in your project. These files allow the AI to read specific patterns during code generation, ensuring consistent implementation and best practices across your development team.
+The [Syncfusion Skills installation](https://ej2.syncfusion.com/angular/documentation/skills) provides reference documents stored directly in your project. These files allow the AI to read specific patterns during code generation, ensuring consistent implementation and best practices across your development team.
 
 **What they include:**
 - Best practices for each component family

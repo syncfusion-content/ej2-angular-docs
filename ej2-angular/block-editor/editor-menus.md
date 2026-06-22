@@ -70,7 +70,8 @@ The Context menu offers the following built-in options:
 -  **Undo/Redo**: Reverses or re-applies the last action.
 -  **Cut/Copy/Paste**: Standard clipboard actions for selected content.
 -  **Indent**: Increases or decreases the indent level of the selected block.
--  **Link**: Adds or edits a hyperlink for the selected text.
+-  **Link**: Allows you to add or edit a hyperlink for the selected text. When a link is present, the context menu provides options such as `Open Link`, `Edit Link`, `Copy Link`, and `Remove Link`.
+-  **Table**: Provides built-in table actions such as `Insert` and `Delete`. These options appear in the context menu when the cursor is focused within a table cell and the context menu is opened
 
 ### Customize Context menu
 
