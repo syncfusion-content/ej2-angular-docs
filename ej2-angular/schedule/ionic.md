@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 # Getting Started with Ionic and Angular with Syncfusion Scheduler
-This guide provides a step-by-step walkthrough for creating an Angular application with the [Ionic Framework](https://ionicframework.com/), featuring integration of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components for modern, responsive interfaces.
+This guide provides a step-by-step walkthrough for creating an Angular application with the [Ionic Framework](https://ionicframework.com/), featuring integration of [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) for modern, responsive interfaces.
 
 ## Prerequisites
 

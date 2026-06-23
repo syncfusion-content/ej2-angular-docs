@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Scheduler in SharePoint Framework
 
-This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project and integrating the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component](https://www.syncfusion.com/angular-components/angular-scheduler).
+This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project and integrating the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler).
 
 SharePoint Framework (SPFx) is a development model and framework provided by Microsoft for building custom solutions and extensions for SharePoint and Microsoft Teams. It is a modern, client-side framework that allows developers to create web parts, extensions, and customizations that can be deployed and used within SharePoint sites and Teams applications.
 
@@ -373,6 +373,5 @@ The output will appear as follows:
 
 ## See also
 
-* [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component](https://www.syncfusion.com/angular-components/angular-scheduler)
 * [Getting Started with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started)
 * [Getting Started with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI component](https://ej2.syncfusion.com/angular/documentation/introduction)

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 [GraphQL](https://graphql.org/learn/introduction/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 
-**Traditional REST APIs** and `GraphQL` differ mainly in the way data is requested and returned: **REST APIs expose** multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data, while `GraphQL` uses a single endpoint where queries define the exact fields needed, enabling precise responses and allowing related data to be retrieved efficiently in one request. This makes `GraphQL` especially useful for **Angular Scheduler integration**, the **reason** is that data‑centric UI components require well‑structured and selective datasets to minimize network usage and ensure smooth, high‑performance interactions.
+**Traditional REST APIs** and `GraphQL` differ mainly in the way data is requested and returned: **REST APIs expose** multiple endpoints that return fixed data structures, often including unnecessary fields and requiring several requests to fetch related data, while `GraphQL` uses a single endpoint where queries define the exact fields needed, enabling precise responses and allowing related data to be retrieved efficiently in one request. This makes `GraphQL` especially useful for **[Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) integration**, the **reason** is that data‑centric UI components require well‑structured and selective datasets to minimize network usage and ensure smooth, high‑performance interactions.
 
 **Key GraphQL concepts:**
 
@@ -21,7 +21,7 @@ domainurl: ##DomainURL##
 - **Resolvers**: Each query or mutation is handled by a resolver, which is a function responsible for fetching data or executing an operation. **Query resolvers** handle **read operations**, while **mutation resolvers** handle **write operations**.
 - **Schema**: Defines the structure of the API. The schema describes available data types, the fields within those types, and the operations that can be executed. Query definitions specify the way data can be retrieved, and mutation definitions specify the way data can be modified. 
 
-[Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) is a fast and efficient JavaScript runtime built on Google’s V8 engine. It enables JavaScript to run on the server, making it a popular platform for building web APIs, real‑time applications, and modern backend services. Node.js offers a non‑blocking, event‑driven architecture that supports high performance and scalability.
+[Node.js](https://nodejs.org/learn/getting-started/introduction-to-nodejs) is a fast and efficient JavaScript runtime built on Google’s V8 engine. It enables JavaScript to run on the server, making it a popular platform for building web APIs, real‑time applications, and modern backend services. Node.js offers a non‑blocking, event‑driven architecture that supports high performance and scalability.
 
 ## Prerequisites
 

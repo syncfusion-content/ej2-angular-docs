@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Set different work hours in Angular Schedule component
 
-By default, the work hours of the Scheduler are highlighted based on the start and end values provided in the [`workHours`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#workhours) property, which remains the same for all days. To highlight different work hours range for specific days, use the[`setWorkHours`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#setworkhours) method.
+By default, the work hours of the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) are highlighted based on the start and end values provided in the [`workHours`](https://ej2.syncfusion.com/angular/documentation/api/schedule#workhours) property, which remains the same for all days. To highlight different work hours range for specific days, use the[`setWorkHours`](https://ej2.syncfusion.com/angular/documentation/api/schedule#setworkhours) method.
 
 You can pass date object/ multiple date objects collection as first argument and start and end time need to be added as work hours should be passed as second and third arguments respectively. In the following code example, on button click 11:00 AM to 08:00 PM of 15th and 17th February has been added in work hours.
 

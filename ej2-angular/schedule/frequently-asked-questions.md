@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Frequently asked questions in Angular Schedule component
 
-In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the Schedule component.
+In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler).
 
 ## Maximum call stack size exceeded
 
@@ -106,7 +106,7 @@ The above problem occurs when missing CSS references for the scheduler in a proj
 
 ## QuickInfoTemplate at bottom
 
-When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#quickinfotemplates) in scheduler, sometimes quickinfo popup not shown fully at the bottom area of scheduler. You can resolve this by using [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#cellclick) and [`eventClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#eventclick) events and below code snippet.
+When using the [`quickInfoTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#quickinfotemplates) in scheduler, sometimes quickinfo popup not shown fully at the bottom area of scheduler. You can resolve this by using [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#cellclick) and [`eventClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventclick) events and below code snippet.
 
 ```typescript
 

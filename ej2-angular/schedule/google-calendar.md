@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Google Calendar API Integration with Syncfusion Angular Scheduler
 
-This [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) allows users to manage their [Google Calendar](https://www.google.com/calendar/about/) events directly within the Scheduler. Changes made in the Scheduler are synced to Google Calendar, and existing Google events are displayed in the Scheduler interface.
+This [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) allows users to manage their [Google Calendar](https://www.google.com/calendar/about/) events directly within the Scheduler. Changes made in the Scheduler are synced to Google Calendar, and existing Google events are displayed in the Scheduler interface.
 
 
 ## Prerequisites
