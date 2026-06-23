@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Refresh Template
 
-In the Scheduler component, you can refresh specific template element without re-rendering the entire component by using the [`refreshTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshtemplates) public method. We can provide an additional option to refresh specific templates alone or all templates together by using this method. The following template names are accepted as an argument to refresh it specifically.
+In the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler), you can refresh specific template element without re-rendering the entire component by using the [`refreshTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule#refreshtemplates) public method. We can provide an additional option to refresh specific templates alone or all templates together by using this method. The following template names are accepted as an argument to refresh it specifically.
 
 * `eventTemplate`
 * `dateHeaderTemplate`

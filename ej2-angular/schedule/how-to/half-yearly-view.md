@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Half-yearly view in Angular Schedule component
 
-The year view of the Schedule component displays all 365 days and their appointments for a given year. You can customize this view by using the following properties:
+The year view of the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler)  displays all 365 days and their appointments for a given year. You can customize this view by using the following properties:
 
 * [`firstMonthOfYear`](https://ej2.syncfusion.com/angular/documentation/api/schedule#firstmonthofyear)
 * [`monthsCount`](https://ej2.syncfusion.com/angular/documentation/api/schedule#monthscount)

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Syncfusion Angular Scheduler and MongoDB
 
-The Syncfusion [Angular Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started) combined with MongoDB provides a robust, scalable, and flexible data-driven application architecture suitable for modern event-management systems.
+The Syncfusion [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) combined with MongoDB provides a robust, scalable, and flexible data-driven application architecture suitable for modern event-management systems.
 
 MongoDB's schema-less design seamlessly supports complex scheduling data, making it ideal for storing events, resources, recurrence rules, and user-specific calendar configurations.
 
@@ -382,7 +382,7 @@ All changes will be reflected in the connected **MongoDB** database in real time
 
 2. **Dates stored as strings:** Convert StartTime/EndTime to Date objects on the server before inserting/updating. Otherwise, Scheduler rendering/timezone math may be off.
 
-3. **Immutable _id on update:** Remove _id from payload prior to updateOne (MongoDB forbids changing _id) [mongodb.com](https://www.mongodb.com/docs/drivers/node/v6.15/usage-examples/updateOne).
+3. **Immutable _id on update:** Remove _id from payload prior to updateOne (MongoDB forbids changing _id).
 
 4. **Missing CSS → broken editor/pickers:** Include Scheduler CSS (via ng add or styles.css) per [getting‑started docs](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started#adding-css-reference).
 
