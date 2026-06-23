@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 # Getting Started with Angular and Electron with Syncfusion Scheduler
 
-This guide explains how to build a basic Angular application using a standalone component structure with the Electron framework and integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule component.
+This guide explains how to build a basic Angular application using a standalone component structure with the Electron framework and integrate the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler).
 
 ## Prerequisites
 

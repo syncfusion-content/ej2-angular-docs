@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Frequently asked questions in Angular Schedule component
 
-In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the Schedule component.
+In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler).
 
 ## Maximum call stack size exceeded
 
