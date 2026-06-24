@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Style and Appearance in Angular File Manager | Syncfusion
-description: Learn here all about How to add style and appearance in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about How to add style and appearance in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
 documentation: ug

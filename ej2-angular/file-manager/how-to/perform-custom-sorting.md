@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perform custom sorting in Angular File Manager component | Syncfusion
-description: Learn here all about How to perform custom sorting in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about How to perform custom sorting in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Perform custom sorting in Angular File Manager component
 
-The File Manager component provides a way to customize the default sort action for the LargeIconsView by defining the[sortComparer](https://ej2.syncfusion.com/angular/documentation/api/file-manager#sortcomparer) property. For sorting individual columns in the DetailsView, the [sortComparer](https://ej2.syncfusion.com/angular/documentation/api/file-manager/column/#sortcomparer) property can be defined in the [columns](https://ej2.syncfusion.com/angular/documentation/api/file-manager/column/) property.
+The File Manager component provides a way to customize the default sort action for the LargeIconsView by defining the[sortComparer](https://ej2.syncfusion.com/angular/documentation/api/file-manager#sortcomparer) property. For sorting individual columns in the DetailsView, the [sortComparer](https://ej2.syncfusion.com/angular/documentation/api/file-manager/column#sortcomparer) property can be defined in the [columns](https://ej2.syncfusion.com/angular/documentation/api/file-manager/column) property.
 
 >Note: To achieve natural sorting like Windows Explorer, you can import the `SortComparer` function from the `'@syncfusion/ej2-angular-filemanager'`. If you want to perform your own custom sorting, you can define your own `SortComparer` function.
 

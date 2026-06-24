@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom service provider in Angular File Manager | Syncfusion
-description: Learn here all about implementation own service provider in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about implementation own service provider in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize the Navigation Pane in File Manager component | Syncfusion
-description: Learn here all about Customize the Navigation Pane in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize the Navigation Pane in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager 
 documentation: ug

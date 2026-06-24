@@ -1,7 +1,7 @@
 ---
 layout: post
 title: File operations in Angular File Manager component | Syncfusion
-description: Learn here all about File operations in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about File operations in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
 documentation: ug

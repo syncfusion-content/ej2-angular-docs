@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Initialize File Manager in Angular File Manager component | Syncfusion
-description: Learn here all about Initialize File Manager using systemjs in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Initialize File Manager using systemjs in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager 
 documentation: ug

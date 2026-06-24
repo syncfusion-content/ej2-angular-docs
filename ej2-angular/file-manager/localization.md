@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Angular File Manager component | Syncfusion
-description: Learn how to implement localization and language support in Syncfusion Angular File Manager component with examples and complete key reference.
+description: Learn how to implement localization and language support in Angular File Manager component with examples and complete key reference.
 platform: ej2-angular
 control: File Manager 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Index in Angular File Manager component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn about the Index feature in the Angular File Manager component of Essential JS 2, covering usage, functionality, and key benefits.
 platform: ej2-angular
 control: File Manager 
 documentation: ug

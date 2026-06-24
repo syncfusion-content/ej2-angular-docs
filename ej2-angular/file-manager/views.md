@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Views in Angular File Manager component | Syncfusion
-description: Learn how to use and customize different view modes (LargeIcons and Details) in the Syncfusion Angular File Manager component.
+description: Learn how to use and customize different view modes (LargeIcons and Details) in the Angular File Manager component.
 platform: ej2-angular
 control: File Manager 
 documentation: ug
