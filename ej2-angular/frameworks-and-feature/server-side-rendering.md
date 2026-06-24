@@ -56,26 +56,21 @@ This will automatically:
 
 ## 2. Add Syncfusion<sup style="font-size:70%">&reg;</sup> (after SSR setup)
 
-Once SSR is integrated, install Syncfusion<sup style="font-size:70%">&reg;</sup> packages (e.g., Grid or Calendar):
+Once SSR is integrated, install Syncfusion<sup style="font-size:70%">&reg;</sup> component packages (e.g., Grid or Calendar) and required theme package:
 
 ```bash
-npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-buttons
+npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-buttons @syncfusion/ej2-material3-theme --save
 ```
 
 Add Syncfusion styles to `src/styles.css`:
 
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
-```
+{% tabs %}
+{% highlight css tabtitle="styles.css" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 ### 3. Add Angular Universal (SSR)
 

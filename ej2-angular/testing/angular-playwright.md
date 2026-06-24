@@ -48,7 +48,15 @@ ng new angular-playwright-test
 cd angular-playwright-test
 ```
 
-### Step 2: Add a Syncfusion<sup style="font-size:70%">&reg;</sup> Button
+### Step 2: Add a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
+
+Syncfusion<sup style="font-size:70%">&reg;</sup>’s Angular component packages and theme packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion® Angular components, install the necessary packages.
+
+```bash
+npm install @syncfusion/ej2-angular-buttons @syncfusion/ej2-material3-theme --save
+```
+
+### Step 3: Add a Syncfusion<sup style="font-size:70%">&reg;</sup> Button
 
 In `src/app/app.component.ts`, add the Syncfusion<sup style="font-size:70%">&reg;</sup> button component:
 
@@ -68,18 +76,17 @@ import { Component } from '@angular/core';
 export class AppComponent { }
 ```
 
-### Step 3: Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles
+### Step 4: Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles
 
 Import Syncfusion<sup style="font-size:70%">&reg;</sup> button styles in `src/styles.css`:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/button/index.css';
 ```
 
 > Adjust the import paths as necessary based on your project's folder structure.
 
-### Step 4: Write a Playwright Test
+### Step 5: Write a Playwright Test
 
 Create `tests/button.spec.ts` with the following content:
 

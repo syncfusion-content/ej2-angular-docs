@@ -41,7 +41,7 @@ Start by following the [getting started guide](https://ej2.syncfusion.com/angula
 ```bash
 ng new ngmodule-lazy-demo --routing --style=css
 cd ngmodule-lazy-demo
-npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-dropdowns
+npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-dropdowns @syncfusion/ej2-material3-theme
 npm install @syncfusion/ej2-angular-buttons
 ```
 
@@ -54,18 +54,13 @@ ng generate module about --route about --module app.module
 
 ### 3. Add CSS in styles.css
 
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
-```
+{% tabs %}
+{% highlight css tabtitle="styles.css" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Home Module (with Grid)
 
@@ -277,26 +272,20 @@ Run the following commands to create a new Angular standalone project and instal
 ```bash
 ng new standalone-lazy-demo --routing --standalone --style=css
 cd standalone-lazy-demo
-npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-dropdowns
+npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-angular-dropdowns @syncfusion/ej2-material3-theme
 npm install @syncfusion/ej2-angular-buttons
 ```
 
 ### Add the style in styles.css file
 
-```bash
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-```
+{% tabs %}
+{% highlight css tabtitle="styles.css" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Step 2: Generate the `home` Component
 
 Run the following command to generate the `home` component as a standalone component, which will not generate module files:

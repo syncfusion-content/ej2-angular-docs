@@ -18,12 +18,12 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are publi
 
 ### Installation
 
-Install the required component package using npm or yarn:
+Install the required component package and theme package using npm or yarn:
 
 ```bash
-npm install @syncfusion/ej2-angular-buttons --save
+npm install @syncfusion/ej2-angular-buttons @syncfusion/ej2-material-theme --save
 # or
-yarn add @syncfusion/ej2-angular-buttons
+yarn add @syncfusion/ej2-angular-buttons @syncfusion/ej2-material-theme
 ```
 
 ### Angular CLI Schematics (Automatic Setup)
@@ -80,7 +80,7 @@ export class AppComponent { }
 
 ```json
 "styles": [
-  "node_modules/@syncfusion/ej2-angular-buttons/styles/material.css",
+  "node_modules/@syncfusion/ej2-material-theme/styles/button/index.css",
   "src/styles.css"
 ]
 ```
@@ -88,7 +88,7 @@ export class AppComponent { }
 Alternatively, import the theme in `styles.scss`:
 
 ```scss
-@import '@syncfusion/ej2-angular-buttons/styles/material.css';
+@import '@syncfusion/ej2-material-theme/styles/button/index.css';
 ```
 
 Common themes include: `material3`, `bootstrap5`, `tailwind3`, `fabric`, `highcontrast`.
@@ -96,7 +96,7 @@ Common themes include: `material3`, `bootstrap5`, `tailwind3`, `fabric`, `highco
 For a combined theme (all components), use:
 
 ```scss
-@import '@syncfusion/ej2/material.css';
+@import '@syncfusion/ej2-material-theme/styles/material.css';
 ```
 
 ### Package Structure
@@ -108,8 +108,6 @@ Each Syncfusion<sup style="font-size:70%">&reg;</sup> Angular npm package follow
 | `dist/<packagename>.umd.min.js`          | Minified UMD bundle for AMD/CommonJS module loaders                     |
 | `dist/<packagename>.umd.js`              | Unminified UMD bundle                                                   |
 | `src/`                                   | ES6 source files (useful for custom bundling or tree-shaking)           |
-| `styles/<theme_name>.css`                | Pre-compiled CSS for each theme                                         |
-| `styles/<theme_name>.scss`               | SCSS source files for custom theme customization                        |
 | `package.json`                           | Package metadata, dependencies, and peer dependencies                   |
 
 ## Using CDN (Alternative)

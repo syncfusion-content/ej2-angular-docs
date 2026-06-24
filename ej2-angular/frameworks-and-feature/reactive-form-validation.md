@@ -37,10 +37,10 @@ cd syncfusion-angular-validators
 
 ## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Package
 
-Install the Syncfusion<sup style="font-size:70%">&reg;</sup> inputs package (version 25.2.7, compatible with Angular 19):
+Install the Syncfusion<sup style="font-size:70%">&reg;</sup> inputs package (version 25.2.7, compatible with Angular 19) and required theme package:
 
 ```bash
-npm install @syncfusion/ej2-angular-inputs --save
+npm install @syncfusion/ej2-angular-inputs @syncfusion/ej2-material3-theme --save
 ```
 
 ## Supported Validators
@@ -212,9 +212,8 @@ button {
 Update `src/styles.css` with required Syncfusion<sup style="font-size:70%">&reg;</sup> styles:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/button/index.css';
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/textbox/index.css';
 ```
 
 ## Run the Application
