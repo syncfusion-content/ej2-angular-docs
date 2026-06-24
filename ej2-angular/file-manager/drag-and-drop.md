@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and drop in Angular File Manager component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Drag and drop in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
 documentation: ug
@@ -14,7 +14,7 @@ The File Manager component supports drag and drop functionality, allowing users 
 
 ## Enabling drag and drop
 
-The drag and drop functionality can be enabled or disabled using the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowdraganddrop) property. By default, this property is set to false.
+The drag and drop functionality can be enabled or disabled using the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowdraganddrop) property. By default, this property is set to false.
 
 ```typescript
 <ejs-filemanager [allowDragAndDrop]="true"></ejs-filemanager>
@@ -32,10 +32,10 @@ When drag and drop is enabled:
 
 The File Manager provides the following events to handle drag and drop operations:
 
-* [fileDragStart](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#filedragstart) - Triggers when the file/folder dragging is started.
-* [fileDragging](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#filedragging) - Triggers while dragging the file/folder.
-* [fileDragStop](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#filedragstop) - Triggers when the file/folder is about to be dropped at the target.
-* [fileDropped](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#filedropped) - Triggers when the file/folder is dropped.
+* [fileDragStart](https://ej2.syncfusion.com/angular/documentation/api/file-manager#filedragstart) - Triggers when the file/folder dragging is started.
+* [fileDragging](https://ej2.syncfusion.com/angular/documentation/api/file-manager#filedragging) - Triggers while dragging the file/folder.
+* [fileDragStop](https://ej2.syncfusion.com/angular/documentation/api/file-manager#filedragstop) - Triggers when the file/folder is about to be dropped at the target.
+* [fileDropped](https://ej2.syncfusion.com/angular/documentation/api/file-manager#filedropped) - Triggers when the file/folder is dropped.
 
 These events can be used to implement custom behaviors such as validation, restrictions, or additional operations during drag and drop interactions.
 

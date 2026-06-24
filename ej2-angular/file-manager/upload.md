@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upload in Angular File Manager component | Syncfusion
-description: Learn how to configure and customize file upload operations in Syncfusion Angular File Manager with controls for size limits, file types, and chunk uploads.
+description: Learn how to configure and customize file upload operations in Angular File Manager with controls for size limits, file types, and chunk uploads.
 platform: ej2-angular
 control: File Manager
 documentation: ug
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Upload in Angular File Manager component
 
-The Angular File Manager component provides a [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettings) property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
+The [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) component provides a [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettings) property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
 
 ## Directory Upload
 
-The [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettingsmodel#directoryupload) property controls whether users can browse and upload entire directories (folders) in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular File Manager component. 
+The [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettingsmodel#directoryupload) property controls whether users can browse and upload entire directories (folders) in the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) component. 
 
 To enable directory upload, set the `directoryUpload` property to `true` in the `uploadSettings` configuration.
 
@@ -38,7 +38,7 @@ To learn more about the folder upload actions, refer to this [link](https://ej2.
 
 ## Sequential Upload
 
-The [sequentialUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettingsmodel#sequentialupload) property controls whether users can upload files one by one in a sequential manner in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular File Manager component. 
+The [sequentialUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettingsmodel#sequentialupload) property controls whether users can upload files one by one in a sequential manner in the Angular File Manager component. 
 
 To enable sequential upload, set the `sequentialUpload` property to `true` in the `uploadSettings` configuration.
 

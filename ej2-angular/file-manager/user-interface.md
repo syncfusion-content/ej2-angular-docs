@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User interface components in Angular File Manager | Syncfusion
-description: Learn here all about User interface in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about User interface in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
 documentation: ug
