@@ -97,7 +97,7 @@ For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/
 
 ## Add File Manager component
 
-Modify the template in the **src/app/app.ts** file to render the File Manager component. Add the Angular File Manager by using `<ejs-filemanager>` selector in `template` section of the **app.ts** file.
+Modify the template in the **src/app/app.ts** file to render the File Manager component. Add the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) by using `<ejs-filemanager>` selector in `template` section of the **app.ts** file.
 
 The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) property must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send file operation request to the server. The File Manager service link is provided in the `hostUrl` variable.
 

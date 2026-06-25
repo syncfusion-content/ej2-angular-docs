@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize thumbnail in Angular File Manager component | Syncfusion
-description: Learn here all about Customize thumbnail in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize thumbnail in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize thumbnails in Angular File Manager component
 
-The File Manager component allows you to replace the default file and folder icons with custom thumbnails to enhance visual recognition or match your application's design theme. This is controlled through the [showThumbnail](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showthumbnail) property.
+The File Manager component allows you to replace the default file and folder icons with custom thumbnails to enhance visual recognition or match your application's design theme. This is controlled through the [showThumbnail](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showthumbnail) property.
 
 The following example demonstrates how to implement custom icon thumbnails in the File Manager's large icons view:
 

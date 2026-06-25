@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple selection in Angular File Manager component | Syncfusion
-description: Learn here all about Multiple selection in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Multiple selection in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager
 documentation: ug
@@ -14,7 +14,7 @@ The File Manager allows you to select multiple files and folders simultaneously 
 
 ## Enabling multiple selection
 
-By default, the multiple selection feature is enabled in File Manager. You can control this behavior using the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowmultiselection) property. When enabled, users can select multiple items using any of these methods:
+By default, the multiple selection feature is enabled in File Manager. You can control this behavior using the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowmultiselection) property. When enabled, users can select multiple items using any of these methods:
 
 * Hold `Ctrl` key while clicking individual items to select/deselect them
 * Hold `Shift` key while clicking to select a range of items
@@ -23,7 +23,7 @@ By default, the multiple selection feature is enabled in File Manager. You can c
 
 Selected items are visually highlighted with a different background color, and their checkboxes (if enabled) will be checked.
 
-The [fileSelect](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#fileselect) event triggers whenever items are selected or deselected, providing information about the current selection state.
+The [fileSelect](https://ej2.syncfusion.com/angular/documentation/api/file-manager#fileselect) event triggers whenever items are selected or deselected, providing information about the current selection state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,7 +39,7 @@ The [fileSelect](https://ej2.syncfusion.com/angular/documentation/api/file-manag
   
 {% previewsample "page.domainurl/samples/file-manager/multiselect-cs1" %}
 
->Note: You can programmatically select specific files and folders either initially or dynamically by providing their names in the [selectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#selecteditems) property.
+>Note: You can programmatically select specific files and folders either initially or dynamically by providing their names in the [selectedItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager#selecteditems) property.
 
 ## Range Selection
 
@@ -47,7 +47,7 @@ The File Manager supports selecting files and folders in specific ranges through
 
 ### Enabling Range Selection
 
-To enable range selection, set the [enableRangeSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enablerangeselection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowmultiselection) property.
+To enable range selection, set the [enableRangeSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablerangeselection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowmultiselection) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,9 +67,9 @@ To enable range selection, set the [enableRangeSelection](https://ej2.syncfusion
 
 There are two ways to control multiple selection capabilities in the File Manager:
 
-1. **Partial restriction**: Setting the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowmultiselection) property to `false` will disable keyboard-based multiple selection methods (Ctrl+click, Shift+click, Ctrl+A). However, users can still select multiple items using checkboxes if they are visible.
+1. **Partial restriction**: Setting the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowmultiselection) property to `false` will disable keyboard-based multiple selection methods (Ctrl+click, Shift+click, Ctrl+A). However, users can still select multiple items using checkboxes if they are visible.
 
-2. **Complete restriction**: To fully disable all multiple selection capabilities, set both [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowmultiselection) and [showItemCheckBoxes](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#showitemcheckboxes) properties to `false`. This ensures users can select only one item at a time.
+2. **Complete restriction**: To fully disable all multiple selection capabilities, set both [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowmultiselection) and [showItemCheckBoxes](https://ej2.syncfusion.com/angular/documentation/api/file-manager#showitemcheckboxes) properties to `false`. This ensures users can select only one item at a time.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

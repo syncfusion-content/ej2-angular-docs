@@ -1,7 +1,7 @@
 ---
 layout: post
 title: File system provider in Angular File Manager component | Syncfusion
-description: Learn here all about File system provider in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about File system provider in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager 
 documentation: ug
@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The file system provider allows the File Manager component to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 
 ## Overview of File System Providers
-The following file providers are available in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 File Manager component:
+The following file providers are available in EJ2 File Manager component:
 
 * [Physical file system provider](#physical-file-system-provider)
 * [Azure cloud file system Provider](#azure-cloud-file-system-provider)

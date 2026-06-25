@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization in Angular File Manager component | Syncfusion
-description: Learn here all about Virtualization in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Virtualization in Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: File Manager 
 documentation: ug
@@ -36,9 +36,9 @@ export class AppModule { }
 
 ## Enable Virtualization
 
-The File Manager's virtualization feature dynamically renders items based on the current viewport dimensions. As users scroll through content in either [largeIconsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#view) or [detailsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/detailsViewSettings/), only the visible items are loaded, while others are rendered on demand.
+The File Manager's virtualization feature dynamically renders items based on the current viewport dimensions. As users scroll through content in either [largeIconsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager#view) or [detailsView](https://ej2.syncfusion.com/angular/documentation/api/file-manager/detailsViewSettings), only the visible items are loaded, while others are rendered on demand.
 
-To enable virtualization, set the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enablevirtualization) property to true. This is especially recommended when working with directories containing hundreds or thousands of files.
+To enable virtualization, set the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/file-manager#enablevirtualization) property to true. This is especially recommended when working with directories containing hundreds or thousands of files.
 
 ### Implementation Example
 

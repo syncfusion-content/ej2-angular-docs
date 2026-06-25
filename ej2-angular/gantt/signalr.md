@@ -73,7 +73,7 @@ import { registerLicense } from '@syncfusion/ej2-base';
 
 export class AppComponent {   
   constructor() {
-    registerLicense('YOUR_SYNC_FUSION_LICENSE_KEY');
+    registerLicense('YOUR_SYNCFUSION_LICENSE_KEY');
   }   
 }
 ```
@@ -124,27 +124,27 @@ export class AppComponent {
   
   created() {
     this.connection = new HubConnectionBuilder()
-      .withUrl('https://localhost:7297/chatHub', {
+      .withUrl('https://localhost:7297/ganttHub', {
         withCredentials: true
       })
       .configureLogging(LogLevel.Information)
       .build();
     this.connection.on('ReceiveMessage', (message: string) => {
-      if (message === 'refreshPages') {
+      if (message === 'JoinProject') {
         this.refreshGantt(); // Implement refresh logic
       }
     });
     this.connection.start()
       .then(() => {
         console.log('SignalR connection established');
-        return this.connection.invoke('SendMessage', 'refreshPages');
+        return this.connection.invoke('BroadCastTaskChange', 'JoinProject');
       })
       .catch(err => console.error('SignalR Error: ', err));
   }
 
   actionComplete(args: any) {
     if (args.requestType === 'save' || args.requestType === "add" || args.requestType === 'delete') {
-      this.connection.invoke('SendMessage', "refreshPages")
+      this.connection.invoke('BroadCastTaskChange', "JoinProject")
         .catch((err: Error) => {
           console.error(err.toString());
         });
@@ -160,9 +160,9 @@ export class AppComponent {
 
 - **HubConnectionBuilder**: Configures and creates the SignalR connection to the backend hub. It allows you to specify the hub URL, authentication options (such as credentials), logging level, and reconnection behavior. Once configured, the `.build()` method creates the `HubConnection` instance that manages communication with the server.
 
-- **on()**: Registers a client-side listener for messages broadcast by the server. In this implementation, it listens for the `ReceiveMessage` event sent from the hub. When a message is received (e.g., "refreshPages"), the callback function executes and triggers a refresh of the Gantt Chart to reflect the latest changes made by any user.
+- **on()**: Registers a client-side listener for messages broadcast by the server. In this implementation, it listens for the `ReceiveMessage` event sent from the hub. When a message is received (e.g., "JoinProject"), the callback function executes and triggers a refresh of the Gantt Chart to reflect the latest changes made by any user.
 
-- **invoke()**: Allows the client to call a method on the server-side hub. In this implementation, it invokes the `SendMessage` method on the hub to broadcast a refresh notification to all connected clients whenever a significant change occurs in the Gantt Chart (e.g., adding, editing, or deleting a task).
+- **invoke()**: Allows the client to call a method on the server-side hub. In this implementation, it invokes the `BroadCastTaskChange` method on the hub to broadcast a refresh notification to all connected clients whenever a significant change occurs in the Gantt Chart (e.g., adding, editing, or deleting a task).
 
 
 ## Create the Background Service
@@ -173,17 +173,17 @@ Create an ASP.NET Core Web API project to host the SignalR hub. Refer to the [Ge
 
 ### Step 2: Implementing the SignalR Hub
 
-Create a `Hubs` folder in the project root and add `ChatHub.cs`:
+Create a `Hubs` folder in the project root and add `GanttHub.cs`:
 
 ```csharp
-ChatHub.cs
+GanttHub.cs
 
 using Microsoft.AspNetCore.SignalR;
 namespace GanttSignalRBackend.Hubs   
 {
-    public class ChatHub : Hub
+    public class GanttHub : Hub
     {
-        public async Task SendMessage(string message)
+        public async Task BroadCastTaskChange(string message)
         {
             await Clients.All.SendAsync("ReceiveMessage", message);
         }
@@ -191,7 +191,7 @@ namespace GanttSignalRBackend.Hubs
 }
 ```
 
-The `SendMessage` method broadcasts a message (e.g., "refreshPages") to all connected clients whenever a change occurs in the Gantt Chart. 
+The `BroadCastTaskChange` method broadcasts a message (e.g., "JoinProject") to all connected clients whenever a change occurs in the Gantt Chart. 
 
 ### Step 3: Configure SignalR Services and CORS
 
@@ -220,7 +220,7 @@ var app = builder.Build();
 app.UseCors();
 
 // Map SignalR hub   
-app.MapHub<ChatHub>("/chatHub");
+app.MapHub<GanttHub>("/ganttHub");
 
 app.Run();
 ```
@@ -297,15 +297,15 @@ When a user makes a change such as editing, adding, or deleting a task in the Ga
 
 **2. Broadcast the Change**
 
-Inside the `actionComplete` handler, the client checks the `requestType` property (e.g., add, edit, save, delete). If a meaningful change has occurred, the client calls `invoke('SendMessage', 'refreshPages')` on the SignalR connection. This sends a lightweight notification to the server-side hub.
+Inside the `actionComplete` handler, the client checks the `requestType` property (e.g., add, edit, save, delete). If a meaningful change has occurred, the client calls `invoke('BroadCastTaskChange', 'JoinProject')` on the SignalR connection. This sends a lightweight notification to the server-side hub.
 
 **3. Server Broadcasts to All Clients**
 
-Once the SignalR hub receives the message, it uses `Clients.All.SendAsync("ReceiveMessage", "refreshPages")` to push the notification to all connected clients.
+Once the SignalR hub receives the message, it uses `Clients.All.SendAsync("ReceiveMessage", "JoinProject")` to push the notification to all connected clients.
 
 **4. Clients Refresh Automatically**
 
-When each client receives the `ReceiveMessage` event, it checks if the message is "refreshPages". If so, the client executes the `refreshGantt()` method. The Gantt Chart then updates its data (either by re-fetching from the API or refreshing the UI), and the latest project state appears instantly for all users.
+When each client receives the `ReceiveMessage` event, it checks if the message is "JoinProject". If so, the client executes the `refreshGantt()` method. The Gantt Chart then updates its data (either by re-fetching from the API or refreshing the UI), and the latest project state appears instantly for all users.
 
 This mechanism ensures that collaborative changes are reflected in real time without requiring manual page refreshes, providing a smooth and responsive multi-user experience.
 
@@ -368,7 +368,7 @@ This section covers the most frequent problems developers encounter when integra
 
 | # | Problem | Possible Causes | Solution |
 |---|---------|----------------|----------|
-| 1 | "Failed to connect to SignalR hub" or connection stays in "Connecting" state | CORS policy blocking, incorrect hub URL, backend not running, firewall/proxy blocking WebSocket | Verify CORS is properly configured in `Program.cs` with `AllowCredentials()`. Ensure the hub URL matches exactly (e.g., `https://localhost:7297/chatHub`). Check browser console → Network tab for 400/403/502 errors on WebSocket connection. Ensure the backend is running before starting the Angular app. |
+| 1 | "Failed to connect to SignalR hub" or connection stays in "Connecting" state | CORS policy blocking, incorrect hub URL, backend not running, firewall/proxy blocking WebSocket | Verify CORS is properly configured in `Program.cs` with `AllowCredentials()`. Ensure the hub URL matches exactly (e.g., `https://localhost:7297/ganttHub`). Check browser console → Network tab for 400/403/502 errors on WebSocket connection. Ensure the backend is running before starting the Angular app. |
 | 2 | "CORS policy: No 'Access-Control-Allow-Origin' header is present" | CORS not configured or incorrect origin URL in backend | In `Program.cs`, ensure `WithOrigins("https://localhost:4200")` matches your Angular dev server URL exactly (including protocol and port). Add `.AllowCredentials()` to the policy. Call `app.UseCors()` before `app.MapHub()`. |
 | 3 | "Cannot read properties of undefined (reading 'invoke')" | SignalR connection not established before calling `invoke()`, connection object is null | Check that `this.connection` is not null/undefined before calling `invoke()`. Ensure `created()` event has completed and connection is started before `actionComplete()` tries to invoke methods. Add error handling: `if (!this.connection) return;` |
 | 4 | Changes made by one user don't appear for other users | Hub not broadcasting to all clients, clients not in the same group, message name mismatch | Verify hub method uses `Clients.All.SendAsync()` or the appropriate group targeting. Ensure the message name matches on both send and receive (e.g., "ReceiveMessage"). Check that all clients are listening with `connection.on('ReceiveMessage', ...)`. |
@@ -392,7 +392,7 @@ dotnet run
 
 **3. Inspect Network Traffic**
 - Open Developer Tools → Network tab → Filter by WS (WebSocket)
-- Look for connection to your hub endpoint (e.g., `/chatHub`)
+- Look for connection to your hub endpoint (e.g., `/ganttHub`)
 - Status should show "101 Switching Protocols" for successful WebSocket upgrade
 - If you see repeated XHR requests instead, WebSocket fallback to long polling occurred
 

@@ -1,0 +1,133 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-circulargauge/styles/tailwind3.css';
+
+#register-tool .banner-content .e-assistview-icon:before {
+    font-size: 35px;
+}
+#register-tool .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 330px;
+    text-align: center;
+}
+#register-tool .e-assist-tool .e-card:hover,
+#register-tool .e-assist-tool .e-card-content:hover {
+    background: none;
+}
+#register-tool .recipe-panel {
+    border-radius: 16px;
+    margin: 12px 0;
+    padding: 15px 10px;
+}
+#register-tool .recipe-title {
+    margin: 0 0 24px 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#register-tool .ingredient-item, .step-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e2e8f0;
+}
+#register-tool .ingredient-name { flex: 1; font-weight: 500; }
+#register-tool .ingredient-qty {
+    font-size: 0.95em;
+    min-width: 80px;
+    margin-right: 15px;
+    text-align: right;
+}
+#register-tool .e-assist-tool .check-score-btn.e-btn {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#register-tool .e-assist-tool .score-gauge-panel.e-card .e-circulargauge svg {
+    border-radius: 10px;
+}
+#register-tool .recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#register-tool .ingredients-list,
+#register-tool .instructions-list {
+    margin-top: 10px;
+}
+#register-tool .ingredient-item,
+#register-tool .step-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+#register-tool .ingredient-name,
+#register-tool .step-text {
+    flex: 1;
+}
+#register-tool .ingredient-qty {
+    width: 90px;
+    text-align: right;
+}
+#register-tool .editable {
+    outline: none;
+}
+#register-tool .score-gauge-panel {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+#register-tool .score-gauge {
+    height: 380px;
+    margin: 0 auto;
+}
+#register-tool .score-value {
+    font-size: 2.4em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#register-tool .gauge-annotation {
+    font-size: 22px;
+    margin-top: 15px;
+    font-family: inherit;
+}
+#register-tool #weather_card.e-card {
+        background-image: url('https://ej2.syncfusion.com/javascript/demos/src/card/images/weather.png');
+        width: 420px;
+    }
+#register-tool .material3-dark .e-card .e-card-header,
+#register-tool .material-dark .e-card .e-card-header {
+    padding: 10px;
+}
+#register-tool #weather_card.e-card .e-card-header-caption .e-card-header-title,
+#register-tool #weather_card.e-card .e-card-header-caption .e-card-sub-title {
+    color: white;
+}
+#register-tool .highcontrast #weather_card.e-card .e-card-header.weather_report .e-card-header-image {
+    border: none;
+}
+#register-tool #weather_card.e-card .weather_report .e-card-header-caption {
+    text-align: right;
+}
+#register-tool #weather_card.e-card .e-card-header.weather_report .e-card-header-image {
+    background-image: url('https://ej2.syncfusion.com/javascript/demos/src/card/images/rainy.svg');
+}
+#register-tool .col-xs-6.col-sm-6.col-lg-6.col-md-6 {
+    width: 100%;
+    padding: 10px;
+}
+#register-tool .card-layout {
+    margin: auto;
+    max-width: 400px;
+}
