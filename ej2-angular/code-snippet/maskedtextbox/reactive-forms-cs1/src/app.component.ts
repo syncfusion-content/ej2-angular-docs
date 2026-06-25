@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaskedTextBoxModule, MaskedTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
@@ -5,7 +6,7 @@ import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-    imports: [FormsModule, ReactiveFormsModule, MaskedTextBoxModule, ButtonModule],
+    imports: [FormsModule, ReactiveFormsModule, MaskedTextBoxModule, ButtonModule. CommonModule],
     standalone: true,
     selector: 'app-root',
     templateUrl: './template.html',

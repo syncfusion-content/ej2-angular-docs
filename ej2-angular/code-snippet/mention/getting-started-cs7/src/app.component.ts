@@ -19,7 +19,7 @@ standalone: true,
     template: `
     <label id="comment" >Comments</label>
     <!--Element which is the Mention component's target to list the suggestions-->
-    <div id="mentionElement" placeholder = "Type @ and select your comments"></div>
+    <div id="mentionElement" placeholder = "Type # and select your comments"></div>
     <ejs-mention [dataSource]='userData' [target]='mentionTarget' [showMentionChar]="true" [mentionChar]="mentionCharacter"></ejs-mention>`,
 
 })

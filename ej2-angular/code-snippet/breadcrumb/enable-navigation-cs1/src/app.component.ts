@@ -23,7 +23,7 @@ standalone: true,
                 <e-breadcrumb-items>
                     <e-breadcrumb-item iconCss= 'e-icons e-home' url= 'https://ej2.syncfusion.com/angular/demos/'>
                     </e-breadcrumb-item>
-                    <e-breadcrumb-item text= 'Components' url= 'https://ej2.syncfusion.com/angular/demos/datagrid/overview'>
+                    <e-breadcrumb-item text= 'Components' url= 'https://ej2.syncfusion.com/angular/demos/grid/over-view'>
                     </e-breadcrumb-item>
                     <e-breadcrumb-item text= 'Navigations' url= 'https://ej2.syncfusion.com/angular/demos/menu/default'>
                     </e-breadcrumb-item>
@@ -38,7 +38,7 @@ standalone: true,
                 <e-breadcrumb-items>
                     <e-breadcrumb-item iconCss= 'e-icons e-home' url= 'https://ej2.syncfusion.com/angular/demos/'>
                     </e-breadcrumb-item>
-                    <e-breadcrumb-item text= 'Components' url= 'https://ej2.syncfusion.com/angular/demos/datagrid/overview'>
+                    <e-breadcrumb-item text= 'Components' url= 'https://ej2.syncfusion.com/angular/demos/grid/over-view'>
                     </e-breadcrumb-item>
                     <e-breadcrumb-item text= 'Navigations' url= 'https://ej2.syncfusion.com/angular/demos/menu/default'>
                     </e-breadcrumb-item>

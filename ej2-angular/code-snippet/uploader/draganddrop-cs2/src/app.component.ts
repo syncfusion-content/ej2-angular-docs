@@ -25,7 +25,7 @@ standalone: true,
               `
 })
 export class AppComponent {
-    public dropEle?: HTMLElement ;
+    public dropEle?: HTMLElement | null ;
     ngOnInit() {
           this.dropEle = document.getElementById('droparea');
     }
