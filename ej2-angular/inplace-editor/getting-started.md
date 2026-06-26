@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Inplace editor component
+# Getting started with Angular Inplace Editor component
 
 This section explains the steps to create a simple **In-place Editor** component and configure its available functionalities in Angular.
 
