@@ -8,26 +8,11 @@ import { GanttData } from './data';
   imports: [GanttModule],
   template: `<ejs-gantt height="370px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings">
     <e-columns>
-        <e-column field="TaskName" width="290">
-            <ng-template #headerTemplate let-column>
-                {{ column.headerText }}
-                <div>
-                    <img src="assets/images/TaskName.png" width="20" height="20" />
-                </div>
-            </ng-template>
-        </e-column>
-        <e-column field="StartDate" headerText="Start Date" width="390" format="yMd" textAlign="Right">
-        </e-column>
-        <e-column field="Duration" headerText="Duration" width="120" textAlign="Right">
-            <ng-template #headerTemplate let-column>
-                {{ column.headerText }}
-                <div>
-                    <img src="assets/images/Duration.png" width="20" height="20">
-                </div>
-            </ng-template>
-        </e-column>
-        <e-column field="Progress" headerText="Progress" width="120" textAlign="Right">
-        </e-column>
+        <e-column field="TaskID" headerText="Task ID" width="100"></e-column>
+        <e-column field="TaskName" headerText="Task Name"></e-column>
+        <e-column field="StartDate" headerText="Start Date"></e-column>
+        <e-column field="Duration" headerText="Duration"></e-column>
+        <e-column field="Progress" headerText="Progress"></e-column>
     </e-columns>
 </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None

@@ -109,6 +109,7 @@ Apply themes to exported PDF documents by setting the [theme](https://ej2.syncfu
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs12" %}
 
 ## See also
+
 - [How to export to Excel?](https://ej2.syncfusion.com/angular/documentation/gantt/excel-export)
 - [How to customize PDF export?](https://ej2.syncfusion.com/angular/documentation/gantt/pdf-export/customize-pdf-export)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)

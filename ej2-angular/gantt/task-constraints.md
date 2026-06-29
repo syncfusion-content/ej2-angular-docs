@@ -15,6 +15,7 @@ Task constraints in the Angular Gantt Chart component define scheduling rules th
 ## Benefits of task constraints
 
 Task constraints enhance project planning with the following advantages:
+
 - Enforce logical task sequences, ensuring dependencies are respected (e.g., taskbars align with predecessors).
 - Anchor tasks to fixed milestone dates, such as product launches or audits.
 - Prevent resource conflicts by spacing tasks that share teams or equipment.
@@ -26,16 +27,16 @@ Task constraints enhance project planning with the following advantages:
 
 The [constraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfieldsmodel#constrainttype) property accepts one of eight numeric values from the [ConstraintType](https://ej2.syncfusion.com/angular/documentation/api/gantt/constraintType) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
 
-| Constraint Type | Numeric Enum Value | Description | Example Use Case |
-|-----------------|--------------------|-------------|------------------|
-| As Soon As Possible (ASAP) | 0 | Starts the task as soon as dependencies are met. Default for auto-scheduled tasks. | Begin coding once requirements are finalized. |
-| As Late As Possible (ALAP) | 1 | Delays the task until the latest possible start without delaying successors. | Finalize documentation just before release. |
-| Must Start On (MSO) | 2 | Requires the task to start on a specific date. | Start integration on July 1 per contract. |
-| Must Finish On (MFO) | 3 | Requires the task to finish on a specific date. | Submit reports by March 31 for compliance. |
-| Start No Earlier Than (SNET) | 4 | Prevents the task from starting before a date. | Delay marketing until regulatory approval on August 15. |
-| Start No Later Than (SNLT) | 5 | Requires the task to start on or before a date. | Begin reviews by September 1 for reporting. |
-| Finish No Earlier Than (FNET) | 6 | Prevents the task from finishing before a date. | Delay training completion until onboarding finishes. |
-| Finish No Later Than (FNLT) | 7 | Requires the task to finish on or before a date. | Complete QA by July 25 for release. |
+| Constraint Type               | Numeric Enum Value | Description                                                                        | Example Use Case                                        |
+| ----------------------------- | ------------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| As Soon As Possible (ASAP)    | 0                  | Starts the task as soon as dependencies are met. Default for auto-scheduled tasks. | Begin coding once requirements are finalized.           |
+| As Late As Possible (ALAP)    | 1                  | Delays the task until the latest possible start without delaying successors.       | Finalize documentation just before release.             |
+| Must Start On (MSO)           | 2                  | Requires the task to start on a specific date.                                     | Start integration on July 1 per contract.               |
+| Must Finish On (MFO)          | 3                  | Requires the task to finish on a specific date.                                    | Submit reports by March 31 for compliance.              |
+| Start No Earlier Than (SNET)  | 4                  | Prevents the task from starting before a date.                                     | Delay marketing until regulatory approval on August 15. |
+| Start No Later Than (SNLT)    | 5                  | Requires the task to start on or before a date.                                    | Begin reviews by September 1 for reporting.             |
+| Finish No Earlier Than (FNET) | 6                  | Prevents the task from finishing before a date.                                    | Delay training completion until onboarding finishes.    |
+| Finish No Later Than (FNLT)   | 7                  | Requires the task to finish on or before a date.                                   | Complete QA by July 25 for release.                     |
 
 ## Configure task constraints
 
@@ -44,6 +45,7 @@ Configure task constraints using the [taskFields.constraintType](https://ej2.syn
 **Define taskFields mappings**
 
 Map the following fields in `taskFields`:
+
 - `id`: Task identifier.
 - `name`: Task name.
 - `startDate`: Task start date.
@@ -77,11 +79,11 @@ import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
 import { constraintData } from './data';
 
 @Component({
-    imports: [GanttAllModule],
-    standalone: true,
-    selector: 'app-root',
-    template:
-        `<ejs-gantt #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings"
+imports: [GanttAllModule],
+standalone: true,
+selector: 'app-root',
+template:
+`<ejs-gantt #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings"
       [editSettings]="editSettings" [toolbar]="toolbar" [columns]="columns" [treeColumnIndex]="1" [labelSettings]="labelSettings"
       [splitterSettings]="splitterSettings" [timelineSettings]="timelineSettings" [projectStartDate]="projectStartDate"
       [projectEndDate]="projectEndDate" [eventMarkers]="eventMarkers">
@@ -92,29 +94,29 @@ import { constraintData } from './data';
         </div>
       </ng-template>
     </ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('rightLabel', { static: true }) public rightLabelTemplate?: any;
-    public data?: object[];
-    public taskSettings?: object;
-    public columns?: object[];
-    public editSettings?: object;
-    public toolbar?: string[];
-    public labelSettings?: object;
-    public splitterSettings?: object;
-    public timelineSettings?: object;
-    public resources?: object[];
-    public resourceFields?: object;
-    public projectStartDate?: Date;
-    public projectEndDate?: Date;
-    public eventMarkers?: object[];
-    public gridLines?: string;
-    public highlightWeekends?: boolean;
-    public allowSelection?: boolean;
-    public height?: string;
-    
+@ViewChild('rightLabel', { static: true }) public rightLabelTemplate?: any;
+public data?: object[];
+public taskSettings?: object;
+public columns?: object[];
+public editSettings?: object;
+public toolbar?: string[];
+public labelSettings?: object;
+public splitterSettings?: object;
+public timelineSettings?: object;
+public resources?: object[];
+public resourceFields?: object;
+public projectStartDate?: Date;
+public projectEndDate?: Date;
+public eventMarkers?: object[];
+public gridLines?: string;
+public highlightWeekends?: boolean;
+public allowSelection?: boolean;
+public height?: string;
+
     public ngOnInit(): void {
         this.data = constraintData;
         this.taskSettings = {
@@ -184,6 +186,7 @@ export class AppComponent implements OnInit {
         };
         return map[value];
     }
+
 }
 
 {% endraw %}
@@ -225,6 +228,7 @@ public actionBegin(args: ActionBeginArgs): void {
   }
 }
 ```
+
 The following example disables the **MustStartOn** violation popup:
 
 {% tabs %}
@@ -236,14 +240,14 @@ import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { constraintData } from './data';
 
 @Component({
-    imports: [ GanttAllModule ],
-    standalone: true,
-    selector: 'app-root',
-    template:
-        `<ejs-gantt height="450px" [dataSource]="data" [taskFields]="taskSettings"
-      [editSettings]="editSettings" [toolbar]="toolbar" [columns]="columns" [treeColumnIndex]="1" [labelSettings]="labelSettings"
-      [splitterSettings]="splitterSettings" [timelineSettings]="timelineSettings" [projectStartDate]="projectStartDate"
-      [projectEndDate]="projectEndDate" [eventMarkers]="eventMarkers" (actionBegin)="actionBegin($event)">
+imports: [ GanttAllModule ],
+standalone: true,
+selector: 'app-root',
+template:
+`<ejs-gantt height="450px" [dataSource]="data" [taskFields]="taskSettings"
+[editSettings]="editSettings" [toolbar]="toolbar" [columns]="columns" [treeColumnIndex]="1" [labelSettings]="labelSettings"
+[splitterSettings]="splitterSettings" [timelineSettings]="timelineSettings" [projectStartDate]="projectStartDate"
+[projectEndDate]="projectEndDate" [eventMarkers]="eventMarkers" (actionBegin)="actionBegin($event)">
 
       <!-- Right Label Template to Show Constraint Text -->
       <ng-template #rightLabel let-data>
@@ -253,27 +257,28 @@ import { constraintData } from './data';
       </ng-template>
     </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
+
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('rightLabel', { static: true }) public rightLabelTemplate?: any;
-    public data?: object[];
-    public taskSettings?: object;
-    public columns?: object[];
-    public editSettings?: object;
-    public toolbar?: string[];
-    public labelSettings?: object;
-    public splitterSettings?: object;
-    public timelineSettings?: object;
-    public resources?: object[];
-    public resourceFields?: object;
-    public projectStartDate?: Date;
-    public projectEndDate?: Date;
-    public eventMarkers?: object[];
-    public gridLines?: string;
-    public highlightWeekends?: boolean;
-    public allowSelection?: boolean;
-    public height?: string;
+@ViewChild('rightLabel', { static: true }) public rightLabelTemplate?: any;
+public data?: object[];
+public taskSettings?: object;
+public columns?: object[];
+public editSettings?: object;
+public toolbar?: string[];
+public labelSettings?: object;
+public splitterSettings?: object;
+public timelineSettings?: object;
+public resources?: object[];
+public resourceFields?: object;
+public projectStartDate?: Date;
+public projectEndDate?: Date;
+public eventMarkers?: object[];
+public gridLines?: string;
+public highlightWeekends?: boolean;
+public allowSelection?: boolean;
+public height?: string;
 
     public ngOnInit(): void {
         this.data = constraintData;
@@ -336,7 +341,7 @@ export class AppComponent implements OnInit {
             (args as any).validateMode.respectMustStartOn = true
         }
     }
-    
+
     public getConstraintText(value: number): string {
         const map: { [key: number]: string } = {
             0: 'As Soon As Possible',
@@ -350,6 +355,7 @@ export class AppComponent implements OnInit {
         };
         return map[value];
     }
+
 }
 
 {% endraw %}
@@ -367,6 +373,7 @@ export class AppComponent implements OnInit {
 {% previewsample "page.domainurl/samples/gantt/task-scheduling/task-constraints-cs2" %}
 
 ## See also
-- [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+
+- [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
 - [How to enable baseline rendering?](https://ej2.syncfusion.com/angular/documentation/gantt/baseline)

@@ -1,5 +1,2 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-angular-inputs/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-tailwind3-theme/styles/speech-to-text/index.css';

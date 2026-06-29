@@ -40,7 +40,6 @@ The following built-in column menu items are available:
 {% previewsample "page.domainurl/samples/gantt/columns/columnmenu-cs1" %}
 
 > * You can disable the column menu for specific columns by setting `columns.showColumnMenu` to **false**.
-
 > * You can customize the default column menu items by defining [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuitems) with only the required items.
 
 ## Add a custom column menu item
@@ -63,7 +62,7 @@ The following example demonstrates how to add a custom column menu item to clear
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/column/columnmenu-cs2" %}
+{% previewsample "page.domainurl/samples/gantt/columns/columnmenu-cs2" %}
 
 ## Customize column menu items per column
 
@@ -117,7 +116,7 @@ To customize the column menu icon, follow these steps:
 
 ```css
 .e-gantt .e-columnheader .e-icons.e-columnmenu::before {
-  content: "\e99a";
+  content: "\e799";
 }
 ```
 

@@ -3,7 +3,7 @@ layout: post
 title: Customize PDF Exporting in Angular Gantt Chart | Syncfusion
 description: Learn here all about customize PDF exporting in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Multiple gantt exporting 
+control: Multiple gantt exporting
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -25,7 +25,7 @@ Set the exported PDF file name using the [fileName](https://ej2.syncfusion.com/a
 {% include code-snippet/gantt/pdf-export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs1" %}
 
 ## How to change page orientation
@@ -41,28 +41,28 @@ Adjust page orientation to **Portrait** or **Landscape** using the [pageOrientat
 {% include code-snippet/gantt/pdf-export-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs2" %}
 
 ## Customize page size
 
-Page size can be customized for the exported document using the  [pageSize](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfexportproperties#pagesize) property in [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfexportproperties).
+Page size can be customized for the exported document using the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfexportproperties#pagesize) property in [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfexportproperties).
 The supported page sizes are:
 
-* Letter
-* Note
-* Legal
-* A0 to A9
-* B0 to B5
-* Archa
-* Archb
-* Archc
-* Archd
-* Arche
-* Flsa
-* HalfLetter
-* Letter11x17
-* Ledger
+- Letter
+- Note
+- Legal
+- A0 to A9
+- B0 to B5
+- Archa
+- Archb
+- Archc
+- Archd
+- Arche
+- Flsa
+- HalfLetter
+- Letter11x17
+- Ledger
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,7 +77,7 @@ The supported page sizes are:
 {% include code-snippet/gantt/pdf-export-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs3" %}
 
 ## Export current view data
@@ -97,7 +97,7 @@ PDF export provides an option to export the current view data into PDF. To expor
 {% include code-snippet/gantt/pdf-export-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs4" %}
 
 ## Enable footer
@@ -117,7 +117,7 @@ By default, we render the default footer for a PDF file, this can be enabled or 
 {% include code-snippet/gantt/pdf-export-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs5" %}
 
 ## Export hidden columns
@@ -137,7 +137,7 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 {% include code-snippet/gantt/pdf-export-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs6" %}
 
 ## Export predecessor lines
@@ -157,7 +157,7 @@ The visibility of predecessor lines in the exported PDF document can be controll
 {% include code-snippet/gantt/pdf-export-cs7/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs7" %}
 
 ## Export specific columns
@@ -181,7 +181,7 @@ In the following example, the **Duration** column is initially hidden in the Gan
 {% include code-snippet/gantt/pdf-export-cs8/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs8" %}
 
 ## Conditional cell formatting
@@ -203,7 +203,7 @@ In the following sample, the background color is set for **Progress** column in 
 {% include code-snippet/gantt/pdf-export-cs9/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs9" %}
 
 ## Timeline cell formatting
@@ -225,7 +225,7 @@ In the following sample, the header background color is set for timeline cells i
 {% include code-snippet/gantt/pdf-export-cs10/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs10" %}
 
 ## Taskbar formatting
@@ -247,12 +247,12 @@ In the following sample, the taskbar background color is customized in the chart
 {% include code-snippet/gantt/pdf-export-cs11/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs11" %}
 
 ## Customize Gantt chart appearance in PDF export
 
-PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties#ganttstyle) within [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme. 
+PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties#ganttstyle) within [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -267,7 +267,7 @@ PDF export allows to customize the Gantt chart's appearance in the exported PDF 
 {% include code-snippet/gantt/pdf-export-cs13/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs13" %}
 
 ## Customize split taskbar segment colors in PDF
@@ -289,7 +289,7 @@ The [taskSegmentStyles](https://ej2.syncfusion.com/angular/documentation/api/gan
 {% include code-snippet/gantt/pdf-export-cs16/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs16" %}
 
 ## Exporting with templates
@@ -300,7 +300,7 @@ The PDF export functionality allows to export Grid columns that include images, 
 
 In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfquerycellinfoeventargs#hyperlink) and [image](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfquerycellinfoeventargs#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfquerycellinfoeventargs) event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -315,7 +315,7 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 {% include code-snippet/gantt/pdf-export-column-template-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-column-template-cs1" %}
 
 ### Exporting with taskbar template
@@ -324,7 +324,7 @@ The PDF export functionality allows to export taskbar templates that include `im
 
 In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfquerytaskbarinfoeventargs#taskbartemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfquerytaskbarinfo) event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -343,7 +343,7 @@ In the following sample, taskbar templates with images and text are exported to 
 {% include code-snippet/gantt/pdf-export-taskbar-template/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-taskbar-template" %}
 
 ### Exporting with task label template
@@ -352,7 +352,7 @@ The PDF export functionality allows to export task label template that include `
 
 In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs#labelSettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfquerytaskbarinfo) event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -371,7 +371,7 @@ In the following sample, task label template with images and text are exported t
 {% include code-snippet/gantt/pdf-export-tasklabel-template/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-tasklabel-template" %}
 
 ### Exporting with header template
@@ -380,7 +380,7 @@ The PDF export functionality allows to export header template that include `imag
 
 In the following sample, header template with images and text are exported to PDF using [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfcolumnheaderquerycellinfoeventargs#headertemplate) properties in the [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfcolumnheaderquerycellinfo) event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -399,10 +399,11 @@ In the following sample, header template with images and text are exported to PD
 {% include code-snippet/gantt/pdf-export-header-template/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/pdf-export-header-template" %}
 
 ## See also
+
 - [How to export Gantt chart to Excel?](https://ej2.syncfusion.com/angular/documentation/gantt/excel-export)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

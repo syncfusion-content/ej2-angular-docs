@@ -3,7 +3,7 @@ layout: post
 title: Managing Tasks in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about Managing tasks in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Managing tasks 
+control: Managing tasks
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -23,11 +23,10 @@ The following code example demonstrates editing in the Gantt Chart component.
 {% include code-snippet/gantt/managing-tasks/celledit-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/celledit-cs2" %}
 
-
-Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#id) column will be the primary key column.  If [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#id) column is not defined, we need to enable [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isprimarykey) for any one of the columns defined in the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property.
+Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#id) column will be the primary key column. If [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#id) column is not defined, we need to enable [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isprimarykey) for any one of the columns defined in the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property.
 
 ## Open new task dialog with default values
 
@@ -42,7 +41,7 @@ You can set default values when new task dialog opens using [actionBegin](https:
 {% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/addrow-toolbar-cs2" %}
 
 ## Cell edit type and its params
@@ -78,7 +77,7 @@ Below is the combined content from the provided markdown sections in bullet poin
 {% include code-snippet/gantt/managing-tasks/editParams-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/editParams-cs1" %}
 
 ## Prevent particular column and taskbar editing
@@ -95,20 +94,20 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
 {% include code-snippet/gantt/managing-tasks/prevent-editing-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/prevent-editing-cs1" %}
 
 ## Cell Edit Template
 
 The cell edit template is used to create a custom component for a particular column by invoking the following functions:
 
-* `create` - It is used to create the element at the time of initialization.
+- `create` - It is used to create the element at the time of initialization.
 
-* `write` - It is used to create the custom component or assign default value at the time of editing.
+- `write` - It is used to create the custom component or assign default value at the time of editing.
 
-* `read` - It is used to read the value from the component at the time of save.
+- `read` - It is used to read the value from the component at the time of save.
 
-* `destroy` - It is used to destroy the component.
+- `destroy` - It is used to destroy the component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,7 +118,7 @@ The cell edit template is used to create a custom component for a particular col
 {% include code-snippet/gantt/managing-tasks/cellEditTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/cellEditTemplate-cs1" %}
 
 ## Disable editing for particular column
@@ -137,7 +136,7 @@ In the following demo, editing is disabled for the **TaskName** column.
 {% include code-snippet/gantt/managing-tasks/disableedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs1" %}
 
 ## Customize control in add/edit dialog
@@ -161,18 +160,19 @@ In the below sample, General tab is customized using the `fields` property. The 
 {% include code-snippet/gantt/managing-tasks/disableedit-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs2" %}
 
 ### Customize dependency, segments and resources tab of dialog
 
 You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings) settings respectively. This customization involves defining properties from the [grid](https://ej2.syncfusion.com/angular/documentation/api/grid) within the `additionalParams` property.
 
-In the example below: 
-* The dependency tab enables [sorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) and [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) options. 
-* The segments tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#field).
-* The resources tab defines a new column **Segment Task**  with specific properties such as `field`, [width](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#width) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#headertext).
-These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
+In the example below:
+
+- The dependency tab enables [sorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) and [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) options.
+- The segments tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#field).
+- The resources tab defines a new column **Segment Task** with specific properties such as `field`, [width](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#width) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel#headertext).
+  These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -183,7 +183,7 @@ These customizations are applied to both `addDialogFields` and `editDialogFields
 {% include code-snippet/gantt/managing-tasks/disableedit-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs3" %}
 
 ### Customize note dialog tab
@@ -201,7 +201,7 @@ In the following example, the notes tab is customized with the [inlinemode](http
 {% include code-snippet/gantt/managing-tasks/disableedit-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs4" %}
 
 ## Touch interaction
@@ -210,11 +210,11 @@ The Gantt control editing actions can be achieved using the double tap and tap a
 
 The following table describes different types of editing modes available in Gantt.
 
-Action |Description
------|-----
-[Cell editing](managing-tasks#cell-editing) | To perform double tap on a specific cell, initiate the cell to be in edit state.
-[Dialog editing](managing-tasks#dialog-editing) | To perform double tap on a specific row, initiate the edit dialog to be opened.
-[Taskbar editing](managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> ![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> ![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
+| Action                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Cell editing](managing-tasks#cell-editing)       | To perform double tap on a specific cell, initiate the cell to be in edit state.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [Dialog editing](managing-tasks#dialog-editing)   | To perform double tap on a specific row, initiate the edit dialog to be opened.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [Taskbar editing](managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> ![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> ![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction. |
 
 ### Task dependency editing
 
@@ -224,12 +224,12 @@ The following table explains the taskbar state in dependency edit mode.
 
 ![Taskbar states](../images/taskbar-states.PNG)
 
-Taskbar state |Description
------|-----
-Parent taskbar | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](../images/parent-taskbar.PNG)
-Taskbar without dependency |  If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG)
-Taskbar with dependency | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](../images/invalid-taskbar.PNG)
-Removing dependency | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](../images/confirm-dialog.PNG)
+| Taskbar state              | Description                                                                                                                                                                             |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Parent taskbar             | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](../images/parent-taskbar.PNG)                                                                         |
+| Taskbar without dependency | If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG) |
+| Taskbar with dependency    | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](../images/invalid-taskbar.PNG)                              |
+| Removing dependency        | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](../images/confirm-dialog.PNG)                   |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -240,10 +240,10 @@ Removing dependency | Once you tap the taskbar with direct dependency, then conf
 {% include code-snippet/gantt/touch/dependencyediting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/touch/dependencyediting-cs1" %}
 
->Note: On mobile device, you cannot create dependency other than **FS** by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
+> Note: On mobile device, you cannot create dependency other than **FS** by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
 
 ## Taskbar editing tooltip
 
@@ -258,11 +258,12 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 {% include code-snippet/gantt/tooltip/taskbar-edit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/tooltip/taskbar-edit-cs1" %}
 
 ## See also
+
 - [How to add new tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/adding-new-tasks)
 - [How to delete tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/deleting-tasks)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

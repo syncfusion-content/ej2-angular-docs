@@ -18,17 +18,17 @@ Enable the multi taskbar feature by setting [enableMultiTaskbar](https://ej2.syn
 
 ```typescript
 export class AppComponent {
-    public enableMultiTaskbar: boolean = true;
-    public viewType: string = 'ResourceView';
-    public taskSettings: object = {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        endDate: 'EndDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        resourceInfo: 'Resources'
-    };
+  public enableMultiTaskbar: boolean = true;
+  public viewType: string = "ResourceView";
+  public taskSettings: object = {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    endDate: "EndDate",
+    duration: "Duration",
+    progress: "Progress",
+    resourceInfo: "Resources",
+  };
 }
 ```
 
@@ -49,6 +49,7 @@ The following example demonstrates multi taskbar configuration:
 ## Configure taskbar overlap
 
 The [allowTaskbarOverlap](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowtaskbaroverlap) property controls how multiple taskbars are displayed in a resource row:
+
 - **Overlapping mode (true, default)**: Taskbars overlap within standard row height, supporting full dependency connections, including between tasks of the same resource. Suitable for compact views with many tasks.
 - **Non-overlapping mode (false)**: Taskbars are vertically arranged in an extended row height, preventing overlap for clearer visibility of overallocation. Dependencies between tasks of the same resource are not supported due to vertical stacking, though inter-resource dependencies work.
 
@@ -56,9 +57,9 @@ The following example disables taskbar overlap:
 
 ```typescript
 export class AppComponent {
-    public enableMultiTaskbar: boolean = true;
-    public allowTaskbarOverlap: boolean = false;
-    public viewType: string = 'ResourceView';
+  public enableMultiTaskbar: boolean = true;
+  public allowTaskbarOverlap: boolean = false;
+  public viewType: string = "ResourceView";
 }
 ```
 
@@ -79,6 +80,7 @@ The following example demonstrates non-overlapping multi taskbar:
 This configuration extends row height for clear task separation, ideal for identifying conflicts in small teams, but limits same-resource dependencies. Use overlapping mode for projects requiring extensive dependency mapping.
 
 ## See also
+
 - [How to configure resource view?](https://ej2.syncfusion.com/angular/documentation/gantt/resource-view)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to allocate resources?](https://ej2.syncfusion.com/angular/documentation/gantt/resources)

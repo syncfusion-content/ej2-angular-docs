@@ -25,6 +25,7 @@ The copy and paste functionality in the Angular Gantt Chart component enables ef
 {% previewsample "page.domainurl/samples/gantt/how-to/copypaste-cs1" %}
 
 ## See also
+
 - [How to configure context menu?](https://ej2.syncfusion.com/angular/documentation/gantt/context-menu)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

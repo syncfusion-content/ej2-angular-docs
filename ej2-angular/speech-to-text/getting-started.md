@@ -51,7 +51,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages (`>=20.2.36`) have been updated to the Ivy distribution format to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine. These packages are compatible with Angular version 12 and above. To download the package, use the below command.
+Syncfusion Angular packages (`>=20.2.36`) have been updated to the Ivy distribution format to support the Angular `Ivy` rendering engine. These packages are compatible with Angular version 12 and above. To download the package, use the below command.
 
 The Syncfusion Angular SpeechToText component is included in the [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38) package. Install it using the following command:
 
@@ -79,13 +79,16 @@ To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding CSS reference
 
-Add SpeechToText component's styles as given below in `style.css`.
+To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
+
+```bash
+npm install @syncfusion/ej2-tailwind3-theme --save
+```
+
+To render the SpeechToText component, add the below import in the [src/styles.css] file which loads all the required dependency styles, as shown below:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/speech-to-text/index.css";
 ```
 
 ## Adding the Syncfusion SpeechToText component

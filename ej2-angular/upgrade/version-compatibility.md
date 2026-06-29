@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular Version Compatibility for Syncfusion<sup style="font-size:70%">&reg;</sup> Components
+# Angular Version Compatibility for Syncfusion Components
 
 ## Supported Angular Versions
 
@@ -16,6 +16,7 @@ The following table provides compatibility information for Syncfusion<sup style=
 
 | Angular Version | Compatible Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
 | --------------- | ------------------------------------------------ |
+| [Angular v22](https://blog.angular.dev/announcing-angular-v22-c52bb83a4664) | 34.1.29 and above |
 | [Angular v21](https://www.syncfusion.com/blogs/post/angular-21-updates-syncfusion-support) | 31.1.17 and above |
 | [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 30.1.37 and above |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |

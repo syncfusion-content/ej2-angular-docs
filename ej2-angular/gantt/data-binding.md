@@ -27,8 +27,10 @@ The Gantt Chart component uses `DataManager` to support both RESTful JSON data s
 **Remote Data Binding**: Remote data binding connects to external servers or databases to fetch project information dynamically. This method supports real-time data synchronization and scalable data management for enterprise-level applications.
 
 The component supports two primary data structure types for organizing project hierarchies:
-• **Hierarchical data binding**: Uses nested object structures where parent tasks contain child arrays
-• **Self-referential data binding**: Uses flat data structures with ID fields to establish parent-child relationships
+
+* **Hierarchical data binding**: Uses nested object structures where parent tasks contain child arrays
+
+* **Self-referential data binding**: Uses flat data structures with ID fields to establish parent-child relationships
 
 ## Local data binding implementation
 
@@ -645,7 +647,7 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 **State persistence**: ExpandStateMapping ensures parent tasks maintain their intended expanded or collapsed states across data operations, providing consistent user experience and preserving intended data visualization structures.
 
-## programmatically update datasource
+## Programmatically update datasource
 
 You can programmatically update the Gantt chart data source using the [updateDataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
 

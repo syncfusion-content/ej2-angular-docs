@@ -49,55 +49,136 @@ Enable a confirmation dialog for task deletion by setting [editSettings.showDele
 Delete tasks programmatically using the [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterecord) method, which requires a selected row and `EditService`. Ensure the row is selected and `taskFields` mappings (e.g., id) are valid to perform the deletion. This method supports automation, such as removing tasks via a custom button, and respects the confirmation dialog if enabled.
 
 ```typescript
-import { Component, ViewChild } from '@angular/core';
-import { GanttModule, GanttComponent, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewChild } from "@angular/core";
+import {
+  GanttModule,
+  GanttComponent,
+  EditService,
+  SelectionService,
+} from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-    imports: [GanttModule],
-    providers: [EditService, SelectionService],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-        <button ejs-button (click)="deleteTask()">Delete Task</button>
-        <ejs-gantt #ganttInstance id="ganttDefault" height="430px"  [dataSource]="taskData"  [taskFields]="taskSettings"  [editSettings]="editSettings">
-        </ejs-gantt>`
+  imports: [GanttModule],
+  providers: [EditService, SelectionService],
+  standalone: true,
+  selector: "app-root",
+  template: ` <button ejs-button (click)="deleteTask()">Delete Task</button>
+    <ejs-gantt
+      #ganttInstance
+      id="ganttDefault"
+      height="430px"
+      [dataSource]="taskData"
+      [taskFields]="taskSettings"
+      [editSettings]="editSettings"
+    >
+    </ejs-gantt>`,
 })
-
 export class AppComponent {
-    @ViewChild('ganttInstance', { static: true }) public ganttInstance: GanttComponent;
-    public taskData: object[] = [
-        { TaskID: 1, TaskName: "Product concept", StartDate: new Date("04/02/2025"), EndDate: new Date("04/08/2025") },
-        { TaskID: 2, TaskName: "Define the product usage", StartDate: new Date("04/02/2025"), EndDate: new Date("04/08/2025"), Duration: 1, Progress: 30, ParentId: 1 },
-        { TaskID: 3, TaskName: "Define the target audience", StartDate: new Date("04/02/2025"), EndDate: new Date("04/04/2025"), Duration: 2, Progress: 40, ParentId: 1 },
-        { TaskID: 4, TaskName: "Prepare product sketch and notes", StartDate: new Date("04/05/2025"), Duration: 2, Progress: 30, ParentId: 1, Predecessor: "2" },
-        { TaskID: 5, TaskName: "Concept approval", StartDate: new Date("04/08/2025"), EndDate: new Date("04/08/2025"), Duration: 0, ParentId: 1, Predecessor: "3,4" },
-        { TaskID: 6, TaskName: "Market research", StartDate: new Date("04/09/2025"), EndDate: new Date("04/18/2025"), Progress: 30 },
-        { TaskID: 7, TaskName: "Demand analysis", Progress: 40, ParentId: 6 },
-        { TaskID: 8, TaskName: "Customer strength", StartDate: new Date("04/09/2025"), EndDate: new Date("04/12/2025"), Duration: 4, Progress: 30, ParentId: 7, Predecessor: "5" },
-        { TaskID: 9, TaskName: "Market opportunity analysis", StartDate: new Date("04/09/2025"), EndDate: new Date("04/12/2025"), Duration: 4, ParentId: 7, Predecessor: "5" },
-        { TaskID: 10, TaskName: "Competitor analysis", StartDate: new Date("04/15/2025"), EndDate: new Date("04/18/2025"), Duration: 4, Progress: 30, ParentId: 6, Predecessor: "7,8" },
-    ];
-    public taskSettings: object = {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        dependency: 'Predecessor',
-        progress: 'Progress',
-        parentID: 'ParentId'
-    };
+  @ViewChild("ganttInstance", { static: true })
+  public ganttInstance: GanttComponent;
+  public taskData: object[] = [
+    {
+      TaskID: 1,
+      TaskName: "Product concept",
+      StartDate: new Date("04/02/2025"),
+      EndDate: new Date("04/08/2025"),
+    },
+    {
+      TaskID: 2,
+      TaskName: "Define the product usage",
+      StartDate: new Date("04/02/2025"),
+      EndDate: new Date("04/08/2025"),
+      Duration: 1,
+      Progress: 30,
+      ParentId: 1,
+    },
+    {
+      TaskID: 3,
+      TaskName: "Define the target audience",
+      StartDate: new Date("04/02/2025"),
+      EndDate: new Date("04/04/2025"),
+      Duration: 2,
+      Progress: 40,
+      ParentId: 1,
+    },
+    {
+      TaskID: 4,
+      TaskName: "Prepare product sketch and notes",
+      StartDate: new Date("04/05/2025"),
+      Duration: 2,
+      Progress: 30,
+      ParentId: 1,
+      Predecessor: "2",
+    },
+    {
+      TaskID: 5,
+      TaskName: "Concept approval",
+      StartDate: new Date("04/08/2025"),
+      EndDate: new Date("04/08/2025"),
+      Duration: 0,
+      ParentId: 1,
+      Predecessor: "3,4",
+    },
+    {
+      TaskID: 6,
+      TaskName: "Market research",
+      StartDate: new Date("04/09/2025"),
+      EndDate: new Date("04/18/2025"),
+      Progress: 30,
+    },
+    { TaskID: 7, TaskName: "Demand analysis", Progress: 40, ParentId: 6 },
+    {
+      TaskID: 8,
+      TaskName: "Customer strength",
+      StartDate: new Date("04/09/2025"),
+      EndDate: new Date("04/12/2025"),
+      Duration: 4,
+      Progress: 30,
+      ParentId: 7,
+      Predecessor: "5",
+    },
+    {
+      TaskID: 9,
+      TaskName: "Market opportunity analysis",
+      StartDate: new Date("04/09/2025"),
+      EndDate: new Date("04/12/2025"),
+      Duration: 4,
+      ParentId: 7,
+      Predecessor: "5",
+    },
+    {
+      TaskID: 10,
+      TaskName: "Competitor analysis",
+      StartDate: new Date("04/15/2025"),
+      EndDate: new Date("04/18/2025"),
+      Duration: 4,
+      Progress: 30,
+      ParentId: 6,
+      Predecessor: "7,8",
+    },
+  ];
+  public taskSettings: object = {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    dependency: "Predecessor",
+    progress: "Progress",
+    parentID: "ParentId",
+  };
 
-    public editSettings: object = {
-        allowDeleting: true
-    };
+  public editSettings: object = {
+    allowDeleting: true,
+  };
 
-    public deleteTask(): void {
-        this.ganttInstance.deleteRecord(this.ganttInstance.selectedRowIndex + 1);
-    }
+  public deleteTask(): void {
+    this.ganttInstance.deleteRecord(this.ganttInstance.selectedRowIndex + 1);
+  }
 }
 ```
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/task-bar-editing)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

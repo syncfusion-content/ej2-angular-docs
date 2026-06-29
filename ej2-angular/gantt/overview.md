@@ -27,7 +27,7 @@ The Angular Gantt Chart is a project management component that provides a Micros
 ## Task management
 
 - [**Task editing**](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks) - Edit tasks inline, through dialogs, or by dragging taskbars
-- [**Task dependencies**](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
+- [**Task dependencies**](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
 - [**Undo and redo**](https://ej2.syncfusion.com/angular/documentation/gantt/undo-redo) - Revert or reapply recent actions in the Gantt Chart
 - [**Task scheduling**](https://ej2.syncfusion.com/angular/documentation/gantt/scheduling-tasks) - Configure automatic or manual task scheduling modes
 - [**Splitting tasks**](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/splitting-and-merging-tasks) - Split tasks into multiple segments and merge them back
@@ -40,7 +40,7 @@ The Angular Gantt Chart is a project management component that provides a Micros
 ## Timeline and visualization
 
 - [**Timeline configuration**](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/timeline) - Configure timeline tiers from minutes to decades with custom text
-- [**Zooming**](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming) -  Zoom in and out to view tasks at different time scales
+- [**Zooming**](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming) - Zoom in and out to view tasks at different time scales
 - [**Timezone support**](https://ej2.syncfusion.com/angular/documentation/gantt/timezone) - Schedule projects across different timezones
 - [**Taskbars**](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar) - Customize taskbar appearance and display baselines for planned vs actual progres
 - [**Critical path**](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path) - Identify task sequences that determine project completion dates

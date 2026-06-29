@@ -13,7 +13,6 @@ domainurl: ##DomainURL##
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 
 > * If the `field` is not defined in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource), the column will display empty values.
-> * A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
 > * To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
 
 ## Define columns manually 

@@ -27,6 +27,7 @@ The following code example shows how to open add and dialog on separate button c
 {% previewsample "page.domainurl/samples/gantt/how-to/dynamicopen-cs1" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/task-bar-editing)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

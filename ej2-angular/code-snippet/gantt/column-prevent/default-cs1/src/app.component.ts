@@ -13,7 +13,7 @@ import { TaskFieldsModel, ColumnModel } from '@syncfusion/ej2-angular-gantt';
       <button ejs-button id="add" style="margin-right: 8px;" (click)="addColumn()">Add Column</button>
       <button ejs-button id="remove" (click)="removeColumn()">Remove Column</button>
     </div>
-    <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" enablePersistence="true" (dataBound)="onDataBound()">
+    <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" enablePersistence="true">
     </ejs-gantt>`
 })
 
@@ -50,15 +50,6 @@ export class AppComponent implements OnInit {
       { field: 'Progress', headerText: 'Progress', width: 150 }
     ];
   }
-
-  public onDataBound(): void {
-    const originalPersist = (this.ganttInstance as any).addOnPersist;
-    (this.ganttInstance as any).addOnPersist = (keys: string[]): string[] => {
-      const filteredKeys = keys.filter(key => key !== 'columns');
-      return originalPersist.call(this.ganttInstance, filteredKeys);
-    };
-  }
-
   public addColumn(): void {
     const newColumn : ColumnModel = {
       field: 'Progress',

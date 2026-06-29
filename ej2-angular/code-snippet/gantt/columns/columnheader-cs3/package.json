@@ -29,6 +29,7 @@
     "@syncfusion/ej2-gantt": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-dropdowns": "*",
+    "@syncfusion/ej2-angular-grids": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",

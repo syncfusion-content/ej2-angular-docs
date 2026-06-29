@@ -25,6 +25,7 @@ The [updateProjectDates](https://ej2.syncfusion.com/angular/documentation/api/ga
 {% previewsample "page.domainurl/samples/gantt/how-to/changescheduledates-cs1" %}
 
 ## See also
+
 - [How to configure timeline settings?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

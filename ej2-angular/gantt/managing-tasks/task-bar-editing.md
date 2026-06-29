@@ -45,6 +45,7 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](https://ej
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/prevent-taskbaredit-cs1" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

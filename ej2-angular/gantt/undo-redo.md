@@ -15,6 +15,7 @@ The undo redo feature in the Angular Gantt Chart component allows users to rever
 ## Configure undo redo
 
 Enable undo redo by setting [enableUndoRedo](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableundoredo) to **true** and injecting `UndoRedoService` in the Angular module’s providers. The [undoRedoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt#undoredoactions) property customizes supported actions, such as:
+
 - **Edit:** Reverts task field changes (e.g., StartDate, Duration) via dialog or taskbar drag, requiring `EditService`.
 - **Delete:** Restores deleted tasks, requiring `EditService`.
 - **Add:** Removes added tasks, requiring `EditService`.
@@ -33,26 +34,26 @@ The [undoRedoStepsCount](https://ej2.syncfusion.com/angular/documentation/api/ga
 
 By default, all the Gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [undoRedoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt#undoredoactions) property.
 
-| Built-in Undo Redo Items | Actions |
-|------------------------|---------|
-| Edit | Undo redo actions can be performed for edited record.|
-| Delete | Undo redo actions can be performed for deleted record.|
-| Add | Undo redo actions can be performed for newly added record.|
-| ColumnReorder | Undo redo actions can be performed for reordered column.|
-| Indent | Undo redo actions can be performed for indented record.|
-| Outdent | Undo redo actions can be performed for outdented record.|
-| ColumnResize | Undo redo actions can be performed for resized column.|
-| Sorting | Undo redo actions can be performed for sorted column.|
-| Filtering | Undo redo actions can be performed for filtered record.|
-| Search | Undo redo actions can be performed for searched value.|
-| ZoomIn | Undo redo actions can be performed for zoomIn action.|
-| ZoomOut | Undo redo actions can be performed for zoomOut action.|
-| ZoomToFit | Undo redo actions can be performed for zoomToFit action.|
-| ColumnState | Undo redo actions can be performed for hidden or shown columns.|
-| RowDragAndDrop | Undo redo actions can be performed for row drag and drop.|
-| TaskbarDragAndDrop |  Undo redo actions can be performed for taskbar drag and drop.|
-| PreviousTimeSpan | Undo redo actions can be performed for previous time span action.|
-| NextTimeSpan | Undo redo actions can be performed for next time span action.|
+| Built-in Undo Redo Items | Actions                                                           |
+| ------------------------ | ----------------------------------------------------------------- |
+| Edit                     | Undo redo actions can be performed for edited record.             |
+| Delete                   | Undo redo actions can be performed for deleted record.            |
+| Add                      | Undo redo actions can be performed for newly added record.        |
+| ColumnReorder            | Undo redo actions can be performed for reordered column.          |
+| Indent                   | Undo redo actions can be performed for indented record.           |
+| Outdent                  | Undo redo actions can be performed for outdented record.          |
+| ColumnResize             | Undo redo actions can be performed for resized column.            |
+| Sorting                  | Undo redo actions can be performed for sorted column.             |
+| Filtering                | Undo redo actions can be performed for filtered record.           |
+| Search                   | Undo redo actions can be performed for searched value.            |
+| ZoomIn                   | Undo redo actions can be performed for zoomIn action.             |
+| ZoomOut                  | Undo redo actions can be performed for zoomOut action.            |
+| ZoomToFit                | Undo redo actions can be performed for zoomToFit action.          |
+| ColumnState              | Undo redo actions can be performed for hidden or shown columns.   |
+| RowDragAndDrop           | Undo redo actions can be performed for row drag and drop.         |
+| TaskbarDragAndDrop       | Undo redo actions can be performed for taskbar drag and drop.     |
+| PreviousTimeSpan         | Undo redo actions can be performed for previous time span action. |
+| NextTimeSpan             | Undo redo actions can be performed for next time span action.     |
 
 In the following code example, **Edit** and **Delete** actions are specified in `undoRedoActions` property.
 
@@ -69,7 +70,7 @@ In the following code example, **Edit** and **Delete** actions are specified in 
 {% include code-snippet/gantt/undo-redo/default-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs1" %}
 
 ## Configuring the storage step count for undo and redo actions
@@ -119,7 +120,7 @@ The following example triggers `undo` and `redo` via external buttons:
 {% include code-snippet/gantt/undo-redo/default-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs3" %}
 
 ## Retrieve undo and redo stack collection
@@ -141,7 +142,7 @@ The following code example demonstrates how to retrieve the **undo** and **redo*
 {% include code-snippet/gantt/undo-redo/default-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs4" %}
 
 ## Clear undo and redo collection
@@ -163,10 +164,11 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% include code-snippet/gantt/undo-redo/default-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs5" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/task-bar-editing)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

@@ -109,9 +109,6 @@ You can retain the expanded or collapsed state of parent rows during initial ren
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs4/src/data.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs4/src/data.ts %}
-{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs4" %}

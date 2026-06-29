@@ -25,6 +25,7 @@ The Angular Gantt Chart component allows you to enhance task data management by 
 {% previewsample "page.domainurl/samples/gantt/how-to/customfield-cs1" %}
 
 ## See also
+
 - [How to configure add/edit dialogs?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/managing-tasks#customize-control-in-addedit-dialog)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

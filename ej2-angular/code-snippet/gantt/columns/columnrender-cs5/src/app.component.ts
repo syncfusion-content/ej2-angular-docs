@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
       const rowIndex = parseInt(row.getAttribute('aria-rowindex') || '0', 10);
       const serialCell = row.querySelector('.e-rowcell');
       if (serialCell) {
-        serialCell.textContent = (rowIndex + 1).toString();
+        serialCell.textContent = rowIndex.toString();
       }
     }
   }

@@ -31,6 +31,7 @@ Use the [taskFields.work](https://ej2.syncfusion.com/angular/documentation/api/g
 ## Configure task types
 
 The [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#tasktype) property controls how `work`, `duration`, and `resourceUnit` fields interact during edits, with `FixedUnit` as the default unless `taskFields.work` is mapped (sets **FixedWork**). Inject `EditService` to enable editing. The available task types are:
+
 - **FixedDuration**: Duration remains constant; editing work or resource units adjusts the other (e.g., increasing work increases resource allocation).
 - **FixedWork**: Work remains constant; editing duration or resource units adjusts the other (e.g., reducing duration increases resource allocation).
 - **FixedUnit**: Resource units remain constant; editing work or duration adjusts the other (e.g., increasing work extends duration).
@@ -51,15 +52,16 @@ For example, a **FixedWork** task with 40 hours and two resources at 50% each sp
 
 Following table explains how the work, duration and resource unit fields will get updated on changing any of the fields
 
-Task Type | Changes in Duration | Changes in work | Changes in Resource Units
------|-----|-----|-----
-Fixed Duration | Work field updates | Resource unit updates| Work field updates
-Fixed Work | Resource unit updates.Note: For manually scheduled task work will update.| Duration field updates. Note: For manually scheduled task resource unit updates. |Duration will update. Note: For manually scheduled task work field updates.
-Fixed Unit | Work field updates | Duration field updates. Note: For manually scheduled task resource unit updates.| Duration will update. Note: For manually scheduled task work field updates.
+| Task Type      | Changes in Duration                                                       | Changes in work                                                                  | Changes in Resource Units                                                   |
+| -------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Fixed Duration | Work field updates                                                        | Resource unit updates                                                            | Work field updates                                                          |
+| Fixed Work     | Resource unit updates.Note: For manually scheduled task work will update. | Duration field updates. Note: For manually scheduled task resource unit updates. | Duration will update. Note: For manually scheduled task work field updates. |
+| Fixed Unit     | Work field updates                                                        | Duration field updates. Note: For manually scheduled task resource unit updates. | Duration will update. Note: For manually scheduled task work field updates. |
 
 ## Work limitations
 
 Work and task types have the following constraints:
+
 - Milestones (zero-duration tasks) do not support work calculations, as they lack duration.
 - Manually scheduled tasks override automatic calculations, allowing manual control over `work`, `duration`, or `resourceUnit`, which may lead to scheduling inconsistencies.
 - Editing work or task types requires `EditService` for dialogs or taskbar interactions.
@@ -67,6 +69,7 @@ Work and task types have the following constraints:
 - Work calculations rely on [resourceInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#resourceinfo) for accurate resource unit allocation.
 
 ## See also
+
 - [How to configure resources?](https://ej2.syncfusion.com/angular/documentation/gantt/resources)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

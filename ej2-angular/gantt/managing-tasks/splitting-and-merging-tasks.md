@@ -21,6 +21,7 @@ For more details, see [Split task at load time](https://ej2.syncfusion.com/angul
 ## Split tasks dynamically
 
 Split tasks dynamically using the dialog or context menu, requiring [taskFields.segments](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#segments) or [taskFields.segmentId](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#segmentid) mapped, `EditService` injected, and [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting) enabled:
+
 - **Dialog**: The Segments tab in the add/edit dialog allows splitting tasks based on their start and end dates.
 - **Context Menu**: Enable [enableContextMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablecontextmenu) and inject `ContextMenuService` to include the Split Task option in the context menu, enabling task splitting with a right-click.
 
@@ -61,7 +62,7 @@ You can get the clicked segment information using the [onTaskbarClick](https://h
 3. Split task is not supported with `Multi taskbar`.
 
 ## See also
+
 - [How to bind data in Gantt?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
-
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)

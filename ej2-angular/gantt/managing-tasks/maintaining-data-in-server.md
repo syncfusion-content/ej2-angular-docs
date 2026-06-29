@@ -17,42 +17,51 @@ Maintaining Gantt data in a server enables persistent project updates through RE
 Configure the Gantt Chart component to fetch and update data using DataManager with `UrlAdaptor`. Set the data source to a DataManager instance with `url` for the server endpoint to retrieve data and `batchUrl` for batch CRUD operations (insert, edit, delete). The server returns JSON with `result` as the data list and `count` as the total records. This setup supports large datasets and batch updates, automatically handling related tasks, such as parent or predecessor adjustments, via the `BatchSave` endpoint.
 
 ```typescript
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Component, ViewEncapsulation, OnInit } from "@angular/core";
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
 
 @Component({
-    selector: 'app-root',
-    template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: "app-root",
+  template: `<ejs-gantt
+    id="ganttDefault"
+    height="430px"
+    [dataSource]="data"
+    [taskFields]="taskSettings"
+    [columns]="columns"
+  ></ejs-gantt>`,
+  encapsulation: ViewEncapsulation.None,
 })
-
-export class AppComponent{
-    public data: DataManager;
-    public taskSettings: object;
-    public columns: object[];
-    public ngOnInit(): void {
-        this.data = new DataManager({
-            url: '/Home/UrlDatasource',
-            adaptor: new UrlAdaptor,
-            batchUrl: 'Home/BatchSave'
-        });
-        this.taskSettings = {
-            id: 'TaskId',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            dependency: 'Predecessor',
-            child: 'SubTasks'
-        };
-        this.columns = [
-            { field: 'TaskName', headerText: 'Task Name', width: '250', clipMode: 'EllipsisWithTooltip' },
-            { field: 'StartDate' },
-            { field: 'Duration' }
-        ];
-    }
+export class AppComponent {
+  public data: DataManager;
+  public taskSettings: object;
+  public columns: object[];
+  public ngOnInit(): void {
+    this.data = new DataManager({
+      url: "/Home/UrlDatasource",
+      adaptor: new UrlAdaptor(),
+      batchUrl: "Home/BatchSave",
+    });
+    this.taskSettings = {
+      id: "TaskId",
+      name: "TaskName",
+      startDate: "StartDate",
+      duration: "Duration",
+      progress: "Progress",
+      dependency: "Predecessor",
+      child: "SubTasks",
+    };
+    this.columns = [
+      {
+        field: "TaskName",
+        headerText: "Task Name",
+        width: "250",
+        clipMode: "EllipsisWithTooltip",
+      },
+      { field: "StartDate" },
+      { field: "Duration" },
+    ];
+  }
 }
 ```
 
@@ -194,6 +203,7 @@ public void RemoveChildRecords(string key)
 ```
 
 ## See also
+
 - [How to bind remote data?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding#remote-data)
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
