@@ -86,7 +86,35 @@ npm install @syncfusion/ej2-angular-grids --save
 ```
 ## Adding CSS reference
 
-The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css**
+You can add the CSS files required for the Syncfusion Angular DataGrid component using one of the following methods.
+
+### Option 1: Add CSS References from a Theme Package
+
+Themes for Syncfusion® DataGrid components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+
+Install the Material 3 theme package using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Then add the following CSS reference to the **src/style.css** file:
+
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/grids/grid/index.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+### Option 2: Add CSS References from Component Packages
+
+After installing the DataGrid package, the required CSS files are available in the corresponding Syncfusion packages under the **node_modules/@syncfusion** directory. Add the following CSS references to the **src/style.css** file:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
@@ -132,6 +160,7 @@ ng serve --open
 ## See also
 
 * [DataGrid Feature Modules](./module)
+* [Data Binding](./data-binding)
 * [How to get current query in Angular DataGrid](https://www.syncfusion.com/forums/147454/how-to-get-current-query-in-angular-grid)
 * [Apply DataGrid Localization from external JSON file in Angular DataGrid](https://www.syncfusion.com/forums/144844/apply-grid-localization-from-external-json-file-in-angular-grid)
 * [How to render the Syncfusion DataGrid in jHipster spring boot Angular App](https://www.syncfusion.com/forums/156933/how-to-render-the-syncfusion-grid-in-jhipster-spring-boot-angular-app)

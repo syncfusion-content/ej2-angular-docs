@@ -86,7 +86,35 @@ npm install @syncfusion/ej2-angular-treegrid --save
 ```
 ## Adding CSS reference
 
-The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css**
+You can add the CSS files required for the Syncfusion Angular Tree Grid component using one of the following methods.
+
+### Option 1: Add CSS References from a Theme Package
+
+Themes for Syncfusion® Tree Grid components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+
+Install the Material 3 theme package using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Then add the following CSS reference to the **src/style.css** file:
+
+{% tabs %}
+{% highlight css tabtitle="App.css" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/treegrid/treegrid/index.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+### Option 2: Add CSS References from Component Packages
+
+After installing the Tree Grid package, the required CSS files are available in the corresponding Syncfusion packages under the **node_modules/@syncfusion** directory. Add the following CSS references to the **src/style.css** file:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
@@ -102,6 +130,8 @@ The following CSS files are available in the **../node_modules/@syncfusion** pac
 ```
 
 For using SCSS styles, refer to [this guide](../common/how-to/sass).
+
+
 
 ## Add Tree Grid component
 

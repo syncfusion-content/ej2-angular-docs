@@ -1,0 +1,64 @@
+<div class="frame">
+    <h3>Repeat Button</h3>
+
+    <p style="font-size: 13px; color: #555; margin-top: 0;">
+        Hold the button to fire continuous <code>clicked</code> events.
+        The counters below track initial clicks vs. repeat fires.
+    </p>
+
+    <button
+        ejs-button
+        content="Hold Me"
+        [enableRepeat]="true"
+        [repeatDelay]="repeatDelay"
+        [repeatInterval]="repeatInterval"
+        [disabled]="disabled"
+        (clicked)="onClicked($event)">
+    </button>
+
+    <div class="controls">
+        <label>
+            Repeat Delay (ms)
+            <input
+                type="number"
+                [value]="repeatDelay"
+                min="0"
+                step="50"
+                (change)="onDelayChange($event)">
+        </label>
+
+        <label>
+            Repeat Interval (ms)
+            <input
+                type="number"
+                [value]="repeatInterval"
+                min="0"
+                step="50"
+                (change)="onIntervalChange($event)">
+        </label>
+
+        <label class="inline">
+            <input
+                type="checkbox"
+                [checked]="disabled"
+                (change)="onDisabledChange($event)">
+            Disabled
+        </label>
+    </div>
+
+    <div class="counter-display">
+        <div class="counter-box">
+            <div class="label">Initial Clicks</div>
+            <div class="value">{{ initialCount }}</div>
+        </div>
+
+        <div class="counter-box repeat">
+            <div class="label">Repeat Clicks</div>
+            <div class="value">{{ repeatCount }}</div>
+        </div>
+    </div>
+
+    <span class="reset-link" (click)="resetCounters()">
+        Reset counters
+    </span>
+</div>

@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Angular Rich Text Editor component | Syncfusion
 description: Learn how to set up and configure the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more details.
-canonical_url: "https://www.syncfusion.com/angular-components/angular-rich-text-editor"
+canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/angular-rich-text-editor"
 platform: ej2-angular
 control: Getting started
 documentation: ug

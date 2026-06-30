@@ -60,6 +60,22 @@ The editions are:
 - Essential Studio Spreadsheet Editor SDK
 - Essential Studio Enterprise Edition (includes all of the above)
 
+### Standalone UI SDKs (v34.1 and Later)
+
+Additionally, starting with Essential Studio v34.1.29 (2026 Volume 2 release), we are introducing Standalone UI SDKs to provide greater flexibility in how you license and build your applications. In addition to the comprehensive UI Component Suite, you can now purchase individual SDKs for specialized components:
+
+- **Essential Studio Grid SDK**
+- **Essential Studio Gantt SDK**
+- **Essential Studio Rich Text Editor SDK**
+- **Essential Studio Chart SDK**
+- **Essential Studio Scheduler SDK**
+- **Essential Studio Diagram SDK**
+- **Essential File Manager SDK**
+
+A new **Essential Studio UI SDK Edition** is also introduced (covers UI components across all platforms; excludes Scheduler, Gantt, Rich Text Editor, Diagram, Spreadsheet, Document Editor, PDF Viewer, and PDF Extract SDK). Whether you need a single specialized component or a comprehensive UI suite, you can now choose the product that best fits your application requirements and budget.
+
+> **Note:** This change applies to new product purchases only. Existing customers will continue to receive access to all UI components, including Gantt, Scheduler, Diagram, and Rich Text Editor, according to their current licensing. No changes are required for existing customers. 
+
 ## Key Changes in the Licensing Model
 
 Effective from the 2025 Volume 3 release (v31.1.17), the licensing model has been updated as follows:
