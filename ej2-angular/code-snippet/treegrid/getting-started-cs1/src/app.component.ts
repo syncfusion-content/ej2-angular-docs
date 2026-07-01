@@ -42,5 +42,3 @@ const data: object[] = [
 export class AppComponent {
     public data: object[] = data;
 }
-
-

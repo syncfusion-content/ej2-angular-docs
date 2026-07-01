@@ -43,6 +43,3 @@ export class AppComponent implements OnInit {
         this.taskNameRules = { required: true };
     }
 }
-
-
-
