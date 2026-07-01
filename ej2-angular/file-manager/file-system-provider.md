@@ -72,11 +72,11 @@ export class AppComponent {
 
 ### Introduction to Azure Blob Storage
 
-Azure Blob Storage is Microsoft Azure's object storage solution for the cloud, optimized for storing massive amounts of unstructured data. In this guide, the Syncfusion Angular File Manager connects to Blob Storage through an ASP.NET Core backend so you can securely browse and perform file operations in the File Manager component.
+Azure Blob Storage is Microsoft Azure's object storage solution for the cloud, optimized for storing massive amounts of unstructured data. In this guide, the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) connects to Blob Storage through an ASP.NET Core backend so you can securely browse and perform file operations in the File Manager component.
 
 ### Prerequisites
 
-Before you integrate Azure Blob Storage with the Syncfusion Angular File Manager, ensure you have:
+Before you integrate Azure Blob Storage with the Angular File Manager, ensure you have:
 - An active Microsoft Azure subscription
 - A Storage Account with Blob service enabled
 - A Blob Container and an optional root folder inside that container
@@ -95,7 +95,7 @@ Clone the [Azure File Provider](https://github.com/SyncfusionExamples/azure-aspc
 git clone https://github.com/SyncfusionExamples/ej2-azure-aspcore-file-provider ej2-azure-aspcore-file-provider
 ```
 
-> **Note:** This Azure Blob Storage provider for the Syncfusion Angular File Manager is intended for demonstration and evaluation only. Before using it in production, consult your security team and complete a security review.
+> **Note:** This Azure Blob Storage provider for the Angular File Manager is intended for demonstration and evaluation only. Before using it in production, consult your security team and complete a security review.
 
 To initialize a local service with the above-mentioned file operations, create a folder named `Controllers` in the server project. Then, create a `.cs` file in the `Controllers` folder and add the required file operation code from [AzureProviderController.cs](https://github.com/SyncfusionExamples/azure-aspcore-file-provider/blob/master/Controllers/AzureProviderController.cs). You can also find the method-level details for this provider in the same repository.
 
@@ -164,7 +164,7 @@ export class AppComponent {
 
 ```
 
-To perform file operations (Read, Create, Rename, Delete, Get file details, Search, Copy, Move, Upload, Download, GetImage) in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular File Manager component using the Azure cloud file system provider, initialize the Azure cloud provider in the controller.
+To perform file operations (Read, Create, Rename, Delete, Get file details, Search, Copy, Move, Upload, Download, GetImage) in the Angular File Manager component using the Azure cloud file system provider, initialize the Azure cloud provider in the controller.
 
 ### Supported File Operations
 
@@ -183,11 +183,11 @@ Additionally, you can check out all the necessary file operation method details 
 
 ### Introduction to Amazon S3
 
-Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and pay‑as‑you‑go. In this guide the Syncfusion Angular File Manager connects to S3 through an ASP.NET Core backend so you can securely browse and perform file operations in the File Manager component.
+Amazon Simple Storage Service (Amazon S3) is AWS's object storage service for storing and retrieving any amount of data. S3 is durable, scalable, and pay‑as‑you‑go. In this guide the Angular File Manager connects to S3 through an ASP.NET Core backend so you can securely browse and perform file operations in the File Manager component.
 
 ### Prerequisites
 
-Before you integrate Amazon S3 with the Syncfusion Angular File Manager, ensure you have:
+Before you integrate Amazon S3 with the Angular File Manager, ensure you have:
  - An AWS Account
  - A configured S3 Bucket
  - AWS credentials: `awsAccessKeyId`, `awsSecretAccessKeyId`, `bucketRegion`, `awsRegion`.
@@ -209,7 +209,7 @@ Clone the [Amazon S3 File Provider](https://github.com/SyncfusionExamples/amazon
 git clone https://github.com/SyncfusionExamples/ej2-amazon-s3-aspcore-file-provider ej2-amazon-s3-aspcore-file-provider
 ```
 
-> **Note:** This Amazon S3 provider for the Syncfusion Angular File Manager is intended for demonstration and evaluation only. Before using it consult your security team and complete a security review.
+> **Note:** This Amazon S3 provider for the Angular File Manager is intended for demonstration and evaluation only. Before using it consult your security team and complete a security review.
 
 To initialize a local service with the above-mentioned file operations, create a folder named `Controllers` in the server project. Then, create a `.cs` file in the `Controllers` folder and add the required file operation code from [AmazonS3ProviderController.cs](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs). You can also find the method-level details for this provider in the same repository.
 
@@ -253,7 +253,7 @@ export class AppComponent {
 
 ```
 
-To perform file operations (Read, Create, Rename, Delete, Get file details, Search, Copy, Move, Upload, Download, GetImage) in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular File Manager component using the Amazon S3 cloud file provider, initialize the Amazon S3 cloud file provider in the controller.
+To perform file operations (Read, Create, Rename, Delete, Get file details, Search, Copy, Move, Upload, Download, GetImage) in the Angular File Manager component using the Amazon S3 cloud file provider, initialize the Amazon S3 cloud file provider in the controller.
 
 ### Supported File Operations
 
@@ -479,7 +479,7 @@ git clone  https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem
 
 ```
 
-**Note:** This Node JS file system provider for the Syncfusion Angular File Manager is intended for demonstration and evaluation only. Before using it in production, consult your security team and complete a security review.
+**Note:** This Node JS file system provider for the Angular File Manager is intended for demonstration and evaluation only. Before using it in production, consult your security team and complete a security review.
 
 After cloning, open the root folder and run the **npm install** command.
 
