@@ -10,9 +10,9 @@ domainurl: https://ej2.syncfusion.com
 
 # Getting Started with Angular Chart Component
 
-This section explains the steps required to create a simple [chart](https://www.syncfusion.com/angular-components/angular-charts) and demonstrates the basic usage of the chart component.
+This section explains the steps required to create a simple chart and demonstrates the basic usage of the [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts) component.
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Angular Components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
 To get started quickly with Angular Chart using CLI and Schematics, view the following video:
 
@@ -178,3 +178,5 @@ npm start
 Open the generated local URL (for example, `http://localhost:4200/`) from terminal in the browser. The application displays the chart as shown below:
 
 ![Getting started](../images/chart-getting-started.png) 
+
+N> Looking for the full Angular Charts component overview, features, pricing, and documentation? Visit the [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts) page.

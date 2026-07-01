@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart Component Overview
+# Angular Chart Component Overview
 
 The EJ2 Chart component is a high-performance, interactive visualization library for presenting data across a broad set of chart types. It supports line, bar, area, column, pie, financial, spline and other series formats, and is optimized for responsive rendering, smooth interactions, and large datasets. Typical use cases include trend analysis, comparisons, distributions, and time-series exploration.
 
@@ -78,7 +78,7 @@ The EJ2 Chart component is a high-performance, interactive visualization library
 * [**Internationalization:**](./internationalization) Enables charts to adapt to different languages, number formats, date formats, and cultural settings so users across regions can view data in a locally familiar and meaningful way.
 * [**Localization:**](./localization) Customizes the chart’s text—such as labels, tooltips, legends, and messages—to the user’s language so the interface feels native to different regions.
 
-
+N> Looking for the full Angular Charts component overview, features, pricing, and documentation? Visit the [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts) page.
 
 
 
