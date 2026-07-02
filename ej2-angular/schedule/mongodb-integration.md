@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Syncfusion Angular Scheduler and MongoDB
 
-The Syncfusion [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) combined with MongoDB provides a robust, scalable, and flexible data-driven application architecture suitable for modern event-management systems.
+The [Angular Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started) combined with MongoDB provides a robust, scalable, and flexible data-driven application architecture suitable for modern event-management systems.
 
 MongoDB's schema-less design seamlessly supports complex scheduling data, making it ideal for storing events, resources, recurrence rules, and user-specific calendar configurations.
 

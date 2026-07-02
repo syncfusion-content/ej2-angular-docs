@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Template in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
 > When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for Gantt actions like sorting, filtering, editing unless [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property of the column is specified.
 
@@ -482,7 +482,7 @@ export class AppComponent implements OnInit {
 
 ## Use custom helper inside the template
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart component supports using custom helper functions within the `ng-template` directive of a column. This allows you to build advanced templates by incorporating logic beyond the default `template` syntax.
+The Gantt chart component supports using custom helper functions within the `ng-template` directive of a column. This allows you to build advanced templates by incorporating logic beyond the default `template` syntax.
 
 To use a custom helper function, define it in the template context using the `let` keyword. This creates a reference to the function that can be used within the template.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Task Constraints in Angular Gantt Chart Component
 
-Task constraints in the Angular Gantt Chart component define scheduling rules that control when tasks start or finish, ensuring logical sequences, fixed deadlines, and optimized resource allocation. Constraints affect taskbar positioning, dependency scheduling, and critical path calculations, making schedules realistic by accounting for limitations like tailwind3 delays or compliance dates. They integrate with `taskMode` (e.g., **Auto** for automatic scheduling, **Manual** for fixed dates).
+Task constraints in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component define scheduling rules that control when tasks start or finish, ensuring logical sequences, fixed deadlines, and optimized resource allocation. Constraints affect taskbar positioning, dependency scheduling, and critical path calculations, making schedules realistic by accounting for limitations like tailwind3 delays or compliance dates. They integrate with `taskMode` (e.g., **Auto** for automatic scheduling, **Manual** for fixed dates).
 
 ## Benefits of task constraints
 

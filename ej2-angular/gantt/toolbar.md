@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Toolbar in Angular Gantt Chart Component
 
-The Angular Gantt Chart component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
 To enable toolbar functionality, inject the `ToolbarService` in the `providers` of the component.
 

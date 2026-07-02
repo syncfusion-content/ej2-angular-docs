@@ -20,7 +20,7 @@ The Internationalization library supports formatting and parsing numbers, dates,
 
 By default, the Scheduler follows the English culture (`en-US`). To use a different culture, follow these steps:
 
-* Install the `ej2-cldr-data` package using the Syncfusion<sup style="font-size:70%">&reg;</sup> npm package by running the command below..
+* Install the `ej2-cldr-data` package using the npm package by running the command below..
 
   ```
   npm install @syncfusion/ej2-cldr-data --save

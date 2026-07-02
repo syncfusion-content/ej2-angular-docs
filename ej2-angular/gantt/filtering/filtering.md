@@ -21,7 +21,7 @@ To activate filtering functionality, inject the `FilterService` in the `provider
 
 ## Apply initial filter on load
 
-To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, define the filter conditions using a **predicate** object within the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#columns) property.
+To apply filtering during the initial render of the Angular Gantt Chart component, define the filter conditions using a **predicate** object within the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#columns) property.
 
 The following sample demonstrates how to apply an initial filter where **TaskName** starts with **Identify** and **TaskID** equals **2**, using a `Predicate` condition set to **and**.
 
@@ -83,7 +83,7 @@ The Angular Gantt Chart component supports multiple filtering modes, which can b
 
 ## Enable diacritic-sensitive filtering
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#ignoreaccent) property to **true**.
+By default, the Angular Gantt Chart component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#ignoreaccent) property to **true**.
 
 The following sample demonstrates this behavior: when filtering the **TaskName** column, entries containing diacritic characters (e.g., “Próject”, “Projéct”) will be matched if you enter the base text **Project**.
 
@@ -101,7 +101,7 @@ The following sample demonstrates this behavior: when filtering the **TaskName**
 
 ## Programmatic filtering using method
 
-You can apply dynamic filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt by using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt#filterbycolumn) method. This enables programmatic filtering without relying on UI interactions.
+You can apply dynamic filtering in the Angular Gantt by using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/gantt#filterbycolumn) method. This enables programmatic filtering without relying on UI interactions.
 
 The following sample demonstrates how to filter the **TaskName** and **TaskID** columns using single and multiple values. The filtering is triggered through an external button click by calling the `filterByColumn` method.
 
@@ -151,7 +151,7 @@ You can enable different filter types for individual columns in the Gantt Chart 
 
 ## Customize filtering behavior using events
 
-You can customize the filtering behavior in the  Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
+You can customize the filtering behavior in the  Angular Gantt using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 
 The following sample demonstrates how to handle different filtering stages using `args.requestType`:
   

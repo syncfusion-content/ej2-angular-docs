@@ -9,13 +9,13 @@ domainurl: ##DomainURL##
 ---
 
 # Getting Started with Ionic and Angular with Syncfusion Scheduler
-This guide provides a step-by-step walkthrough for creating an Angular application with the [Ionic Framework](https://ionicframework.com/), featuring integration of [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) for modern, responsive interfaces.
+This guide provides a step-by-step walkthrough for creating an Angular application with the [Ionic Framework](https://ionicframework.com), featuring integration of Angular UI components for modern, responsive interfaces.
 
 ## Prerequisites
 
 Before beginning, ensure the following are installed:
 
-* [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+* [System requirements for Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * Ionic CLI version `^8.0.0` or later
 * Node.js (latest LTS version is recommended)
 * Angular CLI compatible with your Ionic version
@@ -39,9 +39,9 @@ This creates an Ionic application in the `syncfusion-angular-ionic` directory wi
 
 > Refer to this [Ionic getting started guide](https://ionicframework.com/docs/intro/cli) for more framework installation details.
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule Package
+## Installing Schedule Package
 
-Add the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule package to your project using the following command:
+Add the Schedule package to your project using the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-schedule --save
@@ -66,7 +66,7 @@ To apply the required styles for the Schedule component, update `src/global` fil
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule Component
+## Adding Schedule Component
 
 After installation, include the following code in your `~/src/app/home/home.page.ts` file to render the Syncfusion Schedule:
 
@@ -154,7 +154,7 @@ export const routes: Routes = [
 
 ## Running the Application
 
-To run the application and view the integrated Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component, use the following command:
+To run the application and view the integrated Schedule component, use the following command:
 
 ```bash
 ionic serve

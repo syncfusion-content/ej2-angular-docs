@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Pinning (Frozen) in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 
 To enable frozen columns, use the [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt#frozencolumns) property in the Gantt Chart component.
 
@@ -29,7 +29,7 @@ In the following example, the `frozenColumns` property is set to **2**, which ke
 
 ## Freeze particular columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt provides a feature that enables freezing specific columns, significantly enhancing data visibility and improving the user experience. The `isFrozen` property is used at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
+The Angular Gantt provides a feature that enables freezing specific columns, significantly enhancing data visibility and improving the user experience. The `isFrozen` property is used at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
 
 To freeze a particular column in the Gantt, set the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isfrozen) property of the column to **true**.
 
@@ -48,7 +48,7 @@ The following example demonstrates how to freeze a particular column in the Gant
 
 ## Freeze direction
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. 
+In the Angular Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. 
 
 To achieve this, the [column.freeze](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#freeze) property can be utilized. This property is used to specify the freeze direction for individual columns.
 
@@ -75,7 +75,7 @@ In the following example, the **TaskID** column is frozen on the left side, the 
 
 ## Change default frozen line color
 
-The frozen line borders of frozen columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component can be customized by applying custom CSS styles to the respective frozen columns. This allows you to change the border color of left, right, and fixed frozen columns to match your application's design and theme.
+The frozen line borders of frozen columns in the Angular Gantt Chart component can be customized by applying custom CSS styles to the respective frozen columns. This allows you to change the border color of left, right, and fixed frozen columns to match your application's design and theme.
 
 To change the default frozen line color, use the following CSS class names and apply the desired border color:
 

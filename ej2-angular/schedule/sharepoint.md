@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Scheduler in SharePoint Framework
 
-This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project and integrating the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler).
+This article provides a step-by-step guide for setting up a [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev) project and integrating the [Angular Schedule component](https://www.syncfusion.com/angular-components/angular-scheduler).
 
 SharePoint Framework (SPFx) is a development model and framework provided by Microsoft for building custom solutions and extensions for SharePoint and Microsoft Teams. It is a modern, client-side framework that allows developers to create web parts, extensions, and customizations that can be deployed and used within SharePoint sites and Teams applications.
 
 ## Prerequisites
 
-* [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+* [System requirements for Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 
 * [System requirements for the SharePoint Framework Development Environment](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
 
@@ -47,18 +47,18 @@ Add new Web part to solution my-project.
 heft trust-dev-cert
 ```
 
-With these steps complete, your `my-project` SharePoint Framework solution is ready for Syncfusion<sup style="font-size:70%">&reg;</sup> component integration.
+With these steps complete, your `my-project` SharePoint Framework solution is ready for Angular component integration.
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule packages
+## Add Angular Schedule packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component in the project, install the corresponding npm package along with Angular framework dependencies:
+Angular component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Angular Schedule component in the project, install the corresponding npm package along with Angular framework dependencies:
 
 ```bash
 npm install @angular/core @angular/common @angular/platform-browser @angular/compiler rxjs zone.js --save
 npm install @syncfusion/ej2-angular-schedule @syncfusion/ej2-angular-base --save
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component
+## Add Angular Schedule component
 
 Follow the below steps to add the component,
 
@@ -373,5 +373,6 @@ The output will appear as follows:
 
 ## See also
 
-* [Getting Started with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Schedule component](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started)
-* [Getting Started with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI component](https://ej2.syncfusion.com/angular/documentation/introduction)
+* [Angular Schedule component](https://www.syncfusion.com/angular-components/angular-scheduler)
+* [Getting Started with the Angular Schedule component](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started)
+* [Getting Started with the Angular UI component](https://ej2.syncfusion.com/angular/documentation/introduction)

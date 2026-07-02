@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Events in Angular Gantt Chart Component
 
-The Syncfusion Angular Gantt Chart component offers comprehensive support for visualizing project schedules, task management, and timeline tracking through interactive charts. This documentation provides insights into leveraging the component's rich event-driven architecture to customize and control Gantt operations effectively. Events in the Gantt Chart enable you to execute custom logic and integrations, offering flexibility for both simple and complex scenarios.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component offers comprehensive support for visualizing project schedules, task management, and timeline tracking through interactive charts. This documentation provides insights into leveraging the component's rich event-driven architecture to customize and control Gantt operations effectively. Events in the Gantt Chart enable you to execute custom logic and integrations, offering flexibility for both simple and complex scenarios.
 
 ## actionBegin
 
