@@ -81,10 +81,6 @@ To resolve this issue and ensure that the list styles are correctly applied, you
 {% include code-snippet/rich-text-editor/how-to/tailwind-preflight/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/rich-text-editor/how-to/tailwind-preflight/src/app.component.html %}
-{% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/how-to/tailwind-preflight/src/main.ts %}
 {% endhighlight %}
@@ -161,10 +157,6 @@ body.e-content ol[style*="list-style-type: lower-roman"]{
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/how-to/tailwind-preflight-iframe/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/rich-text-editor/how-to/tailwind-preflight-iframe/src/app.component.html %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
