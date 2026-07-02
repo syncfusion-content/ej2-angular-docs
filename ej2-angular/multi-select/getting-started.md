@@ -102,7 +102,7 @@ cd syncfusion-angular-app
 
 Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-This guide uses the [Angular MultiSelect component](https://www.syncfusion.com/angular-components/angular-multiselect-dropdown) for demonstration. Add the Angular MultiSelect component component with:
+This guide uses the [Angular MultiSelect component](https://www.syncfusion.com/angular-components/angular-multiselect-dropdown) for demonstration. Add the Angular MultiSelect component with:
 
 ```bash
 ng add @syncfusion/ej2-angular-dropdowns
@@ -111,7 +111,7 @@ ng add @syncfusion/ej2-angular-dropdowns
 This command will perform the following configurations:
 
 - Add the `@syncfusion/ej2-angular-dropdowns` package and peer dependencies to your `package.json`.
-- Import the MultiSelect component component in your application.
+- Import the MultiSelect component in your application.
 - Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> material theme in `angular.json`.
 
 For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.

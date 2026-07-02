@@ -83,22 +83,65 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> DataGrid components support two
 
 ### Default CSS overrides
 
-The Data Grid themes are built using CSS variables that follow the unified --sf naming convention. This approach ensures visual consistency, simplifies customization, and enables global updates. With centralized variables, colors, backgrounds, and borders can be easily managed across the entire grid.
+The Data Grid themes use CSS variables with the unified naming convention. This ensures visual consistency, simple customization, and global updates. Centralized variables allow quick adjustments to colors, backgrounds, and borders across the grid.
+### Material 3 theme color variables
 
-The below CSS reference is given for tailwind3 theme
+The Material 3 theme applies scalable CSS custom properties to maintain consistency within the Data Grid. Variables are designed for straightforward theming and responsive behavior.
+The following table highlights commonly used color related variables in the Material 3 theme.
 
-```css
-/* In the component's CSS file */
-    :root {
-        --e-font-name: 'Verdana';
-        --color-sf-content-bg-color: rgba(240, 253, 244);
-        --color-sf-content-bg-color-hover: rgba(70, 100, 20, 0.05);
-        --color-sf-border-light: rgba(34, 197, 94);
-        --color-sf-table-bg-color-hover: rgba(70, 100, 20, 0.05);
-        --color-sf-primary: rgba(34, 197, 94);
-        --color-sf-table-bg-color-selected: rgba(215, 235, 212, 0.65);
-      }
-```
+| Name | Purpose |
+|------|--------------|
+| --e-font-name | Specifies the default font family used across the DataGrid |
+| --color-sf-surface | 	Controls the base surface styling for UI elements |
+| --color-sf-on-surface | Sets text appearance on surface elements |
+| --color-sf-primary | Defines the core theme styling used across the DataGrid |
+| --color-sf-primary-container|Used for background styling of active or highlighted row states|
+| --color-sf-outline-variant | Defines border and separator styling |
+
+### Bootstrap 5.3 theme color variables
+
+The Bootstrap 5.3 theme extends Bootstrap's framework with CSS custom properties for the Data Grid. These variables align with Bootstrap 5.3 applications while enabling easy updates to grid colors, backgrounds, and borders.
+The following table lists color related variables defined for the Bootstrap 5.3 theme.
+
+| Name | Purpose |
+|------|-------------|
+| --e-font-name | Specifies the default font family used across the DataGrid |
+| --color-sf-content-bg-color-alt1 | Controls the background of the DataGrid header |
+| --color-sf-content-bg-color | Controls the background of the DataGrid content |
+| --color-sf-table-bg-color-hover | Defines the background styling for selected rows during hover interaction |
+| --color-sf-content-bg-color-hover | Defines background behavior when primary elements are hovered |
+| --color-sf-primary | Defines the main theme styling used across components |
+| --color-sf-primary-light | Provides a softer variation of the primary theme for backgrounds |
+| --color-sf-border-light | Specifies styling for light borders and separators |
+
+### Tailwind 3 theme color variables
+
+The Tailwind 3 theme uses utility first CSS custom properties to deliver a flexible, modern design system. A single update reflects instantly across the Data Grid, supporting efficient and maintainable theming.
+The following table presents color related variables available in the Tailwind 3 theme.
+
+| Name | Purpose |
+|------|--------------|
+| --e-font-name | Specifies the default font family used across the UI |
+| --color-sf-content-bg-color | Controls the main background of the application area |
+| --color-sf-table-bg-color-hover | Defines background behavior during hover interaction |
+| --color-sf-content-bg-color-hover | Defines the background color for pager during hover interaction |
+| --color-sf-primary | Defines the main theme color used across components |
+| --color-sf-border-light | Defines the border color used across the component |
+
+### Fluent 2 theme color variables
+
+The Fluent 2 theme leverages modern CSS custom properties to provide a clean and consistent design aligned with Fluent 2 UI principles. These variables enable seamless customization of the Data Grid's visual elements, ensuring adaptability across applications.
+The following table outlines the color related variables available in the Fluent 2 theme.
+
+| Name | Purpose |
+|------|-------------|
+| --e-font-name | Specifies the default font family used across the DataGrid |
+| --color-sf-content-bg-color-alt1 | Controls the main background of the DataGrid |
+| --color-sf-table-bg-color-hover | Defines the background styling for selected rows during hover interaction |
+| --color-sf-content-bg-color-hover | Defines background behavior when primary elements are hovered |
+| --color-sf-primary | Defines the main theme styling used across components |
+| --color-sf-border-light | Specifies styling for light borders and separators |
+| --color-sf-border-alt | Defines alternate border styling for DataGrid elements |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
