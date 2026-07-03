@@ -118,6 +118,7 @@ Modify the template in the [src/app/app.ts] file to render the Markdown Editor c
 {% endhighlight %}
 {% endtabs %}
 
+
 ## Run the application
 
 Use the following command to run the application in the browser.

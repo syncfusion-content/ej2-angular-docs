@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 import { RichTextEditorModule, ToolbarService, MarkdownEditorService, HtmlEditorService, ImageService, LinkService, TableService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
@@ -9,5 +9,5 @@ import { RichTextEditorModule, ToolbarService, MarkdownEditorService, HtmlEditor
   providers: [ToolbarService, HtmlEditorService, MarkdownEditorService, ImageService, LinkService, TableService],
 })
 export class App {
-  public mode: string = "Markdown";
+  public mode: string = 'Markdown';
 }
