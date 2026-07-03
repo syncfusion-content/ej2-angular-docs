@@ -105,5 +105,5 @@ Below is the example integration of Embedly with the Angular Rich Text Editor.
 - GitHub Repository: [Angular Rich Text Editor integrations samples](https://github.com/SyncfusionExamples/angular-richtexteditor-embedly)
 - Embedly — Official site and docs: https://embedly.com  
 - Embedly widgets/platform script docs: https://embedly.com/docs/widgets/  
-- Syncfusion Rich Text Editor API: https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/ 
+- Angular Rich Text Editor API: https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/ 
 - Syncfusion demos — Rich Text Editor samples: https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/overview

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Diagram Component
 
-The Diagram component provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications through attributes like `aria-label`, providing information to assistive technologies such as screen readers.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications through attributes like `aria-label`, providing information to assistive technologies such as screen readers.
 
 The following table outlines accessibility compliance for the Diagram component:
 

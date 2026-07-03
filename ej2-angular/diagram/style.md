@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style in Angular Diagram Component
 
-The Angular Diagram component provides extensive styling capabilities through CSS classes. This guide demonstrates how to customize various visual elements including connector handles, selection indicators, and interactive controls using CSS overrides.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides extensive styling capabilities through CSS classes. This guide demonstrates how to customize various visual elements including connector handles, selection indicators, and interactive controls using CSS overrides.
 
 ## Customizing connector endpoint handles
 

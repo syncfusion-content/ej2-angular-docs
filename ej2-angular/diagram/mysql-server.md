@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connecting MySQL Server to Syncfusion® Angular Diagram using LINQ2DB
 
-This guide explains how to load and visualize organizational chart data stored in a MySQL database using the Syncfusion® Angular Diagram component. It demonstrates how to configure MySQL, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to an Angular application to render an organizational chart.
+This guide explains how to load and visualize organizational chart data stored in a MySQL database using the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component. It demonstrates how to configure MySQL, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to an Angular application to render an organizational chart.
 
 **What is LINQ2DB?**
 
@@ -173,7 +173,7 @@ The database can also be created using the MySQL Command Line Client.
 
 ## Integrating MySQL Server with ASP.NET Core Web API
 
-This section explains how to create an ASP.NET Core Web API project that connects to MySQL and exposes data for use by the Syncfusion® Angular Diagram component.
+This section explains how to create an ASP.NET Core Web API project that connects to MySQL and exposes data for use by the Angular Diagram component.
 
 ### Creating the Web API project using Visual Studio
 
@@ -437,7 +437,7 @@ app.Run();
 
 The backend API is now configured.
 
-## Integrating Syncfusion® Angular Diagram
+## Integrating Angular Diagram
 
 The following steps describe how to render the Diagram and connect it to the MySQL Server back-end.
 
@@ -473,7 +473,7 @@ Add the required CSS references to the **src/styles.css** file to apply styling 
 
 For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion® Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
-### Step 3: Add Syncfusion® Angular Diagram
+### Step 3: Add Angular Diagram
 
 Create a basic Diagram component in **src/app/app.ts**:
 

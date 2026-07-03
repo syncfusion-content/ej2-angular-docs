@@ -12,13 +12,13 @@ domainurl: ##DomainURL##
 
 A UML sequence diagram is a type of interaction diagram that visualizes how objects communicate with each other over time. These diagrams show the sequence of messages exchanged between participants, making them essential for understanding system interactions, API workflows, and process flows.
 
-The Syncfusion® Angular Diagram component provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel/). This specialized model enables the creation of sequence diagrams with proper UML notation and automated layout capabilities.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel/). This specialized model enables the creation of sequence diagrams with proper UML notation and automated layout capabilities.
 
 ## Prerequisites
 
 Before creating UML sequence diagrams, ensure that:
 - Angular development environment is set up
-- Syncfusion Angular Diagram package is installed and imported
+- Angular Diagram package is installed and imported
 - Basic familiarity with UML sequence diagram concepts
 
 ## Key Concepts

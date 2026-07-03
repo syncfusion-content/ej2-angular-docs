@@ -34,7 +34,7 @@ npm install @syncfusion/ej2-angular-dropdowns
 
 ## Configure the Mention Component for the Rich Text Editor
 
-Follow the steps below to set up the Mention component inside the Syncfusion Angular Rich Text Editor.
+Follow the steps below to set up the Mention component inside the Angular Rich Text Editor.
 
 ### Step 1: Configure Mention Target
 Link the Mention component to the Rich Text Editor’s editable area by setting the target property.
@@ -108,7 +108,7 @@ It is suggested to use the suffixText property to add a space after the inserted
 <ejs-mention suffixText="&nbsp;"></ejs-mention>
 ```
 
-### Example: Integrate Mention with Syncfusion Rich Text Editor (app.ts)
+### Example: Integrate Mention with Rich Text Editor (app.ts)
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -148,7 +148,7 @@ Then import the required classes in your component:
 import { DataManager, Query, WebApiAdaptor } from '@syncfusion/ej2-data';
 ```
 
-### Example: Integrate Remote Data With Syncfusion Rich Text Editor (app.ts)
+### Example: Integrate Remote Data With Rich Text Editor (app.ts)
 
 > Note: When using `DataManager` with `WebApiAdaptor`, the server must return a JSON object containing:
 
@@ -200,4 +200,4 @@ return Ok(payload);
 - [Angular Mention integration with Rich Text Editor sample repository](https://github.com/SyncfusionExamples/angular-richtexteditor-mention/tree/master)
 - [Syncfusion Mention getting started](https://ej2.syncfusion.com/angular/documentation/mention/getting-started)
 - [Syncfusion Mention API](https://ej2.syncfusion.com/angular/documentation/api/mention)
-- [Syncfusion Rich Text Editor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor)
+- [Rich Text Editor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor)

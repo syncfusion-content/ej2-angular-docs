@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 ## Core Layer Properties
 
-In a diagram, [Layers](https://ej2.syncfusion.com/angular/documentation/api/diagram/layerModel/) enable modification of properties for all shapes assigned to a specific layer. The primary configurable properties include:
+In a [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram), [Layers](https://ej2.syncfusion.com/angular/documentation/api/diagram/layerModel/) enable modification of properties for all shapes assigned to a specific layer. The primary configurable properties include:
 
 * **Objects** - Define which elements belong to the layer
 * **Visible** - Control layer visibility

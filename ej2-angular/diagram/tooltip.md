@@ -16,7 +16,7 @@ In Graphical User Interface (GUI), a tooltip is a message that appears when the 
 
 ## Default tooltip
 
-By default, the diagram displays a tooltip showing size, position, and angle information while dragging, resizing, or rotating a node. This provides real-time feedback during interactive operations:
+By default, the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) displays a tooltip showing size, position, and angle information while dragging, resizing, or rotating a node. This provides real-time feedback during interactive operations:
 
 - **Drag**: Shows current X and Y coordinates of the node
 - **Resize**: Displays current width and height dimensions

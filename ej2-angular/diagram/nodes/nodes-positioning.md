@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Positioning a Node in Angular Diagram Component
 
-Node positioning in the Angular Diagram component allows precise control over where nodes appear on the diagram canvas. Understanding positioning fundamentals enables developers to create well-organized diagrams with nodes placed exactly where needed.
+Node positioning in the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component allows precise control over where nodes appear on the diagram canvas. Understanding positioning fundamentals enables developers to create well-organized diagrams with nodes placed exactly where needed.
 
 ## Position
 

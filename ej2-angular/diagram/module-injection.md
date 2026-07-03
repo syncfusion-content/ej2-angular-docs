@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Module injection in Angular Diagram Component
 
-The Diagram component provides optional services to enable feature-specific functionality. Inject only the required services based on your application needs.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides optional services to enable feature-specific functionality. Inject only the required services based on your application needs.
 
 ## Available diagram services
 
@@ -55,3 +55,4 @@ import {
 export class App {}
 ```
 
+N> Looking for the full Angular Diagram component overview, features, pricing, and documentation? Visit the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) page.

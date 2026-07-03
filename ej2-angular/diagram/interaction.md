@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Selector
 
-The selector provides a visual representation of selected elements in the diagram, serving as an interactive boundary that enables users to modify the size, position, and rotation angle of selected items through direct manipulation or programmatic control. The selector supports both single and multiple element selection simultaneously.
+The selector provides a visual representation of selected elements in the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram), serving as an interactive boundary that enables users to modify the size, position, and rotation angle of selected items through direct manipulation or programmatic control. The selector supports both single and multiple element selection simultaneously.
 
 ## Selection
 

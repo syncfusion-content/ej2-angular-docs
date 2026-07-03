@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Ej1 api migration in Angular Diagram component
 
-This article describes the API migration process of Diagram component from Essential® JS 1 to Essential® JS 2.
+This article describes the API migration process of [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram)component from Essential® JS 1 to Essential® JS 2.
 
 ## Background
 

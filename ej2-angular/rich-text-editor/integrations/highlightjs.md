@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Integrate Highlight.js into the Angular Rich Text Editor
 
-The [Highlight.js](https://highlightjs.org/) integration with the Syncfusion Angular Rich Text Editor allows for syntax highlighting, ensuring that code blocks remain highlighted during editing, previewing, and exporting.
+The [Highlight.js](https://highlightjs.org/) integration with the Angular Rich Text Editor allows for syntax highlighting, ensuring that code blocks remain highlighted during editing, previewing, and exporting.
 
 ## Prerequisites
 
@@ -87,9 +87,9 @@ To ensure that Highlight.js styles correctly apply inside the Rich Text Editor a
 }
 ```
 
-## Example: Integrate with Syncfusion Rich Text Editor (`app.ts`)
+## Example: Integrate with Rich Text Editor (`app.ts`)
 
-The following examples demonstrate how Highlight.js can be seamlessly integrated with the Syncfusion Rich Text Editor to enable automatic syntax highlighting within editor content.
+The following examples demonstrate how Highlight.js can be seamlessly integrated with the Rich Text Editor to enable automatic syntax highlighting within editor content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -111,4 +111,4 @@ The following examples demonstrate how Highlight.js can be seamlessly integrated
 
 - GitHub Repository: [Angular Rich Text Editor with Highlight.js](https://github.com/SyncfusionExamples/angular-richtexteditor-highlightjs/tree/master)
 - [Highlight.js](https://highlightjs.org)
-- [Syncfusion RichTextEditor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor)
+- [RichTextEditor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor)

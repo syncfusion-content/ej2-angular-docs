@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Print in Angular Diagram Component
 
-The Angular Diagram component provides comprehensive printing capabilities that allow users to generate high-quality printed outputs of their diagrams. The [`print`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#print) method enables printing the diagram as an image with extensive customization options for different printing scenarios.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides comprehensive printing capabilities that allow users to generate high-quality printed outputs of their diagrams. The [`print`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#print) method enables printing the diagram as an image with extensive customization options for different printing scenarios.
 
 ```typescript
 import { PrintAndExport } from '@syncfusion/ej2-angular-diagrams';

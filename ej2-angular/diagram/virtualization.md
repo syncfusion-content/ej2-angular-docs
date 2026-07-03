@@ -14,7 +14,7 @@ Virtualization is a performance optimization technique that significantly improv
 
 ## Understanding Virtualization in Diagram
 
-Virtualization enhances diagram performance by implementing on-demand loading of diagramming objects. Only the nodes and connectors currently visible within the diagram's viewport are rendered and processed, while objects outside the visible area remain unloaded until they enter the view during scrolling or panning operations.
+Virtualization enhances [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) performance by implementing on-demand loading of diagramming objects. Only the nodes and connectors currently visible within the diagram's viewport are rendered and processed, while objects outside the visible area remain unloaded until they enter the view during scrolling or panning operations.
 
 This selective rendering approach provides substantial performance benefits:
 
