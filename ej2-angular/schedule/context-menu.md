@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Context menu in Angular Schedule component
 
-You can display a context menu on scheduler work cells and appointments by using the [`ContextMenu`](https://ej2.syncfusion.com/angular/documentation/context-menu/getting-started) control manually in the application. In the following code example, the context menu is added in the example and its target is set to the Scheduler component.
+You can display a context menu on Scheduler work cells and appointments by using the [`ContextMenu`](https://ej2.syncfusion.com/angular/documentation/context-menu/getting-started) control manually in the application. In the following code example, the context menu is added in the example and its target is set to the Scheduler component.
 
 On scheduler cells, you can display menu items such as `New Event`, `New Recurring Event`, and `Today`. For appointments, you can display options such as `Edit Event` and `Delete Event`. Use the [`openEditor`](https://ej2.syncfusion.com/angular/documentation/api/schedule#openeditor) method of the Scheduler to open the default event window for creating or editing appointments.
 

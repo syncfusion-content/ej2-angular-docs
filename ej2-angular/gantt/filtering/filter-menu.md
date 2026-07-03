@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filter Menu in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filtersettings#type) as **Menu**.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filtersettings#type) as **Menu**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart compone
 
 ## Custom component in filter menu
 
-You can customize the filter menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component using the `column.filter.ui` property. This allows you to replace the default filter controls with custom components such as dropdowns or textboxes for specific columns. By default, the Gantt uses AutoComplete for string columns, NumericTextBox for number columns, DatePicker for date columns, DropDownList for boolean columns, and DateTimePicker for datetime columns.
+You can customize the filter menu in the Angular Gantt Chart component using the `column.filter.ui` property. This allows you to replace the default filter controls with custom components such as dropdowns or textboxes for specific columns. By default, the Gantt uses AutoComplete for string columns, NumericTextBox for number columns, DatePicker for date columns, DropDownList for boolean columns, and DateTimePicker for datetime columns.
 
 The `column.filter.ui` property supports three essential functions:
 
@@ -104,7 +104,7 @@ The following sample demonstrates how to disable the autofill feature by setting
 
 ## Customizing filter menu operators list
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component allows customization of the default filter operator list using the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#operators) property. This allows you to define a custom set of operators shown in the filter menu for each column type, improving usability and relevance.
+The Angular Gantt Chart component allows customization of the default filter operator list using the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#operators) property. This allows you to define a custom set of operators shown in the filter menu for each column type, improving usability and relevance.
 
 You can configure operators for different types using the following options: 
 

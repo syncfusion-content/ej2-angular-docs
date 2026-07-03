@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Searching in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
 To enable search functionality, include the **Search** item in the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) configuration and inject both `FilterService` and `ToolbarService` into the component's `providers` array.
 
@@ -28,7 +28,7 @@ To enable search functionality, include the **Search** item in the [toolbar](htt
 
 ## Initial search
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt component allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.  
+The Angular Gantt component allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.  
 
 To configure this feature, define the following properties:
 
@@ -84,7 +84,7 @@ The following operators are supported in searching:
 
 ## Search by external button
 
-To perform a search from an external button in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt, call the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method programmatically with the desired keyword.
+To perform a search from an external button in the Angular Gantt, call the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method programmatically with the desired keyword.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +120,7 @@ This following sample demonstrates searching only within the **TaskName** and **
 
 ## Clear search by external button
 
-To clear the search results in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt from an external button, set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#key) property to an empty string. 
+To clear the search results in the Angular Gantt from an external button, set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#key) property to an empty string. 
  
 Alternatively, you can invoke the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method with an empty string to reset the search.
 
@@ -154,7 +154,7 @@ You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&re
 
 ## Highlight the search text
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports highlighting matched search text within grid cells to improve visibility of search results. 
+The Angular Gantt Chart component supports highlighting matched search text within grid cells to improve visibility of search results. 
 
 This can be achieved using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) event, which is triggered during cell rendering. Within this event, check if the cell belongs to the target column, retrieve the cell value and search keyword, and use the `includes` method to detect matches. If a match is found, wrap the matched text in a `<span>` with a custom CSS class for styling.
 

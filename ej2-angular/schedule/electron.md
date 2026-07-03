@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 # Getting Started with Angular and Electron with Syncfusion Scheduler
 
-This guide explains how to build a basic Angular application using a standalone component structure with the Electron framework and integrate the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler).
+This guide explains how to build a basic Angular application using a standalone component structure with the Electron framework and integrate the Scheduler component.
 
 ## Prerequisites
 
@@ -37,9 +37,9 @@ npm install -g electron
 ```
 > Note: See the [getting started guide](https://electronjs.org/docs/tutorial/installation) to learn more about Electron installation.
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule package
+## Installing Schedule package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available on npm under the `@syncfusion` scope. Explore all Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Angular packages are available on npm under the `@syncfusion` scope. Explore all Angular packages [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 To install the Schedule package, execute the following command:
 
@@ -61,8 +61,8 @@ To incorporate styles for the Schedule component, add the following imports to `
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
 @import '../node_modules/@syncfusion/ej2-angular-schedule/styles/material3.css';
 ```
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule Component
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule component, update the template in `app.ts`.
+## Adding Angular Schedule Component
+To integrate the Scheduler component, update the template in `app.ts`.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -191,7 +191,7 @@ To build and launch the application, execute these commands sequentially:
 npm run electron-build
 npm run electron
 ```
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Schedule component will render within the Electron window.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Schedule component will render within the Electron window.
 
 ## Output
 ![image](images/schedule-electron-output.png)

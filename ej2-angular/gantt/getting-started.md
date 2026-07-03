@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Gantt Chart
 
-The **Syncfusion Angular Gantt Chart** is a UI component designed to visualize and manage project schedules using a timeline view. It supports hierarchical task structures, automatic scheduling, and rich interactive features.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) is a UI component designed to visualize and manage project schedules using a timeline view. It supports hierarchical task structures, automatic scheduling, and rich interactive features.
 
 This guide demonstrates how to create an Angular application, configure task data, and render a basic Gantt Chart.
 
@@ -226,3 +226,5 @@ You can preview the following sample by clicking the **Preview Sample** button.
 - **[Key Elements](https://ej2.syncfusion.com/angular/documentation/gantt/events)** - Learn about UI components and interactions
 - **[Feature Modules](https://ej2.syncfusion.com/angular/documentation/gantt/module)** - Enable advanced features with module injection
 - **[Overview](https://ej2.syncfusion.com/angular/documentation/gantt/overview)** - Explore all available features
+
+N> Looking for the full Angular Gantt Chart component overview, features, pricing, and documentation? Visit the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) page.

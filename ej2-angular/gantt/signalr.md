@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connecting Real-Time Data to Angular Gantt Chart Using SignalR
 
-The Syncfusion Angular Gantt Chart component supports real-time data binding using **SignalR**, a powerful library for bi-directional communication between servers and clients. This approach enables live data updates without page refreshes, making it ideal for applications that require instant information delivery such as stock tickers, live dashboards, and real-time notifications.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports real-time data binding using **SignalR**, a powerful library for bi-directional communication between servers and clients. This approach enables live data updates without page refreshes, making it ideal for applications that require instant information delivery such as stock tickers, live dashboards, and real-time notifications.
 
 **What is SignalR?**
 
@@ -80,7 +80,7 @@ export class AppComponent {
 
 ### Step 4: Configure the Gantt Chart with Events
 
-To enable real-time collaboration, you need to integrate the Syncfusion Gantt Chart component into your Angular application and bind two important lifecycle events: created and actionComplete.
+To enable real-time collaboration, you need to integrate the Gantt Chart component into your Angular application and bind two important lifecycle events: created and actionComplete.
 
 ```html
 <ejs-gantt id="ganttDefault" (actionComplete)="actionComplete($event)" (created)="created()">   
@@ -357,7 +357,7 @@ This configuration registers SignalR services and configures CORS to allow conne
 
 ### Step 1: Install and Configure Angular Gantt Components
 
-The Syncfusion Angular Gantt Chart package (@syncfusion/ej2-angular-gantt) has already been installed in your project via npm. 
+The Angular Gantt Chart package (@syncfusion/ej2-angular-gantt) has already been installed in your project via npm. 
 
 To make the Gantt Chart component available throughout your Angular application, you need to import the GanttModule and register it in your module file. 
 
@@ -388,7 +388,7 @@ export class AppModule {}
 ```
 ### Step 2: Update the Angular Gantt Component
 
-Update the sample to include a fully configured Syncfusion Gantt Chart with sample data binding. This step defines the basic structure of the Gantt component, including data source, task fields, and columns.
+Update the sample to include a fully configured Gantt Chart with sample data binding. This step defines the basic structure of the Gantt component, including data source, task fields, and columns.
 
 ```html
 app.component.html

@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Clipboard in Angular Schedule component
 
-The Clipboard functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
+The Clipboard functionality in the Scheduler control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
 To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowclipboard) property to **true**.
 
 >Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowkeyboardinteraction) property must be true for proper functionality of the clipboard feature.
 
 ## Cut, copy and paste using keyboard
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control supports keyboard shortcuts to streamline appointment management:
+The Angular Schedule control supports keyboard shortcuts to streamline appointment management:
 
 These keyboard shortcuts enable users to efficiently manage their schedules:
 
@@ -49,7 +49,7 @@ To use these shortcuts, click an appointment and press **Ctrl+C** to copy or **C
 
 You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods perform the same actions as keyboard shortcuts or context menu options.
 
-Utilize these methods to manage appointments in the Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule control:
+Utilize these methods to manage appointments in the Schedule control:
 
 | Method | Parameters                     | Description                                                                                     |
 |--------|--------------------------------|-------------------------------------------------------------------------------------------------|

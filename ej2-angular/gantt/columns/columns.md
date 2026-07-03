@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component displays task data in a tabular format using columns. Columns help organize data efficiently and support user interaction within the Gantt chart.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component displays task data in a tabular format using columns. Columns help organize data efficiently and support user interaction within the Gantt chart.
 
 Each column is defined using the [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property, which maps values from the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource). This mapping ensures accurate data binding and enables formatting and customization for each column.
 
 ## Column types
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports specifying the data type for each column using the `type` property. This ensures that values are displayed with the correct formatting—such as number or date—based on the column's data.
+The Angular Gantt Chart component supports specifying the data type for each column using the `type` property. This ensures that values are displayed with the correct formatting—such as number or date—based on the column's data.
 
 **Gantt supports the following column types:**
 
@@ -55,7 +55,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart compone
 
 ## Column width
 
-In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for Angular, column width can be adjusted using the [width](https://ej2.syncfusion.com/angular/documentation/api/gantt#width) property within the [column](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) configuration. This property accepts values in pixels (e.g., **100**) or percentages (e.g., **25%**) to define the column's width relative to the Gantt container.
+In Gantt for Angular, column width can be adjusted using the [width](https://ej2.syncfusion.com/angular/documentation/api/gantt#width) property within the [column](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) configuration. This property accepts values in pixels (e.g., **100**) or percentages (e.g., **25%**) to define the column's width relative to the Gantt container.
 
 1. Column width is calculated based on the total available width. For example, in a container with 4 columns and a total width of 800 pixels, each column will default to 200 pixels.
 2. If widths are defined for some columns but not others, the remaining width is distributed equally among columns without explicit widths. For example, if you have 3 columns with widths of 100px, 200px, and no width specified for the third column, the third column will occupy the remaining width after accounting for the first two columns.
@@ -68,7 +68,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for Angular, column wi
 
 #### Supported types for column width
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the following three types of column width:
+The Gantt supports the following three types of column width:
 
 **1. Auto**
 
@@ -110,7 +110,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 
 ## Column formatting
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for Angular supports column formatting to customize data presentation. You can format numbers, dates, or apply templates based on specific requirements. Use the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to define the desired format for each column.
+The Gantt Chart component for Angular supports column formatting to customize data presentation. You can format numbers, dates, or apply templates based on specific requirements. Use the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to define the desired format for each column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -134,7 +134,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for A
 
 ### Number formatting
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for Angular supports number formatting through the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, where standard format strings define numeric value presentation including currency, percentage, and decimal formats. The following standard format strings are available:
+The Gantt Chart component for Angular supports number formatting through the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, where standard format strings define numeric value presentation including currency, percentage, and decimal formats. The following standard format strings are available:
 
 | Format | Description        | Remarks                                                                 |
 |--------|--------------------|-------------------------------------------------------------------------|
@@ -163,7 +163,7 @@ The following example code demonstrates the formatting of data for the **TaskID*
 
 ### Date formatting
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for Angular supports date formatting in columns using the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, where format strings such as **d**, **D**, **MMM dd, yyyy** can be applied. Both built-in formats like **yMd** and custom formats are supported to define the layout and detail of date and time values based on column requirements. The following custom formats and their corresponding output are listed below:
+The Gantt Chart component for Angular supports date formatting in columns using the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, where format strings such as **d**, **D**, **MMM dd, yyyy** can be applied. Both built-in formats like **yMd** and custom formats are supported to define the layout and detail of date and time values based on column requirements. The following custom formats and their corresponding output are listed below:
 
 Format | Formatted value
 -----|-----
@@ -292,7 +292,7 @@ export class AppComponent implements OnInit {
 
 ### Custom formatting
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component supports custom formatting for numeric and date values. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to display data in a specific format based on requirements.
+The Gantt Chart component supports custom formatting for numeric and date values. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to display data in a specific format based on requirements.
 
 In the example below, `numberFormatOptions` is used for the **Progress** column to show four decimal places, and `dateFormatOptions` is used for the **StartDate** column to display the date as day-of-week, month abbreviation, day, and 2-digit year (e.g., Sun, May 8, '23).
 
@@ -382,7 +382,7 @@ The following sample hides the checkbox for the row with `ariaRowIndex` set to 3
 
 ## AutoFit columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for Angular supports automatic column width adjustment based on content. Double-clicking the column header resizer adjusts the width to fit the maximum content, ensuring clear data visibility without wrapping.
+The Gantt Chart component for Angular supports automatic column width adjustment based on content. Double-clicking the column header resizer adjusts the width to fit the maximum content, ensuring clear data visibility without wrapping.
 
 To enable this feature, set [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowresizing) to **true** and inject `ResizeService` in the `providers` of the component. 
 
@@ -412,7 +412,7 @@ You can resize a column in Gantt to fit its content using the `autoFitColumns` m
 
 ## Locked columns
 
-You can lock columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component to prevent them from being reordered and to keep them fixed at the first position. This is achieved by setting the `column.lockColumn` property to **true** in the column configuration. To visually differentiate locked columns, you can apply custom CSS using attribute selectors.
+You can lock columns in Gantt Chart component to prevent them from being reordered and to keep them fixed at the first position. This is achieved by setting the `column.lockColumn` property to **true** in the column configuration. To visually differentiate locked columns, you can apply custom CSS using attribute selectors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -433,7 +433,7 @@ You can lock columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt C
 
 ## Show or hide columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component allows dynamic control over column visibility using built-in properties and methods. This is useful for customizing which columns are shown or hidden based on specific requirements.
+The Angular Gantt Chart component allows dynamic control over column visibility using built-in properties and methods. This is useful for customizing which columns are shown or hidden based on specific requirements.
 
 ### Using property
 
@@ -507,7 +507,7 @@ The following sample demonstrates how to hide and show columns using button clic
 
 ## Controlling Gantt actions
 
-You can manage actions like filtering, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt using the following options:
+You can manage actions like filtering, sorting, resizing, reordering, editing, and searching for specific columns in Angular Gantt using the following options:
 
 * [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnModel#allowediting): Enables or disables editing for a column.
 * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnModel#allowfiltering): Enables or disables filtering for a column.
@@ -576,7 +576,7 @@ You can add or remove columns in the Angular Gantt by updating the [columns](htt
 
 ## Responsive columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides a built-in feature to control column visibility based on media queries using the `hideAtMedia` property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
+The Angular Gantt Chart component provides a built-in feature to control column visibility based on media queries using the `hideAtMedia` property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
 
 The following example demonstrates a Gantt chart where the **Task Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
 

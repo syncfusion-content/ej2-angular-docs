@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Excel Export in Angular Gantt Chart Component
 
-The Syncfusion Angular Gantt Chart component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
  
 To enable Excel or CSV export functionality, set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowexcelexport) property to **true** and inject the `ExcelExportService` into the component's `providers` array. 
 

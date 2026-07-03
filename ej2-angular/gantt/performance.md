@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Performance Tips for ##Platform_Name## Gantt Component
 
-This guide provides practical techniques to optimize the Angular Gantt Chart component's performance, particularly when working with large datasets. Learn how to implement best practices that maintain smooth user experience while handling substantial amounts of project data efficiently.
+This guide provides practical techniques to optimize the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component's performance, particularly when working with large datasets. Learn how to implement best practices that maintain smooth user experience while handling substantial amounts of project data efficiently.
 
 ## Improving loading performance with large datasets
 

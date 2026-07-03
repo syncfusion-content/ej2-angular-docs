@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Gantt Chart Component
 
-The Angular Gantt Chart component is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the component is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the component is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
 
 ## Accessibility compliance
 
@@ -71,7 +71,7 @@ The Gantt Chart component implements comprehensive [WAI-ARIA](https://www.w3.org
 | `aria-rowindex`    | Applied to grid rows to indicate position within the complete dataset                                                            | Updates based on current view and virtualization state                      |
 | `aria-colindex`    | Applied to grid cells to indicate column position                                                                                | Maintains column identification during horizontal scrolling                 |
 
-The Syncfusion Angular Gantt Chart component is structured using a combined TreeGrid and chart architecture for rendering its grid (table) and timeline sections. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for the treegrid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools, it is important to note that these limitations do not affect the readability or usability of the Gantt content in screen readers.
+The Angular Gantt Chart component is structured using a combined TreeGrid and chart architecture for rendering its grid (table) and timeline sections. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for the treegrid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools, it is important to note that these limitations do not affect the readability or usability of the Gantt content in screen readers.
 
 The accessibility checker tools highlight the following known issues:
 
@@ -177,7 +177,7 @@ The Gantt Chart component's accessibility compliance is validated through automa
 
 ## Voluntary Product Accessibility Template (VPAT)
 
-The Syncfusion Angular Gantt Chart component includes comprehensive VPAT documentation detailing accessibility conformance across international standards. This documentation provides structured information about compliance with Section 508, WCAG 2.2, and EN 301 549 requirements.
+The Angular Gantt Chart component includes comprehensive VPAT documentation detailing accessibility conformance across international standards. This documentation provides structured information about compliance with Section 508, WCAG 2.2, and EN 301 549 requirements.
 
 For detailed accessibility conformance information, refer to the [Syncfusion VPAT document](https://ej2.syncfusion.com/accessibility/Syncfusion-VPAT2.5.docx) which provides specific compliance details for all Syncfusion components including the Gantt chart.
 
