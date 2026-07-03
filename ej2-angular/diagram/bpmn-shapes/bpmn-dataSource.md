@@ -14,7 +14,7 @@ BPMN data sources represent information that is required for or produced by busi
 
 ## Creating a Data Source
 
-To create a BPMN data source in the Angular Diagram component, define a node and set its `shape.type` property to **Bpmn** and its `shape.shape` property to **DataSource**. Data sources are typically used to represent databases, files, or other data repositories that business processes interact with.
+To create a BPMN data source in the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component, define a node and set its `shape.type` property to **Bpmn** and its `shape.shape` property to **DataSource**. Data sources are typically used to represent databases, files, or other data repositories that business processes interact with.
 
 ![DataSourceBPMNShape](../images/Datasource.png)
 

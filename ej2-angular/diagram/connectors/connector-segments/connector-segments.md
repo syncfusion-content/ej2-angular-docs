@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connector Segments in Angular Diagram Component
 
-Connector segments define the path and visual appearance of connectors between nodes or points in a diagram. The path of a connector is constructed using a collection of segments, where each segment represents a portion of the connector's route. Understanding and configuring these segments allows for precise control over connector appearance and routing behavior.
+Connector segments define the path and visual appearance of connectors between nodes or points in a [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram). The path of a connector is constructed using a collection of segments, where each segment represents a portion of the connector's route. Understanding and configuring these segments allows for precise control over connector appearance and routing behavior.
 
 ## Segment types
 

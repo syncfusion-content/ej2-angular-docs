@@ -92,4 +92,4 @@ Below is the example integration of tab with the Angular Rich Text Editor.
 - GitHub Repository: [Angular Rich Text Editor with Tab Component](https://github.com/SyncfusionExamples/angular-richtexteditor-tab-integration)
 - Syncfusion Tab getting started: https://ej2.syncfusion.com/angular/documentation/tab/getting-started
 - Syncfusion Tab API: https://ej2.syncfusion.com/angular/documentation/tab/mention/  
-- Syncfusion Rich Text Editor API: https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/
+- Rich Text Editor API: https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/

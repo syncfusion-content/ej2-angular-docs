@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Overview
 
-The Angular Diagram component provides comprehensive styling options to customize label appearance. Labels can be enhanced with various font properties, colors, decorations, and visual effects to match application requirements.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides comprehensive styling options to customize label appearance. Labels can be enhanced with various font properties, colors, decorations, and visual effects to match application requirements.
 
 Font styling properties such as [`fontSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#fontsize), [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#fontfamily), and [`color`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#color) control the basic text appearance. Additional text formatting is available through [`bold`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#bold), [`italic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#italic), and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textdecoration) properties.
 

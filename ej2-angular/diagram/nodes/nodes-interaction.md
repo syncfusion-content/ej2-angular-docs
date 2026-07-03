@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Node Interaction in Angular Diagram Component
 
-The Angular Diagram component provides comprehensive support for interactive node operations, enabling users to select, drag, resize, rotate, and flip nodes through both mouse interactions and programmatic methods. These interactions form the foundation of dynamic diagram editing capabilities.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides comprehensive support for interactive node operations, enabling users to select, drag, resize, rotate, and flip nodes through both mouse interactions and programmatic methods. These interactions form the foundation of dynamic diagram editing capabilities.
 
 ## Select
 

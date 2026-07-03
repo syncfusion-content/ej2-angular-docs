@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Save and Load Diagrams in Angular Diagram Component
 
-**Serialization** is the process of converting the diagram's current state into a storage format that can be saved and later restored. This feature ensures that all diagram elements, including nodes, connectors, and their configurations, persist across application sessions.
+**Serialization** is the process of converting the diagram's current state into a storage format that can be saved and later restored. This feature ensures that all [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) elements, including nodes, connectors, and their configurations, persist across application sessions.
 
 The serialization process converts the diagram into a JSON string format, which can be stored in databases, files, or other storage systems. When needed, this serialized data can be deserialized to recreate the diagram exactly as it was previously configured.
 

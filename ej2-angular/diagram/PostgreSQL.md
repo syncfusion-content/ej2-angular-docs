@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Loading Angular Diagram from PostgreSQL database
 
-The Syncfusion® Angular Diagram component allows visualization of organizational chart layout using data from a PostgreSQL database through a REST API. This guide explains how to set up the PostgreSQL database, create a Node.js backend service, and link the data to the Angular Diagram component to display an organizational chart layout.
+The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component allows visualization of organizational chart layout using data from a PostgreSQL database through a REST API. This guide explains how to set up the PostgreSQL database, create a Node.js backend service, and link the data to the Angular Diagram component to display an organizational chart layout.
 
 > **Note**: This guide works with Angular Diagram version 28.x or later. The REST API needs to return an array of JSON objects with **id**, **parent_id**, and **role** fields for correct data binding.
 
@@ -20,7 +20,7 @@ This integration workflow connects:
 
 * **PostgreSQL** – Stores the organizational chart data.
 * **Node.js + Express** – REST API that serves JSON data from PostgreSQL.
-* **Angular + Syncfusion® EJ2 Diagram** – data binding via DataManager and rendering of an organizational chart layout.
+* **Angular + EJ2 Diagram** – data binding via DataManager and rendering of an organizational chart layout.
 
 ## Prerequisites
 
@@ -1033,7 +1033,7 @@ export const appConfig: ApplicationConfig = {
 
 ## See Also
 
-- [Syncfusion® Angular Diagram Documentation](https://ej2.syncfusion.com/angular/documentation/diagram/getting-started)
+- [Angular Diagram Documentation](https://ej2.syncfusion.com/angular/documentation/diagram/getting-started)
 - [DataManager API Reference](https://ej2.syncfusion.com/angular/documentation/data/getting-started)
 - [Organizational Chart Layout](https://ej2.syncfusion.com/angular/documentation/diagram/automatic-layout#organizational-chart)
 - [PostgreSQL Node.js Driver](https://node-postgres.com/)

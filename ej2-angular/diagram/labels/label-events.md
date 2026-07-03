@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Handling Annotation Events in Diagram Component
 
-Annotations in Angular Diagram components are text labels that can be added to nodes and connectors to provide additional information. When users interact with these annotations, various events are triggered that allow developers to customize behavior and respond to user actions.
+Annotations in [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) components are text labels that can be added to nodes and connectors to provide additional information. When users interact with these annotations, various events are triggered that allow developers to customize behavior and respond to user actions.
 
 The diagram component provides several annotation-related events that fire during different interaction scenarios:
 

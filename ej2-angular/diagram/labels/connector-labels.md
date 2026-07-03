@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connector Annotations in Angular Diagram Component
 
-Connector annotations are text labels that can be positioned along connector paths to provide descriptive information or context. These annotations offer flexible positioning and styling options to enhance diagram readability and communication.
+Connector annotations are text labels that can be positioned along connector paths to provide descriptive information or context. These annotations offer flexible positioning and styling options to enhance [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) readability and communication.
 
 Annotations on connectors can be precisely positioned and customized using the following properties of the Annotation class:
 
