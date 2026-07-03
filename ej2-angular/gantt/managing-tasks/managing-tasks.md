@@ -265,5 +265,5 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 
 - [How to add new tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/adding-new-tasks)
 - [How to delete tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/deleting-tasks)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

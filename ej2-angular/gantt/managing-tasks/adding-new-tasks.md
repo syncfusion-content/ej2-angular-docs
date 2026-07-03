@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Adding New Tasks in Angular Gantt Chart Component
 
-Adding new tasks to the Angular Gantt Chart component enables flexible project management by inserting tasks like milestones or subtasks using the toolbar, context menu, or programmatic methods. With [editSettings.allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowadding) enabled and `EditService` injected, tasks can be added at the top, as children, or at specific positions, seamlessly integrating with dependencies and critical path calculations. Ensure task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate) for successful addition, and verify parent rows support subtasks when adding child tasks. The toolbar opens a dialog for task details, the context menu provides positional options, and the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#addrecord) method offers precise control, making task creation efficient for dynamic project updates.
+Adding new tasks to the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables flexible project management by inserting tasks like milestones or subtasks using the toolbar, context menu, or programmatic methods. With [editSettings.allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowadding) enabled and `EditService` injected, tasks can be added at the top, as children, or at specific positions, seamlessly integrating with dependencies and critical path calculations. Ensure task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate) for successful addition, and verify parent rows support subtasks when adding child tasks. The toolbar opens a dialog for task details, the context menu provides positional options, and the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#addrecord) method offers precise control, making task creation efficient for dynamic project updates.
 
 ## Add tasks via toolbar
 
@@ -61,7 +61,6 @@ Add tasks programmatically using the [addRecord](https://ej2.syncfusion.com/angu
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/addrow-dynamic-cs1" %}
 
 ## See also
-
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

@@ -81,9 +81,10 @@ export class AppComponent {
         contentField: 'Summary',
         headerField: 'Id'
     };
-    statusData: any;
-    assigneeData: any;
-    priorityData: any;
+    statusData: string[] = ['Open', 'InProgress', 'Testing', 'Close'];
+    assigneeData: string[] = ['Nancy Davloio', 'Andrew Fuller', 'Janet Leverling',
+        'Steven walker', 'Robert King', 'Margaret hamilt', 'Michael Suyama'];
+    priorityData: string[] = ['Low', 'Normal', 'Critical', 'Release Breaker', 'High'];
 }
 
 

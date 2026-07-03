@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular Grid Component
 
-The grouping feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables data to be organized into a hierarchical structure, allowing records to be expanded and collapsed for improved readability and analysis.
+The grouping feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables data to be organized into a hierarchical structure, allowing records to be expanded and collapsed for improved readability and analysis.
 
 The group feature is enabled by injecting the `GroupService` to the providers array.
 
@@ -181,7 +181,7 @@ The following example demonstrates grouping the "Order Date" and "Freight" colum
 
 ## Show grouped rows based on page size
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, controlling the number of grouped rows per page is useful when working with grouped data and a fixed page size.
+In the Angular Data Grid, controlling the number of grouped rows per page is useful when working with grouped data and a fixed page size.
 
 By default, the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize) setting applies to individual grid rows, not grouped rows. To show grouped column rows based on the `pageSize`, a custom implementation can be used.
 
@@ -189,7 +189,7 @@ This can be achieved by customizing the `generateQuery` method of the "Data prot
 
 ## Collapse all grouped rows at initial rendering
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides the ability to expand or collapse grouped rows, enabling better control over data visibility. This is especially useful for large datasets where an initial summarized view is preferred.
+The Angular Data Grid provides the ability to expand or collapse grouped rows, enabling better control over data visibility. This is especially useful for large datasets where an initial summarized view is preferred.
 
 To collapse all grouped rows on initial render, use the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event in combination with the [collapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid/group#collapseall) method. This is shown in the example below.
 
@@ -219,7 +219,7 @@ To collapse all grouped rows on initial render, use the [dataBound](https://ej2.
 
 ## Group or ungroup column externally
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports both interactive and programmatic approaches to column grouping. Columns can be grouped manually via drag-and-drop or programmatically using the [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#ungroupcolumn) methods.
+The Angular Data Grid supports both interactive and programmatic approaches to column grouping. Columns can be grouped manually via drag-and-drop or programmatically using the [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#ungroupcolumn) methods.
 
 The following example demonstrates implementing programmatic grouping and ungrouping using the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component for column selection. When the corresponding button is activated, the selected column is grouped or ungrouped using the appropriate API method.
 
@@ -237,11 +237,11 @@ The following example demonstrates implementing programmatic grouping and ungrou
 
 ## Expand or collapse externally
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports external control of grouped row visibility through programmatic expand and collapse. This functionality can be integrated using the grid's methods to manage grouped data display dynamically.
+The Angular Data Grid supports external control of grouped row visibility through programmatic expand and collapse. This functionality can be integrated using the grid's methods to manage grouped data display dynamically.
 
 ### Expand or collapse all grouped rows
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables programmatic expand and collapse of all grouped rows using the [groupExpandAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupexpandall) and [groupCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcollapseall) methods.
+The Angular Data Grid enables programmatic expand and collapse of all grouped rows using the [groupExpandAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupexpandall) and [groupCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcollapseall) methods.
 
 In the example below, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to control the visibility of grouped rows. When toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event triggers the appropriate method to expand or collapse all groups accordingly.
 
@@ -259,7 +259,7 @@ In the example below, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/
 
 ### Expand or collapse selected grouped row
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid allows programmatic expand or collapse of specific grouped rows through the [expandCollapseRows](https://ej2.syncfusion.com/angular/documentation/api/grid/group#expandcollapserows) method, which toggles the state of a targeted group caption row based on its current visibility.
+The Angular Data Grid allows programmatic expand or collapse of specific grouped rows through the [expandCollapseRows](https://ej2.syncfusion.com/angular/documentation/api/grid/group#expandcollapserows) method, which toggles the state of a targeted group caption row based on its current visibility.
 
 To implement this functionality, follow these steps:
 
@@ -352,7 +352,7 @@ export class AppComponent implements OnInit {
 
 ## Clear grouping 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides a [clearGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid#cleargrouping) method to remove all grouped columns programmatically. This is useful for resetting the grid to an ungrouped state.
+The Angular Data Grid provides a [clearGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid#cleargrouping) method to remove all grouped columns programmatically. This is useful for resetting the grid to an ungrouped state.
 
 The following example demonstrates executing `clearGrouping` through an external button click.
 
@@ -370,7 +370,7 @@ The following example demonstrates executing `clearGrouping` through an external
 
 ## Grouping events
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides two key events for handling grouping operations. These events enable the integration of custom logic before and after a grouping action:
+The Angular Data Grid provides two key events for handling grouping operations. These events enable the integration of custom logic before and after a grouping action:
 
 - [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin): Triggered before a grouping action starts. It provides details such as the group field name and `requestType`, allowing conditional logic or cancellation.
 - [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete): Triggered after a grouping action completes. It exposes the updated grid state for post-processing tasks like UI updates or data handling.

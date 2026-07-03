@@ -10,7 +10,6 @@ domainurl: ##DomainURL##
 
 # Timeline in Angular Gantt Chart Component
 
-The timeline in the Angular Gantt Chart component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) and [bottomTier.unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit) in [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
 ## Configure timeline view modes
 
@@ -319,4 +318,5 @@ This feature enables exploration of long project schedules without manually upda
 
 - [How to configure taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
 - [How to zoom the timeline?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming)
+- [How to configure non-working days?](https://ej2.syncfusion.com/angular/documentation/gantt/scheduling-tasks#weekend--non-working-days)
 - [How to configure non-working days?](https://ej2.syncfusion.com/angular/documentation/gantt/scheduling-tasks#weekend--non-working-days)

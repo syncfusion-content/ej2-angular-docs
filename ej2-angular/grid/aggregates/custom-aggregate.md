@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Custom Aggregate in Angular Grid Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports custom aggregate functions for scenarios where built-in options do not meet specific requirements. This allows for tailored logic to compute aggregate values.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports custom aggregate functions for scenarios where built-in options do not meet specific requirements. This allows for tailored logic to compute aggregate values.
 
 To configure a custom aggregate, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) property to "Custom" in the `AggregateColumnDirective` and provide the custom aggregation logic using the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property.
 
-The custom aggregate function in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component is executed differently based on the aggregation context:
+The custom aggregate function in the Angular Data Grid component is executed differently based on the aggregation context:
 
 - **Total Aggregation:** The function is executed with the entire dataset and the corresponding aggregate column object.
 

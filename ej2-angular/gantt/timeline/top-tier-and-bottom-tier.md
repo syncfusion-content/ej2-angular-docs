@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Top Tier and Bottom Tier in Angular Gantt Chart Component
 
-The Angular Gantt Chart component supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
 
 - [topTier](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings#toptier) and [bottomTier](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings#bottomtier): Define the structure and visibility of each timeline tier.
 - [unit](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#unit): Specifies the time unit for each tier, such as day, week, or month.

@@ -203,7 +203,6 @@ public void RemoveChildRecords(string key)
 ```
 
 ## See also
-
 - [How to bind remote data?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding#remote-data)
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)

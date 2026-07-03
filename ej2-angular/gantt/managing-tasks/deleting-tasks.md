@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Deleting Tasks in Angular Gantt Chart Component
 
-Deleting tasks in the Angular Gantt Chart component streamlines project management by removing tasks, such as outdated milestones or subtasks, using the toolbar or programmatic methods. Enabled by setting the [editSettings.allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting) property to **true** and injecting `EditService`, tasks can be deleted after selecting a row, ensuring seamless updates to dependencies and critical path calculations. A confirmation dialog, activated via [editSettings.showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#showdeleteconfirmdialog), prompts to verify deletions, preventing accidental removals. The [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterecord) method allows programmatic deletion, requiring a selected row with valid `taskFields` mappings (e.g., id, name). Ensure tasks are selected and `taskFields` are properly configured to avoid issues during deletion.
+Deleting tasks in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component streamlines project management by removing tasks, such as outdated milestones or subtasks, using the toolbar or programmatic methods. Enabled by setting the [editSettings.allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting) property to **true** and injecting `EditService`, tasks can be deleted after selecting a row, ensuring seamless updates to dependencies and critical path calculations. A confirmation dialog, activated via [editSettings.showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#showdeleteconfirmdialog), prompts to verify deletions, preventing accidental removals. The [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterecord) method allows programmatic deletion, requiring a selected row with valid `taskFields` mappings (e.g., id, name). Ensure tasks are selected and `taskFields` are properly configured to avoid issues during deletion.
 
 ## Delete tasks via toolbar
 
@@ -178,7 +178,6 @@ export class AppComponent {
 ```
 
 ## See also
-
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/task-bar-editing)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

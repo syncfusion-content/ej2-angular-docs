@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Critical Path in Angular Gantt Chart Component
 
-The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](https://ej2.syncfusion.com/angular/documentation/api/gantt/iGanttData#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The Angular Gantt Chart component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
+The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](https://ej2.syncfusion.com/angular/documentation/api/gantt/iGanttData#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
 
 ## Understanding critical path calculation
 
@@ -88,6 +88,6 @@ The event handler checks the `isCritical` flag and applies custom colors to task
 
 ## See also
 
-- [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
+- [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to enable virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Row selection in Angular Gantt Chart component
 
-The Angular Gantt Chart component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 
 ## Single row selection
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Virtual scroll in Angular Gantt Chart Component
 
-Virtual scrolling in the Angular Gantt Chart component enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScrollService](https://ej2.syncfusion.com/angular/documentation/api/gantt#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
+Virtual scrolling in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScrollService](https://ej2.syncfusion.com/angular/documentation/api/gantt#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
 
 ## Configure row virtualization
 

@@ -7,11 +7,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular supported versions
+# Angular Supported Versions
 
 The following table lists Angular versions and the minimum Syncfusion Angular DataGrid versions that support them.
 
-| Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Version |
+| Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid Version |
 |-----------------|-----------------------------------------------|
 | [Angular v22](https://blog.angular.dev/announcing-angular-v22-c52bb83a4664) | 34.1.29 |
 | [Angular v21](https://www.syncfusion.com/blogs/post/angular-21-updates-syncfusion-support) | 31.1.17 |

@@ -144,7 +144,7 @@ For example, to render a grid inside the detail row, place an HTML div element a
 
 The Grid provides a feature that enables expanding the detail row using an external button. By default, detail rows render in a collapsed state with an icon in each row to expand or collapse the detail view.
 
-Use the (https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expand) method provided by the `detailRowModule` of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid library. This method expands the detail row of a specific grid row.
+Use the (https://ej2.syncfusion.com/angular/documentation/api/grid/detailRow#expand) method provided by the `detailRowModule` of the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) library. This method expands the detail row of a specific grid row.
 
 **Key Methods for Detail Row Control:**
 - `expand(index: number)`: Expands the detail row at the specified index.
@@ -273,7 +273,7 @@ export class AppComponent implements OnInit {
 
 ## Customize detail template icon
 
-The detail template icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid expands or collapses the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. To customize this icon, override the following CSS styles:
+The detail template icon in the Angular Data Grid expands or collapses the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. To customize this icon, override the following CSS styles:
 
 
 **Default Icon CSS Classes:**

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Browser Support for Angular DataGrid
+# Browser Support for Syncfusion® Angular DataGrid
 
 Syncfusion® Angular DataGrid component support modern browsers and rely on current web platform features.
 The DataGrid is compatible with all common desktop and mobile browsers.

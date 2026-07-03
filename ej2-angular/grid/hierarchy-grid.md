@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Hierarchy Grid in Angular Grid Component
 
-The Hierarchy Grid in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid is designed to display hierarchical or nested data structures within a tabular layout. It enables the representation of parent-child relationships by allowing rows to be expanded or collapsed, revealing related child records beneath their corresponding parent rows.
+The Hierarchy Grid in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) is designed to display hierarchical or nested data structures within a tabular layout. It enables the representation of parent-child relationships by allowing rows to be expanded or collapsed, revealing related child records beneath their corresponding parent rows.
 
 This structure enhances data readability and navigation, especially when working with datasets that include multiple levels of related information. Each parent row can be expanded to display its associated child grid, which can itself be configured with columns, templates, and features similar to the main grid.
 
@@ -360,7 +360,7 @@ The following example demonstrates hiding the expand/collapse icon for the row w
 
 ## Child Grid expand and collapse events
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides [detailExpand](https://ej2.syncfusion.com/angular/documentation/api/grid#detailexpand) and [detailCollapse](https://ej2.syncfusion.com/angular/documentation/api/grid#detailcollapse) events, triggered before a detail row(parent row) is expanded or collapsed. These events provide control over the expand/collapse behavior by allowing conditional logic through event arguments.
+The Angular Data Grid component provides [detailExpand](https://ej2.syncfusion.com/angular/documentation/api/grid#detailexpand) and [detailCollapse](https://ej2.syncfusion.com/angular/documentation/api/grid#detailcollapse) events, triggered before a detail row(parent row) is expanded or collapsed. These events provide control over the expand/collapse behavior by allowing conditional logic through event arguments.
 
 In the example below, expansion is prevented for the "Nancy" row, and collapse is prevented for the "Andrew" row.
 

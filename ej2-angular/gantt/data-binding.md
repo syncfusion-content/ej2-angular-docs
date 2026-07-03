@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular Gantt Chart Component
 
-Data binding connects the Angular Gantt Chart component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
+Data binding connects the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 
 Understanding data binding implementation ensures the Gantt chart accurately represents and interacts with project data across different scenarios and data structures.
 

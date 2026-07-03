@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column Menu in Angular Gantt Chart Component
 
-The column menu in the Angular Gantt Chart component offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
+The column menu in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
 
 To activate the column menu feature, set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt#showcolumnmenu) property to **true** in the Gantt configuration and inject the `ColumnMenuService` into the component's `providers` array.
 

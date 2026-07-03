@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Grid Component
 
-Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component that enables selective viewing of data based on specific criteria. It allows narrowing down large datasets to focus on relevant information, thereby enhancing data analysis and decision-making.
+Filtering is a powerful feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component that enables selective viewing of data based on specific criteria. It allows narrowing down large datasets to focus on relevant information, thereby enhancing data analysis and decision-making.
 
 ## Set up filtering
 

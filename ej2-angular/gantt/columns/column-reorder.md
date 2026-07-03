@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Column reorder in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports column reordering by dragging a column header to a new position. 
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports column reordering by dragging a column header to a new position. 
 
 To enable column reordering, set the [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowreordering) property to **true** in the Gantt configuration and inject the `ReorderService` in the component's `providers` array.
 
@@ -54,7 +54,7 @@ The following example demonstrates how reordering is restricted for the **TaskNa
 
 ## Reorder columns programmatically
 
-You can programmatically reorder columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component using available methods based on field names, index, or target index.  
+You can programmatically reorder columns in Angular Gantt Chart component using available methods based on field names, index, or target index.  
 
 > To perform external column reordering, the column's [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property must be enabled.
 
@@ -129,7 +129,7 @@ The following demonstrates how to reorder a single column **TaskID** to index **
 
 ## Customize column reorder behavior using events
 
-You can customize the column reorder behavior in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt using the [columnDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndragstart), [columnDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrag), and [columnDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrop) events.  These events provide control over each stage of the column drag-and-drop process, allowing for custom logic or restrictions.
+You can customize the column reorder behavior in Angular Gantt using the [columnDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndragstart), [columnDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrag), and [columnDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrop) events.  These events provide control over each stage of the column drag-and-drop process, allowing for custom logic or restrictions.
 
 The following demonstrates how to handle specific fields during column reordering:  
 - Cancel `columnDrop` for the **TaskID** field.  

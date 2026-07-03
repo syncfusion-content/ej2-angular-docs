@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Angular Gantt Chart Overview
 
-The Angular Gantt Chart is a project management component that provides a Microsoft Project-like interface for scheduling and managing projects. It enables you to visually manage tasks, task relationships, and resources with an intuitive and interactive timeline view.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) is a project management component that provides a Microsoft Project-like interface for scheduling and managing projects. It enables you to visually manage tasks, task relationships, and resources with an intuitive and interactive timeline view.
 
 ## Quick start
 
@@ -27,7 +27,7 @@ The Angular Gantt Chart is a project management component that provides a Micros
 ## Task management
 
 - [**Task editing**](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks) - Edit tasks inline, through dialogs, or by dragging taskbars
-- [**Task dependencies**](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
+- [**Task dependencies**](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
 - [**Undo and redo**](https://ej2.syncfusion.com/angular/documentation/gantt/undo-redo) - Revert or reapply recent actions in the Gantt Chart
 - [**Task scheduling**](https://ej2.syncfusion.com/angular/documentation/gantt/scheduling-tasks) - Configure automatic or manual task scheduling modes
 - [**Splitting tasks**](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/splitting-and-merging-tasks) - Split tasks into multiple segments and merge them back

@@ -121,6 +121,7 @@ Use the npm start command to run the application in the browser:
 ```sh
 npm start
 ```
+N> Looking for the full Angular File Manager component overview, features, pricing, and documentation? Visit the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) page.
 
 ## See also
 
