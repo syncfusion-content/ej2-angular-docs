@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Custom toolbar in Angular Grid Component
 
-Custom toolbar in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables the creation of a customized toolbar layout and functionality to match specific application requirements. This is achieved by utilizing the [toolbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbartemplate) property, which provides comprehensive customization options for the toolbar layout and styling. Define a custom template for the toolbar and handle the actions of the toolbar items in the [clicked](https://ej2.syncfusion.com/angular/documentation/api/toolbar/index-default#clicked) event.
+Custom toolbar in [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables the creation of a customized toolbar layout and functionality to match specific application requirements. This is achieved by utilizing the [toolbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbartemplate) property, which provides comprehensive customization options for the toolbar layout and styling. Define a custom template for the toolbar and handle the actions of the toolbar items in the [clicked](https://ej2.syncfusion.com/angular/documentation/api/toolbar/index-default#clicked) event.
 
 The following example demonstrates rendering the custom toolbar `toolbarTemplate` property.
 
@@ -28,7 +28,7 @@ The following example demonstrates rendering the custom toolbar `toolbarTemplate
 
 ## Render image with text in custom toolbar
 
-Rendering an image with text in custom toolbar in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables easy display of an image along with text in the toolbar of the grid. This feature enhances the visual presentation of the grid, providing additional context and improving the overall experience.
+Rendering an image with text in custom toolbar in Angular Data Grid enables easy display of an image along with text in the toolbar of the grid. This feature enhances the visual presentation of the grid, providing additional context and improving the overall experience.
 
 Use `ng-template` along with the `DomSanitizer` service and the `bypassSecurityTrustResourceUrl` method to securely present an image as a base64-encoded string.
 

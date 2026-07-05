@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Editing Customization in Angular Grid Component
 
-The appearance of editing-related elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component can be customized using CSS. Below are examples for customizing various editing-related elements.
+The appearance of editing-related elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Below are examples for customizing various editing-related elements.
 
 ## Customizing the edited and added row element
 

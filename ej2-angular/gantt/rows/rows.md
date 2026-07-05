@@ -14,7 +14,7 @@ Each row typically represents a single record or item from a data source. Rows i
 
 ## Customize row styles 
 
-Customizing row styles in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart allows you to modify the appearance of rows to meet design requirements, such as highlighting specific rows or adjusting font styles, background colors, and other visual properties. This can be achieved using CSS, built-in properties, methods, or event support provided by the component, offering flexibility for both static and dynamic styling.
+Customizing row styles in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) allows you to modify the appearance of rows to meet design requirements, such as highlighting specific rows or adjusting font styles, background colors, and other visual properties. This can be achieved using CSS, built-in properties, methods, or event support provided by the component, offering flexibility for both static and dynamic styling.
 
 ### Using event
 
@@ -37,7 +37,7 @@ The following example demonstrates how to customize row styles based on the valu
 
 ### Using CSS
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart allows row-level customization through CSS. Each row is assigned specific class names, enabling precise styling to improve readability and visual presentation.
+The Angular Gantt chart allows row-level customization through CSS. Each row is assigned specific class names, enabling precise styling to improve readability and visual presentation.
 
 **Customize selected row:**
 
@@ -74,7 +74,7 @@ To create a visual separation between consecutive rows, you can style alternate 
 
 ### Using method 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides methods to customize the appearance of rows in both the grid and chart sections. These methods are accessible through the `treeGrid` object and the Gantt instance.
+The Angular Gantt Chart component provides methods to customize the appearance of rows in both the grid and chart sections. These methods are accessible through the `treeGrid` object and the Gantt instance.
 
 To customize rows in the grid section, you can use the following methods:
 
@@ -104,7 +104,7 @@ The following example demonstrates how to use the `getRowByIndex` method of the 
 
 ## Styling parent and child rows
 
-You can customize the styling of parent and child rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart by handling the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event, which is triggered as each row is rendered. Within this event, the `hasChildRecords` property can be used to identify parent rows, allowing you to apply distinct styles that visually separate them from child rows.
+You can customize the styling of parent and child rows in the Angular Gantt chart by handling the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event, which is triggered as each row is rendered. Within this event, the `hasChildRecords` property can be used to identify parent rows, allowing you to apply distinct styles that visually separate them from child rows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -119,7 +119,7 @@ You can customize the styling of parent and child rows in the Syncfusion<sup sty
 
 ## Auto focus taskbar on row click 
 
-You can enable automatic scrolling to the corresponding taskbar in the timeline when a row is clicked in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart by using the [`autofocustasks`](https://ej2.syncfusion.com/angular/documentation/api/gantt#autofocustasks) property. This feature ensures that the selected task is brought into view within the timeline area, improving navigation and focus during interaction.
+You can enable automatic scrolling to the corresponding taskbar in the timeline when a row is clicked in the Angular Gantt chart by using the [`autofocustasks`](https://ej2.syncfusion.com/angular/documentation/api/gantt#autofocustasks) property. This feature ensures that the selected task is brought into view within the timeline area, improving navigation and focus during interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

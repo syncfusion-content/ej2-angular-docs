@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrating the Angular Rich Text Editor with Tailwind CSS Preflight Styles
+# Integrating the Angular Rich Text Editor with Tailwind CSS
 
 When combining the Rich Text Editor with Tailwind CSS, you may encounter unintended style conflicts. Tailwind’s Preflight, a base reset layer, can override default element styles used by the Rich Text Editor, leading to formatting inconsistencies. This guide documents the integration process, offering solutions to maintain design integrity and functionality. In the Rich Text Editor, it affects ordered and unordered lists, which are unformatted by default, with no bullets or numbers.
 
@@ -79,10 +79,6 @@ To resolve this issue and ensure that the list styles are correctly applied, you
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/how-to/tailwind-preflight/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/rich-text-editor/how-to/tailwind-preflight/src/app.component.html %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -161,10 +157,6 @@ body.e-content ol[style*="list-style-type: lower-roman"]{
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/how-to/tailwind-preflight-iframe/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/rich-text-editor/how-to/tailwind-preflight-iframe/src/app.component.html %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

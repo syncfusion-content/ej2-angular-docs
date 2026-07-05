@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 This section explains how to create [**Angular Scheduler**](https://www.syncfusion.com/angular-components/angular-scheduler) and configure its features in an Angular environment.
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+> **Ready to streamline your Angular development?** Discover the full potential of Angular components with AngularAI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, AngularCodeStudio and more. [Explore AngularAI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
 For a quick start with the Angular Schedule component using CLI and Schematics, you can watch this video:
 
@@ -58,9 +58,9 @@ Next, navigate to the project folder:
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Schedule package
+## Installing Schedule package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. To use the Schedule component in your Angular application, install the [@syncfusion/ej2-angular-schedule](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/) package from npm.
+Angular packages are distributed on npm as `@syncfusion` scoped packages. To use the Schedule component in your Angular application, install the [@syncfusion/ej2-angular-schedule](https://www.npmjs.com/package/@syncfusion/ej2-angular-schedule/) package from npm.
 
 ```bash
 npm install @syncfusion/ej2-angular-schedule --save
@@ -201,6 +201,7 @@ export class App {
 	public currentView: View = 'Day';
 }
 ```
+N> Looking for the full Angular Scheduler component overview, features, pricing, and documentation? Visit the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) page.
 
 ## See also
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Taskbar in Angular Gantt Chart Component
 
-The taskbar in the Angular Gantt Chart component visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbarediting) and [taskbarEdited](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbaredited) for validation. 
+The taskbar in the Angular Gantt Chart component visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbarediting) and [taskbarEdited](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbaredited) for validation.
 
 ## Customize taskbar height
 
@@ -108,7 +108,7 @@ import { GanttModule, IActionBeginEventArgs, IQueryTaskbarInfoEventArgs, EditSer
     standalone: true,
     selector: 'app-root',
     template: `
-        <ejs-gantt id="ganttDefault" height="430px" [dataSource]="taskData" [taskFields]="taskSettings"  [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" 
+        <ejs-gantt id="ganttDefault" height="430px" [dataSource]="taskData" [taskFields]="taskSettings"  [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"
         [editSettings]="editSettings" (actionBegin)="actionBegin($event)" (queryTaskbarInfo)="queryTaskbarInfo($event">
         </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None,
@@ -175,7 +175,7 @@ export class AppComponent {
 }
 ```
 
-This code prevents dragging, resizing, and dependency changes for Task ID 4 by canceling edit actions in `actionBegin` and hiding grippers/connector points in `queryTaskbarInfo` using CSS classes defined in the `styles` array. The `EditService` and `allowTaskbarEditing` enable editing for other tasks, while `ViewEncapsulation.None` ensures styles apply to Gantt's DOM. 
+This code prevents dragging, resizing, and dependency changes for Task ID 4 by canceling edit actions in `actionBegin` and hiding grippers/connector points in `queryTaskbarInfo` using CSS classes defined in the `styles` array. The `EditService` and `allowTaskbarEditing` enable editing for other tasks, while `ViewEncapsulation.None` ensures styles apply to Gantt's DOM.
 
 ## Customize taskbar templates
 
@@ -184,68 +184,151 @@ Taskbar templates allow full replacement of the default taskbar UI, enabling cus
 The following example customizes the taskbar template with a progress bar and notification badge showing progress percentage:
 
 ```typescript
-import { Component } from '@angular/core';
-import { GanttModule, IGanttData } from '@syncfusion/ej2-angular-gantt';
+import { Component } from "@angular/core";
+import { GanttModule, IGanttData } from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-    imports: [GanttModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-        <ejs-gantt height="430px" [dataSource]="taskData" [taskFields]="taskSettings"  [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [taskbarTemplate]="taskbarTemplate">
-        </ejs-gantt>
-        <ng-template #taskbarTemplate let-data="data">
-            <div
-                class="e-gantt-child-taskbar-inner-div e-gantt-child-taskbar"
-                style="height:22px; margin-top: -1px"
-                tabindex="-1"
-                [style.width.px]="data.ganttProperties.width">
-                <div
-                    class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar"
-                    style="border-style:solid;height:100%;border-top-right-radius:0px;border-bottom-right-radius:0px;"
-                    [style.width.px]="calculateProgressWidth(data)">
-                </div>
-                <div class="e-notification-badge-container">
-                    <span class="e-badge e-badge-secondary e-badge-notification e-badge-overlap">{{ data.ganttProperties.progress }}%</span>
-                </div>
-            </div>
-        </ng-template>`
+  imports: [GanttModule],
+  standalone: true,
+  selector: "app-root",
+  template: ` <ejs-gantt
+      height="430px"
+      [dataSource]="taskData"
+      [taskFields]="taskSettings"
+      [labelSettings]="labelSettings"
+      [projectStartDate]="projectStartDate"
+      [projectEndDate]="projectEndDate"
+      [taskbarTemplate]="taskbarTemplate"
+    >
+    </ejs-gantt>
+    <ng-template #taskbarTemplate let-data="data">
+      <div
+        class="e-gantt-child-taskbar-inner-div e-gantt-child-taskbar"
+        style="height:22px; margin-top: -1px"
+        tabindex="-1"
+        [style.width.px]="data.ganttProperties.width"
+      >
+        <div
+          class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar"
+          style="border-style:solid;height:100%;border-top-right-radius:0px;border-bottom-right-radius:0px;"
+          [style.width.px]="calculateProgressWidth(data)"
+        ></div>
+        <div class="e-notification-badge-container">
+          <span
+            class="e-badge e-badge-secondary e-badge-notification e-badge-overlap"
+            >{{ data.ganttProperties.progress }}%</span
+          >
+        </div>
+      </div>
+    </ng-template>`,
 })
-
 export class AppComponent {
-    public calculateProgressWidth(data: IGanttData): number {
-        return (data.ganttProperties.progress * data.ganttProperties.width) / 100;
-    }
+  public calculateProgressWidth(data: IGanttData): number {
+    return (data.ganttProperties.progress * data.ganttProperties.width) / 100;
+  }
 
-    public taskData: object[] = [
-        { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-        { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-        { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-        { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentId: 1 },
-        { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ 'date': '04/10/2019', 'name': '#briefing', 'title': 'Product concept briefing' }] },
-        { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-        { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-        { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', Progress: 30, ParentId: 7 },
-        { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-        { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '7, 8', Progress: 30, ParentId: 6 }
-    ];
-    public taskSettings: object = {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentId'
-    };
-    public labelSettings: object = {
-        leftLabel: 'TaskName'
-    };
-    public projectStartDate: Date = new Date('03/28/2019');
-    public projectEndDate: Date = new Date('04/18/2019');
+  public taskData: object[] = [
+    {
+      TaskId: 1,
+      TaskName: "Product Concept",
+      StartDate: new Date("04/02/2019"),
+      EndDate: new Date("04/21/2019"),
+    },
+    {
+      TaskId: 2,
+      TaskName: "Defining the product and its usage",
+      StartDate: new Date("04/02/2019"),
+      Duration: 3,
+      Progress: 30,
+      ParentId: 1,
+    },
+    {
+      TaskId: 3,
+      TaskName: "Defining target audience",
+      StartDate: new Date("04/02/2019"),
+      Duration: 3,
+      ParentId: 1,
+    },
+    {
+      TaskId: 4,
+      TaskName: "Prepare product sketch and notes",
+      StartDate: new Date("04/02/2019"),
+      Duration: 2,
+      Predecessor: "2",
+      Progress: 30,
+      ParentId: 1,
+    },
+    {
+      TaskId: 5,
+      TaskName: "Concept Approval",
+      StartDate: new Date("04/02/2019"),
+      Duration: 0,
+      Predecessor: "3,4",
+      Indicators: [
+        {
+          date: "04/10/2019",
+          name: "#briefing",
+          title: "Product concept briefing",
+        },
+      ],
+    },
+    {
+      TaskId: 6,
+      TaskName: "Market Research",
+      StartDate: new Date("04/02/2019"),
+      EndDate: new Date("04/21/2019"),
+    },
+    {
+      TaskId: 7,
+      TaskName: "Demand Analysis",
+      StartDate: new Date("04/04/2019"),
+      EndDate: new Date("04/21/2019"),
+      ParentId: 6,
+    },
+    {
+      TaskId: 8,
+      TaskName: "Customer strength",
+      StartDate: new Date("04/04/2019"),
+      Duration: 4,
+      Predecessor: "5",
+      Progress: 30,
+      ParentId: 7,
+    },
+    {
+      TaskId: 9,
+      TaskName: "Market opportunity analysis",
+      StartDate: new Date("04/04/2019"),
+      Duration: 4,
+      Predecessor: "5",
+      ParentId: 7,
+    },
+    {
+      TaskId: 10,
+      TaskName: "Competitor Analysis",
+      StartDate: new Date("04/04/2019"),
+      Duration: 4,
+      Predecessor: "7, 8",
+      Progress: 30,
+      ParentId: 6,
+    },
+  ];
+  public taskSettings: object = {
+    id: "TaskId",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    progress: "Progress",
+    parentID: "ParentId",
+  };
+  public labelSettings: object = {
+    leftLabel: "TaskName",
+  };
+  public projectStartDate: Date = new Date("03/28/2019");
+  public projectEndDate: Date = new Date("04/18/2019");
 }
 ```
 
-This code creates a custom taskbar with a progress bar sized by *calculateProgressWidth(data)* and a notification badge displaying task progress. The template uses *let-data="data"* to access the full task object, ensuring the badge shows the correct progress value.
+This code creates a custom taskbar with a progress bar sized by _calculateProgressWidth(data)_ and a notification badge displaying task progress. The template uses _let-data="data"_ to access the full task object, ensuring the badge shows the correct progress value.
 
 ## Enable multi-taskbar support
 
@@ -311,7 +394,7 @@ The following example enables tooltips:
 
 Tooltips display on hover, with touch-and-hold support for mobile via the tooltip popup.
 
-### Disable taskbar tooltip 
+### Disable taskbar tooltip
 
 You can disable the taskbar tooltip using the [beforeTooltipRender](https://helpej2.syncfusion.com/angular/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
 
@@ -333,6 +416,7 @@ You can disable the taskbar tooltip using the [beforeTooltipRender](https://help
 You can customize the following tooltip types in the Gantt chart using the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings) configuration:
 
 ### Taskbar tooltip
+
 Taskbar tooltips are customized using [tooltipSettings.taskbar](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings#taskbar) template, accessing task data for formatted content.
 
 The following example customizes taskbar tooltips:
@@ -356,6 +440,7 @@ The following example customizes taskbar tooltips:
 The template uses `data` to display fields like **TaskName** and **Progress**, ensuring responsive display.
 
 ### Connector line tooltip
+
 Connector tooltips, customized via [tooltipSettings.connectorLine](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings#connectorline), show dependency details like type and offset.
 
 The following example customizes connector tooltips:
@@ -377,6 +462,7 @@ The following example customizes connector tooltips:
 {% previewsample "page.domainurl/samples/gantt/tooltip/dependency-cs1" %}
 
 ### Baseline tooltip
+
 A baseline tooltip can be customized using the [tooltipSettings.baseline](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings#baseline) property.
 
 The following example customizes baseline tooltips:
@@ -398,6 +484,7 @@ The following example customizes baseline tooltips:
 {% previewsample "page.domainurl/samples/gantt/tooltip/baseline-cs1" %}
 
 ### Timeline tooltip
+
 Timeline tooltips, customized with [tooltipSettings.timeline](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings#timeline), display date details.
 
 The following example customizes timeline tooltips:
@@ -423,6 +510,7 @@ The following example customizes timeline tooltips:
 To perform touch and hold action on an element, refer to [tooltip popup](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started).
 
 ## See also
-- [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+
+- [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to enable baseline rendering?](https://ej2.syncfusion.com/angular/documentation/gantt/baseline)
 - [How to customize labels?](https://ej2.syncfusion.com/angular/documentation/gantt/labels)

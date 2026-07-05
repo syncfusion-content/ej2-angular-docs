@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Editing Tasks in Angular Gantt Chart Component
 
-Editing tasks in the Angular Gantt Chart component enables dynamic project updates, such as modifying task durations, names, or dependencies, using cell editing, dialog, taskbar interactions, or programmatic methods. Enable editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbarediting) to **true** with `EditService` injected, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate). Cell editing allows direct updates in the TreeGrid pane, dialog editing provides a comprehensive interface, taskbar dragging adjusts durations or dates, and connector lines manage dependencies via drag-and-drop. Use the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#mode) property to control editing behavior (**Auto** or **Dialog**). Customize dialog fields with [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#editdialogfields) for tailored forms. The [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt#updaterecordbyid) method enables programmatic updates, except for task IDs. Ensure valid data to prevent issues and maintain dependency integrity.
+Editing tasks in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables dynamic project updates, such as modifying task durations, names, or dependencies, using cell editing, dialog, taskbar interactions, or programmatic methods. Enable editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbarediting) to **true** with `EditService` injected, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate). Cell editing allows direct updates in the TreeGrid pane, dialog editing provides a comprehensive interface, taskbar dragging adjusts durations or dates, and connector lines manage dependencies via drag-and-drop. Use the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#mode) property to control editing behavior (**Auto** or **Dialog**). Customize dialog fields with [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#editdialogfields) for tailored forms. The [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt#updaterecordbyid) method enables programmatic updates, except for task IDs. Ensure valid data to prevent issues and maintain dependency integrity.
 
 ## Edit tasks via cell editing
 
@@ -84,15 +84,15 @@ Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com
 
 - **Mouse interactions**: Drag connector points on taskbars to create or modify links.
 
-    ![Updating task dependency with mouse drag and drop action](../images/user-interaction.png)
+  ![Updating task dependency with mouse drag and drop action](../images/user-interaction.png)
 
 - **Dialog**: Edit the Dependency tab in the edit dialog.
 
-    ![Updating task dependency in dialog Dependency tab](../images/dialog.png)
+  ![Updating task dependency in dialog Dependency tab](../images/dialog.png)
 
 - **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references.
 
-    ![Updating task dependency via cell editing in TreeGrid](../images/cell-edit.png)
+  ![Updating task dependency via cell editing in TreeGrid](../images/cell-edit.png)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,7 +128,7 @@ To update an existing task ID with a new unique ID, use the [updateTaskId](https
 
 ## Render custom edit component
 
-You can render a custom edit component for a column using the [column.edit](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#edit) property.  This property supports the following methods to manage the component lifecycle:
+You can render a custom edit component for a column using the [column.edit](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#edit) property. This property supports the following methods to manage the component lifecycle:
 
 - `create`: Initializes the custom component.
 - `write`: Renders the component inside the cell.
@@ -146,6 +146,7 @@ You can render a custom edit component for a column using the [column.edit](http
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/custom-dynamic-cs1" %}
 
 ## See also
+
 - [How to add new tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/adding-new-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

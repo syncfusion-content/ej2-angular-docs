@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Feature Modules
 
-The Angular Gantt Chart uses a modular architecture for bundle size optimization. Basic rendering requires no additional modules. Advanced features like sorting, editing, toolbar, and export require explicit module injection through Angular's dependency injection system.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) uses a modular architecture for bundle size optimization. Basic rendering requires no additional modules. Advanced features like sorting, editing, toolbar, and export require explicit module injection through Angular's dependency injection system.
 
 This approach loads only the functionality you need, reducing bundle size and improving load times.
 

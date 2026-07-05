@@ -182,3 +182,5 @@ The following sample shows the File Manager component in the browser.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/file-manager/getting-started-cs3" %}
+
+N> Looking for the full Angular File Manager component overview, features, pricing, and documentation? Visit the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) page.

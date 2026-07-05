@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Angular Gantt Chart Overview
 
-The Angular Gantt Chart is a project management component that provides a Microsoft Project-like interface for scheduling and managing projects. It enables you to visually manage tasks, task relationships, and resources with an intuitive and interactive timeline view.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) is a project management component that provides a Microsoft Project-like interface for scheduling and managing projects. It enables you to visually manage tasks, task relationships, and resources with an intuitive and interactive timeline view.
 
 ## Quick start
 
@@ -40,7 +40,7 @@ The Angular Gantt Chart is a project management component that provides a Micros
 ## Timeline and visualization
 
 - [**Timeline configuration**](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/timeline) - Configure timeline tiers from minutes to decades with custom text
-- [**Zooming**](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming) -  Zoom in and out to view tasks at different time scales
+- [**Zooming**](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming) - Zoom in and out to view tasks at different time scales
 - [**Timezone support**](https://ej2.syncfusion.com/angular/documentation/gantt/timezone) - Schedule projects across different timezones
 - [**Taskbars**](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar) - Customize taskbar appearance and display baselines for planned vs actual progres
 - [**Critical path**](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path) - Identify task sequences that determine project completion dates

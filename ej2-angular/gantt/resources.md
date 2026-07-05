@@ -10,11 +10,12 @@ domainurl: ##DomainURL##
 
 # Resources in Angular Gantt Chart Component
 
-Resources in the Angular Gantt Chart component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
+Resources in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
 ## Configure resource collection
 
 The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#resourcefields):
+
 - **id**: Maps to a unique identifier for task assignment.
 - **name**: Maps to the resource name displayed in labels or columns.
 - **unit**: Maps to the work capacity percentage (0-100%) per day.
@@ -50,13 +51,13 @@ Resources are assigned to tasks using resource IDs in the data source, mapped vi
 Assign a single resource without unit for default 100% allocation.
 
 ```typescript
-{ 
-    TaskID: 2, 
-    TaskName: 'Identify site location', 
-    StartDate: new Date('04/02/2019'), 
-    Duration: 0, 
-    Progress: 50, 
-    resources: [1] 
+{
+    TaskID: 2,
+    TaskName: 'Identify site location',
+    StartDate: new Date('04/02/2019'),
+    Duration: 0,
+    Progress: 50,
+    resources: [1]
 }
 ```
 
@@ -65,11 +66,11 @@ Assign multiple resources with specific units.
 
 ```typescript
 {
-    TaskID: 2, 
-    TaskName: 'Identify site location', 
-    StartDate: new Date('03/29/2019'), 
+    TaskID: 2,
+    TaskName: 'Identify site location',
+    StartDate: new Date('03/29/2019'),
     Duration: 2,
-    Progress: 30,  
+    Progress: 30,
     resources: [{ resourceId: 1, unit: 70 }, 6]
 }
 ```
@@ -99,10 +100,10 @@ The following example shows resource assignment:
 Add or remove resources via cell or dialog editing. Cell editing modifies assignments by double-clicking the resource cell, while dialog editing uses the resource tab in the edit dialog.
 
 ![Resource cell editing](./images/cellEdit-resource.png)
-*Alt text: Resource cell editing in the Gantt grid for assignment modifications.*
+_Alt text: Resource cell editing in the Gantt grid for assignment modifications._
 
 ![Resource dialog editing](./images/dialogedit-resource.png)
-*Alt text: Resource dialog editing tab for multiple allocations and units.*
+_Alt text: Resource dialog editing tab for multiple allocations and units._
 
 ## Customize resource styling
 

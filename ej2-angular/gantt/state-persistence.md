@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # State Persistence in Angular Gantt Chart Component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component supports state management to retain its configuration and data after a browser refresh during the same session.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports state management to retain its configuration and data after a browser refresh during the same session.
 
 To enable this, set the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) property to **true**. Once enabled, the component saves its state in the browser’s [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#) and restores it automatically after page reloads.
 
 ## Restore initial Gantt state
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is enabled.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is enabled.
 
 ### Changing component ID
 
@@ -56,7 +56,7 @@ Here is an example code on how to clear local storage to retain its default stat
 
 ## Restore to previous state
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component allows saving and restoring its state using **local storage**, ensuring retention of configurations like column order, sorting, and filtering.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component allows saving and restoring its state using **local storage**, ensuring retention of configurations like column order, sorting, and filtering.
 
 To implement this functionality, extract the current state using `getPersistData`, store it with `setItem`, retrieve it via `getItem`, and apply it using `setProperties` to restore the saved configuration.
 
@@ -115,7 +115,7 @@ The example below shows how to prevent Gantt columns from being persisted. In th
 
 ## Add to persist
 
-Persistence in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component enables storing and restoring the component state. It supports preserving column layout, sorting, filtering, and configuration elements such as column templates, header templates, and header text, ensuring consistent behavior across sessions.
+Persistence in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables storing and restoring the component state. It supports preserving column layout, sorting, filtering, and configuration elements such as column templates, header templates, and header text, ensuring consistent behavior across sessions.
 
 ### Add a new column in persisted columns list
 

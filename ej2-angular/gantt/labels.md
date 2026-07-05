@@ -10,11 +10,12 @@ domainurl: ##DomainURL##
 
 # Task Labels in Angular Gantt Chart Component
 
-Task labels in the Angular Gantt Chart component display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
+Task labels in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
 
 ## Configure task labels
 
 Task labels are configured using the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, mapping fields from the data source defined in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) (e.g., id to TaskID, name to TaskName). The component supports three label positions with specific use cases:
+
 - [leftLabel](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettingsModel#leftlabel): Displays content like task names or resource assignments to the left of taskbars, ideal for identifiers.
 - [rightLabel](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettingsModel#rightlabel): Shows metrics like progress percentages or durations to the right, suitable for completion data.
 - [taskLabel](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettingsModel#tasklabel): Overlays content like task titles or progress on taskbars, prominent but limited by taskbar width.
@@ -25,25 +26,25 @@ The following example configures labels for task names, IDs, and progress:
 
 ```typescript
 export class AppComponent {
-    public taskSettings: object = {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        dependency: 'Predecessor',
-        child: 'subtasks'
-    };
+  public taskSettings: object = {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    progress: "Progress",
+    dependency: "Predecessor",
+    child: "subtasks",
+  };
 
-    public labelSettings: object = {
-        leftLabel: 'TaskName',
-        rightLabel: 'TaskID',
-        taskLabel: '${Progress}%'
-    };
+  public labelSettings: object = {
+    leftLabel: "TaskName",
+    rightLabel: "TaskID",
+    taskLabel: "${Progress}%",
+  };
 
-    public data: object[] = [
-        // Task data array.
-    ];
+  public data: object[] = [
+    // Task data array.
+  ];
 }
 ```
 
@@ -120,7 +121,7 @@ public taskLabelTemplate: string = `
             <span class="resource-count" *ngIf="data.Resources">
                 👥 {{data.Resources.length}}
             </span>
-            <span class="progress-badge" 
+            <span class="progress-badge"
                   [class]="'progress-' + getProgressClass(data.Progress)">
                 {{data.Progress}}%
             </span>
@@ -141,7 +142,9 @@ getProgressClass(progress: number): string {
     return 'low';
 }
 ```
+
 ## See also
+
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

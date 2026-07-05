@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility customization in Angular Chart component
 
-The Syncfusion® Angular Chart component visualizes data graphically and provides accessibility customization options to improve usability for people with disabilities. The primary accessibility attributes are described in this section.
+The [Angular Charts](https://www.syncfusion.com/angular-components/angular-charts) component visualizes data graphically and provides accessibility customization options to improve usability for people with disabilities. The primary accessibility attributes are described in this section.
 
 The chart component provides properties that enable accessibility customization, including:
 

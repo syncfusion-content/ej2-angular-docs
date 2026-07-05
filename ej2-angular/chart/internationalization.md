@@ -27,7 +27,7 @@ Globalization is the process of designing and developing a component that works 
 
 **Numeric Format**
 
-The example below globalizes axis, point, and tooltip labels to the EUR currency format.
+The example below globalize axis, point, and tooltip labels to the EUR currency format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

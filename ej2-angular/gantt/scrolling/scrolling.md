@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Scrolling in Angular Gantt Chart Component
 
-Scrolling in the Angular Gantt Chart component enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the component’s defined [height](https://ej2.syncfusion.com/angular/documentation/api/gantt#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/gantt#width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
+Scrolling in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the component’s defined [height](https://ej2.syncfusion.com/angular/documentation/api/gantt#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/gantt#width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
 
 Virtual scrolling enhances performance by rendering only the visible portion of the dataset. Scrollbars are equipped with ARIA labels for accessibility, making them compatible with screen readers. They also adapt to responsive layouts, although horizontal scrolling may be required on narrow screens with wide timelines.
 

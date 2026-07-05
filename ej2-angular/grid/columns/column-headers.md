@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Headers in Angular Grid Component
 
-Column headers in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid display the titles for each column, making it clear what data is shown. They provide context and make the grid easier to read and navigate. Headers can be customized by adjusting text alignment, applying templates, stacking multiple headers, or updating them dynamically, offering flexibility to design the grid as needed.
+Column headers in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) display the titles for each column, making it clear what data is shown. They provide context and make the grid easier to read and navigate. Headers can be customized by adjusting text alignment, applying templates, stacking multiple headers, or updating them dynamically, offering flexibility to design the grid as needed.
 
 ## Header text
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property of the `ColumnDirective` defines the label shown in a column’s header; when this property is not set, the column automatically displays its [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) value, so assigning header text provides a more descriptive label in place of the field name.
+In the Angular Data Grid, the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property of the `ColumnDirective` defines the label shown in a column’s header; when this property is not set, the column automatically displays its [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) value, so assigning header text provides a more descriptive label in place of the field name.
 
 To enable the `headerText` property, define it in the `e-column` element. The following example demonstrates enabling header text for a Grid column.
 
@@ -248,7 +248,7 @@ The following example demonstrates dynamically changing the alignment of the hea
 
 ## Autowrap the header text
 
-Header text wrapping enables proper display of lengthy column names or descriptive labels within defined column widths. When content exceeds boundary limits, automatic wrapping to multiple lines maintains readability and prevents text overflow. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid supports configurable text wrapping with options to wrap headers only, content only, or both, optimizing space usage without sacrificing information clarity.
+Header text wrapping enables proper display of lengthy column names or descriptive labels within defined column widths. When content exceeds boundary limits, automatic wrapping to multiple lines maintains readability and prevents text overflow. The Angular Data Grid supports configurable text wrapping with options to wrap headers only, content only, or both, optimizing space usage without sacrificing information clarity.
 
 To enable autowrap, set the `allowTextWrap` property to `true`. The auto wrap mode can be configured using the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings#wrapmode) property.
 
@@ -311,11 +311,11 @@ To dynamically adjust the header height, use the [getHeaderContent](https://ej2.
 
 ## Change header text dynamically
 
-Dynamic header modification is essential for interactive grids where header content needs to change based on input, runtime conditions, or business logic. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component enables real-time modification of column header text through events or property accessors. This feature is particularly useful in scenarios such as localization, conditional labeling, or updating headers based on applied filters or grouping.
+Dynamic header modification is essential for interactive grids where header content needs to change based on input, runtime conditions, or business logic. The Angular Data Grid component enables real-time modification of column header text through events or property accessors. This feature is particularly useful in scenarios such as localization, conditional labeling, or updating headers based on applied filters or grouping.
 
 **Using Event:**
 
-The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#headercellinfo) event of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables modification of header text dynamically. This event triggers for each header cell element rendered in the Grid. When the `headerCellInfo` event triggers, it provides a `HeaderCellInfoEventArgs` object containing the following properties:
+The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#headercellinfo) event of the Angular Data Grid enables modification of header text dynamically. This event triggers for each header cell element rendered in the Grid. When the `headerCellInfo` event triggers, it provides a `HeaderCellInfoEventArgs` object containing the following properties:
 
 * `cell`: Defines the header cell that is being modified.
 * `node`: Defines the DOM element of the header cell that is being modified.
@@ -355,7 +355,7 @@ Here is an example of changing the header text of a column using the `getColumnB
 
 **Conditional header text customization**
 
-The column `headerValueAccessor` property in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid enables customization of column header cell text. This is useful in scenarios requiring alternate language display, specific formatting, or additional header information. This property triggers every time the header cell renders. This property accepts a callback function with two arguments:
+The column `headerValueAccessor` property in Angular Data Grid enables customization of column header cell text. This is useful in scenarios requiring alternate language display, specific formatting, or additional header information. This property triggers every time the header cell renders. This property accepts a callback function with two arguments:
 
   * `field`: Represents the current field of the column.
   * `column`: Represents the current column object.
@@ -454,7 +454,7 @@ The following example demonstrates changing the orientation of the "Freight" col
 
 The `ngx-translate` library provides `internationalization (i18n)` and `localization (l10n)` support for Angular applications. With `ngx-translate`, Angular applications can be easily translated into multiple languages.
 
-In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component, ngx-translate can be used to translate the header text of the Grid's columns. There are two ways to achieve this: through header text and through header template.
+In the context of the Angular Data Grid component, ngx-translate can be used to translate the header text of the Grid's columns. There are two ways to achieve this: through header text and through header template.
 
 ### Through header text  
 
@@ -811,13 +811,13 @@ de.json {
 
 ```
 
-The following screenshot represents the translation of the header text of a Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component to multiple languages using ngx-translate:
+The following screenshot represents the translation of the header text of a Angular Data Grid component to multiple languages using ngx-translate:
 
 ![ng-translate-headerTemplate](../images/ng-translate-headerTemplate.gif)
 
 ## Custom tooltip for header
 
-Tooltips in headers provide contextual information that helps understand the purpose or content of each column without cluttering the UI. Custom tooltips for headers display additional information when hovering over column headers in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid, particularly useful when space limitations prevent full descriptions in headers or when additional column metadata needs to be communicated.
+Tooltips in headers provide contextual information that helps understand the purpose or content of each column without cluttering the UI. Custom tooltips for headers display additional information when hovering over column headers in the Angular Data Grid, particularly useful when space limitations prevent full descriptions in headers or when additional column metadata needs to be communicated.
 
 Custom tooltips can be enabled using the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/grid#beforeRender) event of the Grid component. This event triggers before each header cell renders, enabling addition of a custom tooltip using the [tooltip](https://ej2.syncfusion.com/angular/documentation/tooltip/content) component.
 
@@ -839,7 +839,7 @@ Here's an example of using the `beforeRender` event to add a custom tooltip to a
 
 ## Customize header text styles 
 
-Header styling enables visual distinction and emphasizes important columns or data categories within the grid. Customizing header appearance through font, background color, and other styles meets specific design requirements and improves information hierarchy. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component provides multiple approaches for header customization through CSS, properties, methods, or event-based styling.
+Header styling enables visual distinction and emphasizes important columns or data categories within the grid. Customizing header appearance through font, background color, and other styles meets specific design requirements and improves information hierarchy. The Angular Data Grid component provides multiple approaches for header customization through CSS, properties, methods, or event-based styling.
 
 ### Using CSS
 
@@ -905,7 +905,7 @@ The following example demonstrates customizing the appearance of the "OrderID" a
 
 ### Using method 
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides methods to customize column header appearance:
+Angular Data Grid provides methods to customize column header appearance:
 
 | # | Method | Description |
 |---|--------|-------------|
@@ -972,7 +972,7 @@ The following example demonstrates using the `refreshHeader` method to update th
 
 ## Get header element 
 
-Accessing header elements programmatically is necessary for advanced customizations, styling, or interaction handling that go beyond built-in configuration options. The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid provides multiple methods to retrieve specific header elements by various identifiers, enabling direct DOM manipulation or reading header metadata.
+Accessing header elements programmatically is necessary for advanced customizations, styling, or interaction handling that go beyond built-in configuration options. The Angular Data Grid provides multiple methods to retrieve specific header elements by various identifiers, enabling direct DOM manipulation or reading header metadata.
 
 | # | Method | Description | Example |
 |---|--------|-------------|---------|

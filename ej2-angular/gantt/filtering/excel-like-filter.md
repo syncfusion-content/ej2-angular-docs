@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Excel-like Filtering in Angular Gantt Chart Component
 
-The Excel-like filter in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
+The Excel-like filter in [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 
 To enable this feature, configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filtersettings#type) as **Excel** and set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true**.
 
@@ -78,7 +78,7 @@ If you want to hide only the built-in sorting options (ascending, descending, an
 
 ## Customize filter choice count
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component displays up to 1000 distinct values per column in the filter dialog by default. These values are taken from the first 1000 records bound to the component and shown as checkbox list items to maintain optimal performance. Additional values can be accessed using the search option within the filter dialog.
+The Angular Gantt Chart component displays up to 1000 distinct values per column in the filter dialog by default. These values are taken from the first 1000 records bound to the component and shown as checkbox list items to maintain optimal performance. Additional values can be accessed using the search option within the filter dialog.
 
 To customize this behavior, the `filterChoiceCount` property can be adjusted to increase or decrease the number of distinct values displayed, depending on the dataset size and filtering requirements.
 
