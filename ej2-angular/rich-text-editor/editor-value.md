@@ -469,5 +469,5 @@ The Rich Text Editor provides the [`showSourceCode`](https://ej2.syncfusion.com/
 ## See also
 
 * [Customizing the placeholder in Styles](./style#customizing-placeholder-text)
-* [Implementing Prevention of cross-site scripting (XSS)](./xhtml-validation#cross-site-scripting-xss)
+* [Implementing Prevention of cross-site scripting (XSS)](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/validation-security/xhtml-validation#cross-site-scripting-xss-prevention)
 * [Integrating Code-Mirror for Enhanced Syntax Highlighting](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/third-party-integration#codemirror-integration)

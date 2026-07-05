@@ -24,7 +24,7 @@ SharePoint Framework (SPFx) is a development model and framework provided by Mic
 
 Create a new SPFx project using the following command,
 
-**Step 1:** To initiate the creation of a new [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev) project, use the following command:
+**Step 1:** To initiate the creation of a new [SharePoint](https://learn.microsoft.com/en-us/sharepoint/dev/) project, use the following command:
 
 ```bash
 yo @microsoft/sharepoint

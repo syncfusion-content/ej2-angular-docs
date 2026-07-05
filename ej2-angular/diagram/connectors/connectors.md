@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Connectors in Angular Diagram component
 
-Connectors are objects used to create links between two points, nodes, or ports to represent relationships between them. They provide visual connections that help illustrate data flow, process sequences, hierarchical relationships, and other logical connections in [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram).
+Connectors are objects used to create links between two points, nodes, or ports to represent relationships between them. They provide visual connections that help illustrate data flow, process sequences, hierarchical relationships, and other logical connections in diagrams.
 
 ## Create Connector
 
-Connectors can be created by defining the source and target points. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#properties). The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectormodel#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization.
+Connectors can be created by defining the source and target points. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#properties). The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization.
 
 ```typescript
 <e-connectors>
@@ -65,7 +65,7 @@ The following code example illustrates how to add a connector at runtime.
 
 ## Add collection of connectors at runtime
 
-The collection of connectors can be dynamically added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addelements) method. Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/icollectionchangeeventargs) event will be triggered.
+The collection of connectors can be dynamically added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addelements) method. Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs) event will be triggered.
 
 The following code illustrates how to add a collection of connectors at runtime.
 
@@ -193,7 +193,7 @@ The following code example illustrates how to connect two nodes.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs1" %}
 
-When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeconstraints) from Default, the node accepts only an outgoing connection to dock in it. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeconstraints) from Default, the node accepts only an incoming connection to dock in it.
+When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an outgoing connection to dock in it. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an incoming connection to dock in it.
 
 When you remove both InConnect and OutConnect NodeConstraints from Default, the node restricts connectors from establishing connections to it.
 
@@ -255,7 +255,7 @@ The `sourcePortID` or `targetPortID` can be changed at runtime by modifying thes
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsportupdate-cs1" %}
 
-When you set PortConstraints to [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portconstraints), the port accepts only an incoming connection to dock in it. Similarly, when you set PortConstraints to [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portconstraints), the port accepts only an outgoing connection to dock in it.
+When you set PortConstraints to [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints), the port accepts only an incoming connection to dock in it. Similarly, when you set PortConstraints to [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints), the port accepts only an outgoing connection to dock in it.
 
 When you set PortConstraints to None, the port restricts connectors from establishing connections to it.
 

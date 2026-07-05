@@ -16,9 +16,9 @@ The diagram ruler consists of two components: a horizontal ruler displayed along
 
 ## Define rulers
 
-The [`rulerSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings/) property of diagram controls the visibility and appearance of the ruler in the diagram.
+The [`rulerSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings) property of diagram controls the visibility and appearance of the ruler in the diagram.
 
-The [`showRulers`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings/#showrulers) property shows or hides the rulers in the diagram.
+The [`showRulers`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings#showrulers) property shows or hides the rulers in the diagram.
 
 The following code shows how to add a ruler to the diagram.
 
@@ -36,21 +36,21 @@ The following code shows how to add a ruler to the diagram.
 
 ## Customizing the Ruler
 
-The [`horizontalRuler`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings/#horizontalruler) and [`verticalRuler`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings/#verticalruler) properties of `rulerSettings` customize the rulers appearance in the diagram.
+The [`horizontalRuler`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings#horizontalruler) and [`verticalRuler`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings#verticalruler) properties of `rulerSettings` customize the rulers appearance in the diagram.
 
 By default, the ruler segments are arranged based on pixel values, with each segment representing a unit of measurement on the diagram canvas.
 
 ### Ruler spacing and dimensions
 
-The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler/#interval) property defines the spacing between ruler segments, while the [`segmentWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler/#segmentwidth) property sets the width of each segment. These properties apply to both horizontal and vertical rulers.
+The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#interval) property defines the spacing between ruler segments, while the [`segmentWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#segmentwidth) property sets the width of each segment. These properties apply to both horizontal and vertical rulers.
 
 ### Tick alignment
 
-The [`tickAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler/#tickalignment) property controls the positioning of ruler tick marks. For the horizontal ruler, ticks can be aligned to the left or right side, while for the vertical ruler, they can be aligned to the top or bottom.
+The [`tickAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#tickalignment) property controls the positioning of ruler tick marks. For the horizontal ruler, ticks can be aligned to the left or right side, while for the vertical ruler, they can be aligned to the top or bottom.
 
 ### Ruler thickness
 
-The [`thickness`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler/#thickness) property sets the thickness of the ruler display area for both horizontal and vertical rulers.
+The [`thickness`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#thickness) property sets the thickness of the ruler display area for both horizontal and vertical rulers.
 
 The following code shows how the diagram ruler can be customized.
 
@@ -68,7 +68,7 @@ The following code shows how the diagram ruler can be customized.
 
 ### Arrange tick
 
-The [`arrangeTick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler/#arrangetick) function allows customization of ruler tick appearance for both horizontal and vertical rulers. This function is called during the rendering of each tick mark, providing control over tick properties such as length and style.
+The [`arrangeTick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#arrangetick) function allows customization of ruler tick appearance for both horizontal and vertical rulers. This function is called during the rendering of each tick mark, providing control over tick properties such as length and style.
 
 The following code demonstrates how to use the `arrangeTick` function to customize the tick length.
 
@@ -86,6 +86,6 @@ The following code demonstrates how to use the `arrangeTick` function to customi
 
 ### Marker color
 
-The [`markerColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler/#markercolor) property defines the ruler marker color for both horizontal and vertical rulers. The marker appears when hovering the mouse over the diagram canvas, providing precise position feedback.
+The [`markerColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#markercolor) property defines the ruler marker color for both horizontal and vertical rulers. The marker appears when hovering the mouse over the diagram canvas, providing precise position feedback.
 
 > The marker color can also be customized using CSS styles for advanced styling requirements.

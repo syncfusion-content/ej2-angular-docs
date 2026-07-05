@@ -147,7 +147,7 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 ## Custom key config
 
-You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [`keyConfig`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#keyconfig) property.
+You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#keyconfig) property.
 
 In the below sample, you have customize the bold, italic, underline toolbar action with ctrl+alt+b, ctrl+alt+i and ctrl+alt+u respectively.
 

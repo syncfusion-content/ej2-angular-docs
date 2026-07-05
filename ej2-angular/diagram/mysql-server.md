@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Connecting MySQL Server to Syncfusion® Angular Diagram using LINQ2DB
 
-This guide explains how to load and visualize organizational chart data stored in a MySQL database using the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component. It demonstrates how to configure MySQL, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to an Angular application to render an organizational chart.
+This guide explains how to load and visualize organizational chart data stored in a MySQL database using the Syncfusion® Angular Diagram component. It demonstrates how to configure MySQL, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to an Angular application to render an organizational chart.
 
 **What is LINQ2DB?**
 
-[LINQ2DB](https://linq2db.github.io/) is a lightweight object-relational mapping (ORM) library for .NET that simplifies database access. It enables applications to query relational databases such as MySQL using LINQ syntax, providing a type-safe and efficient way to retrieve data without the overhead of larger ORM frameworks.
+[LINQ2DB](https://linq2db.github.io) is a lightweight object-relational mapping (ORM) library for .NET that simplifies database access. It enables applications to query relational databases such as MySQL using LINQ syntax, providing a type-safe and efficient way to retrieve data without the overhead of larger ORM frameworks.
 
 **Key benefits of LINQ2DB:**
 
@@ -66,7 +66,7 @@ MySQL Server provides the relational database engine used to store organizationa
 
 MySQL Workbench is a graphical tool used to connect to MySQL Server, manage databases, execute SQL queries, and inspect data.
 
-1. Download MySQL Workbench Installer version 8.0.47 from [mysql-workbench](https://dev.mysql.com/downloads/workbench/)
+1. Download MySQL Workbench Installer version 8.0.47 from [mysql-workbench](https://dev.mysql.com/downloads/workbench)
 2. Run the installer and follow the setup wizard.
    - Choose the setup type as **Complete**.
    - Click **Finish** after installing MySQL Workbench.
@@ -173,7 +173,7 @@ The database can also be created using the MySQL Command Line Client.
 
 ## Integrating MySQL Server with ASP.NET Core Web API
 
-This section explains how to create an ASP.NET Core Web API project that connects to MySQL and exposes data for use by the Angular Diagram component.
+This section explains how to create an ASP.NET Core Web API project that connects to MySQL and exposes data for use by the Syncfusion® Angular Diagram component.
 
 ### Creating the Web API project using Visual Studio
 
@@ -437,7 +437,7 @@ app.Run();
 
 The backend API is now configured.
 
-## Integrating Angular Diagram
+## Integrating Syncfusion® Angular Diagram
 
 The following steps describe how to render the Diagram and connect it to the MySQL Server back-end.
 
@@ -473,7 +473,7 @@ Add the required CSS references to the **src/styles.css** file to apply styling 
 
 For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion® Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
-### Step 3: Add Angular Diagram
+### Step 3: Add Syncfusion® Angular Diagram
 
 Create a basic Diagram component in **src/app/app.ts**:
 

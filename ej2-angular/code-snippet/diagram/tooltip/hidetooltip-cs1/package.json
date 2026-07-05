@@ -16,6 +16,7 @@
     "@syncfusion/ej2-angular-diagrams": "*",
     "@syncfusion/ej2-diagrams": "*",
     "@syncfusion/ej2-angular-base": "*",
+    "@syncfusion/ej2-popups": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",

@@ -8,7 +8,7 @@ import { GanttData } from './data';
   imports: [GanttModule],
   encapsulation: ViewEncapsulation.None,
   template: `
-    <ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings" (rowDataBound)="rowDataBound()">
+    <ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings" (dataBound)="dataBound()">
       <e-columns>
         <e-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-column>
         <e-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-column>
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  public rowDataBound(): void {
+  public dataBound(): void {
     ((this.ganttInstance as GanttComponent).treeGrid.getRowByIndex(2) as HTMLElement).style.background = 'rgb(193, 228, 234)';
   }
 }

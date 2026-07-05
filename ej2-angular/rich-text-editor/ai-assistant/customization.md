@@ -14,7 +14,7 @@ The AI Assistant feature is designed to be easily customizable using its propert
 
 ## Custom Toolbar Buttons in AI Assistant
 
-To add the custom toolbar items to the AI Assistant Header, Prompt, and Response toolbar, the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties of the `aiAssistantSettings` can be used. The `aiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
+To add the custom toolbar items to the AI Assistant Header, Prompt, and Response toolbar, the [headerToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#headertoolbarsettings), [promptToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#prompttoolbarsettings), and [responseToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#responsetoolbarsettings) properties of the [aiAssistantSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#aiassistantsettings) can be used. The [aiAssistantToolbarClick](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#aiassistanttoolbarclick) event allows you to execute custom logic when toolbar buttons are clicked.
 
 The Custom items can be added to the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` with the following properties.
 
@@ -40,8 +40,8 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 1. **Custom Header Toolbar Item**
 
    * A **User Profile** dropdown is added as a custom header toolbar item using a template.
-   * The **DropDownButton** component is dynamically initialized in the `beforePopupOpen` event when the AI Assistant popup opens.
-   * The dropdown instance is properly destroyed in the `beforePopupClose` event to ensure clean resource management.
+   * The **DropDownButton** component is dynamically initialized in the [beforePopupOpen](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#beforepopupopen) event when the AI Assistant popup opens.
+   * The dropdown instance is properly destroyed in the [beforePopupClose](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#beforepopupclose) event to ensure clean resource management.
 
 2. **Custom Prompt Toolbar Item**
 
@@ -120,8 +120,8 @@ Using the public methods, you can build custom workflows with the AI Assistant. 
 
 The following example demonstrates a Proofread use case by rendering a button outside the editor. On clicking the Proofread button:
 
-1. Launches the AI Assistant popup using the `showAIAssistantPopup` method.
-2. Executes a prompt using the `executeAIPrompt` method.
+1. Launches the AI Assistant popup using the [showAIAssistantPopup](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#showaiassistantpopup) method.
+2. Executes a prompt using the [executeAIPrompt](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#executeaiprompt) method.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}

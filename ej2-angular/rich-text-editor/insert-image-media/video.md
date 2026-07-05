@@ -488,6 +488,32 @@ You can disable the resize action by configuring `false` for the [insertVideoSet
 
 ![Angular Rich Text Editor video resize](../images/angular-richtexteditor-video-resize.png)
 
+```typescript
+
+import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
+import { Component } from '@angular/core';
+import { ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, VideoService, PasteCleanupService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+
+@Component({
+  imports: [ RichTextEditorModule ],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-richtexteditor [toolbarSettings]="tools" [insertVideoSettings]='insertVideoSettings'></ejs-richtexteditor>`,
+  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, VideoService, PasteCleanupService]
+})
+export class App {
+  public tools: ToolbarSettingsModel = {
+        items: ['Video']
+    };
+  
+  public insertVideoSettings = {
+        saveUrl: 'https://services.syncfusion.com/angular/production/api/RichTextEditor/SaveFile',
+        resize: false,
+    };
+}
+
+```
+
 ## See also
 
 * [Video Quick Toolbar](../toolbar/quick-toolbar)

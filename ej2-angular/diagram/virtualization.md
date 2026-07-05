@@ -36,7 +36,7 @@ Virtualization is recommended for diagrams that meet any of these criteria:
 
 To activate virtualization, include the `Virtualization` constraint in the diagram's constraints property. The virtualization feature works in conjunction with the diagram's scrolling capabilities to manage object loading dynamically.
 
-To enable virtualization in a diagram, you need to include the virtualization constraint in the diagram's constraints. For more information, refer to the  [`diagram constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints/#diagramconstraints).
+To enable virtualization in a diagram, you need to include the virtualization constraint in the diagram's constraints. For more information, refer to the  [`diagram constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints#diagramconstraints).
 
 The following code example demonstrates how to enable Virtualization mode in the diagram:
 

@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { GanttModule, GanttComponent, ResizeService, SelectionService } from '@syncfusion/ej2-angular-gantt';
-import { SparklineAllModule, Sparkline } from '@syncfusion/ej2-angular-charts';
+import { SparklineAllModule } from '@syncfusion/ej2-angular-charts';
+import { Sparkline } from '@syncfusion/ej2-charts';
 import { GanttData } from './data';
 
 @Component({

@@ -14,7 +14,7 @@ Connector ports serve as connection points along connectors, enabling other conn
 
 ## Create connector port
 
-Connector ports serve as connection points along connectors, enabling other connectors to attach at specific locations rather than just the endpoints. Creating connector ports follows the same pattern as node ports - define a port collection and assign it to the connector's [`ports`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#ports) property.
+Connector ports serve as connection points along connectors, enabling other connectors to attach at specific locations rather than just the endpoints. Creating connector ports follows the same pattern as node ports - define a port collection and assign it to the connector's [`ports`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#ports) property.
 
 The following code example demonstrates how to create connector ports:
 
@@ -32,7 +32,7 @@ The following code example demonstrates how to create connector ports:
 
 ## Port alignment
 
-Control the position of ports along the connector using the [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portAlignment/) property. This property determines where the port appears relative to the connector's path:
+Control the position of ports along the connector using the [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portAlignment) property. This property determines where the port appears relative to the connector's path:
 
 - **Before**: Positions the port at the source end of the connector
 - **After**: Positions the port at the target end of the connector  
@@ -54,7 +54,7 @@ The following code example shows how to set different alignment values for conne
 
 ## Port displacement
 
-Fine-tune port positioning using the [`displacement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/point/) property, which applies offset values to move ports from their aligned position. Displacement works by shifting the port by specified x and y coordinates relative to the alignment point.
+Fine-tune port positioning using the [`displacement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/point) property, which applies offset values to move ports from their aligned position. Displacement works by shifting the port by specified x and y coordinates relative to the alignment point.
 
 The following code example demonstrates how to apply displacement to connector ports:
 
@@ -74,7 +74,7 @@ N> Displacement only applies when alignment is set to **Before** or **After**. C
 
 ## Establish port-to-port connections
 
-Connect one connector to another connector's port by specifying the port ID in the [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceportid) or [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetportid) property. This creates precise connection points along connector paths instead of connecting to endpoints.
+Connect one connector to another connector's port by specifying the port ID in the [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceportid) or [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetportid) property. This creates precise connection points along connector paths instead of connecting to endpoints.
 
 The following code example shows how to connect a connector to a connector port:
 

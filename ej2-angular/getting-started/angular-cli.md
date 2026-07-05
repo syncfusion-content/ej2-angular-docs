@@ -63,23 +63,23 @@ npm add @syncfusion/ej2-angular-grids@20.2.38-ngcc
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be applied using CSS or SASS from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages). Additionally, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
 
-To import styles for specific components, add only what you need:
+This example uses the `Material 3` theme for the Grid component from the theme package. To install the [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package, use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+The required styles for the Grid component are imported as shown below:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 ```
-
-> Import order should match the component's dependency sequence.
 
 See the [SCSS guide](../common/how-to/sass) for SCSS styles.
 

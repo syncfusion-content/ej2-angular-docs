@@ -110,7 +110,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> UI Kit for Angular comprises
   </tr>
 </table>
 
-> These provide pre-designed blocks for the quick implementation of web applications. However, customization and the integration of business logic must be handled on your end to meet your specific requirements.
+> These provide pre-designed [blocks](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) for the quick implementation of web applications. However, customization and the integration of business logic must be handled on your end to meet your specific requirements.
 
 ## Supported Angular Versions
 The blocks designed and showcased are built using Angular 18, but you can use other versions of Angular as well, since they are primarily developed with HTML, CSS, and TypeScript to facilitate building your web applications. Additionally, for using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, the compatible Angular and Syncfusion<sup style="font-size:70%">&reg;</sup> versions are outlined in this [link](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-supported-versions) for your reference.

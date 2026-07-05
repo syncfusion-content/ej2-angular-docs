@@ -72,7 +72,6 @@ The following example demonstrates undo and redo functionality for connector seg
 
 ## Related topics
 
-* [Connector segments overview](./segments)
-* [Orthogonal segments](./orthogonal-segments)
-* [Bezier segments](./bezier-segments)
-* [Connector routing](../connector-routing)
+* [Connector segments overview](./connector-segments)
+* [Orthogonal segments](./connector-orthogonal)
+* [Bezier segments](./connector-bezier/connector-bezier)

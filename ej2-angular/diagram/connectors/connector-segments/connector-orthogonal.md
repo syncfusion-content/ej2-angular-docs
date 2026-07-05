@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 Orthogonal connectors use segments that are always perpendicular to each other, which is ideal for creating structured layouts in flowcharts or organizational charts.
 
-To create an orthogonal connector, set the connector's [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type) property to `Orthogonal`. The following code example illustrates how to create a default orthogonal connector.
+To create an orthogonal connector, set the connector's [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#type) property to `Orthogonal`. The following code example illustrates how to create a default orthogonal connector.
 
-For more fine-grained control, you can define individual segments within the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#segments) collection. The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment/#length) property specifies the length of a segment, while the [`direction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment/#direction) property determines its orientation (e.g., 'Right', 'Bottom'). The following code example shows how to create a connector with customized orthogonal segments.
+For more fine-grained control, you can define individual segments within the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#segments) collection. The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment#length) property specifies the length of a segment, while the [`direction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment#direction) property determines its orientation (e.g., 'Right', 'Bottom'). The following code example shows how to create a connector with customized orthogonal segments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,7 +66,7 @@ Orthogonal segments automatically reroute themselves to avoid overlapping with t
 
 ## How to Customize Orthogonal Segment Thumb Shape
 
-The thumbs used to edit orthogonal segments are rendered as a `Circle` by default. You can change this shape using the diagram's [`segmentThumbShape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentthumbshape) property. The following predefined shapes are available:
+The thumbs used to edit orthogonal segments are rendered as a `Circle` by default. You can change this shape using the diagram's [`segmentThumbShape`](https://ej2.syncfusion.com/angular/documentation/api/diagram#segmentthumbshape) property. The following predefined shapes are available:
 
 | Shape Name | Preview |
 |---|---|
@@ -111,11 +111,11 @@ Use the following CSS to customize the segment thumb's appearance.
 
 ## How to Customize Orthogonal Segment Thumb Size
 
-By default, orthogonal segment thumbs have a width and height of 10px. This can be customized for all connectors or for individual ones using the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentthumbsize) property.
+By default, orthogonal segment thumbs have a width and height of 10px. This can be customized for all connectors or for individual ones using the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#segmentthumbsize) property.
 
-To change the thumb size for all orthogonal connectors in a diagram, set the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentthumbsize) property in the diagram model.
+To change the thumb size for all orthogonal connectors in a diagram, set the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#segmentthumbsize) property in the diagram model.
 
-To customize the thumb size for a specific connector, you must first disable its `InheritSegmentThumbSize` flag in the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints/) property. Then, set the connector's [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#segmentthumbsize/) value as needed.
+To customize the thumb size for a specific connector, you must first disable its `InheritSegmentThumbSize` flag in the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints) property. Then, set the connector's [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#segmentthumbsize) value as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

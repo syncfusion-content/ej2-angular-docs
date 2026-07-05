@@ -51,7 +51,7 @@ Different flowchart symbols have specific meanings used to represent various sta
 
 ## Render flowchart layout with data source
 
-To render a flowchart layout, set the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#type) property to `Flowchart`. The following code example demonstrates how to render a flowchart layout using a data source.
+To render a flowchart layout, set the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#type) property to `Flowchart`. The following code example demonstrates how to render a flowchart layout using a data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,7 +114,7 @@ This structure enables comprehensive customization of the flowchart's visual ele
 
 ## Render flowchart layout with nodes and connectors
 
-The following example demonstrates how to render a flowchart layout using predefined nodes and connectors. Define the [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/) and [`connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectormodel/) collections and assign them to the diagram. Set the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#type) to `Flowchart` to enable automatic arrangement.
+The following example demonstrates how to render a flowchart layout using predefined nodes and connectors. Define the [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel) and [`connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectormodel) collections and assign them to the diagram. Set the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#type) to `Flowchart` to enable automatic arrangement.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,7 +130,7 @@ The following example demonstrates how to render a flowchart layout using predef
 
 ## Customize flowchart layout orientation
 
-Customize the flow direction of the flowchart using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#orientation) property of the layout class. The flowchart can flow either vertically from top to bottom or horizontally from left to right. The default orientation is `TopToBottom`.
+Customize the flow direction of the flowchart using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#orientation) property of the layout class. The flowchart can flow either vertically from top to bottom or horizontally from left to right. The default orientation is `TopToBottom`.
 
 ### Top to bottom orientation
 
@@ -184,7 +184,7 @@ export class AppComponent {
 
 ## Customize decision output directions
 
-The decision symbol in a flowchart represents a question or condition that leads to different paths based on a binary outcome (Yes/No, True/False). Customize the output direction of these paths using the [`yesBranchDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/branchDirection/) and [`noBranchDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/branchDirection/) properties of the [`flowchartLayoutSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flowchartLayoutSettingsModel/) class.
+The decision symbol in a flowchart represents a question or condition that leads to different paths based on a binary outcome (Yes/No, True/False). Customize the output direction of these paths using the [`yesBranchDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/branchDirection) and [`noBranchDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/branchDirection) properties of the [`flowchartLayoutSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flowchartLayoutSettingsModel) class.
 
 ### Branch direction options
 
@@ -224,7 +224,7 @@ N> When both branch directions are set to the same value, the Yes branch takes p
 
 ## Custom Yes and No branch values
 
-The decision symbol produces two output branches: a Yes branch and a No branch. Configure custom text values to determine branch classification using the [`yesBranchValues`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flowchartLayoutSettingsModel/#yesbranchvalues) and [`noBranchValues`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flowchartLayoutSettingsModel/#nobranchvalues) properties of the [`flowchartLayoutSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flowchartLayoutSettingsModel/) class.
+The decision symbol produces two output branches: a Yes branch and a No branch. Configure custom text values to determine branch classification using the [`yesBranchValues`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flowchartLayoutSettingsModel#yesbranchvalues) and [`noBranchValues`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flowchartLayoutSettingsModel#nobranchvalues) properties of the [`flowchartLayoutSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flowchartLayoutSettingsModel) class.
 
 ### Default branch values
 

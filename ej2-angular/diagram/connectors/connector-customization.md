@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connector Customization
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides extensive customization options for connectors, allowing developers to modify visual appearance, behavior, and interaction properties. This guide covers decorator shapes, styling options, spacing controls, bridging effects, and advanced connector features.
+The Diagram component provides extensive customization options for connectors, allowing developers to modify visual appearance, behavior, and interaction properties. This guide covers decorator shapes, styling options, spacing controls, bridging effects, and advanced connector features.
 
 ## Decorator shapes and customization
 
@@ -20,7 +20,7 @@ Decorators are visual elements that appear at the starting and ending points of 
 
 The connection end points can be decorated using the [`sourceDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourcedecorator) and [`targetDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetdecorator) properties of the connector.
 
-The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorshapes) property of `sourceDecorator` allows defining the shape of the source decorators. Similarly, the [shape](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorshapes) property of `targetDecorator` allows defining the shape of the target decorators.
+The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes) property of `sourceDecorator` allows defining the shape of the source decorators. Similarly, the [shape](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes) property of `targetDecorator` allows defining the shape of the target decorators.
 
 To create custom shapes for decorators, use the [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator#pathdata) property to define SVG path strings for both source and target decorators.
 
@@ -42,7 +42,7 @@ The following code example illustrates how to create decorators of various shape
 
 The visual appearance of decorators can be customized using stroke and fill properties to match design requirements or highlight specific connector types.
 
-o customize the border of a decorator, use the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokestyle#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokestyle#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokestyle#strokedasharray) properties on the `sourceDecorator` and `targetDecorator` objects. Similarly, use the `width` and `height` properties to control the size of each decorator.
+o customize the border of a decorator, use the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray) properties on the `sourceDecorator` and `targetDecorator` objects. Similarly, use the `width` and `height` properties to control the size of each decorator.
 
 The following code example illustrates how to customize the appearance of the decorator.
 
@@ -108,7 +108,7 @@ The following code example illustrates how to leave space between the connection
 
 ### Line bridging for intersection handling
 
-Line bridging creates visual bridges where connectors intersect, helping users distinguish between different connection paths in complex diagrams. By default, [`bridgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bridgedirection) is set to top, with the bridge appearing based on the specified direction.
+Line bridging creates visual bridges where connectors intersect, helping users distinguish between different connection paths in complex diagrams. By default, [`bridgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bridgeDirection) is set to top, with the bridge appearing based on the specified direction.
 
 Bridging can be enabled or disabled using either `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
@@ -166,7 +166,7 @@ Corner radius creates connectors with rounded corners instead of sharp angles, p
 
 ## Connector Appearance
 
-* The connector’s [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokestyle#strokewidth), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokestyle#strokecolor), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokestyle#strokedasharray), and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokestyle#opacity) properties are used to customize the appearance of the connector segments.
+* The connector’s [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray), and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#opacity) properties are used to customize the appearance of the connector segments.
 
 * The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#visible) property of the connector enables or disables the visibility of connector.
 

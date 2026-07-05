@@ -32,6 +32,7 @@ End users can perform calculations on groups of values (specifically for value f
 | PopulationVar| Displays the variance of the population for the selected field.|
 | SampleVar| Displays the sample variance for the selected field.|
 | RunningTotals| Displays the running total for the selected field values.|
+| PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
 | DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
 | PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
@@ -69,10 +70,10 @@ For each value field, the aggregation type can be set using the property [`type`
 You can dynamically modify the aggregation type for value fields in the Pivot Table component through the UI at runtime. Value fields, displayed in the grouping bar and field list, include a dropdown icon that allows you to select from various aggregation types (e.g., **Sum**, **Average**, **Count**). Once you select a new aggregation type, the pivot table updates instantly to reflect the change, providing a seamless experience for data analysis.
 
 <!-- markdownlint-disable MD012 -->
-![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.png)
+![List of pre-defined aggregation types to be changed via Field List](../images/aggregation_fl_menu.png)
 <br/>
 
-![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.png)
+![List of pre-defined aggregation types to be changed via Grouping Bar](../images/aggregation_gb_menu.png)
 
 ## Show desired aggregation types in its dropdown menu
 

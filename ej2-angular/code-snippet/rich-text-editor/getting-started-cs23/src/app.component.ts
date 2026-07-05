@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, BeforeSanitizeHtmlArgs, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, BeforeSanitizeHtmlArgs, QuickToolbarService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 import { detach } from '@syncfusion/ej2-base';
 
 @Component({
@@ -7,7 +7,7 @@ import { detach } from '@syncfusion/ej2-base';
     standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id='editor' [value]='editorValue' (beforeSanitizeHtml)='onBeforeSanitizeHtml($event)'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService]
 })
 export class AppComponent {
     public editorValue: string = `<div>Prevention of Cross Sit Scripting (XSS)</div><script>alert('hi')</script>`;
@@ -24,6 +24,3 @@ export class AppComponent {
         }
     }
 }
-
-
-

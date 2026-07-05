@@ -28,16 +28,16 @@ This filtering option displays the Pivot Table with selective records based on t
 
 Users can apply member filters at runtime by clicking the filter icon next to any field in the row, column, and filter axes, available in both the field list and grouping bar interfaces.
 
-![Member filter icon in field list](images/fieldlist_filtericon.png)
+![Member filter icon in field list](../images/fieldlist_filtericon.png)
 <br/>
 
-![Member filter icon in grouping bar](images/filter_icon_gb.png)
+![Member filter icon in grouping bar](../images/filter_icon_gb.png)
 <br/>
 
-![Member filter dialog with checked and unchecked members](images/filter_dialog_gb.png)
+![Member filter dialog with checked and unchecked members](../images/filter_dialog_gb.png)
 <br/>
 
-![Resultant pivot table on member filter](images/filter_grid_gb.png)
+![Resultant pivot table on member filter](../images/filter_grid_gb.png)
 
 You can also configure filtering programmatically using the [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/filter) property during the initial rendering of the component. The essential settings required to add filter criteria are:
 
@@ -66,11 +66,11 @@ This option lets you quickly manage all members at once, saving time when workin
 
 When you check the **All** option, it selects all members in the list. When you uncheck it, all members become deselected. If you manually select some members while others remain unselected, the **All** option displays an intermediate state (partially checked) to show that the list contains both selected and unselected members.
 
-![Intermediate state of All option](images/editor_inter.png)
+![Intermediate state of All option](../images/editor_inter.png)
 
 > **Note:** When all members are deselected, the **OK** button becomes disabled. You must select at least one member to apply the filter and display data in the Pivot Table.
 
-![All members unchecked state](images/editor_alluncheck.png)
+![All members unchecked state](../images/editor_alluncheck.png)
 
 ### Provision to search specific member(s)
 
@@ -78,7 +78,7 @@ This option helps you quickly locate specific members without scrolling through 
 
 Simply enter the starting characters of the member name you want to find, and the list will automatically filter to show only matching members. This makes it easy to locate and select specific members, especially when dealing with large datasets.
 
-![Search functionality in member filter](images/search.png)
+![Search functionality in member filter](../images/search.png)
 
 ### Option to sort members
 
@@ -86,7 +86,7 @@ This option allows you to organize members in a logical order for easier selecti
 
 You can click the ascending sort icon to arrange members from A to Z (or lowest to highest for numerical values), or click the descending sort icon to arrange them from Z to A (or highest to lowest). When neither sorting option is selected, members appear in their original order as retrieved from the data source.
 
-![Member sorting options](images/member-sort.png)
+![Member sorting options](../images/member-sort.png)
 
 ### Performance tips
 
@@ -133,7 +133,7 @@ This approach prevents performance issues when working with hierarchies that con
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs94" %}
 
-![Loading members on-demand](images/ondemand_member.png)
+![Loading members on-demand](../images/ondemand_member.png)
 
 In the example above, the "Customer Geography" dimension loads with only the first level (Country) initially. Search operations will apply only to the "Country" level members. You can then load the next level members (State-Province) on-demand in two ways:
 
@@ -144,7 +144,7 @@ Once loaded, these members are stored internally and remain available until you 
 
 When the [`loadOnDemandInMemberEditor`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#loadondemandinmembereditor) property is set to **false**, all members from all levels are loaded during the initial setup. This approach executes a single query to retrieve all members at once. While this may cause slower performance when opening the member editor due to the large number of members being fetched, expand and search operations will be faster since all members are already available.
 
-![Loading all members initially](images/initial_member.png)
+![Loading all members initially](../images/initial_member.png)
 
 ### Loading members based on level number
 
@@ -166,9 +166,23 @@ The [`levelCount`](https://ej2.syncfusion.com/angular/documentation/api/pivotvie
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs95" %}
 
-![Loading members based on level number](images/level-count.png)
+![Loading members based on level number](../images/level-count.png)
 
 In the above example, the [`levelCount`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/filtermodel#levelcount) is set to **2** for the "Customer Geography" dimension in [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettingsmodel#filtersettings). This loads both the "Country" and "State-Province" levels during the initial loading process. Any search or filter operations will be applied only to the members within these two levels. To access members from deeper levels like "City", you can either expand the respective "State-Province" node or select the "City" level from the dropdown list.
+
+### Append Current Selection to Existing Filters
+
+By default, when a filter is applied and a new field member is selected, the Pivot Table replaces the previous selection. Enabling the **Add current selection to filter** option ensures that each new selection is added to the existing filter instead of replacing it. This allows you to select multiple items incrementally without losing earlier selections.
+
+To append current selections to existing filters:
+
+1. Open the Filter dialog.
+![Open the Filter dialog](../images/open-filter-dialog.png)
+2. Search for the required field member and select it.
+![Search the required field member](../images/search-required-item.png)
+3. Then, select the **Add current selection to filter** option in the Filter dialog.
+![Add current selection to filter](../images/enable-add-current-selection-to-filter.png)
+4. Click the **OK** button.
 
 ## Label filtering
 
@@ -280,7 +294,7 @@ To apply date filtering, specify your filtering criteria using the [`value1`](ht
 
 Users can clear the applied label filter by clicking the **Clear** option at the bottom of the filter dialog. This option is located under the **Label** tab for string and number type filtering, and under the **Date** tab for date type filtering.
 
-![output](images/clearfilter.png)
+![output](../images/clearfilter.png)
 
 ## Value filtering
 
@@ -312,6 +326,8 @@ The following table shows the available operators for value filtering:
 | LessThanOrEqualTo| Shows records where the value is less than or equal to the specified value.|
 | Between| Shows records with values between the specified start and end values.|
 | NotBetween| Shows records with values outside the specified start and end values.|
+| Top | Top N members by highest values (client-side only).|
+| Bottom | Bottom N members by lowest values (client-side only).|
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -329,7 +345,7 @@ The following table shows the available operators for value filtering:
 
 You can clear the applied value filter by clicking the "Clear" option at the bottom of the filter dialog under the "Value" tab.
 
-![Clearing the existing value filter](images/clearvaluefilter.png)
+![Clearing the existing value filter](../images/clearvaluefilter.png)
 
 ## Event
 

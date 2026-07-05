@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Properties of AI Assistant
 
-The `AIAssistantSettings` class provides the following properties for complete customization:
+The [AIAssistantSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel) class provides the following properties for complete customization:
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
@@ -26,7 +26,7 @@ The `AIAssistantSettings` class provides the following properties for complete c
 | `bannerTemplate` | `string \| Function` | `''` | Specifies the template for the banner in the AI Assistant component. |
 | `maxPromptHistory` | `number` | `20` | Defines the maximum number of prompts that can be stored in the editor's history stack. |
 
-The `aiAssistantSettings` property of the Rich Text Editor allows you to configure the following:
+The [aiAssistantSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#aiassistantsettings) property of the Rich Text Editor allows you to configure the following:
 
 * AI Commands Dropdown menu items
 * Preloaded conversations and suggestions in the AI Assistant
@@ -37,7 +37,7 @@ The `aiAssistantSettings` property of the Rich Text Editor allows you to configu
 
 ## Adding items to the AI Commands Dropdown menu
 
-To configure the items displayed in the AI Commands Dropdown menu, the `commands` property of the `aiAssistantSettings` can be used. The commands come with predefined prompts for writing, summarizing, and translating content. The `commands` property can be configured to add items or nested items to the dropdown menu.
+To configure the items displayed in the AI Commands Dropdown menu, the [commands](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#commands) property of the `aiAssistantSettings` can be used. The commands come with predefined prompts for writing, summarizing, and translating content. The `commands` property can be configured to add items or nested items to the dropdown menu.
 
 **Example**
 
@@ -56,7 +56,7 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 
 ## Preloading Prompts, Response and Suggestions
 
-To preload conversations and add suggested prompts to the AI Assistant use the `prompts` and `suggestions` properties of the `aiAssistantSettings`. This is helpful when conversation history needs to be loaded for a returning user, or to load the AI Assistant with default prompts for a new user.
+To preload conversations and add suggested prompts to the AI Assistant use the [prompts](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#prompts) and [suggestions](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#suggestions) properties of the `aiAssistantSettings`. This is helpful when conversation history needs to be loaded for a returning user, or to load the AI Assistant with default prompts for a new user.
 
 **Example**
 
@@ -75,7 +75,7 @@ In the below sample, the `prompts` and `suggestions` properties of the `aiAssist
 
 ## Header, Prompt and Response Toolbar
 
-To configure the item order and add custom items to the header, prompt, and response sections, use the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties of the `aiAssistantSettings`.
+To configure the item order and add custom items to the header, prompt, and response sections, use the [headerToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#headertoolbarsettings), [promptToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#prompttoolbarsettings), and [responseToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#responsetoolbarsettings) properties of the `aiAssistantSettings`.
 
 ### Available Toolbar Items
 
@@ -112,7 +112,7 @@ In the below sample, the toolbar settings are configured to modify the order and
 
 ## Popup Dimensions
 
-To customize the dimensions of the AI Assistant popup based on the editor width, use the `popupWidth` and `popupMaxHeight` properties of the `aiAssistantSettings`. The default minimum height of the popup is `100px`, and the `popupMaxHeight` property customizes the maximum height of the popup up to which the content can grow.
+To customize the dimensions of the AI Assistant popup based on the editor width, use the [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#popupwidth) and [popupMaxHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#popupmaxheight) properties of the `aiAssistantSettings`. The default minimum height of the popup is `100px`, and the `popupMaxHeight` property customizes the maximum height of the popup up to which the content can grow.
 
 **Example**
 
@@ -131,7 +131,7 @@ In the below sample, the popup width and maximum height are configured.
 
 ## Setting Maximum Conversation History Length
 
-To set the maximum conversation history length, use the `maxPromptHistory` property of the `aiAssistantSettings`. The default amount of conversation that can be loaded is `20` prompts. The conversation will be cleared when closing the popup. To retrieve all conversation history, use the `getAIPromptHistory()` method. This method is useful for loading previous conversations and populating the `prompts` property when you need to restore or display earlier chat sessions.
+To set the maximum conversation history length, use the [maxPromptHistory](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel#maxprompthistory) property of the `aiAssistantSettings`. The default amount of conversation that can be loaded is `20` prompts. The conversation will be cleared when closing the popup. To retrieve all conversation history, use the [getAIPromptHistory()](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#getaiprompthistory) method. This method is useful for loading previous conversations and populating the `prompts` property when you need to restore or display earlier chat sessions.
 
 **Example**
 

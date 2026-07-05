@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in EJ2-Angular application
+# Register Syncfusion® License Key in EJ2-Angular application
 
 A Syncfusion<sup style="font-size:70%">&reg;</sup> license key must be registered when your project references Syncfusion EJ2-Angular packages. The generated license key is a string that should be registered after adding any [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular reference](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli#create-a-new-application).
 
@@ -208,6 +208,20 @@ npx syncfusion-license activate
 ```
 
 ![Bash task](images/bash-script.png)
+
+## Register Multiple License Keys
+
+If you need to register multiple Syncfusion<sup style="font-size:70%">&reg;</sup> license keys in your application, you can do so by separating each key with a semicolon. This is useful when your application uses multiple Syncfusion<sup style="font-size:70%">&reg;</sup> products or editions.
+
+**Format:** `key1;key2;key3`
+
+**Example:**
+```ts
+registerLicense('license-key-1-here;license-key-2-here');
+```
+
+> When registering multiple keys, ensure there are no spaces before or after the semicolon separator.
+
 
 ## See Also
 

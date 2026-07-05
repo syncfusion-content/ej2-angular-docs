@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular DataManager - GraphQL Adaptor | Syncfusion
-description: Angular DataManager GraphQL provides server-side integration with REST APIs by detailing the backend setup and endpoint configuration required for data operations.
+description: Angular DataManager GraphQL enables remote data binding with REST APIs, explaining backend configuration and endpoints for efficient data operations.
 control: GraphQL Adaptor
 platform: ej2-angular
 documentation: ug
@@ -94,7 +94,7 @@ The following integration benefits are gained when using GraphQL:
 | Requirement | Details | Download / Command |
 |------------|---------|--------------------|
 | **Visual Studio** | Community, Professional, or Enterprise edition. | [Visual Studio](https://visualstudio.microsoft.com/) |
-| **Node.js** | Use the latest **LTS** version. | [Node.js](https://nodejs.org/) |
+| **Node.js** | Use the latest **LTS** version. | [Node.js](https://nodejs.org/en) |
 | **npm** | Comes with Node.js. Required for package management. | Included with Node.js |
 | **Angular CLI** | Supports Angular **12+**. Install globally. | `npm install -g @angular/cli` |
 | **Verify Node.js** | Check Node version. | `node --version` |

@@ -58,7 +58,7 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 ### Ivy Library Distribution Package
 
-Starting with version `20.2.36`, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are distributed in the Ivy library format to support Angular's modern [Ivy](https://docs.angular.lat/guide/ivy) rendering engine. These packages are compatible with Angular version 12 and higher.
+Starting with version `20.2.36`, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are distributed in the Ivy library format to support Angular `Ivy` rendering engine. These packages are compatible with Angular version 12 and higher.
 
 Install the [@syncfusion/ej2-angular-ribbon](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35) package using the following command.
 
@@ -86,19 +86,16 @@ To specify the `ngcc` package in the `package.json` file, add the `-ngcc` suffix
 
 ## Adding CSS Reference
 
-Import the required CSS theme files for the Ribbon component and its dependencies into your `styles.css` file.
+To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
+
+```bash
+npm install @syncfusion/ej2-tailwind3-theme --save
+```
+
+To render the Ribbon component, add the below import in the [src/styles.css] file which loads all the required dependency styles, as shown below:
 
 ```css
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css'; 
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';    
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import "../node_modules/@syncfusion/ej2-ribbon/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-angular-ribbon/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/ribbon/index.css";
 ```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Ribbon component
@@ -246,8 +243,8 @@ The following example illustrates how tabs, groups, collections, and items are u
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/ribbon/getting-started-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/getting-started-cs1/src/app.component.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/ribbon/getting-started-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   

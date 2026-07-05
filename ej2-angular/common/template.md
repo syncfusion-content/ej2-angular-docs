@@ -32,19 +32,25 @@ ng add @syncfusion/ej2-angular-grids
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles
 
-To import styles for specific components, add only what you need:
+To import styles for specific components, you need to install the required [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package. use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% highlight bash tabtitle="yarn" %}
+
+yarn add @syncfusion/@syncfusion/ej2-material3-theme
+
+{% endhighlight %}
+{% endtabs %}
+
+The required styles for the Grid component are imported as shown below:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 ```
 
 Let's explore how templates enhance the Grid component with a custom template:

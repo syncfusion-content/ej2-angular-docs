@@ -22,25 +22,53 @@ Icons are available through two main methods:
 
 ### Using the npm Package
 
-The icon styles are bundled in the [@syncfusion/ej2-icons](https://www.npmjs.com/package/@syncfusion/ej2-icons) package.
+Syncfusion theme icons are distributed in the [@syncfusion/ej2-icons](https://www.npmjs.com/package/@syncfusion/ej2-icons) package and as well as through all theme packages such as [@syncfusion/ej2-material3-theme](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) available on npm. These packages include CSS/SCSS files for all supported themes.
 
 1. Install the package:
 
-```bash
-npm install @syncfusion/ej2-icons
-```
+{% tabs %}
+{% highlight bash tabtitle="Theme Package" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% highlight bash tabtitle="Icon Package" %}
+
+npm install @syncfusion/ej2-icons --save
+
+{% endhighlight %}
+{% endtabs %}
 
 2. Import the desired theme's icon CSS in your global styles file (`src/styles.scss` or `src/styles.css`):
 
-```css
+{% tabs %}
+{% highlight css tabtitle="Theme Package" %}
+
+@import "../node_modules/@syncfusion/ej2-<theme-name>-theme/styles/icons/<theme_name>.css";
+
+{% endhighlight %}
+{% highlight css tabtitle="Icon Package" %}
+
 @import "../node_modules/@syncfusion/ej2-icons/styles/<theme_name>.css";
-```
+
+{% endhighlight %}
+{% endtabs %}
+
 
 **Example:**
 
-```css
+{% tabs %}
+{% highlight css tabtitle="Theme Package" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/icons/material3.css";
+
+{% endhighlight %}
+{% highlight css tabtitle="Icon Package" %}
+
 @import "../node_modules/@syncfusion/ej2-icons/styles/material3.css";
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Supported themes include:** material3, bootstrap5, fluent2, tailwind3, highcontrast, etc.
 

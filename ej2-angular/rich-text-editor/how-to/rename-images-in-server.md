@@ -8,66 +8,19 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Rename images in server in Angular Rich text editor component
+# Rename Images on the Server in the Angular Rich Text Editor Component
 
-By using the [`insertImageSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#imageSettings) property, you can specify the server handler to upload the selected image. Then, you can bind the [`imageUploadSuccess`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSuccessEventArgs/#imageSuccessEventArgs) event, to receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
+By using the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSettings/#imageSettings) property, you can specify the server handler that uploads the selected image. Then, by binding the [imageUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imageSuccessEventArgs/#imageSuccessEventArgs) event, you can receive the renamed file from the server and update it in the Rich Text Editor’s insert image dialog.
 
-```HTML
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/how-to/rename-image/src/app.component.ts %}
+{% endhighlight %}
 
-<ejs-richtexteditor id='defaultRTE' #sample [insertImageSettings]='insertImageSettings' [toolbarSettings]='toolbarSettings' (imageUploadSuccess)='onImageUploadSuccess($event)'>
-    <ng-template #valueTemplate>
-    <p>The Rich Text Editor triggers events based on its actions. </p>
-    <p> The events can be used as an extension point to perform custom operations.</p>
-    <ul>
-      <li>created - Triggers when the component is rendered.</li>
-      <li>change - Triggers only when Rich Text Editor is blurred and changes are done to the content.</li>
-      <li>focus - Triggers when Rich Text Editor is focused in.</li>
-      <li>blur - Triggers when Rich Text Editor is focused out.</li>
-      <li>actionBegin - Triggers before command execution using toolbar items or executeCommand method.</li>
-      <li>actionComplete - Triggers after command execution using toolbar items or executeCommand method.</li>
-      <li>destroyed – Triggers when the component is destroyed.</li>
-    </ul>
-    </ng-template>
-</ejs-richtexteditor>
-
-```
-
-```typescript
-
-import { Component, ViewChild } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent  } from '@syncfusion/ej2-angular-richtexteditor';
-@Component({
-    selector: 'app-root',
-    templateUrl: 'app.compoenent.html',
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService ]
-})
-export class AppComponent  {
-@ViewChild('sample') public rteObj: RichTextEditorComponent;
-
-public toolbarSettings: Object = {
-  items: ['Bold', 'Italic', 'Underline', 'StrikeThrough','|',
-      'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
-      'LowerCase', 'UpperCase', '|',
-      'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
-      'Outdent', 'Indent', '|',
-      'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
-      'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
-};
-public insertImageSettings: object = {
-    saveUrl: "[SERVICE_HOSTED_PATH]/api/uploadbox/Rename",
-    path: "../Images/"
-};
-
-public onImageUploadSuccess = (args: any) => {
-    if (args.e.currentTarget.getResponseHeader('name') != null) {
-        args.file.name = args.e.currentTarget.getResponseHeader('name');
-        let filename: any = document.querySelectorAll(".e-file-name")[0];
-        filename.innerHTML = args.file.name.replace(document.querySelectorAll(".e-file-type")[0].innerHTML, '');
-        filename.title = args.file.name;
-    }
-}
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/how-to/rename-image/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 To configure the server-side handler, refer the below code.
 

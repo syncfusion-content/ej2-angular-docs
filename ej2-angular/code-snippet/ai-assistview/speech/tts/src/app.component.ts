@@ -46,19 +46,18 @@ export class AppComponent {
     itemClicked: this.onToolbarItemClicked.bind(this) };
 
   private stopStreaming: boolean = false;
-  private currentUtterance: SpeechSynthesisUtterance | null = null;
 
   public responseToolbarSettings: ResponseToolbarSettingsModel = {
     items: [
       { type: 'Button', iconCss: 'e-icons e-assist-copy', tooltip: 'Copy' },
-      { type: 'Button', iconCss: 'e-icons e-audio', tooltip: 'Read Aloud' },
+      { type: 'Button', iconCss: 'e-icons e-assist-audio', tooltip: 'Read Aloud' },
       { type: 'Button', iconCss: 'e-icons e-assist-like', tooltip: 'Like' },
       {
         type: 'Button',
         iconCss: 'e-icons e-assist-dislike',
         tooltip: 'Need Improvement' },
     ],
-    itemClicked: this.onResponseToolbarItemClicked.bind(this) };
+ };
 
   public streamResponse = async (response: string) => {
     let lastResponse = '';
@@ -85,58 +84,6 @@ export class AppComponent {
     if (args.item!.iconCss === 'e-icons e-refresh') {
       this.assistViewInstance.prompts = [];
       this.stopStreaming = true; // Stop any ongoing streaming
-      if (this.currentUtterance) {
-        speechSynthesis.cancel();
-        this.currentUtterance = null;
-      }
-    }
-  }
-
-  public onResponseToolbarItemClicked(args: ToolbarItemClickedEventArgs): void {
-    const responseHtml = this.assistViewInstance.prompts[args.dataIndex as any].response;
-
-    if (responseHtml) {
-      const tempDiv = document.createElement('div');
-      tempDiv.innerHTML = responseHtml;
-      // Extract text content safely
-      const text = (tempDiv.textContent || tempDiv.innerText || '').trim();
-
-      if (
-        args.item!.iconCss === 'e-icons e-audio' ||
-        args.item!.iconCss === 'e-icons e-assist-stop'
-      ) {
-        // Ensure assistViewInstance and its properties are available
-        const audioButton = this.assistViewInstance.responseToolbarSettings
-          .items?.[1];
-
-        if (audioButton) {
-          if (this.currentUtterance) {
-            speechSynthesis.cancel();
-            this.currentUtterance = null;
-            // Reset icon and tooltip to 'Read Aloud'
-            audioButton.iconCss = 'e-icons e-audio';
-            audioButton.tooltip = 'Read Aloud';
-          } else {
-            // Create a new speech synthesis utterance with the extracted text
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.onend = () => {
-              this.currentUtterance = null;
-              // Update icon and tooltip back to 'Read Aloud' when speaking ends
-              if (this.assistViewInstance.responseToolbarSettings.items?.[1]) {
-                this.assistViewInstance.responseToolbarSettings.items[1]!.iconCss = 'e-icons e-audio';
-                this.assistViewInstance.responseToolbarSettings.items[1].tooltip =
-                  'Read Aloud';
-              }
-            };
-            // Start speaking the text
-            speechSynthesis.speak(utterance);
-            this.currentUtterance = utterance;
-            // Update icon and tooltip to indicate 'Stop' option
-            audioButton.iconCss = 'e-icons e-assist-stop';
-            audioButton.tooltip = 'Stop';
-          }
-        }
-      }
     }
   }
 
@@ -190,14 +137,5 @@ export class AppComponent {
 
   public handleStopResponse(): void {
     this.stopStreaming = true;
-    if (this.currentUtterance) {
-      speechSynthesis.cancel();
-      this.currentUtterance = null;
-      const audioButton = this.assistViewInstance.responseToolbarSettings.items?.[1];
-      if (audioButton) {
-        audioButton.iconCss = 'e-icons e-audio';
-        audioButton.tooltip = 'Read Aloud';
-      }
-    }
   }
 }

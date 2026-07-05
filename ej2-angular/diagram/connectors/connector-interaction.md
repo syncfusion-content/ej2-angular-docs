@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connector Interaction in Angular Diagram Component
 
-Connectors in the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component support various interaction capabilities including selection, dragging, endpoint manipulation, segment editing, and flipping operations. These interactions enable users to dynamically modify connector behavior and appearance within the diagram.
+Connectors in the Angular Diagram component support various interaction capabilities including selection, dragging, endpoint manipulation, segment editing, and flipping operations. These interactions enable users to dynamically modify connector behavior and appearance within the diagram.
 
 ## Select and unselect connector
 
@@ -74,7 +74,7 @@ The following code example demonstrates how to drag connector end points at runt
 
 ## Segment editing
 
-The diagram allows editing of individual connector segments at runtime. To enable this feature, activate the [`DragSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorconstraints) constraint for the connector.
+The diagram allows editing of individual connector segments at runtime. To enable this feature, activate the [`DragSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints) constraint for the connector.
 
 ```typescript
 connector.constraints = 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customizing layout in Angular Diagram control
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides extensive customization options for automatic layouts, allowing developers to control orientation, spacing, alignment, bounds, and visual behavior. These properties enable fine-tuned positioning and appearance of nodes within hierarchical, organizational, and tree-based diagrams.
+The Angular Diagram component provides extensive customization options for automatic layouts, allowing developers to control orientation, spacing, alignment, bounds, and visual behavior. These properties enable fine-tuned positioning and appearance of nodes within hierarchical, organizational, and tree-based diagrams.
 
 To explore all available layout properties, refer to [`Layout Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#properties).
 
@@ -33,11 +33,11 @@ The following example shows how to align the layout within specified layout boun
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/layout-bounds-cs1" %}
 
-For more information about bounds configuration, refer to [`bounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutmodel#bounds).
+For more information about bounds configuration, refer to [`bounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#bounds).
 
 ## Layout alignment
 
-The layout can be positioned anywhere within the layout bounds using the [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutmodel#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutmodel#verticalalignment) properties. These properties determine how the layout is positioned relative to its container.
+The layout can be positioned anywhere within the layout bounds using the [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#verticalalignment) properties. These properties determine how the layout is positioned relative to its container.
 
 Available alignment options include Left, Right, Center for horizontal alignment, and Top, Bottom, Center for vertical alignment. These settings work independently, allowing for precise positioning control.
 
@@ -57,7 +57,7 @@ The following code illustrates how to configure layout alignment and modify alig
 
 ## Layout spacing
 
-Layout spacing controls the distance between nodes in the layout. The [`horizontalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutmodel#horizontalspacing) and [`verticalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutmodel#verticalspacing) properties define the gaps between nodes horizontally and vertically respectively.
+Layout spacing controls the distance between nodes in the layout. The [`horizontalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#horizontalspacing) and [`verticalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#verticalspacing) properties define the gaps between nodes horizontally and vertically respectively.
 
 Proper spacing ensures visual clarity and prevents node overlap. Spacing values are measured in pixels and can be adjusted based on node sizes and content density requirements.
 
@@ -126,7 +126,7 @@ The following code demonstrates how to set the initial orientation for the layou
 
 ## Exclude from layout
 
-In certain scenarios, specific nodes may need manual positioning rather than automatic arrangement by the layout algorithm. These nodes can be excluded from layout calculations by setting the [`excludeFromLayout`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodemodel#excludefromlayout) property to true.
+In certain scenarios, specific nodes may need manual positioning rather than automatic arrangement by the layout algorithm. These nodes can be excluded from layout calculations by setting the [`excludeFromLayout`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel#excludefromlayout) property to true.
 
 This feature is useful for annotation nodes, floating panels, or special elements that require fixed positioning regardless of the overall layout structure.
 
@@ -146,7 +146,7 @@ The following code example demonstrates how to exclude a node from the layout an
 
 ## Fixed node
 
-Layout arrangement can be anchored relative to a specific node by setting the [`fixedNode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutmodel#fixednode) property. This ensures that the specified node maintains its position while other nodes are arranged around it.
+Layout arrangement can be anchored relative to a specific node by setting the [`fixedNode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#fixednode) property. This ensures that the specified node maintains its position while other nodes are arranged around it.
 
 This feature is particularly beneficial during expand/collapse operations, where maintaining the position of the interacted node provides better user experience and visual stability.
 
@@ -186,7 +186,7 @@ For more details about customizing the expand and collapse icons refer [`expand 
 
 ## Layout animation
 
-Expand and collapse operations can be animated by applying transitions during layout changes. The [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutmodel#enableanimation) property controls this behavior, enhancing the visual experience during structural changes.
+Expand and collapse operations can be animated by applying transitions during layout changes. The [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#enableanimation) property controls this behavior, enhancing the visual experience during structural changes.
 
 Animation provides visual continuity and helps users track changes in the layout structure. By default, `enableAnimation` is set to true.
 
@@ -232,9 +232,9 @@ The following code example creates parent-child relationships between source and
 
 The [`setNodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram#setnodetemplate) function enables comprehensive customization of node visual representation and behavior within diagrams. This function is invoked during node initialization, allowing developers to define styling, properties, and data binding for each node.
 
-The function typically accepts container elements such as StackPanel or Grid to organize visual components within nodes. The [`StackPanel`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackpanel) can contain various elements including [`ImageElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imageelement), [`PathElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathelement), [`NativeElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramnativeelement), [`DiagramElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramelement), and [`HtmlElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramhtmlelement).
+The function typically accepts container elements such as StackPanel or Grid to organize visual components within nodes. The [`StackPanel`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel) can contain various elements including [`ImageElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imageElement), [`PathElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathElement), [`NativeElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramNativeElement), [`DiagramElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramElement), and [`HtmlElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramHtmlElement).
 
-Additional customization options include [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackpanel#cornerradius) for rounded appearances, [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackpanel#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackpanel#verticalalignment) for positioning control, and [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackpanel#orientation) for child element arrangement.
+Additional customization options include [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel#cornerradius) for rounded appearances, [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel#verticalalignment) for positioning control, and [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel#orientation) for child element arrangement.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

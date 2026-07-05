@@ -19,7 +19,7 @@ The AI Assistant feature introduces two toolbar items: **AICommands** and **AIQu
 To enable the AI Assistant:
 
 1. Add the `AIAssistantService` to the **providers** section.
-2. Include `AICommands` and `AIQuery` in the `toolbarSettings.items` property.
+2. Include `AICommands` and `AIQuery` in the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
 ## Importing Styles
 
@@ -43,7 +43,6 @@ Add the following style references to the **src/styles.css** file:
 @import '../node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
 ```
-
 Once these styles are included, the **AI Assistant** will render as expected.
 
 ## Accessing the AI Assistant Popup
@@ -62,11 +61,11 @@ The AI Assistant interface can be opened through the following options:
 
 ## Request and Response Handling
 
-Executing a prompt triggers the `aiAssistantPromptRequest` event. This event provides the selected text and the prompt, which can be combined and forwarded to an AI provider or backend service.
+Executing a prompt triggers the [aiAssistantPromptRequest](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#aiassistantpromptrequest) event. This event provides the selected text and the prompt, which can be combined and forwarded to an AI provider or backend service.
 
-Once a response is received either as a stream or as a single output it can be added to the AssistView using the `addAIPromptResponse` method.
+Once a response is received either as a stream or as a single output it can be added to the AssistView using the [addAIPromptResponse](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#addaipromptresponse) method.
 
-If the *Stop Responding* button is clicked, the `aiAssistantStopRespondingClick` event is raised to cancel the streaming operation.
+If the *Stop Responding* button is clicked, the [aiAssistantStopRespondingClick](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#aiassistantstoprespondingclick) event is raised to cancel the streaming operation.
 
 > The `addAIPromptResponse` method converts the provided Markdown response into HTML using the `@syncfusion/ej2-markdown-converter` package.
 

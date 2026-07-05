@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Pie Chart
 
-To render a pie series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel/#type) as `Pie` and inject the `PieSeriesService` module  into the `@NgModule.providers`. If the `PieSeries` module is not injected, this module will be loaded by default.
+To render a pie series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel#type) as `Pie` and inject the `PieSeriesService` module  into the `@NgModule.providers`. If the `PieSeries` module is not injected, this module will be loaded by default.
 
 To known about circular and triangular charts, you can check on this video:
 
@@ -33,7 +33,7 @@ To known about circular and triangular charts, you can check on this video:
 ## Radius Customization
 
 By default, radius of the pie series will be 80% of the size (minimum of chart width and height).
-You can customize this using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#radius) property of the series.
+You can customize this using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#radius) property of the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +49,7 @@ You can customize this using [`radius`](https://ej2.syncfusion.com/angular/docum
 
 ## Pie Center
 
-The center position of the pie can be changed by Center X and Center Y. By default, center value of the pie series x and y is 50%. You can customize this using [`center`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel/#center) property of the series.
+The center position of the pie can be changed by Center X and Center Y. By default, center value of the pie series x and y is 50%. You can customize this using [`center`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel#center) property of the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,7 +65,7 @@ The center position of the pie can be changed by Center X and Center Y. By defau
 
 ## Various Radius Pie Chart
 
-You can use radius mapping to render the slice with different [`radius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#radius) pie and also use [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#border) , fill properties to customize the point. dataLabel is used to represent individual data and its value.
+You can use radius mapping to render the slice with different [`radius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#radius) pie and also use [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#border) , fill properties to customize the point. dataLabel is used to represent individual data and its value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,7 +81,7 @@ You can use radius mapping to render the slice with different [`radius`](https:/
 
 ## Doughnut Chart
 
-To achieve a doughnut in pie series, customize the [`innerRadius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#innerradius) property of the series. By setting value greater than 0%, a doughnut will appear. The `innerRadius` property takes value from 0% to 100% of the pie radius.
+To achieve a doughnut in pie series, customize the [`innerRadius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#innerradius) property of the series. By setting value greater than 0%, a doughnut will appear. The `innerRadius` property takes value from 0% to 100% of the pie radius.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,9 +95,25 @@ To achieve a doughnut in pie series, customize the [`innerRadius`](https://ej2.s
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs23" %}
 
+## Multiple Donut
+
+You can create multiple donuts within a single chart by adding multiple series with different [`innerRadius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#innerradius) values. This allows you to compare multiple data sets with the same categories. Each series can have different data, colors, and customizations. You can also use the [`mappingKey`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/legendsettingsmodel#mappingkey) property in `legendSettings` to map the legend items based on the specified field from the data source. When set, points with matching `mappingKey` values are grouped into a single legend item.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/pie-cs49/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/pie-cs49/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/pie-cs49" %}
+
 ## Start and End angles
 
-You can customize the start and end angle of the pie series using the [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#startangle) and [`endAngle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#endangle) properties. The default value of  `startAngle` is 0 degree, and `endAngle` is 360 degrees. By customizing this, you can achieve a semi pie series.
+You can customize the start and end angle of the pie series using the [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#startangle) and [`endAngle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#endangle) properties. The default value of  `startAngle` is 0 degree, and `endAngle` is 360 degrees. By customizing this, you can achieve a semi pie series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -129,7 +145,7 @@ The fill color and the text in the data source can be mapped to the chart using 
 
 ## Border Radius
 
-You can create rounded corners for each slice by using the [`borderRadius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel/#borderradius) option, which gives the chart a modern and polished appearance.
+You can create rounded corners for each slice by using the [`borderRadius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel#borderradius) option, which gives the chart a modern and polished appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -161,7 +177,7 @@ By default, the border will appear in the pie/doughnut chart while mouse hover o
 
 ## Patterns
 
-You can apply different patterns to the pie slices using the [`applyPattern`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel/#applypattern) property in the series and the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/iAccPointRenderEventArgs/) event.
+You can apply different patterns to the pie slices using the [`applyPattern`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel#applypattern) property in the series and the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/index-default#pointrender) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,9 +193,9 @@ You can apply different patterns to the pie slices using the [`applyPattern`](ht
 
 ## Multi-level pie chart
 
-You can achieve a multi-level drill down in pie and doughnut charts using [pointClick](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel/#pointclick) event. If user clicks any point in the chart, that corresponding data will be shown in the next level and so on based on point clicked.
+You can achieve a multi-level drill down in pie and doughnut charts using [pointClick](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel#pointclick) event. If user clicks any point in the chart, that corresponding data will be shown in the next level and so on based on point clicked.
 
-You can also achieve drill-up (back to the initial state) by using [chartMouseClick](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel/#chartmouseclick) event. In below sample, you can drill-up by clicking back button in the center of the chart.
+You can also achieve drill-up (back to the initial state) by using [chartMouseClick](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel#chartmouseclick) event. In below sample, you can drill-up by clicking back button in the center of the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

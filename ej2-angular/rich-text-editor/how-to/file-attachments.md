@@ -8,66 +8,26 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Managing File Attachments in Angular Rich Text Editor Component
+# Managing File Attachments in the Angular Rich Text Editor Component
 
-The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
+The Rich Text Editor allows you to attach files through the file upload feature. You can upload files either by selecting them via the file upload dialog or by dragging and dropping them from your local system. When the file upload succeeds, the editor automatically inserts an attachment link into the content.
 
-In the below sample, configure the saveUrl and path properties to achieve file attachments.
+In the example below, configure the saveUrl and path properties to enable file attachments:
 
-        1. saveUrl: Specifies the service URL where files will be saved.
-        2. path: Defines the location where uploaded files will be stored.
+1. saveUrl: Specifies the server endpoint where uploaded files will be saved.
+2. path: Defines the location on the server where the uploaded files will be stored.
 
-The following sample illustrates how to attach a file in the Rich Text Editor.
+The following sample demonstrates how to attach a file in the Rich Text Editor.
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/how-to/file-attachments/src/app.component.ts %}
+{% endhighlight %}
 
-import { Component, ViewChild } from '@angular/core';
-import { FileInfo, SuccessEventArgs, UploaderComponent, UploaderModule } from '@syncfusion/ej2-angular-inputs';
-import { ContentRender, HTMLFormatter, RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, RichTextEditorComponent, NodeSelection } from '@syncfusion/ej2-angular-richtexteditor';
-@Component({
-    imports: [
-        RichTextEditorModule,
-        UploaderModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor id='editor' #sample [insertImageSettings]='insertImageSettings' [(value)]='value'></ejs-richtexteditor>
-    <ejs-uploader #defaultupload id='defaultfileupload' [asyncSettings]='path' [dropArea]='dropElement' (success)='onImageUploadSuccess($event)'></ejs-uploader>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
-})
-export class AppComponent {
-    @ViewChild('sample') public editorObj!: RichTextEditorComponent;
-    @ViewChild('defaultupload') public uploadObj!: UploaderComponent;
-    public value: string = "<p>The Rich Text Editor triggers events based on its actions. </p> <p> The events can be used as an extension point to perform custom operations.</p> <ul><li>created - Triggers when the component is rendered.</li><li>change - Triggers only when Rich Text Editor is blurred and changes are done to the content.</li><li>focus - Triggers when Rich Text Editor is focused in.</li><li>blur - Triggers when Rich Text Editor is focused out.</li><li>actionBegin - Triggers before command execution using toolbar items or executeCommand method.</li><li>actionComplete - Triggers after command execution using toolbar items or executeCommand method.</li><li>destroyed – Triggers when the component is destroyed.</li></ul>";
-    public insertImageSettings: object = {
-        saveUrl: "[SERVICE_HOSTED_PATH]/api/uploadbox/Save",
-        path: "../Files/"
-    };
-
-    public path: Object = {
-        saveUrl: '[SERVICE_HOSTED_PATH]/api/uploadbox/Save',
-    };
-    public dropElement = '#editor'
-    public selection: NodeSelection = new NodeSelection();
-    public range!: Range;
-    public saveSelection!: NodeSelection;
-    public onImageUploadSuccess = (args: SuccessEventArgs) => {
-        ((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLElement).focus();
-        this.range = this.selection.getRange(document);
-        this.saveSelection = this.selection.save(this.range, document);
-        var fileUrl = document.URL + this.editorObj.insertImageSettings.path + (args.file as FileInfo).name;
-        if ((this.editorObj!.formatter as HTMLFormatter).getUndoRedoStack().length === 0) {
-            (this.editorObj!.formatter as HTMLFormatter).saveData();
-        }
-        this.saveSelection.restore();
-        this.editorObj.executeCommand('createLink', { url: fileUrl, text: fileUrl, selection: this.saveSelection });
-        (this.editorObj!.formatter as HTMLFormatter).saveData();
-        (this.editorObj!.formatter as HTMLFormatter).enableUndo(this.editorObj);
-        this.uploadObj.clearAll();
-    }
-}
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/how-to/file-attachments/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 To config server-side handler, refer the below code.
 

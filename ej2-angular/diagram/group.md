@@ -14,7 +14,7 @@ Groups enable developers to cluster multiple nodes and connectors into a single 
 
 ## Create group
 
-A group functions as a container for its children (nodes, groups, and connectors). Every change made to the group affects all children proportionally, while child elements remain individually editable. Groups can contain other groups, creating nested hierarchies for complex [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) structures.
+A group functions as a container for its children (nodes, groups, and connectors). Every change made to the group affects all children proportionally, while child elements remain individually editable. Groups can contain other groups, creating nested hierarchies for complex diagram structures.
 
 ## Add group when initializing diagram
 
@@ -110,7 +110,7 @@ The following code illustrates how a group node is added at runtime:
 
 ### Add collection of group nodes at runtime
 
-The collection of group nodes can be dynamically added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addelements) method. Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/icollectionchangeeventargs) event will be triggered.
+The collection of group nodes can be dynamically added using the [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addelements) method. Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs) event will be triggered.
 
 The following code illustrates how to add group node collections at runtime:
 
@@ -207,7 +207,7 @@ The following example shows how to apply flip transformations to group nodes:
 
 ### Group flip mode
 
-The [`flipMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipmode) property of a group node behaves similarly to that of normal nodes. However, when a flip mode is applied to a group node, it takes precedence over any flip mode set on its child nodes, overriding their individual settings.
+The [`flipMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipMode) property of a group node behaves similarly to that of normal nodes. However, when a flip mode is applied to a group node, it takes precedence over any flip mode set on its child nodes, overriding their individual settings.
 
 **Example of flip mode precedence:**
 In the code below, the `flipMode` for the child node `Node1` is set to `LabelText`, while the `flipMode` for the group node is set to `Label`. The effective `flipMode` for both the child node and the group node will be `Label`, as the group node's `flipMode` overrides the child's setting.
@@ -301,7 +301,7 @@ The stack panel arranges its children in a single line or stack order, either ve
 
 **Stack container characteristics:**
 - Controls spacing using margin properties of child elements and padding properties of the group
-- Default [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackpanel#orientation) is vertical
+- Default [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel#orientation) is vertical
 - Provides consistent alignment and distribution of child elements
 - Ideal for creating organized, sequential layouts
 
@@ -329,7 +329,7 @@ The following code illustrates how to add a stack panel:
 
 ## Group interactions
 
-Group node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to group nodes. For more information, refer to the [node interactions](./nodes-interaction) documentation.
+Group node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to group nodes. For more information, refer to the [node interactions](./nodes/nodes-interaction) documentation.
 
 ### Selecting group nodes
 
@@ -339,11 +339,11 @@ When a child element within a node group is clicked, the entire containing node 
 
 ## Events
 
-The events triggered when interacting with group nodes are similar to those for individual nodes. For more information, refer to the [node events](./nodes-events) documentation.
+The events triggered when interacting with group nodes are similar to those for individual nodes. For more information, refer to the [node events](./nodes/nodes-events) documentation.
 
 ## See Also
 
-* [How to add annotations to the node](./node-labels)
+* [How to add annotations to the node](./labels/node-labels)
 * [How to add ports to the node](./ports)
 * [How to enable/disable the behavior of the node](./constraints)
 * [How to add nodes to the symbol palette](./symbol-palette)

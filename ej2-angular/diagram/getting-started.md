@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Diagram Component
 
-This section explains the steps required to create a simple diagram and demonstrates the basic usage of the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component.
+This section explains the steps required to create a simple diagram and demonstrates the basic usage of the diagram component.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
@@ -60,7 +60,7 @@ Navigate to the project folder:
 cd my-diagram-app
 ```
 
-## Step 3: Install the Angular Diagram package
+## Step 3: Install the Syncfusion® Angular Diagram package
 
 All Syncfusion Essential® JS 2 packages are available in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
 
@@ -233,5 +233,3 @@ npm start
 Open the generated local URL in the browser. The application displays the diagram as shown below:
 
  ![Getting started](./images/Getting-started.png)
-
-N> Looking for the full Angular Diagram component overview, features, pricing, and documentation? Visit the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) page.

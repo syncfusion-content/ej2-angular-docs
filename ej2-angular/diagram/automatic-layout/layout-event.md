@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Layout events in Angular Diagram control
 
-Layout events in the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provide developers with hooks to respond to various stages of automatic layout processing. These events are particularly useful when working with hierarchical data structures and need to customize behavior during layout rendering, data loading, or node expansion/collapse operations.
+Layout events in the Angular Diagram component provide developers with hooks to respond to various stages of automatic layout processing. These events are particularly useful when working with hierarchical data structures and need to customize behavior during layout rendering, data loading, or node expansion/collapse operations.
 
 The diagram component supports several layout-specific events that fire during different phases of the layout life cycle, enabling fine-grained control over layout behavior and user interactions.
 
@@ -43,7 +43,7 @@ export class AppComponent {
 
 ## ExpandStateChange event
 
-The [`expandStateChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iexpandstatechangeeventargs) event fires when a user clicks the expand or collapse icon of a node in a hierarchical layout. This event occurs before the layout update begins, allowing developers to prevent the state change, modify the expansion behavior, or trigger custom actions based on the node's new state.
+The [`expandStateChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExpandStateChangeEventArgs) event fires when a user clicks the expand or collapse icon of a node in a hierarchical layout. This event occurs before the layout update begins, allowing developers to prevent the state change, modify the expansion behavior, or trigger custom actions based on the node's new state.
 
 The event provides information about the affected node, its current state, and whether the operation can be canceled. This makes it valuable for implementing conditional expansion, loading child data on-demand, or applying custom animations.
 

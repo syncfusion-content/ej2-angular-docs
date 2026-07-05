@@ -1,6 +1,6 @@
 import { enableRipple, L10n } from '@syncfusion/ej2-base';
 import { Component } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 enableRipple(true);
 
 L10n.load({
@@ -216,7 +216,7 @@ L10n.load({
     standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id='editor' locale='de-DE'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, PasteCleanupService]
 })
 export class AppComponent {
 }

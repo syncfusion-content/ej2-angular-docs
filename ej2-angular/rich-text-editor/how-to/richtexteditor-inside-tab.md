@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrating Rich Text Editor in Tab Components
+# Integrating the Angular Rich Text Editor into a Tab Component
 
-Integrating a Rich Text Editor within Tab components provides a versatile and organized user interface for text formatting and content creation across multiple tabs.  Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
+Integrating a Rich Text Editor within Tab component provides a versatile and organized user interface for text formatting and content creation across multiple tabs. Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

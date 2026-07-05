@@ -18,63 +18,7 @@ By default, column headers in the Gantt chart display the value defined in the [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { GanttData } from './data';
-
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [GanttModule],
-  template: `<ejs-gantt height="370px" [dataSource]="data" [splitterSettings]="splitterSettings" [taskFields]="taskSettings">
-    <e-columns>
-        <e-column field="TaskName" width="290">
-            <ng-template #headerTemplate let-column>
-                {{ column.headerText }}
-                <div>
-                    <img src="assets/images/TaskName.png" width="20" height="20" />
-                </div>
-            </ng-template>
-        </e-column>
-        <e-column field="StartDate" headerText="Start Date" width="390" format="yMd" textAlign="Right">
-        </e-column>
-        <e-column field="Duration" headerText="Duration" width="120" textAlign="Right">
-            <ng-template #headerTemplate let-column>
-                {{ column.headerText }}
-                <div>
-                    <img src="assets/images/Duration.png" width="20" height="20">
-                </div>
-            </ng-template>
-        </e-column>
-        <e-column field="Progress" headerText="Progress" width="120" textAlign="Right">
-        </e-column>
-    </e-columns>
-</ejs-gantt>`,
-  encapsulation: ViewEncapsulation.None
-})
-
-export class AppComponent implements OnInit {
-  public data?: object[];
-  public taskSettings?: object;
-  public splitterSettings?: object;
-
-  ngOnInit(): void {
-    this.data = GanttData;
-    this.taskSettings = {
-      id: 'TaskID',
-      name: 'TaskName',
-      startDate: 'StartDate',
-      duration: 'Duration',
-      progress: 'Progress',
-      child: 'subtasks'
-    };
-    this.splitterSettings = {
-      position: '75%'
-    };
-  }
-}
-{% endraw %}
+{% include code-snippet/gantt/columns/columnheader-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -171,42 +115,6 @@ The wrapping behavior is defined using the `textWrapSettings.wrapMode` property 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnheader-cs6" %}
-
-## Adjust header height
-
-To customize the Gantt header height for displaying full content such as long text or images, apply changes using CSS or dynamic method.
-
-**Using css:**
-
-You can override the default height by targeting **.e-gantt .e-headercell**:
-
-```css
-.e-gantt .e-headercell {
-  height: 130px;
-}
-```
-
-**Using method:**
-
-To change the height dynamically, use the `getHeaderContent` method to access the header, then loop through each **.e-headercell** and set the desired height.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs4/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs4/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs4/src/data.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/columns/columnheader-cs4" %}
-
->* You can also use the `getHeaderTable` method of `treeGrid` object in gantt instance to get the table element of the header, and then adjust the height.
 
 ## Update header text dynamically
 

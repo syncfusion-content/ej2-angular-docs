@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD010 -->
 
-The commands in [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component are used to perform various interactions within the diagram . Several commands are available in the diagram, as follows:
+The commands in diagram component are used to perform various interactions within the diagram . Several commands are available in the diagram, as follows:
 
 * Alignment commands
 * Distribute commands
@@ -31,7 +31,7 @@ The alignment command enables you to align selected or defined objects, such as 
 
 ### Alignment Options
 
-The [`Alignment Options`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentoptions) defines the alignment position of objects to be aligned.
+The [`Alignment Options`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentOptions) defines the alignment position of objects to be aligned.
 
 |Alignment|Description|
 |----|----|
@@ -50,7 +50,7 @@ Defines the objects to be aligned. This is an optional parameter. By default, al
 
 ### Alignment Mode
 
-[`Alignment Mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentmode) defines the specific mode with respect to which the objects are aligned. This is an optional parameter. The default alignment mode is `Object`. The accepted values of the argument "alignment mode" are as follows.
+[`Alignment Mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentMode) defines the specific mode with respect to which the objects are aligned. This is an optional parameter. The default alignment mode is `Object`. The accepted values of the argument "alignment mode" are as follows.
 
 The table below shows the alignment as `Left` for different alignment modes.
 
@@ -81,7 +81,7 @@ The [`distribute`](https://ej2.syncfusion.com/angular/documentation/api/diagram#
 
 ### Distribute Options
 
-The factors for distributing shapes using [`DistributeOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/distributeoptions#distributeoptions) are listed as follows:
+The factors for distributing shapes using [`DistributeOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/distributeOptions#distributeoptions) are listed as follows:
 
 |Distribute option| Description|
 |----|----|
@@ -120,7 +120,7 @@ The [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sa
 
 ### Sizing Options
 
-[`SizingOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/sizingoptions) include:
+[`SizingOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/sizingOptions) include:
 
 |Sizing options|Description|
 |----|----|
@@ -290,7 +290,7 @@ The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagra
   
 {% previewsample "page.domainurl/samples/diagram/commands/sendbackward-cs1" %}
 
-The Z-order commands can also be performed using keyboard shortcuts. For more information, refer to the [`keyboard commands`](./interaction#keyboard).
+The Z-order commands can also be performed using keyboard shortcuts. For more information, refer to the [`keyboard commands`](./interaction#keyboard-shortcuts).
 
 ## Zoom Commands
 
@@ -328,7 +328,7 @@ The [`nudge`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nudge
 
 | Parameter    | Type           | Description                                                      |
 |--------------|-----------|-----------|
-| direction    |[`NudgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nudgedirection) | Defines the direction in which the objects should be moved.      |
+| direction    |[`NudgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nudgeDirection) | Defines the direction in which the objects should be moved.      |
 | x (optional) | number         | The horizontal distance by which the selected objects should be moved. |
 | y (optional) | number         | The vertical distance by which the selected objects should be moved.   |
 | type (optional) | string      | A string that defines the type of nudge action.                           |
@@ -406,7 +406,7 @@ The following code illustrates how to execute the `bringToCenter` command.
 
 ## FitToPage Commands
 
-The [`fitToPage`](https://ej2.syncfusion.com/angular/documentation/api/diagram#fittopage) command helps to fit the diagram content into the view with respect to either width, height, or the entire content. The fitToPage method takes one parameter, [`IFitOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/ifitoptions), which specifies the options for fitting the diagram to the page.
+The [`fitToPage`](https://ej2.syncfusion.com/angular/documentation/api/diagram#fittopage) command helps to fit the diagram content into the view with respect to either width, height, or the entire content. The fitToPage method takes one parameter, [`IFitOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions), which specifies the options for fitting the diagram to the page.
 
 ### Fit Options
 
@@ -414,13 +414,13 @@ The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/fitMod
 
 The [`region`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRegions#region) parameter defines the region that has to be drawn as an image.
 
-The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/ifitoptions#margin) parameter defines the region/bounds of the diagram content that is to be fit into the view.
+The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#margin) parameter defines the region/bounds of the diagram content that is to be fit into the view.
 
-The [`canZoomIn`](https://ej2.syncfusion.com/angular/documentation/api/diagram/ifitoptions#canzoomin) parameter enables/disables zooming to fit the smaller content into a larger viewport.
+The [`canZoomIn`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#canzoomin) parameter enables/disables zooming to fit the smaller content into a larger viewport.
 
-The [`canZoomOut`](https://ej2.syncfusion.com/angular/documentation/api/diagram/ifitoptions#canzoomout) parameter enables or disables zooming out to fit larger content into a smaller viewport.
+The [`canZoomOut`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#canzoomout) parameter enables or disables zooming out to fit larger content into a smaller viewport.
 
-The [`customBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/ifitoptions#custombounds) parameter defines the custom region that has to be fit into the viewport.
+The [`customBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#custombounds) parameter defines the custom region that has to be fit into the viewport.
 
 The following code illustrates how to execute the `FitToPage` command.
 
@@ -446,7 +446,7 @@ To define a custom command, you need to specify the following properties:
 
 * [`execute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#execute): A method to be executed.
 * [`canExecute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#canexecute): A method to define whether the command can be executed at the moment.
-* [`gesture`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keyGestureModel#gesture): A combination of [`Keys`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keys#key) and [`KeyModifiers`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keyModifiers#keymodifiers).
+* [`gesture`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#gesture): A combination of [`Keys`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keys#key) and [`KeyModifiers`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keyModifiers#keymodifiers).
 * [`parameter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#parameter): Defines any additional parameters that are required at runtime.
 * [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#name): Defines the name of the command.
 

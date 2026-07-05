@@ -13,9 +13,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-diagrams
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-popups
-SEE LICENSE IN license
-
 @syncfusion/ej2-base
 SEE LICENSE IN license
 

@@ -34,6 +34,25 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components include a
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
 
+## Theme packages
+
+Syncfusion built-in themes are distributed as theme packages available on npm. These packages include CSS/SCSS files for all components. The following table lists all available theme packages:
+
+| Theme | Light Package | Dark Package |
+|-------|---------------|---------------|
+| Tailwind 3 | [`@syncfusion/ej2-tailwind3-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) | [`@syncfusion/ej2-tailwind3-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-dark-theme) |
+| Bootstrap 5.3 | [`@syncfusion/ej2-bootstrap5.3-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-theme) | [`@syncfusion/ej2-bootstrap5.3-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5.3-dark-theme) |
+| Fluent 2 | [`@syncfusion/ej2-fluent2-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) | [`@syncfusion/ej2-fluent2-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-dark-theme) |
+| Material 3 | [`@syncfusion/ej2-material3-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) | [`@syncfusion/ej2-material3-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material3-dark-theme) |
+| Bootstrap 5 | [`@syncfusion/ej2-bootstrap5-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5-theme) | [`@syncfusion/ej2-bootstrap5-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap5-dark-theme) |
+| Bootstrap 4 | [`@syncfusion/ej2-bootstrap4-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap4-theme) | - |
+| Bootstrap | [`@syncfusion/ej2-bootstrap-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap-theme) | [`@syncfusion/ej2-bootstrap-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-bootstrap-dark-theme) |
+| Material | [`@syncfusion/ej2-material-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material-theme) | [`@syncfusion/ej2-material-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material-dark-theme) |
+| Tailwind | [`@syncfusion/ej2-tailwind-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind-theme) | [`@syncfusion/ej2-tailwind-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind-dark-theme) |
+| Fluent | [`@syncfusion/ej2-fluent-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fluent-theme) | [`@syncfusion/ej2-fluent-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fluent-dark-theme) |
+| Fabric | [`@syncfusion/ej2-fabric-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fabric-theme) | [`@syncfusion/ej2-fabric-dark-theme`](https://www.npmjs.com/package/@syncfusion/ej2-fabric-dark-theme) |
+| High Contrast | [`@syncfusion/ej2-highcontrast-theme`](https://www.npmjs.com/package/@syncfusion/ej2-highcontrast-theme) | - |
+
 ## Optimized CSS Files
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> components provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, granting a standard look suitable for all devices. The **bigger size mode** enhances interactions, visibility, and user experience by enlarging UI components.
@@ -52,18 +71,18 @@ Refer to the comparison for theme file sizes:
 | -- | -- | -- |
 | Fluent 2 | 3.97 MB | 2.96 MB |
 
-## Installation
+## Reference themes in the Angular application
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI themes can be included in your application by four different methods:
 
 ### Install via NPM
 
-Themes come as both individual and combined CSS files. Use the `@syncfusion/ej2` npm package for combined CSS files, with individual files stored in the component repository’s `style` folder. Both CSS and SCSS files are provided in ej2 npm packages.
+Themes are shipped as both combined and individual CSS/SCSS files. Each theme package includes combined and component-specific styles in both CSS and SCSS formats. For a list of available theme packages, refer to the [available theme packages](#theme-packages) section.
 
-To install combined CSS files, run:
+To use the combined SCSS/CSS files, install the required theme package. 
 
 ```bash
- npm install @syncfusion/ej2
+npm install @syncfusion/ej2-material3-theme
 ```
 
 ### CDN Direct Referral
@@ -119,58 +138,76 @@ Precompiled signifies minified and optimized CSS.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI theme includes a precompiled CSS file encompassing styles for all Syncfusion<sup style="font-size:70%">&reg;</sup> components.
 
+**Referring all components CSS**
+
 ```css
-@import "./node_modules/@syncfusion/ej2/<theme_name>.css";
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>.css";
 ```
 
-To refer to all components SCSS:
+**Example:**
 
-```scss
-@import "ej2/<theme_name>.scss";
+```css
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
 ```
 
-Individual themes are obtainable from [individual package](#anatomy-of-npm-packages) or ej2 package.
-
-To refer to an individual component from an individual package:
+**Referring all components SCSS**
 
 ```scss
-@import "ej2-buttons/button/<theme_name>.scss";
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>.scss" as *;
+```
+
+**Example:**
+
+```scss
+@use "@syncfusion/ej2-material3-theme/styles/material3.scss" as *;
+```
+
+You can reference individual component themes from the unified theme package. In this package, each component includes an `index.css/index.scss` files that automatically loads all the required dependency styles.
+
+```css
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index.css";
+```
+
+**Example:**
+
+```css
+@import "@syncfusion/ej2-material3-theme/styles/grid/index.css";
 ```
 
 #### Referring All Components Optimized CSS File
 
-For optimized CSS files from the `@syncfusion/ej2` package:
+To reference optimized (lite) versions of all component styles using theme packages.
 
 ```css
-@import "@syncfusion/ej2/<theme_name>-lite.css";
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>-lite.css";
 /* or */
-@import "@syncfusion/ej2/<theme_name>-lite.scss";
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>-lite.scss" as *;
 ```
 
 **Example:**
 
 ```css
-@import "@syncfusion/ej2/fluent2-lite.css";
+@import "@syncfusion/ej2-fluent2-theme/styles/fluent2-lite.css";
 /* or */
-@import "@syncfusion/ej2/fluent2-lite.scss";
+@use "@syncfusion/ej2-fluent2-theme/styles/fluent2-lite.scss" as *;
 ```
 
 #### Referring Individual Component Optimized CSS File
 
-For individual component's optimized CSS from individual packages:
+For individual component's optimized CSS from theme packages:
 
 ```css
-@import "<dependent-package>/styles/<theme_name>-lite.css";
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index-lite.css";
 /* or */
-@import "<dependent-package>/styles/<theme_name>-lite.scss";
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index-lite.scss" as *;
 ```
 
 **Example:**
 
 ```css
-@import "@syncfusion/ej2-buttons/styles/fluent2-lite.css";
+@import "@syncfusion/ej2-fluent2-theme/styles/grid/index-lite.css";
 /* or */
-@import "@syncfusion/ej2-buttons/styles/fluent2-lite.scss";
+@use "@syncfusion/ej2-fluent2-theme/styles/grid/index-lite.scss" as *;
 ```
 
 #### Advantages of Individual Components Theme

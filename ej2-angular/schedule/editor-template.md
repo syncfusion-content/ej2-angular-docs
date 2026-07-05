@@ -40,7 +40,7 @@ You can modify the header title and the text of the footer buttons in the editor
 
 ### How to change the label text of default editor fields
 
-To change the default labels such as "Subject," "Location," and other field names, use the `title` property within the field option of [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings).
+To change the default labels such as "Subject," "Location," and other field names, use the `title` property within the field option of [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule#eventSettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -192,7 +192,7 @@ export class AppComponent {
 
 ### Customizing timezone collection in the editor window
 
-By default, the editor window displays built-in timezone collections. You can customize these using the [`timezoneDataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timezonedatasource) property with a collection of [`TimezoneFields`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timezoneFields) data.
+By default, the editor window displays built-in timezone collections. You can customize these using the [`timezoneDataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timezonedatasource) property with a collection of [`TimezoneFields`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timezoneFields) data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

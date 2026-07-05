@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Complex hierarchical tree layout arranges nodes in a tree-like structure where child nodes can have multiple parent nodes, creating interconnected relationships beyond traditional single-parent hierarchies. This layout type is ideal for organizational charts with dotted-line relationships, project dependencies, or any structure where entities report to multiple authorities. This layout extends the standard hierarchical tree layout to support these complex relationships.
 
-To create a complex hierarchical tree, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#type) property of layout to `ComplexHierarchicalTree`.
+To create a complex hierarchical tree, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#type) property of layout to `ComplexHierarchicalTree`.
 ## Complex hierarchical tree layout with nodes and connectors
 
 This example demonstrates how to create a complex hierarchical tree layout by manually defining nodes and connectors. The layout automatically positions nodes based on their hierarchical relationships while handling multiple parent-child connections.
@@ -54,7 +54,7 @@ When working with large datasets, binding the layout to a data source provides b
 
 Line distribution prevents connector overlap by controlling how multiple connectors from a single parent node are positioned. Without line distribution, connectors may overlap and create visual confusion in complex layouts.
 
-The [`connectionPointOrigin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionPointOrigin/#connectionpointorigin) property controls this behavior:
+The [`connectionPointOrigin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectionPointOrigin#connectionpointorigin) property controls this behavior:
 
 - **SamePoint (default)**: All connectors from a parent originate from the same point
 - **DifferentPoint**: Each connector originates from a different point, distributing connections around the node
@@ -79,7 +79,7 @@ The [`connectionPointOrigin`](https://ej2.syncfusion.com/angular/documentation/a
 
 Linear arrangement positions child nodes in a straight line with their parent node centered relative to the children. This creates a more organized appearance when dealing with nodes that have multiple children.
 
-When line distribution is enabled, linear arrangement activates automatically. The [`arrangement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/childarrangement/) property provides control over this feature:
+When line distribution is enabled, linear arrangement activates automatically. The [`arrangement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/childarrangement) property provides control over this feature:
 
 - **Nonlinear (default)**: Child nodes are arranged based on available space
 - **Linear**: Child nodes are arranged in a straight line with the parent centered
@@ -101,7 +101,7 @@ When line distribution is enabled, linear arrangement activates automatically. T
 
 In complex diagrams with intricate parent-child relationships, connectors may pass through or overlap with nodes, making the diagram difficult to read. Routing functionality automatically calculates connector paths that avoid intersecting with nodes and other obstacles.
 
-Set the [`enableRouting`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel/#enablerouting) property to `true` to activate intelligent connector routing.
+Set the [`enableRouting`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#enablerouting) property to `true` to activate intelligent connector routing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

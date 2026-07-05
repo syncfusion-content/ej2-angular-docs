@@ -77,18 +77,16 @@ npm install @syncfusion/ej2-angular-filemanager --save
 
 ## Adding CSS reference
 
-The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css**
+To install the [Material3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package, use the following command:
+
+```bash
+npm i @syncfusion/ej2-material3-theme
+```
+
+In this package, the File Manager component includes an `index.css` file that automatically loads all the required dependency styles. Add the following import to the **src/styles.css** file.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-filemanager/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/file-manager/index.css";
 ```
 
 > Ensure that the import order aligns with the component's dependency sequence.

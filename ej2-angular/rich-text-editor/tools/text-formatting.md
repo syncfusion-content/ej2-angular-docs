@@ -28,7 +28,7 @@ The table below lists the available text styles in the Rich Text Editor's toolba
 | StrikeThrough | ![StrikeThrough icon](../images/strikethrough.png) | Applies a line through the text. |toolbarSettings: { items: ['StrikeThrough']}|
 | InlineCode |![InlineCode icon](../images/inlineCode.png) | Formats text as inline code | toolbarSettings: { items: ['InlineCode']} | `<code>inline code</code>`|
 | SubScript | ![SubScript icon](../images/sub-script.png) | Positions text slightly below the normal line |toolbarSettings: { items: ['SubScript']}|
-| SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript’']}|
+| SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript']}|
 | LowerCase | ![LowerCase icon](../images/lower-case.png) |  Converts text to lowercase |toolbarSettings: { items: ['LowerCase']}|
 | UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase’']}|
 
@@ -357,7 +357,7 @@ While the toolbar does not provide a direct method to apply blockquote formattin
 
 ## Line Height
 
-The Rich Text Editor supports line height feature which allows users to adjust the vertical spacing between lines of text. To change the line height, select the text you want to modify and click the LineHeight icon in the toolbar. Choose from the available spacing options to apply the desired vertical spacing. This feature is especially useful for creating visually appealing paragraphs and ensuring consistent formatting across your document.
+The Rich Text Editor supports line height feature which allows users to adjust the vertical spacing between lines of text. To change the line height, select the text you want to modify and click the `LineHeight` icon in the toolbar. Choose from the available spacing options to apply the desired vertical spacing. This feature is especially useful for creating visually appealing paragraphs and ensuring consistent formatting across your document.
 
 ### Built-in line height
 
@@ -375,13 +375,13 @@ You can add the `LineHeight` tool to the toolbar in the Rich Text Editor using [
 
 {% previewsample "page.domainurl/samples/rich-text-editor/line-height" %}
 
-The Rich Text Editor comes with a pre-configured set of [`lineHeight`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#lineheight) property.
+The Rich Text Editor comes with a pre-configured set of [lineHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#lineheight) property.
 
 ### Custom line height
 
-The Rich Text Editor supports custom line height along with the existing line height dropdown list. To add additional line height to the line height dropdown, you can configure the items field of the [`lineHeight`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#lineheight) property. This allows you to extend the available line height options beyond the default selection.
+The Rich Text Editor supports custom line height along with the existing line height dropdown list. To add additional line height to the line height dropdown, you can configure the items field of the [lineHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#lineheight) property. This allows you to extend the available line height options beyond the default selection.
 
-The [`supportAllValues`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#supportAllValues) setting enables the line height dropdown to display and retain line-height values that are not part of the predefined options. When `supportAllValues` property is turned on, the dropdown will show the current line-height value from the selection, even if that value is not present in the configured lineHeights array. By default, `supportAllValues` will be set to false.
+The [supportAllValues](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#supportAllValues) setting enables the line height dropdown to display and retain line-height values that are not part of the predefined options. When `supportAllValues` property is turned on, the dropdown will show the current line-height value from the selection, even if that value is not present in the configured lineHeights array. By default, `supportAllValues` will be set to false.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

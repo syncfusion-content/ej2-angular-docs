@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Event
 
-BPMN (Business Process Model and Notation) events represent something that happens during a business process. An [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnevent) is a common BPMN process model element that is notated with a circle. Events can occur at the beginning, middle, or end of a process flow.
+BPMN (Business Process Model and Notation) events represent something that happens during a business process. An [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent) is a common BPMN process model element that is notated with a circle. Events can occur at the beginning, middle, or end of a process flow.
 
 The types of events are as follows:
 
@@ -23,7 +23,7 @@ The types of events are as follows:
 * ThrowingIntermediate
 * End
 
-The [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnevent#event) property of the node allows you to define the type of the event. The default value of the event is **start**. The following code example illustrates how to create a BPMN event.
+The [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent#event) property of the node allows you to define the type of the event. The default value of the event is **start**. The following code example illustrates how to create a BPMN event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,7 +39,7 @@ The [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmne
 
 ## BPMN event trigger
 
-Event triggers are notated as icons inside the circle and represent the specific circumstances that cause the event to occur. The [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnevent#trigger) property of the node allows you to set the type of trigger and by default, it is set as **none**. The following table illustrates the types of event triggers available for each event type.
+Event triggers are notated as icons inside the circle and represent the specific circumstances that cause the event to occur. The [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent#trigger) property of the node allows you to set the type of trigger and by default, it is set as **none**. The following table illustrates the types of event triggers available for each event type.
 
 | Triggers | Start | Non-Interrupting Start | Intermediate | Non-Interrupting Intermediate | Throwing Intermediate | End |
 |----------|-------|------------------------|--------------|-------------------------------|----------------------|-----|
@@ -56,5 +56,3 @@ Event triggers are notated as icons inside the circle and represent the specific
 | Cancel | ![CancelStartEventBPMNShape](../images/startCancel.png) | ![CancelNonInterruptingStartEventBPMNShape](../images/nonInterStartCancel.png) | ![CancelIntermediateImage](../images/Cancel1.png) | ![Cancel NonInteruptingIntermediateEventBPMNShape](../images/nonInterCancel.png) | ![CancelThrowingIntermediateEventBPMNShape](../images/throwingCancel.png) | ![CancelEndIamge](../images/Cancel2.png) |
 | Multiple | ![MultipleStartImage](../images/Multiple1.png) | ![MultipleNon-InterruptingImage](../images/Multiple2.png) | ![MultipleIntermediateImage](../images/Multiple3.png) | ![MultipleNon-InterruptingImage](../images/Multiple4.png) | ![MultipleThrowing IntermediateImage](../images/Multiple5.png) | ![MultipleEndImage](../images/Multiple6.png) |
 | Parallel | ![ParallelStartImage](../images/Parallel1.png) | ![ParallelNon-InterruptingImage](../images/Parallel2.png) | ![ParallelIntermediateImage](../images/Parallel3.png) | ![ParallelEndImage](../images/Parallel4.png) | ![ParallelThrowingIntermediateEventBPMNShape](../images/throwingParallel.png) | ![ParallelEndEventBPMN Shape](../images/endParallel.png) |
-
-N> Looking for the full Angular Diagram component overview, features, pricing, and documentation? Visit the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) page.

@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting Cursor at Specific Range in Editor in Angular Rich Text Editor Component
+# Setting Cursor at Specific Range in Angular Rich Text Editor Component
 
-This can be achieved by using `setRange` method in the Rich Text Editor using `NodeSelection` instance. In this below sample, you have passed the text node (specific location in Rich Text Editor content) in `setStart` method and passed the range in `setRange` method of Rich Text Editor.
+This can be achieved by using the `setRange` method in the Rich Text Editor with a `NodeSelection` instance. In the sample below, the text node (the exact position inside the editor content) is passed to the `setStart` method, and then the range is applied using the `setRange` method of the Rich Text Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

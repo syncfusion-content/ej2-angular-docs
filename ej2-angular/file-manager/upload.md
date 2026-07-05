@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Upload in Angular File Manager component
 
-The File Manager component provides a [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettings) property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
+The [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) component provides a [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettings) property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
 
 ## Directory Upload
 
-The [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettingsmodel#directoryupload) property controls whether users can browse and upload entire directories (folders) in the Angular File Manager component. 
+The [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manager/uploadsettingsmodel#directoryupload) property controls whether users can browse and upload entire directories (folders) in the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) component. 
 
 To enable directory upload, set the `directoryUpload` property to `true` in the `uploadSettings` configuration.
 

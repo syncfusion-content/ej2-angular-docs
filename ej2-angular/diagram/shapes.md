@@ -29,7 +29,7 @@ This guide covers the following shape types and their implementation:
 
 Text nodes enable you to add formatted text content directly to your diagram. They are ideal for labels, annotations, and textual information that enhances diagram readability.
 
-To create a text node, set the shape property to [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape) and define the content object with your desired text and styling options.
+To create a text node, set the shape property to [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) and define the content object with your desired text and styling options.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,7 +47,7 @@ To create a text node, set the shape property to [`text`](https://ej2.syncfusion
 
 Image nodes allow you to incorporate visual elements from various sources including URLs, local files, and Base64-encoded data. These nodes are perfect for adding logos, icons, or illustrative content to your diagrams.
 
-To create an image node, set the shape property to [`image`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape) and specify the image source through the source property.
+To create an image node, set the shape property to [`image`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) and specify the image source through the source property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,7 @@ N> When deploying applications with image nodes, ensure your HTML files are serv
 
 Control how images appear within node boundaries using alignment and scaling properties. These features ensure your images display correctly regardless of node dimensions.
 
-The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/image/#scale) property determines how images fit within node boundaries, while the [`align`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imageAlignment/) property controls positioning.
+The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/image#scale) property determines how images fit within node boundaries, while the [`align`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imageAlignment) property controls positioning.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,13 +112,13 @@ N> Combine the align property with scale settings to achieve precise image posit
 
 HTML nodes provide the flexibility to embed rich HTML content directly into your diagrams. This powerful feature enables you to create highly customized visual elements with advanced formatting, styling, and interactivity.
 
-Set the shape property to [`HTML`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape) to create HTML nodes. You can define content using either inline templates or external node templates.
+Set the shape property to [`HTML`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) to create HTML nodes. You can define content using either inline templates or external node templates.
 
 N> HTML nodes cannot be exported to image formats (JPEG, PNG, BMP) due to canvas rendering limitations. This is by design, as converting arbitrary HTML content to canvas equivalents is not feasible for all HTML elements.
 
 ### HTML Node with Content Template
 
-Define HTML content directly within the [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/htmlModel/#content) property for simple, self-contained HTML elements.
+Define HTML content directly within the [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/htmlModel#content) property for simple, self-contained HTML elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -134,7 +134,7 @@ Define HTML content directly within the [`content`](https://ej2.syncfusion.com/a
 
 ### HTML Node with Node Template
 
-For complex HTML structures, use the [`nodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#nodetemplate) approach. Define your template in the HTML file and reference it through the diagram's nodeTemplate property.
+For complex HTML structures, use the [`nodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nodetemplate) approach. Define your template in the HTML file and reference it through the diagram's nodeTemplate property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -152,7 +152,7 @@ For complex HTML structures, use the [`nodeTemplate`](https://ej2.syncfusion.com
 
 Native nodes allow you to embed SVG elements directly into your diagrams, providing scalable vector graphics with precise control over visual appearance. This approach is ideal for custom icons, complex shapes, and high-quality graphics that scale well at any size.
 
-To create a [`native`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape) node, set the shape property to **native** and provide SVG content through the content property.
+To create a [`native`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) node, set the shape property to **native** and provide SVG content through the content property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -170,7 +170,7 @@ N> Similar to HTML nodes, native nodes cannot be exported to image formats due t
 
 ### SVG Content Alignment and Scaling
 
-Control how SVG content appears within node boundaries using the same scaling principles as image nodes. The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nativeModel/#scale) property determines how SVG content fits within the node bounds.
+Control how SVG content appears within node boundaries using the same scaling principles as image nodes. The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nativeModel#scale) property determines how SVG content fits within the node bounds.
 
 **SVG scaling options:**
 
@@ -185,7 +185,7 @@ Control how SVG content appears within node boundaries using the same scaling pr
 
 Basic shapes provide a comprehensive set of predefined geometric forms commonly used in diagrams, flowcharts, and technical drawings. These shapes offer consistency and quick deployment for standard diagram elements.
 
-To create [`basic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape) shapes, set the type property to **basic** and choose from the available built-in shapes. For rounded rectangles, use the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/basicShapeModel/#cornerradius) property to specify the radius.
+To create [`basic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) shapes, set the type property to **basic** and choose from the available built-in shapes. For rounded rectangles, use the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/basicShapeModel#cornerradius) property to specify the radius.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -211,7 +211,7 @@ The basic shapes library includes rectangles, ellipses, triangles, polygons, sta
 
 Path shapes provide ultimate flexibility for creating custom geometric forms using SVG path data. This approach allows you to define any shape imaginable through precise path coordinates and commands.
 
-To create a [`path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape) node, set the shape property to **path** and define the geometry through the [`data`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathModel/#data) property using standard SVG path syntax.
+To create a [`path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) node, set the shape property to **path** and define the geometry through the [`data`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathModel#data) property using standard SVG path syntax.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,7 +229,7 @@ To create a [`path`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 
 Flow shapes are specialized elements designed for process modeling, workflow diagrams, and business process documentation. These standardized shapes follow common flowchart conventions and enhance diagram readability.
 
-To create [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape) shapes, set the shape type to **flow** and specify the desired flow shape variant. The default flow shape is **process**.
+To create [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) shapes, set the shape type to **flow** and specify the desired flow shape variant. The default flow shape is **process**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

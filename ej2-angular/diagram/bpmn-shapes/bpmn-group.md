@@ -16,7 +16,7 @@ A BPMN group is a visual mechanism used to organize and frame related elements w
 
 ## Creating a BPMN Group
 
-To create a BPMN group, set the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnShapes/) property of the node to **group**. The group appears as a rounded rectangle with dashed borders that encompasses the grouped elements.
+To create a BPMN group, set the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnShapes) property of the node to **group**. The group appears as a rounded rectangle with dashed borders that encompasses the grouped elements.
 
 ![BPMN Group Shape](../images/Group.png)
 

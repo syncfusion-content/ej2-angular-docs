@@ -37,13 +37,11 @@ ng new syncfusion-angular-app
 * This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
 ```bash
-
 ? Which stylesheet format would you like to use? (Use arrow keys)
 > CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
   Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
   Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
   Less            [ http://lesscss.org                                             ]
-
 ```
 
 * By default, a CSS-based application is created. Use SCSS if required:
@@ -68,13 +66,13 @@ cd syncfusion-angular-app
 
 > This guide uses Angular 21+ with standalone components. For compatibility with other Angular versions, see the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility).
 
-Install the Gantt Chart package:
+Install the Gantt Chart package using the Angular CLI command:
 
 ```bash
 ng add @syncfusion/ej2-angular-gantt
 ```
 
-This command performs the following:
+This command performs the following automatically:
 
 - Installs required dependencies
 - Imports the Gantt module
@@ -82,9 +80,9 @@ This command performs the following:
 
 ## Add theme styles
 
-The Gantt component requires specific CSS files for proper rendering.
+The Gantt Chart component requires specific CSS files for proper rendering.
 
-Import the basic Gantt Chart styles into `src/styles.css`:
+Import the basic Gantt Chart styles into `src/styles.css` using the Tailwind theme (you can also use `material3.css`, `bootstrap5.css`, or other available themes):
 
 ```css
 @import '../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css';
@@ -109,12 +107,9 @@ Import the basic Gantt Chart styles into `src/styles.css`:
 > @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
 > ```
 
-### How styles are applied
-
-The imported CSS files are added to the global stylesheet (`src/styles.css`).  
-Angular automatically applies these styles to all components in the application.
-
-No additional configuration is required in the TypeScript (`.ts`) files.
+**Understanding Style Application**
+ 
+The imported CSS files are added to the global stylesheet (`src/styles.css`). Angular automatically applies these styles to all components in the application, so no additional configuration is required in the TypeScript (`.ts`) files.
 
 ## Create sample task data
 
@@ -156,10 +151,9 @@ public taskSettings = {
 | `duration` | Task duration in days | Yes |
 | `parentID` | Parent task ID for hierarchy | No |
 
-## Render the Gantt component
+## Render the Angular Gantt Chart Component
 
-Update the component file:
-**src/app/app.ts** (Angular 20+):
+Update the component file to render the Gantt Chart using the sample data and task settings defined earlier. Modify the `src/app/app.ts` file (for Angular 20+) with the following code:
 
 ```typescript
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -178,9 +172,9 @@ export class App {
         {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
         {TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
         {TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, ParentID: 1},
-        {TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-08'), EndDate: new Date('2024-04-18')},
-        {TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-08'), Duration: 5, ParentID: 5},
-        {TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-08'), Duration: 5, ParentID: 5}
+        {TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-15'), EndDate: new Date('2024-04-25')},
+        {TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5},
+        {TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5}
     ];
     public taskSettings = {
         id: 'TaskID',
@@ -193,7 +187,7 @@ export class App {
 ```
 
 > **Note for Angular 19 and earlier versions:**  
-> The Gantt component configuration should be defined in the `app.component.ts` file.
+> The Gantt Chart component configuration should be defined in the `app.component.ts` file.
 
 ## Run the application
 

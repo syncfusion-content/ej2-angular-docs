@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 A lane is a functional unit or responsible department of a business process that helps to map a process within the functional unit or between other functional units. In swimlane diagrams, lanes represent different actors, departments, or systems that participate in the process workflow.
 
-The number of [`lanes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel/) can be added to a swimlane. The lanes are automatically stacked inside the swimlane based on the order they are added.
+The number of [`lanes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel) can be added to a swimlane. The lanes are automatically stacked inside the swimlane based on the order they are added.
 
 ### Prerequisites
 
@@ -40,7 +40,7 @@ The following code example illustrates how to define a swimlane with a lane.
 
 ### Create lane header
 
-The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel/#header/) property of a lane allows you to textually describe the lane and customize the appearance of the description.
+The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel#header) property of a lane allows you to textually describe the lane and customize the appearance of the description.
 
 The following code example illustrates how to define a lane header.
 
@@ -58,9 +58,9 @@ The following code example illustrates how to define a lane header.
 
 ### Customizing lane and lane header
 
-The size of a lane can be controlled by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel/#width/) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel/#height/) properties of the lane.
+The size of a lane can be controlled by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel#height) properties of the lane.
 
-The appearance of a lane can be customized by using the [`style`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel/#style/) properties.
+The appearance of a lane can be customized by using the [`style`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel#style) properties.
 
 The appearance of the header annotation can be customized by using the `style` property of the header annotation.
 
@@ -96,7 +96,7 @@ Lane header style and text properties can be customized dynamically. The followi
 
 ### Add and remove lanes at runtime
 
-Lanes can be added at runtime by using the [`addLanes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addlanes/) method and removed at runtime using the [`removeLane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#removelane/) method. The following code illustrates how to dynamically add and remove lanes in a swimlane.
+Lanes can be added at runtime by using the [`addLanes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#addlanes) method and removed at runtime using the [`removeLane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#removelane) method. The following code illustrates how to dynamically add and remove lanes in a swimlane.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,7 +112,7 @@ Lanes can be added at runtime by using the [`addLanes`](https://ej2.syncfusion.c
 
 ### Add children to lane
 
-To add nodes to a lane, you should add them to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel/#children/) collection of the lane.
+To add nodes to a lane, you should add them to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel#children) collection of the lane.
 
 The following code example illustrates how to add nodes to a lane.
 
@@ -130,7 +130,7 @@ The following code example illustrates how to add nodes to a lane.
 
 #### Add child dynamically into the lane
 
-Child nodes can be inserted into a lane at runtime by using the [`addNodeToLane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addnodetolane/) method.
+Child nodes can be inserted into a lane at runtime by using the [`addNodeToLane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#addnodetolane) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -170,7 +170,7 @@ Here is an example of how to apply these constraints:
 
 ### Additional information storage
 
-Additional information storage for lanes is similar to nodes. Additional information about a specific lane can be stored by using the [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel/#addInfo/) property.
+Additional information storage for lanes is similar to nodes. Additional information about a specific lane can be stored by using the [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel#addInfo) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

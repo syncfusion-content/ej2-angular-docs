@@ -12,11 +12,11 @@ domainurl: ##DomainURL## ..
 
 A radial tree layout is a specialized diagram that presents hierarchical information with a central node at the core, surrounded by branches extending outward in a circular, tree-like structure. This layout is particularly effective for visualizing organizational charts, family trees, mind maps, and network relationships where understanding the relationship distance from a central concept is important.
 
-The central node represents the main concept or topic, with child nodes arranged in concentric circles based on their hierarchical level. The layout [`root`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#root) property can be used to define the root node of the layout. When no root node is specified, the algorithm automatically identifies the node without any incoming edges (InEdges connector count of 0) as the root node. To create a radial tree, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#type) property of the layout to `RadialTree`.
+The central node represents the main concept or topic, with child nodes arranged in concentric circles based on their hierarchical level. The layout [`root`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#root) property can be used to define the root node of the layout. When no root node is specified, the algorithm automatically identifies the node without any incoming edges (InEdges connector count of 0) as the root node. To create a radial tree, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#type) property of the layout to `RadialTree`.
 
-The RadialTree layout provides comprehensive support for controlling node spacing and arrangement. The [`horizontalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel/#horizontalspacing) and [`verticalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel/#verticalspacing) properties allow precise control over the space between nodes, measured in pixels. The arrangement creates an expanding concentric pattern where radial proximity to the root node indicates the hierarchical level.
+The RadialTree layout provides comprehensive support for controlling node spacing and arrangement. The [`horizontalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#horizontalspacing) and [`verticalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#verticalspacing) properties allow precise control over the space between nodes, measured in pixels. The arrangement creates an expanding concentric pattern where radial proximity to the root node indicates the hierarchical level.
 
-![Radial tree layout example](../images/RadialTree.png "Example of a radial tree layout showing hierarchical node arrangement")
+![Radial tree layout example](../images/RadialTree.png)
 
 ## Prerequisites
 
