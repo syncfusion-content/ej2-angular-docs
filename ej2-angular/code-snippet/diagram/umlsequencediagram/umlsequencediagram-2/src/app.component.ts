@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagrams';
-import { UmlSequenceDiagramModel, UmlSequenceMessageType, SnapSettingsModel, SnapConstraints } from "@syncfusion/ej2-diagrams";
+import { UmlSequenceDiagramModel, UmlSequenceMessageType, SnapSettingsModel, SnapConstraints, UmlSequenceParticipantStereotype } from "@syncfusion/ej2-diagrams";
 
 @Component({
   imports: [DiagramModule],
@@ -22,10 +22,10 @@ export class AppComponent {
       const umlSequenceDiagramModel: UmlSequenceDiagramModel = {
         // Defines the participants involved in the sequence diagram
         participants: [
-          { id: "User", content: "User", isActor: true, }, // User as an actor
-          { id: "System", content: "System", isActor: false, showDestructionMarker: true, }, // System participant
-          { id: "Logger", content: "Logger", isActor: false, showDestructionMarker: true, }, // Logger participant
-          { id: "SessionManager", content: "SessionManager", isActor: false, } // SessionManager participant
+          { id: "User", content: "User", stereotype: UmlSequenceParticipantStereotype.Actor }, // User as an actor
+          { id: "System", content: "System", showDestructionMarker: true, }, // System participant
+          { id: "Logger", content: "Logger", showDestructionMarker: true, }, // Logger participant
+          { id: "SessionManager", content: "SessionManager" } // SessionManager participant
         ],
         // Define messages exchanged between participants
         messages: [
