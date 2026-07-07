@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagrams';
-import { UmlSequenceDiagramModel, SnapSettingsModel, SnapConstraints } from "@syncfusion/ej2-diagrams";
+import { UmlSequenceDiagramModel, SnapSettingsModel, SnapConstraints, UmlSequenceParticipantStereotype } from "@syncfusion/ej2-diagrams";
 
 @Component({
   imports: [DiagramModule],
@@ -24,12 +24,11 @@ export class AppComponent {
           {
             id: "User", // Unique identifier for the participant
             content: "User", // Label or name of the participant
-            isActor: true, // Indicates that the participant is an actor
+            stereotype: UmlSequenceParticipantStereotype.Actor // Indicates that the participant is an actor
           },
           {
             id: "System", // Unique identifier for the participant
             content: "System", // Label or name of the participant
-            isActor: false,
             // Flag to show destruction marker at the end of the lifeline
             showDestructionMarker: true,
           }

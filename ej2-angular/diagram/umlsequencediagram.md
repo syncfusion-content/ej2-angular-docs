@@ -49,13 +49,23 @@ Participants can be displayed in two forms:
 |---|---|---|
 | id | string \| number | A unique identifier for the participant |
 | content | string | The display text for the participant |
-| isActor | boolean | Specifies whether the participant is displayed as an actor (true) or an object (false) |
 | showDestructionMarker | boolean | Indicates whether a destruction marker (X) is shown at the end of the lifeline |
 | activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant |
+| stereotype | UmlSequenceParticipantStereotype | The visual stereotype that determines how this participant is rendered (for example, Actor, Boundary, Control, Entity, Database). |
 
-#### Creating Participants
+#### Participant Stereotypes
 
-The following code example demonstrates how to create different types of participants:
+The [UmlSequenceParticipantStereotype](https://ej2.syncfusion.com/documentation/api/diagram/umlSequenceParticipantStereotype) enum defines the visual style of a participant. A stereotype helps show the role of a participant in the interaction.
+
+| Stereotype | Description | Shape |
+|---|---|---|
+| Default | A standard object participant rendered as a labelled rectangular box | ![Default](./images/umlSequenceDiagram-images/Default.png) |
+| Actor | An actor that interacts with the system, rendered as a UML actor (stick figure) | ![Actor](./images/umlSequenceDiagram-images/Actor.png) |
+| Boundary | A boundary object or system interface (UI, API gateway, external system) | ![Boundary](./images/umlSequenceDiagram-images/Boundary.png) |
+| Control | A control object for coordinator, controller, or workflow elements | ![Control](./images/umlSequenceDiagram-images/Control.png) |
+| Entity | An entity object for passive data, domain, or persistent objects | ![Entity](./images/umlSequenceDiagram-images/Entity.png) |
+| Database | A database or persistent storage system, rendered as a cylindrical shape | ![Database](./images/umlSequenceDiagram-images/Database.png) |
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

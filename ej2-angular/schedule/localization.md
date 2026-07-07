@@ -16,7 +16,7 @@ You can adapt the Scheduler to various languages by parsing and formatting numbe
 
 ## Globalization
 
-The Internationalization library supports formatting and parsing numbers, dates, and times using the official [`Unicode CLDR`](https://cldr.unicode.org) JSON data and provides the `loadCldr` method to load culture-specific CLDR JSON data.
+The Internationalization library supports formatting and parsing numbers, dates, and times using the official [`Unicode CLDR`](https://cldr.unicode.org/) JSON data and provides the `loadCldr` method to load culture-specific CLDR JSON data.
 
 By default, the Scheduler follows the English culture (`en-US`). To use a different culture, follow these steps:
 

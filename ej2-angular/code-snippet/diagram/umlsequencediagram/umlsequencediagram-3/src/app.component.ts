@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagrams';
-import { UmlSequenceDiagramModel, UmlSequenceMessageType, SnapSettingsModel, SnapConstraints } from "@syncfusion/ej2-diagrams";
+import { UmlSequenceDiagramModel, UmlSequenceMessageType, SnapSettingsModel, SnapConstraints, UmlSequenceParticipantStereotype } from "@syncfusion/ej2-diagrams";
 
 @Component({
   imports: [DiagramModule],
@@ -25,12 +25,11 @@ export class AppComponent {
           {
             id: "User",
             content: "User",
-            isActor: true,
+            stereotype: UmlSequenceParticipantStereotype.Actor
           },
           {
             id: "System",
             content: "System",
-            isActor: false,
             showDestructionMarker: true,
             // Activation boxes for System
             activationBoxes: [

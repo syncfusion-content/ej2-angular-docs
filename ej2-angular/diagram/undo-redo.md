@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Undo and Redo in Angular Diagram Component
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component automatically tracks all user interactions and programmatic changes, providing robust undo and redo functionality. This feature enables users to reverse or restore actions, making diagram editing more intuitive and error-tolerant.
+The Angular Diagram component automatically tracks all user interactions and programmatic changes, providing robust undo and redo functionality. This feature enables users to reverse or restore actions, making diagram editing more intuitive and error-tolerant.
 
 ## Prerequisites and setup
 

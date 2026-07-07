@@ -16,7 +16,7 @@ MongoDB's schema-less design seamlessly supports complex scheduling data, making
 
 ## What is MongoDB?
 
-[MongoDB](https://www.mongodb.com) is a highly scalable, document-oriented NoSQL database designed to store and manage large volumes of flexible, JSON-like data. It enables developers to work with dynamic schemas, making it easy to model complex and evolving application data without rigid table structures.
+[MongoDB](https://www.mongodb.com/) is a highly scalable, document-oriented NoSQL database designed to store and manage large volumes of flexible, JSON-like data. It enables developers to work with dynamic schemas, making it easy to model complex and evolving application data without rigid table structures.
 
 ## Overview
 This integration enables full CRUD (Create, Read, Update, Delete) operations for calendar events using:

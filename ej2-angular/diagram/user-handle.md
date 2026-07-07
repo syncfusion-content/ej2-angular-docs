@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 User handles are interactive UI elements that provide quick access to frequently used commands around selected diagram elements. They appear as customizable icons positioned around nodes and connectors, enabling users to perform actions like cloning, deleting, or editing without accessing traditional menus or toolbars.
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component supports two types of user handles:
+The Angular Diagram component supports two types of user handles:
 - **User handles**: Appear when elements are selected and are defined globally for all selected items
 - **Fixed user handles**: Permanently visible on specific nodes or connectors, regardless of selection state
 

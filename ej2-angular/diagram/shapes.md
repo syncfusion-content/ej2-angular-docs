@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Different Types of Shapes in Angular Diagram Component
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides comprehensive support for adding various types of nodes to create rich, interactive diagrams. Shapes serve as the fundamental building blocks for representing data, processes, and visual elements in your diagrams.
+The Angular Diagram component provides comprehensive support for adding various types of nodes to create rich, interactive diagrams. Shapes serve as the fundamental building blocks for representing data, processes, and visual elements in your diagrams.
 
 This guide covers the following shape types and their implementation:
 

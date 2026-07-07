@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Interactive Label Features
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component allows labels to be interactive through selecting, dragging, rotating, and resizing operations. Label interaction is disabled by default. Enable label interaction using the `constraints` property of the label. You can also control specific interaction types by enabling individual constraints for selecting, dragging, rotating, or resizing. The following code demonstrates how to enable interactive mode.
+The Diagram component allows labels to be interactive through selecting, dragging, rotating, and resizing operations. Label interaction is disabled by default. Enable label interaction using the `constraints` property of the label. You can also control specific interaction types by enabling individual constraints for selecting, dragging, rotating, or resizing. The following code demonstrates how to enable interactive mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Save and Load Diagrams in Angular Diagram Component
 
-**Serialization** is the process of converting the diagram's current state into a storage format that can be saved and later restored. This feature ensures that all [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) elements, including nodes, connectors, and their configurations, persist across application sessions.
+**Serialization** is the process of converting the diagram's current state into a storage format that can be saved and later restored. This feature ensures that all diagram elements, including nodes, connectors, and their configurations, persist across application sessions.
 
 The serialization process converts the diagram into a JSON string format, which can be stored in databases, files, or other storage systems. When needed, this serialized data can be deserialized to recreate the diagram exactly as it was previously configured.
 
@@ -127,6 +127,23 @@ export class AppComponent {
     this.serializationSettings = { preventDefaults: true };
   }
 }
+
+```
+
+## Detect Unsaved Changes
+
+The [`isModified`](https://ej2.syncfusion.com/angular/documentation/api/diagram#ismodified) property indicates whether the diagram has unsaved changes. It becomes **true** when the diagram is changed, such as when nodes, connectors, or diagram properties are updated, or when undo and redo actions are performed.
+
+This property can be used to show save indicators or to display a warning before unsaved changes are discarded.
+
+
+```typescript
+// Check whether the diagram has unsaved changes.
+if (diagram.isModified) {
+    const confirmed = confirm('You have unsaved changes. Discard them?');
+    if (!confirmed) return;
+}
+navigateTo('/home');
 
 ```
 
