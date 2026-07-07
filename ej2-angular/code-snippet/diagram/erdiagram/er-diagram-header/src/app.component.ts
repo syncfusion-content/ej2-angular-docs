@@ -8,7 +8,7 @@ Diagram.Inject(ErDiagrams);
   selector: 'app-container',
 
   template: `
-    <ejs-diagram #diagram id="diagram" width="100%" height="600px" [nodes]="nodes"></ejs-diagram> `,
+    <ejs-diagram #diagram id="diagram" width="100%" height="400px" [nodes]="nodes"></ejs-diagram> `,
 
   encapsulation: ViewEncapsulation.None,
   standalone: true,
@@ -22,13 +22,14 @@ export class AppComponent {
   public nodes: NodeModel[] = [
     {
       id: 'Customer',
-      offsetX: 400,
-      offsetY: 300,
+      offsetX: 300,
+      offsetY: 200,
       shape: {
         type: 'Er',
         header: {
           annotation: {
-            content: 'CUSTOMER TABLE', style: {
+            content: 'CUSTOMER TABLE',
+            style: {
               color: 'white',
               fontSize: 13,
               bold: true,

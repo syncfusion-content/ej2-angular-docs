@@ -6,7 +6,7 @@ Diagram.Inject(ErDiagrams);
 @Component({
   selector: 'app-container',
   template: `
-    <ejs-diagram #diagram id="diagram" width="100%" height="600px"
+    <ejs-diagram #diagram id="diagram" width="100%" height="400px"
     [nodes]="nodes"></ejs-diagram> `,
 
   encapsulation: ViewEncapsulation.None,
@@ -21,12 +21,14 @@ export class AppComponent {
   public nodes: NodeModel[] = [
     {
       id: 'Customer',
-      offsetX: 400,
-      offsetY: 300,
+      offsetX: 300,
+      offsetY: 200,
       shape: {
         type: 'Er',
         header: {
-          annotation: { content: 'Customer' }
+          annotation: {
+            content: 'Customer',
+          },
         },
         fields: [
           {
@@ -34,21 +36,21 @@ export class AppComponent {
             name: 'CustomerID',
             dataType: 'INT',
             isPrimaryKey: true,
-            constraints: ['NotNull']
+            constraints: ['NotNull'],
           },
           {
             id: 'cust_firstname',
             name: 'FirstName',
             dataType: 'VARCHAR(50)',
-            constraints: ['NotNull']
+            constraints: ['NotNull'],
           },
           {
             id: 'cust_email',
             name: 'Email',
             dataType: 'VARCHAR(100)',
-            constraints: ['Unique']
-          }
-        ]
+            constraints: ['Unique'],
+          },
+        ],
       } as ErShapeModel
     }
   ];

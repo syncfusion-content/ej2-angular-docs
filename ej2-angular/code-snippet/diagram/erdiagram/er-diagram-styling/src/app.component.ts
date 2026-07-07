@@ -1,6 +1,6 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Diagram, NodeModel, DiagramComponent, DiagramModule, ErShapeModel, ErDiagrams, ErFieldModel} from '@syncfusion/ej2-angular-diagrams';
+import { Diagram, NodeModel, DiagramComponent, DiagramModule, ErShapeModel, ErDiagrams, ErFieldModel } from '@syncfusion/ej2-angular-diagrams';
 
 Diagram.Inject(ErDiagrams);
 
@@ -8,7 +8,7 @@ Diagram.Inject(ErDiagrams);
   selector: 'app-container',
 
   template: `
-    <ejs-diagram #diagram id="diagram" width="100%" height="600px" [nodes]="[customer, product]"></ejs-diagram> `,
+    <ejs-diagram #diagram id="diagram" width="100%" height="400px" [nodes]="[customer, product]"></ejs-diagram> `,
 
   encapsulation: ViewEncapsulation.None,
   standalone: true,
@@ -22,8 +22,8 @@ export class AppComponent {
   // Define ER entities with custom styling
   public customer: NodeModel = {
     id: 'Customer',
-    offsetX: 300,
-    offsetY: 300,
+    offsetX: 200,
+    offsetY: 200,
     shape: {
       type: 'Er',
       header: {
@@ -61,18 +61,18 @@ export class AppComponent {
     style: {
       fill: '#ffffff',
       strokeColor: '#2E75B6',
-      strokeWidth: 1,
+      strokeWidth: 1
     }
   };
 
   public product: NodeModel = {
     id: 'Product',
-    offsetX: 850,
-    offsetY: 300,
+    offsetX: 600,
+    offsetY: 200,
     shape: {
       type: 'Er',
       header: {
-        annotation: { content: 'PRODUCT CATALOG' },
+        annotation: { content: 'PRODUCT CATALOG', style: { bold: true, color: 'white' } },
         height: 35,
         style: {
           fill: '#70AD47',
