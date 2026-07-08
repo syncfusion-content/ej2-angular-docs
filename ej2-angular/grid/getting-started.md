@@ -107,7 +107,7 @@ Then add the following CSS reference to the **src/style.css** file:
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../node_modules/@syncfusion/ej2-material3-theme/grids/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 
 {% endhighlight %}
 {% endtabs %}
