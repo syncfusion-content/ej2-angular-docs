@@ -16,7 +16,7 @@ Ports are specialized connection points on nodes that provide precise control ov
 
 ## Types of connections
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component supports two distinct connection methods, each serving different use cases depending on the level of connection control required.
+The Diagram component supports two distinct connection methods, each serving different use cases depending on the level of connection control required.
 
 ### Node to node connection
 

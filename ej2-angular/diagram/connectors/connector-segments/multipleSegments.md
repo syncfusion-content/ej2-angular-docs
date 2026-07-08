@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Multiple Segments for Connectors
 
-Connectors in the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component can be composed of multiple segments to create complex routing paths between nodes. Multiple segments allow you to define precise connection routes that navigate around obstacles or follow specific pathways in your diagram layout.
+Connectors in the Angular Diagram component can be composed of multiple segments to create complex routing paths between nodes. Multiple segments allow you to define precise connection routes that navigate around obstacles or follow specific pathways in your diagram layout.
 
 ## Understanding Connector Segments
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Port positioning in Angular Diagram Component
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component provides flexible options for positioning ports on nodes. Ports can be precisely positioned using offset coordinates, alignment properties, and margin values to create professional diagram layouts that meet specific design requirements.
+The Angular Diagram component provides flexible options for positioning ports on nodes. Ports can be precisely positioned using offset coordinates, alignment properties, and margin values to create professional diagram layouts that meet specific design requirements.
 
 ## Understanding port offset positioning
 

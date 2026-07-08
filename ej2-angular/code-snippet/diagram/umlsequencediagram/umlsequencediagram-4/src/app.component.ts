@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagrams';
-import { UmlSequenceDiagramModel, UmlSequenceMessageType, UmlSequenceFragmentType, SnapSettingsModel, SnapConstraints } from "@syncfusion/ej2-diagrams";
+import { UmlSequenceDiagramModel, UmlSequenceMessageType, UmlSequenceFragmentType, SnapSettingsModel, SnapConstraints, UmlSequenceParticipantStereotype } from "@syncfusion/ej2-diagrams";
 
 @Component({
   imports: [DiagramModule],
@@ -22,9 +22,9 @@ export class AppComponent {
         // Define the space between participants
         spaceBetweenParticipants: 300,
         participants: [
-          { id: "Customer", content: "Customer", isActor: true, },
-          { id: "OrderSystem", content: "Order System", isActor: false, },
-          { id: "PaymentGateway", content: "Payment Gateway", isActor: false, }
+          { id: "Customer", content: "Customer", stereotype: UmlSequenceParticipantStereotype.Actor },
+          { id: "OrderSystem", content: "Order System"},
+          { id: "PaymentGateway", content: "Payment Gateway" }
         ],
         // Define the messages passed between participants
         messages: [

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Node Annotations in Angular Diagram Component
 
-The [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) component allows precise customization of node annotations (also called labels) for positioning and appearance. Node annotations can be aligned relative to node boundaries using four key positioning properties that work together to provide comprehensive control over annotation placement.
+The Angular Diagram component allows precise customization of node annotations (also called labels) for positioning and appearance. Node annotations can be aligned relative to node boundaries using four key positioning properties that work together to provide comprehensive control over annotation placement.
 
 ## Annotation positioning properties
 
@@ -128,5 +128,3 @@ Annotation alignment properties can be modified dynamically during application e
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/diagram/labels/offset-run-cs2" %}
-
-N> Looking for the full Angular Diagram component overview, features, pricing, and documentation? Visit the [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) page.

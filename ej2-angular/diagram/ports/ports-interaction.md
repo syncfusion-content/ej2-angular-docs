@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Interactive Port Features in Angular Diagram Component
 
-Ports in [Angular Diagram](https://www.syncfusion.com/angular-components/angular-diagram) components support various interactive features that enhance user workflow and diagram creation efficiency. This guide covers drawing connectors from ports, drag functionality, automatic port creation, tooltips, and event handling.
+Ports in Angular Diagram components support various interactive features that enhance user workflow and diagram creation efficiency. This guide covers drawing connectors from ports, drag functionality, automatic port creation, tooltips, and event handling.
 
 ## Draw connector from port
 
