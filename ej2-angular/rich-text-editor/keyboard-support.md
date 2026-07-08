@@ -14,7 +14,7 @@ The Rich Text Editor has full keyboard accessibility that includes shortcuts to 
 
 ## HTML editor shortcut keys
 
-You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) as `HTML`.
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#editormode) as `HTML`.
 
 ### Toolbar
 
@@ -45,7 +45,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 | Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>C</kbd> |
 | Paste format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |  <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>V</kbd> |
 | Clear the copy format painter | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
-| Tab space (when [enableTabKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+| Tab space (when [enableTabKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
 
 ### Inserting
 
@@ -147,9 +147,63 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 ## Custom key config
 
-You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#keyconfig) property.
+You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#keyconfig) property.
 
 In the below sample, you have customize the bold, italic, underline toolbar action with ctrl+alt+b, ctrl+alt+i and ctrl+alt+u respectively.
+
+The following table lists all available `keyConfig` options in the Rich Text Editor along with their default keyboard shortcut values. You can customize these shortcut keys based on your requirements by using the `keyConfig` property.
+
+| Action | Default key config |
+|----------------|---------|
+| toolbar-focus | `alt+f10` |
+| escape | `escape` |
+| backspace | `backspace` |
+| insert-link | `ctrl+k` |
+| insert-image | `ctrl+shift+i` |
+| insert-audio | `ctrl+shift+a` |
+| insert-video | `ctrl+alt+v` |
+| insert-table | `ctrl+shift+e` |
+| undo | `ctrl+z` |
+| redo | `ctrl+y` |
+| copy | `ctrl+c` |
+| cut | `ctrl+x` |
+| paste | `ctrl+v` |
+| bold | `ctrl+b` |
+| italic | `ctrl+i` |
+| underline | `ctrl+u` |
+| strikethrough | `ctrl+shift+s` |
+| uppercase | `ctrl+shift+u` |
+| lowercase | `ctrl+shift+l` |
+| superscript | `ctrl+shift+=` |
+| subscript | `ctrl+=` |
+| indents | `ctrl+]` |
+| outdents | `ctrl+[` |
+| html-source | `ctrl+shift+h` |
+| full-screen | `ctrl+shift+f` |
+| decrease-fontsize | `ctrl+shift+<` |
+| increase-fontsize | `ctrl+shift+>` |
+| justify-center | `ctrl+e` |
+| justify-full | `ctrl+j` |
+| justify-left | `ctrl+l` |
+| justify-right | `ctrl+r` |
+| clear-format | `ctrl+shift+r` |
+| ordered-list | `ctrl+shift+o` |
+| unordered-list | `ctrl+alt+o` |
+| space | `space` |
+| enter | `enter` |
+| shift-enter | `shift+enter` |
+| tab | `tab` |
+| shift-tab | `shift+tab` |
+| delete | `delete` |
+| format-copy | `alt+shift+c` |
+| format-paste | `alt+shift+v` |
+| inlinecode | `` ctrl+` `` |
+| code-block | `ctrl+shift+b` |
+| ai-query | `alt+enter` |
+| checklist | `ctrl+shift+9` |
+| print | `ctrl+p` |
+| checklist-toggle | `ctrl+enter` |
+| select-all | `ctrl+a` |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
