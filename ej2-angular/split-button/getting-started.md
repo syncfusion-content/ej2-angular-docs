@@ -105,7 +105,7 @@ ng add @syncfusion/ej2-angular-splitbuttons
 
 This command will perform the following configurations:
 
-- Add the `@syncfusion/ej2-angular-split-buttons` package and peer dependencies to your `package.json`.
+- Add the `@syncfusion/ej2-angular-splitbuttons` package and peer dependencies to your `package.json`.
 - Import the SplitButton component component in your application.
 - Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
 

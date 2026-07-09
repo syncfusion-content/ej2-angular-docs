@@ -57,7 +57,7 @@ export class AppComponent {
     handleKeyboardEvent(event: KeyboardEvent) {
         if (event.altKey && event.keyCode === 84 /* t */) {
             // press alt+t to focus the control.
-            this.multicomboBoxObj!.focusIn();
+            this.multicomboBoxObj!.focus();
         }
     }
 }

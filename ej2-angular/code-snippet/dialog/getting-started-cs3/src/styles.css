@@ -5,3 +5,31 @@
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material3.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material3.css';
+
+html,
+body,
+#dialog-container {
+    display: block;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#dialog.e-draggable {
+    min-height: 160px;
+}
+
