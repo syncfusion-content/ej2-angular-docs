@@ -5,3 +5,46 @@
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material3.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material3.css';
+
+html,
+body,
+#dialog-container {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+#dialog-container {
+    height: 365px;
+}
+
+#dialog table,
+#dialog th,
+#dialog td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 15px;
+}
+
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#dialog.e-dialog .e-footer-content {
+    padding: 0;
+    padding-left: 14px;
+}
+
+#dialog.e-dialog .e-dlg-content {
+    padding: 9px;
+  }

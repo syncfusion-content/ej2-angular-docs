@@ -84,7 +84,7 @@ cd syncfusion-angular-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> AppBar Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
