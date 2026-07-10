@@ -10,7 +10,7 @@
     <ng-template #headerTemplate let-data>
         <div class = "e-groupheader">
         <button *ngIf="data.notCondition !== undefined" class='e-cb-wrapper'>
-        <ejs-checkbox id ="{{data.ruleID}}_notOption" label='not' [checked]='data.notCondition' (change)="onChange($event)">
+        <ejs-checkbox id ="{{data.ruleID}}_notOption" label='not' [checked]='data.notCondition' (change)="onChange($event, data.ruleID)">
         </ejs-checkbox> </button>
         <ejs-dropdownlist id ="{{data.ruleID}}_cndtn" [dataSource]='ds' [value]='data.condition' [fields]='fields' cssClass="e-custom-group-btn" (change)="conditionChange($event)">
         </ejs-dropdownlist>

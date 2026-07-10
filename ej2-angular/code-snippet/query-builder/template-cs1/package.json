@@ -22,6 +22,8 @@
     "@syncfusion/ej2-angular-splitbuttons": "*",
     "@syncfusion/ej2-angular-popups": "*",
     "@syncfusion/ej2-angular-calendars": "*",
+    "@syncfusion/ej2-buttons": "*",
+    "@syncfusion/ej2-dropdowns": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",

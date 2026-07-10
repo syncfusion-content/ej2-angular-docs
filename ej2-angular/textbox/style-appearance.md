@@ -37,27 +37,13 @@ The wrapper element controls the overall appearance and layout of the TextBox. U
 }
 ```
 
-## Customizing the TextBox Placeholder
-
-Placeholder text can be styled for both floating and static label scenarios:
-
-### Floating Label Customization
-
-```css
-/* To specify font size and color */
-.e-float-input.e-control-wrapper:not(.e-error) input:valid ~ label.e-float-text, .e-float-input.e-control-wrapper:not(.e-error) input ~ label.e-label-top.e-float-text {
-        color: pink;
-        font-size: 15px;
-}
-```
-
-## Change the floating label color of the TextBox
+## Customize Floating Label Colors in Angular TextBox 
 
 The Angular TextBox component supports floating labels that can be customized with different colors based on validation states. This guide demonstrates how to change the floating label color for success and warning validation states using CSS styling.
 
 The floating label color can be modified for different validation states using CSS. The component applies specific classes (`e-success`, `e-warning`) when validation states are set, allowing targeted styling.
 
-### CSS styling for validation states
+### CSS Styling for Validation States
 
 Apply the following CSS styles to customize floating label colors for success and warning states:
 
@@ -77,25 +63,37 @@ Apply the following CSS styles to customize floating label colors for success an
 }
 ```
 
-### Implementation example
+### Implementation Example
 
 The following example demonstrates how to configure TextBox components with floating labels and apply validation states to trigger color changes:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/getting-started-cs7/src/styles.css %}
+{% highlight css tabtitle="app.css" %}
+/* For Success state */
+.e-float-input.e-input-group.e-success label.e-float-text,
+.e-float-input.e-input-group.e-success input:focus ~ label.e-float-text,
+.e-float-input.e-input-group.e-success input:valid ~ label.e-float-text {
+    color: #22b24b;
+}
+
+/* For Warning state */
+.e-float-input.e-input-group.e-warning label.e-float-text,
+.e-float-input.e-input-group.e-warning input:focus ~ label.e-float-text,
+.e-float-input.e-input-group.e-warning input:valid ~ label.e-float-text {
+    color: #ffca1c;
+}
 {% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/textbox/getting-started-cs7" %}
 
-## Set the Rounded Corner in Angular TextBox Component
+## Rounded Corners in Angular TextBox 
 
-The TextBox component can be rendered with rounded corners by adding the `e-corner` CSS class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property. This styling enhancement improves visual appearance and provides a modern look to the input field.
+The TextBox component can be rendered with rounded corners by adding the `e-corner` CSS class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#cssclass) property. This styling enhancement improves visual appearance and provides a modern look to the input field.
 
 > **Note**: The rounded corner styling is visible only in box model input components (standard input elements with visible borders).
 
@@ -117,21 +115,25 @@ The TextBox component supports password visibility toggling through icon integra
 
 ### Implementation Steps
 
-Add an eye icon using the [addIcon](https://ej2.syncfusion.com/angular/documentation/api/textbox/#addicon) method and handle click events to toggle text visibility by changing the input element's [type](https://ej2.syncfusion.com/react/documentation/api/textbox/#type) attribute between `password` and `text`.
+Add an eye icon using the [addIcon](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#addicon) method and handle click events to toggle text visibility by changing the input element's [type](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#type) attribute between `password` and `text`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/toggle-password-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/toggle-password-cs1/src/main.ts %}
+{% highlight css tabtitle="app.css" %}
+.e-input-eye:before {
+        content:'\e345';
+        font-family: e-icons;
+        font-size: 13px;
+}
 {% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/textbox/toggle-password-cs1" %}
 
-## Change TextBox Color Based on Its Value in Angular
+## Change TextBox Color Based on Value
 
 Dynamically change the TextBox color based on user input to provide immediate visual feedback and enhance user experience. This technique is particularly useful for form validation, data entry scenarios, and creating interactive interfaces where color coding helps users understand input requirements or validity status.
 
@@ -144,12 +146,19 @@ The color change functionality can be implemented by combining event handling wi
 The following example demonstrates how to change TextBox color based on numeric value validation using the `keyup` event:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/getting-started-cs6/src/main.ts %}
+{% highlight css tabtitle="app.css" %}
+.e-input-group.e-error input.e-input, 
+.e-input-group.e-control-wrapper.e-error input.e-input { /* csslint allow: adjoining-classes */
+  color: #f44336;
+}
+
+.e-float-input.e-error input { /* csslint allow: adjoining-classes */
+  color: #f44336;
+}
 {% endhighlight %}
 {% endtabs %}
   

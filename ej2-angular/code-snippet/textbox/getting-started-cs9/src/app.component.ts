@@ -6,7 +6,6 @@ imports: [
         TextBoxModule
     ],
 
-
 standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">

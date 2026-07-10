@@ -8,14 +8,14 @@ import { Component, ViewChild } from '@angular/core';
     selector: 'app-root',
     template: `<div class="wrap">
         <h4> TextBox with icons </h4>
-        <ejs-textbox #textbox placeholder = "Enter Date" (created)="onCreate($event)"></ejs-textbox>
-        <ejs-textbox #textbox1 placeholder = "Enter Date" (created)="onCreate1($event)"></ejs-textbox>
-        <ejs-textbox #textbox2 placeholder = "Enter Date" (created)="onCreate2($event)"></ejs-textbox>
+        <ejs-textbox #textbox placeholder="Enter Date" (created)="onCreate($event)"></ejs-textbox>
+        <ejs-textbox #textbox1 placeholder="Enter Date" (created)="onCreate1($event)"></ejs-textbox>
+        <ejs-textbox #textbox2 placeholder="Enter Date" (created)="onCreate2($event)"></ejs-textbox>
 
         <h4> Floating label with icons </h4>
-        <ejs-textbox #textbox3 placeholder = "Enter Date" floatLabelType="Auto" (created)="onCreate3($event)"></ejs-textbox>
-        <ejs-textbox #textbox4 placeholder = "Enter Date" floatLabelType="Auto" (created)="onCreate4($event)"></ejs-textbox>
-        <ejs-textbox #textbox5 placeholder = "Enter Date" floatLabelType="Auto" (created)="onCreate5($event)"></ejs-textbox>
+        <ejs-textbox #textbox3 placeholder="Enter Date" floatLabelType="Auto" (created)="onCreate3($event)"></ejs-textbox>
+        <ejs-textbox #textbox4 placeholder="Enter Date" floatLabelType="Auto" (created)="onCreate4($event)"></ejs-textbox>
+        <ejs-textbox #textbox5 placeholder="Enter Date" floatLabelType="Auto" (created)="onCreate5($event)"></ejs-textbox>
     </div>`
 })
 

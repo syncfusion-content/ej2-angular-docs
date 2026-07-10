@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Angular TextBox component is an enhanced HTML input element that provides features such as floating labels, input validation, icons, and customizable styling. This guide describes how to create a simple TextBox in an Angular application.
 
-> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Standalone components are the default in Angular 21, and this guide reflects that architecture.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
@@ -37,7 +37,7 @@ The TextBox component requires the following dependencies in your application:
 		|-- @syncfusion/ej2-splitbuttons
 ```
 
-## SetUp the Angular application
+## Set up the Angular application
 
 A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
@@ -97,20 +97,20 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Installing syncfusion<sup style="font-size:70%">&reg;</sup> TextBox package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> TextBox package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
 
-This guide uses the [Angular TextBox component](https://www.syncfusion.com/angular-components/angular-textbox) for demonstration. Add the Angular TextBox component component with:
+This guide uses the [Angular TextBox component](https://www.syncfusion.com/angular-components/angular-textbox) for demonstration. Add the Angular TextBox package using:
 
 ```bash
 ng add @syncfusion/ej2-angular-inputs
 ```
 
-This command will perform the following configurations:
+This command performs the following configurations:
 
 - Add the `@syncfusion/ej2-angular-inputs` package and peer dependencies to your `package.json`.
-- Import the TextBox component component in your application.
+- Import the TextBox component in your application.
 - Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> material theme in `angular.json`.
 
 For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
@@ -123,7 +123,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are p
 ng add @syncfusion/ej2-angular-inputs
 ```		
 For applications not compiled with Ivy, use the `ngcc` tagged packages:		
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy-compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
 ```bash		
 npm add @syncfusion/ej2-angular-inputs@32.1.19-ngcc		
 ```
@@ -172,7 +172,8 @@ Icons can be added using the [`addIcon`](https://ej2.syncfusion.com/angular/docu
 | position     | string             | Specifies the icon placement. Possible values: append, prepend.                |
 | icons        | string or string[] | CSS class or array of CSS classes for the icon(s). These classes are applied to a span element that renders the icon or button. |
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 import { Component, ViewChild } from '@angular/core';
 import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
@@ -190,13 +191,14 @@ export class App {
     (this.textboxObj as any).addIcon('append', 'e-icons e-input-group-icon e-input-popup-date');
   }
 }
-```
+{% endhighlight %}
 
-```css
+{% highlight css tabtitle="app.css" %}
 .e-input-group-icon.e-input-popup-date::before {
     content: "\e901";
 }
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Run the application
 
@@ -224,9 +226,9 @@ The application starts on the development server and the TextBox component is av
 
 ## Floating label
 
-The floating label feature displays the label above the TextBox when focused or when the input contains a value. Configure floating labels using the [FloatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#floatlabeltype) property:
+The floating label feature displays the label above the TextBox when focused or when the input contains a value. Configure floating labels using the [floatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#floatlabeltype) property.
 
-Available `FloatLabelType` values:
+Available `floatLabelType` values:
 
 - **Never** — Placeholder text remains static and does not float above the TextBox.
 - **Always** — Placeholder text permanently floats above the TextBox regardless of focus or input state.

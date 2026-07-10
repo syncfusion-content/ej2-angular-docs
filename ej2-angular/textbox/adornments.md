@@ -20,7 +20,7 @@ Adornments are useful for:
 - **Functional Enhancement**: Including action buttons such as password visibility toggles or clear buttons
 - **Input Validation**: Displaying validation status icons or error indicators
 - **Unit Indicators**: Showing currency symbols, temperature units, domain extensions, or measurement units
-- **Accessibility**: Providing visual and interactive guidance to help users input and improve discoverability
+- **Accessibility**: Providing visual and interactive guidance to help users enter data and improve discoverability.
 
 ## Common Use Cases
 

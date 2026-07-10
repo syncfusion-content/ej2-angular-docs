@@ -12,10 +12,10 @@ standalone: true,
     template: `<div class="wrap">
                 <label> Normal Input </label>
                     <ejs-textbox 
-                    placeholder = "Enter numeric values" (keyup)="onKeyup($event)"></ejs-textbox>
+                    placeholder="Enter numeric values" (keyup)="onKeyup($event)"></ejs-textbox>
                  <label> Floating Input </label>
                  <ejs-textbox 
-                    placeholder = "Enter numeric values" floatLabelType="Auto" (keyup)="onKeyup($event)"></ejs-textbox>
+                    placeholder="Enter numeric values" floatLabelType="Auto" (keyup)="onKeyup($event)"></ejs-textbox>
               </div>`
 })
 
