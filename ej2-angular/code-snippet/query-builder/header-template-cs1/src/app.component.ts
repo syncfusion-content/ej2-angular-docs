@@ -10,6 +10,8 @@ import { QueryBuilderComponent } from '@syncfusion/ej2-angular-querybuilder';
 import { ActionEventArgs, RuleModel } from '@syncfusion/ej2-querybuilder';
 import { ItemModel, MenuEventArgs } from '@syncfusion/ej2-splitbuttons';
 import { closest } from '@syncfusion/ej2-base';
+import { ChangeEventArgs as DDLChangeEventArgs, FieldSettingsModel } from '@syncfusion/ej2-dropdowns';
+import { ChangeEventArgs as CheckBoxChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
 imports: [
@@ -33,7 +35,7 @@ export class AppComponent implements OnInit {
   public importRules?: RuleModel;
   public actionArgs?: ActionEventArgs;
   public deleteGroupBtn?: Element;
-  public fields?: Object;
+  public fields?: FieldSettingsModel;
   ngOnInit(): void {
     this.importRules = {
       'condition': 'and', 'not': true,
@@ -74,12 +76,13 @@ export class AppComponent implements OnInit {
       this.fields = { text: 'key', value: 'value' };
   }
 
-  onChange(e: any): void {
-    this.qryBldrObj!.notifyChange(e.checked,e.event.target, 'not');
+  onChange(e: CheckBoxChangeEventArgs, ruleID: string): void {
+    let elem: HTMLElement = document.getElementById(ruleID)!.querySelector('.e-rule-value') as HTMLElement;
+    this.qryBldrObj!.notifyChange(e.checked as boolean, elem, 'not');
   }
 
-  conditionChange(e: any): void {
-    this.qryBldrObj!.notifyChange(e.value, e.element, 'condition');
+  conditionChange(e: DDLChangeEventArgs): void {
+    this.qryBldrObj!.notifyChange(e.value as string, e.element, 'condition');
   }
 
   onSelect(event: MenuEventArgs): void {
@@ -92,8 +95,8 @@ export class AppComponent implements OnInit {
     }
   }
 
-  onClick(e: any): void {
-    this.qryBldrObj!.deleteGroup(closest(e.target.offsetParent, '.e-group-container'));
+  onClick(e: MouseEvent): void {
+    this.qryBldrObj!.deleteGroup(closest((e.target as Element), '.e-group-container'));
   }
 }
 

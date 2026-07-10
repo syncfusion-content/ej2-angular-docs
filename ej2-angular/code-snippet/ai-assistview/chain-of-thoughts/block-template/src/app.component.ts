@@ -45,7 +45,7 @@ AIAssistView.Inject(AssistThinking);
 })
 export class AppComponent {
   @ViewChild('assistInstance')
-  public assistInstance: AIAssistViewComponent;
+  public assistInstance!: AIAssistViewComponent;
 
   @ViewChild('blockTemplate')
   public blockTemplate: any;

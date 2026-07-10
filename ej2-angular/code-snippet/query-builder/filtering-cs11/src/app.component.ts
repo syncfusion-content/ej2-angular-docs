@@ -8,7 +8,7 @@ import { enableRipple } from '@syncfusion/ej2-base'
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { RuleModel, QueryBuilderComponent, ColumnsModel, TemplateColumn } from '@syncfusion/ej2-angular-querybuilder';
 import { expenseData } from './datasource';
-import { DropDownList, MultiSelect } from '@syncfusion/ej2-dropdowns';
+import { DropDownList, MultiSelect, ChangeEventArgs, MultiSelectChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 import { getComponent, createElement } from '@syncfusion/ej2-base';
 
 @Component({
@@ -58,8 +58,8 @@ export class AppComponent implements OnInit {
                     value: args.values as string[],
                     mode: 'CheckBox',
                     placeholder: 'Select Transaction',
-                    change: (e: any) => {
-                        this.qryBldrObj!.notifyChange(e.value, e.element);
+                    change: (e: MultiSelectChangeEventArgs) => {
+                        this.qryBldrObj!.notifyChange(e.value as string[], e.element);
                     }
                 });
                 multiSelectObj.appendTo('#' + args.elements.id);
@@ -67,8 +67,8 @@ export class AppComponent implements OnInit {
                 let dropDownObj: DropDownList = new DropDownList({
                     dataSource: ds,
                     value: args.values as string,
-                    change: (e: any) => {
-                        this.qryBldrObj!.notifyChange(e.itemData.value, e.element);
+                    change: (e: ChangeEventArgs) => {
+                        this.qryBldrObj!.notifyChange((e.itemData as { value: string }).value, e.element);
                     }
                 });
                 dropDownObj.appendTo('#' + args.elements.id);

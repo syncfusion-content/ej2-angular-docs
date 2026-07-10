@@ -11,6 +11,8 @@ import { ActionEventArgs, RuleModel } from '@syncfusion/ej2-querybuilder';
 import { compile } from '@syncfusion/ej2-base';
 import { DataManager, Predicate, Query } from '@syncfusion/ej2-data';
 import { employeeData } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import { SliderChangeEventArgs, TicksDataModel } from '@syncfusion/ej2-inputs';
 
 @Component({
 imports: [
@@ -29,7 +31,7 @@ standalone: true,
 export class AppComponent implements OnInit {
 @ViewChild('querybuilder') qryBldrObj: QueryBuilderComponent | undefined;
   public importRules?: RuleModel;
-  public rangeticks?: Object;
+  public rangeticks?: TicksDataModel;
 
   ngOnInit(): void {
     this.importRules = {
@@ -54,11 +56,11 @@ export class AppComponent implements OnInit {
     }
   }
 
-  fieldChange(e: any): void {
-      this.qryBldrObj!.notifyChange(e.value, e.element, 'field');
+  fieldChange(e: ChangeEventArgs): void {
+      this.qryBldrObj!.notifyChange(e.value as string, e.element, 'field');
   };
 
-  valueChange(e: any, ruleID: string): void {
+  valueChange(e: SliderChangeEventArgs, ruleID: string): void {
     let elem: HTMLElement = document.getElementById(ruleID) as HTMLElement;
     this.qryBldrObj!.notifyChange(e.value as Date, elem, 'value');
     this.refreshTable(this.qryBldrObj!.getRule(elem), ruleID);
@@ -79,7 +81,7 @@ export class AppComponent implements OnInit {
 
   refreshTable(rule: RuleModel, ruleID: string): void {
     let template: string = '<tr><td>${EmployeeID}</td><td>${FirstName}</td><td>${Age}</td></tr>';
-    let compiledFunction: any = compile(template);
+    let compiledFunction: Function = compile(template);
     let dataManagerQuery: Query = this.qryBldrObj!.getDataManagerQuery({condition: 'and', rules: [rule]});
     let dataManager: DataManager = new DataManager(employeeData);
     dataManager.defaultQuery = dataManagerQuery;
