@@ -126,7 +126,6 @@ export class AppComponent {
         }
       })
       .catch((error) => {
-        console.error('Error fetching from Azure OpenAI:', error);
         this.assistViewInstance.addPromptResponse(
           '⚠️ Something went wrong while connecting to Azure OpenAI. ' +
             'Verify endpoint, API key, deployment name, API version, and CORS settings or try again later. '
