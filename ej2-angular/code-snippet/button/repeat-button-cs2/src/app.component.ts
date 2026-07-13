@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   standalone: true,
   imports: [ButtonModule],
-  templateUrl: './app.component.html'
+  templateUrl: 'app.component.html'
 })
 
 export class AppComponent { 

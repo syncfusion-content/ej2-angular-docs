@@ -157,7 +157,7 @@ bootstrapApplication(App, appConfig)
 ng serve --open
 ```
 
-N> Looking for the full Angular Data Grid component overview, features, pricing, and documentation? Visit the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) page.
+N> Looking for the full Angular DataGrid component overview, features, pricing, and documentation? Visit the [Angular DataGrid](https://www.syncfusion.com/angular-components/angular-data-grid) page.
 
 ## See also
 
