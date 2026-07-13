@@ -1,18 +1,26 @@
 ---
 layout: post
-title: License key registration in Angular Licensing component | Syncfusion
-description: Learn here all about License key registration in Syncfusion Angular Licensing component of Syncfusion Essential JS 2 and more.
+title: License key registration in Angular application | Syncfusion
+description: Learn how to register a Syncfusion license key in an Angular application using Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: License key registration 
+control: License key registration
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Register Syncfusion® License Key in EJ2-Angular application
+# Register Syncfusion® License Key in an Angular Application
 
 A Syncfusion<sup style="font-size:70%">&reg;</sup> license key must be registered when your project references Syncfusion EJ2-Angular packages. The generated license key is a string that should be registered after adding any [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular reference](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli#create-a-new-application).
 
->Note: Syncfusion<sup style="font-size:70%">&reg;</sup> license validation occurs offline during application execution and does not require internet access. However, the initial activation step using the npx command requires internet access. Applications registered with a Syncfusion® license key can be deployed on systems without internet connectivity.
+> **Note:** Starting with the 2022 Vol 1 release (v20.1.0.47), license key registration is required for Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 products.
+>
+> **Note:** Syncfusion<sup style="font-size:70%">&reg;</sup> license validation occurs offline during application execution and does not require internet access. However, the initial activation step using the `npx` command requires internet access. Applications registered with a Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on systems without internet connectivity.
+
+**Prerequisites:**
+
+* Node.js 14.0 or later installed on your machine.
+* A Syncfusion<sup style="font-size:70%">&reg;</sup> account and a generated license key. See [Generate Syncfusion license key for Angular](./license-key-generation).
+* An Angular project that references at least one `@syncfusion/ej2-angular-*` package.
 
 Generate the [Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation) and register it in one of the following ways,
 
@@ -29,7 +37,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-import { registerLicense } from '@syncfusion/ej2-base';
+import { registerLicense } from '@syncfusion/ej2-base'; // Requires @syncfusion/ej2-base v20.1.0.47 or later.
 
 // Registering Syncfusion license key
 registerLicense('Replace your generated license key here');
@@ -42,102 +50,117 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 ```
 
->Note: Only from 2022 Vol 1 v20.1.0.47, license key registration required for Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 products.
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key using the npx Command
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key using the npx command
-
-Register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key through npx command in one of the following ways,
+Register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key through the `npx` command in one of the following ways:
 
 * [Register the license key with the license file](#register-the-license-key-with-the-license-file)
 * [Register the license key with the environment variable](#register-the-license-key-with-the-environment-variable)
 
->If both the license text file and the environment variable are used for license registration, priority is set to `syncfusion-license.txt` file. If you want to use the environment variable for license registration, then remove the license text file from the application.
+> **Note:** If both the license text file and the environment variable are used for license registration, priority is given to the `syncfusion-license.txt` file. If you want to use the environment variable for license registration, remove the license text file from the application.
 
 ### Register the License Key with the License File
 
 The following steps show how to register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key with the license text file.
 
-* Create the `syncfusion-license.txt` file in the application root directory and paste the license key.
+1. Ensure the `@syncfusion/ej2-angular-*` packages are installed in the project:
 
-* Open the command prompt in the application root directory and activate the license key by using the below command,
+   ```sh
+   npm install
+   ```
 
-  ```sh
-  npx syncfusion-license activate
-  ```
+2. Create the `syncfusion-license.txt` file in the application root directory and paste the license key into it.
 
-* Once the Syncfusion<sup style="font-size:70%">&reg;</sup> license key is activated, the following console message will appear.
+3. Open the command prompt in the application root directory and activate the license key by using the following command:
 
-  **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
+   ```sh
+   npx syncfusion-license activate
+   ```
 
-* Remove the `.cache` folder from node modules in the application.
+4. Once the Syncfusion<sup style="font-size:70%">&reg;</sup> license key is activated, the following console message will appear:
 
-* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
+   **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
 
->If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key. Also, check out some common licensing FAQs while registering the license key using the npx command from this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot#Reactivating-license-once-after-updating-the-package-version-while-using-npx)
+5. Remove the `.cache` folder from `node_modules` in the application:
 
-### Register the license key with the environment variable
+   ```
 
-You can set the environment variable as `SYNCFUSION_LICENSE` in the system and paste the license key as a value. It can be used in all applications on your machine.
+6. Run the application. If you face a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. For frequently asked questions about license registration using the `npx` command, see this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
 
-The following steps show how to set environment variable in different operating systems and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+> If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key. Also, see common licensing FAQs when registering the license key using the `npx` command from this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot#Reactivating-license-once-after-updating-the-package-version-while-using-npx).
 
-* Set the environment variable in different operating systems like below,
+### Register the License Key with the Environment Variable
+
+You can set the environment variable as `SYNCFUSION_LICENSE` in the system and paste the license key as a value. It can then be used by all applications on your machine.
+
+The following steps show how to set the environment variable in different operating systems and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 #### Windows
 
-* Open the command prompt and use [setx](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/setx) command to add the new environment variable.
+* Open the Command Prompt and use the [setx](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/setx) command to add a new user-level environment variable:
 
   ```sh
-  setx SYNCFUSION_LICENSE "license key"
+  setx SYNCFUSION_LICENSE "your license key"
   ```
-
 #### Mac
 
-* Open the terminal and use the `env` command to view the variables list.
+* Open the terminal and use the `env | grep SYNCFUSION_LICENSE` command to view whether the variable is already set.
 
-* You can set the environment variable by using below command,
-
-  ```sh
-  echo 'export SYNCFUSION_LICENSE="license key"' >> ~/.bash_profile
-  ```
-
-* If you want to modify the environment variable in the bash profile. Use the below command,
+* Set the environment variable by appending the export line to your shell profile:
 
   ```sh
-  nano .bash_profile
+  echo 'export SYNCFUSION_LICENSE="your license key"' >> ~/.bash_profile
   ```
 
-* Once modified the variable. Press `ctrl+x` to exit then `Y` and `Enter` button to save the changes.
+  If you use `zsh` as the default shell on newer macOS releases, use `~/.zshrc` instead.
 
-* Close the terminal and open it again to see the environment variables changes using `env` command.
+* To modify the environment variable, open the profile in an editor:
+
+  ```sh
+  nano ~/.bash_profile
+  ```
+
+* After editing, press `Ctrl+X`, then `Y`, then `Enter` to save the file.
+
+* Reload the profile so the change takes effect in the current session:
+
+  ```sh
+  source ~/.bash_profile
+  ```
+
+* Close and reopen the terminal, then verify the variable with `env | grep SYNCFUSION_LICENSE`.
 
 #### Linux
 
-* Open the terminal and use the `env` command to view the variables list.
+* Open the terminal and use the `env | grep SYNCFUSION_LICENSE` command to view whether the variable is already set.
 
-* You can set or modify the [environment variable](https://help.ubuntu.com/community/EnvironmentVariables) by using below command,
+* You can set or modify the [environment variable](https://help.ubuntu.com/community/EnvironmentVariables) by using the following command. For a session-only change:
 
   ```sh
-  export SYNCFUSION_LICENSE='license key'
+  export SYNCFUSION_LICENSE='your license key'
   ```
 
-* Once set the `SYNCFUSION_LICENSE` environment variable, restart the IDE or application terminal before using the license activation command.
+* Once the `SYNCFUSION_LICENSE` environment variable is set, restart the IDE or application terminal before using the license activation command.
 
-* Open the command prompt in the application root directory and activate the license key by using the below command,
+* Open the command prompt in the application root directory and activate the license key by using the following command:
 
   ```sh
   npx syncfusion-license activate
   ```
 
-* Once the Syncfusion<sup style="font-size:70%">&reg;</sup> license key is activated, the following console message will appear.
+* Once the Syncfusion<sup style="font-size:70%">&reg;</sup> license key is activated, the following console message will appear:
 
   **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
 
-* Remove the `.cache` folder from node modules in the application.
+* Remove the `.cache` folder from `node_modules` in the application:
 
-* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
+  ```sh
+  rm -rf node_modules/.cache
+  ```
 
-### Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in CI Services
+* Run the application. If you face a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. For frequently asked questions, see this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
+
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in CI Services
 
 The following sections show how to use an environment variable in CI services.
 
@@ -162,7 +185,7 @@ The following sections show how to use an environment variable in CI services.
 
 * Create a new [User-defined Variable](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value.
 
-* Add the Syncfusion<sup style="font-size:70%">&reg;</sup> license activation command after running npm install or yarn like below,
+* Add the Syncfusion<sup style="font-size:70%">&reg;</sup> license activation command after running `npm install` or `yarn` as shown below.
 
 The following example shows the syntax for Windows build agents.
 
@@ -198,15 +221,14 @@ steps:
 
 #### Azure Pipelines (Classic)
 
-* Create a new [User-defined Variable](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value.
+* Create a new [User-defined Variable](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value. Make sure the **Allow access to all pipelines** option is enabled for the variable.
 
-* Add the Syncfusion<sup style="font-size:70%">&reg;</sup> license activation command after running npm install or yarn using bash task like below,
+* Add the Syncfusion<sup style="font-size:70%">&reg;</sup> license activation command after running `npm install` or `yarn` using a Bash task. Map the variable to the task environment so `npx` can read it:
 
 ```bash
 # Activate the license
 npx syncfusion-license activate
 ```
-
 ![Bash task](images/bash-script.png)
 
 ## Register Multiple License Keys
@@ -222,9 +244,12 @@ registerLicense('license-key-1-here;license-key-2-here');
 
 > When registering multiple keys, ensure there are no spaces before or after the semicolon separator.
 
+This approach only applies to the `registerLicense` API in `main.ts`. When using the `npx` command with an environment variable, only a single license key can be supplied; for multiple keys, switch to the `syncfusion-license.txt` file and concatenate the keys with semicolons.
+
 
 ## See Also
 
-* [Generate Syncfusion license key for Angular](./license-key-generation)
+* [Generate Syncfusion license key for Angular](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation)
 * [Syncfusion Licensing Overview](https://ej2.syncfusion.com/angular/documentation/licensing/overview)
 * [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot)
+* [Register Multiple License Keys](#register-multiple-license-keys)
