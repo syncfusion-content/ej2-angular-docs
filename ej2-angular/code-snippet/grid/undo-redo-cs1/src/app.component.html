@@ -1,0 +1,22 @@
+<div class="control-section" >
+    <div class="col-lg-9">
+      <ejs-grid #normalgrid id="Normalgrid" height='220px' [dataSource]="inventoryStoreData" allowPaging="true" 
+      [editSettings]="editSettings" [toolbar]="toolbar">
+        <e-columns>
+          <e-column field="ID" headerText="ID" width="120" textAlign="Right" isPrimaryKey="true"
+          [validationRules]="idRules"></e-column>
+          <e-column field="Product" headerText="Product Name" width="180" editType="dropdownedit" [edit]="editparams"></e-column>
+          <e-column field="VendorA" headerText="Vendor A (units)" width="160" textAlign="Right"
+          editType="numericedit" [edit]="numericEditParams"></e-column>
+          <e-column field="VendorB" headerText="Vendor B (units)" width="160" textAlign="Right"
+          editType="numericedit" [edit]="numericEditParams"></e-column>
+          <e-column field="VendorC" headerText="Vendor C (units)" width="160" textAlign="Right"
+          editType="numericedit" [edit]="numericEditParams"></e-column>
+          <e-column field="VendorD" headerText="Vendor D (units)" width="160" textAlign="Right"
+          editType="numericedit" [edit]="numericEditParams"></e-column>
+          <e-column field="UnitPrice" headerText="Price (per unit)" width="160" textAlign="Right"
+          format="C2" editType="numericedit" [edit]="numericEditParams" [validationRules]="unitPriceRules"></e-column>
+        </e-columns>
+      </ejs-grid>
+    </div>
+  </div>
