@@ -200,3 +200,30 @@ The following example demonstrates immediate saving or updating using the `cellS
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/edit-batch-cs1" %}
+
+## Enable Undo / Redo
+ 
+The Grid supports Undo / Redo actions in batch editing, allowing changes such as cell edits, row additions, and row deletions to be reverted or reapplied before saving. This feature can be enabled by setting the `editSettings.enableUndoRedo` property to **true**.
+ 
+Undo and redo operations can be performed using keyboard shortcuts. Press Ctrl + Z to undo an action, and Ctrl + Y to redo an action.
+ 
+In addition, **Undo** and **Redo** toolbar items can be added to the Grid toolbar to perform these actions through the user interface.
+
+Here's an example that demonstrates how to enable Undo / Redo in batch editing:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/undo-redo-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/grid/undo-redo-cs1/src/app.component.html %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/undo-redo-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/undo-redo-cs1" %}
+
+> Note: The maximum number of undo and redo actions stored in the stack can be controlled using the `editSettings.undoRedoLimit` property. This property limits the number of actions that can be reverted or reapplied during a batch editing session. The default value is `20`.
