@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  padding: 20px;
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+::ng-deep .e-grid {
+  font-family: Segoe UI, Helvetica;
+}
+
+::ng-deep .e-grid .e-gridcontent .e-rowcell {
+  padding: 12px 20px;
+}

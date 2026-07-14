@@ -86,22 +86,23 @@ npm install @syncfusion/ej2-angular-pivotview --save
 
 ## Adding CSS reference
 
-The following CSS files are available in the **../node_modules/@syncfusion** package folder. Add these as references in **src/styles.css**
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be applied using CSS or SASS from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages). Additionally, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
+
+This example uses the `Material 3` theme for the Pivot Table component from the theme package. To install the [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package, use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+The required styles for the Pivot Table component are imported as shown below:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-angular-pivotview/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/pivotview/index.css';
 ```
-
-> Ensure that the import order aligns with the component's dependency sequence.
 
 For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
