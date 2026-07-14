@@ -86,7 +86,7 @@ import { Component } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     template: `<!-- To Render BlockEditor component. -->
-    <div class="container" style="width: 40px; margin: 50px auto;">
+    <div class="container" style="margin-top: 50px;">
         <ejs-blockeditor />
     </div>`
 })

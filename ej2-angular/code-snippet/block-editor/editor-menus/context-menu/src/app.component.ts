@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
 import { BlockModel, ContentType, ContextMenuItemModel } from "@syncfusion/ej2-blockeditor";
-import { ContextMenuClosingEventArgs, ContextMenuOpeningEventArgs, ContextMenuItemSelectEventArgs } from '@syncfusion/ej2-blockeditor';
+import { ContextMenuBeforeCloseEventArgs, ContextMenuBeforeOpenEventArgs, ContextMenuItemSelectEventArgs } from '@syncfusion/ej2-blockeditor';
 
 
 @Component({
@@ -209,10 +209,10 @@ export class AppComponent {
         enable: true,
         showItemOnClick: true,
         items: this.customContextMenuItems,
-        opening: (args: ContextMenuOpeningEventArgs) => {
+        beforeOpen: (args: ContextMenuBeforeOpenEventArgs) => {
             // Your actions here
         },
-        closing: (args: ContextMenuClosingEventArgs) => {
+        beforeClose: (args: ContextMenuBeforeCloseEventArgs) => {
             // Your actions here
         },
         itemSelect: (args: ContextMenuItemSelectEventArgs) => {

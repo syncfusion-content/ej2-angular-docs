@@ -81,7 +81,31 @@ npm install @syncfusion/ej2-angular-charts --save
 
 N> Installing `@syncfusion/ej2-angular-charts` automatically installs the required dependency packages.
 
-## Step 5: Register the Stock Chart module and add the component
+## Step 5: Adding CSS References
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Stock Chart component themes can be applied using CSS or SASS from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages). Additionally, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
+
+This example uses the `Material 3` theme for the Stock Chart component from the theme package. To install the [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package, use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+The following CSS styles are available in the `../node_modules/@syncfusion` folder. Reference them in `src/styles.css` as follows:
+
+{% tabs %}
+{% highlight css tabtitle="styles.css" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/stock-chart/index.css";
+
+{% endhighlight %}
+{% endtabs %}
+
+## Step 6: Register the Stock Chart module and add the component
 
 Import `StockChartModule` from `@syncfusion/ej2-angular-charts` and add it to the `imports` collection of the standalone component. Then, add the Angular Stock Chart component using the `<ejs-stockchart>` selector in the component template.
 
@@ -105,7 +129,7 @@ This renders an empty stock chart in the application.
 
 N> The component selector must match the root element used in the `src/index.html` file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`.
 
-## Step 6: Create your first Stock Chart with data source and series type
+## Step 7: Create your first Stock Chart with data source and series type
 
 This section explains how to create a simple stock chart by binding financial data, configuring the time-based axis, and rendering a series using Angular Stock Chart components.
 
@@ -247,7 +271,7 @@ In this example:
 * [`Close`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#close) maps the closing price of the stock.
 * [`<e-stockchart-series-collection>`] and [`<e-stockchart-series>`] directives are used to define and render one or more series in the stock chart.
 
-## Step 7: Run the application
+## Step 8: Run the application
 
 Run the application using the following command:
 

@@ -16,7 +16,7 @@ The Block Editor component provides a comprehensive set of public methods to pro
 
 ### Adding a block
 
-Add a new block to the editor at a specified position using the [addBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#addblock) method. This method can also insert the block before or after a target block.
+Add a new block to the editor at a specified position using the [addBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#addblock) method. This method can also insert the block before or after a target block.
 
 ```typescript
 // Add a new paragraph block after a specific block
@@ -36,7 +36,7 @@ editor.addBlock(newBlock, 'target-block-id', true); // true = after, false = bef
 
 ### Removing a block
 
-Remove a block from the editor using the [removeBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#removeblock) method.
+Remove a block from the editor using the [removeBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#removeblock) method.
 
 ```typescript
 // Remove a block by its ID
@@ -45,7 +45,7 @@ editor.removeBlock('block-to-remove-id');
 
 ### Moving a block
 
-Move a block from one position to another within the editor using the [moveBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#moveblock) method.
+Move a block from one position to another within the editor using the [moveBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#moveblock) method.
 
 ```typescript
 // Move a block to a new position
@@ -54,7 +54,7 @@ editor.moveBlock('source-block-id', 'target-block-id');
 
 ### Updating a block
 
-Update the properties of an existing block with the [updateBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#updateblock) method. Only the specified properties are modified, while others remain unchanged. It returns `true` if the update was successful and `false` otherwise.
+Update the properties of an existing block with the [updateBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#updateblock) method. Only the specified properties are modified, while others remain unchanged. It returns `true` if the update was successful and `false` otherwise.
 
 ```typescript
 // Update block properties
@@ -65,7 +65,7 @@ editor.updateBlock('block-id', {
 
 ### Getting a block
 
-Retrieve a block model by its unique identifier using the [getBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#getblock) method. It returns `null` if the block is not found.
+Retrieve a block model by its unique identifier using the [getBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#getblock) method. It returns `null` if the block is not found.
 
 ```typescript
 // Get a specific block
@@ -74,7 +74,7 @@ editor.getBlock('block-id');
 
 ### Getting block count
 
-Use the [getBlockCount](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#getblockcount) method to retrieve the total number of blocks in the editor.
+Use the [getBlockCount](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#getblockcount) method to retrieve the total number of blocks in the editor.
 
 ```typescript
 // Get total block count
@@ -102,7 +102,7 @@ The following example demonstrates the usage of the block editor methods.
 
 ### Setting text selection
 
-Set the text selection within a specific content element using start and end positions with the [setSelection](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#setselection) method.
+Set the text selection within a specific content element using start and end positions with the [setSelection](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#setselection) method.
 
 ```typescript
 // Select text from position 5 to 15 in a content element
@@ -111,7 +111,7 @@ editor.setSelection('content-element-id', 5, 15);
 
 ### Setting cursor position
 
-Place the cursor at a specific position within a block using the [setCursorPosition](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#setcursorposition) method.
+Place the cursor at a specific position within a block using the [setCursorPosition](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#setcursorposition) method.
 
 ```typescript
 // Set cursor at position 10 in a block
@@ -120,7 +120,7 @@ editor.setCursorPosition('block-id', 10);
 
 ### Getting selected blocks
 
-Retrieve the currently selected blocks in the editor with the [getSelectedBlocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#getselectedblocks) method. It returns `null` if no blocks are selected.
+Retrieve the currently selected blocks in the editor with the [getSelectedBlocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#getselectedblocks) method. It returns `null` if no blocks are selected.
 
 ```typescript
 // Get all selected blocks
@@ -129,7 +129,7 @@ editor.getSelectedBlocks();
 
 ### Getting selection range
 
-Get the current selection range in the editor using the [getRange](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#getrange) method. This method returns a `Range` object representing the selected text, or `null` if no selection is active.
+Get the current selection range in the editor using the [getRange](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#getrange) method. This method returns a `Range` object representing the selected text, or `null` if no selection is active.
 
 ```typescript
 // Get current selection range
@@ -138,7 +138,7 @@ editor.getRange();
 
 ### Setting selection range
 
-Set the selection range in the editor using the [selectRange](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#selectrange) method. This method accepts a `Range` object that defines the start and end positions of the selection.
+Set the selection range in the editor using the [selectRange](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#selectrange) method. This method accepts a `Range` object that defines the start and end positions of the selection.
 
 ```typescript
 // Create and select a custom range
@@ -147,7 +147,7 @@ editor.selectRange(customRange);
 
 ### Selecting a block
 
-Select a specific block in the editor using the [selectBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#selectblock) method.
+Select a specific block in the editor using the [selectBlock](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#selectblock) method.
 
 ```typescript
 // Select a complete block
@@ -156,7 +156,7 @@ editor.selectBlock('block-id');
 
 ### Selecting all blocks
 
-Select all blocks in the editor using the [selectAllBlocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#selectallblocks) method.
+Select all blocks in the editor using the [selectAllBlocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#selectallblocks) method.
 
 ```typescript
 // Select all content in the editor
@@ -184,7 +184,7 @@ The following example demonstrates the usage of the selection and cursor methods
 
 ### FocusIn
 
-Use the [focusIn](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#focusin) method to programmatically set focus on the editor, making it ready for user input.
+Use the [focusIn](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#focusin) method to programmatically set focus on the editor, making it ready for user input.
 
 ```typescript
 // Focus the editor
@@ -193,7 +193,7 @@ editor.focusIn();
 
 ### FocusOut
 
-Use the [focusOut](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#focusout) method to programmatically remove focus from the editor. This clears any active selections and makes the editor inactive.
+Use the [focusOut](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#focusout) method to programmatically remove focus from the editor. This clears any active selections and makes the editor inactive.
 
 ```typescript
 // Remove focus from the editor
@@ -204,7 +204,7 @@ editor.focusOut();
 
 ### Executing toolbar action
 
-Execute a built-in toolbar formatting command using the [executeToolbarAction](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#executetoolbaraction) method. Use this to apply formatting such as bold, italic, or color to the selected text.
+Execute a built-in toolbar formatting command using the [executeToolbarAction](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#executetoolbaraction) method. Use this to apply formatting such as bold, italic, or color to the selected text.
 
 ```typescript
 // Apply bold formatting
@@ -216,7 +216,7 @@ editor.executeToolbarAction(BuiltInToolbar.Color, '#ff0000');
 
 ### Enabling toolbar items
 
-Enable specific items in the inline toolbar using the [enableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#enabletoolbaritems) method. This method accepts a single item or an array of items to enable.
+Enable specific items in the inline toolbar using the [enableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#enabletoolbaritems) method. This method accepts a single item or an array of items to enable.
 
 ```typescript
 // Enable a specific toolbar item
@@ -228,7 +228,7 @@ editor.enableToolbarItems(['bold', 'italic', 'underline']);
 
 ### Disabling toolbar items
 
-Disable specific items in the inline toolbar using the [disableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#disabletoolbaritems) method. This method accepts a single item or an array of items to disable.
+Disable specific items in the inline toolbar using the [disableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#disabletoolbaritems) method. This method accepts a single item or an array of items to disable.
 
 ```typescript
 // Disable a specific toolbar item
@@ -259,7 +259,7 @@ The following example demonstrates the usage of the formatting and focus methods
 
 ### Getting data as JSON
 
-Export the editor content in JSON format using the [getDataAsJson](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#getdataasjson) method. This method allows exporting all blocks or a specific block.
+Export the editor content in JSON format using the [getDataAsJson](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#getdataasjson) method. This method allows exporting all blocks or a specific block.
 
 ```typescript
 // Get all blocks as JSON
@@ -271,7 +271,7 @@ const specificBlock = editor.getDataAsJson('block-id');
 
 ### Getting data as HTML
 
-Export the editor content in HTML format using the [getDataAsHtml](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#getdataashtml) method. This method allows exporting all blocks or a specific block.
+Export the editor content in HTML format using the [getDataAsHtml](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#getdataashtml) method. This method allows exporting all blocks or a specific block.
 
 ```typescript
 // Get all blocks as HTML
@@ -283,7 +283,7 @@ const specificBlockHtml: string = editor.getDataAsHtml('block-id');
 
 ### Rendering Blocks from Json
 
-Renders blocks from JSON data using the [renderBlocksFromJson](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#renderblocksfromjson) method. This method allows either replacing all existing content or inserting at the cursor position.
+Renders blocks from JSON data using the [renderBlocksFromJson](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#renderblocksfromjson) method. This method allows either replacing all existing content or inserting at the cursor position.
 
 ```typescript
 // Replace all existing content
@@ -298,7 +298,7 @@ const insertedAfterTarget = editor.renderBlocksFromJson(jsonData, false, 'target
 
 ### Parsing HTML to Blocks
 
-Convert an HTML string into an array of `BlockModel` objects using the [parseHtmlToBlocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#parsehtmltoblocks) method. This method allows transforming HTML content into structured editor blocks.
+Convert an HTML string into an array of `BlockModel` objects using the [parseHtmlToBlocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#parsehtmltoblocks) method. This method allows transforming HTML content into structured editor blocks.
 
 ```typescript
 // Parse HTML into block
@@ -307,7 +307,7 @@ const blocks: BlockModel[] = editor.parseHtmlToBlocks(html);
 
 ### Printing editor content
 
-Print the editor content using the [print](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#print) method. This action opens the browser's print dialog with the current editor content.
+Print the editor content using the [print](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#print) method. This action opens the browser's print dialog with the current editor content.
 
 ```typescript
 // Print the editor content

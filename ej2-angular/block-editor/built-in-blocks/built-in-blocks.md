@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Blocks in Angular Block Editor component
 
-The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#blocks) property.
+The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blocks) property.
 
 ## Blocks
 

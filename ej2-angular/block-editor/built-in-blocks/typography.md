@@ -50,7 +50,7 @@ The following sample demonstrates the configuration of a paragraph block in the 
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/basestylesprop) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
+You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
 
 ### Block type & properties
 

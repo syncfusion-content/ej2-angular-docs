@@ -55,6 +55,24 @@ The following example demonstrates to implement checkbox filtering in the Syncfu
 
 {% previewsample "page.domainurl/samples/grid/check-box-filter-cs1" %}
 
+## Filter modes
+ 
+The Grid `Excel` and `CheckBox` filtering features support two modes, `Default` and `Immediate`. In `Default` mode, filter changes are applied only after clicking the "Filter" or "OK" button in the filter dialog, which is the default behavior. In `Immediate` mode, filters are applied automatically when filter items are checked or unchecked in the filter dialog.
+ 
+The following example enables immediate mode by setting the `filterSettings.mode` property to `Immediate`:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/excel-like-filtering-cs9/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/excel-like-filtering-cs9/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/excel-like-filtering-cs9" %}
+
 ## Customize the filter choice count
 
 By default, the filter choice count is set to 1000, which means the filter dialog displays a maximum of 1000 distinct values for each column as a checkbox list. This default value ensures the filter operation remains efficient, even with large datasets. Remaining records (those beyond the first 1000) are accessible through the search box within the filter dialog.
