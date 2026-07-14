@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor";
 import { BlockModel, ContentType} from "@syncfusion/ej2-blockeditor";
-import { BlockActionMenuOpeningEventArgs, BlockActionMenuClosingEventArgs, BlockActionItemSelectEventArgs } from '@syncfusion/ej2-blockeditor';
+import { BlockActionMenuBeforeOpenEventArgs, BlockActionMenuBeforeCloseEventArgs, BlockActionItemSelectEventArgs } from '@syncfusion/ej2-blockeditor';
 
 @Component({
     imports: [BlockEditorModule],
@@ -64,10 +64,10 @@ export class AppComponent {
                 tooltip: 'Show block information'
             }
         ],
-        opening: (args: BlockActionMenuOpeningEventArgs) => {
+        beforeOpen: (args: BlockActionMenuBeforeOpenEventArgs) => {
             // Your actions here
         },
-        closing: (args: BlockActionMenuClosingEventArgs) => {
+        beforeClose: (args: BlockActionMenuBeforeCloseEventArgs) => {
             // Your actions here
         },
         itemSelect: (args: BlockActionItemSelectEventArgs) => {

@@ -31,6 +31,26 @@ To enable the Column Chooser, configure the following properties in the Grid com
 
 > By default, the Column Chooser dialog displays the header text of each column. If a column does not have a header text, its field name is shown instead.
 
+## Column chooser modes
+ 
+The Grid column chooser supports two modes, `Default` and `Immediate`. In `Default` mode, column visibility changes are applied only after clicking the "OK" button in the column chooser dialog. In `Immediate` mode, column visibility changes are applied automatically when columns are checked or unchecked through the checkboxes in the column chooser.
+ 
+The following example enables immediate mode by setting the `columnChooserSettings.mode` property to `Immediate`:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/columnchooser-cs9/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/columnchooser-cs9/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/columnchooser-cs9" %}
+
+> The `columnChooserSettings.immediateModeDelay` property can be used to control how quickly visibility changes are applied in immediate mode. This property specifies the delay interval, in milliseconds, before the update is executed. The default value is `0`, which applies changes immediately.
+
 ## Hide column in column chooser dialog
 
 Column names can be hidden in the column chooser by setting the [showInColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/grid/column#showincolumnchooser) property to `false`. This is useful when a column should always remain visible in the Grid and should not be hidden through the Column Chooser.

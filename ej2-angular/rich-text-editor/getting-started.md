@@ -72,21 +72,19 @@ npm install @syncfusion/ej2-angular-richtexteditor
 
 ## Adding CSS reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package folder.
-This can be referenced in `src/styles.css` using the following code.
+Syncfusion provides multiple themes for the Rich Text Editor component. For a complete list of available themes, refer to the [themes packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages). 
 
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material3.css';
+To apply the [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme, install the corresponding theme package by using the following command:
+
+```bash
+npm install @syncfusion/ej2-material3-theme
 ```
 
-I> You can also refer to the [themes section](https://ej2.syncfusion.com/angular/documentation/appearance/overview) for details about built-in themes and CSS references for individual controls.
+The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into `src/styles.css`.
+
+```css
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/rich-text-editor/index.css';
+```
 
 ## Module Injection
 

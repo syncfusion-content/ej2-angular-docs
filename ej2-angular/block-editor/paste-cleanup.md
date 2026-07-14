@@ -116,7 +116,7 @@ export class AppComponent {
 
 ## Allowing plain text
 
-To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#plaintext) property to `true` in [pasteCleanupSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#pastesettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
+To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#plaintext) property to `true` in [pasteCleanupSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#pastesettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
 
 ```typescript
 import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
@@ -162,8 +162,8 @@ The Block Editor provides events to monitor and interact with the paste action.
 
 |Name|Args|Description|
 |---|---|---|
-|[beforePasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#beforepastecleanup)|BeforePasteCleanupEventArgs|Triggers before the content is pasted into the editor.|
-|[afterPasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#afterpastecleanup)|AfterPasteCleanupEventArgs|Triggers after the content is pasted into the editor.|
+|[beforePasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#beforepastecleanup)|BeforePasteCleanupEventArgs|Triggers before the content is pasted into the editor.|
+|[afterPasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#afterpastecleanup)|AfterPasteCleanupEventArgs|Triggers after the content is pasted into the editor.|
 
 Below snippet demonstrates how to configure above events in the editor.
 
