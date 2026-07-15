@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Browser support for Angular DataGrid | Syncfusion
-description: Learn about browser support and compatibility details for the Syncfusion Essential JS 2 Angular DataGrid component across modern desktop and mobile browsers.
+title: Browser support for Angular Data Grid | Syncfusion
+description: Learn about browser support and compatibility details for the Syncfusion Essential JS 2 Angular Data Grid component across modern desktop and mobile browsers.
 control: Browser Support 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Browser Support for Syncfusion® Angular DataGrid
+# Browser Support for Syncfusion® Angular Data Grid
 
-Syncfusion® Angular DataGrid component support modern browsers and rely on current web platform features.
-The DataGrid is compatible with all common desktop and mobile browsers.
+Syncfusion® Angular Data Grid component support modern browsers and rely on current web platform features.
+The Data Grid is compatible with all common desktop and mobile browsers.
 
 | Browser | Supported Versions |
 |:--------|:-------------------|

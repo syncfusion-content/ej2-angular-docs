@@ -6,7 +6,7 @@ import { GridComponent, GridModule, PageService, SelectionSettingsModel } from '
   imports: [ GridModule ],
   standalone: true,
   selector: 'app-root',
-  template: `<ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' [selectionSettings]='selectionOptions' height='268px'>
+  template: `<ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' [allowSelection]='false' height='268px'>
             <e-columns>
                   <e-column field='OrderID' headerText='Order ID' type='number' isPrimaryKey='true' textAlign='Right' width=100></e-column>
                   <e-column field='CustomerID' headerText='Customer ID' type='string' width=120></e-column>
@@ -25,6 +25,5 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.data = data;
     this.pageSettings = { pageSize: 8 };
-    this.selectionOptions = { type: 'Multiple' };
   }
 }

@@ -72,9 +72,29 @@ npm install @syncfusion/ej2-angular-diagrams
 
 N> Installing `@syncfusion/ej2-angular-diagrams` automatically installs the required dependency packages.
 
-## Step 4: Add the required CSS references
+## Step 4: Add the required styles
 
-Add the required Syncfusion® styles to the `src/styles.css` file.
+The Diagram component needs Syncfusion® theme styles to display correctly. Add the styles using one of the following options.
+
+### Option 1: Add styles from a theme package
+
+Syncfusion® theme packages include ready-to-use styles for supported components. Install the Tailwind 3 theme package using the following command:
+
+```bash
+npm install @syncfusion/ej2-tailwind3-theme --save
+```
+
+Then add the following CSS reference to the **src/styles.css** file:
+
+```css
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/diagram/index.css";
+```
+
+For the list of available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+
+### Option 2: Add styles from component packages
+
+After installing the Diagram package, the required style files are available under the **node_modules/@syncfusion** directory. Add the required Syncfusion® styles to the **src/styles.css** file.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
@@ -83,7 +103,7 @@ Add the required Syncfusion® styles to the `src/styles.css` file.
 @import '../node_modules/@syncfusion/ej2-angular-diagrams/styles/tailwind3.css';
 ```
 
-N> Syncfusion® provides multiple built-in themes. If your application uses a different theme, replace the `tailwind3.css` references with the corresponding theme file, such as `material3.css`.
+N> Syncfusion® provides multiple built-in themes. If the application uses a different theme, replace the **tailwind3.css** references with the corresponding theme file, such as **material3.css**.
 
 ## Step 5: Register the Diagram module and add the component
 

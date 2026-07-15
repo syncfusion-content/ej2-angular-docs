@@ -19,7 +19,6 @@ These tools speed up development and reinforce best practices for Syncfusion com
 ### Key Benefits
 
 - **Expert Component Knowledge** - Deep understanding of 145+ Angular components and their implementation patterns.
-- **Release Insights** - Access the Syncfusion Angular release history and produce clear change logs between any two versions.
 - **Unlimited Usage** - No request limits, time restrictions, or query caps.
 - **Privacy-Focused** - The tools operate based on the user's query and do not store any content, data, or prompts.
 
@@ -146,16 +145,6 @@ Create a configuration file in your project folder to install the server for you
 
 **Verifying Installation** Check your editor's MCP Server list for `sf-angular-mcp` with a **Connected** status to confirm a successful installation.
 
-## Available Tools
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> MCP servers exposes a set of specialized tools for retrieving different types of product knowledge and resources. Tools can be called directly for specific information, or an assistant can choose the most relevant tool automatically.
-
-| # | Tool | Description |
-|---|------|-------------|
-| 1 | `search_docs` | Search Syncfusion Angular documentation for features, examples, and configuration help. |
-| 2 | `get_changelog ` | Get upgrade steps and breaking changes for moving between Syncfusion Angular versions. |
-| 3 | `list_versions` | List all Syncfusion Angular release versions available. |
-
 ## Common use cases
 
 The examples below showcase how the different MCP tools handle real-world Angular development scenarios. Tools can be invoked directly, as shown in the examples below, for specific needs. Alternatively, an AI assistant can automatically select the most appropriate tool based on the request.
@@ -204,21 +193,6 @@ Describe the problem in plain language, and let `search_docs` help resolve it.
 {% promptcards %}
 {% promptcard Schedule Issues %}
 #search_docs Why aren't my Schedule events displaying or saving correctly?
-{% endpromptcard %}
-{% endpromptcards %}
-
-**Version History**
-
-Use `list_versions` and `get_changelog` to explore available releases and review what changed.
-{% promptcards %}
-{% promptcard List Versions %}
-#list_versions Which Syncfusion Angular release versions are available?
-{% endpromptcard %}
-{% endpromptcards %}
-
-{% promptcards %}
-{% promptcard Migration Guide %}
-#get_changelog Show me the new features and breaking changes in the latest Syncfusion Angular release.
 {% endpromptcard %}
 {% endpromptcards %}
 
