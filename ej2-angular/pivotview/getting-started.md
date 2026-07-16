@@ -24,7 +24,7 @@ To get started quickly with Angular Pivot Table, you can watch this video:
 
 Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
-## Setup the Angular application
+## Set up the Angular application
 
 A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
@@ -76,7 +76,7 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Pivot Table packages
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Pivot Table package
 
 To install the Pivot Table component, use the following command:
 
@@ -86,7 +86,7 @@ npm install @syncfusion/ej2-angular-pivotview --save
 
 ## Adding CSS reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be applied using CSS or SASS from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages). Additionally, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be applied using CSS or SASS from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages) — or, alternatively, via CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
 
 This example uses the `Material 3` theme for the Pivot Table component from the theme package. To install the [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package, use the following command:
 
@@ -98,7 +98,7 @@ npm install @syncfusion/ej2-material3-theme --save
 {% endhighlight %}
 {% endtabs %}
 
-The required styles for the Pivot Table component are imported as shown below:
+Add the required styles for the Pivot Table component to the `src/styles.css` file as shown below:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-material3-theme/styles/pivotview/index.css';
@@ -115,19 +115,17 @@ Modify the template in the **src/app/app.ts** file to render the Pivot Table com
 {% include code-snippet/pivot-grid/getting-started-cs105/src/app/app.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/pivot-grid/getting-started-cs105/src/styles.css %}
-{% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs105/src/main.ts %}
 {% endhighlight %}
 
 {% endtabs %}
 
-N> If you move the Pivot Table component template code into **src/app/app.html**, ensure to clear all auto-generated markup and styles from the file before moving. This prevents layout conflicts and helps ensure that Syncfusion components render correctly.
+N> If you move the Pivot Table component template code into a separate **src/app/app.html** file, clear all auto-generated markup and styles from `app.html` before pasting the template. This prevents layout conflicts and helps ensure that Syncfusion components render correctly.
 
 ## Run the application
+
+Use the following command to run the application:
 
 ```bash
 ng serve --open
