@@ -86,10 +86,6 @@ npm install @syncfusion/ej2-angular-treegrid --save
 ```
 ## Adding CSS reference
 
-You can add the CSS files required for the Syncfusion Angular Tree Grid component using one of the following methods.
-
-### Option 1: Add CSS References from a Theme Package
-
 Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Tree Grid components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following command:
@@ -107,30 +103,10 @@ Then add the following CSS reference to the **src/style.css** file:
 {% tabs %}
 {% highlight css tabtitle="App.css" %}
 
-@import "../node_modules/@syncfusion/ej2-material3-theme/treegrid/treegrid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/treegrid/index.css";
 
 {% endhighlight %}
 {% endtabs %}
-
-### Option 2: Add CSS References from Component Packages
-
-After installing the Tree Grid package, the required CSS files are available in the corresponding Syncfusion packages under the **node_modules/@syncfusion** directory. Add the following CSS references to the **src/style.css** file:
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-treegrid/styles/material3.css';
-```
-
-For using SCSS styles, refer to [this guide](../common/how-to/sass).
-
 
 
 ## Add Tree Grid component
