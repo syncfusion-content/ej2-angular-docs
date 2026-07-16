@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Common installation errors in Angular Common control | Syncfusion
-description: Learn here all about Common installation errors in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: Common Installation Errors in Syncfusion Essential Studio | Syncfusion
+description: Learn about the most common installation errors in Syncfusion Essential Studio, including their causes and suggested solutions.
 platform: ej2-angular
 control: common
 documentation: ug
@@ -10,111 +10,118 @@ domainurl: ##DomainURL##
 
 # Common Installation Errors
 
-This guide covers the most common installation errors, along with their causes and solutions.
-* Unlocking the license installer using the trial key
-* License has expired
-* Unable to find a valid license or trial
-* Unable to install because another installation is in progress
-* Unable to install due to Controlled folder access
+This guide covers the most common installation errors encountered when installing Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio, along with their causes and suggested solutions. These errors apply to the web installer, offline installer.
 
-## Unlocking the License Installer using the Trial Key
+## Unlocking the License Installer Using the Trial Key
 
 **Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript installer.
 
-![license download](images/error1.png)
+![Trial unlock key error](images/error1.png)
 
-**Reason** <br /> You are attempting to use a Trial unlock key to unlock the licensed installer.
+**Applies to:** Licensed (web and offline) installer on Windows.
 
-**Suggested solution** <br /> Only a licensed unlock key can unlock a licensed installer. So, to unlock the Licensed installer, use the Licensed unlock key. To generate the licensed unlock key, refer to [this](https://www.syncfusion.com/kb/2326/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account) article.
+**Reason** <br /> You are attempting to use a trial unlock key to unlock the licensed installer.
 
-## License has Expired
+**Suggested solution** <br />
+
+1. Only a licensed unlock key can unlock a licensed installer. Use the licensed unlock key when prompted by the installer.
+2. To generate the licensed unlock key, refer to [this](https://www.syncfusion.com/kb/2326/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account) article.
+3. After obtaining the key, re-run the installer and enter it on the **Unlock Key** screen.
+
+## License Has Expired
 
 **Error Message:** Your license for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript – EJ2 has been expired since {date}. Please renew your subscription and try again.
 
-***Online Installer***
+**Online Installer**
 
-![license download](images/error2.png)
+![License expired online installer](images/error2.png)
+
+**Applies to:** Online installer on Windows.
 
 **Reason** <br /> This error message will appear if your license has expired.
 
 **Suggested solution** <br /> You can choose from the options below.
 
 1. Renew your subscription through the [renewals page](https://www.syncfusion.com/account/my-renewals).
-
-2. You can get a new license [here](https://www.syncfusion.com/sales/products).
-
+2. Purchase a new license from the [Syncfusion sales page](https://www.syncfusion.com/sales/products).
 3. Contact the sales team at sales@syncfusion.com.
+4. Extend the 30-day trial period after your trial license has expired. For steps to extend the trial, see the [trial extension guide](https://www.syncfusion.com/sales/communitylicense).
+5. After renewing or purchasing, re-run the installer and enter the new unlock key to apply the license.
 
-4. You can also extend the 30-day trial period after your trial license has expired.
-
-## Unable to find a valid license or trial
+## Unable to Find a Valid License or Trial
 
 **Error Message:** Sorry, we are unable to find a valid license or trial for Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript – EJ2 under your account.
 
-***Offline installer***
+**Offline Installer**
 
-![license download](images/error3.png)
+![No valid license offline installer](images/error3.png)
 
-***Online installer***
+**Online Installer**
 
-![license download](images/error4.png)
+![No valid license online installer](images/error4.png)
+
+**Applies to:** Both online and offline installers on Windows (Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio, EJ2 platform).
 
 **Reason** <br /> The following are possible causes of this error:
-
-The following are possible causes of this error:
 
 * Your trial period has expired.
 * You do not have a license or an active trial.
 * You are not the license holder for the license.
 * Your account administrator has not yet assigned you a license.
 
-**Suggested solution** <br />
+**Suggested solution** <br /> You can choose from the options below.
 
-1. You can get a new license [here](https://www.syncfusion.com/sales/products).
-
-2. Contact your account administrator.
-
+1. Purchase a new license from the [Syncfusion sales page](https://www.syncfusion.com/sales/products).
+2. Contact your account administrator to verify that a license is assigned to your account.
 3. Send an email to clientrelations@syncfusion.com to request a license.
-
 4. Contact the sales team at sales@syncfusion.com for assistance.
 
-## Unable to Install because of Another Installation
+## Unable to Install Because Another Installation Is in Progress
 
 **Error Message:** Another installation is in progress. You cannot start this installation without completing all other currently active installations. Click Cancel to end this installer, or click Retry after the current installation is complete to try again.
-![license download](images/error5.png)
 
-**Reason** <br /> You are trying to install when another installation is already running in your machine.
+![Another installation in progress](images/error5.png)
 
-**Suggested solution** <br /> Open and kill the msiexec process in the task manager and then continue to install Syncfusion<sup style="font-size:70%">&reg;</sup>. If the problem is still present, restart the computer and try Syncfusion<sup style="font-size:70%">&reg;</sup> installer.
+**Applies to:** Windows installers (online and offline) using MSI-based setup.
+
+**Reason** <br /> You are trying to install when another installation is already running on your machine.
+
+**Suggested solution** <br /> End the active `msiexec.exe` process through Windows Task Manager, then run the Syncfusion<sup style="font-size:70%">&reg;</sup> installer again. If the problem persists, restart the computer and retry.
 
 1. Open Windows Task Manager.
 2. Go to the **Details** tab.
 3. Select **msiexec.exe**, and then click **End task**.
 
-![license download](images/error6.png)
+![Task Manager Details tab - msiexec.exe](images/error6.png)
 
-## Unable to Install due to Controlled Folder Access
+4. If the issue persists, restart the computer and run the Syncfusion<sup style="font-size:70%">&reg;</sup> installer again.
 
-***Offline***
+## Unable to Install Due to Controlled Folder Access
+
+**Offline Installer**
 
 **Error Message:** Controlled folder access seems to be enabled in your machine. The provided install or samples location (e.g., Public Documents) is protected by the controlled folder access settings.
 
-![license download](images/error7.png)
+![Controlled folder access - offline installer](images/error7.png)
 
-***Online***
+**Online Installer**
 
 **Error Message:** Controlled folder access seems to be enabled in your machine. The provided install, samples, or download location (e.g., Public Documents) is protected by the controlled folder access settings.
 
-![license download](images/error8.png)
+![Controlled folder access - online installer](images/error8.png)
 
-**Reason** <br /> You have enabled controlled folder access settings on your computer.
+**Applies to:** Windows installers (online and offline) when installing into protected folders such as Public Documents.
 
-***Suggested solution***
+**Reason** <br /> You have enabled controlled folder access on your computer, which prevents the installer from writing to protected directories.
 
-**Suggestion 1:** <br />
-1. By default, we ship our demos in the Public Documents folder.
-2. If Controlled folder access is enabled on your machine, our demos cannot be installed in the Documents folder. If you need to install the demos in the Documents folder, follow the steps in this [link](https://support.microsoft.com/en-us/windows/allow-an-app-to-access-controlled-folders-b5b6627a-b008-2ca2-7931-7e51e912b034) to allow access or disable Controlled folder access.
-3. You can re-enable this option after installing the Syncfusion<sup style="font-size:70%">&reg;</sup> setup.
+**Suggested solution** <br /> Choose one of the following options.
 
-**Suggestion 2:** <br />
-1. If you do not want to disable controlled folder access, you can install our demos in another directory.
+**Option 1: Allow access or disable Controlled folder access**
+
+1. By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> demos are installed in the Public Documents folder.
+2. With Controlled folder access enabled, the installer cannot write to the Documents folder. If you need to install the demos there, follow the steps in this [Microsoft support article](https://support.microsoft.com/en-us/windows/allow-an-app-to-access-controlled-folders-b5b6627a-b008-2ca2-7931-7e51e912b034) to either allow the installer access or disable Controlled folder access.
+3. You can re-enable Controlled folder access after installing the Syncfusion<sup style="font-size:70%">&reg;</sup> setup.
+
+**Option 2: Install to a different directory**
+
+1. If you do not want to disable Controlled folder access, run the installer and choose a non-protected location (for example, `C:\Syncfusion\`) on the install location screen for both the Syncfusion<sup style="font-size:70%">&reg;</sup> setup and the samples.
