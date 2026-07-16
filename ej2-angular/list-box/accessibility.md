@@ -55,15 +55,16 @@ The List box component followed the [keyboard interaction](https://www.w3.org/WA
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Up arrow</kbd> | Moves focus to the previous option. |
-| <kbd>Down arrow</kbd> | Moves focus to the next option. |
+| <kbd>Up arrow</kbd> | Moves focus to and selects the previous item. |
+| <kbd>Down arrow</kbd> | Moves focus to and selects the next item. |
 | <kbd>Home</kbd> | Moves focus to first option. |
 | <kbd>End</kbd> | Moves focus to last option. |
 | <kbd>Space</kbd> | Changes the selection state of the focused option. |
 | <kbd>Ctrl + A</kbd> | Selects all options in the list. |
 | <kbd>Ctrl + Shift + Home</kbd> | Selects the focused option and all options up to the first option. |
 | <kbd>Ctrl + Shift + End</kbd> | Selects the focused option and all options down to the last option. |
-| <kbd>Ctrl + (Up or Down)</kbd> | Press Ctrl key with up / down arrow or mouse to select multiple items. |
+| <kbd>Ctrl + Up</kbd> | Moves focus to the previous item. |
+| <kbd>Ctrl + Down</kbd> | Moves focus to the next item. |
 
 ## Ensuring accessibility
 
