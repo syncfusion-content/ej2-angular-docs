@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collaborative Editing in Angular Block Editor Control | Syncfusion
+title: Real-Time Collaboration in Angular Block Editor Control | Syncfusion
 description: Learn how to enable real-time collaborative editing in the Angular Block Editor control, including user presence, version history, and more.
 platform: ej2-angular
 control: Block Editor
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://www.syncfusion.com/angular-components/angular-block-editor/
 ---
 
-# Collaborative Editing in Angular Block Editor control
+# Real-Time Collaboration in Angular Block Editor control
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by **Yjs**, a Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
@@ -26,12 +26,21 @@ With collaboration enabled, users can:
 
 Before enabling collaboration, install the `yjs` library and a Yjs provider. See [Yjs Providers](https://docs.yjs.dev/ecosystem/connection-provider) to choose the right provider for your use case.
 
-Inject the `Collaboration` module into the Block Editor before use in your Angular component.
+Inject the `CollaborationService` module into the Block Editor before use in your Angular component.
 
 ```typescript
-import { BlockEditorComponent, Collaboration } from '@syncfusion/ej2-angular-blockeditor';
+import { Component } from '@angular/core';
+import { BlockEditorModule, CollaborationService } from '@syncfusion/ej2-angular-blockeditor';
 
-BlockEditorComponent.Inject(Collaboration);
+@Component({
+  selector: 'app-block-editor',
+  imports: [BlockEditorModule],
+  template: `
+    <ejs-blockeditor/>
+  `,
+  providers: [CollaborationService]
+})
+export class App {}
 ```
 
 ## Yjs Providers
@@ -75,10 +84,10 @@ Create an adapter that provides the Yjs runtime and the shared fragment to the B
 ```typescript
 import * as Y from 'yjs';
 
-const adapter = new YjsAdapter({
+const adapter: YjsAdapter = {
     yRuntime: Y,
     yXmlFragment: yFragment
-});
+};
 ```
 
 ### Step 3: Configure a provider
@@ -113,17 +122,20 @@ Pass the adapter and provider to the Block Editor through the `collaborationSett
 
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { BlockEditorComponent } from '@syncfusion/ej2-angular-blockeditor';
+import { BlockEditorModule, BlockEditorComponent, CollaborationSettingsModel, CollaborationService } from '@syncfusion/ej2-angular-blockeditor';
 
 @Component({
-    selector: 'app-block-editor',
-    templateUrl: './block-editor.component.html'
+  selector: 'app-block-editor',
+  imports: [BlockEditorModule],
+  template: `
+    <ejs-blockeditor/>
+  `,
+  providers: [CollaborationService]
 })
-export class BlockEditorComponent implements OnInit {
-    @ViewChild('blockEditor') blockEditor: BlockEditorComponent;
-    
-    collaborationSettings: any;
-    
+export class App implements OnInit{
+  @ViewChild('blockEditor') blockEditor: BlockEditorComponent;
+  collaborationSettings: CollaborationSettingsModel;
+
     ngOnInit() {
         this.collaborationSettings = {
             adapter: adapter,
@@ -131,12 +143,6 @@ export class BlockEditorComponent implements OnInit {
         };
     }
 }
-```
-
-**In component template (HTML):**
-
-```html
-<ejs-blockeditor [collaborationSettings]="collaborationSettings"></ejs-blockeditor>
 ```
 
 ## User presence and remote cursors
@@ -156,7 +162,7 @@ this.collaborationSettings = {
 Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The users property includes `id`, `user` and `avatarBgColor`.
 
 ```typescript
-export class BlockEditorComponent implements OnInit {
+export class App implements OnInit {
     users: any[] = [{
         id: 'user-1',
         user: 'John Doe',
@@ -191,20 +197,29 @@ const users = this.blockEditor.users;
 
 ### Enable version history
 
-Inject the `VersionHistory` module and configure the `versionHistory` property under `collaborationSettings` property in your Angular component.
+Inject the `VersionHistoryService` module and configure the `versionHistory` property under `collaborationSettings` property in your Angular component.
 
 ```typescript
-import { BlockEditorComponent, Collaboration, VersionHistory } from '@syncfusion/ej2-angular-blockeditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { BlockEditorModule, BlockEditorComponent, CollaborationSettingsModel, CollaborationService, VersionHistoryService } from '@syncfusion/ej2-angular-blockeditor';
 
-BlockEditorComponent.Inject(Collaboration, VersionHistory);
+@Component({
+  selector: 'app-block-editor',
+  imports: [BlockEditorModule],
+  template: `
+    <ejs-blockeditor/>
+  `,
+  providers: [CollaborationService, VersionHistoryService]
+})
 
-export class BlockEditorComponent implements OnInit {
+export class App implements OnInit{
+    @ViewChild('blockEditor') blockEditor: BlockEditorComponent;
     myStorage: any;
-    collaborationSettings: any;
-    
+    collaborationSettings: CollaborationSettingsModel;
+
     ngOnInit() {
         this.myStorage = new CustomVersionStorage(`blockeditor-${uniqueId}`);
-        
+
         this.collaborationSettings = {
             adapter: adapter,
             provider: provider,
@@ -236,7 +251,7 @@ The `IVersionStorage` interface defines the following methods:
 After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
 
 ```typescript
-export class BlockEditorComponent implements OnInit {
+export class App implements OnInit {
     @ViewChild('blockEditor') blockEditor: BlockEditorComponent;
     
     async getVersionHistory() {
@@ -306,7 +321,7 @@ async restoreSnapshot(snapshotId: string) {
 }
 ```
 
-> **Note:** When a snapshot is restored, the current document state is automatically 
+> **Note:** For development and testing, `y-webrtc` or PartyKit allow you to get started without a server. For production, use `y-websocket` or a managed provider such as Liveblocks or Hocuspocus for reliable, persistent synchronization.
 > backed up before the restore operation is applied.
 
 #### Compare versions
