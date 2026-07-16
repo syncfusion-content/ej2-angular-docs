@@ -2,8 +2,8 @@
 layout: post
 title: Common Installation Errors in Syncfusion Essential Studio | Syncfusion
 description: Learn about the most common installation errors in Syncfusion Essential Studio, including their causes and suggested solutions.
-platform: common
-control: installation
+platform: ej2-angular
+control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
