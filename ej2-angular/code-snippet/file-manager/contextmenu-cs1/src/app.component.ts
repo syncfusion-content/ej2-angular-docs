@@ -16,7 +16,7 @@ import { MenuOpenEventArgs, MenuClickEventArgs } from '@syncfusion/ej2-filemanag
 export class AppComponent {
     public ajaxSettings?: object;
     public contextMenuSettings?: object;
-    public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+    public hostUrl: string = 'https://physical-service.syncfusion.com/';
     public ngOnInit(): void {
         this.ajaxSettings = {
             url: this.hostUrl + 'api/FileManager/FileOperations',

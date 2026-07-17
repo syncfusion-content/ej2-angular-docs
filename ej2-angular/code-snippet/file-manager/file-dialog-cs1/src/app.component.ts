@@ -46,7 +46,7 @@ export class AppComponent {
     public ajaxSettings?: object;
     public contextMenuSettings?: object;
     public toolbarSettings?: object;
-    public hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
+    public hostUrl = 'https://physical-service.syncfusion.com/';
     public contextmenuItems: string[] = ['Open', '|', 'Cut', 'Copy', 'Delete', 'Rename', '|', 'Details'];
 
     public btnClick: EmitType<object> = () => {

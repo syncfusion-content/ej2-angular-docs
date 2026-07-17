@@ -16,7 +16,7 @@ import { L10n } from '@syncfusion/ej2-base';
 export class AppComponent {
     public ajaxSettings?: object;
     public locale?: string;
-    public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+    public hostUrl: string = 'https://physical-service.syncfusion.com/';
     public ngOnInit(): void {
         L10n.load({
             'de': {
