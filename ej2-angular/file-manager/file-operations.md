@@ -825,7 +825,7 @@ The following table outlines the request parameters for *download* operations:
             permission:null,
             _fm_created:"2019-07-22T12:15:45.081Z",
             _fm_modified:"2019-07-22T12:15:45.097Z",
-            _fm_imageUrl:"https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage?path=/1.png",
+            _fm_imageUrl:"https://physical-service.syncfusion.com/api/FileManager/GetImage?path=/1.png",
             _fm_imageAttr:
             {
                 alt:"1.png"
@@ -1063,7 +1063,7 @@ imports: [FileManagerModule, FileManagerAllModule ],
 })
 
 export class App {
-  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+  public hostUrl: string = 'https://physical-service.syncfusion.com/';
   public ajaxSettings: object = {
     url: this.hostUrl + 'api/FileManager/FileOperations',
     downloadUrl: this.hostUrl + 'api/FileManager/Download'
@@ -1088,7 +1088,7 @@ imports: [FileManagerModule, FileManagerAllModule ],
 })
 
 export class App {
-  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+  public hostUrl: string = 'https://physical-service.syncfusion.com/';
   public ajaxSettings: object = {
     url: this.hostUrl + 'api/FileManager/FileOperations',
     uploadUrl: this.hostUrl + 'api/FileManager/Upload'

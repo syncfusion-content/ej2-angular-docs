@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor supports automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are automatically removed from the clipboard content while preserving important structural elements such as tables, lists, and images. You can enable this behavior using the [enableClipboardCleanup](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#enableClipboardCleanup) property.
 
-> Rich Text Editor features are segregated into individual feature-wise modules. To enable clipboard cleanup, include the `ClipboardCleanupService` in the providers section.
+> Rich Text Editor features are segregated into individual feature-wise modules. To enable clipboard cleanup, include the `ClipBoardCleanupService` in the providers section.
 
 When `enableClipboardCleanup` is set to `true`, copy and cut operations are intercepted to remove unwanted inline styles. When set to `false` the browser’s default copy and cut behavior applies.
 
@@ -52,11 +52,11 @@ In this example, the `beforeClipboardWrite` event is used to customize the selec
 
 ### Best Practices
 
-- Always include `ClipboardCleanupService` in production application - it’s the #1 way to prevent style explosion.
+- Always include `ClipBoardCleanupService` in production application - it’s the #1 way to prevent style explosion.
 - Combine with Paste Cleanup module for even stricter incoming paste handling.
 - Use `beforeClipboardWrite` sparingly — heavy processing can slightly delay `Ctrl+C`.
 
 ### Common Issues
 
-- “Copied content still has inline styles” → Confirm `ClipboardCleanupService` is in providers.
+- “Copied content still has inline styles” → Confirm `ClipBoardCleanupService` is in providers.
 - “Event not firing” → Make sure you’re using the correct event name `beforeClipboardWrite` (camelCase in Angular).

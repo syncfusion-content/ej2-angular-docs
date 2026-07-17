@@ -40,7 +40,7 @@ export class AppComponent {
     public ajaxSettings?: object;
     // Mapping Tab items showCloseButton property
     public enableClose: boolean = true;
-    public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+    public hostUrl: string = 'https://physical-service.syncfusion.com/';
     public ngOnInit(): void {
         this.ajaxSettings = {
             url: this.hostUrl + 'api/FileManager/FileOperations',
