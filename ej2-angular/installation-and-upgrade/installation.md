@@ -19,6 +19,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler (ngcc) package (Angular’s legacy compilation and rendering pipeline)
+
 ### Ivy Library Distribution Package
 
 By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>=20.2.36) support [Angular Ivy distribution](https://angular.io/guide/ivy). These packages are compatible with Angular version 12 and above. To install a package, use the following command.
