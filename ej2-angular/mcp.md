@@ -16,7 +16,7 @@ These tools speed up development and reinforce best practices for Syncfusion com
 
 > The previously available **Agentic UI Builder** (`#sf_angular_ui_builder`) has been upgraded to an **Agent skill-based experience** and is no longer part of the MCP Server. To learn more about the new **Agentic UI Builder**, see the [documentation](https://ej2.syncfusion.com/angular/documentation/agentic-ui-builder). The **AI Coding Assistant** (#sf_angular_assistant) has been **renamed** to **search_docs** (`#search_docs`) to ensure the tool name follows MCP naming conventions.
 
-### Key Benefits
+## Key Benefits
 
 - **Expert Component Knowledge** - Deep understanding of 145+ Angular components and their implementation patterns.
 - **Unlimited Usage** - No request limits, time restrictions, or query caps.
@@ -147,7 +147,7 @@ Create a configuration file in your project folder to install the server for you
 
 ## Common use cases
 
-The examples below showcase how the different MCP tools handle real-world Angular development scenarios. Tools can be invoked directly, as shown in the examples below, for specific needs. Alternatively, an AI assistant can automatically select the most appropriate tool based on the request.
+The examples below showcase how the `search_docs` tool handles real-world Angular development scenarios. The tool can be invoked directly, as shown in the examples below, for specific needs. Alternatively, an AI assistant can automatically invoke it based on the request.
 
 **Get Started**
 
