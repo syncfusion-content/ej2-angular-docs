@@ -30,7 +30,7 @@ The steps below show how to install Essential<sup style="font-size:70%">&reg;</s
 
     ![license download](images/license1.png)
 
-    >Note: The installer wizard extracts the syncfusionejs2webinstaller_{version}.exe dialog, which displays the package’s unzip operation.
+    N> The installer wizard extracts the syncfusionejs2webinstaller_{version}.exe dialog, which displays the package’s unzip operation.
 
 2. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript - EJ2 Web Installer’s welcome wizard will be displayed. Click the Next button.
 
@@ -48,7 +48,7 @@ The steps below show how to install Essential<sup style="font-size:70%">&reg;</s
 
     ![license download](images/license4.png)
 
-    >Important: If the required software for the selected product isn’t already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
+    I> If the required software for the selected product isn’t already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
 
     **Required Software**
 
@@ -58,7 +58,7 @@ The steps below show how to install Essential<sup style="font-size:70%">&reg;</s
 
     ![license download](images/license6.png)
 
-    >Note: From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has provided option to uninstall the previous versions from 18.1 while installing the new version.
+    N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has provided option to uninstall the previous versions from 18.1 while installing the new version.
 
 5. Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
@@ -68,7 +68,7 @@ The steps below show how to install Essential<sup style="font-size:70%">&reg;</s
 
     ![license download](images/license8.png)
 
-    >Note: By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
+    N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 
 7. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
@@ -86,7 +86,7 @@ The steps below show how to install Essential<sup style="font-size:70%">&reg;</s
 
     ![license download](images/license8_.png)
 
-    >Important: The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> License (Trial or Licensed).
+    I> The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> License (Trial or Licensed).
 
 10. The download and installation/uninstallation progress will be displayed as shown below.
 
@@ -128,7 +128,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Inst
 You can uninstall all installed products by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> {version}** entry (element 1 in the screenshot below) from the Windows Control Panel. Alternatively, you can uninstall only JavaScript – EJ2 by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for JavaScript – EJ2 {version}** entry (element 2 in the screenshot below).
 ![license download](images/u3.png)
 
->Note: If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio** for JavaScript **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
+N> If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio** for JavaScript **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
 
 1. The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all products, check the **Uninstall All** checkbox. Click the Next button.
 
@@ -152,7 +152,7 @@ You can uninstall all installed products by selecting the **Syncfusion<sup style
 
     ![license download](images/u8.png)
 
-    >Note: By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
+    N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 
 5. The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
@@ -163,7 +163,7 @@ You can uninstall all installed products by selecting the **Syncfusion<sup style
 7. The login wizard appears. Enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can create one by selecting **Create an Account**. If you have forgotten your password, select **Forgot Password** to reset it. Click **Install**.
     ![license download](images/u10.png)
 
-    >Important: The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> License (Trial or Licensed).
+    I> The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> License (Trial or Licensed).
 
 8. The download, installation, and uninstallation progresses will be shown.
 
