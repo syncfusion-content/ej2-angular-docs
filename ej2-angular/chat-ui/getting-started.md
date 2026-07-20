@@ -8,14 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with the Angular Chat Component
+# Getting started with the Angular Chat UI component
 
-This section explains how to create a simple Syncfusion **Chat** component and configure its features in an Angular application.
+This section explains how to create a simple Syncfusion **Chat UI** component and configure its features in an Angular application.
 
 To get started quickly with the Angular Chat UI component, you can check out this video tutorial:
 {% youtube "https://www.youtube.com/watch?v=01mflB3c8WQ" %}
 
-## Setup angular environment
+## Set up Angular environment
 
 You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
 
@@ -95,7 +95,7 @@ export class AppComponent  { }
 ```
 ## Configure User
 
-To define the chat content, use the `user` property assigns an identity to the current user, which is essential for distinguishing the user's messages from those of other participants.
+To define the chat content, use the `user` property to assign an identity to the current user, which is essential for distinguishing the user's messages from those of other participants.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

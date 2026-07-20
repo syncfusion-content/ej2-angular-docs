@@ -27,7 +27,7 @@ The steps below show how to install the Essential<sup style="font-size:70%">&reg
 1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 offline installer file from the downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
     ![license download](images/offline1.png)
 
-    N> The Installer wizard extracts the syncfusion<sup style="font-size:70%">&reg;</sup> ejs2 (version).exe dialog, which displays the package’s unzip operation.
+    >Note: The Installer wizard extracts the syncfusion<sup style="font-size:70%">&reg;</sup> ejs2 (version).exe dialog, which displays the package’s unzip operation.
 
 2. To unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, you have two options:
 
@@ -65,9 +65,9 @@ The steps below show how to install the Essential<sup style="font-size:70%">&reg
 
     ![license download](images/offline5.png)
 
-    N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has added the option to uninstall previous versions from 18.1 while installing the new version.
+    >Note: From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has added the option to uninstall previous versions from 18.1 while installing the new version.
     >
-    N> If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
+    >Note: If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
 
     **Confirmation Alert**
 
@@ -81,7 +81,7 @@ The steps below show how to install the Essential<sup style="font-size:70%">&reg
 
     ![license download](images/offline8.png)
 
-    N> The Completed screen is displayed once the JavaScript – EJ2 product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
+    >Note: The Completed screen is displayed once the JavaScript – EJ2 product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
 
     ![license download](images/offline9.png)
 
@@ -106,13 +106,13 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     Arguments: “installer file path\SyncfusionEssentialStudio(product)_(version).exe” /Install silent /UNLOCKKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
 
-    N> [..] – Arguments inside the square brackets are optional.
+    >Note: [..] – Arguments inside the square brackets are optional.
 
     **Example:** “D:/Temp/syncfusionejs2x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:/Temp/EssentialStudioPlatform.log” /InstallPath:C:/Syncfusion/x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 7. Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS2) is installed.
 
-    N> x.x.x.x should be replaced with the Essential<sup style="font-size:70%">&reg;</sup> Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+    >Note: x.x.x.x should be replaced with the Essential<sup style="font-size:70%">&reg;</sup> Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
 
 ### Command Line Uninstallation
 

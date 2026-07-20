@@ -14,7 +14,33 @@ The File Manager component provides a graphical user interface for browsing, man
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+| Requirement | Version |
+|-------------|---------|
+| Angular | 12 and above |
+| Node.js | 14.0.0 or above, Recommended: Latest Version |
+
+### Angular supported versions
+
+| Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular File Manager Version |
+|-----------------|-----------------------------------------------|
+|[Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 29.2.8|
+|[Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
+| [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
+| [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/)| 23.2.4 |
+| [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/)| 21.1.39 |
+| [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 |
+|[Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/)| 20.2.36 |
+| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
+| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/)| 19.3.43 |
+
+### Browser Support
+
+| Browser | Supported Versions |
+|:--------|:-------------------|
+| Google Chrome, including Android & iOS  | Latest 2 versions |
+| Mozilla Firefox	 | Latest version |
+| Microsoft Edge	    | Latest 2 versions |
+| Apple Safari, including iOS	  | Latest 2 versions |
 
 ## Setup the Angular application
 
@@ -77,19 +103,27 @@ npm install @syncfusion/ej2-angular-filemanager --save
 
 ## Adding CSS reference
 
-To install the [Material3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package, use the following command:
+Themes for Syncfusion® File Manager components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```bash
-npm i @syncfusion/ej2-material3-theme
-```
+Install the Material 3 theme package using the following command:
 
-In this package, the File Manager component includes an `index.css` file that automatically loads all the required dependency styles. Add the following import to the **src/styles.css** file.
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
 
-```css
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Then add the following CSS reference to the **src/style.css** file:
+
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/file-manager/index.css";
-```
 
-> Ensure that the import order aligns with the component's dependency sequence.
+{% endhighlight %}
+{% endtabs %}
 
 For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
@@ -97,10 +131,16 @@ For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/
 
 Modify the template in the **src/app/app.ts** file to render the File Manager component. Add the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) by using `<ejs-filemanager>` selector in `template` section of the **app.ts** file.
 
-The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) property must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send file operation request to the server. The File Manager service link is provided in the `hostUrl` variable.
+The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) property must be defined while initializing the File Manager. File Manager utilizes the URLs mentioned in `ajaxSettings` to send file operation requests to the server. The File Manager service link is provided in the `hostUrl` variable.
+
+### Server-side setup
+
+The sample uses `https://physical-service.syncfusion.com/` as the `url` endpoint in `ajaxSettings`.
+
+To use your own files, host a File Manager service and replace the `url` value with your service endpoint. See the [File System Provider](./file-system-provider) documentation for setup details.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/file-manager/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -113,6 +153,18 @@ The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-man
   
 {% previewsample "page.domainurl/samples/file-manager/getting-started-cs1" %}
 
+## Registering Your Syncfusion License
+
+Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register
+
+Open the `main.ts` file and add the following code:
+
+```typescript
+import { registerLicense } from '@syncfusion/ej2-base';
+registerLicense('YOUR_LICENSE_KEY');
+```
+
+> **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
 
 ## Run the application
 
@@ -121,7 +173,36 @@ Use the npm start command to run the application in the browser:
 ```sh
 npm start
 ```
+
 N> Looking for the full Angular File Manager component overview, features, pricing, and documentation? Visit the [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) page.
+
+### Production Build
+
+To create an optimized production build, run:
+
+```bash
+ng build
+```
+
+This command compiles the application and generates the production-ready files in the `dist/` directory.
+
+To preview the production build locally, run:
+
+```bash
+npx http-server dist
+```
+
+Then open the URL displayed in the terminal.
+
+## Troubleshooting
+
+- **File Manager styles are not applied:** Ensure the required Syncfusion theme CSS is imported in `src/styles.css`.
+- **Trial license warning message:** Register a valid Syncfusion license key using the `registerLicense()` method from `@syncfusion/ej2-base`.
+- **Port 4200 is already in use:** Stop the conflicting process or run the application on a different port:
+
+  ```bash
+  ng serve --port 3000
+  ```
 
 ## See also
 

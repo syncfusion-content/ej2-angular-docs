@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting started with Angular TreeMap component | Syncfusion
-description:  Checkout and learn about Getting started with Angular TreeMap component of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about Getting started with Angular TreeMap component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -14,26 +14,38 @@ This document explains the steps required to create and render a TreeMap compone
 
 {% youtube "https://www.youtube.com/watch?v=1AvAKz1EPc8" %}
 
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-treemap` versions.
+
+You also need a modern code editor such as Visual Studio Code, Cursor, or Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio.
+
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+
 ## Setup Angular Environment
 
 Prerequisites: Node.js (LTS) and npm must be installed before creating an Angular project.
 
-Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI with one of the following approaches depending on preference.
+Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI globally or use `npx` to run it on demand.
 
 ```bash
 npm install -g @angular/cli
 ```
 
-Note: Confirm that the installed Angular and Node.js versions meet project requirements before proceeding.
+```bash
+npx @angular/cli new my-app
+```
 
 ## Create an Angular Application
 
-Create a new Angular application with the Angular CLI:
+Create a new Angular application with the Angular CLI. Keep the defaults (the snippets in this guide use standalone components, which is the recommended approach for new projects).
 
 ```bash
 ng new my-app
 cd my-app
 ```
+
+Note: Confirm that the installed Angular and Node.js versions meet project requirements before proceeding.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> TreeMap package
 
@@ -51,64 +63,38 @@ Note: For npm v5 and later, installed packages are added to `dependencies` by de
 
 Modify the template in `app.component.ts` to render the `ej2-angular-treemap` component. The example below shows a minimal standalone component that mounts an empty TreeMap container.
 
-```javascript
+```typescript
 
-import { TreeMapModule, TreeMapAllModule } from '@syncfusion/ej2-angular-treemap'
 import { Component, ViewEncapsulation } from '@angular/core';
+import { TreeMapAllModule } from '@syncfusion/ej2-angular-treemap';
 
 @Component({
-imports: [
-      TreeMapModule, TreeMapAllModule
-    ],
+    imports: [TreeMapAllModule],
     standalone: true,
     selector: 'app-container',
-  // specifies the template string for the treemap component
-  template: `<ejs-treemap id='treemap-container'></ejs-treemap>`,
-  encapsulation: ViewEncapsulation.None
+    // specifies the template string for the treemap component
+    template: `<ejs-treemap id='treemap-container'></ejs-treemap>`,
+    encapsulation: ViewEncapsulation.None
 })
-export class AppComponent  { }
+export class AppComponent { }
 
 ```
 
-<!-- markdownlint-disable MD033 -->
+Now use the `app-container` selector in `index.html` instead of the default content.
 
-Now use the <code>app-container</code> in the index.html instead of default one.
-
-```
+```html
 <app-container></app-container>
 ```
 
 Run the application with:
 
-```
+```bash
 npm start
 ```
 
+Since we did not specify [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treemap#datasource) for the TreeMap, no items will be rendered and only an empty SVG element will be appended to the TreeMap container.
 
-The following example shows a basic TreeMap component instance.
-
-```typescript
-
-import { TreeMapModule, TreeMapAllModule } from '@syncfusion/ej2-angular-treemap'
-import { Component, ViewEncapsulation } from '@angular/core';
-
-@Component({
-imports: [
-      TreeMapModule, TreeMapAllModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    // specifies the template string for the treemap component
-    template: `<ejs-treemap id='treemap-container'></ejs-treemap>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent  { }
-
-```
-
-Since we did not specify [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treemap#datasource) for the TreeMap, no items will be rendered and only an empty SVG element will be appended to the treemap container.
-
-## Render TreeMap
+## Render TreeMap with Data
 
 This section shows how to render a TreeMap using a bound data source. The example visualizes the number of international airports in South America.
 
@@ -121,14 +107,21 @@ This section shows how to render a TreeMap using a bound data source. The exampl
 {% include code-snippet/treemap/getting-started/treemap-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs15" %}
 
-Here, TreeMap is displayed using a data source, and the [weightValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap#weightvaluepath) property is set to the data source's **Count** field as the value. The leaf level items of TreeMap can be customized using [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel). `leafItemSettings` allows you to change properties such as [fill](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#fill), [border](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#border) and [labelPosition](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labelposition).
+Here, the TreeMap is displayed using a data source, and the [weightValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap#weightvaluepath) property is set to the **Count** field of the data source as the weight value. The data fields used in this example are described below.
+
+The leaf level items of the TreeMap can be customized using [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel). Common `leafItemSettings` properties include:
+
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#fill) - Background color of the leaf.
+* [border](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#border) - Border configuration for the leaf.
+* [labelPosition](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labelposition) - Position of the label on the leaf (`Center`, `TopLeft`, `BottomRight`, etc.).
+* [showLabels](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#showlabels) - Toggles label visibility.
 
 ## Module Injection
 
-The TreeMap component is divided into individual feature-based modules. To use a specific feature, you must inject its **Service** module into the `AppModule`. The modules available in TreeMap, as well as their descriptions, are listed below.
+The TreeMap component is divided into individual feature-based modules. To use a specific feature, you must inject its service provider. For standalone components, register services in the `providers` array of the component. For NgModule-based apps, add them to the `providers` array of `AppModule`. The available services are listed below.
 
 * TreeMapHighlightService - Inject this provider to use highlight feature.
 * TreeMapSelectionService - Inject this provider to use selection feature.
@@ -137,7 +130,7 @@ The TreeMap component is divided into individual feature-based modules. To use a
 
 ## Apply Color Mapping
 
-The color mapping feature supports customization of item colors based on the underlying value of item received from bounded datasource. Specify the field name from which the values have to be compared for the item in [equalColorValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap#equalcolorvaluepath) or [rangeColorValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap#rangecolorvaluepath) property.
+The color mapping feature supports customization of item colors based on the underlying value of each item received from the bound data source. Specify the field name from which the values have to be compared for the item in the [equalColorValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap#equalcolorvaluepath) or [rangeColorValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap#rangecolorvaluepath) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,12 +141,12 @@ The color mapping feature supports customization of item colors based on the und
 {% include code-snippet/treemap/getting-started/treemap-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs16" %}
 
 ## Enable Legend
 
-You can show legend for the TreeMap by setting true to the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettingsModel#visible) property in [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap#legendsettings) object and by injecting the `TreeMapLegendService` module in the AppModule.
+The legend summarizes the colors used to render the TreeMap items. You can show a legend by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettingsModel#visible) property to `true` in the [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap#legendsettings) object and by injecting the `TreeMapLegendService` provider.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -164,12 +157,12 @@ You can show legend for the TreeMap by setting true to the [visible](https://ej2
 {% include code-snippet/treemap/getting-started/treemap-cs56/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs56" %}
 
 ## Add Labels
 
-Labels can be added to show additional information of the items in TreeMap. By default, visibility of the label is true. This can be customized using [showLabels](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#showlabels) property in [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel).
+Labels can be added to show additional information about the items in the TreeMap. By default, label visibility is `true`. This can be customized using the [showLabels](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#showlabels) property in [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -180,12 +173,13 @@ Labels can be added to show additional information of the items in TreeMap. By d
 {% include code-snippet/treemap/getting-started/treemap-cs57/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs57" %}
 
 ## Enable Tooltip
 
-The tooltip is useful when labels cannot display information by using due to space constraints. Tooltip can be enabled by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel#visible) property as true in [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel) object and by injecting `TreeMapTooltipService` module in the AppModule.
+The tooltip is useful when labels cannot display information due to space constraints. Tooltip can be enabled by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel#visible) property to `true` in the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel) object and by injecting the `TreeMapTooltipService` provider.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -196,5 +190,23 @@ The tooltip is useful when labels cannot display information by using due to spa
 {% include code-snippet/treemap/getting-started/treemap-cs58/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs58" %}
+
+## Troubleshooting
+
+* Empty TreeMap container - Verify that `dataSource` and `weightValuePath` are set, and that the field referenced by `weightValuePath` contains numeric values.
+* Feature not working (legend, tooltip, selection, highlight) - Ensure the matching service (`TreeMapLegendService`, `TreeMapTooltipService`, etc.) is registered in the `providers` array.
+* Build errors with standalone components - Make sure `TreeMapAllModule` is imported in the `imports` array of every standalone component that uses TreeMap directives.
+
+## See also
+
+* [Color Mapping](color-mapping.md) - Learn about equal, range, and desaturated color mapping modes.
+* [Data Label](data-label.md) - Customize label templates and positions.
+* [Levels](levels.md) - Render hierarchical data with multiple levels.
+* [Drilldown](drilldown.md) - Enable drill-down interaction on levels.
+* [Legend](legend.md) - Configure legend items, modes, and templates.
+* [Tooltip](tooltip.md) - Build custom tooltip templates.
+* [Print and Export](print-and-export.md) - Export the TreeMap to PDF or image formats.
+* [Selection and Highlight](selection-and-highlight.md) - Configure selection and highlight behavior.
+* [Accessibility](accessibility.md) - Make the TreeMap accessible to assistive technologies.

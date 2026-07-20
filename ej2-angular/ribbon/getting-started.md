@@ -52,9 +52,9 @@ cd my-app
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
+Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy Library Distribution Package
 
@@ -68,7 +68,7 @@ npm install @syncfusion/ej2-angular-ribbon --save
 
 ### Angular Compatibility Compiled (ngcc) Package
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below.
 
 Add [@syncfusion/ej2-angular-ribbon@ngcc](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35-ngcc) package to the application.
 
@@ -92,7 +92,7 @@ To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwin
 npm install @syncfusion/ej2-tailwind3-theme --save
 ```
 
-To render the Ribbon component, add the below import in the [src/styles.css] file which loads all the required dependency styles, as shown below:
+To render the Ribbon component, add the import below to the Angular application's global styles file (`src/styles.css`) so the required dependency styles are loaded:
 
 ```css
 @import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/ribbon/index.css";

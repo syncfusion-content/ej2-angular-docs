@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Inline AI Assist component
+# Getting started with the Angular Inline AI Assist component
 
-This section explains how to create a simple **Inline AI Assist** component and configure its available functionalities in Angular.
+This section explains how to create a simple **Inline AI Assist** component and configure its available features in Angular.
 
 ## Dependencies
 

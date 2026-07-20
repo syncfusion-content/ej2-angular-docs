@@ -75,7 +75,7 @@ To render the AI AssistView component, add the below import in the [src/styles.c
 
 ## Adding AI AssistView component
 
-Modify the template in the [src/app/app.component.ts] file to render the Angular AI AssistView component. Add the component by applying the [`ejs-aiassistview`] attribute directive to a `div` element within the `template` section of the `app.component.ts` file.
+Modify the template in the [src/app/app.component.ts] file to render the Angular AI AssistView component. Add the component by applying the [`ejs-aiassistview`] attribute directive to a `div` element within the `template` section of the `app.component.ts` file. The example below uses standalone component syntax, which is supported in Angular applications created with the standalone option.
 
 ```javascript
 import { Component } from '@angular/core';

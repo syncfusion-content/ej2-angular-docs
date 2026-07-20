@@ -51,7 +51,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages (`>=20.2.36`) have been updated to the Ivy distribution format to support the Angular `Ivy` rendering engine. These packages are compatible with Angular version 12 and above. To download the package, use the below command.
+Syncfusion Angular packages (`>=20.2.36`) have been updated to the Ivy distribution format to support the Angular `Ivy` rendering engine. These packages are compatible with Angular version 12 and above. To download the package, use the command below.
 
 The Syncfusion Angular SpeechToText component is included in the [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38) package. Install it using the following command:
 
@@ -61,7 +61,7 @@ npm install @syncfusion/ej2-angular-inputs --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For applications using an Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package, use the below command.
+For applications using an Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package, use the command below.
 
 Add the [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38-ngcc) package to the application.
 
@@ -85,7 +85,7 @@ To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwin
 npm install @syncfusion/ej2-tailwind3-theme --save
 ```
 
-To render the SpeechToText component, add the below import in the [src/styles.css] file which loads all the required dependency styles, as shown below:
+To render the SpeechToText component, add the import below in the [src/styles.css] file, which loads the required dependency styles:
 
 ```css
 @import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/speech-to-text/index.css";
