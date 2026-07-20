@@ -42,7 +42,7 @@ After installing the package, you can integrate WProofreader with the Angular Ri
 4. Set the `lang` property to specify the language of the text to be checked.
 5. Configure the activation key in the `serviceId` property.
 
-### Example: Integrate with Syncfusion Rich Text Editor (`app.ts`)
+### Example: Integrate with Rich Text Editor (`app.ts`)
 
 ```ts
 import { Component, ViewChild } from '@angular/core';

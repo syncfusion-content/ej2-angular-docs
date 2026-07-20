@@ -298,7 +298,7 @@ In the following code example, the "Employee Name" is a foreign key column. When
 
 ## Preventing duplicate rows with custom validation
 
-The Syncfusion Angular Grid enables enforcement of constraints to prevent duplicate rows by customizing the validation logic within the grid setup. This ensures data integrity by restricting duplicate entries in the "Order ID" column.
+The Angular Grid enables enforcement of constraints to prevent duplicate rows by customizing the validation logic within the grid setup. This ensures data integrity by restricting duplicate entries in the "Order ID" column.
 
 To prevent adding duplicate rows in the grid, follow these steps:
 

@@ -81,7 +81,7 @@ npm install @syncfusion/ej2-grid-chart --save
 
 ### Import Syncfusion CSS styles
 
-Syncfusion Angular controls include [built-in themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) available in installed packages. Apply themes by importing required CSS files from the node_modules directory.
+Angular controls include [built-in themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) available in installed packages. Apply themes by importing required CSS files from the node_modules directory.
 
 To use the "Material" theme, add the following imports to the **src/styles.css** file:
 

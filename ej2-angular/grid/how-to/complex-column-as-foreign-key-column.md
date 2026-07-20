@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Complex column as foreign key column in Angular Grid component
 
-You can configure a complex column, such as a nested property, to act as a foreign key column in the Syncfusion Angular Grid. This allows displaying and binding data from a related foreign data source, using complex field paths for scenarios involving nested data.
+You can configure a complex column, such as a nested property, to act as a foreign key column in the Angular Grid. This allows displaying and binding data from a related foreign data source, using complex field paths for scenarios involving nested data.
 
 The following example demonstrates setting **Employee.EmployeeID** as a complex column and declaring it as a foreign key column. In this setup, the grid displays the **FirstName** field from the associated foreign data.
 

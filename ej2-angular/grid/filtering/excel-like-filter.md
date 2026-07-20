@@ -41,7 +41,7 @@ Checkbox filtering is the core mechanism of Excel-like filter. When the filter d
 
 The checkbox list supports search functionality: typing in the search box filters the checkbox list to show only matching values, making it easier to find specific items in long lists.
 
-The following example demonstrates to implement checkbox filtering in the Syncfusion Angular Grid:
+The following example demonstrates to implement checkbox filtering in the Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,7 +99,7 @@ The following example demonstrates to customize the filter choice count in the c
 
 ## Add current selection to filter Checkbox/Excel
 
-By default, the `CheckBox/Excel` filter in the Syncfusion Angular Grid applies filtering based solely on currently selected items. When multiple filtering actions are performed sequentially on the same column, previously filtered values are cleared and replaced with the new selection.
+By default, the `CheckBox/Excel` filter in the Angular Grid applies filtering based solely on currently selected items. When multiple filtering actions are performed sequentially on the same column, previously filtered values are cleared and replaced with the new selection.
 
 The `Add current selection to filter` checkbox functionality enables retention of previous filter values while performing new searches. This checkbox appears when searching data in the CheckBox/Excel filter search bar, allowing users to include new selections without removing previously applied filters. This cumulative filtering approach provides greater flexibility for complex filtering scenarios.
 
@@ -243,7 +243,7 @@ export class AppComponent implements OnInit {
 
 ## Customize the excel filter dialog using CSS
 
-The Syncfusion Angular Grid provides extensive flexibility for enhancing the visual presentation of the Excel filter dialog through CSS customization. This capability allows modification of the dialog's appearance to align with specific application requirements and aesthetic preferences.
+The Angular Grid provides extensive flexibility for enhancing the visual presentation of the Excel filter dialog through CSS customization. This capability allows modification of the dialog's appearance to align with specific application requirements and aesthetic preferences.
 
 **Removing context menu option**
 

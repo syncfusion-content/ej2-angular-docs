@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting MySQL server to Syncfusion Angular Grid Using LINQ2DB
+# Connecting MySQL server to Angular Grid Using LINQ2DB
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a MySQL database. This documentation demonstrates integrating MySQL with Angular Data Grid using LINQ2DB (Light-weight ORM) for data operations with the use of `CustomAdaptor` to build a Transaction Management Application.
 

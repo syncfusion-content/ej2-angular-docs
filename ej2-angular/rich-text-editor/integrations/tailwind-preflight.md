@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Integrate Tailwind preflight into the Angular Rich Text Editor
 
-The [Tailwind CSS Preflight](https://tailwindcss.com/docs/preflight) provides a modern baseline of styles that resets browser defaults and establishes a consistent foundation for your application. This guide explains how to integrate Tailwind CSS Preflight with the Syncfusion Angular Rich Text Editor while preserving the editor's styling and functionality.
+The [Tailwind CSS Preflight](https://tailwindcss.com/docs/preflight) provides a modern baseline of styles that resets browser defaults and establishes a consistent foundation for your application. This guide explains how to integrate Tailwind CSS Preflight with the [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-rich-text-editor) while preserving the editor's styling and functionality.
 
 ## Prerequisites
 
@@ -112,7 +112,7 @@ To prevent Tailwind CSS Preflight from affecting the Rich Text Editor content ar
 
 ```
 
-## Example: Integrate Tailwind CSS with Syncfusion Rich Text Editor
+## Example: Integrate Tailwind CSS with Rich Text Editor
 
 Here's a complete working example demonstrating Tailwind CSS Preflight integration with the Angular Rich Text Editor:
 
@@ -240,7 +240,7 @@ body.e-content ol[style*="list-style-type: lower-roman"]{
 
 ```
 
-### Example: Integrate Tailwind CSS with Syncfusion Rich Text Editor in IFrame mode
+### Example: Integrate Tailwind CSS with Rich Text Editor in IFrame mode
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

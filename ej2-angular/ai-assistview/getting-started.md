@@ -75,7 +75,7 @@ To render the AI AssistView component, add the below import in the [src/styles.c
 
 ## Adding AI AssistView component
 
-Modify the template in the [src/app/app.component.ts] file to render the Angular AI AssistView component. Add the component by applying the [`ejs-aiassistview`] attribute directive to a `div` element within the `template` section of the `app.component.ts` file.
+Modify the template in the [src/app/app.ts] file to render the Angular AI AssistView component. Add the component by applying the [`ejs-aiassistview`] attribute directive to a `div` element within the `template` section of the `app.ts` file. The example below uses standalone component syntax, which is supported in Angular applications created with the standalone option.
 
 ```javascript
 import { Component } from '@angular/core';
@@ -102,7 +102,7 @@ ng serve
 The following example illustrates the output in your browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/ai-assistview/getting-started/src/app.component.ts %}
 {% endhighlight %}
 
@@ -120,7 +120,7 @@ The following example illustrates the output in your browser.
 Use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property to display a list of predefined suggestion chips. To provide custom responses, handle the [promptRequest](../api/ai-assistview#promptrequest) event, which is triggered when a user query is sent.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/ai-assistview/defaultprompts/src/app.component.ts %}
 {% endhighlight %}
 

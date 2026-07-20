@@ -107,7 +107,7 @@ The following example demonstrates adding custom context menu items in the Grid 
 
 ## Show context menu on left click
 
-The Syncfusion Angular Grid provides the ability to display context menu items on a left mouse click instead of the default right mouse click action.
+The Angular Grid provides the ability to display context menu items on a left mouse click instead of the default right mouse click action.
 
 This functionality can be implemented using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event and the context menu's [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#beforeopen) event.
 

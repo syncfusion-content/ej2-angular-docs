@@ -364,4 +364,4 @@ export class AppComponent implements OnInit {
 
 ## See also
 
-[Accessibility in Syncfusion Angular components](../common/accessibility)
+[Accessibility in Angular components](../common/accessibility)

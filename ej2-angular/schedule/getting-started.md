@@ -68,19 +68,27 @@ npm install @syncfusion/ej2-angular-schedule --save
 
 ## Adding CSS reference
 
-The necessary CSS files for the Schedule component are located in the `ej2-angular-schedule` package. You can reference them in your `[src/styles.css]` file.
+Themes for Syncfusion® Schedule components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-schedule/styles/material3.css';
-```
+Install the Tailwind 3 theme package using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-tailwind3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Then add the following CSS reference to the **src/style.css** file:
+
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Initialize the Schedule component and configure module injection
 
@@ -201,7 +209,6 @@ export class App {
 	public currentView: View = 'Day';
 }
 ```
-N> Looking for the full Angular Scheduler component overview, features, pricing, and documentation? Visit the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) page.
 
 ## See also
 

@@ -17,9 +17,10 @@ This guide demonstrates how to create an Angular application, configure task dat
 ## Prerequisites
 
 Ensure the following prerequisites are installed:
-- Node.js **18.19 or later**
+- Node.js **20.11 or later** (required by Angular 20/21)
 - npm or yarn package manager
 - Basic knowledge of Angular framework
+- A valid Syncfusion<sup style="font-size:70%">&reg;</sup> license key for commercial use. You can obtain a key from your [Syncfusion account](https://www.syncfusion.com/account) and register it as shown in the [licensing documentation](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration).
 
 ## Installation
 
@@ -34,31 +35,30 @@ Once the Angular CLI is installed, run the following command to generate a new a
 ng new syncfusion-angular-app
 ```
 
-* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+This command will prompt you for several configuration options:
 
-```bash
-? Which stylesheet format would you like to use? (Use arrow keys)
-> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
-  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
-  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
-  Less            [ http://lesscss.org                                             ]
-```
+**Stylesheet Format** — Choose your preferred stylesheet format:
+- `CSS` (default) — Standard CSS
+- `SCSS` — Sass with full CSS features (recommended for complex styling)
+- `Sass (Indented)` — Indented Sass syntax
+- `Less` — Less CSS preprocessor
 
-* By default, a CSS-based application is created. Use SCSS if required:
-
+To skip the prompts and use SCSS directly:
 ```bash
 ng new syncfusion-angular-app --style=scss
 ```
 
-* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+**Server-side Rendering (SSR)** — When prompted, choose:
+- `Yes` — If you need server-side rendering for performance
+- `No` — For standard client-side rendering (recommended for most cases)
 
 ![Initial_setup](./images/SSR.png)
 
-* Select the required AI tool or 'none' if you do not need any AI tool.
+**Deployment Presets** — Select the required AI tool or choose `none` if not needed.
 
 ![Initial_setup](./images/Ai.png)
 
-* Navigate to your newly created application directory:
+Once the project is created, navigate to your application directory:
 
 ```bash
 cd syncfusion-angular-app
@@ -74,46 +74,29 @@ ng add @syncfusion/ej2-angular-gantt
 
 This command performs the following automatically:
 
-- Installs required dependencies
-- Imports the Gantt module
-- Registers default theme styles in `angular.json`.
+- Installs the `@syncfusion/ej2-angular-gantt` package and dependencies
+- Imports the Gantt Chart module into your application
+- Registers default theme styles in `angular.json`
 
 ## Add theme styles
 
-The Gantt Chart component requires specific CSS files for proper rendering.
+The Gantt Chart component requires specific CSS files for proper rendering. Syncfusion provides multiple themes for the Gantt Chart component. For a complete list of available themes, refer to the [theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages).
 
-Import the basic Gantt Chart styles into `src/styles.css` using the Tailwind theme (you can also use `material3.css`, `bootstrap5.css`, or other available themes):
+To apply the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme, install the corresponding theme package by using the following command:
 
-```css
-@import '../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+```bash
+npm install @syncfusion/ej2-tailwind3-theme
 ```
 
-> **Note:** Additional styles are required when enabling advanced features such as editing, toolbar, or dialogs:
-> ```css
-> /* For editing, toolbar, and dialog features */
-> @import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
-> 
-> /* For rich text editor in dialog notes tab */
-> @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
-> ```
+The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into `src/styles.css`:
 
-**Understanding Style Application**
- 
-The imported CSS files are added to the global stylesheet (`src/styles.css`). Angular automatically applies these styles to all components in the application, so no additional configuration is required in the TypeScript (`.ts`) files.
+```css
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css';
+```
 
 ## Create sample task data
 
-Define a simple task list with hierarchical relationships. Each task must have a `StartDate` and either a `Duration` or `EndDate` to render properly.
+Define a simple task list with hierarchical relationships. The data includes two parent tasks (TaskID 1 and 5) with child tasks linked via `ParentID`. Each task must have a `StartDate` and either a `Duration` (in days) or `EndDate` to render properly.
 
 ```typescript
 public data = [
@@ -148,12 +131,17 @@ public taskSettings = {
 | `id` | Unique task identifier | Yes |
 | `name` | Task display name | Yes |
 | `startDate` | Task start date | Yes |
-| `duration` | Task duration in days | Yes |
+| `duration` | Task duration in days | Either Duration or EndDate |
+| `endDate` | Task end date | Either Duration or EndDate |
 | `parentID` | Parent task ID for hierarchy | No |
 
 ## Render the Angular Gantt Chart Component
 
-Update the component file to render the Gantt Chart using the sample data and task settings defined earlier. Modify the `src/app/app.ts` file (for Angular 20+) with the following code:
+Update the component file to render the Gantt Chart using the sample data and task settings defined earlier.
+
+### For Angular 20+ (Standalone Components)
+
+Modify the `src/app/app.ts` file with the following code:
 
 ```typescript
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -186,14 +174,69 @@ export class App {
 }
 ```
 
-> **Note for Angular 19 and earlier versions:**  
-> The Gantt Chart component configuration should be defined in the `app.component.ts` file.
+**Key Properties**:
+- `imports: [GanttModule]` — Imports the Gantt Chart module for use in this component
+- `standalone: true` — Indicates this is a standalone component (Angular 14+)
+- `template` — Defines the component's HTML inline; `[dataSource]="data"` binds the task data and `[taskFields]="taskSettings"` maps the field names
+- `encapsulation: ViewEncapsulation.None` — Disables view encapsulation to allow global styles to apply to the Gantt Chart
+
+### For Angular 19 and Earlier (Module-Based)
+
+If using Angular 19 or earlier, define the component in `src/app/app.component.ts`:
+
+```typescript
+import { Component, ViewEncapsulation } from '@angular/core';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent {
+    public data = [/* ... task data ... */];
+    public taskSettings = {/* ... field mappings ... */};
+}
+```
+
+Then add to `src/app/app.module.ts`:
+
+```typescript
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { NgModule } from '@angular/core';
+
+@NgModule({
+    imports: [GanttModule],
+    // ... other declarations
+})
+export class AppModule { }
+```
+
+And create `src/app/app.component.html`:
+
+```html
+<ejs-gantt [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>
+```
 
 ## Run the application
+
+Start the development server with:
 
 ```bash
 ng serve --open
 ```
+
+This command:
+- Compiles the Angular application
+- Starts a local development server on `http://localhost:4200` (default port)
+- Opens the application in your default browser (the `--open` flag)
+
+**Troubleshooting**:
+- **Port 4200 already in use**: Run `ng serve --port 4300` to use a different port
+- **Module not found errors**: Ensure all dependencies are installed with `npm install`
+- **Styles not applied**: Verify all CSS imports in `src/styles.css` are correct
+- **Blank page**: Check the browser console for errors and ensure the element `<ejs-gantt>` is rendering
 
 ## Output
 
@@ -215,8 +258,41 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 {% previewsample "page.domainurl/samples/gantt/getting-started/run-application-cs1" %}
 
+## Error handling
+
+Proper error handling helps identify and resolve issues during development. The Gantt Chart provides events to capture validation and configuration errors.
+
+### Common error scenarios
+
+- **Missing taskFields mapping** — If `taskFields` is not properly configured, the Gantt Chart cannot map data fields to task properties. Ensure all required fields (`id`, `name`, `startDate`) are mapped.
+- **Invalid date format** — Task dates must be valid JavaScript Date objects. Invalid dates prevent proper rendering.
+- **Missing dataSource** — Ensure `dataSource` is bound to the component with task data.
+- **Unsupported field types** — The `id` field must be numeric or string; Duration must be numeric.
+- **Module not imported** — Verify that `GanttModule` is imported in the component (standalone) or module declaration.
+
+### Handling errors with actionFailure event
+
+Use the `actionFailure` event to capture and handle errors:
+
+```typescript
+@Component({
+    template: `<ejs-gantt [dataSource]="data" [taskFields]="taskSettings" (actionFailure)="onActionFailure($event)"></ejs-gantt>`
+})
+export class App {
+    public data = [/* ... */];
+    public taskSettings = {/* ... */};
+    
+    onActionFailure(args: any) {
+        console.error('Gantt Chart Error:', args.error);
+        alert(`Configuration Error: ${args.error}`);
+    }
+}
+```
+
 ## Next Steps
 
 - **[Key Elements](https://ej2.syncfusion.com/angular/documentation/gantt/events)** - Learn about UI components and interactions
 - **[Feature Modules](https://ej2.syncfusion.com/angular/documentation/gantt/module)** - Enable advanced features with module injection
 - **[Overview](https://ej2.syncfusion.com/angular/documentation/gantt/overview)** - Explore all available features
+
+N> Looking for the full Angular Gantt Chart component overview, features, pricing, and documentation? Visit the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) page.

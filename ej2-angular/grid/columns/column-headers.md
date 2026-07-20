@@ -631,7 +631,7 @@ es-ES.json {
   
 ```
 
-The following screenshot represents the translation of the header text of a Syncfusion Angular Grid component to multiple languages using ngx-translate:
+The following screenshot represents the translation of the header text of a Angular Grid component to multiple languages using ngx-translate:
 
 ![ng-translate-headertext](../images/ng-translate-headertext.gif)
 

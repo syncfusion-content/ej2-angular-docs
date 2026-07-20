@@ -24,7 +24,7 @@ WProofreader is a powerful tool that enhances content quality by detecting and c
 
 ## Set up the WProofreader
 
-For integrating the `WProofreader` refer the following link : https://webspellchecker.com, you need to install the[@webspellchecker/wproofreader-sdk-js](https://www.npmjs.com/package/@webspellchecker/wproofreader-sdk-js) package using NPM or Yarn:
+For integrating the `WProofreader` refer the following link : [WebSpellChecker](https://webspellchecker.com), you need to install the `@webspellchecker/wproofreader-sdk-js` package using NPM or Yarn:
 
 ```bash
 npm install @webspellchecker/wproofreader-sdk-js
@@ -44,7 +44,7 @@ After installing the package, you can integrate WProofreader with the Angular Ri
 4. Set the `lang` property to specify the language of the text to be checked.
 5. Configure the activation key in the `serviceId` property.
 
-Below is an example code snippet to integrate WProofreader with the Syncfusion Angular Rich Text Editor
+Below is an example code snippet to integrate WProofreader with the Angular Rich Text Editor
 
 ```typescript
 
@@ -77,6 +77,6 @@ export class AppComponent implements AfterViewInit {
 
 ```
 
-Below is a GIF demonstrating how to integrate WProofreader with the Syncfusion Angular Rich Text Editor
+Below is a GIF demonstrating how to integrate WProofreader with the Angular Rich Text Editor
 
 ![WebSpellChecker](images/spell-grammar-check.gif)

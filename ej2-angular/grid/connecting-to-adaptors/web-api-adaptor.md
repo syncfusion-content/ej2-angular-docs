@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebApiAdaptor in Syncfusion Angular Grid Component
+# WebApiAdaptor in Angular Grid Component
 
-The `WebApiAdaptor` extends the `ODataAdaptor` to facilitate seamless communication between the Syncfusion Angular Grid and Web APIs created with OData endpoints. This adaptor enables efficient data retrieval and manipulation by ensuring that OData-formatted queries are properly transmitted with requests to the server endpoint.
+The `WebApiAdaptor` extends the `ODataAdaptor` to facilitate seamless communication between the Angular Grid and Web APIs created with OData endpoints. This adaptor enables efficient data retrieval and manipulation by ensuring that OData-formatted queries are properly transmitted with requests to the server endpoint.
 
 The WebApiAdaptor is specifically designed for Web API services that support OData query options, providing automatic query translation and response handling. For successful integration, the target endpoint must be capable of processing OData-formatted queries.
 
@@ -21,7 +21,7 @@ This section provides step-by-step guidance for retrieving data using the `WebAp
 
 ## Creating a Web API service
 
-To configure a server for use with the Syncfusion Angular Grid, follow these steps:
+To configure a server for use with the Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -133,7 +133,7 @@ After running the application, verify that the server-side API controller succes
 
 ![WebApiAdaptor-data response showing JSON format with Items and Count properties](../images/webapi-adaptor-data.png)
 
-## Connecting Syncfusion Angular Grid to an API service
+## Connecting Angular Grid to an API service
 
 To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -177,7 +177,7 @@ export class AppModule { }
 
 **3. Adding CSS Reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular components:
+Include the necessary CSS files in your `styles.css` file to style the Angular components:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -632,7 +632,7 @@ export class AppComponent {
 
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Searching in Angular Grid Component
 
-The Syncfusion Angular Grid includes a powerful built-in searching feature that enables efficient filtering of grid records based on search criteria. This feature allows quick discovery of specific data within large datasets. Whether the application works with small or large datasets, the search feature provides a seamless solution for locating relevant records instantly.
+The Angular Grid includes a powerful built-in searching feature that enables efficient filtering of grid records based on search criteria. This feature allows quick discovery of specific data within large datasets. Whether the application works with small or large datasets, the search feature provides a seamless solution for locating relevant records instantly.
 
 ## Enable searching
 

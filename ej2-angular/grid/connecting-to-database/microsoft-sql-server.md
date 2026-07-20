@@ -681,7 +681,7 @@ And update (**src/app/app.component.html**):
 </ejs-grid>
 ```
 
-This completes the Angular UI setup required to display and manage ticket data using the Syncfusion Angular Grid.
+This completes the Angular UI setup required to display and manage ticket data using the Angular Grid.
 
 ### Step 4: Implement the CustomAdaptor
 

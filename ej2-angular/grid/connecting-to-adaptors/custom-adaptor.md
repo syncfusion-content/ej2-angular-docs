@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CustomAdaptor in Syncfusion Angular Grid
+# CustomAdaptor in Angular Grid
 
-The `CustomAdaptor` in the Syncfusion Angular Grid enables developers to create custom adaptors by extending built-in adaptors. Custom adaptors provide control over query processing, request handling, and response manipulation of the built-in adaptor functionality. The `CustomAdaptor` extends OData V4 services, enabling efficient data fetching and manipulation. By default, three built-in methods are available for `CustomAdaptor` implementation.
+The `CustomAdaptor` in the Angular Grid enables developers to create custom adaptors by extending built-in adaptors. Custom adaptors provide control over query processing, request handling, and response manipulation of the built-in adaptor functionality. The `CustomAdaptor` extends OData V4 services, enabling efficient data fetching and manipulation. By default, three built-in methods are available for `CustomAdaptor` implementation.
 
 ## Types of CustomAdaptor methods
 
@@ -86,11 +86,11 @@ public override processResponse() {
 }
 ```
 
-This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in the Syncfusion Angular Grid.
+This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in the Angular Grid.
 
 ## Creating a Custom service
 
-To configure a server with Syncfusion Angular Grid, follow these steps:
+To configure a server with Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -215,7 +215,7 @@ Run the application in Visual Studio. The application will be accessible on a UR
 
 After running the application, verify that the server-side API controller successfully returns the order data at the URL (https://localhost:xxxx/odata/Orders). Here **xxxx** represents the port number.
 
-## Connecting Syncfusion Angular Grid to a Custom service extending the ODataV4 service
+## Connecting Angular Grid to a Custom service extending the ODataV4 service
 
 To integrate the Syncfusion Grid into the Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -252,7 +252,7 @@ export class AppModule { }
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in the `styles.css` file to style the Syncfusion Angular Grid:
+Include the necessary CSS files in the `styles.css` file to style the Angular Grid:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -706,7 +706,7 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using CustomAdaptor, follow the provided guide for configuring the Syncfusion Angular Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in the server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using CustomAdaptor, follow the provided guide for configuring the Angular Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in the server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
 
 To enable CRUD operations in the Syncfusion Grid within an Angular application, follow these steps:
 
@@ -776,7 +776,7 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Syncfusion Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) for the Syncfusion Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

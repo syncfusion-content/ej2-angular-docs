@@ -19,4 +19,4 @@ Syncfusion® Data Grid provides support for standard security tool and configura
 
 By supporting these protections, the Data Grid helps applications comply with enterprise security standards while maintaining performance and usability.
 
-For complete details and security guidelines, see the [Syncfusion Angular Security](https://ej2.syncfusion.com/angular/documentation/common/security) documentation.
+For complete details and security guidelines, see the [Angular Security](https://ej2.syncfusion.com/angular/documentation/common/security) documentation.

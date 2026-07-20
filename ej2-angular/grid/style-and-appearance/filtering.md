@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filtering Customization in Angular Grid component
 
-Customize the appearance of filtering elements in the Syncfusion Angular Grid component using CSS. Below are examples for styling various filter bar elements, input fields, icons, dialog content, and Excel-style filter menus.
+Customize the appearance of filtering elements in the Angular Grid component using CSS. Below are examples for styling various filter bar elements, input fields, icons, dialog content, and Excel-style filter menus.
 
 ## Customize the filter bar cell element
 

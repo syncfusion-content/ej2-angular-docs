@@ -207,7 +207,7 @@ The following example demonstrates diacritics filtering with the `ignoreAccent` 
 
 ## Perform ENUM column filtering
 
-The Syncfusion Angular Grid supports filtering enum-type data using the [FilterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filtertemplate) feature. This is particularly useful for filtering predefined values, such as categories or statuses.
+The Angular Grid supports filtering enum-type data using the [FilterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filtertemplate) feature. This is particularly useful for filtering predefined values, such as categories or statuses.
 
 To achieve this functionality:
 

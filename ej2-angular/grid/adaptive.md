@@ -18,7 +18,7 @@ The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-da
 
 Additionally, apply the `e-bigger` class to the grid's parent element to enable the adaptive view.
 
-The following sample demonstrates to enable adaptive dialogs in the Syncfusion Angular Grid:
+The following sample demonstrates to enable adaptive dialogs in the Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -250,8 +250,6 @@ export class AppComponent implements OnInit {
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/adaptive-cs3" %}
-
-N> Looking for the full responsive Angular Data Grid component overview, features, pricing, and documentation? Visit the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) page.
 
 ## See Also
 
