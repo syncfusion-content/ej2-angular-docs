@@ -65,7 +65,7 @@ The following table lists available modules, grouped by functionality, with thei
 | `AutoFormatService` | Injecting this module automatically converts Markdown syntax into HTML as you type, supporting inline and block-level formatting for a seamless editing experience. |
 | `AudioService` | Injecting this module allows users to insert and manage audios in the Rich Text Editor. |
 | `VideoService` | Injecting this module allows users to insert and manage videos in the Rich Text Editor. |
-| `ClipboardCleanupService` | Injecting this module allows to automatically clean clipboard content during copy and cut—removing unwanted inline styles while preserving structure. |
+| `ClipBoardCleanupService` | Injecting this module allows to automatically clean clipboard content during copy and cut—removing unwanted inline styles while preserving structure. |
 | `AIAssistantService` | Injecting this module provides AI Assistant functionalities to the Rich Text Editor. |
 
 These modules should be injected into the **providers** section of root **NgModule** or component class.

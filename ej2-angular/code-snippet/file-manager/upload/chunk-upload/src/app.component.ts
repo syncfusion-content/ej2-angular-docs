@@ -18,7 +18,7 @@ export class AppComponent {
   public fileObj?: FileManagerComponent;
   public ajaxSettings?: object;
   public uploadSettings?: object;
-  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+  public hostUrl: string = 'https://physical-service.syncfusion.com/';
   public ngOnInit(): void {
     this.ajaxSettings = {
       url: this.hostUrl + 'api/FileManager/FileOperations',

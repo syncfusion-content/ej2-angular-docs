@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
 export class App {
     public ajaxSettings?: object;
     public enablePersistence?: boolean;
-    public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+    public hostUrl: string = 'https://physical-service.syncfusion.com/';
     public ngOnInit(): void {
         this.ajaxSettings = {
             url: this.hostUrl + 'api/FileManager/FileOperations',

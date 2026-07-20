@@ -238,7 +238,7 @@ import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager';
 export class App implements OnInit {
     public ajaxSettings: object = {};
     public path: string = '/Pictures/Employees';
-    public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+    public hostUrl: string = 'https://physical-service.syncfusion.com/';
     
     public ngOnInit(): void {
         this.ajaxSettings = {

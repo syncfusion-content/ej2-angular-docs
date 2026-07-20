@@ -220,5 +220,3 @@ You can preview the following sample by clicking the **Preview Sample** button.
 - **[Key Elements](https://ej2.syncfusion.com/angular/documentation/gantt/events)** - Learn about UI components and interactions
 - **[Feature Modules](https://ej2.syncfusion.com/angular/documentation/gantt/module)** - Enable advanced features with module injection
 - **[Overview](https://ej2.syncfusion.com/angular/documentation/gantt/overview)** - Explore all available features
-
-N> Looking for the full Angular Gantt Chart component overview, features, pricing, and documentation? Visit the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) page.

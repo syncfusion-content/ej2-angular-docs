@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
   </ejs-filemanager>`
 })
 export class App {
-  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+  public hostUrl: string = 'https://physical-service.syncfusion.com/';
   public ajaxSettings: object = {
     url: this.hostUrl + 'api/FileManager/FileOperations',
     getImageUrl: this.hostUrl + 'api/FileManager/GetImage'
