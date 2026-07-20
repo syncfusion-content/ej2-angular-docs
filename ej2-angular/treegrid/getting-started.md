@@ -39,7 +39,7 @@ To get started quickly with the Angular Tree Grid using CLI and Schematics, refe
 | [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
 | [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/)| 19.3.43 |
 
-### Browser Support
+### Browser support
 
 | Browser | Supported Versions |
 |:--------|:-------------------|
@@ -47,10 +47,6 @@ To get started quickly with the Angular Tree Grid using CLI and Schematics, refe
 | Mozilla Firefox	 | Latest version |
 | Microsoft Edge	    | Latest 2 versions |
 | Apple Safari, including iOS	  | Latest 2 versions |
-
-### Security
-
-Syncfusion® Angular Tree Grid includes built-in support for common security practices such as Cross-Site Scripting (XSS) protection, Content Security Policy (CSP) compliance, Cross-Site Request Forgery (CSRF) prevention, and protection against injection attacks. These features help build secure and enterprise-ready applications.
 
 ## Setup Angular environment
 
@@ -132,10 +128,10 @@ npm install @syncfusion/ej2-material3-theme --save
 {% endhighlight %}
 {% endtabs %}
 
-Then add the following CSS reference to the **src/style.css** file:
+Then add the following CSS reference to the **src/styles.css** file:
 
 {% tabs %}
-{% highlight css tabtitle="App.css" %}
+{% highlight css tabtitle="styles.css" %}
 
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/treegrid/index.css";
 
@@ -163,7 +159,15 @@ bootstrapApplication(App, appConfig)
   
 {% previewsample "page.domainurl/samples/treegrid/getting-started-cs1" %}
 
-## Registering Your Syncfusion License
+## Run the application
+
+```bash
+ng serve --open
+```
+
+Then open the URL displayed in the terminal.
+
+## Registering Syncfusion license
 
 Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register
 
@@ -176,49 +180,13 @@ registerLicense('YOUR_LICENSE_KEY');
 
 > **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
 
-## Run the application
-
-```bash
-ng serve --open
-```
-
-N> Looking for the full Angular Data Grid component overview, features, pricing, and documentation? Visit the [Angular Tree Grid](https://www.syncfusion.com/angular-components/angular-tree-grid) page.
-
-### Production Build
-
-To create an optimized production build, run:
-
-```bash
-ng build
-```
-
-This command compiles the application and generates the production-ready files in the `dist/` directory.
-
-To preview the production build locally, run:
-
-```bash
-npx http-server dist
-```
-
-Then open the URL displayed in the terminal.
-
 ## Troubleshooting
 
 - **Grid styles are not applied:** Ensure the required Syncfusion theme CSS is imported in `src/styles.css`.
 - **Trial license warning message:** Register a valid Syncfusion license key using the `registerLicense()` method from `@syncfusion/ej2-base`.
-- **Port 4200 is already in use:** Stop the conflicting process or run the application on a different port:
 
-  ```bash
-  ng serve --port 3000
-  ```
+N> Looking for the full Angular Tree Grid component overview, features, pricing, and documentation? Visit the [Angular Tree Grid](https://www.syncfusion.com/angular-components/angular-tree-grid) page.
 
 ## See also
 
 * [Grid Feature Modules](./module)
-* [Getting Started with JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
-* [Getting Started with JavaScript (ES5) documentation](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started)
-* [Getting Started with React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
-* [Getting Started with Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
-* [Getting Started with ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
-* [Getting Started with ASP.NET MVC documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc)
-* [Getting Started with Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)
