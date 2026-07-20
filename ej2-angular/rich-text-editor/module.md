@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Modules in Angular Rich Text Editor
 
-The Angular Rich Text Editor employs a modular architecture, allowing selective inclusion of features to optimize performance and customize functionality. This approach reduces bundle size and enhances flexibility for developers adapting the editor to specific use cases.
+The [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-rich-text-editor) employs a modular architecture, allowing selective inclusion of features to optimize performance and customize functionality. This approach reduces bundle size and enhances flexibility for developers adapting the editor to specific use cases.
 
 ## What are modules in Angular Rich Text Editor?
 

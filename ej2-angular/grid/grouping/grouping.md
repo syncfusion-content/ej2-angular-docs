@@ -81,7 +81,7 @@ By default, the Grid shows a drop area container where column headers can be dra
 
 To disable the group drop area container, set the [groupSettings.showDropArea](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showdroparea) property to `false`. This hides the drop area from the UI, while still allowing grouping to be managed programmatically using the Grid [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#ungroupcolumn) methods if needed.
 
-In this example, the Syncfusion Angular<sup style="font-size:70%">&reg;</sup> [Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to dynamically show or hide the group drop area. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event updates the Grid's `groupSettings.showDropArea` property to either display or hide the drop area.
+In this example, the Angular<sup style="font-size:70%">&reg;</sup> [Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to dynamically show or hide the group drop area. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event updates the Grid's `groupSettings.showDropArea` property to either display or hide the drop area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,7 +101,7 @@ In this example, the Syncfusion Angular<sup style="font-size:70%">&reg;</sup> [S
 
 By default, when a column is grouped in the Grid, that column is hidden from the display. This keeps the layout clean and makes grouped rows easier to read. To keep grouped columns visible, set the [groupSettings.showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showgroupedcolumn) property to `true`.
 
-In the example below, a Syncfusion Angular<sup style="font-size:70%">&reg;</sup> [Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to control this setting. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event updates the Grid's `groupSettings.showGroupedColumn` property, showing or hiding the grouped columns as needed.
+In the example below, a Angular<sup style="font-size:70%">&reg;</sup> [Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to control this setting. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event updates the Grid's `groupSettings.showGroupedColumn` property, showing or hiding the grouped columns as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

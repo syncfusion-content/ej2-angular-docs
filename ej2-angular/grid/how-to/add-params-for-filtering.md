@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Add params for filtering in Angular Grid component
 
-Customize the default filter UI in the Syncfusion Angular Grid by configuring the `params` property within a column's filter settings. This allows fine control over the filtering component’s behavior and appearance, especially in Menu filter mode.
+Customize the default filter UI in the Angular Grid by configuring the `params` property within a column's filter settings. This allows fine control over the filtering component’s behavior and appearance, especially in Menu filter mode.
 
 For instance, the sample below demonstrates columns **OrderID** and **Freight** as numeric types. When the filter dialog is opened for these columns, a NumericTextBox appears by default with a spin button for numeric value adjustment. By assigning options to the `params` property, such as setting `showSpinButton` to **false**, you can hide the spin button in the NumericTextBox for the **OrderID** column, customizing the user interface as required.
 

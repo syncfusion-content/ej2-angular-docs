@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular Grid with Django REST Binding POST Request Data
+# Angular Grid with Django REST Binding POST Request Data
 
 The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) combined with Django REST Framework and Microsoft SQL Server provides a robust, scalable data‑driven application architecture. The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) delivers a rich, high‑performance client‑side experience with advanced features like paging, sorting, filtering, searching and CRUD operations.
 

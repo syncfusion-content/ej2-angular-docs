@@ -18,7 +18,7 @@ Additionally, leverage the power for data retrieval and operations, enhancing ev
 
 Observables represent a fundamental reactive programming concept widely adopted throughout the Angular framework. An Observable creates a stream of data or events that can be observed over time, providing an elegant solution for handling asynchronous operations including input event processing, HTTP requests, and event management.
 
-The Syncfusion Angular Grid seamlessly integrates with Observables through the async pipe, enabling effortless binding of grid data. The [AsyncPipe](https://angular.dev/api/common/AsyncPipe) automatically subscribes to observables, extracting the latest emitted value with the required `result` and `count` properties structure that aligns perfectly with the grid's data expectations.
+The Angular Grid seamlessly integrates with Observables through the async pipe, enabling effortless binding of grid data. The [AsyncPipe](https://angular.dev/api/common/AsyncPipe) automatically subscribes to observables, extracting the latest emitted value with the required `result` and `count` properties structure that aligns perfectly with the grid's data expectations.
 
 The Syncfusion Grid component delivers comprehensive functionality for handling grid actions including **searching**, **filtering**, **sorting**, **grouping**, and **paging**. These interactions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid#datastatechange) event, providing opportunities to manage and manipulate data according to user interactions.
 
@@ -453,7 +453,7 @@ The following example demonstrates binding observable data using the async pipe 
 
 Exporting all records with async pipe proves especially beneficial when dealing with large datasets that require export for offline analysis or sharing purposes.
 
-By default, the Syncfusion Angular Grid component exports only the records available on the current page. However, the Grid component allows exporting all records, including those from multiple pages, by configuring the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) in conjunction with the Async Pipe for data binding.
+By default, the Angular Grid component exports only the records available on the current page. However, the Grid component allows exporting all records, including those from multiple pages, by configuring the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) in conjunction with the Async Pipe for data binding.
 
 To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
@@ -1033,7 +1033,7 @@ The following example demonstrates binding observable data without using the asy
 
 Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
 
-By default, the Syncfusion Angular Grid component exports only the records available on the current page. However, the Grid component also supports exporting all records—including those spanning multiple pages—by configuring the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties).
+By default, the Angular Grid component exports only the records available on the current page. However, the Grid component also supports exporting all records—including those spanning multiple pages—by configuring the [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties).
 
 To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
@@ -1257,7 +1257,7 @@ export class AppComponent implements OnInit {
 
 ## Fetch result from the DataManager query using external button 
 
-By default, Syncfusion Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, it may be necessary to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data loads into the grid.
+By default, Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, it may be necessary to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data loads into the grid.
 
 To achieve this, use the `executeQuery` method of `DataManager` with a query object. This method enables running a custom query and retrieving results dynamically.
 

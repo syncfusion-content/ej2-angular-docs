@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular Grid with Django REST Framework
+# Angular Grid with Django REST Framework
 
 This guide explains connecting the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) to a **Django REST Framework (DRF)** backend with **Custom Binding**. Custom Binding provides full control over the Grid’s communication with the server: the Grid raises events for data operations (paging, sorting, filtering, searching) and CRUD,  client code calls DRF endpoints, and DRF returns standardized results.
 
@@ -466,7 +466,7 @@ class BookLendingViewSet(viewsets.ModelViewSet):
 
 ViewSet configured for RESTful reads and writes aligned with Custom Binding.
 
-## Integrate Syncfusion Angular Grid with Django REST Framework (Custom Binding)
+## Integrate Angular Grid with Django REST Framework (Custom Binding)
 
 The Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Django backend.
 
@@ -787,7 +787,7 @@ interface Predicate {
 
 The client service bridges Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Custom Binding with DRF's REST API and query parameter conventions.
 
-### Step 6: Integrate Syncfusion Angular Grid with custom binding
+### Step 6: Integrate Angular Grid with custom binding
 
 The Angular Data Grid custom databinding feature integrates with the Django REST API through event-driven calls. Grid actions (paging, sorting, filtering, searching) are sent via **dataStateChange**, and CRUD is sent via **dataSourceChanged**. The component uses the shared `apiClient` service (created in the previous step) to translate Grid state into DRF query parameters and to call REST endpoints.
 

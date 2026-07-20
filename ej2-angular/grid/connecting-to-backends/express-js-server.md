@@ -550,7 +550,7 @@ Once dependencies are installed, include the required CSS files in the **src/sty
 @import '@syncfusion/ej2-angular-grids/styles/material3.css';
 ```
 
-For this project, the "Material 3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
+For this project, the "Material 3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 ### Step 4: Configure DataManager for REST API communication
 

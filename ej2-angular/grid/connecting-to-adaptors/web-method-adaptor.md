@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebMethodAdaptor in Syncfusion Angular Grid Component
+# WebMethodAdaptor in Angular Grid Component
 
-The [WebMethodAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#webmethod-adaptor) in the Syncfusion Angular Grid facilitates seamless data binding from remote services using web methods. This adaptor provides efficient communication between client-side applications and server endpoints by encapsulating query parameters within a structured **value** object. Similar to the URL adaptor, the WebMethodAdaptor transmits various DataManager properties including **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries within this **value** container.
+The [WebMethodAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#webmethod-adaptor) in the Angular Grid facilitates seamless data binding from remote services using web methods. This adaptor provides efficient communication between client-side applications and server endpoints by encapsulating query parameters within a structured **value** object. Similar to the URL adaptor, the WebMethodAdaptor transmits various DataManager properties including **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries within this **value** container.
 
 ![WebMethodAdaptor value object structure showing encapsulated query parameters](../images/web-method-adaptor-value.png)
 
@@ -19,7 +19,7 @@ This section provides comprehensive step-by-step guidance for retrieving data us
 
 ## Creating an API service
 
-To configure a server for use with the Syncfusion Angular Grid, follow these steps:
+To configure a server for use with the Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -156,7 +156,7 @@ After running the application, verify that the server-side API controller succes
 
 ![WebMethodAdaptor data response showing JSON array format](../images/url-adaptor-data.jpeg)
 
-## Connecting Syncfusion Angular Grid to an API service
+## Connecting Angular Grid to an API service
 
 To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -193,7 +193,7 @@ export class AppModule { }
 
 **3. Adding CSS Reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular components:
+Include the necessary CSS files in your `styles.css` file to style the Angular components:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -676,7 +676,7 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-The Syncfusion Angular Grid Component seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
+The Angular Grid Component seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 
@@ -688,7 +688,7 @@ CRUD operations within the grid can be mapped to server-side controller actions 
 4. **crudUrl**: Specifies a single URL for all CRUD operations.
 5. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in the Angular Grid component, refer to the editing [documentation](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit). In the below example, the batch edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) is enabled and the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in the Angular Grid component, refer to the editing [documentation](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit). In the below example, the batch edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) is enabled and the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -756,7 +756,7 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 The following class is used to structure data sent during CRUD operations:
 
@@ -930,7 +930,7 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 
 **Batch Operation**
 
-To perform batch operations, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new rows in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. All CRUD operations will be executed in a single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
+To perform batch operations, define the edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new rows in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. All CRUD operations will be executed in a single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 ```ts
 [app.component.ts]

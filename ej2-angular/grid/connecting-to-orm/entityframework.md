@@ -493,7 +493,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 
 For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
-### Step 3: Add Syncfusion Angular Grid
+### Step 3: Add Angular Grid
 
 The Angular Grid component can be added to the application by following these steps. To get started, add the Grid component to the application using the following code in (**src/app/app.component.ts**):
 

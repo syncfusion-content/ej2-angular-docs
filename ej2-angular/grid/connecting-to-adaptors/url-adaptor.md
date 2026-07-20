@@ -9,15 +9,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# UrlAdaptor in Syncfusion Angular Grid Component
+# UrlAdaptor in Angular Grid Component
 
-The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) serves as the base adaptor for facilitating communication between remote data services and UI components. It enables seamless data binding and interaction with custom API services or any remote service through URLs. The UrlAdaptor is particularly useful for scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, with the resultant data returned in the `result` and `count` format for display in the Syncfusion Angular Grid component.
+The [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) serves as the base adaptor for facilitating communication between remote data services and UI components. It enables seamless data binding and interaction with custom API services or any remote service through URLs. The UrlAdaptor is particularly useful for scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, with the resultant data returned in the `result` and `count` format for display in the Angular Grid component.
 
 This section describes a step-by-step process for retrieving data using UrlAdaptor, then binding it to the Angular Grid component to facilitate data and CRUD operations.
 
 ## Creating an API service
 
-To configure a server with Syncfusion Angular Grid, follow these steps:
+To configure a server with Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -187,7 +187,7 @@ export class AppModule { }
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in the `styles.css` file to style the Syncfusion Angular component:
+Include the necessary CSS files in the `styles.css` file to style the Angular component:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -547,7 +547,7 @@ export class AppComponent {
 
 ## Handling CRUD operations
 
-The Syncfusion Angular Grid Component seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
+The Angular Grid Component seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping:**
 

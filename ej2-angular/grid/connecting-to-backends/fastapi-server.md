@@ -705,7 +705,7 @@ def handle_remove(payload: Dict[str, Any], products: List[Dict[str, Any]], save_
     raise HTTPException(status_code=404, detail=f'Record {key} not found')
 ```
 
-At this point, the server configuration supports all Grid data operations, including paging, sorting, searching, filtering, and CRUD actions such as insert, update, and delete. The next section covers the integration of the Syncfusion Angular Grid with the configured server.
+At this point, the server configuration supports all Grid data operations, including paging, sorting, searching, filtering, and CRUD actions such as insert, update, and delete. The next section covers the integration of the Angular Grid with the configured server.
 
 ## Integrating Syncfusion Angular Grid with FastAPI
 

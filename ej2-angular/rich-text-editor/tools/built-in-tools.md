@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Built-in Tools in Angular Rich Text Editor Component
 
-The Angular Rich Text Editor's toolbar provide tools for formatting, styling, and managing content, enhancing user productivity in a Rich Text Editor.
+The [Angular Rich Text Editor's](https://www.syncfusion.com/angular-components/angular-rich-text-editor) toolbar provide tools for formatting, styling, and managing content, enhancing user productivity in a Rich Text Editor.
 
 By default, the Angular Rich Text Editor displays the following toolbar items:
 
@@ -177,7 +177,7 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 
 ## Customizing toolbar items
 
-Customize the toolbar by specifying desired items in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items), removing unwanted tools. Below is an example of a tailored toolbar:
+Customize the toolbar by specifying desired items in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items), removing unwanted tools. Below is an example of a tailored toolbar:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

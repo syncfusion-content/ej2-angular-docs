@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ODataV4Adaptor in Syncfusion Angular Grid Component
+# ODataV4Adaptor in Angular Grid Component
 
-The `ODataV4Adaptor` in the Syncfusion Angular Grid Component enables seamless integration with OData v4 services, providing efficient data fetching and manipulation capabilities. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in the Syncfusion Angular Grid Component.
+The `ODataV4Adaptor` in the Angular Grid Component enables seamless integration with OData v4 services, providing efficient data fetching and manipulation capabilities. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in the Angular Grid Component.
 
 ## Creating an OData service
 
-To configure a server with Syncfusion Angular Grid, follow these steps:
+To configure a server with Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -175,7 +175,7 @@ export class AppModule { }
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in the `styles.css` file to style the Syncfusion Angular component:
+Include the necessary CSS files in the `styles.css` file to style the Angular component:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -681,7 +681,7 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

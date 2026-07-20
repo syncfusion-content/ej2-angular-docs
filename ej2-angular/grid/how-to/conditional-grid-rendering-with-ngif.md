@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Conditional Grid Rendering with the *ngIf Directive
 
-When working with dynamic data sources, it is best practice to render the Syncfusion Angular Grid only when actual data is present. Avoiding the display of an empty grid improves user interface clarity and reduces potential confusion.
+When working with dynamic data sources, it is best practice to render the Angular Grid only when actual data is present. Avoiding the display of an empty grid improves user interface clarity and reduces potential confusion.
 
 Angular's [*ngIf](https://v17.angular.io/api/common/NgIf) directive conditionally adds or removes elements from the DOM based on a boolean expression. Applying `*ngIf` to the Grid component ensures the grid only renders when appropriate data is available, resulting in a cleaner and more intuitive user experience.
 

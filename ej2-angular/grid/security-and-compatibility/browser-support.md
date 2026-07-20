@@ -20,4 +20,4 @@ The Data Grid is compatible with all common desktop and mobile browsers.
 | Microsoft Edge | Latest 2 versions |
 | Apple Safari, including iOS | Latest 2 versions |
 
-For furthur details on browser compatibility, see the [Syncfusion Angular Browser](https://ej2.syncfusion.com/angular/documentation/browser) documentation.
+For furthur details on browser compatibility, see the [Angular Browser](https://ej2.syncfusion.com/angular/documentation/browser) documentation.

@@ -184,11 +184,11 @@ this.gridInstance.changeDataSource(employeeData);
 
 ## Prevent converting local time zone format for date column
 
-By default, the Syncfusion Angular Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, it may be necessary to display the original date as received from the server without timezone conversion.
+By default, the Angular Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, it may be necessary to display the original date as received from the server without timezone conversion.
 
 To prevent timezone conversion for date columns, use the `serverTimezoneOffset` property from `DataUtil`. Setting this property to "0" ensures dates remain in the original format received from the server without conversion to the local timezone.
 
-The following example demonstrates preventing local time zone conversion for date columns in the Syncfusion Angular Grid using the `DataUtil.serverTimezoneOffset` property:
+The following example demonstrates preventing local time zone conversion for date columns in the Angular Grid using the `DataUtil.serverTimezoneOffset` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

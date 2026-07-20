@@ -49,7 +49,7 @@ The following example demonstrates basic filter bar activation in the grid:
 
 ## Filter bar modes
 
-The Syncfusion Angular Grid filter bar operates in two distinct modes that determine when filtering actions are triggered. These modes provide different user experiences based on application requirements and user preferences.
+The Angular Grid filter bar operates in two distinct modes that determine when filtering actions are triggered. These modes provide different user experiences based on application requirements and user preferences.
 
 **OnEnter Mode:**
 

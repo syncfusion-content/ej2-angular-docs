@@ -18,7 +18,7 @@ The filter menu in the Angular Grid component provides a dialog-based filtering 
 
 To enable the filter menu, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) property to `Menu`. This property determines the type of filter UI that will be rendered, allowing users to apply filters using different operators tailored to each column's data type.
 
-The following example demonstrates basic filter menu usage in the Syncfusion Angular Grid:
+The following example demonstrates basic filter menu usage in the Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,7 +109,7 @@ Customize operators for string, number, date, and boolean data types using these
 * `dateOperator` - defines customized date operator list.
 * `booleanOperator` - defines customized boolean operator list.
   
-Here is an example to customize the filter operators list in Syncfusion Angular Grid:
+Here is an example to customize the filter operators list in Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -226,7 +226,7 @@ The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-da
 
 These events enable implementation of custom logic, display of messages, or modification of filter behavior based on specific requirements.
 
-The following example demonstrates filter menu event handling in the Syncfusion Angular Grid:
+The following example demonstrates filter menu event handling in the Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

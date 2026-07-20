@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Form Validation in Angular Rich Text Editor Component
 
-The Syncfusion Angular Rich Text Editor supports both template-driven and reactive forms, enabling seamless integration with Angular’s form-building technologies. It supports two-way data binding, validation, and dynamic control for enabling or disabling the editor, making it ideal for capturing and managing rich text content within forms.
+The [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-rich-text-editor) supports both template-driven and reactive forms, enabling seamless integration with Angular’s form-building technologies. It supports two-way data binding, validation, and dynamic control for enabling or disabling the editor, making it ideal for capturing and managing rich text content within forms.
 
 ## Template-Driven Forms
 
@@ -42,7 +42,7 @@ For more details about Reactive Forms, refer to <https://angular.io/guide/reacti
 
 For reactive forms, import `ReactiveFormsModule` into the app module. Also, import `FormGroup` and `FormControl` into the App component. The `FormGroup` is used to bind the form using the `formGroup` directive, and the `FormControl` is used to bind individual controls using `formControlName`. When you assign `formControlName` to the Rich Text Editor, ensure that a corresponding control is created in the `FormGroup`, and its value will be the default value of the form control.
 
-The following example demonstrates how to bind the Syncfusion Rich Text Editor to an Angular Reactive Form with primitive value binding.
+The following example demonstrates how to bind the Rich Text Editor to an Angular Reactive Form with primitive value binding.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,7 +58,7 @@ The following example demonstrates how to bind the Syncfusion Rich Text Editor t
 
 ## Disabling the Rich Text Editor Component in Reactive Forms (Angular 15+)
 
-In Angular 15 and later, you can dynamically enable or disable the Syncfusion Rich Text Editor when using Reactive Forms. This is particularly useful when the editor’s availability depends on user actions, form validation states, or other conditions.
+In Angular 15 and later, you can dynamically enable or disable the Rich Text Editor when using Reactive Forms. This is particularly useful when the editor’s availability depends on user actions, form validation states, or other conditions.
 
 ### Managing the Disabled State
 

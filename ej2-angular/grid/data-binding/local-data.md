@@ -30,9 +30,9 @@ The following example demonstrates the local data binding feature in the Angular
 
 ## Data binding with SignalR 
 
-The Syncfusion Angular Grid component supports real-time data binding using SignalR, enabling automatic grid updates as data changes on the server. This capability proves essential for applications requiring live updates and multi-client synchronization.
+The Angular Grid component supports real-time data binding using SignalR, enabling automatic grid updates as data changes on the server. This capability proves essential for applications requiring live updates and multi-client synchronization.
 
-To implement real-time data binding with SignalR in the Syncfusion Angular Grid, follow these steps:
+To implement real-time data binding with SignalR in the Angular Grid, follow these steps:
 
 **Step 1:** Install the necessary SignalR package for the client application using npm:
 

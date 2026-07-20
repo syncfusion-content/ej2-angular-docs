@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Normal Editing
 
-You can enable editing of a row with a single mouse click in the Syncfusion Angular Grid using the **Normal** editing mode. Invoke the [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) and [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) methods within an event handler for the Grid's **mouseup** event. Depending on the clicked target, start or end the row editing mode immediately, facilitating quick data entry and updates.
+You can enable editing of a row with a single mouse click in the Angular Grid using the **Normal** editing mode. Invoke the [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) and [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) methods within an event handler for the Grid's **mouseup** event. Depending on the clicked target, start or end the row editing mode immediately, facilitating quick data entry and updates.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

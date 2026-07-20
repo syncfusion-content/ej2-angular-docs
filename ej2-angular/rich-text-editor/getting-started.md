@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Rich Text Editor
 
-The Syncfusion Angular Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section describes how to create a basic Angular Rich Text Editor component and configure its core features.
+The [Angular Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/angular-rich-text-editor) is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section explains the steps to create a simple Angular Rich Text Editor component and configure its core functionalities.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
@@ -64,7 +64,7 @@ Next, navigate to the project folder:
 cd my-app
 ```
 
-## Adding Syncfusion Rich Text Editor package
+## Adding Rich Text Editor package
 
 All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Install the Rich Text Editor component with the following command:
 
