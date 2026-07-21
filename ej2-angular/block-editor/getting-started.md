@@ -10,11 +10,18 @@ domainurl: ##DomainURL##
 
 # Getting Started with the Angular Block Editor Component
 
-This guide explains how to create and configure the Block Editor component in a new Angular application.
+This guide explains how to create a default Block Editor component in a new Angular application.
+
+## Prerequisites
+
+Before you begin, ensure the following are installed:
+
+- **Node.js** (v18 or later) — required by the Angular CLI.
+- **Angular CLI** (v14 or later) — required for the standalone components used in this guide.
 
 ## Set up Angular Environment
 
-Use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI globally, run the following command.
+Use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. Angular CLI requires Node.js v18 or later. To install the Angular CLI globally, run the following command.
 
 ```
 npm install -g @angular/cli
@@ -22,37 +29,32 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Create a new Angular application using the following Angular CLI command:
+1. Run the following Angular CLI command to create a new application:
 
-```bash
-ng new my-app
-```
-This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
+    ```bash
+    ng new my-app
+    ```
 
-![Initial_setup](images/getting-started/Initial-setup.png)
+2. When prompted for the stylesheet format, accept the default (CSS) or choose another option:
 
-By default, it will create a CSS-based application.
+    ![Angular CLI initial setup prompt](images/getting-started/Initial-setup.png)
 
-Then the CLI also displays an additional prompt asking whether to enable Server‑Side Rendering (SSR) and Static Site Generation (SSG), as shown below:
+3. When prompted to enable Server-Side Rendering (SSR) and Static Site Generation (SSG), select the appropriate configuration:
 
-![Server_Side_Rendering_Setup](images/getting-started/SSR.png)
+    ![Angular CLI Server-Side Rendering prompt](images/getting-started/SSR.png)
 
-For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+4. When prompted to configure AI tooling, select any preferred option based on the development workflow:
 
-Then the CLI displays another prompt related to AI tooling support, as shown below:
+    ![Angular CLI AI tooling prompt](images/getting-started/AI-Tool.png)
 
-![AI_Tool_Setup](images/getting-started/AI-Tool.png)
+5. Navigate to the project folder:
 
-Any preferred option can be selected based on the development workflow or project needs.
+    ```bash
+    cd my-app
+    ```
+## Add Syncfusion Block Editor Package
 
-Next, navigate to the project folder:
-
-```bash
-cd my-app
-```
-## Adding Syncfusion Block Editor package
-
-All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Install the Block Editor component with the following command:
+All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. The `@syncfusion/ej2-angular-blockeditor` package supports Angular 14 and later. Install the Block Editor component with the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-blockeditor
@@ -60,59 +62,49 @@ npm install @syncfusion/ej2-angular-blockeditor
 
 ## Add CSS Reference
 
-To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
+Syncfusion provides multiple themes for the Block Editor component. For a complete list of available themes, refer to the [themes packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages).
+
+Install a Syncfusion theme package to provide the required styles. The following example installs the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme:
 
 ```bash
 npm install @syncfusion/ej2-tailwind3-theme --save
 ```
 
-To render the BlockEditor component, add the below import in the [src/styles.css] file which loads all the required dependency styles, as shown below:
+To render the Block Editor component, add the following import in the [src/styles.css] file to load all required dependency styles:
 
 ```css
-@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/blockeditor/index.css";
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/blockeditor/index.css';
 ```
 
 ## Add Syncfusion Block Editor Component
 
-Modify the template in the [src/app/app.component.ts] file to render the Block Editor component. Add the Angular Block Editor by using the `<ejs-blockeditor>` selector in `template` section of the app.component.ts file.
-
-```typescript
-
-import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
-import { Component } from '@angular/core';
-
-@Component({
-    imports: [ BlockEditorModule ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<!-- To Render BlockEditor component. -->
-    <div class="container" style="margin-top: 50px;">
-        <ejs-blockeditor />
-    </div>`
-})
-
-export class AppComponent { }
-
-```
-
-## Run the Application
-
-Run the application in the browser using the following command:
-
-```
-ng serve
-```
+Modify the template in the [src/app/app.ts] file to render the Block Editor component. Add the Angular Block Editor by using the `<ejs-blockeditor>` selector in the `template` section of the `app.ts` file.
 
 The following example shows a default Block Editor component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/block-editor/getting-started/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/block-editor/getting-started/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/block-editor/getting-started/src/styles.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/block-editor/getting-started" %}
+
+
+>  **Note:** Angular CLI 21 and later generates the root component as `src/app/app.ts`. Earlier Angular CLI versions use `src/app/app.component.ts`.
+## Run the Application
+
+Run the application in the browser using the following command:
+
+```
+ng serve --open
+```
+

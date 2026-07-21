@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting started with Angular Linear gauge component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Linear gauge component of Syncfusion Essential JS 2 and more details.
+description: Learn how to get started with the Angular Linear Gauge component of Syncfusion Essential JS 2  and more details.
 platform: ej2-angular
-control: Getting started 
+control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -15,6 +15,14 @@ domainurl: ##DomainURL##
 This section explains the steps required to create a simple Linear Gauge and demonstrate the basic usage of the Linear Gauge component.
 
 {% youtube "https://www.youtube.com/watch?v=KHAuX1TQisU" %}
+
+## Prerequisites
+
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-lineargauge` versions.
+
+You also need a modern code editor such as Visual Studio Code, Cursor, or Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio.
+
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
 ## Dependencies
 
@@ -48,80 +56,76 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Linear Gauge package
+## Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Linear Gauge package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are published on npm under the `@syncfusion` scope. The Angular distribution is available in two package formats:
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are published on npm under the `@syncfusion` scope. Angular distributions are available in two package formats:
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler (ngcc) package for legacy compilation and rendering
+1. [Ivy library distribution package](https://angular.dev/tools/libraries/angular-package-format) (recommended)
+2. Angular compatibility compiler (ngcc) package (legacy)
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) use the Ivy distribution to support the Angular Ivy rendering engine. These packages are compatible with Angular version 21 and other latest angular versions. Install the Ivy package with the following command:
+From package version `20.2.36` onwards, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are published as Ivy partial-compilation packages and are compatible with Angular 13 and later, including the latest Angular versions (such as Angular 21).
 
-Add [`@syncfusion/ej2-angular-lineargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/32.1.19) package to the application.
+Install the [`@syncfusion/ej2-angular-lineargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/32.1.19) package using the following command.
 
 ```bash
-npm install @syncfusion/ej2-angular-lineargauge --save
+npm install @syncfusion/ej2-angular-lineargauge
 ```
 
-### Angular compatibility compiled package(ngcc)
+### Angular compatibility compiled package (ngcc)
 
-For Angular versions earlier than 12, use the legacy ngcc package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Install the ngcc package with:
+Use the legacy `@ngcc`-tagged package only for projects that still rely on the Angular View Engine (typically Angular 12 and earlier). Angular 13 and later do not require ngcc.
 
-Add [`@syncfusion/ej2-angular-lineargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/32.1.19-ngcc) package to the application.
+Install the [`@syncfusion/ej2-angular-lineargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/32.1.19-ngcc) package using the following command.
 
 ```bash
-npm install @syncfusion/ej2-angular-lineargauge@ngcc --save
+npm install @syncfusion/ej2-angular-lineargauge@ngcc
 ```
 
 To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version, for example:
 
 ```bash
-@syncfusion/ej2-angular-lineargauge:"32.1.19-ngcc"
+"@syncfusion/ej2-angular-lineargauge": "32.1.19-ngcc"
 ```
 
 > Note: If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
 
-## Add LinearGauge component
+## Add the Linear Gauge component
 
-Modify the template in **app.component.ts** file to render the Linear Gauge component.
-`[src/app/app.component.ts]`.
+1. Open `src/app/app.component.ts` and replace its contents with the following code to render the Linear Gauge component.
 
-```javascript
+```typescript
 
-import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge'
 import { Component } from '@angular/core';
+import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge';
 
 @Component({
-imports: [
-         LinearGaugeModule
-    ],
+    imports: [LinearGaugeModule],
     standalone: true,
     selector: 'app-container',
-    // specifies the template string for the linear gauge component
+    // specifies the template string for the Linear Gauge component
     template: `<ejs-lineargauge id="gauge-container"></ejs-lineargauge>`
 })
-export class AppComponent {
-
-}
+export class AppComponent { }
 
 ```
 
-   Now use the `<code>app-container</code>` in the index.html instead of default one.
+2. Replace the default selector in `src/index.html` so the new standalone component is bootstrapped.
 
-    ```
+    ```html
     <app-container></app-container>
     ```
 
-* Now run the application in the browser using the below command.
+3. Run the application in the browser with the following command.
 
-   ```
+    ```bash
     npm start
-   ```
+    ```
 
-The below example shows a basic Linear Gauge.
+By default, the dev server opens at `http://localhost:4200/`.
+
+The following example renders a basic Linear Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -137,88 +141,58 @@ The below example shows a basic Linear Gauge.
 
 ## Module Injection
 
-LinearGauge component is segregated into the individual feature-wise modules. In order to use a particular feature, inject its feature module using the `providers: {}`. Please find the feature module name and description as follows.
+The Linear Gauge component is segregated into individual feature-wise services. To use a particular feature, register the matching service in the `providers` array of the component as shown below.
 
-* `AnnotationsService` - Inject this provider to use Annotation feature.
-* `GaugeTooltipService` - Inject this provider to use Tooltip feature.
+* `AnnotationsService` – Required to use the [Annotation](./annotations) feature.
+* `GaugeTooltipService` – Required to use the [Tooltip](./user-interaction#tooltip) feature.
 
-These modules should be injected in the providers section of the **app.component.ts** file as follows,
+Inject the services you need in the `providers` section of the `app.component.ts` file as shown below.
 
- ```javascript
-    import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge'
-    import { Component } from '@angular/core';
-    import { AnnotationsService, GaugeTooltipService} from '@syncfusion/ej2-angular-lineargauge';
+The following example demonstrates injecting `GaugeTooltipService` to enable the tooltip on the Circular Gauge:
 
-    @Component({
-        imports: [
-            LinearGaugeModule,
-        ],
-        standalone: true,
-        providers: [ AnnotationsService, GaugeTooltipService ]
-    })
+```typescript
+import { Component } from '@angular/core';
+import {
+    LinearGaugeModule,
+    GaugeTooltipService
+} from '@syncfusion/ej2-angular-lineargauge';
 
+@Component({
+    imports: [LinearGaugeModule],
+    standalone: true,
+    selector: 'app-container',
+    providers: [GaugeTooltipService],
+    template: `<ejs-lineargauge id="gauge-container" [tooltip]="tooltip"></ejs-lineargauge>`
+})
+export class AppComponent {
+    public tooltip?: Object;
+    ngOnInit(): void {
+        this.tooltip = {
+            enable: true
+        };
+    }
+ }
 ```
 
-## Add Gauge Title
+> Note: Inject only the services required for the features you use. Injecting all services is not required and can increase the bundle size slightly.
 
-The title can be added to the Linear Gauge component using the [`title`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGaugeModel#title-string) property in the Linear Gauge.
+## Troubleshooting
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs2/src/app.component.ts %}
-{% endhighlight %}
+* Feature not working (annotations, tooltip) - Ensure the matching service (`AnnotationsService`, `GaugeTooltipService`) is registered in the `providers` array of the host component.
+* `Can't bind to 'minimum'` or `ejs-lineargauge is not a known element` - Make sure `LinearGaugeModule` is imported in the `imports` array of every standalone component that uses the gauge.
+* `npm start` does not work - Run `npx ng serve` instead, or use `npm run start`.
+* Compatibility warning about ngcc on Angular 12 or earlier - Install the legacy package: `npm install @syncfusion/ej2-angular-lineargauge@ngcc`.
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs2" %}
+## See also
 
-## Axis Range
-
-The range of the axis can be set using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#minimum-number) and [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#maximum-number) properties in the Linear Gauge.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs3/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs3/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs3" %}
-
-To denote the axis labels with temperature units, add the °C as suffix to each label. This can be achieved by setting the **{value}°C** to the [`format`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/labelModel#format-string) property in the [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#labelstyle-labelmodel) object of the axis. Here, **{value}** acts as a placeholder for each axis label.
-
-To change the pointer value from the default value of the gauge, set the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel) object of the axis.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs4/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs4/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs4" %}
-
-## Setting the value of pointer
-
-The pointer value is changed in the below sample using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer) object of the axis.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs5/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs5/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs5" %}
+* [Axis configuration](./axis)
+* [Pointers](./pointers)
+* [Ranges](./ranges)
+* [Annotations](./annotations)
+* [Appearance](./appearance)
+* [User interaction (tooltips, events)](./user-interaction)
+* [Print and export](./print-and-export)
+* [Methods](./methods)
+* [Events](./events)
+* [Accessibility](./accessibility)
+* [EJ1 API migration](./ej1-api-migration)

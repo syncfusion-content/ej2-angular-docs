@@ -150,6 +150,13 @@ import { App } from './app/app';
 bootstrapApplication(App, appConfig)
   .catch((err) => console.error(err));
 {% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% raw %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+
+{% endraw %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/paging-cs1" %}

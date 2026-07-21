@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with Angular Accumulation Chart component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Accumulation Chart component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Accumulation Chart component | Syncfusion
+description:  Check out and learn about Getting Started with Angular Accumulation Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Getting Started 
 documentation: ug
 domainurl: https://ej2.syncfusion.com
 ---
 
 # Getting Started with Angular Accumulation Chart Component
 
-This section explains the steps required to create a simple accumulation chart and demonstrates the basic usage of the accumulation chart component.
+This section explains the steps required to create a simple accumulation chart and demonstrates the basic usage of the [Angular Accumulation Chart](https://www.syncfusion.com/angular-components/angular-charts) component.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
@@ -27,17 +27,11 @@ The main files used in this guide are:
 - `src/app/app.ts` — Defines the root standalone component.
 - `src/index.html` — Contains the Angular root element.
 
-N> In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
+> **Note:** In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
 
-N> If your application uses an older NgModule-based structure, import `AccumulationChartModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
+> **Note:** If your application uses an older NgModule-based structure, import `AccumulationChartModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
 
-## Step 1: Create a Project Folder
-
-Create a folder named `my-project` in your desired location. This folder will contain your Syncfusion Accumulation Chart Angular project.
-
-## Step 2: Set up the Angular environment
-
-Start by opening your project in the terminal on your system **(Command Prompt, PowerShell, or Terminal)**.
+## Step 1: Install the Angular CLI
 
 Use [Angular CLI](https://github.com/angular/angular-cli) to create and manage Angular applications. Install Angular CLI globally using the following command:
 
@@ -45,17 +39,23 @@ Use [Angular CLI](https://github.com/angular/angular-cli) to create and manage A
 npm install -g @angular/cli
 ```
 
-## Step 3: Create an Angular application
+Verify the installation:
 
-Create a new Angular application using the following command.
+```bash
+ng version
+```
+
+## Step 2: Create an Angular application
+
+Create a new Angular application using the following command:
 
 ```bash
 ng new my-accumulation-chart-app
 ```
 
-During project creation, Angular CLI may prompt you to choose stylesheet, SSR/SSG, and AI tool configuration options. For this basic Accumulation Chart sample, you can use the following options:
+* This command will prompt you to choose stylesheet, SSR/SSG, and AI tool configuration options. For this basic Accumulation Chart sample, you can use the following options:
 
-* **Stylesheet system**: Choose any option. This guide uses `CSS` for simplicity and applies the Syncfusion® Tailwind 3 theme through CSS imports.
+* **Stylesheet system**: Choose any option. This guide uses `CSS` for simplicity and applies the Syncfusion Tailwind 3 theme via CSS imports.
 * **SSR and SSG/Pre-rendering**: Select `No`.
 * **AI tools configuration**: Select `None`.
 
@@ -65,19 +65,19 @@ Navigate to the project folder:
 cd my-accumulation-chart-app
 ```
 
-## Step 4: Install the Syncfusion® Angular Accumulation Chart package
+Open the project in Command Prompt, PowerShell, or Terminal before proceeding to the next step.
 
-All Syncfusion Essential® JS 2 packages are available in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
+## Step 3: Install the Syncfusion® Angular Accumulation Chart package
 
-Install the Angular Accumulation Chart package using the following command:
+All Syncfusion Essential® JS 2 packages are available in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. The [Angular Chart package](https://www.npmjs.com/package/@syncfusion/ej2-angular-charts) can be installed using the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-charts --save
+npm install @syncfusion/ej2-angular-charts
 ```
 
-N> Installing `@syncfusion/ej2-angular-charts` automatically installs the required dependency packages.
+> **Note:** Installing `@syncfusion/ej2-angular-charts` automatically installs the required dependency packages.
 
-## Step 5: Register the Accumulation Chart module and add the component
+## Step 4: Register the Accumulation Chart module and add the component
 
 Import `AccumulationChartModule` from `@syncfusion/ej2-angular-charts` and add it to the `imports` collection of the standalone component. Then, add the Angular Accumulation Chart component using the `<ejs-accumulationchart>` selector in the component template.
 
@@ -91,21 +91,22 @@ import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
   selector: 'app-root',
   standalone: true,
   imports: [AccumulationChartModule],
-  providers: [],
   template: `<ejs-accumulationchart id="pie-container"></ejs-accumulationchart>`
 })
 export class App {}
 ```
 
-This renders an empty accumulation chart in the application.
+This renders an empty accumulation chart in the application's view.
 
-N> The component selector must match the root element used in the `src/index.html` file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`.
+> **Note:** The component selector must match the root element used in the `src/index.html` file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`.
 
-## Step 6: Create your first Accumulation Chart with data source and series type
+Run the application with `npm start` and verify that an empty accumulation chart renders before proceeding to the next step.
 
-This section explains how to create a simple accumulation chart by binding data and rendering a series using Angular Accumulation Chart components.
+## Step 5: Create your first Accumulation Chart with data source and series type
 
-The following example demonstrates how to visualize monthly data using a pie chart. It also shows how to bind data and map fields using the `dataSource`, `xName`, and `yName` properties, along with configuring the legend using the `legendSettings` property.
+This section explains how to create a simple accumulation chart by binding data and rendering a series using the Angular Accumulation Chart component.
+
+The following example demonstrates how to visualize monthly data using a pie chart. It also shows how to bind data, map fields using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#datasource), [xName](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#xname) , and [yName](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#yname) properties, and configure the legend using the [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/index-default#legendsettings)  property.
 
 Update the `src/app/app.ts` file as follows:
 
@@ -124,9 +125,10 @@ import { AccumulationChartModule, PieSeriesService, AccumulationLegendService } 
             [legendSettings]='legendSettings'
         >
             <e-accumulation-series-collection>
-                <e-accumulation-series 
-                    [dataSource]='piedata' 
-                    xName='x' 
+                <e-accumulation-series
+                    [dataSource]='piedata'
+                    type='Pie'
+                    xName='x'
                     yName='y'
                 >
                 </e-accumulation-series>
@@ -153,16 +155,20 @@ export class App implements OnInit {
 }
 ```
 
-In this example:
+The chart renders a pie with one slice for each month (Jan–Dec) sized according to the data values. Hovering over a slice displays a tooltip with the month and value, and each slice can be pulled out individually for emphasis.
 
-* [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/index-default#legendsettings) controls the visibility and appearance of the accumulation chart legend.
-* [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#datasource) provides the JSON data used to render the accumulation chart.
-* [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#type) specifies the accumulation series type, such as Pie, Pyramid, or Funnel.
-* [`xName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#xname) maps the category field (for example, x) from the data source.
-* [`yName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#yname) maps the numeric field (for example, y) from the data source.
-* [`<e-accumulation-series-collection>`] and [`<e-accumulation-series>`] directives are used to define and render an accumulation series in the chart.
+The following table summarizes the key properties used in this example:
 
-## Step 7: Run the application
+| Properties | Description |
+| --- | --- |
+| [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/index-default#legendsettings) | Controls the visibility and appearance of the accumulation chart legend. In this sample, the legend is hidden by setting `visible: false`. |
+| [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#datasource) | Provides the JSON data used to render the accumulation chart. |
+| [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#type) | Specifies the accumulation series type, such as Pie, Pyramid, or Funnel. |
+| [`xName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#xname) | Maps the category field (for example, `x`) from the data source. |
+| [`yName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#yname) | Maps the numeric field (for example, `y`) from the data source. |
+| [`<e-accumulation-series-collection>`] and [`<e-accumulation-series>`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseriesdirective) | Directives used to define and render an accumulation series in the chart. |
+
+## Step 6: Run the application
 
 Run the application using the following command:
 
@@ -170,6 +176,22 @@ Run the application using the following command:
 npm start
 ```
 
-Open the generated local URL (for example, `http://localhost:4200/`) from terminal in the browser. The application displays the accumulation chart as shown below:
+Open the generated local URL (for example, `http://localhost:4200/`) from the terminal in the browser. The application displays a pie chart showing monthly distribution from January to December, as shown below:
 
-![Getting started](../images/accumulation-chart-getting-started.png) 
+![Pie chart showing monthly distribution from January to December](../images/accumulation-chart-getting-started.png)
+
+## Troubleshooting
+
+If the accumulation chart does not render as expected, check for these common issues:
+
+* **"No provider for PieSeriesService" error**: Confirm that `PieSeriesService` and `AccumulationLegendService` are added to the component's `providers` array. Each accumulation series type requires its corresponding service.
+* **Chart not visible**: Verify that the `<ejs-accumulationchart>` element has a unique `id` and that the component's `selector` matches the root element used in `src/index.html` (commonly `<app-root>`).
+* **Data not displayed**: Check that the `xName` and `yName` values match the field names in your data source exactly, and that the `dataSource` is assigned before the chart renders.
+* **Build errors**: Run `ng version` to confirm that Node.js, Angular CLI, and `@syncfusion/ej2-angular-charts` are on supported versions, and check the terminal output for the specific error.
+* **Port already in use**: If `npm start` fails because port `4200` is in use, run `ng serve --port 4201` (or another free port) instead.
+
+## See also
+
+* [Legend](legend.md) — Configure the accumulation chart legend.
+* [Data Label](data-label.md) — Customize the data labels displayed on slices.
+* [Pie, Doughnut, Pyramid, and Funnel Charts](pie-dough-nut.md) — Explore other accumulation chart types.

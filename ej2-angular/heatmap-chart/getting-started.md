@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting started with Angular HeatMap chart component | Syncfusion
-description:  Checkout and learn about Getting started with Angular HeatMap chart component of Syncfusion Essential JS 2 and more details.
+description:  Check out and learn about the Getting started with Angular HeatMap chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: HeatMap
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -16,9 +16,15 @@ You can explore some useful features in the HeatMap component with the following
 
 {% youtube "https://www.youtube.com/watch?v=GG3l2cAst7Y" %}
 
-## Set up the Angular Application
+## Prerequisites
 
-Prerequisites: Node.js (LTS) and npm must be installed before creating an Angular project.
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-heatmap` versions.
+
+You also need a modern code editor such as Visual Studio Code, Cursor, or Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio.
+
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+
+## Set up the Angular Application
 
 Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI with one of the following approaches depending on preference.
 
@@ -26,7 +32,7 @@ Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and ma
 npm install -g @angular/cli
 ```
 
-Once the Angular CLI is installed, create a new Angular application by running the following command.
+Once the Angular CLI is installed, create a new Angular application by running the following command. Use the recommended flags to create a standalone, CSS-styled, non-routing app (required for the standalone component examples below).
 
 ```bash
 ng new my-app
@@ -43,19 +49,21 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) use the Ivy distribution to support the Angular Ivy rendering engine. These packages are compatible with Angular version 21 and other latest angular versions. Install the Ivy package with the following command:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36` refers to the Syncfusion package version) use the Ivy distribution to support the Angular Ivy rendering engine. These packages are compatible with Angular version 21 and other recent Angular versions. Use the following command to install the Ivy package:
 
-Add [`@syncfusion/ej2-angular-heatmap`](https://www.npmjs.com/package/@syncfusion/ej2-angular-heatmap/v/32.1.19) package to the application.
+Install the [`@syncfusion/ej2-angular-heatmap`](https://www.npmjs.com/package/@syncfusion/ej2-angular-heatmap) package.
 
 ```bash
 npm install @syncfusion/ej2-angular-heatmap --save
 ```
 
+> **Note:** The latest `ej2-angular-heatmap` package is version-compatible with Angular 16+; Angular 21 and other recent versions are supported.
+
 ### Angular compatibility compiled package (ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+> **Deprecation note:** The ngcc (Angular compatibility compiler) package format is deprecated and applies only to Angular versions earlier than 12. For Angular 12 and later, always use the Ivy distribution package described above.
 
-Add [`@syncfusion/ej2-angular-heatmap@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-heatmap/v/32.1.19-ngcc) package to the application.
+To install the legacy (ngcc) variant, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-heatmap@ngcc --save
@@ -71,18 +79,18 @@ To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the p
 
 ## Add HeatMap component
 
-After installing the package, you need to add the HeatMap component to your application. To do this, modify the template in the `app.component.ts` file to render the `<ejs-heatmap>` component. Also, ensure the `HeatMapModule` is imported to register the component.
+After installing the package, you need to add the HeatMap component to your application. To do this, modify the template in the `app.component.ts` file to render the `<ejs-heatmap>` component. Also, ensure the `HeatMapModule` (or `HeatMapAllModule` to include all features) is imported to register the component.
 
 The following example demonstrates how to add a basic HeatMap to the application.
 
-  ```javascript
+```typescript
 
-import { HeatMapModule, HeatMapAllModule} from '@syncfusion/ej2-angular-heatmap'
+import { HeatMapModule } from '@syncfusion/ej2-angular-heatmap';
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
 imports: [
-         HeatMapModule, HeatMapAllModule
+         HeatMapModule
     ],
     standalone: true,
     selector: 'my-app',
@@ -94,23 +102,22 @@ export class AppComponent {
 
 }
 
-  ```
+```
+<!-- markdownlint-disable MD033 -->
 
-  <!-- markdownlint-disable MD033 -->
+Now use the <code>my-app</code> in the index.html instead of default one.
 
-  Now use the <code>my-app</code> in the index.html instead of default one.
-
-  ```html
+```html
   <my-app></my-app>
-  ```
+```
 
-Use the `npm run start` command to run the application in the browser.
+To run the application locally, use the Angular CLI `ng serve` command (or `npm start` if your `package.json` defines a `start` script). The app is served by default at `http://localhost:4200/`.
 
-  ```
-  npm start
-  ```
+```bash
+  ng serve
+```
 
-The below example shows a basic HeatMap.
+The following example shows a basic HeatMap.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,36 +128,47 @@ The below example shows a basic HeatMap.
 {% include code-snippet/heatmap/getting-started/initialize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/heatmap/getting-started/initialize-cs1" %}
 
 ## Module injection
 
-The heat map components are segregated into individual feature-wise modules. To use its feature, you need to inject its feature module using the `HeatMap.Inject()` method. In the current application,the basic heat map is modified to visualize sales revenue data for week, and  the tooltip and legend features of the heat map are used. Find the relevant feature modules and descriptions as follows.
+The HeatMap component's features are segregated into individual feature-wise modules. To use a feature, register its corresponding service in the component's `providers` array. The relevant services and their descriptions are listed below:
 
-* `LegendService` - Provides the legend feature by injecting it.
-* `TooltipService` - Provides the tooltip feature by injecting it.
+* `LegendService` - Provides the legend feature.
+* `TooltipService` - Provides the tooltip feature.
 
-Now, import the above-mentioned modules from the heat map package and inject them into the heat map component as follows.
+> **Note:** `HeatMapAllModule` re-exports every feature service, so it can be used in place of the per-feature `providers` entries when you need a quick start. For tree-shaking and smaller bundle sizes, prefer importing only the services you need and registering them in the `providers` array.
 
- ```javascript
- 
-    import { HeatMapModule, HeatMapAllModule, LegendService, TooltipService } from '@syncfusion/ej2-angular-heatmap'
-    import { Component } from '@angular/core';
+The following example shows how to import the feature services and register them with the HeatMap component.
 
-    @Component({
-        imports: [
-            HeatMapModule, HeatMapAllModul
-        ],
-        standalone: true,
-        providers: [ LegendService, TooltipService ]
-    })
+```typescript
+import { Component } from '@angular/core';
+import { HeatMapModule, LegendService, TooltipService } from '@syncfusion/ej2-angular-heatmap';
 
- ```
+@Component({
+    imports: [
+        HeatMapModule
+    ],
+    standalone: true,
+    providers: [ LegendService, TooltipService ],
+    selector: 'app-root',
+    template: `<ejs-heatmap id="heatmap-container" [legendSettings]='legendSettings' [tooltipSettings]='tooltipSettings'></ejs-heatmap>`
+})
+export class AppComponent {
+    public legendSettings: Object = {
+        visible: true,
+        position: 'Right',
+    };
+    public tooltipSettings: Object = {
+        enable: true
+    };
+}
+```
 
 ## Populate heat map with data
 
-This section explains how to populate the following two-dimensional array data to the heat map.
+This section explains how to populate a two-dimensional array as the HeatMap's `dataSource`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -164,100 +182,24 @@ This section explains how to populate the following two-dimensional array data t
   
 {% previewsample "page.domainurl/samples/heatmap/getting-started/datasource-cs1" %}
 
-## Enable axis labels
+## Troubleshooting
 
-You can add axis labels to the heat map and format those labels using the [xAxis](https://ej2.syncfusion.com/angular/documentation/api/heatmap#xaxis) and [yAxis](https://ej2.syncfusion.com/angular/documentation/api/heatmap#yaxis) properties. Axis labels provide additional information about the data points populated in the heat map.
+**Legend/tooltip not appearing** — Feature service not registered. Add `LegendService` / `TooltipService` to the component's `providers` array.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/getting-started/axis-cs1/src/app.component.ts %}
-{% endhighlight %}
+**`ngcc` warning during install** — `-ngcc` suffix missing on a non-Ivy Angular project. Use the `@syncfusion/ej2-angular-heatmap@ngcc` package as described in the [ngcc section](#angular-compatibility-compiled-package-ngcc).
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/getting-started/axis-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/heatmap/getting-started/axis-cs1" %}
+**"Cannot find module" for HeatMap imports** — Package not installed. Re-run `npm install @syncfusion/ej2-angular-heatmap --save`.
 
-## Add heat map title
+## See also
 
-Add a title using the [titleSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap#titlesettings) property to the heat map to provide quick information to the user about the data populated in the heat map.
+For deeper coverage of individual features, see the following topics:
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/getting-started/title-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/getting-started/title-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/heatmap/getting-started/title-cs1" %}
-
-## Enable legend
-
-Use a legend for the heat map in the [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap#legendsettings) object by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/heatmap/legendSettings#visible) property to **true** and injecting the `Legend` module using the `HeatMap.Inject(Legend)` method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/getting-started/legend-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/getting-started/legend-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/heatmap/getting-started/legend-cs1" %}
-
-## Add data label
-
-Add data labels to improve the readability of the heat map. This can be achieved by setting the [showLabel](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings#showlabel) property to **true** in the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap#cellsettings) object.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/getting-started/datalabel-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/getting-started/datalabel-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/heatmap/getting-started/datalabel-cs1" %}
-
-## Add custom cell palette
-
-The default palette settings of the heat map cells can be customized by using the [paletteSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap#palettesettings) property. Using the [palette](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings#palette) property in `paletteSettings` object, you can change the color set for the cells. You can change the color mode of the cells to `fixed` or `gradient` mode using the [type](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings#type) property.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/getting-started/palette-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/getting-started/palette-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/heatmap/getting-started/palette-cs1" %}
-
-## Enable tooltip
-
-The tooltip is used when you cannot display information by using the data labels due to space constraints. You can enable the tooltip by setting the [showTooltip](https://ej2.syncfusion.com/angular/documentation/api/heatmap#showtooltip) property to true and injecting the Tooltip module using the `HeatMap.Inject(Tooltip)` method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/getting-started/tooltip-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/getting-started/tooltip-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/heatmap/getting-started/tooltip-cs1" %}
-
-> You can refer to our [Angular HeatMap Chart]( https://www.syncfusion.com/angular-ui-components/angular-heatmap-chart)  feature tour page for its groundbreaking feature representations. You can also explore our [Angular HeatMap Chart example](https://ej2.syncfusion.com/angular/demos/#/material/heatmap-chart/default) that shows how to render the HeatMap Chart in Angular.
+- [Axis](./axis.md)
+- [Title and text styles](./appearance.md)
+- [Legend](./legend.md)
+- [Palette](./palette.md)
+- [Tooltip](./tooltip.md)
+- [Selection](./selection.md)
+- [Events](./events.md)
+- [Bubble HeatMap](./bubble-heatmap.md)
+- [Working with data](./working-with-data.md)

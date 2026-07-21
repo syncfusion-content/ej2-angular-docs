@@ -12,9 +12,21 @@ domainurl: ##DomainURL##
 
 In heat map, each data point is displayed as a cell with applied color based on the data value. The palette in the heat map is used to define the color range for cells and gradient type for colors. You can define the colors either in RGB or hex codes using the [color](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteCollection#color) property in `palette`. The defined colors are applied to the cell background based on the palette type and cell value.
 
-## Palette types
+## Add custom cell palette
 
-You can display the heat map cells either in gradient colors or fixed colors.
+The default palette settings of the HeatMap cells can be customized by using the [paletteSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap#paletteSettings) property. Using the [palette](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings#palette) property in the `paletteSettings` object, you can change the color set for the cells. You can change the color mode of the cells to `Fixed` or `Gradient` using the [type](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettings#type) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/heatmap/getting-started/palette-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/heatmap/getting-started/palette-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/heatmap/getting-started/palette-cs1" %}
 
 ### Gradient
 

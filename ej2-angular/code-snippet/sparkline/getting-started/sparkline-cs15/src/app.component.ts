@@ -6,20 +6,20 @@ import { Component } from '@angular/core';
     providers: [SparklineTooltipService],
     standalone: true,
     selector: 'app-container',
-    template: `<ejs-sparkline id='container' width='400px' height='350px' [dataSource]="data" xName="xval" yName="yval" type="Area">
+    template: `<ejs-sparkline id='container' width='400px' height='350px' [dataSource]="data" xName="XValue" yName=" YValue" type="Area">
     </ejs-sparkline>`
 })
 export class AppComponent {
     public data: object[] = [
-        { xval: 1, yval: 20090440 },
-        { xval: 2, yval: 20264080 },
-        { xval: 3, yval: 20434180 },
-        { xval: 4, yval: 21007310 },
-        { xval: 5, yval: 21262640 },
-        { xval: 6, yval: 21515750 },
-        { xval: 7, yval: 21766710 },
-        { xval: 8, yval: 22015580 },
-        { xval: 9, yval: 22262500 },
-        { xval: 10, yval: 22507620 }
+        { XValue: 1, YValue: 20090440 },
+        { XValue: 2, YValue: 20264080 },
+        { XValue: 3, YValue: 20434180 },
+        { XValue: 4, YValue: 21007310 },
+        { XValue: 5, YValue: 21262640 },
+        { XValue: 6, YValue: 21515750 },
+        { XValue: 7, YValue: 21766710 },
+        { XValue: 8, YValue: 22015580 },
+        { XValue: 9, YValue: 22262500 },
+        { XValue: 10, YValue: 22507620 }
     ];
 }
