@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 ## Cell customization
 
-You can customize the cell by using the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellsettings) property.
+You can customize the cell by using the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap#cellsettings) property.
 
 ### Border
 
-Change the width, color, and radius of the heat map cells by using the [border](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#border) property.
+Change the width, color, and radius of the heat map cells by using the [border](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings#border) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ Change the width, color, and radius of the heat map cells by using the [border](
 
 ### Cell highlighting
 
-Enable or disable the cell highlighting while hovering over the heat map cells by using the [enableCellHighlighting](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#enablecellhighlighting) property.
+Enable or disable the cell highlighting while hovering over the heat map cells by using the [enableCellHighlighting](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings#enablecellhighlighting) property.
 
 >Note: The cell highlighting only works in a SVG rendering mode.
 
@@ -118,21 +118,21 @@ The title is used to provide a quick information about the data plotted in heatm
   
 {% previewsample "page.domainurl/samples/heatmap/appearance/celltitle-cs1" %}
 
-## Data label
+## Add data label
 
-The visibility of data labels can be toggled using the [showLabel](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#showlabel) property. By default, the data labels will be visible.
+Add data labels to improve the readability of the HeatMap. This can be achieved by setting the [showLabel](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings#showLabel) property to **true** in the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap#cellSettings) object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/datalabel-cs1/src/app.component.ts %}
+{% include code-snippet/heatmap/getting-started/datalabel-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/datalabel-cs1/src/main.ts %}
+{% include code-snippet/heatmap/getting-started/datalabel-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/heatmap/appearance/datalabel-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/datalabel-cs1" %}
 
 ### Customize the data label
 

@@ -12,25 +12,25 @@ domainurl: ##DomainURL##
 
 Tooltip is used to provide the details of the heat map cell, and this can be displayed, while hovering the cursor over the cell or performing tap action in touch devices.
 
-## Default tooltip
+## Enable tooltip
 
-You can enable the tooltip by setting the [showTooltip](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#showtooltip) property to true and injecting the `Tooltip` module using the `HeatMap.Inject(Tooltip)`.
+The tooltip is used to display information that cannot fit in the data labels due to space constraints. You can enable the tooltip by setting the [showTooltip](https://ej2.syncfusion.com/angular/documentation/api/heatmap#showTooltip) property to **true** and registering the `TooltipService` in the component's `providers` array (see [Module injection](#module-injection) above).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltip-cs1/src/app.component.ts %}
+{% include code-snippet/heatmap/getting-started/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltip-cs1/src/main.ts %}
+{% include code-snippet/heatmap/getting-started/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/heatmap/tooltip/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/heatmap/getting-started/tooltip-cs1" %}
 
 ## Tooltip template
 
-In heat map, you can customize the tooltip using the [tooltipRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#tooltiprender) client-side event.
+In heat map, you can customize the tooltip using the [tooltipRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap#tooltiprender) client-side event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ In heat map, you can customize the tooltip using the [tooltipRender](https://ej2
 
 ## Customize the appearance of Tooltip
 
-The  [fill](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#fill) and [border](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings/#textStyle) property in the tooltip is used to customize the font of the tooltip text.
+The  [fill](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings#fill) and [border](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings#border) properties are used to customize the background color and border of the tooltip respectively. The [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltipSettings#textStyle) property in the tooltip is used to customize the font of the tooltip text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

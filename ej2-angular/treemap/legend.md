@@ -12,6 +12,22 @@ domainurl: ##DomainURL##
 
 Legend is used to provide valuable information for interpreting what the TreeMap displays. The legends can be represented in various colors, shapes or other identifiers based on the data.
 
+## Enable Legend
+
+The legend summarizes the colors used to render the TreeMap items. You can show a legend by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettingsModel#visible) property to `true` in the [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap#legendsettings) object and by injecting the `TreeMapLegendService` provider.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs56/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs56/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs56" %}
+
 ## Position and alignment
 
 Legend position is used to place legend in various positions. Based on the legend position, the legend item will be aligned. For example, if the position is top or bottom, the legend items are placed by rows. If the position is left or right, the legend items are placed by columns.
@@ -80,7 +96,7 @@ In default mode, the legends have symbols with legend labels that are used to id
 
 ### Interactive mode
 
-The legends can be made interactive with an arrow mark that indicates exact range color in the legend when the mouse hovers on the TreeMap item. Enable this option by setting the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#mode) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/) to **Interactive**.
+The legends can be made interactive with an arrow mark that indicates exact range color in the legend when the mouse hovers on the TreeMap item. Enable this option by setting the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#mode) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings) to **Interactive**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +112,7 @@ The legends can be made interactive with an arrow mark that indicates exact rang
 
 ## Legend size
 
-Customize the legend size by modifying the [`height`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#width) properties in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/). It accepts values in both percentage and pixel.
+Customize the legend size by modifying the [`height`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#width) properties in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings). It accepts values in both percentage and pixel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,7 +128,7 @@ Customize the legend size by modifying the [`height`](https://ej2.syncfusion.com
 
 ### Paging support
 
-TreeMap support legend paging, if the legend items cannot be placed within the provided [`height`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#width) of the legend.
+TreeMap support legend paging, if the legend items cannot be placed within the provided [`height`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#width) of the legend.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -144,7 +160,7 @@ Based on the mapping ranges in the data source, get the excluded ranges from the
 
 ## Hide desired legend items
 
-To enable or disable the desired legend item for each color mapping, set the [`showLegend`](https://ej2.syncfusion.com/angular/documentation/api/treemap/colorMapping/#showlegend) property to **true** in the [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/treemap/colorMapping/).
+To enable or disable the desired legend item for each color mapping, set the [`showLegend`](https://ej2.syncfusion.com/angular/documentation/api/treemap/colorMapping#showlegend) property to **true** in the [`colorMapping`](https://ej2.syncfusion.com/angular/documentation/api/treemap/colorMapping).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,7 +176,7 @@ To enable or disable the desired legend item for each color mapping, set the [`s
 
 ## Hide legend items based data source value
 
-To enable or disable the legend visibility for each item through the data source, bind the appropriate data source field name to [`showLegendPath`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#showlegendpath) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/).
+To enable or disable the legend visibility for each item through the data source, bind the appropriate data source field name to [`showLegendPath`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#showlegendpath) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -176,7 +192,7 @@ To enable or disable the legend visibility for each item through the data source
 
 ## Bind legend item text from data source
 
-To show the legend item text from the data source, bind the property name from data source to the [`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#valuepath) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/).
+To show the legend item text from the data source, bind the property name from data source to the [`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#valuepath) property in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -192,7 +208,7 @@ To show the legend item text from the data source, bind the property name from d
 
 ## Hide duplicate legend items
 
-To enable or disable the duplicate legend items, set the [`removeDuplicateLegend`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#removeduplicatelegend) property to **true** in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/).
+To enable or disable the duplicate legend items, set the [`removeDuplicateLegend`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#removeduplicatelegend) property to **true** in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -208,7 +224,7 @@ To enable or disable the duplicate legend items, set the [`removeDuplicateLegend
 
 ## Legend Responsiveness
 
-Use a responsive legend that switches positions between the right and the bottom based on the available height and width. To enable the responsive legend, set the [`position`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/#position) property to **Auto** in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings/) and the legend position is changed based on the available height and width.
+Use a responsive legend that switches positions between the right and the bottom based on the available height and width. To enable the responsive legend, set the [`position`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings#position) property to **Auto** in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettings) and the legend position is changed based on the available height and width.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

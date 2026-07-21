@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor"
-
+import './App.css';
 @Component({
     imports: [BlockEditorModule],
     standalone: true,
@@ -13,5 +13,5 @@ import { BlockEditorModule } from "@syncfusion/ej2-angular-blockeditor"
 })
 
 
-export class AppComponent {
+export class App {
 }

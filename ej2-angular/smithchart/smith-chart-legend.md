@@ -14,6 +14,24 @@ domainurl: ##DomainURL##
 
 Legend is a key used in smithchart, that contains symbol and descriptions. It provides valuable information for interpreting what the smithchart is displaying and can be represented in various colors, shapes or other identifiers based on the data. In simple words, we can define that legend is used to denote the series rendered in the smithchart.
 
+## Enable the legend for the Smith Chart
+
+The Smith Chart's legend denotes the corresponding series. To enable the legend, inject the `SmithchartLegendService` and set the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartModel#legendsettings) [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartLegendSettingsModel#visible) property to `true`. The series name can be customized using the series [`name`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesModel#name) property. You can also configure the legend's position, alignment, and shape using additional `legendSettings` options; see the [Smith Chart legend API](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartLegendSettingsModel) for details.
+
+The following example shows how to enable the legend for the Smith Chart.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs6/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs6/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs6" %}
+
 ## Position and Alignment
 
 By default visibility of the legend is false. To enable the legend, kindly set visible as true in legendSettings. Default position for the legend is bottom. By using [`position`] property, you can change the position of the legend. You can either place the legend at bottom, top, right and left side of the smithchart. To use the legend in smithchart, you need to import and inject the SmithchartLegend from chart.

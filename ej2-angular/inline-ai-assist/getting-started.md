@@ -10,7 +10,89 @@ domainurl: ##DomainURL##
 
 # Getting started in Angular Inline AI Assist component
 
-This section explains how to create a simple **Inline AI Assist** component and configure its available functionalities in Angular.
+This section explains how to create a simple **Inline AI Assist** component and configure its available features in Angular.
+
+## Prerequisites
+
+| Requirement | Version |
+|-------------|---------|
+| Angular | 12 and above |
+| Node.js | 14.0.0 or above, Recommended: Latest Version |
+
+> Note: This guide supports recent Angular versions including Angular 21 and standalone components. For detailed compatibility, refer to the Angular version support matrix in the Syncfusion docs.
+
+### Angular supported versions
+
+| Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Inline AI Assist / Interactive Chat Version |
+|-----------------|------------------------------------------------------------------------------------------------------|
+| [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20) | 29.2.8 |
+| [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 |
+| [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
+| [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033212e4b/) | 23.2.4 |
+| [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/) | 21.1.39 |
+| [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 |
+| [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/) | 20.2.36 |
+| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
+| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/) | 19.3.43 |
+
+### Browser support
+
+| Browser | Supported Versions |
+|:--------|:-------------------|
+| Google Chrome, including Android & iOS | Latest 2 versions |
+| Mozilla Firefox | Latest version |
+| Microsoft Edge | Latest 2 versions |
+| Apple Safari, including iOS | Latest 2 versions |
+
+## Setup the Angular application
+
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
+
+```bash
+npm install -g @angular/cli
+```
+
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+
+## Create a new application
+
+With Angular CLI installed, execute this command to generate a new application:
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Server_Side_Rendering_Setup](images/getting-started/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![AI_Tool_Setup](images/getting-started/AI-Tool.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, it uses `app.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Dependencies
 
@@ -26,79 +108,47 @@ The following list of dependencies is required to use the Angular Inline AI Assi
     |-- @syncfusion/ej2-popups
 ```
 
-## Set up Angular environment
+## Adding Syncfusion Angular Inline AI Assist package
 
-You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
-
-```
-npm install -g @angular/cli
-```
-
-## Create an Angular application
-
-Start a new Angular application using the following Angular CLI command.
-
-```
-ng new my-app
-cd my-app
-```
-
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> package
-
-Add the `@syncfusion/ej2-angular-interactive-chat` package to the application.
+To install the Inline AI Assist package, use the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-interactive-chat --save
+npm install @syncfusion/ej2-angular-interactive-chat
 ```
 
 ## Adding CSS reference
 
-To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
+Themes for Syncfusion Inline AI Assist components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```bash
-npm install @syncfusion/ej2-tailwind3-theme --save
-```
+Install the Material 3 theme package using the following command:
 
-To render the Inline AI Assist component, add the below import in the [src/styles.css] file which loads all the required dependency styles, as shown below:
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
 
-```css
-@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/inline-ai-assist/index.css";  
-```
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Then add the following CSS reference to the `src/styles.css` file:
+
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/inline-ai-assist/index.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding Inline AI Assist component
 
-Modify the template in the `src/app/app.component.ts` file to render the Angular Inline AI Assist component. Add the component by using the tags within the `template` section of the `app.component.ts` file.
-
-```javascript
-import { Component } from '@angular/core';
-import { InlineAIAssistModule } from '@syncfusion/ej2-angular-interactive-chat';
-
-@Component({
-    imports: [ InlineAIAssistModule ],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-      <ejs-inlineaiassist id='inlineAssist'></ejs-inlineaiassist>
-    `
-})
-export class AppComponent  { }
-```
-
-## Run the application
-
-After completing the configuration required to render a basic Inline AI Assist, run the following command to display the output in your default browser.
-
-```
-ng serve
-```
-
-The following example illustrates the output in your browser.
+Modify the template in the `src/app/app.ts` file to render the Inline AI Assist component. Add the component by using the `<ejs-inlineaiassist>` selector in the `template` section of the `app.ts` file.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/inline-ai-assist/getting-started/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/inline-ai-assist/getting-started/src/app.component.ts %}
 {% endhighlight %}
 
@@ -112,6 +162,27 @@ The following example illustrates the output in your browser.
 
 {% previewsample "page.domainurl/samples/inline-ai-assist/getting-started" %}
 
+## Registering your Syncfusion license
+
+Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register it.
+
+Open the `main.ts` file and add the following code:
+
+```typescript
+import { registerLicense } from '@syncfusion/ej2-base';
+registerLicense('YOUR_LICENSE_KEY');
+```
+
+> **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
+
+## Run the application
+
+After completing the configuration required to render a basic Inline AI Assist, run the following command to display the output in your default browser.
+
+```bash
+ng serve
+```
+
 ## RelateTo and target configuration
 
 You can use the `relateTo` property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement. The `target` property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
@@ -120,7 +191,7 @@ You can use the `relateTo` property to position the Inline AI Assist relative to
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/inline-ai-assist/relateTo/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/inline-ai-assist/relateTo/src/app.component.ts %}
 {% endhighlight %}
 
@@ -142,7 +213,7 @@ Responses can be shown in two modes: `Inline` (updates content in-place) and `Po
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/inline-ai-assist/response-mode/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/inline-ai-assist/response-mode/src/app.component.ts %}
 {% endhighlight %}
 
@@ -155,3 +226,31 @@ Responses can be shown in two modes: `Inline` (updates content in-place) and `Po
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/inline-ai-assist/response-mode" %}
+
+## Production build
+
+To create an optimized production build, run:
+
+```bash
+ng build
+```
+
+This command compiles the application and generates the production-ready files in the `dist/` directory.
+
+To preview the production build locally, run:
+
+```bash
+npx http-server dist
+```
+
+Then open the URL displayed in the terminal.
+
+## Troubleshooting
+
+- **Inline AI Assist styles are not applied:** Ensure the required Syncfusion theme CSS is imported in `src/styles.css`.
+- **Trial license warning message:** Register a valid Syncfusion license key using the `registerLicense()` method from `@syncfusion/ej2-base`.
+- **Port 4200 is already in use:** Stop the conflicting process or run the application on a different port:
+
+  ```bash
+  ng serve --port 3000
+  ```
