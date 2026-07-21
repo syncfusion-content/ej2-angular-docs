@@ -177,7 +177,7 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 
 ## Customizing toolbar items
 
-Customize the toolbar by specifying desired items in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items), removing unwanted tools. Below is an example of a tailored toolbar:
+Customize the toolbar by specifying desired items in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items), removing unwanted tools. Below is an example of a tailored toolbar:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

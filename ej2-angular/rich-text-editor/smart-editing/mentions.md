@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Mentions in Angular Rich Text Editor Component
 
-The Mention feature, integrated with the Syncfusion Angular Rich Text Editor via the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/) component, enables users to tag or mention users or objects from a suggestion list. This functionality streamlines tagging by eliminating manual entry of names or identifiers, enhancing efficiency and accuracy.
+The Mention feature, integrated with the Syncfusion Angular Rich Text Editor via the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started) component, enables users to tag or mention users or objects from a suggestion list. This functionality streamlines tagging by eliminating manual entry of names or identifiers, enhancing efficiency and accuracy.
 
 ## Setup and configuration
 
@@ -114,4 +114,4 @@ In the following sample, we configured the following properties:
 
 ## See also
 
-* [Getting Started with Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/)
+* [Getting Started with Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started)

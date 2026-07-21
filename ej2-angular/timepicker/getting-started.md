@@ -131,28 +131,21 @@ For applications not compiled with Ivy, use the `ngcc` tagged packages:
 npm add @syncfusion/ej2-angular-calendars@32.1.19-ngcc		
 ```
 
-## Import Syncfusion CSS styles
+## Adding CSS reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be added in various ways: via CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-The `Material` theme is added to your `styles.css` when you run `ng add` (this happens automatically by default).
+Install the Material 3 theme package using the following npm command:
 
-To stylize only specific Syncfusion<sup style="font-size:70%">&reg;</sup> components, import the necessary styles. For example, to style only the TimePicker component:
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-calendars/styles/material3.css';
+```bash
+npm install @syncfusion/ej2-material3-theme
 ```
 
-> Ensure that the import order aligns with the component's dependency sequence.
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
-For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
+```css
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+```
 
 ## Adding TimePicker component
 

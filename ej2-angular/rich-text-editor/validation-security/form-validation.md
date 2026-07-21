@@ -16,7 +16,7 @@ The Syncfusion Angular Rich Text Editor supports both template-driven and reacti
 
 Template-driven forms use Angular directives in the view to handle form controls. To enable template-driven forms, import `FormsModule` into the corresponding app module.
 
-For more details about template-driven forms, refer to <https://angular.io/guide/forms#template-driven-forms>.
+For more details about template-driven forms, refer to <https://v17.angular.io/guide/forms#template-driven-forms>.
 
 Add the `name` attribute to the Rich Text Editor element to identify the form field. To register the Rich Text Editor with `ngForm`, bind `ngModel` to it. The `FormsModule` will then automatically detect the Rich Text Editor as a form element. After that, the Rich Text Editor value will be set based on the `ngModel` value.
 
@@ -38,7 +38,7 @@ The following example demonstrates two-way data binding with a template-driven f
 
 Reactive forms use a model-driven technique to handle form data between the component and the view. They listen to form data changes between the App component and the view and also return the validity states and values of form elements.
 
-For more details about Reactive Forms, refer to <https://angular.io/guide/reactive-forms>.
+For more details about Reactive Forms, refer to <https://v17.angular.io/guide/reactive-forms>.
 
 For reactive forms, import `ReactiveFormsModule` into the app module. Also, import `FormGroup` and `FormControl` into the App component. The `FormGroup` is used to bind the form using the `formGroup` directive, and the `FormControl` is used to bind individual controls using `formControlName`. When you assign `formControlName` to the Rich Text Editor, ensure that a corresponding control is created in the `FormGroup`, and its value will be the default value of the form control.
 

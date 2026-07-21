@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enter Key Configuration in Angular Rich Text Editor component | Syncfusion
+title: Enter Key Configuration in Angular Rich Text Editor | Syncfusion
 description: Learn how to customize Enter and Shift+Enter key behaviors in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Enter Key Configuration
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enter and Shift+Enter Key Configuration in Angular Rich Text Editor Component
+# Enter and Shift+Enter Key Configuration in Angular Rich Text Editor
 
 The Rich Text Editor allows customization of the Enter and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
 
 ## Enter key configuration
 
-By default, pressing the Enter key in the Rich Text Editor creates a new `<p>` tag. You can customize this behavior using the [enterKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enterkey) property.
+By default, pressing the Enter key in the Rich Text Editor creates a new `<p>` tag. You can customize this behavior using the [enterKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enterkey) property.
 
 **Available Options**
 
@@ -40,7 +40,7 @@ When you customize the Enter key, the editor will create the specified tag when 
 
 ## Shift+Enter key configuration
 
-By default, pressing Shift+Enter in the Rich Text Editor inserts a `<br>` tag. You can customize this behavior using the [shiftEnterKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#shiftEnterkey) property.
+By default, pressing Shift+Enter in the Rich Text Editor inserts a `<br>` tag. You can customize this behavior using the [shiftEnterKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#shiftEnterkey) property.
 
 **Available Options**
 
@@ -66,7 +66,7 @@ When you customize the Shift+Enter key, the editor will create the specified tag
 
 ## Preventing enter key actions
 
-In some cases, you may want to prevent the default Enter key behavior entirely. The Rich Text Editor allows you to intercept and prevent the default action of the Enter key at the editor level by handling the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#actionbegin) event. To ensure that the default behavior is also suppressed at the browser level, you need to call the `preventDefault()` method on the event object within the event handler. This approach allows for precise control over the editor's behavior in response to the Enter key press, facilitating the implementation of custom functionality.
+In some cases, you may want to prevent the default Enter key behavior entirely. The Rich Text Editor allows you to intercept and prevent the default action of the Enter key at the editor level by handling the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#actionbegin) event. To ensure that the default behavior is also suppressed at the browser level, you need to call the `preventDefault()` method on the event object within the event handler. This approach allows for precise control over the editor's behavior in response to the Enter key press, facilitating the implementation of custom functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -38,7 +38,7 @@ Required CSS file of code mirror
  <link href="scripts/CodeMirror/codemirror.min.css" rel="stylesheet" />
 ```
 
-Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of ToolbarSettings, define the code mirror plugins, and then pass the Rich Text Editor content as argument in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#actioncomplete) event.
+Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of ToolbarSettings, define the code mirror plugins, and then pass the Rich Text Editor content as argument in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#actioncomplete) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +54,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 
 ## Embedly integration
 
-This can be achieved by binding the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#actioncomplete) event to the toolbar items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script is have to add in the sample to embed the content,
+This can be achieved by binding the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#actioncomplete) event to the toolbar items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script is have to add in the sample to embed the content,
 
 Include `embedly` javascript.
 

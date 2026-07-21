@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 - Rich Text Editor easily integrate with [Embed.ly](https://embed.ly/) which is probably the best service when it comes to embed the rich content such as Twitter, Facebook and lots of other publishing platform embeds. This integration allows users to insert links that render as interactive embed cards, enhancing the visual presentation and user experience when sharing web content.
 
-- This can be achieved by binding the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#actioncomplete) event to the toolbar items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#toolbarsettings) property. In the event handler, create an element and add the appropriate class.
+- This can be achieved by binding the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#actioncomplete) event to the toolbar items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#toolbarsettings) property. In the event handler, create an element and add the appropriate class.
 
 ## Prerequisites
 

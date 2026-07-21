@@ -120,8 +120,8 @@ Below is the example integration of Code Mirror with the Angular Rich Text Edito
 ## Additional resources
 
 - GitHub Repository: [Angular Rich Text Editor integrations samples](https://github.com/SyncfusionExamples/angular-richtexteditor-codemirror)
-- CodeMirror 6 — Official documentation and guides: https://codemirror.net/6/docs/  
+- CodeMirror 6 — Official documentation and guides: https://codemirror.net/docs/  
 - @codemirror packages on npm — state, view, language, and theme modules: https://www.npmjs.com/search?q=%40codemirror  
-- CodeMirror examples and extensions gallery: https://codemirror.net/6/examples/  
+- CodeMirror examples and extensions gallery: https://codemirror.net/examples/  
 - Syncfusion Angular Rich Text Editor — API reference and integration notes: https://ej2.syncfusion.com/angular/documentation/rich-text-editor/  
 - Syncfusion demos — CodeMirror integration sample: https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/overview  

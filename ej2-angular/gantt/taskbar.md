@@ -213,12 +213,6 @@ import { GanttModule, IGanttData } from "@syncfusion/ej2-angular-gantt";
           style="border-style:solid;height:100%;border-top-right-radius:0px;border-bottom-right-radius:0px;"
           [style.width.px]="calculateProgressWidth(data)"
         ></div>
-        <div class="e-notification-badge-container">
-          <span
-            class="e-badge e-badge-secondary e-badge-notification e-badge-overlap"
-            >{{ data.ganttProperties.progress }}%</span
-          >
-        </div>
       </div>
     </ng-template>`,
 })

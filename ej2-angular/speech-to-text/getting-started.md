@@ -8,126 +8,126 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with the Angular SpeechToText Component
+# Getting started in Angular SpeechToText component
 
-This section provides a step-by-step guide to creating your first Angular application and integrating the Syncfusion SpeechToText component.
+This section explains how to create a simple **SpeechToText** component and configure its available functionalities in Angular.
 
-## Dependencies
+## Prerequisites
 
-The list of dependencies required to use the SpeechToText component in your application is given below:
+| Requirement | Version |
+|-------------|---------|
+| Angular | 12 and above |
+| Node.js | 14.0.0 or above, Recommended: Latest Version |
 
-```javascript
-|-- @syncfusion/ej2-angular-inputs
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-popups
-```
+> Note: This guide supports recent Angular versions including Angular 21 and standalone components. For detailed compatibility, refer to the Angular version support matrix in the Syncfusion docs.
 
-## Set up Angular environment
+### Angular supported versions
 
-You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
+| Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular SpeechToText / Inputs Version |
+|-----------------|---------------------------------------------------------------------------------------------|
+| [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20) | 29.2.8 |
+| [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 |
+| [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
+| [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033212e4b/) | 23.2.4 |
+| [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/) | 21.1.39 |
+| [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 |
+| [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/) | 20.2.36 |
+| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
+| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/) | 19.3.43 |
 
-```
+### Browser support
+
+| Browser | Supported Versions |
+|:--------|:-------------------|
+| Google Chrome, including Android & iOS | Latest 2 versions |
+| Mozilla Firefox | Latest version |
+| Microsoft Edge | Latest 2 versions |
+| Apple Safari, including iOS | Latest 2 versions |
+
+## Setup the Angular application
+
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
+
+```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Start a new Angular application using the following Angular CLI command.
+## Create a new application
 
-```
-ng new my-app
-cd my-app
-```
-
-## Installing the Syncfusion SpeechToText package
-
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion packages from this npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
-
-Currently, Syncfusion provides two types of package structures for Angular components:
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format)
-2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion Angular packages (`>=20.2.36`) have been updated to the Ivy distribution format to support the Angular `Ivy` rendering engine. These packages are compatible with Angular version 12 and above. To download the package, use the command below.
-
-The Syncfusion Angular SpeechToText component is included in the [`@syncfusion/ej2-angular-inputs`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38) package. Install it using the following command:
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
-npm install @syncfusion/ej2-angular-inputs --save
+ng new syncfusion-angular-app
 ```
 
-### Angular compatibility compiled package(ngcc)
-
-For applications using an Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package, use the command below.
-
-Add the [`@syncfusion/ej2-angular-inputs@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-inputs/v/20.4.38-ngcc) package to the application.
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
 ```bash
-npm install @syncfusion/ej2-angular-inputs@ngcc --save
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
 ```
 
-To specify the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as shown below.
+* By default, a CSS-based application is created. Use SCSS if required:
 
 ```bash
-@syncfusion/ej2-angular-inputs:"20.4.38-ngcc"
+ng new syncfusion-angular-app --style=scss
 ```
 
->Note: If the `ngcc` tag is not specified while installing the package, the Ivy library package will be installed by default, which may cause a warning in projects using older versions of Angular.
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial_setup](images/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, it uses `app.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+## Adding Syncfusion Angular SpeechToText package
+
+To install the SpeechToText package, use the following command:
+
+```bash
+npm install @syncfusion/ej2-angular-inputs
+```
 
 ## Adding CSS reference
 
-To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
+Themes for Syncfusion SpeechToText components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```bash
-npm install @syncfusion/ej2-tailwind3-theme --save
-```
-
-To render the SpeechToText component, add the import below in the [src/styles.css] file, which loads the required dependency styles:
-
-```css
-@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/speech-to-text/index.css";
-```
-
-## Adding the Syncfusion SpeechToText component
-
-Modify the `app.component.ts` file to apply the [`ejs-speechtotext`] directive to a standard HTML button element. This directive initializes the SpeechToText component with its default functionality.
-
-```typescript
-
-import { SpeechToTextModule } from '@syncfusion/ej2-angular-inputs'
-import { Component } from '@angular/core';
-
-@Component({
-    imports: [
-        SpeechToTextModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<!-- To Render SpeechToText component. -->
-    <div class="container" style="width: 40px; margin: 50px auto;">
-        <button ejs-speechtotext></button>
-    </div>`
-})
-
-export class AppComponent { }
-
-```
-
-## Running the application
-
-Run the application in the browser using the following command:
-
-```
-ng serve
-```
-
-The following example demonstrates a default SpeechToText component.
+Install the Material 3 theme package using the following command:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight bash tabtitle="npm" %}
+npm install @syncfusion/ej2-material3-theme --save
+{% endhighlight %}
+{% endtabs %}
+
+Then add the following CSS reference to the `src/styles.css` file:
+
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/speech-to-text/index.css";
+{% endhighlight %}
+{% endtabs %}
+
+## Adding SpeechToText component
+
+Modify the template in the `src/app/app.ts` file to render the SpeechToText component. Add the Angular SpeechToText by using the `<button ejs-speechtotext>` directive in the `template` section of the `app.ts` file.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speech-to-text/getting-started/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -140,24 +140,53 @@ The following example demonstrates a default SpeechToText component.
 
 {% previewsample "page.domainurl/samples/speech-to-text/getting-started/index" %}
 
+## Registering your Syncfusion license
+
+Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register it.
+
+Open the `main.ts` file and add the following code:
+
+```typescript
+import { registerLicense } from '@syncfusion/ej2-base';
+registerLicense('YOUR_LICENSE_KEY');
+```
+
+> **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
+
+## Run the application
+
+After completing the configuration required to render a basic SpeechToText component, run the following command to display the output in your default browser.
+
+```bash
+ng serve
+```
+
 > The [SpeechToText](../api/speech-to-text) component requires an active internet connection and must be used in a browser that supports the [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) Web Speech API.
 
-## Customizing button content
+## Production build
 
-The content of the SpeechToText button can be customized for its active and inactive states. Use the [`content`](../api/speech-to-text/buttonSettingsModel#content) property to define the text for the start listening state and the [`stopContent`](../api/speech-to-text/buttonSettingsModel#stopContent) property for the stop listening state. These properties are configured within the [`buttonSettings`](../api/speech-to-text#buttonSettings) property.
+To create an optimized production build, run:
 
-The following example shows how to configure `buttonSettings` in the SpeechToText component.
+```bash
+ng build
+```
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speech-to-text/button-settings/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/speech-to-text/button-settings/src/styles.css %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/speech-to-text/button-settings/index.html %}
-{% endhighlight %}
-{% endtabs %}
+This command compiles the application and generates the production-ready files in the `dist/` directory.
 
-{% previewsample "page.domainurl/samples/speech-to-text/button-settings/index" %}
+To preview the production build locally, run:
+
+```bash
+npx http-server dist
+```
+
+Then open the URL displayed in the terminal.
+
+## Troubleshooting
+
+- **SpeechToText styles are not applied:** Ensure the required Syncfusion theme CSS is imported in `src/styles.css`.
+- **Trial license warning message:** Register a valid Syncfusion license key using the `registerLicense()` method from `@syncfusion/ej2-base`.
+- **Port 4200 is already in use:** Stop the conflicting process or run the application on a different port:
+
+  ```bash
+  ng serve --port 3000
+  ```

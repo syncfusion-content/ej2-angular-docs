@@ -80,7 +80,7 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 
 ### Customizing shortcut keys
 
-You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

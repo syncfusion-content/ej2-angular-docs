@@ -14,7 +14,7 @@ The Rich Text Editor has full keyboard accessibility that includes shortcuts to 
 
 ## HTML editor shortcut keys
 
-You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#editormode) as `HTML`.
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#editormode) as `HTML`.
 
 ### Toolbar
 
@@ -45,7 +45,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 | Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>C</kbd> |
 | Paste format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |  <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>V</kbd> |
 | Clear the copy format painter | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
-| Tab space (when [enableTabKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+| Tab space (when [enableTabKey](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
 
 ### Inserting
 
@@ -147,7 +147,7 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 ## Custom key config
 
-You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#keyconfig) property.
+You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#keyconfig) property.
 
 In the below sample, you have customize the bold, italic, underline toolbar action with ctrl+alt+b, ctrl+alt+i and ctrl+alt+u respectively.
 

@@ -109,7 +109,7 @@ For more detailed control over the numbering style, use the `numberFormatList` d
 * `Lower Alpha`: Uses lowercase letters (a, b, c, ...)
 * `Upper Roman`: Employs uppercase Roman numerals (I, II, III, ...)
 
-You can customize the available number formats using the [numberFormatList](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#numberformatlist) property of the Rich Text Editor.
+You can customize the available number formats using the [numberFormatList](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#numberformatlist) property of the Rich Text Editor.
 
 The following example demonstrates how to customize the number format lists in the Rich Text Editor:
 
@@ -200,7 +200,7 @@ Please refer to the below video for visual behavior and interaction examples:
 
 The Rich Text Editor allows you to set indentation for text blocks such as paragraphs, headings, or lists. This feature helps you visually organize and structure your content, making it easier to read and understand.
 
-The Rich Text Editor allows you to configure two types of indentation tools, `Indent` and `Outdent` tool  in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
+The Rich Text Editor allows you to configure two types of indentation tools, `Indent` and `Outdent` tool  in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 | Options | Description |
 |----------------|---------|
@@ -361,7 +361,7 @@ The Rich Text Editor supports line height feature which allows users to adjust t
 
 ### Built-in line height
 
-You can add the `LineHeight` tool to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
+You can add the `LineHeight` tool to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -375,13 +375,13 @@ You can add the `LineHeight` tool to the toolbar in the Rich Text Editor using [
 
 {% previewsample "page.domainurl/samples/rich-text-editor/line-height" %}
 
-The Rich Text Editor comes with a pre-configured set of [lineHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#lineheight) property.
+The Rich Text Editor comes with a pre-configured set of [lineHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#lineheight) property.
 
 ### Custom line height
 
-The Rich Text Editor supports custom line height along with the existing line height dropdown list. To add additional line height to the line height dropdown, you can configure the items field of the [lineHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#lineheight) property. This allows you to extend the available line height options beyond the default selection.
+The Rich Text Editor supports custom line height along with the existing line height dropdown list. To add additional line height to the line height dropdown, you can configure the items field of the [lineHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#lineheight) property. This allows you to extend the available line height options beyond the default selection.
 
-The [supportAllValues](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#supportAllValues) setting enables the line height dropdown to display and retain line-height values that are not part of the predefined options. When `supportAllValues` property is turned on, the dropdown will show the current line-height value from the selection, even if that value is not present in the configured lineHeights array. By default, `supportAllValues` will be set to false.
+The [supportAllValues](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#supportAllValues) setting enables the line height dropdown to display and retain line-height values that are not part of the predefined options. When `supportAllValues` property is turned on, the dropdown will show the current line-height value from the selection, even if that value is not present in the configured lineHeights array. By default, `supportAllValues` will be set to false.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -421,7 +421,7 @@ The Format Painter tool enables users to replicate formatting from one text segm
 
 ### Configuring format painter tool in the toolbar
 
-You can add the `FormatPainter` tool in the Rich Text Editor using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
+You can add the `FormatPainter` tool in the Rich Text Editor using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 >To use the Format Painter feature, we need to import and configure the `FormatPainterService` in the provider section.
 
@@ -494,7 +494,7 @@ This feature is particularly useful when you need to:
 To enable the `ClearFormat` feature in your Rich Text Editor, you need to add it to the toolbar items. Follow these steps:
 
 1. Open your component file where you've implemented the Rich Text Editor.
-2. Locate the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property in your Rich Text Editor configuration.
+2. Locate the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property in your Rich Text Editor configuration.
 3. Add `'ClearFormat'` to the `items` array within `toolbarSettings`.
 
 Here's an example of how to configure the Clear Format feature:

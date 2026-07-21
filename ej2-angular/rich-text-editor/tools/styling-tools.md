@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Styling Tools in Angular Rich Text Editor Component
 
-The Angular Rich Text Editor's styling tools enable customization of font family, size, and colors, enhancing content presentation in a WYSIWYG editor. Configure these tools using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property with `FontName`, `FontSize`, `FontColor`, and `BackgroundColor`. 
+The Angular Rich Text Editor's styling tools enable customization of font family, size, and colors, enhancing content presentation in a WYSIWYG editor. Configure these tools using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property with `FontName`, `FontSize`, `FontColor`, and `BackgroundColor`. 
 
 ## Font family
   
@@ -25,7 +25,7 @@ These steps will apply the selected font style to the chosen text, allowing you 
 
 ### Built-in font family
 
-You can add the `FontName` tool to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+You can add the `FontName` tool to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 ```typescript
 
@@ -45,11 +45,11 @@ export class AppComponent {
 
 ```
 
-The Rich Text Editor comes with a pre-configured set of [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontfamily) property.
+The Rich Text Editor comes with a pre-configured set of [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#fontfamily) property.
 
 ### Custom font family
 
-The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontfamily) property. This allows you to extend the available font options beyond the default selection.
+The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#fontfamily) property. This allows you to extend the available font options beyond the default selection.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,7 +65,7 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 
 ### Google font support
 
-To use web fonts in Rich Text Editor, it is not needed for the web fonts to be present in local machine. To add the web fonts to Rich Text Editor, you need to refer the web font links and add the font names in the [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontfamily) property.
+To use web fonts in Rich Text Editor, it is not needed for the web fonts to be present in local machine. To add the web fonts to Rich Text Editor, you need to refer the web font links and add the font names in the [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#fontfamily) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +96,7 @@ The Rich Text Editor initializes with a default font size, which inherits the fo
 
 ### Built-in font size
 
-You can add the `FontSize` tool to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+You can add the `FontSize` tool to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 ```typescript
 
@@ -115,11 +115,11 @@ export class AppComponent {
 }
 
 ```
-The Rich Text Editor includes a default set of [fontSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontsize) property.
+The Rich Text Editor includes a default set of [fontSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#fontsize) property.
 
 ### Custom font size
 
-The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [fontSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontsize) property. This allows you to extend the available font options beyond the default selection.
+The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [fontSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#fontsize) property. This allows you to extend the available font options beyond the default selection.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -135,7 +135,7 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 
 ## Font and background color
 
-You can add the `FontColor` and `BackgroundColor` tools to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+You can add the `FontColor` and `BackgroundColor` tools to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 ```typescript
 
@@ -159,13 +159,13 @@ export class AppComponent {
 
 To apply `font color` or `background color` to selected content in the Rich Text Editor, use the font color and background color tools.
 
-The Rich Text Editor offers custom font and background colors along with the existing list through the [colorCode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundColor/#colorcode) field of the [fontColor](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontcolor) and [backgroundColor](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#backgroundcolor) properties.
+The Rich Text Editor offers custom font and background colors along with the existing list through the [colorCode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundcolor#colorcode) field of the [fontColor](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#fontcolor) and [backgroundColor](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#backgroundcolor) properties.
 
-Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` and `Palette`. The Palette mode provides a predefined set of colors, while the Picker mode includes a color scheme to choose custom colors. You can switch between these options using the [modeSwitcher](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/fontColorModel/#modeswitcher) feature.
+Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` and `Palette`. The Palette mode provides a predefined set of colors, while the Picker mode includes a color scheme to choose custom colors. You can switch between these options using the [modeSwitcher](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/fontcolormodel#modeswitcher) feature.
 
-We can specify the number of columns in the color palette for both `FontColor` and `BackgroundColor` using the [columns](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundColorModel/#columns) property.
+We can specify the number of columns in the color palette for both `FontColor` and `BackgroundColor` using the [columns](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundcolormodel#columns) property.
 
-The [default](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundColorModel/#default) property specifies the default `FontColor` and `BackgroundColor` that is applied when no color is explicitly selected by the user. This color will be preselected in the `FontColor` and `BackgroundColor` color palettes and used as the initial highlight color for text.
+The [default](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundcolormodel#default) property specifies the default `FontColor` and `BackgroundColor` that is applied when no color is explicitly selected by the user. This color will be preselected in the `FontColor` and `BackgroundColor` color palettes and used as the initial highlight color for text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -181,7 +181,7 @@ The [default](https://helpej2.syncfusion.com/angular/documentation/api/rich-text
 
 ### Show recent colors
 
-The [showRecentColors](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/fontColor/#showrecentcolor) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
+The [showRecentColors](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/fontcolor#showrecentcolor) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
 
 This feature can be enabled separately for the [fontColor](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontcolor) and [backgroundColor](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/#backgroundcolor) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
 

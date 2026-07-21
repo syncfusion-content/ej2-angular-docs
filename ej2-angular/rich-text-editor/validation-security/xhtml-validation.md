@@ -14,7 +14,7 @@ The Syncfusion Angular Rich Text Editor provides features to ensure content comp
 
 ## XHTML validation
 
-The editor includes an [enableXhtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enablexhtml) property that allows for continuous validation of the Rich Text Editor's source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes. This feature requires `editorMode: 'HTML'` to function.
+The editor includes an [enableXhtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enablexhtml) property that allows for continuous validation of the Rich Text Editor's source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes. This feature requires `editorMode: 'HTML'` to function.
 
 ### Validating attributes
 
@@ -56,7 +56,7 @@ The Rich Text Editor allows users to edit content securely by preventing cross-s
 
 ### Enabling XSS prevention
 
-The [enableHtmlSanitize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enablehtmlsanitizer) property, enabled by default, activates XSS prevention. When active, the editor automatically removes elements like `<script>` and attributes like `onmouseover` from the content.
+The [enableHtmlSanitize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enablehtmlsanitizer) property, enabled by default, activates XSS prevention. When active, the editor automatically removes elements like `<script>` and attributes like `onmouseover` from the content.
 
 The following example shows XSS prevention removing a `<script>` tag and `onmouseover` attribute:
 
@@ -72,15 +72,15 @@ The following example shows XSS prevention removing a `<script>` tag and `onmous
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs22" %}
 
-> The XSS prevention feature is applicable only when the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#editormode) is set to HTML.
+> The XSS prevention feature is applicable only when the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#editormode) is set to HTML.
 
 ### Custom XSS prevention
 
-For more precise control over XSS prevention, you can implement custom filtering logic using the [beforeSanitizeHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#beforesanitizehtml) event.
+For more precise control over XSS prevention, you can implement custom filtering logic using the [beforeSanitizeHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event.
 
 ### Implementing custom cross-site scripting and filtering in the Rich Text Editor
 
-1. Use the [beforeSanitizeHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#beforesanitizehtml) event to define custom filtering rules.
+1. Use the [beforeSanitizeHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to define custom filtering rules.
 2. Utilize the `helper` function from the event argument to apply your custom filters.
 3. Set the `cancel` argument to `true` if you want to override the built-in XSS prevention entirely.
 
@@ -98,7 +98,7 @@ The following sample demonstrates how to filter the `script` tag by value.
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs23" %}
 
-You can also filter out the [e.selectors.tags](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/sanitizeSelectors/#tags) and the [e.selector.attributes](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/sanitizeSelectors/#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear. 
+You can also filter out the [e.selectors.tags](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/sanitizeselectors#tags) and the [e.selector.attributes](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/sanitizeselectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear. 
 
 For instance, if you want to display `<iframe>`, by manipulating the `e.selectors.tags` property in this event, you can selectively remove tags like `<iframe>`. This approach ensures that your application can safely display iframes while preventing potential security risks associated with XSS vulnerabilities.
 

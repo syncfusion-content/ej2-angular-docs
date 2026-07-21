@@ -61,7 +61,7 @@ The Rich Text Editor supports automatic link generation. When you type a URL and
 
 By default, the URL entered in the Web Address field is automatically converted into an absolute URL by prefixing it with https:// for hyperlinks. This ensures that the URL is properly formatted and accessible when used as a hyperlink.
 
-However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [enableAutoUrl](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enableautourl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
+However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [enableAutoUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enableautourl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
 
 The following example demonstrates disabling auto-link protocol prefixing:
 
@@ -80,5 +80,5 @@ The following example demonstrates disabling auto-link protocol prefixing:
 ## See also
 
 * [Link Quick Toolbar](./toolbar/quick-toolbar#link-quick-toolbar)
-* [Image with links](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/insert-images#hyperlinking-images)
+* [Image with links](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/insert-image-media/insert-images#hyperlinking-images)
 * [Insert File Attachments](./how-to/file-attachments)

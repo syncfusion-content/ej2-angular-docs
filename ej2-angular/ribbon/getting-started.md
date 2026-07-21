@@ -8,121 +8,143 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Ribbon Component
+# Getting started in Angular Ribbon component
 
-This section explains how to create a simple Ribbon, and demonstrate the basic usage of the Ribbon module in an Angular environment.
+This section explains how to create a simple **Ribbon** component and configure its available functionalities in Angular.
 
-## Dependencies
+## Prerequisites
 
-The list of dependencies required to use the Ribbon module in your application is given below:
+| Requirement | Version |
+|-------------|---------|
+| Angular | 12 and above |
+| Node.js | 14.0.0 or above, Recommended: Latest Version |
 
-```javascript
-|-- @syncfusion/ej2-angular-ribbon
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-splitbuttons
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-ribbon
-```
+> Note: This guide supports recent Angular versions including Angular 21 and standalone components. For detailed compatibility, refer to the Angular version support matrix in the Syncfusion docs.
 
-## Setup Angular environment
+### Angular supported versions
 
-You can use the [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI globally, use the following command.
+| Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Ribbon Version |
+|-----------------|--------------------------------------------------------------------------------|
+| [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20) | 29.2.8 |
+| [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 |
+| [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
+| [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033212e4b/) | 23.2.4 |
+| [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/) | 21.1.39 |
+| [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 |
+| [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/) | 20.2.36 |
+| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
+| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/) | 19.3.43 |
 
-```
+### Browser support
+
+| Browser | Supported Versions |
+|:--------|:-------------------|
+| Google Chrome, including Android & iOS | Latest 2 versions |
+| Mozilla Firefox | Latest version |
+| Microsoft Edge | Latest 2 versions |
+| Apple Safari, including iOS | Latest 2 versions |
+
+## Setup the Angular application
+
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
+
+```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Start a new Angular application using the Angular CLI command below.
+## Create a new application
 
-```
-ng new my-app
-cd my-app
-```
-
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Ribbon Package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components:
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy Library Distribution Package
-
-Starting with version `20.2.36`, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages are distributed in the Ivy library format to support Angular `Ivy` rendering engine. These packages are compatible with Angular version 12 and higher.
-
-Install the [@syncfusion/ej2-angular-ribbon](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35) package using the following command.
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
-npm install @syncfusion/ej2-angular-ribbon --save
+ng new syncfusion-angular-app
 ```
 
-### Angular Compatibility Compiled (ngcc) Package
-
-For Angular versions below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the command below.
-
-Add [@syncfusion/ej2-angular-ribbon@ngcc](https://www.npmjs.com/package/@syncfusion/ej2-angular-ribbon/v/21.1.35-ngcc) package to the application.
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
 ```bash
-npm install @syncfusion/ej2-angular-ribbon@ngcc --save
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
 ```
 
-To specify the `ngcc` package in the `package.json` file, add the `-ngcc` suffix to the package version.
+* By default, a CSS-based application is created. Use SCSS if required:
 
 ```bash
-@syncfusion/ej2-angular-ribbon:"21.1.35-ngcc"
+ng new syncfusion-angular-app --style=scss
 ```
 
-> **Note**: If you are using an Angular version below 12 and do not specify the `-ngcc` tag during installation, the Ivy package will be installed by default, which will result in a warning.
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
-## Adding CSS Reference
+![Initial_setup](images/SSR.png)
 
-To install the [tailwind3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial_setup](images/Ai.png)
+
+* Navigate to your newly created application directory:
 
 ```bash
-npm install @syncfusion/ej2-tailwind3-theme --save
+cd syncfusion-angular-app
 ```
 
-To render the Ribbon component, add the import below to the Angular application's global styles file (`src/styles.css`) so the required dependency styles are loaded:
+> Note: In Angular 19 and below, it uses `app.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-```css
-@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/ribbon/index.css";
+## Adding Syncfusion Angular Ribbon package
+
+To install the Ribbon package, use the following command:
+
+```bash
+npm install @syncfusion/ej2-angular-ribbon
 ```
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Ribbon component
+## Adding CSS reference
 
-Modify the template in `app.component.ts` file with `ejs-ribbon` to render the Ribbon component.
+Themes for Syncfusion Ribbon components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```javascript
+Install the Material 3 theme package using the following command:
 
-import { Component } from "@angular/core";
-import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+npm install @syncfusion/ej2-material3-theme --save
+{% endhighlight %}
+{% endtabs %}
 
-@Component({
-imports: [ RibbonModule ],
-standalone: true,
-selector: "app-root",
-template: `<!-- To Render Ribbon. -->
-  <ejs-ribbon id="ribbon">
-    <e-ribbon-tabs>
-        <e-ribbon-tab header="Home"></e-ribbon-tab>
-    </e-ribbon-tabs>
-  </ejs-ribbon>`,
-})
-export class AppComponent { }
+Then add the following CSS reference to the `src/styles.css` file:
 
-```
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/ribbon/index.css";
+{% endhighlight %}
+{% endtabs %}
 
-## Adding Ribbon Tab
+## Adding Ribbon component
+
+Modify the template in the `src/app/app.ts` file to render the Ribbon component. Add the Angular Ribbon by using the `<ejs-ribbon>` selector in the `template` section of the `app.ts` file.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/ribbon/getting-started-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ribbon/getting-started-cs1/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/getting-started-cs1/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/ribbon/getting-started-cs1/src/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/ribbon/getting-started-cs1" %}
+
+## Adding Ribbon tab
 
 In Ribbon, the options are arranged in tabs for easy access. You can use the `<e-ribbon-tab>` selector to define the ribbon tab like below.
 
@@ -146,7 +168,7 @@ export class AppComponent { }
 
 ```
 
-## Adding Ribbon Group
+## Adding Ribbon group
 
 To define a ribbon group under each tab, you can use the `<e-ribbon-group>` selector like below. The `orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
 
@@ -173,7 +195,7 @@ template: `<!-- To Render Ribbon. -->
 
 ```
 
-## Adding Ribbon Item
+## Adding Ribbon item
 
 You can use the `<e-ribbon-collection>` selector to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `<e-ribbon-item>` selector and the `type` property to specify the type of component to be rendered, like a button, a drop-down button, a combo box, and more.
 
@@ -222,6 +244,19 @@ export class AppComponent {
 
 ```
 
+## Registering your Syncfusion license
+
+Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register it.
+
+Open the `main.ts` file and add the following code:
+
+```typescript
+import { registerLicense } from '@syncfusion/ej2-base';
+registerLicense('YOUR_LICENSE_KEY');
+```
+
+> **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
+
 ## Running the application
 
 Run the application in the browser using the following command:
@@ -230,22 +265,30 @@ Run the application in the browser using the following command:
 ng serve
 ```
 
-The following example illustrates how tabs, groups, collections, and items are used in a ribbon component to form the ribbon layout.
+## Production build
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/getting-started-cs1/src/app.component.ts %}
-{% endhighlight %}
+To create an optimized production build, run:
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/getting-started-cs1/src/main.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/getting-started-cs1/src/app.component.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/ribbon/getting-started-cs1/src/styles.css %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/ribbon/getting-started-cs1" %}
+```bash
+ng build
+```
+
+This command compiles the application and generates the production-ready files in the `dist/` directory.
+
+To preview the production build locally, run:
+
+```bash
+npx http-server dist
+```
+
+Then open the URL displayed in the terminal.
+
+## Troubleshooting
+
+- **Ribbon styles are not applied:** Ensure the required Syncfusion theme CSS is imported in `src/styles.css`.
+- **Trial license warning message:** Register a valid Syncfusion license key using the `registerLicense()` method from `@syncfusion/ej2-base`.
+- **Port 4200 is already in use:** Stop the conflicting process or run the application on a different port:
+
+  ```bash
+  ng serve --port 3000
+  ```

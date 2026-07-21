@@ -84,7 +84,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started">Document Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/getting-started">In-place Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/image-editor/getting-started">Image Editor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started">RichTextEditor</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started">Rich Text Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started">PDF Viewer</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started">Word Processor</a></div>
         <div><p class="controlcategory">LAYOUT</p></div>

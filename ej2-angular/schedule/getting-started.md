@@ -98,7 +98,7 @@ npm install @syncfusion/ej2-angular-schedule --save
 
 Themes for Syncfusion® Schedule components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). Available themes include Bootstrap, Fabric, Material, Tailwind 3, and others. For the complete list and comparison, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-Install the **Material3 3** theme package using the following command:
+Install the **Material 3** theme package using the following command:
 
 {% tabs %}
 {% highlight bash tabtitle="npm" %}
@@ -249,7 +249,6 @@ export class App {
 	public currentView: View = 'Day';
 }
 ```
-N> Looking for the full Angular Scheduler component overview, features, pricing, and documentation? Visit the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) page.
 
 ## See also
 

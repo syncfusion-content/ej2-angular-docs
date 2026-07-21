@@ -199,5 +199,5 @@ return Ok(payload);
 - [Syncfusion Mention Demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/mention/default)
 - [Angular Mention integration with Rich Text Editor sample repository](https://github.com/SyncfusionExamples/angular-richtexteditor-mention/tree/master)
 - [Syncfusion Mention getting started](https://ej2.syncfusion.com/angular/documentation/mention/getting-started)
-- [Syncfusion Mention API](https://ej2.syncfusion.com/angular/documentation/api/mention)
-- [Syncfusion Rich Text Editor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor)
+- [Syncfusion Mention API](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default)
+- [Syncfusion Rich Text Editor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default)
