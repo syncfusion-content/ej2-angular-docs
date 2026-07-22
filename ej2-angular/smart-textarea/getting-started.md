@@ -55,7 +55,7 @@ cd my-app
 {% endhighlight %}
 {% endtabs %}
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> AppBar Package
+## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Inputs Package
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
@@ -105,13 +105,24 @@ N> If the ngcc tag is not specified while installing the package, the Ivy Librar
 
 ## Adding CSS reference
 
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components can be applied using CSS or SASS files from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages), CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, see the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
+
+This example uses the `Fluent 2` theme for the Smart TextArea component from the theme package. To install the [Fluent 2](https://www.npmjs.com/package/@syncfusion/ej2-fluent2-theme) theme package, use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-fluent2-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
 Add Smart TextArea component's styles as given below in `styles.css`.
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../node_modules/@syncfusion/ej2-base/styles/fluent2.css";
-@import "../node_modules/@syncfusion/ej2-angular-inputs/styles/fluent2.css";
+@import "../node_modules/@syncfusion/ej2-fluent2-theme/styles/textarea/index.css";
 
 {% endhighlight %}
 {% endtabs %}

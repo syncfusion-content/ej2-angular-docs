@@ -106,13 +106,19 @@ export class AppComponent {}
 
 ## Adding CSS reference
 
-Add Breadcrumb component's styles as given below in `style.css`.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3';
+Install the Material 3 theme package using the following npm command:
+
+```bash
+npm install @syncfusion/ej2-material3-theme
 ```
 
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
+
+```css
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+```
 ## Running the application
 
 Run the application in the browser using the following command:

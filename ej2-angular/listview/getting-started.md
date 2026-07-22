@@ -109,29 +109,21 @@ To mention the ngcc package in the **package.json** file, add the suffix `-ngcc`
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding CSS Reference
+## Adding CSS reference
 
-Add ListView component styles as given below in **styles.css**.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```css
-@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-angular-lists/styles/material3.css";
+Install the Material 3 theme package using the following npm command:
+
+```bash
+npm install @syncfusion/ej2-material3-theme
 ```
 
-Alternatively, you can import the styles directly relative to the node_modules folder based on your CSS file's location, as shown below:
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import "node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "node_modules/@syncfusion/ej2-angular-lists/styles/material3.css";
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
 ```
-
-If you are using `CheckList` behavior in ListView, add the `Button` component styles as given below in the `styles.css` file:
-
-```css
-@import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css";
-```
-
-> You can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
 
 ## Add ListView component
 

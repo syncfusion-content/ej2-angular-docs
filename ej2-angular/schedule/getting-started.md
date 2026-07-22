@@ -20,6 +20,34 @@ For a quick start with the Angular Schedule component using CLI and Schematics, 
 
 ## Prerequisites
 
+| Requirement | Version |
+|-------------|---------|
+| Angular | 12 and above |
+| Node.js | 14.0.0 or above, Recommended: Latest Version |
+
+### Angular supported versions
+
+| Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Scheduler Version |
+|-----------------|-----------------------------------------------|
+|[Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 29.2.8|
+|[Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
+|[Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
+|[Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/)| 23.2.4 |
+|[Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/)| 21.1.39 |
+|[Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 |
+|[Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/)| 20.2.36 |
+|[Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
+|[Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/)| 19.3.43 |
+
+### Browser Support
+
+| Browser | Supported Versions |
+|:--------|:-------------------|
+| Google Chrome, including Android & iOS  | Latest 2 versions |
+| Mozilla Firefox	 | Latest version |
+| Microsoft Edge	    | Latest 2 versions |
+| Apple Safari, including iOS	  | Latest 2 versions |
+
 You can use [`Angular CLI`](https://github.com/angular/angular-cli) to set up your Angular applications. To install the Angular CLI, use the following command.
 
 ```bash
@@ -44,7 +72,7 @@ Then the CLI also displays an additional prompt whether to enable Server Side Re
 
 ![SSR SST setup prompt](images/schedule-angular-setup2.png)
 
-For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+For this setup, when prompted for the Server-side rendering (SSR) option, select **No** for a standard Angular application.
 
 Then the CLI displays another prompt related to AI tooling support, as shown below:
 
@@ -68,14 +96,14 @@ npm install @syncfusion/ej2-angular-schedule --save
 
 ## Adding CSS reference
 
-Themes for Syncfusion® Schedule components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for Syncfusion® Schedule components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). Available themes include Bootstrap, Fabric, Material, Tailwind 3, and others. For the complete list and comparison, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-Install the Tailwind 3 theme package using the following command:
+Install the **Material 3** theme package using the following command:
 
 {% tabs %}
 {% highlight bash tabtitle="npm" %}
 
-npm install @syncfusion/ej2-tailwind3-theme --save
+npm install @syncfusion/ej2-material3-theme --save
 
 {% endhighlight %}
 {% endtabs %}
@@ -85,7 +113,7 @@ Then add the following CSS reference to the **src/style.css** file:
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/schedule/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/schedule/index.css";
 
 {% endhighlight %}
 {% endtabs %}
@@ -93,6 +121,10 @@ Then add the following CSS reference to the **src/style.css** file:
 ## Initialize the Schedule component and configure module injection
 
 This section explains how to set up the Syncfusion Angular Schedule component in your application by registering the necessary services (such as Day, Week, WorkWeek, Month, and Agenda) in the providers array, and rendering the Scheduler component in the template.
+
+### Setting up the component
+
+Replace the contents of `src/app/app.ts` with the following code:
 
 `[src/app/app.ts]`
 
@@ -113,13 +145,19 @@ import { ScheduleModule, DayService, WeekService, WorkWeekService, MonthService,
 export class App { }
 ```
 
-Run the following command in the terminal to start the development server. This compiles the project, launches a local server, and allowing you to view changes in real time during development.
+### Running the development server
+
+Run the following command in the terminal to start the development server. This compiles the project, launches a local server, and allows you to view changes in real-time during development.
 
 ```
 ng serve
 ```
 
-> Above demo will display the empty scheduler.
+> **Note:** If `ng serve` was already running, restart it to apply the CSS theme changes and component imports.
+
+### Verification
+
+Open your browser and navigate to `http://localhost:4200/`. You should see a blank calendar with the current week displayed and a Tailwind 3 theme applied.
 
 ## Populating appointments
 
@@ -185,11 +223,13 @@ export class App {
 
 The default view of the Schedule is `Week`. To change the current view, set the [`currentView`](https://ej2.syncfusion.com/angular/documentation/api/schedule#currentview) property to one of the following default view names:
 
-*   Day
-*   Week
-*   WorkWeek
-*   Month
-*   Agenda
+*   **Day** — Shows a single day with hourly time slots
+*   **Week** — Shows a seven-day week with hourly time slots (default)
+*   **WorkWeek** — Shows Monday to Friday with hourly time slots
+*   **Month** — Shows a full month calendar view
+*   **Agenda** — Shows upcoming events in a list format
+
+For detailed information on each view, see [Explore available views and their customization options](./views.md).
 
 ```typescript
 import { Component } from '@angular/core';
