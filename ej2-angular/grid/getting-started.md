@@ -31,6 +31,8 @@ To get started quickly with Angular Data Grid using CLI and Schematics, you can 
 
 | Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid Version |
 |-----------------|-----------------------------------------------|
+|[Angular v22](https://blog.angular.dev/announcing-angular-v22-c52bb83a4664) | 34.1.29 |
+|[Angular v21](https://www.syncfusion.com/blogs/post/angular-21-updates-syncfusion-support) | 31.1.17 |
 |[Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 29.2.8|
 |[Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
@@ -171,16 +173,7 @@ Then open the URL displayed in the terminal.
 
 ## Registering Syncfusion license
 
-Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register
-
-Open the `main.ts` file and add the following code:
-
-```typescript
-import { registerLicense } from '@syncfusion/ej2-base';
-registerLicense('YOUR_LICENSE_KEY');
-```
-
-> **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
+The Syncfusion® Angular Data Grid requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/angular/documentation/licensing/overview) documentation.
 
 ## Troubleshooting
 

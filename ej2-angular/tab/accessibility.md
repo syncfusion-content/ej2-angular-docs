@@ -61,8 +61,8 @@ By default, keyboard navigation is enabled. This component implements keyboard n
 
 | Key           | Description                                                                         |
 |---------------|-------------------------------------------------------------------------------------|
-| <kbd>Left</kbd>    | Moves focus to the previous Tab. If focus is on the first Tab, the focus will not move to any Tab. |
-| <kbd>Right</kbd>   | Moves focus to the next Tab. If focus is on the last Tab element, the focus will not move to any Tab. |
+| <kbd>Left</kbd>    | Moves focus to the previous Tab. |
+| <kbd>Right</kbd>   | Moves focus to the next Tab. |
 | <kbd>Enter</kbd> or <kbd>Space</kbd>  | Selects the Tab if it is not selected. Opens the popup dropdown icon if it is focused. Selects the Tab item as active when popup item is focused. |
 | <kbd>Esc(Escape)</kbd>           | Closes the popup if popup is in opened state.       |
 | <kbd>Down</kbd> or <kbd>Up</kbd>   | When the popup is open and focused, it will move to previous/next Tab items of the popup in the vertical direction.|

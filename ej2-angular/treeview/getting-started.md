@@ -108,27 +108,21 @@ To specify the ngcc package in the **package.json** file, add the suffix `-ngcc`
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will display a warning.
 
-## Adding CSS Reference
+## Adding CSS reference
 
-Add the TreeView component's styles as given below in **styles.css**.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```css
-@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
+Install the Material 3 theme package using the following npm command:
+
+```bash
+npm install @syncfusion/ej2-material3-theme
 ```
 
-Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import "node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css";
-@import "node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-@import "node_modules/@syncfusion/ej2-buttons/styles/material3.css";
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
 ```
-
->Note: If you want to refer to the combined component styles, make use of the [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Add TreeView component
 

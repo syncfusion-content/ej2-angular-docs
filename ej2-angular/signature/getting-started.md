@@ -131,22 +131,21 @@ For legacy projects using ngcc:
 npm add @syncfusion/ej2-angular-inputs@32.1.19-ngcc
 ```
 
-## Import Syncfusion CSS styles
+## Adding CSS reference
 
-Apply Syncfusion<sup style="font-size:70%">&reg;</sup> themes via CSS/SCSS from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio).
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-The `Material` theme is automatically added to `styles.css` when you run `ng add`.
+Install the Material 3 theme package using the following npm command:
 
-To import only the styles required for the Signature component, add these imports:
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
+```bash
+npm install @syncfusion/ej2-material3-theme
 ```
 
-> **Important**: Maintain the import order to respect component dependencies.
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
-For SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
+```css
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+```
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Signature component
 
