@@ -99,7 +99,7 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 ### Ivy Library Distribution Package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the packages are compatible with Angular version 12 and above. To download the package use the command below:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine and the packages are compatible with Angular version 12 and above. To download the package use the command below:
 
 Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
 
@@ -127,7 +127,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> ContextMenu Component
 
-Modify the template in `app.component.ts` file with `ejs-contextmenu` to render the ContextMenu component. The options contain [`menuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItem/) and [`target`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#target) properties that define the menu content and the element where the ContextMenu will appear.
+Modify the template in `app.component.ts` file with `ejs-contextmenu` to render the ContextMenu component. The options contain [`menuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuitem) and [`target`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#target) properties that define the menu content and the element where the ContextMenu will appear.
 
 ```javascript
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
@@ -160,23 +160,20 @@ export class AppComponent {
 }
 ```
 
-## Adding CSS Reference
+## Adding CSS reference
 
-Add ContextMenu component's styles as given below in `style.css`. The Material3 theme is used in this example, but other themes are available.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+
+Install the Material 3 theme package using the following npm command:
+
+```bash
+npm install @syncfusion/ej2-material3-theme
+```
+
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-
-/* Context Menu target */
-#target {
-    border: 1px dashed;
-    height: 150px;
-    padding: 10px;
-    position: relative;
-    text-align: justify;
-    color: gray;
-    user-select: none;
-}
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
 ```
 
 ## Running the Application
@@ -203,7 +200,7 @@ The following example shows a basic `ContextMenu` component.
 
 ## Rendering Items with Separator
 
-The Separators are horizontal lines used to separate menu items. You `cannot` select separators. You can enable separators to group menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#separator) property. Cut, Copy, and Paste menu items are grouped using the `separator` property in the following sample.
+The Separators are horizontal lines used to separate menu items. You `cannot` select separators. You can enable separators to group menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuitemmodel#separator) property. Cut, Copy, and Paste menu items are grouped using the `separator` property in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -217,4 +214,4 @@ The Separators are horizontal lines used to separate menu items. You `cannot` se
   
 {% previewsample "page.domainurl/samples/context-menu/separators-cs1" %}
 
-> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#separator) property should not be given along with the other fields in the [`MenuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/).
+> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuitemmodel#separator) property should not be given along with the other fields in the [`MenuItem`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuitemmodel).

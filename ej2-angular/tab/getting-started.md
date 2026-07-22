@@ -96,7 +96,7 @@ Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types o
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and are compatible with Angular version 12 and above. To download the package, use the command below:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine and are compatible with Angular version 12 and above. To download the package, use the command below:
 
 Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application:
 
@@ -124,14 +124,18 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding CSS reference
 
-The following CSS files are available in the `../node_modules/@syncfusion` package folder.
-These can be referenced in [src/styles.css] using the following code:
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+
+Install the Material 3 theme package using the following npm command:
+
+```bash
+npm install @syncfusion/ej2-material3-theme
+```
+
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
 ```
 
 ## Add Tab component
@@ -165,7 +169,7 @@ export class AppComponent implements OnInit {
 
 ## Initialize the Tab using JSON items collection
 
-The Tab can be rendered by defining a JSON array. Each item is rendered with header [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#text) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemModel/#content) for each Tab:
+The Tab can be rendered by defining a JSON array. Each item is rendered with header [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header#text) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabitemmodel#content) for each Tab:
 
 ```typescript
 import { TabModule } from '@syncfusion/ej2-angular-navigations'

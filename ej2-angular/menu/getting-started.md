@@ -98,7 +98,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package s
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
 
@@ -185,11 +185,18 @@ export class AppComponent {
 
 ## Adding CSS reference
 
-Add the Menu component’s styles to `style.css` as follows:
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+
+Install the Material 3 theme package using the following npm command:
+
+```bash
+npm install @syncfusion/ej2-material3-theme
+```
+
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
 ```
 
 ## Running the application
@@ -220,7 +227,7 @@ For more information about data source support, refer to the [`Data Source Bindi
 ## Group Menu items with separator
 
 The separators are both horizontal and vertical lines used to separate the menu items.
-You cannot select the separators, but you can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#separator) property.
+You cannot select the separators, but you can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuitemmodel#separator) property.
 The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
 
 {% tabs %}
@@ -235,5 +242,5 @@ The `Open` and `Save` sub menu items are grouped using the `separator` property 
   
 {% previewsample "page.domainurl/samples/menu/getting-started-cs4" %}
 
-> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#separator) property should not be given along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/).
+> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuitemmodel#separator) property should not be given along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuitemmodel).
 You can also enable the separator to group **horizontal** menu items.

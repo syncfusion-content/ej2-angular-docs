@@ -103,7 +103,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package s
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://v12.angular.io/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
 
@@ -129,23 +129,21 @@ To specify the ngcc package in the **package.json** file, add the suffix `-ngcc`
 
 > **Note**: If the ngcc tag is not specified during installation, the Ivy Library Package will be installed and may throw a warning.
 
-## Adding Styles
+## Adding CSS reference
 
-To render the Sidebar component, import the Sidebar and its dependent components' styles in **src/styles.css** as follows:
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css';
+Install the Material 3 theme package using the following npm command:
+
+```bash
+npm install @syncfusion/ej2-material3-theme
 ```
 
-Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import 'node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css';
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
 ```
-
->Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Adding Sidebar component
 
@@ -204,8 +202,8 @@ The following sample demonstrates the Sidebar component in the browser:
 
 ## Enable backdrop
 
-Enabling the [`showBackdrop`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#showbackdrop) in the Sidebar component will prevent the main content from user interactions, when it is in expanded state.
-Here, DOM elements will not get changed. It only closes the main content by covering it with a black backdrop overlay and focuses only on the Sidebar on the screen. Sidebar can be rendered with specific width by setting [`width`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#width) property.
+Enabling the [`showBackdrop`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#showbackdrop) in the Sidebar component will prevent the main content from user interactions, when it is in expanded state.
+Here, DOM elements will not get changed. It only closes the main content by covering it with a black backdrop overlay and focuses only on the Sidebar on the screen. Sidebar can be rendered with specific width by setting [`width`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#width) property.
 
 N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
 
@@ -227,7 +225,7 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 
 ## Configure sidebar position
 
-Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property. If the position is not set, the Sidebar will expand from the left to the body element. The [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablepersistence) will persist the component's state between page reloads. [`change`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#change) event will be triggered when the state(expand/collapse) of the component is changed.
+Positioning the Sidebar to the right or left of the main content can be achieved by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#position) property. If the position is not set, the Sidebar will expand from the left to the body element. The [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#enablepersistence) will persist the component's state between page reloads. [`change`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#change) event will be triggered when the state(expand/collapse) of the component is changed.
 
 > **Note**: Include the required Button and Radio Button component style dependencies in **styles.css**.
 
@@ -249,7 +247,7 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 
 ## Enable Sidebar animation
 
-Animation transitions for expanding or collapsing the Sidebar can be enabled using the [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property. By default, [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property is set to true. [`enableRTL`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablertl) will display the Sidebar in a right-to-left direction.
+Animation transitions for expanding or collapsing the Sidebar can be enabled using the [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#animate) property. By default, [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#animate) property is set to true. [`enableRTL`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#enablertl) will display the Sidebar in a right-to-left direction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,7 +267,7 @@ Animation transitions for expanding or collapsing the Sidebar can be enabled usi
 
 ## Close on document click
 
-The Sidebar can be configured to close when clicking outside it by setting the [`closeOnDocumentClick`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#closeondocumentclick) property to `true` (default: `false`). To keep the Sidebar open on initial render, use the [`isOpen`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#isopen) property (default: `false`).
+The Sidebar can be configured to close when clicking outside it by setting the [`closeOnDocumentClick`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#closeondocumentclick) property to `true` (default: `false`). To keep the Sidebar open on initial render, use the [`isOpen`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#isopen) property (default: `false`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,7 +287,7 @@ The Sidebar can be configured to close when clicking outside it by setting the [
 
 ## Enable gestures
 
-The Sidebar can be Expanded or collapsed by swiping on touch devices using [`enableGestures`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablegestures) property. By default, [`enableGestures`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablegestures) is set to true.
+The Sidebar can be Expanded or collapsed by swiping on touch devices using [`enableGestures`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#enablegestures) property. By default, [`enableGestures`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/index-default#enablegestures) is set to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

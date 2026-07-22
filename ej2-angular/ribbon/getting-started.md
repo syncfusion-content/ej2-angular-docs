@@ -104,23 +104,19 @@ npm install @syncfusion/ej2-angular-ribbon
 
 ## Adding CSS reference
 
-Themes for Syncfusion Ribbon components can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
-Install the Material 3 theme package using the following command:
+Install the Material 3 theme package using the following npm command:
 
-{% tabs %}
-{% highlight bash tabtitle="npm" %}
-npm install @syncfusion/ej2-material3-theme --save
-{% endhighlight %}
-{% endtabs %}
+```bash
+npm install @syncfusion/ej2-material3-theme
+```
 
-Then add the following CSS reference to the `src/styles.css` file:
+Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
-{% tabs %}
-{% highlight css tabtitle="style.css" %}
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/ribbon/index.css";
-{% endhighlight %}
-{% endtabs %}
+```css
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+```
 
 ## Adding Ribbon component
 
