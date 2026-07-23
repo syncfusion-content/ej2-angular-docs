@@ -22,7 +22,7 @@ The TextArea component allows users to input and edit large amounts of text. Con
 > In addition to the above options, the `resizeMode` property defaults to `Both`. In this case, the width of the TextArea will not be adjusted automatically. You can still update it manually through the [cols](https://ej2.syncfusion.com/angular/documentation/api/textarea/#cols) property or with CSS.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ The TextArea component allows users to input and edit large amounts of text. Con
 Customize the width of the TextArea using the [width](https://ej2.syncfusion.com/angular/documentation/api/textarea/#width) property. This property allows precise adjustment of the textarea's width according to your application's layout requirements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/resize-cs2/src/app.component.ts %}
 {% endhighlight %}
 

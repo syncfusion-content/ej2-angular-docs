@@ -38,9 +38,9 @@ The NumericTextBox component adheres to accessibility guidelines and standards i
 
 ## WAI-ARIA attributes
 
-The NumericTextBox includes complete ARIA accessibility support, enabling access through screen readers and other assistive technology devices. The component is designed following the [WAI-ARIA Accessibility practices](https://www.w3.org/TR/wai-aria/#spinbutton) guidelines for spinbutton elements.
+The NumericTextBox includes complete ARIA accessibility support, enabling access through screen readers and other assistive technology devices. The component is designed following the [WAI-ARIA Accessibility practices](https://www.w3.org/TR/wai-aria/#spinbutton) guidelines for spin button elements.
 
-The NumericTextBox uses the `spinbutton` role and the following ARIA properties based on component state:
+The NumericTextBox uses the `spin button` role and the following ARIA properties based on component state:
 
 | **Property** | **Functionality** |
 | --- | --- |
@@ -65,7 +65,7 @@ The following table shows the supported keyboard shortcuts:
 | <kbd>Arrow Down</kbd> | Decrements the value. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can use the [`showLabel`](https://ej2.syncfusion.com/angular/documentation/api/rating#showlabel) property to display a label that shows the current value of the rating. When the `showLabel` property is set to `true`, a label will be displayed.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/labels/showlabel-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ Position the rating label using the [`labelPosition`](https://ej2.syncfusion.com
 * **Right**: Label appears to the right of the rating items.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/labels/label-position-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ Position the rating label using the [`labelPosition`](https://ej2.syncfusion.com
 You can use the [`labelTemplate`](https://ej2.syncfusion.com/angular/documentation/api/rating#labeltemplate) tag directive to specify a custom template for the `Label` of the rating. The current value of the rating will be passed as the `value` property in the template context when building the content of the label. This allows you to include dynamic information about the rating in the template.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/labels/label-template-cs/src/app.component.ts %}
 {% endhighlight %}
 

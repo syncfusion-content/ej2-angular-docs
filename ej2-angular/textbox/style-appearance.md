@@ -98,7 +98,7 @@ The TextBox component can be rendered with rounded corners by adding the `e-corn
 > **Note**: The rounded corner styling is visible only in box model input components (standard input elements with visible borders).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/rounded-corner-cs1/src/app.component.ts %}
 {% endhighlight %}
 

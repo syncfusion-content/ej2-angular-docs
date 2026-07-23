@@ -40,7 +40,7 @@ Use the `prependTemplate` and `appendTemplate` properties to add custom HTML con
 The following example demonstrates how to add adornments in the TextBox control.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/adornments-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -15,7 +15,7 @@ To render only the Palette area in the ColorPicker, set the [`mode`](https://ej2
 In the following sample, the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#showbuttons) property is set to `false` to hide the control buttons, displaying only the palette area.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/how-to-cs4/src/app.component.ts %}
 {% endhighlight %}
 

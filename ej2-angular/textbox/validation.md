@@ -21,7 +21,7 @@ The TextBox component supports visual validation states that can be applied by a
 - **Success state** (`.e-success`): Confirms valid input
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ The TextBox component supports visual validation states that can be applied by a
 For required fields, add a visual asterisk indicator to placeholder text and floating labels using CSS. This provides clear visual cues about mandatory form fields.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/asterisk-cs1/src/app.component.ts %}
 {% endhighlight %}
 

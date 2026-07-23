@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The TextArea component seamlessly integrates with HTML forms for efficient submission of multiline text data. Include TextArea inputs within your forms to allow users to enter detailed content and submit it as part of the form submission. This integration enhances form usability by providing users with the ability to input lengthy descriptions, feedback, or other multiline text content.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/form-support-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ The TextArea component seamlessly integrates with the `FormValidator` component,
 By integrating TextArea with the `FormValidator` component, you can enforce validation rules specific to text inputs, such as required fields, minimum and maximum length constraints, and pattern matching. This ensures that user-submitted text data meets specified criteria and maintains data integrity.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/form-support-cs2/src/app.component.ts %}
 {% endhighlight %}
 

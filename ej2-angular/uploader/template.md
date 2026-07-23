@@ -19,7 +19,7 @@ The `template` property customizes the appearance of each file in the list. You 
 For example, you can display file type icon along with default UI elements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ Set the `showFileList` property to control whether to display the default or cus
 Refer to the following example for implementation:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/cus_template-cs1/src/app.component.ts %}
 {% endhighlight %}
 

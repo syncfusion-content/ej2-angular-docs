@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can trigger the click event of the file input element from an external button using the button's `click` event. In the following example, the file input's click event is triggered when an external button is clicked, allowing users to open the file browser without using the default Uploader button.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/external-click-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The rating component supports tooltip to show additional information in rating items by setting the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/rating#showtooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/tooltip/showtooltip-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ The rating component supports tooltip to show additional information in rating i
 Use the [`tooltipTemplate`](https://ej2.syncfusion.com/angular/documentation/api/rating#tooltiptemplate) tag directive to customize the tooltip content. The template context provides the current rating `value` as a property, enabling dynamic and contextual tooltip messages.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/tooltip/tooltip-template-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ You can customize the appearance of the tooltips using the `cssClass` property o
 > You can find more information about customizing the appearance of the tooltip in the [Tooltip Customization](https://ej2.syncfusion.com/angular/documentation/tooltip/style) documentation.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/tooltip/custom-tooltip-cs/src/app.component.ts %}
 {% endhighlight %}
 

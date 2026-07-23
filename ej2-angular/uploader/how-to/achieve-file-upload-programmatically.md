@@ -17,7 +17,7 @@ The upload method behaves differently based on its arguments.
 * If it has no argument then all the selected files are will start to upload.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/dynamic-upload-cs1/src/app.component.ts %}
 {% endhighlight %}
 

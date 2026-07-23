@@ -18,7 +18,7 @@ The [`precision`](https://ej2.syncfusion.com/angular/documentation/api/rating#pr
 * **Exact**: Ratings increment by 0.1 (fine-grain precision). Example: 1, 1.1, 1.2, 1.3, 1.4.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/precision-modes-cs/src/app.component.ts %}
 {% endhighlight %}
 

@@ -132,9 +132,11 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs5" %}
 
-## Export with external form elements
+## Export Gantt Chart with external form elements in PDF
 
-To include external form elements (such as headers and footers) in the exported PDF along with the Gantt Chart, use the `header` and `footer` properties within the `pdfExportProperties` configuration.
+The Gantt Chart allows you to export external form elements, such as custom headers, footers, and user-entered form data, along with the Gantt content in a PDF document. This can be achieved by configuring the `header` and `footer` properties in the `pdfExportProperties` object and passing the required content during PDF export.
+
+The following example demonstrates how to export the Gantt Chart along with external form element values in the PDF document.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

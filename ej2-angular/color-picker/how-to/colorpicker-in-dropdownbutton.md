@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Colorpicker in dropdownbutton in Angular Color picker component | Syncfusion
-description: Learn here all about Colorpicker in dropdownbutton in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: Colorpicker in DropDownButton in Angular | Syncfusion
+description: Learn here all about Colorpicker in DropDownButton in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Colorpicker in dropdownbutton 
 documentation: ug
@@ -15,7 +15,7 @@ This section explains how to render the ColorPicker component within a DropDownB
 In the following sample, the ColorPicker is rendered in inline mode by setting the [`inline`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#inline) property to `true`. The rendered ColorPicker wrapper is then passed as a `target` to the DropDownButton to achieve this integration.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/dropdownbtn-cs1/src/app.component.ts %}
 {% endhighlight %}
 

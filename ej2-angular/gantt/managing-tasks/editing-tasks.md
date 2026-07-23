@@ -145,6 +145,26 @@ You can render a custom edit component for a column using the [column.edit](http
 {% endtabs %}
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/custom-dynamic-cs1" %}
 
+## Update custom column values using updateRecordByID
+
+The [updateRecordByID](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#updaterecordbyid) method can be used to update task records dynamically in the Gantt chart. When working with custom fields, the field must be defined in the Gantt columns collection. If a custom field is not bound to a column, the `updateRecordByID` method cannot maintain or update its value in the Gantt chart.
+
+This behavior occurs because custom fields are stored within the task data (taskData). Only the custom fields that are bound in the column collection are tracked and maintained by the Gantt component during record updates.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/managing-tasks/custom-dynamic-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/managing-tasks/custom-dynamic-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/custom-dynamic-cs2" %}
+
+In the above example, the description field is bound in the column collection. Therefore, calling `updateRecordByID` successfully updates the custom column value for the specified task record. If the description field is removed from the column collection, the updated value will not be maintained by the Gantt chart.
+
+>NOTE: Custom column values can be updated through the [updateRecordByID](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#updaterecordbyid) method only when the corresponding field is included in the Gantt columns collection.
+
 ## See also
 
 - [How to add new tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/adding-new-tasks)

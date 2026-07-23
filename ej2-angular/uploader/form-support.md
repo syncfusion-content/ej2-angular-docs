@@ -22,7 +22,7 @@ The form action handles server-side operations for file upload processing.
 Resetting the form clears the file list and associated data.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/formsupport-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ For more information, refer to the [Angular Documentation](https://v17.angular.i
 The following example demonstrates how to integrate the Uploader component with required validation in a template-driven form:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/template-driven-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ For more information, refer to the [Angular Documentation](https://v17.angular.i
 The following example demonstrates how to integrate the Uploader component with required validation in a reactive form:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/reactive-cs1/src/app.component.ts %}
 {% endhighlight %}
 

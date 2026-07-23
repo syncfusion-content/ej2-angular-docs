@@ -24,7 +24,7 @@ By default, the Uploader component allows you to select and upload multiple file
 The selected files are displayed in a list and persist until you clear them by clicking the clear button in the footer. The `multiple` attribute is added to the input element to enable multiple file selection. The following example demonstrates multiple file upload configuration.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ The `multiple` attribute is removed from the input element to restrict file sele
 The following example demonstrates single file upload configuration.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ After successfully uploading files to the server, the file name text color chang
 You can cancel the upload process by setting the `cancel` property of the event argument to `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -175,7 +175,7 @@ public IActionResult Save()
 The following example demonstrates the client-side action for saving files on the server and returning responses in JSON, String, and File formats.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs17/src/app.component.ts %}
 {% endhighlight %}
 
@@ -197,7 +197,7 @@ You can remove files that have not been uploaded to the server by clicking the r
 In this case, the `success` or `failure` events are not triggered.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -270,7 +270,7 @@ When you disable this property, you can use the action buttons to call upload al
 You can change those buttons text using the `buttons` property in the Uploader component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -286,7 +286,7 @@ You can change those buttons text using the `buttons` property in the Uploader c
 By default, the uploader component process multiple files to upload simultaneously. When you enable the [sequentialUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/#sequentialupload) property, the selected files will process sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/sequential-upload-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -309,7 +309,7 @@ The following properties are mandatory to configure the preloaded files:
     *   Type
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs6/src/app.component.ts %}
 {% endhighlight %}
 

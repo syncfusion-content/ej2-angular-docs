@@ -14,7 +14,7 @@ By using the [uploading](https://ej2.syncfusion.com/angular/documentation/api/up
 In the following example, the file MIME type is displayed in an alert dialog before the file starts uploading.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/mime-type-cs1/src/app.component.ts %}
 {% endhighlight %}
 

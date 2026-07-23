@@ -18,7 +18,7 @@ The Uploader component allows you to upload files by selecting or dragging files
 Refer to the following example for implementation details.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ This feature allows you to select entire folders instead of individual files.
 Refer to the following example to implement directory upload functionality.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/directory-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -123,7 +123,7 @@ The Uploader component allows you to set an external HTML element as the drop ar
 The element can be specified as an HTML element reference or an element ID string.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/draganddrop-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -140,7 +140,7 @@ customize the drop area's appearance by overriding the default styles.
 Use the **e-upload-drag-hover** CSS class to style the drop area when files are dragged over it.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/cus_draganddrop-cs1/src/app.component.ts %}
 {% endhighlight %}
 

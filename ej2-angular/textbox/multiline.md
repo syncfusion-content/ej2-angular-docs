@@ -37,7 +37,7 @@ Both methods create a textarea that supports multiple lines of text input with c
 > The multiline TextBox allows vertical resizing by default, enabling users to adjust the input area height as needed.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/textarea-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ Implementation requires calculating the textarea height during two key events:
 This approach ensures the textarea expands and contracts smoothly, accommodating both initial values and real-time content changes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -93,7 +93,7 @@ textarea.e-input,
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/disable-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -128,7 +128,7 @@ this.textboxObject.removeAttributes('maxlength');
 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/maxlength-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -151,7 +151,7 @@ Benefits of character counting include:
 - **User Experience**: Immediate feedback without requiring form validation
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/count-cs1/src/app.component.ts %}
 {% endhighlight %}
 

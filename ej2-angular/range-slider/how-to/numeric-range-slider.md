@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 Format numeric values displayed in Range Slider to meet your application requirements. Apply decimal precision, fixed whole numbers, or unit representations (e.g., "$100", "50%"). The following sample demonstrates numeric formatting techniques.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/how-to-03-cs2/src/app.component.ts %}
 {% endhighlight %}
 

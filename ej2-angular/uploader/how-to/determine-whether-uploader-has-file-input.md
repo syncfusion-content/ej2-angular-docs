@@ -14,7 +14,7 @@ By setting the **required** attribute on the uploader input element, you can val
 In the following example, the **required** attribute is applied to the uploader input element, and a validation failure message is displayed using the `data-required-message` attribute.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/required-cs1/src/app.component.ts %}
 {% endhighlight %}
 

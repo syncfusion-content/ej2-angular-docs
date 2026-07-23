@@ -71,7 +71,7 @@ export class AppComponent {
 * Trigger validation on slider value changes by calling `validate()` in the `changed` event handler.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/how-to-04-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

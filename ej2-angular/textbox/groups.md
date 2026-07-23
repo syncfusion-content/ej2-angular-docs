@@ -18,7 +18,7 @@ The TextBox component includes a clear button feature that allows users to quick
 To enable the clear button functionality, set the [showClearButton](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#showclearbutton) property to `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/textbox-component-clearicons-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -68,7 +68,7 @@ export class AppComponent {
 To disable the TextBox and prevent user interaction, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#enabled) property to `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ To disable the TextBox and prevent user interaction, set the [enabled](https://e
 Make the TextBox read-only while maintaining its visual appearance and allowing text selection by setting the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#readonly) property to `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -231,7 +231,7 @@ Add icons to the input by passing the `buttons` property value with the class na
 The following example demonstrates how to create TextBox components programmatically with and without icons:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 

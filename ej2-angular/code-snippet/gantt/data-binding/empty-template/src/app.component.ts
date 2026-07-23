@@ -5,12 +5,11 @@ import { GanttAllModule, GanttComponent } from '@syncfusion/ej2-angular-gantt';
   selector: 'app-root',
   template: `
     <div class="control-section">
-      <ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" height="450px" (load)="load($event)">
+      <ejs-gantt #gantt height="450px" [dataSource]="data" [emptyRecordTemplate]="emptyTemplate" [taskFields]="taskSettings" [splitterSettings]="splitterSettings">
       </ejs-gantt>
+
       <ng-template #emptyRecordTemplate>
-        <div class="emptyRecordTemplate">
           <span>There is no data available to display at the moment.</span>
-        </div>
       </ng-template>
     </div>`,
   standalone: true,
@@ -22,7 +21,8 @@ export class AppComponent implements OnInit {
   @ViewChild('emptyRecordTemplate', { static: true }) emptyTemplate!: TemplateRef<any>;
   public taskSettings?: object;
   public data?: object[];
-
+  public splitterSettings?: object;
+  
   public ngOnInit(): void {
     this.data = [];
     this.taskSettings = {
@@ -32,12 +32,11 @@ export class AppComponent implements OnInit {
       endDate: 'EndDate',
       duration: 'Duration',
       progress: 'Progress',
-      dependency: 'Predecessor',
-      child: 'subtasks',
-      resourceInfo: 'resources',
+      parentID: 'ParentID'
+    };
+    this.splitterSettings = {
+      columnIndex: 3,
     };
   }
-  public load(args:any): void {
-    this.ganttObject.treeGrid.grid.emptyRecordTemplate = this.emptyTemplate;
-  }
+ 
 }

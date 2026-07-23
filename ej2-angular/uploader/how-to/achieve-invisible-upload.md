@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 Implement invisible uploads by handling the uploader's `selected` event to trigger background uploads without showing the default file list. Refer to the example below.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/invisible-cs1/src/app.component.ts %}
 {% endhighlight %}
 

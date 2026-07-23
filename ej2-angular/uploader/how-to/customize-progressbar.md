@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can customize the progress bar's size, color, and background by overriding the default Uploader component styles. Refer to the following example to apply custom styling to the progress indicator.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/progressbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
