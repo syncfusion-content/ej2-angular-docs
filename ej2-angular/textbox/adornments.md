@@ -20,7 +20,7 @@ Adornments are useful for:
 - **Functional Enhancement**: Including action buttons such as password visibility toggles or clear buttons
 - **Input Validation**: Displaying validation status icons or error indicators
 - **Unit Indicators**: Showing currency symbols, temperature units, domain extensions, or measurement units
-- **Accessibility**: Providing visual and interactive guidance to help users input and improve discoverability
+- **Accessibility**: Providing visual and interactive guidance to help users enter data and improve discoverability.
 
 ## Common Use Cases
 
@@ -40,7 +40,7 @@ Use the `prependTemplate` and `appendTemplate` properties to add custom HTML con
 The following example demonstrates how to add adornments in the TextBox control.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/adornments-cs1/src/app.component.ts %}
 {% endhighlight %}
 

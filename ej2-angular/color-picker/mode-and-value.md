@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mode and value in Angular Color Picker component | Syncfusion
-description: Details on configuring mode and value for the Syncfusion Angular Color Picker (Essential JS 2).
+description: Learn how to set the Color Picker's mode and value properties in Angular to render the palette and define the selected color using hex codes.
 platform: ej2-angular
 control: Color Picker
 documentation: ug
@@ -17,7 +17,7 @@ By default, the ColorPicker displays the Picker area when opened. To display the
 The following sample demonstrates rendering the Palette on initial load.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/getting-started/default-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ Use the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-pic
 The following sample uses a 4-digit hex code where the last digit represents opacity (alpha).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/value-cs1/src/app.component.ts %}
 {% endhighlight %}
 

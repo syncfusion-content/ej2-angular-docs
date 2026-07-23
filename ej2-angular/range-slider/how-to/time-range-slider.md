@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 Format Range Slider values as time by using the [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#renderingticks) event to format tick labels and the [`change`](https://ej2.syncfusion.com/angular/documentation/api/slider/#change) event to format tooltips. The following sample demonstrates how to implement time formatting in a slider.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/how-to-02-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

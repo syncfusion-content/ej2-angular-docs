@@ -20,7 +20,7 @@ Adjust the size of the TextArea by applying specific CSS classes:
 Apply these classes to customize the TextArea appearance to match your application's design requirements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/style-appearance-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ Apply these classes to customize the TextArea appearance to match your applicati
 Enable filled and outline modes in the TextArea component by adding the `e-outline` or `e-filled` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textarea/#cssClass) property. These classes allow you to choose between filled or outline appearance, aligning with your application's design.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/style-appearance-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -54,7 +54,7 @@ Enable filled and outline modes in the TextArea component by adding the `e-outli
 The `cssClass` property provides a powerful way to apply custom styling to the TextArea component. Use this property to apply custom CSS classes to the textarea container, enabling control over styling properties such as color, padding, margins, borders, and more.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/style-appearance-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -134,7 +134,7 @@ export class AppComponent { }
 Display a static clear button in the TextArea component by adding the `e-static-clear` class to the `cssClass` property. This class ensures the clear button remains visible at all times, allowing users to easily clear the textarea content without focusing on the control.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/style-appearance-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -150,7 +150,7 @@ Display a static clear button in the TextArea component by adding the `e-static-
 Customize TextArea styles such as background color, text color, and border color by overriding the default styles to achieve your desired appearance.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/style-appearance-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -184,7 +184,7 @@ Change the floating label color for both `success` and `warning` validation stat
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/style-appearance-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -210,7 +210,7 @@ To add a mandatory asterisk (*) to the placeholder in the TextArea component, yo
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/style-appearance-cs7/src/app.component.ts %}
 {% endhighlight %}
 

@@ -40,7 +40,7 @@ The mask can be formed by combining any one or more of these mask elements.
 The following example demonstrates the usage of standard mask elements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ You can define any of the non-mask element as the mask element and its behavior 
 In the following example, non-mask element `P` accepts the values `P, A, p, a` and `M` accepts the values `M, m` as mentioned in the custom characters collection.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ The regular expressions should be wrapped by the square brackets (e.g., [`Regex`
 In the following example, regular expression has been set for each input places.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/regularExpression-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -100,7 +100,7 @@ You can customize the prompt character of MaskedTextBox by using the [`promptCha
 The following example demonstrates the MaskedTextBox with customized prompt character as `*`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 

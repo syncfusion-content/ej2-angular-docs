@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event to obtain file sizes before uploading to the server. The `file` object reports size in bytes; convert it to `KB` or `MB` with the [bytesToSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/#bytestosize) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/check-file-size-cs1/src/app.component.ts %}
 {% endhighlight %}
 

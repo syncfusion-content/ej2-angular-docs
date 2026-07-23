@@ -210,7 +210,7 @@ ng serve --open
 The application starts on the development server and the TextBox component is available in the browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -232,7 +232,7 @@ Available `floatLabelType` values:
 - **Auto** — Placeholder text floats above the TextBox when the field receives focus or contains a value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/textbox-component-cs1/src/app.component.ts %}
 {% endhighlight %}
 

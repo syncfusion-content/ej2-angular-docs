@@ -21,7 +21,7 @@ Implement Range Slider validation within Angular [Template-driven](https://angul
 | `ng-valid` | `ng-invalid` |The control's value is valid. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/templateform-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

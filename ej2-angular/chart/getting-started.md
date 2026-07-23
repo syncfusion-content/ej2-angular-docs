@@ -171,7 +171,7 @@ The following table summarizes the key properties used in this example:
 | [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#type) | Specifies the chart series type, such as Line, Column, or Bar. |
 | [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#xname) | Maps the category field (for example, month) from the data source to the x-axis. |
 | [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#yname) | Maps the data field (for example, sales) from the data source to the y-axis. |
-| [`<e-series-collection>`] and [`<e-series>`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective) | Directives used to define and render one or more series in the chart. |
+| [`<e-series-collection>`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective) and [`<e-series>`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective) | Directives used to define and render one or more series in the chart. |
 
 ## Step 6: Run the application
 

@@ -40,7 +40,7 @@ The following sample explains about user interactions available in signature.
 ## User Integration sample
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/signature/user-action-cs1/src/app.component.ts %}
 {% endhighlight %}
 

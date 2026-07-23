@@ -165,7 +165,7 @@ ng serve
 The following shows a basic `Slider` example.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/getting-started-01-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -191,7 +191,7 @@ The Slider supports the following types:
 > Both Default and MinRange types select a single value. In MinRange, the selection is shown from the start value to the current handle position. The Range type uses two handles to select a range, and the selection is shown between them.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/getting-started-02-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -211,7 +211,7 @@ The Slider supports the following types:
 Display the Slider in horizontal or vertical orientation. By default, it renders horizontally.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/getting-started-03-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -229,7 +229,7 @@ Display the Slider in horizontal or vertical orientation. By default, it renders
 The Slider displays a tooltip to indicate the current value when clicking the bar or dragging the handle. Customize tooltip position using the `placement` property. Control when the tooltip appears (hover, focus, or click) and whether it remains visible.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/getting-started-04-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -249,7 +249,7 @@ Change the Slider value using the Increase and Decrease buttons. In a Range Slid
 > After enabling slider buttons, pressing the Tab key moves focus to the handle, not the button.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/getting-started-05-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

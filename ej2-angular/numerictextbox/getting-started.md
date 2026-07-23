@@ -178,7 +178,7 @@ ng serve
 The following example illustrates the output in your browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -198,7 +198,7 @@ The validation behavior depends on the [`strictMode`](https://ej2.syncfusion.com
 The following example demonstrates range validation.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -216,7 +216,7 @@ Set the format of the NumericTextBox using the [`format`](https://ej2.syncfusion
 The following example formats the value using the currency format `c2`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -235,7 +235,7 @@ Restrict the number of decimals that can be entered in the NumericTextBox by usi
 * Otherwise, decimals are restricted while typing in the NumericTextBox.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -252,7 +252,7 @@ In NumericTextBox, the `value` property supports two-way binding.
 The following example demonstrates two-way binding with the NumericTextBox and an HTML input element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -276,7 +276,7 @@ For more details about reactive forms, refer to [Angular Reactive Forms](https:/
 The following example demonstrates how to use reactive forms.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/reactive-forms-cs1/src/app.component.ts %}
 {% endhighlight %}
 

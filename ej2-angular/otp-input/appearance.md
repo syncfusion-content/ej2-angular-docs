@@ -17,7 +17,7 @@ You can also customize the appearance of OTP Input component.
 You can specify the length of OTP by using the [length](https://ej2.syncfusion.com/angular/documentation/api/otp-input#length) property. The default value is `4`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/appearance/length/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -35,7 +35,7 @@ You can specify the length of OTP by using the [length](https://ej2.syncfusion.c
 You can disable the OTP Input component by using the [disabled](https://ej2.syncfusion.com/angular/documentation/api/otp-input#disabled) property. By default, the value is `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/appearance/disabled/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -61,7 +61,7 @@ The OTP input component supports the following predefined styles that can be def
 | `e-error` | Used to represent a negative action. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/appearance/cssClass/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}

@@ -14,7 +14,7 @@ You can calculate the total size of selected files before uploading them to the 
 This functionality is achieved by using the `selected` event, which fires when files are selected. Refer to the following example to implement total file size calculation.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/file-size-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -173,7 +173,7 @@ ng serve
 The following example shows a default Rating component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/getting-started/default-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -189,7 +189,7 @@ The following example shows a default Rating component.
 You can set the rating value by using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/rating#value) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/getting-started/value-cs/src/app.component.ts %}
 {% endhighlight %}
 

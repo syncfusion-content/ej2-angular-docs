@@ -15,7 +15,7 @@ The placeholder in OTP Input specifies the text displayed as a hint until the us
 You can set the placeholder text by using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/otp-input#placeholder) property. Additionally, when providing a single character as the placeholder value all input fields within the OTP Input component will display the same character.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/placeholder/placeholder_char/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -31,7 +31,7 @@ You can set the placeholder text by using the [placeholder](https://ej2.syncfusi
 When a multi-character placeholder is provided, each input field displays characters from the placeholder string in sequence, up to the configured OTP input length.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/placeholder/placeholder_string/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}

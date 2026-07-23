@@ -115,7 +115,7 @@ export class AppComponent {
 Below example demonstrates the valueChanged event of the Rating component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/events-cs/src/app.component.ts %}
 {% endhighlight %}
 

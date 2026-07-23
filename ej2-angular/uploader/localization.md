@@ -39,7 +39,7 @@ The following table lists the localization keys and their descriptions:
 | size | Tooltip text for file size |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs11/src/app.component.ts %}
 {% endhighlight %}
 

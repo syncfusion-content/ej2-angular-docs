@@ -20,7 +20,7 @@ Standard numeric formats use specifiers like `n` (number), `p` (percentage), and
 The following example demonstrates percentage and currency format usage:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ Custom numeric formats can be created by combining format specifiers like `#` (o
 The following examples demonstrate custom format usage:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 

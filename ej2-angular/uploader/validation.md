@@ -17,7 +17,7 @@ The Uploader component validates selected files by file extension and size using
 You can restrict file uploads to specific file types using the `allowedExtensions` property. Specify extensions as a comma-separated collection (for example, `.pdf,.doc,.docx`). The Uploader filters selected or dropped files against the specified types and processes only matching files. You can also enable validation by setting the `accept` attribute on the input element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs12/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ You can restrict file uploads to specific file types using the `allowedExtension
 The Uploader component validates files based on their size, preventing uploads of files that are too large or too small. File size limits are specified in bytes using the `minFileSize` and `maxFileSize` properties. By default, the minimum file size is 0 bytes and the maximum file size is 28.4 MB.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs13/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ The Uploader component validates files based on their size, preventing uploads o
 You can limit the number of files that can be uploaded using the `selected` event. In the event arguments, retrieve the currently selected files using `getFilesData()`. Modify the file list as needed and assign the updated list to `eventArgs.modifiedFilesData`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs14/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ You can limit the number of files that can be uploaded using the `selected` even
 You can prevent duplicate file uploads using the `selected` event. Compare the selected files against the existing file list and remove any duplicates before processing the upload.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs15/src/app.component.ts %}
 {% endhighlight %}
 

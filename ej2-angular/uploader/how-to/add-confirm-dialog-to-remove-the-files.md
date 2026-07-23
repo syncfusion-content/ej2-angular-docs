@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 Customize the uploader to show a confirmation dialog before removing files. The following example uses the EJ2 Dialog component as a confirm dialog.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/confirm-dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 

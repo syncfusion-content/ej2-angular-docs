@@ -25,7 +25,7 @@ Use the appropriate CSS class through the [cssClass](https://ej2.syncfusion.com/
 >Note: Further customize the TextBox appearance by using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to add custom classes that apply additional styling to meet specific design requirements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 

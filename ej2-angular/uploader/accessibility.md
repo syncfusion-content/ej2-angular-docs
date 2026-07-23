@@ -50,7 +50,7 @@ The following table lists the standard keyboard shortcuts supported by the Uploa
 | <kbd>Esc</kbd> | Close the file browser dialog and cancel the upload operation. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/uploader-cs16/src/app.component.ts %}
 {% endhighlight %}
 

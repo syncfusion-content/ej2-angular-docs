@@ -18,7 +18,7 @@ By default, this validation works when selecting files via the browse button. Ho
 In the following example, image files are validated using the `image/*` filter. Users can drag and drop image files with extensions PNG, JPG, BMP, GIF, and TIFF to upload them.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/validate-image-cs1/src/app.component.ts %}
 {% endhighlight %}
 

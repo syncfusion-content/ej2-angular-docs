@@ -17,7 +17,7 @@ You can hide the default drop area by overriding the corresponding Uploader comp
 * `.e-upload .e-file-drop` — Drag-and-drop zone
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/hide-drop-cs1/src/app.component.ts %}
 {% endhighlight %}
 

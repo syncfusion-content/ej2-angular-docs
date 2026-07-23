@@ -39,7 +39,7 @@ Refer to the following snippet to enable the limits in the Slider.
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/default-limit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ In the Range Slider, both handles can be restricted and locked from the limit's 
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/range-limit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ Lock slider handle movement by enabling the [`startHandleFixed`](https://ej2.syn
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/handle-lock-cs1/src/app.component.ts %}
 {% endhighlight %}
 

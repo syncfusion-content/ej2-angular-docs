@@ -46,7 +46,7 @@ Implement two-way data binding between a Range Slider and other form controls us
   ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/ngmodel-cs2/src/app.component.ts %}
 {% endhighlight %}
 

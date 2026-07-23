@@ -29,7 +29,7 @@ Use `prependTemplate` to render elements before the numeric input, and `appendTe
 The following example shows how to implement adornments in the NumericTextBox:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/adornments-cs1/src/app.component.ts %}
 {% endhighlight %}
 

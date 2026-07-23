@@ -15,7 +15,7 @@ The `rows` and `columns` attributes play a crucial role in customizing the TextA
 Customize the TextArea dimensions by setting the number of rows using the [rows](https://ej2.syncfusion.com/angular/documentation/api/textarea/#rows) property and the number of columns using the [cols](https://ej2.syncfusion.com/angular/documentation/api/textarea/#cols) property. These properties provide precise control over the textarea dimensions, ensuring it fits seamlessly within your application's layout.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/row-column-cs1/src/app.component.ts %}
 {% endhighlight %}
 

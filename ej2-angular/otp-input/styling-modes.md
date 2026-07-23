@@ -17,7 +17,7 @@ Styling modes define the visual presentation of the OTP input fields. Choose a s
 The outlined style displays input fields with a visible border and background. This is the default styling mode and provides clear visual boundaries for each OTP field. Set the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [outlined](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/) to apply this style.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/styling-modes/outlined/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -35,7 +35,7 @@ The outlined style displays input fields with a visible border and background. T
 The filled style displays input fields with a solid background color and no border, creating a modern, compact appearance. Use this mode for designs that emphasize background-based separation. Set the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [filled](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/) to apply this style.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/styling-modes/filled/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -53,7 +53,7 @@ The filled style displays input fields with a solid background color and no bord
 The underlined style displays input fields with only a bottom border, creating a minimalist appearance. This mode is useful for space-constrained interfaces or mobile applications. Set the [stylingMode](https://ej2.syncfusion.com/angular/documentation/api/otp-input#stylingmode) property to [underlined](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputStyle/) to apply this style.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/styling-modes/underlined/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
