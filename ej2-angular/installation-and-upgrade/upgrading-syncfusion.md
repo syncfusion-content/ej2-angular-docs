@@ -16,7 +16,7 @@ You can upgrade to the latest Syncfusion<sup style="font-size:70%">&reg;</sup> v
 
 See our [release history](release-history.md) for more information.
 
-## Upgrading to the Latest Version
+## Upgrading to the latest version
 
 The latest version of Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 can be accessed and installed by selecting the “Latest Version: {Version}” link at the top of the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Control Panel.
 
@@ -26,7 +26,7 @@ Alternatively, upgrade to the latest version by downloading and installing the r
 
 Volume and Service Pack releases function independently. You can install a Service Pack release that contains major bug fixes without installing the corresponding Volume release.
 
-## Upgrade from Trial Version to Licensed Version
+## Upgrade from trial version to licensed version
 
 To upgrade from a trial version to a licensed version, uninstall the trial version and install the fully licensed installer from the [License and Downloads](https://www.syncfusion.com/account/downloads) section on our website.
 
