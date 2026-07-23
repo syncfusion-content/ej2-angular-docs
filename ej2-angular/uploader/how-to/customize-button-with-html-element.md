@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The Uploader component allows you to customize the action buttons by using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/uploader/#buttons) property. Refer to the following example for implementation details.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/custom-buttons-cs1/src/app.component.ts %}
 {% endhighlight %}
 

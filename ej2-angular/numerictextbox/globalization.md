@@ -27,7 +27,7 @@ To load translation object in your application use `load` function of `L10n` cla
 The below example demonstrates the NumericTextBox in `German` culture with the spin buttons tooltip.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -70,7 +70,7 @@ The NumericTextBox uses the Unicode CLDR (Common Locale Data Repository) data fo
 The below example demonstrates the NumericTextBox in `German` culture with the `EUR` currency format.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -86,7 +86,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the `
 The NumericTextBox supports right-to-left (RTL) rendering, improving the user experience and accessibility for languages written right-to-left (Arabic, Persian, Urdu, etc.). To enable RTL mode, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#enablertl) property to `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 

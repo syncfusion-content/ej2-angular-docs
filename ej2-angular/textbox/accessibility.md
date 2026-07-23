@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular TextBox Component
 
-The TextBox component conforms to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The TextBox component conforms to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate and support accessibility.
 
 The accessibility compliance for the TextBox component is outlined below.
 
@@ -55,9 +55,9 @@ The TextBox component supports keyboard navigation to enhance accessibility for 
 
 The TextBox component provides comprehensive ARIA accessibility support that enables access through screen readers and assistive technology devices. This component is designed with reference to the guidelines provided in [WAI-ARIA Accessibility Practices](https://www.w3.org/TR/wai-aria/#textbox).
 
-The TextBox uses the `textbox` role and the following ARIA properties based on its state:
+The TextBox uses the `textbox` role and the following ARIA Attribute based on its state:
 
-| **Property** | **Functionality** |
+| **ARIA Attribute** | **Functionality** |
 | --- | --- |
 | aria-labelledby | Indicates the floating label element that describes the TextBox. |
 | aria-describedby | References additional descriptive text associated with the TextBox, such as help text or error messages. |

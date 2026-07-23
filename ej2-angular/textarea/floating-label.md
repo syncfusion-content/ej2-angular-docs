@@ -19,7 +19,7 @@ The floating label feature in the TextArea component displays the placeholder te
 | Never | The label never floats; it remains in its default position within the TextArea. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/float-label-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ The floating label feature in the TextArea component displays the placeholder te
 You can localize the TextArea placeholder text to different cultures using the `locale` property with the localization library.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ To load translation object in an application use `load` function of `L10n` class
 In the below sample, `German` culture is loaded to the TextArea placeholder text.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
 

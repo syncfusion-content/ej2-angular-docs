@@ -15,10 +15,10 @@ The Syncfusion Angular TextBox component provides essential features to enhance 
 
 The TextBox component includes a clear button feature that allows users to quickly reset the input value with a single click. The clear button automatically appears when the field contains text and disappears when the field is empty, providing a clean and intuitive user interface.
 
-To enable the clear button functionality, set the [showClearButton](https://ej2.syncfusion.com/angular/documentation/api/textbox/#showclearbutton) property to `true`.
+To enable the clear button functionality, set the [showClearButton](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#showclearbutton) property to `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/textbox-component-clearicons-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -30,9 +30,9 @@ To enable the clear button functionality, set the [showClearButton](https://ej2.
 
 ## Set HTML Attributes
 
-The TextBox component supports standard HTML attributes through the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#htmlattributes) property. This property accepts an object where keys represent attribute names and values represent attribute values, allowing developers to add attributes such as `name`, `type`, `maxlength`, `placeholder`, `title`, and others directly to the input element.
+The TextBox component supports standard HTML attributes through the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#htmlattributes) property. This property accepts an object in which the keys represent attribute names and the values represent their corresponding values, allowing developers to add attributes such as `name`, `type`, `maxlength`, `placeholder`, `title`, and others directly to the input element.
 
-When an attribute is configured through both a dedicated component property and the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/#htmlattributes) object, the component prioritizes the dedicated property value.
+When an attribute is configured through both a dedicated component property and the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#htmlattributes) object, the component prioritizes the dedicated property value.
 
 The following example demonstrates how to configure common HTML attributes for a TextBox:
 
@@ -65,10 +65,10 @@ export class AppComponent {
 
 ### Set the Disabled State
 
-To disable the TextBox and prevent user interaction, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textbox/#enabled) property to `false`.
+To disable the TextBox and prevent user interaction, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#enabled) property to `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -81,10 +81,10 @@ To disable the TextBox and prevent user interaction, set the [enabled](https://e
 
 ### Set the Read-Only State
 
-Make the TextBox read-only while maintaining its visual appearance and allowing text selection by setting the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textbox/#readonly) property to `true`.
+Make the TextBox read-only while maintaining its visual appearance and allowing text selection by setting the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#readonly) property to `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -101,8 +101,8 @@ Make the TextBox read-only while maintaining its visual appearance and allowing 
 
 Control the focus state of the TextBox programmatically using the focus methods:
 
-- Use [`focusIn`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#focusin) to set focus to the TextBox
-- Use [`focusOut`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#focusout) to remove focus from the TextBox
+- Use [`focusIn`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#focusin) to set focus to the TextBox
+- Use [`focusOut`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#focusout) to remove focus from the TextBox
 
 ```typescript
 import { Component, ViewChild } from '@angular/core';
@@ -136,11 +136,11 @@ export class AppComponent {
 }
 ```
 
-### Component Life Cycle Methods
+### Component Life cycle Methods
 
 #### Destroy the Component
 
-The [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#destroy) method removes the component from the DOM and detaches all event handlers while maintaining the original input element. This method is useful when dynamically removing TextBox components.
+The [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#destroy) method removes the component from the DOM and detaches all event handlers while maintaining the original input element. This method is useful when dynamically removing TextBox components.
 
 ```typescript
 import { Component, ViewChild } from '@angular/core';
@@ -171,7 +171,7 @@ export class AppComponent {
 
 #### Get Persist Data
 
-The [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/textbox/#getpersistdata) method returns the properties that should be maintained in the persisted state. Use this method when implementing custom persistence logic.
+The [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#getpersistdata) method returns the properties that should be maintained in the persisted state. Use this method when implementing custom persistence logic.
 
 ```typescript
 import { Component, ViewChild } from '@angular/core';
@@ -231,7 +231,7 @@ Add icons to the input by passing the `buttons` property value with the class na
 The following example demonstrates how to create TextBox components programmatically with and without icons:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 

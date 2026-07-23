@@ -15,7 +15,7 @@ To disable the ColorPicker, set the [`disabled`](https://ej2.syncfusion.com/angu
 The following example demonstrates a disabled ColorPicker component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/how-to-cs2/src/app.component.ts %}
 {% endhighlight %}
 

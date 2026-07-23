@@ -19,7 +19,7 @@ To achieve this, set [`noColor`](https://ej2.syncfusion.com/angular/documentatio
 In the following sample, the first tile of the color palette represents the no color tile. By clicking the no color tile you can achieve the above functionalities.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/no-color/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ In the following sample, the first tile of the color palette represents the no c
 The following sample shows a color palette with a custom no color option.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/no-color/custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 

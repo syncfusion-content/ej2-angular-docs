@@ -44,7 +44,7 @@ Customize the Range Slider thumb (handle) appearance by overriding the `e-handle
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/thumb-customization-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

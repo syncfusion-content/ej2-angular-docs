@@ -167,7 +167,7 @@ ng serve
 The following example illustrates the output in your browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/default-textarea-cs1/src/app.component.ts %}
 {% endhighlight %}
 

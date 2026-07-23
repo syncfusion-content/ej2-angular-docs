@@ -51,7 +51,7 @@ Use the following CSS to customize the NumericTextBox spin button icons:
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/custom-icons-cs1/src/app.component.ts %}
 {% endhighlight %}
 

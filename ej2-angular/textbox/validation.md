@@ -14,14 +14,14 @@ The Angular TextBox component provides visual feedback for form validation throu
 
 ## Validation States
 
-The TextBox component supports visual validation states that can be applied by adding corresponding CSS classes to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property:
+The TextBox component supports visual validation states that can be applied by adding corresponding CSS classes to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#cssclass) property:
 
 - **Error state** (`.e-error`): Indicates invalid input that requires correction
 - **Warning state** (`.e-warning`): Suggests potential issues or recommendations
 - **Success state** (`.e-success`): Confirms valid input
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,12 +37,19 @@ The TextBox component supports visual validation states that can be applied by a
 For required fields, add a visual asterisk indicator to placeholder text and floating labels using CSS. This provides clear visual cues about mandatory form fields.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textbox/asterisk-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/asterisk-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight css tabtitle="styles.css" %}
+.e-float-input.e-control-wrapper .e-float-text::after {
+    content: '*';
+    color: red;
+}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,7 +18,7 @@ The Uploader splits large files into smaller chunks and transmits them to the se
 To enable the chunk upload, set the size to [chunkSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel/#chunksize) option of the upload and it receives the value in `bytes`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/chunk-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ To customize chunk upload behavior, the following options are available:
 The following sample specifies the chunk upload delay with 3000 milliseconds and the retry count is 5. The failure event is triggered as the wrong saveUrl is used.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/retry-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ The Uploader allows you to resume upload operations after network interruptions 
 > Pause and resume functionality is available only when chunk upload is enabled.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/resumable-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ When a chunk upload fails, the pause icon changes to a retry icon. Click the ret
 The following example explains about chunk upload with cancel support.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/cancel-cs1/src/app.component.ts %}
 {% endhighlight %}
 

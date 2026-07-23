@@ -149,7 +149,7 @@ export class AppComponent {
 Below example demonstrates the valueChanged event of the OTP Input component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/events/valueChanged/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}

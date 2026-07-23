@@ -15,7 +15,7 @@ Enforce a maximum length limit for text input in the TextArea using the [maxLeng
 By setting the `maxLength` property, you can control text input length and prevent users from exceeding a specified character limit.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/max-length-cs1/src/app.component.ts %}
 {% endhighlight %}
 

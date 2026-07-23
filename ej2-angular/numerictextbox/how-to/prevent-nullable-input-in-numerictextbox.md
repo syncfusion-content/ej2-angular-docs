@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent nullable input in numerictextbox in Angular Numerictextbox component | Syncfusion
+title: Prevent nullable input in NumericTextBox | Syncfusion
 description: Learn here all about Prevent nullable input in numerictextbox in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Prevent nullable input in numerictextbox 
@@ -8,12 +8,12 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent nullable input in NumericTextBox in Angular NumericTextBox component
+# Prevent nullable input in NumericTextBox
 
 By default, the NumericTextBox value can be set to `null`. To ensure the NumericTextBox always contains a value, use the following approach to prevent nullable input.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/numerictextbox/nullable-input-cs1/src/app.component.ts %}
 {% endhighlight %}
 

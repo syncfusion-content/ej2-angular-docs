@@ -166,7 +166,7 @@ The following table summarizes the key properties used in this example:
 | [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#type) | Specifies the accumulation series type, such as Pie, Pyramid, or Funnel. |
 | [`xName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#xname) | Maps the category field (for example, `x`) from the data source. |
 | [`yName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseries#yname) | Maps the numeric field (for example, `y`) from the data source. |
-| [`<e-accumulation-series-collection>`] and [`<e-accumulation-series>`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseriesdirective) | Directives used to define and render an accumulation series in the chart. |
+| [`<e-accumulation-series-collection>`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseriesdirective) and [`<e-accumulation-series>`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationseriesdirective) | Directives used to define and render an accumulation series in the chart. |
 
 ## Step 6: Run the application
 

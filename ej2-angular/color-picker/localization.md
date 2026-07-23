@@ -29,7 +29,7 @@ To load a translation object in an application, use the `load` function of the `
 The following example demonstrates the ColorPicker configured for German (Deutsch) culture.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/how-to-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ The ColorPicker component supports right-to-left (RTL) rendering, improving the 
 The following example shows how to enable RTL support for the ColorPicker component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/how-to-cs6/src/app.component.ts %}
 {% endhighlight %}
 

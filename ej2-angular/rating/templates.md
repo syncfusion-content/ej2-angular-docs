@@ -22,7 +22,7 @@ The rating component supports below templates for item customization.
 Use the `emptyTemplate` tag directive to customize the appearance of **unrated** rating items. The template context provides `value` and `index` properties for accessing item information. If `fullTemplate` is not defined, `emptyTemplate` serves as the default template for both rated and unrated states. Apply custom styles to visually distinguish between these states.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/templates/emptytemplate-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ Use the `emptyTemplate` tag directive to customize the appearance of **unrated**
 Use the `fullTemplate` tag directive to customize the appearance of **rated** rating items. The template context provides `value` and `index` properties for accessing item information. This allows complete control over the visual representation of selected/filled items.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/templates/fulltemplate-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ Use the `fullTemplate` tag directive to customize the appearance of **rated** ra
 You can use emojis of your choice as rating symbol by specifying them as template content within the `emptyTemplate` tag directive.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/templates/emoji-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 You can use SVG icons of your choice as rating symbol by specifying them as template content within the `emptyTemplate` and `fullTemplate` tag directives.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/templates/svg-cs/src/app.component.ts %}
 {% endhighlight %}
 
@@ -100,7 +100,7 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 You can use PNG images of your choice as rating symbol by specifying them as template content within the `emptyTemplate` and `fullTemplate` tag directives.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/rating/templates/png-cs/src/app.component.ts %}
 {% endhighlight %}
 

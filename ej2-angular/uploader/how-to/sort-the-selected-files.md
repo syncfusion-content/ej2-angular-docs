@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can sort selected files in the Uploader component by using the [selected](https://ej2.syncfusion.com/angular/documentation/api/uploader/#selected) event. This event fires when files are selected and allows you to implement custom sorting logic based on file properties such as name, size, or date. Refer to the following example for implementation details.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/uploader/sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
 

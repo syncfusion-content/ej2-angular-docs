@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 Display a hidden Range Slider when triggered by user interaction (e.g., button click). Initialize the Slider with `display: none` CSS, then toggle its visibility and call the [`refresh`](https://ej2.syncfusion.com/javascript/documentation/api/base/component/#refresh) method to recalculate dimensions and render correctly.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/hidden-slider-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

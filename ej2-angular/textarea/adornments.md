@@ -42,7 +42,7 @@ Control how adornments are positioned and arranged using the `adornmentFlow` and
 The following example demonstrates how to add adornments with orientation in the TextArea control.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/textarea/adornments-cs1/src/app.component.ts %}
 {% endhighlight %}
 

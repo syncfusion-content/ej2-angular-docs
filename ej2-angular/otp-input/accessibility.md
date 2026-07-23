@@ -73,7 +73,7 @@ HtmlAttributes allow you to specify additional HTML attributes to be applied to 
 You can pass HTML attributes as key-value pairs to the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/otp-input#htmlattributes) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/htmlAttributes/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
@@ -93,7 +93,7 @@ AriaLabels define the ARIA-label attribute for each input field in the OTP input
 You can provide an array of strings as ARIA-labels to the [ariaLabels](https://ej2.syncfusion.com/angular/documentation/api/otp-input#arialabels) property. Each string corresponds to the ARIA-label attribute for the respective input field in the OTP input component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/otp-input/ariaLabels/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}

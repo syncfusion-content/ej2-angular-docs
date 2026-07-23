@@ -171,7 +171,7 @@ ng serve
 The following example shows a default ColorPicker component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/getting-started/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -189,7 +189,7 @@ By default, the ColorPicker is rendered using a SplitButton and opens a pop-up. 
 The following sample shows the inline type rendering of ColorPicker.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/getting-started/inline-cs1/src/app.component.ts %}
 {% endhighlight %}
 

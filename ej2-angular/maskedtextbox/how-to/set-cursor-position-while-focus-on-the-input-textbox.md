@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set cursor position while focus on the input textbox in Angular Maskedtextbox component | Syncfusion
+title: Set cursor position while focus on MaskedTextBox | Syncfusion
 description: Learn here all about Set cursor position while focus on the input textbox in Syncfusion Angular Maskedtextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Set cursor position while focus on the input textbox 
@@ -21,7 +21,7 @@ By default, the entire mask is selected when the MaskedTextBox receives focus. U
 The following example demonstrates how to set the cursor position in the MaskedTextBox.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/cursor-position-cs1/src/app.component.ts %}
 {% endhighlight %}
 

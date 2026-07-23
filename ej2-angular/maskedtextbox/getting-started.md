@@ -196,7 +196,7 @@ ng serve
 The following example illustrates the output in your browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -212,7 +212,7 @@ The following example illustrates the output in your browser.
 The `value` property supports two-way binding. The example demonstrates two-way binding between the MaskedTextBox and a component property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -234,7 +234,7 @@ MaskedTextBox is a form component and commonly used with form validation. The ex
 The following example demonstrates how to use the reactive forms.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/reactive-forms-cs1/src/app.component.ts %}
 {% endhighlight %}
 

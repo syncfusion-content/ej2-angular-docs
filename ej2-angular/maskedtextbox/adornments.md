@@ -29,7 +29,7 @@ Use `prependTemplate` to render elements before the masked input, and `appendTem
 The following example shows how to implement adornments in the MaskedTextBox:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/maskedtextbox/adornments-cs1/src/app.component.ts %}
 {% endhighlight %}
 

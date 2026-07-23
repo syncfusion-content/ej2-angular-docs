@@ -35,7 +35,7 @@ The ColorPicker component supports two-way property binding, allowing the color 
 * Initialize the variable value in the component file. This value is bound to both the ColorPicker and text input. Any change to either component automatically updates the other.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/colorpicker/ng-model-cs1/src/app.component.ts %}
 {% endhighlight %}
 

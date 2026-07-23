@@ -269,7 +269,7 @@ The following table summarizes the key properties used in this example:
 | [`open`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#open) | Maps the opening price of the stock. |
 | [`close`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#close) | Maps the closing price of the stock. |
 | [`volume`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#volume) | Maps the trading volume (rendered in the separate volume pane). |
-| [`<e-stockchart-series-collection>`] and [`<e-stockchart-series>`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective) | Directives used to define and render one or more series in the stock chart. |
+| [`<e-stockchart-series-collection>`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective) and [`<e-stockchart-series>`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective) | Directives used to define and render one or more series in the stock chart. |
 
 ## Step 7: Run the application
 

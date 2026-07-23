@@ -17,7 +17,7 @@ domainurl: ##DomainURL##
 Format slider values as dates using the `renderingTicks` and `tooltipChange` events to customize tick labels and tooltip text. The following sample demonstrates date formatting implementation.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/how-to-01-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ Format slider values as dates using the `renderingTicks` and `tooltipChange` eve
 Implement time formatting using the `renderingTicks` and `change` events, similar to date formatting. The following sample shows how to display slider values as time values.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/how-to-02-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ Implement time formatting using the `renderingTicks` and `change` events, simila
 Format numeric slider values with custom decimal precision, fixed whole numbers, or unit representations (e.g., "$100", "50%"). The following sample demonstrates various numeric formatting techniques.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/how-to-03-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ export class AppComponent {
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/ngmodel-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -146,7 +146,7 @@ Slider value choosen as: {{value}}
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/reactiveform-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -170,7 +170,7 @@ Implement Range Slider validation within Angular [Template-driven](https://angul
 | `ng-valid` | `ng-invalid` |The control's value is valid. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/templateform-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -260,7 +260,7 @@ this.formObject.validate();
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/how-to-04-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -310,7 +310,7 @@ change(args: SliderChangeEventArgs) => {
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/bar-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -334,7 +334,7 @@ Slider appearance can be customized via CSS. By overriding the slider CSS classe
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/limits-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -371,7 +371,7 @@ applied to the value of the `child_number` in the slider.
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/ticks-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -418,7 +418,7 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/slider/thumb-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
