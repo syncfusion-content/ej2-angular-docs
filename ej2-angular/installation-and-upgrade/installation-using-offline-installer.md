@@ -31,15 +31,15 @@ The steps below show how to install the Essential<sup style="font-size:70%">&reg
 
 2. To unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, you have two options:
 
-    * Login To Install
-    * Use Unlock Key
+    * Login to install
+    * Use unlock key
 
-       **Login to Install**  
+       **Login to install**
     Enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you don’t already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can sign up by selecting **Create an account**. If you have forgotten your password, select **Forgot Password** to reset it. After entering your email address and password, click **Next**.
 
     ![license download](images/offline2.png)
 
-    **Use Unlock Key**
+    **Use unlock key**
     Unlock keys are used to unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, and they are platform and version specific. You should use either Syncfusion<sup style="font-size:70%">&reg;</sup> licensed or trial Unlock key to unlock Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 installer.
 
     The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key.
@@ -89,11 +89,11 @@ The steps below show how to install the Essential<sup style="font-size:70%">&reg
 
 7. Click the Finish button. Your system has been installed with the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio JavaScript – EJ2 product.
 
-## Installing in Silent Mode
+## Installing in silent mode
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio JavaScript – EJ2 Installer supports installation and uninstallation via the command line.
 
-### Command Line Installation
+### Command line installation
 
 To install through the Command Line in Silent mode, follow the steps below.
 
@@ -114,7 +114,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     >Note: x.x.x.x should be replaced with the Essential<sup style="font-size:70%">&reg;</sup> Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
 
-### Command Line Uninstallation
+### Command line uninstallation
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 can be uninstalled silently using the Command Line.
 

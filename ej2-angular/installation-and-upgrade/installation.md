@@ -19,7 +19,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler (ngcc) package (Angular’s legacy compilation and rendering pipeline)
-### Ivy Library Distribution Package
+### Ivy library distribution package
 
 By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>=20.2.36) support [Angular Ivy distribution](https://angular.io/guide/ivy). These packages are compatible with Angular version 12 and above. To install a package, use the following command.
 Install the [`@syncfusion/ej2-angular-grids`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38) package in the application:
@@ -28,7 +28,7 @@ Install the [`@syncfusion/ej2-angular-grids`](https://www.npmjs.com/package/@syn
 npm install @syncfusion/ej2-angular-grids --save
 ```
 
-### Angular Compatibility Compiler (ngcc) Package
+### Angular compatibility compiler (ngcc) package
 
 For Angular versions below 12, use the `ngcc` tagged packages of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To install the package, use the following command,
 
