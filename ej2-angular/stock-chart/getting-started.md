@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with Angular Stock Chart component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Stock Chart component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Stock Chart component | Syncfusion
+description:  Check out and learn about Getting Started with Angular Stock Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Getting Started 
 documentation: ug
 domainurl: https://ej2.syncfusion.com
 ---
 
 # Getting Started with Angular Stock Chart Component
 
-This section explains the steps required to create a simple [stock chart](https://www.syncfusion.com/angular-components/angular-stock-chart) and demonstrates the basic usage of the stock chart component.
+This section explains the steps required to create a simple [stock chart](https://www.syncfusion.com/angular-components/angular-stock-chart) and demonstrates the basic usage of the Angular Stock Chart component.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
@@ -31,17 +31,11 @@ The main files used in this guide are:
 - `src/app/app.ts` — Defines the root standalone component.
 - `src/index.html` — Contains the Angular root element.
 
-N> In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
+> **Note:** In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
 
-N> If your application uses an older NgModule-based structure, import `StockChartModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
+> **Note:** If your application uses an older NgModule-based structure, import `StockChartModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
 
-## Step 1: Create a Project Folder
-
-Create a folder named `my-project` in your desired location. This folder will contain your Syncfusion Stock Chart Angular project.
-
-## Step 2: Set up the Angular environment
-
-Start by opening your project in the terminal on your system **(Command Prompt, PowerShell, or Terminal)**.
+## Step 1: Install the Angular CLI
 
 Use [Angular CLI](https://github.com/angular/angular-cli) to create and manage Angular applications. Install Angular CLI globally using the following command:
 
@@ -49,17 +43,23 @@ Use [Angular CLI](https://github.com/angular/angular-cli) to create and manage A
 npm install -g @angular/cli
 ```
 
-## Step 3: Create an Angular application
-
-Create a new Angular application using the following command.
+Verify the installation:
 
 ```bash
-ng new my-stock-chart-app
+ng version
 ```
 
-During project creation, Angular CLI may prompt you to choose stylesheet, SSR/SSG, and AI tool configuration options. For this basic Stock Chart sample, you can use the following options:
+## Step 2: Create an Angular application
 
-* **Stylesheet system**: Choose any option. This guide uses `CSS` for simplicity and applies the Syncfusion® Tailwind 3 theme through CSS imports.
+Create a new Angular application using the following non-interactive command:
+
+```bash
+ng new my-stock-chart-app --style=css --ssr=false --defaults
+```
+
+This command creates the `my-stock-chart-app` folder and applies the recommended options (CSS stylesheet, no SSR, and default settings). If you prefer interactive prompts, choose the following options:
+
+* **Stylesheet system**: Choose any option. This guide uses `CSS` for simplicity and applies the Syncfusion Tailwind 3 theme via CSS imports.
 * **SSR and SSG/Pre-rendering**: Select `No`.
 * **AI tools configuration**: Select `None`.
 
@@ -69,43 +69,35 @@ Navigate to the project folder:
 cd my-stock-chart-app
 ```
 
-## Step 4: Install the Syncfusion® Angular Stock Chart package
+Open the project in Command Prompt, PowerShell, or Terminal before proceeding to the next step.
 
-All Syncfusion Essential® JS 2 packages are available in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
+## Step 3: Install the Syncfusion® Angular Stock Chart package
 
-Install the Angular Stock Chart package using the following command:
+All Syncfusion Essential® JS 2 packages are available in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. The [Angular Chart package](https://www.npmjs.com/package/@syncfusion/ej2-angular-charts) can be installed using the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-charts --save
+npm install @syncfusion/ej2-angular-charts
 ```
 
-N> Installing `@syncfusion/ej2-angular-charts` automatically installs the required dependency packages.
+> **Note:** Installing `@syncfusion/ej2-angular-charts` automatically installs the required dependency packages.
 
-## Step 5: Adding CSS References
+## Step 4: Adding CSS References
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Stock Chart component themes can be applied using CSS or SASS from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages). Additionally, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Stock Chart component themes can be applied using CSS or SASS from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages). Themes can also be applied via CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
 
-This example uses the `Material 3` theme for the Stock Chart component from the theme package. To install the [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package, use the following command:
+This example uses the [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme for the Stock Chart component. To install the theme package, use the following command:
 
-{% tabs %}
-{% highlight bash tabtitle="npm" %}
+```bash
+npm install @syncfusion/ej2-material3-theme
+```
 
-npm install @syncfusion/ej2-material3-theme --save
+Reference the theme CSS in `src/styles.css` as follows:
 
-{% endhighlight %}
-{% endtabs %}
+```css
+@import "@syncfusion/ej2-material3-theme/styles/stock-chart/index.css";
+```
 
-The following CSS styles are available in the `../node_modules/@syncfusion` folder. Reference them in `src/styles.css` as follows:
-
-{% tabs %}
-{% highlight css tabtitle="styles.css" %}
-
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/stock-chart/index.css";
-
-{% endhighlight %}
-{% endtabs %}
-
-## Step 6: Register the Stock Chart module and add the component
+## Step 5: Register the Stock Chart module
 
 Import `StockChartModule` from `@syncfusion/ej2-angular-charts` and add it to the `imports` collection of the standalone component. Then, add the Angular Stock Chart component using the `<ejs-stockchart>` selector in the component template.
 
@@ -119,27 +111,29 @@ import { StockChartModule } from '@syncfusion/ej2-angular-charts';
   selector: 'app-root',
   standalone: true,
   imports: [StockChartModule],
-  providers: [],
   template: `<ejs-stockchart id='stock-chart-container'></ejs-stockchart>`
 })
 export class App {}
 ```
 
-This renders an empty stock chart in the application.
+This renders an empty stock chart in the application's view.
 
-N> The component selector must match the root element used in the `src/index.html` file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`.
+> **Note:** The component selector must match the root element used in the `src/index.html` file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`.
 
-## Step 7: Create your first Stock Chart with data source and series type
+Run the application with `npm start` and verify that an empty stock chart renders before proceeding to the next step.
 
-This section explains how to create a simple stock chart by binding financial data, configuring the time-based axis, and rendering a series using Angular Stock Chart components.
+## Step 6: Create your first Stock Chart with data source and series type
 
-The following example demonstrates how to visualize stock price data using a candle series. It also shows how to configure the horizontal axis for date-time values and map financial data fields using the `dataSource`, `xName`, `open`, `high`, `low`, and `close` properties.
+This section explains how to create a simple stock chart by binding financial data, configuring the time-based axis, and rendering a series using the Angular Stock Chart component.
+
+The following example demonstrates how to visualize stock price data using a candle series. It also shows how to configure the horizontal axis for date-time values and map financial data fields using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#datasource), [xName](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#xname), [open](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#open),  [high](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#high), [low](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#low), [close](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#close), and [volume](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#volume) properties.
 
 Update the `src/app/app.ts` file as follows:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { StockChartModule, DateTimeService, CandleSeriesService } from '@syncfusion/ej2-angular-charts';
+import { AxisModel } from '@syncfusion/ej2-charts';
 
 @Component({
     selector: 'app-root',
@@ -147,19 +141,20 @@ import { StockChartModule, DateTimeService, CandleSeriesService } from '@syncfus
     imports: [StockChartModule],
     providers: [DateTimeService, CandleSeriesService],
     template: `
-        <ejs-stockchart 
-            id="stock-chart-container" 
+        <ejs-stockchart
+            id="stock-chart-container"
             [primaryXAxis]='primaryXAxis'
         >
             <e-stockchart-series-collection>
-                <e-stockchart-series 
-                    [dataSource]='stockchartData' 
-                    type='Candle' 
-                    xName='date' 
-                    High='high' 
-                    Low='low' 
-                    Open='open' 
-                    Close ='close'
+                <e-stockchart-series
+                    [dataSource]='stockchartData'
+                    type='Candle'
+                    xName='date'
+                    high='high'
+                    low='low'
+                    open='open'
+                    close='close'
+                    volume='volume'
                 >
                 </e-stockchart-series>
             </e-stockchart-series-collection>
@@ -167,7 +162,7 @@ import { StockChartModule, DateTimeService, CandleSeriesService } from '@syncfus
     `
 })
 export class App implements OnInit {
-    public primaryXAxis?: Object;
+    public primaryXAxis?: AxisModel;
     public stockchartData?: Object[];
     ngOnInit(): void {
         this.stockchartData = [
@@ -259,19 +254,24 @@ export class App implements OnInit {
 }
 ```
 
-In this example:
+The chart renders a candle series with one candle per week showing the open, high, low, and close prices for the period from April to June 2012. The horizontal axis displays dates, and the vertical axis shows the price. Hovering over a candle displays a tooltip with the date and OHLC values.
 
-* [`primaryXAxis`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/index-default#primaryxaxis) defines the configuration of the horizontal axis.
-* [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#datasource) provides the financial data used to render the stock chart.
-* [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#type) specifies the series type, such as Candle, Hilo, or HiloOpenClose.
-* [`xName`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#xname) maps the date field from the data source to the x-axis.
-* [`High`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#high) maps the highest price of the stock.
-* [`Low`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#low) maps the lowest price of the stock.
-* [`Open`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#open) maps the opening price of the stock.
-* [`Close`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#close) maps the closing price of the stock.
-* [`<e-stockchart-series-collection>`] and [`<e-stockchart-series>`] directives are used to define and render one or more series in the stock chart.
+The following table summarizes the key properties used in this example:
 
-## Step 8: Run the application
+| Properties | Description |
+| --- | --- |
+| [`primaryXAxis`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/index-default#primaryxaxis) | Defines the configuration of the horizontal (date-time) axis. |
+| [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#datasource) | Provides the financial data used to render the stock chart. |
+| [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#type) | Specifies the series type, such as `Candle`, `Hilo`, or `HiloOpenClose`. |
+| [`xName`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#xname) | Maps the date field from the data source to the x-axis. |
+| [`high`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#high) | Maps the highest price of the stock. |
+| [`low`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#low) | Maps the lowest price of the stock. |
+| [`open`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#open) | Maps the opening price of the stock. |
+| [`close`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#close) | Maps the closing price of the stock. |
+| [`volume`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#volume) | Maps the trading volume (rendered in the separate volume pane). |
+| [`<e-stockchart-series-collection>`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective) and [`<e-stockchart-series>`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective) | Directives used to define and render one or more series in the stock chart. |
+
+## Step 7: Run the application
 
 Run the application using the following command:
 
@@ -279,6 +279,24 @@ Run the application using the following command:
 npm start
 ```
 
-Open the generated local URL (for example, `http://localhost:4200/`) from terminal in the browser. The application displays the stock chart as shown below:
+Open the generated local URL (for example, `http://localhost:4200/`) from the terminal in the browser. The application displays a candle stock chart showing weekly price data from April to June 2012, as shown below:
 
-![Getting started](../images/stock-chart-getting-started.png) 
+![Candle stock chart showing weekly price data from April to June 2012](../images/stock-chart-getting-started.png)
+
+## Troubleshooting
+
+If the stock chart does not render as expected, check for these common issues:
+
+* **"No provider for DateTimeService" error**: Confirm that `DateTimeService` and `CandleSeriesService` are added to the component's `providers` array. Each stock chart series type requires its corresponding service.
+* **Chart not visible**: Verify that the `<ejs-stockchart>` element has a unique `id` and that the component's `selector` matches the root element used in `src/index.html` (commonly `<app-root>`).
+* **Date axis not displaying correctly**: Confirm that `primaryXAxis.valueType` is set to `DateTime` and that the `date` field in your data source is a valid JavaScript `Date` object.
+* **Data not displayed**: Check that the `xName`, `high`, `low`, `open`, `close`, and `volume` values match the field names in your data source exactly.
+* **Build errors**: Run `ng version` to confirm that Node.js, Angular CLI, and `@syncfusion/ej2-angular-charts` are on supported versions, and check the terminal output for the specific error.
+* **Port already in use**: If `npm start` fails because port `4200` is in use, run `ng serve --port 4201` (or another free port) instead.
+
+## See also
+
+* [Period Selector](period-selector.md) — Configure the period selector below the chart.
+* [Range Selector](range-selector.md) — Add a range selector for interactive zoom and pan.
+* [Technical Indicators](technical-indicators.md) — Add technical indicators such as RSI, MACD, and Bollinger Bands.
+* [Trendlines](trend-lines.md) — Add trendlines to the stock chart.

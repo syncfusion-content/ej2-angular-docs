@@ -17,7 +17,7 @@ This guide covers the most common installation errors, along with their causes a
 * Unable to install because another installation is in progress
 * Unable to install due to Controlled folder access
 
-## Unlocking the license installer using the trial key
+## Unlocking the License Installer using the Trial Key
 
 **Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript installer.
 
@@ -27,7 +27,7 @@ This guide covers the most common installation errors, along with their causes a
 
 **Suggested solution** <br /> Only a licensed unlock key can unlock a licensed installer. So, to unlock the Licensed installer, use the Licensed unlock key. To generate the licensed unlock key, refer to [this](https://www.syncfusion.com/kb/2326/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account) article.
 
-## License has expired
+## License has Expired
 
 **Error Message:** Your license for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio for JavaScript – EJ2 has been expired since {date}. Please renew your subscription and try again.
 
@@ -78,7 +78,7 @@ The following are possible causes of this error:
 
 4. Contact the sales team at sales@syncfusion.com for assistance.
 
-## Unable to install because of another installation
+## Unable to Install because of Another Installation
 
 **Error Message:** Another installation is in progress. You cannot start this installation without completing all other currently active installations. Click Cancel to end this installer, or click Retry after the current installation is complete to try again.
 ![license download](images/error5.png)
@@ -93,7 +93,7 @@ The following are possible causes of this error:
 
 ![license download](images/error6.png)
 
-## Unable to install due to controlled folder access
+## Unable to Install due to Controlled Folder Access
 
 ***Offline***
 

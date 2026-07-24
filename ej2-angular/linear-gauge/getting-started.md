@@ -123,7 +123,7 @@ export class AppComponent { }
     npm start
     ```
 
-    By default, the dev server opens at `http://localhost:4200/`.
+By default, the dev server opens at `http://localhost:4200/`.
 
 The following example renders a basic Linear Gauge.
 
@@ -148,11 +148,12 @@ The Linear Gauge component is segregated into individual feature-wise services. 
 
 Inject the services you need in the `providers` section of the `app.component.ts` file as shown below.
 
+The following example demonstrates injecting `GaugeTooltipService` to enable the tooltip on the Circular Gauge:
+
 ```typescript
 import { Component } from '@angular/core';
 import {
     LinearGaugeModule,
-    AnnotationsService,
     GaugeTooltipService
 } from '@syncfusion/ej2-angular-lineargauge';
 
@@ -160,81 +161,20 @@ import {
     imports: [LinearGaugeModule],
     standalone: true,
     selector: 'app-container',
-    providers: [AnnotationsService, GaugeTooltipService],
-    template: `<ejs-lineargauge id="gauge-container"></ejs-lineargauge>`
+    providers: [GaugeTooltipService],
+    template: `<ejs-lineargauge id="gauge-container" [tooltip]="tooltip"></ejs-lineargauge>`
 })
-export class AppComponent { }
+export class AppComponent {
+    public tooltip?: Object;
+    ngOnInit(): void {
+        this.tooltip = {
+            enable: true
+        };
+    }
+ }
 ```
 
 > Note: Inject only the services required for the features you use. Injecting all services is not required and can increase the bundle size slightly.
-
-## Add a gauge title
-
-A title can be added to the Linear Gauge component by setting the [`title`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGaugeModel#title-string) property.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs2" %}
-
-## Configure the axis range
-
-The range of the axis is configured using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#minimum-number) and [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#maximum-number) properties of the axis.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs3/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs3/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs3" %}
-
-### Add a unit suffix to axis labels
-
-To display the axis labels with a unit suffix such as `°C`, set the **{value}°C** pattern on the [`format`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/labelModel#format-string) property of the [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#labelstyle-labelmodel) object on the axis. The token `{value}` is replaced with the corresponding axis label value at runtime.
-
-### Set the pointer value
-
-To change the pointer value from the default, set the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property of the corresponding entry in the [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel) collection of the axis.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs4/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs4/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs4" %}
-
-## Update the pointer value dynamically
-
-The pointer value is updated in the following sample using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property of the entry in the [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel) collection of the axis. This example changes the value at runtime through a button click, which is useful for scenarios such as live data monitoring.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs5/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs5/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs5" %}
 
 ## Troubleshooting
 
@@ -256,5 +196,3 @@ The pointer value is updated in the following sample using the [`value`](https:/
 * [Events](./events)
 * [Accessibility](./accessibility)
 * [EJ1 API migration](./ej1-api-migration)
-* [Angular CLI documentation](https://angular.dev/tools/cli)
-* [Standalone components in Angular](https://angular.dev/guide/components/importing)

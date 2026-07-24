@@ -8,19 +8,36 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sparkline types in Angular Sparkline component
 
-Different types of shapes can be used to represent the sparkline. You can change the sparkline type by setting the type property. Sparkline supports the following types:
+# Sparkline Types in Angular Sparkline Component
 
-* Line
-* Column
-* Win-Loss
-* Pie
-* Area
+Different shapes can be used to visualize data in a Sparkline component. You can change the Sparkline type using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#type) property.
 
-The following code sample shows different types of sparkline.
+The Angular Sparkline component supports the following types:
 
-<!-- markdownlint-disable MD036 -->
+- Line
+- Column
+- Pie
+- WinLoss
+- Area
+
+## Change the Sparkline Type
+
+Set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#type) property to one of the supported Sparkline types (`Line`, `Column`, `Pie`, `WinLoss`, or `Area`).
+
+The following example demonstrates how to render an Area Sparkline chart by binding an array of `{ XValue, YValue }` data objects.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs15/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs15/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs15" %}
 
 **Line**
 

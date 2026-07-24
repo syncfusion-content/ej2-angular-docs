@@ -104,7 +104,7 @@ export class AppComponent { }
     ng serve --open
     ```
 
-    By default, the dev server opens at `http://localhost:4200/`.
+By default, the dev server opens at `http://localhost:4200/`.
 
 The following example renders a basic Circular Gauge.
 
@@ -119,6 +119,51 @@ The following example renders a basic Circular Gauge.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/circulargauge/getting-started-cs1" %}
+
+## Module injection
+
+The Circular Gauge component offers additional features through injectable services. To use these features, import and register the required services in the component's `providers` array.
+
+The following services enhance the Circular Gauge's functionality:
+
+* **AnnotationsService** - Enables adding annotations (text, shapes, or custom templates) to the Circular Gauge at specific positions. Inject this service to display additional information or labels within or around the Circular Gauge.
+* **GaugeTooltipService** - Enables the display of tooltips for pointers and ranges when the mouse hovers over them. Inject this service to show contextual details on user interaction.
+* **PrintService** - Enables printing the rendered Circular Gauge directly from the browser. Inject this service to use the [`print`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge#print) method.
+* **ImageExportService** - Enables exporting the rendered Circular Gauge as an image (PNG, JPEG, or SVG). Inject this service to use the [`export`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge#export) method.
+* **PdfExportService** - Enables exporting the rendered Circular Gauge as a PDF document. Inject this service to use the [`export`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge#export) method.
+
+These services should be injected into the `providers` section of the standalone component.
+
+The following example demonstrates injecting `GaugeTooltipService` to enable the tooltip on the Circular Gauge:
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { CircularGaugeModule, GaugeTooltipService } from '@syncfusion/ej2-angular-circulargauge';
+
+@Component({
+    imports: [CircularGaugeModule],
+    providers: [GaugeTooltipService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-circulargauge id="circular-container" [tooltip]="tooltip">
+        <e-axes>
+            <e-axis>
+                <e-pointers>
+                    <e-pointer value="70"></e-pointer>
+                </e-pointers>
+            </e-axis>
+        </e-axes>
+    </ejs-circulargauge>`
+})
+export class AppComponent implements OnInit {
+    public tooltip?: Object;
+    ngOnInit(): void {
+        this.tooltip = {
+            enable: true
+        };
+    }
+}
+```
 
 ## Set Pointer Value
 
@@ -158,5 +203,3 @@ Set a pointer value using the `value` property on a pointer. See the pointer API
 * [Internationalization](./internationalization)
 * [Accessibility](./accessibility)
 * [EJ1 API migration](./ej1-api-migration)
-* [Angular CLI documentation](https://angular.dev/tools/cli)
-* [Standalone components in Angular](https://angular.dev/guide/components/importing)

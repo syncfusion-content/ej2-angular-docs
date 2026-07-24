@@ -12,12 +12,12 @@ domainurl: ##DomainURL##
 
 The `Smart Paste Button` is a user interface component designed to simplify and improve the experience of pasting text into form fields. It comes with smart features such as automatic text formatting, validation, and integration with various form controls. It is especially useful in applications where users frequently paste text from other sources and where data consistency is important.
 
-This section explains how to create a simple Smart Paste Button and demonstrate the basic usage of the Smart Paste Button module in an Angular environment.
+This section explains how to create a simple Smart Paste Button and demonstrates its basic usage in an Angular environment.
 
 ## Prerequisites
 
 * [OpenAI](https://github.com/syncfusion/smart-ai-samples/blob/master/typescript/README.md#openai) or [Azure OpenAI Account](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource)
-* [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement/)
+* [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ The list of dependencies required to use the SmartPasteButton module in your app
 
 ## Setup Angular environment
 
-You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install Angular CLI, use the following command.
 
 ```
 npm install -g @angular/cli
@@ -40,7 +40,7 @@ npm install -g @angular/cli
 
 ## Create an Angular application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI command.
 
 ```
 ng new my-app
@@ -49,15 +49,15 @@ cd my-app
 
 ## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Button package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+2. Angular compatibility compiler (Angular's legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36`) have been moved to the Ivy distribution to support the Angular [Ivy](https://angular.dev/tools/libraries/angular-package-format) rendering engine, and the packages are compatible with Angular version 12 and above. To download the package, use the following command.
 
 Add [`@syncfusion/ej2-angular-buttons`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/27.1.50) package to the application.
 
@@ -67,7 +67,7 @@ npm install @syncfusion/ej2-angular-buttons --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package, use the following command.
 
 Add [`@syncfusion/ej2-angular-buttons@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-buttons/v/27.1.50-ngcc) package to the application.
 
@@ -81,11 +81,11 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 @syncfusion/ej2-angular-buttons:"27.1.50-ngcc"
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
+> Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Smart Paste Button component
 
-Modify the template in `app.component.ts` file to render the SmartPasteButtonModule module.
+Modify the template in the `app.component.ts` file to render the SmartPasteButtonModule module.
 
  ```typescript
 
@@ -109,12 +109,27 @@ export class AppComponent { }
 
 ## Adding CSS reference
 
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components can be applied using CSS or SASS files from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages), CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, see the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
+
+This example uses the `Tailwind 3` theme for the Smart Paste Button from the theme package. To install the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-tailwind3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
 Add Smart Paste Button component's styles as given below in `style.css`.
 
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-```
+{% tabs %}
+{% highlight css tabtitle="style.css" %}
+
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/button/index.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Running the application
 
@@ -326,7 +341,7 @@ import { generateText } from "ai"
 import { createAzure } from '@ai-sdk/azure';
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
 
-//Replace API_KEY and resourceName
+// Replace API_KEY and resourceName
 const azure = createAzure({
     resourceName: 'ej2smart',
     apiKey: 'API_KEY',
@@ -337,7 +352,7 @@ const google = createGoogleGenerativeAI({
     apiKey: "API_KEY"
 });
  
-const aiModel = azure('e.g: gpt4-o'); // update the model here
+const aiModel = azure('gpt-4o'); // Replace with the deployment name of your Azure OpenAI model
 
 export async function getAzureChatAIRequest(options) {
     try {
@@ -369,7 +384,7 @@ bootstrapApplication(AppComponent, appConfig)
 {% endhighlight %}
 {% endtabs %}
   
-Below is the featured sample output:
+The following is the output of the featured sample:
 
 ![Angular-smart-paste-button](images/smartpaste.gif)
 

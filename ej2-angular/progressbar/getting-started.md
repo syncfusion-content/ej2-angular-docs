@@ -29,6 +29,7 @@ Below is the list of minimum dependencies required to use the Progress Bar compo
 ```javascript
     |-- @syncfusion/ej2-angular-progressbar
       |-- @syncfusion/ej2-base
+      |-- @syncfusion/ej2-data
       |-- @syncfusion/ej2-svg-base
 ```
 
@@ -127,7 +128,7 @@ npm install @syncfusion/ej2-angular-progressbar@32.1.19-ngcc
 Open `src/app/app.ts` (Angular 21) or `src/app/app.component.ts` (Angular 19 and below) in your editor, then add the `ejs-progressbar` selector to the component's `template`. The example below uses the inline `template` string approach.
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
 
 @Component({
@@ -138,43 +139,17 @@ import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar';
     selector: 'app-root',
     // specifies the template string for the Progress Bar component
     template: `<ejs-progressbar id='percentage' value=50 type='Linear'></ejs-progressbar>`,
-    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent { }
 ```
 
-Key properties of the `<ejs-progressbar>` selector:
+## Run the application
 
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `value` | `number` | The current progress value (between `min` and `max`). |
-| `type` | `progresstype` | The Progress Bar type: `Linear` or `Circular`. |
-| `minimum ` | `number` | The minimum value. Defaults to `0`. |
-| `maximum ` | `number` | The maximum value. Defaults to `100`. |
-| `height` | `string` | The height of the Progress Bar (e.g., `'50px'`). |
-| `width` | `string` | The width of the Progress Bar (e.g., `'100%'`). |
-
-Now run the application in the browser using the following command.
+After the configuration is complete, run the following command to launch the development server and open the application in your default browser:
 
 ```bash
-ng serve
+npm start
 ```
-
-After the development server starts, open your browser and navigate to `http://localhost:4200/`. You should see the basic Progress Bar component displayed on the page.
-
-The following example demonstrates a basic Progress Bar component:
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/getting-started-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/getting-started-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/progressbar/getting-started-cs1" %}
 
 ## Module injection
 
@@ -197,13 +172,36 @@ import { ProgressBarModule, ProgressAnnotationService } from '@syncfusion/ej2-an
     providers: [ProgressAnnotationService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-progressbar id='percentage'></ejs-progressbar>`,
+    template: `
+            <ejs-progressbar id="percentage" type="Circular" [value]="75">
+                <e-progressbar-annotations>
+                    <e-progressbar-annotation
+                        content="<div style='font-size:18px;font-weight:bold;'>75%</div>">
+                    </e-progressbar-annotation>
+                </e-progressbar-annotations>
+            </ejs-progressbar>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent { }
 ```
 
 > **Note:** For basic Progress Bar functionality without annotations, no service injection is required. The annotation feature is optional and should only be injected when needed.
+
+## Basic Progress Bar
+
+The following example demonstrates a basic Progress Bar component:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/progressbar/getting-started-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/progressbar/getting-started-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/progressbar/getting-started-cs1" %}
 
 ## Troubleshooting
 
@@ -213,9 +211,8 @@ export class AppComponent { }
 
 ## See also
 
-- [Progress Bar types](types.md)
-- [Progress Bar customization](customization.md)
-- [Progress Bar events](events.md)
-- [Progress Bar API reference](api.md)
+- [Progress Bar types](types)
+- [Progress Bar customization](customization)
+- [Progress Bar events](events)
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with the Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio, and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)

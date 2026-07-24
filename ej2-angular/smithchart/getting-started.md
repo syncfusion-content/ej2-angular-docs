@@ -122,8 +122,6 @@ npm add @syncfusion/ej2-angular-charts@32.1.19-ngcc
 
 Update the contents of `src/app/app.ts` (or `src/app/app.component.ts` for Angular 19 and below) as shown below. The component imports `SmithchartModule` from `@syncfusion/ej2-angular-charts`, declares the selector `app-root`, and renders an empty Smith Chart in the template.
 
-> `ViewEncapsulation.None` is recommended for Syncfusion components so that the component's internal styles are not scoped away.
-
 ```typescript
 
 import { SmithchartModule } from '@syncfusion/ej2-angular-charts';
@@ -136,7 +134,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     // Specifies the template string for the Smith Chart component
-    template: `<ejs-smithchart style='display: block;' id='container'></ejs-smithchart>`,
+    template: `<ejs-smithchart id='container'></ejs-smithchart>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent  { }
@@ -149,7 +147,7 @@ The default `index.html` (located at `src/index.html`) already contains an `<app
 <app-root></app-root>
 ```
 
-After saving the file, the development server (`npm start`) automatically reloads. The following example shows a basic Smith Chart rendered with the code above.
+The following example shows a basic Smith Chart rendered with the code above.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,6 +160,14 @@ After saving the file, the development server (`npm start`) automatically reload
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs1" %}
+
+## Run the application
+
+After the configuration is complete, run the following command to launch the development server and open the application in your default browser:
+
+```bash
+npm start
+```
 
 ## Module Injection
 
@@ -183,7 +189,7 @@ import { SmithchartModule, SmithchartLegendService, TooltipRenderService } from 
     ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-smithchart style='display: block;' id='container' height='350px'></ejs-smithchart>`,
+    template: `<ejs-smithchart id='container'></ejs-smithchart>`,
     encapsulation: ViewEncapsulation.None,
     providers: [ SmithchartLegendService, TooltipRenderService ]
 })
@@ -218,98 +224,6 @@ Update the `app.component.ts` file as shown below to add the series data and tem
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs2" %}
-
-## Add a title to the Smith Chart
-
-The [`title`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartModel#title) API adds a title to the Smith Chart. Use the [`text`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/titleModel#text) API to set the title text, and the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/titleModel#visible) API to toggle the title's visibility. To add a subtitle and customize text styles, see the [Title and Subtitle](./title-subtitle) topic.
-
-Update `app.component.ts` as shown in the following example to add a title.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs3/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs3/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs3" %}
-
-## Enable markers in the Smith Chart
-
-Use the series [`marker`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesModel#marker) property to configure series markers. To display a marker for a particular series, set [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesMarkerModel#visible) to `true` on the marker's options. The following sample enables the marker for the first series only.
-
-Update `app.component.ts` to bind a `marker` object to the first series.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs4/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs4/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs4" %}
-
-For additional marker customization options (shape, size, border, fill), refer to the [Smith Chart marker API](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesMarkerModel).
-
-## Enable data labels on Smith Chart markers
-
-Use the marker [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesMarkerModel#datalabel) property to configure marker data labels. To display a data label for a particular series marker, set [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesDatalabelModel#visible) to `true` on the marker's `dataLabel` options. The following sample enables data labels for the first series.
-
-Update `app.component.ts` as shown in the following example.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs5/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs5/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs5" %}
-
-## Enable the legend for the Smith Chart
-
-The Smith Chart's legend denotes the corresponding series. To enable the legend, inject the `SmithchartLegendService` and set the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartModel#legendsettings) [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartLegendSettingsModel#visible) property to `true`. The series name can be customized using the series [`name`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesModel#name) property. You can also configure the legend's position, alignment, and shape using additional `legendSettings` options; see the [Smith Chart legend API](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartLegendSettingsModel) for details.
-
-The following example shows how to enable the legend for the Smith Chart.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs6/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs6/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs6" %}
-
-## Enable the tooltip for Smith Chart series
-
-The Smith Chart's tooltip shows the values of the hovered data point. To enable the tooltip, inject the `TooltipRenderService` and set the series [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesModel#tooltip) [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesTooltipModel#visible) property to `true`. For additional customization options such as tooltip template and format, refer to the [Smith Chart tooltip API](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesTooltipModel).
-
-The following example shows how to enable the tooltip for the Smith Chart series collection.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs7/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs7/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs7" %}
 
 ## Troubleshooting
 

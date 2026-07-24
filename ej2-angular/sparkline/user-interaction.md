@@ -12,25 +12,23 @@ domainurl: ##DomainURL##
 
 Sparkline has two user interaction features: tooltip and tracker line.
 
-## Tooltip
+## Enable Tooltip for Sparkline
 
-The sparkline provides options to display details about values of data points through tooltips when hovering the mouse over data point. To use tooltip in sparkline, inject the `SparklineTooltip` module to sparkline using the inject method.
-
-The following code example shows enabling tooltip for sparkline with format.
+The Sparkline displays a tooltip with point details when the mouse hovers over it. Enable the tooltip by setting the `visible` property to `true` on the [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#tooltipsettings) object and by injecting `SparklineTooltipService` into the component's `providers` array. Use the `format` property to customize the tooltip text (for example, `'${XValue} : ${YValue}'`).
 
 [`app.component.ts`]
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs35/src/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs16/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs35/src/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs35" %}
+{% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs16" %}
 
 ### Tooltip customization
 

@@ -123,7 +123,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Web Inst
 
 ![license download](images/u2.png)
 
-### Option 2: Uninstall the JavaScript–EJ2 from Windows control panel
+### Option 2: Uninstall the JavaScript–EJ2 from Windows Control Panel
 
 You can uninstall all installed products by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> {version}** entry (element 1 in the screenshot below) from the Windows Control Panel. Alternatively, you can uninstall only JavaScript – EJ2 by selecting the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for JavaScript – EJ2 {version}** entry (element 2 in the screenshot below).
 ![license download](images/u3.png)

@@ -15,14 +15,14 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript - EJ2 installer 
 * Trial Installer
 * Licensed Installer
 
-## Download the trial version
+## Download the Trial Version
 
 Our 30-day trial can be downloaded in two ways.
 
-* Download free trial setup
-* Start trials if using components [through npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)
+* Download Free Trial Setup
+* Start Trials if using components [through npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)
 
-### Download free trial setup
+### Download Free Trial Setup
 
 1. You can evaluate our 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and select the JavaScript platform.
 
@@ -62,7 +62,7 @@ Our 30-day trial can be downloaded in two ways.
 
      ![start trial download MAC installer](images/mac-installer.png)
 
-**Start trials if using components through [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)**
+**Start Trials if using components through [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)**
 
 You should initiate an evaluation if you have already obtained our components through [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)
 
@@ -82,7 +82,7 @@ You should initiate an evaluation if you have already obtained our components th
 
 5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/start-trials) page.
 
-### Download the license version
+### Download the License Version
 
 1. Syncfusion<sup style="font-size:70%">&reg;</sup> licensed products are available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 

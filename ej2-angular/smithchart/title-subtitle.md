@@ -10,21 +10,23 @@ domainurl: ##DomainURL##
 
 # Title subtitle in Angular Smithchart component
 
-## Enable title
+## Add a title to the Smith Chart
 
-Title and subtitle is used to depicts the information about the data plotted in the smithchart. You can set the title and subtitle of the smithchart using the [`text`] property in title and subtitle. By default visibility of the title as well as subtitle is enabled. You need to set simply text for title and subtitle in your sample as like below.
+The [`title`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartModel#title) API adds a title to the Smith Chart. Use the [`text`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/titleModel#text) API to set the title text, and the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/titleModel#visible) API to toggle the title's visibility. To add a subtitle and customize text styles, see the [Title and Subtitle](./title-subtitle) topic.
+
+Update `app.component.ts` as shown in the following example to add a title.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs30/src/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs30/src/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs30" %}
+
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs3" %}
 
 ## Title trim
 

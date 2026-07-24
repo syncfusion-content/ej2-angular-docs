@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Installing Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer
 
-## Step-by-step installation
+## Step-by-Step Installation
 
 The steps below show how to install JavaScript Linux installer.
 

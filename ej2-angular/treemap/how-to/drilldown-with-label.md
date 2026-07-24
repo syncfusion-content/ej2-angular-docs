@@ -40,7 +40,23 @@ export class TreemapDrillDownComponent {
 };
 ```
 
-**Step 2**:
+## Add Labels
+
+Labels can be added to show additional information about the items in the TreeMap. By default, label visibility is `true`. This can be customized using the [showLabels](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#showlabels) property in [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs57/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs57/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs57" %}
+
+## Hide Default Labels
 
 Add the label template in the `leafItemSettings` options, and then set the `showLabels` property to **false** to hide another labels and show only label template.
 

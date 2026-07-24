@@ -123,75 +123,23 @@ The leaf level items of the TreeMap can be customized using [leafItemSettings](h
 
 The TreeMap component is divided into individual feature-based modules. To use a specific feature, you must inject its service provider. For standalone components, register services in the `providers` array of the component. For NgModule-based apps, add them to the `providers` array of `AppModule`. The available services are listed below.
 
-* TreeMapHighlightService - Inject this provider to use highlight feature.
-* TreeMapSelectionService - Inject this provider to use selection feature.
-* TreeMapLegendService - Inject this provider to use legend feature.
-* TreeMapTooltipService - Inject this provider to use tooltip feature.
+* `TreeMapHighlightService` - Inject this provider to use highlight feature.
+* `TreeMapSelectionService` - Inject this provider to use selection feature.
+* `TreeMapLegendService` - Inject this provider to use legend feature.
+* `TreeMapTooltipService` - Inject this provider to use tooltip feature.
 
-## Apply Color Mapping
+```typescript
+import { Component, ViewEncapsulation } from '@angular/core';
+import { TreeMapModule, TreeMapHighlightService, TreeMapSelectionService, TreeMapLegendService, TreeMapTooltipService } from '@syncfusion/ej2-angular-treemap';
 
-The color mapping feature supports customization of item colors based on the underlying value of each item received from the bound data source. Specify the field name from which the values have to be compared for the item in the [equalColorValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap#equalcolorvaluepath) or [rangeColorValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap#rangecolorvaluepath) property.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs16/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs16/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs16" %}
-
-## Enable Legend
-
-The legend summarizes the colors used to render the TreeMap items. You can show a legend by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettingsModel#visible) property to `true` in the [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap#legendsettings) object and by injecting the `TreeMapLegendService` provider.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs56/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs56/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs56" %}
-
-## Add Labels
-
-Labels can be added to show additional information about the items in the TreeMap. By default, label visibility is `true`. This can be customized using the [showLabels](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#showlabels) property in [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel).
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs57/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs57/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs57" %}
-
-## Enable Tooltip
-
-The tooltip is useful when labels cannot display information due to space constraints. Tooltip can be enabled by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel#visible) property to `true` in the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel) object and by injecting the `TreeMapTooltipService` provider.
-
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs58/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs58/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs58" %}
+@Component({
+    imports: [TreeMapModule],
+    standalone: true,
+    selector: 'app-root',
+    providers: [TreeMapHighlightService, TreeMapSelectionService, TreeMapLegendService, TreeMapTooltipService],
+})
+export class AppComponent { }
+```
 
 ## Troubleshooting
 

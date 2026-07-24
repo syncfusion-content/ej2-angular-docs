@@ -4,7 +4,6 @@ import { SankeyAllModule } from '@syncfusion/ej2-angular-charts';
 import {
   SankeyTooltipService,
   SankeyLegendService,
-  SankeyExportService
 } from '@syncfusion/ej2-angular-charts';
 import { Browser } from '@syncfusion/ej2-base';
 
@@ -12,7 +11,7 @@ import { Browser } from '@syncfusion/ej2-base';
   standalone: true,
   selector: 'app-container',
   imports: [SankeyAllModule],
-  providers: [SankeyTooltipService, SankeyLegendService, SankeyExportService],
+  providers: [SankeyTooltipService, SankeyLegendService],
   template: `
     <div class="control-pane">
       <div class="control-section" id="sankey-container">

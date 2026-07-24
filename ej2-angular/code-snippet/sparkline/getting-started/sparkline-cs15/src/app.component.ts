@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     providers: [SparklineTooltipService],
     standalone: true,
     selector: 'app-container',
-    template: `<ejs-sparkline id='container' width='400px' height='350px' [dataSource]="data" xName="XValue" yName="YValue" type="Area">
+    template: `<ejs-sparkline id='container' width='400px' height='350px' [dataSource]="data" xName="XValue" yName=" YValue" type="Area">
     </ejs-sparkline>`
 })
 export class AppComponent {

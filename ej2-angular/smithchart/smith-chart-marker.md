@@ -14,23 +14,25 @@ domainurl: ##DomainURL##
 
 Markers and Datalabels are used to provide information about the data points in the series. You can add a shape to adorn each data point. By default marker and datalabel both are disabled in smithchart. You can enable both of them by setting visible property as true in marker and datalabel settings
 
-## Marker
+## Enable markers in the Smith Chart
 
-Default visibility of marker is false. You can enable the marker by setting property visible as true in marker settings. This will add marker for each point in the series. Using marker setting, you can customize marker differently for each series in smithchart.
+Use the series [`marker`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesModel#marker) property to configure series markers. To display a marker for a particular series, set [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesMarkerModel#visible) to `true` on the marker's options. The following sample enables the marker for the first series only.
+
+Update `app.component.ts` to bind a `marker` object to the first series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs21/src/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs21/src/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs21" %}
 
-**Marker Customization**
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs4" %}
+
+## Marker Customization
 
 Using marker settings in series, you can customize the marker for each series differently. Using marker settings, you can customize following properties differently for each series in the smithchart.
 
@@ -53,23 +55,25 @@ Using marker settings in series, you can customize the marker for each series di
   
 {% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs22" %}
 
-## Datalabels
+## Enable data labels on Smith Chart markers
 
-By default, datalabel is disabled. You can enable the datalabel by setting property visible as true in datalabel settings. For each point in series, data label is created. Datalabel for each series can be customized differently using datalabel settings.
+Use the marker [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesMarkerModel#datalabel) property to configure marker data labels. To display a data label for a particular series marker, set [`visible`](https://ej2.syncfusion.com/angular/documentation/api/smithchart/smithchartSeriesDatalabelModel#visible) to `true` on the marker's `dataLabel` options. The following sample enables data labels for the first series.
+
+Update `app.component.ts` as shown in the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs23/src/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs23/src/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs23" %}
 
-**Datalabel customization**
+{% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs5" %}
+
+## Datalabel customization
 
 Using datalabel settings in marker, you can customize the datalabel for each series differently. In datalabel, you can customize the following properties differently for each series.
 
