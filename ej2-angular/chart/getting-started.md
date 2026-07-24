@@ -112,53 +112,19 @@ This section explains how to create a simple chart by binding data, configuring 
 
 The following example demonstrates how to visualize monthly sales data using a line chart. It also shows how to configure the horizontal axis and map data fields using the [primaryXAxis](https://ej2.syncfusion.com/angular/documentation/api/chart/index-default#primaryxaxis), [dataSource](https://ej2.syncfusion.com/angular/documentation/api/chart/series#datasource), [xName](https://ej2.syncfusion.com/angular/documentation/api/chart/series#xname), and [yName](https://ej2.syncfusion.com/angular/documentation/api/chart/series#yname) properties.
 
-Update the `src/app/app.ts` file as follows:
+Update the src/app/app.ts file as follows:
 
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { ChartModule, CategoryService, LineSeriesService } from '@syncfusion/ej2-angular-charts';
-import { AxisModel } from '@syncfusion/ej2-charts';
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/chart/chart-data-cs1/src/app.ts %}
+{% endhighlight %}
 
-@Component({
-    selector: 'app-root',
-    standalone: true,
-    imports: [ChartModule],
-    providers: [CategoryService, LineSeriesService],
-    template: `
-        <ejs-chart
-            id="chart-container"
-            [primaryXAxis]='primaryXAxis'
-        >
-            <e-series-collection>
-                <e-series
-                    [dataSource]='chartData'
-                    type='Line'
-                    xName='month'
-                    yName='sales'
-                >
-                </e-series>
-            </e-series-collection>
-        </ejs-chart>
-    `
-})
-export class App implements OnInit {
-    public primaryXAxis?: AxisModel;
-    public chartData?: Object[];
-    ngOnInit(): void {
-        this.chartData = [
-            { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
-            { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
-            { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
-            { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },
-            { month: 'Sep', sales: 38 }, { month: 'Oct', sales: 30 },
-            { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }
-        ];
-        this.primaryXAxis = {
-            valueType: 'Category'
-        };
-    }
-}
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/chart-data-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/chart-data-cs1" %}
 
 The chart renders a line with the month names (Jan–Dec) on the horizontal axis and the sales values on the vertical axis. Hovering over a data point displays a tooltip with the corresponding month and sales value.
 
@@ -197,6 +163,6 @@ If the chart does not render as expected, check for these common issues:
 
 ## See also
 
-* [Chart Axis](chart-axis.md) — Customize the chart axes.
-* [Chart Series Types](./series/series-types/area-types/area.md) — Explore other series types such as Column, Bar, and Area.
-* [Data Binding](./data-binding/working-with-data.md) — Bind the chart to remote data sources.
+* [Chart Axis](chart-axis) — Customize the chart axes.
+* [Chart Series Types](./series/series-types/area-types) — Explore other series types such as Column, Bar, and Area.
+* [Data Binding](./data-binding/working-with-data) — Bind the chart to remote data sources.

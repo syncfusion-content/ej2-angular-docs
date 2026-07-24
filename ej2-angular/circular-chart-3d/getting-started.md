@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Angular 3D Circular Chart component | Syncfusion
 description:  Check out and learn about Getting Started with Angular 3D Circular Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting Started 
+control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -18,7 +18,7 @@ This section explains the steps required to create a simple [Angular 3D Circular
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
 ## Setup Angular Environment
 
@@ -132,18 +132,12 @@ import { CircularChart3DAllModule } from '@syncfusion/ej2-angular-charts';
 @Component({
     imports: [CircularChart3DAllModule],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     // specifies the template string for the 3D Circular Chart component
     template: `<ejs-circularchart3d id='chart-container'></ejs-circularchart3d>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent { }
-```
-
-Now use the `app-container` selector in the `index.html` file instead of the default `<app-root>`:
-
-```html
-<app-container></app-container>
 ```
 
 Use the `ng serve` command to run the application in the browser:
@@ -178,15 +172,16 @@ The 3D Circular Chart renders a 3D pie with one slice for each data point. Hover
 
 If the 3D Circular Chart does not render as expected, check for these common issues:
 
-* **Chart not visible**: Verify that `ViewEncapsulation.None` is set on the component, that the `id` on `<ejs-circularchart3d>` is unique, and that the `selector` matches the root element in `index.html`.
+* **Chart not visible**: Verify that `ViewEncapsulation.None` is set on the component, that the `id` on `<ejs-circularchart3d>` is unique, and that the `selector` matches the root element in `index.html` (commonly `<app-root>`).
 * **3D scene looks flat**: Check that `<e-circularchart3d-series>` is wrapped in `<e-circularchart3d-series-collection>` and that the 3D rotation/perspective settings are configured.
 * **Data not displayed**: Verify that the `xName` and `yName` values match the field names in the data source exactly.
 * **Build errors**: Run `ng version` to confirm that Node.js, Angular CLI, and `@syncfusion/ej2-angular-charts` are on supported versions.
+* **Port already in use**: If `ng serve` fails because port `4200` is in use, run `ng serve --port 4201` (or another free port) instead.
 
 ## See also
 
-* [Pie, Donut Chart](pie-donut-chart.md) — Configure the pie and donut chart types.
-* [Legend](legend.md) — Configure the 3D Circular Chart legend.
-* [Data Label](data-label.md) — Customize the data labels on the slices.
-* [Tooltip](tooltip.md) — Customize the 3D Circular Chart tooltip.
-* [Title and Subtitle](title-and-subtitle.md) — Add a title and subtitle to the chart.
+* [Configure the pie and donut chart types](pie-donut-chart)
+* [Configure the 3D Circular Chart legend](legend)
+* [Customize the data labels on the slices](data-label)
+* [Customize the 3D Circular Chart tooltip](tooltip)
+* [Add a title and subtitle to the chart](title-and-subtitle)

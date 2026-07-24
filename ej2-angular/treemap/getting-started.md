@@ -71,7 +71,7 @@ import { TreeMapAllModule } from '@syncfusion/ej2-angular-treemap';
 @Component({
     imports: [TreeMapAllModule],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     // specifies the template string for the treemap component
     template: `<ejs-treemap id='treemap-container'></ejs-treemap>`,
     encapsulation: ViewEncapsulation.None
@@ -80,13 +80,9 @@ export class AppComponent { }
 
 ```
 
-Now use the `app-container` selector in `index.html` instead of the default content.
+## Run the application
 
-```html
-<app-container></app-container>
-```
-
-Run the application with:
+Run the following command to launch the development server and open the application in your default browser:
 
 ```bash
 npm start
@@ -149,12 +145,12 @@ export class AppComponent { }
 
 ## See also
 
-* [Color Mapping](color-mapping.md) - Learn about equal, range, and desaturated color mapping modes.
-* [Data Label](data-label.md) - Customize label templates and positions.
-* [Levels](levels.md) - Render hierarchical data with multiple levels.
-* [Drilldown](drilldown.md) - Enable drill-down interaction on levels.
-* [Legend](legend.md) - Configure legend items, modes, and templates.
-* [Tooltip](tooltip.md) - Build custom tooltip templates.
-* [Print and Export](print-and-export.md) - Export the TreeMap to PDF or image formats.
-* [Selection and Highlight](selection-and-highlight.md) - Configure selection and highlight behavior.
-* [Accessibility](accessibility.md) - Make the TreeMap accessible to assistive technologies.
+* [Learn about equal, range, and desaturated color mapping modes](color-mapping)
+* [Customize label templates and positions](data-label)
+* [Render hierarchical data with multiple levels](levels)
+* [Enable drill-down interaction on levels](drilldown)
+* [Configure legend items, modes, and templates](legend)
+* [Build custom tooltip templates](tooltip)
+* [Export the TreeMap to PDF or image formats](print-and-export)
+* [Configure selection and highlight behavior](selection-and-highlight)
+* [Make the TreeMap accessible to assistive technologies](accessibility)

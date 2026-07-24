@@ -18,7 +18,7 @@ This section explains the steps required to create a simple [Angular Sparkline](
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
 ## Setup Angular environment
 
@@ -117,7 +117,7 @@ npm install @syncfusion/ej2-angular-charts@32.1.19-ngcc
 
 ## Add Sparkline Component
 
-Open `src/app/app.component.ts` (Angular 19 and below) or `src/app/app.ts` (Angular 20+) and replace its contents with the following to render the Sparkline component (`ejs-sparkline`). Setting `width` and `height` ensures the Sparkline is visible; without them and without a `dataSource`, an empty SVG is rendered.
+Open `src/app/app.component.ts` (Angular 19 and below) or `src/app/app.ts` (Angular 20+) and replace its contents with the following to render the Sparkline component. 
 
 ```typescript
 import { SparklineModule } from '@syncfusion/ej2-angular-charts';
@@ -126,33 +126,18 @@ import { Component } from '@angular/core';
 @Component({
     imports: [SparklineModule],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     // specifies the template string for the Sparkline component
     template: `<ejs-sparkline id='sparkline-container'></ejs-sparkline>`,
-    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent { }
 ```
 
-The component's `selector` (`app-container` in this example) must match the element used in `src/index.html` so the root component mounts correctly.
+## Module injection
 
-```html
-<app-container></app-container>
-```
+Sparkline features are provided by optional services. To enable a feature, register its service either in the application module `providers` (module-based applications) or in a standalone component's `providers` array. Relevant services include:
 
-Run the development server with `ng serve`. Alternatively, `npm start` works if a `start` script is configured in `package.json`.
-
-```bash
-npm start
-```
-
-The example above shows a basic Sparkline. Because no [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#datasource) is specified, the Sparkline renders an empty SVG element. To render a Sparkline, provide a `dataSource` (an array of numbers or an array of objects) and map fields using [`xName`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#yname). For example, when using an array of objects such as `{ x: 'Jan', y: 10 }`, set `xName='x'` and `yName='y'`.
-
-## Injecting Sparkline Services
-
-Sparkline features are provided by optional services. To enable a feature, register its service either in the application module `providers` (module-based applications) or in a standalone component's `providers` array. The available service is:
-
-- `SparklineTooltipService` - Enables tooltip support for the Sparkline.
+- `SparklineTooltipService` - Inject this provider to enable tooltip support for the Sparkline.
 
 The following example demonstrates enabling tooltip support. Import `SparklineTooltipService` from `@syncfusion/ej2-angular-charts` and add it to the component's `providers` array.
 
@@ -165,13 +150,9 @@ import { Component } from '@angular/core';
     standalone: true,
     selector: 'app-container',
     providers: [SparklineTooltipService],
-    template: `<ejs-sparkline id='sparkline-container' [tooltipSettings]='tooltipSettings'></ejs-sparkline>`
+    template: `<ejs-sparkline id='sparkline-container'></ejs-sparkline>`
 })
-export class AppComponent {
-  public tooltipSettings: Object = {
-        enable: true
-  };
- }
+export class AppComponent {}
 ```
 
 ## Bind data source to Sparkline
@@ -190,6 +171,14 @@ The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/sparklin
   
 {% previewsample "page.domainurl/samples/sparkline/getting-started/sparkline-cs14" %}
 
+##  Run the application
+
+Run the development server with `ng serve`. Alternatively, `npm start` works if a `start` script is configured in `package.json`.
+
+```bash
+npm start
+```
+
 ## Troubleshooting
 
 - **`ejs-sparkline is not a known element` at build time** — `SparklineModule` is not imported into the standalone component. Add `imports: [SparklineModule]` to the component's `@Component` decorator.
@@ -199,18 +188,18 @@ The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/sparklin
 - **Build fails on Angular 20+ with `app.component.ts` not found** — The CLI generates `src/app/app.ts` (no `.component.` suffix) from Angular 20 onwards. Rename references in the steps above to `src/app/app.ts`, `app.html`, and `app.css`.
 - **`ejs-sparkline` selector is unrecognized after upgrade** — Stale module references after upgrading `@syncfusion/ej2-angular-charts`. Re-run `ng add @syncfusion/ej2-angular-charts` to refresh schematics, then restart the dev server.
 
-## See Also
+## See also
 
-- [Sparkline Dimensions](sparkline-dimension.md)
-- [Sparkline Types](sparkline-types.md)
-- [Axis Customization](axis-customization.md)
-- [Special Points Customization](special-points-customization.md)
-- [Range Band](range-band.md)
-- [Markers](marker.md)
-- [Data Labels](data-labels.md)
-- [User Interaction](user-interaction.md)
-- [Appearance](appearance.md)
-- [Localization](localization.md)
-- [Accessibility](accessibility.md)
-- [Migration from Essential JS 1](ej1-api-migration.md)
+- [Sparkline Dimensions](sparkline-dimension)
+- [Sparkline Types](sparkline-types)
+- [Axis Customization](axis-customization)
+- [Special Points Customization](special-points-customization)
+- [Range Band](range-band)
+- [Markers](marker)
+- [Data Labels](data-labels)
+- [User Interaction](user-interaction)
+- [Appearance](appearance)
+- [Localization](localization)
+- [Accessibility](accessibility)
+- [Migration from Essential JS 1](ej1-api-migration)
 - [Sparkline API Reference](https://ej2.syncfusion.com/angular/documentation/api/sparkline)

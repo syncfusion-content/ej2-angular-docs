@@ -126,28 +126,17 @@ This section explains how to create a simple map by binding the GeoJSON data and
 
 Update the `src/app/app.ts` file as follows:
 
-```typescript
-import { Component } from '@angular/core';
-import { MapsModule } from '@syncfusion/ej2-angular-maps';
-import { world_map } from './world-map';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/getting-started-cs1/src/app.component.ts %}
+{% endhighlight %}
 
-@Component({
-    selector: 'app-root',
-    standalone: true,
-    imports: [MapsModule],
-    template: `
-      <ejs-maps id='maps-container'>
-          <e-layers>
-              <e-layer [shapeData]='shapeData'>
-              </e-layer>
-          </e-layers>
-      </ejs-maps>
-    `
-})
-export class App {
-  public shapeData: object = world_map;
-}
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/getting-started-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/maps/default-map/getting-started-cs1" %}
 
 In this example:
 
@@ -177,9 +166,9 @@ If the map is not visible, the page is blank, or you receive errors, check the f
 
 ## See also
 
-- [Maps – Layers](layers.md): Render and configure multiple map layers.
-- [Maps – Markers](markers.md): Add markers, tooltips, and labels to the map.
-- [Maps – Data Labels](data-labels.md): Display labels on shapes and markers.
-- [Maps – Legend](legend.md): Add a legend to describe map colors.
-- [Maps – Map Providers](map-providers.md): Use Bing or Azure as the map tile provider.
-- [Maps – Populate Data](populate-data.md): Bind remote or JSON data to the map.
+- [Render and configure multiple map layers](layers)
+- [Add markers, tooltips, and labels to the map](markers.md)
+- [Display labels on shapes and markers.](data-labels.md) 
+- [Add a legend to describe map colors](legend.md)
+- [Use Bing or Azure as the map tile provider](map-providers.md)
+- [Bind remote or JSON data to the map](populate-data.md) 

@@ -147,7 +147,7 @@ The default `index.html` (located at `src/index.html`) already contains an `<app
 <app-root></app-root>
 ```
 
-After saving the file, the development server (`npm start`) automatically reloads. The following example shows a basic Smith Chart rendered with the code above.
+The following example shows a basic Smith Chart rendered with the code above.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,6 +160,14 @@ After saving the file, the development server (`npm start`) automatically reload
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/smithchart/getting-started/smithchart-cs1" %}
+
+## Run the application
+
+After the configuration is complete, run the following command to launch the development server and open the application in your default browser:
+
+```bash
+npm start
+```
 
 ## Module Injection
 
