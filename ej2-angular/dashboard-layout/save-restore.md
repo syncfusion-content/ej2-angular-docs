@@ -20,7 +20,7 @@ The current layout structure of the Dashboard Layout component can be obtained u
 The following sample demonstrates how to save and restore panel states using the serialize method. The Save button stores the current panel settings, while the Restore button applies the previously saved configuration.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/save-restore-cs1/src/app.component.ts %}
 {% endhighlight %}
 

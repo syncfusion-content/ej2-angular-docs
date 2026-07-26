@@ -17,7 +17,7 @@ The Angular Splitter component provides built-in expand and collapse functionali
 The following example demonstrates how to enable collapsible behavior:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/expand-collapse-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ Pane visibility can be controlled by programmatically using the Splitter’s pub
 The following example demonstrates using these methods:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/expand-collapse-method-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ To render a pane in a collapsed state on initial load, set the [collapsed](https
 In the following example, the second pane is rendered in a collapsed state:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/collapsed-cs1/src/app.component.ts %}
 {% endhighlight %}
 

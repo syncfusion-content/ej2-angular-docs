@@ -26,7 +26,7 @@ Then, create a value object to the `FormGroup` and each value will be the defaul
 The following example demonstrates how to use the reactive forms.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/reactive-validator-cs1/src/app.component.ts %}
 {% endhighlight %}
 

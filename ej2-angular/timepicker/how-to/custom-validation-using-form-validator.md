@@ -15,7 +15,7 @@ The client side validation takes place in the browser to avoid the waiting time 
 To achieve the client side validation in a TimePicker component by using `FormValidator` function. It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 

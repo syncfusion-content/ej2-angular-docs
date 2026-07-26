@@ -32,7 +32,7 @@ Local data can be represented in two ways as described below.
 The MultiSelect component supports loading arrays of primitive data such as strings and numbers. Here, both value and text field act the same.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.
 In the following example, `id` column and `sports` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -70,7 +70,7 @@ the appropriate nested columns should be mapped to the [fields](https://ej2.sync
 In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#value) field and [`text`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#text) field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -89,7 +89,7 @@ The MultiSelect component supports retrieval of data from remote data services w
 The following sample displays the first 6 contacts from "Customers" table of the `Northwind` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 

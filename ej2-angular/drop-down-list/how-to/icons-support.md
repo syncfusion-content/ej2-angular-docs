@@ -15,7 +15,7 @@ You can render **icons** to the list items by mapping the [iconCss](https://ej2.
 In the following sample, icon classes are mapped with `iconCss` field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/iconClass-cs1/src/app.component.ts %}
 {% endhighlight %}
 

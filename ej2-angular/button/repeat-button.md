@@ -78,7 +78,7 @@ The following example demonstrates repeat-click functionality with configurable 
 {% include code-snippet/button/repeat-button-cs2/src/app.component.html %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/repeat-button-cs2/src/app.component.ts %}
 {% endhighlight %}
 

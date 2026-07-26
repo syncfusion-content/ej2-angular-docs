@@ -15,7 +15,7 @@ RadioButton component can be enabled/disabled by giving [`disabled`](https://ej2
 The following example illustrates how to disable a radio button and the selected one is displayed using [`change`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#change) event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/radio-button/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 

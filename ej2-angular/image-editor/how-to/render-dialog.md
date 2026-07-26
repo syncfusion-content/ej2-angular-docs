@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Image Editor in Dialog Component in ##Platform_Name## Image Editor component | Syncfusion
+title: Dialog Component in ##Platform_Name## Image Editor | Syncfusion
 description: Learn here all about Open save in Syncfusion ##Platform_Name## Image Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Reder Image Editor in Dialog
@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 Rendering the Image Editor in a dialog involves displaying the image editor component within a modal dialog window, allowing users to edit images in a pop-up interface. This can be useful for maintaining a clean layout and providing a focused editing experience without navigating away from the current page.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/image-editor/default-cs47/src/app.component.ts %}
 {% endhighlight %}
 

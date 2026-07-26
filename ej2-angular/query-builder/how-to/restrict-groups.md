@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Restrict groups in Angular Query builder component
 
-Restrict group creation by defining the [`maxGroupCount`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#maxgroupcount) property. By default, the value is 5. In the following example, `maxGroupCount` is set to 2.
+Restrict group creation by defining the [`maxGroupCount`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#maxgroupcount) property. By default, the value is 5. In the following example, `maxGroupCount` is set to 2.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/default-cs7/src/app.component.ts %}
 {% endhighlight %}
 

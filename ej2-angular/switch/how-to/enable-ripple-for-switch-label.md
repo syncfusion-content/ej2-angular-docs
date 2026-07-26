@@ -15,7 +15,7 @@ By default, label with ripple effect is not available in Switch. You can achieve
 The following example illustrates how to enable ripple effect for labels in Switch component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/switch/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 

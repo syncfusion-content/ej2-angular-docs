@@ -18,7 +18,7 @@ DateRangePicker makes available for the UI customization which can be achieved w
 The following example disables the weekends of every month using `renderDayCell` event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ By default, first day of week in en-US is Sunday.
 In below example, first day of the week in the pop-up calendar is customized to Monday with help of the `firstDayOfWeek` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -56,7 +56,7 @@ With help of this, we can set the frequently used ranges as preset ranges for qu
 Here in following sample, you can choose the mostly using options from pre-defined ranges easily.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 

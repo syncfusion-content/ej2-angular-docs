@@ -21,7 +21,7 @@ Or else if you are trying to enter the invalid date, then the value will stay wi
 The following example demonstrates the DatePicker with strictMode `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ The following example demonstrates the `strictMode` as `false`. Here, it allows 
 If you are entering out-of-range or invalid date value, then the model value will be set to `out of range` date value or `null` respectively with highlighted  `error` class to indicates the date is out of range or invalid.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 

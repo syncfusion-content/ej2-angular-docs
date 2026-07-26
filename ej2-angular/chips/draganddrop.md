@@ -23,7 +23,7 @@ When dragging a chip, an indicator line appears between chips, showing the exact
 In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/chips/#allowdraganddrop) property is enabled.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/draganddrop/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="style.css" %}

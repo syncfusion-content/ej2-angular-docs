@@ -17,7 +17,7 @@ The following sample demonstrates the `Zoom` effect. The dialog opens with `Zoom
 ## Alert animation
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/alert-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ The following sample demonstrates the `Zoom` effect. The dialog opens with `Zoom
 ## Confirm animation
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/confirm-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ The following sample demonstrates the `Zoom` effect. The dialog opens with `Zoom
 ## Prompt animation
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/prompt-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 

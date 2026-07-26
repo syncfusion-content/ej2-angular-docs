@@ -15,6 +15,92 @@ This guide provides step-by-step instructions for setting up an Angular project 
 
 The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
+{% tabcontents %}
+
+{% tabcontent Syncfusion CLI %}
+
+## Prerequisites
+
+- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
+- Syncfusion CLI.
+
+## Install the Syncfusion CLI 
+
+Install the Syncfusion CLI globally using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+npm install -g @syncfusion/cli
+{% endhighlight %}
+{% endtabs %}
+
+## Create a new Angular application using Syncfusion CLI
+
+You can create a Angular application using the Syncfusion CLI. The CLI provides two ways to create a project:
+
+### Non-interactive mode
+
+Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf new syncfusion-angular-app --framework angular --template grid
+{% endhighlight %}
+{% endtabs %}
+
+In this mode, the project configuration is passed directly in the command. The above command creates a Angular CLI application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
+
+### Interactive mode
+
+Interactive mode guides you through the project creation process with step-by-step prompts.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf
+{% endhighlight %}
+{% endtabs %}
+
+When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular CLI application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Grid` component, select the following options:
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+√ Project name? ... syncfusion-angular-app
+√ Choose Framework: » Angular
+√ Choose Template: » Grid
+√ Choose Theme: » Material3
+√ Choose Style Format: » CSS
+√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no
+√ Install dependencies and start app now? ... no
+
+{% endhighlight %}
+{% endtabs %}
+
+The above selections generate a Angular CLI application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Grid` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
+
+## Run the project
+
+Once the project is created, navigate to the project directory and run the following commands in your terminal.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+cd syncfusion-angular-app
+npm install
+ng serve
+{% endhighlight %}
+{% endtabs %}
+
+The output will appear as follows:
+
+![Grid Component](./images/cli-grid.png)
+
+{% endtabcontent %}
+
+{% tabcontent Angular CLI %}
+
 ## Prerequisites
 
 - Install a supported [Node.js](https://nodejs.org/en) LTS release and npm (or another Node package manager) before continuing.
@@ -174,6 +260,10 @@ ng serve
 When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Grid. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ### Troubleshooting
 

@@ -170,7 +170,7 @@ ng serve
 The following example shows a basic Button component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -186,7 +186,7 @@ The following example shows a basic Button component.
 To use a flat button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button/index-default#cssclass) property to `e-flat`. Set the button text using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/button/index-default#content) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 

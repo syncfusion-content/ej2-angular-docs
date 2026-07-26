@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Autofill in Angular Auto complete component
 
-The AutoComplete supports the autofill behavior with the help of [`autofill`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#autofill) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. Suppose, if no matches found then, AutoComplete doesn't suggest any item.
+The AutoComplete supports the autofill behavior with the help of [`autofill`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#autofill) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. Suppose, if no matches found then, AutoComplete doesn't suggest any item.
 
 In the below sample, showcase that how to work `autofill` with AutoComplete.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 

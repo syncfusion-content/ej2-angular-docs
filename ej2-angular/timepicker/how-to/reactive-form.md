@@ -22,7 +22,7 @@ For more details about Reactive Forms refer: [`https://angular.io/guide/reactive
 The following example demonstrates how to use the reactive forms.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/reactive-validator-cs1/src/app.component.ts %}
 {% endhighlight %}
 

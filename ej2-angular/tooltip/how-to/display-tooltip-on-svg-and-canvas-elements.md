@@ -35,7 +35,7 @@ Create a canvas circle element and use the following code snippet to render the 
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/svg-canvas-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

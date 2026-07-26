@@ -169,7 +169,7 @@ npm start
 The following example demonstrates a basic Avatar component with initials:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/avatar/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

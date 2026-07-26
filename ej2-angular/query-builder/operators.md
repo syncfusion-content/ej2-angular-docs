@@ -39,7 +39,7 @@ Restrict the available operators for a specific column using the [`operators`](h
 In the following example, the `EmployeeID` number column is restricted to only **Equal**, **Not Equal**, **In**, and **Not In** operators instead of showing all default number operators.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs2/src/app.component.ts %}
 {% endhighlight %}
 

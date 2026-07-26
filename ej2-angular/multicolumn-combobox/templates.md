@@ -17,7 +17,7 @@ The MultiColumn ComboBox provides several template options to customize each ite
 You can use the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#itemtemplate) property to customize each list item within the MultiColumn ComboBox.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/item-template/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ You can use the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/
 You can add a custom element as a header element by using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/column/#headertemplate) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/header-template/src/app.component.ts %}
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ You can add a custom element as a header element by using the [headerTemplate](h
 You can use the [groupTemplate](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#grouptemplate) property to customize the group header in the popup list.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/group-template/src/app.component.ts %}
 {% endhighlight %}
 
@@ -68,7 +68,7 @@ You can use the [groupTemplate](https://ej2.syncfusion.com/angular/documentation
 You can add a custom element as a footer element by using the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#footertemplate) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/footer-template/src/app.component.ts %}
 {% endhighlight %}
 
@@ -84,7 +84,7 @@ You can add a custom element as a footer element by using the [footerTemplate](h
 You can customize the popup list for when no data is found or no matches are found by using the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/multiColumnComboBoxModel/#norecordstemplate) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/norecord-template/src/app.component.ts %}
 {% endhighlight %}
 
@@ -100,7 +100,7 @@ You can customize the popup list for when no data is found or no matches are fou
 There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/multiColumnComboBoxModel/#actionfailuretemplate) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/actionfailure-template/src/app.component.ts %}
 {% endhighlight %}
 

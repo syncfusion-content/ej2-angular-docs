@@ -24,7 +24,7 @@ The following example demonstrate about how to clear the selected item in DropDo
 {% include code-snippet/dropdownlist/clear-item-cs1/src/clear.html %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/clear-item-cs1/src/app.component.ts %}
 {% endhighlight %}
 

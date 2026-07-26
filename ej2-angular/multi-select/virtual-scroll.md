@@ -25,7 +25,7 @@ The MultiSelect component generates list items from an array of complex data by 
 In the following example, the `id` column maps to the `value` field and the `text` column maps to the `text` field from complex data.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/virtual-scroll/src/app.component.ts %}
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ The MultiSelect component retrieves data from remote data services using the `Da
 The following sample displays OrderId values from the `Orders` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-remote/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ When [enableVirtualization](../api/multi-select/#enableVirtualization) is enable
 The following sample demonstrates customizing items count in virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-items/src/app.component.ts %}
 {% endhighlight %}
 
@@ -88,7 +88,7 @@ The MultiSelect component supports grouping with virtualization, allowing organi
 The following sample demonstrates grouping with virtualization.  
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-group/src/app.component.ts %}
 {% endhighlight %}
 
@@ -109,7 +109,7 @@ The MultiSelect component supports filtering with virtualization through the bui
 The following sample demonstrates filtering with virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-filter/src/app.component.ts %}
 {% endhighlight %}
 
@@ -130,7 +130,7 @@ The MultiSelect component supports checkbox selection with virtualization throug
 The following sample demonstrates checkbox with virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-check/src/app.component.ts %}
 {% endhighlight %}
 
@@ -151,7 +151,7 @@ The MultiSelect component supports custom values with virtualization. When the [
 The following sample demonstrates custom value with virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-custom/src/app.component.ts %}
 {% endhighlight %}
 
@@ -172,7 +172,7 @@ The MultiSelect component supports preselected values with virtualization. When 
 The following sample demonstrates preselect values with virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-preselect/src/app.component.ts %}
 {% endhighlight %}
 

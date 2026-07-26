@@ -171,7 +171,7 @@ ng serve
 The following example shows a basic CheckBox component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/check-box/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -197,7 +197,7 @@ In the checked state, a tick mark appears in the CheckBox.
 Set the indeterminate state using the [`indeterminate`](https://ej2.syncfusion.com/angular/documentation/api/check-box/index-default#indeterminate) property. The indeterminate state visually masks the actual value of the CheckBox. It cannot be set via the user interface and can only be configured programmatically.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/check-box/label-and-size-cs2/src/app.component.ts %}
 {% endhighlight %}
 

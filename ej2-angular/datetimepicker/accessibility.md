@@ -111,7 +111,7 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 > To focus the DateTimePicker component use the `alt+t` keys.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs1/src/app.component.ts %}
 {% endhighlight %}
 

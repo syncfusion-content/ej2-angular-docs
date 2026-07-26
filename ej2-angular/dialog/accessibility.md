@@ -66,7 +66,7 @@ Users can interact with the Dialog using the following shortcut keys.
 <td>
 <kbd>Esc</kbd></td><td>
 Closes the Dialog. This functionality can be controlled by using
-[closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/#closeonescape) </td></tr>
+[closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#closeonescape) </td></tr>
 <tr>
 <td>
 <kbd>Enter</kbd></td><td>
@@ -86,7 +86,7 @@ Moves focus to the previous focusable element within the dialog. When the first 
 </table>
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/keyboard-cs1/src/app.component.ts %}
 {% endhighlight %}
 

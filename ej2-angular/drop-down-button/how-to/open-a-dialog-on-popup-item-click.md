@@ -16,7 +16,7 @@ This can be achieved by handling dialog open in [`select`](https://ej2.syncfusio
 In the following example, Dialog will open while selecting `Other Folder...` item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 

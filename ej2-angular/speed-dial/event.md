@@ -190,7 +190,7 @@ export class AppComponent {
 Below example demonstrates the clicked event of the Speed Dial component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/action-cs1/src/app.component.ts %}
 {% endhighlight %}
 

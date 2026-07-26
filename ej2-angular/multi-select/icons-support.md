@@ -15,7 +15,7 @@ You can render **icons** to the list items by mapping the [`iconCss`](https://ej
 In the following sample, icon classes are mapped with the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#iconcss)  field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/iconClass-cs1/src/app.component.ts %}
 {% endhighlight %}
 

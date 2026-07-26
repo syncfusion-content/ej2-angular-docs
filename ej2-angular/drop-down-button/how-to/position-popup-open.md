@@ -15,7 +15,7 @@ Popup open position can be changed according to the requirement. Popup open posi
 In the following example, the `top` position of the popup element is changed in `open` event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 

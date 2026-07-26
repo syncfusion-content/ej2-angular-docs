@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 In the following example, `Bugatti Chiron` is selected using [`selectItems`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#selectitems) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 

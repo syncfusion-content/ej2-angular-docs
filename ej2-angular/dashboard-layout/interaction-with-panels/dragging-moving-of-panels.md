@@ -23,7 +23,7 @@ The Dashboard Layout triggers the following events during panel dragging operati
 The following sample demonstrates dragging and pushing of panels. For example, while dragging the panel 0 over panel 1, these panels get collided and push the panel 1 towards the feasible direction, so that, the panel 0 gets placed in the panel 1 position.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/dragging-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ By default, the entire panel acts as the drag handle, allowing the dragging acti
 The following sample demonstrates customizing the dragging handler of panels, where the dragging action occurs only when interacting with the panel header.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ By default, panel dragging is enabled in the Dashboard Layout. The dragging func
 The following sample demonstrates a Dashboard Layout with dragging support disabled.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/disable-dragging-cs1/src/app.component.ts %}
 {% endhighlight %}
 

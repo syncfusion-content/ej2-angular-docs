@@ -23,7 +23,7 @@ When you click on a column header for the first time, it sorts the column in asc
 In the following examples, data sorting is done with `Descending` order.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/sort-order/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ To sort multiple columns press and hold the CTRL key and click on the column hea
 In the following examples, data sorting type is set with `MultipleColumns`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/sort-type/src/app.component.ts %}
 {% endhighlight %}
 

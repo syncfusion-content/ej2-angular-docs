@@ -23,7 +23,7 @@ To know more about the date format standards, refer to the [Internationalization
 The following example demonstrates the DateRangePicker with the custom format (`yyyy-MM-dd`).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ When the user types the date in any of the specified input formats, it will be a
 The following example demonstrates the DateRangePicker with multiple input formats.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 

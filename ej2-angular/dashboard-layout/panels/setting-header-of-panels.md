@@ -15,7 +15,7 @@ The Dashboard Layout component is primarily used to represent data for monitorin
 The following example demonstrates how to add content for each panel using the header and content properties of the panels.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ Dashboard panels commonly display complex data through components like charts, g
 The following example demonstrates how to integrate EJ2-Chart components as the `content` for each panel in the dashboard layout component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 

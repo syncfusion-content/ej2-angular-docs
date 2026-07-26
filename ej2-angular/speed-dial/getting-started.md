@@ -184,7 +184,7 @@ ng serve
 The below example shows a basic SpeedDial component,
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

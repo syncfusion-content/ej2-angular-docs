@@ -18,7 +18,7 @@ In the following sample, the icons for Cut, Copy and Paste menu items are
 added using the iconCss property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/popup-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ added using the iconCss property.
 Popup items can be customized by using the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/split-button#beforeitemrender) event. The item render event triggers while rendering each Popup action item. The event argument will be used to identify the action item and customize it based on the requirement.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ Popup items can be customized by using the [`beforeItemRender`](https://ej2.sync
 The whole popup can be customized as per the requirement. In the following example, the popup can be customized by handling it in [`target`](https://ej2.syncfusion.com/angular/documentation/api/split-button#target) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/popup-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 

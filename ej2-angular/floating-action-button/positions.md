@@ -38,7 +38,7 @@ export class AppComponent { }
 Below example demonstrates different supported positions of FAB.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/all-positions-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -57,7 +57,7 @@ Below example demonstrates different supported positions of FAB.
 You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properties using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass). For detailed information, refer `index.css` file below.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 

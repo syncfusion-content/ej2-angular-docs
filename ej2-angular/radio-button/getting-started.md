@@ -169,7 +169,7 @@ ng serve
 The following example shows a basic RadioButton component:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/radio-button/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -190,7 +190,7 @@ The RadioButton [`checked`](https://ej2.syncfusion.com/angular/documentation/api
 In the checked state, an inner circle appears inside the RadioButton.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/radio-button/label-and-size-cs1/src/app.component.ts %}
 {% endhighlight %}
 

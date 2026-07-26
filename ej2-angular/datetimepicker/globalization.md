@@ -74,7 +74,7 @@ In the following code example, the DateTimePicker is initialized in `German` cul
 The following example demonstrates the DateTimePicker in `German` culture.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ Use`enableRtl` property to set the RTL direction.
 The following code example initialize the DateTimePicker component in `Arabic` culture and also explains how to set the localized text to the placeholder using `load` method of `L10n` class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 

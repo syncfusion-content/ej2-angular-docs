@@ -15,7 +15,7 @@ Link can be added to the Button by adding `e-link` using `cssClass` property and
 The following example illustrates how to add link to a Button.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/round-button-cs1/src/app.component.ts %}
 {% endhighlight %}
 

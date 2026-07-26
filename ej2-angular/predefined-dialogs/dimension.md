@@ -15,7 +15,7 @@ Customize predefined dialog dimensions using the `height` and `width` properties
 ## Alert dimension
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/alert-dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ Customize predefined dialog dimensions using the `height` and `width` properties
 ## Confirm dimension
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/confirm-dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ Customize predefined dialog dimensions using the `height` and `width` properties
 ## Prompt dimension
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/prompt-dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ To restrict the maximum dialog dimensions, specify the `max-width` and `max-heig
 The following code customizes the `max-width` and `max-height` for the alert dialog:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/max-width-height-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ To restrict the minimum dialog dimensions, specify the `min-width` and `min-heig
 The following code customizes the `min-width` and `min-height` for the alert dialog:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/min-width-height-cs1/src/app.component.ts %}
 {% endhighlight %}
 

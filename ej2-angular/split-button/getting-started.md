@@ -180,7 +180,7 @@ ng serve
 The following example shows a basic Split Button component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

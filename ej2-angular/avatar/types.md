@@ -25,7 +25,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar provides predefi
 | e-avatar-xsmall    | Displays extra small size avatar.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/avatar/size-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar supports two sha
 The default avatar shape is rectangular with rounded corners, providing a modern appearance suitable for most applications. This style is applied by adding the base class `.e-avatar` to the target element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/avatar/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ The default avatar shape is rectangular with rounded corners, providing a modern
 The circular avatar style creates a perfectly round appearance, commonly used for profile pictures and user representations. Apply this style by adding the modifier class `.e-avatar-circle` along with the base `.e-avatar` class to the target element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/avatar/circle-cs1/src/app.component.ts %}
 {% endhighlight %}
 

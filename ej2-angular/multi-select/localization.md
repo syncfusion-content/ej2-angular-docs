@@ -28,7 +28,7 @@ To load translation object to your application, use the load function of the **L
 In the following sample, French culture is set to the MultiSelect DropDown component and no data is loaded. Hence, the `noRecordsTemplate` property displays its text in French culture initially, and if the sample is run offline, the `actionFailureTemplate` property displays its text appropriately. The `overflowCountTemplate` displays the overflow count when the maximum selection limit is exceeded, and the `totalCountTemplate` displays the total count of selected items.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 

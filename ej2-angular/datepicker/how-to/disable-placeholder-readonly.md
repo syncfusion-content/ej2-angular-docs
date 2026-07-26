@@ -19,7 +19,7 @@ Property | Purpose
 The following example demonstrates how to achieve the above described properties in the DatePicker.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/disable-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -22,10 +22,10 @@ Import conditions stored in JSON format for standardized data exchange and compa
 
 #### Initial rendering
 
-Initialize the Query Builder with predefined conditions by setting the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) property with a structured JSON object.
+Initialize the Query Builder with predefined conditions by setting the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#rule) property with a structured JSON object.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,10 +38,10 @@ Initialize the Query Builder with predefined conditions by setting the [`rule`](
 
 #### Runtime updates
 
-Update Query Builder conditions after rendering using the [`setRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setrules) method with a structured JSON object.
+Update Query Builder conditions after rendering using the [`setRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#setrules) method with a structured JSON object.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -58,10 +58,10 @@ Import SQL queries into the Query Builder for direct integration and conversion 
 
 #### Importing from Inline SQL Query
 
-Convert Inline SQL queries directly into Query Builder rules using the [`setRulesFromSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setrulesfromsql) method. This approach streamlines SQL-to-query-builder conversion for analysis and further processing.
+Convert Inline SQL queries directly into Query Builder rules using the [`setRulesFromSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#setrulesfromsql) method. This approach streamlines SQL-to-query-builder conversion for analysis and further processing.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs10/src/app.component.ts %}
 {% endhighlight %}
 
@@ -74,10 +74,10 @@ Convert Inline SQL queries directly into Query Builder rules using the [`setRule
 
 #### Importing from Parameter SQL Query
 
-Importing from Parameter SQL involves integrating SQL queries with parameters directly into the Query Builder. This method allows users to input SQL statements containing parameters, which can be dynamically filled in during execution. It streamlines the process by enabling flexible and customizable querying within the application. Conditions can be set from Parameter SQL queries using the [`setParameterizedSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setparameterizedsql) method.
+Importing from Parameter SQL involves integrating SQL queries with parameters directly into the Query Builder. This method allows users to input SQL statements containing parameters, which can be dynamically filled in during execution. It streamlines the process by enabling flexible and customizable querying within the application. Conditions can be set from Parameter SQL queries using the [`setParameterizedSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#setparameterizedsql) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs12/src/app.component.ts %}
 {% endhighlight %}
 
@@ -90,10 +90,10 @@ Importing from Parameter SQL involves integrating SQL queries with parameters di
 
 #### Importing from Named Parameter SQL Query
 
-Importing from Named Parameter SQL involves integrating SQL queries with named parameters directly into the Query Builder. This method enables users to input SQL statements containing named parameters, providing flexibility and customization during execution. It streamlines the process by allowing dynamic parameter assignment within the application's query environment. Conditions can be set from Named Parameter SQL queries using the [`setParameterizedNamedSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setparameterizednamedsql) method.
+Importing from Named Parameter SQL involves integrating SQL queries with named parameters directly into the Query Builder. This method enables users to input SQL statements containing named parameters, providing flexibility and customization during execution. It streamlines the process by allowing dynamic parameter assignment within the application's query environment. Conditions can be set from Named Parameter SQL queries using the [`setParameterizedNamedSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#setparameterizednamedsql) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs13/src/app.component.ts %}
 {% endhighlight %}
 
@@ -106,10 +106,10 @@ Importing from Named Parameter SQL involves integrating SQL queries with named p
 
 ### Importing from MongoDB Query
 
-Importing from MongoDB Query involves integrating MongoDB queries directly into the Query Builder. This enables users to input MongoDB query statements directly into the application, allowing for seamless integration and manipulation of MongoDB data within the Query Builder environment. It streamlines the process by facilitating direct access to MongoDB data for analysis, filtering, and further processing within the application. Conditions can be set from Named Parameter SQL queries using the [`setMongoQuery`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#setmongoquery) method.
+Importing from MongoDB Query involves integrating MongoDB queries directly into the Query Builder. This enables users to input MongoDB query statements directly into the application, allowing for seamless integration and manipulation of MongoDB data within the Query Builder environment. It streamlines the process by facilitating direct access to MongoDB data for analysis, filtering, and further processing within the application. Conditions can be set from Named Parameter SQL queries using the [`setMongoQuery`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#setmongoquery) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs14/src/app.component.ts %}
 {% endhighlight %}
 
@@ -126,7 +126,7 @@ Exporting from the Query Builder allows users to preserve or store the created c
 
 ### Exporting to JSON Object
 
-You can extract the established conditions in the Query Builder and convert them into a structured JSON object format using the [`getRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#getrules) method. This process enables users to save or transfer the conditions for further use or analysis in other applications or systems that support JSON data.
+You can extract the established conditions in the Query Builder and convert them into a structured JSON object format using the [`getRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#getrules) method. This process enables users to save or transfer the conditions for further use or analysis in other applications or systems that support JSON data.
 
 ### Exporting to SQL Query
 
@@ -134,10 +134,10 @@ Exporting to SQL involves converting the defined conditions within the Query Bui
 
 #### Exporting to Inline SQL Query
 
-Exporting to Inline SQL Query entails embedding the defined conditions from the Query Builder directly into SQL statements within the exported code. This method ensures that the conditions are seamlessly integrated into the SQL query syntax, enabling straightforward execution or further processing within SQL database systems. This can be achieved using the [`getSqlFromRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#getsqlfromrules) method.
+Exporting to Inline SQL Query entails embedding the defined conditions from the Query Builder directly into SQL statements within the exported code. This method ensures that the conditions are seamlessly integrated into the SQL query syntax, enabling straightforward execution or further processing within SQL database systems. This can be achieved using the [`getSqlFromRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#getsqlfromrules) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/export-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -150,10 +150,10 @@ Exporting to Inline SQL Query entails embedding the defined conditions from the 
 
 #### Exporting to Parameter SQL Query
 
-Exporting to Parameter SQL involves incorporating the defined conditions from the Query Builder into SQL queries with parameters. This method allows for dynamic value assignment during execution, enhancing flexibility and adaptability in query processing within SQL database. This can be accomplished using the [`getParameterizedSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#getparameterizedsql) method for exporting to Parameter SQL query.
+Exporting to Parameter SQL involves incorporating the defined conditions from the Query Builder into SQL queries with parameters. This method allows for dynamic value assignment during execution, enhancing flexibility and adaptability in query processing within SQL database. This can be accomplished using the [`getParameterizedSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#getparameterizedsql) method for exporting to Parameter SQL query.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/export-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -166,10 +166,10 @@ Exporting to Parameter SQL involves incorporating the defined conditions from th
 
 #### Exporting to Named Parameter SQL Query
 
-Exporting to Named Parameter SQL entails integrating the defined conditions from the Query Builder into SQL queries with named parameters. This method offers enhanced readability and flexibility during execution by using named placeholders for parameter values. Named Parameter SQL facilitates easier maintenance and modification of queries, making it convenient for dynamic parameter assignment within SQL database. This can be accomplished using the method [`getParameterizedNamedSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#getparameterizednamedsql) for exporting to Named Parameter SQL query.
+Exporting to Named Parameter SQL entails integrating the defined conditions from the Query Builder into SQL queries with named parameters. This method offers enhanced readability and flexibility during execution by using named placeholders for parameter values. Named Parameter SQL facilitates easier maintenance and modification of queries, making it convenient for dynamic parameter assignment within SQL database. This can be accomplished using the method [`getParameterizedNamedSql`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#getparameterizednamedsql) for exporting to Named Parameter SQL query.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/export-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -182,10 +182,10 @@ Exporting to Named Parameter SQL entails integrating the defined conditions from
 
 ### Exporting to MongoDB Query
 
-Exporting to MongoDB Query involves converting the defined conditions within the Query Builder into MongoDB query syntax. This process allows users to generate MongoDB queries representing the conditions set in the Query Builder, which can then be executed directly on a MongoDB database or used for further analysis and processing. This can be accomplished using the [`getMongoQuery`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#getmongoquery) method for exporting to MongoDB query.
+Exporting to MongoDB Query involves converting the defined conditions within the Query Builder into MongoDB query syntax. This process allows users to generate MongoDB queries representing the conditions set in the Query Builder, which can then be executed directly on a MongoDB database or used for further analysis and processing. This can be accomplished using the [`getMongoQuery`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#getmongoquery) method for exporting to MongoDB query.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/export-cs4/src/app.component.ts %}
 {% endhighlight %}
 

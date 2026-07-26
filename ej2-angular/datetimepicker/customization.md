@@ -20,7 +20,7 @@ It can be achieved by using [`renderDayCell`](https://ej2.syncfusion.com/angular
 The following example disables the weekends of every month by using `renderDayCell` event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ The following example disables the weekends of every month by using `renderDayCe
 You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e-input-group.e-control-wrapper.e-float-input .e-float-text::after</b> class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/asterisk-cs1/src/app.component.ts %}
 {% endhighlight %}
 

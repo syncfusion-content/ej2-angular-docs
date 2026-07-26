@@ -18,7 +18,7 @@ The value property depends on the min/max with respect to [`strictMode`](./stric
 The following example allows you to select a time value within a range of `9:00 AM` to `11:30 AM`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 

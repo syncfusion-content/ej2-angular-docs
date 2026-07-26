@@ -15,7 +15,7 @@ The ProgressButton component triggers events based on its actions. The events ca
 The events available in ProgressButton are [`fail`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#fail), [`begin`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#begin), [`progress`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#progress), and [`end`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#end).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/progress-button/default-cs7/src/app.component.ts %}
 {% endhighlight %}
 

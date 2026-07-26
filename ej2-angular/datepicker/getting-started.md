@@ -177,7 +177,7 @@ ng serve
 The following example illustrates the output in the browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -195,7 +195,7 @@ To set the selected date, use the [`value`](https://ej2.syncfusion.com/angular/d
 The following example demonstrates the DatePicker with the current date set as the selected value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -213,7 +213,7 @@ To restrict the selection of date within a specified range, use the [`min`](http
 The following example demonstrates selecting a date within a range from 7 to 27.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 

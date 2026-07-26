@@ -57,7 +57,7 @@ export class AppComponent {
 Below example demonstrates the click event of the Floating Action Button.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/events-cs1/src/app.component.ts %}
 {% endhighlight %}
 

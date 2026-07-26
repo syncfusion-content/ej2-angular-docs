@@ -16,7 +16,7 @@ The Image Editor's [`zoom`](https://ej2.syncfusion.com/angular/documentation/api
 This example demonstrates scenarios that include buttons for fitting the image to its width (Fit Width) or height (Fit Height).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/image-editor/default-cs64/src/app.component.ts %}
 {% endhighlight %}
 

@@ -23,7 +23,7 @@ To load the translation object to your application, use the load function of the
 In the following sample, French culture is set to the mention component and no data is loaded. Hence, the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#norecordstemplate) property displays its text in French culture initially.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 

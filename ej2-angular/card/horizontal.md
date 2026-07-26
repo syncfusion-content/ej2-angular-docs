@@ -34,7 +34,7 @@ Class   | Description
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/card/card-horizontal-cs1/src/app.component.ts %}
 {% endhighlight %}
 

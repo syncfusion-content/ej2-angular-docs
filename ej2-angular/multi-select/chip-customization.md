@@ -15,7 +15,7 @@ The MultiSelect component allows customization of selected chip elements through
 The following sample demonstrates chip customization with the MultiSelect component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/chip-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -19,7 +19,7 @@ ButtonGroup supports radio type selection in which only one button can be select
 The following example illustrates the single selection behavior in ButtonGroup.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ ButtonGroup supports checkbox type selection in which multiple button can be sel
 The following example illustrates the multiple selection behavior in ButtonGroup.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs10/src/app.component.ts %}
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ To initialize DropDownButton component, refer [`DropDownButton Getting Started d
 In the following example, the DropDownButton component is rendered in `app.component.ts` and `DropDownButtonModule` is imported in `app.module.ts` file.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/drop-down-button-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -82,7 +82,7 @@ To initialize SplitButton component refer [`SplitButton Getting Started document
 In the following example, the SplitButton component is rendered in `app.component.ts` and `SplitButtonModule` is imported in `app.module.ts` file.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/split-button-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -174,7 +174,7 @@ ng serve
 The following example shows a basic ProgressButton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/progress-button/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -192,7 +192,7 @@ The following example shows a basic ProgressButton component.
 You can enable the background filler UI by setting the [`enableProgress`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#enableProgress) property to `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/progress-button/default-cs3/src/app.component.ts %}
 {% endhighlight %}
 

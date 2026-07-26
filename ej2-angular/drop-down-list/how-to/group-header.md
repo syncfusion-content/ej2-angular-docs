@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The following example demonstrate about how to disable the Fixed group header in DropDownList through CSS by using `visibility` attribute.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/disable-group-header-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can change the text content and styles of the ProgressButton during progress by changing the text content and the  [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/progress-button/#cssClass) property at the [`begin`](https://ej2.syncfusion.com/angular/documentation/api/progress-button/#begin) and [`end`](https://ej2.syncfusion.com/angular/documentation/api/progress-button/#end) events.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/progress-button/default-cs4/src/app.component.ts %}
 {% endhighlight %}
 

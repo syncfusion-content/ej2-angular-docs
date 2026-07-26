@@ -24,7 +24,7 @@ so the FormsModule will  automatically detect the AutoComplete as a form element
 The following example  demonstrates how to achieve a two-way data binding.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/form-support-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ You can declare the formControlName to AutoComplete as usual. then,you must crea
 The following example demonstrates  how to use the reactive forms.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/reactive-form-cs1/src/app.component.ts %}
 {% endhighlight %}
 

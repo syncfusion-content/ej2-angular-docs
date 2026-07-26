@@ -15,7 +15,7 @@ Create and display tooltips on multiple targets within a container by assigning 
 The tooltip content is derived from the `title` attribute of the target element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/form-valid-cs3/src/app.component.ts %}
 {% endhighlight %}
 

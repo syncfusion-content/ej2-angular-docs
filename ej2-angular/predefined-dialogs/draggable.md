@@ -15,7 +15,7 @@ Predefined dialogs support dragging within the target container by grabbing the 
 ## Alert dragging
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/alert-drag-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ Predefined dialogs support dragging within the target container by grabbing the 
 ## Confirm drag
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/confirm-drag-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ Predefined dialogs support dragging within the target container by grabbing the 
 ## Prompt drag
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/prompt-drag-cs1/src/app.component.ts %}
 {% endhighlight %}
 

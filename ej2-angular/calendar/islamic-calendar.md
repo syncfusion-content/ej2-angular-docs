@@ -21,7 +21,7 @@ By default, calendar mode is in **Gregorian**. You can enable the Islamic mode b
 The following example demonstrates how to display the Islamic Calendar (Hijri Calendar).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/islamic-calendar-cs1/src/app.component.ts %}
 {% endhighlight %}
 

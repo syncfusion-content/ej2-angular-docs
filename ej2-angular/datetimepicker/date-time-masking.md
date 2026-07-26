@@ -15,7 +15,7 @@ The DateTimePicker has built-in support to masking the date value, when `enableM
 To use mask support, inject the MaskedDateTime module in the DateTimePicker.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/mask-module-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ The mask pattern is defined based on the provided date format to the component. 
 The following example demonstrates default and custom format of DateTimePicker component with mask.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/mask-module-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ L10n.load({
 The following example demonstrates default and customized mask placeholder value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/mask-module-cs3/src/app.component.ts %}
 {% endhighlight %}
 

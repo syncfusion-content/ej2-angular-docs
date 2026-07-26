@@ -21,7 +21,7 @@ The `#headerTemplate` template variable identifies the NgTemplate content as the
 In the following sample dropdown, splitbutton and button are used as the custom components in the header.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 
 ## Column Template
 
-Define custom input widgets for specific columns using column templates. Implement the [`template`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#template) property with the following functions:
+Define custom input widgets for specific columns using column templates. Implement the [`template`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/index-default#template) property with the following functions:
 
 * `create`: Initialize the custom component.
 * `write`: Bind events to the custom component.
@@ -70,7 +70,7 @@ Define custom input widgets for specific columns using column templates. Impleme
 The following example demonstrates using a dropdown as a custom component in the PaymentMode column.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs11/src/app.component.ts %}
 {% endhighlight %}
 
@@ -86,7 +86,7 @@ The following example demonstrates using a dropdown as a custom component in the
 Define column value templates using NgTemplate. The template variable (e.g., `#template`) identifies the NgTemplate content for the corresponding column.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -103,14 +103,14 @@ Define column value templates using NgTemplate. The template variable (e.g., `#t
 
 ## Rule Template
 
-Rule Template allows to define your own user interface for columns. To implement [`ruleTemplate`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/#ruleTemplate) you can create the user interface using `ngTemplate` and assign the values through `actionBegin` event.
+Rule Template allows to define your own user interface for columns. To implement [`ruleTemplate`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel/index-default#ruleTemplate) you can create the user interface using `ngTemplate` and assign the values through `actionBegin` event.
 
 The `#ruleTemplate` template variable identifies the NgTemplate content as the corresponding column.
 
 In the following sample, dropdown and slider are used as the custom component and applied `greaterthanorequal` operator to `Age` column.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/rule-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 

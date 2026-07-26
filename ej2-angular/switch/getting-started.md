@@ -170,7 +170,7 @@ ng serve
 The below example shows a basic Switch component,
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/switch/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -188,7 +188,7 @@ and [`offLabel`](https://ej2.syncfusion.com/angular/documentation/api/switch#off
 `ON` and `offLabel` is set as `OFF`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/switch/text-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -26,7 +26,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button has the followin
 | e-link |  Changes the appearance of the Button like a hyperlink. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/button-style-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ The basic Button types are explained below.
 | Reset |  This Button resets all the controls in the form elements to their initial values. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/basic-types-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -89,7 +89,7 @@ A round Button is shaped like a circle. Usually, it contains an icon representin
 To create a round Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-round`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/button-type-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -106,7 +106,7 @@ A toggle Button allows you to change between the two states. The Button is activ
 property to `true`. In the following code snippet, the toggle Button text changes to play/pause based on the state of the Button with the use of click event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/toggle-button-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -125,7 +125,7 @@ The Button can have an icon to provide the visual representation of the action. 
 by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/button#iconposition) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -143,7 +143,7 @@ SVG image can be added to the Button using [`iconCss`](https://ej2.syncfusion.co
 In the following example, SVG image is added using the iconCss class `e-search-icon` by setting `height` and `width`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/svg-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -161,7 +161,7 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 The two types of Button sizes are default and small. To change the size of the default Button to small Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-small`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/size-cs1/src/app.component.ts %}
 {% endhighlight %}
 

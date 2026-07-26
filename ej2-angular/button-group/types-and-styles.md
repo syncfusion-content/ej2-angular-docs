@@ -21,7 +21,7 @@ An Outline ButtonGroup has a border with transparent background. To create Outli
 The following sample illustrates how to achieve an Outline ButtonGroup,
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs11/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 ButtonGroup has the fol
 The following example illustrates how to achieve predefined styles in ButtonGroup.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs12/src/app.component.ts %}
 {% endhighlight %}
 

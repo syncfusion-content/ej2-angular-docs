@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Query builder component
 
-Create dynamic filtering conditions and groups in the Query Builder through the UI or programmatically. Use the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#showbuttons) property to control button visibility.
+Create dynamic filtering conditions and groups in the Query Builder through the UI or programmatically. Use the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#showbuttons) property to control button visibility.
 
 ## Creating and Deleting Conditions and Groups
 
 Add or remove conditions and groups using the following methods:
 
-* [`addRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#addrules) and [`deleteRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#deleterules): Add or remove individual conditions.
-* [`addGroups`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#addgroups) and [`deleteGroups`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#deletegroups): Add or remove groups.
+* [`addRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#addrules) and [`deleteRules`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#deleterules): Add or remove individual conditions.
+* [`addGroups`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#addgroups) and [`deleteGroups`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#deletegroups): Add or remove groups.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs6/src/app.component.ts %}
 {% endhighlight %}
 

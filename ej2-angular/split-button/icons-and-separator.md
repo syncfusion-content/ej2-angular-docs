@@ -17,7 +17,7 @@ SplitButton can have an icon to provide the visual representation of the action.
 The following example illustrates how to place icon in SplitButton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ Vertical Button in SplitButton can be achieved by adding `e-vertical` class usin
 The following example illustrates how to vertical support in SplitButton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/vertical-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ SplitButton component has Separator support. This can be achieved by setting `se
 The following example illustrates how to enable separator support in SplitButton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/separator-cs1/src/app.component.ts %}
 {% endhighlight %}
 

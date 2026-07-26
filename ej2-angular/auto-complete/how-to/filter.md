@@ -15,7 +15,7 @@ The AutoComplete data can be filtered based on both text and value fields using 
 In the following example, filtering is done based on text and value fields.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/filter-cs1/src/app.component.ts %}
 {% endhighlight %}
 

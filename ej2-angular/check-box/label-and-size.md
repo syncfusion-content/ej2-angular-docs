@@ -17,7 +17,7 @@ This section explains the different sizes and labels.
 The CheckBox caption can be defined using the [`label`](https://ej2.syncfusion.com/angular/documentation/api/check-box#label) property. This reduces the manual addition of label for CheckBox. You can customize the label position before or after the CheckBox through the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/check-box#labelposition) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/check-box/label-and-size-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ The CheckBox caption can be defined using the [`label`](https://ej2.syncfusion.c
 The different CheckBox size are default and small. To reduce the size of default CheckBox to small, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box#cssclass) property to `e-small`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/check-box/label-and-size-cs4/src/app.component.ts %}
 {% endhighlight %}
 

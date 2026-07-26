@@ -35,7 +35,7 @@ Create a canvas circle element and render the tooltip on it using the following 
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/svg-canvas-cs3/src/app.component.ts %}
 {% endhighlight %}
 

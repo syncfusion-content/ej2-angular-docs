@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content/) can be loaded through template support. The following code snippet demonstrates this.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/load-html-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

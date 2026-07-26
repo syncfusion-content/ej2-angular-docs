@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Display modes in Angular Query builder component
 
-The Query Builder supports two distinct layout orientations: vertical and horizontal. Use the [`displayMode`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#displaymode) property to switch between these display modes based on your application's layout requirements.
+The Query Builder supports two distinct layout orientations: vertical and horizontal. Use the [`displayMode`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#displaymode) property to switch between these display modes based on your application's layout requirements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs7/src/app.component.ts %}
 {% endhighlight %}
 

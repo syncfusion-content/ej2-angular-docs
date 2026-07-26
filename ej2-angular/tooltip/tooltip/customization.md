@@ -17,7 +17,7 @@ Customize the tooltip using the `cssClass` property, which accepts custom CSS cl
 Style the tip pointer's size, background, and border colors using the `cssClass` property as shown below.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs26/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ Style the tip pointer's size, background, and border colors using the `cssClass`
 Customize the tooltip's complete appearance by changing its background color, opacity, content font, and more. The following code example shows how to achieve this.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/custom-css-cs2/src/app.component.ts %}
 {% endhighlight %}
 

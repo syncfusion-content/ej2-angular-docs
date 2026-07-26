@@ -21,7 +21,7 @@ You can restrict the minimum and maximum date that can be allowed as start date,
 In below sample, you can select a range from 15th day of this month to 15th day of next month.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ In this, minimum and maximum span that can be allowed within the date range can 
 In below sample, the range selection should be greater than 3 days and less than 8 days else it won’t set.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ With strict mode, you can set only valid selection. Also, If any invalid range i
 This restriction can be availed by enabling the [`strictMode`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#strictmode) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 

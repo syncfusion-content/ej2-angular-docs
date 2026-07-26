@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 TimePicker has `enableMask` property that provides the option to enable the built-in time masking support. Also, you must inject the MaskedDateTime module to enable the masking support.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/mask-module-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ The mask pattern is defined based on the provided time format to the component. 
 The following example demonstrates default and custom format of TimePicker component with mask.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/mask-module-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ L10n.load({
 The following example demonstrates default and customized mask placeholder value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/mask-module-cs3/src/app.component.ts %}
 {% endhighlight %}
 

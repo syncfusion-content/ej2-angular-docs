@@ -15,7 +15,7 @@ The MultiSelect provides options for individual items to be either in an enabled
 In the following sample, states are configured with disabled status using the `disabled` field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 

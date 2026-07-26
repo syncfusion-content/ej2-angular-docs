@@ -23,7 +23,7 @@ The template expression should be provided inside the ${...} interpolation synta
 {% endraw %} 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/template/itemTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ The template expression should be provided inside the ${...} interpolation synta
 {% endraw %}
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/template/valueTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -71,7 +71,7 @@ The header element appears statically at the top of the popup list items within 
 In the following sample, the header is customized with a custom element that provides context for the dropdown content.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/template/headerTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -93,7 +93,7 @@ The Dropdown Tree supports displaying a footer element at the bottom of the popu
 In the following sample, the footer element displays the total number of employees available in the Dropdown Tree.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/template/footerTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -115,7 +115,7 @@ The Dropdown Tree supports displaying custom content when no matches are found d
 In the following sample, the popup list displays a custom notification when no data is available.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -137,7 +137,7 @@ The Dropdown Tree provides options to customize the popup list content when data
 In the following sample, when the data fetch request fails, the Dropdown Tree displays a custom error notification.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -161,7 +161,7 @@ When the **mode** property is set to **Custom**, the Dropdown Tree displays the 
 In the following sample, the Dropdown Tree renders with the default value of the **customTemplate** property displaying **1 item(s) selected** or **2 item(s) selected**.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -179,7 +179,7 @@ In the following sample, the Dropdown Tree renders with the default value of the
 In the following sample, the Dropdown Tree renders with a custom value for the **customTemplate** property displaying **Selected items count: 2**.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/template/customTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 

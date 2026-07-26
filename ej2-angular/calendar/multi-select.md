@@ -15,7 +15,7 @@ Calendar provides an option to select **single** or **multiple dates** or **sequ
 The following example demonstrates the functionality of  `isMultiSelection` property and `values` properties in the Calendar control.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 

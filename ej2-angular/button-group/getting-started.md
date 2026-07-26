@@ -190,7 +190,7 @@ ng serve
 The following example shows a basic ButtonGroup component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -212,7 +212,7 @@ Apply the built-in `e-vertical` class to the target element to align the ButtonG
 The following example illustrates how to achieve vertical orientation in ButtonGroup.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 

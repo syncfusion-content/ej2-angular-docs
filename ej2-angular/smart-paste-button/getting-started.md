@@ -142,7 +142,7 @@ ng serve
 The following example shows a featured Smart Paste Button component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 import { Component, OnInit, viewChild, ViewChild} from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import {ButtonComponent, ButtonAllModule, SmartPasteButtonAllModule , RadioButtonAllModule, ChipListModule, ClickEventArgs } from '@syncfusion/ej2-angular-buttons';

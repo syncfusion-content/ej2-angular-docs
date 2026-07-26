@@ -31,7 +31,7 @@ The below styles changes the Calendar's other month dates to visible state from 
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/how-to-othermonth-cs1/src/app.component.ts %}
 {% endhighlight %}
 

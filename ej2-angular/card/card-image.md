@@ -36,7 +36,7 @@ Card images support including a title or caption for the image. By default, the 
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/card/card-img-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -54,7 +54,7 @@ Dividers provide visual separation between different sections within the card. A
 * Place a `div` element with the `e-card-separator` class inside the card element to add a divider.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/card/card-header-cs1/src/app.component.ts %}
 {% endhighlight %}
 

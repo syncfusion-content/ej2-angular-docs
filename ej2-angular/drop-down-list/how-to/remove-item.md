@@ -17,7 +17,7 @@ To get started quickly with removing items in angular DropDownList component, yo
 The following example demonstrate about how to remove an item from DropDownList.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/remove-item-cs1/src/app.component.ts %}
 {% endhighlight %}
 

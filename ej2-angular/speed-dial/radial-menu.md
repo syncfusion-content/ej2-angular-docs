@@ -91,7 +91,7 @@ export class AppComponent {
 Below example demonstrates the radial menu settings of the Speed Dial.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/radial-cs2/src/app.component.ts %}
 {% endhighlight %}
 

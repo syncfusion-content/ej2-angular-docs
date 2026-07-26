@@ -175,7 +175,7 @@ ng serve
 The following example shows a basic Floating Action Button component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -191,7 +191,7 @@ The following example shows a basic Floating Action Button component.
 The Floating Action Button triggers the `click` event when the button is clicked. Use this event to perform the required action.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/events-cs2/src/app.component.ts %}
 {% endhighlight %}
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Combo box component
 
-The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. It supports the data type of `array` or `DataManager`.
+The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#datasource) property. It supports the data type of `array` or `DataManager`.
 
 The ComboBox also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
@@ -32,7 +32,7 @@ Local data can be represented in two ways as described below.
 The ComboBox has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -52,7 +52,7 @@ property.
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -71,7 +71,7 @@ the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.
 In the following example, `Code.Id` column and `'Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ of `DataManager` component. The `Query` property allows is used to fetch data fr
 In the following sample, displayed first 6 contacts from `customer` table of `Northwind` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -177,7 +177,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 ## See Also
 
-* [How to achieve cascading](./how-to/cascading/)
+* [How to achieve cascading](./how-to/cascading.md)
 * [How to load data using template](./templates#item-template)
 * [How to group the data using header](./grouping)
 * [How to filter the bound data](./filtering)

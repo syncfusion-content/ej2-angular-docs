@@ -17,7 +17,7 @@ When the min and max properties are configured and the selected date value is ou
 The below example demonstrates the Calendar to select a date within a range from 1 to 27 in a month.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 

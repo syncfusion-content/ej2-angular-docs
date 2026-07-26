@@ -15,7 +15,7 @@ You can preselect the items in the Chips component by utilizing the [selectedChi
 The following example shows how to preselect the items.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/preselect-items-cs1/src/app.component.ts %}
 {% endhighlight %}
 

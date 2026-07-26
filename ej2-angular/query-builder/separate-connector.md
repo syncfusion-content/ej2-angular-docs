@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Separate Connector in Angular Query builder component
 
-Use different connectors (AND/OR) between individual rules and groups within the same parent group. This allows for greater precision in query construction, enabling more complex filtering logic. Enable this feature using the [`enableSeparateConnector`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#enableSeparateConnector) property.
+Use different connectors (AND/OR) between individual rules and groups within the same parent group. This allows for greater precision in query construction, enabling more complex filtering logic. Enable this feature using the [`enableSeparateConnector`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#enableSeparateConnector) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/separate-connector-cs1/src/app.component.ts %}
 {% endhighlight %}
 

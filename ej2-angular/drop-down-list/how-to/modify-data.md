@@ -15,7 +15,7 @@ When binding the remote data source, by using the [`actionComplete`](https://ej2
 The following sample demonstrate how to modify the result data.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 

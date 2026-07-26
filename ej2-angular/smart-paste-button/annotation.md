@@ -33,7 +33,7 @@ Add the **data-smartpaste-description** attribute to the form fields where the s
 These examples illustrate how using **data-smartpaste-description** attributes can provide fine-grained control over pasting behaviors, ensuring that the Smart Paste Button meets specific requirements and enhances the user experience.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { Component, OnInit, viewChild, ViewChild} from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';

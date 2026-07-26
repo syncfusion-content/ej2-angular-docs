@@ -39,7 +39,7 @@ Attach tooltips to 12 static locations around the target. Set the position prope
 > By default, Tooltip is placed at the `TopCenter` of the target element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs34/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ Attach or detach the tooltip pointer using the `showTipPointer` property. Adjust
 The following code example demonstrates how to set the pointer to the start position.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs35/src/app.component.ts %}
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ By default, tip pointers are auto adjusted so that the arrow does not point outs
 Position the tooltip and its tip pointer dynamically based on the target's location. Use the `refresh` method to automatically adjust the tooltip position relative to the target.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs36/src/app.component.ts %}
 {% endhighlight %}
 
@@ -99,7 +99,7 @@ Position the tooltip and its tip pointer dynamically based on the target's locat
 Position tooltips relative to the mouse pointer by enabling this feature. Enable or disable this behavior using the `mouseTrail` property. By default, it is set to `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs37/src/app.component.ts %}
 {% endhighlight %}
 
@@ -124,7 +124,7 @@ Offset values are set to specify the distance between the target and tooltip ele
 The following code example illustrates how to set offset values.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs38/src/app.component.ts %}
 {% endhighlight %}
 

@@ -29,7 +29,7 @@ In the following example, two-way binding for RadioButton is illustrated with Dr
 * Now, the changes made in RadioButton will reflect in DropDownList (i.e. Selected option in radio button will be reflected in DropDownList  ) and vice versa.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/radio-button/binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 

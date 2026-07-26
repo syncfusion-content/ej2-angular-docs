@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Json data binding with calendar in Angular Calendar component | Syncfusion
+title: Json data binding with calendar in Angular Calendar | Syncfusion
 description: Learn here all about Json data binding with calendar in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Json data binding with calendar 
@@ -14,7 +14,7 @@ In most of the real cases, the model data will be available with JSON format onl
 Also our Calendar component supports the ISO formatted date value, so parsed JSON value can be directly set to Calendar model.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/json-bind-cs1/src/app.component.ts %}
 {% endhighlight %}
 

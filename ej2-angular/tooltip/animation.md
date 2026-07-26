@@ -17,7 +17,7 @@ The [`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tool
 By default, the tooltip enters over 150 ms using the `ease-out` timing function and exits at 150 ms using the `ease-in` timing function. The default animation effect is `FadeIn` for open actions and `FadeOut` for close actions, with a duration of 150 ms and delay of 0.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ Apply animations dynamically using the [`open`](https://ej2.syncfusion.com/angul
 The following code snippet demonstrates applying animations using these methods.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -75,7 +75,7 @@ The following code snippet demonstrates applying animations using these methods.
 The transition effect can be applied on Tooltips by using the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#beforeopen) event as given in the following workaround code example.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 

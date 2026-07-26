@@ -15,7 +15,7 @@ By using the `hidePopup` method in DropDownList, you can close the popup on scro
 The following example demonstrate about how to close the popup on scroll.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 
