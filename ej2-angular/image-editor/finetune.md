@@ -15,18 +15,18 @@ Fine-tuning involves making precise adjustments to the settings of an image filt
 
 ## Adjust the brightness, contrast, and saturation
 
-The [`finetuneImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#finetuneImage) method is designed to facilitate fine-tuning operations on an image. It accepts two parameters: the first parameter is [`ImageFinetuneOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/imageFinetuneOption/) which determines the type of fine-tuning to be applied (brightness, contrast, and saturation), and the second parameter represents the fine-tuning value, indicating the degree or intensity of the adjustment. This method allows for convenient adjustment of brightness, contrast, and saturation by specifying the desired type and corresponding value.
+The [`finetuneImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#finetuneImage) method is designed to facilitate fine-tuning operations on an image. It accepts two parameters: the first parameter is [`ImageFinetuneOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/imagefinetuneoption) which determines the type of fine-tuning to be applied (brightness, contrast, and saturation), and the second parameter represents the fine-tuning value, indicating the degree or intensity of the adjustment. This method allows for convenient adjustment of brightness, contrast, and saturation by specifying the desired type and corresponding value.
 
 The `finetuneImage` method is used to perform brightness, contrast, and saturation fine-tuning by specifying this type as a first parameter and specifying the fine-tuning value as the second parameter of the method. 
 
 * finetuneOption - Specifies the finetune options to be performed in the image.
 
-* value - Specifies the value for finetuning the image.
+* value - Specifies the value for finetune the image.
 
 Here is an example of brightness, contrast, and saturation fine-tuning using the `finetuneImage` method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/image-editor/default-cs28/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,16 +39,16 @@ Here is an example of brightness, contrast, and saturation fine-tuning using the
 
 ## Adjust the hue, exposure, blur, and opacity
 
-The [`finetuneImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#finetuneImage) method is designed to facilitate fine-tuning operations on an image. It accepts two parameters: the first parameter is [`ImageFinetuneOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/imageFinetuneOption/) which determines the type of fine-tuning to be applied (hue, exposure, blur, and opacity), and the second parameter represents the fine-tuning value, indicating the degree or intensity of the adjustment. This method allows for convenient adjustment of hue, exposure, blur, and opacity by specifying the desired type and corresponding value.
+The [`finetuneImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#finetuneImage) method is designed to facilitate fine-tuning operations on an image. It accepts two parameters: the first parameter is [`ImageFinetuneOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/imagefinetuneoption) which determines the type of fine-tuning to be applied (hue, exposure, blur, and opacity), and the second parameter represents the fine-tuning value, indicating the degree or intensity of the adjustment. This method allows for convenient adjustment of hue, exposure, blur, and opacity by specifying the desired type and corresponding value.
 
 * finetuneOption - Specifies the finetune options to be performed in the image.
 
-* value - Specifies the value for finetuning the image.
+* value - Specifies the value for finetune the image.
 
 Here is an example of hue, exposure, blur, and opacity fine-tuning using the `finetuneImage` method. 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/image-editor/default-cs29/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,11 +61,11 @@ Here is an example of hue, exposure, blur, and opacity fine-tuning using the `fi
 
 ## Finetune value changing event 
 
-The [`FinetuneValueChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#finetunevaluechanging) event is triggered when performing fine-tuning on the image. This event is passed an object that contains information about the fine-tuning event, such as the type of fine-tuning and the value of fine-tuning performed. 
+The [`FinetuneValueChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#finetunevaluechanging) event is triggered when performing fine-tuning on the image. This event is passed an object that contains information about the fine-tuning event, such as the type of fine-tuning and the value of fine-tuning performed. 
 
-The parameter available in the [`FinetuneEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#finetuneEventArgs) event is, 
+The parameter available in the [`FinetuneEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#finetuneEventArgs) event is, 
 
-* FinetuneEventArgs.finetune - The type of fine-tuning as [`ImageFinetuneOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#imagefinetuneoption) to be applied in the image editor. 
+* FinetuneEventArgs.finetune - The type of fine-tuning as [`ImageFinetuneOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#imagefinetuneoption) to be applied in the image editor. 
 
 * FinetuneEventArgs.value - The fine-tuning value to be applied in the image editor. 
 

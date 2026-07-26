@@ -23,7 +23,7 @@ For more details about template-driven Forms refer to:<https://angular.io/guide/
 The following example  demonstrates template driven forms with TimePicker component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/template-driven-cs1/src/app.component.ts %}
 {% endhighlight %}
 

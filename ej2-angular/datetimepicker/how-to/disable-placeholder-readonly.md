@@ -17,7 +17,7 @@ Property | Purpose
 [`readonly`](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker#readonly)       | Editing the value in the component can be prevented by setting `readonly` as **true**, but value can be included in the form post action.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs6/src/app.component.ts %}
 {% endhighlight %}
 

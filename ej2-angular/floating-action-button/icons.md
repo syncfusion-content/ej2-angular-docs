@@ -63,7 +63,7 @@ export class AppComponent { }
 Below example demonstrates a FAB with icon and text.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/icons-cs1/src/app.component.ts %}
 {% endhighlight %}
 

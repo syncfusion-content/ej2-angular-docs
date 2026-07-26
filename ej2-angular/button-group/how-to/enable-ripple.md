@@ -17,7 +17,7 @@ The following example illustrates how to enable ripple for ButtonGroup.
 <!-- markdownlint-disable MD033 -->
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs5/src/app.component.ts %}
 {% endhighlight %}
 

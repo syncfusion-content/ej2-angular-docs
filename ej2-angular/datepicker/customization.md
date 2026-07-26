@@ -38,7 +38,7 @@ The following example disables the weekends of every month using `renderDayCell`
 Here we have used the `e-disabled` class to highlight the disabled date.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -54,7 +54,7 @@ Here we have used the `e-disabled` class to highlight the disabled date.
 You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e-input-group.e-control-wrapper.e-float-input .e-float-text::after</b> class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/asterisk-cs1/src/app.component.ts %}
 {% endhighlight %}
 

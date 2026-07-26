@@ -15,7 +15,7 @@ ButtonGroup supports RTL functionality. This can be achieved by adding `e-rtl` c
 The following example illustrates how to create ButtonGroup with RTL support.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs6/src/app.component.ts %}
 {% endhighlight %}
 

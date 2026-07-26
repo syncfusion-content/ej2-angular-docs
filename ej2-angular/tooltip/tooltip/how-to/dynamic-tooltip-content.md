@@ -44,7 +44,7 @@ onBeforeRender(args: TooltipEventArgs): void {
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/dynamic-content-cs3/src/app.component.ts %}
 {% endhighlight %}
 

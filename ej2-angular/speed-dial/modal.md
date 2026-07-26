@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can use the [`modal`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#modal) property to set the Speed Dial as modal which adds an overlay to prevent the background interaction.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/modal-cs1/src/app.component.ts %}
 {% endhighlight %}
 

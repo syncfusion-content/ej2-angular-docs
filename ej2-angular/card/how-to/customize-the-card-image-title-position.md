@@ -14,7 +14,7 @@ The Card component positions image titles in the bottom-left corner with an over
 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/card/card-img-title-pos-cs1/src/app.component.ts %}
 {% endhighlight %}
 

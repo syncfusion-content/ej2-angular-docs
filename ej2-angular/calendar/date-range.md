@@ -15,7 +15,7 @@ You can restrict the user to select the date from a specified range of dates by 
 The below example allows you to select a date within a range from 7th to 27th days in a month.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 

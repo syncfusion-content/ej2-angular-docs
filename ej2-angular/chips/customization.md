@@ -14,7 +14,7 @@ This section explains the customization of styles, leading icons, avatar, and tr
 
 ## Styles
 
-The Chips component has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/chips/#cssclass) property.
+The Chips component has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#cssclass) property.
 
 | Class | Description |
 | -------- | -------- |
@@ -25,7 +25,7 @@ The Chips component has the following predefined styles that can be defined usin
 | e-danger | Represents a negative Chips. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/customization/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -40,10 +40,10 @@ The Chips component has the following predefined styles that can be defined usin
 
 ## Leading Icon
 
-You can add and customize the leading icon of Chips using the [`leadingIconCss`](https://ej2.syncfusion.com/angular/documentation/api/chips/#leadingiconcss) property.
+You can add and customize the leading icon of Chips using the [`leadingIconCss`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#leadingiconcss) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/customization/styles-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -58,10 +58,10 @@ You can add and customize the leading icon of Chips using the [`leadingIconCss`]
 
 ## Avatar
 
-You can add and customize the avatar of Chips using the [`avatarIconCss`](https://ej2.syncfusion.com/angular/documentation/api/chips/#avatariconcss) property.
+You can add and customize the avatar of Chips using the [`avatarIconCss`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#avatariconcss) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/customization/styles-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -76,10 +76,10 @@ You can add and customize the avatar of Chips using the [`avatarIconCss`](https:
 
 ## Avatar Content
 
-You can add and customize the avatar content of Chips using the [`avatarText`](https://ej2.syncfusion.com/angular/documentation/api/chips/#avatartext) property.
+You can add and customize the avatar content of Chips using the [`avatarText`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#avatartext) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/customization/styles-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -94,10 +94,10 @@ You can add and customize the avatar content of Chips using the [`avatarText`](h
 
 ## Trailing Icon
 
-You can add and customize the trailing icon of Chips using the [`trailingIconCss`](https://ej2.syncfusion.com/angular/documentation/api/chips/#trailingiconcss) property.
+You can add and customize the trailing icon of Chips using the [`trailingIconCss`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#trailingiconcss) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/customization/styles-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -112,10 +112,10 @@ You can add and customize the trailing icon of Chips using the [`trailingIconCss
 
 ## Outline Chips
 
-Outline chips has the border with the background transparent. It can be set using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/chips/#cssclass) property.
+Outline chips has the border with the background transparent. It can be set using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#cssclass) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/customization/styles-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -130,10 +130,10 @@ Outline chips has the border with the background transparent. It can be set usin
 
 ## Template
 
-The [`template`](https://ej2.syncfusion.com/angular/documentation/api/chips/#template) property of the Chips component allows users to fully customize the layout and design of each Chips. By using the `template` property, users can include custom HTML elements, such as links, icons, or additional content.
+The [`template`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#template) property of the Chips component allows users to fully customize the layout and design of each Chips. By using the `template` property, users can include custom HTML elements, such as links, icons, or additional content.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chips/customization/styles-cs7/src/app.component.ts %}
 {% endhighlight %}
 

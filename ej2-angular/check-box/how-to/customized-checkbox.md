@@ -17,7 +17,7 @@ You can customize the appearance of the CheckBox module using the CSS rules. Def
 The background and border color of the CheckBox is customized through the custom classes to create primary, success, warning, danger, and info type of checkbox.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/check-box/howto-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ CheckBox frame can be customized as per the requirement by adding CSS rules.
 In the following example, to-do list is displayed with round checkbox by changing `border-radius` as `100%` by adding `e-custom` class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/check-box/custom-frame-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ CheckBox check icon can be customized as per the requirement by adding CSS rules
 In the following example, the check icon can be customized by changing check icon content, background and border color in focus and hovered states by adding `e-checkicon` class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/check-box/custom-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 

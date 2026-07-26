@@ -22,7 +22,7 @@ During resizing, the adjacent panes automatically adjust their dimensions to acc
 Minimum and maximum size boundaries can be defined for each pane. Resizing is restricted within these boundaries to maintain layout integrity.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/validation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ Minimum and maximum size boundaries can be defined for each pane. Resizing is re
 Resizing can be disabled for individual panes by setting `false` to the [resizable](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel#resizable) property within paneSettings.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/fixed-pane-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ Pane content can be refreshed dynamically during resizing by using the following
 The resize gripper icon and cursor can be customized using CSS to match application design requirements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/grip-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 

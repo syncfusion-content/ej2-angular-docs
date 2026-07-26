@@ -40,7 +40,7 @@ The following are the standard keys that work on Tooltip.
 In the following preview sample, focusing the input element through `tab` key opens the Tooltip and  pressing the `esc` key closes it.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs21/src/app.component.ts %}
 {% endhighlight %}
 

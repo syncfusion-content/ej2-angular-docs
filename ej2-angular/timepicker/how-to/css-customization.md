@@ -30,7 +30,7 @@ The below sample demonstrates customization of text appearance in a textbox, pop
 | e-active | Applied to active LI element. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 

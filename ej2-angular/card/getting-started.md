@@ -172,7 +172,7 @@ Now, run the application in the browser using the following command.
 Output will be as follows:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/card/card-header-cs2/src/app.component.ts %}
 {% endhighlight %}
 

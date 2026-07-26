@@ -32,7 +32,7 @@ dashboard.removeAll();
 The following sample demonstrates how to add and remove panels dynamically in the Dashboard Layout component. Panels can be added at any desired position with specified dimensions by configuring values in the numeric inputs and clicking the add button. Panels can be removed individually by selecting their ID.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/add-remove-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 

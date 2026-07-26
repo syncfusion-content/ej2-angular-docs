@@ -53,7 +53,7 @@ It helps to provide the information about the widget for assistive technology to
 
 * **Aria-disabled** : attribute indicates the disabled state of this Calendar component.
 
-* **Aria-activedescendent** : attribute helps in managing the current active child of the Calendar component.
+* **Aria-activedescendant** : attribute helps in managing the current active child of the Calendar component.
 
 * **Role** : attributes gives assistive technologies information about how to handle each element in a widget.
 
@@ -87,7 +87,7 @@ It supports the below list of shortcut keys.
 > To focus the Calendar component use the `alt+t` keys.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

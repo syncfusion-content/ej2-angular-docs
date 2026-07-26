@@ -25,7 +25,7 @@ After that, the DateTimePicker value will be selected based on the ngModel value
 The following example  demonstrates template driven forms with DateTimePicker component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/template-driven-cs1/src/app.component.ts %}
 {% endhighlight %}
 

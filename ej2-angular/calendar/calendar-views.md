@@ -22,7 +22,7 @@ Use the [`start`](https://ej2.syncfusion.com/angular/documentation/api/calendar#
 The following example demonstrates how to set the `year` as the start view of the Calendar.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -42,7 +42,7 @@ By defining the start and depth property with the different view, drill-down and
 > Always the depth view has to be smaller than the start view.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ You can restrict the calendar's drill down navigation by defining the [`start`](
 The following example demonstrates how to select the dates in `year` view.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 

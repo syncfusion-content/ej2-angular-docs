@@ -17,7 +17,7 @@ The popup action item have an icon or image to provide visual representation of 
 In the following sample, the icons for edit, delete, mark as read  and like message menu items are added using the iconCss property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/popup-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ Actions in DropDownButton can be used to navigate to the other web page when act
 In the following sample, navigation URL for Flipkart, Amazon, and Snapdeal action items are added using the `url` property:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ Popup items can be customized using the [`beforeItemRender`](https://ej2.syncfus
 The following popup template is customized using `beforeItemRender` event by appending `span` and `div` element on each `li` rendering:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ The whole popup can be customized as per the requirement. In the following examp
 In the following sample, the whole popup item is customized as table template by giving `div` as target and it can be achieved using `target` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/popup-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ You can enable separators to group the popup items using the `separator` propert
 In the following sample, cut, copy, and paste popup items are grouped using the separator property:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/accessibility-cs2/src/app.component.ts %}
 {% endhighlight %}
 

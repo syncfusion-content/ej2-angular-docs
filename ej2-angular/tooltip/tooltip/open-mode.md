@@ -33,7 +33,7 @@ To open the tooltip on multiple actions (e.g., hover or click), assign the `open
 The following code example demonstrates how to set the open mode for tooltips.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs30/src/app.component.ts %}
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ The `custom` mode allows the tooltip to appear on user-defined custom actions su
 The following code example demonstrates how to define custom open mode for the tooltip.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs31/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ The following code example demonstrates how to define custom open mode for the t
 With this mode set to `true`, Tooltips can be made to show up on the screen as long as the close icon is pressed. In this mode, close icon is attached to the Tooltip located at the top right corner. This mode can be enabled or disabled using the `isSticky` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs32/src/app.component.ts %}
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ With this mode set to `true`, Tooltips can be made to show up on the screen as l
 The Tooltips can be opened or closed after some delay by using the `openDelay` and `closeDelay` properties.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs33/src/app.component.ts %}
 {% endhighlight %}
 

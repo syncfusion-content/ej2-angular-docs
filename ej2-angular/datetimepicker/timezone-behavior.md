@@ -29,7 +29,7 @@ N> The `serverTimezoneOffset` property is applicable **only for pre-bound values
 The following example illustrates the output in your browser
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/timezone-cs1/src/app.component.ts %}
 {% endhighlight %}
 

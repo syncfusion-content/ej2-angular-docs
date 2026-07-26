@@ -24,7 +24,7 @@ The position values of Speed Dial are as follows:
 * BottomRight
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ You can open/close the Speed Dial action items programmatically using [`show`](h
 Below example demonstrates open/close action items on button click.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/position-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -86,7 +86,7 @@ Below example demonstrates open/close action items on button click.
 You can refresh the position of the Speed Dial using [`refreshPosition`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/#refreshposition) method when the `target`position is changed.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/position-cs3/src/app.component.ts %}
 {% endhighlight %}
 

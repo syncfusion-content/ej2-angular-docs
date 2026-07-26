@@ -23,7 +23,7 @@ Load translation objects in an application using the `load` function of the `L10
 The following sample sets the French culture for the Dialog and changes the close button's tooltip text.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 

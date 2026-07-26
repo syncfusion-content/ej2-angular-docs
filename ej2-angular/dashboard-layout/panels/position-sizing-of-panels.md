@@ -36,7 +36,7 @@ Panels within the layout can be easily positioned or ordered using the [`row`](h
 The following sample demonstrates the positioning of panels within the dashboard layout using the row and column properties of the panels.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/positioning-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ Panel size can be controlled by defining the [`sizeX`](https://ej2.syncfusion.co
 The following sample demonstrates the sizing of panels within the dashboard layout using the sizeX and sizeY properties of the panels.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/sizing-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 

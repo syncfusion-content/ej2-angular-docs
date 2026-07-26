@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 This section explains about how to toggle between the switch states using [`toggle`](https://ej2.syncfusion.com/angular/documentation/api/switch/#toggle) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/switch/text-cs2/src/app.component.ts %}
 {% endhighlight %}
 

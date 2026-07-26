@@ -34,7 +34,7 @@ setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rollin
 > The following sample renders a Grid component with a custom spinner using the `setSpinner` method. Define the styles for the template in `index.css`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/spinner/set-spinner-cs1/src/app.component.ts %}
 {% endhighlight %}
 

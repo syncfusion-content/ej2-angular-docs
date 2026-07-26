@@ -21,7 +21,7 @@ The following example demonstrates the persistence of selected date on page refr
 Select or enter a date value and then refresh the page by clicking the button (Refresh). Now the previously selected date will be persisted.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/state-persistence-cs1/src/app.component.ts %}
 {% endhighlight %}
 

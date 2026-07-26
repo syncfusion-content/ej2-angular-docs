@@ -23,7 +23,7 @@ The default responsive breakpoint can be customized using the [`mediaQuery`](htt
 The following example demonstrates how to configure the [`mediaQuery`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#mediaquery) property to trigger the stacked layout at 700px screen width:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/responsive-adaptive-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change the first day of week in Angular Calendar component | Syncfusion
+title: Change the first day of week in Angular Calendar | Syncfusion
 description: Learn here all about Change the first day of week in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Change the first day of week 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Change the first day of week in Angular Calendar component
 
-The Calendar provides an option to change the first day of the week by using the [`firstDayOfWeek`](https://ej2.syncfusion.com/angular/documentation/api/calendar#firstdayofweek) property.
+The Calendar provides an option to change the first day of the week by using the [`firstDayOfWeek`](https://ej2.syncfusion.com/angular/documentation/api/calendar/index-default#firstdayofweek) property.
 Day of the week starts from 0(Sunday) to 6(Saturday).
 
 > By default, the first day of week will be based on culture.
@@ -18,7 +18,7 @@ Day of the week starts from 0(Sunday) to 6(Saturday).
 The following example demonstrates the Calendar with `Tuesday` as first day of the week.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 

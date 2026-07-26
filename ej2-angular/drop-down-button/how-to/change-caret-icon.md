@@ -17,7 +17,7 @@ In the following example, the up arrow is updated on popup close and down arrow 
 `e-caret-up` class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/updown-cs1/src/app.component.ts %}
 {% endhighlight %}
 

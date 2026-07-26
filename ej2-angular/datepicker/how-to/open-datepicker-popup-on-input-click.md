@@ -15,7 +15,7 @@ You can open the DatePicker popup on input focus by calling the `show` method in
 The following example demonstrates how to open the DatePicker popup when the input is focused.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/open-popup-cs1/src/app.component.ts %}
 {% endhighlight %}
 

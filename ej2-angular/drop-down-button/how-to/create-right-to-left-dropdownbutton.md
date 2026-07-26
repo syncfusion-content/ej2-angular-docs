@@ -15,7 +15,7 @@ DropDownButton component has RTL support. This can be achieved by setting [`enab
 The following example illustrates how to enable right-to-left support in DropDownButton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/disabled-cs1/src/app.component.ts %}
 {% endhighlight %}
 

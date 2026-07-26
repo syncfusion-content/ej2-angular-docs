@@ -213,7 +213,7 @@ npm start
 The following example demonstrates a basic DashboardLayout by adding the panels property directly into the HTML element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 

@@ -16,7 +16,7 @@ The Badge component can be integrated with the Avatar component to create notifi
 The default avatar (`e-avatar`) and circle avatar (`e-avatar-circle`) classes work seamlessly with notification badges (`e-badge-notification`) to create these enhanced user interface elements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/avatar/badge-cs2/src/app.component.ts %}
 {% endhighlight %}
 

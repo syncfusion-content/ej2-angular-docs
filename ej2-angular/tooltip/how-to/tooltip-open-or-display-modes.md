@@ -39,7 +39,7 @@ The tooltip appears when you focus on a target element (e.g., through the Tab ke
 The tooltip does not trigger by any default action. Bind your own events and use the `open()` or `close()` methods.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/open-mode-cs2/src/app.component.ts %}
 {% endhighlight %}
 

@@ -14,18 +14,18 @@ We are excited to introduce `z-order` support in the Image Editor. It's a powerf
  
 Types of adjustment in the Image Editor `z-order` support.
 
-* [Bring forward](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#bringforward) - Switch the selected annotation with the annotation one layer ahead of it.
+* [Bring forward](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#bringforward) - Switch the selected annotation with the annotation one layer ahead of it.
 
-* [Sent Backward](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#sendbackward) - Switch the selected annotation with the annotation one layer behind it.
+* [Sent Backward](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#sendbackward) - Switch the selected annotation with the annotation one layer behind it.
 
-* [Bring to Front](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#bringtofront) - Move the selected annotation to ahead of all other annotations.
+* [Bring to Front](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#bringtofront) - Move the selected annotation to ahead of all other annotations.
 
-* [Send to Back](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#sendtoback) - Move the selected annotation to behind all other annotations.
+* [Send to Back](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#sendtoback) - Move the selected annotation to behind all other annotations.
 
 In the following example, you can use the `z-order` support.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/image-editor/default-cs40/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}

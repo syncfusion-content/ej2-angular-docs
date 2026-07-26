@@ -23,7 +23,7 @@ To know more about the date format standards, refer to the [Internationalization
 The following example demonstrates the DateTimePicker with the custom format (`yyyy-MM-dd hh:mm`).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ When the user types the date and time in any of the specified input formats, it 
 The following example demonstrates the DateTimePicker with multiple input formats.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 

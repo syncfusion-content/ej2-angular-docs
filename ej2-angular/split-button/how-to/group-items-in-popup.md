@@ -15,7 +15,7 @@ Grouped items are possible in SplitButton by templating entire popup with ListVi
 In this following example, ListView is created and its element is set as [`target`](https://ej2.syncfusion.com/angular/documentation/api/split-button#target) for SplitButton.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
 

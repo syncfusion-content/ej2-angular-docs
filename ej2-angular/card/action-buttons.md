@@ -37,7 +37,7 @@ By default, action buttons are positioned horizontally, and they can also be ali
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/card/card-action-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 

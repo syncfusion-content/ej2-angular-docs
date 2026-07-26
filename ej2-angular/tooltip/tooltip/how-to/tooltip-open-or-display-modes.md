@@ -19,7 +19,7 @@ Define the tooltip's open mode to control when it displays on hover, focus, or c
 * **Custom** - Tooltip is not triggered by default actions. Bind your own events and use the `open` or `close` methods.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/open-mode-cs3/src/app.component.ts %}
 {% endhighlight %}
 

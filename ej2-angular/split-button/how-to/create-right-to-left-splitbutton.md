@@ -15,7 +15,7 @@ SplitButton component has RTL support. This can be achieved by setting [`enableR
 The following example illustrates how to enable right-to-left support in SplitButton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/disabled-cs1/src/app.component.ts %}
 {% endhighlight %}
 

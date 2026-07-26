@@ -14,22 +14,22 @@ The Dialog component supports templates for the header, content, and footer sect
 
 ## Header
 
-The Dialog header content is provided through the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#header) property as text or HTML string. A close button is included as built-in support and can be enabled using the [`showCloseIcon`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#showcloseicon) property.
+The Dialog header content is provided through the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#header) property as text or HTML string. A close button is included as built-in support and can be enabled using the [`showCloseIcon`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#showcloseicon) property.
 
 ## Footer
 
-The Dialog footer is enabled by adding built-in [`buttons`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#buttons) or providing HTML content through the [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#footertemplate) property.
+The Dialog footer is enabled by adding built-in [`buttons`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) or providing HTML content through the [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#footertemplate) property.
 
-> The `buttons` and [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#footertemplate) properties cannot be used together.
+> The `buttons` and [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#footertemplate) properties cannot be used together.
 
 ## Content
 
-Update the Dialog content by providing HTML as a string through the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#content) property.
+Update the Dialog content by providing HTML as a string through the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#content) property.
 
 The following example demonstrates using header, footer, and content as templates in the Dialog.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -16,7 +16,7 @@ that can be retrieved through the name. The disabled and unchecked RadioButton v
 In the following code snippet, Credit and Debit card is in the checked state. Now, the value that is in checked state will be sent on form submit.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/radio-button/form-cs1/src/app.component.ts %}
 {% endhighlight %}
 

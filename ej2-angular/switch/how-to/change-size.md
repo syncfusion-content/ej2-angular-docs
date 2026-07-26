@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The different Switch sizes available are default and small. To reduce the size of default Switch to small, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/switch#cssclass) property to `e-small`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/switch/state-cs2/src/app.component.ts %}
 {% endhighlight %}
 

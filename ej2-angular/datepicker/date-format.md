@@ -23,7 +23,7 @@ To know more about the date format standards, refer to the [Internationalization
 The following example demonstrates the DatePicker with the custom format (`yyyy-MM-dd`).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ Format date is a process of converting date object into a formatted string value
 The following example demonstrates how to parse the date value and format the date value based on the `German` culture and `dd MMMM yyyy` date format. For every value change, the changed date object value will be formatted into a string and the text value of the component will be parsed into a date object. These values are showcased in the example.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/parse-format-date-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ When the user types the date in any of the specified input formats, it will be a
 The following example demonstrates the DatePicker with multiple input formats.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 

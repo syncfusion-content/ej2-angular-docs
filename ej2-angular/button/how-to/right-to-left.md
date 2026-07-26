@@ -15,7 +15,7 @@ Button component has RTL support. This can be achieved by setting [`enableRtl`](
 The following example illustrates how to enable right-to-left support in Button component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/block-cs2/src/app.component.ts %}
 {% endhighlight %}
 

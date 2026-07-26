@@ -94,7 +94,7 @@ Use the below list of keys to navigate the Calendar after the popup has opened.
 To focus the DatePicker component use the `alt+t` keys.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

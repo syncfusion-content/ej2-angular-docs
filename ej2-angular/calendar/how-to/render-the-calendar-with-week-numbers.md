@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render the calendar with week numbers in Angular Calendar component | Syncfusion
+title: Render the calendar with week numbers in Angular Calendar | Syncfusion
 description: Learn here all about Render the calendar with week numbers in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Render the calendar with week numbers 
@@ -14,7 +14,7 @@ You can enable the `weekNumber` in Calendar by using the [`weekNumber`](https://
 property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 

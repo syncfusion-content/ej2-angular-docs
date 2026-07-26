@@ -19,7 +19,7 @@ By default, the tooltip entrance occurs over 150 ms using the `ease-out` timing 
 The default animation effects are `FadeIn` for opening and `FadeOut` for closing. The default `duration` is 150 ms and `delay` is 0.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs22/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ Apply animations dynamically to tooltips using the `open` and `close` methods. T
 Refer to the following code snippet to apply animations using public methods:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs23/src/app.component.ts %}
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ Refer to the following code snippet to apply animations using public methods:
 Apply transition effects to tooltips using the `beforeOpen` event as shown in the following code example:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs24/src/app.component.ts %}
 {% endhighlight %}
 

@@ -15,7 +15,7 @@ This section explains about how to open a dialog on SplitButton popup item click
 In the following example, Dialog will open while selecting `Update...` item:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 

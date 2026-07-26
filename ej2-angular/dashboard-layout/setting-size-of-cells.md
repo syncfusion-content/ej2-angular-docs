@@ -23,7 +23,7 @@ Dashboard panels may need to hold data of different sizes, requiring different c
 The following sample demonstrates how to modify cell size using the `columns` and `cellAspectRatio` properties. In this sample, the parent element width is divided into 5 equal cells based on the columns property value, resulting in each cell having a width of 100px. The cell height is 50px based on the cellAspectRatio value 100/50 (i.e., for every 100px of width, 50px will be the height of the cell).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/modifying-cell-size-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ The spacing between each panel in a row and column can be defined using the [`ce
 The following sample demonstrates the usage of the [`cellSpacing`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#cellspacing) property, which helps provide neat and clear data representation.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/setting-cell-spacing-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ The cells collectively form a grid-structured layout that is initially hidden. T
 In the following sample, the gridlines indicate the cells split-up of the layout and the data containers placed over these cells are known as panels.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/graphical-representation-of-layout-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -89,7 +89,7 @@ The Dashboard Layout component can be rendered in right-to-left direction by set
 The following sample demonstrates Dashboard Layout in right-to-left direction.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 

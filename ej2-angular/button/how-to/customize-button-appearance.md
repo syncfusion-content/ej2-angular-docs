@@ -14,7 +14,7 @@ You can customize the appearance of the button by using the Cascading Style Shee
 In the following code snippet the background color, text color, height, width, and sharp corner of the button can be customized through the `e-custom` class for all states (hover, focus, and active).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/howto-cs1/src/app.component.ts %}
 {% endhighlight %}
 

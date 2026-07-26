@@ -44,7 +44,7 @@ The Card header provides an option for adding images within the header section. 
 * Add a header image by creating a `div` element with the `e-card-header-image` class, positioned either before or after the header caption wrapper element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/card/card-header-img-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ The content section in Card components holds text, images, links, and all possib
 * Place the content `div` element within the Card root element or inside any Card inner elements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/card/card-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 

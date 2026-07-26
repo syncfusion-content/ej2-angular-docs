@@ -18,7 +18,7 @@ You can customize the background filler UI using the [`cssClass`](https://ej2.sy
 You can also show reverse progress by adding custom class to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#cssClass) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/progress-button/default-cs5/src/app.component.ts %}
 {% endhighlight %}
 

@@ -17,7 +17,7 @@ This guide explains how to use plain text, HTML markup, templates, or Angular UI
 You can use `ng-template` to render HTML elements directly inside the Splitter pane.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ Refer to the [Accordion within splitter](https://ej2.syncfusion.com/angular/demo
 Plain text content can be added to panes using either inner HTML or the [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel#content) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/plain-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ Plain text content can be added to panes using either inner HTML or the [content
 The Splitter is a layout-based container component. Populate pane content dynamically using existing HTML markup, making it easy to update content without modifying component logic.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/html-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -71,7 +71,7 @@ The Splitter is a layout-based container component. Populate pane content dynami
 Pane [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel#content) can be assigned using query selectors such as element IDs or CSS class names. The following example demonstrates how to load an element into a pane using its ID.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/selector-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -14,7 +14,7 @@ DropdownButton component can be enabled/disabled by giving [`disabled`](https://
 To disable DropdownButton component, the disabled property can be set as `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/disabled-cs2/src/app.component.ts %}
 {% endhighlight %}
 

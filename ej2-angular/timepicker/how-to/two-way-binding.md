@@ -15,7 +15,7 @@ The following example demonstrates how to achieve **two-way binding** by binding
 > The two-way binding can also be achieved only by using **property binding** or **model binding** in the TimePicker component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/two-way-cs1/src/app.component.ts %}
 {% endhighlight %}
 

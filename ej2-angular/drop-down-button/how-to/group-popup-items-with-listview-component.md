@@ -15,7 +15,7 @@ Header in popup items is possible in DropdownButton by templating entire popup w
 In the following example, ListView element is given as `target` to DropDownButton and header can be achieved by [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/list-view/fieldSettingsModel/#groupby) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/header-cs1/src/app.component.ts %}
 {% endhighlight %}
 

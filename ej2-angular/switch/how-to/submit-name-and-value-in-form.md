@@ -15,7 +15,7 @@ The [`name`](https://ej2.syncfusion.com/angular/documentation/api/switch#name) a
 In the following code snippet, USB and Wi-Fi in the [`checked`](../../switch#checked) state, and Bluetooth is in disabled state. Values that are in checked state only be sent on form submit.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/switch/form-cs1/src/app.component.ts %}
 {% endhighlight %}
 

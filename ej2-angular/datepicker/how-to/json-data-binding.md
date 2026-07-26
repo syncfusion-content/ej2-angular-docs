@@ -16,7 +16,7 @@ In this JSON, we have used ISO formatted date string which is frequently used da
 Also our DatePicker component supports the ISO formatted date value, so parsed JSON value can be directly set to DatePicker model.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/json-bind-cs1/src/app.component.ts %}
 {% endhighlight %}
 

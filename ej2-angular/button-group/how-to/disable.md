@@ -21,7 +21,7 @@ To disable whole ButtonGroup, `disabled` attribute should be added to all the bu
 The following example illustrates how to disable the particular and the whole ButtonGroup.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs4/src/app.component.ts %}
 {% endhighlight %}
 

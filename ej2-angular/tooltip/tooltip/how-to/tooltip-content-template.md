@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 Load tooltip [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content/) using template support. Refer to the following code snippet.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/load-html-cs6/src/app.component.ts %}
 {% endhighlight %}
 

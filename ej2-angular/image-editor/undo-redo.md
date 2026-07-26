@@ -22,10 +22,10 @@ The undo action in an image editor allows users to revert the most recent editin
 
 The Redo action in an image editor allows users to reapply previously undone actions or modifications to the image. When the redo command is triggered, the image editor reapplies the last action that was undone, bringing the image back to the state it was in after the action was initially applied. The redo is useful when users want to repeat an action that was previously undone or restore changes that were temporarily reversed. 
 
-In the following example, the [`undo`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#undo) and [`redo`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#redo) method is used in the button click event.
+In the following example, the [`undo`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#undo) and [`redo`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#redo) method is used in the button click event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/image-editor/default-cs27/src/app.component.ts %}
 {% endhighlight %}
 

@@ -213,7 +213,7 @@ The following options are used as arguments when calling the utility functions:
 An alert dialog box is used to display errors, warnings, and information that require user awareness. The alert dialog is displayed with an OK button. When the user clicks the OK button, the alert dialog closes. Use the following code to render a simple alert dialog in an application.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-alert-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -229,7 +229,7 @@ An alert dialog box is used to display errors, warnings, and information that re
 A confirm dialog box displays a specified message along with OK and Cancel buttons. It is used to get approval from the user and typically appears before a critical action. After the user responds, the dialog disappears automatically. Use the following code to render a simple confirm dialog in an application.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-confirm-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -245,7 +245,7 @@ A confirm dialog box displays a specified message along with OK and Cancel butto
 A prompt dialog is used to get input from the user. When the user clicks the OK button, the input value from the dialog is returned. If the user clicks the Cancel button, a null value is returned. After receiving the input, the dialog disappears automatically.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-prompt-cs1/src/app.component.ts %}
 {% endhighlight %}
 

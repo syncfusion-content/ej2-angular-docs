@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add an icons to dialog buttons in Angular Dialog component | Syncfusion
+title: Add an icons to dialog buttons in Angular Dialog | Syncfusion
 description: Learn here all about Add an icons to dialog buttons in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add an icons to dialog buttons 
@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Add icons to dialog buttons in Angular Dialog component
 
-Add icons to dialog buttons using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/dialog/#buttons) property or the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/dialog/#footertemplate) property. For detailed information about dialog buttons, refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/api/dialog/#buttons) section.
+Add icons to dialog buttons using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) property or the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#footertemplate) property. For detailed information about dialog buttons, refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) section.
 
 The following sample demonstrates customizing dialog footer buttons with icons using the `buttons` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dlg-buttons-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -29,7 +29,7 @@ The following sample demonstrates customizing dialog footer buttons with icons u
 The following sample demonstrates customizing dialog footer buttons with icons using the `footerTemplate` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dlg-footer-cs1/src/app.component.ts %}
 {% endhighlight %}
 
