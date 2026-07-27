@@ -32,7 +32,7 @@ Local data can be represented in three ways as described in the following.
 The Mention has provided support to load an array of primitive data such as strings and numbers. Here, both the value and text fields act the same.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ The Mention can generate its list items through an array of complex data. Theref
 In the following example, `ID` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -68,7 +68,7 @@ The Mention can generate its list items through an array of complex data. For th
 In the following example, `Code.ID` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/data-binding-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 The following sample displays the first 6 contacts from `Customers` table of the `Northwind` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/data-binding-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -106,7 +106,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 You can use `WebApiAdaptor` to bind mention with Web API created using OData endpoint.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/data-binding-cs4/src/app.component.ts %}
 {% endhighlight %}
 

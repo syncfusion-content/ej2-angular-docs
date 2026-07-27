@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 In the following code snippet, the value that is in selected state will be sent on form submit.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 

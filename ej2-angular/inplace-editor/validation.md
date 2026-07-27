@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Validation in Angular Inplace editor component
 
-**In-place Editor** component supports validation and it can be achieved by adding rules to the [validationRules](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#validationrules) property, its child property `key` must be same as [name](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#name) property, otherwise validation not performed. Submitting data to the server or calling the [validate](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#validate) method validation executed.
+**In-place Editor** component supports validation and it can be achieved by adding rules to the [validationRules](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validationrules) property, its child property `key` must be same as [name](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#name) property, otherwise validation not performed. Submitting data to the server or calling the [validate](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validate) method validation executed.
 
 ## Validation Rules
 
@@ -41,7 +41,7 @@ Step 1: To perform default validation in In-place Editor the `name` property is 
 Step 2:  The corresponding name specified in the name property should bind with the `validationRules` property. For example, in the below code snippet, the `Number`  in the name property is bind with the `maxLength`  of validationRules.  Likewise, you can bind with the in-build validation configurations in the above table.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/in-place-editor/validation-sample-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -52,10 +52,10 @@ Step 2:  The corresponding name specified in the name property should bind with 
   
 {% previewsample "page.domainurl/samples/in-place-editor/validation-sample-cs1" %}
 
-In the following sample, first editor value submitted without select any date, so the default error message will be displayed below the `DatePicker` element. Second editor configured with the [validating](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#validating) event with the handler. In handler event [errorMessage](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/validateEventArgs/#errormessage) argument value modified and it will show below the `DatePicker` element.
+In the following sample, first editor value submitted without select any date, so the default error message will be displayed below the `DatePicker` element. Second editor configured with the [validating](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validating) event with the handler. In handler event [errorMessage](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/validateEventArgs#errormessage) argument value modified and it will show below the `DatePicker` element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/in-place-editor/validation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -66,6 +66,6 @@ In the following sample, first editor value submitted without select any date, s
   
 {% previewsample "page.domainurl/samples/in-place-editor/validation-cs1" %}
 
-* For more details about validation configuration, refer this documentation [section](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#validating).
+* For more details about validation configuration, refer this documentation [section](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validating).
 
 * For custom validation except specifying validationRules, specify errorMessage at validating event, message will be shown when the value is `Empty`.

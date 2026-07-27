@@ -35,7 +35,7 @@ Local data can be bound to the DropDownList from different types of arrays as de
 The DropDownList supports loading an array of primitive data, such as strings and numbers. In this case, the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#text) fields are mapped to the same field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ The DropDownList can generate its list items from an array of objects. To do thi
 In the following example, the `Id` and `Game` columns are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#text) fields, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -71,7 +71,7 @@ The DropDownList can also be bound to an array of nested complex objects. To do 
 In the following example, the `Code.Id` and `Country.Name` nested columns are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#text) fields, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -89,7 +89,7 @@ The DropDownList supports retrieving data from remote data services with the hel
 The following sample displays the first six contacts from the "Customers" table of the `Northwind` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 

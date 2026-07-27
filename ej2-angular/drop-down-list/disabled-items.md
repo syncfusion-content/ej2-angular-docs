@@ -15,7 +15,7 @@ The DropDownList component allows you to disable specific items to prevent them 
 In the following sample, certain states are disabled based on the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#disabled) field in the data source.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs21/src/app.component.ts %}
 {% endhighlight %}
 

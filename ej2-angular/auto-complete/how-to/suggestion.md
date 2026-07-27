@@ -15,7 +15,7 @@ The AutoComplete supports to displaying suggestion list upon focusing an empty a
 In the below sample, showcase that how to show `suggestion list` with AutoComplete.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 

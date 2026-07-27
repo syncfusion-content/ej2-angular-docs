@@ -15,7 +15,7 @@ By using the `highlightSearch` method, you can highlight the matched character i
 The following example demonstrates about how to highlight the matched character in filtering.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 

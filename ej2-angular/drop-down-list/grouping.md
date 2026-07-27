@@ -19,7 +19,7 @@ To get started quickly with grouping in angular DropDownList component, you can 
 In the following sample, vegetables are grouped according on its category using `groupBy` field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 

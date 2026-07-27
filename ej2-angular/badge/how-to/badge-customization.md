@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Badge customization in Angular Badge component
 
-## Colour customization
+## Color customization
 
-Even though badges come with `8 predefined colors`, you can also customize the colour of the badge as desired.
+Even though badges come with `8 predefined colors`, you can also customize the color of the badge as desired.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/color-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -34,7 +34,7 @@ Badges are designed to change its size based on the content. To change the size 
 adjust the `font size` of the badge.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/size-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -53,7 +53,7 @@ Even though the badges support the conventional `top` and `bottom` positions, th
 This can be done by adding a custom class to the badge element to override the default position applied from the source.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/custom-position-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

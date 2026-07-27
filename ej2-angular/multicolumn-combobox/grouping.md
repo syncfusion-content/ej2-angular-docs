@@ -15,7 +15,7 @@ The MultiColumn ComboBox supports wrapping nested elements into a group based on
 In the following sample, countries are grouped according on its category using `groupBy` field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/groupby/src/app.component.ts %}
 {% endhighlight %}
 

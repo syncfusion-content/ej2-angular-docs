@@ -27,7 +27,7 @@ The DropDownList can generate its list items through an array of complex data. F
 In the following example, `id` column and `text` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/virtual-scroll/src/app.component.ts %}
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ The DropDownList supports the retrieval of data from remote data services with t
 The following sample displays the OrderId from the `Orders` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/virtual-scroll-remote/src/app.component.ts %}
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ When the `enableVirtualization` property is enabled, the `take` property provide
 The following sample shows the example for Customizing items count in virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/virtual-scroll-items/src/app.component.ts %}
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ The DropDownList component supports grouping with Virtualization. It allows you 
 The following sample shows the example for Grouping with Virtualization. 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/virtual-scroll-group/src/app.component.ts %}
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ The DropDownList component supports Filtering with Virtualization. The DropDownL
 The following sample shows the example for Filtering with Virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/virtual-scroll-filter/src/app.component.ts %}
 {% endhighlight %}
 

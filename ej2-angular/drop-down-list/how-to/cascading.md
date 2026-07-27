@@ -20,7 +20,7 @@ The following example, shows the cascade behavior of country, state, and city
 DropDownList. Here, the `dataBind` method is used to reflect the property changes immediately to the DropDownList.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/cascading-cs1/src/app.component.ts %}
 {% endhighlight %}
 

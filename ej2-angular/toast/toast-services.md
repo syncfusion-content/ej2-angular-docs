@@ -23,7 +23,7 @@ The Toast component support 4 types of predefined toast with Essential<sup style
 | [timeOut](https://ej2.syncfusion.com/angular/documentation/api/toast/#timeOut) | Specifies the Toast display time duration on the page in milliseconds. Once the time expires, Toast message will be removed. Setting 0 as a time out value displays the Toast on the page until the user closes it manually. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs22/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ The Toast component support 4 types of predefined toast with Essential<sup style
 The utility function can be called using the [ToastModel](https://ej2.syncfusion.com/angular/documentation/api/toast/toastModel/) as argument to show the toast where all the properties in the `ToastModel` like any events, position, close icon, action buttons, etc. can be used in the `ToastUtility.show`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs23/src/app.component.ts %}
 {% endhighlight %}
 

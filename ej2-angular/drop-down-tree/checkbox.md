@@ -15,7 +15,7 @@ The Dropdown Tree component allows you to check more than one item from the tree
 In the following example, the `showCheckBox` property is enabled.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/checkboxes-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -43,7 +43,7 @@ The auto check functionality follows these rules:
 In the following example, the `autoCheck` property is enabled to demonstrate hierarchical checkbox behavior.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/autocheck-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -65,7 +65,7 @@ When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/
 By default, `Select All` and `Unselect All` text values will be displayed along with the checkbox in the popup header to indicate the action to be performed on checking or unchecking the checkbox. You can customize these text labels by using [`selectAllText`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#selectalltext) and [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#unselectalltext) properties respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdowntree/select-all-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

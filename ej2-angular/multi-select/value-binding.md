@@ -26,7 +26,7 @@ Primitive data types include:
 The following sample demonstrates preselected values for primitive data types:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/primitive/src/app.component.ts %}
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ The MultiSelect component supports object binding for datasets containing comple
 The following sample demonstrates preselected values for object data types:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/object/src/app.component.ts %}
 {% endhighlight %}
 

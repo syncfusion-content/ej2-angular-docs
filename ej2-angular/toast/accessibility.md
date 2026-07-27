@@ -53,7 +53,7 @@ The component implements the keyboard navigation support by following the [WAI-A
 | role | <b>alert:</b> <br/>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identifies the element as the container where alert content will be added or updated. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs1/src/app.component.ts %}
 {% endhighlight %}
 

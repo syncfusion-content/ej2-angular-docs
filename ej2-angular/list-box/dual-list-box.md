@@ -26,7 +26,7 @@ The following operations can be performed in dual list box,
 The following example illustrates how to move items from `Group A` to `Group B` list box.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/dual-list-box-cs1/src/app.component.ts %}
 {% endhighlight %}
 

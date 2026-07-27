@@ -15,7 +15,7 @@ The ListBox supports scrolling and it can be achieved by restricting the height 
 In the following sample, `height` of the list box is restricted to `290px`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 

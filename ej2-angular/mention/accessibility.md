@@ -63,7 +63,7 @@ You can use the following key shortcuts to access the Mention without interrupti
 | <kbd>Tab</kbd> | Focuses on the next TabIndex element on the page when the popup is closed. Otherwise, inserts the selected popup list item and closes the popup list. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/accessibility-cs1/src/app.component.ts %}
 {% endhighlight %}
 

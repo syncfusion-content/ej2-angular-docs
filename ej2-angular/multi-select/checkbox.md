@@ -15,7 +15,7 @@ The MultiSelect component provides built-in support for selecting multiple value
 To enable checkbox functionality, inject the `CheckBoxSelection` module into the MultiSelect component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/
 For the unSelect All option, the unSelect All text displays by default. The name attribute of the unSelect All option can be customized using the [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#unselectalltext) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/checkbox-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ For the unSelect All option, the unSelect All text displays by default. The name
 The limit for selected items can be defined using the [`maximumSelectionLength`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#maximumselectionlength) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/checkbox-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ The limit for selected items can be defined using the [`maximumSelectionLength`]
 The [`enableSelectionOrder`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#enableselectionorder) property enables reordering of selected items when the popup is visible.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/checkbox-cs4/src/app.component.ts %}
 {% endhighlight %}
 

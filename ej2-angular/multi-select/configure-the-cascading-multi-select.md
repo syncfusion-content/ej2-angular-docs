@@ -21,7 +21,7 @@ This behavior is configured by using the `change` event of the parent component.
 The following example demonstrates the cascade behavior of country, state, and city MultiSelect components. The `dataBind` method ensures that property changes are reflected immediately in the MultiSelect components, integrating seamlessly with Angular's change detection cycle.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/cascading-cs1/src/app.component.ts %}
 {% endhighlight %}
 

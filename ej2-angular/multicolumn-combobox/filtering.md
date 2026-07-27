@@ -19,7 +19,7 @@ You can change the filter type by using the [filterType](https://ej2.syncfusion.
 In the following examples, data filtering is done with `EndsWith` type.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/filtering/src/app.component.ts %}
 {% endhighlight %}
 

@@ -15,7 +15,7 @@ The Multi select component allows users to add new options that are not present 
 The following sample demonstrates configuration of custom value support with the Multi select component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 

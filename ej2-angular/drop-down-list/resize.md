@@ -15,7 +15,7 @@ You can dynamically adjust the size of the popup in the DropDownList component b
 The following sample illustrates the implementation of the Popup Resize feature.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs22/src/app.component.ts %}
 {% endhighlight %}
 

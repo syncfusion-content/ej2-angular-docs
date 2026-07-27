@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 Model binding enables two-way data binding between the Query Builder and custom components used in the field, operator, and value columns. Implement model binding by configuring the `fieldModel`, `operatorModel`, and `valueModel` properties.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/model-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 

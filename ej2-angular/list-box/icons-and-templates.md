@@ -17,7 +17,7 @@ To place the icon on a list box, set the [`iconCss`](https://ej2.syncfusion.com/
 In the following sample, icon classes are mapped with `iconCss` field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/icons-and-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ ListBox items can be customized according to the requirement using [`itemTemplat
 In the following sample, the items in the cart are displayed using list box template,
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 

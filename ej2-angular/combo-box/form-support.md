@@ -26,7 +26,7 @@ so the FormsModule will  automatically detect the ComboBox as a form element. Af
 The following example  demonstrates how to achieve a two-way data binding.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/form-support-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ You can declare the formControlName to ComboBox as usual.then,you must create a 
 The following example demonstrates  how to use the reactive forms.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/reactive-form-cs1/src/app.component.ts %}
 {% endhighlight %}
 

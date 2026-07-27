@@ -1,6 +1,6 @@
 // app.component.ts
 import { Component } from '@angular/core';
-import { SankeyAllModule } from '@syncfusion/ej2-angular-charts';
+import { SankeyModule } from '@syncfusion/ej2-angular-charts';
 import {
   SankeyTooltipService,
   SankeyLegendService,
@@ -10,7 +10,7 @@ import { Browser } from '@syncfusion/ej2-base';
 @Component({
   standalone: true,
   selector: 'app-container',
-  imports: [SankeyAllModule],
+  imports: [SankeyModule],
   providers: [SankeyTooltipService, SankeyLegendService],
   template: `
     <div class="control-pane">

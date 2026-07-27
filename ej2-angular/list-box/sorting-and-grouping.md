@@ -17,7 +17,7 @@ The ListBox supports sorting of available items in the alphabetical order that c
 In the following example, the `SortOrder` is set as `Descending`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ The ListBox supports to wrap the nested element into a group based on its catego
 In the following example, vegetables are grouped based on its category.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 

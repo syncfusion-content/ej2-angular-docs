@@ -16,7 +16,7 @@ The following example, shows the cascade behavior of country, state, and city
 MultiSelect. Here, the `dataBind` method is used to reflect the property changes immediately to the MultiSelect.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/cascading-cs2/src/app.component.ts %}
 {% endhighlight %}
 

@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Query builder component
 
-The Query Builder uses `DataManager` to support both local and remote data sources. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property with either a `DataManager` instance or a JavaScript object array.
+The Query Builder uses `DataManager` to support both local and remote data sources. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) property with either a `DataManager` instance or a JavaScript object array.
 
 ## Local data
 
-Bind local data by assigning a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property. Alternatively, create a `DataManager` instance with local data.
+Bind local data by assigning a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) property. Alternatively, create a `DataManager` instance with local data.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -32,10 +32,10 @@ Bind local data by assigning a JavaScript object array to the [`dataSource`](htt
 
 ## Remote data
 
-Bind remote data by assigning a `DataManager` instance configured with a service endpoint to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property. Provide the endpoint URL to enable communication with the remote data source.
+Bind remote data by assigning a `DataManager` instance configured with a service endpoint to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) property. Provide the endpoint URL to enable communication with the remote data source.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ Bind remote data by assigning a `DataManager` instance configured with a service
 [`OData`](https://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for data consumption and creation. Retrieve data from OData services using the `DataManager`. The following example demonstrates remote data binding with OData.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ Bind remote data by assigning a `DataManager` instance configured with a service
 OData v4 is an improved version of the OData protocol. The `DataManager` supports OData v4 services for advanced data retrieval and consumption. To bind OData v4 services, use the `ODataV4Adaptor`. For detailed information, refer to the [`OData v4 specification`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/default-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -139,7 +139,7 @@ export class AppComponent implements OnInit {
 You can use the created conditions in DataManager through the getPredicate method. This method creates predicates which is used as conditions in DataManager.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/filtering-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -157,7 +157,7 @@ Complex Data Binding allows you to create subfield for columns. To implement com
 In the following sample, complex data was bound in nested columns.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/complex-data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -167,8 +167,8 @@ If the map is not visible, the page is blank, or you receive errors, check the f
 ## See also
 
 - [Render and configure multiple map layers](layers)
-- [Add markers, tooltips, and labels to the map](markers.md)
-- [Display labels on shapes and markers.](data-labels.md) 
-- [Add a legend to describe map colors](legend.md)
-- [Use Bing or Azure as the map tile provider](map-providers.md)
-- [Bind remote or JSON data to the map](populate-data.md) 
+- [Add markers, tooltips, and labels to the map](marker)
+- [Display labels on shapes and markers.](data-labels) 
+- [Add a legend to describe map colors](legend)
+- [Use Bing or Azure as the map tile provider](map-providers)
+- [Bind remote or JSON data to the map](populate-data) 

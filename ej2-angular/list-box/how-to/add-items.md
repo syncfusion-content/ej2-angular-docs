@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 To add an item or multiple items, [`addItems`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#additems) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items will be added while clicking `Add Items` button.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 

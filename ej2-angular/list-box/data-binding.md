@@ -31,7 +31,7 @@ Local data can be represented by the following ways as described below.
 The ListBox has support to load array of primitive data such as strings or numbers. Here, both value and text field acts as same.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusio
 In the following example, `id` and `sports` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusio
 In the following example, `Sports.Name` column from complex data have been mapped to the `text` field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -87,7 +87,7 @@ The ListBox supports retrieval of data from remote data services with the help o
 The following sample displays the first 10 products from `Products` table of the `Northwind` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 

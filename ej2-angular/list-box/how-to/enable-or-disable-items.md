@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 To enable or disable items in the list box, [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#enableitems) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items are disabled by default and by clicking `Enable Items` buttons, the disabled items will be enabled.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 

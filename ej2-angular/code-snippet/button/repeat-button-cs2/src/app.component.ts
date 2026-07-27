@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { ButtonModule, ClickEventArgs } from '@syncfusion/ej2-angular-buttons'
+import { ButtonModule, ClickedEventArgs } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
 
 @Component({
@@ -19,8 +19,8 @@ export class AppComponent {
   public repeatInterval: number = 100;
   public disabled: boolean = false;
 
-  public onClicked(args: ClickEventArgs): void {
-    if (args) {
+  public onClicked(args: ClickedEventArgs): void {
+    if (args.isRepeat) {
       this.repeatCount++;
     } else {
       this.initialCount++;
@@ -50,5 +50,3 @@ export class AppComponent {
     this.repeatCount = 0;
   }
 }
-
-

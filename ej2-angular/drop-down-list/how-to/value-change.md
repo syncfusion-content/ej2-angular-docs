@@ -16,7 +16,7 @@ using [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-
 The following example demonstrate, how to check whether value change happened by manual or programmatic.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/manual-programmatic-cs1/src/app.component.ts %}
 {% endhighlight %}
 

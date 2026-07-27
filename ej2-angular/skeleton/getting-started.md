@@ -171,7 +171,7 @@ ng serve
 The following example shows a basic Skeleton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/skeleton/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -26,7 +26,7 @@ Primitive data types include:
 The following sample shows the example for preselect values for primitive data type
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/primitive/src/app.component.ts %}
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ In the DropDown List control, object binding allows you to bind to a dataset of 
 The following sample shows the example for preselect values for object data type
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/object/src/app.component.ts %}
 {% endhighlight %}
 

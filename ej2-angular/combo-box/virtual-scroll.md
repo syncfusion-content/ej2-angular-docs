@@ -27,7 +27,7 @@ The Combobox can generate its list items through an array of complex data. For t
 In the following example, `id` column and `text` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/virtual-scroll/src/app.component.ts %}
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ The Combobox supports the retrieval of data from remote data services with the h
 The following sample displays the OrderId from the `Orders` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/virtual-scroll-remote/src/app.component.ts %}
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ When the `enableVirtualization` property is enabled, the `take` property provide
 The following sample shows the example for Customizing items count in virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/virtual-scroll-items/src/app.component.ts %}
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ The Combobox component supports grouping with Virtualization. It allows you to o
 The following sample shows the example for Grouping with Virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/virtual-scroll-group/src/app.component.ts %}
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ The ComboBox component supports Filtering with Virtualization. The ComboBox incl
 The following sample shows the example for Filtering with Virtualization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/virtual-scroll-filter/src/app.component.ts %}
 {% endhighlight %}
 

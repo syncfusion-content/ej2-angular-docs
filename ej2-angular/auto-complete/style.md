@@ -131,7 +131,7 @@ Use the following CSS to customize the appearance of popup element.
 You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e-input-group.e-control-wrapper.e-float-input .e-float-text::after</b> class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/asterisk-cs1/src/app.component.ts %}
 {% endhighlight %}
 

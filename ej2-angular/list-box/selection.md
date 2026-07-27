@@ -22,7 +22,7 @@ On selection of each list box item, [`change`](https://ej2.syncfusion.com/angula
 To enable single selection in the list box, [`mode`](https://ej2.syncfusion.com/angular/documentation/api/list-box/selectionSettingsModel/#mode) should be set as `Single` in [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#selectionsettings) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 
@@ -42,7 +42,7 @@ To select multiple items, use the SHIFT, CTRL, and arrow keys to make selections
 > By default, the selection mode is set as `Multiple`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ The ListBox supports checkbox in default and grouped list box which is used to s
 To select all the items in the list box, [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/list-box/selectionSettingsModel/#showselectall) should be set as `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 

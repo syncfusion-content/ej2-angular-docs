@@ -14,12 +14,12 @@ This section explains on customizing the Toast appearance using built-in APIs.
 
 ## Title and content template
 
-Toast can be created with the notification message. The message contains [`title`](https://ej2.syncfusion.com/angular/documentation/api/toast/#title) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/toast/#content) of the Toasts. Title and contents are adaptable in any resolution.
+Toast can be created with the notification message. The message contains [`title`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#title) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#content) of the Toasts. Title and contents are adaptable in any resolution.
 
 > Title or Content property can be given as HTML element/element ID as a string that can be displayed as a Toast.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -32,28 +32,28 @@ Toast can be created with the notification message. The message contains [`title
 
 ## Specifying custom target
 
-By default toast can be rendered in the document body, we can change the target position for toast rendering using [`target`](https://ej2.syncfusion.com/angular/documentation/api/toast/#target) property. Based on the target [`position`](https://ej2.syncfusion.com/angular/documentation/api/toast/#position) will update.
+By default toast can be rendered in the document body, we can change the target position for toast rendering using [`target`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#target) property. Based on the target [`position`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#position) will update.
 
 ## Close Button
 
-In default [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/toast/#showclosebutton) is not enabled. We can enable it by setting true value. Before expiring toast we can use to close or destroy toasts manually.
+In default [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#showclosebutton) is not enabled. We can enable it by setting true value. Before expiring toast we can use to close or destroy toasts manually.
 
 ## Progress bar
 
-In default [`showProgressBar`](https://ej2.syncfusion.com/angular/documentation/api/toast/#showprogressbar) is not enabled. If we enabled it can visually indicate when will the toast gets expired. Based on the `timeOut` property Progress bar will appear.
+In default [`showProgressBar`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#showprogressbar) is not enabled. If we enabled it can visually indicate when will the toast gets expired. Based on the `timeOut` property Progress bar will appear.
 
 ### Progress bar direction
 
-By default, the [progressDirection](https://ej2.syncfusion.com/angular/documentation/api/toast/#progressDirection) is set to "Rtl" and it will appear from right to left direction. You can change the progressDirection to "Ltr" to make it appear from left to right direction.
+By default, the [progressDirection](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#progressDirection) is set to "Rtl" and it will appear from right to left direction. You can change the progressDirection to "Ltr" to make it appear from left to right direction.
 
 ## Newest on top
 
-In default, newly created toasts will append next with existing toast. We can change the Sequence like inserting before the toast, by enabling the [`newestOnTop`](https://ej2.syncfusion.com/angular/documentation/api/toast/#newestontop).
+In default, newly created toasts will append next with existing toast. We can change the Sequence like inserting before the toast, by enabling the [`newestOnTop`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#newestontop).
 
 Here below sample demonstrates the combination of `target`, `showCloseButton`, `showProgressBar` and `newestOnTop` properties in toast.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ Here below sample demonstrates the combination of `target`, `showCloseButton`, `
 
 ## Width and height
 
-we can set toast dimensions through [`width`](https://ej2.syncfusion.com/angular/documentation/api/toast/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/toast/#height) property. This will individually set all toasts, we can create different custom dimension toasts.
+we can set toast dimensions through [`width`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#height) property. This will individually set all toasts, we can create different custom dimension toasts.
 
 In default toast can be rendered with '300px' width with 'auto' height
 
@@ -76,7 +76,7 @@ In default toast can be rendered with '300px' width with 'auto' height
 Both width and height property allows setting pixels/numbers/percentage. The number value is considered as pixels.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -89,5 +89,5 @@ Both width and height property allows setting pixels/numbers/percentage. The num
 
 ## See Also
 
-* [Prevent duplicate toasts](./how-to/prevent-duplicate-toast-display/)
-* [Customize the progress bar](./how-to/customize-progress-bar-theme-and-sizing/)
+* [Prevent duplicate toasts](./how-to/prevent-duplicate-toast-display)
+* [Customize the progress bar](./how-to/customize-progress-bar-theme-and-sizing)

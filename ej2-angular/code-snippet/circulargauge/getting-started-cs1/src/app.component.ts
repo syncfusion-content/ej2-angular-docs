@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge'
 import { GaugeTooltipService } from '@syncfusion/ej2-angular-circulargauge'
-
-
-
 import { Component } from '@angular/core';
 
 @Component({

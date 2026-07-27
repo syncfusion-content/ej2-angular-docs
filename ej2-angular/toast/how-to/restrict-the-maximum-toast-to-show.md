@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restrict the maximum toast to show in Angular Toast component | Syncfusion
+title: Restrict the maximum toast to show in Toast | Syncfusion
 description: Learn here all about Restrict the maximum toast to show in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Restrict the maximum toast to show 
@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Restrict the maximum toast to show in Angular Toast component
 
-You can restrict the maximum toast count by event callback function. You can terminate the toast displaying process by setting cancel event property in [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/toast/#beforeopen) Event.
+You can restrict the maximum toast count by event callback function. You can terminate the toast displaying process by setting cancel event property in [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#beforeopen) Event.
 
 Here below sample demonstrates restrict toast displaying up to 3. You can restrict by your own count with custom code blocks.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs15/src/app.component.ts %}
 {% endhighlight %}
 
