@@ -155,7 +155,7 @@ ng serve --open
 The output will appear as follows.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/message/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -28,7 +28,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following
 | e-badge-dark      | Represents notification in dark variant.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/types-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -58,7 +58,7 @@ The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 badges are as 
 The circle badge style can be applied by adding the modifier class `.e-badge-circle` to the target element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/circle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -76,7 +76,7 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 The pill badge style can be applied by adding the modifier class `.e-badge-pill` to the target element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/pill-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -94,7 +94,7 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 When badge modifier classes are applied to the anchor tag, the badge’s appearance will change from normal state to hover state on mouseover.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/link-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -114,7 +114,7 @@ target element. Notification badges are used when a content or a context needs s
 While using the notification badge, set the parent element to `position: relative`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/notification-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -134,7 +134,7 @@ similar to notification badges, but in a minimalistic way. While using the dot b
 element to `position: relative` .
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/dot-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -154,7 +154,7 @@ The overlap badge can be used with `notification` or `dot` badge, which overlaps
 parent element to `position: relative`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/overlap-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -174,7 +174,7 @@ to `bottom` using the modifier class `.e-badge-bottom`. For example, the bottom 
 with dot badge to display the status in the avatar as shown in the following sample.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

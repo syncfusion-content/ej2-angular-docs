@@ -17,7 +17,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 components load the dat
 To bind local data to the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components, you can assign a JavaScript array of object or string to the `dataSource` property. The local data source can also be provided as an instance of the `DataManager`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/in-place-editor/data-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -34,12 +34,12 @@ To bind remote data to the Essential<sup style="font-size:70%">&reg;</sup> JS 2 
 
 ### OData V4
 
-The OData V4 is an improved version of OData protocols, and the [DataManager](../data/getting-started/) can also retrieve and consume OData V4 services. To fetch data from the server by using `DataManager` with the adaptor property configure as [ODataV4Adaptor](../data/adaptors/#odatav4-adaptor).
+The OData V4 is an improved version of OData protocols, and the [DataManager](../data/getting-started) can also retrieve and consume OData V4 services. To fetch data from the server by using `DataManager` with the adaptor property configure as [ODataV4Adaptor](../data/adaptors#odatav4-adaptor).
 
 In the following sample, **In-place Editor** renders a `DropDownList` component and its `dataSource` property configured for fetching a data from the server by using `ODataV4Adaptor` with `DataManager`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/in-place-editor/data-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -52,12 +52,12 @@ In the following sample, **In-place Editor** renders a `DropDownList` component 
 
 ### Web API
 
-Data can fetch from the server by using [DataManager](../data/getting-started/) with the adaptor property configure as [WebApiAdaptor](../data/adaptors/#web-api-adaptor).
+Data can fetch from the server by using [DataManager](../data/getting-started) with the adaptor property configure as [WebApiAdaptor](../data/adaptors#web-api-adaptor).
 
 In the following sample, **In-place Editor** render a `DropDownList` component and its `dataSource` property configured for fetching a data from the server by using `WebApiAdaptor` with `DataManager`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/in-place-editor/data-cs3/src/app.component.ts %}
 {% endhighlight %}
 

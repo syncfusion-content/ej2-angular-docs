@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Show different types of toast in Angular Toast component
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toast/#cssclass) property for achieving different types of toast.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#cssclass) property for achieving different types of toast.
 
 | Class | Description |
 | -------- | -------- |
@@ -20,7 +20,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast has the following
 | e-danger | Used to represent a negative Toast. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs16/src/app.component.ts %}
 {% endhighlight %}
 

@@ -17,7 +17,7 @@ Default animation is given as `FadeIn` for showing the toast and `FadeOut` for h
 The sample demonstrates some types of animation that suits Toast. You can check all the animation effects here.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs3/src/app.component.ts %}
 {% endhighlight %}
 
