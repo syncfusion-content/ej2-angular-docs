@@ -17,7 +17,7 @@ To display filtered items in the popup, filter the required data and return it t
 The following sample illustrates how to query the data source and pass the data to the MultiSelect through the [updateData](https://ej2.syncfusion.com/angular/documentation/api/multi-select/filteringEventArgs/#updatedata) method in [filtering](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#filtering) event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ When filtering the list items, you can set the limit for character count to rais
 In the following example, the remote request does not fetch the search data until the search key contains three characters.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ While filtering, you can change the filter type to `contains`, `startsWith`, or 
 In the following examples, data filtering is done with `endsWith` type.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ Data items can be filtered either with or without case sensitivity using the Dat
 The following example shows how to perform case-sensitive filter.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ MultiSelect supports diacritics filtering which will ignore the [diacritics](htt
 In the following sample, data with diacritics are bound as dataSource for MultiSelect.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ In the following sample, data with diacritics are bound as dataSource for MultiS
 You can use the [debounceDelay](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience. By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs19/src/app.component.ts %}
 {% endhighlight %}
 

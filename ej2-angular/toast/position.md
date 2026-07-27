@@ -33,7 +33,7 @@ Toast position can be updated based on predefined positions or user customizable
 Custom `X` and `Y` Position can be given as pixels/numbers/percentage. The number value is considered as pixels. based value top and left value updated in the toast.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs18/src/app.component.ts %}
 {% endhighlight %}
 

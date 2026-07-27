@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The following example demonstrates about how to set limit the search result on filtering.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs18/src/app.component.ts %}
 {% endhighlight %}
 

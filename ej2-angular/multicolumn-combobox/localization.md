@@ -23,7 +23,7 @@ To load translation object to your application, use `load` function of **L10n** 
 In the following sample, French culture is set to the MultiColumn ComboBox and no data is loaded. Hence, the noRecordsTemplate property displays its text in French culture.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/localization/src/app.component.ts %}
 {% endhighlight %}
 

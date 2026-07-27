@@ -19,7 +19,7 @@ Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/doc
 > You can terminate the process by using  `showCloseButton` property for destroying toast at any time.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs20/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/doc
 We can prevent auto hiding in a toast as visible like static. For this, we need to set zero (`0`) value in timeOut Property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs21/src/app.component.ts %}
 {% endhighlight %}
 

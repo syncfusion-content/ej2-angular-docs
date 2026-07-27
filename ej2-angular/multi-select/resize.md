@@ -17,7 +17,7 @@ The resizing feature provides resize handles on the popup borders and supports t
 The following sample demonstrates the popup resize functionality.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs18/src/app.component.ts %}
 {% endhighlight %}
 

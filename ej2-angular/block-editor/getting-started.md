@@ -71,7 +71,7 @@ Install a Syncfusion theme package to provide the required styles. The following
 npm install @syncfusion/ej2-material3-theme --save
 ```
 
-To render the Block Editor component, add the following import in the [src/styles.css] file to load all required dependency styles:
+To render the Block Editor component, add the following import in the `src/styles.css` file to load all required dependency styles:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-material3-theme/styles/blockeditor/index.css';
@@ -85,7 +85,7 @@ The following example shows a default Block Editor component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/block-editor/getting-started/src/app.component.ts %}
+{% include code-snippet/block-editor/getting-started/src/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

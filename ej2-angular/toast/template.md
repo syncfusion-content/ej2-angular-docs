@@ -27,7 +27,7 @@ template: "#Template"
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs19/src/app.component.ts %}
 {% endhighlight %}
 

@@ -15,7 +15,7 @@ Before component rendering, you can get the total items count by using [`actionC
 The following example demonstrate how to get the total items count.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/get-item-cs1/src/app.component.ts %}
 {% endhighlight %}
 

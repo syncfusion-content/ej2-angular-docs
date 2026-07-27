@@ -17,7 +17,7 @@ This section describes the multicolumn combobox events that will be triggered wh
 The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#actionbegin) event is triggered when actions such as sorting, filtering, grouping starts.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/action-begin/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/multicolu
 The [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#actionfailure) event is triggered when the data fetch request from the remote server fails.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/action-failure/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ The [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/multico
 The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#actioncomplete) event is triggered when actions such as sorting, filtering, grouping are completed.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/action-complete/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/multic
 The [select](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#select) event is triggered when the popup item is selected.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/select-event/src/app.component.ts %}
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ The [select](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-co
 The [change](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#change) event is triggered when the popup item is selected or when the model value is changed.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/change-event/src/app.component.ts %}
 {% endhighlight %}
 
@@ -97,7 +97,7 @@ The [change](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-co
 The [filtering](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#filtering) event is triggered when typing a character in the component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/filtering-event/src/app.component.ts %}
 {% endhighlight %}
 
@@ -113,7 +113,7 @@ The [filtering](https://ej2.syncfusion.com/angular/documentation/api/multicolumn
 The [open](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#open) event is triggered when the popup is opened.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/open-event/src/app.component.ts %}
 {% endhighlight %}
 
@@ -129,7 +129,7 @@ The [open](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-comb
 The [close](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#close) event is triggered when the popup is closed.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/close-event/src/app.component.ts %}
 {% endhighlight %}
 

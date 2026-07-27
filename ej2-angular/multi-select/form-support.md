@@ -24,7 +24,7 @@ Add the `name` attribute to the MultiSelect element to identify the form element
 The following example demonstrates how to achieve two-way data binding:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/form-support-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ Declare the formControlName for the MultiSelect as usual, then create a value ob
 The following example demonstrates how to use reactive forms:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/reactive-form-cs1/src/app.component.ts %}
 {% endhighlight %}
 

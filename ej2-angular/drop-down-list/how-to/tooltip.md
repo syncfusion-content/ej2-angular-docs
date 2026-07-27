@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can achieve this behavior by using `ej2-tooltip` component. When the mouse hover on the DropDownList option that tooltip display some details related to hovered list item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs19/src/app.component.ts %}
 {% endhighlight %}
 

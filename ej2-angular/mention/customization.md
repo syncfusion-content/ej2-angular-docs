@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 You can show mention character as prefix of selected item in mention component using [showMentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#showmentionchar) property. The default value of `ShowMentionChar` is `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ You can show mention character as prefix of selected item in mention component u
 You can add suffix character while selecting an item in Mention component using [suffixText](https://ej2.syncfusion.com/angular/documentation/api/mention/#suffixtext) property. You can add space or new line as suffix to the selected item. The default values is empty string.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/suffixText-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ You can customize the suggestion list width and height using the [popupHeight](h
 By default, the popup list width value is set as `auto`. Depending on the mentioned suggestion data list, the width value is automatically adjusted. The popup list height value is set as `300px`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ The [requireLeadingSpace](https://ej2.syncfusion.com/angular/documentation/api/m
 When set to `false`, the mention can be activated without a preceding space. When set to `true` , a space is required before the mention character to activate suggestions.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/customization-cs2/src/app.component.ts %}
 {% endhighlight %}
 

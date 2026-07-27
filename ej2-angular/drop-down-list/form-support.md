@@ -23,7 +23,7 @@ To integrate the DropDownList into a template-driven form, set the `name` attrib
 The following example demonstrates how to achieve two-way data binding in a template-driven form.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/form-support-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ Assign a `formControlName` to the DropDownList element in the template. In the c
 The following example demonstrates how to use the DropDownList component within a reactive form.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/reactive-form-cs1/src/app.component.ts %}
 {% endhighlight %}
 

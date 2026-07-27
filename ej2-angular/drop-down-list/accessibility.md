@@ -77,7 +77,7 @@ You can use the following key shortcuts to interact with the DropDownList compon
 > In the following sample, <kbd>alt+t</kbd> keys are used to focus the DropDownList component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

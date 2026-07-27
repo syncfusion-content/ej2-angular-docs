@@ -86,29 +86,21 @@ The following example demonstrates how to add a basic HeatMap to the application
 ```typescript
 
 import { HeatMapModule } from '@syncfusion/ej2-angular-heatmap';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 imports: [
          HeatMapModule
     ],
     standalone: true,
-    selector: 'my-app',
+    selector: 'app-root',
     // specifies the template string for the HeatMap component
     template: `<ejs-heatmap id="heatmap-container"></ejs-heatmap>`,
-    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
 
 }
 
-```
-<!-- markdownlint-disable MD033 -->
-
-Now use the <code>my-app</code> in the index.html instead of default one.
-
-```html
-  <my-app></my-app>
 ```
 
 To run the application locally, use the Angular CLI `ng serve` command (or `npm start` if your `package.json` defines a `start` script). The app is served by default at `http://localhost:4200/`.
@@ -138,9 +130,9 @@ The HeatMap component's features are segregated into individual feature-wise mod
 * `LegendService` - Provides the legend feature.
 * `TooltipService` - Provides the tooltip feature.
 
-> **Note:** `HeatMapAllModule` re-exports every feature service, so it can be used in place of the per-feature `providers` entries when you need a quick start. For tree-shaking and smaller bundle sizes, prefer importing only the services you need and registering them in the `providers` array.
+> `HeatMapAllModule` re-exports every feature service, so it can be used in place of the per-feature `providers` entries when you need a quick start. For tree-shaking and smaller bundle sizes, prefer importing only the services you need and registering them in the `providers` array.
 
-The following example shows how to import the feature services and register them with the HeatMap component.
+Import the required services from the HeatMap package and register them in the component's providers array as shown below:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -151,19 +143,11 @@ import { HeatMapModule, LegendService, TooltipService } from '@syncfusion/ej2-an
         HeatMapModule
     ],
     standalone: true,
-    providers: [ LegendService, TooltipService ],
+    providers: [ LegendService, TooltipService],
     selector: 'app-root',
-    template: `<ejs-heatmap id="heatmap-container" [legendSettings]='legendSettings' [tooltipSettings]='tooltipSettings'></ejs-heatmap>`
+    template: `<ejs-heatmap id="heatmap-container"></ejs-heatmap>`
 })
-export class AppComponent {
-    public legendSettings: Object = {
-        visible: true,
-        position: 'Right',
-    };
-    public tooltipSettings: Object = {
-        enable: true
-    };
-}
+export class AppComponent {}
 ```
 
 ## Populate heat map with data
@@ -194,12 +178,12 @@ This section explains how to populate a two-dimensional array as the HeatMap's `
 
 For deeper coverage of individual features, see the following topics:
 
-- [Axis](./axis.md)
-- [Title and text styles](./appearance.md)
-- [Legend](./legend.md)
-- [Palette](./palette.md)
-- [Tooltip](./tooltip.md)
-- [Selection](./selection.md)
-- [Events](./events.md)
-- [Bubble HeatMap](./bubble-heatmap.md)
-- [Working with data](./working-with-data.md)
+- [Axis](./axis)
+- [Title and text styles](./appearance)
+- [Legend](./legend)
+- [Palette](./palette)
+- [Tooltip](./tooltip)
+- [Selection](./selection)
+- [Events](./events)
+- [Bubble HeatMap](./bubble-heatmap)
+- [Working with data](./working-with-data)

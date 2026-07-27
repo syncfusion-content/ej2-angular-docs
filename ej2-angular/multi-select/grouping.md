@@ -15,7 +15,7 @@ The MultiSelect component supports organizing list items into groups based on di
 In the following sample, vegetables are grouped according to their category using the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#groupby) field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ The MultiSelect component supports rendering checkboxes in group headers to enab
 >Note: The `CheckBoxSelection` module must be injected into the MultiSelect component to use checkbox functionality.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 

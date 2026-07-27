@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Integration in Angular Inplace editor component
 
-The **In-place Editor** supports adding HTML5 input components using the [template](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#template) property. The Template property can be given as either a `string` or a `query selector`.
+The **In-place Editor** supports adding HTML5 input components using the [template](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#template) property. The Template property can be given as either a `string` or a `query selector`.
 
 ## As a string
 
@@ -32,10 +32,10 @@ You can render other components inside **In-place editor** using Angular `ng-tem
 
 ```
 
-Template mode, the `value` property not handled by the **In-place Editor** component. So, before sending a value to the server, you need to modify at [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#actionbegin) event, otherwise, an empty string will pass. In the following template sample, before submitting a data to the server, event argument and [value](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#value) property content updated in the `actionBegin` event handler.
+Template mode, the `value` property not handled by the **In-place Editor** component. So, before sending a value to the server, you need to modify at [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#actionbegin) event, otherwise, an empty string will pass. In the following template sample, before submitting a data to the server, event argument and [value](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#value) property content updated in the `actionBegin` event handler.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/in-place-editor/html-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 

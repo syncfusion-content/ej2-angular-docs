@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Shimmer effect in Angular Skeleton component
 
-You can use the [`shimmerEffect`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/#shimmereffect) property to change animation effect in the skeleton control. Skeleton supports `Wave`, `Pulse` and `Fade` effects and by default, the `shimmerEffect` is set to `Wave` effect.
+You can use the [`shimmerEffect`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#shimmereffect) property to change animation effect in the skeleton control. Skeleton supports `Wave`, `Pulse` and `Fade` effects and by default, the `shimmerEffect` is set to `Wave` effect.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -26,7 +26,7 @@ export class AppComponent { }
 Below example demonstrates a list with pulse effect skeleton.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/skeleton/effect-cs1/src/app.component.ts %}
 {% endhighlight %}
 

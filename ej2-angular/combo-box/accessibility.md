@@ -77,7 +77,7 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 > In the following sample, <kbd>alt+t</kbd> keys are used to focus the ComboBox component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/combobox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

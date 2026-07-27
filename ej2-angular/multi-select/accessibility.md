@@ -78,7 +78,7 @@ You can use the following key shortcuts to access the MultiSelect without interr
 > In the below sample, focus the MultiSelect component using <kbd>alt+t</kbd> keys.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

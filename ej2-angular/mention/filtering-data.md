@@ -19,7 +19,7 @@ You can control the minimum length of user input to initiate the search action u
 The remote request does not fetch the search data until the search key contains three characters as shown in the following example.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 * EndsWith - Filter the items that end with the specified text value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -57,7 +57,7 @@ While filtering the data in the data source, you can allow the space in the midd
 > By default, the `allowSpaces` property is disabled, and the space ends the mention component search.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ While filtering the data in the data source, you can allow the space in the midd
 While filtering, you can customize the number of list items to be displayed in the suggestion list by using the [suggestionCount](https://ej2.syncfusion.com/angular/documentation/api/mention/#suggestioncount) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 

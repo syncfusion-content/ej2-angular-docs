@@ -17,7 +17,7 @@ To display filtered items in the popup, you can filter the required data and ret
 The following sample demonstrates how to query the data source and pass the filtered data to the DropDownList through the [`updateData`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs/#updatedata) method in the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs/) event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ You can set a minimum character count to begin the filtering process. This is ac
 In the following example, the filtering process does not start until the search input contains at least three characters.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ While filtering, you can change the filter type to `contains`, `startsWith`, or 
 The following example demonstrates data filtering using the `endsWith` operator.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ Filtering can be configured to be case-sensitive. This is achieved by passing `f
 The following example demonstrates how to perform a case-sensitive filter.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ The DropDownList component supports diacritics filtering, which helps to ignore 
 In the following sample, data containing diacritic characters is bound as the dataSource for the DropDownList.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ In the following sample, data containing diacritic characters is bound as the da
 The [debounceDelay](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#debouncedelay) property allows you to set a delay time in milliseconds before the filtering action is triggered. This delay helps reduce the number of filtering requests as you type, improving performance and providing a smoother user experience. By default, [`debounceDelay`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#debouncedelay) is set to `0`, which means the debounce functionality is disabled. To enable it, specify a time in milliseconds.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs23/src/app.component.ts %}
 {% endhighlight %}
 

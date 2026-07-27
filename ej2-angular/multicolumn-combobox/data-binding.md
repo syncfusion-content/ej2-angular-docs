@@ -27,7 +27,7 @@ The MultiColumn ComboBox also supports different kinds of data services such as 
 The local binding in the MultiColumn ComboBox allows you to connect the component to various data sources, enabling dynamic and flexible data display.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/text/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ The local binding in the MultiColumn ComboBox allows you to connect the componen
 The MultiColumn ComboBox supports retrieval of data from remote data services with the help of `DataManager` component. The [query](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#query) property is used to fetch data from the database and bind it to the MultiColumn ComboBox.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/data-binding/src/app.component.ts %}
 {% endhighlight %}
 

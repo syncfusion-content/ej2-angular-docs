@@ -19,7 +19,7 @@ The content of each list item within the MultiSelect can be customized using the
 In the following sample, each list item displays data in a two-column layout to show relevant information effectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/item-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ The display of currently selected values in the MultiSelect input element can be
 In the following sample, selected values appear as combined text displaying both `FirstName` and `City` separated by a hyphen in the MultiSelect input field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/value-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ The group header titles that categorize sub-items can be customized using the [g
 In the following sample, employees are grouped by city with custom group header styling.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/group-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -85,7 +85,7 @@ The header element appears at the top of the popup list and can display custom c
 In the following sample, the header and list items are designed as a two-column grid layout with appropriate column headers.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -107,7 +107,7 @@ The footer element appears at the bottom of the popup list and can contain summa
 In the following sample, the footer displays the total count of available list items in the MultiSelect.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/footer-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -129,7 +129,7 @@ The MultiSelect supports custom design for the popup list content when no data i
 In the following sample, the popup displays a custom notification when no data is available.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -147,7 +147,7 @@ The popup list content can be customized when data fetch requests fail at the re
 In the following sample, the MultiSelect displays a custom error notification when data fetch requests fail.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs2/src/app.component.ts %}
 {% endhighlight %}
 

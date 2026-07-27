@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Summary view in Angular Query builder component
 
-The summary view displays a human-readable representation of the constructed query. By default, the summary view is hidden. Enable it by setting the [`summaryView`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#summaryview) property to true.
+The summary view displays a human-readable representation of the constructed query. By default, the summary view is hidden. Enable it by setting the [`summaryView`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#summaryview) property to true.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/default-cs11/src/app.component.ts %}
 {% endhighlight %}
 

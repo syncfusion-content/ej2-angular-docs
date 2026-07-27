@@ -55,7 +55,7 @@ The following list of properties and its values are used in the Query Builder.
 | False | False |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/default-cs6/src/app.component.ts %}
 {% endhighlight %}
 

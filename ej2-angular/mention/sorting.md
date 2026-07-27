@@ -17,7 +17,7 @@ You can display the suggestions list items in a specific order. It has possible 
 * `Descending` - The data source is sorted in descending order.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 

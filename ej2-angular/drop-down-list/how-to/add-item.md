@@ -19,7 +19,7 @@ To get started quickly with adding items in angular DropDownList component, you 
 The following example demonstrate how to add item in between in DropDownList.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/add-item-cs1/src/app.component.ts %}
 {% endhighlight %}
 

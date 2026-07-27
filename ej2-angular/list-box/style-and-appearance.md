@@ -27,7 +27,7 @@ To modify the ListBox appearance, you need to override the default CSS of ListBo
 You can use [cssClass](https://ej2.syncfusion.com/angular/documentation/api/list-box/#cssClass) property to display the Listbox horizontally.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/horizontal-listbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 

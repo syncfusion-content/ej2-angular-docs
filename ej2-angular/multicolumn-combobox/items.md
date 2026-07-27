@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 You can use [text](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#text) property to set the display text of the selected item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/text/src/app.component.ts %}
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ You can use [text](https://ej2.syncfusion.com/angular/documentation/api/multicol
 You can use [value](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#value) property to set the value of the selected item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/value/src/app.component.ts %}
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ You can use [value](https://ej2.syncfusion.com/angular/documentation/api/multico
 You can use [index](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#index) property to set the index of the selected item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/index/src/app.component.ts %}
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ You can use [index](https://ej2.syncfusion.com/angular/documentation/api/multico
 The [query](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#query) property is used to accept the external query, which will execute along with the data processing.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/query/src/app.component.ts %}
 {% endhighlight %}
 
@@ -79,7 +79,7 @@ The [query](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-com
 You can use the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#placeholder) property to set a short hint that describes the expected value of the multicolumn combobox component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/placeholder/src/app.component.ts %}
 {% endhighlight %}
 
@@ -103,7 +103,7 @@ You can change the `floatLabelType` type to `Never`, `Always`, `Auto`.
 The following example shows the `floatLabelType` with `Auto`
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/floatlabel/src/app.component.ts %}
 {% endhighlight %}
 
@@ -119,7 +119,7 @@ The following example shows the `floatLabelType` with `Auto`
 You can use the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#htmlattributes) property to add HTML attributes to the MultiColumn Combobox.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/htmlattribute/src/app.component.ts %}
 {% endhighlight %}
 
@@ -135,7 +135,7 @@ You can use the [htmlAttributes](https://ej2.syncfusion.com/angular/documentatio
 You can use the [width](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#width) property to set the width of the component. By default, the width is determined by the width of its parent container.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/width/src/app.component.ts %}
 {% endhighlight %}
 
@@ -151,7 +151,7 @@ You can use the [width](https://ej2.syncfusion.com/angular/documentation/api/mul
 You can use the [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#popupwidth) property to set the width of the popup list. By default, the popup width is determined by the width of the component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/popup-width/src/app.component.ts %}
 {% endhighlight %}
 
@@ -167,7 +167,7 @@ You can use the [popupWidth](https://ej2.syncfusion.com/angular/documentation/ap
 You can use the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#popupheight) property to set the height of the popup list. By default, the value is `300px`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/popup-height/src/app.component.ts %}
 {% endhighlight %}
 
@@ -183,7 +183,7 @@ You can use the [popupHeight](https://ej2.syncfusion.com/angular/documentation/a
 The [showClearButton](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#showclearbutton) property is used to specify whether to show or hide the clear button. By default, its value is `false`. When the clear button is clicked, the value, text and index properties are reset to null.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/clear-button/src/app.component.ts %}
 {% endhighlight %}
 
@@ -199,7 +199,7 @@ The [showClearButton](https://ej2.syncfusion.com/angular/documentation/api/multi
 You can use the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#cssclass) property to customize the multicolumn combobox component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/cssclass/src/app.component.ts %}
 {% endhighlight %}
 
@@ -215,7 +215,7 @@ You can use the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/
 The [disabled](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#disabled) property is used to disable the multicolumn combobox. By default, its value is `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/disabled/src/app.component.ts %}
 {% endhighlight %}
 
@@ -231,7 +231,7 @@ The [disabled](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-
 You can use [readonly](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#readonly) property to disable the user interactions in the multicolumn combobox component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/readonly/src/app.component.ts %}
 {% endhighlight %}
 
@@ -259,7 +259,7 @@ You can use [gridLines](https://ej2.syncfusion.com/angular/documentation/api/mul
 In the following examples, gridLines is set with `Horizontal`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/grid-lines/src/app.component.ts %}
 {% endhighlight %}
 
@@ -275,7 +275,7 @@ In the following examples, gridLines is set with `Horizontal`.
 You can use [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/gridSettings/#rowheight) property to set the height of the rows in the popup content.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/grid-rowheight/src/app.component.ts %}
 {% endhighlight %}
 
@@ -291,7 +291,7 @@ You can use [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/mul
 You can use the [enableAltRow](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/gridSettings/#enablealtrow) property to enable the alternate row styles in the multicolumn combobox. If enabled, it will add the `e-altrow` CSS class to the list of items in the popup.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/grid-altrow/src/app.component.ts %}
 {% endhighlight %}
 

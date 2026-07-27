@@ -14,7 +14,7 @@ The AutoComplete has built-in support to filter data items. The filter operation
 
 ## Change the filter type
 
-Determines on which filter type, the component needs to be considered on search action. The available [`filterType`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#filtertype) and its supported data types are
+Determines on which filter type, the component needs to be considered on search action. The available [`filterType`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#filtertype) and its supported data types are
 
 | **Filter Type** | **Description** | **Supported Types** |
 | --- | --- |
@@ -25,7 +25,7 @@ Determines on which filter type, the component needs to be considered on search 
 The following examples shows the data filtering is done with `StartsWith` type.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,12 +38,12 @@ The following examples shows the data filtering is done with `StartsWith` type
 
 ## Filter item count
 
-You can specify the filter suggestion item count through [`suggestionCount`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#suggestioncount) property of AutoComplete.
+You can specify the filter suggestion item count through [`suggestionCount`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#suggestioncount) property of AutoComplete.
 
 The following examples, to restrict the suggestion list item counts as 5.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -56,12 +56,12 @@ The following examples, to restrict the suggestion list item counts as 5.
 
 ## Limit the minimum filter character
 
-You can set the limit for the character count to filter the data on the AutoComplete. This can be done by set the [`minLength`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#minlength) property to AutoComplete.
+You can set the limit for the character count to filter the data on the AutoComplete. This can be done by set the [`minLength`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#minlength) property to AutoComplete.
 
 In the following example, the remote request doesn't fetch the search data, until the search key contains three characters.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -74,12 +74,12 @@ In the following example, the remote request doesn't fetch the search data, unti
 
 ## Case sensitive filtering
 
-Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by setting the [`ignoreCase`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#ignorecase) property of AutoComplete.
+Data items can be filtered either with or without case sensitivity using the DataManager. This can be done by setting the [`ignoreCase`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#ignorecase) property of AutoComplete.
 
 The following sample depicts how to filter the data with case-sensitive.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -92,12 +92,12 @@ The following sample depicts how to filter the data with case-sensitive.
 
 ## Diacritics Filtering
 
-An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#ignoreaccent) is enabled.
+An AutoComplete supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#ignoreaccent) is enabled.
 
 In the following sample,data with diacritics are bound as dataSource for AutoComplete.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 
@@ -110,10 +110,10 @@ In the following sample,data with diacritics are bound as dataSource for AutoCom
 
 ## Debounce delay
 
-You can use the [debounceDelay](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+You can use the [debounceDelay](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#debouncedelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs20/src/app.component.ts %}
 {% endhighlight %}
 

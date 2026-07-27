@@ -23,7 +23,7 @@ The content of each list item within the DropDownList can be customized with the
 In the following sample, each list item is split into two columns to display relevant data's.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ The currently selected value that is displayed by default on the DropDownList in
 In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City`in the DropDownList input, which is separated by a hyphen.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/value-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ The group header title under which appropriate sub-items are categorized can als
 In the following sample, employees are grouped according to their city.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/group-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -88,7 +88,7 @@ DropDownList, and any custom element can be placed as a header element using the
 In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -110,7 +110,7 @@ the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-d
 In the following sample, footer element displays the total number of list items present in the DropDownList
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/footer-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -132,7 +132,7 @@ The DropDownList is provided with support to custom design the popup list conten
 In the following sample, popup list content displays the notification of no data available.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/norecords-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -150,7 +150,7 @@ There is also an option to custom design the popup list content when the data fe
 In the following sample, when the data fetch request fails, the DropDownList displays the notification.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dropdownlist/norecords-cs2/src/app.component.ts %}
 {% endhighlight %}
 

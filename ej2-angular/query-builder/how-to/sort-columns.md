@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Sort columns in Angular Query builder component
 
-Control the order in which columns appear in the Query Builder by setting the [`sortDirection`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#sortdirection) property. This property sorts the available fields in ascending or descending order, helping users find columns more easily.
+Control the order in which columns appear in the Query Builder by setting the [`sortDirection`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#sortdirection) property. This property sorts the available fields in ascending or descending order, helping users find columns more easily.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/query-builder/default-cs9/src/app.component.ts %}
 {% endhighlight %}
 

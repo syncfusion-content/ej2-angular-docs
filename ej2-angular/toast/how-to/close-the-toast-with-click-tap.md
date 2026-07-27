@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Close the toast with click tap in Angular Toast component
 
-In default, toast gets expired based on timeOut value. You can customize toast hiding process, You can customize only hide with click/tap action by setting event args in [clicked](https://ej2.syncfusion.com/angular/documentation/api/toast/toastClickEventArgs/#clicktoclose) callback function with [static Toast](../../toast/timeout#static-toast).
+In default, toast gets expired based on timeOut value. You can customize toast hiding process, You can customize only hide with click/tap action by setting event args in [clicked](https://ej2.syncfusion.com/angular/documentation/api/toast/toastclickeventargs#clicktoclose) callback function with [static Toast](../../toast/timeout#static-toast).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs9/src/app.component.ts %}
 {% endhighlight %}
 

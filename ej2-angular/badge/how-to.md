@@ -14,12 +14,12 @@ The badge is a completely customizable and integral component, and this section 
 
 ## Customize badges
 
-### Colour customization
+### Color customization
 
-Even though badges come with `8 predefined colors`, you can also customize the colour of the badge as desired.
+Even though badges come with `8 predefined colors`, you can also customize the color of the badge as desired.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/color-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ Badges are designed to change its size based on the content. To change the size 
 adjust the `font size` of the badge.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/size-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ Even though the badges support the conventional `top` and `bottom` positions, th
 This can be done by adding a custom class to the badge element to override the default position applied from the source.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/custom-position-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -68,13 +68,13 @@ This can be done by adding a custom class to the badge element to override the d
 
 ### Listview
 
-The badges can be integrated with the `listview` component to indicate new notification with colour based on priority.
+The badges can be integrated with the `listview` component to indicate new notification with color based on priority.
 
 In the following sample, `default` badges are used and there is no need to customize the
 badge size. The component will automatically adjust the size based on the container element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ badge size. The component will automatically adjust the size based on the contai
 Badges in real-time needs to be updated dynamically based on the requirements. In this sample, using Angular data binding the badges content will be updated dynamically. Click the increment button to change the badge value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/badge/dynamic-badge-cs1/src/app.component.ts %}
 {% endhighlight %}
 

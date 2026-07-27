@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Add dynamic template in Angular Toast component
 
-Toast can support to change templates in dynamically, with displaying in multiple toasts. We can change Toast properties while calling in [`show`](https://ej2.syncfusion.com/angular/documentation/api/toast/#show) method.
+Toast can support to change templates in dynamically, with displaying in multiple toasts. We can change Toast properties while calling in [`show`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#show) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs8/src/app.component.ts %}
 {% endhighlight %}
 

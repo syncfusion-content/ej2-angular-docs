@@ -14,12 +14,12 @@ The AutoComplete has been provided with several options to customize each list i
 
 ## Item template
 
-The content of each list item within the AutoComplete can be customized with the help of [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#itemtemplate) property.
+The content of each list item within the AutoComplete can be customized with the help of [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#itemtemplate) property.
 
 In the following sample, each list item is split into two columns to display relevant data's.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/item-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,12 +35,12 @@ In the following sample, each list item is split into two columns to display rel
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customize with the help of [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/) property. This template is common for both inline and floating group header template.
+The group header title under which appropriate sub-items are categorized can also be customize with the help of [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default) property. This template is common for both inline and floating group header template.
 
 In the following sample, employees are grouped according to their city.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/group-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -56,12 +56,12 @@ In the following sample, employees are grouped according to their city.
 
 ## Header template
 
-The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be placed as a header element using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#headertemplate) property.
+The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be placed as a header element using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#headertemplate) property.
 
 In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -77,12 +77,12 @@ In the following sample, the list items and its headers are designed and display
 
 ## Footer template
 
-The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#footertemplate) property.
+The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#footertemplate) property.
 
 In the following sample, footer element displays the total number of list items present in the AutoComplete.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/footer-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -98,12 +98,12 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The AutoComplete is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#norecordstemplate) property.
+The AutoComplete is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property.
 
 In the following sample, popup list content displays the notification of no data available.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/norecords-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -117,12 +117,12 @@ In the following sample, popup list content displays the notification of no data
 ## Action failure template
 
 There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the
-[actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#actionfailuretemplate) property.
+[actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) property.
 
 In the following sample, when the data fetch request fails, the AutoComplete displays the notification.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/autocomplete/norecords-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -135,6 +135,6 @@ In the following sample, when the data fetch request fails, the AutoComplete dis
 
 ## See Also
 
-* [How to achieve filtering](./filtering/)
+* [How to achieve filtering](./filtering.md)
 * [How to group the data using header](./grouping#grouping)
-* [How to show the list items with icon](./how-to/icon-support/)
+* [How to show the list items with icon](./how-to/icon-support.md)

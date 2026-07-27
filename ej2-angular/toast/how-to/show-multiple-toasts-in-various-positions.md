@@ -15,7 +15,7 @@ In default Toast position only updates once visible toasts get destroyed. If You
 Here below sample demonstrates to add multiple toasts adding in the different position.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toast/toast-cs17/src/app.component.ts %}
 {% endhighlight %}
 

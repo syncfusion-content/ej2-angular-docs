@@ -27,7 +27,7 @@ To drag and drop an item or group of item within the list box can be achieved by
 The following sample illustrates how to drag and drop an item within the same list box by enabling `allowDragAndDrop` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ To drag and drop an item or group of item between two list boxes can be achieved
 In the following sample, the `allowDragAndDrop` property is set as `true` and `scope` is set as `combined-list` to enable drop and drop in both list boxes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/multiple-listbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ In the following sample, the `allowDragAndDrop` property is set as `true` and `s
 The toolbar and drag and drop actions between two listboxes can be enabled by setting a listbox unique id and the same [`scope`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#scope) property value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/listbox/dual-drag-list-box-cs1/src/app.component.ts %}
 {% endhighlight %}
 

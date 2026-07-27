@@ -15,7 +15,7 @@ The Mention provides options for individual items to be either in an enabled or 
 In the following sample, State are grouped according on its category using `disabled` field.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/mention/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 

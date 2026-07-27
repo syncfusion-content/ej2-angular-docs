@@ -23,7 +23,7 @@ It provides options such as `field`, `header`, `width`, `format`, `template` and
 In the following example, the column is customized with `field`, `header` and `width` properties.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/column-field/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ In the following example, the column is customized with `field`, `header` and `w
 You can use the [textAlign](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/column/#textalign) property to define the text alignment of the column.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/column-textalign/src/app.component.ts %}
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ You can use the [textAlign](https://ej2.syncfusion.com/angular/documentation/api
 You can use the [template](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/column/#template) property to customize the each cell of the column. It accepts either a template string or an HTML element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/column-template/src/app.component.ts %}
 {% endhighlight %}
 
@@ -74,7 +74,7 @@ You can use the [template](https://ej2.syncfusion.com/angular/documentation/api/
 You can use [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/column/#displayascheckbox) property to display the column value as checkbox instead of a boolean value. By default, the value is `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/column-checkbox/src/app.component.ts %}
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ You can use [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation
 You can use the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/column/#customattributes) property to customize the CSS styles and attributes of each column's content cells.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/multicolumn-combobox/custom-attribute/src/app.component.ts %}
 {% endhighlight %}
 
