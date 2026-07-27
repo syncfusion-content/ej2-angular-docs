@@ -108,7 +108,7 @@ today | Name of the button to choose Today date.
 The following example demonstrates the Calendar in `German` culture.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/culture-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -126,7 +126,7 @@ The Calendar supports right-to-left functionality for languages like Arabic, Heb
 The following example demonstrates the Calendar in `Arabic` culture with `enableRtl` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 

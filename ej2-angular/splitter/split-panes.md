@@ -17,7 +17,7 @@ The Splitter component divides a container into resizable panes separated by dra
 By default, the Splitter renders in horizontal orientation. This layout divides the container into side-by-side panes separated by a vertical separator bar (a vertical line between horizontal panes).
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/horizontal-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ By default, the Splitter renders in horizontal orientation. This layout divides 
 Setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/splitter#orientation) property to `Vertical` to render the Splitter in vertical orientation, dividing the container into panes with a horizontal separator.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/vertical-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ Setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/s
 The Splitter supports any number of panes in both `Horizontal` and `Vertical` orientations.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/multiple-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -68,7 +68,7 @@ By default, the pane separator is rendered with a `1px` width/height. The separa
 - For vertical orientation, this defines the separator’s height.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/separator-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -86,7 +86,7 @@ Splitter components can be nested within panes to create complex multi-level lay
 > Also you can render the nested splitter using direct child of the splitter pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/nested-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -106,7 +106,7 @@ Panes can be added or removed programmatically using the [addPane](https://ej2.s
 Panes can be added dynamically in the splitter by passing [pane properties](https://ej2.syncfusion.com/documentation/api/splitter/panePropertiesModel) along with index to the addPane method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/add-pane-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -122,7 +122,7 @@ Panes can be added dynamically in the splitter by passing [pane properties](http
 Panes can be removed dynamically by passing the pane index to [removePane](https://ej2.syncfusion.com/angular/documentation/api/splitter#removepane) method.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/remove-pane-cs1/src/app.component.ts %}
 {% endhighlight %}
 

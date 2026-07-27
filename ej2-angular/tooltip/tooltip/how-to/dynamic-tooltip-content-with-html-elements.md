@@ -17,7 +17,7 @@ You can use HTML tags such as `<div>`, `<span>`, `<b>`, `<i>`, `<u>`, and more. 
 This example uses Bold, Italic, Underline, and Anchor tags.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/load-html-cs5/src/app.component.ts %}
 {% endhighlight %}
 

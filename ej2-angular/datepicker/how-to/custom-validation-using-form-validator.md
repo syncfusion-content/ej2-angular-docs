@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom validation using form validator in Angular Datepicker component | Syncfusion
+title: Custom validation using form validator in Datepicker | Syncfusion
 description: Learn here all about Custom validation using form validator in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Custom validation using form validator 
@@ -15,7 +15,7 @@ The client side validation takes place in the browser to avoid the waiting time 
 To achieve the client side validation in a DatePicker component by using `FormValidator` function. It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 

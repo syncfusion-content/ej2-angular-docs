@@ -88,7 +88,7 @@ The TimePicker component has built-in keyboard accessibility support by followin
 The following sample use the `alt+t` keys to focus the TimePicker component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

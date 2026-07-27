@@ -16,7 +16,7 @@ In the following example, `e-round-corner` class is defined with `5px` `border-r
 property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/round-button-cs2/src/app.component.ts %}
 {% endhighlight %}
 

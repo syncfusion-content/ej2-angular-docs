@@ -19,7 +19,7 @@ To enable RTL layout, set the `enableRtl` property to `true`. This adjusts the d
 The following code demonstrates how to enable RTL behavior.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 

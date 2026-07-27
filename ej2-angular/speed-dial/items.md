@@ -29,7 +29,7 @@ You can customize the icon and text of Speed Dial action items using [`iconCss`]
 You can show icon only in SpeedDial items by setting [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#iconcss) property. You can show tooltip on hover to show additional details to end-user by setting [`title`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#title) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/items-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ You can show icon only in SpeedDial items by setting [`iconCss`](https://ej2.syn
 You can show only text in Speed Dial items by setting [`text`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#text) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/items-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ You can show only text in Speed Dial items by setting [`text`](https://ej2.syncf
 You can show icon along with text in Speed Dial items by setting [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#iconcss) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#text) properties.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/items-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ You can show icon along with text in Speed Dial items by setting [`iconCss`](htt
 You can disable Speed Dial items by setting [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#disabled) property as `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/items-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ The Speed Dial items can be animated during the opening and closing of the popup
 Below example demonstrates the Speed Dial items with applied Zoom effect.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/items-cs5/src/app.component.ts %}
 {% endhighlight %}
 

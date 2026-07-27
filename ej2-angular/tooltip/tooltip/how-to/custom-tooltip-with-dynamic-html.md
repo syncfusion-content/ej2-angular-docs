@@ -19,7 +19,7 @@ content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></ifra
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/html-page-cs3/src/app.component.ts %}
 {% endhighlight %}
 

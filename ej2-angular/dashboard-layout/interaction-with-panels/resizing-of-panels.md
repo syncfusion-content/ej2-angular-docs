@@ -28,7 +28,7 @@ The Dashboard Layout triggers the following events during panel resize operation
 
 The following sample demonstrates how to enable and disable panel resizing in the Dashboard Layout component with different directional handles:
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/resizing-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ resizePanel(id, sizeX, sizeY)
 The following sample demonstrates how to resize panels programmatically during the Dashboard Layout's [created](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#created) event:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/resize-panel-cs1/src/app.component.ts %}
 {% endhighlight %}
 

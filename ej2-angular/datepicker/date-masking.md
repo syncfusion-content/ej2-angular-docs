@@ -15,7 +15,7 @@ The DatePicker has built-in support to masking the date value, when `enableMask`
 To use mask support, inject the MaskedDateTime module in the DatePicker.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/mask-module-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ The selected portions of date and time co-ordinates  can  be incremented and dec
 The following example demonstrates default and custom format of DatePicker component with mask.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/mask-module-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ L10n.load({
 The following example demonstrates default and customized mask placeholder value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/mask-module-cs3/src/app.component.ts %}
 {% endhighlight %}
 

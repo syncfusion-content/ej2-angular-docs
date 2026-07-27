@@ -33,7 +33,7 @@ In this following example, two way binding for Switch is illustrated with CheckB
 * Now, the changes made in Switch will reflect in CheckBox (i.e When the state of Switch is changed to checked state then the CheckBox state will also change to checked state) and vice versa.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/switch/binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 

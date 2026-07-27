@@ -23,7 +23,7 @@ Render tooltip template content using `ng-template` or `HTML` elements as needed
 The following sample demonstrates how to add a content template to the tooltip.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ Load tooltip content dynamically using the Fetch API. Make the Fetch request wit
 > The tooltip **target** property includes a unique identifier to associate tooltips with specific elements. When setting a GUID as the **target** value, ensure the GUID starts with **letters** before the numeric portion. For example: **target: '#tooltip' + '96ad88bd-294c-47c3-999b-a9daa3285a05'**.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/ajax-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -21,7 +21,7 @@ Render tooltip template content using the `ng-template` or HTML elements.
 The following sample demonstrates how to add a content template to the tooltip.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs25/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ The following sample demonstrates how to add a content template to the tooltip.
 Dynamically load tooltip content using AJAX calls. Make the AJAX request within the `beforeRender` event, and assign the retrieved data to the Tooltip's `content` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/ajax-content-cs2/src/app.component.ts %}
 {% endhighlight %}
 

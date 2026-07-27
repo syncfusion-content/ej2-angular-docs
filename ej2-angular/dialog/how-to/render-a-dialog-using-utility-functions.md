@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render a dialog using utility functions in Angular Dialog component | Syncfusion
+title: Render using utility functions in Angular Dialog | Syncfusion
 description: Learn here all about Render a dialog using utility functions in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Render a dialog using utility functions 
@@ -15,10 +15,10 @@ The following options are used as arguments when calling the utility functions:
 
 | Options   | Description |
 |-----------|-------------|
-| title | Specifies the title of the dialog, similar to the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#header) property. |
-| content | Specifies the content to display in the dialog, similar to the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#content) property. |
-| isModal | Specifies whether the dialog displays as modal or non-modal. For more details, refer to the [`isModal`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#ismodal) property. |
-| position | Specifies the position of the alert or confirm dialog within the document. For more details, refer to the [`position`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#position) property, e.g., `{ X: 'center', Y: 'center' }`. |
+| title | Specifies the title of the dialog, similar to the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#header) property. |
+| content | Specifies the content to display in the dialog, similar to the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#content) property. |
+| isModal | Specifies whether the dialog displays as modal or non-modal. For more details, refer to the [`isModal`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#ismodal) property. |
+| position | Specifies the position of the alert or confirm dialog within the document. For more details, refer to the [`position`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#position) property, e.g., `{ X: 'center', Y: 'center' }`. |
 | okButton | Configures the OK button with button properties and click events. Example: `okButton: { icon: 'icon-class', cssClass: 'custom-class', click: 'handler', text: 'Yes' }` (default text is 'OK'). |
 | cancelButton | Configures the Cancel button with button properties and click events. Example: `cancelButton: { icon: 'icon-class', cssClass: 'custom-class', click: 'handler', text: 'No' }` (default text is 'Cancel'). |
 | isDraggable | Specifies whether the alert or confirm dialog can be dragged by the user. |
@@ -35,7 +35,7 @@ The following options are used as arguments when calling the utility functions:
 An alert dialog displays warning messages to users. Use the following code to render a simple alert dialog in an application.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dialog-utility-alert-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ An alert dialog displays warning messages to users. Use the following code to re
 ### Render an alert dialog with options
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dialog-utility-alert1-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ An alert dialog displays warning messages to users. Use the following code to re
 A confirm dialog displays a specified message along with OK and Cancel buttons.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dialog-utility-confirm-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -79,7 +79,7 @@ A confirm dialog displays a specified message along with OK and Cancel buttons.
 ### Render a confirmation dialog with options
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dialog-utility-confirm1-cs1/src/app.component.ts %}
 {% endhighlight %}
 

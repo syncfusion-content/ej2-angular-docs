@@ -17,7 +17,7 @@ Set the tooltip to auto or specific pixel values for height and width. The `widt
 The following sample demonstrates setting tooltip dimensions.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-002-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ The following sample demonstrates setting tooltip dimensions.
 When `height` is specified with a certain pixel value and the Tooltip content overflows, the scrolling mode gets enabled.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs39/src/app.component.ts %}
 {% endhighlight %}
 

@@ -19,7 +19,7 @@ A Dialog can be nested within another Dialog. The following sample contains a pa
 **Step 3**: Set the inner dialog target as `#dialog`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 

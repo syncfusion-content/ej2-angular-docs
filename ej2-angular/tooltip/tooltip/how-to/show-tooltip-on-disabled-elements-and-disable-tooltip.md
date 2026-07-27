@@ -17,7 +17,7 @@ By default, tooltips do not display on disabled elements. Enable this behavior b
 3. Initialize the Tooltip on the outer div element that wraps the disabled button.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs29/src/app.component.ts %}
 {% endhighlight %}
 

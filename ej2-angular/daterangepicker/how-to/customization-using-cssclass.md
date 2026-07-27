@@ -41,7 +41,7 @@ Following is the list of classes that provides flexible way to customize the Dat
 | e-disabled | Applied to Calendar disabled dates.|
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/customcss-cs1/src/app.component.ts %}
 {% endhighlight %}
 

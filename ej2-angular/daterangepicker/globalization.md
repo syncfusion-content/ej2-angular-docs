@@ -133,7 +133,7 @@ export class AppComponent {
 The following sample demonstrate the DateRangePicker component in `German` culture.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -196,7 +196,7 @@ export class AppComponent {
 The following example demonstrates the DateRangePicker in `Hebrew` culture with right-to-left direction.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -215,7 +215,7 @@ To know more about the date format standards, refer to the Internationalization 
 In below sample, the date strings are formatted to `yyyy-MM-dd` and separator between the date ranges is set to "to".
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 

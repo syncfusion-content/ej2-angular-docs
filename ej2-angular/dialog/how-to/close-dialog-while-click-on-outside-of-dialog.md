@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Close dialog while click on outside of dialog in Angular Dialog component | Syncfusion
+title: Close dialog while click outside in Angular Dialog | Syncfusion
 description: Learn here all about Close dialog while click on outside of dialog in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Close dialog while click on outside of dialog 
@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Close dialog when clicking outside in Angular Dialog component
 
-By default, the dialog closes when you press the Esc key or click the close icon in the dialog header. Close the dialog by clicking outside the dialog area using the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/#hide) method.
+By default, the dialog closes when you press the Esc key or click the close icon in the dialog header. Close the dialog by clicking outside the dialog area using the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#hide) method.
 
-> Set the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/#closeonescape) property to `false` to prevent the dialog from closing when pressing the Esc key.
+> Set the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#closeonescape) property to `false` to prevent the dialog from closing when pressing the Esc key.
 
 The following sample demonstrates closing the dialog when clicking outside the dialog area.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dlg-close-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ The following sample demonstrates closing the dialog when clicking outside the d
 The following sample demonstrates rendering the dialog within a target container and closing it by clicking outside the dialog.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dialog-close-cs1/src/app.component.ts %}
 {% endhighlight %}
 

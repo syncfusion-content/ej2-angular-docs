@@ -19,7 +19,7 @@ The following example demonstrates the DateTimePicker in `strictMode` with min/m
 The following example demonstrates the DateTimePicker with strictMode `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ The following example demonstrates the `strictMode` as `false`. Here, it allows 
 If you are entering the out-of-range or invalid datetime value, then the model value will be set to `out of range` datetime value or `null` respectively with highlighted `error` class to indicates the datetime is out of range or invalid.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs8/src/app.component.ts %}
 {% endhighlight %}
 

@@ -17,7 +17,7 @@ The Angular Splitter component provides flexible pane sizing options using pixel
 Fixed pixel values can be assigned to panes using the  `size` property in `paneSettings`. This approach maintains consistent pane dimensions regardless of container size.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/pane-sizes-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ Fixed pixel values can be assigned to panes using the  `size` property in `paneS
 Pane sizes can be defined as percentages. This approach ensures responsive behavior across different screen sizes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/pane-sizes-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ Pane sizes can be defined as percentages. This approach ensures responsive behav
 When no explicit size is provided, panes automatically adjust based on available space. This behavior is powered by the default flex layout, allowing dynamic resizing when panes are added, removed, shown, or hidden.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/template-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ When no explicit size is provided, panes automatically adjust based on available
 Multiple panes can be configured with fixed sizes in both horizontal and vertical orientations. However, even when all panes are assigned fixed sizes, the Splitter automatically treats the last pane as flexible to ensure layout adaptability. At least one pane must remain flexible to accommodate container changes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/splitter/fixed-pane-cs1/src/app.component.ts %}
 {% endhighlight %}
 

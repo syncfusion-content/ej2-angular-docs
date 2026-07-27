@@ -18,7 +18,7 @@ Customize the dialog position using the `position` property with specific `X` an
 ## Alert position
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/alert-position-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ Customize the dialog position using the `position` property with specific `X` an
 ## Confirm position
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/confirm-position-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ Customize the dialog position using the `position` property with specific `X` an
 ## Prompt position
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/prompt-position-cs1/src/app.component.ts %}
 {% endhighlight %}
 

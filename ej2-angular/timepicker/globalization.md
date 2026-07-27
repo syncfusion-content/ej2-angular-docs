@@ -103,7 +103,7 @@ export class AppComponent {
 The following sample demonstrate the TimePicker component in `German` culture.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -164,7 +164,7 @@ export class AppComponent {
 The following example demonstrates TimePicker in `Arabic` culture with right-to-left direction.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 

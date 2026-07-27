@@ -33,7 +33,7 @@ To open the tooltip on multiple actions (e.g., hover or click), assign the [`ope
 The following code example demonstrates how to set the open mode for tooltips.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ The `custom` mode allows the tooltip to appear on user-defined custom actions su
 The following code example demonstrates how to define custom open mode for the tooltip.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ The following code example demonstrates how to define custom open mode for the t
 Enable sticky mode to keep the tooltip on the screen until you click the close icon. In this mode, the close icon appears in the top right corner of the tooltip. Enable or disable sticky mode using the [`isSticky`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#issticky) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ Enable sticky mode to keep the tooltip on the screen until you click the close i
 Delay tooltip opening or closing using the [`openDelay`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#opendelay) and [`closeDelay`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#closedelay) properties.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 

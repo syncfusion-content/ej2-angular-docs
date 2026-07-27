@@ -15,7 +15,7 @@ To underline a particular character in a text, it can be handled in [`beforeItem
 In the following example, `C` is underlined in the text `Copy`:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/underline-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -22,7 +22,7 @@ The [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/d
 In this sample, three different DropDownButtons are rendered, each showcasing a unique animation effect for the dropdown menu:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 

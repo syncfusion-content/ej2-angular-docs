@@ -15,7 +15,7 @@ The Avatar component integrates with ListView to create, visually enhanced list 
 The `xsmall` avatar size provides the ideal balance between visual impact and space efficiency within ListView items. This sizing ensures consistent alignment with text content and maintains the overall list structure without overwhelming the interface.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/avatar/listview-cs2/src/app.component.ts %}
 {% endhighlight %}
 

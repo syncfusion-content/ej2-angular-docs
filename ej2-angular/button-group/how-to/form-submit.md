@@ -16,7 +16,7 @@ In the following code snippet, the radio type ButtonGroup is explained with male
 Now, the value that is in checked state will be sent on form submit.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button-group/default-cs7/src/app.component.ts %}
 {% endhighlight %}
 

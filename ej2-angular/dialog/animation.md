@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Dialog component
 
-The Dialog can be animated during open and close actions. Customize animation using the [`delay`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#delay), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#duration), and [`effect`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#effect) properties.
+The Dialog can be animated during open and close actions. Customize animation using the [`delay`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#delay), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#duration), and [`effect`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#effect) properties.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -40,7 +40,7 @@ If the user sets ‘Fade’ effect, then the Dialog will open with ‘FadeIn’ 
 The following sample demonstrates the `Zoom` effect. The dialog opens with `ZoomIn` and closes with `ZoomOut`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 

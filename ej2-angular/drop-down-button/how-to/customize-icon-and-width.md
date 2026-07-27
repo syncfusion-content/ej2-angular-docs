@@ -16,7 +16,7 @@ The following UI can be achieved by setting [`iconPosition`](https://ej2.syncfus
 and size of the font icon as `40px` by adding `e-custom` class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/custom-width-cs1/src/app.component.ts %}
 {% endhighlight %}
 

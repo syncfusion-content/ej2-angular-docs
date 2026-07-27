@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display a dialog with custom position in Angular Dialog component | Syncfusion
+title: Dialog with custom position in Angular Dialog | Syncfusion
 description: Learn here all about Display a dialog with custom position in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Display a dialog with custom position 
@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Display a dialog with custom position in Angular Dialog component
 
-By default, the dialog displays in the center of the target container. Set the dialog position using the [position](https://ej2.syncfusion.com/angular/documentation/api/dialog/#position) property by providing custom X and Y coordinates. The dialog positions inside the target based on the specified X and Y values.
+By default, the dialog displays in the center of the target container. Set the dialog position using the [position](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#position) property by providing custom X and Y coordinates. The dialog positions inside the target based on the specified X and Y values.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dlg-position-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -26,7 +26,7 @@ The Angular Floating Action Button supports the following predefined styles that
 | e-danger | Used to represent a negative action. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -58,7 +58,7 @@ By using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/float
 The content will behave the same , when the `enableHtmlSanitizer` is enabled. Since we are adding only the valid tags in content, sanitizing the content will not affect it.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/styles-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ The content will behave the same , when the `enableHtmlSanitizer` is enabled. Si
 By using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass) property, you can customize the outline color of the Floating Action Button. Refer the `index.css` file below.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/floating-action-button/styles-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}

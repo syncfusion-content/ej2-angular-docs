@@ -15,7 +15,7 @@ The **two-way binding** in TimePicker can also be achieved using the custom even
 In the following example, **property binding** is used to share the data from the parent component to the child component using [@input](https://angular.io/api/core/Directive#inputs) directive and **custom event binding** is used to share the data from the child component to the parent component by using [@output](https://angular.io/api/core/Directive#outputs) directive.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/custom-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 

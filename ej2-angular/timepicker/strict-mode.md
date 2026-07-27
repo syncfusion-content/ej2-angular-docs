@@ -16,7 +16,7 @@ If the time value is out of range, the component sets the time value to min/max 
 The following example demonstrates the TimePicker in `strictMode` with min/max range of `10:00 AM` to `4:00 PM` . It allows you to enter only valid time within the specified range. If you enter the out-of-range value like `8:00 PM`, the value sets to the max time `4:00 PM` as the value `8:00 PM` is greater than `max` value of `4:00 PM`. If you enter invalid time value like `9:00 tt`, the value sets to the previous value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ The following example demonstrates the `strictMode` as `false`. Here, it allows 
 If you are entering the out-of-range or invalid time value, then the model value will be set to `out of range` time value or `null` respectively with highlighted `error` class to indicates the time is out of range or invalid.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/timepicker/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 

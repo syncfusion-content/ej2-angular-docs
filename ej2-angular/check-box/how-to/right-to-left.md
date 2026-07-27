@@ -15,7 +15,7 @@ CheckBox component has RTL support. This can be achieved by setting [`enableRtl`
 The following example illustrates how to enable right-to-left support in CheckBox component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/check-box/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 

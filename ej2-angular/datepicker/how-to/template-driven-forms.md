@@ -23,7 +23,7 @@ For more details about template-driven Forms refer to:<https://angular.io/guide/
 After that, the DatePicker value will be selected based on the ngModel value.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/template-driven-cs1/src/app.component.ts %}
 {% endhighlight %}
 

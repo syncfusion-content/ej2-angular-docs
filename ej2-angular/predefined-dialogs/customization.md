@@ -25,7 +25,7 @@ For prompt dialogs, customize button content as `Connect` and `Close` using the 
 ## Alert action button
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/alert-action-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ For prompt dialogs, customize button content as `Connect` and `Close` using the 
 ## Confirm action buttons
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/confirm-action-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ For prompt dialogs, customize button content as `Connect` and `Close` using the 
 ## Prompt action buttons
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/prompt-action-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -68,17 +68,17 @@ For prompt dialogs, customize button content as `Connect` and `Close` using the 
 
 When rendering predefined dialogs through utility methods, close the dialog using the following methods. The default values for `closeOnEscape` and `showCloseIcon` are `false`.
 
-* Press the Esc key if the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/#closeonescape) property is enabled.
-* Click the close button if the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/dialog/#showcloseicon) property is enabled.
+* Press the Esc key if the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#closeonescape) property is enabled.
+* Click the close button if the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#showcloseicon) property is enabled.
 
-Manually close dialogs by creating an instance and calling the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/#hide) method.
+Manually close dialogs by creating an instance and calling the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#hide) method.
 
 The following code samples demonstrate different ways to close utility dialogs for alert, confirm, and prompt.
 
 ## Alert dialog close button
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/alert-close-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ The following code samples demonstrate different ways to close utility dialogs f
 ## Confirm dialog close button
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/confirm-close-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -106,7 +106,7 @@ The following code samples demonstrate different ways to close utility dialogs f
 ## Prompt dialog close button
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/prompt-close-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -124,7 +124,7 @@ Load custom content in predefined dialogs using the `content` property.
 The following code customizes the dialog content to render a custom TextBox component inside the prompt dialog to get the username from the user.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/predefined-dialogs/custom-dialog-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 

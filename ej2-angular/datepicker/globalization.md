@@ -75,7 +75,7 @@ In the following code example, the DatePicker is initialized in `German` culture
 The following example demonstrates the DatePicker in `German` culture.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/local-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ The DatePicker supports RTL (right-to-left) functionality for languages like Ara
 The following code example initialize the DatePicker component in `Arabic` culture and also explains how to set the localized text to the placeholder using `load` method of `L10n` class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/local-rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 

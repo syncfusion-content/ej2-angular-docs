@@ -16,7 +16,7 @@ To disable SplitButton component, set the disabled property as true.
 The following example illustrates how to set the disable state in SplitButton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/split-button/disabled-cs2/src/app.component.ts %}
 {% endhighlight %}
 

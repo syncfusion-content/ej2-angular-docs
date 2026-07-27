@@ -16,7 +16,7 @@ In the following example, `e-round-corner` class is defined with `5px` `border-r
 property and added that class to button element using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#cssclass) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/rounded-cs1/src/app.component.ts %}
 {% endhighlight %}
 

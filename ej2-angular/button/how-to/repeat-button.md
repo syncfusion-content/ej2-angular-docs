@@ -15,7 +15,7 @@ The repeat button is a type of button in that the click event is triggered at re
 The following example explains about how to achieve repeat button in mouse and touch events.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/button/repeat-button-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -174,7 +174,7 @@ The following list of properties and its values are used in the Image  Editor.
 | And | and |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/image-editor/default-cs7/src/app.component.ts %}
 {% endhighlight %}
 

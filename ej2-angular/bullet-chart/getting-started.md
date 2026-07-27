@@ -18,7 +18,7 @@ This section explains the steps required to create a simple [Angular Bullet Char
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
 ## Setup the Angular Application
 
@@ -248,7 +248,7 @@ If the Bullet Chart does not render as expected, check for these common issues:
 
 ## See also
 
-* [Bullet Chart Dimensions](bullet-chart-dimensions.md) — Configure the size and margins of the Bullet Chart.
-* [Bullet Chart Data Label](data-label.md) — Customize the data labels on the bars.
-* [Bullet Chart Title](title.md) — Customize the chart title and subtitle.
-* [Bullet Chart Value Bar](value-bar.md) — Customize the value bar appearance.
+* [Bullet Chart Dimensions](bullet-chart-dimensions) — Configure the size and margins of the Bullet Chart.
+* [Bullet Chart Data Label](data-label) — Customize the data labels on the bars.
+* [Bullet Chart Title](title) — Customize the chart title and subtitle.
+* [Bullet Chart Value Bar](value-bar) — Customize the value bar appearance.

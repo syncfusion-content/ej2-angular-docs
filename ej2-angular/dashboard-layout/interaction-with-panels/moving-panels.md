@@ -27,7 +27,7 @@ Each time a panel's position is changed (either programmatically or through UI i
 The following sample demonstrates how to move a panel programmatically to a new position in the Dashboard Layout's [created](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#created) event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/moving-cs1/src/app.component.ts %}
 {% endhighlight %}
 

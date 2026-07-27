@@ -19,7 +19,7 @@ By default, tooltips do not display on disabled elements. Enable this behavior b
 3. Initialize the Tooltip on the outer div element that wraps the disabled button.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ You can use HTML tags such as `<div>`, `<span>`, `<b>`, `<i>`, `<u>`, and more. 
 This example uses Bold, Italic, Underline, and Anchor tags.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/load-html-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ Define the tooltip's open mode to control when it displays on hover, focus, or c
 * **Custom** - Tooltip is not triggered by default actions. Bind your own events and use the `open` or `close` methods.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/open-mode-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -79,7 +79,7 @@ Create and display tooltips on multiple targets within a container by assigning 
 The tooltip content is derived from the `title` attribute of the target element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/form-valid-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -127,7 +127,7 @@ onBeforeRender(args: TooltipEventArgs): void {
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/dynamic-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -143,7 +143,7 @@ onBeforeRender(args: TooltipEventArgs): void {
 Load tooltip [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) using template support. Refer to the following code snippet.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/load-html-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -199,7 +199,7 @@ Customize tip arrow styling through CSS modifications at the sample level. Chang
 Disable the arrow tip pointer using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#showtippointer) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/tip-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -237,7 +237,7 @@ Create a canvas circle element and render the tooltip on it using the following 
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/svg-canvas-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -259,7 +259,7 @@ content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></ifra
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/html-page-cs1/src/app.component.ts %}
 {% endhighlight %}
 

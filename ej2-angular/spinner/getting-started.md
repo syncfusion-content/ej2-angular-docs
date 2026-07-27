@@ -168,7 +168,7 @@ ng serve
 The following example illustrates the output in your browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/spinner/intro-cs1/src/app.component.ts %}
 {% endhighlight %}
 

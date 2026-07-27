@@ -25,7 +25,7 @@ You can use the [`start`](https://ej2.syncfusion.com/angular/documentation/api/d
 The following example demonstrates how to create a DatePicker with `decade` as initial rendering view.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ Define the [`depth`](https://ej2.syncfusion.com/angular/documentation/api/datepi
 The following example demonstrates how to create a DatePicker that allows users to select a month.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -56,4 +56,4 @@ The following example demonstrates how to create a DatePicker that allows users 
   
 {% previewsample "page.domainurl/samples/datepicker/getting-started-cs6" %}
 
-> To know more about Calendar views refer the Calendar's [Calendar Views](../calendar/calendar-views/) section.
+> To know more about Calendar views refer the Calendar's [Calendar Views](../calendar/calendar-views) section.

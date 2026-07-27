@@ -30,7 +30,7 @@ When `allowFloating` is set to `false`:
 The following sample demonstrates how to enable or disable the floating of panels in the Dashboard Layout component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/floating-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 

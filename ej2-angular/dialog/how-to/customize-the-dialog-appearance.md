@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the dialog appearance in Angular Dialog component | Syncfusion
+title: Customize the dialog appearance in Angular Dialog | Syncfusion
 description: Learn here all about Customize the dialog appearance in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize the dialog appearance 
@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Customize the dialog appearance in Angular Dialog component
 
-Customize the dialog appearance by providing a dialog template as a string or HTML element to the [content](https://ej2.syncfusion.com/angular/documentation/api/dialog/#content) property. The following sample demonstrates customizing the dialog as an error window.
+Customize the dialog appearance by providing a dialog template as a string or HTML element to the [content](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#content) property. The following sample demonstrates customizing the dialog as an error window.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/dlg-appearance-cs1/src/app.component.ts %}
 {% endhighlight %}
 

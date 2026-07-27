@@ -62,7 +62,7 @@ These tip arrow customizations are achieved through CSS changes at the sample le
 Disable the arrow tip pointer using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/tip-custom-cs2/src/app.component.ts %}
 {% endhighlight %}
 

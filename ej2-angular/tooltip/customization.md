@@ -17,7 +17,7 @@ Customize the tooltip using the [`cssClass`](https://ej2.syncfusion.com/angular/
 Style the tip pointer's size, background, and border colors using the `cssClass` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ Style the tip pointer's size, background, and border colors using the `cssClass`
 Customize the complete appearance of the tooltip by changing its background color, opacity, content font, and more. The following code example demonstrates this customization.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/custom-css-cs1/src/app.component.ts %}
 {% endhighlight %}
 

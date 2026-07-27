@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Angular 3D Chart component | Syncfusion
 description:  Check out and learn about Getting Started with Angular 3D Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting Started 
+control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -18,7 +18,7 @@ This section explains the steps required to create a simple [Angular 3D Chart](h
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
 ## Setup Angular environment
 
@@ -130,24 +130,17 @@ npm add @syncfusion/ej2-angular-charts@32.1.19-ngcc
 Modify the template in `src/app/app.component.ts` (or `src/app/app.ts` in Angular 20+) to render the 3D Chart component:
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { Chart3DModule } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     imports: [Chart3DModule],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     // specifies the template string for the 3D Chart component
     template: `<ejs-chart3d id='chart-container'></ejs-chart3d>`,
-    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent { }
-```
-
-> **Note:** `ViewEncapsulation.None` is required so that the chart's internal styles are not scoped to this component. Now use the `app-container` selector in the `index.html` file instead of the default one.
- 
-```html
-<app-container></app-container>
 ```
 
 Use the `ng serve` command to run the application in the browser:
@@ -181,28 +174,26 @@ There are two ways to register 3D Chart services:
 - **`Chart3DAllModule`** — Registers every available feature service at once. Use this for quick setup or when you need most features.
 - **`Chart3DModule`** — Registers only the services you explicitly add to the `providers` array. This granular form is recommended for production applications to keep bundle size small.
 
-> **Note:** This getting-started example uses `Chart3DAllModule` for convenience. If you prefer the granular form, refer to the **Available feature services** table below to see which services to register manually.
-
-The available feature services are:
+For this application, column series, tooltip, data label, category axis, and legend features of the 3D Chart are used. The relevant feature service names and descriptions are:
 
 | Service | Description |
 | --- | --- |
-| `ColumnSeries3DService` | Required to use the column series. |
-| `Legend3DService` | Required to use the legend. |
-| `Tooltip3DService` | Required to use the tooltip. |
-| `DataLabel3DService` | Required to use data labels. |
-| `Category3DService` | Required to use the category axis. |
+| `ColumnSeries3DService` | Required to render the column series. |
+| `Legend3DService` | Required to render the legend. |
+| `Tooltip3DService` | Required to render the tooltip. |
+| `DataLabel3DService` | Required to render data labels. |
+| `Category3DService` | Required to render the category axis. |
 
 Update `src/app/app.component.ts` to import the services and add them to the `providers` array of the component:
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { Chart3DModule, ColumnSeries3DService, Legend3DService, Tooltip3DService, DataLabel3DService, Category3DService } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     imports: [Chart3DModule],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     providers: [ColumnSeries3DService, Legend3DService, Tooltip3DService, DataLabel3DService, Category3DService],
 })
 export class AppComponent { }
@@ -236,12 +227,13 @@ If the 3D Chart does not render as expected, check for these common issues:
 
 * **"No provider for ColumnSeries3DService" error**: Confirm that the relevant `*3DService` is added to the component's `providers` array. Each feature requires its corresponding service.
 * **Chart not visible**: Verify that the `<ejs-chart3d>` element has a unique `id` and that the component's `selector` matches the root element used in `src/index.html` (commonly `<app-root>`).
-* **3D scene looks flat**: Check that `<e-chart3d-series>` is wrapped in `<e-chart3d-series-collection>` and that `enableRotation` / `enablePerspective` are set on the chart if rotation is desired.
+* **3D scene looks flat** (no depth or lighting): Check that `<e-chart3d-series>` is wrapped in `<e-chart3d-series-collection>` and that `enableRotation` / `enablePerspective` are set on the chart if rotation is desired.
 * **Data not displayed**: Verify that the `xName` and `yName` values match the field names in the data source exactly, and that the `valueType` is set to `Category` for category data.
 * **Build errors**: Run `ng version` to confirm that Node.js, Angular CLI, and `@syncfusion/ej2-angular-charts` are on supported versions.
+* **Port already in use**: If `ng serve` fails because port `4200` is in use, run `ng serve --port 4201` (or another free port) instead.
 
 ## See also
 
-* [Chart 3D Axis](axis-customization.md) — Customize the 3D chart axes.
-* [Chart 3D Legend](legend.md) — Configure the 3D chart legend.
-* [Chart 3D Tooltip](tool-tip.md) — Customize the 3D chart tooltip.
+* [Customize the 3D chart axes](axis-customization)
+* [Configure the 3D chart legend](legend)
+* [Customize the 3D chart tooltip](tool-tip)

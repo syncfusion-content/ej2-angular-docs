@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 This section explains how to render a modal dialog with the Rich Text Editor component. When rendering a modal dialog with the Rich Text Editor, the first row of content may be hidden because the dialog container and its wrapper elements are styled with `display: none`. As a result, the editor's toolbar does not get proper offset width and renders above the edit area. In this scenario, use the `refreshUI` method on the Dialog `open` event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dialog/model-dialog-with-rte-cs1/src/app.component.ts %}
 {% endhighlight %}
 

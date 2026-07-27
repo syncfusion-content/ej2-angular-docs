@@ -17,7 +17,7 @@ By default, tooltips do not display on disabled elements. However, you can enabl
 3. Initialize the tooltip for the outer `div` element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 

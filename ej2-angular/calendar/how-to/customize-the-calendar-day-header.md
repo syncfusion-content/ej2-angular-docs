@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the calendar day header in Angular Calendar component | Syncfusion
+title: Customize the calendar day header in Angular Calendar | Syncfusion
 description: Learn here all about Customize the calendar day header in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize the calendar day header 
@@ -22,7 +22,7 @@ You can find the possible formats on below.
 | `Wide` | Sets the long format of day name (like Sunday ) in day header. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/header-format-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -29,7 +29,7 @@ The `Linear` directions of Speed Dial are as follows:
 * Auto - Action items display direction auto calculated based on `position` of the Speed Dial. If Speed Dial is position at bottom right, then action items displayed at top.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/radial-cs1/src/app.component.ts %}
 {% endhighlight %}
 

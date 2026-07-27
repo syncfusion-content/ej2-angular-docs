@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The following examples demonstrates how to prevent the popup from closing.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/datepicker/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 

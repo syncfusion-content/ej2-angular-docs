@@ -17,7 +17,7 @@ DropdownButton can have an icon to provide the visual representation of the acti
 In the following example, the DropdownButton with default iconPosition and iconPosition as `Top` is showcased.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/dd-icons-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ Icon only DropDownButton can be achieved by using [`iconCss`](https://ej2.syncfu
 down arrow `e-caret-hide` class is added using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#cssclass) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/icon-only-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ Sprite images can be loaded in DropDownButton instead of font icons using [`icon
 In this following example, `e-image` class is added with background url of the sprite image along with X and Y positions. The `width` and `height` of the element set as `32px`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/sprite-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -75,7 +75,7 @@ Vertical button in DropDownButton can be achieved by adding `e-vertical` class
 using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#cssclass) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/drop-down-button/vertical-cs1/src/app.component.ts %}
 {% endhighlight %}
 

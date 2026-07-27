@@ -23,7 +23,7 @@ The following steps illustrate how to configure `clear` button in Calendar UI.
 Below is the code example.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/calendar/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 

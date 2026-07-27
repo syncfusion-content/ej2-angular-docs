@@ -17,7 +17,7 @@ This section explains available templates in SpeedDial component and its usage.
 You can use the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#itemtemplate) property to set a template content for the SpeedDial items. The template content is defined as a child content of `itemTemplate` tag directive.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/templates-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ You can use the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentatio
 You can use the [`popupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#popuptemplate) property to set a template content for popup of  SpeedDial component. The template content is defined as a child content of `popupTemplate` tag directive.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/speed-dial/templates-cs2/src/app.component.ts %}
 {% endhighlight %}
 

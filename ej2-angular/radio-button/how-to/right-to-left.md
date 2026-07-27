@@ -15,7 +15,7 @@ RadioButton component has RTL support. This can be achieved by setting [`enableR
 The following example illustrates how to enable right-to-left support in RadioButton component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/radio-button/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 

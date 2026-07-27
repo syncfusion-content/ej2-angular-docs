@@ -39,7 +39,7 @@ Attach tooltips to 12 static locations around the target element. When initializ
 > By default, Tooltip is placed at the `TopCenter` of the target element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ Attach or detach the tooltip pointer using the [`showTipPointer`](https://ej2.sy
 The following code example demonstrates how to set the pointer to the start position.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ By default, tip pointers are auto adjusted so that the arrow does not point outs
 Position the tooltip and its tip pointer dynamically based on the target element. Use the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#refresh) method to automatically adjust the tooltip position relative to the target.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 
@@ -99,7 +99,7 @@ Position the tooltip and its tip pointer dynamically based on the target element
 Position tooltips relative to the mouse pointer by enabling this feature. Enable or disable this behavior using the [`mouseTrail`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#mousetrail) property. By default, it is set to `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs18/src/app.component.ts %}
 {% endhighlight %}
 
@@ -122,7 +122,7 @@ Use offset values to specify the distance between the target and tooltip element
 The following code example demonstrates how to set offset values.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tooltip/getting-started-cs19/src/app.component.ts %}
 {% endhighlight %}
 

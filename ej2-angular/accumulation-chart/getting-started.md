@@ -14,9 +14,10 @@ This section explains the steps required to create a simple accumulation chart a
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
+
 ## Prerequisites
 
-Before getting started, ensure that your development environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
 ## Before You Begin
 
@@ -110,50 +111,17 @@ The following example demonstrates how to visualize monthly data using a pie cha
 
 Update the `src/app/app.ts` file as follows:
 
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { AccumulationChartModule, PieSeriesService, AccumulationLegendService } from '@syncfusion/ej2-angular-charts';
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/chart/accumulation-chart-data-cs1/src/app.ts %}
+{% endhighlight %}
 
-@Component({
-    selector: 'app-root',
-    standalone: true,
-    imports: [AccumulationChartModule],
-    providers: [PieSeriesService, AccumulationLegendService],
-    template: `
-        <ejs-accumulationchart 
-            id="pie-container" 
-            [legendSettings]='legendSettings'
-        >
-            <e-accumulation-series-collection>
-                <e-accumulation-series
-                    [dataSource]='piedata'
-                    type='Pie'
-                    xName='x'
-                    yName='y'
-                >
-                </e-accumulation-series>
-            </e-accumulation-series-collection>
-        </ejs-accumulationchart>
-    `
-})
-export class App implements OnInit {
-    public piedata?: Object[];
-    public legendSettings?: Object;
-    ngOnInit(): void {
-        this.piedata = [
-            { x: 'Jan', y: 3 }, { x: 'Feb', y: 3.5 },
-            { x: 'Mar', y: 7 }, { x: 'Apr', y: 13.5 },
-            { x: 'May', y: 19 }, { x: 'Jun', y: 23.5 },
-            { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
-            { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 },
-            { x: 'Nov', y: 9 }, { x: 'Dec', y: 3.5 }
-        ];
-        this.legendSettings = {
-            visible: false
-        };
-    }
-}
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/accumulation-chart-data-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/accumulation-chart-data-cs1" %}
 
 The chart renders a pie with one slice for each month (Jan–Dec) sized according to the data values. Hovering over a slice displays a tooltip with the month and value, and each slice can be pulled out individually for emphasis.
 
@@ -192,6 +160,6 @@ If the accumulation chart does not render as expected, check for these common is
 
 ## See also
 
-* [Legend](legend.md) — Configure the accumulation chart legend.
-* [Data Label](data-label.md) — Customize the data labels displayed on slices.
-* [Pie, Doughnut, Pyramid, and Funnel Charts](pie-dough-nut.md) — Explore other accumulation chart types.
+* [Legend](legend) — Configure the accumulation chart legend.
+* [Data Label](data-label) — Customize the data labels displayed on slices.
+* [Pie, Doughnut, Pyramid, and Funnel Charts](pie-dough-nut) — Explore other accumulation chart types.
