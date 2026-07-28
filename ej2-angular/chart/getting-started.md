@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Angular Chart component | Syncfusion
-description:  Check out and learn about Getting Started with Angular Chart component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Chart Component | Syncfusion
+description: Check out and learn about the Getting Started with Angular Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started 
 documentation: ug
@@ -11,8 +11,6 @@ domainurl: https://ej2.syncfusion.com
 # Getting Started with Angular Chart Component
 
 This section explains the steps required to create a simple chart and demonstrates the basic usage of the [Angular Chart](https://www.syncfusion.com/angular-components/angular-charts) component.
-
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Angular Components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
 To get started quickly with Angular Chart using CLI and Schematics, view the following video:
 
@@ -31,9 +29,9 @@ The main files used in this guide are:
 - `src/app/app.ts` — Defines the root standalone component.
 - `src/index.html` — Contains the Angular root element.
 
-> **Note:** In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
+> In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
 
-> **Note:** If your application uses an older NgModule-based structure, import `ChartModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
+> If your application uses an older NgModule-based structure, import `ChartModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
 
 ## Step 1: Install the Angular CLI
 
@@ -79,9 +77,9 @@ All Syncfusion Essential® JS 2 packages are available in the [npmjs.com](https:
 npm install @syncfusion/ej2-angular-charts
 ```
 
-> **Note:** Installing `@syncfusion/ej2-angular-charts` automatically installs the required dependency packages.
+> Installing `@syncfusion/ej2-angular-charts` automatically installs the required dependency packages.
 
-## Step 4: Register the Chart module and add the component
+## Step 4: Import the Chart module and add the Chart component
 
 Import `ChartModule` from `@syncfusion/ej2-angular-charts` and add it to the `imports` collection of the standalone component. Then, add the Angular Chart component using the `<ejs-chart>` selector in the component template.
 
@@ -100,13 +98,7 @@ import { ChartModule } from '@syncfusion/ej2-angular-charts';
 export class App {}
 ```
 
-This renders an empty chart in the application's view.
-
-> **Note:** The component selector must match the root element used in the `src/index.html` file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`.
-
-Run the application with `npm start` and verify that an empty chart renders before proceeding to the next step.
-
-## Step 5: Create your first Chart with data source and series type
+## Step 5: Bind data and render a series
 
 This section explains how to create a simple chart by binding data, configuring the axis, and rendering a series using the Angular Chart component.
 
@@ -128,17 +120,6 @@ Update the src/app/app.ts file as follows:
 
 The chart renders a line with the month names (Jan–Dec) on the horizontal axis and the sales values on the vertical axis. Hovering over a data point displays a tooltip with the corresponding month and sales value.
 
-The following table summarizes the key properties used in this example:
-
-| Properties | Description |
-| --- | --- |
-| [`primaryXAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/index-default#primaryxaxis) | Defines the configuration of the horizontal axis. |
-| [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#datasource) | Provides the JSON data used to render the chart. |
-| [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#type) | Specifies the chart series type, such as Line, Column, or Bar. |
-| [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#xname) | Maps the category field (for example, month) from the data source to the x-axis. |
-| [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#yname) | Maps the data field (for example, sales) from the data source to the y-axis. |
-| [`<e-series-collection>`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective) and [`<e-series>`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective) | Directives used to define and render one or more series in the chart. |
-
 ## Step 6: Run the application
 
 Run the application using the following command:
@@ -147,7 +128,7 @@ Run the application using the following command:
 npm start
 ```
 
-Open the generated local URL (for example, `http://localhost:4200/`) from the terminal in the browser. The application displays a line chart showing monthly sales from January to December, as shown below:
+Open the generated local URL (for example, `http://localhost:4200/`) from the terminal in the browser. The application displays a line chart showing monthly sales from January to December.
 
 ![Line chart showing monthly sales from January to December](../images/chart-getting-started.png)
 
@@ -163,6 +144,7 @@ If the chart does not render as expected, check for these common issues:
 
 ## See also
 
-* [Chart Axis](chart-axis) — Customize the chart axes.
-* [Chart Series Types](./series/series-types/area-types) — Explore other series types such as Column, Bar, and Area.
-* [Data Binding](./data-binding/working-with-data) — Bind the chart to remote data sources.
+* [Customize the chart axes](chart-axis)
+* [Explore other series types such as Column, Bar, and Area](./series/series-types/area-types)
+* [Bind the chart to remote data sources](./data-binding/working-with-data)
+* [Chart API reference](https://ej2.syncfusion.com/angular/documentation/api/chart/index-default)
