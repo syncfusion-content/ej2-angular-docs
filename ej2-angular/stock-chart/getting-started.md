@@ -20,7 +20,7 @@ To get started quickly with Angular Stock Chart using CLI and Schematics, view t
 
 ## Prerequisites
 
-Before getting started, ensure that your development environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
 ## Before You Begin
 
@@ -122,7 +122,7 @@ This renders an empty stock chart in the application's view.
 
 Run the application with `npm start` and verify that an empty stock chart renders before proceeding to the next step.
 
-## Step 6: Create your first Stock Chart with data source and series type
+## Step 6: Populate the chart with data and add a series
 
 This section explains how to create a simple stock chart by binding financial data, configuring the time-based axis, and rendering a series using the Angular Stock Chart component.
 
@@ -130,146 +130,19 @@ The following example demonstrates how to visualize stock price data using a can
 
 Update the `src/app/app.ts` file as follows:
 
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { StockChartModule, DateTimeService, CandleSeriesService } from '@syncfusion/ej2-angular-charts';
-import { AxisModel } from '@syncfusion/ej2-charts';
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/stock-chart/getting-started-cs1/src/app.ts %}
+{% endhighlight %}
 
-@Component({
-    selector: 'app-root',
-    standalone: true,
-    imports: [StockChartModule],
-    providers: [DateTimeService, CandleSeriesService],
-    template: `
-        <ejs-stockchart
-            id="stock-chart-container"
-            [primaryXAxis]='primaryXAxis'
-        >
-            <e-stockchart-series-collection>
-                <e-stockchart-series
-                    [dataSource]='stockchartData'
-                    type='Candle'
-                    xName='date'
-                    high='high'
-                    low='low'
-                    open='open'
-                    close='close'
-                    volume='volume'
-                >
-                </e-stockchart-series>
-            </e-stockchart-series-collection>
-        </ejs-stockchart>
-    `
-})
-export class App implements OnInit {
-    public primaryXAxis?: AxisModel;
-    public stockchartData?: Object[];
-    ngOnInit(): void {
-        this.stockchartData = [
-            {
-                date: new Date('2012-04-02'),
-                open: 85.9757,
-                high: 90.6657,
-                low: 85.7685,
-                close: 90.5257,
-                volume: 660187068
-            },
-            {
-                date: new Date('2012-04-09'),
-                open: 89.4471,
-                high: 92,
-                low: 86.2157,
-                close: 86.4614,
-                volume: 912634864
-            },
-            {
-                date: new Date('2012-04-16'),
-                open: 87.1514,
-                high: 88.6071,
-                low: 81.4885,
-                close: 81.8543,
-                volume: 1221746066
-            },
-            {
-                date: new Date('2012-04-23'),
-                open: 81.5157,
-                high: 88.2857,
-                low: 79.2857,
-                close: 86.1428,
-                volume: 965935749
-            },
-            {
-                date: new Date('2012-04-30'),
-                open: 85.4,
-                high: 85.4857,
-                low: 80.7385,
-                close: 80.75,
-                volume: 615249365
-            },
-            {
-                date: new Date('2012-05-07'),
-                open: 80.2143,
-                high: 82.2685,
-                low: 79.8185,
-                close: 80.9585,
-                volume: 541742692
-            },
-            {
-                date: new Date('2012-05-14'),
-                open: 80.3671,
-                high: 81.0728,
-                low: 74.5971,
-                close: 75.7685,
-                volume: 708126233
-            },
-            {
-                date: new Date('2012-05-21'),
-                open: 76.3571,
-                high: 82.3571,
-                low: 76.2928,
-                close: 80.3271,
-                volume: 682076215
-            },
-            {
-                date: new Date('2012-05-28'),
-                open: 81.5571,
-                high: 83.0714,
-                low: 80.0743,
-                close: 80.1414,
-                volume: 480059584
-            },
-            {
-                date: new Date('2012-06-04'),
-                open: 80.2143,
-                high: 82.9405,
-                low: 78.3571,
-                close: 82.9028,
-                volume: 517577005
-            }
-        ];
-        this.primaryXAxis = {
-            valueType: 'DateTime'
-        };
-    }
-}
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/stock-chart/getting-started-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/samples/stock-chart/getting-started-cs1" %}
 
 The chart renders a candle series with one candle per week showing the open, high, low, and close prices for the period from April to June 2012. The horizontal axis displays dates, and the vertical axis shows the price. Hovering over a candle displays a tooltip with the date and OHLC values.
-
-The following table summarizes the key properties used in this example:
-
-| Properties | Description |
-| --- | --- |
-| [`primaryXAxis`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/index-default#primaryxaxis) | Defines the configuration of the horizontal (date-time) axis. |
-| [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#datasource) | Provides the financial data used to render the stock chart. |
-| [`type`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#type) | Specifies the series type, such as `Candle`, `Hilo`, or `HiloOpenClose`. |
-| [`xName`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#xname) | Maps the date field from the data source to the x-axis. |
-| [`high`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#high) | Maps the highest price of the stock. |
-| [`low`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#low) | Maps the lowest price of the stock. |
-| [`open`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#open) | Maps the opening price of the stock. |
-| [`close`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#close) | Maps the closing price of the stock. |
-| [`volume`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective#volume) | Maps the trading volume (rendered in the separate volume pane). |
-| [`<e-stockchart-series-collection>`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective) and [`<e-stockchart-series>`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockchartseriesdirective) | Directives used to define and render one or more series in the stock chart. |
 
 ## Step 7: Run the application
 
@@ -296,7 +169,7 @@ If the stock chart does not render as expected, check for these common issues:
 
 ## See also
 
-* [Period Selector](period-selector.md) — Configure the period selector below the chart.
-* [Range Selector](range-selector.md) — Add a range selector for interactive zoom and pan.
-* [Technical Indicators](technical-indicators.md) — Add technical indicators such as RSI, MACD, and Bollinger Bands.
-* [Trendlines](trend-lines.md) — Add trendlines to the stock chart.
+* [Configure the period selector below the chart](period-selector)
+* [Add a range selector for interactive zoom and pan](range-selector)
+* [Add technical indicators such as RSI, MACD, and Bollinger Bands](technical-indicators)
+* [Add trendlines to the stock chart](trend-lines)

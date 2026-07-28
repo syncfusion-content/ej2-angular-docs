@@ -70,7 +70,7 @@ To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the p
 "@syncfusion/ej2-angular-circulargauge": "32.1.19-ngcc"
 ```
 
-> Note: If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
+> If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
 
 ## Add the Circular Gauge component
 
@@ -135,39 +135,6 @@ The following services enhance the Circular Gauge's functionality:
 These services should be injected into the `providers` section of the standalone component.
 
 The following example demonstrates injecting `GaugeTooltipService` to enable the tooltip on the Circular Gauge:
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { CircularGaugeModule, GaugeTooltipService } from '@syncfusion/ej2-angular-circulargauge';
-
-@Component({
-    imports: [CircularGaugeModule],
-    providers: [GaugeTooltipService],
-    standalone: true,
-    selector: 'app-container',
-    template: `<ejs-circulargauge id="circular-container" [tooltip]="tooltip">
-        <e-axes>
-            <e-axis>
-                <e-pointers>
-                    <e-pointer value="70"></e-pointer>
-                </e-pointers>
-            </e-axis>
-        </e-axes>
-    </ejs-circulargauge>`
-})
-export class AppComponent implements OnInit {
-    public tooltip?: Object;
-    ngOnInit(): void {
-        this.tooltip = {
-            enable: true
-        };
-    }
-}
-```
-
-## Set Pointer Value
-
-Set a pointer value using the `value` property on a pointer. See the pointer API reference for details: [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer#value) in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/axisdirective#pointers).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

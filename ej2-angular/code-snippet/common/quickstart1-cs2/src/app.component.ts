@@ -6,7 +6,6 @@ import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
   standalone: true,
   imports: [GridModule, PagerModule],
   templateUrl: './app.html'
-  styleUrls: ['./app.css']
  })
 export class App {
   public data: Object[] = [

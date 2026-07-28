@@ -18,7 +18,7 @@ This section explains the steps required to create a simple [Angular Range Navig
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
 ## Set Up the Angular Application
 
@@ -198,14 +198,13 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 
 >Note: Get data from [here](https://ej2.syncfusion.com/demos/src/range-navigator/data-source/default-data.json).
 
-The sample should look like our [default](https://ej2.syncfusion.com/demos/#/material/range-navigator/default.html), don't worry about the gradient color, let it take the default color.
+The sample should look like our [default](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/default), don't worry about the gradient color, let it take the default color.
 
 ## Troubleshooting
 
 If the Range Navigator does not render as expected, check for these common issues:
 
-* **"No provider for AreaSeriesService" error**: Confirm that the relevant `*Service` is added to the component's `providers` array. Each feature requires its corresponding service.
-* **Chart not visible**: Verify that `ViewEncapsulation.None` is set on the component, that the `id` on `<ejs-rangenavigator>` is unique, and that the `selector` matches the root element in `index.html`.
+* **"No provider for AreaSeriesService" error**: Confirm that the relevant `Service` is added to the component's `providers` array. Each feature requires its corresponding service.
 * **Date axis not displaying correctly**: Confirm that `primaryXAxis.valueType` is set to `DateTime` and that the `x` field in your data source is a valid `Date` object.
 * **Data not displayed**: Check that the `xName` and `yName` values match the field names in your data source exactly, and that the `dataSource` is assigned before the chart renders.
 * **Build errors**: Run `ng version` to confirm that Node.js, Angular CLI, and `@syncfusion/ej2-angular-charts` are on supported versions, and check the terminal output for the specific error.
@@ -213,6 +212,6 @@ If the Range Navigator does not render as expected, check for these common issue
 
 ## See also
 
-* [Range Navigator Period Selector](period-selector.md) — Configure the period selector.
-* [Range Navigator Value Axis](axis.md) — Customize the value axis.
-* [Range Navigator Lightweight](lightweight.md) — Use the lightweight (canvas) mode for performance.
+* [Configure the period selector](period-selector)
+* [Customize the value axis](axis.md)
+* [Use the lightweight (canvas) mode for performance](lightweight.md)

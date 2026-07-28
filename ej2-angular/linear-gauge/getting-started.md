@@ -103,7 +103,7 @@ import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge';
 @Component({
     imports: [LinearGaugeModule],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     // specifies the template string for the Linear Gauge component
     template: `<ejs-lineargauge id="gauge-container"></ejs-lineargauge>`
 })
@@ -111,33 +111,13 @@ export class AppComponent { }
 
 ```
 
-2. Replace the default selector in `src/index.html` so the new standalone component is bootstrapped.
+2. Run the application in the browser with the following command.
 
-    ```html
-    <app-container></app-container>
-    ```
-
-3. Run the application in the browser with the following command.
-
-    ```bash
-    npm start
-    ```
+```bash
+npm start
+```
 
 By default, the dev server opens at `http://localhost:4200/`.
-
-The following example renders a basic Linear Gauge.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs1" %}
 
 ## Module Injection
 
@@ -150,29 +130,17 @@ Inject the services you need in the `providers` section of the `app.component.ts
 
 The following example demonstrates injecting `GaugeTooltipService` to enable the tooltip on the Circular Gauge:
 
-```typescript
-import { Component } from '@angular/core';
-import {
-    LinearGaugeModule,
-    GaugeTooltipService
-} from '@syncfusion/ej2-angular-lineargauge';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/linear-gauge/getting-started-cs1/src/app.component.ts %}
+{% endhighlight %}
 
-@Component({
-    imports: [LinearGaugeModule],
-    standalone: true,
-    selector: 'app-container',
-    providers: [GaugeTooltipService],
-    template: `<ejs-lineargauge id="gauge-container" [tooltip]="tooltip"></ejs-lineargauge>`
-})
-export class AppComponent {
-    public tooltip?: Object;
-    ngOnInit(): void {
-        this.tooltip = {
-            enable: true
-        };
-    }
- }
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/linear-gauge/getting-started-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs1" %}
 
 > Note: Inject only the services required for the features you use. Injecting all services is not required and can increase the bundle size slightly.
 

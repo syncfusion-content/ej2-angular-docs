@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Signature component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Signature component of Syncfusion Essential JS 2 and more details.
+description:  Learn how to get started with the Syncfusion Angular Signature component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -10,33 +10,19 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Signature component
 
-This guide demonstrates how to set up and configure the Syncfusion Angular Signature component for capturing and managing digital signatures. The component provides smooth stroke rendering on a canvas, undo/redo operations, and export functionality for saving signatures in multiple formats.
+The Signature component enables users to draw, capture, and submit handwritten signatures digitally, providing an intuitive way to authorize, verify, or acknowledge documents and forms electronically.
 
-> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Signature component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
-## Dependencies
+## Setup the Angular application
 
-The list of dependencies required to use the Signature module in your application is given below:
-
-```javascript
-|-- @syncfusion/ej2-angular-inputs
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-inputs
-        |-- @syncfusion/ej2-base
-        |-- @syncfusion/ej2-popups
-        |-- @syncfusion/ej2-buttons
-        |-- @syncfusion/ej2-splitbuttons
-```
-
-## Set up the Angular application
-
-The fastest way to start with Angular is to use the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
@@ -44,23 +30,15 @@ npm install -g @angular/cli
 
 > **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-### Installing a specific version
-
-To install a particular version of Angular CLI, use:
-
-```bash
-npm install -g @angular/cli@21.0.0
-```
-
 ## Create a new application
 
-With Angular CLI installed, execute the following command to generate a new application:
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-* This command prompts you to configure settings such as enabling Angular routing and selecting a stylesheet format.
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
 ```bash
 
@@ -72,17 +50,17 @@ ng new syncfusion-angular-app
 
 ```
 
-* By default, a CSS-based application is created. To use SCSS instead, run:
+* By default, a CSS-based application is created. Use SCSS if required:
 
 ```bash
 ng new syncfusion-angular-app --style=scss
 ```
 
-* During project setup, configure Server-side rendering (SSR) if needed.
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
 ![Initial_setup](images/SSR.png)
 
-* Select an AI tool or choose 'none' if not needed.
+* Select the required AI tool or 'none' if you do not need any AI tool.
 
 ![Initial_setup](images/Ai.png)
 
@@ -92,48 +70,27 @@ ng new syncfusion-angular-app --style=scss
 cd syncfusion-angular-app
 ```
 
-> **Note**: Angular 19 and below use `app.component.ts`, `app.component.html`, and `app.component.css`. Angular 20+ generates a simpler structure: `src/app/app.ts`, `app.html`, and `app.css` (without `.component.` suffixes).
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Signature Package
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Signature package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
-
-This guide uses the [Angular Signature component](https://www.syncfusion.com/angular-components/angular-signature) for demonstration. Install the package with:
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Signature** package, use the following command:
 
 ```bash
 ng add @syncfusion/ej2-angular-inputs
 ```
 
-This command will perform the following configurations:
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically. 
 
-- Add the `@syncfusion/ej2-angular-inputs` package and peer dependencies to your `package.json`.
-- Import the Signature component component in your application.
-- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> material theme in `angular.json`.
-
-For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package distributions for Angular components:
-
-1. **Ivy library format** ([Angular package format](https://angular.dev/tools/libraries/angular-package-format)) - Recommended
-2. **Angular compatibility compiler (ngcc)** - Legacy compilation pipeline
-
-Latest Syncfusion<sup style="font-size:70%">&reg;</sup> packages are Ivy-compatible and recommended for Angular 12+. Install using:
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
-ng add @syncfusion/ej2-angular-inputs
-```
-
-For legacy projects using ngcc:
-
-> **Note**: ngcc packages are compatible with Angular CLI 15 and below but may generate deprecation warnings. Starting from Angular 16, ngcc support has been removed. Refer to the [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility) for more information.
-
-```bash
-npm add @syncfusion/ej2-angular-inputs@32.1.19-ngcc
+npm install @syncfusion/ej2-angular-inputs
 ```
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Signature component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -144,48 +101,50 @@ npm install @syncfusion/ej2-material3-theme
 Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/signature/index.css";
 ```
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Signature component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Signature component
 
-Modify the template in `app.ts` file with the Signature component to render the Signature component.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Signature import, template, and data into your generated file.
+
+> For the full property list, see the [Signature API reference](https://ej2.syncfusion.com/angular/documentation/api/signature/index-default).
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+
 import { SignatureModule } from '@syncfusion/ej2-angular-inputs';
+import { Component} from '@angular/core';
 
 @Component({
-    imports: [SignatureModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `<!-- To Render Signature. -->
-             <canvas ejs-signature #signature id="signature" ></canvas>`
+  selector: 'app-root',
+  imports: [SignatureModule],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
 })
-export class AppComponent implements OnInit {
-    ngOnInit(): void {
-    }
-}
+
+export class App  { }
+
+```
+Place the following markup in the component template file referenced by `templateUrl` (for example, `src/app/app.html`):
+
+```html
+<div id="signature-container">
+      <canvas ejs-signature #signature id="signature" ></canvas>
+</div>
 ```
 
 ## Running the application
 
-Run the application in the browser using the following command:
+From the project root:
 
 ```bash
-ng serve --open
+ng serve
 ```
 
-The following example shows a basic `Signature` component.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Signature. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/signature/getting-started/default-cs2/src/app.component.ts %}
-{% endhighlight %}
+Stop the server with `Ctrl+C` in the terminal.
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/signature/getting-started/default-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
+The following example illustrates the output in your browser.
+
 {% previewsample "page.domainurl/samples/signature/getting-started/default-cs2" %}

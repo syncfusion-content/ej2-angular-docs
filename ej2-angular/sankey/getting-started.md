@@ -18,7 +18,7 @@ This section explains the steps required to create a simple [Angular Sankey Char
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
 ## Setup Angular Environment
 
@@ -122,38 +122,6 @@ npm install @syncfusion/ej2-angular-charts@32.1.19-ngcc
 
 Update `src/app/app.component.ts` (or `src/app/app.ts` in Angular 20+) to render the Sankey Chart component:
 
-```ts
-import { Component, ViewEncapsulation } from '@angular/core';
-import { SankeyAllModule } from '@syncfusion/ej2-angular-charts';
-
-@Component({
-    imports: [SankeyAllModule],
-    standalone: true,
-    selector: 'app-container',
-    template: `<ejs-sankey id="sankey-container"></ejs-sankey>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent { }
-```
-
-> **Note:** `SankeyAllModule` registers every available service at once, which is convenient for getting started. For production, prefer the granular `SankeyModule` (shown later in this guide) and inject only the services you need.
-
-The `app-container` selector replaces the default `<app-root>` selector in this example, so update `index.html` accordingly:
-
-```html
-<app-container></app-container>
-```
-
-Use the `ng serve` command to run the application in the browser:
-
-```bash
-ng serve
-```
-
-Verify that an empty Sankey Chart renders before proceeding to the next step.
-
-### Basic Sankey example
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sankey/getting-started/initialize-cs1/src/app.component.ts %}
@@ -166,9 +134,64 @@ Verify that an empty Sankey Chart renders before proceeding to the next step.
 
 {% previewsample "page.domainurl/samples/sankey/getting-started/initialize-cs1" %}
 
+> **Note:** `SankeyAllModule` registers every available service at once, which is convenient for getting started. For production, prefer the granular `SankeyModule` (shown later in this guide) and inject only the services you need.
+
+Use the `ng serve` command to run the application in the browser:
+
+```bash
+ng serve
+```
+
+## Module Injection
+
+Sankey features are segregated into individual feature-wise services. To use a particular feature, you need to inject its corresponding service in `app.component.ts`.
+
+There are two ways to register Sankey services:
+
+- **`SankeyAllModule`** — Registers every available service at once. Use this for quick setup or when you need most features.
+- **`SankeyModule`** — Registers only the services you explicitly add to the `providers` array. This granular form is recommended for production applications to keep bundle size small.
+
+For this application, the tooltip and legend features of the Sankey Chart are used. The relevant feature service names and descriptions are:
+
+| Service | Description |
+| --- | --- |
+| `SankeyTooltipService` | Required to render the tooltip. |
+| `SankeyLegendService` | Required to render the legend. |
+
+Update `src/app/app.component.ts` to import the granular `SankeyModule` and the required services, and add them to the `providers` array of the component:
+
+```ts
+import { Component, ViewEncapsulation } from '@angular/core';
+import { SankeyModule, SankeyTooltipService, SankeyLegendService } from '@syncfusion/ej2-angular-charts';
+
+@Component({
+    imports: [SankeyModule],
+    standalone: true,
+    selector: 'app-root',
+    providers: [SankeyTooltipService, SankeyLegendService],
+    template: `<ejs-sankey id="sankey-container"></ejs-sankey>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent { }
+```
+
+The following example uses `SankeyModule` with the granular providers registered above and renders the empty chart with the tooltip and legend services ready to be used.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/sankey/getting-started/tooltip-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/sankey/getting-started/tooltip-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/sankey/getting-started/tooltip-cs1" %}
+
 ## Bind Data to the Sankey Chart
 
-Nodes represent the categories, and links represent the flow between them. Each node has a unique `id`, and each link connects a `source` node to a `target` node with a numeric `value`. The following example shows a simple energy-flow Sankey:
+Now that the granular services are registered, you can populate the Sankey Chart with data. Nodes represent the categories, and links represent the flow between them. Each node has a unique `id`, and each link connects a `source` node to a `target` node with a numeric `value`. The following example shows a simple energy-flow Sankey:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,37 +207,16 @@ Nodes represent the categories, and links represent the flow between them. Each 
 
 The Sankey diagram renders nodes (rectangles) sized proportionally to their flow, with links (curved bands) connecting source nodes to target nodes. Hovering over a link displays a tooltip with the source, target, and value.
 
-## Module Injection
-
-To enable tooltip and legend features, inject the following granular services:
-
-- `SankeyTooltipService` — Required to use the tooltip.
-- `SankeyLegendService` — Required to use the legend.
-
-Update `src/app/app.component.ts` to import the services and add them to the `providers` array of the component:
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sankey/getting-started/tooltip-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sankey/getting-started/tooltip-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/sankey/getting-started/tooltip-cs1" %}
-
 ## Troubleshooting
 
 If the Sankey Chart does not render as expected, check for these common issues:
 
-* **Chart not visible**: Verify that `ViewEncapsulation.None` is set on the component, that the `id` on `<ejs-sankey>` is unique, and that the `selector` matches the root element in `index.html`.
+* **Chart not visible**: Verify that `ViewEncapsulation.None` is set on the component, that the `id` on `<ejs-sankey>` is unique, and that the `selector` matches the root element in `index.html` (commonly `<app-root>`).
 * **Data not displayed**: Check that your data contains `source`, `target`, and `value` properties and that node ids match exactly between links.
 * **Build errors**: Run `ng version` to confirm that Node.js, Angular CLI, and `@syncfusion/ej2-angular-charts` are on supported versions.
 
 ## See also
 
-* [Sankey Legend](legend.md) — Configure the legend for the Sankey diagram.
-* [Sankey Tooltip](tool-tip.md) — Customize the tooltip on links and nodes.
-* [Sankey Title and Subtitle](title-and-sub-title.md) — Add a title and subtitle to the chart.
+* [Configure the legend for the Sankey diagram](legend)
+* [Customize the tooltip on links and nodes](tool-tip)
+* [Add a title and subtitle to the chart](title-and-sub-title)
