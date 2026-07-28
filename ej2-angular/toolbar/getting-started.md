@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Toolbar component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Toolbar component of Syncfusion Essential JS 2 and more details.
+description:  Learn how to get started with the Syncfusion Angular Toolbar component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
@@ -10,39 +10,25 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Toolbar component
 
-This section explains how to create a simple **Toolbar** using Angular and configure Toolbar items like button, separator and input components.
+The Toolbar component provides a container for grouping and organizing actions, commands, and controls, enabling users to quickly access frequently used tools and perform tasks efficiently within the application.
 
-## Dependencies
+This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Toolbar component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
-Install the required dependency package to use the `Toolbar` component in your application.
+The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
-```javascript
-|-- @syncfusion/ej2-angular-navigations
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-navigations
-        |-- @syncfusion/ej2-buttons
-        |-- @syncfusion/ej2-popups
-```
+## Prerequisites
 
-## Setup Angular Environment
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+## Setup the Angular application
+
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
 ```
 
 > **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
-
-### Installing a specific version
-
-To install a particular version of Angular CLI, use:
-
-```bash
-npm install -g @angular/cli@21.0.0
-```
 
 ## Create a new application
 
@@ -86,77 +72,25 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Toolbar Package
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Navigations package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion<sup style="font-size:70%">&reg;</sup> package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular's legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-navigations`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38) package to the application.
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Toolbar** package, use the following command:
 
 ```bash
-npm install @syncfusion/ej2-angular-navigations --save
+ng add @syncfusion/ej2-angular-navigations
 ```
 
-### Angular compatibility compiled package(ngcc)
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically. 
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-navigations/v/20.2.38-ngcc) package to the application.
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
-npm install @syncfusion/ej2-angular-navigations@ngcc --save
-```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
-
-```bash
-@syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Add Toolbar component
-
-Modify the template in [src/app/app.component.ts] file to render the toolbar component.
-Add the Angular Toolbar by using `<ejs-toolbar>` selector in **template** section of the app.component.ts file.
-
-```typescript
-import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
-import { Component } from '@angular/core';
-
-@Component({
-imports: [
-  ToolbarModule
-],
-standalone: true,
-selector: 'app-root',
-// specifies the template string for the Toolbar component
-template: `<ejs-toolbar>
-          <e-items>
-             <e-item text='Cut'></e-item>
-             <e-item text='Copy'></e-item>
-             <e-item text='Paste'></e-item>
-             <e-item type='Separator'></e-item>
-             <e-item text='Bold'></e-item>
-             <e-item text='Italic'></e-item>
-             <e-item text='Underline'></e-item>
-          </e-items>
-        </ejs-toolbar>`
-})
-export class AppComponent { }
-
+npm install @syncfusion/ej2-angular-navigations
 ```
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Toolbar component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -167,55 +101,63 @@ npm install @syncfusion/ej2-material3-theme
 Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/toolbar/index.css";
 ```
 
-* Now, run the application in the browser using the following command.
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Toolbar component
 
-  ```shell
-  npm start
-  ```
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Toolbar import, template, and data into your generated file.
 
-The following code example shows how to initialize the Toolbar on a single element.
+> For the full property list, see the [Toolbar API reference](https://ej2.syncfusion.com/angular/documentation/api/toolbar/index-default).
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toolbar/toolbar-cs1/src/app.component.ts %}
-{% endhighlight %}
+```typescript
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toolbar/toolbar-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/toolbar/toolbar-cs1" %}
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { Component } from '@angular/core';
 
-## Initialize the Toolbar using HTML elements
+@Component({
+  selector: 'app-root',
+  imports: [ToolbarModule],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
+})
 
-The Toolbar component can be rendered based on the given HTML element using `<ejs-toolbar>`.
-This approach provides more flexibility for custom styling and complex layouts when the standard item configuration is not sufficient.
-You need to follow the below structure of HTML elements to render the Toolbar inside the `<ejs-toolbar>` tag.
+export class App  { }
+
+```
+Place the following markup in the component template file referenced by `templateUrl` (for example, `src/app/app.html`):
 
 ```html
-   <ejs-toolbar>   --> Root Toolbar Element
-    <div>      --> Toolbar Items Container
-       <div>   --> Toolbar Item Element
-       </div>
-    </div>
-  </ejs-toolbar>
+<div id="Toolbar-container">
+      <ejs-toolbar>
+          <e-items>
+             <e-item text='Cut'></e-item>
+             <e-item text='Copy'></e-item>
+             <e-item text='Paste'></e-item>
+             <e-item type='Separator'></e-item>
+             <e-item text='Bold'></e-item>
+             <e-item text='Italic'></e-item>
+             <e-item text='Underline'></e-item>
+          </e-items>
+        </ejs-toolbar>
+</div>
 ```
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toolbar/toolbar-container-cs1/src/app.component.ts %}
-{% endhighlight %}
+## Running the application
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toolbar/toolbar-container-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/toolbar/toolbar-container-cs1" %}
+From the project root:
+
+```bash
+ng serve
+```
+
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Toolbar. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+
+Stop the server with `Ctrl+C` in the terminal.
+
+The following example illustrates the output in your browser.
+
+{% previewsample "page.domainurl/samples/toolbar/toolbar-cs1" %}
 
 ## See Also
 

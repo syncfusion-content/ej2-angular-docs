@@ -83,7 +83,7 @@ Navigate to your newly created application directory:
 cd syncfusion-angular-app
 ```
 
-> **Note:** In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, etc. In Angular 20+, the CLI generates a simpler structure with `app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+> In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, etc. In Angular 20+, the CLI generates a simpler structure with `app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
 ## Installing Syncfusion® Sankey Chart Package
 
@@ -116,7 +116,7 @@ For applications not compiled with Ivy, use the `ngcc` tagged packages:
 npm install @syncfusion/ej2-angular-charts@32.1.19-ngcc
 ```
 
-> **Note:** The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).
 
 ## Add the Sankey Chart Component
 
@@ -134,7 +134,7 @@ Update `src/app/app.component.ts` (or `src/app/app.ts` in Angular 20+) to render
 
 {% previewsample "page.domainurl/samples/sankey/getting-started/initialize-cs1" %}
 
-> **Note:** `SankeyAllModule` registers every available service at once, which is convenient for getting started. For production, prefer the granular `SankeyModule` (shown later in this guide) and inject only the services you need.
+> `SankeyAllModule` registers every available service at once, which is convenient for getting started. For production, prefer the granular `SankeyModule` (shown later in this guide) and inject only the services you need.
 
 Use the `ng serve` command to run the application in the browser:
 
@@ -191,7 +191,7 @@ The following example uses `SankeyModule` with the granular providers registered
 
 ## Bind Data to the Sankey Chart
 
-Now that the granular services are registered, you can populate the Sankey Chart with data. Nodes represent the categories, and links represent the flow between them. Each node has a unique `id`, and each link connects a `source` node to a `target` node with a numeric `value`. The following example shows a simple energy-flow Sankey:
+Now that the granular services are registered, you can populate the Sankey Chart with data. Nodes represent the categories, and links represent the flow between them. Each node has a unique [id](https://ej2.syncfusion.com/angular/documentation/api/sankey/sankeynodemodel#id). Each link uses [sourceId](https://ej2.syncfusion.com/angular/documentation/api/sankey/sankeylinkmodel#sourceid) and [targetId](https://ej2.syncfusion.com/angular/documentation/api/sankey/sankeylinkmodel#targetid) to reference the source and target node IDs, while [value](https://ej2.syncfusion.com/angular/documentation/api/sankey/sankeylinkmodel#value) defines the flow amount between the connected nodes. The following example shows a simple energy-flow Sankey:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -212,7 +212,7 @@ The Sankey diagram renders nodes (rectangles) sized proportionally to their flow
 If the Sankey Chart does not render as expected, check for these common issues:
 
 * **Chart not visible**: Verify that `ViewEncapsulation.None` is set on the component, that the `id` on `<ejs-sankey>` is unique, and that the `selector` matches the root element in `index.html` (commonly `<app-root>`).
-* **Data not displayed**: Check that your data contains `source`, `target`, and `value` properties and that node ids match exactly between links.
+* **Data not displayed**: Check that your data contains `sourceId`, `targetId`, and `value` properties and that node ids match exactly between links.
 * **Build errors**: Run `ng version` to confirm that Node.js, Angular CLI, and `@syncfusion/ej2-angular-charts` are on supported versions.
 
 ## See also
@@ -220,3 +220,4 @@ If the Sankey Chart does not render as expected, check for these common issues:
 * [Configure the legend for the Sankey diagram](legend)
 * [Customize the tooltip on links and nodes](tool-tip)
 * [Add a title and subtitle to the chart](title-and-sub-title)
+* [Sankey Chart API reference](https://ej2.syncfusion.com/angular/documentation/api/sankey/index-default)
