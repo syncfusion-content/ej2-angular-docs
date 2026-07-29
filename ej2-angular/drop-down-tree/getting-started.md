@@ -103,7 +103,7 @@ npm install @syncfusion/ej2-material3-theme
 Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/drop-down-tree/index.css";
 ```
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Dropdown Tree component
@@ -157,7 +157,7 @@ export class App {
 Place the following markup in the component template file referenced by `templateUrl` (for example, `src/app/app.html`):
 
 ```html
-<ejs-dropdowntree id='dropdowntree' [fields]='fields' placeholder='Select a Item'></ejs-dropdowntree>
+<ejs-dropdowntree id='dropdowntree' [fields]='fields' placeholder='Select an Item'></ejs-dropdowntree>
 ```
 
 ## Running the application

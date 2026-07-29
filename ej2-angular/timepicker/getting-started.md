@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Timepicker component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Timepicker component of Syncfusion Essential JS 2 and more details.
+description:  Learn how to get started with the Syncfusion Angular TimePicker component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -10,37 +10,17 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular TimePicker component
 
-This guide demonstrates how to set up and configure the Syncfusion Angular TimePicker component, from initial installation through selecting time values with custom formats. The TimePicker component allows users to select time values with support for time ranges, custom formats, globalization, and keyboard shortcuts.
+The TimePicker component enables users to select and input a specific time through an interactive time selection interface, providing an easy and accurate way to capture time-related information for scheduling, appointments, and time-based workflows.
 
-> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TimePicker component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
-
-To get started quickly with Angular TimePicker component using CLI and Schematics, you can check this video:
-
-{% youtube "https://www.youtube.com/watch?v=v=3efj-8AIc3Y" %}
+The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
 ## Prerequisites
 
-Ensure your development environment meets the [System Requirements for Syncfusion Angular UI Components](../system-requirement).
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
-## Dependencies
-
-Install the below required dependency package in order to use the `TimePicker` component in your application.
-
-```javascript
-|-- @syncfusion/ej2-angular-calendars
-    |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-calendars
-        |-- @syncfusion/ej2-inputs
-          |-- @syncfusion/ej2-splitbuttons
-        |-- @syncfusion/ej2-lists
-        |-- @syncfusion/ej2-popups
-            |-- @syncfusion/ej2-buttons
-```
-
-## SetUp the Angular application
+## Setup the Angular application
 
 A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
@@ -49,14 +29,6 @@ npm install -g @angular/cli
 ```
 
 > **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
-
-### Installing a specific version
-
-To install a particular version of Angular CLI, use:
-
-```bash
-npm install -g @angular/cli@21.0.0
-```
 
 ## Create a new application
 
@@ -100,40 +72,25 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> TimePicker package
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TimePicker package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
-
-This guide uses the [Angular TimePicker component](https://www.syncfusion.com/angular-components/angular-timepicker) for demonstration. Add the Angular TimePicker component component with:
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TimePicker** package, use the following command:
 
 ```bash
 ng add @syncfusion/ej2-angular-calendars
 ```
 
-This command will perform the following configurations:
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically. 
 
-- Add the `@syncfusion/ej2-angular-calendars` package and peer dependencies to your `package.json`.
-- Import the TimePicker component component in your application.
-- Register the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
+If `ng add` is unavailable in your setup, install the package manually with:
 
-For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:		
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)		
-2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.		
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:		
-```bash		
-ng add @syncfusion/ej2-angular-calendars
-```		
-For applications not compiled with Ivy, use the `ngcc` tagged packages:		
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).	
-```bash		
-npm add @syncfusion/ej2-angular-calendars@32.1.19-ngcc		
+```bash
+npm install @syncfusion/ej2-angular-calendars
 ```
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> TimePicker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -144,65 +101,57 @@ npm install @syncfusion/ej2-material3-theme
 Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/timepicker/index.css";
 ```
 
-## Adding TimePicker component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> TimePicker component
 
-Now, modify the `src/app/app.ts` file to render the TimePicker component using the `<ejs-timepicker>` selector:
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the TimePicker import, template, and data into your generated file.
+
+> For the full property list, see the [TimePicker API reference](https://ej2.syncfusion.com/angular/documentation/api/timepicker/index-default).
 
 ```typescript
-import { Component } from '@angular/core';
+
 import { TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { Component} from '@angular/core';
 
 @Component({
-  imports: [TimePickerModule],
-  standalone: true,
   selector: 'app-root',
-  template: `<!-- Render TimePicker -->
-             <ejs-timepicker placeholder='Select a time'></ejs-timepicker>`
+  imports: [TimePickerModule],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
 })
-export class AppComponent {
-    constructor() {
-    }
-}
+
+export class App  { }
+
+```
+Place the following markup in the component template file referenced by `templateUrl` (for example, `src/app/app.html`):
+
+```html
+<div id="container">
+      <ejs-timepicker></ejs-timepicker>
+</div>
 ```
 
 ## Running the application
 
-After completing the configuration required to render a TimePicker component, run the following command to display the output in your default browser:
+From the project root:
 
 ```bash
-ng serve --open
+ng serve
 ```
 
-The TimePicker component will be rendered in your browser with default settings.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the TimePicker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/timepicker/getting-started-cs2/src/app.component.ts %}
-{% endhighlight %}
+Stop the server with `Ctrl+C` in the terminal.
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/getting-started-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
+The following example illustrates the output in your browser.
+
 {% previewsample "page.domainurl/samples/timepicker/getting-started-cs2" %}
 
 ## Setting the selected, min, and max time
 
 The following example demonstrates how to set the value, min and max time when initializing the TimePicker. The TimePicker allows selection of time values within a range from `7:00 AM` to `4:00 PM`. To learn more about time range restrictions, please refer to the [time range documentation](./time-range).
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/timepicker/getting-started-cs3/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/getting-started-cs3/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
   
 {% previewsample "page.domainurl/samples/timepicker/getting-started-cs3" %}
 
@@ -212,19 +161,7 @@ Time format is a way of representing the time value in different string formats 
 
 The following example demonstrates the TimePicker component in 24-hour format with 60-minute intervals. The time interval is set to 60 minutes using the [`step`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#step-number) property:
 
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/timepicker/getting-started-cs4/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/getting-started-cs4/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
 {% previewsample "page.domainurl/samples/timepicker/getting-started-cs4" %}
-
-> Once the format property is defined, it will be applicable to all the cultures.
 
 ## See Also
 
