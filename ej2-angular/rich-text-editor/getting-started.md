@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Rich Text Editor
 
-The Syncfusion Angular Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section explains the steps to create a simple Angular Rich Text Editor component and configure its core functionalities.
+The Syncfusion Angular Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section describes how to create a basic Angular Rich Text Editor component and configure its core features.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
@@ -22,6 +22,8 @@ To get started quickly with the Angular Rich Text Editor using CLI and Schematic
 ## Prerequisites
 
 This guide uses the Angular CLI to manage Angular applications. It requires Node `24.13.0` or higher. For more information about Angular CLI and its features, refer the [Angular CLI](https://github.com/angular/angular-cli).
+
+N> For information about supported Angular versions and Syncfusion package compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) documentation.
 
 ## Setup Angular Environment
 
@@ -42,7 +44,7 @@ This command will prompt you for a few settings for the new project, such as whi
 
 ![Initial_setup](images/getting-started/Initial-setup.png)
 
-By default, it will create a CSS-based application.
+By default, the Angular CLI creates a CSS-based application.
 
 Then the CLI also displays an additional prompt asking whether to enable Server‑Side Rendering (SSR) and Static Site Generation (SSG), as shown below:
 
@@ -90,13 +92,21 @@ The installed theme package includes an `index.css` file that automatically impo
 
 The following modules are used to utilize the basic capabilities of the Rich Text Editor:
 
-* **HtmlEditorService** - Inject this module to use Rich Text Editor as html editor.
-* **ImageService** - Inject this module to use image feature in Rich Text Editor.
-* **LinkService** - Inject this module to use link feature in Rich Text Editor.
-* **QuickToolbarService** - Inject this module to use quick toolbar feature for the target element.
-* **ToolbarService** - Inject this module to use Toolbar feature.
+* **HtmlEditorService** - Inject this module to use the Rich Text Editor as HTML editor.
+* **ImageService** - Inject this module to use the image feature in Rich Text Editor.
+* **LinkService** - Inject this module to use the link feature in Rich Text Editor.
+* **QuickToolbarService** - Inject this module to use the quick toolbar feature for the target element.
+* **ToolbarService** - Inject this module to use the Toolbar feature.
 
-> Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/module).
+These modules can be injected as `services` through the component's `providers` array, as demonstrated in the following example.
+
+{% tabs %}
+{% highlight ts hl_lines="10" tabtitle="app.ts" %}
+{% include code-snippet/rich-text-editor/getting-started/basic-editor/src/app.component.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+T> Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/module).
 
 ## Adding Rich Text Editor component
 
@@ -112,8 +122,7 @@ Modify the template in the `src/app/app.ts` file to render the Rich Text Editor 
 {% endhighlight %}
 {% endtabs %}
 
-
-## Run the application
+## Run the Application
 
 Use the following command to run the application in the browser.
 
@@ -121,14 +130,23 @@ Use the following command to run the application in the browser.
 ng serve --open
 ```
 
-## See also
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Rich Text Editor is displayed in the browser as shown below.
 
-* [How to change the editor type](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-types/editor-mode)
-* [How to render the iframe](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-types/iframe)
-* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-types/inline-editing)
+![Syncfusion Angular Rich Text Editor output](images/getting-started.png)
+
+## See Also
+
+**Documentation links**
+
+* [How to change the editor type](./editor-types/editor-mode.md)
+* [How to render the iframe](./editor-types/iframe.md)
+* [How to render the toolbar in inline mode](./editor-types/inline-editing.md)
+* [Accessibility in Rich Text Editor](./accessibility.md)
+* [Keyboard support in Rich Text Editor](./keyboard-support.md)
+* [Globalization in Rich Text Editor](./globalization.md)
+
+**Live samples**
+
 * [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/insert-emoticons)
 * [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/blog-posting)
 * [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/tailwind3/rich-text-editor/reactive-form)
-* [Accessibility in Rich text editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility)
-* [Keyboard support in Rich text editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/keyboard-support)
-* [Globalization in Rich text editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/globalization)

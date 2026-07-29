@@ -25,15 +25,15 @@ This section explains the steps required to create a simple diagram and demonstr
 
 | Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Diagram Version |
 |-----------------|-----------------------------------------------|
-|[Angular v22](https://blog.angular.dev/announcing-angular-v22-c52bb83a4664)| 34.1.29|
-|[Angular v21](https://www.syncfusion.com/blogs/post/angular-21-updates-syncfusion-support)| 31.1.17|
-|[Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 29.2.8|
-|[Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
+| [Angular v22](https://blog.angular.dev/announcing-angular-v22-c52bb83a4664)| 34.1.29|
+| [Angular v21](https://www.syncfusion.com/blogs/post/angular-21-updates-syncfusion-support)| 31.1.17|
+| [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 29.2.8|
+| [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/)| 23.2.4 |
 | [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/)| 21.1.39 |
 | [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 |
-|[Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/)| 20.2.36 |
+| [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/)| 20.2.36 |
 | [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
 | [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/)| 19.3.43 |
 
@@ -100,7 +100,7 @@ npm install @syncfusion/ej2-angular-diagrams
 
 N> Installing `@syncfusion/ej2-angular-diagrams` automatically installs the required dependency packages.
 
-N> While a Syncfusion® license is not required for local development, you must register a valid Syncfusion® license key when deploying the application to production. For details, see [Registering a Syncfusion® license key](https://ej2.syncfusion.com/angular/documentation/licensing/overview).
+N> A Syncfusion® license key is not required for local development. However, a valid Syncfusion® license key must be registered before deploying the application to production. For details, see [Registering a Syncfusion® license key](https://ej2.syncfusion.com/angular/documentation/licensing/overview).
 
 N> For the latest tested version of the Diagram package, refer to the [`@syncfusion/ej2-angular-diagrams` package page](https://www.npmjs.com/package/@syncfusion/ej2-angular-diagrams).
 
