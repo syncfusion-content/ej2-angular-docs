@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple [Angular Range Navigator](https://www.syncfusion.com/angular-components/angular-range-selector) and demonstrates the basic usage of the Range Navigator component.
 
-> **Note:** This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+> This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
@@ -20,7 +20,7 @@ This section explains the steps required to create a simple [Angular Range Navig
 
 Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
-## Set Up the Angular Application
+## Setup the Angular application
 
 A straightforward approach to begin with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
@@ -84,49 +84,30 @@ ng new syncfusion-angular-app --style=scss
 cd syncfusion-angular-app
 ```
 
-> **Note:** In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+> In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Range Navigator package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
-
-This guide uses the [Angular Range Navigator component](https://www.syncfusion.com/angular-components/angular-range-selector) for demonstration. Add the [Angular Chart package](https://www.npmjs.com/package/@syncfusion/ej2-angular-charts) with:
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Range Navigator** package, use the following command:
 
 ```bash
 ng add @syncfusion/ej2-angular-charts
 ```
 
-The above command will perform the following configurations:
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically.
 
-- Add the `@syncfusion/ej2-angular-charts` package and peer dependencies to your `package.json`.
-- Import the Range Navigator component in your application.
-
-For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
-ng add @syncfusion/ej2-angular-charts
+npm install @syncfusion/ej2-angular-charts
 ```
 
-### Angular compatibility compiled package (ngcc)
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Range Navigator component
 
-For applications not compiled with Ivy, use the `ngcc` tagged packages:
-
-```bash
-npm install @syncfusion/ej2-angular-charts@32.1.19-ngcc
-```
-
-> **Note:** The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).
-
-## Add the Range Navigator Component
-
-Update `src/app/app.component.ts` (or `src/app/app.ts` in Angular 20+) to render the Range Navigator component:
+Replace the contents of `src/app/app.ts` (Angular 20+) or `src/app/app.component.ts` (Angular 19 and below) with the following:
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { ChartModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-charts';
 
 @Component({
@@ -135,23 +116,10 @@ import { ChartModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-chart
     selector: 'app-root',
     // specifies the template string for the RangeNavigator component
     template: `<ejs-rangenavigator id="rn-container"></ejs-rangenavigator>`,
-    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent { }
 
 ```
-
-> **Note:** `ChartModule` provides the series types used by the Range Navigator. Without `ChartModule`, series such as `AreaSeries` will not be available.
-
-The `app-root` selector matches the root element in `src/index.html`, which is the default generated by Angular CLI.
-
-Use the `ng serve` command to run the application in the browser:
-
-```bash
-ng serve
-```
-
-Verify that an empty Range Navigator renders before proceeding to the next step.
 
 ## Module Injection
 
@@ -164,7 +132,7 @@ Range Navigator features are exposed through individual services. To use a parti
 Update `src/app/app.component.ts` to import the services and add them to the `providers` array of the component:
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { ChartModule, RangeNavigatorModule, AreaSeriesService, DateTimeService, RangeTooltipService } from '@syncfusion/ej2-angular-charts';
 
 @Component({
@@ -173,7 +141,6 @@ import { ChartModule, RangeNavigatorModule, AreaSeriesService, DateTimeService, 
     selector: 'app-root',
     providers: [AreaSeriesService, DateTimeService, RangeTooltipService],
     template: `<ejs-rangenavigator id="rn-container"></ejs-rangenavigator>`,
-    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent { }
 ```
@@ -200,6 +167,14 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 
 The sample should look like our [default](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/default), don't worry about the gradient color, let it take the default color.
 
+## Run the application
+
+Run the application using the following command:
+
+```bash
+ng serve
+```
+
 ## Troubleshooting
 
 If the Range Navigator does not render as expected, check for these common issues:
@@ -213,5 +188,5 @@ If the Range Navigator does not render as expected, check for these common issue
 ## See also
 
 * [Configure the period selector](period-selector)
-* [Customize the value axis](axis.md)
-* [Use the lightweight (canvas) mode for performance](lightweight.md)
+* [Customize the value axis](axis)
+* [Use the lightweight (canvas) mode for performance](lightweight)

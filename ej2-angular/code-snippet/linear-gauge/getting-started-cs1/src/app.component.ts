@@ -4,15 +4,20 @@ import { LinearGaugeModule, GaugeTooltipService } from '@syncfusion/ej2-angular-
 @Component({
     imports: [LinearGaugeModule],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     providers: [GaugeTooltipService],
-    template: `<ejs-lineargauge id="gauge-container" [tooltip]="tooltip"></ejs-lineargauge>`
+    template: `<ejs-lineargauge id="gauge-container" style='display:block;' [tooltip]="tooltip">
+                <e-axes>
+                    <e-axis>
+                        <e-pointers>
+                            <e-pointer value=50></e-pointer>
+                        </e-pointers>
+                    </e-axis>
+                </e-axes>
+            </ejs-lineargauge>`
 })
 export class AppComponent {
-    public tooltip?: Object;
-    ngOnInit(): void {
-        this.tooltip = {
-            enable: true
-        };
-    }
+   public tooltip: Object = {
+        enable: true
+    };
 }
