@@ -99,6 +99,7 @@ Choose one of these two options:
 |--------|--------------|----------|
 | **MCP Server** (recommended) | Gives your IDE real-time access to Syncfusion documentation | Real-time suggestions, live updates |
 | **Component Skills** | Stores Syncfusion patterns in your project for any AI to read | Teams, offline work, consistent patterns |
+| **Angular UI Builder** | Agent skill that helps accelerate UI creation with Syncfusion components from natural-language prompts | Building complete UIs quickly without writing the code yourself |
 
 **Option 1: Install MCP Server**
 
@@ -121,6 +122,18 @@ The [Syncfusion Skills installation](https://ej2.syncfusion.com/angular/document
 - Data binding examples and event handling
 
 Teams benefit most from Component Skills because everyone follows the same Syncfusion patterns, it works offline without internet, and reduces code review friction on pattern-related issues.
+
+**Option 3: Install Angular UI Builder (agentic UI builder)**
+
+The [Syncfusion® Angular UI Builder](https://ej2.syncfusion.com/angular/documentation/agentic-ui-builder) is an agent skill that goes beyond snippets and code suggestions — it helps speed up the development process by building full Angular components and pages from a natural-language description. It detects your project setup, selects the right Syncfusion components, injects the required feature modules, applies the chosen theme, and produces accessible, responsive, typed code.
+**What you get:**
+- End-to-end UI scaffolding from a single prompt
+- Automatic selection of Syncfusion components, props, and required `Inject` services
+- Better alignment with component patterns and project context
+- Faster setup for dashboards, forms, reports, and data-heavy apps
+- More consistent, responsive layouts with less manual cleanup
+
+For installation steps, supported targets, and how to use the agent, see the [Angular UI Builder documentation](https://ej2.syncfusion.com/angular/documentation/agentic-ui-builder#installation).
 
 ### API-Based AI
 
@@ -148,9 +161,10 @@ You are an expert in Syncfusion Angular components.
 |---|---|
 | Learning Syncfusion, exploring components | Browser AI |
 | Quick code samples needed | Browser AI |
-| Building production features in the IDE | IDE AI + MCP Server |
+| Building production features in the IDE | IDE AI + Skills + MCP Server |
 | Large team using same patterns | IDE AI + Skills |
 | Offline development | IDE AI + Skills |
+| Generating full UIs from a prompt | IDE AI + Angular UI Builder |
 | Building AI-powered tools | API + Web Search |
 
 ## Practical Examples
@@ -243,4 +257,5 @@ If you encounter unexpected results, use this as a quick diagnostic reference:
 | Production code in your IDE | Install MCP Server |
 | Team consistency | Use Component Skills |
 | Offline development | Use Component Skills |
+| Generate a full UI from a prompt | Use Angular UI Builder |
 | Programmatic AI tools | Use API with web search enabled |
