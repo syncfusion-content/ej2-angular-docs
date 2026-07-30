@@ -258,6 +258,4 @@ Using radial gradient, colors will be applied in circular progression. The inner
   
 {% previewsample "page.domainurl/samples/linear-gauge/pointers-cs9" %}
 
-
-
->If we set both gradients, only the linear gradient gets rendered. If we set the [startValue](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient#startvalue) and [endValue](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient#endvalue) property of the [linearGradient](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient) as empty strings, then the radial gradient gets rendered in the pointer of the Linear Gauge.
+> If we set both gradients, only the linear gradient gets rendered. If we set the [startValue](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient#startvalue) and [endValue](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient#endvalue) property of the [linearGradient](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGradient) as empty strings, then the radial gradient gets rendered in the pointer of the Linear Gauge.

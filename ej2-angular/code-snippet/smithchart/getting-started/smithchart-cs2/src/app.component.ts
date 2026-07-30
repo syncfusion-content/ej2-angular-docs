@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
-import { SmithchartModule, TooltipRenderService, SmithchartLegendService } from '@syncfusion/ej2-angular-charts';
+import { SmithchartModule, TooltipRenderService } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     imports: [SmithchartModule],
-    providers: [TooltipRenderService, SmithchartLegendService],
+    providers: [TooltipRenderService],
     standalone: true,
     selector: 'app-container',
     template: `<ejs-smithchart style='display: block;' id='container' height='350px'>
         <e-seriesCollection>
-            <e-series [dataSource]='seriesdata1' name='Transmission1' reactance='reactance' resistance='resistance'></e-series>
-            <e-series [points]='seriespoints' name='Transmission2'></e-series>
+            <e-series [tooltip]='tooltip' [dataSource]='seriesdata1' name='Transmission1' reactance='reactance' resistance='resistance'></e-series>
+            <e-series [tooltip]='tooltip' [points]='seriespoints' name='Transmission2'></e-series>
         </e-seriesCollection>
     </ejs-smithchart>`
 })
 export class AppComponent {
+    public tooltip: object = {
+        visible: true
+    };
     public seriesdata1: object[] = [
         { resistance: 0, reactance: 0.05 }, { resistance: 0, reactance: 0.05 },
         { resistance: 0, reactance: 0.05 }, { resistance: 0, reactance: 0.05 },

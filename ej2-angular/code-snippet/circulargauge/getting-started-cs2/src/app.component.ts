@@ -1,14 +1,13 @@
-import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge'
-import { GaugeTooltipService } from '@syncfusion/ej2-angular-circulargauge'
-import { Component, OnInit } from '@angular/core';
+import { CircularGaugeModule, GaugeTooltipService } from '@syncfusion/ej2-angular-circulargauge'
+import { Component } from '@angular/core';
 
 @Component({
 imports: [CircularGaugeModule],
 providers: [ GaugeTooltipService ],
 standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     template:
-    `<ejs-circulargauge id="circular-container" [tooltip]="tooltip">
+    `<ejs-circulargauge id="circular-container" style='display:block;' [tooltip]="tooltip">
         <e-axes>
             <e-axis>
                 <e-pointers>
@@ -18,13 +17,10 @@ standalone: true,
         </e-axes>
     </ejs-circulargauge>`
 })
-export class AppComponent implements OnInit {
-    public tooltip?: Object;
-    ngOnInit(): void {
-        this.tooltip = {
-            enable: true
-        };
-    }
+export class AppComponent {
+    public tooltip: Object = {
+        enable: true
+    };
 }
 
 

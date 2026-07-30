@@ -32,11 +32,11 @@ The main files used in this guide are:
 - `src/app/world-map.ts` — Contains the GeoJSON data for the world map.
 - `src/index.html` — Contains the Angular root element.
 
-> **Note:** In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
+> In newer Angular CLI standalone projects, the root component may be generated as `src/app/app.ts`. In NgModule-based Angular projects, the equivalent file is typically `src/app/app.component.ts`.
 
-> **Note:** If your application uses an older NgModule-based structure, import `MapsModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
+> If your application uses an older NgModule-based structure, import `MapsModule` in the application module, such as `app.module.ts`, instead of adding it to the standalone component `imports` collection.
 
-## Step 1: Install Angular CLI
+## Setup the Angular application
 
 Open your terminal on your system **(Command Prompt, PowerShell, or Terminal)** and use [Angular CLI](https://github.com/angular/angular-cli) to create and manage Angular applications. Install Angular CLI globally using the following command:
 
@@ -50,43 +50,77 @@ Verify the installation:
 ng version
 ```
 
-## Step 2: Create an Angular application
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Create a new Angular application using the following command from your working directory:
+### Installing a specific version
 
-```bash
-ng new my-maps-app
-```
-
-During project creation, Angular CLI may prompt you to choose stylesheet, SSR/SSG, and AI tool configuration options. For this basic Maps sample, use the following options:
-
-* **Stylesheet system**: Choose any option. This guide uses `CSS` for simplicity.
-* **SSR and SSG/Pre-rendering**: Select `No`.
-* **AI tools configuration**: Select `None`.
-
-Navigate to the project folder:
+To install a particular version of Angular CLI, use:
 
 ```bash
-cd my-maps-app
+npm install -g @angular/cli@21.0.0
 ```
 
-## Step 3: Install the Syncfusion® Angular Maps package
+## Create an Angular application
 
-All Syncfusion Essential® JS 2 packages are available in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
+With Angular CLI installed, execute this command to generate a new application:
 
-Install the Angular Maps package using the following command:
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Initial setup](./images/MapProviders/SSR.png)
+
+* Select the required AI tool or 'none' if you do not need any AI tool.
+
+![Initial setup](./images/MapProviders/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Maps package
+
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Maps** package, use the following command:
+
+```bash
+ng add @syncfusion/ej2-angular-maps
+```
+
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically.
+
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
 npm install @syncfusion/ej2-angular-maps
 ```
 
-> **Note:** Installing `@syncfusion/ej2-angular-maps` automatically installs the required dependency packages. For the full list of compatible Syncfusion® Angular component versions by Angular release, see the [Angular version compatibility table](https://ej2.syncfusion.com/angular/documentation/system-requirement).
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Maps component
 
-## Step 4: Register the Maps module and add the component
-
-Import `MapsModule` from `@syncfusion/ej2-angular-maps` and add it to the `imports` collection of the standalone component. Then, add the Angular Maps component using the `<ejs-maps>` selector in the component template.
-
-Update the `src/app/app.ts` file as follows:
+Modify the template in `src/app/app.ts` (Angular 20+) or `src/app/app.component.ts` (Angular 19 and below) to render the Maps component:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -101,11 +135,31 @@ import { MapsModule } from '@syncfusion/ej2-angular-maps';
 export class App {}
 ```
 
-This renders an empty Map in the application.
+## Register Modules and Services
 
-> **Note:** The component selector must match the root element used in the `src/index.html` file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`. The Maps component also requires an explicit `height` and `width`; without them, the element will have zero size and the map will not be visible.
+Import `MapsModule` from `@syncfusion/ej2-angular-maps` and add it to the `imports` collection of the standalone component. Then, add the Angular Maps component using the `<ejs-maps>` selector in the component template.
 
-## Step 5: Add the world map shape data
+Maps components are segregated into individual feature-wise modules. To use a particular feature, you need to inject its feature service in `src/app/app.ts` (Angular 20+) or `src/app/app.component.ts` (Angular 19 and below). This example uses the tooltip feature of the Maps component.
+
+* `MapsTooltipService` - Inject this provider to render the tooltip.
+
+Replace the contents of `src/app/app.ts` (or `src/app/app.component.ts` on Angular 19 and below) with the following:
+
+```typescript
+import { Component } from '@angular/core';
+import { MapsModule, MapsTooltipService } from '@syncfusion/ej2-angular-maps';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [ MapsModule ],
+  providers: [ MapsTooltipService ],
+  template: `<ejs-maps id="maps-container"></ejs-maps>`
+})
+export class App {}
+```
+
+## Add the world map shape data
 
 Create a new file at `src/app/world-map.ts` and export the world map GeoJSON as a constant. Download the full GeoJSON from [Syncfusion Downloads](https://www.syncfusion.com/downloads/support/directtrac/general/ze/world-map-2091224620) and paste its contents into the file as follows:
 
@@ -120,19 +174,17 @@ export const world_map: object = {
 
 > **Note:** The constant name `world_map` is case-sensitive. The import statement in `app.ts` must match the exported name exactly, and the file name `world-map.ts` must match the import path `./world-map`.
 
-## Step 6: Bind the shape data to the map
+## Bind the shape data to the map
 
 This section explains how to create a simple map by binding the GeoJSON data and rendering map layers using the Angular Maps component.
 
-Update the `src/app/app.ts` file as follows:
-
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/getting-started-cs1/src/app.component.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/maps/default-map/getting-started-cs2/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/getting-started-cs1/src/main.ts %}
+{% include code-snippet/maps/default-map/getting-started-cs2/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -143,7 +195,7 @@ In this example:
 * [`shapeData`](https://ej2.syncfusion.com/angular/documentation/api/maps/layersettingsmodel#shapedata) defines the geographical shape data (GeoJSON) used to render the Map.
 * `<e-layers>` and `<e-layer>` directives are used to define and render map layers.
 
-## Step 7: Run the application
+## Run the application
 
 Run the application using the following command:
 

@@ -18,63 +18,91 @@ Ensure your development environment meets the [System Requirements for Syncfusio
 
 You also need a modern code editor such as Visual Studio Code, Cursor, or Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio.
 
-> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone). 
+## Setup the Angular application
 
-## Set Up the Angular Environment
-
-Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI globally:
+A straightforward approach to begin with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular Application
-
-Create a new Angular application with the Angular CLI:
+Verify the installation:
 
 ```bash
-ng new my-app
-cd my-app
+ng version
 ```
 
-## Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Circular Gauge package
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are published on npm under the `@syncfusion` scope. Angular distributions are available in two package formats:
+### Installing a specific version
 
-1. [Ivy library distribution package](https://angular.dev/tools/libraries/angular-package-format) (recommended)
-2. Angular compatibility compiler (ngcc) package (legacy)
+To install a particular version of Angular CLI, use:
 
-### Ivy library distribution package
+```bash
+npm install -g @angular/cli@21.0.0
+```
 
-From package version `20.2.36` onwards, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are published as Ivy partial-compilation packages and are compatible with Angular 13 and later, including the latest Angular versions (such as Angular 21).
+## Create an Angular application
 
-Install the [`@syncfusion/ej2-angular-circulargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge/v/32.1.19) package using the following command.
+With Angular CLI installed, execute this command to generate a new application. When prompted, accept the default options unless you have a specific reason to change them.
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command prompts you to configure settings like enabling Angular routing and choosing a stylesheet format. Accept the defaults (no routing, CSS) to follow this guide.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Server-side rendering prompt](images/SSR.png)
+
+* Select the required AI tool, or 'none' if you do not need any AI tool.
+
+![AI tool selection prompt](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> In Angular 19 and below, the CLI generates files named `app.component.ts`, `app.component.html`, `app.component.css`, and so on. In Angular 20+, the structure is simpler: `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Circular Gauge package
+
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Circular Gauge** package, use the following command:
+
+```bash
+ng add @syncfusion/ej2-angular-circulargauge
+```
+
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically.
+
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
 npm install @syncfusion/ej2-angular-circulargauge
 ```
 
-### Angular compatibility compiled package (ngcc)
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Circular Gauge component
 
-Use the legacy `@ngcc`-tagged package only for projects that still rely on the Angular View Engine (typically Angular 12 and earlier). Angular 13 and later do not require ngcc.
-
-Install the [`@syncfusion/ej2-angular-circulargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-circulargauge/v/32.1.19-ngcc) package using the following command.
-
-```bash
-npm install @syncfusion/ej2-angular-circulargauge@ngcc
-```
-
-To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version, for example:
-
-```bash
-"@syncfusion/ej2-angular-circulargauge": "32.1.19-ngcc"
-```
-
-> If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
-
-## Add the Circular Gauge component
-
-1. Open `src/app/app.component.ts` and replace its contents with the following code to render the Circular Gauge component.
+Open `src/app/app.component.ts` (Angular 19 and below) or `src/app/app.ts` (Angular 20+) and replace its contents with the following to render the Circular Gauge component. 
 
 ```typescript
 
@@ -92,47 +120,11 @@ export class AppComponent { }
 
 ```
 
-2. Replace the default selector in `src/index.html` so the new standalone component is bootstrapped.
+## Module Injection
 
-    ```html
-    <app-container></app-container>
-    ```
+The Circular Gauge component is divided into individual feature-based modules. To use a specific feature, you must inject its service provider. For standalone components, register services in the `providers` array of the component. This example uses the tooltip feature of the Circular Gauge component.
 
-3. Run the application in the browser with the following command.
-
-    ```bash
-    ng serve --open
-    ```
-
-By default, the dev server opens at `http://localhost:4200/`.
-
-The following example renders a basic Circular Gauge.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/getting-started-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/getting-started-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/circulargauge/getting-started-cs1" %}
-
-## Module injection
-
-The Circular Gauge component offers additional features through injectable services. To use these features, import and register the required services in the component's `providers` array.
-
-The following services enhance the Circular Gauge's functionality:
-
-* **AnnotationsService** - Enables adding annotations (text, shapes, or custom templates) to the Circular Gauge at specific positions. Inject this service to display additional information or labels within or around the Circular Gauge.
-* **GaugeTooltipService** - Enables the display of tooltips for pointers and ranges when the mouse hovers over them. Inject this service to show contextual details on user interaction.
-* **PrintService** - Enables printing the rendered Circular Gauge directly from the browser. Inject this service to use the [`print`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge#print) method.
-* **ImageExportService** - Enables exporting the rendered Circular Gauge as an image (PNG, JPEG, or SVG). Inject this service to use the [`export`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge#export) method.
-* **PdfExportService** - Enables exporting the rendered Circular Gauge as a PDF document. Inject this service to use the [`export`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge#export) method.
-
-These services should be injected into the `providers` section of the standalone component.
+* `GaugeTooltipService` –  Inject this provider to use tooltip feature.
 
 The following example demonstrates injecting `GaugeTooltipService` to enable the tooltip on the Circular Gauge:
 
@@ -170,3 +162,4 @@ The following example demonstrates injecting `GaugeTooltipService` to enable the
 * [Internationalization](./internationalization)
 * [Accessibility](./accessibility)
 * [EJ1 API migration](./ej1-api-migration)
+* [Circular Gauge API Reference](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge)
