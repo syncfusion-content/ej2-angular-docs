@@ -6,10 +6,10 @@ import { InlineAIAssistModule, InlineAIAssistComponent, InlinePromptRequestEvent
     imports: [InlineAIAssistModule ],
     standalone: true,
     selector: 'app-root',
-    templateUrl: './app.component.html',
+    templateUrl: './app.html',
 })
 
-export class AppComponent {
+export class App {
     @ViewChild('inlineAssistComponent')
     public inlineAssistComponent!: InlineAIAssistComponent;
     
