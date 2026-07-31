@@ -119,7 +119,7 @@ npm install @syncfusion/ej2-material3-theme --save
 Then add the following CSS reference to the `src/styles.css` file:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight css tabtitle="styles.css" %}
 
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/chat-ui/index.css";
 
@@ -133,7 +133,7 @@ Modify the template in the `src/app/app.ts` file to render the Chat UI component
 To define the chat content, use the `user` property to assign an identity to the current user, which is essential for distinguishing the user's messages from those of other participants.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/chat-ui/defaultmessages/src/app.component.ts %}
 {% endhighlight %}
 
@@ -143,6 +143,14 @@ To define the chat content, use the `user` property to assign an identity to the
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/defaultmessages" %}
+
+## Run the application
+
+After completing the configuration required to render a basic Chat UI, run the following command to display the output in your default browser.
+
+```bash
+ng serve
+```
 
 ## Registering your Syncfusion license
 
@@ -156,14 +164,6 @@ registerLicense('YOUR_LICENSE_KEY');
 ```
 
 > **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
-
-## Run the application
-
-After completing the configuration required to render a basic Chat UI, run the following command to display the output in your default browser.
-
-```bash
-ng serve
-```
 
 ## Production build
 

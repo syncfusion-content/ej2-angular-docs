@@ -119,7 +119,7 @@ npm install @syncfusion/ej2-material3-theme --save
 Then add the following CSS reference to the `src/styles.css` file:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight css tabtitle="styles.css" %}
 
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/ai-assistview/index.css";
 
@@ -142,6 +142,15 @@ Modify the template in the **src/app/app.ts** file to render the AI AssistView c
 
 {% previewsample "page.domainurl/samples/ai-assistview/getting-started" %}
 
+## Run the application
+
+After completing the configuration required to render a basic AI AssistView, run the following command to display the output in your default browser.
+
+```
+ng serve
+```
+> **Note:** Starting from version 33.1x, when a user submits a prompt to the AI AssistView, the component automatically scrolls and focuses on the latest prompt and response. This behavior eliminates the need for users to manually scroll down to see the new response, ensuring they always view the most recent AI response without interruption. Prior to version 33.1x, the previous responses remained visible when new responses were added.
+
 ## Registering Your Syncfusion License
 
 Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register
@@ -154,16 +163,6 @@ registerLicense('YOUR_LICENSE_KEY');
 ```
 
 > **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
-
-## Run the application
-
-After completing the configuration required to render a basic AI AssistView, run the following command to display the output in your default browser.
-
-```
-ng serve
-```
-
-> **Note:** Starting from version 33.1x, when a user submits a prompt to the AI AssistView, the component automatically scrolls and focuses on the latest prompt and response. This behavior eliminates the need for users to manually scroll down to see the new response, ensuring they always view the most recent AI response without interruption. Prior to version 33.1x, the previous responses remained visible when new responses were added.
 
 ## Configure suggestions and responses
 

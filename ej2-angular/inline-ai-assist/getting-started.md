@@ -133,7 +133,7 @@ npm install @syncfusion/ej2-material3-theme --save
 Then add the following CSS reference to the `src/styles.css` file:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight css tabtitle="styles.css" %}
 
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/inline-ai-assist/index.css";
 
@@ -145,7 +145,7 @@ Then add the following CSS reference to the `src/styles.css` file:
 Modify the template in the `src/app/app.ts` file to render the Inline AI Assist component. Add the component by using the `<ejs-inlineaiassist>` selector in the `template` section of the `app.ts` file.
 
 {% tabs %}
-{% highlight html tabtitle="app.component.html" %}
+{% highlight html tabtitle="app.html" %}
 {% include code-snippet/inline-ai-assist/getting-started/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.ts" %}
@@ -162,6 +162,14 @@ Modify the template in the `src/app/app.ts` file to render the Inline AI Assist 
 
 {% previewsample "page.domainurl/samples/inline-ai-assist/getting-started" %}
 
+## Run the application
+
+After completing the configuration required to render a basic Inline AI Assist, run the following command to display the output in your default browser.
+
+```bash
+ng serve
+```
+
 ## Registering your Syncfusion license
 
 Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register it.
@@ -175,20 +183,12 @@ registerLicense('YOUR_LICENSE_KEY');
 
 > **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
 
-## Run the application
-
-After completing the configuration required to render a basic Inline AI Assist, run the following command to display the output in your default browser.
-
-```bash
-ng serve
-```
-
 ## RelateTo and target configuration
 
 You can use the `relateTo` property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement. The `target` property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
 {% tabs %}
-{% highlight html tabtitle="app.component.html" %}
+{% highlight html tabtitle="app.html" %}
 {% include code-snippet/inline-ai-assist/relateTo/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.ts" %}
@@ -210,7 +210,7 @@ You can use the `relateTo` property to position the Inline AI Assist relative to
 Responses can be shown in two modes: `Inline` (updates content in-place) and `Popup` (shows responses in a floating popup). Toggle this behavior with the `responseMode` property.
 
 {% tabs %}
-{% highlight html tabtitle="app.component.html" %}
+{% highlight html tabtitle="app.html" %}
 {% include code-snippet/inline-ai-assist/response-mode/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.ts" %}

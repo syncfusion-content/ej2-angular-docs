@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
     template: `<div ejs-aiassistview id='aiAssistView'></div>`
 })
 
-export class AppComponent {
+export class App {
 
 }
