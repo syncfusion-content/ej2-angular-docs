@@ -1,18 +1,26 @@
 ---
 layout: post
-title: Release Notes - Syncfusion Angular AI and Smart Tooling | Syncfusion
-description: Explore the release notes for Syncfusion Angular AI and Smart Tooling, covering MCP Server, Skills, and Agentic UI Builder updates across all versions.
-control: Syncfusion Angular AI and Smart Tooling Release Notes
+title: Release Notes - Syncfusion Angular AI Coding Assistants | Syncfusion
+description: Explore the release notes for Syncfusion Angular AI Coding Assistants, covering MCP Server, Skills, and Agentic UI Builder updates across all versions.
+control: Syncfusion Angular AI Coding Assistants Release Notes
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular AI and Smart Tooling Release Notes
+# Syncfusion Angular AI Coding Assistants Release Notes
 
-This document provides information about the changes and new features included in each version of the Syncfusion Angular AI and Smart Tooling, including the [@syncfusion/angular-assistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) MCP Server, Skills, Agentic UI Builder and so on.
+This document provides information about the changes and new features included in each version of the Syncfusion Angular AI Coding Assistants, including the [@syncfusion/angular-mcp](https://www.npmjs.com/package/@syncfusion/angular-mcp) MCP Server, Skills, Agentic UI Builder and so on.
 
 ## MCP Server
+
+**(v1.0.0) - August 3, 2026**
+
+**Breaking Changes**
+
+- The package has been renamed from [@syncfusion/angular-assistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) to [@syncfusion/angular-mcp](https://www.npmjs.com/package/@syncfusion/angular-mcp). The [@syncfusion/angular-assistant](https://www.npmjs.com/package/@syncfusion/angular-assistant) package is deprecated and will no longer receive updates.
+
+- The coding assistant tool identifier has been changed from **`sf_angular_assistant`** to **`search_docs`** for a better naming convention.
 
 **(v3.0.0) - July 21, 2026**
 

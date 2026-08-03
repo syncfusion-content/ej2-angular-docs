@@ -27,7 +27,7 @@ Install the Syncfusion CLI globally using the following command:
 
 {% tabs %}
 {% highlight bash tabtitle="npm" %}
-npm install -g @syncfusion/cli
+npm install -g @syncfusion/syncfusion-cli
 {% endhighlight %}
 {% endtabs %}
 
@@ -45,7 +45,7 @@ sf new syncfusion-angular-app --framework angular --template file-manager
 {% endhighlight %}
 {% endtabs %}
 
-In this mode, the project configuration is passed directly in the command. The above command creates a Angular CLI application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager component.
+In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> File Manager component.
 
 ### Interactive mode
 
@@ -57,7 +57,7 @@ sf
 {% endhighlight %}
 {% endtabs %}
 
-When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular CLI application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `File Manager` component, select the following options:
+When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `File Manager` component, select the following options:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -74,7 +74,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 {% endhighlight %}
 {% endtabs %}
 
-The above selections generate a Angular CLI application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `File Manager` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+The above selections generate a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `File Manager` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
 

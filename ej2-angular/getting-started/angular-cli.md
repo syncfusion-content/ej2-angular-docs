@@ -29,7 +29,7 @@ Install the Syncfusion CLI globally using the following command:
 
 {% tabs %}
 {% highlight bash tabtitle="npm" %}
-npm install -g @syncfusion/cli
+npm install -g @syncfusion/syncfusion-cli
 {% endhighlight %}
 {% endtabs %}
 

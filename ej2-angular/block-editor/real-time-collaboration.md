@@ -88,7 +88,7 @@ running at 'localhost' on port 1234
 - Create an adapter that provides the Yjs runtime and the shared fragment to the Block Editor.
 - Create a provider that connects users to the same shared document.
 
-Create a `collaboration.ts` file in the src folder to configure the Yjs document, provider, collaboration adapter, and room allocation logic.
+Create a `collaboration.ts` file in the src folder and add the following code to configure the Yjs document, provider, collaboration adapter, and room allocation logic.
 
 ```typescript
 import * as Y from 'yjs';
@@ -221,6 +221,19 @@ If the text appears in both tabs, **real-time collaboration is achieved.**
 Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The users property includes `id`, `user` and `avatarBgColor`.
 
 ```typescript
+import { Component, OnInit } from '@angular/core';
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+
+@Component({
+    selector: 'app-root',
+    template: `
+        <ejs-blockeditor
+            [users]="users"
+            [currentUserId]="currentUserId"
+            [collaborationSettings]="collaborationSettings">
+        </ejs-blockeditor>
+    `
+})
 export class App implements OnInit {
     users: any[] = [{
         id: 'user-1',
@@ -234,12 +247,6 @@ export class App implements OnInit {
         // Initialize with users configuration
     }
 }
-```
-
-**In template:**
-
-```html
-<ejs-blockeditor [users]="users" [currentUserId]="currentUserId" [collaborationSettings]="collaborationSettings"></ejs-blockeditor>
 ```
 
 ### Get active users
@@ -529,11 +536,11 @@ The following are the methods available in the `IVersionHistory`:
 Creates a new snapshot of the current document state with an optional label and metadata.
 
 ```typescript
-    this.versionHistory = this.blockEditor.getVersionHistory();
-    this.versionHistory.createSnapshot({
-        label: 'Before major update',
-        modifiedBy: this.currentUserId
-    });
+this.versionHistory = this.blockEditor.getVersionHistory();
+this.versionHistory.createSnapshot({
+    label: 'Before major update',
+    modifiedBy: this.currentUserId
+});
 ```
 
 #### List snapshots
@@ -576,7 +583,7 @@ Compares two snapshots to identify differences such as added, removed, or modifi
 
 ```typescript
 this.versionHistory = this.blockEditor.getVersionHistory();
-    this.versionHistory.compareVersions(snapshotIdA, snapshotIdB);
+this.versionHistory.compareVersions(snapshotIdA, snapshotIdB);
 ```
 
 The returned `VersionDiff` object provides a summary of the differences between the two selected versions.
