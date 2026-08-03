@@ -76,8 +76,6 @@ The DataGrid components support two size modes to optimize user experience acros
 {% include code-snippet/grid/style-appearance-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/style-appearance-cs2" %}
 
 ## Theme Customization
 
@@ -155,8 +153,6 @@ The Fluent 2 theme leverages modern CSS custom properties to provide a clean and
 {% include code-snippet/grid/style-appearance-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/style-appearance-cs1" %}
 
 ### Using Theme Studio
 
