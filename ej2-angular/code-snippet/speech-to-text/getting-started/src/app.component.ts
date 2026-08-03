@@ -15,7 +15,7 @@ import { SpeechToTextModule, TextAreaComponent, TextAreaModule, TranscriptChange
     </div>`
 })
 
-export class AppComponent {
+export class App {
     @ViewChild('outputTextarea') outputTextarea!: TextAreaComponent;
     onTranscriptChange(args: TranscriptChangedEventArgs): void {
         this.outputTextarea.value = args.transcript;

@@ -117,7 +117,7 @@ npm install @syncfusion/ej2-material3-theme --save
 Then add the following CSS reference to the `src/styles.css` file:
 
 {% tabs %}
-{% highlight css tabtitle="style.css" %}
+{% highlight css tabtitle="styles.css" %}
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/speech-to-text/index.css";
 {% endhighlight %}
 {% endtabs %}
@@ -140,6 +140,16 @@ Modify the template in the `src/app/app.ts` file to render the SpeechToText comp
 
 {% previewsample "page.domainurl/samples/speech-to-text/getting-started/index" %}
 
+## Run the application
+
+After completing the configuration required to render a basic SpeechToText component, run the following command to display the output in your default browser.
+
+```bash
+ng serve
+```
+
+> The [SpeechToText](../api/speech-to-text) component requires an active internet connection and must be used in a browser that supports the [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) Web Speech API.
+
 ## Registering your Syncfusion license
 
 Before using Syncfusion components, generate a license key from the [Syncfusion License Dashboard](https://www.syncfusion.com/account/downloads) and register it.
@@ -152,16 +162,6 @@ registerLicense('YOUR_LICENSE_KEY');
 ```
 
 > **Note:** A valid Syncfusion license is required for production use. If a valid license is not registered, a trial license warning message will be displayed when the application runs.
-
-## Run the application
-
-After completing the configuration required to render a basic SpeechToText component, run the following command to display the output in your default browser.
-
-```bash
-ng serve
-```
-
-> The [SpeechToText](../api/speech-to-text) component requires an active internet connection and must be used in a browser that supports the [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) Web Speech API.
 
 ## Production build
 

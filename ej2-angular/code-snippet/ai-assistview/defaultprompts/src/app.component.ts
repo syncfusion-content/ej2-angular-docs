@@ -13,7 +13,7 @@ import { PromptRequestEventArgs } from '@syncfusion/ej2-interactive-chat';
     template: `<div ejs-aiassistview id='aiAssistView' #aiAssistViewComponent (promptRequest)="onPromptRequest($event)" [promptSuggestions]="promptSuggestions"></div>`
 })
 
-export class AppComponent {
+export class App {
     @ViewChild('aiAssistViewComponent')
     public aiAssistViewComponent!: AIAssistViewComponent;
 

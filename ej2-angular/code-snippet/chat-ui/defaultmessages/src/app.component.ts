@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
     </div>`
 })
 
-export class AppComponent {
+export class App {
     public currentUserModel: UserModel = { user: 'Albert', id: 'user1' };
     public michaleUserModel: UserModel = { user: 'Michale Suyama', id: 'user2' };
 }
