@@ -93,7 +93,8 @@ The following example shows a default Block Editor component.
 {% endhighlight %}
 
 {% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/block-editor/getting-started/src/styles.css %}
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/blockeditor/index.css';
 {% endhighlight %}
 {% endtabs %}
 
