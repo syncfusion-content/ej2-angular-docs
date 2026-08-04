@@ -7,7 +7,7 @@ import { GridComponent, GridModule, PageService} from '@syncfusion/ej2-angular-g
   standalone: true,
   selector: 'app-root',
   template: `<button (click)="toggleTouchMode()">{{ buttonText }}</button>
-            <ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' [selectionSettings]='selectionOptions' height='268px'>
+            <ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' height='268px'>
             <e-columns>
                   <e-column field='OrderID' headerText='Order ID' type='number' isPrimaryKey='true' textAlign='Right' width=100></e-column>
                   <e-column field='CustomerID' headerText='Customer ID' type='string' width=120></e-column>
