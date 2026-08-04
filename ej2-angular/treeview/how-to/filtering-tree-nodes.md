@@ -15,7 +15,7 @@ The TreeView component supports filtering nodes based on their text content usin
 The following code example demonstrates how to filter tree nodes in a TreeView.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
 

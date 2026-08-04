@@ -17,7 +17,7 @@ The Angular Stepper component supports displaying steps in horizontal or vertica
 In horizontal orientation, steps are arranged side by side by setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/stepper/#orientation) property to `Horizontal`. This is the default orientation for the Stepper component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/horizontal/src/app.component.ts %}
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ In horizontal orientation, steps are arranged side by side by setting the [orien
 In vertical orientation, steps are stacked one below the other by setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/stepper/#orientation) property to `Vertical`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/vertical/src/app.component.ts %}
 {% endhighlight %}
 

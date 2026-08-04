@@ -26,7 +26,7 @@ The `animationSettings` property accepts an object with three configurable optio
 The following sample demonstrates how to configure ContextMenu with `FadeIn` effect and a custom `duration` of `800ms`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/template-cs2/src/app.component.ts %}
 {% endhighlight %}
 

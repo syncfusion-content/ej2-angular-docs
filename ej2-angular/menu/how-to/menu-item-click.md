@@ -17,7 +17,7 @@ You can control the behavior of menu and submenu item expansion using the `showI
 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 

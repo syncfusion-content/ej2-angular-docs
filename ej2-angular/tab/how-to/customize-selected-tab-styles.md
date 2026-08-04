@@ -16,7 +16,7 @@ You can customize the Tab style by overriding its header and active tab CSS clas
 property which is used to customize the Tab component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/custom-styles-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Integrate treeview in Angular Accordion component | Syncfusion
 description: Learn here all about Integrate treeview inside the accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # TreeView Integration in Angular Accordion Component
 
-The Syncfusion Angular Accordion component supports integrating other Essential<sup style="font-size:70%">&reg;</sup> JS 2 components, such as TreeView, within its items using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem/#content) property. This enables hierarchical navigation structures, ideal for file explorers, nested menus, or organizational charts within expandable panels.
+The Syncfusion Angular Accordion component supports integrating other Essential<sup style="font-size:70%">&reg;</sup> JS 2 components, such as TreeView, within its items using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#content) property. This enables hierarchical navigation structures, ideal for file explorers, nested menus, or organizational charts within expandable panels.
 
 You can give content as an element string like below, for initializing the component.
 
@@ -18,16 +18,16 @@ You can give content as an element string like below, for initializing the compo
     content: '<div id="element"> </div>'
   ```
 
-The other component can be rendered with the use of provided events, such as [`clicked`](https://ej2.syncfusion.com/angular/documentation/api/accordion/#clicked) and [`expanding`](https://ej2.syncfusion.com/angular/documentation/api/accordion/#expanding).
+The other component can be rendered with the use of provided events, such as [`clicked`](https://ej2.syncfusion.com/angular/documentation/api/accordion#clicked) and [`expanding`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expanding).
 The following procedure is to render a TreeView within the Accordion,
 
 * Import the `TreeView` module from `ej2-navigations`, for adding TreeView. Please refer the [TreeView initialization steps](../../treeview/getting-started)
 
-* You can initialize the TreeView component in [`expanding`](https://ej2.syncfusion.com/angular/documentation/api/accordion/#expanding) event,
+* You can initialize the TreeView component in [`expanding`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expanding) event,
 by getting the element and defining the required TreeView properties.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/accordion/accordion-treeview-cs1/src/app.component.ts %}
 {% endhighlight %}
 

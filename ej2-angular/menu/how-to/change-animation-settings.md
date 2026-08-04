@@ -25,7 +25,7 @@ The following animation effects are supported:
 The following sample illustrates how to open Menu with `FadeIn` [`effect`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuAnimationSettingsModel/#effect) with the [`duration`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuAnimationSettingsModel/#duration) of `800ms`. Also we can set [`easing`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuAnimationSettingsModel/#easing) for menu items.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 

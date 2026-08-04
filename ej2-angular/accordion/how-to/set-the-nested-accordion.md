@@ -14,7 +14,7 @@ Nested Accordions allow hierarchical organization of content within the Syncfusi
 
 To set up nested Accordions, ensure the `@syncfusion/ej2-angular-navigations` package is installed and imported. Use `ng-template` inside each `e-accordionitem` tag with the `#content` attribute to define the item’s content area. Then, apply `ng-template` with a select attribute referencing an ID or class to map the nested content. Note that `ng-template` is an Angular core directive and requires no additional imports.
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/accordion/accordion-cs6/src/app.component.ts %}
 {% endhighlight %}
 

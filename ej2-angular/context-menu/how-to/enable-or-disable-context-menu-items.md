@@ -17,7 +17,7 @@ The `enableItems` method accepts three parameters: an array of item identifiers 
 In the following example, the **Display Settings** parent item and **Medium icons** sub menu item are disabled to demonstrate different levels of menu item control.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/template-cs3/src/app.component.ts %}
 {% endhighlight %}
 

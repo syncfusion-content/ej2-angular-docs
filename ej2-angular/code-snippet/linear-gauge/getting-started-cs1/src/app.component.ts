@@ -1,25 +1,23 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge'
-import { GaugeTooltipService } from '@syncfusion/ej2-angular-lineargauge'
-
-
-
 import { Component } from '@angular/core';
+import { LinearGaugeModule, GaugeTooltipService } from '@syncfusion/ej2-angular-lineargauge';
 
 @Component({
-imports: [
-         LinearGaugeModule
-    ],
-
-providers: [ GaugeTooltipService ],
-standalone: true,
-    selector: 'app-container',
-    // specifies the template string for the linear gauge component
-    template: `<ejs-lineargauge id="gauge-container"></ejs-lineargauge>`
+    imports: [LinearGaugeModule],
+    standalone: true,
+    selector: 'app-root',
+    providers: [GaugeTooltipService],
+    template: `<ejs-lineargauge id="gauge-container" style='display:block;' [tooltip]="tooltip">
+                <e-axes>
+                    <e-axis>
+                        <e-pointers>
+                            <e-pointer value=50></e-pointer>
+                        </e-pointers>
+                    </e-axis>
+                </e-axes>
+            </ejs-lineargauge>`
 })
 export class AppComponent {
-
+   public tooltip: Object = {
+        enable: true
+    };
 }
-
-

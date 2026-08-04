@@ -15,7 +15,7 @@ You can integrate the context menu with the TreeView component to perform essent
 The following example demonstrates how to use the context menu's `select` event to handle TreeView operations including node addition, deletion, and text editing. The implementation shows proper event handling and TreeView method usage for comprehensive node management.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

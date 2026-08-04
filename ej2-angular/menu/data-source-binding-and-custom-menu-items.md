@@ -25,7 +25,7 @@ The Menu can be populated with a hierarchical data source by assigning it to the
 The Menu can generate its menu items from an array of complex data sources by mapping fields from the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel/) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ To create Menu, assign items property with resultant data from [`callback`](http
 The following example displays five employees' **FirstName** from the **Employees** table and **ShipName** details from the **Orders** table of the `Northwind` Data Service.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/data-service-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ To render root-level nodes, specify `parentId` as null or omit the `parentId` fo
 In the following example, the **id**, **pId**, and **text** columns from self-referential data have been mapped to the [`itemId`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel/#itemid), [`parentId`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel/#parentid), and [`text`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel/#text) fields, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -85,7 +85,7 @@ To customize menu items in your application, set your customized template string
 In the following example, the menu has been rendered with customized menu items.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/custom-menu-items-cs1/src/app.component.ts %}
 {% endhighlight %}
 

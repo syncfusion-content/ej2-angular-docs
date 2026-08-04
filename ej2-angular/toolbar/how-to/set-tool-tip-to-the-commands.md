@@ -17,7 +17,7 @@ To change the [`tooltipText`](https://ej2.syncfusion.com/angular/documentation/a
 * Import the `Tooltip` module from `ej2-popups`, and initialize the Tooltip with the Toolbar target. Refer to the following code example:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs4/src/app.component.ts %}
 {% endhighlight %}
 

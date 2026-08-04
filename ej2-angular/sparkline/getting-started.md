@@ -12,20 +12,24 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple [Angular Sparkline](https://www.syncfusion.com/angular-components/angular-sparkline) and demonstrates the basic usage of the Sparkline component in an Angular environment.
 
-> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
-
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
 ## Prerequisites
 
 Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
-## Setup Angular environment
+## Setup the Angular application
 
 A straightforward approach to begin with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
+```
+
+Verify the installation:
+
+```bash
+ng version
 ```
 
 > **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. For more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
@@ -78,44 +82,25 @@ ng new syncfusion-angular-app --style=scss
 cd syncfusion-angular-app
 ```
 
-> Note: In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes). The remaining steps in this guide target the Angular 19 and below file layout; for Angular 20+, rename the file references accordingly (for example, `app.component.ts` -> `app.ts`).
+> In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding Syncfusion Sparkline Package
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Sparkline Chart package
 
-After the Angular application is created, navigate to its directory and add the Syncfusion<sup style="font-size:70%">&reg;</sup> Charts package, which also includes the Sparkline component.
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Sparkline Chart** package, use the following command:
 
 ```bash
-cd syncfusion-angular-app
 ng add @syncfusion/ej2-angular-charts
 ```
 
-The `ng add` command performs the following configurations:
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically.
 
-- Adds the `@syncfusion/ej2-angular-charts` package and its peer dependencies to `package.json`.
-- Imports the Sparkline component in your application.
-
-For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:
-
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format).
-2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.
-
-### Ivy Library Distribution Package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are Ivy-compatible and suited for Angular 12 and above. Use the `ng add` command shown above to install the package.
-
-### Angular Compatibility Compiled Package (ngcc)
-
-For applications not compiled with Ivy, use the `ngcc`-tagged packages:
-
-> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
-npm install @syncfusion/ej2-angular-charts@32.1.19-ngcc
+npm install @syncfusion/ej2-angular-charts
 ```
 
-## Add Sparkline Component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Sparkline Chart Component
 
 Open `src/app/app.component.ts` (Angular 19 and below) or `src/app/app.ts` (Angular 20+) and replace its contents with the following to render the Sparkline component. 
 
@@ -135,7 +120,7 @@ export class AppComponent { }
 
 ## Module injection
 
-Sparkline features are provided by optional services. To enable a feature, register its service either in the application module `providers` (module-based applications) or in a standalone component's `providers` array. Relevant services include:
+Sparkline features are provided by optional services. To enable a feature, register its service either in the application module `providers` (module-based applications) or in a standalone component's `providers` array. This example uses the tooltip feature of the Sparkline Chart component.
 
 - `SparklineTooltipService` - Inject this provider to enable tooltip support for the Sparkline.
 
@@ -148,16 +133,16 @@ import { Component } from '@angular/core';
 @Component({
     imports: [SparklineModule],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     providers: [SparklineTooltipService],
     template: `<ejs-sparkline id='sparkline-container'></ejs-sparkline>`
 })
 export class AppComponent {}
 ```
 
-## Bind data source to Sparkline
+## Bind data source to Sparkline Chart
 
-The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#datasource) property binds data to the Sparkline. This property accepts an array of primitive values or an array of objects. For object arrays, set [`xName`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#yname) to map object fields to the Sparkline's X and Y values. Example data shape: `{ x: 'Jan', y: 10 }` with `xName='x'` and `yName='y'`.
+The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#datasource) property binds data to the Sparkline. This property accepts an array of primitive values or an array of objects. For object arrays, set [`xName`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#yname) to map object fields to the Sparkline's X and Y values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

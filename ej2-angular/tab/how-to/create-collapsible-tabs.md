@@ -20,7 +20,7 @@ The collapsible behavior is achieved by:
 The event handler logic adds the 'collapse' class to hide content and removes it to display content, creating smooth expand and collapse transitions for enhanced user interaction.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/collapse-cs1/src/app.component.ts %}
 {% endhighlight %}
 

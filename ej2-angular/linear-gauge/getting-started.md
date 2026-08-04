@@ -22,8 +22,6 @@ Ensure your development environment meets the [System Requirements for Syncfusio
 
 You also need a modern code editor such as Visual Studio Code, Cursor, or Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio.
 
-> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
-
 ## Dependencies
 
 Below is the list of minimum dependencies required to use the Linear Gauge component.
@@ -31,72 +29,98 @@ Below is the list of minimum dependencies required to use the Linear Gauge compo
 ```javascript
 |-- @syncfusion/ej2-angular-lineargauge
     |-- @syncfusion/ej2-angular-base
-    |-- @syncfusion/ej2-angular-lineargauge
     |-- @syncfusion/ej2-lineargauge
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-svg-base
 ```
 
-## Setup Angular Environment
+## Setup the Angular application
 
-Prerequisites: Node.js (LTS) and npm must be installed before creating an Angular project.
-
-Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI with one of the following approaches depending on preference.
+A straightforward approach to begin with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
 ```
 
-## Create an Angular Application
-
-Create a new Angular application with the Angular CLI:
+Verify the installation:
 
 ```bash
-ng new my-app
-cd my-app
+ng version
 ```
 
-## Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Linear Gauge package
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are published on npm under the `@syncfusion` scope. Angular distributions are available in two package formats:
+### Installing a specific version
 
-1. [Ivy library distribution package](https://angular.dev/tools/libraries/angular-package-format) (recommended)
-2. Angular compatibility compiler (ngcc) package (legacy)
+To install a particular version of Angular CLI, use:
 
-### Ivy library distribution package
+```bash
+npm install -g @angular/cli@21.0.0
+```
 
-From package version `20.2.36` onwards, the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are published as Ivy partial-compilation packages and are compatible with Angular 13 and later, including the latest Angular versions (such as Angular 21).
+## Create an Angular application
 
-Install the [`@syncfusion/ej2-angular-lineargauge`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/32.1.19) package using the following command.
+With Angular CLI installed, execute this command to generate a new application. When prompted, accept the default options unless you have a specific reason to change them.
+
+```bash
+ng new syncfusion-angular-app
+```
+
+* This command prompts you to configure settings like enabling Angular routing and choosing a stylesheet format. Accept the defaults (no routing, CSS) to follow this guide.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+* By default, a CSS-based application is created. Use SCSS if required:
+
+```bash
+ng new syncfusion-angular-app --style=scss
+```
+
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Server-side rendering prompt](images/SSR.png)
+
+* Select the required AI tool, or 'none' if you do not need any AI tool.
+
+![AI tool selection prompt](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> In Angular 19 and below, the CLI generates files named `app.component.ts`, `app.component.html`, `app.component.css`, and so on. In Angular 20+, the structure is simpler: `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Linear Gauge package
+
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Linear Gauge** package, use the following command:
+
+```bash
+ng add @syncfusion/ej2-angular-lineargauge
+```
+
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically.
+
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
 npm install @syncfusion/ej2-angular-lineargauge
 ```
 
-### Angular compatibility compiled package (ngcc)
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Linear Gauge component
 
-Use the legacy `@ngcc`-tagged package only for projects that still rely on the Angular View Engine (typically Angular 12 and earlier). Angular 13 and later do not require ngcc.
-
-Install the [`@syncfusion/ej2-angular-lineargauge@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-lineargauge/v/32.1.19-ngcc) package using the following command.
-
-```bash
-npm install @syncfusion/ej2-angular-lineargauge@ngcc
-```
-
-To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version, for example:
-
-```bash
-"@syncfusion/ej2-angular-lineargauge": "32.1.19-ngcc"
-```
-
-> Note: If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
-
-## Add the Linear Gauge component
-
-1. Open `src/app/app.component.ts` and replace its contents with the following code to render the Linear Gauge component.
+Open `src/app/app.component.ts` (Angular 19 and below) or `src/app/app.ts` (Angular 20+) and replace its contents with the following to render the Linear Gauge component. 
 
 ```typescript
-
 import { Component } from '@angular/core';
 import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge';
 
@@ -111,24 +135,13 @@ export class AppComponent { }
 
 ```
 
-2. Run the application in the browser with the following command.
-
-```bash
-npm start
-```
-
-By default, the dev server opens at `http://localhost:4200/`.
-
 ## Module Injection
 
-The Linear Gauge component is segregated into individual feature-wise services. To use a particular feature, register the matching service in the `providers` array of the component as shown below.
+The Linear Gauge component is divided into individual feature-based modules. To use a specific feature, you must inject its service provider. For standalone components, register services in the `providers` array of the component. This example uses the tooltip feature of the Linear Gauge component.
 
-* `AnnotationsService` – Required to use the [Annotation](./annotations) feature.
-* `GaugeTooltipService` – Required to use the [Tooltip](./user-interaction#tooltip) feature.
+* `GaugeTooltipService` –  Inject this provider to use tooltip feature.
 
-Inject the services you need in the `providers` section of the `app.component.ts` file as shown below.
-
-The following example demonstrates injecting `GaugeTooltipService` to enable the tooltip on the Circular Gauge:
+The following example demonstrates injecting `GaugeTooltipService` to enable the tooltip on the Linear Gauge:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -142,7 +155,13 @@ The following example demonstrates injecting `GaugeTooltipService` to enable the
   
 {% previewsample "page.domainurl/samples/linear-gauge/getting-started-cs1" %}
 
-> Note: Inject only the services required for the features you use. Injecting all services is not required and can increase the bundle size slightly.
+## Run the application
+
+Run the following command to launch the development server and open the application in your default browser:
+
+```bash
+npm start
+```
 
 ## Troubleshooting
 
@@ -164,3 +183,4 @@ The following example demonstrates injecting `GaugeTooltipService` to enable the
 * [Events](./events)
 * [Accessibility](./accessibility)
 * [EJ1 API migration](./ej1-api-migration)
+* [Linear Gauge API Reference](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge)

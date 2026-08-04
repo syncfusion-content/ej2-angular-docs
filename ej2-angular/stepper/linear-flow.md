@@ -15,7 +15,7 @@ The Stepper component allows configuration of linear flow to enforce sequential 
 The following example demonstrates both linear and non-linear flow in the Stepper component, highlighting differences in navigation behavior.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/linearStep/src/app.component.ts %}
 {% endhighlight %}
 

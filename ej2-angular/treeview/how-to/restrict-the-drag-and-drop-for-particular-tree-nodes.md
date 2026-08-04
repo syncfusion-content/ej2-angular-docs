@@ -24,7 +24,7 @@ To restrict drag and drop operations:
 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/restrict-drag-drop-cs1/src/app.component.ts %}
 {% endhighlight %}
 

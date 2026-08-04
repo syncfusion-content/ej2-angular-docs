@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Style and appearance in Angular AppBar component | Syncfusion
 description: Learn here all about Style and appearance in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
@@ -30,10 +30,10 @@ The AppBar component provides several built-in CSS classes for common styling sc
 
 ## CssClass
 
-The CssClass property enables AppBar customization through custom CSS classes, allowing you to override default styles and create unique appearances. In the following example, the AppBar background and color are customized using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/appbar/#cssclass) property.
+The CssClass property enables AppBar customization through custom CSS classes, allowing you to override default styles and create unique appearances. In the following example, the AppBar background and color are customized using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/appbar#cssclass) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/cssclass-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -46,10 +46,10 @@ The CssClass property enables AppBar customization through custom CSS classes, a
 
 ## HtmlAttributes
 
-It can be used for additional inline attributes by specifying as inline attributes or by specifying [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/appbar/#htmlattributes) directive. In the code example below, the aria-label of the AppBar is customized by specifying as attributes.
+It can be used for additional inline attributes by specifying as inline attributes or by specifying [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/appbar#htmlattributes) directive. In the code example below, the aria-label of the AppBar is customized by specifying as attributes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/htmlattributes-cs1/src/app.component.ts %}
 {% endhighlight %}
 

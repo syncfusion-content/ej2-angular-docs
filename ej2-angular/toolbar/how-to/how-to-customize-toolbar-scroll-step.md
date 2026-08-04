@@ -18,7 +18,7 @@ By using the Toolbar scrollStep property, pass a required value to customize too
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/toolbar/scrollstep-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/scrollstep-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -12,15 +12,11 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a Progress Bar and demonstrates the basic usage of the Progress Bar component. By the end of this guide, you will have a Progress Bar running in your Angular application.
 
-> Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
-
 ## Prerequisites
 
 Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-progressbar` versions.
 
 You also need a modern code editor such as Visual Studio Code, Cursor, or Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio.
-
-> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
 ## Dependencies
 
@@ -33,7 +29,7 @@ Below is the list of minimum dependencies required to use the Progress Bar compo
       |-- @syncfusion/ej2-svg-base
 ```
 
-## Install the Angular CLI
+## Setup the Angular application
 
 A straightforward approach to begin with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
@@ -41,7 +37,15 @@ A straightforward approach to begin with Angular is to create a new application 
 npm install -g @angular/cli
 ```
 
-### Install a specific version
+Verify the installation:
+
+```bash
+ng version
+```
+
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+
+### Installing a specific version
 
 To install a particular version of Angular CLI, use:
 
@@ -49,7 +53,7 @@ To install a particular version of Angular CLI, use:
 npm install -g @angular/cli@21.0.0
 ```
 
-## Create a new application
+## Create an Angular application
 
 With Angular CLI installed, execute this command to generate a new application. When prompted, accept the default options unless you have a specific reason to change them.
 
@@ -89,38 +93,22 @@ ng new syncfusion-angular-app --style=scss
 cd syncfusion-angular-app
 ```
 
-> Note: In Angular 19 and below, the CLI generates files named `app.component.ts`, `app.component.html`, `app.component.css`, and so on. In Angular 20+, the structure is simpler: `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+> In Angular 19 and below, the CLI generates files named `app.component.ts`, `app.component.html`, `app.component.css`, and so on. In Angular 20+, the structure is simpler: `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Progress Bar package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
-
-This guide uses the [Angular Progress Bar Component](https://www.syncfusion.com/angular-components/angular-progressbar) for demonstration. Add the Angular Progress Bar component with:
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Progress Bar** package, use the following command:
 
 ```bash
 ng add @syncfusion/ej2-angular-progressbar
 ```
 
-The above command performs the following configurations:
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically.
 
-- Adds the `@syncfusion/ej2-angular-progressbar` package and its peer dependencies to your `package.json`.
-- Imports the Progress Bar component in your application.
-- Registers the default Syncfusion<sup style="font-size:70%">&reg;</sup> Material theme in `angular.json`.
-
-For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers two package structures for Angular components:
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler (ngcc), which is Angular's legacy compilation pipeline.
-
-The latest packages are Ivy-compatible and supported on Angular 12 and above. For Angular 16+, use the `ng add` command shown above. The `ngcc` option is only relevant for older projects — see the legacy note below.
-
-### Legacy ngcc packages (Angular 15 and below only)
-
-If you are on Angular 15 or below, Syncfusion<sup style="font-size:70%">&reg;</sup> also distributes `ngcc`-tagged packages. The `ngcc` packages are still compatible with Angular CLI versions 15 and below, but they may generate warnings suggesting the use of Ivy-compiled packages. Starting from Angular 16, support for the `ngcc` package has been completely removed. For more information, see the [ngcc compatibility FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
-npm install @syncfusion/ej2-angular-progressbar@32.1.19-ngcc
+npm install @syncfusion/ej2-angular-progressbar
 ```
 
 ## Add the Progress Bar component
@@ -145,24 +133,24 @@ export class AppComponent { }
 
 ## Run the application
 
-After the configuration is complete, run the following command to launch the development server and open the application in your default browser:
+Run the development server with `ng serve`. Alternatively, `npm start` works if a `start` script is configured in `package.json`.
 
 ```bash
-npm start
+ng serve
 ```
 
-## Module injection
+## Module Injection
 
 The Progress Bar component offers additional features through injectable services. To use these features, import and register the required services in the component's `providers` array.
 
 The following service enhances the Progress Bar's functionality:
 
-* **ProgressAnnotationService** - Enables adding annotations (text or custom content) to the Progress Bar at specific positions. Inject this service to display additional information or labels within or around the Progress Bar.
+* `ProgressAnnotationService` - Inject this service to display additional information or labels within or around the Progress Bar.
 
 This service should be injected into the `providers` section of the component.
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProgressBarModule, ProgressAnnotationService } from '@syncfusion/ej2-angular-progressbar';
 
 @Component({
@@ -180,12 +168,9 @@ import { ProgressBarModule, ProgressAnnotationService } from '@syncfusion/ej2-an
                     </e-progressbar-annotation>
                 </e-progressbar-annotations>
             </ejs-progressbar>`,
-    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent { }
 ```
-
-> **Note:** For basic Progress Bar functionality without annotations, no service injection is required. The annotation feature is optional and should only be injected when needed.
 
 ## Basic Progress Bar
 
@@ -214,5 +199,6 @@ The following example demonstrates a basic Progress Bar component:
 - [Progress Bar types](types)
 - [Progress Bar customization](customization)
 - [Progress Bar events](events)
+- [Progress Bar API Reference](https://ej2.syncfusion.com/angular/documentation/api/progressbar)
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with the Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio, and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)

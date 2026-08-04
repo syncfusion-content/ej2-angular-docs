@@ -15,7 +15,7 @@ The Tab component includes built-in animation effects for smooth transitions bet
 The sample demonstrates Tab without the default animation effects. You can check the Tab without any animation effects here.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/disable-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple [Angular 3D Circular Chart](https://www.syncfusion.com/angular-components/angular-3d-circular-chart) and demonstrates the basic usage of the Angular 3D Circular Chart component.
 
-> **Note:** This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
+> This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
 
@@ -20,7 +20,7 @@ This section explains the steps required to create a simple [Angular 3D Circular
 
 Before getting started, ensure that your environment meets the [system requirements for Syncfusion® Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement), which covers supported Node.js, Angular, and `@syncfusion/ej2-angular-charts` versions.
 
-## Setup Angular Environment
+## Setup the Angular application
 
 A straightforward approach to begin with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
@@ -44,7 +44,7 @@ To install a particular version of Angular CLI, use:
 npm install -g @angular/cli@21.0.0
 ```
 
-## Create an Angular Application
+## Create an Angular application
 
 With Angular CLI installed, execute this command to generate a new application:
 
@@ -84,49 +84,30 @@ ng new syncfusion-angular-app
 cd syncfusion-angular-app
 ```
 
-> **Note:** In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+> In Angular 19 and below, the CLI generates files like `app.component.ts`, `app.component.html`, `app.component.css`, etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> 3D Circular Chart Package
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular 3D Circular Chart package
 
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s Angular component packages are available on [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, install the necessary package.
-
-This guide uses the [Angular 3D Circular Chart component](https://www.syncfusion.com/angular-components/angular-3d-circular-chart) for demonstration. Add the [Angular Chart package](https://www.npmjs.com/package/@syncfusion/ej2-angular-charts) with:
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular 3D Circular Chart** package, use the following command:
 
 ```bash
 ng add @syncfusion/ej2-angular-charts
 ```
 
-The above command will perform the following configurations:
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically.
 
-- Add the `@syncfusion/ej2-angular-charts` package and peer dependencies to your `package.json`.
-- Import the 3D Circular Chart component in your application.
-
-For more details on version compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) section.
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup>'s latest Angular packages are provided as Ivy-compatible and suited for Angular 12 and above. To install the package, execute:
+If `ng add` is unavailable in your setup, install the package manually with:
 
 ```bash
-ng add @syncfusion/ej2-angular-charts
+npm install @syncfusion/ej2-angular-charts
 ```
 
-### Angular compatibility compiled package (ngcc)
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> 3D Circular Chart component
 
-For applications not compiled with Ivy, use the `ngcc` tagged packages:
-
-> **Note:** The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of Ivy compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/ngcc-compatibility).
-
-```bash
-npm install @syncfusion/ej2-angular-charts@32.1.19-ngcc
-```
-
-## Add the 3D Circular Chart Component
-
-Modify the template in `src/app/app.component.ts` (or `src/app/app.ts` in Angular 20+) to render the 3D Circular Chart component:
+Replace the contents of `src/app/app.ts` (Angular 20+) or `src/app/app.component.ts` (Angular 19 and below) with the following to render the 3D Circular Chart component:
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { CircularChart3DAllModule } from '@syncfusion/ej2-angular-charts';
 
 @Component({
@@ -134,27 +115,38 @@ import { CircularChart3DAllModule } from '@syncfusion/ej2-angular-charts';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the 3D Circular Chart component
-    template: `<ejs-circularchart3d id='chart-container'></ejs-circularchart3d>`,
-    encapsulation: ViewEncapsulation.None
+    template: `<ejs-circularchart3d id='chart3d-container'></ejs-circularchart3d>`,
 })
 export class AppComponent { }
 ```
 
-Use the `ng serve` command to run the application in the browser:
+## Module Injection
 
-```bash
-ng serve
+3D Circular Chart components are segregated into individual feature-wise modules. To use a particular feature, you need to inject its feature service in `src/app/app.ts` (Angular 20+) or `src/app/app.component.ts` (Angular 19 and below). This example will use the tooltip feature of the chart.
+
+* `CircularChartTooltip3DService` - Inject this provider to use the tooltip feature.
+
+Replace the contents of `src/app/app.ts` (or `src/app/app.component.ts` on Angular 19 and below) with the following:
+
+```typescript
+import { Component } from '@angular/core';
+import { CircularChart3DModule, CircularChartTooltip3DService } from '@syncfusion/ej2-angular-charts';
+
+@Component({
+    imports: [CircularChart3DModule],
+    standalone: true,
+    selector: 'app-root',
+    providers: [CircularChartTooltip3DService],
+    template: `<ejs-circularchart3d id='chart3d-container' [tooltip]='tooltip'></ejs-circularchart3d>`,
+})
+export class AppComponent {
+    public tooltip: Object = { enable: true };
+}
 ```
 
-Verify that an empty 3D Circular Chart renders before proceeding to the next step.
+## Bind data to the Circular 3D Chart
 
-> **Note:** `CircularChart3DAllModule` registers every available service at once, which is convenient for getting started. For production, prefer the granular `CircularChart3DModule` and inject only the services you need.
-
-## Pie Series
-
-By default, the pie series is rendered when you assign JSON data to the series via the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/circularchart3d/circularchart3dseriesmodel#datasource) property. Map the field names in the JSON data to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/circularchart3d/circularchart3dseriesmodel#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/circularchart3d/circularchart3dseriesmodel#yname) properties of the series.
-
-The 3D Circular Chart renders a 3D pie with one slice for each data point. Hovering over a slice displays a tooltip with the corresponding value.
+This section explains how to plot JSON data to the 3D Circular Chart. Replace the contents of `src/app/app.ts` (Angular 20+) or `src/app/app.component.ts` (Angular 19 and below) with the following:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,6 +159,14 @@ The 3D Circular Chart renders a 3D pie with one slice for each data point. Hover
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/circular-chart/getting-started" %}
+
+## Run the application
+
+Run the application using the following command:
+
+```bash
+ng serve
+```
 
 ## Troubleshooting
 

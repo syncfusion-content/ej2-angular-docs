@@ -17,7 +17,7 @@ domainurl: ##DomainURL##
 The following example demonstrates how to add spacing between the home and pan buttons in the AppBar:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/spacer-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ The following example demonstrates how to add spacing between the home and pan b
 The following example demonstrates how to add a vertical line between a group of buttons in the AppBar:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/separator-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ The following example demonstrates how to add a vertical line between a group of
 The AppBar renders with a Menu component in its header area. The Menu component inherits styles from the AppBar component using the `e-inherit` CSS class, ensuring consistent theming and appearance.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ The AppBar renders with a Menu component in its header area. The Menu component 
 The AppBar renders with Button and DropDownButton components in its header area. These components inherit styles from the AppBar using the `e-inherit` CSS class, maintaining visual consistency across the interface.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/buttons-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ The AppBar renders with Button and DropDownButton components in its header area.
 The AppBar integrates with the SideBar component positioned below the AppBar. Click the menu icon to expand or collapse the Sidebar. This example uses the `toggle` method to show or hide the Sidebar when the AppBar button is clicked.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/sidebar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -99,7 +99,7 @@ The AppBar integrates with the SideBar component positioned below the AppBar. Cl
 Media Query enables the AppBar to adapt to different screen sizes with responsive behavior. Resize the screen to observe how the AppBar layout adjusts dynamically.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/media-cs1/src/app.component.ts %}
 {% endhighlight %}
 

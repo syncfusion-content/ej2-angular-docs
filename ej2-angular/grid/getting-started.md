@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular Data Grid Getting Started (Quick Setup Guide) | Syncfusion
-description: Learn how to install and configure the Syncfusion Angular Data Grid. Set up a new Angular app and enable paging, sorting, filtering, and grouping.
+description: Learn how to install and configure the Angular Data Grid. Set up a new Angular app and enable paging, sorting, filtering, and grouping.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Data Grid Component
 
-This guide demonstrates how to set up and configure the Syncfusion Angular Data Grid component, from initial installation through enabling core features like paging, sorting, filtering, and grouping.
+This guide demonstrates how to set up and configure the Angular Data Grid component, from initial installation through enabling core features like paging, sorting, filtering, and grouping.
 
 > Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 
@@ -19,92 +19,6 @@ This guide demonstrates how to set up and configure the Syncfusion Angular Data 
 To get started quickly with Angular Data Grid using CLI and Schematics, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=gdOUcWO9-ME" %}
-
-{% tabcontents %}
-
-{% tabcontent Syncfusion CLI %}
-
-## Prerequisites
-
-- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
-- Syncfusion CLI.
-
-## Install the Syncfusion CLI 
-
-Install the Syncfusion CLI globally using the following command:
-
-{% tabs %}
-{% highlight bash tabtitle="npm" %}
-npm install -g @syncfusion/syncfusion-cli
-{% endhighlight %}
-{% endtabs %}
-
-## Create a new Angular application using Syncfusion CLI
-
-You can create a Angular application using the Syncfusion CLI. The CLI provides two ways to create a project:
-
-### Non-interactive mode
-
-Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-sf new syncfusion-angular-app --framework angular --template grid
-{% endhighlight %}
-{% endtabs %}
-
-In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
-
-### Interactive mode
-
-Interactive mode guides you through the project creation process with step-by-step prompts.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-sf
-{% endhighlight %}
-{% endtabs %}
-
-When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Grid` component, select the following options:
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-√ Project name? ... syncfusion-angular-app
-√ Choose Framework: » Angular
-√ Choose Template: » Grid
-√ Choose Theme: » Material3
-√ Choose Style Format: » CSS
-√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no
-√ Install dependencies and start app now? ... no
-
-{% endhighlight %}
-{% endtabs %}
-
-The above selections generate a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Grid` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
-
-## Run the project
-
-Once the project is created, navigate to the project directory and run the following commands in your terminal.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-cd syncfusion-angular-app
-npm install
-ng serve
-{% endhighlight %}
-{% endtabs %}
-
-The output will appear as follows:
-
-![Grid Component](./images/cli-grid.png)
-
-{% endtabcontent %}
-
-{% tabcontent Angular CLI %}
 
 ## Prerequisites
 
@@ -261,14 +175,11 @@ Then open the URL displayed in the terminal.
 
 The Syncfusion® Angular Data Grid requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/angular/documentation/licensing/overview) documentation.
 
-{% endtabcontent %}
-
-{% endtabcontents %}
-
 ## Troubleshooting
 
 - **Grid styles are not applied:** Ensure the required Syncfusion theme CSS is imported in `src/styles.css`.
 - **Trial license warning message:** Register a valid Syncfusion license key using the `registerLicense()` method from `@syncfusion/ej2-base`.
+
 
 N> Looking for the full Angular Data Grid component overview, features, pricing, and documentation? Visit the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) page.
 
@@ -282,15 +193,15 @@ N> Looking for the full Angular Data Grid component overview, features, pricing,
 * [Calculate Height of Angular Data Grid](https://www.syncfusion.com/forums/151191/calculate-height-of-angular-grid)
 * [How to set tabindex for input element and NumericTextBox in Angular Data Grid](https://www.syncfusion.com/forums/145969/how-to-prevent-columns-from-persisting-in-asp-net-mvc-grid)
 * [How to toggle between List and Data Grid View in Angular?](https://support.syncfusion.com/kb/article/11667/how-to-toggle-between-list-and-grid-view-in-angular)
-* [How to get started easily with an example of Syncfusion angular 6 data grid/datatable?](https://support.syncfusion.com/kb/article/10068/how-to-get-started-easily-with-an-example-of-syncfusion-angular-6-data-grid-datatable)
+* [How to get started easily with an example of Angular 6 data grid/datatable?](https://support.syncfusion.com/kb/article/10068/how-to-get-started-easily-with-an-example-of-syncfusion-angular-6-data-grid-datatable)
 * [How to render Angular Data Grid with material theme](https://support.syncfusion.com/kb/article/11617/how-to-render-angular-grid-with-material-theme)
 * [Getting Started ASP.NET Core with Angular using Project Template](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core)
 * [Getting Started with Angular CLI as Front end in ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc)
 * [Getting Started with Ionic and Angular](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/ionic)
 * [Getting Started with Angular and Electron](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/electron)
-* [How to get started easily with Syncfusion angular 9 data grid?](https://support.syncfusion.com/kb/article/9726/how-to-get-started-easily-with-syncfusion-angular-9-data-grid)
-* [How to get started easily with Syncfusion angular 8 data grid?](https://support.syncfusion.com/kb/article/9761/how-to-get-started-easily-with-syncfusion-angular-8-data-grid)
+* [How to get started easily with Angular 9 data grid?](https://support.syncfusion.com/kb/article/9726/how-to-get-started-easily-with-syncfusion-angular-9-data-grid)
+* [How to get started easily with Angular 8 data grid?](https://support.syncfusion.com/kb/article/9761/how-to-get-started-easily-with-syncfusion-angular-8-data-grid)
 * [How to handle errors in Angular Data Grid component?](https://support.syncfusion.com/kb/article/11649/how-to-handle-errors-in-angular-grid-component)
-* [How to get started easily with Syncfusion Angular 7 Data Grid/DataTable?](https://support.syncfusion.com/kb/article/11603/how-to-get-started-easily-with-syncfusion-angular-7-data-grid-datatable)
-* [How to get started easily with an example of Syncfusion angular 5 data grid?](https://support.syncfusion.com/kb/article/8578/how-to-get-started-easily-with-an-example-of-syncfusion-angular-5-data-grid)
-* [How to get started easily with Syncfusion angular 4 data grid?](https://support.syncfusion.com/kb/article/11670/how-to-get-started-easily-with-syncfusion-angular-4-data-grid)
+* [How to get started easily with Angular 7 Data Grid/DataTable?](https://support.syncfusion.com/kb/article/11603/how-to-get-started-easily-with-syncfusion-angular-7-data-grid-datatable)
+* [How to get started easily with an example of Angular 5 data grid?](https://support.syncfusion.com/kb/article/8578/how-to-get-started-easily-with-an-example-of-syncfusion-angular-5-data-grid)
+* [How to get started easily with Angular 4 data grid?](https://support.syncfusion.com/kb/article/11670/how-to-get-started-easily-with-syncfusion-angular-4-data-grid)

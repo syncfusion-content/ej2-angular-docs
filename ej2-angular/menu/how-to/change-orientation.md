@@ -17,7 +17,7 @@ The [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/menu/#o
 This example renders a vertically oriented menu with dropdown submenus.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 

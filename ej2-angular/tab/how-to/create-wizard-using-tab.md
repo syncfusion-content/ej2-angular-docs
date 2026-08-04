@@ -30,7 +30,7 @@ In the following demo, designed for simple train reservation module that enables
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/tab/wizard-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/wizard-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -15,7 +15,7 @@ The TreeView component allows you to create a cleaner interface by automatically
 Refer to the following code sample to hide/show the expand/collapse icon automatically using the mouse.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/auto-hide-icons-cs1/src/app.component.ts %}
 {% endhighlight %}
 

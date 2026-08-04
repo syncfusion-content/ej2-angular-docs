@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 By enabling the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property, you can render checkbox before each node of TreeView. However, certain application scenarios require checkboxes to appear only for leaf nodes, while parent nodes should remain without checkboxes for a cleaner interface or specific workflow requirements. In such cases, you can selectively hide parent node checkboxes through CSS customization while maintaining the underlying checkbox functionality.
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/remove-parent-checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 

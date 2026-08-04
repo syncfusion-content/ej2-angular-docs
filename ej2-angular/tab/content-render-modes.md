@@ -25,7 +25,7 @@ This approach provides a balance between performance and state management, makin
 In the following code example, the Calendar and Scheduler components are rendered in the first and second tabs, respectively. Initially, the Scheduler is not available in the DOM, but it will be rendered once the second tab is selected. Both the Calendar and Scheduler are maintained in the DOM after their initial rendering.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/load-on-demand-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ This rendering mode is ideal for applications with many tabs or heavy content wh
 In the following code example, there are two tabs. The first tab contains a login page, and the second tab contains a Grid component. The Grid component in the second tab will only be rendered in the DOM after the login is completed. Upon successful login, the second tab content will replace the first tab content in the DOM.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/load-on-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -63,7 +63,7 @@ This mode can be applied to the Tab component by setting the [`loadOn`](https://
 In the following example, all three tabs are rendered on the initial load, and the data entered in the first tab will be maintained even when the second or third tab is active.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/load-on-init-cs1/src/app.component.ts %}
 {% endhighlight %}
 

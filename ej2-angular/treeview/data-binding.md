@@ -42,7 +42,7 @@ Hierarchical data binding works with nested data structures where each parent no
 In the following example, **code**, **name**, and **countries** columns from hierarchical data have been mapped to **id**, **text**, and **child** fields, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ You can directly assign self-referential data to the `dataSource` property, and 
 In the following example, **id**, **pid**, **hasChild**, and **name** columns from self-referential data have been mapped to **id**, **parentID**, **hasChildren**, and **text** fields, respectively.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
@@ -112,7 +112,7 @@ In the following example, `ODataV4Adaptor` is used to fetch data from remote ser
 The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have been mapped to **id**, **parentID**, and **text** fields respectively for second level nodes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 

@@ -17,7 +17,7 @@ The `cssClass` property allows you to apply custom CSS classes to the TreeView c
 To customize the expand and collapse icons, define custom CSS classes that target the TreeView's icon elements and apply these styles using the `cssClass` property. The custom CSS should override the default icon fonts or background images with the desired custom icons.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 

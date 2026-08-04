@@ -30,7 +30,7 @@ The example below demonstrates projecting content into Accordion items using `ng
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/accordion/accordion-ng-content-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/accordion/accordion-ng-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 

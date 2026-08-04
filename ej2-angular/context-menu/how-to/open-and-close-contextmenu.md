@@ -20,7 +20,7 @@ The [`open`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#
 In the following example, the ContextMenu is opened using the [`open`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#open) method at the specified position using `top` and `left` coordinates. The ContextMenu is closed using the [`close`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#close) method on ContextMenu item click or document click.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 

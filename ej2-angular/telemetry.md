@@ -62,10 +62,6 @@ The following information may be collected in development mode:
 		<td>The version of the detected framework or platform.</td>
 	</tr>
 	<tr>
-		<td>Browser information</td>
-		<td>Information about the browser used to run the application.</td>
-	</tr>
-	<tr>
 		<td>Operating system</td>
 		<td>The operating system on which the application is running.</td>
 	</tr>
@@ -79,7 +75,7 @@ The following information may be collected in development mode:
 	</tr>
 	<tr>
 		<td>Machine Name</td>
-		<td>Hashed value of machine name, so it cannot be traced back.</td>
+		<td>Hashed value of browser information, so it cannot be traced back.</td>
 	</tr>
 	<tr>
 		<td>Event name</td>

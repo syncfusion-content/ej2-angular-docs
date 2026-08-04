@@ -23,7 +23,7 @@ To load translation objects in an application, use the `load` function of the `L
 In the following sample, the `French` culture is applied to the Tab component, which changes the close button's tooltip text accordingly.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/basic-cs10/src/app.component.ts %}
 {% endhighlight %}
 

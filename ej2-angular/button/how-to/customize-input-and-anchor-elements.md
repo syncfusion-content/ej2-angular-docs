@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize input and anchor elements in Angular Button|Syncfusion
+title: Customize input and anchor elements in Angular Button | Syncfusion
 description: Learn here all about Customize input and anchor elements in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize input and anchor elements 

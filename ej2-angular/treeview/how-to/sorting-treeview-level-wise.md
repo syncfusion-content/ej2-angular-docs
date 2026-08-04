@@ -17,7 +17,7 @@ The `sortOrder` property accepts three values: `None` (default), `Ascending`, an
 The following example demonstrates how to sort only the parent nodes (first level) in the TreeView.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/sort-tree-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

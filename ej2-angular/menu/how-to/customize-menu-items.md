@@ -21,7 +21,7 @@ In the following example, **Europe** menu items are added before the **Oceania**
 > Set `isUniqueId` to `true` to process items using their `id` property instead of `text`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ In the following example, the **Directory** header item, **Conferences**, and **
 > Use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event to dynamically enable or disable submenu items by modifying the `args.items` array.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/enable-disable-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -61,7 +61,7 @@ In the following example, the **Movies** header item, **Workshops**, and **Music
 > Since the Menu initially supports hiding only header items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event to dynamically hide submenu items by updating `args.items`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/enable-disable-cs2/src/app.component.ts %}
 {% endhighlight %}
 

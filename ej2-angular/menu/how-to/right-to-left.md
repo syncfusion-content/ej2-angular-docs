@@ -18,7 +18,7 @@ To enable RTL support, set the [`enableRtl`](https://ej2.syncfusion.com/angular/
 The following example illustrates how to enable right-to-left support in Menu component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 

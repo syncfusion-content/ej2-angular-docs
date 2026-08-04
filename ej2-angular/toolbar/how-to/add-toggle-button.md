@@ -24,7 +24,7 @@ The Toolbar component supports adding toggle buttons through the [`template`](ht
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/toolbar/toggle-button-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toggle-button-cs1/src/app.component.ts %}
 {% endhighlight %}
 

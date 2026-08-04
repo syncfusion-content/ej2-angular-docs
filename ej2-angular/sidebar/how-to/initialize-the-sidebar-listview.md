@@ -21,7 +21,7 @@ The ListView component can be embedded in the Sidebar to create a navigable list
 2. Place the `<ejs-listview>` tag inside the `<ejs-sidebar>` content area.
 The following sample demonstrates a Sidebar with an integrated ListView.
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

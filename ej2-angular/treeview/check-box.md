@@ -29,7 +29,7 @@ For event-driven checkbox control, use the [`nodeChecking`](https://ej2.syncfusi
 In the following example, the `showCheckBox` property is enabled.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ The [checkedNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview
 In the following example, the **New South Wales** and **Western Australia** nodes are pre-checked during initial rendering. When additional nodes are checked through user interaction, the system displays an alert showing all currently checked node IDs.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 

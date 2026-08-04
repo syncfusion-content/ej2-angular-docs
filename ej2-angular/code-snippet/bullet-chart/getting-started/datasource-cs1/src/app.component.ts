@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { BulletChartModule } from '@syncfusion/ej2-angular-charts';
+import { BulletChartModule, BulletTooltipService } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     imports: [BulletChartModule],
     standalone: true,
     selector: 'app-root',
+    providers: [BulletTooltipService],
     template: `<ejs-bulletchart valueField='value' targetField='target'
-                [minimum]='minimum' [maximum]='maximum' [interval]='interval' [dataSource]='data'>
+                [minimum]='minimum' [tooltip]='tooltip' [maximum]='maximum' [interval]='interval' [dataSource]='data'>
                 </ejs-bulletchart>`
 })
 export class AppComponent {
@@ -20,6 +21,7 @@ export class AppComponent {
         { value: 400, target: 380 },
         { value: 500, target: 480 },
     ];
+    public tooltip: Object = { enable: true };
 }
 
 

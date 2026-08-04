@@ -35,7 +35,7 @@ The drag and drop operation follows this event sequence:
 The following sample demonstrates basic drag and drop functionality with the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/tab/#allowdraganddrop) property enabled:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/drag-and-drop/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -56,7 +56,7 @@ In this example, we have used the tab control as an external source, and the ite
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-tab-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -77,7 +77,7 @@ In this example, we have used the tree view control as an external source, and t
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-treeview-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-treeview-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -98,7 +98,7 @@ In this example, we have used the tree view control as an external source, and t
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/tab/drag-and-drop/treeview-to-tab-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/drag-and-drop/treeview-to-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -22,7 +22,7 @@ Key aspects of the `hideTab` method:
 The following demonstration shows how to implement dynamic tab visibility using button controls that toggle the visibility state of a specified tab item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/show-hide-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 

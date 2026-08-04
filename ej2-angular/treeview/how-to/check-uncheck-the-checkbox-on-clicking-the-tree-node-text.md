@@ -23,7 +23,7 @@ Ensure that the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentatio
 The [`nodeClicked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeclicked) event provides a `NodeClickEventArgs` object containing the clicked node information. Use this event to programmatically check or uncheck nodes based on their current state.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/treeview-node-check-cs1/src/app.component.ts %}
 {% endhighlight %}
 

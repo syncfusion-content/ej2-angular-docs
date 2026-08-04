@@ -15,7 +15,7 @@ domainurl: ##DomainURL##
 The ContextMenu component supports icons and images on menu items to provide visual representation of actions and enhance user experience. To add an icon to a menu item, configure the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#iconcss) property with the appropriate CSS class. By default, icons are positioned to the left side of the menu item text. In the following sample, icons for Cut, Copy and Paste menu items are added using the `iconCss` property with e-icons CSS classes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/icons-and-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ The ContextMenu component supports icons and images on menu items to provide vis
 The ContextMenu component enables navigation to external web pages or internal routes when menu items are clicked. This functionality is implemented by configuring the [`url`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#url) property with the target destination URL. When a menu item with a URL is selected, the browser navigates to the specified location. In the following sample, navigation URLs for Flipkart, Amazon, and Snapdeal menu items are configured using the `url` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/icons-and-navigation-cs2/src/app.component.ts %}
 {% endhighlight %}
 

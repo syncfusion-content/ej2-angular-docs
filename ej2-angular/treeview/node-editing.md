@@ -21,7 +21,7 @@ When editing is completed by losing focus or pressing the **Enter** key, the mod
 In the following example, the first level node's text cannot be changed, but all other level nodes' text can be modified.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

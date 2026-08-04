@@ -33,7 +33,7 @@ The default overflow mode is Scrollable. In this mode, Tab header items are disp
 ![Touch scroll](./images/touchscroll.gif)
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/basic-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ Popup is another type of [`overflowMode`](https://ej2.syncfusion.com/angular/doc
 ![Tab with popup](images/popup.gif)
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/basic-cs3/src/app.component.ts %}
 {% endhighlight %}
 

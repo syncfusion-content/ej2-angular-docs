@@ -24,7 +24,7 @@ The [`swipeMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#swip
 * **None** - This disables both touch and mouse swipe actions, preventing any unintended tab switches.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/swipemode-cs1/src/app.component.ts %}
 {% endhighlight %}
 

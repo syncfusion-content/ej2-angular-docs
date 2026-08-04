@@ -24,7 +24,7 @@ The `mediaQuery` property uses CSS media query syntax to determine when the Side
 The following sample demonstrates the Sidebar with a custom `mediaQuery` to control its open or closed state based on screen resolution.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/autoclose-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -43,7 +43,7 @@ The following sample demonstrates the Sidebar with a custom `mediaQuery` to cont
 > **Note**: The `max-width` media feature specifies the maximum width of the viewport, ensuring the Sidebar adapts to smaller displays.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/autoclose-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

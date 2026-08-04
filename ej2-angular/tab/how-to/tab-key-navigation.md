@@ -17,7 +17,7 @@ If the [`tabIndex`](https://ej2.syncfusion.com/angular/documentation/api/tab/tab
 To enable tab key navigation, assign a positive value to the [`tabIndex`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem/#tabindex) property for each tab item. For example:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/tab-key-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
 

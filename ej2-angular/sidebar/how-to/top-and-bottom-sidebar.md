@@ -17,7 +17,7 @@ You can also initialize Sidebar at the top and bottom positions in application l
 In the following sample, the [`toggle`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#toggle) method has been used to show or hide the top and bottom sidebars on button click.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/top-bottom-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

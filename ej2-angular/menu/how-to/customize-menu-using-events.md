@@ -26,7 +26,7 @@ The following table summarizes the available events and their purposes:
 This example renders a menu with custom event handling for item selection.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/handle-event-cs1/src/app.component.ts %}
 {% endhighlight %}
 

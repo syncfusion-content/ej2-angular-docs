@@ -15,7 +15,7 @@ The ContextMenu component supports data binding through the [`items`](https://ej
 The following example demonstrates how to bind local data source to the ContextMenu:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 

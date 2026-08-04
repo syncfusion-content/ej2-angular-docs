@@ -24,7 +24,7 @@ The accordion TreeView behavior requires:
 The following example demonstrates how to configure a TreeView component with accordion functionality:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/accordion-tree-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -22,94 +22,91 @@ Ensure your development environment meets the [System Requirements for Syncfusio
 
 You also need a modern code editor such as Visual Studio Code, Cursor, or Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio.
 
-> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+## Setup the Angular application
 
-## Set up the Angular Application
-
-Use the [`Angular CLI`](https://github.com/angular/angular-cli) to create and manage Angular applications. Install the CLI with one of the following approaches depending on preference.
+A straightforward approach to begin with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
 ```
 
-Once the Angular CLI is installed, create a new Angular application by running the following command. Use the recommended flags to create a standalone, CSS-styled, non-routing app (required for the standalone component examples below).
+Verify the installation:
 
 ```bash
-ng new my-app
-cd my-app
+ng version
 ```
 
-## Installing Syncfusion<sup style="font-size:70%">&reg;</sup> HeatMap package
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are published on npm under the `@syncfusion` scope. The Angular distribution is available in two package formats:
+### Installing a specific version
 
-Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler (ngcc) package for legacy compilation and rendering
-
-### Ivy library distribution package
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (`>=20.2.36` refers to the Syncfusion package version) use the Ivy distribution to support the Angular Ivy rendering engine. These packages are compatible with Angular version 21 and other recent Angular versions. Use the following command to install the Ivy package:
-
-Install the [`@syncfusion/ej2-angular-heatmap`](https://www.npmjs.com/package/@syncfusion/ej2-angular-heatmap) package.
+To install a particular version of Angular CLI, use:
 
 ```bash
-npm install @syncfusion/ej2-angular-heatmap --save
+npm install -g @angular/cli@21.0.0
 ```
 
-> **Note:** The latest `ej2-angular-heatmap` package is version-compatible with Angular 16+; Angular 21 and other recent versions are supported.
+## Create an Angular application
 
-### Angular compatibility compiled package (ngcc)
-
-> **Deprecation note:** The ngcc (Angular compatibility compiler) package format is deprecated and applies only to Angular versions earlier than 12. For Angular 12 and later, always use the Ivy distribution package described above.
-
-To install the legacy (ngcc) variant, use the following command:
+With Angular CLI installed, execute this command to generate a new application. When prompted, accept the default options unless you have a specific reason to change them.
 
 ```bash
-npm install @syncfusion/ej2-angular-heatmap@ngcc --save
+ng new syncfusion-angular-app
 ```
 
-To reference the ngcc package in `package.json`, add the `-ngcc` suffix to the package version, for example:
+* This command prompts you to configure settings like enabling Angular routing and choosing a stylesheet format. Accept the defaults (no routing, CSS) to follow this guide.
 
 ```bash
-@syncfusion/ej2-angular-heatmap:"32.1.19-ngcc"
-```
 
-> Note: If the `-ngcc` suffix is not specified, the Ivy package will be installed and a compatibility warning may appear when using older Angular versions.
-
-## Add HeatMap component
-
-After installing the package, you need to add the HeatMap component to your application. To do this, modify the template in the `app.component.ts` file to render the `<ejs-heatmap>` component. Also, ensure the `HeatMapModule` (or `HeatMapAllModule` to include all features) is imported to register the component.
-
-The following example demonstrates how to add a basic HeatMap to the application.
-
-```typescript
-
-import { HeatMapModule } from '@syncfusion/ej2-angular-heatmap';
-import { Component } from '@angular/core';
-
-@Component({
-imports: [
-         HeatMapModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    // specifies the template string for the HeatMap component
-    template: `<ejs-heatmap id="heatmap-container"></ejs-heatmap>`,
-})
-export class AppComponent {
-
-}
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
 
 ```
 
-To run the application locally, use the Angular CLI `ng serve` command (or `npm start` if your `package.json` defines a `start` script). The app is served by default at `http://localhost:4200/`.
+* By default, a CSS-based application is created. Use SCSS if required:
 
 ```bash
-  ng serve
+ng new syncfusion-angular-app --style=scss
 ```
 
-The following example shows a basic HeatMap.
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
+
+![Server-side rendering prompt](images/SSR.png)
+
+* Select the required AI tool, or 'none' if you do not need any AI tool.
+
+![AI tool selection prompt](images/Ai.png)
+
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> In Angular 19 and below, the CLI generates files named `app.component.ts`, `app.component.html`, `app.component.css`, and so on. In Angular 20+, the structure is simpler: `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular HeatMap package
+
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular HeatMap** package, use the following command:
+
+```bash
+ng add @syncfusion/ej2-angular-heatmap
+```
+
+The `ng add` command installs the package, registers it in `package.json`, and configures the required entries in your workspace automatically.
+
+If `ng add` is unavailable in your setup, install the package manually with:
+
+```bash
+npm install @syncfusion/ej2-angular-heatmap
+```
+
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular HeatMap component
+
+Open `src/app/app.component.ts` (Angular 19 and below) or `src/app/app.ts` (Angular 20+) and replace its contents with the following to render the Sparkline component. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,14 +120,20 @@ The following example shows a basic HeatMap.
 
 {% previewsample "page.domainurl/samples/heatmap/getting-started/initialize-cs1" %}
 
-## Module injection
+## Run the application
+
+Run the development server with `ng serve`. Alternatively, `npm start` works if a `start` script is configured in `package.json`.
+
+```bash
+ng serve
+```
+
+## Module Injection
 
 The HeatMap component's features are segregated into individual feature-wise modules. To use a feature, register its corresponding service in the component's `providers` array. The relevant services and their descriptions are listed below:
 
 * `LegendService` - Provides the legend feature.
 * `TooltipService` - Provides the tooltip feature.
-
-> `HeatMapAllModule` re-exports every feature service, so it can be used in place of the per-feature `providers` entries when you need a quick start. For tree-shaking and smaller bundle sizes, prefer importing only the services you need and registering them in the `providers` array.
 
 Import the required services from the HeatMap package and register them in the component's providers array as shown below:
 
@@ -152,7 +155,7 @@ export class AppComponent {}
 
 ## Populate heat map with data
 
-This section explains how to populate a two-dimensional array as the HeatMap's `dataSource`.
+This section explains how to populate a two-dimensional array as the HeatMap's [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/heatmap/index-default#datasource).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -170,20 +173,19 @@ This section explains how to populate a two-dimensional array as the HeatMap's `
 
 **Legend/tooltip not appearing** — Feature service not registered. Add `LegendService` / `TooltipService` to the component's `providers` array.
 
-**`ngcc` warning during install** — `-ngcc` suffix missing on a non-Ivy Angular project. Use the `@syncfusion/ej2-angular-heatmap@ngcc` package as described in the [ngcc section](#angular-compatibility-compiled-package-ngcc).
-
 **"Cannot find module" for HeatMap imports** — Package not installed. Re-run `npm install @syncfusion/ej2-angular-heatmap --save`.
 
 ## See also
 
 For deeper coverage of individual features, see the following topics:
 
-- [Axis](./axis)
-- [Title and text styles](./appearance)
-- [Legend](./legend)
-- [Palette](./palette)
-- [Tooltip](./tooltip)
-- [Selection](./selection)
-- [Events](./events)
-- [Bubble HeatMap](./bubble-heatmap)
-- [Working with data](./working-with-data)
+* [Axis](./axis)
+* [Title and text styles](./appearance)
+* [Legend](./legend)
+* [Palette](./palette)
+* [Tooltip](./tooltip)
+* [Selection](./selection)
+* [Events](./events)
+* [Bubble HeatMap](./bubble-heatmap)
+* [Working with data](./working-with-data)
+* [TreeMap API Reference](https://ej2.syncfusion.com/angular/documentation/api/heatmap)

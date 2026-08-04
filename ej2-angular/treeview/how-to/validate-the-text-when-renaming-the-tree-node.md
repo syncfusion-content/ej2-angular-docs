@@ -29,7 +29,7 @@ The [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview
 The following example demonstrates how to validate and prevent empty values in a tree node:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/validation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

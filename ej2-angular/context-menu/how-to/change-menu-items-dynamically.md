@@ -19,7 +19,7 @@ The [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/context-
 In the following example, the menu items change contextually based on the target area: the Clipboard div displays `Cut`, `Copy`, and `Paste` options, while the Editor div shows `Add`, `Edit`, and `Delete` actions. This dynamic behavior is implemented using the [`hideItems`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#hideitems) and [`showItems`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#showitems) methods within the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#beforeopen) event handler.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 

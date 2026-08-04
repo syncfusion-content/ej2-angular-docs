@@ -17,7 +17,7 @@ The underlining can be achieved by adding `<u>` tags around the target character
 When implementing this feature, the `beforeItemRender` event provides access to the menu item element and its associated data, enabling you to modify the display text before the item is rendered in the DOM. The event occurs for each menu item during the rendering process, giving you the opportunity to customize the appearance based on your specific requirements.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/separators-cs2/src/app.component.ts %}
 {% endhighlight %}
 

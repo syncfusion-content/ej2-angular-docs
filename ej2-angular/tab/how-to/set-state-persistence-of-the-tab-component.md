@@ -17,7 +17,7 @@ When set to true, the Tab component will preserve specific model values will be 
 The following sample demonstrates how to set state persistence of the Tab component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/persistence-cs1/src/app.component.ts %}
 {% endhighlight %}
 

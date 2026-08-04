@@ -15,7 +15,7 @@ The Angular Toolbar component supports embedding other Angular components direct
 The `ng-template` directive must be placed inside each `e-item` tag with the `#template` attribute, which serves as the mandatory template reference variable for rendering the embedded content. This approach maintains the component's lifecycle, event handling, and data binding capabilities within the toolbar context.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/direct-components-cs1/src/app.component.ts %}
 {% endhighlight %}
 

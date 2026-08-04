@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Show buttongroup selected state on initial render Angular|Syncfusion
-description: Learn here all about Show buttongroup selected state on initial render in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Show buttongroup selected state on initial render in Syncfusion Angular Button Group component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Show buttongroup selected state on initial render 
+control: Show buttongroup selected state on initial render
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show buttongroup selected state on initial render in Button group
+# Show Button Group selected state on initial render | Syncfusion
 
 To show selected state on initial render, `checked` property should to added to the corresponding input element.
 

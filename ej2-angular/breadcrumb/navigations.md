@@ -21,7 +21,7 @@ In the Breadcrumb component, each item represents a URL destination. Breadcrumb 
 Breadcrumb items with relative URLs contain only the path segment without specifying the complete location or server details. The following example demonstrates breadcrumb items configured with relative URLs.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ Breadcrumb items with relative URLs contain only the path segment without specif
 Breadcrumb items with absolute URLs contain the complete path and navigate directly to the specified resource when the absolute URL is bound to the breadcrumb item. The following example demonstrates breadcrumb items configured with absolute URLs.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs2/src/app.component.ts %}
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ Breadcrumb items with absolute URLs contain the complete path and navigate direc
 By default, the last breadcrumb item (active item) is not clickable. To enable navigation for the last item, set the `enableActiveItemNavigation` property to `true`. The following example demonstrates enabling navigation for the last breadcrumb item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs3/src/app.component.ts %}
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ By default, the last breadcrumb item (active item) is not clickable. To enable n
 To open a breadcrumb item in a new page or tab, configure the target attribute of the anchor element to `_blank` using the `beforeItemRender` event. The following example demonstrates opening the `All Components` item in a new tab by setting the target attribute through the `beforeItemRender` event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs4/src/app.component.ts %}
 {% endhighlight %}
 

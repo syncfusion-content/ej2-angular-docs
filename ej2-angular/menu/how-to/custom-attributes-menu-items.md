@@ -14,7 +14,7 @@ You can customize the HTML attributes of individual menu items in the Syncfusion
 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/html-attributes-cs1/src/app.component.ts %}
 {% endhighlight %}
 
