@@ -23,7 +23,7 @@ You can customize header styles by adding predefined classes to the Tab root ele
 > When these custom style classes are not applied to the root element, the default Tab styling is used for all Tab items.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/header-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
@@ -49,7 +49,7 @@ The available position values are:
 * **Bottom**: Icon appears below the Tab header text.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/icon-position-cs1/src/app.component.ts %}
 {% endhighlight %}
 

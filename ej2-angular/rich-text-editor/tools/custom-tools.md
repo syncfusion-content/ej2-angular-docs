@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Toolbar Items in Angular Rich Text Editor | Syncfusion
+title: Custom Toolbar Items in Angular Rich Text Editor component | Syncfusion
 description: Learn how to create and manage custom toolbar items in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Custom Toolbar
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Custom Toolbar Items in Angular Rich Text Editor Component
 
-The [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-rich-text-editor) allows you to create your own commands to its toolbar using the  [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#toolbarSettings) property. The command can be plain text, icon, or HTML template. The order and the group can also be defined where the command should be included. Bind action to the command by getting its instance.
+The Angular Rich Text Editor allows you to create your own commands to its toolbar using the  [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#toolbarSettings) property. The command can be plain text, icon, or HTML template. The order and the group can also be defined where the command should be included. Bind action to the command by getting its instance.
 
 This sample shows how to add your own commands to the toolbar of the Rich Text Editor. The “Ω” command is added to insert special characters in the editor. By clicking the “Ω” command, it will show the special characters list, and then choose the character to be inserted in the editor.
 
-The following code snippet illustrates custom tool with tooltip text which will be included in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) field of the `toolbarSettings` property.
+The following code snippet illustrates custom tool with tooltip text which will be included in [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) field of the `toolbarSettings` property.
 
 For a quick guide on custom toolbar configuration, refer to this video tutorial:
 
@@ -22,7 +22,7 @@ For a quick guide on custom toolbar configuration, refer to this video tutorial:
 
 ## Creating custom toolbar items
 
-The Rich Text Editor provides options to customize tool functionalities. Use the [undo](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarStatusEventArgs) property to enable or disable the undo function for specific tools. Additionally, the [click](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarClickEventArgs) property lets you configure and bind the onclick event of a tool to a specific method.
+The Rich Text Editor provides options to customize tool functionalities. Use the [undo](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarstatuseventargs) property to enable or disable the undo function for specific tools. Additionally, the [click](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarclickeventargs) property lets you configure and bind the onclick event of a tool to a specific method.
 
 The following sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking on this icon opens a dialog where you can insert special characters into the editor. It also shows how to enable undo and redo functionalities.
 
@@ -42,6 +42,6 @@ The following sample demonstrates how to add a custom "Ω" icon to the toolbar. 
 
 ## Enabling and disabling toolbar items
 
-You can use the [enableToolbarItem](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#enabletoolbaritem) and [disableToolbarItem](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#disabletoolbaritem) methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
+You can use the [enableToolbarItem](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enabletoolbaritem) and [disableToolbarItem](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#disabletoolbaritem) methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
 
-> You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.
+> You can add the command name `Custom` to disable the custom toolbar items on source code view and other quicktoolbar operations.

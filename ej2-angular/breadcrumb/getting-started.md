@@ -152,7 +152,7 @@ Stop the server with `Ctrl+C` in the terminal.
 The following example shows a basic `Breadcrumb` component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/breadcrumb/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
   

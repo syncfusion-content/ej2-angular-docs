@@ -57,6 +57,7 @@ Virtual scrolling has the following constraints:
 - The [height](https://ej2.syncfusion.com/angular/documentation/api/gantt#height) property must be set in pixels for row virtualization to define the viewport size.
 - Set a static height for the Gantt chart or its parent container; 100% height only works if both the component and its parent have explicit static heights.
 - With virtualization enabled, data is rendered in pages. When scrolling to load the next set of records, only the current page's data is available to Gantt's public methods. If a record is selected during this process, only the visible page records are returned. This behavior occurs because the Gantt chart does not retain data from all pages in memory, optimizing performance by loading only the required set.
+- When virtual scrolling is enabled, dependency lines are rendered only for tasks that are currently available in the viewport. If either the predecessor or successor task is outside the viewport due to virtual scrolling, the corresponding dependency line will not be displayed until both tasks are brought into view.
 
 ## See also
 - [How to configure timeline settings?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)

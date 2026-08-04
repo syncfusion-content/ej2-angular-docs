@@ -18,7 +18,7 @@ The Angular Toolbar component supports template configuration through Angular's 
 To implement Menu integration, define the Menu component within an **ng-template** and reference it in the toolbar item's template property. The Menu component can be populated with items programmatically or through data binding.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/menu-component-cs1/src/app.component.ts %}
 {% endhighlight %}
 

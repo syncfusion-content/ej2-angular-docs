@@ -38,7 +38,7 @@ The default overflow mode of the Toolbar is `Scrollable`. This responsive mode d
 ![Long press scroll](./images/scrolling_long_press.gif)
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -76,7 +76,7 @@ When primary priority commands exceed available space, they move to the popup co
 > You can maintain toolbar item on popup always by using the ['showAlwaysInPopup'](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective/#showalwaysinpopup) property, and this behavior is not applicable for toolbar items with [overflow](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#overflow) property as 'show'.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs8/src/app.component.ts %}
 {% endhighlight %}
 
@@ -104,7 +104,7 @@ Available values:
 The following example demonstrates text visibility limited to the popup container only.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs9/src/app.component.ts %}
 {% endhighlight %}
 
@@ -123,7 +123,7 @@ By default, the Toolbar renders with a minimum height to accommodate items prope
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/toolbar/minimum-height-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/minimum-height-cs1/src/app.component.ts %}
 {% endhighlight %}
 

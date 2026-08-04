@@ -29,7 +29,7 @@ The solution involves two key components:
 Configure the TreeView component with the necessary event handlers and styling:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/multi-line-tree-cs1/src/app.component.ts %}
 {% endhighlight %}
 

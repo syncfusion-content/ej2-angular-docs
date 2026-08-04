@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Insert Videos in the Angular Rich Text Editor Component
 
-The Rich Text Editor enables insertion of video from online sources and local machines, into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#insertvideosettings) property.
+The Rich Text Editor enables insertion of video from online sources and local machines, into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#insertvideosettings) property.
 
 ## Configuring the video toolbar item
 
-The video feature is enabled by adding the `Video` item to the toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#items) property.
+The video feature is enabled by adding the `Video` item to the toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 > To use Video feature, inject `VideoService` in the provider section.
 
@@ -34,7 +34,7 @@ The following example demonstrates configuring the `Video` toolbar item:
 
 ## Video save formats
 
-The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
+The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
 > The default `saveFormat` property is set to `Blob` format.
 
@@ -70,11 +70,11 @@ You can switch to the `Web URL` option by selecting the Web URL checkbox. Insert
 
 The video dialog includes a `browse` option to select video files from a local machine and insert it into the Rich Text Editor content.
 
-If the [insertVideoSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#insertvideosettings) is not specified, the video is converted to a `Blob` or `Base64` URL and inserted into the Rich Text Editor.
+If the [insertVideoSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#insertvideosettings) is not specified, the video is converted to a `Blob` or `Base64` URL and inserted into the Rich Text Editor.
 
 ## Restricting maximum file size
 
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
 
@@ -104,11 +104,11 @@ export class AppComponent {
 
 ## Saving videos to the server
 
-Upload the selected video to a specified destination using the controller action specified in [insertVideoSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertVideoSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel#path) properties.
+Upload the selected video to a specified destination using the controller action specified in [insertVideoSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettingsmodel#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertVideoSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettingsmodel#path) properties.
 
-Configure [insertVideoSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel#removeurl) to point to the endpoint responsible for deleting video files.
+Configure [insertVideoSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettingsmodel#removeurl) to point to the endpoint responsible for deleting video files.
 
-Set the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel#saveformat) property to determine whether the video should be saved as Blob or Base64, aligning with your application's requirements.
+Set the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property to determine whether the video should be saved as Blob or Base64, aligning with your application's requirements.
 
 > If you want to insert lower-sized video files in the editor and don’t require a specific physical location for saving the video, you can save the format as `Base64`.
 
@@ -257,7 +257,7 @@ namespace FileUpload.Controllers
 
 ### Renaming videos before inserting
 
-You can use the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#insertvideosettings) property to specify the server handler to upload the selected video. Then, by binding the [fileUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
+You can use the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#insertvideosettings) property to specify the server handler to upload the selected video. Then, by binding the [fileUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
 
 ```HTML
 
@@ -355,7 +355,7 @@ public void Rename()
 
 ### Uploading videos with authentication
 
-You can add additional data with the video uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#fileuploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can add additional data with the video uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#fileuploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 > By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
 
@@ -399,13 +399,13 @@ public void SaveFiles(IList<IFormFile> UploadFiles)
 
 ## Video replacement functionality
 
-Once a video file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings#quicktoolbarsettings) `videoReplace` option. You can replace the video file either by using the embedded code or the web URL and the browse option in the video dialog.
+Once a video file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#quicktoolbarsettings) `videoReplace` option. You can replace the video file either by using the embedded code or the web URL and the browse option in the video dialog.
 
 ![Angular Rich Text Editor Embed Video Replace](../images/angular-richtexteditor-video-replace-embed.png)
 
 ## Deleting videos
 
-Select a video and click the `videoRemove` button in the quick toolbar to delete it from the editor and, if configured, from the server using [insertVideoSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel#removeurl). 
+Select a video and click the `videoRemove` button in the quick toolbar to delete it from the editor and, if configured, from the server using [insertVideoSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettingsmodel#removeurl). 
 
 Once you select the video from the local machine, the URL for the video will be generated. You can remove the video from the service location by clicking the cross icon.
 
@@ -413,15 +413,15 @@ Once you select the video from the local machine, the URL for the video will be 
 
 ## Adjusting video dimensions
 
-Set the default width, minWidth, height, and minHeight of the video element when it is inserted in the Rich Text Editor using the [insertVideoSettings.width](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings#width), [insertVideoSettings.minWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings#minwidth), [insertVideoSettings.height](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings#height), [insertVideoSettings.minHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings#minheight) properties.
+Set the default width, minWidth, height, and minHeight of the video element when it is inserted in the Rich Text Editor using the [insertVideoSettings.width](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#width), [insertVideoSettings.minWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#minwidth), [insertVideoSettings.height](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#height), [insertVideoSettings.minHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#minheight) properties.
 
-Through the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings#quicktoolbarsettings), you can also change the width and height using the `Change Size` button. Once you click on the button, the video size dialog will open as below. In that, specify the width and height of the video in pixels.
+Through the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#quicktoolbarsettings), you can also change the width and height using the `Change Size` button. Once you click on the button, the video size dialog will open as below. In that, specify the width and height of the video in pixels.
 
 ![Angular Rich Text Editor Video dimension](../images/angular-richtexteditor-video-size.png)
 
 ## Configuring video display position
 
-Sets the default display property for the video when it is inserted in the Rich Text Editor using the [insertVideoSettings.layoutOption](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings#layoutOption) property. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements layout position.
+Sets the default display property for the video when it is inserted in the Rich Text Editor using the [insertVideoSettings.layoutOption](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#layoutOption) property. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements layout position.
 
 > The default `layoutOption` property is set to `Inline`.
 
@@ -445,10 +445,6 @@ export class AppComponent {
 }
 
 ```
-
-## Paste video files into the editor
-
-The Rich Text Editor supports pasting video files directly into the editor content. You can paste single or multiple video files from your file system directly into the editor.
 
 ## Drag and drop video insertion
 
@@ -486,9 +482,9 @@ You can prevent drag-and-drop action by setting the actionBegin argument cancel 
 
 The Rich Text Editor has built-in video resizing support, which is enabled for the video elements added. The resize points will appear on each corner of the video when focusing, so users can easily resize the video using mouse points or thumb through the resize points. Also, the resize calculation will be done based on the aspect ratio.
 
-You can disable the resize action by configuring `false` for the [insertVideoSettings.resize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel#resize) property.
+You can disable the resize action by configuring `false` for the [insertVideoSettings.resize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettingsmodel#resize) property.
 
-> If the [minWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings#minwidth) and [minHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings#minheight) properties are configured, the video resizing does not shrink below the specified values.
+> If the [minWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#minwidth) and [minHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#minheight) properties are configured, the video resizing does not shrink below the specified values.
 
 ![Angular Rich Text Editor video resize](../images/angular-richtexteditor-video-resize.png)
 

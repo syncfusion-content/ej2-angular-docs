@@ -19,7 +19,7 @@ In the following sample, employee information such as employee photo, name, and 
 The template content uses Angular template interpolation syntax with `${...}` expressions to bind data properties from your TreeView data source.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 

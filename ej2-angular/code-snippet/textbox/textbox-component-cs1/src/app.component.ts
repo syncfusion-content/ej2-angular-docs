@@ -1,6 +1,4 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { Component } from '@angular/core';
 
 @Component({

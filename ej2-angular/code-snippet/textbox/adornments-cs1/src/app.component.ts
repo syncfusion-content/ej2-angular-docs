@@ -1,7 +1,5 @@
-
 import { Component, ViewEncapsulation } from '@angular/core';
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -66,7 +64,7 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
   `,
   standalone: true,
   encapsulation: ViewEncapsulation.None,
-  imports: [TextBoxModule, DropDownListModule]
+  imports: [TextBoxModule]
 })
 export class AppComponent {
 
@@ -76,7 +74,7 @@ export class AppComponent {
 
   onEyeIconClick(e: MouseEvent): void {
     this.passwordType = this.passwordType === 'password' ? 'text' : 'password';
-     }
+  }
 
   onDeleteClick(): void {
     this.email = '';

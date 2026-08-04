@@ -22,7 +22,7 @@ The following methods control the Sidebar’s visibility, updating its [`isOpen`
 
 The following sample demonstrates a Sidebar toggled via a button using the `toggle()` method.
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/openclose-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

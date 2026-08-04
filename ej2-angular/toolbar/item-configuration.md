@@ -31,7 +31,7 @@ Properties of the button item type:
 The `Separator` type adds a vertical separation between the Toolbar's single or multiple commands.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs5/src/app.component.ts %}
 {% endhighlight %}
 
@@ -102,7 +102,7 @@ new RadioButton({ label: 'Radio', name: 'default', checked: true })
 The above steps apply to all Syncfusion input based components.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs6/src/app.component.ts %}
 {% endhighlight %}
 
@@ -174,7 +174,7 @@ Example:
 Here is an example of how to use the [`tabIndex`](../api/toolbar/item/#tabindex) property to enable tab key navigation for a Toolbar component:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/tab-key-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
 

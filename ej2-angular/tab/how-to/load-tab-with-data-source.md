@@ -19,7 +19,7 @@ You can watch the following video to learn more about loading tab items from a r
 In the following demonstration, data is retrieved from an OData service using Syncfusion's DataManager. The retrieved data is structured as JSON objects with `header` and `content` fields, which are then bound to the [`items`](https://ej2.syncfusion.com/angular/documentation/api/tab/#items) property of the Tab component. The DataManager handles the HTTP requests and data formatting automatically, simplifying integration with remote data sources.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/basic-cs7/src/app.component.ts %}
 {% endhighlight %}
 

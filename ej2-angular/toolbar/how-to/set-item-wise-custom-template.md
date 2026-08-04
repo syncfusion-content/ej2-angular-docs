@@ -31,7 +31,7 @@ template: "#Template"
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs3/src/app.component.ts %}
 {% endhighlight %}
 

@@ -18,7 +18,7 @@ To implement this functionality, apply the `e-checkbox-disabled` CSS class to sp
 Please refer to the following sample to see how to disable the check box of tree nodes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/disable-checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 

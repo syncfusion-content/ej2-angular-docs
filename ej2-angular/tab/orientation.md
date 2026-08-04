@@ -28,7 +28,7 @@ The Tab component automatically adapts to available space when tab items exceed 
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/tab/orientation-tab-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/orientation-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 

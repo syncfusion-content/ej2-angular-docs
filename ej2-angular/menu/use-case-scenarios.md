@@ -17,7 +17,7 @@ This section demonstrates practical use cases for the Angular Menu component, in
 The menu component supports horizontal and vertical scrolling to render large menus and submenus in an adaptive way. This can be achieved by enabling the [`enableScrolling`](https://ej2.syncfusion.com/angular/documentation/api/menu/#enablescrolling) property and by restricting the corresponding menu/submenu size.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/scroll-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ The menu component supports horizontal and vertical scrolling to render large me
 Building on the Menu component’s integration capabilities, the following example demonstrates how to integrate the Menu with the Toolbar component. Note that the `ToolbarModule` must be imported from `@syncfusion/ej2-angular-navigations` to use the Toolbar alongside the Menu.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/toolbar-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -49,7 +49,7 @@ Building on the Menu component’s integration capabilities, the following examp
 The following example demonstrates a hamburger menu integrating the Menu component with the Accordion component within a SideBar, where the Accordion organizes menu items vertically and the SideBar provides a collapsible navigation panel.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/sidebar-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ The following example demonstrates a hamburger menu integrating the Menu compone
 The following example demonstrates the use case of the Menu in mobile mode using the ListView component with a hamburger icon.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
 

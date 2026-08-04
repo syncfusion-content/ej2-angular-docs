@@ -21,7 +21,7 @@ The Localization library allows you to localize the default text content of the 
 In this example, the `French` culture is set to Stepper and the default text is updated with the content defined by the locale key.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/localization/src/app.component.ts %}
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ In this example, the `French` culture is set to Stepper and the default text is 
 RTL provides an option to switch the text direction and layout of the Stepper component from right to left by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/stepper#enablertl) property to `true`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/rtl/src/app.component.ts %}
 {% endhighlight %}
 

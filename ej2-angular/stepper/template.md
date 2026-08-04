@@ -15,7 +15,7 @@ The Stepper component allows customization of step appearance and content using 
 The template context provides access to the `StepModel` object via the `step` property and the current step index via the `currentStep` property, enabling dynamic customization based on step data such as `label` or `iconCss`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/template/src/app.component.ts %}
 {% endhighlight %}
 

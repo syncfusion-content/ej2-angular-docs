@@ -19,11 +19,11 @@ To achieve rounded corners, define a CSS class with the desired `border-radius` 
 For more information, refer to the `style.css` file mapped under the source tab.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/rounded-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/rounded-cs1/src/styles.css %}
 {% endhighlight %}
 

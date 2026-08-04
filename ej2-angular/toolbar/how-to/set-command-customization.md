@@ -17,7 +17,7 @@ When applying style attributes through `htmlAttributes`, any existing style attr
 For simplified CSS class management, the Toolbar item [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#cssclass) property provides a dedicated approach to add single or multiple CSS classes to toolbar commands. Use `cssClass` for straightforward styling scenarios and `htmlAttributes` when you need to set additional HTML attributes beyond just CSS classes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs2/src/app.component.ts %}
 {% endhighlight %}
 

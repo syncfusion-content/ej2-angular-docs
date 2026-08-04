@@ -19,7 +19,7 @@ TreeView supports tooltip functionality through the [`tooltip`](https://ej2.sync
 The following code example demonstrates how to set a tooltip for TreeView nodes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

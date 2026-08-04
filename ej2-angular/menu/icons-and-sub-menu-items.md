@@ -19,7 +19,7 @@ Menu items can include an icon or image to visually represent an action. To plac
 > Ensure proper CSS imports  for `iconCss` to render correctly.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ Menu items can include an icon or image to visually represent an action. To plac
 Navigation in the Menu component directs users to another web page when a menu item is clicked. This is achieved by providing a link to the menu item using the [`url`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#url) property, which accepts a string representing a valid URL and creates an anchor link that opens in the same tab by default. In the following sample, navigation URLs are added to submenu items using the `url` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ Navigation in the Menu component directs users to another web page when a menu i
 Building on menu item configuration, the Menu component supports multilevel nesting, achieved by mapping the [`items`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#items) property inside the parent [`menuItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#items). In the following sample, three-level nesting is provided.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 

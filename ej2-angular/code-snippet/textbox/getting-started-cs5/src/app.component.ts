@@ -1,19 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule } from '@angular/forms'
-
-
-
-
+import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { Input } from '@syncfusion/ej2-inputs';
 
 @Component({
 imports: [
-        
         FormsModule
     ],
-
 
 standalone: true,
     selector: 'app-root',
@@ -40,6 +32,3 @@ export class AppComponent {
         });
     }
 }
-
-
-

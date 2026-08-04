@@ -27,7 +27,7 @@ Tabs can be added dynamically by passing an array of items and index value to th
 In the following demo, tab content can be added by clicking the **+** icon. This **+** icon is added to the tab header using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#iconcss) property. Enter the new Tab heading and content details in the available text boxes, then click the 'Add Tab' button. The details are passed as an array, and the new tab is appended at the end using the calculated last index.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/dynamic-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -15,7 +15,7 @@ The following example demonstrates the Sidebar rendered with custom animation ef
 The Sidebar will automatically adjust its expanding animation to match any custom size specified in `CSS` styles.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

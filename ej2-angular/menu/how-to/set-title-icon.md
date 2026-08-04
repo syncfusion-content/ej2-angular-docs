@@ -17,7 +17,7 @@ This approach is useful when you want to provide descriptive tooltips for menu i
 In the following example, the title for the settings icon is set dynamically using the `beforeItemRender` client-side event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/set-title-cs1/src/app.component.ts %}
 {% endhighlight %}
 

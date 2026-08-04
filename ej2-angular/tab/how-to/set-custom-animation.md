@@ -27,7 +27,7 @@ When disabling animations by setting the effect to `None`, use the following CSS
 The following sample demonstrates various animation types that work effectively with the Tab component. Explore different animation effects to find the best fit for your application's user experience.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 

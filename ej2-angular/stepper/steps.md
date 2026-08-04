@@ -21,7 +21,7 @@ Define the icon and label content for each step using the `iconCss` and `label` 
 Define a CSS class to display an icon for each step using the `iconCss` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/icon/src/app.component.ts %}
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ You can define text instead of an icon by setting the `text` property and displa
 > When both label and text are defined, the label takes priority for display based on the `stepType`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/text/src/app.component.ts %}
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ You can define text instead of an icon by setting the `text` property and displa
 Indicate whether a step is optional using the `optional` property of the `StepModel`. By default, the `optional` property is `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/optional/src/app.component.ts %}
 {% endhighlight %}
 
@@ -86,7 +86,7 @@ Indicate whether a step is optional using the `optional` property of the `StepMo
 Disable a step to prevent user interaction using the `disabled` property of the `StepModel`, set to `true`. By default, the value is `false`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/disabled/src/app.component.ts %}
 {% endhighlight %}
 
@@ -108,7 +108,7 @@ Disable a step to prevent user interaction using the `disabled` property of the 
 Disable user interactions across all steps in the Stepper component using the [readOnly](https://ej2.syncfusion.com/angular/documentation/api/stepper/#readonly) property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/readonly/src/app.component.ts %}
 {% endhighlight %}
 
@@ -130,7 +130,7 @@ Disable user interactions across all steps in the Stepper component using the [r
 Specify the active step by its index using the [activeStep](https://ej2.syncfusion.com/angular/documentation/api/stepper/#activestep) property of the Stepper component. The default value is `0`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/activeStep/src/app.component.ts %}
 {% endhighlight %}
 
@@ -152,7 +152,7 @@ Specify the active step by its index using the [activeStep](https://ej2.syncfusi
 Specify the progress state of each step using the `status` property of the `StepModel`. Possible values are `NotStarted`, `InProgress`, and `Completed`. By default, the value is `NotStarted`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/status/src/app.component.ts %}
 {% endhighlight %}
 
@@ -174,7 +174,7 @@ Specify the progress state of each step using the `status` property of the `Step
 Customize the appearance of each step using the `cssClass` property of the `StepModel`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/cssClass/src/app.component.ts %}
 {% endhighlight %}
 

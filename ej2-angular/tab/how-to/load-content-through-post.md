@@ -17,7 +17,7 @@ The Tab component supports loading external content through Syncfusion's `Ajax` 
 * Get the data from Ajax `Success` event, then initialize the Tab with retrieved external path data.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/ajax-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -111,4 +111,4 @@ The following examples demonstrate how Highlight.js can be seamlessly integrated
 
 - GitHub Repository: [Angular Rich Text Editor with Highlight.js](https://github.com/SyncfusionExamples/angular-richtexteditor-highlightjs/tree/master)
 - [Highlight.js](https://highlightjs.org)
-- [Syncfusion RichTextEditor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor)
+- [Syncfusion RichTextEditor API](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default)

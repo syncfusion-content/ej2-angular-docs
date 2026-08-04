@@ -1,12 +1,12 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { GanttComponent, ToolbarItem, PdfExportProperties, GanttModule, PdfExportService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt';
+import { GanttComponent, ToolbarItem, PdfExportProperties, GanttModule, PdfExportService, ToolbarService } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { editingData } from './data';
 
 @Component({
   selector: 'app-root',
   imports: [GanttModule],
-  providers: [ToolbarService, PdfExportService, SelectionService],
+  providers: [ToolbarService, PdfExportService],
   standalone: true,
   template: `
   <div class="form-container">
@@ -87,11 +87,10 @@ export class AppComponent implements OnInit {
 
   public toolbarClick(args: ClickEventArgs): void {
     if (args.item.id === 'ganttDefault_pdfexport') {
-      const name = (document.getElementById('name') as HTMLInputElement)?.value || '';
-      const email = (document.getElementById('email') as HTMLInputElement)?.value || '';
-      const message = (document.getElementById('message') as HTMLTextAreaElement)?.value || '';
-
-      const headerText = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+      const name: string = (document.getElementById('name') as HTMLInputElement)?.value || '';
+      const email: string = (document.getElementById('email') as HTMLInputElement)?.value || '';
+      const message: string = (document.getElementById('message') as HTMLTextAreaElement)?.value || '';
+      const headerText: string = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
       const exportProperties: PdfExportProperties = {
         header: {

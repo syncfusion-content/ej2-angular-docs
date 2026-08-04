@@ -165,7 +165,7 @@ Stop the server with `Ctrl+C` in the terminal.
 The following example illustrates the output in your browser.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/accordion/accordion-cs4/src/app.component.ts %}
 {% endhighlight %}
 

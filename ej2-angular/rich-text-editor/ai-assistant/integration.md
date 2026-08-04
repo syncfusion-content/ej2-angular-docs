@@ -19,7 +19,7 @@ The AI Assistant feature introduces two toolbar items: **AICommands** and **AIQu
 To enable the AI Assistant:
 
 1. Add the `AIAssistantService` to the **providers** section.
-2. Include `AICommands` and `AIQuery` in the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
+2. Include `AICommands` and `AIQuery` in the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 ## Importing Styles
 

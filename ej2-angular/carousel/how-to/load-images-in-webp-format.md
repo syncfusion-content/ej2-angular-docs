@@ -15,7 +15,7 @@ The Carousel component supports loading images in WebP format, which creates sma
 To implement WebP images in the Carousel component, convert the image format to WebP and pass them to Carousel items. The following sample illustrates how to load carousel images in WebP format.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/carousel/default-webp/src/app.component.ts %}
 {% endhighlight %}
 

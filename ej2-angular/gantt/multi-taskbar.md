@@ -79,6 +79,11 @@ The following example demonstrates non-overlapping multi taskbar:
 
 This configuration extends row height for clear task separation, ideal for identifying conflicts in small teams, but limits same-resource dependencies. Use overlapping mode for projects requiring extensive dependency mapping.
 
+## Limitations
+
+- Task overallocation is determined only by overlapping task date ranges for the same resource and does not consider `resourceUnit` values. Therefore, capacity-based validation (for example, checking whether the total assigned units exceed 100%) is not supported in the current implementation.
+ - Dependency relationships are not displayed when parent tasks or project records are in a collapsed state with `enableMultiTaskbar` is enabled. This is the expected behavior of the Gantt Chart and applies to collapsed parent tasks in both Project View and Resource View.
+
 ## See also
 
 - [How to configure resource view?](https://ej2.syncfusion.com/angular/documentation/gantt/resource-view)

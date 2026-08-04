@@ -166,4 +166,3 @@ The following example illustrates the output in your browser.
 * [Getting Started with Ionic and Angular](../frameworks-and-feature/ionic)
 * [Getting Started with Angular and Electron](../frameworks-and-feature/electron)
 * [Upgrade Guide](../upgrade/upgrading-syncfusion)
-

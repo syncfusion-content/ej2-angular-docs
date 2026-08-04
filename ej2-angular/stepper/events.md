@@ -17,7 +17,7 @@ This section describes the Stepper events that will be triggered when an appropr
 The Stepper component triggers the [created](https://ej2.syncfusion.com/angular/documentation/api/stepper#created) event when the component rendering is completed.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/events/created/src/app.component.ts %}
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ The Stepper component triggers the [created](https://ej2.syncfusion.com/angular/
 The Stepper component triggers the [stepChanged](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepchanged) event after the active step is changed.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/events/stepChanged/src/app.component.ts %}
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ The Stepper component triggers the [stepChanged](https://ej2.syncfusion.com/angu
 The Stepper component triggers the [stepChanging](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepchanging) event before the active step change.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/events/stepChanging/src/app.component.ts %}
 {% endhighlight %}
 
@@ -74,7 +74,7 @@ The Stepper component triggers the [stepChanging](https://ej2.syncfusion.com/ang
 The Stepper component triggers the [stepClick](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepclick) event when the step is clicked.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/events/stepClick/src/app.component.ts %}
 {% endhighlight %}
 
@@ -93,7 +93,7 @@ The Stepper component triggers the [stepClick](https://ej2.syncfusion.com/angula
 The Stepper component triggers the [beforeStepRender](https://ej2.syncfusion.com/angular/documentation/api/stepper#beforesteprender) event before rendering each step.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/events/beforeStepRender/src/app.component.ts %}
 {% endhighlight %}
 

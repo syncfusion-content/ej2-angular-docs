@@ -24,7 +24,7 @@ The following table describes the fields of the `animation` property:
 The example demonstrates animation settings with customized `duration` and `delay` for the Stepper component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/animation/src/app.component.ts %}
 {% endhighlight %}
 

@@ -1,10 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule } from '@angular/forms'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
+import { FormsModule } from '@angular/forms';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 import { Component, ViewChild } from '@angular/core';
 
@@ -12,7 +7,6 @@ import { Component, ViewChild } from '@angular/core';
 imports: [
          FormsModule, TextBoxModule
     ],
-
 
 standalone: true,
     selector: 'app-container',
@@ -22,10 +16,7 @@ standalone: true,
                </div>
               `
 })
-export class AppComponent {
-    constructor() {
-    }
-}
+export class AppComponent {}
 
 
 

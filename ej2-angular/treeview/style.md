@@ -94,7 +94,7 @@ By using attributes, you can customize specific nodes effectively. For instance,
 ```
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/customize-htmlattributes-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -23,7 +23,7 @@ You can customize the Toolbar component items by using third-party icons other t
 The following sample explains how to use Font Awesome icons in the toolbar component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/add-font-awesome-cs1/src/app.component.ts %}
 {% endhighlight %}
 

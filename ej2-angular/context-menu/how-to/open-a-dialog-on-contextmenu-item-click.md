@@ -17,7 +17,7 @@ When a ContextMenu item is selected, the `select` event provides access to the c
 In the following sample, a Dialog will open when clicking the `Save As...` menu item:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 

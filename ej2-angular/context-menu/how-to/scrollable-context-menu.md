@@ -15,7 +15,7 @@ The Context Menu component provides scrolling functionality through the [enableS
 Enable scrolling by setting the `enableScrolling` property to `true`. Use the [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#beforeopen) event to configure the menu container height and ensure proper scrollable area implementation.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/scroller-cs1/src/app.component.ts %}
 {% endhighlight %}
 

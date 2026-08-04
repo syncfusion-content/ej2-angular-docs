@@ -15,7 +15,7 @@ You can customize the position of a submenu in the Syncfusion Angular Menu compo
 In the below sample, the sub menu opens above the parent menu item.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -15,7 +15,7 @@ Multiple Sidebars can be initialized on a single web page, sharing the same main
 >The HTML element with class name `e-main-content` is considered the main content and both the Sidebars will behave as side content to this main content area of a web page.
 The following sample demonstrates two Sidebars positioned on the left and right of the shared main content, toggled independently via buttons.
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/multiple-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

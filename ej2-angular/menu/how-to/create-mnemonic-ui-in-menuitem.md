@@ -17,7 +17,7 @@ This can be implemented using the [`beforeItemRender`](https://ej2.syncfusion.co
 In the following example, the first character in the `File`, `Open`, and `Save` menu items is underlined.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 

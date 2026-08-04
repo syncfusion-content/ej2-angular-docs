@@ -17,7 +17,7 @@ Check out this video to learn about integrating other UI components inside the A
 {% youtube "https://www.youtube.com/watch?v=207C5_BZIj0" %}
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/direct-components-cs1/src/app.component.ts %}
 {% endhighlight %}
 

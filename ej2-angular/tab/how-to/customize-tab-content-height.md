@@ -25,7 +25,7 @@ The Tab component offers four distinct height calculation strategies to accommod
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/tab/height-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/height-cs1/src/app.component.ts %}
 {% endhighlight %}
 

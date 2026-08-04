@@ -184,7 +184,7 @@ Stop the server with `Ctrl+C` in the terminal.
 The following example shows a basic `Menu` component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/menu/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
   

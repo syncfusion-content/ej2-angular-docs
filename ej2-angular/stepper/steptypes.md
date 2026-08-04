@@ -17,7 +17,7 @@ The Angular Stepper component supports different step types to customize how ste
 In the default type, the Stepper displays steps with a combination of indicators and labels by setting the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property to `Default`. This is the default value for the Stepper component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/default/src/app.component.ts %}
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ In the label type, the Stepper displays steps with only labels by setting the [s
 > The `label` property of the `StepModel` takes priority in displaying step content when `stepType` is set to `Label`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/labelOnly/src/app.component.ts %}
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ The following label positions are supported in the Stepper component:
 | `End` | Positions the label to the right side of each step. |
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/labelPosition/src/app.component.ts %}
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ The following label positions are supported in the Stepper component:
 In the indicator type, the Stepper displays steps with only indicators by setting the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property to `Indicator`.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/indicatorOnly/src/app.component.ts %}
 {% endhighlight %}
 

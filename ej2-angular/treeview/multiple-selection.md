@@ -24,7 +24,7 @@ To select multiple nodes, use these keyboard combinations:
 In the following example, the `allowMultiSelection` property is enabled to demonstrate multiple node selection.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
@@ -53,7 +53,7 @@ The TreeView provides events to handle selection changes:
 In the following example, **New South Wales** and **Western Australia** nodes are pre-selected at initialization. The selection events display alerts showing the selected node information.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

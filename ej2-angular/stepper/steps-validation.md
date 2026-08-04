@@ -15,7 +15,7 @@ The Angular Stepper component allows configuration of validation states for indi
 > Based on the `stepType`, the validation state icon will be displayed either as an indicator or as part of the step label/text.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/stepper/steps/validation/src/app.component.ts %}
 {% endhighlight %}
 

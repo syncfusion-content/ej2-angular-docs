@@ -16,7 +16,7 @@ To implement links in toolbar items, use the `ng-template` directive inside the 
 
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/toolbar/toolbar-link-cs1/src/app.component.ts %}
 {% endhighlight %}
 

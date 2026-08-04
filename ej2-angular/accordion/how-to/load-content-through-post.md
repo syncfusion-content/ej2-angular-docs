@@ -19,7 +19,7 @@ Follow these steps to load content via AJAX:
 * Retrieve data from the AJAX `success` event and use it to initialize or update the Accordion.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/accordion/accordion-ajax-cs1/src/app.component.ts %}
 {% endhighlight %}
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Resources in Angular Gantt Chart Component
 
-Resources in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
+Resources in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
 ## Configure resource collection
 
@@ -128,6 +128,38 @@ The following example demonstrates custom resource styling:
 {% previewsample "page.domainurl/samples/gantt/resources/resource-customization-cs1" %}
 
 This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
+
+## Restrict resource selection to a single resource in the edit dialog
+
+By default, the **Resources tab** in the Gantt edit dialog allows users to select multiple resources for a task. You can restrict resource assignment to a single resource by customizing the resource grid displayed in the edit dialog.
+
+To achieve this requirement:
+
+- Remove the checkbox column from the **Resources tab** using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt#actionbegin) event with the `requestType` of  `beforeOpenEditDialog`.
+- Configure the resource grid selection behavior using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt#actioncomplete) event with `requestType` of `openEditDialog` by,
+    - Setting `checkboxOnly` to `false` to allow row selection without requiring a checkbox click.
+    - Setting the resource grid selection type to `Single` to allow only one resource selection at a time.
+    - Disabling persistent selection by setting `persistSelection` to `false`.
+
+The following example demonstrates how to restrict resource selection to a single resource in the **Resources tab** of the edit dialog. Additionally, a custom condition is applied to disable resource selection in the **Resources tab** when editing **Task 3**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/resources/resourcetab-single-slct-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/resources/resourcetab-single-slct-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/gantt/resources/resourcetab-single-slct-cs1/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/gantt/resources/resourcetab-single-slct-cs1" %}
+
+With this configuration, users can assign only a single resource to a task through the **Resources tab** of the Gantt edit dialog.
 
 ## See also
 - [How to configure resource view?](https://ej2.syncfusion.com/angular/documentation/gantt/resource-view)

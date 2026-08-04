@@ -46,4 +46,3 @@ export class AppComponent {
     //binding data source through fields property
     public fields: Object = { dataSource: this.data, value: 'nodeId', text: 'nodeText', child: 'nodeChild' };
 }
-

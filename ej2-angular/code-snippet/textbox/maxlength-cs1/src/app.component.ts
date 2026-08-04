@@ -1,5 +1,5 @@
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { FormsModule } from '@angular/forms'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { FormsModule } from '@angular/forms';
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
 import { Component, ViewChild } from '@angular/core';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
@@ -19,8 +19,8 @@ import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
                 <div class="multiline">
                 <ejs-textbox #default [multiline]='true' floatLabelType='Auto' placeholder='Enter your address' ></ejs-textbox>
                </div>
-               <button ejs-button id=length (click)='clickHandler($event)'>Add max length</button>
-               <button ejs-button id=length (click)='removeAttribute($event)'>Remove max length</button>
+               <button ejs-button id=addlength (click)='clickHandler($event)'>Add max length</button>
+               <button ejs-button id=removelength (click)='removeAttribute($event)'>Remove max length</button>
                `
 })
 export class AppComponent {

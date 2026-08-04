@@ -11,13 +11,99 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Rich Text Editor
 
-The [Angular Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/angular-rich-text-editor) is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section explains the steps to create a simple Angular Rich Text Editor component and configure its core functionalities.
+The Syncfusion Angular Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section describes how to create a basic Angular Rich Text Editor component and configure its core features.
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/ai-coding-assistant/overview)
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
 To get started quickly with the Angular Rich Text Editor using CLI and Schematics, refer to this video tutorial:
 
 {% youtube "https://www.youtube.com/watch?v=wrod5Rzg85o" %}
+
+{% tabcontents %}
+
+{% tabcontent Syncfusion CLI %}
+
+## Prerequisites
+
+- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
+- Syncfusion CLI.
+
+## Install the Syncfusion CLI 
+
+Install the Syncfusion CLI globally using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+npm install -g @syncfusion/syncfusion-cli
+{% endhighlight %}
+{% endtabs %}
+
+## Create a new Angular application using Syncfusion CLI
+
+You can create a Angular application using the Syncfusion CLI. The CLI provides two ways to create a project:
+
+### Non-interactive mode
+
+Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf new syncfusion-angular-app --framework angular --template rte
+{% endhighlight %}
+{% endtabs %}
+
+In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor component.
+
+### Interactive mode
+
+Interactive mode guides you through the project creation process with step-by-step prompts.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf
+{% endhighlight %}
+{% endtabs %}
+
+When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component, select the following options:
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+√ Project name? ... syncfusion-angular-app
+√ Choose Framework: » Angular
+√ Choose Template: » RTE
+√ Choose Theme: » Material3
+√ Choose Style Format: » CSS
+√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no
+√ Install dependencies and start app now? ... no
+
+{% endhighlight %}
+{% endtabs %}
+
+The above selections generate a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
+
+## Run the project
+
+Once the project is created, navigate to the project directory and run the following commands in your terminal.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+cd syncfusion-angular-app
+npm install
+ng serve
+{% endhighlight %}
+{% endtabs %}
+
+The output will appear as follows:
+
+![Rich Text Component](images/cli-rte.png)
+
+{% endtabcontent %}
+
+{% tabcontent Angular CLI %}
 
 ## Prerequisites
 
@@ -25,7 +111,7 @@ This guide uses the Angular CLI to manage Angular applications. It requires Node
 
 N> For information about supported Angular versions and Syncfusion package compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/angular/documentation/upgrade/version-compatibility) documentation.
 
-## Set Up the Angular Environment
+## Setup Angular Environment
 
 You can use [Angular CLI](https://github.com/angular/angular-cli) to set up your Angular applications. To install Angular CLI use the following command.
 
@@ -42,7 +128,7 @@ ng new my-app
 ```
 This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
 
-![Initial_Setup](images/getting-started/Initial-setup.png)
+![Initial_setup](images/getting-started/Initial-setup.png)
 
 By default, the Angular CLI creates a CSS-based application.
 
@@ -64,7 +150,7 @@ Next, navigate to the project folder:
 cd my-app
 ```
 
-## Adding Rich Text Editor package
+## Adding Syncfusion Rich Text Editor package
 
 All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Install the Rich Text Editor component with the following command:
 
@@ -122,7 +208,6 @@ Modify the template in the `src/app/app.ts` file to render the Rich Text Editor 
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Run the Application
 
 Use the following command to run the application in the browser.
@@ -130,12 +215,14 @@ Use the following command to run the application in the browser.
 ```bash
 ng serve --open
 ```
+{% endtabcontent %}
+{% endtabcontents %}
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Rich Text Editor is displayed in the browser as shown below.
 
 ![Syncfusion Angular Rich Text Editor output](images/getting-started.png)
 
-## See also
+## See Also
 
 **Documentation links**
 

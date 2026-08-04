@@ -24,7 +24,7 @@ Refer to the following sample.
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/tab/content-reuse-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/content-reuse-cs1/src/app.component.ts %}
 {% endhighlight %}
 

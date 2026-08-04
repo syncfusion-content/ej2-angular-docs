@@ -15,7 +15,7 @@ This section explains how to configure submenus to open on Context Menu item cli
 By default, Context Menu submenus open when users hover over parent menu items. However, in scenarios where you want more deliberate user interaction or need to prevent accidental submenu activation, you can enable click-based submenu opening. When `showItemOnClick` is set to `true`, users must explicitly click on parent menu items to reveal their submenus, providing more controlled navigation and reducing unintentional submenu displays.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 

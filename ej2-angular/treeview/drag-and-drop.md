@@ -30,7 +30,7 @@ The following table explains the usage of indicator icons.
 
 In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) property is enabled.
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="style.css" %}
@@ -52,7 +52,7 @@ To perform multi-selection, press and hold the **CTRL** key and click the desire
 In the following sample, the `allowMultiSelection` property is enabled along with the `allowDragAndDrop` property.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

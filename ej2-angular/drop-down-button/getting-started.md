@@ -103,8 +103,7 @@ npm install @syncfusion/ej2-material3-theme
 Then add the following CSS reference to the **src/styles.css** file. This is the default global stylesheet registered under `styles` in `angular.json`:
 
 ```css
-
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/drop-down-button/index.css";
+@import "@syncfusion/ej2-material3-theme/styles/drop-down-button/index.css";
 ```
 > You can also refer to the combined CSS file for all Syncfusion components in your application. For more information, see the documentation on [referring themes through npm packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#using-precompiled-css-and-scss-file).
 

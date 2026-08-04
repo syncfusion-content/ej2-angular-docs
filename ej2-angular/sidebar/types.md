@@ -28,7 +28,7 @@ The Sidebar can be set to initialize based on four different types that are cons
 The following sample demonstrates the different Sidebar types in action, showcasing their visual and functional distinctions.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/Types-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

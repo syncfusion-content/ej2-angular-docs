@@ -15,7 +15,7 @@ This section demonstrates how to retrieve child nodes from a corresponding paren
 The `getNode` method returns detailed information about a specific node, including its child elements, which enables you to access and manipulate the entire subtree. This approach is particularly useful when working with dynamic data sources or when you need to implement custom tree traversal logic based on parent-child relationships.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/get-child-nodes-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

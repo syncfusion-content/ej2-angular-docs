@@ -21,7 +21,7 @@ After creating the reactive form structure, reference it directly within the **n
 The following example demonstrates how to add reactive forms within a Tab item using ng-template.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/reactive-forms-cs1/src/app.component.ts %}
 {% endhighlight %}
 

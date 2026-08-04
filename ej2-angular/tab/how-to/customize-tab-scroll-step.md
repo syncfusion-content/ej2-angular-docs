@@ -15,7 +15,7 @@ The Tab component supports customizing the scrolling distance when you click the
 * By using the Tab scrollStep property, pass a required value to customize tab scrollStep.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/scrollstep-cs1/src/app.component.ts %}
 {% endhighlight %}
 

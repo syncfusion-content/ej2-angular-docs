@@ -154,7 +154,7 @@ Stop the server with `Ctrl+C` in the terminal.
 The following example shows a basic `AppBar` component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/appbar/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
   

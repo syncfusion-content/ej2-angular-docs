@@ -666,9 +666,13 @@ You can programmatically update the Gantt chart data source using the [updateDat
 {% endhighlight %}
 {% endtabs %}
 
-## Display custom message for empty records
+## Display a custom message for empty records using emptyRecordTemplate
 
-You can display a custom message when no data is available by defining an empty record template using `<ng-template>` and assigning it to `treeGrid.grid.emptyRecordTemplate` during the `load` event in the component.
+The Gantt Chart allows you to display custom content, such as text, HTML elements, or images, when no records are available in the data source. This is useful for showing a user-friendly message when rendering the Gantt Chart with zero records, or when no matching records are found after performing operations such as **searching** and **filtering**.
+
+To render custom empty-state content, assign an Angular `<ng-template>` to the [emptyRecordTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#emptyrecordtemplate) property of the Gantt Chart component.
+
+The following example demonstrates how to display a custom message when the Gantt Chart contains no records on initial load.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -679,6 +683,8 @@ You can display a custom message when no data is available by defining an empty 
 {% include code-snippet/gantt/data-binding/empty-template/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
+
+>Note: Assigning a template to `emptyRecordTemplate` also displays a user-friendly message after performing operations such as **searching** or **filtering**, when no matching records are found.
 
 ## Data binding limitations
 

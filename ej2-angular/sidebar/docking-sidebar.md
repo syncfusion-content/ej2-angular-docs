@@ -35,7 +35,7 @@ This CSS displays text alongside icons when the Sidebar is open:
 In the docked state, only icons in the list are visible, hinting at the hidden text content.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/dock-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}

@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can determine whether tab selection occurs through user interaction or programmatic methods using the `isInteracted` field in the [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selecting) and [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selected) event arguments. When users change tabs through click actions, this property return `true` otherwise, it will return `false`. The following code example demonstrates how to identify the tab selection state in both selecting and selected events.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tab/animation-cs2/src/app.component.ts %}
 {% endhighlight %}
 

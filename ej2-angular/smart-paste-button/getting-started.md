@@ -138,7 +138,6 @@ Run the application in the browser using the following command:
 ```
 ng serve
 ```
-
   
 The following is the output of the featured sample:
 

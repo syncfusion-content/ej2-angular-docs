@@ -44,7 +44,7 @@ Additionally add below styles in the `[src/styles.css]` file.
 The following example explains about how to configure the file browser within the Rich Text Editor.
 
 * Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set the `enable` property as `true` on [fileManagerSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#filemanagersettings) property to make the file browser in the  Rich Text Editor to appear on the `FileManager` toolbar click action.
+* Set the `enable` property as `true` on [fileManagerSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#filemanagersettings) property to make the file browser in the  Rich Text Editor to appear on the `FileManager` toolbar click action.
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use the file browser tool, configure `FileManagerService` in providers.
 

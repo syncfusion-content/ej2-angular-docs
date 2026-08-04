@@ -19,7 +19,7 @@ Menu items of the ContextMenu can be customized according to the requirement. Th
 This can be achieved by appending table layout while `li` rendering by using `beforeItemRender` event.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/table-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ UI components can also be placed inside the each `li` element of ContextMenu.
 In the following example, CheckBox component is placed inside each `li` element and this can be achieved by creating CheckBox component in `beforeItemRender` event and appending it into the `li` element.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/context-menu/how-to-cs2/src/app.component.ts %}
 {% endhighlight %}
 

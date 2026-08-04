@@ -15,7 +15,7 @@ The TreeView component allows you to retrieve the original bound data using the 
  Please refer to the following sample for an implementation example.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/icon-css-cs1/src/app.component.ts %}
 {% endhighlight %}
 

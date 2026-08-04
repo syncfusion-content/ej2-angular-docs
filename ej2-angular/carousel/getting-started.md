@@ -193,7 +193,7 @@ Stop the server with `Ctrl+C` in the terminal.
 The following example shows a basic `Carousel` component.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
+{% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/carousel/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
   

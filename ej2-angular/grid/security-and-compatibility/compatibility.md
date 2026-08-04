@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 
 # Angular Supported Versions
 
-The following table lists Angular versions and the minimum Angular Data Grid versions that support them.
+The following table lists Angular versions and the minimum Syncfusion Angular Data Grid versions that support them.
 
 | Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Data Grid Version |
 |-----------------|-----------------------------------------------|

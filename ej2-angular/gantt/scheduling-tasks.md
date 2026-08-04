@@ -43,7 +43,12 @@ The following example configures auto scheduling:
 
 ### Manually scheduled Tasks
 
-The following example configures manual scheduling:
+The Gantt Chart supports taskbar editing actions for manually scheduled tasks. You can perform the following actions:
+- Drag and drop taskbars to modify the task schedule.
+- Resize taskbars to update task duration.
+- Edit manually scheduled parent and child tasks through taskbar interactions.
+
+The following example demonstrates how to configure manually scheduled tasks:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,6 +61,8 @@ The following example configures manual scheduling:
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/task-scheduling/manual-tasks-cs1" %}
+
+>Note: Taskbar drag-and-drop and resize actions are supported for manually scheduled tasks, including parent tasks, in both virtual and non-virtual rendering modes.
 
 ### Custom scheduled
 
