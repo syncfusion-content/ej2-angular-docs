@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Connector customization in Angular Diagram component | Syncfusion®
-description: Learn how to customize connector properties such as decorator shapes, styles, and gradient effects in the Syncfusion Angular Diagram component.
+title: Connector Customization in Angular Diagram | Syncfusion®
+description: Customize connector appearance in the Syncfusion® Angular Diagram with decorator shapes, line color, dash array, gradient, and bridging effects.
 platform: ej2-angular
 control: Connector customization
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector Customization
+# Connector Customization in Angular Diagram
 
 The Diagram component provides extensive customization options for connectors, allowing developers to modify visual appearance, behavior, and interaction properties. This guide covers decorator shapes, styling options, spacing controls, bridging effects, and advanced connector features.
 

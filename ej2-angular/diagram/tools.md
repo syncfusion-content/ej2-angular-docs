@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tools in Angular Diagram component | Syncfusion®
-description: Learn how to use drawing tools, selection tools, and pan tools in Syncfusion® Angular Diagram component for interactive diagram creation and navigation.
+title: Tools in Angular Diagram | Syncfusion®
+description: Use the Select, Pan, and Draw tools in the Syncfusion® Angular Diagram to create, select, and navigate shapes, connectors, and freehand paths at runtime.
 platform: ej2-angular
 control: Tools 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tools in Angular Diagram Component
+# Tools in Angular Diagram
 
 The Angular Diagram component provides a comprehensive set of interactive tools that enable users to create, modify, and navigate diagrams efficiently. These tools facilitate real-time interaction with diagram elements through mouse and keyboard operations.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart based on pivot selection in Angular Pivotview | Syncfusion
-description: Learn here all about Chart based on pivot table selection in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to Render a Chart on Pivot Table Cell Selection in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to render a chart on pivot table cell selection in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Chart based on pivot table selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart based on pivot table selection in Angular Pivotview component
+# How to Render a Chart on Pivot Table Cell Selection in Angular Pivot Table
 
 The Angular Pivotview component supports creating charts based on cell selections within the pivot table. This customization allows charts to be plotted dynamically using data from selected cells, providing visual representation of specific data segments.
 

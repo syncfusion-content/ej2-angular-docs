@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual scrolling in Angular Pivot Table component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Virtual Scrolling in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table loads large datasets on demand using virtual scrolling for rows and columns.
 platform: ej2-angular
 control: Virtual scrolling 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual scrolling in Angular Pivot Table component
+# Virtual Scrolling in Angular Pivot Table
 
 ## Virtual Scrolling
 

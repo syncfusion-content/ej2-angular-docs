@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Aggregation in Angular Pivotview component | Syncfusion
-description: Learn here all about Aggregation in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Aggregation in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table applies aggregation types like Sum, Average, Count, Median, and PercentageOfParentTotal to value fields.
 platform: ej2-angular
 control: Aggregation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregation in Angular Pivotview component
+# Aggregation in Angular Pivot Table
 
 > This feature is applicable only for the relational data source.
 

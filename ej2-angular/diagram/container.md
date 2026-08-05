@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Container in Angular Diagram Component | Syncfusion®
-description: Learn here all about Container in Syncfusion® Angular Diagram Component of Syncfusion Essential® JS 2 and more.
+title: Container in Angular Diagram | Syncfusion®
+description: Group logically related shapes inside a visible boundary in the Syncfusion® Angular Diagram using container nodes, which auto-manage children while preserving individual element properties.
 platform: ej2-angular
 control: Container 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Container in Angular Diagram Component
+# Container in Angular Diagram
 
 A Container is a specialized node that groups logically related shapes within a visible boundary. Unlike regular groups, containers automatically manage child elements while maintaining individual element properties. Common use cases include organizing related components in flowcharts, creating swimlanes in process diagrams, and building composite UI layouts.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in Angular Pivotview | Syncfusion
-description: Learn how to bind Microsoft SQL Server Database data in the Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Microsoft SQL Server in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table binds to a Microsoft SQL Server database through an ASP.NET Core Web API and Microsoft SqlClient.
 platform: ej2-angular
 control: Microsoft SQL Server Data Binding
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Microsoft SQL Server in EJ2 Angular Pivotview Component
+# Microsoft SQL Server in Angular Pivot Table
 
 This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 

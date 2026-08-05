@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Symmetric layout in Angular Diagram component | Syncfusion®
-description: Learn here all about Symmetric layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Symmetric Layout in Angular Diagram | Syncfusion®
+description: Use the force-directed symmetric layout in the Syncfusion® Angular Diagram to position nodes via spring and repulsion for organic arrangements.
 platform: ej2-angular
 control: Symmetric layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Symmetric layout in Angular Diagram control
+# Symmetric Layout in Angular Diagram
 
 The symmetric layout is a force-directed algorithm that positions nodes by simulating physical forces between them. Nodes are repositioned iteratively by moving them closer together or pushing them further apart until the system reaches an equilibrium state, creating a balanced and visually appealing arrangement.
 

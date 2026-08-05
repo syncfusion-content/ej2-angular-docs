@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Connector Interaction in Angular Diagram Component | Syncfusion®
-description: Explore how to interact with connectors in the Syncfusion Angular Diagram Component, including selection, dragging, endpoint manipulation, and flipping.
+title: Connector Interaction in Angular Diagram | Syncfusion®
+description: Select, drag, edit endpoints, and flip connectors in the Syncfusion® Angular Diagram, with both mouse-based and programmatic methods for runtime manipulation.
 platform: ej2-angular
 control: Connector Interaction 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector Interaction in Angular Diagram Component
+# Connector Interaction in Angular Diagram
 
 Connectors in the Angular Diagram component support various interaction capabilities including selection, dragging, endpoint manipulation, segment editing, and flipping operations. These interactions enable users to dynamically modify connector behavior and appearance within the diagram.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print in Angular Pivotview component | Syncfusion
-description: Learn here all about Print in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Printing in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table prints the current grid or pivot chart view to a hard copy via the print method.
 platform: ej2-angular
 control: Print 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in Angular Pivotview component
+# Printing in Angular Pivot Table
 
 The Angular PivotView component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 

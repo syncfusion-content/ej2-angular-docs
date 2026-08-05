@@ -1,14 +1,14 @@
 ---
 layout: post
-title: User interface components in Angular File Manager | Syncfusion
-description: Learn here all about User interface in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: User Interface in Angular File Manager | Syncfusion
+description: Learn how to use the Angular File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interface in Angular File Manager component
+# User Interface in Angular File Manager
 
 The File Manager provides a comprehensive user interface for browsing, organizing, and performing operations on files and folders. This guide explains each UI component and how they work together to provide an intuitive file management experience.
 

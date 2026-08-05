@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Diagram component | Syncfusion®
-description: Learn how to localize context menus and symbol palette functionality in Syncfusion® Angular Diagram component with culture-specific text.
+title: Localization in Angular Diagram | Syncfusion®
+description: Adapt the Syncfusion® Angular Diagram context menu and symbol palette search to specific cultures by setting the locale property and loading translated text via L10n.load.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in EJ2 Angular Diagram Component
+# Localization in Angular Diagram
 
 The EJ2 Angular Diagram component supports localization functionality, allowing developers to adapt the user interface to different languages and regions. The diagram's symbol palette search box and context menu items can be localized based on the selected culture. Use the locale property of the diagram to specify the desired culture for localization.
 

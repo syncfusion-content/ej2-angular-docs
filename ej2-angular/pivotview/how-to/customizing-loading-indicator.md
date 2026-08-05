@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize loading indicator in Angular Pivotview | Syncfusion
-description: Learn here all about Customizing loading indicator in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to Customize the Loading Indicator in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize the loading indicator in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Customizing loading indicator 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing loading indicator in Angular Pivotview component
+# How to Customize the Loading Indicator in Angular Pivot Table
 
 The pivot table displays a loading indicator during data processing operations such as filtering, sorting, and aggregation calculations. The default loading spinner can be customized to match application design requirements using the [`spinnerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#spinnertemplate) property.
 

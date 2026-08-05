@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in Angular Pivot Table Component | Syncfusion
-description: Learn here all about Tooltip in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Tooltip in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table shows tooltips on value cells with row, column, and measure info via the showTooltip property.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in Angular Pivot Table Component
+# Tooltip in Angular Pivot Table
 
 The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showtooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
 

@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Apply custom style to pivot cells in Angular Pivotview | Syncfusion
-description: Learn here all about Apply custom style to pivot cells in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to Style Pivot Cells in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to apply custom styles to pivot cells in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Apply custom style to pivot cells 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Apply custom style to pivot cells in Angular Pivotview component
+# How to Style Pivot Cells in Angular Pivot Table
 
 The Angular Pivotview component allows you to customize the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
 ## Overview
 
 You can apply custom styles to different types of cells in the pivot table:
-- Use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event to style row headers and value cells
-- Use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#headercellinfo) event to style column headers
+- Use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event to style row headers and value cells
+- Use the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#headercellinfo) event to style column headers
 
-Both events are available through the [gridSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/) property of the Pivotview component.
+Both events are available through the [gridSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) property of the Pivotview component.
 
 ## Implementation example
 
@@ -40,4 +40,4 @@ The styling is applied by adding a custom CSS class **"e-custom"** to the cell e
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs310" %}
 
-N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [headerDelimiter](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/valueSortSettingsModel/#headerdelimiter) in the [valueSortSettings](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#valuesortsettings) property to any other delimiter instead of the default separator.
+N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [headerDelimiter](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/valueSortSettingsModel#headerdelimiter) in the [valueSortSettings](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#valuesortsettings) property to any other delimiter instead of the default separator.

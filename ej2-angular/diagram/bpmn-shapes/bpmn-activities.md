@@ -1,14 +1,14 @@
 ---
 layout: post
-title: BPMN Activities in Angular Diagram Component | Syncfusion®
-description: Learn about BPMN activity shapes including tasks, subprocesses, loops, compensation, and boundaries in Syncfusion® Angular Diagram component.
+title: BPMN Activities in Angular Diagram | Syncfusion®
+description: Model BPMN activities in the Syncfusion® Angular Diagram as tasks or subprocesses with type-specific behaviors like loops, compensation, and multi-instance.
 platform: ej2-angular
 control: Bpmn Activity 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN Activities in Angular Diagram Component
+# BPMN Activities in Angular Diagram
 
 ## Overview
 

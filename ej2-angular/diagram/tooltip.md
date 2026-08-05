@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in Angular Diagram component | Syncfusion®
-description: Learn here all about Tooltip in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Tooltip in Angular Diagram | Syncfusion®
+description: Show position, size, and rotation tooltips during node interaction in the Syncfusion® Angular Diagram, plus per-element custom tooltips with configurable content and placement.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in EJ2 Angular Diagram Component
+# Tooltip in Angular Diagram
 
 <!-- markdownlint-disable MD010 -->
 

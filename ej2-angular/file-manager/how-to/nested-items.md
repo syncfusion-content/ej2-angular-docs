@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Nested items in Angular File Manager component | Syncfusion
-description: Learn here all about Nested items in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Use nested File Manager in Angular | Syncfusion
+description: Learn how to integrate the Angular File Manager within components such as Tab and Dialog to build flexible and interactive application layouts.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---

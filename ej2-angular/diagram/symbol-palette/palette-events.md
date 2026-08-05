@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Symbol Palette Events in EJ2 Angular Diagram component | Syncfusion®
-description: Learn here all about Symbol palette events in Syncfusion® Angular Diagram component including drag-drop events, palette expansion, and selection change events.
+title: Symbol Palette Events in Angular Diagram | Syncfusion®
+description: Handle drag-enter, drag-leave, drag-over, and selection-change events in the Syncfusion® Angular Diagram symbol palette to validate drop targets and customize symbol placement.
 platform: ej2-angular
 control: Symbol palette 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Symbol Palette Events in EJ2 Angular Diagram Component
+# Symbol Palette Events in Angular Diagram
 
 The Symbol Palette component provides several events that trigger during user interactions such as dragging symbols, expanding palettes, and changing selections. These events enable developers to customize behavior, provide visual feedback, and implement custom logic during symbol palette operations.
 

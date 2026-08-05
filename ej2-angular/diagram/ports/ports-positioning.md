@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Port positioning in Angular Diagram component | Syncfusion®
-description: Learn how to position ports on nodes in Syncfusion® Angular Diagram component using offset, alignment, and margin properties with practical examples.
+title: Ports Positioning in Angular Diagram | Syncfusion®
+description: Position ports on nodes in the Syncfusion® Angular Diagram using fractional 0–1 offsets, horizontal/vertical alignment, and margin to land ports precisely on node edges.
 platform: ej2-angular
 control: Ports 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Port positioning in Angular Diagram Component
+# Ports Positioning in Angular Diagram
 
 The Angular Diagram component provides flexible options for positioning ports on nodes. Ports can be precisely positioned using offset coordinates, alignment properties, and margin values to create professional diagram layouts that meet specific design requirements.
 

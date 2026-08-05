@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Flat JSON Data in Angular File Manager component | Syncfusion
-description: Learn how to render flat JSON data in the Angular File Manager component using fileSystemData property without backend services.
+title: Flat Data in Angular File Manager | Syncfusion
+description: Learn how to load flat JSON data in the Angular File Manager without a service provider, using local data structures to render folders and files.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Rendering Flat JSON Data in the Angular File Manager Component
+# Flat Data in Angular File Manager
 
 The File Manager component supports using flat JSON data as an array of objects for rendering files and folders without requiring a backend service. This approach eliminates the need to define an [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager#ajaxsettings) URL and allows for client-side data manipulation.
 ## Implementing Flat JSON Data Binding

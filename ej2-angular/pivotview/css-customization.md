@@ -1,14 +1,14 @@
 ---
 layout: post
-title: CSS customization in Angular Pivot Table component | Syncfusion
-description: Learn here all about CSS customization in Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table styles row headers, column headers, value cells, and the field list with theme CSS overrides.
 platform: ej2-angular
 control: CSS customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CSS customization in Angular Pivot Table component
+# Style and Appearance in Angular Pivot Table
 
 The Angular Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 

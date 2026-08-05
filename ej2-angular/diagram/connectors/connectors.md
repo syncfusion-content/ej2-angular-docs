@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Connectors in Angular Diagram component | Syncfusion®
-description: Explore the various types of connectors available in the Syncfusion Angular Diagram component and learn how to create, customize, and manage them.
+title: Connectors in Angular Diagram | Syncfusion®
+description: Create, customize, and route connectors between nodes or ports in the Syncfusion® Angular Diagram control, with runtime draw, clone, and update support.
 platform: ej2-angular
 control: Connectors 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connectors in Angular Diagram component
+# Connectors in Angular Diagram
 
 Connectors are objects used to create links between two points, nodes, or ports to represent relationships between them. They provide visual connections that help illustrate data flow, process sequences, hierarchical relationships, and other logical connections in diagrams.
 

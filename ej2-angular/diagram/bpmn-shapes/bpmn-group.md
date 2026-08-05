@@ -1,14 +1,14 @@
 ---
 layout: post
-title: BPMN Group in Angular Diagram component | Syncfusion®
-description: Learn how to create and customize BPMN group shapes for organizing related elements in Syncfusion® Angular Diagram component.
+title: BPMN Group in Angular Diagram | Syncfusion®
+description: Group related BPMN elements in the Syncfusion® Angular Diagram using dashed-border group shapes for visual organization without process semantics.
 platform: ej2-angular
 control: Bpmn Events 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN Group in Angular Diagram component
+# BPMN Group in Angular Diagram
 
 ## Overview
 

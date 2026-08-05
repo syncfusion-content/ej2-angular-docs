@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Interaction in Angular Diagram component | Syncfusion®
-description: Learn here all about Interaction in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Interaction in Angular Diagram | Syncfusion®
+description: Select, drag, resize, and rotate elements in the Syncfusion® Angular Diagram using mouse, keyboard, and rubber-band selection, with hooks into selection, click, and position-change events.
 platform: ej2-angular
 control: Interaction 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Interaction in Angular Diagram Component
+# Interaction in Angular Diagram
 
 ## Selector
 

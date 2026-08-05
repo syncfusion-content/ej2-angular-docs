@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multiple Segments for Connectors in Angular Diagram | Syncfusion®
-description: Learn how to create connectors with multiple segments in Syncfusion® Angular Diagram Component, including configuration and practical examples.
+title: Connector Multiple Segments in Angular Diagram | Syncfusion®
+description: Combine multiple straight, orthogonal, or bezier segments in the Syncfusion® Angular Diagram to route connectors around obstacles and build custom path shapes.
 platform: ej2-angular
 control: Multiple segments 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple Segments for Connectors
+# Connector Multiple Segments in Angular Diagram
 
 Connectors in the Angular Diagram component can be composed of multiple segments to create complex routing paths between nodes. Multiple segments allow you to define precise connection routes that navigate around obstacles or follow specific pathways in your diagram layout.
 

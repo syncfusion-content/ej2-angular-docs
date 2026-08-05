@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Diagram - MySQL Server | Syncfusion
-description: Learn how to integrate the Syncfusion Angular Diagram with a MySQL database using LINQ2DB and an ASP.NET Core Web.
+title: MySQL Server in Angular Diagram | Syncfusion®
+description: Bind an organizational chart in the Syncfusion® Angular Diagram to a MySQL database through an ASP.NET Core Web API using LINQ2DB for type-safe data access.
 platform: ej2-angular
 control: diagram
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting MySQL Server to Syncfusion® Angular Diagram using LINQ2DB
+# MySQL Server in Angular Diagram
 
 This guide explains how to load and visualize organizational chart data stored in a MySQL database using the Syncfusion® Angular Diagram component. It demonstrates how to configure MySQL, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to an Angular application to render an organizational chart.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bezier segment orientation in Angular Diagram component | Syncfusion
-description: Learn to configure Bezier segment orientation in Syncfusion Angular Diagram component for custom curved connectors.
+title: Connector Bezier Segment Edit Orientation in Angular Diagram | Syncfusion
+description: Restrict bezier segment editing in the Syncfusion® Angular Diagram to axis-aligned movement (Bidirectional) or allow freeform multi-axis drag, per the segmentEditOrientation setting.
 platform: ej2-angular
 control: bezier-segEditOrientation
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bezier Segment Edit Orientation
+# Connector Bezier Segment Edit Orientation in Angular Diagram
 
 Bezier connectors in diagrams provide smooth, curved connections between nodes with customizable control points. The segment edit orientation feature allows interactive modification of bezier connector segments to achieve the desired visual flow and connection paths.
 

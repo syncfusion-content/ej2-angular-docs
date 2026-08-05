@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Lane in Angular Diagram component | Syncfusion®
-description: Learn here all about Swim lane in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Lane in Angular Diagram | Syncfusion®
+description: Add functional lanes to a swimlane in the Syncfusion® Angular Diagram to represent actors, departments, or systems participating in a process workflow.
 platform: ej2-angular
 control: Lane
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Lane Management in Angular Diagram Component
+# Lane in Angular Diagram
 
 ## Overview
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mind-map layout in Angular Diagram component | Syncfusion®
-description: Learn here all about Mind-map layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Mindmap Layout in Angular Diagram | Syncfusion®
+description: Create mind maps in the Syncfusion® Angular Diagram with a central root and horizontally or vertically branching topics, using the MindMap layout mode.
 platform: ej2-angular
 control: Mind-map layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mind Map layout in Angular Diagram control
+# Mindmap Layout in Angular Diagram
 
 A mind map is a powerful visualization technique that organizes information around a central concept, with related topics branching outward in a tree-like structure. This layout is particularly useful for brainstorming, knowledge mapping, and hierarchical data representation. The Angular Diagram component supports mind map layouts through the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#type) property, which should be set to `MindMap`.
 

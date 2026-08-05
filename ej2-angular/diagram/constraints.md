@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Constraints in Angular Diagram Component | Syncfusion®
-description: Learn here all about Constraints in Syncfusion® Angular Diagram Component of Syncfusion Essential® JS 2 and more.
+title: Constraints in Angular Diagram | Syncfusion®
+description: Enable or disable specific diagram, node, and connector behaviors in the Syncfusion® Angular Diagram using flagged enumerations combined with bitwise operators.
 platform: ej2-angular
 control: Constraints 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Constraints in Angular Diagram Component
+# Constraints in Angular Diagram
 
 Constraints enable or disable specific behaviors of diagrams, nodes, and connectors. These constraints are implemented as flagged enumerations, allowing multiple behaviors to be controlled simultaneously using Bitwise operators (`&, |, ~, <<, etc.`).
 

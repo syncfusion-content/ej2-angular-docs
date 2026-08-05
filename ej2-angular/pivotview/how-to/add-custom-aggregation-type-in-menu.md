@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add custom aggregation type in Angular Pivotview | Syncfusion
-description: Learn here all about how to add custom aggregation type to the menu in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to Add a Custom Aggregation in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to add a custom aggregation type to the menu in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Add custom aggregation type to the menu 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD009 -->
 
-# Add custom aggregation type to the menu in Angular Pivotview component
+# How to Add a Custom Aggregation in Angular Pivot Table
 
 The Angular Pivotview component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This feature enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 

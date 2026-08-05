@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Different Types of Shapes in Angular Diagram component | Syncfusion®
-description: Learn to create and customize text, image, HTML, native, basic, path, and flow shapes in the Syncfusion Angular Diagram component with examples.
+title: Shapes in Angular Diagram | Syncfusion®
+description: Learn to create and customize text, image, HTML, native, basic, path, and flow shapes in the Syncfusion® Angular Diagram control with examples.
 platform: ej2-angular
 control: Shapes 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Different Types of Shapes in Angular Diagram Component
+# Shapes in Angular Diagram
 
 The Angular Diagram component provides comprehensive support for adding various types of nodes to create rich, interactive diagrams. Shapes serve as the fundamental building blocks for representing data, processes, and visual elements in your diagrams.
 

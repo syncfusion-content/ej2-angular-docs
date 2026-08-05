@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Radial tree layout in Angular Diagram component | Syncfusion®
-description: Learn here all about Radial tree layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Radial Layout in Angular Diagram | Syncfusion®
+description: Arrange hierarchical data as a radial tree in the Syncfusion® Angular Diagram, with a central root and child levels expanding outward in concentric circles.
 platform: ej2-angular
 control: Radial tree layout 
 documentation: ug
 domainurl: ##DomainURL## ..
 ---
 
-# Radial tree layout in Angular Diagram control
+# Radial Layout in Angular Diagram
 
 A radial tree layout is a specialized diagram that presents hierarchical information with a central node at the core, surrounded by branches extending outward in a circular, tree-like structure. This layout is particularly effective for visualizing organizational charts, family trees, mind maps, and network relationships where understanding the relationship distance from a central concept is important.
 

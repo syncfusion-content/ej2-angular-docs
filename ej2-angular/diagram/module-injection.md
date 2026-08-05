@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Module Injection with Angular Diagram Component | Syncfusion®
-description:  Learn how to use module injection with the Syncfusion® Angular Diagram component to enable additional features.
+title: Module Injection in Angular Diagram | Syncfusion®
+description: Inject the Syncfusion® Angular Diagram services you need—such as data binding, hierarchical tree, BPMN, snapping, undo/redo, and print/export—into your component to enable those features.
 platform: ej2-angular
 control: Module Injection 
 documentation: ug
 domainurl: ##DomainURL##            
 ---
 
-# Module injection in Angular Diagram Component
+# Module Injection in Angular Diagram
 
 The Diagram component provides optional services to enable feature-specific functionality. Inject only the required services based on your application needs.
 

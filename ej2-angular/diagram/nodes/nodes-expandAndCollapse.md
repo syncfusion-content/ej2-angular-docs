@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Expand and collapse nodes in Angular Diagram component | Syncfusion®
-description: Learn how to implement expand and collapse functionality for nodes in Syncfusion® Angular Diagram component with customizable icons and states.
+title: Nodes Expand and Collapse in Angular Diagram | Syncfusion®
+description: Add expand/collapse behavior to hierarchical nodes in the Syncfusion® Angular Diagram, with customizable expand and collapse icons and the initial expanded state.
 platform: ej2-angular
 control: Expand and collapse of nodes
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Expand and Collapse Nodes in Angular Diagram Component
+# Nodes Expand and Collapse in Angular Diagram
 
 The Angular Diagram component provides built-in support for expanding and collapsing nodes, enabling users to create hierarchical views where child nodes can be hidden or shown dynamically. This functionality is particularly useful for organizational charts, mind maps, and tree structures where managing visual complexity is essential.
 

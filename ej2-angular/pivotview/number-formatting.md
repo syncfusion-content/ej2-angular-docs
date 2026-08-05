@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Number formatting in Angular Pivotview component | Syncfusion
-description: Learn here all about Number formatting in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Number Formatting in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table formats numeric value cells using number, currency, percent, and custom format strings.
 platform: ej2-angular
 control: Number formatting 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Number formatting in Angular Pivotview component
+# Number Formatting in Angular Pivot Table
 
 The Pivot Table component provides comprehensive number formatting capabilities, allowing you to display numeric values in various formats. This enhances data readability and ensures values are displayed accurately to meet your specific needs.
 

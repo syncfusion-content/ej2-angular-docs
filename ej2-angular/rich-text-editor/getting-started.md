@@ -48,7 +48,7 @@ Non-interactive mode allows you to create a project directly using a single comm
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
-sf new syncfusion-angular-app --framework angular --template rte
+sf new syncfusion-angular-app --framework angular --template rich-text-editor
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,7 +71,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 
 √ Project name? ... syncfusion-angular-app
 √ Choose Framework: » Angular
-√ Choose Template: » RTE
+√ Choose Template: » Rich Text Editor
 √ Choose Theme: » Material3
 √ Choose Style Format: » CSS
 √ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paging in Angular Pivotview component | Syncfusion
-description: Learn here all about Paging in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Paging in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table paginates rows and columns with pageSettings to navigate large reports.
 platform: ej2-angular
 control: Paging 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Paging in Angular Pivotview component
+# Paging in Angular Pivot Table
 
 The paging feature in the Pivot Table component is designed to handle large datasets efficiently by dividing the data into manageable pages. This prevents performance issues associated with rendering large amounts of data at once, allowing users to navigate through rows and columns page by page.
 

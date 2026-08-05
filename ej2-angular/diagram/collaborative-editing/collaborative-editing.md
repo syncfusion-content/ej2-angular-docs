@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Collaborative Editing in Syncfusion Angular Diagram | Syncfusion
-description: Checkout and learn to set up real-time collaborative editing in Syncfusion Angular Diagram using WebSocket and Redis.
+title: Collaborative Editing in Angular Diagram | Syncfusion®
+description: Enable real-time collaborative editing in the Syncfusion® Angular Diagram over SignalR with Redis-backed state for multiple simultaneous users.
 control: Diagram
 documentation: ug
 platform: ej2-angular

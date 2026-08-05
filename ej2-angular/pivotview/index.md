@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Pivotview component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Pivot Table Component | Syncfusion
+description: Learn what the Angular Pivot Table is, see its key features, and find links to the most common customization options.
 platform: ej2-angular
 control: Index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Pivotview component
+# About Syncfusion Angular Pivot Table Component.
 
 The **Pivot Table** component is an easily configurable and presentation-quality business control. It allows to create multi-dimensional views using pivot data source for analyzing and satisfying the needs of business user.
 

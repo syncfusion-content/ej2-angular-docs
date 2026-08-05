@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bpmn Flows in Angular Diagram component | Syncfusion®
-description: Learn here all about Bpmn flows in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: BPMN Flows in Angular Diagram | Syncfusion®
+description: Connect BPMN elements in the Syncfusion® Angular Diagram with association, sequence, or message flows to define the order between process activities.
 platform: ej2-angular
 control: Bpmn Flows 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN flows in Angular Diagram control
+# BPMN Flows in Angular Diagram
 
 ## Overview
 

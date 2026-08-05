@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scroll settings in Angular Diagram component | Syncfusion®
-description: Learn here all about Scroll settings in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Scroll Settings in Angular Diagram | Syncfusion®
+description: Configure horizontal and vertical scrolling, auto-scroll, scroll limits, and zoom-coupled offsets in the Syncfusion® Angular Diagram for smooth navigation of large canvases.
 platform: ej2-angular
 control: Scroll settings 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scroll Settings in Angular Diagram Component
+# Scroll Settings in Angular Diagram
 
 The diagram component provides comprehensive scrolling capabilities through both vertical and horizontal scrollbars, as well as mouse wheel navigation. The diagram's [`scrollSettings`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/scrollSettingsModel) enable developers to monitor the current scroll status, viewport dimensions, zoom levels, and programmatically control diagram navigation. These settings are essential for managing large diagrams and providing smooth user interaction experiences.
 

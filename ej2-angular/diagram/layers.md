@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Layers in Angular Diagram component | Syncfusion®
-description: Learn here all about Layers in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Layers in Angular Diagram | Syncfusion®
+description: Organize diagram elements into named categories in the Syncfusion® Angular Diagram using layers, with bulk visibility, lock, and property control across each layer.
 platform: ej2-angular
 control: Layers 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layers in Angular Diagram Component
+# Layers in Angular Diagram
 
 **Layers** provide a powerful organizational system for managing diagram elements by grouping related shapes into named categories. This functionality enables developers to build complex diagrams with selective viewing, interaction control, and bulk property management across multiple elements simultaneously.
 

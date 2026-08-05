@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Export in Angular Diagram component | Syncfusion®
-description: Learn here all about Export in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Export in Angular Diagram | Syncfusion®
+description: Export the Syncfusion® Angular Diagram as JPG, PNG, or SVG images for use in documents, presentations, or downstream processing, with options for region, margin, and multi-page output.
 platform: ej2-angular
 control: Export 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Export in Angular Diagram Component
+# Export in Angular Diagram
 
 The Angular Diagram component provides comprehensive support for exporting diagram content as image files (JPG, PNG) or vector graphics (SVG). This functionality enables users to save diagrams for documentation, presentations, or further processing. The [`exportDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#exportdiagram) method serves as the primary interface for all export operations.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Node Labels in Angular Diagram component | Syncfusion®
-description: Learn here all about Labels in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Node Labels in Angular Diagram | Syncfusion®
+description: Position and align text labels on nodes in the Syncfusion® Angular Diagram using fractional offset, horizontal/vertical alignment, margin, and runtime updates.
 platform: ej2-angular
 control: Node Labels
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node Annotations in Angular Diagram Component
+# Node Labels in Angular Diagram
 
 The Angular Diagram component allows precise customization of node annotations (also called labels) for positioning and appearance. Node annotations can be aligned relative to node boundaries using four key positioning properties that work together to provide comprehensive control over annotation placement.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row and column in Angular Pivotview component | Syncfusion
-description: Learn here all about Row and column in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Row and Column in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table configures row and column axes with field options for width, alignment, and formatting.
 platform: ej2-angular
 control: Row and column 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and column in Angular Pivotview component
+# Row and Column in Angular Pivot Table
 
 To learn about how to use the row and column options effectively in the Angular Pivot Table, watch this video:
 

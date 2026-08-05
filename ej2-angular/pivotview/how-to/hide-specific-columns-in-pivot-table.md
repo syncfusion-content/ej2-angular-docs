@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hide specific columns in Angular Pivotview component | Syncfusion
-description: Learn here all about Hide specific columns in pivot table in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to Hide Specific Columns in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to hide specific columns in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Hide specific columns in pivot table 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide specific columns in Angular Pivotview component
+# How to Hide Specific Columns in Angular Pivot Table
 
 By using the [columnRender](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#columnrender) event in the [gridSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/), you can hide specific column(s) in the pivot table. In the example below, the **"Units Sold"** column under **"FY 2016"** is hidden by setting its **visible** property to **false** via the [columnRender](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#columnrender) event.
 

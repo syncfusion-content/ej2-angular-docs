@@ -1,14 +1,14 @@
 ---
 layout: post
-title: BPMN Data Object in Angular Diagram Component | Syncfusion®
-description: Learn how to create and configure BPMN data objects including input, output, and collection types in Syncfusion® Angular Diagram component.
+title: BPMN Data Object in Angular Diagram | Syncfusion®
+description: Add BPMN data objects in the Syncfusion® Angular Diagram to represent input, output, or collection data that flows through a business process.
 platform: ej2-angular
 control: Bpmn DataObject 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN Data Object in Angular Diagram Component
+# BPMN Data Object in Angular Diagram
 
 ## Overview
 

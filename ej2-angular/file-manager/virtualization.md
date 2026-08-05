@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtualization in Angular File Manager component | Syncfusion
-description: Learn here all about Virtualization in Angular File Manager component of Syncfusion Essential JS 2 and more.
+title: Virtualization in Angular File Manager | Syncfusion
+description: Learn how to enable virtualization in the Angular File Manager for dynamically loading large folders in Details and Large Icons views without performance loss.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in Angular File Manager component
+# Virtualization in Angular File Manager
 
 File Manager's UI virtualization optimizes performance by dynamically loading only the visible files and directories in the viewport instead of rendering the entire collection at once. This significantly improves loading times and reduces memory consumption when handling large numbers of files and directories in both detailsView and largeIconsView.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular File Manager component | Syncfusion
-description:  Checkout and learn about Getting started with Angular File Manager component of Syncfusion Essential JS 2 and more details.
-platform: ej2-angular
+title: Getting Started with Angular File Manager | Syncfusion
+description: Learn how to get started with the Angular File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular File Manager component
+# Getting Started with Angular File Manager
 
 The File Manager component provides a graphical user interface for browsing, managing, and organizing files and folders. This section explains how to create a simple **File Manager** component and its basic usage.
 
