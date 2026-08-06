@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - Next.js Backend | Syncfusion.
-description: Integrate Syncfusion Angular Grid with routing and Next.js backend to perform CRUD operations seamlessly.
+title: Angular Grid Data Binding using Next.js Backend | Syncfusion
+description: Learn how to integrate Angular Data Grid with a Next.js backend to handle routing, remote data operations, and CRUD functionality efficiently.
 platform: ej2-angular
 control: grid
 keywords: custom data binding, next.js, remote data, crud, routing
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting the Syncfusion Angular Grid with Next.js backend
+# Next.js Backend Integration in Angular Data Grid 
 
 [Next.js](https://nextjs.org/) is a powerful Angular framework designed for building full-stack web applications. It includes built‑in features such as server‑side rendering, automatic code splitting, intuitive routing, and API routes, providing a solid foundation for developing modern, high‑performance applications.
 
@@ -103,7 +103,7 @@ export async function GET(request: NextRequest) {
 
 > Browsers enforce the same-origin policy, which blocks scripts from one origin (for example, the Angular application running at **http://localhost:4200**) from accessing resources on a different origin (such as a Next.js server at **http://localhost:3000**) unless the server explicitly allows it. By enabling the appropriate **CORS headers** on the Next.js backend, the Angular client can safely make API requests, perform CRUD operations, and communicate seamlessly across different ports or origins.
 
-## Connecting Angular Grid with Next.js
+## Connecting Syncfusion Angular Grid with Next.js
 
 The Angular Data Grid is a robust, high‑performance component built to efficiently display, manage, and manipulate large datasets. It provides advanced features such as sorting, filtering, and paging. Follow these steps to render the grid and integrate it with a Next.js backend.
 
@@ -144,7 +144,7 @@ After installation, the necessary CSS files are available in the (**../node_modu
 For this project, the "Material 3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
 
 
-### Step 3: Add Angular Grid component with Next.js
+### Step 3: Add Syncfusion Angular Grid component with Next.js
 
 The Angular Data Grid provides [custom data binding](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/remote-data#custom-binding), which enables seamless integration with external API services. With this feature, the grid can fetch data from a Next.js server and efficiently display health care details. It supports search, filter, sort, and pagination capabilities, making it easy to navigate and manage large datasets.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Scrolling | Syncfusion
-description: Angular Grid scrolling covers scroll behavior, dimension settings, responsive layouts, sticky headers, auto-scrolling, and dual-scrollbar configuration.
+title: Angular Grid Scrolling | Syncfusion
+description: Learn how to configure scrolling in Angular Data Grid, including scroll behavior, responsive layouts, sticky headers, auto-scrolling, and scrollbar settings.
 platform: ej2-angular
 control: Scrolling 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scrolling in Angular Grid Component
+# Scrolling in Angular Data Grid
 
 The scrolling feature in the Angular Grid component enables seamless navigation through content extending beyond the visible grid area. Scrollbars automatically appear when content exceeds the grid dimensions configured via the [height](https://ej2.syncfusion.com/angular/documentation/api/grid#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/grid#width) properties.
 

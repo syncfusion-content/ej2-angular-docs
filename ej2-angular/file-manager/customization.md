@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular File Manager component | Syncfusion
-description: Learn here all about Customization in Angular File Manager component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular File Manager | Syncfusion
+description: Learn how to customize the Angular File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular File Manager component
+# Customization in Angular File Manager
 
 The File Manager component provides extensive customization options to tailor its appearance and functionality to your specific requirements. This guide demonstrates how to customize various aspects of the File Manager to enhance user experience and meet your application needs.
 

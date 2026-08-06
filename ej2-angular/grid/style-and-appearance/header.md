@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Header Style | Syncfusion
-description: Angular Grid header style supports customizing header appearance, templates, and interactive elements such as icons and menus for column headers.
+title: Angular Grid Header Customization | Syncfusion
+description: Learn how to customize header styles in Angular Data Grid with header templates, icons, and interactive header elements.
 platform: ej2-angular
 control: Header 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header in Angular Grid component
+# Header Style in Angular Data Grid
 
 The appearance of the header elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the grid header, header cell, and header cell div element.
 

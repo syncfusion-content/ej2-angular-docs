@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Angular Grid - Filtering Style | Syncfusion
-description: Angular Grid filtering style customizes filter UI appearance and templates, including filter bars, menus, and Excel-like filtering components.
+title: Angular Grid Filtering Customization | Syncfusion
+description: Learn how to customize filtering styles in Angular Data Grid with filter bars, filter menus, Excel-like filtering, templates, and filter UI appearance.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering Customization in Angular Grid component
+# Filtering Style in Angular Data Grid
 
-Customize the appearance of filtering elements in the Angular Grid component using CSS. Below are examples for styling various filter bar elements, input fields, icons, dialog content, and Excel-style filter menus.
+Customize the appearance of filtering elements in the Syncfusion Angular Grid component using CSS. Below are examples for styling various filter bar elements, input fields, icons, dialog content, and Excel-style filter menus.
 
 ## Customize the filter bar cell element
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to in Angular Grid component | Syncfusion
-description: Learn here all about How to in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid How-To Guide | Syncfusion
+description: Learn how to customize and extend Angular Data Grid with practical examples for editing, sorting, exporting, data binding, column customization, and more.
 platform: ej2-angular
 control: How to 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to in Angular Grid component
+# How-To Examples in Angular Data Grid
 
 ## Refresh the Data Source
 

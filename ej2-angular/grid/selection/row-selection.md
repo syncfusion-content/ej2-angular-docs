@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Row selection | Syncfusion
-description: Angular Grid row selection explains single and multi-row selection modes, keyboard behaviors, and events to handle selection changes.
+title: Angular Grid Row Selection | Syncfusion
+description: Learn how to select single or multiple rows in Angular Data Grid with selection modes, keyboard interactions, selection APIs, and row selection events.
 platform: ej2-angular
 control: Row selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row Selection in Angular Grid Component
+# Row Selection in Angular Data Grid
 
 Row selection in the Grid component provides interactive selection of specific rows or ranges of rows within the grid. Row selection can be performed effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when highlighting, manipulating, or performing actions on specific rows within the grid.
 
@@ -557,15 +557,15 @@ export class AppComponent implements OnInit {
 
 ## Pass selected records to server using AJAX
 
-The Angular Grid allows selecting multiple or single records and sending them to the server using AJAX requests. This feature is useful for scenarios requiring processing or manipulation of selected data on the server side.
+The Syncfusion Angular Grid allows selecting multiple or single records and sending them to the server using AJAX requests. This feature is useful for scenarios requiring processing or manipulation of selected data on the server side.
 
-To pass selected records to the server using AJAX requests in the Angular Grid, follow these steps:
+To pass selected records to the server using AJAX requests in the Syncfusion Angular Grid, follow these steps:
 
 **Step 1:** Open Visual Studio and create an "Angular and ASP.NET Core" project named "SelectedRecord". To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
 **Step 2 :** Create a simple Angular Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation link.
 
-**Step 3:** In the Angular component HTML file (e.g., "app.component.html"), add a button to trigger the AJAX call and include the Angular Grid with necessary configurations. Handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button#click) event to retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method from the grid and send them to the server using AJAX.
+**Step 3:** In the Angular component HTML file (e.g., "app.component.html"), add a button to trigger the AJAX call and include the Syncfusion Angular Grid with necessary configurations. Handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button#click) event to retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method from the grid and send them to the server using AJAX.
 
 ```html
 <button ejs-button (click)="click($event)">Pass the selected records to controller</button>
@@ -809,15 +809,15 @@ The following screenshot shows passing of selected records to the server:
 
 ## Pass selected records to server using FETCH
 
-The Angular Grid allows selecting multiple or single records and sending them to the server using Fetch requests. This feature is useful for scenarios requiring processing or manipulation of selected data on the server side.
+The Syncfusion Angular Grid allows selecting multiple or single records and sending them to the server using Fetch requests. This feature is useful for scenarios requiring processing or manipulation of selected data on the server side.
 
-To pass selected records to the server using Fetch requests in the Angular Grid, follow these steps:
+To pass selected records to the server using Fetch requests in the Syncfusion Angular Grid, follow these steps:
 
 **Step 1:** Open Visual Studio and create an "Angular and ASP.NET Core" project named "SelectedRecord". To create an Angular and ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022) for detailed steps.
 
 **Step 2 :** Create a simple Angular Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation link.
 
-**Step 3:** In the Angular component HTML file (e.g., "app.component.html"), add a button to trigger the Fetch call and include the Angular Grid with necessary configurations. Handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button#click) event to retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method from the grid and send them to the server using Fetch.
+**Step 3:** In the Angular component HTML file (e.g., "app.component.html"), add a button to trigger the Fetch call and include the Syncfusion Angular Grid with necessary configurations. Handle the button [click](https://ej2.syncfusion.com/angular/documentation/api/button#click) event to retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getselectedrecords) method from the grid and send them to the server using Fetch.
 
 ```html
 <button ejs-button (click)="click($event)">Pass the selected records to controller</button>

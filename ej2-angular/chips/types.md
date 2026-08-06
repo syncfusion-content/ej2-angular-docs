@@ -37,7 +37,7 @@ Input Chips holds information in compact form. It allows users to convert their 
 
 ## Choice Chips
 
-Choice Chips allows users to select a single Chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#selection) property to `Single`.
+Choice Chips allows users to select a single Chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://ej2.syncfusion.com/angular/documentation/api/chips/#selection) property to `Single`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -55,7 +55,7 @@ Choice Chips allows users to select a single Chips from the set of ChipList/Chip
 
 ## Filter Chips
 
-Filter Chips allows you to select multiple chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#selection) property to `Multiple`.
+Filter Chips allows you to select multiple chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://ej2.syncfusion.com/angular/documentation/api/chips/#selection) property to `Multiple`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -91,7 +91,7 @@ The Action Chips triggers events like click or delete, which helps perform actio
 
 ### Deletable Chips
 
-Deletable Chips allows users to delete a Chips from ChipList/ChipCollection. It can be enabled by setting the [`enableDelete`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#enabledelete) property to `true`.
+Deletable Chips allows users to delete a Chips from ChipList/ChipCollection. It can be enabled by setting the [`enableDelete`](https://ej2.syncfusion.com/angular/documentation/api/chips/#enabledelete) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

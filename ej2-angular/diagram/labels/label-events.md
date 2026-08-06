@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Label Events in Angular Diagram component | Syncfusion®
-description: Learn about annotation events in Syncfusion Angular Diagram component including keyDown, keyUp, doubleClick, textEdit, and selectionChange events with examples.
+title: Label Events in Angular Diagram | Syncfusion®
+description: Subscribe to label events in the Syncfusion® Angular Diagram—keyDown, keyUp, doubleClick, textEdit, and selectionChange—to react to user input on annotations.
 platform: ej2-angular
 control: Label Events
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Handling Annotation Events in Diagram Component
+# Label Events in Angular Diagram
 
 Annotations in Angular Diagram components are text labels that can be added to nodes and connectors to provide additional information. When users interact with these annotations, various events are triggered that allow developers to customize behavior and respond to user actions.
 

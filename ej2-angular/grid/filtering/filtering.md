@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Filtering | Syncfusion
-description: Angular Grid filtering provides a comprehensive guide to available filter types, configuration, server filtering, and UI options for data refinement.
+title: Angular Grid Filtering | Syncfusion
+description: Learn how to use filtering in Angular Data Grid with filter types, server filtering, expression operators, and UI options for refined data results.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular Grid Component
+# Filtering in Angular Data Grid
 
 Filtering is a powerful feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component that enables selective viewing of data based on specific criteria. It allows narrowing down large datasets to focus on relevant information, thereby enhancing data analysis and decision-making.
 
@@ -207,7 +207,7 @@ The following example demonstrates diacritics filtering with the `ignoreAccent` 
 
 ## Perform ENUM column filtering
 
-The Angular Grid supports filtering enum-type data using the [FilterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filtertemplate) feature. This is particularly useful for filtering predefined values, such as categories or statuses.
+The Syncfusion Angular Grid supports filtering enum-type data using the [FilterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filtertemplate) feature. This is particularly useful for filtering predefined values, such as categories or statuses.
 
 To achieve this functionality:
 

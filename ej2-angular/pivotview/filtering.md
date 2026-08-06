@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in Angular Pivotview component | Syncfusion
-description: Learn here all about Filtering in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table filters members using label, value, and date filters with include or exclude modes at runtime.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD012 -->
 
-# Filtering in Angular Pivotview component
+# Filtering in Angular Pivot Table
 
 Filtering helps you focus on specific data by showing only the records you need in the Pivot Table. This allows you to analyze relevant information more effectively by including or excluding specific members through the user interface or programmatically.
 

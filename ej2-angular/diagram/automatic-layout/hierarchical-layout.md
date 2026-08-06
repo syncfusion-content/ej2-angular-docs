@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hierarchical tree layout in Angular Diagram component | Syncfusion®
-description: Learn how to create hierarchical tree layouts with multiple parent nodes in Syncfusion Angular Diagram component with data binding support.
+title: Hierarchical Layout in Angular Diagram | Syncfusion®
+description: Arrange nodes in a hierarchical tree layout in the Syncfusion® Angular Diagram, with support for multiple parents and either manual nodes or a data source.
 platform: ej2-angular
 control: Hierarchical tree layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hierarchical tree layout in Angular Diagram control
+# Hierarchical Layout in Angular Diagram
 
 The hierarchical tree layout arranges nodes in a tree-like structure where nodes can have multiple parent nodes, creating complex organizational relationships. Unlike traditional tree structures with single parent-child relationships, this layout supports scenarios such as matrix organizations, project dependencies, or any structure where entities report to multiple authorities. The layout automatically determines positioning without requiring a specified root node.
 

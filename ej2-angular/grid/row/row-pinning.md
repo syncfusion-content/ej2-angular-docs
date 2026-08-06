@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Row Pinning | Syncfusion
-description: Angular Grid row pinning supports fixing rows at the top and handling interactions such as paging, selection, filtering, sorting, CRUD operations.
+title: Angular Grid Row Pinning | Syncfusion
+description: Learn how to pin rows in Angular Data Grid using Syncfusion. Keep important rows fixed at the top while supporting data operations.
 platform: ej2-angular
 control: Row pinning 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row Pinning in Angular Grid Component
+# Row Pinning in Angular Data Grid
 
 The Syncfusion <sup style="font-size:70%">&reg;</sup> Angular Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful for keeping specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 

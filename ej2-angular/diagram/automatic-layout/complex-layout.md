@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Complex Hierarchical Tree Layout in Angular Diagram | Syncfusion®
-description: Learn to implement complex hierarchical tree layouts with multiple parents in Angular Diagram, including line distribution and routing.
+title: Complex Layout in Angular Diagram | Syncfusion®
+description: Use the complex hierarchical tree layout in the Syncfusion® Angular Diagram to model entities with multiple parents and avoid overlapping connectors.
 platform: ej2-angular
 control: Complex hierarchical tree layout
 documentation: ug
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Complex hierarchical tree layout in Angular Diagram control
+# Complex Layout in Angular Diagram
 
 Complex hierarchical tree layout arranges nodes in a tree-like structure where child nodes can have multiple parent nodes, creating interconnected relationships beyond traditional single-parent hierarchies. This layout type is ideal for organizational charts with dotted-line relationships, project dependencies, or any structure where entities report to multiple authorities. This layout extends the standard hierarchical tree layout to support these complex relationships.
 

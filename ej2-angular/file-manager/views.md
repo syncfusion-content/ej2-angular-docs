@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Views in Angular File Manager component | Syncfusion
-description: Learn how to use and customize different view modes (LargeIcons and Details) in the Angular File Manager component.
+title: Views in Angular File Manager | Syncfusion
+description: Learn how to switch between Large Icons and Details views in the Angular File Manager for flexible file browsing.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Views in Angular File Manager Component
+# Views in Angular File Manager
 
 The view section in the File Manager displays files and folders for users to browse and manage. The File Manager component offers two distinct view modes to present your content, each optimized for different use cases:
 

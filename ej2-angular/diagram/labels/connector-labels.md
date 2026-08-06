@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Connector Labels in Angular Diagram component | Syncfusion®
-description: Learn here all about Labels in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Connector Labels in Angular Diagram | Syncfusion®
+description: Place and align text labels along connector paths in the Syncfusion® Angular Diagram using offset (0–1), segment angle, displacement, and drag limits.
 platform: ej2-angular
 control: Connector Labels
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connector Annotations in Angular Diagram Component
+# Connector Labels in Angular Diagram
 
 Connector annotations are text labels that can be positioned along connector paths to provide descriptive information or context. These annotations offer flexible positioning and styling options to enhance diagram readability and communication.
 

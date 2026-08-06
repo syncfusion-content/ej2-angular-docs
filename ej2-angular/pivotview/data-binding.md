@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data binding in Angular Pivotview component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table binds to JSON, CSV, and remote data sources like OData via DataManager and REST endpoints.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Data binding in Angular Pivotview component
+# Data Binding in Angular Pivot Table
 
 To get start quickly with Data Binding, you can check on this video:
 

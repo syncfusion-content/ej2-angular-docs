@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Column Resizing | Syncfusion
-description: Angular Grid column resizing enables manual and automatic width adjustments, multiple resize modes, and control over user or programmatic changes.
+title: Angular Grid Column Resizing | Syncfusion
+description: Learn how to resize columns in Angular Data Grid with manual and automatic width adjustments, resize modes, and programmatic resizing options.
 platform: ej2-angular
 control: Column resizing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column resizing in Angular Grid Component
+# Column Resizing in Angular Data Grid
 
 Column resizing in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component allows adjusting column widths dynamically to fit content and improve data readability. This feature provides flexibility in customizing the grid layout based on data requirements and screen size.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Persisting Data in Server | Syncfusion
-description: Angular Grid persisting data in server supports sending CRUD requests, handling server responses, and synchronizing grid updates using various data adaptors.
+title: Angular Grid Server Data Persistence | Syncfusion
+description: Learn how to persist Angular Data Grid changes to a server, send CRUD requests, handle server responses, and synchronize data using adaptors.
 platform: ej2-angular
 control: Persisting data in server 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Persisting Data in Server in Angular Grid Component
+# Server Data Persistence in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component allows data edited within the grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, Delete) operations within the grid are handled by the [DataManager](../../data), which can bind server-side data and send updates to the server. This capability is Essential<sup style="font-size:70%">&reg;</sup> for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
 

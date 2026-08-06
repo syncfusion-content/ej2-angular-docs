@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Save and Load Report through the Toolbar in Angular | Syncfusion
-description: Learn how to save and load reports through custom toolbar options in the Syncfusion Angular Pivotview component.
+title: Save and Load in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table saves and restores the dataSourceSettings report through custom toolbar export and import actions.
 control: Tool bar
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Export and import reports as JSON through custom toolbar options
+# Save and Load in Angular Pivot Table
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component allows users to save and restore report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings)) through custom toolbar options. This functionality simplifies report management by allowing users to export settings as a JSON file and import them later to restore the Pivot Table configuration.
 

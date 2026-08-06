@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - Excel Export Options | Syncfusion
-description: Angular Grid Excel export supports custom content, record/column selection, styles, themes, grouping, and advanced Excel output customization.
+title: Angular Grid Excel Export Options | Syncfusion
+description: Learn how to export Angular Data Grid into Excel with custom content, record and column selection, styles, themes, grouping, and advanced export options.
 control: Excel export options 
 platform: ej2-angular
 documentation: ug
@@ -144,11 +144,11 @@ Stacked header column visibility control enables customizing the data presented 
 
 To implement the show or hide columns feature during Excel export in the Grid, follow these steps:
 
-1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event of the Angular Grid.
+1. Handle the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event of the Syncfusion Angular Grid.
 
 2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column#visible) property of the column to `true` or `false`.
 
-3. Export the Angular Grid to Excel document using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/grid#csvexport)  method.
+3. Export the Syncfusion Angular Grid to Excel document using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/grid#csvexport)  method.
 
 4. Handle the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#excelexportcomplete) event to restore the column visibility to its original state.
 

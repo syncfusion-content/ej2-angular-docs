@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Add custom item to context menu in Angular File Manager | Syncfusion
-description: Learn how to add, configure, and handle custom context menu items in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+description: Learn how to add a custom item to the context menu in the Angular File Manager with custom icons and click handlers.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding custom item to context menu in Angular File Manager component
+# How to add custom item to context menu in Angular File Manager
 
 The File Manager component allows you to customize the default context menu by adding new menu items, controlling visibility, and handling click events. This customization is especially useful when you need to implement application-specific actions in the File Manager interface.
 

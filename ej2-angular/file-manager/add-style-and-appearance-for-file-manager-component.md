@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Style and Appearance in Angular File Manager | Syncfusion
-description: Learn here all about How to add style and appearance in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Style and Appearance in Angular File Manager | Syncfusion
+description: Learn how to customize the appearance of the Angular File Manager by overriding CSS selectors for the navigation pane, layout, and toolbar.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize style and appearance in Angular File Manager
+# Style and Appearance in Angular File Manager
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

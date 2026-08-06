@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - Dapper | Syncfusion
-description: Bind SQL Server data to Syncfusion Angular Grid using Dapper with complete CRUD and data operations using UrlAdaptor and CustomAdaptor patterns.
+title: Angular Grid Bind Data using SQL Dapper Server | Syncfusion
+description: Learn how to connect SQL Server data to Angular Data Grid using Dapper, perform CRUD operations, and implement UrlAdaptor and CustomAdaptor patterns.
 platform: ej2-angular
 control: grid
 keywords: adaptors, customadaptor, urladaptor, dapper, remotedata  
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL Server to Angular Grid Using Dapper
+# SQL Server Dapper Integration in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from SQL Server using the lightweight **Dapper** micro‑ORM. This modern approach provides a simpler, more direct alternative where raw SQL control is preferred.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Column Reorder | Syncfusion
-description: Angular Grid column reorder enables drag‑and‑drop movement, configurable restrictions, and events to track and persist updated column order.
+title: Angular Grid Column Reorder | Syncfusion
+description: Learn how to reorder columns in Angular Data Grid using drag-and-drop, configure reorder restrictions, handle reorder events, and persist column order.
 platform: ej2-angular
 control: Column reorder 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Reorder in Angular Grid component
+# Column Reorder in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component allows reordering columns by drag and drop of a particular column header from one position to another position within the grid. This feature can be enabled by injecting the `ReorderService` to the providers array.
 

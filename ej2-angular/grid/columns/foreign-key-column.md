@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Foreign Key Column | Syncfusion
-description: Angular Grid foreign key column supports mapping related data and binding local or remote sources to display associated values in grid cells. 
+title: Angular Grid Foreign Key Column | Syncfusion
+description: Learn how to use foreign key columns in Angular Data Grid to map related data, display associated values, and bind local or remote data sources.
 platform: ej2-angular
 control: Foreign key column 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Foreign Key Column in Angular Grid Component
+# Foreign Key Column in Angular Data Grid
 
 The foreign key column in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component displays related data from a foreign key data source. This feature enables representation of foreign key relationships between data sources, displaying meaningful values instead of raw key identifiers.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Columns | Syncfusion
-description: Angular Grid columns provides a complete guide to defining columns, types, widths, templates, and behaviors to model tabular data effectively.
+title: Angular Grid Columns | Syncfusion
+description: Learn how to define and configure columns in Angular Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
 platform: ej2-angular
 control: Columns 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Columns in Angular Grid Component
+# Columns in Angular Data Grid
 
 In [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid), columns are the fundamental building blocks that display data from a data source. Each column maps to a specific field in the data source and is responsible for rendering values in the required format. For example, a dataset containing customer details such as "ID", "Name", "Email", and "Purchase Date" will present each field as an individual column in the Grid.
 

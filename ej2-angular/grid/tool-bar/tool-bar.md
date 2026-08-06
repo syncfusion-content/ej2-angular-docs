@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Toolbar | Syncfusion
-description: Angular Grid toolbar provides default buttons, configuration options, and examples for common operations like adding records, exporting data, and searching.
+title: Angular Grid Toolbar | Syncfusion
+description: Learn how to use the toolbar in Angular Data Grid with built-in actions, custom toolbar items, data export, search, and editing operations.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar in Angular Grid Component
+# Toolbar in Angular Data Grid
 
 The toolbar in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing users to generate downloadable files in formats like Excel, CSV, or PDF.
 

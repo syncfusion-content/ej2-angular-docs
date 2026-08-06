@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Group and Caption Aggregate | Syncfusion
-description: Angular Grid group and caption aggregate covers computing aggregates for groups, displaying captions, and customizing group summaries and formats.
+title: Angular Grid Group and Caption Aggregates | Syncfusion
+description: Learn how to compute and display group and caption aggregates in Angular Data Grid, including group summaries, captions, and aggregate formatting.
 platform: ej2-angular
 control: Group and caption aggregate 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Group and Caption Aggregate in Angular Grid Component
+# Group and Caption Aggregates in Angular Data Grid
 
 Group footer and caption aggregates display summary values calculated from the records within each group.
 

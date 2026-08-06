@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Check box selection | Syncfusion
-description: Angular Grid check box selection explains enabling checkbox columns, select-all behavior, and integration with selection APIs to manage multi-select scenarios.
+title: Angular Grid Checkbox Selection | Syncfusion
+description: Learn how to enable checkbox selection in Angular Data Grid with checkbox columns, select-all functionality, selection APIs, and multiple selection support.
 platform: ej2-angular
 control: Check box selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check box Selection in Angular Grid Component
+# Checkbox Selection in Angular Data Grid
 
 Checkbox selection provides functionality to select multiple grid records through checkboxes in each row. This selection method allows efficient bulk operations on selected records within the grid.
 

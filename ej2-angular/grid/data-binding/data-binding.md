@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Data Binding | Syncfusion
-description: Data binding in Angular Grid connects component state, local arrays, or remote sources to grid rows, enabling dynamic updates and controlled data flow.
+title: Angular Grid Data Binding | Syncfusion
+description: Learn how to bind local and remote data sources in Angular Data Grid, enable dynamic updates, and manage data flow efficiently.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Binding in Angular Grid Component
+# Data Binding in Angular Data Grid
 
 Data binding is a fundamental technique that empowers the Grid component to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
@@ -184,11 +184,11 @@ this.gridInstance.changeDataSource(employeeData);
 
 ## Prevent converting local time zone format for date column
 
-By default, the Angular Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, it may be necessary to display the original date as received from the server without timezone conversion.
+By default, the Syncfusion Angular Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, it may be necessary to display the original date as received from the server without timezone conversion.
 
 To prevent timezone conversion for date columns, use the `serverTimezoneOffset` property from `DataUtil`. Setting this property to "0" ensures dates remain in the original format received from the server without conversion to the local timezone.
 
-The following example demonstrates preventing local time zone conversion for date columns in the Angular Grid using the `DataUtil.serverTimezoneOffset` property:
+The following example demonstrates preventing local time zone conversion for date columns in the Syncfusion Angular Grid using the `DataUtil.serverTimezoneOffset` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

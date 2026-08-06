@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtualization in Angular Diagram component | Syncfusion®
-description: Learn here all about Virtualization in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Virtualization in Angular Diagram | Syncfusion®
+description: Render only the nodes and connectors visible in the viewport in the Syncfusion® Angular Diagram to keep large diagrams responsive during scroll, pan, and zoom.
 platform: ej2-angular
 control: Virtualization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in Angular Diagram Component
+# Virtualization in Angular Diagram
 
 Virtualization is a performance optimization technique that significantly improves diagram rendering and interaction speed, particularly when working with large-scale diagrams containing hundreds or thousands of nodes and connectors.
 

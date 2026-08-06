@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Pivotview component | Syncfusion
-description: Learn here all about Globalization and localization in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Globalization and Localization in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table localizes culture, date, number, and currency formats with locale and L10n resources.
 platform: ej2-angular
 control: Globalization and localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization and localization in Angular Pivotview component
+# Globalization and Localization in Angular Pivot Table
 
 The Pivot Table helps users view and interact with data in their own language and regional format. This means users from different countries can easily read and understand the data because dates, numbers, and words are shown in a way that feels familiar to them.
 

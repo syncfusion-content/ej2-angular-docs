@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context Menu in Angular Diagram Component | Syncfusion®
-description: Learn here all about Context menu in Syncfusion® Angular Diagram Component of Syncfusion Essential® JS 2 and more.
+title: Context Menu in Angular Diagram | Syncfusion®
+description: Customize the right-click context menu in the Syncfusion® Angular Diagram with built-in commands, custom items, nested submenus, and item-level click handling.
 platform: ej2-angular
 control: Context menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context Menu in Angular Diagram Component
+# Context Menu in Angular Diagram
 
 <!-- markdownlint-disable MD010 -->
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Diagram Component | Syncfusion®
-description: Learn here all about Data binding in Syncfusion® Angular Diagram Component of Syncfusion Essential® JS 2 and more.
+title: Data Binding in Angular Diagram | Syncfusion®
+description: Populate nodes and connectors in the Syncfusion® Angular Diagram from local JSON or remote DataManager sources, and synchronize CRUD operations with the underlying data.
 platform: ej2-angular
 control: Data Binding
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Binding in Angular Diagram Component
+# Data Binding in Angular Diagram
 
 The Angular Diagram component supports data binding to populate nodes and connectors from external data sources. This feature enables dynamic diagram creation based on structured data, making it ideal for visualizing organizational charts, flowcharts, and hierarchical data structures.
 

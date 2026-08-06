@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind and perform CRUD action with GraphQLAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using GraphQLAdaptor in Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid Bind Data with GraphQLAdaptor | Syncfusion
+description: Learn how to use GraphQLAdaptor in Angular Data Grid to bind GraphQL data, execute queries and mutations, and perform CRUD operations.
 platform: ej2-angular
 control: grid
 keywords: Adaptors, graphqladaptor, graphql adaptor, remotedata 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting GraphQL Service with Angular Grid Component
+# GraphQL Data Binding in Angular Data Grid
 
 GraphQL is a powerful query language for APIs, designed to provide a more efficient alternative to traditional REST APIs. GraphQL allows precise data fetching, reducing over-fetching and under-fetching of data. GraphQL provides a flexible and expressive syntax for querying, enabling clients to request only the specific data they require.
 
@@ -19,7 +19,7 @@ This section describes a step-by-step process for retrieving data from GraphQL s
 
 ## Configure GraphQL Server
 
-To configure a GraphQL server with Angular Grid, follow these steps:
+To configure a GraphQL server with Syncfusion Angular Grid, follow these steps:
 
 **Step 1: Create Service for GraphQL**
 

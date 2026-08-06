@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Node Interaction in Angular Diagram component | Syncfusion®
-description: Learn about interactive node operations in Syncfusion Angular Diagram component including selection, dragging, resizing, and rotation.
+title: Nodes Interaction in Angular Diagram | Syncfusion®
+description: Select, drag, resize, rotate, and flip nodes in the Syncfusion® Angular Diagram through mouse interactions and programmatic methods, with hooks for selection and drag events.
 platform: ej2-angular
 control: Nodes interaction 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node Interaction in Angular Diagram Component
+# Nodes Interaction in Angular Diagram
 
 The Angular Diagram component provides comprehensive support for interactive node operations, enabling users to select, drag, resize, rotate, and flip nodes through both mouse interactions and programmatic methods. These interactions form the foundation of dynamic diagram editing capabilities.
 

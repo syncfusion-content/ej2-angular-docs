@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Flowchart layout in Angular Diagram component | Syncfusion®
-description: Learn here all about Flowchart layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Flowchart Layout in Angular Diagram | Syncfusion®
+description: Render flowcharts in the Syncfusion® Angular Diagram with built-in shapes for processes, decisions, data, and connectors from a data source.
 platform: ej2-angular
 control: Flowchart layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Flowchart layout in Angular Diagram control
+# Flowchart Layout in Angular Diagram
 
 The flowchart layout provides a visual representation of processes, workflows, systems, or algorithms in a diagrammatic format. It uses various symbols to depict different actions, with arrows connecting these symbols to indicate the flow or direction of the process. Flowcharts are powerful tools for illustrating step-by-step sequences, making complex processes easier to understand and communicate.
 

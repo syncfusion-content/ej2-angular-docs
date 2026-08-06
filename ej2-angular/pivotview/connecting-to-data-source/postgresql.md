@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "PostgreSQL Data Binding in Angular Pivotview component | Syncfusion"
+title: "PostgreSQL in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
-description: "Learn how to bind data from a PostgreSQL database in the Syncfusion Angular Pivot Table of Syncfusion Essential JS 2 and more."
+description: Learn how the Angular Pivot Table binds to a PostgreSQL database through an ASP.NET Core Web API and the Npgsql library.
 ---
 
-# PostgreSQL in EJ2 Angular Pivotview Component
+# PostgreSQL in Angular Pivot Table
 
 This guide explains how to retrieve data from a PostgreSQL database using the [Microsoft Npgsql](https://www.npgsql.org/doc/index.html) library and bind it to the Pivot Table through a Web API controller.
 

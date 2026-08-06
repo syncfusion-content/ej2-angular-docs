@@ -1,14 +1,14 @@
 ---
 layout: post
-title: File system provider in Angular File Manager component | Syncfusion
-description: Learn here all about File system provider in Angular File Manager component of Syncfusion Essential JS 2 and more.
+title: File System Provider in Angular File Manager | Syncfusion
+description: Learn how to connect the Angular File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File system provider in Angular File Manager component
+# File System Provider in Angular File Manager
 
 The file system provider allows the File Manager component to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 

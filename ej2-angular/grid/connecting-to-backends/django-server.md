@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid + SQL Server + Django REST Framework | Syncfusion
-description: Integrate Syncfusion Angular Grid with Microsoft SQL Server and Django REST Framework to perform seamless CRUD operations.
+title: Angular Grid with Django REST Framework | Syncfusion
+description: Learn how to integrate Angular Data Grid with SQL Server and Django REST Framework to process POST requests and perform seamless CRUD operations.
 platform: ej2-angular
 control: grid
 keywords: adaptors, urladaptor, mssql, remotedata 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular Grid with Django REST Binding POST Request Data
+# Django REST Framework Integration in Angular Data Grid
 
 The Syncfusion [Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) combined with Django REST Framework and Microsoft SQL Server provides a robust, scalable data‑driven application architecture. The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) delivers a rich, high‑performance client‑side experience with advanced features like paging, sorting, filtering, searching and CRUD operations.
 

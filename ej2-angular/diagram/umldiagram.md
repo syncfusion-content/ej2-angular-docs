@@ -1,14 +1,14 @@
 ---
 layout: post
-title: UML Diagrams in Angular Diagram component | Syncfusion®
-description: Learn how to create and customize UML Class and Activity diagrams in Syncfusion® Angular Diagram component with comprehensive examples and API references.
+title: UML Diagrams in Angular Diagram | Syncfusion®
+description: Model UML Class and Activity diagrams in the Syncfusion® Angular Diagram with classifier shapes, attributes, methods, and relationships aligned to UML notation.
 platform: ej2-angular
 control: Umldiagram 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# UML Diagrams in Angular Diagram Component
+# UML Diagrams in Angular Diagram
 
 This guide demonstrates how to create and customize UML (Unified Modeling Language) diagrams using the Syncfusion Angular Diagram component. You'll learn to build UML Class diagrams for object-oriented system modeling and UML Activity diagrams for workflow visualization.
 

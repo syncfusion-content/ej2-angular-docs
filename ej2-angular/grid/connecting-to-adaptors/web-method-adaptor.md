@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid Bind Data with WebMethodAdaptor | Syncfusion
+description: Learn how to use WebMethodAdaptor in Angular Data Grid to bind remote data, execute CRUD operations, and integrate web methods efficiently.
 platform: ej2-angular
 control: grid
 keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebMethodAdaptor in Angular Grid Component
+# Remote Data Binding with REST API using WebMethod in Angular Data Grid
 
-The [WebMethodAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#webmethod-adaptor) in the Angular Grid facilitates seamless data binding from remote services using web methods. This adaptor provides efficient communication between client-side applications and server endpoints by encapsulating query parameters within a structured **value** object. Similar to the URL adaptor, the WebMethodAdaptor transmits various DataManager properties including **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries within this **value** container.
+The [WebMethodAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#webmethod-adaptor) in the Syncfusion Angular Grid facilitates seamless data binding from remote services using web methods. This adaptor provides efficient communication between client-side applications and server endpoints by encapsulating query parameters within a structured **value** object. Similar to the URL adaptor, the WebMethodAdaptor transmits various DataManager properties including **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries within this **value** container.
 
 ![WebMethodAdaptor value object structure showing encapsulated query parameters](../images/web-method-adaptor-value.png)
 
@@ -19,7 +19,7 @@ This section provides comprehensive step-by-step guidance for retrieving data us
 
 ## Creating an API service
 
-To configure a server for use with the Angular Grid, follow these steps:
+To configure a server for use with the Syncfusion Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -156,7 +156,7 @@ After running the application, verify that the server-side API controller succes
 
 ![WebMethodAdaptor data response showing JSON array format](../images/url-adaptor-data.jpeg)
 
-## Connecting Angular Grid to an API service
+## Connecting Syncfusion Angular Grid to an API service
 
 To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -193,7 +193,7 @@ export class AppModule { }
 
 **3. Adding CSS Reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Angular components:
+Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular components:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
@@ -676,7 +676,7 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-The Angular Grid Component seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
+The Syncfusion Angular Grid Component seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: [insertUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_InsertUrl), [removeUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_RemoveUrl), [updateUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_UpdateUrl), [crudUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_CrudUrl), and [batchUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DataManager.html#Syncfusion_EJ2_DataManager_BatchUrl). These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 

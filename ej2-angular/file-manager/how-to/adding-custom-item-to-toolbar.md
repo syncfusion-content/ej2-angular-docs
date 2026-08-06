@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adding custom item in Angular File Manager component | Syncfusion
-description: Learn how to add, customize, and implement custom toolbar items in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Add a custom item to the toolbar in Angular File Manager | Syncfusion
+description: Learn how to add a custom item to the toolbar in the Angular File Manager to extend built-in actions with custom controls.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding custom item to toolbar in Angular File Manager component
+# How to add a custom item to the toolbar in Angular File Manager
 
 The File Manager component allows you to customize the toolbar by modifying existing items or adding new custom items to enhance functionality according to your application requirements.
 

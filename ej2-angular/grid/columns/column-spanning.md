@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Column Spanning | Syncfusion
-description: Angular Grid column spanning supports merging header or cell columns, configuration for colspan behavior, and customization for complex multi-column layouts.
+title: Angular Grid Column Spanning | Syncfusion
+description: Learn how to merge cells using column spanning in Angular Data Grid, configure colspan behavior, and build complex multi-column layouts.
 platform: ej2-angular
 control: Column spanning 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Spanning in Angular Grid Component
+# Column Spanning in Angular Data Grid
 
 The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows adjacent cells to be merged horizontally, creating a more informative and visually appealing layout. By defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs#colspan) attribute within the [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event, cells can be spanned and the appearance of the Grid can be customized effectively.
 

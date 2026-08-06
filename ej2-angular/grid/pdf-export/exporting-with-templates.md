@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Exporting templates | Syncfusion
-description: Angular Grid PDF exporting with templates describes using templates to customize PDF layout, headers, and cell formatting when exporting grid data.
+title: Angular Grid PDF Export Templates | Syncfusion
+description: Learn how to export Angular Data Grid into PDF using templates, including column, detail, and caption templates with custom formatting, images, and links.
 platform: ej2-angular
 control: Exporting grid with templates
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting with Templates in Angular Grid Control
+# PDF Export Templates in Angular Data Grid
 
 The Angular Grid component allows exporting column, detail, and caption templates to PDF documents. Exported templates can include images, hyperlinks, and customized text formatting.
 

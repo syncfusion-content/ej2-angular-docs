@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Phase in Angular Diagram component | Syncfusion®
-description: Learn here all about Swim lane in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Phase in Angular Diagram | Syncfusion®
+description: Split swimlane lanes into phases in the Syncfusion® Angular Diagram to represent workflow stages and milestones, with runtime add/remove and appearance customization.
 platform: ej2-angular
 control: Phase
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Phase in Angular Diagram Component
+# Phase in Angular Diagram
 
 ## Overview
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Loading Angular Diagram from PostgreSQL database | Syncfusion®
-description: Learn how to fetch organizational data from PostgreSQL and bind it to the Syncfusion Angular Diagram using DataManager and a Node.js/Express backend.
+title: PostgreSQL in Angular Diagram | Syncfusion®
+description: Bind PostgreSQL data to the Syncfusion® Angular Diagram via a Node.js/Express REST API and DataManager to render an organizational chart.
 control: Diagram 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Loading Angular Diagram from PostgreSQL database
+# PostgreSQL in Angular Diagram
 
 The Syncfusion® Angular Diagram component allows visualization of organizational chart layout using data from a PostgreSQL database through a REST API. This guide explains how to set up the PostgreSQL database, create a Node.js backend service, and link the data to the Angular Diagram component to display an organizational chart layout.
 

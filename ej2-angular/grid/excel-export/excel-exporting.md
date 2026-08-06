@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - Excel Exporting | Syncfusion
-description: Angular Grid enables Excel export of grid data, creating workbooks and downloadable spreadsheets with customizable export settings.
+title: Angular Grid Excel Export | Syncfusion
+description: Learn how to export Angular Data Grid data to Excel, create downloadable workbooks, and customize export settings for spreadsheets.
 platform: ej2-angular
 control: Excel exporting 
 documentation: ug
@@ -316,7 +316,7 @@ The following example demonstrates exporting hierarchical grid to Excel document
 
 ### Format the child grid columns before exporting
 
-The Angular Grid allows customization of the child Grid's Excel export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetaildatabound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the Excel document.
+The Syncfusion Angular Grid allows customization of the child Grid's Excel export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#exportdetaildatabound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the Excel document.
 
 In the following example, the `exportDetailDataBound` event is used to modify the "Order Date" column of the child Grid. By setting the column's [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column#format) property, the date values are formatted as `dd/MM/yyyy` when exported to Excel document:
 
@@ -374,7 +374,7 @@ In the following example, the [toolbarClick](https://ej2.syncfusion.com/angular/
 
 ## Pass additional parameters to the server when exporting
 
-Passing additional parameters to the server when exporting data in the Angular Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
+Passing additional parameters to the server when exporting data in the Syncfusion Angular Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
 
 This can be achieved by utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid#query) property and the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event. Within the `query` property, the `addParams` method can be invoked to add parameters to the request.
 

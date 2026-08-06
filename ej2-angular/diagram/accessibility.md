@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Diagram Component | Syncfusion®
-description: Learn here all about Accessibility in Syncfusion® Angular Diagram Component of Syncfusion Essential® JS 2 and more.
+title: Accessibility in Angular Diagram | Syncfusion®
+description: Review WAI-ARIA, screen reader, color contrast, and keyboard navigation support in the Syncfusion® Angular Diagram for accessible diagram editing.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Diagram Component
+# Accessibility in Angular Diagram
 
 The Diagram component provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg) specifications through attributes like `aria-label`, providing information to assistive technologies such as screen readers.
 

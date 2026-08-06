@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Node Events in Angular Diagram component | Syncfusion®
-description: Learn about node interaction events in Syncfusion Angular Diagram including click, selection, position, size, rotate, property and collection events.
+title: Nodes Events in Angular Diagram | Syncfusion®
+description: Handle node events in the Syncfusion® Angular Diagram, including click, selection-change, position, size, rotation, and property-change events for custom interaction logic.
 platform: ej2-angular
 control: Events of node
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node Interaction Events in Angular Diagram Component
+# Nodes Events in Angular Diagram
 
 The Angular Diagram component provides comprehensive event support for node interactions, allowing developers to respond to user actions and customize behavior during various interaction scenarios. These events are triggered when users interact with nodes through clicking, dragging, resizing, rotating, and other operations.
 

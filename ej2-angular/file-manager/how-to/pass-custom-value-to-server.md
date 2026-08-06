@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom server values in Angular File Manager component | Syncfusion
-description: Learn here all about How to Pass custom value to server in Angular File Manager component of Syncfusion Essential JS 2 and more.
+title: Pass a custom value to the server in Angular File Manager | Syncfusion
+description: Learn how to pass a custom value to the server in the Angular File Manager for authentication, logging, or role-based access on each request.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pass custom values to server in Angular File Manager component
+# How to pass a custom value to the server in Angular File Manager
 
 The [Angular File Manager](https://www.syncfusion.com/angular-components/angular-file-manager) component allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implement these features using the [`beforeSend`](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforesend), [`beforeDownload`](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforedownload) and [`beforeImageLoad`](https://ej2.syncfusion.com/angular/documentation/api/file-manager#beforeimageload) events with the [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
 

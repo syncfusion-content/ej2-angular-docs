@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Swim lane in Angular Diagram component | Syncfusion®
-description: Learn here all about Swim lane in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Swimlane in Angular Diagram | Syncfusion®
+description: Model cross-functional business processes in the Syncfusion® Angular Diagram using swimlanes with horizontal or vertical orientation, headers, and stacked lanes.
 platform: ej2-angular
 control: Swim lane 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Swim lane in Angular Diagram Component
+# Swimlane in Angular Diagram
 
 Swimlanes are specialized diagram nodes that visualize business processes by organizing activities into distinct lanes or sections. Each lane typically represents a department, role, or responsibility area, making it easy to understand who is responsible for each step in a process. Swimlanes are particularly useful for workflow documentation, process mapping, and cross-functional process analysis.
 

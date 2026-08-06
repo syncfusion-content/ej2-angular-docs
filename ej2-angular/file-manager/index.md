@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular File Manager component | Syncfusion
-description: Learn about the Index feature in the Angular File Manager component of Essential JS 2, covering usage, functionality, and key benefits.
+title: About Syncfusion Angular File Manager Component | Syncfusion
+description: Learn about the Angular File Manager, its key capabilities, and the common scenarios it supports for building modern file management apps.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular File Manager component
+# About Syncfusion Angular File Manager Component.
 
 The **File Manager** is a graphical user interface component for managing the file system that allows the users to perform most common file operation like accessing, editing, and sorting the files and folders.
 Also, this component has easy navigation functionality for browsing the folders to select a file or folder from the file system.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Custom Toolbar | Syncfusion
-description: Angular Grid toolbar items support built-in and custom actions, layout customization, and event handling for an adaptable and effective toolbar.
+title: Angular Grid Custom Toolbar | Syncfusion
+description: Learn how to create a custom toolbar in Angular Data Grid with templates, custom components, interactive controls, and custom toolbar actions.
 platform: ej2-angular
 control: Custom Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom toolbar in Angular Grid Component
+# Custom Toolbar in Angular Data Grid
 
 Custom toolbar in [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables the creation of a customized toolbar layout and functionality to match specific application requirements. This is achieved by utilizing the [toolbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbartemplate) property, which provides comprehensive customization options for the toolbar layout and styling. Define a custom template for the toolbar and handle the actions of the toolbar items in the [clicked](https://ej2.syncfusion.com/angular/documentation/api/toolbar/index-default#clicked) event.
 
@@ -53,7 +53,7 @@ The following example demonstrates rendering an image in the toolbar using `ng-t
 
 ## Render DropDownList in custom toolbar
 
-Render DropDownList in custom toolbar in Angular Grid enables extending the custom toolbar by incorporating a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component, allowing various actions to be performed within the grid based on selections.
+Render DropDownList in custom toolbar in Syncfusion Angular Grid enables extending the custom toolbar by incorporating a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component, allowing various actions to be performed within the grid based on selections.
 
 Implement this using `ng-template`. In the example below, the `DropDownList` component is included in the custom toolbar. Its [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event is bound to an `onChange` method.
 
@@ -73,7 +73,7 @@ In the `onChange` method, the text of the selected item is checked to determine 
 
 ## Render a component or element using the toolbar template
 
-Use `ng-template` in the Angular Grid to add custom components or elements—such as [Button](https://ej2.syncfusion.com/angular/documentation/button/getting-started), input fields, or icons—to the toolbar. This offers flexibility for advanced layouts and direct interactions.
+Use `ng-template` in the Syncfusion Angular Grid to add custom components or elements—such as [Button](https://ej2.syncfusion.com/angular/documentation/button/getting-started), input fields, or icons—to the toolbar. This offers flexibility for advanced layouts and direct interactions.
 
 To render custom components or elements within the toolbar, use the `toolbarTemplate` property. This allows the inclusion of other components, such as a `Button`, and enables specific grid actions based on the button click. For example, when the `ExcelExport` button is clicked, the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid#excelexport) method is called to export the grid to `Excel`. Similarly, when the `PdfExport` button is clicked, the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method is called to export the grid to PDF format. Likewise, when the `Print` button is clicked, the [print](https://ej2.syncfusion.com/angular/documentation/api/grid#print) method is triggered to print the grid.
 

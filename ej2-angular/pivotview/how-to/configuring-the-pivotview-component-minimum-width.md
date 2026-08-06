@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configure minimum width in Angular Pivot Table component | Syncfusion
-description: Learn how to configure the minimum width in the Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
+title: How to Configure the Minimum Width in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to configure the minimum width in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Configuring the minimum width in the Pivot Table component
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Configuring the minimum width in the Angular Pivot Table component
+# How to Configure the Minimum Width in Angular Pivot Table
 
 The Angular Pivot Table component provides the `minWidth` property to define the minimum width threshold for the component. This configuration ensures the pivot table maintains optimal usability and prevents layout issues when the container size decreases below the specified minimum width value.
 

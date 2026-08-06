@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editing in Angular Pivotview component | Syncfusion
-description: Learn here all about Editing in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Editing in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table lets users add, update, and delete raw data in value cells via the editSettings drill-through grid.
 platform: ej2-angular
 control: Editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editing in Angular Pivotview component
+# Editing in Angular Pivot Table
 
 > This feature is applicable only for the relational data source.
 

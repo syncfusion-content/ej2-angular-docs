@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable or Disable Toolbar Items in Angular File Manager | Syncfusion
-description: Learn here all about Enable disable toolbar item in Angular File Manager component of Syncfusion Essential JS 2 and more.
+title: Enable or disable a toolbar item in Angular File Manager | Syncfusion
+description: Learn how to enable or disable a toolbar item in the Angular File Manager at runtime based on user actions or selection state.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable or Disable Toolbar Items in Angular File Manager
+# How to enable or disable a toolbar item in Angular File Manager
 
 The File Manager component allows you to dynamically control the availability of toolbar items by enabling or disabling them based on your application requirements. This functionality helps you manage user permissions, implement contextual actions, and create a more intuitive user interface.
 You can programmatically enable or disable specific toolbar items using the following methods:

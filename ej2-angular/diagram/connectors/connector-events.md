@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector Events in Angular Diagram component | Syncfusion®
-description: Learn about connector events in Syncfusion® Angular Diagram component, including click, selection, position, connection, and segment events with examples.
+title: Connector Events in Angular Diagram | Syncfusion®
+description: Handle click, selection, position-change, connection, and segment-edit events on connectors in the Syncfusion® Angular Diagram to drive custom logic.
 platform: ej2-angular
 control: Connectors 
 documentation: ug

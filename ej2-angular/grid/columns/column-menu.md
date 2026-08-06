@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Column Menu | Syncfusion
-description: Angular Grid column menu describes configuring column menus, adding actions like sorting and filtering, and customizing menu items and icons.
+title: Angular Grid Column Menu | Syncfusion
+description: Learn how to configure and customize the column menu in Angular Data Grid, including sorting, filtering, menu items, and column-specific actions.
 platform: ej2-angular
 control: Column menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column menu in Angular Grid Component
+# Column Menu in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides a built-in column menu that offers quick access to essential column operations, such as sorting, grouping, filtering, column chooser, and autofit. This menu appears when the menu icon in a column header is clicked, enabling streamlined interaction with grid data. The column menu can be enabled by setting the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid#showcolumnmenu) property to `true` in the Grid configuration and injecting the `ColumnMenuService` module to the providers array.
 

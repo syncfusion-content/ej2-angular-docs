@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Filter Bar | Syncfusion
-description: Angular Grid filter bar enables filtering with expression operators, configurable modes, column settings, custom templates, and active filter status display.
+title: Angular Grid Filter Bar | Syncfusion
+description: Learn how to use Filter Bar in Angular Data Grid with expression operators, configurable modes, column settings, custom templates, and filter status display.
 platform: ej2-angular
 control: Filter bar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter Bar in Angular Grid Component
+# Filter Bar in Angular Data Grid
 
 The filter bar feature provides a row of input fields directly below the grid headers, enabling instant data filtering. Each column displays an input field where filter criteria can be entered, and the grid updates immediately to show matching results.
 
@@ -49,7 +49,7 @@ The following example demonstrates basic filter bar activation in the grid:
 
 ## Filter bar modes
 
-The Angular Grid filter bar operates in two distinct modes that determine when filtering actions are triggered. These modes provide different user experiences based on application requirements and user preferences.
+The Syncfusion Angular Grid filter bar operates in two distinct modes that determine when filtering actions are triggered. These modes provide different user experiences based on application requirements and user preferences.
 
 **OnEnter Mode:**
 

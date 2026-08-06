@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping bar in Angular Pivotview component | Syncfusion
-description: Learn here all about Grouping bar in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Grouping Bar in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table uses the grouping bar to drag and drop fields between row, column, value, and filter axes.
 platform: ej2-angular
 control: Grouping bar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping bar in Angular Pivotview component
+# Grouping Bar in Angular Pivot Table
 
 The Grouping Bar option in the Pivot Table automatically displays fields from the bound data source. It allows users to drag and drop fields between different axes such as columns, rows, values, and filters to create a pivot table at runtime. You can enable it by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showgroupingbar) property to **true**.
 

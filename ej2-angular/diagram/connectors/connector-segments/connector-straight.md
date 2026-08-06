@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Straight Connector Segments in Angular Diagram Component | Syncfusion®
-description: Learn how to create and edit straight connector segments in the Syncfusion® Angular Diagram Component of Syncfusion Essential® JS 2 and more.
+title: Connector Straight Segments in Angular Diagram | Syncfusion®
+description: Create straight-line connectors in the Syncfusion® Angular Diagram with editable endpoint thumbs for the shortest, most direct path between two points.
 platform: ej2-angular
 control: Straight 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Straight Connector Segments
+# Connector Straight Segments in Angular Diagram
 
 Straight connector segments create direct linear connections between two points in a diagram. These segments are the simplest form of connector routing, providing the shortest path between nodes or connection points. Straight segments are ideal when you need clean, unobstructed connections without intermediate directional changes.
 

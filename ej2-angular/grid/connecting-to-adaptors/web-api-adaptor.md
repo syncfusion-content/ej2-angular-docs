@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind and perform CRUD action with WebApiAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using WebApiAdaptor in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid Bind Data with WebApiAdaptor | Syncfusion
+description: Learn how to use WebApiAdaptor in Angular Data Grid to connect Web APIs, bind remote data, and perform CRUD operations efficiently.
 platform: ej2-angular
 control: grid
 keywords: Adaptors, webapiadaptor, webapi adaptor, remotedata, webapi 
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebApiAdaptor in Angular Grid Component
+# Connect Angular Data Grid to Web API Services
 
-The `WebApiAdaptor` extends the `ODataAdaptor` to facilitate seamless communication between the Angular Grid and Web APIs created with OData endpoints. This adaptor enables efficient data retrieval and manipulation by ensuring that OData-formatted queries are properly transmitted with requests to the server endpoint.
+The `WebApiAdaptor` extends the `ODataAdaptor` to facilitate seamless communication between the Syncfusion Angular Grid and Web APIs created with OData endpoints. This adaptor enables efficient data retrieval and manipulation by ensuring that OData-formatted queries are properly transmitted with requests to the server endpoint.
 
 The WebApiAdaptor is specifically designed for Web API services that support OData query options, providing automatic query translation and response handling. For successful integration, the target endpoint must be capable of processing OData-formatted queries.
 
@@ -21,7 +21,7 @@ This section provides step-by-step guidance for retrieving data using the `WebAp
 
 ## Creating a Web API service
 
-To configure a server for use with the Angular Grid, follow these steps:
+To configure a server for use with the Syncfusion Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -133,7 +133,7 @@ After running the application, verify that the server-side API controller succes
 
 ![WebApiAdaptor-data response showing JSON format with Items and Count properties](../images/webapi-adaptor-data.png)
 
-## Connecting Angular Grid to an API service
+## Connecting Syncfusion Angular Grid to an API service
 
 To integrate the Syncfusion Grid component into your Angular and ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -177,7 +177,7 @@ export class AppModule { }
 
 **3. Adding CSS Reference**
 
-Include the necessary CSS files in your `styles.css` file to style the Angular components:
+Include the necessary CSS files in your `styles.css` file to style the Syncfusion Angular components:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}

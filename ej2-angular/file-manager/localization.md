@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular File Manager component | Syncfusion
-description: Learn how to implement localization and language support in Angular File Manager component with examples and complete key reference.
+title: Localization in Angular File Manager | Syncfusion
+description: Learn how to localize the Angular File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular File Manager component
+# Localization in Angular File Manager
 
 Localization enables the File Manager component to adapt to different languages and cultural settings by translating its user interface elements. This feature ensures your application is accessible to users worldwide, regardless of their language preference.
 

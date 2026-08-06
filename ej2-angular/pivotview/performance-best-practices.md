@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance tips for Angular Pivot Table component | Syncfusion
-description: Checkout and learn here all about best practices to improve the performance of the Syncfusion ##Platform_Name## Pivot Table component and much more.
+title: Performance Best Practices in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table improves load and render performance with virtual scrolling, paging, and data compression tips.
 platform: ej2-angular
 control: Performance best practices
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Best practices to improve the performance of the Pivot Table
+# Performance Best Practices in Angular Pivot Table
 
 Performance optimization is crucial when working with large datasets in the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Pivot Table](https://www.syncfusion.com/angular-components/angular-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 

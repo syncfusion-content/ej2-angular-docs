@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Page settings in Angular Diagram component | Syncfusion®
-description: Learn here all about Page settings in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Page Settings in Angular Diagram | Syncfusion®
+description: Customize the Syncfusion® Angular Diagram canvas with configurable page dimensions, background color or image, margins, and orientation for printable and on-screen diagrams.
 platform: ej2-angular
 control: Page settings 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Page settings in Angular Diagram Component
+# Page Settings in Angular Diagram
 
 Page settings enable comprehensive customization of the diagram's canvas, including dimensions, appearance, orientation, and interactive boundaries. These settings provide control over how the diagram content is displayed and how users can interact with the drawing surface.
 

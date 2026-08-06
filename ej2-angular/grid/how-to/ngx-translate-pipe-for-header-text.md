@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ngx translate pipe for header text in Angular Grid component | Syncfusion
-description: Learn how to use ngx-translate pipe to localize the header text of columns in the Syncfusion Angular Grid component, including setup and implementation guidance.
+title: Angular Grid Header Text Localization | Syncfusion
+description: Learn how to localize Angular Data Grid column header text using ngx-translate and the translate pipe for multilingual applications.
 platform: ej2-angular
 control: Ngx translate pipe for header text 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ngx translate pipe for header text in Angular Grid component
+# Header Text Localization in Angular Data Grid
 
 The Syncfusion Angular Grid supports column header text localization using the ngx-translate library. You can dynamically translate the `headerText` of grid columns by applying the `translate` pipe to the `headerText` property in your column definitions.
 

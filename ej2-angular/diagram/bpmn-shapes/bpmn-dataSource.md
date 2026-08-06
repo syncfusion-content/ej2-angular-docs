@@ -1,14 +1,14 @@
 ---
 layout: post
-title: BPMN Data Source in Angular Diagram component | Syncfusion®
-description: Learn how to create and configure BPMN data source shapes in Syncfusion® Angular Diagram component for business process modeling.
+title: BPMN Data Source in Angular Diagram | Syncfusion®
+description: Add BPMN data source shapes in the Syncfusion® Angular Diagram to represent external data stores a business process reads from or writes to.
 platform: ej2-angular
 control: Bpmn Datasource 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN Data Source in Angular Diagram Component
+# BPMN Data Source in Angular Diagram
 
 BPMN data sources represent information that is required for or produced by business process activities. Data sources are essential elements in business process modeling that indicate where data comes from, how it flows through the process, and where it is stored or accessed.
 
