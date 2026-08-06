@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configure grid editing options in Angular Pivotview | Syncfusion
-description: Learn here all about Configure data grid options on editing mode in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to Configure Data Grid Options in Editing Mode in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to configure data grid options in editing mode in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Configure data grid options on editing mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Configure data grid options on editing in Angular Pivotview
+# How to Configure Data Grid Options in Editing Mode in Angular Pivot Table
 
 The Angular Pivot Table component provides the ability to configure various data grid options when working with drill-through functionality in editing mode. When users double-click on value cells (cells containing aggregated data), the component displays the underlying raw data in a drill-through grid popup. The `beginDrillThrough` event allows users to access and configure grid features such as sorting, grouping, and filtering before displaying the drill-through grid popup.
 

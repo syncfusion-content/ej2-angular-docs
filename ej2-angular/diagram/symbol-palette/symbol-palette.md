@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Symbol palette in Angular Diagram component | Syncfusion®
-description: Learn here all about Symbol palette in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Symbol Palette in Angular Diagram | Syncfusion®
+description: Provide a drag-and-drop gallery of reusable nodes, connectors, and groups in the Syncfusion® Angular Diagram using the symbol palette component.
 platform: ej2-angular
 control: Symbol palette 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Symbol Palette in Angular Diagram Component
+# Symbol Palette in Angular Diagram
 
 The [`symbolPalette`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#symbolpalettecomponent) is a gallery of reusable symbols and diagram elements that can be dragged and dropped onto the diagram surface multiple times. It provides an efficient way to organize and access frequently used nodes, connectors, and groups, streamlining the diagram creation process.
 

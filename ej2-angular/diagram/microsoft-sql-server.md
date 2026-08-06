@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Diagram - Microsoft SQL Server | Syncfusion®
-description: Learn how to integrate the Syncfusion® Angular Diagram with Microsoft SQL Server using an ASP.NET Core Web API to retrieve, manage, and update diagram data.
+title: Microsoft SQL Server in Angular Diagram | Syncfusion®
+description: Bind an organizational chart in the Syncfusion® Angular Diagram to a Microsoft SQL Server database through an ASP.NET Core Web API and Microsoft.Data.SqlClient.
 control: diagram
 keywords: adaptors, customadaptor, microsoftSQL, remotedata  
 platform: ej2-angular
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL Server to Angular Diagram using ASP.NET Core Web API
+# Microsoft SQL Server in Angular Diagram
 
 This guide explains how to load and visualize organizational chart data stored in a Microsoft SQL Server database using the Syncfusion® Angular Diagram component. It demonstrates how to configure SQL Server, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to a Angular application to render an organizational chart diagram.
 

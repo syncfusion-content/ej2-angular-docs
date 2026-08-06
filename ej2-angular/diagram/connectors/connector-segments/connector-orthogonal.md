@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Orthogonal Connectors in Angular Diagram Component | Syncfusion
-description: "Learn to create, customize, and edit orthogonal connectors in the Syncfusion Angular Diagram. Explore segment editing, avoiding overlaps, and custom styling."
+title: Connector Orthogonal Segments in Angular Diagram | Syncfusion
+description: Build right-angled orthogonal connectors in the Syncfusion® Angular Diagram for structured flowcharts, with draggable segment thumbs and line-routing to avoid overlaps.
 platform: ej2-angular
 control: Orthogonal 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orthogonal Connectors in Angular Diagram Component
+# Connector Orthogonal Segments in Angular Diagram
 
 Orthogonal connectors use segments that are always perpendicular to each other, which is ideal for creating structured layouts in flowcharts or organizational charts.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Global and Local | Syncfusion
-description: Angular Grid global and local settings define component-level and app-wide configuration, localization, and scope control to ensure consistent grid behavior.
+title: Angular Grid Globalization and Localization | Syncfusion
+description: Learn how to use globalization in Angular Data Grid with localization, internationalization, culture switching, RTL support, and locale-specific formatting.
 platform: ej2-angular
 control: Global local 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in Angular Grid Component
+# Globalization in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides a Globalization feature (global and local) that enhances application accessibility for people from different regions and language backgrounds. Data can be displayed in preferred languages and formats, improving the overall user experience.
 

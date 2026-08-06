@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Pivotview component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Migration from EJ1 in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table migrates data binding, grouping bar, and field list APIs from Essential JS 1 to Essential JS 2.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Pivotview component
+# Migration from EJ1 in Angular Pivot Table
 
 This article describes the API migration process of pivot table component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

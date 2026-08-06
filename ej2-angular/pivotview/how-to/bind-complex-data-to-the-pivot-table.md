@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Convert complex JSON to flat JSON in Angular Pivotview | Syncfusion
-description: Learn how to convert complex JSON to flat JSON and assign it to the pivot table in Syncfusion Angular Pivotview component of Essential JS 2 and more.
+title: How to Flatten Complex JSON in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to convert complex JSON to flat JSON in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
 documentation: ug
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
-# Convert complex JSON to flat JSON in Angular Pivotview component
+# How to Flatten Complex JSON in Angular Pivot Table
 
 ## Overview
 

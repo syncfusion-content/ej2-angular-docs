@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hyper link in Angular Pivotview component | Syncfusion
-description: Learn here all about Hyper link in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Hyperlink in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table enables hyperlinks on row, column, summary, and value cells using columnRender and cellClick.
 platform: ej2-angular
 control: Hyper link 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hyper link in Angular Pivotview component
+# Hyperlink in Angular Pivot Table
 
 The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation.
 

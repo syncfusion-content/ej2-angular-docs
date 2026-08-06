@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Diagram component | Syncfusion®
-description: Check out and learn about getting started with the Angular Diagram component of Syncfusion Essential® JS 2.
+title: Getting Started with Angular Diagram | Syncfusion®
+description: Learn how to get started with the Syncfusion® Angular Diagram control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Diagram Component
+# Getting Started with Angular Diagram
 
 This section explains the steps required to create a simple diagram and demonstrates the basic usage of the diagram component.
 

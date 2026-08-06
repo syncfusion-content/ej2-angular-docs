@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Column Headers | Syncfusion
-description: Angular Grid column headers support header templates, tooltips, multi-line layouts, and customization options for enhanced header appearance and interactions.
+title: Angular Grid Column Headers | Syncfusion
+description: Learn how to customize column headers in Angular Data Grid with header text, templates, tooltips, and multi-line layouts.
 platform: ej2-angular
 control: Column headers 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Headers in Angular Grid Component
+# Column Headers in Angular Data Grid
 
 Column headers in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) display the titles for each column, making it clear what data is shown. They provide context and make the grid easier to read and navigate. Headers can be customized by adjusting text alignment, applying templates, stacking multiple headers, or updating them dynamically, offering flexibility to design the grid as needed.
 
@@ -631,7 +631,7 @@ es-ES.json {
   
 ```
 
-The following screenshot represents the translation of the header text of a Angular Grid component to multiple languages using ngx-translate:
+The following screenshot represents the translation of the header text of a Syncfusion Angular Grid component to multiple languages using ngx-translate:
 
 ![ng-translate-headertext](../images/ng-translate-headertext.gif)
 

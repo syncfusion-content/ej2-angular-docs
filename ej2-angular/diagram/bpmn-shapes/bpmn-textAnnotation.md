@@ -1,14 +1,14 @@
 ---
 layout: post
-title: BPMN Text Annotation in Angular Diagram component | Syncfusion®
-description: Learn how to create, configure, and manage BPMN text annotations in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: BPMN Text Annotation in Angular Diagram | Syncfusion®
+description: Attach BPMN text annotations in the Syncfusion® Angular Diagram to a target shape, with direction, offset, and follow-on movement when the target moves.
 platform: ej2-angular
 control: Bpmn Text annotation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN Text Annotation in Angular Diagram Component
+# BPMN Text Annotation in Angular Diagram
 
 ## Overview
 

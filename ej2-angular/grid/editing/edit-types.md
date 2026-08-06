@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Edit Types | Syncfusion
-description: Angular Grid edit types supports various editor options, configuration for each type, and examples that help select appropriate editors for column data.
+title: Angular Grid Edit Types | Syncfusion
+description: Learn how to configure edit types in Angular Data Grid, choose appropriate cell editors, customize editing behavior, and manage column editing efficiently.
 platform: ej2-angular
 control: Edit types 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Edit Types in Angular Grid Component
+# Edit Types in Angular Data Grid
 
 The Angular Grid component in Syncfusion supports a range of edit types, enabling customization of data entry and editing behaviors for column types. These edit types enhance the user editing experience and provide flexibility when managing various data types in the Grid.
 

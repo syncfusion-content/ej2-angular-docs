@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Excel Like Filter | Syncfusion
-description: Angular Grid Excel-like filter enables multi‑condition filtering, checkbox lists, search, choice limits, remote data binding, and template-based customization.
+title: Angular Grid Excel Like Filter | Syncfusion
+description: Learn how to use Excel Like Filter in Angular Data Grid with multi-condition filtering, checkbox lists, search, remote data binding, and template customization.
 platform: ej2-angular
 control: Excel like filter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel Like Filter in Angular Grid Component
+# Excel Like Filter in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. Excel-like filter displays a dialog with a checkbox list, search box, and sorting options, similar to Microsoft Excel's filter. This filtering type simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation. Excel-like filtering is especially useful when dealing with large datasets and columns containing distinct categorical values (such as status, category, country, or department names).
 
@@ -41,7 +41,7 @@ Checkbox filtering is the core mechanism of Excel-like filter. When the filter d
 
 The checkbox list supports search functionality: typing in the search box filters the checkbox list to show only matching values, making it easier to find specific items in long lists.
 
-The following example demonstrates to implement checkbox filtering in the Angular Grid:
+The following example demonstrates to implement checkbox filtering in the Syncfusion Angular Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,7 +99,7 @@ The following example demonstrates to customize the filter choice count in the c
 
 ## Add current selection to filter Checkbox/Excel
 
-By default, the `CheckBox/Excel` filter in the Angular Grid applies filtering based solely on currently selected items. When multiple filtering actions are performed sequentially on the same column, previously filtered values are cleared and replaced with the new selection.
+By default, the `CheckBox/Excel` filter in the Syncfusion Angular Grid applies filtering based solely on currently selected items. When multiple filtering actions are performed sequentially on the same column, previously filtered values are cleared and replaced with the new selection.
 
 The `Add current selection to filter` checkbox functionality enables retention of previous filter values while performing new searches. This checkbox appears when searching data in the CheckBox/Excel filter search bar, allowing users to include new selections without removing previously applied filters. This cumulative filtering approach provides greater flexibility for complex filtering scenarios.
 
@@ -243,7 +243,7 @@ export class AppComponent implements OnInit {
 
 ## Customize the excel filter dialog using CSS
 
-The Angular Grid provides extensive flexibility for enhancing the visual presentation of the Excel filter dialog through CSS customization. This capability allows modification of the dialog's appearance to align with specific application requirements and aesthetic preferences.
+The Syncfusion Angular Grid provides extensive flexibility for enhancing the visual presentation of the Excel filter dialog through CSS customization. This capability allows modification of the dialog's appearance to align with specific application requirements and aesthetic preferences.
 
 **Removing context menu option**
 

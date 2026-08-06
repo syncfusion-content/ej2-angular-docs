@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Caption Template | Syncfusion
-description: Angular Grid caption template explains customizing group captions, templates for group headers, and formatting group display with examples.
+title: Angular Grid Caption Template | Syncfusion
+description: Learn how to customize group captions in Angular Data Grid using Caption Template, apply custom content, formatting, and display group information effectively.
 platform: ej2-angular
 control: Caption template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Group Row Title Customization in Angular Grid
+# Caption Template in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides the [captionTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) property to customize the text shown in group row titles.  This feature enhances the visual presentation of grouped data by allowing the display of grouped values, record counts, and custom HTML elements such as icons or images.
 

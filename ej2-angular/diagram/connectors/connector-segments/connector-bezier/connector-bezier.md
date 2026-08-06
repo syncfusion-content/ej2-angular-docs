@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bezier Connectors in Angular Diagram Component | Syncfusion®
-description: "Learn to create, edit, and customize Bezier connectors in the Syncfusion Angular Diagram. Master smooth, interactive, and precise curved connections."
+title: Connector Bezier Segments in Angular Diagram | Syncfusion®
+description: Draw smooth bezier curves in the Syncfusion® Angular Diagram using fixed control points or dynamic vectors, with interactive thumbs for curve editing.
 platform: ej2-angular
 control: Connectors 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bezier Connectors in Angular Diagram
+# Connector Bezier Segments in Angular Diagram
 
 Bezier connectors are used to create smooth, curved lines between nodes in a diagram. These curves are mathematically defined and can be finely controlled through control points or vectors, allowing for precise and aesthetically pleasing visual connections.
 

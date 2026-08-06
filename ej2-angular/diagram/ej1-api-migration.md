@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Diagram component | Syncfusion®
-description: Learn here all about Ej1 api migration in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: EJ1 API Migration in Angular Diagram | Syncfusion®
+description: Migrate properties, events, and methods from Essential® JS 1 to Essential® JS 2 in the Syncfusion® Angular Diagram, with side-by-side API mapping tables.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Diagram component
+# EJ1 API Migration in Angular Diagram
 
 This article describes the API migration process of Diagram component from Essential® JS 1 to Essential® JS 2.
 

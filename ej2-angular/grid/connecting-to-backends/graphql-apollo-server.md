@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Apollo GraphQL Backend | Syncfusion
-description: Integrate Syncfusion Angular Grid with Apollo and GraphQL backend to perform CRUD operations seamlessly.
+title: Angular Grid Data Integration with Apollo GraphQL Backend | Syncfusion
+description: Learn how to integrate Angular Data Grid with an Apollo GraphQL backend to execute queries, mutations, and CRUD operations efficiently.
 control: GraphQL Adaptor
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connect Syncfusion Angular Grid to GraphQL Backend with Apollo
+# GraphQL Backend Integration in Angular Data Grid
 
 [GraphQL](https://graphql.org/learn/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 

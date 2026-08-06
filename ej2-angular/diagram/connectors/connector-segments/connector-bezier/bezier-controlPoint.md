@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bezier Control Points in Angular Diagram component | Syncfusion®
-description: Learn how to interact with bezier control points, configure smoothness settings, and control visibility in Syncfusion® Angular Diagram component.
+title: Connector Bezier Control Points in Angular Diagram | Syncfusion®
+description: Configure bezier control-point behavior in the Syncfusion® Angular Diagram with smoothness modes and per-segment visibility during interaction.
 platform: ej2-angular
 control: Bezier control points interaction 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bezier Control Points Interaction
+# Connector Bezier Control Points in Angular Diagram
 
 Bezier control points determine the curvature and shape of bezier connector segments in Angular Diagram components. These interactive handles allow users to modify connector paths dynamically while maintaining visual consistency across multiple segments.
 

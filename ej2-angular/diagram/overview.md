@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview Component in Angular Diagram | Syncfusion®
-description: Learn how to implement and use the Overview component in Syncfusion® Angular Diagram for navigation, zooming, and panning in large diagrams.
+title: Overview in Angular Diagram | Syncfusion®
+description: Add a miniature Overview panel to the Syncfusion® Angular Diagram that previews the entire canvas, with a draggable viewport rectangle for fast panning and zoom in large diagrams.
 platform: ej2-angular
 control: Overview 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview Component in Angular Diagram Component
+# Overview in Angular Diagram
 
 The Overview component provides a miniature preview of the entire diagram content, enabling efficient navigation and viewport management for large diagrams. This component displays a scaled-down version of the diagram with a highlighted rectangle representing the current viewport, allowing users to quickly navigate to specific areas without manual zooming and panning.
 

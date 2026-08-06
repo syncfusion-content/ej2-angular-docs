@@ -1,14 +1,14 @@
 ---
 layout: post
-title: OLAP in Angular Pivot Table component | Syncfusion
-description: Learn here all about Olap in Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
+title: OLAP in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table connects to OLAP cube sources like SSAS with providerType, catalog, cube, and axes configuration.
 platform: ej2-angular
 control: Olap 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# OLAP in Angular Pivot Table component
+# OLAP in Angular Pivot Table
 
 ## Getting started
 

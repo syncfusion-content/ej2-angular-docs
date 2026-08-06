@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Row Template | Syncfusion
-description: Angular Grid row template explains customizing full row rendering with templates, advanced layout options, and examples for complex row UIs.
+title: Angular Grid Row Template | Syncfusion
+description: Customize row layouts in Angular Data Grid with Syncfusion row templates. Create rich row designs, display custom content, and enhance data presentation.
 platform: ej2-angular
 control: Row template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row Template in Angular Grid Component
+# Row Template in Angular Data Grid
 
 The row template feature in Grid allows customization of the appearance and layout of rows. This feature displays custom content such as images, buttons, or other controls within the rows.
 

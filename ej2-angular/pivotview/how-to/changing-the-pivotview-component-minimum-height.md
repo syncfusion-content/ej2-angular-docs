@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Changing minimum height in Angular Pivotview component | Syncfusion
-description: Learn how to set minimum height for the Angular Pivotview component using the minHeight property in Syncfusion Essential JS 2.
+title: How to Change the Minimum Height in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to change the minimum height in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Pivotview minimum height 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting minimum height in Angular PivotView component
+# How to Change the Minimum Height in Angular Pivot Table
 
 The `minHeight` property allows you to set the minimum height for the Angular Pivotview component. By default, the component maintains a minimum height of **300px**. This property ensures the component remains visible and functional even when the container height is smaller than the specified minimum value.
 

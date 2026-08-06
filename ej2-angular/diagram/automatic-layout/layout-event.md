@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Layout events in Angular Diagram component | Syncfusion®
-description: Learn here all about Layout events in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Layout Events in Angular Diagram | Syncfusion®
+description: Subscribe to layout events in the Syncfusion® Angular Diagram, including dataLoaded and expandStateChange, to react to data load and node expand or collapse.
 platform: ej2-angular
 control: Layout events
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layout events in Angular Diagram control
+# Layout Events in Angular Diagram
 
 Layout events in the Angular Diagram component provide developers with hooks to respond to various stages of automatic layout processing. These events are particularly useful when working with hierarchical data structures and need to customize behavior during layout rendering, data loading, or node expansion/collapse operations.
 

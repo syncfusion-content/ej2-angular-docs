@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Column Template | Syncfusion
-description: Angular Grid column template supports creating custom cell content, editors, and formatting to render complex UI elements within grid columns.
+title: Angular Grid Column Template| Syncfusion
+description: Learn how to create custom column templates in Angular Data Grid to render rich cell content, editors, formatting, and interactive UI elements.
 platform: ej2-angular
 control: Column template
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Template in Angular Grid Component
+# Column Template in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property that enables rendering custom elements in a column instead of the default field value. This feature is ideal for displaying images, buttons, hyperlinks, or other custom content within a column.
 

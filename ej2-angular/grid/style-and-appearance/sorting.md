@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Sorting Style | Syncfusion
-description: Angular Grid sorting style supports customizing sort icons, templates, and visual indicators to represent sort states and tailor the sorting UI.
+title: Angular Grid Sorting Customization | Syncfusion
+description: Learn how to customize sorting icons and multi-sort indicators in Angular Data Grid using CSS and built-in Syncfusion icons for different themes.
 platform: ej2-angular
 control: Sorting 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting Customization in Angular Grid Component
+# Sorting Style in Angular Data Grid
 
 The appearance of the sorting icons and multi sorting icons in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/angular/documentation/appearance/icons#material) can be used based on the active theme.
 

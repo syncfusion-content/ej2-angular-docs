@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Flask API Backend | Syncfusion.
-description: Integrate the Syncfusion Angular Grid with a Flask backend for  server‑side data handling and CRUD actions.
+title: Angular Grid Data Integration with Flask API Backend | Syncfusion
+description: Learn how to integrate Angular Data Grid with a Flask API backend for server-side data handling, remote operations, and CRUD functionality.
 control: Custom Binding
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting the Angular Grid with Flask API
+# Flask API Backend Integration in Angular Data Grid
 
 [Flask](https://flask.palletsprojects.com/en/stable/) is a lightweight and flexible Python web application framework that provides a simple set of features for building REST APIs quickly. Flask follows a traditional REST API approach with multiple endpoints for different data operations.
 

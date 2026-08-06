@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show tooltips for row/column headers in Angular Pivotview | Syncfusion
-description: Learn here all about Show tooltip for row and column headers in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to Show Custom Tooltip for Row/Column Headers in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to show custom tooltip for row and column headers in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Show tooltip for row and column headers 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show tooltip for row and column headers in Angular Pivotview component
+# How to Show Custom Tooltip for Row/Column Headers in Angular Pivot Table
 
 You can display custom tooltips for row and column headers to provide additional context and information. This approach enhances the user experience by showing detailed field information when hovering over header cells in the pivot table.
 

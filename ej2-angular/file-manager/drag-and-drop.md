@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in Angular File Manager component | Syncfusion
-description: Learn here all about Drag and drop in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Drag and Drop in Angular File Manager | Syncfusion
+description: Learn how to enable drag and drop in the Angular File Manager to move or upload files between folders using built-in drag events.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in Angular File Manager component
+# Drag and Drop in Angular File Manager
 
 The File Manager component supports drag and drop functionality, allowing users to easily move files and folders within the file system. This feature enhances user productivity by providing an intuitive way to reorganize files and folders without using cut and paste operations.
 

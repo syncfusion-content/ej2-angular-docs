@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pivot chart in Angular Pivotview component | Syncfusion
-description: Learn here all about Pivot chart in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Pivot Chart in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table renders 21 chart types, accumulation charts, drill operations, and label customization alongside the grid.
 platform: ej2-angular
 control: Pivot chart 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pivot chart in Angular Pivotview component
+# Pivot Chart in Angular Pivot Table
 
 The Pivot Chart in the Syncfusion Angular Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 

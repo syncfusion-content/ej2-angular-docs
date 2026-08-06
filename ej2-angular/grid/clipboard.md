@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Clipboard | Syncfusion
-description: Angular Grid clipboard supports copying and pasting rows or cells, handling formats, integrating with external apps, and configuring clipboard behavior.
+title: Angular Grid Clipboard | Syncfusion
+description: Learn how to use clipboard features in Angular Data Grid, including copy, paste, autofill, keyboard shortcuts, and clipboard data operations.
 platform: ej2-angular
 control: Clipboard 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clipboard in Angular Grid Component
+# Clipboard in Angular Data Grid
 
 The clipboard feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables copying selected rows or cells to the system clipboard for use in other applications. The grid supports keyboard shortcuts for quick copy operations.
 
@@ -33,7 +33,7 @@ Examples below show grid configuration for clipboard operations. Configure the g
 
 ## Copy to clipboard by external buttons
 
-Copying data to the clipboard using external buttons in the Angular Grid enables programmatic triggering of copy operations, enhancing usability, particularly for those unfamiliar with keyboard shortcuts.
+Copying data to the clipboard using external buttons in the Syncfusion Angular Grid enables programmatic triggering of copy operations, enhancing usability, particularly for those unfamiliar with keyboard shortcuts.
 
 To copy selected rows or cells data to the clipboard using external buttons, utilize the [copy](https://ej2.syncfusion.com/angular/documentation/api/grid/clipboard#copy) method available in the grid component. The `copy` method accepts an optional parameter `withHeader` (boolean) to include column headers in the copied data. This is demonstrated in the following example:
 

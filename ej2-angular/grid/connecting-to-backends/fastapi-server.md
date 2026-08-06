@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Python FastAPI REST Backend | Syncfusion.
-description: Integrate Syncfusion Angular Grid with Python FastAPI REST backend to perform Data and CRUD operations seamlessly.
+title: Angular Grid Data Bind with Python FastAPI REST Backend | Syncfusion
+description: Learn how to integrate Angular Data Grid with a Python FastAPI REST backend to handle remote data operations and CRUD requests efficiently.
 control: UrlAdaptor
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting the Syncfusion Angular Grid with FastAPI backend
+# FastAPI Backend Integration in Angular Data Grid
 
 [FastAPI](https://fastapi.tiangolo.com/) is a modern, high‑performance Python web framework for building RESTful APIs with automatic OpenAPI documentation and robust validation. In a REST architecture, the server exposes resource‑oriented endpoints and relies on standard HTTP verbs while the client exchanges well structured JSON payloads. FastAPI combines asynchronous I/O, type hints, and Pydantic validation to produce low‑latency APIs that Angular applications can call reliably. This design is particularly effective for the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) because every grid action translates to a predictable JSON contract that the backend can process consistently and efficiently. 
 
@@ -705,7 +705,7 @@ def handle_remove(payload: Dict[str, Any], products: List[Dict[str, Any]], save_
     raise HTTPException(status_code=404, detail=f'Record {key} not found')
 ```
 
-At this point, the server configuration supports all Grid data operations, including paging, sorting, searching, filtering, and CRUD actions such as insert, update, and delete. The next section covers the integration of the Angular Grid with the configured server.
+At this point, the server configuration supports all Grid data operations, including paging, sorting, searching, filtering, and CRUD actions such as insert, update, and delete. The next section covers the integration of the Syncfusion Angular Grid with the configured server.
 
 ## Integrating Syncfusion Angular Grid with FastAPI
 

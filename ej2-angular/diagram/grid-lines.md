@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grid lines in Angular Diagram component | Syncfusion®
-description: Learn here all about Grid lines in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Gridlines in Angular Diagram | Syncfusion®
+description: Show, hide, and style horizontal and vertical gridlines in the Syncfusion® Angular Diagram, and snap diagram elements to the nearest grid intersection for precise placement.
 platform: ej2-angular
 control: Grid lines 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grid Lines in EJ2 Angular Diagram Component
+# Gridlines in Angular Diagram
 
 Gridlines are crisscross lines drawn in diagram pages similar to lines on traditional graph paper. They help position diagram elements precisely on the diagram page.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Grouping Style | Syncfusion
-description: Angular Grid grouping style covers visual customization of group headers, captions, and aggregates to present grouped data consistently.
+title: Angular Grid Grouping Customization | Syncfusion
+description: Learn how to customize grouping styles in Angular Data Grid with group headers, captions, aggregates, and group area appearance.
 platform: ej2-angular
 control: Grouping 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping Customization in Angular Grid component
+# Grouping Style in Angular Data Grid
 
 The appearance of grouping elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Entity Relationship Diagram in Angular Diagram component | Syncfusion®
-description: Learn here all about Entity Relationship Diagram in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Entity Relationship Diagram in Angular Diagram | Syncfusion®
+description: Model database structures visually in the Syncfusion® Angular Diagram using ER entity nodes with fields and key constraints, connected by ER relationship connectors.
 platform: ej2-angular
 control: ERDiagram 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Entity Relationship Diagram Model in ##Platform_Name## Diagram Control
+# Entity Relationship Diagram in Angular Diagram
 
 An Entity Relationship (ER) diagram is a visual representation of a database structure. It displays entities (such as tables), their attributes (such as columns), and the relationships between those entities. In the Syncfusion® Diagram control, ER diagrams can be created by configuring nodes with [ErShapeModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/erShapeModel) and connectors with [ErConnectorShapeModel](https://ej2.syncfusion.com/angular/documentation/api/diagram/erConnectorShapeModel).
 

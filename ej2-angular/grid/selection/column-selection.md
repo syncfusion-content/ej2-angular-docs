@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Column selection | Syncfusion
-description: Angular Grid column selection supports selecting entire columns, configuration options, and examples for applying operations or styling to selected columns.
+title: Angular Grid Column Selection | Syncfusion
+description: Learn how to select columns in Angular Data Grid with selection APIs, column-level selection, keyboard interactions, and advanced column selection options.
 platform: ej2-angular
 control: Column selection 
 documentation: ug
 domainurl: ##DomainURL## 
 ---
 
-# Column Selection in Angular Grid Component
+# Column Selection in Angular Data Grid
 
 Column selection in the Grid allows selecting one or more columns by clicking the column header or using keyboard navigation. This feature is useful for highlighting, manipulating, or performing actions on specific columns within the grid. Press <kbd>Esc</kbd> to clear the current column selection.
 

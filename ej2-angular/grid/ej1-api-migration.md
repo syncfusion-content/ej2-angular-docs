@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - EJ1 API Migration | Syncfusion
-description: Angular Grid EJ1 API migration guides the shift from EJ1 to EJ2 Grid APIs, mapping legacy options to updated patterns and outlining common breaking changes.
+title: Angular Grid EJ1 API Migration | Syncfusion
+description: Learn how to migrate from EJ1 to EJ2 Angular Data Grid APIs, map legacy options to updated patterns, and handle common breaking changes effectively.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API Migration in Angular Grid Component
+# EJ1 API Migration in Angular Data Grid
 
 This article provides comprehensive guidance for migrating Grid component APIs from Essential JS 1 to Essential JS 2. The migration involves changes in component architecture, property names, method signatures, and event handling patterns to align with modern Angular development practices.
 

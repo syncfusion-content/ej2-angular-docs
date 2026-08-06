@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Conditional formatting in Angular Pivotview component | Syncfusion
-description: Learn here all about Conditional formatting in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Conditional Formatting in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table applies conditional formatting to value cells via font, color, and background based on rules.
 platform: ej2-angular
 control: Conditional formatting 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Conditional formatting in Angular Pivotview component
+# Conditional Formatting in Angular Pivot Table
 
 The conditional formatting feature enables users to customize the appearance of pivot table value cells by modifying background color, font color, font family, and font size based on specific conditions. This powerful visualization feature helps highlight important value cells and makes them stand out in the pivot table.
 
@@ -100,7 +100,7 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the "Value", "Condition" and "Format" options based on user requirement and click "OK". To remove a conditional format, click the "Delete" icon besides the respective condition.  
 
-![output](images/cformatting_remove.png)
+![output](../images/cformatting_remove.png)
 
 ## Event
 

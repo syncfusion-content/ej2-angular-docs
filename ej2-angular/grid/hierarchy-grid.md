@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Hierarchy Grid | Syncfusion
-description: Angular Grid hierarchy view enables nested grids, parent‑child relationships, and data binding to create structured hierarchical layouts.
+title: Angular Grid Hierarchy Grid | Syncfusion
+description: earn how to create hierarchy grids in Angular Data Grid with parent-child relationships, nested child grids, hierarchical data binding, and expandable rows.
 platform: ej2-angular
 control: Hierarchy grid 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hierarchy Grid in Angular Grid Component
+# Hierarchy Grid in Angular Data Grid
 
 The Hierarchy Grid in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) is designed to display hierarchical or nested data structures within a tabular layout. It enables the representation of parent-child relationships by allowing rows to be expanded or collapsed, revealing related child records beneath their corresponding parent rows.
 

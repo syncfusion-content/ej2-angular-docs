@@ -1,14 +1,14 @@
 ---
 layout: post
-title: User handle in Angular Diagram component | Syncfusion®
-description: Learn here all about User handle in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: User Handle in Angular Diagram | Syncfusion®
+description: Attach customizable, on-demand icon handles to selected nodes and connectors in the Syncfusion® Angular Diagram for quick actions like clone, delete, or edit.
 platform: ej2-angular
 control: User handle 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User Handle in Angular Diagram Component
+# User Handle in Angular Diagram
 
 User handles are interactive UI elements that provide quick access to frequently used commands around selected diagram elements. They appear as customizable icons positioned around nodes and connectors, enabling users to perform actions like cloning, deleting, or editing without accessing traditional menus or toolbars.
 

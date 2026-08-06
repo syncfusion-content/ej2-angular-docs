@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print and Export Angular Diagram component | Syncfusion®
-description: Learn how to print Angular Diagram components with customizable options including regions, multiple pages, margins, and page orientation.
+title: Print in Angular Diagram | Syncfusion®
+description: Learn how to print the Syncfusion® Angular Diagram control with customizable options including regions, multiple pages, margins, and page orientation.
 platform: ej2-angular
 control: Print 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in Angular Diagram Component
+# Print in Angular Diagram
 
 The Angular Diagram component provides comprehensive printing capabilities that allow users to generate high-quality printed outputs of their diagrams. The [`print`](https://ej2.syncfusion.com/angular/documentation/api/diagram#print) method enables printing the diagram as an image with extensive customization options for different printing scenarios.
 

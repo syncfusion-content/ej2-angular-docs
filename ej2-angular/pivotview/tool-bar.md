@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tool bar in Angular Pivotview component | Syncfusion
-description: Learn here all about Tool bar in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Toolbar in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table shows a built-in toolbar for switching between grid and chart, conditional formatting, and exports.
 platform: ej2-angular
 control: Tool bar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool bar in Angular Pivotview component
+# Toolbar in Angular Pivot Table
 
 The toolbar in the Angular Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showtoolbar) property to **true**. Additionally, the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) property accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
 

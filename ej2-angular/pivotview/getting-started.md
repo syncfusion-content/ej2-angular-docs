@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Pivotview component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Pivotview component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Pivot Table | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Pivot Table control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Pivotview component
+# Getting Started with Angular Pivot Table
 
 This guide demonstrates how to set up and configure the Syncfusion Angular Pivot Table component, from initial installation through creating a functional pivot table for data analysis.
 

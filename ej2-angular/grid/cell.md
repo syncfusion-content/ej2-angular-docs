@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Cell | Syncfusion
-description: Angular Grid offers cell rendering, editing options, and APIs to customize content, formatting, and interactive behavior within each cell.
+title: Angular Grid Cells | Syncfusion
+description: Learn how to customize Angular Data Grid cells with HTML content, text wrapping, cell styling, clip modes, tooltips, and grid line configuration.
 platform: ej2-angular
 control: Cell 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell Customization and Styling in Angular Grid Component
+# Cell Features in Angular Data Grid
 
 A cell in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component represents the smallest unit of data within the grid. Each cell corresponds to the intersection of a row and a column, and it is responsible for displaying the value associated with that specific row-column combination. Cells can display plain text, formatted values, or fully customized content, making them highly flexible for presenting structured data in a grid layout. to create interactive and visually appealing data presentations.
 

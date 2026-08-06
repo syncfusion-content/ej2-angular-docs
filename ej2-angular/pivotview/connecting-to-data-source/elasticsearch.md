@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Elasticsearch Data Binding in Angular Pivotview | Syncfusion"
+title: "Elasticsearch in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
 platform: ej2-angular
-description: "Learn how to bind data from a Elasticsearch database in the Syncfusion Angular Pivot Table of Syncfusion Essential JS 2 and more."
+description: Learn how the Angular Pivot Table binds to an Elasticsearch index through an ASP.NET Core Web API and the NEST client library.
 control: Elasticsearch Data Binding
 documentation: ug
 ---
 
-# Elasticsearch in EJ2 Angular Pivotview Component
+# Elasticsearch in Angular Pivot Table
 
 This guide explains how to connect an Elasticsearch database to the Pivot Table component using the [NEST](https://www.nuget.org/packages/Nest) library and a Web API controller to fetch and bind data to the Pivot Table.
 

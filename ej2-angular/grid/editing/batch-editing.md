@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Batch Editing | Syncfusion
-description: Angular Grid batch editing provides streamlined edit workflows, server integration examples, and reliable strategies for saving updates.
+title: Angular Grid Batch Editing | Syncfusion
+description: Learn how to perform batch editing in Angular Data Grid, update multiple records efficiently, customize edit workflows, and save changes in bulk.
 platform: ej2-angular
 control: Batch editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Batch Editing in Angular Grid Component
+# Batch Editing in Angular Data Grid
 
 Batch editing is a powerful feature in the Grid component that enables simultaneous modification and saving of multiple cells in a single action. This feature provides an efficient way to make bulk changes without saving each change individually, making it particularly useful for large datasets.
 

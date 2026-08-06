@@ -1,14 +1,14 @@
 ---
 layout: post
-title: List of array of objects in Angular Grid component | Syncfusion
-description: Learn how to bind data with array of objects and complex fields in the Syncfusion Angular Grid component, including configuration and sample usage.
+title: Angular Grid Array of Objects Binding | Syncfusion
+description: Learn how to bind arrays of objects and complex fields in Angular Data Grid to display and manage nested data structures effectively.
 platform: ej2-angular
 control: List of array of objects 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# List of array of objects in Angular Grid component
+# Bind Array of Objects in Angular Data Grid
 
 The Syncfusion Angular Grid allows binding data sources containing arrays of objects, including support for complex field structures. This enables display and manipulation of nested data within the grid columns.
 

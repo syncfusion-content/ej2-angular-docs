@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Diagram component | Syncfusion®
-description: Learn here all about Style in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Style in Angular Diagram | Syncfusion®
+description: Customize connector endpoint handles, selection indicators, and interactive controls in the Syncfusion® Angular Diagram using CSS overrides on built-in class selectors.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Diagram Component
+# Style in Angular Diagram
 
 The Angular Diagram component provides extensive styling capabilities through CSS classes. This guide demonstrates how to customize various visual elements including connector handles, selection indicators, and interactive controls using CSS overrides.
 

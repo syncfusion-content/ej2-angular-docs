@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Angular Grid - Performance | Syncfusion
-description: Angular Grid performance covers best practices, virtualization, efficient data operations, and techniques to improve rendering speed with large datasets.
+title: Angular Grid Performance | Syncfusion
+description: Learn how to optimize Angular Data Grid performance with virtualization, paging, efficient data operations, and best practices for large datasets.
 platform: ej2-angular
 control: DataGrid
 documentation: ug
 ---
 
-# Performance tips for Angular DataGrid Component
+# Performance Tips for Angular Data Grid
 
 This comprehensive guide provides actionable strategies for optimizing Angular DataGrid performance when handling large datasets and numerous columns. The techniques outlined here ensure smooth data binding without performance degradation, maintaining optimal efficiency even with substantial data volumes.
 

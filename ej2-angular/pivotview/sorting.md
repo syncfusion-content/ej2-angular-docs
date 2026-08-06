@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in Angular Pivotview component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Sorting in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table sorts field members in row and column axes and sorts value fields in ascending or descending order.
 platform: ej2-angular
 control: Sorting 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in Angular Pivotview Component
+# Sorting in Angular Pivot Table
 
 ## Member Sorting
 

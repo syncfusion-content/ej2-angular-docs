@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the Navigation Pane in File Manager component | Syncfusion
-description: Learn here all about Customize the Navigation Pane in Angular File Manager component of Syncfusion Essential JS 2 and more.
+title: Customize the navigation pane in Angular File Manager | Syncfusion
+description: Learn how to customize the navigation pane in the Angular File Manager by templating each folder node to show extra metadata or custom icons.
+control: File Manager
 platform: ej2-angular
-control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize Navigation Pane in Angular File Manager Component
+# How to customize the navigation pane in Angular File Manager
 
 The navigation pane in the File Manager Component displays the folder hierarchy in a tree-like structure. You can customize the layout of each folder node in the navigation pane using the `navigationPaneTemplate` property. This allows you to modify the appearance of folders based on your application's requirements.
 

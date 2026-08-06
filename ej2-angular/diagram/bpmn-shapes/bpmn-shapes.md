@@ -1,14 +1,14 @@
 ---
 layout: post
-title: BPMN Shapes in Angular Diagram component | Syncfusion®
-description: Learn to create and configure BPMN shapes in the Syncfusion Angular Diagram component for modeling business processes with events, gateways, and tasks.
+title: BPMN Shapes in Angular Diagram | Syncfusion®
+description: Create BPMN diagrams in the Syncfusion® Angular Diagram using built-in event, gateway, task, message, data, and group shapes for process modeling.
 platform: ej2-angular
 control: BPMN shapes
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN Shapes in Angular Diagram component
+# BPMN Shapes in Angular Diagram
 
 BPMN (Business Process Model and Notation) shapes are standardized graphical elements used to represent business processes in a visual workflow. These shapes enable teams to communicate business procedures clearly and consistently across organizations. The Angular Diagram component provides comprehensive support for creating BPMN diagrams with all standard shape types.
 

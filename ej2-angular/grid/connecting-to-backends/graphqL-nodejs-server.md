@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Node.js GraphQL Backend | Syncfusion.
-description: Integrate Syncfusion Angular Grid with Node.js and GraphQL backend to perform CRUD operations seamlessly.
+title: Angular Grid Data Bind with HotChocolate GraphQL Backend | Syncfusion
+description: Learn how to integrate Angular Data Grid with an ASP.NET Core HotChocolate GraphQL backend to execute queries, mutations, and CRUD operations.
 control: GraphQL Adaptor
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting the Syncfusion Angular Grid with GraphQL backend in Node.js
+# HotChocolate GraphQL Backend Integration in Angular Data Grid
 
 [GraphQL](https://graphql.org/learn/introduction/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 
@@ -367,7 +367,7 @@ Once the dependencies are installed, the required CSS files are made available i
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/tailwind.css';
 ```
 
-For this project, the "Tailwind" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
+For this project, the "Tailwind" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
 
 ### Step 3: Configure GraphQL Adaptor
 
@@ -1198,7 +1198,7 @@ Open a terminal or Command Prompt. Run the server application first, then start 
 
 For a complete working implementation of this example, refer to the following [GitHub](https://github.com/SyncfusionExamples/ej2-angular-grid-samples/tree/master/connecting-to-backends/syncfusion-angular-grid-with-graphql-server) repository.
 
-The application now provides a fully integrated "product" management workflow using the Angular Grid connected to a Node.js GraphQL backend.
+The application now provides a fully integrated "product" management workflow using the Syncfusion Angular Grid connected to a Node.js GraphQL backend.
 
 ## See also
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Cell Editing | Syncfusion
-description: Angular Grid cell editing provides streamlined edit workflows, server integration examples, and reliable strategies for saving updates.
+title: Angular Grid Cell Editing | Syncfusion
+description: Learn how to edit grid cells in Angular Data Grid, customize editing workflows, validate input, manage updates, and control editing behavior.
 platform: ej2-angular
 control: Cell editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell Editing in Angular Grid Component
+# Cell Editing in Angular Data Grid
 
 Cell editing provides a streamlined way to update individual cell values directly within the grid. Cell editing is designed for quick, inline modifications, making data entry and corrections more efficient. This approach ensures that changes are applied seamlessly to large datasets while maintaining consistency with the Grid’s overall editing experience.
  

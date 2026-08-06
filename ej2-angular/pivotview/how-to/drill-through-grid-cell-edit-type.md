@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drill through grid cell edit type in Angular Pivotview | Syncfusion
-description: Learn here all about Drill through grid cell edit type in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to Configure Drill-through Cell Edit Type in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to configure drill-through cell edit type in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Drill through grid cell edit type 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drill through grid cell edit type in Angular Pivotview component
+# How to Configure Drill-through Cell Edit Type in Angular Pivot Table
 
 The drill-through feature in the pivot table allows users to view the raw data behind aggregated values by opening a detailed grid dialog. When this dialog appears, you can customize the edit behavior of specific columns to provide appropriate input controls based on their data types.
 

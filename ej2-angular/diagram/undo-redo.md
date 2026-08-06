@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo and Redo Functionality in Angular Diagram component | Syncfusion®
-description: Learn how to implement undo and redo functionality with history management in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Undo Redo in Angular Diagram | Syncfusion®
+description: Track and reverse diagram edits in the Syncfusion® Angular Diagram using the UndoRedo module, with Ctrl+Z/Ctrl+Y shortcuts and programmatic undo/redo methods.
 platform: ej2-angular
 control: Undo redo 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo and Redo in Angular Diagram Component
+# Undo Redo in Angular Diagram
 
 The Angular Diagram component automatically tracks all user interactions and programmatic changes, providing robust undo and redo functionality. This feature enables users to reverse or restore actions, making diagram editing more intuitive and error-tolerant.
 

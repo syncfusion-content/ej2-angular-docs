@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary customization in Angular Pivotview component | Syncfusion
-description: Learn here all about Summary customization in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Summary Customization in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table shows, hides, and positions grand totals and sub-totals for rows and columns.
 platform: ej2-angular
 control: Summary customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Summary customization in Angular Pivotview component
+# Summary Customization in Angular Pivot Table
 
 The Pivot Table component allows users to easily customize the display of grand totals and sub-totals. This documentation explains how to control their visibility and positioning to suit your data analysis needs.
 

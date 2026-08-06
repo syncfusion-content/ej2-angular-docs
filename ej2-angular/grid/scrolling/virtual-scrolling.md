@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Virtual Scrolling | Syncfusion
-description: Angular Grid virtual scrolling explains viewport rendering, row virtualization techniques, and configuration to handle very large datasets efficiently.
+title: Angular Grid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling and row virtualization in Angular Data Grid to efficiently render large datasets and improve scrolling performance.
 platform: ej2-angular
 control: Virtual scroll 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtual Scrolling in Angular Grid Component
+# Virtual Scrolling in Angular Data Grid
 
 The virtual scrolling feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) seamlessly handles and displays large amounts of data without performance degradation. It improves the rendering process by loading only the visible rows in the grid viewport, rather than rendering the entire dataset at once. This powerful capability is essential when dealing with datasets that contain thousands of records.
 

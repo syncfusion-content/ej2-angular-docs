@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Local Data Binding | Syncfusion
-description: Local data binding enables the Angular Grid to work with in-memory datasets, as well as fetch and display data from remote services through external requests.
+title: Angular Grid Local Data Binding | Syncfusion
+description: Learn how to bind local data sources and in-memory datasets in Angular Data Grid, enable dynamic updates, and efficiently manage displayed data.
 platform: ej2-angular
 control: Local data 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Local Data in Angular Grid Component
+# Local Data Binding in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows data to be displayed and manipulated within the grid without the need for external server calls, making it particularly useful for scenarios involving static or locally stored data.
 
@@ -30,9 +30,9 @@ The following example demonstrates the local data binding feature in the Angular
 
 ## Data binding with SignalR 
 
-The Angular Grid component supports real-time data binding using SignalR, enabling automatic grid updates as data changes on the server. This capability proves essential for applications requiring live updates and multi-client synchronization.
+The Syncfusion Angular Grid component supports real-time data binding using SignalR, enabling automatic grid updates as data changes on the server. This capability proves essential for applications requiring live updates and multi-client synchronization.
 
-To implement real-time data binding with SignalR in the Angular Grid, follow these steps:
+To implement real-time data binding with SignalR in the Syncfusion Angular Grid, follow these steps:
 
 **Step 1:** Install the necessary SignalR package for the client application using npm:
 

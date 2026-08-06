@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ports appearance in Angular Diagram component | Syncfusion®
-description: Learn how to customize port appearance, visibility, shapes, and constraints in Syncfusion® Angular Diagram component for enhanced visual design.
+title: Ports Appearance in Angular Diagram | Syncfusion®
+description: Style and control ports in the Syncfusion® Angular Diagram with fill, stroke, size, opacity, and conditional visibility that adapts to user interaction state.
 platform: ej2-angular
 control: Ports 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize Port Appearance in Angular Diagram Component
+# Ports Appearance in Angular Diagram
 
 ## Overview
 

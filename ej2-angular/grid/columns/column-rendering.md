@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Column Rendering | Syncfusion
-description: Angular Grid column rendering allows custom cell and header layouts, templates, and flexible options for complex content and interactive elements.
+title: Angular Grid Column Rendering | Syncfusion
+description: Learn how to customize column rendering in Angular Data Grid using cell templates, header templates, and flexible layouts for rich data presentation.
 platform: ej2-angular
 control: Columns 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Rendering in Angular Grid Component
+# Column Rendering in Angular Data Grid
 
 Columns in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) define the structure and presentation of data. This section outlines manual, automatic, and dynamic rendering approaches to ensure clarity and flexibility in grid design.
 

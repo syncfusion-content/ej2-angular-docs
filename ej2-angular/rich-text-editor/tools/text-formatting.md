@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Text Formatting in the Angular Rich Text Editor
 
-The [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-rich-text-editor) provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
+The Angular Rich Text Editor provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
 
 ## Basic text styling
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Positioning of nodes in Angular Diagram component | Syncfusion®
-description: Learn about node positioning in Syncfusion® Angular Diagram component including offset, pivot, and size constraints.
+title: Nodes Positioning in Angular Diagram | Syncfusion®
+description: Position nodes in the Syncfusion® Angular Diagram using offsetX/offsetY and configurable pivot points, so coordinates refer to the node center, top-left, or any chosen reference.
 platform: ej2-angular
 control: Positioning of nodes 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Positioning a Node in Angular Diagram Component
+# Nodes Positioning in Angular Diagram
 
 Node positioning in the Angular Diagram component allows precise control over where nodes appear on the diagram canvas. Understanding positioning fundamentals enables developers to create well-organized diagrams with nodes placed exactly where needed.
 

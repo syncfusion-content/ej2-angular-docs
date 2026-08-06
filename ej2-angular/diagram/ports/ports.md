@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ports in Angular Diagram component | Syncfusion®
-description: Learn here all about Ports in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Ports in Angular Diagram | Syncfusion®
+description: Add fixed connection points (ports) to nodes in the Syncfusion® Angular Diagram so connectors dock at predictable locations even when nodes move, rotate, or resize.
 platform: ej2-angular
 control: Ports 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ports in Angular Diagram Component
+# Ports in Angular Diagram
 
 Ports are specialized connection points on nodes that provide precise control over where connectors attach. Unlike node-to-node connections that automatically adjust their attachment points, ports maintain fixed connection locations even when nodes are moved, rotated, or resized. This makes ports essential for creating stable, predictable diagram layouts and professional flowcharts.
 

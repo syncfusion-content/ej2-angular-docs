@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom service provider in Angular File Manager | Syncfusion
-description: Learn here all about implementation own service provider in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Implement a custom file provider in Angular File Manager | Syncfusion
+description: Learn how to implement a custom file provider in the Angular File Manager using Node.js with Azure Blob Storage as the data source.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create a custom file provider using Node JS
+# How to implement a custom file provider in Angular File Manager
 
 Here, we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing Node JS to fetch the required data from the Azure blob storage.
 

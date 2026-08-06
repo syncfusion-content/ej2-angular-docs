@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Toolbar Items| Syncfusion
-description: Angular Grid custom toolbar offers full layout and appearance control with templates, enabling integration of custom components and interactive behaviors.
+title: Angular Grid Toolbar Items | Syncfusion
+description: Learn how to use toolbar items in Angular Data Grid with built-in actions, custom toolbar items, templates, export options, and search functionality.
 platform: ej2-angular
 control: Toolbar items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar items in Angular Grid Component
+# Toolbar Items in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) includes a customizable toolbar positioned above the grid for accessing various actions and functionalities. Both built-in and custom toolbar items can be added to meet specific application requirements.
 
@@ -229,7 +229,7 @@ export class AppComponent implements OnInit {
 
 ## Add custom components to the Grid toolbar using template
 
-The Angular Grid provides the flexibility to customize its toolbar by embedding custom components using the [template](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel#template) property of the [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel). Custom UI elements such as buttons, dropdowns, or input controls can be added directly into the toolbar, alongside built-in actions like `Add`, `Edit`, and `Delete` to enhance user interaction and provide seamless integration with grid operations.
+The Syncfusion Angular Grid provides the flexibility to customize its toolbar by embedding custom components using the [template](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel#template) property of the [ItemModel](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel). Custom UI elements such as buttons, dropdowns, or input controls can be added directly into the toolbar, alongside built-in actions like `Add`, `Edit`, and `Delete` to enhance user interaction and provide seamless integration with grid operations.
 
 In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) is rendered in the toolbar using an Angular `ng-template`, which is passed to the toolbar item's `template` property through a "TemplateRef". The `AutoComplete` is populated with unique "Ship City" values from the grid's data. When a value is selected from the `AutoComplete`, the grid is updated by invoking its `search` method, dynamically filtering the displayed records in the "Ship City" column based on the input. Using `ng-template` together with Angular's `@ViewChild` enables embedding interactive controls such as dropdowns or search fields and controlling the grid programmatically.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nodes in Angular Diagram component | Syncfusion®
-description: Learn here all about Nodes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Nodes in Angular Diagram | Syncfusion®
+description: Create and configure nodes in the Syncfusion® Angular Diagram as the visual building blocks for flowcharts, organizational charts, and network diagrams, with position, size, and ID control.
 platform: ej2-angular
 control: Nodes 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Nodes in Angular Diagram Component
+# Nodes in Angular Diagram
 
 Nodes are graphical objects that visually represent entities, processes, data flow, or any business logic within diagrams. They serve as the fundamental building blocks for creating flowcharts, organizational charts, network diagrams, and other visual representations. Each node can be customized with different shapes, sizes, colors, and interactive behaviors to suit specific diagram requirements.
 

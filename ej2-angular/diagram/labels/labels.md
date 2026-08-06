@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Labels in Angular Diagram component | Syncfusion®
-description: Learn here all about Labels in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Labels in Angular Diagram | Syncfusion®
+description: Add editable text labels (annotations) to nodes and connectors in the Syncfusion® Angular Diagram to provide context, with support for runtime add, update, and remove.
 platform: ej2-angular
 control: Labels 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Labels in Angular Diagram Component
+# Labels in Angular Diagram
 
 [`Annotation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel) is a block of text that can be displayed over a node or connector. Annotations are used to textually represent an object with a string that can be edited at runtime. Multiple annotations can be added to a node or connector.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Save and Load Diagrams in Angular Diagram component | Syncfusion®
-description: Learn here all about Serialization in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Serialization in Angular Diagram | Syncfusion®
+description: Save the Syncfusion® Angular Diagram to a JSON string and load it back later to persist user-created diagrams, implement undo/redo, or transfer diagrams between sessions.
 platform: ej2-angular
 control: Serialization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Save and Load Diagrams in Angular Diagram Component
+# Serialization in Angular Diagram
 
 **Serialization** is the process of converting the diagram's current state into a storage format that can be saved and later restored. This feature ensures that all diagram elements, including nodes, connectors, and their configurations, persist across application sessions.
 

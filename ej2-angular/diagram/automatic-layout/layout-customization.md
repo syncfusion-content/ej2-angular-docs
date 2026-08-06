@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customizing layout in Angular Diagram component | Syncfusion®
-description: Learn how to customize layout orientation, spacing, alignment, and bounds in Syncfusion Angular Diagram component with comprehensive examples.
+title: Layout Customization in Angular Diagram | Syncfusion®
+description: Customize automatic layouts in the Syncfusion® Angular Diagram with orientation, spacing, alignment, and bounds to position nodes in a target area.
 platform: ej2-angular
 control: Customizing layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing layout in Angular Diagram control
+# Layout Customization in Angular Diagram
 
 The Angular Diagram component provides extensive customization options for automatic layouts, allowing developers to control orientation, spacing, alignment, bounds, and visual behavior. These properties enable fine-tuned positioning and appearance of nodes within hierarchical, organizational, and tree-based diagrams.
 

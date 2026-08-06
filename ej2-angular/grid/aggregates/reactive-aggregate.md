@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Reactive Aggregate | Syncfusion
-description: Angular Grid reactive aggregate supports live aggregate updates during editing or data changes, ensuring summaries always represent the current grid state.
+title: Angular Grid Reactive Aggregate | Syncfusion
+description: Learn how to use reactive aggregates in Angular Data Grid to automatically update summary values when data is edited, added, or removed.
 platform: ej2-angular
 control: Reactive aggregate 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reactive Aggregate in Angular Grid Component
+# Reactive Aggregate in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports reactive aggregates, which automatically recalculate and update aggregate values in real time whenever the data changes.
 

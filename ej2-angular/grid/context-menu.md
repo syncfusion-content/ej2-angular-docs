@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Context Menu | Syncfusion
-description: Angular Grid context menu supports, adding custom actions, and managing events to enhance interactions for rows and cells.
+title: Angular Grid Context Menu | Syncfusion
+description: Learn how to use Context Menu in Angular Data Grid with default items, custom actions, event handling, and options to prevent menu items.
 platform: ej2-angular
 control: Context menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context Menu in Angular Grid Component
+# Context Menu in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component includes a context menu that appears on right-click anywhere within the grid. The context menu provides quick access to actions such as sorting, filtering, and editing without navigating away from the grid.
 
@@ -107,7 +107,7 @@ The following example demonstrates adding custom context menu items in the Grid 
 
 ## Show context menu on left click
 
-The Angular Grid provides the ability to display context menu items on a left mouse click instead of the default right mouse click action.
+The Syncfusion Angular Grid provides the ability to display context menu items on a left mouse click instead of the default right mouse click action.
 
 This functionality can be implemented using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event and the context menu's [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/context-menu/index-default#beforeopen) event.
 

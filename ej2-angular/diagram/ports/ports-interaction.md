@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ports interaction in Angular Diagram component | Syncfusion®
-description: Learn about ports interaction in Syncfusion® Angular Diagram component including drawing connectors, drag functionality, and events.
+title: Ports Interaction in Angular Diagram | Syncfusion®
+description: Draw connectors from ports in the Syncfusion® Angular Diagram with straight, bezier, or orthogonal segment types, plus port drag, tooltips, and interaction events.
 platform: ej2-angular
 control: Ports 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Interactive Port Features in Angular Diagram Component
+# Ports Interaction in Angular Diagram
 
 Ports in Angular Diagram components support various interactive features that enhance user workflow and diagram creation efficiency. This guide covers drawing connectors from ports, drag functionality, automatic port creation, tooltips, and event handling.
 

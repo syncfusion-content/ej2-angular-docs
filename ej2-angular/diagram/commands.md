@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Commands in Angular Diagram Component | Syncfusion®
-description: Learn here all about Commands in Syncfusion® Angular Diagram Component of Syncfusion Essential® JS 2 and more.
+title: Commands in Angular Diagram | Syncfusion®
+description: Use built-in command methods to programmatically align, distribute, size, group, reorder, and zoom nodes and connectors in the Syncfusion® Angular Diagram.
 platform: ej2-angular
 control: Commands 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Commands in Angular Diagram Component
+# Commands in Angular Diagram
 
 <!-- markdownlint-disable MD010 -->
 

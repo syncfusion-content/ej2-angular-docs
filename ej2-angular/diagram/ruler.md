@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ruler in Angular Diagram component | Syncfusion®
-description: Learn here all about Ruler in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Ruler in Angular Diagram | Syncfusion®
+description: Add horizontal and vertical rulers to the Syncfusion® Angular Diagram canvas to measure, align, and indicate the cursor position when interacting with diagram elements.
 platform: ej2-angular
 control: Ruler 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ruler in Angular Diagram Component
+# Ruler in Angular Diagram
 
 The ruler provides horizontal and vertical guides for measuring in the diagram control. It can be used to measure diagram objects, indicate positions, and align diagram elements, making it especially useful for creating scale models. The ruler also includes a position indicator that displays the precise location of the mouse cursor on the diagram canvas, with the default color of the position indicator marker being red.
 

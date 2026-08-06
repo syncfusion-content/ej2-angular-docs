@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Print | Syncfusion
-description: Angular Grid printing prepares grid data, applies print‑focused styles, and uses configurable options to produce clean, readable printed output.
+title: Angular Grid Print | Syncfusion
+description: Learn how to print Angular Data Grid content with print customization options, formatted layouts, and print-ready output for grid data.
 platform: ej2-angular
 control: Print 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in Angular Grid Component
+# Print in Angular Data Grid
 
 The printing feature in [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) generates a printable representation of the grid for offline access or documentation. Enable printing via the grid's toolbar or by calling the [print](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#print) method.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multiple selection in Angular File Manager component | Syncfusion
-description: Learn here all about Multiple selection in Angular File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Multiple Selection in Angular File Manager | Syncfusion
+description: Learn how to enable multiple selection in the Angular File Manager using Ctrl/Shift keys and checkboxes to select many files at once.
 control: File Manager
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple selection in Angular File Manager component
+# Multiple Selection in Angular File Manager
 
 The File Manager allows you to select multiple files and folders simultaneously for batch operations. This feature enables efficient file management by letting users perform actions on several items at once.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Group in Angular Diagram component | Syncfusion®
-description: Learn here all about Group in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Group in Angular Diagram | Syncfusion®
+description: Cluster multiple nodes and connectors into a single manageable element in the Syncfusion® Angular Diagram using groups, with support for nested groups and collective or individual editing.
 platform: ej2-angular
 control: Group 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Group in Angular Diagram Component
+# Group in Angular Diagram
 
 Groups enable developers to cluster multiple nodes and connectors into a single manageable element, acting as a container that maintains relationships between child elements while allowing both collective and individual manipulation. This powerful feature streamlines complex diagram management by treating related elements as cohesive units while preserving the ability to edit individual components when needed.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "MongoDB Data Binding in Angular Pivotview component | Syncfusion"
+title: "MongoDB in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
 platform: ej2-angular
-description: "Learn how to bind data from a MongoDB Database in the Syncfusion Angular Pivot Table of Syncfusion Essential JS 2 and more."
+description: Learn how the Angular Pivot Table binds to a MongoDB database through an ASP.NET Core Web API and the MongoDB.Driver library.
 control: MongoDB Data Binding
 documentation: ug
 ---
 
-# MongoDB in EJ2 Angular Pivotview Component
+# MongoDB in Angular Pivot Table
 
 This guide explains how to retrieve data from a MongoDB database using the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table through a Web API controller.
 

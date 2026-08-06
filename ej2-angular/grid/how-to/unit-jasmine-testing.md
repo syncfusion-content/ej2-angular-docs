@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Unit Jasmine testing | Syncfusion
-description: Perform unit testing of the Angular Grid using Jasmine to verify component behavior, ensure data accuracy, and validate grid functionality.
+title: Angular Grid Unit Jasmine Testing | Syncfusion
+description: Learn how to perform Jasmine unit testing in Angular Data Grid to validate grid rendering, data binding, and component behavior.
 platform: ej2-angular
 control: Unit Jasmine testing
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Unit Jasmine Testing in Angular Grid Component
+# Unit Jasmine Testing in Angular Data Grid
 
 Jasmine test cases are typically executed synchronously, which can cause issues when testing asynchronous code. For example, if a Grid component takes time to render and populate data, a test case may fail if it runs before the grid has finished loading. To address this, write asynchronous test cases using Jasmine's async features.
 

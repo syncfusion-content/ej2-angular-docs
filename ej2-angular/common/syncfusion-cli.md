@@ -203,7 +203,7 @@ The `new` command supports options for configuring the project during creation.
 <tr>
 <td><code>--template</code></td>
 <td>Specifies the starter template for the application.</td>
-<td><code>empty</code>, <code>grid</code>, <code>chart</code>, <code>scheduler</code>, <code>file-manager</code>, <code>gantt</code>, <code>diagram</code>, <code>rte</code>, <code>pdf-viewer</code>, <code>docx-editor</code>, <code>spreadsheet-editor</code></td>
+<td><code>empty</code>, <code>grid</code>, <code>chart</code>, <code>scheduler</code>, <code>file-manager</code>, <code>gantt</code>, <code>diagram</code>, <code>rich-text-editor</code>, <code>pdf-viewer</code>, <code>docx-editor</code>, <code>spreadsheet-editor</code></td>
 </tr>
 <tr>
 <td><code>--theme</code></td>
@@ -253,7 +253,7 @@ sf add scheduler
 sf add gantt
 sf add filemanager
 sf add diagram
-sf add rte
+sf add rich-text-editor
 sf add pdf-viewer
 sf add docx-editor
 sf add spreadsheet-editor

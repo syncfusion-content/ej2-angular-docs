@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pdf export in Angular Pivotview component | Syncfusion
-description: Learn here all about Pdf export in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: PDF Export in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table exports the grid and chart to PDF documents using the PDFExportService and pdfExport method.
 platform: ej2-angular
 control: Pdf export 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PDF export in Angular Pivotview component
+# PDF Export in Angular Pivot Table
 
 The Angular Pivot Table allows exporting pivot table data as a PDF document. To enable PDF export, inject the `PDFExportService` into the Pivot Table and set the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowpdfexport) property to **true**. Once enabled, use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method to generate and download the PDF file.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid – PDF Server Export | Syncfusion
-description: Angular Grid PDF server export covers server‑side PDF generation, API endpoints, and efficient large grid export without relying on client‑side processing.
+title: Angular Grid Server-Side PDF Export | Syncfusion
+description: Learn how to export Angular Data Grid data using server-side PDF generation, API endpoints, and efficient export processing for large datasets.
 platform: ej2-angular
 control: Exporting grid in server 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Performing Server Side PDF Export in the Angular Grid
+# Server dependencies in Angular Data Grid
 
 The Grid component provides the ability to export grid data to a PDF document on the server side using the Grid server export library. Server-side PDF export operations provide additional security and flexibility. Enabling server-side PDF exporting requires configuring server dependencies and implementing the necessary server configuration.
 

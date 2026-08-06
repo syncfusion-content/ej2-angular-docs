@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD action with ODataV4Adaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using ODataV4Adaptor in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid Bind Data with ODataV4Adaptor | Syncfusion
+description: Learn how to use ODataV4Adaptor in Angular Data Grid to bind OData services, perform CRUD operations, and manage remote data efficiently.
 platform: ej2-angular
 control: grid
 keywords: Adaptors, ODataV4Adaptor, ODataV4 adaptor, remotedata 
@@ -9,13 +9,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ODataV4Adaptor in Angular Grid Component
+# Connect Angular Data Grid to OData V4 Services
 
-The `ODataV4Adaptor` in the Angular Grid Component enables seamless integration with OData v4 services, providing efficient data fetching and manipulation capabilities. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in the Angular Grid Component.
+The `ODataV4Adaptor` in the Syncfusion Angular Grid Component enables seamless integration with OData v4 services, providing efficient data fetching and manipulation capabilities. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in the Syncfusion Angular Grid Component.
 
 ## Creating an OData service
 
-To configure a server with Angular Grid, follow these steps:
+To configure a server with Syncfusion Angular Grid, follow these steps:
 
 **1. Project Creation:**
 
@@ -175,7 +175,7 @@ export class AppModule { }
 
 **Step 3: Adding CSS reference**
 
-Include the necessary CSS files in the `styles.css` file to style the Angular component:
+Include the necessary CSS files in the `styles.css` file to style the Syncfusion Angular component:
 
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}

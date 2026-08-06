@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid – Customizable Column Templates | Syncfusion
-description: Angular Grid provides template helper usage, rendering examples, and guidance to incorporate helper functions within templates safely and efficiently.
+title: Angular Grid Custom Column Templates | Syncfusion
+description: Learn how to create custom column templates in Angular Data Grid using helper functions, template loops, and dynamic rendering for customized cell content.
 platform: ej2-angular
 control: Use custom helper inside the loop with templates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Displaying Custom Templates in Angular Grid component
+# Custom Column Templates in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) permits the use of custom helper functions within `ng-template` directives inside column templates. This enables creating complex, data-driven templates and integrating utility logic for formatting or display customization.
 

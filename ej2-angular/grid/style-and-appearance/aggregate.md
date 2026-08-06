@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Aggregate Style | Syncfusion
-description: Angular Grid aggregate style explains styling and templates for aggregate rows and cells, customization options to match application design.
+title: Angular Grid Aggregate Customization | Syncfusion
+description: Learn how to customize aggregate styles in Angular Data Grid with aggregate rows, cells, templates, and visual formatting options.
 platform: ej2-angular
 control: Aggregate 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregate Customization in Angular Grid Component
+# Aggregate Style in Angular Data Grid
 
 The appearance of aggregate elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Below are examples for customizing the aggregate root element and the aggregate cell elements.
 

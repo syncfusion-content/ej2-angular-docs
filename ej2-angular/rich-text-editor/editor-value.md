@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Editor Value in Angular Rich Text Editor Component
 
-The [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-rich-text-editor) allows flexible management of content through properties and methods for setting placeholders, retrieving values, and enabling two-way binding. This section explains how to configure and access the editor's content effectively.
+The Angular Rich Text Editor allows flexible management of content through properties and methods for setting placeholders, retrieving values, and enabling two-way binding. This section explains how to configure and access the editor's content effectively.
 
 ## Set placeholder text
 

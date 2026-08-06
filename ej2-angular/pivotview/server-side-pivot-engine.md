@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Server side pivot engine in Angular Pivotview component | Syncfusion
-description: Learn here all about Server side pivot engine in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Server-side Pivot Engine in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table uses the Syncfusion.Pivot.Engine assembly to offload aggregation, filtering, and sorting to a server.
 platform: ej2-angular
 control: Server side pivot engine 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 > By default, the Pivot Table processes and displays data using its built-in engine with the given data source. Alternatively, you can use a server-side pivot engine to connect external data to the Pivot Table, which is especially useful when working with large datasets. This option is applicable only for relational data sources.
 
-# Server side pivot engine in Angular Pivotview component
+# Server-side Pivot Engine in Angular Pivot Table
 
 This section explains how to use the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.Pivot.Engine`](https://www.nuget.org/packages/Syncfusion.Pivot.Engine/) in a server-side application. The server-side engine performs operations such as aggregation, filtering, sorting, and grouping on the server. Only the information required for the Pivot Table viewport is sent to the client through a web service (Web API), instead of transferring the entire data source. This approach helps reduce network traffic and improves Pivot Table rendering performance when working with large data sets. It works efficiently with the virtual scrolling option and supports all existing features in the Pivot Table.
 

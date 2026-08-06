@@ -1,14 +1,14 @@
 ---
 layout: post
-title: State persistence in Angular Pivotview component | Syncfusion
-description: Learn here all about State persistence in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: State Persistence in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table persists the report state, filters, and sort in browser local storage with enablePersistence.
 platform: ej2-angular
 control: State persistence 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State persistence in Angular Pivotview component
+# State Persistence in Angular Pivot Table
 
 State persistence enables users to automatically retain the entire configuration of the Pivot Table component in the browser's local storage (cookies). This includes the current layout, field arrangements, sorting, applied filters, and the expanded or collapsed states of fields. By enabling the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablepersistence) property in the Pivot Table component, all these interactive states and settings are saved automatically. As a result, users can refresh the browser or navigate to different pages and return at any time, knowing that all modified report settings will be retained—ensuring a seamless and uninterrupted data analysis experience.
 

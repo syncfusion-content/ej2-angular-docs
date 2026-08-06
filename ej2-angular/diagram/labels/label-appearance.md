@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Label Appearance in Angular Diagram component | Syncfusion®
-description: Learn here all about Label in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
+title: Label Appearance in Angular Diagram | Syncfusion®
+description: Style labels in the Syncfusion® Angular Diagram with font, color, bold, italic, fill, stroke, opacity, visibility, and 9-way alignment within node or connector bounds.
 platform: ej2-angular
 control: Label Appearance
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing Label Appearance in Angular Diagram Component
+# Label Appearance in Angular Diagram
 
 ## Overview
 

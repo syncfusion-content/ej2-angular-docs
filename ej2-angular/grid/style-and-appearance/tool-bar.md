@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Toolbar Style | Syncfusion
-description: Angular Grid toolbar style explains styling toolbar items, templates, and layout options to present actionable controls consistently.
+title: Angular Grid Toolbar Style | Syncfusion
+description: Learn how to customize toolbar styles in Angular Data Grid with toolbar items, templates, layout options, and CSS-based styling.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar Customization in Angular Grid Component
+# Toolbar Style in Angular Data Grid
 
 The appearance of the toolbar in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the toolbar root element and toolbar button element.
 
