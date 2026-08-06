@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - SQL Server via EF Core | Syncfusion
-description: Bind SQL Server data to Syncfusion Angular Grid using Entity Framework Core with complete CRUD and data operations using UrlAdaptor and CustomAdaptor patterns.
+title: Angular Grid Bind Data with Entity Framework Core | Syncfusion
+description: Learn how to bind SQL Server data to Angular Data Grid using Entity Framework Core, perform CRUD operations, and implement adaptor patterns.
 platform: ej2-angular
 control: grid
 keywords: adaptors, urladaptor, customadaptor, remotedata, entityframework 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL Server to Syncfusion Grid Using Entity Framework
+# SQL Server Entity Framework Core Integration in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a SQL Server database. This documentation demonstrates integrating SQL Server with Angular Data Grid using **Entity Framework Core (EF Core)** for data operations with both `UrlAdaptor` and `CustomAdaptor` approaches.
 

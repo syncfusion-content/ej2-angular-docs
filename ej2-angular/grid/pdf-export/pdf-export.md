@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - PDF Export | Syncfusion
-description: Angular Grid PDF export explains exporting grid data to PDF, configuration, and examples to generate printable and shareable PDF documents.
+title: Angular Grid PDF Export | Syncfusion
+description: Learn how to export Angular Data Grid data to PDF, customize export settings, configure layouts, and generate printable and shareable PDF documents.
 platform: ej2-angular
 control: Pdf export 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PDF Export in Angular Grid Component
+# PDF Export in Angular Data Grid
 
 The PDF export feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) exporting grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
 

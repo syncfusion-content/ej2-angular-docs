@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Selection | Syncfusion
-description: Angular Grid selection provides a complete overview of selection modes, APIs, and configuration to control selection lifecycle and UI feedback.
+title: Angular Grid Selection | Syncfusion
+description: Learn how to use selection in Angular Data Grid with row, cell, and column selection modes, selection APIs, keyboard interactions, and selection events.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Grid Component
+# Selection in Angular Data Grid
 
 Selection in the Grid component provides interactive selection of specific cells, rows, or columns within the grid. Selection can be performed through mouse clicks, arrow keys (up, down, left, and right), or touch. This functionality highlights and allows manipulation or actions on specific cells, rows, or columns within the grid.
 

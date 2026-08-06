@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - Excel Exporting | Syncfusion
-description: Angular Grid enables Excel export of grid data, creating workbooks and downloadable spreadsheets with customizable export settings.
+title: Angular Grid Excel Export | Syncfusion
+description: Learn how to export Angular Data Grid data to Excel, create downloadable workbooks, and customize export settings for spreadsheets.
 platform: ej2-angular
 control: Excel exporting 
 documentation: ug

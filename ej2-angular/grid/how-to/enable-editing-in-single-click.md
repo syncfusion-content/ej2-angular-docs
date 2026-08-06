@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable editing in single click in Angular Grid component | Syncfusion
-description: Learn how to enable single-click editing in the Syncfusion Angular Grid for a faster data entry experience, including normal editing and dropdown popup activation.
+title: Angular Grid Single-Click Editing | Syncfusion
+description: Learn how to enable single-click editing in Angular Data Grid, including row editing and automatic dropdown popup activation for faster data entry.
 platform: ej2-angular
 control: Enable editing in single click 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable editing in single click in Angular Grid component
+# Single-Click Editing in Angular Data Grid
 
 ## Normal Editing
 

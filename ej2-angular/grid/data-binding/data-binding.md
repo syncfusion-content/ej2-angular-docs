@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Data Binding | Syncfusion
-description: Data binding in Angular Grid connects component state, local arrays, or remote sources to grid rows, enabling dynamic updates and controlled data flow.
+title: Angular Grid Data Binding | Syncfusion
+description: Learn how to bind local and remote data sources in Angular Data Grid, enable dynamic updates, and manage data flow efficiently.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Binding in Angular Grid Component
+# Data Binding in Angular Data Grid
 
 Data binding is a fundamental technique that empowers the Grid component to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 

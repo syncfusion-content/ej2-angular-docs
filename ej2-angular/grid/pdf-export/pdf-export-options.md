@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - PDF Export Options | Syncfusion
-description: Angular Grid PDF export options support configuring page sizes, margins, styles, and other settings to customize the exported PDF output.
+title: Angular Grid PDF Export Options | Syncfusion
+description: Learn how to customize PDF export in Angular Data Grid with page sizes, margins, styles, headers, footers, and advanced export settings.
 platform: ej2-angular
 control: Pdf export options 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PDF Export Options in Angular Grid Component
+# PDF Export Options in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides the ability to customize PDF export options. This flexibility enables greater control over the exported content and layout to meet specific requirements.
 

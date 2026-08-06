@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calendar mode in Angular Schedule component | Syncfusion
-description: Learn here all about Calendar mode in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Calendar Mode in Angular Scheduler | Syncfusion
+description: Learn how to render the Syncfusion Angular Scheduler in Gregorian and Islamic calendar modes to support different regional date formats.
 platform: ej2-angular
-control: scheduler
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Calendar mode in Angular Schedule component
+# Calendar Mode in Angular Scheduler
 
 The Scheduler supports two types of calendar modes:
 
@@ -25,7 +25,7 @@ The Islamic Calendar, also known as the Hijri or Muslim calendar, is a lunar cal
 
 > The current Islamic year is 1440 AH. Usually the Gregorian calendar runs from approximately 11 September 2018 to 30 August 2019 for this 1440 AH year.
 
-The Scheduler has a property [`calendarMode`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#calendarmode) which is used to switch between the gregorian and islamic calendar modes. By default, it is set to `Gregorian` and to use it with Islamic calendar dates, define the `calendarMode` of Scheduler to `Islamic`. The following example depicts, how to display the Islamic calendar dates on Scheduler.
+The Scheduler has a property [`calendarMode`](https://ej2.syncfusion.com/angular/documentation/api/schedule#calendarmode) which is used to switch between the gregorian and islamic calendar modes. By default, it is set to `Gregorian` and to use it with Islamic calendar dates, define the `calendarMode` of Scheduler to `Islamic`. The following example depicts, how to display the Islamic calendar dates on Scheduler.
 
 To use the Islamic calendar in Scheduler, import the `Calendar` and `Islamic` modules from the `ej2-calendars` package, and inject them using the `Calendar.Inject` method. Additionally, ensure the following CLDR data files are loaded via the `loadCldr` function, as this is necessary for multilingual and Islamic date support:
 

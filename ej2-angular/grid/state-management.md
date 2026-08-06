@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - State Management | Syncfusion
-description: Angular Grid state management describes preserving grid state, serializing settings, and integrating with external state stores like Redux for consistent UX.
+title: Angular Grid State Management | Syncfusion
+description: Learn how to manage and persist Angular Data Grid state with serialization, state restoration, and integration with external state stores such as Redux.
 platform: ej2-angular
 control: State management 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Management in Angular Grid Component
+# State Management in Angular Data Grid
 
 State management in the Angular Grid component enables maintaining the grid's state across browser refreshes and during navigation within the same browser session. This capability helps retain the grid's configuration and data after a page reload.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Editing | Syncfusion
-description: Angular Grid editing enables features, actions, modes, toolbar configs, column rules, templates, confirmations, and external CRUD workflows.
+title: Angular Grid Editing | Syncfusion
+description: Learn how to configure editing in Angular Data Grid, customize edit modes, apply validation rules, use templates, and manage CRUD workflows efficiently.
 platform: ej2-angular
 control: Edit 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Edit in Angular Grid Component
+# Editing in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component includes built-in editing features for creating, reading, updating, and deleting data directly in the grid. This eliminates the need for separate forms and allows data modification within a single interface. The grid editing provides powerful options through multiple edit modes, customizable triggers, and flexible data handling.
 

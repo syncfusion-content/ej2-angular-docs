@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid – Enable or Disable Actions | Syncfusion
-description: Angular Grid provides options and API examples to enable or disable actions, configure behavior, and control grid interactions.
+title: Angular Grid Enable or Disable Actions | Syncfusion
+description: Learn how to enable or disable Angular Data Grid and its actions using CSS and event handling to control user interaction dynamically.
 platform: ej2-angular
 control: Enable disable grid and its actions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable or Disable Grid and its Actions in Angular Grid Component
+# Enable or Disable Grid Actions in Angular Data Grid
 
 Enabling or disabling the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) and its actions is essential for managing interaction based on application state. This approach enhances usability and ensures controlled access to grid operations.
 

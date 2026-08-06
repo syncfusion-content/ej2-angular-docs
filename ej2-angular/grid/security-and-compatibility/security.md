@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Security in Angular Data Grid | Syncfusion
-description: Learn about security features and best practices for the Syncfusion Essential JS 2 Angular Data Grid, including protection against common web vulnerabilities.
+title: Angular Grid Security | Syncfusion
+description: Learn how to secure Angular Data Grid applications against XSS, CSP, CSRF, and injection attacks using recommended security practices and configurations.
 control: Security
 platform: ej2-angular
 documentation: ug

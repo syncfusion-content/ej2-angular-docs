@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add params for filtering in Angular Grid component | Syncfusion
-description: Learn how to customize filter parameters in the Syncfusion Angular Grid for precise control over filter UI and user experience.
+title: Angular Grid Add Params for Filtering | Syncfusion
+description: Learn how to customize filter parameters in Angular Data Grid for precise control over filter behavior, filter UI, and user experience.
 platform: ej2-angular
 control: Add params for filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add params for filtering in Angular Grid component
+# Add Params for Filtering in Angular Data Grid
 
 Customize the default filter UI in the Syncfusion Angular Grid by configuring the `params` property within a column's filter settings. This allows fine control over the filtering component’s behavior and appearance, especially in Menu filter mode.
 

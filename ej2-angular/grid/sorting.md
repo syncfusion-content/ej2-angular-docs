@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Sorting | Syncfusion
-description: Angular Grid sorting explains single and multi-column sorting, custom comparers, and UI options to control sort behavior and indicator rendering.
+title: Angular Grid Sorting | Syncfusion
+description: Learn how to configure sorting in Angular Data Grid with single and multi-column sorting, custom comparers, sorting indicators, and sorting behavior options.
 platform: ej2-angular
 control: Sorting 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in Angular Grid Component
+# Sorting in Angular Data Grid
 
 The Grid component provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true`.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Views in Angular Schedule component | Syncfusion
-description: Learn here all about Views in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Views in Angular Scheduler | Syncfusion
+description: Learn about the available views in the Syncfusion Angular Scheduler, including day, week, month, agenda, and timeline view modes and customizations.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Views in Angular Schedule component
+# Views in Angular Scheduler
 
 The Scheduler includes a wide variety of view modes, each with unique configuration options. Available view modes are Day, Week, Work Week, Month, Year, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week, Timeline Month, and Timeline Year. By default, the `Week` view is active.
 

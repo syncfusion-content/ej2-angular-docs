@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - Express.js Backend Server | Syncfusion.
-description: Integrate the Syncfusion Angular Grid with a Node.js Express backend for  server‑side data handling and CRUD actions.
+title: Angular Grid Data Binding using Express.js Server | Syncfusion
+description: Learn how to integrate Angular Data Grid with an Express.js backend server for server-side data handling, CRUD operations, and scalable data management.
 platform: ej2-angular
 control: grid
 keywords: adaptors, urladaptor, expressjs, nodejs, remotedata, restful-api, typescript
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting the Angular Grid with Express.js Server
+# Express.js Server Integration in Angular Data Grid
 
 [Express.js](https://expressjs.com/) is a lightweight and flexible Node.js web application framework that provides a simple set of features for building REST APIs quickly. Express.js follows a traditional REST API approach with multiple endpoints for different data operations.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Paging Style | Syncfusion
-description: Angular Grid paging style supports visual customization and template options for the pager UI, page size controls, and styling to match application themes.
+title: Angular Grid Paging Customization | Syncfusion
+description: Learn how to customize paging styles in Angular Data Grid with pager templates, page size controls, layout options, and pager UI customization.
 platform: ej2-angular
 control: Paging 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Paging Customization in Angular Grid Component
+# Paging Style in Angular Data Grid
 
 The appearance of the paging elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and the pager current page numeric element.
 

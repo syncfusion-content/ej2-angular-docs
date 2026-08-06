@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Frequently asked questions in Angular Schedule component | Syncfusion
-description: Learn here all about Frequently asked questions in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Frequently Asked Questions in Angular Scheduler | Syncfusion
+description: Find answers to common questions and solutions to frequent issues when working with the Syncfusion Angular Scheduler control.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Frequently asked questions in Angular Schedule component
+# Frequently Asked Questions in Angular Scheduler
 
 In this article, you can find some frequently asked questions and corresponding solutions while getting hands-on experience with the Scheduler component.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Binding in Syncfusion Angular Grid with Django REST Framework
-description: Integrate Syncfusion Angular Grid with SQL Server and Django REST Framework using Custom Binding for server-driven paging, sorting, filtering, and CRUD.
+title: Angular Grid Custom Binding with Django REST Framework | Syncfusion
+description: Learn how to integrate Angular Data Grid with Django REST Framework using custom binding for server-side paging, sorting, filtering, and CRUD operations.
 platform: ej2-angular
 control: grid
 keywords: custom binding, mssql, remotedata, django rest framework, syncfusion angular grid
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular Grid with Django REST Framework
+# Custom Binding with Django REST Framework in Angular Data Grid
 
 This guide explains connecting the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) to a **Django REST Framework (DRF)** backend with **Custom Binding**. Custom Binding provides full control over the Grid’s communication with the server: the Grid raises events for data operations (paging, sorting, filtering, searching) and CRUD,  client code calls DRF endpoints, and DRF returns standardized results.
 

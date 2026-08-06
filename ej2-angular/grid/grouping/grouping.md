@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Grouping | Syncfusion
-description: Angular Grid grouping enables configurable settings, initial grouping, aggregates, drop‑area control, reorderable columns, and expand/collapse.
+title: Angular Grid Grouping | Syncfusion
+description: Learn how to use grouping in Angular Data Grid with configurable settings, aggregates, drop area control, reorderable columns, and expand or collapse options.
 platform: ej2-angular
 control: Grouping 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in Angular Grid Component
+# Grouping in Angular Data Grid
 
 The grouping feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables data to be organized into a hierarchical structure, allowing records to be expanded and collapsed for improved readability and analysis.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Infinite Scroll | Syncfusion
-description: Angular Grid infinite scrolling offers incremental loading, event‑driven data retrieval, and performance‑optimized processing of large datasets.
+title: Angular Grid Infinite Scrolling | Syncfusion
+description: Learn how to implement infinite scrolling in Angular Data Grid with incremental data loading, optimized retrieval, and smooth performance for large datasets.
 platform: ej2-angular
 control: Infinite scroll 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Infinite Scroll in Angular Grid Component
+# Infinite Scrolling in Angular Data Grid
 
 The infinite scrolling feature in the grid is a powerful tool for seamlessly handling extensive datasets by dynamically loading data as the vertical scrollbar reaches the end of the viewport. In infinite scrolling mode, a new block of data is loaded on-demand each time the scrollbar approaches the end, optimizing rendering performance by fetching only the required data blocks and reducing initial load time and memory usage. In this context, a block refers to the number of rows defined by the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize) property, if not explicitly specified, the grid automatically calculates it based on the viewport and row height.
 

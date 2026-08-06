@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Lazy Load Grouping | Syncfusion
-description: Angular Grid lazy load grouping optimizes large datasets by loading grouped records on demand, improving performance with infinite or virtual scrolling.
+title: Angular Grid Lazy Load Grouping | Syncfusion
+description: Learn how to use Lazy Load Grouping in Angular Data Grid to load grouped records on demand, improve performance, and efficiently handle large datasets.
 platform: ej2-angular
 control: Lazy load grouping 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Lazy Load Grouping in Angular Grid Component
+# Lazy Load Grouping in Angular Data Grid
 
 Lazy loading in Angular refers to dynamically loading data as needed, rather than all at once, to enhance application performance by minimizing initial load time.
 

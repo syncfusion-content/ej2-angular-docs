@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Example of angular ui grid to edit a cell using cascading drop down list in Angular Grid component | Syncfusion
-description: Learn how to implement cascading DropDownList editors for cell editing in the Syncfusion Angular Grid using the Cell Edit Template feature.
+title: Angular Grid Cascading DropDownList Editing | Syncfusion
+description: Learn how to implement cascading DropDownList editors in Angular Data Grid cell editing using Cell Edit Templates and dependent dropdown values.
 platform: ej2-angular
 control: Example of angular ui grid to edit a cell using cascading drop down list 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Example of angular ui grid to edit a cell using cascading drop down list in Angular Grid component
+# Cascading DropDownList Editing in Angular Data Grid
 
 Cascading DropDownList editors can be implemented for grid cell editing using the Cell Edit Template feature in the Syncfusion Angular Grid. This approach enables you to establish a dependency between two dropdowns—for example, the selection in one dropdown (such as `ShipCountry`) dynamically determines the available options in a second dropdown (`ShipState`).
 

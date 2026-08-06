@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Aggregates | Syncfusion
-description: Angular Grid provides column aggregate functions, footer and group summaries, custom aggregate calculations, and formatting options.
+title: Angular Grid Aggregates | Syncfusion
+description: Learn how to use aggregates in Angular Data Grid to display column summaries, footer and group aggregates, and create custom aggregate calculations.
 platform: ej2-angular
 control: Aggregates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregates in Angular Grid Component
+# Aggregates in Angular Data Grid
 
 The Aggregates feature in [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides built-in calculations such as sum, average, count, minimum, and maximum for specific columns. The results can be displayed in different sections of the grid.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid – Cordova Export Support | Syncfusion
-description: Angular Grid Cordova export explains techniques to export grid data from hybrid Cordova apps, handling files and platform constraints for mobile exports.
+title: Angular Grid Cordova Export Support | Syncfusion
+description: Learn how to export Angular Data Grid data in Cordova applications using Blob streams, Excel and PDF export events, and mobile-friendly file handling.
 platform: ej2-angular
 control: Exporting grid in cordova application 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cordova Grid Export in Angular Grid Component
+# Cordova Export in Angular Data Grid
 
 Exporting data from the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) within a Cordova application enables users to generate and download reports, share information in Excel or PDF formats, and archive data for offline access. As Cordova applications do not support direct file downloads in the traditional browser sense, it is necessary to handle exported data using Blob streams.
 

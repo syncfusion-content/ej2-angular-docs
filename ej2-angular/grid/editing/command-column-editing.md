@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Command Column Editing | Syncfusion
-description: Angular Grid command column enables edit, save, and delete actions with customizable templates and event handling for flexible data operations.
+title: Angular Grid Command Column Editing | Syncfusion
+description: Learn how to enable command column editing in Angular Data Grid with built-in edit, save, and delete actions, customizable buttons, and event handling.
 platform: ej2-angular
 control: Command column editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Command Column Editing in Angular Grid Component
+# Command Column Editing in Angular Data Grid
 
 The command column editing feature enables the addition of CRUD (Create, Read, Update, Delete) action buttons within a dedicated column, allowing users to perform operations on individual rows. This approach streamlines inline editing, deletion, and saving of changes directly within the grid interface.
 

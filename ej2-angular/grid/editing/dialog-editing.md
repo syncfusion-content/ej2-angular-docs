@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Grid - Dialog Editing | Syncfusion
+title: Angular Grid Dialog Editing | Syncfusion
 description: Angular Grid dialog editing opens record editors in modal dialogs, supports templates, enforces validation, and manages single-record save workflows.
 platform: ej2-angular
 control: Dialog editing 

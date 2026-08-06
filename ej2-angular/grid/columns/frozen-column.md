@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Frozen Column | Syncfusion
-description: Angular Grid frozen column keeps key fields visible while scrolling, offering flexible configuration to sync with scrollable content.
+title: Angular Grid Column Pinning | Syncfusion
+description: Learn how to freeze and pin columns in Angular Data Grid to keep important fields visible while scrolling and synchronize frozen content.
 platform: ej2-angular
 control: Column pinning (Frozen) 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Pinning (Frozen) in Angular Grid Component
+# Column Pinning in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component enables pinning (freezing) columns to lock them in place on the left, right, or a fixed position, ensuring they remain visible during horizontal scrolling. This feature ensures that essential data, such as identifiers or action buttons, remains accessible while navigating large datasets.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Toolbar Items| Syncfusion
-description: Angular Grid custom toolbar offers full layout and appearance control with templates, enabling integration of custom components and interactive behaviors.
+title: Angular Grid Toolbar Items | Syncfusion
+description: Learn how to use toolbar items in Angular Data Grid with built-in actions, custom toolbar items, templates, export options, and search functionality.
 platform: ej2-angular
 control: Toolbar items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar items in Angular Grid Component
+# Toolbar Items in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) includes a customizable toolbar positioned above the grid for accessing various actions and functionalities. Both built-in and custom toolbar items can be added to meet specific application requirements.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Excel Exporting Templates | Syncfusion
-description: Angular Grid Excel export with templates customizes cell content and layout using column, detail, and caption templates with images, links, and formatting.
+title: Angular Grid Excel Export Templates | Syncfusion
+description: Learn how to export Angular Data Grid into Excel using templates, including column, detail, and caption templates with custom formatting, images, and links.
 platform: ej2-angular
 control: Exporting grid with templates
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting with Templates
+# Excel Export Templates in Angular Data Grid
 
 The Grid offers powerful export capabilities that preserve column, detail, and caption templates in Excel documents. Templates enable rich content rendering including images, hyperlinks, and customized text. Column templates customize individual cell content, detail templates display nested hierarchical data, and caption templates customize group headers for enhanced presentation.
 

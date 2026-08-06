@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid connected to SQLite Data | Syncfusion
-description: Bind SQLite data to Syncfusion Angular Grid using Entity Framework with complete CRUD, filtering, sorting and advanced data operations.
+title: Angular Grid SQLite Data Binding | Syncfusion
+description: Learn how to connect Angular Data Grid to SQLite using EF Core, perform CRUD operations, and enable filtering, sorting, and advanced data management.
 platform: ej2-angular
 control: grid
 keywords: adaptors, customadaptor, urladaptor, sqlite, remotedata
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQLite Data to Angular Grid using EF Core
+# SQLite Data Binding in Angular Data Grid
 
 The Angular Data Grid supports binding data from a SQLite database using Entity Framework Core (EF Core). This approach provides a lightweight, server less database solution ideal for mobile applications, desktop applications, and small-to-medium scale web applications.
 

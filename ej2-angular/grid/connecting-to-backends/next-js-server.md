@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - Next.js Backend | Syncfusion.
-description: Integrate Syncfusion Angular Grid with routing and Next.js backend to perform CRUD operations seamlessly.
+title: Angular Grid Data Binding using Next.js Backend | Syncfusion
+description: Learn how to integrate Angular Data Grid with a Next.js backend to handle routing, remote data operations, and CRUD functionality efficiently.
 platform: ej2-angular
 control: grid
 keywords: custom data binding, next.js, remote data, crud, routing
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting the Syncfusion Angular Grid with Next.js backend
+# Next.js Backend Integration in Angular Data Grid 
 
 [Next.js](https://nextjs.org/) is a powerful Angular framework designed for building full-stack web applications. It includes built‑in features such as server‑side rendering, automatic code splitting, intuitive routing, and API routes, providing a solid foundation for developing modern, high‑performance applications.
 

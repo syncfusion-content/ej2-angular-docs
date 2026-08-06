@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Validation | Syncfusion
-description: Angular Grid validation supports built-in and custom rules, clear error messages, and safeguards that block invalid entries during editing.
+title: Angular Grid Validation | Syncfusion
+description: Learn how to configure validation in Angular Data Grid using built-in and custom rules, display error messages, and prevent invalid data entry.
 platform: ej2-angular
 control: Validation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular Grid Component
+# Validation in Angular Data Grid
 
 Data validation ensures that information entered or modified in the grid follows specific validation rules, preventing errors and maintaining accuracy. The Angular Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in validation support to make this process easy and effective.
 

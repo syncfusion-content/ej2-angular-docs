@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind and perform CRUD action with WebApiAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using WebApiAdaptor in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid Bind Data with WebApiAdaptor | Syncfusion
+description: Learn how to use WebApiAdaptor in Angular Data Grid to connect Web APIs, bind remote data, and perform CRUD operations efficiently.
 platform: ej2-angular
 control: grid
 keywords: Adaptors, webapiadaptor, webapi adaptor, remotedata, webapi 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebApiAdaptor in Syncfusion Angular Grid Component
+# Connect Angular Data Grid to Web API Services
 
 The `WebApiAdaptor` extends the `ODataAdaptor` to facilitate seamless communication between the Syncfusion Angular Grid and Web APIs created with OData endpoints. This adaptor enables efficient data retrieval and manipulation by ensuring that OData-formatted queries are properly transmitted with requests to the server endpoint.
 
@@ -632,7 +632,7 @@ export class AppComponent {
 
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

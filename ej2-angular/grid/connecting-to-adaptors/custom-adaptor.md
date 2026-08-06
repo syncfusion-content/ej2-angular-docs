@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Bind data & perform CRUD action with CustomAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using CustomAdaptor in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid Bind Data with Custom Remote Data Binding | Syncfusion
+description: Learn how to bind remote data with custom rules in Angular Data Grid, customize data operations, and manage CRUD actions.
 platform: ej2-angular
 control: grid
-keywords: Adaptors, customadaptor, custom adaptor, remotedata 
+keywords: Adaptors, Custom Remote Data Binding, custom adaptor, remotedata 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CustomAdaptor in Syncfusion Angular Grid
+# Custom Remote Data Binding in Angular Data Grid
 
-The `CustomAdaptor` in the Syncfusion Angular Grid enables developers to create custom adaptors by extending built-in adaptors. Custom adaptors provide control over query processing, request handling, and response manipulation of the built-in adaptor functionality. The `CustomAdaptor` extends OData V4 services, enabling efficient data fetching and manipulation. By default, three built-in methods are available for `CustomAdaptor` implementation.
+The custom adaptor in the Angular Grid enables creating custom adaptors by extending built‑in adaptors. Custom adaptors provide control over query processing, request handling, and response manipulation of the built‑in adaptor functionality. The Custom adaptor extends OData V4 services, enabling efficient data fetching and manipulation. By default, three built‑in methods are available for Custom adaptor implementation.
 
-## Types of CustomAdaptor methods
+## Types of Custom adaptor methods
 
 Custom adaptors support three core methods for data operations.
 
@@ -86,7 +86,7 @@ public override processResponse() {
 }
 ```
 
-This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in the Syncfusion Angular Grid.
+This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the Custom adaptor by extending the `ODataV4Adaptor` in the Syncfusion Angular Grid.
 
 ## Creating a Custom service
 
@@ -619,7 +619,7 @@ export class AppModule { }
 
 ## Handling paging operation
 
-To implement paging in the web application using the CustomAdaptor with OData, use the `SetMaxTop` method in the OData setup to define the maximum number of records returned per request. Once configured, clients can utilize the **$skip** and **$top** query options to specify the number of records to skip and retrieve, respectively. 
+To implement paging in the web application using the Custom adaptor with OData, use the `SetMaxTop` method in the OData setup to define the maximum number of records returned per request. Once configured, clients can utilize the **$skip** and **$top** query options to specify the number of records to skip and retrieve, respectively. 
 
 {% tabs %}
 {% highlight cs tabtitle="Program.cs" %}
@@ -706,7 +706,7 @@ export class AppModule { }
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using CustomAdaptor, follow the provided guide for configuring the Syncfusion Angular Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in the server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using Custom adaptor, follow the provided guide for configuring the Angular Grid for [editing](https://ej2.syncfusion.com/angular/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in the server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
 
 To enable CRUD operations in the Syncfusion Grid within an Angular application, follow these steps:
 
@@ -776,7 +776,7 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Syncfusion Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) for the Syncfusion Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

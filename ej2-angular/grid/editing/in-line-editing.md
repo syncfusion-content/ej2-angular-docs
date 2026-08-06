@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Inline Editing | Syncfusion
-description: Angular Grid inline editing allows direct row edits, auto field updates, conditional control, CRUD actions, confirmations, and flexible add/delete.
+title: Angular Grid Inline Editing | Syncfusion
+description: Learn how to perform inline editing in Angular Data Grid, update records directly, customize editing behavior, and manage CRUD operations efficiently.
 platform: ej2-angular
 control: In line editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Inline Editing in Angular Grid Component
+# Inline Editing in Angular Data Grid
 
 The Angular Grid component provides an efficient inline editing feature, enabling direct modification of row or cell values within the grid. Inline editing is ideal for streamlining data entry and updates without invoking a separate form. In normal edit mode, the selected record enters an editable state, allowing updates to cell values which are then saved back to the data source.
 

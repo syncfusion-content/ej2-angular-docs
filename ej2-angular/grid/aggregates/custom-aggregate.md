@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Custom Aggregate | Syncfusion
-description: Angular Grid custom aggregate enables defining custom aggregate functions, applying them to columns, and displaying computed summaries.
+title: Angular Grid Custom Aggregate | Syncfusion
+description: Learn how to create custom aggregate functions in Angular Data Grid to calculate and display custom summary values in aggregate rows.
 platform: ej2-angular
 control: Custom aggregate 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom Aggregate in Angular Grid Component
+# Custom Aggregate in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports custom aggregate functions for scenarios where built-in options do not meet specific requirements. This allows for tailored logic to compute aggregate values.
 

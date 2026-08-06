@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD action with ODataV4Adaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using ODataV4Adaptor in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Angular Grid Bind Data with ODataV4Adaptor | Syncfusion
+description: Learn how to use ODataV4Adaptor in Angular Data Grid to bind OData services, perform CRUD operations, and manage remote data efficiently.
 platform: ej2-angular
 control: grid
 keywords: Adaptors, ODataV4Adaptor, ODataV4 adaptor, remotedata 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ODataV4Adaptor in Syncfusion Angular Grid Component
+# Connect Angular Data Grid to OData V4 Services
 
 The `ODataV4Adaptor` in the Syncfusion Angular Grid Component enables seamless integration with OData v4 services, providing efficient data fetching and manipulation capabilities. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in the Syncfusion Angular Grid Component.
 
@@ -681,7 +681,7 @@ export class AppModule { }
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

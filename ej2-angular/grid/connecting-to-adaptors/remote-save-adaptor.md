@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD with RemoteSaveAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion Angular Grid component.
+title: Angular Grid Bind Data with RemoteSaveAdaptor | Syncfusion
+description: Learn how to use hybrid data binding in Angular Data Grid to perform data operations locally while handling CRUD actions on the server.
 platform: ej2-angular
 control: grid
 keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Binding and perform CRUD operation using RemoteSaveAdaptor
+# Hybrid Data Binding in Angular Data Grid
 
 The RemoteSaveAdaptor in the Syncfusion Angular Grid Component enables grid actions such as sorting, filtering, searching, and paging to be performed primarily on the client-side while handling CRUD (Create, Read, Update, Delete) operations—inserting, updating, and deleting—on the server-side for data persistence. This approach optimizes performance by minimizing unnecessary server interactions while ensuring data integrity.
 
@@ -277,7 +277,7 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 
 In your component file (e.g., app.component.ts), import `DataManager` and `RemoteSaveAdaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance by following these steps:
 
-  * **Assign RemoteSaveAdaptor:** Set the `adaptor` property within the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) configuration to new RemoteSaveAdaptor(). This enables server-side CRUD operations for the grid.
+  * **Assign RemoteSaveAdaptor:** Set the `adaptor` property within the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource) configuration to new RemoteSaveAdaptor(). This enables server-side CRUD operations for the grid.
 
   * **Set DataSource Property:** Configure the `dataSource` property of the Syncfusion Angular Grid with a JSON object.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Schedule component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Scheduler | Syncfusion
+description: Learn how to localize the Syncfusion Angular Scheduler to adapt to different languages, cultures, time formats, and RTL mode.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in the Angular Schedule component
+# Globalization and Localization in Angular Scheduler
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 

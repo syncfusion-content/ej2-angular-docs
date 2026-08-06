@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Style and Appearance | Syncfusion
-description: Angular Grid style and appearance provides a consolidated guide to theming, CSS customization, and style tokens to match application design.
+title: Angular Grid Style and Appearance | Syncfusion
+description: Learn how to customize the style and appearance of Angular Data Grid with built-in themes, CSS customization, theme packages, and design configuration.
 platform: ej2-angular
 control: Style and appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and Appearance in Syncfusion® Angular DataGrid
+# Style and Appearance in Angular Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid provides flexible styling and appearance customization options to align with your application's design requirements. You can choose from a wide range of built-in themes, customize visual elements using CSS, and create consistent experiences through theme-based styling.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Editing Style | Syncfusion
-description: Angular Grid editing style supports customizing editor appearance and adjusting layouts to enhance the overall edit mode experience.
+title: Angular Grid Editing Customization | Syncfusion
+description: Learn how to customize editing styles in Angular Data Grid with editor appearance, edit layouts, form elements, and editing UI customization.
 platform: ej2-angular
 control: Editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editing Customization in Angular Grid Component
+# Editing Style in Angular Data Grid
 
 The appearance of editing-related elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Below are examples for customizing various editing-related elements.
 

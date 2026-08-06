@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Template editing | Syncfusion
-description: Angular Grid inline editing enables direct row edits, auto updates, conditional control, CRUD actions, confirmations, and flexible add/delete.
+title: Angular Grid Custom Template Editing | Syncfusion
+description: Learn how to use inline and dialog template editing in Angular Data Grid to customize edit forms, capture user input, and manage CRUD operations efficiently.
 platform: ej2-angular
 control: Template editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template Editing in Angular Grid Component
+# Custom Template Editing in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. Angular templates enable defining the structure and content of cells within the grid.
 
@@ -16,7 +16,7 @@ The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-da
 
 ## Inline or dialog template editing
 
-The Syncfusion Grid provides support for inline and dialog template editing, enabling customization of the editing experience using either [Reactive](https://v17.angular.io/guide/reactive-forms) or [Template-driven](https://v17.angular.io/guide/forms#template-driven-forms) Forms. These forms can be used to add and update grid records.
+The Data Grid provides support for inline and dialog template editing, enabling customization of the editing experience using either [Reactive](https://v17.angular.io/guide/reactive-forms) or [Template-driven](https://v17.angular.io/guide/forms#template-driven-forms) Forms. These forms can be used to add and update grid records.
 
 To enable this feature, set the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) property to either `Normal` or `Dialog` and define grid editors using the `editSettings.template` template variable of `ngTemplate`.
 

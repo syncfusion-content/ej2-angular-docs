@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Row | Syncfusion
-description: Angular Grid row covers row-level configuration, events, selection, and behaviors to control presentation, styling, interaction, and customization of grid rows.
+title: Angular Grid Row | Syncfusion
+description: Learn how to configure and customize rows in Angular Data Grid using Syncfusion. Manage row events, selection, styling, and interaction capabilities.
 platform: ej2-angular
 control: Row 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row in Angular Grid Component
+# Row in Angular Data Grid
 
 Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow interaction with the data in the grid. Rows can be selected, edited, sorted, filtered, and configured to trigger events based on actions.
 

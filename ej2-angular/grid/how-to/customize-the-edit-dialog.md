@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the edit dialog in Angular Grid component | Syncfusion
-description: Learn how to customize the edit dialog appearance and localization in the Syncfusion Angular Grid component using actionComplete and dialog properties.
+title: Angular Grid Edit Dialog Customization | Syncfusion
+description: Learn how to customize the edit dialog in Angular Data Grid using actionComplete, dialog properties, and localization settings for editing workflows.
 platform: ej2-angular
 control: Customize the edit dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the edit dialog in Angular Grid component
+# Customize Edit Dialog in Angular Data Grid
 
 The edit dialog in the Syncfusion Angular Grid can be customized for appearance and behavior using the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event. Use the **requestType** property within this event to determine if the dialog is opening for **beginEdit** or **add** operations.
 

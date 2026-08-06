@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Selection Style | Syncfusion
-description: Angular Grid selection style customizes visuals and templates for selected rows, cells, and columns, ensuring consistent and intuitive selection.
+title: Angular Grid Selection Customization | Syncfusion
+description: Learn how to customize selection styles in Angular Data Grid for selected rows, cells, and columns using CSS and selection templates.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection Customization in Angular Grid Component
+# Selection Style in Angular Data Grid
 
 The appearance of selection in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the row selection background, cell selection background, and column selection background.
 

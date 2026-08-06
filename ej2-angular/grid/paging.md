@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Paging | Syncfusion
-description: Angular Grid paging supports client and server paging with options, templates, and performance features to navigate large data sets efficiently.
+title: Angular Grid Paging | Syncfusion
+description: Learn how to configure paging in Angular Data Grid with client and server paging, page size options, pager templates, and navigation controls.
 platform: ej2-angular
 control: Paging 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Paging in Angular Grid Component
+# Paging in Angular Data Grid
 
 Paging allows the Angular Grid to display data in segmented pages instead of loading the entire dataset at once. This greatly improves initial load performance and overall responsiveness especially with large datasets by rendering only the records of the current page.
 

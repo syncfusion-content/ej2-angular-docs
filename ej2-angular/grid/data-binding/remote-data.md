@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Remote Data | Syncfusion
-description: Angular Grid provides remote data binding options, adaptor configuration, server operations, and guidance for reliable server‑side data handling.
+title: Angular Grid Remote Data Binding | Syncfusion
+description: Learn how to bind remote data sources in Angular Data Grid using adaptors, configure server-side operations, and manage data efficiently.
 platform: ej2-angular
 control: Remote data 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remote Data in Angular Grid Component
+# Remote Data Binding in Angular Data Grid
 
 In Angular Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the `dataSource` property of the Angular Grid component. By doing so, seamless interaction with a remote data source is enabled, achieved by specifying the endpoint URL where the data is hosted.
 

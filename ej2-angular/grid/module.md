@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid – Modules and Feature Injection | Syncfusion
-description: Modules and services to enable Syncfusion Angular Grid features like paging, sorting, filtering, grouping, editing, and export.
+title: Angular Grid Modules and Feature Injection | Syncfusion
+description: Learn how to configure Angular Data Grid modules and services for paging, sorting, filtering, grouping, editing, and export features.
 platform: ej2-angular
 control: Module 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modules in Angular Grid Component
+# Modules in Angular Data Grid
 
 Syncfusion Angular Grid modules help optimize your application’s bundle size by including only the features you need. To enable a specific Grid feature, import and inject the corresponding Feature Module into your Grid configuration. The available Grid Feature Modules include:
 

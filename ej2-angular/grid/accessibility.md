@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Accessibility | Syncfusion
-description: Angular Grid accessibility covers keyboard navigation, ARIA roles, and screen reader support to help build inclusive, user‑friendly grids.
+title: Angular Grid Accessibility | Syncfusion
+description: Learn how to use accessibility features in Angular Data Grid with keyboard navigation, ARIA attributes, screen reader support, and accessibility standards.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Grid Component
+# Accessibility in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component follows major accessibility guidelines and standards, including the [Americans with Disabilities Act (ADA)](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and [WAI‑ARIA roles](https://www.w3.org/TR/wai-aria#roles). These standards ensure the grid is usable with assistive technologies and keyboard‑only navigation.
 

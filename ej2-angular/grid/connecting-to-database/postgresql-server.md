@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PostgreSQL Server Data Binding Syncfusion Angular Grid
-description: Learn how to consume data from PostgreSQL Server, bind it to Syncfusion Angular Grid, and perform CRUD operations.
+title: Angular Grid PostgreSQL Server Data Binding | Syncfusion
+description: Learn how to connect Angular Data Grid to PostgreSQL Server, bind data through API services, and perform efficient CRUD operations.
 platform: ej2-angular
 control: grid
 keywords: adaptors, customadaptor, urladaptor, postgresql, remotedata
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connect PostgreSQL Server Data to Syncfusion Angular Grid
+# PostgreSQL Server Data Binding in Angular Data Grid
 
 This section explains how to connect and retrieve data from a PostgreSQL Server database using [Npgsql.EntityFrameworkCore.PostgreSQL](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) and bind it to the Syncfusion Angular Grid.
 

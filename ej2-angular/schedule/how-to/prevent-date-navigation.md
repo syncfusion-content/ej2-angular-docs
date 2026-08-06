@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Prevent date navigation in Angular Schedule component | Syncfusion
-description: Learn here all about Prevent date navigation in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Prevent Date Navigation in Angular Scheduler | Syncfusion
+description: Learn how to prevent date navigation in the Syncfusion Angular Scheduler to lock the view on a specific date or range.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent date navigation in Angular Schedule component
+# Prevent Date Navigation in Angular Scheduler
 
-We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#rendercell) event as shown in the below demo.
+We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the [`renderCell`](https://ej2.syncfusion.com/angular/documentation/api/schedule#rendercell) event as shown in the below demo.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

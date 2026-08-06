@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - MySQL Server | Syncfusion
-description: Angular Grid MySQL Server integration supports backend connectivity with MySQL and provides query patterns for data operations and grid data management.
+title: Angular Grid MySQL Server Integration | Syncfusion
+description: Learn how to connect Angular Data Grid to MySQL Server using LINQ2DB, execute database queries, and manage grid data efficiently.
 platform: ej2-angular
 control: grid
 keywords: adaptors, customadaptor, urladaptor, mysql, remotedata 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting MySQL server to Syncfusion Angular Grid Using LINQ2DB
+# MySQL Server Integration in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a MySQL database. This documentation demonstrates integrating MySQL with Angular Data Grid using LINQ2DB (Light-weight ORM) for data operations with the use of `CustomAdaptor` to build a Transaction Management Application.
 

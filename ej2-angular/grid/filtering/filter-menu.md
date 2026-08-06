@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Filter Menu | Syncfusion
-description: Angular Grid filter menu offers column‑level filtering with configurable dialogs, custom components, operator options, and multi‑value filtering control.
+title: Angular Grid Filter Menu | Syncfusion
+description: Learn how to use Filter Menu in Angular Data Grid with configurable dialogs, custom components, operator options, and multi-value filtering.
 platform: ej2-angular
 control: Filter menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter Menu in Angular Grid Component
+# Filter Menu in Angular Data Grid
 
 The filter menu in the Angular Grid component provides a dialog-based filtering interface that appears when clicking the filter icon in column headers. This menu displays dropdown operators (such as equals, contains, startswith) and an input field for entering filter values, giving precise control over data filtering.
 

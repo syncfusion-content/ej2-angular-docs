@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Integrate Chart in Grid | Syncfusion
-description: Angular Grid chart integration embeds charts in cells or detail views, linking data and options to provide clear, combined visual insights.
+title: Angular Grid Integrate Chart in Grid | Syncfusion
+description: Learn how to integrate charts in Angular Data Grid by embedding charts in cells or detail views to visualize and analyze data effectively.
 platform: ej2-angular
 control: Integrate Chart  
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Chart in Syncfusion Angular Grid
+# Integrate Chart in Angular Data Grid
 
 Grid and Chart integration in Syncfusion<sup style="font-size:70%">&reg;</sup> enables visualizing tabular data by linking the grid with a chart. Selected data can be rendered interactively as bar, line, or pie charts via the [ContextMenu](https://ej2.syncfusion.com/angular/documentation/grid/context-menu) feature. This integration is suitable for dashboards, reporting tools, and other data-driven applications where tabular and visual representations improve analysis and decision making.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - HotChocolate GraphQL Backend | Syncfusion
-description: Integrate Syncfusion Angular Grid with ASP.NET Core and HotChocolate GraphQL backend to perform CRUD operations seamlessly.
+title: Angular Data Grid HotChocolate GraphQL Integration | Syncfusion
+description: Learn how to integrate Angular Data Grid with an ASP.NET Core HotChocolate GraphQL backend to execute queries, mutations, and CRUD operations.
 control: GraphQL Adaptor
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular Grid with HotChocolate GraphQL Backend
+# HotChocolate GraphQL Backend Integration in Angular Data Grid
 
 [GraphQL](https://graphql.org/learn/introduction) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 

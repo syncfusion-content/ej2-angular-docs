@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Angular Grid - Column Chooser | Syncfusion
-description: Angular Grid column chooser supports dynamic column visibility, a customizable chooser UI, and options to persist selected visibility preferences.
+title:  Angular Grid Column Chooser | Syncfusion
+description: Learn how to show, hide, and manage column visibility in Angular Data Grid using the Column Chooser.
 platform: ej2-angular
 control: Column chooser
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Chooser in Angular Grid Component
+# Column Chooser in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) includes a built-in Column Chooser feature that allows columns to be shown or hidden through a simple dialog with checkboxes.
 

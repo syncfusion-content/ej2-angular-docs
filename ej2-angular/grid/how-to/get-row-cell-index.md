@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Get row cell index in Angular Grid component | Syncfusion
-description: Learn how to identify the row and cell index in the Syncfusion Angular Grid component using event handlers and DOM attributes.
+title: Angular Grid Get Row and Cell Index | Syncfusion
+description: Learn how to get row and cell index values in Angular Data Grid using grid events and DOM attributes such as aria-rowindex and aria-colindex.
 platform: ej2-angular
 control: Get row cell index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get row cell index in Angular Grid component
+# Get Row and Cell Index in Angular Data Grid
 
 The Syncfusion Angular Grid enables you to determine the specific row and cell indices when a user interacts with the grid. This can be accomplished by utilizing the [`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselected) event. In this context, the row and cell indices are obtained through the **aria-rowindex** attribute on the `<tr>` element (for the row) and the **aria-colindex** attribute on the `<td>` element (for the cell).
 
