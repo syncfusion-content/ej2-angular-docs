@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context menu in Angular Schedule component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Context Menu in Angular Scheduler | Syncfusion
+description: Learn how to integrate the Context Menu in the Syncfusion Angular Scheduler to perform actions on cells, resource cells, and appointments.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in Angular Schedule component
+# Context Menu in Angular Scheduler
 
 You can display a context menu on Scheduler work cells and appointments by using the [`ContextMenu`](https://ej2.syncfusion.com/angular/documentation/context-menu/getting-started) control manually in the application. In the following code example, the context menu is added in the example and its target is set to the Scheduler component.
 

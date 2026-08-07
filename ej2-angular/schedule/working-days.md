@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Working days in Angular Schedule component | Syncfusion
-description: Learn here all about Working days in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Working Days and Hours in Angular Scheduler | Syncfusion
+description: Learn how to set working days, working hours, time range, and first day of the week in the Syncfusion Angular Scheduler.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Working days in Angular Schedule component
+# Working Days and Hours in Angular Scheduler
 
 The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
 

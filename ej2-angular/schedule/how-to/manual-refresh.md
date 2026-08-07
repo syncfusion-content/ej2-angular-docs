@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Manual refresh in Angular Schedule component | Syncfusion
-description: Learn here all about Manual refresh in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Manually Refresh Layout in Angular Scheduler | Syncfusion
+description: Learn how to manually refresh specific templates and the overall layout in the Syncfusion Angular Scheduler without re-rendering the entire component.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Manual refresh in Angular Schedule component
+# Programmatically Refresh Layout in Angular Scheduler
 
 ## Refresh Template
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Modules in Angular Ribbon component | Syncfusion
-description:  Learn here all about Modules in Syncfusion Angular Ribbon component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Feature Modules in Angular Ribbon | Syncfusion
+description: Learn about the feature-based modules in the Angular Ribbon that must be injected to enable functionalities like the file menu, backstage, and keytips.
 control: Ribbon
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modules in Ribbon component
+# Feature Modules in Angular Ribbon
 
 The Angular Ribbon component contains several feature-based modules that must be injected to enable their respective functionalities.
 

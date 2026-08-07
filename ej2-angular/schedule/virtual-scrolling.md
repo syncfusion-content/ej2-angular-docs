@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtual scrolling in Angular Schedule component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Virtual Scrolling in Angular Scheduler | Syncfusion
+description: Learn how to enable virtual scrolling in the Syncfusion Angular Scheduler timeline and agenda views to load resources and events on demand.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtual scrolling in Angular Schedule component
+# Virtual Scrolling in Angular Scheduler
 
 Virtual scrolling support in the Scheduler component enhances performance when working with a substantial number of resources and events. This feature allows large sets of resources and events to load dynamically in the timeline views as users scroll, resulting in a seamless user experience. Enable virtual scrolling by setting the [`allowVirtualScrolling`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#allowvirtualscrolling) property to `true` within the specific timeline view settings. In the Agenda view, enable the same property in the agenda view configuration to allow virtual loading of events.
 

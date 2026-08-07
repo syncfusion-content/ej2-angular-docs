@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Recurrence editor in Angular Schedule component | Syncfusion
-description: Learn here all about Recurrence editor in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Recurrence Editor in Angular Scheduler | Syncfusion
+description: Learn how to use the Recurrence Editor in the Syncfusion Angular Scheduler to configure daily, weekly, monthly, and yearly recurrence rules.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Recurrence editor in Angular Schedule component
+# Recurrence Editor in Angular Scheduler
 
 The Recurrence editor is integrated into Scheduler's editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 

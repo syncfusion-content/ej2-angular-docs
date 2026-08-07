@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render Schedule inside dialog in Angular Schedule | Syncfusion
-description: Learn here all about Render schedule inside dialog in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Render Angular Scheduler Inside Dialog  | Syncfusion
+description: Learn how to render the Syncfusion Angular Scheduler inside a dialog using an ng-template to avoid layout calculation issues.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render Schedule inside dialog in Angular Schedule component
+# Render Angular Scheduler Inside a Dialog
 
 Render the Schedule while opening the dialog inside the angular `ng-template`.
 
