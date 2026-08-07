@@ -58,6 +58,7 @@ The following information may be collected in development mode:
 		<td>Framework or platform</td>
 		<td>The development platform or framework, such as JavaScript, TypeScript, Angular, React, or Vue.</td>
 	</tr>
+	<tr>
 		<td>Framework Version</td>
 		<td>The version of the detected framework or platform.</td>
 	</tr>

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Ribbon Backstage in Angular Ribbon component | Syncfusion
-description:  Learn here all about Ribbon Backstage in Syncfusion Angular Ribbon component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Backstage in Angular Ribbon | Syncfusion
+description: Learn how to add a Backstage view in the Angular Ribbon to display application-level information and settings like user details and options pages.
 control: Ribbon
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---     
 
-# Backstage in Angular Ribbon Component
+# Backstage in Angular Ribbon
 
-The Angular Ribbon component includes a Backstage view, which serves as a comprehensive replacement for the traditional file menu. It is designed to display application-level information and settings, such as user details, document properties, or options pages. The Backstage view is enabled by configuring the [backStageMenu](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#backstagemenu) property.
+The Angular Ribbon component includes a Backstage view, which serves as a comprehensive replacement for the traditional file menu. It is designed to display application-level information and settings, such as user details, document properties, or options pages. The Backstage view is enabled by configuring the [backStageMenu](https://ej2.syncfusion.com/angular/documentation/api/ribbon#backstagemenu) property.
 
 When active, backstage options are displayed in a list on the left, and the content for the selected option appears on the right.
 
 ## Adding backstage items
 
-Define and add items to the Backstage view by populating the [items](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#items) property. To display the Backstage, set the [visible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#visible) property to `true`. By default, the Backstage view is hidden.
+Define and add items to the Backstage view by populating the [items](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#items) property. To display the Backstage, set the [visible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#visible) property to `true`. By default, the Backstage view is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -35,7 +35,7 @@ Define and add items to the Backstage view by populating the [items](https://ej2
 
 ## Adding footer items
 
-To designate an item as a footer menu item, set its [isFooter](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageItemModel/#isfooter) property in the [items](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#items) collection to `true`.
+To designate an item as a footer menu item, set its [isFooter](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageItemModel#isfooter) property in the [items](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#items) collection to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +54,7 @@ To designate an item as a footer menu item, set its [isFooter](https://ej2.syncf
 
 ## Adding a separator
 
-Separators are horizontal lines used to visually group related items within the Backstage view. To add a separator, set the [separator](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageItemModel/#separator) property of a Backstage item to `true`.
+Separators are horizontal lines used to visually group related items within the Backstage view. To add a separator, set the [separator](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageItemModel#separator) property of a Backstage item to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,7 +73,7 @@ Separators are horizontal lines used to visually group related items within the 
 
 ## Back button customization
 
-Customize the text and icon of the Backstage view's close button using the [backButton](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#backbutton) property. The button's text is set with the [text](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageBackButtonModel/#text) property and its icon with the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageBackButtonModel/#iconcss) property. The back button is displayed by setting its [visible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageBackButtonModel/#visible) property to `true`.
+Customize the text and icon of the Backstage view's close button using the [backButton](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#backbutton) property. The button's text is set with the [text](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageBackButtonModel#text) property and its icon with the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageBackButtonModel#iconcss) property. The back button is displayed by setting its [visible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageBackButtonModel#visible) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,7 +92,7 @@ Customize the text and icon of the Backstage view's close button using the [back
 
 ## Backstage target element
 
-The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#target) property specifies the selector for the element where the Backstage view will be displayed. The target element must have its CSS `position` set to `relative`. If it does not, the Backstage will be positioned relative to the nearest parent element that has this styling. By default, the Backstage is positioned relative to the Ribbon element.
+The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#target) property specifies the selector for the element where the Backstage view will be displayed. The target element must have its CSS `position` set to `relative`. If it does not, the Backstage will be positioned relative to the nearest parent element that has this styling. By default, the Backstage is positioned relative to the Ribbon element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -111,7 +111,7 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backSta
 
 ## Customizing with templates
 
-The [template](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#template) property allows for complete customization of the Backstage view's menu items and their corresponding content area.
+The [template](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#template) property allows for complete customization of the Backstage view's menu items and their corresponding content area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,7 +130,7 @@ The [template](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backS
 
 ## Setting width and height
 
-The height and width of the Backstage view can be explicitly set using the [height](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#width) properties. If not set, the dimensions are calculated automatically based on the content.
+The height and width of the Backstage view can be explicitly set using the [height](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#width) properties. If not set, the dimensions are calculated automatically based on the content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
