@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable or disable TreeGrid and its actions in Angular TreeGrid component | Syncfusion
-description: Learn how to enable or disable the TreeGrid and its actions in the Syncfusion Angular TreeGrid component, including applying custom CSS to control user interaction.
+title: Angular TreeGrid Enable or Disable Actions | Syncfusion
+description: Learn how to enable or disable the Angular TreeGrid and its actions using custom CSS to control user interaction.
 platform: ej2-angular
 control: Enable disable treegrid and its actions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable or disable TreeGrid and its actions in Angular TreeGrid component
+# Enable or Disable TreeGrid Actions in Angular TreeGrid
 
 The TreeGrid and its actions can be enabled or disabled by applying or removing the appropriate CSS styles.
 

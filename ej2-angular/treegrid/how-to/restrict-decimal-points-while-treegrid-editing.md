@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Restrict decimal points while editing in Angular TreeGrid component | Syncfusion
-description: Learn how to restrict decimal points while editing in the Syncfusion Angular TreeGrid component using NumericTextBox configuration.
+title: Angular TreeGrid Decimal Point Restriction | Syncfusion
+description: Learn how to restrict decimal points while editing in the Angular TreeGrid using NumericTextBox configuration.
 platform: ej2-angular
 control: Restrict decimal points while treegrid editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict decimal points while editing in Angular TreeGrid component
+# Restrict Decimal Points While Editing in Angular TreeGrid
 
 By default, the NumericTextBox restricts input to two decimal places when editing a numeric column in the TreeGrid. To control the number of decimal points allowed, use the **validateDecimalOnType** and **decimals** properties of the NumericTextBox.
 

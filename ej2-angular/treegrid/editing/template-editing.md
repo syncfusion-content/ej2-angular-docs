@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template editing in Angular TreeGrid component | Syncfusion
-description: Learn here all about Template editing in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Template Editing | Syncfusion
+description: Learn how to use template editing in Angular TreeGrid to create custom edit forms with tailored layouts and controls.
 platform: ej2-angular
 control: Template editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template editing in Angular TreeGrid component
+# Template Editing in Angular TreeGrid
 
 ## Reactive forms
 

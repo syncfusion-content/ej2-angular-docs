@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customize column styles in Angular TreeGrid component | Syncfusion
-description: Learn how to customize column styles in the Syncfusion Angular TreeGrid component of Essential JS 2, including applying custom CSS to header and content cells using customAttributes.
+title: Angular TreeGrid Column Style Customization | Syncfusion
+description: Learn how to customize column styles in Angular TreeGrid using customAttributes, including applying custom CSS to header and content cells.
 platform: ej2-angular
 control: Customize column styles 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize column styles in Angular TreeGrid component
+# Customize Column Styles in Angular TreeGrid
 
-You can customize the appearance of the header and content of a specific column in the TreeGrid component by using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property.
+You can customize the appearance of the header and content of a specific column in the TreeGrid component by using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#customattributes) property.
 
 To customize a TreeGrid column, follow these steps:
 
@@ -37,7 +37,7 @@ Define a CSS class with the desired custom styles to override the default styles
 
 **Step 2**:
 
-Apply the custom CSS class to a specific column using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property.
+Apply the custom CSS class to a specific column using the [`customAttributes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#customattributes) property.
 
 ```typescript
 <e-column field='TaskName' headerText='Task Name' width='170' [customAttributes]='customAttributes'></e-column>

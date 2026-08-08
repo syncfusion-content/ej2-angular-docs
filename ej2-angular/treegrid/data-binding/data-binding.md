@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Data binding in Angular TreeGrid component | Syncfusion
-description: Learn about data binding in the Syncfusion Angular TreeGrid component, covering local and remote data integration, expand state mapping, and best practices.
+title: Angular TreeGrid Data Binding | Syncfusion
+description: Learn about data binding in the Angular TreeGrid, covering local and remote data integration, expand state mapping, and best practices.
 platform: ej2-angular
 control: Data binding
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular TreeGrid component
+# Data Binding in Angular TreeGrid
 
-The TreeGrid supports flexible data binding options, allowing integration with both local object arrays and remote RESTful JSON data services. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property with either a JavaScript object array or a `DataManager` instance.
+The TreeGrid supports flexible data binding options, allowing integration with both local object arrays and remote RESTful JSON data services. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property with either a JavaScript object array or a `DataManager` instance.
 
 TreeGrid provides two primary data binding methods:
 * Local data
@@ -22,7 +22,7 @@ To learn how to bind both local and remote data to the TreeGrid, watch this vide
 
 ## Binding with Ajax
 
-You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property to bind the data source to TreeGrid from external fetch request. The following code demonstrates fetching the data source from the server using a fetch request and binding it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property through the `onSuccess` event.
+You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property to bind the data source to TreeGrid from external fetch request. The following code demonstrates fetching the data source from the server using a fetch request and binding it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property through the `onSuccess` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,7 +42,7 @@ You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documenta
 
 ## Handling expandStateMapping
 
-To control the expanded or collapsed state of parent rows, assign the [`expandStateMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandstatemapping) property to the field in your data source that indicates the expansion state.
+To control the expanded or collapsed state of parent rows, assign the [`expandStateMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expandstatemapping) property to the field in your data source that indicates the expansion state.
 
 The `expandStateMapping` property should map to a boolean field (e.g., `true` for expanded, `false` for collapsed) in your data source, enabling the TreeGrid to render parent records in the appropriate state based on data values.
 
@@ -178,4 +178,4 @@ The following example demonstrates how to add and delete records from datasource
 
 {% previewsample "page.domainurl/samples/treegrid/refresh-datasource-cs2" %}
 
-> For further details, visit the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid) to explore its advanced capabilities. Additionally, explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to see data presentation and manipulation in action.
+> For further details, visit the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid) to explore its advanced capabilities. Additionally, explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/tailwind3/treegrid/treegrid-overview) to see data presentation and manipulation in action.

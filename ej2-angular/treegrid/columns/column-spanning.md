@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column spanning in Angular TreeGrid component | Syncfusion
-description: Learn here all about Column spanning in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Column Spanning | Syncfusion
+description: Learn how to configure column spanning in Angular TreeGrid, including merging cells and customizing column layouts.
 platform: ej2-angular
 control: Column spanning 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column spanning in Angular TreeGrid component
+# Column Spanning in Angular TreeGrid
 
 The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid allows merging adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 

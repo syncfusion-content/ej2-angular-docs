@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard in Angular TreeGrid component | Syncfusion
-description: Learn about clipboard operations in the Syncfusion Angular TreeGrid, including copying, pasting, hierarchy modes, and autofill for rows and cells.
+title: Angular TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in Angular TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 platform: ej2-angular
 control: Clipboard 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clipboard in Angular TreeGrid component
+# Clipboard in Angular TreeGrid
 
 The clipboard feature in the Syncfusion Angular TreeGrid provides options to copy and paste selected rows or cell data.
 
@@ -33,7 +33,7 @@ The following keyboard shortcuts are supported in the TreeGrid for clipboard ope
 
 ## Copy to clipboard using external buttons
 
-To copy selected rows or cell data to the clipboard with an external button, use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/clipboard/#copy) method.
+To copy selected rows or cell data to the clipboard with an external button, use the `copy` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +49,7 @@ To copy selected rows or cell data to the clipboard with an external button, use
 
 ## Copy hierarchy modes
 
-The TreeGrid supports several copy hierarchy modes, configurable via the [`copyHierarchyMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#copyHierarchymode) property:
+The TreeGrid supports several copy hierarchy modes, configurable via the [`copyHierarchyMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#copyHierarchymode) property:
 
 - **Parent** (default): Copies selected records along with their parent records. If no parent exists, only the selected record is copied.
 - **Child**: Copies selected records with their child records. If no child exists, only the selected record is copied.
@@ -72,7 +72,7 @@ The TreeGrid supports several copy hierarchy modes, configurable via the [`copyH
 
 ## AutoFill
 
-The AutoFill feature allows copying and pasting data to adjacent cells by dragging the autofill icon from the edge of a selected cell group. Enable this feature by setting the [`enableAutoFill`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enableautofill) property to **true**.
+The AutoFill feature allows copying and pasting data to adjacent cells by dragging the autofill icon from the edge of a selected cell group. Enable this feature by setting the [`enableAutoFill`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enableautofill) property to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +96,7 @@ The AutoFill feature allows copying and pasting data to adjacent cells by draggi
 
 ## Paste
 
-Content copied from TreeGrid cells can be pasted into other cells using <kbd>Ctrl + V</kbd>. Programmatic paste operations can be performed using the [`paste`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#paste) method, passing data, row index, and column index parameters.
+Content copied from TreeGrid cells can be pasted into other cells using <kbd>Ctrl + V</kbd>. Programmatic paste operations can be performed using the [`paste`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#paste) method, passing data, row index, and column index parameters.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -118,4 +118,4 @@ Content copied from TreeGrid cells can be pasted into other cells using <kbd>Ctr
 
 ---
 
-For more details, visit the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour or explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) for usage scenarios and data manipulation demonstrations.
+For more details, visit the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour or explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/tailwind3/treegrid/treegrid-overview) for usage scenarios and data manipulation demonstrations.

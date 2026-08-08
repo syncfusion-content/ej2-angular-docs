@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Select TreeGrid rows based on certain condition in Angular TreeGrid component | Syncfusion
-description: Learn how to select TreeGrid rows based on specific conditions using the selectRows method in the Syncfusion Angular TreeGrid component.
+title: Angular TreeGrid Conditional Row Selection | Syncfusion
+description: Learn how to select TreeGrid rows based on specific conditions using the selectRows method in the Angular TreeGrid component.
 platform: ej2-angular
 control: Select treegrid rows based on certain condition 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Select TreeGrid rows based on certain condition in Angular TreeGrid component
+# Select Rows Based on Conditions in Angular TreeGrid
 
-Rows can be selected in the TreeGrid based on specific conditions by using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectrows) method within the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event of the TreeGrid.
+Rows can be selected in the TreeGrid based on specific conditions by using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#selectrows) method within the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event of the TreeGrid.
 
 In the following example, only TreeGrid rows with a *Duration* column value greater than *4* are selected.
 

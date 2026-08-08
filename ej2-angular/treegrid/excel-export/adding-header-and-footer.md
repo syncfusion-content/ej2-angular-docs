@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adding header and footer in Angular TreeGrid component | Syncfusion
-description: Learn how to add headers and footers to Excel exports in the Syncfusion Angular TreeGrid component within Essential JS 2, including step-by-step configuration and best practices.
+title: Angular TreeGrid Add Headers and Footers to Excel Export | Syncfusion
+description: Learn how to add headers and footers to Excel exports in Angular TreeGrid, including configuration, customization, and export options.
 platform: ej2-angular
 control: Adding header and footer 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding header and footer in Angular TreeGrid component
+# Adding Headers and Footers in Angular TreeGrid
 
 Excel export in the TreeGrid component allows including custom header and footer content in the exported Excel document. This feature supports adding contextual information, company branding, or additional notes to the beginning and end of the exported data, enhancing the document's usefulness and presentation.
 

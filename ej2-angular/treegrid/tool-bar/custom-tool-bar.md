@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom tool bar in Angular TreeGrid component | Syncfusion
-description: Learn how to add and configure custom toolbars in the Syncfusion Angular TreeGrid component, including event handling, alignment, and mixing with built-in items.
+title: Angular TreeGrid Custom Toolbar | Syncfusion
+description: Learn how to add and configure custom toolbars in the Angular TreeGrid, including event handling, alignment, and mixing with built-in items.
 platform: ej2-angular
 control: Custom tool bar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom tool bar in Angular TreeGrid component
+# Custom Toolbar in Angular TreeGrid
 
 Custom toolbar items can be added to the TreeGrid by defining the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property as a collection of [`ItemModels`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/).
 Actions for these custom toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) event.

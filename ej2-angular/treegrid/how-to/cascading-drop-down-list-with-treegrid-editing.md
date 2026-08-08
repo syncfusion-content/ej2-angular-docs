@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cascading drop down list with TreeGrid editing in Angular TreeGrid component | Syncfusion
-description: Learn how to implement cascading drop down lists with editing in the Syncfusion Angular TreeGrid component of Essential JS 2 using cell edit templates.
+title: Angular TreeGrid Cascading Drop-Down Editing | Syncfusion
+description: Learn how to implement cascading drop down lists with editing in the Angular TreeGrid of Essential JS 2 using cell edit templates.
 platform: ej2-angular
 control: Cascading drop down list with treegrid editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cascading drop down list with TreeGrid editing in Angular TreeGrid component
+# Cascading Drop-Down Lists with Editing in Angular TreeGrid
 
 A cascading DropDownList can be achieved with editing in the TreeGrid component by using the Cell Edit Template feature.
 

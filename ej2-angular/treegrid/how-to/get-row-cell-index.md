@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Get row cell index in Angular TreeGrid component | Syncfusion
-description: Learn how to get the specific row and cell index in the Syncfusion Angular TreeGrid component using the rowSelected event and element attributes.
+title: Angular TreeGrid Row Cell Index | Syncfusion
+description: Learn how to get the specific row and cell index in the Angular TreeGrid using the rowSelected event and element attributes.
 platform: ej2-angular
 control: Get row cell index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get row cell index in Angular TreeGrid component
+# Get Row Cell Index in Angular TreeGrid
 
 The specific row and cell indices of the TreeGrid can be retrieved using the [`rowSelected`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowselected) event. The row index is determined by the *aria-rowindex* attribute of the *tr* element, and the cell (column) index is obtained from the *aria-colindex* attribute of the *td* element.
 

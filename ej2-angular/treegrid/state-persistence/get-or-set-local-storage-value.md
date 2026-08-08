@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Get or set local storage value in Angular TreeGrid component | Syncfusion
-description: Learn how to get and set local storage values for the Syncfusion Angular TreeGrid component using enablePersistence and standard browser APIs.
+title: Angular TreeGrid Local Storage Persistence | Syncfusion
+description: Learn how to get and set local storage values for the Angular TreeGrid component using enablePersistence and standard browser APIs.
 platform: ej2-angular
 control: Get or set local storage value
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get or set local storage value in Angular TreeGrid component
+# Get or Set Local Storage Values in Angular TreeGrid
 
 When the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablepersistence) property is set to `true`, the TreeGrid's state and property values are automatically saved in `window.localStorage`. This allows you to restore the component's state between sessions.
 

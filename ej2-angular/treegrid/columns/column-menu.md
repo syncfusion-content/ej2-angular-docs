@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column menu in Angular TreeGrid component | Syncfusion
-description: Learn here all about Column menu in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Column Menu | Syncfusion
+description: Learn how to use the column menu in Angular TreeGrid for sorting, filtering, column visibility, and other column actions.
 platform: ej2-angular
 control: Column menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column menu in Angular TreeGrid component
+# Column Menu in Angular TreeGrid
 
 The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides options to enable features such as sorting, filtering, column chooser, and autofit. When the column header's menu icon is clicked, a menu displays with these integrated features. To enable the column menu, set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid#showcolumnmenu) property to **true** in the TreeGrid configuration.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Detail template in Angular TreeGrid component | Syncfusion
-description: Learn here all about Detail template in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Detail Template | Syncfusion
+description: Learn how to use detail templates in Angular TreeGrid to display expandable row content, nested data, and custom detail views.
 platform: ej2-angular
 control: Detail template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Detail template in Angular TreeGrid component
+# Detail Template in Angular TreeGrid
 
 The detail template in the TreeGrid component allows displaying additional information about a specific row in the TreeGrid. This feature is useful when additional data or custom content needs to be shown that is specific to each row in the TreeGrid. The [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detailtemplate) property can be used to define an HTML template for the detail row. This template can include any HTML element or Angular component that needs to be displayed as detail content.
 

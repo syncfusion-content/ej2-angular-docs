@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Check box selection in Angular TreeGrid component | Syncfusion
-description: Learn how to enable and configure checkbox selection in theAngular TreeGrid component, including selection modes, persistence
+title: Angular TreeGrid Checkbox Selection | Syncfusion
+description: Learn how to enable and configure checkbox selection in Angular TreeGrid, including selection modes, persist selection, and checkbox behavior.
 platform: ej2-angular
 control: Check box selection
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check box selection in Angular TreeGrid component
+# Checkbox Selection in Angular TreeGrid
 
 Checkbox Selection provides an option to select multiple TreeGrid records with help of checkbox in each row.
 

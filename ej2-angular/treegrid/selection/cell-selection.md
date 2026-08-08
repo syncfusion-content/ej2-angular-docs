@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell selection in Angular TreeGrid component | Syncfusion
-description: Learn how to perform cell selection in the Syncfusion Angular TreeGrid component, including selection modes, programmatic APIs, and retrieving selected cell indexes.
+title: Angular TreeGrid Cell Selection | Syncfusion
+description: Learn how to perform cell selection in the Angular TreeGrid, including selection modes, programmatic APIs, and retrieving selected cell indexes.
 platform: ej2-angular
 control: Cell selection
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell selection in Angular TreeGrid component
+# Cell Selection in Angular TreeGrid
 
 Cell selection in the TreeGrid can be performed using either mouse (click and drag) or keyboard arrow keys (up, down, left, right).
 

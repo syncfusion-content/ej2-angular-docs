@@ -1,14 +1,14 @@
 ---
 layout: post
-title: PDF export in Angular TreeGrid component | Syncfusion
-description: Learn how to enable and use PDF export in the Syncfusion Angular TreeGrid component, including showing a spinner and providing a custom data source.
+title: Angular TreeGrid PDF Export | Syncfusion
+description: Learn how to enable and use PDF export in the Angular TreeGrid, including showing a spinner and providing a custom data source.
 platform: ej2-angular
 control: PDF export 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PDF export in Angular TreeGrid component
+# PDF Export in Angular TreeGrid
 
 The PDF export feature allows you to export TreeGrid data to a PDF document. To enable this functionality, set the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowpdfexport) property to `true`. Exporting is initiated by calling the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pdfexport) method.
 

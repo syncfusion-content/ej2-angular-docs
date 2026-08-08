@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row spanning in Angular TreeGrid component | Syncfusion
-description: Learn here all about Row spanning in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Row Spanning | Syncfusion
+description: Learn how to use row spanning in Angular TreeGrid to merge cells across rows and create customized data layouts and presentations.
 platform: ej2-angular
 control: Row spanning 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row spanning in Angular TreeGrid component
+# Row Spanning in Angular TreeGrid
 
 The row spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid allows merging cells in the same column vertically, creating a visually appealing and informative layout. By defining the `rowSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 

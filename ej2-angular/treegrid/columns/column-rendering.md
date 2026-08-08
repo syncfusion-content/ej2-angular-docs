@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Column rendering in Angular TreeGrid component | Syncfusion
-description: Learn here all about column rendering in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Column Rendering | Syncfusion
+description: Learn how to define columns manually and customize column rendering in Angular TreeGrid. Explore column configuration and rendering options.
 platform: ej2-angular
 control: Columns 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Rendering
+# Column Rendering in Angular TreeGrid
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid, column rendering provides the ability to precisely control how data is presented. This allows manual column definition, automatic column generation, and dynamic customization of data presentation. With column rendering, data can be displayed exactly as needed, offering extensive possibilities for organizing and showcasing information within the TreeGrid.
 
-The column definitions serve as the data source schema in the TreeGrid. TreeGrid operations, such as sorting and filtering, are performed based on column definitions. The [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) property of the TreeGrid column is necessary to map the data source values in the TreeGrid columns.
+The column definitions serve as the data source schema in the TreeGrid. TreeGrid operations, such as sorting and filtering, are performed based on column definitions. The [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) property of the TreeGrid column is necessary to map the data source values in the TreeGrid columns.
 
-> 1. If the column `field` is not specified in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource), the column values will be empty.
-> 2. If the `field` name contains **dot** operator, it is considered as [complex binding](../columns/column-rendering/#complex-data-binding).
+> 1. If the column `field` is not specified in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource), the column values will be empty.
+> 2. If the `field` name contains **dot** operator, it is considered as [complex binding](../columns/column-rendering#complex-data-binding).
 > 3. The `field` property must be defined for a template column to perform CRUD or data operations such as filtering and searching.
 
 ## Define columns manually 
 
-To define columns manually in the TreeGrid, use the `e-columns` element to define the columns and represent each column with its respective properties such as [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field), [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertext), [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type), and [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#width) set accordingly. This allows customization of the column's behavior and appearance based on requirements.
+To define columns manually in the TreeGrid, use the `e-columns` element to define the columns and represent each column with its respective properties such as [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field), [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertext), [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type), and [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#width) set accordingly. This allows customization of the column's behavior and appearance based on requirements.
 
 The following example demonstrates how to define columns manually in the TreeGrid:
 
@@ -52,12 +52,12 @@ The following example demonstrates auto-generated columns in the TreeGrid:
 
 {% previewsample "page.domainurl/samples/treegrid/auto-generated-cs1" %}
 
->* When columns are auto-generated, the column [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) is determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource).
->* For large datasets, auto-generating columns can result in performance issues. In such cases, it is recommended to specify columns manually in the columns property during initialization or use column virtualization by setting [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecolumnvirtualization) property to **true**.
+>* When columns are auto-generated, the column [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) is determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource).
+>* For large datasets, auto-generating columns can result in performance issues. In such cases, it is recommended to specify columns manually in the columns property during initialization or use column virtualization by setting [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablecolumnvirtualization) property to **true**.
 
 ### Set Primary Key for auto generated columns when editing is enabled
 
-When editing is enabled in the TreeGrid, a primary key must be set for auto-generated columns to uniquely identify each row for operations such as updating or deleting data. This can be achieved using the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property of the column object through the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event.
+When editing is enabled in the TreeGrid, a primary key must be set for auto-generated columns to uniquely identify each row for operations such as updating or deleting data. This can be achieved using the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isprimarykey) property of the column object through the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event.
 
 By setting `isPrimaryKey` to **true** for an auto-generated column in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, it can be specified as the primary key column, which uniquely identifies each row when editing is enabled.
 
@@ -74,7 +74,7 @@ The following example demonstrates how to set a primary key for an auto-generate
   
 {% previewsample "page.domainurl/samples/treegrid/auto-generated-cs2" %}
 
-If the column [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) name is known, the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyfield) method can be used to retrieve the column object. Then, the `isPrimaryKey` property can be set to **true** for that column, as demonstrated below:
+If the column [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) name is known, the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnbyfield) method can be used to retrieve the column object. Then, the `isPrimaryKey` property can be set to **true** for that column, as demonstrated below:
 
 ```typescript
 onDataBound(event: any): void {
@@ -85,7 +85,7 @@ onDataBound(event: any): void {
 
 ### Set column options to auto generated columns
 
-To configure column options such as [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type), [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) and [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#width) for auto-generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, use the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event of the TreeGrid component. This event is triggered after the data has been bound to the TreeGrid. By handling this event, the desired column options can be specified for the auto-generated columns.
+To configure column options such as [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type), [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format) and [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#width) for auto-generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, use the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event of the TreeGrid component. This event is triggered after the data has been bound to the TreeGrid. By handling this event, the desired column options can be specified for the auto-generated columns.
 
 The following example demonstrates how to set column options for auto-generated columns using the `dataBound` event:
 
@@ -108,7 +108,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows d
 
 ### Using ngFor directive
 
-To create dynamically generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component using the ngFor directive, first define an array of column objects in the component.ts file. Each column object should include a [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertext) property, which will be used to bind the corresponding properties of the **e-column** component.
+To create dynamically generated columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component using the ngFor directive, first define an array of column objects in the component.ts file. Each column object should include a [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertext) property, which will be used to bind the corresponding properties of the **e-column** component.
 
 The following example demonstrates dynamic column generation in the TreeGrid using the ngFor directive:
 
@@ -125,7 +125,7 @@ The following example demonstrates dynamic column generation in the TreeGrid usi
 
 ### Using valueAccessor property
 
-Dynamic column generation using value accessor allows accessing and manipulating the display data values in a TreeGrid column. By using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#valueaccessor) property of a TreeGrid column, the display value of the column can be customized based on the data.
+Dynamic column generation using value accessor allows accessing and manipulating the display data values in a TreeGrid column. By using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#valueaccessor) property of a TreeGrid column, the display value of the column can be customized based on the data.
 
 To use the `valueAccessor` property, define the column with the property and provide a function that will return the formatted value. The function receives two arguments:
 * **field**: represents the data field of the column.
@@ -148,7 +148,7 @@ In the following example, the **currencyFormatter** function takes the price val
 
 ### Display array type columns
 
-The TreeGrid component allows easy binding of an array of objects to a column using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#valueaccessor) property. This property allows customization of how the data is displayed in the column.
+The TreeGrid component allows easy binding of an array of objects to a column using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#valueaccessor) property. This property allows customization of how the data is displayed in the column.
 
 For example, consider a column named **Name** that contains an array of two objects, **FirstName** and **LastName**. The `valueAccessor` property can be used to join these two objects and bind them to the column.
 
@@ -169,9 +169,9 @@ This displays the concatenated value of **FirstName** and **LastName** in the **
 
 ### Expression column
 
-An expression column can be achieved in the TreeGrid by using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#valueaccessor) property. The `valueAccessor` property allows definition of a function that calculates the value for the expression column based on the values of other columns.
+An expression column can be achieved in the TreeGrid by using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#valueaccessor) property. The `valueAccessor` property allows definition of a function that calculates the value for the expression column based on the values of other columns.
 
-In this example, the TreeGrid has columns **orderID**, **orderName**, **units**, and **unitprice**. An expression column called **Total price** is added that calculates the total prices for each row based on the values of **units** and **unitprice** columns.
+In this example, the TreeGrid has columns **orderID**, **orderName**, **units**, and **unitPrice**. An expression column called **Total price** is added that calculates the total prices for each row based on the values of **units** and **unitPrice** columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -188,9 +188,9 @@ In this example, the TreeGrid has columns **orderID**, **orderName**, **units**,
 
 ### Display serial number
 
-To display serial numbers in the TreeGrid for every row, the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) event can be used. The `rowDataBound` event is triggered for each row in the TreeGrid when the data is bound to the TreeGrid.
+To display serial numbers in the TreeGrid for every row, the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) event can be used. The `rowDataBound` event is triggered for each row in the TreeGrid when the data is bound to the TreeGrid.
 
-Within the event handler, the [pagesize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel/#pagesize) and [currentPage](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel/#currentpage) index can be obtained from the TreeGrid's [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pagesettings) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
+Within the event handler, the [pagesize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#pagesize) and [currentPage](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#currentpage) index can be obtained from the TreeGrid's [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pagesettings) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
 
 The following example demonstrates how to display serial numbers in a TreeGrid using the `rowDataBound` event:
 
@@ -209,7 +209,7 @@ The following example demonstrates how to display serial numbers in a TreeGrid u
 
 ## Complex data binding
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows complex data binding by using the dot (.) operator in the [column.field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field). This feature is particularly useful when dealing with nested or complex data structures.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows complex data binding by using the dot (.) operator in the [column.field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field). This feature is particularly useful when dealing with nested or complex data structures.
 
 ### Using local data
 
@@ -232,7 +232,7 @@ In the following example, the nested **Task** object's **firstName** and **lastN
 
 ### Using remote data
 
-To enable complex data binding in the TreeGrid component using remote data, add the [expand](https://ej2.syncfusion.com/documentation/api/data/query/#expand) query to the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#query) property of the TreeGrid to eager load the complex data. The following example demonstrates how to achieve complex data binding using remote data:
+To enable complex data binding in the TreeGrid component using remote data, add the [expand](https://ej2.syncfusion.com/documentation/api/data/query#expand) query to the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid#query) property of the TreeGrid to eager load the complex data. The following example demonstrates how to achieve complex data binding using remote data:
 
 In the following example, the `expand` query is used to load the nested Tasks object's **Name** property using the dot (.) operator.
 

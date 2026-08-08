@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Checkbox Column in Angular TreeGrid component | Syncfusion
-description: Learn here all about Checkbox column in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Checkbox Column | Syncfusion
+description: Learn how to enable and customize checkbox columns in Angular TreeGrid, including row selection and checkbox behavior.
 platform: ej2-angular
 control: Checkbox Columns  
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox Column in Angular TreeGrid component
+# Checkbox Column in Angular TreeGrid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component supports checkbox selection in the tree column with hierarchical selection functionality using the [autoCheckHierarchy](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#autocheckhierarchy) property and the showCheckbox property of the column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component supports checkbox selection in the tree column with hierarchical selection functionality using the [autoCheckHierarchy](https://ej2.syncfusion.com/angular/documentation/api/treegrid#autocheckhierarchy) property and the showCheckbox property of the column.
 
-When the `autoCheckHierarchy` property is enabled, selecting a parent record's checkbox automatically selects all checkboxes of its child records, maintaining the hierarchical relationship. Checkboxes can be rendered only in the tree column by setting the [column.showCheckbox](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#showcheckbox) property to true.
+When the `autoCheckHierarchy` property is enabled, selecting a parent record's checkbox automatically selects all checkboxes of its child records, maintaining the hierarchical relationship. Checkboxes can be rendered only in the tree column by setting the [column.showCheckbox](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#showcheckbox) property to true.
 
 The following example demonstrates the hierarchical selection of checkboxes in the TreeGrid by enabling the `autoCheckHierarchy` and `column.showCheckbox` properties.
 
@@ -122,7 +122,7 @@ The following example demonstrates hiding checkboxes for child rows in the TreeG
 
 The TreeGrid enables customization of row background color when checkbox selection changes using the [checkboxChange](https://ej2.syncfusion.com/angular/documentation/api/treegrid#checkboxchange) event. This provides visual feedback for selected rows based on checkbox interactions.
 
-The [checkboxChange](https://ej2.syncfusion.com/angular/documentation/api/treegrid#checkboxchange) event provides access to the row element through the [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getrowbyindex) method, enabling background color modification based on checkbox selection state.
+The [checkboxChange](https://ej2.syncfusion.com/angular/documentation/api/treegrid#checkboxchange) event provides access to the row element through the [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getrowbyindex) method, enabling background color modification based on checkbox selection state.
 
 The following example demonstrates customizing the background color of selected rows using the checkboxChange event and getRowByIndex method. The row element is obtained and the background color is changed by adding or removing CSS classes. The styles are defined based on the CSS class in the stylesheet.
 
