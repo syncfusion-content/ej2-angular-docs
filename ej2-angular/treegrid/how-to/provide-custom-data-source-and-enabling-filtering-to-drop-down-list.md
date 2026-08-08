@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Provide custom data source and enable filtering for DropDownList in Angular TreeGrid component | Syncfusion
-description: Learn how to provide a custom data source and enable filtering for DropDownList in the Syncfusion Angular TreeGrid component with column edit parameters.
+title: Angular TreeGrid DropDownList Data & Filtering | Syncfusion
+description: Learn how to provide a custom data source and enable filtering for DropDownList in the Angular TreeGrid with column edit parameters.
 platform: ej2-angular
 control: Provide custom data source and enabling filtering to drop down list 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Provide custom data source and enable filtering for DropDownList in Angular TreeGrid component
+# Custom Data Source and Filtering for DropDownList in Angular TreeGrid
 
-A custom data source can be provided to the DropDownList by using the **params** property within [`columns.edit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) settings.
+A custom data source can be provided to the DropDownList by using the **params** property within [`columns.edit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#edit) settings.
 
 When specifying a new data source in the edit params, a new **query** property must be defined for the DropDownList as shown below:
 
@@ -26,9 +26,9 @@ When specifying a new data source in the edit params, a new **query** property m
   };
 ```
 
-Filtering can be enabled for the DropDownList by setting the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#allowfiltering) property to **true** in the edit params.
+Filtering can be enabled for the DropDownList by setting the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) property to **true** in the edit params.
 
-The following demo demonstrates rendering the DropDownList with a custom [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#datasource) for the *Priority* column, with filtering enabled to allow searching DropDownList items.
+The following demo demonstrates rendering the DropDownList with a custom [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#datasource) for the *Priority* column, with filtering enabled to allow searching DropDownList items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

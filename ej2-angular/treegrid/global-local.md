@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Global localization in Angular TreeGrid component | Syncfusion
-description: Learn about global localization in the Syncfusion Angular TreeGrid component, including localization, internationalization, and RTL support.
+title: Angular TreeGrid Global Localization | Syncfusion
+description: Learn how to implement global localization in Angular TreeGrid, including internationalization, localization, and RTL language support.
 platform: ej2-angular
 control: Global local
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Global localization in Angular TreeGrid component
+# Global Localization in Angular TreeGrid
 
 ## Localization
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tool bar in Angular TreeGrid component | Syncfusion
-description: Learn about using and customizing the toolbar in the Syncfusion Angular TreeGrid component, including enabling/disabling items, adding toolbars at different positions, and toolbar templates.
+title: Angular TreeGrid Toolbar | Syncfusion
+description: Learn how to customize the toolbar in Angular TreeGrid, including item control, toolbar placement, and toolbar templates.
 platform: ej2-angular
 control: Tool bar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool bar in Angular TreeGrid component
+# Toolbar in Angular TreeGrid
 
 The TreeGrid provides toolbar support to handle various actions. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property accepts a collection of built-in toolbar items, [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/) objects for custom items, or the HTML element ID for a toolbar template.
 

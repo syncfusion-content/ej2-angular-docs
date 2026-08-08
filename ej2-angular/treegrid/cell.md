@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell in Angular TreeGrid component | Syncfusion
-description: Learn about cell customization, formatting, tooltips, and styling in the Syncfusion Angular TreeGrid, including clip mode, autowrap, and cell templates.
+title: Angular TreeGrid Cells | Syncfusion
+description: Learn how to customize and format cells in Angular TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
 platform: ej2-angular
 control: Cell 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell in Angular TreeGrid component
+# Cells in Angular TreeGrid
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid, a **cell** represents the intersection of a row and a column, displaying specific data associated with that row and column. Each cell can contain text, numbers, or other content relevant to the underlying data.
 
@@ -16,9 +16,9 @@ The TreeGrid component enables comprehensive customization of cell appearance an
 
 ## Displaying HTML content
 
-Displaying HTML content in the TreeGrid is helpful when presenting formatted data such as images, links, or tables. By default, HTML content is encoded to prevent security vulnerabilities. To render HTML tags within cells, set the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#disablehtmlencode) property to **true** for the required column. Disabling encoding allows HTML tags to be rendered as HTML within the TreeGrid.
+Displaying HTML content in the TreeGrid is helpful when presenting formatted data such as images, links, or tables. By default, HTML content is encoded to prevent security vulnerabilities. To render HTML tags within cells, set the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#disablehtmlencode) property to **true** for the required column. Disabling encoding allows HTML tags to be rendered as HTML within the TreeGrid.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to enable or disable the `disableHtmlEncode` property. Toggling the switch triggers the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event, which updates the column property and calls the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshcolumns) method to update content rendering.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to enable or disable the `disableHtmlEncode` property. Toggling the switch triggers the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event, which updates the column property and calls the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns) method to update content rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,10 +31,10 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
   
 {% previewsample "page.domainurl/samples/treegrid/cell-cs1" %}
 
-> - The [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#disablehtmlencode) property disables HTML encoding for the specified column.
+> - The [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#disablehtmlencode) property disables HTML encoding for the specified column.
 > - If set to **false**, HTML tags in the column's data are rendered. If set to **true**, HTML tags are displayed as plain text.
-> - Disabling HTML encoding may introduce security risks (such as XSS). Use [enableHtmlSanitizer](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablehtmlsanitizer) to mitigate vulnerabilities.
-> - Column properties can be controlled at runtime via the [getColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumns) method and [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) events.
+> - Disabling HTML encoding may introduce security risks (such as XSS). Use [enableHtmlSanitizer](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablehtmlsanitizer) to mitigate vulnerabilities.
+> - Column properties can be controlled at runtime via the [getColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumns) method and [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) events.
 
 ```typescript
 change(args) {
@@ -51,12 +51,12 @@ change(args) {
 
 The auto wrap feature ensures that cell content wraps to the next line when exceeding the defined cell width. Wrapping behavior is determined by available whitespace and column width settings.
 
-To enable auto wrap, set the [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowtextwrap) property to **true**. The wrap behavior can be further defined by [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/textWrapSettings/#wrapmode):
+To enable auto wrap, set the [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowtextwrap) property to **true**. The wrap behavior can be further defined by [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/textWrapSettings#wrapmode):
 - **Both**: (default) Wraps header and content text.
 - **Header**: Wraps only header text.
 - **Content**: Wraps only content cells.
 
-The following example demonstrates configuring `allowTextWrap` and dynamically changing wrap modes using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event.
+The following example demonstrates configuring `allowTextWrap` and dynamically changing wrap modes using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,7 +71,7 @@ The following example demonstrates configuring `allowTextWrap` and dynamically c
 
 > - Column width influences the auto wrap result. If not specified, wrapping adjusts to the TreeGrid's width.
 > - If header text lacks whitespace, wrapping may not occur.
-> - HTML tags within cell content may affect wrapping. For these cases, consider using [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template).
+> - HTML tags within cell content may affect wrapping. For these cases, consider using [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#template).
 
 ## Customize cell styles
 
@@ -79,7 +79,7 @@ TreeGrid cell styling can be tailored using several approaches: event handlers, 
 
 ### Using event
 
-To programmatically customize cell appearance as it renders, use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event. This event provides cell context for custom CSS logic.
+To programmatically customize cell appearance as it renders, use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) event. This event provides cell context for custom CSS logic.
 
 In the following example, a `queryCellInfo` event handler assigns custom classes to the **progress** field based on value:
 
@@ -122,7 +122,7 @@ The following example customizes selection appearance using a class name:
 
 ### Using property
 
-The [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property in a column definition applies custom attributes or class names to all cells in that column.
+The [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#customattributes) property in a column definition applies custom attributes or class names to all cells in that column.
 
 ```css
 .e-customcss {
@@ -149,9 +149,9 @@ The example below demonstrates custom styling for **taskID** and **startDate** c
 
 ### Using methods
 
-Use [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getheadercontent) to access and style column headers, or [getCellFromIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcellfromindex) for specific cell styling.
+Use [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getheadercontent) to access and style column headers, or [getCellFromIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcellfromindex) for specific cell styling.
 
-The following example shows how to use [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyindex) and [getCellFromIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcellfromindex) inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event:
+The following example shows how to use [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyindex) and [getCellFromIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcellfromindex) inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,13 +168,13 @@ The following example shows how to use [getColumnHeaderByIndex](https://ej2.sync
 
 ## Clip mode
 
-When cell content exceeds cell width, the [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#clipmode) property defines how overflow is handled:
+When cell content exceeds cell width, the [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#clipmode) property defines how overflow is handled:
 
 - **Clip**: Truncates content beyond cell boundaries.
 - **Ellipsis**: Shows an ellipsis for overflow content.
 - **EllipsisWithTooltip**: Shows ellipsis and displays the full content as a tooltip on hover.
 
-The following example configures the `clipMode` property and updates its value dynamically using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event, with [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshcolumns):
+The following example configures the `clipMode` property and updates its value dynamically using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event, with [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns):
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,8 +187,8 @@ The following example configures the `clipMode` property and updates its value d
   
 {% previewsample "page.domainurl/samples/treegrid/cell-cs7" %}
 
-> - The default [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#clipmode) is **Ellipsis**.
-> - When setting [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#width), clip mode activates automatically if content overflows.
+> - The default [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#clipmode) is **Ellipsis**.
+> - When setting [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#width), clip mode activates automatically if content overflows.
 > - The “Clip” mode may cause information loss—prefer “Ellipsis” or “EllipsisWithTooltip” for better accessibility.
 
 ## Tooltip
@@ -197,7 +197,7 @@ The TreeGrid supports contextual information via tooltips on cells and columns.
 
 ### Render Bootstrap tooltip in grid cells
 
-To use Bootstrap tooltips, include the Bootstrap CSS and JavaScript via CDN or npm, then initialize the tooltip in Angular's `ngAfterViewChecked` lifecycle.
+To use Bootstrap tooltips, include the Bootstrap CSS and JavaScript via CDN or npm, then initialize the tooltip in Angular's `ngAfterViewChecked` life cycle.
 
 Install Bootstrap and jQuery:
 
@@ -271,7 +271,7 @@ export class AppComponent implements AfterViewChecked {
 
 ### Display custom tooltip for columns
 
-Use the [EJ2 Tooltip](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started) component to render TreeGrid tooltips, setting the target to `.e-rowcell`. Update tooltip content in the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#beforerender) event:
+Use the [EJ2 Tooltip](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started) component to render TreeGrid tooltips, setting the target to `.e-rowcell`. Update tooltip content in the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/tooltip#beforerender) event:
 
 ```typescript
 beforeRender(args): void {
@@ -296,7 +296,7 @@ The following example demonstrates customizing tooltip content with EJ2 Tooltip:
 
 ## Grid lines
 
-The [gridLines](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#gridlines) property controls the display of horizontal and vertical grid lines:
+The [gridLines](https://ej2.syncfusion.com/angular/documentation/api/treegrid#gridlines) property controls the display of horizontal and vertical grid lines:
 
 | Modes      | Actions                                                |
 |------------|--------------------------------------------------------|
@@ -306,7 +306,7 @@ The [gridLines](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#g
 | Vertical   | Shows only vertical grid lines.                        |
 | Default    | Follows the theme's default grid line setting.         |
 
-The example below demonstrates dynamic grid line selection via dropdown using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event:
+The example below demonstrates dynamic grid line selection via dropdown using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

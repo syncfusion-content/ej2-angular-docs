@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Remote data in Angular TreeGrid component | Syncfusion
-description: Learn how to bind remote data in the Syncfusion Angular TreeGrid component, including load on demand, paging, virtualization, adaptors, and error handling.
+title: Angular TreeGrid Remote Data | Syncfusion
+description: Learn how to bind remote data in the Angular TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling.
 platform: ej2-angular
 control: Remote data
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remote data in Angular TreeGrid component
+# Remote Data in Angular TreeGrid
 
-To bind remote data to the TreeGrid component, assign a `DataManager` instance as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property. To interact with a remote data source, provide the service endpoint `url` and define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property of the TreeGrid.
+To bind remote data to the TreeGrid component, assign a `DataManager` instance as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property. To interact with a remote data source, provide the service endpoint `url` and define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#haschildmapping) property of the TreeGrid.
 
-The [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property maps to the field in your data source that denotes whether a record contains child records. This property is essential for displaying the expand icon and supporting child data loading on demand.
+The [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#haschildmapping) property maps to the field in your data source that denotes whether a record contains child records. This property is essential for displaying the expand icon and supporting child data loading on demand.
 
 ## Load on demand with remote data
 
@@ -154,7 +154,7 @@ namespace Controllers
 
 ## LoadChildOnDemand
 
-When binding remote data, parent rows are rendered in a collapsed state by default. Set [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#loadchildondemand) to `false` to load and expand all levels initially. When set to `true`, parent records remain collapsed and load their children only on demand.
+When binding remote data, parent rows are rendered in a collapsed state by default. Set [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#loadchildondemand) to `false` to load and expand all levels initially. When set to `true`, parent records remain collapsed and load their children only on demand.
 
 Child records must be handled on the server side to support load on demand and related CRUD operations.
 
@@ -294,7 +294,7 @@ You can extend DataManager’s adaptors to implement custom data processing—su
 
 ## Sending additional parameters to the server
 
-To send custom parameters with your remote data requests, use the `addParams` method of the `Query` class. Attach your configured `Query` object to the TreeGrid’s [`query`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#query) property.
+To send custom parameters with your remote data requests, use the `addParams` method of the `Query` class. Attach your configured `Query` object to the TreeGrid’s [`query`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#query) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -309,7 +309,7 @@ To send custom parameters with your remote data requests, use the `addParams` me
 
 ## Handling HTTP errors
 
-Handle exceptions and errors from the server using the TreeGrid’s [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event. The argument to `actionFailure` contains error details from the server or sync errors from client actions.
+Handle exceptions and errors from the server using the TreeGrid’s [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionfailure) event. The argument to `actionFailure` contains error details from the server or sync errors from client actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -322,15 +322,15 @@ Handle exceptions and errors from the server using the TreeGrid’s [`actionFail
 
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs8" %}
 
-> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionfailure) event is triggered on both server-side and in-client exceptions during TreeGrid actions.
+> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionfailure) event is triggered on both server-side and in-client exceptions during TreeGrid actions.
 
 ## Load on demand with virtualization
 
 While binding remote data to Tree Grid component, by default Tree Grid renders parent rows in collapsed state. When expanding the root node, the child nodes will be loaded from the remote server.
 
-When using virtualization with remote data binding, it helps you to improve the tree grid performance while loading a large set of data by setting [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablevirtualization) as true. The Tree Grid UI virtualization allows it to render only rows and columns visible within the view-port without buffering the entire datasource.
+When using virtualization with remote data binding, it helps you to improve the tree grid performance while loading a large set of data by setting [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablevirtualization) as true. The Tree Grid UI virtualization allows it to render only rows and columns visible within the view-port without buffering the entire datasource.
 
-[`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
+[`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -667,9 +667,9 @@ public class TreeData
 
 ### Load parent rows in expanded state with virtualization
 
-Tree Grid provides an option to load the child records in the initial rendering itself for remote data binding by setting the [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#loadchildondemand) as true. When the `loadChildOnDemand` is enabled, parent records are rendered in expanded state.
+Tree Grid provides an option to load the child records in the initial rendering itself for remote data binding by setting the [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#loadchildondemand) as true. When the `loadChildOnDemand` is enabled, parent records are rendered in expanded state.
 
-When using virtualization with `loadChildOnDemand` , it helps you to improve the tree grid performance while loading the child records during the initial rendering for remote data binding by setting [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablevirtualization) as true and `loadChildOnDemand` as true.
+When using virtualization with `loadChildOnDemand` , it helps you to improve the tree grid performance while loading the child records during the initial rendering for remote data binding by setting [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablevirtualization) as true and `loadChildOnDemand` as true.
 
 ```typescript
 

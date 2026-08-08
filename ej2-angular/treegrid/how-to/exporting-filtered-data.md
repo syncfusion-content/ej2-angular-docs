@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting filtered data in Angular TreeGrid component | Syncfusion
-description: Learn how to export filtered data in the Syncfusion Angular TreeGrid component, including specifying filtered results using PdfExportProperties for exporting.
+title: Angular TreeGrid Filtered Data Export | Syncfusion
+description: Learn how to export filtered data in the Angular TreeGrid, including specifying filtered results using PdfExportProperties for exporting.
 platform: ej2-angular
 control: Exporting filtered data 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting filtered data in Angular TreeGrid component
+# Exporting Filtered Data in Angular TreeGrid
 
 Filtered data can be exported by assigning the filtered results to [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) before performing the export operation.
 

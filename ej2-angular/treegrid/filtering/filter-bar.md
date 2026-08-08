@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filter bar in Angular TreeGrid component | Syncfusion
-description: Learn here all about Filter bar in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Filter Bar | Syncfusion
+description: Learn how to use the filter bar in Angular TreeGrid, including column filtering, filter operators, and custom filter behavior.
 platform: ej2-angular
 control: Filter bar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter bar in Angular TreeGrid component
+# Filter Bar in Angular TreeGrid
 
 The filter bar feature provides an efficient way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid. It displays an input field for each column, enabling quick entry of filter criteria with instant display of filtered results.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row in Angular TreeGrid component | Syncfusion
-description: Learn here all about Row in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in Angular TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: ej2-angular
 control: Row 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row in Angular TreeGrid component
+# Rows in Angular TreeGrid
 
 Each row represents a single record or item from a data source. Rows in a TreeGrid present data in tabular format, where each row displays a set of values representing the fields of an individual data record. Rows allow interaction with the TreeGrid data through selection, cell editing, sorting, filtering operations, and event-driven actions.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Empty Record Template in Angular TreeGrid component | Syncfusion
-description: Learn here all about Customize the Empty Record Template in Syncfusion Angular TreeGrid of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Empty Record Template | Syncfusion
+description: Learn how to customize the empty record template in Angular TreeGrid to display custom messages, images, and content when no records are available.
 platform: ej2-angular
 control: Customize the Empty Record Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the empty record template in Angular TreeGrid
+# Empty Record Template in Angular TreeGrid
 
 The empty record template feature in the TreeGrid allows you to use custom content such as images, text, or other components, when the TreeGrid doesn't contain any records to display. This feature replaces the default message of **No records to display** typically shown in the TreeGrid.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in Angular TreeGrid component | Syncfusion
-description: Learn here all about Validation in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Validation | Syncfusion
+description: Learn how to configure validation in Angular TreeGrid, including required fields, custom rules, and error handling during editing.
 platform: ej2-angular
 control: Validation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular TreeGrid component
+# Validation in Angular TreeGrid
 
 Validation is a crucial aspect of data integrity in any application. The Angular TreeGrid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
 

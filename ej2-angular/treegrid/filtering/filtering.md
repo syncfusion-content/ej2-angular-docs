@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering in Angular TreeGrid component | Syncfusion
-description: Learn here all about Filtering in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular TreeGrid
+description: Learn how to use filtering in Angular TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular TreeGrid component
+# Filtering in Angular TreeGrid
 
 Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component that enables selectively viewing data based on specific criteria. It allows narrowing down large datasets and focusing on the information needed, thereby enhancing data analysis and decision-making.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel like filter in Angular TreeGrid component | Syncfusion
-description: Learn here all about Excel like filter in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Excel-Like Filter | Syncfusion
+description: Learn how to use Excel-like filtering in Angular TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
 platform: ej2-angular
 control: Excel like filter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Excel like filter in Angular TreeGrid component
+# Excel-Like Filter in Angular TreeGrid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the TreeGrid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel-like filtering is especially useful when dealing with large datasets and complex filtering requirements.
 

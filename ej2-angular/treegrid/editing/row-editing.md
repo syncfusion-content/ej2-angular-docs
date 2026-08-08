@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Row editing in Angular TreeGrid component | Syncfusion
-description: Learn how to use row editing in the Syncfusion Angular TreeGrid component, including editing entire rows, performing CRUD actions programmatically, and using confirmation dialogs.
+title: Angular TreeGrid Row Editing | Syncfusion
+description: Learn how to use row editing in Angular TreeGrid, including editing rows, programmatic CRUD operations, and confirmation dialogs.
 platform: ej2-angular
 control: Row editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row editing in Angular TreeGrid component
+# Row Editing in Angular TreeGrid
 
-In Row edit mode, when you begin editing a selected record, the entire row enters edit state. This allows you to modify all cell values in the row and save the changes to the data source. To enable row editing, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) property to `Row`.
+In Row edit mode, when you begin editing a selected record, the entire row enters edit state. This allows you to modify all cell values in the row and save the changes to the data source. To enable row editing, set the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel#mode) property to `Row`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ In the example below, the **price** column value is updated based on changes in 
 
 ## Cancel edit based on condition
 
-You can prevent TreeGrid CRUD operations (edit, add, delete) based on a custom condition by handling the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event with the appropriate `requestType` (such as `beginEdit` for editing, `add` for adding, and `delete` for deleting).
+You can prevent TreeGrid CRUD operations (edit, add, delete) based on a custom condition by handling the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionbegin) event with the appropriate `requestType` (such as `beginEdit` for editing, `add` for adding, and `delete` for deleting).
 
 In the example below, CRUD operations are prevented when the **priority** column value is `Low`.
 
@@ -64,14 +64,14 @@ In the example below, CRUD operations are prevented when the **priority** column
 
 TreeGrid methods enable you to perform CRUD operations programmatically:
 
-- [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord): Add a new record (optionally specifying data and index/position).
-- [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#startedit): Change the selected row to edit state.
-- [`updateRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#updaterow): Update a row by index.
-- [`setCellValue`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#setcellvalue): Update the value for a cell using primary key, field name, and new value.
-- [`setRowData`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#setrowdata): Update an entire row using primary key and data.
-- [`deleteRecord`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterecord): Delete a selected row.
-- [`closeEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#closeedit): Cancel editing programmatically in Row and Dialog modes.
-- [`deleteRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterow): Delete a row by providing the row element.
+- [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#addrecord): Add a new record (optionally specifying data and index/position).
+- [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#startedit): Change the selected row to edit state.
+- [`updateRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#updaterow): Update a row by index.
+- [`setCellValue`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#setcellvalue): Update the value for a cell using primary key, field name, and new value.
+- [`setRowData`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#setrowdata): Update an entire row using primary key and data.
+- [`deleteRecord`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#deleterecord): Delete a selected row.
+- [`closeEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#closeedit): Cancel editing programmatically in Row and Dialog modes.
+- [`deleteRow`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#deleterow): Delete a row by providing the row element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -87,7 +87,7 @@ TreeGrid methods enable you to perform CRUD operations programmatically:
 
 ## Show delete confirmation dialog
 
-A delete confirmation dialog can be shown by setting [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#showdeleteconfirmdialog) in the [editSettings] to **true**.
+A delete confirmation dialog can be shown by setting [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings#showdeleteconfirmdialog) in the [editSettings] to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -105,7 +105,7 @@ A delete confirmation dialog can be shown by setting [showDeleteConfirmDialog](h
 
 ## Move focus to a particular cell when editing a row
 
-Use the [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#recordDoubleClick) event to focus the specific cell that was double-clicked when editing a row, rather than defaulting to the first cell.
+Use the [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid#recordDoubleClick) event to focus the specific cell that was double-clicked when editing a row, rather than defaulting to the first cell.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

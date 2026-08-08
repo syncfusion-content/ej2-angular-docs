@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Observables in Angular Treegrid component | Syncfusion
-description: Learn here all about Observables in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Observables | Syncfusion
+description: Learn how to use Observables in Angular TreeGrid for reactive data binding, asynchronous data handling, and dynamic updates.
 platform: ej2-angular
 control: Observables 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Observables in Angular Treegrid component
+# Observables in Angular Treegrid
 
 An `Observable` is used extensively by Angular since it provides significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
@@ -16,11 +16,11 @@ You can also check on this video for Observable binding in Tree Grid:
 
 {% youtube "https://www.youtube.com/watch?v=iq_A00-068k" %}
 
-### Observable binding using Async pipe
+## Observable binding using Async pipe
 
 TreeGrid data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
 
-### Data binding
+## Data binding
 
 The TreeGrid expects an object from the `Observable`. The emitted value should be an object with properties `result` and `count`.
 
@@ -161,11 +161,11 @@ export class DataService extends Subject<Object> {
 > You should maintain the same `Observable` instance for every treegrid actions.
 > We have a limitation for Custom Binding feature of TreeGrid. This feature works only for Self Referential data binding with `pageSizeMode` as `Root`.
 
-### Handling child data
+## Handling child data
 
-Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments.
+Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event arguments.
 After assigning the child data, `childDataBind` method should be called from the
-[`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments to indicate that the data is bound.
+[`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event arguments to indicate that the data is bound.
 
 ```
 
@@ -264,7 +264,7 @@ export class DataService extends Subject<Object> {
 }
 ```
 
-### Handling TreeGrid actions
+## Handling TreeGrid actions
 
 For TreeGrid actions such as `paging`, `sorting`, etc., the `dataStateChange` event is invoked. You have to query and resolve data using `Observable` in this event based on the state arguments.
 
@@ -309,9 +309,9 @@ export class AppComponent implements OnInit {
 
 > When initial rendering, the `dataStateChange` event will not be triggered. You can perform the operation in the `ngOnInit` if you want the treegrid to show the record.
 
-### Perform CRUD operations
+## Perform CRUD operations
 
-The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasourcechanged) event is triggered to update the treegrid data. You can perform the save operation based on the event arguments, and you need to call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) method to indicate the completion of save operation.
+The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasourcechanged) event is triggered to update the treegrid data. You can perform the save operation based on the event arguments, and you need to call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#endedit) method to indicate the completion of save operation.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -453,7 +453,7 @@ export class CrudService extends Subject<DataStateChangeEventArgs>  {
 
 ```
 
-### Calculate aggregates
+## Calculate aggregates
 
 The footer aggregate values should be calculated and sent along with the `dataSource` property as follows. The aggregate property of the data source should contain the aggregate value assigned to the `field – type` property. For example, the `Sum` aggregate value for the `Duration` field should be assigned to the `Duration - sum` property.
 
@@ -467,7 +467,7 @@ The footer aggregate values should be calculated and sent along with the `dataSo
 
 > The group footer and caption aggregate values can be calculated by the treegrid itself.
 
-### Provide Excel Filter data source
+## Provide Excel Filter data source
 
 The `dataStateChange` event is triggered with appropriate arguments when the Excel filter requests the filter choice data source. You need to resolve the Excel filter data source using the `dataSource` resolver function from the state argument as follows.
 
@@ -556,7 +556,7 @@ export class DataService extends Subject<Object> {
 
 ## Observable binding using without Async pipe
 
-In Angular, [Observables](https://angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription lifecycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
+In Angular, [Observables](https://angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
 
 To bind observable data without using the async pipe in the TreeGrid, follow these steps:
 
@@ -564,11 +564,11 @@ To bind observable data without using the async pipe in the TreeGrid, follow the
 
 2. Manually update the data source of the grid when the observable emits new values.
 
-### Data binding
+## Data binding
 
-The custom binding feature of the Syncfusion Angular TreeGrid enables binding child data to a parent record based on application-specific logic, such as fetching from a server or filtering local data. When a parent record is expanded, the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered. Within this event, assign an array of records matching the TreeGrid’s data model (e.g., with fields like `TicketID` and `ParentTicketID`) to the `childData` property of the event arguments. Then, call the `childDataBind` method to indicate that the data is bound. For robust applications, handle potential errors during data retrieval, such as failed server requests.
+The custom binding feature of the Syncfusion Angular TreeGrid enables binding child data to a parent record based on application-specific logic, such as fetching from a server or filtering local data. When a parent record is expanded, the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event is triggered. Within this event, assign an array of records matching the TreeGrid’s data model (e.g., with fields like `TicketID` and `ParentTicketID`) to the `childData` property of the event arguments. Then, call the `childDataBind` method to indicate that the data is bound. For robust applications, handle potential errors during data retrieval, such as failed server requests.
 
-After assigning the child data, `childDataBind` method should be called from the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments to indicate that the data is bound.
+After assigning the child data, `childDataBind` method should be called from the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event arguments to indicate that the data is bound.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -686,9 +686,9 @@ export class TaskService extends Subject<DataStateChangeEventArgs> {
 
 ```
 
-### Handling child data
+## Handling child data
 
-Using the custom binding feature, child data can be bound to a parent record based on custom logic. When a parent record is expanded, the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered. Assign the child data to the `childData` property of the event arguments and call the `childDataBind` method to indicate that the data is bound. For real-world applications, child data is typically fetched from a server.
+Using the custom binding feature, child data can be bound to a parent record based on custom logic. When a parent record is expanded, the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event is triggered. Assign the child data to the `childData` property of the event arguments and call the `childDataBind` method to indicate that the data is bound. For real-world applications, child data is typically fetched from a server.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -809,7 +809,7 @@ export class TaskService extends Subject<DataStateChangeEventArgs> {
 
 ```
 
-### Handling TreeGrid actions
+## Handling TreeGrid actions
 
 For TreeGrid actions such as `paging`, `sorting`, and `filtering`, the `dataStateChange` event is triggered. Query and resolve data using an `Observable` based on the state arguments, and update the TreeGrid's dataSource property manually in the subscription
 
@@ -965,9 +965,9 @@ export class TaskService extends Subject<DataStateChangeEventArgs> {
 
 > When initial rendering, the `dataStateChange` event will not be triggered. You can perform the operation in the `ngOnInit` if you want the treegrid to show the record.
 
-### Perform CRUD operations
+## Perform CRUD operations
 
-The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasourcechanged) event is triggered to update TreeGrid data during CRUD operations. The DataSourceChangedEventArgs object provides properties such as action (e.g., add, edit, delete), data (the modified record), and childData (for nested records). Perform the save operation based on these arguments, update the dataSource manually, and call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) method to complete the operation.
+The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasourcechanged) event is triggered to update TreeGrid data during CRUD operations. The DataSourceChangedEventArgs object provides properties such as action (e.g., add, edit, delete), data (the modified record), and childData (for nested records). Perform the save operation based on these arguments, update the dataSource manually, and call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#endedit) method to complete the operation.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -1198,7 +1198,7 @@ export class TaskService extends Subject<DataStateChangeEventArgs> {
 }
 ```
 
-### Calculate aggregates
+## Calculate aggregates
 
 The footer aggregate values should be calculated and sent along with the `dataSource` property as follows. The aggregate property of the data source should contain the aggregate value assigned to the `field – type` property. For example, the `Sum` aggregate value for the `Duration` field should be assigned to the `Duration - sum` property.
 
@@ -1212,7 +1212,7 @@ The footer aggregate values should be calculated and sent along with the `dataSo
 
 > The group footer and caption aggregate values can be calculated by the treegrid itself.
 
-### Provide Excel Filter data source
+## Provide Excel Filter data source
 
 The `dataStateChange` event is triggered with appropriate arguments when the Excel filter requests the filter choice data source. You need to resolve the Excel filter data source using the `dataSource` resolver function from the state argument as follows.
 
