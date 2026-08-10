@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ports Connector Port in Angular Diagram | Syncfusion®
-description: Attach ports to connectors in the Syncfusion® Angular Diagram so other connectors can dock at specific points along the path, configured by alignment and displacement.
+title: Connector Port in Angular Diagram | Syncfusion®
+description: Attach ports to connectors in the Syncfusion® Angular Diagram so other connectors dock at specific points along the path using alignment and displacement.
 platform: ej2-angular
 control: Ports 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ports Connector Port in Angular Diagram
+# Connector Port in Angular Diagram
 
 Connector ports serve as connection points along connectors, enabling other connectors to attach at specific locations rather than just the endpoints. This guide covers creating connector ports, configuring their alignment and displacement, and establishing port-to-port connections.
 

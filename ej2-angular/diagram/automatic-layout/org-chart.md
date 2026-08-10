@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Org Chart Layout in Angular Diagram | Syncfusion®
+title: Organizational Chart Layout in Angular Diagram | Syncfusion®
 description: Build an organizational chart in the Syncfusion® Angular Diagram with the OrganizationalChart layout, using a data source or predefined nodes.
 platform: ej2-angular
 control: Org-chart layout 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Org Chart Layout in Angular Diagram
+# Organizational Chart Layout in Angular Diagram
 
 An organizational chart is a diagram that displays the hierarchical structure of an organization, showing reporting relationships and roles within the company. The Angular Diagram component provides specialized support for creating professional organizational charts through automatic layout algorithms. To create an organizational chart, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#type) property of the layout to `OrganizationalChart`.
 
