@@ -1,14 +1,14 @@
 ---
 layout: post
-title: TreeGrid styling in Angular TreeGrid component | Syncfusion
-description: Learn how to customize the appearance and styling of the Syncfusion Angular TreeGrid component using available CSS classes, theme studio, and advanced Angular techniques.
+title: Angular TreeGrid Styling | Syncfusion
+description: Learn how to customize the appearance of Angular TreeGrid using CSS classes, Theme Studio, and advanced styling techniques.
 platform: ej2-angular
 control: TreeGrid styling
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# TreeGrid styling in Angular TreeGrid component
+# Styling in Angular TreeGrid
 
 To customize the appearance of the TreeGrid, override its default CSS classes. The following table lists common CSS classes and the corresponding TreeGrid sections they affect. For comprehensive theming needs, you can also create a custom theme for all Angular controls using the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 

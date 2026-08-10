@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Tree Column in Angular TreeGrid component | Syncfusion
-description: Learn here all about tree column in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Tree Column | Syncfusion
+description: Learn how to configure the tree column in Angular TreeGrid for displaying hierarchical data with expand and collapse functionality.
 platform: ej2-angular
 control: Columns  
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tree Column in Angular TreeGrid component
+# Tree Column in Angular TreeGrid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides a convenient way to represent parent-child relationships using expand and collapse icons in the tree column cell. This can be achieved by utilizing the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#treecolumnindex) property by setting its value to a column index. This guide outlines how to configure and use this property to display the expand or collapse icon in the desired column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides a convenient way to represent parent-child relationships using expand and collapse icons in the tree column cell. This can be achieved by utilizing the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#treecolumnindex) property by setting its value to a column index. This guide outlines how to configure and use this property to display the expand or collapse icon in the desired column.
 
 ```ts
 
@@ -73,7 +73,7 @@ The following example demonstrates how to apply an indent space by adding a CSS 
 
 ## Render parent rows in collapsed state 
 
-All parent rows can be easily rendered in a collapsed state in the TreeGrid component using the [enableCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecollapseall) property. Using this property, all parent rows are collapsed during the initial rendering.
+All parent rows can be easily rendered in a collapsed state in the TreeGrid component using the [enableCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablecollapseall) property. Using this property, all parent rows are collapsed during the initial rendering.
 
 The following example demonstrates rendering all parent rows in a collapsed state during initial rendering:
 
@@ -90,7 +90,7 @@ The following example demonstrates rendering all parent rows in a collapsed stat
 
 ## Retain expanded and collapsed state 
 
-To maintain the expanded and collapsed state of specific parent rows during initial rendering in the TreeGrid, the [expandStateMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandstatemapping) property can be utilized. This property corresponds to a value within the data object of the data source, signifying the expand/collapse status of the parent row. 
+To maintain the expanded and collapsed state of specific parent rows during initial rendering in the TreeGrid, the [expandStateMapping](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expandstatemapping) property can be utilized. This property corresponds to a value within the data object of the data source, signifying the expand/collapse status of the parent row. 
 
 The following example demonstrates how the JSON object has an `isExpanded` property with a boolean value. Based on this value, the parent rows are shown in an expanded or collapsed state:
 
@@ -110,11 +110,11 @@ The following example demonstrates how the JSON object has an `isExpanded` prope
 
 ## Persist expanded and collapsed states on page refresh using localStorage
 
-To persist the expanded and collapsed state of rows using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event when the page refreshes in the browser, this guide illustrates how to utilize localStorage to save and retrieve the state of rows.
+To persist the expanded and collapsed state of rows using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event when the page refreshes in the browser, this guide illustrates how to utilize localStorage to save and retrieve the state of rows.
 
-   1. Save the collapsed record's primary key value to localStorage in the [collapsed](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapsed) event of the TreeGrid by using the [setItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem) method of the local storage.
-   2. On page refresh, the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event will be triggered. In that event, retrieve the saved records by using the [getItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem) method of the local storage.
-   3. Then, collapse the specific rows by using the [collapseByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapsebykey) method of TreeGrid by passing the primary key value as a parameter and collapse the specific rows by using the [collapseRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapserow) method of the TreeGrid by passing the row detail.
+   1. Save the collapsed record's primary key value to localStorage in the [collapsed](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapsed) event of the TreeGrid by using the [setItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem) method of the local storage.
+   2. On page refresh, the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event will be triggered. In that event, retrieve the saved records by using the [getItem](https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem) method of the local storage.
+   3. Then, collapse the specific rows by using the [collapseByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapsebykey) method of TreeGrid by passing the primary key value as a parameter and collapse the specific rows by using the [collapseRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapserow) method of the TreeGrid by passing the row detail.
  
 The following example demonstrates the above-mentioned steps to persist the expanded or collapsed state while refreshing the page in the browser:
 
@@ -133,7 +133,7 @@ The following example demonstrates the above-mentioned steps to persist the expa
 
 In the TreeGrid, rows can be programmatically expanded and collapsed using various methods provided by the TreeGrid. This guide demonstrates how to leverage these methods to control the expansion and collapse of rows based on different criteria.
 
-* **[expandAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandall)**:
+* **[expandAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expandall)**:
 
 To expand all rows in the TreeGrid, use the `expandAll` method.
 
@@ -141,7 +141,7 @@ To expand all rows in the TreeGrid, use the `expandAll` method.
 this.treegrid.expandAll();
 ```
 
-* **[collapseAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapseall)**:
+* **[collapseAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapseall)**:
 
 To collapse all rows in the TreeGrid, use the `collapseAll` method.
 
@@ -149,7 +149,7 @@ To collapse all rows in the TreeGrid, use the `collapseAll` method.
 this.treegrid.collapseAll();
 ```
 
-* **[expandAtLevel](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandatlevel)**:
+* **[expandAtLevel](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expandatlevel)**:
 
 To expand the records at a specific hierarchical level, use the `expandAtLevel` method.
 
@@ -157,7 +157,7 @@ To expand the records at a specific hierarchical level, use the `expandAtLevel` 
 this.treegrid.expandAtLevel(0);
 ```
 
-* **[collapseAtLevel](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapseatlevel)**:
+* **[collapseAtLevel](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapseatlevel)**:
 
 To collapse the records at a specific hierarchical level, use the `collapseAtLevel` method.
 
@@ -165,7 +165,7 @@ To collapse the records at a specific hierarchical level, use the `collapseAtLev
 this.treegrid.collapseAtLevel(0);
 ```
 
-* **[expandByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandbykey)**:
+* **[expandByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expandbykey)**:
 
 To expand records based on a given primary key value, use the `expandByKey` method.
 
@@ -173,7 +173,7 @@ To expand records based on a given primary key value, use the `expandByKey` meth
 this.treegrid.expandByKey(1); //Here pass the primary key value
 ```
 
-* **[collapseByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapsebykey)**:
+* **[collapseByKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapsebykey)**:
 
 To collapse records based on a given primary key value, use the `collapseByKey` method
 
@@ -181,7 +181,7 @@ To collapse records based on a given primary key value, use the `collapseByKey` 
 this.treegrid.collapseByKey(1);//Here pass the primary key value
 ```
 
-* **[expandRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandrow)**:
+* **[expandRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expandrow)**:
 
 To expand child rows based on the row element, use the `expandRow` method. 
 
@@ -189,7 +189,7 @@ To expand child rows based on the row element, use the `expandRow` method.
 this.treegrid.expandRow(tr); //Here pass the row element as parameter
 ```
 
-* **[collapseRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapserow)**:
+* **[collapseRow](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapserow)**:
 
 To collapse child rows based on the row element, use the `collapseRow` method. 
 
@@ -203,13 +203,13 @@ In the TreeGrid, the behavior can be customized and specific actions can be perf
 
 The following events are available for handling expand and collapse actions:
 
-* [expanding](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expanding): This event is triggered before a row is expanded. Custom actions can be performed or the row expansion can be cancelled based on certain conditions.
+* [expanding](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expanding): This event is triggered before a row is expanded. Custom actions can be performed or the row expansion can be canceled based on certain conditions.
 
-* [expanded](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expanded): This event is triggered after a row is expanded. Additional actions or updates can be performed after the row expansion is completed.
+* [expanded](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expanded): This event is triggered after a row is expanded. Additional actions or updates can be performed after the row expansion is completed.
 
-* [collapsing](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapsing): This event is triggered before a row is collapsed. Custom actions can be performed or the row collapse can be cancelled based on certain conditions.
+* [collapsing](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapsing): This event is triggered before a row is collapsed. Custom actions can be performed or the row collapse can be canceled based on certain conditions.
 
-* [collapsed](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#collapsed): This event is triggered after a row is collapsed. Additional actions or updates can be performed after the row collapse is completed.
+* [collapsed](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapsed): This event is triggered after a row is collapsed. Additional actions or updates can be performed after the row collapse is completed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

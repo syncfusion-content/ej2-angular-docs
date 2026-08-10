@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Ribbon Keytip in Angular Ribbon component | Syncfusion
-description:  Learn here all about Ribbon Keytip in Syncfusion Angular Ribbon component of Syncfusion Essential JS 2 and more.
-platform: ej2-angular
+title: Keytip in Angular Ribbon | Syncfusion
+description: Learn how to enable keyboard navigation in the Angular Ribbon using KeyTips that activate when the Alt key is pressed for fast access to items.
 control: Ribbon
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---     
 
-# Keytip in Angular Ribbon Component
+# Keytip in Angular Ribbon
 
-The Ribbon component supports KeyTips to provide keyboard navigation for its items. This feature can be enabled by setting the [enableKeyTips](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#enablekeytips) property to `true`.
+The Ribbon component supports KeyTips to provide keyboard navigation for its items. This feature can be enabled by setting the [enableKeyTips](https://ej2.syncfusion.com/angular/documentation/api/ribbon#enablekeytips) property to `true`.
 
 The keytips will be shown when the `Alt + Windows/Command` keys are pressed. This allows users to access any Ribbon element by pressing the corresponding keys.
 
 ## Ribbon Item KeyTip
 
-You can assign a KeyTip to any Ribbon item, including tabs, groups, and individual controls, using the [keyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#keytip) property.
+You can assign a KeyTip to any Ribbon item, including tabs, groups, and individual controls, using the [keyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem#keytip) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,7 +38,7 @@ You can assign a KeyTip to any Ribbon item, including tabs, groups, and individu
 
 ## File Menu KeyTip
 
-A KeyTip can be assigned to the File Menu button using the [keyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettingsModel/#keytip) property within the `fileMenuSettings`.
+A KeyTip can be assigned to the File Menu button using the [keyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettingsModel#keytip) property within the `fileMenuSettings`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ A KeyTip can be assigned to the File Menu button using the [keyTip](https://ej2.
 
 ## Backstage Menu KeyTip
 
-You can assign KeyTips to Backstage menu items by defining the [keyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel/#keytip) property for each item in the Backstage configuration.
+You can assign KeyTips to Backstage menu items by defining the [keyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backStageMenuModel#keytip) property for each item in the Backstage configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ You can assign KeyTips to Backstage menu items by defining the [keyTip](https://
 
 ## Ribbon Layout Switcher KeyTip
 
-A KeyTip can be added to the layout switcher button using the [layoutSwitcherKeyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#layoutswitcherkeytip) property.
+A KeyTip can be added to the layout switcher button using the [layoutSwitcherKeyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon#layoutswitcherkeytip) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ A KeyTip can be added to the layout switcher button using the [layoutSwitcherKey
 
 ## Ribbon Launcher Icon KeyTip
 
-A KeyTip can be assigned to a group's launcher icon using the [launcherIconKeyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupDirective/#launchericonkeytip) property.
+A KeyTip can be assigned to a group's launcher icon using the [launcherIconKeyTip](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupDirective#launchericonkeytip) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,11 +128,11 @@ A KeyTip can be assigned to a group's launcher icon using the [launcherIconKeyTi
 
 ### Show keytips
 
-Use the [showKeyTips](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonKeyTip/#showkeytips) method to display the KeyTips dynamically. To navigate into a specific tab's or group's KeyTips, pass its KeyTip as an argument. For instance, `showKeyTips('H')` will show the KeyTips for all items under the element assigned the 'H' KeyTip.
+Use the [showKeyTips](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonKeyTip#showkeytips) method to display the KeyTips dynamically. To navigate into a specific tab's or group's KeyTips, pass its KeyTip as an argument. For instance, `showKeyTips('H')` will show the KeyTips for all items under the element assigned the 'H' KeyTip.
 
 ### Hide KeyTips
 
-Use the [hideKeyTips](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonKeyTip/#hidekeytips) method to hide all visible KeyTips on the Ribbon.
+Use the [hideKeyTips](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonKeyTip#hidekeytips) method to hide all visible KeyTips on the Ribbon.
 
 ## Guidelines for adding keytips
 

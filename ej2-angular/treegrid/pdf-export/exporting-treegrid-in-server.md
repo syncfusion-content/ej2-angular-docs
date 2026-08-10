@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting TreeGrid on the server in Angular TreeGrid | Syncfusion
-description: Learn how to export the Angular TreeGrid component to PDF on the server side using server export libraries and configuration with Syncfusion Essential JS 2.
+title: Angular TreeGrid PDF Server-Side Export | Syncfusion
+description: Learn how to export the Angular TreeGrid to PDF on the server side using server export libraries and configuration with Essential JS 2.
 platform: ej2-angular
 control: Exporting TreeGrid in server 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PDF Exporting TreeGrid on the server in Angular TreeGrid component
+# PDF Server-Side Export in Angular TreeGrid
 
 The TreeGrid provides an option to export data to PDF on the server side using the TreeGrid server export library.
 

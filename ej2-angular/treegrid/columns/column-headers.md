@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Headers in Angular TreeGrid component | Syncfusion
-description: Learn here all about Headers in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Headers | Syncfusion
+description: Learn how to configure and customize column headers in Angular TreeGrid, including header text and template options.
 platform: ej2-angular
 control: Column Headers 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Headers in Angular TreeGrid component
+# Headers in Angular TreeGrid
 
 ## Header text
 
-By default, the header text of a column in the TreeGrid displays the column's [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) value. However, the default header title can be overridden by providing custom header text using the [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertext) property.
+By default, the header text of a column in the TreeGrid displays the column's [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) value. However, the default header title can be overridden by providing custom header text using the [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertext) property.
 
 To enable the `headerText` property, define it in the **e-column** element. The following example demonstrates how to enable header text for a TreeGrid column.
 
@@ -28,11 +28,11 @@ To enable the `headerText` property, define it in the **e-column** element. The 
 {% previewsample "page.domainurl/samples/treegrid/columns-render-cs1" %}
 
  >* The `headerText` property is optional. If not defined, the corresponding column's field value is set as header text for that column.  
->* The [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertemplate) property can also be used to apply custom HTML content to the header cell.
+>* The [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertemplate) property can also be used to apply custom HTML content to the header cell.
 
 ## Header template
 
-The header element can be customized using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headerTemplate) property. This property allows rendering custom HTML elements or Angular components to the header element.
+The header element can be customized using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headerTemplate) property. This property allows rendering custom HTML elements or Angular components to the header element.
 
 In this example, custom elements are rendered for both **taskName** and **duration** column headers.
 
@@ -54,13 +54,13 @@ In this example, custom elements are rendered for both **taskName** and **durati
 
 The Syncfusion TreeGrid allow to modify the header text of a corresponding column in real-time based on events or other interactions. This feature is useful in various scenarios, such as displaying custom header text for a specific column or updating the header text dynamically based on user input. Dynamic changes to the header text provide a more flexible and customizable experience.
 
-You can change the column [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertext) dynamically through an external button.
+You can change the column [headerText](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertext) dynamically through an external button.
 
 Follow the given steps to change the header text dynamically:
 
 **Step 1**:
 
-Get the column object corresponding to the field name by using the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyfield) method, then change the header text value.
+Get the column object corresponding to the field name by using the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnbyfield) method, then change the header text value.
 
 ```ts
   /** Get the JSON object of the column corresponding to the field name **/
@@ -71,7 +71,7 @@ Get the column object corresponding to the field name by using the [getColumnByF
 
 **Step 2**:
 
-To reflect the changes in the TreeGrid header, invoke the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshcolumns) method.
+To reflect the changes in the TreeGrid header, invoke the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns) method.
 
 ```ts
   this.treegridObj.refreshColumns();
@@ -92,7 +92,7 @@ Here is an example of how to change the header text of a column using the `getCo
 
 ## Change orientation of header text 
 
-By default, the text in the column headers of the Syncfusion Angular TreeGrid is oriented horizontally. However, in some cases, you may want to change the orientation of the header text to vertical, diagonal, or at a custom angle. This can be achieved by adding a custom CSS class to the column header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property of the TreeGrid columns.
+By default, the text in the column headers of the Syncfusion Angular TreeGrid is oriented horizontally. However, in some cases, you may want to change the orientation of the header text to vertical, diagonal, or at a custom angle. This can be achieved by adding a custom CSS class to the column header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#customattributes) property of the TreeGrid columns.
 
 Follow the below steps to change the orientation of the header text in TreeGrid:
 
@@ -117,7 +117,7 @@ For example, to add the orientation css class to the **EndDate** column, you can
 ```
 **Step 3: Resize the header cell height**
 
-After adding the custom CSS class to a column, you need to resize the header cell height in [create](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#create) event so that the rotated header text is fully visible. 
+After adding the custom CSS class to a column, you need to resize the header cell height in [create](https://ej2.syncfusion.com/angular/documentation/api/treegrid#create) event so that the rotated header text is fully visible. 
 
 You can do this by using the following code:
 
@@ -150,7 +150,7 @@ Here’s an example of how to change orientation of header text:
 
 ### Stacked header
 
-The TreeGrid allows grouping multiple levels of column headers by stacking columns. This feature enables organizing columns in a more structured and understandable way. This can be achieved by setting the [column->columns](https://ej2.syncfusion.com/documentation/api/treegrid/column/#columns) property. Within this property, an array of column objects can be defined to group together as sub-headers under a main header. The `headerText` property of each sub-header column can be defined to set the text for that sub-header.
+The TreeGrid allows grouping multiple levels of column headers by stacking columns. This feature enables organizing columns in a more structured and understandable way. This can be achieved by setting the [column->columns](https://ej2.syncfusion.com/documentation/api/treegrid/column#columns) property. Within this property, an array of column objects can be defined to group together as sub-headers under a main header. The `headerText` property of each sub-header column can be defined to set the text for that sub-header.
 
 The appearance of stacked header elements can be customized using the headerTemplate property. This property accepts an ng-template reference, allowing definition of custom HTML elements or Angular components to the header element. The following example demonstrates using stacked headers with a custom `headerTemplate` in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid.
 
@@ -167,7 +167,7 @@ The appearance of stacked header elements can be customized using the headerTemp
 
 ## Align the text of header text
 
-The text in column headers of the TreeGrid component can be horizontally aligned using the [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertextalign) property. By default, the text is aligned to the left, but the alignment can be changed by setting the value of the `headerTextAlign` property to one of the following options:
+The text in column headers of the TreeGrid component can be horizontally aligned using the [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertextalign) property. By default, the text is aligned to the left, but the alignment can be changed by setting the value of the `headerTextAlign` property to one of the following options:
 
 * **Left**: Aligns the text to the left (default).
 * **Center**: Aligns the text to the center.
@@ -187,14 +187,14 @@ The following example demonstrates using the `headerTextAlign` property to align
   
 {% previewsample "page.domainurl/samples/treegrid/header-align-cs1" %}
 
->* The `headerTextAlign` property only changes the alignment of the text in the column header, not the content of the column. To align both the column header and content, use the [textAlign](https://ej2.syncfusion.com/documentation/api/treegrid/column/#textalign) property.
+>* The `headerTextAlign` property only changes the alignment of the text in the column header, not the content of the column. To align both the column header and content, use the [textAlign](https://ej2.syncfusion.com/documentation/api/treegrid/column#textalign) property.
 >* The `headerTextAlign` property can also be used with the stacked header feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid. The property will align the header text in the sub-headers as well.
 
 ## Autowrap the header text
 
-The autowrap feature allows the cell content of the TreeGrid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, set the appropriate [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+The autowrap feature allows the cell content of the TreeGrid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, set the appropriate [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
-To enable autowrap, set the `allowTextWrap` property to **true**. The auto wrap mode can also be configured by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/textWrapSettings/#wrapmode) property.
+To enable autowrap, set the `allowTextWrap` property to **true**. The auto wrap mode can also be configured by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/textWrapSettings#wrapmode) property.
 
 The TreeGrid provides three options for configuring:
 
@@ -204,7 +204,7 @@ The TreeGrid provides three options for configuring:
 
 >* If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the TreeGrid's width.
 >* If a column's header text contains no white space, the text may not be wrapped.
->* If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) properties of the column can be used to customize the appearance of the header and cell content.
+>* If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#template) properties of the column can be used to customize the appearance of the header and cell content.
 
 In the following example, the `textWrapSettings.wrapMode` property is set to **Header**; only the TreeGrid header text wraps to the next line.
 
@@ -235,7 +235,7 @@ CSS can be used to override the default height of the **.e-treegrid .e-headercel
 
 **Using methods**
 
-To change the height of the header dynamically, the [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getheadercontent) method can be used to get the header content element of the TreeGrid. Then, the **querySelectorAll** method can be used to get all the header cell elements with the class **e-headercell**. Finally, each header cell element can be looped through and its style property set to adjust the height.
+To change the height of the header dynamically, the [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getheadercontent) method can be used to get the header content element of the TreeGrid. Then, the **querySelectorAll** method can be used to get all the header cell elements with the class **e-headercell**. Finally, each header cell element can be looped through and its style property set to adjust the height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -248,7 +248,7 @@ To change the height of the header dynamically, the [getHeaderContent](https://e
   
 {% previewsample "page.domainurl/samples/treegrid/columns-cs2" %}
 
->* The [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getheadertable) method can also be used to get the table element of the header, and then adjust the height.
+>* The [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getheadertable) method can also be used to get the table element of the header, and then adjust the height.
 >* The height of row cannot be changed below the default height of 42px using the **e-columnheader** class.
 
 ## Change header text dynamically
@@ -257,34 +257,34 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component provides
 
 **Using Event**
 
-To modify the header text of a corresponding column dynamically, the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#headercellinfo) event provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid can be used. This event is triggered for each header cell element rendered in the TreeGrid.
+To modify the header text of a corresponding column dynamically, the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#headercellinfo) event provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid can be used. This event is triggered for each header cell element rendered in the TreeGrid.
 
 When the `headerCellInfo` event is triggered, it provides a **HeaderCellInfoEventArgs** object as a parameter. This object contains the following properties:
 
 * **cell**: Defines the header cell that is being modified.
 * **node**: Defines the DOM element of the header cell that is being modified.
 
-These properties can be used to access and modify the header text of the corresponding column. Once the header text is modified, the TreeGrid can be refreshed to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/documentation/api/treegrid/#refreshheader) method.
+These properties can be used to access and modify the header text of the corresponding column. Once the header text is modified, the TreeGrid can be refreshed to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/documentation/api/treegrid#refreshheader) method.
 
 **Using method**
 
 The TreeGrid component provides several methods that allow changing the column header text dynamically. Here are some of the methods that can be used:
 
-1. [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyfield): This method takes a field name as a parameter and returns the entire column object that corresponds to that field name, including properties such as headerText, width, and alignment. This method can be used to modify any aspect of the column.
+1. [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnbyfield): This method takes a field name as a parameter and returns the entire column object that corresponds to that field name, including properties such as headerText, width, and alignment. This method can be used to modify any aspect of the column.
 
-2.	[getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyfield): Retrieves the header element of a column based on its field name. The **textContent** property of the header element can be modified to change the header text. This method does not return a reference to the column object itself, only to the header element.
+2.	[getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyfield): Retrieves the header element of a column based on its field name. The **textContent** property of the header element can be modified to change the header text. This method does not return a reference to the column object itself, only to the header element.
 
-3.	[getColumnIndexByField](https://ej2.syncfusion.com/documentation/api/treegrid/#getcolumnindexbyfield): Retrieves the index of a column based on its field name. The `getColumnByIndex` method can then be used to retrieve the column object and modify its `headerText` property to change the header text.
+3.	[getColumnIndexByField](https://ej2.syncfusion.com/documentation/api/treegrid#getcolumnindexbyfield): Retrieves the index of a column based on its field name. The `getColumnByIndex` method can then be used to retrieve the column object and modify its `headerText` property to change the header text.
 
-4.	[getColumnByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyuid): Retrieves the column object based on its unique identifier (UID). The `headerText` property of the column object can be modified to change the header text.
+4.	[getColumnByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnbyuid): Retrieves the column object based on its unique identifier (UID). The `headerText` property of the column object can be modified to change the header text.
 
-5.	[getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyindex): Retrieves the header element of a column based on its zero-based index. The **textContent** property of the header element can be modified to change the header text. This method does not return a reference to the column object itself, only to the header element.
+5.	[getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyindex): Retrieves the header element of a column based on its zero-based index. The **textContent** property of the header element can be modified to change the header text. This method does not return a reference to the column object itself, only to the header element.
 
-6.	[getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnindexbyuid): Retrieves the index of a column based on its unique identifier (UID). The `getColumnByIndex` method can then be used to retrieve the column object and modify its `headerText` property to change the header text.
+6.	[getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnindexbyuid): Retrieves the index of a column based on its unique identifier (UID). The `getColumnByIndex` method can then be used to retrieve the column object and modify its `headerText` property to change the header text.
 
-7.	[getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyuid): Retrieves the header element of a column based on its unique identifier (UID). The **textContent** property of the header element can be modified to change the header text. This method does not return a reference to the column object itself, only to the header element.
+7.	[getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyuid): Retrieves the header element of a column based on its unique identifier (UID). The **textContent** property of the header element can be modified to change the header text. This method does not return a reference to the column object itself, only to the header element.
 	
->* When changing the header text dynamically, make sure to **refresh** the TreeGrid to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshheader) method.
+>* When changing the header text dynamically, make sure to **refresh** the TreeGrid to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshheader) method.
 >* The UID is automatically generated by the TreeGrid component and may change whenever the TreeGrid is refreshed or updated.
 
 The following example demonstrates how to change the header text of a column using the `getColumnByField` method:
@@ -317,7 +317,7 @@ To change the header text of all columns in the TreeGrid, loop through the Colum
                                                            
 ## Change the orientation of header text
 
-By default, the text in the column headers of the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid control is oriented horizontally. However, in some cases, the orientation of the header text may need to be changed to vertical, diagonal, or at a custom angle. This can be achieved by adding a custom CSS class to the column header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property of the TreeGrid columns.
+By default, the text in the column headers of the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid control is oriented horizontally. However, in some cases, the orientation of the header text may need to be changed to vertical, diagonal, or at a custom angle. This can be achieved by adding a custom CSS class to the column header cell using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#customattributes) property of the TreeGrid columns.
 
 Follow the steps below to change the orientation of the header text in TreeGrid:
 
@@ -376,7 +376,7 @@ In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular T
 
 ### Through header text  
 
-To translate the header text of the TreeGrid's columns using **ngx-translate** through header text, the **translate** pipe can be used for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) property.
+To translate the header text of the TreeGrid's columns using **ngx-translate** through header text, the **translate** pipe can be used for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertext) property.
 
 **Step 1**: Create and Configure the TranslateService
 
@@ -727,7 +727,7 @@ de.json {
 
 Custom tooltips for headers provide additional information when hovering over a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid. This can be useful when there is not enough space to display all information related to a column, or when additional context may be helpful.
 
-To enable custom tooltips for headers, the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#beforerender) event of the Tooltip component can be used. This event is triggered for each header cell before it is rendered, allowing addition of a custom tooltip to the header cell using the [tooltip](https://ej2.syncfusion.com/angular/documentation/tooltip/content) component.
+To enable custom tooltips for headers, the [beforeRender](https://ej2.syncfusion.com/angular/documentation/api/tooltip#beforerender) event of the Tooltip component can be used. This event is triggered for each header cell before it is rendered, allowing addition of a custom tooltip to the header cell using the [tooltip](https://ej2.syncfusion.com/angular/documentation/tooltip/content) component.
 
 The following example demonstrates how to use the `beforeRender` event to add a custom tooltip to a header cell:
 
@@ -742,7 +742,7 @@ The following example demonstrates how to use the `beforeRender` event to add a 
   
 {% previewsample "page.domainurl/samples/treegrid/header-tooltip-cs1" %}
 
-> * The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
+> * The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
 
 ## Customize header text styles 
 
@@ -773,7 +773,7 @@ The following example demonstrates how to customize the appearance of a specific
 
 ### Using property 
 
-The appearance of the column headers in TreeGrid can be customized using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#customattributes) property. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for TreeGrid header cells. Multiple CSS properties can also be set to the custom class using the customAttributes property.
+The appearance of the column headers in TreeGrid can be customized using the [customAttributes](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#customattributes) property. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for TreeGrid header cells. Multiple CSS properties can also be set to the custom class using the customAttributes property.
 
 To customize the header of a column, follow the steps below:
 
@@ -812,15 +812,15 @@ The following example demonstrates how to customize the appearance of the **Task
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component provides methods to customize the appearance of the TreeGrid columns header.
 
-1. [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyindex): This method is used to customize the appearance of a specific column header in the TreeGrid by specifying the index of the column for which to customize the header.
+1. [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyindex): This method is used to customize the appearance of a specific column header in the TreeGrid by specifying the index of the column for which to customize the header.
 
-2. [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyfield): This method is used to retrieve the header element of a specific column by its field name. The retrieved element can be used to customize the appearance of the header element.
+2. [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyfield): This method is used to retrieve the header element of a specific column by its field name. The retrieved element can be used to customize the appearance of the header element.
 
-3. [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyuid): This method is used to retrieve the header element of a specific column by its unique ID. The retrieved element can be used to customize the appearance of the header element.
+3. [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyuid): This method is used to retrieve the header element of a specific column by its unique ID. The retrieved element can be used to customize the appearance of the header element.
 
- 4. [getColumnIndexByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnindexbyfield):This method is used to retrieve the index of a specific column by its field name. The retrieved index can be used to access the header element and customize its appearance.
+ 4. [getColumnIndexByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnindexbyfield):This method is used to retrieve the index of a specific column by its field name. The retrieved index can be used to access the header element and customize its appearance.
 
- 5. [getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnindexbyuid): This method is used to retrieve the index of a specific column by its unique ID. The retrieved index can be used to access the header element and customize its appearance.
+ 5. [getColumnIndexByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnindexbyuid): This method is used to retrieve the index of a specific column by its unique ID. The retrieved index can be used to access the header element and customize its appearance.
 
 The following example demonstrates how to use these methods to change the style of a specific column header:
 
@@ -839,7 +839,7 @@ The following example demonstrates how to use these methods to change the style 
 
 ### Using event
 
-To customize the appearance of the TreeGrid header, the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event of the TreeGrid can be handled. This event is triggered when each header cell is rendered in the TreeGrid, and provides an object that contains information about the header cell. This object can be used to modify the styles of the header column.
+To customize the appearance of the TreeGrid header, the [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) event of the TreeGrid can be handled. This event is triggered when each header cell is rendered in the TreeGrid, and provides an object that contains information about the header cell. This object can be used to modify the styles of the header column.
 
 The following example demonstrates how to add a `headerCellInfo` event handler to the TreeGrid. In the event handler, it is checked whether the current header column is the **Start Date** field and then the appropriate CSS class is applied to the cell based on its value.
 
@@ -858,7 +858,7 @@ The following example demonstrates how to add a `headerCellInfo` event handler t
 
 The refresh header feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid allows updating the header section of the TreeGrid whenever changes are made to the TreeGrid's columns. This feature is useful when changes in the header need to be reflected immediately, such as modifying the column header text, width, or alignment.
 
-To use the refresh header feature, the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshheader) method of the TreeGrid component can be called. This method updates the TreeGrid header with the latest changes made to the columns.
+To use the refresh header feature, the [refreshHeader](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshheader) method of the TreeGrid component can be called. This method updates the TreeGrid header with the latest changes made to the columns.
 
 The following example demonstrates how to use the `refreshHeader` method to update the TreeGrid header:
 
@@ -880,29 +880,29 @@ The following example demonstrates how to use the `refreshHeader` method to upda
 
 To get the header element in a Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, one of the following methods can be used:
 
-1. [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getheadercontent): This method returns the header div element of the TreeGrid. This method can be used to access the entire header content of the TreeGrid.
+1. [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getheadercontent): This method returns the header div element of the TreeGrid. This method can be used to access the entire header content of the TreeGrid.
 
     ```ts
     const headerElement = this.treegrid.getHeaderContent();    
     ```
-2. [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getheadertable): This method returns the header table element of the TreeGrid. This method can be used to access only the header table of the TreeGrid.
+2. [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getheadertable): This method returns the header table element of the TreeGrid. This method can be used to access only the header table of the TreeGrid.
 
    ```ts
     const headerTableElement = this.treegrid.getHeaderTable();
    ```
 
-3. [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnindexbyuid): This method returns the column header element by its unique identifier.
+3. [getColumnHeaderByUid](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnindexbyuid): This method returns the column header element by its unique identifier.
 
    ```ts
     const columnHeaderElement = this.treegrid.getColumnHeaderByUid("e-treegrid2");
    ```
 
-4. [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyindex): This method returns the column header element by its index.
+4. [getColumnHeaderByIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyindex): This method returns the column header element by its index.
 
    ```ts
     const columnHeaderElement = this.treegrid.getColumnHeaderByIndex(0);
    ```
-5. [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnheaderbyfield): This method returns the column header element by its field name.
+5. [getColumnHeaderByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnheaderbyfield): This method returns the column header element by its field name.
 
    ```ts
     const columnHeaderElement = this.treegrid.getColumnHeaderByField("taskID"); 

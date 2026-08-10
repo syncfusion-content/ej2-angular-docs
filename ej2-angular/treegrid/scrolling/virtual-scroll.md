@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtual scroll in Angular TreeGrid component | Syncfusion
-description: Learn how to use virtual scroll in the Syncfusion Angular TreeGrid component, including efficient handling of large datasets, configuration of row and column virtualization, browser limits, and performance tips.
+title: Angular TreeGrid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling in Angular TreeGrid for large datasets, including row and column virtualization and performance optimization.
 platform: ej2-angular
 control: Virtual scroll
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtual scrolling in Angular TreeGrid component
+# Virtual Scrolling in Angular TreeGrid
 
 Virtual scrolling in the TreeGrid component enables efficient rendering and interaction with large datasets by loading only the visible rows or columns in the viewport. This optimization drastically improves performance, reducing initial load time and memory usage, which is essential when working with thousands of records or columns.
 
@@ -18,9 +18,9 @@ To use virtualization in TreeGrid, inject the **VirtualScrollService**, which ha
 
 Row virtualization ensures only the rows currently visible in the viewport are loaded and rendered, resulting in fast scrolling and minimal resource use. It replaces traditional paging by dynamically loading data during vertical scrolling.
 
-Enable row virtualization by setting [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablevirtualization) to **true** and defining the [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) property on the TreeGrid.
+Enable row virtualization by setting [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablevirtualization) to **true** and defining the [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid#height) property on the TreeGrid.
 
-The visible record count is determined by the TreeGrid’s height but can be explicitly set using the [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel/#pagesize) property. Loaded data is cached and reused as necessary.
+The visible record count is determined by the TreeGrid’s height but can be explicitly set using the [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#pagesize) property. Loaded data is cached and reused as necessary.
 
 The following example demonstrates row virtualization using `enableVirtualization` property.
 
@@ -62,7 +62,7 @@ The following example demonstrates row virtualization using `enableVirtualizatio
 
 Column virtualization renders only columns currently visible in the viewport, supporting horizontal scroll for wide datasets. This is crucial for applications with many columns, improving initial load and scroll performance.
 
-To enable column virtualization, set the [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecolumnvirtualization) property of the tree grid to **true**. This configuration instructs the tree grid to only render the columns that are currently visible in the viewport. 
+To enable column virtualization, set the [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablecolumnvirtualization) property of the tree grid to **true**. This configuration instructs the tree grid to only render the columns that are currently visible in the viewport. 
 
 The following example demonstrates column virtualization using `enableColumnVirtualization`  property.
 
@@ -77,7 +77,7 @@ The following example demonstrates column virtualization using `enableColumnVirt
 
 {% previewsample "page.domainurl/samples/treegrid/virtual-scroll-cs2" %}
 
-> Column's [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#width) is required for column virtualization. If column's width is not defined then tree grid will consider its value as **200px**.
+> Column's [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#width) is required for column virtualization. If column's width is not defined then tree grid will consider its value as **200px**.
 
 ### Limitations 
 
@@ -106,7 +106,7 @@ The following example demonstrates column virtualization using `enableColumnVirt
 
 ## Browser height limitation in virtual scrolling and solution
 
-The TreeGrid supports loading millions of records through virtual scrolling, loading and rendering rows on-demand during vertical scrolling. As a result, tree grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the tree grid is calculated using the Total Records Count * [Row Height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property.
+The TreeGrid supports loading millions of records through virtual scrolling, loading and rendering rows on-demand during vertical scrolling. As a result, tree grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the tree grid is calculated using the Total Records Count * [Row Height](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowheight) property.
 
 The browser has some maximum pixel height limitations for the scroll bar element. The content placed above the maximum height can't be scrolled if the element height is greater than the browser's maximum height limit. The browser height limit affects the virtual scrolling of the tree grid. When a large number of records are bound to the tree grid, it can only display the records until the maximum height limit of the browser. Once the browser's height limit is reached while scrolling, further navigation becomes impossible and the remaining records cannot be viewed.
 
@@ -217,14 +217,14 @@ The following steps demonstrate how to overcome the limitation in the TreeGrid c
 
 ### Solution 2: Using rowHeight
 
-Lower the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowheight) property to fit more rows within the browser limit. If height is still exceeded, use Solution 1 or enable paging.
+Lower the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowheight) property to fit more rows within the browser limit. If height is still exceeded, use Solution 1 or enable paging.
 In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 
 ![Row Height](../images/row-height.png)
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/angular/documentation/treegrid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features in tree grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the tree grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/angular/documentation/treegrid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features in tree grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the tree grid without any kind of performance degradation or browser height limitation.
 
 ## See also
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Ribbon component | Syncfusion
-description:  Learn here all about Getting started with Syncfusion Angular Ribbon component of Syncfusion Essential JS 2 and more.
+title: Getting Started with Angular Ribbon | Syncfusion
+description: Learn how to get started with the Angular Ribbon and explore setup, configuration, and core feature examples for building ribbon interfaces.
+control: Ribbon
 platform: ej2-angular
-control: Ribbon 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Ribbon component
+# Getting Started with Angular Ribbon
 
 This section explains how to create a simple **Ribbon** component and configure its available functionalities in Angular.
 

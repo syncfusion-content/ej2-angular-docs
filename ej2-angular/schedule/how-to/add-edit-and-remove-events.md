@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add edit and remove events in Angular Schedule component | Syncfusion
-description: Learn here all about Add edit and remove events in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Add edit and remove events in Angular Scheduler | Syncfusion
+description: Learn here all about Add edit and remove events in Angular Scheduler component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add edit and remove events in Angular Schedule component
+# Perform CRUD Actions Dynamically in Angular Scheduler
 
 CRUD actions can be manually performed on appointments using the [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#addevent), [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#saveevent), and [`deleteEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule#deleteevent) methods in the [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler), as shown below.
 

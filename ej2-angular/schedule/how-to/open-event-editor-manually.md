@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open event editor manually in Angular Schedule component | Syncfusion
-description: Learn here all about Open event editor manually in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Open Editor Window Manually in Angular Scheduler | Syncfusion
+description: Learn how to open the event editor manually in the Syncfusion Angular Scheduler on cell or event click, including on a single click.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open event editor manually in Angular Schedule component
+# Open Editor Window Programmatically in Angular Scheduler
 
 ## Open Editor Window externally
 

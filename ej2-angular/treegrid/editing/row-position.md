@@ -1,14 +1,14 @@
 ---
 layout: post
-title: New row position types in Angular TreeGrid component | Syncfusion
-description: Learn here all about New row position types in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid New Row Position Types | Syncfusion
+description: Learn how to configure new row positions in Angular TreeGrid, including adding rows above, below, child, or top-level records.
 platform: ej2-angular
 control: New row position types 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding new record in Angular TreeGrid component
+# Adding New Row Position in Angular TreeGrid
 
 The TreeGrid component allows you to add new records using the built-in toolbar with the **Add** button or programmatically using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord) method. To utilize this method, the [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#allowadding) property must be enabled. This guide outlines how to add new records at different positions within the TreeGrid.
 

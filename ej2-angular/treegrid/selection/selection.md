@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection in Angular TreeGrid component | Syncfusion
-description: Learn all about selection in the Syncfusion Angular TreeGrid component, including single/multiple selection, selection modes, toggle selection, and touch interactions.
+title: Angular TreeGrid Selection | Syncfusion
+description: Learn all about selection in the Angular TreeGrid, including single/multiple selection, selection modes, toggle selection, and touch interactions.
 platform: ej2-angular
 control: Selection
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular TreeGrid component
+# Selection in Angular TreeGrid
 
 Selection allows highlighting or selecting rows or cells within the TreeGrid. Selection can be performed with mouse clicks or keyboard arrow keys. To disable selection in the TreeGrid, set [`allowSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowselection) to `false`.
 

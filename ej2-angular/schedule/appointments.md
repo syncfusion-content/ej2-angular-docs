@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appointments in Angular Schedule component | Syncfusion
-description: Learn here all about Appointments in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Appointments in Angular Scheduler | Syncfusion
+description: Learn how to create and manage appointments in the Syncfusion Angular Scheduler, including normal, all-day, spanned, and recurring events.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appointments and Event management in Angular Scheduler
+# Appointments in Angular Scheduler
 
 Appointments represent scheduled items for a specific time period within the Scheduler. Appointments can be created for various time ranges, with each appointment categorized according to its duration and recurrence. The Scheduler categorizes events as follows:
 

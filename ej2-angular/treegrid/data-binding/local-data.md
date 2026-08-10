@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Local data in Angular TreeGrid component | Syncfusion
-description: Learn to bind local data to Syncfusion Angular TreeGrid with support for hierarchical and self-referential (flat) data structures.
+title: Angular TreeGrid Local Data | Syncfusion
+description: Learn to bind local data to Angular TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: ej2-angular
 control: Local data
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Local data in Angular TreeGrid component
+# Local Data in Angular TreeGrid
 
 In local data binding, the data source for rendering the TreeGrid control is retrieved from within the same application.
 
@@ -17,13 +17,13 @@ There are two types of data binding supported in the TreeGrid component:
 * Hierarchical data source binding
 * Self-referential data binding (flat data)
 
-To bind local data to the TreeGrid, assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property. You may also provide a `DataManager` instance as the data source.
+To bind local data to the TreeGrid, assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property. You may also provide a `DataManager` instance as the data source.
 
 > By default, `DataManager` uses `JsonAdaptor` for local data binding.
 
 ## Hierarchical data source binding
 
-Use the [`childMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#childMapping) property to map child records in hierarchical data sources.
+Use the [`childMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#childMapping) property to map child records in hierarchical data sources.
 
 The following code example shows how to bind hierarchical local data to the TreeGrid:
 
@@ -47,8 +47,8 @@ The following code example shows how to bind hierarchical local data to the Tree
 
 The TreeGrid can render data from self-referential (flat) data structures by specifying two fields: an ID field and a parent ID field.
 
-* **ID Field**: Contains unique values that identify each node. Assign this field to the [`idMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#idmapping) property.
-* **Parent ID Field**: Contains values representing parent nodes. Assign this field to the [`parentIdMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#parentidmapping) property.
+* **ID Field**: Contains unique values that identify each node. Assign this field to the [`idMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#idmapping) property.
+* **Parent ID Field**: Contains values representing parent nodes. Assign this field to the [`parentIdMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#parentidmapping) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -86,7 +86,7 @@ primaryParent | Specifies the primary parent data
 
 ## Refresh the data source
 
-To add or delete data source records externally and reflect these changes in the TreeGrid, invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refresh) method after updating the data source.
+To add or delete data source records externally and reflect these changes in the TreeGrid, invoke the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refresh) method after updating the data source.
 
 **Step 1**:
 
@@ -122,9 +122,9 @@ this.treegrid.refresh(); // Refresh the TreeGrid.
 
 ## Immutable mode
 
-Immutable mode in the Syncfusion TreeGrid is designed to optimize re-rendering performance by utilizing the object reference and [deep comparison](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the TreeGrid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+Immutable mode in the Syncfusion TreeGrid is designed to optimize re-rendering performance by utilizing the object reference and deep compare concept. When performing the TreeGrid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
-To enable this feature, you need to set the [enableImmutableMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enableimmutablemode) property as **true**.
+To enable this feature, you need to set the [enableImmutableMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enableimmutablemode) property as **true**.
 
 The following example demonstrates how to enable immutable mode:
 
@@ -140,7 +140,7 @@ The following example demonstrates how to enable immutable mode:
   
 {% previewsample "page.domainurl/samples/treegrid/immutable-cs1" %}
 
-> * This feature uses the primary key value for data comparison. Set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) column to ensure correct row identification.
+> * This feature uses the primary key value for data comparison. Set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isprimarykey) column to ensure correct row identification.
 
 ### Limitations
 
@@ -152,6 +152,6 @@ The following features are not supported when immutable mode is enabled:
 * Column reorder
 * Virtualization
 
-> Access the content of the TreeGrid using the [`getContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontent) method.
-> Access the table content by using the [`getContentTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcontenttable) method.
-> Destroy the component programmatically using the [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#destroy) method.
+> Access the content of the TreeGrid using the [`getContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcontent) method.
+> Access the table content by using the [`getContentTable`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcontenttable) method.
+> Destroy the component programmatically using the [`destroy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#destroy) method.

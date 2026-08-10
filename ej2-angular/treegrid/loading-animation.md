@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Loading animation in Angular TreeGrid component | Syncfusion
-description: Learn about loading animations in the Syncfusion Angular TreeGrid component of Essential JS 2, including spinner and shimmer indicator types.
+title: Angular TreeGrid Loading Animation | Syncfusion
+description: Learn how to use loading animations in Angular TreeGrid, including spinner and shimmer indicators for improved loading experiences.
 platform: ej2-angular
 control: Loading animation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Loading animation in Angular TreeGrid component
+# Loading Animation in Angular TreeGrid
 
 The TreeGrid provides loading indicators during data fetching, initial rendering, refreshing, or after performing actions such as sorting or paging. The loading indicator can be configured using the `loadingIndicator.indicatorType` property, which accepts either `Spinner` or `Shimmer` as its type. By default, the indicator type is set to "Spinner."
 

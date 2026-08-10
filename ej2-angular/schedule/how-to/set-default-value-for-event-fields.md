@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set default values for event fields in Angular Schedule | Syncfusion
-description: Learn here all about Set default value for event fields in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Set Default Value for Event Fields in Angular Scheduler | Syncfusion
+description: Learn how to set default values for event fields in the Syncfusion Angular Scheduler editor window to pre-fill data on new appointments.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set default values for event fields in Angular Schedule component
+# Set Default Value for Event Fields in Angular Scheduler
 
 Event window default fields name like Title, Location, etc.. can be customized and default value can be set to Subject field using `default` property which will be added if an appointment is created with empty subject.
 

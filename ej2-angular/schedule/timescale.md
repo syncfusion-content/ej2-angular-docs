@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timescale in Angular Schedule component | Syncfusion
-description: Learn here all about Timescale in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Timescale Customization in Angular Scheduler | Syncfusion
+description: Learn how to customize the time slots in the Syncfusion Angular Scheduler to set the duration, interval, and slot count per row.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timescale in Angular Schedule component
+# Timescale Customization in Angular Scheduler
 
 Time slots are the cells displayed in the Day, Week, and Work Week views of the Scheduler (in vertical views on the leftmost position and in timeline views at the top). The [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#timescale) property lets you control the duration of these slots. It includes these sub-options:
 

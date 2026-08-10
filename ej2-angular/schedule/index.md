@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Schedule component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Scheduler Component | Syncfusion
+description: Learn about the Syncfusion Angular Scheduler, its key features including multiple views, data binding, and the common scheduling scenarios it supports.
 platform: ej2-angular
-control: Index 
+control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Schedule component
+# About Syncfusion Angular Scheduler Component.
 
 The **Scheduler** component is an event calendar which facilitates user with the common Outlook and Google calendar features, thus allowing the users to plan and manage their events or appointments and its time in an efficient way.
 

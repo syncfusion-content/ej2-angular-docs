@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Quick info template in Angular Schedule component | Syncfusion
-description: Learn here all about Quick info template in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Quick Info Template in Angular Scheduler | Syncfusion
+description: Learn how to customize the Quick Info popup in the Syncfusion Angular Scheduler using a template to change its appearance and content.
 platform: ej2-angular
 control: Scheduler
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Quick info template in Angular Schedule component
+# Quick Info Template in Angular Scheduler
 
 This demo showcases the quick popups for cells and appointments using customized templates.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tool bar items in Angular TreeGrid component | Syncfusion
-description: Learn about configuring built-in and custom toolbar items in the Syncfusion Angular TreeGrid component, including actions, alignment, and best practices.
+title: Angular TreeGrid Toolbar Items | Syncfusion
+description: Learn about configuring built-in and custom toolbar items in the Angular TreeGrid, including actions, alignment, and best practices.
 platform: ej2-angular
 control: Tool bar items
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool bar items in Angular TreeGrid component
+# Toolbar Items in Angular TreeGrid
 
 ## Built-in toolbar items
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in Angular TreeGrid component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Sorting | Syncfusion
+description: Learn how to sort data in Angular TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: ej2-angular
 control: Sorting 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in Angular TreeGrid component
+# Sorting in Angular TreeGrid
 
 The TreeGrid component provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the tree grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowsorting) property to **true**.
 

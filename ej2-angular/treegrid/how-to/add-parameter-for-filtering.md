@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add parameter for filtering in Angular TreeGrid component | Syncfusion
-description: Learn how to add parameters for filtering in the Syncfusion Angular TreeGrid component of Essential JS 2, including menu filter customization and parameter handling.
+title: Angular TreeGrid Filtering Parameters | Syncfusion
+description: Learn how to add filtering parameters in Angular TreeGrid, including menu filter customization, parameter handling, and advanced filtering options.
 platform: ej2-angular
 control: Add parameter for filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add parameter for filtering in Angular TreeGrid component
+# Add Parameters for Filtering in Angular TreeGrid
 
 You can customize the default settings of components used in the Menu filter by configuring the `params` property within the column definition's filter settings. 
 

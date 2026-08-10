@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adding header and footer in Angular TreeGrid component | Syncfusion
-description: Learn how to add and customize headers and footers in PDF exports for the Syncfusion Angular TreeGrid component, including text, page numbers, lines, and images.
+title: Angular TreeGrid PDF Headers and Footers | Syncfusion
+description: Learn how to add and customize headers and footers in PDF exports for the Angular TreeGrid, including text, page numbers, lines, and images.
 platform: ej2-angular
 control: Adding header and footer 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding header and footer in Angular TreeGrid component
+# Adding Headers and Footers in Angular TreeGrid
 
 You can customize the header and footer of exported PDF documents in the TreeGrid by adding text, page numbers, lines, images, custom page sizes, and by changing orientation.
 

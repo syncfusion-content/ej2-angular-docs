@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Row drag and drop in Angular TreeGrid component | Syncfusion
-description: Learn here all about Row drag and drop in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Row drag and drop in Angular TreeGrid of Essential JS 2 and more.
 platform: ej2-angular
 control: Row drag and drop 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row drag and drop in Angular TreeGrid component
+# Row Drag and Drop in Angular TreeGrid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides built-in support for row drag and drop functionality. This feature allows easily rearranging rows within the TreeGrid by dragging and dropping them to new positions. Additionally, rows can also be dragged and dropped from one TreeGrid to another TreeGrid, as well as dragged and dropped to custom components.
 

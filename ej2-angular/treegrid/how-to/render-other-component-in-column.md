@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render other component in a column in Angular TreeGrid component | Syncfusion
-description: Learn how to render custom components in columns using the template property of the Syncfusion Angular TreeGrid component.
+title: Angular TreeGrid Custom Component Rendering | Syncfusion
+description: Learn how to render custom components in columns using the template property of the Angular TreeGrid.
 platform: ej2-angular
 control: Render other component in column 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render other component in a column in Angular TreeGrid component
+# Render Custom Components in Angular TreeGrid Columns
 
 Custom components can be rendered in a TreeGrid column using the template property.
 

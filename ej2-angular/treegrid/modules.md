@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Modules in Angular TreeGrid component | Syncfusion
-description: Learn about module injection in the Syncfusion Angular TreeGrid component of Essential JS 2, including available feature modules and their purposes.
+title: Angular TreeGrid Modules | Syncfusion
+description: Learn about module injection in Angular TreeGrid, including available feature modules, dependencies, and their purposes.
 platform: ej2-angular
 control: Modules 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modules in Angular TreeGrid Component
+# Modules in Angular TreeGrid
 
 Syncfusion Angular TreeGrid modules help optimize your application's bundle size by including only the features you need. To enable a specific TreeGrid feature, import and inject the corresponding Feature Module into your TreeGrid configuration. The available TreeGrid Feature Modules include:
 

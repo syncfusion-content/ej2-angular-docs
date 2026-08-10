@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular Scheduler using GraphQL | Syncfusion.
-description: Integrate Syncfusion Angular Scheduler with Node.js and GraphQL backend to perform CRUD operations seamlessly.
+title: GraphQL Data Binding in Angular Scheduler | Syncfusion
+description: Learn how to connect the Syncfusion Angular Scheduler to a Node.js and GraphQL backend for typed queries, mutations, and full CRUD support.
 control: Scheduler
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting Syncfusion Angular Scheduler to GraphQL backend in Node.js
+# GraphQL Data Binding in Angular Scheduler
 
 [GraphQL](https://graphql.org/learn/introduction/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 

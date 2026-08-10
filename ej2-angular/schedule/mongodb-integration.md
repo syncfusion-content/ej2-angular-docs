@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Schedule and MongoDB | Syncfusion
-description: Checkout and learn about Getting started with Angular Schedule component of Syncfusion Essential JS 2 with MongoDB.
+title: Getting Started with Angular Scheduler and MongoDB | Syncfusion
+description: Learn how to bind the Syncfusion Angular Scheduler to a MongoDB backend to load and manage appointments in an Angular application.
 control: Scheduler
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Syncfusion Angular Scheduler and MongoDB
+# Getting Started with Angular Scheduler and MongoDB
 
 The [Angular Schedule](https://ej2.syncfusion.com/angular/documentation/schedule/getting-started) combined with MongoDB provides a robust, scalable, and flexible data-driven application architecture suitable for modern event-management systems.
 
