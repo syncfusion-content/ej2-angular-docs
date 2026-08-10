@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print in Angular Maps component | Syncfusion
+title: Print and Export in Angular Maps | Syncfusion
 description: Learn here all about Print in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Print 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in Angular Maps component
+# Print and Export in Angular Maps
 
 ## Print
 

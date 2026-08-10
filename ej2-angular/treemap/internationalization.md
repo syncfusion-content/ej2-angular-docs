@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internationalization in Angular Treemap component | Syncfusion
+title: Internationalization in Angular TreeMap | Syncfusion
 description: Learn here all about Internationalization in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Internationalization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Internationalization in Angular Treemap component
+# Internationalization in Angular TreeMap
 
 The TreeMap control supports internationalization for the following elements:
 
@@ -21,7 +21,7 @@ For more information about number and date formatter, refer to [`internationaliz
 
 ## Globalization
 
-Globalization is the process of designing and developing a component that works in different cultures/locales. Internationalization library is used to globalize number, date, and time values in the tree map control using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#format) property in the Treemap.
+Globalization is the process of designing and developing a component that works in different cultures/locales. Internationalization library is used to globalize number, date, and time values in the tree map control using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/treemap#format) property in the Treemap.
 
 **Numeric format**
 
@@ -45,7 +45,7 @@ The TreeMap control supports right-to-left rendering for all its elements such a
 
 ## Legend with Rtl support
 
-If set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#enablertl) property to **true**, then the legend icon will be rendered on the right and the legend text will be rendered on the left of the legend icon.
+If set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treemap#enablertl) property to **true**, then the legend icon will be rendered on the right and the legend text will be rendered on the left of the legend icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,7 @@ If set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/tr
 
 ## Tooltip with Rtl support
 
-If the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#enablertl) property is set to **true**, the tooltip data will be rendered in reverse direction.
+If the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treemap#enablertl) property is set to **true**, the tooltip data will be rendered in reverse direction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,7 +77,7 @@ If the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treema
 
 ## Treemap Item Rendering Direction
 
-The direction of TreeMap item is `TopLeftBottomRight` by default and customize the rendering direction of the TreeMap item by setting the [`renderDirection`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#renderdirection) property.
+The direction of TreeMap item is `TopLeftBottomRight` by default and customize the rendering direction of the TreeMap item by setting the [`renderDirection`](https://ej2.syncfusion.com/angular/documentation/api/treemap#renderdirection) property.
 
 The TreeMap can be rendered in the following directions:
 

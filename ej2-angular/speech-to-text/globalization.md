@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular SpeechToText Component | Syncfusion
-description: Checkout and learn about globalization in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
+title: Globalization in Angular Speech To Text | Syncfusion®
+description: Localize the Angular Speech To Text component for any culture and enable right-to-left layout for Arabic, Hebrew, and Persian languages.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in ##Platform_Name## SpeechToText component
+# Globalization in ##Platform_Name## Speech To Text
 
 ## Localization
 
@@ -47,7 +47,7 @@ The following table outlines the default text identifiers and their `en-US` valu
 
 ## RTL
 
-The Right-to-Left (RTL) feature provides support for languages that are read from right to left, such as Arabic, Hebrew, or Persian. Set the [enableRtl](../api/speech-to-text/#enableRtl) property to `true` to reverse the component's layout and text direction, ensuring proper alignment and readability for RTL cultures.
+The Right-to-Left (RTL) feature provides support for languages that are read from right to left, such as Arabic, Hebrew, or Persian. Set the [enableRtl](../api/speech-to-text#enableRtl) property to `true` to reverse the component's layout and text direction, ensuring proper alignment and readability for RTL cultures.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

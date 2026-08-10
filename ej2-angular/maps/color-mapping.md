@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color mapping in Angular Maps component | Syncfusion
+title: Color Mapping in Angular Maps | Syncfusion
 description: Learn here all about Color mapping in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Color mapping 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Color mapping in Angular Maps component
+# Color Mapping in Angular Maps
 
 Color mapping customizes shape colors based on data values. It supports three primary types: range, equal, and desaturation. To apply color mapping, bind data to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#datasource) property of [`layerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel) and set the [`colorValuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel#colorvaluepath) property in [`shapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/shapeSettingsModel) to specify which field controls the color value.
 

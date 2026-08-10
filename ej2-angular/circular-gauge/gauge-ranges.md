@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Gauge ranges in Angular Circular gauge component | Syncfusion
+title: Ranges in Angular Circular Gauge | Syncfusion
 description: Learn here all about Gauge ranges in Syncfusion Angular Circular gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Gauge ranges 
+control: Ranges
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# Gauge ranges in Angular Circular gauge component
+# Ranges in Angular Circular Gauge
 
-You can categories certain interval on gauge axis using [`ranges`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#properties) property.
+You can categories certain interval on gauge axis using [`ranges`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range#properties) property.
 
 ## Start and End
 
-Start and end value of a range in an axis can be customized by using [`start`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#start-number) and [`end`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#end-number) properties.
+Start and end value of a range in an axis can be customized by using [`start`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range#start-number) and [`end`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range#end-number) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,7 +31,7 @@ Start and end value of a range in an axis can be customized by using [`start`](h
 
 ## Customization
 
-Color and thickness of the range can be customized by using [`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#color-string), [`startWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#startwidth-number) and [`endWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#endwidth-number) property.
+Color and thickness of the range can be customized by using [`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range#color-string), [`startWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range#startwidth-number) and [`endWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range#endwidth-number) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +49,7 @@ Color and thickness of the range can be customized by using [`color`](https://ej
 
 ## Radius
 
-You can place the range inside or outside of the axis by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range/#radius-string) property.
+You can place the range inside or outside of the axis by using [`radius`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/range#radius-string) property.
 The radius of the range can takes value either in percentage or in pixels.
 By default, ranges take 100% of the axis radius.
 
@@ -92,7 +92,7 @@ For example, when the radius is ‘50%’, range renders to half of the axis rad
 
 ## Dragging Range
 
-The ranges can be dragged on the axis line by clicking and dragging the same. To enable or disable the range drag, use the [`enableRangeDrag`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/circularGaugeModel/#enablerangedrag) property.
+The ranges can be dragged on the axis line by clicking and dragging the same. To enable or disable the range drag, use the [`enableRangeDrag`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/circularGaugeModel#enablerangedrag) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -149,7 +149,7 @@ Gradient support allows to add multiple colors in the ranges and pointers of the
 
 ### Linear Gradient
 
-Using linear gradient, colors will be applied in a linear progression. The start value of the linear gradient will be set using the [`startValue`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/linearGradient/#startvalue) property. The end value of the linear gradient will be set using the [`endValue`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/linearGradient/#endvalue) property. The color stop values such as color, opacity and offset are set using [`colorStop`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/linearGradient/#colorstop) property.
+Using linear gradient, colors will be applied in a linear progression. The start value of the linear gradient will be set using the [`startValue`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/linearGradient#startvalue) property. The end value of the linear gradient will be set using the [`endValue`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/linearGradient#endvalue) property. The color stop values such as color, opacity and offset are set using [`colorStop`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/linearGradient#colorstop) property.
 
 To apply linear gradient to the range, follow the below code sample.
 
@@ -167,7 +167,7 @@ To apply linear gradient to the range, follow the below code sample.
 
 ### Radial Gradient
 
-Using radial gradient, colors will be applied in circular progression. The inner circle position of the radial gradient will be set using the [`innerPosition`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/radialGradient/#innerposition) property. The outer circle position of the radial gradient can be set using the [`outerPosition`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/radialGradient/#outerposition) property. The color stop values such as color, opacity and offset are set using [`colorStop`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/radialGradient/#colorstop) property.
+Using radial gradient, colors will be applied in circular progression. The inner circle position of the radial gradient will be set using the [`innerPosition`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/radialGradient#innerposition) property. The outer circle position of the radial gradient can be set using the [`outerPosition`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/radialGradient#outerposition) property. The color stop values such as color, opacity and offset are set using [`colorStop`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/radialGradient#colorstop) property.
 
 To apply radial gradient to the range, follow the below code sample.
 
@@ -185,4 +185,4 @@ To apply radial gradient to the range, follow the below code sample.
 
 ## See also
 
-* [Tooltip for Ranges](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-user-interaction/#tooltip-for-ranges/)
+* [Tooltip for Ranges](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-user-interaction#tooltip-for-ranges)

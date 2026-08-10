@@ -8,9 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# BPMN Expanded SubProcess
-
-## BPMN Expanded SubProcess
+# BPMN Expanded SubProcess in Angular Diagram
 
 An expanded subprocess is a BPMN shape that represents a complex process containing multiple child processes within it. Unlike collapsed subprocesses, expanded subprocesses display their internal structure and allow users to view and interact with the child processes directly. This makes them ideal for detailed process modeling where visibility into subprocess components is essential.
 

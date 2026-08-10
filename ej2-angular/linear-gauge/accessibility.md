@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Accessibility in Angular Linear Gauge component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Linear Gauge component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Linear Gauge | Syncfusion
+description: Learn how the Syncfusion Angular Linear Gauge supports accessibility, including WCAG 2.2, Section 508, keyboard navigation, and screen reader support.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Linear Gauge component
+# Accessibility in Angular Linear Gauge
 
-The Linear Gauge component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles).
+The Linear Gauge component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles).
 
 The accessibility compliance for the Linear Gauge component is outlined below.
 

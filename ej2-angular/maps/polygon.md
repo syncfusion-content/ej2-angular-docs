@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Polygon in Angular Maps component | Syncfusion
+title: Polygon in Angular Maps | Syncfusion
 description: Learn here all about Polygon in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Polygon 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Polygon shape in Angular Maps component
+# Polygon in Angular Maps
 
 The Maps component supports rendering custom polygon shapes as overlays on both geometry-based maps and online tile maps. Polygons are useful for highlighting specific geographic regions, marking zones of interest, drawing custom boundaries, or visualizing areas such as coverage zones, territorial boundaries, or restricted areas. This feature is configured using the [polygons](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingsModel#polygons) property, which allows multiple polygon shapes to be added and customized independently.
 

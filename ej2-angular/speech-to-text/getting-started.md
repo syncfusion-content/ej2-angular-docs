@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular SpeechToText Component | Syncfusion
-description: Checkout and learn about getting started with Syncfusion Essential Angular SpeechToText component, its elements, and more details.
+title: Getting Started with Angular Speech To Text | Syncfusion®
+description: Quickly add the Angular Speech To Text component to your project, configure browser microphone access, and capture live voice transcripts in minutes.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular SpeechToText component
+# Getting Started with Angular Speech To Text
 
 This section explains how to create a simple **SpeechToText** component and configure its available functionalities in Angular.
 

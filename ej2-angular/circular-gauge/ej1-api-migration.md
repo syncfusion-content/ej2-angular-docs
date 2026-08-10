@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Circular gauge component | Syncfusion
+title: Migration from Essential JS 1 in Angular Circular Gauge | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Circular gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Ej1 api migration 
+control: EJ1 API Migration
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Circular gauge component
+# Migration from Essential JS 1 in Angular Circular Gauge
 
 This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

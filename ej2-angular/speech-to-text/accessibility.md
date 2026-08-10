@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular SpeechToText Component | Syncfusion
-description: Learn here all about accessibility in Syncfusion Essential Angular SpeechToText component, its elements, and more.
+title: Accessibility in Angular Speech To Text | Syncfusion®
+description: Build inclusive Angular Speech To Text apps with WCAG 2.2, Section 508, ARIA labels, keyboard support, and axe-core accessibility validation.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## SpeechToText component
+# Accessibility in ##Platform_Name## Speech To Text
 
 The SpeechToText component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Angular Heatmap chart component | Syncfusion
+title: Events in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Events in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Events 
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular Heatmap chart component
+# Events in Angular HeatMap Chart
 
 This section describes the HeatMap chart event, which occurs when the required actions are performed.
 
 ## cellClick
 
-When you click on a HeatMap cell, the [cellClick](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellclick) event is triggered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/icellclickeventargs/).
+When you click on a HeatMap cell, the [cellClick](https://ej2.syncfusion.com/angular/documentation/api/heatmap#cellclick) event is triggered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/icellclickeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,7 +31,7 @@ When you click on a HeatMap cell, the [cellClick](https://ej2.syncfusion.com/ang
 
 ## cellDoubleClick
 
-When you double click on a HeatMap cell, the [cellDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#celldoubleclick) event is triggered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iCellClickEventArgs/).
+When you double click on a HeatMap cell, the [cellDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/heatmap#celldoubleclick) event is triggered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iCellClickEventArgs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,7 +47,7 @@ When you double click on a HeatMap cell, the [cellDoubleClick](https://ej2.syncf
 
 ## cellRender
 
-The [cellRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellrender) event will be triggered before each HeatMap cell is rendered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iCellEventArgs/).
+The [cellRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap#cellrender) event will be triggered before each HeatMap cell is rendered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iCellEventArgs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,7 +63,7 @@ The [cellRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#c
 
 ## cellSelected
 
-When single or multiple cells in the HeatMap are selected, the [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellselected) event is triggered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iSelectedEventArgs/).
+When single or multiple cells in the HeatMap are selected, the [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/heatmap#cellselected) event is triggered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iSelectedEventArgs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,7 +79,7 @@ When single or multiple cells in the HeatMap are selected, the [cellSelected](ht
 
 ## created
 
-Once HeatMap has been completely rendered, the [created](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#created) event is triggered.
+Once HeatMap has been completely rendered, the [created](https://ej2.syncfusion.com/angular/documentation/api/heatmap#created) event is triggered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,7 +95,7 @@ Once HeatMap has been completely rendered, the [created](https://ej2.syncfusion.
 
 ## legendRender
 
-The [legendRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#legendrender) event is triggered before the legend is rendered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iLegendRenderEventArgs/).
+The [legendRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap#legendrender) event is triggered before the legend is rendered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iLegendRenderEventArgs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -111,7 +111,7 @@ The [legendRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/
 
 ## load
 
-The [load](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#load) event is triggered before the HeatMap is rendered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iLoadedEventArgs/).
+The [load](https://ej2.syncfusion.com/angular/documentation/api/heatmap#load) event is triggered before the HeatMap is rendered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iLoadedEventArgs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -127,7 +127,7 @@ The [load](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#load) e
 
 ## loaded
 
-Once HeatMap is loaded, the [loaded](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#loaded) event is triggered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iLoadedEventArgs/).
+Once HeatMap is loaded, the [loaded](https://ej2.syncfusion.com/angular/documentation/api/heatmap#loaded) event is triggered. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iLoadedEventArgs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -143,7 +143,7 @@ Once HeatMap is loaded, the [loaded](https://ej2.syncfusion.com/angular/document
 
 ## resized
 
-When the window is resized, the [resized](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#resized) event is triggered to notify the resize of the HeatMap. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iResizeEventArgs/).
+When the window is resized, the [resized](https://ej2.syncfusion.com/angular/documentation/api/heatmap#resized) event is triggered to notify the resize of the HeatMap. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iResizeEventArgs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -159,7 +159,7 @@ When the window is resized, the [resized](https://ej2.syncfusion.com/angular/doc
 
 ## tooltipRender
 
-The [tooltipRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#tooltiprender) event is triggered before the tooltip is rendered on the HeatMap cell. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iTooltipEventArgs/).
+The [tooltipRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap#tooltiprender) event is triggered before the tooltip is rendered on the HeatMap cell. To know more about arguments of this event, refer [here](https://ej2.syncfusion.com/angular/documentation/api/heatmap/iTooltipEventArgs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

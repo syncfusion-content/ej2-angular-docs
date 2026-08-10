@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Smith Chart Component | Syncfusion
+title: Getting Started with Angular Smith Chart | Syncfusion
 description: Check out and learn about getting started with the Angular Smith Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Smith Chart Component
+# Getting Started with Angular Smith Chart
 
 This section explains the steps required to create an [Angular Smith Chart](https://www.syncfusion.com/angular-components/angular-smith-chart) and demonstrates the basic usage of the Smith Chart component in an Angular environment.
 

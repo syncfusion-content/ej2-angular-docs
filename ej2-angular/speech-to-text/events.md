@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Angular SpeechToText Component | Syncfusion
-description: Checkout and learn about events in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
+title: Events in Angular Speech To Text | Syncfusion®
+description: Handle Angular Speech To Text lifecycle with onStart, onStop, onError, transcriptChanged, and created events for fine-grained control.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in ##Platform_Name## SpeechToText Component
+# Events in ##Platform_Name## Speech To Text
 
 This section describes the events that are triggered when performing actions with the SpeechToText component. The following events are available:
  

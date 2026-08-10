@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout in Angular Treemap component | Syncfusion
+title: Layout in Angular TreeMap | Syncfusion
 description: Learn here all about Layout in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Layout 
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Layout in Angular Treemap component
+# Layout in Angular TreeMap
 
 This section explains how to customize the appearance of the TreeMap component. The below video demonstrates the same.
 
 {% youtube "https://www.youtube.com/watch?v=phfdhfoRnpM" %}
 
-Determine the visual representation of nodes belonging to all the TreeMap levels using the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#layouttype) property.
+Determine the visual representation of nodes belonging to all the TreeMap levels using the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/treemap#layouttype) property.
 
 ## Types of layout
 

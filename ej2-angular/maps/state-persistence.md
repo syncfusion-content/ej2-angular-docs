@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State persistence in Angular Maps component | Syncfusion
+title: State Persistence in Angular Maps | Syncfusion
 description: Learn here all about State persistence in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: State persistence 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State persistence in Angular Maps component
+# State Persistence in Angular Maps
 
 ## State Persistence
 

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Dimensions in Angular Linear gauge component | Syncfusion
-description: Learn here all about Dimensions in Syncfusion Angular Linear gauge component of Syncfusion Essential JS 2 and more.
+title: Dimensions in Angular Linear Gauge | Syncfusion
+description: Learn how to set the size and dimensions of the Syncfusion Angular Linear Gauge, including width, height, and container area.
 platform: ej2-angular
 control: Dimensions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dimensions in Angular Linear gauge component
+# Dimensions in Angular Linear Gauge
 
 <!-- markdownlint-disable MD013 -->
 
 ## Size for Linear Gauge
 
-The height and width of the Linear Gauge can be set using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/#height) properties in [`ejs-lineargauge`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/).
+The height and width of the Linear Gauge can be set using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#height) properties in [`ejs-lineargauge`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge).
 
 ### In Pixel
 

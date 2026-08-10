@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Angular Treemap component | Syncfusion
+title: Legend in Angular TreeMap | Syncfusion
 description: Learn here all about Legend in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Legend 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in Angular Treemap component
+# Legend in Angular TreeMap
 
 Legend is used to provide valuable information for interpreting what the TreeMap displays. The legends can be represented in various colors, shapes or other identifiers based on the data.
 

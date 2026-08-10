@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Angular Maps component | Syncfusion
+title: Accessibility in Angular Maps | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Maps component
+# Accessibility in Angular Maps
 
 Accessibility enables users with disabilities to interact with the Maps component through assistive technologies such as screen readers and keyboard navigation. The Maps component is designed to comply with [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles).
 

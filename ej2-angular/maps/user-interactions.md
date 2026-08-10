@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User interactions in Angular Maps component | Syncfusion
+title: User Interactions in Angular Maps | Syncfusion
 description: Learn here all about User interactions in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: User interactions 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interactions in Angular Maps component
+# User Interactions in Angular Maps
 
 ## Zooming
 

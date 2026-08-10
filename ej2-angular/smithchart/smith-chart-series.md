@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart series in Angular Smithchart component | Syncfusion
+title: Smith Chart Series in Angular Smith Chart | Syncfusion
 description: Learn here all about Smith chart series in Syncfusion Angular Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Smith chart series 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Smith chart series in Angular Smithchart component
+# Smith Chart Series in Angular Smith Chart
 
 You can add any number of series to the smithchart as per your requirement. You can use series setting to either add or customize the data. For the points or datasource added in the series, line is drawn. You can customize the each series as per your requirement with marker, datalabel, animation, opacity and so on.
 

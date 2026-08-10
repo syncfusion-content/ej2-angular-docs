@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in Angular Treemap component | Syncfusion
+title: Tooltip in Angular TreeMap | Syncfusion
 description: Learn here all about Tooltip in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Tooltip 
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in Angular Treemap component
+# Tooltip in Angular TreeMap
 
 Tooltip is used to display details about the items in the TreeMap. When space constraints prevent us from displaying the information using Data Labels, the tooltip comes in handy.
 
 ## Default tooltip
 
-The tooltip is not visible by default, to make it visible, set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel/#visible) property in the [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#tooltipsettings) to **true**.
+The tooltip is not visible by default, to make it visible, set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel#visible) property in the [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap#tooltipsettings) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ The tooltip is not visible by default, to make it visible, set the [`visible`](h
 
 ## Format tooltip
 
-The tooltip content is displayed by default based on the [`weightValuePath`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#weightvaluepath). In addition, to show more information in the tooltip, use the [`format`](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel/#format) property and define field from the data source as `${datafield}`.
+The tooltip content is displayed by default based on the [`weightValuePath`](https://ej2.syncfusion.com/angular/documentation/api/treemap#weightvaluepath). In addition, to show more information in the tooltip, use the [`format`](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel#format) property and define field from the data source as `${datafield}`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ The tooltip content is displayed by default based on the [`weightValuePath`](htt
 
 ## Tooltip template
 
-Tooltip can be rendered as a custom component using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel/#template) property in the [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#tooltipsettings) which accepts one or more UI elements as an input, that can be rendered as a part of the tooltip rendering. You can use `${datafield}` as placeholder in HTML element to display the values from data source.
+Tooltip can be rendered as a custom component using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel#template) property in the [`tooltipSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap#tooltipsettings) which accepts one or more UI elements as an input, that can be rendered as a part of the tooltip rendering. You can use `${datafield}` as placeholder in HTML element to display the values from data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
