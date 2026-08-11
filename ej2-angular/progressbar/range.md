@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range in Angular Progress bar component | Syncfusion
+title: Range in Angular Progress Bar | Syncfusion
 description: Learn here all about Range in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Range 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Range in Angular Progress bar component
+# Range in Angular Progress Bar
 
 <!-- markdownlint-disable MD033 -->
 

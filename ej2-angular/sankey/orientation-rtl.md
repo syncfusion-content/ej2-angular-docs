@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation and RTL in Angular Sankey component | Syncfusion
+title: Orientation Rtl in Angular Sankey | Syncfusion
 description: Learn here all about Orientation and RTL in Syncfusion Angular Sankey component of Syncfusion Essential JS 2 and more.
 control: Orientation and RTL
 platform: ej2-angular
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientation and RTL in Angular Sankey component
+# Orientation Rtl in Angular Sankey
 
 The Sankey Chart supports flexible layout options including horizontal and vertical orientations, as well as right-to-left (RTL) rendering for international applications. These features enable you to create localized and directionally appropriate visualizations.
 
@@ -27,7 +27,7 @@ Control the layout direction of the Sankey Chart using the orientation property.
 
 ## Horizontal Orientation
 
-The default orientation displays nodes horizontally across the chart, with flows moving from left to right. This is the standard layout for most Sankey diagrams:
+The default orientation displays nodes horizontally across the chart, with flows moving from left to right. This is the standard layout for most Sankeys:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

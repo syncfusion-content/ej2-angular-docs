@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis customization in Angular Stock chart component | Syncfusion
+title: Axis Customization in Angular Stock Chart | Syncfusion
 description: Learn here all about Axis customization in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Axis customization 
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis customization in Angular Stock chart component
+# Axis Customization in Angular Stock Chart
 
 ## Axis Crossing
 
-An axis can be positioned in the Stock Chart area using [`crossesAt`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#crossesat) and [`crossesInAxis`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#crossesinaxis) properties. The [`crossesAt`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#crossesat) property specifies the values (datetime, numeric, or logarithmic) at which the axis line has to be intersected with the vertical axis or vice-versa, and the [`crossesInAxis`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#crossesinaxis) property specifies the axis name with which the axis line has to be crossed.
+An axis can be positioned in the Stock Chart area using [`crossesAt`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#crossesat) and [`crossesInAxis`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#crossesinaxis) properties. The [`crossesAt`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#crossesat) property specifies the values (datetime, numeric, or logarithmic) at which the axis line has to be intersected with the vertical axis or vice-versa, and the [`crossesInAxis`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#crossesinaxis) property specifies the axis name with which the axis line has to be crossed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ An axis can be positioned in the Stock Chart area using [`crossesAt`](https://ej
 
 ## Title
 
-You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#title) property to provide quick information to the user about the data plotted in the axis. Title style can be customized using [`titleStyle`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#titlestyle) property of the axis.
+You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#title) property to provide quick information to the user about the data plotted in the axis. Title style can be customized using [`titleStyle`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#titlestyle) property of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 
 ## Tick Lines Customization
 
-You can customize the  `width`, `color` and `size` of the minor and major tick lines, using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#majorticklines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#minorticklines) properties in the axis.
+You can customize the  `width`, `color` and `size` of the minor and major tick lines, using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#majorticklines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#minorticklines) properties in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 
 ## Grid Lines Customization
 
-You can customize the `width`, `color` and `dashArray` of the minor and major grid lines, using [`majorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#majorgridlines) and [`minorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#minorgridlines) properties in the axis.
+You can customize the `width`, `color` and `dashArray` of the minor and major grid lines, using [`majorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#majorgridlines) and [`minorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#minorgridlines) properties in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,7 +94,7 @@ In addition to primary X and Y axis, we can add n number of axis to the Stock Ch
 
 <!-- markdownlint-disable MD033 -->
 
-When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#isinversed) to true.
+When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#isinversed) to true.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,7 +110,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 
 ## Opposed Position
 
-To place an axis opposite from its original position, set [`opposedPosition`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#opposedposition) property of the axis to true.
+To place an axis opposite from its original position, set [`opposedPosition`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel#opposedposition) property of the axis to true.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

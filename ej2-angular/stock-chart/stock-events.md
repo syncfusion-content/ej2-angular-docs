@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stock events in Angular Stock chart component | Syncfusion
+title: Stock Events in Angular Stock Chart | Syncfusion
 description: Learn here all about Stock events in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Stock events 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Stock events in Angular Stock chart component
+# Stock Events in Angular Stock Chart
 
 <!-- markdownlint-disable MD036 -->
 

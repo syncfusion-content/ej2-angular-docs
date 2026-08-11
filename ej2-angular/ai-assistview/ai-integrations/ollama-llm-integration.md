@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LLM Model With Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about Integration of LLM Model With Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: Ollama LLM Integration in Angular AI AssistView | Syncfusion®
+description: Integrate Angular AI AssistView with Ollama LLM models for local, context-aware conversational AI in your Angular app.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate LLM via Ollama with Angular AI AssistView Component
+# Ollama LLM Integration in Angular AI AssistView
 
 The AI AssistView component integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your Angular application. The component acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
 

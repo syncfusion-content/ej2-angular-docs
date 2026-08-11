@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Speech-to-Text With Angular Chat UI component | Syncfusion
-description:  Checkout and learn about configuration of Speech-to-Text with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Speech to Text in Angular Chat UI | Syncfusion®
+description: Enable Speech-to-Text in Angular Chat UI via the browser Web Speech API to convert microphone input into messages.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Speech-to-Text in Angular Chat UI
+# Speech to Text in Angular Chat UI
 
 The Syncfusion Angular Chat UI component integrates `Speech-to-Text` functionality through the browser's [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This enables the conversion of spoken words into text using the device's microphone, allowing users to interact with the Chat UI through voice input.
 

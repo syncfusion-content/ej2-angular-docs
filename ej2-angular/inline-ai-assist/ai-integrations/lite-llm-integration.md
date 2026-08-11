@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LiteLLM With Angular Inline AI Assist component | Syncfusion
-description:  Checkout and learn about Integration of LiteLLM With Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: LiteLLM Integration in Angular Inline AI Assist | Syncfusion®
+description: Connect Angular Inline AI Assist to LiteLLM, a unified OpenAI-compatible proxy for multiple LLM providers.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Inline AI Assist with LiteLLM
+# LiteLLM Integration in Angular Inline AI Assist
 
 The **Inline AI Assist** component can also be integrated with [LiteLLM](https://docs.litellm.ai/docs), an open-source proxy that provides a unified, OpenAI-compatible API for multiple LLM providers such as [OpenAI](https://openai.com) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
 

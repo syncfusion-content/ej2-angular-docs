@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export print in Angular Stock chart component | Syncfusion
+title: Export Print in Angular Stock Chart | Syncfusion
 description: Learn here all about Export print in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Export print 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Export print in Angular Stock chart component
+# Export Print in Angular Stock Chart
 
 The rendered stock chart can be exported to `JPEG`, `PNG`, `SVG`, or `PDF` format using the export dropdown button in the period selector toolbar. You can choose the required format using the export dropdown button in stock-chart.
 

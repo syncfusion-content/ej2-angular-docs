@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Methods with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Methods in Angular Chat UI | Syncfusion®
+description: Use Angular Chat UI public methods like addMessage to programmatically send strings or MessageModel objects.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in Angular Chat UI component
+# Methods in Angular Chat UI
 
 ## Add message
 

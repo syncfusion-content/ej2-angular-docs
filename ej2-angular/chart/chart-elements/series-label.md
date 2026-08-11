@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series Labels in Angular Chart Component | Syncfusion
+title: Series Labels in Angular Chart | Syncfusion
 description: Learn here all about Series label in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Series label
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Series Labels in Angular Chart Component
+# Series Labels in Angular Chart
 
 Series labels display the name of each series directly on the chart, positioned near the end of the series path or at the last visible data point. This helps identify series without relying on the legend.
 

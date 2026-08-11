@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis labels in Angular 3D Chart control | Syncfusion
+title: Axis Labels in Angular 3D Chart | Syncfusion
 description: Learn here all about axis labels in Syncfusion Angular 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 3D Chart
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis labels in Angular 3D Chart control
+# Axis Labels in Angular 3D Chart
 
 Axis labels are the labels that are positioned adjacent to the y-axis and beneath the x-axis. It provides descriptive information about the axis.
 
 ## Smart axis labels
 
-When the axis labels overlap with each other, [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/axis3DModel/#labelintersectaction) property in the axis can be used to place them smartly.
+When the axis labels overlap with each other, [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/axis3DModel#labelintersectaction) property in the axis can be used to place them smartly.
 
 **Case 1:** When setting `labelIntersectAction` as `Hide`.
 
@@ -61,7 +61,7 @@ When the axis labels overlap with each other, [`labelIntersectAction`](https://
 ## Edge label placement
 
 Labels with long text at the edges of an axis may appear partially in the 3D chart. To avoid this,
-use the [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/axis3DModel/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
+use the [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/axis3DModel#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,7 +77,7 @@ use the [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation
 
 ## Maximum labels
 
-The labels will be rendered based on the count in the [`maximumLabels`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/axis3DModel/#maximumlabels) property per 100 pixel. If the range (minimum, maximum, interval) and `maximumLabels` are set, then the priority goes to range. If the range is not set, then the priority goes to `maximumLabels` property.
+The labels will be rendered based on the count in the [`maximumLabels`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/axis3DModel#maximumlabels) property per 100 pixel. If the range (minimum, maximum, interval) and `maximumLabels` are set, then the priority goes to range. If the range is not set, then the priority goes to `maximumLabels` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

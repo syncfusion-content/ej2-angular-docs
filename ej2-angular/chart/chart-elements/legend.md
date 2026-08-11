@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Angular Chart component | Syncfusion
+title: Legend in Angular Chart | Syncfusion
 description: Learn here all about Legend in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Legend 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in Angular Chart component
+# Legend in Angular Chart
 
 The legend provides information about the series rendered in the chart and helps users identify each series by its color, shape, or style.
 

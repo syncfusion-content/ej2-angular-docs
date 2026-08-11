@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pie and donut in Angular 3D Circular Chart component | Syncfusion
+title: Pie and Donut in Angular 3D Circular Chart | Syncfusion
 description: Learn here all about Pie and donut in Syncfusion Angular 3D Circular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Pie and donut
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pie and donut in Angular 3D Circular Chart component
+# Pie and Donut in Angular 3D Circular Chart
 
 ## Pie chart
 

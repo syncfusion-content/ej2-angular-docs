@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about events with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Events in Angular AI AssistView | Syncfusion®
+description: Handle Angular AI AssistView events like created and promptRequest to customize behavior and react to user interactions.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular AI AssistView component
+# Events in Angular AI AssistView
 
 The Angular AI AssistView component provides a comprehensive set of events that enable developers to customize behavior and handle user interactions effectively. The following events are available in the AI AssistView component.
 

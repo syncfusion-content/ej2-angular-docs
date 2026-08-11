@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Chat UI | Syncfusion
-description:  Checkout and learn about Getting started with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Chat UI | Syncfusion®
+description: Learn how to set up Angular Chat UI, install dependencies, and build your first interactive conversation component.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Chat UI component
+# Getting Started with Angular Chat UI
 
 This section explains how to create a simple **Chat UI** component and configure its available functionalities in Angular.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data labels in Angular 3D Chart control | Syncfusion
+title: Data Labels in Angular 3D Chart | Syncfusion
 description: Learn here all about data labels in Syncfusion Angular 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 3D Chart
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data labels in Angular 3D Chart control
+# Data Labels in Angular 3D Chart
 
-Data labels are fields that includes information about the sample point connected to an output. It can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel/#visible) property in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#datalabel). By default, the labels will arrange smartly without overlapping.
+Data labels are fields that includes information about the sample point connected to an output. It can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel#visible) property in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#datalabel). By default, the labels will arrange smartly without overlapping.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ Data labels are fields that includes information about the sample point connecte
 
 ## Position
 
-The [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel/#position) property is used to place the label either on `Top`, `Middle`, or `Bottom`.
+The [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel#position) property is used to place the label either on `Top`, `Middle`, or `Bottom`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ The [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/da
 
 ## Template
 
-Label content can be formatted by using the template option. Inside the template, the placeholder text `${point.x}` and `${point.y}` can be added to display corresponding data points x & y value. Using [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel/#template) property, the data label template can be set.
+Label content can be formatted by using the template option. Inside the template, the placeholder text `${point.x}` and `${point.y}` can be added to display corresponding data points x & y value. Using [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel#template) property, the data label template can be set.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ Label content can be formatted by using the template option. Inside the template
 
 ## Text mapping
 
-Text from the data source can be mapped using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel/#name) property.
+Text from the data source can be mapped using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel#name) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,7 +76,7 @@ Text from the data source can be mapped using the [`name`](https://ej2.syncfusio
 
 ## Format
 
-Data label for the chart can be formatted using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel/#format) property. The global formatting options can be used as 'n', 'p', and 'c'.
+Data label for the chart can be formatted using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel#format) property. The global formatting options can be used as 'n', 'p', and 'c'.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -149,7 +149,7 @@ Data label for the chart can be formatted using the [`format`](https://ej2.syncf
 
 ## Margin
 
-The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel/#margin) for data label can be applied by using [`left`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/marginModel/#left), [`right`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/marginModel/#right), [`bottom`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/marginModel/#bottom) and [`top`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/marginModel/#top) properties.
+The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel#margin) for data label can be applied by using [`left`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/marginModel#left), [`right`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/marginModel#right), [`bottom`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/marginModel#bottom) and [`top`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/marginModel#top) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -165,7 +165,7 @@ The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/data
 
 ## Customization
 
-The `stroke` and `border` of data label can be customized using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel/#border) properties.
+The `stroke` and `border` of data label can be customized using [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyleModel#border) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -181,7 +181,7 @@ The `stroke` and `border` of data label can be customized using [`fill`](https:/
 
 ## Customizing specific label
 
-A specific label can be customized by using the [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/i3DTextRenderEventArgs/) event. The `textRender` event allows you to change the label text for the point.
+A specific label can be customized by using the [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/i3DTextRenderEventArgs) event. The `textRender` event allows you to change the label text for the point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Generative UI in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about generative UI with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Generative UI in Angular AI AssistView | Syncfusion®
+description: Register custom tools with Angular AI AssistView to render dynamic, interactive Generative UI inside AI responses.
 platform: ej2-angular
 control: AI AssistView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Generative UI in Angular AI AssistView component
+# Generative UI in Angular AI AssistView
 
 The `Generative UI` in AI AssistView allows you to render dynamic tools and UI elements within the AI AssistView. This enables seamless integration of interactive components based on AI-generated responses.
 

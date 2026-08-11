@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Angular Sankey component \ Syncfusion
+title: Legend in Angular Sankey | Syncfusion
 description: Learn here all about Legend in Syncfusion Angular Sankey component of Syncfusion Essential JS 2 and more.
 control: Legend
 platform: ej2-angular
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in Angular Sankey component
+# Legend in Angular Sankey
 
 A legend provides a visual key that helps users understand the categories and meanings represented by nodes in the Sankey Chart. The Sankey Chart provides comprehensive legend configuration options including positioning, styling, customization, and interactive behaviors. You can enable and customize the legend using the `legend` property and by injecting the `SankeyLegend` module.
 

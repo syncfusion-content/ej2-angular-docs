@@ -43,7 +43,7 @@ Category axis are used to represent, the string values instead of numbers.
 <!-- markdownlint-disable MD036 -->
 
 By default, category labels are placed between the ticks in an axis, this can also be placed on ticks
-using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelplacement) property.
+using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#labelplacement) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,7 +57,7 @@ using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/c
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs29" %}
 
->Note: To use category axis, we need to inject `CategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `Category`.
+>Note: To use category axis, we need to inject `CategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) of axis to `Category`.
 
 <!-- markdownlint-disable MD013 -->
 
@@ -81,7 +81,7 @@ You can use the numeric axis to represent numeric values of data in chart. By de
 
 **Customize Numeric Range**
 
-Range for an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#interval) property of the axis.
+Range for an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) property of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,7 +97,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 
 **Apply Padding to the Range**
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) property. Numeric axis supports following types of padding.
+Padding can be applied to the minimum and maximum extremes of the axis range by using the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) property. Numeric axis supports following types of padding.
 
 * None
 * Round
@@ -107,7 +107,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **Numeric - None**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `None`, minimum and maximum of an axis is based on the data.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) is set to `None`, minimum and maximum of an axis is based on the data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,7 +123,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 **Numeric - Round**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value divisible by interval. For example, when the minimum is 3.5 and the interval is 1, then the minimum will be rounded to 3.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value divisible by interval. For example, when the minimum is 3.5 and the interval is 1, then the minimum will be rounded to 3.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,7 +139,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 **Numeric - Additional**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -155,7 +155,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 **Numeric - Normal**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Normal`, padding is applied to the axis based on default range calculation.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) is set to `Normal`, padding is applied to the axis based on default range calculation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,7 +171,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 **Numeric - Auto**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Auto`,horizontal numeric axis takes None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) is set to `Auto`,horizontal numeric axis takes None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -203,7 +203,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 **Customizing Date Time Range**
 
-Range for an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#interval) property of the axis.
+Range for an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) property of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -219,7 +219,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 
 **Date Time Intervals**
 
-Date time intervals can be customized by using the [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#interval) and [`intervalType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#intervaltype) properties of the axis.
+Date time intervals can be customized by using the [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) and [`intervalType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#intervaltype) properties of the axis.
 For example, when you set interval as 2 and intervalType as years, it considers 2 years as interval.
 DateTime axis supports following interval types,
 
@@ -245,7 +245,7 @@ DateTime axis supports following interval types,
 
 **Applying Padding to the Range**
 
-Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) property. Date time axis supports the following types of padding,
+Padding can be applied to the minimum and maximum extremes of the range by using the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) property. Date time axis supports the following types of padding,
 
 * None
 * Round
@@ -253,7 +253,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **DateTime - None**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `None`, minimum and maximum of the axis is based on the data.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) is set to `None`, minimum and maximum of the axis is based on the data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,7 +269,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 **DateTime - Round**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value divisible by interval. For example, when the minimum is 15th Jan, interval is 1 and the interval type is ‘month’, then the axis minimum will be Jan 1st.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value divisible by interval. For example, when the minimum is 15th Jan, interval is 1 and the interval type is ‘month’, then the axis minimum will be Jan 1st.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -285,7 +285,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 **DateTime - Additional**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#rangepadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -299,7 +299,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
   
 {% previewsample "page.domainurl/samples/chart/axis/datetime-cs7" %}
 
->Note: To use datetime axis, we need to inject `DateTimeService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `DateTime`.
+>Note: To use datetime axis, we need to inject `DateTimeService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) of axis to `DateTime`.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -322,7 +322,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
 
 **Customize Logarithmic Range**
 
-Range of an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#interval) property of the axis.
+Range of an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) property of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -338,7 +338,7 @@ Range of an axis, will be calculated automatically based on the provided data, y
 
 **Logarithmic Base**
 
-Logarithmic base can be customized by using the [`logBase`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#logbase) property of the axis. For example when the logBase is 5, the axis values follows 5<sup>-2</sup>, 5<sup>-1</sup>, 5<sup>0</sup>, 5<sup>1</sup>, 5<sup>2</sup> etc.
+Logarithmic base can be customized by using the [`logBase`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#logbase) property of the axis. For example when the logBase is 5, the axis values follows 5<sup>-2</sup>, 5<sup>-1</sup>, 5<sup>0</sup>, 5<sup>1</sup>, 5<sup>2</sup> etc.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -354,7 +354,7 @@ Logarithmic base can be customized by using the [`logBase`](https://ej2.syncfus
 
 **Logarithmic Interval**
 
-Logarithmic axis interval can be customized by using the [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#interval) property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, then the axis labels are placed at an interval of 10<sup>2</sup>. The default value of the interval is 1.
+Logarithmic axis interval can be customized by using the [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, then the axis labels are placed at an interval of 10<sup>2</sup>. The default value of the interval is 1.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -368,13 +368,13 @@ Logarithmic axis interval can be customized by using the [`interval`](https://ej
   
 {% previewsample "page.domainurl/samples/chart/axis/log-cs4" %}
 
->Note: To use log axis, we need to inject `LogarithmicService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype) of axis to `Logarithmic`.
+>Note: To use log axis, we need to inject `LogarithmicService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) of axis to `Logarithmic`.
 
 ## Inversed Axis
 
 <!-- markdownlint-disable MD033 -->
 
-When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#isInversed) to true.
+When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#isInversed) to true.
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -392,7 +392,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 
 **Numeric Label Format**
 
-Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelformat) property. Numeric labels supports all globalize format.
+Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#labelformat) property. Numeric labels supports all globalize format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -467,7 +467,7 @@ The following table describes the result of applying some commonly used label fo
 
 **Datetime Label Format**
 
-You can format and parse the date to all globalize format using [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelformat) property in an axis.
+You can format and parse the date to all globalize format using [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#labelformat) property in an axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -546,7 +546,7 @@ Axis also supports custom label format using placeholder like {value}°C, in w
 
 **Axis Title**
 
-You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#title) property to provide quick information to the user about the data plotted in the axis.
+You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#title) property to provide quick information to the user about the data plotted in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -562,7 +562,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 
 **Label Customization**
 
-The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelstyle) property of an axis provides options to customize the `color`, `font-family`, `font-size` and `font-weight` of the axis labels.
+The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#labelstyle) property of an axis provides options to customize the `color`, `font-family`, `font-size` and `font-weight` of the axis labels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -578,7 +578,7 @@ The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/a
 
 **Edge Label Placement**
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
+Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -594,7 +594,7 @@ Labels with long text at the edges of an axis may appear partially in the chart.
 
 **Grid Lines Customization**
 
-You can customize the `width`, `color` and `dashArray` of the minor and major grid lines, using [`majorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#majorgridlines) and [`minorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#minorgridlines) properties in the axis.
+You can customize the `width`, `color` and `dashArray` of the minor and major grid lines, using [`majorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#majorgridlines) and [`minorGridLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minorgridlines) properties in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -610,7 +610,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and maj
 
 **Tick Lines Customization**
 
-You can customize the  `width`, `color` and `size` of the minor and major tick lines, using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#majorgridlines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#minorgridlines) properties in the axis.
+You can customize the  `width`, `color` and `size` of the minor and major tick lines, using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#majorgridlines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minorgridlines) properties in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -627,7 +627,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 **Place Axes at the Opposite Side**
 
 <!-- markdownlint-disable MD012 -->
-To place an axis opposite from its original position, set [`opposedPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#opposedposition) property of the axis to true.
+To place an axis opposite from its original position, set [`opposedPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#opposedposition) property of the axis to true.
 <!-- markdownlint-disable MD012 -->
 
 {% tabs %}
@@ -660,7 +660,7 @@ In addition to primary X and Y axis, we can add n number of axis to the chart. S
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelintersectaction) property in the axis, to place them smartly.
+When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#labelintersectaction) property in the axis, to place them smartly.
 
 When setting `labelIntersectAction` as `Hide`
 

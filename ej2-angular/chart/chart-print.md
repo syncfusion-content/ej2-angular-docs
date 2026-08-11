@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart print in Angular Chart component | Syncfusion
+title: Print and Export in Angular Chart | Syncfusion
 description: Learn here all about Chart print in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Chart print 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart print in Angular Chart component
+# Print and Export in Angular Chart
 
 ## Print
 

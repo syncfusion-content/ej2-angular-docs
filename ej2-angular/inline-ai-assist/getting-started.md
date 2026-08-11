@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Inline AI Assist | Syncfusion
-description:  Checkout and learn about Getting started with Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Inline AI Assist | Syncfusion®
+description: Learn how to set up Angular Inline AI Assist, install dependencies, and build your first inline AI-powered component.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular Inline AI Assist component
+# Getting Started with Angular Inline AI Assist
 
 This section explains how to create a simple **Inline AI Assist** component and configure its available features in Angular.
 

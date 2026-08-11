@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LLM Model With Angular Inline AI Assist component | Syncfusion
-description:  Checkout and learn about Integration of LLM Model With Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Ollama LLM Integration in Angular Inline AI Assist | Syncfusion®
+description: Integrate Angular Inline AI Assist with Ollama LLM models for local, context-aware AI suggestions in your app.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate LLM via Ollama with Angular Inline AI Assist Component
+# Ollama LLM Integration in Angular Inline AI Assist
 
 The Inline AI Assist component integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your Angular application. The component acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
 

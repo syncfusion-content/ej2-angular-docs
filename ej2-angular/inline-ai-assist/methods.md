@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in Angular Inline AI Assist | Syncfusion
-description:  Checkout and learn about methods with Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Methods in Angular Inline AI Assist | Syncfusion®
+description: Use Angular Inline AI Assist public methods like addResponse to add AI-generated responses to the inline assist.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in Angular Inline AI Assist component
+# Methods in Angular Inline AI Assist
 
 ## Adding response
 

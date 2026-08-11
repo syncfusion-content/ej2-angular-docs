@@ -1,16 +1,16 @@
 ---
 layout: post
-title: ChatGPT Integration With Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about Integration of ChatGPT with Azure OpenAI in Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: How to integrate ChatGPT in Angular AI AssistView | Syncfusion®
+description: Connect Angular AI AssistView to ChatGPT via Azure OpenAI to stream AI-generated responses in a conversational interface.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration of ChatGPT with Angular AI AssistView component
+# How to integrate ChatGPT in Angular AI AssistView
 
-The AI AssistView component integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to provide conversational AI features. By configuring the control to communicate with the Azure OpenAI API, the application can handle user prompts, stream or fetch responses, and display generated content that enables a seamless chat experience.
+The AI AssistView component integrates with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai) to provide conversational AI features. By configuring the control to communicate with the Azure OpenAI API, the application can handle user prompts, stream or fetch responses, and display generated content that enables a seamless chat experience.
 
 ## Prerequisites
 
@@ -32,8 +32,8 @@ Before integrating `ChatGPT UI`, ensure the following:
 The **AI AssistView** component demonstrates the seamless integration of AI capabilities with conversation history management which includes the following.
 
 *   **Sidebar** for neatly organized conversation history.
-*   **New Chat** functionality to initiate fresh conversations, along with a customizable banner using [bannerTemplate](../api/ai-assistview/#bannertemplate) for displaying helpful guidance messages.
-*   **Smart follow-up suggestions** after each response, powered by [promptSuggestions](../api/ai-assistview/#promptsuggestions).
+*   **New Chat** functionality to initiate fresh conversations, along with a customizable banner using [bannerTemplate](../api/ai-assistview#bannertemplate) for displaying helpful guidance messages.
+*   **Smart follow-up suggestions** after each response, powered by [promptSuggestions](../api/ai-assistview#promptsuggestions).
 *   **Attachment support** with configurable upload endpoints.
 *   **LocalStorage**-based persistence to retain prompts and suggestions across sessions.
 

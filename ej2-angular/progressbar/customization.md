@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in Angular Progress bar component | Syncfusion
+title: Customization in Angular Progress Bar | Syncfusion
 description: Learn here all about Customization in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Customization in Angular Progress bar component
+# Customization in Angular Progress Bar
 
 ## Segments
 
@@ -27,7 +27,7 @@ We can divide a progress bar into multiple segments using a `segmentCount` to vi
 
 ## Thickness
 
-Customize the thickness of the track using [`trackThickness`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel/#trackthickness), progress using [`progressThickness`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel/#progressthickness) and secondary progress using [`secondaryProgressThickness`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel/#secondaryprogressthickness) to render the progress bar with different appearances.
+Customize the thickness of the track using [`trackThickness`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel#trackthickness), progress using [`progressThickness`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel#progressthickness) and secondary progress using [`secondaryProgressThickness`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel#secondaryprogressthickness) to render the progress bar with different appearances.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -91,7 +91,7 @@ The inner radius of the progress bar can be customized using `innerRadius` prope
 
 ## Progress color and track color
 
-Customize the color of progress, secondary progress, and track by using the [`progressColor`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel/#progresscolor), [`secondaryProgressColor`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel/#secondaryprogresscolor), and [`trackColor`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel/#trackcolor) properties.
+Customize the color of progress, secondary progress, and track by using the [`progressColor`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel#progresscolor), [`secondaryProgressColor`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel#secondaryprogresscolor), and [`trackColor`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/progressBarModel#trackcolor) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Angular Stock chart component | Syncfusion
+title: Legend in Angular Stock Chart | Syncfusion
 description: Learn here all about Legend in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Legend 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in Angular Stock chart component
+# Legend in Angular Stock Chart
 
 Legend provides information about the series rendered in the Stock Chart. Legend can be added to a Stock Chart by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/legendSettingsvisible) option in the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/legendSettings).
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Empty points in Angular 3D Circular Chart component | Syncfusion
+title: Empty Points in Angular 3D Circular Chart | Syncfusion
 description: Learn here all about empty points in Syncfusion Angular 3D Circular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Empty points 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Empty points in Angular 3D Circular Chart component
+# Empty Points in Angular 3D Circular Chart
 
 Data points containing `null` or `undefined` values are considered empty points. These empty data points are ignored and not plotted in the 3D Circular Chart. You can customize the handling of empty points using the `emptyPointSettings` property in the series. The default mode for empty points is `Gap`. Other supported modes include `Average`, `Drop`, and `Zero`.
 

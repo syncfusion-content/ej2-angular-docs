@@ -1,13 +1,14 @@
 import { data } from './datasource';
 import { Component, OnInit } from '@angular/core';
 import { GridComponent, GridModule, PageService} from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-  imports: [ GridModule ],
+  imports: [ GridModule, ButtonModule ],
   standalone: true,
   selector: 'app-root',
-  template: `<button (click)="toggleTouchMode()">{{ buttonText }}</button>
-            <ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' height='268px'>
+  template: `<button id="toggleBtn" ejs-button (click)="toggleTouchMode()">{{ buttonText }}</button>
+            <ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' height='210px'>
             <e-columns>
                   <e-column field='OrderID' headerText='Order ID' type='number' isPrimaryKey='true' textAlign='Right' width=100></e-column>
                   <e-column field='CustomerID' headerText='Customer ID' type='string' width=120></e-column>

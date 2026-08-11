@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Types in Angular Progress bar component | Syncfusion
+title: Types in Angular Progress Bar | Syncfusion
 description: Learn here all about Types in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Types 
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Types in Angular Progress bar component
+# Types in Angular Progress Bar
 
 Visualize progress in different shapes (rectangle, circle, and semi-circle) to give a unique appearance to your app design.
 

@@ -106,12 +106,12 @@ Constants are reserved tokens that the renderer recognizes by name. Use them on 
 
 | Constant | Type | Value | Usage |
 | --- | --- | --- | --- |
-| `PI` | number | `3.14159...` | `{{radius} * PI}` |
-| `TRUE` | boolean | `true` | `{{enabled} == TRUE}` |
-| `FALSE` | boolean | `false` | `{{disabled} === FALSE}` |
-| `NULL` | null | `null` | `{{value} == NULL}` |
-| `UNDEFINED` | undefined | `undefined` | `{{value} != UNDEFINED}` |
-| `Math` | object | Math object | `{Math.sqrt({num})}` |
+| `PI` | number | `3.14159...` | `{radius} * PI` |
+| `TRUE` | boolean | `true` | `{enabled} == TRUE` |
+| `FALSE` | boolean | `false` | `{disabled} === FALSE` |
+| `NULL` | null | `null` | `{value} == NULL` |
+| `UNDEFINED` | undefined | `undefined` | `{value} != UNDEFINED` |
+| `Math` | object | Math object | `Math.sqrt({num})` |
 
 ## Available Functions
 

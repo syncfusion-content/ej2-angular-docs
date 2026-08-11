@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gradient in Angular Chart component | Syncfusion
+title: Gradient in Angular Chart | Syncfusion
 description: Learn here all about Gradient in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Gradient
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Gradient in Angular Chart component
+# Gradient in Angular Chart
 
 <!-- markdownlint-disable MD036 -->
 

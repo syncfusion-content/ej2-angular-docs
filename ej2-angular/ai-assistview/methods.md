@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Methods in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about methods with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Methods in Angular AI AssistView | Syncfusion®
+description: Use Angular AI AssistView public methods like addPromptResponse to add prompt-response pairs as strings or objects at runtime.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in Angular AI AssistView component
+# Methods in Angular AI AssistView
 
 ## Adding prompt response
 
-You can use the [addPromptResponse](../api/ai-assistview/#addpromptresponse) public method to add the prompts and responses to the AI AssistView. You can add the it either as a `string` or `object` collection.
+You can use the [addPromptResponse](../api/ai-assistview#addpromptresponse) public method to add the prompts and responses to the AI AssistView. You can add the it either as a `string` or `object` collection.
 
 ### Adding Responses as a String
 
@@ -48,7 +48,7 @@ You can add an object response by passing the prompt and response as a collectio
 
 ## Executing prompt
 
-You can use the [executePrompt](../api/ai-assistview/#executeprompt) method to execute the prompts dynamically in the AI AssistView. It accepts prompts as string values, which triggers the [promptRequest](../api/ai-assistview/#promptrequest) event and performs the callback actions.
+You can use the [executePrompt](../api/ai-assistview#executeprompt) method to execute the prompts dynamically in the AI AssistView. It accepts prompts as string values, which triggers the [promptRequest](../api/ai-assistview#promptrequest) event and performs the callback actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

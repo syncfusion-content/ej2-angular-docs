@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar items in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about Toolbar items with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Toolbar Items in Angular AI AssistView | Syncfusion®
+description: Configure Angular AI AssistView toolbar settings for footer, prompt, response, and footer toolbars to add send and attachment items.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar items in Angular AI AssistView component
+# Toolbar Items in Angular AI AssistView
 
 You can render the AI AssistView toolbar items by using the `items` property in the [toolbarSettings](../api/ai-assistview#toolbarsettings), [responseToolbarSettings](../api/ai-assistview#responsetoolbarsettings), [promptToolbarSettings](../api/ai-assistview#prompttoolbarsettings) & [footerToolbarSettings](../api/ai-assistview#footertoolbarsettings) properties.
 

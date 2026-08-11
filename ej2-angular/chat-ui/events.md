@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Events with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Events in Angular Chat UI | Syncfusion®
+description: Handle Angular Chat UI events like created and messageSend to respond to component lifecycle and user actions.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular Chat UI component
+# Events in Angular Chat UI
 
 This section describes the events that the Chat UI component triggers when specific actions are performed. The following events are available:
 

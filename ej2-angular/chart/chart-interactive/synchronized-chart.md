@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Synchronized Charts in Angular Chart component | Syncfusion
+title: Synchronized Charts in Angular Chart | Syncfusion
 description: Learn here all about Synchronized Charts in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Synchronized charts
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Synchronized Charts in Angular Chart component
+# Synchronized Charts in Angular Chart
 
 Synchronized charts allow multiple chart instances to share common interactions so that actions performed on one chart are reflected across the others. This approach is useful for comparing related datasets and analyzing trends consistently across multiple visualizations.
 

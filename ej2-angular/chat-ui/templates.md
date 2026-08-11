@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Templates with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Templates in Angular Chat UI | Syncfusion®
+description: Customize Angular Chat UI with templates for the conversation window, messages, and typing indicators to match your app.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Chat UI component
+# Templates in Angular Chat UI
 
 Elevate the user experience by fully customizing the Syncfusion Angular Chat UI component. With templating support for key areas like the conversation window, messages, and typing indicators, you can create a unique and personalized chat interface that aligns perfectly with your application's design.
 

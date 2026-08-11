@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic data update in Angular Chart component | Syncfusion
+title: Dynamic Data Update in Angular Chart | Syncfusion
 description: Learn here all about dynamic data update in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Dynamic Data Update
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic data update in Angular Chart component
+# Dynamic Data Update in Angular Chart
 
 ## Adding a new data point
 

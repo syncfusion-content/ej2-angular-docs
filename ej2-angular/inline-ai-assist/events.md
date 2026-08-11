@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Angular Inline AI Assist | Syncfusion
-description:  Checkout and learn about events with Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Events in Angular Inline AI Assist | Syncfusion®
+description: Handle Angular Inline AI Assist events like created to run logic once the component finishes rendering.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular Inline AI Assist component
+# Events in Angular Inline AI Assist
 
 This section describes the Inline AI Assist events that will be triggered when appropriate actions are performed. The following events are available in the Inline AI Assist component.
 

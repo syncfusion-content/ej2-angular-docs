@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text-to-Speech With Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about configuration of Text-to-Speech with Azure OpenAI in Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: Text to Speech in Angular AI AssistView | Syncfusion®
+description: Add Text-to-Speech in Angular AI AssistView to read AI responses aloud using the browser SpeechSynthesis API.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Text to Speech in AI AssistView
+# Text to Speech in Angular AI AssistView
 
 The Syncfusion Angular AI AssistView component provides built-in `Text-to-Speech` (TTS) support using the browser's Web Speech API, specifically the [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) interface. This allows AI-generated responses into spoken audio, enhancing accessibility and user interaction.
 

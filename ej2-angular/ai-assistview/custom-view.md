@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom views in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about Custom views with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Custom Views in Angular AI AssistView | Syncfusion®
+description: Organize Angular AI AssistView with multiple custom views and switch between Assist and Custom layouts in a single component.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom views in Angular AI AssistView component
+# Custom Views in Angular AI AssistView
 
 The AI AssistView component supports multiple views that allow you to organize different types of content within the same component.
 
@@ -18,7 +18,7 @@ The `e-views` selector enables you to define a collection of different view mode
 
 ### Setting view type
 
-You can specify the type of view using the [type](../api/ai-assistview/#assistViewType) property within the `e-view` selector. It accepts two values such as `Assist`, and `Custom`.
+You can specify the type of view using the [type](../api/ai-assistview#assistViewType) property within the `e-view` selector. It accepts two values such as `Assist`, and `Custom`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,7 +65,7 @@ export class AppComponent {
 
 ### Setting name
 
-You can use the [name](../api/ai-assistview/assistViewModel/#name) property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
+You can use the [name](../api/ai-assistview/assistViewModel#name) property to specifies the header name of the `Assist` or `Custom` views in the AI AssistView.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,7 +112,7 @@ export class AppComponent {
 
 ### Setting iconCss
 
-You can customize the view icons using the [iconCss](../api/ai-assistview/assistViewModel/#iconcss) property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
+You can customize the view icons using the [iconCss](../api/ai-assistview/assistViewModel#iconcss) property. By default the `e-assistview-icon` class is added as built-in header icon for the AI AssistView.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -173,7 +173,7 @@ The following example illustrates how types, name, and iconCss are used in a AI 
 
 ### Setting view template 
 
-The [viewTemplate](../api/ai-assistview/assistViewModel/#viewtemplate) property allows to define custom content for multiple views within the AI AssistView.
+The [viewTemplate](../api/ai-assistview/assistViewModel#viewtemplate) property allows to define custom content for multiple views within the AI AssistView.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -189,7 +189,7 @@ The [viewTemplate](../api/ai-assistview/assistViewModel/#viewtemplate) property 
 
 ## Setting activeView
 
-You can use the [activeView](../api/ai-assistview/#activeview) property to specify which view should be displayed when the AI AssistView component initializes. By default, the first view (index 0) is set as active.
+You can use the [activeView](../api/ai-assistview#activeview) property to specify which view should be displayed when the AI AssistView component initializes. By default, the first view (index 0) is set as active.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

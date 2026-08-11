@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Speech-to-Text With Angular AI AssistView component | Syncfusion
-description: Checkout and learn about configuration of Speech-to-Text with Azure OpenAI in Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Speech to Text in Angular AI AssistView | Syncfusion®
+description: Enable Speech-to-Text in Angular AI AssistView via the browser Web Speech API to convert voice input into prompts.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Speech-to-Text in Angular AI AssistView
+# Speech to Text in Angular AI AssistView
 
 The Syncfusion Angular AI AssistView component integrates `Speech-to-Text` functionality through the browser's [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This enables the conversion of spoken words into text using the device's microphone, allowing users to interact with the AI AssistView through voice input.
 

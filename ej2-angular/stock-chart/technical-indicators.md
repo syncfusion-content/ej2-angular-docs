@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical indicators in Angular Stock chart component | Syncfusion
+title: Technical Indicators in Angular Stock Chart | Syncfusion
 description: Learn here all about Technical indicators in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Technical indicators 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Technical indicators in Angular Stock chart component
+# Technical Indicators in Angular Stock Chart
 
 A technical indicator is a mathematical calculation based on historic price, volume or open interest information that aims to forecast financial market direction.
 
