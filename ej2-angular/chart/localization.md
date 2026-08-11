@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Angular Chart component | Syncfusion
+title: Localization in Angular Chart | Syncfusion
 description: Learn here all about Localization in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Localization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Chart component
+# Localization in Angular Chart
 
 Localization enables the chart component to adapt its text content to different languages and regions. The chart's default text content, such as zoom toolbar labels and other static text elements, can be localized by providing locale-specific translation objects.
 

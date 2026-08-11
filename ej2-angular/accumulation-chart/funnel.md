@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Funnel in Angular Accumulation chart component | Syncfusion
+title: Funnel in Angular Accumulation Chart | Syncfusion
 description: Learn here all about Funnel in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Funnel 
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Funnel in Angular Accumulation chart component
+# Funnel in Angular Accumulation Chart
 
-To render a funnel series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#type) as `Funnel` and inject, the `FunnelSeries` module  into the `@NgModule.providers`.
+To render a funnel series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#type) as `Funnel` and inject, the `FunnelSeries` module  into the `@NgModule.providers`.
 
 To known about funnel charts, you can check on this video:
 

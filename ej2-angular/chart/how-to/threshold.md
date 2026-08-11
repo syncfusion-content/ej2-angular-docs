@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Threshold in Angular Chart component | Syncfusion
+title: How to Use Threshold in Angular Chart | Syncfusion
 description: Learn here all about Threshold in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Threshold 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Threshold in Angular Chart component
+# How to Use Threshold in Angular Chart
 
 You can mark a threshold in a chart by using the [`striplines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#striplines) property. Thresholds help visualize important reference values or ranges in your chart data, such as target goals, safety limits, or alert zones.
 

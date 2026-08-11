@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animation in Angular Progress bar component | Syncfusion
+title: Animation in Angular Progress Bar | Syncfusion
 description: Learn here all about Animation in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Animation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Animation in Angular Progress bar component
+# Animation in Angular Progress Bar
 
 <!-- markdownlint-disable MD033 -->
 

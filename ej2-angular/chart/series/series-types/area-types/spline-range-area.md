@@ -7,7 +7,7 @@ control: Spline Range Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Spline Range Area in Angular Charts
+# Spline Range Area Chart in Angular Charts
 
 ## Spline Range Area
 

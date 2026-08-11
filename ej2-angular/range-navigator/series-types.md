@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series types in Angular Range navigator component | Syncfusion
+title: Series Types in Angular Range Navigator | Syncfusion
 description: Learn here all about Series types in Syncfusion Angular Range navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Series types 
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Series types in Angular Range navigator component
+# Series Types in Angular Range Navigator
 
-To render the data, the Range Selector supports six types of series.
+To render the data, the Range Navigator supports six types of series.
 
 <!-- markdownlint-disable MD036 -->
 
@@ -18,7 +18,7 @@ To render the data, the Range Selector supports six types of series.
 
 <!-- markdownlint-disable MD036 -->
 
-To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/rangeNavigatorSeriesModel#type) as **Line** and inject the `LineSeriesService` into the `@NgModule.providers`. By default, the line series is rendered in the Range Selector .
+To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/rangeNavigatorSeriesModel#type) as **Line** and inject the `LineSeriesService` into the `@NgModule.providers`. By default, the line series is rendered in the Range Navigator .
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

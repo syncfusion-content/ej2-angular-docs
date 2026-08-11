@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to create routes between markers in Maps component | Syncfusion
+title: How to create routes between markers in Angular Maps | Syncfusion
 description: Learn here all about creating routes between markers in the Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Maps 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Creating Routes Between Markers in the Angular Maps component
+# How to create routes between markers in Angular Maps
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Maps component supports plotting routes between two locations (source and destination) using the navigation line feature. Markers can be placed at these locations to visually indicate the source and destination, making it easier to view the path between them on the map.
 

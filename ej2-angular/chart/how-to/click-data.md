@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Click data in Angular Chart component | Syncfusion
+title: How to Show Pie Clicked Data in Angular Chart | Syncfusion
 description: Learn here all about Click data in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Click data 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Click data in Angular Chart component
+# How to Show Pie Clicked Data in Angular Chart
 
 By using the [`pointClick`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointclick) event, you can get the chart data of the clicked area.
 

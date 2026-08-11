@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with data source in Angular 3D Chart control | Syncfusion
+title: Working with Data in Angular 3D Chart | Syncfusion
 description: Learn here all about working with data source in Syncfusion Angular 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 3D Chart
@@ -9,11 +9,11 @@ domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Working with data in Angular 3D Chart control
+# Working with Data in Angular 3D Chart
 
 ## Local data
 
-A simple JSON data can be bound to the 3D chart using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#datasource) property in series. Now map the fields in JSON to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#yname) properties.
+A simple JSON data can be bound to the 3D chart using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#datasource) property in series. Now map the fields in JSON to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#yname) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,7 +29,7 @@ A simple JSON data can be bound to the 3D chart using [`dataSource`](https://ej2
 
 ## Remote data
 
-The remote data can be bound to the 3D chart using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). The `DataManager` requires minimal information like web service URL, adaptor and cross domain to interact with service endpoint properly. Assign the instance of the `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#datasource) property in series and map the fields of data to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#yname) properties. You can also use the [`query`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#query) property of the series to filter the data.
+The remote data can be bound to the 3D chart using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager). The `DataManager` requires minimal information like web service URL, adaptor and cross domain to interact with service endpoint properly. Assign the instance of the `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#datasource) property in series and map the fields of data to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#yname) properties. You can also use the [`query`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#query) property of the series to filter the data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,7 @@ The remote data can be bound to the 3D chart using the [`DataManager`](https://e
 
 ## Empty points
 
-The data points that uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and is not plotted in the chart. When the data is provided by using the points property, by using [`emptyPointSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#emptypointsettings) property in series, the empty can be customized. The default [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/threeDimensionalEmptyPointSettingsModel/#mode) of the empty point is **Gap**.
+The data points that uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and is not plotted in the chart. When the data is provided by using the points property, by using [`emptyPointSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#emptypointsettings) property in series, the empty can be customized. The default [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/threeDimensionalEmptyPointSettingsModel#mode) of the empty point is **Gap**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,7 +77,7 @@ The data points that uses the `null` or `undefined` as value are considered as e
 
 **Customizing empty point**
 
-The specific color for empty point can be set by the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/threeDimensionalEmptyPointSettingsModel/#fill) property in [`emptyPointSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#emptypointsettings).
+The specific color for empty point can be set by the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/threeDimensionalEmptyPointSettingsModel#fill) property in [`emptyPointSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#emptypointsettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

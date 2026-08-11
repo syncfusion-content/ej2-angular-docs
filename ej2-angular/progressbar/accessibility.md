@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in Angular Progress bar component | Syncfusion
+title: Accessibility in Angular Progress Bar | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Accessibility in Angular Progress bar component
+# Accessibility in Angular Progress Bar
 
-The Progress bar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Progress bar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Progress bar component is outlined below.
 
@@ -50,7 +50,7 @@ The Progress bar component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/a
 
 ## Keyboard interaction
 
-The Progress bar component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Progress bar component.
+The Progress bar component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Progress bar component.
 
 | **Press** | **To do this** |
 | --- | --- |

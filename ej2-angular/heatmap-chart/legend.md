@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Angular Heatmap chart component | Syncfusion
+title: Legend in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Legend in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Legend 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in Angular Heatmap chart component
+# Legend in Angular HeatMap Chart
 
 ## Enable legend
 

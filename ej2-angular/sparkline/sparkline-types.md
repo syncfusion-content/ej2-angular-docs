@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline types in Angular Sparkline component | Syncfusion
+title: Sparkline Types in Angular Sparkline | Syncfusion
 description: Learn here all about Sparkline types in Syncfusion Angular Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Sparkline types 
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Sparkline Types in Angular Sparkline Component
+# Sparkline Types in Angular Sparkline
 
 Different shapes can be used to visualize data in a Sparkline component. You can change the Sparkline type using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/sparkline/sparklinemodel#type) property.
 

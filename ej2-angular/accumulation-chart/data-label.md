@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data label in Angular Accumulation chart component | Syncfusion
+title: Data Label in Angular Accumulation Chart | Syncfusion
 description: Learn here all about Data label in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data label 
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data label in Angular Accumulation chart component
+# Data Label in Angular Accumulation Chart
 
-Data label can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings/#visible) option in the dataLabel property.
+Data label can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings#visible) option in the dataLabel property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ Using `angle` property, you can rotate the data label by its given angle.
 
 ## Smart labels
 
-Data labels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`enableSmartLabels`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel/#enablesmartlabels) property.
+Data labels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the [`enableSmartLabels`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel#enablesmartlabels) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +78,7 @@ Data labels will be arranged smartly without overlapping with each other. You ca
 
 ## Format
 
-Data label for the accumulation chart can be formatted using [`format`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel/#format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+Data label for the accumulation chart can be formatted using [`format`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel#format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -151,7 +151,7 @@ Data label for the accumulation chart can be formatted using [`format`](https://
 ## DataLabel template
 
 Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using
-[`template`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings/#template)property, you can set data label template in chart.
+[`template`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings#template)property, you can set data label template in chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -216,7 +216,7 @@ Individual text can be customized using the `textRender` event.
 
 ## Text wrap
 
-When the data label text exceeds the container, the text can be wrapped by using [`textWrap`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings/#textwrap) property. End user can also wrap the data label text based on [`maxWidth`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings/#maxwidth) property.
+When the data label text exceeds the container, the text can be wrapped by using [`textWrap`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings#textwrap) property. End user can also wrap the data label text based on [`maxWidth`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings#maxwidth) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -236,7 +236,7 @@ You can show the percentages in data labels of pie chart using `textRender` even
 
 ### Using textRender event
 
-You can customize the data label of pie chart using [textRender](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/#textrender) event as follows to show percentage.
+You can customize the data label of pie chart using [textRender](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart#textrender) event as follows to show percentage.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

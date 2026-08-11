@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Angular Progress bar component | Syncfusion
+title: Events in Angular Progress Bar | Syncfusion
 description: Learn here all about Events in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Events 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular Progress bar component
+# Events in Angular Progress Bar
 
 ## Value Change
 

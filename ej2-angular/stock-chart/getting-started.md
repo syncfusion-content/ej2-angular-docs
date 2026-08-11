@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Stock Chart component | Syncfusion
+title: Getting Started with Angular Stock Chart | Syncfusion
 description:  Check out and learn about Getting Started with Angular Stock Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://ej2.syncfusion.com
 ---
 
-# Getting Started with Angular Stock Chart Component
+# Getting Started with Angular Stock Chart
 
 This section explains the steps required to create a simple [stock chart](https://www.syncfusion.com/angular-components/angular-stock-chart) and demonstrates the basic usage of the Angular Stock Chart component.
 

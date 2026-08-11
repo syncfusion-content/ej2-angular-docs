@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple panes in Angular Chart component | Syncfusion
+title: Multiple Panes in Angular Chart | Syncfusion
 description: Learn here all about Multiple panes in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Multiple panes 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple panes in Angular Chart component
+# Multiple Panes in Angular Chart
 
 The chart area can be divided into multiple panes by defining rows and columns using the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/chart/row) and [`columns`](https://ej2.syncfusion.com/angular/documentation/api/chart/column) collections. This feature is useful for displaying multiple related datasets within the same chart container while maintaining clear visual separation.
 

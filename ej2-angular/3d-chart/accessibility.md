@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Angular 3D Chart control | Syncfusion
+title: Accessibility in Angular 3D Chart | Syncfusion
 description: Learn here all about accessibility in Syncfusion Angular 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 3D Chart
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular 3D Chart control
+# Accessibility in Angular 3D Chart
 
 Accessibility is achieved in the 3D chart control through WAI-ARIA standard and keyboard navigation. The 3D chart features can be effectively accessed through assistive technologies such as screen readers.
 

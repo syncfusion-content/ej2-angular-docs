@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series types in Angular Accumulation chart component | Syncfusion
+title: Series Types in Angular Accumulation Chart | Syncfusion
 description: Learn here all about Series types in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Series types 
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Series types in Angular Accumulation chart component
+# Series Types in Angular Accumulation Chart
 
 <!-- markdownlint-disable MD036 -->
 
 ## Pyramid Chart
 
-To render a pyramid series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#type) as `Pyramid`.
+To render a pyramid series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#type) as `Pyramid`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ To render a pyramid series, use series [`type`](https://ej2.syncfusion.com/angul
 
 ## Funnel Chart
 
-To render a funnel series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#type) as `Funnel`.
+To render a funnel series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#type) as `Funnel`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend customization in Angular Heatmap chart component | Syncfusion
+title: Customize the legend label in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Legend customization in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Legend customization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend customization in Angular Heatmap chart component
+# How to customize the legend label in Angular HeatMap Chart
 
 You can change the legend label using the `legendRender` client-side event. You can also hide the legend label using this client-side event.
 

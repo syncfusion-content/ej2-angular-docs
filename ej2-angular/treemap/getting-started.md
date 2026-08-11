@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular TreeMap component | Syncfusion
+title: Getting Started with Angular TreeMap | Syncfusion
 description: Checkout and learn about Getting started with Angular TreeMap component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular TreeMap component
+# Getting Started with Angular TreeMap
 
 This document explains the steps required to create and render a TreeMap component and demonstrates the component's basic usage.
 

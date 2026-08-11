@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Response actions in Angular Inline AI Assist | Syncfusion
-description:  Checkout and learn about response items with Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Response Actions in Angular Inline AI Assist | Syncfusion®
+description: Configure response actions in Angular Inline AI Assist so users can accept, discard, or run custom actions on AI output.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Response actions in Angular Inline AI Assist component
+# Response Actions in Angular Inline AI Assist
 
 You can render response action popup by using `items` property in the [responseSettings](../api/inline-ai-assist#responsesettings) property. This feature enables users to accept, discard, or perform custom actions on AI-generated responses.
 

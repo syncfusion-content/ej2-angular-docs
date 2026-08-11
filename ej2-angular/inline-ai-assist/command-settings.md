@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Commands configuration in Angular Inline AI Assist | Syncfusion
-description:  Checkout and learn about command items with Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Commands Configuration in Angular Inline AI Assist | Syncfusion®
+description: Configure command items in Angular Inline AI Assist to customize the action popup and its available commands.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Commands configuration in Angular Inline AI Assist component
+# Commands Configuration in Angular Inline AI Assist
 
 You can render and use the command action popup by using the `commands` property in the [commandSettings](../api/inline-ai-assist#commandsettings) property. This property helps to supply commands, component popup dimensions, and customize behavior.
 

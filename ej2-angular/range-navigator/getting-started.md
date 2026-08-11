@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Range Navigator component | Syncfusion
+title: Getting Started with Angular Range Navigator | Syncfusion
 description:  Check out and learn about Getting Started with Angular Range Navigator component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Range Navigator Component
+# Getting Started with Angular Range Navigator
 
 This section explains the steps required to create a simple [Angular Range Navigator](https://www.syncfusion.com/angular-components/angular-range-selector) and demonstrates the basic usage of the Range Navigator component.
 
@@ -165,7 +165,7 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 
 >Note: Get data from [here](https://ej2.syncfusion.com/demos/src/range-navigator/data-source/default-data.json).
 
-The sample should look like our [default](https://ej2.syncfusion.com/angular/demos/#/tailwind3/range-navigator/default), don't worry about the gradient color, let it take the default color.
+The sample should look like our [default](https://ej2.syncfusion.com/angular/demos#/tailwind3/range-navigator/default), don't worry about the gradient color, let it take the default color.
 
 ## Run the application
 

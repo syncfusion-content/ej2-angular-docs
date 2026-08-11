@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Angular Sankey component | Syncfusion
+title: Customization in Angular Sankey | Syncfusion
 description: Learn here all about Customization in Syncfusion Angular Sankey component of Syncfusion Essential JS 2 and more.
 control: Customization
 platform: ej2-angular
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Sankey component
+# Customization in Angular Sankey
 
 The Sankey component provides extensive customization options to create visualizations that match your specific design requirements and data presentation needs. From styling and theming to advanced visual techniques, the component enables complete control over appearance and behavior.
 

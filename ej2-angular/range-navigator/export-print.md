@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export print in Angular Range navigator component | Syncfusion
+title: Export Print in Angular Range Navigator | Syncfusion
 description: Learn here all about Export print in Syncfusion Angular Range navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Export print 
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Export print in Angular Range navigator component
+# Export Print in Angular Range Navigator
 
 ## Export
 
-The rendered Range Selector can be exported to **JPEG**, **PNG**, **SVG**, or **PDF** format by using the [`export`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#export) method in the Range Selector. This method contains the following parameters:
+The rendered Range Navigator can be exported to **JPEG**, **PNG**, **SVG**, or **PDF** format by using the [`export`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#export) method in the Range Navigator. This method contains the following parameters:
 
 * **Type** - To specify the export type. The component can be exported to **JPEG**, **PNG**, **SVG**, or **PDF** format.
 * **File name** - To specify the file name to export.
@@ -32,7 +32,7 @@ The rendered Range Selector can be exported to **JPEG**, **PNG**, **SVG**, or **
 
 ## Print
 
-The rendered Range Selector can be printed directly from the browser by calling the public method [`print`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#print).
+The rendered Range Navigator can be printed directly from the browser by calling the public method [`print`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#print).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

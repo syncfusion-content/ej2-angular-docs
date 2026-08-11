@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internationalization in Angular Maps component | Syncfusion
+title: Internationalization in Angular Maps | Syncfusion
 description: Learn here all about Internationalization in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Internationalization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Internationalization in Angular Maps component
+# Internationalization in Angular Maps
 
 Internationalization enables the Maps component to display content in different cultures and locales, making it accessible to users worldwide. The Maps component supports internationalization for the following elements:
 

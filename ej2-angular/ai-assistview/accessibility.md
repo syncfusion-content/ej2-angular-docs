@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about Accessibility with Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: Accessibility in Angular AI AssistView | Syncfusion®
+description: Build inclusive Angular AI AssistView apps with WCAG 2.2, Section 508, ARIA roles, and full keyboard navigation support.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular AI AssistView component
+# Accessibility in Angular AI AssistView
 
 The AI AssistView component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Sparkline component | Syncfusion
+title: Ej1 Api Migration in Angular Sparkline | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Ej1 api migration 
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD038 -->
 
-# Ej1 api migration in Angular Sparkline component
+# Ej1 Api Migration in Angular Sparkline
 
 This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

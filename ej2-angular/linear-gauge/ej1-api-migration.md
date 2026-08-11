@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Linear gauge component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Linear gauge component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in Angular Linear Gauge | Syncfusion
+description: Learn how to migrate the Syncfusion Angular Linear Gauge component from Essential JS 1 to Essential JS 2 using the API migration guide.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Linear gauge component
+# EJ1 API Migration in Angular Linear Gauge
 
 This article describes the API migration process of Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

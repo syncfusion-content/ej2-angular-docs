@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Angular Sankey component | Syncfusion
+title: Appearance in Angular Sankey | Syncfusion
 description: Learn here all about Appearance in Syncfusion Angular Sankey component of Syncfusion Essential JS 2 and more.
 control: Appearance
 platform: ej2-angular
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in Angular Sankey component
+# Appearance in Angular Sankey
 
 The Sankey component provides comprehensive customization options to control visual appearance, dimensions, responsiveness, colors, borders, and themes. These appearance settings enable you to create diagrams that match your application's design system and user experience requirements.
 
@@ -51,7 +51,7 @@ Use percentage-based dimensions for responsive layouts that adapt to container s
 
 ## Background Customization
 
-Customize the background and border of the Sankey diagram to match your application's theme.
+Customize the background and border of the Sankey to match your application's theme.
 
 ### Background Properties
 

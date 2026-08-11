@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pyramid in Angular Accumulation chart component | Syncfusion
+title: Pyramid in Angular Accumulation Chart | Syncfusion
 description: Learn here all about Pyramid in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Pyramid 
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pyramid in Angular Accumulation chart component
+# Pyramid in Angular Accumulation Chart
 
-To render a pyramid series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel/#type) as `Pyramid` and inject `PyramidSeries` module into the `@NgModule.providers`.
+To render a pyramid series, use the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel#type) as `Pyramid` and inject `PyramidSeries` module into the `@NgModule.providers`.
 
 To known about pyramid, you can check on this video:
 

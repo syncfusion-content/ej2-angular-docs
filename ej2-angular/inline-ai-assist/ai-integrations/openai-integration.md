@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Azure OpenAI With Angular Inline AI Assist component | Syncfusion
-description:  Checkout and learn about Integration of Azure OpenAI With Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Azure OpenAI Integration in Angular Inline AI Assist | Syncfusion®
+description: Connect Angular Inline AI Assist to Azure OpenAI to deliver context-aware AI completions in your Angular application.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Azure OpenAI with Angular Inline AI Assist Component
+# Azure OpenAI Integration in Angular Inline AI Assist
 
 The Inline AI Assist component integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your Angular applications. The component acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses.
 

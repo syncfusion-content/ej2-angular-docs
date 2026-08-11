@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate data in Angular Maps component | Syncfusion
+title: Populate Data in Angular Maps | Syncfusion
 description: Learn here all about Populate data in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Populate data 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Populate data in Angular Maps component
+# Populate Data in Angular Maps
 
 ## Geometry types
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart axis in Angular Smithchart component | Syncfusion
+title: Smith Chart Axis in Angular Smith Chart | Syncfusion
 description: Learn here all about Smith chart axis in Syncfusion Angular Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Smith chart axis 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Smith chart axis in Angular Smithchart component
+# Smith Chart Axis in Angular Smith Chart
 
 Like chart, Smithchart is having support for two types of axis.
 * Horizontal axis - axis drawn as straight line in the horizontal direction of the chart.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integration of Dialogflow With Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Integration of Dialogflow Framework With Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Google Dialogflow Integration in Angular Chat UI | Syncfusion®
+description: Integrate Google Dialogflow with Angular Chat UI to power a support bot with natural language understanding and responses.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Google Dialogflow with Angular Chat UI Component
+# Google Dialogflow Integration in Angular Chat UI
 
 The Chat UI component integrates with [Google Dialogflow](https://cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your Angular applications. The component acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
 
@@ -116,7 +116,7 @@ app.listen(5000, () => console.log('Backend running on http://localhost:5000'));
 
 ## Configure message send 
 
-Use the Chat UI [messageSend](../api/chat-ui/#messagesend) event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
+Use the Chat UI [messageSend](../api/chat-ui#messagesend) event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 

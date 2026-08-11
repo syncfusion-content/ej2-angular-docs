@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Percentage tooltip in Angular Chart component | Syncfusion
+title: How to Show Pie Percentage in Tooltip in Angular Chart | Syncfusion
 description: Learn here all about Percentage tooltip in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Percentage tooltip
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Percentage tooltip in Angular Chart component
+# How to Show Pie Percentage in Tooltip in Angular Chart
 
 By using the [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#tooltiprender) event, you can show the percentage value for each point of pie series in tooltip.
 

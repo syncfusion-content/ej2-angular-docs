@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Angular Accumulation chart component | Syncfusion
+title: Appearance in Angular Accumulation Chart | Syncfusion
 description: Learn here all about Appearance in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Appearance 
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in Angular Accumulation chart component
+# Appearance in Angular Accumulation Chart
 
 ## Custom Color Palette
 
-You can customize the default color of series or points by providing a custom color palette of your choice by using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#palettes) property.
+You can customize the default color of series or points by providing a custom color palette of your choice by using the [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#palettes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

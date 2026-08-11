@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Logarithmic axis in Angular Chart component | Syncfusion
+title: Logarithmic Axis in Angular Chart | Syncfusion
 description: Learn here all about Logarithmic axis in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Logarithmic axis 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Logarithmic axis in Angular Chart component
+# Logarithmic Axis in Angular Chart
 
 <!-- markdownlint-disable MD033 -->
 

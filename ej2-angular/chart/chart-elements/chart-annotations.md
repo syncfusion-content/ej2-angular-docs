@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart annotations in Angular Chart component | Syncfusion
+title: Annotations in Angular Chart | Syncfusion
 description: Learn here all about Chart annotations in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Chart annotations 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart annotations in Angular Chart component
+# Annotations in Angular Chart
 
 Chart annotations allow highlighting specific areas of the chart using text, shapes, images, or custom HTML elements. Annotations can be used to emphasize trends, mark thresholds, show custom notes, or display additional information directly inside the chart area.
 

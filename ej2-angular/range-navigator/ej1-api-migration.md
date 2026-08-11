@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Range navigator component | Syncfusion
+title: Ej1 Api Migration in Angular Range Navigator | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Range navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Ej1 api migration 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Range navigator component
+# Ej1 Api Migration in Angular Range Navigator
 
 This article describes the API migration process of Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

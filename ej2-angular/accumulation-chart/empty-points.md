@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Empty points in Angular Accumulation chart component | Syncfusion
+title: Empty Points in Angular Accumulation Chart | Syncfusion
 description: Learn here all about Empty points in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Empty points 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Empty points in Angular Accumulation chart component
+# Empty Points in Angular Accumulation Chart
 
 The data points those uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and not plotted in the chart. You can customize those points, using the `emptyPointSettings` property in series. The default mode of the empty point is `Gap`. Other supported modes are `Average` and `Zero`.
 

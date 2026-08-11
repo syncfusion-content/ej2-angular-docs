@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chain of Thoughts in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about Chain of Thoughts with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Chain of Thoughts in Angular AI AssistView | Syncfusion®
+description: Render Chain of Thoughts blocks in Angular AI AssistView to visualize model reasoning before the final response is generated.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chain of Thoughts in Angular AI AssistView component
+# Chain of Thoughts in Angular AI AssistView
 
 The AI AssistView supports rendering **Chain of Thoughts** (also called `Thinking`) blocks, allowing you to visualize the model's reasoning process step by step before the final response is generated. The injectable module is ideal for extended reasoning models (such as Claude 3.5, GPT‑o1, and similar), which expose intermediate reasoning stages.
 

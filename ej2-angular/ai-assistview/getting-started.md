@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular AI AssistView | Syncfusion
-description:  Checkout and learn about Getting started with Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular AI AssistView | Syncfusion®
+description: Learn how to set up Angular AI AssistView, install dependencies, and build your first AI-powered conversation interface.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in Angular AI AssistView component
+# Getting Started with Angular AI AssistView
 
 This section explains how to create a simple **AI AssistView** component and configure its available functionalities in Angular.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrate Microsoft Bot With Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Integration of Microsoft Bot Framework With Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Microsoft Bot Framework in Angular Chat UI | Syncfusion®
+description: Connect Angular Chat UI to a Microsoft Bot Framework bot on Azure using Direct Line and a secure token server.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Microsoft Bot Framework with Angular Chat UI Component
+# Microsoft Bot Framework in Angular Chat UI
 
 The Chat UI component integrates with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring Direct Line in Azure, and integrating the Chat UI in the application.
 

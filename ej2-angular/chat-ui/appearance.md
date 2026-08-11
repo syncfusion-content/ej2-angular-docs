@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Appearance in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Appearance with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Appearance in Angular Chat UI | Syncfusion®
+description: Customize the Angular Chat UI placeholder, width, and height to match your conversation layout and visual design.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in Angular Chat UI component
+# Appearance in Angular Chat UI
 
 ## Setting placeholder
 
-The [placeholder](../api/chat-ui/#placeholder) property sets the hint text displayed in the message input field to guide users. The default value is `Type your message…`.
+The [placeholder](../api/chat-ui#placeholder) property sets the hint text displayed in the message input field to guide users. The default value is `Type your message…`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ The [placeholder](../api/chat-ui/#placeholder) property sets the hint text displ
 
 ## Setting width
 
-The [width](../api/chat-ui/#width) property allows you to define the width of the Chat component. The default value is `100%`.
+The [width](../api/chat-ui#width) property allows you to define the width of the Chat component. The default value is `100%`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ The [width](../api/chat-ui/#width) property allows you to define the width of th
 
 ## Setting height
 
-The [height](../api/chat-ui/#height) property allows you to define the height of the Chat component. The default value is `100%`.
+The [height](../api/chat-ui#height) property allows you to define the height of the Chat component. The default value is `100%`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ The [height](../api/chat-ui/#height) property allows you to define the height of
 
 ## Setting CSS Class
 
-The [cssClass](../api/chat-ui/#cssclass) property allows you to apply custom CSS styles to the Chat component for a unique appearance.
+The [cssClass](../api/chat-ui#cssclass) property allows you to apply custom CSS styles to the Chat component for a unique appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

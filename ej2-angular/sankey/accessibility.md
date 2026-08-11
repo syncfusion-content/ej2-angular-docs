@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Angular Sankey component | Syncfusion
+title: Accessibility in Angular Sankey | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Sankey component of Syncfusion Essential JS 2 and more.
 control: Accessibility
 platform: ej2-angular
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Sankey component
+# Accessibility in Angular Sankey
 
 The Sankey component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria#roles) roles.
 

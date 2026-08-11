@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers in Angular Maps component | Syncfusion
+title: Markers in Angular Maps | Syncfusion
 description: Learn here all about Markers in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Markers 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Markers in Angular Maps component
+# Markers in Angular Maps
 
 Markers are visual indicators used to pinpoint specific locations on the Maps. They can display desired symbols to highlight points of interest or important geographic positions. Markers can be enabled by setting the[`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel#visible) property of the [`markerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel) to **true**.
 

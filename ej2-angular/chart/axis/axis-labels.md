@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis labels in Angular Chart component | Syncfusion
+title: Axis Labels in Angular Chart | Syncfusion
 description: Learn here all about Axis labels in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Axis labels 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis labels in Angular Chart component
+# Axis Labels in Angular Chart
 
 ## Smart axis labels
 

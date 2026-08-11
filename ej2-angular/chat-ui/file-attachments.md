@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Attachments in Angular Chat UI component | Syncfusion
-description: Checkout and learn about attachments with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: File Attachments in Angular Chat UI | Syncfusion®
+description: Enable file attachments in Angular Chat UI so users can upload images and documents alongside messages for richer context.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File Attachments in Angular Chat UI component
+# File Attachments in Angular Chat UI
 
 The Chat UI component supports message attachments, enabling users to upload and send files (images, documents, and more) alongside messages for richer, more contextual conversations. Enable this functionality using the [enableAttachments](https://ej2.syncfusion.com/angular/documentation/api/chat-ui/index-default#enableattachments) property and customize the behavior through the [attachmentSettings](https://ej2.syncfusion.com/angular/documentation/api/chat-ui/index-default#attachmentsettings) configuration.
 

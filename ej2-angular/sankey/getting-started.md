@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Sankey Chart component | Syncfusion
+title: Getting Started with Angular Sankey | Syncfusion
 description:  Check out and learn about Getting Started with Angular Sankey Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Sankey Chart Component
+# Getting Started with Angular Sankey
 
 This section explains the steps required to create a simple [Angular Sankey Chart](https://www.syncfusion.com/angular-components/angular-sankey-chart) and demonstrates the basic usage of the Angular Sankey Chart component.
 
@@ -165,7 +165,7 @@ Now that the granular services are registered, you can populate the Sankey Chart
 
 {% previewsample "page.domainurl/samples/sankey/getting-started/data-cs1" %}
 
-The Sankey diagram renders nodes (rectangles) sized proportionally to their flow, with links (curved bands) connecting source nodes to target nodes. Hovering over a link displays a tooltip with the source, target, and value.
+The Sankey renders nodes (rectangles) sized proportionally to their flow, with links (curved bands) connecting source nodes to target nodes. Hovering over a link displays a tooltip with the source, target, and value.
 
 ## Troubleshooting
 
@@ -177,7 +177,7 @@ If the Sankey Chart does not render as expected, check for these common issues:
 
 ## See also
 
-* [Configure the legend for the Sankey diagram](legend)
+* [Configure the legend for the Sankey](legend)
 * [Customize the tooltip on links and nodes](tool-tip)
 * [Add a title and subtitle to the chart](title-and-sub-title)
 * [Sankey Chart API reference](https://ej2.syncfusion.com/angular/documentation/api/sankey/index-default)

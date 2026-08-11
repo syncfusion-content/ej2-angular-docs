@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Angular Maps component | Syncfusion
+title: Legend in Angular Maps | Syncfusion
 description: Learn here all about Legend in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Legend 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in Angular Maps component
+# Legend in Angular Maps
 
 A Legend is a key on a Maps that contains descriptions for swatches of symbols. It can be represented in various colors, shapes or other identifiers based on the data and provides valuable information for interpreting what the Maps are displaying. It explains what each symbol in the Maps represents. Legends are enabled by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) property to **true**.
 

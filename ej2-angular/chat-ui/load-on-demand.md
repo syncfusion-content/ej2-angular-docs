@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load on-demand in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Load on-demand with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Load on Demand in Angular Chat UI | Syncfusion®
+description: Load Angular Chat UI messages on demand as users scroll to improve performance in long conversations.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load on-demand in Angular Chat UI component
+# Load on Demand in Angular Chat UI
 
 You can use the [loadOnDemand](../api/chat-ui#loadondemand) property to load messages dynamically when the scroll reaches the top of the message list improving performance and reducing load times, particularly in long conversations. This ensures a smooth user experience by only fetching messages as needed rather than loading the entire conversation at once.
 

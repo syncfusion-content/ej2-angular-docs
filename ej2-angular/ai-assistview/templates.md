@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Templates in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about templates with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular AI AssistView | Syncfusion®
+description: Customize Angular AI AssistView with banner, prompt, response, suggestion, and footer templates for a branded experience.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular AI AssistView component
+# Templates in Angular AI AssistView
 
 The AI AssistView component offers several template options to customize the banner, prompt items, response items, suggestions, and footer.
 
 ## Banner template
 
-The [bannerTemplate](../api/ai-assistview/#bannertemplate) property allows for the display of custom content, such as a welcome note or introductory instructions, at the top of the AI AssistView's conversation area.
+The [bannerTemplate](../api/ai-assistview#bannertemplate) property allows for the display of custom content, such as a welcome note or introductory instructions, at the top of the AI AssistView's conversation area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ The [bannerTemplate](../api/ai-assistview/#bannertemplate) property allows for t
 
 ## Prompt item template
 
-To customize the appearance of prompt items, use the [promptItemTemplate](../api/ai-assistview/#promptitemtemplate) with an `ng-template` directive. The template's context provides `prompt`, `toolbarItems`, and `index` items for tailored rendering.
+To customize the appearance of prompt items, use the [promptItemTemplate](../api/ai-assistview#promptitemtemplate) with an `ng-template` directive. The template's context provides `prompt`, `toolbarItems`, and `index` items for tailored rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +46,7 @@ To customize the appearance of prompt items, use the [promptItemTemplate](../api
 
 ## Response item template
 
-The [responseItemTemplate](../api/ai-assistview/#responseitemtemplate) can be utilized with an `ng-template` directive to modify the layout of response items. The available context includes `prompt`, `response`, `index`, `toolbarItems`, and `output`.
+The [responseItemTemplate](../api/ai-assistview#responseitemtemplate) can be utilized with an `ng-template` directive to modify the layout of response items. The available context includes `prompt`, `response`, `index`, `toolbarItems`, and `output`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ The [responseItemTemplate](../api/ai-assistview/#responseitemtemplate) can be ut
 
 ## Prompt suggestion item template
 
-For customizing the prompt suggestion items, the [promptSuggestionItemTemplate](../api/ai-assistview/#promptsuggestionitemtemplate) can be implemented using an `ng-template` directive. The context for this template includes the `index` and `promptSuggestion` items.
+For customizing the prompt suggestion items, the [promptSuggestionItemTemplate](../api/ai-assistview#promptsuggestionitemtemplate) can be implemented using an `ng-template` directive. The context for this template includes the `index` and `promptSuggestion` items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +78,7 @@ For customizing the prompt suggestion items, the [promptSuggestionItemTemplate](
 
 ## Footer template
 
-The [footerTemplate](../api/ai-assistview/#footertemplate) property offers a way to replace the default footer and manage prompt request actions. This enables the creation of unique footers that can include custom functionalities, such as a character counter or a button to clear the conversation.
+The [footerTemplate](../api/ai-assistview#footertemplate) property offers a way to replace the default footer and manage prompt request actions. This enables the creation of unique footers that can include custom functionalities, such as a character counter or a button to clear the conversation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

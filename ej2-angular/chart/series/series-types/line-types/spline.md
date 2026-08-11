@@ -19,7 +19,7 @@ To render a [spline](https://www.syncfusion.com/angular-components/angular-chart
 
 Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `Spline` in your chart configuration. This indicates that the series should be represented as a smooth curve, connecting data points with a spline rather than straight lines.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Spline` in your chart configuration. This indicates that the series should be represented as a smooth curve, connecting data points with a spline rather than straight lines.
 
 2. **Provide SplineSeriesService**: Use the `@NgModule.providers` method to inject the `SplineSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering spline series are available in your chart.
 
@@ -41,7 +41,7 @@ Here's a concise guide on how to do this:
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties.
+You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,7 +61,7 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Spline type
 
-Use the [`splineType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#splinetype) to define the type of the spline series. The default type is `Natural`, which creates a smooth curve through the data points.
+Use the [`splineType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#splinetype) to define the type of the spline series. The default type is `Natural`, which creates a smooth curve through the data points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -85,7 +85,7 @@ The following properties can be used to customize the `spline` series.
 
 **Fill**
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property determines the color applied to the series.
+The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,7 +103,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/spline-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#fill) property can be used to apply a gradient color to the spline series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the spline series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,7 +123,7 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 **Opacity**
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -143,7 +143,7 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 **Dash array**
 
-The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) property determines the pattern of dashes and gaps in the series.
+The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#dasharray) property determines the pattern of dashes and gaps in the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -163,7 +163,7 @@ The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
 
 **Width**
 
-The [width](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#width) property specifies the stroke width applied to the series.
+The [width](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#width) property specifies the stroke width applied to the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,7 +187,7 @@ Data points with `null` or `undefined` values are considered empty. Empty data p
 
 **Mode**
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -207,7 +207,7 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 **Fill**
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel/#fill) property to customize the fill color of empty points in the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -227,7 +227,7 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 **Border**
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel/#border) property to customize the width and color of the border for empty points.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

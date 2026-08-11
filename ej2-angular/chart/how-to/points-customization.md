@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Points customization in Angular Chart component | Syncfusion
+title: How to Customize Points in Angular Chart | Syncfusion
 description: Learn here all about Points customization in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Points customization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Points customization in Angular Chart component
+# How to Customize Points in Angular Chart
 
 You can customize the color of individual series points by using the [`pointColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#pointcolormapping) property. This property allows you to map a field from your data source that contains color values, which will be applied to each corresponding point in the series.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Messages in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Messages with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Messages in Angular Chat UI | Syncfusion®
+description: Add and configure messages in Angular Chat UI using the e-message selector to build a complete conversation thread.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Messages in the Angular Chat UI Component
+# Messages in Angular Chat UI
 
 The Chat UI allows to add messages using the `<e-message>` selector. The message collection stores all the messages being sent and received.
 

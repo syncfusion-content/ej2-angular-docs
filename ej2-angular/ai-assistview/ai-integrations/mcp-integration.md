@@ -1,16 +1,16 @@
 ---
 layout: post
-title: MCP With Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about integration of MCP With Azure OpenAI in Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: MCP Integration in Angular AI AssistView | Syncfusion®
+description: Connect Angular AI AssistView to an MCP backend for tool-aware AI conversations with @mention file references and analysis.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate MCP Server with Angular AI AssistView Component
+# MCP Integration in Angular AI AssistView
 
-The AI AssistView component integrates with a [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro) (MCP) backend to enable conversational AI features powered by OpenAI, along with [local tool](https://modelcontextprotocol.io/docs/develop/connect-local-servers) capabilities such as file-aware analysis via `@mentions` using the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started) component. This integration allows the component to reference files in prompts using the filenames(`@filename`), inject their contents into the model context, and enables analysis of those files alongside the user prompt.
+The AI AssistView component integrates with a [Model Context Protocol](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) (MCP) backend to enable conversational AI features powered by OpenAI, along with [local tool](https://modelcontextprotocol.io/docs/2026-07-28/develop/connect-local-servers) capabilities such as file-aware analysis via `@mentions` using the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started) component. This integration allows the component to reference files in prompts using the filenames(`@filename`), inject their contents into the model context, and enables analysis of those files alongside the user prompt.
 
 ## Prerequisites
 

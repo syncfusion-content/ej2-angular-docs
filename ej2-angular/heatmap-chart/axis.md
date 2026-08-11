@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis in Angular HeatMap chart component | Syncfusion
+title: Axis in Angular HeatMap Chart | Syncfusion
 description: Learn here all about axis in Syncfusion Angular HeatMap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Axis 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis in Angular HeatMap chart component
+# Axis in Angular HeatMap Chart
 
 ## Enable axis labels
 

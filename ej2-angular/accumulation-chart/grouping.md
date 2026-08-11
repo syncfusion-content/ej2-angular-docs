@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in Angular Accumulation chart component | Syncfusion
+title: Grouping in Angular Accumulation Chart | Syncfusion
 description: Learn here all about Grouping in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Grouping 
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in Angular Accumulation chart component
+# Grouping in Angular Accumulation Chart
 
-You can club/group few points of the series based on [`groupTo`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#groupto) property. For example, if the club value is 11, then the points with value less than 11 is grouped together and will be showed as a single point with label `others`. The property also takes value in percentage (percentage of total data points value).
+You can club/group few points of the series based on [`groupTo`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries#groupto) property. For example, if the club value is 11, then the points with value less than 11 is grouped together and will be showed as a single point with label `others`. The property also takes value in percentage (percentage of total data points value).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

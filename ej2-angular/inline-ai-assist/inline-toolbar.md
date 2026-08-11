@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Inline toolbar configurations in Angular Inline AI Assist | Syncfusion
-description:  Checkout and learn about inline toolbar with Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Inline Toolbar in Angular Inline AI Assist | Syncfusion®
+description: Configure the inline toolbar in Angular Inline AI Assist with custom items and positioning for quick AI actions.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar configuration in React Inline AI Assist component
+# Inline Toolbar in Angular Inline AI Assist
 
 The inline toolbar provides a customizable interface for users to interact with the Inline AI Assist component. You can render the inline toolbar items by using the `items` property in the [inlineToolbarSettings](../api/inline-ai-assist#inlinetoolbarsettings) property.
 

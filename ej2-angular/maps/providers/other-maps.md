@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Other maps in Angular Maps component | Syncfusion
+title: Other Maps in Angular Maps | Syncfusion
 description: Learn here all about Other maps in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Other maps 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Other maps in Angular Maps component
+# Other Maps in Angular Maps
 
 In addition to OpenStreetMap, Bing Maps, and Azure Maps, the Maps component supports integration with other third-party online map service providers. Custom map providers can be rendered by specifying their tile server URL in the [urlTemplate](https://ej2.syncfusion.com/angular/documentation/api/maps/layerSettingsModel#urltemplate) property. The Maps component supports any tile-based map provider that uses standard URL template formats for tile requests.
 

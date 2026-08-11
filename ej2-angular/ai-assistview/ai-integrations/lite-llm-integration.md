@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LiteLLM With Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about Integration of LiteLLM With Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: LiteLLM Integration in Angular AI AssistView | Syncfusion®
+description: Connect Angular AI AssistView to LiteLLM, a unified OpenAI-compatible API proxy for multiple LLM providers.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate AI AssistView with LiteLLM
+# LiteLLM Integration in Angular AI AssistView
 
 The **AI AssistView** component can also be integrated with [LiteLLM](https://docs.litellm.ai/docs), an open-source proxy that provides a unified, OpenAI-compatible API for multiple LLM providers such as [OpenAI](https://openai.com) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
 

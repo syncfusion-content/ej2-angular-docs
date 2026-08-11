@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Linear gauge component | Syncfusion
-description: Learn how to get started with the Angular Linear Gauge component of Syncfusion Essential JS 2  and more details.
+title: Getting Started with Angular Linear Gauge | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Linear Gauge control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Linear gauge component
+# Getting Started with Angular Linear Gauge
 
 <!-- markdownlint-disable MD013 -->
 

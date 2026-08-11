@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in Angular Linear Gauge component | Syncfusion
-description: Learn here all about animation in Syncfusion Angular Linear Gauge component of Syncfusion Essential JS 2 and more.
+title: Animation in Angular Linear Gauge | Syncfusion
+description: Learn how to animate the Syncfusion Angular Linear Gauge elements, such as axis, ticks, labels, ranges, and pointers, using animationDuration.
 platform: ej2-angular
-control: Linear Gauge 
+control: Animation
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in Angular Linear gauge component
+# Animation in Angular Linear Gauge
 
 All of the elements in the Linear Gauge, such as the axis lines, ticks, labels, ranges, pointers, and annotations, can be animated sequentially by using the [animationDuration](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#animationduration) property. The animation for the Linear Gauge is enabled when the `animationDuration` property is set to an appropriate value in milliseconds, providing a smooth rendering effect for the component. If the `animationDuration` property is set to **0**, which is the default value, the animation effect is disabled. If the animation is enabled, the component will behave in the following order.
 

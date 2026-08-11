@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Palette in Angular Heatmap chart component | Syncfusion
+title: Palette in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Palette in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Palette 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Palette in Angular Heatmap chart component
+# Palette in Angular HeatMap Chart
 
 In heat map, each data point is displayed as a cell with applied color based on the data value. The palette in the heat map is used to define the color range for cells and gradient type for colors. You can define the colors either in RGB or hex codes using the [color](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteCollection#color) property in `palette`. The defined colors are applied to the cell background based on the palette type and cell value.
 

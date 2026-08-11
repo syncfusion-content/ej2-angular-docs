@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Header in Angular Chat UI component | Syncfusion
-description: Checkout and learn about Header with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Header in Angular Chat UI | Syncfusion®
+description: Show or hide the Angular Chat UI header and customize its title and icon with headerText and headerIconCss properties.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header in Angular Chat UI component
+# Header in Angular Chat UI
 
 ## Header visibility
 
-The `showHeader` property enables or disables the Chat header. When enabled, the header can display a title and an icon using the [headerText](../api/chat-ui/#headertext) and [headerIconCss](../api/chat-ui/#headericoncss) properties, respectively.
+The `showHeader` property enables or disables the Chat header. When enabled, the header can display a title and an icon using the [headerText](../api/chat-ui#headertext) and [headerIconCss](../api/chat-ui#headericoncss) properties, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,7 +31,7 @@ The `showHeader` property enables or disables the Chat header. When enabled, the
 
 ### Setting header text
 
-The [headerText](../api/chat-ui/#headertext) property sets the title displayed in the header, typically used for a username or group name to provide context for the conversation.
+The [headerText](../api/chat-ui#headertext) property sets the title displayed in the header, typically used for a username or group name to provide context for the conversation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ The [headerText](../api/chat-ui/#headertext) property sets the title displayed i
 
 ### Customizing the header icon
 
-The [headerIconCss](../api/chat-ui/#headericoncss) property applies custom CSS classes to style the header icon.
+The [headerIconCss](../api/chat-ui#headericoncss) property applies custom CSS classes to style the header icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,7 +69,7 @@ The [headerIconCss](../api/chat-ui/#headericoncss) property applies custom CSS c
 
 ## Toolbar
 
-The Chat toolbar can be configured by defining a collection of items in the [headerToolbar](../api/chat-ui/#headertoolbar) property. Each item in the collection configures a specific toolbar element.
+The Chat toolbar can be configured by defining a collection of items in the [headerToolbar](../api/chat-ui#headertoolbar) property. Each item in the collection configures a specific toolbar element.
 
 ### Configuring toolbar items
 
@@ -77,7 +77,7 @@ Toolbar items can be configured with the following properties to control their a
 
 #### Icon
 
-The [iconCss](../api/chat-ui/toolbarItemModel/#iconcss) property customizes a toolbar item by applying a specific icon class.
+The [iconCss](../api/chat-ui/toolbarItemModel#iconcss) property customizes a toolbar item by applying a specific icon class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,7 +98,7 @@ The [iconCss](../api/chat-ui/toolbarItemModel/#iconcss) property customizes a to
 
 You can change the header toolbar item type by using the `type` property. The `type` supports three types of items such as `Button`, `Separator` and `Input`. By default, the type is `Button`.
 
-The [type](../api/chat-ui/toolbarItemModel/#type) property defines the type of toolbar item. Supported values are `Button`, `Separator`, and `Input`, with `Button` being the default.
+The [type](../api/chat-ui/toolbarItemModel#type) property defines the type of toolbar item. Supported values are `Button`, `Separator`, and `Input`, with `Button` being the default.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,7 +117,7 @@ The [type](../api/chat-ui/toolbarItemModel/#type) property defines the type of t
 
 #### Text
 
-The [text](../api/chat-ui/toolbarItemModel/#text) property sets the display text for a toolbar item.
+The [text](../api/chat-ui/toolbarItemModel#text) property sets the display text for a toolbar item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,7 +136,7 @@ The [text](../api/chat-ui/toolbarItemModel/#text) property sets the display text
 
 #### Visibility
 
-The [visible](../api/chat-ui/toolbarItemModel/#visible) property shows or hides a toolbar item. The default value is `true`.
+The [visible](../api/chat-ui/toolbarItemModel#visible) property shows or hides a toolbar item. The default value is `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -155,7 +155,7 @@ The [visible](../api/chat-ui/toolbarItemModel/#visible) property shows or hides 
 
 #### Disabled state
 
-The [disabled](../api/chat-ui/toolbarItemModel/#disabled) property disables a toolbar item. The default value is `false`.
+The [disabled](../api/chat-ui/toolbarItemModel#disabled) property disables a toolbar item. The default value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -174,7 +174,7 @@ The [disabled](../api/chat-ui/toolbarItemModel/#disabled) property disables a to
 
 #### Tooltip
 
-The [tooltip](../api/chat-ui/toolbarItemModel/#tooltip) property sets the text that appears when a user hovers over a toolbar item.
+The [tooltip](../api/chat-ui/toolbarItemModel#tooltip) property sets the text that appears when a user hovers over a toolbar item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -193,7 +193,7 @@ The [tooltip](../api/chat-ui/toolbarItemModel/#tooltip) property sets the text t
 
 #### Custom CSS class
 
-The [cssClass](../api/chat-ui/toolbarItemModel/#cssclass) property applies one or more custom CSS classes to a toolbar item for advanced styling.
+The [cssClass](../api/chat-ui/toolbarItemModel#cssclass) property applies one or more custom CSS classes to a toolbar item for advanced styling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -215,7 +215,7 @@ The [cssClass](../api/chat-ui/toolbarItemModel/#cssclass) property applies one o
 
 #### Alignment
 
-The [align](../api/chat-ui/toolbarItemModel/#align) property positions a toolbar item. Supported values are `Left`, `Center`, and `Right`, with `Left` being the default.
+The [align](../api/chat-ui/toolbarItemModel#align) property positions a toolbar item. Supported values are `Left`, `Center`, and `Right`, with `Left` being the default.
 
 In the following example, the `align` property for the toolbar item is set to `Right`.
 
@@ -303,7 +303,7 @@ In this case, the user can switch between the two Toolbar items using the Tab an
 
 #### Setting template
 
-You can use the [template](../api/chat-ui/toolbarItemModel/#template) property to add custom toolbar item in the Chat UI component.
+You can use the [template](../api/chat-ui/toolbarItemModel#template) property to add custom toolbar item in the Chat UI component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -325,7 +325,7 @@ You can use the [template](../api/chat-ui/toolbarItemModel/#template) property t
 
 ### Click event
 
-The [itemClick](../api/chat-ui/toolbarSettings/#itemclicked) event, defined within the `toolbarSettings` property, triggers when a user clicks a toolbar item. It returns the item that was clicked.
+The [itemClick](../api/chat-ui/toolbarSettings#itemclicked) event, defined within the `toolbarSettings` property, triggers when a user clicks a toolbar item. It returns the item that was clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data labels in Angular Maps component | Syncfusion
+title: Data Labels in Angular Maps | Syncfusion
 description: Learn here all about Data labels in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data labels 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data labels in Angular Maps component
+# Data Labels in Angular Maps
 
 Data labels display information about Maps shapes. Enable data labels by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel#visible) property of the [dataLabelSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/dataLabelSettingsModel) to **true**.
 

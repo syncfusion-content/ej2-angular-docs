@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mention Integration in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Mention Integration with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Mention Integration in Angular Chat UI | Syncfusion®
+description: Mention users in Angular Chat UI messages with the @ character using an integrated Mention dropdown for selection.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mention Integration in Angular Chat UI component
+# Mention Integration in Angular Chat UI
 
 
 The Syncfusion ChatUI allows users to mention others in messages using the `@` character, with an dropdown for selecting users. The following sections explain how to configure mentions

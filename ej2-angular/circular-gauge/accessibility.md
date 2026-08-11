@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Accessibility in Angular Circular gauge component | Syncfusion
+title: Accessibility in Angular Circular Gauge | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Circular gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Accessibility
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# Accessibility in Angular Circular gauge component
+# Accessibility in Angular Circular Gauge
 
-The Circular Gauge component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles).
+The Circular Gauge component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles).
 
 The accessibility compliance for the Circular Gauge component is outlined below.
 
