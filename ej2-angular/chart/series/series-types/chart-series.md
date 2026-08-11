@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart series in Angular Chart component | Syncfusion
+title: Multiple Series in Angular Chart | Syncfusion
 description: Learn here all about Chart series in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Chart series 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart series in Angular Chart component
+# Multiple Series in Angular Chart
 
 ## Multiple Series
 
@@ -47,7 +47,7 @@ Combinations of different types like Line, Column, etc., can be rendered in a ch
 
 ## Enable Complex Property in Series
 
-By setting the [`enableComplexProperty`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#enablecomplexproperty) value as `true` in series, you can bind complex data to the chart.
+By setting the [`enableComplexProperty`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#enablecomplexproperty) value as `true` in series, you can bind complex data to the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

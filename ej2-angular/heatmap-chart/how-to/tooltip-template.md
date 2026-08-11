@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip template in Angular Heatmap chart component | Syncfusion
+title: How to create a table in tooltip in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Tooltip template in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Tooltip template 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip template in Angular Heatmap chart component
+# How to create a table in tooltip in Angular HeatMap Chart
 
 You can show a tooltip as a table using the `template` property in `tooltipSettings`.
 

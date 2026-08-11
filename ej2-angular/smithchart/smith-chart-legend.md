@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart legend in Angular Smithchart component | Syncfusion
+title: Smith Chart Legend in Angular Smith Chart | Syncfusion
 description: Learn here all about Smith chart legend in Syncfusion Angular Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Smith chart legend 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Smith chart legend in Angular Smithchart component
+# Smith Chart Legend in Angular Smith Chart
 
 Legend is a key used in smithchart, that contains symbol and descriptions. It provides valuable information for interpreting what the smithchart is displaying and can be represented in various colors, shapes or other identifiers based on the data. In simple words, we can define that legend is used to denote the series rendered in the smithchart.
 

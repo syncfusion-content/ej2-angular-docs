@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotation in Angular Progress bar component | Syncfusion
+title: Annotation in Angular Progress Bar | Syncfusion
 description: Learn here all about Annotation in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Annotation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Annotation in Angular Progress bar component
+# Annotation in Angular Progress Bar
 
 ## Annotation
 

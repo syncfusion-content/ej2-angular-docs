@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Gauge user interaction in Angular Circular gauge component |Syncfusion
+title: User Interaction in Angular Circular Gauge | Syncfusion
 description: Learn here all about Gauge user interaction in Syncfusion Angular Circular gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Gauge user interaction 
+control: User Interaction
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# Gauge user interaction in Angular Circular gauge component
+# User Interaction in Angular Circular Gauge
 
 ## Tooltip for pointers
 
@@ -19,7 +19,7 @@ Circular gauge will displays the pointer details through [tooltip](https://ej2.s
 
 **Enable Tooltip**
 
-By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings/#enable-boolean) property to true and by injecting `GaugeTooltipService` into the `NgModule.providers`.
+By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings#enable-boolean) property to true and by injecting `GaugeTooltipService` into the `NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,7 +37,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 
 **Template**
 
-Any HTML elements can be displayed in the tooltip by using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings/#template-string) property of the tooltip.
+Any HTML elements can be displayed in the tooltip by using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings#template-string) property of the tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,7 +99,7 @@ The following code example shows the tooltip for the pointers, ranges and annota
 ## Pointer Drag
 
 Pointers can be dragged over the axis value. This can be achieved by clicking and dragging the pointer.
-To enable or disable the pointer drag, you can use [`enablePointerDrag`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/#enablepointerdrag-boolean) property.
+To enable or disable the pointer drag, you can use [`enablePointerDrag`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge#enablepointerdrag-boolean) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

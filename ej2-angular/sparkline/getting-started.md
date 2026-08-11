@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Sparkline component | Syncfusion
-description: Check out and learn about Getting started with the Angular Sparkline component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Sparkline | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Sparkline control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Sparkline component
+# Getting Started with Angular Sparkline
 
 This section explains the steps required to create a simple [Angular Sparkline](https://www.syncfusion.com/angular-components/angular-sparkline) and demonstrates the basic usage of the Sparkline component in an Angular environment.
 

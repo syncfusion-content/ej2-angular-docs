@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Angular Heatmap chart component | Syncfusion
+title: Appearance in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Appearance in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Appearance 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in Angular Heatmap chart component
+# Appearance in Angular HeatMap Chart
 
 ## Cell customization
 
@@ -50,7 +50,7 @@ Enable or disable the cell highlighting while hovering over the heat map cells b
 
 ### Color gradient mode
 
-The [colorGradientMode](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettingsModel/#colorgradientmode) property can be used to set the minimum and maximum values for colors based on row and column. Three types of color gradient modes are available.
+The [colorGradientMode](https://ej2.syncfusion.com/angular/documentation/api/heatmap/paletteSettingsModel#colorgradientmode) property can be used to set the minimum and maximum values for colors based on row and column. Three types of color gradient modes are available.
 
 * **Table**: The minimum and maximum value colors calculated for overall data.
 * **Row**: The minimum and maximum value colors calculated for each row of data.
@@ -72,7 +72,7 @@ The [colorGradientMode](https://ej2.syncfusion.com/angular/documentation/api/hea
 
 ## Background color
 
-The background color of the heat map can be customized using the [backgroundColor](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#backgroundcolor) property.
+The background color of the heat map can be customized using the [backgroundColor](https://ej2.syncfusion.com/angular/documentation/api/heatmap#backgroundcolor) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,7 +88,7 @@ The background color of the heat map can be customized using the [backgroundColo
 
 ## Margin
 
-Set the margin for the heatmap from its container by using the [margin](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#margin) property.
+Set the margin for the heatmap from its container by using the [margin](https://ej2.syncfusion.com/angular/documentation/api/heatmap#margin) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ Set the margin for the heatmap from its container by using the [margin](https://
 
 ## Title
 
-The title is used to provide a quick information about the data plotted in heatmap. The [text](https://ej2.syncfusion.com/angular/documentation/api/heatmap/title/#text) property is used to set the title for the heatmap. The text style of the title can be customized by using the [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/title/#textstyle) property.
+The title is used to provide a quick information about the data plotted in heatmap. The [text](https://ej2.syncfusion.com/angular/documentation/api/heatmap/title#text) property is used to set the title for the heatmap. The text style of the title can be customized by using the [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/title#textstyle) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,7 +136,7 @@ Add data labels to improve the readability of the HeatMap. This can be achieved 
 
 ### Customize the data label
 
-The label displayed in the heat map cell can be changed using the [cellRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellrender) event.
+The label displayed in the heat map cell can be changed using the [cellRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap#cellrender) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -152,7 +152,7 @@ The label displayed in the heat map cell can be changed using the [cellRender](h
 
 ### Text style
 
-The text attributes of the data label such as font-family, font-size, and color can be customized using the [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel/#textstyle) in the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel) property.
+The text attributes of the data label such as font-family, font-size, and color can be customized using the [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel#textstyle) in the [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,7 +168,7 @@ The text attributes of the data label such as font-family, font-size, and color 
 
 ### Format
 
-The format of the data label, such as currency, decimal, percent etc. can be changed using [format](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel/#format) property.
+The format of the data label, such as currency, decimal, percent etc. can be changed using [format](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel#format) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,7 +184,7 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 
 ### Template
 
-Any HTML elements can be added as a template in the data labels by using the [labelTemplate](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#labeltemplate) property of [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings) in the HeatMap.
+Any HTML elements can be added as a template in the data labels by using the [labelTemplate](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings#labeltemplate) property of [cellSettings](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings) in the HeatMap.
 
 The following examples show various data binding methods in the HeatMap using the `labelTemplate` property.
 
@@ -262,4 +262,4 @@ The following example demonstrates how to add a data label template for JSON cel
 
 ## See Also
 
-* [To customize the appearance of tool tip](./tooltip/#customize-the-appearance-of-tooltip)
+* [To customize the appearance of tool tip](./tooltip#customize-the-appearance-of-tooltip)

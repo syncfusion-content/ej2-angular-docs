@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Heatmap chart component | Syncfusion
+title: EJ1 API Migration in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Ej1 api migration 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Heatmap chart component
+# EJ1 API Migration in Angular HeatMap Chart
 
 This article describes the API migration process of heat map component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

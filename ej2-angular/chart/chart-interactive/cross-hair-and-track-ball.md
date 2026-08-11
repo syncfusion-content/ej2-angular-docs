@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crosshair and Trackball in Angular Chart component | Syncfusion
+title: Crosshair and Trackball in Angular Chart | Syncfusion
 description: Learn here all about Crosshair and trackball in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Crosshair and trackball 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Crosshair and trackball in Angular Chart component
+# Crosshair and Trackball in Angular Chart
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 

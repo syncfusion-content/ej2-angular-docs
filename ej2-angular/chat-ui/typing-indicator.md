@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Typing Indicator in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Typing Indicator with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Typing Indicator in Angular Chat UI | Syncfusion®
+description: Display a real-time typing indicator in Angular Chat UI to show when other users are composing a reply.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Typing Indicator in Angular Chat UI Component
+# Typing Indicator in Angular Chat UI
 
 The typing indicator provides real-time visual feedback to show when other users are composing a message. This feature enhances the user experience by making conversations feel more interactive and responsive, indicating that a reply is in progress.
 

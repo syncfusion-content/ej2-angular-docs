@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart dimensions in Angular Stock chart component | Syncfusion
+title: Chart Dimensions in Angular Stock Chart | Syncfusion
 description: Learn here all about Chart dimensions in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Chart dimensions 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chart dimensions in Angular Stock chart component
+# Chart Dimensions in Angular Stock Chart
 
 ## Size for Container
 
@@ -30,7 +30,7 @@ Stock Chart can render to its container size. You can set the size via inline or
 
 <!-- markdownlint-disable MD036 -->
 
-You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/#width-string) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/#height-string) properties.
+You can also set size for chart directly through [`width`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart#width-string) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart#height-string) properties.
 
 **In Pixel**
 

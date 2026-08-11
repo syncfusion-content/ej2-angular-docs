@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Attachments in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about attachments with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: File Attachments in Angular AI AssistView | Syncfusion®
+description: Enable file attachments in Angular AI AssistView so users can upload documents and images alongside prompts for richer context.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File Attachments in Angular AI AssistView component
+# File Attachments in Angular AI AssistView
 
 The AI AssistView component supports file attachments, allowing users to include files along with their prompts to provide additional context and enhance interactions. Users can upload documents, images, and other file types to supplement their queries. Enable this functionality using the `enableAttachments` property and customize the behavior through the `attachmentSettings` configuration.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool tip in Angular Bullet chart component | Syncfusion
+title: Tooltip in Angular Bullet Chart | Syncfusion
 description: Learn here all about Tool tip in Syncfusion Angular Bullet chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Tool tip 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in Angular Bullet chart component
+# Tooltip in Angular Bullet Chart
 
 When the mouse is hovered over a bar in the Bullet Chart, the tooltip displays important summary about the actual and the target bar values.
 

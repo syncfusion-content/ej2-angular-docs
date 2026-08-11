@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Chart in Angular 3D Chart control | Syncfusion
+title: Column Chart in Angular 3D Chart | Syncfusion
 description: Learn here all about column chart in Syncfusion Angular 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 3D Chart
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Chart in Angular 3D Chart control
+# Column Chart in Angular 3D Chart
 
 ## Column chart
 
-To render a column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#type) as `Column` and inject `ColumnSeries3DService` module into the `@NgModule.providers`.
+To render a column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#type) as `Column` and inject `ColumnSeries3DService` module into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ To render a column series, use series [`type`](https://ej2.syncfusion.com/angula
 
 ## Column space and width
 
-The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#columnspacing) and [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#columnwidth) properties are used to customize the space between columns.
+The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#columnspacing) and [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#columnwidth) properties are used to customize the space between columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 
 ## Grouped column
 
-The data points can be grouped in the column type charts by using the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#groupname) property. Data points with same group name are grouped together.
+The data points can be grouped in the column type charts by using the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#groupname) property. Data points with same group name are grouped together.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ The data points can be grouped in the column type charts by using the [`groupNam
 
 ## Cylindrical column chart
 
-To render a cylindrical column chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
+To render a cylindrical column chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#columnfacet) property to `Cylinder` in the chart series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,8 +78,8 @@ To render a cylindrical column chart, set the [`columnFacet`](https://ej2.syncfu
 
 The following properties can be used to customize the `column` series.
 
-* [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#fill) color.
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#fill) – Specifies the color of the series.
+* [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#opacity) – Specifies the opacity of the [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#fill) color.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

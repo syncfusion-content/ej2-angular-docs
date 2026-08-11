@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Angular Range navigator component | Syncfusion
+title: Customization in Angular Range Navigator | Syncfusion
 description: Learn here all about Customization in Syncfusion Angular Range navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customization 
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Range navigator component
+# Customization in Angular Range Navigator
 
 ## Navigator appearance
 
-The Range Selector can be customized by using the [`navigatorStyleSettings`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#navigatorstylesettings). The [`selectedRegionColor`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/styleSettingsModel/#selectedregioncolor) property is used to specify the color for the selected region, whereas the [`unselectedRegionColor`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/styleSettingsModel/#unselectedregioncolor) property is used to specify the color for the unselected region.
+The Range Navigator can be customized by using the [`navigatorStyleSettings`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#navigatorstylesettings). The [`selectedRegionColor`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/styleSettingsModel#selectedregioncolor) property is used to specify the color for the selected region, whereas the [`unselectedRegionColor`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/styleSettingsModel#unselectedregioncolor) property is used to specify the color for the unselected region.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ The thumb property allows to customize the border, fill color, size, and type of
 
 ## Border customization
 
-Using the [`navigatorBorder`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/thumbSettingsModel/#border), the [`width`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/borderModel/#width) and [`color`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/borderModel/#color) of the Range Selector border can be customized.
+Using the [`navigatorBorder`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/thumbSettingsModel#border), the [`width`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/borderModel#width) and [`color`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/borderModel#color) of the Range Navigator border can be customized.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ Using the [`navigatorBorder`](https://ej2.syncfusion.com/angular/documentation/a
 
 ## Deferred update
 
-If the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#enabledeferredupdate) property is set to **true**, then the changed event will be triggered after dragging the slider. If the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#enabledeferredupdate) is **false**, then the changed event will be triggered when dragging the slider. By default, the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#enabledeferredupdate) is set to **false**.
+If the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#enabledeferredupdate) property is set to **true**, then the changed event will be triggered after dragging the slider. If the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#enabledeferredupdate) is **false**, then the changed event will be triggered when dragging the slider. By default, the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#enabledeferredupdate) is set to **false**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,7 +76,7 @@ If the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation
 
 ## Allow snapping
 
-The [`allowSnapping`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#allowsnapping) property toggles the placement of the slider exactly to the left or on the nearest interval.
+The [`allowSnapping`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#allowsnapping) property toggles the placement of the slider exactly to the left or on the nearest interval.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,7 +92,7 @@ The [`allowSnapping`](https://ej2.syncfusion.com/angular/documentation/api/range
 
 ## Animation
 
-The speed of the animation can be controlled using the [`animationDuration`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#animationduration) property. The default value of the [`animationDuration`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator/#animationduration) property is **500** milliseconds.
+The speed of the animation can be controlled using the [`animationDuration`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#animationduration) property. The default value of the [`animationDuration`](https://ej2.syncfusion.com/angular/documentation/api/range-navigator#animationduration) property is **500** milliseconds.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

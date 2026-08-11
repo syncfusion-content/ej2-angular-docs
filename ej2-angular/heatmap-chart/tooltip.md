@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in Angular Heatmap chart component | Syncfusion
+title: Tooltip in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Tooltip in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Tooltip 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in Angular Heatmap chart component
+# Tooltip in Angular HeatMap Chart
 
 Tooltip is used to provide the details of the heat map cell, and this can be displayed, while hovering the cursor over the cell or performing tap action in touch devices.
 

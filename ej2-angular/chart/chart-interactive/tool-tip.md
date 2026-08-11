@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in Angular Chart component | Syncfusion
+title: Tooltip in Angular Chart | Syncfusion
 description: Learn here all about Tooltip in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Tooltip
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in Angular Chart component
+# Tooltip in Angular Chart
 
 <!-- markdownlint-disable MD036 -->
 

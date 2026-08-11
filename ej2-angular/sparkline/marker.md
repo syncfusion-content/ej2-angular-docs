@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marker in Angular Sparkline component | Syncfusion
+title: Marker in Angular Sparkline | Syncfusion
 description: Learn here all about Marker in Syncfusion Angular Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Marker 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Marker in Angular Sparkline component
+# Marker in Angular Sparkline
 
 This section explains how to add markers to the sparkline.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Angular Stock chart component | Syncfusion
+title: Appearance in Angular Stock Chart | Syncfusion
 description: Learn here all about Appearance in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Appearance 
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in Angular Stock chart component
+# Appearance in Angular Stock Chart
 
 ## Stock Chart Title
 
-StockChart can be given a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/#title-string) property, to show the information about the data plotted.
+StockChart can be given a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart#title-string) property, to show the information about the data plotted.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,7 +48,7 @@ The `textStyle` property of stockchart title provides options to customize the `
 
 Changing Stock Chart theme will affect background color, grid lines, tooltip colors and appearance.
 
-[`theme`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartModel/#theme) property of Stock chart is shipped with several built-in themes such as `Material`, `Fabric`, `Bootstrap` , `HighContrastLight`, `MaterialDark`, `FabricDark`, `FabricDark`, `HighContrast` and `BootstrapDark`.
+[`theme`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartModel#theme) property of Stock chart is shipped with several built-in themes such as `Material`, `Fabric`, `Bootstrap` , `HighContrastLight`, `MaterialDark`, `FabricDark`, `FabricDark`, `HighContrast` and `BootstrapDark`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

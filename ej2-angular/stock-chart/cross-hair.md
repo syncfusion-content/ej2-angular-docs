@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross hair in Angular Stock chart component | Syncfusion
+title: Cross Hair in Angular Stock Chart | Syncfusion
 description: Learn here all about Cross hair in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Cross hair 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cross hair in Angular Stock chart component
+# Cross Hair in Angular Stock Chart
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 

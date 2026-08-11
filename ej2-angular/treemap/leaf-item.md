@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leaf item in Angular Treemap component | Syncfusion
+title: Leaf Item in Angular TreeMap | Syncfusion
 description: Learn here all about Leaf item in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Leaf item 
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Leaf item in Angular Treemap component
+# Leaf Item in Angular TreeMap
 
 A leaf item defines a visualized data element and does not contain child nodes but contains parent node if the levels are specified in the TreeMap.
 
 ## Leaf label
 
-Label is represented by item name or value. Label will be appeared by specifying the [`labelPath`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labelpath) property and customize the label style using the [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labelstyle) property.
+Label is represented by item name or value. Label will be appeared by specifying the [`labelPath`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labelpath) property and customize the label style using the [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labelstyle) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ Label is represented by item name or value. Label will be appeared by specifying
 
 ### Label position and format
 
-Positioning the leaf item label using the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labelposition) property and the text format can be customized by specifying data source properties name in the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labelformat) property.
+Positioning the leaf item label using the [`labelPosition`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labelposition) property and the text format can be customized by specifying data source properties name in the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labelformat) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ Positioning the leaf item label using the [`labelPosition`](https://ej2.syncfusi
 
 ### Label template and position
 
-Specifies the template of leaf item label and position of the template to be customized using [`labelTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labeltemplate) and [`templatePosition`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labelposition) properties.
+Specifies the template of leaf item label and position of the template to be customized using [`labelTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labeltemplate) and [`templatePosition`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labelposition) properties.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -91,7 +91,7 @@ export class AppComponent {
 
 ## Item gap
 
-The [`gap`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#gap) property is used to separate an item from another item. Each item rectangle is split into equal space with specified gap.
+The [`gap`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#gap) property is used to separate an item from another item. Each item rectangle is split into equal space with specified gap.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

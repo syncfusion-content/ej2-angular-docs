@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Methods in Angular Linear gauge component | Syncfusion
-description: Learn here all about Methods in Syncfusion Angular Linear gauge component of Syncfusion Essential JS 2 and more.
+title: Methods in Angular Linear Gauge | Syncfusion
+description: Learn about the methods available in the Syncfusion Angular Linear Gauge component, such as setPointerValue and setAnnotationValue.
 platform: ej2-angular
 control: Methods 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in Angular Linear gauge component
+# Methods in Angular Linear Gauge
 
 The following methods are available in the Linear Gauge component.
 
 ## setPointerValue
 
-To change the pointer value dynamically, use the [`setPointerValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/#setpointervalue) method in the Linear Gauge component. The following are the arguments for this method.
+To change the pointer value dynamically, use the [`setPointerValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#setpointervalue) method in the Linear Gauge component. The following are the arguments for this method.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -36,7 +36,7 @@ To change the pointer value dynamically, use the [`setPointerValue`](https://ej2
 
 ## setAnnotationValue
 
-To change the annotation content dynamically, use the [`setAnnotationValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/#setannotationvalue) method in the Linear Gauge component. The following are the arguments for this method.
+To change the annotation content dynamically, use the [`setAnnotationValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#setannotationvalue) method in the Linear Gauge component. The following are the arguments for this method.
 
 |   Argument name      |   Description                            |
 |----------------------| -----------------------------------------|
@@ -58,7 +58,7 @@ To change the annotation content dynamically, use the [`setAnnotationValue`](htt
 
 ## refresh
 
-The [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/#refresh) method can be used to change the state of the component and render it again.
+The [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#refresh) method can be used to change the state of the component and render it again.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

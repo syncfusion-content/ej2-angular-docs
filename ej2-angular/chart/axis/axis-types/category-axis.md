@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Category axis in Angular Chart component | Syncfusion
+title: Category Axis in Angular Chart | Syncfusion
 description: Learn here all about Category axis in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Category axis 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Category axis in Angular Chart component
+# Category Axis in Angular Chart
 
 
 The category axis is used to represent string-based values instead of numeric values. It is commonly used for displaying discrete categories such as names, labels, or textual groupings along an axis.

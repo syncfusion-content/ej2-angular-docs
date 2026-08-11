@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map provider in Angular Maps component | Syncfusion
+title: OpenStreetMap in Angular Maps | Syncfusion
 description: Learn here all about Map provider in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Map provider 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# OpenStreetMap integration in Angular Maps component
+# OpenStreetMap in Angular Maps
 
 Map providers are online services that supply map tile images for rendering geographic visualizations. The Maps component supports integration with various tile-based map providers to display real-world geographic data.
 

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Pointers in Angular Linear gauge component | Syncfusion
-description: Learn here all about Pointers in Syncfusion Angular Linear gauge component of Syncfusion Essential JS 2 and more.
+title: Pointers in Angular Linear Gauge | Syncfusion
+description: Learn how to configure and customize pointers in the Syncfusion Angular Linear Gauge, including pointer types, value, position, and styles.
 platform: ej2-angular
 control: Pointers 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pointers in Angular Linear gauge component
+# Pointers in Angular Linear Gauge
 
 ## Set the pointer value
 
-To change the pointer value from the default, set the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property of the corresponding entry in the [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel) collection of the axis.
+To change the pointer value from the default, set the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property of the corresponding entry in the [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#pointerModel) collection of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -129,7 +129,7 @@ The marker pointer can be customized using the following properties.
 
 ### Bar Pointer
 
-The bar pointer is used to track the axis value. The bar pointer starts from the beginning of the gauge and ends at the pointer value. To enable bar pointer set the [type](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointermodel#type) property in [e-pointer](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel) as **Bar**.
+The bar pointer is used to track the axis value. The bar pointer starts from the beginning of the gauge and ends at the pointer value. To enable bar pointer set the [type](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointermodel#type) property in [e-pointer](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#pointerModel) as **Bar**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -173,7 +173,7 @@ The bar pointer can be customized using following properties.
 
 ## Update the pointer value dynamically
 
-The pointer value is updated in the following sample using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property of the entry in the [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel) collection of the axis. This example changes the value at runtime through a button click, which is useful for scenarios such as live data monitoring.
+The pointer value is updated in the following sample using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointer#value-number) property of the entry in the [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#pointerModel) collection of the axis. This example changes the value at runtime through a button click, which is useful for scenarios such as live data monitoring.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -189,7 +189,7 @@ The pointer value is updated in the following sample using the [`value`](https:/
 
 ## Multiple pointers
 
-Multiple pointers can be added to the Linear Gauge by adding multiple [e-pointer](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel) in the [e-pointers](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axisModel#pointers) and customization for the pointers can be done with [e-pointer](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/pointerModel).
+Multiple pointers can be added to the Linear Gauge by adding multiple [e-pointer](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#pointerModel) in the [e-pointers](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axisModel#pointers) and customization for the pointers can be done with [e-pointer](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge#pointerModel).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

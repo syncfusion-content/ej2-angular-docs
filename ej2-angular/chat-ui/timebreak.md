@@ -1,14 +1,14 @@
 ---
 layout: post
-title: TimeBreaks in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Timebreaks with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Time Break in Angular Chat UI | Syncfusion®
+description: Show date-wise separators in Angular Chat UI conversations using the showTimeBreak property to improve message organization.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Time break in Angular Chat UI component
+# Time Break in Angular Chat UI
 
 ## Show or hide time break
 

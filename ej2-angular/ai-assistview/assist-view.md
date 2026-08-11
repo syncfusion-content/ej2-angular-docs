@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Assist view in Angular AI AssistView component | Syncfusion
-description: Checkout and learn about Assist view with Angular AI AssistView component of Syncfusion Essential JS 2 and more.
+title: Assist View in Angular AI AssistView | Syncfusion®
+description: Configure the prompt input area of Angular AI AssistView with placeholder text and default text for guided conversations.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Assist view in Angular AI AssistView component
+# Assist View in Angular AI AssistView
 
 ## Setting prompt text
 

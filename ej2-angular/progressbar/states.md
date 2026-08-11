@@ -1,13 +1,13 @@
 ---
 layout: post
-title: States in Angular Progress bar component | Syncfusion
+title: States in Angular Progress Bar | Syncfusion
 description: Learn here all about States in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: States 
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# States in Angular Progress bar component
+# States in Angular Progress Bar
 
 Visualize progress in different modes.
 

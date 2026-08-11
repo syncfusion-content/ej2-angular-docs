@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data binding in Angular Treemap component | Syncfusion
+title: Data Binding in Angular TreeMap | Syncfusion
 description: Learn here all about Data binding in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data binding 
@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Treemap component
+# Data Binding in Angular TreeMap
 
 The TreeMap control supports data binding using the dataSource property.
 
 ## Populate data
 
-The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#datasource) property accepts collection values as input. For example, a list of objects can be provided as input. Data can be given as either flat or hierarchical collection to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#datasource) property.
+The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treemap#datasource) property accepts collection values as input. For example, a list of objects can be provided as input. Data can be given as either flat or hierarchical collection to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treemap#datasource) property.
 
 <!-- markdownlint-disable MD036 -->
 

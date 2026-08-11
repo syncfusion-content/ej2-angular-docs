@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations in Angular Maps component | Syncfusion
+title: Annotation in Angular Maps | Syncfusion
 description: Learn here all about Annotations in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Annotations 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotations in Angular Maps component
+# Annotation in Angular Maps
 
 <!-- markdownlint-disable MD013 -->
 

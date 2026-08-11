@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Methods in Angular Maps component | Syncfusion
+title: Methods in Angular Maps | Syncfusion
 description: Learn here all about the methods in the Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Maps 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in Angular Maps component
+# Methods in Angular Maps
 
 The Maps component provides several public methods that enable programmatic control and interaction with map component. These methods allow developers to perform operations such as retrieving geographic coordinates, manipulating layers, refreshing content, and exporting map visualizations. This section documents the available methods and their usage.
 

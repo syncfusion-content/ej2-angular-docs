@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in Angular HeatMap chart component | Syncfusion
+title: Selection in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Selection in Syncfusion Angular HeatMap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Selection 
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular HeatMap chart component
+# Selection in Angular HeatMap Chart
 
-In the HeatMap, the cell selection is used to select single or multiple HeatMap cells at runtime and get the selected cell details using the [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#cellselected) event. You can enable the cell selection using the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#allowselection) property.
+In the HeatMap, the cell selection is used to select single or multiple HeatMap cells at runtime and get the selected cell details using the [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/heatmap#cellselected) event. You can enable the cell selection using the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/heatmap#allowselection) property.
 
 The HeatMap cells can be selected using the following interactions, as shown in the table below.
 
@@ -34,7 +34,7 @@ The HeatMap cells can be selected using the following interactions, as shown in 
 
 ## Enable single cell selection
 
-In the HeatMap, the [enableMultiSelect](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/#enablemultiselect) property is used to allow single cell selection. When you set the `enableMultiSelect` property to **false**, only one cell is selected. By default, `enableMultiSelect` property is set to **true**.
+In the HeatMap, the [enableMultiSelect](https://helpej2.syncfusion.com/angular/documentation/api/heatmap#enablemultiselect) property is used to allow single cell selection. When you set the `enableMultiSelect` property to **false**, only one cell is selected. By default, `enableMultiSelect` property is set to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ In the HeatMap, the [enableMultiSelect](https://helpej2.syncfusion.com/angular/d
 
 ### Clearing cell selection
 
-The [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#clearselection) method can be used to clear all the selected cells. The below example illustrates the same.
+The [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/heatmap#clearselection) method can be used to clear all the selected cells. The below example illustrates the same.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

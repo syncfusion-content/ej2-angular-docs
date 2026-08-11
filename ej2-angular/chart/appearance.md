@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Angular Chart component | Syncfusion
+title: Appearance in Angular Chart | Syncfusion
 description: Learn here all about Appearance in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Appearance 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in Angular Chart component
+# Appearance in Angular Chart
 
 ## Custom Color Palette
 

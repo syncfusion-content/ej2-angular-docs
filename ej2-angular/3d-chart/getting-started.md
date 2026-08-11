@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular 3D Chart component | Syncfusion
+title: Getting Started with Angular 3D Chart | Syncfusion
 description:  Check out and learn about Getting Started with Angular 3D Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular 3D Chart Component
+# Getting Started with Angular 3D Chart
 
 This section explains the steps required to create a simple [Angular 3D Chart](https://www.syncfusion.com/angular-components/angular-3d-chart) and demonstrates the basic usage of the Angular 3D Chart component.
 

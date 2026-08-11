@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart title and subtitle in Angular Chart component | Syncfusion
+title: Title and Subtitle in Angular Chart | Syncfusion
 description: Learn here all about Chart title and subtitle in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Chart title and subtitle 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Title and Subtitle in Angular Chart Component
+# Title and Subtitle in Angular Chart
 
 Chart titles and subtitles help provide context for the visualized data. The title typically indicates the main subject or metric represented in the chart, while the subtitle adds supporting details such as data sources, time ranges, or explanatory notes. Both elements can be customized in terms of position, alignment, and style to align with application design requirements.
 

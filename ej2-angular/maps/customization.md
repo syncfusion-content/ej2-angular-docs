@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Angular Maps component | Syncfusion
+title: Customization in Angular Maps | Syncfusion
 description: Learn here all about Customization in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Maps component
+# Customization in Angular Maps
 
 The Maps component provides various options to customize its appearance, including size, title, theme, container styling, shape properties, and projection type. This section explains how to configure these customization options.
 

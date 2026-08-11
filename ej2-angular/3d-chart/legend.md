@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Angular 3D Chart control | Syncfusion
+title: Legend in Angular 3D Chart | Syncfusion
 description: Learn here all about legend in Syncfusion Angular 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 3D Chart
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Legend in Angular 3D Chart control
+# Legend in Angular 3D Chart
 
 <!-- markdownlint-disable MD036 -->
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance and styling in Angular Inline AI Assist | Syncfusion
-description:  Checkout and learn about inline assist with Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Appearance and Styling in Angular Inline AI Assist | Syncfusion®
+description: Style Angular Inline AI Assist with custom popup width, height, z-index, and CSS class for a tailored look.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance and styling in Angular Inline AI Assist component
+# Appearance and Styling in Angular Inline AI Assist
 
 ## Component Dimensions
 

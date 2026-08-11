@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool tip in Angular Stock chart component | Syncfusion
+title: Tool Tip in Angular Stock Chart | Syncfusion
 description: Learn here all about Tool tip in Syncfusion Angular Stock chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Tool tip 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in Angular Stock chart component
+# Tool Tip in Angular Stock Chart
 
 <!-- markdownlint-disable MD036 -->
 
@@ -54,7 +54,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 ## Position the tooltip
 
-By default, the tooltip is positioned at the left side of the stock chart. You can move the tooltip along with the mouse by setting **Nearest** to the [`position`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockTooltipSettingsModel/#position) property.
+By default, the tooltip is positioned at the left side of the stock chart. You can move the tooltip along with the mouse by setting **Nearest** to the [`position`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockTooltipSettingsModel#position) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -86,7 +86,7 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
 
 ## Customize the appearance of the tooltip
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#textstyle) property in the tooltip is used to customize the font of the tooltip text.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel#textstyle) property in the tooltip is used to customize the font of the tooltip text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

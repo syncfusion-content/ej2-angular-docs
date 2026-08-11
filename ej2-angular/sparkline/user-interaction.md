@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User interaction in Angular Sparkline component | Syncfusion
+title: User Interaction in Angular Sparkline | Syncfusion
 description: Learn here all about User interaction in Syncfusion Angular Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: User interaction 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interaction in Angular Sparkline component
+# User Interaction in Angular Sparkline
 
 Sparkline has two user interaction features: tooltip and tracker line.
 

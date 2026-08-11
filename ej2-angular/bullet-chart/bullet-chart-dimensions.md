@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bullet chart dimensions in Angular Bullet chart component | Syncfusion
+title: Dimensions in Angular Bullet Chart | Syncfusion
 description: Learn here all about Bullet chart dimensions in Syncfusion Angular Bullet chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Bullet chart dimensions 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bullet chart dimensions in Angular Bullet chart component
+# Dimensions in Angular Bullet Chart
 
 ## Size for Container
 
@@ -55,7 +55,7 @@ export class AppComponent {
 
 <!-- markdownlint-disable MD036 -->
 
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#height) properties are used to adjust the size of the Bullet Chart.
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart#height) properties are used to adjust the size of the Bullet Chart.
 
 ### Pixel
 

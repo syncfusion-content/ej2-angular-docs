@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Angular Accumulation chart component | Syncfusion
+title: Legend in Angular Accumulation Chart | Syncfusion
 description: Learn here all about Legend in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Legend 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in Angular Accumulation chart component
+# Legend in Angular Accumulation Chart
 
 As like a chart, the legend is also available for accumulation charts, which gives information about the points.
 By default, the legend will be placed on the right, if the width of the chart is high or will be placed on the bottom, if the height of the chart is high. Other customization features regarding the legend element are same as the [`chart legend`](http://ej2.syncfusion.com/documentation/chart/legend.html#position-and-alignment).

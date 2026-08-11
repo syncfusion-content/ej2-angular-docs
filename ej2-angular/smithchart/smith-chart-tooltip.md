@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart tooltip in Angular Smithchart component | Syncfusion
+title: Smith Chart Tooltip in Angular Smith Chart | Syncfusion
 description: Learn here all about Smith chart tooltip in Syncfusion Angular Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Smith chart tooltip 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Smith chart tooltip in Angular Smithchart component
+# Smith Chart Tooltip in Angular Smith Chart
 
 ## Enable the tooltip for Smith Chart series
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Bar Chart in Angular 3D Chart control | Syncfusion
+title: Stacked Bar Chart in Angular 3D Chart | Syncfusion
 description: Learn here all about stacked bar chart in Syncfusion Angular 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 3D Chart
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Stacked bar chart in Angular 3D Chart control
+# Stacked Bar Chart in Angular 3D Chart
 
 ## Stacked bar chart
 
-To render a stacked bar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#type) as `StackingBar` and inject `StackingBarSeries3DService` module into the `@NgModule.providers`.
+To render a stacked bar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#type) as `StackingBar` and inject `StackingBarSeries3DService` module into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ To render a stacked bar series, use series [`type`](https://ej2.syncfusion.com/a
 
 ## Stacking group
 
-To group the stacked bar, the [`stackingGroup`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#stackinggroup) property can be used. The columns with same group name are stacked on top of each other.
+To group the stacked bar, the [`stackingGroup`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#stackinggroup) property can be used. The columns with same group name are stacked on top of each other.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ To group the stacked bar, the [`stackingGroup`](https://ej2.syncfusion.com/angul
 
 ## Cylindrical stacked bar chart
 
-To render a cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
+To render a cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#columnfacet) property to `Cylinder` in the chart series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,8 +62,8 @@ To render a cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.s
 
 The following properties can be used to customize the `stacked bar` series.
 
-* [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#fill) color.
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#fill) – Specifies the color of the series.
+* [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#opacity) – Specifies the opacity of the [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#fill) color.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

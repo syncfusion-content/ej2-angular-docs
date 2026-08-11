@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Angular Sparkline component | Syncfusion
+title: Localization in Angular Sparkline | Syncfusion
 description: Learn here all about Localization in Syncfusion Angular Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Localization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Sparkline component
+# Localization in Angular Sparkline
 
 The sparkline control supports localization. The default culture for localization is `en-US`. You can change the culture using the `setCulture` method.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart marker in Angular Smithchart component | Syncfusion
+title: Smith Chart Marker in Angular Smith Chart | Syncfusion
 description: Learn here all about Smith chart marker in Syncfusion Angular Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Smith chart marker 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Smith chart marker in Angular Smithchart component
+# Smith Chart Marker in Angular Smith Chart
 
 Markers and Datalabels are used to provide information about the data points in the series. You can add a shape to adorn each data point. By default marker and datalabel both are disabled in smithchart. You can enable both of them by setting visible property as true in marker and datalabel settings
 

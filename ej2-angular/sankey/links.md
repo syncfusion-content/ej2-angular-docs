@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Links in Angular Sankey component | Syncfusion
+title: Links in Angular Sankey | Syncfusion
 description: Learn here all about Links in Syncfusion Angular Sankey component of Syncfusion Essential JS 2 and more.
 control: Links
 platform: ej2-angular
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Links in Angular Sankey component
+# Links in Angular Sankey
 
 Links are the connecting paths that visualize flow between nodes. Each link connects a source node to a target node and carries a quantitative value that determines its visual thickness.
 

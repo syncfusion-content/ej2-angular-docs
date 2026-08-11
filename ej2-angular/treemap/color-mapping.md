@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color mapping in Angular Treemap component | Syncfusion
+title: Color Mapping in Angular TreeMap | Syncfusion
 description: Learn here all about Color mapping in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Color mapping 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Color mapping in Angular Treemap component
+# Color Mapping in Angular TreeMap
 
 ## Apply Color Mapping
 

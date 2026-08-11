@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data editing in Angular Chart component | Syncfusion
+title: Data Editing in Angular Chart | Syncfusion
 description: Learn here all about Data editing in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data editing 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Data editing in Angular Chart component
+# Data Editing in Angular Chart
 
 Data editing allows users to modify chart data points interactively by dragging and dropping the rendered points. This functionality is enabled by injecting the [`DataEditing`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataEditing) module into the chart provider, which adds drag-and-drop support for data points.
 

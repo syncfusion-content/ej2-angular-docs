@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Azure OpenAI With Angular AI AssistView component | Syncfusion
-description:  Checkout and learn about Integration of Azure OpenAI With Angular AI AssistView component of Syncfusion Essential JS 2 and more details.
+title: Azure OpenAI Integration in Angular AI AssistView | Syncfusion®
+description: Connect Angular AI AssistView to Azure OpenAI to deliver streamed chat completions with natural language understanding.
 platform: ej2-angular
 control: AI AssistView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Azure OpenAI with Angular AI AssistView Component
+# Azure OpenAI Integration in Angular AI AssistView
 
-The AI AssistView component integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your Angular applications. The component acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses.
+The AI AssistView component integrates with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai) to enable advanced conversational AI features in your Angular applications. The component acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses.
 
 ## Prerequisites
 

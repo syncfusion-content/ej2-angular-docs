@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Speech recognition in Angular SpeechToText Component | Syncfusion
-description: Checkout and learn about speech recognition in Syncfusion Essential Angular SpeechToText component, its elements, and more details.
+title: Speech Recognition in Angular Speech To Text | Syncfusion®
+description: Capture live speech transcripts in Angular Speech To Text with configurable language, interim results, listening state, and detailed error handling.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Speech recognition in ##Platform_Name## SpeechToText Component
+# Speech Recognition in ##Platform_Name## Speech To Text
 
 ## Retrieving Transcripts
 

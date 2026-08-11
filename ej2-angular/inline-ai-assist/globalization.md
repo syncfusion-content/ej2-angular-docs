@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Inline AI Assist | Syncfusion
-description:  Checkout and learn about globalization with Angular Inline AI Assist component of Syncfusion Essential JS 2 and more details.
+title: Globalization in Angular Inline AI Assist | Syncfusion®
+description: Localize Angular Inline AI Assist for any culture by defining translated text for the default en locale.
 platform: ej2-angular
 control: Inline AI Assist
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in Angular Inline AI Assist component
+# Globalization in Angular Inline AI Assist
 
 ## Localization
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drilldown with label in Angular Treemap component | Syncfusion
+title: How to drilldown with label in Angular TreeMap | Syncfusion
 description: Learn here all about Drilldown with label in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Drilldown with label 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drilldown with label in Angular Treemap component
+# How to drilldown with label in Angular TreeMap
 
 Yon can add a label template as <div> element to the treemap control when using the label template. To add a label template to the treemap control, you have to hide another labels by setting the `showLabels` property to **false** in `leafItemSettings` to show only the label template.
 

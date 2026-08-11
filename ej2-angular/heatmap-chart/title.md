@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title in Angular Heatmap chart component | Syncfusion
+title: Title in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Title in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Title
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Title in Angular Heatmap chart component
+# Title in Angular HeatMap Chart
 
 ## Add Heatmap title
 

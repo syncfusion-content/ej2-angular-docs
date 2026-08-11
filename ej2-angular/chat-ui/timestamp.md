@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timestamp in Angular Chat UI component | Syncfusion
-description:  Checkout and learn about Timestamp with Angular Chat UI component of Syncfusion Essential JS 2 and more details.
+title: Timestamp in Angular Chat UI | Syncfusion®
+description: Show or hide message timestamps in Angular Chat UI to display the exact date and time each message was sent.
 platform: ej2-angular
 control: Chat UI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timestamp in the Angular Chat UI Component
+# Timestamp in Angular Chat UI
 
 ## Show or Hide Timestamps
 

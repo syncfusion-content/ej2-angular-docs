@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions in Angular Heatmap chart component | Syncfusion
+title: Dimensions in Angular HeatMap Chart | Syncfusion
 description: Learn here all about Dimensions in Syncfusion Angular Heatmap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Dimensions 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dimensions in Angular Heatmap chart component
+# Dimensions in Angular HeatMap Chart
 
 ## Size for container
 
@@ -22,7 +22,7 @@ Heat map can be rendered to its container size. You can set the size through inl
 
 ## Size for heat map
 
-You can  set the size of heat map directly by using the [width](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#height) properties.
+You can  set the size of heat map directly by using the [width](https://ej2.syncfusion.com/angular/documentation/api/heatmap#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/heatmap#height) properties.
 
 ## In pixel
 

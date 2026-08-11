@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bing maps in Angular Maps component | Syncfusion
+title: Bing Maps in Angular Maps | Syncfusion
 description: Learn here all about Bing maps in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Bing maps 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bing maps integration in Angular Maps component
+# Bing Maps in Angular Maps
 
 Bing Maps is a online Maps provider, owned by Microsoft. As like OSM, it provide Maps tile images based on our requests and combines those images into a single one to display Maps area.
 

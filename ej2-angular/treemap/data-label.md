@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data label in Angular Treemap component | Syncfusion
+title: Data Label in Angular TreeMap | Syncfusion
 description: Learn here all about Data label in Syncfusion Angular Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data label 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data label in Angular Treemap component
+# Data Label in Angular TreeMap
 
 Data Labels are used to identify the name of items or groups in the TreeMap component. Data Labels will be shown by specifying the data source properties in the [`labelPath`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel#labelpath) of the [`leafItemSettings`](https://ej2.syncfusion.com/angular/documentation/api/treemap#leafitemsettings).
 

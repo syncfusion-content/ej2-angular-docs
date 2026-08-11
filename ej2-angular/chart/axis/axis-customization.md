@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis customization in Angular Chart component | Syncfusion
+title: Axis Customization in Angular Chart | Syncfusion
 description: Learn here all about Axis customization in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Axis customization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Axis customization in Angular Chart component
+# Axis Customization in Angular Chart
 
 To know about axis customization, you can check on this video:
 

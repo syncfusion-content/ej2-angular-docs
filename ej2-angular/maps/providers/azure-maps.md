@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure maps in Angular Maps component | Syncfusion
+title: Azure Maps in Angular Maps | Syncfusion
 description: Learn here all about Azure maps in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Azure maps 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Azure maps integration in Angular Maps component
+# Azure Maps in Angular Maps
 
 Azure Maps is an online map service provider from Microsoft. Similar to OSM and Bing Maps, it provides map tile images based on requests and combines them to display the map area. Azure Maps offers various map styles including satellite imagery, road maps, and terrain views with global coverage.
 

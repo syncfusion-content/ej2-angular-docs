@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bar Chart in Angular 3D Chart control | Syncfusion
+title: Bar Chart in Angular 3D Chart | Syncfusion
 description: Learn here all about bar chart in Syncfusion Angular 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: 3D Chart
@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bar Chart in Angular 3D Chart control
+# Bar Chart in Angular 3D Chart
 
 ## Bar chart
 
-To render a bar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#type) as `Bar` and inject `BarSeries3DService` module into the `@NgModule.providers`.
+To render a bar series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#type) as `Bar` and inject `BarSeries3DService` module into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ To render a bar series, use series [`type`](https://ej2.syncfusion.com/angular/d
 
 ## Bar space and width
 
-The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#columnspacing) and [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#columnwidth) properties are used to customize the space between bars.
+The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#columnspacing) and [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#columnwidth) properties are used to customize the space between bars.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 
 ## Grouped bar
 
-The data points can be grouped in the bar type charts by using the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#groupname) property. Data points with same group name are grouped together.
+The data points can be grouped in the bar type charts by using the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#groupname) property. Data points with same group name are grouped together.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ The data points can be grouped in the bar type charts by using the [`groupName`]
 
 ## Cylindrical bar chart
 
-To render a cylindrical bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
+To render a cylindrical bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#columnfacet) property to `Cylinder` in the chart series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,8 +78,8 @@ To render a cylindrical bar chart, set the [`columnFacet`](https://ej2.syncfusio
 
 The following properties can be used to customize the `bar` series.
 
-* [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel/#fill) color.
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#fill) – Specifies the color of the series.
+* [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#opacity) – Specifies the opacity of the [fill](https://ej2.syncfusion.com/angular/documentation/api/chart3d/series3DModel#fill) color.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

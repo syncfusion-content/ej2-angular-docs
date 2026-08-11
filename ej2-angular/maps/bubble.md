@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bubble in Angular Maps component | Syncfusion
+title: Bubble in Angular Maps | Syncfusion
 description: Learn here all about Bubble in Syncfusion Angular Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Bubble 
@@ -12,7 +12,7 @@ This section shows how to add and customize bubbles in the Maps component using 
 
 {% youtube "https://www.youtube.com/watch?v=xx3KmBK0If8" %}
 
-# Bubble in Angular Maps component
+# Bubble in Angular Maps
 
 Bubbles in the Maps component provide a visual representation of data values across geographical regions. They appear as circular or square shapes scattered over map areas, with their size proportional to the underlying data values. To enable bubbles, set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel#visible) property of [`bubbleSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel) to **true**. Then, bind the data source to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel#datasource) property and specify the field containing numerical data using the [`valuePath`](https://ej2.syncfusion.com/angular/documentation/api/maps/bubbleSettingsModel#valuepath) property.
 
