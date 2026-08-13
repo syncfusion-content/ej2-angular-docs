@@ -3,13 +3,13 @@ layout: post
 title: Data Binding in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table binds to JSON, CSV, and remote data sources like OData via DataManager and REST endpoints.
 platform: ej2-angular
-control: Data binding 
+control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 # Data Binding in Angular Pivot Table
 
-To get start quickly with Data Binding, you can check on this video:
+To get started quickly with Data Binding, you can check out this video:
 
 {% youtube "https://www.youtube.com/watch?v=-6QFvYFA-lY" %}
 
@@ -115,7 +115,7 @@ To bind CSV data, set the [`type`](https://ej2.syncfusion.com/angular/documentat
 
 ### Binding CSV data via local
 
-To bind local CSV data to the pivot table, convert the data into a string array and assign it directly to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
+To bind local CSV data to the Pivot Table, convert the data into a string array and assign it directly to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -249,9 +249,9 @@ Web API binding allows you to connect the Pivot Table directly to RESTful web se
 
 ### Querying in Data Manager
 
-By default, the [Data Manager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) fetches all records from the data source you have configured. However, you can customize this behavior by applying your own query using the `defaultQuery` property in the Data Manager instance. 
+By default, the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) fetches all records from the data source you have configured. However, you can customize this behavior by applying your own query using the `defaultQuery` property in the Data Manager instance. 
 
-The query can include operations such as filtering records based on specific conditions, sorting data in ascending or descending order, or limiting the number of records through paging. When you define these queries, the [Data Manager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) processes them at the data source level, ensuring that only the required data is retrieved and displayed in the Pivot Table.
+The query can include operations such as filtering records based on specific conditions, sorting data in ascending or descending order, or limiting the number of records through paging. When you define these queries, the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) processes them at the data source level, ensuring that only the required data is retrieved and displayed in the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -294,7 +294,7 @@ The following options are available for field mapping:
 **OLAP-specific options**
 
 * [`isNamedSet`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#isnamedset) - It is to set whether the specified field is named set or not. In general, the named set is a set of dimension members or a set expression (MDX query) to be created as a dimension in the SSAS OLAP cube itself. The default value is **false** and this option is applicable only for OLAP data source.
-* [`isCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#iscalculatedfield) - It is to set whether the specified field is a calculated field or not. In general, a calculated field is created from the bound data source or using simple formula with basic arithmetic operators in the pivot table. The default value is **false** and this option is applicable only for OLAP data source.
+* [`isCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#iscalculatedfield) - It is to set whether the specified field is a calculated field or not. In general, a calculated field is created from the bound data source or using simple formula with basic arithmetic operators in the Pivot Table. The default value is **false** and this option is applicable only for OLAP data source.
 
 **UI interaction controls**
 
@@ -359,7 +359,7 @@ Positioning value fields at specific locations helps create more meaningful data
 
 ## Show 'no data' items
 
-Display all field items in your Pivot Table, even when they lack data in certain row and column combinations, for a complete view of your data structure. By default, the Pivot Table displays field items only when they contain data in their respective row or column combinations. However, you can show all items, including those without data, by setting the [`showNoDataItems`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldlistfieldoptions#shownodataitems) property to **true** for the desired fields. 
+Display all field items in your Pivot Table, even when they lack data in certain row and column combinations, for a complete view of your data structure. By default, the Pivot Table displays field items only when they contain data in their respective row or column combinations. However, you can show all items, including those without data, by setting the [`showNoDataItems`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#shownodataitems) property to **true** for the desired fields.
 
 In the following example, the "Country" and "State" field rows are displayed even when they don't have data in all combinations with the "Date" column field.
 
@@ -393,7 +393,7 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 ## Customize empty value cells
 
-Show custom text in cells that contain no data to make your Pivot Table more informative and user-friendly. By default, empty value cells appear blank in the Pivot Table. However, you can display meaningful text in these cells using the [`emptyCellsTextContent`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#emptycellsTextcontent) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). Since this property accepts string values, you can fill empty cells with any text such as "0", "-", "*", "(blank)", or other meaningful indicators. This setting applies to all value fields and can be configured in your code behind.
+Show custom text in cells that contain no data to make your Pivot Table more informative and user-friendly. By default, empty value cells appear blank in the Pivot Table. However, you can display meaningful text in these cells using the [`emptyCellsTextContent`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#emptycellstextcontent) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). Since this property accepts string values, you can fill empty cells with any text such as "0", "-", "*", "(blank)", or other meaningful indicators. This setting applies to all value fields and can be configured in your code behind.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -420,11 +420,8 @@ The [`load`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/inde
 The load event provides the following parameters:
 
 - [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadeventargs#datasourcesettings): Defines the current report configuration including data source, rows, columns, values, and filters.
-
 - [`defaultFieldListOrder`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadeventargs#defaultfieldlistorder): Defines the default field list order that determines how fields appear in the field list panel.
-
 - [`fieldsType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadeventargs#fieldstype): Defines the type of specific fields, such as whether they should be treated as numbers, dates, or text.
-
 - [`pivotview`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadeventargs#pivotview): Defines the Pivot Table instance object that provides access to all component methods and properties.
 
 {% tabs %}

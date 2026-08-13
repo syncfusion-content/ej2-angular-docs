@@ -3,7 +3,7 @@ layout: post
 title: Drill Down in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table expands and collapses hierarchical members with drill position, expandAll, drilledMembers, and drill events.
 platform: ej2-angular
-control: Drill down 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Drill down and drill up
 
-The drill-down and drill-up features in the PivotTable component allow users to expand or collapse hierarchical data for detailed or summarized views. When a field member(s) contains child items, expand and collapse icons automatically appear in the corresponding row or column header. Clicking these icons expands the selected item to display its child members or collapses it to show a summarized view. If a field member(s) does not have any further levels to display, the icons will not appear.
+The drill-down and drill-up features in the Pivot Table component allow users to expand or collapse hierarchical data for detailed or summarized views. When a field member(s) contains child items, expand and collapse icons automatically appear in the corresponding row or column header. Clicking these icons expands the selected item to display its child members or collapses it to show a summarized view. If a field member(s) does not have any further levels to display, the icons will not appear.
 
 ![output](../images/drill.png)
 
@@ -20,11 +20,11 @@ The drill-down and drill-up features in the PivotTable component allow users to 
 
 The drill-down and drill-up features allow you to expand or collapse data for a specific member in the Pivot Table without affecting the same member in other positions. For example, if both "FY 2015" and "FY 2016" have "Quarter 1" as a child in the next level, drilling down into "Quarter 1" under "FY 2015" will expand only that specific instance. The "Quarter 1" under "FY 2016" will remain unchanged.
 
-> This feature is built-in and works automatically every time you expand or collapse data, making the pivot table faster and more efficient
+> This feature is built-in and works automatically every time you expand or collapse data, making the pivot table faster and more efficient.
 
 ![output](../images/drill_position.png)
 
-## Expand All
+## Expand all
 
 > This property is applicable only for the relational data source.
 
@@ -46,7 +46,7 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 > This property is applicable only for the relational data source.
 
-The Pivot Table provides an option to expand or collapse all headers for specific fields in the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) or [`columns`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#columns) axis. To expand all headers for a particular field, set the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#expandall) property to **true** in the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) or [`columns`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#columns) axis. By default, the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#expandall) property is set to **false**, meaning the headers are collapsed.
+The Pivot Table provides an option to expand or collapse all headers for specific fields in the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns) axis. To expand all headers for a particular field, set the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#expandall) property to **true** in the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns) axis. By default, the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#expandall) property is set to **false**, meaning the headers are collapsed.
 
 The following code demonstrates how to configure a Pivot Table with the [`expandAll`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#expandall) property enabled for specific fields. In this example, all headers for the **Year** field in the columns and the **Country** field in the rows are expanded.
 
@@ -86,9 +86,9 @@ The following example demonstrates how to configure a Pivot Table where all head
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs43" %}
 
 
-## Expand or Collapse Specific Members
+## Expand or collapse specific members
 
-The Pivot Table component enables users to programmatically expand or collapse specific members in any field placed under the row or column axes. This can be achieved using the [`drilledMembers`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drilloptions) property. The following properties of [`drilledMembers`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drilloptions) are described below:
+The Pivot Table component enables users to programmatically expand or collapse specific members in any field placed under the row or column axes. This can be achieved using the [`drilledMembers`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#drilledmembers) property. The following properties of [`drilledMembers`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#drilledmembers) are described below:
 
 * [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drilloptions#name): Specifies the field name whose members should be expanded or collapsed.
 * [`items`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drilloptions#items): Defines the exact members to be expanded or collapsed within the specified field.
@@ -116,7 +116,7 @@ The [`drill`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/ind
 
 * [`drillInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillargs#drillinfo): Contains information about the currently drilled field member.
 * [`pivotview`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillargs#pivotview): A reference to the Pivot Table component instance.
-* [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillargs#cancel): Specifies whether to prevent the current drill operation. Set this property to true in the event handler to cancel the action.
+* [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillargs#cancel): Specifies whether to prevent the current drill operation. Set this property to `true` in the event handler to cancel the action.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,7 +171,7 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 | **Expand** | Drill down|
 | **Collapse** | Drill up|
 
-* [`actionInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#fieldinfo): It holds the unique information about the current UI action. For example, if drill down action is completed, the event argument contains information such as field name and the drill information.
+* [`actionInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actioninfo): It holds the unique information about the current UI action. For example, if drill down action is completed, the event argument contains information such as field name and the drill information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,3 +209,9 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs48" %}
+
+## See Also
+
+* [Drill through](./drill-through)
+* [Row and column](./row-and-column)
+* [Aggregation](./aggregation)
