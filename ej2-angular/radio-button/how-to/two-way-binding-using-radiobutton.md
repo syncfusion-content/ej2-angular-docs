@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Two way binding using radiobutton in Angular Radio button component | Syncfusion
-description: Learn here all about Two way binding using radiobutton in Syncfusion Angular Radio button component of Syncfusion Essential JS 2 and more.
+description: Bind Angular Radio Button selection two-way with ngModel to sync values with other controls in your form.
 platform: ej2-angular
 control: Two way binding using radiobutton 
 documentation: ug

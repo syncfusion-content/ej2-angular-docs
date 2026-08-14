@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Quick Access Toolbar in Angular Image editor component | Syncfusion
-description: Learn here all about Quick Access in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Quick Access Toolbar in Angular Image Editor | Syncfusion
+description: Customize the quick access toolbar in the Syncfusion Angular Image Editor to expose per-annotation actions such as duplicate, delete, and edit text.
 control: Quick Access
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Quick access toolbar in the Angular Image Editor component
+# Quick Access Toolbar in Angular Image Editor
 
 The quick access toolbars in the Image Editor play a vital role in facilitating interactions with annotations like Rectangle, Ellipse, Line, Arrow, and Path. These toolbars offer a diverse array of tools and options that can be tailored to match the specific requirements and preferences associated with each annotation type. The toolbar is only displayed when an annotation is selected, ensuring a focused and contextual user experience.
 

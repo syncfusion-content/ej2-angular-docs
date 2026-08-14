@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Angular MultiSelect component | Syncfusion
+title: Accessibility in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular MultiSelect component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular MultiSelect component
+# Accessibility in Angular MultiSelect Dropdown
 
 The MultiSelect component follows WAI-ARIA specifications and applies WAI-ARIA roles, states, and properties with comprehensive keyboard support. This component provides complete keyboard interaction support and ARIA accessibility features that ensure usability for people who use assistive technologies or rely entirely on keyboard navigation.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Moving panels in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Moving panels in Syncfusion Angular Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Moving Panels in Angular Dashboard Layout | Syncfusion
+description: Move Dashboard Layout panels programmatically in Angular by calling the movePanel method with a panel id, row, and column value.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Moving panels in Angular Dashboard layout component
+# Moving Panels in Angular Dashboard Layout
 
 In addition to drag-and-drop interactions, panels can be moved and repositioned programmatically within the Dashboard Layout. This is achieved using the [movePanel](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#movepanel) method. The method is invoked as follows,
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom templates in Angular Toolbar component | Syncfusion
-description: Learn here all about Set item wise custom template in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to set item-wise custom template in Angular Toolbar | Syncfusion
+description: Add custom HTML template content to Angular Toolbar items via the template property as a string literal or query selector.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set item wise custom template in Angular Toolbar component
+# How to set item-wise custom template in Angular Toolbar
 
 The Angular Toolbar component supports adding template commands using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#template) property, enabling integration of custom controls as toolbar items. The template property accepts HTML content as either a string literal or a query selector reference, providing flexibility for various implementation approaches.
 

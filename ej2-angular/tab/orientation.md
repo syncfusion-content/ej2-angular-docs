@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Orientation in Angular Tab component | Syncfusion
-description: Learn here all about Orientation in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Orientation in Angular Tab | Syncfusion
+description: Place the Angular Tab header at the Top, Bottom, Left, or Right via the headerPlacement property and adapt overflow with overflowMode.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientation in Angular Tab component
+# Orientation in Angular Tab
 
 This section explains how to modify the position and modes of Tab header placement for optimal user experience and layout adaptation.
 

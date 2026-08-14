@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Check box component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Check box component of Syncfusion Essential JS 2 and more.
+title: Ej1 Api Migration in Angular Checkbox | Syncfusion
+description: Compare Essential JS 1 and Angular Checkbox APIs to migrate labels, checked state, indeterminate, and events.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Check box component
+# Ej1 Api Migration in Angular Checkbox
 
 This article describes the API migration process of Checkbox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection in Angular Button Group Component | Syncfusion
-description: Learn here all about selection in Syncfusion Essential Angular Button Group component, it's elements and more.
+title: Selection in Angular Button Group | Syncfusion
+description: Configure single and multiple selection behavior in Angular Button Group with radio or checkbox input elements.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Button Group Component
+# Selection in Angular Button Group
 
 ## Selection
 

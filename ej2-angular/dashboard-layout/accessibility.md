@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Dashboard Layout component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Dashboard Layout | Syncfusion
+description: Learn WAI-ARIA roles, accessibility compliance levels, and screen reader support for the Syncfusion Angular Dashboard Layout component.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Dashboard Layout component
+# Accessibility in Angular Dashboard Layout
 
 The Dashboard Layout component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 

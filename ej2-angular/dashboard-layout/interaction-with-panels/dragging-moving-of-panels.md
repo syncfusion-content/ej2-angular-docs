@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dragging panels in Angular Dashboard Layout component | Syncfusion
-description: Learn here all about dragging moving of panels in Syncfusion Angular Dashboard Layout component, it's elements and more.
+title: Drag and Drop in Angular Dashboard Layout | Syncfusion
+description: Enable drag and drop to reorder panels, customize the drag handle, or disable dragging entirely in the Syncfusion Angular Dashboard Layout.
 platform: ej2-angular
 control: Dashboard Layout
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dragging and Moving Dashboard Layout Panels in Angular
+# Drag and Drop in Angular Dashboard Layout
 
 The Dashboard Layout component provides dragging functionality to reorder panels within the layout. While dragging a panel, a holder is highlighted beneath the panel indicating where the panel will be positioned upon release. This visual feedback allows users to determine whether to place the panel in the current position or revert to its previous position without disrupting the layout.
 

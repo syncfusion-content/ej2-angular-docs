@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Step Types in Angular Stepper component | Syncfusion
-description:  Learn here all about Step Types in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Step Types in Angular Stepper | Syncfusion
+description: Switch the Angular Stepper stepType between Default, Label, and Indicator, and set labelPosition to Top, Bottom, Start, or End.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Step types in Angular Stepper component
+# Step Types in Angular Stepper
 
 The Angular Stepper component supports different step types to customize how steps are displayed, such as with indicators, labels, or both. Configure the step type using the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property on the `ejs-stepper` component. This affects the rendering of step content based on properties like `iconCss` and `label` in the `StepModel` interface.
 

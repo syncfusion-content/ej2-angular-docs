@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular TreeView component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Tree View | Syncfusion
+description: Bind the Angular Tree View to local hierarchical, self-referential, or remote data via DataManager with load-on-demand and lazy loading.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular TreeView component
+# Data Binding in Angular Tree View
 
 The TreeView component provides flexible data binding capabilities to display hierarchical data from various sources. Data binding is essential for populating the TreeView with dynamic content and can be configured through the `dataSource` property, which is a member of the [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview/#fields) property. This enables seamless integration with both local data arrays and remote data services.
 

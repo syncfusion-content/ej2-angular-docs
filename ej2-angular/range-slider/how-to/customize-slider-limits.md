@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize slider limits in Angular Range Slider component | Syncfusion
-description: Learn here all about Customize slider limits in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: How to customize the slider limits in Angular Range Slider | Syncfusion
+description: Customize the Angular Range Slider limit bar background color and style by overriding the e-limits CSS class to highlight restricted zones.
 platform: ej2-angular
 control: Range Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize limits in Angular Range Slider component
+# How to customize the slider limits in Angular Range Slider
 
 Customize the Range Slider limit bar by overriding the `e-limits` CSS class. The limit bar defines the selectable range boundaries. Apply custom background colors or styles to visually distinguish the limit area from the active range. The following code snippet demonstrates how to customize the limit bar appearance.
 

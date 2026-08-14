@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style appearance in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Style appearance in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular DateTime Picker | Syncfusion®
+description: Learn how to style and customize the appearance of the Syncfusion Angular DateTime Picker using CSS for backgrounds, text, and popup.
 platform: ej2-angular
 control: Style appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in Angular Datetimepicker component
+# Style and Appearance in Angular DateTime Picker
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

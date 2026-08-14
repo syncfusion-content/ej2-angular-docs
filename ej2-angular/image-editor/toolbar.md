@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar in Angular Image editor component | Syncfusion
-description: Learn here all about Toolbar in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Toolbar in Angular Image Editor | Syncfusion
+description: Customize the Syncfusion Angular Image Editor toolbar by adding, removing, or replacing built-in items such as Open, Crop, Rotate, Annotate, and Save.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar in the Angular Image Editor component
+# Toolbar in Angular Image Editor
 
 The toolbars in the Image Editor are a key component for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow. 
 

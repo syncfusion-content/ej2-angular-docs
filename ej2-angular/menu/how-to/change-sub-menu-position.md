@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change sub menu position in Angular Menu component | Syncfusion
-description: Learn here all about Change sub menu position in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to change sub menu position in Angular Menu Bar | Syncfusion
+description: Position the Angular Menu Bar submenu by setting top and left coordinates in the beforeOpen event for custom placement.
 platform: ej2-angular
 control: Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change sub menu position in Angular Menu component
+# How to change sub menu position in Angular Menu Bar
 
 You can customize the position of a submenu in the Syncfusion Angular Menu component by using the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event. This event allows you to override the default positioning by manually setting the `top` and `left` coordinates of the submenu element.
 ### Example: Set Custom Submenu Position

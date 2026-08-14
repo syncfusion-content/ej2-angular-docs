@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Button Group component | Syncfusion
+title: Getting Started with Angular Button Group | Syncfusion
 description:  Check out and learn about getting started with the Angular Button Group component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Button Group component
+# Getting Started with Angular Button Group
 
 The Button Group component allows users to organize and manage multiple related buttons as a single group, making it easier to select or trigger related actions.
 

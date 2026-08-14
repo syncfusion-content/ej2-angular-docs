@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set command customization in Angular Toolbar component | Syncfusion
-description: Learn here all about Set command customization in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to set command customization in Angular Toolbar | Syncfusion
+description: Customize Angular Toolbar commands with the htmlAttributes property for ID, class, style, and role, or use the cssClass property.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set command customization in Angular Toolbar component
+# How to set command customization in Angular Toolbar
 
 The [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#htmlattributes) property of the Toolbar item enables comprehensive customization by setting HTML attributes such as 'ID', 'class', 'style', and 'role' for individual toolbar commands.
 

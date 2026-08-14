@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Stepper component | Syncfusion
-description:  Learn how to get started with the Syncfusion Angular Stepper component, including setup, installation and basic configuration.
+title: Getting Started with Angular Stepper | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Stepper control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Stepper 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Stepper component
+# Getting Started with Angular Stepper
 
 The Stepper component guides users through a sequence of steps in a predefined process, providing a clear visual representation of progress and helping users complete multi-step tasks in an organized and intuitive manner.
 

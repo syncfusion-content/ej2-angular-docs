@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create a rounded button in Angular Button component | Syncfusion
-description: Learn here all about Create a rounded button in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
+title: How to create a rounded button in Angular Button | Syncfusion
+description: Create rounded Angular Buttons by applying border-radius through a custom CSS class on the button element.
 platform: ej2-angular
 control: Create a rounded button 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create a rounded button in Angular Button component
+# How to create a rounded button in Angular Button
 
 Button with rounded corner can be achieved by adding `border-radius` CSS property to button element.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Apply custom icons in Angular TreeView component | Syncfusion
-description: Learn here all about Customize the expand and collapse icons in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: How to customize the expand and collapse icons in Angular Tree View | Syncfusion
+description: Replace Angular Tree View expand and collapse icons by applying custom CSS through the cssClass property.
 platform: ej2-angular
 control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the expand and collapse icons in Angular TreeView component
+# How to customize the expand and collapse icons in Angular Tree View
 
 The TreeView component displays default expand and collapse icons for parent nodes. These icons can be customized to match application themes or design requirements by using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#cssclass) property along with custom CSS styling.
 

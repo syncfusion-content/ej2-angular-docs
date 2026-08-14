@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Time range in Angular Timepicker component | Syncfusion
-description: Learn here all about Time range in Syncfusion Angular Timepicker component of Syncfusion Essential JS 2 and more.
+title: Time Range in Angular TimePicker | Syncfusion®
+description: Learn how to restrict the Syncfusion Angular TimePicker to a specific time range using the min and max properties for valid selections.
 platform: ej2-angular
 control: Time range 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Time range in Angular Timepicker component
+# Time Range in Angular TimePicker
 
 TimePicker provides an option to select a time value within a specified range by using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#max) properties.  The min value should always be lesser than the max value.
 

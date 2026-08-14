@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Accordion component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Accordion | Syncfusion
+description: Customize the Angular Accordion look with CSS for borders, colors, header backgrounds, hover states, and expand and collapse icons.
 platform: ej2-angular
 control: Accordion 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Accordion component
+# Style in Angular Accordion
 
 The Angular Accordion component can be customized using CSS to modify its appearance, such as borders, colors, icons, and hover effects. These styles allow alignment with your application’s theme or branding.
 

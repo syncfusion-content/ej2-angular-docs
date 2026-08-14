@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Action buttons in Angular Toast component | Syncfusion
-description: Learn here all about Action buttons in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Action buttons in Angular Toast | Syncfusion
+description: Add interactive action buttons to Syncfusion Angular Toast with click callbacks to let users confirm, undo, or take custom actions.
 platform: ej2-angular
 control: Action buttons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Action buttons in Angular Toast component
+# Action buttons in Angular Toast
 
 You can include action Buttons into toast by adding [`buttons`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#buttons) property. You can bind collections of Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button Model to `model` property inside buttons property, You can also include click event callback function, for each button.
 

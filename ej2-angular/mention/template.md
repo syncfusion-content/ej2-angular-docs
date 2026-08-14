@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Mention component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Mention component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular Mention | Syncfusion
+description: Customize Angular Mention items, the selected display value, and the no-records waiting popup using itemTemplate and displayTemplate with the Syncfusion template engine.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Mention component
+# Templates in Angular Mention
 
 The Mention has been provided with several options to customize each list item, display item and waiting popup. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
 

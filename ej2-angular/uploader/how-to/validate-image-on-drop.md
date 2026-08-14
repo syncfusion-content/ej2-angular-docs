@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validate image on drop in Angular Uploader component | Syncfusion
-description: Learn here all about Validate image on drop in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to validate image on drop in Angular Uploader | Syncfusion
+description: Validate image files in the Angular Uploader on drag-and-drop by filtering extensions in the selected event for PNG, JPG, BMP, GIF, and TIFF formats.
 platform: ej2-angular
 control: Validate image on drop 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validate images on drop in Angular Uploader component
+# How to validate image on drop in Angular Uploader
 
 The Uploader component allows you to upload all image types by setting `image/*` to the [allowedExtensions](https://ej2.syncfusion.com/angular/documentation/api/uploader/#allowedextensions) property.
 You can set this directly to the `accept` attribute of the Uploader element.

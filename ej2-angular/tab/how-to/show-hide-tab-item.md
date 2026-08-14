@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show hide tab item in Angular Tab component | Syncfusion
-description: Learn here all about Show hide tab item in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to show or hide Tab items in Angular Tab | Syncfusion
+description: Show or hide Angular Tab items at runtime by index using the hideTab method with true or false visibility values.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show or hide tab items in Angular Tab component
+# How to show or hide Tab items in Angular Tab
 
 The Tab component provides the [`hideTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/#hideTab) method to dynamically show or hide tab items at runtime. This method accepts two parameters: the index of the tab item and a boolean value that determines the visibility state (true to hide the tab, false to show the tab).
 

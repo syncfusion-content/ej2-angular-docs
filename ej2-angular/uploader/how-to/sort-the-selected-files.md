@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sort the selected files in Angular Uploader component | Syncfusion
-description: Learn here all about Sort the selected files in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to sort selected files in Angular Uploader | Syncfusion
+description: Sort the Angular Uploader file list by name, size, or date using the selected event and custom sort logic before displaying or uploading the files.
 platform: ej2-angular
 control: Sort the selected files 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sort selected files in Angular Uploader component
+# How to sort selected files in Angular Uploader
 
 You can sort selected files in the Uploader component by using the [selected](https://ej2.syncfusion.com/angular/documentation/api/uploader/#selected) event. This event fires when files are selected and allows you to implement custom sorting logic based on file properties such as name, size, or date. Refer to the following example for implementation details.
 

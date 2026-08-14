@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set tooltip to commands in Angular Toolbar component | Syncfusion
-description: Learn here all about Set tool tip to the commands in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to set tooltip to commands in Angular Toolbar | Syncfusion
+description: Add HTML tooltips to Angular Toolbar commands via the tooltipText property, or upgrade to the ej2-tooltip component on hover.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set tooltip to the commands in Angular Toolbar component
+# How to set tooltip to commands in Angular Toolbar
 
 The [`tooltipText`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#tooltiptext) property of the Toolbar item is used to set the HTML Tooltip to the commands that can be viewed as hint texts on mouse hover.
 

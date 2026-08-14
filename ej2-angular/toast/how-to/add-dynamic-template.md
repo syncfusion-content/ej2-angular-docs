@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add dynamic template in Angular Toast component | Syncfusion
-description: Learn here all about Add dynamic template in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: How to add dynamic template in Angular Toast | Syncfusion
+description: Change Syncfusion Angular Toast templates dynamically when calling the show method, enabling multiple layouts from a single component.
 platform: ej2-angular
 control: Add dynamic template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add dynamic template in Angular Toast component
+# How to add dynamic template in Angular Toast
 
 Toast can support to change templates in dynamically, with displaying in multiple toasts. We can change Toast properties while calling in [`show`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#show) method.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Maximum Length in Angular TextBox component | Syncfusion
-description: Limiting the maximum number of characters in the Angular TextBox component of Syncfusion Essential JS 2 and more details.
+title: Maximum Length in Angular TextBox | Syncfusion
+description: Restrict user input in the Syncfusion Angular TextBox to a fixed number of characters with the maxLength property to enforce data integrity.
 control: Maximum Length
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maximum Length in Angular TextBox Component
+# Maximum Length in Angular TextBox
 
 Enforce a maximum length limit for text input in the TextBox using the `maxLength` property. This property defines the maximum number of characters that users can input into the textbox.
 

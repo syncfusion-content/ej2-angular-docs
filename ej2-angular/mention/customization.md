@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Mention component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Mention component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular Mention | Syncfusion
+description: Customize the Angular Mention trigger character with showMentionChar, append a suffixText after selection, and resize the popup via popupHeight and popupWidth.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Mention component
+# Customization in Angular Mention
 
 ## Show or hide mention character
 

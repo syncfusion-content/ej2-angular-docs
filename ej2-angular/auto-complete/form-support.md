@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form support in Angular Auto complete component | Syncfusion
-description: Learn here all about Form support in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Form Support in Angular AutoComplete | Syncfusion®
+description: Integrate Angular AutoComplete with template-driven and reactive forms using ngModel or formControlName for two-way data binding and validation.
 platform: ej2-angular
 control: Form support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in Angular Auto complete component
+# Form Support in Angular AutoComplete
 
 The AutoComplete supports both the reactive and template-driven form-building technologies.
 

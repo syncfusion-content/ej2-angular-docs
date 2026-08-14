@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add nested tabs in Angular Tab component | Syncfusion
-description: Learn here all about Add nested tabs in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to add nested Tabs in Angular Tab | Syncfusion
+description: Add nested Tabs inside an Angular Tab item content area and initialize the inner Tab from the parent selected event handler.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add nested tabs in Angular Tab component
+# How to add nested Tabs in Angular Tab
 
 The Tab component supports rendering nested levels of tabs by utilizing the [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemDirective/#content) property.
 You can add nested Tab elements inside the parent Tab's [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemDirective/#content) property.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Mention component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular Mention component, including setup, installation, and basic configuration.
+title: Getting Started with Angular Mention | Syncfusion
+description: Install and configure the Syncfusion Angular Mention component in an Angular 17+ standalone project to enable autocomplete suggestions inside text inputs.
 platform: ej2-angular
 control: Mention
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Mention component
+# Getting Started with Angular Mention
 
 The Mention component enables users to mention people or tags in text input with autocomplete suggestions, keyboard navigation, and customizable mention characters.
 

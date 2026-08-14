@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resizing in Angular Image editor component | Syncfusion
-description: Learn here all about Resizing in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Resize in Angular Image Editor | Syncfusion
+description: Resize images in the Syncfusion Angular Image Editor by width and height, with an option to lock the original aspect ratio using the resize method.
 platform: ej2-angular
-control: Selection cropping 
+control: Resize
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize in the Angular Image Editor component
+# Resize in Angular Image Editor
 
 The resize feature in an Image Editor is a valuable tool that empowers users to modify the size or dimensions of an image to meet their specific requirements. Whether it's for printing, web display, or any other purpose, this feature allows users to tailor images to their desired specifications.
 

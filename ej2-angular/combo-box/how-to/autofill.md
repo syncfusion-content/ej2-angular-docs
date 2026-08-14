@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Autofill in Angular Combo box component | Syncfusion
-description: Learn here all about Autofill in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: How to enable autofill in Angular ComboBox | Syncfusion®
+description: Enable autofill in Angular ComboBox so the input completes suggestions as the user types, matching the typed character to list items.
 platform: ej2-angular
 control: Autofill 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Autofill in Angular Combo box component
+# How to enable autofill in Angular ComboBox
 
 The ComboBox supports the `autofill` behavior with the help of [autofill](https://ej2.syncfusion.com/angular/documentation/api/combo-box#autofill) property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches found then, comboBox doesn't suggest any item.
 

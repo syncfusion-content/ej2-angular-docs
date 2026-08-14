@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrate avatar into ListView in Angular Avatar component|Syncfusion
-description: Learn here all about Integrate avatar into ListView in Syncfusion Angular Avatar component of Syncfusion Essential JS 2 and more.
+title: How to integrate avatar into ListView in Angular Avatar | Syncfusion
+description: Combine the Angular Avatar with ListView using the xsmall size to build contact lists, user directories, and messaging interfaces with clear identity.
 platform: ej2-angular
-control: Avatar 
+control: Avatar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate Avatar into ListView in Angular Avatar component
+# How to integrate avatar into ListView in Angular Avatar
 
 The Avatar component integrates with ListView to create, visually enhanced list interfaces for contact applications, user directories, and messaging platforms. This integration provides immediate visual identification of list items through profile images, initials, or icons.
 

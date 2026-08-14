@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualization in Angular Multi select component | Syncfusion
+title: Virtualization in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Virtualization in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Virtualization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in MultiSelect component
+# Virtualization in Angular MultiSelect Dropdown
 
 MultiSelect virtualization is a performance optimization technique that efficiently renders large lists by creating only a fixed number of DOM elements. This approach is particularly beneficial when working with extensive datasets, as it maintains optimal performance by reusing existing DOM elements during scrolling rather than creating new elements for each item. The recycling process operates automatically behind the scenes.
 

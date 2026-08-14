@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Repeat Button in Angular Button control | Syncfusion
-description:  Learn here all about Repeat Button support in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
+title: Repeat Button in Angular Button | Syncfusion
+description: Enable repeat-click in Angular Button so the clicked event fires continuously while the user presses and holds the button.
 platform: ej2-angular
 control: Repeat Button 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Repeat button in the Angular Button control
+# Repeat Button in Angular Button
 
 The Button component provides repeat-click functionality through the `enableRepeat` property. When enabled, the Button continuously triggers the `clicked` event while the user presses and holds the Button.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Stepper component | Syncfusion
-description:  Learn here all about Globalization in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Globalization in Angular Stepper | Syncfusion
+description: Localize Angular Stepper text like the optional label with the locale property, and enable RTL layouts via enableRtl.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in Angular Stepper component
+# Globalization in Angular Stepper
 
 ## Localization
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Carousel component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Carousel Component | Syncfusion
+description: Explore the Syncfusion Angular Carousel, a slideshow control for images and content with animations, templates, keyboard, and ARIA support.
 platform: ej2-angular
 control: Index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Carousel component
+# About Syncfusion Angular Carousel Component.
 
 The **Carousel** component allows users to display images with content, links, etc., like a slide show. Typical uses of carousels include scrolling news headlines, featured articles on home pages, and image galleries.
 

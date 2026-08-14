@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Uploader component | Syncfusion
+title: Getting Started with Angular Uploader | Syncfusion
 description: Learn how to get started with the Syncfusion Angular Uploader component, including setup, installation, configuration, and file handling.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Uploader component
+# Getting Started with Angular Uploader
 
 The Uploader component allows users to upload files to a server with support for multiple file formats, drag-and-drop, progress tracking, and event handling.
 

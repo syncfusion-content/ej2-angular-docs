@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change caret icon in Angular Drop down button component | Syncfusion
-description: Learn here all about Change caret icon in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: How to change caret icon in Angular Dropdown Menu | Syncfusion
+description: Swap the Angular Dropdown Menu caret icon on popup open and close using beforeOpen and beforeClose events.
 platform: ej2-angular
 control: Change caret icon 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change caret icon in Angular Drop down button component
+# How to change caret icon in Angular Dropdown Menu
 
 Dropdown arrow can be customized on popup open and close. It can be handled in
 [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#beforeopen) and[`beforeClose`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#beforeclose) event.

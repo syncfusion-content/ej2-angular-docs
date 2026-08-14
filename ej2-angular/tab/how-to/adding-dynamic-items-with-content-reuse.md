@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add dynamic Tab with content reuse in Angular | Syncfusion
-description: Learn here all about Adding dynamic items with content reuse in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to add dynamic Tab items with content reuse in Angular Tab | Syncfusion
+description: Add dynamic Angular Tabs that reuse content via TemplateRef and addTab for efficient multi-tab component composition.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adding dynamic items with content reuse in Angular Tab component
+# How to add dynamic Tab items with content reuse in Angular Tab
 
 You can add dynamic tabs by reusing content through Angular **TemplateRef**, which provides an efficient way to manage complex tab content without recreating components. Dynamic tabs can be added programmatically by passing an array of items and index value to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/#addtab) method.
 

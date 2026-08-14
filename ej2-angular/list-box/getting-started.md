@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular ListBox component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular ListBox component, including setup, installation, and basic configuration.
+title: Getting Started with Angular ListBox | Syncfusion
+description: Install and configure the Syncfusion Angular ListBox in an Angular 17+ standalone project to render selectable single or multi-select lists.
 platform: ej2-angular
 control: ListBox
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular ListBox component
+# Getting Started with Angular ListBox
 
 The ListBox component allows users to select one or more items from a predefined list, with support for templates, drag-and-drop, and sorting.
 

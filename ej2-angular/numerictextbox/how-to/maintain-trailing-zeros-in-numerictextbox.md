@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Maintain trailing zeros in NumericTextBox | Syncfusion
-description: Learn here all about Maintain trailing zeros in numerictextbox in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: How to maintain trailing zeros in Angular Numeric Textbox | Syncfusion
+description: Preserve trailing zeros in the Angular Numeric Textbox while focused by handling focus and blur events to reapply the formatted decimal value on focus.
 platform: ej2-angular
 control: Maintain trailing zeros in numerictextbox 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maintain trailing zeros in NumericTextBox
+# How to maintain trailing zeros in Angular Numeric Textbox
 
 By default, trailing zeros are removed when the NumericTextBox receives focus. Use the following approach to preserve trailing zeros during focus.
 

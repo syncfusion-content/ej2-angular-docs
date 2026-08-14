@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Numerictextbox component | Syncfusion
+title: EJ1 API Migration in Angular Numeric Textbox | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Ej1 api migration 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API migration in Angular NumericTextBox component
+# EJ1 API Migration in Angular Numeric Textbox
 
 This article describes the API migration process for the NumericTextBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

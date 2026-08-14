@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Trigger click event of input file in Angular Uploader | Syncfusion
-description: Learn here all about Trigger click event of input file from external button in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to trigger click from external button | Syncfusion
+description: Open the file browser from an external button in the Angular Uploader by wiring its click event to the hidden file input click handler for custom trigger UI.
 platform: ej2-angular
 control: Trigger click event of input file from external button 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Trigger click event of input file in Angular Uploader component
+# How to trigger click from external button
 
 You can trigger the click event of the file input element from an external button using the button's `click` event. In the following example, the file input's click event is triggered when an external button is clicked, allowing users to open the file browser without using the default Uploader button.
 

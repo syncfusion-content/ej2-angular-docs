@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Accordion component | Syncfusion
-description:  Learn how to get started with Syncfusion Angular Accordion component, including setup, installation and basic configuration.
+title: Getting started with Angular Accordion | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Accordion control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Accordion 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Accordion component
+# Getting started with Angular Accordion
 
 The Accordion component allows users to expand and collapse content panels, enabling efficient organization and presentation of information in a limited space.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Icons in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Icons in Angular Breadcrumb | Syncfusion
+description: Add font icons, images, or SVG graphics to Angular Breadcrumb items with the iconCss property and choose left or right placement.
 platform: ej2-angular
-control: Breadcrumb 
+control: Breadcrumb
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons in Angular Breadcrumb component
+# Icons in Angular Breadcrumb
 
 The Breadcrumb component supports icons and images to provide visual representation and enhance navigation context for each item. Icons can be implemented using font icons, custom images, or SVG graphics through the `iconCss` property, with flexible positioning options to suit different design requirements.
 

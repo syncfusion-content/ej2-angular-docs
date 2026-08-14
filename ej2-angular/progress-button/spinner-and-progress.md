@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Spinner and progress in Angular Progress button component | Syncfusion
-description: Learn here all about Spinner and progress in Syncfusion Angular Progress button component of Syncfusion Essential JS 2 and more.
+title: Spinner and progress in Angular Progress Button | Syncfusion
+description: Customize Angular Progress Button spinner position, size, and template with spinSettings properties.
 platform: ej2-angular
 control: Spinner and progress 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD002 MD022 -->
 
-# Spinner and progress in Angular Progress Button component
+# Spinner and progress in Angular Progress Button
 
 ## Change spinner position
 

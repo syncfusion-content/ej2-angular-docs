@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles and appearance in Angular Carousel component | Syncfusion
-description: Learn here all about Styles and appearance in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
+title: Styles and Appearance in Angular Carousel | Syncfusion
+description: Customize Angular Carousel CSS classes for items, indicators, navigators, play and pause button, and partial slide sizing.
 platform: ej2-angular
 control: Styles and appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles and appearance in Angular Carousel component
+# Styles and Appearance in Angular Carousel
 
 To modify the Carousel appearance, you need to override the default CSS of Carousel component. Please find the list of CSS classes and its corresponding section in Carousel component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

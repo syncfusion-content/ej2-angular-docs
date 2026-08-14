@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom context in Angular Sidebar component | Syncfusion
-description: Learn here all about Custom context in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Target in Angular Sidebar | Syncfusion
+description: Render the Angular Sidebar inside a custom HTML container via the target property and control its stacking order with zIndex.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom context in Angular Sidebar component
+# Target in Angular Sidebar
 
 The Sidebar component allows flexible initialization to target any HTML container element alongside the main content of a web page, enabling customized layouts.
 

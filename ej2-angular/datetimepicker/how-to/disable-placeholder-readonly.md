@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disable placeholder readonly in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Disable placeholder readonly in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Disable, placeholder, read-only in Angular DateTime Picker | Syncfusion®
+description: Learn how to configure the Syncfusion Angular DateTime Picker as disabled, read-only, or with a custom placeholder using built-in properties.
 platform: ej2-angular
 control: Disable placeholder readonly 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable placeholder readonly in Angular Datetimepicker component
+# How to disable, placeholder, read-only in Angular DateTime Picker
 
 Property | Purpose
 -----|-----

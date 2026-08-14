@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disabled Items in Angular DropDownList component | Syncfusion
-description: Learn here all about Disabled Items in Syncfusion Angular DropDownList component of Syncfusion Essential JS 2 and more.
+title: Disabled Items in Angular Dropdown List | Syncfusion®
+description: Disable individual Angular Dropdown List items via the disabled field or the disableItem method, and disable the whole control with the enabled property.
 platform: ej2-angular
 control: DropDownList 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled Items in Angular DropDownList Component
+# Disabled Items in Angular Dropdown List
 
 The DropDownList component allows you to disable specific items to prevent them from being selected. The disabled state of each list item can be defined by mapping a field from the data source to the [fields.disabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#fields) property. Once an item is disabled, it cannot be selected as a value for the component.
 

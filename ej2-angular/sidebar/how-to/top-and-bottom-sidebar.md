@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Top and bottom Sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Top and bottom Sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: How to add top and bottom Sidebar in Angular Sidebar | Syncfusion
+description: Place the Angular Sidebar at the top or bottom of the page by setting the position property and toggling it with the toggle method.
 platform: ej2-angular
 control: Sidebar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Top and bottom Sidebar in Angular Sidebar component
+# How to add top and bottom Sidebar in Angular Sidebar
 
 You can initialize the Sidebar at the left and right positions by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property. It will automatically adjust the width of the main content.
 

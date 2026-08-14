@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Items in Angular Timeline component | Syncfusion
-description: Learn here all about Items in Syncfusion Angular Timeline component of Syncfusion Essential JS 2 and more.
+title: Items in Angular Timeline | Syncfusion
+description: Configure Syncfusion Angular Timeline items with content, oppositeContent, custom dot CSS, disabled state, and cssClass styling properties.
 platform: ej2-angular
 control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Items in Angular Timeline component
+# Items in Angular Timeline
 
 The Timeline items are configured using the `<e-item>` tag directive. Each item supports multiple configuration options including `content`, `oppositeContent`, `dotCss`, `disabled`, and `cssClass` properties to build rich, interactive timelines.
 

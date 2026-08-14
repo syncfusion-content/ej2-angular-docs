@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates in Angular MultiSelect component | Syncfusion
+title: Templates in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Templates in Syncfusion Angular MultiSelect component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Templates 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular MultiSelect component
+# Templates in Angular MultiSelect Dropdown
 
 The MultiSelect component provides comprehensive template customization options for list items, group headers, selected values, headers and footers. These templates use the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Template engine to compile and render elements with full data binding support, enabling rich UI customization for various use cases such as displaying complex data structures, creating multi-column layouts, and providing contextual information.
 

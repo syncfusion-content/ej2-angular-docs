@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Check box component | Syncfusion
+title: Getting Started with Angular Checkbox | Syncfusion
 description:  Checkout and learn about Getting started with Angular Check box component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular CheckBox component
+# Getting Started with Angular Checkbox
 
 The CheckBox component is a graphical user interface element that allows users to select one or more options from a set, supporting checked, unchecked, and indeterminate states.
 

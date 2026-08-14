@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remove item in Angular Drop down list component | Syncfusion
-description: Learn here all about Remove item in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to remove an item in Angular Dropdown List | Syncfusion®
+description: Remove an item from the Angular Dropdown List at runtime by splicing it from the underlying data source and rebinding the component.
 platform: ej2-angular
 control: Remove item 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remove item in Angular Drop down list component
+# How to remove an item in Angular Dropdown List
 
 To get started quickly with removing items in angular DropDownList component, you can check the video below.
 

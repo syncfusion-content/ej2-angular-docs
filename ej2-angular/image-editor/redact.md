@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Redact in Angular Image editor component | Syncfusion
-description: Learn here all about Redact in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Redact in Angular Image Editor | Syncfusion
+description: Redact sensitive regions of an image in the Syncfusion Angular Image Editor by applying blur or pixelate effects to protect privacy and meet compliance.
 platform: ej2-angular
 control: Redact
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Redact in the Angular Image Editor component
+# Redact in Angular Image Editor
 
 The redact feature in an Image Editor is a valuable tool that empowers users to conceal sensitive information by applying blur or pixel effects to specific areas of an image. This feature is particularly valuable for protecting privacy and complying with data protection regulations, making it easier to securely share images without compromising sensitive information.
 

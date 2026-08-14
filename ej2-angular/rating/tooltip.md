@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip with Angular Rating component | Syncfusion
-description:  Learn here all about Tooltip with Angular Rating component of Syncfusion Essential JS 2 and more details.
+title: Tooltip in Angular Rating | Syncfusion
+description: Show a hover tooltip on Angular Rating items with showTooltip, customize the content via tooltipTemplate, and style the appearance using the cssClass property.
 platform: ej2-angular
 control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in Angular Rating Component
+# Tooltip in Angular Rating
 
 The rating component supports tooltip to show additional information in rating items by setting the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/rating#showtooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
 

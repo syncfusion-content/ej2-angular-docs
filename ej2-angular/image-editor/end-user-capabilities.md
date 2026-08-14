@@ -1,7 +1,7 @@
 ---
 layout: post
-title: End-user capabilities in Angular Image Editor component | Syncfusion
-description: Learn here all about End User Capabilities in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: End User Capabilities in Angular Image Editor | Syncfusion
+description: Discover end-user actions in the Syncfusion Angular Image Editor, including opening, zooming, panning, cropping, annotating, filtering, and exporting images.
 platform: ej2-angular
 control: End-user capabilities 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# End-user capabilities in the Image Editor component
+# End User Capabilities in Angular Image Editor
 
 The following operations are available for end-users and the same is explained briefly in these sections.
 

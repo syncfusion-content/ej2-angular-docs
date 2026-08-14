@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the calendar day header in Angular Calendar | Syncfusion
-description: Learn here all about Customize the calendar day header in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: How to customize the day header in Angular Calendar | Syncfusion®
+description: Learn how to customize the Calendar day header format in the Syncfusion Angular Calendar using the dayHeaderFormat property.
 platform: ej2-angular
 control: Customize the calendar day header 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the calendar day header in Angular Calendar component
+# How to customize the day header in Angular Calendar
 
 You can change the format of the day that to be displayed in header using [`dayHeaderFormat`](https://ej2.syncfusion.com/angular/documentation/api/calendar#dayheaderformat) property. By default, the format is `Short`.
 

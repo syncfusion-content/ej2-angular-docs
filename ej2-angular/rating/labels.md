@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Labels with Angular Rating component | Syncfusion
-description:  Learn here all about Labels with Angular Rating component of Syncfusion Essential JS 2 and more details.
+title: Labels in Angular Rating | Syncfusion
+description: Display the current Angular Rating value with showLabel, position it top, bottom, left, or right, or render custom HTML using the labelTemplate directive.
 platform: ej2-angular
 control: Labels
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Labels in Angular Rating Component
+# Labels in Angular Rating
 
 You can use the [`showLabel`](https://ej2.syncfusion.com/angular/documentation/api/rating#showlabel) property to display a label that shows the current value of the rating. When the `showLabel` property is set to `true`, a label will be displayed.
 

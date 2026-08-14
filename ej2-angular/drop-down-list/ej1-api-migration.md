@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API Migration in Angular DropDownList Component | Syncfusion
-description: Learn about the API migration from Essential JS 1 to Essential JS 2 for the Syncfusion Angular DropDownList component.
+title: Migrate from Essential JS 1 in Angular Dropdown List | Syncfusion®
+description: Learn about the API migration from Essential JS 1 to Essential JS 2 for the Syncfusion® Angular DropDownList component.
 platform: ej2-angular
 control: DropDownList
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API Migration in Angular DropDownList Component
+# Migrate from Essential JS 1 in Angular Dropdown List
 
 This article describes the API migration process of the DropDownList component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

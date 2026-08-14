@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Label and size in Angular Radio button component | Syncfusion
-description: Learn here all about Label and size in Syncfusion Angular Radio button component of Syncfusion Essential JS 2 and more.
+title: Label and size in Angular Radio Button | Syncfusion
+description: Set Angular Radio Button labels and choose from small, medium, or large sizes with the label and cssClass properties.
 platform: ej2-angular
 control: Label and size 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Label and size in Angular Radio button component
+# Label and size in Angular Radio Button
 
 This section explains the different sizes and labels.
 

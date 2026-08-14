@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events with Angular Rating component | Syncfusion
-description:  Learn here all about Events with Angular Rating component of Syncfusion Essential JS 2 and more details.
+title: Events in Angular Rating | Syncfusion
+description: Handle Angular Rating interactions with beforeItemRender, created, onItemHover, and valueChanged events to customize item rendering and capture user input.
 platform: ej2-angular
 control: Events
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular Rating Component
+# Events in Angular Rating
 
 The Rating component provides events that fire during user interactions and state changes. The following events are available to customize component behavior.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Reverse in Angular Timeline component | Syncfusion
-description: Learn here all about Reverse in Syncfusion Angular Timeline component of Syncfusion Essential JS 2 and more.
+title: Reverse Timeline in Angular Timeline | Syncfusion
+description: Show Syncfusion Angular Timeline items from newest to oldest by setting the reverse property to true for reverse feeds and activity streams.
 platform: ej2-angular
 control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reverse in Angular Timeline component
+# Reverse Timeline in Angular Timeline
 
 The Timeline component allows you to display items in reverse order by setting the [reverse](../api/timeline#reverse) property to `true`. This boolean property reverses the sequence of timeline items, making the most recent events appear first. This feature is especially useful for reverse timelines, activity feeds, news timelines, or any scenario where the latest information should be displayed.
 

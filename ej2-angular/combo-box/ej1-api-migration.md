@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Combo box component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: Migrate from Essential JS 1 in Angular ComboBox | Syncfusion®
+description: Migrate Angular ComboBox code from Essential JS 1 to JS 2 with a property-by-property API mapping for data binding, filtering, templates, and events.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Combo box component
+# Migrate from Essential JS 1 in Angular ComboBox
 
 This article describes the API migration process of ComboBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

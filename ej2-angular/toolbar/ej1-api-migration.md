@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API migration in Angular Toolbar component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in Angular Toolbar | Syncfusion
+description: Migrate the Angular Toolbar from EJ1 to EJ2 with mapped properties, methods, and events including items, overflow, and enableItems.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API migration in Angular Toolbar component
+# EJ1 API Migration in Angular Toolbar
 
 This article describes the API migration process of Toolbar component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

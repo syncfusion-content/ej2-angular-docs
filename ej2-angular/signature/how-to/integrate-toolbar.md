@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrate toolbar in Angular Signature component | Syncfusion
-description: Learn here all about Integrate toolbar in Syncfusion Angular Signature component of Syncfusion Essential JS 2 and more.
+title: How to integrate toolbar with Angular Signature | Syncfusion
+description: Integrate the Angular Toolbar with the Signature component to provide undo, redo, and clear actions with reactive button states.
 platform: ej2-angular
 control: Integrate toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate toolbar in Angular Signature component
+# How to integrate toolbar with Angular Signature
 
 Integrate a Toolbar with the Signature component to provide undo, redo, and clear functionality. Handle toolbar actions using the `change` event and use the [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canundo), [`canRedo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canredo), and [`isEmpty`](https://ej2.syncfusion.com/angular/documentation/api/signature/#isempty) methods to manage button states.
 

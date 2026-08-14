@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nested Accordion in Angular | Syncfusion
-description: Learn here all about Set the nested accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: How to set the nested Accordion in Angular Accordion | Syncfusion
+description: Build nested Accordions in Angular by rendering a child Accordion inside the parent item content using ng-template for multi-level sections.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the nested accordion in Angular Accordion component
+# How to set the nested Accordion in Angular Accordion
 
 Nested Accordions allow hierarchical organization of content within the Syncfusion Angular Accordion component, enabling multi-level expandable sections for applications like navigation menus, FAQs, or data trees. Render a child Accordion inside the content area of a parent Accordion item using Angular’s `ng-template`. This approach integrates the nested Accordion with full functionality, including expand/collapse behavior.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Input Types with Angular OTP Input component | Syncfusion
-description:  Learn here all about Input Types with Angular OTP Input component of Syncfusion Essential JS 2 and more details.
+title: Input Types in Angular OTP Input | Syncfusion
+description: Configure the Angular OTP Input as number, text, or password type, and set initial values for secure one-time password entry scenarios.
 platform: ej2-angular
 control: OTP Input
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Input Types in Angular OTP Input component
+# Input Types in Angular OTP Input
 
 ## Types
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Config in Angular Toast component | Syncfusion
-description: Learn here all about Config in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Config in Angular Toast | Syncfusion
+description: Configure Syncfusion Angular Toast title and content, custom target, close button, progress bar, newestOnTop ordering, and width and height.
 platform: ej2-angular
 control: Config 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Config in Angular Toast component
+# Config in Angular Toast
 
 This section explains on customizing the Toast appearance using built-in APIs.
 

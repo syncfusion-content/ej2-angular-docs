@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Overflow in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Overflow in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Overflow in Angular Breadcrumb | Syncfusion
+description: Handle long Angular Breadcrumb paths with overflow modes like Collapsed, Menu, Wrap, Scroll, Hidden, and None via maxItems.
 platform: ej2-angular
-control: Breadcrumb 
+control: Breadcrumb
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overflow in Angular Breadcrumb component
+# Overflow in Angular Breadcrumb
 
 ## Overflow Mode
 

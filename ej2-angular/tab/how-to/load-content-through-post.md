@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load content through POST in Angular Tab component | Syncfusion
-description: Learn here all about Load content through POST in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to load content through Ajax in Angular Tab | Syncfusion
+description: Load Angular Tab content through HTTP POST requests using Syncfusion's Ajax utility from ej2-base for external data.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load content through POST in Angular Tab component
+# How to load content through Ajax in Angular Tab
 
 The Tab component supports loading external content through Syncfusion's `Ajax` utility using HTTP POST requests. This approach is useful when you need to send data to the server or when the content requires authentication parameters. Refer to the following steps.
 

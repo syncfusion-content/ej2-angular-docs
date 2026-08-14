@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Checkbox in Angular Dropdown Tree component | Syncfusion
-description: Learn here all about Checkbox in Syncfusion Angular Dropdown Tree component of Syncfusion Essential JS 2 and more.
+title: Checkbox in Angular Dropdown Tree | Syncfusion
+description: Enable multi-selection in the Angular Dropdown Tree with showCheckBox, plus autoCheck for hierarchical parent-child sync and a Select All option.
 platform: ej2-angular
 control: Dropdown Tree
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox in Angular Dropdown Tree component
+# Checkbox in Angular Dropdown Tree
 
 The Dropdown Tree component allows you to check more than one item from the tree without affecting the UI's appearance by enabling the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#showcheckbox) property. When this property is enabled, checkbox appears before each item text in the popup, enabling multi-selection functionality where users can select multiple tree nodes simultaneously.
 

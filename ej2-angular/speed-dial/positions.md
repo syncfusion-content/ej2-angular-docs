@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Positions in Angular Speed dial component | Syncfusion
-description: Learn here all about Positions in Syncfusion Angular Speed dial component of Syncfusion Essential JS 2 and more.
+title: Positions in Angular Speed Dial | Syncfusion
+description: Position Angular Speed Dial on a target element or the viewport using preset values like TopLeft and BottomRight.
 platform: ej2-angular
 control: Positions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Positions in Angular Speed dial component
+# Positions in Angular Speed Dial
 
 The Speed dial control can be positioned anywhere on the [`target`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#target) using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#position) property. If the `target` is not defined, then Speed Dial is positioned based on the browser viewport.
 

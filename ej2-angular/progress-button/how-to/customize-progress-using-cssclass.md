@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize progress using cssclass in Angular Progress button component | Syncfusion
-description: Learn here all about Customize progress using cssclass in Syncfusion Angular Progress button component of Syncfusion Essential JS 2 and more.
+title: Customize progress using cssClass in Angular Progress Button | Syncfusion
+description: Customize Angular Progress Button orientation and progress position by adding e-vertical, e-progress-top, or custom CSS classes.
 platform: ej2-angular
 control: Customize progress using cssclass 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize progress using cssclass in Angular Progress button component
+# How to customize progress using cssClass in Angular Progress Button
 
 You can customize the background filler UI using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#cssClass) property.
 

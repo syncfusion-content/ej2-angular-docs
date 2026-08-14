@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create right to left splitbutton in Angular Split button component | Syncfusion
-description: Learn here all about Create right to left splitbutton in Syncfusion Angular Split button component of Syncfusion Essential JS 2 and more.
+title: How to create right-to-left splitbutton in Angular Split Button | Syncfusion
+description: Enable right-to-left rendering in Angular Split Button by setting the enableRtl property to true.
 platform: ej2-angular
 control: Create right to left splitbutton 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create right to left splitbutton in Angular Split button component
+# How to create right-to-left splitbutton in Angular Split Button
 
 SplitButton component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/split-button#enablertl) as `true`.
 

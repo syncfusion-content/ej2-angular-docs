@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render a dialog without header in Angular Dialog | Syncfusion
-description: Learn here all about Render a dialog without header in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to render a Dialog without header in Angular Dialog | Syncfusion
+description: Render a Syncfusion Angular Dialog without a header by setting the header property to an empty string or null to hide the title bar.
 platform: ej2-angular
 control: Render a dialog without header 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render a dialog without header in Angular Dialog component
+# How to render a Dialog without header in Angular Dialog
 
 Render the dialog without a header by setting the [header](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#header) property to an empty string or `null`. By default, the dialog renders without a header.
 

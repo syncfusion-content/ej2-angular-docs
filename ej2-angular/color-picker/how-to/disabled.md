@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disabled in Angular Color picker component | Syncfusion
-description: Learn here all about Disabled in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: How to disable Color Picker in Angular Color Picker | Syncfusion
+description: Disable the Syncfusion Angular Color Picker by setting the disabled property to true so users cannot open the popup or change the value.
 platform: ej2-angular
 control: Disabled 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled in Angular Color picker component
+# How to disable Color Picker in Angular Color Picker
 
 To disable the ColorPicker, set the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#disabled) property to `true`. When disabled, the ColorPicker cannot be opened and is not interactive.
 

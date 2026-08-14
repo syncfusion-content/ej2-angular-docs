@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style appearance in Angular Timepicker component | Syncfusion
-description: Learn here all about Style appearance in Syncfusion Angular Timepicker component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular TimePicker | Syncfusion®
+description: Learn how to style and customize the appearance of the Syncfusion Angular TimePicker using CSS for backgrounds, text, and the popup list.
 platform: ej2-angular
 control: Style appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in Angular Timepicker component
+# Style and Appearance in Angular TimePicker
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

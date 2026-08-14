@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Combo box component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular ComboBox | Syncfusion®
+description: Make Angular ComboBox accessible with WAI-ARIA combobox and option roles, full keyboard navigation, and WCAG 2.2, ADA, and Section 508 support.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Combo box component
+# Accessibility in Angular ComboBox
 
 The ComboBox component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Design in Angular AppBar component | Syncfusion
-description: Learn here all about Design in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
+title: Design in Angular AppBar | Syncfusion
+description: Compose the Angular AppBar layout with Spacer, Separator, and integrated Menu, Button, SideBar, and Media Query components.
 platform: ej2-angular
 control: AppBar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Design in Angular Appbar component
+# Design in Angular AppBar
 
 ## Spacer
 

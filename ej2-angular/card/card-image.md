@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Card image in Angular Card component | Syncfusion
-description: Learn here all about Card image in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
+title: Image and Divider in Angular Card | Syncfusion
+description: Add images, captions, and dividers to the Angular Card component using the e-card-image, e-card-title, and e-card-separator CSS classes.
 platform: ej2-angular
 control: Card
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Card image in Angular Card component
+# Image and Divider in Angular Card
 
 ## Images
 

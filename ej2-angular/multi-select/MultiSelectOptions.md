@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MultiSelect Options in Angular MultiSelect component | Syncfusion
+title: MultiSelectOptions in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about what are options available in Syncfusion Angular MultiSelect component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiSelect Options
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# MultiSelect Options in Angular MultiSelect component
+# MultiSelectOptions in Angular MultiSelect Dropdown
 
 The MultiSelect component provides various configuration options to customize its behavior and appearance.
 

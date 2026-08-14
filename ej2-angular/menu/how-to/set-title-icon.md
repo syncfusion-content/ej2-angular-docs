@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set title icon in Angular Menu component | Syncfusion
-description: Learn here all about Set title icon in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to set title for Menu in Angular Menu Bar | Syncfusion
+description: Set tooltips for icon-only Angular Menu Bar items by assigning title attributes in the beforeItemRender event.
 platform: ej2-angular
 control: Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set title icon in Angular Menu component
+# How to set title for Menu in Angular Menu Bar
 
 You can customize the title for icon-based menu items in the Syncfusion Angular Menu component by using the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeitemrender) event.
 

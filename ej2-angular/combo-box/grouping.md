@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping in Angular Combo box component | Syncfusion
-description: Learn here all about Grouping in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: Grouping in Angular ComboBox | Syncfusion®
+description: Group Angular ComboBox items by category using the groupBy field, with inline and fixed headers that update dynamically on scroll.
 platform: ej2-angular
 control: Grouping 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in Angular Combo box component
+# Grouping in Angular ComboBox
 
 The ComboBox supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 

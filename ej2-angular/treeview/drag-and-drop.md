@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in Angular TreeView component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in Angular Tree View | Syncfusion
+description: Reorder Angular Tree View nodes by drag and drop with allowDragAndDrop, plus multi-node drag using allowMultiSelection.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in Angular TreeView component
+# Drag and Drop in Angular Tree View
 
 The TreeView component enables drag and drop functionality for nodes when the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) property is set to **true**. This feature allows users to reorganize the hierarchical structure by dragging nodes and dropping them at different positions within the TreeView. Nodes can be dragged and dropped at all levels of the same TreeView, providing flexible data manipulation capabilities.
 

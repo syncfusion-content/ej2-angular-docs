@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Size and color in Angular AppBar component | Syncfusion
-description: Learn here all about Size and color in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
+title: Size and Color in Angular AppBar | Syncfusion
+description: Adjust the Angular AppBar height and palette with the mode and colorMode properties, including Regular, Prominent, Dense, Light, Dark, and Primary.
 platform: ej2-angular
 control: AppBar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Size and color in Angular AppBar component
+# Size and Color in Angular AppBar
 
 The Angular AppBar component provides flexible sizing and color customization options through the `mode` and `colorMode` properties. These properties allow developers to create AppBars that fit various design requirements and application contexts.
 

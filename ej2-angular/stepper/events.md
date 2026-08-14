@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Angular Stepper component | Syncfusion
-description:  Learn here all about Events in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Events in Angular Stepper | Syncfusion
+description: Handle Angular Stepper lifecycle events including created, stepChanged, stepChanging, stepClick, and beforeStepRender.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular Stepper component
+# Events in Angular Stepper
 
 This section describes the Stepper events that will be triggered when an appropriate actions are performed. The following events are available in the Stepper component.
 

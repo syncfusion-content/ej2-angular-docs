@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Signature component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Signature component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Signature | Syncfusion
+description: The Angular Signature meets WCAG 2.2, Section 508, and ADA standards with full keyboard navigation, including Ctrl+Z, Ctrl+Y, Ctrl+S.
 control: Accessibility 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Signature component
+# Accessibility in Angular Signature
 
 The Signature component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
 

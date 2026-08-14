@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Tooltip component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Tooltip | Syncfusion
+description: Learn how the Syncfusion Angular Tooltip meets WCAG 2.2 and Section 508 with role=tooltip, aria-describedby, Escape support, and Tab focus behavior.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Tooltip component
+# Accessibility in Angular Tooltip
 
 The Tooltip component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) used to evaluate accessibility.
 

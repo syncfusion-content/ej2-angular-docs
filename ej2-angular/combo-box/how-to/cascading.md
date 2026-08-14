@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cascading in Angular Combo box component | Syncfusion
-description: Learn here all about Cascading in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: How to configure cascading in Angular ComboBox | Syncfusion®
+description: Build cascading Angular ComboBox dropdowns where the value of one ComboBox drives the data loaded into the next via the change event.
 platform: ej2-angular
 control: Cascading 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cascading in Angular Combo box component
+# How to configure cascading in Angular ComboBox
 
 The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends upon  another's value. This can be configured by using the [change](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#change) event of the parent ComboBox. Within that change event handler, data has to be loaded to the child ComboBox based on the selected value of the parent ComboBox.
 

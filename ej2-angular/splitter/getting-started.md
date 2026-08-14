@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with Angular Splitter component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Splitter component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Splitter | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Splitter control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Getting started with Angular Splitter component
+# Getting Started with Angular Splitter
 
 The Splitter component divides a container into multiple resizable panes, enabling users to adjust the available space between sections dynamically. It supports both horizontal and vertical layouts through the orientation property.
 

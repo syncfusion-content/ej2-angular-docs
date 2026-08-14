@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Setting dimension in Angular Tooltip component | Syncfusion
-description: Learn here all about Setting dimension in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Setting dimension in Angular Tooltip | Syncfusion
+description: Set Syncfusion Angular Tooltip width and height in pixels or auto, and enable scroll mode when fixed-height content overflows the popup.
 platform: ej2-angular
 control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting dimension in Angular Tooltip component
+# Setting dimension in Angular Tooltip
 
 ## Height and width
 

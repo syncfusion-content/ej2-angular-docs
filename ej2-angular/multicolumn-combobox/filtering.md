@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in Angular MultiColumn ComboBox component | Syncfusion
+title: Filtering in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Filtering in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular MultiColumn ComboBox component
+# Filtering in Angular MultiColumn ComboBox
 
 The MultiColumn ComboBox has built-in support to filter the data items, which allows users to filter the list of items based on their input. The filter operation starts as soon as you start typing characters in the component. The filtering can be disabled by setting the when [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#allowfiltering) to `false`. By default the value is `true`.
 

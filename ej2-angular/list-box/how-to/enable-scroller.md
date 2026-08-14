@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable scroller in Angular List box component | Syncfusion
-description: Learn here all about Enable scroller in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: How to enable scroller in Angular ListBox | Syncfusion
+description: Enable scrolling in the Angular ListBox by setting a fixed pixel height on the component, which constrains the popup to the specified value.
 platform: ej2-angular
 control: Enable scroller 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable scroller in Angular List box component
+# How to enable scroller in Angular ListBox
 
 The ListBox supports scrolling and it can be achieved by restricting the height of the list box using [`height`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#height) property.
 

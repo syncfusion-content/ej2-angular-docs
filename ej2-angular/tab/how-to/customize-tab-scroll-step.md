@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize tab scroll step in Angular Tab component | Syncfusion
-description: Learn here all about Customize tab scroll step in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to customize tab scroll step in Angular Tab | Syncfusion
+description: Set the Angular Tab scrollStep property to control how far header items scroll when clicking the left or right navigation icons.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize tab scroll step in Angular Tab component
+# How to customize tab scroll step in Angular Tab
 
 The Tab component supports customizing the scrolling distance when you click the left and right side navigation icons. You can customize the [`scrollStep`](https://ej2.syncfusion.com/angular/documentation/api/tab/#scrollstep) property for scrolling distance. Refer to the following code example.
 

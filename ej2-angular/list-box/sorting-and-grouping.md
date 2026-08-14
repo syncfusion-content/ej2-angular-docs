@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting and grouping in Angular List box component | Syncfusion
-description: Learn here all about Sorting and grouping in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: Sorting and Grouping in Angular ListBox | Syncfusion
+description: Sort Angular ListBox items in ascending, descending, or no order via sortOrder, and group items by category using the groupBy field mapping.
 platform: ej2-angular
 control: Sorting and grouping 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting and grouping in Angular List box component
+# Sorting and Grouping in Angular ListBox
 
 ## Sorting
 

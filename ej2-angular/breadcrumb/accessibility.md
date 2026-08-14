@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
-control: Breadcrumb 
+title: Accessibility in Angular Breadcrumb | Syncfusion
+description: Use WAI-ARIA labels, keyboard navigation, and Tab or Enter interactions in the Angular Breadcrumb to meet accessibility standards.
+control: Breadcrumb
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Breadcrumb component
+# Accessibility in Angular Breadcrumb
 
 The Breadcrumb component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

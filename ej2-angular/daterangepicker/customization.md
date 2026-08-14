@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Daterangepicker component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular DateRangePicker | Syncfusion®
+description: Learn how to customize the Syncfusion Angular DateRangePicker appearance using CSS, the renderDayCell event, and highlight or disable dates.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Daterangepicker component
+# Customization in Angular DateRangePicker
 
 DateRangePicker makes available for the UI customization which can be achieved with properties, events that are available with this component.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Calendar component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular Calendar | Syncfusion®
+description: Learn how to customize the Syncfusion Angular Calendar by using the renderDayCell event to highlight, disable, and style specific dates.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Calendar component
+# Customization in Angular Calendar
 
 Calendar allows you to customize the entire appearance by using the custom CSS and [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderdaycelleventargs#renderdaycelleventargs) event to customize the each day cell.
 

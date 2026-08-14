@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Timeline component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular Timeline component, including setup, installation and basic configuration.
+title: Getting Started with Angular Timeline | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Timeline control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Timeline component
+# Getting Started with Angular Timeline
 
 The Timeline component displays a sequence of events, tasks, or milestones in chronological order, helping users visualize workflows, progress, and historical information.
 

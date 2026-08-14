@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Message component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Message component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular Message | Syncfusion
+description: Customize Syncfusion Angular Message content alignment, rounded or square appearance, and use predefined CSS classes for script-free rendering.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Message component
+# Customization in Angular Message
 
 The Message component allows the user to customize the content display positions and appearance. This section explains the details about changing the content alignments and border styles for messages.
 

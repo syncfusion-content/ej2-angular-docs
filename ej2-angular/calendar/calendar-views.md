@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calendar views in Angular Calendar component | Syncfusion
-description: Learn here all about Calendar views in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: Calendar Views in Angular Calendar | Syncfusion®
+description: Learn how to switch between month, year, and decade views in the Syncfusion Angular Calendar using the start and depth properties.
 platform: ej2-angular
 control: Calendar views 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Calendar views in Angular Calendar component
+# Calendar Views in Angular Calendar
 
 The Calendar has the following pre-defined views that provides a flexible way to navigate back and forth to select the date.
 Use the [`start`](https://ej2.syncfusion.com/angular/documentation/api/calendar#start) property to change the default view of the Calendar.

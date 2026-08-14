@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Date time masking in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Date time masking in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Mask Support in Angular DateTime Picker | Syncfusion®
+description: Learn how to enable mask support in the Syncfusion Angular DateTime Picker to enforce valid date and time input and improve form usability.
 platform: ej2-angular
 control: Date time masking 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date time masking in Angular Datetimepicker component
+# Mask Support in Angular DateTime Picker
 
 The DateTimePicker has built-in support to masking the date value, when `enableMask` property set as `true`.
 

@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Integrate treeview in Angular Accordion component | Syncfusion
-description: Learn here all about Integrate treeview inside the accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: How to integrate TreeView in Angular Accordion | Syncfusion
+description: Render a TreeView inside an Angular Accordion item by initializing the TreeView in the expanding event for nested navigation.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# TreeView Integration in Angular Accordion Component
+# How to integrate TreeView inside the Accordion in Angular Accordion
 
 The Syncfusion Angular Accordion component supports integrating other Essential<sup style="font-size:70%">&reg;</sup> JS 2 components, such as TreeView, within its items using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#content) property. This enables hierarchical navigation structures, ideal for file explorers, nested menus, or organizational charts within expandable panels.
 

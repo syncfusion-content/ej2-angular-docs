@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render palette alone in Angular Color picker component | Syncfusion
-description: Learn here all about Render palette alone in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: How to render palette alone in Angular Color Picker | Syncfusion
+description: Render only the Palette area in the Syncfusion Angular Color Picker by setting mode to Palette and modeSwitcher plus showButtons to false.
 platform: ej2-angular
 control: Render palette alone 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render palette alone in Angular Color picker component
+# How to render palette alone in Angular Color Picker
 
 To render only the Palette area in the ColorPicker, set the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#mode) property to `Palette` and the [`modeSwitcher`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#modeswitcher) property to `false`.
 

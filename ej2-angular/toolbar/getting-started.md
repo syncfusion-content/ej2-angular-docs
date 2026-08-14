@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Toolbar component | Syncfusion
-description:  Learn how to get started with the Syncfusion Angular Toolbar component, including setup, installation and basic configuration.
+title: Getting Started with Angular Toolbar | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Toolbar control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Toolbar component
+# Getting Started with Angular Toolbar
 
 The Toolbar component provides a container for grouping and organizing actions, commands, and controls, enabling users to quickly access frequently used tools and perform tasks efficiently within the application.
 

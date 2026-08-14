@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Angular MultiSelect DropDown component | Syncfusion
+title: Localization in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Localization in Syncfusion Angular MultiSelect DropDown component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Localization 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular MultiSelect DropDown component
+# Localization in Angular MultiSelect Dropdown
 
 The Localization library allows you to localize static text content of the MultiSelect DropDown component templates according to the culture currently assigned to the component. This enables the component to display appropriate text messages in different languages based on the user's locale preferences.
 

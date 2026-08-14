@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types and styles in Angular Button component | Syncfusion
-description: Learn here all about Types and styles in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
+title: Types and Styles in Angular Button | Syncfusion
+description: Apply predefined styles like primary, success, and danger, plus flat and outline types, in Angular Button with cssClass.
 platform: ej2-angular
 control: Types and styles 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types and styles in Angular Button component
+# Types and Styles in Angular Button
 
 This section explains the different styles and types of Buttons.
 

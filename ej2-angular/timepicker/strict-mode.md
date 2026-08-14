@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Strict mode in Angular Timepicker component | Syncfusion
-description: Learn here all about Strict mode in Syncfusion Angular Timepicker component of Syncfusion Essential JS 2 and more.
+title: Strict Mode in Angular TimePicker | Syncfusion®
+description: Learn how to enable strict mode in the Syncfusion Angular TimePicker so only valid times matching the format are accepted in the input.
 platform: ej2-angular
 control: Strict mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Strict mode in Angular Timepicker component
+# Strict Mode in Angular TimePicker
 
 The [`strictMode`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#strictmode) is an act that allows you to enter only valid time value within the specified min/max range in the textbox. If the time value is invalid, the component value sets to the previous value.
 If the time value is out of range, the component sets the time value to min/max value.

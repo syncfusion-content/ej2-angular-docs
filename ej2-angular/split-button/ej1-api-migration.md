@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Split button component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Split button component of Syncfusion Essential JS 2 and more.
+title: Ej1 Api Migration in Angular Split Button | Syncfusion
+description: Compare Essential JS 1 and Angular Split Button APIs for content, items, icons, disabled state, and RTL migration.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Split button component
+# Ej1 Api Migration in Angular Split Button
 
 This article describes the API migration process of SplitButton component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

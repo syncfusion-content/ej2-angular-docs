@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip open or display modes in Angular Tooltip component | Syncfusion
-description: Learn here all about Tooltip open or display modes in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: How to set Tooltip open or display modes in Angular Tooltip | Syncfusion
+description: Configure the Syncfusion Angular Tooltip to open on Auto, Hover, Click, Focus, or Custom triggers using the openMode property.
 platform: ej2-angular
 control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip open or display modes in Angular Tooltip component
+# How to set Tooltip open or display modes in Angular Tooltip
 
 The `openMode` property of the Tooltip defines the trigger action: hovering, focusing, or clicking on a target. The Tooltip component supports the following open modes:
 

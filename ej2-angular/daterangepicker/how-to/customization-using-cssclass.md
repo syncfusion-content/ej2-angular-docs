@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization using cssclass in Angular Daterangepicker component | Syncfusion
-description: Learn here all about Customization using cssclass in Syncfusion Angular Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Customize using CSSClass in Angular DateRangePicker | Syncfusion®
+description: Learn how to apply a custom CSS class to the Syncfusion Angular DateRangePicker to change its visual appearance for specific use cases.
 platform: ej2-angular
 control: Customization using cssclass 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization using cssclass in Angular Daterangepicker component
+# How to customize using CSSClass in Angular DateRangePicker
 
 To customize UI, you can make use of [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#cssclass) which will be added to DateRangePicker component as the root CSS class.
 With this CSS class, you can override existing styles of DateRangePicker.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles in Angular Skeleton component | Syncfusion
-description: Learn here all about Styles in Syncfusion Angular Skeleton component of Syncfusion Essential JS 2 and more.
+title: Styles in Angular Skeleton | Syncfusion
+description: Customize Syncfusion Angular Skeleton appearance with cssClass for wave color, background, width, and height, or toggle visibility.
 platform: ej2-angular
 control: Styles 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles in Angular Skeleton component
+# Styles in Angular Skeleton
 
 You can customize skeleton control in the below ways.
 

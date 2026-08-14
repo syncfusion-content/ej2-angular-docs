@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create a block button in Angular Button component | Syncfusion
-description: Learn here all about Create a block button in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
+title: How to create a block button in Angular Button | Syncfusion
+description: Make an Angular Button span the full width of its container element by applying the e-block CSS class.
 platform: ej2-angular
 control: Create a block button 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create a block button in Angular Button component
+# How to create a block button in Angular Button
 
 You can customize a button into a block button that will span the entire width of its parent element.
 To create a block button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property as `e-block`.

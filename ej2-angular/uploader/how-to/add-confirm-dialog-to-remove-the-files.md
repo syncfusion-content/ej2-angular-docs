@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add confirm dialog to remove files in Angular Uploader | Syncfusion
-description: Learn here all about Add confirm dialog to remove the files in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to add a confirm dialog in Angular Uploader | Syncfusion
+description: Show a confirmation dialog before removing files in the Angular Uploader by integrating the Syncfusion Dialog component into the remove file flow.
 platform: ej2-angular
 control: Add confirm dialog to remove the files 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add Confirm Dialog to Remove Files in Angular Uploader Component
+# How to add a confirm dialog in Angular Uploader
 
 Customize the uploader to show a confirmation dialog before removing files. The following example uses the EJ2 Dialog component as a confirm dialog.
 

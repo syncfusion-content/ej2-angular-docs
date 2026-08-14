@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remove parent checkbox in Angular TreeView component | Syncfusion
-description: Learn here all about Remove parent checkbox in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: How to remove checkbox of parent node in Angular Tree View | Syncfusion
+description: Hide Angular Tree View parent node checkboxes via CSS while keeping leaf-node checkboxes for a cleaner selection interface.
 platform: ej2-angular
 control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remove parent checkbox in Angular TreeView component
+# How to remove checkbox of parent node in Angular Tree View
 
 By enabling the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property, you can render checkbox before each node of TreeView. However, certain application scenarios require checkboxes to appear only for leaf nodes, while parent nodes should remain without checkboxes for a cleaner interface or specific workflow requirements. In such cases, you can selectively hide parent node checkboxes through CSS customization while maintaining the underlying checkbox functionality.
 {% tabs %}

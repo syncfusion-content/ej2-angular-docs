@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Angular MultiColumn ComboBox component | Syncfusion
+title: Localization in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Localization in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular MultiColumn ComboBox component
+# Localization in Angular MultiColumn ComboBox
 
 The Localization library allows you to localize static text content of the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/multiColumnComboBoxModel/#norecordstemplate) property according to the culture currently assigned to the MultiColumn ComboBox.
 

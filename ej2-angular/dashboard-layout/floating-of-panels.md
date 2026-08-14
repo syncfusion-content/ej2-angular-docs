@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Floating of panels in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Floating of panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: Floating Panels in Angular Dashboard Layout | Syncfusion
+description: Enable the floating behavior in Syncfusion Angular Dashboard Layout so panels auto-shift upward to fill empty cells and eliminate grid gaps.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Floating of panels in Angular Dashboard layout component
+# Floating Panels in Angular Dashboard Layout
 
 The floating functionality allows panels to move upward automatically to fill empty spaces left by panels in previous rows, maximizing space utilization within the dashboard. When enabled, panels dynamically reposition themselves to eliminate gaps and create a compact layout arrangement.
 

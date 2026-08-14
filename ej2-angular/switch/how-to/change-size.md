@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change size in Angular Switch component | Syncfusion
-description: Learn here all about Change size in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to change size in Angular Toggle Switch Button | Syncfusion
+description: Change Angular Toggle Switch Button size to small by applying the e-small CSS class through the cssClass property.
 platform: ej2-angular
 control: Change size 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change size in Angular Switch component
+# How to change size in Angular Toggle Switch Button
 
 The different Switch sizes available are default and small. To reduce the size of default Switch to small, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/switch#cssclass) property to `e-small`.
 

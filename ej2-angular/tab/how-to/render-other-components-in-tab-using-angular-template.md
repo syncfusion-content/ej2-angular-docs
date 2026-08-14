@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render components in Angular Tab using templates | Syncfusion
-description: Learn here all about Render other components in tab using angular template in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Render other components in Tab using Angular template in Angular Tab | Syncfusion
+description: Render other UI components inside an Angular Tab item using ng-template with the content attribute for integrated component functionality.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render components in Tab using Angular templates
+# How to render other components in Tab using Angular template in Angular Tab
 
 You can render other components inside Tab using Angular **ng-template**. This approach enables you to add content as other components directly with all their functionalities integrated into the Tab. The `ng-template` must be used inside each `e-tabitem` tag with the `#content` attribute, which is mandatory to render content. Then use the `ng-template` tag with a select attribute containing the id or class name for mapping the required content.
 

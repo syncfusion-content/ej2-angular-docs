@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize selected tab styles in Angular Tab component | Syncfusion
-description: Learn here all about Customize selected tab styles in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to customize selected tab styles in Angular Tab | Syncfusion
+description: Customize the selected Angular Tab header and active item styles with custom CSS classes added via the cssClass property.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize selected tab styles in Angular Tab component
+# How to customize selected tab styles in Angular Tab
 
 You can customize the Tab style by overriding its header and active tab CSS classes. Define HTML string for adding animation and customizing the Tab header and pass it to [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#text) property. Now you can override the style using custom CSS classes added to the Tab elements.
 

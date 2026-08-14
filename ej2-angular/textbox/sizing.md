@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sizing in Angular TextBox component | Syncfusion
-description: Learn here all about Sizing in Syncfusion Angular TextBox component of Syncfusion Essential JS 2 and more.
+title: Sizing in Angular TextBox | Syncfusion
+description: Render the Syncfusion Angular TextBox in small, normal, or large sizes using the e-small and e-bigger CSS classes for compact or prominent layouts.
 platform: ej2-angular
 control: Sizing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sizing in Angular TextBox Component
+# Sizing in Angular TextBox
 
 The TextBox component supports three distinct sizing options to accommodate different design requirements and user interface contexts. Each size variant maintains consistent functionality while providing visual flexibility for various application layouts.
 

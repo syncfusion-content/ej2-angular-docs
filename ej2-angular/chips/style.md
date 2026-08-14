@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Chips component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Chips component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Chips | Syncfusion
+description: Override Angular Chips CSS classes to customize chip text, icons, avatar, delete button, and focus styles.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Chips component
+# Style in Angular Chips
 
 The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with Angular Dashboard Layout component | Syncfusion
-description: Learn how to create and configure the Angular Dashboard Layout component with step-by-step setup, installation, and implementation examples.
+title: Getting Started with Angular Dashboard Layout | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Dashboard Layout control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Getting started with Angular Dashboard Layout component
+# Getting Started with Angular Dashboard Layout
 
 The Dashboard Layout component provides the capability to arrange, resize and reorder the panels within the dashboard layout.
 

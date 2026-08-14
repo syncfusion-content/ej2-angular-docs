@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Handle no color support in Angular Color picker component | Syncfusion
-description: Learn here all about Handle no color support in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: How to handle no color support in Angular Color Picker | Syncfusion
+description: Add a no-color tile to the Syncfusion Angular Color Picker palette using the noColor property so users can clear the selected color value.
 platform: ej2-angular
 control: Handle no color support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Handle no color support in Angular Color picker component
+# How to handle no color support in Angular Color Picker
 
 The ColorPicker component supports a no color option, allowing users to clear the selection. When the no color tile is clicked from the palette, the color value is cleared, indicating that no color has been selected.
 

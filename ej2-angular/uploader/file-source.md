@@ -1,14 +1,14 @@
 ---
 layout: post
-title: File source in Angular Uploader component | Syncfusion
-description: Learn here all about File source in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: File Source in Angular Uploader | Syncfusion
+description: Enable clipboard image paste-to-upload in the Angular Uploader with the selected event and getUniqueID, and handle server-side save actions for pasted images.
 platform: ej2-angular
 control: File source 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File source in Angular Uploader component
+# File Source in Angular Uploader
 
 ## Paste to upload
 

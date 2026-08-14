@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Avatar customization in Angular Avatar component | Syncfusion
-description: Learn here all about Avatar customization in Syncfusion Angular Avatar component of Syncfusion Essential JS 2 and more.
+title: How to customize avatar in Angular Avatar | Syncfusion
+description: Customize the Angular Avatar with custom colors, font-size-based sizing, SVG/font/image/letter content, and dynamic rendering from data sources.
 platform: ej2-angular
-control: Avatar 
+control: Avatar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Avatar customization in Angular Avatar component
+# How to customize avatar in Angular Avatar
 
 The Angular Avatar component provides extensive customization capabilities for colors, sizes, shapes, and media formats. This section demonstrates how to modify the avatar's appearance to match specific design requirements and integrate various content types.
 

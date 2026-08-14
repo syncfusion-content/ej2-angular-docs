@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in Angular Color picker component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Color Picker | Syncfusion
+description: Customize the Syncfusion Angular Color Picker appearance using CSS classes for the handler, palette tiles, and popup, plus the cssClass property.
 platform: ej2-angular
 control: Style and appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular Color picker component
+# Style and Appearance in Angular Color Picker
 
 The following CSS structure can be used to customize the ColorPicker appearance based on user preference. Alternatively, create a custom theme using the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

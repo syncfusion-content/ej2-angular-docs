@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pane content in Angular Splitter component | Syncfusion
-description: Learn here all about Pane content in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
+title: Pane Content in Angular Splitter | Syncfusion
+description: Populate Syncfusion Angular Splitter panes with ng-template, HTML markup, plain text, query selectors, or embedded Angular UI components like Accordion and ListView.
 platform: ej2-angular
 control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pane content in Angular Splitter component
+# Pane Content in Angular Splitter
 
 This guide explains how to use plain text, HTML markup, templates, or Angular UI components as content within the panes of the Syncfusion Angular Splitter.
 

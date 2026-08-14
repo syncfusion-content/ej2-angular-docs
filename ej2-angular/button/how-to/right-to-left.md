@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Right to left in Angular Button component | Syncfusion
-description: Learn here all about Right to left in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
+title: How to right-to-left in Angular Button | Syncfusion
+description: Enable right-to-left layout in Angular Button by setting the enableRtl property to true for RTL languages.
 platform: ej2-angular
 control: Right to left 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right to left in Angular Button component
+# How to right-to-left in Angular Button
 
 Button component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/button#enablertl) as `true`.
 

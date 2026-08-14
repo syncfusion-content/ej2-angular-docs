@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Auto complete component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular AutoComplete | Syncfusion®
+description: Localize Angular AutoComplete static text such as no-records and action-failure templates for any culture using the L10n class and locale property.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Auto complete component
+# Localization in Angular AutoComplete
 
 The Localization library allows you to localize static text content of the
 [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) and [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) &nbsp; property according to the culture currently assigned to the AutoComplete.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Node editing in Angular TreeView component | Syncfusion
-description: Learn here all about Node editing in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Node Editing in Angular Tree View | Syncfusion
+description: Edit Angular Tree View node text in place by enabling allowEditing and using double-click, F2, or the beginEdit method.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node editing in Angular TreeView component
+# Node Editing in Angular Tree View
 
 The TreeView component provides in-place node editing functionality by setting the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowediting) property to **true**. To directly edit nodes in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
 

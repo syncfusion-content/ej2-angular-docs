@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Docking Sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Docking Sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Dock in Angular Sidebar | Syncfusion
+description: Enable Angular Sidebar docking with enableDock and dockSize to keep a compact, always-visible portion showing icons or minimal content.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Docking Sidebar in Angular Sidebar component
+# Dock in Angular Sidebar
 
 The Sidebar component supports docking, which reserves a compact, always-visible portion of the Sidebar when collapsed, ideal for displaying icons or minimal content. Docking is enabled by setting the [`enableDock`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enabledock) property to `true` (default: `false`) and specifying the [`dockSize`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#docksize) property (default: `auto`) to define the width of the docked state, using a `string` (e.g., `"50px"`) or `number` (e.g., `50`).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Card component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
+title: Styles and Appearances in Angular Card | Syncfusion
+description: Customize the Angular Card appearance with CSS for the root, header, content, image, divider, action buttons, and horizontal layout elements.
 platform: ej2-angular
 control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Card component
+# Styles and Appearances in Angular Card
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 

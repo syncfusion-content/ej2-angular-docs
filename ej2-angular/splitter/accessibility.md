@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Splitter component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Splitter | Syncfusion
+description: Build accessible Syncfusion Angular Splitter UIs compliant with WCAG 2.2, Section 508, ADA, and ARIA, with full keyboard navigation and axe-core validation.
 platform: ej2-angular
 control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Splitter component
+# Accessibility in Angular Splitter
 
 The Angular Splitter component implements and complies with major accessibility standards including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and [ARIA roles](https://www.w3.org/TR/wai-aria#roles), ensuring inclusive user experiences across platforms.
 

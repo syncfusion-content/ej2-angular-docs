@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Auto complete component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular AutoComplete | Syncfusion®
+description: Bind Angular AutoComplete to local arrays, complex objects, or remote services using OData, Web API, and DataManager with field mapping.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Auto complete component
+# Data Binding in Angular AutoComplete
 
 The AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#datasource) property. It supports the data type of array or `DataManager`.
 

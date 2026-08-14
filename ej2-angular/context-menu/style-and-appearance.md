@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in Angular Context menu component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: Styles and Appearance in Angular Context Menu | Syncfusion
+description: Customize Angular Context Menu appearance by overriding wrapper, parent, caret, and icon CSS classes or using Theme Studio.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular Context menu component
+# Styles and Appearance in Angular Context Menu
 
 To modify the ContextMenu appearance, you need to override the default CSS of ContextMenu component. The ContextMenu provides extensive customization options through CSS classes that target specific elements within the component structure. You can customize everything from the overall wrapper to individual menu items, icons, and visual states. Additionally, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

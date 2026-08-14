@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change Animation Settings in Angular Context Menu | Syncfusion
-description: Learn here all about Change animation settings in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: How to change animation settings in Angular Context Menu | Syncfusion
+description: Configure Angular Context Menu open and close animations with the animationSettings property, choosing None, SlideDown, ZoomIn, or FadeIn.
 platform: ej2-angular
 control: Context Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change animation settings in Angular Context menu component
+# How to change animation settings in Angular Context Menu
 
 The ContextMenu component provides customizable animation effects through the [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuAnimationSettingsModel/) property. This allows you to control how the context menu appears and disappears, enhancing the user experience with smooth visual transitions.
 

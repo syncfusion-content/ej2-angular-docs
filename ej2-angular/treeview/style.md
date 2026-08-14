@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles and Appearance in Angular TreeView component | Syncfusion
-description: Checkout and learn here all about styles and appearance in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Styles and Appearance in Angular Tree View | Syncfusion
+description: Customize Angular Tree View nodes by overriding e-list-item, e-list-text, expand or collapse icons, and level-based CSS classes.
 platform: ej2-angular
 control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles and Appearance in Angular TreeView Component
+# Styles and Appearance in Angular Tree View
 
 The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in Angular Menu component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: Styles and Appearance in Angular Menu Bar | Syncfusion
+description: Customize the Angular Menu Bar appearance by overriding wrapper, popup, item, and caret CSS classes or using Theme Studio.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular Menu component
+# Styles and Appearance in Angular Menu Bar
 
 This section explains how to customize the visual appearance of the Angular Menu component by overriding default CSS classes or using Theme Studio at [https://ej2.syncfusion.com/themestudio/?theme=material3](https://ej2.syncfusion.com/themestudio/?theme=material3) to create custom themes like material3, Bootstrap, and more.
 

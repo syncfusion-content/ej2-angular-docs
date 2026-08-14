@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Precision Modes with Angular Rating component | Syncfusion
-description:  Learn here all about Precision Modes with Angular Rating component of Syncfusion Essential JS 2 and more details.
+title: Precision Modes in Angular Rating | Syncfusion
+description: Control Angular Rating increment granularity using the precision property with Full, Half, Quarter, or Exact modes for finer user feedback.
 platform: ej2-angular
 control: Precision Modes
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Precision Modes in Angular Rating Component
+# Precision Modes in Angular Rating
 
 The [`precision`](https://ej2.syncfusion.com/angular/documentation/api/rating#precision) property allows you to control the granularity at which users can rate. Choose from the following precision modes:
 

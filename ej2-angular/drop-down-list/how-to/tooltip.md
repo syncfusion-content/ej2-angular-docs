@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in Angular Drop down list component | Syncfusion
-description: Learn here all about Tooltip in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to show tooltip on options in Angular Dropdown List | Syncfusion®
+description: Show tooltips on Angular Dropdown List options by attaching the ej2-tooltip component so hover surfaces details about each list item.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in Angular Drop down list component
+# How to show tooltip on options in Angular Dropdown List
 
 You can achieve this behavior by using `ej2-tooltip` component. When the mouse hover on the DropDownList option that tooltip display some details related to hovered list item.
 

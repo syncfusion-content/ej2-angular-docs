@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dynamic badge content in Angular Badge component | Syncfusion
-description: Learn here all about Dynamic badge content in Syncfusion Angular Badge component of Syncfusion Essential JS 2 and more.
+title: How to set dynamic badge content in Angular Badge | Syncfusion
+description: Update Syncfusion Angular Badge content in real time using Angular data binding, with an increment button to change the badge value on click.
 platform: ej2-angular
 control: Dynamic badge content 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic badge content in Angular Badge component
+# How to set dynamic badge content in Angular Badge
 
 Badges in real-time needs to be updated dynamically based on the requirements. In this sample, using Angular data binding the badges content will be updated dynamically. Click the increment button to change the badge value.
 

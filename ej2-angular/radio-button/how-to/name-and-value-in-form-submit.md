@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Name and value in form submit in Angular Radio button component | Syncfusion
-description: Learn here all about Name and value in form submit in Syncfusion Angular Radio button component of Syncfusion Essential JS 2 and more.
+description: Submit grouped Angular Radio Button values in a form using the name attribute and retrieve the checked value on the server.
 platform: ej2-angular
 control: Name and value in form submit 
 documentation: ug

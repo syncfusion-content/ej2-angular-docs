@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Columns in Angular Query builder component | Syncfusion
-description: Learn here all about Columns in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Columns in Angular Query Builder UI | Syncfusion
+description: Define Angular Query Builder UI columns with field, label, operators, format, step, and validation to control how rules render and behave.
 platform: ej2-angular
 control: Columns 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Columns in Angular Query builder component
+# Columns in Angular Query Builder UI
 
 Column definitions define the schema for the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) and control how the Query Builder renders and processes data. All Query Builder operations—such as creating/deleting conditions and groups—are based on these definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsmodel#field) property maps columns to data source values.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons in Angular Floating action button component | Syncfusion
-description: Learn here all about Icons in Syncfusion Angular Floating action button component of Syncfusion Essential JS 2 and more.
+title: Icons in Angular Floating Action Button | Syncfusion
+description: Add and customize icons and text in Angular Floating Action Button using iconCss, content, and title properties.
 platform: ej2-angular
 control: Icons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons in Angular Floating action button component
+# Icons in Angular Floating Action Button
 
 You can customize the icon and text of Angular Floating Action Button(FAB) using [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#iconcss) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) properties.
 

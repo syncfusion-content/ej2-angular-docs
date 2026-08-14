@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Datepicker component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular DatePicker | Syncfusion®
+description: Learn how to customize the Syncfusion Angular DatePicker appearance using CSS, the renderDayCell event, and highlight or disable specific dates.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Datepicker component
+# Customization in Angular DatePicker
 
 You can customize the  entire appearance of the input element and Calendar by using custom [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#cssclass) property.
 Also you can use the calendar's [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/renderDayCellEventArgs#renderdaycelleventargs) event to customize the appearance of the each day cell.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Model binding in Angular Query builder component | Syncfusion
-description: Learn here all about Model binding in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Model Binding in Angular Query Builder UI | Syncfusion
+description: Enable two-way model binding between the Syncfusion Angular Query Builder UI field, operator, and value columns and custom components.
 platform: ej2-angular
 control: Model binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Model binding in Angular Query builder component
+# Model Binding in Angular Query Builder UI
 
 Model binding enables two-way data binding between the Query Builder and custom components used in the field, operator, and value columns. Implement model binding by configuring the `fieldModel`, `operatorModel`, and `valueModel` properties.
 

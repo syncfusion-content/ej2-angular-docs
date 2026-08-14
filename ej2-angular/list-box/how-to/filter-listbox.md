@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filter List box Data Using TextBox component | Syncfusion
-description: Learn here all about Filter List box Data Using TextBox component in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: How to filter ListBox with a TextBox in Angular ListBox | Syncfusion
+description: Filter the Angular ListBox items based on user input from a separate TextBox by binding an input listener and calling the ListBox filter method on each change.
 platform: ej2-angular
 control: ListBox Filter
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to Filter ListBox Data Using TextBox Component
+# How to filter ListBox with a TextBox in Angular ListBox
 
 This example demonstrates how to filter Syncfusion<sup style="font-size:70%">&reg;</sup> ListBox data based on input from a TextBox. Bind an input event listener to the TextBox to capture user input and filter the items in the ListBox. Within the event handler, use the [`filter`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#filter) method to update the ListBox items, ensuring that only those matching the input text are included.
 

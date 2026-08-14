@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent State Change in Angular Switch component | Syncfusion
-description: Learn here all about Prevent State Change in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to prevent state change in Angular Toggle Switch Button | Syncfusion
+description: Cancel an Angular Toggle Switch Button state change by handling the beforeChange event and blocking the action.
 platform: ej2-angular
 control: Prevent State Change 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent State Change in Angular Switch component
+# How to prevent state change in Angular Toggle Switch Button
 
 The [beforeChange](https://ej2.syncfusion.com/angular/documentation/api/switch/#beforechange) event is triggered before the switch's state is altered. This event provides an opportunity to intercept and potentially cancel the change action before it is applied. It allows for implementing conditional logic or validating the change prior to it being rendered on the UI.
 

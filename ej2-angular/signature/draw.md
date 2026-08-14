@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Draw in Angular Signature component | Syncfusion
-description: Learn here all about Draw in Syncfusion Angular Signature component of Syncfusion Essential JS 2 and more.
+title: Draw in Angular Signature | Syncfusion
+description: Render text as a handwritten Angular Signature with the draw method, choosing font family and font size for typed-style signs.
 platform: ej2-angular
 control: Draw 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Draw in Angular Signature component
+# Draw in Angular Signature
 
 ## Draw
 

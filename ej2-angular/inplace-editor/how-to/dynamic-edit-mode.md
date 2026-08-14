@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dynamic edit mode in Angular Inplace editor component | Syncfusion
-description: Learn here all about Dynamic edit mode in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: How to open in edit mode in Angular In-place Editor | Syncfusion
+description: Open the Angular In-place Editor in edit mode at load using enableEditMode, and toggle the editor open or closed from a checkbox.
 platform: ej2-angular
 control: Dynamic edit mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic edit mode in Angular Inplace editor component
+# How to open in edit mode in Angular In-place Editor
 
 At component initial load, if you want to open editor state without interacting **In-place Editor** input element, it can be achieved by configuring the [enableEditMode](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#enableeditmode) property to `true`.
 

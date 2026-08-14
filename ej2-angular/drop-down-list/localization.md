@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Drop down list component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Dropdown List | Syncfusion®
+description: Localize Angular Dropdown List static text such as no-records and action-failure templates for any culture using the L10n class and locale property.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Drop down list component
+# Localization in Angular Dropdown List
 
 The Localization library allows you to localize static text content of the
 [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#norecordstemplate) and [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the DropDownList.

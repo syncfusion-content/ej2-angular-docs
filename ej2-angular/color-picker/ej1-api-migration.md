@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Color picker component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in Angular Color Picker | Syncfusion
+description: Migrate the Color Picker from Essential JS 1 to JS 2 by mapping properties, methods, and events such as showApplyCancel to showButtons and getValue.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API migration in Angular Color picker component
+# EJ1 API Migration in Angular Color Picker
 
 This article describes the API migration process for the ColorPicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

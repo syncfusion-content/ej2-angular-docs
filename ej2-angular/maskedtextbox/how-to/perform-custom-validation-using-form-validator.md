@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Perform custom validation using form validator | Syncfusion
-description: Learn here all about Perform custom validation using form validator in Syncfusion Angular Maskedtextbox component of Syncfusion Essential JS 2 and more.
+title: FormValidator in Angular MaskedTextBox | Syncfusion
+description: Validate the Syncfusion Angular MaskedTextBox for invalid mobile numbers by adding a custom rule to the FormValidator component in an Angular form.
 platform: ej2-angular
 control: Perform custom validation using form validator 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform custom validation using form validator in MaskedTextBox
+# How to validate using FormValidator in Angular MaskedTextBox
 
 Custom validation can be performed on the MaskedTextBox by using the FormValidator component with custom validation rules. The following example demonstrates validating the MaskedTextBox for invalid mobile numbers by adding custom validation rules to the FormValidator.
 

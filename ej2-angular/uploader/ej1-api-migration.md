@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Uploader component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in Angular Uploader | Syncfusion
+description: Migrate Essential JS 1 UploadBox APIs to the Angular Uploader with side-by-side property, method, and event mapping for accessibility, file list, and selection.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API migration in Angular Uploader component
+# EJ1 API Migration in Angular Uploader
 
 This article describes the API migration process for the File Upload component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

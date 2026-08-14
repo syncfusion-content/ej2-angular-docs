@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in Angular Multi select component | Syncfusion
+title: Grouping in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Grouping in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Grouping 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in Angular Multi select component
+# Grouping in Angular MultiSelect Dropdown
 
 The MultiSelect component supports organizing list items into groups based on different categories. Each list item's category can be mapped through the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#groupby) field within the fields property configuration. The component displays group headers in two ways: inline headers that appear within the list flow, and fixed headers that remain visible at the top of the popup while scrolling through grouped content. The fixed group header dynamically updates to show the currently visible group's category value.
 

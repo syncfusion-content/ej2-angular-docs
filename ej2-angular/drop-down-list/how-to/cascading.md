@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cascading in Angular Drop down list component | Syncfusion
-description: Learn here all about Cascading in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to configure cascading in Angular Dropdown List | Syncfusion®
+description: Build cascading Angular Dropdown Lists where the value of one drives the data loaded into the next via the change event of the parent.
 platform: ej2-angular
 control: Cascading 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cascading in Angular Drop down list component
+# How to configure cascading in Angular Dropdown List
 
 The cascading DropDownList is a series of DropDownList, where the value of one DropDownList depends upon  another's value. This can be configured by using the [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the parent DropDownList. Within that change event handler, data has to be loaded to the child DropDownList based on the selected value of the parent DropDownList.
 

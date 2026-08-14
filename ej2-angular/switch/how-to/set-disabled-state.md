@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set disabled state in Angular Switch component | Syncfusion
-description: Learn here all about Set disabled state in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to set disabled state in Angular Toggle Switch Button | Syncfusion
+description: Disable Angular Toggle Switch Button by setting the disabled property to true.
 platform: ej2-angular
 control: Set disabled state 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set disabled state in Angular Switch component
+# How to set disabled state in Angular Toggle Switch Button
 
 Switch can be disabled by setting the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/switch/#disabled) property to `true`.
 

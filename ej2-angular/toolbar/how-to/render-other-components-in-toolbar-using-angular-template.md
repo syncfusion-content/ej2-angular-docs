@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render components in Angular Toolbar using ng-template | Syncfusion
-description: Learn here all about Render other components in toolbar using angular template in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: Render other components in Toolbar using Angular template in Angular Toolbar | Syncfusion
+description: Render other Angular components inside Toolbar items using ng-template with the template attribute for rich embedded UI.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render components in Angular Toolbar using templates
+# How to render other components in Toolbar using Angular template in Angular Toolbar
 
 The Angular Toolbar component supports embedding other Angular components directly within toolbar items using Angular **ng-template** directives. This template-based approach enables integration of complex UI elements with full functionality, including dropdowns, input controls, buttons, and custom components as toolbar items.
 

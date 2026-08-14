@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular TreeView component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Tree View | Syncfusion
+description: Customize Angular Tree View node content with the nodeTemplate property to render images, fields, or rich HTML for each node.
 platform: ej2-angular
 control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular TreeView component
+# Template in Angular Tree View
 
 The TreeView component allows you to customize the appearance and content of TreeView nodes using the [nodeTemplate](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodetemplate) property. This property accepts either a template string or HTML element ID, enabling you to display rich content beyond simple text labels.
 

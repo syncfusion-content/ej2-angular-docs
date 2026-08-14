@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Split Button Component | Syncfusion
+title: Getting Started with Angular Split Button | Syncfusion
 description: Learn how to get started with the Syncfusion Angular Split Button component, including installation, configuration, and a basic example.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Split Button component
+# Getting Started with Angular Split Button
 
 The Split Button component allows users to perform a primary action with a click while providing additional related actions through a dropdown menu.
 

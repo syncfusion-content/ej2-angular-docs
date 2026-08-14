@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Rounded corner in Angular Menu component | Syncfusion
-description: Learn here all about Rounded corner in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to add rounded corners to Angular Menu Bar | Syncfusion
+description: Apply rounded corners to the Angular Menu Bar by adding a custom CSS class with border-radius through the cssClass property.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize rounded corners in Angular Menu component
+# How to add rounded corners to Angular Menu Bar
 
 You can apply rounded corners to the Angular Menu component by assigning a custom CSS class using the `cssClass`[`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/menu/#cssclass) property. This allows you to modify the appearance of the menu container to better match your application's design.
 

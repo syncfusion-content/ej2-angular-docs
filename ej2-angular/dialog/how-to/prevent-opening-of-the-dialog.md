@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent opening of the dialog in Angular Dialog component | Syncfusion
-description: Learn here all about Prevent opening of the dialog in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to open a Dialog on condition in Angular Dialog | Syncfusion
+description: Open the Syncfusion Angular Dialog only when a condition is met by setting the beforeOpen event argument cancel property to true otherwise.
 platform: ej2-angular
 control: Prevent opening of the dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent the dialog from opening in Angular Dialog component
+# How to open a Dialog on condition in Angular Dialog
 
 Prevent the dialog from opening by setting the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#beforeopen) event argument's cancel property to `true`.
 The following sample opens the success dialog only when you enter a username with a minimum of 4 characters; otherwise, it does not open.

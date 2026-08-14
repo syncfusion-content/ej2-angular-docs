@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Content in Angular Tooltip component | Syncfusion
-description: Learn here all about Content in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Content in Angular Tooltip | Syncfusion
+description: Display text, ng-template, or dynamic content in the Syncfusion Angular Tooltip, and load data on demand using the beforeRender event with Fetch.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Content in Angular Tooltip component
+# Content in Angular Tooltip
 
 Text or information assigned to the Tooltip's [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property displays as the main content of the Tooltip.
 

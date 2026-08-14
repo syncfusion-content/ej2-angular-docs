@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular AppBar component | Syncfusion
-description:  Learn how to get started with Syncfusion Angular AppBar component, including setup, installation and basic configuration.
+title: Getting Started with Angular AppBar | Syncfusion
+description: Learn how to get started with the Syncfusion Angular AppBar control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: AppBar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular AppBar component
+# Getting Started with Angular AppBar
 
 The AppBar component provides relevant actions based on the selected context, offering quick access to commands in various scenarios.
 

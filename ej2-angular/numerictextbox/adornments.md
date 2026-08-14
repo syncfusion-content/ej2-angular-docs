@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adornments in Angular NumericTextBox control | Syncfusion
+title: Adornments in Angular Numeric Textbox | Syncfusion
 description: Learn here all about Adornments in Syncfusion Angular NumericTextBox control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Adornments
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in Angular NumericTextBox control
+# Adornments in Angular Numeric Textbox
 
 Adornments allow you to add custom elements before or after the NumericTextBox input using the `prependTemplate` and `appendTemplate` properties. These templates support icons, labels, action buttons, and other visual elements while preserving numeric validation and float label functionality.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Operators in Angular Query builder component | Syncfusion
-description: Learn here all about Operators in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Operators in Angular Query Builder UI | Syncfusion
+description: List of default and custom operators available in the Syncfusion Angular Query Builder UI, with the data types each one supports.
 platform: ej2-angular
 control: Operators
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Operators in Angular Query builder component
+# Operators in Angular Query Builder UI
 
 Operators define the comparison logic applied between a column's field and its value when building query rules. The Query Builder automatically assigns default operators based on the column's data type, and you can also customize them per column.
 

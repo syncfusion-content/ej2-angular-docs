@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resize in Angular Splitter component | Syncfusion
-description: Learn here all about Resize in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
+title: Resize in Angular Splitter | Syncfusion
+description: Enable resizable panes in the Syncfusion Angular Splitter with min and max constraints, resize events, gripper customization, and per-pane disable controls.
 platform: ej2-angular
 control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing panes in Angular Splitter component
+# Resize in Angular Splitter
 
 By default, pane resizing is enabled in the Angular Splitter component. A gripper element is added to the separator to make resizing intuitive and user-friendly.
 

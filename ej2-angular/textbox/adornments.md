@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adornments in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Adornments in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Adornments in Angular TextBox | Syncfusion
+description: Add icons, buttons, or labels inside the Syncfusion Angular TextBox using prependTemplate and appendTemplate for passwords, currency, and validation.
 platform: ej2-angular
 control: Adornments
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## TextBox Control
+# Adornments in Angular TextBox
 
 The TextBox component supports adornments that allow you to add custom elements before or after the textbox using `prependTemplate` and `appendTemplate`. Adornment elements can include icons, text labels, or action buttons to improve usability and provide visual context.
 

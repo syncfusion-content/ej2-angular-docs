@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in Angular Toast component | Syncfusion
-description: Learn here all about Animation in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Animation in Angular Toast | Syncfusion
+description: Animate Syncfusion Angular Toast show and hide with built-in FadeIn and FadeOut or custom animation effects from the Animation library.
 platform: ej2-angular
 control: Animation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in Angular Toast component
+# Animation in Angular Toast
 
 Toasts support custom animations for both shows and hide actions from the provided animation option of `Animation` library.
 

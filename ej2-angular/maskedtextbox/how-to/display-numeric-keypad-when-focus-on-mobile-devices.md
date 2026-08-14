@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display numeric keypad on mobile devices | Syncfusion
+title: Display Numeric Keypad in Angular MaskedTextBox | Syncfusion
 description: Learn here all about Display numeric keypad when focus on mobile devices in Syncfusion Angular Maskedtextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Display numeric keypad when focus on mobile devices 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display numeric keypad on mobile devices in MaskedTextBox
+# How to display numeric keypad on mobile in Angular MaskedTextBox
 
 By default, the MaskedTextBox displays an alphanumeric keypad when focused on mobile devices. To display only a numeric keypad, set the `type` property to `tel`. The following example demonstrates how to enable the numeric keypad in the MaskedTextBox.
 

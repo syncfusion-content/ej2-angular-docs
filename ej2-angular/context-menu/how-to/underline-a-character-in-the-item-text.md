@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Underline Character in Angular Context Menu Item | Syncfusion
-description: Learn here all about Underline a character in the item text in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: Underline a character in the item text in Angular Context Menu | Syncfusion
+description: Underline a character in Angular Context Menu item text by injecting u tags via the beforeItemRender event for visible shortcut keys.
 platform: ej2-angular
 control: Context Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Underline Character in Angular Context Menu Item Text
+# How to underline a character in the item text in Angular Context Menu
 
 To underline a specific character in a menu item's text, you can utilize the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#beforeitemrender) event. This technique is commonly used to create  Shortcut keys by visually highlighting specific characters within menu items.
 

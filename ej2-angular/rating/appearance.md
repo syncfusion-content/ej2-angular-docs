@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance with Angular Rating component | Syncfusion
-description:  Learn here all about Appearance with Angular Rating component of Syncfusion Essential JS 2 and more details.
+title: Appearance in Angular Rating | Syncfusion
+description: Customize the Angular Rating with itemsCount, disabled, readOnly, and visible properties, and use cssClass to adjust colors, spacing, and icon appearance.
 platform: ej2-angular
 control: Appearance
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in Angular Rating Component
+# Appearance in Angular Rating
 
 You can also customize the appearance of rating component.
 

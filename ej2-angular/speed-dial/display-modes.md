@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Display modes in Angular Speed dial component | Syncfusion
-description: Learn here all about Display modes in Syncfusion Angular Speed dial component of Syncfusion Essential JS 2 and more.
+title: Display Modes in Angular Speed Dial | Syncfusion
+description: Display Angular Speed Dial items in Linear or Radial mode and control direction with the mode property.
 platform: ej2-angular
 control: Display modes 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display modes in Angular Speed dial component
+# Display Modes in Angular Speed Dial
 
 The action items in [Angular Speed Dial](https://www.syncfusion.com/angular-components/angular-speed-dial) can be displayed in `Linear` and `Radial` display modes by setting [`mode`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#mode) property.
 

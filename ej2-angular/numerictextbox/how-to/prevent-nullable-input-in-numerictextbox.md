@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent nullable input in NumericTextBox | Syncfusion
-description: Learn here all about Prevent nullable input in numerictextbox in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: How to prevent nullable input in Angular Numeric Textbox | Syncfusion
+description: Prevent null values in the Angular Numeric Textbox by handling the change event to reset the value to a default when the user clears the input field.
 platform: ej2-angular
 control: Prevent nullable input in numerictextbox 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent nullable input in NumericTextBox
+# How to prevent nullable input in Angular Numeric Textbox
 
 By default, the NumericTextBox value can be set to `null`. To ensure the NumericTextBox always contains a value, use the following approach to prevent nullable input.
 

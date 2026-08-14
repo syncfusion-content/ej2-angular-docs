@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip content template in Angular Tooltip component | Syncfusion
-description: Learn here all about Tooltip content template in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: How to apply Tooltip content template in Angular Tooltip | Syncfusion
+description: Render custom markup inside the Syncfusion Angular Tooltip by binding an ng-template to the tooltip template support.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip content template in Angular Tooltip component
+# How to apply Tooltip content template in Angular Tooltip
 
 The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content/) can be loaded through template support. The following code snippet demonstrates this.
 

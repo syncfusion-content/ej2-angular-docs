@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Uploader component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Uploader | Syncfusion
+description: Localize Angular Uploader labels, status messages, and tooltips by creating a locale object and loading it through the L10n utility for any culture.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Uploader component
+# Localization in Angular Uploader
 
 The Localization library enables you to localize static text content in the Uploader.
 This includes action button labels, file status messages, icon titles, tooltips, and drag-area text. Create a locale object for your culture and assign it using the L10n load method.

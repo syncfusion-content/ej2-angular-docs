@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form support in Angular DropDownList component | Syncfusion
-description: Learn how to integrate the Syncfusion Angular DropDownList component with template-driven and reactive forms, including data binding and validation.
+title: Form Support in Angular Dropdown List | Syncfusion®
+description: Learn how to integrate the Syncfusion® Angular DropDownList component with template-driven and reactive forms, including data binding and validation.
 platform: ej2-angular
 control: DropDownList
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in Angular DropDownList component
+# Form Support in Angular Dropdown List
 
 The DropDownList component supports both template-driven and reactive forms, which are the two primary form-building technologies in Angular.
 

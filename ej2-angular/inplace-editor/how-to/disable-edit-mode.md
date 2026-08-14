@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disable edit mode in Angular Inplace editor component | Syncfusion
-description: Learn here all about Disable edit mode in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: How to disable edit mode in Angular In-place Editor | Syncfusion
+description: Disable the edit mode of the Angular In-place Editor by setting the disabled property to true, controlled with a checkbox in the sample.
 platform: ej2-angular
 control: Disable edit mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable edit mode in Angular Inplace editor component
+# How to disable edit mode in Angular In-place Editor
 
 The edit mode of **In-place Editor** can be disabled by setting the [disabled](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#disabled) property value to `true`. In the following sample, when check or uncheck the checkbox, **In-place Editor** component will disable or enable the edit mode.
 

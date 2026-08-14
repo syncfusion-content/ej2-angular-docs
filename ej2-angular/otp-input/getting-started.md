@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular OTP Input component | Syncfusion
-description:  Checkout and learn about Getting started with Angular OTP Input component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular OTP Input | Syncfusion
+description: Learn how to get started with the Syncfusion Angular OTP Input control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular OTP Input component
+# Getting Started with Angular OTP Input
 
 The OTP Input component allows users to securely enter One-Time Passwords (OTP) for multi-factor authentication (MFA), account verification, login, booking confirmations, and other verification processes.
 

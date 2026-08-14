@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Message component | Syncfusion
+title: Getting Started with Angular Message | Syncfusion
 description: Learn how to get started with Syncfusion Angular Message component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Message
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Message component
+# Getting Started with Angular Message
 
 The Message component displays informative messages such as success, warning, error, and information alerts to communicate application status and user feedback.
 

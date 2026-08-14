@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Floating Label in Angular TextArea component | Syncfusion
-description: Checkout and learn about Floating Label in Angular TextArea component of Syncfusion Essential JS 2 and more.
+title: Floating Label in Angular TextArea | Syncfusion
+description: Display a floating label above the Angular TextArea using floatLabelType modes (Auto, Always, Never), and localize the placeholder with the L10n library.
 control: Floating Label 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Floating Label in Angular TextArea Component
+# Floating Label in Angular TextArea
 
 The floating label feature in the TextArea component displays the placeholder text above the textarea when the user interacts with it, providing an intuitive user experience. Configure this behavior using the [floatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textarea/#floatLabelType) property, which offers the following options:
 

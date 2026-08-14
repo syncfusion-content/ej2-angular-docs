@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons and templates in Angular List box component | Syncfusion
-description: Learn here all about Icons and templates in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: Icons and Templates in Angular ListBox | Syncfusion
+description: Add icons to Angular ListBox items via the iconCss field and customize each item's appearance using the itemTemplate property to render rich content like cart entries.
 platform: ej2-angular
 control: Icons and templates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons and templates in Angular List box component
+# Icons and Templates in Angular ListBox
 
 ## Icons
 

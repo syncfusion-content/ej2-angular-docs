@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checkbox in Angular Multi select component | Syncfusion
+title: CheckBox in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Checkbox in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Checkbox 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox in Angular Multi select component
+# CheckBox in Angular MultiSelect Dropdown
 
 The MultiSelect component provides built-in support for selecting multiple values through checkboxes when the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#mode) property is set to `CheckBox`.
 

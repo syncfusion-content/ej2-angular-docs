@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Range Slider component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Range Slider | Syncfusion
+description: Customize the Angular Range Slider track, handle, limits, ticks, and buttons with CSS overrides for colors, sizes, and visual styling.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Range Slider component
+# Style in Angular Range Slider
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

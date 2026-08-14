@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Date range in Angular Calendar component | Syncfusion
-description: Learn here all about Date range in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: Date Range in Angular Calendar | Syncfusion®
+description: Learn how to restrict date selection in the Syncfusion Angular Calendar using the min and max properties to define a valid date range.
 platform: ej2-angular
 control: Date range 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date range in Angular Calendar component
+# Date Range in Angular Calendar
 
 You can restrict the user to select the date from a specified range of dates by utilizing the [`min`](https://ej2.syncfusion.com/angular/documentation/api/calendar#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/calendar#max) properties.  Always the min date has to be lesser than the max date.
 

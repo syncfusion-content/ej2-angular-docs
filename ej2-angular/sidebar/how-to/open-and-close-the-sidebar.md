@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open and close the Angular Sidebar component | Syncfusion
-description: Learn here all about Open and close the Sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: How to open and close the Sidebar in Angular Sidebar | Syncfusion
+description: Open, close, or toggle the Angular Sidebar programmatically via ViewChild using the show, hide, and toggle public methods.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and close the Angular Sidebar component
+# How to open and close the Sidebar in Angular Sidebar
 
 The Sidebar component can be programmatically opened or closed using its public methods, enabling dynamic control in response to user interactions or application logic. These methods are accessible via a `ViewChild` reference to the Sidebar instance in an Angular component.
 

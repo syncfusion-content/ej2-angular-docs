@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add font awesome in Angular Toolbar component | Syncfusion
-description: Learn here all about Add font awesome in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to add font awesome icons in Angular Toolbar | Syncfusion
+description: Use Font Awesome or other third-party icon sets in the Angular Toolbar items by setting the prefixIcon CSS class.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add font awesome in Angular Toolbar component
+# How to add font awesome icons in Angular Toolbar
 
 You can customize the Toolbar component items by using third-party icons other than the icons available in the Syncfusion<sup style="font-size:70%">&reg;</sup> library. In the following example, Font Awesome icons are used as toolbar items.
 

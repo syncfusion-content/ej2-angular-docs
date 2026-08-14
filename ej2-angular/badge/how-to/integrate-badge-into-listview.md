@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrate badge into listview in Angular Badge component | Syncfusion
-description: Learn here all about Integrate badge into listview in Syncfusion Angular Badge component of Syncfusion Essential JS 2 and more.
+title: How to integrate badge into listview in Angular Badge | Syncfusion
+description: Integrate Syncfusion Angular Badge into a ListView to indicate new notifications with color-coded priority and auto-sized indicators.
 platform: ej2-angular
 control: Integrate badge into listview 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate badge into listview in Angular Badge component
+# How to integrate badge into listview in Angular Badge
 
 The badges can be integrated with the `listview` component to indicate new notification with color based on priority.
 

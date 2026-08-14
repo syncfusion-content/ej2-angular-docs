@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form Support with Angular TextArea component | Syncfusion
-description: Checkout and learn about Form support of the Angular TextArea component of Syncfusion Essential JS 2 and more details.
+title: Form Support in Angular TextArea | Syncfusion
+description: Submit multi-line content from the Angular TextArea inside HTML forms, and apply validation rules with the FormValidator component for required, length, or pattern.
 control: Form Support
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form Support in Angular TextArea Component
+# Form Support in Angular TextArea
 
 The TextArea component seamlessly integrates with HTML forms for efficient submission of multiline text data. Include TextArea inputs within your forms to allow users to enter detailed content and submit it as part of the form submission. This integration enhances form usability by providing users with the ability to input lengthy descriptions, feedback, or other multiline text content.
 

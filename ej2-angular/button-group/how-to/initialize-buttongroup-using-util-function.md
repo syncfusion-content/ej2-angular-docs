@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Initialize Button Group using util function in Angular | Syncfusion
-description: Learn here all about Initialize buttongroup using util function in Syncfusion Angular Button Group component of Syncfusion Essential JS 2 and more.
+description: Initialize Angular Button Group programmatically with the createButtonGroup utility function from ej2-splitbuttons.
 platform: ej2-angular
 control: Initialize buttongroup using util function 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Initialize buttongroup using util function in Button Group component
+# How to initialize Button Group using util function in Angular
 
 Though, it is a CSS component for easy initialization of ButtonGroup `createButtonGroup` util function can be used.
 

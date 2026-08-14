@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load content through post in Angular Accordion component | Syncfusion
-description: Learn here all about Load content through post in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: How to load content through Ajax in Angular Accordion | Syncfusion
+description: Load dynamic content into the Angular Accordion via AJAX requests using the Ajax module from ej2-base to fetch HTML or JSON.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load content through post in Angular Accordion component
+# How to load content through Ajax in Angular Accordion
 
 The Angular Accordion component supports loading dynamic external content into its items using the `AJAX` library from `@syncfusion/ej2-base`. This feature is useful for fetching HTML, JSON, or other data from APIs or remote servers.
 

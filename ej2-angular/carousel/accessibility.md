@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Carousel component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Carousel | Syncfusion
+description: Make the Angular Carousel accessible with WAI-ARIA roles, states, keyboard navigation, and full WCAG 2.2 and Section 508 support.
 platform: ej2-angular
 control: Carousel
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Carousel component
+# Accessibility in Angular Carousel
 
 The Carousel component has been designed with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) specifications in mind, implementing WAI-ARIA roles, states, and properties along with comprehensive keyboard support for users of assistive technologies. WAI-ARIA accessibility support is achieved through attributes such as `aria-roledescription`, `aria-label`, `aria-current`, `aria-live`, `role`, and `aria-hidden`. These attributes provide essential information about elements in a document for assistive technology. The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and has been thoroughly tested in major screen readers.
 

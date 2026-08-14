@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent duplicate toast display in Toast | Syncfusion
-description: Learn here all about Prevent duplicate toast display in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: How to prevent duplicate toast display in Angular Toast | Syncfusion
+description: Prevent duplicate Syncfusion Angular Toast elements by canceling the beforeOpen event when a matching title is already visible on screen.
 platform: ej2-angular
 control: Prevent duplicate toast display 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent duplicate toast display in Angular Toast component
+# How to prevent duplicate toast display in Angular Toast
 
 You can prevent identical same toast displaying in a screen by event function. You can terminate the toast displaying process by setting cancel event property in [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#beforeopen) Event.
 

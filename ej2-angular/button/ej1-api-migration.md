@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Button component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
+title: Ej1 Api Migration in Angular Button | Syncfusion
+description: Compare Essential JS 1 and Angular Button APIs to migrate Properties and events smoothly to the current component.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Button component
+# Ej1 Api Migration in Angular Button
 
 This article describes the API migration process of Button component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

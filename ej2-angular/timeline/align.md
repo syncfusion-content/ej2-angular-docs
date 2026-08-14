@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Alignment in Angular Timeline component | Syncfusion
-description: Learn here all about Alignment in Syncfusion Angular Timeline component of Syncfusion Essential JS 2 and more.
+title: Align Items in Angular Timeline | Syncfusion
+description: Position Syncfusion Angular Timeline items with Before, After, Alternate, or AlternateReverse alignment for balanced horizontal and vertical layouts.
 platform: ej2-angular
 control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Alignment in Angular Timeline component
+# Align Items in Angular Timeline
 
 The Timeline component controls content positioning using the [align](../api/timeline#align) property, which accepts values `Before`, `After`, `Alternate`, or `AlternateReverse`. When items include both content and oppositeContent properties, the oppositeContent displays parallel to the main content, creating a balanced layout on opposite sides of the timeline.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open datepicker popup on input click in Angular Datepicker component | Syncfusion
-description: Learn here all about Open datepicker popup on input click in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: Open DatePicker popup on input click in Angular | Syncfusion®
+description: Learn how to open the Syncfusion Angular DatePicker popup when the input element is clicked by handling focus or click events on the input.
 platform: ej2-angular
 control: Open datepicker popup on input click 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open datepicker popup on input click in Angular Datepicker component
+# How to open the DatePicker popup on input click in Angular DatePicker
 
 You can open the DatePicker popup on input focus by calling the `show` method in the input `focus` event.
 

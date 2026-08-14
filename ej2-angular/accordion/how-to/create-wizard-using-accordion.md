@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Wizard with Angular Accordion | Syncfusion
-description: Learn here all about Create wizard using accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: How to create wizard using Accordion in Angular Accordion | Syncfusion
+description: Build a multi-step Angular Accordion wizard with validation that enables or disables next items via the enableItem and expandItem methods.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create wizard using accordion in Angular Accordion component
+# How to create wizard using Accordion in Angular Accordion
 
 Accordion items can be disabled dynamically by passing the index and boolean value with the [`enableItem`](https://ej2.syncfusion.com/angular/documentation/api/accordion#enableitem) method and also dynamically expand the item using [`expandItem`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expanditem) method.
 

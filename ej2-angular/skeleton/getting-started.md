@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Skeleton component | Syncfusion
+title: Getting Started with Angular Skeleton | Syncfusion
 description:  Learn how to get started with the Syncfusion Angular Skeleton component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Skeleton 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Skeleton component
+# Getting Started with Angular Skeleton
 
 The Skeleton component displays placeholder elements that mimic the layout of content while data is loading, providing users with a visual preview of the interface and improving the perceived loading experience.
 

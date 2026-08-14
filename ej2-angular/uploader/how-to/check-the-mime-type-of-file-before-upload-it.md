@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Check the mime type of file before upload it in Angular Uploader component | Syncfusion
-description: Learn here all about Check the mime type of file before upload it in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to check MIME type before upload in Angular Uploader | Syncfusion
+description: Inspect the MIME type of each file in the Angular Uploader before upload using the uploading event and surface it in an alert or your own validation flow.
 platform: ej2-angular
 control: Check the mime type of file before upload it 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check the MIME type of file before uploading in Angular Uploader component
+# How to check MIME type before upload in Angular Uploader
 
 By using the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event, you can retrieve the file MIME type before the upload process begins on the server.
 In the following example, the file MIME type is displayed in an alert dialog before the file starts uploading.

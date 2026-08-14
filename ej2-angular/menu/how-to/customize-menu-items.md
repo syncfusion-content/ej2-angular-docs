@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize menu items in Angular Menu component | Syncfusion
-description: Learn here all about Customize menu items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to customize menu items in Angular Menu Bar | Syncfusion
+description: Add, remove, enable, disable, show, or hide Angular Menu Bar items using insertAfter, removeItems, enableItems, showItems, and hideItems.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize menu items in Angular Menu component
+# How to customize menu items in Angular Menu Bar
 
 This section demonstrates how to dynamically add, remove, enable, disable, show, or hide menu items in the Angular Menu component using methods like `insertAfter`, `insertBefore`, `removeItems`, `enableItems`, `showItems`, and `hideItems`, along with the `beforeOpen` event for advanced customization.
 

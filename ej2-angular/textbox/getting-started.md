@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular TextBox component | Syncfusion
-description: Learn how to create and configure Angular TextBox component with floating labels, icons, and styling in your application.
+title: Getting Started with Angular TextBox | Syncfusion
+description: Set up the Syncfusion Angular TextBox in an Angular CLI project with imports, basic markup, and floating label support to get started.
 platform: ej2-angular
 control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular TextBox component
+# Getting Started with Angular TextBox
 
 The TextBox component allows users to enter, edit, and manage text input with support for validation, placeholders, formatting, and customization.
 

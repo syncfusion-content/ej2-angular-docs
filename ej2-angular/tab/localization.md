@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Tab component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Tab | Syncfusion
+description: Localize Angular Tab default text like the close button tooltip using the locale property and the L10n load function.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Tab component
+# Localization in Angular Tab
 
 Localization library allows you to localize the default text content of the Tab component for different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/#locale) property. In Tab, the close button's tooltip text will be localized based on the specified culture. The close button appears on the tab header when the [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/tab/#showclosebutton) property is enabled.
 

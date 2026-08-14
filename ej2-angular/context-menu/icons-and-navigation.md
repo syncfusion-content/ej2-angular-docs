@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons and navigation in Angular Context menu component | Syncfusion
-description: Learn here all about Icons and navigation in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: Icons and Navigation in Angular Context Menu | Syncfusion
+description: Add font or image icons and URL navigation to Angular Context Menu items via the iconCss and url properties for click-to-navigate actions.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons and navigation in Angular Context menu component
+# Icons and Navigation in Angular Context Menu
 
 ## Icons
 

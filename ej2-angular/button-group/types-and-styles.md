@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types and styles in Angular Button group component | Syncfusion
-description: Learn here all about Types and styles in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
+title: Types and styles in Angular Button Group | Syncfusion
+description: Apply outline, split, and vertical styles in Angular Button Group using the cssClass property on the group and buttons.
 platform: ej2-angular
 control: Types and styles 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types and styles in Angular Button group component
+# Types and styles in Angular Button Group
 
 This section explains about different types and styles of ButtonGroup.
 

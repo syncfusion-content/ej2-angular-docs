@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering in Angular DropDownList Component | Syncfusion
-description: Learn here all about the filtering capabilities in the Syncfusion Angular DropDownList component of Essential JS 2 and more.
+title: Filtering in Angular Dropdown List | Syncfusion®
+description: Filter Angular Dropdown List items as you type with allowFiltering, with StartsWith, EndsWith, or Contains modes and min character limits.
 platform: ej2-angular
 control: DropDownList
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular DropDownList Component
+# Filtering in Angular Dropdown List
 
 The DropDownList component provides built-in support for filtering data items when the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#allowfiltering) property is enabled. The filtering operation begins as soon as you start typing characters in the search box.
 

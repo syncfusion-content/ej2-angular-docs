@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance with Angular OTP Input component | Syncfusion
-description:  Learn here all about Appearance with Angular OTP Input component of Syncfusion Essential JS 2 and more details.
+title: Appearance in Angular OTP Input | Syncfusion
+description: Customize the Angular OTP Input length, disabled state, and visual style using the cssClass property with success, warning, and error themes.
 platform: ej2-angular
 control: OTP Input
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Appearance in Angular OTP Input component
+# Appearance in Angular OTP Input
 
 You can also customize the appearance of OTP Input component.
 

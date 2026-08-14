@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Dialog component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Dialog | Syncfusion
+description: Customize the Syncfusion Angular Dialog header, footer, and content with HTML templates using the header, footerTemplate, and content properties.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Dialog component
+# Template in Angular Dialog
 
 The Dialog component supports templates for the header, content, and footer sections, allowing any text or HTML content to be inserted.
 

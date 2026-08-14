@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Close dialog while click outside in Angular Dialog | Syncfusion
-description: Learn here all about Close dialog while click on outside of dialog in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to close Dialog on outside click in Angular Dialog | Syncfusion
+description: Close the Syncfusion Angular Dialog when the user clicks outside its region by calling the hide method on the overlay click handler.
 platform: ej2-angular
 control: Close dialog while click on outside of dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Close dialog when clicking outside in Angular Dialog component
+# How to close the Dialog on outside click in Angular Dialog
 
 By default, the dialog closes when you press the Esc key or click the close icon in the dialog header. Close the dialog by clicking outside the dialog area using the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#hide) method.
 
