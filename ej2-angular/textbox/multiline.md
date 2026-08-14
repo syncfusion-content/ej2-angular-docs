@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multiline TextBox in Angular TextBox component | Syncfusion
-description: Learn how to create and configure multiline TextBox in Syncfusion Angular TextBox component with floating labels, auto-resizing, character counting, and more.
+title: Multiline TextBox in Angular TextBox | Syncfusion
+description: Enable multi-line input in the Syncfusion Angular TextBox with auto-resize, manual resize, character limits, and a live character counter.
 platform: ej2-angular
 control: Multiline 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiline TextBox in Angular TextBox Component
+# Multiline TextBox in Angular TextBox
 
 The multiline TextBox feature transforms the standard single-line input into a versatile textarea that accepts multiple lines of text. This functionality is essential for capturing longer content such as addresses, descriptions, comments, and feedback where space and formatting flexibility are required.
 

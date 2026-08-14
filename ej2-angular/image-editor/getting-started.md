@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Image Editor component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular Image Editor component, including setup, installation and basic configuration.
+title: Getting Started with Angular Image Editor | Syncfusion
+description: Learn how to set up the Syncfusion Angular Image Editor in your Angular project using the CLI, and add core editing, annotation, and transformation tools.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Image Editor component
+# Getting Started with Angular Image Editor
 
 The Image Editor component provides a comprehensive set of tools for editing, annotating, cropping, resizing, rotating, and enhancing images through an intuitive user interface.
 

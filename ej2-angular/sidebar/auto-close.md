@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Auto close in Angular Sidebar component | Syncfusion
-description: Learn here all about Auto close in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Auto Close in Angular Sidebar | Syncfusion
+description: Auto open or close the Angular Sidebar based on screen width using the mediaQuery property with CSS media query syntax.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Auto close in Angular Sidebar component
+# Auto Close in Angular Sidebar
 
 The Sidebar component supports responsive auto-close behavior, allowing it to automatically open or close based on screen resolution. This is configured using the [`mediaQuery`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#mediaquery) property (default: `null`), which accepts a `string` (e.g., `"max-width: 400px"`) or `MediaQueryList` to control the Sidebar’s state.
 

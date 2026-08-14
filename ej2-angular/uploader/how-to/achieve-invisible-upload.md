@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Achieve invisible upload in Angular Uploader component | Syncfusion
-description: Learn here all about Achieve invisible upload in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to perform an invisible upload in Angular Uploader | Syncfusion
+description: Perform an invisible upload in the Angular Uploader by handling the selected event and disabling the default file list, so files upload silently in the background.
 platform: ej2-angular
 control: Achieve invisible upload 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Achieve Invisible Upload in Angular Uploader Component
+# How to perform an invisible upload in Angular Uploader
 
 Implement invisible uploads by handling the uploader's `selected` event to trigger background uploads without showing the default file list. Refer to the example below.
 

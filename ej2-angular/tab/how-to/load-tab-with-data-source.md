@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load tab with data source in Angular Tab component | Syncfusion
-description: Learn here all about Load tab with data source in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to load tab with data source in Angular Tab | Syncfusion
+description: Bind the Angular Tab to a remote data source like OData with DataManager, mapping header and content fields into the items property.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load tab with data source in Angular Tab component
+# How to load tab with data source in Angular Tab
 
 You can bind any data object to Tab items by mapping the data to the [`header`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem/#header) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem/#content) property.
 

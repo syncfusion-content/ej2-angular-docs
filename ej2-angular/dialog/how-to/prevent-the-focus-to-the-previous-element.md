@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent focus to previous element in Angular Dialog | Syncfusion
-description: Learn how to prevent focus from returning to the previously focused element in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to prevent focus return in Angular Dialog | Syncfusion
+description: Keep the Syncfusion Angular Dialog from returning focus to the previous element after close by enabling preventFocus in the beforeClose event.
 platform: ej2-angular
 control: Prevent the focus to the previous element 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent focus from returning to previous element in Angular Dialog
+# How to prevent focus return in Angular Dialog
 
 By default, when the dialog closes, focus returns to the element that had focus before the dialog opened. Prevent this behavior using the `beforeClose` event by setting the `preventFocus` argument to `true`.
 

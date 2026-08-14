@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind the event to the buttons in Angular Dialog | Syncfusion
-description: Learn here all about Bind the event to the buttons in footer in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to bind events to footer buttons in Angular Dialog | Syncfusion
+description: Bind click handlers to Syncfusion Angular Dialog footer buttons through the buttons property to close the dialog or trigger custom actions.
 platform: ej2-angular
 control: Bind the event to the buttons in footer 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bind events to footer buttons in Angular Dialog component
+# How to bind events to footer buttons in Angular Dialog
 
 Bind actions to footer buttons using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) property. In the following example, the dialog closes when you click the buttons.
 

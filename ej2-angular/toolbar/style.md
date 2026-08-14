@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Toolbar Styling and Customization | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Toolbar | Syncfusion
+description: Style the Angular Toolbar by overriding e-toolbar, e-tbar-btn, e-icons, hover, and focus CSS classes for a custom appearance.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular Toolbar styling and customization
+# Style and Appearance in Angular Toolbar
 
 The following content provides the exact CSS structure that can be used to modify the Toolbar component's appearance based on user preference.
 

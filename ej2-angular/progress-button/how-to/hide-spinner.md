@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hide spinner in Angular Progress button component | Syncfusion
-description: Learn here all about Hide spinner in Syncfusion Angular Progress button component of Syncfusion Essential JS 2 and more.
+title: Hide spinner in Angular Progress Button | Syncfusion
+description: Hide the spinner in Angular Progress Button by applying the e-hide-spinner class through cssClass.
 platform: ej2-angular
 control: Hide spinner 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide spinner in Angular Progress button component
+# How to hide spinner in Angular Progress Button
 
 You can hide spinner in the ProgressButton by setting the `e-hide-spinner` property to [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#cssclass).
 

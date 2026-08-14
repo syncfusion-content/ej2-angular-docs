@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data source binding in Angular Menu component | Syncfusion
-description: Learn here all about Data source binding and custom menu items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: Data Source Binding in Angular Menu Bar | Syncfusion
+description: Bind the Angular Menu Bar to hierarchical or self-referential data with fields, and customize items using the template property.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data source binding and custom menu items in Angular Menu component
+# Data Source Binding and Custom Menu Items in Angular Menu Bar
 
 This section covers binding the Angular Menu component to hierarchical or self-referential data sources and customizing menu items using templates.
 

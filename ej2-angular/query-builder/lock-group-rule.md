@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Lock Group/Rule in Angular Query builder component | Syncfusion
-description: Learn here all about Lock Group/Rule in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Lock Group/Rule in Angular Query Builder UI | Syncfusion
+description: Lock rules and groups in the Syncfusion Angular Query Builder UI to make their field, operator, and value read-only via lockGroup and lockRule.
 platform: ej2-angular
 control: Lock Group/Rule 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Lock Group/Rule in Angular Query builder component
+# Lock Group/Rule in Angular Query Builder UI
 
 Prevent modifications to specific rules or entire groups by locking them. When a rule is locked, its field, operator, and value become read-only. Locking a group prevents all modifications to rules and nested groups within it. Control the visibility of lock buttons using the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#showbuttons) method.
 

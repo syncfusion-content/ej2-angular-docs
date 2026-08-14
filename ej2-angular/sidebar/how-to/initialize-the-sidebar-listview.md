@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Initialize the ListView in Angular Sidebar component | Syncfusion
-description: Learn here all about Initialize the ListView in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: How to initialize the Sidebar with ListView in Angular Sidebar | Syncfusion
+description: Embed a Syncfusion ListView inside the Angular Sidebar to build navigable menus, content selectors, or collapsible lists.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# ListView integration in Angular Sidebar component
+# How to initialize the Sidebar with ListView in Angular Sidebar
 
 The Sidebar component allows integration of any HTML elements or Syncfusion components within its content area, enabling dynamic and interactive layouts. This is particularly useful for incorporating components like ListView, TreeView in the Sidebar for navigation menus or collapsible lists.
 

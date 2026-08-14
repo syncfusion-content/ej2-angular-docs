@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Working with data in Angular Mention component | Syncfusion
-description: Learn here all about Working with data in Syncfusion Angular Mention component of Syncfusion Essential JS 2 and more.
+title: Working with Data in Angular Mention | Syncfusion
+description: Bind the Angular Mention to simple arrays, complex JSON, or remote services via DataManager, and map text, value, groupBy, and iconCss fields to the suggestion list.
 platform: ej2-angular
 control: Working with data 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Working with data in Angular Mention component
+# Working with Data in Angular Mention
 
 The Mention loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/mention/#datasource) property. It supports the data type of either `array` or `DataManager`.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add items in Angular List box component | Syncfusion
-description: Learn here all about Add items in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: How to add items in Angular ListBox | Syncfusion
+description: Add one or more items to the Angular ListBox at runtime by calling the addItems method on a button click and supplying the new items array.
 platform: ej2-angular
 control: Add items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add items in Angular List box component
+# How to add items in Angular ListBox
 
 To add an item or multiple items, [`addItems`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#additems) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items will be added while clicking `Add Items` button.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection in Angular List box component | Syncfusion
-description: Learn here all about Selection in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: Selection in Angular ListBox | Syncfusion
+description: Configure Angular ListBox selection with Single or Multiple mode via selectionSettings, use shift/ctrl+arrow keys for multi-select, and add checkboxes for Select All.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular List box component
+# Selection in Angular ListBox
 
 The ListBox provides support to select an item or a group of item by mouse or keyboard action. There are two selection modes available in list box,
 

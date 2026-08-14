@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular DateTime Picker | Syncfusion®
+description: Learn how to customize the Syncfusion Angular DateTime Picker appearance using CSS, the renderDayCell event, and highlight or disable specific dates.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Datetimepicker component
+# Customization in Angular DateTime Picker
 
 The DateTimePicker is available for UI customization that can be achieved by using available properties and events in the component.
 

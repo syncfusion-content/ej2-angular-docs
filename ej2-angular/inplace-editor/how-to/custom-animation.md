@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom animation in Angular Inplace editor component | Syncfusion
-description: Learn here all about Custom animation in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: How to set custom animation in Angular In-place Editor | Syncfusion
+description: Set a custom animation effect for the Angular In-place Editor popup mode by configuring the model inside popupSettings with a Tooltip effect.
 platform: ej2-angular
 control: Custom animation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom animation in Angular Inplace editor component
+# How to set custom animation in Angular In-place Editor
 
 In popup mode, the **In-place Editor** rendered with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 `Tooltip` component. You can use tooltip properties and events to customize the popup by configure properties into the [model](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings#model) property inside the [popupSettings](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/popupSettings) API.
 

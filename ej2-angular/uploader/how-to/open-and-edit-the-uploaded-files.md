@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Edit the uploaded files in Angular Uploader component | Syncfusion
-description: Learn here all about Open and edit the uploaded files in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to open and edit uploaded files in Angular Uploader | Syncfusion
+description: Open and edit Angular Uploader files after upload by capturing the server path in the success event and sending it through an HTTP header to the file handler.
 platform: ej2-angular
 control: Open and edit the uploaded files 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and edit uploaded files in Angular Uploader component
+# How to open and edit uploaded files in Angular Uploader
 
 The Uploader component allows you to open and edit files after uploading them to the server. This functionality is accomplished by using the `success` event of the Uploader.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Time masking in Angular Timepicker component | Syncfusion
-description: Learn here all about Time masking in Syncfusion Angular Timepicker component of Syncfusion Essential JS 2 and more.
+title: Mask Support in Angular TimePicker | Syncfusion®
+description: Learn how to enable mask support in the Syncfusion Angular TimePicker to enforce a valid time input pattern and improve form usability.
 platform: ej2-angular
 control: Time masking 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Time masking in Angular Timepicker component
+# Mask Support in Angular TimePicker
 
 TimePicker has `enableMask` property that provides the option to enable the built-in time masking support. Also, you must inject the MaskedDateTime module to enable the masking support.
 

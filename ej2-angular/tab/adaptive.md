@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adaptive in Angular Tab component | Syncfusion
-description: Learn here all about Adaptive in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Responsive Modes in Angular Tab | Syncfusion
+description: Handle overflow in the Angular Tab with Scrollable navigation arrows and touch swipes, or a Popup mode that groups items in a dropdown.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adaptive in Angular Tab component
+# Responsive Modes in Angular Tab
 
 The following section explains how the Tab component renders when its width exceeds the viewable area or when constrained within a specified [`width`](https://ej2.syncfusion.com/angular/documentation/api/tab/#width).
 

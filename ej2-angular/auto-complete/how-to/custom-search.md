@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom search in Angular Auto complete component | Syncfusion
-description: Learn here all about Custom search in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Customize highlight search in Angular AutoComplete | Syncfusion®
+description: Highlight matched characters in the Angular AutoComplete suggestion list using the highlight property or by customizing with the e-highlight class.
 platform: ej2-angular
 control: Custom search 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom search in Angular Auto complete component
+# How to customize highlight search in Angular AutoComplete
 
 The AutoComplete has built-in support to highlight the searched characters on suggested list items when enabled the [`highlight`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#highlight) property.
 

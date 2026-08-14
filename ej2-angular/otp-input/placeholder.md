@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Placeholder with Angular OTP Input component | Syncfusion
-description:  Learn here all about Placeholder with Angular OTP Input component of Syncfusion Essential JS 2 and more details.
+title: Placeholder in Angular OTP Input | Syncfusion
+description: Set placeholder hints on the Angular OTP Input fields using a single repeated character or a multi-character string mapped across inputs.
 platform: ej2-angular
 control: OTP Input
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Placeholder in Angular OTP Input component
+# Placeholder in Angular OTP Input
 
 The placeholder in OTP Input specifies the text displayed as a hint until the user enters a value. It provides guidance on the expected input format or purpose of each field.
 

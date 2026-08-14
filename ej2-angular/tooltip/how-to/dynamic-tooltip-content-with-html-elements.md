@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dynamic HTML Content in Angular Tooltip Component | Syncfusion
-description: Learn here all about Dynamic Tooltip content with html elements in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: How to add dynamic HTML content in Angular Tooltip | Syncfusion
+description: Render rich HTML inside the Syncfusion Angular Tooltip using tags like div, span, b, i, u, and a with inline styles applied to the content.
 platform: ej2-angular
 control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dynamic HTML content in Angular Tooltip component
+# How to add dynamic HTML content in Angular Tooltip
 
 The Tooltip component supports HTML tags through the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content/) property.
 

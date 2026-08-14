@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Positions in Angular Floating action button component | Syncfusion
-description: Learn here all about Positions in Syncfusion Angular Floating action button component of Syncfusion Essential JS 2 and more.
+title: Positions in Angular Floating Action Button | Syncfusion
+description: Position Angular Floating Action Button at nine preset locations on a target or the browser viewport.
 platform: ej2-angular
 control: Positions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Positions in Angular Floating action button component
+# Positions in Angular Floating Action Button
 
 The floating action button can be positioned anywhere on the [`target`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#target) using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#position) property. If the `target` is not defined, then FAB is positioned based on the browser viewport.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multiple selection in Angular TreeView component | Syncfusion
-description: Learn here all about Multiple selection in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Multi Selection in Angular Tree View | Syncfusion
+description: Enable Angular Tree View multi-selection with allowMultiSelection, supporting Ctrl and Shift click for individual or range picks.
 platform: ej2-angular
 control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple selection in Angular TreeView component
+# Multi Selection in Angular Tree View
 
 The TreeView component supports selecting multiple nodes simultaneously, enabling users to perform batch operations on several items. Selection highlights the chosen nodes and provides interactive feedback through visual indicators.
 

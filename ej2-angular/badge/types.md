@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in Angular Badge component | Syncfusion
-description: Learn here all about Types in Syncfusion Angular Badge component of Syncfusion Essential JS 2 and more.
+title: Types in Angular Badge | Syncfusion
+description: Explore the predefined color styles and shape types of the Syncfusion Angular Badge, including primary, success, danger, and notification variants.
 platform: ej2-angular
 control: Types 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in Angular Badge component
+# Types in Angular Badge
 
 This section explains different styles and types of the badges.
 

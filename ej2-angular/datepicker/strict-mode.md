@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Strict mode in Angular Datepicker component | Syncfusion
-description: Learn here all about Strict mode in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: Strict Mode in Angular DatePicker | Syncfusion®
+description: Learn how to enable strict mode in the Syncfusion Angular DatePicker so only valid dates matching the format are accepted in the input.
 platform: ej2-angular
 control: Strict mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Strict mode in Angular Datepicker component
+# Strict Mode in Angular DatePicker
 
 The [`strictMode`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#strictmode)is an act,that allows the user to enter only the valid date within the specified `min/max` range in textbox.
 If the date is invalid, then the component will stay with the previous value.

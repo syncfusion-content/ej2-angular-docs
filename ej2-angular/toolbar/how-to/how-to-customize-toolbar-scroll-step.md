@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Toolbar scroll step in Angular Toolbar | Syncfusion
-description: Learn here all about How to customize toolbar scroll step in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to customize Toolbar scroll step in Angular Toolbar | Syncfusion
+description: Customize the Angular Toolbar scrollStep property to control how far items scroll when clicking the left or right navigation icon.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize toolbar scroll step in Angular Toolbar component
+# How to customize Toolbar scroll step in Angular Toolbar
 
 The Toolbar component supports customizing the scrolling distance when you click the left and right side navigation icons. You can customize the [`scrollStep`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#scrollstep) property for scrolling distance. Refer to the following code example.
 

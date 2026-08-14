@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable or disable items in Angular List box component | Syncfusion
-description: Learn here all about Enable or disable items in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: How to enable or disable items in Angular ListBox | Syncfusion
+description: Toggle items in the Angular ListBox between enabled and disabled states at runtime by calling the enableItems method with the target items array.
 platform: ej2-angular
 control: Enable or disable items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable or disable items in Angular List box component
+# How to enable or disable items in Angular ListBox
 
 To enable or disable items in the list box, [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#enableitems) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items are disabled by default and by clicking `Enable Items` buttons, the disabled items will be enabled.
 

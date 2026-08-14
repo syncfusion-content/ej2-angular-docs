@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Chips component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Chips component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular Chips | Syncfusion
+description: Customize Angular Chips styles, leading and trailing icons, avatars, and selection colors using the cssClass property.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Chips component
+# Customization in Angular Chips
 
 This section explains the customization of styles, leading icons, avatar, and trailing icons in the Chips component
 

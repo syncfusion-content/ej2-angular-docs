@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set tooltip for tree nodes in Angular TreeView component | Syncfusion
-description: Learn here all about Set tooltip for tree nodes in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: How to set tooltip for tree nodes in Angular Tree View | Syncfusion
+description: Show tooltips on Angular Tree View nodes by mapping a tooltip field in the data source via the fields configuration.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set tooltip for tree nodes in Angular TreeView component
+# How to set tooltip for tree nodes in Angular Tree View
 
 The Angular TreeView component provides built-in tooltip support for tree nodes, enhancing user experience by displaying additional information when hovering over nodes. This feature is particularly useful for displaying supplementary details, descriptions, or help text without cluttering the tree interface.
 

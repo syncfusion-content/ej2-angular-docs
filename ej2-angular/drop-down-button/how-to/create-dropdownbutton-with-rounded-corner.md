@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create dropdownbutton with rounded corner in Angular Drop down button component | Syncfusion
-description: Learn here all about Create dropdownbutton with rounded corner in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Create rounded corner in Angular Dropdown Menu | Syncfusion
+description: Create rounded Angular Dropdown Menu buttons by applying border-radius through the cssClass property.
 platform: ej2-angular
 control: Create dropdownbutton with rounded corner 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create dropdownbutton with rounded corner in Angular Drop down button component
+# How to create rounded corner in Angular Dropdown Menu
 
 DropDownButton with rounded corner can be achieved by adding `border-radius` CSS property to button element.
 

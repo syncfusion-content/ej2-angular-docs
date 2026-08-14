@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Check box in Angular TreeView component | Syncfusion
-description: Learn here all about Check box in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: CheckBox in Angular Tree View | Syncfusion
+description: Enable Angular Tree View checkboxes with showCheckBox for parent-child linked or independent selection via autoCheck.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check box in Angular TreeView component
+# CheckBox in Angular Tree View
 
 The TreeView component allows you to check multiple nodes without affecting the UI's appearance by enabling the [showCheckBox](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property. When this property is enabled, a checkbox appears before each TreeView node text, providing users with an intuitive selection mechanism.
 

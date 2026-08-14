@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Incremental search in Angular Drop down list component | Syncfusion
-description: Learn here all about Incremental search in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to do incremental search in Angular Dropdown List | Syncfusion®
+description: Use incremental search in Angular Dropdown List to jump to the closest matching item as you type, with sequential selection on repeat keys.
 platform: ej2-angular
 control: Incremental search 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Incremental search in Angular Drop down list component
+# How to do incremental search in Angular Dropdown List
 
 DropDownList supports incremental search, by default. You can search the list item by focusing the DropDownList and typing the characters in it. The closely matched items are selected sequentially.
 

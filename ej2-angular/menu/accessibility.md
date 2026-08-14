@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Menu component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Menu Bar | Syncfusion
+description: Use WAI-ARIA menubar, menu, and menuitem roles with keyboard navigation to make the Angular Menu Bar accessible to assistive technologies.
 control: Menu 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Menu component
+# Accessibility in Angular Menu Bar
 
 This section outlines how the Angular Menu component complies with accessibility standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

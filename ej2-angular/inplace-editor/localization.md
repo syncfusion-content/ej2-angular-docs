@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Inplace editor component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular In-place Editor | Syncfusion
+description: Localize the Angular In-place Editor text for different cultures using L10n, enable right-to-left layout, and format date, time, and numeric values.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Inplace editor component
+# Localization in Angular In-place Editor
 
 ## Localization
 

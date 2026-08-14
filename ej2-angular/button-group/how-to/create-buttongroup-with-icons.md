@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create buttongroup with icons in Angular Button Group | Syncfusion
-description: Learn here all about Create buttongroup with icons in Syncfusion Angular Button Group component of Syncfusion Essential JS 2 and more.
+title: How to create Button Group with icons in Angular | Syncfusion
+description: Add icons to Angular Button Group buttons by setting the iconCss property on each child button element.
 platform: ej2-angular
 control: Create buttongroup with icons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create buttongroup with icons in Angular Button Group component
+# How to create buttongroup with icons in Angular Button Group
 
 To create ButtonGroup with icons, `iconCss` property of the button component can be used.
 

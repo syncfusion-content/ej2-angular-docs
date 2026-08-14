@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form slider with formvalidator in Angular Range Slider component | Syncfusion
-description: Learn here all about Form slider with formvalidator in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: How to validate slider with FormValidator in Angular Range Slider | Syncfusion
+description: Validate the Angular Range Slider value within a form using Syncfusion FormValidator rules with min, max, validateHidden, and the changed event.
 platform: ej2-angular
 control: Range Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Formvalidator with Angular Range Slider component
+# How to validate slider with FormValidator in Angular Range Slider
 
 Validate Range Slider values using the built-in `FormValidator`. Follow the steps below to implement slider validation within a form.
 

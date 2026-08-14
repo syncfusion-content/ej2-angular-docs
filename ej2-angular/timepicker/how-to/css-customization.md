@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Css Customization in Angular TimePicker Component | Syncfusion
-description: Learn here all about css customization in Syncfusion Essential Angular TimePicker component, it's elements and more.
+title: How to CSS customize the TimePicker | Syncfusion®
+description: Learn how to apply custom CSS to the Syncfusion Angular TimePicker to change colors, fonts, sizes, and overall appearance of the control.
 platform: ej2-angular
 control: Css customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Css Customization in Angular TimePicker Component
+# How to CSS customize the TimePicker in Angular TimePicker
 
 TimePicker allows you to customize the textbox and popup list appearance to suit for your application by using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/timepicker/#cssclass) property.
 

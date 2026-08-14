@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in Angular Tooltip component | Syncfusion
-description: Learn here all about Animation in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Animation in Angular Tooltip | Syncfusion
+description: Animate the Syncfusion Angular Tooltip with built-in effects like FadeIn, FadeZoomIn, Flip, and Zoom, or apply transitions via the beforeOpen event.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in Angular Tooltip component
+# Animation in Angular Tooltip
 
 Animate the Tooltip using the [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#animation) property to control specific animation effects. This property allows you to set the delay, duration, and various other effects.
 

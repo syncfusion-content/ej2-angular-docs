@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Accordion component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Accordion | Syncfusion
+description: Make the Angular Accordion accessible with WAI-ARIA roles, states, keyboard navigation, and full WCAG 2.2 and Section 508 support.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Accordion component
+# Accessibility in Angular Accordion
 
 The Accordion component is designed to meet [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) specifications, applying the prompt WAI-ARIA roles, states, and properties along with the keyboard support. Thus, making it usable for people who use assistive WAI-ARIA Accessibility supports that is achieved through the attributes like `aria-labelledby`. It helps to provides information about the elements in a document for assistive technology. The component implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and tested in major screen readers.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize colorpicker in Angular Color picker component | Syncfusion
-description: Learn here all about Customize colorpicker in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: How to customize Color Picker in Angular Color Picker | Syncfusion
+description: Customize the Syncfusion Angular Color Picker with presetColors, hidden input area, custom handle SVG, icon-only primary button, and Excel-like UI.
 platform: ej2-angular
 control: Customize colorpicker 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize colorpicker in Angular Color picker component
+# How to customize Color Picker in Angular Color Picker
 
 ## Custom palette
 

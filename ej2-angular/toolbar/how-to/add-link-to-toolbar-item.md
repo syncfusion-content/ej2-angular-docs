@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add link to toolbar item in Angular Toolbar component | Syncfusion
-description: Learn here all about Add link to toolbar item in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to add link to Toolbar item in Angular Toolbar | Syncfusion
+description: Add interactive links or routing anchors inside Angular Toolbar items using ng-template with the template attribute.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add link to toolbar item in Angular Toolbar component
+# How to add link to Toolbar item in Angular Toolbar
 
 The Angular Toolbar component supports adding interactive links within toolbar items using Angular **ng-template**. This approach enables you to embed anchor elements or routing links directly into toolbar items while maintaining full control over their behavior and styling.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Two way binding in Angular Datepicker component | Syncfusion
-description: Learn here all about Two way binding in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: How to two-way binding in Angular DatePicker | Syncfusion®
+description: Learn how to achieve two-way binding in the Syncfusion Angular DatePicker using ngModel and property binding to keep the input in sync.
 platform: ej2-angular
 control: Two way binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Two way binding in Angular Datepicker component
+# How to two-way binding in Angular DatePicker
 
 The following example demonstrates how to achieve **two-way binding** by binding the **value** to the first DatePicker component by using property binding and binding the model data using **ngModel** to the second DatePicker component. The **value** of the DatePicker will get change, when their is any change in the property value or model value.
 

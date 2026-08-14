@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in Angular Chips component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion Angular Chips component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in Angular Chips | Syncfusion
+description: Enable drag and drop in Angular Chips with allowDragAndDrop and customize drag area and events for precise placement.
 platform: ej2-angular
 control: Chips
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in Angular Chips component
+# Drag and Drop in Angular Chips
 
 The Chips component enables drag and drop functionality for any chip when [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/chips/#allowdraganddrop) is set to **true**. Chips can be dragged and dropped within the same or across external ChipList containers.
 

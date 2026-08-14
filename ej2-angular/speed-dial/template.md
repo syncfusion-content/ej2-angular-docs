@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Speed dial component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Speed dial component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Speed Dial | Syncfusion
+description: Customize Angular Speed Dial item rendering using the itemTemplate property with Angular template syntax.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Speed dial component
+# Template in Angular Speed Dial
 
 This section explains available templates in SpeedDial component and its usage.
 

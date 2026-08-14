@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Tab component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Tab | Syncfusion
+description: Style the Angular Tab by overriding e-tab, e-tab-header, content, icon, and active item CSS classes for selected and hover states.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Tab component
+# Style and Appearance in Angular Tab
 
 The following content provides the exact CSS structure that can be used to modify the Tab component's appearance based on user preference. These styles can be applied through Angular component styles, external stylesheets, or global CSS files.
 

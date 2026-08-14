@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dimension in Angular Predefined dialogs component | Syncfusion
-description: Learn here all about Dimension in Syncfusion Angular Predefined dialogs component of Syncfusion Essential JS 2 and more.
+title: Dimension in Angular Predefined Dialogs | Syncfusion
+description: Set the width and height of Syncfusion Angular Predefined Dialogs in pixels or percentages, and limit them with max-width, max-height, min-width, and min-height.
 platform: ej2-angular
 control: Dimension 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dimension in Angular Predefined dialogs component
+# Dimension in Angular Predefined Dialogs
 
 Customize predefined dialog dimensions using the `height` and `width` properties. Specify dimension values in pixels or percentage format to change the default dialog width and height.
 

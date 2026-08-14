@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header content in Angular Card component | Syncfusion
-description: Learn here all about Header content in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
+title: Header and Content in Angular Card | Syncfusion
+description: Configure the Angular Card header with title, subtitle, and image elements, and place flexible content in the e-card-content area.
 platform: ej2-angular
 control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header content in Angular Card component
+# Header and Content in Angular Card
 
 ## Header
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom event emitter in Angular Timepicker component | Syncfusion
-description: Learn here all about Custom event emitter in Syncfusion Angular Timepicker component of Syncfusion Essential JS 2 and more.
+title: How to use custom event emitter in Angular TimePicker | Syncfusion®
+description: Learn how to implement a custom event emitter in the Syncfusion Angular TimePicker to share selected values between parent and child components.
 platform: ej2-angular
 control: Custom event emitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom event emitter in Angular Timepicker component
+# How to use custom event emitter in Angular TimePicker
 
 The **two-way binding** in TimePicker can also be achieved using the custom event binding and property binding in the controls present in two different components. To create custom event, we need to create an instance of `event emitter`.
 

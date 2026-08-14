@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in Angular Sidebar component | Syncfusion
-description: Learn here all about Types in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Types and Positions in Angular Sidebar | Syncfusion
+description: Configure the Angular Sidebar expand type as Over, Push, Slide, or Auto via the type property to suit different layout requirements.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in Angular Sidebar component
+# Types and Positions in Angular Sidebar
 
 The Sidebar component allows configuration of its expand behavior using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#type) property to suit various layout requirements, such as overlaying content or resizing the main content area.
 

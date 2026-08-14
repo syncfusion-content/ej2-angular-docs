@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular TreeView component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Tree View | Syncfusion
+description: Make the Angular Tree View accessible with WAI-ARIA tree, treeitem, and group roles plus arrow, Home, End, F2, and Esc shortcuts.
 platform: ej2-angular
 control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular TreeView component
+# Accessibility in Angular Tree View
 
 The TreeView component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility. The TreeView implements comprehensive accessibility features to support hierarchical data navigation, state management, and interactive operations for users with assistive technologies.
 

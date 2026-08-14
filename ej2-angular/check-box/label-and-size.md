@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Label and size in Angular Check box component | Syncfusion
-description: Learn here all about Label and size in Syncfusion Angular Check box component of Syncfusion Essential JS 2 and more.
+title: Label and size in Angular Checkbox | Syncfusion
+description: Customize Angular Checkbox label text and position, and choose from small, medium, or large built-in sizes.
 platform: ej2-angular
 control: Label and size 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Label and size in Angular Check box component
+# Label and size in Angular Checkbox
 
 This section explains the different sizes and labels.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form submit in Angular Button group component | Syncfusion
-description: Learn here all about Form submit in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
+title: How to form submit in Angular Button Group | Syncfusion
+description: Submit checked values from radio or checkbox Angular Button Groups using the name and value attributes in a form.
 platform: ej2-angular
 control: Form submit 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form submit in Angular Button group component
+# How to form submit in Angular Button Group
 
 The name attribute of the input element  is used to group radio/checkbox type ButtonGroup. When the radio/checkbox type are grouped in form, the checked items value attribute will be posted to server on form submit that can be retrieved through the name. The disabled radio/checkbox type value will not be sent to the server on form submit.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Buttons in Angular Inplace editor component | Syncfusion
-description: Learn here all about Buttons in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Buttons in Angular In-place Editor | Syncfusion
+description: Configure the save and cancel buttons in Angular In-place Editor using saveButton, cancelButton, and showButtons, plus actionOnBlur and submitOnEnter.
 platform: ej2-angular
 control: Buttons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Buttons in Angular Inplace editor component
+# Buttons in Angular In-place Editor
 
 The **In-place Editor** has an option to save and cancel using buttons. The [saveButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#savebutton) and [cancelButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#cancelbutton) properties accept the [ButtonModel](https://ej2.syncfusion.com/angular/documentation/api/button/buttonModel) objects for customizing the save and cancel button properties.
 

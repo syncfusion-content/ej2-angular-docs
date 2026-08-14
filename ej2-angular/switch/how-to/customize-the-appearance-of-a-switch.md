@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the appearance of a switch in Angular Switch component | Syncfusion
-description: Learn here all about Customize the appearance of a switch in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to customize the appearance of a switch in Angular Toggle Switch Button | Syncfusion
+description: Customize Angular Toggle Switch Button appearance by applying custom CSS classes through the cssClass property.
 platform: ej2-angular
 control: Customize the appearance of a switch 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the appearance of a switch in Angular Switch component
+# How to customize the appearance of a switch in Angular Toggle Switch Button
 
 You can customize the appearance of the Switch component using the CSS rules. Define your own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/switch#cssClass) property.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style appearance in Angular Calendar component | Syncfusion
-description: Learn here all about Style appearance in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Calendar | Syncfusion®
+description: Learn how to style and customize the appearance of the Syncfusion Angular Calendar using CSS classes for backgrounds, text, and navigation.
 platform: ej2-angular
 control: Style appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in Angular Calendar component
+# Style and Appearance in Angular Calendar
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Items in Angular Speed dial component | Syncfusion
-description: Learn here all about Items in Syncfusion Angular Speed dial component of Syncfusion Essential JS 2 and more.
+title: Items in Angular Speed Dial | Syncfusion
+description: Configure Angular Speed Dial action items with text, icons, disabled state, id, and tooltip title.
 platform: ej2-angular
 control: Items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Items in Angular Speed dial component
+# Items in Angular Speed Dial
 
 The Angular Speed Dial action items can be added by using [`items`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#items) property.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons and separator in Angular Split button component | Syncfusion
-description: Learn here all about Icons and separator in Syncfusion Angular Split button component of Syncfusion Essential JS 2 and more.
+title: Icons and separator in Angular Split Button | Syncfusion
+description: Use icons and separator options in Angular Split Button with iconCss, iconPosition, and separator settings.
 platform: ej2-angular
 control: Icons and separator 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons and separator in Angular Split button component
+# Icons and separator in Angular Split Button
 
 ## SplitButton Icons
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Badge customization in Angular Badge component | Syncfusion
-description: Learn here all about Badge customization in Syncfusion Angular Badge component of Syncfusion Essential JS 2 and more.
+title: How to customize badge in Angular Badge | Syncfusion
+description: Customize Syncfusion Angular Badge color, size, and position with custom CSS or font-size to match your application's visual design.
 platform: ej2-angular
 control: Badge customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Badge customization in Angular Badge component
+# How to customize badge in Angular Badge
 
 ## Color customization
 

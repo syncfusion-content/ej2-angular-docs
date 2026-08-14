@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Dashboard layout component with SystemJS | Syncfusion
-description: Learn here all about Initializing dashboard using systemjs in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: SystemJS Setup for Angular Dashboard Layout | Syncfusion
+description: Set up the Syncfusion Angular Dashboard Layout in a SystemJS-based Angular project with package install, systemjs.config, and module setup.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# SystemJS Setup for Angular Dashboard Layout Component
+# How to initialize Dashboard Layout using SystemJS
 
 The Dashboard Layout component can be initialized using `SystemJS` as follows.
 

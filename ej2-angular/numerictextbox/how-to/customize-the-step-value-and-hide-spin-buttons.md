@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the step value and hide spin buttons | Syncfusion
-description: Learn here all about Customize the step value and hide spin buttons in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: How to set step value in Angular Numeric Textbox | Syncfusion
+description: Configure the Angular Numeric Textbox increment step via the step property and hide the spin buttons entirely by setting showSpinButton to false.
 platform: ej2-angular
 control: Customize the step value and hide spin buttons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the step value and hide spin buttons
+# How to set step value in Angular Numeric Textbox
 
 The spin buttons enable users to increase or decrease the value by a predefined [`step`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#step) amount. The visibility of spin buttons can be controlled using the [`showSpinButton`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#showSpinButton) property.
 

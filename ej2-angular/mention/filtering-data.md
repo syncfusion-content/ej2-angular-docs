@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering data in Angular Mention component | Syncfusion
-description: Learn here all about Filtering data in Syncfusion Angular Mention component of Syncfusion Essential JS 2 and more.
+title: Filtering Data in Angular Mention | Syncfusion
+description: Filter Angular Mention suggestions as the user types, control the minimum input length with minLength, and switch between StartsWith, EndsWith, and Contains match modes.
 platform: ej2-angular
 control: Filtering data 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering data in Angular Mention component
+# Filtering Data in Angular Mention
 
 The Mention component has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
 

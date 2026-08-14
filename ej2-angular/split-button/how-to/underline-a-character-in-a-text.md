@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Underline a character in a text in Angular Split button component | Syncfusion
-description: Learn here all about Underline a character in a text in Syncfusion Angular Split button component of Syncfusion Essential JS 2 and more.
+title: How to underline a character in a text in Angular Split Button | Syncfusion
+description: Underline a specific character in Angular Split Button popup text using the beforeItemRender event.
 platform: ej2-angular
 control: Underline a character in a text 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Underline a character in a text in Angular Split button component
+# How to underline a character in a text in Angular Split Button
 
 To underline a particular character in a text, it can be handled in [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/split-button#beforeitemrender) event by adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 

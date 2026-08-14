@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular DropDownButton Component | Syncfusion
+title: Getting Started with Angular Dropdown Menu | Syncfusion
 description: Check out how to get started with the Syncfusion Angular DropDownButton component (Essential JS 2), including installation, setup, and a basic example.
 platform: ej2-angular
 control: Getting started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular DropDownButton component
+# Getting Started with Angular Dropdown Menu
 
 The DropDownButton component is used to toggle contextual overlays for displaying list of action items.
 

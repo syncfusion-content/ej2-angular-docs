@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resizing of panels in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Resizing of panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: Resizing Panels in Angular Dashboard Layout | Syncfusion
+description: Allow users to resize Dashboard Layout panels in any direction, configure resize handles, and call resizePanel programmatically in Angular.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL## 
 ---
 
-# Resizing of panels in Angular Dashboard layout component
+# Resizing Panels in Angular Dashboard Layout
 
 The Dashboard Layout component enables dynamic panel resizing functionality through the [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#allowresizing) property. This functionality allows users to dynamically resize panels using resizing handles that control panel dimensions in various directions.
 

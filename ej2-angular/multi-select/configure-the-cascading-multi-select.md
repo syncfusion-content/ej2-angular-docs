@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure Cascading MultiSelect in Angular | Syncfusion
+title: How to configure cascading in Angular MultiSelect Dropdown | Syncfusion
 description: Learn how to configure a cascading series of Angular MultiSelect components where one dropdown's options depend on another's selected value.
 platform: ej2-angular
 control: MultiSelect
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Configure a Cascading MultiSelect
+# How to configure cascading in Angular MultiSelect Dropdown
 
 A cascading MultiSelect consists of a series of dependent components, where the selection in one MultiSelect (the parent) determines the available options in another (the child). This is useful for guiding users through hierarchical data, such as selecting a country to populate a list of states, which in turn populates a list of cities.
 

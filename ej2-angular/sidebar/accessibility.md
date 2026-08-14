@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Sidebar component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Sidebar | Syncfusion
+description: Make the Angular Sidebar accessible with the WAI-ARIA complementary role, aria-label or aria-labelledby, and focusable trigger elements.
 control: Sidebar
 platform: ej2-react
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Sidebar component
+# Accessibility in Angular Sidebar
 
 The Sidebar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Item configuration in Angular Toolbar component | Syncfusion
-description: Learn here all about Item configuration in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: Item Configuration in Angular Toolbar | Syncfusion
+description: Configure Angular Toolbar items as Button, Separator, or Input with text, prefixIcon, suffixIcon, and tabIndex properties.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Item configuration in Angular Toolbar component
+# Item Configuration in Angular Toolbar
 
 The Toolbar renders by defining an array of [`items`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#items). Items can be constructed with the following built-in item types or custom templates.
 

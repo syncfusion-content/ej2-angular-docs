@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disabled Items in Angular AutoComplete component | Syncfusion
-description: Learn here all about Disabled Items in Syncfusion Angular AutoComplete component of Syncfusion Essential JS 2 and more.
+title: Disabled Items in Angular AutoComplete | Syncfusion®
+description: Disable individual Angular AutoComplete items via the disabled field or the disableItem method, and disable the entire control using the enabled property.
 platform: ej2-angular
 control: Disabled Items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled Items in Angular AutoComplete component
+# Disabled Items in Angular AutoComplete
 
 The AutoComplete provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 

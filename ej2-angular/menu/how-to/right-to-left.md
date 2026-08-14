@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Right to left in Angular Menu component | Syncfusion
-description: Learn here all about Right to left in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to enable right to left in Angular Menu Bar | Syncfusion
+description: Enable right-to-left layout in the Angular Menu Bar for Arabic, Hebrew, and Persian by setting the enableRtl property to true.
 platform: ej2-angular
 control: Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right to left in Angular Menu component
+# How to enable right to left in Angular Menu Bar
 
 The Syncfusion Angular Menu component supports Right-to-Left (RTL) layout, which is essential for languages such as Arabic, Hebrew, and Persian.
 

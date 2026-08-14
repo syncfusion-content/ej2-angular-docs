@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Initialize Sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Initialize Sidebar using systemjs in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: How to initialize Sidebar using SystemJS in Angular Sidebar | Syncfusion
+description: Initialize the Syncfusion Angular Sidebar in a SystemJS-based Angular setup with the correct systemjs.config.js mappings and styles.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Initialize Sidebar with SystemJS in Angular Sidebar component
+# How to initialize Sidebar using SystemJS in Angular Sidebar
 
 Sidebar can also be initialized using `SystemJS` as follows:
 

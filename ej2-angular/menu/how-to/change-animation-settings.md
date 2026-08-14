@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change animation settings in Angular Menu component | Syncfusion
-description: Learn here all about Change animation settings in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to change animation settings in Angular Menu Bar | Syncfusion
+description: Set the Angular Menu Bar open and close animation via the animationSettings property, choosing None, SlideDown, ZoomIn, or FadeIn.
 platform: ej2-angular
 control: Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize animation settings in Angular Menu component
+# How to change animation settings in Angular Menu Bar
 
 You can customize the animation behavior of the Angular Menu component using the [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuAnimationSettingsModel/) property. This allows you to control how the menu appears and disappears, enhancing the user experience with smooth transitions.
 

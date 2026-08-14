@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular RadioButton component | Syncfusion
+title: Getting Started with Angular Radio Button | Syncfusion
 description: Check out and learn about getting started with the Angular RadioButton component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular RadioButton component
+# Getting Started with Angular Radio Button
 
 The Radio Button component allows users to select a single option from a predefined set of mutually exclusive choices, ensuring only one option can be chosen at a time.
 

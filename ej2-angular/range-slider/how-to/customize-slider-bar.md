@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize slider bar in Angular Range Slider component | Syncfusion
-description: Learn here all about Customize slider bar in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: How to customize the slider bar in Angular Range Slider | Syncfusion
+description: Override the e-slider-track CSS class to apply gradients, custom colors, or range-based dynamic colors to the Angular Range Slider bar.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize bar in Angular Range Slider component
+# How to customize the slider bar in Angular Range Slider
 
 Customize the Range Slider bar appearance by overriding CSS classes. By default, the slider bar uses the `e-slider-track` class. Override this class to apply custom colors, gradients, or themes to the slider bar. The following code snippet demonstrates how to apply a gradient color to the slider bar.
 

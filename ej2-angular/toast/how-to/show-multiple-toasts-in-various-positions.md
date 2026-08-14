@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show multiple toasts in various positions in Angular Toast component | Syncfusion
-description: Learn here all about Show multiple toasts in various positions in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: How to show multiple toasts in positions in Angular Toast | Syncfusion
+description: Display multiple Syncfusion Angular Toast elements in different positions by instantiating separate Toast components for each region.
 platform: ej2-angular
 control: Show multiple toasts in various positions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show multiple toasts in various positions in Angular Toast component
+# How to show multiple toasts in positions in Angular Toast
 
 In default Toast position only updates once visible toasts get destroyed. If You needs to display multiple toasts with different position means needs to initiate another toast for achieving this.
 

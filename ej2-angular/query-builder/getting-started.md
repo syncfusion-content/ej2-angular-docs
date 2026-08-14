@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular Query Builder component | Syncfusion
-description:  Check out and learn how to get started with the Angular Query Builder component in Syncfusion, including setup, dependencies, and a basic example.
+title: Getting Started with Angular Query Builder UI | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Query Builder UI component. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Query Builder component
+# Getting Started with Angular Query Builder UI
 
 The Query Builder component enables users to create complex filtering conditions through an intuitive visual interface. It provides rule-based query creation, logical grouping, and customizable operators, allowing users to build, edit, and validate queries efficiently without writing manual query expressions.
 

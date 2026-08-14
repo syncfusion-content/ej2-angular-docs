@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create nested dialog in Angular Dialog component | Syncfusion
-description: Learn here all about Create nested dialog in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to create a nested Dialog in Angular Dialog | Syncfusion
+description: Learn how to open a child Dialog inside a parent Angular Dialog by setting the inner dialog target to the outer dialog element for stacked popups.
 platform: ej2-angular
 control: Create nested dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create nested dialog in Angular Dialog component
+# How to create a nested Dialog in Angular Dialog
 
 A Dialog can be nested within another Dialog. The following sample contains a parent and child dialog (inner dialog).
 

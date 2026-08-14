@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Timeline component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Timeline component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Timeline | Syncfusion
+description: See how the Syncfusion Angular Timeline meets WCAG 2.2, Section 508, ADA, and RTL support, with role=navigation and aria-label for assistive tech.
 platform: ej2-angular
 control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Timeline component
+# Accessibility in Angular Timeline
 
 The Timeline component conforms to widely accepted accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 

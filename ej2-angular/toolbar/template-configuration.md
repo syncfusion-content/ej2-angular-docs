@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template configuration in Angular Toolbar component | Syncfusion
-description: Learn here all about Template configuration in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: Template Configuration in Angular Toolbar | Syncfusion
+description: Configure Angular Toolbar items with ng-template to embed complex components like the Menu for advanced toolbar layouts.
 platform: ej2-angular
 control: Toolbar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template configuration in Angular Toolbar component
+# Template Configuration in Angular Toolbar
 
 The Angular Toolbar component supports template configuration through Angular's **ng-template** directive, enabling integration of complex UI components as toolbar items. Template configuration provides flexibility to customize toolbar items beyond standard button and separator types, allowing seamless integration of components like menus and custom controls.
 

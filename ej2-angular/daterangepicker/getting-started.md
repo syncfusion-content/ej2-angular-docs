@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Daterangepicker component | Syncfusion
-description:  Learn how to get started with the Syncfusion Angular DateRangePicker component, including setup, installation and basic configuration.
+title: Getting Started with Angular DateRangePicker | Syncfusion
+description: Learn how to get started with the Syncfusion Angular DateRangePicker control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular DateRangePicker component
+# Getting Started with Angular DateRangePicker
 
 The DateRangePicker component enables users to select a start date and end date from an interactive calendar interface, making it easy to define, view, and manage date ranges for filtering, scheduling, and reporting.
 

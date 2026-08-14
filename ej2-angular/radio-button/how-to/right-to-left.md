@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Right to left in Angular Radio button component | Syncfusion
-description: Learn here all about Right to left in Syncfusion Angular Radio button component of Syncfusion Essential JS 2 and more.
+description: Enable right-to-left rendering in Angular Radio Button by setting the enableRtl property to true.
 platform: ej2-angular
 control: Right to left 
 documentation: ug

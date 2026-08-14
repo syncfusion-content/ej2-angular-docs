@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent the popup close in Angular Datepicker component | Syncfusion
-description: Learn here all about Prevent the popup close in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: How to prevent the popup close in Angular DatePicker | Syncfusion®
+description: Learn how to keep the Syncfusion Angular DatePicker popup open by canceling the close event in the Calendar component or by handling blur events.
 platform: ej2-angular
 control: Prevent the popup close 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent the popup close in Angular Datepicker component
+# How to prevent the popup close in Angular DatePicker
 
 The following examples demonstrates how to prevent the popup from closing.
 

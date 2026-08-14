@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Calendar component | Syncfusion
-description: Learn here all about Globalization in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: Globalization in Angular Calendar | Syncfusion®
+description: Learn how to globalize the Syncfusion Angular Calendar by localizing culture-specific date formats, week, and month names using CLDR data.
 platform: ej2-angular
 control: Globalization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in Angular Calendar component
+# Globalization in Angular Calendar
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization) and also add culture specific customization and translation to the text [`localization`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/localization).
 

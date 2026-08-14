@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Setting cell size in Angular Dashboard Layout component | Syncfusion
-description: Learn how to configure cell dimensions, spacing, and aspect ratios in Syncfusion Angular Dashboard Layout component to create responsive grid layouts.
+title: Configuring the Layout in Angular Dashboard Layout | Syncfusion
+description: Configure cell dimensions, spacing, aspect ratios, and gridlines in the Syncfusion Angular Dashboard Layout to build responsive dashboard grids.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting cell size in Angular Dashboard Layout component
+# Configuring the Layout in Angular Dashboard Layout
 
 The entire layout dimensions are based on the height and width of the parent element. A responsive or static layout can be created by assigning percentage or static dimension values to the parent element. The layout automatically adapts to mobile resolutions by transforming into a stacked orientation so that the panels display in a vertical column.
 

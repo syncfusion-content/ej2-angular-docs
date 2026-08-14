@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Position in Angular AppBar component | Syncfusion
-description: Learn here all about Position in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
+title: Position in Angular AppBar | Syncfusion
+description: Place the Angular AppBar at the top, bottom, or as a sticky element on scroll using the position and isSticky properties.
 platform: ej2-angular
 control: AppBar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in Angular AppBar component
+# Position in Angular AppBar
 
 The AppBar position can be configured using the [position](https://ej2.syncfusion.com/angular/documentation/api/appbar#position) and [isSticky](https://ej2.syncfusion.com/angular/documentation/api/appbar#issticky) properties. The AppBar provides the following positioning options:
 

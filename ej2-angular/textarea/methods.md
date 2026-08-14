@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in Angular TextArea component | Syncfusion
-description: Checkout and learn about methods in the Angular TextArea component of Syncfusion Essential JS 2 and more.
+title: Methods in Angular TextArea | Syncfusion
+description: Programmatically interact with the Angular TextArea using focusIn, focusOut, and getPersistData methods to control focus and persisted state.
 control: Methods 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Methods in Angular TextArea Component
+# Methods in Angular TextArea
 
 This section outlines the methods available for interacting with the TextArea component.
 

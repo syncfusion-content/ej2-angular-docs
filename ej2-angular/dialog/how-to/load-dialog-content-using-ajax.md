@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load dialog content using ajax in Angular Dialog component | Syncfusion
-description: Learn here all about Load dialog content using ajax in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to load Dialog content using AJAX in Angular Dialog | Syncfusion
+description: Load Syncfusion Angular Dialog content dynamically from a remote endpoint using the AJAX library and bind the response in the success event.
 platform: ej2-angular
 control: Load dialog content using ajax 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load dialog content using AJAX in Angular Dialog component
+# How to load Dialog content using AJAX in Angular Dialog
 
 Load dialog content dynamically from an external source using the AJAX library. The AJAX library sends the request and loads the dialog content using its `success` event.
 

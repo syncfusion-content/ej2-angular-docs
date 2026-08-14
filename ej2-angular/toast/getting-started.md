@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Toast component | Syncfusion
+title: Getting Started with Angular Toast | Syncfusion
 description: Get started with the Angular Toast component in Syncfusion. Learn how to set up an Angular project, install packages, add styles, and display a basic toast.
 platform: ej2-angular
 control: Getting started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Toast component
+# Getting Started with Angular Toast
 
 The Toast component is a notification pop-up used to display on the desired position with required message and header icons.
 

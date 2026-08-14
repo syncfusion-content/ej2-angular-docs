@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migration from CSS TextBox to Angular TextBox component | Syncfusion
-description: Learn how to migrate from CSS-based TextBox to Angular TextBox component for enhanced features like floating labels, validation, and improved functionality.
+description: Migrate from CSS-based TextBox markup to the Syncfusion Angular TextBox component for floating labels, validation, and built-in clear support.
 platform: ej2-angular
 control: Migration from css TextBox to angular TextBox 
 documentation: ug

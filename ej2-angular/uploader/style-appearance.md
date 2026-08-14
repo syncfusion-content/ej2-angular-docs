@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style appearance in Angular Uploader component | Syncfusion
-description: Learn here all about Style appearance in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Uploader | Syncfusion
+description: Style the Angular Uploader wrapper, browse button, drop area, file list, and progress bar with custom CSS for height, width, colors, and fonts.
 platform: ej2-angular
 control: Style appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular Uploader component
+# Style and Appearance in Angular Uploader
 
 The following CSS structure allows you to customize the Uploader component's appearance to match your design preferences.
 

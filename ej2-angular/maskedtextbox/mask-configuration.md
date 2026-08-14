@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mask configuration in Angular Maskedtextbox component | Syncfusion
-description: Learn here all about Mask configuration in Syncfusion Angular Maskedtextbox component of Syncfusion Essential JS 2 and more.
+title: Mask Configuration in Angular MaskedTextBox | Syncfusion
+description: Configure the Syncfusion Angular MaskedTextBox mask with standard elements, custom characters, regular expressions, and a customizable prompt character.
 platform: ej2-angular
 control: Mask configuration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mask configuration in Angular Maskedtextbox component
+# Mask Configuration in Angular MaskedTextBox
 
 The mask is a combination of standard and custom mask elements that validates the user input based on its behavior.
 

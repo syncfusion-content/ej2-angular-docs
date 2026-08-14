@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configure TextBox options in Angular TextBox | Syncfusion
-description: Learn how to configure and use TextBox options in the Syncfusion Angular TextBox component to enhance user input and UI customization.
+title: TextBox Options in Angular TextBox | Syncfusion
+description: Configure Syncfusion Angular TextBox options like the clear button, custom HTML attributes, and disabled state to control user input.
 platform: ej2-angular
 control: TextBox
 documentation: ug
 ---
 
-# Configure TextBox Options in Angular TextBox
+# TextBox Options in Angular TextBox
 
 The Syncfusion Angular TextBox component provides essential features to enhance user experience, including a built-in clear button for quick input reset and the ability to configure custom HTML attributes. This guide covers these primary features along with additional state management capabilities.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Numerictextbox component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Numeric Textbox | Syncfusion
+description: Build accessible Angular Numeric Textbox inputs with WCAG 2.2 and Section 508 support, spinbutton ARIA attributes, and Arrow Up/Down keyboard shortcuts.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular NumericTextBox component
+# Accessibility in Angular Numeric Textbox
 
 The NumericTextBox component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the NumericTextBox component.
 

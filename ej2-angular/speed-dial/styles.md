@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles in Angular Speed dial component | Syncfusion
-description: Learn here all about Styles in Syncfusion Angular Speed dial component of Syncfusion Essential JS 2 and more.
+title: Styles in Angular Speed Dial | Syncfusion
+description: Style Angular Speed Dial button icons, text, and overall look using openIconCss, closeIconCss, and content properties.
 platform: ej2-angular
 control: Styles 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles in Angular Speed dial component
+# Styles in Angular Speed Dial
 
 This section briefs different ways to style SpeedDial component.
 

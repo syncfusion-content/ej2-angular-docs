@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Draggable in Angular Predefined dialogs component | Syncfusion
-description: Learn here all about Draggable in Syncfusion Angular Predefined dialogs component of Syncfusion Essential JS 2 and more.
+title: Draggable in Angular Predefined Dialogs | Syncfusion
+description: Enable dragging on Syncfusion Angular Predefined Dialogs (alert, confirm, prompt) by setting the isDraggable property to reposition the popup.
 platform: ej2-angular
 control: Draggable 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Draggable in Angular Predefined dialogs component
+# Draggable in Angular Predefined Dialogs
 
 Predefined dialogs support dragging within the target container by grabbing the dialog header. Use the `isDraggable` property to allow users to reposition the dialog dynamically.
 

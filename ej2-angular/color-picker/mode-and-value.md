@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mode and value in Angular Color Picker component | Syncfusion
-description: Learn how to set the Color Picker's mode and value properties in Angular to render the palette and define the selected color using hex codes.
+title: Mode and Value in Angular Color Picker | Syncfusion
+description: Configure the Syncfusion Angular Color Picker mode to render Palette on load and set the initial value with 3, 4, 6, or 8-digit hex codes including alpha.
 platform: ej2-angular
 control: Color Picker
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mode and value in Angular Color Picker component
+# Mode and Value in Angular Color Picker
 
 ## Rendering palette at initial load
 

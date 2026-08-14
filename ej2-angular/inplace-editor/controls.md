@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Controls in Angular Inplace editor component | Syncfusion
-description: Learn here all about Controls in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Controls in Angular In-place Editor | Syncfusion
+description: Render built-in and injectable components in the Angular In-place Editor, including AutoComplete, ComboBox, DatePicker, and Slider via the type property.
 platform: ej2-angular
 control: Controls 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Controls in Angular Inplace editor component
+# Controls in Angular In-place Editor
 
 **In-place Editor** renders various components based on the [type](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#type) property and it have built-in and injectable components. To use injectable components, inject the required modules into **`In-place Editor`**. By default, the `type` property set to `Text` and render the `TextBox`.
 

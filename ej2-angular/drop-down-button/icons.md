@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons in Angular Drop down button component | Syncfusion
-description: Learn here all about Icons in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Icons in Angular Dropdown Menu | Syncfusion
+description: Add and position icons on Angular Dropdown Menu buttons using iconCss and customize placement with iconPosition.
 platform: ej2-angular
 control: Icons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons in Angular Drop down button component
+# Icons in Angular Dropdown Menu
 
 ## DropDownButton icons
 

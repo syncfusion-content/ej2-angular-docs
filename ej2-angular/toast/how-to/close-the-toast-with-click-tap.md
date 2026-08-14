@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Close the toast with click tap in Angular Toast component | Syncfusion
-description: Learn here all about Close the toast with click tap in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: How to close the toast with click tap in Angular Toast | Syncfusion
+description: Close a static Syncfusion Angular Toast on click or tap by handling the clicked event args and manually hiding the toast element.
 platform: ej2-angular
 control: Close the toast with click tap 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Close the toast with click tap in Angular Toast component
+# How to close the toast with click tap in Angular Toast
 
 In default, toast gets expired based on timeOut value. You can customize toast hiding process, You can customize only hide with click/tap action by setting event args in [clicked](https://ej2.syncfusion.com/angular/documentation/api/toast/toastclickeventargs#clicktoclose) callback function with [static Toast](../../toast/timeout#static-toast).
 

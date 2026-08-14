@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary view in Angular Query builder component | Syncfusion
-description: Learn here all about Summary view in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: How to show the summary view in Angular Query Builder UI | Syncfusion
+description: Show a human-readable summary of the constructed query in the Syncfusion Angular Query Builder UI by setting the summaryView property to true.
 platform: ej2-angular
 control: Summary view 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Summary view in Angular Query builder component
+# How to show the summary view in Angular Query Builder UI
 
 The summary view displays a human-readable representation of the constructed query. By default, the summary view is hidden. Enable it by setting the [`summaryView`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#summaryview) property to true.
 

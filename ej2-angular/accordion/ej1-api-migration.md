@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 to EJ2 API Migration for Accordion | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: EJ1 to EJ2 API Migration in Angular Accordion | Syncfusion
+description: Migrate the Angular Accordion from EJ1 to EJ2 with a property and event mapping for accessibility, animation, items, and common APIs.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 to EJ2 API migration in Angular Accordion component
+# EJ1 to EJ2 API Migration in Angular Accordion
 
 This guide assists developers in migrating the Accordion component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 EJ1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2 EJ2, mapping deprecated or changed APIs to their EJ2 equivalents. EJ2 offers improved Angular integration, modernized APIs, enhanced performance, and built-in accessibility features compared to EJ1. Key differences include EJ2’s use of `ng-template` for content rendering, `dataSource` for data binding, and native ARIA support.
 

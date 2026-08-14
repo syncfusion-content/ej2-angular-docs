@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular TreeView Component | Syncfusion
-description:  Checkout and learn about getting started with Angular TreeView component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Tree View | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Tree View control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular TreeView component
+# Getting Started with Angular Tree View
 
 The TreeView component displays hierarchical data in a structured format, allowing users to navigate, expand, and collapse items efficiently in various scenarios.
 

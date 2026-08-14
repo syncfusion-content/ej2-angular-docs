@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Separator with Angular OTP Input component | Syncfusion
-description:  Learn here all about Separator with Angular OTP Input component of Syncfusion Essential JS 2 and more details.
+title: Separator in Angular OTP Input | Syncfusion
+description: Add a separator character between Angular OTP Input fields to visually distinguish and organize each input box for clearer entry.
 platform: ej2-angular
 control: OTP Input
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Separator in Angular OTP Input component
+# Separator in Angular OTP Input
 
 The separator specifies the character or symbol displayed between each OTP input field to visually distinguish and organize the inputs. Common separators include hyphens (`-`), spaces, or dashes. Configure the separator character using the [separator](https://ej2.syncfusion.com/angular/documentation/api/otp-input#separator) property.
 

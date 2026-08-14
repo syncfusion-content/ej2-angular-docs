@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Query builder component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Query Builder UI | Syncfusion
+description: Customize the Syncfusion Angular Query Builder UI with header, column, and rule templates using ngTemplate, create, write, and destroy callbacks.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Query builder component
+# Template in Angular Query Builder UI
 
 Customize the Query Builder's header and column interfaces using templates. Templates enable you to replace default UI elements with custom components, providing complete control over the user experience.
 

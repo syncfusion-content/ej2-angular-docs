@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrate UI Elements into Angular Card Component | Syncfusion
-description: Learn here all about Integrate other component inside the card in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
+title: How to integrate other component in Angular Card | Syncfusion
+description: Host any Syncfusion component such as ListView inside an Angular Card content area to build rich, interactive composite UI layouts.
 platform: ej2-angular
 control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate other component inside the card in Angular Card component
+# How to integrate other component in Angular Card
 
 The Card component provides a flexible container that can host any other component within its content area. This approach enables rich, interactive interfaces by combining the structured layout benefits of cards with the functionality of other components. The example demonstrates integrating a ListView component inside a card to create a To-Do list interface.
 

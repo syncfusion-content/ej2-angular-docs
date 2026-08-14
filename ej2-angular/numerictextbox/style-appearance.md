@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style appearance in Angular Numerictextbox component | Syncfusion
-description: Learn here all about Style appearance in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Numeric Textbox | Syncfusion
+description: Customize the Angular Numeric Textbox wrapper height and font size, and override spin up and down icon glyphs and colors using CSS rules.
 platform: ej2-angular
 control: Style appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in Angular NumericTextBox component
+# Style and Appearance in Angular Numeric Textbox
 
 The following CSS structure can be used to customize the NumericTextBox appearance based on user preference.
 

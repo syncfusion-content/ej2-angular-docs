@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Floating Action Button component
+# Getting Started with Angular Floating Action Button
 
 The Floating Action Button component allows users to quickly access and perform a primary action through a prominent, floating button interface.
 

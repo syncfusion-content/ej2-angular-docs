@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customized checkbox in Angular Check box component | Syncfusion
-description: Learn here all about Customized checkbox in Syncfusion Angular Check box component of Syncfusion Essential JS 2 and more.
+title: How to customized checkbox in Angular Checkbox | Syncfusion
+description: Customize Angular Checkbox appearance with your own CSS classes assigned through the cssClass property.
 platform: ej2-angular
 control: Customized checkbox 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customized checkbox in Angular Check box component
+# How to customized checkbox in Angular Checkbox
 
 ## Customize CheckBox Appearance
 

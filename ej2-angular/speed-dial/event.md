@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Event in Angular Speed dial component | Syncfusion
-description: Learn here all about Event in Syncfusion Angular Speed dial component of Syncfusion Essential JS 2 and more.
+title: Events in Angular Speed Dial | Syncfusion
+description: Handle Angular Speed Dial events such as clicked, created, open, close, and before open or close.
 platform: ej2-angular
 control: Event 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Event in Angular Speed dial component
+# Events in Angular Speed Dial
 
 This section explains the [Angular Speed Dial](https://www.syncfusion.com/angular-components/angular-speed-dial) events that will be triggered when appropriate actions are performed.
 

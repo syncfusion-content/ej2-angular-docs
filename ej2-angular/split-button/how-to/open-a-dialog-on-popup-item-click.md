@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open a dialog on popup item click in Angular Split button component | Syncfusion
-description: Learn here all about Open a dialog on popup item click in Syncfusion Angular Split button component of Syncfusion Essential JS 2 and more.
+title: How to open a dialog on popup item click in Angular Split Button | Syncfusion
+description: Open a Dialog control when an Angular Split Button popup item is selected using the select event.
 platform: ej2-angular
 control: Open a dialog on popup item click 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open a dialog on popup item click in Angular Split button component
+# How to open a dialog on popup item click in Angular Split Button
 
 This section explains about how to open a dialog on SplitButton popup item click. This can be achieved by handling dialog open in [`select`](https://ej2.syncfusion.com/angular/documentation/api/split-button#select) event of the SplitButton.
 

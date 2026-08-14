@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Tooltip component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular Tooltip | Syncfusion
+description: Customize the Syncfusion Angular Tooltip look by passing CSS class names to cssClass to style the tip pointer, background, font, and popup shell.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Tooltip component
+# Customization in Angular Tooltip
 
 Customize the tooltip using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#cssclass) property, which accepts custom CSS class names to define user-defined styles and themes.
 

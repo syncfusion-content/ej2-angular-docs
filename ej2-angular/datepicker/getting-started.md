@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Datepicker component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular DatePicker component, including setup, installation and basic configuration.
+title: Getting Started with Angular DatePicker | Syncfusion
+description: Learn how to get started with the Syncfusion Angular DatePicker control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular DatePicker component
+# Getting Started with Angular DatePicker
 
 The DatePicker component enables users to select a date or date range from a calendar popup, providing an intuitive and efficient way to enter date-related information.
 

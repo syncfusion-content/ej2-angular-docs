@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change switch state using toggle method in Angular Switch component | Syncfusion
-description: Learn here all about Change switch state using toggle method in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to change switch state using toggle method in Angular Toggle Switch Button | Syncfusion
+description: Toggle Angular Toggle Switch Button state programmatically using the toggle method and handle change events.
 platform: ej2-angular
 control: Change switch state using toggle method 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change switch state using toggle method in Angular Switch component
+# How to change switch state using toggle method in Angular Toggle Switch Button
 
 This section explains about how to toggle between the switch states using [`toggle`](https://ej2.syncfusion.com/angular/documentation/api/switch/#toggle) method.
 

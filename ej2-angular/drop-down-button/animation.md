@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in Angular Drop down button component | Syncfusion
-description: Learn here all about Animation in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Animation in Angular Dropdown Menu | Syncfusion
+description: Customize Angular Dropdown Menu popup open and close animations with slide, zoom, fade, and none effects.
 platform: ej2-angular
 control: Animation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in Angular Drop down button component
+# Animation in Angular Dropdown Menu
 
 The [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#animationsettings) property is used to customize the animation of the DropDownButton popup. The supported effects for DropDownButton are,
 

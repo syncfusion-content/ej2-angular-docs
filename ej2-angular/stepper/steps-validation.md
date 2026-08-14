@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in Angular Stepper component | Syncfusion
-description:  Learn here all about Validation in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Validation in Angular Stepper | Syncfusion
+description: Show success or error icons on Angular Stepper steps by setting the isValid property to indicate validation state.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Steps validation in Angular Stepper component
+# Validation in Angular Stepper
 
 The Angular Stepper component allows configuration of validation states for individual steps to indicate completion or errors, useful for multi-step forms or task workflows. Set the validation state using the `isValid` property of the `StepModel`. When `isValid` is `true`, a success icon (e.g., checkmark) is displayed; when `false`, an error icon (e.g., cross) is shown. The default value is `null`, indicating no validation icon.
 

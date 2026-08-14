@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in Angular Auto complete component | Syncfusion
-description: Learn here all about Templates in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular AutoComplete | Syncfusion®
+description: Customize every part of the Angular AutoComplete suggestion list with item, group, header, footer, no-records, and action-failure templates.
 platform: ej2-angular
 control: Templates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Auto complete component
+# Templates in Angular AutoComplete
 
 The AutoComplete has been provided with several options to customize each list items, group title, header and footer elements.
 

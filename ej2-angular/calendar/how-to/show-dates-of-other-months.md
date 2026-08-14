@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show dates of other months in Angular Calendar component | Syncfusion
-description: Learn here all about Show dates of other months in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: How to show dates of other months in Angular Calendar | Syncfusion®
+description: Learn how to show the leading and trailing dates of adjacent months in the Syncfusion Angular Calendar by applying custom CSS styles.
 platform: ej2-angular
 control: Show dates of other months 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show dates of other months in Angular Calendar component
+# How to show dates of other months in Angular Calendar
 
 The following example demonstrates how to show dates in other months.
 

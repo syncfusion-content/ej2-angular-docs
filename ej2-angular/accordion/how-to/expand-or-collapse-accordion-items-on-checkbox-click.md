@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Control Accordion with checkbox | Syncfusion
-description: Learn here all about Expand or collapse accordion items on checkbox click in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: Accordion with checkbox in Angular Accordion | Syncfusion
+description: Toggle Angular Accordion items from a checkbox using the click, expanding events, and the expandItem method for centralized control.
 platform: ej2-angular
 control: Accordion 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Control Accordion with checkbox in Angular Accordion component
+# How to control Accordion with checkbox in Angular Accordion
 
 The Angular Accordion component typically expands or collapses items when clicking their headers or expand/collapse icons. However, you can control this behavior programmatically using a checkbox to toggle multiple items simultaneously, which is useful for centralized control in forms or dashboards.
 

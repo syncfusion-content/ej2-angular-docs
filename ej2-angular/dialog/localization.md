@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Dialog component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Dialog | Syncfusion
+description: Localize the Syncfusion Angular Dialog close button tooltip and other default text using the L10n load function to support multiple cultures.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Dialog component
+# Localization in Angular Dialog
 
 Use the localization library to localize the default text content of the Dialog. The close button's tooltip text is localized based on the selected culture.
 

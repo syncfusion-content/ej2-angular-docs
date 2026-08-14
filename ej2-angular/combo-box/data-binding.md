@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Combo box component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular ComboBox | Syncfusion®
+description: Bind Angular ComboBox to local arrays, JSON objects, or remote services via OData, Web API, and DataManager with field mapping for text, value, and group.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Combo box component
+# Data Binding in Angular ComboBox
 
 The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#datasource) property. It supports the data type of `array` or `DataManager`.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timezone Behavior in Angular Datetimepicker | Syncfusion
-description: Learn here all about Timezone Behavior in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Timezone Behavior in Angular DateTime Picker | Syncfusion®
+description: Learn how the Syncfusion Angular DateTime Picker handles timezones and how to configure UTC-based values for consistent date and time selection.
 platform: ej2-angular
 control: Timezone Behavior 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timezone Behavior in DateTimePicker Control
+# Timezone Behavior in Angular DateTime Picker
 
 The DateTimePicker component displays and maintains the selected date and time value based on the client system’s current time zone. When a user selects a value, it is stored and rendered using the local time zone of the system at the time of selection. This ensures that the value remains consistent and predictable during user interaction.
 

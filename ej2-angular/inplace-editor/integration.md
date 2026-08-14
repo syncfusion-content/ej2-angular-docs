@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integration in Angular Inplace editor component | Syncfusion
-description: Learn here all about Integration in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Integration in Angular In-place Editor | Syncfusion
+description: Integrate HTML5 inputs and Angular components into the In-place Editor using the template property as a string or an ng-template reference.
 platform: ej2-angular
 control: Integration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integration in Angular Inplace editor component
+# Integration in Angular In-place Editor
 
 The **In-place Editor** supports adding HTML5 input components using the [template](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#template) property. The Template property can be given as either a `string` or a `query selector`.
 

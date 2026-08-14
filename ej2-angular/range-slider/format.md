@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Format in Angular Range Slider component | Syncfusion
-description: Learn here all about Format in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: Format in Angular Range Slider | Syncfusion
+description: Format Angular Range Slider tick and tooltip values with built-in numeric, currency, and percentage specifiers, or custom renderingTicks logic.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Format in Angular Range Slider component
+# Format in Angular Range Slider
 
 The [`format`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel#format) property customizes how Slider values are displayed. Formatted values are also applied to ARIA attributes for accessibility. Two approaches are available for implementing value formatting.
 

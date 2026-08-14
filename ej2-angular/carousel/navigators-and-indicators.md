@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Navigators and indicators in Angular Carousel component | Syncfusion
-description: Learn here all about Navigators and indicators in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
+title: Navigators and Indicators in Angular Carousel | Syncfusion
+description: Add previous, next, and play controls plus Default, Dynamic, Fraction, or Progress indicators to the Angular Carousel with custom templates.
 platform: ej2-angular
 control: Carousel
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Navigators and indicators in Angular Carousel component
+# Navigators and Indicators in Angular Carousel
 
 The navigators and indicators provide manual slide transition controls, allowing users to navigate through carousel content at their own pace and track their current position within the slide sequence.
 

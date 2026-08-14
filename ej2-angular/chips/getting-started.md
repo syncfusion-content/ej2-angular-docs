@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Chips component | Syncfusion
+title: Getting Started with Angular Chips | Syncfusion
 description:  Check out how to get started with the Angular Chips component in Syncfusion Essential JS 2, including installation, styling, and a basic example.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Chips component
+# Getting Started with Angular Chips
 
 The Chips component allows users to display information, selections, tags, or categories in a compact and interactive format, with support for customization and user actions.
 

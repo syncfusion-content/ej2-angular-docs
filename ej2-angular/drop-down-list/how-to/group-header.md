@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Group header in Angular Drop down list component | Syncfusion
-description: Learn here all about Group header in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to disable group header in Angular Dropdown List | Syncfusion®
+description: Disable the fixed group header in Angular Dropdown List by hiding the header element with the CSS visibility attribute.
 platform: ej2-angular
 control: Group header 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Group header in Angular Drop down list component
+# How to disable the fixed group header in Angular Dropdown List
 
 The following example demonstrate about how to disable the Fixed group header in DropDownList through CSS by using `visibility` attribute.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind data using two way binding in Angular Switch component | Syncfusion
-description: Learn here all about Bind data using two way binding in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to bind data using two way binding in Angular Toggle Switch Button | Syncfusion
+description: Use two-way binding in Angular Toggle Switch Button with ngModel to keep its checked state in sync with other controls.
 platform: ej2-angular
 control: Bind data using two way binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bind data using two way binding in Angular Switch component
+# How to bind data using two way binding in Angular Toggle Switch Button
 
 Switch component supports two way binding.
 

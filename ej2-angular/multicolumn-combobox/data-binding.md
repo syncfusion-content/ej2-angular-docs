@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data binding in Angular MultiColumn ComboBox component | Syncfusion
+title: Data Binding in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Data binding in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Binding in Angular MultiColumn ComboBox component
+# Data Binding in Angular MultiColumn ComboBox
 
 The MultiColumn ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#datasource) property. It supports the data type of `object arrays` or `DataManager`.
 

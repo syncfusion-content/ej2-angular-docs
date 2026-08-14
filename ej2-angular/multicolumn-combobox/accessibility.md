@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Angular MultiColumn ComboBox component | Syncfusion
+title: Accessibility in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular MultiColumn ComboBox component
+# Accessibility in Angular MultiColumn ComboBox
 
 The MultiColumn ComboBox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

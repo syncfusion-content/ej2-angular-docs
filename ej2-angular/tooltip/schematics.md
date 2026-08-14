@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Schematics in Angular Tooltip component | Syncfusion
-description: Learn here all about Schematics in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Schematics in Angular Tooltip | Syncfusion
+description: Use Angular schematics to add the Syncfusion Tooltip module, install dependencies, import styles, and generate component code in your Angular project.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Schematics in Angular Tooltip component
+# Schematics in Angular Tooltip
 
 Angular schematics is a workflow tool that generates components, modules, and resolves dependency issues. Schematics enhance ease of use and development in the Angular environment.
 

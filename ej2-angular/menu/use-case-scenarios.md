@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Use case scenarios in Angular Menu component | Syncfusion
-description: Learn here all about Use case scenarios in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: Use Case Scenarios in Angular Menu Bar | Syncfusion
+description: Build scrollable, toolbar-integrated, hamburger, and mobile-ready Angular Menu Bar layouts with sidebar and listview components.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use case scenarios in Angular Menu component
+# Use Case Scenarios in Angular Menu Bar
 
 This section demonstrates practical use cases for the Angular Menu component, including scrollable menus, toolbar integration, hamburger menus, and mobile views.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Variants in Angular Message component | Syncfusion
-description: Learn here all about Variants in Syncfusion Angular Message component of Syncfusion Essential JS 2 and more.
+title: Variants in Angular Message | Syncfusion
+description: Choose the Syncfusion Angular Message appearance with Text, Outlined, or Filled variants to match your application's design language.
 platform: ej2-angular
 control: Variants 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Variants in Angular Message component
+# Variants in Angular Message
 
 The Message has predefined appearance variants for different visual representations. The variants of the message can be changed based on the [variant](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#variant) property.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Image Restrictions in Angular Image editor component | Syncfusion
-description: Learn here all about Image Restrictions in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Image Restrictions in Angular Image Editor | Syncfusion
+description: Restrict uploaded images in the Syncfusion Angular Image Editor by allowed file extensions and minimum or maximum file size using the uploadSettings property.
 platform: ej2-angular
 control: Image Restrictions
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Image Restrictions in the Angular Image Editor component
+# Image Restrictions in Angular Image Editor
 
 The Image Editor allows users to specify image extensions, as well as the minimum and maximum image sizes for uploaded or loaded images using the [`uploadSettings`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#uploadsettings) property. End users will receive a clear alert message if an uploaded image does not meet the defined criteria, ensuring a seamless and user-friendly upload experience.
 

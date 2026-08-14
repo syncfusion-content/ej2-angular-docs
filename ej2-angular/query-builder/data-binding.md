@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Query builder component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Query Builder UI | Syncfusion
+description: Bind the Syncfusion Angular Query Builder UI to local arrays, DataManager, OData, OData v4, Web API, and complex nested data sources.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Query builder component
+# Data Binding in Angular Query Builder UI
 
 The Query Builder uses `DataManager` to support both local and remote data sources. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) property with either a `DataManager` instance or a JavaScript object array.
 

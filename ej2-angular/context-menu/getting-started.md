@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Context menu component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Context menu component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Context Menu | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Context Menu control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Context Menu component
+# Getting Started with Angular Context Menu
 
 The Context Menu component provides relevant actions based on the selected context, offering quick access to commands in various scenarios.
 

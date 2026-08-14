@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Reactive form in Angular Daterangepicker component | Syncfusion
-description: Learn here all about Reactive form in Syncfusion Angular Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: How to use reactive form with Angular DateRangePicker | Syncfusion®
+description: Learn how to integrate the Syncfusion Angular DateRangePicker with Angular reactive forms using FormControl, FormGroup, and formControlName.
 platform: ej2-angular
 control: Reactive form 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reactive form in Angular Daterangepicker component
+# How to use reactive form in Angular DateRangePicker
 
 DateRangePicker is a form component and validation is playing vital role in forms to get the valid data.
 Here to showcase the DateRangePicker with form validations we have used the reactive form.

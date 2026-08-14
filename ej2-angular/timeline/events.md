@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Angular Timeline component | Syncfusion
-description: Learn here all about Events in Syncfusion Angular Timeline component of Syncfusion Essential JS 2 and more.
+title: Events in Angular Timeline | Syncfusion
+description: Handle the created and beforeItemRender events of the Syncfusion Angular Timeline to react after render or customize each item before display.
 platform: ej2-angular
 control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular Timeline component
+# Events in Angular Timeline
 
 This section describes the Timeline events that trigger when appropriate actions are performed. The following events are available in the Timeline component.
 

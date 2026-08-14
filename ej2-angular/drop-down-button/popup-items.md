@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Popup items in Angular Drop down button component | Syncfusion
-description: Learn here all about Popup items in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Popup items in Angular Dropdown Menu | Syncfusion
+description: Add icons, separators, and URL support to Angular Dropdown Menu popup items with iconCss and other properties.
 platform: ej2-angular
 control: Popup items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Popup items in Angular Drop down button component
+# Popup items in Angular Dropdown Menu
 
 ## Icons
 

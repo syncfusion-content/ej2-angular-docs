@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular TextArea component | Syncfusion
-description: Check out how to get started with the Angular TextArea component of Syncfusion Essential JS 2., including setup, configuration, and basic usage.
+title: Getting Started with Angular TextArea | Syncfusion
+description: Learn how to set up the Syncfusion Angular TextArea in a project with Angular CLI, configure theming, and render a multi-line input for comments or descriptions.
 platform: ej2-angular
 control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular TextArea component
+# Getting Started with Angular TextArea
 
 The TextArea component allows users to enter, edit, and manage multi-line text input, making it ideal for longer content such as comments, descriptions, and messages.
 

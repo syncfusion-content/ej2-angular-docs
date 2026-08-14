@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set the disabled state in Angular Split button component | Syncfusion
-description: Learn here all about Set the disabled state in Syncfusion Angular Split button component of Syncfusion Essential JS 2 and more.
+title: How to set the disabled state in Angular Split Button | Syncfusion
+description: Disable the Angular Split Button by setting the disabled property to true.
 platform: ej2-angular
 control: Set the disabled state 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the disabled state in Angular Split button component
+# How to set the disabled state in Angular Split Button
 
 SplitButton component can be enabled or disabled by [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/split-button#disabled) property.
 To disable SplitButton component, set the disabled property as true.

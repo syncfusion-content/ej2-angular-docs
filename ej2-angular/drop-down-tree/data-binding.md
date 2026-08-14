@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Dropdown Tree component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Dropdown Tree component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Dropdown Tree | Syncfusion
+description: Bind the Angular Dropdown Tree to local arrays, self-referential data, hierarchical JSON, or remote services via DataManager, with optional lazy load on demand.
 platform: ej2-angular
 control: Dropdown Tree
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Dropdown Tree component
+# Data Binding in Angular Dropdown Tree
 
 The Dropdown Tree component provides flexible data binding capabilities to display hierarchical data from various sources. Data binding is essential for populating the Dropdown Tree with dynamic content and can be configured through the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/fieldsModel/#datasource) property, which is a member of the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#fields) property. This enables seamless integration with both local data arrays and remote data services.
 

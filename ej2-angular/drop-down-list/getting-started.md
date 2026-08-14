@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Dropdown List component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular Dropdown List component, including setup, installation, and basic configuration.
+title: Getting Started with Angular Dropdown List | Syncfusion®
+description: Learn how to get started with the Syncfusion® Angular Dropdown List component, including setup, installation, and basic configuration.
 platform: ej2-angular
 control: Dropdown List
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Dropdown List component
+# Getting Started with Angular Dropdown List
 
 The Dropdown List component allows users to select a single value from a predefined list, providing an efficient interface for single-item selection scenarios.
 

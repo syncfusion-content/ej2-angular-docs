@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Inplace editor component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Style in Angular In-place Editor | Syncfusion
+description: Customize the Angular In-place Editor appearance with CSS for text color, font, dotted underline, and save or cancel action button icons.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Inplace editor component
+# Style in Angular In-place Editor
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Context menu component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: How to customize templates in Angular Context Menu | Syncfusion
+description: Embed tables, CheckBoxes, and other UI components inside Angular Context Menu items by using the beforeItemRender event for rich item content.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template customization in Angular Context menu component
+# How to customize templates in Angular Context Menu
 
 The ContextMenu component supports extensive template customization, allowing you to embed complex UI elements and interactive components within menu items. This flexibility enables creating rich, context-aware menus that go beyond simple text-based navigation.
 

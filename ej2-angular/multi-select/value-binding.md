@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Value binding in Angular Multi select component | Syncfusion
+title: Value Binding in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Value binding in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Value binding 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value binding in ##Platform_Name## MultiSelect component
+# Value Binding in Angular MultiSelect Dropdown
 
 Value binding in the MultiSelect component allows you to associate data values with each list item, enabling efficient management and retrieval of selected values programmatically. The MultiSelect component provides flexibility in binding both primitive data types and complex objects to meet various application requirements.
 

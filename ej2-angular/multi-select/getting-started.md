@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular MultiSelect component | Syncfusion
+title: Getting Started with Angular MultiSelect Dropdown | Syncfusion
 description: Learn how to get started with the Syncfusion Angular MultiSelect component, including setup, installation, and basic configuration.
 platform: ej2-angular
 control: MultiSelect
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular MultiSelect component
+# Getting Started with Angular MultiSelect Dropdown
 
 The MultiSelect component allows users to select multiple values from a dropdown list, providing an intuitive interface for multi-item selection scenarios.
 

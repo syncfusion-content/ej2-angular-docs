@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: CSS Structure in Angular Dashboard Layout | Syncfusion
+description: Apply CSS selectors to customize panel headers, content, resize handles, and the dashboard background in Syncfusion Angular Dashboard Layout.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styling and CSS Customization in Angular Dashboard Layout component
+# CSS Structure in Angular Dashboard Layout
 
 The Angular Dashboard Layout component provides extensive styling capabilities through CSS customization. This guide demonstrates how to modify the component's appearance using CSS selectors to match specific design requirements.
 

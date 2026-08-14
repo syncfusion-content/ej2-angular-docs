@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Splitter component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Splitter Component | Syncfusion
+description: Discover the Syncfusion Angular Splitter component for building resizable, collapsible layouts with multiple and nested panes, configurable sizing, and rich content.
 platform: ej2-angular
 control: Index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Splitter component
+# About Syncfusion Angular Splitter Component.
 
 The Splitter component is used to create different complex layouts in the web application by using multiple and nested panes.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Auto complete component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Migrate from Essential JS 1 in Angular AutoComplete | Syncfusion®
+description: Migrate Angular AutoComplete code from Essential JS 1 to JS 2 with a property-by-property API mapping for data binding, filtering, templates, and events.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Auto complete component
+# Migrate from Essential JS 1 in Angular AutoComplete
 
 This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 > MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.
@@ -68,10 +68,10 @@ This article describes the API migration process of  AutoComplete component from
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 | **Default** | **Property:** *cssClass* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [cssClass]="cssClass" />` | **Property:** *cssClass* <br/> `<ej-autocomplete id="autocomplete" [cssClass]="customClass"></ej-autocomplete>`|
-| **Height** | **Property:** *height* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [height]="height" />`| **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#cssclass) property.** |
-| **showRoundedCorner**   | **Property:** *showRoundedCorner* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [showRoundedCorner]="showRoundedCorner" />` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#cssclass) property.**|
+| **Height** | **Property:** *height* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [height]="height" />`| **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#cssclass) property.** |
+| **showRoundedCorner**   | **Property:** *showRoundedCorner* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [showRoundedCorner]="showRoundedCorner" />` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#cssclass) property.**|
 | **Width** | **Property:** *width* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [width]="width" />`| **Property:** *width* <br/> `<ej-autocomplete id="autocomplete" [width]="300px"></ej-autocomplete>`|
-| **Visibility** | **Property:** *visible* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [visible]="true" />` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#cssclass) property.** |
+| **Visibility** | **Property:** *visible* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [visible]="true" />` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#cssclass) property.** |
 
 ## Grouping
 
@@ -101,7 +101,7 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-| **Default** | **Property:** *allowSorting* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [allowSorting]="true" />` | **Acheivable through the [sortOrder](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#sortorder) property.** |
+| **Default** | **Property:** *allowSorting* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [allowSorting]="true" />` | **Acheivable through the [sortOrder](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#sortorder) property.** |
 | **Order of sorting** | **Property:** *sortOrder* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [sortOrder]="sortOrder" />`|**Property:** *sortOrder*<br/> `<ejs-autocomplete id="country" [sortOrder]="sortOrder"></ejs-autocomplete>`|
 
 ## Accessibility
@@ -114,9 +114,9 @@ This article describes the API migration process of  AutoComplete component from
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------ | ----------- |
-|**Selecting particular value**| **Property**: *selectValueByKey* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [selectValueByKey]="selectValueByKey" />`|**Acheivable through the [value](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#value) property.**  | **Property**: *value*<br/>`<input type="text" id="databindinglocal" ej-autocomplete [value]="value" />` | **Property:** *value*<br/> `<ejs-autocomplete id="country" [value]="data"></ejs-autocomplete>`|
+|**Selecting particular value**| **Property**: *selectValueByKey* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [selectValueByKey]="selectValueByKey" />`|**Acheivable through the [value](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#value) property.**  | **Property**: *value*<br/>`<input type="text" id="databindinglocal" ej-autocomplete [value]="value" />` | **Property:** *value*<br/> `<ejs-autocomplete id="country" [value]="data"></ejs-autocomplete>`|
 | **Selecting particular text** | **Property:** *text*<br/> `<input type="text" id="databindinglocal" ej-autocomplete [text]="text" />` | **Not applicable** |
-| **Selecting particular value** |**Method:** *selectValueByKey*<br/>`<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/> `obj.selectValueByKey("key")`| **Acheivable through the [value](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#value) property.**  |
+| **Selecting particular value** |**Method:** *selectValueByKey*<br/>`<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/> `obj.selectValueByKey("key")`| **Acheivable through the [value](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#value) property.**  |
 | **Selecting particular text** |**Method:** *selectValueByText* <br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/> `obj.selectValueByText("key")`|**Not applicable** |
 | **Select event** |**Event**: *select*<br/>`<input type="text" id="databindinglocal" ej-autocomplete (select)="select($event)" />` | **Event:** *select* <br/> `<ejs-autocomplete id="country" (select)="select($event)"></ejs-autocomplete>`|
 
@@ -128,7 +128,7 @@ This article describes the API migration process of  AutoComplete component from
 | **Enable persistence** | **Property:** *enablePersistence*<br/> `<input type="text" id="databindinglocal" ej-autocomplete [enablePersistence]="true" />`  | **Property:** *enablePersistence* <br/> `<ejs-autocomplete id="country" [enablePersistence]="true"></ejs-autocomplete>`|
 | **Loading icon** | **Property:** *showLoadingIcon* <br/>`<input type="text" id="databindinglocal" ej-autocomplete [showLoadingIcon]="true" />` | **By default,it is showing** |
 | **Read only** | **Property:** *readOnly* <br/> `<input type="text" id="databindinglocal" ej-autocomplete [readOnly]="true" />` | **Property:** *readOnly*  `<ej-autocomplete id="autocomplete" [readOnly]="true"></ej-autocomplete>`  |
-| **Disable** | **Method:** *disable*<br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/>`obj.disable();` | **Acheivable through the [enabled](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#enabled) property.**  |
+| **Disable** | **Method:** *disable*<br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/>`obj.disable();` | **Acheivable through the [enabled](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#enabled) property.**  |
 
 ## Common
 
@@ -140,9 +140,9 @@ This article describes the API migration process of  AutoComplete component from
 | **Destroy** | **Method:** *destroy*<br/> `<input type="text" id="autocomplete" ej-autocomplete />`<br/>`$("#autocomplete").ejAutoComplete("destroy");`| **Method:** *destroy* <br/>`<ejs-autocomplete id="country"></ejs-autocomplete>`<br/> <br/>`@ViewChild('sample') public autoObj: AutoCompleteComponent;`<br/><br/>`autoObj.destroy();`|
 | **Reset the autocomplete** | **Method:** *clearText*<br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/>`obj.clearText();`  | `<ej-autocomplete id="autocomplete" [value]=""></ej-autocomplete>`  |
 | **Multicolumn** | **Property:** *multiColumnSettings*<br/> `<ej-autocomplete id="autocomplete" datasource="ViewBag.datasource"><e-multicolumnsettings enable="true" show-header="true" string-format="{0} ({1})" search-column-indices="@val.SearchColumnIndices"><e-multi-columns><e-multi-column field="UniqueKey" header-text="Unique Key"></e-multi-column><e-multi-column field="Text" header-text="Text"></e-multi-column></e-multi-columns></e-multicolumnsettings></ej-autocomplete>` |**Not applicable** |
-| **Hide the Autocomplete** | **Method:** *hide*<br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/>`obj.hide();` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#cssclass) property.**
+| **Hide the Autocomplete** | **Method:** *hide*<br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/>`obj.hide();` | **Acheivable through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#cssclass) property.**
 | **Getting particular text** | **Method:** *getActiveText* <br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/>`obj.getActiveText();`|**Not applicable** |
-| **Getting particular value** | **Method:** *getValue*<br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/>obj.getValue();` |**Acheivable through the [value](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/#value) property.** |
+| **Getting particular value** | **Method:** *getValue*<br/> `<input type="text" id="databindinglocal" ej-autocomplete />`<br/>`@ViewChild('sample') public obj: AutoCompleteComponent;`<br/>obj.getValue();` |**Acheivable through the [value](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#value) property.** |
 | **Change event** | **Event:** *change*<br/>`<input type="text" id="databindinglocal" ej-autocomplete (change)="change($event)" />`|**Event:** *change* <br/>`<ejs-autocomplete id="country" (change)="onChange($event)"></ejs-autocomplete>`|
 | **Create event** | **Event:** *create* <br/>`<input type="text" id="databindinglocal" ej-autocomplete (create)="create($event)" />`|**Event:** *created* <br/>`<ejs-autocomplete id="country" (created)="onCreated($event)"></ejs-autocomplete>`|
 | **Destroy event** | **Event:** *destroy* <br/>`<input type="text" id="databindinglocal" ej-autocomplete (destroy)="destroy($event)" />` |**Event:** *destroyed* <br/>`<ejs-autocomplete id="country" (destroyed)="onDestroy($event)"></ejs-autocomplete>`|

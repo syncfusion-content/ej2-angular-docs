@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Render a dialog using ng template in Angular Dialog component | Syncfusion
-description: Learn here all about Render a dialog using ng template in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to render Dialog using ng-template in Angular Dialog | Syncfusion
+description: Provide the Syncfusion Angular Dialog header, footer, and content using ng-template directives for full structural control of the popup.
 platform: ej2-angular
 control: Render a dialog using ng template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render a dialog using ng-template in Angular Dialog component
+# How to render a Dialog using ng-template in Angular Dialog
 
-Provide HTML elements as the dialog header, footer, and content using `ng-template` directives. For more details, refer to the [Angular Documentation](https://angular.io/guide/structural-directives#the-ng-template).
+Provide HTML elements as the dialog header, footer, and content using `ng-template` directives.
 
 In this [example](https://ej2.syncfusion.com/angular/demos/#/material/dialog/template), the dialog header, footer, and content are rendered using `ng-template` directives.
 

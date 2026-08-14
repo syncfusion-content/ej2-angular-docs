@@ -1,14 +1,14 @@
 ---
 layout: post
-title: User interaction in Angular Signature component | Syncfusion
-description: Learn here all about User interaction in Syncfusion Angular Signature component of Syncfusion Essential JS 2 and more.
+title: User Interaction in Angular Signature | Syncfusion
+description: Enable undo, redo, clear, disabled, and read-only modes in the Angular Signature to control the user signing experience.
 platform: ej2-angular
 control: User interaction 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# User interaction in Angular Signature component
+# User Interaction in Angular Signature
 
 The Signature component supports the following user interactions to enhance the signing experience:
 

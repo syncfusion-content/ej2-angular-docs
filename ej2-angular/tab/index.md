@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Tab component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Tab Component | Syncfusion
+description: Explore the Syncfusion Angular Tab, a content panel for showing multiple contents in a single space with adaptive, animated, and accessible headers.
 platform: ej2-angular
 control: Index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Tab component
+# About Syncfusion Angular Tab Component.
 
 The [Angular Tab](https://www.syncfusion.com/angular-components/angular-tabs) is a content panel to show multiple contents in a specific space, one at a time.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Timepicker component | Syncfusion
-description: Learn here all about Globalization in Syncfusion Angular Timepicker component of Syncfusion Essential JS 2 and more.
+title: Globalization in Angular TimePicker | Syncfusion®
+description: Learn how to globalize the Syncfusion Angular TimePicker by configuring culture-specific time formats using CLDR JSON data.
 platform: ej2-angular
 control: Globalization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in Angular Timepicker component
+# Globalization in Angular TimePicker
 
 Globalization is the combination of internationalization and localization. You can adapt the component to various languages by means of parsing and formatting the date or number [`internationalization`](../common/Globalization/internationalization) and also add culture specific customization and translation to the text [`localization`](../common/globalization/localization).
 

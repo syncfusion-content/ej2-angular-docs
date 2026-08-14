@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles in Angular Floating action button component | Syncfusion
-description: Learn here all about Styles in Syncfusion Angular Floating action button component of Syncfusion Essential JS 2 and more.
+title: Styles in Angular Floating Action Button | Syncfusion
+description: Apply predefined styles like primary, outline, success, and danger to Angular Floating Action Button with cssClass.
 platform: ej2-angular
 control: Styles 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styles in Angular Floating action button component
+# Styles in Angular Floating Action Button
 
 This section explains the different styles of Floating Action Button.
 

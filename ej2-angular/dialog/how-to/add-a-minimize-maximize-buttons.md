@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add a minimize maximize buttons in Angular Dialog | Syncfusion
-description: Learn here all about Add a minimize maximize buttons in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to add min and max buttons in Angular Dialog | Syncfusion
+description: Add custom minimize and maximize buttons to the Syncfusion Angular Dialog header using the headerTemplate property and click event handlers.
 platform: ej2-angular
 control: Add a minimize maximize buttons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add minimize and maximize buttons to Angular Dialog component
+# How to add minimize and maximize buttons in Angular Dialog
 
 The Angular Dialog component enables users to minimize or maximize the dialog window. Add minimize and maximize custom buttons near the close icon in the dialog header using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#headertemplate) property, and handle button click events as shown in the following sample.
 

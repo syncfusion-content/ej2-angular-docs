@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template driven forms in Angular Dialog | Syncfusion
-description: Learn here all about Use template driven forms inside dialog in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to use template-driven forms in Angular Dialog | Syncfusion
+description: Build an Angular template-driven form with validation inside a Syncfusion Dialog by combining ngModel bindings and form validation directives.
 platform: ej2-angular
 control: Use template driven forms inside dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use template-driven forms inside dialog in Angular Dialog component
+# How to use template-driven forms in Dialog in Angular Dialog
 
 The following sample demonstrates how to implement template-driven forms with validation inside the dialog. For more details, refer to the [Angular Documentation](https://v17.angular.io/guide/forms#template-driven-forms).
 

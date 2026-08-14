@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize icon and width in Angular Drop down button component | Syncfusion
-description: Learn here all about Customize icon and width in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Customize icon and width in Angular Dropdown Menu | Syncfusion
+description: Customize Angular Dropdown Menu icon position, button width, and icon size using cssClass and iconPosition.
 platform: ej2-angular
 control: Customize icon and width 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize icon and width in Angular Drop down button component
+# How to customize icon and width in Angular Dropdown Menu
 
 Width of the DropDownButton can be customized by setting required width to the dropdown element.
 

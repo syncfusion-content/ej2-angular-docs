@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Button Group Component | Syncfusion
-description: Learn here all about accessibility in Syncfusion Essential Angular Button Group component, it's elements and more.
+title: Accessibility in Angular Button Group | Syncfusion
+description: Learn about accessibility support in Angular Button Group, including WCAG 2.2, keyboard navigation, and screen readers.
 control: Accessibility 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Button Group Component
+# Accessibility in Angular Button Group
 
 The Button group component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

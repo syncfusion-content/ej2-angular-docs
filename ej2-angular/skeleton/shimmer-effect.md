@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Shimmer effect in Angular Skeleton component | Syncfusion
-description: Learn here all about Shimmer effect in Syncfusion Angular Skeleton component of Syncfusion Essential JS 2 and more.
+title: Shimmer effect in Angular Skeleton | Syncfusion
+description: Animate Syncfusion Angular Skeleton placeholders with Wave, Pulse, or Fade effects to indicate loading content to users.
 platform: ej2-angular
 control: Shimmer effect 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Shimmer effect in Angular Skeleton component
+# Shimmer effect in Angular Skeleton
 
 You can use the [`shimmerEffect`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#shimmereffect) property to change animation effect in the skeleton control. Skeleton supports `Wave`, `Pulse` and `Fade` effects and by default, the `shimmerEffect` is set to `Wave` effect.
 

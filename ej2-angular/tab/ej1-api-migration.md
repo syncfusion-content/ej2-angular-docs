@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API migration in Angular Tab component | Syncfusion
-description: Learn here all about EJ1 API migration in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in Angular Tab | Syncfusion
+description: Migrate the Angular Tab from EJ1 to EJ2 with mapped properties, methods, and events including items, animation, headerPlacement, and overflowMode.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API migration in Angular Tab component
+# EJ1 API Migration in Angular Tab
 
 This article describes the API migration process of Tab component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Center based on current scroll in Angular Dialog | Syncfusion
-description: Learn here all about Center the dialog based on current scroll position in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to center the Dialog on scroll in Angular Dialog | Syncfusion
+description: Center the Syncfusion Angular modal Dialog based on the current page scroll position so the popup stays aligned with the visible viewport.
 platform: ej2-angular
 control: Center the dialog based on current scroll position 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Center the dialog based on current scroll position in Angular Dialog
+# How to center the Dialog on scroll in Angular Dialog
 
 The dialog centers based on the target container by default. If no target is specified, the dialog renders relative to the body and centers at the current viewport position.
 

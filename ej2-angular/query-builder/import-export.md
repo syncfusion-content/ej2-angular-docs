@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Import export in Angular Query builder component | Syncfusion
-description: Learn here all about Import export in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Import Export in Angular Query Builder UI | Syncfusion
+description: Import and export rules in the Syncfusion Angular Query Builder UI as JSON, Inline SQL, Parameter SQL, Named Parameter SQL, or MongoDB queries.
 platform: ej2-angular
 control: Import export 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Importing and Exporting in Angular Query builder component
+# Import Export in Angular Query Builder UI
 
 Import predefined query conditions and export constructed rules in multiple formats: JSON, SQL, and MongoDB. This streamlines query management and enables seamless integration with external systems and saved configurations.
 

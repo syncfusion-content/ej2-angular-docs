@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons support in Angular Drop down list component | Syncfusion
-description: Learn here all about Icons support in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to show items with icons in Angular Dropdown List | Syncfusion®
+description: Add icons to Angular Dropdown List items by mapping the iconCss field to a CSS class for visual representation in the popup list.
 platform: ej2-angular
 control: Icons support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons support in Angular Drop down list component
+# How to show list items with icons in Angular Dropdown List
 
 You can render **icons** to the list items by mapping the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#fields) &nbsp;fields. This `iconCss` fields create a span in the list item with mapped class name to allow styling as per your need.
 

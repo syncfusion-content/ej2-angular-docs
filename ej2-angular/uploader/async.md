@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Async in Angular Uploader component | Syncfusion
-description: Learn here all about Async in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: Asynchronous Upload in Angular Uploader | Syncfusion
+description: Configure asynchronous file uploads in the Angular Uploader using save and remove action URLs, with support for auto, manual, single, and multiple file selection modes.
 platform: ej2-angular
 control: Async 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Asynchronous file upload in Angular Uploader component
+# Asynchronous Upload in Angular Uploader
 
 The Uploader component supports asynchronous file uploads to the server.
 The upload process requires save and remove action URLs to manage file operations on the server.

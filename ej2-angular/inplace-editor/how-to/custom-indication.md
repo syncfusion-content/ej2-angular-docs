@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom indication in Angular Inplace editor component | Syncfusion
-description: Learn here all about Custom indication in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: How to add custom indication in Angular In-place Editor | Syncfusion
+description: Add a custom CSS indication to unsaved Angular In-place Editor values by handling actionSuccess and checking primaryKey in e-value-wrapper.
 platform: ej2-angular
 control: Custom indication 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom indication in Angular Inplace editor component
+# How to add custom indication in Angular In-place Editor
 
 You can add custom indication to unsaved input value by using the [actionSuccess](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#actionsuccess) event, when data not submitted to the server.
 

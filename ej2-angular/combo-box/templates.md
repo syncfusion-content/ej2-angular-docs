@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in Angular Combo box component | Syncfusion
-description: Learn here all about Templates in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular ComboBox | Syncfusion®
+description: Customize every part of the Angular ComboBox popup with item, group, header, and footer templates to render rich content in the suggestion list.
 platform: ej2-angular
 control: Templates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Combo box component
+# Templates in Angular ComboBox
 
 The ComboBox has been provided with several options to customize each list items, group title, header, and footer elements.
 

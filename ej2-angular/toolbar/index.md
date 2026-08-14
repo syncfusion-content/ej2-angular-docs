@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Toolbar component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Toolbar Component | Syncfusion
+description: Explore the Syncfusion Angular Toolbar, a horizontal group of command buttons with scrollable, popup, template, RTL, and keyboard support.
 platform: ej2-angular
 control: Index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Toolbar component
+# About Syncfusion Angular Toolbar Component.
 
 Displays a group of command buttons arranged horizontally.
 

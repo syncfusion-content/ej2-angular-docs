@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Auto complete component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Style in Angular AutoComplete | Syncfusion®
+description: Style the Angular AutoComplete input, dropdown icon, focus, popup, and list items using CSS classes for full visual customization.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Auto complete component
+# Style in Angular AutoComplete
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

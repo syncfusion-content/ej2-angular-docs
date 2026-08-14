@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Dialog component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Style and appearance in Angular Dialog | Syncfusion
+description: Customize the Syncfusion Angular Dialog appearance with CSS overrides for the header, content, overlay, resize handle, and close and footer buttons.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Dialog component
+# Style and appearance in Angular Dialog
 
 The following CSS structure can be used to customize the dialog component's appearance based on your requirements.
 

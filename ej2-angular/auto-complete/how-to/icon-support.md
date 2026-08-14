@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icon support in Angular Auto complete component | Syncfusion
-description: Learn here all about Icon support in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Show list items with icons in Angular AutoComplete | Syncfusion®
+description: Add icons to Angular AutoComplete list items by mapping the iconCss field to a CSS class for visual representation in the suggestion popup.
 platform: ej2-angular
 control: Icon support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icon support in Angular Auto complete component
+# How to show list items with icons in Angular AutoComplete
 
 You can render **icons** to the list items by mapping the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) field. This `iconCss` field create a span in the list item with mapped class name to allow styling as per your need.
 

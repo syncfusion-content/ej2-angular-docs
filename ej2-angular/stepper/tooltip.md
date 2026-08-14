@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in Angular Stepper component | Syncfusion
-description:  Learn here all about Tooltip in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Tooltip in Angular Stepper | Syncfusion
+description: Show context tooltips on Angular Stepper steps by enabling showTooltip and customize them with the tooltipTemplate property.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tooltip in Angular Stepper component
+# Tooltip in Angular Stepper
 
 The Angular Stepper component supports tooltips to display additional information about steps, useful for providing contextual help or details in workflows like forms or wizards. Enable tooltips by setting the [showTooltip](https://ej2.syncfusion.com/angular/documentation/api/stepper/#showtooltip) property to `true` on the `ejs-stepper` component. When enabled, tooltips appear on hover over the step, providing the information such as the label or text. The default value of `showTooltip` is `false`.
 

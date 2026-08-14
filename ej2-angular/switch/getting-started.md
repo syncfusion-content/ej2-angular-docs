@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with the Angular Switch component | Syncfusion
+title: Getting Started with Angular Toggle Switch Button | Syncfusion
 description: Learn how to get started with the Angular Switch component in Syncfusion Essential JS 2, including installation, setup, and basic usage.
 platform: ej2-angular
 control: Getting started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with the Angular Switch component
+# Getting Started with Angular Toggle Switch Button
 
 The Switch component is a graphical user interface element that allows users to toggle between checked and unchecked states, functioning as a customizable on/off toggle.
 

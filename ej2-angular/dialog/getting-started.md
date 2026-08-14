@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Dialog component | Syncfusion
+title: Getting Started with Angular Dialog | Syncfusion
 description: Learn how to get started with the Syncfusion Angular Dialog component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Getting started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Dialog component
+# Getting Started with Angular Dialog
 
 The Dialog component displays content, messages, forms, and interactive UI elements in modal or non-modal popup windows.
 

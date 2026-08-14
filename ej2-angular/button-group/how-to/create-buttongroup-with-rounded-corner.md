@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create Button Group with rounded corner in Angular | Syncfusion
-description: Learn here all about Create buttongroup with rounded corner in Syncfusion Angular Button Group component of Syncfusion Essential JS 2 and more.
+title: How to create Button Group with rounded corner in Angular | Syncfusion
+description: Create rounded Angular Button Groups by adding the e-round-corner class to the target element and buttons.
 platform: ej2-angular
 control: Create buttongroup with rounded corner 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create buttongroup with rounded corner in Button Group component
+# How to create buttongroup with rounded corner in Angular Button Group
 
 The ButtonGroup with rounded corner has round edges on both side. In the ButtonGroup with rounded corner, `e-round-corner` class is to be added to the target element.
 

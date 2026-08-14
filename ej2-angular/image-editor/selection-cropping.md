@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection cropping in Angular Image editor component | Syncfusion
-description: Learn here all about Selection cropping in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Selection and Cropping in Angular Image Editor | Syncfusion
+description: Select and crop image regions in the Syncfusion Angular Image Editor using custom, square, circle, or aspect ratio selections such as 16:9 and 4:3.
 platform: ej2-angular
 control: Selection cropping 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection cropping in the Angular Image Editor component
+# Selection and Cropping in Angular Image Editor
 
 The cropping feature in the Image Editor allows you to select and crop specific regions of an image. It offers different selection options, including custom shapes, squares, circles, and various aspect ratios such as 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 5:7, 7:5, 9:16, and 16:9.
 

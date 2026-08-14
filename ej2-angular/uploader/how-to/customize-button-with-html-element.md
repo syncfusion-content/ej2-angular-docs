@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize button with html element in Angular Uploader component | Syncfusion
-description: Learn here all about Customize button with html element in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to customize button with HTML in Angular Uploader | Syncfusion
+description: Replace the default Angular Uploader action buttons with custom HTML elements using the buttons property to render your own browse, upload, and clear controls.
 platform: ej2-angular
 control: Customize button with html element 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize buttons with HTML elements in Angular Uploader component
+# How to customize button with HTML in Angular Uploader
 
 The Uploader component allows you to customize the action buttons by using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/uploader/#buttons) property. Refer to the following example for implementation details.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Expand collapse in Angular Splitter component | Syncfusion
-description: Learn here all about Expand collapse in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
+title: Expand and Collapse in Angular Splitter | Syncfusion
+description: Enable built-in expand and collapse behavior in Syncfusion Angular Splitter panes with collapsible icons, public expand and collapse methods, and initial collapsed state.
 platform: ej2-angular
 control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Expand and collapse panes in Angular Splitter Component
+# Expand and Collapse in Angular Splitter
 
 ## Collapsible panes
 

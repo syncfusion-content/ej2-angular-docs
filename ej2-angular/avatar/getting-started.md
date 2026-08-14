@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Avatar component | Syncfusion
-description: Learn how to get started with Syncfusion Angular Avatar component, including setup, installation and basic configuration.
+title: Getting Started with Angular Avatar | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Avatar control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
-control: Avatar 
+control: Avatar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Avatar component
+# Getting Started with Angular Avatar
 
 The Avatar component is used to represent a user, profile, or entity using text, icons, or images in a compact visual form.
 

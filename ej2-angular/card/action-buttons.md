@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Action buttons in Angular Card component | Syncfusion
-description: Learn here all about Action buttons in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
+title: Action Buttons in Angular Card | Syncfusion
+description: Add interactive action buttons or anchor tags inside the Angular Card, aligned horizontally by default or vertically with the e-card-vertical class.
 platform: ej2-angular
 control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Action buttons in Angular Card component
+# Action Buttons in Angular Card
 
 Action buttons provide interactive controls within the Card component and can be customized for various use cases. Action buttons are contained within a `div` element with the `e-card-actions` class, which holds button or anchor elements within the card root element.
 
@@ -18,7 +18,7 @@ Action buttons provide interactive controls within the Card component and can be
     <div class = "e-card">
         <div class="e-card-actions">
             <button class="e-card-btn">More</button>
-            <a href="#">Share</a>
+            <a href="#" aria-label="card-action">Share</a>
         </div>
     </div>
 ```
@@ -31,7 +31,7 @@ By default, action buttons are positioned horizontally, and they can also be ali
     <div class = "e-card">
         <div class="e-card-actions e-card-vertical">
             <button class="e-card-btn">More</button>
-            <a href="#">Share</a>
+            <a href="#" aria-label="card-vertical">Share</a>
         </div>
     </div>
 ```

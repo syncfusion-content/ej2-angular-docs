@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Toast component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Toast | Syncfusion
+description: Learn how Syncfusion Angular Toast meets WCAG 2.2, Section 508, and ADA standards with screen reader, RTL, and WAI-ARIA role alert support.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Toast component
+# Accessibility in Angular Toast
 
 The Toast component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

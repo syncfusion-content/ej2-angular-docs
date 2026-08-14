@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set panels header in Angular Dashboard layout component | Syncfusion
-description: Learn how to configure panel headers and dynamic content in Syncfusion Angular Dashboard layout component with header customization options.
+title: Header and Content in Angular Dashboard Layout | Syncfusion
+description: Set panel headers and embed Syncfusion components such as charts and grids as panel content in the Syncfusion Angular Dashboard Layout.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Setting panel headers in Angular Dashboard layout component
+# Header and Content in Angular Dashboard Layout
 
 The Dashboard Layout component is primarily used to represent data for monitoring or managing processes. HTML templates or data can be placed as the content of a panel using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel#content) property. Panel headers, which provide context and help users quickly identify panel content, can be added using the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel#header) property. Headers appear at the top of each panel and typically contain a descriptive title or label.
 

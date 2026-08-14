@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular NumericTextBox component | Syncfusion
-description: Check out and learn how to get started with the Angular NumericTextBox component in Syncfusion Essential JS 2, including setup, configuration, and basic usage.
+title: Getting Started with Angular Numeric Textbox | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Numeric Textbox control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular NumericTextBox component
+# Getting Started with Angular Numeric Textbox
 
 The NumericTextBox component is used to get the number inputs from the user. The input values can be increased or decreased with a predefined step value.
 

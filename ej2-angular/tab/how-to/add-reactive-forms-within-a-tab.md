@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add reactive forms within a tab in Angular Tab component | Syncfusion
-description: Learn here all about Add reactive forms within a tab in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to add reactive forms within Tab in Angular Tab | Syncfusion
+description: Embed Angular reactive forms inside a Tab item using ng-template, ReactiveFormsModule, FormGroup, and FormControl for multi-section forms.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add reactive forms within a tab in Angular Tab component
+# How to add reactive forms within Tab in Angular Tab
 
 The Tab component supports rendering other components inside tab panels using Angular **ng-template**. This includes integrating reactive forms within individual tab items to create organized, multi-section form interfaces.
 

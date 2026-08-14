@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Range Slider component | Syncfusion
-description: Learn how to add and configure the Angular Range Slider component from Syncfusion Essential JS 2, including setup, configuration, and basic usage.
+title: Getting Started with Angular Range Slider | Syncfusion
+description: Set up the Syncfusion Angular Range Slider in an Angular CLI project with package install, theme CSS, and a basic single-value slider.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Range Slider component
+# Getting Started with Angular Range Slider
 
 The Slider component allows users to select a single value or a range of values within a specified minimum and maximum limit by dragging one or more thumbs along a track.
 

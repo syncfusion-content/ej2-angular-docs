@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates in Angular MultiColumn ComboBox component | Syncfusion
+title: Templates in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Templates in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular MultiColumn ComboBox component
+# Templates in Angular MultiColumn ComboBox
 
 The MultiColumn ComboBox provides several template options to customize each items, groups, header and footer elements.
 

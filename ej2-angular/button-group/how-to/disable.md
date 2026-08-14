@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disable in Angular Button group component | Syncfusion
-description: Learn here all about Disable in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
+title: How to disable in Angular Button Group | Syncfusion
+description: Disable a particular button or the whole Angular Button Group by adding the disabled attribute to button elements.
 platform: ej2-angular
 control: Disable 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable in Angular Button group component
+# How to disable in Angular Button Group
 
 ## Particular button
 

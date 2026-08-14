@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering in Angular Query builder component | Syncfusion
-description: Learn here all about Filtering in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular Query Builder UI | Syncfusion
+description: Create and delete rules and groups in the Syncfusion Angular Query Builder UI using addRules, addGroups, deleteRules, and deleteGroups.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular Query builder component
+# Filtering in Angular Query Builder UI
 
 Create dynamic filtering conditions and groups in the Query Builder through the UI or programmatically. Use the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#showbuttons) property to control button visibility.
 

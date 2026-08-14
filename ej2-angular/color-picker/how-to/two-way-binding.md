@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Two way binding in Angular Color picker component | Syncfusion
-description: Learn here all about Two way binding in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: How to use two-way binding in Angular Color Picker | Syncfusion
+description: Sync the Syncfusion Angular Color Picker value with another input using two-way binding and ngModel so changes update both controls in real time.
 platform: ej2-angular
 control: Two way binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Two-way binding in Angular Color picker component
+# How to use two-way binding in Angular Color Picker
 
 The ColorPicker component supports two-way property binding, allowing the color value to synchronize between the ColorPicker and other components in real time.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set clear button in Angular Calendar component | Syncfusion
-description: Learn here all about Set clear button in calendar in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: How to set clear button in Calendar | Syncfusion®
+description: Learn how to add a clear button to the Syncfusion Angular Calendar UI by appending a Button element inside the created event handler.
 platform: ej2-angular
 control: Set clear button in calendar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set clear button in calendar in Angular Calendar component
+# How to set clear button in Calendar in Angular Calendar
 
 The following steps illustrate how to configure `clear` button in Calendar UI.
 

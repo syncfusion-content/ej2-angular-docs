@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open a dialog on popup item click in Angular Drop down button component | Syncfusion
-description: Learn here all about Open a dialog on popup item click in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Open a dialog on popup item click in Angular Dropdown Menu | Syncfusion
+description: Open a Dialog when an Angular Dropdown Menu popup item is selected by handling the select event.
 platform: ej2-angular
 control: Open a dialog on popup item click 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open a dialog on popup item click in Angular Drop down button component
+# How to open a dialog on popup item click in Angular Dropdown Menu
 
 This section explains about how to open a dialog on DropdownButton popup item click.
 This can be achieved by handling dialog open in [`select`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#select) event of the DropdownButton.

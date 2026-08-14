@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering in Angular Auto complete component | Syncfusion
-description: Learn here all about Filtering in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular AutoComplete | Syncfusion®
+description: Filter Angular AutoComplete data as you type using StartsWith, EndsWith, or Contains modes, with debounce, case sensitivity, and diacritics support.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular Auto complete component
+# Filtering in Angular AutoComplete
 
 The AutoComplete has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the component.
 

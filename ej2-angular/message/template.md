@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Message component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Message component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Message | Syncfusion
+description: Customize Syncfusion Angular Message content with custom HTML structures, including paragraphs, links, and Angular Button components.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Message component
+# Template in Angular Message
 
 The message supports templates that allows the user to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the [content](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#content) property or added directly to the HTML element.
 

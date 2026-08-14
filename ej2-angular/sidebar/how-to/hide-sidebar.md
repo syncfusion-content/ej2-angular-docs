@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hide Sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Hide Sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: How to hide Sidebar in Angular Sidebar | Syncfusion
+description: Hide the master page Angular Sidebar on Angular route changes using NavigationEnd events and the Sidebar hide method.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hiding the Angular Sidebar component
+# How to hide Sidebar in Angular Sidebar
 
 This example demonstrates how to programmatically hide the master page Sidebar. Initially, the Sidebar is rendered with the master page. When navigating to another page, it hides the master page Sidebar using Angular routing.
 

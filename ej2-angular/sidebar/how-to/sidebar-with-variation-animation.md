@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sidebar with variation animation in Angular Sidebar component | Syncfusion
-description: Learn here all about Sidebar with variation animation in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: How to add custom animation to Sidebar in Angular Sidebar | Syncfusion
+description: Apply custom animation effects to the Angular Sidebar by overriding CSS styles to match any custom expand size.
 platform: ej2-angular
 control: Sidebar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sidebar with variation animation in Angular Sidebar component
+# How to add custom animation to Sidebar in Angular Sidebar
 
 The following example demonstrates the Sidebar rendered with custom animation effects. Click the buttons available in the main content area to check how the custom animations work with the Sidebar.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Signature component | Syncfusion
-description:  Learn how to get started with the Syncfusion Angular Signature component, including setup, installation and basic configuration.
+title: Getting Started with Angular Signature | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Signature control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Signature component
+# Getting Started with Angular Signature
 
 The Signature component enables users to draw, capture, and submit handwritten signatures digitally, providing an intuitive way to authorize, verify, or acknowledge documents and forms electronically.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open save in Angular Image editor component | Syncfusion
-description: Learn here all about Open save in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Open and Save in Angular Image Editor | Syncfusion
+description: Open and save images in the Syncfusion Angular Image Editor using base64, blob, file uploader, or URL. Export to PNG, JPEG, SVG, WEBP, or BMP.
 platform: ej2-angular
 control: Open save 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and save in the Angular Image Editor component
+# Open and Save in Angular Image Editor
 
 To import an image into the canvas, it must first be converted into a blob object. The Uploader component can be used to facilitate the process of uploading an image from the user interface. Once the image has been uploaded, it can then be converted into a blob and drawn onto the canvas. 
 

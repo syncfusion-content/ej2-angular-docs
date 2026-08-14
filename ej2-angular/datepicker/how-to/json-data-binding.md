@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Json data binding in Angular Datepicker component | Syncfusion
-description: Learn here all about Json data binding in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: JSON Data Binding with DatePicker in Angular | Syncfusion®
+description: Learn how to bind JSON data to the Syncfusion Angular DatePicker by parsing ISO-formatted date strings and assigning them to the value property.
 platform: ej2-angular
 control: Json data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Json data binding in Angular Datepicker component
+# How to JSON data binding with DatePicker in Angular DatePicker
 
 In most of the real cases, the model data will be available with JSON format only.
 Here we have showcased DatePicker component by setting JSON string to value property.

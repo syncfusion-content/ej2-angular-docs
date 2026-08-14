@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the spin buttons up and down arrow | Syncfusion
-description: Learn here all about Customize the spin buttons up and down arrow in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: How to customize spin buttons in Angular Numeric Textbox | Syncfusion
+description: Customize the Angular Numeric Textbox spin up and spin down icons by overriding the e-spin-up and e-spin-down CSS pseudo-element content and color.
 platform: ej2-angular
 control: Customize the spin buttons up and down arrow 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the spin buttons up and down arrow in NumericTextBox
+# How to customize spin buttons in Angular Numeric Textbox
 
 The spin button icons can be customized by overriding the `e-spin-up` and `e-spin-down` CSS classes. The following example demonstrates how to change the spin up and down icons using custom CSS.
 

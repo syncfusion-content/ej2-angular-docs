@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo and Redo in Angular Image editor component | Syncfusion
+title: Undo and Redo in Angular Image Editor | Syncfusion
 description: Learn here all about Undo-Redo in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Toolbar 
+control: Undo and Redo
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Undo and redo actions in the Angular Image Editor
+# Undo and Redo in Angular Image Editor
 
 The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are Essential<sup style="font-size:70%">&reg;</sup> for maintaining control and flexibility during the editing process. 
 

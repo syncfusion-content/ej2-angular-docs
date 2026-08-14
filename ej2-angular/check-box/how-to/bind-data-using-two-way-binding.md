@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind data using two way binding in Angular Check box | Syncfusion
-description: Learn here all about Bind data using two way binding in Syncfusion Angular Check box component of Syncfusion Essential JS 2 and more.
+title: Binding data using two way binding in Angular Checkbox | Syncfusion
+description: Use ngModel two-way binding in Angular Checkbox to keep the checked state synchronized with your component data.
 platform: ej2-angular
 control: Bind data using two way binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bind data using two way binding in Angular Check box component
+# How to bind data using two way binding in Angular Checkbox
 
 Checkbox component supports two way binding.
 

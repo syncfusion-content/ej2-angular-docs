@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Menu item click in Angular Menu component | Syncfusion
-description: Learn here all about Menu item click in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: Open menu and sub menu on click only in Angular Menu Bar | Syncfusion
+description: Open Angular Menu Bar submenus only on click by enabling the showItemOnClick property instead of the default hover behavior.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Menu item click in Angular Menu component
+# How to open menu and sub menu on click only in Angular Menu Bar
 
 
 To open submenu items only when a menu item is clicked, set the [`showItemOnClick` ](https://ej2.syncfusion.com/angular/documentation/api/menu/#showitemonclick)property to `true`.

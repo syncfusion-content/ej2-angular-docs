@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ticks in Angular Range Slider component | Syncfusion
-description: Learn here all about Ticks in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: Ticks in Angular Range Slider | Syncfusion
+description: Display major and minor reference points on the Angular Range Slider by configuring smallStep, largeStep, and showSmallTicks for clearer value selection.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ticks in Angular Range Slider component
+# Ticks in Angular Range Slider
 
 The [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#ticks) property adds visual reference points to the slider, helping users identify available values. Ticks are configured using [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#smallstep) (minor ticks) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#largestep) (major ticks). By default, only major tick values are displayed. Use the [`showSmallTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#showsmallticks) property to show or hide minor ticks.
 

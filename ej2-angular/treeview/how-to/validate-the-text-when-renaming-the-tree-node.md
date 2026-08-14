@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validate node text on rename in Angular TreeView | Syncfusion
-description: Learn here all about Validate the text when renaming the tree node in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: How to validate text when editing tree nodes in Angular Tree View | Syncfusion
+description: Validate Angular Tree View node text on rename via the nodeEdited event using newText, oldText, and cancel.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validate text when editing tree nodes in Angular TreeView component
+# How to validate text when editing tree nodes in Angular Tree View
 
 You can validate the tree node text while editing using the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeedited) event of the TreeView.
 

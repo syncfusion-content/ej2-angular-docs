@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Combo box component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular ComboBox | Syncfusion®
+description: Localize Angular ComboBox static text such as no-records and action-failure templates for any culture using the L10n class and locale property.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Combo box component
+# Localization in Angular ComboBox
 
 The Localization library allows you to localize static text content of the
 [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#norecordstemplate) and [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#actionfailuretemplate) &nbsp;properties according to the culture currently assigned to the ComboBox.

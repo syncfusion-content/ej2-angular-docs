@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dynamically Change Items in Angular Context Menu | Syncfusion
-description: Learn here all about Change menu items dynamically in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: How to change menu items dynamically in Angular Context Menu | Syncfusion
+description: Show different Angular Context Menu items per target area using beforeOpen with the hideItems and showItems methods for context-aware menus.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change menu items dynamically in Angular Context menu component
+# How to change menu items dynamically in Angular Context Menu
 
 The ContextMenu component supports dynamic menu item changes based on the target element where the context menu is triggered. This functionality enables context-aware menus that display different options depending on the specific area or element the user interacts with, enhancing user experience through relevant, targeted actions.
 

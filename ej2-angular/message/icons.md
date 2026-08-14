@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons in Angular Message component | Syncfusion
-description: Learn here all about Icons in Syncfusion Angular Message component of Syncfusion Essential JS 2 and more.
+title: Icons in Angular Message | Syncfusion
+description: Show, hide, or customize severity and close icons in the Syncfusion Angular Message using showIcon, showCloseIcon, and cssClass properties.
 platform: ej2-angular
 control: Icons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons in Angular Message component
+# Icons in Angular Message
 
 This section explains the message with no icons, how to show or hide the close icon and add the custom severity icon to the message.
 

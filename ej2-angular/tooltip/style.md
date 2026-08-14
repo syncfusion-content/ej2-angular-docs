@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Tooltip component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Styles and appearance in Angular Tooltip | Syncfusion
+description: Override the Syncfusion Angular Tooltip CSS classes to customize the wrapper, popup, content, arrow tip, inner tip, and outer tip appearance.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Tooltip component
+# Styles and appearance in Angular Tooltip
 
 The following CSS structure allows you to customize the tooltip appearance based on your preferences.
 

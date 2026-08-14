@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Expand mode in Angular Accordion component | Syncfusion
-description: Learn here all about Expand mode in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: Expand Mode in Angular Accordion | Syncfusion
+description: Choose how the Angular Accordion behaves when items open, with Single mode for one expanded panel or Multiple mode for many.
 platform: ej2-angular
 control: Accordion 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Expand mode in Angular Accordion component
+# Expand Mode in Angular Accordion
 
 The Accordion supports the two listed types of [`expandmode`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expandmode) while expanding or collapsing the item.
 

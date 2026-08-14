@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Split panes in Angular Splitter component | Syncfusion
-description: Learn here all about Split panes in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
+title: Split Panes in Angular Splitter | Syncfusion
+description: Configure the Syncfusion Angular Splitter with horizontal or vertical panes, customizable separator size, nested splitters, and dynamic add or remove pane APIs.
 platform: ej2-angular
 control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Split panes in Angular Splitter component
+# Split Panes in Angular Splitter
 
 The Splitter component divides a container into resizable panes separated by draggable bars. This section covers pane orientation, layout configuration, separator customization, nested splitters, and dynamic pane manipulation.
 

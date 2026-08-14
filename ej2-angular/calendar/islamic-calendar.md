@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Islamic calendar in Angular Calendar component | Syncfusion
-description: Learn here all about Islamic calendar in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: Islamic Calendar in Angular Calendar | Syncfusion®
+description: Learn how to display the Islamic (Hijri) calendar in the Syncfusion Angular Calendar alongside the Gregorian calendar with full feature support.
 platform: ej2-angular
 control: Islamic calendar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Islamic calendar in Angular Calendar component
+# Islamic Calendar in Angular Calendar
 
 In addition to the Gregorian calendar, the Calendar control supports displaying the Islamic calendar (Hijri calendar). **Islamic calendar** or **Hijri calendar** is a `lunar calendar` consisting of 12 months in a year of 354 or 355 days. To know more about Islamic calendar, please refer this [wikipedia](https://en.wikipedia.org/wiki/Islamic_calendar).
 

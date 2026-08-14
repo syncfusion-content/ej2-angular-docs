@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sort columns in Angular Query builder component | Syncfusion
-description: Learn here all about Sort columns in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: How to sort the columns in Angular Query Builder UI | Syncfusion
+description: Sort the available columns in the Syncfusion Angular Query Builder UI ascending or descending using the sortDirection property on the field list.
 platform: ej2-angular
 control: Sort columns 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sort columns in Angular Query builder component
+# How to sort the columns in Angular Query Builder UI
 
 Control the order in which columns appear in the Query Builder by setting the [`sortDirection`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#sortdirection) property. This property sorts the available fields in ascending or descending order, helping users find columns more easily.
 

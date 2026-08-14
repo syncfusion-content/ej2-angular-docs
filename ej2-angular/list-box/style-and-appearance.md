@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in Angular List box component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular ListBox | Syncfusion
+description: Customize the Angular ListBox wrapper, items, hover, and selected states via CSS classes like e-listbox-wrapper, or apply cssClass to render a horizontal listbox.
 platform: ej2-angular
 control: Style and appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular List box component
+# Style and Appearance in Angular ListBox
 
 To modify the ListBox appearance, you need to override the default CSS of ListBox component. Please find the list of CSS classes and its corresponding section in ListBox component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

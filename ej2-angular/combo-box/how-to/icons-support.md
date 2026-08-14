@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons support in Angular Combo box component | Syncfusion
-description: Learn here all about Icons support in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: How to show list items with icons in Angular ComboBox | Syncfusion®
+description: Add icons to Angular ComboBox list items by mapping the iconCss field to a CSS class for visual representation in the suggestion popup.
 platform: ej2-angular
 control: Icons support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons support in Angular Combo box component
+# How to show list items with icons in Angular ComboBox
 
 You can render **icons** to the list items by mapping the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#fields) &nbsp;fields. This `iconCss` field create a span in the list item with mapped class name to allow styling as per your need.
 

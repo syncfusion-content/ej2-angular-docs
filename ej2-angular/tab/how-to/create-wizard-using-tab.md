@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create wizard using tab in Angular Tab component | Syncfusion
-description: Learn here all about Create wizard using tab in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to create wizard using Tab in Angular Tab | Syncfusion
+description: Build a multi-step Angular Tab wizard with enableTab and select methods to drive sequential form validation across tabs.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create wizard using tab in Angular Tab component
+# How to create wizard using Tab in Angular Tab
 
 The Tab component can be configured to create step-by-step wizard interfaces by dynamically controlling tab accessibility and navigation. Tab items can be disabled dynamically by passing the index and boolean value with the [`enableTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/#enabletab) method and programmatically select specific tabs using the [`select`](https://ej2.syncfusion.com/angular/documentation/api/tab/#select) method by passing the index or HTML element.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Date time range in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Date time range in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: DateTime Range in Angular DateTime Picker | Syncfusion®
+description: Learn how to restrict the Syncfusion Angular DateTime Picker to a specific date and time range using the min and max properties.
 platform: ej2-angular
 control: Date time range 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date time range in Angular Datetimepicker component
+# DateTime Range in Angular DateTime Picker
 
 ## DateTime Restriction
 

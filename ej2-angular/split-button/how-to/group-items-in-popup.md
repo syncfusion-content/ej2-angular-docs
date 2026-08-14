@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Group items in popup in Angular Split button component | Syncfusion
-description: Learn here all about Group items in popup in Syncfusion Angular Split button component of Syncfusion Essential JS 2 and more.
+title: How to group items in popup in Angular Split Button | Syncfusion
+description: Group Angular Split Button popup items by using a ListView element as the popup target.
 platform: ej2-angular
 control: Group items in popup 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Group items in popup in Angular Split button component
+# How to group items in popup in Angular Split Button
 
 Grouped items are possible in SplitButton by templating entire popup with ListView. Check ListView [`grouping`](../../listview/grouping#grouping) and create such items. Create ListView with id `listview` and provide element of the ListView as target of SplitButton to render it in popup area.
 

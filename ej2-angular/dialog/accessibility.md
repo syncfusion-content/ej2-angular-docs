@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Dialog component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Dialog | Syncfusion
+description: Learn how the Syncfusion Angular Dialog meets WCAG 2.2, Section 508, and ADA standards with WAI-ARIA roles, keyboard support, and screen reader guidance.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Dialog component
+# Accessibility in Angular Dialog
 
 The Dialog component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) used to evaluate accessibility.
 

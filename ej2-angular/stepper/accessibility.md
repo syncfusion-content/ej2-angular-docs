@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Stepper component | Syncfusion
-description:  Learn here all about Accessibility in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Stepper | Syncfusion
+description: Use WAI-ARIA labels, current, and disabled attributes plus arrow key navigation in the Angular Stepper for full accessibility.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Stepper component
+# Accessibility in Angular Stepper
 
 The Stepper component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add toggle button in Angular Toolbar component | Syncfusion
-description: Learn here all about Add toggle button in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: How to add toggle button in Angular Toolbar | Syncfusion
+description: Add a toggle button to the Angular Toolbar via the template property and the created event to switch between two states on click.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add toggle button in Angular Toolbar component
+# How to add toggle button in Angular Toolbar
 
 The Toolbar component supports adding toggle buttons through the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#template) property of toolbar items. Toggle buttons provide users with the ability to switch between two states, making them ideal for features like play/pause, show/hide, or enable/disable functionality. Follow the steps below to implement toggle button functionality:
 

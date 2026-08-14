@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular TextBox component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular TextBox component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular TextBox | Syncfusion
+description: Build accessible Syncfusion Angular TextBox forms with WCAG 2.2, Section 508, ARIA attributes, and full keyboard navigation support.
 control: Accessibility 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular TextBox Component
+# Accessibility in Angular TextBox
 
 The TextBox component conforms to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate and support accessibility.
 

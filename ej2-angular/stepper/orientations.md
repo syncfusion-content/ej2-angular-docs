@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Orientations in Angular Stepper component | Syncfusion
-description:  Learn here all about Orientations in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Orientations in Angular Stepper | Syncfusion
+description: Display the Angular Stepper horizontally or vertically by setting the orientation property to Horizontal or Vertical.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientations in Angular Stepper component
+# Orientations in Angular Stepper
 
 The Angular Stepper component supports displaying steps in horizontal or vertical orientations using the [orientation](https://ej2.syncfusion.com/angular/documentation/api/stepper/#orientation) property of type `StepperOrientation`. Possible values are `Horizontal` and `Vertical`.
 

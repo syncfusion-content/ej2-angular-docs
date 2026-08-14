@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Drop down list component | Syncfusion
-description: Learn about binding data to the Syncfusion Angular DropDownList component from local and remote data sources.
+title: Data Binding in Angular Dropdown List | Syncfusion®
+description: Learn about binding data to the Syncfusion® Angular DropDownList component from local and remote data sources.
 platform: ej2-angular
 control: Drop down list
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular DropDownList component
+# Data Binding in Angular Dropdown List
 
 The DropDownList loads data from local data sources or remote data services through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#datasource) property. It supports `array` and `DataManager` data types.
 

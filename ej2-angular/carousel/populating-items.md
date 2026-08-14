@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Populating items in Angular Carousel component | Syncfusion
-description: Learn here all about Populating items in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
+title: Populating Items in Angular Carousel | Syncfusion
+description: Populate Angular Carousel slides from item collections or data sources, set the starting slide, and show partial adjacent slides.
 platform: ej2-angular
 control: Carousel 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Populating items in Angular Carousel component
+# Populating Items in Angular Carousel
 
 The Carousel component supports two distinct approaches for rendering slides, each suited to different use cases and data scenarios:
 

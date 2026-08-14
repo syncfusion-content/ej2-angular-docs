@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template driven forms in Angular Datepicker component | Syncfusion
-description: Learn here all about Template driven forms in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: How to use template-driven forms with Angular DatePicker | Syncfusion®
+description: Learn how to use the Syncfusion Angular DatePicker inside an Angular template-driven form by binding it with ngModel for two-way value updates.
 platform: ej2-angular
 control: Template driven forms 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template driven forms in Angular Datepicker component
+# How to use template-driven forms in Angular DatePicker
 
 The form can be build with Angular template syntax easily along with form specific directives.
 This template-drive forms uses the `ng` directives in view to handle the forms controls.

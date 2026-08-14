@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Popup items in Angular Split button component | Syncfusion
-description: Learn here all about Popup items in Syncfusion Angular Split button component of Syncfusion Essential JS 2 and more.
+title: Popup items in Angular Split Button | Syncfusion
+description: Add icons and separators to Angular Split Button popup items using iconCss, separator, and url properties.
 platform: ej2-angular
 control: Popup items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Popup items in Angular Split button component
+# Popup items in Angular Split Button
 
 ## Icons
 

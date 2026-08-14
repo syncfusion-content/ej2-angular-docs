@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Dynamic item loading in Angular Accordion | Syncfusion
-description: Learn here all about Load accordion items dynamically in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: Load Accordion items in Angular Accordion | Syncfusion
+description: Add Angular Accordion items at runtime with the addItem method using header and content fields for user-driven content loading.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load accordion items dynamically in Angular Accordion component
+# How to load Accordion items dynamically in Angular Accordion
 
 The Syncfusion Angular Accordion component supports dynamic item loading at runtime, allowing updates to content without rebuilding the component. This is useful for user-driven interactions, real-time data integration, or progressive content loading. Use the [`addItem`](https://ej2.syncfusion.com/angular/documentation/api/accordion#additem) method to add items by specifying the item object and index.
 
