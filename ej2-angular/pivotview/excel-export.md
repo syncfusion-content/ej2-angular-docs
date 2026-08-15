@@ -3,7 +3,7 @@ layout: post
 title: Excel Export in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table exports aggregated data to Excel and CSV files using the ExcelExportService and allowExcelExport.
 platform: ej2-angular
-control: Excel export 
+control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -15,6 +15,8 @@ The Pivot Table component supports exporting pivot data to **Excel** and **CSV**
 ## Export data to an Excel file
 
 Pivot Table data can be exported to an Excel file (.xlsx format) while preserving all formatting and structure. This format is compatible with Microsoft Excel and other spreadsheet applications. To export the data to Excel, invoke the [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#excelexport) method.
+
+> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, see the [Toolbar](./tool-bar) documentation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,6 +33,8 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 ## Export data to a CSV file
 
 Pivot Table data can be exported to a plain text CSV file. The CSV format is lightweight and compatible with most spreadsheet and data analysis applications. To export the data to CSV, invoke the [`csvExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#csvexport) method.
+
+> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, see the [Toolbar](./tool-bar) documentation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -315,6 +319,8 @@ By default, the Pivot Table exports all data records, which can result in larger
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs72" %}
 
 ## Events
+
+The Pivot Table provides the following events to monitor and customize the Excel export process. Use them to alter cell content, style, or capture export completion.
 
 ### ExcelQueryCellInfo
 

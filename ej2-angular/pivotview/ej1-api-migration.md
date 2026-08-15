@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Migration from EJ1 in Angular Pivot Table | Syncfusion
-description: Learn how the Angular Pivot Table migrates data binding, grouping bar, and field list APIs from Essential JS 1 to Essential JS 2.
+description: Learn how the Angular Pivot Table maps properties, methods, and events from Essential JS 1 PivotGrid to the EJ2 Pivot Table component.
 platform: ej2-angular
-control: Ej1 api migration 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Migration from EJ1 in Angular Pivot Table
 
-This article describes the API migration process of pivot table component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of the Pivot Table component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Data Binding
 
@@ -58,12 +58,12 @@ This article describes the API migration process of pivot table component from E
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
-|Show/hide field list|Not Applicable|**property:** showFieldList<br/><br/>`<ejs-pivotview #pivotview id='PivotView' showFieldList='true'></ejs-pivotview>`|
+|Show/hide field list pop-up button on pivot table|Not Applicable|**property:** showFieldList<br/><br/>`<ejs-pivotview #pivotview id='PivotView' showFieldList='true'></ejs-pivotview>`|
 |Defer update|**property:** enableDeferUpdate<br/><br/>`<ej-pivotgrid [enableDeferUpdate]="true"></ej-pivotgrid>`|Not Applicable|
 |Control initialization|**component:** PivotSchemaDesigner<br/><br/>`<ej-pivotschemadesigner id="PivotSchemaDesigner1"></ej-pivotschemadesigner>`|**component:** PivotFieldList<br/><br/>`<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings></ejs-pivotfieldlist>`|
 |Render mode|Not Applicable|**property:** renderMode<br/><br/>`<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings renderMode="Fixed"></ejs-pivotfieldlist>`|
 |Show/hide calculated field button|Not Applicable|**property:** allowCalculatedField<br/><br/>`<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings allowCalculatedField="true"></ejs-pivotfieldlist>`|
-|Show/hide values button|Not Applicable|**property:** showValuesButton<br/><br/>`<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings showValuesButton="true"></ejs-pivotfieldlist>`|
+|Show/hide value group button|Not Applicable|**property:** showValuesButton<br/><br/>`<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings showValuesButton="true"></ejs-pivotfieldlist>`|
 
 ## Grouping Bar
 
@@ -91,7 +91,7 @@ This article describes the API migration process of pivot table component from E
 | --- | --- | --- |
 |Show/hide "no data" items|Not Applicable|**property:** showNoDataItems<br/><br/>`<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings></ejs-pivotview>`<br/><br/>`export class AppComponent implements OnInit {`<br/>`public dataSourceSettings: DataSourceSettingsModel;`<br/>`ngOnInit(): void {`<br/>`this.dataSourceSettings = {`<br/>`rows: [{ name: 'company', showNoDataItems: true }]};`<br/>`}}`|
 
-## Advanced filtering
+## Excel-like filtering
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
@@ -103,7 +103,7 @@ This article describes the API migration process of pivot table component from E
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Show/hide drill though feature|**property:** enableDrillThrough<br/><br/>`<ej-pivotgrid [enableDrillThrough]="true"></ej-pivotgrid>`|**property:** allowDrillThrough<br/><br/>`<ejs-pivotview #pivotview id='PivotView' allowDrillThrough='true'></ejs-pivotview>`|
-|Event Triggers when cell clicked in pivot table widget|**event:** drillThrough<br/><br/>`<ej-pivotgrid (drillThrough)="onDrillThrough($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onDrillThrough(args) {}`<br/>`}`|**event:** drillThrough<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (drillThrough)='onDrillThrough($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onDrillThrough(args): void {}`<br/>`}`|
+|Event Triggers when cell clicked in pivot table control|**event:** drillThrough<br/><br/>`<ej-pivotgrid (drillThrough)="onDrillThrough($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onDrillThrough(args) {}`<br/>`}`|**event:** drillThrough<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (drillThrough)='onDrillThrough($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onDrillThrough(): void {}`<br/>`}`|
 
 ## Cell Editing
 
@@ -124,10 +124,10 @@ This article describes the API migration process of pivot table component from E
 |Show/hide hyperlink to summary cells|**property:** enableSummaryCellHyperlink<br/><br/>`<ej-pivotgrid [hyperlinkSettings]="hyperlinkSettings"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`public hyperlinkSettings;`<br/>`constructor() {`<br/>`this.hyperlinkSettings= { enableSummaryCellHyperlink: "true"};`<br/>`}}` |**property:** showSummaryCellHyperlink<br/><br/>`<ejs-pivotview #pivotview id='PivotView' [hyperlinkSettings]=hyperlinkSettings></ejs-pivotview>`<br/><br/>`export class AppComponent implements OnInit {`<br/>`public hyperlinkSettings: HyperLinkSettings;`<br/>`ngOnInit(): void {`<br/>`this.hyperlinkSettings = {`<br/>`showSummaryCellHyperlink: 'true'`<br/>`};`<br/>`}}`|
 |Show/hide hyperlink using specific conditions|Not Applicable|**property:** conditionalSettings<br/><br/>`<ejs-pivotview #pivotview id='PivotView' [hyperlinkSettings]=hyperlinkSettings></ejs-pivotview>`<br/><br/>`export class AppComponent implements OnInit {`<br/>`public hyperlinkSettings: HyperLinkSettings;`<br/>`ngOnInit(): void {`<br/>`this.hyperlinkSettings = {`<br/>`conditionalSettings: [{`<br/>`measure: 'Units Sold', conditions: 'Between', value1: 150, value2: 200`<br/>`}]};`<br/>`}}`|
 |Show/hide hyperlink for row or column|Not Applicable|**property:** headerText<br/><br/>`<ejs-pivotview #pivotview id='PivotView' [hyperlinkSettings]=hyperlinkSettings></ejs-pivotview>`<br/><br/>`export class AppComponent implements OnInit {`<br/>`public hyperlinkSettings: HyperLinkSettings;`<br/>`ngOnInit(): void {`<br/>`this.hyperlinkSettings = {`<br/>`headerText: 'FY 2015.Q1.Units Sold'`<br/>`};`<br/>`}}`|
-|Event Triggers when row headers clicked in pivot table widget|**event:** rowHeaderHyperlinkClick<br/><br/>`<EJ.PivotGrid id="PivotGrid" rowHeaderHyperlinkClick= "onRowHeaderHyperlinkClick"></EJ.PivotGrid>`<br/><br/>`function onRowHeaderHyperlinkClick(){ }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (hyperlinkCellClick)='onHyperlinkCellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onHyperlinkCellClick(args): void {}`<br/>`}`|
-|Event Triggers when column headers clicked in pivot table widget|**event:** columnHeaderHyperlinkClick<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (columnHeaderHyperlinkClick)="onColumnHeaderHyperlinkClick($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onColumnHeaderHyperlinkClick(args) {}`<br/>`}`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (hyperlinkCellClick)='onHyperlinkCellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onHyperlinkCellClick(args): void {}`<br/>`}`|
-|Event Triggers when value cells clicked in pivot table widget|**event:** valueCellHyperlinkClick<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (valueCellHyperlinkClick)="onValueCellHyperlinkClick($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onValueCellHyperlinkClick(args) {}`<br/>`}`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (hyperlinkCellClick)='onHyperlinkCellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onHyperlinkCellClick(args): void {}`<br/>`}`|
-|Event Triggers when summary cells clicked in pivot table widget|**event:** summaryCellHyperlinkClick<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (summaryCellHyperlinkClick)="onSummaryCellHyperlinkClick($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onSummaryCellHyperlinkClick(args) {}`<br/>`}`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (hyperlinkCellClick)='onHyperlinkCellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onHyperlinkCellClick(args): void {}`<br/>`}`|
+|Event Triggers when row headers clicked in pivot table|**event:** rowHeaderHyperlinkClick<br/><br/>`<EJ.PivotGrid id="PivotGrid" rowHeaderHyperlinkClick= "onRowHeaderHyperlinkClick"></EJ.PivotGrid>`<br/><br/>`function onRowHeaderHyperlinkClick(){ }`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (hyperlinkCellClick)='onHyperlinkCellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onHyperlinkCellClick(): void {}`<br/>`}`|
+|Event Triggers when column headers clicked in pivot table|**event:** columnHeaderHyperlinkClick<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (columnHeaderHyperlinkClick)="onColumnHeaderHyperlinkClick($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onColumnHeaderHyperlinkClick(args) {}`<br/>`}`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (hyperlinkCellClick)='onHyperlinkCellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onHyperlinkCellClick(): void {}`<br/>`}`|
+|Event Triggers when value cells clicked in pivot table|**event:** valueCellHyperlinkClick<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (valueCellHyperlinkClick)="onValueCellHyperlinkClick($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onValueCellHyperlinkClick(args) {}`<br/>`}`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (hyperlinkCellClick)='onHyperlinkCellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onHyperlinkCellClick(): void {}`<br/>`}`|
+|Event Triggers when summary cells clicked in pivot table|**event:** summaryCellHyperlinkClick<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (summaryCellHyperlinkClick)="onSummaryCellHyperlinkClick($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onSummaryCellHyperlinkClick(args) {}`<br/>`}`|**event:** hyperlinkCellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (hyperlinkCellClick)='onHyperlinkCellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onHyperlinkCellClick(): void {}`<br/>`}`|
 
 ## Defer Layout Update
 
@@ -212,6 +212,6 @@ This article describes the API migration process of pivot table component from E
 |Event Triggers after the pivot engine populated|**event:** afterPivotEnginePopulate<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (afterPivotEnginePopulate)="onafterPivotEnginePopulate($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onafterPivotEnginePopulate(args) {}`<br/>`}`|**event:** enginePopulated<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (load)='onLoad($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`onLoad(): void {}`<br/>`}`|
 |Event Triggers after the control populated with data source|**event:** renderSuccess<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (renderSuccess)="onrenderSuccess($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`onrenderSuccess(args) {}`<br/>`}`|**event:** dataBound<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (dataBound)='ondataBound($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`ondataBound(): void {}`<br/>`}`|
 |Event Triggers after the control created|Not Applicable|**event:** created<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (created)='oncreated($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`oncreated(): void {}`<br/>`}`|
-|Event Triggers when destroy the control|Not Applicable|**event:** destroyed<br/><br/>`<ejs-pivotview #pivotview id='PivotView'(destroyed)='ondestroyed($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`ondestroyed(): void {}`<br/>`}`|
-|Event Triggers the cell clicked in pivot table widget|**event:** cellClick<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (cellClick)="oncellClick($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`oncellClick(args) {}`<br/>`}`|**event:** cellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (cellClick)='oncellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`oncellClick(): void {}`<br/>`}`|
+|Event Triggers when destroy the control|Not Applicable|**event:** destroyed<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (destroyed)='ondestroyed($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`ondestroyed(): void {}`<br/>`}`|
+|Event Triggers the cell clicked in pivot table|**event:** cellClick<br/><br/>`<ej-pivotgrid [dataSource]="dataSource" (cellClick)="oncellClick($event)"></ej-pivotgrid>`<br/><br/>`export class PivotGridComponent {`<br/>`oncellClick(args) {}`<br/>`}`|**event:** cellClick<br/><br/>`<ejs-pivotview #pivotview id='PivotView' (cellClick)='oncellClick($event)'></ejs-pivotview>`<br/><br/>`export class AppComponent {`<br/>`oncellClick(): void {}`<br/>`}`|
 |Keeping the model values in cookies|Not Applicable|**property:** enablePersistence<br/><br/>`<ejs-pivotview #pivotview id='PivotView' enablePersistence='true'></ejs-pivotview>`|

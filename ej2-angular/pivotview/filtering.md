@@ -3,7 +3,7 @@ layout: post
 title: Filtering in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table filters members using label, value, and date filters with include or exclude modes at runtime.
 platform: ej2-angular
-control: Filtering 
+control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -194,6 +194,19 @@ Label filtering allows you to display only the data with specific header text ac
 
 To enable label filtering, set the [`allowLabelFilter`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#allowlabelfilter) property to **true** in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). Once enabled, you can access the filtering options by clicking the filter icon next to any field in the row or column axis of the field list or grouping bar. This opens the filtering dialog where you can navigate to the "Label" tab to apply your label filtering criteria.
 
+![Filter icon in field list](../images/labelfiltering_fl_icon.png)
+<br/>
+
+![Filter icon in grouping bar](../images/labelfiltering_gb_icon.png)
+<br/>
+
+![Label filter tab in member editor dialog](../images/labelfiltering_dialog.png)
+<br/>
+
+![Resultant pivot table on label filter](../images/labelfiltering_grid.png)
+
+> In the label filtering UI, the member data type is automatically recognized based on the field chosen, and the filtering operation is carried out accordingly. In code-behind, however, users need to define the data type through a property, as explained in the following section.
+
 ### Filtering string data type through code
 
 String-based label filtering enables you to programmatically show only data that matches specific text values in your row and column fields, making it easier to focus on the exact information you need.
@@ -254,7 +267,7 @@ For example, to display only sales data where the "Sold" field values are less t
 <!-- markdownlint-disable MD028 -->
 > The following operators are supported for number data type: **Equals**, **DoesNotEquals**, **GreaterThan**, **GreaterThanOrEqualTo**, **LessThan**, **LessThanOrEqualTo**, **Between**, and **NotBetween**.
 
-> Number filtering is available only when the field contains numeric data format.
+> Number filtering is available only when the field contains numeric values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -276,7 +289,7 @@ To apply date filtering, specify your filtering criteria using the [`value1`](ht
 
 > You can use the following operators with date data type filtering: **Equals**, **DoesNotEquals**, **Before**, **BeforeOrEqualTo**, **After**, **AfterOrEqualTo**, **Between**, and **NotBetween**.
 
-> Date filtering is available only when the field has date type [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettings) configured.
+> Date filtering is available only when the field has a [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettings) entry with `type: 'date'` configured.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -301,6 +314,14 @@ Users can clear the applied label filter by clicking the **Clear** option at the
 Value filtering allows you to filter data based on aggregated values from measure fields, helping you focus on specific data ranges that meet your criteria.
 
 You can enable value filtering by setting the [`allowValueFilter`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#allowvaluefilter) property to **true** in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). Once enabled, click the filter icon next to any field in the row or column axis within the field list or grouping bar. A filtering dialog will appear where you can navigate to the "Value" tab to perform value filtering operations.
+
+![Filter icon in field list](../images/labelfiltering_fl_icon.png)
+<br/>
+
+![Filter icon in grouping bar](../images/labelfiltering_gb_icon.png)
+<br/>
+
+![Value filter tab in member editor dialog](../images/valuefiltering_dialog.png)
 
 You can also configure value filtering programmatically using the [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/filter) property. The following properties are required for value filtering:
 
@@ -349,6 +370,8 @@ You can clear the applied value filter by clicking the "Clear" option at the bot
 
 ## Event
 
+The Pivot Table provides the following events to monitor filtering operations. Use them to track, customize, or cancel a filter action at runtime.
+
 ### MemberFiltering
 
 The [`memberFiltering`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#memberfiltering) event gives you complete control over filter operations by triggering before any filter is applied through the filter dialog. This event activates specifically when you click the **"OK"** button in the filter dialog, allowing you to review, modify, or cancel the filtering process based on your requirements.
@@ -381,7 +404,7 @@ When you open the Member Editor dialog, the [`memberEditorOpen`](https://ej2.syn
 
 - [`fieldName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/membereditoropeneventargs#fieldname): The name of the field for which the Member Editor dialog opens.
 - [`fieldMembers`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/membereditoropeneventargs#fieldmembers): The list of all members in the selected field.
-- [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/membereditoropeneventargs#cancel): If you set this property to `true`, the Member Editor dialog will not open.
+- [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/membereditoropeneventargs#cancel): If you set this property to **true**, the Member Editor dialog will not open.
 - [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/membereditoropeneventargs#filtersetting) - Contains the current [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/filter) including filter items, types, and conditions.
 
 Here’s an example. In the Pivot Table below, only the selected member for the "Country" field appears in the Member Editor dialog:

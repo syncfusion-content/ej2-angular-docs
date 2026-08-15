@@ -3,7 +3,7 @@ layout: post
 title: Field List in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table field list lets users add, remove, and rearrange fields between axes with sort and filter options.
 platform: ej2-angular
-control: Field list 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -14,16 +14,16 @@ The Field List makes it easy to organize and analyze data in your Pivot Table. I
 
 The Field List can be displayed in two different ways to work with your Pivot Table:
 
-* **In-built Field List (Popup)**: Shows a field list icon in the Pivot Table interface. Click this icon to open the field list in a dialog box.
-* **Stand-alone Field List (Fixed)**: Displays the field list in a fixed position on your web page alongside the Pivot Table.
+* **In-built Field List (Popup)**: Shows a Field List icon in the Pivot Table interface. Click this icon to open the Field List in a dialog box.
+* **Stand-alone Field List (Fixed)**: Displays the Field List in a fixed position on your web page alongside the Pivot Table.
 
 ## In-built Field List (Popup)
 
-The built-in field list provides quick access to modify your PivotTable report settings without taking up permanent space on your webpage. To enable this option, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property of the PivotTable to **true**. A field list icon will then appear in the top-left corner of the PivotTable. When you click this icon, the field list dialog opens.
+The built-in field list provides quick access to modify your Pivot Table report settings without taking up permanent space on your webpage. To enable this option, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property of the Pivot Table to **true**. A field list icon will then appear in the top-left corner of the Pivot Table. When you click this icon, the field list dialog opens.
 
 > The field list icon appears in the top right corner of the Pivot Table when the grouping bar is enabled.
 
-To use the field list, you need to add the `FieldListService` module to your Pivot Table.
+To use the field list, you need to inject the `FieldListService` module into the Pivot Table using the `@NgModule.providers` section.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -169,7 +169,7 @@ To rearrange fields, users can drag a field from the Field List and drop it into
 
 ## Filtering members
 
-Users can filter members in the row, column, and filter axes by selecting the filter icon next to each field. This opens a dialog where users can choose to include or exclude specific members from the Pivot Table. To learn more about filtering members, [refer to the filtering documentation](./filtering).
+Users can filter members in the row, column, and filter axes by selecting the filter icon next to each field. This opens a dialog where users can choose to include or exclude specific members from the Pivot Table. To learn more, see the [Filtering](./filtering) documentation.
 
 ![Filter icon next to each field](../images/fieldlist_filtericon.png)
 
@@ -179,7 +179,7 @@ Users can filter members in the row, column, and filter axes by selecting the fi
 
 ## Sorting members
 
-The Pivot Table allows users to sort members in the row and column axes using a sort icon next to each field. By clicking this icon, users can arrange members in either ascending or descending order at runtime. This option helps users organize data in a way that suits their needs. For more details on sorting members, [refer here](./sorting).
+The Pivot Table allows users to sort members in the row and column axes using a sort icon next to each field. By clicking this icon, users can arrange members in either ascending or descending order at runtime. This option helps users organize data in a way that suits their needs. For more details, see the [Sorting](./sorting) documentation.
 
 ![Sorting the field list](../images/fieldlist_sorticon.png)
 <br/>
@@ -188,7 +188,7 @@ The Pivot Table allows users to sort members in the row and column axes using a 
 
 ## Calculated fields
 
-The calculated field option allows users to create a new field based on existing fields from the data source using basic arithmetic operations, such as addition, subtraction, multiplication, and division. To use this option in the Field List UI, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowcalculatedfield) property in the Pivot Table to **true**. When enabled, a button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can define a new calculated field. For more details on calculated fields, refer to [this section](./calculated-field).
+The calculated field option allows users to create a new field based on existing fields from the data source using basic arithmetic operations, such as addition, subtraction, multiplication, and division. To use this option in the Field List UI, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowcalculatedfield) property in the Pivot Table to **true**. When enabled, a button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can define a new calculated field. For more details, see the [Calculated Field](./calculated-field) documentation.
 
 ![Enabling calculated field in Field List UI](../images/gs_calc_button.png)
 <br/>
@@ -200,7 +200,7 @@ The calculated field option allows users to create a new field based on existing
 
 ## Changing aggregation type of value fields at runtime
 
-Users can perform calculations on a group of values by selecting an aggregation type. Each value field in the Field List appears with a dropdown icon. Clicking this icon allows users to choose an aggregation type, such as sum, average, or count, at runtime. Once selected, the Pivot Table updates automatically to reflect the chosen aggregation type for the values. For more details on aggregation, refer to [aggregation](./aggregation).
+Users can perform calculations on a group of values by selecting an aggregation type. Each value field in the Field List appears with a dropdown icon. Clicking this icon allows users to choose an aggregation type, such as sum, average, or count, at runtime. Once selected, the Pivot Table updates automatically to reflect the chosen aggregation type for the values. For more details, see the [Aggregation](./aggregation) documentation.
 
 ![Icon to change aggregation type](../images/aggregation_fl_icon.png)
 <br/>
@@ -212,7 +212,7 @@ Users can perform calculations on a group of values by selecting an aggregation 
 
 ## Defer layout update
 
-The defer layout update option allows users to update the Pivot Table only when needed, instead of after every change in the Field List. To enable this option, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowdeferlayoutupdate) property to **true** in the Pivot Table. When enabled, a checkbox appears in the Field List, checked by default. Users can uncheck this checkbox to make changes without updating the Pivot Table immediately, and then apply all changes at once. For more details on defer layout update, refer to [defer update](./defer-update).
+The defer layout update option allows users to update the Pivot Table only when needed, instead of after every change in the Field List. To enable this option, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowdeferlayoutupdate) property to **true** in the Pivot Table. When enabled, a checkbox appears in the Field List, checked by default. Users can uncheck this checkbox to make changes without updating the Pivot Table immediately, and then apply all changes at once. For more details, see the [Defer Update](./defer-update) documentation.
 
 ![Defer layout update checkbox](../images/fieldlist_deferupdate.png)
 
@@ -294,7 +294,9 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 At runtime, the **Values** button in the field list allows users to move the values position to a different place (index) among other fields in the column or row axis of the Pivot Table. To enable the **Values** button, set the [`showValuesButton`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showvaluesbutton) property to **true**.
 
-> This option is only available for relational data source.
+> This support is only available for relational data sources.
+
+> The Values button is displayed only when multiple fields are added to the Values axis. It is not shown when a single field is present.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -310,6 +312,8 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 ## Events
 
+The Pivot Table and Field List provide the following events to monitor and synchronize field list operations. Use them to track UI actions, customize behavior, or keep the two components in sync.
+
 ### EnginePopulated
 
 The [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/index-default#enginepopulated) event is available in both the Pivot Table and the Field List. It triggers after the data engine is populated with the updated report settings, allowing the Pivot Table and Field List to stay in sync when changes are made.
@@ -317,7 +321,7 @@ The [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/api/piv
 - In the Field List, the [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/index-default#enginepopulated) event is triggered whenever the report is modified, such as when fields are added, removed, or rearranged. The updated report is sent to the Pivot Table using the [`updateView`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/index-default#updateview) method within this event to refresh the Pivot Table's display.
 - In the Pivot Table, the [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#enginepopulated) event is triggered when the report is updated. The modified report is passed to the Field List using the [`update`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/index-default#update) method to ensure the Field List reflects the changes.
 
-This event includes the following parameters: [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/enginepopulatedeventargs#datasourcesettings), [`pivotFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/enginepopulatedeventargs#pivotfieldlist), and [`pivotValues`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/enginepopulatedeventargs#pivotvalues).
+This event includes the following parameters: [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/enginepopulatedeventargs#datasourcesettings), [`pivotFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/index-default), and [`pivotValues`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/enginepopulatedeventargs#pivotvalues).
 
 > Note: This event is not needed for the popup Field List, as it is built into the Pivot Table.
 
@@ -349,7 +353,7 @@ The [`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 - [`droppedPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fielddroppedeventargs#droppedposition): Specifies the position within the axis where the field was placed.
 - [`fieldName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fielddroppedeventargs#fieldname): Provides the name of the dropped field.
 
-In the following code example, we changed the caption of the dropped field using this event at runtime:
+In the following code example, the caption of the dropped field is changed at runtime using this event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -385,9 +389,9 @@ The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotvi
 
 > **Note**: This parameter is available only when the action involves a specific field, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
 
-* [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#cancel): A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action from proceeding.
+* [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#cancel): A Boolean property that allows you to prevent the current action from completing. Set this to `true` to stop the action from proceeding.
 
-In the following sample, you can restrict opening the popup field list by setting the **args.cancel** option to **true** in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionbegin) event.
+In the following sample, you can restrict opening the popup field list by setting the `args.cancel` option to `true` in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionbegin) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
