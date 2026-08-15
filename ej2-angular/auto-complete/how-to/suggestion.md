@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Suggestion in Angular Auto complete component | Syncfusion
-description: Learn here all about Suggestion in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: How to show suggestion list in Angular AutoComplete | Syncfusion®
+description: Show a stored suggestion list in Angular AutoComplete on focus by caching typed and selected items in local storage via the focus event.
 platform: ej2-angular
 control: Suggestion 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Suggestion in Angular Auto complete component
+# How to show suggestion list in Angular AutoComplete
 
 The AutoComplete supports to displaying suggestion list upon focusing an empty auto complete component, using the focus event in the control. We have used the filtering and change events to get the typed and selected words and stored them in the browser’s local storage. Then using the focus event, we have displayed the stored list as suggestions.
 

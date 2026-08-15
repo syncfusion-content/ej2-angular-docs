@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hover multi line tree node in Angular TreeView component | Syncfusion
-description: Learn here all about Hover multi line tree node in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Apply hover background color to multi-line tree node in Angular Tree View | Syncfusion
+description: Apply hover and selection backgrounds to multi-line Angular Tree View nodes by syncing e-fullrow and e-text-content heights.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hover multi line tree node in Angular TreeView component
+# How to apply hover background color to multi-line tree node in Angular Tree View
 
 When working with TreeView nodes that contain multi-line content, the default hover and selection behaviors may not align properly with the actual content height. This guide demonstrates how to create consistent hover and selection effects that cover the entire multi-line node content area.
 

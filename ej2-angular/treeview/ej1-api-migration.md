@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular TreeView component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in Angular Tree View | Syncfusion
+description: Migrate the Angular Tree View from EJ1 to EJ2 with mapped properties, methods, and events like addNodes, moveNodes, and showCheckBox.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular TreeView component
+# EJ1 API Migration in Angular Tree View
 
 This article describes the API migration process of TreeView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Signature component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Signature component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular Signature | Syncfusion
+description: Customize the Angular Signature stroke width, color, and background color or image to match your application's look and feel.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Signature component
+# Customization in Angular Signature
 
 Customize the Signature component's appearance by modifying stroke properties, background colors, and images. The component uses Canvas API methods (moveTo and lineTo) to render strokes with customizable width, color, and background styling.
 

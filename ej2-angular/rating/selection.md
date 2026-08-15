@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection with Angular Rating component | Syncfusion
-description:  Learn here all about Selection with Angular Rating component of Syncfusion Essential JS 2 and more details.
+title: Selection in Angular Rating | Syncfusion
+description: Control Angular Rating selection with the min property, enable single-item picking using enableSingleSelection, and toggle a reset button through allowReset.
 platform: ej2-angular
 control: Selection
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Rating Component
+# Selection in Angular Rating
 
 The rating component allows users to rate something using a visual scale, and the selection state can be changed by the user clicking or tapping on the stars in the rating scale or through code. The rating component has a minimum value and a reset button, and provides customization options for the selected rating value and selection behavior.
 

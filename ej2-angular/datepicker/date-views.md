@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Date views in Angular Datepicker component | Syncfusion
-description: Learn here all about Date views in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: Start View and Depth in Angular DatePicker | Syncfusion®
+description: Learn how to configure the start view and depth of navigation in the Syncfusion Angular DatePicker using the start and depth properties.
 platform: ej2-angular
 control: Date views 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date views in Angular Datepicker component
+# Start View and Depth Restriction in Angular DatePicker
 
 The DatePicker has the following predefined views that provides a flexible way to navigate back and forth to select the date.
 

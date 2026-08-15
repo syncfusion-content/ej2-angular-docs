@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizing in Angular MultiSelect component | Syncfusion
+title: Popup Resizing in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Popup Resizing in Syncfusion Angular MultiSelect component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Resizing 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing in Angular MultiSelect component
+# Popup Resizing in Angular MultiSelect Dropdown
 
 The MultiSelect component supports dynamic popup resizing through the [allowResize](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#allowresize) property. When enabled, users can resize the popup by dragging its borders, enhancing visibility and usability. The resized dimensions are automatically preserved in the browser's local storage, maintaining consistent sizing across user sessions.
 

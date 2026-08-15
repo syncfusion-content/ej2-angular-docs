@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Card component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular Card component, including setup, installation and basic configuration.
+title: Getting Started with Angular Card | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Card component. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Card component
+# Getting Started with Angular Card
 
 The Card component is a flexible container used to display content, actions, and metadata in a structured and visually appealing layout.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Limits in Angular Range Slider component | Syncfusion
-description: Learn here all about Limits in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: Limits in Angular Range Slider | Syncfusion
+description: Restrict Angular Range Slider handle movement using the limits object to set minStart, minEnd, maxStart, maxEnd, and lock individual handles.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Limits in Angular Range Slider component
+# Limits in Angular Range Slider
 
 The [`limits`](https://ej2.syncfusion.com/angular/documentation/api/slider/#limits) property restricts slider thumb movement within specified boundaries. Use limits when certain value ranges would negatively impact your process or product, or when you need to lock specific handles in place.
 

@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Custom expand/collapse in Angular Accordion | Syncfusion
-description: Learn here all about Customize expand collapse actions in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: How to customize expand/collapse in Angular Accordion | Syncfusion
+description: Customize Angular Accordion expand and collapse animations by canceling the expanding event and using expandItem to control timing.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize expand collapse actions in Angular Accordion component
+# How to customize expand/collapse in Angular Accordion
 
 Accordion component supports customizing the expand or collapse animation action behavior. You can manually change the expand animation action performed after the collapse animation operation performed on already expand pane when the expand icons are clicked.
 

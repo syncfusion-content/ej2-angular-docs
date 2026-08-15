@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adornments in ##Platform_Name## TextArea control | Syncfusion
-description: Learn here all about Adornments in Syncfusion ##Platform_Name## TextArea control of Syncfusion Essential JS 2 and more.
+title: Adornments in Angular TextArea | Syncfusion
+description: Add icons, buttons, or labels to the Angular TextArea with prependTemplate and appendTemplate, and position them via adornmentFlow and adornmentOrientation.
 platform: ej2-angular
 control: Adornments
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## TextArea Control
+# Adornments in Angular TextArea
 
 The TextArea component supports adornments that allow you to add custom elements before or after the textarea using the `prependTemplate` and `appendTemplate` properties. Adornment elements can include icons, text labels, or action buttons for formatting and content management. You can arrange adornments horizontally or vertically using the `adornmentFlow` and `adornmentOrientation` properties for flexible layouts.
 

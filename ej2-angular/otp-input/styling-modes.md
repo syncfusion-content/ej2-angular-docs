@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling Modes with Angular OTP Input component | Syncfusion
-description:  Learn here all about Styling Modes with Angular OTP Input component of Syncfusion Essential JS 2 and more details.
+title: Styling Modes in Angular OTP Input | Syncfusion
+description: Choose outlined, filled, or underlined styling modes for the Angular OTP Input fields to match your design and UX requirements.
 platform: ej2-angular
 control: OTP Input
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styling Modes in Angular OTP Input component
+# Styling Modes in Angular OTP Input
 
 Styling modes define the visual presentation of the OTP input fields. Choose a styling mode based on your design requirements and user experience goals. Three predefined modes are available: outlined (default), filled, and underlined.
 

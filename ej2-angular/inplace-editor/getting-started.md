@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Inplace editor component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Inplace editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular In-place Editor | Syncfusion
+description: Learn how to get started with the Syncfusion Angular In-place Editor control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Inplace Editor component
+# Getting Started with Angular In-place Editor
 
 The In-place Editor component allows users to edit values directly within the page without navigating to a separate form, providing a seamless and efficient editing experience. It supports both Inline and Pop-up editing modes to update data quickly and conveniently.
 

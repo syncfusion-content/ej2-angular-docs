@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Tooltip component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: EJ1 migration in Angular Tooltip | Syncfusion
+description: Map Syncfusion Essential JS 1 Tooltip properties, methods, and events to their Angular Tooltip equivalents to migrate applications from EJ1 to EJ2.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API migration in Angular Tooltip component
+# EJ1 migration in Angular Tooltip
 
 This article describes how to migrate the Tooltip component API from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

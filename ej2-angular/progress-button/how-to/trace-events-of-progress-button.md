@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Trace events of progress button in Angular Progress button component | Syncfusion
-description: Learn here all about Trace events of progress button in Syncfusion Angular Progress button component of Syncfusion Essential JS 2 and more.
+title: Trace events in Angular Progress Button | Syncfusion
+description: Handle Angular Progress Button events including begin, progress, end, and fail to execute custom logic.
 platform: ej2-angular
 control: Trace events of progress button 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Trace events of progress button in Angular Progress button component
+# How to trace events in Angular Progress Button
 
 The ProgressButton component triggers events based on its actions. The events can be used as extension points to perform custom operations.
 

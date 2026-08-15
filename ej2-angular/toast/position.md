@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Position in Angular Toast component | Syncfusion
-description: Learn here all about Position in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Position in Angular Toast | Syncfusion
+description: Position Syncfusion Angular Toast with predefined Left, Center, or Right and Top or Bottom combinations, or custom pixel and percentage values.
 platform: ej2-angular
 control: Position 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in Angular Toast component
+# Position in Angular Toast
 
 Toast position can be updated based on predefined positions or user customizable positions. Predefined position combinations are updated in [`X`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel/#x) and [`Y`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel/#y) position properties.
 

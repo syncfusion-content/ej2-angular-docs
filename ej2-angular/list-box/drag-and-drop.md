@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in Angular List box component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in Angular ListBox | Syncfusion
+description: Enable allowDragAndDrop on the Angular ListBox to move items within one list or between two lists with matching scope, using dragStart, drag, and drop events.
 platform: ej2-angular
 control: Drag and drop 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in Angular List box component
+# Drag and Drop in Angular ListBox
 
 The ListBox has support to drag an item or a group of selected items and drop it within the same list box or into another list box.
 

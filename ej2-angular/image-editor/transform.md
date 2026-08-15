@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Transform in Angular Image editor component | Syncfusion
-description: Learn here all about Transform in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Transform in Angular Image Editor | Syncfusion
+description: Rotate, flip, straighten, and zoom images in the Syncfusion Angular Image Editor using built-in transform methods that work on both pixels and annotations.
 platform: ej2-angular
 control: Transform 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Transform in the Angular Image Editor component
+# Transform in Angular Image Editor
 
 The Image Editor provides a range of transformation options for manipulating both the image and its annotations. These options include rotation, flipping, zooming, and panning. These transformations offer flexibility in adjusting the image and enhancing its visual appearance. 
 

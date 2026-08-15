@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Date time format in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Date format in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: DateTime Format in Angular DateTime Picker | Syncfusion®
+description: Learn how to set the date and time format in the Syncfusion Angular DateTime Picker using the format property with standard or custom patterns.
 platform: ej2-angular
 control: Date time format 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date time format in Angular Datetimepicker component
+# DateTime Format in Angular DateTime Picker
 
 ## Date time Format
 

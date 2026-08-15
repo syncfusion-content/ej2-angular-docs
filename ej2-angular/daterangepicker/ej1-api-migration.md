@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Daterangepicker component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in Angular DateRangePicker | Syncfusion®
+description: Learn how to migrate the Syncfusion Angular DateRangePicker from Essential JS 1 to EJ2 by mapping legacy APIs and properties to their new names.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Daterangepicker component
+# Migration from Essential JS 1 in Angular DateRangePicker
 
 This article describes the API migration process of DateRangePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

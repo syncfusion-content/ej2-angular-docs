@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filter in Angular Auto complete component | Syncfusion
-description: Learn here all about Filter in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Filter by text and value in Angular AutoComplete | Syncfusion®
+description: Filter Angular AutoComplete results using both text and value fields with the dataManager predicate and updateData method for custom filtering.
 platform: ej2-angular
 control: Filter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter in Angular Auto complete component
+# How to filter using both text and value field in Angular AutoComplete
 
 The AutoComplete data can be filtered based on both text and value fields using `predicate` of dataManager through filtering event. The filtered data can be again updated through `updateData` method.
 

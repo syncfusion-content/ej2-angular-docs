@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in Angular MultiColumn ComboBox component | Syncfusion
+title: Sorting in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Sorting in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting in Angular MultiColumn ComboBox component
+# Sorting in Angular MultiColumn ComboBox
 
 The MultiColumn ComboBox component provides built-in support for sorting data-bound columns in ascending or descending order by using the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#allowsorting) property. By default, the value is `true`.
 

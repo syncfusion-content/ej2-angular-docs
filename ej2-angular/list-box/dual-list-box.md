@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dual list box in Angular List box component | Syncfusion
-description: Learn here all about Dual list box in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: Dual ListBox in Angular ListBox | Syncfusion
+description: Create an Angular dual ListBox to move items between two lists using toolbarSettings, with moveUp, moveDown, moveTo, moveFrom, moveAllTo, and moveAllFrom operations.
 platform: ej2-angular
 control: Dual list box 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Dual list box in Angular List box component
+# Dual ListBox in Angular ListBox
 
 The dual list box allows the user to move items between two list boxes by clicking the toolbar buttons. Dual list box can be created by listing items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#toolbarsettings) along with the `scope` property.
 

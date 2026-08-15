@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize appearance in Angular Radio button component | Syncfusion
-description: Learn here all about Customize radiobutton appearance in Syncfusion Angular Radio button component of Syncfusion Essential JS 2 and more.
+description: Customize Angular Radio Button appearance with CSS classes assigned through the cssClass property.
 platform: ej2-angular
 control: Customize radiobutton appearance 
 documentation: ug

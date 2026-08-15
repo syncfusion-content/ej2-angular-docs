@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Slider validation using template driven forms in Angular Range Slider component | Syncfusion
-description: Learn here all about Slider validation using template driven forms in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: How to validate slider with template forms in Angular Range Slider | Syncfusion
+description: Apply Angular template-driven form validation to the Range Slider using directives, ngModel, and ng-valid, ng-invalid state classes.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Slider validation using template driven forms in Angular Range Slider component
+# How to validate slider with template forms in Angular Range Slider
 
 Implement Range Slider validation within Angular [Template-driven](https://angular.io/guide/form-validation#template-driven-validation) forms using directives and validation rules for a simpler form validation approach.
 

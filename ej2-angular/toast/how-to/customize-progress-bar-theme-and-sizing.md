@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize progress bar theme and sizing in Toast | Syncfusion
-description: Learn here all about Customize progress bar theme and sizing in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: How to customize progress bar styling in Angular Toast | Syncfusion
+description: Customize the Syncfusion Angular Toast progress bar theme and sizing with custom CSS or by handling the beforeOpen event for styling.
 platform: ej2-angular
 control: Customize progress bar theme and sizing
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize progress bar theme and sizing in Angular Toast
+# How to customize progress bar styling in Angular Toast
 
 In default, the Progress bar will appear based on the theme stylings and dimensions. You can customize progress bar stylings through custom CSS or Event functions.
 

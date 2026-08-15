@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Spinner component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Spinner component of Syncfusion Essential JS 2 and more.
+title: Style and appearance in Angular Spinner | Syncfusion
+description: Customize the Syncfusion Angular Spinner stroke color and fill across Material, Fabric, Bootstrap, Bootstrap 4, and High Contrast themes with CSS overrides.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Spinner component
+# Style and appearance in Angular Spinner
 
 The following CSS structure can be used to customize the spinner component's appearance based on your requirements.
 

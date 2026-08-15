@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Numerictextbox component | Syncfusion
-description: Learn here all about Globalization in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Globalization in Angular Numeric Textbox | Syncfusion
+description: Localize spin button tooltips, internationalize numbers with Unicode CLDR data, and enable RTL rendering in the Angular Numeric Textbox for global cultures.
 platform: ej2-angular
 control: Globalization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in Angular Numerictextbox component
+# Globalization in Angular Numeric Textbox
 
 ## Localization
 

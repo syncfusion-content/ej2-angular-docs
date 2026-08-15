@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Center of the page on scrolling in Angular Dialog | Syncfusion
-description: Learn here all about Position the dialog on center of the page on scrolling in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Center the Dialog on page scroll in Angular Dialog | Syncfusion
+description: Keep the Syncfusion Angular Dialog fixed at the center of the viewport while the page scrolls by adding the e-fixed class and preventing page scroll.
 platform: ej2-angular
 control: Position the dialog on center of the page on scrolling 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position the dialog at center when scrolling in Angular Dialog
+# How to center the Dialog on page scroll in Angular Dialog
 
 By default, the dialog scrolls along with the page or container. To keep the dialog in a fixed position without scrolling, add the `e-fixed` class to the dialog element and prevent scrolling as shown in the sample below.
 

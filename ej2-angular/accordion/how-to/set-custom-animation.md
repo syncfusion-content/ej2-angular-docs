@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Set custom animation in Angular Accordion component | Syncfusion
-description: Learn here all about Set custom animation in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: How to set custom animation in Angular Accordion | Syncfusion
+description: Configure custom expand and collapse animations on the Angular Accordion with effect, easing, and duration via the animation property.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set custom animation in Angular Accordion component
+# How to set custom animation in Angular Accordion
 
 
 The Angular Accordion component supports custom animations for expand and collapse actions, enhancing the visual appeal and interactivity of content transitions. Use the [`animation`](https://ej2.syncfusion.com/angular/documentation/api/accordion#animation) property, part of the `AccordionAnimationSettingsModel`, to configure [`effect`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionActionSettingsModel#effect), [`easing`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionActionSettingsModel#easing), and [`duration`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionActionSettingsModel#duration) for a tailored user experience. This is ideal for creating smooth transitions in navigation menus, FAQs, or collapsible panels.

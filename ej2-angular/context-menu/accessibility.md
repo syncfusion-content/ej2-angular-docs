@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Context menu component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Context Menu | Syncfusion
+description: Use WAI-ARIA roles, labels, expanded state, and keyboard shortcuts in the Angular Context Menu to meet WCAG and Section 508 standards.
 control: Context Menu
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Context menu component
+# Accessibility in Angular Context Menu
 
 The Angular ContextMenu component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

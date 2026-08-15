@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in Angular Spinner component | Syncfusion
-description: Learn here all about Types in Syncfusion Angular Spinner component of Syncfusion Essential JS 2 and more.
+title: Types in Angular Spinner | Syncfusion
+description: Switch the Syncfusion Angular Spinner between Material, Fabric, and Bootstrap visuals by passing a type value to the setSpinner method.
 platform: ej2-angular
 control: Types 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in Angular Spinner component
+# Types in Angular Spinner
 
 By default, the Spinner type is automatically set based on the theme imported into the page. The spinner loads in the applicable Essential JS 2 component according to the selected theme.
 

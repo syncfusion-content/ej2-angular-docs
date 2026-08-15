@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the UI appearance of the NumericTextBox | Syncfusion
-description: Learn here all about Customize the ui appearance of the control in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: How to customize the UI appearance in Angular Numeric Textbox | Syncfusion
+description: Customize the Angular Numeric Textbox appearance with a custom cssClass and CSS rules for height, font size, borders, border-radius, and focus state.
 platform: ej2-angular
 control: Customize the ui appearance of the control 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the UI appearance of the NumericTextBox
+# How to customize the UI appearance in Angular Numeric Textbox
 
 The NumericTextBox appearance can be customized by adding a custom `cssClass` to the component and applying custom styles. The following example demonstrates how to customize the NumericTextBox appearance.
 

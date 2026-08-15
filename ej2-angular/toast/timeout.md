@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timeout in Angular Toast component | Syncfusion
-description: Learn here all about Timeout in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Timeout in Angular Toast | Syncfusion
+description: Auto-hide Syncfusion Angular Toast with timeOut and extendedTimeOut, or set timeOut to 0 to keep a static toast until manually closed.
 platform: ej2-angular
 control: Timeout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timeout in Angular Toast component
+# Timeout in Angular Toast
 
 Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast/#timeout) property, toast will live till the timeOut reaches without user interaction, a timeOut value was considered as the millisecond.
 

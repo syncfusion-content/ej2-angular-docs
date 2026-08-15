@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form Support in Angular Uploader Component | Syncfusion
-description: Learn here all about form support in Syncfusion Angular Uploader component, it's elements, and more.
+title: Form Support in Angular Uploader | Syncfusion
+description: Integrate the Angular Uploader with template-driven and reactive HTML forms by setting saveUrl, removeUrl, autoUpload, and a name attribute for form submission.
 platform: ej2-angular
 control: Form support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in Angular Uploader component
+# Form Support in Angular Uploader
 
 The Uploader component integrates seamlessly with HTML forms, functioning like a standard file input.
 The following configuration is required to use the Uploader within a form:

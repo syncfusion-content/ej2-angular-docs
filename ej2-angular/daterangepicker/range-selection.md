@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Range selection in Angular Daterangepicker component | Syncfusion
-description: Learn here all about Range selection in Syncfusion Angular Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Range Restriction in Angular DateRangePicker | Syncfusion®
+description: Learn how to restrict the Syncfusion Angular DateRangePicker to a specific date range using the min, max, and dateRange properties.
 platform: ej2-angular
 control: Range selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Range selection in Angular Daterangepicker component
+# Range Restriction in Angular DateRangePicker
 
 Range selection in a DateRangePicker can be made-to-order with desire restrictions based on application needs.
 

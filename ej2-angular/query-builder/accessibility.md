@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Query Builder component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Query Builder component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Query Builder UI | Syncfusion
+description: Accessibility support in the Syncfusion Angular Query Builder UI, including WCAG 2.2, Section 508, WAI-ARIA roles, keyboard navigation, screen reader support.
 control: Accessibility 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Query Builder component
+# Accessibility in Angular Query Builder UI
 
 The Query Builder component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WAI-ARIA](https://www.w3.org/TR/wai-aria/) roles, ensuring an inclusive experience for all users.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Inplace editor component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular In-place Editor | Syncfusion
+description: Bind local arrays or remote data via DataManager to the Angular In-place Editor, with OData V4 and Web API adaptors for DropDownList items.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Inplace editor component
+# Data Binding in Angular In-place Editor
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 components load the data either from local data sources or remote data services using the `dataSource` property and it supports the data type of an array or `DataManager`. Also supports different kind of data services such as OData, OData V4, Web API, and data formats such as XML, JSON, JSONP with the help of `DataManager` adaptors.
 

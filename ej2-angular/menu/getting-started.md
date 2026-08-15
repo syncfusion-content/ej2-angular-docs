@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Menu component | Syncfusion
-description:  Learn how to get started with Syncfusion Angular Menu component, including setup, installation and basic configuration.
+title: Getting Started with Angular Menu Bar | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Menu Bar control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Menu component
+# Getting Started with Angular Menu Bar
 
 The Menu component displays a list of commands and options in a hierarchical structure, enabling efficient navigation and action selection.
 

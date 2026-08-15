@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Setting max height to the dialog in Angular Dialog | Syncfusion
-description: Learn here all about Setting max height to the dialog in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to set max height for the Dialog in Angular Dialog | Syncfusion
+description: Set a custom maximum height for the Syncfusion Angular Dialog inside the beforeOpen event to control how tall the popup can grow.
 platform: ej2-angular
 control: Setting max height to the dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set max height for the dialog in Angular Dialog component
+# How to set max height for the Dialog in Angular Dialog
 
 By default, the dialog's maximum height is calculated based on the target container. If no target is specified, the dialog uses the body as the target and calculates the maximum height accordingly. Set the dialog's maximum height using the [beforeOpen](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#beforeopen) event.
 

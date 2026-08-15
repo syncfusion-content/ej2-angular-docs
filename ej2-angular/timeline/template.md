@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Timeline component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Timeline component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Timeline | Syncfusion
+description: Customize Syncfusion Angular Timeline items with the template property, using item and itemIndex context for tailored content and layout.
 platform: ej2-angular
 control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Timeline component
+# Template in Angular Timeline
 
 The Timeline component provides comprehensive template customization capabilities through the [template](https://ej2.syncfusion.com/angular/documentation/api/timeline#template) property. This feature allows to fully customize the appearance and content structure of timeline items. This includes customizing dot indicators, content areas, styling, and layout arrangements to match your application's design requirements.
 

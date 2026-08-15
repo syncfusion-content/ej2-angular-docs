@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disable default animation in Angular Tab | Syncfusion
-description: Learn here all about Disable default tab animation effects in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to disable default Tab animation effects in Angular Tab | Syncfusion
+description: Disable Angular Tab default content transition animations via the animation property to improve performance and accessibility.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable default animation effects in Angular Tab component
+# How to disable default Tab animation effects in Angular Tab
 
 The Tab component includes built-in animation effects for smooth transitions between tab content. You can disable these default animations using the [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tab/#animation) property configuration. This is useful for improving performance, meeting accessibility requirements, or creating custom visual experiences.
 

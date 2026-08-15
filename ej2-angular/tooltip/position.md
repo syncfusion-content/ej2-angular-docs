@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Position in Angular Tooltip component | Syncfusion
-description: Learn here all about Position in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Position in Angular Tooltip | Syncfusion
+description: Attach the Syncfusion Angular Tooltip at 12 static positions, control the tip pointer, follow the mouse, and set offsetX and offsetY from the target.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in Angular Tooltip component
+# Position in Angular Tooltip
 
 Attach tooltips to 12 static locations around the target element. When initializing the Tooltip, set the [`position`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#position) property to one of the following values:
 

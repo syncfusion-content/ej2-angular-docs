@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Modal in Angular Speed dial component | Syncfusion
-description: Learn here all about Modal in Syncfusion Angular Speed dial component of Syncfusion Essential JS 2 and more.
+title: Modal in Angular Speed Dial | Syncfusion
+description: Enable modal overlay for Angular Speed Dial to block background interaction using the modal property.
 platform: ej2-angular
 control: Modal 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modal in Angular Speed dial component
+# Modal in Angular Speed Dial
 
 You can use the [`modal`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#modal) property to set the Speed Dial as modal which adds an overlay to prevent the background interaction.
 

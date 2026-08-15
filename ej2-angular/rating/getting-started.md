@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Rating component | Syncfusion
-description: Check out and learn how to get started with the Angular Rating component from Syncfusion Essential JS 2.
+title: Getting Started with Angular Rating | Syncfusion
+description: Learn how to install Syncfusion Angular Rating, wire it into a standalone Angular component, and render a star scale using ng add @syncfusion/ej2-angular-inputs.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Rating component
+# Getting Started with Angular Rating
 
 The Rating component allows users to provide and view ratings for products, services, applications, movies, and other items using a customizable numeric or star-based scale.
 

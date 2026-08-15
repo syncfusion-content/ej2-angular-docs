@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Horizontal in Angular Card component | Syncfusion
-description: Learn here all about Horizontal in Syncfusion Angular Card component of Syncfusion Essential JS 2 and more.
+title: Horizontal Card in Angular Card | Syncfusion
+description: Align Angular Card elements horizontally with the e-card-horizontal class and use e-card-stacked to keep specific sections vertical.
 platform: ej2-angular
 control: Card 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Horizontal in Angular Card component
+# Horizontal Card in Angular Card
 
 By default, all card elements are aligned vertically in a stacked layout following the natural DOM flow. The horizontal layout provides an alternative arrangement where card elements are positioned side-by-side, creating a more compact and visually engaging presentation for content that benefits from lateral organization.
 

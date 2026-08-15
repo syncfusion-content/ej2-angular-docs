@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Linear Flow in Angular Stepper component | Syncfusion
-description:  Learn here all about Linear Flow in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Linear Flow in Angular Stepper | Syncfusion
+description: Enforce sequential Angular Stepper navigation by enabling the linear property for wizard-style forms and task workflows.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Linear Flow in Angular Stepper component
+# Linear Flow in Angular Stepper
 
 The Stepper component allows configuration of linear flow to enforce sequential progression through steps, useful for structured workflows like forms or wizards. Enable linear flow by setting the [linear](https://ej2.syncfusion.com/angular/documentation/api/stepper/#linear) property to `true` on the `ejs-stepper` component. In linear mode, users cannot skip steps or navigate non-sequentially; navigation is restricted to the next or previous step. The default value is `false`, allowing navigation to any step in any order.
 

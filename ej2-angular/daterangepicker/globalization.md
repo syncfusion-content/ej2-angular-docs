@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Daterangepicker component | Syncfusion
-description: Learn here all about Globalization in Syncfusion Angular Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Globalization in Angular DateRangePicker | Syncfusion®
+description: Learn how to globalize the Syncfusion Angular DateRangePicker using culture-specific date formats, week, month names, and CLDR JSON data.
 platform: ej2-angular
 control: Globalization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization in Angular Daterangepicker component
+# Globalization in Angular DateRangePicker
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](../common/Globalization/internationalization) and also add culture specific customization and translation to the text [`localization`](../common/globalization/localization).
 

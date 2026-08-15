@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Resizing in Angular AutoComplete component | Syncfusion
-description: Learn here all about Popup Resizing in Syncfusion Angular AutoComplete component of Syncfusion Essential JS 2 and more.
+title: Popup Resizing in Angular AutoComplete | Syncfusion®
+description: Let users resize the Angular AutoComplete popup with the AllowResize property so popup dimensions persist across sessions for a customized view.
 platform: ej2-angular
 control: Resizing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resizing in Angular AutoComplete component
+# Popup Resizing in Angular AutoComplete
 
 You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
 

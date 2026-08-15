@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Responsive mode in Angular Toolbar component | Syncfusion
-description: Learn here all about Responsive mode in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: Responsive Mode in Angular Toolbar | Syncfusion
+description: Handle Angular Toolbar overflow with Scrollable navigation arrows, touch swipes, or Popup mode that groups overflow items in a dropdown.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Responsive mode in Angular Toolbar component
+# Responsive Mode in Angular Toolbar
 
 The Angular Toolbar component automatically handles content overflow with responsive display modes when toolbar items exceed the available viewing area. The component supports two primary responsive modes:
 

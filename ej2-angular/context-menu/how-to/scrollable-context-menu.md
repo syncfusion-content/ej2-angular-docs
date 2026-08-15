@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scrollable Context Menu in Angular Context menu component | Syncfusion
-description: Learn here all about Render Scrollable Context Menu in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: Render scrollable Context Menu in Angular Context Menu | Syncfusion
+description: Render a scrollable Angular Context Menu with enableScrolling and a fixed height set in beforeOpen to manage long item lists.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render Scrollable Context Menu in Angular Context menu component
+# How to render scrollable Context Menu in Angular Context Menu
 
 The Context Menu component provides scrolling functionality through the [enableScrolling](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#enablescrolling) property to manage overflow behavior when menu items exceed the available display area. This feature ensures all menu options remain accessible without disrupting page layout, particularly beneficial for menus with extensive item lists.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Navigations in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Navigations in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Navigations in Angular Breadcrumb | Syncfusion
+description: Configure Angular Breadcrumb navigation with relative or absolute URLs, enable last-item navigation, or open links in a new tab.
 platform: ej2-angular
-control: Breadcrumb 
+control: Breadcrumb
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Navigations in Angular Breadcrumb component
+# Navigations in Angular Breadcrumb
 
 The Breadcrumb component enables navigation to specific paths when users click breadcrumb items. To enable navigation functionality, bind the `url` property to the breadcrumb items.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering in Angular Combo box component | Syncfusion
-description: Learn here all about Filtering in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular ComboBox | Syncfusion®
+description: Filter Angular ComboBox data as you type when allowFiltering is enabled, with custom filter types, min character limits, and diacritics support.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular Combo box component
+# Filtering in Angular ComboBox
 
 The ComboBox has built-in support to filter the data items when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#allowfiltering) enabled. The filter operation starts as soon as you start typing characters in the component.
 

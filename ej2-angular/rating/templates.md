@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates with Angular Rating component | Syncfusion
-description:  Learn here all about Templates with Angular Rating component of Syncfusion Essential JS 2 and more details.
+title: Templates in Angular Rating | Syncfusion
+description: Replace the default Angular Rating symbol with emptyTemplate and fullTemplate directives to render custom emojis, SVG icons, or PNG images as rating items.
 platform: ej2-angular
 control: Templates
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Rating Component
+# Templates in Angular Rating
 
 The rating component allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
 

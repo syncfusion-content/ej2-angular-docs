@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Manipulating nodes in Angular TreeView component | Syncfusion
-description: Learn here all about Manipulating nodes in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: How to manipulate nodes in TreeView in Angular Tree View | Syncfusion
+description: Add, remove, update, refresh, or move Angular Tree View nodes programmatically using the addNodes, removeNodes, updateNode, refreshNode, and moveNodes methods.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node Manipulation in ##Platform_Name## TreeView component
+# How to manipulate nodes in TreeView in Angular Tree View
 
 The TreeView component provides Essential<sup style="font-size:70%">&reg;</sup> methods for dynamically managing nodes, enabling the creation of highly interactive and customizable tree structures:
 

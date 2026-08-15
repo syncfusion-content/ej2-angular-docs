@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Spinner component | Syncfusion
+title: Getting Started with Angular Spinner | Syncfusion
 description: Learn how to get started with the Syncfusion Angular Spinner component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Spinner
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Spinner component
+# Getting Started with Angular Spinner
 
 The Spinner component displays a loading indicator to inform users that an operation is in progress and helps provide visual feedback during asynchronous tasks.
 

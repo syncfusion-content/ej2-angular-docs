@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set the disabled state in Angular Button component | Syncfusion
-description: Learn here all about Set the disabled state in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
+title: How to set the disabled state in Angular Button | Syncfusion
+description: Disable an Angular Button by setting the disabled property to true, which prevents any user interaction.
 platform: ej2-angular
 control: Set the disabled state 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the disabled state in Angular Button component
+# How to set the disabled state in Angular Button
 
 Button component can be enabled/disabled by giving [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/button/index-default#disabled) property. To disable Button component,
 the `disabled` property can be set as `true`.

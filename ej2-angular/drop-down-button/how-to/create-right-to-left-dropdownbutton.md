@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create right to left dropdownbutton in Angular Drop down button component | Syncfusion
-description: Learn here all about Create right to left dropdownbutton in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Create right-to-left Dropdown Menu in Angular Dropdown Menu | Syncfusion
+description: Enable right-to-left layout in Angular Dropdown Menu by setting the enableRtl property to true.
 platform: ej2-angular
 control: Create right to left dropdownbutton 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create right to left dropdownbutton in Angular Drop down button component
+# How to create right-to-left Dropdown Menu in Angular Dropdown Menu
 
 DropDownButton component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#enablertl) as true.
 

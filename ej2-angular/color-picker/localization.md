@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Color Picker component | Syncfusion
-description: Details on localizing text and RTL support for the Syncfusion Angular Color Picker (Essential JS 2).
+title: Localization in Angular Color Picker | Syncfusion
+description: Localize the Syncfusion Angular Color Picker default text for Apply, Cancel, and ModeSwitcher using the L10n load function, and enable RTL rendering.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Color Picker component
+# Localization in Angular Color Picker
 
 ## Localization
 

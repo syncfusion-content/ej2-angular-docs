@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configure steps in Angular Stepper | Syncfusion
-description:  Learn here all about Steps in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Steps in Angular Stepper | Syncfusion
+description: Configure Angular Stepper steps with iconCss, text, label, cssClass, status, optional, and disabled properties for workflows.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Steps in Angular Stepper component
+# Steps in Angular Stepper
 
 The Angular Stepper allows you to add steps using the `<e-step>` tag directive. Each step can be configured with options such as `iconCss`, `text`, `label`, `cssClass` and more.
 

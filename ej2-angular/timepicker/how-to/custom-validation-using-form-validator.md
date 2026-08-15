@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom validation using form validator in Angular Timepicker component | Syncfusion
-description: Learn here all about Custom validation using form validator in Syncfusion Angular Timepicker component of Syncfusion Essential JS 2 and more.
+title: Custom Validation with FormValidator in Angular TimePicker | Syncfusion®
+description: Learn how to add custom validation rules to the Syncfusion Angular TimePicker in template-driven or reactive forms using the FormValidator.
 platform: ej2-angular
 control: Custom validation using form validator 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom validation using form validator in Angular Timepicker component
+# How to add custom validation using FormValidator in Angular TimePicker
 
 The client side validation takes place in the browser to avoid the waiting time to receive the response from sever. It validates the form elements to provide the better feedback messages to correct the every fields before the form submission.
 

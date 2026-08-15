@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable rtl in Angular Button group component | Syncfusion
-description: Learn here all about Enable rtl in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
+title: How to enable rtl in Angular Button Group | Syncfusion
+description: Enable RTL layout in Angular Button Group by adding the e-rtl class to the target element or container.
 platform: ej2-angular
 control: Enable rtl 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable rtl in Angular Button group component
+# How to enable rtl in Angular Button Group
 
 ButtonGroup supports RTL functionality. This can be achieved by adding `e-rtl` class to the target element.
 

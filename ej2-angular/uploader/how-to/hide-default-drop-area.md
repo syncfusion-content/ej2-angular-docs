@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hide default drop area in Angular Uploader component | Syncfusion
-description: Learn here all about Hide default drop area in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to hide default drop area in Angular Uploader | Syncfusion
+description: Hide the default Angular Uploader drop zone by overriding .e-upload.e-control, .e-file-select, and .e-file-drop styles to keep only the browse button visible.
 platform: ej2-angular
 control: Hide default drop area 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide default drop area in Angular Uploader component
+# How to hide default drop area in Angular Uploader
 
 You can hide the default drop area by overriding the corresponding Uploader component styles. In the following example, the styles listed below are overridden to conceal the default drop area:
 

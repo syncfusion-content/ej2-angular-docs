@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open save in Angular Signature component | Syncfusion
-description: Learn here all about Open save in Syncfusion Angular Signature component of Syncfusion Essential JS 2 and more.
+title: Open and Save in Angular Signature | Syncfusion
+description: Open pre-drawn signatures from base64 or URLs and save Angular Signature output as PNG, JPEG, SVG, base64, or blob.
 platform: ej2-angular
 control: Open save 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and save signatures in Angular Signature component
+# Open and Save in Angular Signature
 
 The Signature component supports opening pre-drawn signatures from base64 or hosted URLs, and saving signatures in multiple formats including images, base64, and blob.
 

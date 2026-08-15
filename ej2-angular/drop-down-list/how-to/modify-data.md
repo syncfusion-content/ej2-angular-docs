@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Modify data in Angular Drop down list component | Syncfusion
-description: Learn here all about Modify data in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to modify remote data in Angular Dropdown List | Syncfusion®
+description: Modify the result data in Angular Dropdown List before display when binding a remote data source, using the actionComplete event.
 platform: ej2-angular
 control: Modify data 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Modify data in Angular Drop down list component
+# How to modify result data before remote bind in Angular Dropdown List
 
 When binding the remote data source, by using the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#actioncomplete) event, you can modify the result data before passing it to DropDownList.
 

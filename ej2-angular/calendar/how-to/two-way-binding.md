@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Two way binding in Angular Calendar component | Syncfusion
-description: Learn here all about Two way binding in Syncfusion Angular Calendar component of Syncfusion Essential JS 2 and more.
+title: How to two-way binding in Angular Calendar | Syncfusion®
+description: Learn how to achieve two-way binding in the Syncfusion Angular Calendar using property binding combined with ngModel for value updates.
 platform: ej2-angular
 control: Two way binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Two way binding in Angular Calendar component
+# How to two-way binding in Angular Calendar
 
 The following example demonstrates how to achieve **two-way binding** by binding the **value** to the first Calendar component by using property binding and binding the model data using **ngModel** by using model binding to the Calendar component. The **value** of the Calendar will get change, when their is any change in the property value or model value.
 

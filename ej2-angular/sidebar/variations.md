@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Variations in Angular Sidebar component | Syncfusion
-description: Learn here all about Variations in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Variations in Angular Sidebar | Syncfusion
+description: Choose the Angular Sidebar expand behavior from Over, Push, Slide, or Auto types to fit primary or side content alongside main content.
 platform: ej2-angular
 control: Sidebar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Variations in Angular Sidebar component
+# Variations in Angular Sidebar
 
 The Sidebar component's expand behaviour can be modified based on the purpose of use.
 

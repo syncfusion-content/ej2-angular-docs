@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Menu component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Menu Bar Component | Syncfusion
+description: Explore the Syncfusion Angular Menu Bar, a navigation header with data binding, templates, orientation, and accessibility for multilevel menus.
 platform: ej2-angular
 control: Index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Menu component
+# About Syncfusion Angular Menu Bar Component.
 
 The Menu is a graphical user interface that serves as navigation header for your application or site.
 It has the support to provide multi-level nested menu items.

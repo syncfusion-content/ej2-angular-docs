@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind data source to Angular Context Menu items | Syncfusion
-description: Learn here all about Populate menu items with data source in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: Populate menu items with data source in Angular Context Menu | Syncfusion
+description: Populate Angular Context Menu items from a local data source by binding an array of objects to the items property.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Populate menu items with data source in Angular Context menu component
+# How to populate menu items with data source in Angular Context Menu
 
 The ContextMenu component supports data binding through the [`items`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel/#items) property, allowing you to populate menu items dynamically from local data sources. This approach is particularly useful when menu content needs to be generated from arrays, objects, or other structured data formats, providing flexibility for dynamic menu scenarios.
 

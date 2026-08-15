@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Speed Dial component | Syncfusion
+title: Getting Started with Angular Speed Dial | Syncfusion
 description:  Checkout and learn about Getting Started with Angular Speed Dial component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting Started 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Speed Dial component
+# Getting Started with Angular Speed Dial
 
 The Speed Dial component allows users to quickly access multiple related actions from a single floating button, helping save space and improve navigation.
 

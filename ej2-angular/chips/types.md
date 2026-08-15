@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in Angular Chips component | Syncfusion
-description: Learn here all about Types in Syncfusion Angular Chips component of Syncfusion Essential JS 2 and more.
+title: Types in Angular Chips | Syncfusion
+description: Explore Angular Chips types including input, choice, filter, and action chips for compact user interactions.
 platform: ej2-angular
 control: Types 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in Angular Chips component
+# Types in Angular Chips
 
 The Chips component has the following types:
 

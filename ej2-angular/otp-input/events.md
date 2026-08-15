@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events with Angular OTP Input component | Syncfusion
-description:  Learn here all about Events with Angular OTP Input component of Syncfusion Essential JS 2 and more details.
+title: Events in Angular OTP Input | Syncfusion
+description: Handle Angular OTP Input events such as created, focus, blur, input, and change to respond to user interactions and state changes in your app.
 platform: ej2-angular
 control: OTP Input
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular OTP Input component
+# Events in Angular OTP Input
 
 The OTP Input component provides events that fire during user interactions and state changes. The following events are available to customize component behavior.
 

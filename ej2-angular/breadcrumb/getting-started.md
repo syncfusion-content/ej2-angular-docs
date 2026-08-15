@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Breadcrumb component | Syncfusion
-description:  Learn how to get started with Syncfusion Angular Breadcrumb component, including setup, installation and basic configuration.
+title: Getting Started with Angular Breadcrumb | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Breadcrumb control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
-control: Breadcrumb 
+control: Breadcrumb
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Breadcrumb component
+# Getting Started with Angular Breadcrumb
 
 The Breadcrumb component displays the hierarchical path of the current page, helping users understand their location and navigate efficiently.
 

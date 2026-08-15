@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in Angular TextBox component | Syncfusion
-description: Learn here all about Validation in Syncfusion Angular TextBox component of Syncfusion Essential JS 2 and more.
+title: Validation in Angular TextBox | Syncfusion
+description: Show error, warning, and success states on the Syncfusion Angular TextBox using CSS classes, and mark required fields with a red asterisk.
 platform: ej2-angular
 control: Validation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular TextBox Component
+# Validation in Angular TextBox
 
 The Angular TextBox component provides visual feedback for form validation through three distinct validation states: `error`, `warning`, and `success`. These visual states help users understand the validation status of their input and improve the overall form experience.
 

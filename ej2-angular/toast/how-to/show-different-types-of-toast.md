@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show different types of toast in Angular Toast component | Syncfusion
-description: Learn here all about Show different types of toast in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: How to show different types of toast in Angular Toast | Syncfusion
+description: Show Success, Info, Warning, and Danger Syncfusion Angular Toast styles with the cssClass property to match each notification context.
 platform: ej2-angular
 control: Show different types of toast 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show different types of toast in Angular Toast component
+# How to show different types of toast in Angular Toast
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#cssclass) property for achieving different types of toast.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Slider in angular reactive form in Angular Range Slider component | Syncfusion
-description: Learn here all about Slider in angular reactive form in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: How to use slider in reactive form in Angular Range Slider | Syncfusion
+description: Integrate the Angular Range Slider into a reactive form with FormGroup validation, Validators, and reactive CSS state classes for feedback.
 platform: ej2-angular
 control: Range Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular reactive form in Angular Range Slider component
+# How to use slider in reactive form in Angular Range Slider
 
 Implement Range Slider validation within Angular [Reactive](https://angular.io/guide/reactive-forms) forms to enforce validation rules and provide real-time feedback. The following sample demonstrates slider state tracking using Angular form validation [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
 

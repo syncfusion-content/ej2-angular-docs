@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tab key navigation with tabIndex in Angular Tab component | Syncfusion
-description: Learn here all about Tab key navigation in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to enable Tab key navigation in Angular Tab | Syncfusion
+description: Enable Angular Tab and Shift+Tab navigation between Tab items by assigning positive tabIndex values to each item.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enabling tab key navigation in Tabs
+# How to enable Tab key navigation in Angular Tab
 
 The [`tabIndex`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem/#tabindex) property of a Tab item enables tab key navigation for specific items. When a positive value is assigned to the [`tabIndex`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem/#tabindex) property, users can switch focus to the next or previous tab item using the Tab or Shift+Tab keys. By default, users can only switch between tab items using the arrow keys.
 

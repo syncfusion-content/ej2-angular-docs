@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Preselect the items in Angular Chips component | Syncfusion
-description: Learn here all about how to preselect the items in Syncfusion Angular Chips component of Syncfusion Essential JS 2 and more.
+title: How to preselect the items in Angular Chips | Syncfusion
+description: Preselect Angular Chips by assigning the required chip index values to the selectedChips property.
 platform: ej2-angular
 control: Preselect the items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Preselect the items in Angular Chips component
+# How to preselect the items in Angular Chips
 
 You can preselect the items in the Chips component by utilizing the [selectedChips](https://ej2.syncfusion.com/angular/documentation/api/chips/#selectedchips) property. We have to assign the required Chips index value to the [selectedChips] property. 
 

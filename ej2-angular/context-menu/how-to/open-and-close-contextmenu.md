@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open and Close Angular Context Menu Programmatically | Syncfusion
-description: Learn here all about Open and close contextmenu in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: How to open and close Context Menu in Angular Context Menu | Syncfusion
+description: Programmatically open and close the Angular Context Menu at a target position using the open and close methods and their top and left parameters.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and close contextmenu in Angular Context menu component
+# How to open and close Context Menu in Angular Context Menu
 
 The ContextMenu component can be opened and closed programmatically using the [`open`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#open) and [`close`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/#close) methods. This programmatic control is useful for creating custom trigger events or implementing context menu functionality in response to specific user interactions.
 

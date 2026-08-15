@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Display svg and canvas in Angular Tooltip component | Syncfusion
-description: Learn here all about Display Tooltip on svg and canvas elements in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: How to display Tooltip on SVG and canvas in Angular Tooltip | Syncfusion
+description: Show the Syncfusion Angular Tooltip on SVG shapes and canvas elements by attaching the tooltip to the SVG or canvas target element.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Display Angular Tooltip component on SVG and canvas elements
+# How to display Tooltip on SVG and canvas in Angular Tooltip
 
 The Tooltip component can display on both SVG and canvas elements. Attach `<svg>` or `<canvas>` elements directly to show tooltips on data visualization elements.
 

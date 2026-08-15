@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load tab items dynamically in Angular Tab component | Syncfusion
-description: Learn here all about Load tab items dynamically in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to load Tab items dynamically in Angular Tab | Syncfusion
+description: Add Angular Tab items at runtime with the addTab method, passing header text, content, and an index for user-driven tabs.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load tab items dynamically in Angular Tab component
+# How to load Tab items dynamically in Angular Tab
 
 Tabs can be added dynamically by passing an array of items and index value to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/#addtab) method.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set the disabled state in Angular Radio button component | Syncfusion
-description: Learn here all about Set the disabled state in Syncfusion Angular Radio button component of Syncfusion Essential JS 2 and more.
+description: Disable Angular Radio Button by setting the disabled property to true and track selection with the change event.
 platform: ej2-angular
 control: Set the disabled state 
 documentation: ug

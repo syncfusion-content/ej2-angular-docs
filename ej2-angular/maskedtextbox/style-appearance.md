@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style appearance in Angular Maskedtextbox component | Syncfusion
-description: Learn here all about Style appearance in Syncfusion Angular Maskedtextbox component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular MaskedTextBox | Syncfusion
+description: Customize the Syncfusion Angular MaskedTextBox wrapper, input, and hover states with CSS overrides for height, font size, border, and color.
 platform: ej2-angular
 control: Style appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style appearance in Angular Maskedtextbox component
+# Style and Appearance in Angular MaskedTextBox
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
 

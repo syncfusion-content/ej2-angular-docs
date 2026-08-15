@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Mention component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Mention component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Mention | Syncfusion
+description: Localize the Angular Mention no-records message and other static text using the L10n load function with a culture-specific translation object.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Mention component
+# Localization in Angular Mention
 
 The Localization library allows you to localize static text content of the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#norecordstemplate) &nbsp;properties according to the culture currently assigned to the Mention.
 

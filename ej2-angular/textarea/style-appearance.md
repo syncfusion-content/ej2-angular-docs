@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in Angular TextArea component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular TextArea component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular TextArea | Syncfusion
+description: Resize, theme, and customize the Angular TextArea with size classes, filled or outline modes, custom CSS, disabled, read-only, rounded corners, and clear button.
 control: Style and Appearance
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sizing in Angular TextArea Component
+# Style and Appearance in Angular TextArea
 
 Adjust the size of the TextArea by applying specific CSS classes:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in Angular Uploader component | Syncfusion
-description: Learn here all about Validation in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: Validation in Angular Uploader | Syncfusion
+description: Restrict Angular Uploader selections by file extension and size using allowedExtensions, minFileSize, and maxFileSize, with validation on browse, select, and drop.
 platform: ej2-angular
 control: Validation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular Uploader component
+# Validation in Angular Uploader
 
 The Uploader component validates selected files by file extension and size using the `allowedExtensions`, `minFileSize`, and `maxFileSize` properties. Files can be validated before uploading to the server and excluded from the upload process if needed. You can also validate files by setting HTML attributes on the input element. Validation occurs during both file selection and drag-and-drop operations.
 

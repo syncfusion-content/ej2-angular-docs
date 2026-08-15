@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Style and appearance in Angular AppBar component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular AppBar | Syncfusion
+description: Style the Angular AppBar with built-in CSS classes, custom cssClass, htmlAttributes, and Theme Studio for full appearance control.
 platform: ej2-angular
 control: AppBar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular AppBar component
+# Style and Appearance in Angular AppBar
 
 The AppBar component offers extensive customization options to modify its appearance and integrate seamlessly with your application's design system. You can customize the AppBar through built-in color modes, CSS classes, and custom styling approaches. Additionally, you have the option to create your own custom theme for all controls using the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 

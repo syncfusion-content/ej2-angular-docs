@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in Angular Context menu component | Syncfusion
-description: Learn here all about Templates in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: Template and Multilevel Nesting in Angular Context Menu | Syncfusion
+description: Customize Angular Context Menu items with the itemTemplate and beforeItemRender events, and build multilevel nested menus.
 platform: ej2-angular
 control: Context Menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Context menu component
+# Template and Multilevel Nesting in Angular Context Menu
 
 ## Item template
 

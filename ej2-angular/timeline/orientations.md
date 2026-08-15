@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Orientations in Angular Timeline component | Syncfusion
-description: Learn here all about Orientations in Syncfusion Angular Timeline component of Syncfusion Essential JS 2 and more.
+title: Orientations in Angular Timeline | Syncfusion
+description: Display Syncfusion Angular Timeline items horizontally or vertically using the orientation property to fit layouts and available screen space.
 platform: ej2-angular
 control: Timeline
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Orientations in Angular Timeline component
+# Orientations in Angular Timeline
 
 The Timeline component supports displaying items in both horizontal and vertical directions using the [orientation](https://ej2.syncfusion.com/angular/documentation/api/timeline#orientation) property. This flexibility allows selection of the most suitable layout based on your application's design requirements and available space.
 

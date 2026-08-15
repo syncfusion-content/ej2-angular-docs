@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility with Angular Rating component | Syncfusion
-description:  Learn here all about Accessibility with Angular Rating component of Syncfusion Essential JS 2 and more details.
+title: Accessibility in Angular Rating | Syncfusion
+description: Angular Rating meets WCAG 2.2, Section 508, and WAI-ARIA slider patterns with full keyboard navigation, screen reader support, and RTL support.
 platform: ej2-angular
 control: Accessibility
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Rating component
+# Accessibility in Angular Rating
 
 The Rating component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
 

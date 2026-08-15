@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Dropdown Tree component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular Dropdown Tree component, including setup, installation, and basic configuration.
+title: Getting Started with Angular Dropdown Tree | Syncfusion
+description: Install and configure the Syncfusion Angular Dropdown Tree in an Angular 17+ standalone project to render hierarchical nodes with single or multi-selection.
 platform: ej2-angular
 control: Dropdown Tree
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Dropdown Tree component
+# Getting Started with Angular Dropdown Tree
 
 The Dropdown Tree component displays hierarchical data in a tree structure within a dropdown, allowing single or multiple selection of nodes.
 

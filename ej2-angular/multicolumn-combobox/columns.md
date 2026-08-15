@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in Angular MultiColumn ComboBox component | Syncfusion
+title: Columns in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Columns in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Columns in Angular MultiColumn ComboBox component
+# Columns in Angular MultiColumn ComboBox
 
 The `<e-column>` selector allows to define the data fields to be displayed in the MultiColumn ComboBox.
 

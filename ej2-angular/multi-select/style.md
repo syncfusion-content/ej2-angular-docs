@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS Styling and Customization in Angular Multi-select component | Syncfusion
+title: Style and Appearance in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about CSS styling and customization in Syncfusion Angular Multi-select component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Style 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CSS Styling and Customization in Angular Multi-select component
+# Style and Appearance in Angular MultiSelect Dropdown
 
 The following content provides the CSS selectors and properties that can be used to customize the Angular Multi-select component's appearance based on specific requirements.
 

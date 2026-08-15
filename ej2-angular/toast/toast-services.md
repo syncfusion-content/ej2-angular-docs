@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toast services in Angular Toast component | Syncfusion
-description: Learn here all about Toast services in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Toast services in Angular Toast | Syncfusion
+description: Render Syncfusion Angular Toast on the go with ToastUtility.show using predefined types like Information, Success, Error, and Warning.
 platform: ej2-angular
 control: Toast services 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toast services in Angular Toast component
+# Toast services in Angular Toast
 
 The Toast component provides a built-in utility function to render the toast with minimal code. The utility function will render the toast without the need of rendering the container element in the DOM where the toast is appended. So that, the toast can now be rendered on the go. The following are the option to render the toast using the utility function.
 

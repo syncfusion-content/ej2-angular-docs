@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create collapsible tabs in Angular Tab component | Syncfusion
-description: Learn here all about Create collapsible tabs in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to create collapsible Tabs in Angular Tab | Syncfusion
+description: Make Angular Tab headers collapsible by toggling a CSS class in the created and selected event handlers to hide content panels.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create collapsible tabs in Angular Tab component
+# How to create collapsible Tabs in Angular Tab
 
 The Tab component can be configured to create collapsible functionality by adding and removing custom CSS classes through event handlers. This approach allows tab content to collapse and expand when tab headers are clicked, providing an accordion-like experience within the tab structure.
 

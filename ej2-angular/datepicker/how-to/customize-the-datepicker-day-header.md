@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the datepicker day header in Angular Datepicker component | Syncfusion
-description: Learn here all about Customize the datepicker day header in Syncfusion Angular Datepicker component of Syncfusion Essential JS 2 and more.
+title: How to customize the day header in Angular DatePicker | Syncfusion®
+description: Learn how to customize the day header format in the Syncfusion Angular DatePicker using the dayHeaderFormat property with supported options.
 platform: ej2-angular
 control: Customize the datepicker day header 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the datepicker day header in Angular Datepicker component
+# How to customize the day header in Angular DatePicker
 
 You can change the format of the day that to be displayed in header using [`dayHeaderFormat`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#dayheaderformat) property. By default, the format is `Short`.
 

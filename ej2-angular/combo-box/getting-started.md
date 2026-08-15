@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular ComboBox component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular ComboBox component, including setup, installation, and basic configuration.
+title: Getting Started with Angular ComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® Angular ComboBox component, including setup, installation, and basic configuration.
 platform: ej2-angular
 control: ComboBox
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular ComboBox component
+# Getting Started with Angular ComboBox
 
 The ComboBox component allows users to select a value from a predefined list or type a custom value, providing flexibility for single-item selection scenarios.
 

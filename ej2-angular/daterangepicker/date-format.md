@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Date format in Angular Daterangepicker component | Syncfusion
-description: Learn here all about Date format in Syncfusion Angular Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Date Format in Angular DateRangePicker | Syncfusion®
+description: Learn how to set the date format in the Syncfusion Angular DateRangePicker using the format property with standard or custom format patterns.
 platform: ej2-angular
 control: Date format 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Date format in Angular Daterangepicker component
+# Date Format in Angular DateRangePicker
 
 ## Date Format
 

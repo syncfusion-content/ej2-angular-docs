@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Items in Angular MultiColumn ComboBox component | Syncfusion
+title: Items in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Items in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Items in Angular MultiColumn ComboBox component
+# Items in Angular MultiColumn ComboBox
 
 ## Setting text
 

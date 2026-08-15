@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Shapes in Angular Skeleton component | Syncfusion
-description: Learn here all about Shapes in Syncfusion Angular Skeleton component of Syncfusion Essential JS 2 and more.
+title: Shapes in Angular Skeleton | Syncfusion
+description: Choose Circle, Square, Rectangle, or Text shapes for Syncfusion Angular Skeleton placeholders to preview any loading layout.
 platform: ej2-angular
 control: Shapes 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Shapes in Angular Skeleton component
+# Shapes in Angular Skeleton
 
 The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#shape) property to create a preview of any layout.
 

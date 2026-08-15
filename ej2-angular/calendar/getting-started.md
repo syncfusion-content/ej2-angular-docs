@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Calendar component | Syncfusion
-description:  Learn how to get started with the Syncfusion Angular Calendar component, including setup, installation and basic configuration.
+title: Getting Started with Angular Calendar | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Calendar control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Calendar component
+# Getting Started with Angular Calendar
 
 The Calendar component displays dates, schedules, and events in an interactive calendar interface, allowing users to view, select, and manage day, week, month, or custom date-based information.
 

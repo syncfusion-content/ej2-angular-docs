@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in Angular Dropdown Tree component | Syncfusion
-description: Learn here all about Templates in Syncfusion Angular Dropdown Tree component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular Dropdown Tree | Syncfusion
+description: Customize Angular Dropdown Tree item, header, footer, and selected-value rendering using itemTemplate, headerTemplate, footerTemplate, and valueTemplate.
 platform: ej2-angular
 control: Dropdown Tree
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Dropdown Tree component
+# Templates in Angular Dropdown Tree
 
 The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Template engine to compile and render the elements properly.
 

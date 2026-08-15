@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in Angular Predefined dialogs component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular Predefined dialogs component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular Predefined Dialogs | Syncfusion
+description: Customize Syncfusion Angular Predefined Dialogs by changing button text and icons with okButton and cancelButton, plus close icon and custom content rendering.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular Predefined dialogs component
+# Customization in Angular Predefined Dialogs
 
 Customize predefined dialog buttons using the following properties:
 * `okButton` - Customize the OK button text.

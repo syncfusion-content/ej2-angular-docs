@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Toolbar component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Toolbar component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Toolbar | Syncfusion
+description: Make the Angular Toolbar accessible with the WAI-ARIA toolbar role, aria-orientation, arrow key navigation, and screen reader support.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Toolbar component
+# Accessibility in Angular Toolbar
 
 The [Angular Toolbar](https://www.syncfusion.com/angular-ui-components/angular-toolbar) component has been designed keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/) specifications, and applies the WAI-ARIA roles, states, and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-label` and `aria-orientation`. It provides information about elements in a document for assistive technology. The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/), and has been tested in major screen readers.
 

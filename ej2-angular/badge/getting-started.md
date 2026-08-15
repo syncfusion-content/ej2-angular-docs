@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Badge component | Syncfusion
+title: Getting Started with Angular Badge | Syncfusion
 description: Learn how to get started with Syncfusion Angular Badge component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Badge
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Badge component
+# Getting Started with Angular Badge
 
 The Badge component is used to display small status indicators, notifications, counts, or labels associated with other user interface elements.
 

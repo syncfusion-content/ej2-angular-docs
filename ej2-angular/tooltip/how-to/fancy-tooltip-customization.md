@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Fancy customization of Angular Tooltip component | Syncfusion
-description: Learn here all about Fancy Tooltip customization in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: How to apply fancy Tooltip customization in Angular Tooltip | Syncfusion
+description: Customize the Syncfusion Angular Tooltip tip arrow into curved or bubble shapes by overriding the arrow tip and outer tip CSS classes.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Fancy customization of Angular Tooltip component
+# How to apply fancy Tooltip customization in Angular Tooltip
 
 Customize the tooltip arrow by overriding CSS at the sample level.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Reactive form in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Reactive form in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: How to use reactive form with Angular DateTime Picker | Syncfusion®
+description: Learn how to integrate the Syncfusion Angular DateTime Picker with Angular reactive forms using FormControl, FormGroup, and formControlName.
 platform: ej2-angular
 control: Reactive form 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reactive form in Angular Datetimepicker component
+# How to use reactive form in Angular DateTime Picker
 
 DateTimePicker is a form component and validation is playing vital role in forms to get the valid data.
 Here to showcase the DateTimePicker with form validations we have used the reactive form.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: RTL in Angular Query builder component | Syncfusion
-description: Learn here all about RTL in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: How to right to left (RTL) in Angular Query Builder UI | Syncfusion
+description: Enable right-to-left rendering in the Syncfusion Angular Query Builder UI for Arabic, Farsi, and Urdu by setting the enableRtl property to true.
 platform: ej2-angular
 control: RTL 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# RTL in Angular Query builder component
+# How to right to left (RTL) in Angular Query Builder UI
 
 RTL (Right-to-Left) enables the Query Builder component to support languages that are read from right to left, such as Arabic, Farsi, and Urdu. When enabled, the component's text direction and layout automatically adjust for right-to-left languages, improving accessibility and user experience. To enable RTL, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#enablertl) property to true.
 

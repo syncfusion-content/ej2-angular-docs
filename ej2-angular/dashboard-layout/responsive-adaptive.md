@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Responsive adaptive in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Responsive adaptive in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: Responsive and Adaptive in Angular Dashboard Layout | Syncfusion
+description: Use the mediaQuery API in Syncfusion Angular Dashboard Layout to auto-stack panels on small screens and customize responsive breakpoints.
 platform: ej2-angular
 control: Responsive adaptive 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Responsive adaptive in Angular Dashboard layout component
+# Responsive and Adaptive in Angular Dashboard Layout
 
 The Angular Dashboard Layout component provides built-in responsive support that automatically adjusts panel positioning and sizing based on the parent element's dimensions. This responsive behavior accommodates various screen resolutions without requiring additional configuration for basic responsive dashboards.
 

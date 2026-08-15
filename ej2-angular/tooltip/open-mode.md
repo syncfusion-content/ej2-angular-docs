@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open mode in Angular Tooltip component | Syncfusion
-description: Learn here all about Open mode in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Open mode in Angular Tooltip | Syncfusion
+description: Trigger the Syncfusion Angular Tooltip on hover, focus, click, or custom actions using the opensOn property, with sticky mode and open/close delays.
 platform: ej2-angular
 control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open mode in Angular Tooltip component
+# Open mode in Angular Tooltip
 
 Control how the tooltip opens on the page—on hover, focus, or click—using the [`opensOn`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#openson) property on target elements.
 

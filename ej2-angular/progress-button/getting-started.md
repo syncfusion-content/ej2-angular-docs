@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Progress Button Component | Syncfusion
+title: Getting Started with Angular Progress Button | Syncfusion
 description:  Check out and learn how to get started with the Angular Progress Button component of Syncfusion Essential JS 2.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with the Angular Progress Button Component
+# Getting Started with Angular Progress Button
 
 The Progress Button component allows users to trigger actions while displaying the progress and status of ongoing operations, providing visual feedback during execution.
 

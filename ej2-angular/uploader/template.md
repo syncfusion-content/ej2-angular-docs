@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Uploader component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Uploader | Syncfusion
+description: Customize the Angular Uploader file list, buttons, and icons with the template property and showFileList, and trigger upload or remove from custom layouts.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Uploader component
+# Template in Angular Uploader
 
 You can customize the Uploader's appearance using templates and custom buttons.
 

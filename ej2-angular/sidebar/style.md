@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Sidebar component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Styles and Appearance in Angular Sidebar | Syncfusion
+description: Style the Angular Sidebar by overriding e-sidebar, e-dock, e-rtl, type, position, and backdrop CSS classes for state-based theming.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Sidebar component
+# Styles and Appearance in Angular Sidebar
 
 The Sidebar component can be customized using CSS to modify its appearance based on its state, position, or configuration. The following sections provide CSS rules targeting component-specific classes (e.g., `.e-sidebar`, `.e-dock`, `.e-rtl`) that are automatically applied based on properties like `position`, `enableDock`, or `enableRtl`. Apply these styles in `styles.css` or a component-specific stylesheet, ensuring specificity to avoid conflicts.
 

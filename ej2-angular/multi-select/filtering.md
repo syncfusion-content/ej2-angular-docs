@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in Angular MultiSelect component | Syncfusion
+title: Filtering in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Filtering in Syncfusion Angular MultiSelect component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Filtering 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular MultiSelect component
+# Filtering in Angular MultiSelect Dropdown
 
 The MultiSelect has built-in support to filter data items when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#allowfiltering) is enabled. The filter operation starts as soon as you start typing characters in the MultiSelect input.
 

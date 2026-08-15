@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disabled Items in Angular MultiSelect component | Syncfusion
+title: Disabled Items in Angular MultiSelect Dropdown | Syncfusion
 description: Learn here all about Disabled Items in Syncfusion Angular MultiSelect component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Disabled Items 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled Items in Angular MultiSelect component
+# Disabled Items in Angular MultiSelect Dropdown
 
 The MultiSelect provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://ej2.syncfusion.com/angular/documentation/api/multiselect/#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the [`fields.disabled`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#disabled) property.
 

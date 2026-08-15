@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Frame in ##Platform_Name## Image Editor component | Syncfusion
-description: Learn here all about Open save in Syncfusion ##Platform_Name## Image Editor component of Syncfusion Essential JS 2 and more.
+title: Frame in Angular Image Editor | Syncfusion
+description: Add decorative borders to images in the Syncfusion Angular Image Editor using mat, bevel, line, hook, and inset frame types with the drawFrame method.
 platform: ej2-angular
 control: Frame 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Frames in Angular Image Editor component
+# Frame in Angular Image Editor
 
 The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 

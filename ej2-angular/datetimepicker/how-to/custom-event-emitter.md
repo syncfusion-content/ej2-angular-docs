@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom event emitter in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Custom event emitter in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Use custom event emitter in Angular DateTime Picker | Syncfusion®
+description: Learn how to use a custom event emitter in the Syncfusion Angular DateTime Picker to share selected values between parent and child components.
 platform: ej2-angular
 control: Custom event emitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom event emitter in Angular Datetimepicker component
+# How to use custom event emitter in Angular DateTime Picker
 
 The **two-way binding** in DateTimePicker can also be achieved using the custom event binding and property binding in the controls present in two different components. To create custom event, we need to create an instance of `event emitter`.
 

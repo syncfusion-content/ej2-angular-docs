@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add remove panels in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Add remove panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: Adding or Removing Panels in Angular Dashboard Layout | Syncfusion
+description: Add, remove, or clear all panels at runtime using addPanel, removePanel, and removeAll in the Syncfusion Angular Dashboard Layout component.
 platform: ej2-angular
 control: Dashboard Layout
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Adding and Removing Panels in Angular Dashboard Layout Component
+# Adding or Removing Panels in Angular Dashboard Layout
 
 In real-time scenarios, the data presented within the dashboard often needs to be updated frequently, which includes dynamically adding or removing data within the dashboard. This can be easily achieved by using the [`addPanel`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#addpanel) and [`removePanel`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#removepanel) public methods of the component.
 

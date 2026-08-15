@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Highlight filtering in Angular Drop down list component | Syncfusion
-description: Learn here all about Highlight filtering in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to highlight matched characters in Angular Dropdown List | Syncfusion®
+description: Highlight matched characters in Angular Dropdown List filtering using the highlightSearch method to make search hits stand out in the popup.
 platform: ej2-angular
 control: Highlight filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Highlight filtering in Angular Drop down list component
+# How to highlight matched characters in Angular Dropdown List
 
 By using the `highlightSearch` method, you can highlight the matched character in DropDownList filtering.
 

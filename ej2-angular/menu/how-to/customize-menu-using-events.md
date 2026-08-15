@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize menu using events in Angular Menu component | Syncfusion
-description: Learn here all about Customize menu using events in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to customize menu using events in Angular Menu Bar | Syncfusion
+description: Customize the Angular Menu Bar with beforeOpen, beforeClose, onOpen, onClose, select, and created events for dynamic menu behavior.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize menu using events in Angular Menu component
+# How to customize menu using events in Angular Menu Bar
 
 This section demonstrates how to customize the behavior of the Angular Menu component using events such as `beforeOpen`, `beforeClose`, `onOpen`, `onClose`, `select`, and `created`. These events allow dynamic modification of menu behavior, such as altering submenu content or handling item selection.
 

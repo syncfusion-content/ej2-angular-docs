@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create mnemonic ui in menuitem in Angular Menu component | Syncfusion
-description: Learn here all about Create mnemonic ui in menuitem in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to create mnemonic UI in Menu Item in Angular Menu Bar | Syncfusion
+description: Create a mnemonic UI in Angular Menu Bar items by underlining target characters via the beforeItemRender event for keyboard shortcut hints.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create mnemonic ui in menuitem in Angular Menu component
+# How to create mnemonic UI in Menu Item in Angular Menu Bar
 
 A mnemonic UI allows users to activate menu items using keyboard shortcuts by highlighting a specific character in the label. This is commonly achieved by underlining the character to indicate its mnemonic role.
 

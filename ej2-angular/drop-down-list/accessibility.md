@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Drop down list component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Dropdown List | Syncfusion®
+description: Make Angular Dropdown List accessible with WAI-ARIA listbox and option roles, full keyboard navigation, and WCAG 2.2, ADA, and Section 508 support.
 platform: ej2-angular
 control: DropDownList
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Drop down list component
+# Accessibility in Angular Dropdown List
 
 The DropDownList component is designed with WAI-ARIA specifications, applying the necessary roles, states, and properties to support keyboard interaction. This ensures that the component is fully accessible to users who rely on assistive technologies (AT) or keyboard navigation.
 

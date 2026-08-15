@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## Image Editor component | Syncfusion
-description: Learn here all about Open save in Syncfusion ##Platform_Name## Image Editor component of Syncfusion Essential JS 2 and more.
+title: Filter in Angular Image Editor | Syncfusion
+description: Apply image filters in the Syncfusion Angular Image Editor such as chrome, cold, warm, sepia, invert, and grayscale with the applyImageFilter method.
 platform: ej2-angular
 control: Filter 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filters in the Angular Image Editor component
+# Filter in Angular Image Editor
 
 Filters are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image filters include cold, warm, chrome, sepia, and invert. This can be done by either using the toolbar or the [`applyImageFilter`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#applyimagefilter) method which takes a single parameter: the filter applied to an image.
 

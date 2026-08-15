@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular ColorPicker component | Syncfusion
-description: Check out how to get started with the Angular ColorPicker component in Syncfusion Essential JS 2, including setup, configuration, and basic usage.
+title: Getting Started with Angular Color Picker | Syncfusion
+description: Set up the Syncfusion Angular Color Picker in your app, render the Picker or Palette area, and bind a color value using RGB, HSV, or hex formats.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular ColorPicker component
+# Getting Started with Angular Color Picker
 
 The ColorPicker component is a user interface to select and adjust color values. This supports various color specifications like RGB (Red Green Blue), HSV (Hue Saturation Value), and Hex codes.
 

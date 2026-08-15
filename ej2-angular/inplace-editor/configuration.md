@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configuration in Angular Inplace editor component | Syncfusion
-description: Learn here all about Configuration in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Configuration in Angular In-place Editor | Syncfusion
+description: Configure the Angular In-place Editor with popup and inline modes, popupSettings, editableOn, actionOnBlur, and display modes.
 platform: ej2-angular
 control: Configuration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Configuration in Angular Inplace editor component
+# Configuration in Angular In-place Editor
 
 ## Rendering modes
 

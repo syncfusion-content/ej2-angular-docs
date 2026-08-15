@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in Angular Query builder component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Angular Query builder component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Query Builder UI | Syncfusion
+description: Override the Syncfusion Angular Query Builder UI CSS classes for headers, rule containers, buttons, and joining lines, or build a custom theme.
 platform: ej2-angular
 control: Style and appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and appearance in Angular Query builder component
+# Style and Appearance in Angular Query Builder UI
 
 Customize the Query Builder's appearance by overriding default CSS classes or creating a custom theme. The following table lists the primary CSS classes and their purposes. For advanced customization, use the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material) to create and download custom themes.
 

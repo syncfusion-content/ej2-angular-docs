@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started Angular MultiColumn ComboBox component | Syncfusion
+title: Getting Started with Angular MultiColumn ComboBox | Syncfusion
 description: Learn how to get started with the Syncfusion Angular MultiColumn ComboBox component, including setup, installation, and basic configuration.
 platform: ej2-angular
 control: MultiColumn ComboBox
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular MultiColumn ComboBox component
+# Getting Started with Angular MultiColumn ComboBox
 
 The MultiColumn ComboBox component allows users to select values from a Dropdown List that displays multiple columns of data with header support and customizable column widths.
 

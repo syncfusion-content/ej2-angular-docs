@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with the Angular Predefined Dialogs | Syncfusion
-description: Check out and learn about getting started with the Angular Predefined Dialogs component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Predefined Dialogs | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Predefined Dialogs control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with the Angular Predefined Dialogs component
+# Getting Started with Angular Predefined Dialogs
 
 This section explains how to create a simple predefined dialog and demonstrates the basic usage of predefined dialogs in an Angular environment.
 

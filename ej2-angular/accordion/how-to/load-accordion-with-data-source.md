@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Data source binding in Angular Accordion | Syncfusion
-description: Learn here all about Load accordion with data source in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
+title: Load Accordion DataSource in Angular Accordion | Syncfusion
+description: Bind the Angular Accordion to a data source like OData with DataManager, mapping header and content fields into the items property.
 platform: ej2-angular
 control: Accordion
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load accordion with data source in Angular Accordion component
+# How to load Accordion with DataSource in Angular Accordion
 
 You can bind any data object to Accordion items, by mapping it to [`header`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#header) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#content)&nbsp; property.
 

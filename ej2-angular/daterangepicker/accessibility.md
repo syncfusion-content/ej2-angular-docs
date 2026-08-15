@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Daterangepicker component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular DateRangePicker | Syncfusion®
+description: Learn how the Syncfusion Angular DateRangePicker supports accessibility with WCAG 2.2, Section 508, WAI-ARIA, and full keyboard navigation.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Daterangepicker component
+# Accessibility in Angular DateRangePicker
 
 The DateRangePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

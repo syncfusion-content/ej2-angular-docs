@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Formats in Angular Numerictextbox component | Syncfusion
-description: Learn here all about Formats in Syncfusion Angular Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Number Formats in Angular Numeric Textbox | Syncfusion
+description: Format the Angular Numeric Textbox value with the format property using standard specifiers like n, p, c, or custom # and 0 digit patterns on focus out.
 platform: ej2-angular
 control: Formats 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Formats in Angular Numerictextbox component
+# Number Formats in Angular Numeric Textbox
 
 You can format the value of NumericTextBox using [`format`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#format) property.
 The value will be displayed in the specified format when the component is in focused out state. The format string supports both the [standard numeric format string](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [custom numeric format string](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) as specified in MSDN.

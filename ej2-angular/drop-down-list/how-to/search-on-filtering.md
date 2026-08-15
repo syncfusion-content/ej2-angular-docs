@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Search on filtering in Angular Drop down list component | Syncfusion
-description: Learn here all about Search on filtering in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to limit search results in Angular Dropdown List | Syncfusion®
+description: Limit the number of search results returned in Angular Dropdown List filtering by constraining the query passed to the data source.
 platform: ej2-angular
 control: Search on filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Search on filtering in Angular Drop down list component
+# How to limit search result on filtering in Angular Dropdown List
 
 The following example demonstrates about how to set limit the search result on filtering.
 

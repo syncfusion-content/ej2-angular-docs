@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Time Range Slider in Angular Range Slider component | Syncfusion
-description: Learn here all about Time Range Slider in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: How to build a Time Range Slider in Angular | Syncfusion
+description: Format Angular Range Slider ticks and tooltips as time values by handling the renderingTicks and change events for time-aware display.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Time Range Slider in Angular
+# How to build a Time Range Slider in Angular
 
 Format Range Slider values as time by using the [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#renderingticks) event to format tick labels and the [`change`](https://ej2.syncfusion.com/angular/documentation/api/slider/#change) event to format tooltips. The following sample demonstrates how to implement time formatting in a slider.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrate avatar into badge in Angular Avatar component | Syncfusion
-description: Learn here all about Integrate avatar into badge in Syncfusion Angular Avatar component of Syncfusion Essential JS 2 and more.
+title: How to integrate avatar into Badge in Angular Avatar | Syncfusion
+description: Wrap the Angular Avatar with the Badge notification to display profile pictures with status, message counts, or alert indicators in your UI.
 platform: ej2-angular
-control: Avatar 
+control: Avatar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate avatar into badge in Angular Avatar component
+# How to integrate avatar into Badge in Angular Avatar
 
 The Badge component can be integrated with the Avatar component to create notification avatars that display user profiles alongside visual indicators. This combination is ideal for showing status notifications, message counts, status indicators, or alert notifications.
 

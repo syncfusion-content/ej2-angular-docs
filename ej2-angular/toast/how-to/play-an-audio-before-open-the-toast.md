@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Play an audio before opening the toast | Syncfusion
-description: Learn here all about Play an audio before open the toast in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Play audio before opening toast in Angular Toast | Syncfusion
+description: Play audio in the background while opening a Syncfusion Angular Toast by triggering playback inside the beforeOpen event handler.
 platform: ej2-angular
 control: Play an audio before open the toast
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Play an audio before opening the toast in Angular Toast
+# How to play an audio before opening toast in Angular Toast
 
 Here below sample demonstrates to playing audio background while opening toast. Here we have included audio play codes into beforeOpen event Function.
 

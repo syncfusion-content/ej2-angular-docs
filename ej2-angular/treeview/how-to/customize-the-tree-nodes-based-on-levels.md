@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize tree node levels in Angular TreeView component | Syncfusion
-description: Learn here all about Customize the tree nodes based on levels in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: How to customize tree node levels in Angular Tree View | Syncfusion
+description: Apply level-based styles to Angular Tree View nodes by combining the cssClass property with level-specific CSS selectors.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the tree nodes based on levels in Angular TreeView component
+# How to customize tree node levels in Angular Tree View
 
 The TreeView component allows you to apply different visual styles to nodes based on their hierarchical level within the tree structure. This level-based customization enables you to create visually distinct representations for parent nodes, child nodes, and deeply nested items, enhancing the user interface and improving content organization.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Mention component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Mention component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Mention | Syncfusion
+description: Review Angular Mention accessibility compliance with WCAG 2.2, Section 508, screen readers, RTL, and keyboard navigation, plus WAI-ARIA listbox roles.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Mention component
+# Accessibility in Angular Mention
 
 Web accessibility makes web content and web applications more accessible for people with disabilities. Mention component provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using the attributes such as `aria-selected` and `aria-activedescendent`.
 

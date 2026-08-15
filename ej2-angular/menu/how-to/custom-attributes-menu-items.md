@@ -1,14 +1,14 @@
 ---
 layout: post
-title: HTML Attributes for Menu Items in Angular Menu component | Syncfusion
-description: Learn here all about Customize HTML Attributes for Menu Items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: Customize HTML attributes for Menu items in Angular Menu Bar | Syncfusion
+description: Add custom styling, accessibility tags, or data attributes to Angular Menu Bar items using the htmlAttributes property on each item.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize HTML Attributes for Menu Items in Angular Menu component
+# How to customize HTML attributes for Menu items in Angular Menu Bar
 
 You can customize the HTML attributes of individual menu items in the Syncfusion Angular Menu component using the [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#htmlattributes)  property of the `MenuItemModel`. This allows you to add custom styling, accessibility tags, or data attributes to each item.
 

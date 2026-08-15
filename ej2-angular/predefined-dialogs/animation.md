@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in Angular Predefined dialogs component | Syncfusion
-description: Learn here all about Animation in Syncfusion Angular Predefined dialogs component of Syncfusion Essential JS 2 and more.
+title: Animation in Angular Predefined Dialogs | Syncfusion
+description: Animate Syncfusion Angular Predefined Dialogs during open and close actions by configuring the animationSettings property with delay, duration, and effect.
 platform: ej2-angular
 control: Animation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in Angular Predefined dialogs component
+# Animation in Angular Predefined Dialogs
 
 Predefined dialogs can be animated during open and close actions. Customize animation using the `animationSettings` property to configure `delay`, `duration`, and `effect`.
 

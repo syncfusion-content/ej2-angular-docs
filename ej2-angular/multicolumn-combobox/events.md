@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Angular MultiColumn ComboBox component | Syncfusion
+title: Events in Angular MultiColumn ComboBox | Syncfusion
 description: Learn here all about Events in Syncfusion Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: MultiColumn ComboBox 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular MultiColumn ComboBox component
+# Events in Angular MultiColumn ComboBox
 
 This section describes the multicolumn combobox events that will be triggered when appropriate actions are performed. The following events are available in the multicolumn combobox component.
 

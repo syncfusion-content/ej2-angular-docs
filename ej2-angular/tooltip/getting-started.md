@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Tooltip component | Syncfusion
+title: Getting Started with Angular Tooltip | Syncfusion
 description: Learn how to get started with the Syncfusion Angular Tooltip component, including setup, installation and basic configuration.
 platform: ej2-angular
 control: Getting started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Tooltip component
+# Getting Started with Angular Tooltip
 
 The Tooltip component displays informative text or custom content in a popup when users hover, focus, or interact with a target element, providing contextual guidance and additional information.
 

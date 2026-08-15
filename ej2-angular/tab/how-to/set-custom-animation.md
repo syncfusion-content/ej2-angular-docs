@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set custom animation in Angular Tab component | Syncfusion
-description: Learn here all about Set custom animation in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to set custom animation in Angular Tab | Syncfusion
+description: Configure custom previous and next animations on the Angular Tab via the animation property with easing, duration, and effect settings.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set custom animation in Angular Tab component
+# How to set custom animation in Angular Tab
 
 The Tab component supports custom animations for both previous and next tab transitions using the built-in animation options from Syncfusion's Animation library. The [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tab/#animation) property allows you to configure [`easing`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#easing), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#duration), and various animation [`effect`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#effect) options to create smooth, visually appealing tab transitions.
 

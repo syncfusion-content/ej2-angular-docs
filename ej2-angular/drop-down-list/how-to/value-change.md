@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Value change in Angular Drop down list component | Syncfusion
-description: Learn here all about Value change in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to detect value change source in Angular Dropdown List | Syncfusion®
+description: Detect whether an Angular Dropdown List value change came from user interaction or code, using the change event isInteracted flag.
 platform: ej2-angular
 control: Value change 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value change in Angular Drop down list component
+# How to detect value change source in Angular Dropdown List
 
 You can check about whether value change happened by manual or programmatic by
 using [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event argument that argument name is `isInteracted`.

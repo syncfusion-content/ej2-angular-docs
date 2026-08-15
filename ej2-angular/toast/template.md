@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Toast component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Toast | Syncfusion
+description: Render Syncfusion Angular Toast content with a custom template provided as an HTML element string or a query selector reference.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Toast component
+# Template in Angular Toast
 
 Template property can be given as the `HTML element` that is either a `string`  or a `query selector`.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Save restore in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Save restore in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: State Maintenance in Angular Dashboard Layout | Syncfusion
+description: Use the serialize method in Syncfusion Angular Dashboard Layout to save the current panel arrangement and restore it for later sessions.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Save and Restore Layout State in Angular Dashboard Layout Component
+# State Maintenance in Angular Dashboard Layout
 
 The Dashboard Layout component provides the ability to save the current layout configuration and restore it later, enabling users to persist their preferred panel arrangements across sessions or create reusable dashboard templates.
 

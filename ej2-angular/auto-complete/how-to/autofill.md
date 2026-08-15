@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Autofill in Angular Auto complete component | Syncfusion
-description: Learn here all about Autofill in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: How to enable autofill in Angular AutoComplete | Syncfusion®
+description: Enable autofill in Angular AutoComplete so the input completes suggestions as the user types, matching the typed character to list items.
 platform: ej2-angular
 control: Autofill 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Autofill in Angular Auto complete component
+# How to enable autofill in Angular AutoComplete
 
 The AutoComplete supports the autofill behavior with the help of [`autofill`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#autofill) property. Whenever you change the input value, the AutoComplete will autocomplete your data by matching the typed character. Suppose, if no matches found then, AutoComplete doesn't suggest any item.
 

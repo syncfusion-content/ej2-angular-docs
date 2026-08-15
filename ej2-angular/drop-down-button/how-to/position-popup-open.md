@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Position popup open in Angular Drop down button component | Syncfusion
-description: Learn here all about Position popup open in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Position popup open in Angular Dropdown Menu | Syncfusion
+description: Change Angular Dropdown Menu popup open position by setting top and left values in the open event.
 platform: ej2-angular
 control: Position popup open 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position popup open in Angular Drop down button component
+# How to position popup open in Angular Dropdown Menu
 
 Popup open position can be changed according to the requirement. Popup open position can be changed in [`open`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#open) event by setting `top` and `left` for the popup element.
 

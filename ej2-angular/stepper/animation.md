@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in Angular Stepper component | Syncfusion
-description:  Learn here all about Animation in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Animation in Angular Stepper | Syncfusion
+description: Animate Angular Stepper transitions with the animation property, customizing duration, delay, and enable settings.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in Angular Stepper component
+# Animation in Angular Stepper
 
 The Angular Stepper component supports animations for smooth transitions during step navigation, enhancing user experience in workflows like forms or wizards. Configure animations using the [animation](https://ej2.syncfusion.com/angular/documentation/api/stepper/#animation) property of the `ejs-stepper` component, which accepts a `StepperAnimationSettingsModel` object. Animations can be customized with `duration`, `delay`, and `enable` settings.
 

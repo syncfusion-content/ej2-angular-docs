@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons and sub menu items in Angular Menu component | Syncfusion
-description: Learn here all about Icons and sub menu items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: Icons and Sub Menu Items in Angular Menu Bar | Syncfusion
+description: Add font icons and image icons, configure URL navigation, and build multilevel nested items in the Angular Menu Bar component.
 platform: ej2-angular
 control: Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons and sub menu items in Angular Menu component
+# Icons and Sub Menu Items in Angular Menu Bar
 
 This section demonstrates how to enhance the Angular Menu component with icons, navigation links, and multilevel nesting for improved usability and functionality.
 

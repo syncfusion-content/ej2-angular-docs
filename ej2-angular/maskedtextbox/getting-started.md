@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular MaskedTextBox component | Syncfusion
-description: Learn how to add and configure the Angular MaskedTextBox component from Syncfusion Essential JS 2, including setup, configuration, and basic usage.
+title: Getting Started with Angular MaskedTextBox | Syncfusion
+description: Step-by-step setup for the Syncfusion Angular MaskedTextBox, covering Angular CLI scaffolding, package install, theming, and a first masked input.
 platform: ej2-angular
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular MaskedTextBox component
+# Getting Started with Angular MaskedTextBox
 
 The MaskedTextBox is a textbox extended component that allows the user to enter only the valid input based on the provided mask. It is used to get the input with specific formats like Phone number, Date, Time, IP, Social security number, etc.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load WebP Images in Angular Carousel Component | Syncfusion
-description: Learn here all about about how to load webp format image in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
+title: How to load WebP format images in Angular Carousel | Syncfusion
+description: Load WebP format images in the Angular Carousel for smaller file sizes, faster load times, and reduced data usage.
 platform: ej2-angular
 control: Carousel  
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Load WebP format images in Angular Carousel component
+# How to load WebP format images in Angular Carousel
 
 The Carousel component supports loading images in WebP format, which creates smaller, better-looking images. Choosing WebP as the image format can significantly improve website performance without sacrificing visual quality. WebP images are substantially smaller in file size compared to formats like JPEG and PNG, resulting in faster load times and reduced data usage.
 

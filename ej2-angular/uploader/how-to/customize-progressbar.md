@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize progressbar in Angular Uploader component | Syncfusion
-description: Learn here all about Customize progressbar in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to customize progress bar in Angular Uploader | Syncfusion
+description: Customize the Angular Uploader progress bar by overriding its CSS to change the indicator size, color, and background to match your app design.
 platform: ej2-angular
 control: Customize progressbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize progress bar in Angular Uploader component
+# How to customize progress bar in Angular Uploader
 
 You can customize the progress bar's size, color, and background by overriding the default Uploader component styles. Refer to the following example to apply custom styling to the progress indicator.
 

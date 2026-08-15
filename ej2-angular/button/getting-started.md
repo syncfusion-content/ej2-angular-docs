@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Angular Button component | Syncfusion
+title: Getting Started with Angular Button | Syncfusion
 description: Check out how to get started with the Syncfusion Angular Button component (Essential JS 2), including installation, setup, and a basic example.
 platform: ej2-angular
 control: Getting Started
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Button component
+# Getting Started with Angular Button
 
 The Button component allows users to trigger actions or events through a clickable interface, with support for customization, icons, different styles, and event handling.
 

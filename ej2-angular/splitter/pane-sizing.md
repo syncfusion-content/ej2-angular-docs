@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pane sizing in Angular Splitter component | Syncfusion
-description: Learn here all about Pane sizing in Syncfusion Angular Splitter component of Syncfusion Essential JS 2 and more.
+title: Pane Sizing in Angular Splitter | Syncfusion
+description: Size Syncfusion Angular Splitter panes in pixels, percentages, or auto-flex layouts, with fixed-pane support that keeps the last pane responsive to container size.
 platform: ej2-angular
 control: Splitter 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pane sizing in Angular Splitter component
+# Pane Sizing in Angular Splitter
 
 The Angular Splitter component provides flexible pane sizing options using pixel values, percentage values, or automatic sizing based on layout behavior.
 

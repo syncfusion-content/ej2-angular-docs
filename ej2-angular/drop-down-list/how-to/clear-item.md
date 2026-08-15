@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clear item in Angular Drop down list component | Syncfusion
-description: Learn here all about Clear item in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to clear the selected item in Angular Dropdown List | Syncfusion®
+description: Clear the selected item in Angular Dropdown List using the showClearButton icon, or programmatically by setting the value, text, or index to null.
 platform: ej2-angular
 control: Clear item 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Clear item in Angular Drop down list component
+# How to clear the selected item in Angular Dropdown List
 
 You can clear the selected item in the below two different ways.
 

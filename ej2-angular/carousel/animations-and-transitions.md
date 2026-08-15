@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Animations and transitions in Angular Carousel component | Syncfusion
-description: Learn here all about Animations and transitions in Syncfusion Angular Carousel component of Syncfusion Essential JS 2 and more.
+title: Animations and Transitions in Angular Carousel | Syncfusion
+description: Animate the Angular Carousel with Slide, Fade, or custom CSS effects, set autoplay, looping, intervals, and touch swipe modes.
 platform: ej2-angular
 control: Carousel
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animations and transitions in Angular Carousel component
+# Animations and Transitions in Angular Carousel
 
 The Angular Carousel component provides built-in animation effects and extensive customization options for slide transitions. These animations enhance the user experience by creating smooth, visually appealing transitions between carousel items.
 

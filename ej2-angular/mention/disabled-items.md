@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disabled Items in Angular Mention component | Syncfusion
-description: Learn here all about Disabled Items in Syncfusion Angular Mention component of Syncfusion Essential JS 2 and more.
+title: Disabled Items in Angular Mention | Syncfusion
+description: Mark Angular Mention items as disabled via the disabled field mapping, or disable a specific item at runtime using the disableItem method with its value, element, or index.
 platform: ej2-angular
 control: Disabled Items
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled Items in Angular Mention component
+# Disabled Items in Angular Mention
 
 The Mention provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://ej2.syncfusion.com/angular/documentation/api/mention/#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 

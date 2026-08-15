@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Datetimepicker component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Migration from Essential JS 1 | Syncfusion® Angular DateTime Picker
+description: Learn how to migrate the Syncfusion Angular DateTime Picker from Essential JS 1 to EJ2 by mapping legacy APIs and events to the new model.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Datetimepicker component
+# Migration from Essential JS 1 in Angular DateTime Picker
 
 This article describes the API migration process of DateTimePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

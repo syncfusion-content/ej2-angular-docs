@@ -1,14 +1,14 @@
 ---
 layout: post
-title: JWT Authentication in Angular Uploader component | Syncfusion
-description: Learn here all about File Upload Using JWT Authentication in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: JWT Authentication in Angular Uploader | Syncfusion
+description: Secure Angular Uploader save and remove requests with JWT tokens by adding an Authorization header in the uploading and removing events, validated server-side.
 platform: ej2-angular
 control: JWT Authentication  
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File upload using JWT authentication
+# JWT Authentication in Angular Uploader
 
 A JSON Web Token (JWT) is an open standard for securely transmitting information between parties as a JSON object. JWTs are commonly used for authentication and authorization. Clients include a JWT in request headers, which the server validates before processing. This approach adds a security layer, ensuring only authenticated users can upload or remove files.
 

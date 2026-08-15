@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable rtl in Angular Switch component | Syncfusion
-description: Learn here all about Enable rtl in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to enable rtl in Angular Toggle Switch Button | Syncfusion
+description: Enable right-to-left rendering in Angular Toggle Switch Button by setting the enableRtl property to true.
 platform: ej2-angular
 control: Enable rtl 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable rtl in Angular Switch component
+# How to enable rtl in Angular Toggle Switch Button
 
 Switch component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/switch#enablertl) as `true`.
 

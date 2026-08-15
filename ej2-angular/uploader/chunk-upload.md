@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chunk upload in Angular Uploader component | Syncfusion
-description: Learn here all about Chunk upload in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: Chunk Upload in Angular Uploader | Syncfusion
+description: Split large files into smaller sequential chunks in the Angular Uploader using chunkSize, with pause, resume, retry, and per-chunk success or failure events.
 platform: ej2-angular
 control: Chunk upload 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chunk upload in Angular Uploader component
+# Chunk Upload in Angular Uploader
 
 The Uploader splits large files into smaller chunks and transmits them to the server using AJAX. You can pause, resume, and retry failed chunk uploads.
 

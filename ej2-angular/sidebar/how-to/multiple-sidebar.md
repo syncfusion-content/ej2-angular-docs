@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multiple Sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Multiple Sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: How to add multiple Sidebar in Angular Sidebar | Syncfusion
+description: Add two Angular Sidebars on the same page with the position property for dual navigation panels on the left and right sides.
 platform: ej2-angular
 control: Sidebar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Multiple Sidebar in Angular Sidebar component
+# How to add multiple Sidebar in Angular Sidebar
 
 Multiple Sidebars can be initialized on a single web page, sharing the same main content area while positioned on opposite sides (e.g., left and right). This setup is useful for applications requiring dual navigation panels or contextual side content. Use the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property (values: `Left` or `Right`) to set the side for each Sidebar.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Color picker component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Color Picker | Syncfusion
+description: Discover how the Syncfusion Angular Color Picker meets WCAG 2.2, Section 508, and WAI-ARIA standards with full keyboard navigation and screen reader support.
 control: Accessibility 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Color picker component
+# Accessibility in Angular Color Picker
 
 The ColorPicker component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the ColorPicker component.
 

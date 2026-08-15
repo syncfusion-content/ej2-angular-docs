@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render a dialog using ng content in Angular Dialog | Syncfusion
-description: Learn here all about Render a dialog using ng content in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: How to render a Dialog using ng-content in Angular Dialog | Syncfusion
+description: Project custom child elements into a Syncfusion Angular Dialog using ng-content for flexible and reusable popup content composition.
 platform: ej2-angular
 control: Render a dialog using ng content 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render a dialog using ng-content in Angular Dialog component
+# How to render a Dialog using ng-content in Angular Dialog
 
 Render custom components in the dialog content using `ng-content`. The following example demonstrates rendering child elements in a custom component using `ng-content`.
 

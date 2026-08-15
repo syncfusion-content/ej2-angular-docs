@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Timepicker component | Syncfusion
-description:  Learn how to get started with the Syncfusion Angular TimePicker component, including setup, installation and basic configuration.
+title: "Getting Started with Angular TimePicker | Syncfusion"
+description: "Learn how to get started with the Syncfusion Angular TimePicker control. Explore setup, features, examples, and customization options."
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular TimePicker component
+# Getting Started with Angular TimePicker
 
 The TimePicker component enables users to select and input a specific time through an interactive time selection interface, providing an easy and accurate way to capture time-related information for scheduling, appointments, and time-based workflows.
 

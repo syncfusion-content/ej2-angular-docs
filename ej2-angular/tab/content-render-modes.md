@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Content render modes in Angular Tab component | Syncfusion
-description: Learn here all about Content render modes in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Content Render Modes in Angular Tab | Syncfusion
+description: Render Angular Tab content on demand, dynamically, or on initial load via the loadOn property to balance performance and state.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Content render modes in Angular Tab component
+# Content Render Modes in Angular Tab
 
 The Tab component supports rendering content based on different scenarios to optimize performance and user experience. The content of tabs can be rendered in three different ways, as outlined below.
 

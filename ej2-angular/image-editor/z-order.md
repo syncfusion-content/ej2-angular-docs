@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Z-order in Angular Image editor component | Syncfusion
-description: Learn here all about Z-order in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Z-order in Angular Image Editor | Syncfusion
+description: Reorder annotation layers in the Syncfusion Angular Image Editor with bring forward, send backward, bring to front, and send to back z-order operations.
 platform: ej2-angular
-control: Toolbar 
+control: Z-order
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Z-order in the Angular Image Editor component
+# Z-order in Angular Image Editor
 
 We are excited to introduce `z-order` support in the Image Editor. It's a powerful tool that allows users to adjust the positioning of annotations. This feature is particularly useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is crucial for a polished final product.
  

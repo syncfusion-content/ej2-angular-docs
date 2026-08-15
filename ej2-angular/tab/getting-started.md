@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Tab component | Syncfusion
-description:  Learn how to get started with the Syncfusion Angular Tab component, including setup, installation and basic configuration.
+title: Getting Started with Angular Tab | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Tab control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Tab component
+# Getting Started with Angular Tab
 
 The Tab component organizes related content into multiple sections displayed within a single view, allowing users to switch between tabs to access different content, features, or settings without leaving the current context.
 

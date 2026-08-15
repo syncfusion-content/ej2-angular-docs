@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Breadcrumb | Syncfusion
+description: Populate Angular Breadcrumb items from tag directives, the current URL, a static url property, or by customizing text in beforeItemRender.
 platform: ej2-angular
-control: Breadcrumb 
+control: Breadcrumb
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Breadcrumb component
+# Data Binding in Angular Breadcrumb
 
 ## Items as tag directive
 

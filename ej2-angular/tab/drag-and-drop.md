@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in Angular Tab component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in Angular Tab | Syncfusion
+description: Reorder Angular Tab items by drag and drop with allowDragAndDrop, and move items between tabs or to external sources via events.
 platform: ej2-angular
 control: Tab
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in Angular Tab component
+# Drag and Drop in Angular Tab
 
 The Tab component provides built-in drag and drop functionality that enables users to reorder tab items dynamically by dragging them to different positions. This interactive feature enhances user experience by allowing flexible content organization.
 

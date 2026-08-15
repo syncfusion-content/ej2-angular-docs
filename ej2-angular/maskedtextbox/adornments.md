@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adornments in Angular MaskedTextBox control | Syncfusion
-description: Learn here all about Adornments in Syncfusion Angular MaskedTextBox control of Syncfusion Essential JS 2 and more.
+title: Adornments in Angular MaskedTextBox | Syncfusion
+description: Add icons, labels, or action buttons to the Syncfusion Angular MaskedTextBox with prependTemplate and appendTemplate while preserving mask validation.
 platform: ej2-angular
 control: Adornments
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in Angular MaskedTextBox control
+# Adornments in Angular MaskedTextBox
 
 Adornments allow you to add custom elements before or after the MaskedTextBox input using the `prependTemplate` and `appendTemplate` properties. These templates support icons, labels, action buttons, and other visual elements while preserving mask validation and float label functionality.
 

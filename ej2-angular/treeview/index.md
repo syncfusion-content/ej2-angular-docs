@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular TreeView component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Tree View Component | Syncfusion
+description: Explore the Syncfusion Angular Tree View, a hierarchical data component with edit, drag and drop, checkbox selection, and template support.
 platform: ej2-angular
 control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular TreeView component
+# About Syncfusion Angular Tree View Component.
 
 The **TreeView** component is used to represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more.
 TreeView can be populated from a data source such as an array of JavaScript objects or from DataManager.

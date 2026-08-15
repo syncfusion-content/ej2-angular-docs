@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Drop down list component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Dropdown List | Syncfusion®
+description: Style the Angular Dropdown List input, dropdown icon, focus, popup, and list items using CSS classes for full visual customization.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Drop down list component
+# Style in Angular Dropdown List
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

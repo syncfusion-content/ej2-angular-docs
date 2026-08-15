@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable ripple for switch label in Angular Switch component | Syncfusion
-description: Learn here all about Enable ripple for switch label in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to enable ripple for switch label in Angular Toggle Switch Button | Syncfusion
+description: Enable ripple effects on Angular Toggle Switch Button labels using the rippleMouseHandler method.
 platform: ej2-angular
 control: Enable ripple for switch label 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable ripple for switch label in Angular Switch component
+# How to enable ripple for switch label in Angular Toggle Switch Button
 
 By default, label with ripple effect is not available in Switch. You can achieve this by using `rippleMouseHandler` method.
 

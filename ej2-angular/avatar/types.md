@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in Angular Avatar component | Syncfusion
-description: Learn here all about Types in Syncfusion Angular Avatar component of Syncfusion Essential JS 2 and more.
+title: Types in Angular Avatar | Syncfusion
+description: Use predefined CSS classes in the Angular Avatar to set sizes from xsmall to xlarge and switch between rounded-rectangle and circle shapes.
 platform: ej2-angular
-control: Avatar 
+control: Avatar
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types in Angular Avatar component
+# Types in Angular Avatar
 
 The Avatar component provides different sizes and visual styles to suit various design requirements. This section explains the available avatar sizes and shape types that can be customized using CSS classes.
 

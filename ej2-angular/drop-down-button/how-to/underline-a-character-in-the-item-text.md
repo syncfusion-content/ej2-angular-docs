@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Underline a character in the item text in Angular Drop down button component | Syncfusion
-description: Learn here all about Underline a character in the item text in Syncfusion Angular Drop down button component of Syncfusion Essential JS 2 and more.
+title: Underline a character in the item text in Angular Dropdown Menu | Syncfusion
+description: Underline a specific character in Angular Dropdown Menu item text using beforeItemRender and innerHTML.
 platform: ej2-angular
 control: Underline a character in the item text 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Underline a character in the item text in Angular Drop down button component
+# How to underline a character in the item text in Angular Dropdown Menu
 
 Underline a particular character in a text can be handled in [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#beforeitemrender)event by adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 

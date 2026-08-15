@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the UI appearance of the MaskedTextBox | Syncfusion
-description: Learn here all about Customize the ui appearance of the control in Syncfusion Angular Maskedtextbox component of Syncfusion Essential JS 2 and more.
+title: Customize UI appearance in Angular MaskedTextBox | Syncfusion
+description: Customize the Syncfusion Angular MaskedTextBox appearance by adding a custom cssClass and CSS rules for height, border, focus, and floating label styles.
 platform: ej2-angular
 control: Customize the ui appearance of the control 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the UI appearance of the MaskedTextBox component
+# How to customize the UI appearance in Angular MaskedTextBox
 
 The MaskedTextBox appearance can be customized by adding a custom `cssClass` to the component and applying custom styles. The following example demonstrates how to customize the MaskedTextBox appearance.
 

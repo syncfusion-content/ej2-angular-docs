@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Position and size in Angular Dashboard layout component | Syncfusion
-description: Learn here all about Position sizing of panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
+title: Size and Position in Angular Dashboard Layout | Syncfusion
+description: Position panels by row and column, and size them with sizeX and sizeY in the Syncfusion Angular Dashboard Layout grid component.
 platform: ej2-angular
 control: Dashboard Layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Panel positioning and sizing in Angular Dashboard layout component
+# Size and Position in Angular Dashboard Layout
 
 Panels are the fundamental building blocks of the Dashboard Layout component, functioning as containers for data visualization and content presentation. The component provides comprehensive control over panel positioning and sizing through a flexible grid-based system that enables precise layout management and responsive design implementation.
 

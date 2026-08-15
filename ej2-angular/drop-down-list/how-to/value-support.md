@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Value support in Angular Drop down list component | Syncfusion
-description: Learn here all about Value support in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to enforce unique values in Angular Dropdown List | Syncfusion®
+description: Ensure each Angular Dropdown List item has a unique value so the component can resolve selections to a single list entry.
 platform: ej2-angular
 control: Value support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value support in Angular Drop down list component
+# How to enforce unique values in Angular Dropdown List
 
 yes, value for each list items should be unique.

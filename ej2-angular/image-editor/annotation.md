@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Annotation in Angular Image editor component | Syncfusion
-description: Learn here all about Annotation in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Annotation in Angular Image Editor | Syncfusion
+description: Add text, freehand drawings, and shapes such as rectangle, ellipse, arrow, path, and line to images in the Syncfusion Angular Image Editor.
 platform: ej2-angular
 control: Annotation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotation in the Angular Image Editor component
+# Annotation in Angular Image Editor
 
 The Angular Image Editor allows adding annotations to the image, including text, freehand drawings, and shapes like rectangles, ellipses, arrows, paths, and lines. This gives the flexibility to mark up the image with notes, sketches, and other visual elements as needed. These annotation tools can help to communicate and share ideas more effectively. Users are allowed to draw multiple annotations simultaneously, enhancing creative flexibility. Furthermore, every action, including customizations, will be tracked in the undo/redo collection, ensuring a seamless user experience and making it easier to experiment with different designs.
 

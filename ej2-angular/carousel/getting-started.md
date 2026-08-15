@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Carousel component | Syncfusion
-description:  Learn how to get started with Syncfusion Angular Carousel component, including setup, installation and basic configuration.
+title: Getting Started with Angular Carousel | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Carousel control. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Carousel
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Carousel component
+# Getting Started with Angular Carousel
 
 The Carousel component displays a collection of items one at a time and allows users to navigate between them using indicators, navigation buttons, or autoplay.
 

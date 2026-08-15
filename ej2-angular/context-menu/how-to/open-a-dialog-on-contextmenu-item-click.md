@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open Dialog on Context Menu Item Click in Angular | Syncfusion
-description: Learn here all about Open a dialog on contextmenu item click in Syncfusion Angular Context menu component of Syncfusion Essential JS 2 and more.
+title: Open a dialog on Context Menu item click in Angular Context Menu | Syncfusion
+description: Open a Dialog when an Angular Context Menu item is selected by handling the select event to launch modal workflows from the menu.
 platform: ej2-angular
 control: Context Menu
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open Dialog on Context Menu Click in Angular
+# How to open a dialog on Context Menu item click in Angular Context Menu
 
 This section explains how to open a dialog when a ContextMenu item is clicked. This integration is commonly used for modal workflows, form interactions, and confirmation dialogs. The functionality is achieved by handling the dialog opening logic in the `select` event of the ContextMenu component.
 

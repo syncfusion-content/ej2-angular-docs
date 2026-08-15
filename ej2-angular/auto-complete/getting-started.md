@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular AutoComplete component | Syncfusion
-description: Learn how to get started with the Syncfusion Angular AutoComplete component, including setup, installation, data binding, and basic configuration.
+title: Getting Started with Angular AutoComplete | Syncfusion®
+description: Learn how to get started with the Syncfusion® Angular AutoComplete component, including setup, installation, data binding, and basic configuration.
 platform: ej2-angular
 control: AutoComplete
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular AutoComplete component
+# Getting Started with Angular AutoComplete
 
 The AutoComplete component provides suggestions as users type, offering filtering and selection capabilities for efficient text input in various scenarios.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Submit name and value in form in Angular Switch component | Syncfusion
-description: Learn here all about Submit name and value in form in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: How to submit name and value in form in Angular Toggle Switch Button | Syncfusion
+description: Submit Angular Toggle Switch Button name and checked values in a form to the server and exclude disabled items.
 platform: ej2-angular
 control: Submit name and value in form 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Submit name and value in form in Angular Switch component
+# How to submit name and value in form in Angular Toggle Switch Button
 
 The [`name`](https://ej2.syncfusion.com/angular/documentation/api/switch#name) attribute of the Switch is used to group Switches. When the Switches are grouped in form, the checked items [`value`](https://ej2.syncfusion.com/angular/documentation/api/switch#value) attribute will post to the server on form submit. The disabled and unchecked Switch values will not be sent to the server on form submit.
 

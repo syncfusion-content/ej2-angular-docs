@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remote data bind in Angular Drop down list component | Syncfusion
-description: Learn here all about Remote data bind in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: How to get count on remote bind in Angular Dropdown List | Syncfusion®
+description: Get the total count of items in Angular Dropdown List on remote data bind from the actionComplete event before render, or via getItems after.
 platform: ej2-angular
 control: Remote data bind 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Remote data bind in Angular Drop down list component
+# How to get total count on remote bind in Angular Dropdown List
 
 Before component rendering, you can get the total items count by using [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#actioncomplete) &nbsp; event with its result arguments. After rendering this component, you can get the total items count by using [`getItems`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#getitems) method.
 

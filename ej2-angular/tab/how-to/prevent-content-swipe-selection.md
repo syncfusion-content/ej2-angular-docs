@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent content swipe selection in Angular Tab component | Syncfusion
-description: Learn here all about Prevent content swipe selection in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: How to prevent content swipe selection in Angular Tab | Syncfusion
+description: Configure the Angular Tab swipeMode to Touch, Mouse, Both, or None to control swipe-based tab switching on forms.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent content swipe selection in ##Platform_Name## Tab control
+# How to prevent content swipe selection in Angular Tab
 
 The [`swipeMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#swipeMode) property in the Tab component enables users to navigate between tabs using swipe gestures, enhancing the navigation experience. It supports both touch and mouse inputs for intuitive tab switching.
 

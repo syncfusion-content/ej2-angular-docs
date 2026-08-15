@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Spinner component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Spinner component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Spinner | Syncfusion
+description: Replace the default Syncfusion Angular Spinner with a custom template by passing the template option to the setSpinner method.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Spinner component
+# Template in Angular Spinner
 
 Use custom templates for the Spinner instead of the default spinner by specifying the template in the `setSpinner` method.
 

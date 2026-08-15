@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in Angular Stepper component | Syncfusion
-description:  Learn here all about Template in Syncfusion Angular Stepper component of Syncfusion Essential JS 2 and more.
+title: Template in Angular Stepper | Syncfusion
+description: Customize Angular Stepper step rendering with the template property to inject dynamic content, components, or complex layouts.
 platform: ej2-angular
 control: Stepper
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Stepper component
+# Template in Angular Stepper
 
 The Stepper component allows customization of step appearance and content using the [template](https://ej2.syncfusion.com/angular/documentation/api/stepper/#template) property, which accepts a string or object. This is useful for rendering dynamic content, Angular components, or complex layouts within steps. Set the `template` property on the `ejs-stepper` component to define custom step rendering.
 

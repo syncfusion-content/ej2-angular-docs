@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form support in Angular Combo box component | Syncfusion
-description: Learn here all about Form support in Syncfusion Angular Combo box component of Syncfusion Essential JS 2 and more.
+title: Form Support in Angular ComboBox | Syncfusion®
+description: Integrate Angular ComboBox with template-driven and reactive forms using ngModel or formControlName for two-way data binding and validation.
 platform: ej2-angular
 control: Form support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in Angular Combo box component
+# Form Support in Angular ComboBox
 
 The ComboBox supports both the reactive and template-driven form-building technologies.
 

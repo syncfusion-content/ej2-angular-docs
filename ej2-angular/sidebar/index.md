@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Sidebar component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion Angular Sidebar Component | Syncfusion
+description: Explore the Syncfusion Angular Sidebar, an expandable side container with custom target, types, auto-close, dock, and rich content support.
 platform: ej2-angular
 control: Sidebar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Sidebar component
+# About Syncfusion Angular Sidebar Component.
 
 **Sidebar** is an expandable and collapsible component that typically acts as a side container to place primary or secondary content alongside the main content of a web page.
 

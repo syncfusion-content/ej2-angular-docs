@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Maskedtextbox component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Maskedtextbox component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular MaskedTextBox | Syncfusion
+description: Learn how the Syncfusion Angular MaskedTextBox meets WCAG 2.2, Section 508, and WAI-ARIA textbox standards with full screen reader and keyboard support.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular MaskedTextBox component
+# Accessibility in Angular MaskedTextBox
 
 The MaskedTextBox component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the MaskedTextBox component.
 

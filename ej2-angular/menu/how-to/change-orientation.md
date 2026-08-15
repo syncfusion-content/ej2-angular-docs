@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change orientation in Angular Menu component | Syncfusion
-description: Learn here all about Change orientation in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+title: How to change orientation in Angular Menu Bar | Syncfusion
+description: Switch the Angular Menu Bar between Horizontal and Vertical orientation via the orientation property for top or sidebar navigation.
 platform: ej2-angular
 control: Change orientation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change orientation in Angular Menu component
+# How to change orientation in Angular Menu Bar
 
 This section demonstrates how to configure the Angular Menu component to display items horizontally or vertically using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/menu/#orientation) property. Horizontal orientation is suitable for top navigation bars, while vertical orientation is ideal for sidebar navigation.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Image editor component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Image editor component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Image Editor | Syncfusion
+description: Localize every static text string of the Syncfusion Angular Image Editor, such as Crop, Zoom, and Annotate, to other cultures using the L10n locale object.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in the Angular Image Editor component
+# Localization in Angular Image Editor
 
 The `Localization` library allows you to localize the default text content of the Image Editor. The Image Editor has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
 

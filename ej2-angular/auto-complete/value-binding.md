@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Auto complete component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Auto complete component of Syncfusion Essential JS 2 and more.
+title: Value Binding in Angular AutoComplete | Syncfusion®
+description: Bind Angular AutoComplete values from primitive types, complex objects, or remote data using the value property and allowObjectBinding.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value binding in AutoComplete Component
+# Value Binding in Angular AutoComplete
 
 Value binding in the AutoComplete control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The AutoComplete component provides flexibility in binding both primitive data types and complex objects.
 

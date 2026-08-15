@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header in Angular Tab component | Syncfusion
-description: Learn here all about Header in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Header in Angular Tab | Syncfusion
+description: Customize the Angular Tab header with e-fill or e-background CSS classes, header icons, and the iconPosition property.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header in Angular Tab component
+# Header in Angular Tab
 
 This section explains how to modify Tab header styles and configure header icons and their positions.
 

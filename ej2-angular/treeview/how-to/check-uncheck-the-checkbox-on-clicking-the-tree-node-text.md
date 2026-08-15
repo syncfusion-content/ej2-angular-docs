@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toggle checkbox by node click in Angular TreeView | Syncfusion
-description: Learn here all about Check uncheck the checkbox on clicking the tree node text in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: Check or uncheck checkbox by clicking tree node text in Angular Tree View | Syncfusion
+description: Toggle an Angular Tree View node checkbox by clicking its text using the nodeClicked event and TreeView check methods.
 platform: ej2-angular
 control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox toggle on node click in Angular TreeView
+# How to check or uncheck checkbox by clicking tree node text in Angular Tree View
 
 You can enable checkbox toggling functionality by clicking on the tree node text instead of just the checkbox itself. This behavior is implemented using the [`nodeClicked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeclicked) event of TreeView, which provides access to the clicked node and allows programmatic manipulation of its checkbox state.
 

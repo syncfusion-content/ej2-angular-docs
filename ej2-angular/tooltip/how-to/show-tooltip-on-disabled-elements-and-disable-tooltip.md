@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show Tooltip on disabled elements in Angular Tooltip component | Syncfusion
-description: Learn here all about Show Tooltip on disabled elements and disable Tooltip in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Show Tooltip on disabled elements in Angular Tooltip | Syncfusion
+description: Show the Syncfusion Angular Tooltip on a disabled HTML element by wrapping it in an inline-block div and attaching the tooltip to that wrapper.
 platform: ej2-angular
 control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Show Tooltip on disabled elements in Angular
+# How to show Tooltip on disabled elements in Angular Tooltip
 
 By default, tooltips do not display on disabled elements. However, you can enable this behavior by following the steps below.
 

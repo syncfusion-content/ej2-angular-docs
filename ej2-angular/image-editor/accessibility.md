@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Image Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Image Editor component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Image Editor | Syncfusion
+description: Review accessibility support in the Syncfusion Angular Image Editor, including WCAG 2.2, Section 508, screen reader, keyboard navigation, and RTL compliance.
 control: Accessibility 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Image Editor component
+# Accessibility in Angular Image Editor
 
 The Image Editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

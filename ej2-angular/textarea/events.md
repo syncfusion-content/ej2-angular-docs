@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Angular TextArea component | Syncfusion
-description: Handling events triggered by user interactions or changes in the Angular TextArea component of Syncfusion Essential JS 2 and more.
+title: Events in Angular TextArea | Syncfusion
+description: Handle Angular TextArea events including created, input, change, focus, blur, and destroyed to respond to component lifecycle and user interaction.
 control: Events
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events in Angular TextArea Component
+# Events in Angular TextArea
 
 This section describes the TextArea events that will be triggered when appropriate actions are performed. The following events are available in the TextArea component.
 

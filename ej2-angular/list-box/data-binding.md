@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular List box component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular List box component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular ListBox | Syncfusion
+description: Bind the Angular ListBox to string arrays, object arrays, or remote services via DataManager, and map text, value, groupBy, iconCss, and htmlAttributes fields.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular List box component
+# Data Binding in Angular ListBox
 
 The ListBox loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#datasource) property. It supports the data type of `array` or `DataManager`.
 

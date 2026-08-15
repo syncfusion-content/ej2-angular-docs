@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Position in Angular Predefined dialogs component | Syncfusion
-description: Learn here all about Position in Syncfusion Angular Predefined dialogs component of Syncfusion Essential JS 2 and more.
+title: Position in Angular Predefined Dialogs | Syncfusion
+description: Position Syncfusion Angular Predefined Dialogs (alert, confirm, prompt) by setting the position property with X and Y values such as center, top, or offset.
 platform: ej2-angular
 control: Position 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in Angular Predefined dialogs component
+# Position in Angular Predefined Dialogs
 
 Customize the dialog position using the `position` property with specific `X` and `Y` values.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable ripple in Angular Button group component | Syncfusion
-description: Learn here all about Enable ripple in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
+title: How to enable ripple in Angular Button Group | Syncfusion
+description: Enable ripple animation in Angular Button Group by importing enableRipple from ej2-base and setting it to true.
 platform: ej2-angular
 control: Enable ripple 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable ripple in Angular Button group component
+# How to enable ripple in Angular Button Group
 
 Ripple can be enabled by importing `enableRipple` method from `ej2-base` and set enableRipple as `true`.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Tab component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Tab | Syncfusion
+description: Make the Angular Tab accessible with tablist, tab, and tabpanel WAI-ARIA roles plus full keyboard navigation and screen reader support.
 platform: ej2-angular
 control: Tab 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Tab component
+# Accessibility in Angular Tab
 
 The Tab component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

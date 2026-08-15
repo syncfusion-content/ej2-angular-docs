@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting TreeView level wise in Angular TreeView component | Syncfusion
-description: Learn here all about Sorting TreeView level wise in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
+title: How to sort TreeView nodes by level in Angular Tree View | Syncfusion
+description: Sort Angular Tree View nodes by level using the sortOrder property plus custom logic for per-level Ascending or Descending order.
 platform: ej2-angular
 control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting TreeView level wise in Angular TreeView component
+# How to sort TreeView nodes by level in Angular Tree View
 
 The TreeView component provides sorting functionality through the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#sortorder) property, which applies sorting to the entire TreeView structure. However, for scenarios requiring level-specific sorting, you can implement custom sorting logic that targets specific hierarchical levels while leaving others unsorted.
 

@@ -1,14 +1,14 @@
 ﻿---
 layout: post
-title: Templates in Angular Breadcrumb component | Syncfusion
-description: Learn here all about Templates in Syncfusion Angular Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular Breadcrumb | Syncfusion
+description: Customize Angular Breadcrumb items and separators with the itemTemplate and separatorTemplate properties for rich navigation interfaces.
 platform: ej2-angular
-control: Breadcrumb 
+control: Breadcrumb
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Breadcrumb component
+# Templates in Angular Breadcrumb
 
 The Breadcrumb component provides flexible template customization options to create rich, interactive navigation experiences. Use the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#itemtemplate) property to customize individual breadcrumb items and the [`separatorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#separatortemplate) property to customize the separators between items, enabling full control over the visual presentation and functionality.
 

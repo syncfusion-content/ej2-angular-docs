@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Achieve file upload programmatically in Angular Uploader component | Syncfusion
-description: Learn here all about Achieve file upload programmatically in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: How to upload files programmatically in Angular Uploader | Syncfusion
+description: Trigger file uploads programmatically in the Angular Uploader by calling the upload method on selected files from getFilesData, with or without arguments.
 platform: ej2-angular
 control: Achieve file upload programmatically 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Achieve File Upload Programmatically in Angular Uploader Component
+# How to upload files programmatically in Angular Uploader
 
 Upload files programmatically using the [upload](https://ej2.syncfusion.com/angular/documentation/api/uploader/#upload) method. Retrieve the selected files using the public [getFilesData](https://ej2.syncfusion.com/angular/documentation/api/uploader/#getfilesdata) method.
 

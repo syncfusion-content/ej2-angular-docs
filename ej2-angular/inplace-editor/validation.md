@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in Angular Inplace editor component | Syncfusion
-description: Learn here all about Validation in Syncfusion Angular Inplace editor component of Syncfusion Essential JS 2 and more.
+title: Validation in Angular In-place Editor | Syncfusion
+description: Validate Angular In-place Editor inputs with validationRules, name binding, built-in rules like required and email, and custom error messages.
 platform: ej2-angular
 control: Validation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular Inplace editor component
+# Validation in Angular In-place Editor
 
 **In-place Editor** component supports validation and it can be achieved by adding rules to the [validationRules](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validationrules) property, its child property `key` must be same as [name](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#name) property, otherwise validation not performed. Submitting data to the server or calling the [validate](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validate) method validation executed.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Numeric Range Slider in Angular Range Slider component | Syncfusion
-description: Learn here all about Numeric Range Slider in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
+title: How to format numeric values in Range Slider in Angular | Syncfusion
+description: Format Angular Range Slider values as currency, percentage, or fixed-precision numbers using custom decimal logic and unit representations.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Numeric Range Slider in Angular
+# How to format numeric values in Range Slider in Angular
 
 Format numeric values displayed in Range Slider to meet your application requirements. Apply decimal precision, fixed whole numbers, or unit representations (e.g., "$100", "50%"). The following sample demonstrates numeric formatting techniques.
 

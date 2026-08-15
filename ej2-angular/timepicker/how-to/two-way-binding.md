@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Two way binding in Angular Timepicker component | Syncfusion
-description: Learn here all about Two way binding in Syncfusion Angular Timepicker component of Syncfusion Essential JS 2 and more.
+title: How to two-way binding in Angular TimePicker | Syncfusion®
+description: Learn how to achieve two-way binding in the Syncfusion Angular TimePicker using ngModel and property binding to keep the input in sync.
 platform: ej2-angular
 control: Two way binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Two way binding in Angular Timepicker component
+# How to two-way binding in Angular TimePicker
 
 The following example demonstrates how to achieve **two-way binding** by binding the **value** to the first TimePicker component by using property binding and binding the model data using **ngModel** to the second TimePicker component. The **value** of the TimePicker will get change, when their is any change in the property value or model value.
 
