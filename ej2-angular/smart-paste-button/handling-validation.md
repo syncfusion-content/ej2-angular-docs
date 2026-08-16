@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation with Angular SmartPasteButton component | Syncfusion
-description:  Checkout and learn about Handling validation with Angular Smart Paste button component of Syncfusion Essential JS 2 and more details.
+title: Handling Validation in Angular Smart Paste Button | Syncfusion
+description: Learn how to validate required form fields after pasting data in the Angular Smart Paste Button with Syncfusion FormValidator.
 platform: ej2-angular
 control: Handling validation
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Handling Validation in Smart Paste Button
+# Handling Validation in Angular Smart Paste Button
 
 The `Smart Paste Button` can be configured to validate that all required input form fields have been pasted with content. If any form fields are empty, validation will be triggered to ensure that all necessary information is provided before proceeding.
 
