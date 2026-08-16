@@ -22,21 +22,26 @@ Many organizations maintain existing diagrams created using Microsoft Visio. Rec
 
 - Reuse existing Visio diagrams in web applications.  
 - Visualize and edit Visio diagrams using the Diagram component.  
-- Export diagrams created or modified in Diagram component for use in Microsoft Visio.  
+- Export diagrams created or modified in the Diagram component for use in Microsoft Visio.  
 
-This integration enables seamless collaboration between desktop‑based Visio tools and web‑based diagramming applications.
+This integration enables seamless collaboration between desktop-based Visio tools and web-based diagramming applications.
 
 ## Visio support in the Angular Diagram
 
 The Syncfusion Essential Angular Diagram component supports Microsoft Visio integration by allowing **.vsdx** files to be imported into the Diagram component and diagrams to be exported back to Visio format. During import, Visio shapes, connectors, and annotations are mapped to their corresponding Diagram elements, while export converts the diagram content into a valid **.vsdx** file.
 
-N>To enable Visio import and export functionality, inject the `ImportAndExportVisio` module into the Diagram component.
+N> To enable Visio import and export functionality, inject the `ImportAndExportVisio` module into the Diagram component.
+
+```
+import { Diagram, ImportAndExportVisio } from '@syncfusion/ej2-angular-diagrams';
+Diagram.Inject(ImportAndExportVisio);
+```
 
 ## Import Visio files in Angular Diagram
 
 ### How Visio import works
 
-A Visio file can be selected from the local file system or retrieved from a server or cloud storage. Once the **.vsdx** file is available, it is passed to the Diagram component as a **File** object using the [`importFromVisio`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#importfromvisio) method.
+A Visio file can be selected from the local file system using the Syncfusion [Uploader](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started) component, or retrieved from a server or cloud storage. The Uploader's `success` event exposes the selected file as `args.file.rawFile`, which is passed to the Diagram component as a **File** object using the [`importFromVisio`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#importfromvisio) method.
 
 During the import process:
 
@@ -66,7 +71,7 @@ The following example imports a Visio (**.vsdx**) file by passing a **File** obj
 Import behavior can be customized using the `VisioImportOptions` object.
 
 | Property | Description |
-|--------|-------------|
+|----------|-------------|
 | `pageIndex` | Specifies the zero-based index of the Visio page to import. The default value is **0**. |
 
 ### Import lifecycle event
@@ -138,7 +143,7 @@ The following example exports an Angular Diagram to a Microsoft Visio (**.vsdx**
 Export behavior can be controlled using the `VisioExportOptions` object.
 
 | Property | Description |
-|------|------|
+|----------|-------------|
 | `fileName` | Specifies the name of the exported Visio file. The default value is **Sample.vsdx**. |
 | `pageName` | Specifies the name of the Visio page. The default value is **Page-1**. |
 
@@ -159,12 +164,11 @@ The [`diagramExporting`](https://ej2.syncfusion.com/angular/documentation/api/di
 The export operation can be canceled at the start of the process by setting the `cancel` property to **true**.
 
 ```ts
-  public diagramExporting(args: IExportingEventArgs): void{
-    if (args.status === 'started') {
-      args.cancel = true;
-    }
+public diagramExporting(args: IExportingEventArgs): void {
+  if (args.status === 'started') {
+    args.cancel = true;
   }
-
+}
 ```
 
 ## Limitations
@@ -175,11 +179,11 @@ The table below outlines Visio's import and export limitations, offering a conci
 |--------------------------|--------------------------|
 | **Gradient page backgrounds:** Only solid fills are imported; gradient page background fills are not supported. | **Diagram-level tooltips:** Diagram‑level tooltips are not exported. |
 | **Gradient types:** Only linear and radial gradient types are supported; other gradient styles are ignored. | **Connector segment thumbs:** Connector segment thumb customizations are not supported. |
-| **Ruler settings:** Ruler settings may not be preserved accurately due to coordinate origin differences (Visio uses bottom‑left; Diagram component uses top‑left). | **Templates & tools:** Templates and custom tool configurations are not exported. |
-| **Layer support:** Only a single layer per shape is supported. | **Layer Z‑index ordering:** Layer Z‑index ordering is not preserved. |
+| **Ruler settings:** Ruler settings may not be preserved accurately due to coordinate origin differences (Visio uses bottom-left; Diagram component uses top-left). | **Templates & tools:** Templates and custom tool configurations are not exported. |
+| **Layer support:** Only a single layer per shape is supported. | **Layer Z-index ordering:** Layer Z-index ordering is not preserved. |
 | **Line styles:** Rounded line caps and compound line styles are not supported. | **Annotation properties:** Annotation displacement and flip properties are not supported. |
 | **Image formatting:** Image formatting options such as brightness, contrast, and cropping are not supported. | **Port customization:** Port customization properties are not exported. |
-| **Connector types:** Only basic connector types—straight, right‑angle, and curved—are supported. | **Page margins & boundaries:** Page margin and boundary constraints may require manual adjustment after export. |
+| **Connector types:** Only basic connector types—straight, right-angle, and curved—are supported. | **Page margins & boundaries:** Page margin and boundary constraints may require manual adjustment after export. |
 | **Connector gradients:** Connector gradient styles are not supported. | |
 | **Multiple hyperlinks:** Multiple hyperlinks within a single shape are not supported. | |
 | **Rich text:** Rich text formatting is not supported; text is rendered using a single, uniform style. | |

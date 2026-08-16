@@ -1,14 +1,11 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, HierarchicalTree, DiagramModule,
-  HierarchicalTreeService, LayoutAnimation, LayoutAnimationService, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, HierarchicalTree, DiagramModule, LayoutAnimation, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 Diagram.Inject(HierarchicalTree, LayoutAnimation);
 
 @Component({
   imports: [DiagramModule],
-
-  providers: [HierarchicalTreeService, LayoutAnimationService],
   standalone: true,
   selector: "app-container",
   template: `

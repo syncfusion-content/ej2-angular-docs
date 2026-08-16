@@ -3,14 +3,12 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, DiagramModule,
-  SymmetricLayout, SymmetricLayoutService, BasicShapeModel } from '@syncfusion/ej2-angular-diagrams';
+  SymmetricLayout, BasicShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 Diagram.Inject(SymmetricLayout);
 
 @Component({
   imports: [DiagramModule],
-
-  providers: [SymmetricLayoutService],
   standalone: true,
   selector: "app-container",
   template: `<ejs-diagram #diagram id="diagram" width="100%" height="590px" [nodes]="nodes"

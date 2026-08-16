@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Angular Smart TextArea component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Smart TextArea component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Smart TextArea | Syncfusion
+description: Learn how to get started with the Syncfusion Angular Smart TextArea component. Explore setup, features, examples, and customization options.
 control: Getting started 
 platform: ej2-angular
 documentation: ug

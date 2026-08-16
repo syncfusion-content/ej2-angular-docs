@@ -1,14 +1,12 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, HierarchicalTree, DiagramModule,
-  HierarchicalTreeService, IExpandStateChangeEventArgs } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, HierarchicalTree, DiagramModule, IExpandStateChangeEventArgs, DataBinding } from '@syncfusion/ej2-angular-diagrams';
 
-Diagram.Inject(HierarchicalTree);
+Diagram.Inject(DataBinding, HierarchicalTree);
 
 @Component({
   imports: [DiagramModule],
 
-  providers: [HierarchicalTreeService],
   standalone: true,
   selector: "app-container",
   template: `

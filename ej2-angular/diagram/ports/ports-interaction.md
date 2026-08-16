@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ports Interaction in Angular Diagram | Syncfusion®
-description: Draw connectors from ports in the Syncfusion® Angular Diagram with straight, bezier, or orthogonal segment types, plus port drag, tooltips, and interaction events.
+description: Draw connectors from ports in the Angular Diagram with straight, bezier, or orthogonal segment types, plus port drag, tooltips, and interaction events.
 platform: ej2-angular
 control: Ports 
 documentation: ug
@@ -14,7 +14,7 @@ Ports in Angular Diagram components support various interactive features that en
 
 ## Draw connector from port
 
-Ports can serve as connection points for creating connectors dynamically. Enable the `Draw` constraint on the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#constraints) property to allow users to draw connectors directly from ports. The default connector segment type is **Orthogonal**, providing structured, right-angled connections suitable for flowcharts and organizational diagrams.
+Ports can be used as connection points to create connectors dynamically. Enable the `Draw` constraint on the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#constraints) property to allow users to draw connectors directly from ports. The default connector segment type is **Orthogonal**, providing structured, right-angled connections suitable for flowcharts and organizational diagrams.
 
 This feature is particularly useful in scenarios where users need to create connections interactively, such as building workflow diagrams or network topologies.
 
@@ -37,6 +37,10 @@ The default connector type can be customized when drawing from ports by configur
 * **Straight**: Direct linear connections for simple relationships
 * **Bezier**: Curved connections for organic, flowing designs
 * **Orthogonal**: Right-angled connections for structured layouts
+
+```
+public connectorDefaults: ConnectorModel = { type: 'Bezier' };
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,10 +74,9 @@ Port dragging is valuable when fine-tuning diagram layouts or adapting to changi
 
 ## Automatic Port Creation
 
-The Diagram component supports dynamic port creation through user interaction. Users can create ports on nodes or connectors by clicking and dragging while holding the Control (Ctrl) key. This feature is disabled by default and requires enabling the `DiagramConstraints.AutomaticPortCreation` constraint.
+The Diagram component supports dynamic port creation through user interaction. Users can create ports on nodes or connectors by clicking and dragging while holding the Ctrl key. This feature is disabled by default and requires enabling the `DiagramConstraints.AutomaticPortCreation` constraint.
 
 Ports can also be removed using the same Ctrl + Click interaction, provided the port is not connected to any connector. This prevents accidental disconnection of active connections.
-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,7 +92,14 @@ Ports can also be removed using the same Ctrl + Click interaction, provided the 
 
 ## Port tooltip
 
-Port tooltips provide contextual information when users hover over ports, improving usability and user guidance. Enable this feature by setting the port constraints to **Tooltip**.
+Port tooltips display contextual information when users hover over ports, improving usability. Enable this feature by setting the port constraints to **Tooltip**.
+
+```
+public ports: PointPortModel[] = [{
+  constraints: PortConstraints.Tooltip,
+  tooltip: { content: 'Port tooltip' }
+}];
+```
 
 Tooltips are especially beneficial in complex diagrams where ports may not be immediately recognizable or when additional context helps users understand port functionality.
 
@@ -109,8 +119,8 @@ Tooltips are especially beneficial in complex diagrams where ports may not be im
 
 Port interactions trigger specific events that enable custom handling and application logic. These events provide hooks for implementing validation, logging, or custom behaviors during port operations.
 
-| Event| Description| Use Cases |
-|----|----|----|
+| Event | Description | Use Cases |
+| ---- | ---- | ---- |
 | [`Click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iClickEventArgs)   | Triggers when a port is clicked | Custom selection logic, context menus |
 | [`Element Draw`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iElementDrawEventArgs)  | Triggers when drawing a connector from a port | Validation, custom connector properties |
 | [`Position Change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDraggingEventArgs)  | Triggers when a port is dragged | Position validation, layout updates |
@@ -130,6 +140,8 @@ Port interactions trigger specific events that enable custom handling and applic
 
 ## See also
 
-* [How to customize the ports](./ports-appearance)
-* [How to set the position of the port](./ports-positioning)
-* [How to create connector port](./ports-connector-port)
+- [How to customize the ports](./ports-appearance)
+- [How to set the position of the port](./ports-positioning)
+- [How to create connector port](./ports-connector-port)
+- [Nodes](../nodes)
+- [Connectors](../connectors/connector-interaction)

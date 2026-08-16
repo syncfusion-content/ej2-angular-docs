@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ports Positioning in Angular Diagram | Syncfusion®
-description: Position ports on nodes in the Syncfusion® Angular Diagram using fractional 0–1 offsets, horizontal/vertical alignment, and margin to land ports precisely on node edges.
+description: Position ports on nodes in the Angular Diagram using fractional 0–1 offsets, horizontal/vertical alignment, and margin to land ports precisely on node edges.
 platform: ej2-angular
 control: Ports 
 documentation: ug
@@ -17,7 +17,7 @@ The Angular Diagram component provides flexible options for positioning ports on
 The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pointPortModel#offset) property positions ports using fractional coordinates relative to the node boundaries. The coordinate system uses values from 0 to 1, where:
 
 - **0** represents the top edge (for Y-axis) or left edge (for X-axis)
-- **1** represents the bottom edge (for Y-axis) or right edge (for X-axis)  
+- **1** represents the bottom edge (for Y-axis) or right edge (for X-axis)
 - **0.5** represents the center point of the width or height
 
 The following table demonstrates port positioning with different offset values:
@@ -36,19 +36,9 @@ The following table demonstrates port positioning with different offset values:
 
 ## Horizontal and vertical alignment options
 
-The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/horizontalAlignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/verticalAlignment) properties provide fine-grained control over port positioning at the specified offset coordinates. These properties determine how the port aligns relative to its calculated position.
+The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/horizontalAlignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/verticalAlignment) properties provide fine-grained control over how a port aligns at its offset coordinates. These properties determine how the port aligns relative to its calculated position.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/ports/portspos-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/ports/portspos-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/ports/portspos-cs1" %}
+N> The alignment behavior shown at offset (0,0) applies consistently across all offset values. Offset (0,0) is used here for simplicity.
 
 The following table shows all possible alignment combinations when using offset (0, 0):
 
@@ -64,9 +54,21 @@ The following table shows all possible alignment combinations when using offset 
 | Center | Bottom | Port centers horizontally, extends up | ![Center Bottom aligned port](../images/port-in-centerbottom-position.png) |
 | Right | Bottom | Port extends left and up from corner | ![Right Bottom aligned port](../images/port-in-rightbottom-position.png) |
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/ports/portspos-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/ports/portspos-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/ports/portspos-cs1" %}
+
 ## Adding margin spacing to ports
 
-The [`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel) property applies additional spacing around ports using absolute pixel values. Margin creates blank space on any or all four sides of the port, allowing for precise positioning adjustments beyond the basic offset and alignment settings.
+The [`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel) property applies additional spacing around ports using absolute pixel values. The margin creates blank space on any or all four sides of the port, allowing for precise positioning adjustments beyond the basic offset and alignment settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,6 +84,8 @@ The [`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marg
 
 ## See also
 
-* [Port interaction capabilities](./ports-interaction)
-* [Customizing port appearance](./ports-appearance)
-* [Creating connector ports](./ports-connector-port)
+- [Port interaction capabilities](./ports-interaction)
+- [Customizing port appearance](./ports-appearance)
+- [Creating connector ports](./ports-connector-port)
+- [Nodes](../nodes)
+- [Connectors](../connectors/connector-interaction)

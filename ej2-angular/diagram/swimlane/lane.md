@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 A lane is a functional unit or responsible department of a business process that helps to map a process within the functional unit or between other functional units. In swimlane diagrams, lanes represent different actors, departments, or systems that participate in the process workflow.
 
-The number of [`lanes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel) can be added to a swimlane. The lanes are automatically stacked inside the swimlane based on the order they are added.
+Multiple [`lanes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel) can be added to a swimlane. Lanes are automatically stacked inside the swimlane in the order they are added.
 
 ### Prerequisites
 
@@ -62,7 +62,7 @@ The size of a lane can be controlled by using the [`width`](https://ej2.syncfusi
 
 The appearance of a lane can be customized by using the [`style`](https://ej2.syncfusion.com/angular/documentation/api/diagram/laneModel#style) properties.
 
-The appearance of the header annotation can be customized by using the `style` property of the header annotation.
+The appearance of the header annotation can be customized by using the [`style`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#style) property of the header annotation.
 
 The following code example illustrates how to customize the lane header.
 
@@ -98,6 +98,14 @@ Lane header style and text properties can be customized dynamically. The followi
 
 Lanes can be added at runtime by using the [`addLanes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#addlanes) method and removed at runtime using the [`removeLane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#removelane) method. The following code illustrates how to dynamically add and remove lanes in a swimlane.
 
+```
+// Add lanes at runtime
+this.diagram.addLanes(swimlaneNode, [lane], laneIndex);
+
+// Remove a lane at runtime
+this.diagram.removeLane(swimlaneNode, laneIndex);
+```
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/addlanes-cs1/src/app.component.ts %}
@@ -131,6 +139,10 @@ The following code example illustrates how to add nodes to a lane.
 #### Add child dynamically into the lane
 
 Child nodes can be inserted into a lane at runtime by using the [`addNodeToLane`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#addnodetolane) method.
+
+```
+this.diagram.addNodeToLane(swimlaneNode, laneIndex, node);
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -206,6 +218,10 @@ A helper should indicate the insertion point while lane swapping. The following 
 #### Disable swimlane lane swapping
 
 Swimlane lane swapping can be disabled by using the property called `canMove`.
+
+```
+lane.canMove = false;
+```
 
 The following code illustrates how to disable a swimlane lane swapping.
 

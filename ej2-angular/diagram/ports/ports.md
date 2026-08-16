@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ports in Angular Diagram | Syncfusion®
-description: Add fixed connection points (ports) to nodes in the Syncfusion® Angular Diagram so connectors dock at predictable locations even when nodes move, rotate, or resize.
+description: Add fixed connection points (ports) to nodes in the Angular Diagram so connectors dock at predictable locations even when nodes move, rotate, or resize.
 platform: ej2-angular
 control: Ports 
 documentation: ug
@@ -50,13 +50,17 @@ The following code demonstrates how to add ports during node initialization:
   
 {% previewsample "page.domainurl/samples/diagram/ports/port-cs1" %}
 
-N> When setting a port's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
+N> When setting a port's `id`, ensure that it does not contain spaces or special characters, including underscores, and does not start with a number.
 
 ## Add ports at runtime
 
 The [`addPorts`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addports) method enables dynamic port creation after the diagram has been initialized. This functionality is useful for interactive applications where users can customize node connection points or when ports need to be added based on business logic.
 
-The port's ID property defines a unique identifier that can be used to reference the port in subsequent operations. If no ID is specified, the system automatically generates a default ID.
+A port's `id` is a unique identifier used to reference the port in subsequent operations. If no ID is specified, the system automatically generates a default ID.
+
+```
+this.diagram.addPorts(node, [{ id: 'port2', offset: { x: 0.5, y: 1 } }]);
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,6 +77,10 @@ The port's ID property defines a unique identifier that can be used to reference
 ## Remove ports at runtime
 
 The [`removePorts`](https://ej2.syncfusion.com/angular/documentation/api/diagram#removeports) method allows dynamic removal of ports from nodes. When a port is removed, any connectors attached to that port are automatically disconnected. This method is particularly useful for creating adaptive interfaces or cleaning up unused connection points.
+
+```
+this.diagram.removePorts(node, ['port1']);
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,6 +100,11 @@ Port properties can be modified at runtime by directly updating the port object 
 
 The following code example illustrates how to change port properties dynamically:
 
+```
+node.ports[0].fill = 'red';
+this.diagram.dataBind();
+```
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/ports/node-cs1/src/app.component.ts %}
@@ -107,7 +120,7 @@ The following code example illustrates how to change port properties dynamically
 
 ## Specify connection direction to port
 
-The [`connectionDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#connectiondirection) property controls the allowed connection flow through a port. This property accepts values that specify whether connectors can connect to the port (incoming), from the port (outgoing), or both directions. This feature is essential for creating directional flowcharts and enforcing proper data flow in technical diagrams.
+The [`connectionDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#connectiondirection) property defines the allowed side of the port to which a connector can attach. The accepted values are `Auto`, `Left`, `Top`, `Right`, and `Bottom`. These values determine the side of the port through which connections are allowed. The default value is `Auto`. This feature is essential for creating directional flowcharts and enforcing proper data flow in technical diagrams.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -147,10 +160,16 @@ The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/poi
 
 The following code example shows how to attach additional information to a port:
 
-```typescript
+```
 public port: PointPortModel = {
     id: 'port1',
     offset: { x: 0.5, y: 0 },
     addInfo: { position: 'TopCenter', id: 'port1' }
 };
 ```
+
+## See also
+
+- [Nodes](../nodes)
+- [Connectors](../connectors/connector-interaction)
+- [Connector customization](../connectors/connector-customization)

@@ -1,7 +1,7 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramModule, DataBindingService, DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel,
-  DataSourceModel, DataBinding, HierarchicalTree, HierarchicalTreeService } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel,
+  DataSourceModel, DataBinding, HierarchicalTree } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 Diagram.Inject(DataBinding, HierarchicalTree);
@@ -9,7 +9,6 @@ Diagram.Inject(DataBinding, HierarchicalTree);
 @Component({
   imports: [DiagramModule],
 
-  providers: [HierarchicalTreeService, DataBindingService],
   standalone: true,
   selector: "app-container",
   template: `

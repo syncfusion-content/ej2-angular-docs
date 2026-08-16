@@ -34,7 +34,7 @@ Ensure the following software and packages are installed before proceeding:
 | Visual Studio | 17.0 or later | Development IDE |
 | .NET SDK | 8.0 or compatible | Runtime and build tools |
 | MySQL Server | 8.0.46 | Database server |
-| MySQL Workbench | Latest stable | GUI client for MySQL management |
+| MySQL Workbench | 8.0.47 | GUI client for MySQL management |
 | Node.js | v20.x or later | JavaScript runtime for Angular |
 | npm | Latest | Package manager for Angular dependencies |
 
@@ -51,22 +51,24 @@ MySQL Server provides the relational database engine used to store organizationa
 2. Run the installer and follow the setup wizard.
    - Choose setup type as **Server only**.
    ![MySQL Setup Type](images/mysql-setup-type.png)
-   - Next, Download and Install the MySQL Server 8.0.46.
+   - Next, download and install MySQL Server 8.0.46.
 3. Configure the MySQL Server after installation.
    - Choose server configuration type as **Development Computer**.
    ![MySQL Config Type](images/mysql-config-type.png)
-   - Choose Strong Password Encryption for Authentication and set your root account password.
+   - Choose **Use Strong Password Encryption (RECOMMENDED)** for Authentication and set your root account password.
    - Specify a Windows service name (e.g., **MySQL80**).
    ![MySQL Service Name](images/mysql-service-name.png)
    - Start applying the configuration by clicking the **Execute** button.
    ![MySQL Apply Config](images/mysql-apply-config.png)
 4. Click **Finish** to complete the installation.
 
+N> The MySQL installer automatically configures and starts the MySQL Server as a Windows service (e.g., **MySQL80**) during setup. To verify or start it manually, press **Win+R**, run `services.msc`, locate the **MySQL80** service, and ensure its status is **Running**.
+
 ### Installing MySQL Workbench
 
 MySQL Workbench is a graphical tool used to connect to MySQL Server, manage databases, execute SQL queries, and inspect data.
 
-1. Download MySQL Workbench Installer version 8.0.47 from [mysql-workbench](https://dev.mysql.com/downloads/workbench)
+1. Download MySQL Workbench Installer version 8.0.47 from the [MySQL Workbench downloads page](https://dev.mysql.com/downloads/workbench/)
 2. Run the installer and follow the setup wizard.
    - Choose the setup type as **Complete**.
    - Click **Finish** after installing MySQL Workbench.
@@ -85,7 +87,7 @@ After installing MySQL Workbench, create a connection to the MySQL Server instan
    - **Username**: **root**
    - **Password**: (your MySQL root password)
 4. Click **Test Connection** to verify the connection.
-5. Click OK to save the connection.
+5. Click **OK** to save the connection.
 
 The MySQL Server instance is now connected and ready for database creation.
 
@@ -104,7 +106,7 @@ Use MySQL Workbench to create the required database and table for storing organi
 3.  The **SQL Editor** opens. This editor is used to write and execute SQL statements for the selected connection.
 4.  Paste the following SQL script into the SQL Editor:
 
-```sql
+```
 -- Create database with UTF-8 support
 CREATE DATABASE IF NOT EXISTS diagramdb
   CHARACTER SET utf8mb4
@@ -157,7 +159,8 @@ The database can also be created using the MySQL Command Line Client.
 3.  Paste the same SQL script used in [MySQL Workbench](#creating-a-database-using-mysql-workbench) and press **Enter**.
 4.  Run the query **SELECT * FROM employees;** to verify the inserted data.
 
-**Expected output**:
+### Expected output
+
 | Id | Name | ParentId |
 | --- | --- | --- |
 | 1 | CEO | NULL |
@@ -194,7 +197,7 @@ This section explains how to create an ASP.NET Core Web API project that connect
 
 Visual Studio creates a new ASP.NET Core Web API project with default files such as **Program.cs**, **Controllers**, and **appsettings.json**.
 
-### Creating the Web API project using Visual Studio Code
+### Creating the Web API project using the .NET CLI
 
 Alternatively, the project can be created using the .NET CLI, which is commonly used with Visual Studio Code.
 
@@ -202,12 +205,12 @@ Alternatively, the project can be created using the .NET CLI, which is commonly 
 2. Navigate to the directory where the server application should be created.
 3. Run the following commands:
 
-```bash
+```
 dotnet new webapi -n Diagram_MySQL.Server
 cd Diagram_MySQL.Server
 ```
 
-### Installing NuGet packages using Package Manager Console
+### Installing NuGet packages
 
 The Web API requires additional NuGet packages for LINQ2DB, MySQL connectivity, and JSON serialization.
 
@@ -216,23 +219,11 @@ The Web API requires additional NuGet packages for LINQ2DB, MySQL connectivity, 
 1. In Visual Studio, go to **Tools → NuGet Package Manager → Package Manager Console**.
 2. Run the following commands sequentially:
 
-```bash
+```
 Install-Package linq2db -Version 6.1.0
-```
-
-```bash
 Install-Package linq2db.MySql -Version 6.1.0
-```
-
-```bash
 Install-Package linq2db.AspNet -Version 5.4.1.9
-```
-
-```bash
 Install-Package MySqlConnector -Version 2.5.0
-```
-
-```bash
 Install-Package Microsoft.AspNetCore.Mvc.NewtonsoftJson -Version 8.0.0
 ```
 
@@ -240,7 +231,7 @@ Install-Package Microsoft.AspNetCore.Mvc.NewtonsoftJson -Version 8.0.0
 
 Alternatively, the packages can be installed using the .NET CLI from the project directory.
 
-```powershell
+```
 dotnet add package linq2db --version 6.1.0
 dotnet add package linq2db.MySql --version 6.1.0
 dotnet add package linq2db.AspNet --version 5.4.1.9
@@ -257,7 +248,7 @@ A data model represents a database table as a C# class and maps table columns to
 2. Inside the **Models** folder, create a new file named **Employee.cs**.
 3. Define the `Employee` class with the following code:
 
-```csharp
+```
 using LinqToDB.Mapping;
 
 namespace Diagram_MySQL.Server.Models
@@ -287,7 +278,7 @@ The connection string defines how the application connects to the MySQL server.
 1. Open **appsettings.json**.
 2. Add or update the `ConnectionStrings` section with the MySQL connection details:
 
-```json
+```
 {
   "ConnectionStrings": {
     "MySqlConn": "Server=localhost;Port=3306;Database=diagramdb;User Id=root;Password=YOUR_PASSWORD_HERE;"
@@ -302,9 +293,13 @@ The connection string defines how the application connects to the MySQL server.
 }
 ```
 
+N> Storing plain-text passwords in `appsettings.json` is not recommended for production. For development, use [Secret Manager](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-10.0&tabs=windows%2Cpowershell) (User Secrets) or environment variables so credentials aren't committed to source control.
+
 ### Configuring the LINQ2DB data connection
 
 A data connection class is required for **LINQ2DB** to communicate with MySQL.
+
+N> `InlineParameters = true;` embeds parameter values directly into the generated SQL instead of using parameterized queries.
 
 **Instructions:**
 1. Create a new folder named **Data** in the **Diagram_MySQL.Server** project.
@@ -312,7 +307,7 @@ A data connection class is required for **LINQ2DB** to communicate with MySQL.
 3. Define the `AppDataConnection` class with the following code:
 
 
-```csharp
+```
 using Diagram_MySQL.Server.Models;
 using LinqToDB;
 using LinqToDB.Data;
@@ -342,11 +337,11 @@ namespace Diagram_MySQL.Server.Data
 The API controller retrieves employee records and exposes them as an HTTP endpoint.
 
 **Instructions:**
-1. Create a new folder named **Controllers** (if not exist) in the **Diagram_MySQL.Server** project.
+1. Create a new folder named **Controllers** (if it doesn't already exist) in the **Diagram_MySQL.Server** project.
 2. Inside the **Controllers** folder, create a new file named **DiagramController.cs**.
 3. Add the following code:
 
-```csharp
+```
 using Diagram_MySQL.Server.Data;
 using Diagram_MySQL.Server.Models;
 using LinqToDB;
@@ -381,7 +376,7 @@ The **Program.cs** file is where we configure all backend services and middle wa
 1. Open **Program.cs** in the project root.
 2. Add the following code.
 
-```csharp
+```
 using Diagram_MySQL.Server.Data;
 using LinqToDB;
 using LinqToDB.AspNet;
@@ -445,10 +440,10 @@ The following steps describe how to render the Diagram and connect it to the MyS
 
 Create the Angular client application using the following commands in a Visual Studio Code terminal or command prompt:
 
-```bash
+```
 npx @angular/cli@latest new diagram_mysql.client
 ```
-```bash
+```
 cd diagram_mysql.client
 ```
 This command scaffolds a new Angular application using Angular CLI.
@@ -457,14 +452,14 @@ This command scaffolds a new Angular application using Angular CLI.
 
 Install the required Syncfusion® packages by running the following commands:
 
-```bash
+```
 npm install @syncfusion/ej2-angular-diagrams --save
 ```
 
 After installation, the necessary CSS files are available in the **node_modules** directory.
 Add the required CSS references to the **src/styles.css** file to apply styling to the Diagram component.
 
-```css
+```
 @import "../node_modules/@syncfusion/ej2-angular-diagrams/styles/bootstrap5.3.css";
 @import "../node_modules/@syncfusion/ej2-base/styles/bootstrap5.3.css";
 @import "../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.3.css";
@@ -477,7 +472,7 @@ For this project, the "Bootstrap 5.3" theme is applied. Other themes can be sele
 
 Create a basic Diagram component in **src/app/app.ts**:
 
-```typescript
+```
 import { Component } from '@angular/core';
 import { DiagramModule } from '@syncfusion/ej2-angular-diagrams';
 
@@ -491,7 +486,7 @@ export class App {}
 
 **HTML template (src/app/app.html)**:
 
-```html
+```
 <ejs-diagram
   id="diagram"
   width="100%"
@@ -501,14 +496,21 @@ export class App {}
 
 ### Step 4: Configure remote data binding
 
-Remote data binding enables the diagram to fetch organizational chart data from the ASP.NET Core backend endpoint. The DataManager service handles communication with the server, while property mappings link database columns to diagram nodes.
+Replace the entire contents of **src/app/app.ts** with the following code.
 
-Add the data binding configuration to the component:
+- Fetches data from the backend via `DataManager`.
+- Maps the `id`/`parentId` columns to nodes via `dataSourceSettings`.
+- Uses an organizational chart `layout`.
+- Applies default node and connector styling through `getNodeDefaults` and `getConnectorDefaults`.
+- Injects the required diagram modules using `Diagram.Inject(DataBinding, HierarchicalTree)`.
 
-```typescript
+```
 import { Component, OnInit } from '@angular/core';
 import {
+  Diagram,
   DiagramModule,
+  DataBinding,
+  HierarchicalTree,
   LayoutModel,
   DataSourceModel,
   NodeModel,
@@ -517,6 +519,8 @@ import {
   SnapConstraints
 } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager } from '@syncfusion/ej2-data';
+
+Diagram.Inject(DataBinding, HierarchicalTree);
 
 export interface Employee { 
   id: number; 
@@ -527,92 +531,6 @@ export interface Employee {
 @Component({
   selector: 'app-root',
   imports: [DiagramModule],
-  templateUrl: './app.html',
-})
-export class App implements OnInit {
-  public layout: LayoutModel = {
-    type: 'OrganizationalChart',
-  };
-  public dataSourceSettings?: DataSourceModel;
-  public snapSettings: SnapSettingsModel = { constraints: SnapConstraints.None };
-
-  ngOnInit(): void {
-    // Create DataManager instance pointing to your backend API
-    const dataManager = new DataManager({
-      // Check your actual backend port from Properties/launchSettings.json in the ASP.NET project
-      url: 'http://localhost:5296/api/diagram/items',
-    });
-
-    // Configure data source mapping
-    this.dataSourceSettings = {
-      // Maps database column (Id) to uniquely identify each node
-      id: 'id',
-      // Maps database column (ParentId) to establish parent-child relationships
-      parentId: 'parentId',
-      // DataManager pointing to the API endpoint that returns employee data
-      dataSource: dataManager,
-      // Callback function that customizes node appearance with employee information
-      doBinding: (nodeModel: NodeModel, data: Employee) => {
-        nodeModel.annotations = [{
-          content: data.name,
-          style: { color: '#FFFFFF' }
-        }];
-      }
-    };
-  }
-}
-```
-
-### Step 5: Register required services
-
-Update the component decorator to include the required services:
-
-```typescript
-import {
-  DiagramModule,
-  DataBindingService,
-  HierarchicalTreeService,
-  // ...existing imports...
-} from '@syncfusion/ej2-angular-diagrams';
-
-@Component({
-  selector: 'app-root',
-  imports: [DiagramModule],
-  providers: [DataBindingService, HierarchicalTreeService],
-  templateUrl: './app.html',
-})
-// ...existing code...
-```
-
-### Complete code
-
-Here is the complete implementation for **src/app/app.ts**:
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import {
-  DiagramModule,
-  DataBindingService,
-  HierarchicalTreeService,
-  LayoutModel,
-  DataSourceModel,
-  NodeModel,
-  ConnectorModel,
-  SnapSettingsModel,
-  SnapConstraints
-} from '@syncfusion/ej2-angular-diagrams';
-import { DataManager } from '@syncfusion/ej2-data';
-
-export interface Employee { 
-  id: number; 
-  name: string; 
-  parentId?: number | null; 
-}
-
-@Component({
-  selector: 'app-root',
-  imports: [DiagramModule],
-  providers: [DataBindingService, HierarchicalTreeService],
   templateUrl: './app.html',
 })
 export class App implements OnInit {
@@ -669,7 +587,7 @@ export class App implements OnInit {
 
 **HTML template (src/app/app.html)**:
 
-```html
+```
 <ejs-diagram
   #diagram
   id="diagram"
@@ -682,19 +600,20 @@ export class App implements OnInit {
   [snapSettings]="snapSettings">
 </ejs-diagram>
 ```
+
 ## Running the complete application
 
 ### Starting the ASP.NET Core backend
 
 Open a terminal and navigate to the backend project:
 
-```bash
-cd Diagram_MySQL.Server 
+```
+cd Diagram_MySQL.Server
 ```
 
 Start the backend server:
 
-```bash
+```
 dotnet run
 ```
 
@@ -702,13 +621,13 @@ dotnet run
 
 Open a **new terminal** and navigate to the frontend project:
 
-```bash
+```
 cd diagram_mysql.client
 ```
 
 Start the Angular development server:
 
-```bash
+```
 ng serve
 ```
 
@@ -721,23 +640,25 @@ ng serve
 1. Verify services and processes
     - Verify the Windows service is running: press **Win+R**, run **services.msc**, and confirm **MySQL80** (or your service name) is running.
     - Ensure the ASP.NET backend is running. If not, run:
-      ```bash
+      ```
       dotnet run
       ```
 
 2. Verify backend binding and endpoint
    - Verify the MySQL connection string in **appsettings.json**: `Server`, `Port`, `Database`, `User Id`, and `Password` must match your MySQL setup.
    - Check the backend ports in **Properties/launchSettings.json** (look for `applicationUrl`):
-     ```json
+     ```
      "applicationUrl": "https://localhost:7092;http://localhost:5296"
      ```
      Use the HTTP port to test the endpoint in browser: **http://localhost:5296/api/diagram/items**
 
      Expected JSON response:
-     ```json
+     ```
      [
        {"id":1,"name":"CEO","parentId":null},
-       {"id":2,"name":"VP Engineering","parentId":1}
+       {"id":2,"name":"VP Engineering","parentId":1},
+       {"id":3,"name":"VP Sales","parentId":1},
+       // ...remaining employee records
      ]
      ```
      The API must return a JSON array of objects containing the `id`, `parentId`, and `name` fields (match casing used in `dataSourceSettings`).
@@ -748,7 +669,7 @@ ng serve
 
 ### Application shows the diagram twice
   - Stop the Angular client dev server (press **Ctrl+C** in the terminal where it's running) and then restart it:
-    ```bash
+    ```
     ng serve
     ```
 

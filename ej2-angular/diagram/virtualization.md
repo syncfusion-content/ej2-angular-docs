@@ -14,7 +14,7 @@ Virtualization is a performance optimization technique that significantly improv
 
 ## Understanding Virtualization in Diagram
 
-Virtualization enhances diagram performance by implementing on-demand loading of diagramming objects. Only the nodes and connectors currently visible within the diagram's viewport are rendered and processed, while objects outside the visible area remain unloaded until they enter the view during scrolling or panning operations.
+Virtualization enhances diagram performance by implementing on-demand loading of diagramming objects. Only the nodes and connectors currently visible within the diagram's viewport are rendered, while objects outside the visible area are excluded from rendering until they enter the view during scrolling or panning operations.
 
 This selective rendering approach provides substantial performance benefits:
 
@@ -34,9 +34,7 @@ Virtualization is recommended for diagrams that meet any of these criteria:
 
 ## Enabling Virtualization
 
-To activate virtualization, include the `Virtualization` constraint in the diagram's constraints property. The virtualization feature works in conjunction with the diagram's scrolling capabilities to manage object loading dynamically.
-
-To enable virtualization in a diagram, you need to include the virtualization constraint in the diagram's constraints. For more information, refer to the  [`diagram constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints#diagramconstraints).
+To activate virtualization, include the `Virtualization` constraint in the diagram's constraints property. The virtualization feature works in conjunction with the diagram's scrolling capabilities to manage object loading dynamically. For more information, refer to the [`diagram constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramconstraints).
 
 The following code example demonstrates how to enable Virtualization mode in the diagram:
 

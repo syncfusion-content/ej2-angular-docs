@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Microsoft SQL Server in Angular Diagram
 
-This guide explains how to load and visualize organizational chart data stored in a Microsoft SQL Server database using the Syncfusion® Angular Diagram component. It demonstrates how to configure SQL Server, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to a Angular application to render an organizational chart diagram.
+This guide explains how to load and visualize organizational chart data stored in a Microsoft SQL Server database using the Syncfusion® Angular Diagram component. It demonstrates how to configure SQL Server, create the required database schema, expose the data through an ASP.NET Core Web API, and bind the API response to an Angular application to render an organizational chart diagram.
 
 **What is Microsoft SqlClient?**
 
@@ -42,7 +42,7 @@ Ensure the following software and packages are installed before proceeding:
 
 ## Installing and configuring Microsoft SQL Server and SQL Server Management Studio (SSMS)
 
-To store and manage diagram data, Microsoft SQL Server must be installed and configured before integrating it with the ASP.NET Core Web API. This section explains how to install SQL Server, install SQL Server Management Studio (SSMS), and preparing the environment for database creation. This setup is a one‑time process and only needs to be completed before configuring the backend API.
+To store and manage diagram data, Microsoft SQL Server must be installed and configured before integrating it with the ASP.NET Core Web API. This section explains how to install SQL Server, install SQL Server Management Studio (SSMS), and prepare the environment for database creation. This setup is a one‑time process and only needs to be completed before configuring the backend API.
 
 ### Installing Microsoft SQL Server
 
@@ -50,7 +50,7 @@ Microsoft SQL Server provides the relational database engine used to store organ
 
 Follow these steps to install SQL Server:
 
-1. Download the Microsoft SQL Server installer for the required edition from the official page: [https://www.microsoft.com/en-in/sql-server/sql-server-downloads] (https://www.microsoft.com/en-in/sql-server/sql-server-downloads). For this guide, **SQL Server Express** is selected. It is a free, lightweight edition suitable for development, testing, and sample applications.
+1. Download the Microsoft SQL Server installer for the required edition from [the official SQL Server downloads page](https://www.microsoft.com/en-in/sql-server/sql-server-downloads). For this guide, **SQL Server Express** is selected. It is a free, lightweight edition suitable for development, testing, and sample applications.
 
 2. Open the downloaded installer file to launch the setup wizard.
 
@@ -310,7 +310,7 @@ A data model defines how data stored in a database table is represented within t
 
 In this application, the data model maps directly to the **LayoutNode** table created in SQL Server.
 
-> This model does not create or modify database tables. It only represents the existing SQL Server schema within the application.
+N> This model does not create or modify database tables. It only represents the existing SQL Server schema within the application.
 
 **Instructions:**
 
@@ -625,8 +625,9 @@ The Angular Diagram component can be added to the (**src/app/app.component.ts**)
 ```ts
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, DataSourceModel, DiagramModule,
-  HierarchicalTreeService, DataBindingService, DataBinding, HierarchicalTree, SnapSettingsModel, SnapConstraints } from '@syncfusion/ej2-angular-diagrams';
+  DataBinding, HierarchicalTree, SnapSettingsModel, SnapConstraints } from '@syncfusion/ej2-angular-diagrams';
 
+// Injects the DataBinding and HierarchicalTree modules into the Diagram
 Diagram.Inject(DataBinding, HierarchicalTree);
 
 @Component({
@@ -634,8 +635,6 @@ Diagram.Inject(DataBinding, HierarchicalTree);
   standalone: true,
   imports: [DiagramModule],
   templateUrl: "app.component.html",
-  styleUrls: ["app.component.css"],
-  providers: [HierarchicalTreeService, DataBindingService],
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
@@ -662,8 +661,7 @@ In this step, data is retrieved from the ASP.NET Core Web API and assigned to th
 ```ts
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, DataSourceModel, DiagramModule,
-  HierarchicalTreeService, DataBindingService, DataBinding, HierarchicalTree, SnapSettingsModel, SnapConstraints } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, DataSourceModel, DiagramModule, DataBinding, HierarchicalTree, SnapSettingsModel, SnapConstraints } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 Diagram.Inject(DataBinding, HierarchicalTree);
@@ -749,8 +747,7 @@ The following snippet shows the complete Angular Diagram configuration with data
 ```ts
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, DataSourceModel, DiagramModule,
-  HierarchicalTreeService, DataBindingService, DataBinding, HierarchicalTree, SnapSettingsModel, SnapConstraints } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, DataSourceModel, DiagramModule, DataBinding, HierarchicalTree, SnapSettingsModel, SnapConstraints } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 Diagram.Inject(DataBinding, HierarchicalTree);
@@ -762,8 +759,6 @@ const BASE_URL = "/api/layoutnodes";
   standalone: true,
   imports: [DiagramModule],
   templateUrl: "app.component.html",
-  styleUrls: ["app.component.css"],
-  providers: [HierarchicalTreeService, DataBindingService],
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
@@ -861,8 +856,8 @@ A complete, working sample implementation is available in the [GitHub repository
 
 | Step | Description | Reference |
 |-----:|-------------|-----------|
-| 1 | Install and configure Microsoft SQL Server and SQL Server Management Studio | [View](#installing-and-configuring-microsoft-sql-server-and-ssms) |
-| 2 | Create the database, schema, and insert hierarchical diagram data | [View](#creating-the-database-and-schema-for-diagram-data) |
+| 1 | Install and configure Microsoft SQL Server and SQL Server Management Studio | [View](#installing-and-configuring-microsoft-sql-server-and-sql-server-management-studio-ssms) |
+| 2 | Create the database, schema, and insert hierarchical diagram data | [View](#creating-the-database-and-schema) |
 | 3 | Create and configure the ASP.NET Core Web API backend | [View](#integrating-sql-server-with-aspnet-core-web-api) |
 | 4 | Integrate and configure the Syncfusion® Angular Diagram component | [View](#integrating-syncfusion-angular-diagram) |
 | 5 | Run and test the complete application | [View](#running-the-application) |

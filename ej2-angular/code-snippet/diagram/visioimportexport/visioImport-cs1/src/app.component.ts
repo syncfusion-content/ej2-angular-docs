@@ -52,7 +52,7 @@ export class AppComponent {
         let rawFile = file.rawFile;
         const warnings = await this.diagram.importFromVisio(rawFile, { pageIndex: 0 });
         if (warnings.length) {
-            for (var i = 0; i < warnings.length - 1; i++) {
+            for (var i = 0; i < warnings.length; i++) {
                 console.warn(warnings[i]);
             }
         }

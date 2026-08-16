@@ -97,7 +97,7 @@ The following code demonstrates how to set initial layout margin and modify marg
 
 ## Layout orientation
 
-The layout orientation determines the primary direction in which the layout flows. Different orientations are suitable for various organizational structures and display requirements.
+The layout [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#orientation) determines the primary direction in which the layout flows. Different orientations are suitable for various organizational structures and display requirements.
 
 |Orientation|Description|
 | -------- | ----------- |
@@ -106,7 +106,7 @@ The layout orientation determines the primary direction in which the layout flow
 |BottomToTop|Aligns the layout from bottom to top. All root nodes are placed at the bottom of the diagram.|
 |RightToLeft|Aligns the layout from right to left. All root nodes are placed at the right of the diagram.|
 
-The [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout#orientation) property can be customized to match specific design requirements or cultural reading patterns.
+The [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutorientation) property can be customized to match specific design requirements or cultural reading patterns.
 
 N> The default orientation in diagram is `TopToBottom`.
 
@@ -128,7 +128,7 @@ The following code demonstrates how to set the initial orientation for the layou
 
 In certain scenarios, specific nodes may need manual positioning rather than automatic arrangement by the layout algorithm. These nodes can be excluded from layout calculations by setting the [`excludeFromLayout`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel#excludefromlayout) property to true.
 
-This feature is useful for annotation nodes, floating panels, or special elements that require fixed positioning regardless of the overall layout structure.
+This feature is useful for annotation nodes, floating nodes, or special elements that require fixed positioning regardless of the overall layout structure.
 
 The following code example demonstrates how to exclude a node from the layout and position it manually:
 
@@ -164,7 +164,7 @@ This feature is particularly beneficial during expand/collapse operations, where
 
 ## Expand and collapse
 
-The diagram supports expanding and collapsing subtrees within layouts. The node's isExpanded property controls the visibility of child nodes, allowing users to focus on specific portions of large hierarchical structures.
+The diagram supports expanding and collapsing subtrees within layouts. The node's [`isExpanded`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel#isexpanded) property controls the visibility of child nodes, allowing users to focus on specific portions of large hierarchical structures.
 
 This functionality is essential for managing complex organizational charts, decision trees, and other hierarchical data where progressive disclosure improves usability.
 
@@ -182,13 +182,15 @@ The following code example shows how to expand/collapse the children of a node:
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/layout-expandandcollapse-cs1" %}
 
-For more details about customizing the expand and collapse icons refer [`expand Collapse`](../nodes/nodes-expandAndCollapse)
+For more details about customizing the expand and collapse icons, refer to [`Nodes Expand and Collapse`](../nodes/nodes-expandAndCollapse)
 
 ## Layout animation
 
 Expand and collapse operations can be animated by applying transitions during layout changes. The [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layoutModel#enableanimation) property controls this behavior, enhancing the visual experience during structural changes.
 
-Animation provides visual continuity and helps users track changes in the layout structure. By default, `enableAnimation` is set to true.
+Animation provides visual continuity and helps users track changes in the layout structure. The default value of `enableAnimation` is `true`; however, animation only takes effect when the `LayoutAnimation` module is injected into the diagram.
+
+N> To enable layout animation, inject the `LayoutAnimation` module into the diagram.
 
 The following example demonstrates how layout animation enhances the visual experience during expand and collapse operations:
 
@@ -204,13 +206,11 @@ The following example demonstrates how layout animation enhances the visual expe
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/layout-animation-cs1" %}
 
-N> To enable layout animation, inject the LayoutAnimation module in the diagram.
-
-## Parent - child relation with dropped nodes from symbol palette
+## Parent–child relation with dropped nodes from symbol palette
 
 Layouts can be dynamically extended by creating parent-child relationships between existing nodes and items dropped from the symbol palette. The [`drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram#drop) event provides the mechanism to establish these connections programmatically.
 
-This functionality enables interactive diagram building, where users can expand existing structures by dragging and dropping new elements from a predefined set of symbols.
+This functionality enables interactive diagram building, where users can expand existing structures by dragging and dropping new elements from a predefined set of symbols. For details on configuring a symbol palette from which nodes can be dragged, refer to [`Symbol Palette`](../symbol-palette/symbol-palette).
 
 The following code example creates parent-child relationships between source and target nodes in the drop event:
 
@@ -228,9 +228,9 @@ The following code example creates parent-child relationships between source and
 
 ![Layout drag and drop](../images/drag-drop-layout.gif)
 
-## setNodeTemplate
+## Set node template
 
-The [`setNodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram#setnodetemplate) function enables comprehensive customization of node visual representation and behavior within diagrams. This function is invoked during node initialization, allowing developers to define styling, properties, and data binding for each node.
+The [`setNodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram#setnodetemplate) function enables comprehensive customization of node visual representation and behavior within diagrams. This function is invoked during node initialization, allowing developers to define styling, properties, and data binding for each node. By customizing the node template, you can control how each node that is rendered by the layout appears, ensuring the visual representation aligns with the structure produced by the automatic layout.
 
 The function typically accepts container elements such as StackPanel or Grid to organize visual components within nodes. The [`StackPanel`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel) can contain various elements including [`ImageElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imageElement), [`PathElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathElement), [`NativeElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramNativeElement), [`DiagramElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramElement), and [`HtmlElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramHtmlElement).
 
@@ -254,7 +254,12 @@ The diagram supports refreshing layouts at runtime to reflect structural or data
 
 This functionality is essential when nodes are added, removed, or modified programmatically, ensuring the layout remains consistent with the updated structure.
 
-```typescript
+Obtain the diagram instance using the `@ViewChild` decorator, then call `doLayout()` to refresh the layout.
+
+```
+@ViewChild("diagram")
+public diagram!: DiagramComponent;
+
 //To refresh layout
 this.diagram.doLayout();
 ```

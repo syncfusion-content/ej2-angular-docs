@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swimlane in Angular Diagram | Syncfusion®
-description: Model cross-functional business processes in the Syncfusion® Angular Diagram using swimlanes with horizontal or vertical orientation, headers, and stacked lanes.
+description: Model cross-functional business processes in the Angular Diagram using swimlanes with horizontal or vertical orientation, headers, and stacked lanes.
 platform: ej2-angular
 control: Swim lane 
 documentation: ug
@@ -32,18 +32,24 @@ The following code example demonstrates how to define a basic swimlane object:
   
 {% previewsample "page.domainurl/samples/diagram/swimlane/swimlaneheader-cs1" %}
 
-N> When setting a swimlane's ID, ensure it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
-
+N> When setting a swimlane's `id`, ensure that it does not contain spaces or special characters, including underscores, and does not start with a number.
 
 ## Orientation
 
-Swimlanes support two orientation modes to accommodate different layout requirements and design preferences.
+Swimlanes support two orientation modes, configured via the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/swimLaneModel#orientation) property, to accommodate different layout requirements and design preferences.
 
-### Horizontal orientation (default)
-Lanes are arranged from top to bottom, with the header positioned on the left side. This orientation works well for processes that flow from left to right.
+### Horizontal orientation
+
+Lanes are arranged from top to bottom, with the header positioned on the left side. This is the default orientation and works well for processes that flow from left to right.
 
 ### Vertical orientation
 Lanes are arranged from left to right, with the header positioned at the top. This orientation suits processes that flow from top to bottom.
+
+The following code example demonstrates how to set the swimlane orientation:
+
+```
+orientation: 'Vertical'
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -59,7 +65,7 @@ Lanes are arranged from left to right, with the header positioned at the top. Th
 
 ## Headers
 
-The header serves as the primary identifying element of a swimlane, providing a title or description for the entire swimlane container. The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel) property allows customization of both content and appearance. Headers also serve as the primary interaction point for swimlane operations such as selection and dragging.
+The header serves as the primary identifying element of a swimlane, providing a title or description for the entire swimlane container. The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel) property allows customization of both content and appearance. The header is also the primary interaction point for selecting and dragging the swimlane.
 
 The following code example shows how to define and configure a swimlane header:
 
@@ -97,6 +103,11 @@ The following code example demonstrates comprehensive header customization:
 
 Headers can be modified programmatically during runtime to respond to user interactions or changing business requirements. This capability enables dynamic updating of swimlane titles, styling, and other properties based on application state or user input.
 
+```
+this.diagram.nodes[0].shape.header.style.fill = 'blue';
+this.diagram.dataBind();
+```
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/dynamicheader-cs1/src/app.component.ts %}
@@ -119,3 +130,9 @@ The diagram supports in-place editing of swimlane headers through user interacti
 ## Limitations
 
 * Connectors cannot be added directly to swimlane.
+
+## See also
+
+- [Nodes](../nodes)
+- [Connectors](../connectors/connector-interaction)
+- [Group](../group)

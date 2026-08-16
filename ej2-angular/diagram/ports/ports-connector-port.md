@@ -14,7 +14,7 @@ Connector ports serve as connection points along connectors, enabling other conn
 
 ## Create connector port
 
-Connector ports serve as connection points along connectors, enabling other connectors to attach at specific locations rather than just the endpoints. Creating connector ports follows the same pattern as node ports - define a port collection and assign it to the connector's [`ports`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#ports) property.
+Creating connector ports follows the same pattern as node ports: define a port collection and assign it to the connector's [`ports`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#ports) property.
 
 The following code example demonstrates how to create connector ports:
 
@@ -35,8 +35,12 @@ The following code example demonstrates how to create connector ports:
 Control the position of ports along the connector using the [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portAlignment) property. This property determines where the port appears relative to the connector's path:
 
 - **Before**: Positions the port at the source end of the connector
-- **After**: Positions the port at the target end of the connector  
+- **After**: Positions the port at the target end of the connector
 - **Center**: Positions the port at the midpoint of the connector (default)
+
+```
+ports: [{ id: 'port1', alignment: 'After' }]
+```
 
 The following code example shows how to set different alignment values for connector ports:
 
@@ -55,6 +59,10 @@ The following code example shows how to set different alignment values for conne
 ## Port displacement
 
 Fine-tune port positioning using the [`displacement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/point) property, which applies offset values to move ports from their aligned position. Displacement works by shifting the port by specified x and y coordinates relative to the alignment point.
+
+```
+ports: [{ id: 'port1', alignment: 'Before', displacement: { x: 10, y: 5 } }]
+```
 
 The following code example demonstrates how to apply displacement to connector ports:
 
@@ -92,8 +100,8 @@ The following code example shows how to connect a connector to a connector port:
 
 ## See also
 
-* [How to customize port appearance](./ports-appearance)
-
-* [How to position ports on nodes](./ports-positioning)
-
-* [How to enable port interactions](./ports-interaction)
+- [How to customize port appearance](./ports-appearance)
+- [How to position ports on nodes](./ports-positioning)
+- [How to enable port interactions](./ports-interaction)
+- [Nodes](../nodes)
+- [Connectors](../connectors/connector-interaction)
