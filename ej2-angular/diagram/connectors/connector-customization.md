@@ -42,7 +42,7 @@ The following code example illustrates how to create decorators of various shape
 
 The visual appearance of decorators can be customized using stroke and fill properties to match design requirements or highlight specific connector types.
 
-o customize the border of a decorator, use the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray) properties on the `sourceDecorator` and `targetDecorator` objects. Similarly, use the `width` and `height` properties to control the size of each decorator.
+To customize the border of a decorator, use the [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray) properties on the `sourceDecorator` and `targetDecorator` objects. Similarly, use the `width` and `height` properties to control the size of each decorator.
 
 The following code example illustrates how to customize the appearance of the decorator.
 
@@ -60,11 +60,11 @@ The following code example illustrates how to customize the appearance of the de
 
 ### Gradient styling for decorators
 
-The gradient property applies smooth color transitions to decorators, providing enhanced visual appeal for complex diagrams or when highlighting important connections.
+The [`gradient`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapestylemodel#gradient) property applies smooth color transitions to decorators, providing enhanced visual appeal for complex diagrams or when highlighting important connections.
 
 The gradient property supports two types of gradients:
- * Linear - Creates a straight-line color transition
- * Radial - Creates a circular color transition from center outward
+* Linear - Creates a straight-line color transition
+* Radial - Creates a circular color transition from center outward
 
 The following code example illustrates how to apply gradient effects to decorators.
 
@@ -108,9 +108,9 @@ The following code example illustrates how to leave space between the connection
 
 ### Line bridging for intersection handling
 
-Line bridging creates visual bridges where connectors intersect, helping users distinguish between different connection paths in complex diagrams. By default, [`bridgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bridgeDirection) is set to top, with the bridge appearing based on the specified direction.
+Line bridging creates visual bridges where connectors intersect, helping users distinguish between different connection paths in complex diagrams. By default, [`bridgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bridgeDirection) is set to **Top**, with the bridge appearing based on the specified direction.
 
-Bridging can be enabled or disabled using either `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
+Bridging can be enabled or disabled using either `connector.constraints` or `diagram.constraints`. To enable bridging, set the `ConnectorConstraints.Bridging` constraint on the connector, or the `DiagramConstraints.Bridging` constraint on the diagram. The following code example illustrates how to enable line bridging.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,9 +168,9 @@ Corner radius creates connectors with rounded corners instead of sharp angles, p
 
 * The connector’s [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray), and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#opacity) properties are used to customize the appearance of the connector segments.
 
-* The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#visible) property of the connector enables or disables the visibility of connector.
+* The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#visible) property of the connector enables or disables the visibility of the connector.
 
-* Default values for all the `connectors` can be set using the `getConnectorDefaults` properties. For example, if all connectors have the same type or having the same property then such properties can be moved into `getConnectorDefaults`.
+* Default values for all the `connectors` can be set using the `getConnectorDefaults` property. For example, if all connectors have the same type or having the same property then such properties can be moved into `getConnectorDefaults`.
 
 ### Segment appearance
 
@@ -195,7 +195,7 @@ The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram
 
 To enable or disable constraints, refer to [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints#connectorconstraints).
 
-The following code illustrates how to disable selection for a connector.
+The following code example illustrates how to disable selection for a connector.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -215,9 +215,15 @@ The following code illustrates how to disable selection for a connector.
 
 The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#addinfo) property of connectors allows maintaining additional information or metadata associated with connectors for application-specific requirements.
 
+In the component, define the `addInfo` object:
+
+```
+public addInfo: object = { type: 'connector', id: 'connector1' };
+```
+
 ```html
 <e-connectors>
-    <e-connector id='connector1' type='Straight' addInfo='centralconnector' [sourcePoint]='sourcePoint1' [targetPoint]='targetPoint1' [constraints]='constraints'></e-connector>
+    <e-connector id='connector1' type='Straight' [addInfo]='addInfo' [sourcePoint]='sourcePoint1' [targetPoint]='targetPoint1' [constraints]='constraints'></e-connector>
 </e-connectors>
 ```
 
@@ -225,7 +231,7 @@ The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/con
 
 The [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#zindex) property specifies the stack order of connectors. A connector with a greater stack order appears in front of connectors with lower stack orders, enabling precise control over visual layering.
 
-The following code illustrates how to render connector based on the stack order.
+The following code example illustrates how to render connectors based on the stack order.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -290,13 +296,14 @@ The [`resetSegments`](https://ej2.syncfusion.com/angular/documentation/api/diagr
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorresetseg-cs1" %}
+
 ## Dynamic connector manipulation
 
 ### Enable connector splitting
 
 Connector splitting allows creating new connections when a node is dropped onto an existing connector. The connector splits at the drop point, creating connections between the new node and the existing connected nodes. Enable this feature by setting [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram#enableconnectorsplit) to true. The default value is false.
 
-The following code illustrates how to enable connector splitting functionality.
+The following code example illustrates how to enable connector splitting functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -314,7 +321,7 @@ The following code illustrates how to enable connector splitting functionality.
 
 ### Preserve Connector Styling when Splitting
 
-When splitting a connector using [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram#enableconnectorsplit), the newly created connector appears as a default connector without inheriting the original connector's styling. To maintain consistent styling, use the collectionChange event to apply the original connector's properties to the new connector.
+When splitting a connector using [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram#enableconnectorsplit), the newly created connector appears as a default connector without inheriting the original connector's styling. To maintain consistent styling, use the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#collectionchange) event to apply the original connector's properties to the new connector.
 
 The following example demonstrates how to preserve the original connector's styling for newly created connectors during splitting:
 

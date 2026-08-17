@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Server-side Pivot Engine in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table uses the Syncfusion.Pivot.Engine assembly to offload aggregation, filtering, and sorting to a server.
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Server-side Pivot Engine in Angular Pivot Table
 
-This section explains how to use the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.Pivot.Engine`](https://www.nuget.org/packages/Syncfusion.Pivot.Engine/) in a server-side application. The server-side engine performs operations such as aggregation, filtering, sorting, and grouping on the server. Only the information required for the Pivot Table viewport is sent to the client through a web service (Web API), instead of transferring the entire data source. This approach helps reduce network traffic and improves Pivot Table rendering performance when working with large data sets. It works efficiently with the virtual scrolling option and supports all existing features in the Pivot Table.
+This section explains how to use the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.Pivot.Engine`](https://www.nuget.org/packages/Syncfusion.Pivot.Engine) in a server-side application. The server-side engine performs operations such as aggregation, filtering, sorting, and grouping on the server. Only the information required for the Pivot Table viewport is sent to the client through a web service (Web API), instead of transferring the entire data source. This approach helps reduce network traffic and improves Pivot Table rendering performance when working with large data sets. It works efficiently with the virtual scrolling option and supports all existing features in the Pivot Table.
 
 ## Quick steps to render the Pivot Table by using the server-side Pivot Engine
 
@@ -25,9 +25,9 @@ This section explains how to use the Syncfusion<sup style="font-size:70%">&reg;<
    - **DataSource.cs** in the **DataSource** folder: Defines the structure of the data sources using model classes.
    - Sample data source files, **sales.csv** and **sales-analysis.json**, in the **DataSource** folder: Provide example data for testing the Pivot Table.
 
-3. Open the **PivotController** application in Visual Studio. The Syncfusion [Syncfusion.Pivot.Engine](https://www.nuget.org/packages/Syncfusion.Pivot.Engine/) library will automatically download from nuget.org, enabling server-side calculations such as aggregation, filtering, and sorting for the Pivot Table.
+3. Open the **PivotController** application in Visual Studio. The Syncfusion [Syncfusion.Pivot.Engine](https://www.nuget.org/packages/Syncfusion.Pivot.Engine) library will automatically download from nuget.org, enabling server-side calculations such as aggregation, filtering, and sorting for the Pivot Table.
 
-![Solution Explorer](./images/solution-explorer.png)
+![Solution Explorer](../images/solution-explorer.png)
 
 ### Connecting Pivot Table to Server-side Pivot Engine
 
@@ -102,7 +102,7 @@ export class AppComponent implements OnInit {
 4. **Run the Angular application**  
 Launch your Angular application to view the Pivot Table. The Pivot Table will connect to the server-side Pivot Engine, retrieve the processed data, and display the results based on the configured report.
 
-![Pivot Table demo using server-side pivot engine](./images/server-side-demo.png)
+![Pivot Table demo using server-side pivot engine](../images/server-side-demo.png)
 
 ## Available configurations in Server-side application
 
@@ -194,7 +194,7 @@ this.dataSourceSettings = {
 };
 ```
 
-![Server-Side Pivot Engine using collection](./images/server-side-with-collection-data.png)
+![Server-Side Pivot Engine using collection](../images/server-side-with-collection-data.png)
 
 #### JSON
 
@@ -269,7 +269,7 @@ this.dataSourceSettings = {
 }
 ```
 
-![Server-Side Pivot Engine with JSON data](./images/server-side-with-json-data.png)
+![Server-Side Pivot Engine with JSON data](../images/server-side-with-json-data.png)
 
 You can also use JSON data from a remote server in the same way as a local JSON file. Both directly downloadable *.json files and web service URLs are supported. To do this, specify the URL of the remote *.json file in the **GetData** method. The remaining configurations stay the same.
 
@@ -385,7 +385,7 @@ this.dataSourceSettings = {
 }
 ```
 
-![Server-Side Pivot Engine using CSV data](./images/server-side-with-csv-data.png)
+![Server-Side Pivot Engine using CSV data](../images/server-side-with-csv-data.png)
 
 You can also use CSV data from a remote server, such as a downloadable file or a web service URL. To do this, provide the CSV file URL in the **GetData** method. The process for setting up the Pivot Table remains the same as described above.
 
@@ -484,7 +484,7 @@ this.dataSourceSettings = {
 
 This configuration connects the Pivot Table to the server-side `DataTable`, enabling efficient data rendering with reduced network traffic.
 
-![Server-Side Pivot Engine using DataTable](./images/server-side-with-data-table.png)
+![Server-Side Pivot Engine using DataTable](../images/server-side-with-data-table.png)
 
 #### Dynamic
 
@@ -558,7 +558,7 @@ this.dataSourceSettings = {
 }
 ```
 
-![Server-Side Pivot Engine using ExpandoObject](./images/server-side-with-expandoobject.png)
+![Server-Side Pivot Engine using ExpandoObject](../images/server-side-with-expandoobject.png)
 
 ##### Dynamic Objects
 
@@ -647,7 +647,7 @@ this.dataSourceSettings = {
 }
 ```
 
-![Server-Side Pivot Engine using Dynamic Objects](./images/server-side-with-dynamic-object.png)
+![Server-Side Pivot Engine using Dynamic Objects](../images/server-side-with-dynamic-object.png)
 
 ### Controller Configuration
 
@@ -794,7 +794,7 @@ Then, based on the **Action** parameter (**onExcelExport** or **onCsvExport**), 
 
 ```
 
-![Server-side engine excel exporting](./images/excel-export-with-server-side-pivot-engine.png)
+![Server-side engine excel exporting](../images/excel-export-with-server-side-pivot-engine.png)
 
 ### Add header and footer while exporting
 
@@ -870,7 +870,7 @@ export class AppComponent implements OnInit {
 
 ```
 
-![Add header and footer while exporting](./images/add-header-and-footer-while-exporting.png)
+![Add header and footer while exporting](../images/add-header-and-footer-while-exporting.png)
 
 ## CSV Export
 
@@ -979,7 +979,7 @@ Then, based on the **Action** parameter (**onExcelExport** or **onCsvExport**), 
 
 ```
 
-![CSV Export](./images/csv-export-with-server-side-pivot-engine.png)
+![CSV Export](../images/csv-export-with-server-side-pivot-engine.png)
 
 ## Export as Pivot
 
@@ -1089,7 +1089,7 @@ Then, based on the **Action** parameter (**onPivotExcelExport** or **onPivotCsvE
 
 ```
 
-![Export as Pivot](./images/export-as-pivot.png)
+![Export as Pivot](../images/export-as-pivot.png)
 
 ## Secure server requests with beforeServiceInvoke
 

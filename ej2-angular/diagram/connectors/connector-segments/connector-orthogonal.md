@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connector Orthogonal Segments in Angular Diagram | Syncfusion
-description: Build right-angled orthogonal connectors in the Syncfusion® Angular Diagram for structured flowcharts, with draggable segment thumbs and line-routing to avoid overlaps.
+description: Create orthogonal connectors in the Angular Diagram with perpendicular segments and editable length and direction for structured flowcharts.
 platform: ej2-angular
 control: Orthogonal 
 documentation: ug
@@ -12,9 +12,7 @@ domainurl: ##DomainURL##
 
 Orthogonal connectors use segments that are always perpendicular to each other, which is ideal for creating structured layouts in flowcharts or organizational charts.
 
-To create an orthogonal connector, set the connector's [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#type) property to `Orthogonal`. The following code example illustrates how to create a default orthogonal connector.
-
-For more fine-grained control, you can define individual segments within the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#segments) collection. The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment#length) property specifies the length of a segment, while the [`direction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment#direction) property determines its orientation (e.g., 'Right', 'Bottom'). The following code example shows how to create a connector with customized orthogonal segments.
+To create an orthogonal connector, set the connector's [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#type) property to **Orthogonal**. For more fine-grained control, you can define individual segments within the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#segments) collection. The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment#length) property specifies the length of a segment, while the [`direction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment#direction) property determines its orientation (e.g., 'Right', 'Bottom'). The following code example illustrates how to create an orthogonal connector with customized segments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,7 +23,7 @@ For more fine-grained control, you can define individual segments within the [`s
 {% include code-snippet/diagram/connectors/connectorsortho-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsortho-cs1" %}
 
 N> When defining custom segments for an orthogonal connector, ensure that each segment's `type` is also set to `Orthogonal`.
@@ -43,7 +41,7 @@ The interactive thumbs on an orthogonal connector allow you to adjust the length
 {% include code-snippet/diagram/connectors/connectorsorthosegments-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsorthosegments-cs1" %}
 
 ![An animation showing how to edit orthogonal connector segments in the Angular Diagram Component.](./../../images/orthoSegEdit.gif)
@@ -61,7 +59,7 @@ Orthogonal segments automatically reroute themselves to avoid overlapping with t
 {% include code-snippet/diagram/connectors/connectoroverlapping-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/diagram/connectors/connectoroverlapping-cs1" %}
 
 ## How to Customize Orthogonal Segment Thumb Shape
@@ -74,14 +72,14 @@ The thumbs used to edit orthogonal segments are rendered as a `Circle` by defaul
 | Square | ![Square shape for connector segment thumb](../../images/square.png) |
 | Rectangle | ![Rectangle shape for connector segment thumb](../../images/Rectangle.png) |
 | Ellipse | ![Ellipse shape for connector segment thumb](../../images/Ellipse.png) |
-| Arrow| ![Arrow shape for connector segment thumb](../../images/Arrow.png) |
+| Arrow | ![Arrow shape for connector segment thumb](../../images/Arrow.png) |
 | OpenArrow | ![OpenArrow shape for connector segment thumb](../../images/openArrow.png) |
-| Circle |![Circle shape for connector segment thumb](../../images/Circle.png) |
-| Fletch|![Fletch shape for connector segment thumb](../../images/Fletch.png) |
-| OpenFetch| ![OpenFetch shape for connector segment thumb](../../images/openfetch.png) |
+| Circle | ![Circle shape for connector segment thumb](../../images/Circle.png) |
+| Fletch | ![Fletch shape for connector segment thumb](../../images/Fletch.png) |
+| OpenFetch | ![OpenFetch shape for connector segment thumb](../../images/openfetch.png) |
 | IndentedArrow | ![IndentedArrow shape for connector segment thumb](../../images/IndentedArrow.png) |
 | OutdentedArrow | ![OutdentedArrow shape for connector segment thumb](../../images/OutdentedArrow.png) |
-| DoubleArrow |![DoubleArrow shape for connector segment thumb](../../images/DoubleArrow.png) |
+| DoubleArrow | ![DoubleArrow shape for connector segment thumb](../../images/DoubleArrow.png) |
 
 You can also customize the style of the thumb shape by overriding the `e-orthogonal-thumb` CSS class.
 
@@ -94,7 +92,7 @@ You can also customize the style of the thumb shape by overriding the `e-orthogo
 {% include code-snippet/diagram/connectors/connectorsThumbshape-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsThumbshape-cs1" %}
 
 ![Diagram showing a connector with a customized segment thumb shape.](./../../images/thumbshape.png)
@@ -126,5 +124,12 @@ To customize the thumb size for a specific connector, you must first disable its
 {% include code-snippet/diagram/connectors/connectorsorthothumbsize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsorthothumbsize-cs1" %}
+
+## See also
+
+* [Connector Segments Overview](../connector-segments)
+* [Straight Segments](./connector-straight)
+* [Bezier Segments](./connector-bezier/connector-bezier)
+* [Connectors](../connectors)

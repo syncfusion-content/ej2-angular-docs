@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Snowflake in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
@@ -8,7 +8,7 @@ description: Learn how the Angular Pivot Table binds to a Snowflake data warehou
 
 # Snowflake in Angular Pivot Table
 
-This guide explains how to retrieve data from a Snowflake database using the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/) library and bind it to the Pivot Table through a Web API controller.
+This guide explains how to retrieve data from a Snowflake database using the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data) library and bind it to the Pivot Table through a Web API controller.
 
 ## Creating a Web API Service to Fetch Snowflake Data
 
@@ -22,8 +22,8 @@ Follow these steps to create a Web API service that retrieves data from a Snowfl
 
 ### Step 2: Install the Snowflake NuGet Package
 To enable Snowflake database connectivity:
-1. Open the **NuGet Package Manager** in your project solution and search for [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/).
-2. Install the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/) package to add Snowflake support.
+1. Open the **NuGet Package Manager** in your project solution and search for [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data).
+2. Install the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data) package to add Snowflake support.
 
 ![Installing the Snowflake.Data NuGet package](../images/snowflake-data-nuget-package-install.png)
 
@@ -32,7 +32,7 @@ To enable Snowflake database connectivity:
 2. This controller facilitates data communication between the Snowflake database and the Pivot Table.
 
 ### Step 4: Connect to Snowflake and Retrieve Data
-In the **PivotController.cs** file, use the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data/) library to connect to a Snowflake database and retrieve data for the Pivot Table.
+In the **PivotController.cs** file, use the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data) library to connect to a Snowflake database and retrieve data for the Pivot Table.
 
 1. **Establish Connection**: Use **SnowflakeDbConnection** with a valid connection string (e.g., `account=myaccount;user=myuser;password=mypassword;db=mydb;schema=myschema;`) to connect to the Snowflake database.
 2. **Query and Fetch Data**: Execute a SQL query (e.g., `SELECT * FROM CALL_CENTER`) using **SnowflakeDbDataAdapter** to retrieve data for the Pivot Table.
@@ -212,4 +212,4 @@ export class AppComponent implements OnInit {
 ![Pivot Table bound with Snowflake database](../images/snowflake-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a Snowflake database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Snowflake-database-to-pivot-table) repository.
+For a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application that fetches data from a Snowflake database, see this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Snowflake-database-to-pivot-table) repository.

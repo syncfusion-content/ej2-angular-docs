@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in Angular Diagram | Syncfusion®
-description: Show position, size, and rotation tooltips during node interaction in the Syncfusion® Angular Diagram, plus per-element custom tooltips with configurable content and placement.
+description: Show size, position, and rotation tooltips on the Angular Diagram during node drag, resize, and rotate, or attach custom mouse-hover tooltips.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug
@@ -80,7 +80,9 @@ The diagram supports inheriting the diagram tooltip when the mouse hovers over a
 
 The tooltip on mouse over can be disabled by assigning the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram#tooltip) property as `null`. The following code example illustrates how to disable the mouse over tooltip at runtime.
 
-```typescript
+N> To reliably clear the tooltip at runtime, set the `tooltip` property to `null` within a user action (e.g. a button click) rather than in `ngOnInit`, or call `ChangeDetectorRef.detectChanges()` afterwards.
+
+```
 
 @Component({
     selector: "app-container",
@@ -100,32 +102,41 @@ export class AppComponent {
 
 ## Tooltip for Ports
 
-The tooltip feature has been implemented to support Ports, providing the ability to display information or descriptions when the mouse hovers over them.
+The tooltip feature supports Ports, providing the ability to display information or descriptions when the mouse hovers over them.
 
 To display tooltips on mouseover, set the desired tooltip [`content`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#content) by utilizing the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram#tooltip) property.
 
 Tooltips for Ports can be enabled or disabled using the [`PortConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/port#constraints) Tooltip property.
 
-```ts
-let ports: [{
-        offset: {x: 1,y: 0.5},
-        tooltip: {content: 'Port Tooltip'},
-        
-        //enable Port Tooltip Constraints
-        constraints: PortConstraints.Default | PortConstraints.ToolTip,
-        
-        //disable Port Tooltip Constraints
-        constraints: PortConstraints.Default &~ PortConstraints.ToolTip
-    }]
+```
+// Enable port tooltip
+let ports = [{
+    offset: { x: 1, y: 0.5 },
+    tooltip: { content: 'Port Tooltip' },
+    constraints: PortConstraints.Default | PortConstraints.ToolTip
+}];
+```
+
+```
+// Disable port tooltip
+let ports = [{
+    offset: { x: 1, y: 0.5 },
+    tooltip: { content: 'Port Tooltip' },
+    constraints: PortConstraints.Default & ~PortConstraints.ToolTip
+}];
 ```
 
 Dynamic modification of tooltip content is supported, allowing you to change the displayed tooltip content during runtime.
 
-```ts
-{
-    //change tooltip content at run time
-    diagram.nodes[0].ports[0].tooltip.content = 'New Tooltip Content';
-    diagram.databind();
+```
+export class AppComponent {
+    @ViewChild('diagram') diagram: DiagramComponent;
+
+    updateTooltip(): void {
+        // Change tooltip content at run time
+        this.diagram.nodes[0].ports[0].tooltip.content = 'New Tooltip Content';
+        this.diagram.dataBind();
+    }
 }
 ```
 
@@ -187,7 +198,7 @@ The following code example illustrates how to position the tooltip around object
 
 ### Tooltip relative to mouse position
 
-To display the tooltip at mouse position, need to set **mouse** option to the [`relativeMode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#relativemode) property of the tooltip.
+To display the tooltip at the mouse position, set the [`relativeMode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#relativemode) property of the tooltip to **Mouse**.
 
 The following code example illustrates how to show tooltip at mouse position.
 
@@ -207,7 +218,7 @@ The following code example illustrates how to show tooltip at mouse position.
 
 To animate the tooltip, a set of specific animation effects are available, and it can be controlled by using the [`animation`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramtooltip#animation) property. The animation property also allows you to set delay, duration, and various other effects of your choice.
 
-Refer the following sample where we used zoomIn animation for tooltip open and zoomOut animation for tooltip close with delay and duration. 
+Refer to the following sample, which uses the zoomIn animation for tooltip open and the zoomOut animation for tooltip close with delay and duration. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -223,9 +234,9 @@ Refer the following sample where we used zoomIn animation for tooltip open and z
 
 ## Sticky tooltip
 
-A sticky tooltip will remain visible even after you move the mouse away from the node or connector. You can activate this feature by setting the [`isSticky`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel#issticky) property of the tooltip. 
+A sticky tooltip will remain visible even after you move the mouse away from the node or connector. You can activate this feature by setting the [`isSticky`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel#issticky) property of the tooltip.
 
-The following example shows how to render sticky tooltip. 
+The following example shows how to render sticky tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -241,7 +252,7 @@ The following example shows how to render sticky tooltip.
 
 ## Hide tooltip pointer
 
-The [`showTipPointer`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel#showtippointer) property allows to control the visibility of tooltip pointer. By default, the `showTipPointer` is set as true.
+The [`showTipPointer`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel#showtippointer) property allows you to control the visibility of the tooltip pointer. By default, `showTipPointer` is set to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -258,6 +269,8 @@ The [`showTipPointer`](https://helpej2.syncfusion.com/angular/documentation/api/
 ## Tooltip size
 
 By default, the size of the tooltip is calculated based on its content. If you want to customize the size, you can use the [`width`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel#width) and [`height`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel#height) properties of the tooltip.
+
+N> The `width` and `height` properties accept numbers (pixels) or string values such as `'100px'` or `'50%'`. When omitted, the size is computed from the content.
 
 The following code example shows how to set the size for the tooltip:
 
@@ -297,6 +310,16 @@ Tooltips can be added to annotations to display additional information on mouseo
 To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram#tooltip) property of the annotation.
 Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/annotationConstraints#AnnotationConstraints) property as [`Tooltip`](https://helpej2.syncfusion.com/angular/documentation/api/diagram#tooltip). 
 
+```
+public nodes: NodeModel[] = [{
+  annotations: [{
+    content: 'Label',
+    tooltip: { content: 'Annotation tooltip' },
+    constraints: AnnotationConstraints.Default | AnnotationConstraints.Tooltip
+  }]
+}];
+```
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/tooltip/annotationtooltip-cs1/src/app.component.ts %}
@@ -308,3 +331,10 @@ Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationC
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/tooltip/annotationtooltip-cs1" %}
+
+## See also
+
+- [Nodes](./nodes)
+- [Connectors](./connectors/connector-interaction)
+- [Ports](./ports)
+- [Annotation](./labels/annotation)

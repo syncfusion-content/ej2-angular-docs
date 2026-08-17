@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layers in Angular Diagram | Syncfusion®
-description: Organize diagram elements into named categories in the Syncfusion® Angular Diagram using layers, with bulk visibility, lock, and property control across each layer.
+description: Organize diagram elements into named categories in the Angular Diagram using layers, with bulk visibility, lock, and property control across each layer.
 platform: ej2-angular
 control: Layers 
 documentation: ug
@@ -89,7 +89,8 @@ The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/lay
 
 The following code illustrates how to add additional information to layers:
 
-```typescript
+
+```
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { DiagramComponent, Diagram, NodeModel, ConnectorModel, PointModel, LayerModel } from '@syncfusion/ej2-angular-diagrams';
 
@@ -135,6 +136,8 @@ export class AppComponent {
 }
 ```
 
+Nodes and connectors declared in the template are added to the default layer; assign their IDs to a layer's `objects` array to move them into a specific layer.
+
 ## Add Layer at Runtime
 
 Layers can be added at runtime by using the [`addLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addlayer) public method.
@@ -175,7 +178,7 @@ The following code illustrates how to remove a layer.
   
 {% previewsample "page.domainurl/samples/diagram/layers/layers-cs5" %}
 
-## MoveObjects
+## Move Objects at Runtime
 
 You can move objects from one layer to another dynamically using the [`moveObjects`](https://ej2.syncfusion.com/angular/documentation/api/diagram#moveobjects) public method of the diagram control. This can be useful for managing complex diagrams with multiple layers where you need to update the categorization of elements based on user interaction or other dynamic conditions.
 
@@ -195,25 +198,30 @@ The following code illustrates how to move objects from one layer to another lay
 
 ## Z-Index and Layer Ordering
 
-The [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer#zindex) property of a layer defines its position in the stacking order within the diagram. Higher z-index values render above lower values, allowing control over which layers appear in front of others.
+The [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layer#zindex) property of a layer defines its position in the stacking order within the diagram. Higher z-index values render above lower values, giving you control over which layers appear in front of others.
 
-### Bring layer forward
+### Bring Layer Forward
 
-Move a layer forward in the stacking order using the [`bringLayerForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringlayerforward) public method:
+Move a layer forward in the stacking order using the [`bringLayerForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringlayerforward) public method. Pass the ID of the layer you want to move one step forward in the stacking order.
 
-```typescript
+*Requires a diagram instance obtained via `@ViewChild`.*
+
+```
 // Move the specified layer forward in the stacking order
 this.diagram.bringLayerForward('layer1');
 ```
 
 ### Send Layer Backward
 
-Move a layer backward in the stacking order using the [`sendLayerBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendlayerbackward) public method:
+Move a layer backward in the stacking order using the [`sendLayerBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendlayerbackward) public method. Pass the ID of the layer you want to move one step backward in the stacking order.
 
-```typescript
+*Requires a diagram instance obtained via `@ViewChild`.*
+
+```
 // Move the specified layer backward in the stacking order
 this.diagram.sendLayerBackward('layer1');
 ```
+
 The following code illustrates how to send the layer forward/backward to another layer.
 
 {% tabs %}
@@ -230,9 +238,11 @@ The following code illustrates how to send the layer forward/backward to another
 
 ### Layer and objects rendering order
 
-The rendering of diagram elements with layer properties involves grouping them within a `diagram_diagramLayer` for basic shape nodes and `diagram_nativeLayer_svg` for SVG-native elements. Even if different types of nodes are added within the same layer, the rendering at the DOM level occurs in separate layers. Therefore, when executing layering commands like [`bringLayerForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringlayerforward) and [`sendLayerBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendlayerbackward), the native SVG elements will always render above the basic shape elements. 
+The rendering of diagram elements with layer properties involves grouping them within a `diagram_diagramLayer` for basic shape nodes and `diagram_nativeLayer_svg` for SVG-native elements. Even if different types of nodes are added within the same layer, the rendering at the DOM level occurs in separate layers.
 
-The order of rendering is as follows: HTML shapes -> SVG shapes -> Path data shapes & Basic shapes.
+Note: `bringLayerForward` and `sendLayerBackward` reorder layers of the same render type only; native SVG elements always render above basic/HTML shape elements regardless of these commands.
+
+Rendering order (back to front): Basic & Path-data shapes → SVG shapes → HTML native shapes.
 
 ## Clone Layer
 
@@ -256,6 +266,8 @@ The following code illustrates how to clone a layer:
 
 ## Active Layer
 
+All the runtime operations above (add, remove, move, clone) interact with the active layer by default; the sections below explain how to query and change it.
+
 The active layer represents the layer with the highest z-index in a diagram. When objects are added at runtime, they are automatically assigned to the active layer. If no layers are explicitly defined, a default layer is created and set as the active layer. When multiple layers exist, the layer with the highest z-index becomes the active layer.
 
 **Use case**: Ensure new elements are added to the appropriate layer in multi-layer diagrams, particularly in interactive editing scenarios.
@@ -264,7 +276,7 @@ The active layer represents the layer with the highest z-index in a diagram. Whe
 
 Retrieve the current active layer of the diagram using the [`getActiveLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram#getactivelayer) public method:
 
-```typescript
+```
 // Gets the currently active layer
 this.diagram.getActiveLayer();
 ```
@@ -273,7 +285,7 @@ this.diagram.getActiveLayer();
 
 Set any layer as the active layer using the [`setActiveLayer`](https://ej2.syncfusion.com/angular/documentation/api/diagram#setactivelayer) public method:
 
-```typescript
+```
 // Set the specified layer as active
 // @param layerName defines the name of the layer to be set as active
 this.diagram.setActiveLayer('layer2');

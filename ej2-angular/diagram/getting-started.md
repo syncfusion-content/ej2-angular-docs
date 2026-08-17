@@ -16,6 +16,8 @@ This section explains the steps required to create a simple diagram and demonstr
 
 {% tabcontents %}
 
+N> Prerequisites and Node.js version requirements differ between the Syncfusion CLI and Angular CLI approaches.
+
 {% tabcontent Syncfusion CLI %}
 
 ## Prerequisites
@@ -35,7 +37,7 @@ npm install -g @syncfusion/syncfusion-cli
 
 ## Create a new Angular application using Syncfusion CLI
 
-You can create a Angular application using the Syncfusion CLI. The CLI provides two ways to create a project:
+You can create an Angular application using the Syncfusion CLI. The CLI provides two ways to create a project:
 
 ### Non-interactive mode
 
@@ -47,7 +49,7 @@ sf new syncfusion-angular-app --framework angular --template diagram
 {% endhighlight %}
 {% endtabs %}
 
-In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Diagram component.
+In this mode, the project configuration is passed directly in the command. The above command creates an Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Diagram component.
 
 ### Interactive mode
 
@@ -59,7 +61,7 @@ sf
 {% endhighlight %}
 {% endtabs %}
 
-When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Diagram` component, select the following options:
+When you run the `sf` command, the CLI prompts you to select the required project configuration. To create an Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Diagram` component, select the following options:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -76,7 +78,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 {% endhighlight %}
 {% endtabs %}
 
-The above selections generate a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Diagram` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+The above selections generate an Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Diagram` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
 
@@ -94,7 +96,7 @@ ng serve
 
 The output will appear as follows:
 
-![Diagram Component](./images/cli-diagram.png)
+![Syncfusion CLI generated Diagram application output](./images/cli-diagram.png)
 
 {% endtabcontent %}
 
@@ -127,10 +129,10 @@ The output will appear as follows:
 
 | Browser | Supported Versions |
 |:--------|:-------------------|
-| Google Chrome, including Android & iOS  | Latest 2 versions |
-| Mozilla Firefox	 | Latest version |
-| Microsoft Edge	    | Latest 2 versions |
-| Apple Safari, including iOS	  | Latest 2 versions |
+| Google Chrome, including Android & iOS | Latest 2 versions |
+| Mozilla Firefox | Latest version |
+| Microsoft Edge | Latest 2 versions |
+| Apple Safari, including iOS | Latest 2 versions |
 
 ## Before You Begin
 
@@ -150,7 +152,7 @@ N> If your application uses an older NgModule-based structure, import `DiagramMo
 
 Use [Angular CLI](https://github.com/angular/angular-cli) to create and manage Angular applications. Install Angular CLI globally using the following command:
 
-```bash
+```
 npm install -g @angular/cli
 ```
 
@@ -158,7 +160,7 @@ npm install -g @angular/cli
 
 Create a new Angular application using the following command.
 
-```bash
+```
 ng new my-diagram-app
 ```
 
@@ -170,7 +172,7 @@ During project creation, Angular CLI may prompt you to choose stylesheet, SSR/SS
 
 Navigate to the project folder:
 
-```bash
+```
 cd my-diagram-app
 ```
 
@@ -180,7 +182,7 @@ All Syncfusion Essential® JS 2 packages are available in the [npmjs.com](https:
 
 Install the Angular Diagram package using the following command:
 
-```bash
+```
 npm install @syncfusion/ej2-angular-diagrams
 ```
 
@@ -194,27 +196,29 @@ N> For the latest tested version of the Diagram package, refer to the [`@syncfus
 
 The Diagram component needs Syncfusion® theme styles to display correctly. Syncfusion® theme packages include ready-to-use styles for supported components. Install the Tailwind 3 theme package using the following command:
 
-```bash
+```
 npm install @syncfusion/ej2-tailwind3-theme
 ```
 
 Then add the following CSS reference to the **src/styles.css** file:
 
-```css
+```
 @import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/diagram/index.css";
 ```
 
 For the list of available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
+N> The `../node_modules/...` path is relative to `src/styles.css`; adjust the path if your bundler relocates dependencies.
+
 N> Syncfusion® provides multiple built-in themes. If the application uses a different theme, replace the `@syncfusion/ej2-tailwind3-theme/styles/diagram/index.css` reference with the corresponding theme path, such as `@syncfusion/ej2-material3-theme/styles/diagram/index.css`.
 
-## Step 5: Register the Diagram module and add the component
+## Step 5: Import the Diagram component
 
 Import `DiagramModule` from `@syncfusion/ej2-angular-diagrams` and add it to the `imports` collection of the standalone component. Then, add the Angular Diagram component using the `<ejs-diagram>` selector in the component template.
 
 Update the **src/app/app.ts** file as follows:
 
-```typescript
+```
 import { Component } from '@angular/core';
 import { DiagramModule } from '@syncfusion/ej2-angular-diagrams';
 
@@ -227,7 +231,7 @@ import { DiagramModule } from '@syncfusion/ej2-angular-diagrams';
 export class App {}
 ```
 
-This renders an empty diagram in the application. The next step replaces this code with a more complete example.
+This renders an empty diagram in the application. Step 6 replaces it with a complete flowchart example.
 
 N> The component selector must match the root element used in the **src/index.html** file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`.
 
@@ -237,11 +241,11 @@ N> The Diagram component must have a valid height. If the height is not set, the
 
 This section explains how to create a simple flowchart by adding nodes, customizing their appearance, and connecting them using connectors.
 
-The following example creates a flowchart with four nodes: **Start**, **Process**, **Decision**, and **End**. It also applies common node and connector settings through the `getNodeDefaults` and `getConnectorDefaults` callback bindings.
+The following example creates a flowchart with four nodes: **Start**, **Process**, **Decision**, and **End**. It also applies common node and connector settings through the `getNodeDefaults` and `getConnectorDefaults` input bindings.
 
 Replace the entire contents of **src/app/app.ts** with the following code:
 
-```typescript
+```
 import { Component } from '@angular/core';
 import {
   ConnectorModel,
@@ -259,8 +263,8 @@ import {
       id="diagram"
       width="100%"
       height="580px"
-      [getNodeDefaults]="nodeDefaults"
-      [getConnectorDefaults]="connectorDefaults">
+      [getNodeDefaults]="getNodeDefaults"
+      [getConnectorDefaults]="getConnectorDefaults">
 
       <e-nodes>
         <e-node id="node1" [offsetX]="300" [offsetY]="100" [shape]="terminator">
@@ -312,7 +316,7 @@ export class App {
     shape: 'Decision'
   };
 
-  public nodeDefaults(node: NodeModel): NodeModel {
+  public getNodeDefaults(node: NodeModel): NodeModel {
     node.width = 140;
     node.height = 50;
     node.style = {
@@ -322,7 +326,7 @@ export class App {
     return node;
   }
 
-  public connectorDefaults(connector: ConnectorModel): ConnectorModel {
+  public getConnectorDefaults(connector: ConnectorModel): ConnectorModel {
     connector.type = 'Orthogonal';
     connector.targetDecorator = {
       shape: 'Arrow',
@@ -356,7 +360,7 @@ In this example:
 
 Run the application using the following command:
 
-```bash
+```
 npm start
 ```
 
@@ -383,3 +387,5 @@ To explore the Diagram component in more depth, refer to the following topics:
 * [Nodes](https://ej2.syncfusion.com/angular/documentation/diagram/nodes/nodes)
 * [Connectors](https://ej2.syncfusion.com/angular/documentation/diagram/connectors/connectors)
 * [Annotations](https://ej2.syncfusion.com/angular/documentation/diagram/labels/labels)
+* [Shapes](https://ej2.syncfusion.com/angular/documentation/diagram/shapes)
+* [Automatic Layout](https://ej2.syncfusion.com/angular/documentation/diagram/automatic-layout)

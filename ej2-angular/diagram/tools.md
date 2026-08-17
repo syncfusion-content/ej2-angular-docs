@@ -17,7 +17,7 @@ The Angular Diagram component provides a comprehensive set of interactive tools 
 The diagram control offers three primary tool categories:
 
 - **Select**: Choose and manipulate specific elements within the diagram
-- **Pan**: Navigate the diagram view to different areas without modifying elements  
+- **Pan**: Navigate the diagram view to different areas without modifying elements
 - **Draw**: Create new shapes, connectors, and freehand drawings on the diagram surface
 
 These tools are essential for building complex diagrams and provide the foundation for user interaction within the diagram environment.
@@ -25,6 +25,11 @@ These tools are essential for building complex diagrams and provide the foundati
 ## Drawing tools
 
 Drawing tools enable real-time creation of diagram elements by clicking and dragging on the diagram canvas. All drawing operations are configured through the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram#drawingobject) property and activated using the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram#tool) property.
+
+```
+public drawingObject: NodeModel = { shape: { type: 'Basic', shape: 'Rectangle' } };
+public tool: DiagramTools = DiagramTools.DrawOnce;
+```
 
 ### Draw nodes
 
@@ -138,6 +143,16 @@ Freehand drawing allows users to create custom paths and sketches by dragging th
 
 Freehand connector segments can be adjusted after creation by dragging the segment thumbs. To enable this functionality, apply the [`DragSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel#constraints) constraint to the connector:
 
+### Adjusting freehand segments
+
+```
+public connectors: ConnectorModel[] = [{
+  id: 'freehand1',
+  type: 'Freehand',
+  constraints: ConnectorConstraints.DragSegmentThumb | ConnectorConstraints.Select
+}];
+```
+
 ![Freehand connector drawing](images/freehand-draw.gif)
 
 ## Tool selection and precedence
@@ -150,7 +165,7 @@ The following table shows the precedence order from highest to lowest priority:
 
 |Precedence|Tool|Description|
 |----------|-----|-----------|
-|1st|ContinuesDraw|Enables continuous drawing mode. Once activated, prevents all other interactions until deactivated.|
+|1st|ContinuesDraw|Enables continuous drawing mode. Once activated, prevents all other interactions until deactivated. To deactivate continuous drawing mode, set the `tool` property back to `SingleSelect` or `None`.|
 |2nd|DrawOnce|Allows drawing a single element. After completion, automatically enables SingleSelect and MultipleSelect tools.|
 |3rd|ZoomPan|Enables diagram panning. When combined with SingleSelect, panning activates when cursor hovers over empty diagram areas.|
 |4th|MultipleSelect|Enables selection of multiple elements. When combined with ZoomPan, selection takes priority over panning when hovering over elements.|
@@ -158,6 +173,14 @@ The following table shows the precedence order from highest to lowest priority:
 |6th|None|Disables all interactive tools.|
 
 These tools provide flexibility and functionality for creating and interacting with elements within the diagram interface.
+
+## Select tool
+
+The select tool allows users to choose and manipulate diagram elements. Set the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram#tool) property to `SingleSelect` to select one element at a time, or `MultipleSelect` to select several elements by dragging a selection rectangle:
+
+```
+public tool: DiagramTools = DiagramTools.SingleSelect;
+```
 
 ## Pan tool
 
@@ -177,7 +200,7 @@ The pan tool enables users to navigate large diagrams by dragging the view area.
 
 N> Panning is disabled when 'multiplePage' is set to false and diagram objects exist outside the defined page boundaries.
 
-## Events
+## elementDraw event
 
 The [`elementDraw`](https://ej2.syncfusion.com/angular/documentation/api/diagram#elementdraw) event triggers whenever users create nodes or connectors using drawing tools. This event provides access to the newly created element and enables custom logic during the drawing process:
 
@@ -192,3 +215,9 @@ The [`elementDraw`](https://ej2.syncfusion.com/angular/documentation/api/diagram
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/tools/events-cs1" %}
+
+## See also
+
+- [Interaction](./interaction)
+- [Connectors](./connectors/connector-interaction)
+- [Nodes](./nodes)

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to Customize Number, Date, Time Values in Angular Pivot Table | Syncfusion
+title: Customize number, date, and time in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize number, date, and time values in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
-control: Customize number date and time values 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to Customize Number, Date, Time Values in Angular Pivot Table
+# How to customize number and date values in Pivot Table
 
-You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). This configuration is applied during component initialization to ensure consistent data presentation across the pivot view.
+You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 
 ## Number formatting
 
@@ -57,4 +57,4 @@ For date and time fields, the formatting settings include these properties:
 
 ## Limitations of date formatting
 
-According to Firefox and Edge browser standards, most date and time formats used in data sources are not supported. For example: Apr-2000, Apr-01-2000, 01-03-2000, 2000-Apr-01 and similar formats are not recognized. However, [`ISO formats`](http://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15) are supported across all browsers for consistent date handling.
+According to Firefox and Edge browser standards, most date and time formats used in data sources are not supported. For example: Apr-2000, Apr-01-2000, 01-03-2000, 2000-Apr-01 and similar formats are not recognized. However, [`ISO formats`](http://www.ecma-international.org/ecma-262/5.1#sec-15.9.1.15) are supported across all browsers for consistent date handling.

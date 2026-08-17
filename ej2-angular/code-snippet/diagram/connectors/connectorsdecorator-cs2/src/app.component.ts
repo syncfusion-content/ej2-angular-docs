@@ -17,7 +17,7 @@ standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
         <e-connectors>
-        <e-connector id='connector1' type='Straight' flip='Horizontal'[sourcePoint]='sourcePoint1' [targetPoint]='targetPoint1' >
+        <e-connector id='connector1' type='Straight' flip='Horizontal' [sourcePoint]='sourcePoint1' [targetPoint]='targetPoint1' >
             <e-connector-annotations>
                     <e-connector-annotation content="Horizontal Flip">
                     </e-connector-annotation>

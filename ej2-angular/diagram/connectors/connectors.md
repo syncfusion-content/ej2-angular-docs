@@ -16,11 +16,14 @@ Connectors are objects used to create links between two points, nodes, or ports 
 
 Connectors can be created by defining the source and target points. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#properties). The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization.
 
-```typescript
-<e-connectors>
-                <e-connector id='connector1' type='Straight' sourcePoint='sourcePoint' targetPoint='targetPoint'></e-connector>
-</e-connectors>  
 ```
+<ejs-diagram id="diagram" width="100%" height="580px">
+    <e-connectors>
+        <e-connector id='connector1' type='Straight' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint'></e-connector>
+    </e-connectors>
+</ejs-diagram>
+```
+
 N> When setting a connector's ID, ensure it follows these naming rules: no spaces, must start with a letter, and should contain only alphanumeric characters and hyphens for optimal compatibility.
 
 To create and customize the connectors easily in the Angular Diagram component, refer to the below video link.
@@ -103,7 +106,7 @@ The following code example illustrates how to add connectors to the palette.
 
 Connectors can be interactively drawn by clicking and dragging on the diagram surface. This feature enables users to create connections dynamically during diagram creation or editing.
 
-To draw a connector, you have to activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](https://ej2.syncfusion.com/documentation/api/diagram#tool) property and you need to set the `connector` object by using the [`drawingObject`](https://ej2.syncfusion.com/documentation/api/diagram#drawingobject) property. The following code example illustrates how to draw a connector at runtime.
+To draw a connector, you have to activate the drawing tool by setting `DrawOnce` or `ContinuousDraw` to the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram#tool) property and you need to set the `connector` object by using the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram#drawingobject) property. The following code example illustrates how to draw a connector at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -159,7 +162,7 @@ The following code example illustrates how to clone a connector.
 
 The connector defaults functionality allows you to define default properties for all connectors in the diagram. This is triggered when the diagram is initialized, providing an opportunity to customize connector properties globally rather than setting them individually for each connector.
 
-The following code example explains how to customize connector defaults using [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram#getconnectordefaults).
+The following code example illustrates how to customize connector defaults using [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram#getconnectordefaults).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -193,7 +196,7 @@ The following code example illustrates how to connect two nodes.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs1" %}
 
-When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an outgoing connection to dock in it. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an incoming connection to dock in it.
+When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only outgoing connections. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only incoming connections.
 
 When you remove both InConnect and OutConnect NodeConstraints from Default, the node restricts connectors from establishing connections to it.
 
@@ -214,7 +217,6 @@ import { NodeConstraints } from "@syncfusion/ej2-angular-diagrams";
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    @ViewChild("diagram")
     public nodeConstraints: NodeConstraints;
     ngOnInit(): void {
         //Disable InConnect constraints
@@ -274,7 +276,6 @@ import { PointPortModel, PortConstraints } from "@syncfusion/ej2-angular-diagram
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-    @ViewChild("diagram")
     public port1: PointPortModel[];
     ngOnInit(): void {
         this.port1 = [{
@@ -360,7 +361,7 @@ The diagram provides flexibility to prevent connectors from overlapping, ensurin
 
 To enable this feature, inject both the `LineRouting` and `AvoidLineOverlapping` modules into the application and add the corresponding constraints to the diagram.
 
-```typescript
+```
 
 import { LineRouting, AvoidLineOverlapping, Diagram } from '@syncfusion/ej2-diagrams';
 /**
@@ -372,19 +373,19 @@ Diagram.Inject(LineRouting, AvoidLineOverlapping);
 
 Add `LineRouting` and `AvoidLineOverlapping` constraints to the diagram constraints to enable line routing with avoid line overlapping support.
 
-```html
-
-<!--
-Initialize the Diagram
--->
-<ejs-diagram #diagram [constraints]='constraints'>
-
 ```
-```typescript
+import { Component, ViewEncapsulation } from "@angular/core";
+import { DiagramConstraints } from "@syncfusion/ej2-angular-diagrams";
 
-// Enable line routing and avoid line overlapping constraints.
-public constraints: DiagramConstraints = DiagramConstraints.Default | DiagramConstraints.LineRouting | DiagramConstraints.AvoidLineOverlapping;
-
+@Component({
+    selector: "app-container",
+    template: `<ejs-diagram #diagram [constraints]='constraints'></ejs-diagram>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent {
+    // Enable line routing and avoid line overlapping constraints.
+    public constraints: DiagramConstraints = DiagramConstraints.Default | DiagramConstraints.LineRouting | DiagramConstraints.AvoidLineOverlapping;
+}
 ```
 
 ![AvoidLineOverlapping GIF](../images/avoidconnectoroverlap.gif)
@@ -406,7 +407,7 @@ The following example demonstrates how to enable the AvoidLineOverlapping featur
 N> The `AvoidLineOverlapping` feature applies only to orthogonal connectors and requires the `LineRouting` module to be injected with its constraints enabled.
 
 
-## See Also
+## See also
 
 * [How to add annotations to the connector](../labels/labels)
 * [How to enable/disable the behavior of the node](../constraints)

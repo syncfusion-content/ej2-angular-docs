@@ -3,33 +3,33 @@ layout: post
 title: How to Add a Custom Aggregation in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to add a custom aggregation type to the menu in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
-control: Add custom aggregation type to the menu 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# How to Add a Custom Aggregation in Angular Pivot Table
+# How to add a custom aggregation in Angular Pivot Table
 
-The Angular Pivotview component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This feature enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
+The Angular Pivot Table component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 
 ## Adding custom aggregation types
 
-By using the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#databound) event, you can add your own custom aggregate type(s) to the pivot table's aggregate menu. The dataBound event triggers after the pivot table is completely rendered, making it the ideal place to modify the component's UI elements.
+You can use the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#databound) event to add your own custom aggregate types to the pivot table's aggregate menu. This event fires after the pivot table has been fully rendered, making it the perfect spot to modify the component's UI elements.
 
-In the following example, we have added two custom aggregation types **CustomAggregateType 1** (which calculates a weighted average) and **CustomAggregateType 2** (which calculates the percentage of total) to the aggregate menu. 
+In the following example, we have added two custom aggregation types **CustomAggregateType 1** (which calculates a weighted average) and **CustomAggregateType 2** (which calculates the percentage of total) to the aggregate menu.
 
-The calculation logic for these custom aggregation types is implemented using the [aggregateCellInfo](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#aggregatecellinfo) event. This event provides parameters including:
-* `fieldName` - It holds current cell's field name.
-* `row` - It holds current cell's row value.
-* `column` - It holds current cell's column value.
-* `value` - It holds value of current cell.
-* `cellSets` - It holds raw data for the aggregated value cell.
-* `rowCellType` - It holds row cell type value.
-* `columnCellType` - It holds column cell type value.
-* `aggregateType` - It holds aggregate type of the cell.
-* `skipFormatting` - boolean property, it allows to skip formatting if applied.
+The calculation logic for these custom aggregation types is implemented using the [`aggregateCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#aggregatecellinfo) event. This event provides parameters including:
+- [`fieldName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#fieldname) - Holds the current cell's field name.
+- [`row`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#row) - Holds the current cell's row value.
+- [`column`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#column) - Holds the current cell's column value.
+- [`value`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#value) - Holds the value of the current cell.
+- [`cellSets`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#cellsets) - Holds raw data for the aggregated value cell.
+- [`rowCellType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#rowcelltype) - Holds the row cell type value.
+- [`columnCellType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#columncelltype) - Holds the column cell type value.
+- [`aggregateType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#aggregatetype) - Holds the aggregate type of the cell.
+- [`skipFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregateeventargs#skipformatting) - Boolean property that allows skipping formatting if applied.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,5 +40,5 @@ The calculation logic for these custom aggregation types is implemented using th
 {% include code-snippet/pivot-grid/getting-started-cs315/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs315" %}

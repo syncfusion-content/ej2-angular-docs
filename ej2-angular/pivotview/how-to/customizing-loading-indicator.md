@@ -1,18 +1,18 @@
 ---
 layout: post
-title: How to Customize the Loading Indicator in Angular Pivot Table | Syncfusion
+title: How to customize loading indicator in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize the loading indicator in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
-control: Customizing loading indicator 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to Customize the Loading Indicator in Angular Pivot Table
+# How to customize the Pivot Table loading indicator
 
-The pivot table displays a loading indicator during data processing operations such as filtering, sorting, and aggregation calculations. The default loading spinner can be customized to match application design requirements using the [`spinnerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#spinnertemplate) property.
+The Pivot Table displays a loading indicator during data processing operations such as filtering, sorting, and aggregation calculations. The default loading spinner can be customized to match application design requirements using the [`spinnerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#spinnertemplate) property.
 
-The [`spinnerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#spinnertemplate) property accepts an HTML string that defines the custom loading indicator appearance. This enables control over the visual presentation, including custom styling and animations.
+The [`spinnerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#spinnertemplate) property accepts an HTML string that defines the custom loading indicator appearance. This enables control over the visual presentation, including custom styling and animations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ The [`spinnerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/piv
 
 ## Disabling the loading indicator
 
-The loading indicator can be completely disabled by setting the [`spinnerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#spinnertemplate) property to an empty string.
+The loading indicator can be completely disabled by setting the [`spinnerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#spinnertemplate) property to an empty string.
 
 ```typescript
 export class AppComponent {

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector Bezier Segment Edit Orientation in Angular Diagram | Syncfusion
-description: Restrict bezier segment editing in the Syncfusion® Angular Diagram to axis-aligned movement (Bidirectional) or allow freeform multi-axis drag, per the segmentEditOrientation setting.
+title: Bezier Segment Edit Orientation in Angular Diagram | Syncfusion
+description: Configure Bezier segment editing in the Angular Diagram with bidirectional axis constraints or unrestricted FreeForm movement.
 platform: ej2-angular
 control: bezier-segEditOrientation
 documentation: ug
@@ -14,16 +14,19 @@ Bezier connectors in diagrams provide smooth, curved connections between nodes w
 
 ## Interactive Editing of Bezier Segments
 
-The intermediate control points between adjacent bezier segments can be edited interactively during runtime based on the [`segmentEditOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegmentEditOrientation) property within the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel) configuration. This property determines the directional constraints applied when users drag the intermediate points to reshape the connector.
+The intermediate control points between adjacent bezier segments can be edited interactively during runtime, controlled by the [`segmentEditOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegmentEditOrientation) property within the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel) configuration. The default value of the `segmentEditOrientation` property is **FreeForm**. This property determines the directional constraints applied when users drag the intermediate points to reshape the connector.
+
+N> To edit Bezier segment points interactively, enable the [`DragSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints) constraint on the connector and inject the `ConnectorEditing` module into the Diagram.
 
 ### Segment Edit Orientation Options
 
 The following table describes the available orientation modes and their interactive behavior:
 
-| SegmentEditOrientation Value | Description | Interactive Behavior | Visual Example |
-|-------- | -------- | -------- | -------- |
-| Bidirectional | Constrains intermediate point movement to either vertical or horizontal directions only. Users can drag points along a single axis at a time, providing precise alignment control. | ![Bidirectional bezier segment editing showing constrained movement along single axis](../../../images/bez-bidirectional.gif) |
-| Freeform | Allows unrestricted movement of intermediate points in any direction. Users can drag points freely to create custom curves and complex path shapes. | ![Freeform bezier segment editing showing unrestricted point movement in all directions](../../../images/bez-freeform.gif) |
+| Value | Description | Output |
+|-------- | -------- | -------- |
+| BiDirectional | Constrains intermediate point movement to either vertical or horizontal directions only. Users can drag points along a single axis at a time, providing precise alignment control. | ![Bidirectional bezier segment editing showing constrained movement along single axis](../../../images/bez-bidirectional.gif) |
+| FreeForm | Allows unrestricted movement of intermediate points in any direction. Users can drag points freely to create custom curves and complex path shapes. | ![Freeform bezier segment editing showing unrestricted point movement in all directions](../../../images/bez-freeform.gif) |
+
 
 ## Implementation Example
 

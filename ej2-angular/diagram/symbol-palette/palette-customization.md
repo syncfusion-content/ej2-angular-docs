@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbol Palette Customization in Angular Diagram | Syncfusion®
-description: Customize the Syncfusion® Angular Diagram symbol palette with palette headers, expand/collapse animation, icons, heights, and filtering to organize reusable symbols.
+description: Customize the Angular Diagram symbol palette with palette headers, expand/collapse animation, icons, heights, and filtering to organize reusable symbols.
 platform: ej2-angular
 control: Symbol palette 
 documentation: ug
@@ -161,7 +161,7 @@ The [`symbolDragSize`](https://ej2.syncfusion.com/angular/documentation/api/diag
   
 {% previewsample "page.domainurl/samples/diagram/symbolpalette/custompalette/symbol-dragSize" %}
 
-N> If the size of the symbol is not defined, the default size will be determined based on its shape.
+N> If `symbolDragSize` is not defined, the default drag size will be determined based on the symbol's shape.
 
 ## Expand mode
 
@@ -208,11 +208,23 @@ The symbol palette supports displaying tooltips when the mouse hovers over symbo
 When hovering over symbols in the symbol palette, the default tooltip displays the symbol's ID.
 Refer to the image below for an illustration of the tooltip behavior in the symbol palette.
 
-![SymmbolPaletteTooltip](../images/SymbolPalatteTooltip.gif)
+![SymbolPaletteTooltip](../images/SymbolPalatteTooltip.gif)
 
 ### Custom tooltip for symbols
 
-To customize tooltips for symbols in the symbol palette, assign a custom tooltip to the [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel#content) property of the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel#tooltip) for each symbol. Once you define the custom tooltip, enable the [`Tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) constraints for each symbol, ensuring that tooltips are displayed when users hover over them.
+To customize tooltips for symbols in the symbol palette, assign a custom tooltip to the [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel#content) property of the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel#tooltip) for each symbol. Then enable the [`NodeConstraints.Tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) constraint for each symbol, so tooltips display when users hover over them.
+
+```
+public palettes: PaletteModel[] = [{
+  id: 'flowShapes',
+  expanded: true,
+  symbols: [{
+    id: 'process',
+    tooltip: { content: 'Process shape' },
+    constraints: NodeConstraints.Default | NodeConstraints.Tooltip
+  }]
+}];
+```
 
 The code provided below demonstrates how to define tooltip content for symbols within a symbol palette.
 
@@ -228,7 +240,7 @@ The code provided below demonstrates how to define tooltip content for symbols w
   
 {% previewsample "page.domainurl/samples/diagram/symbolpalette/custompalette/symboldesc-cs1" %}
 
-### How to enable or disable the default tooltip for shapes in the symbol palette
+### Enable or disable the default tooltip for shapes in the symbol palette
 
 By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolinfo#showtooltip) property within the [`getSymbolInfo`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#getsymbolinfo) method. The `showTooltip` property is set to **true** by default, which enables the tooltip.
 
@@ -248,7 +260,7 @@ The following example demonstrates how to configure selective tooltip display:
 
 N> This property is effective only when tooltip constraints are disabled for the symbol palette element.
 
-### How to provide different tooltip for Symbol palette and diagram elements.
+### Different tooltips for symbol palette and diagram elements
 
 When a custom tooltip is defined for a symbol, it will be displayed for both the symbol and the dropped node in the diagram canvas. 
 
@@ -256,9 +268,16 @@ However, to provide distinct tooltips for symbols in the palette and dropped nod
 
 When a symbol is dragged from the symbol palette and enters the diagram canvas, the [`DragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/index-default#dragenter) event is fired, accompanied by an argument of type [`IDragEnterEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs). Within this event, you can define a new tooltip for the dropped node. By assigning custom tooltip content to the Tooltip property of the node, you can provide a distinct tooltip that is specific to the dropped node.
 
+```
+public dragEnter(args: IDragEnterEventArgs): void {
+  // Assign a distinct tooltip to the dropped node
+  (args.element as NodeModel).tooltip = { content: 'Diagram node tooltip' };
+}
+```
+
 The following image illustrates the differentiation of tooltips displayed in the Symbol Palette and the Diagram.
 
-![SymmbolPaletteCustomTooltip](../images/different-tooltip.gif)
+![SymbolPaletteCustomTooltip](../images/different-tooltip.gif)
 
 The following code snippet demonstrates how to define two different tooltips for symbols in the symbol palette and dropped nodes in the diagram canvas.
 
@@ -277,6 +296,8 @@ The following code snippet demonstrates how to define two different tooltips for
 ## Localization
 
 To localize the symbol palette search box, define the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#locale) property of the symbol palette with the preferred culture. In the example below, **'de-DE'** is used, which is the locale code for German as used in Germany.
+
+N> Load the required L10n culture resource file (e.g. `de-DE.json`) before setting the `locale` property, so the search box text renders in the chosen language.
 
 The following code shows how to localize the symbol palette.
 
@@ -358,9 +379,13 @@ You can filter search results based on specific requirements. To achieve this, c
   
 {% previewsample "page.domainurl/samples/diagram/symbolpalette/custompalette/symbol-filter" %}
 
+## Cancel drag and drop
 
-N> The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed
+N> The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed.
 
 ## See Also
 
 * [How to add the symbol to the diagram](../nodes/nodes)
+* [Getting started](./getting-started)
+* [Tools](../tools)
+* [Nodes](../nodes)

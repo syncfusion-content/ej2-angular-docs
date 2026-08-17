@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Label Appearance in Angular Diagram | Syncfusion®
-description: Style labels in the Syncfusion® Angular Diagram with font, color, bold, italic, fill, stroke, opacity, visibility, and 9-way alignment within node or connector bounds.
+description: Customize Angular Diagram labels with fonts, colors, formatting, fill, borders, opacity, visibility, and horizontal or vertical alignment.
 platform: ej2-angular
 control: Label Appearance
 documentation: ug
@@ -38,17 +38,17 @@ The following code demonstrates comprehensive label appearance customization:
 
 Label positioning within nodes and connectors can be precisely controlled through horizontal and vertical alignment properties. The following table illustrates all possible alignment combinations with offset (0, 0):
 
-| Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
+| Horizontal Alignment | Vertical Alignment | Output with Offset (0, 0) |
 | -------- | -------- | -------- |
 | Left | Top | ![Left Top Label Alignment](../images/Label1.png) |
 | Center | Top | ![Center Top Label Alignment](../images/Label2.png) |
-| Right | Top |  ![Right Top Label Alignment](../images/Label3.png) |
+| Right | Top | ![Right Top Label Alignment](../images/Label3.png) |
 | Left | Center | ![Left Center Label Alignment](../images/Label4.png) |
-| Center | Center| ![Center Center Label Alignment](../images/Label5.png) |
+| Center | Center | ![Center Center Label Alignment](../images/Label5.png) |
 | Right | Center | ![Right Center Label Alignment](../images/Label6.png) |
 | Left | Bottom | ![Left Bottom Label Alignment](../images/Label7.png) |
 | Center | Bottom | ![Center Bottom Label Alignment](../images/Label8.png) |
-| Right |Bottom |![Right Bottom Label Alignment](../images/Label9.png) |
+| Right | Bottom | ![Right Bottom Label Alignment](../images/Label9.png) |
 
 The following code example shows how to configure label alignment:
 
@@ -64,7 +64,7 @@ The following code example shows how to configure label alignment:
   
 {% previewsample "page.domainurl/samples/diagram/labels/offset-cs2" %}
 
-## Label Margin
+## Label margin
 
 The [`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel) property adds spacing around labels by specifying absolute values for any or all four sides. This property works in conjunction with offset, horizontal alignment, and vertical alignment to achieve precise label positioning.
 
@@ -88,7 +88,7 @@ Labels can include interactive [`hyperlinks`](https://ej2.syncfusion.com/angular
 
 The [`hyperlinkOpenState`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel#hyperlinkopenstate) property controls how the hyperlink opens - in a new window, the same tab, or a new tab.
 
-Hyperlink appearance is controlled through the [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel#content) property for display text, [`color`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel#color) for text color, and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel#textdecoration) for styling effects like Underline, LineThrough, or Overline.
+Hyperlink appearance is controlled through the [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel#content) property for display text, [`color`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel#color) for text color, and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel#textdecoration) for styling effects like underline, line-through, or overline.
 
 The following example shows hyperlink implementation and customization:
 
@@ -104,7 +104,7 @@ The following example shows hyperlink implementation and customization:
   
 {% previewsample "page.domainurl/samples/diagram/labels/hyperlink-cs1" %}
 
-## Rotate Label
+## Rotate label
 
 Labels can be rotated to any angle using the [`rotateAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeAnnotationModel#rotateangle) property. This feature is useful for creating dynamic label orientations that match specific design requirements.
 
@@ -168,6 +168,15 @@ The following code demonstrates HTML template usage for labels:
 
 The [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textalign) property controls text alignment within the label boundaries. Available alignment options include left, right, center, and justify, providing flexibility for various content layouts.
 
+The following table shows different text alignment options:
+
+| Text Align | Output image |
+|-----|-----|
+| Right | ![Text align right](../images/textAlign-right.png) |
+| Left | ![Text align left](../images/textAlign-left.png) |
+| Center | ![Text align center](../images/textAlign-center.png) |
+| Justify | ![Text align justify](../images/textAlign-Justify.png) |
+
 The following code demonstrates text alignment configuration:
 
 {% tabs %}
@@ -182,18 +191,9 @@ The following code demonstrates text alignment configuration:
   
 {% previewsample "page.domainurl/samples/diagram/labels/textalign-cs1" %}
 
-The following table shows different text alignment options:
+## Text wrapping
 
-| Text Align | Output image |
-|-----|-----|
-| Right | ![Text align right](../images/textAlign-right.png) |
-| Left | ![Text align left](../images/textAlign-left.png) |
-| Center | ![Text align center](../images/textAlign-center.png) |
-| Justify | ![Text align justify](../images/textAlign-Justify.png) |
-
-## Text Wrapping
-
-When label text exceeds node or connector boundaries, the [`text wrapping`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textwrapping) property controls how content is handled. Text can be wrapped into multiple lines based on the specified wrapping behavior.
+When label text exceeds node or connector boundaries, the [`textWrapping`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textwrapping) property controls how content is handled. Text can be wrapped into multiple lines based on the specified wrapping behavior.
 
 The following code shows text wrapping implementation:
 
@@ -213,11 +213,11 @@ The following code shows text wrapping implementation:
 | -------- | -------- | -------- |
 | No Wrap | Text will not be wrapped and may extend beyond boundaries. | ![Label No Wrap](../images/Wrap1.png) |
 | Wrap | Text wrapping occurs when content overflows beyond available width. | ![Label Wrap](../images/Wrap2.png) |
-| WrapWithOverflow (Default) | Text wrapping occurs with overflow allowed for very long words that cannot be broken. | ![Label WrapWith Overflow](../images/Wrap3.png) |
+| WrapWithOverflow (Default) | Text wrapping occurs with overflow allowed for very long words that cannot be broken. | ![Label WrapWithOverflow](../images/Wrap3.png) |
 
 ## Text overflow
 
-The [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textoverflow) property manages content display when text exceeds the available label space. This property works in conjunction with text wrapping to provide comprehensive text handling.
+The [`textOverflow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textoverflow) property manages content display when text exceeds the available label space. This property works in conjunction with `textWrapping` to provide comprehensive text handling.
 
 Available overflow options include:
 
@@ -225,7 +225,7 @@ Available overflow options include:
 - `Ellipsis` - Overflowing content is replaced with three dots (...)
 - `Wrap` - Content renders with vertical overflow and horizontal wrapping
 
-| TextOverflow | Output image |
+| textOverflow | Output image |
 |-----|-----|
 | Clip | ![Text Overflow Clip](../images/text-overflow-clip.png) |
 | Ellipsis | ![Text Overflow Ellipsis](../images/text-overflow-ellipsis.png) |

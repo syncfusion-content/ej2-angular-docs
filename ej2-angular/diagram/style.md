@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style in Angular Diagram | Syncfusion®
-description: Customize connector endpoint handles, selection indicators, and interactive controls in the Syncfusion® Angular Diagram using CSS overrides on built-in class selectors.
+description: Customize connector endpoint handles, selection indicators, and interactive controls in the Angular Diagram using CSS overrides on built-in class selectors.
 platform: ej2-angular
 control: Style 
 documentation: ug
@@ -12,6 +12,8 @@ domainurl: ##DomainURL##
 
 The Angular Diagram component provides extensive styling capabilities through CSS classes. This guide demonstrates how to customize various visual elements including connector handles, selection indicators, and interactive controls using CSS overrides.
 
+N> Place the following CSS overrides in your application's global stylesheet (e.g. `styles.css`) or a component-scoped style file so the Diagram selectors are styled correctly.
+
 ## Customizing connector endpoint handles
 
 The connector endpoint handles are visual indicators that appear when hovering over or interacting with connector endpoints. These handles can be styled to match application themes or improve visibility.
@@ -20,7 +22,7 @@ The connector endpoint handles are visual indicators that appear when hovering o
 
 Use the following CSS to customize the connector endpoint handle appearance:
 
-```scss
+```
 .e-diagram-endpoint-handle {
     fill: red;
     stroke: green;
@@ -34,7 +36,7 @@ Use the following CSS to customize the connector endpoint handle appearance:
 
 When a connector endpoint is connected to a node or another connector, apply different styling to indicate the connected state:
 
-```scss
+```
 .e-diagram-endpoint-handle.e-connected {
     fill: red;
     stroke: green;
@@ -48,13 +50,14 @@ When a connector endpoint is connected to a node or another connector, apply dif
 
 For disabled connector endpoints, customize the appearance to clearly indicate the non-interactive state:
 
-```scss
+```
 .e-diagram-endpoint-handle.e-disabled {
     fill: lightgrey;
     opacity: 1;
     stroke: black;
 }
 ```
+
 ![Connector End point disabled](images/connectorEndPoint3.png)
 
 ## Customizing connector segment handles
@@ -65,7 +68,7 @@ Connector segment handles allow users to manipulate different types of connector
 
 The Bezier segment handles control the curvature of Bezier connectors:
 
-```scss
+```
 .e-diagram-bezier-segment-handle {
     stroke: yellow;
     stroke-width: 2px;
@@ -79,7 +82,7 @@ The Bezier segment handles control the curvature of Bezier connectors:
 
 Control points define the curve shape of Bezier connectors and can be styled independently:
 
-```scss
+```
 .e-diagram-bezier-control-handle {
     stroke: yellow;
     stroke-width: 2px;
@@ -93,7 +96,7 @@ Control points define the curve shape of Bezier connectors and can be styled ind
 
 Orthogonal connectors use segment handles for adjusting right-angled path segments:
 
-```scss
+```
 .e-diagram-ortho-segment-handle {
     stroke: yellow;
     stroke-width: 2px;
@@ -107,7 +110,7 @@ Orthogonal connectors use segment handles for adjusting right-angled path segmen
 
 Straight connectors provide handles for direct path manipulation:
 
-```scss
+```
 .e-diagram-straight-segment-handle {
     stroke: yellow;
     stroke-width: 2px;
@@ -125,7 +128,7 @@ Selection handles and related controls provide visual feedback during object man
 
 Resize handles appear on selected objects to enable size adjustments:
 
-```scss
+```
 .e-diagram-resize-handle {
     fill: yellow;
     opacity: 1;
@@ -139,7 +142,7 @@ Resize handles appear on selected objects to enable size adjustments:
 
 The selector outline indicates which objects are currently selected:
 
-```scss
+```
 .e-diagram-selector {
     stroke: yellow;
     stroke-width: 2px;
@@ -152,7 +155,7 @@ The selector outline indicates which objects are currently selected:
 
 Customize the border that surrounds selected objects:
 
-```scss
+```
 .e-diagram-border {
     stroke: red;
 }
@@ -160,9 +163,9 @@ Customize the border that surrounds selected objects:
 
 ### Pivot line
 
-The pivot line connects the selection area to the rotation handle:
+The pivot line connects the selection area to the rotation handle.
 
-```scss
+```
 .e-diagram-pivot-line {
     stroke: black;
     stroke-width: 2px;
@@ -175,7 +178,7 @@ The pivot line connects the selection area to the rotation handle:
 
 The rotation handle enables object rotation and can be customized for better visibility:
 
-```scss
+```
 .e-diagram-rotate-handle {
     fill: yellow;
     stroke: orange;
@@ -188,11 +191,13 @@ The rotation handle enables object rotation and can be customized for better vis
 
 The Symbol Palette provides drag-and-drop functionality with interactive states that can be styled.
 
+N> The Symbol Palette uses its own `.e-symbolpalette` root class, so these selectors do not require the `.e-diagram` prefix.
+
 ### Hover state styling
 
 Customize the appearance when hovering over symbols in the palette:
 
-```scss
+```
 .e-symbolpalette .e-symbol-hover:hover {
     background: red;
 }
@@ -204,7 +209,7 @@ Customize the appearance when hovering over symbols in the palette:
 
 Style the selected symbol appearance in the palette:
 
-```scss
+```
 .e-symbolpalette .e-symbol-selected {
     background: yellow;
 }
@@ -220,7 +225,7 @@ The ruler provides measurement guidance and can be styled to match the applicati
 
 Customize the ruler's background color and font properties:
 
-```scss
+```
 .e-diagram .e-ruler {
     background-color: blue;
     font-size: 13px;
@@ -233,7 +238,7 @@ Customize the ruler's background color and font properties:
 
 The overlap area where horizontal and vertical rulers intersect can be styled separately:
 
-```scss
+```
 .e-diagram .e-ruler-overlap {
     background-color: red;
 }
@@ -245,7 +250,7 @@ The overlap area where horizontal and vertical rulers intersect can be styled se
 
 Customize the color and thickness of measurement markers on the ruler:
 
-```scss
+```
 .e-diagram .e-d-ruler-marker {
     stroke: yellow;
     stroke-width: 3px;
@@ -258,11 +263,13 @@ Customize the color and thickness of measurement markers on the ruler:
 
 The text editing interface appears when editing text content within diagram objects.
 
+N> Selectors prefixed with `.e-diagram` apply within the diagram surface. Standalone selectors (e.g. `.e-diagram-endpoint-handle`) style matching elements wherever they render.
+
 ### Text edit container
 
 Style the text editing container that appears during text input:
 
-```scss
+```
 .e-diagram .e-diagram-text-edit {
     background: white;
     border-color: blue;
@@ -280,7 +287,7 @@ Style the text editing container that appears during text input:
 
 Customize the appearance of selected text within the editing interface:
 
-```scss
+```
 .e-diagram-text-edit::selection {
     background: yellow;
     color: green;
@@ -291,13 +298,13 @@ Customize the appearance of selected text within the editing interface:
 
 ## Customizing page break indicators
 
-Page break lines help visualize page boundaries when printing or exporting diagrams.
+Page break lines help visualize page boundaries when printing or exporting diagrams. For more on printing and exporting, see the [`Print`](./print) and [`Export`](./export) topics.
 
-```scss
+```
 .e-diagram-page-break {
     stroke: red;
     stroke-width: 2px;
 }
 ```
 
-![Text edit box selected](images/page-break.png)
+![Page break](images/page-break.png)

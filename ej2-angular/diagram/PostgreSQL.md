@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Syncfusion® Angular Diagram component allows visualization of organizational chart layout using data from a PostgreSQL database through a REST API. This guide explains how to set up the PostgreSQL database, create a Node.js backend service, and link the data to the Angular Diagram component to display an organizational chart layout.
 
-> **Note**: This guide works with Angular Diagram version 28.x or later. The REST API needs to return an array of JSON objects with **id**, **parent_id**, and **role** fields for correct data binding.
+N> This guide works with Angular Diagram version 28.x or later. The REST API needs to return an array of JSON objects with **id**, **parent_id**, and **role** fields for correct data binding.
 
 ## Overview
 
@@ -92,7 +92,7 @@ Follow this simple sequence for every SQL in this guide.
 
 Run the following SQL to create the **org_chart_layout** table:
 
-```sql
+```
 CREATE TABLE IF NOT EXISTS org_chart_layout (
   id text PRIMARY KEY,
   role text NOT NULL,
@@ -110,7 +110,7 @@ The table structure includes:
 
 Add organizational chart data using the SQL **INSERT** statement. The sample data shows a typical organizational structure with board, management, and department levels.
 
-```sql
+```
 INSERT INTO org_chart_layout (id, role, parent_id) VALUES
 ('parent', 'Board', NULL),
 ('1', 'General Manager', 'parent'),
@@ -141,7 +141,7 @@ SET role = EXCLUDED.role,
 
 Run a **SELECT** query to confirm the data insertion:
 
-```sql
+```
 SELECT * FROM org_chart_layout ORDER BY id;
 ```
 
@@ -151,7 +151,7 @@ The query should return the inserted rows. Parent–child relationships are indi
 
 ### Option B: Automated (seed script)
 
-This project includes an automated initialization script that handles database creation, table schema generation, and data seeding in one command.  
+This project includes an automated initialization script that handles database creation, table schema generation, and data seeding in one command. The sample project is available in the [GitHub repository](https://github.com/SyncfusionExamples/ej2-web-diagram-examples/tree/master/Angular/organizational-chart-postgresql). This script depends on the backend folder structure and dependencies created in the sections below.
 
 The script performs the following operations:
 1. **Dynamic Database Provisioning**: Detects if the database exists and creates it automatically.
@@ -166,7 +166,7 @@ The implementation details for the automated initialization script are covered i
 
 Create a **server** folder inside the project root folder, navigate to it, and install the following packages:
 
-```powershell
+```
 cd server
 npm install express pg cors dotenv
 npm install -D @types/express @types/pg @types/cors @types/node typescript tsx nodemon
@@ -179,7 +179,7 @@ npm install -D @types/express @types/pg @types/cors @types/node typescript tsx n
 - **dot env** - Loads environment variables from the .env file.
 - **typescript**, **ts** - TypeScript runtime and compiler.
 
-> **Important**: If you're setting up the server folder for the first time, ensure all dependencies are installed before proceeding. Run `npm install` in the **server** folder to install all packages listed in the commands above.
+N> If you're setting up the server folder for the first time, ensure all dependencies are installed before proceeding. Run `npm install` in the **server** folder to install all packages listed in the commands above.
 
 ### Database connection configuration
 
@@ -197,13 +197,13 @@ PORT=5000
 NODE_ENV=development
 ```
 
-> **Note**: Update **DB_PASSWORD** to match your local PostgreSQL credentials.
+N> Update **DB_PASSWORD** to match your local PostgreSQL credentials.
 
 #### Connection pool configuration
 
 Create a **server/src/db/index.ts** file to configure the connection pool that manages database connections efficiently.
 
-```ts
+```
 import { Pool } from 'pg';
 import dotenv from 'dotenv';
 
@@ -222,20 +222,22 @@ const pool = new Pool({
 
 pool.on('error', (err) => {
   console.error('Unexpected error on idle client', err);
-  process.exit(-1);
+  process.exit(1);
 });
 
 export default pool;
 ```
 The error handler captures unexpected database errors on idle connections and terminates the application to prevent operating in an unstable state.
 
-> **Important**: Replace **your_password** with the actual PostgreSQL password set during installation. Never commit the **.env** file to version control.
+N> The `.js` extension imports require `moduleResolution: NodeNext` (or `Bundler`) in `server/tsconfig.json`.
+
+N> Replace **your_password** with the actual PostgreSQL password set during installation. Never commit the **.env** file to version control.
 
 #### TypeScript type definitions
 
 Create a **server/src/types/layout.types.ts** file and add the following interface:
 
-```ts
+```
 export interface LayoutNode {
   id: string;
   parent_id: string | null;
@@ -251,7 +253,7 @@ This section explains the automated database initialization and seeding process 
 
 Create a **server/src/data/layoutSeed.json** file with the organizational chart data:
 
-```json
+```
 [
   { "id": "parent", "parent_id": null, "role": "Board" },
   { "id": "1", "parent_id": "parent", "role": "General Manager" },
@@ -278,7 +280,7 @@ Create a **server/src/data/layoutSeed.json** file with the organizational chart 
 
 Create a **server/src/script/seedLayout.ts** file that automates database creation and data insertion:
 
-```ts
+```
 import pool from '../db/index.js';
 import pkg from 'pg';
 const { Client } = pkg;
@@ -370,7 +372,7 @@ seedDatabase();
 
 Add the seed script to your **server/package.json** file:
 
-```json
+```
 {
   "scripts": {
     "build": "tsc",
@@ -381,15 +383,15 @@ Add the seed script to your **server/package.json** file:
 }
 ```
 
-> **Important**: Before running the seed script, ensure all dependencies are installed. If this is your first time setting up the server folder, run:
-> ```powershell
-> cd server
-> npm install
-> ```
+N> Before running the seed script, ensure all dependencies are installed. If this is your first time setting up the server folder, run:
+N>```
+N>cd server
+N>npm install
+N>```
 
 Execute the following command to initialize the database:
 
-```powershell
+```
 cd server
 npm run seed
 ```
@@ -404,7 +406,7 @@ Create the API layer to expose organizational chart data to the frontend.
 
 Create a **server/src/controllers/layout.controller.ts** file to handle database queries:
 
-```ts
+```
 import { Request, Response } from 'express';
 import pool from '../db/index.js';
 import { LayoutNode } from '../types/layout.types.js';
@@ -442,7 +444,7 @@ export const getLayoutData = async (req: Request, res: Response): Promise<void> 
 
 Create a **server/src/routes/layout.routes.ts** file to map URL endpoints to controller functions:
 
-```ts
+```
 import { Router } from 'express';
 import { getLayoutData } from '../controllers/layout.controller.js';
 
@@ -462,7 +464,7 @@ This creates the endpoint **http://localhost:5000/api/layout** that returns the 
 
 Create a **server/src/server.ts** file to configure Express, enable CORS, and start the server:
 
-```ts
+```
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -531,7 +533,7 @@ startServer();
 
 Open a terminal and navigate to the **server** folder:
 
-```powershell
+```
 cd server
 npm run dev
 ```
@@ -549,7 +551,7 @@ This confirms:
 - Express server is listening on port 5000.
 - The API endpoint is accessible.
 
-> **Important**: Keep this terminal window open. The backend must continue running to serve data to the frontend.
+N> Keep this terminal window open. The backend must continue running to serve data to the frontend.
 
 ## Frontend implementation
 
@@ -557,22 +559,22 @@ This confirms:
 
 From your project root, create the Angular application using Angular CLI:
 
-```powershell
+```
 ng new client --routing=false --style=css --standalone
 ```
 
-> **Note**: The `--standalone` flag is supported in Angular CLI 15.x and later. If you're using an older CLI version, you have two options:
-> 1. **Update Angular CLI**: Run `npm install -g @angular/cli@latest` to upgrade to the latest version (recommended).
-> 2. **Use traditional modules**: Remove the `--standalone` flag and use the traditional NgModule-based approach. You'll need to import components in `app.module.ts` instead of using standalone components.
-> 
-> For this guide, Angular CLI 18.x or newer is recommended (as specified in Prerequisites).
+N> The `--standalone` flag is supported in Angular CLI 15.x and later. If you're using an older CLI version, you have two options:
+N> 1. **Update Angular CLI**: Run `npm install -g @angular/cli@latest` to upgrade to the latest version (recommended).
+N> 2. **Use traditional modules**: Remove the `--standalone` flag and use the traditional NgModule-based approach. You'll need to import components in `app.module.ts` instead of using standalone components.
+N> 
+N> For this guide, Angular CLI 18.x or newer is recommended (as specified in Prerequisites).
 
 When prompted, choose the following options:
 - **Would you like to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Pre rendering)?** No
 
 Navigate to the client folder and install Syncfusion packages:
 
-```powershell
+```
 cd client
 npm install zone.js @syncfusion/ej2-angular-diagrams @syncfusion/ej2-data @syncfusion/ej2-base @syncfusion/ej2-diagrams
 ```
@@ -584,11 +586,11 @@ npm install zone.js @syncfusion/ej2-angular-diagrams @syncfusion/ej2-data @syncf
 - **@syncfusion/ej2-base** - Core utilities and base components.
 - **@syncfusion/ej2-diagrams** - Core diagram library.
 
-> **Important**: If you're setting up the client folder for the first time after creating it with Angular CLI, ensure all dependencies are installed before proceeding. The `ng new` command automatically runs `npm install`, but if you're working with an existing folder or encounter dependency issues, run `npm install` in the **client** folder.
+N> If you're setting up the client folder for the first time after creating it with Angular CLI, ensure all dependencies are installed before proceeding. The `ng new` command automatically runs `npm install`, but if you're working with an existing folder or encounter dependency issues, run `npm install` in the **client** folder.
 
 Import Syncfusion® CSS styles in the **client/src/styles.css** file for proper component rendering:
 
-```css
+```
 /* Import Material theme base styles */
 @import '@syncfusion/ej2-base/styles/material.css';
 
@@ -596,13 +598,13 @@ Import Syncfusion® CSS styles in the **client/src/styles.css** file for proper 
 @import '@syncfusion/ej2-diagrams/styles/material.css';
 ```
 
-> **Note**: Syncfusion® provides multiple themes (Material, Bootstrap, Fabric). This example uses Material theme for modern appearance.
+N> Syncfusion® provides multiple themes (Material, Bootstrap, Fabric). This example uses Material theme for modern appearance.
 
 #### TypeScript type definitions
 
 Create a **client/src/types/layout.types.ts** file and add the following interface:
 
-```ts
+```
 export interface LayoutNode {
   id: string;
   parent_id: string | null;
@@ -614,11 +616,9 @@ This interface defines the structure of each node in the organizational chart.
 
 ### Service layer
 
-Create a **client/src/services/layout.service.ts** file to handle API communication:
+Create a **client/src/services/layout.service.ts** file to handle API communication. This service layer handles the HTTP request, performs error checking, and returns typed data that components can use.
 
-This service layer handles the HTTP request, performs error checking, and returns typed data that components can use.
-
-```ts
+```
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -642,7 +642,7 @@ export class LayoutService {
 
 Update **client/src/app/app.config.ts** to include the HttpClient provider:
 
-```ts
+```
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
 
@@ -660,7 +660,7 @@ Create a **client/src/app/OrganizationalLayout/OrganizationalLayout.component.ts
 
 The Diagram component fetches data on initialization, binds it to the **DataManager**, and configures organizational chart layout properties.
 
-```ts
+```
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { 
@@ -679,7 +679,7 @@ import { LayoutNode } from '../../types/layout.types';
 Diagram.Inject(DataBinding, HierarchicalTree);
 
 @Component({
-  selector: 'app-OrganizationalLayout',
+  selector: 'app-organizational-layout',
   standalone: true,
   imports: [CommonModule, DiagramModule],
   template: `
@@ -824,7 +824,7 @@ export class DiagramOrgchartLayoutComponent implements OnInit {
 
 Update **client/src/app/app.ts** to include the diagram component:
 
-```ts
+```
 import { Component } from '@angular/core';
 import { DiagramOrgchartLayoutComponent } from './OrganizationalLayout/OrganizationalLayout.component';
 
@@ -838,7 +838,7 @@ import { DiagramOrgchartLayoutComponent } from './OrganizationalLayout/Organizat
         <h1>Syncfusion® Angular Diagram - Organizational Chart Layout</h1>
       </header>
       <main class="app-main">
-        <app-OrganizationalLayout></app-OrganizationalLayout>
+        <app-organizational-layout></app-organizational-layout>
       </main>
     </div>
   `,
@@ -876,7 +876,7 @@ export class App {
 
 Run the Angular dev server:
 
-```powershell
+```
 cd client
 npm start
 ```
@@ -890,7 +890,7 @@ Open `http://localhost:4200` in a browser. The organizational chart should rende
 4. Frontend receives data as Observable → subscribes to it → wraps it with **DataManager**.
 5. **DiagramComponent** renders organizational chart visualization.
 
-> **Note**: If the diagram doesn't appear, press F12 to check the browser console for errors and verify both backend and frontend servers are running.
+N> If the diagram doesn't appear, press F12 to check the browser console for errors and verify both backend and frontend servers are running.
 
 ## Troubleshooting
 
@@ -903,7 +903,7 @@ Open `http://localhost:4200` in a browser. The organizational chart should rende
 **Resolution Steps**:
 1. **Run Initialization**: Execute **npm run seed** in the **server** folder.
 2. **PostgreSQL Service**: Ensure PostgreSQL is running on your system:
-   ```powershell
+   ```
    Get-Service postgresql*
    ```
 3. **Check Permissions**: Ensure the database user has **CREATEDB** rights.
@@ -920,7 +920,7 @@ Open `http://localhost:4200` in a browser. The organizational chart should rende
 4. Update **DB_PASSWORD** in **server/.env** with the new password.
 5. Restart the Node.js server with **npm run dev**.
 
-> **Tip**: Avoid special characters in PostgreSQL passwords to prevent shell escaping issues.
+N> Avoid special characters in PostgreSQL passwords to prevent shell escaping issues.
 
 ### CORS configuration
 
@@ -934,7 +934,7 @@ CORS (Cross-Origin Resource Sharing) errors occur when the frontend and backend 
 1. Check the Angular dev server port (default 4200).
 2. Open **server/src/server.ts**.
 3. Update the CORS origin array to include the Angular port:
-   ```ts
+   ```
    app.use(cors({
      origin: ['http://localhost:4200'],
      credentials: true
@@ -953,14 +953,14 @@ An empty diagram (no nodes visible) can result from API failures, empty database
 **Diagnostic Steps**:
 
 1. **Verify API is responding**:
-   ```powershell
+   ```
    Invoke-RestMethod -Uri http://localhost:5000/api/layout
    ```
    **Expected**: JSON array with organizational chart data should be returned.
 
 2. **Check database has data**:
    Open pgAdmin Query Tool and execute:
-   ```sql
+   ```
    SELECT COUNT(*) FROM org_chart_layout;
    ```
    **Expected**: Should return the number of records inserted.
@@ -974,7 +974,7 @@ An empty diagram (no nodes visible) can result from API failures, empty database
 
 4. **Check component state**:
    - Add console logs in `OrganizationalLayout.component.ts`:
-     ```ts
+     ```
      ngOnInit(): void {
        this.layoutService.fetchLayoutData().subscribe({
          next: (layoutData: LayoutNode[]) => {
@@ -997,7 +997,7 @@ An empty diagram (no nodes visible) can result from API failures, empty database
 
 **Resolution**:
 Ensure **client/src/app/app.config.ts** includes `provideHttpClient()`:
-```ts
+```
 import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
@@ -1015,26 +1015,26 @@ export const appConfig: ApplicationConfig = {
 
 **Resolution Steps**:
 1. Navigate to the **client** folder:
-   ```powershell
+   ```
    cd client
    ```
 2. Install the `zone.js` package:
-   ```powershell
+   ```
    npm install zone.js
    ```
 3. Restart the Angular dev server:
-   ```powershell
+   ```
    npm start
    ```
 
-> **Note**: This error typically occurs when dependencies are not fully installed during the Angular CLI project creation. Always ensure all dependencies listed in the Frontend dependencies section are installed before running the application.
+N> This error typically occurs when dependencies are not fully installed during the Angular CLI project creation. Always ensure all dependencies listed in the Frontend dependencies section are installed before running the application.
 
-> Please find the sample in this [Github location](https://github.com/SyncfusionExamples/ej2-web-diagram-examples/tree/master/Angular/organizational-chart-postgresql)
+N> Please find the sample in this [Github location](https://github.com/SyncfusionExamples/ej2-web-diagram-examples/tree/master/Angular/organizational-chart-postgresql)
 
 ## See Also
 
 - [Syncfusion® Angular Diagram Documentation](https://ej2.syncfusion.com/angular/documentation/diagram/getting-started)
-- [DataManager API Reference](https://ej2.syncfusion.com/angular/documentation/data/getting-started)
+- [Getting Started with Data Manager](https://ej2.syncfusion.com/angular/documentation/data/getting-started)
 - [Organizational Chart Layout](https://ej2.syncfusion.com/angular/documentation/diagram/automatic-layout#organizational-chart)
 - [PostgreSQL Node.js Driver](https://node-postgres.com)
 - [Express REST API Best Practices](https://expressjs.com/en/guide/routing.html)

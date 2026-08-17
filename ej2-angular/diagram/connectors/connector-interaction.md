@@ -16,7 +16,7 @@ Connectors in the Angular Diagram component support various interaction capabili
 
 A connector can be selected by clicking on it. This selection enables further operations such as dragging, editing, or applying transformations.
 
-Connectors can be selected programmatically at runtime using the `select` method and selection can be cleared using the `clearSelection` method. The following code demonstrates how to select and clear selection in the diagram.
+Connectors can be selected programmatically at runtime using the [`select`](https://ej2.syncfusion.com/angular/documentation/api/diagram#select) method and selection can be cleared using the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/diagram#clearselection) method. The following code demonstrates how to select and clear selection in the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ Connectors can be repositioned by clicking and dragging them to a new location w
 
 ![Connector Drag Animation](../images/connector-dragGif.gif)
 
-A connector can be dragged programmatically at runtime using the `drag` method. The following code demonstrates how to drag a connector using the drag method.
+A connector can be dragged programmatically at runtime using the [`drag`](https://ej2.syncfusion.com/angular/documentation/api/diagram#drag) method. The following code demonstrates how to drag a connector using the drag method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,9 +92,7 @@ The diagram provides support for flipping connectors to create mirrored versions
 The available flip types are:
 
 * **Horizontal Flip** - Flips the connector horizontally across a central vertical axis, creating a mirror image.
-
 * **Vertical Flip** - Flips the connector vertically across a central horizontal axis.
-
 * **Both** - Reverses the connector's direction by swapping its source and target points.
 
 {% tabs %}
@@ -109,4 +107,10 @@ The available flip types are:
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsdecorator-cs2" %}
 
->Note: The flip operation is not applicable when connectors are connected to nodes.
+N> The flip operation is not applicable when connectors are connected to nodes.
+
+## See also
+
+* [Connectors](./connectors)
+* [Connector Customization](./connector-customization)
+* [Connector Events](./connector-events)
