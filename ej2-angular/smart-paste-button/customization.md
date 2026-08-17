@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization with Angular Smart Paste button component | Syncfusion
-description:  Checkout and learn about Customization with Angular Smart Paste button component of Syncfusion Essential JS 2 and more details.
+title: Customization in Angular Smart Paste Button | Syncfusion
+description: Customize the Angular Smart Paste Button using the inherited styles, types, and appearance options of the Syncfusion Angular Button component.
 platform: ej2-angular
 control: Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Types and Appearance
+# Customization in Angular Smart Paste Button
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Smart Paste Button component fully inherits all the properties, types, and styling options of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Button component. This means that you can leverage the existing features of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Button while benefiting from the enhanced functionality of the Smart Paste Button.
 
