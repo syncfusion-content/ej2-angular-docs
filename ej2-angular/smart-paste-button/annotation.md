@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Annotation with Angular Smart Paste button component | Syncfusion
-description:  Checkout and learn about Annotation with Angular Smart Paste button component of Syncfusion Essential JS 2 and more details.
+title: Annotation in Angular Smart Paste Button | Syncfusion
+description: Customize Smart Paste behavior in Angular by defining formatting, validation, and content-type rules for each field.
 platform: ej2-angular
 control: Annotation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotations (data-smartpaste-description)
+# Annotation in Angular Smart Paste Button
 
 The `data-smartpaste-description` attribute provides a way to customize the behavior of the Smart Paste Button. By using this attribute, pasted content is handled based on specific requirements. This customization can include setting content validation rules, formatting instructions, and defining acceptable content types.
 
@@ -141,7 +141,7 @@ async copyContent(id: string) {
   </p>
   <p>
       To quickly fill out the bug report form, copy the sample content and click the Smart Paste button. Know
-      more <a href="https://github.com/syncfusion/smart-ai-samples/blob/master/typescript/src/app/smartpaste/Readme.md">here</a>.
+      more <a href="https://github.com/syncfusion/smart-ai-samples/blob/master/typescript/src/app/smartpaste/Readme.md" aria-label="Learn about Smart Paste features">Smart Paste documentation</a>.
   </p>
   </div>
 </div>
