@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Microsoft SQL Server in Angular Pivot Table
 
-This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
+This section describes how to retrieve data from a SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 
 ## Steps to Connect the SQL Server Database via Web API Application
 
@@ -20,8 +20,8 @@ Download the ASP.NET Core Web Application from this [GitHub](https://github.com/
 ### Step 2: Understand the Application Structure
 The application named **PivotController** (server-side) that is downloaded from the above GitHub repository includes the following files:
 
-- **PivotController.cs** file under **Controllers** folder – This helps to do data communication with Pivot Table.
-- **Database1.mdf** file under **App_Data** folder – This MDF (Master Database File) file contains example data.
+- **PivotController.cs** file under the **Controllers** folder – This handles data communication with the Pivot Table.
+- **Database1.mdf** file under the **App_Data** folder – This MDF (Master Database File) file contains example data.
 
 ### Step 3: Connect to SQL Server and Retrieve Data
 In the **PivotController.cs** file, the [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) library is used to connect to a Microsoft SQL Server database and retrieve data for the Pivot Table.
@@ -188,4 +188,4 @@ export class AppComponent implements OnInit {
 ![Pivot Table bound with SQL database](../images/sql-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a SQL Server database in the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
+For a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application that fetches data from a SQL Server database, see the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.

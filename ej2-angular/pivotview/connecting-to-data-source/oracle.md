@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Oracle in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
@@ -24,8 +24,8 @@ Follow these steps to create a Web API service that retrieves data from an Oracl
 
 ### Step 2: Install the Oracle NuGet Package
 To enable Oracle database connectivity:
-1. Open the **NuGet Package Manager** in your project solution and search for [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core/).
-2. Install the [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core/) package to add Oracle support.
+1. Open the **NuGet Package Manager** in your project solution and search for [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core).
+2. Install the [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core) package to add Oracle support.
 
 ![Installing the Oracle.ManagedDataAccess.Core NuGet package](../images/oracle-data-nuget-package-install.png)
 
@@ -207,4 +207,4 @@ export class AppComponent implements OnInit {
 ![Pivot Table bound with Oracle database](../images/oracle-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Oracle database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Oracle-database-to-pivot-table) repository.
+For a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application that fetches data from an Oracle database, see this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Oracle-database-to-pivot-table) repository.

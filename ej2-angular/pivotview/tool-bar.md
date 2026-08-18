@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Toolbar in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table shows a built-in toolbar for switching between grid and chart, conditional formatting, and exports.
@@ -48,9 +48,9 @@ The following table lists the built-in toolbar options and their actions:
 
 ## Show desired chart types in the dropdown menu
 
-By default, the dropdown menu in the toolbar displays all available chart types. However, you may want to show only specific chart types in the dropdown menu based on your application’s needs. To do this, use the [`chartTypes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#charttypes) property. This property allows you to define a list of chart types that will appear in the dropdown menu, ensuring users see only the options you select.
+By default, the dropdown menu in the toolbar displays all available chart types. However, you may want to show only specific chart types in the dropdown menu based on your application’s needs. To do this, use the [`chartTypes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#charttypes) property. This property allows you to define a list of chart types that will appear in the dropdown menu, ensuring users see only the options you select.
 
-For example, if you want the dropdown menu to show only the Column, Bar, Line, and Area chart types, you can set the [`chartTypes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#charttypes) property to include these specific options. This makes the pivot chart easier to use by limiting the choices to those most relevant for your data.
+For example, if you want the dropdown menu to show only the Column, Bar, Line, and Area chart types, you can set the [`chartTypes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#charttypes) property to include these specific options. This makes the pivot chart easier to use by limiting the choices to those most relevant for your data.
 
 To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/angular/documentation/pivotview/pivot-chart#chart-types).
 
@@ -84,7 +84,7 @@ In the pivot chart, you can show or hide the legend dynamically using an option 
 
 ## Adding custom option to the toolbar
 
-You can add new items to the toolbar in the Angular Pivot Table component beyond the built-in options. This is done using the [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbarrender) event. Within this event, you can define the new toolbar item and specify what action it performs when clicked. Additionally, you can place the new item at a specific position in the toolbar using the `splice` method.
+You can add new items to the toolbar in the Angular Pivot Table component beyond the built-in options. This is done using the [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbarrender) event. Within this event, you can define the new toolbar item and specify what action it performs when clicked. Additionally, you can place the new item at a specific position in the toolbar using the `splice` method.
 
 Here’s an example of how to add a custom toolbar item:
 
@@ -100,11 +100,11 @@ Here’s an example of how to add a custom toolbar item:
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs290" %}
 
-In this example, a custom icon is added to the toolbar. The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbarrender) event helps position and define the action for the new item. Next, we will explore how to fully customize the toolbar panel using a template and include custom controls.
+In this example, a custom icon is added to the toolbar. The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbarrender) event helps position and define the action for the new item. Next, we will explore how to fully customize the toolbar panel using a template and include custom controls.
 
 ### Toolbar Template
 
-You can customize the entire toolbar panel by using the [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbartemplate) property. This allows you to design the toolbar with HTML elements and include any custom control, such as buttons or dropdowns, as toolbar items. The HTML structure for the toolbar is defined separately and linked to the Pivot Table by setting the `id` of the HTML element in the [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbartemplate) property.
+You can customize the entire toolbar panel by using the [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbartemplate) property. This allows you to design the toolbar with HTML elements and include any custom control, such as buttons or dropdowns, as toolbar items. The HTML structure for the toolbar is defined separately and linked to the Pivot Table by setting the `id` of the HTML element in the [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbartemplate) property.
 
 Below is an example of a custom toolbar with buttons to expand or collapse all rows in the Pivot Table:
 
@@ -134,13 +134,13 @@ Another option allows framing a custom toolbar item using HTML elements and incl
   
 {% previewsample "page.domainurl/samples/pivot-grid/toolbarTemplate-cs2" %}
 
-> Note: For both options, the actions for the toolbar template items can be defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbarclick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
+> Note: For both options, the actions for the toolbar template items can be defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbarclick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
 
 ## Save and load report as a JSON file
 
 You can save the current Pivot Table report as a JSON file and load it back into the Pivot Table whenever needed. This allows you to store your report settings, such as row, column, and value configurations, and reuse them later.
 
-To save a report, use the [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#getpersistdata) method to retrieve the current Pivot Table settings. These settings are then converted to a JSON file and downloaded to your chosen location. To load a report, select a JSON file containing the saved settings, and the Pivot Table will update to reflect those settings using the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property.
+To save a report, use the [`getPersistData`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#getpersistdata) method to retrieve the current Pivot Table settings. These settings are then converted to a JSON file and downloaded to your chosen location. To load a report, select a JSON file containing the saved settings, and the Pivot Table will update to reflect those settings using the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property.
 
 The following code example shows how to save and load a Pivot Table report as a JSON file. By clicking an external "Save" button, the `saveData` method is triggered to save the current report settings as a JSON file. Similarly, clicking an external "Load" button triggers the `readBlob` method to load a JSON file and restore the report settings.
 
@@ -997,31 +997,31 @@ Below points need to be considered when saving the report to SQL Server database
 
 ### FetchReport
 
-The [`fetchReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#fetchreport) event is triggered when a user clicks the dropdown list in the toolbar to retrieve saved reports. It includes the [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fetchReportArgs/#reportname) parameter, which holds the name of the selected report. This event allows users to fetch report names from local storage and populate the dropdown list for easy selection.
+The [`fetchReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fetchreport) event is triggered when a user clicks the dropdown list in the toolbar to retrieve saved reports. It includes the [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fetchReportArgs#reportname) parameter, which holds the name of the selected report. This event allows users to fetch report names from local storage and populate the dropdown list for easy selection.
 
 ### LoadReport
 
-The [`loadReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#loadreport) event occurs when a user selects a report from the dropdown list in the toolbar of the Pivot Table. This event allows the user to load the chosen report into the Pivot Table for viewing or analysis. It includes two parameters: [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadReportArgs/#report), which contains the details of the selected report, and [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadReportArgs/#reportname), which specifies the name of the report. These parameters allow the user to load the selected report into the Pivot Table, updating the displayed data based on the chosen report.
+The [`loadReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#loadreport) event occurs when a user selects a report from the dropdown list in the toolbar of the Pivot Table. This event allows the user to load the chosen report into the Pivot Table for viewing or analysis. It includes two parameters: [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadReportArgs#report), which contains the details of the selected report, and [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/loadReportArgs#reportname), which specifies the name of the report. These parameters allow the user to load the selected report into the Pivot Table, updating the displayed data based on the chosen report.
 
 ### NewReport
 
-The [`newReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#newreport) event is triggered when a user clicks the **New Report** icon in the toolbar. This event allows the user to create a new report and add it to the report list. The event provides a parameter, [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/newReportArgs/#report), which contains details about the new report. By using this event, users can easily start fresh with a new set of data configurations in the Pivot Table, managed through the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property.
+The [`newReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#newreport) event is triggered when a user clicks the **New Report** icon in the toolbar. This event allows the user to create a new report and add it to the report list. The event provides a parameter, [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/newReportArgs#report), which contains details about the new report. By using this event, users can easily start fresh with a new set of data configurations in the Pivot Table, managed through the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) property.
 
 ### RenameReport
 
-The [`renameReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#renamereport) event is triggered when a user clicks the rename report icon in the toolbar. This event allows users to change the name of a selected report from the report list. It includes the following parameters: [`rename`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/renameReportArgs/#rename), which holds the new report name entered by the user; [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/renameReportArgs/#report), which contains the details of the current report; and [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/renameReportArgs/#reportname), which stores the original name of the report.
+The [`renameReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#renamereport) event is triggered when a user clicks the rename report icon in the toolbar. This event allows users to change the name of a selected report from the report list. It includes the following parameters: [`rename`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/renameReportArgs#rename), which holds the new report name entered by the user; [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/renameReportArgs#report), which contains the details of the current report; and [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/renameReportArgs#reportname), which stores the original name of the report.
 
 ### RemoveReport
 
-The [`removeReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#removereport) event is triggered when a user clicks the remove report icon in the toolbar. It includes two parameters: [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/removeReportArgs/#report) and [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/removeReportArgs/#reportname). These parameters allow the user to identify and remove a selected report from the report list in the Pivot Table.
+The [`removeReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#removereport) event is triggered when a user clicks the remove report icon in the toolbar. It includes two parameters: [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/removeReportArgs#report) and [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/removeReportArgs#reportname). These parameters allow the user to identify and remove a selected report from the report list in the Pivot Table.
 
 ### SaveReport
 
-The [`saveReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#savereport) event triggers when a user clicks the save report icon in the toolbar. It allows the user to save changes made to the current report. The event includes two parameters: [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/saveReportArgs/#report), which contains the report details, and [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/saveReportArgs/#reportname), which specifies the name of the saved report.
+The [`saveReport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#savereport) event triggers when a user clicks the save report icon in the toolbar. It allows the user to save changes made to the current report. The event includes two parameters: [`report`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/saveReportArgs#report), which contains the report details, and [`reportName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/saveReportArgs#reportname), which specifies the name of the saved report.
 
 ### ToolbarRender
 
-The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbarrender) event triggers when the toolbar is displayed in the Pivot Table. It includes the [`customToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/toolbarArgs/#customtoolbar) parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://ej2.syncfusion.com/angular/documentation/pivotview/tool-bar#adding-custom-option-to-the-toolbar).
+The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbarrender) event triggers when the toolbar is displayed in the Pivot Table. It includes the [`customToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/toolbarArgs#customtoolbar) parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://ej2.syncfusion.com/angular/documentation/pivotview/tool-bar#adding-custom-option-to-the-toolbar).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -1037,7 +1037,7 @@ The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 ### BeforeExport
 
-The Pivot Table component allows users to export data as PDF, Excel, or CSV files using the toolbar options. The [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#beforeexport) event lets users customize settings for the exported document before the export process begins. For instance, users can add a header or footer to a PDF document by setting the [`header`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#header) and [`footer`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#footer) properties in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/) object within this event. Similarly, for Excel exports, users can define headers using the [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object.
+The Pivot Table component allows users to export data as PDF, Excel, or CSV files using the toolbar options. The [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#beforeexport) event lets users customize settings for the exported document before the export process begins. For instance, users can add a header or footer to a PDF document by setting the [`header`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#header) and [`footer`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#footer) properties in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) object within this event. Similarly, for Excel exports, users can define headers using the [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) object.
 
 Here’s an example of how to use the `beforeExport` event to customize headers and footers for both PDF and Excel exports:
 

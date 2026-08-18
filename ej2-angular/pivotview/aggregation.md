@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Aggregation in Angular Pivot Table | Syncfusion
-description: Learn how the Angular Pivot Table applies aggregation types like Sum, Average, Count, Median, and PercentageOfParentTotal to value fields.
+description: Learn how the Angular Pivot Table aggregates grouped values using built-in types like Sum, Count, Average, Min, Max, Product, Median, and more.
+control: Pivot Table
 platform: ej2-angular
-control: Aggregation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 End users can perform calculations on groups of values (specifically for value fields placed in the value axis) by using different aggregation types. By default, values are combined by summing them. Additional aggregation types are described below.
 
-> Numeric fields support all aggregation types listed below, except **CalculatedField**. Fields of type string, date, datetime, boolean, and similar types support only **Count** and **DistinctCount** aggregation.
+> Numeric fields support all aggregation types listed below. Fields of type string, date, datetime, boolean, and similar types support only **Count** and **DistinctCount** aggregation.
 
 | Operator | Description |
 |------|-------------|
@@ -26,13 +26,13 @@ End users can perform calculations on groups of values (specifically for value f
 | Max| Displays the maximum value for the selected field.|
 | Avg| Displays the average (mean) of the selected field values.|
 | Median| Displays the median value for the selected field.|
-| Index| Displays the index value for the selected field data.|
+| Index| Displays a sequential index number (1, 2, 3, …) for the selected field values in the pivot result.|
 | PopulationStDev| Displays the standard deviation of the population for the selected field.|
 | SampleStDev| Displays the sample standard deviation for the selected field.|
 | PopulationVar| Displays the variance of the population for the selected field.|
 | SampleVar| Displays the sample variance for the selected field.|
 | RunningTotals| Displays the running total for the selected field values.|
-| PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
+| PercentageOfRunningTotals| Displays the cumulative percentage of running totals (client-side engine only).|
 | DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
 | PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
@@ -41,15 +41,16 @@ End users can perform calculations on groups of values (specifically for value f
 | PercentageOfParentTotal| Displays the pivot table values with percentage of total of all values based on selected field.|
 | PercentageOfParentColumnTotal| Displays the pivot table values with percentage of its parent total in each column.|
 | PercentageOfParentRowTotal| Displays the pivot table values with percentage of its parent total in each row.|
-| CalculatedField| Displays the pivot table with calculated field values. It allows user to create a new calculated field alone.|
+
+> **Note:** **CalculatedField** is not an aggregation type. It enables you to create a new calculated field that is derived from existing fields using a formula. See the [Calculated Field](./calculated-field) section for details.
 
 ## Assigning aggregation type for value fields through API
 
-For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#type) in [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values). Meanwhile, aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of specific item using [`baseField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, **PercentageOfParentTotal** type can for specific field using [`baseField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.  
+For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#type) in [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values). Aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** also require a specific field and item, which are configured using the [`baseField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, the **PercentageOfParentTotal** type can be scoped to a specific field using the [`baseField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** takes the specified field and its corresponding member as input, then compares its value against other members in the same field and across different fields to compute the appropriate output value.
 
-* [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#type): It allows to set the aggregate type of the field.
-* [`baseField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#basefield): It allows to set the specific field to aggregate the values.
-* [`baseItem`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#baseitem): It allows to set the specific member to aggregate the values.
+* [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#type): It allows you to set the aggregate type of the field.
+* [`baseField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#basefield): It allows you to set the specific field to aggregate the values.
+* [`baseItem`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#baseitem): It allows you to set the specific member to aggregate the values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,7 +64,7 @@ For each value field, the aggregation type can be set using the property [`type`
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs1" %}
 
-> By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
+> By default, the aggregation is set to **Sum** for value fields that have a number type, and to **Count** for value fields that have non-number type values such as string, date, datetime, boolean, and so on.
 
 ## Modifying aggregation type for value fields at runtime
 
@@ -131,19 +132,21 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 ## Event
 
+The Pivot Table provides the following events to monitor aggregation-related UI actions. Each event lets you track or intercept a specific stage of the user interaction lifecycle.
+
 ### AggregateCellInfo
 
 The [`aggregateCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#aggregatecellinfo) event triggers each time a value cell is rendered. This allows users to override the cell's value or skip formatting. The event provides the following parameters:
 
-* `fieldName` - It holds current cell's field name.
-* `row` - It holds current cell's row value.
-* `column` - It holds current cell's column value.
-* `value` - It holds value of current cell.
-* `cellSets` - It holds raw data for the aggregated value cell.
-* `rowCellType` - It holds row cell type value.
-* `columnCellType` - It holds column cell type value.
-* `aggregateType` - It holds aggregate type of the cell.
-* `skipFormatting` - boolean property, it allows to skip formatting if applied.
+* `fieldName` - It holds the current cell's field name.
+* `row` - It holds the current cell's row value.
+* `column` - It holds the current cell's column value.
+* `value` - It holds the value of the current cell.
+* `cellSets` - It holds the raw data for the aggregated value cell.
+* `rowCellType` - It holds the row cell type value.
+* `columnCellType` - It holds the column cell type value.
+* `aggregateType` - It holds the aggregate type of the cell.
+* `skipFormatting` - Boolean property that allows you to skip formatting if applied.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -163,11 +166,11 @@ The event [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/p
 
 * [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#datasourcesettings): Contains the current data source settings such as input data source, rows, columns, values, filters, format settings and more.
 
-* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#actionname): Provides the name of the current action initiated. For example, when selecting aggregation, the action name is **Aggregate field**.
+* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#actionname): Provides the name of the current action. For example, when selecting aggregation, the action name is **Aggregate field**.
 
 * [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#fieldinfo): Contains information regarding the selected value field.
 
-> Note: This option applies only to actions performed through the field-based UI, such as filtering, sorting, removing a field from the grouping bar, editing, and changing the aggregation type.
+> Note: This event applies only to actions performed through the field-based UI, such as filtering, sorting, removing a field from the grouping bar, editing, and changing the aggregation type.
 
 * [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#cancel): Allows restricting the current action.
 
@@ -190,7 +193,7 @@ In the following example, an action taken during aggregation type selection via 
 The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actioncomplete) event is triggered when a UI action is completed, such as changing the aggregation type using the dropdown icon in the value field button, available within both the grouping bar and field list user interfaces. This event enables users to identify which UI action has been completed at runtime. The event provides the following parameters:
 
 * [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#datasourcesettings): The current data source settings, including input data source, rows, columns, values, filters, format settings, and related properties.
-* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actionname): Specifies the name of the completed action. For example, after changing the aggregation type, the value will be **Field aggregated**.
+* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actionname): Specifies the name of the completed action. For example, after changing the aggregation type, the action name will be **Field aggregated**.
 * [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#fieldinfo): Contains information about the selected value field.
 * [`actionInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actioninfo): Defines the unique information about the current UI action performed.
 
@@ -212,8 +215,8 @@ The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 
 The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionfailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
-- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#actionname): Specifies the name of the failed action. For example, if the failure occurs during aggregation, the action name will be **Aggregate field**.
-- [`errorInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#errorinfo): Contains detailed error information related to the failed UI action.
+* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#actionname): Specifies the name of the failed action. For example, if the failure occurs during aggregation, the action name will be **Aggregate field**.
+* [`errorInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#errorinfo): Contains detailed error information related to the failed UI action.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

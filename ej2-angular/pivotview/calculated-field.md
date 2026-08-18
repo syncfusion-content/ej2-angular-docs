@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Calculated Field in Angular Pivot Table | Syncfusion
-description: Learn how the Angular Pivot Table creates calculated fields using arithmetic operators, the calculatedFieldSettings dialog, and the onClick event.
+title: Calculated field in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table calculates new value fields at runtime using custom formulas, arithmetic operators, and the calculatedFieldSettings property.
+control: Pivot Table
 platform: ej2-angular
-control: Calculated field 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -46,7 +46,7 @@ To use the calculated field feature, you must inject the `CalculatedFieldService
 
 ## Opening the calculated field dialog programmatically
 
-You can display the calculated field dialog by calling the `createCalculatedFieldDialog` method when an external button is clicked. This provides additional flexibility for accessing the calculated field functionality.
+You can display the calculated field dialog by calling the [`createCalculatedFieldDialog`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#createcalculatedfielddialog) method when an external button is clicked. This provides additional flexibility for accessing the calculated field functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,10 +89,10 @@ To rename a calculated field:
 4. Replace the existing name with your preferred name.
 5. Click **OK** to save the new name.
 
-![Editing the calculated field](../images/calculatdfield-renaming1.png)
+![Renaming the calculated field - dialog open](../images/calculatdfield-renaming1.png)
 <br/>
 
-![Renaming the calculated field](../images/calculatdfield-renaming2.png)
+![Renaming the calculated field - saved](../images/calculatdfield-renaming2.png)
 
 ## Editing an existing calculated field formula
 
@@ -109,10 +109,10 @@ To edit an existing calculated field formula:
 
 The pivot table will automatically refresh to reflect the updated calculations.
 
-![Editing the calculated field](../images/calculatdfield-field-edit1.png)
+![Editing a calculated field - dialog open](../images/calculatdfield-field-edit1.png)
 <br/>
 
-![Editing the calculated field formula](../images/calculatdfield-field-edit2.png)
+![Editing a calculated field - formula updated](../images/calculatdfield-field-edit2.png)
 
 ## Reusing an existing formula in a new calculated field
 
@@ -146,7 +146,7 @@ To format calculated field values in your code, use the [`formatSettings`](https
 
 To apply formatting to calculated field values via the user interface, use the built-in "Format" dropdown available in the calculated field dialog. This dropdown provides the following predefined format options:
 
-* **Standard** - Displays numbers in their basic numeric form.
+* **Standard** - Displays numbers using the default numeric format (equivalent to the `N` format).
 * **Currency** - Displays numbers as currency values.
 * **Percent** - Displays numbers as percentage values.
 * **Custom** - Allows you to specify a custom format pattern.
@@ -193,10 +193,10 @@ Below is a list of operators and functions that can be used in the formula to cr
 * `^` – power operator.
 
     ```typescript
-     Syntax: X^2
+     Syntax: X^Y
     ```
 
-* `<` - less than operator.
+* `<` – less than operator.
 
     ```typescript
       Syntax: X < Y
@@ -247,19 +247,19 @@ Below is a list of operators and functions that can be used in the formula to cr
 * `?` – conditional operator.
 
     ```typescript
-     Syntax: condition ? then : else
+     Syntax: condition ? valueIfTrue : valueIfFalse
    ```
 
-* `isNaN` – function that checks if the value is not a number.
+* `isNaN` – function that checks if the value is not a number (returns `true` for `NaN`).
 
     ```typescript
     Syntax: isNaN(value)
    ```
 
-* `!isNaN` – function that checks if the value is a number.
+* `!isNaN` – function that checks if the value is a number (returns `true` for any number).
 
     ```typescript
-      Syntax: isNaN(value)
+      Syntax: !isNaN(value)
     ```
 
 * `abs` – function that returns the absolute value of a number.
@@ -295,6 +295,8 @@ Below is a list of operators and functions that can be used in the formula to cr
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs11" %}
 
 ## Event
+
+The Pivot Table provides the following events to monitor calculated field operations. Each event lets you track, validate, or intercept a specific stage of the user interaction workflow.
 
 ### CalculatedFieldCreate
 
@@ -349,9 +351,9 @@ The event provides the following parameters to help you handle these interaction
 
 | User Action | Action Name |
 |-------------|-------------|
-| [Calculated field button click](./calculated-field#Calculated-Field) | Open calculated field dialog |
-| [Edit icon click for calculated field](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar) | Edit calculated field |
-| [Context menu in calculated field dialog tree view](./calculated-field#Calculated-Field) | Calculated field context menu |
+| [Calculated field button click](./calculated-field#creating-calculated-fields) | Open calculated field dialog |
+| [Edit icon click for calculated field](./calculated-field#editing-through-the-field-list-and-grouping-bar) | Edit calculated field |
+| [Context menu in calculated field dialog tree view](./calculated-field#creating-calculated-fields) | Calculated field context menu |
 
 - [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#fieldinfo): Provides information about the selected field when the action involves a specific field.
 
@@ -389,8 +391,8 @@ The event provides the following parameters to help you handle completed operati
 
 | User Action | Action Name |
 |-------------|-------------|
-| [Creating calculated field](./calculated-field#calculated-field) | Calculated field applied |
-| [Editing calculated field](./calculated-field#editing-through-the-field-list-and-the-grouping-bar) | Calculated field edited |
+| [Creating calculated field](./calculated-field#creating-calculated-fields) | Calculated field applied |
+| [Editing calculated field](./calculated-field#editing-through-the-field-list-and-grouping-bar) | Calculated field edited |
 
 - [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#fieldinfo): Provides information about the selected field when the action involves a specific field.
 
@@ -418,13 +420,13 @@ The example below demonstrates how to use the [`actionComplete`](https://ej2.syn
 
 The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionfailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
-* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#actionname): It holds the name of the current action failed. The following are the UI actions and their names:
+* [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#actionname): It holds the name of the current action that failed. The following are the UI actions and their names:
 
    | Action | Action Name |
    |------|-------------|
-   | [`Calculated field button`](./calculated-field#Calculated-Field)| Open calculated field dialog|
-   | [`Edit icon in calculated field`](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#Calculated-Field)| Calculated field context menu|
+   | [`Calculated field button`](./calculated-field#creating-calculated-fields)| Open calculated field dialog|
+   | [`Edit icon in calculated field`](./calculated-field#editing-through-the-field-list-and-grouping-bar)| Edit calculated field|
+   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#creating-calculated-fields)| Calculated field context menu|
 
 * [`errorInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#errorinfo): It holds the error information of the current UI action.
 
