@@ -3,14 +3,14 @@ layout: post
 title: Grouping Bar in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table uses the grouping bar to drag and drop fields between row, column, value, and filter axes.
 platform: ej2-angular
-control: Grouping bar 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Grouping Bar in Angular Pivot Table
 
-The Grouping Bar option in the Pivot Table automatically displays fields from the bound data source. It allows users to drag and drop fields between different axes such as columns, rows, values, and filters to create a pivot table at runtime. You can enable it by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showgroupingbar) property to **true**.
+The Grouping Bar option in the Pivot Table automatically displays fields from the bound data source. It allows users to drag and drop fields between different axes such as columns, rows, values, and filters to create a Pivot Table at runtime. You can enable it by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showgroupingbar) property to **true**. The default value is **false**.
 
 The grouping bar provides intuitive interactions similar to the Field List, making report creation accessible to all users. These interactions include:
 
@@ -19,6 +19,7 @@ The grouping bar provides intuitive interactions similar to the Field List, maki
 * Adding fields to the report using the fields panel option.
 * Filtering members of specific fields using the filter icon.
 * Sorting members of specific fields using the sort icon.
+* Changing the aggregation type of value fields using the dropdown icon.
 
 To use the grouping bar, you need to inject the `GroupingBarService` module in the Pivot Table.
 
@@ -34,13 +35,24 @@ To use the grouping bar, you need to inject the `GroupingBarService` module in t
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs125" %}
 
-The grouping bar offers additional options to modify its appearance and behavior using the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings) property.
+The grouping bar offers additional options to modify its appearance and behavior using the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings) property. The available sub-properties are summarized below:
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `showFieldsPanel` | `boolean` | `false` | Shows or hides the fields panel above the grouping bar. |
+| `showFilterIcon` | `boolean` | `true` | Shows or hides the filter icon for all fields. |
+| `showSortIcon` | `boolean` | `true` | Shows or hides the sort icon for all fields. |
+| `showRemoveIcon` | `boolean` | `true` | Shows or hides the remove icon for all fields. |
+| `showValueTypeIcon` | `boolean` | `true` | Shows or hides the aggregation dropdown icon for all value fields. |
+| `allowDragAndDrop` | `boolean` | `true` | Enables or disables drag-and-drop for all fields. |
+
+The same options can also be set on individual field items inside `dataSourceSettings` to control the behavior of a specific field.
 
 ## Show or hide fields panel
 
 The fields panel appears above the grouping bar and shows all the fields that are available in the data source but not currently used in the Pivot Table report. Users can drag and drop these fields into the appropriate axes (rows, columns, values, or filters) to build their desired Pivot Table layout. When a field is removed from any axis, it automatically returns to the fields panel for reuse.
 
-To display the fields panel, set the [`showFieldsPanel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showfieldspanel) property to **true** within the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings) configuration.
+To display the fields panel, set the [`showFieldsPanel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showfieldspanel) property to **true** within the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings) configuration. The default value is **false**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,11 +66,11 @@ To display the fields panel, set the [`showFieldsPanel`](https://ej2.syncfusion.
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs126" %}
 
-## Show or hide all filter icon
+## Show or hide filter icon for all fields
 
-The Grouping Bar provides an option to filter members of specific fields during runtime in the Pivot Table. To filter members in a field, click the filter icon next to the field name and select or deselect the members you want to display. 
+Use the filter icon next to a field name to filter its members at runtime. To filter members, click the filter icon and select or deselect the members you want to display.
 
-By default, the filter icon appears next to each field in the grouping bar. If you want to hide the filter icon, set the [`showFilterIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showfiltericon) property to **false** within the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings) configuration.
+By default, the filter icon appears next to each field in the grouping bar. To hide the filter icon for all fields, set the [`showFilterIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showfiltericon) property to **false** within the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings) configuration.
 
 > By default, the filter icon is enabled in the grouping bar.
 
@@ -74,9 +86,9 @@ By default, the filter icon appears next to each field in the grouping bar. If y
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs127" %}
 
-## Show or hide specific filter icon
+## Show or hide filter icon for a specific field
 
-By default, the filter icon appears for all fields in the grouping bar. To hide the filter icon for specific fields, set the [`showFilterIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#showfiltericon) property to **false** for those fields in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). This lets you control which fields can be filtered, providing a cleaner and more focused user interface.
+By default, the filter icon appears for all fields in the grouping bar. To hide the filter icon for a specific field, set the [`showFilterIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#showfiltericon) property to **false** for that field in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). This lets you control which fields can be filtered, providing a cleaner and more focused user interface.
 
 In the sample below, the filter icons for the "Quarter" and "Products" fields are hidden.
 
@@ -92,11 +104,11 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs128" %}
 
-## Show or hide all sort icon
+## Show or hide sort icon for all fields
 
-The Grouping Bar provides an option to sort members of a particular field in either ascending or descending order at runtime. To sort a field, click the sort icon next to the field name. To reverse the sort direction, click the same sort icon again. By default, the sort icon is displayed next to each field in the grouping bar, and members are arranged in ascending order. 
+The Grouping Bar provides an option to sort members of a particular field in either ascending or descending order at runtime. To sort a field, click the sort icon next to the field name. To reverse the sort direction, click the same sort icon again. By default, the sort icon is displayed next to each field in the grouping bar, and members are arranged in ascending order.
 
-To disable the sort option, set the [`showSortIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showsorticon) property to **false** within the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings) configuration.
+To disable the sort option for all fields, set the [`showSortIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showsorticon) property to **false** within the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings) configuration.
 
 > By default, the sort icon is enabled in the grouping bar.
 
@@ -112,7 +124,7 @@ To disable the sort option, set the [`showSortIcon`](https://ej2.syncfusion.com/
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs129" %}
 
-## Show or hide specific sort icon
+## Show or hide sort icon for a specific field
 
 You can choose to show or hide the sort icon for individual fields in the Pivot Table's grouping bar. To hide the sort icon for a particular field, set the [`showSortIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#showsorticon) property to **false** for that field in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) property.
 
@@ -130,11 +142,11 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs130" %}
 
-## Show or hide all remove icon
+## Show or hide remove icon for all fields
 
 The grouping bar in the Pivot Table lets users remove any field at runtime by clicking the remove icon next to the field. By default, the remove icon is visible beside each field in the grouping bar. 
 
-If you want to hide the remove icon, set the [`showRemoveIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showremoveicon) property to **false** within the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings) configuration. This will prevent users from removing fields directly from the grouping bar.
+If you want to hide the remove icon, set the [`showRemoveIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showremoveicon) property to **false** within the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings) configuration. This will prevent users from removing fields directly from the grouping bar.
 
 > Note: The remove icon is enabled in the grouping bar by default.
 
@@ -150,7 +162,7 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://ej2.sync
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs131" %}
 
-## Show or hide a specific remove icon
+## Show or hide remove icon for a specific field
 
 You can hide the remove icon for an individual field button in the Pivot Table grouping bar. To do this, set the [`showRemoveIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#showremoveicon) property to **false** for the desired field within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) options.
 
@@ -168,9 +180,9 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs132" %}
 
-## Disable all fields from dragging
+## Disable dragging for all fields
 
-In the Pivot Table, the grouping bar lets users move fields between the row, column, value, and filter axes to change the report as needed. By default, all fields can be moved using drag-and-drop in the grouping bar. To prevent users from dragging any fields, set the [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#allowdraganddrop) option in [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings) to **false**. This will lock the layout of the current report, so users cannot rearrange fields in the grouping bar.
+In the Pivot Table, the grouping bar lets users move fields between the row, column, value, and filter axes to change the report as needed. By default, all fields can be moved using drag-and-drop in the grouping bar. To prevent users from dragging any fields, set the [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#allowdraganddrop) option in [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings) to **false**. This will lock the layout of the current report, so users cannot rearrange fields in the grouping bar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,7 +196,7 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs133" %}
 
-## Disable specific field from dragging
+## Disable dragging for a specific field
 
 You can prevent users from dragging certain fields in the grouping bar of the Pivot Table. To do this, set the [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#allowdraganddrop) property to **false** for the specific field within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
 
@@ -202,11 +214,11 @@ In the example below, users cannot drag the "Year" and "Products" fields. This s
 
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs134" %}
 
-## Remove specific field(s) from displaying
+## Hide specific field(s) from the grouping bar
 
 When you bind a report to the Pivot Table, all fields from the data source are automatically displayed in the Grouping Bar. However, you can hide specific fields from appearing in the Grouping Bar to simplify the user interface.
 
-To exclude specific fields, add the field names to the [`excludeFields`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#excludefields) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) configuration. This prevents the selected fields from being displayed in the Grouping Bar while keeping them available in the underlying data source.
+To exclude specific fields, add the field names to the [`excludeFields`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#excludefields) property (a `string[]`) within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) configuration. This prevents the selected fields from being displayed in the Grouping Bar while keeping them available in the underlying data source. Fields already placed in an axis (row, column, value, or filter) are not affected.
 
 > **Note:** When you exclude fields using the `excludeFields` property, these fields will also be hidden in the field list UI. For more information about field list behavior, refer to this [link](https://ej2.syncfusion.com/angular/documentation/pivotview/field-list#remove-specific-fields-from-displaying).
 
@@ -222,11 +234,11 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs135" %}
 
-## Changing aggregation type of value fields at runtime
+## Change aggregation type of value fields at runtime
 
 Users can easily perform calculations on groups of values in the Pivot Table by using the aggregation option. Each value field in the Pivot Table appears in the grouping bar with a dropdown icon next to it. This icon lets users select a different aggregation type, such as Sum, Average, or Count, at runtime. When an aggregation type is selected, the Pivot Table values update immediately to reflect the new calculation.
 
-By default, the icon for setting the aggregation type is visible in the grouping bar. To hide this icon, set the [`showValueTypeIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showvaluetypeicon) property to **false** inside [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings). For more details about aggregation options, see the [aggregation](./aggregation) section.
+By default, the icon for setting the aggregation type is visible in the grouping bar. To hide this icon, set the [`showValueTypeIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/groupingbarsettings#showvaluetypeicon) property to **false** inside [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings). For more details about aggregation options, see the [aggregation](./aggregation) section.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -240,7 +252,7 @@ By default, the icon for setting the aggregation type is visible in the grouping
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs136" %}
 
-## Show or hide specific dropdown icon
+## Show or hide value type dropdown icon for a specific field
 
 You can hide the dropdown icon for a particular field button in the Pivot Table’s grouping bar. To do this, set the [`showValueTypeIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#showvaluetypeicon) property to **false** for the desired field within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings).
 
@@ -262,9 +274,13 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 
 ## Show values button
 
-The **Values** button appears in the grouping bar when the [showValuesButton](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showvaluesbutton) property is set to **true**. This button can be moved to a different position among the fields in either the column or row axis while working with the Pivot Table. To enable this option, set [`showValuesButton`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showvaluesbutton) to **true** in the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default) settings.
+> **Prerequisite:** The grouping bar must be enabled by setting [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showgroupingbar) to **true**.
+
+The **Values** button appears in the grouping bar when the [`showValuesButton`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showvaluesbutton) property is set to **true** (default is **false**). This button can be moved to a different position among the fields in either the column or row axis while working with the Pivot Table. To enable this option, set [`showValuesButton`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showvaluesbutton) to **true** in the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default) settings.
 
 > This option is available only when using relational data sources.
+
+> The Values button is shown only when multiple fields are added to the Values axis; it is hidden when a single field is present.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,7 +305,7 @@ The [`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 - [`droppedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fielddroppedeventargs#droppedfield): Defines the dropped field item.
 - [`droppedPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fielddroppedeventargs#droppedposition): Defines the position where the field has been dropped.
 
-For example, you can use this event to change the caption of the [`droppedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fielddroppedeventargs#droppedfield) instantly at runtime when a user moves a field to a different axis.
+For example, you can use this event to change the caption of the [`droppedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fielddroppedeventargs#droppedfield) instantly at runtime when a user moves a field to a different axis. Modifying the caption updates only the field's display in the grouping bar; it does not rename the underlying data source field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -386,7 +402,7 @@ The [`aggregateMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/p
 The event provides the following parameters:
 
 - [`fieldName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregatemenuopeneventargs#fieldname): The name of the field for which the aggregation menu is opened.
-- [`aggregateTypes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#aggregatetypes): The list of aggregation types available for the selected field.
+- [`aggregateTypes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#aggregatetypes): An array of aggregation-type strings available for the selected field (for example, `['Sum', 'Average', 'Count']`).
 - [`displayMenuCount`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregatemenuopeneventargs#displaymenucount): The number of options shown in the dropdown initially. By default, this value is 7.
 - [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/aggregatemenuopeneventargs#cancel): A boolean that, when set to true, prevents the dropdown menu from opening.
 
@@ -411,15 +427,15 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionbegin) event occurs whenever an action begins in the grouping bar of the Pivot Table. These actions include sorting, filtering, changing aggregation, removing fields, or editing a calculated field using the grouping bar UI. This event helps the user identify and manage what is happening in real time. The event provides several helpful parameters:
 
 - [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#datasourcesettings): This provides the current [report settings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings), which include the input data, row fields, column fields, values, filters, formatting settings, and more.
-- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#actionname): This contains the name of the action that has started. The most common actions and their respective names are:
+- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#actionname): A string containing the name of the action that has started. The most common actions and their respective names are:
 
-  | Action                                 | Action Name         |
-  |-----------------------------------------|---------------------|
-  | Clicking the sort icon                  | Sort field          |
-  | Using the filter icon                   | Filter field        |
-  | Selecting aggregation in the drop-down  | Aggregate field     |
-  | Clicking the remove icon                | Remove field        |
-  | Clicking the edit icon                  | Edit calculated field|
+  | Action                                 | Action Name              |
+  |-----------------------------------------|--------------------------|
+  | Clicking the sort icon                  | Sort field               |
+  | Using the filter icon                   | Filter field             |
+  | Selecting aggregation in the drop-down  | Aggregate field          |
+  | Clicking the remove icon                | Remove field             |
+  | Clicking the edit icon                  | Edit calculated field    |
 
 - [`fieldInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionbegineventargs#fieldinfo): This provides information about the selected field on which the action is performed.
 
@@ -449,7 +465,7 @@ The event provides the following parameters:
 
 - [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#datasourcesettings): Contains the current [report settings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings), including information about the input data, rows, columns, values, filters, and format settings used in the Pivot Table.
 
-- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actionname): Specifies the name of the action just completed. The table below lists possible UI actions and their corresponding action names:
+- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactioncompleteeventargs#actionname): A string specifying the name of the action just completed. The table below lists possible UI actions and their corresponding action names:
 
   | Action                                          | Action Name               |
   |-------------------------------------------------|--------------------------|
@@ -484,15 +500,15 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 **Event Parameters**
 
-- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#actionname): Identifies which user action did not succeed. The table below lists the actions and their corresponding names:
+- [`actionName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#actionname): A string identifying which user action did not succeed. The table below lists the actions and their corresponding names:
 
-  | Action                                                | Action Name         |
-  |-------------------------------------------------------|---------------------|
-  | Clicking the sort icon                                | Sort field          |
-  | Applying a filter using the filter icon               | Filter field        |
-  | Choosing a value type from the aggregation dropdown   | Aggregate field     |
-  | Removing a field by clicking the remove icon          | Remove field        |
-  | Editing a calculated field using the edit icon        | Edit calculated field|
+  | Action                                                | Action Name              |
+  |-------------------------------------------------------|--------------------------|
+  | Clicking the sort icon                                | Sort field               |
+  | Applying a filter using the filter icon               | Filter field             |
+  | Choosing a value type from the aggregation dropdown   | Aggregate field          |
+  | Removing a field by clicking the remove icon          | Remove field             |
+  | Editing a calculated field using the edit icon        | Edit calculated field    |
 
 - [`errorInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotactionfailureeventargs#errorinfo): Provides details about the error that occurred for the specific user action.
 
@@ -512,5 +528,5 @@ When this event is triggered, users can refer to the information in these parame
 
 ## See Also
 
-* [Change load limited data in member editor](./how-to/change-load-limited-data-in-member-editor)
-* [Customize the icons for pivot table](./how-to/customize-the-icons-for-pivot-grid)
+* [Change load limited data in member editor](./how-to/change-load-limited-data-in-member-editor) — Configure how many member records load in the filter/member editor dialog.
+* [Customize the icons for pivot table](./how-to/customize-the-icons-for-pivot-grid) — Replace default icons in the grouping bar with custom ones.

@@ -1,18 +1,18 @@
----
+﻿---
 layout: post
-title: How to Switch to Older Themes Style in Angular Pivot Table | Syncfusion
+title: Use older theme styles in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to switch to older themes style in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
-control: Switching older themes style 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# How to Switch to Older Themes Style in Angular Pivot Table
+# How to switch to the older Pivot Table theme
 
-Since Volume 1, 2020, Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. If you prefer the appearance of the earlier theme, you can revert to it by making specific changes. This guide explains how to restore the older theme's style by modifying the CSS to adjust cell background colors and set the row height to match the previous layout.
+Since Volume 1, 2020, Syncfusion<sup style="font-size:70%">&reg;</sup> revised the theming and layout of the Pivot Table. If you prefer the appearance of the earlier theme, you can revert to it by making specific changes. This guide explains how to restore the older theme's style by modifying the CSS to adjust cell background colors and set the row height to match the previous layout.
 
 ## CSS Selectors
 
@@ -37,7 +37,6 @@ In the current theme, cells are differentiated by their background colors. To av
        <body>
        </body>
   </html>
-
 ```
 
 For the High Contrast theme, the following CSS is required:
@@ -61,12 +60,11 @@ For the High Contrast theme, the following CSS is required:
        <body>
        </body>
   </html>
-
 ```
 
 ## Adjusting Row Height
 
-In the current theme, the height of each Pivot Table row has been reduced to make the component more compact. Users can reset the height of the Pivot Table rows using the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#rowheight) property within [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/). In the older theme, this property was typically set to 36 pixels for desktop layouts and 48 pixels for mobile layouts. To replicate the older theme style, reset the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#rowheight) accordingly.
+In the current theme, the height of each Pivot Table row has been reduced to make the component more compact. Users can reset the height of the Pivot Table rows using the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings#rowheight) property within [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings). In the older theme, this property was typically set to 36 pixels for desktop layouts and 48 pixels for mobile layouts. To replicate the older theme style, reset the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings#rowheight) accordingly.
 
 The following code sample demonstrates how to replicate the older theme style:
 

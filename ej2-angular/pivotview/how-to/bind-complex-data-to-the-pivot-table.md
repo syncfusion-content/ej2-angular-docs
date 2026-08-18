@@ -1,19 +1,19 @@
 ---
 layout: post
-title: How to Flatten Complex JSON in Angular Pivot Table | Syncfusion
+title: How to convert complex JSON to flat JSON for Pivot Table | Syncfusion
 description: Step-by-step example showing how to convert complex JSON to flat JSON in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
-control: Convert complex JSON to flat JSON and assign it to the pivot table 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
-# How to Flatten Complex JSON in Angular Pivot Table
+# How to convert complex JSON to flat JSON for Pivot Table
 
 ## Overview
 
-The Angular Pivotview component requires data in flat JSON format for proper binding. This guide explains how to convert complex, nested JSON structures to flat JSON format and bind it to the pivot table.
+The Angular Pivot Table component requires data in flat JSON format for proper binding. This guide explains how to convert complex, nested JSON structures to flat JSON format and bind it to the pivot table.
 
 ## Understanding complex vs flat JSON
 
@@ -42,7 +42,7 @@ Complex JSON contains nested objects and arrays, making it difficult to directly
 }
 ```
 
-Flat JSON has a simple key-value structure without nesting, which is suitable for pivot table binding:
+Flat JSON has a simple key-value structure without nesting, which is suitable for pivot table binding. The `complexToFlatJson` helper iterates the nested arrays (such as `OrderDetails` and `ShipDetails`) and flattens each combination into a single record, then the converted data is assigned to the Pivot Table's [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasource).
 
 ```json
 {
@@ -61,9 +61,9 @@ Flat JSON has a simple key-value structure without nesting, which is suitable fo
 
 ## Implementation
 
-You can convert complex JSON to flat JSON programmatically and bind it to the pivot table using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property in the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#load) event.
+You can convert complex JSON to flat JSON programmatically and bind it to the pivot table using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasource) property in the [`load`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#load) event.
 
-In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property, then modifying the field names in the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) and [columns](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#columns) based on the converted flat JSON under [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) in the [load](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#load) event.
+In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasource) property. The field names in the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#rows) and [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#columns) are then updated under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings) inside the [`load`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#load) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,5 +74,5 @@ In the following example, the **complexToFlatJson()** method is used to convert 
 {% include code-snippet/pivot-grid/getting-started-cs316/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs316" %}
