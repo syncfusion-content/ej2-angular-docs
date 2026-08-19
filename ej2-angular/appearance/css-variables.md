@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Themes using CSS Variables in Angular | Syncfusion
-description: Learn how Syncfusion Angular components use CSS variables for theme customization, light/dark mode switching.
+description: Customize Syncfusion Angular themes with CSS variables for Material 3, Fluent 2, Bootstrap 5.3, and Tailwind 3.4, including light/dark and color overrides.
 platform: ej2-angular
 control: CSS Variables
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Overview of CSS Variables in Themes
+# Themes using CSS Variables in Angular
 
 [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) (also known as CSS custom properties) are custom values defined once and reused throughout stylesheets. They start with a double hyphen (--) and are accessed using the var() function.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom css in Angular Common control | Syncfusion
-description: Learn here all about Custom css in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: How to use Custom CSS file in Angular Components | Syncfusion
+description: Apply custom CSS to Syncfusion Angular components by generating a file in Theme Studio, adding it to angular.json styles, and running ng serve to preview.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to use Custom CSS File in Angular Application
+# How to use a Custom CSS File in a Syncfusion® Angular Application
 
 This guide details the step-by-step process to incorporate custom styles in an Angular application using Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 components. Custom styles enable you to match your application's brand identity while maintaining full component functionality. Styles are created and customized using the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Angular Agent Skills for AI Assistants | Syncfusion
+title: Angular Agent Skills for AI Assistants | Syncfusion
 description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion Angular component guidance.
 control: Skills
 platform: ej2-angular
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular Agent Skills for AI Assistants
+# Syncfusion® Angular Agent Skills for AI Assistants
 
 This guide introduces **Syncfusion Angular Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Angular code using official APIs, patterns, and theming guidelines.
 

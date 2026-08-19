@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Introduction to the Figma UI Kit | Syncfusion
-description: Check out and learn about the introduction to the Figma UI Kit of Syncfusion Essential JS 2 and more details.
+title: Figma UI Kits in Angular | Syncfusion
+description: Learn how to use Syncfusion Figma UI kits for Angular components to align design and code, customize tokens, and export CSS variables for your application.
 platform: ej2-angular
 control: Figma
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Figma UI Kits for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Figma UI Kits for Syncfusion® Angular Components
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides official [Figma UI kits](https://www.figma.com/@syncfusion) to help designers and developers collaborate more effectively. These kits contain reusable, production-ready Figma components that mirror Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components—including all states, variants, interactions, and specifications.
 

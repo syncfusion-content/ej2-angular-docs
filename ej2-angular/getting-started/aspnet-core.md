@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core with Angular — Getting Started | Syncfusion
-description: Check out and learn how to create an ASP.NET Core with Angular app and use Syncfusion Essential JS 2 components.
+title: Getting Started with ASP.NET Core and Angular | Syncfusion
+description: Create an ASP.NET Core with Angular app and integrate Syncfusion Angular UI components for a full-stack web application with a responsive frontend.
 platform: ej2-angular
-control: Aspnet core 
+control: Aspnet core
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with ASP.NET Core and Angular using Project Template
+# Getting Started with ASP.NET Core and Angular
 
 This guide demonstrates how to create an ASP.NET Core application with Angular integration and incorporate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components. This combination provides a powerful foundation for building modern web applications with a robust backend framework and responsive frontend components.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in Angular Common control | Syncfusion
-description: Learn here all about Overview in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: Globalization Overview in Angular Components | Syncfusion
+description: Learn how Syncfusion Angular UI components support globalization with i18n for culture-specific formatting and l10n for multi-language UI text.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Globalization
+# Globalization in Syncfusion® Angular Components
 
 Globalization combines two key capabilities: adapting controls to various languages through date and number formatting (Internationalization), and translating text content with cultural customizations (Localization). Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are configured for the `en-US` locale by default.
 

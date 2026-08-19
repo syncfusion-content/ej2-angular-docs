@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Showcase applications in Angular | Syncfusion
+title: Showcase Samples in Angular | Syncfusion
 description: Explore Syncfusion Angular showcase applications demonstrating real-world implementations with integrated components, complete source code, and live demos.
 platform: ej2-angular
 control: Showcase
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Examples and Showcase Applications
+# Syncfusion® Angular UI Examples and Showcase Applications
 
 This page provides an overview of showcase applications that demonstrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component integration and functionality in real-world scenarios. These production-ready examples illustrate how to build modern, responsive, and feature-rich web applications using multiple integrated components. Each application includes complete source code and a live demo to explore functionality and implementation patterns.
 

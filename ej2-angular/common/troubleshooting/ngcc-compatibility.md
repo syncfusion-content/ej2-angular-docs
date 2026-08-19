@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Troubleshoot in Angular Common control | Syncfusion
-description: Learn here all about Troubleshoot in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: Compatibility in Angular Components | Syncfusion
+description: Resolve compatibility issues between Syncfusion Angular components and the latest Angular CLI by switching to Ivy-compiled packages.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Compatibility Issues with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Packages and Latest Angular CLI
+# Syncfusion® Angular Package Compatibility with Angular CLI
 
 This guide addresses potential issues you may encounter when using Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components with the latest Angular CLI, offering solutions and insights to improve your development experience.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: State persistence in Angular Common control | Syncfusion
-description: Learn here all about State persistence in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: State Persistence in Angular Components | Syncfusion
+description: Learn about state persistence for Syncfusion Angular components (localStorage-based persistence and `enablePersistence`).
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Persistence in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
+# State Persistence in Syncfusion® Angular Components
 
 ## What Is State Persistence?
 

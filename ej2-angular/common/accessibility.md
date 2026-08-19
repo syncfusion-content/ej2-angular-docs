@@ -1,14 +1,14 @@
----
+﻿---
 layout: post
-title: Accessibility in Angular component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Components | Syncfusion
+description: Learn about accessibility standards, WCAG 2.2, Section 508, WAI-ARIA, and keyboard navigation support in Syncfusion Angular components.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Accessibility in Syncfusion® Angular Components
 
 ## Accessibility overview
 
@@ -128,511 +128,511 @@ vertical-align: top;
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/grid/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/grid/accessibility" aria-label="grid accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Pivot Table</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pivotview/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pivotview/accessibility" aria-label="pivotview accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Tree Grid</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treegrid/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treegrid/accessibility" aria-label="treegrid accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Spreadsheet</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spreadsheet/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spreadsheet/accessibility" aria-label="spreadsheet accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>In-place Editor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/accessibility" aria-label="inplace editor accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>PDF Viewer</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/accessibility" aria-label="pdfviewer accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>RichTextEditor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility" aria-label="rich text editor accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Word Processor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/accessibility" aria-label="document editor accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Image Editor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/image-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/image-editor/accessibility" aria-label="image editor accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Dialog</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dialog/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dialog/accessibility" aria-label="dialog accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>ListView</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/listview/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/listview/accessibility" aria-label="listview accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Tooltip</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tooltip/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tooltip/accessibility" aria-label="tooltip accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Splitter</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/splitter/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/splitter/accessibility" aria-label="splitter accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Dashboard Layout</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dashboard-layout/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dashboard-layout/accessibility" aria-label="dashboard layout accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Accumulation Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/accessibility" aria-label="accumulation chart accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Charts</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chart/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chart/accessibility" aria-label="chart accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Stock Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stock-chart/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stock-chart/accessibility" aria-label="stock chart accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Circular Gauge</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/circular-gauge/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/circular-gauge/accessibility" aria-label="circular gauge accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Diagram</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/diagram/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/diagram/accessibility" aria-label="diagram accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>HeatMap Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/heatmap-chart/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/heatmap-chart/accessibility" aria-label="heatmap chart accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Linear Gauge</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/linear-gauge/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/linear-gauge/accessibility" aria-label="linear gauge accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Maps</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maps/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maps/accessibility" aria-label="maps accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Range Selector</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-navigator/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-navigator/accessibility" aria-label="range navigator accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Smith Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/smithchart/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/smithchart/accessibility" aria-label="smithchart accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Sparkline Charts</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sparkline/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sparkline/accessibility" aria-label="sparkline accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>TreeMap</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treemap/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treemap/accessibility" aria-label="treemap accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Bullet Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/bullet-chart/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/bullet-chart/accessibility" aria-label="bullet chart accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Kanban</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/kanban/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/kanban/accessibility" aria-label="kanban accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button/accessibility" aria-label="button accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Button Group</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button-group/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button-group/accessibility" aria-label="button group accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Dropdown Menu</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-button/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-button/accessibility" aria-label="drop down button accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Progress Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-button/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-button/accessibility" aria-label="progress button accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Split Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/split-button/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/split-button/accessibility" aria-label="split button accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Chips</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chips/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chips/accessibility" aria-label="chips accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>FAB</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/floating-action-button/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/floating-action-button/accessibility" aria-label="floating action button accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Speed Dial</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/speed-dial/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/speed-dial/accessibility" aria-label="speed dial accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Calendar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/calendar/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/calendar/accessibility" aria-label="calendar accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>DatePicker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datepicker/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datepicker/accessibility" aria-label="datepicker accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>DateRangePicker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/daterangepicker/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/daterangepicker/accessibility" aria-label="daterangepicker accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>DateTime Picker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datetimepicker/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datetimepicker/accessibility" aria-label="datetimepicker accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>TimePicker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/timepicker/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/timepicker/accessibility" aria-label="timepicker accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Gantt Chart</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/gantt/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/gantt/accessibility" aria-label="gantt accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>TextBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/textbox/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/textbox/accessibility" aria-label="textbox accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Input Mask</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maskedtextbox/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maskedtextbox/accessibility" aria-label="maskedtextbox accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Masked TextBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maskedtextbox/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maskedtextbox/accessibility" aria-label="maskedtextbox accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Numeric TextBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/numerictextbox/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/numerictextbox/accessibility" aria-label="numerictextbox accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Radio Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/radio-button/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/radio-button/accessibility" aria-label="radio button accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>CheckBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/check-box/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/check-box/accessibility" aria-label="check box accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Color Picker</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/color-picker/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/color-picker/accessibility" aria-label="color picker accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>File Upload</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/uploader/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/uploader/accessibility" aria-label="uploader accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Range Slider</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-slider/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-slider/accessibility" aria-label="range slider accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Toggle Switch Button</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/switch/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/switch/accessibility" aria-label="switch accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Signature</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/accessibility" aria-label="signature accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Rating</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/accessibility" aria-label="rating accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Query Builder</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/query-builder/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/query-builder/accessibility" aria-label="query builder accessibility documentation">Documentation</a></td>
     </tr> 
     <tr>
         <td>Accordion</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accordion/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accordion/accessibility" aria-label="accordion accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>AppBar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/appbar/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/appbar/accessibility" aria-label="appbar accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Breadcrumb</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/breadcrumb/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/breadcrumb/accessibility" aria-label="breadcrumb accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Carousel</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/carousel/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/carousel/accessibility" aria-label="carousel accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Context Menu</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/context-menu/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/context-menu/accessibility" aria-label="context menu accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Menu Bar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/menu/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/menu/accessibility" aria-label="menu accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Sidebar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sidebar/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sidebar/accessibility" aria-label="sidebar accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Tabs</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tab/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tab/accessibility" aria-label="tab accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Toolbar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toolbar/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toolbar/accessibility" aria-label="toolbar accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Ribbon</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/ribbon/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/ribbon/accessibility" aria-label="ribbon accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>TreeView</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treeview/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treeview/accessibility" aria-label="treeview accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>File Manager</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/file-manager/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/file-manager/accessibility" aria-label="file manager accessibility documentation">Documentation</a></td>
     </tr> 
     <tr>
         <td>Stepper</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stepper/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stepper/accessibility" aria-label="stepper accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Message</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/message/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/message/accessibility" aria-label="message accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Toast</td>
         <td>Yes</td>
         <td>AA</td>
         <td>NA</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toast/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toast/accessibility" aria-label="toast accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Progress Bar</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-bar/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-bar/accessibility" aria-label="progress bar accessibility documentation">Documentation</a></td>
     </tr>
     <tr>
         <td>Skeleton</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/skeleton/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/skeleton/accessibility" aria-label="skeleton accessibility documentation">Documentation</a></td>
     </tr>
         <tr>
         <td>DropDownList</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-list/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-list/accessibility" aria-label="DropDownList accessibility documentation">Documentation</a></td>
     </tr>
 </tbody>
 </table>

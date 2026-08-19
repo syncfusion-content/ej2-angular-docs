@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Angular CLI with Standalone Components | Syncfusion
-description:  Check out and learn how to get started with Angular CLI standalone components and integrate Syncfusion Essential JS 2 UI components.
+title: Getting Started with Angular Standalone Components | Syncfusion
+description: Build Angular apps with standalone components and Syncfusion UI components, no NgModule setup needed for simpler dependency management.
 platform: ej2-angular
-control: Angular cli 
+control: Angular cli
 documentation: ug
 domainurl: ##DomainURL##
 ---

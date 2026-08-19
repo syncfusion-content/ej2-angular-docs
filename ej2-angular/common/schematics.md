@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Schematics in Angular Common control | Syncfusion
+title: Schematics in Angular Components | Syncfusion
 description: Learn here all about Schematics in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Angular Schematics
+# Schematics in Syncfusion® Angular Components
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support Angular schematics, allowing seamless installation and automatic configuration using the Angular CLI `ng add` command. This approach handles package installation, module imports, theme registration, and build configuration with minimal manual effort.
 

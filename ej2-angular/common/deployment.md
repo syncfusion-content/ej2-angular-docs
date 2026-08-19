@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deployment in Angular Common control | Syncfusion
+title: Deployment in Angular Components | Syncfusion
 description: Learn here all about Deployment in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: common
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Deployment
+# Deployment in Syncfusion® Angular Components
 
 This guide covers the recommended ways to deploy Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components in production applications. The primary and most efficient method is using npm packages with Angular CLI integration. CDN links are provided as an alternative for quick prototyping or non-bundled scenarios.
 
