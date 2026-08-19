@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Npm package in Angular Npm package md component | Syncfusion
-description: Learn here all about Npm package in Syncfusion Angular Npm package md component of Syncfusion Essential JS 2 and more.
+title: NPM Package for Angular Components | Syncfusion
+description: Learn about installing Syncfusion® Angular UI component NPM packages, available package options, installation steps, and package details.
 platform: ej2-angular
-control: Npm package 
+control: Npm Package
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# NPM Packages for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components
+# NPM Packages for Syncfusion® Angular UI Components
 
 Since version `18.4.0.30` (Volume 4, 2020), Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are available as individual [NPM packages](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular). Each package is organized by component functionality and namespace, making integration straightforward and optimizing application performance.
 

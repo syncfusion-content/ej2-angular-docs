@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Size Modes in Angular Component | Syncfusion
-description: Learn here all about Size Modes in Syncfusion Angular Appearance component of Syncfusion Essential JS 2 and more.
+title: Size Modes in Angular | Syncfusion
+description: Learn how to enable and customize normal and touch size modes for Syncfusion Angular components to optimize UI sizing for different devices.
 platform: ej2-angular
 control: Appearance
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Size Modes in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Size Modes for Syncfusion® Angular Components
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components support two size modes to optimize user experience across different devices and input methods:
 

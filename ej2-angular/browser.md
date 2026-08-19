@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Browser compatibility for Angular components | Syncfusion
-description: Learn about browser compatibility, supported versions, and requirements for Syncfusion Angular components across modern browsers and platforms.
+title: Browser Support in Angular Components | Syncfusion
+description: Learn about browser support requirements and necessary polyfills for Syncfusion EJ2 Angular components across browsers.
 platform: ej2-angular
-control: Browser 
+control: Browser Support
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Browser Compatibility for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Browser Support for Syncfusion® Angular Components
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components are designed to work seamlessly across modern web browsers. Understanding browser compatibility ensures applications function correctly for all users and helps developers make informed decisions about supported platforms. This document outlines the supported browser versions and key compatibility considerations.
 

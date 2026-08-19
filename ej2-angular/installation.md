@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation in Angular Installation md component | Syncfusion
-description: Learn here all about Installation in Syncfusion Angular Installation md component of Syncfusion Essential JS 2 and more.
+title: Installation in Angular | Syncfusion
+description: Learn how to install Syncfusion Angular packages, including SystemJS configuration and a quick-start example.
 platform: ej2-angular
-control: Installation 
+control: Installation
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components
+# Installation of Syncfusion® Angular Packages
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components (Essential<sup style="font-size:70%">&reg;</sup> JS 2) are modern, high-performance controls distributed as npm packages. This guide covers installing one or more components into an Angular project.
 

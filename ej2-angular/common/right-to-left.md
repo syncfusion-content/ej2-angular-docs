@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Right to left in Angular Common control | Syncfusion
-description: Learn here all about Right to left in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: Right to Left (RTL) in Angular Components | Syncfusion
+description: Learn how to enable Right-to-Left (RTL) support in Syncfusion Angular components for languages like Arabic and Hebrew
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Right-to-Left (RTL) Support in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Right to Left (RTL) in Syncfusion® Angular Components
 
 Right-to-Left (RTL) support enables applications to correctly display content for languages written from right to left, such as Arabic, Hebrew, Persian, and Urdu. When RTL is enabled, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components automatically adjust text direction, alignment, icons, scrollbars, popups, and layout mirroring to provide a natural reading and interaction experience.
 
@@ -22,7 +22,7 @@ import { enableRtl } from '@syncfusion/ej2-base';
 
 ## Enable RTL Configuration
 
-To apply RTL consistently across all Syncfusion<sup style="font-size:70%">&reg;</sup> components, enable it at the application level before any component initialization. The most reliable method is to call `enableRtl(true)` early in the application lifecycle
+To apply RTL consistently across all Syncfusion<sup style="font-size:70%">&reg;</sup> components, enable it at the application level before any component initialization. The most reliable method is to call `enableRtl(true)` early in the application life cycle
 
 Example enabling RTL globally:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Common control | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Components | Syncfusion
+description: Learn how to localize and translate Syncfusion Angular components into different languages using the L10n library for multi-language UI support.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Localization
+# Localization in Syncfusion® Angular Components
 
 The Localization library in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components allows you to adapt your application for international audiences by displaying text content in languages other than English. This feature is essential for creating globally accessible applications that provide users with a familiar experience in their native language.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Security Considerations in Angular Common control | Syncfusion
-description: Learn here all about Security Considerations in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: Security in Angular Components | Syncfusion
+description: Learn about security considerations in Syncfusion Angular components, including CSP, XSS prevention, HTML sanitization, and secure data handling.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components - Security
+# Security in Syncfusion® Angular Components
 
 Security is a critical concern in modern web application development. Key practices include enforcing HTTPS, validating and sanitizing all user inputs, implementing strong authentication and authorization, and protecting against common vulnerabilities such as XSS, CSRF, and injection attacks.
 

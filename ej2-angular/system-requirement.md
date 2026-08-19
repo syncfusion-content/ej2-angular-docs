@@ -1,14 +1,14 @@
 ---
 layout: post
 title: System requirements for Angular components | Syncfusion
-description: Learn here all about System requirement in Syncfusion Angular System requirement md component of Syncfusion Essential JS 2 and more.
+description: Review system requirements for Syncfusion Angular components, including Angular versions, Node.js LTS, supported OS, IDEs, and browser compatibility.
 platform: ej2-angular
-control: System requirement 
+control: System Requirement
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# System Requirements for Syncfusion Angular Components
+# System Requirements for Syncfusion® Angular Components
 
 This guide outlines the system requirements for developing, testing, and deploying applications with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. Meeting these requirements ensures optimal performance, stability, and compatibility.
 

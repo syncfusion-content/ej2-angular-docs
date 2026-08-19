@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Theme studio in Angular Appearance component | Syncfusion
-description: Learn here all about Theme studio in Syncfusion Angular Appearance component of Syncfusion Essential JS 2 and more.
+title: Theme studio in Angular | Syncfusion
+description: Learn how to customize Syncfusion Angular themes using Theme Studio, export custom CSS, and import previously changed settings or Figma tokens.
 platform: ej2-angular
 control: Theme studio 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Theme Studio in Angular Appearance Component
+# Theme Studio Overview
 
 The Theme Studio for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components offers the ability to customize existing themes.
 
