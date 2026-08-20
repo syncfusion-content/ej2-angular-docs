@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Angular Using Angular CLI | Syncfusion
-description: Learn how to create an Angular app with Angular CLI and integrate Syncfusion Essential JS 2 Angular components.
+title: Getting Started with Angular Using Angular CLI | Syncfusion
+description: Learn how to get started with the Syncfusion Angular UI components using Angular CLI. Explore setup, features, examples, and customization options.
 platform: ej2-angular
 control: Angular CLI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Using Angular CLI and TypeScript
+# Getting Started with Angular Using Angular CLI
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. For module-based or framework host setups, see [See Also](#see-also).
 

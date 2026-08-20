@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Themes in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Themes in Syncfusion® Angular Components
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components include a comprehensive collection of themes to match popular design systems and provide both light and dark variants. Available themes include:
 

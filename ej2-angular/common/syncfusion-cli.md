@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion CLI | Syncfusion
+title: Syncfusion CLI in Angular | Syncfusion
 description: Learn to use Syncfusion CLI to create and manage Angular apps with Syncfusion components, templates, themes, and AI-powered tools.
 control: Syncfusion CLI
 platform: common
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> CLI
+# Syncfusion® CLI in Angular
 
 The **Syncfusion<sup style="font-size:70%">&reg;</sup> CLI** is a command-line tool that helps developers create, configure, and manage Angular projects with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components. It simplifies project setup by enabling developers to scaffold Angular applications, add ready-to-use Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components, configure themes, set up Syncfusion<sup style="font-size:70%">&reg;</sup> MCP assistants, and install Syncfusion<sup style="font-size:70%">&reg;</sup> component skills.
 

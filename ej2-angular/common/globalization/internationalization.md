@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Internationalization in Angular Common control | Syncfusion
-description: Learn here all about Internationalization in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: Internationalization in Angular Components | Syncfusion
+description: Learn how to implement internationalization in Syncfusion Angular components using CLDR data for locale-based date, number, and currency formatting.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Internationalization
+# Internationalization in Syncfusion® Angular Components
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Internationalization library provides powerful tools for formatting and parsing date and number objects, using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. By default, the `en-US` locale and `USD` currency code are preset for all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Internationalization library provides powerful tools for formatting and parsing date and number objects, using the official [Unicode CLDR](http://cldr.unicode.org) JSON data. By default, the `en-US` locale and `USD` currency code are preset for all Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components.
 
 ## Loading CLDR-JSON Data
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data package contains JSON data files generated from the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. This package avoids third-party library vulnerabilities present in the older [cldr-data](https://www.npmjs.com/package/cldr-data) package. To use cultures other than `en-US`, load the appropriate CLDR data using the `loadCldr` function.
+Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data package contains JSON data files generated from the official [Unicode CLDR](http://cldr.unicode.org) JSON data. This package avoids third-party library vulnerabilities present in the older [cldr-data](https://www.npmjs.com/package/cldr-data) package. To use cultures other than `en-US`, load the appropriate CLDR data using the `loadCldr` function.
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data package is published within a week after each official [Unicode CLDR](http://cldr.unicode.org/) JSON data release.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data package is published within a week after each official [Unicode CLDR](http://cldr.unicode.org) JSON data release.
 
 ### Individual file path reference
 
@@ -78,7 +78,7 @@ setCurrencyCode('QAR');
 
 ### Supported format string
 
-Number formatting and parsing align with [NumberFormatOptions](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/). Specify relevant properties as shown:
+Number formatting and parsing align with [NumberFormatOptions](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions). Specify relevant properties as shown:
 
 | No | Properties | Description |
 | --- | --- | --- |
@@ -107,13 +107,13 @@ Create custom number formats by specifying a pattern directly in the `format` pr
 | ; | Specifies separate formats for positive, negative, and zero values. | `formatNumber(-120, {format: '###.##;(###.00);-0'})` | '(120.00)' |
 | 'String' | Displays literal text enclosed in single quotes. | `formatNumber(-123.44, {format: "####.## '@'"})` | '123.44 @' |
 
->Note: When a custom format pattern is specified, other [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/) properties are not applied.
+>Note: When a custom format pattern is specified, other [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) properties are not applied.
 
 ### Number Parsing
 
 #### `getNumberParser`
 
-The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#getnumberparser) method returns a function that parses strings based on the specified [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/).
+The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/internationalization#getnumberparser) method returns a function that parses strings based on the specified [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -129,7 +129,7 @@ The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/intern
 
 #### `parseNumber`
 
-The [`parseNumber`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#parsenumber) method parses a string value based on [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/) and returns the numeric value.
+The [`parseNumber`](https://ej2.syncfusion.com/documentation/api/base/internationalization#parsenumber) method parses a string value based on [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) and returns the numeric value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -147,7 +147,7 @@ The [`parseNumber`](https://ej2.syncfusion.com/documentation/api/base/internatio
 
 #### `getNumberFormat`
 
-The [`getNumberFormat`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#getnumberformat) method returns a function that formats numbers based on the specified [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/).
+The [`getNumberFormat`](https://ej2.syncfusion.com/documentation/api/base/internationalization#getnumberformat) method returns a function that formats numbers based on the specified [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -163,7 +163,7 @@ The [`getNumberFormat`](https://ej2.syncfusion.com/documentation/api/base/intern
 
 #### `formatNumber`
 
-The [`formatNumber`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#formatnumber) method formats a numeric value based on [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/) and returns the formatted string.
+The [`formatNumber`](https://ej2.syncfusion.com/documentation/api/base/internationalization#formatnumber) method formats a numeric value based on [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions) and returns the formatted string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -181,7 +181,7 @@ The [`formatNumber`](https://ej2.syncfusion.com/documentation/api/base/internati
 
 ### Supported format string
 
-Date formatting and parsing operations use the [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/). Specify some or all of the properties shown below:
+Date formatting and parsing operations use the [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions). Specify some or all of the properties shown below:
 
 | Options | Description |
 | --- | --- |
@@ -298,7 +298,7 @@ export class AppComponent {
 }
 ```
 
->Note: When the `format` property is specified, other [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/) properties are not applied.
+>Note: When the `format` property is specified, other [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions) properties are not applied.
 
 <!-- markdownlint-enable MD036 -->
 
@@ -306,7 +306,7 @@ export class AppComponent {
 
 #### `getDateParser`
 
-The [`getDateParser`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#getdateparser) method returns a function for parsing strings based on the specified [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/).
+The [`getDateParser`](https://ej2.syncfusion.com/documentation/api/base/internationalization#getdateparser) method returns a function for parsing strings based on the specified [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -322,7 +322,7 @@ The [`getDateParser`](https://ej2.syncfusion.com/documentation/api/base/internat
 
 #### `parseDate`
 
-The [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#parsedate) method parses a string value based on [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/) and returns the date object.
+The [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization#parsedate) method parses a string value based on [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions) and returns the date object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -340,7 +340,7 @@ The [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationa
 
 #### `getDateFormat`
 
-The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#getdateformat) method returns a function that formats date objects based on the specified [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/).
+The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internationalization#getdateformat) method returns a function that formats date objects based on the specified [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -356,7 +356,7 @@ The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internat
 
 #### `formatDate`
 
-The [`formatDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization/#formatdate) method formats a date object based on [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/) and returns the formatted string.
+The [`formatDate`](https://ej2.syncfusion.com/documentation/api/base/internationalization#formatdate) method formats a date object based on [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions) and returns the formatted string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

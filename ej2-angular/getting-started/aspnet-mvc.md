@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC with Angular Getting started component | Syncfusion
-description:  Checkout and learn about ASP.NET MVC with Angular Getting started component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC and Angular | Syncfusion
+description: Build an ASP.NET MVC application with an Angular CLI front end and use Syncfusion Angular UI components with MS Build automation and bundle configuration.
 platform: ej2-angular
-control: Aspnet mvc 
+control: Aspnet mvc
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular CLI as the Front End in ASP.NET MVC
+# Getting Started with Angular CLI in ASP.NET MVC
 
 This guide details the process for creating an ASP.NET MVC framework with an Angular CLI project serving as the front end, and how to integrate Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI components.
 

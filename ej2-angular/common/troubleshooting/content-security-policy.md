@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Content security policy in Angular Troubleshoot component | Syncfusion
-description: Learn how to configure Content Security Policy (CSP) for your Angular application when using Syncfusion Essential JS 2 components to mitigate XSS and data injection risks.
+title: Content Security Policy in Angular Components | Syncfusion
+description: Configure Content Security Policy for Angular apps using Syncfusion components by adding meta-tag directives for style-src, font-src, and Google Fonts.
 control: common
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Content Security Policy
+# Content Security Policy in Syncfusion® Angular Components
 
 Content Security Policy (CSP) is a pivotal security feature deployed by web browsers to mitigate risks such as cross-site scripting (XSS) and data injection attacks. CSP controls the allowed sources from which content can be loaded on a web page, thereby enhancing security.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to use SCSS with Syncfusion Angular components | Syncfusion
-description: Learn how to use Sass (SCSS) in your Angular CLI project to customize Syncfusion Essential JS 2 Angular components.
+title: How to use SCSS file in Angular Components | Syncfusion
+description: Customize Syncfusion Angular component themes with SCSS by overriding theme package variables and importing definition files for branded styling.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customizing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components with SCSS
+# How to use a SCSS file in a Syncfusion® Angular Application
 
 Sass (SCSS) enhances styling with variables, nesting, mixins, and functions, making it ideal for customizing Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes.
 

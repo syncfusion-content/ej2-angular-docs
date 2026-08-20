@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Update npm package in Angular Common control | Syncfusion
-description: Learn here all about Update npm package in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: How to update NPM packages in Angular Components | Syncfusion
+description: Update Syncfusion Angular npm packages with npm-check-updates, then run npm update and npm dedupe to keep dependencies current and remove duplicates.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-
-
-# Update Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages
+# How to Update NPM packages in Syncfusion® Angular Components
 
 Keeping your Syncfusion<sup style="font-size:70%">&reg;</sup> npm packages up-to-date is essential for accessing the latest features, bug fixes, performance improvements, and security patches. This guide explains how to efficiently update these packages using `npm-check-updates` (ncu) and best practices for npm package management.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resolve Content Security Policy in ##Platform_Name## | Syncfusion
-description: Learn here all about Content Security Policy in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+title:  How to resolve CSP errors in Angular Components | Syncfusion
+description: Learn how to resolve Content Security Policy (CSP) issues in Syncfusion Angular components, including license banner, base64 images, and required directives.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to resolve Content Security Policy (CSP) errors
+# How to Resolve CSP Errors in Syncfusion® Angular Components
 
 The integration of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components into your application can sometimes encounter issues when implementing a strict Content Security Policy (CSP). Resolving these issues is essential to ensuring both the security of your application and the full functionality of the components.
 

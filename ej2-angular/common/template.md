@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Templates | Syncfusion
-description: Learn everything there is to know about templates, including an example in the Angular components of Syncfusion Essential JS 2 and more.
+title: Templates in Angular Components | Syncfusion
+description: Learn how to use templates in Syncfusion Angular components to customize layouts, render data, and optimize performance with stateless templates.
 platform: ej2-angular
 control: common
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Syncfusion Angular Components
+# Templates in Syncfusion® Angular Components
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components provide a pre-defined layout or structure that defines how the component should be rendered on the user interface. When you need to customize the component's appearance or functionality to meet specific application needs, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components offer template support to achieve this.
 

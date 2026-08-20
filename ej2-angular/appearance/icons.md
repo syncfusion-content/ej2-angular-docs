@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons in Angular Appearance component | Syncfusion
-description: Learn here all about Icons in Syncfusion Angular Appearance component of Syncfusion Essential JS 2 and more.
+title: Icons in Angular | Syncfusion
+description: Learn how to reference, use, and customize Syncfusion Angular font-based icons from npm or CDN, including sizing and color overrides across themes.
 platform: ej2-angular
 control: Icons
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Predefined Icons Library in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components
+# Icons in Syncfusion® Angular Components
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides a comprehensive icon library with pre-designed, `base64-encoded` font icons to enhance UI elements consistently across applications. These icons are lightweight, scalable, and theme-aware.
 
