@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Labels in Angular Diagram | Syncfusion®
-description: Add editable text labels (annotations) to nodes and connectors in the Syncfusion® Angular Diagram to provide context, with support for runtime add, update, and remove.
+description: Add text labels to Angular Diagram nodes and connectors, then create, edit, update, or remove annotations dynamically at runtime.
 platform: ej2-angular
 control: Labels 
 documentation: ug
@@ -16,9 +16,9 @@ domainurl: ##DomainURL##
 
 ## Create annotations
 
-An annotation can be added to a node or connector by defining the annotation object and adding it to the annotations collection of the node or connector. The [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#content) property of the annotation defines the text to be displayed. The following code illustrates how to create an annotation.
+An annotation can be added to a node or connector by defining the annotation object and adding it to the annotations collection of the node or connector. The [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#content) property of the annotation defines the text to be displayed. The following code illustrates how to create annotations.
 
-To create and add annotations to Nodes and Connectors using the Angular Diagram, refer to the below video link.
+To create and add annotations to nodes and connectors using the Angular Diagram, refer to the below video link.
 
 {% youtube "youtube:https://www.youtube.com/watch?v=1J8dtTxXnVo" %}
 
@@ -34,11 +34,11 @@ To create and add annotations to Nodes and Connectors using the Angular Diagram,
   
 {% previewsample "page.domainurl/samples/diagram/labels/annotation-cs1" %}
 
-N> When setting an annotation's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
+N> When setting an annotation's ID, ensure it does not contain white spaces, does not start with a number or special character, and does not include special characters such as underscores (`_`).
 
 ## Add annotations at runtime
 
-Annotations can be added at runtime by using the client-side method [`addLabels`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addlabels). The following code illustrates how to add an annotation to a node.
+Annotations can be added at runtime by using the [`addLabels`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addlabels) method. The following code illustrates how to add an annotation to a node.
 
 The annotation's [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#id) property is used to define the name of the annotation and is further used to find the annotation at runtime and perform any customization.
 
@@ -56,7 +56,7 @@ The annotation's [`id`](https://ej2.syncfusion.com/angular/documentation/api/dia
 
 ## Update annotations at runtime
 
-Annotations can be updated directly by accessing the annotation from the node's annotations collection property and modifying any annotation properties at runtime. To reflect the changes immediately, call the `dataBind` method.
+Annotations can be updated directly by accessing the annotation from the node's `annotations` collection and modifying any annotation properties at runtime. To reflect the changes immediately, call the `dataBind` method.
 
 The following code example illustrates how to change the annotation properties.
 

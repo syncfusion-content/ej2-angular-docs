@@ -30,8 +30,10 @@ You can define calculated fields programmatically using the [`calculatedFieldSet
 
 To use the calculated field feature, you must inject the `CalculatedFieldService` module into the pivot table.
 
-> **Note**: The calculated field feature applies only to value fields. By default, calculated fields created programmatically are added to the field list and calculated field dialog UI. To display a calculated field in the pivot table UI, it must be added to the [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values) property, as shown in the code below.
-
+N>
+- The calculated field feature applies only to value fields. By default, calculated fields created programmatically are added to the field list and calculated field dialog UI. To display a calculated field in the pivot table UI, it must be added to the [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values) property, as shown in the code below.
+- The following advanced aggregation types are not supported within calculated field formulas: `Index`, `RunningTotals`, `PercentageOfRunningTotals`, `PercentageOfGrandTotal`, `PercentageOfColumnTotal`, `PercentageOfRowTotal`, `PercentageOfParentColumnTotal`, `PercentageOfParentRowTotal`, `DifferenceFrom`, `PercentageOfDifferenceFrom`, and `PercentageOfParentTotal`.
+ 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs9/src/app.component.ts %}

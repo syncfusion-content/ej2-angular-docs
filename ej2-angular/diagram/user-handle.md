@@ -36,7 +36,7 @@ The following example shows how to render user handle.
 
 ## Customize user handle click
 
-When a user handle is clicked, the [`onUserHandleMouseDown`](https://ej2.syncfusion.com/angular/documentation/api/diagram#onuserhandlemousedown) event allows identification of which user handle was clicked using the name property. Based on this name, diagram elements can be customized accordingly. Several events are triggered while interacting with a user handle. In the following example, the [`onUserHandleMouseDown`](https://ej2.syncfusion.com/angular/documentation/api/diagram#onuserhandlemousedown) event is used to clone nodes on user handle click.
+When a user handle is clicked, the [`onUserHandleMouseDown`](https://ej2.syncfusion.com/angular/documentation/api/diagram#onuserhandlemousedown) event allows identification of which user handle was clicked using the `name` property. Based on this name, diagram elements can be customized accordingly. Several events are triggered while interacting with a user handle. In the following example, the [`onUserHandleMouseDown`](https://ej2.syncfusion.com/angular/documentation/api/diagram#onuserhandlemousedown) event is used to clone nodes on user handle click.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +64,7 @@ The [`side`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHa
 
 ### Horizontal and vertical alignments
 
-The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel#horizontalalignment) property of [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#userhandles) determines how the user handle is horizontally aligned at the position based on the [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel#offset). The [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel#verticalalignment) property determines how user handle is vertically aligned at the position.
+The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel#horizontalalignment) property of [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#userhandles) determines how the user handle is horizontally aligned at the position based on the [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel#offset). The [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel#verticalalignment) property determines how the user handle is vertically aligned at the position.
 
 ### Margin for the user handle
 
@@ -86,7 +86,7 @@ In the following example, the user handle is aligned to the bottom-right corner 
 
 The following table shows all the possible alignments of user handle around the node.
 
-| Offset | side | Output |
+| Offset | Side | Output |
 | -------- | -------- | -------- |
 | 0 | Left |![User handle aligned to left side at top position](images/userhandleAlign1.png)|
 | 0 | Right |![User handle aligned to right side at top position](images/userhandleAlign2.png)|
@@ -139,7 +139,7 @@ Multiple user handles can be rendered for the selected objects (nodes/connectors
 
 ### Disable nodes and disable connectors
 
-User handles are typically defined within the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel) property of the diagram, applying them universally to both nodes and connectors. However, in some scenarios, specific user handles may need to be excluded from connectors or nodes selectively. To address this requirement, the disableNodes and disableConnectors properties are available. These properties allow certain user handles to be disabled based on the type of selected item.
+User handles are typically defined within the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel) property of the diagram, applying them universally to both nodes and connectors. However, in some scenarios, specific user handles may need to be excluded from connectors or nodes selectively. To address this requirement, the [`disableNodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userhandlemodel#disablenodes) and [`disableConnectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userhandlemodel#disableconnectors) properties are available. These properties allow certain user handles to be disabled based on the type of selected item.
 
 In the example below, multiple user handles are utilized for various functionalities, with some handles hidden selectively for nodes or connectors depending on their intended functionality.
 
@@ -159,16 +159,16 @@ In the example below, multiple user handles are utilized for various functionali
 
 The diagram provides support to render different types of user handles based on the content source:
 
-* `Source`: Renders an image as a user handle using an image source URL.
-* `Content`: Renders a user handle using SVG content markup.
-* `pathData`: Renders a user handle using custom SVG path data.
+* [`source`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userhandlemodel#source): Renders an image as a user handle using an image source URL.
+* [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userhandlemodel#content): Renders a user handle using SVG content markup.
+* [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userhandlemodel#pathdata): Renders a user handle using custom SVG path data.
 * `template`: Renders a user handle using a predefined template ([`userHandleTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram#userhandletemplate)) defined in the diagram.
 
 The precedence order for user handles is as follows:
 
 1. pathData
-2. Content
-3. Source
+2. content
+3. source
 4. userHandleTemplate
 
 This means that if multiple options are specified for the same user handle, the one with higher precedence will be rendered.
@@ -218,7 +218,7 @@ Fixed user handles are used to perform specific actions when interacted with. Un
 
 ### Create fixed user handles
 
-To create [`fixedUserHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandle), define and add them to the collection of [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel) and [`connectors`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/connectorModel). The [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#pathdata) property of [`fixedUserHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#nodefixeduserhandlemodel) is used to define the SVG path data for the fixed user handle icon. The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#id) property in `fixedUserHandles` assigns a unique identifier to each handle. This identifier helps locate and modify fixed user handles during runtime. The click event of a fixed user handle can be handled using the [`fixedUserHandleClick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/fixedUserHandleClickEventArgs) event. This event allows customization based on the type of fixed user handle clicked.
+To create [`fixedUserHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandle), define and add them to the collection of [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel) and [`connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel). The [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#pathdata) property of [`fixedUserHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#nodefixeduserhandlemodel) is used to define the SVG path data for the fixed user handle icon. The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#id) property in `fixedUserHandles` assigns a unique identifier to each handle. This identifier helps locate and modify fixed user handles during runtime. The click event of a fixed user handle can be handled using the [`fixedUserHandleClick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/fixedUserHandleClickEventArgs) event. This event allows customization based on the type of fixed user handle clicked.
 
 The following code example demonstrates how to create fixed user handles for nodes and connectors and how to handle fixed user handle click:
 
@@ -234,7 +234,7 @@ The following code example demonstrates how to create fixed user handles for nod
   
 {% previewsample "page.domainurl/samples/diagram/interaction/fixeduserhandle-cs1" %}
 
->Note: The fixed user handle id need to be unique.
+N> The fixed user handle `id` needs to be unique.
 
 ### Alignment
 
@@ -274,16 +274,16 @@ The following table shows all the possible alignments of fixed user handle aroun
 | (0.5,0) | Bottom = 20 |![fixed user handle for node](images/topcenter.png)|
 | (1,0) | Left = 20 |![fixed user handle for node](images/topright.png)|
 | (0,0.5) | Right = 20 |![fixed user handle for node](images/leftcenter.png)|
-| (0,1) | Left = 20 |![fixed user handle for node](images/rightcenter.png)|
+| (1,0.5) | Left = 20 |![fixed user handle for node](images/rightcenter.png)|
 | (0,1) | Right = 20 |![fixed user handle for node](images/bottomleft.png)|
 | (0.5,1) | Top = 20 |![fixed user handle for node](images/bottomcenter.png)|
 | (1,1) | Left = 20 |![fixed user handle for node](images/bottomright.png)|
 
->Note: Both `displacement` and `alignment` are applicable only to connector fixed user handles.
-
 #### Customizing the connector fixed user handle
 
-The connector fixed user handle can be aligned relative to the connector boundaries. It has alignment, displacement and offset settings. The [`displacement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorFixedUserHandleModel#displacement) property displaces the handle from its aligned position and its functioning only when the [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/fixedUserHandleAlignment) property is set to 'After' or 'Before'.
+The connector fixed user handle can be aligned relative to the connector boundaries. It has alignment, displacement and offset settings. The [`displacement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorFixedUserHandleModel#displacement) property displaces the handle from its aligned position, and it functions only when the [`alignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/fixedUserHandleAlignment) property is set to `After` or `Before`.
+
+N> Both `displacement` and `alignment` are applicable only to connector fixed user handles.
 
 ##### Offset
 
@@ -307,7 +307,7 @@ The following table shows all the possible offset and alignment combinations of 
 | 0.5 | After |![fixed user handle align after offset 0.5](images/after0.5.png)|
 | 1 | After |![fixed user handle for align after offset 1](images/after1.png)|
 
-### Displacement
+#### Displacement
 
 The [`displacement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorFixedUserHandleModel#displacement) property displaces the handle from its aligned position based on the provided x and y value.
 
@@ -320,7 +320,7 @@ The following table shows all the possible alignment and displacement combinatio
 | y=10 | Before |![fixed user handle for node](images/ybefore.png)|
 | y=10 | After |![fixed user handle for node](images/yafter.png)|
 
->Note: Displacement will not be done if the alignment is set to be center.
+N> Displacement will not be done if the alignment is set to be center.
 
 The following code explains how to customize the alignment of connector fixed user handle.
 
@@ -356,7 +356,7 @@ Additional tooltip properties can be customized, such as [`position`](https://ej
 
 ### Appearance
 
-The appearance of fixed user handles can be customized by using the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#cornerradius), [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#fill), [`handleStrokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#handlestrokecolor), [`handleStrokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#handlestrokewidth), [`iconStrokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#iconstrokecolor), [`iconStrokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#iconstrokewidth) and [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeFixedUserHandleModel#visibility) properties of the fixed user handles.
+The appearance of fixed user handles can be customized using size and style properties detailed in the following sections.
 
 #### Size
 
@@ -406,7 +406,7 @@ Fixed user handles are interactive elements added to nodes and connectors. Their
 
 When interacting with fixed user handles, certain events are triggered that can be used to customize the appearance and functionality of the handles. The fixed user handle events are explained below.
 
-* [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iClickEventArgs) - Triggered when the fixed user handle is clicked.
+* [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iClickEventArgs) - Triggered on a general diagram element click.
 * [`onFixedUserHandleMouseEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#onfixeduserhandlemouseenter) - Triggered when the mouse enters the fixed user handle region.
 * [`onFixedUserHandleMouseDown`](https://ej2.syncfusion.com/angular/documentation/api/diagram#onfixeduserhandlemousedown) - Triggered when the mouse is pressed down on the fixed user handle.
 * [`onFixedUserHandleMouseUp`](https://ej2.syncfusion.com/angular/documentation/api/diagram#onfixeduserhandlemouseup) - Triggered when the mouse is released on the fixed user handle.

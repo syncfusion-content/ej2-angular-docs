@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Label Interaction in Angular Diagram | Syncfusion®
-description: Make labels interactive in the Syncfusion® Angular Diagram with selectable, draggable, rotatable, resizable, editable, and read-only modes, plus bounded drag limits on connector labels.
+description: Make labels interactive in Angular Diagram with selection, dragging, rotation, resizing, editing, read-only mode, and connector drag limits.
 platform: ej2-angular
 control: Label Interaction
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Label Interaction in Angular Diagram
 
-The Diagram component allows labels to be interactive through selecting, dragging, rotating, and resizing operations. Label interaction is disabled by default. Enable label interaction using the `constraints` property of the label. You can also control specific interaction types by enabling individual constraints for selecting, dragging, rotating, or resizing. The following code demonstrates how to enable interactive mode.
+The Diagram component allows labels to be interactive through selecting, dragging, rotating, resizing, and editing operations. Label interaction is disabled by default. Enable label interaction using the `constraints` property of the label. You can also control specific interaction types by enabling individual constraints for selecting, dragging, rotating, or resizing. The following code demonstrates how to enable interactive mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,7 +26,18 @@ The Diagram component allows labels to be interactive through selecting, draggin
 
 ## Constraints
 
-The [`constraints`](https://ej2.syncfusion.com/angular/documentation/diagram/constraints#annotation-constraints) property of labels allows enabling or disabling specific label behaviors. Use these constraints to control which interaction types are available for each label.
+The [`constraints`](https://ej2.syncfusion.com/angular/documentation/diagram/constraints#annotation-constraints) property of labels allows enabling or disabling specific label behaviors. Use these constraints to control which interaction types are available for each label. The available annotation constraint values are listed below:
+
+| Constraint value | Description |
+| -------- | -------- |
+| `ReadOnly` | Enables read-only mode for the annotation. |
+| `InheritReadOnly` | Inherits read-only settings from parent objects. |
+| `Select` | Enables selection capability for the annotation. |
+| `Drag` | Enables dragging functionality for the annotation. |
+| `Resize` | Enables resize capability for the annotation. |
+| `Rotate` | Enables rotation capability for the annotation. |
+| `Interaction` | Enables general interaction capabilities for the annotation. |
+| `None` | Disables all constraints for the annotation. |
 
 ## Label Editing
 
@@ -50,7 +61,7 @@ Use the [`startTextEdit`](https://ej2.syncfusion.com/angular/documentation/api/d
 ### Interactive Editing
 Labels can be edited interactively through user actions:
 1. Double-clicking the label
-2. Selecting the item and pressing the F2 key
+2. Selecting the parent node or connector and pressing the F2 key
 
 Double-clicking any label enables editing mode. When the editor loses focus, the label content is updated. The [`doubleClick`](https://ej2.syncfusion.com/angular/documentation/api/diagram#doubleclick) event triggers when double-clicking on nodes, connectors, or the diagram canvas.
 
@@ -73,11 +84,10 @@ The [`rotationReference`](https://ej2.syncfusion.com/angular/documentation/api/d
 | Value | Description | Image |
 | -------- | -------- | -------- |
 | Page | The label maintains its original orientation even when the parent node rotates. | ![No_Rotation](../images/page_rotationreference.gif) |
-| Parent | The label rotates along with its parent node. | ![Rotation](../images/parent_rotationreference.gif)|
+| Parent | The label rotates along with its parent node. | ![Rotation](../images/parent_rotationreference.gif) |
 
 ## Read-only Labels
-
-The Diagram component supports creating read-only labels that cannot be edited by users. Set the read-only constraint in the label's [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#constraints) property. The following code demonstrates how to enable read-only mode.
+The Diagram component supports read-only labels that users cannot edit. Read-only mode is disabled by default. To enable it, include `AnnotationConstraints.ReadOnly` in the label’s [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#constraints) property. The following code demonstrates how to enable read-only mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,9 +103,9 @@ The Diagram component supports creating read-only labels that cannot be edited b
 
 ## Drag Limits
 
-The diagram control supports defining [`dragLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#draglimit) properties for connector labels to restrict dragging within specified boundaries. The drag limit automatically updates the label position to the nearest segment offset when dragging.
+The Diagram component supports defining [`dragLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#draglimit) properties for connector labels to restrict dragging within specified boundaries. The drag limit automatically updates the label position to the nearest valid segment offset when dragging.
 
-Configure drag limit boundaries using the [`left`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#left), [`right`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#right), [`top`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#top), and [`bottom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#bottom) properties. These properties limit connector label dragging based on user-defined values.
+Configure drag limit boundaries using the [`left`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#left), [`right`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#right), [`top`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#top), and [`bottom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#bottom) properties. The default value for each boundary is **0**. These properties limit connector label dragging based on user-defined values.
 
 Drag limits are disabled by default for connectors. Enable drag limits by setting the connector constraints to include drag functionality.
 
