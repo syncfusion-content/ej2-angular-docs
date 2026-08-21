@@ -141,7 +141,7 @@ async copyContent(id: string) {
   </p>
   <p>
       To quickly fill out the bug report form, copy the sample content and click the Smart Paste button. Know
-      more <a href="https://github.com/syncfusion/smart-ai-samples/blob/master/typescript/src/app/smartpaste/Readme.md">here</a>.
+      more <a href="https://github.com/syncfusion/smart-ai-samples/blob/master/typescript/src/app/smartpaste/Readme.md" aria-label="Learn about Smart Paste features">Smart Paste documentation</a>.
   </p>
   </div>
 </div>
