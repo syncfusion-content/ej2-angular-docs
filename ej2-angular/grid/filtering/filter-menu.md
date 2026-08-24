@@ -10,15 +10,13 @@ domainurl: ##DomainURL##
 
 # Filter Menu in Angular Data Grid
 
-The filter menu in the Angular Grid component provides a dialog-based filtering interface that appears when clicking the filter icon in column headers. This menu displays dropdown operators (such as equals, contains, startswith) and an input field for entering filter values, giving precise control over data filtering.
-
-> For basic filtering setup and configuration, refer to the [Filter Feature Guide](filtering#set-up-filtering).
+The filter menu in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides a dialog-based filtering interface that appears when clicking the filter icon in column headers. This menu displays dropdown operators (such as equals, contains, startswith) and an input field for entering filter values, giving precise control over data filtering.
 
 ## Enable filter menu
 
-To enable the filter menu, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) property to `Menu`. This property determines the type of filter UI that will be rendered, allowing users to apply filters using different operators tailored to each column's data type.
+To enable the filter menu, inject `FilterService` into the component providers and set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) property to `Menu`. This property determines the type of filter UI that will be rendered, allowing users to apply filters using different operators tailored to each column's data type.
 
-The following example demonstrates basic filter menu usage in the Syncfusion Angular Grid:
+The following example demonstrates basic filter menu usage in the Syncfusion Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,7 +71,7 @@ The following example demonstrates rendering a DropDownList component for the "C
 
 ## Show 24 hours time format in filter dialog
 
-The Grid provides a feature to display time in a "24-hour" format in date or datetime column filter dialogs.
+The Data Grid provides a feature to display time in a "24-hour" format in date or datetime column filter dialogs.
 
 By default, filter dialogs display time in "12-hour" format (AM/PM) for date or datetime columns. To customize this behavior, set the column type as `datetime` and format as "M/d/y HH:mm". The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype) as `filterafteropen` can be used to set the `timeFormat` of the `DateTimepicker` to "HH:mm".
 
@@ -91,7 +89,7 @@ Here is an example that demonstrates the "24-hour" time format in the filter dia
   
 {% previewsample "page.domainurl/samples/grid/filter-menu-cs3" %}
 
-## Customizing filter menu operators list
+## Customizing filter menu operators
 
 Filter operators are comparison methods that determine the match between the filter value and data. Examples include:
 
@@ -100,7 +98,7 @@ Filter operators are comparison methods that determine the match between the fil
 - `startswith`: Matches beginning of value
 - `greaterthan`: Numeric/date comparison
 
-The Grid enables customizing the default filter operator list using the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#operators) property. This feature defines custom sets of operators available in the filter menu, allowing restriction or simplification of filtering methods for specific columns.
+The Data Grid enables customizing the default filter operator list using the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#operators) property. This feature defines custom sets of operators available in the filter menu, allowing restriction or simplification of filtering methods for specific columns.
 
 Customize operators for string, number, date, and boolean data types using these options:
 
@@ -109,7 +107,7 @@ Customize operators for string, number, date, and boolean data types using these
 * `dateOperator` - defines customized date operator list.
 * `booleanOperator` - defines customized boolean operator list.
   
-Here is an example to customize the filter operators list in Syncfusion Angular Grid:
+Here is an example to customize the filter operators list in Syncfusion Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -125,7 +123,7 @@ Here is an example to customize the filter operators list in Syncfusion Angular 
 
 ## Filter by multiple keywords using filter menu
 
-The Grid allows filtering based on multiple keywords simultaneously, rather than a single keyword. This is useful when users need to filter by selecting multiple values from a list.
+The Data Grid allows filtering based on multiple keywords simultaneously, rather than a single keyword. This is useful when users need to filter by selecting multiple values from a list.
 
 To enable this feature, set [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#type) as `Menu` and render the `MultiSelect` component as a custom component in the filter menu dialog using the `filter.ui` property.
 
@@ -189,7 +187,7 @@ By default, the [AutoComplete](https://ej2.syncfusion.com/angular/documentation/
   
 {% previewsample "page.domainurl/samples/grid/filter-menu-cs7" %}
 
-## Hide default filter icons while perform filtering through method
+## Hide filter icons during programmatic filtering
 
 When filtering is performed programmatically using grid methods, the default filter icons can be hidden to provide a simpler interface.
 
@@ -216,9 +214,9 @@ The following example demonstrates hiding the default filter icons while filteri
 
 ## Filter menu events
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, an argument named `requestType` specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action) being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, custom logic can be implemented or messages displayed.
+The Data Grid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, an argument named `requestType` specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action) being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, custom logic can be implemented or messages displayed.
 
-**Event types and their purposes**:
+**Request types and their purposes**:
 
 * `filterbeforeopen` - Triggered before the filter menu dialog opens. Use this to modify menu settings, pre-populate values, or prevent the dialog from opening based on conditions.
 * `filterafteropen` - Triggered after the filter menu dialog opens. Use this to customize the dialog appearance, focus specific input fields, or add additional UI elements.
@@ -226,7 +224,7 @@ The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-da
 
 These events enable implementation of custom logic, display of messages, or modification of filter behavior based on specific requirements.
 
-The following example demonstrates filter menu event handling in the Syncfusion Angular Grid:
+The following example demonstrates filter menu event handling in the Syncfusion Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -313,7 +311,7 @@ export class AppComponent implements OnInit {
 
 When using the filter menu, the UI displays operators for all columns based on the data type of the first data it encounters. If the first data is empty or null, the operators may not display correctly. To resolve this issue:
 
-**Explicitly Define Data Type:** When defining columns in an Angular Grid component, explicitly specify the data type for each column using the `type` property within the columns configuration:
+**Explicitly Define Data Type:** When defining columns in an Angular Data Grid component, explicitly specify the data type for each column using the `type` property within the columns configuration:
 
 ```ts
 <ejs-grid [dataSource]='data'>
@@ -332,4 +330,4 @@ When using the filter menu, the UI displays operators for all columns based on t
 ## See also
 
 * [Filter using Wildcard and LIKE operator](./filtering#wildcard-and-like-operator-filter)
-* [Change loading indicator in Angular Grid](../data-binding/data-binding#loading-animation)
+* [Change loading indicator in Angular Data Grid](../data-binding/data-binding#loading-animation)

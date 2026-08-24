@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Sorting in Angular Data Grid
 
-The Grid component provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true`.
+The Data Grid component provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true`.
 
 Sorting a particular column is accomplished by clicking on its column header. Each click on the header toggles the sort order between `Ascending` and `Descending`.
 
-To use the sorting feature, inject the `SortService` to the providers array.
+To use the sorting feature, add the `SortService` to the providers array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,13 +28,20 @@ To use the sorting feature, inject the `SortService` to the providers array.
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs1" %}
 
-> * Grid column sorted in `Ascending` order. If a click occurs on an already sorted column, the sort direction toggles.
+> * Data Grid column sorted in `Ascending` order. If a click occurs on an already sorted column, the sort direction toggles.
 > * Apply and clear sorting by using the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#sortcolumn) and [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#clearsorting) methods.
-> * To disable sorting for a specific column, set the [columns.allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowsorting) property to `false`.
+
+## Sort order
+
+By default, the sorting order is "ascending → descending → none".
+
+The first click on a column header sorts the column in ascending order. A second click sorts the column in descending order. A third click clears the sorting.
+
+> The [allowUnsort](https://ej2.syncfusion.com/angular/documentation/api/grid/sortsettings#allowunsort) property controls whether sorting can be cleared. When set to `false`, clicking a grid header will only toggle between ascending and descending order, without switching to an unsorted state. The default value is `true`.
 
 ## Initial sorting
 
-The Grid component provided option to apply initial sorting by setting the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) property to the desired [field](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#field) and sort [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#direction). This feature is useful for displaying data in a specific order when the grid initially loads.
+The Data Grid component provides an option to apply initial sorting by setting the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) property to the desired [field](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#field) and sort [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#direction). This feature is useful for displaying data in a specific order when the grid initially loads.
 
 The following example demonstrates setting `sortSettings.columns` for "Order ID" and "Ship City" columns with a specified [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#direction).
 
@@ -52,9 +59,9 @@ The following example demonstrates setting `sortSettings.columns` for "Order ID"
 
 > The initial sorting defined in [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) will override any sorting applied through user interaction.
 
-## Multi-column sorting
+## Sort multiple columns
 
-The Grid component supports multi-column sorting, allowing multiple columns to be sorted simultaneously. To enable multi-column sorting, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) and the [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) properties to `true`. This enables sorting of multiple columns by holding the <kbd>CTRL</kbd> key and clicking the column headers. This feature is useful for sorting data based on multiple criteria to analyze it in various ways.
+The Data Grid component supports multi-column sorting, allowing multiple columns to be sorted simultaneously. To enable multi-column sorting, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) and the [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) properties to `true`. This enables sorting of multiple columns by holding the <kbd>CTRL</kbd> key and clicking the column headers. This feature is useful for sorting data based on multiple criteria to analyze it in various ways.
 
 To clear multi-column sorting for a particular column, press <kbd>Shift</kbd> while clicking the column header.
 
@@ -73,9 +80,9 @@ To clear multi-column sorting for a particular column, press <kbd>Shift</kbd> wh
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs3" %}
 
-## Prevent sorting for particular column
+## Disable sorting for a specific column
 
-The Grid component provides the ability to prevent sorting for a particular column. This is useful when certain columns should not be included in the sorting process. 
+The Data Grid component allows disabling sorting for a column. This is useful when certain columns should not be included in the sorting process.
 
 This is achieved by setting the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowsorting) property of the particular column to `false`. The following example demonstrates disabling sorting for "Customer ID" column.
 
@@ -91,15 +98,9 @@ This is achieved by setting the [allowSorting](https://ej2.syncfusion.com/angula
   
 {% previewsample "page.domainurl/samples/grid/sorting1-cs11" %}
 
-## Sort order
-
-By default, the sorting order is "ascending → descending → none".
-
-The first click on a column header sorts the column in ascending order. A second click sorts the column in descending order. A third click clears the sorting.
-
 ## Custom sorting 
 
-The Grid component supports customizing the default sort action for a column by defining the [sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column#sortcomparer) property. The `sortComparer` function works similarly to the [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) comparer function, allowing custom sorting logic to be defined for a specific column.
+The Data Grid component supports customizing the default sort action for a column by defining the [sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column#sortcomparer) property. The `sortComparer` function works similarly to the [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) comparer function, allowing custom sorting logic to be defined for a specific column.
 
 The following example demonstrates defining a custom `sortComparer` function for the "Customer ID" column.
 
@@ -137,9 +138,10 @@ The example below demonstrates displaying "null" values at the bottom of the gri
 
 ## Touch interaction
 
-When tapping the grid header on touch devices, the selected column header is sorted and displays a popup ![Sorting](images/sorting.jpg) for multi-column sorting; tap the popup to sort multiple columns ![Multi Sorting](images/msorting.jpg) and then tap the desired grid headers.
+On touch devices, tapping a grid header sorts that column ![Sorting](images/sorting.jpg). 
+For multi‑column sorting, tap the sorting indicator ![Multi Sorting](images/msorting.jpg) and then tap the additional grid headers to include them in the sort order.
 
-> The [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) and [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) should be `true` then only the popup will be shown.
+> The [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) and [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) must be `true` then only the popup will be shown.
 
 The following screenshot represents a grid touch sorting in the device.
 
@@ -147,11 +149,11 @@ The following screenshot represents a grid touch sorting in the device.
 
 ## Sort foreign key column based on text
 
-To perform sorting based on foreign key column, the foreign key column can be enabled by using [column.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/column#datasource), [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) and [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) properties.
+To sort a foreign key column based on its displayed text, the foreign key column can be enabled by using [column.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/column#datasource), [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) and [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) properties.
 
-**Sort foreign key column based on text for local data**
+### Sort foreign key column based on text for local data
 
-In the case of local data in the grid, the sorting operation will be performed based on the [foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) property of the column. The `foreignKeyValue` property should be defined in the column definition with the corresponding foreign key value for each row. The grid will sort the foreign key column based on the text representation of the `foreignKeyValue` property.
+When working with local data in the grid, sorting is performed based on the [foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) defined in the column. This field should be specified in the column definition with the corresponding foreign key value for each row. The grid then sorts the foreign key column according to the text representation of that value.
 
 The following example demonstrates sorting with a foreign key column enabled, where the "Customer ID" column acts as a foreign column displaying the "Contact Name" column from foreign data.
 
@@ -169,7 +171,7 @@ The following example demonstrates sorting with a foreign key column enabled, wh
 
 > Make sure to inject the `ForeignKeyService` in the provider section to ensure its availability throughout the application.
 
-**Sort foreign key column based on text for remote data**
+### Sort foreign key column based on text for remote data
 
 In the case of remote data in the grid, the sorting operation will be performed based on the [foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) property of the column. The `foreignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `foreignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
 
@@ -184,7 +186,7 @@ import { ForeignKeyService } from '@syncfusion/ej2-angular-grids';
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
                         <e-column field='EmployeeID' headerText='Employee Name' width=120 foreignKeyValue='FirstName'
-                         [dataSource]='employeeData'></e-column>
+                         [dataSource]='employeeData' foreignKeyField='EmployeeID'></e-column>
                         <e-column field='Freight' headerText='Freight' textAlign='Right' width=80></e-column>
                         <e-column field='ShipCity' headerText='Ship City' width=130  ></e-column>
                     </e-columns>
@@ -256,7 +258,7 @@ public class ItemsController : ODataController
 }
 ```
 
-## Perform sorting based on its culture
+## Culture-based sorting
 
 Performing sorting based on culture in the grid can be achieved by utilizing the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) property. By setting the `locale` property to the desired culture code, sorting is enabled based on that specific culture. This applies locale-specific sorting rules and ensures accurate ordering for different languages and regions.
 
@@ -303,7 +305,7 @@ The following sample demonstrates a grid rendered with a customized sort icon.
 
 ## Sort columns externally
 
-The Grid component in Syncfusion's Angular suite allows customization of column sorting and provides flexibility in sorting based on external interactions. Sort columns, remove a sort column, and clear sorting using an external button click.
+The Data Grid component in Syncfusion's Angular suite allows customization of column sorting and provides flexibility in sorting based on external interactions. Sort columns, remove a sort column, and clear sorting using an external button click.
 
 ### Add sort columns
 
@@ -325,7 +327,7 @@ The following example demonstrates adding sort columns to a grid. The `DropDownL
 
 ### Remove sort columns
 
-External removal of sort columns is accomplished using the "removeSortColumn" method provided by the Grid component. This method removes the sorting applied to a specific column.
+External removal of sort columns is accomplished using the "removeSortColumn" method provided by the Data Grid component. This method removes the sorting applied to a specific column.
 
 The following example demonstrates removing sort columns. The `DropDownList` component selects the column. When an external button is clicked, the "removeSortColumn" method removes the selected sort column.
 
@@ -345,7 +347,7 @@ The following example demonstrates removing sort columns. The `DropDownList` com
 
 Sorting is cleared on an external button click using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#clearsorting) method provided by the Grid component. This method clears the sorting applied to all columns in the grid. 
 
-The following example demonstrates to clear the sorting using `clearSorting` method in the external button click.
+The following example demonstrates clearing sorting using the `clearSorting` method in an external button click.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -361,7 +363,7 @@ The following example demonstrates to clear the sorting using `clearSorting` met
 
 ## Sorting events
 
-The Grid component provides two events that are triggered during the sorting action such as `actionBegin` and `actionComplete`. These events can be used to perform any custom actions before and after the sorting action is completed.
+The Data Grid component provides two events related to sorting, such as `actionBegin` and `actionComplete`. These events can be used to perform custom actions before and after the sorting process is completed.
 
 1. **[actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin)**: This event is triggered before the sorting action begins. It provides a way to perform any necessary operations before the sorting action takes place. This event provides a parameter that contains the current grid state, including the current sorting column, direction, and data.
 
@@ -425,4 +427,4 @@ export class AppComponent implements OnInit {
 ## See Also
 
 * [How to remove the Sorting indicator from the column headers in Angular Grid](https://www.syncfusion.com/forums/150597/how-to-remove-the-sorting-indicator-from-the-column-headers-in-angular-grid)
-* [How to change loading indicator in Angular Grid](./data-binding/data-binding#loading-animation)
+* [How to change loading indicator in Angular Data Grid](./data-binding/data-binding#loading-animation)

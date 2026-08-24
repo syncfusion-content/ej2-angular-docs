@@ -12,11 +12,13 @@ domainurl: ##DomainURL##
 
 The filter bar feature provides a row of input fields directly below the grid headers, enabling instant data filtering. Each column displays an input field where filter criteria can be entered, and the grid updates immediately to show matching results.
 
+## Enable filter bar
+
 To activate the filter bar, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#allowfiltering) property to `true` and include the `FilterService` in the providers array.
 
 **Filter bar expressions:**
 
-Filter expressions are operators that define how the grid compares entered values against data. The available operators depend on the column data type.
+Filter expressions are operators that define the comparison between entered values and data in the Data Grid. The available operators depend on the column data type.
 
 | Expression | Example | Description | Column Type |
 |------------|---------|-------------|-------------|
@@ -45,11 +47,11 @@ The following example demonstrates basic filter bar activation in the grid:
   
 {% previewsample "page.domainurl/samples/grid/filter-bar-cs1" %}
 
-> To enable or dynamically switch the filter type, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettings#type) as `FilterBar` mode.
+> Disable filtering for specific columns by setting [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowfiltering) to `false`.
 
 ## Filter bar modes
 
-The Syncfusion Angular Grid filter bar operates in two distinct modes that determine when filtering actions are triggered. These modes provide different user experiences based on application requirements and user preferences.
+The Syncfusion Angular Data Grid filter bar operates in two distinct modes that determine when filtering actions are triggered. These modes provide different user experiences based on application requirements and user preferences.
 
 **OnEnter Mode:**
 
@@ -79,7 +81,7 @@ When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/
   
 {% previewsample "page.domainurl/samples/grid/filter-bar-cs2" %}
 
-## Display filter text in pager
+## Display filter status in pager
 
 The [showFilterBarStatus](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#showfilterbarstatus) property displays the current filter criteria in the grid pager area. This provides a clear summary of active filters without examining each column's filter bar input.
 
@@ -99,7 +101,7 @@ The following example shows filter status display in the pager:
   
 {% previewsample "page.domainurl/samples/grid/filter-bar-cs3" %}
 
-## Show or hide filter bar operator in filter bar cell
+## Show or hide filter operators in the filter bar
 
 The [showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#showfilterbaroperator) property displays a dropdown in each filter bar cell, allowing the filter operator to be changed directly in the UI. By default, string columns use the `startswith` operator, but this can be changed to `contains`, `endswith`, `equal`, etc.
 
@@ -117,29 +119,11 @@ To display the operator dropdown in filter bar cells, set the [showFilterBarOper
   
 {% previewsample "page.domainurl/samples/grid/filter-bar-cs4" %}
 
-## Prevent filtering for particular column
-
-Set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowfiltering) property to `false` on a [column](https://ej2.syncfusion.com/angular/documentation/api/grid/column) to disable the filter bar input for that specific column. Disable filtering on non-filterable columns like action (button) columns, image columns, etc.
-
-The following example disables filtering for the "Customer ID" column.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs5/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs5/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/filter-bar-cs5" %}
-
 ## Hide filter bar for template column
 
 Template columns can be used to render images, action buttons, or other custom components that are inherently non-filterable. To completely hide the filter bar input for a template column, use the [filterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#filtertemplate) property with an empty element.
 
-The following example demonstrates to hide the filter bar for a template column:
+The following example demonstrates hiding the filter bar for a template column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -183,4 +167,4 @@ To implement a custom filter bar template, define the `filterBarTemplate` proper
 ## See also
 
 * [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
-* [How to change loading indicator in Angular Grid](../data-binding/data-binding#loading-animation)
+* [How to change loading indicator in Angular Data Grid](../data-binding/data-binding#loading-animation)

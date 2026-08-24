@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Sorting Style in Angular Data Grid
+# Sorting Styles in Angular Data Grid
 
-The appearance of the sorting icons and multi sorting icons in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/angular/documentation/appearance/icons#material) can be used based on the active theme.
+Customize the appearance of sorting icons and multi-sort indicators in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) using CSS. Use the appropriate Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/angular/documentation/appearance/icons#material) based on the active theme.
 
-## Customize the Grid sorting icon
+## Customize the sorting icon
 
-The `.e-icon-ascending::before` and `.e-icon-descending::before` classes are used to style the sorting icons for ascending and descending order.
+Use the `.e-icon-ascending::before` and `.e-icon-descending::before` classes to style the sorting icons for ascending and descending order.
 
 ```css
 .e-grid .e-icon-ascending::before {
@@ -25,11 +25,13 @@ The `.e-icon-ascending::before` and `.e-icon-descending::before` classes are use
 }
 ```
 
-![Grid sorting icon](../images/grid-sorting-icons.png)
+![Data Grid sorting icon](../images/grid-sorting-icons.png)
 
-## Customize the Grid multi sorting icon
+> The icon codes in this example are for the "Material 3" theme. Use the corresponding icon codes for the active Syncfusion<sup style="font-size:70%">®</sup> theme.
 
-The `.e-sortnumber` class is used to style the multi sorting icon.
+## Customize the multi-sorting icon
+
+Use the `.e-sortnumber` class to style the multi-sort icon.
 
 ```css
 .e-grid .e-sortnumber {
@@ -38,4 +40,4 @@ The `.e-sortnumber` class is used to style the multi sorting icon.
 }
 ```
 
-![Grid multi sorting icon](../images/grid-multi-sorting-icon.png)
+![Data Grid multi sorting icon](../images/grid-multi-sorting-icon.png)

@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Paging Style in Angular Data Grid
+# Paging Styles in Angular Data Grid
 
-The appearance of the paging elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and the pager current page numeric element.
+Customize the appearance of the pager in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) using CSS. The following examples demonstrate styling the pager root, pager container, navigation buttons, and numeric pager items.
 
-## Customize the Grid pager root
+## Customize the pager root
 
-The `.e-gridpager` class is used to style the pager root element.
+Use the `.e-gridpager` class to style the pager root element.
 
 ```css
 .e-grid .e-gridpager {
@@ -25,9 +25,9 @@ The `.e-gridpager` class is used to style the pager root element.
 
 ![Grid pager root element](../images/grid-pager-root-element.png)
 
-## Customize the Grid pager container
+## Customize the pager container
 
-The `.e-pagercontainer` class is used to style the pager container element.
+Use the `.e-pagercontainer` class to style the pager container element.
 
 ```css
 .e-grid .e-pagercontainer {
@@ -38,9 +38,9 @@ The `.e-pagercontainer` class is used to style the pager container element.
 
 ![Grid pager container element](../images/grid-pager-container-element.png)
 
-## Customize the Grid pager navigation elements
+## Customize pager navigation buttons
 
-The classes `.e-prevpagedisabled`, `.e-prevpage`, `.e-nextpage`, `.e-nextpagedisabled`, `.e-lastpagedisabled`, `.e-lastpage`, .`e-firstpage`, and `.e-firstpagedisabled` are used to style the various pager navigation elements.
+Use the classes `.e-prevpagedisabled`, `.e-prevpage`, `.e-nextpage`, `.e-nextpagedisabled`, `.e-lastpagedisabled`, `.e-lastpage`, `.e-firstpage`, and `.e-firstpagedisabled` to style the various pager navigation elements.
 
 ```css
 .e-grid .e-gridpager .e-prevpagedisabled,
@@ -57,9 +57,9 @@ The classes `.e-prevpagedisabled`, `.e-prevpage`, `.e-nextpage`, `.e-nextpagedis
 
 ![Grid pager navigation elements](../images/grid-pager-navigation-element.png)
 
-## Customizing the grid pager page numeric link elements
+## Customize pager page number links
 
-The `.e-numericitem` class is used to style the page numeric link elements.
+Use the `.e-numericitem` class to style the page numeric link elements.
 
 ```css
 .e-grid .e-gridpager .e-numericitem {
@@ -68,7 +68,7 @@ The `.e-numericitem` class is used to style the page numeric link elements.
     cursor: pointer;
     }
     
-    .e-grid .e-gridpager .e-numericitem:hover {
+.e-grid .e-gridpager .e-numericitem:hover {
     background-color: white;
     color:  #007bff;
 }
@@ -76,9 +76,9 @@ The `.e-numericitem` class is used to style the page numeric link elements.
 
 ![Grid pager page numeric link elements](../images/pager-page-numeric-link-elements.png)
 
-## Customizing the grid pager current page numeric element
+## Customize the current page item
 
-The `.e-currentitem` class is used to style the current page numeric item.
+Use the `.e-currentitem` class to style the current page numeric item.
 
 ```css
 .e-grid .e-gridpager .e-currentitem {

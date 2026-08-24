@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregate Style in Angular Data Grid
+# Aggregate Styles in Angular Data Grid
 
-The appearance of aggregate elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Below are examples for customizing the aggregate root element and the aggregate cell elements.
+Customize the appearance of aggregate elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) using CSS. The following examples demonstrate styling the aggregate footer, summary rows, and summary cells.
 
-## Customizing the aggregate root element
+## Customize the aggregate root element
 
-The `.e-gridfooter` class is used to style the aggregate root element in the grid footer.
+Use the `.e-gridfooter` class to style the aggregate root element in the grid footer.
 
 ```css
 .e-grid .e-gridfooter {
@@ -24,9 +24,9 @@ The `.e-gridfooter` class is used to style the aggregate root element in the gri
 
 ![Customize aggregate root element](../images/aggregate-root-element.png)
 
-## Customizing the aggregate cell elements
+## Customize summary rows and cells
 
-The `.e-summaryrow` class is used to style the summary row, and the `.e-summarycell` class is used to style individual aggregate cells.
+Use the `.e-summaryrow` class to style the summary row, and the `.e-summarycell` class to style individual aggregate cells.
 
 ```css
 .e-grid .e-summaryrow .e-summarycell {

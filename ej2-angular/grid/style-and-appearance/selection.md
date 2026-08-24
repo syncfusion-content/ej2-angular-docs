@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection Style in Angular Data Grid
+# Selection Styles in Angular Data Grid
 
-The appearance of selection in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the row selection background, cell selection background, and column selection background.
+Customize the appearance of row, cell, and column selection in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) using CSS. The following examples demonstrate styling the selection background for rows, cells, and columns.
 
-## Customizing the row selection background
+## Customize the row selection background
 
-The `.e-selectionbackground` class is used to style the row selection background.
+Use the `.e-selectionbackground` class to customize the row selection background.
 
 ```css
 .e-grid td.e-selectionbackground {
@@ -24,9 +24,9 @@ The `.e-selectionbackground` class is used to style the row selection background
 
 ![Row selection](../images/row-selection.png)
 
-## Customizing the cell selection background
+## Customize the cell selection background
 
-The `.e-cellselectionbackground` class is used to style the cell selection background.
+Use the `.e-cellselectionbackground` class to customize the cell selection background.
 
 ```css
 .e-grid td.e-cellselectionbackground {
@@ -36,9 +36,9 @@ The `.e-cellselectionbackground` class is used to style the cell selection backg
 
 ![Cell selection](../images/cell-selection.png)
 
-## Customizing the column selection background
+## Customize the column selection background
 
-The `.e-columnselection` class is used to style the column selection background.
+Use the `.e-columnselection` class to customize the column selection background.
 
 ```css
 .e-grid .e-columnselection {

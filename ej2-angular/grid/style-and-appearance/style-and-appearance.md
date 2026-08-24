@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular Data Grid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid provides flexible styling and appearance customization options to align with your application's design requirements. You can choose from a wide range of built-in themes, customize visual elements using CSS, and create consistent experiences through theme-based styling.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides flexible styling and appearance customization options to align with your application's design requirements. You can choose from a wide range of built-in themes, customize visual elements using CSS, and create consistent experiences through theme-based styling.
 
 ## Built-in Themes
 
-The DataGrid components include a comprehensive collection of themes to match popular design systems and provide both light and dark variants. Available themes include:
+The Data Grid components include a comprehensive collection of themes to match popular design systems and provide both light and dark variants. Available themes include:
 
 | Theme                         | Style Sheet Name                         |
 |------------------------------|------------------------------------------|
@@ -40,7 +40,7 @@ The DataGrid components include a comprehensive collection of themes to match po
 
 ## Theme packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> built-in themes are distributed as theme packages available on [npm](https://www.npmjs.com/). These packages include CSS/SCSS files for all components. The following table lists all available theme packages:
+Syncfusion<sup style="font-size:70%">&reg;</sup> built-in themes are available as [npm](https://www.npmjs.com/) packages. Each package includes the CSS and SCSS files required for all components. The following table lists the available theme packages.
 
 | Theme | Light Package | Dark Package |
 |-------|---------------|---------------|
@@ -59,7 +59,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> built-in themes are distributed
 
 ## Size Modes
 
-The DataGrid components support two size modes to optimize user experience across different devices and input methods:
+The Data Grid components support two size modes to optimize user experience across different devices and input methods:
 
 - **Normal mode** (default) — Standard sizing optimized for mouse and keyboard interactions.
 - **Touch mode** (bigger) — Larger elements with increased padding, font sizes, and touch targets for improved touch interaction and accessibility. Apply the `e-bigger` CSS class to the `<body>` element to enable touch-friendly sizing.
@@ -90,26 +90,26 @@ The Data Grid themes use CSS variables with the unified naming convention. This 
 **Material 3 theme color variables**
 
 The Material 3 theme applies scalable CSS custom properties to maintain consistency within the Data Grid. Variables are designed for straightforward theming and responsive behavior.
-The following table highlights commonly used color related variables in the Material 3 theme.
+The following table highlights commonly used color-related variables in the Material 3 theme.
 
 | Name | Purpose |
 |------|--------------|
-| --e-font-name | Specifies the default font family used across the DataGrid |
+| --e-font-name | Specifies the default font family used across the Data Grid |
 | --color-sf-surface | 	Controls the base surface styling for UI elements |
 | --color-sf-on-surface | Sets text appearance on surface elements |
-| --color-sf-primary | Defines the core theme styling used across the DataGrid |
+| --color-sf-primary | Defines the core theme styling used across the Data Grid |
 | --color-sf-primary-container|Used for background styling of active or highlighted row states|
 | --color-sf-outline-variant | Defines border and separator styling |
 
 **Bootstrap 5.3 theme color variables**
 
-The Bootstrap 5.3 theme extends Bootstrap's framework with CSS custom properties for the Data Grid. The following table lists color related variables defined for the Bootstrap 5.3 theme.
+The Bootstrap 5.3 theme extends Bootstrap's framework with CSS custom properties for the Data Grid. The following table lists color-related variables defined for the Bootstrap 5.3 theme.
 
 | Name | Purpose |
 |------|-------------|
-| --e-font-name | Specifies the default font family used across the DataGrid |
-| --color-sf-content-bg-color-alt1 | Controls the background of the DataGrid header |
-| --color-sf-content-bg-color | Controls the background of the DataGrid content |
+| --e-font-name | Specifies the default font family used across the Data Grid |
+| --color-sf-content-bg-color-alt1 | Controls the background of the Data Grid header |
+| --color-sf-content-bg-color | Controls the background of the Data Grid content |
 | --color-sf-table-bg-color-hover | Defines the background styling for selected rows during hover interaction |
 | --color-sf-content-bg-color-hover | Defines background behavior when primary elements are hovered |
 | --color-sf-primary | Defines the main theme styling used across components |
@@ -118,7 +118,7 @@ The Bootstrap 5.3 theme extends Bootstrap's framework with CSS custom properties
 
 **Tailwind 3 theme color variables**
 
-The Tailwind 3 theme uses utility first CSS custom properties to deliver a flexible, modern design system. The following table presents color related variables available in the Tailwind 3 theme.
+The Tailwind 3 theme uses utility first CSS custom properties to deliver a flexible, modern design system. The following table presents color-related variables available in the Tailwind 3 theme.
 
 | Name | Purpose |
 |------|--------------|
@@ -131,17 +131,17 @@ The Tailwind 3 theme uses utility first CSS custom properties to deliver a flexi
 
 **Fluent 2 theme color variables**
 
-The Fluent 2 theme leverages modern CSS custom properties to provide a clean and consistent design aligned with Fluent 2 UI principles. The following table outlines the color related variables available in the Fluent 2 theme.
+The Fluent 2 theme leverages modern CSS custom properties to provide a clean and consistent design aligned with Fluent 2 UI principles. The following table outlines the color-related variables available in the Fluent 2 theme.
 
 | Name | Purpose |
 |------|-------------|
-| --e-font-name | Specifies the default font family used across the DataGrid |
-| --color-sf-content-bg-color-alt1 | Controls the main background of the DataGrid |
+| --e-font-name | Specifies the default font family used across the Data Grid |
+| --color-sf-content-bg-color-alt1 | Controls the main background of the Data Grid |
 | --color-sf-table-bg-color-hover | Defines the background styling for selected rows during hover interaction |
 | --color-sf-content-bg-color-hover | Defines background behavior when primary elements are hovered |
 | --color-sf-primary | Defines the main theme styling used across components |
 | --color-sf-border-light | Specifies styling for light borders and separators |
-| --color-sf-border-alt | Defines alternate border styling for DataGrid elements |
+| --color-sf-border-alt | Defines alternate border styling for Data Grid elements |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
