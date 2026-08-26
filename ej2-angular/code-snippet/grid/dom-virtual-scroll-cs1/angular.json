@@ -14,15 +14,18 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/ej2-angular-grid-dom-virtual-scroll",
-            "index": "src/index.html",
+            "index": "index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
+             "tsConfig": "tsconfig.json",
+             "assets": [
+              {
+                "glob": "*.png",
+                "input": "",
+                "output": ""
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -60,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ej2-angular-grid-dom-virtual-scroll:build:production"
+              "buildTarget": "ej2-angular-grid-dom-virtual-scroll:build:production"
             },
             "development": {
-              "browserTarget": "ej2-angular-grid-dom-virtual-scroll:build:development"
+              "buildTarget": "ej2-angular-grid-dom-virtual-scroll:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ej2-angular-grid-dom-virtual-scroll:build"
+            "buildTarget": "ej2-angular-grid-dom-virtual-scroll:build"
           }
         },
         "test": {
@@ -95,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "87dc02d4-5e1a-4911-912c-313d5e307282"
   }
 }

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GridModule, SortService, FilterService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { GridModule, SortService, FilterService, ToolbarService,DomVirtualizationService } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
     imports: [GridModule, CommonModule],
-    providers: [SortService, FilterService, ToolbarService],
+    providers: [SortService, FilterService, ToolbarService, DomVirtualizationService],
     standalone: true,
     selector: 'app-root',
     templateUrl: 'app.component.html',

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GridModule, GridComponent, Inject } from '@syncfusion/ej2-angular-grids';
-import { DomVirtualization, Sort, Filter, Toolbar } from '@syncfusion/ej2-angular-grids';
+import { GridModule, ToolbarService, DomVirtualizationService, FilterService, SortService } from '@syncfusion/ej2-angular-grids';
 import { DataManager, UrlAdaptor, Query } from '@syncfusion/ej2-data';
 
 @Component({
@@ -10,11 +9,11 @@ import { DataManager, UrlAdaptor, Query } from '@syncfusion/ej2-data';
   imports: [CommonModule, GridModule],
   templateUrl: './app.component.html',
   styleUrls: ['./styles.css'],
-  providers: [DomVirtualization, Sort, Filter, Toolbar]
+  providers: [DomVirtualizationService, ToolbarService, FilterService, SortService]
 })
 export class AppComponent implements OnInit {
-  public dataManager: DataManager;
-  public query: Query;
+  public dataManager!: DataManager;
+  public query!: Query;
 
   ngOnInit(): void {
     this.dataManager = new DataManager({
