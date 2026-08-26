@@ -14,19 +14,19 @@
               [allowSorting]='true'
               [allowFiltering]='true'
               [toolbar]='toolbar'
-              height="500px">
+              height="270px">
         <e-columns>
             <e-column field='SKUID' headerText='SKU ID' width='120' isPrimaryKey='true'></e-column>
             <e-column field='ProductName' headerText='Product Name' width='150'></e-column>
-            <e-column field='Category' headerText='Category' width='120' template='#categoryTemplate'></e-column>
+            <e-column field='Category' headerText='Category' width='120' template='#categoryTemplate'>
+              <ng-template #template let-data>
+                <span class="category-badge" [ngClass]="'category-' + data.Category?.toLowerCase()">
+                    {{ data.Category }}
+                </span>
+                </ng-template>
+            </e-column>
             <e-column field='AvailableStock' headerText='Available Stock' width='120' textAlign='Right'></e-column>
             <e-column field='UnitPrice' headerText='Unit Price' width='120' format='C2' textAlign='Right'></e-column>
         </e-columns>
     </ejs-grid>
 </div>
-
-<ng-template #categoryTemplate let-data>
-    <span [ngClass]="'category-badge category-' + data.Category?.toLowerCase()">
-        {{ data.Category }}
-    </span>
-</ng-template>
