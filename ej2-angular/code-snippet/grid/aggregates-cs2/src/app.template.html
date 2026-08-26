@@ -13,17 +13,17 @@
     <e-aggregates>
         <e-aggregate>
             <e-columns>
-                <e-column field="Freight" type="max">
-                    <ng-template #footerTemplate let-data>Max: {{ data.max }}</ng-template>
+                <e-column field="Freight" type="Max">
+                    <ng-template #footerTemplate let-data>Max: {{ data.Max }}</ng-template>
                 </e-column>
-                <e-column field="ShippedDate" type="max">
-                    <ng-template #footerTemplate let-data>Max: {{ data.max | date: 'dd/MM/yyyy' }}</ng-template>
+                <e-column field="ShippedDate" type="Max">
+                    <ng-template #footerTemplate let-data>Max: {{ data.Max | date: 'dd/MM/yyyy' }}</ng-template>
                 </e-column>
-                <e-column field="OrderDate" type="min">
-                    <ng-template #footerTemplate let-data>Min: {{ data.min | date: 'dd/MM/yyyy' }}</ng-template>
+                <e-column field="OrderDate" type="Min">
+                    <ng-template #footerTemplate let-data>Min: {{ data.Min | date: 'dd/MM/yyyy' }}</ng-template>
                 </e-column>
-                <e-column field="isVerified" type="truecount">
-                    <ng-template #footerTemplate let-data>TrueCount: {{ data.truecount }}</ng-template>
+                <e-column field="isVerified" type="TrueCount">
+                    <ng-template #footerTemplate let-data>TrueCount: {{ data.TrueCount }}</ng-template>
                 </e-column>
             </e-columns>
         </e-aggregate>

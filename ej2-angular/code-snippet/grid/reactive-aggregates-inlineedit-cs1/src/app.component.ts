@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
         this.numericParams = {
             params: {
                 change: ((args: ChangeEventArgs) => {
-                    (this.selectedRecord as ItemType).Freight = args.value as string;
+                    (this.selectedRecord as ItemType).Freight = args.value as number;
                     (this.gridObj as GridComponent).aggregateModule.refresh(this.selectedRecord);
                 }).bind(this)
             }
@@ -59,5 +59,5 @@ export class AppComponent implements OnInit {
 
 }
 interface ItemType{
-    Freight:string
+    Freight:number
 }
