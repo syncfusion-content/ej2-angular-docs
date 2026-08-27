@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IDataSet, PivotView, VirtualScrollService, PDFExportService, BeforeExportEventArgs  } from '@syncfusion/ej2-angular-pivotview';
+import { IDataSet, PivotView, PDFExportService, BeforeExportEventArgs  } from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { Pivot_Data } from './datasource';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
@@ -16,10 +16,10 @@ imports: [
     ],
 standalone: true,
   selector: 'app-container',
-  providers: [PDFExportService,VirtualScrollService],
+  providers: [PDFExportService],
   template: `<div class="col-md-8">
   <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowPdfExport='true'
-  enableVirtualization='true' (beforeExport)='beforeExport($event)' [width]=width></ejs-pivotview></div>
+  (beforeExport)='beforeExport($event)' [width]=width></ejs-pivotview></div>
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
