@@ -3,18 +3,20 @@ layout: post
 title: Printing in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table prints the current grid or pivot chart view to a hard copy via the print method.
 platform: ej2-angular
-control: Print 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Printing in Angular Pivot Table
 
-The Angular PivotView component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
+The Angular Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 
 ## Print pivot table
 
-The rendered pivot table can be printed by invoking the [print](https://ej2.syncfusion.com/angular/documentation/api/grid#print) method from the underlying [`Grid`](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) component instance. The [`Grid`](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) control manages the print functionality and captures the current state of the pivot table, including all applied filters, sorting, and formatting. The sample code below demonstrates how to trigger the print operation using an external button click.
+Call the [`print`](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#print) method on the underlying [`Grid`](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) instance (accessed via the `grid` property of the `PivotView` instance through a `@ViewChild` reference) to print the rendered pivot table. The `Grid` control captures the current state of the pivot table, including all applied filters, sorting, and formatting.
+
+The sample below prints the pivot table when an external button is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,13 +32,13 @@ The rendered pivot table can be printed by invoking the [print](https://ej2.sync
 
 ## Print pivot chart
 
-To print the pivot chart, use the [print](https://ej2.syncfusion.com/angular/documentation/api/chart#print) method from the underlying [`Chart`](https://ej2.syncfusion.com/angular/documentation/chart/getting-started) component instance. The [`Chart`](https://ej2.syncfusion.com/angular/documentation/chart/getting-started) control manages the print functionality and preserves all visual elements, including colors, legends, and data labels, in the printed output.
+Call the [`print`](https://ej2.syncfusion.com/angular/documentation/api/chart/index-default#print) method on the underlying [`Chart`](https://ej2.syncfusion.com/angular/documentation/chart/getting-started) instance (accessed via the `chart` property of the `PivotView` instance through a `@ViewChild` reference) to print the pivot chart. The `Chart` control preserves colors, legends, and data labels in the printed output.
 
-> To use pivot chart functionality, inject the `PivotChartService` module into the `@NgModule.providers` section.
+> Set the [`displayOption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayoptionmodel) property to **Chart** or **Both** to display the pivot chart.
 
-> To display the pivot chart, set the [displayOption](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOptionModel) property to either **Chart** or **Both**.
+> To enable pivot chart functionality, inject the `PivotChartService` module into the `@NgModule.providers` section.
 
-The sample code below illustrates how to print the pivot chart through an external button click.
+The sample below prints the pivot chart when an external button is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,3 +51,9 @@ The sample code below illustrates how to print the pivot chart through an extern
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs319" %}
+
+## See Also
+
+* [Pivot Chart](./pivot-chart)
+* [Excel Export](./excel-export)
+* [PDF Export](./pdf-export)
