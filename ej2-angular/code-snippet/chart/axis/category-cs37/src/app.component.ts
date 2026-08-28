@@ -1,18 +1,14 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService, LegendService, DataLabelService, MultiLevelLabelService, SelectionService } from '@syncfusion/ej2-angular-charts'
+import { ChartModule, CategoryService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [ CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService,LegendService, DataLabelService, MultiLevelLabelService, SelectionService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [CategoryService, ColumnSeriesService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='gold'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold'></e-series>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='bronze' name='Bronze'></e-series>
         </e-series-collection>
@@ -20,29 +16,31 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    public primaryYAxis?: Object;
+
     ngOnInit(): void {
         this.chartData = [
-              { country: "USA", gold: 50, silver: 70, bronze: 45 },
-              { country: "China", gold: 40, silver: 60, bronze: 55 },
-              { country: "Japan", gold: 70, silver: 60, bronze: 50 },
-              { country: "Australia", gold: 60, silver: 56, bronze: 40 },
-              { country: "France", gold: 50, silver: 45, bronze: 35 },
-              { country: "Germany", gold: 40, silver: 30, bronze: 22 },
-              { country: "Italy", gold: 40, silver: 35, bronze: 37 },
-              { country: "Sweden", gold: 30, silver: 25, bronze: 27 }
+            { country: 'USA', gold: 50, silver: 70, bronze: 45 },
+            { country: 'China', gold: 40, silver: 60, bronze: 55 },
+            { country: 'Japan', gold: 70, silver: 60, bronze: 50 },
+            { country: 'Australia', gold: 60, silver: 56, bronze: 40 },
+            { country: 'France', gold: 50, silver: 45, bronze: 35 },
+            { country: 'Germany', gold: 40, silver: 30, bronze: 22 },
+            { country: 'Italy', gold: 40, silver: 35, bronze: 37 },
+            { country: 'Sweden', gold: 30, silver: 25, bronze: 27 }
         ];
         this.primaryXAxis = {
             valueType: 'Category',
             title: 'Countries'
         };
         this.primaryYAxis = {
-            minimum: 0, maximum: 80,
-            interval: 20, title: 'Medals'
+            title: 'Medals',
+            minimum: 0,
+            maximum: 80,
+            interval: 20
         };
         this.title = 'Olympic Medals';
     }
-
 }

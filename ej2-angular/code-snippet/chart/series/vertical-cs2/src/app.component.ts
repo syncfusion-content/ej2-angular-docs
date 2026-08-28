@@ -1,19 +1,11 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
-
+import { ChartModule, CategoryService, SplineSeriesService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [CategoryService, SplineSeriesService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' isTransposed='true'>
         <e-series-collection>
@@ -42,8 +34,10 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Climate Graph-2012';
         this.emptyPointSettings = {
-            mode: 'Average', fill: 'red', border: {width: 2, color: 'green'}
-        }
+            mode: 'Average',
+            fill: 'red',
+            border: { width: 2, color: 'green' }
+        };
     }
 
 }

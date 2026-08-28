@@ -14,35 +14,13 @@ domainurl: ##DomainURL##
 
 A step line chart displays data points connected by horizontal and vertical lines, creating a staircase-like pattern.
 
-<img src="../../../../images/step-line.png" alt="Step line chart showing data trends">
+<img src="../../../../images/step-line.png" alt="Step line chart showing staircase pattern">
 
-To render a [step line](https://www.syncfusion.com/angular-components/angular-charts/chart-types/stepline-chart) series in your chart, you need to follow a few steps to configure it correctly.
+Configure a step line series as follows:
 
-Here's a concise guide on how to do this:
-
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StepLine` in your chart configuration. This indicates that the data should be represented as a step line chart, which connects data points with horizontal and vertical lines, creating a staircase effect. This type is ideal for displaying data that changes at distinct points.
-
-2. **Provide StepLineSeriesService**: Inject the `StepLineSeriesService` into your component using the `providers` array in the `@NgModule` decorator. This step is essential, as it ensures that the necessary functionalities for rendering step line series are available in your chart.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/line-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs2/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/line-cs2/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/line-cs2" %}
-
-## Binding data with series
-
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
+1. **Set the series type**: Set the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) to `StepLine`.
+2. **Register the service**: Register `StepLineSeriesService` (and any required axis services) in the module `providers` array, or in `ApplicationConfig.providers` for standalone applications. Confirm that `ChartModule` is imported.
+3. **Map the data fields**: Bind the data with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource), and map fields with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,11 +40,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-The following properties can be used to customize the `step line` series.
+Customize a step line series using the following properties.
 
-**Fill**
+### Solid color
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property to set a single solid stroke color. Accepted values are CSS color names (for example, `blue`), hexadecimal strings (for example, `#1A75FF`), and `rgba(...)` strings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,7 +62,9 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs" %}
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the step line series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+### Gradient color
+
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can also reference an SVG gradient. Define each gradient in an SVG `<defs>` element and assign it in the `url(#gradientId)` format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,9 +82,9 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDi
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs1" %}
 
-**Opacity**
+### Opacity
 
-The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+Use the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property to control step line transparency. Set a value from `0` (fully transparent) to `1` (fully opaque).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,9 +102,9 @@ The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs2" %}
 
-**Dash array**
+### Dash array
 
-The [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#dasharray) property determines the pattern of dashes and gaps in the series.
+Use the [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#dasharray) property to define the step line's dash pattern. Provide a comma or whitespace-separated list of stroke-gap sizes in pixels (e.g. `"5,5"`, `"2,2,10,2"`, or `"4 4"`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -142,9 +122,9 @@ The [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/ser
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs3" %}
 
-**Width**
+### Width
 
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#width) property specifies the stroke width applied to the series.
+Use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#width) property to set the step line stroke width in pixels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,9 +142,9 @@ The [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs4" %}
 
-**Step**
+### Step
 
-Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#step) property to change the position of the steps in a step line series.
+The [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#step) property controls where the vertical riser is positioned between two adjacent data points. Supported values are `Left`, `Center`, and `Right`. The default is `Left`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -182,9 +162,9 @@ Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs5" %}
 
-**No risers**
+### No risers
 
-You can eliminate the vertical lines between points by using the [`noRisers`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#norisers) property in a series. This approach is useful for highlighting trends without the distraction of risers.
+Use the [`noRisers`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#norisers) property to render the step line without the vertical lines between points. Bind it as a boolean property (`[noRisers]="true"`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,11 +184,18 @@ You can eliminate the vertical lines between points by using the [`noRisers`](ht
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is empty. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode).
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control empty-point rendering. The default is `Gap`.
+
+| Mode      | Visual behavior |
+|-----------|-----------------|
+| `Gap`     | Leave a gap at the empty position and continue the staircase through the next available point. |
+| `Zero`    | Treat the empty point as `0` and connect it. |
+| `Drop`    | Drop the step segment; subsequent points are still rendered. |
+| `Average` | Replace the empty value with the average of the surrounding points. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -226,9 +213,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs6" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -246,9 +233,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs7" %}
 
-**Border**
+### Empty-point border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use the [`emptyPointSettings.border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of a rendered empty point's border.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -270,7 +257,11 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as `data`, `fill`, and `name`, before they are rendered on the chart. The callback receives an `ISeriesRenderEventArgs` argument that exposes mutable `series` and `data` properties.
+
+```html
+<ejs-chart (seriesRender)="onSeriesRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -290,7 +281,11 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart. The callback receives an `IPointRenderEventArgs` argument that exposes the current `point`, `series`, `fill`, and `border`, plus a `cancel` flag.
+
+```html
+<ejs-chart (pointRender)="onPointRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -308,7 +303,19 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/stepline-cs10" %}
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../../chart-elements/data-labels)
+The following symptoms map to the most common configuration issues.
+
+- **The step line is not displayed**: Confirm that `StepLineSeriesService` is registered, the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) is `StepLine`, and that `xName` / `yName` map to fields in the data source.
+- **An empty point is missing**: Review `emptyPointSettings.mode` and verify that the mapped value is `null` or `undefined` (not `0` or `''`).
+- **The `width` property has no effect**: Confirm that you are setting `width` on the `<e-series>` directive and not on `border.width`.
+- **Risers remain visible despite `noRisers`**: Bind the property with brackets (`[noRisers]="true"`) so Angular treats it as a boolean; the string `'true'` is not coerced to a boolean in Angular templates.
+
+## See also
+
+* [Data labels](../../../chart-elements/data-labels)
 * [Tooltip](../../../chart-interactive/tool-tip)
+* [Axis customization](../../../axis/axis-customization)
+* [Data binding](../../../data-binding/working-with-data)
+* [Legend](../../../chart-elements/legend)

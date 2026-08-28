@@ -81,7 +81,7 @@ Export custom data to Excel or CSV even if not currently used in the Grid by spe
 
 ## Exporting with custom aggregate
 
-Exporting grid data with custom aggregates allows including additional calculated values in the exported file based on specific requirements. This feature is helpful for providing a comprehensive view of the data in the exported file, incorporating specific aggregated information for analysis or reporting purposes.
+Exporting grid data with custom aggregates allows including calculated values in the PDF based on specific requirements, providing a comprehensive view that supports analysis and reporting.
 
 In order to utilize custom aggregation, specify the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) property as `Custom` and provide the custom aggregate function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property.
 
@@ -214,7 +214,7 @@ The following example demonstrates exporting the grid with custom date format. I
 
 ## Merge duplicate cells on export
 
-Duplicate cells (based on their values) in a specific column of the Angular Data Grid can be merged. This can be achieved by utilizing the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event. Additionally, duplicate cells in the specified column can be merged during export by using the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#excelquerycellinfo) event for Excel and CSV formats. This functionality is useful for improving the readability of data and providing a clearer visual representation.
+Duplicate cells in a specific column of the Angular Data Grid can be merged. This can be achieved by utilizing the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event. Additionally, duplicate cells in the specified column can be merged during export by using the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#excelquerycellinfo) event for Excel and CSV formats. This functionality is useful for improving the readability of data and providing a clearer visual representation.
 
 The following example demonstrates merging duplicate cells in the "Order ID" column in both Grid view and export:
 

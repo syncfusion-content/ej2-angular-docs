@@ -21,9 +21,9 @@ Here's a concise guide on how to do this:
 
 1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `RangeArea` in your chart configuration. This indicates that the data should be represented as a range area chart, which is ideal for visualizing a range of values for each data point. This type of chart is particularly useful for displaying data that has a range between a minimum and maximum value, such as temperature ranges, stock price ranges, or any other type of data that varies within a specific interval.
 
-2. **Inject the RangeAreaSeries module**: Use the `@NgModule.providers` method to inject the `RangeAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range area series are available in your chart.
+2. **Register the RangeAreaSeriesService provider**: Register `RangeAreaSeriesService` (along with any other chart services you need) in the component's `providers` array.
 
-3. **Provide high and low values**: The `RangeArea` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum range, while the low value represents the minimum range for each data point. These values define the upper and lower boundaries of the area for each point on the chart
+3. **Provide high and low values**: The `RangeArea` series requires two value fields for each data point. Set [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#high) to the field name representing the upper bound and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#low) to the field name for the lower bound. Together with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#xName) these define the band rendered at each point on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -43,7 +43,7 @@ Here's a concise guide on how to do this:
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low) properties.
+Bind data via the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#datasource) property on the series. Map the fields from your records to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#low) so the chart knows which value drives each bound.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,11 +63,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-The following properties can be used to customize the `range area` series.
+The following properties customize the `range area` series.
 
-**Fill**
+### Solid fill
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#fill) property determines the color applied to the series. Default value is `null`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -85,7 +85,20 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/rangearea-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the range area series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+### Gradient fill
+
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#fill) property can apply an SVG gradient to a range area series. Define the gradient within an SVG `<defs>` element using a unique ID, and assign it to the series in the `url(#gradientId)` format. Place the following SVG element in your application's `index.html` file, inside the `<body>` element and outside the `<app-container>` element.
+
+```html
+<svg>
+    <defs>
+        <linearGradient id="gradient">
+            <stop offset="0%" style="stop-color:blue;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:violet;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,9 +116,9 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/rangearea-cs1" %}
 
-**Opacity**
+### Opacity
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#opacity) property specifies the transparency level of the fill. Valid range is `0` (completely transparent) to `1` (completely opaque). Default value is `1`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,9 +136,13 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 {% previewsample "page.domainurl/samples/chart/series/rangearea-cs2" %}
 
-**Border**
+### Series Border
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color and dasharray of the series border.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#border) property of the series to style its border. The `border` object supports these fields:
+
+* [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/bordermodel#width) - Border thickness in pixels.
+* [`color`](https://ej2.syncfusion.com/angular/documentation/api/chart/bordermodel#color) - Border stroke color.
+* [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/bordermodel#dashArray) - Dash pattern for the border (for example `'5,5'`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -145,11 +162,16 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+Data points with `null` or `undefined` values are considered empty. How an empty point is rendered on the chart depends on the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettings#mode) you choose.
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettings#mode) property to define how empty or missing data points are handled. Available values are:
+
+* `Gap` (default) - Leaves a gap at the empty point.
+* `Drop` - Drops the empty point and connects adjacent points.
+* `Zero` - Replaces the empty point with the value `0`.
+* `Average` - Replaces the empty point with the average of adjacent points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,9 +189,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/rangearea-cs4" %}
 
-**Fill**
+### Empty Point Fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettings#fill) property to customize the fill color of empty points in the series. Applies only when `mode` is `Zero` or `Average`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,9 +209,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/rangearea-cs5" %}
 
-**Border**
+### Empty Point Border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettings#border) property to customize the width and color of the border for empty points. Applies only when `mode` is `Zero` or `Average`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -211,7 +233,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iseriesrendereventargs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -231,7 +253,8 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointrendereventargs) event allows you to customize each data point before it is rendered on the chart.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -249,7 +272,15 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/rangearea-cs8" %}
 
+## Troubleshooting
+
+* Ensure `RangeAreaSeriesService` is registered in the providers; otherwise the range area series will not render.
+* **Gradient fill renders as solid color:** the SVG gradient referenced by `fill='url(#gradient)'` is not defined. Add a matching `<linearGradient>` (or `<radialGradient>`) inside a `<defs>` block in the chart template, or in a global stylesheet.
+* **Empty-point customization has no visible effect:** the `fill` and `border` settings on `emptyPointSettings` apply only when `mode` is `Zero` or `Average`. With `Gap` and `Drop` modes no marker is drawn.
+
 ## See Also
 
+* [Range Step Area Chart](./step-area)
+* [Spline Range Area Chart](./spline-range-area)
 * [Data label](../../../chart-elements/data-labels)
 * [Tooltip](../../../chart-interactive/tool-tip)

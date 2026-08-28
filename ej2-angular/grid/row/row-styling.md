@@ -48,7 +48,7 @@ Row styles can be applied using CSS selectors. The Data Grid provides a class na
 
 ### Customize alternate row styles
 
-The appearance of alternate rows can be customized using CSS. This can be useful for improving the readability of the data and making it easier to distinguish between rows. By default, the Data Grid provides the CSS class `.e-altrow` to style the alternate rows. This default style can be customized by overriding the `.e-altrow` class with custom CSS styles. 
+The appearance of alternate rows in the Data Grid can be customized with CSS to improve readability and distinguish rows more clearly. By default, the `.e-altrow` class is applied, which can be overridden with custom styles.
 
 To change the background color of the alternate rows, add the following CSS code to the application's stylesheet:
 
@@ -74,7 +74,7 @@ The following example demonstrates using the `.e-altrow` class to style alternat
 
 ### Customize selected row styles
 
-The appearance of the selected row can be customized using CSS. This is useful when highlighting the currently selected row to improve the visual appeal of the Data Grid. By default, the Data Grid provides the CSS class `.e-selectionbackground` to style the selected row. This default style can be customized by overriding the `.e-selectionbackground` class with custom CSS styles.
+The appearance of the selected row in the Data Grid can be customized with CSS to highlight the active selection and enhance visual appeal. By default, the .`e-selectionbackground` class is applied, which can be overridden with custom styles.
 
 
 ```css

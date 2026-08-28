@@ -12,22 +12,22 @@ domainurl: ##DomainURL##
 
 ## Candle
 
-The Candle series, similar to the Hilo Open Close series, is used to represent the low, high, open, and closing prices over time. It is commonly used in financial charts to visualize stock price movements.
+A Candle series represents the low, high, open, and closing prices over time. It is commonly used in financial charts to visualize stock price movements.
 
 <img src="../../../images/candle.png" alt="Candle chart showing data trends over time">
 
-* **Green Hollow Candle** - Occurs when the closing price is higher than both the opening price and the previous candle’s closing price. This pattern signals strong bullish momentum.
-* **Green Filled Candle** - Occurs when the closing price is lower than the opening price but still higher than the previous candle’s closing price. This suggests an overall upward trend with some short-term weakness.
-* **Red Hollow Candle** - Occurs when the closing price is higher than the opening price but lower than the previous candle’s closing price. This indicates a downward trend with some short-term strength.
-* **Red Filled Candle** - Occurs when the closing price is lower than both the opening price and the previous candle’s closing price. This pattern signals strong bearish momentum.
+The default styling uses the following conventions:
 
-To render a [`candle`](https://www.syncfusion.com/angular-components/angular-charts/chart-types/stock-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+* **Green Hollow Candle** - The closing price is higher than both the opening price and the previous candle's closing price. Signals strong bullish momentum.
+* **Green Filled Candle** - The closing price is lower than the opening price but still higher than the previous candle's closing price. Suggests an overall upward trend with short-term weakness.
+* **Red Hollow Candle** - The closing price is higher than the opening price but lower than the previous candle's closing price. Indicates a downward trend with short-term strength.
+* **Red Filled Candle** - The closing price is lower than both the opening price and the previous candle's closing price. Signals strong bearish momentum.
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Candle` in your chart configuration. This indicates that the data should be represented as a candle chart, providing a detailed view of stock price fluctuations by displaying the high, low, open, and close values for each time period.
+Configure a Candle series as follows:
 
-2. **Provide CandleSeriesService**: Use the `@NgModule.providers` method to inject the `CandleSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering candle series are available in your chart.
-
-3. **Provide high, low, open, and close values**: The `Candle` series requires five fields (x, high, low, open, and close) to accurately display the stock's high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
+1. **Set the series type**: Set the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) to `Candle`.
+2. **Register the service**: Register `CandleSeriesService` (and any required axis services) in the module `providers` array, or in `ApplicationConfig.providers` for standalone applications. Confirm that `ChartModule` is imported.
+3. **Map the OHLC fields**: Bind the data with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource), and map the date and price fields with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low), [`open`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#open), and [`close`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#close).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,56 +45,27 @@ To render a [`candle`](https://www.syncfusion.com/angular-components/angular-cha
   
 {% previewsample "page.domainurl/samples/chart/series/candle-cs1" %}
 
-## Binding data with series
+## Series customization
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low), [`open`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#open) and [`close`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#close) properties.
+Customize a Candle series using the following properties.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/candle-cs3/src/app.component.ts %}
-{% endhighlight %}
+### Hollow candles
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/candle-cs3/src/main.ts %}
-{% endhighlight %}
+Hollow candles let you visually compare the current price with the previous price by coloring them differently. The candles are filled or left hollow based on the following criteria:
 
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/candle-cs3/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/candle-cs3" %}
+| State      | Behavior |
+|------------|----------|
+| `Filled`   | Candlesticks are filled when the close value is lesser than the open value. |
+| `Unfilled` | Candlesticks are unfilled when the close value is greater than the open value. |
 
-## Hollow Candles
+By default, [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bullfillcolor) is **red** and [`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bearfillcolor) is **green**. Override these values on the series to match your market convention.
 
-Hollow candles in candle charts allow you to visually compare the current price with the previous price by coloring them differently. The candles are filled or left hollow based on the following criteria:
+### Solid candles
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td><b>States</b></td>
-<td><b>Description </b></td>
-</tr>
-<tr>
-<td>Filled</td>
-<td>Candlesticks are filled when the close value is lesser than the open value</td>
-</tr>
-<tr>
-<td>Unfilled</td>
-<td>Candlesticks are unfilled when the close value is greater than the open value</td>
-</tr>
-</table>
+The [`enableSolidCandles`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#enablesolidcandles) property is used to enable or disable solid candles. By default, it is set to **false**. When solid candles are enabled, the fill color of the candle is determined solely by its opening and closing values:
 
-The color of the candle will be defined by comparing it with previous values. The bear color will be applied when the current closing value is greater than the previous closing value. The bull color will be applied when the current closing value is less than the previous closing value.
-
-By default, the `bullFillColor` is set to **red** and the `bearFillColor` is set to **green**.
-
-## Solid Candles
-
-The [`enableSolidCandles`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#enablesolidcandles) property is used to enable or disable solid candles. By default, it is set to **false**. The fill color of the candle will be determined by its opening and closing values.
-
-* The [`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bearfillcolor) will be applied when the opening value is less than the closing value.
-* The [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bullfillcolor) will be applied when the opening value is greater than the closing value.
+* The [`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bearfillcolor) is applied when the opening value is less than the closing value.
+* The [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bullfillcolor) is applied when the opening value is greater than the closing value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,11 +85,18 @@ The [`enableSolidCandles`](https://ej2.syncfusion.com/angular/documentation/api/
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is empty. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode).
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control empty-point rendering. The default is `Gap`.
+
+| Mode      | Visual behavior |
+|-----------|-----------------|
+| `Gap`     | Skip the empty point; subsequent candles are still rendered. |
+| `Zero`    | Treat the empty point as `0` and render a flat candle. |
+| `Drop`    | Drop the empty candle; subsequent points are still rendered. |
+| `Average` | Replace the empty value with the average of the surrounding points. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,9 +114,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/candle-cs4" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty-point candles.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,7 +138,11 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as `data`, `fill`, and `name`, before they are rendered on the chart. The callback receives an `ISeriesRenderEventArgs` argument that exposes mutable `series` and `data` properties.
+
+```html
+<ejs-chart (seriesRender)="onSeriesRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -180,7 +162,11 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart. The callback receives an `IPointRenderEventArgs` argument that exposes the current `point`, `series`, `fill`, and `border`, plus a `cancel` flag.
+
+```html
+<ejs-chart (pointRender)="onPointRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -198,7 +184,18 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/candle-cs7" %}
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../chart-elements/data-labels)
-* [Tooltip](../../chart-interactive/tool-tip)
+The following symptoms map to the most common configuration issues.
+
+- **Candles are not rendered**: Confirm that `CandleSeriesService` is registered, the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) is `Candle`, and that `xName`, `high`, `low`, `open`, and `close` map to fields in the data source.
+- **All candles use the same color**: Verify that `bullFillColor` and `bearFillColor` are set, and that `enableSolidCandles` is configured as required.
+- **An empty point renders as a flat zero candle**: Review `emptyPointSettings.mode`. Use `Gap` to skip rendering or `Drop` to keep subsequent candles.
+
+## See also
+
+* [Data labels](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)
+* [Axis customization](../../axis/axis-customization)
+* [Data binding](../../data-binding/working-with-data)
+* [Legend](../../../chart-elements/legend)

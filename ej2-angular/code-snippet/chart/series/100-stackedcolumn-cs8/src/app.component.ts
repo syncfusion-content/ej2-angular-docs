@@ -1,8 +1,7 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts'
-import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService,
-    ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
- } from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts';
+import { CategoryService, StackingColumnSeriesService
+ } from '@syncfusion/ej2-angular-charts';
 
 
 import { Component, OnInit } from '@angular/core';
@@ -12,11 +11,10 @@ imports: [
          ChartModule
     ],
 
-providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService,
-        ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService,],
+providers: [CategoryService, StackingColumnSeriesService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" (seriesRender)='seriesRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" (seriesRender)='seriesRender($event)' [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y' name='UK'></e-series>
             <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y1' name='Germany'></e-series>
@@ -28,10 +26,7 @@ standalone: true,
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public chartData?: Object[];
-    public emptyPointSettings?: Object;
-    public emptyPointSettings1?: Object;
     public title?: string;
-    primaryYAxis: any;
     ngOnInit(): void {
         this.chartData = percentData;
         this.primaryXAxis = {

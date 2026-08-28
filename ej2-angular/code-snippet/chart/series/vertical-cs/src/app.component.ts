@@ -1,23 +1,15 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
-
+import { ChartModule, CategoryService, SplineSeriesService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [CategoryService, SplineSeriesService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' isTransposed='true'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' isTransposed='true'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Spline' xName='x' yName='y' name='London' width=2 [marker]='marker'></e-series>
+            <e-series [dataSource]='chartData' type='Spline' xName='x' yName='y' name='London' [width]='2' [marker]='marker' [emptyPointSettings]='emptyPointSettings'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

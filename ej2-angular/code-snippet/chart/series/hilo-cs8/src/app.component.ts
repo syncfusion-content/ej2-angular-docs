@@ -1,7 +1,7 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
-import { CategoryService, HiloSeriesService } from '@syncfusion/ej2-angular-charts'
-import { chartData } from './datasource'
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { IPointRenderEventArgs } from '@syncfusion/ej2-charts';
+import { CategoryService, HiloSeriesService } from '@syncfusion/ej2-angular-charts';
+import { chartData } from './datasource';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

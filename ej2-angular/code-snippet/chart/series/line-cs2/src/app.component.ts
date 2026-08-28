@@ -1,19 +1,11 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
-
+import { ChartModule, CategoryService, StepLineSeriesService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { stepData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [CategoryService, StepLineSeriesService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [title]='title'>
         <e-series-collection>
@@ -24,9 +16,10 @@ standalone: true,
 export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
+
     ngOnInit(): void {
         this.chartData = stepData;
         this.title = 'Monthly Sales Comparison';
     }
-
 }
+

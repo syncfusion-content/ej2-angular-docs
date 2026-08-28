@@ -53,7 +53,7 @@ sf new syncfusion-angular-app --framework angular --template grid
 {% endhighlight %}
 {% endtabs %}
 
-In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
+In this mode, the project configuration is passed directly in the command. The above command creates an Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component.
 
 ### Interactive mode
 

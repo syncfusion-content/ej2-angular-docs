@@ -1,6 +1,6 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
-import { BarSeriesService, StackingBarSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { IPointRenderEventArgs } from '@syncfusion/ej2-charts';
+import { StackingBarSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { stackedData } from './datasource';
 @Component({
@@ -8,10 +8,10 @@ imports: [
          ChartModule
     ],
 
-providers: [ BarSeriesService, StackingBarSeriesService, CategoryService],
+providers: [StackingBarSeriesService, CategoryService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y' name='Apple' ></e-series>
             <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y1' name='Orange'></e-series>
@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    primaryYAxis: any;
     ngOnInit(): void {
         this.chartData = stackedData;
         this.primaryXAxis = {

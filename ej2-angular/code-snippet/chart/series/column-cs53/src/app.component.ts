@@ -1,7 +1,5 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService,
-    ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService, DataLabelService
- } from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, StackingColumnSeriesService, DataLabelService } from '@syncfusion/ej2-angular-charts';
 
 
 import { Component, OnInit } from '@angular/core';
@@ -11,11 +9,10 @@ imports: [
          ChartModule
     ],
 
-providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService,
-        ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService, DataLabelService],
+providers: [CategoryService, StackingColumnSeriesService, DataLabelService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [stackLabels]='stackLabels'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title' [stackLabels]='stackLabels'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y' name='UK' [marker]='marker'></e-series>
             <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y1' name='Germany' [marker]='marker'></e-series>
@@ -28,7 +25,6 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    primaryYAxis: any;
     public marker?: Object;
     public stackLabels?:Object;
     ngOnInit(): void {

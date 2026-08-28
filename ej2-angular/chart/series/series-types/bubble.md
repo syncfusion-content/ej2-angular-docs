@@ -12,15 +12,15 @@ domainurl: ##DomainURL##
 
 ## Bubble
 
-A bubble series displays data as bubbles where the size of each bubble is proportional to a third value (z-value), and the position is determined by the x and y values.
+A bubble series renders data as bubbles whose size is proportional to a third value (the z-value), with the position determined by the x and y values.
 
 <img src="../../../images/bubble.png" alt="Bubble chart displaying data points with varying sizes representing three-dimensional data">
 
-To render a [bubble](https://www.syncfusion.com/angular-components/angular-charts/chart-types/bubble-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+Configure a bubble series as follows:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Bubble` in your chart configuration. This indicates that the data should be displayed as a bubble series in the chart.
-
-2. **Provide BubbleSeriesService**: Inject the `BubbleSeriesService` into your chart using the `@NgModule.providers` array. This step is essential, as it ensures that the necessary functionalities for rendering the bubble series are available in your chart.
+1. **Set the series type**: Set the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) to `Bubble`.
+2. **Register the service**: Register `BubbleSeriesService` in the module `providers` array, or in `ApplicationConfig.providers` for standalone applications. Confirm that `ChartModule` is imported.
+3. **Map the data fields**: Bind the data with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource), and map the x, y, and bubble-size fields with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname), and [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#size).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,33 +38,13 @@ To render a [bubble](https://www.syncfusion.com/angular-components/angular-chart
   
 {% previewsample "page.domainurl/samples/chart/series/bubble-cs1" %}
 
-## Binding data with series
-
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname), and [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#size) properties.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bubble-cs3/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bubble-cs3/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/bubble-cs3/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/bubble-cs3" %}
-
 ## Series customization
 
-The following properties can be used to customize the `bubble` series.
+Customize a bubble series using the following properties.
 
-**Fill**
+### Fill
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property to set a single solid bubble color. Accepted values are CSS color names (for example, `blue`), hexadecimal strings (for example, `#1A75FF`), and `rgba(...)` strings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,9 +62,9 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDi
   
 {% previewsample "page.domainurl/samples/chart/series/bubble-cs" %}
 
-**Opacity**
+### Opacity
 
-The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+Use the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property to control bubble transparency. Set a value from `0` (fully transparent) to `1` (fully opaque).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,9 +82,9 @@ The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
   
 {% previewsample "page.domainurl/samples/chart/series/bubble-cs4" %}
 
-## Size mapping
+### Size mapping
 
-Use the [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#size) property to map the size of each bubble to the value specified in the data source.
+Use the [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#size) property to map each bubble radius to a numeric value from the data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,11 +104,18 @@ Use the [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is empty. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode).
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control empty-point rendering. The default is `Gap`.
+
+| Mode      | Visual behavior |
+|-----------|-----------------|
+| `Gap`     | Skip the empty point; subsequent bubbles are still rendered. |
+| `Zero`    | Treat the empty point as `0` and render the bubble at the origin. |
+| `Drop`    | Drop the empty bubble; subsequent points are still rendered. |
+| `Average` | Replace the empty value with the average of the surrounding points. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,9 +133,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/bubble-cs5" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty-point bubbles.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,9 +153,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/bubble-cs6" %}
 
-**Border**
+### Empty-point border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use the [`emptyPointSettings.border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of an empty-point bubble's stroke.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -190,7 +177,11 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as `data`, `fill`, and `name`, before they are rendered on the chart. The callback receives an `ISeriesRenderEventArgs` argument that exposes mutable `series` and `data` properties.
+
+```html
+<ejs-chart (seriesRender)="onSeriesRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -210,7 +201,11 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart. The callback receives an `IPointRenderEventArgs` argument that exposes the current `point`, `series`, `fill`, and `border`, plus a `cancel` flag.
+
+```html
+<ejs-chart (pointRender)="onPointRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -228,7 +223,19 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/bubble-cs9" %}
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../chart-elements/data-labels)
+The following symptoms map to the most common configuration issues.
+
+- **Bubbles are not rendered**: Confirm that `BubbleSeriesService` is registered, the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) is `Bubble`, and that `xName`, `yName`, and `size` map to numeric fields in the data source.
+- **All bubbles are the same size**: The `size` field is missing or non-numeric. Verify the data type and clamp values.
+- **An empty point renders as a zero-radius bubble**: Review `emptyPointSettings.mode`. Use `Gap` to skip rendering or `Drop` to keep subsequent bubbles.
+- **`pointRender` does not fire**: Confirm you bind the event on the `<ejs-chart>` element with `(pointRender)="..."`, not on the series.
+
+## See also
+
+* [Data labels](../../chart-elements/data-labels)
 * [Tooltip](../../chart-interactive/tool-tip)
+* [Axis customization](../../axis/axis-customization)
+* [Data binding](../../data-binding/working-with-data)
+* [Legend](../../chart-elements/legend)

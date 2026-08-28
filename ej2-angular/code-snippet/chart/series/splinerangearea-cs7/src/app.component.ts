@@ -1,7 +1,6 @@
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
-import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
-    DateTimeService, CategoryService, MultiColoredAreaSeriesService, StackingStepAreaSeriesService, SplineRangeAreaSeriesService } from '@syncfusion/ej2-angular-charts'
+import {  CategoryService, SplineRangeAreaSeriesService } from '@syncfusion/ej2-angular-charts'
 
 
 import { Component, OnInit } from '@angular/core';
@@ -12,8 +11,7 @@ imports: [
          ChartModule, ChartAllModule
     ],
 
-providers: [ AreaSeriesService , RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
-               DateTimeService, CategoryService, MultiColoredAreaSeriesService,StackingStepAreaSeriesService,SplineRangeAreaSeriesService],
+providers: [CategoryService, SplineRangeAreaSeriesService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>

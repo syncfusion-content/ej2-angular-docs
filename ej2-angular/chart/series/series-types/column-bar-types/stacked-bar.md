@@ -7,6 +7,7 @@ control: 100% Stacked Bar chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
+
 # 100% Stacked Bar Chart in Angular Charts
 
 ## 100% Stacked Bar
@@ -16,13 +17,10 @@ It is used to compare percentage contributions across categories.
 
 <img src="../../../../images/stacked100-bar.png" alt="100% stacked bar chart showing percentage contributions across categories">
 
-To render a [100% stacked bar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-bar-chart) series in your chart, you need to follow a few steps to configure it correctly.
+Configure a [100% stacked bar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-bar-chart) series as follows:
 
-Here's a concise guide on how to do this:
-
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StackingBar100` in your chart configuration. This indicates that the data should be represented as a 100% stacked bar chart, with segments that show the percentage contribution of each part.
-
-2. **Provide StackingBarSeriesService**: Use the `@NgModule.providers` method to inject the `StackingBarSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the 100% stacked bar series are available in your chart.
+1. **Set the series type**: Set the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) to `StackingBar100`.
+2. **Register the required services**: Add `ChartModule` to the component or NgModule `imports` array. Add `StackingBarSeriesService` and required axis services, such as `CategoryService`, to the `providers` array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,9 +38,9 @@ Here's a concise guide on how to do this:
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs3" %}
 
-## Binding data with series
+## Binding data to a series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
+Bind an array of JSON objects or a `DataManager` instance with the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property. Map the category field with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and each series value field with [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname). Handle loading and request errors before assigning remote data to the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,11 +60,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-The following properties can be used to customize the `100% stacked bar` series.
+Use the following properties to customize a 100% stacked bar series.
 
-**Fill**
+### Solid fill
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property to set a solid CSS color for a series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -84,7 +82,40 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the 100% stacked bar series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+### Gradient fill
+
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can apply an SVG gradient to a 100% stacked bar series. Define each gradient in an SVG `<defs>` element with a unique ID, and assign it to the series in the `url(#gradientId)` format.
+
+Place the following SVG gradient definitions in the application's `index.html` file, inside the `<body>` element and outside the `<app-container>` element.
+
+```html
+<svg>
+    <defs>
+        <linearGradient id="gradient1">
+            <stop offset="0%" style="stop-color:blue;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:violet;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+<svg>
+    <defs>
+        <linearGradient id="gradient2">
+            <stop offset="0%" style="stop-color:darkred;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkorange;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+<svg>
+    <defs>
+        <linearGradient id="gradient3">
+            <stop offset="0%" style="stop-color:darkgreen;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkslateblue;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+```
+
+Set the series `fill` values to `url(#gradient1)`, `url(#gradient2)`, and `url(#gradient3)`, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,9 +133,9 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs1" %}
 
-**Opacity**
+### Opacity
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+Use the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property to control series transparency. Set a value from `0` for fully transparent to `1` for fully opaque.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,9 +153,9 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs2" %}
 
-**Border**
+### Border
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color and dasharray of the series border.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the color and width of the series border.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -142,9 +173,9 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs4" %}
 
-## 100% Cylindrical stacked bar chart
+## 100% cylindrical stacked bar chart
 
-To render a 100% cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnfacet) property to `Cylinder` in the chart series. This property transforms the regular 100% stacked bars into cylindrical shapes, enhancing the visual representation of the data.
+Set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnfacet) property to `Cylinder` to render a 100% stacked bar series with a cylindrical shape. The default value is `Rectangle`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -164,11 +195,16 @@ To render a 100% cylindrical stacked bar chart, set the [`columnFacet`](https://
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is considered empty. Configure empty-point behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode). The default mode is `Gap`.
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control how the series handles an empty point. The supported modes are:
+
+- `Gap`: Leaves a gap at the empty point. This is the default mode.
+- `Zero`: Replaces the missing value with zero.
+- `Average`: Replaces the missing value with an average derived from neighboring points.
+- `Drop`: Omits the empty point from rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -186,9 +222,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs5" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) to set the fill color when the selected mode renders a replacement point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -206,9 +242,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs6" %}
 
-**Border**
+### Empty-point border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use [`emptyPointSettings.border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) to set the width and color of an empty point's border when the selected mode renders a replacement point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -228,7 +264,9 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ## Corner radius
 
-The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+### Series corner radius
+
+Use [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#cornerradius) to round the corners of all points in the series. Configure individual corners with `topLeft`, `topRight`, `bottomLeft`, and `bottomRight`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -248,7 +286,7 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point corner radius
 
-We can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
+Handle the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event and set the event argument's [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property to customize an individual point before it is rendered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -270,7 +308,7 @@ We can customize the corner radius for individual points in the chart series usi
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -290,7 +328,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -309,7 +347,14 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs9" %}
 
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../../chart-elements/data-labels)
+- **No bars are displayed**: Confirm that `StackingBarSeriesService` and the required axis services are registered, the series type is `StackingBar100`, and the `xName` and `yName` fields exist in the data source.
+- **A point is missing**: Check whether its mapped value is `null` or `undefined`, and review `emptyPointSettings.mode`.
+- **A gradient is not displayed**: Confirm that the SVG gradient ID exists in `index.html` and matches the ID referenced by the series `fill` value.
+
+
+## See also
+
+* [Data labels](../../../chart-elements/data-labels)
 * [Tooltip](../../../chart-interactive/tool-tip)

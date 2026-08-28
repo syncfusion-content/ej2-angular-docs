@@ -606,7 +606,8 @@ The paging feature allows efficient loading of large data sets through on‑dema
 **Instructions:**
 
 1. Paging in the Grid is enabled by setting the [allowPaging](https://ej2.syncfusion.com/angular/documentation/grid/paging) property to `true`.
-2. And injecting the the `PageService` module into the component `providers` property.
+
+2. Inject the `PageService` module into the component’s `providers` property.
 
 **src/app/app.component.ts**:
 

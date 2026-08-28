@@ -1,42 +1,30 @@
-import { ChartModule, ChartAllModule, AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService } from '@syncfusion/ej2-angular-grids'
-import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-import {
-    LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService, CategoryService,
-    StepAreaSeriesService, SplineSeriesService, ScrollBarService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-    SelectionService, ScatterSeriesService, ZoomService, ColumnSeriesService, AreaSeriesService, RangeAreaSeriesService
-} from '@syncfusion/ej2-angular-charts'
-
-
+import { ChartModule, ScatterSeriesService, SelectionService } from '@syncfusion/ej2-angular-charts';
+import { GridModule, GridComponent, PageService } from '@syncfusion/ej2-angular-grids';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDragCompleteEventArgs } from '@syncfusion/ej2-angular-charts';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-@Component({
-imports: [
-         ChartModule, ChartAllModule, AccumulationChartAllModule, AccumulationChartModule, GridModule, DialogModule
-    ],
 
-providers: [LineSeriesService, DateTimeService, ColumnSeriesService, DataLabelService, ZoomService, StackingColumnSeriesService, CategoryService,
-        StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-        PieSeriesService, AccumulationTooltipService, ScrollBarService, AccumulationDataLabelService, SelectionService, ScatterSeriesService,
-        PageService, AreaSeriesService, RangeAreaSeriesService ],
-standalone: true,
+@Component({
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'
-    [selectionMode]=' selectionMode' (dragComplete)='dragComplete($event)'>
+    standalone: true,
+    imports: [ChartModule, GridModule],
+    providers: [ScatterSeriesService, SelectionService, PageService],
+    template: `
+    <ejs-chart id="chart-container"
+               [primaryXAxis]='primaryXAxis'
+               [primaryYAxis]='primaryYAxis'
+               [title]='title'
+               [selectionMode]='selectionMode'
+               (dragComplete)='dragComplete($event)'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Scatter' xName='x' yName='y' name='Product A' [marker]='marker'></e-series>>
+            <e-series [dataSource]='chartData' type='Scatter' xName='x' yName='y' name='Product A' [marker]='marker'></e-series>
         </e-series-collection>
-         </ejs-chart>
-        <ejs-grid #grid>
-                 <e-columns>
-                        <e-column field='x' headerText='X' textAlign='right' type='string'></e-column>
-                        <e-column field='y' headerText='Y' type='number'></e-column>
-                    </e-columns>
-        </ejs-grid>`
+    </ejs-chart>
+    <ejs-grid #grid [dataSource]='selectedPoints'>
+        <e-columns>
+            <e-column field='x' headerText='X' textAlign='Right'></e-column>
+            <e-column field='y' headerText='Y' textAlign='Right'></e-column>
+        </e-columns>
+    </ejs-grid>`
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
@@ -44,11 +32,13 @@ export class AppComponent implements OnInit {
     public title?: string;
     public marker?: Object;
     public primaryYAxis?: Object;
-    public selectionMode?: Object;
+    public selectionMode?: string;
+    public selectedPoints: Object[] = [];
     @ViewChild('grid')
     public grid?: GridComponent;
-    public dragComplete(args: IDragCompleteEventArgs):void {
-        this.grid!.dataSource = args.selectedDataValues[0];
+    public dragComplete(args: IDragCompleteEventArgs): void {
+        this.selectedPoints = args.selectedDataValues[0] || [];
+        this.grid!.dataSource = this.selectedPoints;
         this.grid!.refresh();
     }
     ngOnInit(): void {
@@ -63,7 +53,7 @@ export class AppComponent implements OnInit {
             { x: 2006, y: 70 }, { x: 2007, y: 32 }, { x: 2008, y: 43 }, { x: 2009, y: 21 }, { x: 2010, y: 63 },
             { x: 2011, y: 9 }, { x: 2012, y: 51 }, { x: 2013, y: 25 }, { x: 2014, y: 96 }, { x: 2015, y: 32 }
         ];
-        this.primaryXAxis={
+        this.primaryXAxis = {
             minimum: 1970,
             maximum: 2016
         };
@@ -72,7 +62,7 @@ export class AppComponent implements OnInit {
             labelFormat: '{value}%',
             interval: 25,
             minimum: 0,
-            maximum: 100,
+            maximum: 100
         };
         this.marker = {
             shape: 'Triangle',
@@ -80,6 +70,6 @@ export class AppComponent implements OnInit {
             height: 10
         };
         this.selectionMode = 'DragXY';
-        this.title = 'Profit Comparision of A and B';
+        this.title = 'Profit Comparison of A and B';
     }
 }

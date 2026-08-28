@@ -1,11 +1,11 @@
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts';
-import { AreaSeriesService, TooltipService, CategoryService, LegendService } from '@syncfusion/ej2-angular-charts';
+import { AreaSeriesService, TooltipService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { energyConsumptionData } from './datasource';
 
 @Component({
     imports: [ChartModule, ChartAllModule],
-    providers: [AreaSeriesService, CategoryService, LegendService, TooltipService],
+    providers: [AreaSeriesService, LegendService, TooltipService],
     standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings' [tooltip]='tooltip'>

@@ -16,31 +16,13 @@ A polar chart plots data on a circular grid using angle and radius values. It is
 
 <img src="../../../images/polar.png" alt="Polar chart showing values in circular layout">
 
-To render a [polar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/polar-chart) series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+To render a [polar](https://www.syncfusion.com/angular-components/angular-charts/chart-types/polar-chart) series in your chart, follow these steps to configure it correctly:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Polar` in your chart configuration. This indicates that the data should be represented as a polar chart, which is ideal for plotting data points on a circular graph.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as **`Polar`** in your chart configuration. The optional `drawType` (default `Line`) controls the inner plotting style.
 
-2. **Provide PolarSeriesService**: Use the `@NgModule.providers` method to inject the `PolarSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar series are available in your chart.
+2. **Provide PolarSeriesService**: Inject the `PolarSeriesService` into the component `providers` array. For category-axis data also include `CategoryService`, and register the service that matches the chosen `drawType` (for example `LineSeriesService`, `SplineSeriesService`, `ColumnSeriesService`).
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/polar-cs/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/polar-cs/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/polar-cs/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/polar-cs" %}
-
-## Binding data with series
-
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
+3. **Bind category and value data**: Bind data through the series [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property and map the category and value fields to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,17 +42,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Draw Types
 
-Use the [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) property to change the series plotting type in a Polar chart to line, column, area, range column, spline, scatter, stacking area, spline area, or stacking column. The default value of `drawType` is `Line`.
+Use the [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) property to change the series plotting style in a Polar chart to line, spline, area, stacking area, column, stacking column, range column, scatter, or spline area. The default value of `drawType` is `Line`. Each draw type requires the matching series service in `providers`.
 
 ### Line
 
-To render a line draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `Line` in your chart configuration. This indicates that the data should be represented as a polar line chart, with lines connecting each data point.
-
-2. **Inject the LineSeries Module**: Use the `@NgModule.providers` method to inject the `LineSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar line series are available in your chart.
-
-The [`isClosed`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#isclosed) property specifies whether to join the start and end points of a line series used in a polar chart to form a closed path. The default value of `isClosed` is **true**.
+Use `drawType='Line'` to render a polar line chart, with lines connecting each data point. The [`isClosed`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#isclosed) property determines whether the start and end points join to form a closed path. Default is `true`. Required service: `LineSeriesService`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,11 +66,7 @@ The [`isClosed`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 ### Spline
 
-To render a spline draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `Spline` in your chart configuration. This indicates that the data should be represented as a polar spline chart, with smooth, curved lines connecting each data point.
-
-2. **Inject the SplineSeries Module**: Use the `@NgModule.providers` method to inject the `SplineSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar spline series are available in your chart.
+Use `drawType='Spline'` to render a polar spline chart, with smooth curved lines connecting each data point. Required service: `SplineSeriesService`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,11 +86,7 @@ To render a spline draw type, you need to follow a few steps to configure it cor
 
 ### Area
 
-To render an area draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `Area` in your chart configuration. This indicates that the data should be represented as a polar area chart, with filled areas below the lines connecting each data point.
-
-2. **Inject the AreaSeries Module**: Use the `@NgModule.providers` method to inject the `AreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar area series are available in your chart.
+Use `drawType='Area'` to render a polar area chart, with filled areas below the connecting line. Required service: `AreaSeriesService`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,11 +106,7 @@ To render an area draw type, you need to follow a few steps to configure it corr
 
 ### Stacked Area
 
-To render a stacked area draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `StackingArea` in your chart configuration. This indicates that the data should be represented as a polar stacked area chart, with areas stacked on top of each other, displaying the cumulative value of multiple series.
-
-2. **Inject the StackingAreaSeries Module**: Use the `@NgModule.providers` method to inject the `StackingAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar stacked area series are available in your chart.
+Use `drawType='StackingArea'` to render multiple areas stacked on top of each other. Required service: `StackingAreaSeriesService`. This draw type needs at least two `<e-series>` elements to demonstrate stacking.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,11 +126,7 @@ To render a stacked area draw type, you need to follow a few steps to configure 
 
 ### Column
 
-To render a column draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `Column` in your chart configuration. This indicates that the data should be represented as a polar column chart, allowing for the comparison of values across categories.
-
-2. **Inject the ColumnSeries Module**: Use the `@NgModule.providers` method to inject the `ColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar column series are available in your chart.
+Use `drawType='Column'` to render values as radial columns. Required service: `ColumnSeriesService`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -186,11 +146,7 @@ To render a column draw type, you need to follow a few steps to configure it cor
 
 ### Stacked Column
 
-To render a stacked column draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `StackingColumn` in your chart configuration. This indicates that the data should be represented as a polar stacked column chart, with each column consisting of multiple segments stacked on top of each other.
-
-2. **Inject the StackingColumnSeries Module**: Use the `@NgModule.providers` method to inject the `StackingColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar stacked column series are available in your chart.
+Use `drawType='StackingColumn'` to render multiple columns stacked on each category. Required service: `StackingColumnSeriesService`. This draw type needs at least two `<e-series>` elements to demonstrate stacking.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -210,11 +166,7 @@ To render a stacked column draw type, you need to follow a few steps to configur
 
 ### Range Column
 
-To render a range column draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `RangeColumn` in your chart configuration. This indicates that the data should be represented as a polar range column chart, where each column spans a range of values.
-
-2. **Inject the RangeColumnSeries Module**: Use the `@NgModule.providers` method to inject the `RangeColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar range column series are available in your chart.
+Use `drawType='RangeColumn'` to render columns that span a value range. Each data point must include `high` and `low` fields mapped to series properties of the same name. Required service: `RangeColumnSeriesService`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,11 +186,7 @@ To render a range column draw type, you need to follow a few steps to configure 
 
 ### Scatter
 
-To render a scatter draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `Scatter` in your chart configuration. This indicates that the data should be represented as a polar scatter chart.
-
-2. **Inject the ScatterSeries Module**: Use the `@NgModule.providers` method to inject the `ScatterSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar scatter series are available in your chart.
+Use `drawType='Scatter'` to render individual polar markers. Required service: `ScatterSeriesService`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -256,13 +204,9 @@ To render a scatter draw type, you need to follow a few steps to configure it co
   
 {% previewsample "page.domainurl/samples/chart/series/polar-cs10" %}
 
-### Spline area
+### Spline Area
 
-To render an spline area draw type, you need to follow a few steps to configure it correctly.
-
-1. **Set the Series Type**: Define the series [`drawType`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#drawtype) as `SplineArea` in your chart configuration. This indicates that the data should be represented as a polar spline area chart, where the series is drawn with smooth, curved lines connecting each data point, and the area beneath the line is filled with color.
-
-2. **Inject the SplineAreaSeries Module**: Use the `@NgModule.providers` method to inject the `SplineAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering polar spline area series are available in your chart.
+Use `drawType='SplineArea'` to render a polar spline area chart with smooth curved fills. Required service: `SplineAreaSeriesService`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -280,11 +224,11 @@ To render an spline area draw type, you need to follow a few steps to configure 
   
 {% previewsample "page.domainurl/samples/chart/series/polar-cs22" %}
 
-## Series Customization
+## Series customization
 
-## Start angle
+### Start angle
 
-You can customize the start angle of the polar series using [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#startangle) property. By default, `startAngle` is 0 degree.
+Use the [`startAngle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#startangle) property on `primaryXAxis` to rotate the angular axis. Default is `0` degrees.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -302,9 +246,9 @@ You can customize the start angle of the polar series using [`startAngle`](https
   
 {% previewsample "page.domainurl/samples/chart/series/polar-cs" %}
 
-## Radius
+### Radius
 
-You can customize the radius of the polar series and polar series using [`coefficient`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#coefficient) property. By default, `coefficient` is 100.
+Use the [`coefficient`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#coefficient) property on `primaryXAxis` to adjust the radial extent of the polar chart. Default is `100`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -324,11 +268,18 @@ You can customize the radius of the polar series and polar series using [`coeffi
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is empty. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode).
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control empty-point rendering. The default is `Gap`.
+
+| Mode | Visual behavior |
+|------|-----------------|
+| `Gap` | Skip the empty point; the line breaks at the gap. |
+| `Drop` | Drop the empty bar; subsequent segments are still rendered. |
+| `Zero` | Treat the empty point as `0` and render a flat segment. |
+| `Average` | Replace the empty value with the average of the surrounding points. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -346,9 +297,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/polar-cs23" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty segments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -366,9 +317,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/polar-cs24" %}
 
-**Border**
+### Empty-point border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use the [`emptyPointSettings.border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) object (`{ width, color }`) to customize the outline of empty segments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -390,7 +341,11 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as `data`, `fill`, and `name`, before they are rendered on the chart. The callback receives an `ISeriesRenderEventArgs` argument that exposes mutable `series`, `data`, and `fill` properties.
+
+```html
+<ejs-chart (seriesRender)="onSeriesRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -410,7 +365,11 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart. The callback receives an `IPointRenderEventArgs` argument that exposes the current `point`, `series`, `fill`, and `border`.
+
+```html
+<ejs-chart (pointRender)="onPointRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -428,7 +387,19 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/polar-cs27" %}
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../chart-elements/data-labels)
-* [Tooltip](../../chart-interactive/tool-tip)
+The following symptoms map to the most common configuration issues.
+
+- **Empty plot area**: Verify that `PolarSeriesService` is registered, the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) is `Polar`, and the draw-type-specific service (for example `LineSeriesService`, `SplineSeriesService`, `ColumnSeriesService`) is also registered.
+- **`startAngle` or `coefficient` has no effect**: They live on `primaryXAxis`, not on the series — Verify the property is set in the axis block, not on `<e-series>`.
+- **Empty-point settings have no visual effect**: Confirm that `null` or `undefined` exists in the data values mapped to `yName`, and that `emptyPointSettings.mode` matches the desired behavior.
+- **Event handlers do not fire**: Confirm that `seriesRender` or `pointRender` are bound on the `<ejs-chart>` element, not on the `<e-series>`, and that the handler is a `public` method on the component.
+
+## See also
+
+* [Data labels](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)
+* [Axis customization](../../axis/axis-customization)
+* [Data binding](../../data-binding/working-with-data)
+* [Legend](../../../chart-elements/legend)

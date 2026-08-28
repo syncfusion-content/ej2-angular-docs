@@ -1,5 +1,5 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { BarSeriesService, StackingBarSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { StackingBarSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { stackedData } from './datasource';
 @Component({
@@ -7,10 +7,10 @@ imports: [
          ChartModule
     ],
 
-providers: [ BarSeriesService, StackingBarSeriesService, CategoryService],
+providers: [StackingBarSeriesService, CategoryService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StackingBar' xName='x' yName='y' name='Apple' [emptyPointSettings]='emptyPointSettings'></e-series>
             <e-series [dataSource]='chartData' type='StackingBar' xName='x' yName='y1' name='Orange' [emptyPointSettings]='emptyPointSettings1'></e-series>
@@ -28,7 +28,6 @@ export class AppComponent implements OnInit {
     public emptyPointSettings?: Object;
     public emptyPointSettings1?: Object;
     public emptyPointSettings2?: Object;
-    primaryYAxis: any;
     ngOnInit(): void {
         this.chartData = stackedData;
         this.primaryXAxis = {

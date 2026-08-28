@@ -1,20 +1,16 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, CandleSeriesService } from '@syncfusion/ej2-angular-charts'
+import { ChartModule, CategoryService, CandleSeriesService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [CategoryService,CandleSeriesService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [CategoryService, CandleSeriesService],
+    standalone: true,
     selector: 'app-container',
-    template: ` <ejs-chart style='display:block;' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' >
-                <e-series-collection>
-                    <e-series [dataSource]='data' type='Candle' xName='x' high='high' low='low' open='open' close='close' name='SHIRPUR-G'> </e-series>
-                </e-series-collection>
-     </ejs-chart>`
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
+        <e-series-collection>
+            <e-series [dataSource]='data' type='Candle' xName='x' high='high' low='low' open='open' close='close' name='SHIRPUR-G'></e-series>
+        </e-series-collection>
+    </ejs-chart>`
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
@@ -29,14 +25,17 @@ export class AppComponent implements OnInit {
             { x: 'Mar', open: 130, high: 170, low: 110, close: 150 },
             { x: 'Apr', open: 160, high: 180, low: 120, close: 140 },
             { x: 'May', open: 150, high: 170, low: 110, close: 130 }
-            ];
+        ];
         this.primaryXAxis = {
             title: 'Date',
-            valueType: 'Category',
-            };
+            valueType: 'Category'
+        };
         this.primaryYAxis = {
-            title: 'Price', minimum: 100, maximum: 200, interval: 20,
-            };
+            title: 'Price',
+            minimum: 100,
+            maximum: 200,
+            interval: 20
+        };
         this.title = 'Shirpur Gold Refinery Share Price';
     }
 }

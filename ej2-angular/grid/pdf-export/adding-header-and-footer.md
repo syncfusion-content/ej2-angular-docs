@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Adding Header and Footer in Angular Data Grid
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables customized header and footer sections to be added in exported PDF documents. This feature supports custom text, page numbers, lines, page size configuration, and orientation changes for header and footer sections.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports adding customized headers and footers in exported PDF documents, with options for custom text, page numbers, lines, page size, and orientation.
 
 ## Adding text in header and footer
 

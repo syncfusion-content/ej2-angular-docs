@@ -1,6 +1,5 @@
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, SplineAreaSeriesService } from '@syncfusion/ej2-angular-charts'
 
 
 import { Component, OnInit } from '@angular/core';
@@ -11,8 +10,7 @@ imports: [
          ChartModule
     ],
 
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
+providers: [CategoryService, SplineAreaSeriesService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
@@ -25,9 +23,7 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    public primaryYAxis?: Object;
     public marker?: Object;
-    border?: Object;
     ngOnInit(): void {
         this.chartData = chartData;
         this.primaryXAxis = {
