@@ -1,7 +1,5 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService,
-    ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
- } from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, RangeColumnSeriesService } from '@syncfusion/ej2-angular-charts';
 
 
 import { Component, OnInit } from '@angular/core';
@@ -12,11 +10,10 @@ imports: [
          ChartModule
     ],
 
-providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService,
-        ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService,],
+providers: [CategoryService, RangeColumnSeriesService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='data1' type='RangeColumn' xName='x' low='low' high='high'></e-series>
             <e-series [dataSource]='data2' type='RangeColumn' xName='x' low='low' high='high'></e-series>
@@ -29,7 +26,6 @@ export class AppComponent implements OnInit {
     public title?: string;
     public data1?: Object[];
     public data2?: Object[];
-    primaryYAxis: any;
     ngOnInit(): void {
         this.data1 = data1;
         this.data2 = data2;

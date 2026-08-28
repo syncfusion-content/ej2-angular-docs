@@ -1,5 +1,5 @@
 
-export let percentData: Object[] = [
+export let stackedData: Object[] = [
              { x: '2006', y: 900, y1: 190, y2: 250, y3: 150 },
              { x: '2007', y: 544, y1: 226, y2: 145, y3: 120 },
              { x: '2008', y: 880, y1: 194, y2: 190, y3: 115 },

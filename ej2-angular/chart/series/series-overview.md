@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Series Overview in Angular Chart
 
-## **What is a series?**
+## What is a series?
 
-A series represents a set of related data points visualized together on a chart. Each series is plotted using a specific rendering type, such as Line, Column, Area, Spline, or Scatter. A single chart can contain one or multiple series, allowing you to compare trends or relationships across datasets.
+A series represents a set of related data points visualized together on a chart. Each series is plotted using a specific rendering type, such as Line, Column, Area, Spline, or Scatter.
 
-## Single Series
+## Single series
 
 A single series refers to a chart that displays only one set of data points. It represents one continuous dataset plotted on the chart, allowing you to visualize trends or values from a single source of data.
 
@@ -23,7 +23,7 @@ A single series refers to a chart that displays only one set of data points. It 
 ## Multiple series
 
 A multiple series chart displays two or more datasets together, allowing you to compare trends or values across different series.
- 
+
 <img src="../../images/line.png" alt="Multi-series chart showing multiple dataset trend">
 
 ## Binding data with series
@@ -46,7 +46,6 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs12" %}
 
-
 ## Common series properties
 
 | Property | Description |
@@ -65,10 +64,27 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 | [animation](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#animation) | Animation options (enable, duration, delay) for series rendering. |
 | [enableTooltip](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#enabletooltip) | Enable or disable tooltip for the series points. |
 | [columnSpacing](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#columnspacing) | Spacing between bars/columns for Column/Bar series. |
-| [columnWidth](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#columnwidth) | Width of columns/bars (relative or pixel value). |
+| [columnWidth](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#columnwidth) | Width of columns/bars (fractional value 0-1 or pixel value). |
 | [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#border) | Border settings (color, width) for Area, Column, and Bar series. |
 | [legendShape](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#legendshape) | Shape/icon used in the legend for the series. |
 | [emptyPointSettings](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#emptypointsettings) | How to render empty/null points (gap, zero, average, etc.). |
 | [errorBar](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#errorbar) | Configuration to render error bars for each point. |
 | [trendlines](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#trendlines) | Add trendlines (Linear, Polynomial, Moving Average, etc.). |
 | [dataLabel](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelsettingsmodel) | Configuration object for displaying the value of each data point directly on the chart. |
+
+## Troubleshooting
+
+The following symptoms map to the most common configuration issues.
+
+- **Series does not render**: Confirm that the series service (for example, `LineSeriesService`) is registered in the component `providers` array and that the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#type) is valid.
+- **Data points are missing**: Verify that the fields referenced by `xName` and `yName` exist on every record and that the bound array is not empty.
+- **Legend does not show a label**: Confirm that the `name` property is set on each `<e-series>` element.
+- **Series renders on top of another axis unexpectedly**: Verify that the data values fall within the configured `minimum` and `maximum` of the bound `primaryXAxis` or `primaryYAxis`.
+
+## See also
+
+* [Data label](../chart-elements/data-labels)
+* [Tooltip](../chart-interactive/tool-tip)
+* [Legend](../chart-elements/legend)
+* [Axis customization](../axis/axis-customization)
+* [Working with data](../data-binding/working-with-data)

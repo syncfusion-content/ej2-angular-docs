@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Line Chart in Angular Charts | Syncfusion
-description: Learn all about the Line Chart in Syncfusion Angular Charts (Essential JS 2).
+description: Learn how to render and customize a Line chart series, including colors, dash array, width, and empty points.
 platform: ej2-angular
 control: Line Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
+
 # Line Chart in Angular Charts
 
 ## Line
@@ -15,13 +16,11 @@ A line chart displays data points connected by straight lines to show trends ove
 
 <img src="../../../../images/line.png" alt="Line chart showing data trends">
 
-To render a [line](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) series in your chart, you need to follow a few steps to configure it correctly.
+Configure a line series as follows:
 
-Here's a concise guide on how to do this:
-
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Line` in your chart configuration. This indicates that the data should be represented as a line chart, which is ideal for visualizing trends over time or across categories.
-
-2. **Provide LineSeriesService**: Add `LineSeriesService` to your `providers` (module or component) so the chart can render Line series. This ensures the necessary functionality for rendering line series is available.
+1. **Set the series type**: Set the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) to `Line`.
+2. **Register the required services**: Register `LineSeriesService` and required axis services, such as `CategoryService`, in the module `providers` array. Confirm that `ChartModule` is imported.
+3. **Map the data fields**: Bind the data with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource), and map fields with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,11 +40,11 @@ Here's a concise guide on how to do this:
 
 ## Series customization
 
-The following properties can be used to customize the `line` series.
+Customize a line series using the following properties.
 
-**Fill**
+### Solid color
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property to set a single solid stroke color. Accepted values are CSS color names (for example, `blue`), hexadecimal strings (for example, `#1A75FF`), and `rgba(...)` strings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,7 +62,9 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs8" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the line series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+### Gradient color
+
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can reference an SVG gradient for a line series. Define the gradient in an SVG `<defs>` element, and assign it in the `url(#gradientId)` format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,9 +82,9 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs13" %}
 
-**Opacity**
+### Opacity
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+Use the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property to control line transparency. Set a value from `0` to `1`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,9 +102,9 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs14" %}
 
-**Dash array**
+### Dash array
 
-The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#dasharray) property determines the pattern of dashes and gaps in the series.
+Use the [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#dasharray) property to define the line stroke's dash pattern. Provide a comma or whitespace-separated list of stroke-gap sizes in pixels, for example `"5,5"`, `"2,2,10,2"`, or `"4 4"`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,9 +122,9 @@ The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs15" %}
 
-**Width**
+### Width
 
-The [width](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#width) property specifies the stroke width applied to the series.
+Use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#width) property to set the line stroke width in pixels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,15 +142,13 @@ The [width](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDir
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs16" %}
 
-## Multicolored Line
+## Multicolored line
 
-To render a multicolored line series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+Configure a multicolored line series as follows:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `MultiColoredLine` in your chart configuration. This specifies that the series should be rendered as a multicolored line chart, with different segments of the line having distinct colors.
-
-2. **Inject the MultiColoredLineSeries module**: Use the `@NgModule.providers` method to inject the `MultiColoredLineSeriesService` module in your chart. This step is essential, as it ensures that the necessary functionalities for rendering multicolored line series are available in your chart.
-
-3. **Map individual colors**: Utilize the `pointColorMapping` property to assign individual colors to each data point. This allows you to customize the color of each segment of the line based on your data.
+1. **Set the series type**: Set [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) to `MultiColoredLine`.
+2. **Register the service**: Register `MultiColoredLineSeriesService` in the module `providers` array.
+3. **Map colors**: Set [`pointColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#pointcolormapping) to the data field that contains each point color. Each row in the data source must include a field whose value is a CSS color string — for example `{ x: 'Jan', y: 35, color: 'red' }`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -169,11 +168,18 @@ To render a multicolored line series in your chart, you need to follow a few ste
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is empty. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode).
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control empty-point rendering. The default is `Gap`.
+
+| Mode      | Visual behavior |
+|-----------|-----------------|
+| `Gap`     | Leave a gap at the empty position and continue the line through the next available point. |
+| `Zero`    | Treat the empty point as `0` and connect it. |
+| `Drop`    | Drop the line segment; subsequent points are still rendered. |
+| `Average` | Replace the empty value with the average of the surrounding points. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -191,9 +197,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs17" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -211,9 +217,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs18" %}
 
-**Border**
+### Empty-point border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use the [`emptyPointSettings.border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of a rendered empty point. Example: `{ width: 2, color: '#FF0000' }`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -235,7 +241,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as `data`, `fill`, and `name`, before they are rendered on the chart. The callback receives an `ISeriesRenderEventArgs` argument that exposes mutable `series`, `fill`, and `data` properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -255,7 +261,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart. The callback receives an `IPointRenderEventArgs` argument that exposes the current `point`, `series`, `fill`, and `border`, plus a `cancel` flag.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -273,7 +279,18 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs21" %}
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../../chart-elements/data-labels)
+- **The line is not displayed**: Confirm that `LineSeriesService` and required axis services are registered, the series type is `Line`, and mapped fields exist.
+- **A multicolored line uses one color**: Confirm that `MultiColoredLineSeriesService` is registered and `pointColorMapping` matches the color field in the data source.
+- **An empty point is missing**: Review `emptyPointSettings.mode` and verify that the mapped value is `null` or `undefined`.
+- **A gradient is not displayed**: Confirm that the SVG gradient ID in `index.html` matches the series `fill` value.
+
+## See also
+
+* [Data labels](../../../chart-elements/data-labels)
 * [Tooltip](../../../chart-interactive/tool-tip)
+* [Axis customization](../../../axis/axis-customization)
+* [Data binding](../../../data-binding/working-with-data)
+* [Legend](../../../chart-elements/legend)
+

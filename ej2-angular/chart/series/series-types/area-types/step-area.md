@@ -19,9 +19,9 @@ To render a [step area](https://www.syncfusion.com/angular-components/angular-ch
 
 Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StepArea` in your chart configuration. This indicates that the data should be represented as a step area chart, which connects data points with vertical and horizontal lines, creating a step-like appearance.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#type) as `StepArea` in your chart configuration. This indicates that the data should be represented as a step area chart, which connects data points with vertical and horizontal lines, creating a step-like appearance.
 
-2. **Inject the StepAreaSeries module**: Use the `@NgModule.providers` method to inject the `StepAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering step area series are available in your chart.
+2. **Register the StepAreaSeriesService provider**: Register `StepAreaSeriesService` (along with any other chart services you need) in the component's `providers` array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,7 +41,7 @@ Here's a concise guide on how to do this:
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
+Bind data via the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#datasource) property on the series. Map the fields from your records to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#yname) so the chart knows which value drives each point. The included basic sample renders a single `StepArea` series named `England` that maps `x` and `y` to the chart's x and y axes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,11 +61,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-The following properties can be used to customize the `step area` series.
+The following properties customize the `step area` series.
 
-**Fill**
+### Solid fill
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#fill) property determines the color applied to the series. Default value is `null`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,20 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDi
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs" %}
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the step area series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+### Gradient fill
+
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#fill) property can apply an SVG gradient to a step area series. Define the gradient within an SVG `<defs>` element using a unique ID, and assign it to the series in the `url(#gradientId)` format. Place the following SVG element in your application's `index.html` file, inside the `<body>` element and outside the `<app-container>` element.
+
+```html
+<svg>
+    <defs>
+        <linearGradient id="gradient">
+            <stop offset="0%" style="stop-color: blue; stop-opacity: 1" />
+            <stop offset="50%" style="stop-color: violet; stop-opacity: 1" />
+        </linearGradient>
+    </defs>
+</svg>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,9 +114,9 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDi
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs1" %}
 
-**Opacity**
+### Opacity
 
-The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#opacity) property specifies the transparency level of the fill. Valid range is `0` (completely transparent) to `1` (completely opaque). Default value is `1`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,9 +134,15 @@ The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs2" %}
 
-**Border**
+### Series Border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color, and dasharray of the series border.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#border) property to style the series border. The `border` object supports these fields:
+
+* `width` - Border thickness in pixels.
+* `color` - Border stroke color.
+* `dashArray` - Dash pattern for the border (for example `'5'`, `'5,5'`, or `'2,3,4'`).
+
+Example: `{ width: 1.5, color: 'red', dashArray: '2,5' }`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,9 +160,13 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/se
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs3" %}
 
-**Step**
+### Step
 
-Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#step) property to change the position of the steps in a step area series.
+Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#step) property to change the position of the steps in a step area series. Available values are:
+
+* `Left` (default) - The step rises/joins on the left side of each x-interval.
+* `Center` - The step is centered in each x-interval.
+* `Right` - The step rises/joins on the right side of each x-interval.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -161,9 +184,9 @@ Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs4" %}
 
-**No risers**
+### No Risers
 
-You can eliminate the vertical lines between points by using the [`noRisers`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#norisers) property in a series. This approach is useful for highlighting trends without the distraction of risers.
+Eliminate the vertical lines between points by setting the [`noRisers`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesmodel#norisers) property to `true` on the series. The included sample also drops the series opacity to `0.1` and applies a thin `border` to keep the band visible without the vertical connectors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -183,11 +206,16 @@ You can eliminate the vertical lines between points by using the [`noRisers`](ht
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+Data points with `null` or `undefined` values are considered empty. How an empty point is rendered on the chart depends on the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettingsmodel#mode) you choose.
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettingsmodel#mode) property to define how empty or missing data points are handled. Available values are:
+
+* `Gap` (default) - Leaves a gap at the empty point.
+* `Drop` - Drops the empty point and connects adjacent points.
+* `Zero` (used in the included `Mode`, `Fill`, and `Border` samples) - Replaces the empty point with the value `0`.
+* `Average` - Replaces the empty point with the average of adjacent points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,9 +233,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs5" %}
 
-**Fill**
+### Empty Point Fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettingsmodel#fill) property to customize the fill color of empty points in the series. Applies only when `mode` is `Zero` or `Average`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -226,9 +254,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs6" %}
 
 
-**Border**
+### Empty Point Border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettingsmodel#border) property to customize the width and color of the border for empty points. Applies only when `mode` is `Zero` or `Average`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -250,7 +278,7 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iseriesrendereventargs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart. The handler in the included snippet assigns `args.fill = '#ff6347'`, applying a tomato color to the series before render.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -271,7 +299,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointrendereventargs) event allows you to customize each data point before it is rendered on the chart. The handler in the included snippet assigns `args.fill = 'red'` on every point before render.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,7 +317,18 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/steparea-cs9" %}
 
+## Troubleshooting
+
+* Ensure `StepAreaSeriesService` is registered in the providers; otherwise the step area series will not render.
+* **Step position doesn't change:** confirm you used a value accepted by the `step` property — `Left`, `Center`, or `Right`. Any other string is treated as the default.
+* **No risers not working:** make sure the attribute is spelled `noRisers` (not `noRaiser`). The included snippet accidentally contains both spellings; the correct one is `noRisers='true'`.
+* **Empty-point customization has no visible effect:** the `fill` and `border` settings on `emptyPointSettings` apply only when `mode` is `Zero` or `Average`. With `Gap` and `Drop` modes no marker is drawn.
+* **Gradient fill renders as solid color:** the SVG gradient referenced by `fill='url(#gradient)'` is not defined. Add a matching `<linearGradient>` (or `<radialGradient>`) inside a `<defs>` block in the chart template, or in a global stylesheet.
+
 ## See Also
 
+* [Area Chart](./area)
+* [Step Area Chart](./step-area)
+* [Stacked Step Area Chart](./stacked-step-area)
 * [Data label](../../../chart-elements/data-labels)
 * [Tooltip](../../../chart-interactive/tool-tip)

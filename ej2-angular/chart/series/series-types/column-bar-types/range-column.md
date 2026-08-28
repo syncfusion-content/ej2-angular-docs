@@ -7,23 +7,22 @@ control: Range Column Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
+
 # Range Column Chart in Angular Charts
 
 ## Range Column
 
-A range column chart shows vertical bars representing a high and low value for each point. It is useful for visualizing value ranges such as temperature variations or price fluctuations.
+A range column chart displays vertical columns whose lower and upper boundaries represent the low and high values of each data point. Use it to visualize ranges such as temperature variation or price movement.
 
 <img src="../../../../images/range-column.png" alt="Range column chart showing data trends">
 
-To render a [range column](https://www.syncfusion.com/angular-components/angular-charts/chart-types/range-column-chart) series in your chart, you need to follow a few steps to configure it correctly.
+To render a range column series:
 
-Here's a concise guide on how to do this:
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#type) as `RangeColumn` in your chart configuration.
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `RangeColumn` in your chart configuration. This indicates that the data should be represented as a range column chart, which is ideal for visualizing data that has both minimum and maximum values for each category. This is especially useful for visualizing data ranges, such as temperature fluctuations over time, stock prices, or any other data with upper and lower bounds.
+2. **Provide RangeColumnSeriesService**: Add `RangeColumnSeriesService` to your module's `providers` array so the chart can render the RangeColumn series.
 
-2. **Provide RangeColumnSeriesService**: Use the `@NgModule.providers` method to inject the `RangeColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering range column series are available in your chart.
-
-3. **Provide high and low values**: The `RangeColumn` series requires two y-values for each data point, you need to specify both the high and low values. The high value represents the maximum range, while the low value represents the minimum range for each data point. These values define the upper and lower boundaries of the column for each point on the chart.
+3. **Provide high and low values**: The `RangeColumn` series requires two y-values for each data point. Specify the `high` value as the upper boundary and the `low` value as the lower boundary of each column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,9 +40,11 @@ Here's a concise guide on how to do this:
 
 {% previewsample "page.domainurl/samples/chart/series/column-cs19" %}
 
-## Binding data with series
+## Binding data to a series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low) properties.
+Bind a local JSON array to the series with the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property. Map the data fields with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), and [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low), as shown in the preceding example.
+
+When data is loaded asynchronously, assign the resolved array to the bound property. Handle loading and request failures in the application's data service before updating the chart data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -63,21 +64,19 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-The following properties can be used to customize the `range column` series.
+The following properties can be used to customize the appearance of the `RangeColumn` series.
 
-**Fill**
+### Solid fill
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property to set a solid fill color for the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/rangecolumn-cs/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/rangecolumn-cs/src/main.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/rangecolumn-cs/src/datasource.ts %}
 {% endhighlight %}
@@ -85,17 +84,37 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the range column series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+### Gradient fill
+
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#fill) property can apply an SVG gradient to a range column series. Define the gradient within an SVG `<defs>` element using a unique ID, and assign it to the series in the `url(#gradientId)` format. Place the following SVG elements in your application's `index.html` file, inside the `<body>` element and outside the `<app-container>` element.
+
+```html
+<svg>
+    <defs>
+        <linearGradient id="gradient1">
+            <stop offset="0%" style="stop-color:blue;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:violet;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+<svg>
+    <defs>
+        <linearGradient id="gradient2">
+            <stop offset="0%" style="stop-color:darkred;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkorange;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+```
+Apply the gradients to the series by setting `fill` to `url(#gradient1)` and `url(#gradient2)`, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/rangecolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/rangecolumn-cs1/src/main.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/rangecolumn-cs1/src/datasource.ts %}
 {% endhighlight %}
@@ -103,9 +122,9 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs1" %}
 
-**Opacity**
+### Opacity
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+Use the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property to set the transparency of the series. Values range from `0` (fully transparent) to `1` (fully opaque).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,9 +142,9 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 {% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs2" %}
 
-**Border**
+### Border
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color and dasharray of the series border.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the series border color, width, and dash pattern.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -145,11 +164,14 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A range point is empty when a mapped `high` or `low` value is `null` or `undefined`. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode). The supported modes are:
 
-**Mode**
+- `Gap`: Leaves a gap at the empty point. This is the default mode.
+- `Zero`: Replaces the missing value with zero.
+- `Average`: Replaces the missing value with an average derived from neighboring points.
+- `Drop`: Omits the empty point from rendering.
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+### Mode
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,9 +189,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs5" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) to set the fill color of an empty point rendered by a mode such as `Zero` or `Average`. This setting has no visible effect when the mode is `Gap` or `Drop`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,9 +209,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs6" %}
 
-**Border**
+### Empty-point border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use [`emptyPointSettings.border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) to set the width and color of an empty point's border. This setting has no visible effect when the mode is `Gap` or `Drop`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,7 +231,9 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ## Corner radius
 
-The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#cornerradius) property in the chart series is used to customize the corner radius for range column series. This allows you to create columns with rounded corners, giving your chart a more polished appearance. You can customize each corner of the columns using the `topLeft`, `topRight`, `bottomLeft`, and `bottomRight` properties.
+### Series corner radius
+
+Use [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#cornerradius) to round the corners of every column in the series. Configure individual corners with `topLeft`, `topRight`, `bottomLeft`, and `bottomRight`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,7 +253,7 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point corner radius
 
-You can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
+Handle the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event and set the event argument's [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property to customize a specific point before it is rendered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -251,7 +275,7 @@ You can customize the corner radius for individual points in the chart series us
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event runs before a series is rendered. Use its event arguments to customize supported series properties such as data, fill, and name.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -271,7 +295,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event runs before each point is rendered. Use its event arguments to customize supported point properties. The [point corner radius](#point-corner-radius) section shows how to use this event for per-point corner styling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,9 +313,15 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/rangecolumn-cs9" %}
 
+## Troubleshooting
 
-## See Also
+- **The chart renders without columns:** Confirm that `RangeColumnSeriesService` is registered and the series `type` is `RangeColumn`.
+- **Categories do not appear correctly:** Register the axis service required by the configured axis value type, such as `CategoryService`, and verify `xName` matches the data field.
+- **A point does not render:** Verify that both mapped `high` and `low` values are numeric. If either value is `null` or `undefined`, review `emptyPointSettings.mode`.
+- **The range is inverted:** Verify that each point's `high` value is greater than or equal to its `low` value.
 
-* [Data label](../../../chart-elements/data-labels)
-* [Tooltip](../../../chart-interactive/tool-tip)
-* [Avoid Duplicate Labels for Equal Values](https://support.syncfusion.com/kb/article/21242/how-to-avoid-duplicate-labels-for-equal-values-in-angular-chart)
+## See also
+
+- [Data labels](../../../chart-elements/data-labels)
+- [Tooltip](../../../chart-interactive/tool-tip)
+- [Avoid duplicate labels for equal values](https://support.syncfusion.com/kb/article/21242/how-to-avoid-duplicate-labels-for-equal-values-in-angular-chart)

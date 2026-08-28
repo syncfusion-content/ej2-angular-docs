@@ -1,22 +1,14 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
-
+import { ChartModule, StepLineSeriesService } from '@syncfusion/ej2-angular-charts';
+import { IPointRenderEventArgs } from '@syncfusion/ej2-charts';
 import { Component, OnInit } from '@angular/core';
 import { stepData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [StepLineSeriesService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' [marker]='marker'></e-series>
         </e-series-collection>
@@ -25,21 +17,20 @@ standalone: true,
 export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
-    public emptyPointSettings?: Object;
-    primaryXAxis: any;
-    primaryYAxis: any;
-    marker: any;
+    public marker?: Object;
+
     ngOnInit(): void {
         this.chartData = stepData;
         this.title = 'CO2 - Intensity Analysis';
         this.marker = { visible: true };
     }
-    public pointRender(args: IPointRenderEventArgs) {
+
+    public pointRender(args: IPointRenderEventArgs): void {
         if (args.point.index % 2 !== 0) {
             args.fill = '#ff6347';
-        }
-        else {
+        } else {
             args.fill = '#009cb8';
         }
     }
 }
+

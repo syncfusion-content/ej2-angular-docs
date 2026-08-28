@@ -1,17 +1,14 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
-import { ScatterSeriesService, LegendService } from '@syncfusion/ej2-angular-charts'
+import { IPointRenderEventArgs } from '@syncfusion/ej2-charts';
+import { ChartModule, ScatterSeriesService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { scatterData } from './datasource';
-@Component({
-imports: [
-         ChartModule
-    ],
 
-providers: [ ScatterSeriesService, LegendService],
-standalone: true,
+@Component({
+    imports: [ChartModule],
+    providers: [ScatterSeriesService, LegendService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Scatter' xName='x' yName='y' name='Male' ></e-series>
         </e-series-collection>
@@ -39,11 +36,10 @@ export class AppComponent implements OnInit {
         this.marker = {  width: 10, height: 10 };
         this.chartData = scatterData;
     }
-    public pointRender(args: IPointRenderEventArgs)  {
+    public pointRender(args: IPointRenderEventArgs): void {
         if (args.point.index % 2 !== 0) {
             args.fill = '#ff6347';
-        }
-        else {
+        } else {
             args.fill = '#009cb8';
         }
     }

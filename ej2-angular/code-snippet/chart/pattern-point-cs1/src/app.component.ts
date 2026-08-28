@@ -1,5 +1,5 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ColumnSeriesService, CategoryService, DataLabelService } from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { ColumnSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,12 +7,12 @@ imports: [
          ChartModule
     ],
 
-providers: [ ColumnSeriesService, CategoryService, DataLabelService],
+providers: [ColumnSeriesService, CategoryService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='data' type='Column' xName='x' yName='y' name='Tiger' width=2 [marker]='marker' [cornerRadius]='radius'
+            <e-series [dataSource]='data' type='Column' xName='x' yName='y' name='Tiger' width='2' [marker]='marker' [cornerRadius]='radius'
              [pointColorMapping]='pointColorMapping'></e-series>
         </e-series-collection>
     </ejs-chart>`
@@ -28,9 +28,9 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data =  [
                     { x: 'BGD', y: 106, text: 'Bangaladesh', color: 'url(#chess)' },
-                    { x: 'BTN', y: 103, text: 'Bhutn', color: 'url(#cross)'  },
+                    { x: 'BTN', y: 103, text: 'Bhutan', color: 'url(#cross)'  },
                     { x: 'NPL', y: 198, text: 'Nepal', color: 'url(#circle)'  },
-                    { x: 'THA', y: 189, text: 'Thiland', color: 'url(#rectangle)' },
+                    { x: 'THA', y: 189, text: 'Thailand', color: 'url(#rectangle)' },
                     { x: 'MYS', y: 250, text: 'Malaysia', color: 'url(#line)' }
                 ];
         this.primaryXAxis = {

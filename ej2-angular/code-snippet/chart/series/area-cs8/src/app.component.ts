@@ -1,11 +1,11 @@
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts';
-import { MultiColoredAreaSeriesService, TooltipService, CategoryService, LegendService } from '@syncfusion/ej2-angular-charts';
+import { MultiColoredAreaSeriesService, TooltipService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { energyConsumptionData } from './datasource';
 
 @Component({
     imports: [ChartModule, ChartAllModule],
-    providers: [MultiColoredAreaSeriesService, CategoryService, LegendService, TooltipService],
+    providers: [MultiColoredAreaSeriesService, LegendService, TooltipService],
     standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [legendSettings]='legendSettings' [tooltip]='tooltip'>

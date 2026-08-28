@@ -1,19 +1,15 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, SplineSeriesService } from '@syncfusion/ej2-angular-charts';
 
 import { Component, OnInit } from '@angular/core';
 import { splineData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule
+    imports: [
+        ChartModule
     ],
-
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
-standalone: true,
+    providers: [CategoryService, SplineSeriesService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
@@ -25,21 +21,20 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    public primaryYAxis?: Object;
     public emptyPointSettings?: Object;
     public marker?: Object;
+
     ngOnInit(): void {
         this.chartData = splineData;
-        this.marker = { visible: true};
+        this.marker = { visible: true };
         this.primaryXAxis = {
-           title: 'Month',
-           valueType: 'Category'
+            title: 'Month',
+            valueType: 'Category'
+        };
+        this.emptyPointSettings = {
+            mode: 'Zero',
+            fill: '#FF8C00'
         };
         this.title = 'Climate Graph-2012';
-        this.emptyPointSettings = {
-          mode: 'Zero',
-          fill: '#FF8C00'
-        }
     }
-
 }

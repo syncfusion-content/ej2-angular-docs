@@ -16,13 +16,11 @@ A 100% stacked column chart displays data in vertical columns where each column 
 
 <img src="../../../../images/stacked100-column.png" alt="100% stacked column chart showing percentage contribution of data series">
 
-To render a [100% stacked column](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-column-chart) series in your chart, you need to follow a few steps to configure it correctly.
+Configure a [100% stacked column](https://www.syncfusion.com/angular-components/angular-charts/chart-types/100-stacked-column-chart) series as follows:
 
-Here's a concise guide on how to do this:
+1. **Set the series type**: Set the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) to `StackingColumn100`.
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StackingColumn100` in your chart configuration. This indicates that the data should be represented as a 100% stacked column chart, with segments that show the percentage contribution of each part.
-
-2. **Provide StackingColumnSeriesService**: Use the `@NgModule.providers` method to inject the `StackingColumnSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering the 100% stacked column series are available in your chart.
+2. **Register StackingColumnSeriesService**: Register `StackingColumnSeriesService` (along with any other chart services you need) in the component's `providers` array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,9 +38,9 @@ Here's a concise guide on how to do this:
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs21" %}
 
-## Binding data with series
+## Binding data to a series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
+Bind an array of JSON objects or a `DataManager` instance with the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property. Map the category field with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and each series value field with [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname). Handle loading and request errors before assigning remote data to the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,9 +60,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-The following properties can be used to customize the `100% stacked column` series.
+Use the following properties to customize a 100% stacked column series.
 
-**Fill**
+### Solid fill
+
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property to set a solid CSS color for a series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,48 @@ The following properties can be used to customize the `100% stacked column` seri
   
 {% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the 100% stacked column series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+### Gradient fill
+
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can apply an SVG gradient to a 100% stacked column series. Define each gradient in an SVG `<defs>` element with a unique ID, and assign it in the `url(#gradientId)` format.
+
+Place the following definitions in `index.html`, inside `<body>` and outside `<app-container>`.
+
+```html
+<svg>
+    <defs>
+        <linearGradient id="gradient1">
+            <stop offset="0%" style="stop-color:darkblue;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:dimgrey;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+<svg>
+    <defs>
+        <linearGradient id="gradient2">
+            <stop offset="0%" style="stop-color:darkred;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkorange;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+<svg>
+    <defs>
+        <linearGradient id="gradient3">
+            <stop offset="0%" style="stop-color:darkmagenta;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkcyan;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+<svg>
+    <defs>
+        <linearGradient id="gradient4">
+            <stop offset="0%" style="stop-color:darkviolet;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkgoldenrod;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+```
+
+Set the series `fill` values to `url(#gradient1)`, `url(#gradient2)`, `url(#gradient3)`, and `url(#gradient4)`, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -100,9 +141,9 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
   
 {% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs1" %}
 
-**Opacity**
+### Opacity
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+Use the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property to control series transparency. Set a value from `0` to `1`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,9 +161,9 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
   
 {% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs2" %}
 
-**Border**
+### Border
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color, and dashArray of the series border.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the color and width of the series border.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,9 +181,9 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
   
 {% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs4" %}
 
-## 100% Cylindrical stacked column chart
+## 100% cylindrical stacked column chart
 
-To render a 100% cylindrical stacked column chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnfacet) property to `Cylinder` in the chart series. This property transforms the regular 100% stacked columns into cylindrical shapes, enhancing the visual representation of the data.
+Set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#columnfacet) property to `Cylinder` to render a cylindrical shape. The default is `Rectangle`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,11 +203,16 @@ To render a 100% cylindrical stacked column chart, set the [`columnFacet`](https
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is empty. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode).
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control empty-point rendering. The supported modes are:
+
+- `Gap`: Leaves a gap at the empty point. This is the default mode.
+- `Zero`: Replaces the missing value with zero.
+- `Average`: Replaces the missing value with an average derived from neighboring points.
+- `Drop`: Omits the empty point from rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,9 +230,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs5" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) when the selected mode renders a replacement point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,9 +250,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs6" %}
 
-**Border**
+### Empty-point border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use [`emptyPointSettings.border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) to style a rendered replacement point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -227,7 +273,9 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ## Corner radius
 
-The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/series#cornerradius) property in the chart series is used to customize the corner radius for column series. This allows you to create columns with rounded corners, giving your chart a more polished appearance. You can customize each corner of the columns using the `topLeft`, `topRight`, `bottomLeft`, and `bottomRight` properties.
+### Series corner radius
+
+Use [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#cornerradius) to round series points. Configure `topLeft`, `topRight`, `bottomLeft`, and `bottomRight`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -247,7 +295,7 @@ The [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point corner radius
 
-You can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
+You can customize the corner radius for individual points in the chart series using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event by setting the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs#cornerradius) property in its event argument.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -269,7 +317,7 @@ You can customize the corner radius for individual points in the chart series us
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -289,7 +337,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -308,7 +356,14 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% previewsample "page.domainurl/samples/chart/series/100-stackedcolumn-cs9" %}
 
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../../chart-elements/data-labels)
+- **No columns are displayed**: Confirm that `StackingColumnSeriesService` and required axis services are registered, the series type is `StackingColumn100`, and mapped fields exist.
+- **Series do not normalize correctly**: Confirm that all series use `StackingColumn100` and compatible category values.
+- **A point is missing**: Check for `null` or `undefined` data and review `emptyPointSettings.mode`.
+- **A gradient is not displayed**: Confirm that the SVG gradient ID matches the series `fill` value.
+
+## See also
+
+* [Data labels](../../../chart-elements/data-labels)
 * [Tooltip](../../../chart-interactive/tool-tip)

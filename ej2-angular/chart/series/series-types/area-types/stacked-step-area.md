@@ -19,9 +19,9 @@ To render a stacked step area series in your chart, you need to follow a few ste
 
 Here's a concise guide on how to do this:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `StackingStepArea` in your chart configuration. This indicates that the data should be represented as a stacked step area chart, which is a combination of a stacked area chart and a step area chart. It connects the data points with vertical and horizontal lines, creating a step-like appearance.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#type) as `StackingStepArea` in your chart configuration. This indicates that the data should be represented as a stacked step area chart, which is a combination of a stacked area chart and a step area chart. It connects the data points with vertical and horizontal lines, creating a step-like appearance.
 
-2. **Inject the StackingStepAreaSeries module**: Use the `@NgModule.providers` method to inject the `StackingStepAreaSeriesService` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering stacked step area series are available in your chart.
+2. **Register the StackingStepAreaSeriesService provider**: Register `StackingStepAreaSeriesService` (along with any other chart services you need) in the component's `providers` array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,7 +41,7 @@ Here's a concise guide on how to do this:
 
 ## Binding data with series
 
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
+Bind data via the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#datasource) property on the series. Map the fields from your records to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#yname) so the chart knows which value drives each point. The included basic sample renders two `StackingStepArea` series (`USA`, `UK`) on the same `dataSource`, with each series pointing to a different `yName` (`y`, `y1`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -61,11 +61,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Series customization
 
-The following properties can be used to customize the `Stacked Step Area` series.
+The following properties customize the `Stacked Step Area` series.
 
-**Fill**
+### Solid fill
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property determines the color applied to the series.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#fill) property determines the color applied to the series. Default value is `null`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,29 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs" %}
 
-The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#fill) property can be used to apply a gradient color to the stacked step area series. By configuring this property with gradient values, you can create a visually appealing effect in which the color transitions smoothly from one shade to another.
+### Gradient fill
+
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#fill) property can apply an SVG gradient to a stacked step area series. Define the gradient within an SVG `<defs>` element using a unique ID, and assign it to the series in the `url(#gradientId)` format. Place the following SVG elements in your application's `index.html` file, inside the `<body>` element and outside the `<app-container>` element.
+
+```html
+<svg>
+<defs>
+    <linearGradient id="gradient1">
+        <stop offset="0%" style="stop-color:darkviolet;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:darkgoldenrod;stop-opacity:1" />
+    </linearGradient>
+</defs>
+</svg>
+
+<svg>
+<defs>
+    <linearGradient id="gradient2">
+        <stop offset="0%" style="stop-color:darkred;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:darkorange;stop-opacity:1" />
+    </linearGradient>
+</defs>
+</svg>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,9 +123,9 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDire
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs2" %}
 
-**Opacity**
+### Opacity
 
-The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#opacity) property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#opacity) property specifies the transparency level of the fill. Valid range is `0` (completely transparent) to `1` (completely opaque). Default value is `1`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -121,9 +143,15 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs3" %}
 
-**Border**
+### Series Border
 
-Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#border) property to customize the width, color and dasharray of the series border.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#border) property to style the series border. The `border` object supports these fields:
+
+* `width` - Border thickness in pixels.
+* `color` - Border stroke color.
+* `dashArray` - Dash pattern for the border (for example `'5'`, `'5,5'`, or `'2,3,4'`).
+
+Example: `{ width: 2, color: 'red', dashArray: '2,5' }`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,9 +169,13 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs4" %}
 
-**Step**
+### Step
 
-Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#step) property to change the position of the steps in a stacked step area series.
+Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesdirective#step) property to change the position of the steps in a stacked step area series. Available values are:
+
+* `Left` (default) - The step rises/joins on the left side of each x-interval.
+* `Center` - The step is centered in each x-interval.
+* `Right` - The step rises/joins on the right side of each x-interval.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -161,9 +193,9 @@ Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs6" %}
 
-**No risers**
+### No Risers
 
-You can eliminate the vertical lines between points by using the [`noRisers`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#norisers) property in a series. This approach is useful for highlighting trends without the distraction of risers.
+Eliminate the vertical lines between points by setting the [`noRisers`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesmodel#norisers) property to `true` on the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -183,11 +215,16 @@ You can eliminate the vertical lines between points by using the [`noRisers`](ht
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+Data points with `null` or `undefined` values are considered empty. How an empty point is rendered on the chart depends on the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettingsmodel#mode) you choose.
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettingsmodel#mode) property to define how empty or missing data points are handled. Available values are:
+
+* `Gap` (default) - Leaves a gap at the empty point.
+* `Drop` - Drops the empty point and connects adjacent points.
+* `Zero` - Replaces the empty point with the value `0`.
+* `Average` - Replaces the empty point with the average of adjacent points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,9 +242,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs5" %}
 
-**Fill**
+### Empty Point Fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettingsmodel#fill) property to customize the fill color of empty points in the series. Applies only when `mode` is `Zero` or `Average`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -225,9 +262,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs7" %}
 
-**Border**
+### Empty Point Border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptypointsettingsmodel#border) property to customize the width and color of the border for empty points. Applies only when `mode` is `Zero` or `Average`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -249,6 +286,8 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 Stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stack point has negative values, the stack labels are displayed below the point.
 
+To enable stack labels, set `[stackLabels]='{ visible: true }'` on the chart.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/stackedsteparea-cs11/src/app.component.ts %}
@@ -269,15 +308,15 @@ Stack labels in stacked charts display cumulative total values for stack segment
 
 Stack labels have various properties for customization to enhance the visuals based on your requirements:
 
-* [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#visible) - Specifies whether stack labels are visible. Setting to `true` will display the labels. Default is `false`.
-* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is `transparent`.
-* [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#format) - Formats the text displayed in the stack labels. Supports placeholders like `{value}`. Default is `null`.
-* [`angle`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#angle) - Specifies the rotation angle for stack labels in degrees. Default is `0`.
-* [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#rx) - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is `5`.
-* [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#ry) - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is `5`.
-* [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#margin) - Configures the margin around the stack label (left, right, top, and bottom).
-* [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#border) - Configures the appearance of the stack label's border.
-* [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackLabelSettings#font) - Customizes the stack label text, including font size, color, style, weight, and family.
+* [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#visible) - Specifies whether stack labels are visible. Setting to `true` will display the labels. Default is `false`.
+* [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is `transparent`.
+* [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#format) - Formats the text displayed in the stack labels. Supports placeholders like `{value}`. Default is `null`.
+* [`angle`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#angle) - Specifies the rotation angle for stack labels in degrees. Default is `0`.
+* [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#rx) - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is `5`.
+* [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#ry) - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is `5`.
+* [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#margin) - Configures the margin around the stack label (left, right, top, and bottom).
+* [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#border) - Configures the appearance of the stack label's border.
+* [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/stacklabelsettings#font) - Customizes the stack label text, including font size, color, style, weight, and family.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -299,7 +338,7 @@ Stack labels have various properties for customization to enhance the visuals ba
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iseriesrendereventargs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart. The included handler branches on `args.series.index` and assigns a different `args.fill` per series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -319,7 +358,7 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointrendereventargs) event allows you to customize each data point before it is rendered on the chart. The included handler branches on `args.point.index` and assigns a different `args.fill` for even versus odd-indexed points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -337,8 +376,17 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs10" %}
 
+## Troubleshooting
+
+* Ensure `StackingStepAreaSeriesService` is registered in the providers; otherwise the stacked step area series will not render.
+* **Stack labels do not appear:** set `[stackLabels]='{ visible: true }'` on the chart.
+* **Step position doesn't change:** confirm you used a value accepted by the `step` property — `Left`, `Center`, or `Right`. Any other string is treated as the default.
+* **Empty-point customization has no visible effect:** the `fill` and `border` settings on `emptyPointSettings` apply only when `mode` is `Zero` or `Average`. With `Gap` and `Drop` modes no marker is drawn.
+* **Gradient fill renders as solid color:** the SVG gradients referenced by `fill='url(#gradient1)'` etc. are not defined. Add matching `<linearGradient>` (or `<radialGradient>`) blocks inside a `<defs>` block in the chart template, or in a global stylesheet.
 
 ## See Also
 
+* [Stacked Area Chart](./stack-area)
+* [Step Area Chart](./step-area)
 * [Data label](../../../chart-elements/data-labels)
 * [Tooltip](../../../chart-interactive/tool-tip)

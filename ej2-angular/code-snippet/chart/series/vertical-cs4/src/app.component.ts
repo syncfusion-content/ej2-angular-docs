@@ -1,22 +1,14 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { IPointRenderEventArgs } from '@syncfusion/ej2-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
-
+import { IPointRenderEventArgs } from '@syncfusion/ej2-charts';
+import { ChartModule, CategoryService, SplineSeriesService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [CategoryService, SplineSeriesService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' isTransposed='true'>
+    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' isTransposed='true'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Spline' xName='x' yName='y' name='London' width=2 [marker]='marker'></e-series>
         </e-series-collection>
@@ -42,7 +34,7 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Climate Graph-2012';
     }
-    public pointRender(args: IPointRenderEventArgs) {
+    public pointRender(args: IPointRenderEventArgs): void {
         args.fill = '#ff6347';
     }
 }

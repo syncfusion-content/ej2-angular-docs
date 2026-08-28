@@ -1,6 +1,5 @@
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { AreaSeriesService, RangeStepAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
-    DateTimeService, CategoryService, MultiColoredAreaSeriesService, StackingStepAreaSeriesService, SplineRangeAreaSeriesService } from '@syncfusion/ej2-angular-charts'
+import { RangeStepAreaSeriesService, CategoryService } from '@syncfusion/ej2-angular-charts'
 import { chartData } from './datasource'
 
 
@@ -11,8 +10,7 @@ imports: [
          ChartModule, ChartAllModule
     ],
 
-providers: [ AreaSeriesService , RangeStepAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService, RangeStepAreaSeriesService,
-               DateTimeService, CategoryService, MultiColoredAreaSeriesService,StackingStepAreaSeriesService,SplineRangeAreaSeriesService],
+providers: [RangeStepAreaSeriesService, CategoryService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
@@ -26,8 +24,6 @@ export class AppComponent implements OnInit {
     public chartData: Object[] =  chartData;
     public title?: string;
     public primaryYAxis?: Object;
-    public emptyPointSettings?: Object;
-    public border?: Object;
     ngOnInit(): void {
         this.primaryXAxis = {
            valueType: 'Category',

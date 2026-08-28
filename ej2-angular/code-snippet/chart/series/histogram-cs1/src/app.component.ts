@@ -1,45 +1,33 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { HistogramSeriesService } from '@syncfusion/ej2-angular-charts'
-import { points } from './datasource'
+import { ChartModule, HistogramSeriesService } from '@syncfusion/ej2-angular-charts';
+import { points } from './datasource';
 import { Component, OnInit } from '@angular/core';
-import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [HistogramSeriesService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [HistogramSeriesService],
+    standalone: true,
     selector: 'app-container',
-    template: ` <ejs-chart style='display:block;' align='center' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (load)='load($event)'>
-            <e-series-collection>
-                <e-series [dataSource]='data' type='Histogram' yName='y' name='Score' width=2 [binInterval]='binInterval' showNormalDistribution='showNormalDistribution'
-                [columnWidth]='columnWidth'> </e-series>
-            </e-series-collection>
-        </ejs-chart>`
+    template: `<ejs-chart id="chart-container" align='center' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'>
+        <e-series-collection>
+            <e-series [dataSource]='data' type='Histogram' yName='y' name='Score' [width]='2' [binInterval]='binInterval' [showNormalDistribution]='showNormalDistribution' [columnWidth]='columnWidth'></e-series>
+        </e-series-collection>
+    </ejs-chart>`
 })
 export class AppComponent implements OnInit {
-    public data: Object[] = [];
     public primaryXAxis: Object = {
-        minimum: 0, maximum: 100
+        minimum: 0,
+        maximum: 100
     };
     public primaryYAxis: Object = {
-            minimum: 0, maximum: 50, interval: 10,
+        minimum: 0,
+        maximum: 50,
+        interval: 10
     };
-    public points: number[] = points;
-    public load(args: ILoadedEventArgs): void {
-    points.map((value: number) => {
-        this.data.push({
-            y: value
-        });
-    });
-    };
+    public data: Object[] = points.map((value: number) => ({ y: value }));
     public binInterval: number = 20;
     public columnWidth: number = 0.99;
     public showNormalDistribution: boolean = true;
 
     ngOnInit(): void {
-
     }
 }
