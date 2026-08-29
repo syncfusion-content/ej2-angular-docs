@@ -1,6 +1,5 @@
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
-    DateTimeService, CategoryService, MultiColoredAreaSeriesService, StackingStepAreaSeriesService, SplineRangeAreaSeriesService } from '@syncfusion/ej2-angular-charts'
+import { StepAreaSeriesService } from '@syncfusion/ej2-angular-charts'
 
 
 import { Component, OnInit } from '@angular/core';
@@ -10,11 +9,10 @@ imports: [
          ChartModule, ChartAllModule
     ],
 
-providers: [ AreaSeriesService , RangeAreaSeriesService, StepAreaSeriesService, StackingAreaSeriesService,
-               DateTimeService, CategoryService, MultiColoredAreaSeriesService,StackingStepAreaSeriesService,SplineRangeAreaSeriesService],
+providers: [StepAreaSeriesService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StepArea' xName='x' yName='y' name='England' [marker]='marker' [emptyPointSettings]='emptyPointSettings'></e-series>
         </e-series-collection>

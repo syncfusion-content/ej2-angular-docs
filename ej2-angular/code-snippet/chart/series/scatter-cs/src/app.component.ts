@@ -1,15 +1,12 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ScatterSeriesService, LegendService } from '@syncfusion/ej2-angular-charts'
+import { ChartModule, ScatterSeriesService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
-@Component({
-imports: [
-         ChartModule
-    ],
 
-providers: [ ScatterSeriesService, LegendService],
-standalone: true,
+@Component({
+    imports: [ChartModule],
+    providers: [ScatterSeriesService, LegendService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='series1' type='Scatter' xName='x' yName='y' name='Male' fill='orange'></e-series>
             <e-series [dataSource]='series2' type='Scatter' xName='x' yName='y' name='Female' fill='red'></e-series>

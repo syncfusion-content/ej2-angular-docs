@@ -1,41 +1,52 @@
 ---
 layout: post
 title: How to Customize Points in Angular Chart | Syncfusion
-description: Learn here all about Points customization in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+description: Learn how to customize individual point colors in Syncfusion Angular Chart using the pointColorMapping property.
 platform: ej2-angular
-control: Points customization 
+control: pointColorMapping
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # How to Customize Points in Angular Chart
 
-You can customize the color of individual series points by using the [`pointColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#pointcolormapping) property. This property allows you to map a field from your data source that contains color values, which will be applied to each corresponding point in the series.
+Use the [`pointColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#pointcolormapping) property to customize the color or fill pattern of individual series points. The property accepts the name of a field in your [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource); each point is then rendered with the value from that field.
 
 ## Customizing point colors
 
-The [`pointColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#pointcolormapping) property accepts a string value representing the field name in your [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) that contains the color information. Each point will be rendered with the color specified in that field.
+1. **Prepare the data source with a color field.** Add a field to each data point that holds the color value (a hex code, an RGB value, a CSS named color, or an SVG pattern reference such as `url(#chess)`):
 
-**Step 1**: Prepare your data source with a color field.
+   ```typescript
+   public chartData: Object[] = [
+       { x: 'BGD', y: 106, text: 'Bangladesh', color: 'url(#chess)' },
+       { x: 'BTN', y: 103, text: 'Bhutan',     color: 'url(#cross)' },
+       { x: 'NPL', y: 198, text: 'Nepal',      color: 'url(#circle)' },
+       { x: 'THA', y: 189, text: 'Thailand',   color: 'url(#rectangle)' },
+       { x: 'MYS', y: 250, text: 'Malaysia',   color: 'url(#line)' }
+   ];
+   ```
 
-Your data source should include a field containing color values. These can be hex codes, RGB values, or named colors:
+2. **Bind `pointColorMapping` on the series.** Point the property to the field name that carries the color:
 
-```typescript
-public chartData: Object[] = [
-    { x: 'Jan', y: 35, pointColor: '#E94649' },
-    { x: 'Feb', y: 28, pointColor: '#F6B53F' },
-    { x: 'Mar', y: 34, pointColor: '#6FAAB0' },
-    { x: 'Apr', y: 32, pointColor: '#C4C24A' }
-];
-```
+   ```typescript
+   public pointColorMapping: string = 'color';
+   ```
 
-**Step 2**: Set the `pointColorMapping` property to the color field name.
+   ```html
+   <e-series [dataSource]='data' type='Column' xName='x' yName='y'
+             name='Tiger' [pointColorMapping]='pointColorMapping'>
+   </e-series>
+   ```
 
-Configure the series with the [`pointColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#pointcolormapping) property pointing to your color field. This tells the chart which field in your data source contains the color values for each point.
+The following tabs show the same setup end-to-end. The full component (`app.component.ts`), the host page (`index.html`) that declares the SVG `<pattern>` definitions, and the bootstrap entry (`main.ts`) are included from the sample:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/pattern-point-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/pattern-point-cs1/index.html %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -45,4 +56,15 @@ Configure the series with the [`pointColorMapping`](https://ej2.syncfusion.com/a
 
 {% previewsample "page.domainurl/samples/chart/pattern-point-cs1" %}
 
-When you apply the [`pointColorMapping`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#pointcolormapping) property, each point in the series will be rendered with its corresponding color from the data source, allowing for visually distinct points within the same series.
+Each point is rendered with its corresponding color (or SVG pattern) from the data source, making points visually distinct within the same series.
+
+## Troubleshooting
+
+- **Color not applied to a point.** Verify that the bound color field holds a valid CSS color string (`#RRGGBB`, `rgb(...)`, a CSS named color) or a valid SVG `url(#id)` reference, and that the field name in `pointColorMapping` matches the data field name exactly (case-sensitive).
+- **SVG pattern not rendered.** If you reference `url(#id)`, ensure a matching `<pattern id="…">` element is defined in the DOM (typically inside an inline `<svg>` in `index.html`).
+
+## See also
+
+- [Marker](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesmodel#marker)
+- [Data labels](https://ej2.syncfusion.com/angular/documentation/chart/data-labels)
+- [Point render event](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender)

@@ -12,17 +12,15 @@ domainurl: ##DomainURL##
 
 ## High Low Open Close
 
-To render a [`hiloOpenClose`](https://www.syncfusion.com/angular-components/angular-charts/chart-types/ohlc-chart) series in your chart, you need to follow a few steps to configure it correctly.
+A High Low Open Close series renders stock-style bars that show the high, low, open, and close prices for each data point. The data is typically time-based, with the x-axis representing the trading period and each bar showing the four OHLC values.
 
 <img src="../../../images/high-low.png" alt="High low open close chart showing data trends over time">
 
-Here's how to configure it:
+Configure a Hilo Open Close series as follows:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `HiloOpenClose` in your chart configuration. This indicates that the data should be represented as a high-low-open-close chart, which displays the high, low, open, and close values for each data point, providing a comprehensive visualization of stock price movements.
-
-2. **Provide HiloOpenCloseSeriesService**: Use the `@NgModule.providers` method to inject the `HiloOpenCloseSeriesService` into your chart. This step is essential, as it ensures that the necessary functionalities for rendering high-low-open-close series are available in your chart.
-
-3. **Provide high, low, open, and close values**: The `HiloOpenClose` series requires five fields (x, high, low, open, and close) to accurately display the stock's high, low, open, and close prices. Ensure that your data source includes these fields to create a detailed representation of stock price movements over time.
+1. **Set the series type**: Set the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) to `HiloOpenClose`.
+2. **Register the service**: Register `HiloOpenCloseSeriesService` (and any required axis services) in the module `providers` array, or in `ApplicationConfig.providers` for standalone applications. Confirm that `ChartModule` is imported.
+3. **Map the OHLC fields**: Bind the data with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource), and map the date and price fields with [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low), [`open`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#open), and [`close`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#close).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,37 +30,18 @@ Here's how to configure it:
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/hiloopenclose-cs1/src/main.ts %}
 {% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs1/src/datasource.ts %}
-{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/hiloopenclose-cs1" %}
 
-## Binding data with series
-
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#high), [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#low), [`open`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#open) and [`close`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#close) properties.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs3/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs3/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs3/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/hiloopenclose-cs3" %}
 
 ## Series customization
 
-In the `hiloOpenClose` series, the [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bullfillcolor) property is used to fill the segment when the open value is greater than the close value, while the [`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bearfillcolor) property is used to fill the segment when the open value is less than the close value. By default, [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bullfillcolor) is set to **#e74c3d** (red) and [`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bearfillcolor) is set to **#2ecd71** (green).
+Customize a Hilo Open Close series using the following properties.
+
+### Bull and bear colors
+
+Use [`bullFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bullfillcolor) to color the segment when the close value is **greater** than the open value, and [`bearFillColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#bearfillcolor) to color the segment when the close value is **less** than the open value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,11 +61,18 @@ In the `hiloOpenClose` series, the [`bullFillColor`](https://ej2.syncfusion.com/
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is empty. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode).
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control empty-point rendering. The default is `Gap`.
+
+| Mode      | Visual behavior |
+|-----------|-----------------|
+| `Gap`     | Skip the empty point; subsequent bars are still rendered. |
+| `Zero`    | Treat the empty point as `0` and render a flat bar. |
+| `Drop`    | Drop the empty bar; subsequent points are still rendered. |
+| `Average` | Replace the empty value with the average of the surrounding points. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -105,9 +91,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 {% previewsample "page.domainurl/samples/chart/series/hiloopenclose-cs4" %}
 
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty-point bars.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -129,7 +115,11 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as `data`, `fill`, and `name`, before they are rendered on the chart. The callback receives an `ISeriesRenderEventArgs` argument that exposes mutable `series` and `data` properties.
+
+```html
+<ejs-chart (seriesRender)="onSeriesRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -139,17 +129,17 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/hiloopenclose-cs6/src/main.ts %}
 {% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs6/src/datasource.ts %}
-{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/hiloopenclose-cs6" %}
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart. The callback receives an `IPointRenderEventArgs` argument that exposes the current `point`, `series`, `fill`, and `border`, plus a `cancel` flag.
+
+```html
+<ejs-chart (pointRender)="onPointRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -159,15 +149,22 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/hiloopenclose-cs7/src/main.ts %}
 {% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs7/src/datasource.ts %}
-{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/hiloopenclose-cs7" %}
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../chart-elements/data-labels)
-* [Tooltip](../../chart-interactive/tool-tip)
+The following symptoms map to the most common configuration issues.
+
+- **Bars are not rendered**: Confirm that `HiloOpenCloseSeriesService` is registered, the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) is `HiloOpenClose`, and that `xName`, `high`, `low`, `open`, and `close` map to fields in the data source.
+- **All bars use the same color**: Verify that `bullFillColor` and `bearFillColor` are set, and that the open and close values are not identical.
+- **An empty point renders as a flat zero bar**: Review `emptyPointSettings.mode`. Use `Gap` to skip rendering or `Drop` to keep subsequent bars.
+
+## See also
+
+* [Data labels](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)
+* [Axis customization](../../axis/axis-customization)
+* [Data binding](../../data-binding/working-with-data)
+* [Legend](../../../chart-elements/legend)

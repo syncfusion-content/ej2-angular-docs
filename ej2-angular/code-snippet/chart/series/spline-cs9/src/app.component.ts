@@ -1,20 +1,16 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, SplineSeriesService } from '@syncfusion/ej2-angular-charts';
+import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts';
 
 import { Component, OnInit } from '@angular/core';
 import { splineData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule
+    imports: [
+        ChartModule
     ],
-
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
-standalone: true,
+    providers: [CategoryService, SplineSeriesService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" (seriesRender)='seriesRender($event)' [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
@@ -26,16 +22,17 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    public primaryYAxis?: Object;
+
     ngOnInit(): void {
         this.chartData = splineData;
         this.primaryXAxis = {
-           title: 'Month',
-           valueType: 'Category'
+            title: 'Month',
+            valueType: 'Category'
         };
         this.title = 'Climate Graph-2012';
     }
-    public seriesRender(args: ISeriesRenderEventArgs) {
+
+    public seriesRender(args: ISeriesRenderEventArgs): void {
         args.fill = '#ff6347';
     }
 }

@@ -12,35 +12,17 @@ domainurl: ##DomainURL##
 
 ## Pareto
 
-Pareto charts are used to find the cumulative values of data in different categories. It is a combination of `Column` and `Line` series, where the initial values are represented by the column chart and the cumulative values are represented by the line chart.
+A Pareto chart ranks categorical data by frequency and overlays a cumulative percentage line. It is a combination of `Column` and `Line` series, where the bars represent individual category counts (sorted descending) and the line represents the running cumulative percentage.
 
 <img src="../../../images/pareto.png" alt="Pareto chart showing values and cumulative percentage">
 
-To render a `pareto` series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+To render a Pareto series in your chart, follow these steps to configure it correctly:
 
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as `Pareto` in your chart configuration. This indicates that the data should be represented as a Pareto chart, which uses a combination of column and line series.
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) as **`Pareto`** in your chart configuration.
 
-2. **Inject the necessary modules**: Use the `@NgModule.providers` method to inject the `ParetoSeriesServices`, `ColumnSeriesServices`, `LineSeriesServices` modules into your chart. This step is essential, as it ensures that the necessary functionalities for rendering Pareto series are available in your chart.
+2. **Register the services**: Inject `ParetoSeriesService`, `LineSeriesService`, and `ColumnSeriesService` into the component `providers` array. For category-axis data also include `CategoryService`. These services power the line, column, and pareto sub-renderers that compose a Pareto series.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/line-cs10/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs10/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/line-cs10/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/line-cs10" %}
-
-## Binding data with series
-
-You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname) properties.
+3. **Map the category and count data**: Bind the data through the series [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property and map the category and value fields to [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#yname). The chart sorts categories by `yName` in descending order by default.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,9 +42,11 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 ## Pareto customization
 
+Customize a Pareto series using the [`paretoOptions`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#paretooptions) object that exposes `fill`, `width`, `dashArray`, `marker`, and `showAxis` for the cumulative **line**, and standard column properties (`fill`, `width`, `columnWidth`, `cornerRadius`, `opacity`) for the **bars**.
+
 ### Fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#fill) property to apply a color to the Pareto line. By default, a color based on the theme is used.
+Use the [`paretoOptions.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#fill) property to apply a color to the Pareto line.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +66,7 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/pare
 
 ### Width
 
-Use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#width) property to control the thickness of the line for the Pareto series, which affects its visual weight on the chart.
+Use the [`paretoOptions.width`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#width) property to control the thickness of the Pareto line, in pixels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +86,7 @@ Use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/par
 
 ### Dash array
 
-The [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#dasharray) property determines the pattern of dashes and gaps in the Pareto line series.
+Use the [`paretoOptions.dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#dasharray) property to apply a custom dash pattern (for example `"3,3"`) to the Pareto line.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -123,7 +107,7 @@ The [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/par
 
 ### Marker
 
-Use the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#marker) property to display and customize markers for individual points in a Pareto line.
+Use the [`paretoOptions.marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#marker) object to display and customize markers on every Pareto line point. Set `visible: true`, and tune `width`, `height`, `isFilled`, and `shape`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -143,7 +127,7 @@ Use the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/pa
 
 ### Show axis
 
-Use the [`showAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#showaxis) property to show or hide the secondary axis for the Pareto series.
+Use the [`paretoOptions.showAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/paretoOptionsModel#showaxis) boolean to show or hide the secondary value axis used for the cumulative percentage. Set `showAxis: false` to suppress the secondary axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -163,11 +147,18 @@ Use the [`showAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ## Empty points
 
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+A data point whose mapped value is `null` or `undefined` is empty. Configure its behavior with [`emptyPointSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode). The cumulative line recalculates around empty bars according to the chosen mode.
 
-**Mode**
+### Mode
 
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+Use [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#mode) to control empty-point rendering. The default is `Gap`.
+
+| Mode | Visual behavior |
+|------|-----------------|
+| `Gap` | Skip the empty point; the cumulative line breaks at the gap. |
+| `Drop` | Drop the empty bar; the cumulative line continues from the previous point. |
+| `Zero` | Treat the empty point as `0` and render a flat bar. |
+| `Average` | Replace the empty value with the average of the surrounding points. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -185,9 +176,9 @@ Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/line-cs26" %}
 
-**Fill**
+### Empty-point fill
 
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty points in the series.
+Use the [`emptyPointSettings.fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#fill) property to customize the fill color of empty bars.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,9 +196,9 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/empt
   
 {% previewsample "page.domainurl/samples/chart/series/line-cs27" %}
 
-**Border**
+### Empty-point border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) property to customize the width and color of the border for empty points.
+Use the [`emptyPointSettings.border`](https://ej2.syncfusion.com/angular/documentation/api/chart/emptyPointSettingsModel#border) object (`{ width, color }`) to customize the outline of empty bars.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,7 +220,11 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/em
 
 ### Series render
 
-The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iSeriesRenderEventArgs) event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#seriesrender) event allows you to customize series properties, such as `data`, `fill`, and `name`, before they are rendered on the chart. The callback receives an `ISeriesRenderEventArgs` argument that exposes mutable `series`, `data`, and `fill` properties — assigning `args.fill` recolors the Pareto **bars** by default.
+
+```html
+<ejs-chart (seriesRender)="onSeriesRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -249,7 +244,11 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 ### Point render
 
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) event allows you to customize each data point before it is rendered on the chart.
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event allows you to customize each data point before it is rendered on the chart. The callback receives an `IPointRenderEventArgs` argument that exposes the current `point`, `series`, `fill`, and `border`. On Pareto this affects the rendered bar color.
+
+```html
+<ejs-chart (pointRender)="onPointRender($event)"></ejs-chart>
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -267,7 +266,18 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
   
 {% previewsample "page.domainurl/samples/chart/series/line-cs30" %}
 
-## See Also
+## Troubleshooting
 
-* [Data label](../../chart-elements/data-labels)
-* [Tooltip](../../chart-interactive/tool-tip)
+The following symptoms map to the most common configuration issues.
+
+- **No chart is rendered**: Confirm that `ParetoSeriesService`, `LineSeriesService`, and `ColumnSeriesService` are all registered. For category-axis data also register `CategoryService`. The series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#type) must be `Pareto`.
+- **Bars render but no cumulative line appears**: Verify `LineSeriesService` is in `providers` and that `paretoOptions` is not accidentally set to `undefined`.
+- **Event handlers do not fire**: Confirm that `seriesRender` or `pointRender` are bound on the `<ejs-chart>` element, not on the `<e-series>`, and that the handler is a `public` method on the component.
+
+## See also
+
+* [Data labels](../../../chart-elements/data-labels)
+* [Tooltip](../../../chart-interactive/tool-tip)
+* [Axis customization](../../axis/axis-customization)
+* [Data binding](../../data-binding/working-with-data)
+* [Legend](../../../chart-elements/legend)

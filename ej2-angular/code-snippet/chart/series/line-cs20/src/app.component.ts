@@ -1,23 +1,18 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts'
-import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
-
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, LineSeriesService } from '@syncfusion/ej2-angular-charts';
+import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts';
 
 import { Component, OnInit } from '@angular/core';
 import { lineData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule
+    imports: [
+        ChartModule
     ],
-
-providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
-        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
-standalone: true,
+    providers: [CategoryService, LineSeriesService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" (seriesRender)='seriesRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'
-    [title]='title'>
+    template: `<ejs-chart id="chart-container" (seriesRender)='seriesRender($event)' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales'></e-series>
         </e-series-collection>
@@ -26,22 +21,22 @@ standalone: true,
 export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
-     public primaryXAxis?: Object;
-      public primaryYAxis?: Object;
-      public emptyPointSettings?: Object;
+    public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
+
     ngOnInit(): void {
         this.chartData = lineData;
         this.primaryXAxis = {
-            interval: 1, valueType: 'Category'
+            interval: 1,
+            valueType: 'Category'
         };
-        this.primaryYAxis =
-        {
-            title: 'Expense',
-        },
+        this.primaryYAxis = {
+            title: 'Expense'
+        };
         this.title = 'Efficiency of oil-fired power production';
     }
+
     public seriesRender(args: ISeriesRenderEventArgs) {
         args.fill = '#ff6347';
     }
-
 }

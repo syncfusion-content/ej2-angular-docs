@@ -1,23 +1,18 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts'
-import { CategoryService, WaterfallSeriesService, DataLabelService } from '@syncfusion/ej2-angular-charts'
+import { ISeriesRenderEventArgs } from '@syncfusion/ej2-charts';
+import { ChartModule, CategoryService, WaterfallSeriesService, DataLabelService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { waterfallData } from './datasource';
-@Component({
-imports: [
-         ChartModule
-    ],
 
-providers: [CategoryService,WaterfallSeriesService,DataLabelService],
-standalone: true,
+@Component({
+    imports: [ChartModule],
+    providers: [CategoryService, WaterfallSeriesService, DataLabelService],
+    standalone: true,
     selector: 'app-container',
-    template: ` <ejs-chart style='display:block;' id='chart-container' (seriesRender)='seriesRender($event)' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-                [title]='title' >
-                <e-series-collection>
-                    <e-series [dataSource]='data' type='Waterfall' xName='x' yName='y' name='USA' [columnWidth]='columnWidth' summaryFillColor='#e56590' negativeFillColor='#f8b883'
-                [connector]='connector' [intermediateSumIndexes]='intermediate' [sumIndexes]='sum' [marker]='marker' [cornerRadius]='cornerRadius'> </e-series>
-                </e-series-collection>
-     </ejs-chart>`
+    template: `<ejs-chart id="chart-container" (seriesRender)='seriesRender($event)' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
+        <e-series-collection>
+            <e-series [dataSource]='data' type='Waterfall' xName='x' yName='y' name='USA' [columnWidth]='columnWidth' summaryFillColor='#e56590' negativeFillColor='#f8b883' [connector]='connector' [intermediateSumIndexes]='intermediate' [sumIndexes]='sum' [marker]='marker' [cornerRadius]='cornerRadius'></e-series>
+        </e-series-collection>
+    </ejs-chart>`
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
@@ -46,7 +41,7 @@ export class AppComponent implements OnInit {
         this.connector = { color: '#5F6A6A', width: 1.5 };
         this.title = 'Company Revenue and Profit';
     }
-    public seriesRender(args: ISeriesRenderEventArgs) {
+    public seriesRender(args: ISeriesRenderEventArgs): void {
         args.fill = '#ff6347';
         args.series.negativeFillColor = '#ff6347';
     }

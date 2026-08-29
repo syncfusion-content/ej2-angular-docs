@@ -1,30 +1,18 @@
-import { ChartModule, ChartAllModule, AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService } from '@syncfusion/ej2-angular-grids'
-import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-import {
-    LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService, CategoryService,
-    StepAreaSeriesService, SplineSeriesService, ScrollBarService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-    SelectionService, ScatterSeriesService, ZoomService, ColumnSeriesService, AreaSeriesService, RangeAreaSeriesService
-} from '@syncfusion/ej2-angular-charts'
+import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts';
+import { LineSeriesService, StripLineService } from '@syncfusion/ej2-angular-charts';
 
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
 imports: [
-         ChartModule, ChartAllModule, AccumulationChartAllModule, AccumulationChartModule, GridModule, DialogModule
+         ChartModule, ChartAllModule
     ],
 
-providers: [LineSeriesService, DateTimeService, ColumnSeriesService, DataLabelService, ZoomService, StackingColumnSeriesService, CategoryService,
-        StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-        PieSeriesService, AccumulationTooltipService, ScrollBarService, AccumulationDataLabelService, SelectionService, ScatterSeriesService,
-        PageService, AreaSeriesService, RangeAreaSeriesService ],
+providers: [LineSeriesService, StripLineService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='Runs' [marker]='marker'></e-series>>
         </e-series-collection>
