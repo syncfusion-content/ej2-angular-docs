@@ -4,9 +4,6 @@ MIT
 @angular/core
 MIT
 
-@angular/forms
-MIT
-
 @angular/platform-browser
 MIT
 
@@ -50,6 +47,9 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-navigations
+SEE LICENSE IN license
+
+@syncfusion/ej2-notifications
 SEE LICENSE IN license
 
 @syncfusion/ej2-pdf-export
