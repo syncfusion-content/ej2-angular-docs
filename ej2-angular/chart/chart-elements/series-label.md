@@ -14,7 +14,9 @@ Series labels display the name of each series directly on the chart, positioned 
 
 ## Overview
 
-Enable series labels using the [`labelSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#datalabel) property within the series configuration. Set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelSettingsModel#visible) property to **true** to display the label.
+Enable series labels using the [`labelSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#labelsettings) property within the series configuration. Set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesLabelSettingsModel#visible) property to **true** to display the label.
+
+> **Note**: To use the series label feature, inject the `SeriesLabelService` into the `providers`. Markers must also be enabled (`marker.visible: true`) for the series label to render. Series labels render best on line, area, and spline series; other series types may not display the label.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,17 +34,15 @@ Enable series labels using the [`labelSettings`](https://ej2.syncfusion.com/angu
 
 {% previewsample "page.domainurl/samples/chart/user-interaction/series-label" %}
 
-> **Note**: To use the series label feature, inject the `DataLabelService` into the `providers`.
-
 ## Customization
 
-You can customize the appearance and behavior of series labels using the following properties:
-- [`text`](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelSettingsModel#text) – Custom text for the series label. If not specified, the series name is used by default.
-- [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelSettingsModel#font) – Font customization options including color, size, family, and weight.
-- [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelSettingsModel#background) – Background color of the label.
-- [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelSettingsModel#border) – Border width and color.
-- [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelSettingsModel#opacity) – Label transparency (default: 1).
-- [`showOverlapLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/datalabelSettingsModel#showOverlapLabel) – When **false**, overlapping labels are hidden.
+Apply these options through each series' [`labelSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#labelsettings) property to customize the appearance and behavior of series labels:
+- [`text`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesLabelSettingsModel#text) – Custom text shown as the label (for example, `"Sales"`). If not specified, the series `name` is used by default.
+- [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesLabelSettingsModel#font) – Font customization options including color, size, family, and weight.
+- [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesLabelSettingsModel#background) – Background color of the label.
+- [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesLabelSettingsModel#border) – Border width and color.
+- [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesLabelSettingsModel#opacity) – Label transparency (default: 1).
+- [`showOverlapText`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesLabelSettingsModel#showOverlapText) – When **false**, overlapping labels are hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

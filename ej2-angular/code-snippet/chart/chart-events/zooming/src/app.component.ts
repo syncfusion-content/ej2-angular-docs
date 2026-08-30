@@ -25,7 +25,7 @@ import {
       [legendSettings]="legendSettings"
       [title]="title"
       [zoomSettings]="zoomSettings"
-      (onZooming)="onZooming($event)">
+      (zooming)="onZooming($event)">
       <e-series-collection>
         <e-series
           [dataSource]="chartData"

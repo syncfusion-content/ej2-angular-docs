@@ -3,7 +3,6 @@ import {
   ChartModule,
   CategoryService,
   ColumnSeriesService,
-  ILoadedEventArgs,
   IPointEventArgs
 } from '@syncfusion/ej2-angular-charts';
 
@@ -53,8 +52,11 @@ export class AppComponent implements OnInit {
     this.title = 'Monthly Sales';
   }
 
-  // pointRender: customize each point's appearance before rendering
+  // pointMove: fires when the pointer moves over a data point
   public onPointMove(args: IPointEventArgs): void {
-    console.log("Point Move event was triggered");
+    console.log('Point Move event was triggered', {
+      x: args.point?.x,
+      y: args.point?.y
+    });
   }
 }

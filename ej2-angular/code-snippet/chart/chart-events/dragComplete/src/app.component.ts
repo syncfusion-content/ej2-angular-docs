@@ -3,9 +3,9 @@ import {
   ChartModule,
   CategoryService,
   LineSeriesService,
-  SelectionService
+  SelectionService,
+  IDragCompleteEventArgs
 } from '@syncfusion/ej2-angular-charts';
-import { IDragCompleteEventArgs } from '@syncfusion/ej2-charts';
 
 @Component({
   imports: [ChartModule],

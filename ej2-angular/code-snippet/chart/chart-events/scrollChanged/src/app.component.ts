@@ -5,9 +5,9 @@ import {
   LegendService,
   DataLabelService,
   LineSeriesService,
-  ScrollBarService
+  ScrollBarService,
+  IScrollEventArgs
 } from '@syncfusion/ej2-angular-charts';
-import { IScrollEventArgs } from '@syncfusion/ej2-charts';
 
 @Component({
   imports: [ChartModule],

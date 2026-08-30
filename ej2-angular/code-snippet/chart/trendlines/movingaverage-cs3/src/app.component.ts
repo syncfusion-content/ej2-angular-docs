@@ -24,7 +24,7 @@ standalone: true,
             <e-series-collection>
                 <e-series [dataSource]='data' type='Scatter' xName='x' yName='y' fill="#0066FF">
                      <e-trendlines>
-                        <e-trendline type='MovingAverage' width=3  name='Linear' fill='#C64A75' [forwardForecast]='forwardForecast'>
+                        <e-trendline type='MovingAverage' width=3  [period]='period' name='MovingAverage' fill='#C64A75' [forwardForecast]='forwardForecast'>
                         </e-trendline>
                     </e-trendlines>
                     </e-series>
@@ -47,6 +47,7 @@ export class AppComponent implements OnInit {
       border: { width : 0}
     };
     public forwardForecast: number = 5;
+    public period: number = 5;
     public title: string = 'Historical Indian Rupee Rate (INR USD)';
     constructor() {
         //code

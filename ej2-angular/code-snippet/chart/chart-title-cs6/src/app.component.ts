@@ -54,7 +54,8 @@ export class AppComponent implements OnInit {
         this.title = 'Unemployment Rates 1975-2010';
         this.titleStyle = {
             position: 'Custom',
-            location: { x: 200, y: 20 }
+            x: 200,
+            y: 20
         }
     }
 

@@ -1,35 +1,20 @@
-import { ChartModule, ChartAllModule, AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService } from '@syncfusion/ej2-angular-grids'
-import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-import {
-    LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService, CategoryService,
-    StepAreaSeriesService, SplineSeriesService, ScrollBarService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-    SelectionService, ScatterSeriesService, ZoomService, ColumnSeriesService, AreaSeriesService, RangeAreaSeriesService
-} from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { ColumnSeriesService, DateTimeService, CategoryService, DataLabelService, LegendService, TooltipService } from '@syncfusion/ej2-angular-charts';
 
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-         ChartModule, ChartAllModule, AccumulationChartAllModule, AccumulationChartModule, GridModule, DialogModule
-    ],
-
-providers: [LineSeriesService, DateTimeService, ColumnSeriesService, DataLabelService, ZoomService, StackingColumnSeriesService, CategoryService,
-        StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-        PieSeriesService, AccumulationTooltipService, ScrollBarService, AccumulationDataLabelService, SelectionService, ScatterSeriesService,
-        PageService, AreaSeriesService, RangeAreaSeriesService ],
-standalone: true,
-    selector: 'app-container',
-    template: `<div id="target">
+  imports: [ChartModule, DialogModule],
+  providers: [ColumnSeriesService, DateTimeService, CategoryService, DataLabelService, LegendService, TooltipService],
+  standalone: true,
+  selector: 'app-container',
+  template: `
+<div id="target">
   <ejs-chart align='center' id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis'>
     <e-series-collection>
-      <e-series [dataSource]='data' type='Column' xName='x' yName='y' name='Germany' width=2>
-      </e-series>
+      <e-series [dataSource]='data' type='Column' xName='x' yName='y' name='Germany' width=2></e-series>
     </e-series-collection>
   </ejs-chart>
 </div>
@@ -40,7 +25,7 @@ standalone: true,
     <ng-template #content>
       <ejs-chart align='center' id='chartcontainer1' [title]='title' [primaryXAxis]='primaryXAxis' width='350' height='250'>
         <e-series-collection>
-          <e-series [dataSource]='data1' type='Column' xName='x' yName='y' name='UK' width=2 fill="blue"> </e-series>
+          <e-series [dataSource]='data1' type='Column' xName='x' yName='y' name='UK' width=2 fill="blue"></e-series>
         </e-series-collection>
       </ejs-chart>
     </ng-template>
@@ -62,14 +47,16 @@ export class AppComponent {
     { x: new Date(2005, 0, 1), y: 28 }, { x: new Date(2006, 0, 1), y: 44 },
     { x: new Date(2007, 0, 1), y: 48 }
   ];
+
   @ViewChild('Dialog')
   public Dialog?: DialogComponent;
+
   public visible: boolean = false;
-  public showCloseIcon: Boolean = true;
+  public showCloseIcon: boolean = true;
   public width: string = '500px';
   public height: string = '450px';
-  public target: Element = document.getElementById('target') as Element;
-  public content: string = '<div id="container2"></div>';
+  public target: string = '#target';
+
   //Initializing Primary X Axis
   public primaryXAxis: Object = {
     valueType: 'DateTime',
@@ -78,10 +65,8 @@ export class AppComponent {
     edgeLabelPlacement: 'Shift'
   };
   public title: string = 'Inflation - Consumer Price';
+
   public BtnClick = (event: any): void => {
     this.Dialog?.show();
-  };
-  constructor() {
-   //code
   };
 }

@@ -86,7 +86,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 **Numeric - Round**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Round`, the minimum and maximum values are rounded to the nearest values divisible by the interval, creating cleaner axis boundaries. For example, if the minimum value is 3.5 and the interval is 1, the minimum value is rounded down to 3. Similarly, if the maximum is 48.7, it would be rounded up to 49.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Round`, the minimum and maximum values are rounded to the nearest multiples of the interval, creating cleaner axis boundaries. For example, with an interval of `1`, a minimum of `3.5` rounds down to `3` and a maximum of `48.7` rounds up to `49`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 **Numeric - Additional**
 
-When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Additional`, one interval is added to both the minimum and maximum values of the axis range. This ensures extra space around your data, preventing data points from appearing too close to the axis edges, which improves visual clarity.
+When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Additional`, one interval is added to both the minimum and maximum values of the axis range. This adds extra space around your data and prevents data points from appearing too close to the axis edges, improving visual clarity.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,8 +136,8 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#rangepadding) property is set to `Auto`, the chart applies different padding strategies based on axis orientation for optimal visualization:
 
-* **Horizontal axis (X-axis)**: Uses `None` padding to maximize data display width
-* **Vertical axis (Y-axis)**: Uses `Normal` padding to prevent data points from touching chart edges
+* **Horizontal axis (X-axis)**: Uses `None` padding to maximize data display width.
+* **Vertical axis (Y-axis)**: Uses `Normal` padding to prevent data points from touching chart edges.
 
 This is the recommended default setting for most scenarios as it provides optimal spacing for each axis type.
 
@@ -234,7 +234,7 @@ The following table shows examples of commonly used numeric label formats and th
 <td>0.5</td>
 <td>p0</td>
 <td>50%</td>
-<td>Percentage without decimal places</td>
+<td>Displays percentage without decimal places</td>
 </tr>
 <tr>
 <td>1000</td>
@@ -264,7 +264,7 @@ To improve readability of large numbers, you can enable thousand separators by s
 
 ## Custom Label Format
 
-The numeric axis also supports custom label formats by using placeholders such as `{value}°C`, where `{value}` represents the numeric axis label. For example, the value `20` is displayed as `20°C`. This is useful for adding units of measurement or other custom text to your axis labels.
+The numeric axis also supports custom label formats by using the `{value}` placeholder, where `{value}` represents the numeric axis label. The example below uses `{value}k`, so the value `20` is displayed as `20k`. This is useful for adding units (such as `°C`, `k`, or `%`) or other custom text to your axis labels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -278,11 +278,18 @@ The numeric axis also supports custom label formats by using placeholders such a
   
 {% previewsample "page.domainurl/samples/chart/axis/double-cs18" %}
 
+## Troubleshooting
+
+* **No chart or series rendered**: Ensure the matching series service (for example, `AreaSeriesService`, `LineSeriesService`, `ColumnSeriesService`) is registered in the component's `providers` array.
+* **Non-finite or null data points**: Numeric axis calculations assume finite numeric values. `NaN`, `null`, or `undefined` entries may produce unexpected axis ranges. Filter or replace invalid values before assigning to the data source.
+* **Range or interval appears off**: Set explicit `minimum`, `maximum`, and `interval` values, or apply `rangePadding` (such as `Round` or `Additional`) to control axis boundaries.
+* **Grouping separator not visible**: `useGroupingSeparator` only applies when a numeric `labelFormat` is configured. Pair it with a format such as `n0` or `c2` to render separators.
+
 ## See Also
 
-* [Axis Customization](../axis-customization): Learn about additional axis customization options such as title, label style, and positioning
-* [Category Axis](./category-axis): Use category axis for discrete text-based categories
-* [DateTime Axis](./datetime-axis): Use datetime axis for time-series data
-* [Logarithmic Axis](./logarithmic-axis): Use logarithmic axis for data that spans multiple orders of magnitude
-* [Multiple Axes](../multiple-axes): Learn how to add and configure multiple axes in a single chart
-* [API Reference - Axis](https://ej2.syncfusion.com/angular/documentation/api/chart/axis): Complete API documentation for axis properties and methods
+* [Axis Customization](../axis-customization): Learn about additional axis customization options such as title, label style, and positioning.
+* [Category Axis](./category-axis): Use category axis for discrete text-based categories.
+* [DateTime Axis](./date-time-axis): Use datetime axis for time-series data.
+* [Logarithmic Axis](./logarithmic-axis): Use logarithmic axis for data that spans multiple orders of magnitude.
+* [Multiple Panes](../multiple-panes): Learn how to add and configure multiple axes across rows and columns.
+* [API Reference - Axis](https://ej2.syncfusion.com/angular/documentation/api/chart/axis): Complete API documentation for axis properties and methods.

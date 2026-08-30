@@ -1,6 +1,4 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { LineSeriesService, ColumnSeriesService, CategoryService, DataEditingService, TooltipService } from '@syncfusion/ej2-angular-charts'
-import { LegendService } from '@syncfusion/ej2-angular-charts'
+import { ChartModule, LineSeriesService, ColumnSeriesService, CategoryService, DataEditingService, TooltipService, LegendService, DragCompleteEventArgs } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,8 +9,8 @@ imports: [
 providers: [ LegendService, LineSeriesService, ColumnSeriesService, CategoryService, DataEditingService, TooltipService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'
-            [chartArea]="chartArea">
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'
+            [chartArea]="chartArea" [tooltip]="tooltip" [dragComplete]="dragComplete">
         <e-series-collection>
             <e-series [dataSource]='columnData' type='Column' xName='x' yName='y' width="2" [marker]="marker" [dragSettings]="dragSettings"></e-series>
             <e-series [dataSource]='lineData' type='Line' xName='x' yName='y' width="2" [marker]="marker" [dragSettings]="dragSettings"></e-series>
@@ -28,6 +26,8 @@ export class AppComponent implements OnInit {
     public chartArea?: Object;
     public marker?: Object;
     public dragSettings?: Object;
+    public tooltip?: Object;
+    public dragComplete?: (args: DragCompleteEventArgs) => void;
     ngOnInit(): void {
         this.columnData = [
                  { x: '2005', y: 21 }, { x: '2006', y: 60 },
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
             majorTickLines: { width: 0 },
             minorTickLines: { width: 0 }
         };
-        this.chartArea= {
+        this.chartArea = {
             border: {
                 width: 0
             }
@@ -71,7 +71,17 @@ export class AppComponent implements OnInit {
              height: 10
         };
         this.dragSettings = {
+            enable: true,
+            fill: 'red',
+            minY: 0,
+            maxY: 100
+        };
+        this.tooltip = {
             enable: true
         };
+        this.dragComplete = (args: DragCompleteEventArgs) => {
+            console.log(`Series ${args.seriesIndex}, Point ${args.pointIndex} moved to ${args.currentValue}`);
+        };
     }
+
 }

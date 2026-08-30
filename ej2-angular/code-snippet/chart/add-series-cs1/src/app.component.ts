@@ -12,7 +12,7 @@ providers: [ CategoryService, ColumnSeriesService,ExportService, LegendService, 
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart #chart id='chartcontainer'
-            [title]='title' (loaded)='loaded($event)'>
+            [title]='title'>
             <e-series-collection>
                 <e-series [dataSource]='data' type='Column' xName='x' yName='y' > </e-series>
             </e-series-collection>
@@ -45,8 +45,6 @@ export class AppComponent implements OnInit {
         this.title = 'Chart 1';
     }
     export() {
-        this.chart?.exportModule.export('PNG', 'chart','Landscape' as any ,[this.chart, this.chart1 as ChartComponent]);
-    }
-    loaded(args: any) {
+        this.chart?.exportModule.export('PNG', 'chart', undefined, [this.chart, this.chart1 as ChartComponent]);
     }
 }

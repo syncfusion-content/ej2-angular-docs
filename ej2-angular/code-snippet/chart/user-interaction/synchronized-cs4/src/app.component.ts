@@ -17,7 +17,7 @@ standalone: true,
     <div class="row">
         <div class="col" >
             <ejs-chart #chart1 style='display:block;' id="container1" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis1'
-                [title]='title1' [titleStyle]="titleStyle" [zoomSettings]='zoomSettings' (zoomComplete)='zoomComplete($event)' selectionMode='Point' selectionPattern='Box' (selectionComplete)='selectionComplete($event)'>
+                [title]='title1' [titleStyle]="titleStyle" [zoomSettings]='zoomSettings' (zoomComplete)='zoomComplete($event)' [selectionMode]="'Point'" [selectionPattern]="'Box'" (selectionComplete)='selectionComplete($event)'>
                 <e-series-collection>
                     <e-series [dataSource]='chartData' type='Line' xName='USD' yName='EUR' [width]="width">
                     </e-series>
@@ -26,7 +26,7 @@ standalone: true,
         </div>
         <div class="col" >
             <ejs-chart #chart2 style='display:block;' id="container2" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis2'
-                [title]='title2' [titleStyle]="titleStyle" [zoomSettings]='zoomSettings' (zoomComplete)='zoomComplete($event)' selectionMode='Point' selectionPattern='Box' (selectionComplete)='selectionComplete($event)'>
+                [title]='title2' [titleStyle]="titleStyle" [zoomSettings]='zoomSettings' (zoomComplete)='zoomComplete($event)' [selectionMode]="'Point'" [selectionPattern]="'Box'" (selectionComplete)='selectionComplete($event)'>
                 <e-series-collection>
                     <e-series [dataSource]='chartData' type='Spline' xName='USD' yName='INR'
                         [width]="width" [border]='border'>

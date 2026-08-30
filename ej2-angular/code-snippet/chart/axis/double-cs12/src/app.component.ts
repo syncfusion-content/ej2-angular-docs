@@ -1,5 +1,5 @@
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ColumnSeriesService, AreaSeriesService } from '@syncfusion/ej2-angular-charts'
+import { AreaSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
 
@@ -8,7 +8,7 @@ imports: [
          ChartModule
     ],
 
-providers: [ ColumnSeriesService, AreaSeriesService],
+providers: [ AreaSeriesService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>

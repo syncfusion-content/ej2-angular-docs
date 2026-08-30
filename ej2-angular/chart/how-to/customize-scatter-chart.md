@@ -10,9 +10,11 @@ domainurl: ##DomainURL##
 
 # How to Customize Scatter Chart in Angular Chart
 
-By using the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#shape) property in the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel), you can customize the shape of the scatter series points such as `Circle`, `Rectangle`, `Triangle`, `Diamond`, `Cross`, `HorizontalLine`, `VerticalLine`, `Pentagon`, `InvertedTriangle`, and `Image`.
+## Customizing Marker Shape
 
-You can customize the width and height of the shapes by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#height) properties of the marker.
+By using the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#shape) property of the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel), you can customize the shape of scatter series points, including `Circle`, `Rectangle`, `Triangle`, `Diamond`, `Cross`, `HorizontalLine`, `VerticalLine`, `Pentagon`, `InvertedTriangle`, and `Image`. To use a custom image, set `shape` to `Image` and provide the URL via the `imageUrl` property. To display the marker, set its `visible` property to `true` (it defaults to `false`).
+
+Use the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#height) properties to control the size of each marker shape.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,11 +28,38 @@ You can customize the width and height of the shapes by using the [`width`](http
   
 {% previewsample "page.domainurl/samples/chart/how-to-cs3" %}
 
-## Customizing point color and data label value
+## Customizing Point Color and Data Label Value
 
-You can customize the point color by using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender) event in the chart. In which we check the condition based on `yValue` to change the fill color of the point.
+Handle the chart events to customize the fill color of each point and the text shown in its data label. Both events are imported from `@syncfusion/ej2-angular-charts`:
 
-By default, data label values show y values of the data source. You can customize the data label value by using the [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#textrender) event in the chart.
+- `IPointRenderEventArgs` for [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#pointrender)
+- `ITextRenderEventArgs` for [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart#textrender)
+
+### Customizing the point color
+
+Inside the `pointRender` handler, evaluate `args.point.y` and assign a value to `args.fill` to recolor any matching point:
+
+```ts
+public pointRender(args: IPointRenderEventArgs | any): void {
+  if (args.point.y > 80) {
+    args.fill = 'red';
+  } else if (args.point.y < 40) {
+    args.fill = 'green';
+  }
+}
+```
+
+### Customizing the data label value
+
+By default, the data label shows the y-value of the data point. To display a custom value, set the `name` property of `marker.dataLabel` to the field on your data model and then override the text in the `textRender` handler. In the following sample, the custom values come from the `text` field of each data point and the x-value is shown instead of the y-value:
+
+```ts
+public textRender(args: ITextRenderEventArgs): void {
+  args.text = String(args.point.x);
+}
+```
+
+To make the custom `text` field render on the data label, configure `marker.dataLabel.name` accordingly (see the `how-to-cs4` sample).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

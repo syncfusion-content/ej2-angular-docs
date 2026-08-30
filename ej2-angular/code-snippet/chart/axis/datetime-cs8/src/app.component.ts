@@ -1,5 +1,5 @@
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { DateTimeService, LineSeriesService, DateTimeCategoryService, StripLineService } from '@syncfusion/ej2-angular-charts'
+import { DateTimeService, LineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +7,7 @@ imports: [
          ChartModule
     ],
 
-providers: [ DateTimeService, LineSeriesService, DateTimeCategoryService, StripLineService],
+providers: [ DateTimeService, LineSeriesService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>

@@ -1,14 +1,11 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService, LegendService, DataLabelService, MultiLevelLabelService, SelectionService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
+import { ChartModule, CategoryService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts';
 import { categoryData } from './datasource';
-@Component({
-imports: [
-         ChartModule
-    ],
 
-providers: [ CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService,LegendService, DataLabelService, MultiLevelLabelService, SelectionService],
-standalone: true,
+@Component({
+    imports: [ChartModule],
+    providers: [CategoryService, ColumnSeriesService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
@@ -20,7 +17,7 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    public primaryYAxis?: Object;
+
     ngOnInit(): void {
         this.chartData = categoryData;
         this.primaryXAxis = {
@@ -32,5 +29,4 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Olympic Medals';
     }
-
 }

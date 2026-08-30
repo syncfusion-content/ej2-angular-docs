@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartAllModule } from '@syncfusion/ej2-angular-charts';
-import { LineSeriesService, CategoryService, DataLabelService, LegendService } from '@syncfusion/ej2-angular-charts';
+import { LineSeriesService, CategoryService, SeriesLabelService, LegendService } from '@syncfusion/ej2-angular-charts';
 
 import { vietnamData, indonesiaData, franceData, polandData, mexicoData } from './datasource';
 
@@ -8,7 +8,7 @@ import { vietnamData, indonesiaData, franceData, polandData, mexicoData } from '
     imports: [
         ChartAllModule
     ],
-    providers: [LineSeriesService, CategoryService, DataLabelService, LegendService],
+    providers: [LineSeriesService, CategoryService, SeriesLabelService, LegendService],
     standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="charts" [primaryXAxis]="primaryXAxis" [legendSettings]="legendSettings">
