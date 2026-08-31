@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to preview images before upload in Angular Uploader | Syncfusion
-description: Show image previews in the Angular Uploader before upload using the selected event, and render post-upload previews with the success event for a full preview experience.
+description: Show image previews in the Angular Uploader before upload using the selected event, and render post-upload previews with the success event for a full preview.
 platform: ej2-angular
 control: Preview images before uploading 
 documentation: ug
@@ -16,4 +16,4 @@ For a complete implementation example demonstrating image preview functionality,
 
 [Image Preview Demo](https://ej2.syncfusion.com/angular/demos/#/material/uploader/image-preview)
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore the [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. Explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse and select the files which you want to upload to the server.

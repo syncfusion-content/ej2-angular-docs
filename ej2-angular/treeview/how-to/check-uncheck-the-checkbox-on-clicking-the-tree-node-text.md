@@ -16,11 +16,12 @@ This approach is particularly useful when you want to provide a larger click tar
 
 ## Prerequisites
 
-Ensure that the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property is enabled on your TreeView component, as this functionality requires checkboxes to be visible and interactive.
+* The [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property must be enabled so each node renders a checkbox.
+* Initialize the TreeView with an `@ViewChild` reference so the event handler can call the `checkAll`/`uncheckAll` TreeView methods.
 
 ## Implementation
 
-The [`nodeClicked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeclicked) event provides a `NodeClickEventArgs` object containing the clicked node information. Use this event to programmatically check or uncheck nodes based on their current state.
+The [`nodeClicked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeclicked) event provides a `NodeClickEventArgs` object containing the clicked node information. Use this event to programmatically check or uncheck nodes based on their current state. Inside the handler, `args.node` is the clicked DOM element and you can toggle the matching data record's `isChecked` flag before invoking `tree.checkAll([id])` or `tree.uncheckAll([id])`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

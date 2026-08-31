@@ -14,7 +14,9 @@ When working with TreeView nodes that contain multi-line content, the default ho
 
 ## Overview
 
-Multi-line TreeView nodes present a unique challenge where the hover area (`e-fullrow` element) needs to match the actual content height (`e-text-content` element). Without proper height synchronization, users may experience inconsistent hover effects or selection areas that don't cover the complete node content.
+Multi-line TreeView nodes present a unique challenge where the hover area (`e-fullrow` element) needs to match the actual content height (`e-text-content` element). When these heights are out of sync, users see inconsistent hover effects and selection areas that don't cover the complete node content. Common causes are line wrap in the node text, custom `nodeTemplate` content, or theme-level line-height overrides.
+
+This implementation uses the TreeView component's [`created`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#created) and [`nodeSelecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) events to dynamically adjust row heights and ensure proper hover behavior across all multi-line nodes. If the application supports window resize, refire the height-sync routine inside a resize event handler so the rows stay aligned.
 
 This implementation uses the TreeView component's [`created`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#created) and [`nodeSelecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) events to dynamically adjust row heights and ensure proper hover behavior across all multi-line nodes.
 

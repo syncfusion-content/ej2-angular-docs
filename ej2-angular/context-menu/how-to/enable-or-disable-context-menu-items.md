@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable or disable Context Menu items in Angular Context Menu | Syncfusion
+title: Enable or Disable Items in Angular Context Menu | Syncfusion
 description: Enable or disable Angular Context Menu items by ID or text using the enableItems method, including submenu items in beforeOpen.
 platform: ej2-angular
 control: Context Menu
@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to enable or disable Context Menu items in Angular Context Menu
 
-The ContextMenu component supports dynamic state management of menu items through the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#enableitems) method. This functionality allows you to control menu item availability based on application state, user permissions, or contextual conditions, enhancing user experience by showing only relevant actions.
+The ContextMenu component supports dynamic state management of menu items through the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#enableitems) method. This functionality allows you to control menu item availability based on application state, user permissions, or contextual conditions, enhancing user experience by showing only relevant actions.
 
-The `enableItems` method accepts three parameters: an array of item identifiers (`items`), a boolean value (`enable`) to specify the desired state, and an optional `isUniqueId` parameter to indicate whether the identifiers refer to unique IDs or text content. When `enable` is set to `true`, the specified items become interactive; when `false`, they become disabled and visually dimmed.
+The `enableItems` method accepts three parameters: an array of item identifiers (`items`), a boolean value (`enable`) to specify the desired state, and an optional `isUniqueId` parameter to indicate whether the identifiers refer to unique IDs or text content. When `enable` is set to `true`, the specified items become interactive; when `false`, they become disabled and visually dimmed with the `e-disabled` CSS class.
 
 In the following example, the **Display Settings** parent item and **Medium icons** sub menu item are disabled to demonstrate different levels of menu item control.
 
@@ -28,4 +28,4 @@ In the following example, the **Display Settings** parent item and **Medium icon
   
 {% previewsample "page.domainurl/samples/context-menu/template-cs3" %}
 
-> To disable sub menu items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event.
+> To disable sub menu items, use the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeopen) event.

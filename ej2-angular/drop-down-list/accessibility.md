@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The DropDownList component is designed with WAI-ARIA specifications, applying the necessary roles, states, and properties to support keyboard interaction. This ensures that the component is fully accessible to users who rely on assistive technologies (AT) or keyboard navigation.
 
-The DropDownList component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The DropDownList component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the DropDownList component is outlined below.
 
@@ -74,7 +74,7 @@ You can use the following key shortcuts to interact with the DropDownList compon
 | <kbd>End</kbd> | Selects the last item in the list. |
 | <kbd>A-Z</kbd> or <kbd>0-9</kbd> | Jumps to the next list item that starts with the typed character. |
 
-> In the following sample, <kbd>alt+t</kbd> keys are used to focus the DropDownList component.
+> In the following sample, <kbd>Alt+T</kbd> keys are used to focus the DropDownList component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

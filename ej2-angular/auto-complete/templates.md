@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Templates in Angular AutoComplete
 
-The AutoComplete has been provided with several options to customize each list items, group title, header and footer elements.
+The AutoComplete component provides several options to customize the list items, group title, header, and footer elements.
 
 ## Item template
 
-The content of each list item within the AutoComplete can be customized with the help of [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#itemtemplate) property.
+The content of each list item within the AutoComplete can be customized using the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#itemtemplate) property.
 
-In the following sample, each list item is split into two columns to display relevant data's.
+In the following sample, each list item uses a two-column layout to display the relevant information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -35,9 +35,9 @@ In the following sample, each list item is split into two columns to display rel
 
 ## Group template
 
-The group header title under which appropriate sub-items are categorized can also be customize with the help of [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default) property. This template is common for both inline and floating group header template.
+The group header title under which sub-items are categorized can be customized using the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#grouptemplate) property. This template is common to both the inline and floating group header templates.
 
-In the following sample, employees are grouped according to their city.
+In the following sample, employees are grouped by city.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -56,9 +56,9 @@ In the following sample, employees are grouped according to their city.
 
 ## Header template
 
-The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be placed as a header element using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#headertemplate) property.
+The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be displayed in the header using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#headertemplate) property.
 
-In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
+In the following sample, the list items and their headers are designed and displayed as two columns, similar to multiple columns of a grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -98,7 +98,7 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The AutoComplete is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property.
+The AutoComplete supports custom design for the popup list content when no data is available or no search matches are found, using the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property.
 
 In the following sample, popup list content displays the notification of no data available.
 

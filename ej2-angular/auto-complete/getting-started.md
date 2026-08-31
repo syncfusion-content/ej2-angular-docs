@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The AutoComplete component provides suggestions as users type, offering filtering and selection capabilities for efficient text input in various scenarios.
 
-This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular AutoComplete component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
+This guide provides step-by-step instructions to set up an Angular project with TypeScript using the Angular CLI, and to integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular AutoComplete component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework-hosted setups, see [See Also](#see-also).
 
 The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 

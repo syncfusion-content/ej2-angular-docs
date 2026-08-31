@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to clear an Image in Angular Image Editor
 
-The [`clearImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#clearimage) method in the image editor control is indeed useful for scenarios where you need to ensure that the image editor is emptied before reopening it, especially if the editor is used within a dialog. By using clearImage before closing the dialog, you can ensure that the editor does not retain the previously loaded image when the dialog is reopened. This allows users to start fresh with a new image selection.
+The [`clearImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#clearimage) method empties the image editor canvas, removing the currently loaded image. This is useful for scenarios where you need to ensure that the image editor is emptied before reopening it, especially if the editor is used within a dialog. By using `clearImage` before closing the dialog, you can ensure that the editor does not retain the previously loaded image when the dialog is reopened. This allows users to start fresh with a new image selection. To clear the image, call the `clearImage` method as shown in the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

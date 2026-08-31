@@ -10,9 +10,23 @@ domainurl: ##DomainURL##
 
 # How to add link to Toolbar item in Angular Toolbar
 
-The Angular Toolbar component supports adding interactive links within toolbar items using Angular **ng-template**. This approach enables you to embed anchor elements or routing links directly into toolbar items while maintaining full control over their behavior and styling.
+The Angular Toolbar component supports adding interactive links within toolbar items using Angular's `ng-template` directive. This approach enables you to embed anchor elements or routing links directly into toolbar items while maintaining full control over their behavior and styling.
 
-To implement links in toolbar items, use the `ng-template` directive inside the `e-item` tag with the `#template` attribute. The template attribute is mandatory for Angular to properly render the custom template content within the toolbar item.
+Define the `ng-template` block as a sibling to the `<ejs-toolbar>` (or in the same template file) with a template reference variable, then reference it from the toolbar item through the `[template]` input:
+
+```html
+<ejs-toolbar>
+  <e-items>
+    <e-item [template]="linkRef"></e-item>
+  </e-items>
+</ejs-toolbar>
+
+<ng-template #linkRef>
+  <a href="https://www.syncfusion.com" target="_blank">Syncfusion</a>
+</ng-template>
+```
+
+> If the link uses `[routerLink]`, ensure `RouterModule` (or `provideRouter`) is registered in your standalone `bootstrapApplication`/`AppComponent` providers.
 
 
 {% tabs %}

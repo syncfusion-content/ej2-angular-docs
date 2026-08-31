@@ -44,10 +44,10 @@ The following table lists the standard keyboard shortcuts supported by the Uploa
 
 | **Keyboard shortcut** | **Action** |
 | --- | --- |
-| <kbd>Tab</kbd> | Move focus to the next element. |
-| <kbd>Shift + Tab</kbd> | Move focus to the previous element. |
-| <kbd>Enter</kbd> | Trigger the action associated with the focused button element. |
-| <kbd>Esc</kbd> | Close the file browser dialog and cancel the upload operation. |
+| <kbd>Tab</kbd> | Move focus to the next focusable element (standard browser focus behavior). |
+| <kbd>Shift + Tab</kbd> | Move focus to the previous focusable element (standard browser focus behavior). |
+| <kbd>Enter</kbd> | Trigger the action associated with the focused button element (for example, opening the file browser from the browse button, or removing a file when its remove button is focused). |
+| <kbd>Esc</kbd> | Cancel an in-progress upload operation. (The native operating-system file dialog is closed by the OS, not by the Uploader.) |
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -61,16 +61,16 @@ The following table lists the standard keyboard shortcuts supported by the Uploa
 
 {% previewsample "page.domainurl/samples/uploader/uploader-cs16" %}
 
->You can also explore [Angular File Upload](https://www.syncfusion.com/Angular-ui-components/Angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material3/uploader/default) to understand how to browse the files which you want to upload to the server.
-
 ## Ensuring accessibility
 
 The Uploader component's accessibility compliance is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
 
-The following sample demonstrates the accessibility compliance of the Uploader component. Open the [sample](https://ej2.syncfusion.com/accessibility/uploader.html) in a new window to evaluate the component's accessibility using industry-standard tools.
+The following sample demonstrates the accessibility compliance of the Uploader component. Open the [sample](https://ej2.syncfusion.com/accessibility/uploader.html) to evaluate the component's accessibility using industry-standard tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/uploader.html" %}
 
 ## See also
 
 * [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)
+
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material3/uploader/default) to understand the accessible file upload experience.

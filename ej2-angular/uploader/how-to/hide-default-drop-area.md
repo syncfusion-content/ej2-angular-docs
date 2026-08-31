@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 You can hide the default drop area by overriding the corresponding Uploader component styles. In the following example, the styles listed below are overridden to conceal the default drop area:
 
-* `.e-upload.e-control` — Main Uploader container
-* `.e-upload .e-file-select` — File selection area
-* `.e-upload .e-file-drop` — Drag-and-drop zone
+* `.e-control` — Main Uploader container
+* `.e-control .e-file-select` — File selection area
+* `.e-control .e-file-drop` — Drag-and-drop zone
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -28,4 +28,4 @@ You can hide the default drop area by overriding the corresponding Uploader comp
   
 {% previewsample "page.domainurl/samples/uploader/hide-drop-cs1" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore the [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. Explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse and select the files which you want to upload to the server.

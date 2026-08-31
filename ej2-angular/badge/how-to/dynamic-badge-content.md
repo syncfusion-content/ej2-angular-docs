@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to set dynamic badge content in Angular Badge
 
-Badges in real-time needs to be updated dynamically based on the requirements. In this sample, using Angular data binding the badges content will be updated dynamically. Click the increment button to change the badge value.
+Badges in real-time need to be updated dynamically based on the requirements. In this sample, badges are rendered within a ListView template using Angular data binding, where the badge content is bound to a lookup object keyed by each list item's `text` field. Using Angular data binding, the badge content is updated dynamically. Click the increment button to increment all badge counts at once.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to show list items with icons in Angular AutoComplete
 
-You can render **icons** to the list items by mapping the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) field. This `iconCss` field create a span in the list item with mapped class name to allow styling as per your need.
+You can render **icons** to the list items by mapping the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) field. This `iconCss` field creates a `span` element in the list item with the mapped class name, allowing you to style the icon as needed.
 
 In the following sample, the icon classes are mapped with `iconCss` field.
 

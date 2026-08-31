@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular MultiSelect Dropdown
 
-The following content provides the CSS selectors and properties that can be used to customize the Angular Multi-select component's appearance based on specific requirements.
+The following content provides the CSS selectors and properties that you can use to customize the appearance of the Angular MultiSelect component.
 
-## Customizing the background color of wrapper element
+## Customizing the background color of the wrapper element
 
 Use the following CSS to customize the background color of the main wrapper element
 
@@ -92,9 +92,9 @@ Use the following CSS to customize the text color of the placeholder.
 }
 ```
 
-## Customizing the placeholder to add mandatory indicator (*)
+## Adding a mandatory indicator (*) to the placeholder
 
-Use the following CSS to add the mandatory indicator (*) to the float label element.
+Use the following CSS to add the mandatory indicator (`*`) to the float label element.
 
 ```css
 .e-input-group.e-control-wrapper.e-float-input .e-float-text::after {
@@ -129,7 +129,7 @@ Use the following CSS to customize the focus color when using the outline theme.
 }
 ```
 
-## Customizing the background color of focus, hover, and active items
+## Customizing the background color of focused, hovered, and active items
 
 Use the following CSS to customize the background color of focused, hovered, and active items in the dropdown list.
 
@@ -140,7 +140,7 @@ Use the following CSS to customize the background color of focused, hovered, and
 }
 ```
 
-## Customizing the appearance of popup element
+## Customizing the appearance of the popup element
 
 Use the following CSS to customize the appearance of dropdown popup list items.
 

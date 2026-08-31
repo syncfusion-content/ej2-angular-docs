@@ -62,7 +62,7 @@ ng new syncfusion-angular-app --style=scss
 
 ![Initial_setup](images/SSR.png)
 
-* Select the required AI tool or 'none' if you do not need any AI tool.
+* Select the required AI tool or 'none' if you do not need an AI tool.
 
 ![Initial_setup](images/Ai.png)
 

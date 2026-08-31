@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Dialog
 
-The Dialog component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) used to evaluate accessibility.
+The Dialog component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) used to evaluate accessibility.
 
 The accessibility compliance for the Dialog component is outlined below.
 
@@ -40,7 +40,7 @@ The accessibility compliance for the Dialog component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Dialog is characterized by complete ARIA accessibility support, enabling screen readers and other assistive technology devices to access the component. This component is designed based on the guidelines documented in [WAI-ARIA Accessibility Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal).
+The Dialog is characterized by complete ARIA accessibility support, enabling screen readers and other assistive technology devices to access the component. This component is designed based on the guidelines documented in [WAI-ARIA Accessibility Practices for dialogs](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal).
 
 The Dialog component uses the `Dialog` role and the following ARIA properties on its elements based on their state.
 
@@ -53,7 +53,7 @@ The Dialog component uses the `Dialog` role and the following ARIA properties on
 
 ## Keyboard interaction
 
-The Dialog component's keyboard interaction is designed based on [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal) for dialogs.
+The Dialog component's keyboard interaction is designed to follow the [WAI-ARIA Authoring Practices for dialogs](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal).
 Users can interact with the Dialog using the following shortcut keys.
 
 <!-- markdownlint-disable MD033 -->

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to customize highlight search in Angular AutoComplete
 
-The AutoComplete has built-in support to highlight the searched characters on suggested list items when enabled the [`highlight`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#highlight) property.
+The AutoComplete component has built-in support to highlight the searched characters in the suggested list items when the [`highlight`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#highlight) property is enabled.
 
-In the below sample, to customize the matched character in suggestion list by `e-highlight` class.
+In the following sample, the matched character in the suggestion list is customized using the `e-highlight` class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

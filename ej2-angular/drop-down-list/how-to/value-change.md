@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # How to detect value change source in Angular Dropdown List
 
-You can check about whether value change happened by manual or programmatic by
-using [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event argument that argument name is `isInteracted`.
+You can check whether value change happened by manually or programmatically by
+using [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event argument whose name is `isInteracted`.
 
-The following example demonstrate, how to check whether value change happened by manual or programmatic.
+The following example demonstrates how to check whether value change happened by manually or programmatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

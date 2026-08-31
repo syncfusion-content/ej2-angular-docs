@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to limit search result on filtering in Angular Dropdown List
 
-The following example demonstrates about how to set limit the search result on filtering.
+The following example demonstrates how to limit the search results on filtering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # Templates in Angular Dropdown Tree
 
-The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Template engine to compile and render the elements properly.
+The Dropdown Tree provides support to customize each list item, header and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Template engine to compile and render the elements properly.
 
 ## Item template
 
-Customize the content of each list item within the Dropdown Tree using the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#itemtemplate) property. This allows you to display complex data structures with custom formatting and styling.
+Customize the content of each list item within the Dropdown Tree using the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#itemtemplate) property. This allows you to display complex data structures with custom formatting and styling.
 
 In the following sample, the Dropdown Tree list items display employee information including **name** and **job** details using the **itemTemplate** property.
 
 {% raw %}
-The template expression should be provided inside the ${...} interpolation syntax and {{...}} for ng-template.
+The template expression should be provided inside the ${...} interpolation syntax and {{...}} for an ng-template.
 {% endraw %} 
 
 {% tabs %}
@@ -40,12 +40,12 @@ The template expression should be provided inside the ${...} interpolation synta
 
 ## Value template
 
-The currently selected value displayed in the Dropdown Tree input element can be customized using the [valueTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#valuetemplate) property. This template controls how selected items appear in the input field.
+The currently selected value displayed in the Dropdown Tree input element can be customized using the [valueTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#valuetemplate) property. This template controls how selected items appear in the input field.
 
 In the following sample, the selected value displays as combined text showing both `Name` and `Job` separated by a hyphen.
 
 {% raw %}
-The template expression should be provided inside the ${...} interpolation syntax and {{...}} for ng-template.
+The template expression should be provided inside the ${...} interpolation syntax and {{...}} for an ng-template.
 {% endraw %}
 
 {% tabs %}
@@ -66,7 +66,7 @@ The template expression should be provided inside the ${...} interpolation synta
 
 ## Header template
 
-The header element appears statically at the top of the popup list items within the Dropdown Tree. Use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#headertemplate) property to place custom elements as header content.
+The header element appears statically at the top of the popup list items within the Dropdown Tree. Use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#headertemplate) property to place custom elements as header content.
 
 In the following sample, the header is customized with a custom element that provides context for the dropdown content.
 
@@ -88,7 +88,7 @@ In the following sample, the header is customized with a custom element that pro
 
 ## Footer template
 
-The Dropdown Tree supports displaying a footer element at the bottom of the popup list items. Use the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#footertemplate) property to place custom elements as footer content.
+The Dropdown Tree supports displaying a footer element at the bottom of the popup list items. Use the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#footertemplate) property to place custom elements as footer content.
 
 In the following sample, the footer element displays the total number of employees available in the Dropdown Tree.
 
@@ -110,7 +110,7 @@ In the following sample, the footer element displays the total number of employe
 
 ## No records template
 
-The Dropdown Tree supports displaying custom content when no matches are found during search operations. Use the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#norecordstemplate) property to customize the no data message.
+The Dropdown Tree supports displaying custom content when no matches are found during search operations. Use the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#norecordstemplate) property to customize the no data message.
 
 In the following sample, the popup list displays a custom notification when no data is available.
 
@@ -132,7 +132,7 @@ In the following sample, the popup list displays a custom notification when no d
 
 ## Action failure template
 
-The Dropdown Tree provides options to customize the popup list content when data fetch requests fail at the remote server. Use the [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#actionfailuretemplate) property to display custom error messages.
+The Dropdown Tree provides options to customize the popup list content when data fetch requests fail on the remote server. Use the [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#actionfailuretemplate) property to display custom error messages.
 
 In the following sample, when the data fetch request fails, the Dropdown Tree displays a custom error notification.
 
@@ -154,7 +154,7 @@ In the following sample, when the data fetch request fails, the Dropdown Tree di
 
 ## Custom template for selected items display
 
-When multiple items are selected via checkbox or multi-selection, the Dropdown Tree can display a custom template instead of showing all selected item text. Configure this by setting the [mode](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#mode) property to ***Custom*** and using the [customTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#customtemplate) property.
+When multiple items are selected via checkbox or multi-selection, the Dropdown Tree can display a custom template instead of showing all selected item text values. Configure this by setting the [mode](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#mode) property to ***Custom*** and using the [customTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#customtemplate) property.
 
 When the **mode** property is set to **Custom**, the Dropdown Tree displays the default template value **(${value.length} item(s) selected)** such as **1 item(s) selected** or **2 item(s) selected**. Customize this default template using the **customTemplate** property.
 

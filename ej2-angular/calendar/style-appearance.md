@@ -10,11 +10,13 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular Calendar
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference. For the full list of CSS classes applied to the Calendar, see the [CSS class table in the Customization](./customization#day-cell-format) topic.
 
-## Customizing the background color for the Calendar
+Add the custom CSS to your application's global stylesheet (e.g., `style.css`) so it can override the component's default styles. When using component-scoped styles (`@Component` styles array), you may need `::ng-deep` to pierce Angular's view encapsulation.
 
-Use the following CSS to customize the background color and border for the Calendar.
+## Customizing the background color
+
+Use the following CSS to customize the background color and border.
 
 ```css
 /* To specify background color and border */
@@ -24,27 +26,27 @@ Use the following CSS to customize the background color and border for the Calen
 }
 ```
 
-## Customizing the Calendar date elements on hovering
+## Customizing the Calendar date elements on hover
 
-Use the following CSS to customize the date elements on hovering in the Calendar.
+Use the following CSS to customize the date elements on hover.
 
 ```css
 /* To specify background color, color, and border */
 .e-calendar .e-content td:hover span.e-day, .e-calendar .e-content td:focus span.e-day, .e-bigger.e-small .e-calendar .e-content td:hover span.e-day, .e-bigger.e-small .e-calendar .e-content td:focus span.e-day {
         background-color: red;
-        border: 2px solid;
+        border: 2px solid black;
         color: #212529;
 }
 ```
 
 ## Customizing the border of date cell grid
 
-Use the following CSS to add the border to the date cell grid.
+Use the following CSS to add a border to the date cell grid.
 
 ```css
 /* To specify border */
 .e-calendar .e-content span.e-day, .e-bigger.e-small .e-calendar .e-content span.e-day {
-        border: 1px solid;
+        border: 1px solid black;
 }
 ```
 
@@ -60,13 +62,13 @@ Use the following CSS to customize the Calendar title.
 }
 ```
 
-## Customizing the previous and next icon
+## Customizing the previous and next icons
 
-Use the following CSS to customize the previous and next icon.
+Use the following CSS to customize the previous and next icons.
 
 ```css
 /* To specify color and border  */
-.e-calendar .e-header span, .e-bigger.e-small .e-calendar .e-header span {
+.e-calendar .e-header .e-icon-container span, .e-bigger.e-small .e-calendar .e-header .e-icon-container span {
         border: 1px solid;
         color: chocolate;
 }
@@ -78,32 +80,37 @@ Use the following CSS to customize the footer button.
 
 ```css
 /* To specify background color, color, and border-color  */
-.e-calendar .e-btn.e-today.e-flat.e-primary, .e-calendar .e-css.e-btn.e-today.e-flat.e-primary {
+.e-calendar .e-btn.e-today.e-flat, .e-calendar .e-css.e-btn.e-today.e-flat {
         background-color: red;
         border-color: black;
         color: black;
 }
 ```
 
-## Customizing the selected date cell grid
+## Customizing the selected date cell
 
-Use the following CSS to customize the selected date cell grid in Calendar.
+Use the following CSS to customize the selected date cell.
 
 ```css
 /* To specify background color and color  */
-.e-calendar .e-content td.e-focused-date.e-today span.e-day {
+.e-calendar .e-content td.e-selected span.e-day {
         background-color: maroon;
         color: #fff;
 }
 ```
 
-## Customizing the content header in Calendar
+## Customizing the content header
 
-Use the following CSS to customize the content header in Calendar.
+Use the following CSS to customize the content header.
 
 ```css
 /* To specify background */
 .e-calendar .e-content thead, .e-bigger.e-small .e-calendar .e-content thead {
-    background: aquamarine;
+    background-color: aquamarine;
 }
 ```
+
+## See Also
+
+* [Customization using CSS classes](./customization)
+* [Day Cell Format CSS class table](./customization#day-cell-format)

@@ -10,9 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize Toolbar scroll step in Angular Toolbar
 
-The Toolbar component supports customizing the scrolling distance when you click the left and right side navigation icons. You can customize the [`scrollStep`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#scrollstep) property for scrolling distance. Refer to the following code example.
-
-By using the Toolbar scrollStep property, pass a required value to customize toolbar scrollStep.
+The Toolbar component supports customizing the scrolling distance when you click the left and right side navigation icons. Use the [`scrollStep`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#scrollstep) property (default `30`, in pixels) to control how far the Toolbar scrolls per click. Refer to the following code example for setting a custom value.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}

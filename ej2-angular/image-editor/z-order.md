@@ -10,19 +10,19 @@ domainurl: ##DomainURL##
 
 # Z-order in Angular Image Editor
 
-We are excited to introduce `z-order` support in the Image Editor. It's a powerful tool that allows users to adjust the positioning of annotations. This feature is particularly useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is crucial for a polished final product.
+The Image Editor supports `z-order` to adjust the positioning of annotations. It is a powerful tool that allows users to adjust the positioning of annotations. This feature is particularly useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is crucial for a polished final product.
  
-Types of adjustment in the Image Editor `z-order` support.
+Types of adjustment in the Image Editor `z-order` support:
 
-* [Bring forward](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#bringforward) - Switch the selected annotation with the annotation one layer ahead of it.
+* [`bringForward`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#bringforward) - Switch the selected annotation with the annotation one layer ahead of it.
 
-* [Sent Backward](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#sendbackward) - Switch the selected annotation with the annotation one layer behind it.
+* [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#sendbackward) - Switch the selected annotation with the annotation one layer behind it.
 
-* [Bring to Front](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#bringtofront) - Move the selected annotation to ahead of all other annotations.
+* [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#bringtofront) - Move the selected annotation ahead of all other annotations.
 
-* [Send to Back](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#sendtoback) - Move the selected annotation to behind all other annotations.
+* [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#sendtoback) - Move the selected annotation behind all other annotations.
 
-In the following example, you can use the `z-order` support.
+The following example demonstrates `z-order` support.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

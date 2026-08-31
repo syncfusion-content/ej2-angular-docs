@@ -10,8 +10,13 @@ domainurl: ##DomainURL##
 
 # How to JSON data binding with Calendar in Angular Calendar
 
-In most of the real cases, the model data will be available with JSON format only. Here we have showcased Calendar component by setting JSON string to value property. In this JSON, we have used ISO formatted date string which is frequently used date format to get proper date and time value without any misreading.
-Also our Calendar component supports the ISO formatted date value, so parsed JSON value can be directly set to Calendar model.
+In many applications, data is commonly available in JSON format. You can bind JSON data to the Calendar component by assigning an ISO-formatted date string to the value property.
+
+ISO-formatted date strings provide a standardized representation of date and time values, helping to avoid format inconsistencies during parsing.
+
+The Calendar component supports ISO-formatted date values, so the date value obtained from parsed JSON data can be assigned directly to the Calendar value property.
+
+The following example demonstrates how to bind a date value from JSON data to the Calendar component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

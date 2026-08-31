@@ -10,13 +10,25 @@ domainurl: ##DomainURL##
 
 # How to customize selected tab styles in Angular Tab
 
-You can customize the Tab style by overriding its header and active tab CSS classes. Define HTML string for adding animation and customizing the Tab header and pass it to [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#text) property. Now you can override the style using custom CSS classes added to the Tab elements.
+Customize the appearance of the active Tab by combining a custom HTML header (passed to the [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#text) property) with a custom CSS class assigned via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#cssclass) property of the Tab.
 
-> You can add the custom class into Tab component using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#cssclass)
-property which is used to customize the Tab component.
+## Steps
+
+1. Pass an HTML string to `items[i].header.text` to include animation or custom markup in the header.
+2. Set `cssClass` on the Tab component to a custom class (e.g., `"custom-tab"`).
+3. Override the active header styles using the custom class in your component or global CSS:
+
+```CSS
+.custom-tab .e-tab-header .e-toolbar-item.e-active .e-tab-wrap {
+    background: #1976d2;
+    color: #fff;
+}
+```
+
+> The `cssClass` property is defined on the Tab component itself, not on Toolbar.
 
 {% tabs %}
-{% highlight ts tabtitle="app.ts" %}
+{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/custom-styles-cs1/src/app.component.ts %}
 {% endhighlight %}
 
@@ -26,3 +38,8 @@ property which is used to customize the Tab component.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/custom-styles-cs1" %}
+
+## See Also
+
+* [Style and Appearance](../style)
+* [Header configuration](../header)

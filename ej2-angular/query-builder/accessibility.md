@@ -47,20 +47,38 @@ The Query Builder uses the following WAI-ARIA attributes:
 | Attributes | Purpose |
 | --- | --- |
 | `role` | Indicates the query builder component. |
+| `aria-label` | Provides an accessible label for the rule, group, and control elements such as fields, operators, values, and buttons. |
+| `aria-expanded` | Indicates the expanded or collapsed state of the group. |
+| `aria-disabled` | Indicates the disabled state of the controls within the query builder. |
 
 ## Keyboard interaction
 
 The Query Builder supports full keyboard navigation, enabling users who rely on assistive technologies or keyboard-only navigation to interact with all features. The following keyboard shortcuts are available:
 
-| **Press** | **To do this** |
+| Press | To do this |
 | --- | --- |
-| <kbd>Tab / Shift + Tab</kbd> | To focus the next item in the rule. |
+| <kbd>Tab</kbd> | Move focus to the next control within the rule (field, operator, value, connector, or action button). |
+| <kbd>Shift + Tab</kbd> | Move focus to the previous control within the rule. |
+| <kbd>Enter</kbd> | Open the dropdown for the focused field, operator, or value, or trigger the focused action button (Add condition, Add group, Delete). |
+| <kbd>Alt + Down Arrow</kbd> | Open the dropdown list of the focused field, operator, or value editor. |
+| <kbd>Alt + Up Arrow</kbd> | Close the open dropdown list. |
+| <kbd>Escape</kbd> | Close the open dropdown list and restore the previously selected value. |
+| <kbd>Home</kbd> | Move focus to the first control in the focused rule or group. |
+| <kbd>End</kbd> | Move focus to the last control in the focused rule or group. |
 
 ## Ensuring accessibility
 
 The Query Builder component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
+To validate the Query Builder against accessibility standards in your own application:
+
+1. Run the accessibility-checker against any page hosting the Query Builder and review the reported violations against the WCAG 2.2 and Section 508 rule sets.
+2. Run axe-core on the rendered Query Builder element and address any reported serious or critical issues.
+3. Re-run both tools after any template or style customization, since custom content can introduce new accessibility regressions.
+
 The accessibility compliance of the Query Builder component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/query-builder.html) in a new window to evaluate the accessibility of the Query Builder component with accessibility tools.
+
+The following sample renders the default Query Builder and can be used to run the accessibility validation tools directly against the component:
 
 {% previewsample "page.domainurl/samples/query-builder/default-cs1" %}
 

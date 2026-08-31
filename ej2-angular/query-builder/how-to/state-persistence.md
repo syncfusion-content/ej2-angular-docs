@@ -10,7 +10,11 @@ domainurl: ##DomainURL##
 
 # How to maintain the state persistence in Angular Query Builder UI
 
-State persistence maintains the Query Builder's current configuration in the browser's `localStorage` across page refreshes and navigation. When enabled, the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#rule) object is stored in local storage. To enable state persistence, set the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#enablepersistence) property to true.
+State persistence maintains the Query Builder's current configuration in the browser's `localStorage` across page refreshes and navigation. When enabled, the current [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#rule) object is stored in localStorage and automatically restored when the component is reloaded.
+
+To enable state persistence, set the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#enablepersistence) property to true. When persistence is enabled, the Query Builder saves and restores its current rule state automatically.
+
+Persisted data is maintained for the component instance and can be cleared by removing the corresponding persisted entry from localStorage when a fresh state is required.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

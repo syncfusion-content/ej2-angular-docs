@@ -31,6 +31,8 @@ Refer to the following example for implementation details.
 
 ### Save action for paste to upload
 
+The following server-side action saves the pasted image and renames it using the `fileName` value that the client sends through `customFormData`. (This is an alternative implementation; do not combine it with the directory-upload save action in the same controller.)
+
 ```csharp
 public void Save() {
     var httpPostedFile = System.Web.HttpContext.Current.Request.Files["UploadFiles"];
@@ -54,11 +56,12 @@ public void Save() {
 
 ## Directory upload
 
-The Uploader component allows you to upload all files in a directory (and its subdirectories) to the server using the [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/#directoryupload) property. When enabled, the Uploader iterates through all files and subdirectories in the selected folder.
+The Uploader component allows you to upload all files in a directory (and its subdirectories) to the server using the [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#directoryupload) property. When enabled, the Uploader iterates through all files and subdirectories in the selected folder.
 This feature allows you to select entire folders instead of individual files.
 
 > Directory upload is supported only in browsers that support HTML5 directory selection. In Microsoft Edge, you can use drag-and-drop to upload directories.
-Refer to the following example to implement directory upload functionality.
+>
+> Refer to the following example to implement directory upload functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -120,7 +123,7 @@ The drop area is highlighted when you drag files over it.
 ### Custom drop area
 
 The Uploader component allows you to set an external HTML element as the drop area using the `dropArea` property.
-The element can be specified as an HTML element reference or an element ID string.
+The element can be specified as an HTML element reference or an element ID string. For example, `[dropArea]='#dropElement'` binds to a template reference variable, while `[dropArea]="'dropAreaId'"` binds to an element by its ID string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -134,7 +137,7 @@ The element can be specified as an HTML element reference or an element ID strin
   
 {% previewsample "page.domainurl/samples/uploader/draganddrop-cs1" %}
 
-### Customize drop area
+### Style the drop area
 
 customize the drop area's appearance by overriding the default styles.
 Use the **e-upload-drag-hover** CSS class to style the drop area when files are dragged over it.
@@ -151,9 +154,9 @@ Use the **e-upload-drag-hover** CSS class to style the drop area when files are 
   
 {% previewsample "page.domainurl/samples/uploader/cus_draganddrop-cs1" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand paste-to-upload, directory upload, and drag-and-drop behaviors.
 
-## See Also
+## See also
 
 * [Achieve file upload programmatically](./how-to/achieve-file-upload-programmatically)
 * [Validate image/* on drop](./how-to/validate-image-on-drop)

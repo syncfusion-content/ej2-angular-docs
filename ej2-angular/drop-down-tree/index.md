@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Index in Angular Dropdown Tree component
 
-The Dropdown Tree component allows you to select single or multiple values from the hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and pre-selected values. The available key features are
+The Dropdown Tree component allows you to select single or multiple values from the hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and pre-selected values. The available key features are:
 
 ## Key features
 
-* **Data binding** - To bind and access a hierarchical list of items from a local or server-side data source.
+* **Data binding** - To bind and access a hierarchical list of items from a local or server-side data sources.
 
 * **Check boxes** - To select more than one item in the Dropdown Tree component without affecting the UI appearance.
 
@@ -24,4 +24,4 @@ The Dropdown Tree component allows you to select single or multiple values from 
 
 * **Template** - To customize the Dropdown Tree items, header, footer, action failure content, and no records content.
 
-* **Accessibility** - To provide access to all the Dropdown Tree component features through keyboard interaction, on-screen readers, and other assistive technology devices.
+* **Accessibility** - To provide access to all the Dropdown Tree component features through keyboard interaction, screen readers, and other assistive technologies devices.

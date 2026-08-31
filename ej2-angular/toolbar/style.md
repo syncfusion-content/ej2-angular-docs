@@ -16,7 +16,7 @@ The following content provides the exact CSS structure that can be used to modif
 
 Use the following CSS to customize the Toolbar container.
 
-```CSS
+```css
 
 .e-toolbar {
     border: 5px solid rgb(173, 255, 47);
@@ -28,7 +28,7 @@ Use the following CSS to customize the Toolbar container.
 
 Use the following CSS to customize the items within the Toolbar.
 
-```CSS
+```css
 
  .e-toolbar .e-toolbar-item {
     background: #add8e6;
@@ -39,7 +39,7 @@ Use the following CSS to customize the items within the Toolbar.
 
 Use the following CSS to customize the button elements within the Toolbar items.
 
-```CSS
+```css
 
 .e-toolbar .e-tbar-btn {
     background: #add8e6;
@@ -52,7 +52,7 @@ Use the following CSS to customize the button elements within the Toolbar items.
 
 Use the following CSS to customize the icon appearance within Toolbar items.
 
-```CSS
+```css
 
 .e-toolbar .e-tbar-btn .e-icons {
     background: #185655;
@@ -65,7 +65,7 @@ Use the following CSS to customize the icon appearance within Toolbar items.
 
 Use the following CSS to customize the appearance of Toolbar items during hover interactions.
 
-```CSS
+```css
 
 .e-toolbar .e-tbar-btn:hover {
     background: #c0e3a1;
@@ -78,7 +78,7 @@ Use the following CSS to customize the appearance of Toolbar items during hover 
 
 Use the following CSS to customize the appearance of focused or selected Toolbar items.
 
-```CSS
+```css
 
 .e-toolbar .e-tbar-btn:focus {
     background: #add8e6;

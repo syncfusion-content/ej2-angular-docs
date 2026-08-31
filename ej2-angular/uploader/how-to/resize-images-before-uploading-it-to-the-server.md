@@ -204,7 +204,7 @@ public newImage: any;
 
 <div class="uploadtemplate">
     <div id='dropArea'>
-        <span id='drop' class="droparea"> Drop files here or <a href="" id='browse'><u>Browse</u></a> </span>
+        <span id='drop' class="droparea"> Drop files here or <a href="" id='browse' aria-label="Browse files to upload"><u>Browse</u></a> </span>
         <ejs-uploader #templateupload id='templatefileupload' [asyncSettings]='path' [dropArea]='dropElement' (progress)='onFileUpload($event)' (selected)='onFileSelect($event)' (failure)='onUploadFailed($event)' (success)='onUploadSuccess($event)' (removing)='onFileRemove($event)'></ejs-uploader>
     </div>
 </div>
@@ -348,5 +348,4 @@ public newImage: any;
 </style>
 
 ```
-
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore the [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. Explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse and select the files which you want to upload to the server.

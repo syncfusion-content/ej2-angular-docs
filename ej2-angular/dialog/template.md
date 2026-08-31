@@ -42,5 +42,8 @@ The following example demonstrates using header, footer, and content as template
 
 ## See Also
 
+* [How to render a Dialog using ng-template](./how-to/render-a-dialog-using-ng-template)
+* [How to render a Dialog using ng-content](./how-to/render-a-dialog-using-ng-content)
+* [How to render a Dialog without header](./how-to/render-a-dialog-without-header)
 * [How to add an icon to dialog buttons](./how-to/add-an-icons-to-dialog-buttons)
 * [How to customize the dialog appearance](./how-to/customize-the-dialog-appearance)

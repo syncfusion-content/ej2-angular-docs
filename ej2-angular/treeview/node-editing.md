@@ -14,9 +14,40 @@ The TreeView component provides in-place node editing functionality by setting t
 
 When editing is completed by losing focus or pressing the **Enter** key, the modified node's text is saved automatically. To cancel editing without saving changes, press the **Escape** key. This discards the edited text and retains the original TreeView node text.
 
-* Node editing can also be performed programmatically using the [`beginEdit`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#beginedit) method. When passing the node ID or element through this method, an inline edit textbox is created for the specified node, enabling immediate editing.
+## Programmatic editing
 
-* For validation or prevention of editing operations, use the [`nodeEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeediting) event. This event triggers before the TreeView node is renamed and provides access to cancel the operation, original text, new text, and node data. Upon successful node renaming, the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeedited) event triggers with the updated node information.
+Node editing can also be performed programmatically. Pass a node ID to the [`beginEdit`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#beginedit) method to create an inline edit textbox for that node.
+
+```typescript
+@ViewChild('tree') tree: TreeViewComponent;
+
+public editNode(nodeId: string): void {
+  this.tree.beginEdit(nodeId); // Opens an inline edit textbox for the specified node
+}
+```
+
+You can also wire `beginEdit` to a button click handler so the user can trigger edit mode from the page instead of a double-click or F2.
+
+## Editing events
+
+The component exposes events to validate editing, react to changes, and prevent saves:
+
+| Event | When it fires | Useful event arguments |
+| --- | --- | --- |
+| [`nodeEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeediting) | Before a node enters edit mode (typically on F2 or double-click). Use this event to decide whether editing is allowed. | `args.node`, `args.nodeData` |
+| [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeedited) | Before the edited text is saved (Enter or focus loss). Cancel the save by setting `args.cancel = true`. Use this event for validation such as disallowing empty text. | `args.oldText`, `args.newText`, `args.node`, `args.nodeData`, `args.cancel` |
+
+The following example shows how to cancel editing in the `nodeEdited` event when the user enters only whitespace:
+
+```typescript
+public onNodeEdited(args: NodeEditEventArgs): void {
+  if (!args.newText || args.newText.trim() === '') {
+    args.cancel = true; // Prevent the empty or whitespace text from being saved
+  }
+}
+```
+
+> If the user presses **Escape**, the editor closes without firing the `nodeEdited` event.
 
 In the following example, the first level node's text cannot be changed, but all other level nodes' text can be modified.
 

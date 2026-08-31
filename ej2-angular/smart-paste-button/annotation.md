@@ -8,21 +8,21 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Annotation in Angular Smart Paste Button
+# Annotations in Angular Smart Paste Button
 
-The `data-smartpaste-description` attribute provides a way to customize the behavior of the Smart Paste Button. By using this attribute, pasted content is handled based on specific requirements. This customization can include setting content validation rules, formatting instructions, and defining acceptable content types.
+The `data-smartpaste-description` attribute allows you to customize Smart Paste Button behavior by providing contextual instructions for individual form fields. You can use it to guide how pasted content is formatted, structured, or interpreted when populating form fields.
 
-## Purpose of data-smartpaste-description:
+## Purpose of data-smartpaste-description
 
-* This is a custom data attribute that can be added to HTML elements. It provides metadata about the expected content for those elements when used in conjunction with the Smart Paste Button.
+* This custom data attribute can be added to HTML elements to provide contextual information about the expected content for Smart Paste operations.
 
-* The main purpose is to control and enhance the paste operation by providing contextual information about what kind of data is expected. This can include formats like plain text, email, phone numbers, or even more complex validation patterns.
+* Its primary purpose is to guide the Smart Paste Button in interpreting and formatting pasted content according to field-specific requirements.
 
-* It helps maintain data consistency, integrity, and formatting in forms, ensuring that users paste content that adheres to predefined standards.
+* It helps maintain consistency and accuracy in forms by ensuring that content is organized and formatted according to the provided instructions.
 
-## How to Use Annotations for Customizing the Paste Behavior
+## Use Annotations to Customize Paste Behavior
 
-Add the **data-smartpaste-description** attribute to the form fields where the smart paste feature should be applied. Specify the expected content type as the value of the attribute.
+Add the **data-smartpaste-description** attribute to the form fields where Smart Paste should apply custom formatting or interpretation rules. Specify the instruction or expected format as the attribute value.
 
 ```html
 <ejs-textarea id="reporter-name" name="reporter-name" cssClass="form-input" data-smartpaste-description="Name must follow the format: Initial Firstname Lastname"></ejs-texarea>

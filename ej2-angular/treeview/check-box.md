@@ -24,7 +24,9 @@ By default, the checkbox state of parent and child nodes maintain dependency on 
 
 The [`checkedNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#checkednodes) property allows you to programmatically set nodes that should be checked during initialization or retrieve the IDs of currently checked nodes in the TreeView component.
 
-For event-driven checkbox control, use the [`nodeChecking`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecking) event to prevent node check actions for specific nodes. This event triggers before a TreeView node is checked or unchecked, allowing for custom validation. The [`nodeChecked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecked) event fires after a TreeView node has been successfully checked or unchecked.
+For event-driven checkbox control, use the [`nodeChecking`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecking) event to prevent node check actions for specific nodes. This event triggers before a TreeView node is checked or unchecked, allowing for custom validation. Set `args.cancel = true` to prevent the change. The [`nodeChecked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecked) event fires after a TreeView node has been successfully checked or unchecked; inspect `args.action` to know whether the change was a `check` or an `un-check`, and `args.isInteracted` to tell whether the change came from the user (versus `autoCheck` propagation).
+
+The TreeView methods `checkAll(ids?)`, `uncheckAll(ids?)`, and the `checkedNodes` property provide full programmatic control. Use `@ViewChild('tree') tree: TreeViewComponent;` to obtain a reference for these operations.
 
 In the following example, the `showCheckBox` property is enabled.
 

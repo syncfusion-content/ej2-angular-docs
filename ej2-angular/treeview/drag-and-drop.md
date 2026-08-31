@@ -12,15 +12,17 @@ domainurl: ##DomainURL##
 
 The TreeView component enables drag and drop functionality for nodes when the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) property is set to **true**. This feature allows users to reorganize the hierarchical structure by dragging nodes and dropping them at different positions within the TreeView. Nodes can be dragged and dropped at all levels of the same TreeView, providing flexible data manipulation capabilities.
 
-The dragged nodes can be dropped at any level by indicator lines with **line**, **plus/minus**, and **restrict** icons. These visual indicators represent the exact position where the node will be dropped as either a sibling or child of the target node.
+The dragged nodes can be dropped at any level by indicator lines with the **line (sibling)**, **plus (child)**, and **restrict (no-drop)** icons. These visual indicators represent the exact position where the node will be dropped as either a sibling or child of the target node.
 
 The following table explains the usage of indicator icons.
 
 | Icons | Description |
 |------|-------------|
-| Plus icon | Indicates that the dragged node will be added as a child of the target node. |
-| Minus or restrict icon | Indicates that the dragged node cannot be dropped at the hovered region. |
-| In between icon | Indicates that the dragged node will be added as a sibling of the hovered region. |
+| Plus (+) icon | Indicates that the dragged node will be added as a child of the target node. |
+| Line (sibling) icon | Indicates that the dragged node will be added as a sibling (in-between) of the hovered node. |
+| Restrict (no-drop) icon | Indicates that the dragged node cannot be dropped at the hovered region. |
+
+> Use the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) event to cancel (prevent) the drop operation. The event argument exposes the `dropIndicator` property with values such as `e-drop-in` (child) and `e-drop-next` (sibling) to determine the current drop target.
 
 * If you need to prevent dragging action for a particular node, the [`nodeDragStart`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstart) event can be used which is triggered when the node drag is started. If you need to prevent dropping action for a particular node, the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) event can be used which is triggered when the drag is stopped.
 
@@ -33,14 +35,14 @@ In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="style.css" %}
+{% highlight ts tabtitle="styles.css" %}
 {% include code-snippet/tree-view/getting-started-cs6/src/styles.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tree-view/getting-started-cs6" %}
 
 ## Multiple-node drag and drop

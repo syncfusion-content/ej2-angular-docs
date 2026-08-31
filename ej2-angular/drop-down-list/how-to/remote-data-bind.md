@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to get total count on remote bind in Angular Dropdown List
 
-Before component rendering, you can get the total items count by using [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#actioncomplete) &nbsp; event with its result arguments. After rendering this component, you can get the total items count by using [`getItems`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#getitems) method.
+Before the component rendering, you can get the total items count by using [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#actioncomplete) &nbsp; event using its result arguments. After rendering this component, you can get the total items count by using [`getItems`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#getitems) method.
 
-The following example demonstrate how to get the total items count.
+The following example demonstrates how to get the total items count.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

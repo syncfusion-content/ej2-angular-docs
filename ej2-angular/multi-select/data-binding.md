@@ -10,26 +10,26 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular MultiSelect Dropdown
 
-The MultiSelect component loads data from either local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#datasource) property. It supports data types of `array` or `DataManager`.
+The MultiSelect component loads data from either local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select#datasource) property. It supports data types of `array` or `DataManager`.
 
 The MultiSelect component also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
-| [text](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#text) |  `string` | Specifies the display text of each list item. |
-| [value](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#value) |  `number or string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
-| [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#groupby) |  `string` | Specifies the category under which the list item has to be grouped. |
-| [iconCss](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#iconcss) |  `string` | Specifies the icon class of each list item. |
+| [text](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#text) |  `string` | Specifies the display text of each list item. |
+| [value](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#value) |  `number or string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
+| [groupBy](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#groupby) |  `string` | Specifies the category under which the list item has to be grouped. |
+| [iconCss](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#iconcss) |  `string` | Specifies the icon class of each list item. |
 
 > When binding complex data to the MultiSelect component, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Binding local data
 
-Local data can be represented in two ways as described below.
+Local data can be represented in three ways as described below.
 
 ### 1. Array of string
 
-The MultiSelect component supports loading arrays of primitive data such as strings and numbers. Here, both value and text field act the same.
+The MultiSelect component supports loading arrays of primitive data such as strings and numbers. Here, the value and text fields are the same.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -45,10 +45,10 @@ The MultiSelect component supports loading arrays of primitive data such as stri
 
 ### 2. Array of object
 
-The MultiSelect component can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#fields) property.
+The MultiSelect component can generate its list items through an array of complex data. To do so,
+map the appropriate columns to the [fields](https://ej2.syncfusion.com/angular/documentation/api/multi-select#fields) property.
 
-In the following example, `id` column and `sports` column from complex data have been mapped to the `value` field and `text` field, respectively.
+In the following example, the `id` column and `sports` column from complex data are mapped to the `value` and `text` fields, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -64,10 +64,10 @@ In the following example, `id` column and `sports` column from complex data have
 
 ### 3. Array of complex object
 
-The MultiSelect component can generate its list items through an array of complex data with nested properties. For this,
-the appropriate nested columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#fields) property using dot notation.
+The MultiSelect component can generate its list items through an array of complex data with nested properties. To do so,
+map the appropriate nested columns to the [fields](https://ej2.syncfusion.com/angular/documentation/api/multi-select#fields) property using dot notation.
 
-In the following example, `Code.Id` column and `Country.Name` column from complex data have been mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#value) field and [`text`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#text) field, respectively.
+In the following example, the `Code.Id` column and `Country.Name` column from complex data are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#value) field and [`text`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#text) field, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -84,7 +84,7 @@ In the following example, `Code.Id` column and `Country.Name` column from comple
 ## Binding remote data
 
 The MultiSelect component supports retrieval of data from remote data services with the help of
-`DataManager` component. The [Query](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#query) property is used to fetch data from the database and bind it to the MultiSelect component.
+`DataManager`. The [Query](https://ej2.syncfusion.com/angular/documentation/api/multi-select#query) property is used to fetch data from the database and bind it to the MultiSelect component.
 
 The following sample displays the first 6 contacts from "Customers" table of the `Northwind` Data Service.
 
@@ -170,7 +170,7 @@ enableProdMode();
 platformBrowserDynamic().bootstrapModule(AppModule);
 ```
 
-> [View Sample in Github](https://github.com/SyncfusionExamples/angular-multiselect-async-pipe)
+> [View sample in GitHub](https://github.com/SyncfusionExamples/angular-multiselect-async-pipe)
 
 ## See Also
 

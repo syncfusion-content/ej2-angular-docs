@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Types in Angular Badge
 
-This section explains different styles and types of the badges.
+This section explains different styles and types of badges.
 
 ## Badge styles
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following predefined styles that can be used with `.e-badge` class to change the appearance of a badge.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Badge has the following predefined styles that can be used with the `.e-badge` class to change the appearance of a badge.
 
 | Class Name        | Description
 | :-------------    |:-------------
@@ -91,7 +91,7 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 
 ### Link
 
-When badge modifier classes are applied to the anchor tag, the badge’s appearance will change from normal state to hover state on mouseover.
+When badge modifier classes such as `.e-badge-primary` are applied to an anchor (`<a>`) tag, the badge's appearance changes from the normal state to the hover state on mouseover.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -110,7 +110,7 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 ### Notification
 
 The notification badge style can be applied by adding the modifier class `.e-badge-notification` to the
-target element. Notification badges are used when a content or a context needs special attention.
+target element. Notification badges are used when content or a context needs special attention.
 While using the notification badge, set the parent element to `position: relative`.
 
 {% tabs %}
@@ -130,8 +130,8 @@ While using the notification badge, set the parent element to `position: relativ
 ### Dot
 
 Dot can be applied by adding the modifier class `.e-badge-dot` to the target element. Dot badges are
-similar to notification badges, but in a minimalistic way. While using the dot badge, set the parent
-element to `position: relative` .
+similar to notification badges, but in a more minimalistic style. While using the dot badge, set the parent
+element to `position: relative`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -149,8 +149,8 @@ element to `position: relative` .
 
 ### Overlap
 
-The overlap badge can be used with `notification` or `dot` badge, which overlaps with the target
--element by adding the modifier class `.e-badge-overlap`. While using the overlap badge, set the
+The overlap badge can be used with the `notification` or `dot` badge, which overlaps the target
+element's edge by adding the modifier class `.e-badge-overlap`. While using the overlap badge, set the
 parent element to `position: relative`.
 
 {% tabs %}
@@ -169,9 +169,9 @@ parent element to `position: relative`.
 
 ### Position
 
-The default position of the `notification` or `dot` badge is top. But, the position can be changed
+The default position of the `notification` or `dot` badge is `top`. However, the position can be changed
 to `bottom` using the modifier class `.e-badge-bottom`. For example, the bottom class modifier is used
-with dot badge to display the status in the avatar as shown in the following sample.
+with the dot badge to display the status in the avatar as shown in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

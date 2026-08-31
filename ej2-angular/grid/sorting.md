@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular Grid Sorting | Syncfusion
-description: Learn how to configure sorting in Angular Data Grid with single and multi-column sorting, custom comparers, sorting indicators, and sorting behavior options.
+description: Learn Angular Data Grid sorting with single-column, multi-column, custom, foreign-key, culture-aware and programmatic sorting capabilities.
 platform: ej2-angular
 control: Sorting 
 documentation: ug
@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Sorting in Angular Data Grid
 
-The Data Grid component provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true`.
+The Syncfusion Angular Data Grid provides flexible sorting capabilities that help organize, analyze, and locate information efficiently. Sorting can be applied through column headers or customized to support application-specific ordering requirements.
+
+To enable sorting in the grid, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property to `true`.
 
 Sorting a particular column is accomplished by clicking on its column header. Each click on the header toggles the sort order between `Ascending` and `Descending`.
 
@@ -59,9 +61,11 @@ The following example demonstrates setting `sortSettings.columns` for "Order ID"
 
 > The initial sorting defined in [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) will override any sorting applied through user interaction.
 
-## Sort multiple columns
+## Multi-column sorting
 
-The Data Grid component supports multi-column sorting, allowing multiple columns to be sorted simultaneously. To enable multi-column sorting, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) and the [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) properties to `true`. This enables sorting of multiple columns by holding the <kbd>CTRL</kbd> key and clicking the column headers. This feature is useful for sorting data based on multiple criteria to analyze it in various ways.
+The Data Grid supports multi-column sorting, allowing records to be ordered using multiple sorting criteria simultaneously. Multi-column sorting makes it possible to establish hierarchical sort priorities, ensuring that records with identical values in one column can be further organized using additional columns.
+
+To enable multi-column sorting, set the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) and the [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) properties to `true`. This enables sorting of multiple columns by holding the <kbd>CTRL</kbd> key and clicking the column headers. This feature is useful for datasets that require more than a single sorting dimension.
 
 To clear multi-column sorting for a particular column, press <kbd>Shift</kbd> while clicking the column header.
 
@@ -100,7 +104,9 @@ This is achieved by setting the [allowSorting](https://ej2.syncfusion.com/angula
 
 ## Custom sorting 
 
-The Data Grid component supports customizing the default sort action for a column by defining the [sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column#sortcomparer) property. The `sortComparer` function works similarly to the [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) comparer function, allowing custom sorting logic to be defined for a specific column.
+The Data Grid supports custom sorting through the [sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column#sortcomparer) property, providing complete control over how values are ordered within a column.
+
+Custom sorting can be used when the required sort order differs from standard alphabetical or numerical sorting. This is useful for scenarios that require custom rankings, status-based ordering, priority sequencing, locale-aware comparisons, display-value sorting, or specialized handling of null values.
 
 The following example demonstrates defining a custom `sortComparer` function for the "Customer ID" column.
 
@@ -136,22 +142,13 @@ The example below demonstrates displaying "null" values at the bottom of the gri
   
 {% previewsample "page.domainurl/samples/grid/null-date-value-cs1" %}
 
-## Touch interaction
-
-On touch devices, tapping a grid header sorts that column ![Sorting](images/sorting.jpg). 
-For multi‑column sorting, tap the sorting indicator ![Multi Sorting](images/msorting.jpg) and then tap the additional grid headers to include them in the sort order.
-
-> The [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) and [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) must be `true` then only the popup will be shown.
-
-The following screenshot represents a grid touch sorting in the device.
-
-![Touch Interaction](images/touch-sorting.jpg)
-
 ## Sort foreign key column based on text
+
+Foreign-key sorting enables sorting based on displayed values rather than the underlying identifier values stored in the data source.
 
 To sort a foreign key column based on its displayed text, the foreign key column can be enabled by using [column.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/column#datasource), [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) and [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) properties.
 
-### Sort foreign key column based on text for local data
+### Foreign key sorting
 
 When working with local data in the grid, sorting is performed based on the [foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) defined in the column. This field should be specified in the column definition with the corresponding foreign key value for each row. The grid then sorts the foreign key column according to the text representation of that value.
 
@@ -260,7 +257,9 @@ public class ItemsController : ODataController
 
 ## Culture-based sorting
 
-Performing sorting based on culture in the grid can be achieved by utilizing the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) property. By setting the `locale` property to the desired culture code, sorting is enabled based on that specific culture. This applies locale-specific sorting rules and ensures accurate ordering for different languages and regions.
+Culture-based sorting applies locale-specific comparison rules, ensuring accurate sorting behavior for multilingual and internationalized applications.
+
+Culture-specific sorting is achieved by utilizing the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid#locale) property. By setting the `locale` property to the desired culture code, sorting is enabled based on that specific culture.
 
 In the following example, sorting is performed based on the "ar" locale using the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column#sortcomparer) property.
 
@@ -276,34 +275,18 @@ In the following example, sorting is performed based on the "ar" locale using th
   
 {% previewsample "page.domainurl/samples/grid/localization-cs4" %}
 
-## Customizing the sort icon
+## Touch interaction
 
-Sort icon customization in the grid is accomplished by overriding the default grid classes `.e-icon-ascending` and `.e-icon-descending` with custom content using CSS. The desired icons or symbols are specified using the `content` property as shown below:
+On touch devices, tapping a grid header sorts that column ![Sorting](images/sorting.jpg). 
+For multi‑column sorting, tap the sorting indicator ![Multi Sorting](images/msorting.jpg) and then tap the additional grid headers to include them in the sort order.
 
-```css
-.e-grid .e-icon-ascending::before {
-  content: '\e306';
-}
-	
-.e-grid .e-icon-descending::before {
-  content: '\e304';
-}
-```
-The following sample demonstrates a grid rendered with a customized sort icon.
+> The [allowMultiSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowmultisorting) and [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) must be `true` then only the popup will be shown.
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs7/src/app.component.ts %}
-{% endhighlight %}
+The following screenshot represents a grid touch sorting in the device.
 
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs7/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-	  
-{% previewsample "page.domainurl/samples/grid/sorting1-cs7" %}
+![Touch Interaction](images/touch-sorting.jpg)
 
-## Sort columns externally
+## Programmatic sorting
 
 The Data Grid component in Syncfusion's Angular suite allows customization of column sorting and provides flexibility in sorting based on external interactions. Sort columns, remove a sort column, and clear sorting using an external button click.
 
@@ -423,6 +406,33 @@ export class AppComponent implements OnInit {
 {% previewsample "page.domainurl/samples/grid/sorting1-cs4" %}
 
 > [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs#requesttype) refers to the current action being performed. For example in sorting, the `args.requestType` value is `sorting`.
+
+## Customizing the sort icon
+
+Sort icon customization in the grid is accomplished by overriding the default grid classes `.e-icon-ascending` and `.e-icon-descending` with custom content using CSS. The desired icons or symbols are specified using the `content` property as shown below:
+
+```css
+.e-grid .e-icon-ascending::before {
+  content: '\e306';
+}
+	
+.e-grid .e-icon-descending::before {
+  content: '\e304';
+}
+```
+The following sample demonstrates a grid rendered with a customized sort icon.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/sorting1-cs7/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/sorting1-cs7/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+	  
+{% previewsample "page.domainurl/samples/grid/sorting1-cs7" %}
 
 ## See Also
 

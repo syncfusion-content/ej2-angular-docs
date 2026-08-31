@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to sort selected files in Angular Uploader
 
-You can sort selected files in the Uploader component by using the [selected](https://ej2.syncfusion.com/angular/documentation/api/uploader/#selected) event. This event fires when files are selected and allows you to implement custom sorting logic based on file properties such as name, size, or date. Refer to the following example for implementation details.
+You can sort selected files in the Uploader component by using the [selected](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#selected) event. This event fires when files are selected and allows you to implement custom sorting logic based on file properties such as name, size, or date. Refer to the following example for implementation details.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -24,4 +24,4 @@ You can sort selected files in the Uploader component by using the [selected](ht
   
 {% previewsample "page.domainurl/samples/uploader/sorting-cs1" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse and sort the files which you want to upload to the server.

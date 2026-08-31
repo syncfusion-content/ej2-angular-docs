@@ -14,9 +14,9 @@ The Image Editor provides a range of transformation options for manipulating bot
 
 ## Rotate an image
 
-The Image Editor allows to rotate the image and its annotations by a specific number of degrees clockwise or anti-clockwise using [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#rotate) method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it anti-clockwise. 
+The Image Editor allows you to rotate the image and its annotations by a specific number of degrees clockwise or counterclockwise using the [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#rotate) method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it counterclockwise. 
 
-`Note:` It is recommended to pass values in multiples of 90° (e.g., 90, 180, -90) for proper rotation alignment.
+> Note: It is recommended to pass values in multiples of 90° (e.g., 90, 180, -90) for proper rotation alignment.
 
 Here is an example of rotating an image in a button click event.
 
@@ -36,7 +36,7 @@ Here is an example of rotating an image in a button click event.
 
 The Image Editor provides the [`flip`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#flip) method, which allows you to flip both the image and its annotations either horizontally or vertically. This method takes a single parameter of type ImageEditorDirection, which specifies the direction in which the flip operation should be applied. 
 
-The [`Direction`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/direction) parameter accepts two values: 'Horizontal' and 'Vertical'. When you choose 'Horizontal', the image and annotations will be flipped along the horizontal axis, resulting in a mirror effect. On the other hand, selecting 'Vertical' will flip them along the vertical axis, producing a vertical mirror effect. 
+The [`Direction`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/direction) parameter accepts two values: `Horizontal` and `Vertical`. When you choose `Horizontal`, the image and annotations will be flipped along the horizontal axis, resulting in a mirror effect. On the other hand, selecting `Vertical` will flip them along the vertical axis, producing a vertical mirror effect. 
 
 Here is an example of flipping an image in a button click event.
 
@@ -54,9 +54,9 @@ Here is an example of flipping an image in a button click event.
 
 ## Straighten an image
 
-The straightening feature in an Image Editor allows users to adjust an image by rotating it clockwise or counter clockwise. The rotating degree value should be within the range of -45 to +45 degrees for accurate straightening. Positive values indicate clockwise rotation, while negative values indicate counter clockwise rotation. The Image Editor control includes a [`straightenImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#straightenimage) method, which allows you to adjust the degree of an image. This method takes one parameter that define how the straightening should be carried out:
+The straightening feature in an Image Editor allows users to adjust an image by rotating it clockwise or counterclockwise. The rotating degree value should be within the range of -45 to +45 degrees for accurate straightening. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation. The Image Editor control includes a [`straightenImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#straightenimage) method, which allows you to adjust the degree of an image. This method takes one parameter that defines how the straightening should be carried out:
 
-* degree: Specifies the amount of rotation for straightening the image. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation.
+* `degree`: Specifies the amount of rotation for straightening the image, within the range of -45 to +45 degrees. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation.
 
 Here is an example of straightening the image.
 
@@ -72,13 +72,12 @@ Here is an example of straightening the image.
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs39" %}
 
-## Zoom in or out an image 
+## Zoom an image in or out
 
-The Image Editor allows to magnify an image using the [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#zoom) method. This method allows one to zoom in and out of the image and provides a more detailed view of the image's hidden areas. This method takes two parameters to perform zooming. 
+The Image Editor allows you to magnify an image using the [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#zoom) method. This method allows you to zoom in and out of the image and provides a more detailed view of the image's hidden areas. This method takes two parameters to perform zooming. 
 
-* zoomFactor - Specifies a value to controlling the level of magnification applied to the image. 
-
-* zoomPoint - Specifies x and y coordinates of a point as ImageEditorPoint on image to perform zooming. 
+* `zoomFactor` - Specifies a value to control the level of magnification applied to the image. 
+* `zoomPoint` - Specifies the x and y coordinates of a point as `ImageEditorPoint` on the image to perform zooming. If `zoomPoint` is omitted, the zoom is performed relative to the center of the image. 
 
 ### Minimum and maximum zoom level 
 
@@ -106,7 +105,7 @@ Here’s an example of zooming in and out in the Image Editor by setting the `mi
 
 ## Panning an image
 
-The Image Editor allows to pan an image when the image exceeds the canvas size or selection range. When zooming in on an image or applying a selection for cropping, it is common for the image to exceed the size of the canvas or exceed the selection range. So, the panning is used to view the entire image, by clicking on the canvas and dragging it in the direction they want to move.
+The Image Editor allows you to pan an image when the image exceeds the canvas size or selection range. When zooming in on an image or applying a selection for cropping, it is common for the image to exceed the size of the canvas or exceed the selection range. So, panning is used to view the entire image, by clicking on the canvas and dragging it in the direction you want to move.
 
 In the following example, you can enable panning using the [`pan`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#pan) method in the button click event.
 
@@ -124,50 +123,41 @@ In the following example, you can enable panning using the [`pan`](https://ej2.s
 
 ## Panning event 
 
-The [`panning`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#panning) event is activated when the user begins dragging the image within the canvas. This event provide an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. And these event uses [`PanEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/paneventargs) to handle the panning action when the user starts dragging the image. 
+The [`panning`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#panning) event is activated when the user begins dragging the image within the canvas. This event provides an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. This event uses [`PanEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/paneventargs) to handle the panning action when the user starts dragging the image. 
 
-The parameter available in the `PanEventArgs` events are, 
+The parameters available in the `PanEventArgs` event are: 
 
-* PanEventArgs.startPoint - The x and y coordinates as ImageEditorPoint for the start point. 
-
-* PanEventArgs.endpoint - The x and y coordinates as ImageEditorPoint for the end point. 
-
-* PanEventArgs.cancel – Specifies the boolean value to cancel the panning action.
+* `PanEventArgs.startPoint` - The x and y coordinates as `ImageEditorPoint` for the start point. 
+* `PanEventArgs.endpoint` - The x and y coordinates as `ImageEditorPoint` for the end point. 
+* `PanEventArgs.cancel` - Specifies a boolean value to cancel the panning action.
 
 ## Zooming event
 
-The [`zooming`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#zooming) event is triggered when performing zooming the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. And this event uses [`ZoomEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomeventargs) to handle the zooming action in the image.
+The [`zooming`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#zooming) event is triggered when performing zooming on the image. This event can be used to perform certain actions, such as updating the position of the image. This event is passed an object that contains information about the zooming event, such as the amount of zooming performed. This event uses [`ZoomEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/zoomeventargs) to handle the zooming action in the image.
 
-The parameter available in the Zooming event is, 
+The parameters available in the `zooming` event are: 
 
-* ZoomEventArgs.zoomPoint - The x and y coordinates as ImageEditorPoint for the zoom point. 
-
-* ZoomEventArgs.previousZoomFactor - The previous zoom factor applied in the image editor. 
-
-* ZoomEventArgs.currentZoomFactor - The current zoom factor to be applied in the image editor. 
-
-* ZoomEventArgs.cancel – Specify a boolean value to cancel the zooming action. 
-
-* ZoomEventArgs.zoomTrigger - The type of zooming performed in the image editor.
+* `ZoomEventArgs.zoomPoint` - The x and y coordinates as `ImageEditorPoint` for the zoom point. 
+* `ZoomEventArgs.previousZoomFactor` - The previous zoom factor applied in the image editor. 
+* `ZoomEventArgs.currentZoomFactor` - The current zoom factor to be applied in the image editor. 
+* `ZoomEventArgs.cancel` - Specifies a boolean value to cancel the zooming action. 
+* `ZoomEventArgs.zoomTrigger` - The type of zooming performed in the image editor (e.g., `ZoomIn`, `ZoomOut`, `Reset`).
 
 ## Rotating event 
 
-The [`rotating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#rotating) event is triggered when performing rotating the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. And this event uses [`RotateEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/rotateeventargs) to handle the rotating action in the image.
+The [`rotating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#rotating) event is triggered when performing rotating on the image. This event is passed an object that contains information about the rotating event, such as the amount of rotation performed. This event uses [`RotateEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/rotateeventargs) to handle the rotating action in the image.
 
-The parameter available in the `rotating` event is, 
+The parameters available in the `rotating` event are: 
 
-* RotateEventArgs.PreviousDegree: The degree of rotation before the recent rotation action was applied in the Image Editor. 
-
-* RotateEventArgs.CurrentDegree: The current degree of rotation after the rotation action has been performed in the Image Editor. 
-
-* RotateEventArgs.Cancel – Specifies a boolean value to cancel the rotating action. 
+* `RotateEventArgs.previousDegree` - The degree of rotation before the recent rotation action was applied in the Image Editor. 
+* `RotateEventArgs.currentDegree` - The current degree of rotation after the rotation action has been performed in the Image Editor. 
+* `RotateEventArgs.cancel` - Specifies a boolean value to cancel the rotating action. 
 
 ## Flipping event 
 
-The [`flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#flipping) event is triggered when performing flipping the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. And this event uses [`FlipEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/flipeventargs) to handle the flipping action in the image.
+The [`flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#flipping) event is triggered when performing flipping on the image. This event is passed an object that contains information about the flipping event, such as the amount of flip performed. This event uses [`FlipEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/flipeventargs) to handle the flipping action in the image.
 
-The parameter available in the `flipping` event is, 
+The parameters available in the `flipping` event are: 
 
-* FlipEventArgs.Direction - The flip direction as ImageEditorDirection to be applied in the image editor. 
-
-* FlipEventArgs.Cancel - Specifies a boolean value to cancel the flip action. 
+* `FlipEventArgs.direction` - The flip direction as `ImageEditorDirection` to be applied in the image editor. 
+* `FlipEventArgs.cancel` - Specifies a boolean value to cancel the flip action. 
