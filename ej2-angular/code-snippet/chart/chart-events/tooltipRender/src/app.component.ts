@@ -5,8 +5,7 @@ import {
   LineSeriesService,
   TooltipService,
   ITooltipRenderEventArgs,
-  TooltipSettingsModel,
-  IMouseEventArgs
+  TooltipSettingsModel
 } from '@syncfusion/ej2-angular-charts';
 
 @Component({
@@ -67,7 +66,10 @@ export class AppComponent implements OnInit {
 
   // Customize tooltip before it renders
   public onTooltipRender(args: ITooltipRenderEventArgs): void {
-    console.log("Tooltip render event was triggered")
+    // Append currency formatting to the tooltip text
+    if (typeof args.text === 'string' && args.point && typeof args.point.y === 'number') {
+      args.text = `${args.point.x} : $${args.point.y}K`;
+    }
   }
 
 }

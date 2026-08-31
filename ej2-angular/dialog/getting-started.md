@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Dialog component displays content, messages, forms, and interactive UI elements in modal or non-modal popup windows.
 
-This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Dialog component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
+This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Dialog component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework-host setups, refer to the [See Also](#see-also) links at the bottom of this page.
 
 The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
@@ -24,7 +24,7 @@ The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, m
 
 ## Setup the Angular application
 
-A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
+The simplest way to start with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli

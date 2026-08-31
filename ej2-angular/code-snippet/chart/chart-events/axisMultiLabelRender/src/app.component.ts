@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
         { country: "Germany", gold: 40, silver: 30, bronze: 22 },
         { country: "Italy", gold: 40, silver: 35, bronze: 37 },
         { country: "Sweden", gold: 30, silver: 25, bronze: 27 }
-];;
+];
 
     this.primaryXAxis = {
       valueType: 'Category',

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Center the dialog with current scroll position in Angular Dialog
 
-The dialog centers based on the target container by default. If no target is specified, the dialog renders relative to the body and centers at the current viewport position.
+The Angular Dialog component automatically tracks page scroll and stays centered on the visible viewport. When a `target` is specified, the dialog is constrained and centered inside that target container; when no `target` is specified, the dialog renders relative to the body and remains centered against the current viewport.
 
-The following sample demonstrates centering the modal dialog based on the current page scroll position.
+The following sample demonstrates a modal dialog (`isModal='true'`) whose `target` is set to `document.body`, so it is centered on the page viewport while you scroll. The `overlayClick` event hides the dialog when the user clicks the modal overlay.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Olympic Medals';
         this.border = { width: 2, color: 'grey'};
-        this.animation = { enable: true};
+        this.animation = { enable: true, duration: 1500, delay: 100 };
     }
 
 }

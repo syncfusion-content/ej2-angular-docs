@@ -10,17 +10,37 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Tab
 
-Localization library allows you to localize the default text content of the Tab component for different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/#locale) property. In Tab, the close button's tooltip text will be localized based on the specified culture. The close button appears on the tab header when the [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/tab/#showclosebutton) property is enabled.
+The Localization library localizes the default text content of the Tab component for different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#locale) property. In Tab, the close button's tooltip text is localized based on the specified culture. The close button appears on the tab header when the [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#showclosebutton) property is enabled.
 
-| Locale key | en-US (default)  |
-|------|------|-------------|
-| closeButtonTitle |  Close |
+The list of localizable keys and their default values is shown below.
+
+| Locale key | en-US (default) |
+|------------|-----------------|
+| `closeButtonTitle` | `Close` |
 
 ## Loading translations
 
-To load translation objects in an application, use the `load` function of the `L10n` class.
+Use the `load` function of the `L10n` class to load translation objects. First, import the necessary modules as shown here:
 
-In the following sample, the `French` culture is applied to the Tab component, which changes the close button's tooltip text accordingly.
+```typescript
+import { L10n } from '@syncfusion/ej2-base';
+```
+
+Next, load the translations. The following example localizes the `closeButtonTitle` key for French (`fr-FR`):
+
+```typescript
+import { L10n } from '@syncfusion/ej2-base';
+
+L10n.load({
+    'fr-BE': {
+        tab: {
+            closeButtonTitle: 'Fermer'
+        }
+    }
+});
+```
+
+In the sample below, the `fr-FR` culture is applied to the Tab component, which changes the close button's tooltip text accordingly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -33,3 +53,16 @@ In the following sample, the `French` culture is applied to the Tab component, w
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/basic-cs10" %}
+
+## Changing locale dynamically
+
+After initial render, switch the locale at runtime by updating the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#locale) property on the component instance. New translations take effect for subsequent renderings, such as when a tab with a close button is freshly rendered.
+
+## Fallback behavior
+
+If a translation key is missing for the active locale, the Tab falls back to the value defined under the `en-US` default key. The component never displays an empty string for a localizable default.
+
+## See Also
+
+* [Syncfusion Angular Globalization](../common/globalization)
+* [Getting Started](./getting-started)

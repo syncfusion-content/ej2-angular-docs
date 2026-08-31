@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # How to two-way binding in Angular Calendar
 
-The following example demonstrates how to achieve **two-way binding** by binding the **value** to the first Calendar component by using property binding and binding the model data using **ngModel** by using model binding to the Calendar component. The **value** of the Calendar will get change, when their is any change in the property value or model value.
+The following example demonstrates how to achieve **two-way binding** in the Calendar component by combining property binding with Angular's ngModel,m directive.
+
+In this example, the **value** property is bound to one Calendar component, while **ngModel** is used to bind the same data model to another Calendar component. When the property value or model value changes, the Calendar value is automatically updated, keeping both components synchronized.
 
 > The two-way binding can also be achieved only by using **property binding** or **model binding** in the Calendar component.
 

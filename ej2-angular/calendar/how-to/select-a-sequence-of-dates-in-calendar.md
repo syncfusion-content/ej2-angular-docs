@@ -10,7 +10,11 @@ domainurl: ##DomainURL##
 
 # How to select a sequence of dates in Calendar in Angular Calendar
 
-The following example demonstrates how to select the week dates of chosen date in the Calendar using [`values`](https://ej2.syncfusion.com/angular/documentation/api/calendar#values) property, when [`isMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/calendar#ismultiselection) property is enabled. Methods of Moment.js is used in this sample for calculating the start and end of week from the selected date.
+The following example demonstrates how to select all dates in the week that contains the selected date by using the [`values`](https://ej2.syncfusion.com/angular/documentation/api/calendar#values) property when the [`isMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/calendar#ismultiselection) property is enabled.
+
+The `values` property is used to maintain the collection of selected dates, while `isMultiSelection` allows multiple dates to be selected in the Calendar.
+
+In this example, Moment.js methods are used to calculate the start and end dates of the week based on the selected date, and all dates within that range are selected.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

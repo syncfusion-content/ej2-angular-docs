@@ -18,7 +18,7 @@ import {
         [primaryXAxis]="primaryXAxis"
         [primaryYAxis]="primaryYAxis"
         [title]="title"
-        (chartDoubleClick)="onchartDoubleClick($event)">
+        (chartDoubleClick)="onChartDoubleClick($event)">
         <e-series-collection>
           <e-series
             [dataSource]="chartData"
@@ -53,8 +53,8 @@ export class AppComponent implements OnInit {
     this.title = 'Monthly Sales';
   }
 
-  // chartMouseClick: fires on any click within the chart area (axes, series, legend, tooltip, etc.)
-  public onchartDoubleClick(args: IMouseEventArgs): void {
+  // chartDoubleClick: fires on a double-click within the chart area
+  public onChartDoubleClick(args: IMouseEventArgs): void {
     console.log('chartDoubleClick:', {
       target: args.target,
       x: args.x,

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to load Tab items dynamically in Angular Tab
 
-Tabs can be added dynamically by passing an array of items and index value to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/#addtab) method.
+Tabs can be added dynamically by passing an array of items and an index to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#addtab) method.
 
 ```typescript
     // New tab title and content inputs are fetched and stored in local variable
@@ -20,11 +20,17 @@ Tabs can be added dynamically by passing an array of items and index value to th
     // Required tab item object formed by using textbox inputs
     let item: Object =  { header: { text: title }, content: createElement('pre', { innerHTML: content.replace(/\n/g, '<br>\n') }).outerHTML };
 
-    // Item object and the index argument passed into the addTab method to add a new tab
-    this.tabInstance.addTab([item], this.totalItems-1);
+    // Pass the item object and the index argument to the addTab method to add a new tab
+    this.tabInstance.addTab([item], this.totalItems - 1);
 ```
 
-In the following demo, tab content can be added by clicking the **+** icon. This **+** icon is added to the tab header using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#iconcss) property. Enter the new Tab heading and content details in the available text boxes, then click the 'Add Tab' button. The details are passed as an array, and the new tab is appended at the end using the calculated last index.
+## Steps
+
+1. Add a **+** icon to the tab header via the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel/#iconcss) property on the items configuration.
+2. Capture new-tab title and content from input fields.
+3. Click the **Add Tab** button to call `addTab([item], index)` with the calculated last index.
+
+In the following demo, tab content is added by clicking the **+** icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -37,3 +43,16 @@ In the following demo, tab content can be added by clicking the **+** icon. This
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/dynamic-tab-cs1" %}
+
+## Index parameter
+
+Pass `0` to prepend a tab or `currentItems.length` to append it. Indices outside the valid range throw an error.
+
+## Removing dynamically added tabs
+
+Call [`removeTab(index)`](https://ej2.syncfusion.com/angular/documentation/api/tab/index-default#removetab) on the Tab instance to remove a tab by its current index.
+
+## See Also
+
+* [Adding dynamic items with content reuse](./adding-dynamic-items-with-content-reuse)
+* [Show/Hide Tab item](./show-hide-tab-item)

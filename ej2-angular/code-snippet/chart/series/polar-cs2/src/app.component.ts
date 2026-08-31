@@ -1,8 +1,8 @@
 import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, ILoadedEventArgs, SplineSeriesService } from '@syncfusion/ej2-angular-charts'
+import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, SplineSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
+import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 
 @Component({
 imports: [
@@ -13,7 +13,8 @@ providers: [ AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesSe
 standalone: true,
     selector: 'app-container',
     template: `<div class="col-md-8">
-    <ejs-chart id='chart-container'  [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (loaded)='loaded($event)'
+    <button ej-button id='export' (click)='export()'>Export</button>
+    <ejs-chart #chart id='chart-container'  [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >
             <e-series-collection>
                 <e-series [dataSource]='data' type='Radar' xName='x' yName='y' drawType='Line'> </e-series>
@@ -26,7 +27,8 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     public data?: Object[];
-    public loaded: Function | any;
+    @ViewChild('chart')
+    public chartObj?: ChartComponent;
 
     ngOnInit(): void {
         this.data = [{ x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 27 },
@@ -42,8 +44,9 @@ export class AppComponent implements OnInit {
             };
 
         this.title = 'Efficiency of oil-fired power production';
-        this.loaded = (args: ILoadedEventArgs) => {
-                args.chart.exportModule.export('PNG', 'export');
-        }
+    }
+
+    export(): void {
+        this.chartObj?.exportModule.export('PNG', 'export');
     }
 }

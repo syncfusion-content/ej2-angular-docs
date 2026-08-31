@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Localization in Angular AutoComplete
 
-The Localization library allows you to localize static text content of the
-[noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) and [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) &nbsp; property according to the culture currently assigned to the AutoComplete.
+The `L10n` library allows you to localize the static text content of the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) and [`actionFailureTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) properties according to the culture currently assigned to the AutoComplete.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -20,9 +19,9 @@ The Localization library allows you to localize static text content of the
 
 ## Loading translations
 
-To load translation object to your application, use load function of the **L10n** class.
+To load translation object into your application, use the `load` function of the `L10n` class.
 
-In the following sample, French culture is set to the AutoComplete and no data is loaded. Hence, the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property displays its text in French culture initially and if the sample is run offline, the [`actionFailureTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) property displays its text appropriately.
+In the following sample, French culture is set on the AutoComplete and no data is loaded. Hence, the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property displays its text in French initially, and if the sample is run offline, the [`actionFailureTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) property displays its text in French.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

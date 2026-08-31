@@ -10,15 +10,19 @@ domainurl: ##DomainURL##
 
 # How to Show a Chart in a Dialog in Angular Chart
 
-Using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dialog#content) property of the Dialog component, you can show the chart in a dialog pop-up.
+Using the Dialog component's [`content`](https://ej2.syncfusion.com/angular/documentation/api/dialog) template, you can show a chart inside a dialog pop-up.
 
-To show the chart in the Dialog component, follow the given steps:
+Follow these steps to render a chart in the Dialog component:
 
-**Step 1**:
+**Step 1**: Initialize the Dialog and create a basic chart.
 
-Initialize the Dialog and Button components, and then create a basic chart and set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/dialog#visible) property of the Dialog to `false` when initialized.
+Create the chart you want to display, then wrap it in a Dialog component. Set the Dialog's [`visible`](https://ej2.syncfusion.com/angular/documentation/api/dialog#visible) property to `false` so the dialog stays hidden initially.
 
-By setting the chart inside the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dialog#content) template of the Dialog component, you can show the chart when clicking the Button component.
+**Step 2**: Show the dialog when a button is clicked.
+
+Add an HTML button (or a Syncfusion Button) that calls the Dialog's [`show`](https://ej2.syncfusion.com/angular/documentation/api/dialog#show) method on click to open the dialog with the chart.
+
+The following example renders a chart on the page and shows another chart inside a Dialog when the **Open Dialog** button is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,5 +33,5 @@ By setting the chart inside the [`content`](https://ej2.syncfusion.com/angular/d
 {% include code-snippet/chart/how-to-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/how-to-cs5" %}

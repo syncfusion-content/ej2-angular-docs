@@ -4,16 +4,10 @@ MIT
 @angular/core
 MIT
 
-@angular/forms
-MIT
-
 @angular/platform-browser
 MIT
 
 @syncfusion/ej2-angular-base
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-buttons
 SEE LICENSE IN license
 
 @syncfusion/ej2-angular-charts
@@ -50,6 +44,9 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-navigations
+SEE LICENSE IN license
+
+@syncfusion/ej2-notifications
 SEE LICENSE IN license
 
 @syncfusion/ej2-pdf-export

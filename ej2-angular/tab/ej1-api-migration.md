@@ -18,7 +18,7 @@ This article describes the API migration process of Tab component from Essential
 
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
-| Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> `<ej-tab id="Tab" [allowKeyboardNavigation]="false" ></ej-tab>`  | <b>Not Applicable</b> |
+| Keyboard Navigation | **Property** : allowKeyboardNavigation<br/> `<ej-tab id="Tab" [allowKeyboardNavigation]="false" ></ej-tab>`  | <b>Not Applicable</b> (see [Tab key navigation](./how-to/tab-key-navigation)) |
 | Localization | <b>Not Applicable</b>  | **Property** : locale<br/> `<ejs-tab id="Tab" locale="fr-BE"></ejs-tab>`  |
 | Right to left | **Property:** enableRTL<br/> `<ej-tab id="tab" [enableRTL]="true"></ej-tab>` | **Property:** enableRTL<br/> `<ejs-tab id='tab' [enableRTL]='true'> </ejs-tab>`  |
 
@@ -61,9 +61,9 @@ This article describes the API migration process of Tab component from Essential
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Header position | **Property** : headerPosition<br/> `<ej-tab id="Tab" [headerPosition]="Bottom" ></ej-tab>`  | **Property** : headerPlacement<br/> `<ejs-tab id="Tab" [headerPlacement]="Bottom" ></ejs-tab>`  |
-| Header size | **Property** : headerSize<br/> `<ej-tab id="Tab" [headerSize]="100px" ></ej-tab>`  | <b>Not Applicable</b> |
+| Header size | **Property** : headerSize<br/> `<ej-tab id="Tab" [headerSize]="100px" ></ej-tab>`  | <b>Not Applicable</b> (use CSS for header sizing, e.g., `.e-tab .e-tab-header { height: 100px; }`) |
 | OverflowModes | <b>Not Applicable</b>| **Property:** overflowMode<br/> `<ejs-tab id='tab' [overflowMode]='Popup'> </ejs-tab>`  |
-| TabScroll | **Property:** enableTabScroll<br/> `<ej-tab id="Tab" [enableTabScroll]="false" ></ej-tab>` | <b>Not Applicable</b> |
+| TabScroll | **Property:** enableTabScroll<br/> `<ej-tab id="Tab" [enableTabScroll]="false" ></ej-tab>` | <b>Not Applicable</b> (use [`overflowMode='Scrollable'`](./how-to) or see [Responsive Modes](./adaptive) for the default scrollable behavior) |
 
 ## Items
 
@@ -79,7 +79,7 @@ This article describes the API migration process of Tab component from Essential
 | Icon position | <b>Not Applicable</b> | **Property** : items[0].header.iconPosition <br/> `<ejs-tab id="tab" [items]="items"> </ejs-tab>`<br/> **TS:**<br/> public items: Object[] = [{ header: { iconPosition: 'Left' }  }];|
 | Header text | <b>Not Applicable</b> | **Property** : items[0].header.text <br/> `<ejs-tab id="tab" [items]="items"> </ejs-tab>`<br/> **TS:**<br/> public items: Object[] = [{header: { text: 'Tab1' }}];|
 | Get items length |**Method** :  getItemsCount() <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.getItemsCount();| <b>Not Applicable</b>|
-| Add Items |**Method** : addItem(url, displayLabel, index, cssClass, id) <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.addItem("#new", "New Item", 3, "myClass", "newItem");| **Method** :addTab(items, index) <br/> `<ejs-tab id="tab" #Tab> </ejs-tab>`<br/> **TS:**<br/>  @ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.addTab([{    header: { text: 'Tab1' },content: 'contents' }], 1  );|
+| Add Items |**Method** : addItem(url, displayLabel, index, cssClass, id) <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.addItem("#new", "New Item", 3, "myClass", "newItem");| **Method** :addTab(items, index) <br/> `<ejs-tab id="tab" #Tab> </ejs-tab>`<br/> **TS:**<br/>  @ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.addTab([{ header: { text: 'Tab1' }, content: 'contents' }], 1);|
 | BeforeAdd | <b>Not Applicable</b>  | **Event:** adding<br/> `<ejs-tab id="tab" #Tab (adding)='onadding($event)'> </ejs-tab>`<br/> **TS:**<br/> onadding(event){  }  |
 | AfterAdd | **Event:** itemAdd<br/> `<ej-tab id='tab' (itemAdd)='onitemAdd($event)'></ej-tab>`<br/> **TS:**<br/> onitemAdd(event){  }  | **Event:** added <br/> `<ejs-tab id="tab" (added)='onadded($event)'></ejs-tab>`<br/> **TS:**<br/> onadded(event){  } |
 | Remove Item |**Method** : removeItem(index) <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.removeItem(0);| **Method** :removeTab(index) <br/> `<ejs-tab id="tab" #Tab> </ejs-tab>`<br/> **TS:**<br/>  @ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.removeTab(0);|
@@ -89,9 +89,9 @@ This article describes the API migration process of Tab component from Essential
 | SelectedItemIndex | **Property** : selectedItemIndex <br/> `<ej-tab id="tab" selectedItemIndex="1" > </ej-tab>`| **Property** : selectedItem <br/> `<ejs-tab id="tab" selectedItem="1" > </ejs-tab>` |
 | BeforeActive | **Event:** beforeActive<br/> `<ej-tab id="tab" #Tab (beforeActive)='onbeforeActive($event)'></ej-tab>`<br/> **TS:**<br/> onbeforeActive(event){  } |  **Event:** selecting<br/> `<ejs-tab id="tab" #Tab (selecting)='onselecting($event)'></ejs-tab>`<br/> **TS:**<br/> onselecting(event){  } |
 | AfterActive | **Event:** itemActive<br/> `<ej-tab id="tab" #Tab (itemActive)='onitemActive($event)'></ej-tab>`<br/> **TS:**<br/> onitemActive(event){  } |  **Event:** selected<br/> `<ejs-tab id="tab" #Tab (selected)='onselected($event)'></ejs-tab>`<br/> **TS:**<br/> onselected(event){  } |
-| Disable items | **Property** : disabledItemIndex <br/> `<ej-tab id="tab" disabledItemIndex="[1,2]" > </ej-tab>`| <b>Not Applicable</b> |
-| Enable items | **Property** : enabledItemIndex <br/> `<ej-tab id="tab" enabledItemIndex="[1,2]" > </ej-tab>`| <b>Not Applicable</b> |
-| Enable/Disable item |<b>Not Applicable</b> | **Property** : items[0].disabled <br/> `<ejs-tab id="tab" [items]="items" > </ejs-tab>`<br/> **TS:**<br/>public items: Object[] = [{ disabled: true  }]; |
+| Disable items | **Property** : disabledItemIndex <br/> `<ej-tab id="tab" disabledItemIndex="[1,2]" > </ej-tab>`| <b>Not Applicable</b> (in EJ2, mark each disabled item individually using `items[i].disabled`) |
+| Enable items | **Property** : enabledItemIndex <br/> `<ej-tab id="tab" enabledItemIndex="[1,2]" > </ej-tab>`| <b>Not Applicable</b> (in EJ2, set `items[i].disabled = false` for items to enable) |
+| Enable/Disable item |<b>Not Applicable</b> | **Property** : items[0].disabled <br/> `<ejs-tab id="tab" [items]="items" > </ejs-tab>`<br/> **TS:**<br/>public items: Object[] = [{ disabled: true }]; |
 | Hide items | **Property** : hiddenItemIndex <br/> `<ej-tab id="tab" hiddenItemIndex="[1,2]" > </ej-tab>` |<b>Not Applicable</b> |
 | Hide item |**Method** : hideItem(index) <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.hideItem(1);| **Method** :hideTab(index, true) <br/> `<ejs-tab id="tab" #Tab> </ejs-tab>`<br/> **TS:**<br/>  @ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.hideTab(1, true);|
 | Show item |**Method** : showItem(index)<br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.showItem(1);| **Method** : hideTab(index, false) <br/> `<ejs-tab id="tab" #Tab> </ejs-tab>`<br/> **TS:**<br/>  @ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.hideTab(1, false);|
@@ -104,21 +104,28 @@ This article describes the API migration process of Tab component from Essential
 | ------------ | ------------------------- | ------------------------- |
 | Collapse active item | **Property** : collapsible <br/> `<ej-tab id="tab" [collapsible]="true"> </ej-tab>`| <b>Not Applicable</b> |
 | Custom class | **Property** : cssClass <br/> `<ej-tab id="tab" cssClass="customClass" > </ej-tab>`| **Property** : cssClass <br/> `<ejs-tab id="tab" cssClass="customClass" > </ejs-tab>` |
-| Enabled | **Property** : enabled <br/> `<ej-tab id="tab" enabled="false"> </ej-tab>`| **Method** : disable(false)<br/> `<ejs-tab id="Tab" #Tab></ejs-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/>TabObj.disable(false); |
-| Persistence | **Property** : enablePersistence <br/> `<ej-tab id="tab" [enablePersistence]="false" > </ej-tab>`| **Property** : enablePersistence <br/> `<ejs-tab id="tab" [enablePersistence]="false" > </ejs-tab>` |
-| Events | **Property** : events <br/> `<ej-tab id="tab" events="click" > </ej-tab>`| <b>Not Applicable</b> |
+| Enabled | **Property** : enabled <br/> `<ej-tab id="tab" enabled="false"> </ej-tab>`| *Closest equivalent*: use the [`disable(false)`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#disable) method to enable the Tab after instantiation; EJ2 does not expose a boolean `enabled` property. |
+| Persistence | **Property** : enablePersistence <br/> `<ej-tab id="tab" [enablePersistence]="false" > </ej-tab>`| **Property** : enablePersistence <br/> `<ejs-tab id="tab" [enablePersistence]="false" > </ej-tab>` |
+| Events | **Property** : events <br/> `<ej-tab id="tab" events="click" > </ej-tab>`| <b>Not Applicable</b> (in EJ2, register individual event bindings on the template, e.g., `(selecting)="onSelecting($event)"`) |
 | Height | **Property** : height <br/> `<ej-tab id="Tab" height="100%" > </ej-tab>`| **Property** : height <br/> `<ejs-tab id="Tab" height="100%" > </ejs-tab>` |
 | HeightAdjustMode | **Property** : heightAdjustMode <br/> `<ej-tab id="Tab" heightAdjustMode="Content" > </ej-tab>`| **Property** : heightAdjustMode <br/> `<ejs-tab id="Tab" heightAdjustMode="Content" > </ejs-tab>` |
 | HtmlAttributes | **Property** : htmlAttributes <br/> `<ej-tab id="Tab" [htmlAttributes]="attributes" > </ej-tab>`<br/> **TS:**<br/> public attributes: Object = {class: "my-class"};|<b>Not Applicable</b>|
 | ID prefix | **Property** : idPrefix <br/> `<ej-tab id="Tab" [idPrefix]="ej-tab-" > </ej-tab>`| <b>Not Applicable</b>|
 | ShowCloseButton | **Property** : showCloseButton <br/> `<ej-tab id="Tab" [showCloseButton]="true" > </ej-tab>`| **Property** : showCloseButton <br/> `<ejs-tab id="Tab" [showCloseButton]="true" > </ejs-tab>`|
 | showReloadIcon | **Property** : showReloadIcon <br/> `<ej-tab id="Tab" [showReloadIcon]="true" > </ej-tab>`| <b>Not Applicable</b> |
-| ShowRounderCorner | **Property** : showRoundedCorner <br/> `<ej-tab id="Tab" [showRoundedCorner]="true" > </ej-tab>`| <b>Not Applicable</b> |
+| ShowRounderCorner | **Property** : showRoundedCorner <br/> `<ej-tab id="Tab" [showRoundedCorner]="true" > </ej-tab>`| <b>Not Applicable</b> (use the theme's CSS variables to control rounded corners, e.g., override `--tab-border-radius`) |
 | Destroy | **Method** : destroy() <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.destroy(); | **Method** : destroy() <br/> `<ejs-tab id="tab" #Tab></ejs-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.destroy(); |
-| Disable Tab | **Method** : disable() <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.disable(); | **Method** :  disable(true) <br/> `<ejs-tab id="Tab" #Tab></ejs-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.disable(true); |
-| Enable Tab | **Method** : enable() <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.enable(); | **Method** : disable(false) <br/> `<ejs-tab id="Tab" #Tab></ejs-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.disable(false); |
+| Disable Tab | **Method** : disable() <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.disable(); | **Method** :  disable(true) <br/> `<ejs-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.disable(true); <br/> *Pass `true` as the argument to disable the component.* |
+| Enable Tab | **Method** : enable() <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.enable(); | **Method** : disable(false) <br/> `<ejs-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.disable(false); <br/> *Pass `false` as the argument to enable the component.* |
 | Show Tab | **Method** : show() <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.show(); | <b>Not Applicable</b> |
 | Hide Tab | **Method** : hide() <br/> `<ej-tab id="Tab" #Tab></ej-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.hide(); | <b>Not Applicable</b> |
 | Refresh | <b>Not Applicable</b> | **Method** : refresh() <br/> `<ejs-tab id="tab" #Tab></ejs-tab>`<br/> **TS:**<br/>@ViewChild('Tab') public TabObj: TabComponent;<br/> TabObj.refresh(); |
 | Created | **Event:** create<br/> `<ej-tab id="tab" #Tab (create)='oncreate($event)'></ej-tab>`<br/> **TS:**<br/> oncreate(event) {  } | **Event:** created<br/> `<ejs-tab id="tab" #Tab (created)='oncreated($event)'></ejs-tab>`<br/> **TS:**<br/> oncreated(event) {  } |
 | Destroyed | **Event:** destroy<br/> `<ej-tab id="tab" #Tab (destroy)='ondestroy($event)'></ej-tab>`<br/> **TS:**<br/> ondestroy(event) {  } | **Event:** destroyed<br/> `<ejs-tab id="tab" #Tab (destroyed)='ondestroyed($event)'></ejs-tab>`<br/> **TS:**<br/> ondestroyed(event) {  } |
+
+## See Also
+
+* [Getting Started](./getting-started)
+* [Tab API Reference](https://ej2.syncfusion.com/angular/documentation/api/tab)
+* [Tab how-to topics](./how-to/load-tab-items-dynamically)
+* [Responsive Modes](./adaptive)

@@ -10,100 +10,102 @@ domainurl: ##DomainURL##
 
 # Globalization in Angular Calendar
 
-Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization) and also add culture specific customization and translation to the text [`localization`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/localization).
+Globalization is the combination of internationalization and localization. You can adapt the component to various languages by parsing and formatting the date or number using the [`Internationalization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library, and also add culture-specific customization and translation to the text using the [`Localization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) library.
 
-By default, Calendar date format, week and month names are specific to American English culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization) package to parse and format the date object based on the culture by uses the official [`UNICODE CLDR`](http://cldr.unicode.org) JSON data and also it provides the [`loadCldr`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization#installing-cldr-data) method to load the culture specific CLDR JSON data.
+By default, the Calendar date format, week, and month names are specific to the American English culture. It uses the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org) JSON data, and also provides the [`loadCldr`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#installing-cldr-data) method to load the culture-specific CLDR JSON data.
 
-To go with the different culture other than `English`, follow the below steps.
+To use a culture other than `English`, follow the below steps. Replace `de` in the code with your culture code.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data refer the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
+1. Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). To know more about CLDR-Data, refer the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
 
-  ```
-  npm install cldr-data --save
-  ```
+   ```
+   npm install cldr-data --save
+   ```
 
-Once the package installed, you can find the culture specific JSON data under the location `/node_modules/cldr-data`.
+   Once the package is installed, you can find the culture-specific JSON data under the location `/node_modules/cldr-data`.
 
-* Now import the installed CLDR JSON data into the `app.component.ts` file.
+2. Import the installed CLDR JSON data into the `app.component.ts` file, and use the [`loadCldr`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#installing-cldr-data) method to load the culture-specific CLDR JSON data from the installed location into the `app.component.ts` file.
 
-* Now use the [`loadCldr`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization#installing-cldr-data) method to load the culture specific CLDR JSON data from the installed location to `app.component.ts` file.
+   By default, the Calendar displays `Sunday` as the first day of the week based on the default culture ("en-US"). If you want to display the Calendar with the loaded culture's first day of week, import the `weekdata.json` file from `cldr-data/supplemental` as given in the code example.
 
-* Calendar displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the Calendar with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
+   ```typescript
+   // import the loadCldr from ej2-base
+   import { loadCldr } from '@syncfusion/ej2-base';
 
-  ```typescript
-  //import the loadCldr from ej2-base
-  import { loadCldr} from '@syncfusion/ej2-base';
+   declare var require: any;
 
-  declare var require: any;
+   loadCldr(
+       require('cldr-data/supplemental/numberingSystems.json'),
+       require('cldr-data/main/de/ca-gregorian.json'),
+       require('cldr-data/main/de/numbers.json'),
+       require('cldr-data/main/de/timeZoneNames.json'),
+       require('cldr-data/supplemental/weekdata.json')); // To load the culture-based first day of week
+   ```
 
-  loadCldr(
-      require('cldr-data/supplemental/numberingSystems.json'),
-      require('cldr-data/main/de/ca-gregorian.json'),
-      require('cldr-data/main/de/numbers.json'),
-      require('cldr-data/main/de/timeZoneNames.json'),
-      require('cldr-data/supplemental/weekdata.json')); // To load the culture based first day of week
-  ```
+## Localization
 
-> The `Localization` library allows you to localize default text content of the Calendar. The Calendar component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/calendar#locale) value and translation object.
+> The `Localization` library allows you to localize default text content of the Calendar. The Calendar component has static text for the `today` feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/calendar#locale) value and translation object.
 
-Locale keywords |Text
------|-----
-today | Name of the button to choose Today date.
+The following table lists the locale keys (L10n keys) supported by the Calendar component. For the Calendar, `today` is the only localizable string.
 
-* Before changing to a culture other than `English`, ensure that locale text for the concerned culture is loaded through `load` method of `L10n` class.
+| **Locale key** | **Text** |
+| --- | --- |
+| `today` | Name of the button to choose the Today date. |
 
-  ```typescript
-  //Load the L10n, loadCldr from ej2-base
-  import { loadCldr, L10n } from "@syncfusion/ej2-base";
+Before changing to a culture other than `English`, ensure that the locale text for the concerned culture is loaded through the `load` method of the `L10n` class.
 
-  //load the locale object to set the localized placeholder value
-  L10n.load({
-    de: {
-      calendar: {
-                today:"heute"
-  }
+```typescript
+//Load the L10n, loadCldr from ej2-base
+import { loadCldr, L10n } from "@syncfusion/ej2-base";
+
+//load the locale object to set the localized today value
+L10n.load({
+  de: {
+    calendar: {
+      today: "heute"
     }
-  });
-  ```
+  }
+});
+```
 
-* Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/calendar#locale) property. The below code example, initialize the Calendar component in `German` culture.
+Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/calendar#locale) property. The below code example initializes the Calendar component in `German` culture. Note that `weekdata.json` is required only when you want to render the culture-specific first day of week; it is omitted here for brevity.
 
-  ```typescript
-  import { Component } from '@angular/core';
-  //import the loadCldr from ej2-base
-  import { loadCldr, L10n } from '@syncfusion/ej2-base';
+```typescript
+import { Component } from '@angular/core';
+// import the loadCldr from ej2-base
+import { loadCldr, L10n } from '@syncfusion/ej2-base';
 
-  declare var require: any;
+declare var require: any;
 
-  loadCldr(
-      require('cldr-data/supplemental/numberingSystems.json'),
-      require('cldr-data/main/de/ca-gregorian.json'),
-      require('cldr-data/main/de/numbers.json'),
-      require('cldr-data/main/de/timeZoneNames.json')
-      );
-  @Component({
-      selector: 'app-root',
-      template: `
-      <!-- Sets the value, locale -->
-      <ejs-calendar [value]='dateValue' locale='de'></ejs-calendar>`
-  })
+loadCldr(
+    require('cldr-data/supplemental/numberingSystems.json'),
+    require('cldr-data/main/de/ca-gregorian.json'),
+    require('cldr-data/main/de/numbers.json'),
+    require('cldr-data/main/de/timeZoneNames.json')
+    );
+@Component({
+    selector: 'app-root',
+    template: `
+    <!-- Sets the value, locale -->
+    <ejs-calendar [value]='dateValue' locale='de'></ejs-calendar>`
+})
 
-  export class AppComponent {
-      public dateValue: Object = new Date();
-      ngOnInit(): void {
-      /*loads the localization text*/
-      L10n.load({
-        'de': {
-          'calendar': {
-            today:"heute"
-          }
+export class AppComponent {
+    public dateValue: Object = new Date();
+    ngOnInit(): void {
+    /*loads the localization text*/
+    L10n.load({
+      'de': {
+        'calendar': {
+          today: "heute"
         }
-      });
-    }
-      constructor() {
       }
+    });
   }
-  ```
+    constructor() {
+    }
+}
+```
 
 The following example demonstrates the Calendar in `German` culture.
 
@@ -121,9 +123,9 @@ The following example demonstrates the Calendar in `German` culture.
 
 ## Right-To-Left
 
-The Calendar supports right-to-left functionality for languages like Arabic, Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/calendar#enablertl) property to set the RTL direction.
+The Calendar supports right-to-left functionality for languages like Arabic and Hebrew to display the text in the right-to-left direction. Use the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/calendar#enablertl) property to set the RTL direction. For RTL cultures such as Arabic, you must also load the appropriate main CLDR files (e.g., `cldr-data/main/ar/*`) using `loadCldr` in addition to setting `enableRtl`.
 
-The following example demonstrates the Calendar in `Arabic` culture with `enableRtl` property.
+The following example demonstrates the Calendar in `Arabic` culture with the `enableRtl` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

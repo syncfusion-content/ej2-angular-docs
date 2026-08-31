@@ -1,5 +1,5 @@
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { ColumnSeriesService, AreaSeriesService } from '@syncfusion/ej2-angular-charts'
+import { AreaSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
 import { formatData } from './datasource';
 @Component({
@@ -7,7 +7,7 @@ imports: [
          ChartModule
     ],
 
-providers: [ ColumnSeriesService, AreaSeriesService],
+providers: [ AreaSeriesService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
@@ -25,10 +25,12 @@ export class AppComponent implements OnInit {
         this.formatData = formatData;
         this.primaryXAxis = {
             title: 'Year',
+            valueType: 'Double',
             edgeLabelPlacement: 'Shift'
         };
         this.primaryYAxis = {
            title: 'Sales Amount in Millions',
+           valueType: 'Double',
            labelFormat: 'c'
         };
         this.title = 'Average Sales Comparison';

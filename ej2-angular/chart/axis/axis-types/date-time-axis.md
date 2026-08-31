@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 # DateTime Axis in Angular Chart
 
-## DateTime Axis
+The DateTime axis uses a date-time scale and displays date-time values as axis labels based on the specified format. This axis type is ideal for visualizing time-based data such as trends, timelines, and time-series data. Use `DateTime` for continuous time-series data and `DateTimeCategory` (covered in a later section) when certain time ranges such as weekends or holidays need to be excluded.
 
-The DateTime axis uses a date-time scale and displays date-time values as axis labels based on the specified format. This axis type is ideal for visualizing time-based data such as trends, timelines, and time-series data.
+## DateTime Axis
 
 To know about the DateTime axis, you can watch this video:
 
@@ -32,11 +32,11 @@ To know about the DateTime axis, you can watch this video:
   
 {% previewsample "page.domainurl/samples/chart/axis/datetime-cs10" %}
 
->**Note:** To use the DateTime axis, inject `DateTimeService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) property of the axis to `DateTime`.
+>**Note:** To use the DateTime axis, register `DateTimeService` in the standalone component's `providers` (legacy: inject `DateTimeService` into `@NgModule.providers`) and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) property of the axis to `DateTime`.
 
 ## DateTimeCategory Axis
 
-The DateTimeCategory axis is used to render date-time values with non-linear intervals. This axis type is especially useful when certain time ranges, such as weekends or holidays, need to be excluded. In the following example, only business days are displayed within a week.
+The DateTimeCategory axis is used to render date-time values with irregular intervals. This axis type is especially useful when certain time ranges, such as weekends or holidays, need to be excluded. The following example demonstrates a DateTimeCategory axis rendering only business days.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,11 +50,11 @@ The DateTimeCategory axis is used to render date-time values with non-linear int
   
 {% previewsample "page.domainurl/samples/chart/axis/datetime-cs11" %}
 
->**Note:** To use the DateTimeCategory axis, inject `DateTimeCategoryService` into the `@NgModule.providers` and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) of axis to `DateTimeCategory`.
+>**Note:** To use the DateTimeCategory axis, register `DateTimeCategoryService` in the standalone component's `providers` (legacy: inject `DateTimeCategoryService` into `@NgModule.providers`) and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#valuetype) of axis to `DateTimeCategory`.
 
-### Range
+## Range
 
-Range for an axis will be calculated automatically based on the provided data, you can also customize the range of the axis using [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) property of the axis.
+The range for an axis is calculated automatically based on the provided data. You can also customize the range of the axis using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#minimum), [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#maximum) and [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) properties of the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,12 +68,12 @@ Range for an axis will be calculated automatically based on the provided data, y
   
 {% previewsample "page.domainurl/samples/chart/axis/datetime-cs12" %}
 
-### Interval Customization
+## Interval Customization
 
-Date-time intervals can be customized using the [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) and [`intervalType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#intervaltype) properties of the axis. For example, when the interval is set to `2` and the interval type is set to `Years`, the axis displays labels at two-year intervals.
+Date-time intervals can be customized using the [`interval`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#interval) and [`intervalType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#intervaltype) properties of the axis. For example, when `interval` is `2` and `intervalType` is `Years`, the axis displays labels every two years.
 
 The DateTime axis supports the following interval types:
-* Auto
+* Auto - Lets the chart choose the most appropriate interval based on data
 * Years
 * Months
 * Days
@@ -93,7 +93,7 @@ The DateTime axis supports the following interval types:
   
 {% previewsample "page.domainurl/samples/chart/axis/datetime-cs13" %}
 
-**Applying padding to the range**
+## Range Padding
 
 Padding can be applied to the minimum and maximum values of the axis range using the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#rangepadding) property. The DateTime axis supports the following range padding types:
 
@@ -180,7 +180,7 @@ The following table illustrates the output produced by applying commonly used da
 <td>new Date(2000, 03, 10)</td>
 <td>EEEE</td>
 <td>Monday</td>
-<td>The Date is displayed in day format</td>
+<td>Displays the date in day format</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
@@ -192,20 +192,29 @@ The following table illustrates the output produced by applying commonly used da
 <td>new Date(2000, 03, 10)</td>
 <td> MMM </td>
 <td>Apr</td>
-<td>The Shorthand month for the date is displayed</td>
+<td>Displays the shorthand month for the date</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>hm</td>
 <td>12:00 AM</td>
-<td>Time of the date value is displayed as label</td>
+<td>Displays the time of the date value as the label</td>
 </tr>
 <tr>
 <td>new Date(2000, 03, 10)</td>
 <td>hms</td>
 <td>12:00:00 AM</td>
-<td>The Label is displayed in hours:minutes:seconds format</td>
+<td>Displays the label in hours:minutes:seconds format</td>
 </tr>
 </table>
 
+> **Note:** Time values shown in the result column depend on the application's locale and may render differently than the local time of `new Date(2000, 03, 10)`.
+
 <!-- markdownlint-disable MD033 -->
+
+## See Also
+
+* [Numeric Axis](./numeric-axis)
+* [Category Axis](./category-axis)
+* [Logarithmic Axis](./logarithmic-axis)
+* [API Reference - Axis](https://ej2.syncfusion.com/angular/documentation/api/chart/axis): Complete API documentation for axis properties and methods

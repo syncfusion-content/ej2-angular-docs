@@ -28,7 +28,8 @@ export class AppComponent implements OnInit {
             valueType: 'Category',
             majorGridLines : {
                color : 'blue',
-               width : 1
+               width : 1,
+               dashArray : '5,5'
             },
             minorGridLines : {
                color : 'red',
@@ -39,7 +40,8 @@ export class AppComponent implements OnInit {
            title: 'Temperature (Fahrenheit)',
            majorGridLines : {
               color : 'blue',
-              width : 1
+              width : 1,
+              dashArray : '5,5'
            },
            minorGridLines : {
               color : 'red',

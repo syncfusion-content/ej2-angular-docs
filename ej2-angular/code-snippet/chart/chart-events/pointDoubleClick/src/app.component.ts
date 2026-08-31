@@ -3,7 +3,6 @@ import {
   ChartModule,
   CategoryService,
   ColumnSeriesService,
-  ILoadedEventArgs,
   IPointEventArgs
 } from '@syncfusion/ej2-angular-charts';
 
@@ -53,8 +52,13 @@ export class AppComponent implements OnInit {
     this.title = 'Monthly Sales';
   }
 
-  // pointRender: customize each point's appearance before rendering
+  // pointDoubleClick: fires when a data point is double-clicked
   public onPointDoubleClick(args: IPointEventArgs): void {
-    console.log("Point Double Click event was triggered");
+    console.log('Point Double Click event was triggered', {
+      x: args.point?.x,
+      y: args.point?.y,
+      seriesIndex: args.seriesIndex,
+      pointIndex: args.pointIndex
+    });
   }
 }

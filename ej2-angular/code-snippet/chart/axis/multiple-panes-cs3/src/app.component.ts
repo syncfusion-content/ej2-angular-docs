@@ -12,13 +12,13 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-axes>
-            <e-axis rowIndex=1 name='yAxis1' opposedPosition='true' title='Temperature (Celsius)' [majorGridLines]='majorGridLines' labelFormat='{value}°C'
+            <e-axis name='yAxis1' [rowIndex]='0' [span]='2' opposedPosition='true' title='Temperature (Celsius)' [majorGridLines]='majorGridLines' labelFormat='{value}°C'
                    [minimum]='24' [maximum]='36' [interval]='2' [lineStyle]='lineStyle'>
             </e-axis>
         </e-axes>
         <e-rows>
-             <e-row height=50%></e-row>
-             <e-row height=50%></e-row>
+             <e-row [height]="'50%'"></e-row>
+             <e-row [height]="'50%'"></e-row>
         </e-rows>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Germany'></e-series>
@@ -34,7 +34,6 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public lineStyle?: Object;
     public marker?: Object;
-    public rows?: Object;
     ngOnInit(): void {
         this.chartData = [
                 { x: 'Jan', y: 15, y1: 33 }, { x: 'Feb', y: 20, y1: 31 }, { x: 'Mar', y: 35, y1: 30 },
@@ -51,8 +50,7 @@ export class AppComponent implements OnInit {
             minimum: 0, maximum: 90, interval: 20,
             lineStyle: { width: 0 },
             title: 'Temperature (Fahrenheit)',
-            labelFormat: '{value}°F',
-            span: 2
+            labelFormat: '{value}°F'
         };
         this.majorGridLines = { width: 0};
         this.lineStyle = { width: 0};

@@ -10,17 +10,22 @@ domainurl: ##DomainURL##
 
 # Axis Overview in Angular Chart
 
-In a chart, an axis refers to the lines that define the boundaries of the chart and provide a scale for measuring data. Charts have two axes: the horizontal axis (x-axis) and the vertical axis (y-axis). Here is the quick overview of axis elements.
+In a chart, an axis refers to the line that defines the boundary of the chart and provides a scale for measuring data. Charts have two axes: the horizontal axis (x-axis) and the vertical axis (y-axis). The following is a quick overview of the axis elements.
 
-<img src="../../images/SecondaryAxis.png" alt="Axis illustration">
+* **Axis Types**: The [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#valuetype) property determines how axis values are interpreted and rendered. For most types (such as `Logarithmic` or `DateTime`), you must inject the matching feature service, for example `LogarithmicService` or `DateTimeService`. For more details see [Category Axis](./axis-types/category-axis), [Numeric Axis](./axis-types/numeric-axis), [DateTime Axis](./axis-types/date-time-axis), [Logarithmic Axis](./axis-types/logarithmic-axis).
+* **Grid Lines**: Grid lines in charts are horizontal and vertical lines that extend from the axis across the plot area. For more details see [Grid Line Customization](./axis-customization#grid-lines-customization).
+* **Tick Lines**: Tick marks are short lines placed along an axis at regular intervals to indicate the scale. For more details see [Tick Line Customization](./axis-customization#tick-lines-customization).
+* **Multiple Axes**: Charts can include multiple axes to display different scales or units, often shown as a primary and secondary axis. For more details see [Multiple Axis](./axis-customization#multiple-axis).
 
-* **Grid Lines** : Gridlines in charts are horizontal and vertical lines that extend from the axes across the plot area. For more details see [Grid Line Customization](./axis-customization#grid-lines-customization).
-* **Tick Lines** : Tick marks are the lines placed along an axis to show the units of measurement. For more details see [Tick Line Customization](./axis-customization#tick-lines-customization).
+<img src="../../images/SecondaryAxis.png" alt="A chart with primary and secondary axes illustrating the multiple-axis feature">
 
-* **Secondary Axis**: Charts can have multiple axes to show different scales or units. For more details see [Secondary Axis](./axis-customization#multiple-axis).
+* **Axis Label**: Axis labels are descriptive texts that appear along the axes of a chart and provide context about the data being presented. For more details see [Labels Customization](./axis-labels#labels-customization).
+* **Axis Title**: An axis title is a descriptive label that indicates the purpose of the chart's axis, helping viewers understand what each axis represents. For more details see [Title](./axis-customization#title).
 
-* **Axis Label**: Axis labels are descriptive texts that appear along the axes of a chart, providing essential context about the data being presented. For more details see [Axis Label](./axis-labels).
+## See Also
 
-* **Axis Title**: An axis title in a chart is a descriptive label that indicates the purpose of the chart's axis. It helps to quickly understand what each axis represents and provides context to the data points. For more details see [Title](./axis-customization#title).
+For setup and installation, see [Getting Started with Angular Chart](../getting-started).
 
-* **Axis Types**: The [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#valuetype) (or equivalent) determines how axis values are interpreted and rendered. For more details see [Category Axis](https://ej2.syncfusion.com/angular/documentation/chart/axis/axis-types/category-axis), [Numeric Axis](https://ej2.syncfusion.com/angular/documentation/chart/axis/axis-types/numeric-axis), [DateTime Axis](https://ej2.syncfusion.com/angular/documentation/chart/axis/axis-types/date-time-axis), [Logarithmic Axis](https://ej2.syncfusion.com/angular/documentation/chart/axis/axis-types/logarithmic-axis).
+* [Axis Customization](./axis-customization)
+* [Multiple Panes](./multiple-panes)
+* [Chart Accessibility](../accessibility)

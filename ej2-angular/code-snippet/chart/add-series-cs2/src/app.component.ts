@@ -1,6 +1,6 @@
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { CategoryService, ColumnSeriesService, ExportService, LegendService, DataLabelService } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 @Component({
@@ -8,7 +8,7 @@ imports: [
          ChartModule,  ButtonModule
     ],
 
-providers: [ CategoryService, ColumnSeriesService,ExportService, LegendService, DataLabelService],
+providers: [ CategoryService, ColumnSeriesService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart #chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
             maximum: 20000
             };
 
-        this.title = 'Sales Comparision';
+        this.title = 'Sales Comparison';
     }
     add() {
         (this.chart as ChartComponent ).addSeries([{

@@ -10,4 +10,4 @@ domainurl: ##DomainURL##
 
 # How to enforce unique values in Angular Dropdown List
 
-yes, value for each list items should be unique.
+Yes, value for each list item should be unique.

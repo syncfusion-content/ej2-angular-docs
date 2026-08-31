@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Disabled Items in Angular Dropdown List
 
-The DropDownList component allows you to disable specific items to prevent them from being selected. The disabled state of each list item can be defined by mapping a field from the data source to the [fields.disabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#fields) property. Once an item is disabled, it cannot be selected as a value for the component.
+The DropDownList component allows you to disable specific items to prevent them from being selected. The disabled state of each list item can be defined by mapping a field from the data source to the [fields.disabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#fields) property. Once an item is disabled, it cannot be selected as a value for the component.
 
-In the following sample, certain states are disabled based on the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#disabled) field in the data source.
+In the following sample, certain states are disabled based on the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#disabled) field in the data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -28,15 +28,15 @@ In the following sample, certain states are disabled based on the [`disabled`](h
 
 ## Disable Item Method
 
-The [disableItem](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#disableitem) method provides a way to dynamically disable a specific item in the list, preventing it from being selected. This method must be called with a parameter that identifies the target item, and it can be invoked in one of three ways: by passing the item's HTML element, its value, or its index.
+The [disableItem](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#disableitem) method provides a way to dynamically disable a specific item in the list, preventing it from being selected. This method must be called with a parameter that identifies the target item, and it can be invoked in one of three ways: by passing the item's HTML element, its value, or its index.
 
 When an item is disabled using this method, the corresponding disabled field in the dataSource is updated to reflect the change. If the currently selected item is disabled, the selection will be cleared. To disable multiple items, you can iterate through a list and call this method for each item.
 
-The [disableItem](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#disableitem) method can be called using one of the following signatures:
+The [disableItem](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#disableitem) method can be called using one of the following signatures:
 
 | Parameter | Type | Description |
 |------|------|------|
-| itemHTMLLIElement |  <code>HTMLLIElement</code> |  It accepts the HTML Li element of the item to be removed.  |
+| itemHTMLLIElement |  <code>HTMLLIElement</code> |  It accepts the HTML LI element of the item to be removed.  |
 | itemValue | <code>string</code> \| <code>number</code> \| <code>boolean</code> \| <code>object</code> | It accepts the string, number, boolean and object type value of the item to be removed. |
 | itemIndex | <code>number</code> | It accepts the index of the item to be removed. |
 
@@ -53,8 +53,8 @@ import { Component, ViewChild } from '@angular/core';
     ],
     standalone: true,
     selector: 'app-root',
-    // specifies the template string for the MultiSelect component
-    template: `<ejs-dropdownlist id='multiselectelement' #samples [dataSource]='tagData' [fields]='fields' [placeholder]='text' (created)="onCreated()"></ejs-dropdownlist>`
+    // specifies the template string for the DropDownList component
+    template: `<ejs-dropdownlist id='dropdownlistelement' #samples [dataSource]='tagData' [fields]='fields' [placeholder]='text' (created)="onCreated()"></ejs-dropdownlist>`
 })
 export class AppComponent {
     @ViewChild('samples')
@@ -76,7 +76,7 @@ export class AppComponent {
     ];
     // maps the appropriate column to fields property
     public fields: Object = { value: 'Text', disabled: 'State' };
-    //set the placeholder to MultiSelect input
+    //set the placeholder to DropDownList input
     public text: string = "Select Tags";
     public onCreated() {
        this.status?.disableItem('Crisis')
@@ -87,6 +87,6 @@ export class AppComponent {
 
 ## Enabled
 
-To disable the entire DropDownList component, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#enabled) property to `false`.
+To disable the entire DropDownList component, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#enabled) property to `false`.
 
 ![Disabled DropDownList Component](../images/dropdownlist-disable.png)

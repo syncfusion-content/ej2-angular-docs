@@ -86,7 +86,6 @@ export class AppComponent implements OnInit {
 
   // textRender handler: customize data labels before they are rendered
   public onTextRender(args: ITextRenderEventArgs): void {
-    console.log("text render event triggered");
     // Example 1: Format label text as currency with K suffix
     if (typeof args.point?.y === 'number') {
       args.text = `$${args.point.y}K`;
@@ -94,8 +93,9 @@ export class AppComponent implements OnInit {
 
     // Example 2: Highlight a particular month’s label (e.g., 'Aug')
     if (args.point?.x === 'Aug') {
-
       args.text = `${args.text} ★`;
+      args.color = '#e74c3c';
+      args.font = { fontWeight: '700', size: '14px' };
     }
   }
 }

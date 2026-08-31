@@ -3,7 +3,6 @@ import {
   ChartModule,
   CategoryService,
   ColumnSeriesService,
-  ILoadedEventArgs,
   IPointEventArgs
 } from '@syncfusion/ej2-angular-charts';
 
@@ -55,6 +54,11 @@ export class AppComponent implements OnInit {
 
   // pointClick: handle point click actions
   public onPointClick(args: IPointEventArgs): void {
-    console.log('Point click event was triggered');
+    console.log('Point click event was triggered', {
+      x: args.point?.x,
+      y: args.point?.y,
+      seriesIndex: args.seriesIndex,
+      pointIndex: args.pointIndex
+    });
   }
 }

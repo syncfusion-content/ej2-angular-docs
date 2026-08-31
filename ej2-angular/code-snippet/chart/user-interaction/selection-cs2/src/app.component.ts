@@ -12,7 +12,7 @@ imports: [
 providers: [ CategoryService, ColumnSeriesService, LegendService, SelectionService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' selectionMode='Series'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' selectionMode='Series'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' ></e-series>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
@@ -28,7 +28,11 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.chartData = selectionData;
         this.primaryXAxis = {
-           valueType: 'Category'
+           valueType: 'Category',
+           title: 'Countries'
+        };
+        this.primaryYAxis = {
+           title: 'Medals'
         };
         this.title = 'Olympic Medals';
     }

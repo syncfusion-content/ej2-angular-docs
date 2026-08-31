@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Icons Support in Angular MultiSelect Dropdown
 
-You can render **icons** to the list items by mapping the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#iconcss) field within the [fields](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#fields) property. This [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#iconcss) field creates a `span` element in each list item with the mapped CSS class name, allowing you to style the icons according to your requirements.
+You can render **icons** to the list items by mapping the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#iconcss) field within the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#fields) property. The [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#iconcss) field creates a `span` element in each list item with the mapped CSS class name, allowing you to style the icons according to your requirements.
 
-In the following sample, icon classes are mapped with the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel/#iconcss)  field.
+In the following sample, icon classes are mapped to the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#iconcss) field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

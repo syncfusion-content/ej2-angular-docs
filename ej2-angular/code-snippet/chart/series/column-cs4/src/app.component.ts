@@ -19,7 +19,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'[chartArea]='chartArea'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Olympic Medals';
         this.border = { width: 2, color: 'grey'};
-        this.chartArea = { background: 'skyblue', width: '80%'};
+        this.chartArea = { background: 'skyblue', width: '80%', height: '80%', border: this.border };
     }
 
 }

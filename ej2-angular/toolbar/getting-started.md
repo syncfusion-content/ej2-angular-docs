@@ -50,7 +50,7 @@ ng new syncfusion-angular-app
 
 ```
 
-* By default, a CSS-based application is created. Use SCSS if required:
+* By default, a CSS-based application is created. Use the SCSS option if SCSS styles are required:
 
 ```bash
 ng new syncfusion-angular-app --style=scss

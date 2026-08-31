@@ -76,7 +76,7 @@ export class AppComponent implements OnInit {
     };
     public chart2MouseMove(args: IMouseEventArgs): void {
         if ((!Browser.isDevice && !this.chart2.isTouch && !this.chart2.isChartDrag) || this.chart2.startMove) {
-            this.chart2.startMove = this.chart1.startMove;
+            this.chart1.startMove = this.chart2.startMove;
             this.chart1.showTooltip(args.x, args.y);
         }
     };

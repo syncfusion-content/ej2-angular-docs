@@ -36,7 +36,6 @@ export class AppComponent implements OnInit {
         };
         this.crosshair = { enable: true, line: {width: 2, color: 'green'}, fill: 'green' };
         this.series1 = ChartData.prototype.getCrosshairData().series1;
-        this.series1 = ChartData.prototype.getCrosshairData().series2;
         this.legend = { visible: true};
         this.title = 'Weather Condition';
     }

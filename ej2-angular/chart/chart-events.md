@@ -10,13 +10,31 @@ domainurl: ##DomainURL##
 
 # Chart Events in Angular Chart
 
-Chart events are callback functions that the Syncfusion EJ2 Chart component triggers at different stages of its life cycle. They allow developers to respond to user interactions, customize rendering, control behavior, and extend chart functionality without modifying the core control. These events enable developers to implement custom logic, enhance interactivity, and tailor the chart's behavior to specific requirements, thereby providing a more dynamic and responsive user experience.
+Chart events are callback functions that the Syncfusion EJ2 Chart component triggers at different stages of its life cycle. They allow developers to respond to user interactions, customize rendering, control behavior, and extend chart functionality without modifying the core component. These events enable developers to implement custom logic, enhance interactivity, and tailor the chart's behavior to specific requirements, thereby providing a more dynamic and responsive user experience.
+
+For a full list of supported Angular and Syncfusion package versions, see the [Getting Started](./getting-started) page. Every event documented here requires the relevant service to be added to the component's `providers` array (for example, `CategoryService`, `LineSeriesService`, `TooltipService`, `SelectionService`, `DataEditingService`, `ZoomService`, `ScrollBarService`, `ExportService`).
+
+**Available events**
+
+| Group | Events |
+| --- | --- |
+| Animation | `animationComplete` |
+| Labels and Axes | `axisLabelRender`, `axisLabelClick`, `axisRangeCalculated`, `axisMultiLabelRender`, `multiLevelLabelClick` |
+| Series and Points | `seriesRender`, `pointClick`, `pointDoubleClick`, `pointMove`, `pointRender`, `textRender` |
+| Data Editing (Drag) | `dragStart`, `drag`, `dragEnd` |
+| Tooltip | `tooltipRender`, `sharedTooltipRender` |
+| Legend | `legendRender`, `legendClick` |
+| Annotations | `annotationRender` |
+| Zooming and Scrolling | `zooming`, `zoomComplete`, `scrollChanged`, `scrollStart`, `scrollEnd` |
+| Selection and Drag | `dragComplete`, `selectionComplete` |
+| Mouse Events | `chartMouseDown`, `chartMouseMove`, `chartMouseUp`, `chartMouseLeave`, `chartMouseClick`, `chartDoubleClick` |
+| Life cycle and Layout | `load`, `loaded`, `beforeResize`, `resized`, `beforePrint`, `beforeExport`, `afterExport` |
 
 
 ## Animation
 
 ### animationComplete
-After a series animation has completed, the animationComplete event will be triggered. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ianimationcompleteeventargs).
+Triggered after a series animation completes. Use this event to chain additional UI work, run custom transitions, or release a loading indicator. The series must have `animation.enable = true` for this event to fire. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ianimationcompleteeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +52,7 @@ After a series animation has completed, the animationComplete event will be trig
 ## Labels and Axes
 
 ### axisLabelRender
-Before an axis label is rendered, the axisLabelRender event will be triggered to customize label text and style. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iaxislabelrendereventargs).
+Triggered before an axis label is rendered so you can customize its text and style. Set `args.cancel = true` to hide an individual label. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iaxislabelrendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +67,7 @@ Before an axis label is rendered, the axisLabelRender event will be triggered to
 {% previewsample "page.domainurl/samples/chart/chart-events/axisLabelRender" %}
 
 ### axisLabelClick
-The axisLabelClick event will be triggered when an axis label is clicked. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iaxislabelclickeventargs).
+Triggered when an axis label is clicked. Use it to drill into a category, toggle an axis-level filter, or open a side panel for the clicked label. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iaxislabelclickeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,7 +82,7 @@ The axisLabelClick event will be triggered when an axis label is clicked. To kno
 {% previewsample "page.domainurl/samples/chart/chart-events/axisLabelClick" %}
 
 ### axisRangeCalculated
-After an axis range (minimum, maximum, interval) is calculated, the axisRangeCalculated event will be triggered, allowing you to override the values. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iaxisrangecalculatedeventargs).
+Triggered after the axis range (minimum, maximum, and interval) is calculated, allowing you to override the values. For category axes, `minimum` and `maximum` apply to category index positions rather than labels. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iaxisrangecalculatedeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,7 +97,7 @@ After an axis range (minimum, maximum, interval) is calculated, the axisRangeCal
 {% previewsample "page.domainurl/samples/chart/chart-events/axisRangeCalculated" %}
 
 ### axisMultiLabelRender
-Before multi-level axis labels are rendered, the axisMultiLabelRender event will be triggered to customize label text and style. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iaxismultilabelrendereventargs).
+Triggered before multi-level axis labels are rendered so you can customize their text and style. Multi-level labels must be configured on the axis via the `multiLevelLabels` property; the `MultiLevelLabelService` provider is also required. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iaxismultilabelrendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,7 +112,7 @@ Before multi-level axis labels are rendered, the axisMultiLabelRender event will
 {% previewsample "page.domainurl/samples/chart/chart-events/axisMultiLabelRender" %}
 
 ### multiLevelLabelClick
-The multiLevelLabelClick event will be triggered when a multi-level axis label segment is clicked. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imultilevellabelclickeventargs).
+Triggered when a multi-level axis label segment is clicked. Requires the `MultiLevelLabelService` provider and `multiLevelLabels` to be configured on the axis. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imultilevellabelclickeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -111,7 +129,7 @@ The multiLevelLabelClick event will be triggered when a multi-level axis label s
 ## Series and Points
 
 ### seriesRender
-Before a series is rendered, the seriesRender event will be triggered to customize series appearance and properties. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iseriesrendereventargs).
+Triggered before a series is rendered so you can customize its appearance and properties (for example, fill, opacity, border, width, or `columnWidth`). To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iseriesrendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,7 +144,7 @@ Before a series is rendered, the seriesRender event will be triggered to customi
 {% previewsample "page.domainurl/samples/chart/chart-events/seriesRender" %}
 
 ### pointClick
-The pointClick event will be triggered when a data point or its symbol is clicked. Use this event to perform actions such as highlighting, drilling down, or showing custom details for the selected point. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointeventargs).
+Triggered when a data point or its symbol is clicked. Use this event to perform actions such as highlighting, drilling down, or showing custom details for the selected point. Inspect `args.point`, `args.series`, `args.pointIndex`, and `args.seriesIndex` for details. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,7 +159,7 @@ The pointClick event will be triggered when a data point or its symbol is clicke
 {% previewsample "page.domainurl/samples/chart/chart-events/pointClick" %}
 
 ### pointDoubleClick
-The pointDoubleClick event will be triggered when a data point or its symbol is double-clicked. Use this event for quick-edit workflows, navigation, or toggling detailed views for the target point. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointeventargs).
+Triggered when a data point or its symbol is double-clicked. Use this event for quick-edit workflows, navigation, or toggling detailed views for the target point. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -156,7 +174,7 @@ The pointDoubleClick event will be triggered when a data point or its symbol is 
 {% previewsample "page.domainurl/samples/chart/chart-events/pointDoubleClick" %}
 
 ### pointMove
-The pointMove event will be triggered when the pointer moves over a data point. Use this event to show contextual UI, update external indicators, or track the hovered point dynamically. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointeventargs).
+Triggered when the pointer moves over a data point. Use this event to show contextual UI, update external indicators, or track the hovered point dynamically. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,7 +189,7 @@ The pointMove event will be triggered when the pointer moves over a data point. 
 {% previewsample "page.domainurl/samples/chart/chart-events/pointMove" %}
 
 ### pointRender
-Before an individual data point is rendered, the pointRender event will be triggered to customize its visual (color, border, shape, size, corner radius). To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointrendereventargs).
+Triggered before an individual data point is rendered so you can customize its visual properties such as `fill`, `border`, `shape`, size, and corner radius. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ipointrendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -186,7 +204,7 @@ Before an individual data point is rendered, the pointRender event will be trigg
 {% previewsample "page.domainurl/samples/chart/chart-events/pointRender" %}
 
 ### textRender (Data Labels)
-Before a data label is rendered, the textRender event will be triggered to customize label text, style, template, or position. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/itextrendereventargs).
+Triggered before a data label is rendered so you can customize label text, style, template, or position. You can also set `args.font` and `args.color` to format the label. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/itextrendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,9 +218,11 @@ Before a data label is rendered, the textRender event will be triggered to custo
   
 {% previewsample "page.domainurl/samples/chart/chart-events/textRender" %}
 
+## Data Editing (Drag)
+
 ### dragStart
 
-Triggered when a data point drag operation begins on a series with dragging enabled (via dragSettings). Use this event to validate the drag action, apply constraints, or cancel the drag before it proceeds. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/idataeditingeventargs).
+Triggered when a data point drag operation begins on a series with dragging enabled (via `dragSettings`). Requires the `DataEditingService` provider and the series to have `dragSettings.enable = true`. Use this event to validate the drag action, apply constraints, or cancel the drag before it proceeds. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/idataeditingeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -218,7 +238,7 @@ Triggered when a data point drag operation begins on a series with dragging enab
 
 ### drag
 
-Triggered continuously while a data point is being dragged. Use this event to provide live feedback, enforce boundaries, or update UI as the point’s position changes. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/idataeditingeventargs).
+Triggered continuously while a data point is being dragged. Use this event to provide live feedback, enforce boundaries, or update the UI as the point’s position changes. Requires the `DataEditingService` provider. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/idataeditingeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,7 +254,7 @@ Triggered continuously while a data point is being dragged. Use this event to pr
 
 ### dragEnd
 
-Triggered when a data point drag operation is completed (pointer released) and the new value is committed. Use this event to persist changes, refresh related UI, or perform post-edit actions. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/idataeditingeventargs).
+Triggered when a data point drag operation completes (pointer released) and the new value is committed. Use this event to persist changes, refresh related UI, or perform post-edit actions. Requires the `DataEditingService` provider. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/idataeditingeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -251,7 +271,7 @@ Triggered when a data point drag operation is completed (pointer released) and t
 ## Tooltip
 
 ### tooltipRender
-Before a tooltip for a single series point is shown, the tooltipRender event will be triggered to customize content and style. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/itooltiprendereventargs).
+Triggered before a tooltip for a point in a single-series tooltip is shown so you can customize content and style. Requires the `TooltipService` provider and `tooltip.enable = true`. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/itooltiprendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -266,7 +286,7 @@ Before a tooltip for a single series point is shown, the tooltipRender event wil
 {% previewsample "page.domainurl/samples/chart/chart-events/tooltipRender" %}
 
 ### sharedTooltipRender
-Before a shared tooltip is shown (multiple series at the same x-value), the sharedTooltipRender event will be triggered to customize aggregated content. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/isharedtooltiprendereventargs).
+Triggered before a shared tooltip is shown (aggregating multiple series at the same x-value) so you can customize the aggregated content. Requires the `TooltipService` provider and `tooltip.shared = true`. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/isharedtooltiprendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -283,7 +303,7 @@ Before a shared tooltip is shown (multiple series at the same x-value), the shar
 ## Legend
 
 ### legendRender
-Before a legend item is rendered, the legendRender event will be triggered to customize the legend text, shape, and fill. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ilegendrendereventargs).
+Triggered before a legend item is rendered so you can customize the legend text, shape, and fill. The `shape` value must be a valid `LegendShape` enum value (for example, `Circle`, `Rectangle`, `Diamond`). To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ilegendrendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -298,7 +318,7 @@ Before a legend item is rendered, the legendRender event will be triggered to cu
 {% previewsample "page.domainurl/samples/chart/chart-events/legendRender" %}
 
 ### legendClick
-The legendClick event will be triggered when a legend item is clicked. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ilegendclickeventargs).
+Triggered when a legend item is clicked. Use this event to filter, isolate, or highlight related data in response to the selection. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ilegendclickeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -315,7 +335,7 @@ The legendClick event will be triggered when a legend item is clicked. To know m
 ## Annotations
 
 ### annotationRender
-Before the chart annotation is rendered, the annotationRender event will be triggered. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iannotationrendereventargs).
+Triggered before each chart annotation is rendered so you can customize or cancel it. Requires the `ChartAnnotationService` provider and an `annotations` configuration on the chart. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iannotationrendereventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -332,7 +352,7 @@ Before the chart annotation is rendered, the annotationRender event will be trig
 ## Zooming and Scrolling
 
 ### zooming
-During zoom or pan interactions, the zooming event will be triggered, providing per-axis zoom information that can be modified or canceled. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/izoomingeventargs).
+Triggered during zoom or pan interactions, providing per-axis zoom information that can be modified or canceled. Requires the `ZoomService` provider and `zoomSettings` to be configured on the chart. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/izoomingeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -347,7 +367,7 @@ During zoom or pan interactions, the zooming event will be triggered, providing 
 {% previewsample "page.domainurl/samples/chart/chart-events/zooming" %}
 
 ### zoomComplete
-After a zoom or pan action completes for an axis, the zoomComplete event will be triggered. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/izoomcompleteeventargs).
+Triggered after a zoom or pan action completes for an axis. Requires the `ZoomService` provider and `zoomSettings` to be configured on the chart. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/izoomcompleteeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -362,7 +382,7 @@ After a zoom or pan action completes for an axis, the zoomComplete event will be
 {% previewsample "page.domainurl/samples/chart/chart-events/zoomComplete" %}
 
 ### scrollChanged
-During scrollbar interactions, the scrollChanged event will be triggered to indicate visible range or zoom changes. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iscrolleventargs).
+Triggered during scrollbar interactions to indicate visible range or zoom changes. Requires the `ScrollBarService` provider and `scrollbarSettings.enable = true` on the axis. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iscrolleventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -376,10 +396,40 @@ During scrollbar interactions, the scrollChanged event will be triggered to indi
   
 {% previewsample "page.domainurl/samples/chart/chart-events/scrollChanged" %}
 
+### scrollStart
+Triggered when a scrollbar interaction begins. Use this event to capture the previous range before the user changes the viewport, or to apply initial constraints when scrolling starts. Requires the `ScrollBarService` provider and `scrollbarSettings.enable = true` on the axis. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iscrolleventargs).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/chart-events/scrollStart/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/chart-events/scrollStart/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/chart-events/scrollStart" %}
+
+### scrollEnd
+Triggered when a scrollbar interaction ends and the new viewport range is committed. Use this event to persist the visible range or to refresh related UI. Requires the `ScrollBarService` provider and `scrollbarSettings.enable = true` on the axis. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iscrolleventargs).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/chart-events/scrollEnd/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/chart-events/scrollEnd/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/chart-events/scrollEnd" %}
+
 ## Selection and Drag
 
 ### dragComplete
-After a drag-selection area or zoom region is completed, the dragComplete event will be triggered. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/idragcompleteeventargs).
+Triggered after a drag-selection area or zoom region is completed. Requires the `SelectionService` provider and `selectionMode` to be set to a drag-based value (for example, `DragXY`, `DragX`, or `DragY`). To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/idragcompleteeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -394,7 +444,7 @@ After a drag-selection area or zoom region is completed, the dragComplete event 
 {% previewsample "page.domainurl/samples/chart/chart-events/dragComplete" %}
 
 ### selectionComplete
-After a selection action (by click or drag) completes, the selectionComplete event will be triggered. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iselectioncompleteeventargs).
+Triggered after a selection action (by click or drag) completes. Requires the `SelectionService` provider and `selectionMode` to be set to a value that enables selection (for example, `Point`, `Series`, `Cluster`, `DragXY`). To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iselectioncompleteeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -411,7 +461,7 @@ After a selection action (by click or drag) completes, the selectionComplete eve
 ## Mouse Events
 
 ### chartMouseDown
-The chartMouseDown event will be triggered when a mouse down action occurs over the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
+Triggered when a mouse down action occurs over the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -426,7 +476,7 @@ The chartMouseDown event will be triggered when a mouse down action occurs over 
 {% previewsample "page.domainurl/samples/chart/chart-events/chartMouseDown" %}
 
 ### chartMouseMove
-The chartMouseMove event will be triggered when the mouse moves over the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
+Triggered when the mouse moves over the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -441,7 +491,7 @@ The chartMouseMove event will be triggered when the mouse moves over the chart a
 {% previewsample "page.domainurl/samples/chart/chart-events/chartMouseMove" %}
 
 ### chartMouseUp
-The chartMouseUp event will be triggered when a mouse up action occurs over the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
+Triggered when a mouse up action occurs over the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -456,7 +506,7 @@ The chartMouseUp event will be triggered when a mouse up action occurs over the 
 {% previewsample "page.domainurl/samples/chart/chart-events/chartMouseUp" %}
 
 ### chartMouseLeave
-The chartMouseLeave event will be triggered when the mouse leaves the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
+Triggered when the mouse leaves the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -471,7 +521,7 @@ The chartMouseLeave event will be triggered when the mouse leaves the chart area
 {% previewsample "page.domainurl/samples/chart/chart-events/chartMouseLeave" %}
 
 ### chartMouseClick
-The chartMouseClick event will be triggered when a mouse click occurs within the chart area. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
+Triggered when a mouse click occurs within the chart area (axes, series, legend, tooltip, etc.). To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -486,7 +536,7 @@ The chartMouseClick event will be triggered when a mouse click occurs within the
 {% previewsample "page.domainurl/samples/chart/chart-events/chartMouseClick" %}
 
 ### chartDoubleClick
-The chartDoubleClick event will be triggered when a double-click occurs within the chart area. Use this event to reset zoom, toggle modes, or open detailed panels based on the double-click location. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
+Triggered when a double-click occurs within the chart area. Use this event to reset zoom, toggle modes, or open detailed panels based on the double-click location. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/imouseeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -503,7 +553,7 @@ The chartDoubleClick event will be triggered when a double-click occurs within t
 ## Life cycle and Layout
 
 ### load
-Before the chart starts initial rendering, the load event will be triggered. Use this event to set themes, localization, palettes, or modify chart/series properties programmatically prior to rendering. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iloadedeventargs).
+Triggered before the chart starts initial rendering. Use this event to set themes, localization, palettes, or modify chart/series properties programmatically prior to rendering. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iloadedeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -518,7 +568,7 @@ Before the chart starts initial rendering, the load event will be triggered. Use
 {% previewsample "page.domainurl/samples/chart/chart-events/load" %}
 
 ### loaded
-After the chart is fully loaded and initial rendering is completed, the loaded event will be triggered. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iloadedeventargs).
+Triggered after the chart is fully loaded and initial rendering is complete. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iloadedeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -533,7 +583,7 @@ After the chart is fully loaded and initial rendering is completed, the loaded e
 {% previewsample "page.domainurl/samples/chart/chart-events/loaded" %}
 
 ### beforeResize
-Before a resize is performed, the beforeResize event will be triggered, and you can cancel the subsequent resizing. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ibeforeresizeeventargs).
+Triggered before a resize is performed; you can cancel the subsequent resize by setting `args.cancel = true`. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/ibeforeresizeeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -548,7 +598,7 @@ Before a resize is performed, the beforeResize event will be triggered, and you 
 {% previewsample "page.domainurl/samples/chart/chart-events/beforeResize" %}
 
 ### resized
-After the chart has been resized, the resized event will be triggered. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iresizeeventargs).
+Triggered after the chart has been resized. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iresizeeventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -563,7 +613,7 @@ After the chart has been resized, the resized event will be triggered. To know m
 {% previewsample "page.domainurl/samples/chart/chart-events/resized" %}
 
 ### beforePrint
-The beforePrint event will be triggered before the chart is printed, providing access to the HTML content being printed. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iprinteventargs).
+Triggered before the chart is printed, providing access to the HTML content being printed via `args.htmlContent`. Use this to add watermarks, headers/footers, or to modify the cloned chart element before printing. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iprinteventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -578,7 +628,7 @@ The beforePrint event will be triggered before the chart is printed, providing a
 {% previewsample "page.domainurl/samples/chart/chart-events/beforePrint" %}
 
 ### beforeExport
-Before a chart export operation begins (such as exporting to PNG, JPEG, SVG, or PDF), the beforeExport event will be triggered, allowing you to customize file name, export type, page settings, or cancel the export. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iexporteventargs).
+Triggered before a chart export operation begins (such as exporting to PNG, JPEG, SVG, or PDF), allowing you to customize `fileName`, export type, page settings, theme, or cancel the export. Requires the `ExportService` provider. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/iexporteventargs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -593,7 +643,7 @@ Before a chart export operation begins (such as exporting to PNG, JPEG, SVG, or 
 {% previewsample "page.domainurl/samples/chart/chart-events/beforeExport" %}
 
 ### afterExport
-After a chart export operation completes, the afterExport event will be triggered. Use this event to perform post-export actions such as notifications, logging, or initiating downloads in custom flows. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart/index-default).
+Triggered after a chart export operation completes. Use this event to perform post-export actions such as notifications, logging, or initiating downloads in custom flows. Requires the `ExportService` provider. To know more about the arguments of this event, refer [`here`](https://ej2.syncfusion.com/angular/documentation/api/chart#afterexport).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -607,3 +657,29 @@ After a chart export operation completes, the afterExport event will be triggere
 
 {% previewsample "page.domainurl/samples/chart/chart-events/afterExport" %}
 
+## Common event arguments
+
+Most event argument objects share a common shape. The table below lists the properties you are most likely to use.
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `args.chart` | `Chart` | The chart instance that raised the event. |
+| `args.series` | `Series` | The series associated with the event (point, render, and selection events). |
+| `args.point` | `Points` | The data point associated with the event (point, text render, and tooltip events). |
+| `args.pointIndex` | `number` | Index of the data point in its series. |
+| `args.seriesIndex` | `number` | Index of the series in the series collection. |
+| `args.cancel` | `boolean` | Set to `true` to cancel the default action of the event. |
+| `args.x`, `args.y` | `number` | Mouse coordinates in the chart's local coordinate system (mouse events). |
+| `args.target` | `HTMLElement` | The DOM element under the pointer (mouse events). |
+
+For complete properties of a specific event, follow the API link in each section above.
+
+## Troubleshooting
+
+- **Event does not fire** — Make sure the relevant service is registered in the component's `providers` array (for example, `TooltipService` for tooltip events, `ZoomService` for zoom events, `SelectionService` for selection events, `DataEditingService` for drag-to-edit events).
+- **`args.cancel` has no effect** — Only events that explicitly mention cancellation in the API reference support `args.cancel`. For example, `beforeResize` supports cancellation, but `loaded` does not.
+- **`tooltipRender` does not fire** — Tooltip events only fire when `tooltip.enable = true`. `sharedTooltipRender` additionally requires `tooltip.shared = true`.
+- **`zooming` / `zoomComplete` do not fire** — Configure `zoomSettings` and ensure `enableSelectionZooming`, `enableMouseWheelZooming`, or `enablePinchZooming` is set to `true`.
+- **`selectionComplete` / `dragComplete` do not fire** — Set `selectionMode` to a value other than `None` (for example, `Point`, `Series`, `Cluster`, `DragXY`).
+- **`dragStart` / `drag` / `dragEnd` do not fire** — The series must have `dragSettings.enable = true` and the `DataEditingService` provider must be registered.
+- **`scrollChanged` / `scrollStart` / `scrollEnd` do not fire** — Enable the scrollbar on the axis (`scrollbarSettings.enable = true`) and register the `ScrollBarService` provider.

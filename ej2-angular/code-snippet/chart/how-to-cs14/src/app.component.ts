@@ -1,45 +1,35 @@
-import { ChartModule, ChartAllModule, AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService } from '@syncfusion/ej2-angular-grids'
-import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import {
-    LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService, CategoryService,
-    StepAreaSeriesService, SplineSeriesService, ScrollBarService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-    SelectionService, ScatterSeriesService, ZoomService, ColumnSeriesService, AreaSeriesService, RangeAreaSeriesService
+    DateTimeService, AreaSeriesService, RangeAreaSeriesService
 } from '@syncfusion/ej2-angular-charts'
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 imports: [
-         ChartModule, ChartAllModule, AccumulationChartAllModule, AccumulationChartModule, GridModule, DialogModule
+         ChartModule
     ],
 
-providers: [LineSeriesService, DateTimeService, ColumnSeriesService, DataLabelService, ZoomService, StackingColumnSeriesService, CategoryService,
-        StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-        PieSeriesService, AccumulationTooltipService, ScrollBarService, AccumulationDataLabelService, SelectionService, ScatterSeriesService,
-        PageService, AreaSeriesService, RangeAreaSeriesService ],
+providers: [DateTimeService, AreaSeriesService, RangeAreaSeriesService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-chart style='display:block;' [chartArea]='chartArea' align='center' [title]='title' [primaryXAxis]='primaryXAxis'
         [primaryYAxis]='primaryYAxis'>
         <e-series-collection>
-            <e-series [dataSource]='data' type='Area' xName='x' yName='y' [marker]='marker' name='Product A' opacity=0.5 width=2
-            border-color='transparent'>
+            <e-series [dataSource]='data' type='Area' xName='x' yName='y' [marker]='marker' name='Product A' fill='rgba(0, 114, 189, 0.5)' opacity=0.5 width=2
+            border-color='transparent' zOrder=1>
             </e-series>
-            <e-series [dataSource]='data1' type='Area' xName='x' yName='y' [marker]='marker' name='Product B' opacity=0.5
-            width=2 border-color='transparent'>
+            <e-series [dataSource]='data1' type='Area' xName='x' yName='y' [marker]='marker' name='Product B' fill='rgba(214, 39, 40, 0.5)' opacity=0.5
+            width=2 border-color='transparent' zOrder=2>
             </e-series>
             <e-series [dataSource]='data2' type='RangeArea' xName='x' high='high' low='low' [marker]='marker' name='Product C'
-            opacity=1 width=2 border-color='transparent'>
+            fill='rgba(162, 207, 87, 0.6)' opacity=1 width=2 border-color='transparent' zOrder=0>
             </e-series>
         </e-series-collection>
         </ejs-chart>`
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
     public chartArea: Object = {
         border: {
             width: 0
@@ -56,9 +46,12 @@ export class AppComponent implements OnInit {
         { x: new Date(2004, 0, 1), y: 3.6 }, { x: new Date(2005, 0, 1), y: 3 }
     ];
     public data2: Object[] = [
-        { x: new Date(2003, 6, 1), high: 3.3, low: 3.3 },
+        { x: new Date(2000, 0, 1), high: 4, low: 2.6 },
+        { x: new Date(2001, 0, 1), high: 3, low: 2.8 },
+        { x: new Date(2002, 0, 1), high: 3.8, low: 2.6 },
+        { x: new Date(2003, 0, 1), high: 3.4, low: 3 },
         { x: new Date(2004, 0, 1), high: 3.6, low: 3.2 },
-        { x: new Date(2004, 4, 1), high: 3.4, low: 3.4 }
+        { x: new Date(2005, 0, 1), high: 3.9, low: 3 }
     ];
     //Initializing Primary X Axis
     public primaryXAxis: Object = {
@@ -83,8 +76,5 @@ export class AppComponent implements OnInit {
     public title: string = 'Average Sales Comparison';
     constructor() {
         // code
-    }ngOnInit(): void {
-        throw new Error('Method not implemented.');
     }
-;
 }

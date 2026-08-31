@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # How to customize the day header in Angular Calendar
 
-You can change the format of the day that to be displayed in header using [`dayHeaderFormat`](https://ej2.syncfusion.com/angular/documentation/api/calendar#dayheaderformat) property. By default, the format is `Short`.
+You can customize the format of the day names displayed in the Calendar header using the [`dayHeaderFormat`](https://ej2.syncfusion.com/angular/documentation/api/calendar#dayheaderformat) property. The default value is `Short`.
 
-You can find the possible formats on below.
+The dayHeaderFormat property supports the following values:
 
 | **Name** | **Description** |
 |------|---------------------|
-| `Short` | Sets the short format of day name (like Su ) in day header. |
-| `Narrow` | Sets the single character of day name (like S ) in day header. |
-| `Abbreviated` | Sets the min format of day name (like Sun ) in day header. |
-| `Wide` | Sets the long format of day name (like Sunday ) in day header. |
+| `Short` | Displays the short form of the day name, such as Su. |
+| `Narrow` | Displays a single-character day name, such as S. |
+| `Abbreviated` | Displays the abbreviated day name, such as Sun. |
+| `Wide` | Displays the full day name, such as Sunday. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

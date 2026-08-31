@@ -1,16 +1,12 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts'
-import { CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService, LegendService, DataLabelService, MultiLevelLabelService, SelectionService } from '@syncfusion/ej2-angular-charts'
 import { Component, OnInit } from '@angular/core';
+import { ChartModule, CategoryService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts';
 
 @Component({
-imports: [
-         ChartModule
-    ],
-
-providers: [ CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService,LegendService, DataLabelService, MultiLevelLabelService, SelectionService],
-standalone: true,
+    imports: [ChartModule],
+    providers: [CategoryService, ColumnSeriesService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold'></e-series>
         </e-series-collection>
@@ -18,9 +14,10 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    public primaryYAxis?: Object;
+
     ngOnInit(): void {
         this.chartData = [
              { country: "USA", gold: 50 },
@@ -30,7 +27,7 @@ export class AppComponent implements OnInit {
              { country: "France", gold: 50 },
              { country: "Germany", gold: 40 },
              { country: "Italy", gold: 40 },
-             { country: "Sweden", gold: 30, silver: 25 }
+             { country: "Sweden", gold: 30 }
         ];
         this.primaryXAxis = {
             valueType: 'Category',
@@ -42,5 +39,4 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Olympic Medals';
     }
-
 }

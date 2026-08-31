@@ -10,18 +10,24 @@ domainurl: ##DomainURL##
 
 # How to prevent content swipe selection in Angular Tab
 
-The [`swipeMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#swipeMode) property in the Tab component enables users to navigate between tabs using swipe gestures, enhancing the navigation experience. It supports both touch and mouse inputs for intuitive tab switching.
+The [`swipeMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#swipemode) property in the Tab component enables users to navigate between tabs using swipe gestures. It supports both touch and mouse inputs for intuitive tab switching.
 
-In certain scenarios, such as when tabs contain critical elements like forms or interactive content, accidental swipes can disrupt user workflow. For instance, when users are filling out forms, unintended swipe gestures might cause unexpected tab changes, potentially leading to data loss or workflow interruptions.
+In certain scenarios—such as when tabs contain critical elements like forms or interactive content—accidental swipes can disrupt user workflow. Unintended swipes while users fill out a form might cause unexpected tab changes and potential data loss.
 
-To prevent such issues, you can customize the [`swipeMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#swipeMode) property based on the needs of the application. By adjusting this setting, you can balance smooth, intuitive navigation with protecting the user experience and safeguarding against accidental tab switches.
+To prevent these issues, configure the [`swipeMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#swipemode) property based on the application's needs. Adjusting this setting balances smooth navigation with safeguards against accidental tab switches.
 
-The [`swipeMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#swipeMode) property provides the following options for the Tab component:
+## Available modes
 
-* **Both** - By default, this option allows the user to swipe between tabs using both touch and mouse actions.
-* **Touch** - This option allows users to swipe between tabs using touch gestures only.
-* **Mouse** - This option allows users to swipe between tabs using mouse gestures only.
-* **None** - This disables both touch and mouse swipe actions, preventing any unintended tab switches.
+| Mode | Behavior |
+|------|----------|
+| **`Both`** (default) | Allow swipes between tabs using both touch and mouse actions. |
+| **`Touch`** | Allow swipes between tabs using touch gestures only. Mouse drag is disabled. |
+| **`Mouse`** | Allow swipes between tabs using mouse gestures only. Touch swipes are disabled. |
+| **`None`** | Disable both touch and mouse swipes; users can only switch via clicks or keyboard. |
+
+## Detecting the current mode
+
+Read `this.tabInstance.swipeMode` at runtime to log the active mode for diagnostics.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -34,3 +40,8 @@ The [`swipeMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#swip
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/swipemode-cs1" %}
+
+## See Also
+
+* [Responsive Modes](../adaptive)
+* [Accessibility](../accessibility)

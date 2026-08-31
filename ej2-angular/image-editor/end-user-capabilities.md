@@ -11,17 +11,17 @@ domainurl: ##DomainURL##
 
 # End User Capabilities in Angular Image Editor
 
-The following operations are available for end-users and the same is explained briefly in these sections.
+The following operations are available for end-users and are explained briefly in the following sections.
 
 ## Open an image
 
-To open an image in the image editor, do the following steps.
+To open an image in the image editor, follow these steps.
 
-* Click the Open icon from the left side of the toolbar.
+* Click the Open icon on the left side of the toolbar.
 
-* The file explorer lists only JPEG, PNG, JPG, SVG, WEBP and BMP format files.
+* The file explorer lists only JPEG, PNG, SVG, WEBP, and BMP format files.
 
-* Select the image from the list of the images from the file explorer window.
+* Select the image from the list in the file explorer window.
 
 ![Opening an image showcase](../code-snippet/image-editor/images/open.gif)
 
@@ -29,89 +29,89 @@ To open an image in the image editor, do the following steps.
 
 Image zooming can be performed in the following ways.
 
-* Using toolbar.
+* Using the toolbar.
 
-* Using pinch zoom in touch enabled devices.
+* Using pinch zoom on touch-enabled devices.
 
-* Using mouse wheel.
+* Using the mouse wheel.
 
-* Using keyboard.
+* Using the keyboard.
 
 ![Zoom In/ Out an image showcase](../code-snippet/image-editor/images/zoom.jpg)
 
-### Using toolbar
+### Using the toolbar
 
-To zoom in or out the image in the image editor, do the following steps.
+To zoom in or out of the image in the image editor, follow these steps. Ensure an image is already opened (see [Open an image](#open-an-image)).
 
-* The Zoom In/ Out option only enabled after opening the image.
+* The Zoom In / Zoom Out option is enabled only after opening the image. Click the Zoom In or Zoom Out button to zoom the image.
 
-### Using pinch
+### Using pinch zoom
 
-To zoom in or out the image in the image editor, do the following steps.
+To zoom in or out of the image in the image editor, follow these steps.
 
 * Touch with two fingers to perform zooming.
 
-* Zoom in and out controlled by touch gestures.
+* Zooming in and out is controlled by touch gestures.
 
-### Using mouse wheel
+### Using the mouse wheel
 
-To zoom in or out the image in the image editor, do the following steps.
+To zoom in or out of the image in the image editor, follow these steps.
 
-* Press the ctrl key and scroll the mouse wheel to perform zooming.
+* Press the Ctrl key and scroll the mouse wheel to perform zooming.
 
-* The zoom in and out controlled by the mouse wheel.
+* Zooming in and out is controlled by the mouse wheel.
 
-### Using keyboard
+### Using the keyboard
 
-To zoom in or out the image in the image editor, do the following steps.
+To zoom in or out of the image in the image editor, follow these steps.
 
-* Press the ctrl key with ‘+’ button from the keyboard to zoom in an image.
+* Press <kbd>Ctrl</kbd> + <kbd>+</kbd> to zoom in on an image.
 
-* Press the ctrl key with ‘-’ button from the keyboard to zoom out an image.
+* Press <kbd>Ctrl</kbd> + <kbd>-</kbd> to zoom out of an image.
 
 ## Panning
 
-To pan an image in the image editor, do the following steps.
+To pan an image in the image editor, follow these steps.
 
-* Click on the image and do dragging to move or pan the image.
+* Click the image and drag to move or pan it.
 
-* Panning option will be enabled in the following two cases.
+* The panning option is enabled in the following two cases:
 
-    * If the selection is applied for cropping an image.
+    * When the selection is applied for cropping an image.
 
-    * If the image size exceeds the canvas size while zooming an image.
+    * When the image size exceeds the canvas size while zooming an image.
 
 ![Panning an image showcase](../code-snippet/image-editor/images/pan.gif)
 
 ## Cropping and image transformation
 
-To crop an image in the image editor, do the following steps.
+To crop an image in the image editor, follow these steps.
 
 * Cropping can be performed based on the selection in an image editor.
 
-* To perform selection, click the crop button in the toolbar which opens the contextual toolbar that shows crop selection options, rotate options, flip options, and straightening options.
+* To perform selection, click the crop button in the toolbar, which opens the contextual toolbar that shows crop selection options, rotate options, flip options, and straightening options.
 
-* Click the crop selection button and select the type of selection such as custom, circle, square, and ratio selection from the popup.
+* Click the crop selection button and select the type of selection, such as custom, circle, square, or ratio selection, from the popup.
 
-* Once selection is completed, do panning to move the image to get the cropped region.
+* Once the selection is completed, pan to move the image to get the cropped region.
 
-* Utilize the rotate and flip buttons along with the straighten slider to perform image transformations, including any inserted annotations.
+* Use the rotate and flip buttons along with the straighten slider to perform image transformations, including any inserted annotations.
 
-* Once the cropping region is finalized in the image click the tick icon at the top right of the toolbar to crop the image.
+* Once the cropping region is finalized on the image, click the tick icon at the top right of the toolbar to crop the image.
 
 ![Cropping and Image Transformation showcase](../code-snippet/image-editor/images/crop.jpg)
 
 ## Annotations
 
-To add annotations to an image in the image editor, do the following steps.
+To add annotations to an image in the image editor, follow these steps.
 
-* To add annotation, click the annotation button in the toolbar and select the type of annotations such as Line, Rectangle, Ellipse, Path, Arrow, Text, or Freehand drawing to be inserted to the image editor.
+* To add an annotation, click the annotation button in the toolbar and select the type of annotation, such as Line, Rectangle, Ellipse, Path, Arrow, Text, or Freehand drawing, to insert it into the image editor.
 
-* Once the annotation is added to the image, that can be repositioned by clicking and dragging the annotations using mouse as well as resized by clicking and resizing the selection circle to be placed around the annotations.
+* Once the annotation is added to the image, it can be repositioned by clicking and dragging the annotation with the mouse, and resized by clicking and dragging the selection circles placed around the annotation.
 
-* To rotate annotations, you can simply grab the circle located at the bottom of the annotation. The rotation can be applicable to all the annotations except text annotation.
+* To rotate annotations, drag the rotation handle (circle) located at the bottom of the annotation. Rotation is applicable to all annotations except text annotations.
 
-* Customize the annotations by changing their color, stroke width, font family, and font size through the contextual toolbar. The contextual toolbar will be enabled whenever the annotations are selected.
+* Customize the annotations by changing their color and stroke width through the contextual toolbar (text annotations also support font family and font size). The contextual toolbar is enabled whenever an annotation is selected.
 
 * When annotations are selected in the Image Editor, the quick access toolbar becomes active, providing convenient access to various actions such as duplicating, deleting, or editing text associated with the selected annotation. This toolbar enables users to perform these common operations quickly and efficiently, streamlining their workflow and enhancing the overall editing experience.
 
@@ -119,67 +119,70 @@ To add annotations to an image in the image editor, do the following steps.
 
 ## Filtering and fine-tune
 
-To perform fine-tuning on an image in the image editor, do the following steps.
+### Fine-tune
 
-* Click the fine-tune button which displays the list of fine-tuning available in the image editor.
+To perform fine-tuning on an image in the image editor, follow these steps.
 
-* Click one of the fine-tune options from the list of options which shows a slider to adjust the corresponding filter.
+* Click the fine-tune button, which displays the list of fine-tuning options available in the image editor.
 
-* Click on the canvas or tick icon at the right corner of the toolbar in the image editor to apply the modifications.
+* Click one of the fine-tune options from the list, which shows a slider to adjust the corresponding setting.
 
-![Filtering and finetune showcase](../code-snippet/image-editor/images/finetune.jpg)
+* Click on the canvas or the tick icon at the right corner of the toolbar in the image editor to apply the modifications.
 
-To apply filters on an image in the image editor, do the following steps.
+![Filtering and fine-tune showcase](../code-snippet/image-editor/images/finetune.jpg)
 
-* Click the filter button which displays the list of filters available in the image editor.
+### Filters
 
-* Click the filter from list of options to apply the corresponding filter to an image.
+To apply filters to an image in the image editor, follow these steps.
 
-* Click on the canvas or tick icon at the right corner of the toolbar in the image editor to apply the modifications.
+* Click the filter button, which displays the list of filters available in the image editor.
 
-![Filtering and finetune showcase](../code-snippet/image-editor/images/filter.jpg)
+* Click the filter from the list of options to apply the corresponding filter to the image.
 
-## Undo and redo the operations
+* Click on the canvas or the tick icon at the right corner of the toolbar in the image editor to apply the modifications.
 
-To undo and redo the actions performed in an image editor, do the following steps.
+![Filtering and fine-tune showcase](../code-snippet/image-editor/images/filter.jpg)
 
-* The undo button will be enabled once the action is performed in an image editor.
+## Undo and redo operations
 
-* The redo button will be enabled once the undo action is performed in an image editor.
+To undo and redo the actions performed in the image editor, follow these steps.
 
-* Click the undo or redo button at the left side of the toolbar to perform undo and redo operation.
+* The undo button is enabled once an action is performed in the image editor.
 
-* Ctrl + Z and Ctrl + Y facilitates this process by allowing users to undo and redo actions, respectively.
+* The redo button is enabled once an undo action is performed in the image editor.
+
+* Click the undo or redo button on the left side of the toolbar to perform the undo or redo operation.
+
+* <kbd>Ctrl</kbd> + <kbd>Z</kbd> and <kbd>Ctrl</kbd> + <kbd>Y</kbd> facilitate this process by allowing users to undo and redo actions, respectively.
 
 ![Undo and redo showcase](../code-snippet/image-editor/images/undo-redo.gif)
 
 ## Reset an image
 
-To revert all the changes done in an image editor, do the following steps.
+To revert all the changes made in the image editor, follow these steps.
 
-* Click the reset button which is located on the right side of the toolbar.
+* Click the reset button, which is located on the right side of the toolbar.
 
-* This will revert all the changes performed in the image editor.
+* This will revert all the changes made in the image editor.
 
 ## Export an image
 
 To save the modified image in the Image Editor, follow these steps:
 
-* Click the Save Button
+* Click the Save button
     * Locate the Save button on the right side of the toolbar and click it.
 
-* Select the File Format
-    * In the export popup, choose your preferred file format (PNG, JPEG, SVG, or WEBP) to save the image with all 
-applied modifications.
+* Select the file format
+    * In the export popup, choose your preferred file format (PNG, JPEG, SVG, or WEBP) to save the image with all applied modifications.
 
-* Adjust Image Quality (JPEG Format Only)
+* Adjust image quality (JPEG format only)
     * If saving in JPEG, use the Image Quality slider to set the desired quality level (0-100). A higher value retains more detail but increases file size.
 
-* Download the Image
+* Download the image
     * Click Download to save the modified image to your device.
 
-* Use Keyboard Shortcut (Ctrl + S)
-    * Press Ctrl + S to download the image in the same format as the loaded image without opening the Save dialog. For example, if the loaded image is PNG, it will be saved as PNG.
+* Use the keyboard shortcut (Ctrl + S)
+    * Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to download the image in the same format as the loaded image without opening the Save dialog. For example, if the loaded image is PNG, it will be saved as PNG.
 
 ![Export an image showcase](../code-snippet/image-editor/images/save.jpg)
 

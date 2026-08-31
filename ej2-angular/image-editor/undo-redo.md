@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Undo and Redo in Angular Image Editor
 
-The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are Essential<sup style="font-size:70%">&reg;</sup> for maintaining control and flexibility during the editing process. 
+The undo and redo functionalities provide a way to reverse and repeat editing actions performed on an image. These features are essential for maintaining control and flexibility during the editing process. 
 
-In an image editor, the undo and redo history typically have a limited capacity, and the number of steps that can be stored is 16 steps, meaning that the editor keeps track of the most recent 16 actions performed on the image. Once the history reaches its maximum capacity, any new actions beyond the 16th step will result in the removal of the oldest action from the history.
+In an image editor, the undo and redo history typically has a limited capacity of 16 steps, meaning that the editor keeps track of the most recent 16 actions performed on the image. Once the history reaches its maximum capacity, any new actions beyond the 16th step will result in the removal of the oldest action from the history.
 
 ## Undo the action
 
@@ -22,7 +22,7 @@ The undo action in an image editor allows users to revert the most recent editin
 
 The Redo action in an image editor allows users to reapply previously undone actions or modifications to the image. When the redo command is triggered, the image editor reapplies the last action that was undone, bringing the image back to the state it was in after the action was initially applied. The redo is useful when users want to repeat an action that was previously undone or restore changes that were temporarily reversed. 
 
-In the following example, the [`undo`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#undo) and [`redo`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#redo) method is used in the button click event.
+The following example demonstrates both the `undo` and `redo` methods used in a button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

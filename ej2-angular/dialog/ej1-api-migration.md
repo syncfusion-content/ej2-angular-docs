@@ -44,7 +44,7 @@ This article describes the API migration process of Dialog component from Essent
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
 | Footer Content | **Property** :footerTemplateId<br/> `<ej-dialog id='dialog' [footerTemplateId]= 'sample'></ej-dialog>`| **Property:** footerTemplate<br/> `<ejs-dialog id='dialog' [footerTemplate]= '<button>Submit</button>'></ejs-dialog>` |
-| Footer action buttons | Not applicable | **Property** : buttons<br/> `<ejs-dialog id='dialog' [buttons]='buttons'></ejs-dialog>`<br/> **TS:**<br/> public buttons: Object=[{ click: dialogBtnClick, buttonModel: {content: 'OK',  isPrimary: true} }]  |
+| Footer action buttons | Not applicable | **Property** : buttons<br/> `<ejs-dialog id='dialog' [buttons]='buttons'></ejs-dialog>`<br/> **TS:**<br/> public buttons: Object = [{ click: dialogBtnClick.bind(this), buttonModel: { content: 'OK', isPrimary: true } }];  |
 | Footer visibility | **Property** : showFooter<br/> `<ej-dialog id='dialog' [showFooter]= 'true'></ej-dialog>` | Not Applicable |
 
 ## Content
@@ -117,7 +117,7 @@ This article describes the API migration process of Dialog component from Essent
 <!-- markdownlint-disable MD033 -->
 | **Behavior** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **Property in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
-| Sets the tooltip for dialog buttons | **Property** : tooltip<br/> `<ej-dialog id='dialog'  [tooltip]= 'tooltip'></ej-dialog>`<br/> **TS:** <br/> public  tooltip: object {  close: 'Exit'   }; | No Separate Property for tooltip. It renders based on locale text. |
+| Sets the tooltip for dialog buttons | **Property** : tooltip<br/> `<ej-dialog id='dialog'  [tooltip]= 'tooltip'></ej-dialog>`<br/> **TS:** <br/> public  tooltip: object {  close: 'Exit'   }; | No separate `tooltip` property. Customize the tooltip text via the dialog's locale text. Load your own string with `L10n.load(...)` for the desired culture and assign `locale` on the component. |
 
 ## Control State
 

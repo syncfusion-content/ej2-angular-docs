@@ -53,7 +53,7 @@ Input type creates an `input element` internally that acts as the container for 
 
 ### NumericTextBox
 
-* The `NumericTextBox` component can be included by importing the `NumericTextBox` module from `ej2-inputs`.
+* The `NumericTextBox` component can be included by importing the `NumericTextBoxModule` from `@syncfusion/ej2-angular-inputs`.
 
 * Initialize the `NumericTextBox` in template property, where the Toolbar item type is set as `Input`.
 
@@ -65,7 +65,7 @@ new NumericTextBox( { format: 'c2' })
 
 ### DropDownList
 
-* The `DropDownList` component can be included by importing the `DropDownList` module from `ej2-dropdowns`.
+* The `DropDownList` component can be included by importing the `DropDownListModule` from `@syncfusion/ej2-angular-dropdowns`.
 
 * Initialize the `DropDownList` in template property, where the Toolbar item type is set as `Input`.
 
@@ -77,7 +77,7 @@ new DropDownList({ width: 100 })
 
 ### CheckBox
 
-* The `CheckBox` component can be included by importing the `CheckBox` module from `ej2-buttons`.
+* The `CheckBox` component can be included by importing the `CheckBoxModule` from `@syncfusion/ej2-angular-buttons`.
 
 * Initialize the `CheckBox` in template property, where the Toolbar item type is set as `Input`.
 
@@ -89,7 +89,7 @@ new CheckBox({ label: 'Checkbox', checked: true })
 
 ### RadioButton
 
-* The `RadioButton` component can be included by importing the `RadioButton` module from `ej2-buttons`.
+* The `RadioButton` component can be included by importing the `RadioButtonModule` from `@syncfusion/ej2-angular-buttons`.
 
 * Initialize the `RadioButton` in template property, where the Toolbar item type is set as `Input`.
 
@@ -117,7 +117,7 @@ The above steps apply to all Syncfusion input based components.
 
 The [`tabIndex`](../api/toolbar/item/#tabindex) property of a Toolbar item enables tab key navigation for the item. By default, users can switch between items using the arrow keys, but the [`tabIndex`](../api/toolbar/item/#tabindex) property allows switching between items using the Tab and Shift+Tab keys as well.
 
-To use the [`tabIndex`](../api/toolbar/item/#tabindex) property, set it for each Toolbar item that requires tab key navigation. The [`tabIndex`](../api/toolbar/item/#tabindex) property should be set to a positive integer value. A value of 0 or a negative value will disable tab key navigation for the item.
+To use the [`tabIndex`](../api/toolbar/item/#tabindex) property, set it for each Toolbar item that requires tab key navigation. The [`tabIndex`](../api/toolbar/item/#tabindex) property should be set to a positive integer value. A negative value disables tab key navigation for the item, while a value of `0` enables tab navigation but follows the DOM order rather than the explicit index.
 
 For example, to enable tab key navigation for two Toolbar items:
 
@@ -137,9 +137,7 @@ import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
         `
 })
 
-export class AppComponent {
-
-}
+export class AppComponent { }
 ```
 
 With the above code, users can switch between the two Toolbar items using the Tab and Shift+Tab keys, in addition to using the arrow keys. The items will be navigated in the order specified by the [`tabIndex`](../api/toolbar/item/#tabindex) values.
@@ -162,9 +160,7 @@ import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
         `
 })
 
-export class AppComponent {
-
-}
+export class AppComponent { }
 ```
 
 In this case, users can switch between the two Toolbar items using the Tab and Shift+Tab keys, and the items will be navigated in the order in which they appear in the DOM.

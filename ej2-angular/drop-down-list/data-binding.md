@@ -10,19 +10,19 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular Dropdown List
 
-The DropDownList loads data from local data sources or remote data services through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#datasource) property. It supports `array` and `DataManager` data types.
+The DropDownList loads data from local data sources or remote data services through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#datasource) property. It supports `array` and `DataManager` data types.
 
 The DropDownList also supports different kinds of data services, such as OData, OData V4, and Web API, and data formats, such as XML, JSON, and JSONP, with the help of `DataManager` adapters.
 
 | Fields | Type | Description |
 |------|------|-------------|
-| [text](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#text) |  `string` | Specifies the display text of each list item. |
-| [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#value) |  `number` or `string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
-| [groupBy](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#groupby) |  `string` | Specifies the category under which the list item has to be grouped. |
-| [iconCss](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#iconcss) |  `string` | Specifies the icon class for each list item. |
-| [disabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#disabled) |
-`string` | Defines whether the particular field value is disabled or not. |
-| [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#htmlattributes) | `string` | Allows additional attributes such as title, disabled, etc., to configure the elements in various ways to meet the criteria.
+| [text](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) |  `string` | Specifies the display text of each list item. |
+| [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) |  `number` or `string` | Specifies the hidden data value mapped to each list item that should contain a unique value. |
+| [groupBy](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#groupby) |  `string` | Specifies the category under which the list item has to be grouped. |
+| [iconCss](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#iconcss) |  `string` | Specifies the icon class for each list item. |
+| [disabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#disabled) |
+`string` | Defines whether the field value is disabled or not. |
+| [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#htmlattributes) | `string` | Allows additional attributes such as title, disabled, etc., to configure the elements in various ways to meet the criteria.
 
 > When binding complex data to the DropDownList, ensure that the fields are mapped correctly. Otherwise, the selected item will be undefined.
 
@@ -32,7 +32,7 @@ Local data can be bound to the DropDownList from different types of arrays as de
 
 ### 1. Array of simple data
 
-The DropDownList supports loading an array of primitive data, such as strings and numbers. In this case, the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#text) fields are mapped to the same field.
+The DropDownList supports loading an array of primitive data, such as strings and numbers. In this case, the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields are mapped to the same field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -48,9 +48,9 @@ The DropDownList supports loading an array of primitive data, such as strings an
 
 ### 2. Binding to an array of objects
 
-The DropDownList can generate its list items from an array of objects. To do this, map the appropriate data source columns to the [fields](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#fields) property.
+The DropDownList can generate its list items from an array of objects. To do this, map the appropriate data source columns to the [fields](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#fields) property.
 
-In the following example, the `Id` and `Game` columns are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#text) fields, respectively.
+In the following example, the `Id` and `Game` columns are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -66,9 +66,9 @@ In the following example, the `Id` and `Game` columns are mapped to the [`value`
 
 ### 3. Binding to an array of complex objects
 
-The DropDownList can also be bound to an array of nested complex objects. To do this, provide the nested column name to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#text) fields.
+The DropDownList can also be bound to an array of nested complex objects. To do this, provide the nested column name to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields.
 
-In the following example, the `Code.Id` and `Country.Name` nested columns are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel/#text) fields, respectively.
+In the following example, the `Code.Id` and `Country.Name` nested columns are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -84,7 +84,7 @@ In the following example, the `Code.Id` and `Country.Name` nested columns are ma
 
 ## Binding remote data
 
-The DropDownList supports retrieving data from remote data services with the help of the `DataManager` component. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#query) property is used to fetch data from the database and bind it to the DropDownList.
+The DropDownList supports retrieving data from remote data services with the help of the `DataManager` component. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#query) property is used to fetch data from the database and bind it to the DropDownList.
 
 The following sample displays the first six contacts from the "Customers" table of the `Northwind` Data Service.
 

@@ -28,7 +28,7 @@ The following sample demonstrates closing the dialog when clicking outside the d
   
 {% previewsample "page.domainurl/samples/dialog/dlg-close-cs1" %}
 
-The following sample demonstrates rendering the dialog within a target container and closing it by clicking outside the dialog.
+The following sample renders the dialog inside a target container (`#modalTarget`) and ignores clicks that originate on the dialog itself or on the open button. Any other click closes the dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

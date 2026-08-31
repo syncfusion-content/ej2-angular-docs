@@ -1,5 +1,4 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { ChartComponent, LineSeriesService, CategoryService, TooltipService, DataLabelService, IAxisRangeCalculatedEventArgs, Series, IMouseEventArgs } from '@syncfusion/ej2-angular-charts';
+import { ChartModule, ChartComponent, LineSeriesService, CategoryService, TooltipService, DataLabelService, IAxisRangeCalculatedEventArgs, Series, IMouseEventArgs } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit, ViewChild } from '@angular/core';
 @Component({
 imports: [
@@ -61,7 +60,7 @@ export class AppComponent implements OnInit {
         let isRemoved: boolean = false;
         if (args.axisData && this.chart?.series) {
             for (let i: number = 0; i < (this.chart.series[0] as Series).points.length; i++) {
-                let markerWidth: number = (this.chart.series[0] as Series).marker?.width ?? 0 / 2;
+                let markerWidth: number = ((this.chart.series[0] as Series).marker?.width ?? 0) / 2;
                 let roundedX: number = Math.round(args.axisData['primaryXAxis']) + markerWidth;
                 let roundedY: number = Math.round(args.axisData['primaryYAxis']) + markerWidth;
                 let pointX: number = Math.round((this.chart.series[0] as Series).points[i].x as number) + markerWidth;

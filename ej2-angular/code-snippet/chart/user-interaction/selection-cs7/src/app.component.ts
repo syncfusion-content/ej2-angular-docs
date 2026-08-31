@@ -11,7 +11,7 @@ imports: [
 providers: [ CategoryService, ColumnSeriesService, LegendService, SelectionService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' selectionMode='Point' isMultiSelect='true'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' selectionMode='Point'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' selectionStyle='chartSelection1'></e-series>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver' selectionStyle='chartSelection2'></e-series>
@@ -29,6 +29,9 @@ export class AppComponent implements OnInit {
         this.primaryXAxis = {
            valueType: 'Category',
            title: 'Countries'
+        };
+        this.primaryYAxis = {
+           title: 'Medals'
         };
         this.title = 'Olympic Medals';
     }

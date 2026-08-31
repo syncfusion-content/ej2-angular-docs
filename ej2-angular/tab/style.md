@@ -12,7 +12,15 @@ domainurl: ##DomainURL##
 
 The following content provides the exact CSS structure that can be used to modify the Tab component's appearance based on user preference. These styles can be applied through Angular component styles, external stylesheets, or global CSS files.
 
-## Customizing Tab
+> **Tip:** To scope CSS to a specific Tab instance, assign a custom class via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#cssclass) property of the Tab and prefix your selectors with that class.
+>
+> **Angular component style encapsulation:** Styles defined in a component's `.css` file are scoped by default. Use `::ng-deep` to pierce encapsulation when applying CSS to Syncfusion's internal classes, or move styles to a global stylesheet.
+>
+> **RTL support:** Most of the selectors below apply symmetrically in RTL mode; directional classes such as `.e-hor-nav` continue to work without mirroring.
+
+## Container
+
+### Customizing Tab
 
 Use the following CSS to customize the overall Tab component container, including its border and background appearance.
 
@@ -24,9 +32,11 @@ Use the following CSS to customize the overall Tab component container, includin
 
 ```
 
-## Customizing the Tab items
+## Header items
 
-Use the following CSS to customize the header items of the Tab component. This affects the visual appearance of the tab header area where tab titles are displayed.
+### Customizing the Tab items
+
+Apply this CSS to restyle the toolbar that hosts the tab header items, controlling the visual treatment of the tab header area where tab titles are displayed.
 
 ```CSS
 
@@ -37,7 +47,35 @@ Use the following CSS to customize the header items of the Tab component. This a
 
 ```
 
-Use the following CSS to customize the content items of the Tab component. This modifies the appearance of the content area that displays when each tab is selected.
+### Customizing Tab's header
+
+Apply this CSS to restyle the header section of the Tab component where tab titles are rendered.
+
+```CSS
+
+.e-tab .e-tab-header {
+    background: #badfba !important;
+}
+
+```
+
+### Customizing Tab's header icon
+
+Apply this CSS to restyle the header item icon of the Tab component.
+
+```CSS
+
+.e-tab .e-tab-header .e-toolbar-item .e-tab-icon {
+    color: #badfba !important;
+}
+
+```
+
+## Content
+
+### Customizing Tab's content items
+
+Apply this CSS to restyle the content items of the Tab component, modifying the appearance of the content area shown when each tab is selected.
 
 ```CSS
 
@@ -48,33 +86,9 @@ Use the following CSS to customize the content items of the Tab component. This 
 
 ```
 
-## Customizing Tab's header
+### Customizing Tab's content
 
-Use the following CSS to customize the header section of the Tab component where tab titles are rendered.
-
-```CSS
-
-.e-tab .e-tab-header {
-    background: #badfba !important;
-}
-
-```
-
-## Customizing Tab's header icon
-
-Use the following CSS to customize the header item icon of the Tab component.
-
-```CSS
-
-.e-tab .e-tab-header .e-toolbar-item .e-tab-icon {
-    color: #badfba !important;
-}
-
-```
-
-## Customizing Tab's content
-
-Use the following CSS to customize the content area of the Tab component.
+Apply this CSS to restyle the content area of the Tab component as a whole.
 
 ```CSS
 
@@ -84,9 +98,11 @@ Use the following CSS to customize the content area of the Tab component.
 
 ```
 
-## Customizing the hover state of Tab component
+## States
 
-Use the following CSS to customize the appearance of tab items when users hover over them.
+### Customizing the hover state of Tab component
+
+Apply this CSS to restyle the appearance of tab items when users hover over them.
 
 ```CSS
 
@@ -96,7 +112,7 @@ Use the following CSS to customize the appearance of tab items when users hover 
 
 ```
 
-Use the following CSS to customize the tab item popup icon when hovering.
+Use the following CSS to restyle the tab item popup navigation arrows when hovering.
 
 ```CSS
 
@@ -107,9 +123,9 @@ Use the following CSS to customize the tab item popup icon when hovering.
 
 ```
 
-## Customizing selected item of Tab component
+### Customizing selected item of Tab component
 
-Use the following CSS to customize the visual appearance of the currently selected tab item.
+Apply this CSS to restyle the visual appearance of the currently selected tab item.
 
 ```CSS
 
@@ -119,7 +135,7 @@ Use the following CSS to customize the visual appearance of the currently select
 
 ```
 
-Use the following CSS to customize the selected tab item text and icon.
+Apply this CSS to restyle the selected tab item's text and icon.
 
 ```CSS
 
@@ -129,3 +145,9 @@ Use the following CSS to customize the selected tab item text and icon.
 }
 
 ```
+
+## See Also
+
+* [Header configuration](./header)
+* [Getting Started](./getting-started)
+* [Synchronizing theme variables](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio)

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to disable the fixed group header in Angular Dropdown List
 
-The following example demonstrate about how to disable the Fixed group header in DropDownList through CSS by using `visibility` attribute.
+The following example demonstrates how to disable the fixed group header in DropDownList through CSS by using `visibility` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,17 +10,40 @@ domainurl: ##DomainURL##
 
 # How to Add or Remove Series in Angular Chart
 
-You can add or remove the chart series dynamically by using the [`addSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart#addseries) or [`removeSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart#removeseries) method.
+You can dynamically add or remove chart series at runtime by calling the [`addSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart#addseries) or [`removeSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart#removeseries) method on a `ChartComponent` instance.
 
-To add or remove the series dynamically, follow the given steps:
+Use these imperative methods when your series need to change in response to user input or external events and cannot be bound declaratively in the template.
 
-**Step 1**: Add a new series
+## Adding Series
 
-To add a new series to the chart dynamically, pass the series value to the [`addSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart#addseries) method.
+Call [`addSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart#addseries) on the chart instance, passing one or more series-options objects.
 
-**Step 2**: Remove a series
+```ts
+chart.addSeries([{
+    type: 'Column',
+    dataSource: [ { x: 'John', y: 11000 }, /* ... */ ],
+    xName: 'x',
+    yName: 'y'
+}]);
+```
 
-To remove a series from the chart dynamically, pass the series index to the [`removeSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart#removeseries) method.
+- **`seriesOptions: ChartSeries[]`** — an array of series-options objects. Each object supports the same shape as a declarative `<e-series>` element, including `type`, `dataSource`, `xName`, `yName`, `name`, `width`, `marker`, `fill`, etc.
+- The new series should use the same X-axis categories/data structure as existing series so that points align across the legend.
+
+## Removing Series
+
+Call [`removeSeries`](https://ej2.syncfusion.com/angular/documentation/api/chart#removeseries) on the chart instance, passing the **zero-based index** of the series to remove.
+
+```ts
+chart.removeSeries(1);
+```
+
+- **`index: number`** — zero-based position of the series in the current series collection. For example, in a chart that already has one initial series, index `0` removes that initial series; index `1` removes a series previously added by `addSeries`.
+- After removal, indices of remaining series are re-numbered.
+
+## Example
+
+The following sample renders a chart with an initial series, then lets the user add or remove a comparison series by clicking the buttons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,5 +54,11 @@ To remove a series from the chart dynamically, pass the series index to the [`re
 {% include code-snippet/chart/add-series-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/add-series-cs2" %}
+
+## See Also
+
+- [Chart Overview](../chart-overview)
+- [Series Overview](../series/series-overview)
+- [API Reference: Chart](https://ej2.syncfusion.com/angular/documentation/api/chart)

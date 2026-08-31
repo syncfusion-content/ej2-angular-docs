@@ -10,7 +10,7 @@ imports: [
 providers: [ CategoryService, ColumnSeriesService, LegendService, SelectionService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [title]="title" selectionMode="Point" (selectionComplete)="onSelectionComplete($event)">
+    template: `<ejs-chart id="chart-container" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [title]="title" [selectionMode]="'Point'" (selectionComplete)="onSelectionComplete($event)">
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' ></e-series>
             <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver'></e-series>

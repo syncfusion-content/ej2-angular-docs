@@ -3,7 +3,6 @@ import {
   ChartModule,
   CategoryService,
   ColumnSeriesService,
-  ILoadedEventArgs,
   IPointRenderEventArgs
 } from '@syncfusion/ej2-angular-charts';
 
@@ -55,6 +54,16 @@ export class AppComponent implements OnInit {
 
   // pointRender: customize each point's appearance before rendering
   public onPointRender(args: IPointRenderEventArgs): void {
-    console.log('Point render event was triggered');
+    // Highlight the highest value in red and the lowest in green
+    if (typeof args.point?.y === 'number') {
+      const yValues = (this.chartData || []).map(d => d.sales);
+      const max = Math.max(...yValues);
+      const min = Math.min(...yValues);
+      if (args.point.y === max) {
+        args.fill = '#e74c3c';
+      } else if (args.point.y === min) {
+        args.fill = '#27ae60';
+      }
+    }
   }
 }

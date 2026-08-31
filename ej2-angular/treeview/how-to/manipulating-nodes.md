@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to manipulate nodes in TreeView in Angular Tree View | Syncfusion
+title: How to manipulate nodes in Angular Tree View | Syncfusion
 description: Add, remove, update, refresh, or move Angular Tree View nodes programmatically using the addNodes, removeNodes, updateNode, refreshNode, and moveNodes methods.
 platform: ej2-angular
 control: TreeView
@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to manipulate nodes in TreeView in Angular Tree View
+# How to manipulate nodes in Angular Tree View
 
-The TreeView component provides Essential<sup style="font-size:70%">&reg;</sup> methods for dynamically managing nodes, enabling the creation of highly interactive and customizable tree structures:
+The TreeView component provides built-in methods for dynamically managing nodes, enabling the creation of highly interactive and customizable tree structures:
 
 * [addNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes)
 * [removeNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes)
@@ -19,6 +19,16 @@ The TreeView component provides Essential<sup style="font-size:70%">&reg;</sup> 
 * [moveNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#movenodes)
 
 These methods provide the flexibility to add, remove, update, refresh, or relocate nodes as needed, facilitating fully interactive and customizable TreeView structures.
+
+## Method overview
+
+| Method | Purpose | Key parameters |
+| --- | --- | --- |
+| `addNodes(nodes, target, index?)` | Insert one or more nodes below the target node. | `nodes`: array of node data; `target`: parent/element ID; `index?`: optional child index. |
+| `removeNodes(nodes)` | Remove one or more nodes by ID or by their `ITreeData` references. | `nodes`: `string[]` or data array. |
+| `updateNode(target, newText)` | Replace the displayed text of an existing node. | `target`: ID/element; `newText`: replacement text. |
+| `refreshNode(target, data)` | Re-render the given node with the supplied data record. | `target`: ID/element; `data`: updated node object. |
+| `moveNodes(nodes, target, index?)` | Move one or more nodes to another subtree. | `nodes`: array of IDs/data; `target`: destination ID; `index?`: optional index. |
 
 ## Dynamically Adding Nodes
 
@@ -40,7 +50,7 @@ The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#
 
 ## Dynamically Removing Nodes
 
-The TreeView component has the [`removeNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes) method, which allows you to change a specific node's text by providing its target (either the node ID or element) and the new text.
+The TreeView component has the [`removeNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes) method, which removes one or more specified nodes from the TreeView by passing their IDs (or matching data records) as an array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

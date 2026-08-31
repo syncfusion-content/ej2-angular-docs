@@ -3,14 +3,32 @@ layout: post
 title: Accessibility in Angular Chart | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Accessibility in Angular Chart
 
-The Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria/#roles) roles.
+The Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria#roles) roles.
+
+Accessibility features (keyboard navigation, ARIA wiring, and high-contrast support) are enabled by default. You can customize the accessible name and ARIA role of the chart using the [`accessibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/accessibilitymodel) property (`accessibilityDescription` and `accessibilityRole`), and adjust the visible focus indicator with [`focusBorderColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartmodel#focusbordercolor), [`focusBorderWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartmodel#focusborderwidth), and [`focusBorderMargin`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartmodel#focusbordermargin). Refer to the [Getting Started](../chart/getting-started) page for Angular and `@syncfusion/ej2-angular-charts` version requirements.
+
+## Configuring accessibility
+
+The following example shows how to provide an accessible description, set the ARIA role, and customize the focus border for the Chart.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/accessibility-cs9/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/accessibility-cs9/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/accessibility-cs9" %}
 
 The Chart component's accessibility compliance is outlined below.
 
@@ -41,18 +59,23 @@ The Chart component's accessibility compliance is outlined below.
 
 ## WAI-ARIA attributes
 
-The Chart component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert) patterns to meet accessibility requirements. The following ARIA roles and attributes are used by the Chart component:
+The Chart component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA) patterns to meet accessibility requirements. The following ARIA roles and attributes are used by the Chart component.
 
-* `role="img"`
-* `role="button"`
-* `role="region"`
-* `aria-label`
-* `aria-hidden`
-* `aria-pressed`
+**Roles**
+
+* `role="img"` - Applied to the chart container.
+* `role="button"` - Applied to interactive elements such as legend items and selectable data points.
+* `role="region"` - Applied to logical groupings within the chart (for example, the legend or plot area) so they are announced as named regions.
+
+**Attributes**
+
+* `aria-label` - Provides an accessible name for the chart or for individual elements that have no visible text.
+* `aria-hidden` - Hides purely decorative elements from assistive technologies.
+* `aria-pressed` - Communicates the toggled state of interactive elements such as legend items.
 
 ## Keyboard interaction
 
-The Chart component follows keyboard interaction guidelines to improve accessibility for assistive-technology and keyboard-only users. Below the shortcuts are grouped by context (mode) so it's clear which keys apply where.
+The Chart component follows keyboard interaction guidelines to improve accessibility for users of assistive technology and for keyboard-only users. Shortcuts are grouped below by context (mode) so it is clear which keys apply where.
 
 **General navigation**
 
@@ -70,8 +93,8 @@ The Chart component follows keyboard interaction guidelines to improve accessibi
 | --- | --- |
 | <kbd>Left Arrow</kbd> | Moves focus to the previous data point in the active series. |
 | <kbd>Right Arrow</kbd> | Moves focus to the next data point in the active series. |
-| <kbd>Up Arrow</kbd> | Moves focus to the data point above (previous in vertical order) when applicable. |
-| <kbd>Down Arrow</kbd> | Moves focus to the data point below (next in vertical order) when applicable. |
+| <kbd>Up Arrow</kbd> | Moves focus to the data point above when applicable. |
+| <kbd>Down Arrow</kbd> | Moves focus to the data point below when applicable. |
 | <kbd>Enter / Space</kbd> | Selects the focused data point. |
 
 **Legend focus mode**
@@ -80,15 +103,15 @@ The Chart component follows keyboard interaction guidelines to improve accessibi
 
 | **Press** | **Action** |
 | --- | --- |
-| <kbd>Left Arrow</kbd> | Move legend focus to the previous legend item. |
-| <kbd>Right Arrow</kbd> | Move legend focus to the next legend item. |
-| <kbd>Up Arrow</kbd> | Move legend focus up one item (if legend is vertical). |
-| <kbd>Down Arrow</kbd> | Move legend focus down one item (if legend is vertical). |
+| <kbd>Left Arrow</kbd> | Moves legend focus to the previous legend item. |
+| <kbd>Right Arrow</kbd> | Moves legend focus to the next legend item. |
+| <kbd>Up Arrow</kbd> | Moves legend focus up one item (if legend is vertical). |
+| <kbd>Down Arrow</kbd> | Moves legend focus down one item (if legend is vertical). |
 | <kbd>Enter / Space</kbd> | Toggles visibility of the focused series (show/hide). |
 
 **Zoom / Pan mode**
 
-(Enable zooming/panning in the chart configuration to use these shortcuts.)
+(Enable zooming/panning in the chart's configuration to use these shortcuts.)
 
 | **Press** | **Action** |
 | --- | --- |
@@ -101,8 +124,8 @@ The Chart component follows keyboard interaction guidelines to improve accessibi
 **Notes and clarifications**
 
 - The meaning of arrow keys depends on the current focus and mode: when the legend is focused, arrow keys move between legend items; when a data point or series is focused, arrow keys move between points/series; when pan/zoom is enabled and active, arrow keys pan the chart.
-- Use <kbd>Alt + J</kbd> to quickly focus the chart container — from there use <kbd>Tab</kbd> or arrow keys to reach legend or data points.
-- The table below shows the keys commonly supported; behavior can vary slightly depending on chart configuration (for example, stacked vs. grouped series) and platform.
+- When more than one mode is active at the same time (for example, a data point has focus while pan is enabled), focus-based navigation takes precedence over panning. Press <kbd>Esc</kbd> to leave the data point and return pan control to the chart area.
+- The table above shows the keys commonly supported; behavior can vary slightly depending on chart configuration (for example, stacked vs. grouped series) and platform.
 
 ## Ensuring accessibility
 
@@ -115,3 +138,6 @@ The accessibility compliance of the Chart component is shown in the following sa
 ## See also
 
 * [Accessibility in Angular components](../common/accessibility)
+* [Getting Started with Angular Chart](../chart/getting-started)
+* [Legend in Angular Chart](../chart/legend)
+* [Chart Events in Angular Chart](../chart/chart-events)

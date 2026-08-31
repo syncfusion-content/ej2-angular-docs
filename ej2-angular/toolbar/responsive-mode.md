@@ -53,7 +53,7 @@ The default overflow mode of the Toolbar is `Scrollable`. This responsive mode d
 
 `Popup` is an alternative [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#overflowmode) where the Toolbar container displays commands that fit within the available space. Overflowing commands that exceed the viewing area automatically move to an overflow popup container.
 
-Commands in the popup become accessible by opening the dropdown using the overflow icon at the end of the Toolbar.
+Commands in the popup become accessible by opening the dropdown using the overflow icon at the end of the Toolbar. The [`hideItem`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#hideitem) method accepts a boolean second parameter: pass `true` to hide an item and `false` to show a previously hidden item.
 
 ![Toolbar popup](images/popup.gif)
 
@@ -63,13 +63,23 @@ Commands in the popup become accessible by opening the dropdown using the overfl
 
 Default popup priority is set as `none`, and when the commands of the Toolbar overflow, the ones listed last will be moved to the popup.
 
-Command display priority can be customized using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#overflow) property to control which items appear in the Toolbar versus the popup.
+Command display priority can be customized using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#overflow) property to control which items appear in the Toolbar versus the popup.
 
 Property     | Description
 ------------ | -------------
   show       | Always displays items on the Toolbar with primary priority
   hide       | Always displays items in the popup with secondary priority
   none       | No priority assigned - commands move to popup in normal order when content exceeds viewing area
+
+The following example demonstrates how to assign an `overflow` value to each item in the items array:
+
+```typescript
+public items: ItemModel[] = [
+    { text: 'Cut', overflow: 'show' },
+    { text: 'Copy', overflow: 'hide' },
+    { text: 'Paste', overflow: 'none' }
+];
+```
 
 When primary priority commands exceed available space, they move to the popup container at the top position, placed before secondary priority commands.
 

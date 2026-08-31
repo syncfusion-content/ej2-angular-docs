@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Date Range in Angular Calendar
 
-You can restrict the user to select the date from a specified range of dates by utilizing the [`min`](https://ej2.syncfusion.com/angular/documentation/api/calendar#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/calendar#max) properties.  Always the min date has to be lesser than the max date.
+You can restrict the user to select a date from a specified range of dates by using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/calendar#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/calendar#max) properties. The `min` date must always be less than the `max` date. If `min` is set greater than `max`, the Calendar will not restrict the range correctly and may render an invalid selectable range, so ensure `min` is always earlier than `max`.
 
-The below example allows you to select a date within a range from 7th to 27th days in a month.
+The following example allows you to select a date within a range from the 7th to the 27th day of a month. In the sample, `min` is set to the 7th day and `max` is set to the 27th day of the current month.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -26,4 +26,8 @@ The below example allows you to select a date within a range from 7th to 27th da
   
 {% previewsample "page.domainurl/samples/calendar/getting-started-cs6" %}
 
-> If the value of `min` or `max` properties changed through code behind, then you have to update the `value` property to set within the range. Or else, if the value is out of specified date range and less than `min` date, value property will be updated with min date or the value is higher than max date, value property will be updated with `max` date.
+> When the `min` or `max` values are changed through code-behind, keep the following in mind:
+>
+> * **Update an existing `value`:** You must update the `value` property so it stays within the new range.
+> * **Auto-correction of an out-of-range `value`:** If the `value` is out of the specified date range, it is auto-corrected. If the `value` is less than the `min` date, the `value` property will be updated with the `min` value. If the `value` is greater than the `max` date, the `value` property will be updated with the `max` value.
+> * **Unset `value`:** If the `value` is unset (`null`) when `min` or `max` are changed, no auto-correction occurs.

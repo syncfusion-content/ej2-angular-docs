@@ -12,33 +12,25 @@ domainurl: ##DomainURL##
 
 The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 
-## Apply frame to the image
+## Apply a frame to the image
 
 The [`drawFrame`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawframe) method is a function designed to enable the application of various frame options to an image. This method simplifies the process of adding decorative frames, such as mat, bevel, line, hook, and inset, to an image by allowing users to specify their desired frame type.
 
-Depending on the frame type selected, users may have additional customization options, such as adjusting the frame's thickness, color, texture, or other attributes. This allows for fine-tuning the appearance of the frame to match the image's theme or the user's preferences
+Depending on the frame type selected, users may have additional customization options, such as adjusting the frame's thickness, color, texture, or other attributes. This allows for fine-tuning the appearance of the frame to match the image's theme or the user's preferences.
 
-The `drawFrame` method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+The `drawFrame` method in the Image Editor control takes nine parameters to define the properties of the frame:
 
-* frameType - Specified the image data or url of the image to be inserted.
+* frameType: Specifies the frame type (FrameType enum) to apply to the image. Supported values are `Mat`, `Bevel`, `Line`, `Hook`, and `Inset`.
+* color: Specifies the color (string) for the frame.
+* gradientColor: Specifies the gradient color (string) for the frame.
+* size: Specifies the size (number) of the frame.
+* inset: Specifies the inset value (number) for line, hook, and inset type frames.
+* offset: Specifies the offset value (number) for line and inset type frames.
+* borderRadius: Specifies the border radius (number) for line type frames.
+* frameLineStyle: Specifies the frame line style for line type frames.
+* lineCount: Specifies the line count (number) for the line type frame.
 
-* Color - Specifies the color for the frame.
-
-* gradientColor - Specifies the gradient color for the frame.
-
-* size - Specifies the size of the frame.
-
-* inset - Specifies the inset value for line, hook, and inset type frames.
-
-* offset - Specifies the offset value for line and inset type frames.
-
-* borderRadius - Specifies the border radius for line type frame.
-
-* frameLineStyle - Specifies the frame line style for line type frame.
-
-* lineCount - Specifies the line count for the line type frame.
-
-In the following example, you can use the drawFrame method in the button click event.
+In the following example, you can use the `drawFrame` method in the button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -54,16 +46,13 @@ In the following example, you can use the drawFrame method in the button click e
 
 ## Frame changing event
 
-The [`frameChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#framechange) event is triggered when applying frame on the image. This event provides information encapsulated within an object, which includes details about the frame applied in an image. This information encompasses:
+The [`frameChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#framechange) event is triggered when applying a frame to the image. This event provides information encapsulated within an object, which includes details about the frame applied to an image. This information encompasses:
 
-Frame Type: This indicates the specific type of frame being applied, whether it's a mat, bevel, line, or hook.
+* Frame Type: Indicates the specific type of frame being applied (mat, bevel, line, hook, or inset).
+* Customization Values: Contains information about any adjustments or modifications made to the frame, such as color, size, or style, conveyed within the event object.
 
-Customization Values: These values contain information about any adjustments or modifications made to the frame. For instance, if the frame can be customized with attributes like color, size, or style, these details are conveyed within the event object.
+The parameters available in the [`FrameChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/framechangeeventargs) are:
 
-The parameter available in the [`FrameChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/framechangeeventargs) is
-
-* [`FrameChangeEventArgs.previousFrameSetting`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/framechangeeventargs#previousframesetting) - The frame settings including size, color, inset, offset, gradient color which is applied before changing the frame.
-
-* [`FrameChangeEventArgs.currentFrameSetting`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/framechangeeventargs#currentframesetting) - The frame settings including size, color, inset, offset, gradient color which is going to apply after changing the frame.
-
-* [`FrameChangeEventArgs.cancel`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/framechangeeventargs#cancel) - Specifies a boolean value to cancel the frame changing action.
+* [`FrameChangeEventArgs.previousFrameSetting`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/framechangeeventargs#previousframesetting): The frame settings (including size, color, inset, offset, and gradient color) applied before the frame is changed.
+* [`FrameChangeEventArgs.currentFrameSetting`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/framechangeeventargs#currentframesetting): The frame settings (including size, color, inset, offset, and gradient color) to be applied after the frame is changed.
+* [`FrameChangeEventArgs.cancel`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/framechangeeventargs#cancel): Specifies a boolean value to cancel the frame changing action (default: `false`).

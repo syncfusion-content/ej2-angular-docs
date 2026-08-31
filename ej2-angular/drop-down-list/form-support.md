@@ -42,7 +42,7 @@ For more details, refer to the official Angular guide on [Reactive Forms](https:
 
 To use reactive forms, import the `ReactiveFormsModule` into the application's root `NgModule`. In the component file, import `FormGroup` and `FormControl` from `@angular/forms`. The `FormGroup` provides a wrapper for a collection of form controls, while `FormControl` tracks the value and validation status of an individual control.
 
-Assign a `formControlName` to the DropDownList element in the template. In the component class, define a `FormGroup` and a `FormControl` for the DropDownList. The `FormControl`'s initial value will serve as the default value for the DropDownList.
+Assign a `formControlName` to the DropDownList element in the template. In the component class, define a `FormGroup` and a `FormControl` for the DropDownList. The `FormControl` initial value will serve as the default value for the DropDownList.
 
 The following example demonstrates how to use the DropDownList component within a reactive form.
 

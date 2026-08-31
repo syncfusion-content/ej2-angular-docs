@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Toolbar
 
-The [Angular Toolbar](https://www.syncfusion.com/angular-ui-components/angular-toolbar) component has been designed keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/) specifications, and applies the WAI-ARIA roles, states, and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-label` and `aria-orientation`. It provides information about elements in a document for assistive technology. The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/), and has been tested in major screen readers.
+The [Angular Toolbar](https://www.syncfusion.com/angular-ui-components/angular-toolbar) component is designed to follow the [WAI-ARIA Authoring Practices Guide for the Toolbar pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). It exposes the appropriate WAI-ARIA roles, states, and properties, and provides keyboard navigation for users of assistive technologies.
+
+Accessibility information is conveyed through attributes such as `aria-label`, `aria-orientation`, `aria-expanded`, and `aria-haspopup`, which assistive technologies consume to describe elements and their state. Keyboard navigation follows the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/) and the Toolbar has been verified in major screen readers.
 
 The accessibility compliance for the Toolbar component is outlined below.
 
@@ -41,42 +43,60 @@ The accessibility compliance for the Toolbar component is outlined below.
 
 ## ARIA attributes
 
-The Toolbar component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/) standards. Toolbar is supported with ARIA Accessibility which is accessible by screen readers and other assistive technology devices. The following list of attributes are added in the Toolbar.
+The Toolbar applies ARIA accessibility attributes following the [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/), so it is consumable by screen readers and other assistive technology devices.
 
-| **Property** | **Functionalities** |
+### Role
+
+| **Attribute** | **Function** |
 | --- | --- |
-| role="toolbar" | This attribute is set to the Toolbar element and describes the actual role of the element. |
-| aria-orientation | This attribute is set to the Toolbar element to indicate the Toolbar orientation. Default value is `horizontal`. |
-| aria-label | This attribute is set to the Toolbar element and describes the purpose of the set of toolbar. |
-| aria-expanded | This attribute is set to the Toolbar popup element to indicate the expanded state of the popup.|
-| aria-haspopup | This attribute is set to the popup element to indicate the popup mode of the Toolbar. Default value is false. When popup mode is enabled, attribute value has to be changed to `true`. |
-| aria-disabled | This attribute is set to the Toolbar element to indicate the disabled state of the Toolbar. |
+| `role="toolbar"` | Set on the Toolbar element to describe its actual role to assistive technologies. |
+
+### Attributes
+
+| **Attribute** | **Function** |
+| --- | --- |
+| `aria-orientation` | Set on the Toolbar element to indicate the Toolbar orientation. Default value is `horizontal`. |
+| `aria-label` | Set on the Toolbar element to describe the purpose of the toolbar group. The value can be customized in Angular by using [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#htmlattributes) on the Toolbar host. |
+| `aria-expanded` | Set on the Toolbar popup trigger element to indicate whether the overflow popup is currently open (`true`) or closed (`false`). The value toggles with the popup state. |
+| `aria-haspopup` | Set on the Toolbar overflow trigger element to indicate that the Toolbar opens a popup. Default value is `false`. When [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#overflowmode) is `'Popup'`, the attribute value is set to `true`. |
+| `aria-disabled` | Set on Toolbar items to indicate the disabled state of the item. To disable items programmatically, use the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#enableitems) method with `false`. |
 
 ## Keyboard interaction
 
-Keyboard navigation is enabled by default. Possible keys are:
+Keyboard navigation is enabled by default. The key maps are split between the main Toolbar and the overflow popup when it is open.
 
-| Key           | Description                                                                         |
-|---------------|-------------------------------------------------------------------------------------|
-| <kbd>Left</kbd>    | Focuses the previous element. |
-| <kbd>Right</kbd>   | Focuses the next element. |
-| <kbd>Enter</kbd>         | When focused on a Toolbar command, clicking the key triggers the click of Toolbar element. When popup drop-down icon is focused, the popup opens. |
-| <kbd>Esc(Escape)</kbd>           | Closes popup. |
-| <kbd>Down</kbd>   | Focuses the next popup element. |
-| <kbd>Up</kbd>      | Focuses the previous popup element. |
-| <kbd>Home</kbd>    | Moves focus to the first Toolbar element. |
-|  <kbd>End </kbd>   | Moves focus to the last Toolbar element. |
-| <kbd>Tab</kbd>     | Moves focus through the interactive elements. |
-| <kbd>Shift + Tab</kbd> | Moves focus through the interactive elements in reverse order. |
+### Main Toolbar navigation
+
+| Key | Description |
+| --- | --- |
+| <kbd>Left</kbd> | Moves focus to the previous item. |
+| <kbd>Right</kbd> | Moves focus to the next item. |
+| <kbd>Home</kbd> | Moves focus to the first Toolbar item. |
+| <kbd>End</kbd> | Moves focus to the last Toolbar item. |
+| <kbd>Enter</kbd> | When focus is on a Toolbar command, activates the item. When focus is on the popup trigger, opens the popup. |
+| <kbd>Tab</kbd> | Moves focus through the interactive elements in forward order. |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Moves focus through the interactive elements in reverse order. |
+
+### Popup navigation
+
+When the overflow popup is open, focus moves into the popup and the following keys apply in addition to <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd>.
+
+| Key | Description |
+| --- | --- |
+| <kbd>Down</kbd> | Moves focus to the next popup item. |
+| <kbd>Up</kbd> | Moves focus to the previous popup item. |
+| <kbd>Enter</kbd> | Activates the focused popup item. |
+| <kbd>Esc</kbd> | Closes the popup and returns focus to the Toolbar trigger. |
 
 ## Ensuring accessibility
 
-The Toolbar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Toolbar component's accessibility levels are ensured through automated validation using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during the Syncfusion test pipeline.
 
-The accessibility compliance of the Toolbar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/toolbar.html) in a new window to evaluate the accessibility of the Toolbar component with accessibility tools.
+You can review the live Toolbar demo and run accessibility tools against it. Open the [Toolbar demo in a new window](https://ej2.syncfusion.com/angular/demos/#/material/toolbar/default) to evaluate the component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/toolbar.html" %}
 
 ## See also
 
 - [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)
+- [WAI-ARIA Toolbar Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/)

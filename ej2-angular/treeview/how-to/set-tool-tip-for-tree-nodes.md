@@ -14,7 +14,19 @@ The Angular TreeView component provides built-in tooltip support for tree nodes,
 
 ## Configuring tooltips through data source
 
-TreeView supports tooltip functionality through the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#tooltip)property. The tooltip content is determined by mapping a specific field from your data source that contains the tooltip text for each node.
+TreeView supports tooltip functionality through the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#tooltip) property. The tooltip content is determined by mapping a specific field from your data source that contains the tooltip text for each node.
+
+The following field mapping instructs the TreeView to read the tooltip text from the `tooltipText` property of every data record:
+
+```typescript
+public field: Object = {
+  dataSource: this.localData,
+  id: 'id',
+  text: 'name',
+  parentID: 'pid',
+  tooltip: 'tooltipText'
+};
+```
 
 The following code example demonstrates how to set a tooltip for TreeView nodes.
 

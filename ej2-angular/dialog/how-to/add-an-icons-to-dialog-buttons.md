@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to add icons to Dialog buttons in Angular Dialog
 
-Add icons to dialog buttons using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) property or the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#footertemplate) property. For detailed information about dialog buttons, refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) section.
+Add icons to dialog buttons using the [buttons](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) property or the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#footertemplate) property. For detailed information about dialog buttons, refer to the [Dialog buttons](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) documentation.
 
 The following sample demonstrates customizing dialog footer buttons with icons using the `buttons` property.
 

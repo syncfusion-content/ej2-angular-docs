@@ -12,55 +12,68 @@ domainurl: ##DomainURL##
 
 The following CSS structure allows you to customize the Uploader component's appearance to match your design preferences.
 
+> Add these CSS rules to your application's global stylesheet (for example, `styles.css`) or to the component's `styleUrls` with the appropriate view-encapsulation setting, so the overrides apply to the Uploader's internal elements. The selectors that include `.e-bigger.e-small` target the bigger/small size variants of the Syncfusion theme.
+
 ## Customize the Uploader wrapper element
 
-Use the following CSS to customize the wrapper element's dimensions:
+The wrapper is the outer container that holds the browse button, drop area, and file list. Use the following CSS to set its height and width:
 
 ```css
-/* To specify height and width */
+/* Specify height and width */
 .e-upload.e-control-wrapper, .e-bigger.e-small .e-upload.e-control-wrapper {
-        height: 300px;
-        width: 300px;
+    height: 300px;
+    width: 300px;
 }
 ```
 
 ## Customize the browse button
 
-Use the following CSS to customize the browse button's styling:
+The browse button is the primary action button used to open the file dialog. Use the following CSS to set its font family, size, and color:
 
 ```css
-/* To specify font family, size, and color */
+/* Specify font family, size, and color */
 .e-upload .e-file-select-wrap .e-btn, .e-upload .e-upload-actions .e-btn, .e-bigger.e-small .e-upload .e-file-select-wrap .e-btn, .e-bigger.e-small .e-upload .e-upload-actions .e-btn {
-        font-family: cursive;
-        height: 40px;
-        background-color: aquamarine;
-        color: coral;
+    font-family: cursive;
+    height: 40px;
+    background-color: aquamarine;
+    color: coral;
 }
 ```
 
 ## Customize the drop area content
 
-Use the following CSS to customize the drop area text styling:
+The drop area shows the hint text where files can be dragged and dropped. Use the following CSS to set its font size and color:
 
 ```css
-/* To specify font size and color */
+/* Specify font size and color */
 .e-upload .e-file-select-wrap .e-file-drop, .e-bigger.e-small .e-upload .e-file-select-wrap .e-file-drop {
-        font-size: 20px;
-        color: aqua;
+    font-size: 20px;
+    color: aqua;
 }
 ```
 
 ## Customize the file list container
 
-Use the following CSS to customize the uploaded file list appearance:
+The file list container holds each selected file's name, size, status, and action icons. Use the following CSS to set its background color. When many files are present, the list supports overflow/scroll and may be styled (for example, by setting a `max-height` and `overflow-y: auto`) accordingly:
 
 ```css
-/* To specify background color */
+/* Specify background color */
 .e-upload .e-upload-files .e-upload-file-list {
-        background-color: beige;
+    background-color: beige;
 }
 ```
 
-## See Also
+## Customize the progress bar
 
-* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/angular/documentation/uploader/template/)
+The progress bar indicates the upload progress of each file. Use the following CSS to style the progress fill that appears within the progress track:
+
+```css
+/* Specify progress bar fill color */
+.e-upload .e-upload-files .e-file-progress .e-progress-inner, .e-bigger.e-small .e-upload .e-upload-files .e-file-progress .e-progress-inner {
+    background-color: #00bcd4;
+}
+```
+
+## See also
+
+* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/angular/documentation/uploader/template)

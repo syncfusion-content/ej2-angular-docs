@@ -10,9 +10,15 @@ domainurl: ##DomainURL##
 
 # How to use custom event emitter in Angular Calendar
 
-The **two-way binding** in Calendar can also be achieved using the custom event binding and property binding in the controls present in two different components. To create custom event, we need to create an instance of `event emitter`.
+The Calendar supports implementing two-way data binding between parent and child components by combining property binding and custom event binding. In this approach, the parent component passes data to the child component, and the child component notifies the parent when the value changes.
 
-In the following example, **property binding** is used to share the data from the parent component to the child component using [@input](https://v17.angular.io/api/core/Directive#inputs) directive and **custom event binding** is used to share the data from the child component by using [@output](https://v17.angular.io/api/core/Directive#outputs) directive.
+To create a custom event, create an instance of Angular's `EventEmitter` class and decorate it with @Output. When the Calendar value changes, the child component emits the updated value, allowing the parent component to synchronize its data with the child component.
+
+In the following example, **property binding** is used to pass data from the parent component to the child component through the [@input](https://v17.angular.io/api/core/Directive#inputs) decorator.
+
+**Custom event binding** is used to send updated values from the child component to the parent component through the [@output](https://v17.angular.io/api/core/Directive#outputs) decorator and an EventEmitter instance.
+
+This pattern manually implements two-way data synchronization between the parent and child components by combining [@input](https://v17.angular.io/api/core/Directive#inputs) and [@output](https://v17.angular.io/api/core/Directive#outputs).
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

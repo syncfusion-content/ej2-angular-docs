@@ -14,14 +14,13 @@ The AutoComplete supports both the reactive and template-driven form-building te
 
 ## Template-Driven Forms
 
-The template-drive forms uses the `ng` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
+Template-driven forms use `ng` directives in the view to handle form controls. To enable template-driven forms, import `FormsModule` into the corresponding app component.
 
-For more details about template-driven Forms refer to:<https://angular.io/guide/forms#template-driven-forms>.
+For more details about template-driven forms, refer to: <https://angular.io/guide/forms#template-driven-forms>.
 
-Mention the `name` attribute to Autocomplete element which will be used to identify the form element. To register an Autocomplete element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the AutoComplete as a form element After that, the AutoComplete value will be selected based on the ngModel value.
-so the FormsModule will  automatically detect the AutoComplete as a form element. After that, the AutoComplete value will be selected based on the ngModel value.
+Add the `name` attribute to the AutoComplete element to identify it within the form. To register the AutoComplete element with `ngForm`, provide the `ngModel` directive so the `FormsModule` automatically detects the AutoComplete as a form control. The AutoComplete value is then selected based on the `ngModel` value, enabling two-way data binding.
 
-The following example  demonstrates how to achieve a two-way data binding.
+The following example demonstrates how to achieve two-way data binding.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -37,14 +36,16 @@ The following example  demonstrates how to achieve a two-way data binding.
 
 ## Reactive Forms
 
-The reactive forms uses the reactive model-driven technique to handle form data between component and view, due to that we also call it as the `model-driven` forms. It's listen the form data changes between App component and view also returns the valid states and values of form elements.
+Reactive forms use the reactive model-driven technique to handle form data between the component and the view; this approach is also known as `model-driven` forms. It listens for form data changes between the app component and the view, and returns the valid states and values of the form elements.
+
+For more details about reactive forms, refer to: <https://angular.io/guide/reactive-forms>.
 
 For more details about Reactive Forms refer: <https://angular.io/guide/reactive-forms>.
 
 For the reactive forms you should import a ReactiveFormsModule into app module as well as the FormGroup,FormControl should be imported to app component. The FormGroup is used to declare `formGroupName` for the form and the FormControl is used to declare `formControlName` for form controls.
 You can declare the formControlName to AutoComplete as usual. then,you must create a value object to the FormGroup and each value will be the default value of the form control.
 
-The following example demonstrates  how to use the reactive forms.
+The following example demonstrates how to use reactive forms.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

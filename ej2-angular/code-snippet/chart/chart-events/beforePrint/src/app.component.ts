@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {
   ChartModule,
-  ChartAllModule,
   ChartComponent,
   IPrintEventArgs,
   AreaSeriesService,
@@ -20,7 +19,7 @@ import {
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-  imports: [ChartModule, ButtonModule, ChartAllModule],
+  imports: [ChartModule, ButtonModule],
   providers: [
     AreaSeriesService,
     LineSeriesService,
@@ -39,7 +38,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
   selector: 'app-container',
   template: `
     <div class="col-md-8">
-      <button ej-button id="print" (click)="print()">Print</button>
+      <button ejs-button id="print" (click)="print()">Print</button>
       <ejs-chart
         #chart
         id="chart-container"
@@ -102,7 +101,7 @@ export class AppComponent implements OnInit {
   // beforePrint: customize what gets printed
   public onBeforePrint(args: IPrintEventArgs): void {
     // Clone the chart element so we can safely modify the print content
-    console.log("before print event was triggered");
+    console.log('before print event was triggered');
     const cloned = (this.chartObj?.element.cloneNode(true) as HTMLElement) ?? undefined;
     if (!cloned) { return; }
 
@@ -130,3 +129,4 @@ export class AppComponent implements OnInit {
     args.htmlContent = wrapper;
   }
 }
+```

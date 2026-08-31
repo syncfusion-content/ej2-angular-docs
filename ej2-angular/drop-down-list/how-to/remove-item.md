@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to remove an item in Angular Dropdown List
 
-To get started quickly with removing items in angular DropDownList component, you can check the video below.
+To get started quickly with removing items in Angular DropDownList component, you can check the video below.
 
 {% youtube "https://www.youtube.com/watch?v=tEuTP0SYxn4" %}
 
-The following example demonstrate about how to remove an item from DropDownList.
+The following example demonstrates how to remove an item from DropDownList.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

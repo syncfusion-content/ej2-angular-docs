@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Popup Resizing in Angular AutoComplete
 
-You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
+You can dynamically adjust the size of the popup in the AutoComplete component by using the [`allowResize`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#allowresize) property. When enabled, users can resize the popup by dragging its borders, enhancing visibility and control. The resized dimensions are automatically retained across sessions for a consistent user experience.
 
 The following sample illustrates the implementation of the Popup Resize feature.
 

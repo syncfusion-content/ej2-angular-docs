@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Style and appearance in Angular Dialog
 
-The following CSS structure can be used to customize the dialog component's appearance based on your requirements.
+The following CSS rules can be used to customize the dialog component's appearance based on your requirements.
 
 ## Customizing the dialog header
 
-Use the following CSS to customize the dialog header properties.
+Use the following CSS to customize the dialog header.
 
 ```CSS
 .e-dialog .e-dlg-header {
@@ -50,7 +50,7 @@ Use the following CSS to customize the modal dialog overlay.
 
 ## Customizing the dialog resize icon
 
-Use the following CSS to customize the dialog resize icon.
+Use the following CSS to customize the dialog resize icon (the grip that appears at the bottom corner when `enableResize` is `true`):
 
 ```CSS
 /* To change the icon content */

@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # How to customize tab content height in Angular Tab
 
-The Tab component provides flexible height management through the [`heightAdjustMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#heightadjustmode) property, which controls how tab content areas calculate and display their heights. By default, the [`heightAdjustMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#heightadjustmode) property is set to `Content`.
+The Tab component provides flexible height management through the [`heightAdjustMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#heightadjustmode) property, which controls how tab content areas calculate and display their heights. By default, the [`heightAdjustMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#heightadjustmode) property is set to `Content`.
 
 ## Height adjustment modes
 
 The Tab component offers four distinct height calculation strategies to accommodate different layout requirements:
 
-* **None**: Each tab content height is set based on the Tab height. This value is used only the tab component having the [`height`](https://ej2.syncfusion.com/angular/documentation/api/tab/#height) property.
-* **Auto**: Each tab content height will take the maximum height of all other tabs content.
-* **Content**: Each tab content height is set based on their own content.
-* **Fill**: Each tab content height is set based on the full height of Tabs parent element.
+* **None**: Each tab's content height is fixed by the Tab's own set [`height`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#height) value. Useful when all panels should be a uniform height.
+* **Auto**: Each tab's content height matches the tallest panel across all tabs. Useful for consistent panel heights when content sizes vary.
+* **Content**: Each tab's content height equals its own content's natural height (default). Useful when each panel has variable content.
+* **Fill**: Each tab's content height fills the Tab's parent element. Requires the parent element to have an explicit height.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -35,3 +35,8 @@ The Tab component offers four distinct height calculation strategies to accommod
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/height-cs1" %}
+
+## See Also
+
+* [Style and Appearance](../style)
+* [Orientation](../orientation)

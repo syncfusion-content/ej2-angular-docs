@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#datasource) property. It supports the data type of array or `DataManager`.
 
-The AutoComplete also supports different kind of data services such as OData, OData V4, Web API and data formats such as XML, JSON, JSONP with the help of DataManager Adaptors.
+The AutoComplete also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -24,7 +24,7 @@ The AutoComplete also supports different kind of data services such as OData, OD
 
 ## Bind to local data
 
-Local data can be represented in two ways as described below.
+Local data can be represented in three ways as described below.
 
 ### Array of string
 
@@ -44,9 +44,9 @@ The AutoComplete has support to load array of primitive data such as strings and
 
 ### Array of object
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields)property.
+The AutoComplete can generate its list items through an array of complex data. To do so, map the appropriate columns to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) property.
 
-In the following example, `Game` column from complex data have been mapped to the `value` field.
+In the following example, the `Game` column from complex data is mapped to the `value` field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -62,9 +62,9 @@ In the following example, `Game` column from complex data have been mapped to 
 
 ### Array of complex object
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields)property.
+The AutoComplete can generate its list items through an array of complex data. To do so, map the appropriate columns to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) property using dot notation.
 
-In the following example, `Country.Name` column from complex data have been mapped to the `value` field.
+In the following example, the `Country.Name` column from complex data is mapped to the `value` field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -80,7 +80,7 @@ In the following example, `Country.Name` column from complex data have been ma
 
 ## Bind to remote data
 
-The AutoComplete supports retrieval of data from remote data services with the help of `DataManager`component. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#query) property is used to fetch data from the database and bind it to the AutoComplete.
+The AutoComplete supports retrieval of data from remote data services with the help of the `DataManager`. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#query) property is used to fetch data from the database and bind it to the AutoComplete.
 
 The following sample displays the first 6 contacts from the `Customers` table of the `Northwind` data service.
 
@@ -98,9 +98,9 @@ The following sample displays the first 6 contacts from the `Customers` table of
 
 ## Data binding using Async pipe
 
-An `Observable` is used extensively by Angular since it provide significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
+An `Observable` is used extensively by Angular since it provides significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
-AutoComplete data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
+AutoComplete data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe to the observable object and resolve with the latest value emitted by it.
 
 [app.component.ts]
 ```ts
