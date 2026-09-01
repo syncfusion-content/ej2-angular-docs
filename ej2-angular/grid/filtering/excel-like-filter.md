@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Excel Like Filter in Angular Data Grid
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. Excel-like filter displays a dialog with a checkbox list, search box, and sorting options, similar to Microsoft Excel's filter. This filtering type simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation. Excel-like filtering is especially useful when dealing with large datasets and columns containing distinct categorical values (such as status, category, country, or department names).
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component offers an Excel-like filter feature that provides a familiar, Excel-style interface for filtering data within the grid. Excel-like filter displays a dialog with a checkbox list, search box, and sorting options, similar to Microsoft Excel's filter. This filtering type simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation. Excel-like filtering is especially useful when dealing with large datasets and columns containing distinct categorical values (such as status, category, country, or department names).
 
-The dialog displays all unique values from that column as a checkbox list. Values can be selected or deselected to include or exclude them from the grid results, then "OK" button can be clicked to filter the data.
+The dialog displays all unique values from that column as a checkbox list. Values can be selected or deselected to include or exclude them from the grid results, and the "OK" button can be clicked to apply the filter.
 
 ## Enable Excel filtering
 
@@ -53,6 +53,16 @@ The following example illustrates checkbox filtering in the Syncfusion Angular D
 
 {% previewsample "page.domainurl/samples/grid/check-box-filter-cs1" %}
 
+## Add current selection to filter
+
+By default, the `Excel/CheckBox` filter in the Syncfusion Angular Data Grid applies filtering based solely on currently selected items. When multiple filtering actions are performed sequentially on the same column, previously filtered values are cleared and replaced with the new selection.
+
+The `Add current selection to filter` checkbox functionality enables retention of previous filter values while performing new searches. This checkbox appears when searching data in the Excel/CheckBox filter search bar and allows new selections to be included without removing previously applied filters. This cumulative filtering approach provides greater flexibility for complex filtering scenarios.
+
+The following image illustrates the `Add current selection to filter` functionality:
+
+![Add current selection to filter option.](../images/checkboxfilter.png)
+
 ## Filter modes
  
 The Data Grid `Excel` and `CheckBox` filtering features support two modes, `Default` and `Immediate`. In `Default` mode, filter changes are applied only after clicking the "Filter" or "OK" button in the filter dialog, which is the default behavior. In `Immediate` mode, filters are applied automatically when filter items are checked or unchecked in the filter dialog.
@@ -90,26 +100,18 @@ The following example demonstrates customizing the filter choice count in the ch
 {% include code-snippet/grid/excel-like-filtering-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/excel-like-filtering-cs2" %}
 
-> The filter choice count determines the number of unique items displayed in the checkbox list of the `Excel/CheckBox` filter dialog. Higher values may result in rendering delays when opening the filter dialog. Therefore, setting a reasonable filter choice count is recommended for optimal performance.
+> The filter choice count determines the number of unique items displayed in the checkbox list of the `Excel/CheckBox` filter dialog. Higher values may result in rendering delays when opening the filter dialog. Setting a reasonable filter choice count is recommended for optimal performance.
 
-## Add current selection to filter CheckBox/Excel
+## Customize checkbox list items using templates
 
-By default, the `CheckBox/Excel` filter in the Syncfusion Angular Data Grid applies filtering based solely on currently selected items. When multiple filtering actions are performed sequentially on the same column, previously filtered values are cleared and replaced with the new selection.
+The Data Grid component provides flexibility to customize the items displayed in the `Excel/CheckBox` filter options. Text customization is achieved by defining a `filterItemTemplate` and binding it to the target column. The `filterItemTemplate` property enables creation of custom templates for filter items, supporting text, icons, or any HTML elements within the template to display the desired content.
 
-The `Add current selection to filter` checkbox functionality enables retention of previous filter values while performing new searches. This checkbox appears when searching data in the CheckBox/Excel filter search bar, allowing users to include new selections without removing previously applied filters. This cumulative filtering approach provides greater flexibility for complex filtering scenarios.
+### Customize checkbox list text
 
-The following image illustrates the `Add current selection to filter` functionality:
-
-![Checkbox filter](../images/checkboxfilter.png)
-
-## Customize checkbox list text
-
-The Data Grid component provides flexibility to customize the text displayed in the `Excel/CheckBox` filtering options. This customization enables modification of default text to provide more meaningful and contextual labels for filtering values.
-
-Text customization is achieved by defining a `filterItemTemplate` and binding it to the target column. The `filterItemTemplate` property enables creation of custom templates for filter items, supporting any logic and HTML elements within the template to display desired text or content.
+This customization enables modification of default text to provide more meaningful and contextual labels for filtering values.
 
 In the following example, the text displayed in the filter checkbox list for the "Delivered" column is customized. This is accomplished by defining a `filterItemTemplate` within the column definition for that specific column. Within the template, Angular's template syntax conditionally displays "Delivered" if the data value is `true` and "Not delivered" if the value is `false`.
 
@@ -169,11 +171,9 @@ export class AppComponent implements OnInit {
 
 {% previewsample "page.domainurl/samples/grid/excel-like-filtering-cs7" %}
 
-## Customize checkbox list items using templates
+### Customize checkbox list items with icons
 
-The `filterItemTemplate` property in the grid allows customization of the appearance of filter items in the grid's filter checkbox list for a specific column. This property enables provision of custom UI or additional information within the filter checkbox list, such as icons, text, or any HTML elements, alongside the default filter items.
-
-The following example demonstrates usage of `filterItemTemplate` to render icons alongside category names in the filter checkbox list for the "Category Name" column:
+The following example demonstrates usage of `filterItemTemplate` to render custom UI or additional information—such as icons, text, or any HTML elements—alongside the default filter items in the filter checkbox list for a specific column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -239,7 +239,7 @@ export class AppComponent implements OnInit {
 
 ## Customize the excel filter dialog using CSS
 
-The Syncfusion Angular Data Grid provides extensive flexibility for enhancing the visual presentation of the Excel filter dialog through CSS customization. This capability allows modification of the dialog's appearance to align with specific application requirements and aesthetic preferences.
+The Syncfusion Angular Data Grid provides flexibility for enhancing the visual presentation of the Excel filter dialog through CSS customization. This capability allows modification of the dialog's appearance to align with specific application requirements and aesthetic preferences.
 
 **Removing context menu option**
 
@@ -265,30 +265,10 @@ The following example demonstrates context menu removal in the Excel filter dial
 {% include code-snippet/grid/excel-like-filtering-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/excel-like-filtering-cs8" %}
 
-## Bind custom remote datasource for Excel/CheckBox filtering
-
-The Data Grid allows dynamic change of the filter data source for the Excel or Checkbox filter module using custom remote data. This capability enables the filter dialog to display values from a different data source than the Data Grid's main data source.
-
-This can be accomplished by assigning a custom remote `DataManager` as the `dataSource` or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `dataSource` in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event for the `filterBeforeOpen` [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype), as detailed in the [knowledge base article](https://support.syncfusion.com/kb/article/10065/change-the-data-source-for-checkbox-filter-popup-in-grid).
-
-The following example demonstrates dynamically changing the remote custom data source for all columns in the Excel or checkbox filter dialog using a `DataManager` with `WebApiAdaptor`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering-custom-datasouce-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering-custom-datasouce-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/filtering-custom-datasouce-cs1" %}
-
-## Hide sorting option in filter dialog
+## Hide sorting options in the filter dialog
 
 The Excel-like filter dialog in the grid includes built-in sorting options (ascending and descending) by default within the context menu. To hide these sorting options, the `display` property of the following CSS classes can be set to `none`.
 
@@ -311,32 +291,52 @@ The following example demonstrates hiding sorting options in the Excel filter di
 {% include code-snippet/grid/excel-like-filtering-hide/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/excel-like-filtering-hide" %}
 
-## Enable on-demand loading for Excel/Checkbox filter
+## Bind custom remote data source for Excel/CheckBox filtering
+
+The Data Grid allows dynamic change of the filter data source for the Excel/CheckBox filter module using custom remote data. This capability enables the filter dialog to display values from a different data source than the Data Grid's main data source.
+
+This can be accomplished by assigning a custom remote `DataManager` as the `dataSource` or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `dataSource` in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event for the `filterBeforeOpen` [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype), as detailed in the [knowledge base article](https://support.syncfusion.com/kb/article/10065/change-the-data-source-for-checkbox-filter-popup-in-grid).
+
+The following example demonstrates dynamically changing the remote custom data source for all columns in the Excel/CheckBox filter dialog using a `DataManager` with `WebApiAdaptor`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/filtering-custom-datasouce-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/filtering-custom-datasouce-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/filtering-custom-datasouce-cs1" %}
+
+## Enable on-demand loading for the Excel/CheckBox filter
 
 The `Excel/CheckBox` filter types display only the first "1000" sorted unique values in the filter dialog to ensure responsive loading. Rendering all unique values (for example, "50,000" distinct entries) can significantly delay or freeze the dialog when it opens. Searching and filtering continue to consider all unique values in the column.
 
-To improve the filtering experience for large datasets, enable on-demand loading by setting the [filterSettings.enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#enableinfinitescrolling) property to `true`. This loads additional filter values as you scroll through the checkbox list, improving performance while preserving the applied filter selection.
+To improve the filtering experience for large datasets, enable on-demand loading by setting the [filterSettings.enableInfiniteScrolling](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#enableinfinitescrolling) property to `true`. This loads additional filter values as scroll through the checkbox list, improving performance while preserving the applied filter selection.
 
-**On-Demand Loading in the Filter Dialog**: Similar to infinite scrolling in social media feeds, the filter dialog loads the next batch of values automatically as the scroll position reaches the bottom of the current list. This process repeats until all unique values have been loaded or the search box is used to narrow results.
+**On-Demand loading in the filter dialog**: Similar to infinite scrolling in social media feeds, the filter dialog loads the next batch of values automatically as the scroll position reaches the bottom of the current list. This process repeats until all unique values have been loaded or the search box is used to narrow results.
 
 The `Excel/CheckBox` filter retrieves distinct data in ascending order, governed by the [filterSettings.itemsCount](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#itemscount) property with a default value of "50". As the checkbox list data scroller reaches its end, the next dataset is fetched and displayed. This process only requests new checkbox list data without redundantly fetching existing loaded datasets.
 
 ### Customize the items count for initial rendering
 
-Based on the items count value, the `Excel/CheckBox` filter retrieves unique data and displays it in the `Excel/CheckBox` filter content dialog. The count of on-demand data rendering for Excel/CheckBox filter can be customized by adjusting the [filterSettings.itemsCount](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#itemscount) property. The default value is "50".
+Based on the items count value, the `Excel/CheckBox` filter retrieves unique data and displays it in the `Excel/CheckBox` filter content dialog. The count of on-demand data rendering for the Excel/CheckBox filter can be customized by adjusting the [filterSettings.itemsCount](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#itemscount) property. The default value is "50".
 
 ```ts
 grid.filterSettings = { enableInfiniteScrolling: true, itemsCount: 40 };
 ```
 
-> It is recommended to keep the itemsCount below "300". Higher values may result in unwanted whitespace due to DOM maintenance performance degradation.
+> Keep the itemsCount value below "300". Higher values may result in unwanted whitespace due to DOM maintenance performance degradation.
 
 ### Customize the loading animation effect
 
-A loading effect indicates that data loading is in progress when the checkbox list data scroller reaches the end and there is a delay in receiving the data response from the server. The loading effect during on-demand data retrieval for Excel/Checkbox filter can be customized using the [filterSettings.loadingIndicator](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#loadingindicator) property. The default value is `Shimmer`.
+A loading effect indicates that data loading is in progress when the checkbox list data scroller reaches the end and there is a delay in receiving the data response from the server. The loading effect during on-demand data retrieval for the Excel/CheckBox filter can be customized using the [filterSettings.loadingIndicator](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#loadingindicator) property. The default value is `Shimmer`.
 
 **Example configuration**:
 
@@ -344,7 +344,7 @@ A loading effect indicates that data loading is in progress when the checkbox li
 grid.filterSettings = { enableInfiniteScrolling: true, loadingIndicator: 'Spinner' };
 ```
 
-The following example demonstrates On-Demand Excel filter implementation for the Angular Data Grid:
+The following example demonstrates on-demand loading for the Excel filter in the Angular Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -355,10 +355,12 @@ The following example demonstrates On-Demand Excel filter implementation for the
 {% include code-snippet/grid/checkbox-excel-filter/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/checkbox-excel-filter" %}
 
 ## See also
 
-* [Filter using Wildcard and LIKE operator](./filtering#wildcard-and-like-operator-filter)
-* [Change loading indicator in Angular Data Grid](../data-binding/data-binding#loading-animation)
+* [Filter using Wildcard and LIKE filters](./filtering#wildcard-and-like-filters)
+* [Filter menu in Angular Data Grid](./filter-menu)
+* [Filter bar in Angular Data Grid](./filter-bar)
+* [Loading indicator in Angular Data Grid](../data-binding/data-binding#loading-indicator)

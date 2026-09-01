@@ -3,14 +3,14 @@ layout: post
 title: Angular Grid - Programmatic Filtering | Syncfusion
 description: Learn Angular Grid programmatic filtering using filter APIs, retrieve filtered records, inspect filter details, and clear filters programmatically.
 platform: ej2-angular
-control: Filtering 
+control: Filtering
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Programmatic Filtering in Angular Grid
 
-Programmatic filtering allows applying filters to specific columns without relying on user interface interactions. This is achieved using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#filterbycolumn) method.
+Programmatic filtering allows filters to be applied to specific columns through code, without relying on user interface interactions. This capability is useful for applying predefined filter criteria when the grid loads or for triggering filters from external application logic. Programmatic filtering is performed using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#filterbycolumn) method.
 
 The following example demonstrates programmatic filtering using single and multiple values for the "Order ID" and "Customer ID" columns. The `filterByColumn` method is called within an external button click function.
 
@@ -32,7 +32,7 @@ Use Data Grid methods and properties to retrieve records that satisfy the active
 
 ### Using the getFilteredRecords() method
 
-The [getFilteredRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getfilteredrecords) method returns an array of records that match currently applied filters on the grid.
+The [getFilteredRecords](https://ej2.syncfusion.com/angular/documentation/api/grid#getfilteredrecords) method returns an array of records that match the filters currently applied on the grid. When the Data Grid is bound to remote data, this method returns a Promise that resolves to the filtered records.
 
 The following example demonstrates getting filtered data using the `getFilteredRecords` method:
 
@@ -63,15 +63,15 @@ Access these properties in the [actionComplete](https://ej2.syncfusion.com/angul
 
 ```typescript
 actionComplete(args: FilterEventArgs) {
-    var column = args.columns;
-    var object = args.currentFilterObject;
-    var name = args.currentFilteringColumn;
+    const filteredColumns = args.columns;
+    const filterObject = args.currentFilterObject;
+    const filteringColumn = args.currentFilteringColumn;
 }
 ```
 
 ## Clear filters programmatically
 
-The Data Grid provides the [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#clearfiltering) method to remove filter conditions and reset the grid to its original state.
+The Data Grid provides the [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid#clearfiltering) method to remove filter conditions and reset the grid to its original state. To clear filters on specific columns, pass the column field names as an array to the optional `fields` argument of the method.
 
 The following example demonstrates clearing filters using the `clearFiltering` method:
 
@@ -91,4 +91,4 @@ The following example demonstrates clearing filters using the `clearFiltering` m
 
 * [How to apply initial filter on custom binding in Angular Data Grid](https://www.syncfusion.com/forums/152157/how-to-apply-initial-filter-on-custom-binding-in-angular-grid)
 * [How to custom the display value of checkbox filter option in Angular Data Grid](https://www.syncfusion.com/forums/154478/how-to-custom-the-display-value-of-checkbox-filter-option-in-angular-grid)
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
+* [How to perform filter using Wildcard and LIKE filter operators](./filtering#wildcard-and-like-filters)
