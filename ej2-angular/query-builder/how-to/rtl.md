@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # How to right to left (RTL) in Angular Query Builder UI
 
-RTL (Right-to-Left) enables the Query Builder component to support languages that are read from right to left, such as Arabic, Farsi, and Urdu. When enabled, the component's text direction and layout automatically adjust for right-to-left languages, improving accessibility and user experience. To enable RTL, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#enablertl) property to true.
+Right-to-left (RTL) support enables the Query Builder component to support languages that are read from right to left, such as Arabic, Farsi, and Urdu. When enabled, the component automatically mirrors its layout, text direction, and alignment to provide an optimal experience for RTL languages.
+
+To enable RTL support, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#enablertl) property to true. This property accepts a Boolean value (true or false) to enable or disable RTL rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
