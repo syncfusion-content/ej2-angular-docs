@@ -14,7 +14,7 @@ Value binding in the MultiSelect component allows you to associate data values w
 
 ## Binding Primitive Data Types
 
-The MultiSelect Dropdown control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](../api/multi-select/#value) property of the MultiSelect.
+The MultiSelect component supports binding primitive data types such as strings and numbers. You can bind local primitive data arrays, fetch and bind data from remote sources, or supply custom data. Bind primitive values to the [`value`](../api/multi-select#value) property of the MultiSelect.
 
 Primitive data types include:
 
@@ -42,7 +42,7 @@ The following sample demonstrates preselected values for primitive data types:
 
 ## Binding Object Data Types
 
-The MultiSelect component supports object binding for datasets containing complex objects. When [`allowObjectBinding`](../api/multi-select/#allowobjectbinding) is set to true, the component's [value](../api/multi-select/#value) property contains objects of the same type as the selected items from the data source. This feature enables binding arrays of objects from local sources, remote endpoints, or custom data providers tailored to specific application needs.
+The MultiSelect component supports object binding for datasets containing complex objects. When [`allowObjectBinding`](../api/multi-select#allowobjectbinding) is set to `true`, the component's [`value`](../api/multi-select#value) property contains objects of the same type as the selected items from the data source. This enables binding arrays of objects from local sources, remote endpoints, or custom data providers.
 
 The following sample demonstrates preselected values for object data types:
 

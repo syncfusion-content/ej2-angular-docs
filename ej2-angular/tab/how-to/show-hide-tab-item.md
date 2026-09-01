@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to show or hide Tab items in Angular Tab
 
-The Tab component provides the [`hideTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/#hideTab) method to dynamically show or hide tab items at runtime. This method accepts two parameters: the index of the tab item and a boolean value that determines the visibility state (true to hide the tab, false to show the tab).
+The Tab component provides the [`hideTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#hidetab) method to dynamically show or hide tab items at runtime. The method accepts two parameters: the index of the tab item and a boolean that determines visibility (`true` to hide, `false` to show).
 
 The `hideTab` method enables developers to control tab visibility based on user interactions, application state changes, or conditional logic. When a tab is hidden, it becomes invisible to users but remains in the component's item collection, allowing it to be shown again when needed. This functionality is particularly useful for creating adaptive user interfaces that respond to different user roles, permissions, or workflow states.
 
@@ -32,3 +32,8 @@ The following demonstration shows how to implement dynamic tab visibility using 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/show-hide-tab-cs1" %}
+
+## See Also
+
+* [Load Tab items dynamically](./load-tab-items-dynamically)
+* [Create collapsible Tabs](./create-collapsible-tabs)

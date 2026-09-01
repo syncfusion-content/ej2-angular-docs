@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Custom Value in Angular MultiSelect Dropdown
 
-The Multi select component allows users to add new options that are not present in the data source when the [`allowCustomValue`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#allowcustomvalue) property is enabled. When a user selects a new custom value, the [`customValueSelection`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#customvalueselection) event is triggered, providing an opportunity to handle the custom input.
+The MultiSelect component allows users to add new options that are not present in the data source when the [`allowCustomValue`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#allowcustomvalue) property is enabled. When a user adds a new custom value, the [`customValueSelection`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#customvalueselection) event is triggered to handle the custom input.
 
 The following sample demonstrates configuration of custom value support with the Multi select component.
 

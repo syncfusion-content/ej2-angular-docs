@@ -53,7 +53,7 @@ export class AppComponent implements OnInit {
         this.title = 'Olympic Medals';
     }
 
-    // seriesRender is deprecated, but this shows how to customize series before render
+    // seriesRender: customize series appearance before rendering
     public onSeriesRender(args: ISeriesRenderEventArgs): void {
       console.log('Series render event was triggered');
         const palette = ['#f9c74f', '#90be6d', '#577590'];

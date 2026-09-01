@@ -12,13 +12,13 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-axes>
-            <e-axis columnIndex=1 name='xAxis1' opposedPosition='true' [majorGridLines]='majorGridLines'
+            <e-axis [columnIndex]='1' name='xAxis1' opposedPosition='true' [majorGridLines]='majorGridLines'
                   valueType='Category' [lineStyle]='lineStyle'>
             </e-axis>
         </e-axes>
         <e-columns>
-             <e-column width=50%></e-column>
-             <e-column width=50%></e-column>
+             <e-column [width]="'50%'"></e-column>
+             <e-column [width]="'50%'"></e-column>
         </e-columns>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Germany'></e-series>
@@ -34,7 +34,6 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public lineStyle?: Object;
     public marker?: Object;
-    public rows?: Object;
     ngOnInit(): void {
         this.chartData = [
                 { x: 'Jan', y: 15, y1: 33 }, { x: 'Feb', y: 20, y1: 31 }, { x: 'Mar', y: 35, y1: 30 },

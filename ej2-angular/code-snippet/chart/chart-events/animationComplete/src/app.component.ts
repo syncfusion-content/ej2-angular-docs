@@ -1,4 +1,4 @@
-import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts';
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
 import {
     CategoryService,
     LegendService,
@@ -10,7 +10,7 @@ import {
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    imports: [ChartModule, ChartAllModule],
+    imports: [ChartModule],
 
     providers: [
         CategoryService,

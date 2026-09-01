@@ -12,13 +12,13 @@ domainurl: ##DomainURL##
 
 A cascading MultiSelect consists of a series of dependent components, where the selection in one MultiSelect (the parent) determines the available options in another (the child). This is useful for guiding users through hierarchical data, such as selecting a country to populate a list of states, which in turn populates a list of cities.
 
-This behavior is configured by using the `change` event of the parent component. In the event handler, the logic is implemented to:
-1. Clear any previous selections in the child component and disable it
-2. Filter the data source for the child component based on the parent's newly selected value
-3. Re-enable the child component with the updated data source
-4. Apply the changes immediately using the `dataBind` method
+This behavior is configured by using the `change` event of the parent component. In the event handler:
+1. Clear any previous selections in the child component and disable it.
+2. Filter the data source for the child component based on the parent's newly selected value.
+3. Re-enable the child component with the updated data source.
+4. Apply the changes immediately using the `dataBind` method.
 
-The following example demonstrates the cascade behavior of country, state, and city MultiSelect components. The `dataBind` method ensures that property changes are reflected immediately in the MultiSelect components, integrating seamlessly with Angular's change detection cycle.
+The following example demonstrates the cascade behavior of country, state, and city MultiSelect components.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

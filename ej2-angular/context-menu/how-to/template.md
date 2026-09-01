@@ -14,9 +14,9 @@ The ContextMenu component supports extensive template customization, allowing yo
 
 ## Show table in sub ContextMenu
 
-Menu items of the ContextMenu can be customized according to the requirement. The section explains about how to customize table template in sub menu item.
+Menu items of the ContextMenu can be customized according to client requirements. The section explains how to customize a table template in a sub menu item.
 
-This can be achieved by appending table layout while `li` rendering by using `beforeItemRender` event.
+This can be achieved by appending a table layout during `li` rendering using the `beforeItemRender` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -32,9 +32,9 @@ This can be achieved by appending table layout while `li` rendering by using `be
 
 ## Show UI components in ContextMenu
 
-UI components can also be placed inside the each `li` element of ContextMenu.
+UI components can also be placed inside each `li` element of the ContextMenu.
 
-In the following example, CheckBox component is placed inside each `li` element and this can be achieved by creating CheckBox component in `beforeItemRender` event and appending it into the `li` element.
+In the following example, a CheckBox component is placed inside each `li` element. This is achieved by creating a CheckBox component in the `beforeItemRender` event and appending it into the `li` element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         this.primaryYAxis = {
             crosshairTooltip: { enable: true, fill: 'green' }
         };
-        this.crosshair = { enable: true, line: {width: 2, color: 'green'}, fill: 'green' };
+        this.crosshair = { enable: true, line: { width: 2, color: 'green' } };
         this.series1 = ChartData.prototype.getCrosshairData().series1;
         this.series2 = ChartData.prototype.getCrosshairData().series2;
         this.legend = { visible: true};

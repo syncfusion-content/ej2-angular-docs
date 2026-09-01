@@ -12,7 +12,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Internet'></e-series>>
+            <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Internet'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         };
         this.primaryXAxis = {
             title: 'Overs'
-        } as Object,
+        } as Object;
         this.title = 'India Vs Australia 1st match';
     }
 

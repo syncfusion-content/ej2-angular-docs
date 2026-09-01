@@ -27,9 +27,9 @@ standalone: true,
     <ejs-chart style='display:block;' [chartArea]='chartArea'  align='center' id='chartcontainer' [title]='title'
             [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'>
             <e-series-collection>
-                <e-series [dataSource]='series1' type='Scatter' xName='x' yName='y' opacity='0.6' name='Male' width=2 [marker]='marker1'>
+                <e-series [dataSource]='series1' type='Scatter' xName='x' yName='y' [opacity]='0.6' name='Male' [width]='2' [marker]='marker1'>
                 </e-series>
-                <e-series [dataSource]='series2' type='Scatter' xName='x' yName='y' opacity='0.6' name='Female' width=2 [marker]='marker2'>
+                <e-series [dataSource]='series2' type='Scatter' xName='x' yName='y' [opacity]='0.6' name='Female' [width]='2' [marker]='marker2'>
                 </e-series>
             </e-series-collection>
     </ejs-chart>
@@ -65,14 +65,14 @@ export class AppComponent {
                 rangePadding: 'None'
     };
     public marker1: Object = {
-       visible: false,
+       visible: true,
        width: 28,
        height: 20,
        shape: 'Rectangle',
-       dataLabel: {visible: true, position: 'Inner' }
+       dataLabel: { visible: true, position: 'Inner' }
     };
     public marker2: Object = {
-       visible: false,
+       visible: true,
        width: 12,
        height: 12,
        shape: 'Diamond'

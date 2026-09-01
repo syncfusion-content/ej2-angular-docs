@@ -10,9 +10,17 @@ domainurl: ##DomainURL##
 
 # How to add toggle button in Angular Toolbar
 
-The Toolbar component supports adding toggle buttons through the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#template) property of toolbar items. Toggle buttons provide users with the ability to switch between two states, making them ideal for features like play/pause, show/hide, or enable/disable functionality. Follow the steps below to implement toggle button functionality:
+The Toolbar component supports adding toggle buttons through the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#template) property of toolbar items. Toggle buttons provide users with the ability to switch between two states, making them ideal for features like play/pause, show/hide, or enable/disable functionality.
 
-* Use the Toolbar item's template property to define the HTML structure for the toggle button.
+## Steps
+
+1. **Define the toggle button structure.** Use the Toolbar item's `template` property to declare the HTML for the button. The `template` property accepts a string of HTML, a query selector (`#id`), or an `ng-template` reference. The example below uses the string form to keep the toggle markup inline:
+
+    ```html
+    <e-item [template]="'<button class=&quot;e-btn&quot; id=&quot;media_btn&quot;></button>'"></e-item>
+    ```
+
+2. **Render the toggle button and bind a click handler** in the Toolbar [`created`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#created) event. Toggle the icon CSS class (for example, swap `e-play` and `e-pause`) and the button content based on the active state. A typical toggle handler:
 
   ```typescript
       <e-item template='<button class="e-btn" id="media_btn"></button>'></e-item>

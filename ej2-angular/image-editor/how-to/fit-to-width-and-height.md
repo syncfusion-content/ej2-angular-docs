@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to fit image to editor width and height in Angular Image Editor
 
-The Image Editor's [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#zoom) method to fit an image to the editor by width or height. Programmatically increase the zoom level until the image dimension matches the editor container's width or height. 
+The Image Editor's [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor#zoom) method can be used to fit an image to the editor by width or height. Programmatically increase the zoom level until the image dimensions match the editor container's width or height.
 
 This example demonstrates scenarios that include buttons for fitting the image to its width (Fit Width) or height (Fit Height).
 

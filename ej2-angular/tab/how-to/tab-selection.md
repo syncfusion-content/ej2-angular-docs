@@ -10,7 +10,19 @@ domainurl: ##DomainURL##
 
 # How to detect tab selection in Angular Tab
 
-You can determine whether tab selection occurs through user interaction or programmatic methods using the `isInteracted` field in the [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selecting) and [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selected) event arguments. When users change tabs through click actions, this property return `true` otherwise, it will return `false`. The following code example demonstrates how to identify the tab selection state in both selecting and selected events.
+Use the [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#selecting) and [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#selected) events to detect whether a tab was selected by user interaction or programmatically. Both events include an `isInteracted` flag on the event arguments.
+
+## Event arguments
+
+* **`TabSelectEventArgs`** (used by `selecting`): contains the new (target) index, the previous (current) index, and the `isInteracted` flag.
+* **`TabSelectedEventArgs`** (used by `selected`): contains the selected index, the previously selected index, and the `isInteracted` flag.
+
+## `isInteracted` values
+
+| Trigger | `isInteracted` |
+|---------|----------------|
+| User clicks a Tab header or uses keyboard / swipe | `true` |
+| Programmatic calls such as `select(index)`, `enableTab` or `disable` | `false` |
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -23,3 +35,8 @@ You can determine whether tab selection occurs through user interaction or progr
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/animation-cs2" %}
+
+## See Also
+
+* [Customize tab content height](./customize-tab-content-height)
+* [Accessibility](../accessibility)

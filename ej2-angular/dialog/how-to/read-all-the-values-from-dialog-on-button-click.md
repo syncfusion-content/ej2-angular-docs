@@ -11,6 +11,7 @@ domainurl: ##DomainURL##
 # How to read Dialog values on button click in Angular Dialog
 
 Read dialog element values by binding an action handler to the footer buttons. The [buttons](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#buttons) property provides options to bind events to action buttons.
+
 For detailed information about buttons, refer to the [footer](../template#footer) section.
 The following sample captures the values of input elements within the dialog in the footer button click event and displays the values in a confirmation dialog.
 

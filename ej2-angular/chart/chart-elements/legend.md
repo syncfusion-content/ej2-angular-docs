@@ -18,6 +18,8 @@ To get started quickly with legends in Angular Charts, refer to the following vi
 
 {% youtube "https://www.youtube.com/watch?v=jfQ-7ftHodI" %}
 
+>**Note**: To use the legend feature, inject `LegendService` into the `providers` array of your `@NgModule`.
+
 ## Position and alignment
 
 By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#position) property, the legend can be positioned at the left, right, top, or bottom of the chart. By default, the legend is positioned at the bottom of the chart.
@@ -34,7 +36,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/c
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs38" %}
 
-Custom positioning allows the legend to be placed anywhere in the chart using [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/location#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/location#y) coordinates.
+Custom positioning allows the legend to be placed anywhere in the chart using [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/location#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/location#y) coordinates. The values are in pixels, measured from the top-left of the chart area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +56,7 @@ Custom positioning allows the legend to be placed anywhere in the chart using [`
 
 <!-- markdownlint-disable MD036 -->
 
-Use the [`reverse`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#reverse) property to reverse the order of legend items. By default, the legend item for the first series is placed first.
+Use the [`reverse`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#reverse) property to reverse the order of legend items. By default, the first series appears first in the legend.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +106,7 @@ To change the legend icon shape, use the [`legendShape`](https://ej2.syncfusion.
 
 ### Legend size
 
-By default, the legend occupies approximately 20%–25% of the chart height when positioned at the top or bottom, and 20%–25% of the chart width when positioned at the left or right. Change the default size using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#height) properties of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#legendsettings).
+By default, the legend occupies approximately 20%–25% of the chart height when positioned at the top or bottom, and 20%–25% of the chart width when positioned at the left or right. Change the default size, in pixels, using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#height) properties of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chartModel#legendsettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +122,7 @@ By default, the legend occupies approximately 20%–25% of the chart height when
 
 ### Legend item size
 
-Customize the size of legend items using the [`shapeHeight`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#shapeheight) and [`shapeWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#shapewidth) properties.
+Customize the size of legend items, in pixels, using the [`shapeHeight`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#shapeheight) and [`shapeWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#shapewidth) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -152,7 +154,7 @@ Paging is enabled automatically when legend items exceed the legend bounds. Navi
 
 ### Legend text wrap
 
-When legend text exceeds the container, enable wrapping using the [`textWrap`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#textwrap) property. Wrapping can also be controlled using the [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#maximumlabelwidth) property.
+When legend text exceeds the container, enable wrapping using the [`textWrap`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#textwrap) property. Wrapping can also be controlled using the [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#maximumlabelwidth) property; the default value is `61` pixels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -200,7 +202,7 @@ By default, clicking a legend item toggles the visibility of its series. To sele
 
 ## Enable animation
 
-You can customize the animation while clicking legend by setting [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableanimation) as true or false using the [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableanimation) property in chart.
+Show or hide the series with animation when clicking a legend item by setting the [`enableAnimation`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enableanimation) property to `true` or `false`. This property only applies when [`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#togglevisibility) is enabled. The default value is `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -216,7 +218,7 @@ You can customize the animation while clicking legend by setting [`enableAnimati
 
 ## Collapse legend item
 
-By default, series name will be displayed as legend. To skip the legend for a particular series, you can give empty string to the series name.
+By default, the series name is displayed as its legend text. To hide the legend entry for a particular series while the series itself remains visible in the chart, set that series' `name` to an empty string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -248,7 +250,7 @@ You can set title for legend using [`title`](https://ej2.syncfusion.com/angular/
 
 ## Arrow page navigation
 
-By default, the page number will be enabled while legend paging. Now, you can disable that page number and also you can get left and right arrows for page navigation. You have to set `false` value to [`enablePages`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enablepages) to get this support.
+By default, page numbers are visible during legend paging. Set [`enablePages`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#enablepages) to `false` to hide the page numbers and display left and right arrow navigation instead.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -280,7 +282,7 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/l
 
 ## Legend layout
 
-The [`layout`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#layout) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart#legendsettings) allows you to display the legend either horizontally or vertically. By default, the [`layout`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#layout) is set to **Auto**. The [`maximumColumns`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#maximumcolumns) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart#legendsettings) defines the maximum number of columns that can be displayed within the available space when using the auto layout. Additionally, enabling the [`fixedWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#fixedwidth) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart#legendsettings) ensures that all legend items are displayed with equal widths. The width of each item is determined by the maximum width among the legend items.
+The [`layout`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#layout) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart#legendsettings) allows you to display the legend either horizontally or vertically. Available values are `"Auto"`, `"Horizontal"`, and `"Vertical"`; the default is **Auto**. The [`maximumColumns`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#maximumcolumns) property defines the maximum number of columns that can be displayed within the available space when using the auto layout. Additionally, enabling the [`fixedWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#fixedwidth) property ensures that all legend items are displayed with equal widths. The width of each item is determined by the maximum width among the legend items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -296,9 +298,9 @@ The [`layout`](https://ej2.syncfusion.com/angular/documentation/api/chart/legend
 
 ## Legend template
 
-Legend templates allow you to replace default legend icons and text with custom HTML for each series. This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.
+Legend templates allow you to replace the default legend icons and text with custom HTML for each series. This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.
 
-You can customize the legend items by using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendsettings#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+You can customize the legend items by using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel#template) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettingsModel). Legend interactions (click to toggle series) remain unless [`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings#togglevisibility) is set to `false`. Templates work with all legend positions, alignments, and paging.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -310,8 +312,6 @@ You can customize the legend items by using the [`template`](https://ej2.syncfus
 {% endtabs %}
         
 {% previewsample "page.domainurl/samples/chart/axis/category-cs55" %}
-
->**Note**: To use legend feature, inject `LegendService` into the `@NgModule.Providers`.
 
 ## Customize each shape in legend
 

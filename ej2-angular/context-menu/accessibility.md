@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The Angular ContextMenu component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Angular ContextMenu component is outlined below.
+The accessibility compliance for the Angular ContextMenu component is summarized below.
 
-| Accessibility Criteria | Compatibility |
+| Accessibility Criteria | Compliance |
 | -- | -- |
 | [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support| <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -40,18 +40,19 @@ The accessibility compliance for the Angular ContextMenu component is outlined b
 
 ## WAI-ARIA attributes
 
-The Angular ContextMenu component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/) patterns to meet accessibility requirements. The following ARIA attributes are used in the ContextMenu component:
+The Angular ContextMenu component follows the [WAI-ARIA menubar pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/) to meet accessibility requirements. The following ARIA attributes are used in the ContextMenu component:
 
 | Attributes | Purpose |
 | --- | --- |
 | `role` | Indicates the ContextMenu component popup as `menu`, and the popup items as `menuitem`. |
-| `aria-haspopup` | Indicates the availability and type of interactive popup element. |
+| `aria-haspopup` | Indicates the availability and type of interactive popup submenu element. Defaults to `true` for items that contain a submenu. |
 | `aria-expanded` | Indicates whether the subtree can be expanded or collapsed, as well as indicates whether its current state is expanded or collapsed. |
-| `aria-label` | Indicates the menu item text. |
+| `aria-label` | Indicates the menu item text. Can be overridden via the `MenuItemModel` `text` field. |
+| `aria-disabled` | Indicates that a menu item is in a disabled state and not interactive. |
 
 ## Keyboard interaction
 
-The Angular ContextMenu component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/#keyboardinteraction) guidelines, making it accessible for people who use assistive technologies and those who rely completely on keyboard navigation. The following keyboard shortcuts are supported by the ContextMenu component:
+The Angular ContextMenu component follows the [WAI-ARIA keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/#keyboardinteraction) guidelines, making it accessible for people who use assistive technologies and those who rely completely on keyboard navigation. The following keyboard shortcuts are supported by the ContextMenu component:
 
 | **Press** | **To do this** |
 | --- | --- |

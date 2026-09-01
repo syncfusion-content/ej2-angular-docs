@@ -19,7 +19,7 @@ To enable template-driven forms, import the FormsModule into the corresponding a
 
 For more details about template-driven forms, refer to: <https://angular.io/guide/forms#template-driven-forms>.
 
-Add the `name` attribute to the MultiSelect element to identify the form element. To register a MultiSelect element with ngForm, provide the ngModel directive so the FormsModule automatically detects the MultiSelect as a form element. The MultiSelect value will be selected based on the ngModel value, enabling two-way data binding.
+Add the `name` attribute to the MultiSelect element to identify it within the form. To register a MultiSelect element with `ngForm`, provide the `ngModel` directive so the `FormsModule` automatically detects the MultiSelect as a form control. The MultiSelect value is selected based on the `ngModel` value, enabling two-way data binding.
 
 The following example demonstrates how to achieve two-way data binding:
 
@@ -41,8 +41,9 @@ Reactive forms use the reactive model-driven technique to handle form data betwe
 
 For more details about reactive forms, refer to: <https://angular.io/guide/reactive-forms>.
 
-For reactive forms, import ReactiveFormsModule and Additionally, import FormGroup and FormControl into the app component. FormGroup declares the `formGroupName` for the form, and FormControl declares the `formControlName` for form controls.
-Declare the formControlName for the MultiSelect as usual, then create a value object for the FormGroup where each value represents the default value of the form control.
+For reactive forms, import `ReactiveFormsModule`. Additionally, import `FormGroup` and `FormControl` into the app component. `FormGroup` represents the `formGroupName` for the form, and `FormControl` represents the `formControlName` for form controls.
+
+Declare the `formControlName` for the MultiSelect as usual, then create a value object for the `FormGroup` where each value represents the default value of the form control.
 
 The following example demonstrates how to use reactive forms:
 

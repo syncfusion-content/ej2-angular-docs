@@ -10,17 +10,20 @@ domainurl: ##DomainURL##
 
 # How to open and edit uploaded files in Angular Uploader
 
-The Uploader component allows you to open and edit files after uploading them to the server. This functionality is accomplished by using the `success` event of the Uploader.
+The Uploader component allows you to open and edit files after uploading them to the server. This is accomplished by using the Uploader's `success` event to retrieve the saved file path.
 
-You can retrieve the saved file path in the Uploader's `success` event and assign it to a custom attribute (`data-file-name`) on the respective file list element. When users click a file element, a new request is created with the saved file path passed via an HTTP header. On the server side, retrieve the file path from the header and open the file using the appropriate file handling method.
+When the upload succeeds, the saved file path returned by the server is stored in a custom `file-path` attribute on the corresponding file list element (matched by the file's `data-file-name` attribute, which holds the uploaded file's display name). When users click a file element, a new request is created with the saved file path passed via an HTTP header. On the server side, retrieve the file path from the header and open the file using the appropriate file handling method.
 
 ```typescript
 import { Component } from '@angular/core';
 import { EmitType } from '@syncfusion/ej2-base';
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+    standalone: true,
+    imports: [UploaderModule],
     selector: 'app-root',
-    template: '<div class="control_wrapper"> <ejs-uploader #defaultupload id='fileupload' [asyncSettings]='path' (success)='onUploadSuccess($event)'></ejs-uploader></div>'
+    template: `<div class="control_wrapper"> <ejs-uploader #defaultupload id='fileupload' [asyncSettings]='path' (success)='onUploadSuccess($event)'></ejs-uploader></div>`
 })
 export class AppComponent {
 
@@ -81,10 +84,10 @@ public void openFile()
     // Check whether the file is available in the corresponding location
     if (System.IO.File.Exists(Request.Headers.GetValues("filePath").First()))
     {
-        // This will open the selected file from server location in desktop
-        Process.Start(Request.Headers.GetValues("filePath").First());
+        // This will open the selected file from the server location on the server machine
+        System.Diagnostics.Process.Start(Request.Headers.GetValues("filePath").First());
     }
 }
 ```
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore the [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. Explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/uploader/default) to understand how to browse and select the files which you want to upload to the server.

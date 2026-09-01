@@ -12,8 +12,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-axes>
-            <e-axis rowIndex=0 name='yAxis1' opposedPosition='true' title='Temperature (Celsius)' [majorGridLines]='majorGridLines' labelFormat='{value}°C'
-                   [minimum]='24' [maximum]='36' [interval]='2' [lineStyle]='lineStyle'>
+            <e-axis rowIndex=0 name='yAxis1' opposedPosition='true' title='Temperature (Celsius)' labelFormat='{value}°C'
+                   [minimum]='24' [maximum]='36' [interval]='2'>
             </e-axis>
         </e-axes>
         <e-series-collection>
@@ -28,8 +28,6 @@ export class AppComponent implements OnInit {
     public title?: string;
     public marker?: Object;
     primaryYAxis: any;
-    lineStyle: any;
-    majorGridLines: any;
     ngOnInit(): void {
         this.chartData = multipleData;
         this.primaryXAxis = {

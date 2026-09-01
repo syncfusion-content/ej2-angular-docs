@@ -11,7 +11,6 @@ import {
   MultiLevelLabelService,
   SelectionService
 } from '@syncfusion/ej2-angular-charts';
-// import { categoryData } from './datasource';
 
 @Component({
   imports: [ChartModule],

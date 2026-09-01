@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to filter using both text and value field in Angular AutoComplete
 
-The AutoComplete data can be filtered based on both text and value fields using `predicate` of dataManager through filtering event. The filtered data can be again updated through `updateData` method.
+AutoComplete data can be filtered by both the text and value fields using the `predicate` of the `DataManager`, via the filtering event. The filtered data can then be updated using the `updateData` method.
 
-In the following example, filtering is done based on text and value fields.
+In the following example, filtering is performed based on the text and value fields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

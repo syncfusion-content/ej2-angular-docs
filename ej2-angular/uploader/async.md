@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Asynchronous Upload in Angular Uploader | Syncfusion
-description: Configure asynchronous file uploads in the Angular Uploader using save and remove action URLs, with support for auto, manual, single, and multiple file selection modes.
+description: Configure asynchronous file uploads in the Angular Uploader using save and remove URLs, with support for auto, manual, single, and multiple file selection.
 platform: ej2-angular
 control: Async 
 documentation: ug
@@ -14,14 +14,15 @@ The Uploader component supports asynchronous file uploads to the server.
 The upload process requires save and remove action URLs to manage file operations on the server.
 
     *   The save action is necessary to handle the upload operation.
-    *   The remove action is optional, one can handle the removed files from server.
+    *   The remove action is optional; it handles files removed from the server.
 
-The File can be upload automatically or manually. For more information, you can refer to the `Auto Upload` section from the documentation.
+Files can be uploaded automatically or manually. For more information, refer to the [Auto upload](#auto-upload) section.
 
 ## Multiple file upload
 
 By default, the Uploader component allows you to select and upload multiple files simultaneously.
-The selected files are displayed in a list and persist until you clear them by clicking the clear button in the footer. The `multiple` attribute is added to the input element to enable multiple file selection. The following example demonstrates multiple file upload configuration.
+The selected files are displayed in a list and persist until you clear them by clicking the clear button in the footer.
+The `multiple` attribute is added to the input element to enable multiple file selection. The following example demonstrates multiple file upload configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -37,7 +38,7 @@ The selected files are displayed in a list and persist until you clear them by c
 
 ## Single file upload
 
-You can select and upload a single file by disabling the multiple file selection property.
+You can select and upload a single file by setting the `multiple` property to `false`.
 When single file upload is enabled, the previously selected file is replaced with each new selection, ensuring only one file exists in the list.
 The `multiple` attribute is removed from the input element to restrict file selection to a single file.
 
@@ -59,12 +60,12 @@ The following example demonstrates single file upload configuration.
 
 The save action handler processes file uploads specified in the `saveUrl` property.
 The save handler receives submitted files and manages the save operation on the server.
-After successfully uploading files to the server, the file name text color changes to green and the remove icon changes to a delete icon.
+After a file is uploaded successfully, the file name is highlighted in green and the remove icon is displayed to indicate the uploaded state.
 
-* When a file uploads successfully, the `success` event is triggered to handle post-upload operations.
-* When a file fails to upload, the `failure` event is triggered with details about the error.
+* When a file is uploaded successfully, the `success` event is triggered to handle post-upload operations.
+* When a file upload fails, the `failure` event is triggered with details about the error.
 
-You can cancel the upload process by setting the `cancel` property of the event argument to `true`.
+You can cancel the upload process by setting the `cancel` property of the [`UploadingEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/uploader/uploadingEventArgs) to `true` in the `uploading` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -193,8 +194,7 @@ The remove action is optional. Specify the URL to handle the removal of files fr
 
 > You can differentiate between save and remove operations by checking the `operation` property in the `success` or `failure` event arguments.
 
-You can remove files that have not been uploaded to the server by clicking the remove icon.
-In this case, the `success` or `failure` events are not triggered.
+Removing a file that has not yet been uploaded does not call the server; the `success` and `failure` events are not triggered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -210,9 +210,11 @@ In this case, the `success` or `failure` events are not triggered.
 
 ### Server-side configuration for remove action
 
-To remove an uploaded file from the server, it is sufficient to send only the file name. You can achieve this by setting the [`postRawFile`](https://ej2.syncfusion.com/angular/documentation/api/uploader/removingEventArgs/#postrawfile) property of the `RemovingEventArgs` to `false` during the [`removing`](https://ej2.syncfusion.com/angular/documentation/api/uploader#removing) event. This ensures that only the file name is sent to the server in the Remove action.
+To remove an uploaded file from the server, it is sufficient to send only the file name. You can achieve this by setting the [`postRawFile`](https://ej2.syncfusion.com/angular/documentation/api/uploader/removingeventargs#postrawfile) property of the `RemovingEventArgs` to `false` during the [`removing`](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#removing) event. This ensures that only the file name is sent to the server in the Remove action.
 
-Here is an example:
+#### Send only the file name
+
+Here is an example of sending only the file name to the server when `postRawFile` is set to `false`:
 
 ```html
 <ejs-uploader [asyncSettings]='path' (removing)='onFileRemove($event)'></ejs-uploader>
@@ -223,7 +225,8 @@ public onFileRemove(args: RemovingEventArgs): void {
     args.postRawFile = false;
 }
 ```
-Here’s how to handle the server-side action for removing the file from server.
+
+Here is how to handle the server-side action for removing the file from the server by file name:
 
 ```csharp
 public void Remove(string UploadFiles)
@@ -253,7 +256,7 @@ public onFileRemove(args: RemovingEventArgs): void {
 }
 ```
 
-Here’s how to receive the file data in the server-side `Remove` action:
+Here is how to receive the file data in the server-side `Remove` action:
 
 ```csharp
 public void Remove(IFormFile UploadFiles)
@@ -264,10 +267,10 @@ public void Remove(IFormFile UploadFiles)
 
 ## Auto upload
 
-By default, the uploader processes the files to upload once the files are selected and added in upload queue.
+By default, the Uploader processes the files to upload once the files are selected and added to the upload queue.
 To upload manually, disable the `autoUpload` property.
 When you disable this property, you can use the action buttons to call upload all or clear all actions manually.
-You can change those buttons text using the `buttons` property in the Uploader component.
+You can change those buttons' text using the `buttons` property in the Uploader component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -281,9 +284,9 @@ You can change those buttons text using the `buttons` property in the Uploader c
   
 {% previewsample "page.domainurl/samples/uploader/uploader-cs5" %}
 
-## Sequential Upload
+## Sequential upload
 
-By default, the uploader component process multiple files to upload simultaneously. When you enable the [sequentialUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/#sequentialupload) property, the selected files will process sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload.
+By default, the Uploader component processes multiple files to upload simultaneously. When you enable the [sequentialUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#sequentialupload) property, the selected files are processed sequentially (one after the other) to the server. After a file completes—whether successfully or having failed—the next file uploads automatically. This feature helps reduce upload traffic and the chance of upload failure.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -299,9 +302,9 @@ By default, the uploader component process multiple files to upload simultaneous
 
 ## Preloaded files
 
-The uploader component allows you to preloaded the list of files that are uploaded in the server.
-The preloaded files are useful to view and remove the files from server that can be achieved by the `files` property.
-By default, the files are configured with uploaded successfully state on rendering file list.
+The Uploader component allows you to preload the list of files that are uploaded on the server.
+The preloaded files are useful to view and remove the files from the server, which can be achieved by the `files` property.
+By default, the files are configured with the uploaded successfully state on rendering the file list.
 The following properties are mandatory to configure the preloaded files:
 
     *   Name
@@ -322,18 +325,19 @@ The following properties are mandatory to configure the preloaded files:
 
 ## Adding additional HTTP headers with upload action
 
-The Uploader component allows you to add the additional headers with `save` and `remove` action request using `uploading` and `removing` event, which helps to send validation token on file upload. Access the current request and set the request header within these events.
+The Uploader component allows you to add additional headers to the `save` and `remove` action requests using the `uploading` and `removing` events, which helps to send a validation token on file upload. Access the current request and set the request header within these events.
 
-The following code block shows how to add the additional headers with save and remove action request.
+The following code block shows how to add additional headers to the save and remove action requests.
 
 ```typescript
 
 import { Component } from '@angular/core';
+import { UploadingEventArgs, RemovingEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-root',
     template: `
-               <ejs-uploader #defaultupload [asyncSettings]='path' autoUpload='false' (uploading) = "addHeaders($event)" (removing) = "addHeaders($event)"></ejs-uploader>
+               <ejs-uploader #defaultupload [asyncSettings]='path' [autoUpload]='false' (uploading)="addHeaders($event)" (removing)="addHeaders($event)"></ejs-uploader>
               `
 })
 export class AppComponent {
@@ -343,16 +347,16 @@ export class AppComponent {
     constructor() {
     }
 
-    public addHeaders(args: any) {
+    public addHeaders(args: UploadingEventArgs | RemovingEventArgs): void {
         args.currentRequest.setRequestHeader('custom-header', 'Syncfusion');
     }
 }
 
 ```
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to configure asynchronous uploads and browse the files you want to upload to the server.
 
-## See Also
+## See also
 
 * [How to add additional data on upload](./how-to/add-additional-data-on-upload)
 * [How to add confirm dialog to remove the files](./how-to/add-confirm-dialog-to-remove-the-files)

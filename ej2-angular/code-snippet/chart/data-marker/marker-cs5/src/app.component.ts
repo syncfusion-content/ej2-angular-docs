@@ -26,7 +26,9 @@ export class AppComponent implements OnInit {
     primaryYAxis: any;
     public pointRender(args: IPointRenderEventArgs): void {
         if(args.point.index === 3) {
-                args.fill = 'red'
+                args.fill = 'red';
+                args.shape = 'Diamond';
+                args.border = { width: 2, color: 'blue' };
         }
     };
     ngOnInit(): void {

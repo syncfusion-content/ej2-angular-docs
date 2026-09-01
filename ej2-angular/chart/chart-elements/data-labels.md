@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Data Labels in Angular Chart
 
-Data labels display the values of data points directly on the chart, reducing the need to reference axes for exact values. Enable data labels by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#visible) option to `true` in the `dataLabel` configuration. Labels automatically adjust to avoid overlapping and maintain readability.
+Data labels display the values of data points directly on the chart, reducing the need to reference axes for exact values. Labels automatically adjust to avoid overlapping and maintain readability.
 
 <img src="../../images/datalabel.png" alt="Chart with data labels displayed">
 
-Data labels can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#visible) option in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/markersettingsmodel#datalabel). By default, the labels will arrange smartly without overlapping.
+Data labels can be added to a chart series by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#visible) option to `true` in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/markerSettingsModel#datalabel) property of the series [`marker`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#marker). By default, the labels arrange smartly without overlapping.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ Data labels can be added to a chart series by enabling the [`visible`](https://e
   
 {% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs1" %}
 
->**Note**: To use datalabel feature, inject `DataLabelService` into the `@NgModule.providers`.
+>**Note**: To use the DataLabel feature, inject `DataLabelService` into the `@NgModule.providers`.
 
 ## Position
 
@@ -52,30 +52,17 @@ Use the [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 Customize label content using templates. Use placeholders such as `${point.x}` and `${point.y}` to display data point values. The [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettingsModel#template) property enables fully customizable and visually rich labels.
 
-**Change color for the background in the datalabel template**
+**Define a template via a `script` element**
 
-Initialize the datalabel template div as shown in the following html page,
+Add a `script` element with a unique `id` in the page's `index.html`. In this example, the `color` field from the data source is mapped to the template's background:
 
-```
+```html
     <script id="index" type="text/x-template">
-    <div id='templateWrap' style="background-color: ${point.text}; border-radius: 3px;"><span>${point.y}</span></div>
+    <div id='templateWrap' style="background-color: ${point.color}; border-radius: 3px;"><span>${point.y}</span></div>
     </script>
 ```
 
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs3/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs3/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs3" %}
-
-**To show that datalabel template, set the element id to the [template](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettingsModel#template) property in datalabel.**
+Then reference that `id` from the [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettingsModel#template) property in the `dataLabel` configuration:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,9 +76,25 @@ Initialize the datalabel template div as shown in the following html page,
   
 {% previewsample "page.domainurl/samples/chart/datalabel-cs1" %}
 
+**Define a template inline**
+
+You can also define the template HTML inline as a string in `app.component.ts`, using the same placeholders:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/data-marker/datalabel-cs3/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/data-marker/datalabel-cs3/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs3" %}
+
 ## Format
 
-Apply number or date formatting using the  [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#format)  property. Global formatting symbols include:
+Apply number or date formatting using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#format) property. Global formatting symbols include:
 - `n` – number format  
 - `p` – percentage format  
 - `c` – currency format
@@ -131,7 +134,7 @@ Apply number or date formatting using the  [`format`](https://ej2.syncfusion.com
     <td>1000</td>
     <td>n3</td>
     <td>1000.000</td>
-    <td>The number is rounded to 3 decimal place.</td>
+    <td>The number is rounded to 3 decimal places.</td>
   </tr>
   <tr>
     <td>0.01</td>
@@ -143,25 +146,25 @@ Apply number or date formatting using the  [`format`](https://ej2.syncfusion.com
     <td>0.01</td>
     <td>p2</td>
     <td>1.00%</td>
-    <td>The number is converted to percentage with 2 decimal place.</td>
+    <td>The number is converted to percentage with 2 decimal places.</td>
   </tr>
    <tr>
     <td>0.01</td>
     <td>p3</td>
     <td>1.000%</td>
-    <td>The number is converted to percentage with 3 decimal place.</td>
+    <td>The number is converted to percentage with 3 decimal places.</td>
   </tr>
   <tr>
     <td>1000</td>
     <td>c1</td>
     <td>$1000.0</td>
-    <td>The currency symbol is appended to number and number is rounded to 1 decimal place.</td>
+    <td>The currency symbol is appended to the number and the number is rounded to 1 decimal place.</td>
   </tr>
    <tr>
     <td>1000</td>
     <td>c2</td>
     <td>$1000.00</td>
-    <td>The currency symbol is appended to number and number is rounded to 2 decimal place.</td>
+    <td>The currency symbol is appended to the number and the number is rounded to 2 decimal places.</td>
   </tr>
 </table>
 
@@ -197,7 +200,7 @@ Adjust spacing around labels using the [`margin`](https://ej2.syncfusion.com/ang
   
 {% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs6" %}
 
-## Data label rotation
+## Data Label Rotation
 
 Rotate data labels using the [`angle`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#angle) property. Rotation improves readability when labels are long or when space is limited.
 
@@ -231,11 +234,13 @@ Enhance label appearance using properties such as [`fill`](https://ej2.syncfusio
 
 >Note: The [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#rx) and [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#ry) properties require non‑null [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings#border) values.
 
-## Customizing specific point
+## Customizing Specific Point
 
-Customize individual markers or labels using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs)and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iTextRenderEventArgs) events.  
-- [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) modifies shape, color, or border of a point.  
+Customize individual markers or labels using the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) events of the chart.
+- [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#pointrender) modifies the shape, color, or border of a point.
 - [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) customizes the label text for specific points.
+
+>Note: The event arguments for `pointRender` and `textRender` are typed as [`IPointRenderEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs) and [`ITextRenderEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/chart/iTextRenderEventArgs) respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -249,10 +254,10 @@ Customize individual markers or labels using the [`pointRender`](https://ej2.syn
   
 {% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs9" %}
 
-## Show percentage based on each series points
+## Show Percentage Based on Each Series Points
 
-Calculate and display percentage values based on each series' total using the [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#seriesrender) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) events.  
-- In [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#seriesrender), compute the total of `y` values.  
+Calculate and display percentage values based on each series' total using the [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#seriesrender) and [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) events.
+- In [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#seriesrender), compute the total of `y` values.
 - In [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender), calculate the percentage for each point and update the label text.
 
 {% tabs %}
@@ -267,11 +272,11 @@ Calculate and display percentage values based on each series' total using the [`
   
 {% previewsample "page.domainurl/samples/chart/data-marker/datalabel-cs10" %}
 
-## Last value label
+## Last Value Label
 
 The [`lastValueLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#lastvaluelabel) in a chart allows you to easily display the value of the last data point in a series. This feature provides an intuitive way to highlight the most recent or last data value in a series on your chart.
 
-### Enable last value label
+### Enable Last Value Label
 
 To show the last value label, make sure the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#enable) property inside the [`lastValueLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#lastvaluelabel) settings is set to `true` within the series configuration.
 
@@ -287,9 +292,9 @@ To show the last value label, make sure the [`enable`](https://ej2.syncfusion.co
 
 {% previewsample "page.domainurl/samples/chart/last-value-label" %}
 
->Note: To use last value label feature, we need to inject `LastValueLabelService` into the `@NgModule.providers`.
+>Note: To use the Last Value Label feature, inject `LastValueLabelService` into the `@NgModule.providers`.
 
-### Customization in last label
+### Customization
 
 The appearance of the last value label can be customized using style properties such as [`font`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#font), [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#background), [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#border), [`dashArray`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#dasharray), [`lineWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#linewidth), [`lineColor`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#linecolor), [`rx`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#rx), and [`ry`](https://ej2.syncfusion.com/angular/documentation/api/chart/lastValueLabelSettingsModel#ry) in the [`lastValueLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel#lastvaluelabel) property of the chart series. These settings allow you to tailor the label's look to align with your desired visual presentation.
 
@@ -305,7 +310,7 @@ The appearance of the last value label can be customized using style properties 
 
 {% previewsample "page.domainurl/samples/chart/last-value-label-customization" %}
 
-## Prevent data label
+## Prevent Data Label
 
 Hide data labels for points whose value is 0 using the [`textRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel#textrender) event. In the handler, check `args.point.y` and set `args.cancel` to `true` when it equals 0.
 
@@ -323,5 +328,5 @@ Hide data labels for points whose value is 0 using the [`textRender`](https://ej
 
 ## See Also
 
-* [Show total stacking values in data label](./how-to/stacking-total#show-the-total-value-for-stacking-series-in-data-label)
+* [Show the total value for stacking series in data label](https://ej2.syncfusion.com/angular/documentation/chart/how-to/stacking-total#show-the-total-value-for-stacking-series-in-data-label)
 * [Add Images to Each Data Point](https://support.syncfusion.com/kb/article/21529/how-to-add-images-to-each-data-point-in-angular-chart-component)

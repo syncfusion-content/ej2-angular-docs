@@ -10,7 +10,27 @@ domainurl: ##DomainURL##
 
 # How to render other components in Tab using Angular template in Angular Tab
 
-You can render other components inside Tab using Angular **ng-template**. This approach enables you to add content as other components directly with all their functionalities integrated into the Tab. The `ng-template` must be used inside each `e-tabitem` tag with the `#content` attribute, which is mandatory to render content. Then use the `ng-template` tag with a select attribute containing the id or class name for mapping the required content.
+You can render other UI components inside the Tab using Angular **ng-template**. This approach enables you to add content as other components directly with all their functionalities integrated into the Tab.
+
+## Steps
+
+1. Place an `<ng-template>` element inside each `e-tabitem` and set the `#content` attribute (this is mandatory).
+2. Add a `select` attribute to the `<ng-template>` containing the id or class name used by the embedded content (e.g., `select="#richEditor1"`).
+3. Bind the ng-template's `content` to the consuming component (e.g., a Syncfusion or native Angular component).
+
+> **Modules:** import the consuming component's Angular module into your app or standalone imports array (e.g., `RichTextBoxAllModule`, `GridModule`).
+
+```html
+<ejs-tab>
+  <e-tabitems>
+    <e-tabitem header="Editor">
+      <ng-template #content>
+        <ejs-richtexteditor></ejs-richtexteditor>
+      </ng-template>
+    </e-tabitem>
+  </e-tabitems>
+</ejs-tab>
+```
 
 Check out this video to learn about integrating other UI components inside the Angular Tab component:
 
@@ -27,3 +47,8 @@ Check out this video to learn about integrating other UI components inside the A
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/direct-components-cs1" %}
+
+## See Also
+
+* [Add dynamic Tab items with content reuse](./adding-dynamic-items-with-content-reuse)
+* [Add reactive forms within Tab](./add-reactive-forms-within-a-tab)

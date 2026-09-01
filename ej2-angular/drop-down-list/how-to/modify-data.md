@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to modify result data before remote bind in Angular Dropdown List
 
-When binding the remote data source, by using the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#actioncomplete) event, you can modify the result data before passing it to DropDownList.
+When binding the remote data source using the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#actioncomplete) event, you can modify the result data before passing it to DropDownList.
 
-The following sample demonstrate how to modify the result data.
+The following sample demonstrates how to modify the result data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

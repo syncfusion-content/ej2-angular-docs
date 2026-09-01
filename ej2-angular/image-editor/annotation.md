@@ -50,9 +50,9 @@ The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-edit
 
 * transformCollection: Specifies the transform collection of the text annotation.
 
-* underline — Specifies whether the text should be underlined.
+* underline: Specifies whether the text should be underlined.
 
-* strikethrough — Specifies whether the text should have a strikethrough.
+* strikethrough: Specifies whether the text should have a strikethrough.
 
 By utilizing the `drawText` method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
@@ -148,7 +148,7 @@ By leveraging the `fontFamily` property, you can elevate the scope of customizat
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs38" %}
 
-### Formatting Text with Bold, Italic, Underline, and Strikethrough
+### Customizing text with Bold, Italic, Underline, and Strikethrough
 
 The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawtext) method in the Image Editor component allows you to insert a text annotation into the image with specific customization options. Applying these styles enhances the text by improving readability and emphasizing key information, where bold increases visual weight to highlight important points, italic adds a slanted emphasis or creative touch, underline draws a line beneath the text for clarity or separation, and strikethrough places a line through text to indicate removal or outdated content. These formatting options enable users to make their annotations more visually distinctive and effective in conveying information.
 
@@ -171,7 +171,7 @@ The Freehand Draw annotation tool in the Angular Image Editor component is a ver
 
 The [`freehandDraw`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#freehanddraw) method is used to enable or disable the freehand drawing option in the Angular Image Editor component. 
 
-Here is an example of using the `freeHandDraw` method in a button click event.
+Here is an example of using the `freehandDraw` method in a button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -231,9 +231,9 @@ Here is an example of deleting a freehand annotation in a button click using `de
 
 The Image Editor component provides the ability to add shape annotations to an image. These shape annotations include rectangles, ellipses, arrows, paths, and lines, allowing you to highlight, emphasize, or mark specific areas or elements within the image.
 
-### Add a rectangle /ellipse / line / arrow / path
+### Add a rectangle / ellipse / line / arrow / path
 
-The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawrectangle)  method is used to insert a rectangle to the Angular Image Editor component. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
+The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawrectangle)  method is used to insert a rectangle into the Angular Image Editor component. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
 
 The `drawRectangle` method in the Angular Image Editor component takes ten parameters to define the properties of the rectangle annotation: 
 
@@ -255,11 +255,11 @@ The `drawRectangle` method in the Angular Image Editor component takes ten param
 
 * isSelected: Specifies to show the rectangle in the selected state.
 
-* borderRadius: Specifies the radius to apply border radius to rectangle.824314: Image Editor New UG Sample
+* borderRadius: Specifies the radius to apply border radius to the rectangle.
 
-The [`drawEllipse`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawellipse) method is used to insert a ellipse to the Angular Image Editor component. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The [`drawEllipse`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawellipse) method is used to insert an ellipse into the Angular Image Editor component. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The `drawEllipse` method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawEllipse` method in the Image Editor component takes nine parameters to define the properties of the ellipse annotation: 
 
 * x: Specifies the x-coordinate of the center of the ellipse. 
 
@@ -279,56 +279,56 @@ The `drawEllipse` method in the Image Editor component takes seven parameters to
 
 * isSelected: Specifies to show the ellipse in the selected state.
 
-The [`drawLine`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawline) method is used to insert a line to the Angular Image Editor component. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The [`drawLine`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawline) method is used to insert a line into the Angular Image Editor component. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The `drawLine` method in the Angular Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawLine` method in the Angular Image Editor component takes seven parameters to define the properties of the line annotation: 
 
-* startX - Specifies the x-coordinate of the start point. 
+* startX: Specifies the x-coordinate of the start point. 
 
-* startY - Specifies the y-coordinate of the start point. 
+* startY: Specifies the y-coordinate of the start point. 
 
-* endX - Specifies the x-coordinate of the end point. 
+* endX: Specifies the x-coordinate of the end point. 
 
-* endY - Specifies the y-coordinate of the end point. 
+* endY: Specifies the y-coordinate of the end point. 
 
-* strokeWidth - Specifies the stroke width of the line. 
+* strokeWidth: Specifies the stroke width of the line. 
 
-* strokeColor - Specifies the stroke color of the line. 
+* strokeColor: Specifies the stroke color of the line. 
 
 * isSelected: Specifies to show the line in the selected state.
 
 
-The [`drawArrow`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawarrow) method is used to insert a arrow to the Angular Image Editor component. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The [`drawArrow`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawarrow) method is used to insert an arrow into the Angular Image Editor component. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The `drawArrow` method in the Angular Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawArrow` method in the Angular Image Editor component takes nine parameters to define the properties of the arrow annotation: 
 
-* startX - Specifies the x-coordinate of the start point. 
+* startX: Specifies the x-coordinate of the start point. 
 
-* startY - Specifies the y-coordinate of the start point. 
+* startY: Specifies the y-coordinate of the start point. 
 
-* endX - Specifies the x-coordinate of the end point. 
+* endX: Specifies the x-coordinate of the end point. 
 
-* endY - Specifies the y-coordinate of the end point. 
+* endY: Specifies the y-coordinate of the end point. 
 
-* strokeWidth - Specifies the stroke width of the arrow. 
+* strokeWidth: Specifies the stroke width of the arrow. 
 
-* strokeColor - Specifies the stroke color of the arrow. 
+* strokeColor: Specifies the stroke color of the arrow. 
 
-* arrowStart - Specifies the arrowhead as ImageEditorArrowHeadType at the start of arrow.
+* arrowStart: Specifies the arrowhead as ImageEditorArrowHeadType at the start of arrow.
 
-* arrowEnd - Specifies the arrowhead as ImageEditorArrowHeadType at the end of the arrow.
+* arrowEnd: Specifies the arrowhead as ImageEditorArrowHeadType at the end of the arrow.
 
 * isSelected: Specifies to show the arrow in the selected state.
 
-The [`drawPath`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawpath) method is used to insert a path to the Angular Image Editor component. Path annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
+The [`drawPath`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawpath) method is used to insert a path into the Angular Image Editor component. Path annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The `drawPath` method in the Angular Image Editor component takes three parameters to define the properties of the ellipse annotation: 
+The `drawPath` method in the Angular Image Editor component takes four parameters to define the properties of the path annotation: 
 
-* points - Specifies collection of x and y coordinates as ImageEditorPoint to draw a path. 
+* points: Specifies collection of x and y coordinates as ImageEditorPoint to draw a path. 
 
-* strokeWidth - Specifies the stroke width of the path. 
+* strokeWidth: Specifies the stroke width of the path. 
 
-* strokeColor - Specifies the stroke color of the path. 
+* strokeColor: Specifies the stroke color of the path. 
 
 * isSelected: Specifies to show the path in the selected state.
 
@@ -370,7 +370,7 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 ### Customize default stroke color for shapes 
 
-We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
+The Image Editor provides default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -386,13 +386,13 @@ We provide default settings for stroke color, stroke width, fill color, and othe
 
 ## Image annotation
 
-The image annotation feature in the Image Editor provides the capability to add and customize images directly onto the image. With this feature, you can easily insert image or icons at specific locations within the image and customize various aspects of the image to meet your requirements. You have control over the customization options including rotate, flip, transparency for the image annotation.
+The image annotation feature in the Image Editor provides the capability to add and customize image overlays directly onto the base image. With this feature, you can easily insert images or icons at specific locations within the image and customize various aspects of the image to meet your requirements. You have control over the customization options including rotate, flip, transparency for the image annotation.
 
-### Add an image annotation.
+### Add an image annotation
 
 The [`drawImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawimage) method serves the purpose of inserting an image into the Image Editor control, allowing for image annotations to be added. These image annotations can be used for various purposes, such as adding logos, watermarks, or decorative elements to the image.
 
-The `drawImage` method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+The `drawImage` method in the Image Editor control takes nine parameters to define the properties of the image annotation:
 
 * data: Specified the image data or url of the image to be inserted.
 
@@ -408,7 +408,7 @@ The `drawImage` method in the Image Editor control takes six parameters to defin
 
 * degree: Specifies the degree to rotate the image.
 
-* opacity: Specifies the value for the image.
+* opacity: Specifies the opacity value of the image.
 
 * isSelected: Specifies to show the image in the selected state.
 

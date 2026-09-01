@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Add or remove Context Menu items in Angular Context Menu | Syncfusion
 description: Add and remove Angular Context Menu items at runtime using the insertAfter, insertBefore, and removeItems methods.
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The ContextMenu component provides dynamic item management capabilities, allowing you to add or remove menu items programmatically at runtime. This functionality enables responsive menu systems that adapt to changing application states, user permissions, or contextual requirements.
 
-ContextMenu items can be dynamically modified using the [`insertAfter`](https://ej2.syncfusion.com/angular/documentation/api/menu#insertafter), [`insertBefore`](https://ej2.syncfusion.com/angular/documentation/api/menu#insertbefore) and [`removeItems`](https://ej2.syncfusion.com/angular/documentation/api/menu#removeitems) methods.
+ContextMenu items can be dynamically modified using the [`insertAfter`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#insertafter), [`insertBefore`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#insertbefore) and [`removeItems`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#removeitems) methods.
 
 The `insertAfter` method adds new menu items after a specified target item, while `insertBefore` adds items before the target. The `removeItems` method removes specified items from the menu structure.
 

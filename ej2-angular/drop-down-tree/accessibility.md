@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Dropdown Tree
 
-The Dropdown Tree component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Dropdown Tree component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Dropdown Tree component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Section 508](https://www.section508.gov) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -40,22 +40,22 @@ The accessibility compliance for the Dropdown Tree component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Dropdown Tree component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet accessibility requirements. The following ARIA attributes are used in the Dropdown Tree component:
+The Dropdown Tree component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox) patterns to meet accessibility requirements. The following ARIA attributes are used in the Dropdown Tree component:
 
 | Attributes | Purpose |
 | --- | --- |
 | `role=listbox` | All list items are contained within the element. |
-| `aria-disabled` | Indicates element is perceivable but disabled. |
+| `aria-disabled` | Indicates the element is perceivable but disabled. |
 | `aria-owns` | This attribute contains the ID of the popup list to indicate popup as a child element. |
 | `aria-haspopup` | Indicates whether the Dropdown Tree input element has a popup list or not. |
 | `aria-expanded` | Indicates the state of the popup list for Dropdown Tree and the parent node's expansion status for TreeView. |
-| `aria-activedescendent` | This attribute holds the ID of the active list item to focus its descendant child element. |
+| `aria-activedescendant` | This attribute holds the ID of the active list item to focus its descendant child element. |
 | `aria-labelledby` | This attribute points to the element(s) labeling the element it's applied to. |
-| `aria-decribedby` | This attribute points to the element(s) describing the one it's set on. |
+| `aria-describedby` | This attribute points to the element(s) describing the one it's set on. |
 | `role=tree` | All tree nodes are contained within the element. |
 | `role=treeitem`| Specifies the role of each tree node in a selectable TreeView and its containment within the tree. |
 | `role=group` | Specifies the role of each parent node container in the TreeView. |
-| `role=checkbox` | Indicates checkbox control along with treeitem element. |
+| `role=checkbox` | Indicates a checkbox control along with treeitem element. |
 | `aria-multiselectable` | Indicates whether the TreeView enables multiple selection or not. |
 | `aria-selected` | Indicates the selected node. |
 | `aria-level` | Indicates the level of node in TreeView. |
@@ -65,7 +65,7 @@ The Dropdown Tree component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/a
 
 ## Keyboard interaction
 
-The Dropdown Tree component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guidelines, making it accessible for users who rely on assistive technologies and keyboard navigation. The following keyboard shortcuts are supported by the Dropdown Tree component.
+The Dropdown Tree component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox#keyboardinteraction) guidelines, making it accessible for users who rely on assistive technologies and keyboard navigation. The following keyboard shortcuts are supported by the Dropdown Tree component.
 
 | Interaction Keys | Description |
 |------|---------|

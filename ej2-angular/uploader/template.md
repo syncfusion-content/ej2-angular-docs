@@ -16,7 +16,7 @@ You can customize the Uploader's appearance using templates and custom buttons.
 
 The `template` property customizes the appearance of each file in the list. You can provide an HTML element or string template. Selected or dropped files display according to your template layout. Remove and progress bar actions are handled through corresponding events when a template is defined.
 
-For example, you can display file type icon along with default UI elements.
+For example, you can display a file type icon along with the default UI elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -35,10 +35,10 @@ For example, you can display file type icon along with default UI elements.
 You can create a completely custom template by hiding the default file list and buttons.
 Set the `showFileList` property to control whether to display the default or custom file list. When using a custom template for upload or remove operations, pass `true` as the second parameter to the `upload` and `remove` methods:
 
-* `UploaderObj.upload(filesData, true);`
-* `UploaderObj.remove(filesData, true);`
+* `this.uploadObj.upload(filesData, true);`
+* `this.uploadObj.remove(filesData, true);`
 
-Refer to the following example for implementation:
+The following example demonstrates the implementation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -52,9 +52,9 @@ Refer to the following example for implementation:
   
 {% previewsample "page.domainurl/samples/uploader/cus_template-cs1" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to customize the Uploader with file-list and custom templates.
 
-## See Also
+## See also
 
 * [Customize progress bar](./how-to/customize-progressbar)
 * [Customize button with HTML element](./how-to/customize-button-with-html-element)

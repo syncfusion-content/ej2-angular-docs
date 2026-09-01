@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
             minimum: 10, maximum: 60,
             lineStyle: { width: 0 }
         };
-        this.crosshair = { enable: true, lineType: 'Horizontal', snapToData: true };
+        this.crosshair = { enable: true, snapToData: true };
         this.tooltip = { enable: true, shared: true, format: '${series.name} : ${point.x} : ${point.y}' };
         this.title = 'Average Sales per Person';
         this.marker = { visible: true };

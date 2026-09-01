@@ -1,5 +1,4 @@
-import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import {
   AreaSeriesService,
   LineSeriesService,
@@ -19,7 +18,7 @@ import {
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  imports: [ChartModule, ButtonModule, ChartAllModule],
+  imports: [ChartModule],
   providers: [
     AreaSeriesService,
     LineSeriesService,

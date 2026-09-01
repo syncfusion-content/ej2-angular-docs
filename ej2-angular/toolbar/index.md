@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion Angular Toolbar Component | Syncfusion
+title: About Syncfusion Angular Toolbar | Syncfusion
 description: Explore the Syncfusion Angular Toolbar, a horizontal group of command buttons with scrollable, popup, template, RTL, and keyboard support.
 platform: ej2-angular
 control: Index 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# About Syncfusion Angular Toolbar Component.
+# About Syncfusion Angular Toolbar
 
 Displays a group of command buttons arranged horizontally.
 

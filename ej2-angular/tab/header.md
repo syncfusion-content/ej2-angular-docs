@@ -14,13 +14,13 @@ This section explains how to modify Tab header styles and configure header icons
 
 ## Styles
 
-You can customize header styles by adding predefined classes to the Tab root element. These CSS classes control the visual appearance and selection behavior of Tab headers:
+Apply these predefined classes to the Tab root element via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#cssclass) property to control the visual appearance and selection behavior of Tab headers:
 
 * **e-fill**: The selected Tab header background displays as a solid fill, providing clear visual distinction for the active tab.
 * **e-background**: Tab headers have a solid fill background with the selected header featuring a highlighted border for emphasis.
-* **e-background e-accent**: Tab headers have a solid fill background with the selected header displaying a highlighted border in the accent color theme.
+* **e-background e-accent**: Combine `e-background` with `e-accent` to apply a solid fill background with the selected header displaying a highlighted border in the accent color theme.
 
-> When these custom style classes are not applied to the root element, the default Tab styling is used for all Tab items.
+> When the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#cssclass) property is not configured with these custom style classes, the default Tab styling is used for all Tab items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -39,14 +39,16 @@ You can customize header styles by adding predefined classes to the Tab root ele
 
 ## Icon positions
 
-You can customize the position of Tab header icons using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#iconposition) property. This property works in conjunction with the header items [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#iconcss) property to determine both the icon source and its placement. By default, Tab header icons are positioned on the left side of the header text.
+Customize the position of Tab header icons using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#iconposition) property. This property works in conjunction with the header item's [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#iconcss) property to determine both the icon source and its placement.
 
 The available position values are:
 
-* **Left**: Icon appears to the left of the Tab header text (default behavior).
+* **Left**: Icon appears to the left of the Tab header text (default).
 * **Right**: Icon appears to the right of the Tab header text.
-* **Top**: Icon appears above the Tab header text.
-* **Bottom**: Icon appears below the Tab header text.
+* **Top**: Icon appears above the Tab header text. Supported only when the header orientation is vertical (`headerPlacement="Left"` or `"Right"`); see [Orientation](./orientation).
+* **Bottom**: Icon appears below the Tab header text. Supported only when the header orientation is vertical.
+
+In RTL layouts, the `Left` and `Right` values are mirrored: `Right` places the icon on the visual left and `Left` places it on the visual right.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -63,3 +65,5 @@ The available position values are:
 ## See Also
 
 * [How to customize selected tab styles](./how-to/customize-selected-tab-styles)
+* [Style and Appearance](./style)
+* [Orientation](./orientation)

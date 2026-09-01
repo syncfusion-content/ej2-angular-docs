@@ -16,7 +16,7 @@ To know about axis customization, you can check on this video:
 
 ## Axis Crossing
 
-An axis can be positioned in the chart area using [`crossesAt`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crossesat) and [`crossesInAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crossesinaxis) properties. The [`crossesAt`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crossesat) property specifies the values (datetime, numeric, or logarithmic) at which the axis line has to be intersected with the vertical axis or vice-versa, and the [`crossesInAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crossesinaxis) property specifies the axis name with which the axis line has to be crossed.
+An axis can be positioned in the chart area using [`crossesAt`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crossesat) and [`crossesInAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crossesinaxis) properties. The [`crossesAt`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crossesat) property specifies the values (datetime, numeric, or logarithmic) at which the axis line has to be intersected with the other axis (vertical for a horizontal axis or vice versa), and the [`crossesInAxis`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#crossesinaxis) property specifies the axis name with which the axis line has to be crossed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ An axis can be positioned in the chart area using [`crossesAt`](https://ej2.sync
 
 ## Title
 
-You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#title) property to provide quick information to the user about the data plotted in the axis.
+You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#title) property to provide quick information to the user about the data plotted along the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -48,15 +48,15 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 
 ## Title Rotation
 
-By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#titlerotation) property, you can rotate the axis title from 0 to 360 degrees.
+After setting a title as shown in the previous section, you can use the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis#titlerotation) property to rotate the axis title from 0 to 360 degrees.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs3/src/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs3.1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs3/src/main.ts %}
+{% include code-snippet/chart/axis/category-cs3.1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,7 +64,7 @@ By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/
 
 ## Tick Lines Customization
 
-You can customize the `width`, `color` and `size` of the minor and major tick lines, using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#majorticklines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#minorticklines) properties in the axis.
+You can customize the `width` and `color` of the major and minor tick lines using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#majorticklines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#minorticklines) properties in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +96,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and major gr
 
 ## Multiple Axis
 
-In addition to primary X and Y axis, we can add n number of axes to the chart. Series can be associated with this axis, by mapping with axis's unique name.
+In addition to the primary X and Y axes, you can add any number of axes to the chart. Additional axes are declared inside an `<e-axes>` collection using the `<e-axis>` element. Each additional axis must have a unique `name`, and a series is associated with that axis by setting its `yAxisName` (or `xAxisName`) to the same value. The `rowIndex` property controls the row placement of the axis in the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,9 +112,7 @@ In addition to primary X and Y axis, we can add n number of axes to the chart. S
 
 ## Inversed Axis
 
-<!-- markdownlint-disable MD033 -->
-
-When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#isinversed) to true.
+When an axis is inverted, the highest value of the axis comes closer to the origin and vice versa. To place an axis in inverted manner, set the [`isInversed`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#isinversed) property to true. The example below inverts the primary Y axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,9 +128,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 
 ## Opposed Position
 
-<!-- markdownlint-disable MD012 -->
-
-To place an axis opposite from its original position, set [`opposedPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#opposedposition) property of the axis to true.
+To place an axis opposite from its original position, set the [`opposedPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel#opposedposition) property of the axis to true. Both the primary X axis and the primary Y axis support this property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

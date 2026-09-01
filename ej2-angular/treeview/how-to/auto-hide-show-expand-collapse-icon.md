@@ -12,6 +12,8 @@ domainurl: ##DomainURL##
 
 The TreeView component allows you to create a cleaner interface by automatically hiding expand/collapse icons and displaying them only when needed. You can show the expand/collapse icons when hovering over the TreeView and hide them when the mouse leaves the component area. This behavior is implemented using the [`created`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#created) event to set up the necessary mouse event handlers and CSS styling.
 
+The implementation wires `mouseenter` and `mouseleave` listeners on the TreeView's root element and toggles a CSS class (for example, `show-icons`) on the wrapper. Pair those listeners with two CSS rules that hide `.e-icon-expandable` and `.e-icon-collapsible` by default and reveal them when the `show-icons` class is present.
+
 Refer to the following code sample to hide/show the expand/collapse icon automatically using the mouse.
 
 {% tabs %}

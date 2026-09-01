@@ -10,14 +10,24 @@ domainurl: ##DomainURL##
 
 # How to create collapsible Tabs in Angular Tab
 
-The Tab component can be configured to create collapsible functionality by adding and removing custom CSS classes through event handlers. This approach allows tab content to collapse and expand when tab headers are clicked, providing an accordion-like experience within the tab structure.
+The Tab component can be configured to provide collapsible functionality by adding and removing custom CSS classes through event handlers. The implementation allows the active tab content to expand and all other panels to collapse, producing an accordion-like behavior within the Tab structure.
 
-The collapsible behavior is achieved by:
-* Defining a CSS class to hide content using the `display: none` style property. The 'collapse' class is applied to content elements for hiding functionality using the [`created`](https://ej2.syncfusion.com/angular/documentation/api/tab/#created) event.
-* Binding the [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selected) event to manage the initial tab selection state and collapse behavior.
-* Implementing custom click handlers for tab headers to toggle the 'collapse' class, controlling the visibility of corresponding tab content panels.
+## Steps
 
-The event handler logic adds the 'collapse' class to hide content and removes it to display content, creating smooth expand and collapse transitions for enhanced user interaction.
+1. Define a CSS class with `display: none` to hide the collapsed panel.
+2. Use the [`created`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#created) event to mark all panels as collapsed initially.
+3. Bind the [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#selected) event to remove the collapse class from the active panel and toggle classes on others.
+4. Optionally handle custom click events on tab headers for explicit toggle behavior.
+
+```CSS
+.collapse {
+    display: none;
+}
+```
+
+> **Single-open behavior:** To make only one tab open at a time, toggle the collapse class on every inactive panel inside the `selected` handler.
+
+The event handler logic adds the `collapse` class to hide content and removes it to display content, creating smooth expand and collapse transitions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -30,3 +40,8 @@ The event handler logic adds the 'collapse' class to hide content and removes it
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/collapse-cs1" %}
+
+## See Also
+
+* [Render other components in Tab using Angular template](./render-other-components-in-tab-using-angular-template)
+* [Content Render Modes](../content-render-modes)

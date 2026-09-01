@@ -10,11 +10,14 @@ domainurl: ##DomainURL##
 
 # How to set tooltip to commands in Angular Toolbar
 
-The [`tooltipText`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#tooltiptext) property of the Toolbar item is used to set the HTML Tooltip to the commands that can be viewed as hint texts on mouse hover.
+The [`tooltipText`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#tooltiptext) property of the Toolbar item sets the native HTML `title` attribute on each command, which displays a hint text on mouse hover. This delivers lightweight OS-level tooltips with no additional dependencies.
 
-To change the [`tooltipText`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#tooltiptext) to ej2-tooltip component:
+To upgrade to a richer, themed Syncfusion Tooltip (with configurable positioning, animation, content templates, etc.) instead of the native browser tooltip:
 
-* Import the `Tooltip` module from `ej2-popups`, and initialize the Tooltip with the Toolbar target. Refer to the following code example:
+* Import the `TooltipModule` from `@syncfusion/ej2-angular-popups` and add it to the standalone component's `imports` array.
+* Initialize the Tooltip with the Toolbar root element as the target, for example using the Toolbar's [`created`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#created) event.
+
+Refer to the following code example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

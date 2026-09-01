@@ -10,19 +10,23 @@ domainurl: ##DomainURL##
 
 # Orientation in Angular Tab
 
-This section explains how to modify the position and modes of Tab header placement for optimal user experience and layout adaptation.
+This section describes the available Tab header placement options for adapting layout to different screen sizes and design requirements.
 
-The Tab component allows placing the header section at different positions by using the [`headerPlacement`](https://ej2.syncfusion.com/angular/documentation/api/tab/#headerplacement) property. The available positions are as follows:
+The Tab component allows placing the header section at different positions by using the [`headerPlacement`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#headerplacement) property. The available positions are as follows:
 
-* **Top**: Tab header items can be arranged horizontally, and their content can be placed after the header.
-* **Bottom**: Tab header items can be arranged horizontally, and their content can be placed before the header.
-* **Left**: Tab header items can be arranged vertically, and their content can be placed after the header.
-* **Right**: Tab header items can be arranged vertically, and their content can be placed before the header.
+* **Top**: Tab header items are arranged horizontally, and content renders below the header (default).
+* **Bottom**: Tab header items are arranged horizontally, and content renders above the header.
+* **Left**: Tab header items are arranged vertically, and content renders to the right of the header. Set an explicit `height` on the Tab container for proper rendering.
+* **Right**: Tab header items are arranged vertically, and content renders to the left of the header. Set an explicit `height` on the Tab container for proper rendering.
 
-The Tab component automatically adapts to available space when tab items exceed the viewport. You can customize the overflow behavior using the [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#overflowmode) property. The available modes are as follows:
+The Tab component automatically adapts to available space when tab items exceed the viewport. You can customize the overflow behavior using the [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#overflowmode) property. The available modes are as follows:
 
-* Scrollable
-* Popup
+* **Scrollable** (default): navigation arrows appear to scroll overflow items.
+* **Popup**: overflowing items are grouped in a drop-down menu.
+
+For an in-depth discussion of overflow behavior, see [Responsive Modes](./adaptive).
+
+The following sample demonstrates each `headerPlacement` value combined with different `overflowMode` settings:
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -38,3 +42,9 @@ The Tab component automatically adapts to available space when tab items exceed 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/orientation-tab-cs1" %}
+
+## See Also
+
+* [Adaptive (Responsive modes)](./adaptive)
+* [Header configuration](./header)
+* [Style and Appearance](./style)

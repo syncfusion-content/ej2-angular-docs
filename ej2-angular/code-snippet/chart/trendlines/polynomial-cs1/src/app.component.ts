@@ -24,7 +24,7 @@ standalone: true,
             <e-series-collection>
                 <e-series [dataSource]='data' type='Scatter' xName='x' yName='y' fill="#0066FF">
                      <e-trendlines>
-                        <e-trendline type='Linear' width=3  name='Linear' fill='#C64A75'>
+                        <e-trendline type='Polynomial' width=3  name='Polynomial' [polynomialOrder]='polynomialOrder' fill='#C64A75'>
                         </e-trendline>
                     </e-trendlines>
                     </e-series>
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     public chartArea : Object = {
       border: { width : 0}
     };
-
+    public polynomialOrder: number = 2;
     public title: string = 'Historical Indian Rupee Rate (INR USD)';
     constructor() {
         //code

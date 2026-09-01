@@ -82,7 +82,7 @@ export class AppComponent implements OnInit {
     };
   }
 
-  // Zoom complete handler (deprecated event)
+  // Zoom complete handler
   public onZoomComplete(args: IZoomCompleteEventArgs): void {
     console.log('Zoom complete event was triggered');
   }

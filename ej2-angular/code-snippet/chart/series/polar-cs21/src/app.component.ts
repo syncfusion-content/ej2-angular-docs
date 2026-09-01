@@ -115,6 +115,6 @@ export class AppComponent implements OnInit {
         this.datalabel = { visible: true, name: 'text', position: 'Inside', font: { fontWeight: '600', color: '#ffffff' } };
     }
     export() {
-        this.chart?.exportModule.export('PDF', 'Chart', undefined, [this.chart as Chart, this.chart1 as Chart, this.chart2 as Chart], undefined, undefined, true, undefined, undefined, true);
+        this.chart?.exportModule.export('PDF', 'Chart', undefined, [this.chart as Chart, this.chart1 as Chart, this.chart2 as Chart], undefined, undefined, true);
     }
 }

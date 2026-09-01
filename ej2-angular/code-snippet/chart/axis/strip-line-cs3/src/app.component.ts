@@ -12,7 +12,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Internet'></e-series>>
+            <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Internet'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
             { startFromOrigin: true, size: 4, zIndex: 'Behind', opacity: 0.5, border: { width: 2, color:'red'}}
         ],
             title: 'Overs'
-        },
+        };
         this.title = 'India Vs Australia 1st match';
     }
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Calendar
 
-The Calendar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Calendar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Calendar component is outlined below.
 
@@ -38,37 +38,52 @@ The accessibility compliance for the Calendar component is outlined below.
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
-## WAI-ARIA attributes 
-
+## WAI-ARIA Attributes
 
 The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
-Calendar provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-label`,`aria-selected`, `aria-disabled`, `aria-activedescendant` applied for navigation buttons, disable and active day cells.
+Calendar provides built-in compliance with the [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/) specifications. WAI-ARIA support is achieved through the attributes like `aria-label`,`aria-selected`, `aria-disabled`, `aria-activedescendant` applied for navigation buttons, disabled and active day cells.
 
-It helps to provide the information about the widget for assistive technology to the disabled person in the screen reader. Calendar component contains grid as role and grid cell for each day cell
+It helps to provide the information about the widget for assistive technology to the disabled person in the screen reader. The Calendar component uses `role=grid` and `gridcell` for each day cell.
 
-* **Aria-label** : attribute provides the text label for an object for the previous and next month element. It helps the screen reader object to read for the assistive purpose.
+The following table lists the WAI-ARIA attributes and roles applied to the Calendar component.
 
-* **Aria-selected** : attribute indicates the currently selected date of the Calendar component.
+| **Attribute / Role** | **Description** |
+| --- | --- |
+| `aria-label` | Provides the text label for the previous and next month navigation elements. It enables screen readers to announce the element. |
+| `aria-selected` | Indicates the currently selected date of the Calendar component. |
+| `aria-disabled` | Indicates the disabled state of the Calendar component. |
+| `aria-activedescendant` | Helps in managing the current active child of the Calendar component. |
+| `role=grid` | Gives assistive technologies information about how to handle the Calendar container element. |
+| `gridcell` | Defines the individual day cell that can be focusable and selectable. |
 
-* **Aria-disabled** : attribute indicates the disabled state of this Calendar component.
+A sample of the rendered WAI-ARIA structure is shown below.
 
-* **Aria-activedescendant** : attribute helps in managing the current active child of the Calendar component.
-
-* **Role** : attributes gives assistive technologies information about how to handle each element in a widget.
-
-* **Grid-cell** : attributes define the individual cell that can be focusable and selectable.
+```html
+<div role="grid" aria-label="Calendar">
+    <div role="presentation">
+        <button aria-label="Previous month">‹</button>
+        <span aria-label="January 2026">January 2026</span>
+        <button aria-label="Next month">›</button>
+    </div>
+    <div role="row">
+        <div class="e-day" role="gridcell" aria-selected="true">1</div>
+        <div class="e-day" role="gridcell" aria-disabled="true">2</div>
+        <div class="e-day" role="gridcell" aria-activedescendant="e-datepicker-content">3</div>
+    </div>
+</div>
+```
 
 ## Keyboard Interaction
 
 You can use the following keys to interact with the Calendar.
-The component implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices)
+The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/).
 
 It supports the below list of shortcut keys.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Upper Arrow</kbd>  | Focus the previous week date. |
+| <kbd>Up Arrow</kbd>  | Focus the previous week date. |
 | <kbd>Down Arrow</kbd>  | Focus the next week date. |
 | <kbd>Left Arrow</kbd>  | Focus the previous date. |
 | <kbd>Right Arrow</kbd>  | Focus the next date. |
@@ -79,12 +94,12 @@ It supports the below list of shortcut keys.
 | <kbd>Enter</kbd>  | Select the currently focused date. |
 | <kbd>Shift + Page Up</kbd>  | Focus the same date in the previous year. |
 | <kbd>Shift + Page Down</kbd>  | Focus the same date in the next year. |
-| <kbd>Control + Upper Arrow</kbd>  | Moves into the inner level of view like month-year, year-decade |
-| <kbd>Control + Down Arrow</kbd>  | Moves out from the depth level view like decade-year, year-month |
+| <kbd>Control + Up Arrow</kbd>  | Move into the inner level of the view like month-year, year-decade |
+| <kbd>Control + Down Arrow</kbd>  | Move out from the depth-level view like decade-year, year-month |
 | <kbd>Control + Home</kbd>  | Focus the starting date in the current year. |
 | <kbd>Control + End</kbd>  | Focus the ending date in the current year. |
 
-> To focus the Calendar component use the `alt+t` keys.
+> To focus the Calendar component, use the `alt+t` keys. The above shortcut keys work only after the Calendar component receives focus.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

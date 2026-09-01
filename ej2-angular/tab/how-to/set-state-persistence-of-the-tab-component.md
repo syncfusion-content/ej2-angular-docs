@@ -10,9 +10,24 @@ domainurl: ##DomainURL##
 
 # How to set state persistence of Tab in Angular Tab
 
-State persistence allows the Tab component to retain the current model values in the browser's local storage for state maintenance.
-This action is handled through the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/tab/#enablepersistence) property which is set to false by default.
-When set to true, the Tab component will preserve specific model values will be retained even after page refreshes or browser sessions.
+State persistence enables the Tab component to retain specific model values in the browser's local storage for state maintenance. This is controlled through the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#enablepersistence) property, which is `false` by default. Set it to `true` to preserve model values across page refreshes and browser sessions.
+
+## Persisted values
+
+When `enablePersistence` is `true`, the following model values are persisted:
+
+* Selected tab index
+* Tab item order (after programmatic reorders)
+* Disabled tab indices (when set declaratively)
+
+## Steps
+
+1. Set the `enablePersistence` property to `true` on the Tab component.
+2. Persisted values are stored under a Tab-specific key in `localStorage`.
+
+```html
+<ejs-tab [items]="items" [enablePersistence]="true"></ejs-tab>
+```
 
 The following sample demonstrates how to set state persistence of the Tab component.
 
@@ -27,3 +42,8 @@ The following sample demonstrates how to set state persistence of the Tab compon
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/tab/persistence-cs1" %}
+
+## See Also
+
+* [Show/Hide Tab item](./show-hide-tab-item)
+* [Load Tab items dynamically](./load-tab-items-dynamically)

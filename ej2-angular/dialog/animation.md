@@ -17,11 +17,11 @@ The Dialog can be animated during open and close actions. Customize animation us
 <tr>
 <td>
 delay</td><td>
-The Dialog animation will start with the mentioned delay</td></tr>
+The Dialog animation will start with the mentioned delay (in milliseconds).</td></tr>
 <tr>
 <td>
 duration</td><td>
-Specifies the animation duration to complete with one animation cycle</td></tr>
+Specifies the animation duration in milliseconds to complete one animation cycle.</td></tr>
 <tr>
 <td>
 effect</td><td>

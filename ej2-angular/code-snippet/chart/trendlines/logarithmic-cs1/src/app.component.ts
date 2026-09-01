@@ -24,7 +24,7 @@ standalone: true,
             <e-series-collection>
                 <e-series [dataSource]='data' type='Scatter' xName='x' yName='y' fill="#0066FF">
                      <e-trendlines>
-                        <e-trendline type='Linear' width=3  name='Logarithmic' fill='#C64A75'>
+                        <e-trendline type='Logarithmic' width=3  name='Logarithmic' fill='#C64A75'>
                         </e-trendline>
                     </e-trendlines>
                     </e-series>

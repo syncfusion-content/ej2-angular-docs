@@ -10,10 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular AutoComplete
 
-The AutoComplete component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the `WAI-ARIA` roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who
-use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The AutoComplete component follows the `WAI-ARIA` specifications and applies the `WAI-ARIA` roles, states, and properties along with comprehensive keyboard support. It provides complete keyboard interaction and ARIA accessibility features that ensure usability for people who use assistive technologies (AT) or rely entirely on keyboard navigation.
 
-The AutoComplete component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The AutoComplete component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the AutoComplete component is outlined below.
 
@@ -63,20 +62,20 @@ You can use the following key shortcuts to access the AutoComplete without inter
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
-| <kbd>Arrow Down</kbd> | In popup hidden state, opens the suggestion list. In popup open state, focus the first item when no item selected else focus the item next to the currently selected item. |
-| <kbd>Arrow Up</kbd> | In popup hidden state, opens the suggestion list. In popup open state, focus the last item when no item selected else focus the item previous to the currently selected one. |
-| <kbd>Page Down</kbd> | Scrolls down to the next page and focus the first item when popup list opens. |
-| <kbd>Page Up</kbd> | Scrolls up to previous page and focus the first item when popup list open. |
-| <kbd>Enter</kbd> | Selects the focused item and set to AutoComplete component. |
-| <kbd>Tab</kbd> | Focuses on the next tab indexed element when the popup is closed. Otherwise, closes the popup list and remains the focus in component suppose if it is in an open state. |
-| <kbd>Shift + tab </kbd> | Focuses the previous tab indexed element when the popup is closed.  Otherwise,closes the popup list and remains the focus in component suppose if it is in an open state. |
+| <kbd>Arrow Down</kbd> | In popup-hidden state, opens the suggestion list. In popup-open state, focuses the first item when no item is selected; otherwise, focuses the item next to the currently selected item. |
+| <kbd>Arrow Up</kbd> | In popup-hidden state, opens the suggestion list. In popup-open state, focuses the last item when no item is selected; otherwise, focuses the item previous to the currently selected one. |
+| <kbd>Page Down</kbd> | Scrolls down to the next page and focuses the first item when the popup list opens. |
+| <kbd>Page Up</kbd> | Scrolls up to the previous page and focuses the first item when the popup list is open. |
+| <kbd>Enter</kbd> | Selects the focused item and sets it in the AutoComplete component. |
+| <kbd>Tab</kbd> | Focuses on the next tab-indexed element when the popup is closed. Otherwise, closes the popup list and keeps focus on the component if it is in an open state. |
+| <kbd>Shift + Tab</kbd> | Focuses the previous tab-indexed element when the popup is closed. Otherwise, closes the popup list and keeps focus on the component if it is in an open state. |
 | <kbd>Alt + Down</kbd> | Opens the popup list. |
-| <kbd>Alt + Up</kbd> | In popup hidden state, opens the popup list. In popup open state, closes the popup list. |
-| <kbd>Esc(Escape)</kbd> | Closes the popup list when it is in an open state then remove the selection. |
-| <kbd>Home</kbd> | Cursor moves to before of first character in input. |
-| <kbd>End</kbd> | Cursor moves to next of last character in input. |
+| <kbd>Alt + Up</kbd> | In popup-hidden state, opens the popup list. In popup-open state, closes the popup list. |
+| <kbd>Esc</kbd> | Closes the popup list when it is in an open state, then removes the selection. |
+| <kbd>Home</kbd> | Moves the cursor to the beginning of the input. |
+| <kbd>End</kbd> | Moves the cursor to the end of the input. |
 
-> In the below sample, focus the AutoComplete component using <kbd>alt+t</kbd> keys.
+> In the sample below, focus the AutoComplete component using <kbd>Alt + T</kbd> keys.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

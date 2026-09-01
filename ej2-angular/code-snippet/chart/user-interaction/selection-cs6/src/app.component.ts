@@ -11,22 +11,20 @@ imports: [
 providers: [ CategoryService, ColumnSeriesService, LegendService, SelectionService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'
        [legendSettings]='legendSettings'  selectionMode='Point'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' selectionStyle='chartSelection1' [animation]='animation'></e-series>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver' selectionStyle='chartSelection2' [animation]='animation'></e-series>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='bronze' name='Bronze' selectionStyle='chartSelection3' [animation]='animation'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='bronze' name='Bronze'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
     public chartData?: Object[];
     public title?: string;
-    public primaryYAxis?: Object;
-    public animation?: Object;
-    public selectedData?: Object[];
     public legendSettings?: Object;
     ngOnInit(): void {
         this.chartData = selectionData;
@@ -34,8 +32,10 @@ export class AppComponent implements OnInit {
            valueType: 'Category',
            title: 'Countries'
         };
-        this.animation = { enable: false};
-        this.legendSettings = { visible: true,  toggleVisibility: false, enableHighlight: true };
+        this.primaryYAxis = {
+           title: 'Medals'
+        };
+        this.legendSettings = { visible: true, toggleVisibility: true, enableHighlight: true };
         this.title = 'Olympic Medals';
     }
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to convert image to binary after upload in Angular Uploader | Syncfusion
+title: Convert image to binary format after upload | Syncfusion
 description: Convert Angular Uploader image files into binary byte arrays on the server using a BinaryReader and ReadBytes instead of saving to a physical directory.
 platform: ej2-angular
 control: Convert image into binary format after uploading 
@@ -38,7 +38,8 @@ public void Save()
                 Response.Clear();
                 Response.ContentType = "application/json; charset=utf-8";
                 Response.StatusCode = 200;
-                Response.Status = "200 Success";
+                Response.Status = "200";
+                Response.StatusDescription = "Success";
                 Response.End();
             }
         }
@@ -49,7 +50,7 @@ public void Save()
         Response.Clear();
         Response.ContentType = "application/json; charset=utf-8";
         Response.StatusCode = 204;
-        Response.Status = "204 No Content";
+        Response.Status = "204";
         Response.StatusDescription = e.Message;
         Response.End();
     }
@@ -57,4 +58,4 @@ public void Save()
 
 ```
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore the [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. Explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/uploader/default) to understand how to browse and select the files which you want to upload to the server.

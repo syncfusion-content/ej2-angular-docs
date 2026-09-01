@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
         this.primaryYAxis = {
            valueType: 'Logarithmic',
            title: 'Profit',
-           logBase: 2
+           logBase: 5
         };
         this.title = 'Product X Growth [1995-2005]';
     }

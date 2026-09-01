@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular AutoComplete
 
-The AutoComplete supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) field in the data table. The group header is displayed as both inline and fixed headers. The fixed group header content is updated dynamically on scrolling the suggestion list with its category value.
+The AutoComplete supports organizing list items into groups based on different categories. The category of each list item can be mapped through the [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/fieldSettingsModel#groupby) field. The group header is displayed as both an inline header and a fixed header. The fixed group header content is updated dynamically while scrolling the suggestion list to show the category value of the visible group.
 
-In the following sample, vegetables are grouped according on its category using `groupBy` field.
+In the following sample, vegetables are grouped according to their category using the [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/fieldSettingsModel#groupby) field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -28,7 +28,7 @@ In the following sample, vegetables are grouped according on its category using 
 
 ## Customization
 
-The grouping header is also provided with customization option. This allows custom designing using the [groupTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#grouptemplate) property for both inline and fixed headers.
+The grouping header also provides customization options that allow custom styling and content design. Use the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#grouptemplate) property to create custom templates for both the inline and fixed group headers.
 
 ## See Also
 

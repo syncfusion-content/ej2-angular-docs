@@ -13,7 +13,7 @@ standalone: true,
     template: `<ejs-chart id="chart-container" [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
          [legendSettings]='legend'>
             <e-series-collection>
-                <e-series [dataSource]='data' type='Column' xName='x' yName='y' name='Years' [marker]='marker'>
+                <e-series [dataSource]='data' type='Column' xName='x' yName='y' name='Years'>
                 </e-series>
            </e-series-collection>
        </ejs-chart>`
@@ -25,7 +25,6 @@ standalone: true,
     public data?: Object[];
     public title?: string
     public legend: any;
-    public marker: any;
 
     ngOnInit(): void {
     this.primaryYAxis = {

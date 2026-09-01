@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to check file size before upload in Angular Uploader
 
-Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/#uploading) event to obtain file sizes before uploading to the server. The `file` object reports size in bytes; convert it to `KB` or `MB` with the [bytesToSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/#bytestosize) method.
+Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#uploading) event to obtain file sizes before uploading to the server. The `args.fileData` object reports size in bytes; convert it to `KB` or `MB` with the [bytesToSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#bytestosize) method on the `UploaderComponent` instance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -24,4 +24,4 @@ Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploade
   
 {% previewsample "page.domainurl/samples/uploader/check-file-size-cs1" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore the [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. Explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse and select the files which you want to upload to the server.

@@ -11,12 +11,12 @@ imports: [
 providers: [ CategoryService, ColumnSeriesService, LegendService, SelectionService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'
-            selectionMode='Point' isMultiSelect='true' [selectedDataIndexes]='selectedData'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'
+            selectionMode='Point' [selectedDataIndexes]='selectedData'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' selectionStyle='chartSelection1' [animation]='animation'></e-series>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver' selectionStyle='chartSelection2' [animation]='animation'></e-series>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='bronze' name='Bronze' selectionStyle='chartSelection3' [animation]='animation'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='bronze' name='Bronze'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -25,7 +25,6 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
-    public animation?: Object;
     public selectedData?: Object[];
     ngOnInit(): void {
         this.chartData = selectionData;
@@ -33,10 +32,12 @@ export class AppComponent implements OnInit {
            valueType: 'Category',
            title: 'Countries'
         };
-        this.animation = { enable: false};
+        this.primaryYAxis = {
+           title: 'Medals'
+        };
         this.selectedData = [
-        { series: 0, point: 1}, { series: 2, point: 3}
-    ];
+            { series: 0, point: 1 }, { series: 2, point: 3 }
+        ];
         this.title = 'Olympic Medals';
     }
 

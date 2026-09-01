@@ -12,6 +12,8 @@ domainurl: ##DomainURL##
 
 The Angular Toolbar component supports template configuration through Angular's **ng-template** directive, enabling integration of complex UI components as toolbar items. Template configuration provides flexibility to customize toolbar items beyond standard button and separator types, allowing seamless integration of components like menus and custom controls.
 
+The [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#template) property on a Toolbar item accepts an `ng-template` reference (`TemplateRef`). Reference the template by assigning it to the item `template` input. The example below illustrates embedding the Menu component within a Toolbar item using an `<ng-template>` block.
+
 ## Integrate menu component
 
 

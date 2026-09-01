@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
         this.chartData = dateData;
         this.primaryXAxis = {
             valueType: 'DateTime',
+            interval: 2,
             intervalType: 'Years'
         };
         this.title = 'Average Sales Comparison';

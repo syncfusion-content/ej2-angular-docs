@@ -14,13 +14,20 @@ You are able to restrict drag and drop operations to allow files to be dropped o
 
 ## Implementation approach
 
+The events used here expose the following useful arguments:
+
+| Event | Useful argument fields |
+| --- | --- |
+| `nodeDragging` | `args.draggedNode`, `args.dropTarget`, `args.dropIndicator` (`"e-drop-in"` child / `"e-drop-next"` sibling / `"e-drop-no"` restrict) |
+| `nodeDragStop` | `args.draggedNode`, `args.dropTarget`, `args.dropIndicator`, `args.cancel` |
+
 To restrict drag and drop operations:
 
-1. **Enable drag and drop**: Set the `allowDragAndDrop` property to `true`
-2. **Handle nodeDragging event**: Use this event to provide visual feedback by modifying drop indicators
-3. **Handle nodeDragStop event**: Implement validation logic to cancel invalid drop operations
-4. **Node type identification**: Determine whether nodes are files or folders using node data properties
-5. **Conditional validation**: Allow drops only when the target node meets the specified criteria
+1. **Enable drag and drop**: Set the `allowDragAndDrop` property to `true`.
+2. **Handle the nodeDragging event**: Use this event to provide visual feedback by modifying drop indicators.
+3. **Handle the nodeDragStop event**: Implement validation logic and set `args.cancel = true` to cancel an invalid drop.
+4. **Identify node types**: Determine whether nodes are files or folders using a property on the node data record.
+5. **Apply conditional validation**: Allow the drop only when the target node and drop indicator match the rules defined in your business logic.
 
 
 {% tabs %}

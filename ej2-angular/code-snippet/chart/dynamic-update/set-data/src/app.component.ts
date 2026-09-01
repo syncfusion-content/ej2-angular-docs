@@ -1,5 +1,4 @@
-import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { ChartComponent, ColumnSeriesService, CategoryService, IAxisRangeCalculatedEventArgs } from '@syncfusion/ej2-angular-charts';
+import { ChartModule, ChartComponent, ColumnSeriesService, CategoryService, IAxisRangeCalculatedEventArgs } from '@syncfusion/ej2-angular-charts';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 @Component({

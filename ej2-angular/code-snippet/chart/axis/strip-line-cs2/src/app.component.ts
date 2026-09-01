@@ -12,7 +12,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Internet'></e-series>>
+            <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' name='Internet'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -30,8 +30,8 @@ export class AppComponent implements OnInit {
         };
         this.primaryXAxis = {
             stripLines:[
-            {start: 0, end: 5, text: 'powerplay 1', color: 'red', visible: true, opacity: 0.5, rotation: 45, testStyle: { size: 20, color: 'black'}},
-            {start: 5, end: 10, text: 'powerplay 2', color: 'blue', visible: true, opacity: 0.5, rotation: 45, testStyle: { size: 20, color: 'black'}},
+            {start: 0, end: 5, text: 'powerplay 1', color: 'red', visible: true, opacity: 0.5, rotation: 45, textStyle: { size: 20, color: 'black'}},
+            {start: 5, end: 10, text: 'powerplay 2', color: 'blue', visible: true, opacity: 0.5, rotation: 45, textStyle: { size: 20, color: 'black'}},
         ],
             title: 'Overs'
         },

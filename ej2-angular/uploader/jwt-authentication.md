@@ -22,30 +22,45 @@ The `currentRequest` property and `setRequestHeader` method are used to add the 
 
 The following code example demonstrates client-side JWT implementation:
 
-```html
-<ejs-uploader
-    #defaultupload
-    id="defaultfileupload"
-    [asyncSettings]="path"
-    (uploading)="onFileUploading($event)"
-    (removing)="onFileRemove($event)"
-></ejs-uploader>
-```
-
 ```typescript
-public token: string = 'Your.JWT.Token'; // Replace with a valid JWT token
+import { Component } from '@angular/core';
+import { UploadingEventArgs, RemovingEventArgs } from '@syncfusion/ej2-angular-inputs';
 
-public onFileUploading(args: any): void {
-    // Add JWT to request header before file upload
-    args.currentRequest.setRequestHeader('Authorization',`Bearer ${this.token}`);
-}
+@Component({
+    selector: 'app-root',
+    template: `
+        <ejs-uploader
+            #defaultupload
+            id="defaultfileupload"
+            [asyncSettings]="path"
+            (uploading)="onFileUploading($event)"
+            (removing)="onFileRemove($event)"
+        ></ejs-uploader>
+    `
+})
+export class AppComponent {
+    // Configure save and remove URLs via asyncSettings.
+    public path: Object = {
+        saveUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Save',
+        removeUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Remove'
+    };
 
-public onFileRemove(args: any): void {
-    // Add JWT to request header before file removal
-    args.postRawFile = false;
-    args.currentRequest.setRequestHeader('Authorization',`Bearer ${this.token}`);
+    public token: string = 'Your.JWT.Token'; // Replace with a valid JWT token
+
+    public onFileUploading(args: UploadingEventArgs): void {
+        // Add JWT to request header before file upload.
+        args.currentRequest.setRequestHeader('Authorization', `Bearer ${this.token}`);
+    }
+
+    public onFileRemove(args: RemovingEventArgs): void {
+        // Send only the file name (not the full file data) on removal.
+        args.postRawFile = false;
+        // Add JWT to request header before file removal.
+        args.currentRequest.setRequestHeader('Authorization', `Bearer ${this.token}`);
+    }
 }
 ```
+
 > Replace `Your.JWT.Token` with a valid JWT from your authentication system for production environments.
 
 ## Server-side controller (ASP.NET Core)
@@ -54,7 +69,7 @@ The server-side controller receives and validates the JWT from request headers. 
 
 The `Save` method validates the JWT before saving files to the `Uploaded Files` directory. The `Remove` method verifies JWT authorization before deleting files.
 
-The `IsAuthorized` method extracts and validates the JWT from the `Authorization` header. Replace `Your.JWT.Token` with your token verification logic. The `SaveFileAsync` method handles file persistence, including support for chunked uploads.
+The `IsAuthorized` method extracts and validates the JWT from the `Authorization` header, and the `SaveFileAsync` method handles file persistence, including support for chunked uploads.
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;

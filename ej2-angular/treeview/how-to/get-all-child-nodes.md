@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get all child nodes by parent ID in TreeView in Angular Tree View | Syncfusion
+title: How to get all child nodes by parent ID in Angular Tree View | Syncfusion
 description: Retrieve all child nodes of an Angular Tree View parent by ID using the getNode method for traversal and operations.
 platform: ej2-angular
 control: TreeView
@@ -8,11 +8,21 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to get all child nodes by parent ID in TreeView in Angular Tree View
+# How to get all child nodes by parent ID in Angular Tree View
 
 This section demonstrates how to retrieve child nodes from a corresponding parent node ID in hierarchical data structures. The TreeView component provides the [`getNode`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#getnode) method to access node details and traverse the tree structure programmatically. This functionality is essential for scenarios such as expanding specific branches, performing operations on node hierarchies, or implementing custom navigation patterns.
 
 The `getNode` method returns detailed information about a specific node, including its child elements, which enables you to access and manipulate the entire subtree. This approach is particularly useful when working with dynamic data sources or when you need to implement custom tree traversal logic based on parent-child relationships.
+
+For example, the returned object for a node contains a `child` array that you can walk recursively to enumerate the entire subtree:
+
+```typescript
+const node = this.tree.getNode('1');
+console.log('Node text:', node.text);
+console.log('Direct children:', node.child);
+```
+
+> `getNode` returns the JSON record stored in the `dataSource` (an `ITreeData` object), not the DOM element. Walk the `child` array to traverse the subtree.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

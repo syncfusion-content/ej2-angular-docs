@@ -44,14 +44,14 @@ The TreeView component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pa
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=tree` | All tree nodes are contained within the element. |
-| `role=treeitem `| Specifies the role of each tree node in a selectable TreeView and its containment within the tree. |
+| `role=tree` | Identifies the element as a tree container that holds all tree node elements. |
+| `role=treeitem`| Specifies the role of each tree node in a selectable TreeView and its containment within the tree. |
 | `role=group` | Specifies the role of each parent node container. |
 | `role=checkbox` | Indicates checkbox control along with treeitem element. |
 | `aria-multiselectable` | Indicates whether the TreeView enables multiple selection or not. |
 | `aria-expanded` | Indicates whether the parent node has expanded or not. |
 | `aria-selected` | Indicates the selected node. |
-| `aria-grabbed` | Indicates the selected state on drag-and-drop of node. |
+| `aria-grabbed` | Indicates the grabbed state of a node during drag-and-drop (deprecated per ARIA 1.1; use `aria-dropeffect` alternatives). |
 | `aria-level` | Indicates the level of node in TreeView. |
 | `aria-checked` | Indicates the current checked state of TreeView checkbox. |
 | `aria-label` | Indicates the contextual message for the TreeView checkbox. |
@@ -78,12 +78,14 @@ The TreeView component follows the [keyboard interaction](https://www.w3.org/WAI
 | <kbd>Enter</kbd> | Selects the focused tree node or confirms editing operations when in edit mode. |
 | <kbd>Space</kbd> | Toggles the checkbox state of the focused node when checkbox functionality is enabled. |
 | <kbd>Ctrl + A</kbd> | Selects all tree nodes when multi-selection is enabled. |
+| <kbd>Ctrl</kbd> + click (on tree node) | Adds or removes the clicked node from the current selection when multi-selection is enabled. |
+| <kbd>Shift</kbd> + click (on tree node) | Selects a contiguous range of nodes from the last selected node to the clicked node when multi-selection is enabled. |
 
 ### Editing Keys
 | Interaction Keys | Description |
 |------|---------|
 | <kbd>F2</kbd> | Initiates inline editing mode for the focused tree node when editing is enabled. |
-| <kbd>Esc</kbd> | Cancels the current editing operation and returns focus to the tree node without saving changes. |
+| <kbd>Esc</kbd> (in edit mode) | Cancels the current editing operation and returns focus to the tree node without saving changes. |
 ## Ensuring accessibility
 
 The TreeView component's accessibility levels are ensured through comprehensive testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.

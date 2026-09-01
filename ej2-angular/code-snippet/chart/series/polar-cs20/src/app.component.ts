@@ -53,6 +53,6 @@ export class AppComponent implements OnInit {
             content: 'Chart Footer',
             fontSize: 15,
         };
-        this.chart?.exportModule.export('PDF', 'Chart', 1, [this.chart as ChartComponent], undefined, undefined, true, header, footer);
+        this.chart?.exportModule.export('PDF', 'Chart', 'Portrait', [this.chart as ChartComponent], undefined, undefined, true, header, footer);
     }
 }
