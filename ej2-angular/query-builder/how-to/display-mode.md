@@ -10,7 +10,12 @@ domainurl: ##DomainURL##
 
 # How to change display mode in Angular Query Builder UI
 
-The Query Builder supports two distinct layout orientations: vertical and horizontal. Use the [`displayMode`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#displaymode) property to switch between these display modes based on your application's layout requirements.
+The Query Builder supports two display modes: Horizontal and Vertical. Use the [`displayMode`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#displaymode) property to switch between these modes based on your application's layout requirements.
+
+* Horizontal - Displays rules and groups in a side-by-side layout.
+* Vertical - Displays rules and groups in a stacked layout.
+
+The following example demonstrates how to set the displayMode property. Changing the display mode updates the arrangement of rules and groups to better suit the available screen space and application layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -25,4 +30,4 @@ The Query Builder supports two distinct layout orientations: vertical and horizo
 {% previewsample "page.domainurl/samples/query-builder/filtering-cs7" %}
 
 > * The default display mode of the Query Builder component is Horizontal.
-> * Use the displayMode property to switch to Vertical layout when needed.
+> * Use the displayMode property to switch to the Vertical layout when needed.
