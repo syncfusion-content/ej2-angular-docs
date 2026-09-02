@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connector Customization in Angular Diagram
 
-The Diagram component provides extensive customization options for connectors, allowing developers to modify visual appearance, behavior, and interaction properties. This guide covers decorator shapes, styling options, spacing controls, bridging effects, and advanced connector features.
+The Angular Diagram component provides extensive customization options for connectors, allowing developers to modify visual appearance, behavior, and interaction properties. This guide covers decorator shapes, styling options, spacing controls, bridging effects, and advanced connector features.
 
 ## Decorator shapes and customization
 

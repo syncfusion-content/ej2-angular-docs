@@ -44,7 +44,7 @@ The Angular Data Grid integrates with modern application architectures, supporti
 
 The Data Grid integrates with major relational databases to provide seamless data access and management:
 
-| Database | Key Benefit | Best For |
+| Database | Key benefit | Best for |
 |----------|---------------|----------|
 | **[Microsoft SQL Server](./connecting-to-database/microsoft-sql-server)** | ADO.NET and Entity Framework integration | Enterprise applications, complex queries |
 | **[MySQL Server](./connecting-to-database/mysql-server)** | Cross-platform connectivity | Web applications, open-source stacks |
@@ -69,7 +69,7 @@ The Angular Data Grid includes key features that make it easier to work with and
 - **[Sorting](./sorting)** - Arrange records in ascending or descending order to quickly identify trends and patterns.
 - **[Filter bar](./filtering/filter-bar)** - Apply inline text filters in column headers for immediate results without dialogs.  
 - **[Filter menu](./filtering/filter-menu)** - Use advanced filtering with complex conditions and multiple criteria for powerful expression‑based queries. 
-- **[Excel‑like filter](./excel-like-filter)** - Filter with a familiar checkbox interface, allowing multi‑select from available values.  
+- **[Excel‑like filter](./filtering/excel-like-filter)** - Filter with a familiar checkbox interface, allowing multi‑select from available values.  
 - **[Searching](./searching)** - Perform rapid text‑based searches across one or multiple columns for global or column‑specific results. 
 - **[Grouping](./grouping/grouping)** - Organize records into categories with multi‑level hierarchical grouping for better comprehension. 
 - **[Aggregates](./aggregates/aggregates)** - Calculate and display summary values (sum, average, min, max, custom metrics) to gain real‑time insights.
@@ -93,8 +93,9 @@ Multiple editing modes support different workflow scenarios:
 | **[Batch editing](./editing/batch-editing)** | Make multiple changes before saving them together | High-volume editing | Efficient commits with fewer server requests |
 | **[Cell editing](./editing/cell-editing)** | Edit individual cells within the grid | Frequent data entry, precision-focused editing | Precise cell-level editing and rapid data updates |
 
-**[Data validation](./editing/validation)**:
-Built‑in validation rules such as required fields, minimum and maximum values, and numeric‑only checks ensure consistent data accuracy. In addition, custom validation rules provide flexibility to define tailored logic for specific business requirements, validating input before changes are saved.
+**Data validation**
+
+Built‑in [validation](./editing/validation) rules such as required fields, minimum and maximum values, and numeric‑only checks ensure consistent data accuracy. In addition, custom validation rules provide flexibility to define tailored logic for specific business requirements, validating input before changes are saved.
 
 ## Columns
 
@@ -125,24 +126,24 @@ The Angular Data Grid delivers accessible, customizable data experiences with fl
 
 **Selection**
 
-- **[Row selection](./selection/row-selection)** - Select single or multiple rows for flexible workflows  
-- **[Checkbox selection](./selection/check-box-selection)** - Use checkboxes with select‑all for bulk operations  
-- **[Cell selection](./selection/cell-selection)** - Choose individual cells or ranges with spreadsheet‑like interaction  
+- **[Row selection](./selection/row-selection)** - Select single or multiple rows for flexible workflows. 
+- **[Checkbox selection](./selection/check-box-selection)** - Use checkboxes with select‑all for bulk operations.  
+- **[Cell selection](./selection/cell-selection)** - Choose individual cells or ranges with spreadsheet‑like interaction.  
 - **[Persist selection](./selection/selection#persist-selection)** - Retain selections across sorting, filtering, and paging.
 
 **Accessibility and keyboard navigation**
 
 The Data Grid is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
 
-- **[WCAG compliance](./accessibility)** — Level AA accessibility standards
-- **[Keyboard shortcuts](./accessibility#keyboard-interaction)** — Complete grid operation via keyboard
-  - Tab/Shift+Tab — Navigate between cells.
-  - Arrow Keys — Move between rows and columns.
-  - Enter — Update cells, confirm changes.
-  - Escape — Cancel editing.
-  - Ctrl+A — Select all rows.
-- **[Screen reader support](./accessibility)** — Full compatibility with assistive technologies.
-- **[Semantic HTML](./accessibility)** — Proper ARIA labels and semantic markup.
+- **[WCAG compliance](./accessibility)** - Level AA accessibility standards.
+- **[Keyboard shortcuts](./accessibility#keyboard-interaction)** - Complete grid operation via keyboard.
+  - Tab/Shift+Tab - Navigate between cells.
+  - Arrow Keys - Move between rows and columns.
+  - Enter - Update cells, confirm changes.
+  - Escape - Cancel editing.
+  - Ctrl+A - Select all rows.
+- **[Screen reader support](./accessibility)** - Full compatibility with assistive technologies.
+- **[Semantic HTML](./accessibility)** - Proper ARIA labels and semantic markup.
 
 ## Export and print
 
@@ -164,19 +165,19 @@ The Angular Data Grid includes sophisticated capabilities designed for complex e
 - **[Detail templates](./detail-template)** - Add expandable row sections for drill‑down exploration and richer data views.
 - **[Foreign key columns](./columns/foreign-key-column)** - Automatically look up related data to show meaningful relationships.  
 - **[Global/Local formatting](./global-local)** - Apply consistent or column‑specific formatting for professional presentation of values.
-- **[State persistence](./state-management)** — Saves and restores grid configurations such as sorting, filtering, grouping, paging, and column settings across sessions.
+- **[State persistence](./state-management)** - Saves and restores grid configurations such as sorting, filtering, grouping, paging, and column settings across sessions.
 
 **Enterprise patterns**
 
 For specific implementation patterns, refer to feature documentation:
 
-- **Large‑scale business applications** — Combine [State management](./state-management), [Hierarchical Grids](./hierarchy-grid), optimized performance techniques like [DOM Virtualization](./scrolling/dom-virtualization), and [Foreign key columns](./columns/foreign-key-column) to deliver responsive experiences across complex datasets.
-- **Data‑intensive operations** — Leverage [Grouping](./grouping/grouping), [Aggregates](./aggregates/aggregates), and [Filtering](./filtering/filtering) to efficiently manage and analyze large volumes of business data.
-- **Reporting and export solutions** — Combine [Aggregates](./aggregates/aggregates), [Excel export](./excel-export/excel-exporting), and [PDF export](./pdf-export/pdf-export) to generate professional business reports and shareable documents.
+- **Large‑scale business applications** - Combine [State management](./state-management), [Hierarchical Grids](./hierarchy-grid), optimized performance techniques like [DOM Virtualization](./scrolling/dom-virtualization), and [Foreign key columns](./columns/foreign-key-column) to deliver responsive experiences across complex datasets.
+- **Data‑intensive operations** - Leverage [Grouping](./grouping/grouping), [Aggregates](./aggregates/aggregates), and [Filtering](./filtering/filtering) to efficiently manage and analyze large volumes of business data.
+- **Reporting and export solutions** - Combine [Aggregates](./aggregates/aggregates), [Excel export](./excel-export/excel-exporting), and [PDF export](./pdf-export/pdf-export) to generate professional business reports and shareable documents.
 
 ## Themes and styling
 
-Match the Angular Data Grid to the application's visual design using built-in themes and customization options. Supported themes are:
+Match the Angular Data Grid to the application's visual design using [built-in themes](../appearance-and-styling/appearance-styling) and customization options. Supported themes are:
 
 - Fluent 2
 - Material 3
@@ -184,9 +185,7 @@ Match the Angular Data Grid to the application's visual design using built-in th
 - Tailwind CSS
 - Fluent 2 High Contrast
 
-[Syncfusion Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) allows customization of the Data Grid’s appearance by modifying theme variables such as primary, accent, and background colors, enabling consistent styling, lightweight CSS generation, and seamless integration while ensuring the grid aligns with application design requirements
-
-[Explore themes and styling](../appearance-and-styling/appearance-styling)
+[Syncfusion Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) allows customization of the Data Grid’s appearance by modifying theme variables such as primary, accent, and background colors, enabling consistent styling, lightweight CSS generation, and seamless integration while ensuring the grid aligns with application design requirements.
 
 ## Quick links
 
@@ -200,7 +199,7 @@ Match the Angular Data Grid to the application's visual design using built-in th
 - [Export and reporting](./excel-export/excel-exporting)
 - [Data validation](./editing/validation)
 
-**Advanced features**
+**Advanced features:**
 - [DOM Virtualization](./scrolling/dom-virtualization)
 - [State management](./state-management)
 - [Hierarchical Grid](./hierarchy-grid)

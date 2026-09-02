@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD010 -->
 
-In Graphical User Interface (GUI), a tooltip is a message that appears when the mouse hovers over an element. Tooltips enhance user experience by providing contextual information, guidance, and feedback without cluttering the interface. The diagram component provides comprehensive tooltip support while dragging, resizing, rotating nodes, and when the mouse hovers over any diagram element.
+In Graphical User Interface (GUI), a tooltip is a message that appears when the mouse hovers over an element. Tooltips enhance user experience by providing contextual information, guidance, and feedback without cluttering the interface. The Angular Diagram component provides comprehensive tooltip support while dragging, resizing, rotating nodes, and when the mouse hovers over any Angular Diagram element.
 
 ## Default tooltip
 
@@ -180,7 +180,7 @@ The following code example illustrates how to add formatted HTML content to the 
 
 ### Tooltip relative to object
 
-The diagram provides support to show tooltip around the node/connector that is hovered by the mouse. The tooltip can be aligned by using the [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#position) property of the tooltip. The [`relativeMode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#relativemode) property of the tooltip defines whether the tooltip has to be displayed around the object or at the mouse position.
+The Angular Diagram provides support to show tooltip around the node/connector that is hovered by the mouse. The tooltip can be aligned by using the [`position`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#position) property of the tooltip. The [`relativeMode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltip#relativemode) property of the tooltip defines whether the tooltip has to be displayed around the object or at the mouse position.
 
 The following code example illustrates how to position the tooltip around object.
 

@@ -122,7 +122,7 @@ this.diagram.dataBind();
 
 ### Header editing
 
-The diagram supports in-place editing of swimlane headers through user interaction. Double-clicking a header label activates edit mode, allowing users to modify the header text directly within the diagram. This feature enhances user experience by providing immediate editing capabilities without requiring separate dialog boxes or forms.
+The Angular Diagram supports in-place editing of swimlane headers through user interaction. Double-clicking a header label activates edit mode, allowing users to modify the header text directly within the diagram. This feature enhances user experience by providing immediate editing capabilities without requiring separate dialog boxes or forms.
 
 ![Header Editing](../images/swimlane-header-edit.gif)
 

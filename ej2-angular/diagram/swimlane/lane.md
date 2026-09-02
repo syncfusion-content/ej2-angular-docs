@@ -258,7 +258,7 @@ The following image illustrates children interaction in lanes.
   
 #### Lane header editing
 
-The diagram provides support to edit lane headers at runtime. Header editing is achieved by double-click events. Double-clicking the header label will enable the editing of that header.
+The Angular Diagram provides support to edit lane headers at runtime. Header editing is achieved by double-click events. Double-clicking the header label will enable the editing of that header.
 
 The following image illustrates how to edit the lane header.
 

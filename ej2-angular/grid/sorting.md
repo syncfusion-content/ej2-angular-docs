@@ -142,13 +142,13 @@ The example below demonstrates displaying "null" values at the bottom of the gri
   
 {% previewsample "page.domainurl/samples/grid/null-date-value-cs1" %}
 
-## Sort foreign key column based on text
+## Foreign key sorting
 
 Foreign-key sorting enables sorting based on displayed values rather than the underlying identifier values stored in the data source.
 
 To sort a foreign key column based on its displayed text, the foreign key column can be enabled by using [column.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/column#datasource), [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) and [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) properties.
 
-### Foreign key sorting
+### Sort foreign key column based on text
 
 When working with local data in the grid, sorting is performed based on the [foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) defined in the column. This field should be specified in the column definition with the corresponding foreign key value for each row. The grid then sorts the foreign key column according to the text representation of that value.
 
@@ -310,9 +310,9 @@ The following example demonstrates adding sort columns to a grid. The `DropDownL
 
 ### Remove sort columns
 
-External removal of sort columns is accomplished using the "removeSortColumn" method provided by the Data Grid component. This method removes the sorting applied to a specific column.
+External removal of sort columns is accomplished using the `removeSortColumn` method provided by the Data Grid component. This method removes the sorting applied to a specific column.
 
-The following example demonstrates removing sort columns. The `DropDownList` component selects the column. When an external button is clicked, the "removeSortColumn" method removes the selected sort column.
+The following example demonstrates removing sort columns. The `DropDownList` component selects the column. When an external button is clicked, the `removeSortColumn` method removes the selected sort column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -328,7 +328,7 @@ The following example demonstrates removing sort columns. The `DropDownList` com
 
 ### Clear sorting 
 
-Sorting is cleared on an external button click using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#clearsorting) method provided by the Grid component. This method clears the sorting applied to all columns in the grid. 
+Sorting is cleared on an external button click using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#clearsorting) method provided by the grid component. This method clears the sorting applied to all columns in the grid. 
 
 The following example demonstrates clearing sorting using the `clearSorting` method in an external button click.
 
@@ -352,7 +352,7 @@ The Data Grid component provides two events related to sorting, such as `actionB
 
 2. **[actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete)**: This event is triggered after the sorting action is completed. It provides a way to perform any necessary operations after the sorting action has taken place. This event provides a parameter that contains the current grid state, including the sorted data and column information.
 
-This example demonstrates that the `actionBegin` event is used to cancel sorting for the "OrderID" column, while the `actionComplete` event displays a message after the sorting action finishes.
+This example demonstrates that the `actionBegin` event is used to cancel sorting for the "Order ID" column, while the `actionComplete` event displays a message after the sorting action finishes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -436,5 +436,5 @@ The following sample demonstrates a grid rendered with a customized sort icon.
 
 ## See Also
 
-* [How to remove the Sorting indicator from the column headers in Angular Grid](https://www.syncfusion.com/forums/150597/how-to-remove-the-sorting-indicator-from-the-column-headers-in-angular-grid)
+* [How to remove the Sorting indicator from the column headers in Angular Data Grid](https://www.syncfusion.com/forums/150597/how-to-remove-the-sorting-indicator-from-the-column-headers-in-angular-grid)
 * [How to change loading indicator in Angular Data Grid](./data-binding/data-binding#loading-animation)

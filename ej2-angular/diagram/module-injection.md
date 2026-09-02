@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Module Injection in Angular Diagram
 
-The Diagram component provides optional services to enable feature-specific functionality. Inject only the required services based on your application needs.
+The Angular Diagram component provides optional services to enable feature-specific functionality. Inject only the required services based on your application needs.
 
 ## Available diagram services
 

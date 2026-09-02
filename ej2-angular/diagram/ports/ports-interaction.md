@@ -74,7 +74,7 @@ Port dragging is valuable when fine-tuning diagram layouts or adapting to changi
 
 ## Automatic Port Creation
 
-The Diagram component supports dynamic port creation through user interaction. Users can create ports on nodes or connectors by clicking and dragging while holding the Ctrl key. This feature is disabled by default and requires enabling the `DiagramConstraints.AutomaticPortCreation` constraint.
+The Angular Diagram component supports dynamic port creation through user interaction. Users can create ports on nodes or connectors by clicking and dragging while holding the Ctrl key. This feature is disabled by default and requires enabling the `diagramConstraints.AutomaticPortCreation` constraint.
 
 Ports can also be removed using the same Ctrl + Click interaction, provided the port is not connected to any connector. This prevents accidental disconnection of active connections.
 

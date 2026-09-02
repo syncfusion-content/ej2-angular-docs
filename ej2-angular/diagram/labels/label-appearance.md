@@ -124,7 +124,7 @@ The following example demonstrates label rotation:
 
 ## Template support for labels
 
-The Diagram component provides flexible template support for creating custom label layouts. Templates can be defined as either string templates or HTML-based templates, enabling rich content presentation beyond simple text.
+The Angular Diagram component provides flexible template support for creating custom label layouts. Templates can be defined as either string templates or HTML-based templates, enabling rich content presentation beyond simple text.
 
 ### String template
 

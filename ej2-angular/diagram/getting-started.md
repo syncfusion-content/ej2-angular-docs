@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Diagram
 
-This section explains the steps required to create a simple diagram and demonstrates the basic usage of the diagram component.
+This section explains the steps required to create a simple diagram and demonstrates the basic usage of the Angular Diagram component.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started).
 
@@ -194,7 +194,7 @@ N> For the latest tested version of the Diagram package, refer to the [`@syncfus
 
 ## Step 4: Add the required styles
 
-The Diagram component needs Syncfusion® theme styles to display correctly. Syncfusion® theme packages include ready-to-use styles for supported components. Install the Tailwind 3 theme package using the following command:
+The Angular Diagram component needs Syncfusion® theme styles to display correctly. Syncfusion® theme packages include ready-to-use styles for supported components. Install the Tailwind 3 theme package using the following command:
 
 ```
 npm install @syncfusion/ej2-tailwind3-theme
@@ -235,7 +235,7 @@ This renders an empty diagram in the application. Step 6 replaces it with a comp
 
 N> The component selector must match the root element used in the **src/index.html** file. Angular CLI commonly uses `<app-root></app-root>`, so this example uses `selector: 'app-root'`.
 
-N> The Diagram component must have a valid height. If the height is not set, the Diagram canvas may not be visible.
+N> The Angular Diagram component must have a valid height. If the height is not set, the diagram canvas may not be visible.
 
 ## Step 6: Create your first Diagram with nodes and connectors
 
@@ -382,7 +382,7 @@ N> To build the application for production, run `ng build`. The generated output
 
 ## Next steps
 
-To explore the Diagram component in more depth, refer to the following topics:
+To explore the Angular Diagram component in more depth, refer to the following topics:
 
 * [Nodes](https://ej2.syncfusion.com/angular/documentation/diagram/nodes/nodes)
 * [Connectors](https://ej2.syncfusion.com/angular/documentation/diagram/connectors/connectors)

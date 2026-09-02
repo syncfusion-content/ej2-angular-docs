@@ -331,7 +331,7 @@ You can restrict symbols from being dragged from the symbol palette by setting t
 
 ## Search symbol
 
-The diagram provides support for enabling the search option in the palette. The [`enableSearch`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#enablesearch) property of the palette is used to show or hide the search textbox in the palette. You can search for symbols in the palette by entering the symbol ID (e.g., "rectangle") and search keywords into the search text box. The symbols are retrieved by matching the value of the ID property with the string entered in the search textbox.
+The Angular Diagram provides support for enabling the search option in the palette. The [`enableSearch`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#enablesearch) property of the palette is used to show or hide the search textbox in the palette. You can search for symbols in the palette by entering the symbol ID (e.g., "rectangle") and search keywords into the search text box. The symbols are retrieved by matching the value of the ID property with the string entered in the search textbox.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -381,7 +381,7 @@ You can filter search results based on specific requirements. To achieve this, c
 
 ## Cancel drag and drop
 
-N> The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed.
+N> The Angular Diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed.
 
 ## See Also
 

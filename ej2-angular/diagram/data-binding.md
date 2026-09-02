@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in Angular Diagram | Syncfusion®
-description: Populate nodes and connectors in the Syncfusion® Angular Diagram from local JSON or remote DataManager sources, and synchronize CRUD operations with the underlying data.
+description: Populate nodes and connectors in the Syncfusion® Diagram from local JSON or remote DataManager sources, and synchronize CRUD operations with the underlying data.
 platform: ej2-angular
 control: Data Binding
 documentation: ug
@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 The Angular Diagram component supports data binding to populate nodes and connectors from external data sources. This feature enables dynamic diagram creation based on structured data, making it ideal for visualizing organizational charts, flowcharts, and hierarchical data structures.
 
-Data binding in the Diagram component works by mapping data source fields to diagram elements through the `dataSourceSettings` property. The component supports both local JSON data and remote data sources, providing flexibility for various application scenarios.
+Data binding in the Angular Diagram component works by mapping data source fields to diagram elements through the `dataSourceSettings` property. The component supports both local JSON data and remote data sources, providing flexibility for various application scenarios.
 
 ## Key Data Binding Properties
 
-The Diagram component exposes several data-related properties that control how data is mapped to diagram elements:
+The Angular Diagram component exposes several data-related properties that control how data is mapped to diagram elements:
 
 * **[`dataManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#datamanager)** - Defines the data source as a collection of objects or DataManager instance
 * **[`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#id)** - Specifies the unique identifier field for each data item
@@ -27,7 +27,7 @@ For complete property details, refer to the [`DataSourceSettings`](https://ej2.s
 
 ## Data Binding Types
 
-The Diagram component supports two primary data binding approaches:
+The Angular Diagram component supports two primary data binding approaches:
 
 1. **Local data binding** - Uses client-side JSON data
 2. **Remote data binding** - Fetches data from server endpoints using DataManager
@@ -72,7 +72,7 @@ For comprehensive DataManager information, see the [`DataManager documentation`]
 
 ## CRUD Operations with Data Binding
 
-The Diagram component supports Create, Read, Update, and Delete (CRUD) operations, allowing real-time synchronization between the diagram and its data source. This functionality enables users to modify diagram elements and persist changes to the backend.
+The Angular Diagram component supports Create, Read, Update, and Delete (CRUD) operations, allowing real-time synchronization between the diagram and its data source. This functionality enables users to modify diagram elements and persist changes to the backend.
 
 ### Reading Data from Multiple Sources
 
@@ -105,7 +105,7 @@ The diagram can simultaneously read from two data sources: one for nodes and ano
 
 ### Runtime Data Modification
 
-The diagram supports real-time data modifications through CRUD action configuration. Each operation (create, update, delete) can be mapped to specific server endpoints that handle the corresponding data changes.
+The Angular Diagram supports real-time data modifications through CRUD action configuration. Each operation (create, update, delete) can be mapped to specific server endpoints that handle the corresponding data changes.
 
 #### Creating New Data (InsertData)
 

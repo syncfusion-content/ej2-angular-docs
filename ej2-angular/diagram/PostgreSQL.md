@@ -654,11 +654,11 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-### Diagram component
+### Angular Diagram component
 
 Create a **client/src/app/OrganizationalLayout/OrganizationalLayout.component.ts** file to render the organizational chart layout:
 
-The Diagram component fetches data on initialization, binds it to the **DataManager**, and configures organizational chart layout properties.
+The Angular Diagram component fetches data on initialization, binds it to the **DataManager**, and configures organizational chart layout properties.
 
 ```
 import { Component, OnInit } from '@angular/core';

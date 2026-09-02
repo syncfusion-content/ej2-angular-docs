@@ -113,7 +113,7 @@ The following code example illustrates how to customize phases at runtime.
 
 ### Phase header editing
 
-The diagram component provides support for editing phase headers at runtime through double-click interaction. Double-clicking the header label enables inline editing functionality, allowing users to modify phase titles directly within the diagram.
+The Angular Diagram component provides support for editing phase headers at runtime through double-click interaction. Double-clicking the header label enables inline editing functionality, allowing users to modify phase titles directly within the diagram.
 
 The following image illustrates the phase header editing process:
 

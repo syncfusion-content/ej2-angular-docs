@@ -14,7 +14,7 @@ The Angular Diagram component provides comprehensive support for adding swimlane
 
 ## Add Swimlane to Palette
 
-The diagram component supports adding both swimlane containers and individual phases to the symbol palette. This enables users to drag and drop pre-configured swimlane elements into their diagrams.
+The Angular Diagram component supports adding both swimlane containers and individual phases to the symbol palette. This enables users to drag and drop pre-configured swimlane elements into their diagrams.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

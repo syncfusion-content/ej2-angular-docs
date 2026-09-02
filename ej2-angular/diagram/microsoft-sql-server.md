@@ -2,7 +2,7 @@
 layout: post
 title: Microsoft SQL Server in Angular Diagram | Syncfusion®
 description: Bind an organizational chart in the Syncfusion® Angular Diagram to a Microsoft SQL Server database through an ASP.NET Core Web API and Microsoft.Data.SqlClient.
-control: diagram
+control: Diagram
 keywords: adaptors, customadaptor, microsoftSQL, remotedata  
 platform: ej2-angular
 documentation: ug
@@ -601,7 +601,7 @@ npm install @syncfusion/ej2-angular-diagrams --save
 ```
 
 After installation, the necessary CSS files are available in the **node_modules** directory.
-Add the required CSS references to the **src/styles.css** file to apply styling to the Diagram component.
+Add the required CSS references to the **src/styles.css** file to apply styling to the Angular Diagram component.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.3.css';  
@@ -652,7 +652,7 @@ And update (**src/app/app.component.html**):
   height="580px">
 </ejs-diagram>
 ```
-This code initializes the Diagram component with default dimensions.
+This code initializes the Angular Diagram component with default dimensions.
 
 ### Step 4: Fetch data from Web API and bind it to the Diagram
 

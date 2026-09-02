@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 In graphical user interfaces, a context menu appears when you perform a right-click operation, offering users a set of actions relevant to the current context. The Angular Diagram component provides extensive context menu customization capabilities through the [`contextMenuSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram#contextmenusettings) property.
 
-The Diagram control includes built-in context menu items and allows you to define custom menu items. This flexibility enables you to tailor menus to specific application needs, including creating nested levels of menu items for complex user interactions.
+The Angular Diagram control includes built-in context menu items and allows you to define custom menu items. This flexibility enables you to tailor menus to specific application needs, including creating nested levels of menu items for complex user interactions.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ To ensure the context menu renders correctly, include the necessary CSS referenc
 
 ## Default Context Menu
 
-The Diagram component provides default context menu items for frequently used commands. Use the [`show`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettings#show) property to enable or disable the context menu.
+The Angular Diagram component provides default context menu items for frequently used commands. Use the [`show`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettings#show) property to enable or disable the context menu.
 
 The following code demonstrates how to enable the default context menu items:
 
@@ -115,7 +115,7 @@ The following example demonstrates context menu items with URLs for three websit
 
 ## Template Support for Context Menu
 
-The Diagram component provides template support for context menu customization. Customize menu item templates before rendering using the [`contextMenuBeforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/diagram#contextmenubeforeitemrender) event, which triggers while rendering each menu item.
+The Angular Diagram component provides template support for context menu customization. Customize menu item templates before rendering using the [`contextMenuBeforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/diagram#contextmenubeforeitemrender) event, which triggers while rendering each menu item.
 
 The following example renders menu items with shortcut key codes for specific actions. Key codes for cut, copy, and paste actions display in the right corner of menu items by adding a span element in the `contextMenuBeforeItemRender` event:
 

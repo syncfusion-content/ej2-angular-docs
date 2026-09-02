@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Annotations in Angular Diagram components are text labels that can be added to nodes and connectors to provide additional information. When users interact with these annotations, various events are triggered that allow developers to customize behavior and respond to user actions.
 
-The diagram component provides several annotation-related events that fire during different interaction scenarios:
+The Angular Diagram component provides several annotation-related events that fire during different interaction scenarios:
 
 - **KeyDown** - Triggered when any key is pressed while interacting with the diagram
 - **KeyUp** - Triggered when a pressed key is released while interacting with the diagram

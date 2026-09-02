@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nodes Customization in Angular Diagram | Syncfusion®
-description: Customize node appearance in the Syncfusion® Angular Diagram with fill, stroke, opacity, gradients, and shadows, using getNodeDefaults to set consistent defaults across all nodes.
+description: Customize node appearance in the Syncfusion® Diagram with fill, stroke, opacity, gradients, and shadows, using getNodeDefaults to set consistent defaults across all nodes.
 platform: ej2-angular
 control: Appearence of a nodes 
 documentation: ug
@@ -137,7 +137,7 @@ The following code shows how to set the rotate angle and corner radius for nodes
 
 ## Apply shadow effect to nodes
 
-Diagram provides support to add [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shadow) effects to nodes, which is disabled by default. Shadow effects can be enabled using the constraints property of the node to create depth and visual hierarchy in your diagrams.
+Angular Diagram provides support to add [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shadow) effects to nodes, which is disabled by default. Shadow effects can be enabled using the constraints property of the node to create depth and visual hierarchy in your diagrams.
 
 The following code illustrates how to apply shadow effects to nodes:
 

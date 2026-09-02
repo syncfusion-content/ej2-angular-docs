@@ -3,7 +3,7 @@ layout: post
 title: MySQL Server in Angular Diagram | Syncfusion®
 description: Bind an organizational chart in the Syncfusion® Angular Diagram to a MySQL database through an ASP.NET Core Web API using LINQ2DB for type-safe data access.
 platform: ej2-angular
-control: diagram
+control: Diagram
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -470,7 +470,7 @@ For this project, the "Bootstrap 5.3" theme is applied. Other themes can be sele
 
 ### Step 3: Add Syncfusion® Angular Diagram
 
-Create a basic Diagram component in **src/app/app.ts**:
+Create a basic Angular Diagram component in **src/app/app.ts**:
 
 ```
 import { Component } from '@angular/core';

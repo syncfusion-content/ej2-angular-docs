@@ -14,7 +14,7 @@ The Angular Diagram component provides a comprehensive set of interactive tools 
 
 ## Overview
 
-The diagram control offers three primary tool categories:
+The Angular Diagram control offers three primary tool categories:
 
 - **Select**: Choose and manipulate specific elements within the diagram
 - **Pan**: Navigate the diagram view to different areas without modifying elements
@@ -157,7 +157,7 @@ public connectors: ConnectorModel[] = [{
 
 ## Tool selection and precedence
 
-The diagram supports multiple tool configurations that can be combined for different interaction scenarios. When multiple tools are enabled simultaneously, the system follows a specific precedence order to determine which tool takes priority:
+The Angular Diagram supports multiple tool configurations that can be combined for different interaction scenarios. When multiple tools are enabled simultaneously, the system follows a specific precedence order to determine which tool takes priority:
 
 ### Tool precedence hierarchy
 

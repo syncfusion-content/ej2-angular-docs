@@ -74,7 +74,7 @@ The following code example demonstrates how to drag connector end points at runt
 
 ## Segment editing
 
-The diagram allows editing of individual connector segments at runtime. To enable this feature, activate the [`DragSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints) constraint for the connector.
+The Angular Diagram allows editing of individual connector segments at runtime. To enable this feature, activate the [`DragSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints) constraint for the connector.
 
 ```typescript
 connector.constraints = 
@@ -87,7 +87,7 @@ N> To edit connector segments, you must inject the `ConnectorEditing` module int
 
 ## Flip
 
-The diagram provides support for flipping connectors to create mirrored versions of the original element. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#flip) operation transforms the connector based on the specified flip direction.
+The Angular Diagram provides support for flipping connectors to create mirrored versions of the original element. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#flip) operation transforms the connector based on the specified flip direction.
 
 The available flip types are:
 

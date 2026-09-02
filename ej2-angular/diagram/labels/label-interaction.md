@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Label Interaction in Angular Diagram
 
-The Diagram component allows labels to be interactive through selecting, dragging, rotating, resizing, and editing operations. Label interaction is disabled by default. Enable label interaction using the `constraints` property of the label. You can also control specific interaction types by enabling individual constraints for selecting, dragging, rotating, or resizing. The following code demonstrates how to enable interactive mode.
+The Angular Diagram component allows labels to be interactive through selecting, dragging, rotating, resizing, and editing operations. Label interaction is disabled by default. Enable label interaction using the `constraints` property of the label. You can also control specific interaction types by enabling individual constraints for selecting, dragging, rotating, or resizing. The following code demonstrates how to enable interactive mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -41,7 +41,7 @@ The [`constraints`](https://ej2.syncfusion.com/angular/documentation/diagram/con
 
 ## Label Editing
 
-The Diagram component supports editing labels at runtime, both programmatically and interactively. By default, labels are in view mode. Labels can be switched to edit mode using two approaches:
+The Angular Diagram component supports editing labels at runtime, both programmatically and interactively. By default, labels are in view mode. Labels can be switched to edit mode using two approaches:
 
 ### Programmatic Editing
 Use the [`startTextEdit`](https://ej2.syncfusion.com/angular/documentation/api/diagram#starttextedit) method to programmatically enter edit mode for a specific label.
@@ -87,7 +87,7 @@ The [`rotationReference`](https://ej2.syncfusion.com/angular/documentation/api/d
 | Parent | The label rotates along with its parent node. | ![Rotation](../images/parent_rotationreference.gif) |
 
 ## Read-only Labels
-The Diagram component supports read-only labels that users cannot edit. Read-only mode is disabled by default. To enable it, include `AnnotationConstraints.ReadOnly` in the label’s [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#constraints) property. The following code demonstrates how to enable read-only mode.
+The Angular Diagram component supports read-only labels that users cannot edit. Read-only mode is disabled by default. To enable it, include `AnnotationConstraints.ReadOnly` in the label’s [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/Angular Diagram/annotationModel#constraints) property. The following code demonstrates how to enable read-only mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -103,7 +103,7 @@ The Diagram component supports read-only labels that users cannot edit. Read-onl
 
 ## Drag Limits
 
-The Diagram component supports defining [`dragLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#draglimit) properties for connector labels to restrict dragging within specified boundaries. The drag limit automatically updates the label position to the nearest valid segment offset when dragging.
+The Angular Diagram component supports defining [`dragLimit`](https://ej2.syncfusion.com/angular/documentation/api/Angular Diagram/annotationModel#draglimit) properties for connector labels to restrict dragging within specified boundaries. The drag limit automatically updates the label position to the nearest valid segment offset when dragging.
 
 Configure drag limit boundaries using the [`left`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#left), [`right`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#right), [`top`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#top), and [`bottom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#bottom) properties. The default value for each boundary is **0**. These properties limit connector label dragging based on user-defined values.
 

@@ -195,7 +195,7 @@ public collectionChange(args: ICollectionChangeEventArgs): void {
 
 ## Mouse Events
 
-The diagram component provides mouse interaction events that trigger when users hover over or move the mouse cursor in relation to node surfaces.
+The Angular Diagram component provides mouse interaction events that trigger when users hover over or move the mouse cursor in relation to node surfaces.
 
 ### Mouse Enter Event
 

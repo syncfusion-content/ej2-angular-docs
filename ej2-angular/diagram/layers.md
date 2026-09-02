@@ -180,7 +180,7 @@ The following code illustrates how to remove a layer.
 
 ## Move Objects at Runtime
 
-You can move objects from one layer to another dynamically using the [`moveObjects`](https://ej2.syncfusion.com/angular/documentation/api/diagram#moveobjects) public method of the diagram control. This can be useful for managing complex diagrams with multiple layers where you need to update the categorization of elements based on user interaction or other dynamic conditions.
+You can move objects from one layer to another dynamically using the [`moveObjects`](https://ej2.syncfusion.com/angular/documentation/api/diagram#moveobjects) public method of the Angular Diagram control. This can be useful for managing complex diagrams with multiple layers where you need to update the categorization of elements based on user interaction or other dynamic conditions.
 
 The following code illustrates how to move objects from one layer to another layer from the diagram.
 

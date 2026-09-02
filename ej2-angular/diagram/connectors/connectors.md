@@ -292,7 +292,7 @@ export class AppComponent {
 
 ## Automatic line routing
 
-Diagram provides additional flexibility to re-route diagram connectors automatically. Connectors automatically re-route themselves when nodes move nearby, ensuring optimal path routing. This feature can be activated by including the `LineRouting` constraint in the diagram's constraints.
+Angular Diagram provides additional flexibility to re-route diagram connectors automatically. Connectors automatically re-route themselves when nodes move nearby, ensuring optimal path routing. This feature can be activated by including the `LineRouting` constraint in the diagram's constraints.
 
 The LineRouting module should be injected to the application as shown in the following code snippet.
 
@@ -357,7 +357,7 @@ In some situations, diagrams with automatic line routing enabled may need to exc
 
 ## Avoid line overlapping
 
-The diagram provides flexibility to prevent connectors from overlapping, ensuring better clarity and readability. This feature intelligently adjusts connector paths to avoid stacking orthogonal connectors on top of each other, reducing visual clutter and enhancing diagram structure. It is especially useful in complex diagrams with multiple orthogonal connectors, where overlapping lines can make interpretation difficult.
+The Angular Diagram provides flexibility to prevent connectors from overlapping, ensuring better clarity and readability. This feature intelligently adjusts connector paths to avoid stacking orthogonal connectors on top of each other, reducing visual clutter and enhancing diagram structure. It is especially useful in complex diagrams with multiple orthogonal connectors, where overlapping lines can make interpretation difficult.
 
 To enable this feature, inject both the `LineRouting` and `AvoidLineOverlapping` modules into the application and add the corresponding constraints to the diagram.
 

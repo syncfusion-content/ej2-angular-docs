@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Connector Events in Angular Diagram
 
-The Diagram component provides comprehensive event support for connectors, allowing developers to respond to various user interactions and programmatic changes. These events enable dynamic behavior and custom logic when users interact with connectors through clicking, dragging, connecting, or modifying segments.
+The Angular Diagram component provides comprehensive event support for connectors, allowing developers to respond to various user interactions and programmatic changes. These events enable dynamic behavior and custom logic when users interact with connectors through clicking, dragging, connecting, or modifying segments.
 
 ## Click Event
 

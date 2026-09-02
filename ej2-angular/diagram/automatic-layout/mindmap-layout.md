@@ -14,7 +14,7 @@ A mind map is a powerful visualization technique that organizes information arou
 
 ## Prerequisites
 
-To use mind map layout functionality, you must inject the `MindMap` module into the diagram component:
+To use mind map layout functionality, you must inject the `MindMap` module into the Angular Diagram component:
 
 ```typescript
 import { MindMap } from '@syncfusion/ej2-angular-diagrams';
