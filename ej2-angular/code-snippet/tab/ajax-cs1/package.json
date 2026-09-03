@@ -19,6 +19,7 @@
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-popups": "*",
     "@syncfusion/ej2-navigations": "*",
+    "@syncfusion/ej2-notifications": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-buttons": "*",
     "@syncfusion/ej2-angular-popups": "*",

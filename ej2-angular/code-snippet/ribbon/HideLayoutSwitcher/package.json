@@ -24,6 +24,7 @@
     "@syncfusion/ej2-lists": "*",
     "@syncfusion/ej2-dropdowns": "*",
     "@syncfusion/ej2-navigations": "*",
+    "@syncfusion/ej2-notifications": "*",
     "@syncfusion/ej2-ribbon": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@angular/animations": "17.1.2",
