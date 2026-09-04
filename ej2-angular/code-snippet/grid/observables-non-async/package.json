@@ -21,6 +21,7 @@
     "@angular/router": "17.1.2",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-grids": "*",
+    "@syncfusion/ej2-material3-theme": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-calendars": "*",

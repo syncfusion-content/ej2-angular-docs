@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Local Data Binding in Angular Data Grid
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows data to be displayed and manipulated within the grid without the need for external server calls, making it particularly useful for scenarios involving static or locally stored data.
+The [Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows data to be displayed and manipulated within the grid without the need for external server calls, making it particularly useful for scenarios involving static or locally stored data.
 
-Assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasource) property. Optionally, provide the local data source using an instance of the `DataManager`.
+Assign an array of JavaScript objects to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasource) property.
 
-The following example demonstrates the local data binding feature in the Angular Grid component:
+The following example demonstrates the local data binding feature in the Data Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,353 +28,15 @@ The following example demonstrates the local data binding feature in the Angular
     
 {% previewsample "page.domainurl/samples/grid/databinding-cs1" %}
 
-## Data binding with SignalR 
-
-The Syncfusion Angular Grid component supports real-time data binding using SignalR, enabling automatic grid updates as data changes on the server. This capability proves essential for applications requiring live updates and multi-client synchronization.
-
-To implement real-time data binding with SignalR in the Syncfusion Angular Grid, follow these steps:
-
-**Step 1:** Install the necessary SignalR package for the client application using npm:
-
-```ts
-npm install @microsoft/signalr --save
-```
-
-**Step 2:** Create a SignalR hub on the server to manage client-server communication. Create a "ChatHub.cs" file under the **Hubs** folder with the following code to define methods for sending data updates to clients:
-
-```cs
-using Microsoft.AspNetCore.SignalR;
-
-namespace SignalRChat.Hubs
-{
-    public class ChatHub : Hub 
-    {
-        public async Task SendMessage(string message)
-        {
-            await Clients.All.SendAsync("ReceiveMessage", message);
-        }
-    }
-}
-```
-
-**Step 3:** Configure the SignalR server to route requests to the SignalR hub. In the **Program.cs** file, add the following configuration:
-
-```cs
-using SignalRChat.Hubs;
-
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddSignalR(); // Add SignalR services
-// Add services to the container.
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.PropertyNamingPolicy = null; // Use PascalCase
-    });
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("CORSPolicy",
-        builder => builder
-        .AllowAnyMethod()
-        .AllowAnyHeader()
-        .AllowCredentials()
-        .SetIsOriginAllowed((hosts) => true));
-});
-builder.Services.AddControllersWithViews();
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    // The default HSTS value is 30 days. Consider changing this for production scenarios; see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-app.UseCors("CORSPolicy");
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
-app.MapHub<ChatHub>("/chatHub"); // Map the ChatHub
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapFallbackToFile("index.html");
-
-app.Run();
-```
-
-**Step 4:** Create a basic Angular Grid by following the [Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
-
-**Step 5:** In the client-side code, establish a connection to the SignalR hub and configure grid data binding in the **fetch.component.ts** file:
-
-```typescript
-import { Component, ViewChild } from '@angular/core';
-import { GridComponent, EditEventArgs, ToolbarItems } from '@syncfusion/ej2-angular-grids';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { HubConnection} from '@microsoft/signalr';
-import * as signalR from '@microsoft/signalr';
-
-@Component({ 
-  selector: 'app-fetch-data',
-  template: ` 
-    <ejs-grid #grid [dataSource]='data' (actionComplete)="actionComplete($event)" (created)="created()" [editSettings]='editSettings' [toolbar]='toolbar' allowPaging="true" height="320">
-        <e-columns>
-            <e-column field='OrderID' headerText='Order ID' isPrimaryKey=true width='150'></e-column>
-            <e-column field='CustomerID' headerText='Customer Name' width='150'></e-column>
-            <e-column field='ShipCity' headerText='Ship City' width='150' textAlign='Right'></e-column>
-        </e-columns>
-    </ejs-grid>
-  `
-})
-export class FetchDataComponent {
-  @ViewChild('grid')
-  public grid?: GridComponent;
-  public data?: DataManager;
-  public editSettings?: EditSettingsModel;
-  public toolbar?: ToolbarItems[];
-  public orderIDRules?: object;
-  public customerIDRules?: object;
-  public flag = false;
-  private connection!: HubConnection;
-
-  ngOnInit(): void {
-    this.data = new DataManager({
-      url: 'https://localhost:****/Home/UrlDatasource',
-      updateUrl: 'https://localhost:****/Home/Update',
-      insertUrl: 'https://localhost:****/Home/Insert',
-      removeUrl: 'https://localhost:****/Home/Delete',
-      adaptor: new UrlAdaptor()
-    }); //Use remote server host number instead ****
-    this.connection = new signalR.HubConnectionBuilder()
-      .withUrl("https://localhost:****/ChatHub")  //Use remote server host number instead ****
-      .build();
-    this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
-    this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    this.orderIDRules = { required: true };
-    this.customerIDRules = { required: true, minLength: 3 };
-  }
-  created() {
-    // Add connection handler to receive messages from the hub
-    this.connection.on("ReceiveMessage", function (message: string) {
-      var grid = (document.getElementsByClassName('e-grid')[0] as HTMLFormElement)["ej2_instances"][0];
-      grid.refresh();
-    });
-
-    // Start the connection
-    this.connection.start()
-  .then(() => {
-    console.log("SignalR connection established successfully");
-    // Send initial message once connection is established
-    this.connection.invoke('SendMessage', "refreshPages")
-      .catch((err: Error) => {
-        console.error("Error sending data:", err.toString());
-      });
-  })
-  .catch((err: Error) => {
-    console.error("Error establishing SignalR connection:", err.toString());
-  });
-
-  }
-  actionComplete(args: EditEventArgs) {
-    if (args.requestType == "save" || args.requestType == "delete") {
-      // Send message from connected client to all clients
-      this.connection.invoke('SendMessage', "refreshPages")
-        .catch((err:Error ) => {
-          console.error(err.toString());
-        });
-    }
-  }
-}
-```
-
-**Step 6:** Create a controller on the server to manage data operations such as fetching, updating, inserting, and deleting records. Create a **HomeController.cs** file under the **Controllers** folder with the following code:
-
-```cs
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using AngularwithASPCore.Models;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
-namespace AngularwithASPCore.Controllers
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-        // Fetch data source
-        public IActionResult UrlDatasource([FromBody] Data dm)
-        {
-            var val = OrdersDetails.GetAllRecords();
-            var Data = val.ToList();
-
-            if (dm.@where != null)
-            {
-                Data = OrdersDetails.GetAllRecords().Where(or => or.EmployeeID.ToString() == dm.@where[0].value).ToList();
-            }
-
-            if (dm.skip != 0)
-                Data = Data.Skip(dm.skip).ToList();
-            if (dm.take != 0)
-                Data = Data.Take(dm.take).ToList();
-            int count = Data.Count();
-            return dm.requiresCounts ? Json(new { result = Data, count = count }) : Json(Data);
-        }
-
-        // Update record
-        public ActionResult Update([FromBody] CRUDModel<OrdersDetails> value)
-        {
-            var ord = value.value;
-            OrdersDetails val = OrdersDetails.GetAllRecords().Where(or => or.OrderID == ord.OrderID).FirstOrDefault();
-            val.OrderID = ord.OrderID;
-            val.EmployeeID = ord.EmployeeID;
-            val.CustomerID = ord.CustomerID;
-            val.Freight = ord.Freight;
-            val.OrderDate = ord.OrderDate;
-            val.ShipCity = ord.ShipCity;
-            val.ShipCountry = ord.ShipCountry;
-
-            return Json(value.value);
-        }
-        // Insert record
-        public ActionResult Insert([FromBody] CRUDModel<OrdersDetails> value)
-        {
-            OrdersDetails.GetAllRecords().Insert(0, value.value);
-            return Json(value.value);
-        }
-        // Delete record
-        public ActionResult Delete([FromBody] CRUDModel<OrdersDetails> value)
-        {
-            // Find and remove record with matching OrderID
-            OrdersDetails.GetAllRecords().Remove(OrdersDetails.GetAllRecords().Where(or => or.OrderID == int.Parse(value.key.ToString())).FirstOrDefault());
-            return Json(value);
-        }
-    }
-}
-
-public class Data
-{
-    public bool requiresCounts { get; set; }
-    public int skip { get; set; }
-    public int take { get; set; }
-    public List<Wheres> where { get; set; }
-}
-
-public class CRUDModel<T> where T : class
-{
-    public string action { get; set; }
-    public string table { get; set; }
-    public string keyColumn { get; set; }
-    public object key { get; set; }
-    public T value { get; set; }
-    public List<T> added { get; set; }
-    public List<T> changed { get; set; }
-    public List<T> deleted { get; set; }
-    public IDictionary<string, object> @params { get; set; }
-}
-
-public class Wheres
-{
-    public List<Predicates> predicates { get; set; }
-    public string field { get; set; }
-    public bool ignoreCase { get; set; }
-    public bool isComplex { get; set; }
-    public string value { get; set; }
-    public string Operator { get; set; }
-}
-
-public class Predicates
-{
-    public string value { get; set; }
-    public string field { get; set; }
-    public bool isComplex { get; set; }
-    public bool ignoreCase { get; set; }
-    public string Operator { get; set; }
-}
-```
-
-**Step 7:** Define a model class to represent the data structure. Create an **OrdersDetails.cs** file under the **Models** folder with the following code:
-
-```cs
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AngularwithASPCore.Models
-{
-    public class OrdersDetails
-    {
-        public static List<OrdersDetails> order = new List<OrdersDetails>();
-
-        public OrdersDetails()
-        {
-        }
-
-        public OrdersDetails(
-            int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
-            DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
-            DateTime ShippedDate, string ShipAddress)
-        {
-            this.OrderID = OrderID;
-            this.CustomerID = CustomerId;
-            this.EmployeeID = EmployeeId;
-            this.Freight = Freight;
-            this.ShipCity = ShipCity;
-            this.Verified = Verified;
-            this.OrderDate = OrderDate;
-            this.ShipName = ShipName;
-            this.ShipCountry = ShipCountry;
-            this.ShippedDate = ShippedDate;
-            this.ShipAddress = ShipAddress;
-        }
-
-        public static List<OrdersDetails> GetAllRecords()
-        {
-            if (order.Count() == 0)
-            {
-                int code = 10000;
-                for (int i = 1; i < 10; i++)
-                {
-                    order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
-                    order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
-                    order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
-                    order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
-                    order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
-                    code += 5;
-                }
-            }
-            return order;
-        }
-
-        public int OrderID { get; set; }
-        public string CustomerID { get; set; }
-        public int EmployeeID { get; set; }
-        public double Freight { get; set; }
-        public string ShipCity { get; set; }
-        public bool Verified { get; set; }
-        public DateTime OrderDate { get; set; }
-        public string ShipName { get; set; }
-        public string ShipCountry { get; set; }
-        public DateTime ShippedDate { get; set; }
-        public string ShipAddress { get; set; }
-    }
-}
-```
-
-The following screenshot demonstrates addition, editing, and deletion operations with changes reflected across all connected clients:
-
-![SignalR real-time data synchronization across multiple clients](../../grid/images/signalR.gif)
-
 ## Binding data from Excel file
 
-The Angular Data Grid supports importing data from Excel files for display and manipulation within the grid. This streamlines transferring Excel data into a web-based environment. Use the [Uploader](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started) component's [change](https://ej2.syncfusion.com/angular/documentation/api/uploader#change) event to handle the import.
+The Data Grid supports importing data from Excel files for display and manipulation within the grid. This enables transferring Excel data into a web-based environment. Use the [Uploader](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started) component's [change](https://ej2.syncfusion.com/angular/documentation/api/uploader#change) event to handle the import.
+
+Install the `XLSX` library using the following command:
+
+```bash
+npm install xlsx
+```
 
 To import Excel data into the grid, follow these steps:
 
@@ -387,7 +49,7 @@ The following example demonstrates Excel data import into the grid utilizing the
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/imported-data/src/app.component.ts %} 
-{% endhighlight %}
+{% endhighlight %} 
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/imported-data/src/main.ts %}
@@ -396,13 +58,13 @@ The following example demonstrates Excel data import into the grid utilizing the
   
 {% previewsample "page.domainurl/samples/grid/imported-data" %}
 
-## Binding data and performing CRUD actions via Fetch request
+## CRUD operations using Fetch requests
 
-The Angular Data Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and for asynchronously retrieving data without refreshing the entire web page.
+The Data Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and for asynchronously retrieving data without refreshing the entire web page.
 
-To achieve data binding and perform CRUD actions using Ajax requests in the Angular Data Grid, follow these steps:
+To achieve data binding and perform CRUD actions using Fetch requests in the grid, follow these steps:
 
-**Step 1:** Include the Angular Data Grid in the HTML with necessary configurations:
+**Step 1:** Include the Data Grid in the HTML with necessary configurations:
 
 ```html
 <button ejs-button (click)="click()">Bind data via Fetch</button>
@@ -417,7 +79,7 @@ To achieve data binding and perform CRUD actions using Ajax requests in the Angu
 </div>
 ```
 
-**Step 2:** To bind data from an external Fetch request, utilize the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource) property of the grid. Fetch data from the server and provide it to the `dataSource` property using the fetch API:
+**Step 2:** To bind data from an external Fetch request, utilize the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasource) property of the grid. Fetch data from the server and provide it to the `dataSource` property using the fetch API:
 
 ```ts
 click() {
@@ -437,7 +99,7 @@ click() {
 }
 ```
 
-On the server side, the **GetData** method within the HomeController contains the grid's data source. When the button is clicked, a Fetch request retrieves data from the server and binds it to the Grid component.
+On the server side, the **GetData** method within the HomeController contains the grid's data source. When the button is clicked, a Fetch request retrieves data from the server and binds it to the Data Grid component.
 
 ```cs
 public class HomeController : Controller
@@ -627,7 +289,7 @@ actionBegin(e: EditEventArgs) {
             .then(data => {
                 // this.flag is enabled to skip this execution when grid deletes record
                 this.flag = true;
-                // The deleted data will be removed in the Grid
+                // The deleted data will be removed in the Data Grid
                 this.grid.deleteRecord();
             })
             .catch(error => {
@@ -662,17 +324,17 @@ actionComplete(e: EditEventArgs) {
 }
 ```
 
-The following screenshot demonstrates data loading when the button is clicked and CRUD operations performance:
+The following screenshot demonstrates data loading when the button is clicked and the performance of CRUD operations:
 
 ![Fetch API data loading and CRUD operations demonstration](../../grid/images/fetch.gif)
 
 ### Display loading indicator with local data
 
-The Angular Data Grid allows the display of a loading indicator while loading local data. This is useful when data loading from a local source is delayed and a visual indication is required to show that data is being fetched.
+The Data Grid allows displaying a loading indicator while loading local data. This is useful when data loading from a local source is delayed and a visual indication is required to show that data is being fetched.
 
-To display the loading indicator when using local data, set the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#showspinner) property to `true`. This property controls the visibility of the loading indicator.
+To display the loading indicator when using local data, invoke the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#showspinner) method. This method controls the visibility of the loading indicator.
 
-The following example demonstrates displaying the loading indicator in the Angular Data Grid using the [load](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#load) and [created](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#created) events:
+The following example demonstrates displaying the loading indicator in the grid using the [load](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#load) and [created](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#created) events:
 
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -709,13 +371,13 @@ export class AppComponent implements OnInit {
 }
 ```
 
-## Binding data and performing CRUD actions via AJAX request
+## CRUD Operations using AJAX requests
 
-The Angular Data Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
+The Data Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
 
-To achieve data binding and perform CRUD actions using Ajax requests in the Angular Data Grid, follow these steps:
+To achieve data binding and perform CRUD actions using Ajax requests in the Data Grid, follow these steps:
 
-**Step 1:** Include the Angular Data Grid in the HTML with necessary configurations:
+**Step 1:** Include the Data Grid in the HTML with necessary configurations:
 
 ```html
 <button ejs-button (click)="click()">Bind data via AJAX</button>
@@ -744,7 +406,7 @@ click() {
 }  
 ```
 
-On the server side, the **GetData** method within the HomeController contains the grid's data source. When the button is clicked, an AJAX request retrieves data from the server and binds it to the Grid component.
+On the server side, the "GetData" method within the HomeController contains the grid's data source. When the button is clicked, an AJAX request retrieves data from the server and binds it to the Data Grid component.
 
 ```cs
 public class HomeController : Controller
@@ -831,12 +493,12 @@ actionBegin(e: EditEventArgs) {
                 url: 'https://localhost:****/Home/Insert',
                 type: 'POST',
                 contentType: 'application/json; charset=utf-8',
-                data: JSON.stringify({ value: editedData })
+                data: JSON.stringify({ value: editedData });
             });  //Use remote server host number instead ****
             ajax.onSuccess = () => {
                 // this.flag is enabled to skip this execution when grid ends add/edit
                 this.flag = true;
-                // The added/edited data will be saved in the Grid
+                // The added/edited data will be saved in the Data Grid
                 this.grid.endEdit();
             }
             ajax.onFailure = () => {
@@ -881,7 +543,7 @@ actionBegin(e: EditEventArgs) {
             ajax.onSuccess = () => {
                 // this.flag is enabled to skip this execution when grid ends add/edit
                 this.flag = true;
-                // The added/edited data will be saved in the Grid
+                // The added/edited data will be saved in the Data Grid
                 this.grid.endEdit();
             }
             ajax.onFailure = () => {
@@ -934,7 +596,7 @@ actionBegin(e: EditEventArgs) {
             ajax.onSuccess = () => {
                 // this.flag is enabled to skip this execution when grid deletes record
                 this.flag = true;
-                // The deleted data will be removed in the Grid
+                // The deleted data will be removed in the Data Grid
                 this.grid.deleteRecord();
             }
             ajax.onFailure = () => {
@@ -975,11 +637,11 @@ The following screenshot demonstrates data loading when the button is clicked an
 
 ### Display loading indicator using AJAX
 
-The Angular Data Grid allows the display of a loading indicator while loading data using AJAX. This feature is useful when there is a delay in loading data from a data source, and a visual indication is required to show that the data is being fetched. This is particularly beneficial when working with large datasets or under conditions of slower internet connections.
+The Data Grid allows displaying a loading indicator while loading data using AJAX. This feature is useful when there is a delay in loading data from a data source, and a visual indication is required to show that the data is being fetched. This is particularly beneficial when working with large datasets or under conditions of slower internet connections.
 
-Set the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid#showspinner) property to `true` to display the loading indicator. This property controls the spinner visibility.
+Invoke the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#showspinner) method to display the loading indicator. This method controls the spinner visibility.
 
-The following example demonstrates displaying the loading indicator in the Angular Data Grid using the [load](https://ej2.syncfusion.com/angular/documentation/api/grid#load) and [created](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#created) events:
+The following example demonstrates displaying the loading indicator in the Data Grid using the [load](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#load) and [created](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#created) events:
 
 ```typescript
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -1016,7 +678,7 @@ export class AppComponent implements OnInit {
     
     created() {
         this.isDataLoading = true;
-        const grid = this.grid;  // Grid instance
+        const grid = this.grid;  // Data Grid instance
         const ajax = new Ajax(
                 'https://services.syncfusion.com/angular/production/api/orders',
                 'GET'
@@ -1031,9 +693,9 @@ export class AppComponent implements OnInit {
 
 ## Managing spinner visibility during data loading
 
-Showing a spinner during data loading in the Angular Data Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
+Showing a spinner during data loading in the Data Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
-To show or hide a spinner during data loading in the grid, the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#hidespinner) methods provided by the Grid component.
+To show or hide a spinner during data loading in the grid, use the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#hidespinner) methods provided by the Data Grid component.
 
 The following example demonstrates showing and hiding the spinner during data loading using external buttons in a grid:
 
@@ -1050,7 +712,7 @@ The following example demonstrates showing and hiding the spinner during data lo
 
 ## Immutable mode
 
-Immutable mode in the Angular Data Grid is designed to optimize re-rendering performance by utilizing the object reference and deep compare concept. This mode ensures that when performing grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+Immutable mode in the Data Grid is designed to optimize re-rendering performance by utilizing the object reference and deep compare concept. This mode ensures that when performing grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
 
 Enable immutable mode by setting [enableImmutableMode](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enableimmutablemode) to `true`.
 
@@ -1065,8 +727,6 @@ The following example demonstrates enabling immutable mode in an Angular compone
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
 import { Component, ViewChild, OnInit } from "@angular/core";
 import { GridComponent, RowDataBoundEventArgs, SelectionSettingsModel } from "@syncfusion/ej2-angular-grids";
@@ -1222,25 +882,6 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/immutable-cs1" %}
 
-### Limitations
+### Immutable mode constraints
 
-The following features are not supported in immutable mode:
-
-* Frozen rows and columns
-* Grouping
-* Row Template 
-* Detail Template
-* Hierarchy Grid
-* Scrolling 
-* Virtual scrolling
-* Infinite scrolling
-* Column reordering
-* Row and column spanning
-* PDF export, Excel export, and Print
-* Column resizing
-* Drag and drop
-* Column template
-* Column chooser
-* Clipboard operations
-* AutoFit
-* Filtering
+Immutable mode updates only the rows whose data has changed to improve rendering performance. As a result, features that rely on complex layouts, advanced rendering scenarios, data processing operations, or interactive grid behaviors may not function as expected.

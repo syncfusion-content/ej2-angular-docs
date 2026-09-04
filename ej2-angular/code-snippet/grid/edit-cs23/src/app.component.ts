@@ -28,7 +28,7 @@ import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
                     editType= 'numericedit' width=120  [validationRules]='freightRules' format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150>
                         <ng-template #template let-data>
-                            <a href="#">{{data.ShipCountry}}</a>
+                            <a href="#" aria-label="View ship country">{{data.ShipCountry}}</a>
                         </ng-template>
                     </e-column>
                 </e-columns>
