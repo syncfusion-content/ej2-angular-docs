@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular Grid Custom Template Editing | Syncfusion
-description: Learn how to use inline and dialog template editing in Angular Data Grid to customize edit forms, capture user input, and manage CRUD operations efficiently.
+description: Learn how to use inline and dialog template editing in Angular Data Grid to customize edit forms, capture input, and manage CRUD operations efficiently.
 platform: ej2-angular
 control: Template editing 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Custom Template Editing in Angular Data Grid
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. Angular templates enable defining the structure and content of cells within the grid.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports template editing for creating fully customized inline and dialog-based edit forms. Template editing enables the use of Reactive Forms, Template-driven Forms, custom editors, validation logic, additional form fields, and advanced editing layouts tailored to application requirements.
 
 > For grid basic editing setup and configuration, refer to the [Edit Feature Setup](./edit#set-up-editing).
 
@@ -30,7 +30,7 @@ In this example, a `FormGroup` with relevant `FormControls` is created during th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reactive-form-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="reactive-form.html" %}
+{% highlight html tabtitle="reactive-form.html" %}
 {% include code-snippet/grid/reactive-form-cs1/src/reactive-form.html %}
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ In the following example, a `FormGroup` is created using the `ngForm` directive.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/dialogTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="template-driven.html" %}
+{% highlight html tabtitle="template-driven.html" %}
 {% include code-snippet/grid/dialogTemplate-cs1/src/template-driven.html %}
 {% endhighlight %}
 
@@ -64,13 +64,13 @@ In the following example, a `FormGroup` is created using the `ngForm` directive.
 
 > Each form field must have a `name` attribute.
 
-## Using template context
+## Customize template editors using context
 
 Enhance custom edit forms by accessing the template context: obtain row details, render editors as components, retrieve values from editors, set the initial focus, disable default validation, and add custom validation. These features work for both `inline` and `dialog` modes.
 
 The below scenarios are demonstrated in detail with [tab component inside the dialog template](https://ej2.syncfusion.com/angular/documentation/grid/editing/template-editing#render-tab-component-inside-the-dialog-template).
 
-### Access row details inside ngTemplate using template context
+### Access row details inside ngTemplate
 
 Edit templates provide access to crucial row information within an `ngTemplate`. This enables dynamic binding of attributes, values, or elements based on the specific row being edited, and supports conditional rendering or modification of elements in the edit template based on the row's state.
 
@@ -89,9 +89,9 @@ The following code example demonstrates the usage of the `isAdd` property in an 
 
 ### Render editors as components
 
-The Angular Data Grid provides a powerful feature enabling dynamic rendering of Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 controls as form editors during the editing process. This functionality delivers feature-rich controls for data entry within the edit form.
+The Data Grid provides a powerful feature enabling dynamic rendering of Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 controls as form editors during the editing process. This functionality delivers feature-rich controls for data entry within the edit form.
 
-To achieve this by utilizing the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the Grid and specifying `requestType` as `beginEdit` or `add`.
+To achieve this by utilizing the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid and specifying `requestType` as `beginEdit` or `add`.
 
 The following code example illustrates rendering the `DropDownList` component in the `actionComplete` event.
 
@@ -108,7 +108,7 @@ The following code example illustrates rendering the `DropDownList` component in
 
 ### Get value from editor
 
-The get value from editor feature in the Angular Data Grid enables reading, formatting, and updating the current editor value before saving. This feature provides significant value when specific actions must be performed on data, such as formatting or validation, before committing to the underlying data source.
+The get value from editor feature in the Data Grid enables reading, formatting, and updating the current editor value before saving. This feature provides significant value when specific actions must be performed on data, such as formatting or validation, before committing to the underlying data source.
 
 To implement this feature, utilize the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event with the `requestType` set to `save`.
 
@@ -125,7 +125,7 @@ In the following code example, the freight value has been formatted and updated.
 
 ### Set focus to a particular column editor
 
-The Angular Data Grid enables control of focus behavior for input elements in edit forms. By default, the first input element in the dialog receives focus when the dialog is opened. However, when the first input element is disabled or hidden, a different valid input element can receive focus. This can be achieved using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid, where the `requestType` is set to `beginEdit`.
+The Data Grid enables control of focus behavior for input elements in edit forms. By default, the first input element in the dialog receives focus when the dialog is opened. However, when the first input element is disabled or hidden, a different valid input element can receive focus. This can be achieved using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid, where the `requestType` is set to `beginEdit`.
 
 In the following code example, the "Customer ID" column receives focus.
 
@@ -140,7 +140,7 @@ In the following code example, the "Customer ID" column receives focus.
 
 ### Disable default form validation
 
-The Angular Data Grid provides built-in support for [Angular form validation](https://v17.angular.io/guide/form-validation) to ensure data integrity and accuracy during editing. Scenarios may arise where disabling the default form validation rules is necessary. This can be achieved using the [removeRules](https://helpej2.syncfusion.com/documentation/api/form-validator#removerules) method within the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid.
+The Data Grid provides built-in support for [Angular form validation](https://v17.angular.io/guide/form-validation) to ensure data integrity and accuracy during editing. Scenarios may arise where disabling the default form validation rules is necessary. This can be achieved using the [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator#removerules) method within the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event of the grid.
 
 To disable default form validation rules in the grid, use the following approach:
 
@@ -157,7 +157,7 @@ To disable default form validation rules in the grid, use the following approach
 
 ### Add validation rules for custom editors
 
-The Angular Data Grid provides the ability to add validation rules for fields not present in the column model. This feature prevents erroneous or inconsistent data from being submitted, enhancing the reliability of application data.
+The Data Grid provides the ability to add validation rules for fields not present in the column model. This feature prevents erroneous or inconsistent data from being submitted, enhancing the reliability of application data.
 
 To add validation rules, utilize the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event along with the [addRules](https://ej2.syncfusion.com/documentation/api/form-validator#addrules) method. The following approach uses the `addRules` method to add validation rules for custom editors in the `actionComplete` event:
 
@@ -172,11 +172,11 @@ To add validation rules, utilize the [actionComplete](https://ej2.syncfusion.com
 
 ## Render tab component inside the dialog template
 
-Rendering a [Tab](../../../tab/index.html) component inside the dialog template enhances the grid editing experience. This feature is especially useful for presenting multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
+Rendering a [Tab](https://ej2.syncfusion.com/angular/documentation/tab/getting-started) component inside the dialog template enhances the grid editing experience. This feature is especially useful for presenting multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
 
 Enable dialog mode with [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) set to `Dialog`. Place the `Tab` component inside [editSettingsTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#template).
 
-The following example renders a tab component inside the edit dialog. The tab component has two tabs. Once fields in the first tab are filled and navigation to the second tab occurs, validation for the first tab is performed before proceeding.
+The following example renders a `Tab` component inside the edit dialog. The component contains two tabs. When fields in the first tab are filled and navigation moves to the second tab, validation is performed on the first tab before proceeding.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
