@@ -42,7 +42,7 @@ The following example demonstrates defining the `editType` for grid columns:
 
 ## Customize built-in TextBox editor
 
-The TextBox editor can be customized by configuring its component properties through the [columns.edit.params]((https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit)) option. This allows TextBox features, behavior, and appearance to be customized during editing.
+The TextBox editor can be customized by configuring its component properties through the [columns.edit.params](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) option. This allows TextBox features, behavior, and appearance to be customized during editing.
 
 
 Component|Edit Type |Description|Example Customized edit params
@@ -359,7 +359,7 @@ Here's an example to render a `MaskedTextBox` component in the "Customer Number"
   
 {% previewsample "page.domainurl/samples/grid/edit-maskedtextbox" %}
 
-### Render DropDownList component in edit form
+### Render DropDownList in edit form
 
 The Data Grid allows rendering a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component within the Grid's edit form for a specific column. This feature is valuable when there is a need to provide a convenient way to select options from a predefined list while editing data in the grid's edit form.
 
@@ -379,7 +379,7 @@ The following example demonstrates how to render a `DropDownList` component in t
   
 {% previewsample "page.domainurl/samples/grid/edit-dropdownlist" %}
 
-### Render images in the DropDownList component using item template
+### Render images in the DropDownList using item template
 
 The Data Grid allows rendering images in the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/templates#item-template) editor component. This feature is valuable when there is a need to display images for each item in the dropdown list of a particular column, enhancing the visual representation of the data.
 
@@ -488,7 +488,7 @@ export class AppComponent {
 
 {% previewsample "page.domainurl/samples/grid/edit-drobdown-image" %}
 
-### Render multiple columns in DropDownList component
+### Render multiple columns in DropDownList
 
 The Data Grid supports rendering a [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component within the Grid's edit form for a specific column. This feature is useful for displaying detailed information for each item in the dropdown list during column editing.
 
@@ -604,7 +604,7 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/edit-multicolumn-dropdown" %}
 
-### Render ComboBox component in edit form
+### Render ComboBox in edit form
 
 The Data Grid supports rendering a [ComboBox](https://ej2.syncfusion.com/angular/documentation/combo-box/getting-started) component within the Grid's edit form for a specific column. This feature is useful for providing a drop-down selection with auto-suggestions for data entry.
 
@@ -624,7 +624,7 @@ The following example demonstrates how to render a `ComboBox` component in the "
   
 {% previewsample "page.domainurl/samples/grid/edit-combox" %}
 
-### Render TimePicker component in edit form
+### Render TimePicker in edit form
 
 The Data Grid supports rendering a [TimePicker](https://ej2.syncfusion.com/angular/documentation/timepicker/getting-started) component within the grid's edit form for a specific column. This feature is useful for providing a time input, such as appointment times or event schedules, for editing in the grid.
 
@@ -644,7 +644,7 @@ The following example demonstrates how to render a `TimePicker` component in the
   
 {% previewsample "page.domainurl/samples/grid/edit-cs13" %}
 
-### Render MultiSelect component in edit form
+### Render MultiSelect in edit form
 
 The Data Grid supports rendering a [MultiSelect](https://ej2.syncfusion.com/angular/documentation/multi-select/getting-started) component within the Grid's edit form, enabling selection of multiple values from a dropdown list when editing a specific column. This feature is useful when multiple selections are required for a column.
 
@@ -664,7 +664,7 @@ The following example demonstrates how to render a `MultiSelect` component in th
   
 {% previewsample "page.domainurl/samples/grid/edit-cs15" %}
 
-### Render RichTextEditor component in edit form
+### Render RichTextEditor in edit form
 
 The Data Grid allows rendering the [RichTextEditor](../../rich-text-editor/getting-started) component within the edit form. This enables formatting and styling text content using bold, italic, underline, bullet lists, numbered lists, and other formatting options.
 
@@ -686,7 +686,7 @@ The following example demonstrates how to render a `RichTextEditor` component in
   
 {% previewsample "page.domainurl/samples/grid/edit-cs16" %}
 
-### Render Uploader component in edit form  
+### Render Uploader in edit form  
 
 The Data Grid allows rendering an [Uploader](../../uploader/getting-started) component within the grid's edit form. This enables uploading and managing files or images in a specific column during data editing.
 

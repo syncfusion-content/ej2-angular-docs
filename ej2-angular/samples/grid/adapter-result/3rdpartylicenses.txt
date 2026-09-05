@@ -46,6 +46,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-lists
 SEE LICENSE IN license
 
+@syncfusion/ej2-material3-theme
+SEE LICENSE IN license
+
 @syncfusion/ej2-navigations
 SEE LICENSE IN license
 

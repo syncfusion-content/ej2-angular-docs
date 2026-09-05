@@ -183,7 +183,7 @@ The following sample demonstrates to add a new record continuously using `showAd
   
 {% previewsample "page.domainurl/samples/grid/edit-cs54" %}
 
-> To save newly added records, press the <kbd>Enter</kbd> key or click the <kbd>Update</kbd> button on the toolbar after filling the add form.
+> To save newly added records, press the <kbd>Enter</kbd> key or click the "Update" button on the toolbar after filling the add form.
 
 ### Constraints
 
