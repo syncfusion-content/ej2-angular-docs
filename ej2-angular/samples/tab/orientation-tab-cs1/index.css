@@ -1,0 +1,28 @@
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+.e-content .e-item {
+  font-size: 12px;
+  margin: 10px;
+  text-align: justify;
+}
+
+#element {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+#default {
+  margin-top: 15px;
+}
+
+#default .row {
+  margin-right: 20px;
+  margin-left: 20px;
+}
