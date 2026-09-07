@@ -6,7 +6,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     template: `
-    <div class="control-section">
+    <div class="control-section" style="width: 500px;">
         <ejs-dashboardlayout id="defaultLayout" #defaultLayout [cellSpacing]="cellSpacing" [mediaQuery]="mediaQuery" [columns]="columns" [panels]="panels">
         </ejs-dashboardlayout>
     </div>`,
