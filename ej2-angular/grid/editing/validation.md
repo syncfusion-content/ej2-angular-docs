@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Validation in Angular Data Grid
 
-Data validation ensures that information entered or modified in the grid follows specific validation rules, preventing errors and maintaining accuracy. The Angular Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in validation support to make this process easy and effective.
+Data validation ensures that information entered or modified in the grid follows specific validation rules, preventing errors and maintaining accuracy. The Data Grid component provides built-in validation support to make this process effective.
+
+Validation rules support a wide range of validation scenarios, including mandatory fields, value validation, text validation, and custom validation logic.
 
 > For basic grid editing setup and configuration, refer to the [Editing Feature Setup](../editing/edit.md#set-up-editing) section.
 
@@ -18,7 +20,7 @@ Data validation ensures that information entered or modified in the grid follows
 
 Column validation applies validation rules to individual columns during edit operations, ensuring data accuracy before saving. Invalid data displays error messages and prevents saving. The [FormValidator](https://ej2.syncfusion.com/angular/documentation/api/form-validator) component validates data using rules defined in the [validationRules](https://ej2.syncfusion.com/angular/documentation/api/grid/column#validationrules) property for each column.
 
-Example of applying validation rules to a grid column:
+The following example demonstrates validation rules applied to a grid column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,11 +52,11 @@ The following example demonstrates custom validation for the "Customer ID" colum
   
 {% previewsample "page.domainurl/samples/grid/edit-cs34" %}
 
-### Custom validation based on dropdown change
+### Validation based on dropdown values
 
 Dependent validation rules adjust based on selections in other columns, enabling linked column validation. The "Salary" column validation adjusts based on the "Role" column selection, ensuring both columns validate correctly together.
 
-Example applying dependent validation between "Role" and "Salary" columns:
+The following example demonstrates dependent validation between the "Role" and "Salary" columns:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,7 +70,7 @@ Example applying dependent validation between "Role" and "Salary" columns:
   
 {% previewsample "page.domainurl/samples/grid/edit-cs35" %}
 
-### Custom validation for numeric columns
+### Validation for numeric columns
 
 Numeric column validation applies rules for numeric data such as positive values, minimum/maximum ranges, or decimal limits. This example uses "customFn" and "customFn1" functions configured through the "freightRules" object to validate numeric values. The numeric columns are bound to the `change` event, which calls the [validate](https://ej2.syncfusion.com/angular/documentation/api/form-validator#validate) method to check the value and display error messages whenever the data changes.
 
@@ -84,7 +86,7 @@ Numeric column validation applies rules for numeric data such as positive values
   
 {% previewsample "page.domainurl/samples/grid/edit-validation-cs5" %}
 
-## Dynamically add or remove validation rules from the form
+## Dynamic validation rules
 
 Validation rules can be added or removed from input elements based on application scenarios or data conditions. The [addRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator#addrules) method adds validation rules dynamically to input elements using the name attribute.
 
@@ -104,7 +106,7 @@ The following example demonstrates dynamic addition or removal of validation rul
 
 > To remove an existing validation rule from an input element, use the [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator#removerules) method.
 
-## Change the position of validation error messages
+## Customize validation message position
 
 Error message positioning customizes where validation messages appear in the grid. By default, messages display below the input field. The [customPlacement](https://ej2.syncfusion.com/angular/documentation/api/form-validator#customplacement) event repositions messages to custom locations based on application needs.
 
@@ -122,11 +124,11 @@ The following example demonstrates moving validation messages to the top of the 
   
 {% previewsample "page.domainurl/samples/grid/edit-validation-cs4" %}
 
-## Show custom error message for failed CRUD actions
+## Handle server-side validation errors
 
-Error handling for CRUD operations in the grid displays helpful error messages when operations fail. The [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/grid#actionfailure) event triggers on operation failures, providing access to error messages from server responses for display.
+Error handling for CRUD operations in the grid can display helpful error messages when operations fail. The [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/grid#actionfailure) event triggers on operation failures, providing access to error messages from server responses for display.
 
-Example showing server error feedback in Angular Grid:
+Example showing server error feedback in Data Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -180,7 +182,7 @@ export class AppComponent {
     <e-columns>
       <e-column field='OrderID' headerText='Order ID' isPrimaryKey=true textAlign='Right' width='150'></e-column>
       <e-column field='CustomerID' headerText='Customer Name' width='150'></e-column>
-      <e-column field='Freight' headerText='Freight' format="C2" width='150' textAlign='Right'></e-column>s
+      <e-column field='Freight' headerText='Freight' format="C2" width='150' textAlign='Right'></e-column>
       <e-column field='ShipCity' headerText='ShipCity' width='150'></e-column>
     </e-columns>
   </ejs-grid>
@@ -382,3 +384,11 @@ namespace UrlAdaptor.Server.Models
 The following screenshot demonstrates displaying error messages when CRUD operations fail:
 
 ![custom error message](../../grid/images/custom-error-message.png)
+
+## See also
+
+* [Normal editing](./in-line-editing)
+* [Template editing](./template-editing)
+* [Cell editing](./cell-editing)
+* [Batch editing](./batch-editing)
+* [Dialog editing](./dialog-editing)

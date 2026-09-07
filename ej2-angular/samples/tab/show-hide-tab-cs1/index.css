@@ -1,0 +1,32 @@
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.e-content .e-item {
+  font-size: 12px;
+  margin: 10px;
+  text-align: justify;
+}
+.e-tab .e-tab-icon {
+  color: #6d6d6d;
+  font-family: 'e-icons-sample';
+}
+.e-tab .e-tab-icon {
+  position: relative;
+  top: 2px;
+}
+.e-twitter:before {
+  content: '\e700';
+}
+.e-facebook:before {
+  content: '\e70a';
+}
+.e-whatsapp:before {
+  content: '\e704';
+}

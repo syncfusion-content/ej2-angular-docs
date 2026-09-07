@@ -3,14 +3,14 @@ layout: post
 title: Angular Grid Editing | Syncfusion
 description: Learn how to configure editing in Angular Data Grid, customize edit modes, apply validation rules, use templates, and manage CRUD workflows efficiently.
 platform: ej2-angular
-control: Edit 
+control: Edit
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Editing in Angular Data Grid
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component includes built-in editing features for creating, reading, updating, and deleting data directly in the grid. This eliminates the need for separate forms and allows data modification within a single interface. The grid editing provides powerful options through multiple edit modes, customizable triggers, and flexible data handling.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component includes built-in editing features for creating, reading, updating, and deleting data directly in the grid. This eliminates the need for separate forms and allows data modification within a single interface. The grid editing provides powerful options through multiple edit modes such as inline editing, dialog editing, batch editing, custom editors, validation, CRUD operations, and template-based editing.
 
 ## Set up editing
 
@@ -48,10 +48,11 @@ Editing requires a primary key column to support full CRUD functionality. Define
 
 Edit actions can be initiated by double-clicking a row or by selecting a row and clicking the `Edit` button in the toolbar. Records can be added by clicking the `Add` button in the toolbar or via an external trigger that invokes the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/edit#addrecord) method. Use `Save` and `Cancel` to commit or discard changes from the toolbar during edit mode. Deletion is performed by selecting the target row and clicking the `Delete` button.
 
-To explore available edit modes and types in Angular Grid, refer to the following video:
+To explore available edit modes and types in Data Grid, refer to the following video:
 
 {% youtube "https://www.youtube.com/watch?v=RefC_z4Nnmg" %}
 
+The following example demonstrates enabling editing in the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -69,13 +70,24 @@ To explore available edit modes and types in Angular Grid, refer to the followin
 > * Use `columns.allowEditing` set to `false` to disable editing for specific columns.
 > * The `Insert` key adds a new row, and the `Delete` key deletes the selected row in the grid.
 
-## Toolbar with edit options
+## Edit modes
 
-The toolbar with edit option feature provides a [built-in toolbar](../../toolbar/item-configuration) that includes items for editing actions. Using the toolbar, users can easily modify, update, or cancel grid data edits.
+The Data Grid supports multiple editing options to meet different data-editing requirements:
+
+- **[Inline edit](./in-line-editing)**: Allows direct modification of row or cell values within the grid.
+- **[Batch edit](./batch-editing)**: Enables editing and saving of multiple cells in a single action.
+- **[Cell edit](./cell-editing)**: Allows to edit individual cell values directly within the grid.
+- **[Dialog edit](./dialog-editing)**: Opens a dedicated modal dialog window to edit row data.
+
+Use the `editSettings.mode` property to specify the desired edit mode.
+
+## Edit records using the toolbar
+
+The toolbar with edit option feature provides a [built-in toolbar](../../toolbar/item-configuration) that includes items for editing actions. Using the toolbar, grid records can be modified, updated, or canceled during edit operations.
 
 Configure the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property of the Grid component to enable this feature. The toolbar property defines the items displayed in the grid toolbar. Include relevant items like `Edit`, `Add`, `Delete`, `Update`, and `Cancel` within the `toolbar` property to enable edit options in the toolbar.
 
-The following example demonstrates to enable the toolbar with edit option in the grid:
+The following example demonstrates how to enable the toolbar with edit option in the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,9 +101,27 @@ The following example demonstrates to enable the toolbar with edit option in the
 
 {% previewsample "page.domainurl/samples/grid/edit-cs19" %}
 
+## Column validation
+
+Column validation applies validation rules to individual columns during edit operations, ensuring data accuracy before saving. Invalid data displays error messages and prevents saving. The [FormValidator](https://ej2.syncfusion.com/angular/documentation/api/form-validator) component validates data using rules defined in the [validationRules](https://ej2.syncfusion.com/angular/documentation/api/grid/column#validationrules) property for each column.
+
+Example of applying validation rules to a grid column:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs33/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs33/src/main.ts %}
+{% endhighlight %}
+{% endtabs %} 
+  
+{% previewsample "page.domainurl/samples/grid/edit-cs33" %}
+
 ## Disable editing for specific columns
 
-The Grid component provides the option to disable editing for specific columns. This is useful when certain columns should remain read-only, such as columns containing calculated values, IDs, or system-generated data.
+The Data Grid provides the option to disable editing for specific columns. This is useful when certain columns should remain read-only, such as columns containing calculated values, IDs, or system-generated data.
 
 ### Static column disabling
 
@@ -105,7 +135,7 @@ To permanently disable editing for a column, set the [allowEditing](https://ej2.
 
 To disable editing for a column based on application interaction or conditions, use the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowediting) property of the `columns` object. Set this property to `false` to prevent editing for that specific column. 
 
-The following example demonstrates to disable editing for selected columns dynamically in the Grid.
+The following example demonstrates how to disable editing for selected columns dynamically in the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,7 +156,7 @@ The following example demonstrates to disable editing for selected columns dynam
 > * To disable editing for a specific row using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event. See example [here](https://ej2.syncfusion.com/angular/documentation/grid/editing/in-line-editing#disable-editing-for-a-particular-row).
 > * To disable editing for a particular cell using the [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid#celledit) event. See example [here](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing#disable-editing-for-a-particular-cell).
 
-## Editing template columns
+## Customize column editors using templates
 
 Customizing the editing experience for specific columns is possible by defining an editing template. Use the [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field) property to connect the column with its corresponding data field.
 
@@ -139,6 +169,7 @@ import { FormsModule } from '@angular/forms';
 import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids';
 import { DatePickerAllModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { DropDownListModule, MultiSelectModule, AutoCompleteModule };
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
@@ -149,7 +180,6 @@ imports: [
         DatePickerAllModule,
         FormsModule,
         TimePickerModule,
-        FormsModule,
         TextBoxModule,
         MultiSelectModule,
         AutoCompleteModule
@@ -166,7 +196,7 @@ standalone: true,
                     editType= 'numericedit' width=120  [validationRules]='freightRules' format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150>
                         <ng-template #template let-data>
-                            <a href="#">{{data.ShipCountry}}</a>
+                            <a href="#" aria-label="View ship country">{{data.ShipCountry}}</a>
                         </ng-template>
                     </e-column>
                 </e-columns>
@@ -201,52 +231,11 @@ export class AppComponent implements OnInit {
 
 {% previewsample "page.domainurl/samples/grid/edit-cs23" %}
 
-## Customizing the delete confirmation dialog
-
-By default, the Grid shows a confirmation dialog when attempting to delete a row. The appearance and content of this dialog can be customized to match application requirements. Customization can include changing the dialog header, icons, or button text.
-
-To customize the delete confirmation dialog, utilize the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event. This event is triggered when a toolbar action is performed and allows modification of dialog properties.
-
-> * Enable the confirmation dialog for deletions by setting [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#showdeleteconfirmdialog) to `true` in `editSettings`.
-> * Refer to the grid [Default text](../global-local) documentation for localization options.
-
-The following example demonstrates to customize the delete confirmation dialog using the `toolbarClick` event.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-delete-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-delete-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/grid/edit-delete-cs1" %}
-
-## Update boolean column value with a single click
-
-The grid allows boolean column values to be toggled with a single click in normal editing mode. Use the column template feature to render a CheckBox for direct interaction.
-
-The following example demonstrates to render a `CheckBox` component as a template in the "Verified" column to enable single-click editing:
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-single-click/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-single-click/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/grid/edit-single-click" %}
-
-## Editing enum column values
+## Edit enum columns
 
 Enum columns contain predefined list values (enumerated data). Instead of allowing free-form text input, using a dropdown editor ensures data consistency and prevents invalid entries. The [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) property enables custom editors for enum data.
 
-The following example demonstrates to render a `DropDownList` component as an edit template for the "Employee Feedback" column, binding it to a predefined list of enum values:
+The following example demonstrates how to render a `DropDownList` component as an edit template for the "Employee Feedback" column, binding it to a predefined list of enum values:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -264,7 +253,7 @@ The following example demonstrates to render a `DropDownList` component as an ed
 
 Complex columns contain nested data objects (such as "Name.FirstName"). When editing complex data with custom input elements, the binding syntax differs from simple columns. Use the underscore operator (`___`) instead of the dot operator (`.`) to correctly bind nested properties in edit templates.
 
-The following example demonstrates to edit complex nested data. The "FirstName" and "LastName" properties (nested under "Name") are edited using input elements with names defined as "Name___FirstName" and "Name___LastName":
+The following example demonstrates how to edit complex nested data. The "FirstName" and "LastName" properties (nested under "Name") are edited using input elements with names defined as "Name___FirstName" and "Name___LastName":
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -278,9 +267,9 @@ The following example demonstrates to edit complex nested data. The "FirstName" 
 
 {% previewsample "page.domainurl/samples/grid/edit-complex" %}
 
-## Editing foreign key columns
+## Edit foreign key columns
 
-The Syncfusion Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the `DropDownList` component during editing. This flexibility is particularly useful for customizing the editor for foreign key columns. By default, the Syncfusion Grid renders the `DropDownList` component as the editor for foreign key columns during editing. However, this behavior can be enhanced and customized by leveraging the [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) property for the column using `ng-template`. The `editTemplate` property allows specification of a cell edit template that serves as an editor for a particular column, accepting either a template string or an HTML element ID.
+The Data Grid provides a powerful editing feature for foreign key columns by rendering a `DropDownList` component as the default editor during editing. This default editor can be replaced by defining the [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) property for the column using `ng-template`. The `editTemplate` property accepts either a template string or an HTML element ID and serves as the editor for a particular column.
 
 In the following code example, the "Employee Name" is a foreign key column. When editing, the `ComboBox` component is rendered instead of `DropDownList`.
 
@@ -296,9 +285,50 @@ In the following code example, the "Employee Name" is a foreign key column. When
 
 {% previewsample "page.domainurl/samples/grid/edit-tempalte" %}
 
+## Customizing the delete confirmation dialog
+
+By default, the Data Grid shows a confirmation dialog when attempting to delete a row. The appearance and content of this dialog can be customized to match application requirements. Customization can include changing the dialog header, icons, or button text.
+
+To customize the delete confirmation dialog, utilize the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event. This event is triggered when a toolbar action is performed and allows modification of dialog properties.
+
+> * Enable the confirmation dialog for deletions by setting [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#showdeleteconfirmdialog) to `true` in `editSettings`.
+> * Refer to the grid [Default text](../global-local) documentation for localization options.
+
+The following example demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-delete-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-delete-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/edit-delete-cs1" %}
+
+## Update boolean column value with a single click
+
+The grid allows boolean column values to be toggled with a single click in normal editing mode. Use the column template feature to render a CheckBox for direct interaction.
+
+The following example demonstrates how to render a `CheckBox` component as a template in the "Verified" column to enable single-click editing:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-single-click/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-single-click/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/edit-single-click" %}
+
 ## Preventing duplicate rows with custom validation
 
-The Syncfusion Angular Grid enables enforcement of constraints to prevent duplicate rows by customizing the validation logic within the grid setup. This ensures data integrity by restricting duplicate entries in the "Order ID" column.
+The Data Grid enables enforcement of constraints to prevent duplicate rows by customizing the validation logic within the grid setup. This ensures data integrity by restricting duplicate entries in the "Order ID" column.
 
 To prevent adding duplicate rows in the grid, follow these steps:
 
@@ -308,7 +338,7 @@ To prevent adding duplicate rows in the grid, follow these steps:
 
 3. Handle Validation in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) event: In the `actionBegin` event, check if the `requestType` is `save`. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
 
-For server-side validation to prevent adding duplicate rows, refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). To display the Grid's validation tooltip instead of the alert used in the knowledge base, call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to show the Grid's tooltip validation for the server side.
+For server-side validation to prevent adding duplicate rows, refer to the detailed guidance provided in the [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). To display the grid's validation tooltip instead of the alert used in the knowledge base, call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to show the grid's tooltip validation for the server side.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -370,19 +400,9 @@ The [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/grid/inde
 
 {% previewsample "page.domainurl/samples/grid/edit-form" %}
 
-## Troubleshooting: Editing works only for the first row
-
-If editing or deleting only works for the first row in the grid, the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is likely not configured. The primary key is essential for identifying which row to edit or delete. Without it, the grid cannot distinguish between rows.
-
-**Solution**: Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` on the column that contains unique identifiers:
-
-```html
-<e-column field='OrderID' headerText='Order ID' width='100' isPrimaryKey='true'></e-column>
-```
-
 ## Make a grid column always editable
 
-To keep a column editable at all times, use a column template and handle input via the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event and [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterow) method for user input management.
+To keep a column editable at all times, use a column template and handle input through the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event and [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterow) method.
 
 Example: Editable "Freight" column textbox template.
 
@@ -400,15 +420,25 @@ Example: Editable "Freight" column textbox template.
 
 > If a template column has an associated `field` property, values from the input will be stored in that field in the data object.
 
+## Troubleshooting: Editing works only for the first row
+
+If editing or deleting only works for the first row in the grid, the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is likely not configured. The primary key is essential for identifying which row to edit or delete. Without it, the grid cannot distinguish between rows.
+
+**Solution**: Set [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` on the column that contains unique identifiers:
+
+```html
+<e-column field='OrderID' headerText='Order ID' width='100' isPrimaryKey='true'></e-column>
+```
+
 ## See also
 
-* [Cascading DropDownList with Grid Editing](../how-to/cascading-drop-down-list)
-* [Tab Inside the Dialog Editing](../how-to/using-tab-inside-the-dialog-editing)
-* [Apply animation for Grid Edit dialog in Angular Grid](https://www.syncfusion.com/forums/154544/apply-animation-for-grid-edit-dialog-in-angular-grid)
-* [CRUD operations using ASP.NET core web api methods in Angular Grid](https://www.syncfusion.com/forums/150090/crud-operations-using-asp-net-core-web-api-methods-in-angular-grid)
-* [How to restrict ArrowUp increase and ArrowDown decrease value in Grid numeric cell in Angular Grid](https://www.syncfusion.com/forums/150611/how-to-restrict-arrowup-increase-and-arrowdown-decrease-value-in-grid-numeric-cell-in)
-* [How to use DropDownList and Combo-Box in Batch-edit mode of Angular Grid](https://www.syncfusion.com/forums/151968/how-to-use-dropdownlist-and-combo-box-in-batch-edit-mode-of-angular-grid)
-* [How to use CellEditArgs event in Angular Grid](https://www.syncfusion.com/forums/153617/how-to-use-celleditargs-event-in-angular-grid)
-* [How to render Grid with add form always in Angular Grid](https://www.syncfusion.com/forums/161716/how-to-render-grid-with-add-form-always-in-angular-grid)
-* [How to show the numeric key pad in mobile device when edit the number column in Angular Grid](https://www.syncfusion.com/forums/147184/how-to-show-the-numeric-keypad-in-mobile-device-when-edit-the-number-column-in-angular-grid)
+* [Cascading DropDownList with Data Grid editing](./edit-types#render-cascading-dropdownlist-in-edit-form)
+* [Render Tab inside the dialog editing](./template-editing#render-tab-component-inside-the-dialog-template)
+* [Apply animation for grid edit dialog in Data Grid](https://www.syncfusion.com/forums/154544/apply-animation-for-grid-edit-dialog-in-angular-grid)
+* [CRUD operations using ASP.NET core web api methods in Data Grid](https://www.syncfusion.com/forums/150090/crud-operations-using-asp-net-core-web-api-methods-in-angular-grid)
+* [How to restrict ArrowUp increase and ArrowDown decrease value in grid numeric cell in Data Grid](https://www.syncfusion.com/forums/150611/how-to-restrict-arrowup-increase-and-arrowdown-decrease-value-in-grid-numeric-cell-in)
+* [How to use DropDownList and Combo-Box in Batch-edit mode of Data Grid](https://www.syncfusion.com/forums/151968/how-to-use-dropdownlist-and-combo-box-in-batch-edit-mode-of-angular-grid)
+* [How to use CellEditArgs event in Data Grid](https://www.syncfusion.com/forums/153617/how-to-use-celleditargs-event-in-angular-grid)
+* [How to render grid with add form always in Data Grid](https://www.syncfusion.com/forums/161716/how-to-render-grid-with-add-form-always-in-angular-grid)
+* [How to show the numeric key pad in mobile device when edit the number column in Data Grid](https://www.syncfusion.com/forums/147184/how-to-show-the-numeric-keypad-in-mobile-device-when-edit-the-number-column-in-angular-grid)
 * [How to enable inline editing in Angular 4 Data Grid/Table](https://support.syncfusion.com/kb/article/11700/how-to-enable-inline-editing-in-angular-4-data-grid-table)
