@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-container',
   standalone: true,
   imports: [TreeViewModule],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './virtualization.html',
 })
 
 export class AppComponent {
