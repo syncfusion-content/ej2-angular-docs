@@ -7,7 +7,7 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
 
 
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { ButtonComponent } from "@syncfusion/ej2-angular-buttons";
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { sampleData2, dataSource1, sampleData } from "./datasource";
