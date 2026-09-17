@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.a2ui-chat {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.a2ui-chat ejs-textbox {
+    flex: 1 1 0;
+    min-width: 0;
+    display: block;
+    width: 100%;
+}
+
+.a2ui-chat .e-input-group,
+.a2ui-chat .e-input,
+.a2ui-chat input.e-input {
+    width: 100% !important;
+}
+
+.a2ui-chat button[ejs-button] {
+    flex: 0 0 auto;
+}
