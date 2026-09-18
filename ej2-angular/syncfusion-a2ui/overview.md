@@ -16,16 +16,6 @@ In short, the package converts chat-based agent responses into fully functional 
 
 N> Syncfusion A2UI for Angular is currently in **preview (beta)** and is published on npm. The package is feature-complete for the listed components, but the API, catalog ID, and Zod schemas may evolve before the first stable release. The **A2UI v0.9 wire format** is stable; minor additive changes (new components, new properties) are expected.
 
-## Prerequisites
-
-Before installing Syncfusion A2UI for Angular, ensure you have:
-
-- An existing Angular application that uses Syncfusion EJ2 Angular components.
-- An [A2UI v0.9-compatible agent](https://a2ui.org/specification/v0.9-a2ui/)
-- A registered Syncfusion license key.
-
-For exact Angular version support, Node.js requirements, and step-by-step setup, see [Getting Started](./getting-started).
-
 ## What problem does it solve?
 
 Modern AI agents are expected to do more than return text. A user who asks *"Show me last quarter's sales by region"* expects an interactive chart, not a markdown table. A user who asks *"Schedule a meeting with the design team next Tuesday"* expects a calendar picker, not a confirmation string.

@@ -49,7 +49,11 @@ You can also start from the **Gallery** and copy the closest template, then refi
 
 **Composer prompt**
 
-> *Build a single-page SkyWave Airlines flight booking form. Use two Card sections stacked vertically with 16px gaps. Card 1 'Flight Details' has, in order, a 'From' TextBox, a 'To' TextBox, a 'Trip Type' DropDownList with options One-Way and Round-Trip, a 'Cabin Class' DropDownList with options Economy / Business / First Class, a 'Departure Date' DatePicker, a 'Return Date' DatePicker, and an 'Adults' NumericTextBox defaulting to 1 with min 1 and max 9. Card 2 'Passenger Details' has a 'Full Name' TextBox, a 'Date of Birth' DatePicker, an 'Email' TextBox, a 'Phone' TextBox, and a 'Wheelchair assistance required' CheckBox. Below both cards place a primary 'Review Booking' button aligned to the right edge. Use the SkyWave brand: green primary AppBar, soft borders, 16px gaps.*
+{% promptcards %}
+{% promptcard %}
+Build a single-page SkyWave Airlines flight booking form. Use two Card sections stacked vertically with 16px gaps. Card 1 'Flight Details' has, in order, a 'From' TextBox, a 'To' TextBox, a 'Trip Type' DropDownList with options One-Way and Round-Trip, a 'Cabin Class' DropDownList with options Economy / Business / First Class, a 'Departure Date' DatePicker, a 'Return Date' DatePicker, and an 'Adults' NumericTextBox defaulting to 1 with min 1 and max 9. Card 2 'Passenger Details' has a 'Full Name' TextBox, a 'Date of Birth' DatePicker, an 'Email' TextBox, a 'Phone' TextBox, and a 'Wheelchair assistance required' CheckBox. Below both cards place a primary 'Review Booking' button aligned to the right edge. Use the SkyWave brand: green primary AppBar, soft borders, 16px gaps.
+{% endpromptcard %}
+{% endpromptcards %}
 
 **Save as:** `examples/designs/stage1-flight-search.json`
 
@@ -57,7 +61,11 @@ You can also start from the **Gallery** and copy the closest template, then refi
 
 **Composer prompt**
 
-> *Build a single-page SkyWave Airlines booking confirmation page. Use four Card sections stacked vertically with 20px gaps. Card 1 'Flight Details' shows the route as '{origin} → {destination}' as a large heading, with a row of four labeled pairs: Departure, Cabin, Passengers (e.g. '2 Adults'), and Trip Type. Card 2 'Passenger Details' shows three labeled pairs: Full Name, Email, Phone. Card 3 'Fare Breakdown' lists Base Fare, Taxes & Fees, and a bold Total Payable, with an information note that the fare is non-refundable after 24 hours. Card 4 'Confirm Booking' has an agreement Checkbox for fare rules followed by two buttons in a row: a 'Modify Booking' outline button and a primary 'Confirm & Pay' success button. Use the SkyWave brand: green primary AppBar, soft borders, 16px gaps.*
+{% promptcards %}
+{% promptcard %}
+Build a single-page SkyWave Airlines booking confirmation page. Use four Card sections stacked vertically with 20px gaps. Card 1 'Flight Details' shows the route as '{origin} → {destination}' as a large heading, with a row of four labeled pairs: Departure, Cabin, Passengers (e.g. '2 Adults'), and Trip Type. Card 2 'Passenger Details' shows three labeled pairs: Full Name, Email, Phone. Card 3 'Fare Breakdown' lists Base Fare, Taxes & Fees, and a bold Total Payable, with an information note that the fare is non-refundable after 24 hours. Card 4 'Confirm Booking' has an agreement Checkbox for fare rules followed by two buttons in a row: a 'Modify Booking' outline button and a primary 'Confirm & Pay' success button. Use the SkyWave brand: green primary AppBar, soft borders, 16px gaps.
+{% endpromptcard %}
+{% endpromptcards %}
 
 **Save as:** `examples/designs/stage2-flight-results.json`
 
@@ -65,7 +73,13 @@ You can also start from the **Gallery** and copy the closest template, then refi
 
 **Composer prompt**
 
-> *Build a single-page SkyWave Airlines booking confirmed page. At the top, render a green Success Message with the text 'Booking Confirmed! Reference: {bookingRef}.' Below it, render four Card sections stacked vertically with 20px gaps. Card 1 'Booking Reference' shows the booking reference as a large bold purple heading. Card 2 'Flight Details' shows the route '{origin} → {destination}' as a heading, then a labeled summary list of Departure Date, Cabin Class, Trip Type, and Passengers. Card 3 'Passenger Details' shows the full name, email, and phone as labeled pairs. Card 4 'Amount Paid' lists Base Fare, Taxes & Fees, and a bold Total Paid. Below the cards, render an information Message reminding the customer that a confirmation email has been sent and they need a valid photo ID on the day of travel. Use the SkyWave brand: green primary AppBar, soft borders, 16px gaps.*
+{% promptcards %}
+{% promptcard %}
+Build a single-page SkyWave Airlines booking confirmed page. At the top, render a green Success Message with the text 'Booking Confirmed! Reference: {bookingRef}.' Below it, render four Card sections stacked vertically with 20px gaps. Card 1 'Booking Reference' shows the booking reference as a large bold purple heading. Card 2 'Flight Details' shows the route '{origin} → {destination}' as a heading, then a labeled summary list of Departure Date, Cabin Class, Trip Type, and Passengers. Card 3 'Passenger Details' shows the full name, email, and phone as labeled pairs. Card 4 'Amount Paid' lists Base Fare, Taxes & Fees, and a bold Total Paid. Below the cards, render an information Message reminding the customer that a confirmation email has been sent and they need a valid photo ID on the day of travel. Use the SkyWave brand: green primary AppBar, soft borders, 16px gaps.
+{% endpromptcard %}
+{% endpromptcards %}
+
+> **
 
 **Save as:** `examples/designs/stage3-booking-confirmation.json`
 
