@@ -1,0 +1,17 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+/* To disable indicator animation */
+.e-tab .e-tab-header:not(.e-vertical) .e-indicator,  .e-tab .e-tab-header.e-vertical .e-indicator {
+    transition: none;
+}
