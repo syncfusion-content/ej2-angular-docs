@@ -106,6 +106,19 @@ The [attachmentRemoved](../api/ai-assistview#attachmentremoved) event is trigger
 {% endhighlight %}
 {% endtabs %}
 
+## attachmentRemoving
+
+The [attachmentRemoving](../api/ai-assistview#attachmentremoving) event is triggered when an attached file is being removed from the AI AssistView.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ai-assistview/events/attachment-removing/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ai-assistview/events/attachment-removing/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
 ## attachmentClick
 
 The [attachmentClick](../api/ai-assistview#attachmentclick) event is triggered when an attached file is clicked in the AI AssistView.

@@ -17,7 +17,7 @@ This guide demonstrates how to create an Angular application using standalone co
 ## Prerequisites
 
 - Ensure you have Node.js (LTS recommended) and npm installed on your system.
-- Requires Angular 12+ for standalone components; Angular 14+ is recommended.
+- Requires Angular 12+ for standalone components; Angular 20+ is recommended.
 - Verify that your environment meets the system requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components.
 
 ## Create a New Application

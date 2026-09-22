@@ -14,7 +14,7 @@ This guide outlines the system requirements for developing, testing, and deployi
 
 ## Angular Version
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are compatible with Angular 12 and above, leveraging modern framework features for enhanced performance and developer experience. To check the Angular CLI version, run:
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components are compatible with Angular 20 and above, leveraging modern framework features for enhanced performance and developer experience. To check the Angular CLI version, run:
 
 ```bash
 ng version

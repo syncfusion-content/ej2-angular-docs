@@ -25,7 +25,7 @@ ng new my-syncfusion-app --style=scss --routing=false
 cd my-syncfusion-app
 ```
 
-> Syncfusion Angular packages are Ivy-compatible starting from version ~20.2.36 and officially support Angular 12 and above.
+> Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages have been Ivy-compatible since version ~20.2.36. Beginning with Syncfusion<sup style="font-size:70%">&reg;</sup> version 35.1.37,the packages support the latest officially released Angular version as well as Angular versions currently under Long-Term Support (LTS).At present, Syncfusion® supports Angular versions 20, 21, and 22.
 
 ## Installing a Specific Component Package
 

@@ -8,14 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installation of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Controls
+# Install Syncfusion<sup>&reg;</sup> Angular Controls
 
 This guide explains how to install Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 Angular UI components into an existing Angular application using either the **NPM CLI** or the **`package.json`** file.
 
 **Prerequisites**
 
-* [Node.js](https://nodejs.org/) and npm installed. npm is bundled with Node.js.
-* An existing Angular project created with the [Angular CLI](https://angular.io/cli) (Angular 6 or later is supported, but the required package format depends on your Angular version; see below).
+* [Node.js](https://nodejs.org/en) and npm installed. npm is bundled with Node.js.
+* An existing Angular project created with the [Angular CLI](https://v17.angular.io/cli) (Angular 6 or later is supported, but the required package format depends on your Angular version; see below).
 * Access to the npm registry (public, or your private registry if applicable).
 
 ## Install by Using the NPM CLI
@@ -24,12 +24,14 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> packages are distributed on npm
 
 Currently, Syncfusion<sup style="font-size:70%">&reg;</sup> provides two package structures for Angular components:
 
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler (ngcc) package (Angular's legacy compilation and rendering pipeline)
+
+> Starting from Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 Angular version **35.1.37**, the `ngcc` package support has been dropped. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components supports the latest official Angular version and the versions currently under long-term support (LTS) — that is, Angular versions **20, 21, and 22**.
 
 ### Ivy Library Distribution Package
 
-By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>= 20.2.36) support the [Angular Ivy distribution](https://angular.io/guide/ivy). These packages are compatible with Angular version 12 and above.
+By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (>= 20.2.36) support the [Angular Ivy distribution](https://v12.angular.io/guide/ivy). These packages are compatible with Angular version 12 and above.
 
 To install a package, run the following command in the root of your Angular project:
 

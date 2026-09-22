@@ -76,6 +76,10 @@ A new **Essential Studio UI SDK Edition** is also introduced (covers UI componen
 
 > **Note:** This change applies to new product purchases only. Existing customers will continue to receive access to all UI components, including Gantt, Scheduler, Diagram, and Rich Text Editor, according to their current licensing. No changes are required for existing customers. 
 
+### Standalone UI SDKs (v35.1 and Later)
+
+The Essential Studio UI Edition includes access to Standalone UI SDKs, providing all UI components across supported platforms, excluding PDF Viewer, Spreadsheet, and Document Editor. Organizations can choose from individual standalone component offerings or a comprehensive UI suite based on application requirements and licensing preferences.
+
 ## Key Changes in the Licensing Model
 
 Effective from the 2025 Volume 3 release (v31.1.17), the licensing model has been updated as follows:
