@@ -1,0 +1,16 @@
+<div class="control-container">
+    <button id="aiAssistBtn" class="e-btn e-primary" (click)="onClick()">AI Assist</button>
+    <div id="editableText" contenteditable="true" class="editable-text">
+        <p>Hover over the microphone button to view the customized tooltip "Click to start listening".
+           While recording, the tooltip switches to "Click to stop listening".</p>
+        <p>The tooltipSettings property lets you customize the tooltip text and position for the
+           speech-to-text microphone button.</p>
+    </div>
+    <ejs-inlineaiassist id="defaultInlineAssist" #inlineAssistComponent
+        [relateTo]="'#aiAssistBtn'"
+        [responseSettings]="responseSetting"
+        [speechToTextSettings]="speechToTextSettings"
+        popupWidth="500px"
+        (promptRequest)="onPromptRequest($event)">
+    </ejs-inlineaiassist>
+</div>

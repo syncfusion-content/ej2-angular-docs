@@ -1,0 +1,14 @@
+<div class="control-container">
+    <button id="aiAssistBtn" class="e-btn e-primary" (click)="onClick()">AI Assist</button>
+    <div id="editableText" contenteditable="true" class="editable-text">
+        <p>The Inline AI Assist component integrates Speech-to-Text through the browser's Web Speech API.
+           You can use the default microphone icon to start recording, then speak to convert your voice into text prompt.</p>
+    </div>
+    <ejs-inlineaiassist id="defaultInlineAssist" #inlineAssistComponent
+        [relateTo]="'#aiAssistBtn'"
+        [responseSettings]="responseSetting"
+        [speechToTextSettings]="speechToTextSettings"
+        popupWidth="500px"
+        (promptRequest)="onPromptRequest($event)">
+    </ejs-inlineaiassist>
+</div>

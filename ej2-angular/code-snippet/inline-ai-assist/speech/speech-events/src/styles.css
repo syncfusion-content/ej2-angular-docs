@@ -1,0 +1,101 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-angular-interactive-chat/styles/tailwind3.css';
+
+.control-container {
+    width: 650px;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+#aiAssistBtn {
+    margin-bottom: 10px;
+}
+
+#aiAssistBtn .e-microphone {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.status-indicator {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.status-indicator.ready {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-indicator.recording {
+    background-color: #ffebee;
+    color: #c62828;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.transcript-display {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    min-height: 60px;
+    max-height: 120px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin: 10px 0;
+}
+
+.editable-text {
+    width: 100%;
+    min-height: 100px;
+    max-height: 240px;
+    overflow-y: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.error-message {
+    background-color: #ffebee;
+    border: 1px solid #ef5350;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.error-text {
+    color: #c62828;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 750px) {
+    .control-container {
+        width: 100%;
+    }
+}
