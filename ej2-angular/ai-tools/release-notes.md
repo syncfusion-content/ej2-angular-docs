@@ -14,6 +14,12 @@ This document provides information about the changes and new features included i
 
 ## MCP Server
 
+**(v2.0.1) - September 24, 2026**
+
+**Features**
+
+- Updated package dependencies to resolve security vulnerabilities and enhance stability.
+
 **(v2.0.0) - September 7, 2026**
 
 **Breaking Changes**
