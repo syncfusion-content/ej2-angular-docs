@@ -27,7 +27,7 @@ npm install cldr-data --save
 
 * Now use the [`loadCldr`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization#installing-cldr-data) method to load the culture specific CLDR JSON data from the installed location to `app.component.ts` file.
 
-* TimePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the TimePicker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
+* Angular TimePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the Angular TimePicker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
 
 ```typescript
 
@@ -100,7 +100,7 @@ export class AppComponent {
 
 ```
 
-The following sample demonstrate the TimePicker component in `German` culture.
+The following sample demonstrate the Angular TimePicker component in `German` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -116,9 +116,9 @@ The following sample demonstrate the TimePicker component in `German` culture.
 
 ## Right-To-Left
 
-The TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#enablertl) property to set the RTL direction.
+The Angular TimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#enablertl) property to set the RTL direction.
 
-The following code example demonstrates the TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using `L10n.load` method.
+The following code example demonstrates the Angular TimePicker component in `Arabic` culture. It also explains how to set localized text to the placeholder using `L10n.load` method.
 
 ```typescript
 
@@ -161,7 +161,7 @@ export class AppComponent {
 
 ```
 
-The following example demonstrates TimePicker in `Arabic` culture with right-to-left direction.
+The following example demonstrates Angular TimePicker in `Arabic` culture with right-to-left direction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

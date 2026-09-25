@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular MultiColumn ComboBox
 
-The MultiColumn ComboBox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular MultiColumn ComboBox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the MultiColumn ComboBox component is outlined below.
+The accessibility compliance for the Angular MultiColumn ComboBox component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the MultiColumn ComboBox component is outlined 
 
 ## WAI-ARIA attributes
 
-The following ARIA attributes are used in the MultiColumn ComboBox component:
+The following ARIA attributes are used in the Angular MultiColumn ComboBox component:
 
 | Attributes | Purpose |
 | ------------ | ----------------------- |
@@ -53,7 +53,7 @@ The following ARIA attributes are used in the MultiColumn ComboBox component:
 
 ## Keyboard interaction
 
-The following keyboard shortcuts are supported by the MultiColumn ComboBox component.
+The following keyboard shortcuts are supported by the Angular MultiColumn ComboBox component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -70,7 +70,7 @@ The following keyboard shortcuts are supported by the MultiColumn ComboBox compo
 
 ## Ensuring accessibility
 
-The MultiColumn ComboBox component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular MultiColumn ComboBox component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 ## See also
 

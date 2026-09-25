@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Popup Resizing in Angular Dropdown List
 
-You can dynamically adjust the size of the popup in the DropDownList component by using the [allowResize](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
+You can dynamically adjust the size of the popup in the Angular Dropdown List component by using the [allowResize](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
 
 The following sample illustrates the implementation of the popup resize feature.
 
@@ -25,4 +25,4 @@ The following sample illustrates the implementation of the popup resize feature.
 {% endtabs %}
   
 
-![Resizing in DropDownList Component](../images/dropdownlist-resize.gif)
+![Resizing in Angular Dropdown List Component](../images/dropdownlist-resize.gif)

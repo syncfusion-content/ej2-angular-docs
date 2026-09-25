@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # How to set the disabled state in Angular Button
 
-Button component can be enabled/disabled by giving [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/button/index-default#disabled) property. To disable Button component,
+Angular Button component can be enabled/disabled by giving [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/button/index-default#disabled) property. To disable Angular Button component,
 the `disabled` property can be set as `true`.
 
-The following example demonstrates button in `disabled` state.
+The following example demonstrates Angular Button in `disabled` state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

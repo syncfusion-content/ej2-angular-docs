@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The client side validation takes place in the browser to avoid the waiting time to receive the response from sever. It validates the form elements to provide the better feedback messages to correct the every fields before the form submission.
 
-To achieve the client side validation in a TimePicker component by using `FormValidator` function. It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
+To achieve the client side validation in a Angular TimePicker component by using `FormValidator` function. It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

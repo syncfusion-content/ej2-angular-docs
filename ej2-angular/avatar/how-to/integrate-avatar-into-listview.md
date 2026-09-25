@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to integrate avatar into ListView in Angular Avatar
 
-The Avatar component integrates with ListView to create, visually enhanced list interfaces for contact applications, user directories, and messaging platforms. This integration provides immediate visual identification of list items through profile images, initials, or icons.
+The Angular Avatar component integrates with ListView to create, visually enhanced list interfaces for contact applications, user directories, and messaging platforms. This integration provides immediate visual identification of list items through profile images, initials, or icons.
 
 The `xsmall` avatar size provides the ideal balance between visual impact and space efficiency within ListView items. This sizing ensures consistent alignment with text content and maintains the overall list structure without overwhelming the interface.
 

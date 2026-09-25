@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular ListBox
 
-To modify the ListBox appearance, you need to override the default CSS of ListBox component. Please find the list of CSS classes and its corresponding section in ListBox component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the Angular ListBox appearance, you need to override the default CSS of Angular ListBox component. Please find the list of CSS classes and its corresponding section in Angular ListBox component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 | CSS Class | Purpose of Class |
 |-----|-----|
@@ -24,7 +24,7 @@ To modify the ListBox appearance, you need to override the default CSS of ListBo
 
 ## Horizontal ListBox
 
-You can use [cssClass](https://ej2.syncfusion.com/angular/documentation/api/list-box/#cssClass) property to display the Listbox horizontally.
+You can use [cssClass](https://ej2.syncfusion.com/angular/documentation/api/list-box/#cssClass) property to display the Angular ListBox horizontally.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

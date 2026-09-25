@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Split Panes in Angular Splitter
 
-The Splitter component divides a container into resizable panes separated by draggable bars. This section covers pane orientation, layout configuration, separator customization, nested splitters, and dynamic pane manipulation.
+The Angular Splitter component divides a container into resizable panes separated by draggable bars. This section covers pane orientation, layout configuration, separator customization, nested splitters, and dynamic pane manipulation.
 
 ## Horizontal layout
 
-By default, the Splitter renders in horizontal orientation. This layout divides the container into side-by-side panes separated by a vertical separator bar (a vertical line between horizontal panes).
+By default, the Angular Splitter renders in horizontal orientation. This layout divides the container into side-by-side panes separated by a vertical separator bar (a vertical line between horizontal panes).
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -46,7 +46,7 @@ Setting the [orientation](https://ej2.syncfusion.com/angular/documentation/api/s
 
 ## Multiple panes
 
-The Splitter supports any number of panes in both `Horizontal` and `Vertical` orientations.
+The Angular Splitter supports any number of panes in both `Horizontal` and `Vertical` orientations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -81,9 +81,9 @@ By default, the pane separator is rendered with a `1px` width/height. The separa
 
 ## Nested Splitter
 
-Splitter components can be nested within panes to create complex multi-level layouts. The same `<div>` element used for both the parent pane and the nested Splitter.
+Angular Splitter components can be nested within panes to create complex multi-level layouts. The same `<div>` element used for both the parent pane and the nested Splitter.
 
-> Also you can render the nested splitter using direct child of the splitter pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
+> Also you can render the nested Angular Splitter using direct child of the splitter pane. For this, nested splitter should have `100%` width and height to match with the parent pane dimensions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

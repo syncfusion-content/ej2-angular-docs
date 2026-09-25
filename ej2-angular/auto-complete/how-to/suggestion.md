@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to show suggestion list in Angular AutoComplete
 
-The AutoComplete component supports displaying a suggestion list when focus is placed on an empty AutoComplete. The filtering and change events capture the typed and selected words, which are stored in the browser's local storage. When focus moves to the component, the focus event is used to display the stored list as suggestions.
+The Angular AutoComplete component supports displaying a suggestion list when focus is placed on an empty Angular AutoComplete. The filtering and change events capture the typed and selected words, which are stored in the browser's local storage. When focus moves to the component, the focus event is used to display the stored list as suggestions.
 
-In the following sample, the suggestion list feature is enabled for the AutoComplete.
+In the following sample, the suggestion list feature is enabled for the Angular AutoComplete.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

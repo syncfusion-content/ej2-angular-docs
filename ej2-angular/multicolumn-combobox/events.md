@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Events in Angular MultiColumn ComboBox
 
-This section describes the multicolumn combobox events that will be triggered when appropriate actions are performed. The following events are available in the multicolumn combobox component.
+This section describes the Angular Multicolumn combobox events that will be triggered when appropriate actions are performed. The following events are available in the Angular Multicolumn combobox component.
 
 ## actionBegin
 

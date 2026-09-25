@@ -62,7 +62,7 @@ When no explicit size is provided, panes automatically adjust based on available
 
 ## Fixed pane
 
-Multiple panes can be configured with fixed sizes in both horizontal and vertical orientations. However, even when all panes are assigned fixed sizes, the Splitter automatically treats the last pane as flexible to ensure layout adaptability. At least one pane must remain flexible to accommodate container changes.
+Multiple panes can be configured with fixed sizes in both horizontal and vertical orientations. However, even when all panes are assigned fixed sizes, the Angular Splitter automatically treats the last pane as flexible to ensure layout adaptability. At least one pane must remain flexible to accommodate container changes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

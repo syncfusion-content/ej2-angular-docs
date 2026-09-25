@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to render palette alone in Angular Color Picker
 
-To render only the Palette area in the ColorPicker, set the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#mode) property to `Palette` and the [`modeSwitcher`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#modeswitcher) property to `false`.
+To render only the Palette area in the Angular Color Picker, set the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#mode) property to `Palette` and the [`modeSwitcher`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#modeswitcher) property to `false`.
 
 In the following sample, the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#showbuttons) property is set to `false` to hide the control buttons, displaying only the palette area.
 

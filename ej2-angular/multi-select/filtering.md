@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular MultiSelect Dropdown
 
-The MultiSelect component has built-in support for filtering data items when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#allowfiltering) is enabled. The filter operation starts as soon as you type in the MultiSelect input.
+The  Angular MultiSelect Dropdown component has built-in support for filtering data items when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#allowfiltering) is enabled. The filter operation starts as soon as you type in the  Angular MultiSelect Dropdown input.
 
-Populate the popup with filtered items by querying the data source and passing the result to the MultiSelect via the [updateData](https://ej2.syncfusion.com/angular/documentation/api/multi-select/filteringEventArgs#updatedata) method, inside the [filtering](https://ej2.syncfusion.com/angular/documentation/api/multi-select#filtering) event.
+Populate the popup with filtered items by querying the data source and passing the result to the  Angular MultiSelect Dropdown via the [updateData](https://ej2.syncfusion.com/angular/documentation/api/multi-select/filteringEventArgs#updatedata) method, inside the [filtering](https://ej2.syncfusion.com/angular/documentation/api/multi-select#filtering) event.
 
-The following sample shows how to query the data source and pass the filtered data to the MultiSelect through the [updateData](https://ej2.syncfusion.com/angular/documentation/api/multi-select/filteringEventArgs#updatedata) method in the [filtering](https://ej2.syncfusion.com/angular/documentation/api/multi-select#filtering) event.
+The following sample shows how to query the data source and pass the filtered data to the  Angular MultiSelect Dropdown through the [updateData](https://ej2.syncfusion.com/angular/documentation/api/multi-select/filteringEventArgs#updatedata) method in the [filtering](https://ej2.syncfusion.com/angular/documentation/api/multi-select#filtering) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -30,7 +30,7 @@ The following sample shows how to query the data source and pass the filtered da
 
 ## Limit the minimum filter character
 
-When filtering list items, you can set the minimum character count that triggers a remote request and fetches filtered data for the MultiSelect. This is done by manual validation within the [filtering](https://ej2.syncfusion.com/angular/documentation/api/multi-select#filtering) event handler.
+When filtering list items, you can set the minimum character count that triggers a remote request and fetches filtered data for the  Angular MultiSelect Dropdown. This is done by manual validation within the [filtering](https://ej2.syncfusion.com/angular/documentation/api/multi-select#filtering) event handler.
 
 In the following example, the remote request does not fetch the search data until the search key contains three characters.
 
@@ -90,7 +90,7 @@ The following example shows how to perform case-sensitive filter.
 
 ## Diacritics Filtering
 
-MultiSelect supports diacritics filtering, which ignores the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results in lists that contain international characters when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/multi-select#ignoreaccent) property is enabled.
+ Angular MultiSelect Dropdown supports diacritics filtering, which ignores the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results in lists that contain international characters when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/multi-select#ignoreaccent) property is enabled.
 
 In the following sample, data with diacritics is bound as the `dataSource` for the MultiSelect.
 

@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Dashboard Layout
 
-The Dashboard Layout component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
+The Angular Dashboard Layout component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
-The Dashboard Layout component provides an accessible interface for organizing and managing dashboard panels, ensuring that users with disabilities can effectively interact with and navigate the layout structure.
+The Angular Dashboard Layout component provides an accessible interface for organizing and managing dashboard panels, ensuring that users with disabilities can effectively interact with and navigate the layout structure.
 
 ## Accessibility compliance
 
-The accessibility compliance for the Dashboard Layout component is outlined below.
+The accessibility compliance for the Angular Dashboard Layout component is outlined below.
 
 <style>
     .post .post-content img {
@@ -45,24 +45,24 @@ The accessibility compliance for the Dashboard Layout component is outlined belo
 
 ## WAI-ARIA attributes
 
-The Dashboard Layout component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg) patterns to meet accessibility standards. The following ARIA attributes are used in the Dashboard Layout component:
+The Angular Dashboard Layout component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg) patterns to meet accessibility standards. The following ARIA attributes are used in the Angular Dashboard Layout component:
 
 | **Attributes** | **Purpose** |
 | --- | --- |
-| `role=list` | Indicates the role as a list for the Dashboard Layout element. |
+| `role=list` | Indicates the role as a list for the Angular Dashboard Layout element. |
 | `role=listitem` | Indicates the role as a listitem for the Dashboard panels. |
 | `role=presentation` | Indicates the role as a presentation for the table when the `showGridLines` property is enabled. |
 | `aria-grabbed` | When the panel is chosen for dragging, the aria-grabbed attribute is set to "true". If it's set to "false", the element can be grabbed for drag-and-drop, but it won't be actively held. |
 
 ## Keyboard interaction
 
-Keyboard support is not applicable for the Dashboard Layout.
+Keyboard support is not applicable for the Angular Dashboard Layout.
 
 ## Accessibility testing
 
-The Dashboard Layout component's accessibility levels are validated through automated testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Dashboard Layout component's accessibility levels are validated through automated testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Dashboard Layout component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/dashboard-layout.html) in a new window to evaluate the accessibility of the Dashboard Layout component with accessibility tools.
+The accessibility compliance of the Angular Dashboard Layout component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/dashboard-layout.html) in a new window to evaluate the accessibility of the Angular Dashboard Layout component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/dashboard-layout.html" %}
 

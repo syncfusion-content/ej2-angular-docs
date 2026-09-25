@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Customization in Angular DateTime Picker
 
-The DateTimePicker is available for UI customization that can be achieved by using available properties and events in the component.
+The Angular DateTime Picker is available for UI customization that can be achieved by using available properties and events in the component.
 
 ## Day and Time Cell format
 
-The DateTimePicker is available for UI customization based on your application requirements.
+The Angular DateTime Picker is available for UI customization based on your application requirements.
 It can be achieved by using [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker/renderDayCellEventArgs#renderdaycelleventargs) event that provides an option to customize each day cell on rendering.
 
 The following example disables the weekends of every month by using `renderDayCell` event.
@@ -49,5 +49,5 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 
 ## See Also
 
-* [How to disable the DateTimePicker component](./how-to/disable-placeholder-readonly)
-* [How to customize the DateTimePicker day header](./how-to/customize-the-datetimepicker-day-header)
+* [How to disable the Angular DateTime Picker component](./how-to/disable-placeholder-readonly)
+* [How to customize the Angular DateTime Picker day header](./how-to/customize-the-datetimepicker-day-header)

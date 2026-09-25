@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Disabled Items in Angular Dropdown List
 
-The DropDownList component allows you to disable specific items to prevent them from being selected. The disabled state of each list item can be defined by mapping a field from the data source to the [fields.disabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#fields) property. Once an item is disabled, it cannot be selected as a value for the component.
+The Angular Dropdown List component allows you to disable specific items to prevent them from being selected. The disabled state of each list item can be defined by mapping a field from the data source to the [fields.disabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#fields) property. Once an item is disabled, it cannot be selected as a value for the component.
 
 In the following sample, certain states are disabled based on the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#disabled) field in the data source.
 
@@ -53,7 +53,7 @@ import { Component, ViewChild } from '@angular/core';
     ],
     standalone: true,
     selector: 'app-root',
-    // specifies the template string for the DropDownList component
+    // specifies the template string for the Angular Dropdown List component
     template: `<ejs-dropdownlist id='dropdownlistelement' #samples [dataSource]='tagData' [fields]='fields' [placeholder]='text' (created)="onCreated()"></ejs-dropdownlist>`
 })
 export class AppComponent {
@@ -76,7 +76,7 @@ export class AppComponent {
     ];
     // maps the appropriate column to fields property
     public fields: Object = { value: 'Text', disabled: 'State' };
-    //set the placeholder to DropDownList input
+    //set the placeholder to Angular Dropdown List input
     public text: string = "Select Tags";
     public onCreated() {
        this.status?.disableItem('Crisis')
@@ -87,6 +87,6 @@ export class AppComponent {
 
 ## Enabled
 
-To disable the entire DropDownList component, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#enabled) property to `false`.
+To disable the entire Angular Dropdown List component, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#enabled) property to `false`.
 
-![Disabled DropDownList Component](../images/dropdownlist-disable.png)
+![Disabled Angular Dropdown List Component](../images/dropdownlist-disable.png)

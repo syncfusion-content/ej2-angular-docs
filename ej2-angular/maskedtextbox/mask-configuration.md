@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mask Configuration in Angular MaskedTextBox | Syncfusion
-description: Configure the Syncfusion Angular MaskedTextBox mask with standard elements, custom characters, regular expressions, and a customizable prompt character.
+title: Mask Configuration in Angular Input Mask | Syncfusion
+description: Configure the Syncfusion Angular Input Mask with standard elements, custom characters, regular expressions, and a customizable prompt character.
 platform: ej2-angular
 control: Mask configuration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mask Configuration in Angular MaskedTextBox
+# Mask Configuration in Angular Input Mask
 
 The mask is a combination of standard and custom mask elements that validates the user input based on its behavior.
 
@@ -35,7 +35,7 @@ The mask can be formed by combining any one or more of these mask elements.
 | > | Shift up (convert to uppercase). |
 | &#124; | Disable previous shift up or down. |
 | \\\\ | Escape character (literal mask character). |
-| All other characters | Literal characters displayed as-is in the MaskedTextBox. |
+| All other characters | Literal characters displayed as-is in the Angular Input Mask. |
 
 The following example demonstrates the usage of standard mask elements.
 
@@ -94,8 +94,8 @@ In the following example, regular expression has been set for each input places.
 
 ## Prompt character
 
-The Prompt character is a prompting symbol in the MaskedTextBox for the mask elements. The symbol is used to show the input positions in the MaskedTextBox.
-You can customize the prompt character of MaskedTextBox by using the [`promptChar`](https://ej2.syncfusion.com/angular/documentation/api/maskedtextbox#promptchar) property.
+The Prompt character is a prompting symbol in the Angular Input Mask for the mask elements. The symbol is used to show the input positions in the Angular Input Mask.
+You can customize the prompt character of Angular Input Mask by using the [`promptChar`](https://ej2.syncfusion.com/angular/documentation/api/maskedtextbox#promptchar) property.
 
 The following example demonstrates the MaskedTextBox with customized prompt character as `*`.
 

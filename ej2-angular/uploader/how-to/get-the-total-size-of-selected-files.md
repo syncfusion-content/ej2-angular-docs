@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Get total size of selected files in Angular Uploader | Syncfusion
-description: Calculate the total size of selected files in the Angular Uploader using the selected event to sum file sizes before submitting the upload to the server.
+title: Get total size of selected files in Angular File Upload | Syncfusion
+description: Calculate the total size of selected files in the Angular File Upload using the selected event to sum file sizes before submitting the upload to the server.
 platform: ej2-angular
 control: Get the total size of selected files 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to get total size of selected files in Angular Uploader
+# How to get total size of selected files in Angular File Upload
 
 You can calculate the total size of selected files before uploading them to the server.
 This functionality is achieved by using the `selected` event, which fires when files are selected. Refer to the following example to implement total file size calculation.

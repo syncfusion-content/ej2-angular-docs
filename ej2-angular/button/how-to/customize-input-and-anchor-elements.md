@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize input and anchor elements in Angular Button
 
-You can customize the appearance of the input and anchor elements using predefined styles through the class property. In the following code snippet, the input element is customized as a link button by setting the `e-btn e-link` class, and the anchor element is customized as a primary button by setting the `e-btn e-primary` class.
+You can customize the appearance of the input and anchor elements using predefined styles through the class property. In the following code snippet, the input element is customized as a link Angular Button by setting the `e-btn e-link` class, and the anchor element is customized as a primary button by setting the `e-btn e-primary` class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

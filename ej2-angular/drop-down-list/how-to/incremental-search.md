@@ -10,6 +10,6 @@ domainurl: ##DomainURL##
 
 # How to do incremental search in Angular Dropdown List
 
-DropDownList supports an incremental search, by default. You can search for a list item by focusing the DropDownList and typing characters in it. The closest matching items are selected sequentially.
+Angular Dropdown List supports an incremental search, by default. You can search for a list item by focusing the Angular Dropdown List and typing characters in it. The closest matching items are selected sequentially.
 
 > If the same key is searched again, the next matched item is selected.

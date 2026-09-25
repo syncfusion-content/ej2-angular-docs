@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Events in Angular OTP Input
 
-The OTP Input component provides events that fire during user interactions and state changes. The following events are available to customize component behavior.
+The Angular OTP Input component provides events that fire during user interactions and state changes. The following events are available to customize component behavior.
 
 ## created
 
-The OTP Input component triggers the [created](https://ej2.syncfusion.com/angular/documentation/api/otp-input#created) event when the component rendering is completed.
+The Angular OTP Input component triggers the [created](https://ej2.syncfusion.com/angular/documentation/api/otp-input#created) event when the component rendering is completed.
 
 ```typescript
 
@@ -22,7 +22,7 @@ import { Component } from '@angular/core';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render OTP Input component. -->
+  template: `<!-- To Render Angular OTP Input component. -->
             <div class="wrap">
                 <div id='otp-container' style="width: 350px;">
                     <div ejs-otpinput id='otp_default' (created)="created()"></div>
@@ -40,7 +40,7 @@ export class AppComponent {
 
 ## focus 
 
-The OTP Input component triggers the [focus](https://ej2.syncfusion.com/angular/documentation/api/otp-input#focus) event when an input field receives focus. Use this event to perform actions when the user begins entering OTP values. The [OtpFocusEventArgs](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpFocusEventArgs/) passed as an event argument provides details about the focused input field.
+The Angular OTP Input component triggers the [focus](https://ej2.syncfusion.com/angular/documentation/api/otp-input#focus) event when an input field receives focus. Use this event to perform actions when the user begins entering OTP values. The [OtpFocusEventArgs](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpFocusEventArgs/) passed as an event argument provides details about the focused input field.
 
 ```typescript
 
@@ -49,7 +49,7 @@ import { OtpFocusEventArgs } from '@syncfusion/ej2-angular-inputs';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render OTP Input component. -->
+  template: `<!-- To Render Angular OTP Input component. -->
             <div class="wrap">
                 <div id='otp-container' style="width: 350px;">
                     <div ejs-otpinput id='otp_default' (focus)="focus($event)"></div>
@@ -67,7 +67,7 @@ export class AppComponent {
 
 ## blur
 
-The OTP Input component triggers the [blur](https://ej2.syncfusion.com/angular/documentation/api/otp-input#blur) event when an input field loses focus. Use this event to validate partial entries or trigger cleanup logic. The [OtpFocusEventArgs](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpFocusEventArgs/) passed as an event argument provides details about the unfocused input field.
+The Angular OTP Input component triggers the [blur](https://ej2.syncfusion.com/angular/documentation/api/otp-input#blur) event when an input field loses focus. Use this event to validate partial entries or trigger cleanup logic. The [OtpFocusEventArgs](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpFocusEventArgs/) passed as an event argument provides details about the unfocused input field.
 
 ```typescript
 
@@ -76,7 +76,7 @@ import { OtpFocusEventArgs } from '@syncfusion/ej2-angular-inputs';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render OTP Input component. -->
+  template: `<!-- To Render Angular OTP Input component. -->
             <div class="wrap">
                 <div id='otp-container' style="width: 350px;">
                     <div ejs-otpinput id='otp_default' (blur)="blur($event)"></div>
@@ -94,7 +94,7 @@ export class AppComponent {
 
 ## input
 
-The OTP Input component triggers the [input](https://ej2.syncfusion.com/angular/documentation/api/otp-input#input) event when the value of each OTP Input is changed. The [OtpInputEventArgs](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputEventArgs/) passed as an event argument provides the details of the each value is changed.
+The Angular OTP Input component triggers the [input](https://ej2.syncfusion.com/angular/documentation/api/otp-input#input) event when the value of each OTP Input is changed. The [OtpInputEventArgs](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputEventArgs/) passed as an event argument provides the details of the each value is changed.
 
 ```typescript
 
@@ -103,7 +103,7 @@ import { OtpInputEventArgs } from '@syncfusion/ej2-angular-inputs';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render OTP Input component. -->
+  template: `<!-- To Render Angular OTP Input component. -->
             <div class="wrap">
                 <div id='otp-container' style="width: 350px;">
                     <div ejs-otpinput id='otp_default' (input)="input($event)"></div>
@@ -121,7 +121,7 @@ export class AppComponent {
 
 ## valueChanged
 
-The OTP Input component triggers the [valueChanged](https://ej2.syncfusion.com/angular/documentation/api/otp-input#valuechanged) event when the entire OTP value is complete (matches the configured input length). The [OtpChangedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpChangedEventArgs/) passed as an event argument provides details about the completed OTP value.
+The Angular OTP Input component triggers the [valueChanged](https://ej2.syncfusion.com/angular/documentation/api/otp-input#valuechanged) event when the entire OTP value is complete (matches the configured input length). The [OtpChangedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpChangedEventArgs/) passed as an event argument provides details about the completed OTP value.
 
 ```typescript
 
@@ -130,7 +130,7 @@ import { OtpChangedEventArgs } from '@syncfusion/ej2-angular-inputs';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render OTP Input component. -->
+  template: `<!-- To Render Angular OTP Input component. -->
             <div class="wrap">
                 <div id='otp-container' style="width: 350px;">
                     <div ejs-otpinput id='otp_default' (valueChanged)="valueChanged($event)"></div>
@@ -146,7 +146,7 @@ export class AppComponent {
 
 ```
 
-Below example demonstrates the valueChanged event of the OTP Input component.
+Below example demonstrates the valueChanged event of the Angular OTP Input component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

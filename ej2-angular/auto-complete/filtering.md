@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular AutoComplete
 
-The AutoComplete component has built-in support for filtering data items. The filter operation starts as soon as you type in the component.
+The Angular AutoComplete component has built-in support for filtering data items. The filter operation starts as soon as you type in the component.
 
 ## Change the filter type
 
@@ -38,7 +38,7 @@ The following example filters the data with the `StartsWith` type.
 
 ## Filter item count
 
-Specify the number of suggestion items to display using the [`suggestionCount`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#suggestioncount) property of the AutoComplete.
+Specify the number of suggestion items to display using the [`suggestionCount`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#suggestioncount) property of the Angular AutoComplete.
 
 The following example restricts the suggestion list to 5 items.
 
@@ -56,7 +56,7 @@ The following example restricts the suggestion list to 5 items.
 
 ## Limit the minimum filter character
 
-You can set the minimum number of characters required to filter the data on the AutoComplete. This is done by setting the [`minLength`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#minlength) property on the AutoComplete.
+You can set the minimum number of characters required to filter the data on the Angular AutoComplete. This is done by setting the [`minLength`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#minlength) property on the Angular AutoComplete.
 
 In the following example, the remote request does not fetch search data until the search key contains three characters.
 
@@ -74,7 +74,7 @@ In the following example, the remote request does not fetch search data until th
 
 ## Case sensitive filtering
 
-Data items can be filtered with or without case sensitivity by setting the [`ignoreCase`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#ignorecase) property of the AutoComplete.
+Data items can be filtered with or without case sensitivity by setting the [`ignoreCase`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#ignorecase) property of the Angular AutoComplete.
 
 The following sample shows how to filter the data with case sensitivity.
 
@@ -92,9 +92,9 @@ The following sample shows how to filter the data with case sensitivity.
 
 ## Diacritics Filtering
 
-The AutoComplete component supports diacritics filtering, which ignores the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results in lists that contain international characters when the [`ignoreAccent`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#ignoreaccent) property is enabled.
+The Angular AutoComplete component supports diacritics filtering, which ignores the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results in lists that contain international characters when the [`ignoreAccent`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#ignoreaccent) property is enabled.
 
-In the following sample, data with diacritics is bound as the `dataSource` for the AutoComplete.
+In the following sample, data with diacritics is bound as the `dataSource` for the Angular AutoComplete.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

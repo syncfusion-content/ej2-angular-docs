@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to disable edit mode in Angular In-place Editor
 
-The edit mode of **In-place Editor** can be disabled by setting the [disabled](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#disabled) property value to `true`. In the following sample, when check or uncheck the checkbox, **In-place Editor** component will disable or enable the edit mode.
+The edit mode of **Angular In-place Editor** can be disabled by setting the [disabled](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#disabled) property value to `true`. In the following sample, when check or uncheck the checkbox, **Angular In-place Editor** component will disable or enable the edit mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

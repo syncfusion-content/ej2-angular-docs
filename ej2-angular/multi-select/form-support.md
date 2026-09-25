@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Form Support in Angular MultiSelect Dropdown | Syncfusion
-description: Learn here all about Form support in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Form support in Syncfusion  Angular MultiSelect Dropdown component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Form support 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Form Support in Angular MultiSelect Dropdown
 
-The MultiSelect component supports both reactive and template-driven form-building technologies, enabling seamless integration with Angular's form handling mechanisms.
+The  Angular MultiSelect Dropdown component supports both reactive and template-driven form-building technologies, enabling seamless integration with Angular's form handling mechanisms.
 
 ## Template-Driven Forms
 
@@ -19,7 +19,7 @@ To enable template-driven forms, import the FormsModule into the corresponding a
 
 For more details about template-driven forms, refer to: <https://angular.io/guide/forms#template-driven-forms>.
 
-Add the `name` attribute to the MultiSelect element to identify it within the form. To register a MultiSelect element with `ngForm`, provide the `ngModel` directive so the `FormsModule` automatically detects the MultiSelect as a form control. The MultiSelect value is selected based on the `ngModel` value, enabling two-way data binding.
+Add the `name` attribute to the  Angular MultiSelect Dropdown element to identify it within the form. To register a  Angular MultiSelect Dropdown element with `ngForm`, provide the `ngModel` directive so the `FormsModule` automatically detects the  Angular MultiSelect Dropdown as a form control. The  Angular MultiSelect Dropdown value is selected based on the `ngModel` value, enabling two-way data binding.
 
 The following example demonstrates how to achieve two-way data binding:
 
@@ -43,7 +43,7 @@ For more details about reactive forms, refer to: <https://angular.io/guide/react
 
 For reactive forms, import `ReactiveFormsModule`. Additionally, import `FormGroup` and `FormControl` into the app component. `FormGroup` represents the `formGroupName` for the form, and `FormControl` represents the `formControlName` for form controls.
 
-Declare the `formControlName` for the MultiSelect as usual, then create a value object for the `FormGroup` where each value represents the default value of the form control.
+Declare the `formControlName` for the  Angular MultiSelect Dropdown as usual, then create a value object for the `FormGroup` where each value represents the default value of the form control.
 
 The following example demonstrates how to use reactive forms:
 

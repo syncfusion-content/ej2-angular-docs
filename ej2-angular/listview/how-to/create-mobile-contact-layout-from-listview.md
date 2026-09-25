@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Create mobile contact layout in Angular ListView 
 
-You can create a professional mobile contact directory interface using the ListView component's [template](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property combined with the Syncfusion Avatar component. This approach provides a native mobile experience with contact photos, names, and phone numbers displayed in an organized, scrollable list format.
+You can create a professional mobile contact directory interface using the Angular ListView component's [template](https://ej2.syncfusion.com/angular/documentation/api/list-view#template) property combined with the Syncfusion Avatar component. This approach provides a native mobile experience with contact photos, names, and phone numbers displayed in an organized, scrollable list format.
 
 Follow these sequential steps to implement a mobile contact layout:
 
 ## Step 1: Prepare the contact data structure
 
-Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource) containing contact information including avatar data. Configure avatar data using either text initials for generated avatars or CSS class names for custom contact images:
+Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/api/list-view#datasource) containing contact information including avatar data. Configure avatar data using either text initials for generated avatars or CSS class names for custom contact images:
 
 ```typescript
 
@@ -58,7 +58,7 @@ This template structure creates a multi-line list item with avatar positioning o
 
 ## Step 3: Enable sorting and header display
 
-Configure the ListView for optimal contact browsing by sorting contact names alphabetically using the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property. Enable the [`showHeader`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showheader) property and set the [`headerTitle`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertitle) to "Contacts" for clear navigation context.
+Configure the Angular ListView for optimal contact browsing by sorting contact names alphabetically using the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view#sortorder) property. Enable the [`showHeader`](https://ej2.syncfusion.com/angular/documentation/api/list-view#showheader) property and set the [`headerTitle`](https://ej2.syncfusion.com/angular/documentation/api/list-view#headertitle) to "Contacts" for clear navigation context.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

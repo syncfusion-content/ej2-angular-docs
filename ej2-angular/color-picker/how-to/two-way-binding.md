@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to use two-way binding in Angular Color Picker
 
-The ColorPicker component supports two-way property binding, allowing the color value to synchronize between the ColorPicker and other components in real time.
+The Angular Color Picker component supports two-way property binding, allowing the color value to synchronize between the Angular Color Picker and other components in real time.
 
 ## Implementing two-way binding
 
-* Create a [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started#getting-started) component and bind the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property using two-way binding as shown in the following code snippet.
+* Create a [Angular Color Picker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started#getting-started) component and bind the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property using two-way binding as shown in the following code snippet.
 
   ```
 
@@ -30,9 +30,9 @@ The ColorPicker component supports two-way property binding, allowing the color 
 
   ```
 
-* Use the same variable name in both the ColorPicker and text input. This synchronizes the value: changing the color in the ColorPicker updates the text input, and editing the text input updates the ColorPicker.
+* Use the same variable name in both the Angular Color Picker and text input. This synchronizes the value: changing the color in the Angular Color Picker updates the text input, and editing the text input updates the Angular Color Picker.
 
-* Initialize the variable value in the component file. This value is bound to both the ColorPicker and text input. Any change to either component automatically updates the other.
+* Initialize the variable value in the component file. This value is bound to both the Angular Color Picker and text input. Any change to either component automatically updates the other.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

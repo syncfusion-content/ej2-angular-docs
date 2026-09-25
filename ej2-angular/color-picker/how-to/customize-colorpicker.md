@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Custom palette
 
-By default, the ColorPicker palette displays a set of predefined colors. To load custom colors, specify them in the [`presetColors`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/index-default#presetcolors) property. To apply custom styling to palette tiles, use the [`BeforeTileRender`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/index-default#beforetilerender) event to add custom CSS classes.
+By default, the Angular Color Picker palette displays a set of predefined colors. To load custom colors, specify them in the [`presetColors`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/index-default#presetcolors) property. To apply custom styling to palette tiles, use the [`BeforeTileRender`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/index-default#beforetilerender) event to add custom CSS classes.
 
 The following sample demonstrates the above functionalities.
 
@@ -30,9 +30,9 @@ The following sample demonstrates the above functionalities.
 
 ## Hide input area from picker
 
-By default, the input area will be rendered in ColorPicker. To hide the input area from it, add `e-hide-value` class to ColorPicker using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/index-default#cssclass) property.
+By default, the input area will be rendered in Angular Color Picker. To hide the input area from it, add `e-hide-value` class to Angular Color Picker using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/index-default#cssclass) property.
 
-In the following sample, the ColorPicker is rendered without input area.
+In the following sample, the Angular Color Picker is rendered without input area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -50,7 +50,7 @@ In the following sample, the ColorPicker is rendered without input area.
 
 The ColorPicker handle shape and appearance can be customized using CSS or custom SVG elements. In the following sample, the handle is styled with an SVG icon. The same approach can be applied to create other custom handle designs based on specific requirements.
 
-The following sample show the customized color picker handle.
+The following sample show the customized Angular Color Picker handle.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -66,7 +66,7 @@ The following sample show the customized color picker handle.
 
 ## Custom primary button
 
-By default, the ColorPicker's primary button displays the selected color. You can customize the button to display an icon instead.
+By default, the Angular Color Picker's primary button displays the selected color. You can customize the button to display an icon instead.
 
 In the following sample, a picker icon is added to the primary button. The [`change`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/index-default#change) event updates the selected color in the bottom portion of the icon.
 
@@ -86,7 +86,7 @@ In the following sample, a picker icon is added to the primary button. The [`cha
 
 ## Display hex code in input
 
-The ColorPicker's input element can be displayed in place of the primary button, allowing direct visualization of the selected color's hex code. The input automatically updates with the applied color value.
+The Angular Color Picker's input element can be displayed in place of the primary button, allowing direct visualization of the selected color's hex code. The input automatically updates with the applied color value.
 
 The following sample shows the color picker with input.
 
@@ -104,7 +104,7 @@ The following sample shows the color picker with input.
 
 ## Custom UI
 
-The ColorPicker UI can be customized extensively to match specific design requirements. The following sample demonstrates an Excel-like UI customization using the SplitButton and Dialog components. When the "More colors" option is selected from the palette, a dialog opens with the ColorPicker component.
+The Angular Color Picker UI can be customized extensively to match specific design requirements. The following sample demonstrates an Excel-like UI customization using the SplitButton and Dialog components. When the "More colors" option is selected from the palette, a dialog opens with the Angular Color Picker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

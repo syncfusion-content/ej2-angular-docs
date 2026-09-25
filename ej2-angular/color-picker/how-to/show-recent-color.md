@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to show recent color in Angular Color Picker
 
-The `showRecentColors` property enables the display of recently selected colors in the ColorPicker when in palette mode. This feature improves user workflow by providing quick access to previously used colors without searching through the entire palette.
+The `showRecentColors` property enables the display of recently selected colors in the Angular Color Picker when in palette mode. This feature improves user workflow by providing quick access to previously used colors without searching through the entire palette.
 
 >Note: The [`showRecentColors`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/index-default#showRecentColors) feature displays up to 10 recent colors as tiles and is available only in `palette` mode.
 

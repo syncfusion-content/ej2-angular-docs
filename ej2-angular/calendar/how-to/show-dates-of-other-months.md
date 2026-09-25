@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to show dates of other months in Angular Calendar
 
-By default, dates that belong to the previous or next month are hidden in the Calendar view. You can display these leading and trailing dates by overriding the default Calendar styles.
+By default, dates that belong to the previous or next month are hidden in the Angular Calendar view. You can display these leading and trailing dates by overriding the default Angular Calendar styles.
 
 The following CSS styles make the dates from adjacent months visible and enable interaction with those dates.
 

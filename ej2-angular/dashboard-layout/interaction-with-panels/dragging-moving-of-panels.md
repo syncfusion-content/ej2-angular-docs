@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Drag and Drop in Angular Dashboard Layout
 
-The Dashboard Layout component provides dragging functionality to reorder panels within the layout. While dragging a panel, a holder is highlighted beneath the panel indicating where the panel will be positioned upon release. This visual feedback allows users to determine whether to place the panel in the current position or revert to its previous position without disrupting the layout.
+The Angular Dashboard Layout component provides dragging functionality to reorder panels within the layout. While dragging a panel, a holder is highlighted beneath the panel indicating where the panel will be positioned upon release. This visual feedback allows users to determine whether to place the panel in the current position or revert to its previous position without disrupting the layout.
 
 When one or more panels collide during dragging, the colliding panels are automatically pushed in the direction where space is available—left, right, top, or bottom. The position changes of these collided panels are updated dynamically during the drag operation, allowing users to determine the optimal placement for the panel being dragged.
 
-The Dashboard Layout triggers the following events during panel dragging operations:
+The Angular Dashboard Layout triggers the following events during panel dragging operations:
 
 * [dragStart](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#dragstart) - Triggers when panel drag starts
 * [drag](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#drag) - Triggers when panel is being dragged
@@ -62,9 +62,9 @@ The following sample demonstrates customizing the dragging handler of panels, wh
 
 ## Disabling Panel Dragging
 
-By default, panel dragging is enabled in the Dashboard Layout. The dragging functionality can be disabled using the [allowDragging](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#allowdragging) API. Setting [allowDragging](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#allowdragging) to false disables the dragging functionality in Dashboard Layout.
+By default, panel dragging is enabled in the Angular Dashboard Layout. The dragging functionality can be disabled using the [allowDragging](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#allowdragging) API. Setting [allowDragging](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#allowdragging) to false disables the dragging functionality in Angular Dashboard Layout.
 
-The following sample demonstrates a Dashboard Layout with dragging support disabled.
+The following sample demonstrates a Angular Dashboard Layout with dragging support disabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

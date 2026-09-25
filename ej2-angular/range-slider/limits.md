@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Limits in Angular Range Slider | Syncfusion
-description: Restrict Angular Range Slider handle movement using the limits object to set minStart, minEnd, maxStart, maxEnd, and lock individual handles.
+title: Limits in Angular Slider | Syncfusion
+description: Restrict Angular Slider handle movement using the limits object to set minStart, minEnd, maxStart, maxEnd, and lock individual handles.
 platform: ej2-angular
-control: Range Slider 
+control: Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Limits in Angular Range Slider
+# Limits in Angular Slider
 
 The [`limits`](https://ej2.syncfusion.com/angular/documentation/api/slider/#limits) property restricts slider thumb movement within specified boundaries. Use limits when certain value ranges would negatively impact your process or product, or when you need to lock specific handles in place.
 
@@ -22,9 +22,9 @@ The following are the six options in the slider's limits object. Each API in the
 * [`startHandleFixed`](https://ej2.syncfusion.com/angular/documentation/api/slider/limitDataModel/#starthandlefixed): Locks the first handle.
 * [`endHandleFixed`](https://ej2.syncfusion.com/angular/documentation/api/slider/limitDataModel/#endhandlefixed): Locks the second handle.
 
-## Default and MinRange Slider limits
+## Default and MinRange Angular Slider limits
 
-The Default and MinRange Slider types have a single handle, so only [`minStart`](https://ej2.syncfusion.com/angular/documentation/api/slider/limitDataModel/#minstart), [`minEnd`](https://ej2.syncfusion.com/angular/documentation/api/slider/limitDataModel/#minend), and [`startHandleFixed`](https://ej2.syncfusion.com/angular/documentation/api/slider/limitDataModel/#starthandlefixed) options apply. When limits are enabled, the restricted area appears darkened, making the allowed and restricted zones visually distinct.
+The Default and MinRange Angular Slider types have a single handle, so only [`minStart`](https://ej2.syncfusion.com/angular/documentation/api/slider/limitDataModel/#minstart), [`minEnd`](https://ej2.syncfusion.com/angular/documentation/api/slider/limitDataModel/#minend), and [`startHandleFixed`](https://ej2.syncfusion.com/angular/documentation/api/slider/limitDataModel/#starthandlefixed) options apply. When limits are enabled, the restricted area appears darkened, making the allowed and restricted zones visually distinct.
 
 Refer to the following snippet to enable the limits in the Slider.
 
@@ -52,7 +52,7 @@ Refer to the following snippet to enable the limits in the Slider.
 
 ## Range Slider limits
 
-In the Range Slider, both handles can be restricted and locked from the limit's object. In this sample, the first handle is limited between 10 and 40, and the second handle is limited between 60 and 90.
+In the Angular Slider, both handles can be restricted and locked from the limit's object. In this sample, the first handle is limited between 10 and 40, and the second handle is limited between 60 and 90.
 
 ```typescript
 

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: How to check if Uploader has file input | Syncfusion
-description: Require at least one file in the Angular Uploader before form submission by adding the HTML required attribute and a data-required-message for validation.
+title: How to check if Angular File Upload has file input | Syncfusion
+description: Require at least one file in the Angular File Upload before form submission by adding the HTML required attribute and a data-required-message for validation.
 platform: ej2-angular
 control: Determine whether uploader has file input 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to check if Uploader has file input
+# How to check if Angular File Upload has file input
 
-By setting the **required** attribute on the uploader input element, you can validate that the file input contains a value before submission.
-In the following example, the **required** attribute is applied to the uploader input element, and a validation failure message is displayed using the `data-required-message` attribute.
+By setting the **required** attribute on the Angular File Upload input element, you can validate that the file input contains a value before submission.
+In the following example, the **required** attribute is applied to the Angular File Upload input element, and a validation failure message is displayed using the `data-required-message` attribute.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

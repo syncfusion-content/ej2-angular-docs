@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # User Interaction in Angular Signature
 
-The Signature component supports the following user interactions to enhance the signing experience:
+The Angular Signature component supports the following user interactions to enhance the signing experience:
 
 * **Undo and Redo** - Navigate through signature history
 * **Clear** - Erase the signature
@@ -19,7 +19,7 @@ The Signature component supports the following user interactions to enhance the 
 
 ## Undo
 
-The Signature component maintains a history of actions (snapshots) to support undo/redo functionality. Use the [`undo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#undo) method to revert the last action by moving to the previous snapshot. Check if undo is available using [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canundo) before enabling the undo button.
+The Angular Signature component maintains a history of actions (snapshots) to support undo/redo functionality. Use the [`undo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#undo) method to revert the last action by moving to the previous snapshot. Check if undo is available using [`canUndo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canundo) before enabling the undo button.
 
 Use the [`redo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#redo) method to repeat the last undone action by moving to the next snapshot. Check if redo is available using [`canRedo`](https://ej2.syncfusion.com/angular/documentation/api/signature/#canredo) before enabling the redo button.
 

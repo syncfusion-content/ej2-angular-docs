@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize the appearance of a switch in Angular Toggle Switch Button
 
-You can customize the appearance of the Switch component using the CSS rules. Define your own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/switch#cssClass) property.
+You can customize the appearance of the Angular Toggle Switch Button component using the CSS rules. Define your own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/switch#cssClass) property.
 
 ## Customize Switch bar and handle
 
@@ -31,9 +31,9 @@ Switch bar and handle can be customized as per requirement using CSS rules. Swit
   
 {% previewsample "page.domainurl/samples/switch/how-to-cs1" %}
 
-## Color the Switch
+## Color the Angular Toggle Switch Button
 
-Switch colors can be customized as per the requirement using CSS rules. Switch bar and handle colors customized using `cssClass` property. In the following sample, the Switch bar (`e-switch-inner`) element background and border colors were changed from default colors.
+Angular Toggle Switch Button colors can be customized as per the requirement using CSS rules. Switch bar and handle colors customized using `cssClass` property. In the following sample, the Switch bar (`e-switch-inner`) element background and border colors were changed from default colors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

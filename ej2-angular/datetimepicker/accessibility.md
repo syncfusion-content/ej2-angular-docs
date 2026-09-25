@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular DateTime Picker
 
-The DateTimePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular DateTime Picker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the DateTimePicker component is outlined below.
+The accessibility compliance for the Angular DateTime Picker component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,7 +42,7 @@ The accessibility compliance for the DateTimePicker component is outlined below.
 
 The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
-DateTimePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
+Angular DateTime Picker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
 
 To know about the accessibility of Calendar refer to the Calendar's [Accessibility](../calendar/accessibility/) section.
 
@@ -51,20 +51,20 @@ screen reader.
 
 * **Aria-expanded**: attributes indicates the state of a collapsible element.
 
-* **Aria-disabled**: attribute indicates the disabled state of this DateTimePicker component.
+* **Aria-disabled**: attribute indicates the disabled state of this Angular DateTime Picker component.
 
-* **Aria-activedescendent**: attribute helps in managing the current active child of the DateTimePicker component.
+* **Aria-activedescendent**: attribute helps in managing the current active child of the Angular DateTime Picker component.
 
 ## Keyboard Interaction
 
-You can use the following keys to interact with the DateTimePicker.
+You can use the following keys to interact with the Angular DateTime Picker.
 The component implements the keyboard navigation support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
-DateTimePicker supports the below list of shortcut keys.
+Angular DateTime Picker supports the below list of shortcut keys.
 
 ## Input Navigation
 
-Before opening the popup, use the below list of keys to `DateTimePicker` component the popup element.
+Before opening the popup, use the below list of keys to `Angular DateTime Picker` component the popup element.
 
 | **Press**                                       | **To do this**           |
 | ----------------------------------------------- | ------------------------ |
@@ -108,7 +108,7 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 | <kbd>Alt + Down Arrow</kbd>  | Open the popup.                                        |
 | <kbd>Esc</kbd>               | Close the popup.                                       |
 
-> To focus the DateTimePicker component use the `alt+t` keys.
+> To focus the Angular DateTime Picker component use the `alt+t` keys.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -124,9 +124,9 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 
 ## Ensuring accessibility
 
-The DateTimePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular DateTime Picker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the DateTimePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-time-picker.html) in a new window to evaluate the accessibility of the DateTimePicker component with accessibility tools.
+The accessibility compliance of the Angular DateTime Picker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-time-picker.html) in a new window to evaluate the accessibility of the Angular DateTime Picker component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/date-time-picker.html" %}
 

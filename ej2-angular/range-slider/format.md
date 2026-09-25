@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Format in Angular Range Slider
+# Format in Angular Slider
 
-The [`format`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel#format) property customizes how Slider values are displayed. Formatted values are also applied to ARIA attributes for accessibility. Two approaches are available for implementing value formatting.
+The [`format`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel#format) property customizes how Angular Slider values are displayed. Formatted values are also applied to ARIA attributes for accessibility. Two approaches are available for implementing value formatting.
 
 * **Using the format property**: Leverage the built-in [Internationalization](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization) support to apply predefined formats to slider values.
 

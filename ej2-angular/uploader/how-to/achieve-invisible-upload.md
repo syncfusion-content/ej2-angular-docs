@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to perform an invisible upload in Angular Uploader | Syncfusion
-description: Perform an invisible upload in the Angular Uploader by handling the selected event and disabling the default file list, so files upload silently.
+title: How to perform an invisible upload in Angular File Upload | Syncfusion
+description: Perform an invisible upload in the Angular File Upload by handling the selected event and disabling the default file list, so files upload silently.
 platform: ej2-angular
 control: Achieve invisible upload 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to perform an invisible upload in Angular Uploader
+# How to perform an invisible upload in Angular File Upload
 
-Perform an invisible upload by handling the uploader's `selected` event to suppress the default file list while the upload proceeds automatically. Because `autoUpload` is `true` by default, the selected files are uploaded automatically once selected; to hide the default file list, set `args.cancel = true` inside the `selected` event handler and render a custom preview instead. Refer to the example below.
+Perform an invisible upload by handling the Angular File Upload's `selected` event to suppress the default file list while the upload proceeds automatically. Because `autoUpload` is `true` by default, the selected files are uploaded automatically once selected; to hide the default file list, set `args.cancel = true` inside the `selected` event handler and render a custom preview instead. Refer to the example below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

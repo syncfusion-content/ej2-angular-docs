@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Appearance in Angular Rating
 
-You can also customize the appearance of rating component.
+You can also customize the appearance of Angular Rating component.
 
 ## Items count
 
@@ -30,7 +30,7 @@ You can specify the number of rating items using the [`itemsCount`](https://ej2.
 
 ## Disabled
 
-You can disable the rating component by using the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/rating#disabled) property. When the `disabled` property is set to `true`, the rating component will be disabled and the user will not be able to interact with it and a disabled rating component may have a different visual appearance than an enabled one.
+You can disable the Angular Rating component by using the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/rating#disabled) property. When the `disabled` property is set to `true`, the rating component will be disabled and the user will not be able to interact with it and a disabled rating component may have a different visual appearance than an enabled one.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -46,7 +46,7 @@ You can disable the rating component by using the [`disabled`](https://ej2.syncf
 
 ## Visible
 
-can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/rating#visible) property of the rating component to control the visibility of the component. When the `visible` property is set to `true`, the rating component is displayed on the page. When it is set to `false`, the component is hidden.
+can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/rating#visible) property of the Angular Rating component to control the visibility of the component. When the `visible` property is set to `true`, the Angular Rating component is displayed on the page. When it is set to `false`, the component is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -62,7 +62,7 @@ can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/rat
 
 ## Read only
 
-Use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/api/rating#readonly) property to render the rating component in a non-interactive state, preventing users from modifying the rating value.
+Use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/api/rating#readonly) property to render the Angular Rating component in a non-interactive state, preventing users from modifying the rating value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -78,7 +78,7 @@ Use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/api/rating
 
 ## CSS classes
 
-Customize the rating component's appearance—including colors, fonts, sizes, and other visual aspects—using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/rating#cssclass) property. The following sections demonstrate common customization techniques.
+Customize the Angular Rating component's appearance—including colors, fonts, sizes, and other visual aspects—using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/rating#cssclass) property. The following sections demonstrate common customization techniques.
 
 ### Changing rating symbol border color
 

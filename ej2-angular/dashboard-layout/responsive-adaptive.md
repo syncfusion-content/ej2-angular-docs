@@ -14,7 +14,7 @@ The Angular Dashboard Layout component provides built-in responsive support that
 
 ## Adaptive Layout Behavior
 
-The dashboard layout automatically transforms into a stacked layout when the screen resolution decreases. In a stacked layout, all panels are arranged vertically in a single column, ensuring optimal viewing on smaller screens such as tablets and mobile devices. By default, this transformation occurs when the screen resolution reaches 600px or below.
+The Angular Dashboard Layout automatically transforms into a stacked layout when the screen resolution decreases. In a stacked layout, all panels are arranged vertically in a single column, ensuring optimal viewing on smaller screens such as tablets and mobile devices. By default, this transformation occurs when the screen resolution reaches 600px or below.
 
 ## Customizing Responsive Breakpoints
 

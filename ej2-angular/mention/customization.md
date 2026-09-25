@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Show or hide mention character
 
-You can show mention character as prefix of selected item in mention component using [showMentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#showmentionchar) property. The default value of `ShowMentionChar` is `false`.
+You can show mention character as prefix of selected item in Angular Mention component using [showMentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#showmentionchar) property. The default value of `ShowMentionChar` is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -28,7 +28,7 @@ You can show mention character as prefix of selected item in mention component u
 
 ## Adding the suffix character after selection
 
-You can add suffix character while selecting an item in Mention component using [suffixText](https://ej2.syncfusion.com/angular/documentation/api/mention/#suffixtext) property. You can add space or new line as suffix to the selected item. The default values is empty string.
+You can add suffix character while selecting an item in Angular Mention component using [suffixText](https://ej2.syncfusion.com/angular/documentation/api/mention/#suffixtext) property. You can add space or new line as suffix to the selected item. The default values is empty string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -68,7 +68,7 @@ By default, the [mentionChar](https://ej2.syncfusion.com/angular/documentation/a
 
 ## Leading Space Requirement
 
-The [requireLeadingSpace](https://ej2.syncfusion.com/angular/documentation/api/mention/#requireleadingspace) property in Mention controls whether a space is needed before triggering the Mention suggestion popup. 
+The [requireLeadingSpace](https://ej2.syncfusion.com/angular/documentation/api/mention/#requireleadingspace) property in Angular Mention controls whether a space is needed before triggering the Mention suggestion popup. 
 
 When set to `false`, the mention can be activated without a preceding space. When set to `true` , a space is required before the mention character to activate suggestions.
 

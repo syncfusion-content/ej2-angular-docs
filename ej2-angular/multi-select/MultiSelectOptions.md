@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # MultiSelectOptions in Angular MultiSelect Dropdown
 
-The MultiSelect component provides various configuration options to customize its behavior and appearance.
+The Angular MultiSelect Dropdown component provides various configuration options to customize its behavior and appearance.
 
 ## Adding Value as a Chip on Focus Out
 
@@ -23,7 +23,7 @@ By default, the typed value converts into a chip, or updates as the component va
 
 ## Trigger ValueChange event immediately
 
-By default, the MultiSelect component triggers the change event while focusing out of the component. To trigger the change event on every value selection and removal, disable the [changeOnBlur](https://ej2.syncfusion.com/angular/documentation/api/multi-select#changeonblur) property.
+By default, the Angular MultiSelect Dropdown component triggers the change event while focusing out of the component. To trigger the change event on every value selection and removal, disable the [changeOnBlur](https://ej2.syncfusion.com/angular/documentation/api/multi-select#changeonblur) property.
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild  } from '@angular/core';
@@ -91,15 +91,15 @@ To customize the delimiter separator in both default and delimiter mode, use the
 <ejs-multiselect id='multiselect-filtering' #sample [dataSource]='data' [fields]='fields' [placeholder]='watermarks'  [delimiterChar]="';'"></ejs-multiselect>
 ```
 
-## Display the MultiSelect in Right-to-Left direction
+## Display the Angular MultiSelect Dropdown in Right-to-Left direction
 
-To display the MultiSelect in a Right-To-Left direction, use the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#enablertl) property.
+To display the Angular MultiSelect Dropdown in a Right-To-Left direction, use the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#enablertl) property.
 
 ```typescript
 <ejs-multiselect id='multiselect-filtering' #sample [dataSource]='data' [fields]='fields' [placeholder]='watermarks'  [enableRtl]="true"></ejs-multiselect>
 ```
 
-## Display the selected item in MultiSelect popup
+## Display the selected item in Angular MultiSelect Dropdown popup
 
 By default, the selected item is removed from the popup list because the [hideSelectedItem](https://ej2.syncfusion.com/angular/documentation/api/multi-select#hideselecteditem) property is set to `true`. To display the selected item in the popup, set the [hideSelectedItem](https://ej2.syncfusion.com/angular/documentation/api/multi-select#hideselecteditem) property to `false`.
 
@@ -107,7 +107,7 @@ By default, the selected item is removed from the popup list because the [hideSe
 <ejs-multiselect id='multiselect-filtering' #sample [dataSource]='data' [fields]='fields'  [placeholder]='watermarks' [hideSelectedItem]="false"></ejs-multiselect>
 ```
 
-## Adding additional attributes to the MultiSelect
+## Adding additional attributes to the Angular MultiSelect Dropdown
 
 To add additional attributes such as `title`, use the [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#htmlattributes) property. For more details and code snippets, refer to the [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#htmlattributes) documentation.
 
@@ -130,7 +130,7 @@ By default, when filtering is enabled, the popup opens in fullscreen on mobile d
 
 ## Open the popup on dropdown icon click only
 
-By default, the MultiSelect popup opens on input click. To display the popup only when clicking the dropdown icon and not on input click, set the [`openOnClick`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#openonclick) property to `false`.
+By default, the Angular MultiSelect Dropdown popup opens on input click. To display the popup only when clicking the dropdown icon and not on input click, set the [`openOnClick`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#openonclick) property to `false`.
 
 ```typescript
 <ejs-multiselect id='multiselect-filtering' #sample [dataSource]='data' [fields]='fields' [openOnClick]="false" [showDropDownIcon]="true"
@@ -139,7 +139,7 @@ By default, the MultiSelect popup opens on input click. To display the popup onl
 
 ## Read-only
 
-To make the MultiSelect input read-only, set the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#readonly) property to `true`.
+To make the Angular MultiSelect Dropdown input read-only, set the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#readonly) property to `true`.
 
 ```typescript
 <ejs-multiselect id='multiselect-filtering' #sample [dataSource]='data' [fields]='fields' [readOnly]="true"
@@ -157,7 +157,7 @@ To change the order of list items in ascending or descending order, use the [`so
 
 ## Add a new item
 
-Adds a new item to the MultiSelect popup list by using the [addItem](https://ej2.syncfusion.com/angular/documentation/api/multi-select#additem) method. By default, the new item is appended to the list as the last item, but you can insert it at a specific index using the index parameter.
+Adds a new item to the Angular MultiSelect Dropdown popup list by using the [addItem](https://ej2.syncfusion.com/angular/documentation/api/multi-select#additem) method. By default, the new item is appended to the list as the last item, but you can insert it at a specific index using the index parameter.
 
 | Parameter   | Type                                                                 | Description                                                                 |
 |-------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -287,7 +287,7 @@ export class AppComponent {
 
 ## Filter data programmatically
 
-Use the [filter](https://ej2.syncfusion.com/angular/documentation/api/multi-select#filter) method to filter the MultiSelect data from the given data source.
+Use the [filter](https://ej2.syncfusion.com/angular/documentation/api/multi-select#filter) method to filter the Angular MultiSelect Dropdown data from the given data source.
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -345,9 +345,9 @@ export class AppComponent {
 }
 ```
 
-## Focus In and Focus Out the MultiSelect
+## Focus In and Focus Out the Angular MultiSelect Dropdown
 
-Use the [focusIn](https://ej2.syncfusion.com/angular/documentation/api/multi-select#focusin) and [focusOut](https://ej2.syncfusion.com/angular/documentation/api/multi-select#focusout) methods to manually focus and blur the MultiSelect.
+Use the [focusIn](https://ej2.syncfusion.com/angular/documentation/api/multi-select#focusin) and [focusOut](https://ej2.syncfusion.com/angular/documentation/api/multi-select#focusout) methods to manually focus and blur the Angular MultiSelect Dropdown.
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -447,7 +447,7 @@ export class AppComponent {
 
 ## Show and Hide Popup
 
-To programmatically show or hide the MultiSelect popup, use the [showPopup](https://ej2.syncfusion.com/angular/documentation/api/multi-select#showpopup) and [hidePopup](https://ej2.syncfusion.com/angular/documentation/api/multi-select#hidepopup) methods.
+To programmatically show or hide the Angular MultiSelect Dropdown popup, use the [showPopup](https://ej2.syncfusion.com/angular/documentation/api/multi-select#showpopup) and [hidePopup](https://ej2.syncfusion.com/angular/documentation/api/multi-select#hidepopup) methods.
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -493,7 +493,7 @@ export class AppComponent {
 
 ## Show and Hide spinner
 
-To display or hide the loading spinner in the MultiSelect component, use the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/multi-select#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/multi-select#hidespinner) methods. The spinner is typically used during asynchronous data-loading operations.
+To display or hide the loading spinner in the Angular MultiSelect Dropdown component, use the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/multi-select#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/multi-select#hidespinner) methods. The spinner is typically used during asynchronous data-loading operations.
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -539,12 +539,12 @@ export class AppComponent {
 
 ## Select or Deselect All Items
 
-The MultiSelect component allows for the programmatic selection and deselection of all list items. This is achieved using the [`selectAll`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#selectall) method.
+The Angular MultiSelect Dropdown component allows for the programmatic selection and deselection of all list items. This is achieved using the [`selectAll`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#selectall) method.
 
 *   To **select all** items in the list, call the `selectAll` method with `true` as the parameter.
 *   To **deselect all** items, call the `selectAll` method with `false` as the parameter.
 
-The following example demonstrates how to use buttons to trigger both the select all and deselect all actions on the MultiSelect component.
+The following example demonstrates how to use buttons to trigger both the select all and deselect all actions on the Angular MultiSelect Dropdown component.
 
 ```typescript
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';

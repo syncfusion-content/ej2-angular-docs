@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to group items in popup in Angular Split Button
 
-Grouped items are possible in SplitButton by templating entire popup with ListView. Check ListView [`grouping`](../../listview/grouping#grouping) and create such items. Create ListView with id `listview` and provide element of the ListView as target of SplitButton to render it in popup area.
+Grouped items are possible in Angular Split Button by templating entire popup with ListView. Check ListView [`grouping`](../../listview/grouping#grouping) and create such items. Create ListView with id `listview` and provide element of the ListView as target of Angular Split Button to render it in popup area.
 
-In this following example, ListView is created and its element is set as [`target`](https://ej2.syncfusion.com/angular/documentation/api/split-button#target) for SplitButton.
+In this following example, ListView is created and its element is set as [`target`](https://ej2.syncfusion.com/angular/documentation/api/split-button#target) for Angular Split Button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

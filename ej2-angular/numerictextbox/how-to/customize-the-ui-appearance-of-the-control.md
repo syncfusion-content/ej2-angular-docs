@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize the UI appearance in Angular Numeric Textbox
 
-The NumericTextBox appearance can be customized by adding a custom `cssClass` to the component and applying custom styles. The following example demonstrates how to customize the NumericTextBox appearance.
+The Angular Numeric Textbox appearance can be customized by adding a custom `cssClass` to the component and applying custom styles. The following example demonstrates how to customize the Angular Numeric Textbox appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The entire layout dimensions are based on the height and width of the parent element. A responsive or static layout can be created by assigning percentage or static dimension values to the parent element. The layout automatically adapts to mobile resolutions by transforming into a stacked orientation so that the panels display in a vertical column.
 
-The **Dashboard Layout** component uses a grid structure that divides into subsections of equal size called cells. The total number of cells in each row is defined using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#columns) property of the component. The component auto-calculates the width of each cell based on the total number of cells in a row and the height of a cell will be same as that of its width. However, the height of these cells can also be configured to any desired size using the [`cellAspectRatio`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#cellaspectratio) property (cellwidth/cellheight ratio) which defines the cell width to height ratio.
+The **Angular Dashboard Layout** component uses a grid structure that divides into subsections of equal size called cells. The total number of cells in each row is defined using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#columns) property of the component. The component auto-calculates the width of each cell based on the total number of cells in a row and the height of a cell will be same as that of its width. However, the height of these cells can also be configured to any desired size using the [`cellAspectRatio`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#cellaspectratio) property (cellwidth/cellheight ratio) which defines the cell width to height ratio.
 
 The layout supports an unlimited number of rows based on the panel count and position. Panels act as data containers and are placed over these cells.
 
@@ -84,9 +84,9 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 
 ## Rendering component in right-to-left direction
 
-The Dashboard Layout component can be rendered in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#enablertl) API to true.
+The Angular Dashboard Layout component can be rendered in right-to-left direction by setting the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#enablertl) API to true.
 
-The following sample demonstrates Dashboard Layout in right-to-left direction.
+The following sample demonstrates Angular Dashboard Layout in right-to-left direction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

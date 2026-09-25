@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Styling Modes in Angular OTP Input
 
-Styling modes define the visual presentation of the OTP input fields. Choose a styling mode based on your design requirements and user experience goals. Three predefined modes are available: outlined (default), filled, and underlined.
+Styling modes define the visual presentation of the Angular OTP input fields. Choose a styling mode based on your design requirements and user experience goals. Three predefined modes are available: outlined (default), filled, and underlined.
 
 ## Outlined mode
 

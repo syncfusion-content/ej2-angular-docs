@@ -56,7 +56,7 @@ The [`content`](https://ej2.syncfusion.com/angular/documentation/api/progress-bu
   
 {% previewsample "page.domainurl/samples/progress-button/default-cs9" %}
 
-### Change step of the ProgressButton
+### Change step of the Angular Progress Button
 
 The progress can be visualized at the specified interval by changing the [`step`](https://ej2.syncfusion.com/angular/documentation/api/progress-button/progressEventArgs#step) property in the [`begin`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#begin) event of the ProgressButton. In this demo, the `step` property is set to `20` to show progress at every 20% increment.
 
@@ -72,11 +72,11 @@ The progress can be visualized at the specified interval by changing the [`step`
   
 {% previewsample "page.domainurl/samples/progress-button/default-cs10" %}
 
-> The class `e-hide-spinner` hides the spinner in the ProgressButton, For more information, see [hide spinner](./how-to/hide-spinner) section.
+> The class `e-hide-spinner` hides the spinner in the Angular Progress Button, For more information, see [hide spinner](./how-to/hide-spinner) section.
 
 ### Change progress dynamically
 
-The progress can be changed dynamically by modifying the [`percent`](https://ej2.syncfusion.com/angular/documentation/api/progress-button/progressEventArgs#percent) property in the ProgressButton events. In this demo, on 40% completion of progress, the `percent` property is set to `90` to show dynamic change of the progress.
+The progress can be changed dynamically by modifying the [`percent`](https://ej2.syncfusion.com/angular/documentation/api/progress-button/progressEventArgs#percent) property in the Angular Progress Button events. In this demo, on 40% completion of progress, the `percent` property is set to `90` to show dynamic change of the progress.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -111,4 +111,4 @@ You can pause and resume the progress using the [`stop`](https://ej2.syncfusion.
 ## See Also
 
 * [How to hide spinner](./how-to/hide-spinner)
-* [Customize ProgressButton using cssClass](how-to/customize-progress-using-cssclass)
+* [Customize Angular Progress Button using cssClass](how-to/customize-progress-using-cssclass)

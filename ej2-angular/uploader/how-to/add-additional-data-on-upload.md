@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to add additional data on upload in Angular Uploader | Syncfusion
-description: Send extra key-value form data with Angular Uploader file uploads by setting customFormData on the uploading event args alongside the file payload.
+title: How to add additional data on upload in Angular File Upload | Syncfusion
+description: Send extra key-value form data with Angular File Upload file uploads by setting customFormData on the uploading event args alongside the file payload.
 platform: ej2-angular
 control: Add additional data on upload 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to add additional data on upload in Angular Uploader
+# How to add additional data on upload in Angular File Upload
 
-The Uploader lets you include additional form data with file uploads. Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#uploading) event and set the `customFormData` argument to send extra key–value pairs to the server. See the example below.
+The Angular File Upload lets you include additional form data with file uploads. Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#uploading) event and set the `customFormData` argument to send extra key–value pairs to the server. See the example below.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -37,7 +37,7 @@ export class AppComponent {
 }
 ```
 
-Bind the `path` settings and the `onFileUpload` handler to the Uploader in the component's template (`default.html`):
+Bind the `path` settings and the `onFileUpload` handler to the Angular File Upload in the component's template (`default.html`):
 
 ```html
 <ejs-uploader #uploadcontrol id='fileupload' [asyncSettings]='path' (uploading)='onFileUpload($event)'></ejs-uploader>

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular DatePicker
 
-The DatePicker component enables users to select a date or date range from a calendar popup, providing an intuitive and efficient way to enter date-related information.
+The Angular DatePicker component enables users to select a date or date range from a calendar popup, providing an intuitive and efficient way to enter date-related information.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DatePicker component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -90,7 +90,7 @@ npm install @syncfusion/ej2-angular-calendars
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> DatePicker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DatePicker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -104,11 +104,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/datepicker/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> DatePicker component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DatePicker component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the DatePicker import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular DatePicker import, template, and data into your generated file.
 
-> For the full property list, see the [DatePicker API reference](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default).
+> For the full property list, see the [Angular DatePicker API reference](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default).
 
 ```typescript
 
@@ -141,7 +141,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the DatePicker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular DatePicker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 
@@ -154,13 +154,13 @@ The following example illustrates the output in your browser.
 
 To set the selected date, use the [`value`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default#value) property.
 
-The following example demonstrates the DatePicker with the current date set as the selected value.
+The following example demonstrates the Angular DatePicker with the current date set as the selected value.
   
 {% previewsample "page.domainurl/samples/datepicker/getting-started-cs8" %}
 
 ## Setting the date range to restrict selection
 
-To restrict the selection of date within a specified range, use the [`min`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default#max) properties. To know more about range restriction in DatePicker, please refer this [page](./date-range).
+To restrict the selection of date within a specified range, use the [`min`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default#max) properties. To know more about range restriction in Angular DatePicker, please refer this [page](./date-range).
 
 The following example demonstrates selecting a date within a range from 7 to 27.
   
@@ -169,7 +169,7 @@ The following example demonstrates selecting a date within a range from 7 to 27.
 ## See Also
 
 * [Change the format of selected date](./date-format)
-* [Render DatePicker with specific culture](./globalization)
-* [How to change the initial view of the DatePicker](./date-views)
-* [How to achieve validation with DatePicker](./how-to/custom-validation-using-form-validator)
-* [How to achieve two-way binding with DatePicker](./how-to/two-way-binding)
+* [Render Angular DatePicker with specific culture](./globalization)
+* [How to change the initial view of the Angular DatePicker](./date-views)
+* [How to achieve validation with Angular DatePicker](./how-to/custom-validation-using-form-validator)
+* [How to achieve two-way binding with Angular DatePicker](./how-to/two-way-binding)

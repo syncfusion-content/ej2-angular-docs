@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Adornments in Angular Numeric Textbox
 
-Adornments allow you to add custom elements before or after the NumericTextBox input using the `prependTemplate` and `appendTemplate` properties. These templates support icons, labels, action buttons, and other visual elements while preserving numeric validation and float label functionality.
+Adornments allow you to add custom elements before or after the Angular Numeric Textbox input using the `prependTemplate` and `appendTemplate` properties. These templates support icons, labels, action buttons, and other visual elements while preserving numeric validation and float label functionality.
 
 ## Common Use Cases
 
@@ -19,14 +19,14 @@ Adornments allow you to add custom elements before or after the NumericTextBox i
 - **Action Icons**: Include buttons for clear, reset, or custom operations.
 - **Visual Feedback**: Display status indicators without affecting numeric behavior.
 
-## Adding Adornments to NumericTextBox
+## Adding Adornments to Angular Numeric Textbox
 
 Use `prependTemplate` to render elements before the numeric input, and `appendTemplate` to render elements after it. These templates support any inline HTML or icon markup and do not interfere with numeric validation.
 
 - **prependTemplate**: Renders HTML content before the input field
 - **appendTemplate**: Renders HTML content after the input field
 
-The following example shows how to implement adornments in the NumericTextBox:
+The following example shows how to implement adornments in the Angular Numeric Textbox:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -38,4 +38,4 @@ The following example shows how to implement adornments in the NumericTextBox:
 {% endhighlight %}
 {% endtabs %}
 
-You can view the demo here: [NumericTextBox Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/numerictextbox/adornments).
+You can view the demo here: [Angular Numeric Textbox Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/numerictextbox/adornments).

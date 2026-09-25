@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular TimePicker
 
-The TimePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular TimePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the TimePicker component is outlined below.
+The accessibility compliance for the Angular TimePicker component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,9 +42,9 @@ The accessibility compliance for the TimePicker component is outlined below.
 
 The web accessibility makes web applications and its content more accessible to people with disabilities without any barriers. Especially it tracks the dynamic value changes and DOM changes.
 
-TimePicker component has covered the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices)  specifications with the following list of WAI-ARIA attributes `aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`, and `aria-autocomplete`.
+Angular TimePicker component has covered the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices)  specifications with the following list of WAI-ARIA attributes `aria-haspopup`, `aria-selected`, `aria-disabled`, `aria-activedescendant`, `aria-expanded`, `aria-owns`, and `aria-autocomplete`.
 
-Here, the `combobox` as a role for input element and `listbox` as a role for popup element in the TimePicker.
+Here, the `combobox` as a role for input element and `listbox` as a role for popup element in the Angular TimePicker.
 
 * **Aria-haspopup** : Provides the information about whether this element display a pop-up window or not.
 
@@ -58,7 +58,7 @@ Here, the `combobox` as a role for input element and `listbox` as a role for pop
 
 * **Aria-owns** : Attribute that creates a parent/child relationship between two DOM element in the accessibility layer.
 
-* **Aria-activedescendent** : Attribute that helps in managing the current active child of the TimePicker
+* **Aria-activedescendent** : Attribute that helps in managing the current active child of the Angular TimePicker
 component.
 
 * **Role** : Attribute that gives assistive technology information for handling each element in a widget.
@@ -68,9 +68,9 @@ component.
 Keyboard accessibility is one of the most important aspects of web accessibility. It will be more useful to all the computer users, as they often allow to interact keyboard more than a mouse.
 Among people with disabilities like blind or who have motor disabilities are also can make frequent use of keyboard shortcuts.
 
-The TimePicker component has built-in keyboard accessibility support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
+The Angular TimePicker component has built-in keyboard accessibility support by following the [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
-> It supports the following list of shortcut keys to interact the TimePicker control.
+> It supports the following list of shortcut keys to interact the Angular TimePicker control.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -85,7 +85,7 @@ The TimePicker component has built-in keyboard accessibility support by followin
 | <kbd>Alt + Down Arrow</kbd> | Open the popup. |
 | <kbd>Esc</kbd> | Close the popup |
 
-The following sample use the `alt+t` keys to focus the TimePicker component.
+The following sample use the `alt+t` keys to focus the Angular TimePicker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -101,9 +101,9 @@ The following sample use the `alt+t` keys to focus the TimePicker component.
 
 ## Ensuring accessibility
 
-The TimePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular TimePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the TimePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/time-picker.html) in a new window to evaluate the accessibility of the TimePicker component with accessibility tools.
+The accessibility compliance of the Angular TimePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/time-picker.html) in a new window to evaluate the accessibility of the Angular TimePicker component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/time-picker.html" %}
 

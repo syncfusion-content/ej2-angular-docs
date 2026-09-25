@@ -10,18 +10,18 @@ domainurl: ##DomainURL##
 
 # Events in Angular Floating Action Button
 
-This section explains the available events in Floating Action Button component.
+This section explains the available events in Angular Floating Action Button component.
 
 ## created
 
-Event triggers after the creation of Floating Action Button.
+Event triggers after the creation of Angular Floating Action Button.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Floating Action Button. -->
+    template: `<!-- To Render Angular Floating Action Button. -->
                 <button ejs-fab id='fab' iconCss= 'e-icons e-edit' content= 'Edit' (created)="onCreate()"></button>`
 })
 
@@ -35,14 +35,14 @@ export class AppComponent {
 
 ## onclick
 
-Event triggers when the Floating Action Button is clicked.
+Event triggers when the Angular Floating Action Button is clicked.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Floating Action Button. -->
+    template: `<!-- To Render Angular Floating Action Button. -->
                 <button ejs-fab id='fab' iconCss= 'e-icons e-edit' content= 'Edit' (click)="onclick()"></button>`
 })
 
@@ -54,7 +54,7 @@ export class AppComponent {
  }
 ```
 
-Below example demonstrates the click event of the Floating Action Button.
+Below example demonstrates the click event of the Angular Floating Action Button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

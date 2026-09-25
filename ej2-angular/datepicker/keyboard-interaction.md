@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Keyboard interaction in Angular Datepicker component
 
-You can use the following keys to interact with the DatePicker.
+You can use the following keys to interact with the Angular DatePicker.
 The component implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
 It supports the below list of shortcut keys.

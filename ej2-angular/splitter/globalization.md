@@ -14,7 +14,7 @@ The Angular Splitter component provides globalization features, including right-
 
 ## Right-to-Left (RTL) support
 
-To enable RTL layout, set the `enableRtl` property to `true`. This adjusts the direction of the Splitter panes and split bars to accommodate RTL writing systems.
+To enable RTL layout, set the `enableRtl` property to `true`. This adjusts the direction of the Angular Splitter panes and split bars to accommodate RTL writing systems.
 
 The following code demonstrates how to enable RTL behavior.
 
@@ -32,4 +32,4 @@ The following code demonstrates how to enable RTL behavior.
 
 ## See Also
 
-* [Construct different layouts using Splitter](./different-layouts)
+* [Construct different layouts using Angular Splitter](./different-layouts)

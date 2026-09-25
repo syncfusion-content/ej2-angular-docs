@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Validation in Angular In-place Editor
 
-**In-place Editor** component supports validation and it can be achieved by adding rules to the [validationRules](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validationrules) property, its child property `key` must be same as [name](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#name) property, otherwise validation not performed. Submitting data to the server or calling the [validate](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validate) method validation executed.
+**Angular In-place Editor** component supports validation and it can be achieved by adding rules to the [validationRules](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validationrules) property, its child property `key` must be same as [name](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#name) property, otherwise validation not performed. Submitting data to the server or calling the [validate](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#validate) method validation executed.
 
 ## Validation Rules
 
-In-place Editor has following validation rules, which are used to perform validation.
+Angular In-place Editor has following validation rules, which are used to perform validation.
 
 | Rules | Description | Example |
 |------|------|------|
@@ -34,9 +34,9 @@ In-place Editor has following validation rules, which are used to perform valida
 
 ## Step by Step validation configuration
 
-The following steps are used to configure validation in In-place Editor.
+The following steps are used to configure validation in Angular In-place Editor.
 
-Step 1: To perform default validation in In-place Editor the `name` property is mandatory. And the specified name must be the same as the key name.
+Step 1: To perform default validation in Angular In-place Editor the `name` property is mandatory. And the specified name must be the same as the key name.
 
 Step 2:  The corresponding name specified in the name property should bind with the `validationRules` property. For example, in the below code snippet, the `Number`  in the name property is bind with the `maxLength`  of validationRules.  Likewise, you can bind with the in-build validation configurations in the above table.
 

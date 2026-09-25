@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Server Actions in Angular In-place Editor
 
-By passing **In-place Editor** component value to the server, the [primaryKey](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#primarykey) property value must require, otherwise action not performed for remote data.
+By passing **Angular In-place Editor** component value to the server, the [primaryKey](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#primarykey) property value must require, otherwise action not performed for remote data.
 
 If the [URL](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#url) property value is empty, data passing will handled at local and also the [actionSuccess](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#actionsuccess) event will trigger with `null` as argument value.
 

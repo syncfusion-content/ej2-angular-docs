@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Disabled Items in Angular ComboBox
 
-The ComboBox provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
+The Angular ComboBox provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#fields) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 
 In the following sample, State are grouped according on its category using `disabled` field.
 
@@ -40,4 +40,4 @@ The [disableItem](https://ej2.syncfusion.com/angular/documentation/api/combo-box
 
 If you want to disabled the overall component to set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#enabled) property to false.
 
-![Disabled ComboBox Component](../images/combobox-disable.png)
+![Disabled Angular ComboBox Component](../images/combobox-disable.png)

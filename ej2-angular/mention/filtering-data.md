@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filtering Data in Angular Mention
 
-The Mention component has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
+The Angular Mention component has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the Angular Mention element.
 
 ## Limit the minimum filter character
 
@@ -52,7 +52,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 
 ## Allow spacing between search
 
-While filtering the data in the data source, you can allow the space in the middle of the mention by using the [allowSpaces](https://ej2.syncfusion.com/angular/documentation/api/mention/#allowspaces) property. If the data source does not match with the mentioned element data, the popup will be hidden on the space key press. The default value of `allowSpaces` is `false`.
+While filtering the data in the data source, you can allow the space in the middle of the Angular Mention by using the [allowSpaces](https://ej2.syncfusion.com/angular/documentation/api/mention/#allowspaces) property. If the data source does not match with the mentioned element data, the popup will be hidden on the space key press. The default value of `allowSpaces` is `false`.
 
 > By default, the `allowSpaces` property is disabled, and the space ends the mention component search.
 

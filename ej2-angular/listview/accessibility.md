@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular ListView component
 
-The ListView component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular ListView component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the ListView component is outlined below.
+The accessibility compliance for the Angular ListView component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the ListView component is outlined below.
 
 ## WAI-ARIA attributes
 
-The ListView component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet accessibility requirements. The following ARIA attributes are used in the ListView component based on different configurations:
+The Angular ListView component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet accessibility requirements. The following ARIA attributes are used in the ListView component based on different configurations:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -54,7 +54,7 @@ The ListView component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pa
 
 ## Keyboard interaction
 
-The ListView component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guidelines, making it accessible for users who rely on assistive technologies (AT) and keyboard navigation. The following keyboard shortcuts are supported by the ListView component:
+The Angular ListView component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guidelines, making it accessible for users who rely on assistive technologies (AT) and keyboard navigation. The following keyboard shortcuts are supported by the ListView component:
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
@@ -67,9 +67,9 @@ The ListView component follows the [keyboard interaction](https://www.w3.org/WAI
 
 ## Ensuring accessibility
 
-The ListView component's accessibility levels are validated through [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular ListView component's accessibility levels are validated through [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the ListView component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-view.html) in a new window to evaluate the accessibility of the ListView component with accessibility tools.
+The accessibility compliance of the Angular ListView component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-view.html) in a new window to evaluate the accessibility of the Angular ListView component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/list-view.html" %}
 

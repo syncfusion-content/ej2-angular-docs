@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 This section explains the different styles and types of Buttons.
 
-## Button styles
+## Angular Button styles
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property.
 
@@ -41,7 +41,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button has the followin
 style for the users of assistive technologies such as screen readers.
 > Primary action button can also be achieved by setting [`isPrimary`](https://ej2.syncfusion.com/angular/documentation/api/button#isprimary) property as `true`.
 
-## Button types
+## Angular Button types
 
 The types of Essential<sup style="font-size:70%">&reg;</sup> JS 2 Button are as follows:
 
@@ -73,17 +73,17 @@ The basic Button types are explained below.
   
 {% previewsample "page.domainurl/samples/button/basic-types-cs1" %}
 
-### Flat Button
+### Flat Angular Button
 
 The Flat Button is styled with no background color. To create a flat Button,
 set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-flat`.
 
-### Outline Button
+### Outline Angular Button
 
 An outline Button has a border with transparent background. To create an outline Button,
 set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-outline`.
 
-### Round Button
+### Round Angular Button
 
 A round Button is shaped like a circle. Usually, it contains an icon representing its action.
 To create a round Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-round`.
@@ -100,9 +100,9 @@ To create a round Button, set the [`cssClass`](https://ej2.syncfusion.com/angula
   
 {% previewsample "page.domainurl/samples/button/button-type-cs1" %}
 
-### Toggle Button
+### Toggle Angular Button
 
-A toggle Button allows you to change between the two states. The Button is active in toggled state and can be recognized through the `e-active` class. The functionality of the toggle Button is handled by click event. To create a toggle Button, set the [`isToggle`](https://ej2.syncfusion.com/angular/documentation/api/button#istoggle)
+A toggle Button allows you to change between the two states. The Angular Button is active in toggled state and can be recognized through the `e-active` class. The functionality of the toggle Button is handled by click event. To create a toggle Button, set the [`isToggle`](https://ej2.syncfusion.com/angular/documentation/api/button#istoggle)
 property to `true`. In the following code snippet, the toggle Button text changes to play/pause based on the state of the Button with the use of click event.
 
 {% tabs %}
@@ -119,9 +119,9 @@ property to `true`. In the following code snippet, the toggle Button text change
 
 ## Icons
 
-### Button with font icons
+### Angular Button with font icons
 
-The Button can have an icon to provide the visual representation of the action. To place the icon on a Button,set the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button#iconcss) property with the required icon CSS. By default, the icon is positioned to the left side of the Button. You can customize the icon's position
+The Angular Button can have an icon to provide the visual representation of the action. To place the icon on a Button,set the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button#iconcss) property with the required icon CSS. By default, the icon is positioned to the left side of the Button. You can customize the icon's position
 by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/button#iconposition) property.
 
 {% tabs %}
@@ -136,7 +136,7 @@ by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/a
   
 {% previewsample "page.domainurl/samples/button/icon-cs1" %}
 
-### Button with SVG image
+### Angular Button with SVG image
 
 SVG image can be added to the Button using [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button#iconcss) property.
 
@@ -156,7 +156,7 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 
 > The Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button#iconcss) property.
 
-## Button size
+## Angular Button size
 
 The two types of Button sizes are default and small. To change the size of the default Button to small Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-small`.
 
@@ -174,6 +174,6 @@ The two types of Button sizes are default and small. To change the size of the d
 
 ## See Also
 
-* [Customize Button appearance](./how-to/customize-button-appearance)
+* [Customize Angular Button appearance](./how-to/customize-button-appearance)
 * [How to create block button](./how-to/create-a-block-button)
 * [How to create repeat button](./how-to/repeat-button)

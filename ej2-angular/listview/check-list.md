@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Check list in Angular ListView component
 
-The ListView supports checkboxes in default and group lists, enabling selection of multiple items. The checkbox functionality can be enabled using the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showcheckbox) property.
+The Angular ListView supports checkboxes in default and group lists, enabling selection of multiple items. The checkbox functionality can be enabled using the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/list-view/index-default#showcheckbox) property.
 
 Checkboxes are useful in scenarios where multiple item selection is required. For example, in a shopping cart, users can select or unselect desired items before checkout. Checkboxes are also beneficial for selecting multiple items that belong to the same category using group lists.
 
@@ -30,8 +30,8 @@ Checkboxes are useful in scenarios where multiple item selection is required. Fo
 
 ## Checkbox Position
 
-In ListView, the checkbox can be positioned on either the `Left` or `Right` side of the list item text.
-This can be achieved using the [`checkBoxPosition`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#checkboxposition) property. By default, the checkbox is positioned to the `Left` of the list item text.
+In Angular ListView, the checkbox can be positioned on either the `Left` or `Right` side of the list item text.
+This can be achieved using the [`checkBoxPosition`](https://ej2.syncfusion.com/angular/documentation/api/list-view/index-default#checkboxposition) property. By default, the checkbox is positioned to the `Left` of the list item text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

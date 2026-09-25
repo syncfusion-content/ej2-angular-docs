@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to use custom event emitter in Angular Calendar
 
-The Calendar supports implementing two-way data binding between parent and child components by combining property binding and custom event binding. In this approach, the parent component passes data to the child component, and the child component notifies the parent when the value changes.
+The Angular Calendar supports implementing two-way data binding between parent and child components by combining property binding and custom event binding. In this approach, the parent component passes data to the child component, and the child component notifies the parent when the value changes.
 
 To create a custom event, create an instance of Angular's `EventEmitter` class and decorate it with @Output. When the Calendar value changes, the child component emits the updated value, allowing the parent component to synchronize its data with the child component.
 

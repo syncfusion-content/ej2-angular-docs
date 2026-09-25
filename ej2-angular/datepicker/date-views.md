@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Start View and Depth Restriction in Angular DatePicker
 
-The DatePicker has the following predefined views that provides a flexible way to navigate back and forth to select the date.
+The Angular DatePicker has the following predefined views that provides a flexible way to navigate back and forth to select the date.
 
 | **View** | **Description** |
 | --- | --- |
@@ -22,7 +22,7 @@ The DatePicker has the following predefined views that provides a flexible way t
 
 You can use the [`start`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#start) property to define the initial rendering view.
 
-The following example demonstrates how to create a DatePicker with `decade` as initial rendering view.
+The following example demonstrates how to create a Angular DatePicker with `decade` as initial rendering view.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -42,7 +42,7 @@ Define the [`depth`](https://ej2.syncfusion.com/angular/documentation/api/datepi
 
 > Always the depth view has to be smaller than the start view, otherwise the view restriction will be not restricted.
 
-The following example demonstrates how to create a DatePicker that allows users to select a month.
+The following example demonstrates how to create a Angular DatePicker that allows users to select a month.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

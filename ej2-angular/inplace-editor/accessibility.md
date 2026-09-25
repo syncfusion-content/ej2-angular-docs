@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular In-place Editor
 
-The Inplace editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular In-place Editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Inplace editor component is outlined below.
+The accessibility compliance for the Angular In-place Editor component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -49,9 +49,9 @@ You can use the following key shortcuts to access the Inplace editor without int
 
 ## Ensuring accessibility
 
-The Inplace editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular In-place Editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Inplace editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/inplace-editor.html) in a new window to evaluate the accessibility of the Inplace editor component with accessibility tools.
+The accessibility compliance of the Angular In-place Editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/inplace-editor.html) in a new window to evaluate the accessibility of the Angular In-place Editor component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/inplace-editor.html" %}
 

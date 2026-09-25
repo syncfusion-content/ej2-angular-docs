@@ -19,10 +19,10 @@ For more details about template-driven Forms refer to:<https://angular.io/guide/
 
 * In angular forms mentioning the name is must to process as form elements.
 
-* Mention the `name` attribute to DateTimePicker element which will be used to identify the form element. To register an DateTimePicker element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the DateTimePicker as a form element.
-After that, the DateTimePicker value will be selected based on the ngModel value.
+* Mention the `name` attribute to Angular DateTime Picker element which will be used to identify the form element. To register an Angular DateTime Picker element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the Angular DateTime Picker as a form element.
+After that, the Angular DateTime Picker value will be selected based on the ngModel value.
 
-The following example  demonstrates template driven forms with DateTimePicker component.
+The following example  demonstrates template driven forms with Angular DateTime Picker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

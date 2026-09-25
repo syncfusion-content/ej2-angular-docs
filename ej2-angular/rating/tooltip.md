@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Tooltip in Angular Rating
 
-The rating component supports tooltip to show additional information in rating items by setting the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/rating#showtooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
+The Angular Rating component supports tooltip to show additional information in rating items by setting the [`showTooltip`](https://ej2.syncfusion.com/angular/documentation/api/rating#showtooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -42,7 +42,7 @@ Use the [`tooltipTemplate`](https://ej2.syncfusion.com/angular/documentation/api
 
 ## Tooltip customization
 
-You can customize the appearance of the tooltips using the `cssClass` property of the rating component and by defining the custom styles for tooltip elements like the below example.
+You can customize the appearance of the tooltips using the `cssClass` property of the Angular Rating component and by defining the custom styles for tooltip elements like the below example.
 
 > You can find more information about customizing the appearance of the tooltip in the [Tooltip Customization](https://ej2.syncfusion.com/angular/documentation/tooltip/style) documentation.
 

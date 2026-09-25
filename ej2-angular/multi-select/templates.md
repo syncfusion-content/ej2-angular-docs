@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Templates in Angular MultiSelect Dropdown
 
-The MultiSelect component provides comprehensive template customization options for list items, group headers, selected values, headers and footers. These templates use the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Template engine to compile and render elements with full data binding support, enabling rich UI customization for various use cases such as displaying complex data structures, creating multi-column layouts, and providing contextual information.
+The Angular MultiSelect Dropdown component provides comprehensive template customization options for list items, group headers, selected values, headers and footers. These templates use the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Template engine to compile and render elements with full data binding support, enabling rich UI customization for various use cases such as displaying complex data structures, creating multi-column layouts, and providing contextual information.
 
 ## Item template
 
-The content of each list item within the MultiSelect can be customized using the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/index-default#itemtemplate) property. This template receives the data item as context, allowing access to all properties for custom rendering.
+The content of each list item within the Angular MultiSelect Dropdown can be customized using the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/index-default#itemtemplate) property. This template receives the data item as context, allowing access to all properties for custom rendering.
 
 In the following sample, each list item displays data in a two-column layout to show relevant information effectively.
 
@@ -36,9 +36,9 @@ In the following sample, each list item displays data in a two-column layout to 
 
 ## Value template
 
-The display of currently selected values in the MultiSelect input element can be customized using the [valueTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/index-default#valuetemplate) property. This template affects only the visual representation of selected items in the input field, not the underlying component values.
+The display of currently selected values in the Angular MultiSelect Dropdown input element can be customized using the [valueTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/index-default#valuetemplate) property. This template affects only the visual representation of selected items in the input field, not the underlying component values.
 
-In the following sample, selected values appear as combined text displaying both `FirstName` and `City` separated by a hyphen in the MultiSelect input field.
+In the following sample, selected values appear as combined text displaying both `FirstName` and `City` separated by a hyphen in the Angular MultiSelect Dropdown input field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -104,7 +104,7 @@ In the following sample, the header and list items are designed as a two-column 
 
 The footer element appears at the bottom of the popup list and can contain summary information or additional actions using the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/index-default#footertemplate) property. Common uses include displaying item counts, action buttons, or additional navigation options.
 
-In the following sample, the footer displays the total count of available list items in the MultiSelect.
+In the following sample, the footer displays the total count of available list items in the Angular MultiSelect Dropdown.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -124,7 +124,7 @@ In the following sample, the footer displays the total count of available list i
 
 ## No records template
 
-The MultiSelect supports custom design for the popup list content when no data is available or no search matches are found using the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/index-default#norecordstemplate) property. This template enhances user experience by providing clear feedback about data availability.
+The Angular MultiSelect Dropdown supports custom design for the popup list content when no data is available or no search matches are found using the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/index-default#norecordstemplate) property. This template enhances user experience by providing clear feedback about data availability.
 
 In the following sample, the popup displays a custom notification when no data is available.
 
@@ -144,7 +144,7 @@ In the following sample, the popup displays a custom notification when no data i
 
 The popup list content can be customized when data fetch requests fail at the remote server using the [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/multi-select/index-default#actionfailuretemplate) property. This template provides users with appropriate error messaging and potential recovery actions.
 
-In the following sample, the MultiSelect displays a custom error notification when data fetch requests fail.
+In the following sample, the Angular MultiSelect Dropdown displays a custom error notification when data fetch requests fail.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -191,4 +191,4 @@ In the following sample, the Summary Tag Template displays the count of selected
 
 * [How to bind the data](./data-binding)
 * [How to group the data using header](./grouping)
-* [How to customize the options in MultiSelect](./chip-customization)
+* [How to customize the options in Angular MultiSelect Dropdown](./chip-customization)

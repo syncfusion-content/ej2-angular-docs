@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to two-way binding in Angular TimePicker
 
-The following example demonstrates how to achieve **two-way binding** by binding the **value** to the first TimePicker component by using property binding and binding the model data using **ngModel** to the second TimePicker component. The **value** of the TimePicker will get change, when their is any change in the property value or model value.
+The following example demonstrates how to achieve **two-way binding** by binding the **value** to the first Angular TimePicker component by using property binding and binding the model data using **ngModel** to the second Angular TimePicker component. The **value** of the Angular TimePicker will get change, when their is any change in the property value or model value.
 
-> The two-way binding can also be achieved only by using **property binding** or **model binding** in the TimePicker component.
+> The two-way binding can also be achieved only by using **property binding** or **model binding** in the Angular TimePicker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

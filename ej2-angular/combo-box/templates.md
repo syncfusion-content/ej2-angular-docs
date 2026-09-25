@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Templates in Angular ComboBox
 
-The ComboBox has been provided with several options to customize each list items, group title, header, and footer elements.
+The Angular ComboBox has been provided with several options to customize each list items, group title, header, and footer elements.
 
-To get started quickly with templates in angular ComboBox component, you can check the video below.
+To get started quickly with templates in Angular ComboBox component, you can check the video below.
 
 {% youtube "https://www.youtube.com/watch?v=gY8gh6fAzMQ" %}
 
 ## Item template
 
-The content of each list item within the ComboBox can be customized with the help of [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#itemtemplate) property.
+The content of each list item within the Angular ComboBox can be customized with the help of [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#itemtemplate) property.
 
 In the following sample, each list item is split into two columns to display relevant data's.
 
@@ -63,7 +63,7 @@ In the following sample, employees are grouped according to their city.
 ## Header template
 
 The header element is shown statically at the top of the popup list items within the
-ComboBox, and any custom element can be placed as a header element using the
+Angular ComboBox, and any custom element can be placed as a header element using the
 [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#headertemplate) property.
 
 In the following sample, the list items and its headers are designed and displayed as two columns similar to multiple columns of the grid.
@@ -85,10 +85,10 @@ In the following sample, the list items and its headers are designed and display
 
 ## Footer template
 
-The ComboBox has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using
+The Angular ComboBox has options to show a footer element at the bottom of the list items in the popup list. Here, you can place any custom element as a footer element using
 [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#footertemplate) property.
 
-In the following sample, footer element displays the total number of list items present in the ComboBox.
+In the following sample, footer element displays the total number of list items present in the Angular ComboBox.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -107,7 +107,7 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The ComboBox is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#norecordstemplate) property.
+The Angular ComboBox is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#norecordstemplate) property.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -128,7 +128,7 @@ In the following sample, popup list content displays the notification of no data
 There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the
 [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#actionfailuretemplate) property.
 
-In the following sample, when the data fetch request fails, the ComboBox displays the notification.
+In the following sample, when the data fetch request fails, the Angular ComboBox displays the notification.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

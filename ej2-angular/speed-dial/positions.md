@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Positions in Angular Speed Dial
 
-The Speed dial control can be positioned anywhere on the [`target`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#target) using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#position) property. If the `target` is not defined, then Speed Dial is positioned based on the browser viewport.
+The Angular Speed Dial control can be positioned anywhere on the [`target`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#target) using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#position) property. If the `target` is not defined, then Angular Speed Dial is positioned based on the browser viewport.
 
-The position values of Speed Dial are as follows:
+The position values of Angular Speed Dial are as follows:
 * TopLeft
 * TopCenter
 * TopRight
@@ -40,14 +40,14 @@ The position values of Speed Dial are as follows:
 
 ## Opens items on hover
 
-You can open the Speed Dial action items on mouse hover by setting the [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#opensonhover) property.
+You can open the Angular Speed Dial action items on mouse hover by setting the [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#opensonhover) property.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render SpeedDial component. -->
+    template: `<!-- To Render Angular Speed Dial component. -->
     <button ejs-speeddial id="speeddial" openIconCss='e-icons e-edit' closeIconCss='e-icons e-close' target='#targetElement' [items]='items' [opensOnHover]= 'true'></button>`
 })
 
@@ -60,9 +60,9 @@ export class AppComponent {
 }
 ```
 
-## Programmatically show/hide Speed Dial items
+## Programmatically show/hide Angular Speed Dial items
 
-You can open/close the Speed Dial action items programmatically using [`show`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#show) and [`hide`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#hide) methods.
+You can open/close the Angular Speed Dial action items programmatically using [`show`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#show) and [`hide`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#hide) methods.
 
 Below example demonstrates open/close action items on button click.
 
@@ -83,7 +83,7 @@ Below example demonstrates open/close action items on button click.
 
 ## Programmatically refresh the position
 
-You can refresh the position of the Speed Dial using [`refreshPosition`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/#refreshposition) method when the `target`position is changed.
+You can refresh the position of the Angular Speed Dial using [`refreshPosition`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/#refreshposition) method when the `target`position is changed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

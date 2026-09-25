@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Number Formats in Angular Numeric Textbox
 
-You can format the value of NumericTextBox using [`format`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#format) property.
+You can format the value of Angular Numeric Textbox using [`format`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#format) property.
 The value will be displayed in the specified format when the component is in focused out state. The format string supports both the [standard numeric format string](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx) and [custom numeric format string](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) as specified in MSDN.
 
 ## Standard formats
 
-Standard numeric formats use specifiers like `n` (number), `p` (percentage), and `c` (currency) to format values in the NumericTextBox. By using these format specifiers, you can create percentage and currency input behaviors.
+Standard numeric formats use specifiers like `n` (number), `p` (percentage), and `c` (currency) to format values in the Angular Numeric Textbox. By using these format specifiers, you can create percentage and currency input behaviors.
 
 The following example demonstrates percentage and currency format usage:
 

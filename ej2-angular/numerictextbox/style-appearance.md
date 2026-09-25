@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The following CSS structure can be used to customize the NumericTextBox appearance based on user preference.
 
-## Customizing the appearance of NumericTextBox wrapper element
+## Customizing the appearance of Angular Numeric Textbox wrapper element
 
-Use the following CSS to customize the NumericTextBox wrapper:
+Use the following CSS to customize the Angular Numeric Textbox wrapper:
 
 ```css
 /* To specify height and font size */
@@ -27,9 +27,9 @@ Use the following CSS to customize the NumericTextBox wrapper:
 }
 ```
 
-## Customizing the NumericTextBox icons
+## Customizing the Angular Numeric Textbox icons
 
-Use the following CSS to customize the NumericTextBox spin button icons:
+Use the following CSS to customize the Angular Numeric Textbox spin button icons:
 
 ```css
 /* To specify font size and background color */

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Templates in Angular MultiColumn ComboBox
 
-The MultiColumn ComboBox provides several template options to customize each items, groups, header and footer elements.
+The Angular MultiColumn ComboBox provides several template options to customize each items, groups, header and footer elements.
 
 ## Item template
 

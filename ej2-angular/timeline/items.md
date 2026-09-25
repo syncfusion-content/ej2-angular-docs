@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Items in Angular Timeline
 
-The Timeline items are configured using the `<e-item>` tag directive. Each item supports multiple configuration options including `content`, `oppositeContent`, `dotCss`, `disabled`, and `cssClass` properties to build rich, interactive timelines.
+The Angular Timeline items are configured using the `<e-item>` tag directive. Each item supports multiple configuration options including `content`, `oppositeContent`, `dotCss`, `disabled`, and `cssClass` properties to build rich, interactive timelines.
 
 ## Adding content
 
-Define the primary content for Timeline items using the [content](../api/timeline/timelineItem#content) property. This property accepts plain strings or templated content for flexible presentation.
+Define the primary content for Angular Timeline items using the [content](../api/timeline/timelineItem#content) property. This property accepts plain strings or templated content for flexible presentation.
 
 ### String content
 
-Provide simple text content for Timeline items using string values.
+Provide simple text content for Angular Timeline items using string values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,7 +40,7 @@ Provide simple text content for Timeline items using string values.
 
 ### Templated content
 
-Create rich, dynamic item content for Timeline items by specifying template selectors that reference HTML elements with custom markup and styling.
+Create rich, dynamic item content for Angular Timeline items by specifying template selectors that reference HTML elements with custom markup and styling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -85,7 +85,7 @@ Provide supplementary information using the [oppositeContent](../api/timeline/ti
 
 ## Customizing dot appearance
 
-Personalize the visual appearance of Timeline item dots using the [dotCss](../api/timeline/timelineItem#dotcss) property. This property accepts CSS class names that enable custom styling including icons, background images, colors, and text content.
+Personalize the visual appearance of Angular Timeline item dots using the [dotCss](../api/timeline/timelineItem#dotcss) property. This property accepts CSS class names that enable custom styling including icons, background images, colors, and text content.
 
 ### Adding icons
 

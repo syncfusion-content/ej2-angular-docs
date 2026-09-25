@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular ListBox
 
-The List box component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular ListBox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the List box component is outlined below.
+The accessibility compliance for the Angular ListBox component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the List box component is outlined below.
 
 ## WAI-ARIA attributes
 
-The List box component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet the accessibility. The following ARIA attributes are used in the List box component:
+The Angular ListBox component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/) patterns to meet the accessibility. The following ARIA attributes are used in the List box component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -51,7 +51,7 @@ The List box component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/p
 
 ## Keyboard interaction
 
-The List box component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the List box component.
+The Angular ListBox component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Angular ListBox component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -68,9 +68,9 @@ The List box component followed the [keyboard interaction](https://www.w3.org/WA
 
 ## Ensuring accessibility
 
-The List box component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular ListBox component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the List box component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-box.html) in a new window to evaluate the accessibility of the List box component with accessibility tools.
+The accessibility compliance of the Angular ListBox component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/list-box.html) in a new window to evaluate the accessibility of the Angular ListBox component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/listbox/getting-started-cs1" %}
 

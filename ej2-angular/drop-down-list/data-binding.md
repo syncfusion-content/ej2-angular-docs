@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular Dropdown List
 
-The DropDownList loads data from local data sources or remote data services through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#datasource) property. It supports `array` and `DataManager` data types.
+The Angular Dropdown List loads data from local data sources or remote data services through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#datasource) property. It supports `array` and `DataManager` data types.
 
-The DropDownList also supports different kinds of data services, such as OData, OData V4, and Web API, and data formats, such as XML, JSON, and JSONP, with the help of `DataManager` adapters.
+The Angular Dropdown List also supports different kinds of data services, such as OData, OData V4, and Web API, and data formats, such as XML, JSON, and JSONP, with the help of `DataManager` adapters.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -24,15 +24,15 @@ The DropDownList also supports different kinds of data services, such as OData, 
 `string` | Defines whether the field value is disabled or not. |
 | [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#htmlattributes) | `string` | Allows additional attributes such as title, disabled, etc., to configure the elements in various ways to meet the criteria.
 
-> When binding complex data to the DropDownList, ensure that the fields are mapped correctly. Otherwise, the selected item will be undefined.
+> When binding complex data to the Angular Dropdown List, ensure that the fields are mapped correctly. Otherwise, the selected item will be undefined.
 
 ## Binding local data
 
-Local data can be bound to the DropDownList from different types of arrays as described below.
+Local data can be bound to the Angular Dropdown List from different types of arrays as described below.
 
 ### 1. Array of simple data
 
-The DropDownList supports loading an array of primitive data, such as strings and numbers. In this case, the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields are mapped to the same field.
+The Angular Dropdown List supports loading an array of primitive data, such as strings and numbers. In this case, the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields are mapped to the same field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -48,7 +48,7 @@ The DropDownList supports loading an array of primitive data, such as strings an
 
 ### 2. Binding to an array of objects
 
-The DropDownList can generate its list items from an array of objects. To do this, map the appropriate data source columns to the [fields](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#fields) property.
+The Angular Dropdown List can generate its list items from an array of objects. To do this, map the appropriate data source columns to the [fields](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#fields) property.
 
 In the following example, the `Id` and `Game` columns are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields, respectively.
 
@@ -66,7 +66,7 @@ In the following example, the `Id` and `Game` columns are mapped to the [`value`
 
 ### 3. Binding to an array of complex objects
 
-The DropDownList can also be bound to an array of nested complex objects. To do this, provide the nested column name to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields.
+The Angular Dropdown List can also be bound to an array of nested complex objects. To do this, provide the nested column name to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields.
 
 In the following example, the `Code.Id` and `Country.Name` nested columns are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#value) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/fieldSettingsModel#text) fields, respectively.
 
@@ -84,7 +84,7 @@ In the following example, the `Code.Id` and `Country.Name` nested columns are ma
 
 ## Binding remote data
 
-The DropDownList supports retrieving data from remote data services with the help of the `DataManager` component. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#query) property is used to fetch data from the database and bind it to the DropDownList.
+The Angular Dropdown List supports retrieving data from remote data services with the help of the `DataManager` component. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#query) property is used to fetch data from the database and bind it to the Angular Dropdown List.
 
 The following sample displays the first six contacts from the "Customers" table of the `Northwind` Data Service.
 
@@ -104,7 +104,7 @@ The following sample displays the first six contacts from the "Customers" table 
 
 An `Observable` is used extensively by Angular since it provides significant benefits over other techniques for event handling, asynchronous programming, and handling multiple values.
 
-The DropDownList data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe subscribes to the observable object and resolves the latest value it has emitted.
+The Angular Dropdown List data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe subscribes to the observable object and resolves the latest value it has emitted.
 
 [app.component.ts]
 ```ts
@@ -132,7 +132,7 @@ export class AppComponent {
   // maps the remote data column to fields property
   public remoteFields: Object = { value: 'CustomerID' };
 
-  // set the placeholder to DropDownList input element
+  // set the placeholder to Angular Dropdown List input element
   public remoteWaterMark: string = 'Select a customer';
 }
 ```

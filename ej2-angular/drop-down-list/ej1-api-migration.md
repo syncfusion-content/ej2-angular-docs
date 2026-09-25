@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Migrate from Essential JS 1 in Angular Dropdown List
 
-This article describes the API migration process of the DropDownList component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of the Angular Dropdown List component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DataBinding
 

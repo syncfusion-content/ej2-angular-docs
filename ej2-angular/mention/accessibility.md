@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Mention
 
-Web accessibility makes web content and web applications more accessible for people with disabilities. Mention component provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using the attributes such as `aria-selected` and `aria-activedescendent`.
+Web accessibility makes web content and web applications more accessible for people with disabilities. Angular Mention component provides built-in compliance with `WAI-ARIA` specifications. The `WAI-ARIA` support is achieved using the attributes such as `aria-selected` and `aria-activedescendent`.
 
-The Mention component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Mention component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Mention component is outlined below.
+The accessibility compliance for the Angular Mention component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,7 +42,7 @@ The accessibility compliance for the Mention component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Mention component uses the `Listbox` role where each list item has an `option` role. The following `ARIA attributes` denote the Mention state.
+The Angular Mention component uses the `Listbox` role where each list item has an `option` role. The following `ARIA attributes` denote the Angular Mention state.
 
 | **Properties** | **Functionalities** |
 | --- | --- |
@@ -52,7 +52,7 @@ The Mention component uses the `Listbox` role where each list item has an `optio
 
 ## Keyboard interaction
 
-You can use the following key shortcuts to access the Mention without interruptions.
+You can use the following key shortcuts to access the Angular Mention without interruptions.
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
@@ -76,9 +76,9 @@ You can use the following key shortcuts to access the Mention without interrupti
 
 ## Ensuring accessibility
 
-The Mention component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Mention component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Mention component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/mention.html) in a new window to evaluate the accessibility of the Mention component with accessibility tools.
+The accessibility compliance of the Angular Mention component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/mention.html) in a new window to evaluate the accessibility of the Angular Mention component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/mention.html" %}
 

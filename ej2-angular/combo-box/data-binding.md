@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular ComboBox
 
-The ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#datasource) property. It supports the data type of `array` or `DataManager`.
+The Angular ComboBox loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#datasource) property. It supports the data type of `array` or `DataManager`.
 
-The ComboBox also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
+The Angular ComboBox also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -21,7 +21,7 @@ The ComboBox also supports different kinds of data services such as OData, OData
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-> When binding complex data to the ComboBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+> When binding complex data to the Angular ComboBox, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Binding local data
 
@@ -29,7 +29,7 @@ Local data can be represented in two ways as described below.
 
 ### 1. Array of simple data
 
-The ComboBox has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
+The Angular ComboBox has support to load array of primitive data such as strings and numbers. Here, both value and text field act the same.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -45,7 +45,7 @@ The ComboBox has support to load array of primitive data such as strings and num
 
 ### 2. Array of JSON data
 
-The ComboBox can generate its list items through an array of complex data. For this,
+The Angular ComboBox can generate its list items through an array of complex data. For this,
 the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/combo-box#fields)
 property.
 
@@ -65,7 +65,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 
 ### 3. Array of Complex data
 
-The ComboBox can generate its list items through an array of complex data. For this,
+The Angular ComboBox can generate its list items through an array of complex data. For this,
 the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/combo-box#fields) property.
 
 In the following example, `Code.Id` column and `'Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
@@ -84,8 +84,8 @@ In the following example, `Code.Id` column and `'Country.Name` column from compl
 
 ## Binding remote data
 
-The ComboBox supports retrieval of data from remote data services with the help
-of `DataManager` component. The `Query` property allows is used to fetch data from the database and bind it to the ComboBox.
+The Angular ComboBox supports retrieval of data from remote data services with the help
+of `DataManager` component. The `Query` property allows is used to fetch data from the database and bind it to the Angular ComboBox.
 
 In the following sample, displayed first 6 contacts from `customer` table of `Northwind` Data Service.
 
@@ -105,7 +105,7 @@ In the following sample, displayed first 6 contacts from `customer` table of `No
 
 An `Observable` is used extensively by Angular since it provide significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
-ComboBox data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
+Angular ComboBox data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
 
 [app.component.ts]
 ```ts
@@ -116,7 +116,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-root',
-    // specifies the template string for the ComboBox component with dataSource
+    // specifies the template string for the Angular ComboBox component with dataSource
     template: ` <ejs-combobox  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-combobox >`,
 })
 export class AppComponent {
@@ -133,7 +133,7 @@ export class AppComponent {
   // maps the remote data column to fields property
   public remoteFields: Object = { value: 'CustomerID' };
 
-  // set the placeholder to ComboBox input element
+  // set the placeholder to Angular ComboBox input element
   public remoteWaterMark: string = 'Select a customer';
 }
 ```

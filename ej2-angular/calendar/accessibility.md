@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Calendar
 
-The Calendar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Calendar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Calendar component is outlined below.
+The accessibility compliance for the Angular Calendar component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,19 +42,19 @@ The accessibility compliance for the Calendar component is outlined below.
 
 The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
-Calendar provides built-in compliance with the [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/) specifications. WAI-ARIA support is achieved through the attributes like `aria-label`,`aria-selected`, `aria-disabled`, `aria-activedescendant` applied for navigation buttons, disabled and active day cells.
+Angular Calendar provides built-in compliance with the [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/) specifications. WAI-ARIA support is achieved through the attributes like `aria-label`,`aria-selected`, `aria-disabled`, `aria-activedescendant` applied for navigation buttons, disabled and active day cells.
 
-It helps to provide the information about the widget for assistive technology to the disabled person in the screen reader. The Calendar component uses `role=grid` and `gridcell` for each day cell.
+It helps to provide the information about the widget for assistive technology to the disabled person in the screen reader. The Angular Calendar component uses `role=grid` and `gridcell` for each day cell.
 
-The following table lists the WAI-ARIA attributes and roles applied to the Calendar component.
+The following table lists the WAI-ARIA attributes and roles applied to the Angular Calendar component.
 
 | **Attribute / Role** | **Description** |
 | --- | --- |
 | `aria-label` | Provides the text label for the previous and next month navigation elements. It enables screen readers to announce the element. |
-| `aria-selected` | Indicates the currently selected date of the Calendar component. |
-| `aria-disabled` | Indicates the disabled state of the Calendar component. |
-| `aria-activedescendant` | Helps in managing the current active child of the Calendar component. |
-| `role=grid` | Gives assistive technologies information about how to handle the Calendar container element. |
+| `aria-selected` | Indicates the currently selected date of the Angular Calendar component. |
+| `aria-disabled` | Indicates the disabled state of the Angular Calendar component. |
+| `aria-activedescendant` | Helps in managing the current active child of the Angular Calendar component. |
+| `role=grid` | Gives assistive technologies information about how to handle the Angular Calendar container element. |
 | `gridcell` | Defines the individual day cell that can be focusable and selectable. |
 
 A sample of the rendered WAI-ARIA structure is shown below.
@@ -76,7 +76,7 @@ A sample of the rendered WAI-ARIA structure is shown below.
 
 ## Keyboard Interaction
 
-You can use the following keys to interact with the Calendar.
+You can use the following keys to interact with the Angular Calendar.
 The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/).
 
 It supports the below list of shortcut keys.
@@ -99,7 +99,7 @@ It supports the below list of shortcut keys.
 | <kbd>Control + Home</kbd>  | Focus the starting date in the current year. |
 | <kbd>Control + End</kbd>  | Focus the ending date in the current year. |
 
-> To focus the Calendar component, use the `alt+t` keys. The above shortcut keys work only after the Calendar component receives focus.
+> To focus the Angular Calendar component, use the `alt+t` keys. The above shortcut keys work only after the Angular Calendar component receives focus.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -115,9 +115,9 @@ It supports the below list of shortcut keys.
 
 ## Ensuring accessibility
 
-The Calendar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Calendar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Calendar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/calendar.html) in a new window to evaluate the accessibility of the Calendar component with accessibility tools.
+The accessibility compliance of the Angular Calendar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/calendar.html) in a new window to evaluate the accessibility of the Calendar component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/calendar.html" %}
 

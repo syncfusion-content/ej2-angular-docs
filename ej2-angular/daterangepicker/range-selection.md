@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Range Restriction in Angular DateRangePicker
 
-Range selection in a DateRangePicker can be made-to-order with desire restrictions based on application needs.
+Range selection in a Angular DateRangePicker can be made-to-order with desire restrictions based on application needs.
 
 ## Restrict the range within a range
 

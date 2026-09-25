@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Types
 
-The OTP Input component supports multiple input types to accommodate different OTP scenarios. Each type has specific use cases and validation rules for secure and user-friendly OTP entry.
+The Angular OTP Input component supports multiple input types to accommodate different OTP scenarios. Each type has specific use cases and validation rules for secure and user-friendly OTP entry.
 
 ### Number type
 
@@ -70,7 +70,7 @@ You can set the [type](https://ej2.syncfusion.com/angular/documentation/api/otp-
 
 ## Value
 
-You can specify the value of OTP Input by using the [value](https://ej2.syncfusion.com/angular/documentation/api/otp-input#value) property.
+You can specify the value of Angular OTP Input by using the [value](https://ej2.syncfusion.com/angular/documentation/api/otp-input#value) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

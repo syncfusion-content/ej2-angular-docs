@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to customized checkbox in Angular Checkbox
 
-## Customize CheckBox Appearance
+## Customize Angular Checkbox Appearance
 
-You can customize the appearance of the CheckBox module using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box#cssclass) property.
+You can customize the appearance of the Angular Checkbox module using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box#cssclass) property.
 
-The background and border color of the CheckBox is customized through the custom classes to create primary, success, warning, danger, and info type of checkbox.
+The background and border color of the Angular Checkbox is customized through the custom classes to create primary, success, warning, danger, and info type of Angular Checkbox.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -31,9 +31,9 @@ The background and border color of the CheckBox is customized through the custom
   
 {% previewsample "page.domainurl/samples/check-box/howto-cs1" %}
 
-## Customize CheckBox frame
+## Customize Angular Checkbox frame
 
-CheckBox frame can be customized as per the requirement by adding CSS rules.
+Angular Checkbox frame can be customized as per the requirement by adding CSS rules.
 
 In the following example, to-do list is displayed with round checkbox by changing `border-radius` as `100%` by adding `e-custom` class.
 
@@ -54,7 +54,7 @@ In the following example, to-do list is displayed with round checkbox by changin
 
 ## Customize check icon
 
-CheckBox check icon can be customized as per the requirement by adding CSS rules.
+Angular Checkbox check icon can be customized as per the requirement by adding CSS rules.
 
 In the following example, the check icon can be customized by changing check icon content, background and border color in focus and hovered states by adding `e-checkicon` class.
 

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: File Source in Angular Uploader | Syncfusion
-description: Enable clipboard image paste-to-upload in the Angular Uploader with the selected event and getUniqueID, and handle server-side save actions for pasted images.
+title: File Source in Angular File Upload | Syncfusion
+description: Enable clipboard image paste-to-upload in the Angular File Upload with the selected event and getUniqueID, and handle server-side save actions for pasted images.
 platform: ej2-angular
 control: File source 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File Source in Angular Uploader
+# File Source in Angular File Upload
 
 ## Paste to upload
 
-The Uploader component allows you to upload files by selecting or dragging files from your file system. It also supports pasting images directly from the clipboard. You can upload any image currently copied in your clipboard.
+The Angular File Upload component allows you to upload files by selecting or dragging files from your file system. It also supports pasting images directly from the clipboard. You can upload any image currently copied in your clipboard.
 
 > When you paste an image, it is saved on the server with the default filename `image.png`. You can rename the file on the server side. Use the `getUniqueID` method to generate a unique filename.
 Refer to the following example for implementation details.
@@ -56,7 +56,7 @@ public void Save() {
 
 ## Directory upload
 
-The Uploader component allows you to upload all files in a directory (and its subdirectories) to the server using the [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#directoryupload) property. When enabled, the Uploader iterates through all files and subdirectories in the selected folder.
+The Angular File Upload component allows you to upload all files in a directory (and its subdirectories) to the server using the [directoryUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#directoryupload) property. When enabled, the Uploader iterates through all files and subdirectories in the selected folder.
 This feature allows you to select entire folders instead of individual files.
 
 > Directory upload is supported only in browsers that support HTML5 directory selection. In Microsoft Edge, you can use drag-and-drop to upload directories.
@@ -115,14 +115,14 @@ public void Save() {
 
 ## Drag and drop
 
-The Uploader component supports drag-and-drop file uploads.
+The Angular File Upload component supports drag-and-drop file uploads.
 You can drag files from your file system and drop them into the drop area.
-By default, the Uploader component itself acts as the drop area.
+By default, the Angular File Upload component itself acts as the drop area.
 The drop area is highlighted when you drag files over it.
 
 ### Custom drop area
 
-The Uploader component allows you to set an external HTML element as the drop area using the `dropArea` property.
+The Angular File Upload component allows you to set an external HTML element as the drop area using the `dropArea` property.
 The element can be specified as an HTML element reference or an element ID string. For example, `[dropArea]='#dropElement'` binds to a template reference variable, while `[dropArea]="'dropAreaId'"` binds to an element by its ID string.
 
 {% tabs %}

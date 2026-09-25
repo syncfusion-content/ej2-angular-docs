@@ -1,17 +1,17 @@
 ---
 layout: post
-title: How to build a Reversible Range Slider in Angular | Syncfusion
-description: Reverse the Angular Range Slider value direction by swapping the min and max properties, or by enabling enableRtl for horizontal layouts.
+title: How to build a Reversible Angular Slider | Syncfusion
+description: Reverse the Angular Slider value direction by swapping the min and max properties, or by enabling enableRtl for horizontal layouts.
 platform: ej2-angular
-control: Range Slider
+control: Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# How to build a Reversible Range Slider in Angular
+# How to build a Reversible Angular Slider
 
-Create a Range Slider with reversed value ordering by swapping the [min](https://ej2.syncfusion.com/angular/documentation/api/slider#min) and [max](https://ej2.syncfusion.com/angular/documentation/api/slider#max) properties. Set `min` to the maximum value and `max` to the minimum value. The following example demonstrates this approach.
+Create a Angular Slider with reversed value ordering by swapping the [min](https://ej2.syncfusion.com/angular/documentation/api/slider#min) and [max](https://ej2.syncfusion.com/angular/documentation/api/slider#max) properties. Set `min` to the maximum value and `max` to the minimum value. The following example demonstrates this approach.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

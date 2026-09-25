@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Ticks in Angular Range Slider | Syncfusion
-description: Display major and minor reference points on the Angular Range Slider by configuring smallStep, largeStep, and showSmallTicks for clearer value selection.
+title: Ticks in Angular Slider | Syncfusion
+description: Display major and minor reference points on the Angular Slider by configuring smallStep, largeStep, and showSmallTicks for clearer value selection.
 platform: ej2-angular
-control: Range Slider 
+control: Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ticks in Angular Range Slider
+# Ticks in Angular Slider
 
-The [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#ticks) property adds visual reference points to the slider, helping users identify available values. Ticks are configured using [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#smallstep) (minor ticks) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#largestep) (major ticks). By default, only major tick values are displayed. Use the [`showSmallTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#showsmallticks) property to show or hide minor ticks.
+The [`ticks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#ticks) property adds visual reference points to the Angular Slider, helping users identify available values. Ticks are configured using [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#smallstep) (minor ticks) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#largestep) (major ticks). By default, only major tick values are displayed. Use the [`showSmallTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksDataModel/#showsmallticks) property to show or hide minor ticks.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -46,7 +46,7 @@ The [`step`](https://ej2.syncfusion.com/angular/documentation/api/slider/#step) 
 
 ## Min and Max
 
-Set the minimum and maximum values of the Range Slider using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/slider/#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/slider/#max) properties. By default, the minimum value is 1 and the maximum value is 100. The following sample demonstrates a slider configured with a minimum of 100 and maximum of 1000.
+Set the minimum and maximum values of the Angular Slider using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/slider/#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/slider/#max) properties. By default, the minimum value is 1 and the maximum value is 100. The following sample demonstrates a slider configured with a minimum of 100 and maximum of 1000.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

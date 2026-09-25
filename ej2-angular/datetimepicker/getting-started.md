@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular DateTime Picker
 
-The DateTimePicker component enables users to select both a date and time through an interactive calendar and time selection interface, providing a convenient way to capture precise date-time values for scheduling, planning, and event management.
+The Angular DateTime Picker component enables users to select both a date and time through an interactive calendar and time selection interface, providing a convenient way to capture precise date-time values for scheduling, planning, and event management.
 
-This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateTimePicker component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
+This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Angular DateTime Picker component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
 The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
@@ -72,9 +72,9 @@ cd syncfusion-angular-app
 
 > Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
 
-## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateTimePicker package
+## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateTime Picker package
 
-To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateTimePicker** package, use the following command:
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateTime Picker** package, use the following command:
 
 ```bash
 ng add @syncfusion/ej2-angular-calendars
@@ -90,7 +90,7 @@ npm install @syncfusion/ej2-angular-calendars
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> DateTimePicker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateTime Picker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -104,11 +104,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/datetimepicker/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> DateTimePicker component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateTime Picker component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the DateTimePicker import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular DateTime Picker import, template, and data into your generated file.
 
-> For the full property list, see the [DateTimePicker API reference](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker/index-default).
+> For the full property list, see the [Angular DateTime Picker API reference](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker/index-default).
 
 ```typescript
 
@@ -141,7 +141,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the DateTimePicker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular DateTime Picker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 
@@ -151,14 +151,14 @@ The following example illustrates the output in your browser.
 
 ## Setting the min and max
 
-The minimum and maximum date time can be defined with the help of `min` and `max` property. The following example demonstrates to set the `min` and `max` on initializing the DateTimePicker. To know more about range restriction in Angular DateTime Picker, please refer this [page](./date-time-range).
+The minimum and maximum date time can be defined with the help of `min` and `max` property. The following example demonstrates to set the `min` and `max` on initializing the Angular DateTime Picker. To know more about range restriction in Angular DateTime Picker, please refer this [page](./date-time-range).
   
 {% previewsample "page.domainurl/samples/datetimepicker/accessibility-cs5" %}
 
 ## See Also
 
-* [Render DateTimePicker with specific culture](./globalization)
-* [How to achieve validation with DateTimePicker](./how-to/custom-validation-using-form-validator)
-* [How to achieve two-way binding with DateTimePicker](./how-to/two-way-binding)
-* [Reactive forms with DateTimePicker](./how-to/reactive-form)
-* [Template-driven forms with DateTimePicker](./how-to/template-driven-forms)
+* [Render Angular DateTime Picker with specific culture](./globalization)
+* [How to achieve validation with Angular DateTime Picker](./how-to/custom-validation-using-form-validator)
+* [How to achieve two-way binding with Angular DateTime Picker](./how-to/two-way-binding)
+* [Reactive forms with Angular DateTime Picker](./how-to/reactive-form)
+* [Template-driven forms with Angular DateTime Picker](./how-to/template-driven-forms)

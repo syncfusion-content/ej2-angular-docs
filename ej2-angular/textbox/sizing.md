@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Sizing in Angular TextBox
 
-The TextBox component supports three distinct sizing options to accommodate different design requirements and user interface contexts. Each size variant maintains consistent functionality while providing visual flexibility for various application layouts.
+The Angular TextBox component supports three distinct sizing options to accommodate different design requirements and user interface contexts. Each size variant maintains consistent functionality while providing visual flexibility for various application layouts.
 
 Property     | Description
 ------------ | -------------
@@ -20,9 +20,9 @@ Property     | Description
 
 ## Implementation
 
-Use the appropriate CSS class through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to achieve the desired TextBox size. The small variant works well in compact interfaces or dense data entry forms, while the large variant provides better accessibility and prominence in primary input scenarios.
+Use the appropriate CSS class through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to achieve the desired Angular TextBox size. The small variant works well in compact interfaces or dense data entry forms, while the large variant provides better accessibility and prominence in primary input scenarios.
 
->Note: Further customize the TextBox appearance by using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to add custom classes that apply additional styling to meet specific design requirements.
+>Note: Further customize the Angular TextBox appearance by using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/#cssclass) property to add custom classes that apply additional styling to meet specific design requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

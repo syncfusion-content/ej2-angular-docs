@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Resizing Panels in Angular Dashboard Layout
 
-The Dashboard Layout component enables dynamic panel resizing functionality through the [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#allowresizing) property. This functionality allows users to dynamically resize panels using resizing handles that control panel dimensions in various directions.
+The Angular Dashboard Layout component enables dynamic panel resizing functionality through the [`allowResizing`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#allowresizing) property. This functionality allows users to dynamically resize panels using resizing handles that control panel dimensions in various directions.
 
 By default, panels can be resized only in the south-east direction. However, panels can also be resized in east, west, north, south, and south-west directions by specifying the required directions with the [`resizableHandles`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#resizablehandles) property.
 
 ## Resize events
 
-The Dashboard Layout triggers the following events during panel resize operations:
+The Angular Dashboard Layout triggers the following events during panel resize operations:
 
 
 | API Reference | Description | Use Case |
@@ -26,7 +26,7 @@ The Dashboard Layout triggers the following events during panel resize operation
 |[resizeStop](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#resizestop) | Triggers when panel resize completes | Perfect for saving final panel state |
 
 
-The following sample demonstrates how to enable and disable panel resizing in the Dashboard Layout component with different directional handles:
+The following sample demonstrates how to enable and disable panel resizing in the Angular Dashboard Layout component with different directional handles:
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/dashboard-layout/resizing-of-panels-cs1/src/app.component.ts %}
@@ -45,7 +45,7 @@ The following sample demonstrates how to enable and disable panel resizing in th
 
 ## Programmatic panel resizing
 
-Dashboard Layout panels can be resized programmatically using the [resizePanel](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#resizepanel) method. The method is invoked as follows,
+Angular Dashboard Layout panels can be resized programmatically using the [resizePanel](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#resizepanel) method. The method is invoked as follows,
 ### Method signature
 
 ```js
@@ -58,7 +58,7 @@ resizePanel(id, sizeX, sizeY)
 * sizeX - New panel width in cells count for resizing the panel.
 * sizeY - New panel height in cells count for resizing the panel.
 
-The following sample demonstrates how to resize panels programmatically during the Dashboard Layout's [created](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#created) event:
+The following sample demonstrates how to resize panels programmatically during the Angular Dashboard Layout's [created](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#created) event:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

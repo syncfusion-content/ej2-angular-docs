@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular MultiSelect Dropdown
 
-The MultiSelect component follows WAI-ARIA specifications and applies WAI-ARIA roles, states, and properties along with comprehensive keyboard support. It provides complete keyboard interaction and ARIA accessibility features that ensure usability for people who use assistive technologies or rely entirely on keyboard navigation.
+The  Angular MultiSelect Dropdown component follows WAI-ARIA specifications and applies WAI-ARIA roles, states, and properties along with comprehensive keyboard support. It provides complete keyboard interaction and ARIA accessibility features that ensure usability for people who use assistive technologies or rely entirely on keyboard navigation.
 
-The MultiSelect component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
+The  Angular MultiSelect Dropdown component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 ## WAI-ARIA attributes
 
-The MultiSelect component uses the `Listbox` role, and each list item has an `option` role. The following ARIA attributes indicate the MultiSelect state:
+The  Angular MultiSelect Dropdown component uses the `Listbox` role, and each list item has an `option` role. The following ARIA attributes indicate the Multiselect state:
 
 | **Properties** | **Functionalities** |
 | --- | --- |
@@ -30,7 +30,7 @@ The MultiSelect component uses the `Listbox` role, and each list item has an `op
 
 ## Accessibility compliance
 
-The accessibility compliance for the MultiSelect component is outlined below.
+The accessibility compliance for the  Angular MultiSelect Dropdown component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -75,7 +75,7 @@ You can use the following key shortcuts to access the MultiSelect without interr
 | <kbd>Home</kbd> | Set focus to the first item. |
 | <kbd>End</kbd> | Set focus to the last item. |
 
-> In the sample below, focus the MultiSelect component using <kbd>Alt + T</kbd> keys.
+> In the sample below, focus the  Angular MultiSelect Dropdown component using <kbd>Alt + T</kbd> keys.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -91,9 +91,9 @@ You can use the following key shortcuts to access the MultiSelect without interr
 
 ## Ensuring accessibility
 
-The MultiSelect component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The  Angular MultiSelect Dropdown component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the MultiSelect component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/multi-select.html) in a new window to evaluate the accessibility of the MultiSelect component with accessibility tools.
+The accessibility compliance of the  Angular MultiSelect Dropdown component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/multi-select.html) in a new window to evaluate the accessibility of the  Angular MultiSelect Dropdown component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/multi-select.html" %}
 

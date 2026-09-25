@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Templates in Angular AutoComplete
 
-The AutoComplete component provides several options to customize the list items, group title, header, and footer elements.
+The Angular AutoComplete component provides several options to customize the list items, group title, header, and footer elements.
 
 ## Item template
 
-The content of each list item within the AutoComplete can be customized using the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#itemtemplate) property.
+The content of each list item within the Angular AutoComplete can be customized using the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#itemtemplate) property.
 
 In the following sample, each list item uses a two-column layout to display the relevant information.
 
@@ -56,7 +56,7 @@ In the following sample, employees are grouped by city.
 
 ## Header template
 
-The header element is shown statically at the top of the suggestion list items within the AutoComplete, and any custom element can be displayed in the header using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#headertemplate) property.
+The header element is shown statically at the top of the suggestion list items within the Angular AutoComplete, and any custom element can be displayed in the header using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#headertemplate) property.
 
 In the following sample, the list items and their headers are designed and displayed as two columns, similar to multiple columns of a grid.
 
@@ -77,9 +77,9 @@ In the following sample, the list items and their headers are designed and displ
 
 ## Footer template
 
-The AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#footertemplate) property.
+The Angular AutoComplete has options to show a footer element at the bottom of the list items in the suggestion list. Here, you can place any custom element as a footer element using [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#footertemplate) property.
 
-In the following sample, footer element displays the total number of list items present in the AutoComplete.
+In the following sample, footer element displays the total number of list items present in the Angular AutoComplete.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -98,7 +98,7 @@ In the following sample, footer element displays the total number of list items 
 
 ## No records template
 
-The AutoComplete supports custom design for the popup list content when no data is available or no search matches are found, using the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property.
+The Angular AutoComplete supports custom design for the popup list content when no data is available or no search matches are found, using the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -119,7 +119,7 @@ In the following sample, popup list content displays the notification of no data
 There is also an option to custom design the popup list content when the data fetch request fails at the remote server. This can be achieved using the
 [actionFailureTemplate](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) property.
 
-In the following sample, when the data fetch request fails, the AutoComplete displays the notification.
+In the following sample, when the data fetch request fails, the Angular AutoComplete displays the notification.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

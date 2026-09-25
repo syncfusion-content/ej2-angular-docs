@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Timezone Behavior in Angular DateTime Picker
 
-The DateTimePicker component displays and maintains the selected date and time value based on the client system’s current time zone. When a user selects a value, it is stored and rendered using the local time zone of the system at the time of selection. This ensures that the value remains consistent and predictable during user interaction.
+The Angular DateTime Picker component displays and maintains the selected date and time value based on the client system’s current time zone. When a user selects a value, it is stored and rendered using the local time zone of the system at the time of selection. This ensures that the value remains consistent and predictable during user interaction.
 
-N> if the system time zone is changed dynamically after a value is selected, the DateTimePicker will **not update or shift** the selected value. The component preserves the original selection, ensuring a stable and reliable user experience.
+N> if the system time zone is changed dynamically after a value is selected, the Angular DateTime Picker will **not update or shift** the selected value. The component preserves the original selection, ensuring a stable and reliable user experience.
 
 ## `serverTimezoneOffset`
 

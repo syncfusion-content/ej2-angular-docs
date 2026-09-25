@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to CSS customize the DatePicker in Angular DatePicker
 
-To customize DatePicker UI, you can make use of [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default#cssclass) which will be added to DatePicker component as the root CSS class. With this CSS class, you can override existing styles of DatePicker.
+To customize Angular DatePicker UI, you can make use of [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/index-default#cssclass) which will be added to DatePicker component as the root CSS class. With this CSS class, you can override existing styles of Angular DatePicker.
 
 Following is the list of classes that provides flexible way to customize the DateRangePicker component.
 

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Rendering modes
 
-This section explains the supported rendering modes of the **In-place Editor**. Possible Rendering modes are as follows.
+This section explains the supported rendering modes of the **Angular In-place Editor**. Possible Rendering modes are as follows.
 
     * Popup
     * Inline
@@ -120,7 +120,7 @@ In the following sample, when switching drop-down item, the selected value assig
 
 ## Display modes
 
-By default, **In-place Editor** input element highlighted with a dotted underline. To remove dotted underline from input element, add `data-underline="false"` attribute at **In-place Editor** root element.
+By default, **Angular In-place Editor** input element highlighted with a dotted underline. To remove dotted underline from input element, add `data-underline="false"` attribute at **Angular In-place Editor** root element.
 
 The following sample, denotes intractable and normal display modes with different samples.
 

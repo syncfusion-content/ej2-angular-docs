@@ -1,22 +1,22 @@
 ---
 layout: post
-title: How to use slider in reactive form in Angular Range Slider | Syncfusion
-description: Integrate the Angular Range Slider into a reactive form with FormGroup validation, Validators, and reactive CSS state classes for feedback.
+title: How to use slider in reactive form in Angular Slider | Syncfusion
+description: Integrate the Angular Slider into a reactive form with FormGroup validation, Validators, and reactive CSS state classes for feedback.
 platform: ej2-angular
-control: Range Slider
+control: Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to use slider in reactive form in Angular Range Slider
+# How to use slider in reactive form in Angular Slider
 
-Implement Range Slider validation within Angular [Reactive](https://angular.io/guide/reactive-forms) forms to enforce validation rules and provide real-time feedback. The following sample demonstrates slider state tracking using Angular form validation [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
+Implement Angular Slider validation within Angular [Reactive](https://angular.io/guide/reactive-forms) forms to enforce validation rules and provide real-time feedback. The following sample demonstrates Angular Slider state tracking using Angular form validation [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
 
 Follow the steps below to integrate and validate a slider within a reactive form.
 
-* Create simple Angular reactive form. And add simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component within form.
+* Create simple Angular reactive form. And add simple [Angular Slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component within form.
 
-* Create [form group](https://angular.io/guide/reactive-forms#add-a-formgroup) with slider.
+* Create [form group](https://angular.io/guide/reactive-forms#add-a-formgroup) with Angular Slider.
 
   ```typescript
 
@@ -30,7 +30,7 @@ Follow the steps below to integrate and validate a slider within a reactive form
 
   ```
 
-* Show the validation message, based on validation classes which is added to slider. Refer below code snippet.
+* Show the validation message, based on validation classes which is added to Angular Slider. Refer below code snippet.
 
 | **Class if true** | **Class if false** | **state** |
 | --- | --- | --- |

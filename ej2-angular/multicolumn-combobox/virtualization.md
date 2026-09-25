@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Virtualization in Angular MultiColumn ComboBox
 
-MultiColumn ComboBox virtualization is a technique used to efficiently render extensive lists of items while minimizing the impact on performance. This method is particularly advantageous when dealing with large datasets because it ensures that only a fixed number of DOM (Document Object Model) elements are created. When scrolling through the list, existing DOM elements are reused to display relevant data instead of generating new elements for each item. This recycling process is managed internally.
+Angular MultiColumn ComboBox virtualization is a technique used to efficiently render extensive lists of items while minimizing the impact on performance. This method is particularly advantageous when dealing with large datasets because it ensures that only a fixed number of DOM (Document Object Model) elements are created. When scrolling through the list, existing DOM elements are reused to display relevant data instead of generating new elements for each item. This recycling process is managed internally.
 
 Enabling the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#enablevirtualization) property option in a MultiColumn ComboBox activates this virtualization technique.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Timeline
 
-The Timeline component provides extensive customization for visual styling, including dot appearance, connector lines, borders, spacing, and color schemes. This section demonstrates approaches to customize Timeline items and create visually distinctive event displays.
+The Angular Timeline component provides extensive customization for visual styling, including dot appearance, connector lines, borders, spacing, and color schemes. This section demonstrates approaches to customize Timeline items and create visually distinctive event displays.
 ## Connector styling
 ### Common styling
 

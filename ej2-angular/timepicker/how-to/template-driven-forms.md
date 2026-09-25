@@ -18,9 +18,9 @@ For more details about template-driven Forms refer to:<https://angular.io/guide/
 
 * In angular forms mentioning the name is must to process as form elements.
 
-* Mention the `name` attribute to TimePicker element which will be used to identify the form element. To register an TimePicker element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the TimePicker as a form element. After that, the TimePicker value will be selected based on the ngModel value.
+* Mention the `name` attribute to Angular TimePicker element which will be used to identify the form element. To register an Angular TimePicker element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the Angular TimePicker as a form element. After that, the Angular TimePicker value will be selected based on the ngModel value.
 
-The following example  demonstrates template driven forms with TimePicker component.
+The following example  demonstrates template driven forms with Angular TimePicker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

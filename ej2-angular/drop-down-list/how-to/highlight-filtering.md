@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to highlight matched characters in Angular Dropdown List
 
-By using the `highlightSearch` method, you can highlight the matched text in DropDownList filtering.
+By using the `highlightSearch` method, you can highlight the matched text in Angular Dropdown List filtering.
 
 The following example demonstrates how to highlight the matched text in filtering.
 

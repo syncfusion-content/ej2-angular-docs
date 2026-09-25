@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to open and edit uploaded files in Angular Uploader | Syncfusion
-description: Open and edit Angular Uploader files after upload by capturing the server path in the success event and sending it through an HTTP header to the file handler.
+title: How to open and edit uploaded files in Angular File Upload | Syncfusion
+description: Open and edit Angular File Upload files after upload by capturing the server path in the success event and sending it through an HTTP header to the file handler.
 platform: ej2-angular
 control: Open and edit the uploaded files 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to open and edit uploaded files in Angular Uploader
+# How to open and edit uploaded files in Angular File Upload
 
-The Uploader component allows you to open and edit files after uploading them to the server. This is accomplished by using the Uploader's `success` event to retrieve the saved file path.
+The Angular File Upload component allows you to open and edit files after uploading them to the server. This is accomplished by using the Angular File Upload's `success` event to retrieve the saved file path.
 
 When the upload succeeds, the saved file path returned by the server is stored in a custom `file-path` attribute on the corresponding file list element (matched by the file's `data-file-name` attribute, which holds the uploaded file's display name). When users click a file element, a new request is created with the saved file path passed via an HTTP header. On the server side, retrieve the file path from the header and open the file using the appropriate file handling method.
 

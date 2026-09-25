@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand and Collapse in Angular Splitter | Syncfusion
-description: Enable built-in expand and collapse behavior in Syncfusion Angular Splitter panes with collapsible icons, public expand and collapse methods, and initial collapsed state.
+description: Configure Angular Splitter panes with expand and collapse support, using icons, methods, and predefined collapsed states.
 platform: ej2-angular
 control: Splitter 
 documentation: ug
@@ -30,7 +30,7 @@ The following example demonstrates how to enable collapsible behavior:
 
 ## Programmatically control the expand and collapse action
 
-Pane visibility can be controlled by programmatically using the Splitter’s public methods: [expand](https://ej2.syncfusion.com/angular/documentation/api/splitter#expand) and [collapse](https://ej2.syncfusion.com/angular/documentation/api/splitter#collapse). These methods allow you to dynamically toggle panes based on application logic.
+Pane visibility can be controlled by programmatically using the Angular Splitter’s public methods: [expand](https://ej2.syncfusion.com/angular/documentation/api/splitter#expand) and [collapse](https://ej2.syncfusion.com/angular/documentation/api/splitter#collapse). These methods allow you to dynamically toggle panes based on application logic.
 
 The following example demonstrates using these methods:
 

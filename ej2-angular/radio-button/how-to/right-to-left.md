@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Right to left in Angular Radio button component
 
-RadioButton component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#enablertl) as `true`.
+Angular Radio Button component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#enablertl) as `true`.
 
-The following example illustrates how to enable right-to-left support in RadioButton component.
+The following example illustrates how to enable right-to-left support in Angular Radio Button component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

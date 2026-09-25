@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Action Buttons in Angular Card
 
-Action buttons provide interactive controls within the Card component and can be customized for various use cases. Action buttons are contained within a `div` element with the `e-card-actions` class, which holds button or anchor elements within the card root element.
+Action buttons provide interactive controls within the Angular Card component and can be customized for various use cases. Action buttons are contained within a `div` element with the `e-card-actions` class, which holds button or anchor elements within the card root element.
 
 * To add action buttons, create a button or anchor tag with the `e-card-btn` class within the card action container element.
 
@@ -50,4 +50,4 @@ By default, action buttons are positioned horizontally, and they can also be ali
 
 ## See Also
 
-* [How to integrate other component inside the card](./how-to/integrate-other-component-inside-the-card)
+* [How to integrate other component inside the Angular Card](./how-to/integrate-other-component-inside-the-card)

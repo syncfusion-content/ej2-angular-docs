@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Moving Panels in Angular Dashboard Layout
 
-In addition to drag-and-drop interactions, panels can be moved and repositioned programmatically within the Dashboard Layout. This is achieved using the [movePanel](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#movepanel) method. The method is invoked as follows,
+In addition to drag-and-drop interactions, panels can be moved and repositioned programmatically within the Angular Dashboard Layout. This is achieved using the [movePanel](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#movepanel) method. The method is invoked as follows,
 
 ```js
 movePanel(id, row, col)
@@ -22,9 +22,9 @@ Where,
 * `row` - New row position for the panel.
 * `col` - New column position for the panel.
 
-Each time a panel's position is changed (either programmatically or through UI interaction), the Dashboard Layout's [change](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#change) event is triggered.
+Each time a panel's position is changed (either programmatically or through UI interaction), the Angular Dashboard Layout's [change](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#change) event is triggered.
 
-The following sample demonstrates how to move a panel programmatically to a new position in the Dashboard Layout's [created](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#created) event.
+The following sample demonstrates how to move a panel programmatically to a new position in the Angular Dashboard Layout's [created](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout#created) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

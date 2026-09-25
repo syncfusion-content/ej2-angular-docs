@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular MultiColumn ComboBox
 
-The MultiColumn ComboBox supports wrapping nested elements into a group based on different categories by using the[groupBy](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/fieldSettingsModel/#groupby) property. The category of each list item can be mapped through the groupBy  field in the data table. The group header are displayed as fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
+The Angular MultiColumn ComboBox supports wrapping nested elements into a group based on different categories by using the[groupBy](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/fieldSettingsModel/#groupby) property. The category of each list item can be mapped through the groupBy  field in the data table. The group header are displayed as fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 
 In the following sample, countries are grouped according on its category using `groupBy` field.
 

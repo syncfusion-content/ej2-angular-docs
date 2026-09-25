@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Value Binding in Angular ComboBox
 
-Value binding in the ComboBox control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The ComboBox component provides flexibility in binding both primitive data types and complex objects.
+Value binding in the Angular ComboBox control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The Angular ComboBox component provides flexibility in binding both primitive data types and complex objects.
 
 ## Primitive Data Types
 
-The ComboBox control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](../api/combo-box/#value) property of the ComboBox.
+The Angular ComboBox control provides flexible binding capabilities for primitive data types like strings and numbers. You can effortlessly bind local primitive data arrays, fetch and bind data from remote sources, and even custom data binding to suit specific requirements. Bind the value of primitive data to the [value](../api/combo-box/#value) property of the Angular ComboBox.
 
 Primitive data types include:
 
@@ -39,7 +39,7 @@ The following sample shows the example for preselect values for primitive data t
 
 ## Object Data Types
 
-In the ComboBox control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](../api/combo-box/#allowobjectbinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](../api/combo-box/#value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
+In the Angular ComboBox control, object binding allows you to bind to a dataset of objects. When [`allowObjectBinding`](../api/combo-box/#allowobjectbinding) is enabled, the value of the control will be an object of the same type as the selected item in the [value](../api/combo-box/#value) property. This feature seamlessly binds arrays of objects, whether sourced locally, retrieved from remote endpoints, or customized to suit specific application needs.
 
 The following sample shows the example for preselect values for object data type
 

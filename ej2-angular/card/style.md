@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference.
 
-## Customizing the card
+## Customizing the Angular Card
 
-Use the following CSS to customize the card appearance.
+Use the following CSS to customize the Angular Card appearance.
 
 ```css
 .e-card {
@@ -35,9 +35,9 @@ Use the following CSS to customize the header element appearance.
 }
 ```
 
-## Customizing the card content
+## Customizing the Angular Card content
 
-Use the following CSS to customize the card content appearance.
+Use the following CSS to customize the Angular Card content appearance.
 
 ```css
 .e-card .e-card-content {
@@ -48,18 +48,18 @@ Use the following CSS to customize the card content appearance.
 }
 ```
 
-## Customizing the divider used to separate elements inside the card
+## Customizing the divider used to separate elements inside the Angular Card
 
-Use the following CSS to customize the divider used to separate elements inside the card.
+Use the following CSS to customize the divider used to separate elements inside the Angular Card.
 ```css
 .e-card .e-card-separator {
    padding-bottom: 30px;
 }
 ```
 
-## Including image within card element
+## Including image within Angular Card element
 
-Use the following CSS to include image within card element.
+Use the following CSS to include image within Angular Card element.
 
 ```css
 .e-card .e-card-image {

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Selection in Angular Rating
 
-The rating component allows users to rate something using a visual scale, and the selection state can be changed by the user clicking or tapping on the stars in the rating scale or through code. The rating component has a minimum value and a reset button, and provides customization options for the selected rating value and selection behavior.
+The Angular Rating component allows users to rate something using a visual scale, and the selection state can be changed by the user clicking or tapping on the stars in the rating scale or through code. The Angular Rating component has a minimum value and a reset button, and provides customization options for the selected rating value and selection behavior.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

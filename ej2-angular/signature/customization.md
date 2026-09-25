@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Signature
 
-Customize the Signature component's appearance by modifying stroke properties, background colors, and images. The component uses Canvas API methods (moveTo and lineTo) to render strokes with customizable width, color, and background styling.
+Customize the Angular Signature component's appearance by modifying stroke properties, background colors, and images. The component uses Canvas API methods (moveTo and lineTo) to render strokes with customizable width, color, and background styling.
 
 ## Stroke Width
 

@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Adornments in Angular TextBox
 
-The TextBox component supports adornments that allow you to add custom elements before or after the textbox using `prependTemplate` and `appendTemplate`. Adornment elements can include icons, text labels, or action buttons to improve usability and provide visual context.
+The Angular TextBox component supports adornments that allow you to add custom elements before or after the textbox using `prependTemplate` and `appendTemplate`. Adornment elements can include icons, text labels, or action buttons to improve usability and provide visual context.
 
 ## Overview
 
@@ -30,14 +30,14 @@ Adornments are useful for:
 - **Unit Indicators**: Currency symbols, measurement units, or domain extensions.
 
 
-## Adding Adornments to TextBox
+## Adding Adornments to Angular TextBox
 
 Use the `prependTemplate` and `appendTemplate` properties to add custom HTML content before and after the textbox.
 
 - **`prependTemplate`**: Renders elements before the textbox input.
 - **`appendTemplate`**: Renders elements after the textbox input.
 
-The following example demonstrates how to add adornments in the TextBox control.
+The following example demonstrates how to add adornments in the Angular TextBox control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -49,4 +49,4 @@ The following example demonstrates how to add adornments in the TextBox control.
 {% endhighlight %}
 {% endtabs %}
 
-You can view the demo here: [TextBox Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/textboxes/adornments).
+You can view the demo here: [Angular TextBox Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/textboxes/adornments).

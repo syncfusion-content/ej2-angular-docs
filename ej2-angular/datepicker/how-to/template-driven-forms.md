@@ -19,8 +19,8 @@ For more details about template-driven Forms refer to:<https://angular.io/guide/
 
 * In angular forms mentioning the name is must to process as form elements.
 
-* Mention the `name` attribute to DatePicker element which will be used to identify the form element. To register an DatePicker element to ngForm,  give the ngModel  to it so the FormsModule will automatically detect the DatePicker as a form element.
-After that, the DatePicker value will be selected based on the ngModel value.
+* Mention the `name` attribute to Angular DatePicker element which will be used to identify the form element. To register an Angular DatePicker element to ngForm,  give the ngModel  to it so the FormsModule will automatically detect the Angular DatePicker as a form element.
+After that, the Angular DatePicker value will be selected based on the ngModel value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

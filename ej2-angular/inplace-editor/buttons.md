@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Buttons in Angular In-place Editor
 
-The **In-place Editor** has an option to save and cancel using buttons. The [saveButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#savebutton) and [cancelButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#cancelbutton) properties accept the [ButtonModel](https://ej2.syncfusion.com/angular/documentation/api/button/buttonModel) objects for customizing the save and cancel button properties.
+The **Angular In-place Editor** has an option to save and cancel using buttons. The [saveButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#savebutton) and [cancelButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#cancelbutton) properties accept the [ButtonModel](https://ej2.syncfusion.com/angular/documentation/api/button/buttonModel) objects for customizing the save and cancel button properties.
 
 Buttons can be show or hide by sets a Boolean value to the [showButtons](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#showbuttons) property.
 

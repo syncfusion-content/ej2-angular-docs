@@ -27,7 +27,7 @@ When `allowFloating` is set to `false`:
 - Panels maintain their exact row and column positions
 
 
-The following sample demonstrates how to enable or disable the floating of panels in the Dashboard Layout component.
+The following sample demonstrates how to enable or disable the floating of panels in the Angular Dashboard Layout component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

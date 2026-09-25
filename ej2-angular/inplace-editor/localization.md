@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-Localization library allows you to localize the default text content of the **In-place Editor** to different cultures using the [locale](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#locale) property. **In-place Editor** following keys will be localize based on culture.
+Localization library allows you to localize the default text content of the **Angular In-place Editor** to different cultures using the [locale](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#locale) property. **Angular In-place Editor** following keys will be localize based on culture.
 
 | Locale key | en-US (default) |
 |------|------|
@@ -39,7 +39,7 @@ To load translation object in an application use `load` function of `L10n` class
 
 ## Right to left
 
-Specifies the direction of the **In-place Editor** component using the enableRtl property. For writing systems that require it like Arabic, Hebrew, etc., the direction can be switched to right-to-left.
+Specifies the direction of the **Angular In-place Editor** component using the enableRtl property. For writing systems that require it like Arabic, Hebrew, etc., the direction can be switched to right-to-left.
 
 > It will not change based on the locale property.
 
@@ -57,7 +57,7 @@ Specifies the direction of the **In-place Editor** component using the enableRtl
 
 ## Format
 
-Formatting is a way of representing the value in different format. You can format the following mentioned components with its `format` property, when it passed through the **In-place Editor** [model](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#model) property.
+Formatting is a way of representing the value in different format. You can format the following mentioned components with its `format` property, when it passed through the **Angular In-place Editor** [model](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#model) property.
 
 * [DatePicker](../datepicker/date-format)
 * [DateRangePicker](../daterangepicker/globalization#date-format-customization)

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Form Support in Angular AutoComplete
 
-The AutoComplete supports both the reactive and template-driven form-building technologies.
+The Angular AutoComplete supports both the reactive and template-driven form-building technologies.
 
 ## Template-Driven Forms
 
@@ -18,7 +18,7 @@ Template-driven forms use `ng` directives in the view to handle form controls. T
 
 For more details about template-driven forms, refer to: <https://angular.io/guide/forms#template-driven-forms>.
 
-Add the `name` attribute to the AutoComplete element to identify it within the form. To register the AutoComplete element with `ngForm`, provide the `ngModel` directive so the `FormsModule` automatically detects the AutoComplete as a form control. The AutoComplete value is then selected based on the `ngModel` value, enabling two-way data binding.
+Add the `name` attribute to the Angular AutoComplete element to identify it within the form. To register the Angular AutoComplete element with `ngForm`, provide the `ngModel` directive so the `FormsModule` automatically detects the Angular AutoComplete as a form control. The Angular AutoComplete value is then selected based on the `ngModel` value, enabling two-way data binding.
 
 The following example demonstrates how to achieve two-way data binding.
 
@@ -43,7 +43,7 @@ For more details about reactive forms, refer to: <https://angular.io/guide/react
 For more details about Reactive Forms refer: <https://angular.io/guide/reactive-forms>.
 
 For the reactive forms you should import a ReactiveFormsModule into app module as well as the FormGroup,FormControl should be imported to app component. The FormGroup is used to declare `formGroupName` for the form and the FormControl is used to declare `formControlName` for form controls.
-You can declare the formControlName to AutoComplete as usual. then,you must create a value object to the FormGroup and each value will be the default value of the form control.
+You can declare the formControlName to Angular AutoComplete as usual. then,you must create a value object to the FormGroup and each value will be the default value of the form control.
 
 The following example demonstrates how to use reactive forms.
 

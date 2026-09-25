@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to create right-to-left splitbutton in Angular Split Button
 
-SplitButton component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/split-button#enablertl) as `true`.
+Angular Split Button component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/split-button#enablertl) as `true`.
 
-The following example illustrates how to enable right-to-left support in SplitButton component.
+The following example illustrates how to enable right-to-left support in Angular Split Button component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

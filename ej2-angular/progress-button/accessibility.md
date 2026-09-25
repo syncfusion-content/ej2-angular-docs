@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Progress Button
 
-The Progress button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Progress Button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Progress button component is outlined below.
+The accessibility compliance for the Angular Progress Button component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,16 +40,16 @@ The accessibility compliance for the Progress button component is outlined below
 
 ## WAI-ARIA attributes
 
-The Progress button component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Progress button component:
+The Angular Progress Button component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Progress button component:
 
 | Attributes | Purpose |
 | --- | --- |
-| `aria-label` | Provides an accessible name for the icon only Progress button. |
+| `aria-label` | Provides an accessible name for the icon only Angular Progress Button. |
 | `aria-disabled` | Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. |
 
 ## Keyboard interaction
 
-The Progress button component followed the [keyboard interaction] guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Progress button component.
+The Angular Progress Button component followed the [keyboard interaction] guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Angular Progress Button component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -57,9 +57,9 @@ The Progress button component followed the [keyboard interaction] guideline, mak
 
 ## Ensuring accessibility
 
-The Progress button component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Progress Button component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Progress button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/progress-button.html) in a new window to evaluate the accessibility of the Progress button component with accessibility tools.
+The accessibility compliance of the Angular Progress Button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/progress-button.html) in a new window to evaluate the accessibility of the Angular Progress Button component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/progress-button/default-cs1" %}
 

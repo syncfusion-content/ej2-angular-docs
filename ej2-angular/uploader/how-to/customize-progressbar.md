@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to customize progress bar in Angular Uploader | Syncfusion
-description: Customize the Angular Uploader progress bar by overriding its CSS to change the indicator size, color, and background to match your app design.
+title: How to customize progress bar in Angular File Upload | Syncfusion
+description: Customize the Angular File Upload progress bar by overriding its CSS to change the indicator size, color, and background to match your app design.
 platform: ej2-angular
 control: Customize progressbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize progress bar in Angular Uploader
+# How to customize progress bar in Angular File Upload
 
-You can customize the progress bar's size, color, and background by overriding the default Uploader component styles. The progress bar is styled via the `.e-upload-progress` and `.e-progress-inner-wrap` classes, which can be overridden in the component's stylesheet. Refer to the following example to apply custom styling to the progress indicator.
+You can customize the progress bar's size, color, and background by overriding the default Angular File Upload component styles. The progress bar is styled via the `.e-upload-progress` and `.e-progress-inner-wrap` classes, which can be overridden in the component's stylesheet. Refer to the following example to apply custom styling to the progress indicator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

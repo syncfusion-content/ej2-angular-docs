@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to CSS customize the TimePicker in Angular TimePicker
 
-TimePicker allows you to customize the textbox and popup list appearance to suit for your application by using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/timepicker/#cssclass) property.
+Angular TimePicker allows you to customize the textbox and popup list appearance to suit for your application by using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/timepicker/#cssclass) property.
 
-The below sample demonstrates customization of text appearance in a textbox, popup button, and popup list along with hover and active state by using `e-custom-style` class. Following is the list of available classes used to customize the entire TimePicker component.
+The below sample demonstrates customization of text appearance in a textbox, popup button, and popup list along with hover and active state by using `e-custom-style` class. Following is the list of available classes used to customize the entire Angular TimePicker component.
 
 | **Class Name** | **Description** |
 | --- | --- |

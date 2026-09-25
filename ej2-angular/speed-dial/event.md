@@ -14,7 +14,7 @@ This section explains the [Angular Speed Dial](https://www.syncfusion.com/angula
 
 ## clicked
 
-The SpeedDial component triggers the [`clicked`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#clicked) event with [`SpeedDialItemEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemEventArgs/) argument when an action item is clicked. You can use this event to perform the required action.
+The Angular Speed Dial component triggers the [`clicked`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#clicked) event with [`SpeedDialItemEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemEventArgs/) argument when an action item is clicked. You can use this event to perform the required action.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -39,14 +39,14 @@ export class AppComponent {
 
 ## created
 
-The Speed Dial component triggers the [`created`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#created) event when SpeedDial component rendering is completed.
+The Angular Speed Dial component triggers the [`created`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#created) event when Angular Speed Dial component rendering is completed.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render SpeedDial component. -->
+    template: `<!-- To Render Angular Speed Dial component. -->
         <button ejs-speeddial id="speeddial" content='Edit' (created)='created()' [items]='items'></button>`
 })
 
@@ -64,14 +64,14 @@ export class AppComponent {
 
 ## beforeOpen
 
-The SpeedDial component triggers the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#beforeopen) event with [`SpeedDialBeforeOpenCloseEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialBeforeOpenCloseEventArgs/) argument before the SpeedDial popup is opened.
+The Angular Speed Dial component triggers the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#beforeopen) event with [`SpeedDialBeforeOpenCloseEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialBeforeOpenCloseEventArgs/) argument before the SpeedDial popup is opened.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render SpeedDial component. -->
+    template: `<!-- To Render Angular Speed Dial component. -->
         <button ejs-speeddial id="speeddial" content='Edit' (beforeOpen)='beforeOpen($event)' [items]='items'></button>`
 })
 
@@ -89,14 +89,14 @@ export class AppComponent {
 
 ## onOpen
 
-The SpeedDial component triggers the [`onOpen`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#onopen) event with [`SpeedDialOpenCloseEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialOpenCloseEventArgs/) argument when SpeedDial popup is opened.
+The Angular Speed Dial component triggers the [`onOpen`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#onopen) event with [`SpeedDialOpenCloseEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialOpenCloseEventArgs/) argument when Speed Dial popup is opened.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render SpeedDial component. -->
+    template: `<!-- To Render Angular Speed Dial component. -->
         <button ejs-speeddial id="speeddial" content='Edit' (onOpen)='onOpen($event)' [items]='items'></button>`
 })
 
@@ -114,7 +114,7 @@ export class AppComponent {
 
 ## beforeClose
 
-The SpeedDial component triggers the [`beforeClose`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#beforeclose) event with [`SpeedDialBeforeOpenCloseEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialBeforeOpenCloseEventArgs/) argument before the SpeedDial popup is closed.
+The Angular Speed Dial component triggers the [`beforeClose`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#beforeclose) event with [`SpeedDialBeforeOpenCloseEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialBeforeOpenCloseEventArgs/) argument before the Speed Dial popup is closed.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -139,7 +139,7 @@ export class AppComponent {
 
 ## onClose
 
-The SpeedDial component triggers the [`onClose`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#onclose) event with [`SpeedDialOpenCloseEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialOpenCloseEventArgs/) argument when SpeedDial popup is closed.
+The Angular Speed Dial component triggers the [`onClose`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#onclose) event with [`SpeedDialOpenCloseEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialOpenCloseEventArgs/) argument when Speed Dial popup is closed.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -164,14 +164,14 @@ export class AppComponent {
 
 ## beforeItemRender
 
-The SpeedDial component triggers the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#beforeitemrender) event with [`SpeedDialItemEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemEventArgs/) argument for each `SpeedDialItem` once it is rendered.
+The Angular Speed Dial component triggers the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#beforeitemrender) event with [`SpeedDialItemEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemEventArgs/) argument for each `SpeedDialItem` once it is rendered.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render SpeedDial component. -->
+    template: `<!-- To Render Angular Speed Dial component. -->
         <button ejs-speeddial id="speeddial" content='Edit' (beforeItemRender)='beforeItemRender($event)' [items]='items'></button>`
 })
 

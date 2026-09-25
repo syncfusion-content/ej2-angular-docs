@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Floating Action Button
 
-The Floating Action Button component allows users to quickly access and perform a primary action through a prominent, floating button interface.
+The Angular Floating Action Button component allows users to quickly access and perform a primary action through a prominent, floating button interface.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Floating Action Button component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-buttons
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Floating Action Button component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Floating Action Button component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -107,11 +107,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 ```
 > You can also refer to the combined CSS file for all Syncfusion components in your application. For more information, see the documentation on [referring themes through npm packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#using-precompiled-css-and-scss-file).
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Floating Action Button component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Floating Action Button component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Floating Action Button import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular Floating Action Button import, template, and data into your generated file.
 
-> For the full property list, see the [Floating Action Button API reference](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/index-default).
+> For the full property list, see the [Angular Floating Action Button API reference](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/index-default).
 
 ```typescript
 import { Component } from '@angular/core';
@@ -130,7 +130,7 @@ export class App { }
 Place the following markup in the component template file referenced by `templateUrl` (for example, `src/app/app.html`):
 
 ```html
-<!-- To render Floating Action Button -->
+<!-- To render Angular Floating Action Button -->
 <button ejs-fab id='fab' content='Add'></button>
 ```
 
@@ -142,7 +142,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Floating Action Button. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular Floating Action Button. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 

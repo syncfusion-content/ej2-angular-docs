@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Mask Support in Angular DatePicker
 
-The DatePicker has built-in support to masking the date value, when `enableMask` property set as `true`.
+The Angular DatePicker has built-in support to masking the date value, when `enableMask` property set as `true`.
 
-To use mask support, inject the MaskedDateTime module in the DatePicker.
+To use mask support, inject the MaskedDateTime module in the Angular DatePicker.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -30,7 +30,7 @@ The mask pattern is defined based on the provided date format to the component. 
 
 The selected portions of date and time co-ordinates  can  be incremented and decremented using the Up/Down arrow keys. You can also use Right/Left arrow keys to navigate from one segment to another.
 
-The following example demonstrates default and custom format of DatePicker component with mask.
+The following example demonstrates default and custom format of Angular DatePicker component with mask.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

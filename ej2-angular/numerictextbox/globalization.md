@@ -12,8 +12,8 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-Localization library allows users to localize the default text contents of the NumericTextBox to different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#locale) property.
-In NumericTextBox, spin buttons title for the tooltip will be localized based on the culture.
+Localization library allows users to localize the default text contents of the Angular Numeric Textbox to different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#locale) property.
+In Angular Numeric Textbox, spin buttons title for the tooltip will be localized based on the culture.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -24,7 +24,7 @@ In NumericTextBox, spin buttons title for the tooltip will be localized based on
 
 To load translation object in your application use `load` function of `L10n` class.
 
-The below example demonstrates the NumericTextBox in `German` culture with the spin buttons tooltip.
+The below example demonstrates the Angular Numeric Textbox in `German` culture with the spin buttons tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -40,7 +40,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the s
 
 ## Internationalization
 
-The NumericTextBox uses the Unicode CLDR (Common Locale Data Repository) data for formatting and parsing numbers according to different cultures. By default, the component is configured for English ('en-US') culture. To use a different culture, follow the steps below.
+The Angular Numeric Textbox uses the Unicode CLDR (Common Locale Data Repository) data for formatting and parsing numbers according to different cultures. By default, the component is configured for English ('en-US') culture. To use a different culture, follow the steps below.
 
 * Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
@@ -67,7 +67,7 @@ The NumericTextBox uses the Unicode CLDR (Common Locale Data Repository) data fo
 
 * Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#locale) property.
 
-The below example demonstrates the NumericTextBox in `German` culture with the `EUR` currency format.
+The below example demonstrates the Angular Numeric Textbox in `German` culture with the `EUR` currency format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -83,7 +83,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the `
 
 ## Right-to-left (RTL)
 
-The NumericTextBox supports right-to-left (RTL) rendering, improving the user experience and accessibility for languages written right-to-left (Arabic, Persian, Urdu, etc.). To enable RTL mode, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#enablertl) property to `true`.
+The Angular Numeric Textbox supports right-to-left (RTL) rendering, improving the user experience and accessibility for languages written right-to-left (Arabic, Persian, Urdu, etc.). To enable RTL mode, set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#enablertl) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # How to Filter Items in Angular ListView Using DataManager
 
-You can dynamically filter items in the Angular ListView component based on user input using Syncfusion’s [`DataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). This guide walks you through rendering a searchable ListView with real-time filtering.
+You can dynamically filter items in the Angular ListView component based on user input using Syncfusion’s [`DataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). This guide walks you through rendering a searchable Angular ListView with real-time filtering.
 
 ## Steps to Implement Filtering
 
 1. **Render a TextBox** to capture user input for filtering.
-2. **Configure the ListView** with a [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource) and set the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property.
+2. **Configure the Angular ListView** with a [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-view#datasource) and set the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view#sortorder) property.
 3. **Bind the `keyup` event** to the TextBox to trigger filtering logic.
-4. **Use `DataManager` and `Query.where`** to filter the data locally via the [`executeLocal`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executelocal) method.
+4. **Use `DataManager` and `Query.where`** to filter the data locally via the [`executeLocal`](https://ej2.syncfusion.com/documentation/api/data/dataManager#executelocal) method.
 5. **Update the ListView’s `dataSource`** with the filtered result.
 
 ## Filtering Variants
@@ -43,4 +43,4 @@ You can dynamically filter items in the Angular ListView component based on user
  
 {% previewsample "page.domainurl/samples/listview/getting-started-cs6" %}
 
-> In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) clause instead of `startswith`.
+> In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](https://ej2.syncfusion.com/documentation/api/data/query#where) clause instead of `startswith`.

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Form Support in Angular ComboBox
 
-The ComboBox supports both the reactive and template-driven form-building technologies.
+The Angular ComboBox supports both the reactive and template-driven form-building technologies.
 
 ## Template-Driven Forms
 
@@ -19,9 +19,9 @@ To enable the template-driven,  import the FormsModule into corresponding app co
 
 For more details about template-driven Forms refer to:<https://angular.io/guide/forms#template-driven-forms>.
 
-Mention the `name` attribute to ComboBox element which will be used to identify the
-form element. To register an ComboBox element to ngForm,  give the ngModel  to it
-so the FormsModule will  automatically detect the ComboBox as a form element. After that, the ComboBox value will be selected based on the ngModel value.
+Mention the `name` attribute to Angular ComboBox element which will be used to identify the
+form element. To register an Angular ComboBox element to ngForm,  give the ngModel  to it
+so the FormsModule will  automatically detect the Angular ComboBox as a form element. After that, the Angular ComboBox value will be selected based on the ngModel value.
 
 The following example  demonstrates how to achieve a two-way data binding.
 
@@ -44,7 +44,7 @@ The reactive forms uses the reactive model-driven technique to handle form data 
 For more details about Reactive Forms refer: <https://angular.io/guide/reactive-forms>.
 
 For the reactive forms you should import a ReactiveFormsModule into app module as well as the FormGroup,FormControl should be imported to app component. The FormGroup is used to declare `formGroupName` for the form and the FormControl is used to declare `formControlName` for form controls.
-You can declare the formControlName to ComboBox as usual.then,you must create a value object to the FormGroup and each value will be the default value of the form control.
+You can declare the formControlName to Angular ComboBox as usual.then,you must create a value object to the FormGroup and each value will be the default value of the form control.
 
 The following example demonstrates  how to use the reactive forms.
 

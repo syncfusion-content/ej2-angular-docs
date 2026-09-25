@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Dropdown List
 
-The DropDownList component is designed with WAI-ARIA specifications, applying the necessary roles, states, and properties to support keyboard interaction. This ensures that the component is fully accessible to users who rely on assistive technologies (AT) or keyboard navigation.
+The Angular Dropdown List component is designed with WAI-ARIA specifications, applying the necessary roles, states, and properties to support keyboard interaction. This ensures that the component is fully accessible to users who rely on assistive technologies (AT) or keyboard navigation.
 
-The DropDownList component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
+The Angular Dropdown List component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the DropDownList component is outlined below.
+The accessibility compliance for the Angular Dropdown List component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,7 +42,7 @@ The accessibility compliance for the DropDownList component is outlined below.
 
 ## WAI-ARIA attributes
 
-The component's design implements the `listbox` role for the main wrapper and the `option` role for each item in the popup list. The following ARIA attributes provide detailed information about the DropDownList's state for assistive technologies.
+The component's design implements the `listbox` role for the main wrapper and the `option` role for each item in the popup list. The following ARIA attributes provide detailed information about the Angular Dropdown List's state for assistive technologies.
 
 | **Properties** | **Functionalities** |
 | --- | --- |
@@ -56,7 +56,7 @@ The component's design implements the `listbox` role for the main wrapper and th
 
 ## Keyboard Interaction
 
-You can use the following key shortcuts to interact with the DropDownList component.
+You can use the following key shortcuts to interact with the Angular Dropdown List component.
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
@@ -74,7 +74,7 @@ You can use the following key shortcuts to interact with the DropDownList compon
 | <kbd>End</kbd> | Selects the last item in the list. |
 | <kbd>A-Z</kbd> or <kbd>0-9</kbd> | Jumps to the next list item that starts with the typed character. |
 
-> In the following sample, <kbd>Alt+T</kbd> keys are used to focus the DropDownList component.
+> In the following sample, <kbd>Alt+T</kbd> keys are used to focus the Angular Dropdown List component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -90,9 +90,9 @@ You can use the following key shortcuts to interact with the DropDownList compon
 
 ## Ensuring accessibility
 
-The DropDownList component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Dropdown List component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the DropDownList component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/drop-down-list.html) in a new window to evaluate the accessibility of the DropDownList component with accessibility tools.
+The accessibility compliance of the Angular Dropdown List component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/drop-down-list.html) in a new window to evaluate the accessibility of the Angular Dropdown List component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/drop-down-list.html" %}
 

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Split Button
 
-The Split button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Split Button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Split button component is outlined below.
+The accessibility compliance for the Angular Split Button component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the Split button component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Split button component followed the [WAI-ARIA] patterns to meet the accessibility. The following ARIA attributes are used in the Split button component:
+The Angular Split Button component followed the [WAI-ARIA] patterns to meet the accessibility. The following ARIA attributes are used in the Angular Split Button component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -52,7 +52,7 @@ The Split button component followed the [WAI-ARIA] patterns to meet the accessib
 
 ## Keyboard interaction
 
-The Split button component followed the [keyboard interaction] guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Split button component.
+The Angular Split Button component followed the [keyboard interaction] guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Angular Split Button component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -66,9 +66,9 @@ The Split button component followed the [keyboard interaction] guideline, making
 
 ## Ensuring accessibility
 
-The Split button component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Split Button component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Split button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/split-button.html) in a new window to evaluate the accessibility of the Split button component with accessibility tools.
+The accessibility compliance of the Angular Split Button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/split-button.html) in a new window to evaluate the accessibility of the Angular Split Button component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/split-button/accessibility-cs1" %}
 

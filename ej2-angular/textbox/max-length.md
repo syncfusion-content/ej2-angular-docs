@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Maximum Length in Angular TextBox
 
-Enforce a maximum length limit for text input in the TextBox using the `maxLength` property. This property defines the maximum number of characters that users can input into the textbox.
+Enforce a maximum length limit for text input in the Angular TextBox using the `maxLength` property. This property defines the maximum number of characters that users can input into the textbox.
 
 By setting the `maxLength` property, you can control text input length and prevent users from exceeding a specified character limit.
 
@@ -26,4 +26,4 @@ By setting the `maxLength` property, you can control text input length and preve
   
 {% previewsample "page.domainurl/samples/textbox/max-length-cs1" %}
 
-When the user reaches the specified limit, the TextBox prevents further input, ensuring compliance with the defined character limit. This feature helps maintain data integrity and provides users with clear feedback on the allowed input length.
+When the user reaches the specified limit, the Angular TextBox prevents further input, ensuring compliance with the defined character limit. This feature helps maintain data integrity and provides users with clear feedback on the allowed input length.

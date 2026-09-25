@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Dropdown Menu
 
-The [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#animationsettings) property is used to customize the animation of the DropDownButton popup. The supported effects for DropDownButton are,
+The [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/index-default#animationsettings) property is used to customize the animation of the Angular Dropdown Menu popup. The supported effects for Angular Dropdown Menu are,
 
 | Effect | Functionality |
 | ------------ | ----------------------- |
@@ -19,7 +19,7 @@ The [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/d
 | ZoomIn | Specifies the Dropdown popup transform with zoom in effect. |
 | FadeIn | Specifies the Dropdown popup transform with fade in effect. |
 
-In this sample, three different DropDownButtons are rendered, each showcasing a unique animation effect for the dropdown menu:
+In this sample, three different Angular Dropdown Menu are rendered, each showcasing a unique animation effect for the dropdown menu:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

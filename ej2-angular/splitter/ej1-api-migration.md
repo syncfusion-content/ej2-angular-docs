@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migration from Essential JS 1 in Angular Splitter | Syncfusion
-description: Migrate Syncfusion Splitter APIs from Essential JS 1 to JS 2, covering property renames such as paneSize to size and enableRTL to enableRtl, addItem to addPane, and updated events.
+description: Learn how to migrate Splitter APIs from Essential JS 1 to JS 2, including renamed properties, methods, and event updates.
 platform: ej2-angular
 control: Splitter 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Migration from Essential JS 1 in Angular Splitter
 
-This article describes the API migration process of Splitter component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of Angular Splitter component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 

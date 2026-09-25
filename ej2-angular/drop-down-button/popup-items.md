@@ -30,7 +30,7 @@ In the following sample, the icons for edit, delete, mark as read  and like mess
 
 ## Navigations
 
-Actions in DropDownButton can be used to navigate to the other web page when action item is clicked. This can be achieved by providing link to the action item using `url` property.
+Actions in Angular Dropdown Menu can be used to navigate to the other web page when action item is clicked. This can be achieved by providing link to the action item using `url` property.
 
 In the following sample, navigation URL for Flipkart, Amazon, and Snapdeal action items are added using the `url` property:
 

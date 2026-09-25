@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to prevent nullable input in Angular Numeric Textbox
 
-By default, the NumericTextBox value can be set to `null`. To ensure the NumericTextBox always contains a value, use the following approach to prevent nullable input.
+By default, the Angular Numeric Textbox value can be set to `null`. To ensure the Angular Numeric Textbox always contains a value, use the following approach to prevent nullable input.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

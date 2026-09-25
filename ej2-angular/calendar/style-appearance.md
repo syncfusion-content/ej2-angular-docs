@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular Calendar
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference. For the full list of CSS classes applied to the Calendar, see the [CSS class table in the Customization](./customization#day-cell-format) topic.
+The following content provides the exact CSS structure that can be used to modify the control's appearance based on user preference. For the full list of CSS classes applied to the Angular Calendar, see the [CSS class table in the Customization](./customization#day-cell-format) topic.
 
 Add the custom CSS to your application's global stylesheet (e.g., `style.css`) so it can override the component's default styles. When using component-scoped styles (`@Component` styles array), you may need `::ng-deep` to pierce Angular's view encapsulation.
 
@@ -26,7 +26,7 @@ Use the following CSS to customize the background color and border.
 }
 ```
 
-## Customizing the Calendar date elements on hover
+## Customizing the Angular Calendar date elements on hover
 
 Use the following CSS to customize the date elements on hover.
 
@@ -52,7 +52,7 @@ Use the following CSS to add a border to the date cell grid.
 
 ## Customizing the Calendar title
 
-Use the following CSS to customize the Calendar title.
+Use the following CSS to customize the Angular Calendar title.
 
 ```css
 /* To specify color and font size  */
