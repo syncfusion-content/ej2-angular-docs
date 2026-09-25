@@ -101,3 +101,4 @@ If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> co
     ![License download](images/license-download.png)
 
 8. After downloading, unlock the installer with your licensed unlock key, then refer to the [Online installer](installation-using-web-installer) and [Offline installer](installation-using-offline-installer) guides for step-by-step installation instructions.
+
