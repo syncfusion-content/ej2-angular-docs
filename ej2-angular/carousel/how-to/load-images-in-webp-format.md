@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to load WebP format images in Angular Carousel
 
-The Carousel component supports loading images in WebP format, which creates smaller, better-looking images. Choosing WebP as the image format can significantly improve website performance without sacrificing visual quality. WebP images are substantially smaller in file size compared to formats like JPEG and PNG, resulting in faster load times and reduced data usage.
+The Angular Carousel component supports loading images in WebP format, which creates smaller, better-looking images. Choosing WebP as the image format can significantly improve website performance without sacrificing visual quality. WebP images are substantially smaller in file size compared to formats like JPEG and PNG, resulting in faster load times and reduced data usage.
 
-To implement WebP images in the Carousel component, convert the image format to WebP and pass them to Carousel items. The following sample illustrates how to load carousel images in WebP format.
+To implement WebP images in the Angular Carousel component, convert the image format to WebP and pass them to Angular Carousel items. The following sample illustrates how to load Angular Carousel images in WebP format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

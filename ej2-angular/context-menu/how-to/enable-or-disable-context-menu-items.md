@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to enable or disable Context Menu items in Angular Context Menu
 
-The ContextMenu component supports dynamic state management of menu items through the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#enableitems) method. This functionality allows you to control menu item availability based on application state, user permissions, or contextual conditions, enhancing user experience by showing only relevant actions.
+The Angular Context Menu component supports dynamic state management of menu items through the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#enableitems) method. This functionality allows you to control menu item availability based on application state, user permissions, or contextual conditions, enhancing user experience by showing only relevant actions.
 
 The `enableItems` method accepts three parameters: an array of item identifiers (`items`), a boolean value (`enable`) to specify the desired state, and an optional `isUniqueId` parameter to indicate whether the identifiers refer to unique IDs or text content. When `enable` is set to `true`, the specified items become interactive; when `false`, they become disabled and visually dimmed with the `e-disabled` CSS class.
 

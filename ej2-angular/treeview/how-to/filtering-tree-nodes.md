@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to filter treeview nodes in Angular Tree View
 
-The TreeView component supports filtering nodes based on their text content using the `DataManager` plugin with the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/) property. This functionality enables users to search and display only matching nodes while preserving the hierarchical parent-child relationships.
+The Angular Tree View component supports filtering nodes based on their text content using the `DataManager` plugin with the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/) property. This functionality enables users to search and display only matching nodes while preserving the hierarchical parent-child relationships.
 
-The filter performs a case-insensitive, partial match against the field mapped to `text` in the data source. Only matching nodes — together with their ancestor chain — are rendered, so the hierarchy remains visible. To trigger the filter at runtime, update the `fields.query` parameter and reassign it to the TreeView instance followed by `tree.dataBind()`.
+The filter performs a case-insensitive, partial match against the field mapped to `text` in the data source. Only matching nodes — together with their ancestor chain — are rendered, so the hierarchy remains visible. To trigger the filter at runtime, update the `fields.query` parameter and reassign it to the Angular Tree View instance followed by `tree.dataBind()`.
 
-The following code example demonstrates how to filter tree nodes in a TreeView.
+The following code example demonstrates how to filter tree nodes in a Angular Tree View.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Toolbar
 
-The [Angular Toolbar](https://www.syncfusion.com/angular-ui-components/angular-toolbar) component is designed to follow the [WAI-ARIA Authoring Practices Guide for the Toolbar pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). It exposes the appropriate WAI-ARIA roles, states, and properties, and provides keyboard navigation for users of assistive technologies.
+The [Angular Toolbar](https://www.syncfusion.com/angular-ui-components/angular-toolbar) component is designed to follow the [WAI-ARIA Authoring Practices Guide for the Angular Toolbar pattern](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/). It exposes the appropriate WAI-ARIA roles, states, and properties, and provides keyboard navigation for users of assistive technologies.
 
-Accessibility information is conveyed through attributes such as `aria-label`, `aria-orientation`, `aria-expanded`, and `aria-haspopup`, which assistive technologies consume to describe elements and their state. Keyboard navigation follows the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/) and the Toolbar has been verified in major screen readers.
+Accessibility information is conveyed through attributes such as `aria-label`, `aria-orientation`, `aria-expanded`, and `aria-haspopup`, which assistive technologies consume to describe elements and their state. Keyboard navigation follows the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/) and the Angular Toolbar has been verified in major screen readers.
 
-The accessibility compliance for the Toolbar component is outlined below.
+The accessibility compliance for the Angular Toolbar component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -43,13 +43,13 @@ The accessibility compliance for the Toolbar component is outlined below.
 
 ## ARIA attributes
 
-The Toolbar applies ARIA accessibility attributes following the [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/), so it is consumable by screen readers and other assistive technology devices.
+The Angular Toolbar applies ARIA accessibility attributes following the [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/), so it is consumable by screen readers and other assistive technology devices.
 
 ### Role
 
 | **Attribute** | **Function** |
 | --- | --- |
-| `role="toolbar"` | Set on the Toolbar element to describe its actual role to assistive technologies. |
+| `role="toolbar"` | Set on the Angular Toolbar element to describe its actual role to assistive technologies. |
 
 ### Attributes
 
@@ -63,9 +63,9 @@ The Toolbar applies ARIA accessibility attributes following the [WAI-ARIA Author
 
 ## Keyboard interaction
 
-Keyboard navigation is enabled by default. The key maps are split between the main Toolbar and the overflow popup when it is open.
+Keyboard navigation is enabled by default. The key maps are split between the main Angular Toolbar and the overflow popup when it is open.
 
-### Main Toolbar navigation
+### Main Angular Toolbar navigation
 
 | Key | Description |
 | --- | --- |
@@ -90,13 +90,13 @@ When the overflow popup is open, focus moves into the popup and the following ke
 
 ## Ensuring accessibility
 
-The Toolbar component's accessibility levels are ensured through automated validation using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during the Syncfusion test pipeline.
+The Angular Toolbar component's accessibility levels are ensured through automated validation using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during the Syncfusion test pipeline.
 
-You can review the live Toolbar demo and run accessibility tools against it. Open the [Toolbar demo in a new window](https://ej2.syncfusion.com/angular/demos/#/material/toolbar/default) to evaluate the component with accessibility tools.
+You can review the live Angular Toolbar demo and run accessibility tools against it. Open the [Toolbar demo in a new window](https://ej2.syncfusion.com/angular/demos/#/material/toolbar/default) to evaluate the component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/toolbar.html" %}
 
 ## See also
 
 - [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)
-- [WAI-ARIA Toolbar Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/)
+- [WAI-ARIA Angular Toolbar Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/)

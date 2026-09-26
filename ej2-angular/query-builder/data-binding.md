@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular Query Builder UI
 
-The Query Builder uses `DataManager` to support both local and remote data sources. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) property with either a `DataManager` instance or a JavaScript object array.
+The Angular Query Builder UI uses `DataManager` to support both local and remote data sources. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) property with either a `DataManager` instance or a JavaScript object array.
 
 ## Local data
 
@@ -82,7 +82,7 @@ OData v4 is an improved version of the OData protocol. The `DataManager` support
 
 ### Web API
 
-You can use the `WebApiAdaptor` to bind the Query Builder to a Web API created from an OData endpoint.
+You can use the `WebApiAdaptor` to bind the Angular Query Builder UI to a Web API created from an OData endpoint.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -91,7 +91,7 @@ import { RuleModel } from '@syncfusion/ej2-angular-querybuilder';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Query Builder. -->
+    template: `<!-- To render Angular Query Builder UI. -->
                <ejs-querybuilder #querybuilder width="70%" [dataSource]="data" [rule]="importRules">
                 <e-columns>
                   <e-column field="EmployeeID" label="Employee ID" type="number"></e-column>
@@ -138,7 +138,7 @@ export class AppComponent implements OnInit {
 
 ## Data Manager
 
-You can use the created conditions in a `DataManager` through the [`getPredicate`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#getpredicate) method of the Query Builder component. This method returns a predicate that can be used as a condition in the `DataManager`. Pass the returned predicate to a `Query` (for example, via `new Query().where(predicate)`) and execute the query against the `DataManager` using `executeLocal` for local data or `execute` for remote data to filter the records that match the Query Builder rules.
+You can use the created conditions in a `DataManager` through the [`getPredicate`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#getpredicate) method of the Angular Query Builder UI component. This method returns a predicate that can be used as a condition in the `DataManager`. Pass the returned predicate to a `Query` (for example, via `new Query().where(predicate)`) and execute the query against the `DataManager` using `executeLocal` for local data or `execute` for remote data to filter the records that match the Angular Query Builder UI rules.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -154,7 +154,7 @@ You can use the created conditions in a `DataManager` through the [`getPredicate
 
 ## Complex data binding
 
-Complex data binding allows you to create subfields for columns. To implement complex data binding, either bind the complex data through nested columns, or specify a complex data source with field paths that use dot-notation and set the `separator` property on the Query Builder so it matches the delimiter used in the field path (the default separator is `.`). When the field names use dot-notation such as `Employee.ID`, the `separator` value (default `.`) must match the delimiter used in the field path so the Query Builder can resolve the nested values.
+Complex data binding allows you to create subfields for columns. To implement complex data binding, either bind the complex data through nested columns, or specify a complex data source with field paths that use dot-notation and set the `separator` property on the Angular Query Builder UI so it matches the delimiter used in the field path (the default separator is `.`). When the field names use dot-notation such as `Employee.ID`, the `separator` value (default `.`) must match the delimiter used in the field path so the Angular Query Builder UI can resolve the nested values.
 
 In the following sample, complex data is bound in nested columns.
 

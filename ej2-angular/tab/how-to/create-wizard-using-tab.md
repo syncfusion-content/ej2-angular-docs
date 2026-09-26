@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to create wizard using Tab in Angular Tab
 
-The Tab component can drive step-by-step wizard interfaces by dynamically controlling tab accessibility and selection. Disable tab items by passing the index and boolean argument to the [`enableTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#enabletab) method; programmatically activate a specific tab using the [`select`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#select) method by passing the index or HTML element.
+The Angular Tab component can drive step-by-step wizard interfaces by dynamically controlling Angular Tab accessibility and selection. Disable Angular Tab items by passing the index and boolean argument to the [`enableTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#enabletab) method; programmatically activate a specific Angular Tab using the [`select`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#select) method by passing the index or HTML element.
 
 ## Wizard layout
 
@@ -19,7 +19,7 @@ The Tab component can drive step-by-step wizard interfaces by dynamically contro
 3. **Passenger tab:** Render a table with TextBox, NumericTextBox, and DropDownList inputs for passenger name, age, gender, and berth preference. Validate entries before allowing forward navigation.
 4. **Payment tab:** Calculate the ticket cost from location, passenger count, and ticket type. Render a summary Grid with passenger details, train number, and total cost.
 
-Use **Back** buttons inside each tab to return to the previous step. While navigating, mark all other tabs as [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemDirective#disabled) to prevent skipping via the Tab header. When the wizard completes, clear all data and reset selection to the first tab.
+Use **Back** buttons inside each tab to return to the previous step. While navigating, mark all other tabs as [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemDirective#disabled) to prevent skipping via the Angular Tab header. When the wizard completes, clear all data and reset selection to the first tab.
 
 > **Validation pattern:** Bind each tab's **Next** button (or its `[disabled]` state) to its form's `invalid` state so users can only advance once required fields are satisfied.
 
@@ -42,5 +42,5 @@ In the following demo, designed for a simple train reservation module, tab items
 
 ## See Also
 
-* [Show/Hide Tab item](./show-hide-tab-item)
-* [Load Tab items dynamically](./load-tab-items-dynamically)
+* [Show/Hide Angular Tab item](./show-hide-tab-item)
+* [Load Angular Tab items dynamically](./load-tab-items-dynamically)

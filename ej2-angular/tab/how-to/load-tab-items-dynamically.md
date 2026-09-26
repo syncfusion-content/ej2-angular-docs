@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to load Tab items dynamically in Angular Tab
 
-Tabs can be added dynamically by passing an array of items and an index to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#addtab) method.
+Angular Tab can be added dynamically by passing an array of items and an index to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#addtab) method.
 
 ```typescript
     // New tab title and content inputs are fetched and stored in local variable
@@ -46,13 +46,13 @@ In the following demo, tab content is added by clicking the **+** icon.
 
 ## Index parameter
 
-Pass `0` to prepend a tab or `currentItems.length` to append it. Indices outside the valid range throw an error.
+Pass `0` to prepend a Angular Tab or `currentItems.length` to append it. Indices outside the valid range throw an error.
 
 ## Removing dynamically added tabs
 
-Call [`removeTab(index)`](https://ej2.syncfusion.com/angular/documentation/api/tab/index-default#removetab) on the Tab instance to remove a tab by its current index.
+Call [`removeTab(index)`](https://ej2.syncfusion.com/angular/documentation/api/tab/index-default#removetab) on the Angular Tab instance to remove a Angular Tab by its current index.
 
 ## See Also
 
 * [Adding dynamic items with content reuse](./adding-dynamic-items-with-content-reuse)
-* [Show/Hide Tab item](./show-hide-tab-item)
+* [Show/Hide Angular Tab item](./show-hide-tab-item)

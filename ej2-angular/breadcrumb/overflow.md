@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Overflow in Angular Breadcrumb | Syncfusion
 description: Handle long Angular Breadcrumb paths with overflow modes like Collapsed, Menu, Wrap, Scroll, Hidden, and None via maxItems.
@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Overflow Mode
 
-The Breadcrumb component uses the [`maxItems`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#maxitems) and [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#overflowmode) properties to control how breadcrumb items are displayed when they exceed the available container space. The `maxItems` property sets the maximum number of items to display, while  [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#overflowmode) determines the behavior for handling additional items.
+The Angular Breadcrumb component uses the [`maxItems`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#maxitems) and [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#overflowmode) properties to control how breadcrumb items are displayed when they exceed the available container space. The `maxItems` property sets the maximum number of items to display, while  [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#overflowmode) determines the behavior for handling additional items.
 
-In the following example, maxItems is set to 3 with overflowMode as Menu (default). To prevent breadcrumb item navigation, the [`enableNavigation`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#enablenavigation) property has been set to false in the Breadcrumb component.
+In the following example, maxItems is set to 3 with overflowMode as Menu (default). To prevent Angular Breadcrumb item navigation, the [`enableNavigation`](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb#enablenavigation) property has been set to false in the Angular Breadcrumb component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -28,7 +28,7 @@ In the following example, maxItems is set to 3 with overflowMode as Menu (defaul
   
 {% previewsample "page.domainurl/samples/breadcrumb/navigations-cs5" %}
 
-The following overflow modes are available in the Breadcrumb component to handle items that exceed the container space:
+The following overflow modes are available in the Angular Breadcrumb component to handle items that exceed the container space:
 
 * Collapsed
 * Menu
@@ -39,7 +39,7 @@ The following overflow modes are available in the Breadcrumb component to handle
 
 ## Collapsed
 
-Collapsed mode displays the first and last breadcrumb items while hiding intermediate items behind a collapsed icon (ellipsis). When the collapsed icon is clicked, all hidden items become visible and navigable, providing a compact view that maintains access to all navigation levels.
+Collapsed mode displays the first and last Angular Breadcrumb items while hiding intermediate items behind a collapsed icon (ellipsis). When the collapsed icon is clicked, all hidden items become visible and navigable, providing a compact view that maintains access to all navigation levels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -55,7 +55,7 @@ Collapsed mode displays the first and last breadcrumb items while hiding interme
 
 ## Menu
 
-Menu mode displays the maximum number of breadcrumb items that fit within the container space and organizes the remaining items into a dropdown submenu. This mode provides efficient space utilization while keeping all items accessible through the overflow menu.
+Menu mode displays the maximum number of Angular Breadcrumb items that fit within the container space and organizes the remaining items into a dropdown submenu. This mode provides efficient space utilization while keeping all items accessible through the overflow menu.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -87,7 +87,7 @@ Wrap mode automatically wraps breadcrumb items to multiple lines when the total 
 
 ## Scroll
 
-Scroll mode displays an HTML scroll bar when the breadcrumb width exceeds the container space, allowing users to horizontally scroll to view hidden items. This mode maintains the single-line layout while providing access to all items through scrolling.
+Scroll mode displays an HTML scroll bar when the Angular Breadcrumb width exceeds the container space, allowing users to horizontally scroll to view hidden items. This mode maintains the single-line layout while providing access to all items through scrolling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -103,7 +103,7 @@ Scroll mode displays an HTML scroll bar when the breadcrumb width exceeds the co
 
 ## Hidden
 
-Hidden mode displays the maximum number of items that fit within the container space and completely hides the remaining items. Hidden items become visible when users navigate to previous levels by clicking on visible breadcrumb items, creating a dynamic navigation experience.
+Hidden mode displays the maximum number of items that fit within the container space and completely hides the remaining items. Hidden items become visible when users navigate to previous levels by clicking on visible Angular Breadcrumb items, creating a dynamic navigation experience.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

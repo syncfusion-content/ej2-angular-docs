@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install Syncfusion JavaScript (EJ2) Offline Installer | Syncfusion
-description: Learn how to install the Syncfusion Essential JS 2 JavaScript offline installer on Windows using the UI or the command line, including silent install and uninstall.
+description: Learn how to install the Syncfusion Essential JS 2 JavaScript offline installer on Windows using UI or command line, including silent install options.
 platform: ej2-angular
 control: Installation using offline installer
 documentation: ug
@@ -74,7 +74,6 @@ The steps below show how to install the Essential<sup style="font-size:70%">&reg
     ![Uninstall previous versions](images/offline5.png)
 
     N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has added the option to uninstall previous versions from 18.1 onward while installing the new version.
-    >
     N> If any version is selected to uninstall, a confirmation screen will appear. If you click **Continue**, the Progress screen will display the uninstall and install progress respectively. If no versions are chosen to be uninstalled, only the installation progress is displayed.
 
     **Confirmation Alert**

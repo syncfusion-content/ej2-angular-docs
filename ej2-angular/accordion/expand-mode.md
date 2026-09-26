@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Expand Mode in Angular Accordion | Syncfusion
 description: Choose how the Angular Accordion behaves when items open, with Single mode for one expanded panel or Multiple mode for many.
@@ -10,18 +10,18 @@ domainurl: ##DomainURL##
 
 # Expand Mode in Angular Accordion
 
-The Accordion supports the two listed types of [`expandmode`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expandmode) while expanding or collapsing the item.
+The Angular Accordion supports the two listed types of [`expandmode`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expandmode) while expanding or collapsing the item.
 
 * Single
 * Multiple
 
 ## Single
 
-The `Single` expand mode allows only one Accordion item to be expanded at a time. When a new item is expanded, the previously expanded item collapses, and the new item enters the expanded state.
+The `Single` expand mode allows only one Angular Accordion item to be expanded at a time. When a new item is expanded, the previously expanded item collapses, and the new item enters the expanded state.
 
 You can set an item to be expanded on initial rendering by enabling the [`expanded`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItemModel#expanded) property on an Accordion item.
 
-This sample demonstrates the Accordion in `Single` mode, where only one item is expanded at a time.
+This sample demonstrates the Angular Accordion in `Single` mode, where only one item is expanded at a time.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -37,7 +37,7 @@ This sample demonstrates the Accordion in `Single` mode, where only one item is 
 
 ## Multiple
 
-The default [`expandMode`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expandmode) of the Accordion is `Multiple`. This mode allows multiple items to be expanded simultaneously. Clicking an expanded item toggles it to collapse, without affecting other expanded items.
+The default [`expandMode`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expandmode) of the Angular Accordion is `Multiple`. This mode allows multiple items to be expanded simultaneously. Clicking an expanded item toggles it to collapse, without affecting other expanded items.
 For large datasets in `Multiple` mode, consider performance optimization techniques, such as enabling virtualization, to ensure smooth rendering.
 
 {% tabs %}

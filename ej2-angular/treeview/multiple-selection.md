@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Multi Selection in Angular Tree View
 
-The TreeView component supports selecting multiple nodes simultaneously, enabling users to perform batch operations on several items. Visual indicators highlight the chosen nodes and confirm the selection state.
+The Angular Tree View component supports selecting multiple nodes simultaneously, enabling users to perform batch operations on several items. Visual indicators highlight the chosen nodes and confirm the selection state.
 
-The TreeView supports multiple node selection by setting the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowmultiselection) property to **true**.
+The Angular Tree View supports multiple node selection by setting the [allowMultiSelection](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowmultiselection) property to **true**.
 
 ## Enabling multiple selection
 
@@ -63,7 +63,7 @@ export class AppComponent {
 
 ### Selection events
 
-The TreeView provides events to handle selection changes:
+The Angular Tree View provides events to handle selection changes:
 
 * The [`nodeSelecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) event triggers before a node selection occurs. Set `args.cancel = true` in the event handler to cancel the selection.
 * The [`nodeSelected`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselected) event triggers after a node selection is completed successfully. Inspect `args.action` to determine whether the change was a `select` or `un-select`, and `args.nodeData` for the selected node record.

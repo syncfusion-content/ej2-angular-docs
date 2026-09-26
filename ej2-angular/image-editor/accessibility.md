@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Image Editor
 
-The Image Editor component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), and [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, along with [ARIA roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
+The Angular Image Editor component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), and [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, along with [ARIA roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
 
-The accessibility compliance for the Image Editor component is outlined below.
+The accessibility compliance for the Angular Image Editor component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the Image Editor component is outlined below.
 
 ## Keyboard interaction
 
-The Image Editor component follows the keyboard interaction guidelines, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Image Editor component. Focus the Image Editor control to use keyboard navigation.
+The Angular Image Editor component follows the keyboard interaction guidelines, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Angular Image Editor component. Focus the Angular Image Editor control to use keyboard navigation.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -54,9 +54,9 @@ The Image Editor component follows the keyboard interaction guidelines, making i
 
 ## Ensuring accessibility
 
-The Image Editor component's accessibility levels are validated using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
+The Angular Image Editor component's accessibility levels are validated using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
 
-The following sample demonstrates the accessibility compliance of the Image Editor component. Open the [sample](https://ej2.syncfusion.com/accessibility/image-editor.html) in a new window to evaluate the accessibility of the Image Editor component with accessibility tools.
+The following sample demonstrates the accessibility compliance of the Angular Image Editor component. Open the [sample](https://ej2.syncfusion.com/accessibility/image-editor.html) in a new window to evaluate the accessibility of the Angular Image Editor component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/image-editor/default-cs6" %}
 

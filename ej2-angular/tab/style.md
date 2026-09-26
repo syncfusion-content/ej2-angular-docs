@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The following content provides the exact CSS structure that can be used to modify the Tab component's appearance based on user preference. These styles can be applied through Angular component styles, external stylesheets, or global CSS files.
 
-> **Tip:** To scope CSS to a specific Tab instance, assign a custom class via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#cssclass) property of the Tab and prefix your selectors with that class.
+> **Tip:** To scope CSS to a specific Angular Tab instance, assign a custom class via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#cssclass) property of the Tab and prefix your selectors with that class.
 >
 > **Angular component style encapsulation:** Styles defined in a component's `.css` file are scoped by default. Use `::ng-deep` to pierce encapsulation when applying CSS to Syncfusion's internal classes, or move styles to a global stylesheet.
 >
@@ -22,7 +22,7 @@ The following content provides the exact CSS structure that can be used to modif
 
 ### Customizing Tab
 
-Use the following CSS to customize the overall Tab component container, including its border and background appearance.
+Use the following CSS to customize the overall Angular Tab component container, including its border and background appearance.
 
 ```CSS
 
@@ -34,9 +34,9 @@ Use the following CSS to customize the overall Tab component container, includin
 
 ## Header items
 
-### Customizing the Tab items
+### Customizing the Angular Tab items
 
-Apply this CSS to restyle the toolbar that hosts the tab header items, controlling the visual treatment of the tab header area where tab titles are displayed.
+Apply this CSS to restyle the toolbar that hosts the Angular Tab header items, controlling the visual treatment of the tab header area where tab titles are displayed.
 
 ```CSS
 
@@ -47,9 +47,9 @@ Apply this CSS to restyle the toolbar that hosts the tab header items, controlli
 
 ```
 
-### Customizing Tab's header
+### Customizing Angular Tab's header
 
-Apply this CSS to restyle the header section of the Tab component where tab titles are rendered.
+Apply this CSS to restyle the header section of the Angular Tab component where tab titles are rendered.
 
 ```CSS
 
@@ -59,7 +59,7 @@ Apply this CSS to restyle the header section of the Tab component where tab titl
 
 ```
 
-### Customizing Tab's header icon
+### Customizing Angular Tab's header icon
 
 Apply this CSS to restyle the header item icon of the Tab component.
 
@@ -73,9 +73,9 @@ Apply this CSS to restyle the header item icon of the Tab component.
 
 ## Content
 
-### Customizing Tab's content items
+### Customizing Angular Tab's content items
 
-Apply this CSS to restyle the content items of the Tab component, modifying the appearance of the content area shown when each tab is selected.
+Apply this CSS to restyle the content items of the Angular Tab component, modifying the appearance of the content area shown when each tab is selected.
 
 ```CSS
 
@@ -88,7 +88,7 @@ Apply this CSS to restyle the content items of the Tab component, modifying the 
 
 ### Customizing Tab's content
 
-Apply this CSS to restyle the content area of the Tab component as a whole.
+Apply this CSS to restyle the content area of the Angular Tab component as a whole.
 
 ```CSS
 
@@ -100,9 +100,9 @@ Apply this CSS to restyle the content area of the Tab component as a whole.
 
 ## States
 
-### Customizing the hover state of Tab component
+### Customizing the hover state of Angular Tab component
 
-Apply this CSS to restyle the appearance of tab items when users hover over them.
+Apply this CSS to restyle the appearance of Angular tab items when users hover over them.
 
 ```CSS
 
@@ -112,7 +112,7 @@ Apply this CSS to restyle the appearance of tab items when users hover over them
 
 ```
 
-Use the following CSS to restyle the tab item popup navigation arrows when hovering.
+Use the following CSS to restyle the Angular tab item popup navigation arrows when hovering.
 
 ```CSS
 
@@ -123,7 +123,7 @@ Use the following CSS to restyle the tab item popup navigation arrows when hover
 
 ```
 
-### Customizing selected item of Tab component
+### Customizing selected item of Angular Tab component
 
 Apply this CSS to restyle the visual appearance of the currently selected tab item.
 

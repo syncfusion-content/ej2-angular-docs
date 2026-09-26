@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Types in Angular Spinner
 
-By default, the Spinner type is automatically set based on the theme imported into the page. The spinner loads in the applicable Essential JS 2 component according to the selected theme.
+By default, the Angular Spinner type is automatically set based on the theme imported into the page. The Angular Spinner loads in the applicable Essential JS 2 component according to the selected theme.
 
-The available spinner types are:
+The available Angular Spinner types are:
 * Material
 * Fabric
 * Bootstrap
 
-Change the spinner type by passing the type as a parameter to the `setSpinner` method.
+Change the Angular Spinner type by passing the type as a parameter to the `setSpinner` method.
 
 ```typescript
-// Specify the spinner type to display
+// Specify the Angular Spinner type to display
 setSpinner({ type: 'Bootstrap' });
 ```
 

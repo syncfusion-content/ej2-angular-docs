@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to hide Sidebar in Angular Sidebar
 
-This example demonstrates how to programmatically hide the master page Sidebar. Initially, the Sidebar is rendered with the master page. When navigating to another page, it hides the master page Sidebar using Angular routing.
+This example demonstrates how to programmatically hide the master page Angular Sidebar. Initially, the Angular Sidebar is rendered with the master page. When navigating to another page, it hides the master page Sidebar using Angular routing.
 
-Refer to the Sidebar component in `app.component.html`
+Refer to the Angular Sidebar component in `app.component.html`
 
 ```html
 <router-outlet>
@@ -100,7 +100,7 @@ Add this below code in `app.component.ts`
 
 import { Component, ViewChild, AfterViewInit, ViewEncapsulation } from '@angular/core';
 
-// importing Sidebar components from the ej2-angular-navigations package
+// importing Angular Sidebar components from the ej2-angular-navigations package
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 import { Router, NavigationEnd } from '@angular/router';
@@ -113,7 +113,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild('sidebar')
-  // Instance of the Sidebar in the main page
+  // Instance of the Angular Sidebar in the main page
   public sidebarInstance: SidebarComponent;
 
   // The below variable will hold the URL of the navigation page when router event is triggered
@@ -125,14 +125,14 @@ export class AppComponent implements AfterViewInit {
     router.events.forEach((event) => {
       if (event instanceof NavigationEnd) {
         this.urlValue = event.url;
-        //Based on the routed URL, Sidebar in the main page will expand or collapse.
+        //Based on the routed URL, Angular Sidebar in the main page will expand or collapse.
         this.checkURL();
       }
     });
   }
 
   onCreated() {
-    // This event will trigger whenever a Sidebar in the main page is rendered.
+    // This event will trigger whenever a Angular Sidebar in the main page is rendered.
     if (this.sidebarInstance.element.classList.contains("e-hidden")) {
       this.sidebarInstance.element.classList.remove("e-hidden");
       this.checkURL();
@@ -140,12 +140,12 @@ export class AppComponent implements AfterViewInit {
   }
 
   checkURL() {
-    //Based on the routed URL, the Sidebar in the main page will expand or collapse.
+    //Based on the routed URL, the Angular Sidebar in the main page will expand or collapse.
     (!this.urlValue || this.urlValue !== "/") ? this.sidebarInstance.hide() : this.sidebarInstance.show();
   }
 
   closeClick() {
-    //On clicking the close icon, the Sidebar will get collapsed
+    //On clicking the close icon, the Angular Sidebar will get collapsed
     this.sidebarInstance.hide();
   }
 
@@ -159,6 +159,6 @@ export class AppComponent implements AfterViewInit {
 
 ```
 
-The following sample demonstrates how to hide the Sidebar using Angular service in a routing application. Refer to this sample.
+The following sample demonstrates how to hide the Angular Sidebar using Angular service in a routing application. Refer to this sample.
 
 [Sample](https://github.com/SyncfusionExamples/how-to-hide-angular-sidebar-using-angular-service-in-routing-application)

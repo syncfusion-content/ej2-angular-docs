@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Query Builder UI
 
-The Query Builder component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WAI-ARIA](https://www.w3.org/TR/wai-aria/) roles, ensuring an inclusive experience for all users.
+The Angular Query Builder UI component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WAI-ARIA](https://www.w3.org/TR/wai-aria/) roles, ensuring an inclusive experience for all users.
 
-The following table outlines the accessibility compliance features of the Query Builder component.
+The following table outlines the accessibility compliance features of the Angular Query Builder UI component.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,7 +42,7 @@ The following table outlines the accessibility compliance features of the Query 
 
 WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) provides semantics for describing component roles, states, and functionality. These attributes enhance accessibility for assistive technologies, enabling better support for users with disabilities.
 
-The Query Builder uses the following WAI-ARIA attributes:
+The Angular Query Builder UI uses the following WAI-ARIA attributes:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -53,7 +53,7 @@ The Query Builder uses the following WAI-ARIA attributes:
 
 ## Keyboard interaction
 
-The Query Builder supports full keyboard navigation, enabling users who rely on assistive technologies or keyboard-only navigation to interact with all features. The following keyboard shortcuts are available:
+The Angular Query Builder UI supports full keyboard navigation, enabling users who rely on assistive technologies or keyboard-only navigation to interact with all features. The following keyboard shortcuts are available:
 
 | Press | To do this |
 | --- | --- |
@@ -68,17 +68,17 @@ The Query Builder supports full keyboard navigation, enabling users who rely on 
 
 ## Ensuring accessibility
 
-The Query Builder component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Query Builder UI component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-To validate the Query Builder against accessibility standards in your own application:
+To validate the Angular Query Builder UI against accessibility standards in your own application:
 
 1. Run the accessibility-checker against any page hosting the Query Builder and review the reported violations against the WCAG 2.2 and Section 508 rule sets.
 2. Run axe-core on the rendered Query Builder element and address any reported serious or critical issues.
 3. Re-run both tools after any template or style customization, since custom content can introduce new accessibility regressions.
 
-The accessibility compliance of the Query Builder component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/query-builder.html) in a new window to evaluate the accessibility of the Query Builder component with accessibility tools.
+The accessibility compliance of the Angular Query Builder UI component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/query-builder.html) in a new window to evaluate the accessibility of the Angular Query Builder UI component with accessibility tools.
 
-The following sample renders the default Query Builder and can be used to run the accessibility validation tools directly against the component:
+The following sample renders the default Angular Query Builder UI and can be used to run the accessibility validation tools directly against the component:
 
 {% previewsample "page.domainurl/samples/query-builder/default-cs1" %}
 

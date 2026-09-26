@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to restrict the maximum toast count in Angular Toast
 
-You can restrict the maximum toast count by event callback function. You can terminate the toast displaying process by setting cancel event property in [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#beforeopen) Event.
+You can restrict the maximum Angular Toast count by event callback function. You can terminate the Angular Toast displaying process by setting cancel event property in [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#beforeopen) Event.
 
-Here below sample demonstrates restrict toast displaying up to 3. You can restrict by your own count with custom code blocks.
+Here below sample demonstrates restrict Angular Toast displaying up to 3. You can restrict by your own count with custom code blocks.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

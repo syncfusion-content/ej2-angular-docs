@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
 
-## Customizing the toast title
+## Customizing the Angular Toast title
 
-Use the following CSS to customize the default toast's content properties like font-family, font-size and color.
+Use the following CSS to customize the default Angular Toast's content properties like font-family, font-size and color.
 
 ```CSS
 /* To change color, font family and font size */
@@ -25,7 +25,7 @@ Use the following CSS to customize the default toast's content properties like f
 }
 ```
 
-## Customizing the toast content
+## Customizing the Angular Toast content
 
 Use the following CSS to customize the default toast's content properties like font-family, font-size and color.
 
@@ -38,9 +38,9 @@ Use the following CSS to customize the default toast's content properties like f
 }
 ```
 
-## Customizing the toast icon
+## Customizing the Angular Toast icon
 
-Use the following CSS to customize the default toast icon color.
+Use the following CSS to customize the default Angular Toast icon color.
 
 ```CSS
 /* To change icon color */
@@ -49,9 +49,9 @@ Use the following CSS to customize the default toast icon color.
 }
 ```
 
-## Customizing the toast background
+## Customizing the Angular Toast background
 
-Use the following CSS to customize the default toast's background color.
+Use the following CSS to customize the default Angular Toast's background color.
 
 ```CSS
 /* To change background color */

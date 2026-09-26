@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to change animation settings in Angular Menu Bar
 
-You can customize the animation behavior of the Angular Menu component using the [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuAnimationSettingsModel/) property. This allows you to control how the menu appears and disappears, enhancing the user experience with smooth transitions.
+You can customize the animation behavior of the Angular Menu Bar component using the [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuAnimationSettingsModel/) property. This allows you to control how the menu appears and disappears, enhancing the user experience with smooth transitions.
 
 ## Available animation effects
 The following animation effects are supported:

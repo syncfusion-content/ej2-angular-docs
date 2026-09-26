@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style and Appearance in Angular AppBar | Syncfusion
 description: Style the Angular AppBar with built-in CSS classes, custom cssClass, htmlAttributes, and Theme Studio for full appearance control.
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular AppBar
 
-The AppBar component offers extensive customization options to modify its appearance and integrate seamlessly with your application's design system. You can customize the AppBar through built-in color modes, CSS classes, and custom styling approaches. Additionally, you have the option to create your own custom theme for all controls using the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
+The Angular AppBar component offers extensive customization options to modify its appearance and integrate seamlessly with your application's design system. You can customize the AppBar through built-in color modes, CSS classes, and custom styling approaches. Additionally, you have the option to create your own custom theme for all controls using the [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 
-## Built-in styling AppBar
+## Built-in styling Angular AppBar
 
-The AppBar component provides several built-in CSS classes for common styling scenarios. These classes can be applied individually or combined to achieve the desired appearance.
+The Angular AppBar component provides several built-in CSS classes for common styling scenarios. These classes can be applied individually or combined to achieve the desired appearance.
 
 |CSS Class | Purpose of Class |
 |-----|----- |
@@ -30,7 +30,7 @@ The AppBar component provides several built-in CSS classes for common styling sc
 
 ## CssClass
 
-The CssClass property enables AppBar customization through custom CSS classes, allowing you to override default styles and create unique appearances. In the following example, the AppBar background and color are customized using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/appbar#cssclass) property.
+The CssClass property enables Angular AppBar customization through custom CSS classes, allowing you to override default styles and create unique appearances. In the following example, the Angular AppBar background and color are customized using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/appbar#cssclass) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -46,7 +46,7 @@ The CssClass property enables AppBar customization through custom CSS classes, a
 
 ## HtmlAttributes
 
-It can be used for additional inline attributes by specifying as inline attributes or by specifying [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/appbar#htmlattributes) directive. In the code example below, the aria-label of the AppBar is customized by specifying as attributes.
+It can be used for additional inline attributes by specifying as inline attributes or by specifying [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/appbar#htmlattributes) directive. In the code example below, the aria-label of the Angular AppBar is customized by specifying as attributes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

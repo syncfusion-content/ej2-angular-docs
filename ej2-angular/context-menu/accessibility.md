@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Context Menu
 
-The Angular ContextMenu component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Context Menu component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Angular ContextMenu component is summarized below.
+The accessibility compliance for the Angular Context Menu component is summarized below.
 
 | Accessibility Criteria | Compliance |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the Angular ContextMenu component is summarized
 
 ## WAI-ARIA attributes
 
-The Angular ContextMenu component follows the [WAI-ARIA menubar pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/) to meet accessibility requirements. The following ARIA attributes are used in the ContextMenu component:
+The Angular Context Menu component follows the [WAI-ARIA menubar pattern](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/) to meet accessibility requirements. The following ARIA attributes are used in the Context Menu component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -52,7 +52,7 @@ The Angular ContextMenu component follows the [WAI-ARIA menubar pattern](https:/
 
 ## Keyboard interaction
 
-The Angular ContextMenu component follows the [WAI-ARIA keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/#keyboardinteraction) guidelines, making it accessible for people who use assistive technologies and those who rely completely on keyboard navigation. The following keyboard shortcuts are supported by the ContextMenu component:
+The Angular Context Menu component follows the [WAI-ARIA keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/menubar/#keyboardinteraction) guidelines, making it accessible for people who use assistive technologies and those who rely completely on keyboard navigation. The following keyboard shortcuts are supported by the Context Menu component:
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -65,9 +65,9 @@ The Angular ContextMenu component follows the [WAI-ARIA keyboard interaction](ht
 
 ## Ensuring accessibility
 
-The Angular ContextMenu component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Context Menu component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the ContextMenu component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/context-menu.html) in a new window to evaluate the accessibility of the ContextMenu component with accessibility tools.
+The accessibility compliance of the Angular Context Menu component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/context-menu.html) in a new window to evaluate the accessibility of the Angular Context Menu component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/context-menu/aria-and-keyboard-cs1" %}
 

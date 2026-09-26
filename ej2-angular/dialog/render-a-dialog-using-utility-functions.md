@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Dialog utility in Angular Dialog
 
-The dialog component provides built-in utility functions to render alert and confirm dialogs with minimal code.
+The Angular Dialog component provides built-in utility functions to render alert and confirm dialogs with minimal code.
 The following options are used as arguments when calling the utility functions:
 
 | Options   | Description |
 |-----------|-------------|
-| title | Specifies the title of the dialog, similar to the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#header) property. |
+| title | Specifies the title of the Angular Dialog, similar to the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#header) property. |
 | content | Specifies the content to display in the dialog, similar to the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#content) property. |
-| isModal | Specifies whether the dialog displays as modal or non-modal. For more details, refer to the [`isModal`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#ismodal) property. |
+| isModal | Specifies whether the Angular Dialog displays as modal or non-modal. For more details, refer to the [`isModal`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#ismodal) property. |
 | position | Specifies the position of the alert or confirm dialog within the document. For more details, refer to the [`position`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#position) property, e.g., `{ X: 'center', Y: 'center' }`. |
 | okButton | Configures the OK button with button properties and click events. Example: `okButton: { icon: 'icon-class', cssClass: 'custom-class', click: 'handler', text: 'Yes' }` (default text is 'OK'). |
 | cancelButton | Configures the Cancel button with button properties and click events. Example: `cancelButton: { icon: 'icon-class', cssClass: 'custom-class', click: 'handler', text: 'No' }` (default text is 'Cancel'). |

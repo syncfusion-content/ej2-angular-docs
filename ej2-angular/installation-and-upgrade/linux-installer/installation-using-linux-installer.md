@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Install Syncfusion JavaScript (EJ2) Linux Installer | Syncfusion
-description: Learn how to install the Syncfusion Essential JS 2 JavaScript Linux installer, including extracting the zip, using the demo source, and registering the license key.
+description: Learn how to install the Syncfusion Essential JS 2 JavaScript Linux installer, including extracting the zip file and registering the license key.
 control: Installation using Linux installer
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer
+# Installing JavaScript Linux installer
 
 This guide explains how to extract and use the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 JavaScript Linux installer on a Linux machine.
 
@@ -16,7 +16,7 @@ This guide explains how to extract and use the Syncfusion<sup style="font-size:7
 
 * The downloaded Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer in `.zip` format.
 * A tool to extract `.zip` files, such as `unzip`.
-* For running the bundled JavaScript sample applications: a current LTS version of [Node.js](https://nodejs.org/) and npm.
+* For running the bundled JavaScript sample applications: a current LTS version of Node.js and npm.
 
 ## Step-by-step installation
 

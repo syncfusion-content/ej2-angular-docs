@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-popups
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Spinner component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Spinner component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -108,7 +108,7 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Spinner component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Spinner import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular Spinner import, template, and data into your generated file.
 
 ```typescript
 import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
@@ -148,7 +148,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Spinner. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular Spinner. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 

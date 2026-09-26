@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to position the Dialog in Angular Dialog
 
-By default, the dialog displays in the center of the target container. Set the dialog position using the [position](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#position) property by providing custom X and Y coordinates. The dialog positions inside the target based on the specified X and Y values.
+By default, the Angular Dialog displays in the center of the target container. Set the Angular Dialog position using the [position](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#position) property by providing custom X and Y coordinates. The Angular Dialog positions inside the target based on the specified X and Y values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

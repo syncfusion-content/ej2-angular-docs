@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to create a nested Dialog in Angular Dialog
 
-A Dialog can be nested within another Dialog by rendering a child `<ejs-dialog>` inside the parent dialog's content. The following sample contains a parent and a child (inner) dialog.
+A Angular Dialog can be nested within another Angular Dialog by rendering a child `<ejs-dialog>` inside the parent dialog's content. The following sample contains a parent and a child (inner) dialog.
 
 **Step 1**: Create two div elements with id `#dialog` and `#innerDialog`.
 
-**Step 2**: Initialize the dialogs as shown in the sample below.
+**Step 2**: Initialize the Angular Dialogs as shown in the sample below.
 
 **Step 3**: Set the inner dialog's `target` property to the string selector `'#dialog'` so that the inner dialog renders inside the outer dialog element. This anchors the inner dialog to the outer's DOM and keeps the two stacked correctly.
 

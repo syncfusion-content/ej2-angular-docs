@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Tab
 
-The Localization library localizes the default text content of the Tab component for different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#locale) property. In Tab, the close button's tooltip text is localized based on the specified culture. The close button appears on the tab header when the [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#showclosebutton) property is enabled.
+The Localization library localizes the default text content of the Angular Tab component for different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#locale) property. In Tab, the close button's tooltip text is localized based on the specified culture. The close button appears on the Angular Tab header when the [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#showclosebutton) property is enabled.
 
 The list of localizable keys and their default values is shown below.
 
@@ -40,7 +40,7 @@ L10n.load({
 });
 ```
 
-In the sample below, the `fr-FR` culture is applied to the Tab component, which changes the close button's tooltip text accordingly.
+In the sample below, the `fr-FR` culture is applied to the Angular Tab component, which changes the close button's tooltip text accordingly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -56,11 +56,11 @@ In the sample below, the `fr-FR` culture is applied to the Tab component, which 
 
 ## Changing locale dynamically
 
-After initial render, switch the locale at runtime by updating the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#locale) property on the component instance. New translations take effect for subsequent renderings, such as when a tab with a close button is freshly rendered.
+After initial render, switch the locale at runtime by updating the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#locale) property on the component instance. New translations take effect for subsequent renderings, such as when a Angular Tab with a close button is freshly rendered.
 
 ## Fallback behavior
 
-If a translation key is missing for the active locale, the Tab falls back to the value defined under the `en-US` default key. The component never displays an empty string for a localizable default.
+If a translation key is missing for the active locale, the Angular Tab falls back to the value defined under the `en-US` default key. The component never displays an empty string for a localizable default.
 
 ## See Also
 

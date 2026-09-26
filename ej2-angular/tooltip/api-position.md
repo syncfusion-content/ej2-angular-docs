@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # API position in Angular Tooltip component
 
-Applicable positions for displaying the Tooltip over target elements:
+Applicable positions for displaying the Angular Tooltip over target elements:
 * TopLeft
 * TopCenter
 * TopRight

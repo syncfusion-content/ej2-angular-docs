@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to add top and bottom Sidebar in Angular Sidebar
 
-You can initialize the Sidebar at the left and right positions by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property. It will automatically adjust the width of the main content.
+You can initialize the Angular Sidebar at the left and right positions by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property. It will automatically adjust the width of the main content.
 
-You can also initialize Sidebar at the top and bottom positions in application level. To initialize the Sidebar, you need to manually adjust the height of the main content.
+You can also initialize Angular Sidebar at the top and bottom positions in application level. To initialize the Angular Sidebar, you need to manually adjust the height of the main content.
 
-In the following sample, the [`toggle`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#toggle) method has been used to show or hide the top and bottom sidebars on button click.
+In the following sample, the [`toggle`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#toggle) method has been used to show or hide the top and bottom Angular Sidebar on button click.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

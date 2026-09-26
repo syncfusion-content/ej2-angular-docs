@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to change sub menu position in Angular Menu Bar
 
-You can customize the position of a submenu in the Syncfusion Angular Menu component by using the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event. This event allows you to override the default positioning by manually setting the `top` and `left` coordinates of the submenu element.
+You can customize the position of a submenu in the Syncfusion Angular Menu Bar component by using the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen) event. This event allows you to override the default positioning by manually setting the `top` and `left` coordinates of the submenu element.
 ### Example: Set Custom Submenu Position
 In the below sample, the sub menu opens above the parent menu item.
 

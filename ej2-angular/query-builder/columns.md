@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Query Builder UI
 
-Column definitions specify the schema for the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) and control how the Query Builder renders and processes data. All Query Builder operations—such as creating/deleting conditions and groups—are based on these definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsmodel#field) property maps columns to data source values.
+Column definitions specify the schema for the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#datasource) and control how the Angular Query Builder UI renders and processes data. All Angular Query Builder UI operations—such as creating/deleting conditions and groups—are based on these definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsmodel#field) property maps columns to data source values.
 
 > If the column `field` property is not specified, the corresponding column values will be empty in the Query Builder.
 
@@ -34,7 +34,7 @@ The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/query-build
 
 ## Labels
 
-By default, the Query Builder displays the column label from the [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsmodel#field) property. To customize the label, set the [`label`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel#label) property.
+By default, the Angular Query Builder UI displays the column label from the [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsmodel#field) property. To customize the label, set the [`label`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel#label) property.
 
 ```typescript
 <e-column field="EmployeeID" label="Employee ID" type="number"></e-column>
@@ -74,7 +74,7 @@ To restrict the operators available for a specific column, define the `operators
 
 ## Step
 
-The Query Builder allows you to set the step value for numeric columns, which controls the increment of the numeric textbox editor used to enter the value. Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel#step) property to set the step value for numeric columns.
+The Angular Query Builder UI allows you to set the step value for numeric columns, which controls the increment of the numeric textbox editor used to enter the value. Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel#step) property to set the step value for numeric columns.
 
 ```typescript
 <e-column field="TaskID" label="Task ID" type="number" [step]="2"></e-column>
@@ -82,7 +82,7 @@ The Query Builder allows you to set the step value for numeric columns, which co
 
 ## Format
 
-The Query Builder formats date and number values. Use the [`format`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsmodel#format) property to format date and number values. For date columns, the value uses standard date format tokens (for example, `dd/MM/yyyy`, `yyyy-MM-dd`, or `MM/dd/yyyy`). For numeric columns, the value uses numeric format strings (for example, `n2` for two decimal places, `c2` for currency with two decimal places, or `p0` for a percentage with no decimal places).
+The Angular Query Builder UI formats date and number values. Use the [`format`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsmodel#format) property to format date and number values. For date columns, the value uses standard date format tokens (for example, `dd/MM/yyyy`, `yyyy-MM-dd`, or `MM/dd/yyyy`). For numeric columns, the value uses numeric format strings (for example, `n2` for two decimal places, `c2` for currency with two decimal places, or `p0` for a percentage with no decimal places).
 
 ```typescript
 <e-column field="HireDate" label="Hire Date" type="date" format="dd/MM/yyyy"></e-column>
@@ -102,7 +102,7 @@ The Query Builder formats date and number values. Use the [`format`](https://ej2
 
 ## Validations
 
-Validation allows you to validate the conditions and it displays errors for invalid fields while using the `validateFields` method. To enable validation in the Query Builder, set the [`allowValidation`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#allowvalidation) property to `true`. Column fields are validated after setting [`allowValidation`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#allowvalidation) to `true`, so you should manually configure the validation for the Operator and Value fields through the [`validation`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel#validation) property.
+Validation allows you to validate the conditions and it displays errors for invalid fields while using the `validateFields` method. To enable validation in the Angular Query Builder UI, set the [`allowValidation`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#allowvalidation) property to `true`. Column fields are validated after setting [`allowValidation`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#allowvalidation) to `true`, so you should manually configure the validation for the Operator and Value fields through the [`validation`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsModel#validation) property.
 
 The `validation` object is configured per column and supports the following properties:
 

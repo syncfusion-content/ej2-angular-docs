@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to show Tooltip on disabled elements in Angular Tooltip
 
-By default, tooltips do not display on disabled elements. However, you can enable this behavior by following the steps below.
+By default, Angular Tooltip do not display on disabled elements. However, you can enable this behavior by following the steps below.
 
 1. Add a disabled element, such as a `button`, inside a `div` with `display` style set to `inline-block`.
 2. Set the pointer event to `none` for the disabled element (button) using CSS.
-3. Initialize the tooltip for the outer `div` element.
+3. Initialize the Angular Tooltip for the outer `div` element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Predefined Dialogs
 
-This section explains how to create a simple predefined dialog and demonstrates the basic usage of predefined dialogs in an Angular environment.
+This section explains how to create a simple Angular Predefined Dialogs and demonstrates the basic usage of Angular Predefined Dialogs in an Angular environment.
 
 > Note: This guide supports **Angular 21** and other recent Angular versions. For detailed compatibility with other Angular versions, please refer to the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility). Starting from Angular 19, standalone components are the default, and this guide reflects that architecture.
 

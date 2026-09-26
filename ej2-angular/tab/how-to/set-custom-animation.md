@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to set custom animation in Angular Tab
 
-The Tab component supports custom animations for both previous and next tab transitions using the built-in animation options from Syncfusion's Animation library. The [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#animation) property configures [`easing`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#easing), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#duration), and various animation [`effect`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#effect) options to create smooth, visually appealing tab transitions.
+The Angular Tab component supports custom animations for both previous and next tab transitions using the built-in animation options from Syncfusion's Animation library. The [`animation`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#animation) property configures [`easing`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#easing), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#duration), and various animation [`effect`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabActionSettings/#effect) options to create smooth, visually appealing tab transitions.
 
-The default animation configuration uses `SlideLeftIn` for [`previous`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabAnimationSettingsModel/#previous) tab animation and `SlideRightIn` for [`next`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabAnimationSettingsModel/#next) tab animation. To disable animations completely, set the animation effect to `None`.
+The default animation configuration uses `SlideLeftIn` for [`previous`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabAnimationSettingsModel/#previous) tab animation and `SlideRightIn` for [`next`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabAnimationSettingsModel/#next) Angular Tab animation. To disable animations completely, set the animation effect to `None`.
 
 When disabling animations by setting the effect to `None`, use the following CSS to also disable the indicator animation for a consistent experience:
 
@@ -27,7 +27,7 @@ When disabling animations by setting the effect to `None`, use the following CSS
 ## Steps
 
 1. In the component class, build a single animation object with `previous` and `next` settings, including `duration` (ms), `easing`, and `effect`.
-2. Bind that object to the Tab's `animation` property.
+2. Bind that object to the Angular Tab's `animation` property.
 
 ```typescript
 public animation: object = {
@@ -36,7 +36,7 @@ public animation: object = {
 };
 ```
 
-The following sample demonstrates various animation types that work effectively with the Tab component.
+The following sample demonstrates various animation types that work effectively with the Angular Tab component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -56,4 +56,4 @@ Common values include `FadeIn`, `FadeOut`, `SlideLeftIn`, `SlideRightIn`, `Slide
 
 ## See Also
 
-* [Disable default Tab animation effects](./disable-default-tab-animation-effects)
+* [Disable default Angular Tab animation effects](./disable-default-tab-animation-effects)

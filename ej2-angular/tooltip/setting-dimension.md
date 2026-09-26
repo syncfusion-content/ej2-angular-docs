@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Height and width
 
-Set the tooltip to auto or specific pixel values for height and width. The [`width`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#height) properties set the outer dimensions of the tooltip element. Both properties default to `auto` and accept string and number values in pixels.
+Set the Angular Tooltip to auto or specific pixel values for height and width. The [`width`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#height) properties set the outer dimensions of the tooltip element. Both properties default to `auto` and accept string and number values in pixels.
 
-The following sample demonstrates setting tooltip dimensions.
+The following sample demonstrates setting Angular Tooltip dimensions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -44,4 +44,4 @@ When [`height`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#he
   
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs20" %}
 
-> The scrolling mode can best be seen when the sticky mode of the Tooltip is enabled. To enable sticky mode, set the [`isSticky`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#issticky) property to `true`.
+> The scrolling mode can best be seen when the sticky mode of the Angular Tooltip is enabled. To enable sticky mode, set the [`isSticky`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#issticky) property to `true`.

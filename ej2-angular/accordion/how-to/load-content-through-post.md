@@ -16,7 +16,7 @@ Follow these steps to load content via AJAX:
 
 * Import the `Ajax` module from `@syncfusion/ej2-base` and initialize it with the URL path.
 
-* Retrieve data from the AJAX `success` event and use it to initialize or update the Accordion.
+* Retrieve data from the AJAX `success` event and use it to initialize or update the Angular Accordion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

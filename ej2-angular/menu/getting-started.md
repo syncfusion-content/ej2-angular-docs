@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Menu Bar
 
-The Menu component displays a list of commands and options in a hierarchical structure, enabling efficient navigation and action selection.
+The Angular Menu Bar component displays a list of commands and options in a hierarchical structure, enabling efficient navigation and action selection.
 
-This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Menu component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
+This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Menu Bar component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
 The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
@@ -75,7 +75,7 @@ cd syncfusion-angular-app
 
 ## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Menu package
 
-To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Menu** package, use the following command:
+To install the **Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Menu Bar** package, use the following command:
 
 ```bash
 ng install @syncfusion/ej2-angular-navigations
@@ -108,9 +108,9 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Menu component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Menu import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular Menu Bar import, template, and data into your generated file.
 
-> For the full property list, see the [Menu API reference](https://ej2.syncfusion.com/angular/documentation/api/menu/index-default).
+> For the full property list, see the [Angular Menu Bar API reference](https://ej2.syncfusion.com/angular/documentation/api/menu/index-default).
 
 ```javascript
 import { Component } from '@angular/core';
@@ -177,11 +177,11 @@ From the project root:
 npm start
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Menu. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular Menu Bar. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`
 
 Stop the server with `Ctrl+C` in the terminal.
 
-The following example shows a basic `Menu` component.
+The following example shows a basic `Angular Menu Bar` component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

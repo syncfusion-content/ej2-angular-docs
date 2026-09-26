@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Template in Angular Query Builder UI
 
-Customize the Query Builder's header and column interfaces using templates. Templates enable you to replace default UI elements with custom components, providing complete control over the user experience.
+Customize the Angular Query Builder UI's header and column interfaces using templates. Templates enable you to replace default UI elements with custom components, providing complete control over the user experience.
 
 ## Header template
 
@@ -158,7 +158,7 @@ The `#ruleTemplate` template variable identifies the NgTemplate content as the c
 | `operator` | The operator of the rule. |
 | `value` | The value of the rule. |
 
-Within the template, call `qryBldrObj.notifyChange(value, element, 'field' | 'value')` to push field/value changes back to the Query Builder, and use `qryBldrObj.getRule(element)` or `qryBldrObj.getDataManagerQuery({ condition, rules })` to read the rule or build a filtered DataManager query.
+Within the template, call `qryBldrObj.notifyChange(value, element, 'field' | 'value')` to push field/value changes back to the Angular Query Builder UI, and use `qryBldrObj.getRule(element)` or `qryBldrObj.getDataManagerQuery({ condition, rules })` to read the rule or build a filtered DataManager query.
 
 In the following sample, dropdown and slider are used as the custom components and the `greaterthanorequal` operator is applied to the Age column.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Drag and Drop in Angular Tree View
 
-The TreeView component enables drag and drop functionality for nodes when the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) property is set to **true**. This feature allows users to reorganize the hierarchical structure by dragging nodes and dropping them at different positions within the TreeView. Nodes can be dragged and dropped at all levels of the same TreeView, providing flexible data manipulation capabilities.
+The Angular Tree View component enables drag and drop functionality for nodes when the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) property is set to **true**. This feature allows users to reorganize the hierarchical structure by dragging nodes and dropping them at different positions within the Angular Tree View. Nodes can be dragged and dropped at all levels of the same TreeView, providing flexible data manipulation capabilities.
 
 The dragged nodes can be dropped at any level by indicator lines with the **line (sibling)**, **plus (child)**, and **restrict (no-drop)** icons. These visual indicators represent the exact position where the node will be dropped as either a sibling or child of the target node.
 
@@ -26,9 +26,9 @@ The following table explains the usage of indicator icons.
 
 * If you need to prevent dragging action for a particular node, the [`nodeDragStart`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstart) event can be used which is triggered when the node drag is started. If you need to prevent dropping action for a particular node, the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) event can be used which is triggered when the drag is stopped.
 
-* The [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragging) event is triggered when the TreeView node is being dragged. You can customize the cloned element in this event.
+* The [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragging) event is triggered when the Angular Tree View node is being dragged. You can customize the cloned element in this event.
 
-* The [`nodeDropped`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedropped) event is triggered when the TreeView node is dropped on the target element successfully.
+* The [`nodeDropped`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedropped) event is triggered when the Angular Tree View node is dropped on the target element successfully.
 
 In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowdraganddrop) property is enabled.
 {% tabs %}

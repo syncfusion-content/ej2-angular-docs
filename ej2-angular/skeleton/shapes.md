@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Shapes in Angular Skeleton
 
-The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#shape) property to create a preview of any layout.
+The Angular Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#shape) property to create a preview of any layout.
 
-The Skeleton component supports the following content shapes:
+The Angular Skeleton component supports the following content shapes:
 
-## Circle skeleton shape
+## Circle Angular Skeleton shape
 
 ```typescript
 import { Component } from '@angular/core';
@@ -27,7 +27,7 @@ import { Component } from '@angular/core';
 export class AppComponent { }
 ```
 
-## Square skeleton shape
+## Square Angular Skeleton shape
 
 ```typescript
 import { Component } from '@angular/core';
@@ -40,7 +40,7 @@ import { Component } from '@angular/core';
 export class AppComponent { }
 ```
 
-## Rectangle skeleton shape
+## Rectangle Angular Skeleton shape
 
 ```typescript
 import { Component } from '@angular/core';
@@ -53,7 +53,7 @@ import { Component } from '@angular/core';
 export class AppComponent { }
 ```
 
-## Text skeleton shape
+## Text Angular Skeleton shape
 
 ```typescript
 import { Component } from '@angular/core';
@@ -66,7 +66,7 @@ import { Component } from '@angular/core';
 export class AppComponent { }
 ```
 
-Below example demonstrates the above functionalities of a Skeleton component.
+Below example demonstrates the above functionalities of a Angular Skeleton component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

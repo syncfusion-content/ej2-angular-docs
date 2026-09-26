@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Tooltip
 
-Customize the tooltip using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#cssclass) property, which accepts custom CSS class names to define user-defined styles and themes.
+Customize the Angular Tooltip using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#cssclass) property, which accepts custom CSS class names to define user-defined styles and themes.
 
 ## Tip pointer customization
 
@@ -28,9 +28,9 @@ Style the tip pointer's size, background, and border colors using the `cssClass`
   
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs6" %}
 
-## Tooltip customization
+## Angular Tooltip customization
 
-Customize the complete appearance of the tooltip by changing its background color, opacity, content font, and more. The following code example demonstrates this customization.
+Customize the complete appearance of the Angular Tooltip by changing its background color, opacity, content font, and more. The following code example demonstrates this customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

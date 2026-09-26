@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to manage tree node actions using context menu in Angular Tree View
 
-You can integrate the context menu with the TreeView component to perform essential TreeView operations such as adding, removing, and renaming nodes. This integration provides users with an intuitive right-click interface for managing tree structure and node content.
+You can integrate the context menu with the Angular Tree View component to perform essential Angular Tree View operations such as adding, removing, and renaming nodes. This integration provides users with an intuitive right-click interface for managing tree structure and node content.
 
-The following example demonstrates how to use the context menu's `select` event to handle TreeView operations including node addition, deletion, and text editing. The implementation shows proper event handling and TreeView method usage for comprehensive node management.
+The following example demonstrates how to use the context menu's `select` event to handle Angular Tree View operations including node addition, deletion, and text editing. The implementation shows proper event handling and TreeView method usage for comprehensive node management.
 
-The context menu's `select` event exposes `args.item.id` (and `args.item.text`). Map known menu item IDs to TreeView methods such as `this.tree.addNodes(...)`, `this.tree.removeNodes(...)`, and `this.tree.beginEdit(args.node)`. A switch statement on `args.item.id` keeps the integration compact.
+The context menu's `select` event exposes `args.item.id` (and `args.item.text`). Map known menu item IDs to Angular Tree View methods such as `this.tree.addNodes(...)`, `this.tree.removeNodes(...)`, and `this.tree.beginEdit(args.node)`. A switch statement on `args.item.id` keeps the integration compact.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

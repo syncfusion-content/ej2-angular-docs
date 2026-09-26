@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # How to check or uncheck checkbox by clicking tree node text in Angular Tree View
 
-You can enable checkbox toggling functionality by clicking on the tree node text instead of just the checkbox itself. This behavior is implemented using the [`nodeClicked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeclicked) event of TreeView, which provides access to the clicked node and allows programmatic manipulation of its checkbox state.
+You can enable checkbox toggling functionality by clicking on the tree node text instead of just the checkbox itself. This behavior is implemented using the [`nodeClicked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeclicked) event of Angular Tree View, which provides access to the clicked node and allows programmatic manipulation of its checkbox state.
 
 This approach is particularly useful when you want to provide a larger click target for users or create a more intuitive interaction pattern where any part of the node can toggle its selection state.
 
 ## Prerequisites
 
 * The [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property must be enabled so each node renders a checkbox.
-* Initialize the TreeView with an `@ViewChild` reference so the event handler can call the `checkAll`/`uncheckAll` TreeView methods.
+* Initialize the Angular Tree View with an `@ViewChild` reference so the event handler can call the `checkAll`/`uncheckAll` TreeView methods.
 
 ## Implementation
 

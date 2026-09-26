@@ -26,11 +26,11 @@ export class AppComponent {
                        { Car:'Baleno', Brand:'Maruti', count:454 },
                        { Car:'Vitara Brezza', Brand:'Maruti', count:545 },
                        { Car:'A3 Cabriolet', Brand:'Audi',count:123 },
-                       { car:'RS7 Sportback', Brand:'Audi', count:523 }
+                       { Car:'RS7 Sportback', Brand:'Audi', count:523 }
     ];
     public leafItemSettings: object = {
         labelPath: 'Car',
-        format:'${Car}-${Brand}',
+        labelFormat:'${Car}-${Brand}',
         interSectAction:'WrapByWord'
     };
 }

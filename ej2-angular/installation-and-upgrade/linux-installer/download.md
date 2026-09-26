@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Download Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer
+# Download JavaScript Linux installer
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Linux installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/) website. Depending on your license, you can download either the licensed installer or the trial installer. The Linux installer is provided in `.zip` format and does not require an unlock key to install.
 

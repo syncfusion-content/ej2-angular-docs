@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Accordion
 
-The Accordion component is designed to meet [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) specifications, applying the prompt WAI-ARIA roles, states, and properties along with the keyboard support. Thus, making it usable for people who use assistive WAI-ARIA Accessibility supports that is achieved through the attributes like `aria-labelledby`. It helps to provides information about the elements in a document for assistive technology. The component implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and tested in major screen readers.
+The Angular Accordion component is designed to meet [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) specifications, applying the prompt WAI-ARIA roles, states, and properties along with the keyboard support. Thus, making it usable for people who use assistive WAI-ARIA Accessibility supports that is achieved through the attributes like `aria-labelledby`. It helps to provides information about the elements in a document for assistive technology. The component implements the keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and tested in major screen readers.
 
-The accessibility compliance for the Accordion component is outlined below.
+The accessibility compliance for the Angular Accordion component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the Accordion component is outlined below.
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
 ## ARIA attributes
-The Accordion component uses WAI-ARIA attributes to ensure accessibility for assistive technologies.
+The Angular Accordion component uses WAI-ARIA attributes to ensure accessibility for assistive technologies.
 
 | **Roles and Attributes** | **Functionalities**                                                                                                                             |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ The Accordion component uses WAI-ARIA attributes to ensure accessibility for ass
 
 ## Keyboard interaction
 
-The Accordion supports keyboard navigation by default, adhering to WAI-ARIA practices. The following keys are supported:
+The Angular Accordion supports keyboard navigation by default, adhering to WAI-ARIA practices. The following keys are supported:
 
 | Key           | Description                                                                         |
 |---------------|-------------------------------------------------------------------------------------|
@@ -67,9 +67,9 @@ The Accordion supports keyboard navigation by default, adhering to WAI-ARIA prac
 
 ## Ensuring accessibility
 
-The Accordion component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Accordion component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Accordion component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/accordion.html) in a new window to evaluate the accessibility of the Accordion component with accessibility tools.
+The accessibility compliance of the Angular Accordion component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/accordion.html) in a new window to evaluate the accessibility of the Angular Accordion component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/accordion.html" %}
 

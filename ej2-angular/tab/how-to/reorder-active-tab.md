@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to reorder active Tab in Angular Tab
 
-Prevent the active tab item from being reordered when the user selects items from the popup overflow menu by setting the [`reorderActiveTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#reorderactivetab) property to `false`. By default, the active Tab is reordered to the visible header when selected from the popup; setting `reorderActiveTab` to `false` keeps the active item highlighted inside the popup instead.
+Prevent the active Angular Tab item from being reordered when the user selects items from the popup overflow menu by setting the [`reorderActiveTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#reorderactivetab) property to `false`. By default, the active Angular Tab is reordered to the visible header when selected from the popup; setting `reorderActiveTab` to `false` keeps the active item highlighted inside the popup instead.
 
 > This property only takes effect when `overflowMode` is set to `Popup`. See [Responsive Modes](../adaptive) for more details.
 

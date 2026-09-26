@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # EJ1 API Migration in Angular Tree View
 
-This article describes the API migration process of TreeView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of Angular Tree View component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Add nodes
 

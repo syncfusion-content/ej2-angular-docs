@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Style and appearance in Angular Spinner
 
-The following CSS structure can be used to customize the spinner component's appearance based on your requirements.
+The following CSS structure can be used to customize the Angular Spinner component's appearance based on your requirements.
 
-## Customize the spinner
+## Customize the Angular Spinner
 
-Use the following CSS to customize the spinner stroke color.
+Use the following CSS to customize the Angular Spinner stroke color.
 
 ### Material theme
 

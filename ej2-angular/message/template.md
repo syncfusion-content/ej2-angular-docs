@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Template in Angular Message
 
-The message supports templates that allows the user to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the [content](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#content) property or added directly to the HTML element.
+The Angular Message supports templates that allows the user to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the [content](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#content) property or added directly to the HTML element.
 
-In the following sample, the Message component content is customized with HTML elements and Angular Button components, which are directly added to the HTML element.
+In the following sample, the Angular Message component content is customized with HTML elements and Angular Button components, which are directly added to the HTML element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

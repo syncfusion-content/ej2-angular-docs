@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to prevent duplicate toast display in Angular Toast
 
-You can prevent identical same toast displaying in a screen by event function. You can terminate the toast displaying process by setting cancel event property in [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#beforeopen) Event.
+You can prevent identical same Angular Toast displaying in a screen by event function. You can terminate the Angular Toast displaying process by setting cancel event property in [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#beforeopen) Event.
 
-Here below sample demonstrates preventing duplicate title Toast element displaying, with custom code blocks.
+Here below sample demonstrates preventing duplicate title Angular Toast element displaying, with custom code blocks.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

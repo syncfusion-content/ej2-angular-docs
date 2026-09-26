@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to validate text when editing tree nodes in Angular Tree View
 
-You can validate the tree node text while editing using the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeedited) event of the TreeView.
+You can validate the tree node text while editing using the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeedited) event of the Angular Tree View.
 
 ## Prerequisites
 
-To enable text validation functionality, ensure the TreeView component has the [`allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowediting) property set to `true`. This property enables the built-in editing capability that allows users to modify node text by double-clicking or using keyboard shortcuts.
+To enable text validation functionality, ensure the Angular Tree View component has the [`allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowediting) property set to `true`. This property enables the built-in editing capability that allows users to modify node text by double-clicking or using keyboard shortcuts.
 
 ## Validation process
 

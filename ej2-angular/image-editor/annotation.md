@@ -14,7 +14,7 @@ The Angular Image Editor allows adding annotations to the image, including text,
 
 ## Text annotation
 
-The text annotation feature in the Image Editor provides the capability to add and customize labels, captions, and other text elements directly onto the image. With this feature, you can easily insert text at specific locations within the image and customize various aspects of the text to meet your requirements. 
+The text annotation feature in the Angular Image Editor provides the capability to add and customize labels, captions, and other text elements directly onto the image. With this feature, you can easily insert text at specific locations within the image and customize various aspects of the text to meet your requirements. 
 
 You have control over the customization options including text content, font family, font style, font color, fill color, stroke color, stroke width and font size for the text annotation.
 
@@ -112,9 +112,9 @@ Here is an example of deleting a text in a button click using `deleteShape` meth
 
 ### Customize font family and text color
 
-The [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#shapechanging) event in the Image Editor component is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
+The [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#shapechanging) event in the Angular Image Editor component is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
 
-By leveraging the `shapeChanging` event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor component. 
+By leveraging the `shapeChanging` event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Angular Image Editor component. 
 
 Here is an example of changing the text’s color and its font family using the `shapeChanging` event. 
 
@@ -132,9 +132,9 @@ Here is an example of changing the text’s color and its font family using the 
 
 ### Add additional font family
 
-The [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#fontfamily) property in the Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. The font value will be determined by the 'id' property.
+The [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#fontfamily) property in the Angular Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. The font value will be determined by the 'id' property.
 
-By leveraging the `fontFamily` property, you can elevate the scope of customization for text annotations, enriching the user experience within the Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
+By leveraging the `fontFamily` property, you can elevate the scope of customization for text annotations, enriching the user experience within the Angular Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -150,7 +150,7 @@ By leveraging the `fontFamily` property, you can elevate the scope of customizat
 
 ### Customizing text with Bold, Italic, Underline, and Strikethrough
 
-The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawtext) method in the Image Editor component allows you to insert a text annotation into the image with specific customization options. Applying these styles enhances the text by improving readability and emphasizing key information, where bold increases visual weight to highlight important points, italic adds a slanted emphasis or creative touch, underline draws a line beneath the text for clarity or separation, and strikethrough places a line through text to indicate removal or outdated content. These formatting options enable users to make their annotations more visually distinctive and effective in conveying information.
+The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#drawtext) method in the Angular Image Editor component allows you to insert a text annotation into the image with specific customization options. Applying these styles enhances the text by improving readability and emphasizing key information, where bold increases visual weight to highlight important points, italic adds a slanted emphasis or creative touch, underline draws a line beneath the text for clarity or separation, and strikethrough places a line through text to indicate removal or outdated content. These formatting options enable users to make their annotations more visually distinctive and effective in conveying information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -370,7 +370,7 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 ### Customize default stroke color for shapes 
 
-The Image Editor provides default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
+The Angular Image Editor provides default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -386,7 +386,7 @@ The Image Editor provides default settings for stroke color, stroke width, fill 
 
 ## Image annotation
 
-The image annotation feature in the Image Editor provides the capability to add and customize image overlays directly onto the base image. With this feature, you can easily insert images or icons at specific locations within the image and customize various aspects of the image to meet your requirements. You have control over the customization options including rotate, flip, transparency for the image annotation.
+The image annotation feature in the Angular Image Editor provides the capability to add and customize image overlays directly onto the base image. With this feature, you can easily insert images or icons at specific locations within the image and customize various aspects of the image to meet your requirements. You have control over the customization options including rotate, flip, transparency for the image annotation.
 
 ### Add an image annotation
 

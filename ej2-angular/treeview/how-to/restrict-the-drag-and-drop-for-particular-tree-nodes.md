@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to restrict drag-and-drop for particular tree nodes in Angular Tree View
 
-You are able to restrict drag and drop operations to allow files to be dropped only under folders. This can be achieved by using [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragging) events of TreeView.
+You are able to restrict drag and drop operations to allow files to be dropped only under folders. This can be achieved by using [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragging) events of Angular Tree View.
 
 ## Implementation approach
 

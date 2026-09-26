@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Dialog
 
-The Dialog component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) used to evaluate accessibility.
+The Angular Dialog component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) used to evaluate accessibility.
 
-The accessibility compliance for the Dialog component is outlined below.
+The accessibility compliance for the Angular Dialog component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,9 +40,9 @@ The accessibility compliance for the Dialog component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Dialog is characterized by complete ARIA accessibility support, enabling screen readers and other assistive technology devices to access the component. This component is designed based on the guidelines documented in [WAI-ARIA Accessibility Practices for dialogs](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal).
+The Angular Dialog is characterized by complete ARIA accessibility support, enabling screen readers and other assistive technology devices to access the component. This component is designed based on the guidelines documented in [WAI-ARIA Accessibility Practices for dialogs](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal).
 
-The Dialog component uses the `Dialog` role and the following ARIA properties on its elements based on their state.
+The Angular Dialog component uses the `Dialog` role and the following ARIA properties on its elements based on their state.
 
 | **Property** | **Functionalities** |
 | --- | --- |
@@ -53,7 +53,7 @@ The Dialog component uses the `Dialog` role and the following ARIA properties on
 
 ## Keyboard interaction
 
-The Dialog component's keyboard interaction is designed to follow the [WAI-ARIA Authoring Practices for dialogs](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal).
+The Angular Dialog component's keyboard interaction is designed to follow the [WAI-ARIA Authoring Practices for dialogs](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal).
 Users can interact with the Dialog using the following shortcut keys.
 
 <!-- markdownlint-disable MD033 -->
@@ -65,16 +65,16 @@ Users can interact with the Dialog using the following shortcut keys.
 <tr>
 <td>
 <kbd>Esc</kbd></td><td>
-Closes the Dialog. This functionality can be controlled by using
+Closes the Angular Dialog. This functionality can be controlled by using
 [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#closeonescape) </td></tr>
 <tr>
 <td>
 <kbd>Enter</kbd></td><td>
-When a dialog button or any input field (except text area) has focus, pressing Enter triggers the click event on the primary button. Enter does not work when the dialog content contains a text area with initial focus.</td></tr>
+When a dialog button or any input field (except text area) has focus, pressing Enter triggers the click event on the primary button. Enter does not work when the Angular Dialog content contains a text area with initial focus.</td></tr>
 <tr>
 <td>
 <kbd>Ctrl + Enter</kbd></td><td>
-When the dialog content contains a text area with focus, press Ctrl + Enter to trigger the click event on the primary button.</td></tr>
+When the Angular Dialog content contains a text area with focus, press Ctrl + Enter to trigger the click event on the primary button.</td></tr>
 <tr>
 <td>
 <kbd>Tab</kbd></td><td>
@@ -99,13 +99,13 @@ Moves focus to the previous focusable element within the dialog. When the first 
 
 ## See Also
 
-* [Show dialog with full-screen](./how-to/show-dialog-with-full-screen)
+* [Show Angular Dialog with full-screen](./how-to/show-dialog-with-full-screen)
 
 ## Ensuring accessibility
 
-The Dialog component's accessibility is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
+The Angular Dialog component's accessibility is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
 
-The following sample demonstrates the accessibility compliance of the Dialog component. Open the [sample](https://ej2.syncfusion.com/accessibility/dialog.html) in a new window to evaluate the Dialog component's accessibility with accessibility tools.
+The following sample demonstrates the accessibility compliance of the Angular Dialog component. Open the [sample](https://ej2.syncfusion.com/accessibility/dialog.html) in a new window to evaluate the Angular Dialog component's accessibility with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/dialog.html" %}
 

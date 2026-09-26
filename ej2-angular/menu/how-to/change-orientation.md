@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to change orientation in Angular Menu Bar
 
-This section demonstrates how to configure the Angular Menu component to display items horizontally or vertically using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/menu/#orientation) property. Horizontal orientation is suitable for top navigation bars, while vertical orientation is ideal for sidebar navigation.
+This section demonstrates how to configure the Angular Menu Bar component to display items horizontally or vertically using the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/menu/#orientation) property. Horizontal orientation is suitable for top navigation bars, while vertical orientation is ideal for sidebar navigation.
 
 The [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/menu/#orientation) property accepts `"Horizontal"` or `"Vertical"` values, as defined in the `Orientation` type, with `"Horizontal"` as the default.
 

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Tree View
 
-The TreeView component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility. The TreeView implements comprehensive accessibility features to support hierarchical data navigation, state management, and interactive operations for users with assistive technologies.
+The Angular Tree View component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility. The Angular Tree View implements comprehensive accessibility features to support hierarchical data navigation, state management, and interactive operations for users with assistive technologies.
 
-The accessibility compliance for the TreeView component is outlined below.
+The accessibility compliance for the Angular Tree View component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the TreeView component is outlined below.
 
 ## WAI-ARIA attributes
 
-The TreeView component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/) patterns to meet accessibility requirements. The following ARIA attributes are used in the TreeView component to provide comprehensive context about the tree structure, node states, and interactive capabilities:
+The Angular Tree View component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/) patterns to meet accessibility requirements. The following ARIA attributes are used in the TreeView component to provide comprehensive context about the tree structure, node states, and interactive capabilities:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -60,7 +60,7 @@ The TreeView component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pa
 
 ## Keyboard interaction
 
-The TreeView component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/#keyboardinteraction) guideline, making it accessible for users who rely on assistive technologies and keyboard navigation. The following keyboard shortcuts support comprehensive TreeView operations across navigation, selection, editing, and state management:
+The Angular Tree View component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/treeview/#keyboardinteraction) guideline, making it accessible for users who rely on assistive technologies and keyboard navigation. The following keyboard shortcuts support comprehensive Angular Tree View operations across navigation, selection, editing, and state management:
 
 ### Navigation Keys
 | Interaction Keys | Description |
@@ -88,9 +88,9 @@ The TreeView component follows the [keyboard interaction](https://www.w3.org/WAI
 | <kbd>Esc</kbd> (in edit mode) | Cancels the current editing operation and returns focus to the tree node without saving changes. |
 ## Ensuring accessibility
 
-The TreeView component's accessibility levels are ensured through comprehensive testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Tree View component's accessibility levels are ensured through comprehensive testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the TreeView component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/treeview.html) in a new window to evaluate the accessibility of the TreeView component with accessibility tools.
+The accessibility compliance of the Angular Tree View component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/treeview.html) in a new window to evaluate the accessibility of the Angular Tree View component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/treeview.html" %}
 

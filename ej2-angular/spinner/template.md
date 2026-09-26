@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Template in Angular Spinner
 
-Use custom templates for the Spinner instead of the default spinner by specifying the template in the `setSpinner` method.
+Use custom templates for the Angular Spinner instead of the default spinner by specifying the template in the `setSpinner` method.
 
-The following steps describe how to define a custom template for the Spinner:
+The following steps describe how to define a custom template for the Angular Spinner:
 
 **Step 1:** Import the `setSpinner` method from the `ej2-angular-popups` library into your `app.component.ts`.
 
@@ -23,13 +23,13 @@ import { setSpinner } from '@syncfusion/ej2-angular-popups';
 **Step 2:** Pass your custom template to the `setSpinner` method.
 
 ```typescript
-// Specify the template content to display in the Spinner
+// Specify the template content to display in the Angular Spinner
 setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rolling"><div></div></div>'});
 ```
 
 > Set the spinner template before creating the respective Essential JS 2 component. Until you replace the `setSpinner` template, all subsequent Essential JS 2 component rendering uses the specified template.
 
-**Step 3:** Render the Essential JS 2 component. The Spinner displays with the template specified in the `setSpinner` method.
+**Step 3:** Render the Essential JS 2 component. The Angular Spinner displays with the template specified in the `setSpinner` method.
 
 > The following sample renders a Grid component with a custom spinner using the `setSpinner` method. Define the styles for the template in `index.css`.
 

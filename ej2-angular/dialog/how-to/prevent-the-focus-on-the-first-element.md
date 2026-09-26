@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to prevent focus on first element in Angular Dialog
 
-By default, the dialog focuses on the first focusable element in the content area when it opens. Prevent this default behavior in the [`open`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#open) event handler by setting the event argument's `preventFocus` property to `true`:
+By default, the Angular Dialog focuses on the first focusable element in the content area when it opens. Prevent this default behavior in the [`open`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#open) event handler by setting the event argument's `preventFocus` property to `true`:
 
 ```ts
 public onOpen(args: any): void {

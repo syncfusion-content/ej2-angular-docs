@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Drag and Drop in Angular Tab
 
-The Tab component provides built-in drag and drop functionality that enables users to reorder tab items dynamically by dragging them to different positions. This interactive feature enhances user experience by allowing flexible content organization.
+The Angular Tab component provides built-in drag and drop functionality that enables users to reorder tab items dynamically by dragging them to different positions. This interactive feature enhances user experience by allowing flexible content organization.
 
 Enable drag and drop by setting the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/tab#allowdraganddrop) property to **true**. Once enabled, users can drag tab items and drop them at any desired location within the defined drag area.
 
 ## Drag and drop events and configuration
 
-The Tab component provides comprehensive event handling and configuration options for drag and drop operations:
+The Angular Tab component provides comprehensive event handling and configuration options for drag and drop operations:
 
 * **Drag Prevention**: Use the [`onDragStart`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#ondragstart) event to prevent dragging of specific items. This event triggers when dragging begins, allowing you to cancel the operation based on your conditions.
 
@@ -52,9 +52,9 @@ The following sample demonstrates basic drag and drop functionality with the [`a
 
 ## Drag and drop item between tabs
 
-Drag and drop tab items between two Tabs by manually saving the dropped items as new tab item data through the `addTab` method of Tab and removing the dragged item through the `removeTab` method of Tab.
+Drag and drop Angular Tab items between two Tabs by manually saving the dropped items as new tab item data through the `addTab` method of Tab and removing the dragged item through the `removeTab` method of Tab.
 
-In this example, the Tab control is used as the external source. An item from the Tab component is dragged and dropped onto another Tab. The `onDragStart` and `dragged` events of the Tab component are used to form an event object. The dropped item is saved using the `addTab` method, and the dragged item is removed through the `removeTab` method using the dragged item index from `event.draggedItemIndex`.
+In this example, the Angular Tab control is used as the external source. An item from the Tab component is dragged and dropped onto another Tab. The `onDragStart` and `dragged` events of the Tab component are used to form an event object. The dropped item is saved using the `addTab` method, and the dragged item is removed through the `removeTab` method using the dragged item index from `event.draggedItemIndex`.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -96,9 +96,9 @@ In this example, the TreeView control is used as the external source. An item fr
 
 ## Drag and drop items from external source
 
-Drag and drop items from any external source into the Tab by manually saving the dropped items as new item data through the `addTab` method of Tab and removing the dragged node through the `removeNodes` method of Treeview.
+Drag and drop items from any external source into the Angular Tab by manually saving the dropped items as new item data through the `addTab` method of Tab and removing the dragged node through the `removeNodes` method of Treeview.
 
-In this example, the TreeView control is used as the external source. Child nodes from the TreeView component are dragged and dropped onto the Tab. The `nodeDragStop` event of the Treeview component is used to form an event object. The item is saved using the `addTab` method of Tab, and the dragged node is removed through the `removeNodes` method of Treeview.
+In this example, the TreeView control is used as the external source. Child nodes from the TreeView component are dragged and dropped onto the Tab. The `nodeDragStop` event of the Treeview component is used to form an event object. The item is saved using the `addTab` method of Angular Tab, and the dragged node is removed through the `removeNodes` method of Treeview.
 
 > **Required imports** for this example: `TabModule` from `@syncfusion/ej2-angular-navigations` and `TreeViewModule` from `@syncfusion/ej2-angular-treeview`.
 

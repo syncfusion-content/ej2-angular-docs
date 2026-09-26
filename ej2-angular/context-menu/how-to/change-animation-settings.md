@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to change animation settings in Angular Context Menu
 
-The ContextMenu component provides customizable animation effects through the [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuAnimationSettingsModel) property. This allows you to control how the context menu appears and disappears, enhancing the user experience with smooth visual transitions.
+The Angular Context Menu component provides customizable animation effects through the [`animationSettings`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuAnimationSettingsModel) property. This allows you to control how the Angular Context Menu appears and disappears, enhancing the user experience with smooth visual transitions.
 
-The supported animation effects for ContextMenu are:
+The supported animation effects for Angular Context Menu are:
 
 | Effect | Functionality |
 | ------------ | ----------------------- |
@@ -25,7 +25,7 @@ The `animationSettings` property accepts an object with three configurable optio
 
 Valid `easing` values follow the standard CSS `transition-timing-function` keywords: `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out`, and the `cubic-bezier()` function.
 
-The following sample demonstrates how to configure ContextMenu with `FadeIn` effect and a custom `duration` of `800ms`.
+The following sample demonstrates how to configure Angular Context Menu with `FadeIn` effect and a custom `duration` of `800ms`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

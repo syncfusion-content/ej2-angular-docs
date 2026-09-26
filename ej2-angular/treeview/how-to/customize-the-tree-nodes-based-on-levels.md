@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to customize tree node levels in Angular Tree View
 
-The TreeView component allows you to apply different visual styles to nodes based on their hierarchical level within the tree structure. This level-based customization enables you to create visually distinct representations for parent nodes, child nodes, and deeply nested items, enhancing the user interface and improving content organization.
+The Angular Tree View component allows you to apply different visual styles to nodes based on their hierarchical level within the tree structure. This level-based customization enables you to create visually distinct representations for parent nodes, child nodes, and deeply nested items, enhancing the user interface and improving content organization.
 
-Level-based customization works by adding a custom CSS class to the TreeView component through the `cssClass` property, then targeting specific tree levels using CSS selectors. The TreeView automatically assigns level-specific classes to nodes, which you can leverage to apply targeted styling based on the node's position in the hierarchy.
+Level-based customization works by adding a custom CSS class to the Angular Tree View component through the `cssClass` property, then targeting specific tree levels using CSS selectors. The TreeView automatically assigns level-specific classes to nodes, which you can leverage to apply targeted styling based on the node's position in the hierarchy.
 
-The TreeView emits a class of the form `e-level-<n>` on each node's `<li>` element, where `<n>` is the zero-based depth of the node (root nodes are `e-level-0`, their children are `e-level-1`, and so on). The component supports up to ten levels out of the box.
+The Angular Tree View emits a class of the form `e-level-<n>` on each node's `<li>` element, where `<n>` is the zero-based depth of the node (root nodes are `e-level-0`, their children are `e-level-1`, and so on). The component supports up to ten levels out of the box.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

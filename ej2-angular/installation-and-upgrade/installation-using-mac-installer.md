@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Install Syncfusion JavaScript (EJ2) Mac Installer | Syncfusion
-description: Learn how to install the Syncfusion Essential JS 2 JavaScript Mac installer on macOS, including Catalina and later warning resolution, step-by-step install, and license key registration.
+description: Learn how to install the Syncfusion Essential JS 2 JavaScript Mac installer on macOS, including Catalina warning and license key registration.
 platform: ej2-angular
 control: Installation using Mac installer
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript – EJ2 Mac installer
+# Installing Syncfusion JavaScript Mac installer
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 JavaScript Mac installer on macOS, including how to resolve the macOS Catalina (and later) security warning and how to register your license key in the installed samples.
 

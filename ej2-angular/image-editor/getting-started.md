@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Image Editor
 
-The Image Editor component provides a comprehensive set of tools for editing, annotating, cropping, resizing, rotating, and enhancing images through an intuitive user interface.
+The Angular Image Editor component provides a comprehensive set of tools for editing, annotating, cropping, resizing, rotating, and enhancing images through an intuitive user interface.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Image Editor component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-image-editor
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Image Editor component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -106,7 +106,7 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/image-editor/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Image Editor component
 
 After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Image Editor import, template, and data into your generated file.
 
@@ -140,7 +140,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Image Editor. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular Image Editor. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 

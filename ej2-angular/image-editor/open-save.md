@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 To import an image into the canvas, it must first be converted into a Blob object. The Uploader component can be used to facilitate the process of uploading an image from the user interface. Once the image has been uploaded, it can then be converted into a Blob and drawn onto the canvas. 
 
-To save an edited image in the Image Editor component, use the `toBlob` method to convert it to a Blob object. This will save the image with any annotations or filters that have been applied during the editing process. The saved image can be stored as raw image data or as an image file.
+To save an edited image in the Angular Image Editor component, use the `toBlob` method to convert it to a Blob object. This will save the image with any annotations or filters that have been applied during the editing process. The saved image can be stored as raw image data or as an image file.
 
 ## Supported image formats
 
@@ -26,7 +26,7 @@ The [`open`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/i
 
 ### Opening local images in the Image Editor 
 
-Users can easily open local images in the Image Editor. Simply place the image in the same folder as the sample. By specifying the local file name directly in the open method, the image will be loaded seamlessly into the editor. 
+Users can easily open local images in the Angular Image Editor. Simply place the image in the same folder as the sample. By specifying the local file name directly in the open method, the image will be loaded seamlessly into the editor. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -44,7 +44,7 @@ Users can easily open local images in the Image Editor. Simply place the image i
 
 Users can easily open images in the Image Editor using a Base64-encoded string. This method allows you to load images directly from their Base64 representation, ensuring seamless integration and flexibility in your application. Simply pass the Base64 string to the `open` method, and the image will be loaded into the editor.
 
-**Note:** You can obtain the Base64 representation of an image from the Image Editor using the [`getImageData`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#getimagedata) method (which returns canvas pixel data that you can encode to base64, for example via the canvas `toDataURL` method). This process will be explained in the upcoming section.
+**Note:** You can obtain the Base64 representation of an image from the Angular Image Editor using the [`getImageData`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#getimagedata) method (which returns canvas pixel data that you can encode to base64, for example via the canvas `toDataURL` method). This process will be explained in the upcoming section.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -60,9 +60,9 @@ Users can easily open images in the Image Editor using a Base64-encoded string. 
 
 ### Open an image from Blob storage
 
-Users can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the `open` method, and the image will be loaded into the editor.
+Users can easily open images in the Angular Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the `open` method, and the image will be loaded into the editor.
 
-**Note:** You can obtain a Blob URL representation of an image from the Image Editor using the [`getImageData`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#getimagedata) method (which returns canvas pixel data that you can convert to a Blob, for example via `canvas.toBlob`). This process will be explained in the upcoming section.
+**Note:** You can obtain a Blob URL representation of an image from the Angular Image Editor using the [`getImageData`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#getimagedata) method (which returns canvas pixel data that you can convert to a Blob, for example via `canvas.toBlob`). This process will be explained in the upcoming section.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -78,7 +78,7 @@ Users can easily open images in the Image Editor from Blob storage. This method 
 
 ### Open an image from File Uploader
 
-Users can easily open images in the Image Editor using a file uploader. This method allows users to upload an image file from their device and load it directly into the editor. Once the image is selected through the file uploader, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
+Users can easily open images in the Angular Image Editor using a file uploader. This method allows users to upload an image file from their device and load it directly into the editor. Once the image is selected through the file uploader, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -94,7 +94,7 @@ Users can easily open images in the Image Editor using a file uploader. This met
 
 ### Open an image from File Manager
 
-Users can easily open images in the Image Editor using the File Manager. This method allows you to browse and select an image file directly from the File Manager and load it into the editor. Once the image is selected, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
+Users can easily open images in the Angular Image Editor using the File Manager. This method allows you to browse and select an image file directly from the File Manager and load it into the editor. Once the image is selected, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -110,7 +110,7 @@ Users can easily open images in the Image Editor using the File Manager. This me
 
 ### Open an image from TreeView
 
-Users can open images in the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor by selecting a node from a tree view. When a user clicks on an image node, the corresponding image is loaded into the editor using the `open` method. This allows for a seamless image editing experience directly from the TreeView component.
+Users can open images in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Image Editor by selecting a node from a tree view. When a user clicks on an image node, the corresponding image is loaded into the editor using the `open` method. This allows for a seamless image editing experience directly from the TreeView component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

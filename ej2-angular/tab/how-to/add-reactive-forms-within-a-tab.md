@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to add reactive forms within Tab in Angular Tab
 
-The Tab component supports rendering other components inside Tab panels using Angular **ng-template**. This includes integrating reactive forms within individual tab items to create organized, multi-section form interfaces.
+The Angular Tab component supports rendering other components inside Angular Tab panels using Angular **ng-template**. This includes integrating reactive forms within individual tab items to create organized, multi-section form interfaces.
 
 For more details about Reactive Forms refer: <https://angular.io/guide/reactive-forms>.
 

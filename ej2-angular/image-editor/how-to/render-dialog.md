@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to render dialog in Angular Image Editor
 
-Rendering the Image Editor in a dialog involves displaying the image editor component within a modal dialog window, allowing users to edit images in a pop-up interface. This can be useful for maintaining a clean layout and providing a focused editing experience without navigating away from the current page.
+Rendering the Angular Image Editor in a dialog involves displaying the image editor component within a modal dialog window, allowing users to edit images in a pop-up interface. This can be useful for maintaining a clean layout and providing a focused editing experience without navigating away from the current page.
 
-To render the Image Editor inside a Dialog, follow these steps:
+To render the Angular Image Editor inside a Dialog, follow these steps:
 
 1. Import the `ImageEditorModule` from `@syncfusion/ej2-angular-image-editor` and the `DialogModule` (and `DialogComponent`) from `@syncfusion/ej2-angular-popups` into your standalone component.
 2. Add both modules to the component's `imports` array.

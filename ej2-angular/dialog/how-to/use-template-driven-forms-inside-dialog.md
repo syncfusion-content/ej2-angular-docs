@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to use template-driven forms in Dialog in Angular Dialog
 
-The following sample demonstrates how to implement template-driven forms with validation inside the dialog. For more details, refer to the [Angular Documentation](https://v17.angular.io/guide/forms#template-driven-forms).
+The following sample demonstrates how to implement template-driven forms with validation inside the Angular Dialog. For more details, refer to the [Angular Documentation](https://v17.angular.io/guide/forms#template-driven-forms).
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

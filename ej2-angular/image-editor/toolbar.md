@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Toolbar in Angular Image Editor
 
-The toolbars in the Image Editor are a key component for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow. 
+The toolbars in the Angular Image Editor are a key component for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow. 
 
-In the Image Editor, the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbar) property provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar. This feature is valuable for creating a personalized image editing experience that aligns with specific requirements and workflows. 
+In the Angular Image Editor, the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbar) property provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar. This feature is valuable for creating a personalized image editing experience that aligns with specific requirements and workflows. 
 
 ## Built-in toolbar items
 
@@ -134,7 +134,7 @@ In the following example, the contextual toolbar for freehand drawing will be re
 
 ## Add an additional contextual toolbar item to a text shape
 
-The contextual toolbar that appears when inserting annotations in the Image Editor is customizable using the [`toolbarUpdating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbarupdating) event. This event is triggered when the contextual toolbar is rendered, allowing you to modify its contents. To add additional toolbar items to the contextual toolbar, you can access the [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/toolbareventargs#toolbaritems) property of the object within the event handler. You can detect a text shape by checking the `item` property (for example, the annotation type), and then add or remove items from the `toolbarItems` collection based on that value. This lets you customize the options available in the contextual toolbar according to your needs, extending its functionality and providing additional tools for working with inserted annotations. 
+The contextual toolbar that appears when inserting annotations in the Angular Image Editor is customizable using the [`toolbarUpdating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbarupdating) event. This event is triggered when the contextual toolbar is rendered, allowing you to modify its contents. To add additional toolbar items to the contextual toolbar, you can access the [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/toolbareventargs#toolbaritems) property of the object within the event handler. You can detect a text shape by checking the `item` property (for example, the annotation type), and then add or remove items from the `toolbarItems` collection based on that value. This lets you customize the options available in the contextual toolbar according to your needs, extending its functionality and providing additional tools for working with inserted annotations. 
 
 Here is an example of adding the custom toolbar item to the contextual toolbar. 
 
@@ -152,11 +152,11 @@ Here is an example of adding the custom toolbar item to the contextual toolbar.
 
 ## Toolbar created event 
 
-The [`toolbarCreated`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbarcreate) event is triggered after the toolbar is created in the Image Editor. This event can be useful when you need to perform any actions or make modifications to the toolbar once it is fully initialized and ready for interaction. By subscribing to the `toolbarCreated` event, you can access the toolbar object and perform tasks such as adding event handlers, customizing the appearance, or configuring additional functionality. Refer to the [`ToolbarEditContext`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/toolbareventargs) for the available properties on the event arguments. 
+The [`toolbarCreated`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbarcreate) event is triggered after the toolbar is created in the Angular Image Editor. This event can be useful when you need to perform any actions or make modifications to the toolbar once it is fully initialized and ready for interaction. By subscribing to the `toolbarCreated` event, you can access the toolbar object and perform tasks such as adding event handlers, customizing the appearance, or configuring additional functionality. Refer to the [`ToolbarEditContext`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/toolbareventargs) for the available properties on the event arguments. 
 
 ## Toolbar item clicked event 
 
-The [`toolbarItemClicked`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbaritemclicked) event is triggered when a toolbar item is clicked in the Image Editor. This event is particularly useful when you have added custom options to both the main toolbar and contextual toolbar, as it allows you to capture the user's interaction with those custom options. By subscribing to the `toolbarItemClicked` event, you can execute specific actions or handle logic based on the toolbar item that was clicked. 
+The [`toolbarItemClicked`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbaritemclicked) event is triggered when a toolbar item is clicked in the Angular Image Editor. This event is particularly useful when you have added custom options to both the main toolbar and contextual toolbar, as it allows you to capture the user's interaction with those custom options. By subscribing to the `toolbarItemClicked` event, you can execute specific actions or handle logic based on the toolbar item that was clicked. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -172,9 +172,9 @@ The [`toolbarItemClicked`](https://ej2.syncfusion.com/angular/documentation/api/
 
 ## Toolbar template
 
-The [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbartemplate) property in the Image Editor provides the capability to fully customize the toolbar by supplying a custom template. This feature is valuable when you want to create a distinct and personalized image editing experience that goes beyond the default toolbar or the customizable toolbar options offered by the Image Editor. By defining a custom template for the toolbar, you have complete control over its layout, appearance, and functionality. This empowers you to design a unique and tailored toolbar that aligns perfectly with your specific requirements and desired user experience. 
+The [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#toolbartemplate) property in the Angular Image Editor provides the capability to fully customize the toolbar by supplying a custom template. This feature is valuable when you want to create a distinct and personalized image editing experience that goes beyond the default toolbar or the customizable toolbar options offered by the Angular Image Editor. By defining a custom template for the toolbar, you have complete control over its layout, appearance, and functionality. This empowers you to design a unique and tailored toolbar that aligns perfectly with your specific requirements and desired user experience. 
 
-Here is an example of using `toolbarTemplate` to render only the button to toggle the freehand draw option. The toolbar of the Image Editor can be replaced with the user-specific UI using the `toolbarTemplate` property.
+Here is an example of using `toolbarTemplate` to render only the button to toggle the freehand draw option. The toolbar of the Angular Image Editor can be replaced with the user-specific UI using the `toolbarTemplate` property.
 
 
 {% tabs %}

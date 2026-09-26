@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # How to apply hover background color to multi-line tree node in Angular Tree View
 
-When working with TreeView nodes that contain multi-line content, the default hover and selection behaviors may not align properly with the actual content height. This guide demonstrates how to create consistent hover and selection effects that cover the entire multi-line node content area.
+When working with Angular Tree View nodes that contain multi-line content, the default hover and selection behaviors may not align properly with the actual content height. This guide demonstrates how to create consistent hover and selection effects that cover the entire multi-line node content area.
 
 ## Overview
 
-Multi-line TreeView nodes present a unique challenge where the hover area (`e-fullrow` element) needs to match the actual content height (`e-text-content` element). When these heights are out of sync, users see inconsistent hover effects and selection areas that don't cover the complete node content. Common causes are line wrap in the node text, custom `nodeTemplate` content, or theme-level line-height overrides.
+Multi-line Angular Tree View nodes present a unique challenge where the hover area (`e-fullrow` element) needs to match the actual content height (`e-text-content` element). When these heights are out of sync, users see inconsistent hover effects and selection areas that don't cover the complete node content. Common causes are line wrap in the node text, custom `nodeTemplate` content, or theme-level line-height overrides.
 
-This implementation uses the TreeView component's [`created`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#created) and [`nodeSelecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) events to dynamically adjust row heights and ensure proper hover behavior across all multi-line nodes. If the application supports window resize, refire the height-sync routine inside a resize event handler so the rows stay aligned.
+This implementation uses the Angular Tree View component's [`created`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#created) and [`nodeSelecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) events to dynamically adjust row heights and ensure proper hover behavior across all multi-line nodes. If the application supports window resize, refire the height-sync routine inside a resize event handler so the rows stay aligned.
 
-This implementation uses the TreeView component's [`created`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#created) and [`nodeSelecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) events to dynamically adjust row heights and ensure proper hover behavior across all multi-line nodes.
+This implementation uses the Angular Tree View component's [`created`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#created) and [`nodeSelecting`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselecting) events to dynamically adjust row heights and ensure proper hover behavior across all multi-line nodes.
 
 ## Implementation
 

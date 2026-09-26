@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to load dynamic HTML Tooltip in Angular Tooltip
 
-The Tooltip component loads HTML pages using HTML tags such as `iframe`, `video`, and `map` through the [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property, which supports both string and HTML content.
+The Angular Tooltip component loads HTML pages using HTML tags such as `iframe`, `video`, and `map` through the [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property, which supports both string and HTML content.
 
-To load an `iframe` element in the tooltip, set the required iframe in the tooltip's `content` property during initialization. The following example demonstrates setting an iframe as tooltip content:
+To load an `iframe` element in the Angular Tooltip, set the required iframe in the Angular Tooltip's `content` property during initialization. The following example demonstrates setting an iframe as Angular Tooltip content:
 
 ```typescript
 

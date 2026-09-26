@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # How to show or hide Tab items in Angular Tab
 
-The Tab component provides the [`hideTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#hidetab) method to dynamically show or hide tab items at runtime. The method accepts two parameters: the index of the tab item and a boolean that determines visibility (`true` to hide, `false` to show).
+The Angular Tab component provides the [`hideTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel/#hidetab) method to dynamically show or hide Angular Tab items at runtime. The method accepts two parameters: the index of the tab item and a boolean that determines visibility (`true` to hide, `false` to show).
 
-The `hideTab` method enables developers to control tab visibility based on user interactions, application state changes, or conditional logic. When a tab is hidden, it becomes invisible to users but remains in the component's item collection, allowing it to be shown again when needed. This functionality is particularly useful for creating adaptive user interfaces that respond to different user roles, permissions, or workflow states.
+The `hideTab` method enables developers to control tab visibility based on user interactions, application state changes, or conditional logic. When a Angular Tab is hidden, it becomes invisible to users but remains in the component's item collection, allowing it to be shown again when needed. This functionality is particularly useful for creating adaptive user interfaces that respond to different user roles, permissions, or workflow states.
 
 Key aspects of the `hideTab` method:
 
 * **Index-based operation**: Targets specific tab items using their zero-based index position
 * **Boolean visibility control**: Uses true to hide and false to show the specified tab item
 
-The following demonstration shows how to implement dynamic tab visibility using button controls that toggle the visibility state of a specified tab item.
+The following demonstration shows how to implement dynamic tab visibility using button controls that toggle the visibility state of a specified Angular Tab item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -35,5 +35,5 @@ The following demonstration shows how to implement dynamic tab visibility using 
 
 ## See Also
 
-* [Load Tab items dynamically](./load-tab-items-dynamically)
-* [Create collapsible Tabs](./create-collapsible-tabs)
+* [Load Angular Tab items dynamically](./load-tab-items-dynamically)
+* [Create collapsible Angular Tabs](./create-collapsible-tabs)

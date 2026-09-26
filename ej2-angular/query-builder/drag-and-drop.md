@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Drag and Drop in Angular Query Builder UI
 
-Reorder rules and groups within the Query Builder by dragging and dropping them to new positions. This intuitive approach simplifies query construction and modification.
+Reorder rules and groups within the Angular Query Builder UI by dragging and dropping them to new positions. This intuitive approach simplifies query construction and modification.
 
 Drag and drop is disabled by default. Enable it by setting the [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#allowdraganddrop) property to `true`. The following snippet shows the minimal markup required to enable drag and drop:
 
@@ -25,7 +25,7 @@ Drag and drop is disabled by default. Enable it by setting the [`allowDragAndDro
 
 ## Events
 
-The Query Builder emits three events during a drag-and-drop operation. Each event argument exposes a `cancel` property that can be set to `true` to prevent the corresponding action:
+The Angular Query Builder UI emits three events during a drag-and-drop operation. Each event argument exposes a `cancel` property that can be set to `true` to prevent the corresponding action:
 
 | Event | Triggers | Arguments |
 | --- | --- | --- |

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # API tipPointerPosition in Angular Tooltip component
 
-Applicable tip positions for the Tooltip pointer:
+Applicable tip positions for the Angular Tooltip pointer:
 * Auto
 * Start
 * Middle

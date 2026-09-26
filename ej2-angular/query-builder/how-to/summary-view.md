@@ -16,7 +16,7 @@ The `summaryView` property accepts a boolean. You can set it either as a string 
 
 ## Behavior
 
-When `summaryView` is enabled, the Query Builder renders the rule view alongside the summary content: a read-only text area showing the constructed query, and an **Edit** button that collapses the summary back to the rule view. The collapse indicator uses the `SummaryViewTitle` locale key (documented in [Localization](../global-local)) as its tooltip, so the summary view's collapse text can be localized along with the rest of the component's UI strings.
+When `summaryView` is enabled, the Angular Query Builder UI renders the rule view alongside the summary content: a read-only text area showing the constructed query, and an **Edit** button that collapses the summary back to the rule view. The collapse indicator uses the `SummaryViewTitle` locale key (documented in [Localization](../global-local)) as its tooltip, so the summary view's collapse text can be localized along with the rest of the component's UI strings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

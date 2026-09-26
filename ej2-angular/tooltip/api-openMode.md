@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # API openMode in Angular Tooltip component
 
-Available open modes for the Tooltip component:
+Available open modes for the Angular Tooltip component:
 * Auto
 * Hover
 * Click

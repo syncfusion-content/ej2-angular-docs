@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to load content through Ajax in Angular Tab
 
-The Tab component supports loading external content through Syncfusion's `Ajax` utility using HTTP POST requests. This approach is useful when sending data to the server or when the content requires authentication parameters.
+The Angular Tab component supports loading external content through Syncfusion's `Ajax` utility using HTTP POST requests. This approach is useful when sending data to the server or when the content requires authentication parameters.
 
 ## Steps
 
@@ -41,5 +41,5 @@ The Tab component supports loading external content through Syncfusion's `Ajax` 
 
 ## See Also
 
-* [Load tab with data source](./load-tab-with-data-source)
-* [Load Tab items dynamically](./load-tab-items-dynamically)
+* [Load Angular Tab with data source](./load-tab-with-data-source)
+* [Load Angular Tab items dynamically](./load-tab-items-dynamically)

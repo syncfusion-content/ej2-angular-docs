@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Variants in Angular Message
 
-The Message has predefined appearance variants for different visual representations. The variants of the message can be changed based on the [variant](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#variant) property.
+The Angular Message has predefined appearance variants for different visual representations. The variants of the Angular Message can be changed based on the [variant](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#variant) property.
 
-The available variants are **Text**, **Outlined** and **Filled**. The default variant type for messages is **Text**.
+The available variants are **Text**, **Outlined** and **Filled**. The default variant type for Angular Messages is **Text**.
 * **Text** - The severity is differentiated using a text color and a light background color.
 * **Outlined** - The severity is differentiated using a text color and a border without a background.
 * **Filled** - The severity is differentiated using a text color and a dark background color.
 
-The following example demonstrates the default message with different variant types.
+The following example demonstrates the default Angular Message with different variant types.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

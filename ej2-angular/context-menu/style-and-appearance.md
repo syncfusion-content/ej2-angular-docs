@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Styles and Appearance in Angular Context Menu
 
-To modify the ContextMenu appearance, you need to override the default CSS of the ContextMenu component. The ContextMenu provides extensive customization options through CSS classes that target specific elements within the component structure. You can customize everything from the overall wrapper to individual menu items, icons, and visual states. Additionally, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the Angular Context Menu appearance, you need to override the default CSS of the Angular Context Menu component. The Angular Context Menu provides extensive customization options through CSS classes that target specific elements within the component structure. You can customize everything from the overall wrapper to individual menu items, icons, and visual states. Additionally, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
-The following table lists the essential CSS classes and their purposes for customizing the ContextMenu component:
+The following table lists the essential CSS classes and their purposes for customizing the Angular Context Menu component:
 
 | CSS Class | Purpose of Class |
 | --- | --- |

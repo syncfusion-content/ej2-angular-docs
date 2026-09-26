@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Spacer
 
-`Spacer` provides spacing between AppBar content elements, creating additional space in the content layout for better visual organization.
+`Spacer` provides spacing between Angular AppBar content elements, creating additional space in the content layout for better visual organization.
 
 The following example demonstrates how to add spacing between the home and pan buttons in the AppBar:
 
@@ -30,7 +30,7 @@ The following example demonstrates how to add spacing between the home and pan b
 
 ## Separator
 
-`Separator` displays a vertical line that visually groups or separates AppBar content elements for improved organization.
+`Separator` displays a vertical line that visually groups or separates Angular AppBar content elements for improved organization.
 
 The following example demonstrates how to add a vertical line between a group of buttons in the AppBar:
 
@@ -46,9 +46,9 @@ The following example demonstrates how to add a vertical line between a group of
   
 {% previewsample "page.domainurl/samples/appbar/separator-cs1" %}
 
-## Designing AppBar with Menu
+## Designing Angular AppBar with Menu
 
-The AppBar renders with a Menu component in its header area. The Menu component inherits styles from the AppBar component using the `e-inherit` CSS class, ensuring consistent theming and appearance.
+The Angular AppBar renders with a Menu component in its header area. The Menu component inherits styles from the Angular AppBar component using the `e-inherit` CSS class, ensuring consistent theming and appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -62,9 +62,9 @@ The AppBar renders with a Menu component in its header area. The Menu component 
   
 {% previewsample "page.domainurl/samples/appbar/menu-cs1" %}
 
-## Designing AppBar with Buttons
+## Designing Angular AppBar with Buttons
 
-The AppBar renders with Button and DropDownButton components in its header area. These components inherit styles from the AppBar using the `e-inherit` CSS class, maintaining visual consistency across the interface.
+The Angular AppBar renders with Button and DropDownButton components in its header area. These components inherit styles from the Angular AppBar using the `e-inherit` CSS class, maintaining visual consistency across the interface.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -80,7 +80,7 @@ The AppBar renders with Button and DropDownButton components in its header area.
 
 ## Designing AppBar with SideBar
 
-The AppBar integrates with the SideBar component positioned below the AppBar. Click the menu icon to expand or collapse the Sidebar. This example uses the `toggle` method to show or hide the Sidebar when the AppBar button is clicked.
+The AppBar integrates with the SideBar component positioned below the Angular AppBar. Click the menu icon to expand or collapse the Sidebar. This example uses the `toggle` method to show or hide the Sidebar when the Angular AppBar button is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -96,7 +96,7 @@ The AppBar integrates with the SideBar component positioned below the AppBar. Cl
 
 ## Media Query
 
-Media Query enables the AppBar to adapt to different screen sizes with responsive behavior. Resize the screen to observe how the AppBar layout adjusts dynamically.
+Media Query enables the Angular AppBar to adapt to different screen sizes with responsive behavior. Resize the screen to observe how the Angular AppBar layout adjusts dynamically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

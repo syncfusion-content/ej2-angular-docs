@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Content Render Modes in Angular Tab
 
-The Tab component supports rendering content based on different scenarios to optimize performance and user experience. The content of tabs can be rendered in three different ways as outlined below.
+The Angular Tab component supports rendering content based on different scenarios to optimize performance and user experience. The content of tabs can be rendered in three different ways as outlined below.
 
 * [On Demand rendering or lazy loading](#on-demand-rendering-or-lazy-loading)
 * [Dynamic rendering](#dynamic-rendering)
@@ -38,7 +38,7 @@ In the following code example, the Calendar and Scheduler components are rendere
 
 ## Dynamic rendering
 
-This mode can be applied to the Tab component by setting the [`loadOn`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#loadon) property to `Dynamic` (string). In this mode, only the content of the currently selected tab is initially available in the DOM; when a different tab is selected, its content replaces the current tab's content. Since this mode ensures the DOM maintains only the content of the active tab, page loading performance is significantly improved. However, tabs do not retain their state because each time a tab is selected, it loads its content from scratch.
+This mode can be applied to the Angular Tab component by setting the [`loadOn`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#loadon) property to `Dynamic` (string). In this mode, only the content of the currently selected tab is initially available in the DOM; when a different tab is selected, its content replaces the current tab's content. Since this mode ensures the DOM maintains only the content of the active tab, page loading performance is significantly improved. However, tabs do not retain their state because each time a tab is selected, it loads its content from scratch.
 
 This rendering mode is ideal for applications with many tabs or heavy content where memory optimization is crucial, and state preservation is not a primary concern.
 
@@ -58,7 +58,7 @@ In the following code example, there are two tabs. The first tab contains a logi
 
 ## On initial rendering
 
-This mode can be applied to the Tab component by setting the [`loadOn`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#loadon) property to `Init` (string). In this mode, the content of all tabs is rendered on initial load and maintained in the DOM. This mode is ideal when there are a small number of tabs and the state of each tab must be preserved. It also enables access to the references of components rendered in other tabs.
+This mode can be applied to the Angular Tab component by setting the [`loadOn`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#loadon) property to `Init` (string). In this mode, the content of all tabs is rendered on initial load and maintained in the DOM. This mode is ideal when there are a small number of tabs and the state of each tab must be preserved. It also enables access to the references of components rendered in other tabs.
 
 In the following example, all three tabs are rendered on the initial load, and the data entered in the first tab is maintained even when the second or third tab is active.
 

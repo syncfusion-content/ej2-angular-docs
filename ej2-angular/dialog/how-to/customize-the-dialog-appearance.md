@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize the Dialog appearance in Angular Dialog
 
-Customize the dialog appearance by providing a dialog template as a string or HTML element to the [content](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#content) property. The following sample demonstrates customizing the dialog as an error window.
+Customize the Angular Dialog appearance by providing a dialog template as a string or HTML element to the [content](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#content) property. The following sample demonstrates customizing the Angular Dialog as an error window.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

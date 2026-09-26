@@ -10,8 +10,8 @@ domainurl: ##DomainURL##
 
 # How to integrate Sidebar with TreeView in Angular Sidebar
 
-The Sidebar component can host other Syncfusion components like TreeView to create hierarchical navigation menus or collapsible content structures. Integrating TreeView with the Sidebar’s dock state, enabled via the [`enableDock`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enabledock) property (default: `false`), allows a compact view (e.g., showing only icons) when collapsed and full content (e.g., text and icons) when expanded.
-The following sample demonstrates a Sidebar in dock state with an integrated TreeView, showing only icons when collapsed and full text content when expanded.
+The Angular Sidebar component can host other Syncfusion components like TreeView to create hierarchical navigation menus or collapsible content structures. Integrating TreeView with the Angular Sidebar's dock state, enabled via the [`enableDock`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enabledock) property (default: `false`), allows a compact view (e.g., showing only icons) when collapsed and full content (e.g., text and icons) when expanded.
+The following sample demonstrates a Angular Sidebar in dock state with an integrated TreeView, showing only icons when collapsed and full text content when expanded.
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/sidebar/treeview-cs1/src/app.component.ts %}

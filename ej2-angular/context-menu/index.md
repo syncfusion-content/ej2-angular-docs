@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # About Syncfusion Angular Context Menu Component.
 
-The ContextMenu is a graphical user interface that appears on the user right click/touch hold action.
+The Angular Context Menu is a graphical user interface that appears on the user right click/touch hold action.
 It has the support to provide nested level menu items.
 
 ## Key Features

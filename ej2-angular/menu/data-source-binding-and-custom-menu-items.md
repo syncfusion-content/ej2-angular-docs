@@ -10,19 +10,19 @@ domainurl: ##DomainURL##
 
 # Data Source Binding and Custom Menu Items in Angular Menu Bar
 
-This section covers binding the Angular Menu component to hierarchical or self-referential data sources and customizing menu items using templates.
+This section covers binding the Angular Menu Bar component to hierarchical or self-referential data sources and customizing menu items using templates.
 
 ## Data binding
 
-The Menu component supports data source bindings such as arrays of JavaScript objects structured as either hierarchical or self-referential data.
+The Angular Menu Bar component supports data source bindings such as arrays of JavaScript objects structured as either hierarchical or self-referential data.
 
 ### Hierarchical data
 
-The Menu can be populated with a hierarchical data source by assigning it to the [`items`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#items) property, and mapping fields with corresponding keys to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel/) property, which includes sub options like `itemId`, `text`, and `children` to align data source properties with the Menu’s structure.
+The Angular Menu Bar can be populated with a hierarchical data source by assigning it to the [`items`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#items) property, and mapping fields with corresponding keys to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel/) property, which includes sub options like `itemId`, `text`, and `children` to align data source properties with the Menu’s structure.
 
 #### JSON data
 
-The Menu can generate its menu items from an array of complex data sources by mapping fields from the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel/) property.
+The Angular Menu Bar can generate its menu items from an array of complex data sources by mapping fields from the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/menu/fieldSettingsModel/) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -39,7 +39,7 @@ The Menu can generate its menu items from an array of complex data sources by ma
 #### Data Service
 
 In application level, remote data binding can be achieved using [`DataManager`](https://ej2.syncfusion.com/angular/documentation/data).
-To create Menu, assign items property with resultant data from [`callback`](https://ej2.syncfusion.com/documentation/api/data/deferred/#then) function.
+To create Angular Menu Bar, assign items property with resultant data from [`callback`](https://ej2.syncfusion.com/documentation/api/data/deferred/#then) function.
 
 The following example displays five employees' **FirstName** from the **Employees** table and **ShipName** details from the **Orders** table of the `Northwind` Data Service.
 
@@ -57,7 +57,7 @@ The following example displays five employees' **FirstName** from the **Employee
 
 ### Self-referential data
 
-The Menu can be populated from a self-referential data structure, consisting of an array of JSON objects with `parentId` mapping.
+The Angular Menu Bar can be populated from a self-referential data structure, consisting of an array of JSON objects with `parentId` mapping.
 
 Directly assign self-referential data to the [`items`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#items) property, and map all field members with corresponding keys to the [fields](https://ej2.syncfusion.com/angular/documentation/api/menu/#fields) property, where `itemId` uniquely identifies each menu item and `parentId` links child items to their parent.
 
@@ -79,7 +79,7 @@ In the following example, the **id**, **pId**, and **text** columns from self-re
 
 ## Custom menu items
 
-The Menu can be customized using Essential<sup style="font-size:70%">&reg;</sup> JS2 [Template engine](https://ej2.syncfusion.com/documentation/common/template-engine) to render the elements.
+The Angular Menu Bar can be customized using Essential<sup style="font-size:70%">&reg;</sup> JS2 [Template engine](https://ej2.syncfusion.com/documentation/common/template-engine) to render the elements.
 
 To customize menu items in your application, set your customized template string to the [`template`](https://ej2.syncfusion.com/angular/documentation/api/menu/#template) property.
 In the following example, the menu has been rendered with customized menu items.
@@ -100,4 +100,4 @@ In the following example, the menu has been rendered with customized menu items.
 
 ## See Also
 
-* [Render menu with items](./getting-started#getting-started)
+* [Render Angular Menu Bar with items](./getting-started#getting-started)

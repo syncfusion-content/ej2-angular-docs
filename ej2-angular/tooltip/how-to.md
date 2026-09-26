@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # How to in Angular Tooltip component
 
-## Show Tooltip on disabled elements
+## Show Angular Tooltip on disabled elements
 
-By default, tooltips do not display on disabled elements. Enable this behavior by following these steps:
+By default, Angular Tooltip do not display on disabled elements. Enable this behavior by following these steps:
 
 1. Wrap the disabled element (e.g., `button`) in a div with `display: inline-block`.
 2. Set the pointer event to `none` for the disabled element using CSS.
-3. Initialize the Tooltip on the outer div element that wraps the disabled button.
+3. Initialize the Angular Tooltip on the outer div element that wraps the disabled button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -30,7 +30,7 @@ By default, tooltips do not display on disabled elements. Enable this behavior b
   
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs9" %}
 
-## Load HTML tags into Tooltip
+## Load HTML tags into Angular Tooltip
 
 Load HTML tags into the tooltip using the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) template.
 
@@ -50,15 +50,15 @@ This example uses Bold, Italic, Underline, and Anchor tags.
   
 {% previewsample "page.domainurl/samples/tooltip/load-html-cs1" %}
 
-## Define Tooltip open mode property
+## Define Angular Tooltip open mode property
 
 Define the tooltip's open mode to control when it displays on hover, focus, or click actions. The tooltip component supports the following open modes:
 
-* **Auto** - Tooltip appears on hover or when the target element receives focus.
-* **Hover** - Tooltip appears on hover.
-* **Click** - Tooltip appears when you click the target element.
-* **Focus** - Tooltip appears when you focus the target (e.g., using Tab key).
-* **Custom** - Tooltip is not triggered by default actions. Bind your own events and use the `open` or `close` methods.
+* **Auto** - Angular Tooltip appears on hover or when the target element receives focus.
+* **Hover** - Angular Tooltip appears on hover.
+* **Click** - Angular Tooltip appears when you click the target element.
+* **Focus** - Angular Tooltip appears when you focus the target (e.g., using Tab key).
+* **Custom** - Angular Tooltip is not triggered by default actions. Bind your own events and use the `open` or `close` methods.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -74,9 +74,9 @@ Define the tooltip's open mode to control when it displays on hover, focus, or c
 
 ## Create and show Tooltip on multiple targets
 
-Create and display tooltips on multiple targets within a container by assigning specific target elements to the `target` property. The tooltip initializes only on matched targets within the container.
+Create and display Angular Tooltip on multiple targets within a container by assigning specific target elements to the `target` property. The Angular Tooltip initializes only on matched targets within the container.
 
-The tooltip content is derived from the `title` attribute of the target element.
+The Angular Tooltip content is derived from the `title` attribute of the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -90,15 +90,15 @@ The tooltip content is derived from the `title` attribute of the target element.
   
 {% previewsample "page.domainurl/samples/tooltip/form-valid-cs1" %}
 
-## Change Tooltip content dynamically
+## Change Angular Tooltip content dynamically
 
 Change tooltip content dynamically using [AJAX](https://ej2.syncfusion.com/documentation/base/api-ajax.html?lang=typescript) requests.
 
 Make the AJAX request within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#beforerender) event. On success, assign the retrieved data to the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#content) property.
 
-When hovering over icons, the corresponding data is retrieved dynamically and assigned to the tooltip's content.
+When hovering over icons, the corresponding data is retrieved dynamically and assigned to the Angular Tooltip's content.
 
-Refer to the following code snippet to implement dynamic tooltip content.
+Refer to the following code snippet to implement dynamic Angular Tooltip content.
 
 ```typescript
 
@@ -138,9 +138,9 @@ onBeforeRender(args: TooltipEventArgs): void {
   
 {% previewsample "page.domainurl/samples/tooltip/dynamic-content-cs1" %}
 
-## Tooltip Content Template
+## Angular Tooltip Content Template
 
-Load tooltip [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) using template support. Refer to the following code snippet.
+Load Angular Tooltip [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) using template support. Refer to the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -154,9 +154,9 @@ Load tooltip [content](https://ej2.syncfusion.com/angular/documentation/tooltip/
   
 {% previewsample "page.domainurl/samples/tooltip/load-html-cs2" %}
 
-## Customize Tooltip
+## Customize Angular Tooltip
 
-Customize the tooltip arrow by modifying CSS. The EJ2 Tooltip component uses CSS3 and positions the tip arrow according to tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
+Customize the Angular Tooltip arrow by modifying CSS. The EJ2 Tooltip component uses CSS3 and positions the tip arrow according to Angular Tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
 
 This example customizes the tip arrow as a Curved Tooltip and a Bubble Tooltip.
 
@@ -194,7 +194,7 @@ Two divs (inner and outer) create the bubble tip arrow. Override the following C
 }
 ```
 
-Customize tip arrow styling through CSS modifications at the sample level. Change the tooltip position using radio button click events.
+Customize tip arrow styling through CSS modifications at the sample level. Change the Angular Tooltip position using radio button click events.
 
 Disable the arrow tip pointer using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#showtippointer) property.
 
@@ -210,13 +210,13 @@ Disable the arrow tip pointer using the [`showTipPointer`](https://ej2.syncfusio
   
 {% previewsample "page.domainurl/samples/tooltip/tip-custom-cs1" %}
 
-## Display Tooltip on SVG and canvas elements
+## Display Angular Tooltip on SVG and canvas elements
 
-Display tooltips on both SVG and Canvas elements. Attach `<svg>` or `<canvas>` elements directly to show tooltips on data visualization elements.
+Display Angular Tooltip on both SVG and Canvas elements. Attach `<svg>` or `<canvas>` elements directly to show Angular Tooltip on data visualization elements.
 
 **SVG**
 
-Create an SVG square element and render the tooltip on it using the following code:
+Create an SVG square element and render the Angular Tooltip on it using the following code:
 
 ```typescript
 <ejs-tooltip cssClass='e-tooltip-css' content='SVG Square' target='#square'>
@@ -228,7 +228,7 @@ Create an SVG square element and render the tooltip on it using the following co
 
 **Canvas**
 
-Create a canvas circle element and render the tooltip on it using the following code:
+Create a canvas circle element and render the Angular Tooltip on it using the following code:
 
 ```typescript
 <ejs-tooltip cssClass='e-tooltip-css' content='Canvas Circle' target='#circle'>
@@ -248,11 +248,11 @@ Create a canvas circle element and render the tooltip on it using the following 
   
 {% previewsample "page.domainurl/samples/tooltip/svg-canvas-cs1" %}
 
-## Load HTML pages into Tooltip
+## Load HTML pages into Angular Tooltip
 
-Load HTML pages into the tooltip using HTML tags such as iframe, video, and map. The [`content`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#content) property accepts both string and HTML tags.
+Load HTML pages into the Angular Tooltip using HTML tags such as iframe, video, and map. The [`content`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#content) property accepts both string and HTML tags.
 
-To load an `iframe` element in the tooltip, set the required iframe in the `content` property when initializing the tooltip component. Refer to the following code:
+To load an `iframe` element in the Angular Tooltip, set the required iframe in the `content` property when initializing the Angular Tooltip component. Refer to the following code:
 
 ```typescript
 content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></iframe>'

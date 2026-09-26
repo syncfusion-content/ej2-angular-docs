@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Query Builder UI
 
-The Query Builder component enables users to create complex filtering conditions through an intuitive visual interface. It provides rule-based query creation, logical grouping, and customizable operators, allowing users to build, edit, and validate queries efficiently without writing manual query expressions.
+The Angular Query Builder UI component enables users to create complex filtering conditions through an intuitive visual interface. It provides rule-based query creation, logical grouping, and customizable operators, allowing users to build, edit, and validate queries efficiently without writing manual query expressions.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Query Builder component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-querybuilder
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Query Builder UI component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -106,11 +106,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "@syncfusion/ej2-material3-theme/styles/query-builder/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Query Builder UI component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Query Builder import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular Query Builder UI import, template, and data into your generated file.
 
-> For the full property list, see the [Query Builder API reference](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default).
+> For the full property list, see the [Angular Query Builder UI API reference](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default).
 
 ```typescript
 import { Component } from '@angular/core';
@@ -150,7 +150,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Query Builder. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular Query Builder UI. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 

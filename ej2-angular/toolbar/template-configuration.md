@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Template Configuration in Angular Toolbar
 
-The Angular Toolbar component supports template configuration through Angular's **ng-template** directive, enabling integration of complex UI components as toolbar items. Template configuration provides flexibility to customize toolbar items beyond standard button and separator types, allowing seamless integration of components like menus and custom controls.
+The Angular Toolbar component supports template configuration through Angular's **ng-template** directive, enabling integration of complex UI components as Angular Toolbar items. Template configuration provides flexibility to customize Angular Toolbar items beyond standard button and separator types, allowing seamless integration of components like menus and custom controls.
 
-The [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#template) property on a Toolbar item accepts an `ng-template` reference (`TemplateRef`). Reference the template by assigning it to the item `template` input. The example below illustrates embedding the Menu component within a Toolbar item using an `<ng-template>` block.
+The [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#template) property on a Angular Toolbar item accepts an `ng-template` reference (`TemplateRef`). Reference the template by assigning it to the item `template` input. The example below illustrates embedding the Menu component within a Angular Toolbar item using an `<ng-template>` block.
 
 ## Integrate menu component
 
 
-To implement Menu integration, define the Menu component within an **ng-template** and reference it in the toolbar item's template property. The Menu component can be populated with items programmatically or through data binding.
+To implement Menu integration, define the Menu component within an **ng-template** and reference it in the Angular Toolbar item's template property. The Menu component can be populated with items programmatically or through data binding.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

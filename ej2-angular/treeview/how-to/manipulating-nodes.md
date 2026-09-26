@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to manipulate nodes in Angular Tree View
 
-The TreeView component provides built-in methods for dynamically managing nodes, enabling the creation of highly interactive and customizable tree structures:
+The Angular Tree View component provides built-in methods for dynamically managing nodes, enabling the creation of highly interactive and customizable tree structures:
 
 * [addNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes)
 * [removeNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes)
@@ -18,7 +18,7 @@ The TreeView component provides built-in methods for dynamically managing nodes,
 * [refreshNode](https://ej2.syncfusion.com/angular/documentation/api/treeview/#refreshnode)
 * [moveNodes](https://ej2.syncfusion.com/angular/documentation/api/treeview/#movenodes)
 
-These methods provide the flexibility to add, remove, update, refresh, or relocate nodes as needed, facilitating fully interactive and customizable TreeView structures.
+These methods provide the flexibility to add, remove, update, refresh, or relocate nodes as needed, facilitating fully interactive and customizable Angular Tree View structures.
 
 ## Method overview
 
@@ -32,7 +32,7 @@ These methods provide the flexibility to add, remove, update, refresh, or reloca
 
 ## Dynamically Adding Nodes
 
-The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes) method of the TreeView allows you to insert new nodes at designated positions within the TreeView by passing the necessary node information.
+The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes) method of the Angular Tree View allows you to insert new nodes at designated positions within the Angular Tree View by passing the necessary node information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -50,7 +50,7 @@ The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#
 
 ## Dynamically Removing Nodes
 
-The TreeView component has the [`removeNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes) method, which removes one or more specified nodes from the TreeView by passing their IDs (or matching data records) as an array.
+The TreeView component has the [`removeNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes) method, which removes one or more specified nodes from the Angular Tree View by passing their IDs (or matching data records) as an array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

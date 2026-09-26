@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Transform in Angular Image Editor
 
-The Image Editor provides a range of transformation options for manipulating both the image and its annotations. These options include rotation, flipping, zooming, and panning. These transformations offer flexibility in adjusting the image and enhancing its visual appearance. 
+The Angular Image Editor provides a range of transformation options for manipulating both the image and its annotations. These options include rotation, flipping, zooming, and panning. These transformations offer flexibility in adjusting the image and enhancing its visual appearance. 
 
 ## Rotate an image
 
-The Image Editor allows you to rotate the image and its annotations by a specific number of degrees clockwise or counterclockwise using the [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#rotate) method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it counterclockwise. 
+The Angular Image Editor allows you to rotate the image and its annotations by a specific number of degrees clockwise or counterclockwise using the [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#rotate) method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it counterclockwise. 
 
 > Note: It is recommended to pass values in multiples of 90° (e.g., 90, 180, -90) for proper rotation alignment.
 
@@ -54,7 +54,7 @@ Here is an example of flipping an image in a button click event.
 
 ## Straighten an image
 
-The straightening feature in an Image Editor allows users to adjust an image by rotating it clockwise or counterclockwise. The rotating degree value should be within the range of -45 to +45 degrees for accurate straightening. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation. The Image Editor control includes a [`straightenImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#straightenimage) method, which allows you to adjust the degree of an image. This method takes one parameter that defines how the straightening should be carried out:
+The straightening feature in an Angular Image Editor allows users to adjust an image by rotating it clockwise or counterclockwise. The rotating degree value should be within the range of -45 to +45 degrees for accurate straightening. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation. The Image Editor control includes a [`straightenImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#straightenimage) method, which allows you to adjust the degree of an image. This method takes one parameter that defines how the straightening should be carried out:
 
 * `degree`: Specifies the amount of rotation for straightening the image, within the range of -45 to +45 degrees. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation.
 
@@ -74,7 +74,7 @@ Here is an example of straightening the image.
 
 ## Zoom an image in or out
 
-The Image Editor allows you to magnify an image using the [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#zoom) method. This method allows you to zoom in and out of the image and provides a more detailed view of the image's hidden areas. This method takes two parameters to perform zooming. 
+The Angular Image Editor allows you to magnify an image using the [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#zoom) method. This method allows you to zoom in and out of the image and provides a more detailed view of the image's hidden areas. This method takes two parameters to perform zooming. 
 
 * `zoomFactor` - Specifies a value to control the level of magnification applied to the image. 
 * `zoomPoint` - Specifies the x and y coordinates of a point as `ImageEditorPoint` on the image to perform zooming. If `zoomPoint` is omitted, the zoom is performed relative to the center of the image. 
@@ -105,7 +105,7 @@ Here’s an example of zooming in and out in the Image Editor by setting the `mi
 
 ## Panning an image
 
-The Image Editor allows you to pan an image when the image exceeds the canvas size or selection range. When zooming in on an image or applying a selection for cropping, it is common for the image to exceed the size of the canvas or exceed the selection range. So, panning is used to view the entire image, by clicking on the canvas and dragging it in the direction you want to move.
+The Angular Image Editor allows you to pan an image when the image exceeds the canvas size or selection range. When zooming in on an image or applying a selection for cropping, it is common for the image to exceed the size of the canvas or exceed the selection range. So, panning is used to view the entire image, by clicking on the canvas and dragging it in the direction you want to move.
 
 In the following example, you can enable panning using the [`pan`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#pan) method in the button click event.
 
@@ -159,5 +159,5 @@ The [`flipping`](https://ej2.syncfusion.com/angular/documentation/api/image-edit
 
 The parameters available in the `flipping` event are: 
 
-* `FlipEventArgs.direction` - The flip direction as `ImageEditorDirection` to be applied in the image editor. 
+* `FlipEventArgs.direction` - The flip direction as `ImageEditorDirection` to be applied in the Angular Image Editor. 
 * `FlipEventArgs.cancel` - Specifies a boolean value to cancel the flip action. 

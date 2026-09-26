@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Add dynamic Tab items with content reuse in Angular Tab
 
-You can add dynamic tabs by reusing content through Angular **TemplateRef**, which provides an efficient way to manage complex tab content without recreating components. Dynamic tabs can be added programmatically by passing an array of items and an index to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#addtab) method.
+You can add dynamic Angular Tab by reusing content through Angular **TemplateRef**, which provides an efficient way to manage complex tab content without recreating components. Dynamic tabs can be added programmatically by passing an array of items and an index to the [`addTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#addtab) method.
 
 Content reuse can be achieved using the following steps:
 
@@ -39,10 +39,10 @@ Refer to the following sample.
 
 ## Removing dynamically added tabs
 
-Use the [`removeTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/index-default#removetab) method on the Tab instance to remove a dynamically added tab by its index.
+Use the [`removeTab`](https://ej2.syncfusion.com/angular/documentation/api/tab/index-default#removetab) method on the Angular Tab instance to remove a dynamically added Angular Tab by its index.
 
 
 ## See Also
 
-* [Load Tab items dynamically](./load-tab-items-dynamically)
+* [Load Angular Tab items dynamically](./load-tab-items-dynamically)
 * [Render other components in Tab using Angular template](./render-other-components-in-tab-using-angular-template)

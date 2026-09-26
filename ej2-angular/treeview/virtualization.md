@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Virtualization in Angular Tree View
 
-The TreeView control supports UI virtualization to enhance performance when handling a large amount of data. This feature optimizes rendering by initially gathering all data but only rendering a subset of it during the initial load. The remaining items are then loaded dynamically as the user scrolls within the TreeView container.
+The Angular Tree View control supports UI virtualization to enhance performance when handling a large amount of data. This feature optimizes rendering by initially gathering all data but only rendering a subset of it during the initial load. The remaining items are then loaded dynamically as the user scrolls within the Angular Tree View container.
 
-To enable virtualization, set the `enableVirtualization` property to **true** and define a fixed `height` for the TreeView container.
+To enable virtualization, set the `enableVirtualization` property to **true** and define a fixed `height` for the Angular Tree View container.
 
 In the following sample, the `enableVirtualization` property is enabled.
 

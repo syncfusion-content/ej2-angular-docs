@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Dimension in Angular Predefined Dialogs
 
-Customize predefined dialog dimensions using the `height` and `width` properties. Specify dimension values in pixels or percentage format to change the default dialog width and height.
+Customize Angular Predefined Dialogs dimensions using the `height` and `width` properties. Specify dimension values in pixels or percentage format to change the default dialog width and height.
 
 ## Alert dimension
 

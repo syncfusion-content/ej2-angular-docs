@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Query Builder UI
 
-Create dynamic filtering conditions and groups in the Query Builder through the UI or programmatically. Use the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#showbuttons) property to control the visibility of the built-in action buttons. The available keys are `ruleDelete` (delete a rule), `groupInsert` (add a group), `groupDelete` (delete a group), and the clone-related keys (`cloneGroup`, `cloneRule`) documented in [Clone group/rule](./clone-group-rule).
+Create dynamic filtering conditions and groups in the Angular Query Builder UI through the UI or programmatically. Use the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#showbuttons) property to control the visibility of the built-in action buttons. The available keys are `ruleDelete` (delete a rule), `groupInsert` (add a group), `groupDelete` (delete a group), and the clone-related keys (`cloneGroup`, `cloneRule`) documented in [Clone group/rule](./clone-group-rule).
 
 Filtering conditions are built from a column [`field`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/columnsmodel#field), an operator, and a value. The available operators (such as `equal`, `notequal`, `contains`, and `between`) and the columns that define the filterable fields are documented in [Columns](./columns).
 

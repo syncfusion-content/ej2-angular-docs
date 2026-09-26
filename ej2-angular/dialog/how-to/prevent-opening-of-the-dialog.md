@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to open a Dialog on condition in Angular Dialog
 
-Prevent the dialog from opening by setting the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#beforeopen) event argument's cancel property to `true`.
+Prevent the Angular Dialog from opening by setting the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#beforeopen) event argument's cancel property to `true`.
 The following sample opens the success dialog only when you enter a username with a minimum of 4 characters; otherwise, it does not open.
 
 {% tabs %}
