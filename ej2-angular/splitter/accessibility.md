@@ -40,11 +40,11 @@ The Angular Splitter component implements and complies with major accessibility 
 
 ## Keyboard interaction
 
-Use the following keyboard shortcuts to navigate and interact with the Splitter component:
+Use the following keyboard shortcuts to navigate and interact with the Angular Splitter component:
 
 | **Shortcut Keys** | **Action** |
 | --- | --- |
-| <kbd>Tab</kbd> | Helps in focusing the splitter on the page and switching between the consecutive splitter bars. |
+| <kbd>Tab</kbd> | Helps in focusing the Angular Splitter on the page and switching between the consecutive splitter bars. |
 | <kbd>Shift</kbd> + <kbd>Tab</kbd> | Helps in focusing the previous splitter bar element on the splitter. |
 | <kbd>Right arrow</kbd> | Helps in moving the active `horizontal` orientated splitter bar to its `Right` side. |
 | <kbd>Left arrow</kbd> | Helps in moving the active `horizontal` orientated splitter bar to its `Left` side. |
@@ -54,9 +54,9 @@ Use the following keyboard shortcuts to navigate and interact with the Splitter 
 
 ## Ensuring accessibility
 
-The Splitter component has been validated for accessibility compliance using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Splitter component has been validated for accessibility compliance using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The following sample demonstrates the accessibility compliance of the Splitter component. Open the [sample](https://ej2.syncfusion.com/accessibility/splitter.html) in a new window to evaluate the accessibility of the Splitter component with accessibility tools.
+The following sample demonstrates the accessibility compliance of the Angular Splitter component. Open the [sample](https://ej2.syncfusion.com/accessibility/splitter.html) in a new window to evaluate the accessibility of the Angular Splitter component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/splitter.html" %}
 

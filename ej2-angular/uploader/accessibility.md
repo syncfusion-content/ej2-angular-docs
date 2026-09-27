@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Accessibility in Angular Uploader | Syncfusion
-description: Review Angular Uploader support for WCAG 2.2, Section 508, screen readers, RTL, color contrast, keyboard navigation, and Axe-core accessibility validation.
+title: Accessibility in Angular File Upload | Syncfusion
+description: Review Angular File Upload support for WCAG 2.2, Section 508, screen readers, RTL, color contrast, keyboard navigation, and Axe-core accessibility validation.
 control: Accessibility 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Uploader
+# Accessibility in Angular File Upload
 
-The Uploader component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are used to evaluate accessibility.
+The Angular File Upload component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are used to evaluate accessibility.
 
-The following table outlines the accessibility compliance status of the Uploader component:
+The following table outlines the accessibility compliance status of the Angular File Upload component:
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -47,7 +47,7 @@ The following table lists the standard keyboard shortcuts supported by the Uploa
 | <kbd>Tab</kbd> | Move focus to the next focusable element (standard browser focus behavior). |
 | <kbd>Shift + Tab</kbd> | Move focus to the previous focusable element (standard browser focus behavior). |
 | <kbd>Enter</kbd> | Trigger the action associated with the focused button element (for example, opening the file browser from the browse button, or removing a file when its remove button is focused). |
-| <kbd>Esc</kbd> | Cancel an in-progress upload operation. (The native operating-system file dialog is closed by the OS, not by the Uploader.) |
+| <kbd>Esc</kbd> | Cancel an in-progress upload operation. (The native operating-system file dialog is closed by the OS, not by the File Upload.) |
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -63,9 +63,9 @@ The following table lists the standard keyboard shortcuts supported by the Uploa
 
 ## Ensuring accessibility
 
-The Uploader component's accessibility compliance is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
+The Angular File Upload component's accessibility compliance is validated using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing.
 
-The following sample demonstrates the accessibility compliance of the Uploader component. Open the [sample](https://ej2.syncfusion.com/accessibility/uploader.html) to evaluate the component's accessibility using industry-standard tools.
+The following sample demonstrates the accessibility compliance of the Angular File Upload component. Open the [sample](https://ej2.syncfusion.com/accessibility/uploader.html) to evaluate the component's accessibility using industry-standard tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/uploader.html" %}
 

@@ -10,11 +10,13 @@ domainurl: ##DomainURL##
 
 # Connector Bezier Control Points in Angular Diagram
 
-Bezier control points determine the curvature and shape of bezier connector segments in Angular Diagram components. These interactive handles allow users to modify connector paths dynamically while maintaining visual consistency across multiple segments.
+Bezier control points determine the curvature and shape of Bezier connector segments in Angular Diagram components. These interactive handles allow users to modify connector paths dynamically while maintaining visual consistency across multiple segments.
 
 ## Configure Bezier Segment Smoothness
 
-When working with multiple bezier segments, maintain visual consistency by configuring the smoothness behavior of control points using the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel) property of the connector. The smoothness property controls how adjacent control points respond when one is modified.
+When working with multiple Bezier segments, maintain visual consistency by configuring the smoothness behavior of control points using the [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectormodel#beziersettings) property of the connector. The [`smoothness`](https://ej2.syncfusion.com/angular/documentation/api/diagram/beziersettingsmodel#smoothness) property controls how adjacent control points respond when one is modified.
+
+The following table lists the available values for the `smoothness` property:
 
 | BezierSmoothness Value | Description | Output |
 |-------- | -------- | -------- |
@@ -35,14 +37,14 @@ When working with multiple bezier segments, maintain visual consistency by confi
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorbezeirsmoothness-cs1" %}
 
-## Control Bezier Control Points Visibility
+## Configure Bezier Control Points Visibility
 
-Configure which control points are visible during interaction using the [`controlPointsVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/controlPointsVisibility) property within [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSettingsModel). This property provides granular control over control point display for different connector segments.
+Configure which control points are visible during interaction using the [`controlPointsVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/beziersettingsmodel#controlpointsvisibility) property within [`bezierSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/beziersettingsmodel). This property provides granular control over control point display for different connector segments.
 
 | ControlPointsVisibility Value | Description | Output |
 |-------- | -------- | -------- |
-| None | Hides all control points across the entire bezier connector | ![All bezier control points hidden from view](../../../images/controlPointVisibilityNone.png) |
+| None | Hides all control points across the entire Bezier connector | ![All Bezier control points hidden from view](../../../images/controlPointVisibilityNone.png) |
 | Source | Shows control points only for the source segment while hiding all others | ![Source segment control points visible, others hidden](../../../images/controlPointVisibilitySource.png) |
 | Target | Shows control points only for the target segment while hiding all others | ![Target segment control points visible, others hidden](../../../images/controlPointVisibilityTarget.png) |
 | Intermediate | Shows control points only for intermediate segments while hiding source and target control points | ![Intermediate segment control points visible, source and target hidden](../../../images/controlPointVisibilityIntermediate.png) |
-| All | Shows control points for all segments including source, target, and intermediate segments | ![All bezier connector control points visible](../../../images/controlPointVisibilityAll.png) |
+| All | Shows control points for all segments including source, target, and intermediate segments | ![All Bezier connector control points visible](../../../images/controlPointVisibilityAll.png) |

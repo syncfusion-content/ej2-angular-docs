@@ -192,7 +192,7 @@ The following example demonstrates export with cell and row spanning using `quer
 
 ## Merge duplicate cells in specific column and export in Grid
 
-Duplicate cells(based on their values) in a specific column of the Angular Data Grid can be merged based on their values. This can be achieved by enabling the [enableRowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablerowspan) property in the Grid. Additionally, duplicate cells in the specified column can be merged during PDF export by using the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event. This feature enhances data readability and provides a clearer visual presentation both in the UI and in exported documents.
+Duplicate cells in a specific column of the Angular Data Grid can be merged based on their values. This can be achieved by enabling the [enableRowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablerowspan) property in the Grid. Additionally, duplicate cells in the specified column can be merged during PDF export by using the [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfquerycellinfo) event. This feature enhances data readability and provides a clearer visual presentation both in the UI and in exported documents.
 
 The following example demonstrates merging duplicate cells in the "Order ID" column in both Grid view and export:
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize menu items in Angular Menu Bar
 
-This section demonstrates how to dynamically add, remove, enable, disable, show, or hide menu items in the Angular Menu component using methods like `insertAfter`, `insertBefore`, `removeItems`, `enableItems`, `showItems`, and `hideItems`, along with the `beforeOpen` event for advanced customization.
+This section demonstrates how to dynamically add, remove, enable, disable, show, or hide menu items in the Angular Menu Bar component using methods like `insertAfter`, `insertBefore`, `removeItems`, `enableItems`, `showItems`, and `hideItems`, along with the `beforeOpen` event for advanced customization.
 
 ## Add or remove menu items
 
@@ -34,7 +34,7 @@ In the following example, **Europe** menu items are added before the **Oceania**
 
 ## Enable or disable menu items
 
-Menu items can be enabled or disabled using the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#enableitems) method, which accepts a `string[]` of item identifiers and a boolean `enable` parameter. Disabled items appear grayed out and are non-interact able. Set `enable` to `true` to enable items and `false` to disable them.
+Angular Menu Bar items can be enabled or disabled using the [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#enableitems) method, which accepts a `string[]` of item identifiers and a boolean `enable` parameter. Disabled items appear grayed out and are non-interact able. Set `enable` to `true` to enable items and `false` to disable them.
 
 In the following example, the **Directory** header item, **Conferences**, and **Music** submenu items are disabled.
 

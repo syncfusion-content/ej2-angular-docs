@@ -16,13 +16,13 @@ In this [example](https://ej2.syncfusion.com/angular/demos/#/material/dialog/tem
 
 ## Destroy the dialog component when navigating pages using Angular routing
 
-By default, the dialog component appends to the body element when no target is specified. When navigating between pages using Angular routing, the elements inside routing pages are destroyed, but the dialog elements may not be destroyed properly, causing a memory leak in the DOM.
+By default, the Angular Dialog component appends to the body element when no target is specified. When navigating between pages using Angular routing, the elements inside routing pages are destroyed, but the dialog elements may not be destroyed properly, causing a memory leak in the DOM.
 
 Avoid this problem using one of the following solutions:
 
 ### Solution 1
 
-Set the target property to the dialog component to resolve the destroy issue in the DOM. When you specify a target, the dialog appends inside the target element placed on the routing page, and both the dialog component and its elements are destroyed when switching between routing pages.
+Set the target property to the Angular Dialog component to resolve the destroy issue in the DOM. When you specify a target, the dialog appends inside the target element placed on the routing page, and both the dialog component and its elements are destroyed when switching between routing pages.
 
 Refer to this [sample](https://stackblitz.com/edit/angular-router-example-fcrp53?file=app/app.component.html).
 

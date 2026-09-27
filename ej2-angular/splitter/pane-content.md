@@ -14,7 +14,7 @@ This guide explains how to use plain text, HTML markup, templates, or Angular UI
 
 ## Template
 
-You can use `ng-template` to render HTML elements directly inside the Splitter pane.
+You can use `ng-template` to render HTML elements directly inside the Angular Splitter pane.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -30,9 +30,9 @@ You can use `ng-template` to render HTML elements directly inside the Splitter p
 
 ## Angular UI Components
 
-Angular UI components can be embedded within Splitter panes, supporting their native behaviors and event bindings.
+Angular UI components can be embedded within Angular Splitter panes, supporting their native behaviors and event bindings.
 
-Refer to the [Accordion within splitter](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/accordion-navigation-menu) and [Listview within splitter](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/details-view) samples.
+Refer to the [Accordion within Angular Splitter](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/accordion-navigation-menu) and [Listview within splitter](https://ej2.syncfusion.com/angular/demos/#/material3/splitter/details-view) samples.
 
 ## Plain content
 
@@ -52,7 +52,7 @@ Plain text content can be added to panes using either inner HTML or the [content
 
 ## HTML Markup
 
-The Splitter is a layout-based container component. Populate pane content dynamically using existing HTML markup, making it easy to update content without modifying component logic.
+The Angular Splitter is a layout-based container component. Populate pane content dynamically using existing HTML markup, making it easy to update content without modifying component logic.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

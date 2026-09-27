@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Different Layouts in Angular Splitter | Syncfusion
-description: Build complex Syncfusion Angular Splitter layouts such as code-editor and Outlook-style UIs using nested splitters, TreeView, ListView, and Rich Text Editor panes.
+description: Create advanced Angular Splitter layouts with nested panes, including code editor and Outlook-style interfaces using Syncfusion components.
 platform: ej2-angular
 control: Splitter
 documentation: ug
@@ -226,4 +226,4 @@ Once the above configurations have been completed, you will get the output like 
 
 ## See Also
 
-* [Multiple panes in Splitter](./split-panes)
+* [Multiple panes in Angular Splitter](./split-panes)

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular MultiColumn ComboBox
 
-The MultiColumn ComboBox component allows users to select values from a Dropdown List that displays multiple columns of data with header support and customizable column widths.
+The Angular MultiColumn ComboBox component allows users to select values from a Dropdown List that displays multiple columns of data with header support and customizable column widths.
 
-This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular MultiColumn ComboBox component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
+This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Angular MultiColumn ComboBox component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
 The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-multicolumn-combobox
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> MultiColumn ComboBox component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular MultiColumn ComboBox component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -106,11 +106,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/multicolumn-combobox/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> MultiColumn ComboBox component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular MultiColumn ComboBox component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the MultiColumn ComboBox import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular MultiColumn ComboBox import, template, and data into your generated file.
 
-> For the full property list, see the [MultiColumn ComboBox API reference](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox).
+> For the full property list, see the [Angular MultiColumn ComboBox API reference](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox).
 
 ```typescript
 import { Component } from '@angular/core';
@@ -150,7 +150,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the MultiColumn ComboBox. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular MultiColumn ComboBox. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 

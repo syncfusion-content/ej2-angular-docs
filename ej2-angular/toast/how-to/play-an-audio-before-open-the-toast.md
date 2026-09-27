@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to play an audio before opening toast in Angular Toast
 
-Here below sample demonstrates to playing audio background while opening toast. Here we have included audio play codes into beforeOpen event Function.
+Here below sample demonstrates to playing audio background while opening Angular Toast. Here we have included audio play codes into beforeOpen event Function.
 
-> If you want to stop the audio after displaying toast use [`open`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#open) event in Toast. please check the Toast Events [`api's`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#events) for further customization.
+> If you want to stop the audio after displaying Angular Toast use [`open`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#open) event in Angular Toast. please check the Angular Toast Events [`api's`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#events) for further customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

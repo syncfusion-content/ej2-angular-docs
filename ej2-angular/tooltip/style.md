@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The following CSS structure allows you to customize the tooltip appearance based on your preferences.
 
-## Customizing the Tooltip
+## Customizing the Angular Tooltip
 
-Customize the tooltip using the following CSS:
+Customize the Angular Tooltip using the following CSS:
 
 ```css
 .e-tooltip-wrap {
@@ -23,9 +23,9 @@ Customize the tooltip using the following CSS:
 }
 ```
 
-## Customizing the Tooltip popup
+## Customizing the Angular Tooltip popup
 
-Customize tooltip popup properties using the following CSS:
+Customize Angular Tooltip popup properties using the following CSS:
 
 ```css
 .e-tooltip-wrap.e-popup {
@@ -34,9 +34,9 @@ Customize tooltip popup properties using the following CSS:
 }
 ```
 
-## Customizing the Tooltip content
+## Customizing the Angular Tooltip content
 
-Customize tooltip content using the following CSS:
+Customize Angular Tooltip content using the following CSS:
 
 ```css
 .e-tooltip-wrap .e-tip-content {
@@ -46,9 +46,9 @@ Customize tooltip content using the following CSS:
 }
 ```
 
-## Customizing the Tooltip arrow tip
+## Customizing the Angular Tooltip arrow tip
 
-Customize the tooltip arrow tip using the following CSS:
+Customize the Angular Tooltip arrow tip using the following CSS:
 
 ```css
 /* Customize arrow tip at bottom */
@@ -84,9 +84,9 @@ Customize the tooltip arrow tip using the following CSS:
 }
 ```
 
-## Customizing the Tooltip inner tip
+## Customizing the Angular Tooltip inner tip
 
-Customize the tooltip inner tip using the following CSS:
+Customize the Angular Tooltip inner tip using the following CSS:
 
 ```css
 .e-tooltip-wrap .e-arrow-tip-inner.e-tip-right,
@@ -98,9 +98,9 @@ Customize the tooltip inner tip using the following CSS:
 }
 ```
 
-## Customizing the Tooltip outer tip
+## Customizing the Angular Tooltip outer tip
 
-Customize the tooltip outer tip using the following CSS:
+Customize the Angular Tooltip outer tip using the following CSS:
 
 ```css
 /* Customize arrow tip at bottom */

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ruler in Angular Diagram | Syncfusion®
-description: Add horizontal and vertical rulers to the Syncfusion® Angular Diagram canvas to measure, align, and indicate the cursor position when interacting with diagram elements.
+description: Show horizontal and vertical rulers in the Angular Diagram to measure element positions and align shapes precisely on the canvas.
 platform: ej2-angular
 control: Ruler 
 documentation: ug
@@ -34,9 +34,9 @@ The following code shows how to add a ruler to the diagram.
   
 {% previewsample "page.domainurl/samples/diagram/ruler/ruler-cs1" %}
 
-## Customizing the Ruler
+## Customizing the ruler
 
-The [`horizontalRuler`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings#horizontalruler) and [`verticalRuler`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings#verticalruler) properties of `rulerSettings` customize the rulers appearance in the diagram.
+The [`horizontalRuler`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings#horizontalruler) and [`verticalRuler`](https://ej2.syncfusion.com/angular/documentation/api/diagram/rulerSettings#verticalruler) properties of `rulerSettings` customize the ruler's appearance in the diagram.
 
 By default, the ruler segments are arranged based on pixel values, with each segment representing a unit of measurement on the diagram canvas.
 
@@ -46,7 +46,7 @@ The [`interval`](https://ej2.syncfusion.com/angular/documentation/api/diagram/di
 
 ### Tick alignment
 
-The [`tickAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#tickalignment) property controls the positioning of ruler tick marks. For the horizontal ruler, ticks can be aligned to the left or right side, while for the vertical ruler, they can be aligned to the top or bottom.
+The [`tickAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#tickalignment) property controls the positioning of ruler tick marks. For both horizontal and vertical rulers, ticks can be aligned toward the origin (`LeftOrTop`) or away from the origin (`RightOrBottom`).
 
 ### Ruler thickness
 
@@ -88,4 +88,4 @@ The following code demonstrates how to use the `arrangeTick` function to customi
 
 The [`markerColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler#markercolor) property defines the ruler marker color for both horizontal and vertical rulers. The marker appears when hovering the mouse over the diagram canvas, providing precise position feedback.
 
-> The marker color can also be customized using CSS styles for advanced styling requirements.
+> The marker color can also be customized using CSS styles for advanced styling requirements. For CSS-based customization of ruler elements, refer to the [Style](./style#customizing-ruler-elements) topic.

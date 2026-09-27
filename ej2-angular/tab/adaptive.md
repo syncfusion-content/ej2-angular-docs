@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Responsive Modes in Angular Tab
 
-The following section explains how the Tab component renders when its width exceeds the visible area, or when a specific [`width`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#width) is set.
+The following section explains how the Angular Tab component renders when its width exceeds the visible area, or when a specific [`width`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#width) is set.
 
 The available overflow modes are as follows:
 
@@ -19,16 +19,16 @@ The available overflow modes are as follows:
 
 ## Scrollable
 
-The default overflow mode is Scrollable. In this mode, Tab header items are displayed in a single line with horizontal scrolling enabled when items overflow beyond the available space.
+The default overflow mode is Scrollable. In this mode, Angular Tab header items are displayed in a single line with horizontal scrolling enabled when items overflow beyond the available space.
 
-* Navigation arrows appear at the start and end of the Tab header, allowing users to navigate through overflow items.
+* Navigation arrows appear at the start and end of the Angular Tab header, allowing users to navigate through overflow items.
 * Overflow items can also be accessed using touch and swipe actions on both the header and content sections.
 * The left navigation arrow is disabled by default; users can view overflow items by navigating to the right.
 * Clicking the arrow, or holding it continuously, reveals the overflow items.
 
-![Scrollable Tab](./images/tabscroll.gif)
+![Scrollable Angular Tab](./images/tabscroll.gif)
 
-* On touch devices, navigation icons are not available. Users can touch and swipe to view overflow Tab header items.
+* On touch devices, navigation icons are not available. Users can touch and swipe to view overflow Angular Tab header items.
 
 * In RTL (right-to-left) layouts, the navigation arrows are mirrored: the right arrow is disabled by default and items overflow to the left.
 
@@ -48,7 +48,7 @@ The default overflow mode is Scrollable. In this mode, Tab header items are disp
 
 ## Popup
 
-Popup is another type of [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#overflowmode) where the Tab container displays items that fit within the available space. Items that cannot fit within the viewing area are moved to an overflow popup container.
+Popup is another type of [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#overflowmode) where the Angular Tab container displays items that fit within the available space. Items that cannot fit within the viewing area are moved to an overflow popup container.
 
 * Items in the popup can be accessed by clicking the drop-down icon at the end of the Tab header.
 

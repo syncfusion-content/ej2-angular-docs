@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Accessibility in Angular Range Slider | Syncfusion
-description: Make the Angular Range Slider accessible with WAI-ARIA roles, full keyboard navigation, screen reader support, and WCAG 2.2 compliance.
+title: Accessibility in Angular Slider | Syncfusion
+description: Make the Angular Slider accessible with WAI-ARIA roles, full keyboard navigation, screen reader support, and WCAG 2.2 compliance.
 platform: ej2-angular
-control: Range Slider 
+control: Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Range Slider
+# Accessibility in Angular Slider
 
-The Range Slider component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
+The Angular Slider component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
 
-The accessibility compliance for the Range Slider component is outlined below.
+The accessibility compliance for the Angular Slider component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the Range Slider component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Range Slider component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/slider/) patterns to meet the accessibility. The following ARIA attributes are used in the Range Slider component:
+The Angular Slider component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/slider/) patterns to meet the accessibility. The following ARIA attributes are used in the Range Slider component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -54,7 +54,7 @@ The Range Slider component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/a
 
 ## Keyboard interaction
 
-The Range Slider component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines to support users of assistive technologies and keyboard-only navigation. The following keyboard shortcuts enable efficient slider control.
+The Angular Slider component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines to support users of assistive technologies and keyboard-only navigation. The following keyboard shortcuts enable efficient slider control.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -67,7 +67,7 @@ The Range Slider component follows [keyboard interaction](https://www.w3.org/WAI
 
 ## Ensuring accessibility
 
-The Range Slider component's accessibility standards compliance is verified using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing. The following sample demonstrates the accessibility features of the Range Slider component. Open the [sample](https://ej2.syncfusion.com/accessibility/slider.html) in a new window to evaluate component accessibility with accessibility validation tools.
+The Angular Slider component's accessibility standards compliance is verified using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing. The following sample demonstrates the accessibility features of the Range Slider component. Open the [sample](https://ej2.syncfusion.com/accessibility/slider.html) in a new window to evaluate component accessibility with accessibility validation tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/slider.html" %}
 

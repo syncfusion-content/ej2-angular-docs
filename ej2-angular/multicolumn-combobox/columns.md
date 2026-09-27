@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Columns in Angular MultiColumn ComboBox
 
-The `<e-column>` selector allows to define the data fields to be displayed in the MultiColumn ComboBox.
+The `<e-column>` selector allows to define the data fields to be displayed in the Angular MultiColumn ComboBox.
 
 It provides options such as `field`, `header`, `width`, `format`, `template` and more.
 
-* [field](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/column/#field) property - Specifies the fields to be displayed in each column, mapped from the data source to the multicolumn combobox.
+* [field](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/column/#field) property - Specifies the fields to be displayed in each column, mapped from the data source to the Angular Multicolumn combobox.
 
 * [header](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox/column/#header) property - Specifes the data to be displayed in the column header.
 

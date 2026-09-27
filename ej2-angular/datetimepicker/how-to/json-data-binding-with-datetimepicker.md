@@ -8,12 +8,12 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to JSON data binding with DateTimePicker in Angular DateTime Picker
+# How to bind JSON data binding in Angular DateTime Picker
 
 In most of the real cases, the model data will be available with JSON format only.
-Here we have showcased DateTimePicker component by setting JSON string to value property.
+Here we have showcased Angular DateTime Picker component by setting JSON string to value property.
 In this JSON, we have used ISO formatted date string which is frequently used date format to get proper date and time value without any misreading.
-Also our DateTimePicker component supports the ISO formatted date value, so parsed JSON value can be directly set to DateTimePicker model.
+Also our Angular DateTime Picker component supports the ISO formatted date value, so parsed JSON value can be directly set to Angular DateTime Picker model.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Content in Angular Tooltip
 
-Text or information assigned to the Tooltip's [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property displays as the main content of the Tooltip.
+Text or information assigned to the Angular Tooltip's [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property displays as the main content of the Angular Tooltip.
 
-The content can be a string or template. If no specific value is provided, the tooltip uses the `title` attribute of the target element. Content can also be dynamically assigned to the tooltip via AJAX.
+The content can be a string or template. If no specific value is provided, the tooltip uses the `title` attribute of the target element. Content can also be dynamically assigned to the Angular Tooltip via AJAX.
 
 ## Template content
 
-Add text or images to the tooltip by default. Use `template` to customize the tooltip layout or create custom visualized elements.
+Add text or images to the Angular Tooltip by default. Use `template` to customize the tooltip layout or create custom visualized elements.
 
-Render tooltip template content using `ng-template` or `HTML` elements as needed.
+Render Angular Tooltip template content using `ng-template` or `HTML` elements as needed.
 
-The following sample demonstrates how to add a content template to the tooltip.
+The following sample demonstrates how to add a content template to the Angular Tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -36,7 +36,7 @@ The following sample demonstrates how to add a content template to the tooltip.
 
 ## Load dynamic tooltip content
 
-Load tooltip content dynamically using the Fetch API. Make the Fetch request within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#beforerender) event and assign the retrieved value to the tooltip's [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property.
+Load Angular Tooltip content dynamically using the Fetch API. Make the Fetch request within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#beforerender) event and assign the retrieved value to the tooltip's [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property.
 
 > The tooltip **target** property includes a unique identifier to associate tooltips with specific elements. When setting a GUID as the **target** value, ensure the GUID starts with **letters** before the numeric portion. For example: **target: '#tooltip' + '96ad88bd-294c-47c3-999b-a9daa3285a05'**.
 

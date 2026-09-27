@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Open and Save in Angular Signature
 
-The Signature component supports opening pre-drawn signatures from base64 or hosted URLs, and saving signatures in multiple formats including images, base64, and blob.
+The Angular Signature component supports opening pre-drawn signatures from base64 or hosted URLs, and saving signatures in multiple formats including images, base64, and blob.
 
 ## Open Signature
 
@@ -30,7 +30,7 @@ Load a pre-drawn signature using the [`load`](https://ej2.syncfusion.com/angular
 
 ## Save Signature
 
-Save signatures in multiple formats using the Signature component.
+Save signatures in multiple formats using the Angular Signature component.
 
 ### Save as Base64
 

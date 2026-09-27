@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to render other components in Tab using Angular template in Angular Tab
 
-You can render other UI components inside the Tab using Angular **ng-template**. This approach enables you to add content as other components directly with all their functionalities integrated into the Tab.
+You can render other UI components inside the Angular Tab using Angular **ng-template**. This approach enables you to add content as other components directly with all their functionalities integrated into the Tab.
 
 ## Steps
 
@@ -50,5 +50,5 @@ Check out this video to learn about integrating other UI components inside the A
 
 ## See Also
 
-* [Add dynamic Tab items with content reuse](./adding-dynamic-items-with-content-reuse)
-* [Add reactive forms within Tab](./add-reactive-forms-within-a-tab)
+* [Add dynamic Angular Tab items with content reuse](./adding-dynamic-items-with-content-reuse)
+* [Add reactive forms within Angular Tab](./add-reactive-forms-within-a-tab)

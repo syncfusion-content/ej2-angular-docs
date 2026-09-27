@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular AutoComplete
 
-The AutoComplete component follows the `WAI-ARIA` specifications and applies the `WAI-ARIA` roles, states, and properties along with comprehensive keyboard support. It provides complete keyboard interaction and ARIA accessibility features that ensure usability for people who use assistive technologies (AT) or rely entirely on keyboard navigation.
+The Angular AutoComplete component follows the `WAI-ARIA` specifications and applies the `WAI-ARIA` roles, states, and properties along with comprehensive keyboard support. It provides complete keyboard interaction and ARIA accessibility features that ensure usability for people who use assistive technologies (AT) or rely entirely on keyboard navigation.
 
-The AutoComplete component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular AutoComplete component adheres to accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the AutoComplete component is outlined below.
+The accessibility compliance for the Angular AutoComplete component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -43,7 +43,7 @@ The accessibility compliance for the AutoComplete component is outlined below.
 
 ## WAI-ARIA attributes
 
-The AutoComplete component uses the `combobox` role and each list item has an `option` role. The following `ARIA Attributes` denote the AutoComplete state.
+The Angular AutoComplete component uses the `combobox` role and each list item has an `option` role. The following `ARIA Attributes` denote the Angular AutoComplete state.
 
 | **Property** | **Functionalities** |
 | --- | --- |
@@ -58,7 +58,7 @@ The AutoComplete component uses the `combobox` role and each list item has an�
 
 ## Keyboard interaction
 
-You can use the following key shortcuts to access the AutoComplete without interruptions.
+You can use the following key shortcuts to access the Angular AutoComplete without interruptions.
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
@@ -66,7 +66,7 @@ You can use the following key shortcuts to access the AutoComplete without inter
 | <kbd>Arrow Up</kbd> | In popup-hidden state, opens the suggestion list. In popup-open state, focuses the last item when no item is selected; otherwise, focuses the item previous to the currently selected one. |
 | <kbd>Page Down</kbd> | Scrolls down to the next page and focuses the first item when the popup list opens. |
 | <kbd>Page Up</kbd> | Scrolls up to the previous page and focuses the first item when the popup list is open. |
-| <kbd>Enter</kbd> | Selects the focused item and sets it in the AutoComplete component. |
+| <kbd>Enter</kbd> | Selects the focused item and sets it in the Angular AutoComplete component. |
 | <kbd>Tab</kbd> | Focuses on the next tab-indexed element when the popup is closed. Otherwise, closes the popup list and keeps focus on the component if it is in an open state. |
 | <kbd>Shift + Tab</kbd> | Focuses the previous tab-indexed element when the popup is closed. Otherwise, closes the popup list and keeps focus on the component if it is in an open state. |
 | <kbd>Alt + Down</kbd> | Opens the popup list. |
@@ -75,7 +75,7 @@ You can use the following key shortcuts to access the AutoComplete without inter
 | <kbd>Home</kbd> | Moves the cursor to the beginning of the input. |
 | <kbd>End</kbd> | Moves the cursor to the end of the input. |
 
-> In the sample below, focus the AutoComplete component using <kbd>Alt + T</kbd> keys.
+> In the sample below, focus the Angular AutoComplete component using <kbd>Alt + T</kbd> keys.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -91,9 +91,9 @@ You can use the following key shortcuts to access the AutoComplete without inter
 
 ## Ensuring accessibility
 
-The AutoComplete component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular AutoComplete component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the AutoComplete component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/auto-complete.html) in a new window to evaluate the accessibility of the AutoComplete component with accessibility tools.
+The accessibility compliance of the Angular AutoComplete component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/auto-complete.html) in a new window to evaluate the accessibility of the Angular AutoComplete component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/auto-complete.html" %}
 

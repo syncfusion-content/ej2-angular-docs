@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to validate slider with FormValidator in Angular Range Slider | Syncfusion
-description: Validate the Angular Range Slider value within a form using Syncfusion FormValidator rules with min, max, validateHidden, and the changed event.
+title: How to validate slider with FormValidator in Angular Slider | Syncfusion
+description: Validate the Angular Slider value within a form using Syncfusion FormValidator rules with min, max, validateHidden, and the changed event.
 platform: ej2-angular
-control: Range Slider
+control: Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to validate slider with FormValidator in Angular Range Slider
+# How to validate slider with FormValidator in Angular Slider
 
-Validate Range Slider values using the built-in `FormValidator`. Follow the steps below to implement slider validation within a form.
+Validate Angular Slider values using the built-in `FormValidator`. Follow the steps below to implement slider validation within a form.
 
 * Render the Slider component inside a form element.
 * Bind the [changed](https://ej2.syncfusion.com/angular/documentation/slider/api-sliderComponent.html#changed) event to trigger validation when the slider value changes.
@@ -40,9 +40,9 @@ export class AppComponent {
 
 ```
 
-> Form validation done by either ID or name value of Slider component. In above used ID of the slider for validate it.
+> Form validation done by either ID or name value of Angular Slider component. In above used ID of the slider for validate it.
 
-* **Using Slider name attribute**: Render Slider with a `name` attribute for form validation. Use the name value instead of ID in the FormValidator rules collection.
+* **Using Angular Slider name attribute**: Render Angular Slider with a `name` attribute for form validation. Use the name value instead of ID in the FormValidator rules collection.
 
 ```typescript
 

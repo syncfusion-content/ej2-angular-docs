@@ -10,19 +10,16 @@ domainurl: ##DomainURL##
 
 # Reactive Aggregate in Angular Data Grid
 
-The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports reactive aggregates, which automatically recalculate and update aggregate values in real time whenever the data changes.
+The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides reactive aggregates to keep summary values synchronized with data changes.
 
 ## Auto-update aggregates in Batch editing
 
-When the Grid is in batch editing mode, aggregate values in the footer, group footer, and group caption rows are automatically refreshed after every cell save, ensuring the aggregate values always reflect the latest edited data.
+When the Data Grid is in batch editing mode, aggregate values in the footer, group footer, and group caption rows are automatically refreshed after every cell save, ensuring the aggregate values always reflect the latest edited data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { AggregateService, GroupService, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, AggregateService, GroupService, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { GroupSettingsModel, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -34,7 +31,7 @@ standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='210px' [allowPaging]='true' [toolbar]='toolbar' [allowGrouping]="true" [groupSettings]="groupOptions" [editSettings]='editSettings'>
     <e-columns>
-        <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='right' width=120></e-column>
+        <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='Right' width=120></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
         <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
         <e-column field='Freight' format='C2' editType='numericedit' width=150></e-column>
@@ -82,7 +79,7 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/reactive-aggregates-batchedit-cs1" %}
 
-> When using batch editing with grouping, adding a new record to a grouped grid does not refresh the aggregate values automatically.
+> When using batch editing with grouping, adding a new record to a grouped grid does not automatically refresh aggregate values.
 
 ## Manual aggregate refresh in inline and dialog editing
 
@@ -98,14 +95,11 @@ Example: Manually refreshing aggregates in inline editing mode:
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { AggregateService, GroupService, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+
+import { GridModule, AggregateService, GroupService, PageService, ToolbarService, EditService, EditSettingsModel, IEditCell, GridComponent, ToolbarItems, ActionEventArgs } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import { EditSettingsModel, IEditCell, GridComponent, ToolbarItems, ActionEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [GridModule],
@@ -124,8 +118,8 @@ standalone: true,
     <e-aggregates>
         <e-aggregate>
                 <e-columns>
-                    <e-column field="Freight" type="sum" format="C2">
-                        <ng-template #footerTemplate let-data>Sum: {{data.sum}}</ng-template>
+                    <e-column field="Freight" type="Sum" format="C2">
+                        <ng-template #footerTemplate let-data>Sum: {{data.Sum}}</ng-template>
                     </e-column>
                 </e-columns>
         </e-aggregate>
@@ -154,7 +148,7 @@ export class AppComponent implements OnInit {
         this.numericParams = {
             params: {
                 change: ((args: ChangeEventArgs) => {
-                    (this.selectedRecord as ItemType).Freight = args.value as string;
+                    (this.selectedRecord as ItemType).Freight = args.value as number;
                     (this.gridObj as GridComponent).aggregateModule.refresh(this.selectedRecord);
                 }).bind(this)
             }
@@ -163,7 +157,7 @@ export class AppComponent implements OnInit {
 
 }
 interface ItemType{
-    Freight:string
+    Freight:number
 }
 {% endraw %}
 {% endhighlight %}
@@ -175,7 +169,7 @@ interface ItemType{
   
 {% previewsample "page.domainurl/samples/grid/reactive-aggregates-inlineedit-cs1" %}
 
-> In inline and dialog editing, manually invoke the aggregate module’s `refresh` method to update aggregates after data changes. Access aggregate values in template cells by their type key (e.g., `data.sum`, `data.max`).
+> In inline and dialog editing, manually invoke the aggregate module’s `refresh` method to update aggregates after data changes. Access aggregate values in template cells by their type key (e.g., `data.Sum`, `data.Max`).
 
 
 ## See also

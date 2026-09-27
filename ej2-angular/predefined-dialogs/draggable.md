@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Draggable in Angular Predefined Dialogs
 
-Predefined dialogs support dragging within the target container by grabbing the dialog header. Use the `isDraggable` property to allow users to reposition the dialog dynamically.
+Angular Predefined Dialogs support dragging within the target container by grabbing the dialog header. Use the `isDraggable` property to allow users to reposition the dialog dynamically.
 
 ## Alert dragging
 

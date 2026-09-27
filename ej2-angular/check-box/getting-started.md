@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Checkbox
 
-The CheckBox component is a graphical user interface element that allows users to select one or more options from a set, supporting checked, unchecked, and indeterminate states.
+The Angular Checkbox component is a graphical user interface element that allows users to select one or more options from a set, supporting checked, unchecked, and indeterminate states.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular CheckBox component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-buttons
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> CheckBox component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Checkbox component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -107,11 +107,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 ```
 > You can also refer to the combined CSS file for all Syncfusion components in your application. For more information, see the documentation on [referring themes through npm packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#using-precompiled-css-and-scss-file).
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> CheckBox component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Checkbox component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the CheckBox import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular Checkbox import, template, and data into your generated file.
 
-> For the full property list, see the [CheckBox API reference](https://ej2.syncfusion.com/angular/documentation/api/check-box/index-default).
+> For the full property list, see the [Angular Checkbox API reference](https://ej2.syncfusion.com/angular/documentation/api/check-box/index-default).
 
  ```typescript
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
@@ -139,7 +139,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the CheckBox. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular Checkbox. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 

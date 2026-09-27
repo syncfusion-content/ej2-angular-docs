@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Z-order in Angular Image Editor
 
-The Image Editor supports `z-order` to adjust the positioning of annotations. It is a powerful tool that allows users to adjust the positioning of annotations. This feature is particularly useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is crucial for a polished final product.
+The Angular Image Editor supports `z-order` to adjust the positioning of annotations. It is a powerful tool that allows users to adjust the positioning of annotations. This feature is particularly useful for designing personalized templates like greeting cards or posters, where managing the layering of multiple annotations is crucial for a polished final product.
  
 Types of adjustment in the Image Editor `z-order` support:
 

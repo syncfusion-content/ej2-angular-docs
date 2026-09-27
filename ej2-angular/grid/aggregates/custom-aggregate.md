@@ -16,7 +16,7 @@ To configure a custom aggregate, set the [type](https://ej2.syncfusion.com/angul
 
 The custom aggregate function in the Angular Data Grid component is executed differently based on the aggregation context:
 
-- **Total Aggregation:** The function is executed with the entire dataset and the corresponding aggregate column object.
+- **Total Aggregation:** The function receives the entire dataset and the corresponding aggregate column object.
 
 - **Group Aggregation:** The function is executed with the current group details and the aggregate column object.
 
@@ -55,11 +55,12 @@ The following example demonstrates implementing and using a custom aggregate fun
   
 {% previewsample "page.domainurl/samples/grid/aggregates-custom-cs1" %}
 
-> In footer, group footer, or caption templates, the custom aggregate value is accessed using the key **Custom**.
+> * Ensure the `AggregateService` is injected into the component's `providers` array to enable aggregate functionality.
+> * In footer, group footer, or caption templates, the custom aggregate value is accessed using the key `Custom`.
 
 ## Displaying distinct value count in aggregate row
 
-To display the count of distinct values in an aggregate row for a column, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) to "Custom" and provide a custom function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property that returns the number of unique values.
+To display the count of distinct values in an aggregate row for a column, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) to `Custom` and provide a custom function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#customaggregate) property that returns the number of unique values.
 
 The following example demonstrates displaying the distinct count for the "Ship Country" column using a custom aggregate.
 

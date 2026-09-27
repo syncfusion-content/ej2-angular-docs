@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Working with Data in Angular Mention
 
-The Mention loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/mention/#datasource) property. It supports the data type of either `array` or `DataManager`.
+The Angular Mention loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/mention/#datasource) property. It supports the data type of either `array` or `DataManager`.
 
-The Mention also supports different kinds of data services such as OData V4 and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
+The Angular Mention also supports different kinds of data services such as OData V4 and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -21,7 +21,7 @@ The Mention also supports different kinds of data services such as OData V4 and 
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-> When binding complex data to the Mention, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+> When binding complex data to the Angular Mention, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Binding local data
 
@@ -29,7 +29,7 @@ Local data can be represented in three ways as described in the following.
 
 ### Array of simple data
 
-The Mention has provided support to load an array of primitive data such as strings and numbers. Here, both the value and text fields act the same.
+The Angular Mention has provided support to load an array of primitive data such as strings and numbers. Here, both the value and text fields act the same.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -45,7 +45,7 @@ The Mention has provided support to load an array of primitive data such as stri
 
 ### Array of JSON data
 
-The Mention can generate its list items through an array of complex data. Therefore, the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/mention/#fields) property.
+The Angular Mention can generate its list items through an array of complex data. Therefore, the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/mention/#fields) property.
 
 In the following example, `ID` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -63,7 +63,7 @@ In the following example, `ID` column and `Game` column from complex data have b
 
 ### Array of Complex data
 
-The Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/mention/#fields) property.
+The Angular Mention can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/mention/#fields) property.
 
 In the following example, `Code.ID` column and `Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -81,7 +81,7 @@ In the following example, `Code.ID` column and `Country.Name` column from comple
 
 ## Binding remote data
 
-The Mention supports retrieval of data from remote data services with the help of `DataManager` component. The [query](https://ej2.syncfusion.com/angular/documentation/api/mention/#query) property is used to fetch the data from the database and bind it to the Mention component.
+The Angular Mention supports retrieval of data from remote data services with the help of `DataManager` component. The [query](https://ej2.syncfusion.com/angular/documentation/api/mention/#query) property is used to fetch the data from the database and bind it to the Mention component.
 
 ### OData v4 adaptor - Binding OData v4 service
 
@@ -103,7 +103,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 
 ### Web API adaptor
 
-You can use `WebApiAdaptor` to bind mention with Web API created using OData endpoint.
+You can use `WebApiAdaptor` to bind Angular Mention with Web API created using OData endpoint.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

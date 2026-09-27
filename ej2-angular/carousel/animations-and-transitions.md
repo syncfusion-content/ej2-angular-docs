@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Animations and Transitions in Angular Carousel | Syncfusion
 description: Animate the Angular Carousel with Slide, Fade, or custom CSS effects, set autoplay, looping, intervals, and touch swipe modes.
@@ -14,7 +14,7 @@ The Angular Carousel component provides built-in animation effects and extensive
 
 ## Animations
 
-The Carousel component offers two built-in animation effects for slide transitions. The default animation can be controlled using the [`animationEffect`](https://ej2.syncfusion.com/angular/documentation/api/carousel#animationEffect) property, with Slide animation applied by default.
+The Angular Carousel component offers two built-in animation effects for slide transitions. The default animation can be controlled using the [`animationEffect`](https://ej2.syncfusion.com/angular/documentation/api/carousel#animationEffect) property, with Slide animation applied by default.
 
 ### Fade animation
 
@@ -36,7 +36,7 @@ The following demo demonstrates the fade animation implementation:
 
 ### Custom animation
 
-The Carousel component supports custom animation effects through the [`Custom`](https://ej2.syncfusion.com/angular/documentation/api/carousel/carouselAnimationEffect) option of the [`animationEffect`](https://ej2.syncfusion.com/angular/documentation/api/carousel#animationEffect) property. Custom animations are implemented by applying CSS classes via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/carousel#cssClass) property, allowing complete control over transition effects and timing.
+The Angular Carousel component supports custom animation effects through the [`Custom`](https://ej2.syncfusion.com/angular/documentation/api/carousel/carouselAnimationEffect) option of the [`animationEffect`](https://ej2.syncfusion.com/angular/documentation/api/carousel#animationEffect) property. Custom animations are implemented by applying CSS classes via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/carousel#cssClass) property, allowing complete control over transition effects and timing.
 
 The following demo demonstrates a `parallax` custom animation implementation:
 
@@ -54,7 +54,7 @@ The following demo demonstrates a `parallax` custom animation implementation:
 
 ## Intervals between slides
 
-The Carousel component allows configuring different transition intervals for individual slides using the items property. Each carousel item can have its own timing configuration, providing flexibility for varied content display durations. The default interval is `5000 ms` (5 seconds).
+The Angular Carousel component allows configuring different transition intervals for individual slides using the items property. Each carousel item can have its own timing configuration, providing flexibility for varied content display durations. The default interval is `5000 ms` (5 seconds).
 
 The following example demonstrates setting different intervals for each carousel item:
 
@@ -74,7 +74,7 @@ The following example demonstrates setting different intervals for each carousel
 
 ## Auto play slides
 
-The Carousel component supports automatic slide transitions that occur continuously at specified intervals. The automatic slide progression can be controlled using the [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/carousel#autoplay) property, which enables or disables the continuous slide transitions.
+The Angular Carousel component supports automatic slide transitions that occur continuously at specified intervals. The automatic slide progression can be controlled using the [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/carousel#autoplay) property, which enables or disables the continuous slide transitions.
 
 The following example demonstrates enabling and disabling automatic slide transitions:
 
@@ -92,7 +92,7 @@ The following example demonstrates enabling and disabling automatic slide transi
 
 ## Pause on hover
 
-By default, automatic slide transitions pause when the mouse pointer hovers over the Carousel element, providing users time to interact with the content. This behavior can be controlled using the [`pauseOnHover`](https://ej2.syncfusion.com/angular/documentation/api/carousel#pauseonhover) property.
+By default, automatic slide transitions pause when the mouse pointer hovers over the Angular Carousel element, providing users time to interact with the content. This behavior can be controlled using the [`pauseOnHover`](https://ej2.syncfusion.com/angular/documentation/api/carousel#pauseonhover) property.
 
 The following example demonstrates configuring the carousel to continue playing slides during hover interactions:
 
@@ -110,7 +110,7 @@ The following example demonstrates configuring the carousel to continue playing 
 
 ## Looping slides
 
-The Carousel component provides infinite slide transitions by default, automatically returning to the first slide after reaching the last slide. This continuous looping behavior can be controlled using the [`loop`](https://ej2.syncfusion.com/angular/documentation/api/carousel#loop) property.
+The Angular Carousel component provides infinite slide transitions by default, automatically returning to the first slide after reaching the last slide. This continuous looping behavior can be controlled using the [`loop`](https://ej2.syncfusion.com/angular/documentation/api/carousel#loop) property.
 
 The following example demonstrates enabling and disabling infinite slide transitions:
 
@@ -128,7 +128,7 @@ The following example demonstrates enabling and disabling infinite slide transit
 
 ## Slide changing events
 
-The Carousel component provides event handlers that trigger during slide transitions, enabling custom functionality and user interface updates. The [`slideChanging`](https://ej2.syncfusion.com/angular/documentation/api/carousel#slidechanging) event fires before a slide transition begins, while the [`slideChanged`](https://ej2.syncfusion.com/angular/documentation/api/carousel#slidechanged) event fires after the transition completes.
+The Angular Carousel component provides event handlers that trigger during slide transitions, enabling custom functionality and user interface updates. The [`slideChanging`](https://ej2.syncfusion.com/angular/documentation/api/carousel#slidechanging) event fires before a slide transition begins, while the [`slideChanged`](https://ej2.syncfusion.com/angular/documentation/api/carousel#slidechanged) event fires after the transition completes.
 
 The following demo demonstrates implementing carousel event handlers for custom functionality:
 
@@ -146,7 +146,7 @@ The following demo demonstrates implementing carousel event handlers for custom 
 
 ## Disable touch swiping
 
-The Carousel component supports touch-based slide navigation by default, allowing users to swipe between slides on touch-enabled devices. This touch interaction can be controlled using the [`enableTouchSwipe`](https://ej2.syncfusion.com/angular/documentation/api/carousel#enabletouchswipe) property.
+The Angular Carousel component supports touch-based slide navigation by default, allowing users to swipe between slides on touch-enabled devices. This touch interaction can be controlled using the [`enableTouchSwipe`](https://ej2.syncfusion.com/angular/documentation/api/carousel#enabletouchswipe) property.
 
 The following example demonstrates disabling touch swipe functionality for the carousel:
 
@@ -164,7 +164,7 @@ The following example demonstrates disabling touch swipe functionality for the c
 
 ## Swipe Modes
 
-In the carousel, the [`swipeMode`](../api/carousel#swipemode) property allows specifying whether the slide transition should occur while performing swiping via touch or mouse. The slide swiping is enabled or disabled using the bitwise operator.
+In the Angular Carousel, the [`swipeMode`](../api/carousel#swipemode) property allows specifying whether the slide transition should occur while performing swiping via touch or mouse. The slide swiping is enabled or disabled using the bitwise operator.
 
 The following swipe modes are available in the carousel:
 

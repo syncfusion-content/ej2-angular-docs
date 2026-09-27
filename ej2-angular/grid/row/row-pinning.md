@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Row Pinning in Angular Data Grid
 
-The Syncfusion <sup style="font-size:70%">&reg;</sup> Angular Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful for keeping specific rows always visible for quick reference or priority viewing, regardless of user interactions.
+The Data Grid control provides an option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful for keeping specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 
-To enable row pinning, configure the [isRowPinned](https://ej2.syncfusion.com/angular/documentation/api/grid#isrowpinned) callback function. This function receives each row's data and returns `true` or `false` based on the desired pinning condition. It executes only during the initial rendering of the Grid, ensuring that each row's pinning state is determined at that stage.
+## Enable row pinning
 
-Row pinning does not alter the overall content height of the Grid. The scrollable area remains fully visible, allowing smooth vertical scrolling even when multiple rows are pinned. Pinned rows appear in a fixed region above the content area, while the Grid preserves its layout and continues to allow full interaction with all other rows.
+To enable row pinning, configure the [isRowPinned](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#isrowpinned) callback function. This function receives each row's data and returns `true` or `false` based on the desired pinning condition. It executes only during the initial rendering of the Data Grid, ensuring that each row's pinning state is determined at that stage.
 
 The following example pins rows with "Critical" priority and "Open" status at the top using the `isRowPinned` callback function.
 
@@ -30,7 +30,7 @@ The following example pins rows with "Critical" priority and "Open" status at th
 {% previewsample "page.domainurl/samples/grid/rows-pinning-cs1" %}
 
 
-> Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` in particular column.
+> Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` for a column.
 
 ## Paging with row pinning
 
@@ -47,7 +47,7 @@ Row pinning keeps important rows visible at the top while navigating pages. Pinn
 
 {% previewsample "page.domainurl/samples/grid/rows-pinning-cs2" %}
 
-## Pinned rows selection
+## Row selection with pinned rows
 
 Pinned rows can be selected like regular rows, with their selection state synchronized with corresponding data rows via the primary key. This ensures consistent behavior across all grid operations, such as paging, sorting, and filtering, whether selection is performed using the mouse, keyboard, or checkbox.
 
@@ -69,7 +69,6 @@ Pinned rows can be selected like regular rows, with their selection state synchr
 Row pinning is fully compatible with filtering and sorting operations. When a filter is applied, both pinned and scrollable sections display only rows that meet the filter criteria, ensuring consistent results and preventing data mismatches.
  
 When sorting is applied, pinned rows are reordered using the same sorting rules while remaining fixed at the top. This maintains visibility and correct positioning of pinned rows even as the remaining data is reorganized.
-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,7 +98,7 @@ Row pinning fully supports CRUD operations with automatic synchronization betwee
 
 ## Dynamic row pinning
 
-Dynamic row pinning is available through the built-in context menu, allowing quick actions pin or unpin rows. Right-click any row to access `PinRow` and `UnpinRow` options for flexible row management.
+Dynamic row pinning is available through the built-in context menu, allowing rows to be pinned or unpinned quickly. Right-click any row to access `PinRow` and `UnpinRow` options for flexible row management.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

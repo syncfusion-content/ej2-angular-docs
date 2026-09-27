@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Query Builder UI
 
-Localize the Query Builder component to support different languages and cultures. The `L10n` library from `@syncfusion/ej2-base` enables you to customize all UI text in the Query Builder, including labels, buttons, and messages. Define locale values and translation objects to support languages such as Arabic, German, and French.
+Localize the Angular Query Builder UI component to support different languages and cultures. The `L10n` library from `@syncfusion/ej2-base` enables you to customize all UI text in the Query Builder, including labels, buttons, and messages. Define locale values and translation objects to support languages such as Arabic, German, and French.
 
-To localize the Query Builder:
+To localize the Angular Query Builder UI:
 
 1. Import `L10n` and [`setCulture`](https://ej2.syncfusion.com/angular/documentation/api/base/setCulture.html) from `@syncfusion/ej2-base`.
 2. Load the translation strings for the target locale using `L10n.load(...)`, using the `querybuilder` keyword as the object key.
@@ -106,7 +106,7 @@ L10n.load({
 
 ## Globalization
 
-In addition to translating UI strings, the Query Builder supports globalization of date and number values through the culture settings of the `@syncfusion/ej2-base` library. Calling `setCulture('de-DE')` before rendering the component applies the corresponding culture's number and date formats to the value editors used by the Query Builder. The following sample sets both the `de-DE` culture (via `setCulture`) and the `de-DE` locale strings (via `L10n.load`) and applies them through the component's `locale="de-DE"` property.
+In addition to translating UI strings, the Angular Query Builder UI supports globalization of date and number values through the culture settings of the `@syncfusion/ej2-base` library. Calling `setCulture('de-DE')` before rendering the component applies the corresponding culture's number and date formats to the value editors used by the Angular Query Builder UI. The following sample sets both the `de-DE` culture (via `setCulture`) and the `de-DE` locale strings (via `L10n.load`) and applies them through the component's `locale="de-DE"` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

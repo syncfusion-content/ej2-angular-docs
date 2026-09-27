@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to right-to-left in Angular Checkbox | Syncfusion
-description: Enable right-to-left rendering in Angular Checkbox by setting the enableRtl property to true.
+description: Enable right-to-left rendering in Angular Checkbox by setting the enableRtl property to true, ensuring proper RTL layout support.
 platform: ej2-angular
 control: Right to left 
 documentation: ug
@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to right-to-left in Angular Checkbox
 
-CheckBox component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/check-box#enablertl) as `true`.
+Angular Checkbox component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/check-box#enablertl) as `true`.
 
-The following example illustrates how to enable right-to-left support in CheckBox component.
+The following example illustrates how to enable right-to-left support in Angular Checkbox component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

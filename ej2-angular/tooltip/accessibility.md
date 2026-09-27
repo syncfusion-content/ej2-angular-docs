@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Tooltip
 
-The Tooltip component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) used to evaluate accessibility.
+The Angular Tooltip component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) used to evaluate accessibility.
 
-The accessibility compliance for the Tooltip component is outlined below.
+The accessibility compliance for the Angular Tooltip component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the Tooltip component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Tooltip component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) patterns to meet accessibility requirements. The following ARIA attributes are used in the Tooltip component.
+The Angular Tooltip component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/) patterns to meet accessibility requirements. The following ARIA attributes are used in the Angular Tooltip component.
 
 | Attributes | Description |
 | --- | --- |
@@ -50,23 +50,23 @@ The Tooltip component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pattern
 
 ## Keyboard interaction
 
-The Tooltip component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Tooltip component.
+The Angular Tooltip component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Angular Tooltip component.
 
 |  Keys | Description |
 | --- | --- |
 | Escape | Closes or dismisses the Tooltip. |
 | Tab | A form control receiving focus (say through tab key), opens the Tooltip, and on focus out closes it. |
 
-> 1. When the Tooltip is being displayed on the target element, focus continues to stay on it.
-> 2. If the Tooltip opens on mouse entering into the target element space, then it should be dismissed only when the mouse leaves that target.
-> 3. If the Tooltip opens on the target element that receives focus, then it should be closed only when the focus moves out of that target element.
-Likewise, if the Tooltip opens on a click, then it should be closed only on another click action.
+> 1. When the Angular Tooltip is being displayed on the target element, focus continues to stay on it.
+> 2. If the Angular Tooltip opens on mouse entering into the target element space, then it should be dismissed only when the mouse leaves that target.
+> 3. If the Angular Tooltip opens on the target element that receives focus, then it should be closed only when the focus moves out of that target element.
+Likewise, if the Angular Tooltip opens on a click, then it should be closed only on another click action.
 
 ## Ensuring accessibility
 
-The Tooltip component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Tooltip component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Tooltip component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/tooltip.html) in a new window to evaluate the accessibility of the Tooltip component with accessibility tools.
+The accessibility compliance of the Angular Tooltip component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/tooltip.html) in a new window to evaluate the accessibility of the Angular Tooltip component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/tooltip.html" %}
 

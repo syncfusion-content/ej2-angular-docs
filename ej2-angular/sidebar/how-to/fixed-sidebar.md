@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to make Sidebar fixed in Angular Sidebar
 
-The Sidebar does not require any specific style to make it as a fixed one. By default, the Sidebar position will be in a fixed state. The following example demonstrates that the Sidebar is rendered with a fixed position. The position of the Sidebar will not change when scrolling the main content area.
+The Angular Sidebar does not require any specific style to make it as a fixed one. By default, the Angular Sidebar position will be in a fixed state. The following example demonstrates that the Angular Sidebar is rendered with a fixed position. The position of the Sidebar will not change when scrolling the main content area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Schematics in Angular Range Slider | Syncfusion
-description: Use Angular schematics to scaffold Range Slider modules, dependencies, and feature-specific components like min-range, ticks, limits, and vertical.
+title: Schematics in Angular Slider | Syncfusion
+description: Use schematics to scaffold Angular Slider modules, dependencies, and feature-specific components like min-range, ticks, limits, and vertical.
 platform: ej2-angular
-control: Range Slider 
+control: Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Schematics in Angular Range Slider
+# Schematics in Angular Slider
 
 Angular schematics is a workflow tool that automates component generation, module imports, and dependency management. EJ2 Slider supports Angular schematics for automated module injection, component scaffolding, dependency installation, and style imports.
 
@@ -60,7 +60,7 @@ ng generate @syncfusion/<component-package-name>:<componentName-featureName> --n
 
 These commands perform the following actions:
 
-* Generate a Slider component with specified features in a new folder under `src/app` using the name you provided.
+* Generate a Angular Slider component with specified features in a new folder under `src/app` using the name you provided.
 * Automatically import the component into `app.module.ts` and add it to the `@NgModule` decorator's `declarations` array.
 
 > **Note**: The `@syncfusion/ej2-angular-inputs` package must be installed, though running the `ng add` command is not strictly required if you install it separately.

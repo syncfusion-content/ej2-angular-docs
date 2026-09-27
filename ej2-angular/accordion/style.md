@@ -14,7 +14,7 @@ The Angular Accordion component can be customized using CSS to modify its appear
 
 ## Customizing Accordion
 
-Modify the Accordion’s overall appearance, such as adding a border to match your application’s design, using the following CSS:
+Modify the Angular Accordion's overall appearance, such as adding a border to match your application’s design, using the following CSS:
 
 ```CSS
 .e-accordion {
@@ -24,7 +24,7 @@ Modify the Accordion’s overall appearance, such as adding a border to match yo
 
 ## Customizing the list items
 
-Use the following CSS to customize the items of Accordion.
+Use the following CSS to customize the items of Angular Accordion.
 
 ```CSS
 .e-accordion .e-acrdn-item {
@@ -34,9 +34,9 @@ Use the following CSS to customize the items of Accordion.
 }
 ```
 
-## Customizing Accordion's header
+## Customizing Angular Accordion's header
 
-Use the following CSS to customize the header of Accordion control.
+Use the following CSS to customize the header of Angular Accordion control.
 
 ```CSS
 
@@ -47,9 +47,9 @@ Use the following CSS to customize the header of Accordion control.
 
 ```
 
-## Customizing Accordion's expand and collapse icons
+## Customizing Angular Accordion's expand and collapse icons
 
-Use the following CSS to customize the expand and collapse icons of Accordion control.
+Use the following CSS to customize the expand and collapse icons of Angular Accordion control.
 
 ```CSS
 
@@ -59,9 +59,9 @@ Use the following CSS to customize the expand and collapse icons of Accordion co
 
 ```
 
-## Customizing the hover state of Accordion control
+## Customizing the hover state of Angular Accordion control
 
-Use the following CSS to customize the accordion item when hovering.
+Use the following CSS to customize the Angular Accordion item when hovering.
 
 ```CSS
 
@@ -71,9 +71,9 @@ Use the following CSS to customize the accordion item when hovering.
 
 ```
 
-## Customizing selected item of Accordion control
+## Customizing selected item of Angular Accordion control
 
-Use the following CSS to customize the selected accordion item.
+Use the following CSS to customize the selected Angular Accordion item.
 
 ```CSS
 
@@ -84,7 +84,7 @@ Use the following CSS to customize the selected accordion item.
 
 ```
 
-Use the following CSS to customize the selected accordion item text.
+Use the following CSS to customize the selected Angular Accordion item text.
 
 ```CSS
 .e-accordion .e-acrdn-item.e-select.e-active>.e-acrdn-header .e-acrdn-header-content,

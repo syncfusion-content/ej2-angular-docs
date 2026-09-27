@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to render a Dialog using ng-content in Angular Dialog
 
-Render custom components in the dialog content using `ng-content`. The following example demonstrates rendering child elements in a custom component using `ng-content`.
+Render custom components in the Angular Dialog content using `ng-content`. The following example demonstrates rendering child elements in a custom component using `ng-content`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

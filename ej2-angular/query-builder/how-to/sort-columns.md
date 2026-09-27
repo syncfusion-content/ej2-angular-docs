@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to sort the columns in Angular Query Builder UI
 
-Control the order in which fields appear in the Query Builder field list by setting the [`sortDirection`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#sortdirection) property. This property sorts the available fields displayed in the field dropdown, helping users find fields more easily.
+Control the order in which fields appear in the Angular Query Builder UI field list by setting the [`sortDirection`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#sortdirection) property. This property sorts the available fields displayed in the field dropdown, helping users find fields more easily.
 
 The sortDirection property supports the following values:
 
@@ -19,7 +19,7 @@ The sortDirection property supports the following values:
 
 If sortDirection is not specified, the field list is displayed in its original order.
 
-The following example demonstrates sorting the field list in ascending order. After sorting is applied, the available fields are displayed alphabetically in the Query Builder field dropdown.
+The following example demonstrates sorting the field list in ascending order. After sorting is applied, the available fields are displayed alphabetically in the Angular Query Builder UI field dropdown.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize the day header in Angular Calendar
 
-You can customize the format of the day names displayed in the Calendar header using the [`dayHeaderFormat`](https://ej2.syncfusion.com/angular/documentation/api/calendar#dayheaderformat) property. The default value is `Short`.
+You can customize the format of the day names displayed in the Angular Calendar header using the [`dayHeaderFormat`](https://ej2.syncfusion.com/angular/documentation/api/calendar#dayheaderformat) property. The default value is `Short`.
 
 The dayHeaderFormat property supports the following values:
 

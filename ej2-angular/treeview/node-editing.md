@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Node Editing in Angular Tree View
 
-The TreeView component provides in-place node editing functionality by setting the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowediting) property to **true**. To directly edit nodes in place, **double-click** the TreeView node or **select** the node and press the **F2** key.
+The Angular Tree View component provides in-place node editing functionality by setting the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/treeview/#allowediting) property to **true**. To directly edit nodes in place, **double-click** the Angular Tree View node or **select** the node and press the **F2** key.
 
-When editing is completed by losing focus or pressing the **Enter** key, the modified node's text is saved automatically. To cancel editing without saving changes, press the **Escape** key. This discards the edited text and retains the original TreeView node text.
+When editing is completed by losing focus or pressing the **Enter** key, the modified node's text is saved automatically. To cancel editing without saving changes, press the **Escape** key. This discards the edited text and retains the original Angular Tree View node text.
 
 ## Programmatic editing
 

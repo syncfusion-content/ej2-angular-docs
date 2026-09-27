@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to customize the slider thumb in Angular Range Slider | Syncfusion
-description: Apply square, circle, or oval shapes and custom background images to the Angular Range Slider thumb by overriding the e-handle CSS class.
+title: How to customize the slider thumb in Angular Slider | Syncfusion
+description: Apply square, circle, or oval shapes and custom background images to the Angular Slider thumb by overriding the e-handle CSS class.
 platform: ej2-angular
-control: Range Slider
+control: Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize the slider thumb in Angular Range Slider
+# How to customize the slider thumb in Angular Slider
 
-Customize the Range Slider thumb (handle) appearance by overriding the `e-handle` CSS class. The following example demonstrates how to apply various thumb shapes—square, circle, and oval—and custom background images. Choose the shape that best suits your application design.
+Customize the Angular Slider thumb (handle) appearance by overriding the `e-handle` CSS class. The following example demonstrates how to apply various thumb shapes—square, circle, and oval—and custom background images. Choose the shape that best suits your application design.
 
 ```css
 

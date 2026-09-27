@@ -10,8 +10,8 @@ domainurl: ##DomainURL##
 
 # How to open a dialog on popup item click in Angular Dropdown Menu
 
-This section explains about how to open a dialog on DropdownButton popup item click.
-This can be achieved by handling dialog open in [`select`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#select) event of the DropdownButton.
+This section explains about how to open a dialog on Angular Dropdown Menu popup item click.
+This can be achieved by handling dialog open in [`select`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#select) event of the Angular Dropdown Menu.
 
 In the following example, Dialog will open while selecting `Other Folder...` item.
 

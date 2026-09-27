@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Styles in Angular Skeleton
 
-You can customize skeleton control in the below ways.
+You can customize Angular Skeleton control in the below ways.
 
 ## cssClass
 
-You can customize the style of a Skeleton control by using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#cssclass). The appearance of Angular Skeleton can be customized by changing the wave color, background color, width, and height. For detailed information, refer `index.css` file below.
+You can customize the style of a Angular Skeleton control by using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#cssclass). The appearance of Angular Skeleton can be customized by changing the wave color, background color, width, and height. For detailed information, refer `index.css` file below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -33,7 +33,7 @@ You can customize the style of a Skeleton control by using [`cssClass`](https://
 
 ## Visible
 
-You can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#visible) property which defines the visible state of Skeleton.
+You can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/index-default#visible) property which defines the visible state of Angular Skeleton.
 
 ```typescript
 import { Component } from '@angular/core';

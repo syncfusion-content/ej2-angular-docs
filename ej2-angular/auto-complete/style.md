@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style in Angular AutoComplete
 
-The following content provides the exact CSS structure that you can use to modify the appearance of the AutoComplete component based on your requirements.
+The following content provides the exact CSS structure that you can use to modify the appearance of the Angular AutoComplete component based on your requirements.
 
 ## Customizing the appearance of the wrapper element
 

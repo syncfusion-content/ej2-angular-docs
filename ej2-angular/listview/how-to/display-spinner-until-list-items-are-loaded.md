@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Display loading spinner in Angular ListView component
 
-When fetching data from remote sources using the ListView component, there might be a delay in loading the data. During this time, you can enhance the user experience by displaying the EJ2 [Spinner](https://ej2.syncfusion.com/angular/documentation/spinner) component. This guide demonstrates how to implement a loading spinner with the ListView component.
+When fetching data from remote sources using the Angular ListView component, there might be a delay in loading the data. During this time, you can enhance the user experience by displaying the EJ2 [Spinner](https://ej2.syncfusion.com/angular/documentation/spinner) component. This guide demonstrates how to implement a loading spinner with the Angular ListView component.
 
 Refer to the following code sample to render the spinner component.
 
@@ -21,7 +21,7 @@ createSpinner({
 showSpinner(this.spinnerEle.nativeElement);
 ```
 
-Refer to the following code sample to render the ListView component.
+Refer to the following code sample to render the Angular ListView component.
 
 ```typescript
 let listviewInstance: ListView = new ListView({
@@ -39,11 +39,11 @@ let listviewInstance: ListView = new ListView({
 
 });
 
-//Render the initialized ListView
+//Render the initialized Angular ListView
 listviewInstance.appendTo("#element");
 ```
 
-Here, the data is fetched from `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner component has been rendered initially. After the data is loaded from remote URL, the spinner component will be hidden in ListView [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/list-view/#actioncomplete) event.
+Here, the data is fetched from `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner component has been rendered initially. After the data is loaded from remote URL, the spinner component will be hidden in Angular ListView [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/list-view#actioncomplete) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

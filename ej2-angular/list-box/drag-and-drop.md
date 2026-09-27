@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Drag and Drop in Angular ListBox
 
-The ListBox has support to drag an item or a group of selected items and drop it within the same list box or into another list box.
+The Angular ListBox has support to drag an item or a group of selected items and drop it within the same list box or into another Angular ListBox.
 
 The elements can be customized on drag and drop by using the following events,
 
@@ -24,7 +24,7 @@ The elements can be customized on drag and drop by using the following events,
 
 To drag and drop an item or group of item within the list box can be achieved by setting [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#allowdraganddrop) property as `true`.
 
-The following sample illustrates how to drag and drop an item within the same list box by enabling `allowDragAndDrop` property.
+The following sample illustrates how to drag and drop an item within the same Angular ListBox by enabling `allowDragAndDrop` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

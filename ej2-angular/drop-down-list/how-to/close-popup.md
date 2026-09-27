@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to close the popup on scroll in Angular Dropdown List
 
-By using the `hidePopup` method in DropDownList, you can close the popup on scroll when the window scroll event is triggered.
+By using the `hidePopup` method in Angular Dropdown List, you can close the popup on scroll when the window scroll event is triggered.
 
 The following example demonstrates how to close the popup on scroll.
 

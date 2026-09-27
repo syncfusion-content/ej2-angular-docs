@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Image Editor
 
-The `L10n` library from `@syncfusion/ej2-base` allows you to localize the default text content of the Image Editor. The Image Editor has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#locale) value and a translation object.
+The `L10n` library from `@syncfusion/ej2-base` allows you to localize the default text content of the Angular Image Editor. The Angular Image Editor has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#locale) value and a translation object.
 
-The following list of properties and its values are used in the Image  Editor.
+The following list of properties and its values are used in the Angular Image Editor.
 
 | Locale keywords | Text |
 | ------------ | ----------------------- |

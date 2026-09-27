@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Style and appearance in Angular Dialog
 
-The following CSS rules can be used to customize the dialog component's appearance based on your requirements.
+The following CSS rules can be used to customize the Angular Dialog component's appearance based on your requirements.
 
-## Customizing the dialog header
+## Customizing the Angular Dialog header
 
-Use the following CSS to customize the dialog header.
+Use the following CSS to customize the Angular Dialog header.
 
 ```CSS
 .e-dialog .e-dlg-header {
@@ -24,9 +24,9 @@ Use the following CSS to customize the dialog header.
 }
 ```
 
-## Customizing the dialog content
+## Customizing the Angular Dialog content
 
-Use the following CSS to customize the dialog content properties.
+Use the following CSS to customize the Angular Dialog content properties.
 
 ```CSS
 .e-dialog .e-dlg-content {
@@ -48,7 +48,7 @@ Use the following CSS to customize the modal dialog overlay.
 }
 ```
 
-## Customizing the dialog resize icon
+## Customizing the Angular Dialog resize icon
 
 Use the following CSS to customize the dialog resize icon (the grip that appears at the bottom corner when `enableResize` is `true`):
 
@@ -66,7 +66,7 @@ Use the following CSS to customize the dialog resize icon (the grip that appears
 
 The above CSS demonstration uses the font awesome icon.
 
-## Customizing the dialog close button
+## Customizing the Angular Dialog close button
 
 Use the following CSS to customize the dialog close button.
 
@@ -78,9 +78,9 @@ Use the following CSS to customize the dialog close button.
 }
 ```
 
-## Customizing the dialog footer button
+## Customizing the Angular Dialog footer button
 
-Use the following CSS to customize the dialog footer button.
+Use the following CSS to customize the Angular Dialog footer button.
 
 ```CSS
 /* To specify font color, background color and border color */

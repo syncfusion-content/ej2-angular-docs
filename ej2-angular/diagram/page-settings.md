@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Page Settings in Angular Diagram | Syncfusion®
-description: Customize the Syncfusion® Angular Diagram canvas with configurable page dimensions, background color or image, margins, and orientation for printable and on-screen diagrams.
+description: Customize Angular Diagram page dimensions, background, margins, orientation, page breaks, multiple pages, and fit options.
 platform: ej2-angular
 control: Page settings 
 documentation: ug
@@ -52,12 +52,12 @@ The following code example shows how to configure a background image for the dia
 
 ## Page orientation
 
-The diagram supports two page orientations:
+The page orientation is configured through the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pagesettingsmodel#orientation) in page settings. The diagram supports two page orientations:
 
 - **Landscape**: Wider than tall (default orientation)
 - **Portrait**: Taller than wide
 
-When the orientation changes, the diagram automatically swaps the width and height values to maintain the specified page dimensions. For example, if a page is configured with width: 800 and height: 600 in landscape mode, switching to portrait orientation will result in width: 600 and height: 800.
+When the orientation changes, the diagram automatically swaps the width and height values to maintain the specified page dimensions. For example, if a page is configured with `width: 800` and `height: 600` in landscape mode, switching to portrait orientation will result in `width: 600` and `height: 800`.
 
 The following example demonstrates how orientation affects page dimensions by switching from the default landscape to portrait mode.
 
@@ -77,7 +77,9 @@ The following example demonstrates how orientation affects page dimensions by sw
 
 The diagram can extend across multiple pages when the content exceeds the defined page boundaries. When multiple pages are enabled, the total canvas size automatically expands in increments of the specified page width and height to accommodate all diagram elements. Page breaks provide visual indicators showing where one page ends and another begins, which is particularly useful for print layout planning.
 
-The [`multiplePage`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettingsModel#multiplepage) property enables the multi-page functionality, while the [`showPageBreak`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettingsModel#showpagebreaks) property controls the visibility of page break lines.
+The [`multiplePage`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pagesettingsmodel#multiplepage) property enables the multi-page functionality, while the [`showPageBreaks`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pagesettingsmodel#showpagebreaks) property controls the visibility of page break lines.
+
+The following code example shows how to enable multiple pages and page breaks.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -91,11 +93,11 @@ The [`multiplePage`](https://ej2.syncfusion.com/angular/documentation/api/diagra
   
 {% previewsample "page.domainurl/samples/diagram/pagesettings/pagebreak-cs1" %}
 
-The appearance of page break lines can be customized by overriding the styles of the .e-diagram-page-break CSS class. For detailed styling options, refer to the [`CSS customization`](https://ej2.syncfusion.com/angular/documentation/diagram/style#customizing-the-page-breaks) documentation.
+The appearance of page break lines can be customized by overriding the styles of the .e-diagram-page-break CSS class. For detailed styling options, refer to the [`CSS customization`](https://ej2.syncfusion.com/angular/documentation/diagram/style#customizing-page-break-indicators) documentation.
 
 ## Boundary constraints
 
-Boundary constraints define the interactive region within which diagram elements can be manipulated. These constraints control where users can drag, resize, or rotate elements, providing control over the usable area of the diagram canvas. The [`boundaryConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/boundaryConstraints) property in page settings manages these restrictions.
+Boundary constraints define the interactive region within which diagram elements can be manipulated. These constraints control where users can drag, resize, or rotate elements, providing control over the usable area of the diagram canvas. The [`boundaryConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pagesettings#boundaryConstraints) property in page settings manages these restrictions.
 
 The three types of boundary constraints are:
 

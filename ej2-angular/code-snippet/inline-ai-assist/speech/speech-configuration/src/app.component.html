@@ -1,0 +1,19 @@
+<div class="control-container">
+    <button id="aiAssistBtn" class="e-btn e-primary" (click)="onClick()">
+        AI Assist
+    </button>
+    <div id="editableText" contenteditable="true" class="editable-text">
+        <p>This sample demonstrates configuring speech recognition language (en-US),
+           enabling interim results for real-time transcription, and customizing the
+           microphone button's appearance using buttonSettings.</p>
+        <p>Click the AI Assist button to open the prompt area, then use the "Start Recording"
+           microphone button to convert your voice into text. Interim results will appear as you speak.</p>
+    </div>
+    <ejs-inlineaiassist id="defaultInlineAssist" #inlineAssistComponent
+        [relateTo]="'#aiAssistBtn'"
+        [responseSettings]="responseSetting"
+        [speechToTextSettings]="speechToTextSettings"
+        popupWidth="500px"
+        (promptRequest)="onPromptRequest($event)">
+    </ejs-inlineaiassist>
+</div>

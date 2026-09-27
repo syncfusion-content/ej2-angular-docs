@@ -3,14 +3,16 @@ layout: post
 title: Toolbar in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table shows a built-in toolbar for switching between grid and chart, conditional formatting, and exports.
 platform: ej2-angular
-control: Tool bar 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Toolbar in Angular Pivot Table
 
-The toolbar in the Angular Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showtoolbar) property to **true**. Additionally, the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) property accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
+The toolbar in the Angular Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showtoolbar) property to **true**. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) property accepts a collection of built-in toolbar options, letting users perform common operations at runtime.
+
+> To use the toolbar, inject the `ToolbarService` module into the Pivot Table.
 
 The following table lists the built-in toolbar options and their actions:
 
@@ -32,7 +34,7 @@ The following table lists the built-in toolbar options and their actions:
 | Field List | Opens the field list pop-up to configure the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) |
 | MDX | Displays the MDX query used to retrieve data from an OLAP data source. **Note**: This option applies only to OLAP data sources. |
 
-> The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
+> The order of toolbar options can be changed by reordering items in the **ToolbarItems** collection. To remove a built-in option, simply omit it from the collection.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,21 +72,21 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/angular/documentation/pivotview/pivot-chart#multiple-axis).
 
-![Switching to multiple axes](images/chart-option.png)
+![Switching to multiple axes](../images/chart-option.jpg)
 
 The pivot chart supports three modes for multiple axes: `Stacked`, `Single`, and `Combined`. Users can select a mode from the "Multiple Axis Mode" dropdown list, which appears after clicking the **More...** option in the chart type dropdown menu.
 
-![Multiple axis mode options](images/multiple-axis-mode.png)
+![Multiple axis mode options](../images/multiple-axis-mode.png)
 
 ## Show or hide legend
 
 In the pivot chart, you can show or hide the legend dynamically using an option in the chart type drop-down menu on the toolbar. This allows you to control whether the legend appears alongside the chart. For accumulation chart types, such as pie, doughnut, pyramid, and funnel, the legend is hidden by default. You can enable or disable the legend using a built-in checkbox available in the drop-down menu.
 
-![Chart legend](images/chart-legend.png)
+![Chart legend](../images/chart-legend.png)
 
-## Adding custom option to the toolbar
+## Adding a custom option to the toolbar
 
-You can add new items to the toolbar in the Angular Pivot Table component beyond the built-in options. This is done using the [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbarrender) event. Within this event, you can define the new toolbar item and specify what action it performs when clicked. Additionally, you can place the new item at a specific position in the toolbar using the `splice` method.
+You can add new items to the toolbar in the Angular Pivot Table component beyond the built-in options. This is done using the [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbarrender) event. Within this event, you can define the new toolbar item and specify what action it performs when clicked. The `customToolbar` parameter exposes the existing toolbar items; you can use the `splice` method to insert your custom item at a specific position.
 
 Here’s an example of how to add a custom toolbar item:
 
@@ -104,7 +106,7 @@ In this example, a custom icon is added to the toolbar. The [`toolbarRender`](ht
 
 ### Toolbar Template
 
-You can customize the entire toolbar panel by using the [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbartemplate) property. This allows you to design the toolbar with HTML elements and include any custom control, such as buttons or dropdowns, as toolbar items. The HTML structure for the toolbar is defined separately and linked to the Pivot Table by setting the `id` of the HTML element in the [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#toolbartemplate) property.
+You can customize the entire toolbar panel by using the [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbartemplate) property. This allows you to design the toolbar with HTML elements and include any custom control, such as buttons or dropdowns, as toolbar items. The HTML structure for the toolbar is defined separately and linked to the Pivot Table by setting the `id` of the HTML element in the [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbartemplate) property. The `toolbarClick` event fires when any toolbar item (built-in or custom) is clicked, and `args.item.id` identifies the source element so you can dispatch actions accordingly.
 
 Below is an example of a custom toolbar with buttons to expand or collapse all rows in the Pivot Table:
 
@@ -164,15 +166,27 @@ SQL Server is a relational database management system (RDBMS) that can be used t
 
 **1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
 
-![Create ASP.NET Core Web App project](images/azure-asp-core-web-service-create.png)
+![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
 
 **2.** To connect a SQL Server database using the Microsoft SqlClient in our application, we need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **Microsoft.Data.SqlClient** and install it.
 
-![Add the NuGet package Microsoft.Data.SqlClient to the project](images/ms-data-sqlclient-nuget-package-install.png)
+![Add the NuGet package Microsoft.Data.SqlClient to the project](../images/ms-data-sqlclient-nuget-package-install.png)
 
-**3.** Under the **Controllers** folder, create a Web API controller (aka, PivotController.cs) file that aids in data communication with the Pivot Table.
+**3.** Create the table that will hold the saved reports. The PivotController code below uses a table named `ReportTable` with two columns: `ReportName` (the report's display name) and `Report` (the JSON-encoded report body). Run the following script in your SQL Server database before starting the Web API:
 
-**4.** In the Web API Controller (aka, PivotController), the **OpenConnection** method is used to connect to the SQL database. The **GetDataTable** method then processes the specified SQL query string, retrieves data from the database, and converts it into a **DataTable** using **SqlCommand** and **SqlDataAdapter**. This **DataTable** can be used to retrieve saved reports and modify them further as shown in the code block below.
+```sql
+CREATE TABLE ReportTable (
+    Id INT IDENTITY(1, 1) PRIMARY KEY,
+    ReportName NVARCHAR(255) NOT NULL UNIQUE,
+    Report NVARCHAR(MAX) NOT NULL
+);
+```
+
+**4.** Under the **Controllers** folder, create a Web API controller (aka, PivotController.cs) file that aids in data communication with the Pivot Table.
+
+**5.** In the Web API Controller (aka, PivotController), the **OpenConnection** method is used to connect to the SQL database. The **GetDataTable** method then processes the specified SQL query string, retrieves data from the database, and converts it into a **DataTable** using **SqlCommand** and **SqlDataAdapter**. This **DataTable** can be used to retrieve saved reports and modify them further as shown in the code block below.
+
+> **CORS:** The Angular app runs on a different origin (e.g., `http://localhost:4200`) than the Web API (`https://localhost:44313`). Enable CORS in `Program.cs` by calling `builder.Services.AddCors(...)` and `app.UseCors(...)` and allowing the Angular origin.
 
 [PivotController.cs]
 
@@ -352,7 +366,7 @@ namespace MyWebService.Controllers
 
 ```
 
-**5.** When you run the app, it will be hosted at `https://localhost:44313`. You can use the hosted URL to save and load reports in the SQL database from the Pivot Table.
+**6.** When you run the app, it will be hosted at `https://localhost:44313`. You can use the hosted URL to save and load reports in the SQL database from the Pivot Table.
 
 Further, let us explore more on how to save, load, rename, delete, and add reports using the built-in toolbar options via Web API controller (aka, PivotController) one-by-one.
 
@@ -505,11 +519,11 @@ namespace MyWebApp.Controllers
 
 ```
 
-![The current report has been saved in the SQL database](images/output_save_report.png)
+![The current report has been saved in the SQL database](../images/output_save_report.png)
 
 In the meantime, you can save a duplicate of the current report to the SQL Server database with a different name by selecting **"Save as current report"** from the toolbar. The [saveReport](#savereport) event will then be triggered with the new report name **"Sample Report 1"** and the current report. You can save them to the SQL Server database after passing them to the Web API service, as mentioned above.
 
-![Copy of the current report has been saved in the SQL database](images/output_save_as_report.png)
+![Copy of the current report has been saved in the SQL database](../images/output_save_as_report.png)
 
 #### Loading a report
 
@@ -660,7 +674,7 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Loading a report from SQL database](images/output_load_report.png)
+![Loading a report from SQL database](../images/output_load_report.png)
 
 #### Renaming a report
 
@@ -826,7 +840,7 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Renaming a report in the SQL database](images/output_rename_report.png)
+![Renaming a report in the SQL database](../images/output_rename_report.png)
 
 #### Deleting a report
 
@@ -975,17 +989,17 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Deleting a report from the SQL database](images/output_remove_report.png)
+![Deleting a report from the SQL database](../images/output_remove_report.png)
 
 #### Adding a report
 
 When you select the **"Create a new report"** option from the toolbar, the [newReport](#newreport) event is triggered, followed by the [saveReport](#savereport) event. To save this new report to the SQL database, use the [saveReport](#savereport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
 
-![Adding a report in the SQL database](images/output_new_report.png)
+![Adding a report in the SQL database](../images/output_new_report.png)
 
 ### Limitations with respect to report manipulation
 
-Below points need to be considered when saving the report to SQL Server database.
+The following points apply when saving reports to a SQL Server database:
 
 * **Data source**: Both raw data and aggregated data won't be saved and loaded from the database.
 * **Hyperlinks**: Option to link external facts via pivot table cells won't be saved and loaded from the database.

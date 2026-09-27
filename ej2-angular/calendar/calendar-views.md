@@ -10,8 +10,8 @@ domainurl: ##DomainURL##
 
 # Calendar Views in Angular Calendar
 
-The Calendar has the following pre-defined views that provide a flexible way to navigate back and forth to select the date.
-Use the [`start`](https://ej2.syncfusion.com/angular/documentation/api/calendar#start) property to change the initial (start) view of the Calendar. The default value of the `start` property is `month`.
+The Angular Calendar has the following pre-defined views that provide a flexible way to navigate back and forth to select the date.
+Use the [`start`](https://ej2.syncfusion.com/angular/documentation/api/calendar#start) property to change the initial (start) view of the Angular Calendar. The default value of the `start` property is `month`.
 
 The `start` and [`depth`](https://ej2.syncfusion.com/angular/documentation/api/calendar#depth) properties accept the same enumerated values: `month`, `year`, or `decade`.
 
@@ -21,7 +21,7 @@ The `start` and [`depth`](https://ej2.syncfusion.com/angular/documentation/api/c
 | Year | Displays the months in a year. |
 | Decade | Displays the years in a decade. |
 
-The following example demonstrates how to set the `year` as the start view of the Calendar.
+The following example demonstrates how to set the `year` as the start view of the Angular Calendar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -39,9 +39,9 @@ The following example demonstrates how to set the `year` as the start view of th
 
 ### Restrict to a range of views
 
-Calendar view navigation can be restricted by defining the  [`start`](https://ej2.syncfusion.com/angular/documentation/api/calendar#start) and [`depth`](https://ej2.syncfusion.com/angular/documentation/api/calendar#depth) properties that allows you to select the date from that view.
+Angular Calendar view navigation can be restricted by defining the  [`start`](https://ej2.syncfusion.com/angular/documentation/api/calendar#start) and [`depth`](https://ej2.syncfusion.com/angular/documentation/api/calendar#depth) properties that allows you to select the date from that view.
 
-By defining the start and depth properties with the different view, drill-down and drill-up views navigation can be limited to the user. Calendar views will be drill-down up to the view which is set in `start` property and drill-up up to the view which is set in `depth` property.
+By defining the start and depth properties with the different view, drill-down and drill-up views navigation can be limited to the user. Angular Calendar views will be drill-down up to the view which is set in `start` property and drill-up up to the view which is set in `depth` property.
 
 > The depth view level must be below the start view level (month < year < decade).
 

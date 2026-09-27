@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to maintain trailing zeros in Angular Numeric Textbox
 
-By default, trailing zeros are removed when the NumericTextBox receives focus. Use the following approach to preserve trailing zeros during focus.
+By default, trailing zeros are removed when the Angular Numeric Textbox receives focus. Use the following approach to preserve trailing zeros during focus.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

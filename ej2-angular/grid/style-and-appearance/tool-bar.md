@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar Style in Angular Data Grid
+# Toolbar Styles in Angular Data Grid
 
-The appearance of the toolbar in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the toolbar root element and toolbar button element.
+Customize the appearance of the toolbar in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) using CSS. The following examples demonstrate styling the toolbar and toolbar buttons.
 
-## Customize the toolbar root element
+## Customize the toolbar items container
 
-The `.e-toolbar-items` class is used to style the toolbar root element.
+Use the `.e-toolbar-items` class to style the toolbar items container.
 
 ```css
 .e-grid .e-toolbar-items {
@@ -22,11 +22,11 @@ The `.e-toolbar-items` class is used to style the toolbar root element.
 }
 ```
 
-![Grid toolbar root element](../images/grid-toolbar-root-element.png)
+![Data Grid toolbar root element](../images/grid-toolbar-root-element.png)
 
 ## Customize the toolbar button element
 
-The `.e-toolbar .e-btn` selector is used to style the toolbar button elements.
+Use the `.e-toolbar .e-btn` selector to style the toolbar button elements.
 
 ```css
 .e-grid .e-toolbar .e-btn {
@@ -34,4 +34,4 @@ The `.e-toolbar .e-btn` selector is used to style the toolbar button elements.
 }
 ```
 
-![Grid toolbar button element](../images/grid-toolbar-button-element.png)
+![Data Grid toolbar button element](../images/grid-toolbar-button-element.png)

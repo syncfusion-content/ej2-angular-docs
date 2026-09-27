@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disabled Items in Angular MultiSelect Dropdown
+# Disabled Items in  Angular MultiSelect Dropdown Dropdown
 
-The MultiSelect component provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#disabled) field. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the [`fields.disabled`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#disabled) property.
+The  Angular MultiSelect Dropdown component provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#disabled) field. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the [`fields.disabled`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#disabled) property.
 
 In the following sample, list items are configured with a disabled status using the `disabled` field.
 
@@ -50,7 +50,7 @@ import { MultiSelectComponent } from '@syncfusion/ej2-angular-dropdowns';
     ],
     standalone: true,
     selector: 'app-root',
-    // specifies the template string for the MultiSelect component
+    // specifies the template string for the  Angular MultiSelect Dropdown component
     template: `<ejs-multiselect id='multiselectelement' #samples [dataSource]='tagData' [fields]='fields' [placeholder]='text' (created)="onCreated()"></ejs-multiselect>`
 })
 export class AppComponent {
@@ -73,7 +73,7 @@ export class AppComponent {
     ];
     // maps the appropriate column to fields property
     public fields: Object = { value: 'Text', disabled: 'State' };
-    //set the placeholder to MultiSelect input
+    //set the placeholder to  Angular MultiSelect Dropdown input
     public text: string = "Select Tags";
     public onCreated() {
        this.status?.disableItem('Crisis')
@@ -91,4 +91,4 @@ To disable the overall component, set the [`enabled`](https://ej2.syncfusion.com
 
 ```
 
-![Disabled MultiSelect Component](../images/multiselect-disable.png)
+![Disabled  Angular MultiSelect Dropdown Component](../images/multiselect-disable.png)

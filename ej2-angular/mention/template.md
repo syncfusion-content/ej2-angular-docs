@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Templates in Angular Mention
 
-The Mention has been provided with several options to customize each list item, display item and waiting popup. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
+The Angular Mention has been provided with several options to customize each list item, display item and waiting popup. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
 
 ## Item template
 
-The content of each list item within the Mention can be customized with the help of [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#itemtemplate) property.
+The content of each list item within the Angular Mention can be customized with the help of [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#itemtemplate) property.
 
 In the following sample, each list item is split into two columns to display relevant data.
 
@@ -32,7 +32,7 @@ In the following sample, each list item is split into two columns to display rel
 
 ## Display template
 
-The currently selected value that is to be displayed on the mention element can be customized using the [displayTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#displaytemplate) property.
+The currently selected value that is to be displayed on the Angular Mention element can be customized using the [displayTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#displaytemplate) property.
 
 In the following sample, the selected value is displayed as a combined text of both `FirstName` and `City` in the mention element, which is separated by a hyphen.
 
@@ -50,7 +50,7 @@ In the following sample, the selected value is displayed as a combined text of b
 
 ## No records template
 
-The Mention is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#norecordstemplate) property.
+The Angular Mention is provided with support to custom design the popup list content when no data is found and no matches found on search with the help of [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#norecordstemplate) property.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -68,7 +68,7 @@ In the following sample, popup list content displays the notification of no data
 
 ## Spinner template
 
-The Mention provides support to customize the waiting spinner when data fetching takes time to load respective data in the popup using the [spinnerTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#spinnertemplate) property.
+The Angular Mention provides support to customize the waiting spinner when data fetching takes time to load respective data in the popup using the [spinnerTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#spinnertemplate) property.
 
 In the following sample, customized spinner is shown while fetching the data from the service.
 

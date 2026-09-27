@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular Query Builder UI
 
-Customize the Query Builder's appearance by overriding default CSS classes or creating a custom theme.
+Customize the Angular Query Builder UI's appearance by overriding default CSS classes or creating a custom theme.
 
 ## CSS class overrides
 
@@ -18,15 +18,15 @@ The following table lists the primary CSS classes and their purposes. Override t
 
 | CSS Class | Purpose of Class |
 | --------- | ---------------- |
-| `.e-query-builder` | To customize the Query Builder root container. |
-| `.e-group-container` | To customize the Query Builder group container. |
+| `.e-query-builder` | To customize the Query Builder UI root container. |
+| `.e-group-container` | To customize the Query Builder UI group container. |
 | `.e-group-header .e-btn` | To customize all buttons in the group header (condition AND/OR, NOT, delete-group, add buttons). |
-| `.e-group-body .e-rule-container` | To customize the Query Builder rule container. |
-| `.e-group-container .e-group-header .e-dropdown-btn` | To customize the Query Builder Add group/condition dropdown button (the split-button variant; the standard add button uses `.e-btn`). |
-| `.e-query-builder .e-group-header .e-deletegroup` | To customize the Query Builder Delete group button. |
-| `.e-query-builder .e-rule-field .e-rule-value-delete .e-rule-delete` | To customize the Query Builder Delete condition button. |
-| `.e-query-builder .e-rule-list > ::after, .e-query-builder .e-rule-list > ::before` | To customize the Query Builder group joining line. |
-| `.e-query-builder .e-rule-container.e-joined-rule` | To customize the Query Builder condition joining line. |
+| `.e-group-body .e-rule-container` | To customize the Query Builder UI rule container. |
+| `.e-group-container .e-group-header .e-dropdown-btn` | To customize the Query Builder UI Add group/condition dropdown button (the split-button variant; the standard add button uses `.e-btn`). |
+| `.e-query-builder .e-group-header .e-deletegroup` | To customize the Query Builder UI Delete group button. |
+| `.e-query-builder .e-rule-field .e-rule-value-delete .e-rule-delete` | To customize the Query Builder UI Delete condition button. |
+| `.e-query-builder .e-rule-list > ::after, .e-query-builder .e-rule-list > ::before` | To customize the Query Builder UI group joining line. |
+| `.e-query-builder .e-rule-container.e-joined-rule` | To customize the Query Builder UI condition joining line. |
 | `.e-filter-input, .e-rule-value` | To customize the field, operator, and value drop-down/pop-up editors. |
 
 > The joining-line selectors (`.e-rule-list > ::after`, `.e-rule-list > ::before`, and `.e-rule-container.e-joined-rule`) target decorative pseudo-elements; the `width`, `border-color`, and `background` CSS properties are commonly overridden to restyle these lines.
@@ -54,8 +54,8 @@ The following CSS snippet demonstrates overriding the group joining line color a
 export class AppComponent {}
 ```
 
-For component-level styling that applies only to a specific Query Builder, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#cssclass) property and scope your CSS rules to the custom class (as shown above with `custom-qb`).
+For component-level styling that applies only to a specific Angular Query Builder UI, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#cssclass) property and scope your CSS rules to the custom class (as shown above with `custom-qb`).
 
 ## Custom theme
 
-For advanced customization across the whole component, use the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material) to create and download custom themes. Alternatively, theme packages are available through npm; see [Getting started](./getting-started) for installing a package such as `@syncfusion/ej2-material3-theme` and importing the Query Builder theme CSS. For a full list of available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+For advanced customization across the whole component, use the [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material) to create and download custom themes. Alternatively, theme packages are available through npm; see [Getting started](./getting-started) for installing a package such as `@syncfusion/ej2-material3-theme` and importing the Angular Query Builder UI theme CSS. For a full list of available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.

@@ -27,7 +27,7 @@ This guide covers the following shape types and their implementation:
 
 ## Text Nodes
 
-Text nodes enable you to add formatted text content directly to your diagram. They are ideal for labels, annotations, and textual information that enhances diagram readability.
+Text nodes enable you to add formatted text content directly to your diagram. They are ideal for labels, [annotations](https://ej2.syncfusion.com/angular/documentation/diagram/labels), and textual information that enhances diagram readability.
 
 To create a text node, set the shape property to [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) and define the content object with your desired text and styling options.
 
@@ -85,6 +85,8 @@ Control how images appear within node boundaries using alignment and scaling pro
 
 The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/image#scale) property determines how images fit within node boundaries, while the [`align`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imageAlignment) property controls positioning.
 
+Valid `align` values: `XMinYMin`, `XMinYMid`, `XMinYMax`, `XMidYMin`, `XMidYMid`, `XMidYMax`, `XMaxYMin`, `XMaxYMid`, `XMaxYMax`.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/alignment-cs1/src/app.component.ts %}
@@ -106,7 +108,7 @@ The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/image
 | Slice | Scales to fill node, may crop image | ![Slice Alignment](images/Image3.png) |
 | Stretch | Stretches to fill node exactly | ![Stretch Alignment](images/Image4.png) |
 
-N> Combine the align property with scale settings to achieve precise image positioning within your nodes.
+N> Combine the `align` property with `scale` settings to achieve precise image positioning within your nodes.
 
 ## HTML Nodes
 
@@ -132,9 +134,9 @@ Define HTML content directly within the [`content`](https://ej2.syncfusion.com/a
   
 {% previewsample "page.domainurl/samples/diagram/shapes/html-cs1" %}
 
-### HTML Node with Node Template
+### HTML Node with nodeTemplate
 
-For complex HTML structures, use the [`nodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nodetemplate) approach. Define your template in the HTML file and reference it through the diagram's nodeTemplate property.
+For complex HTML structures, use the [`nodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nodetemplate) approach. Define your template in the HTML file and reference it through the diagram's `nodeTemplate` property. The `nodeTemplate` requires referencing the template via `@ViewChild` in the component class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,11 +168,11 @@ To create a [`native`](https://ej2.syncfusion.com/angular/documentation/api/diag
   
 {% previewsample "page.domainurl/samples/diagram/shapes/native-cs1" %}
 
-N> Similar to HTML nodes, native nodes cannot be exported to image formats due to canvas rendering limitations. Fill colors of native nodes can be overridden by inline SVG styles or fill attributes specified in the SVG template.
+N> Like HTML nodes, native nodes cannot be exported to image formats due to canvas rendering limitations. Fill colors of native nodes can be overridden by inline SVG styles or fill attributes in the SVG template.
 
 ### SVG Content Alignment and Scaling
 
-Control how SVG content appears within node boundaries using the same scaling principles as image nodes. The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nativeModel#scale) property determines how SVG content fits within the node bounds.
+Control how SVG content appears within node boundaries using the same scaling principles as image nodes. The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nativeModel#scale) property determines how SVG content fits within the node bounds. Valid `align` values match those of the [image alignment](https://ej2.syncfusion.com/angular/documentation/api/diagram/imageAlignment) enum.
 
 **SVG scaling options:**
 
@@ -185,7 +187,7 @@ Control how SVG content appears within node boundaries using the same scaling pr
 
 Basic shapes provide a comprehensive set of predefined geometric forms commonly used in diagrams, flowcharts, and technical drawings. These shapes offer consistency and quick deployment for standard diagram elements.
 
-To create [`basic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) shapes, set the type property to **basic** and choose from the available built-in shapes. For rounded rectangles, use the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/basicShapeModel#cornerradius) property to specify the radius.
+To create [`basic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) shapes, set `shape.type` to **Basic** and choose from the available built-in shapes. For rounded rectangles, use the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/basicShapeModel#cornerradius) property to specify the radius.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -199,11 +201,13 @@ To create [`basic`](https://ej2.syncfusion.com/angular/documentation/api/diagram
   
 {% previewsample "page.domainurl/samples/diagram/shapes/basic-cs1" %}
 
-N> The shape property defaults to **basic** when not specified. If no specific shape is defined for a basic shape node, it defaults to **rectangle**.
+N> The shape property defaults to **Basic** when not specified. If no specific shape is defined for a basic shape node, it defaults to **Rectangle**.
 
 **Available basic shapes:**
 
 ![BasicShapes](images/Basic.png)
+
+Available basic shape enum names: `Rectangle`, `RoundedRectangle`, `Ellipse`, `Triangle`, `Plus`, `Star`, `Pentagon`, `Hexagon`, `Heptagon`, `Octagon`, `Trapezoid`, `Decagon`, `Parallelogram`, `Cylinder`, `Diamond`.
 
 The basic shapes library includes rectangles, ellipses, triangles, polygons, stars, and many other geometric forms suitable for various diagramming needs.
 
@@ -211,7 +215,7 @@ The basic shapes library includes rectangles, ellipses, triangles, polygons, sta
 
 Path shapes provide ultimate flexibility for creating custom geometric forms using SVG path data. This approach allows you to define any shape imaginable through precise path coordinates and commands.
 
-To create a [`path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) node, set the shape property to **path** and define the geometry through the [`data`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathModel#data) property using standard SVG path syntax.
+To create a [`path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) node, set the shape property to **path** and define the geometry through the [`data`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathModel#data) property using standard [SVG path syntax](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -229,7 +233,7 @@ To create a [`path`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 
 Flow shapes are specialized elements designed for process modeling, workflow diagrams, and business process documentation. These standardized shapes follow common flowchart conventions and enhance diagram readability.
 
-To create [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) shapes, set the shape type to **flow** and specify the desired flow shape variant. The default flow shape is **process**.
+To create [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape) shapes, set `shape.type` to **Flow** and specify the desired flow shape variant. The default flow shape is **Process**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -246,3 +250,5 @@ To create [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/
 The list of flow shapes are as follows.
 
 ![FlowShapes](images/FlowShapes.png)
+
+Available flow shape enum names: `Process`, `Card`, `Document`, `PreDefinedProcess`, `Terminator`, `Preparation`, `ManualOperation`, `ManualInput`, `LoopLimit`, `SequentialData`, `Data`, `DirectData`, `Sort`, `MultiDocument`, `Collate`, `SummingJunction`, `Or`, `InternalStorage`, `Extract`, `OfflineStorage`, `OffPageConnector`, `MagneticDisk`, `OnPageConnector`, `Delay`, `Display`, `StoredData`, `Merge`, `Connector`, `Decision`.

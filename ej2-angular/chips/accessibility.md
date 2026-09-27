@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Chips
 
-The Chips component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Chips component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Chips component is outlined below.
+The accessibility compliance for the Angular Chips component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,11 +40,11 @@ The accessibility compliance for the Chips component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Chips component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following ARIA attributes are used in the Chips component:
+The Angular Chips component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following ARIA attributes are used in the Angular Chips component:
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=listbox` | Indicates the Chips component wrapper element as `listbox`. |
+| `role=listbox` | Indicates the Angular Chips component wrapper element as `listbox`. |
 | `role=option` | Used to convey a significant and contextual message to the user(ChipList). |
 | `role=button` | Used to convey a significant and contextual message to the user(Single Chips). |
 | `aria-label` | Provides an accessible name for the Chips. |
@@ -54,7 +54,7 @@ The Chips component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patt
 
 ## Keyboard interaction
 
-The Chips component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/button/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Chips component.
+The Angular Chips component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/button/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Angular Chips component.
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
@@ -63,9 +63,9 @@ The Chips component followed the [keyboard interaction](https://www.w3.org/WAI/A
 
 ## Ensuring accessibility
 
-The Chips component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Chips component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Chips component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/chips.html) in a new window to evaluate the accessibility of the Chips component with accessibility tools.
+The accessibility compliance of the Angular Chips component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/chips.html) in a new window to evaluate the accessibility of the Angular Chips component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/chips.html" %}
 

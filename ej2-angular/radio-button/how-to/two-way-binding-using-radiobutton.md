@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Two way binding using radiobutton in Angular Radio button component
+# Two way binding using Radio Button in Angular Radio button component
 
-In the following example, two-way binding for RadioButton is illustrated with DropDownList component. The steps to achieve two-way binding in RadioButton are as follows,
+In the following example, two-way binding for Angular Radio Button is illustrated with DropDownList component. The steps to achieve two-way binding in Angular Radio Button are as follows,
 
-* Initialize RadioButton component and bind the checked value using ngModel as in the below code using "banana in a box" syntax,
+* Initialize Angular Radio Button component and bind the checked value using ngModel as in the below code using "banana in a box" syntax,
 
   ```typescript
 
@@ -26,7 +26,7 @@ In the following example, two-way binding for RadioButton is illustrated with Dr
   <ejs-dropdownlist [dataSource]='paymentMethod' [(value)]="value" ></ejs-dropdownlist>
   ```
 
-* Now, the changes made in RadioButton will reflect in DropDownList (i.e. Selected option in radio button will be reflected in DropDownList  ) and vice versa.
+* Now, the changes made in Angular Radio Button will reflect in DropDownList (i.e. Selected option in radio button will be reflected in DropDownList  ) and vice versa.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

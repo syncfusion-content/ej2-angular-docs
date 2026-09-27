@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Form Support in Angular Dropdown List
 
-The DropDownList component supports both template-driven and reactive forms, which are the two primary form-building technologies in Angular.
+The Angular Dropdown List component supports both template-driven and reactive forms, which are the two primary form-building technologies in Angular.
 
 ## Template-Driven Forms
 
@@ -18,7 +18,7 @@ Template-driven forms use directives in the component template to build and mana
 
 For more details, refer to the official Angular guide on [Template-Driven Forms](https://angular.dev/guide/forms/template-driven-forms).
 
-To integrate the DropDownList into a template-driven form, set the `name` attribute to uniquely identify the control. Then, use the `[(ngModel)]` directive for two-way data binding. This registers the DropDownList with `ngForm`, and its selected value will be synchronized with the model property bound to `ngModel`.
+To integrate the Angular Dropdown List into a template-driven form, set the `name` attribute to uniquely identify the control. Then, use the `[(ngModel)]` directive for two-way data binding. This registers the Angular Dropdown List with `ngForm`, and its selected value will be synchronized with the model property bound to `ngModel`.
 
 The following example demonstrates how to achieve two-way data binding in a template-driven form.
 
@@ -42,9 +42,9 @@ For more details, refer to the official Angular guide on [Reactive Forms](https:
 
 To use reactive forms, import the `ReactiveFormsModule` into the application's root `NgModule`. In the component file, import `FormGroup` and `FormControl` from `@angular/forms`. The `FormGroup` provides a wrapper for a collection of form controls, while `FormControl` tracks the value and validation status of an individual control.
 
-Assign a `formControlName` to the DropDownList element in the template. In the component class, define a `FormGroup` and a `FormControl` for the DropDownList. The `FormControl` initial value will serve as the default value for the DropDownList.
+Assign a `formControlName` to the Angular Dropdown List element in the template. In the component class, define a `FormGroup` and a `FormControl` for the Angular Dropdown List. The `FormControl` initial value will serve as the default value for the Angular Dropdown List.
 
-The following example demonstrates how to use the DropDownList component within a reactive form.
+The following example demonstrates how to use the Angular Dropdown List component within a reactive form.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

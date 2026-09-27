@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Accessibility in Angular MaskedTextBox | Syncfusion
-description: Learn how the Syncfusion Angular MaskedTextBox meets WCAG 2.2, Section 508, and WAI-ARIA textbox standards with full screen reader and keyboard support.
+title: Accessibility in Angular Input Mask | Syncfusion
+description: Learn how the Syncfusion Angular Input Mask meets WCAG 2.2, Section 508, and WAI-ARIA textbox standards with full screen reader and keyboard support.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular MaskedTextBox
+# Accessibility in Angular Input Mask
 
-The MaskedTextBox component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the MaskedTextBox component.
+The Angular Input Mask component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the Angular Input Mask component.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -38,24 +38,24 @@ The MaskedTextBox component adheres to accessibility guidelines and standards in
 
 ## WAI-ARIA attributes
 
-The MaskedTextBox includes complete ARIA accessibility support, enabling access through screen readers and other assistive technology devices. The component is designed following the [WAI-ARIA Accessibility practices](https://www.w3.org/TR/wai-aria/#textbox) guidelines for textbox elements.
+The Angular Input Mask includes complete ARIA accessibility support, enabling access through screen readers and other assistive technology devices. The component is designed following the [WAI-ARIA Accessibility practices](https://www.w3.org/TR/wai-aria/#textbox) guidelines for textbox elements.
 
-The MaskedTextBox uses the `textbox` role and the following ARIA properties based on component state:
+The Angular Input Mask uses the `textbox` role and the following ARIA properties based on component state:
 
 | **Property** | **Functionality** |
 | --- | --- |
 | aria-live | Indicates the priority of updates to a live region. |
-| aria-disabled | Indicates the disabled state of the MaskedTextBox. |
-| aria-valuenow | Specifies the current value of the MaskedTextBox. |
+| aria-disabled | Indicates the disabled state of the Input Mask. |
+| aria-valuenow | Specifies the current value of the Input Mask. |
 | aria-invalid | Indicates that the user input is incorrect or outside acceptable ranges. |
-| aria-placeholder | Provides a short hint for data entry when the MaskedTextBox has no value. |
-| aria-labelledby | References the floating label element associated with the MaskedTextBox. |
+| aria-placeholder | Provides a short hint for data entry when the Input Mask has no value. |
+| aria-labelledby | References the floating label element associated with the Input Mask. |
 
 ## Ensuring accessibility
 
-The MaskedTextBox component's accessibility is validated using industry-standard tools including [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during automated testing.
+The Angular Input Mask component's accessibility is validated using industry-standard tools including [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during automated testing.
 
-The accessibility compliance of the MaskedTextBox is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/masked-textbox.html) in a new window to evaluate the MaskedTextBox's accessibility with accessibility tools.
+The accessibility compliance of the Angular Input Mask is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/masked-textbox.html) in a new window to evaluate the Angular Input Mask's accessibility with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/masked-textbox.html" %}
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Dialog
 
-Use the localization library to localize the default text content of the Dialog. The close button's tooltip text is localized based on the selected culture.
+Use the localization library to localize the default text content of the Angular Dialog. The close button's tooltip text is localized based on the selected culture.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -20,7 +20,7 @@ Use the localization library to localize the default text content of the Dialog.
 
 Load translation objects in an application using the `load` function of the `L10n` class.
 
-The following sample sets the French culture for the Dialog and changes the close button's tooltip text.
+The following sample sets the French culture for the Angular Dialog and changes the close button's tooltip text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

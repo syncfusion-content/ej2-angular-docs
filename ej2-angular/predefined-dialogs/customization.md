@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Predefined Dialogs
 
-Customize predefined dialog buttons using the following properties:
+Customize Angular Predefined dialog buttons using the following properties:
 * `okButton` - Customize the OK button text.
 * `cancelButton` - Customize the Cancel button text.
 
@@ -66,7 +66,7 @@ For prompt dialogs, customize button content as `Connect` and `Close` using the 
 
 ## Show or hide dialog close button
 
-When rendering predefined dialogs through utility methods, close the dialog using the following methods. The default values for `closeOnEscape` and `showCloseIcon` are `false`.
+When rendering Angular Predefined Dialogs through utility methods, close the dialog using the following methods. The default values for `closeOnEscape` and `showCloseIcon` are `false`.
 
 * Press the Esc key if the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#closeonescape) property is enabled.
 * Click the close button if the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#showcloseicon) property is enabled.
@@ -119,7 +119,7 @@ The following code samples demonstrate different ways to close utility dialogs f
 
 ## Customize dialog content
 
-Load custom content in predefined dialogs using the `content` property.
+Load custom content in Angular Predefined Dialogs using the `content` property.
 
 The following code customizes the dialog content to render a custom TextBox component inside the prompt dialog to get the username from the user.
 

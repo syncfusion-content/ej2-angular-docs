@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular ComboBox
 
-The ComboBox has built-in support to filter the data items when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#allowfiltering) enabled. The filter operation starts as soon as you start typing characters in the component.
+The Angular ComboBox has built-in support to filter the data items when [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#allowfiltering) enabled. The filter operation starts as soon as you start typing characters in the component.
 
-By making use of [filtering](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#filtering) event, you can filter required data and return the data to ComboBox via `updateData` method. So that those filtered items get displayed in the popup.
+By making use of [filtering](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#filtering) event, you can filter required data and return the data to Angular ComboBox via `updateData` method. So that those filtered items get displayed in the popup.
 
-To get started quickly with Grouping and Filtering in angular ComboBox component, you can check the video below.
+To get started quickly with Grouping and Filtering in Angular ComboBox component, you can check the video below.
 
 {% youtube "https://www.youtube.com/watch?v=TyePpp8m7pc" %}
 
 
-The following sample illustrates how to query the data source and pass the data to the ComboBox through the `updateData` method in `filtering` event.
+The following sample illustrates how to query the data source and pass the data to the Angular ComboBox through the `updateData` method in `filtering` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -35,7 +35,7 @@ The following sample illustrates how to query the data source and pass the data 
 
 ## Limit the minimum filter character
 
-When filtering the list items, you can set the limit for character count to raise remote request and fetch filtered data on the ComboBox. This can be done by manual validation within the filter event handler.
+When filtering the list items, you can set the limit for character count to raise remote request and fetch filtered data on the Angular ComboBox. This can be done by manual validation within the filter event handler.
 
 In the following example, the remote request does not fetch the search data until the search key contains three characters.
 
@@ -89,9 +89,9 @@ The following example shows how to perform case-sensitive filter.
 
 ## Diacritics Filtering
 
-The ComboBox supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#ignoreaccent) is enabled.
+The Angular ComboBox supports diacritics filtering which will ignore the [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter the results in international characters lists when the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#ignoreaccent) is enabled.
 
-In the following sample,data with diacritics are bound as dataSource for ComboBox.
+In the following sample,data with diacritics are bound as dataSource for Angular ComboBox.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

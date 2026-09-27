@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Target in Angular Sidebar
 
-The Sidebar component allows flexible initialization to target any HTML container element alongside the main content of a web page, enabling customized layouts.
+The Angular Sidebar component allows flexible initialization to target any HTML container element alongside the main content of a web page, enabling customized layouts.
 
-By default, the Sidebar targets the `body` element. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#target) property enables users to specify a custom HTML container, such as a `div` with a CSS selector (e.g., `.main-content`) or an `HTMLElement`, to initialize the Sidebar within a specific section of the page. For overlay-type Sidebars, the [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#zindex) property (default: `1000`) can be adjusted to control the stacking order relative to other elements.
+By default, the Angular Sidebar targets the `body` element. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#target) property enables users to specify a custom HTML container, such as a `div` with a CSS selector (e.g., `.main-content`) or an `HTMLElement`, to initialize the Angular Sidebar within a specific section of the page. For overlay-type Angular Sidebar, the [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#zindex) property (default: `1000`) can be adjusted to control the stacking order relative to other elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Style and Appearance in Angular Uploader | Syncfusion
-description: Style the Angular Uploader wrapper, browse button, drop area, file list, and progress bar with custom CSS for height, width, colors, and fonts.
+title: Style and Appearance in Angular File Upload | Syncfusion
+description: Style the Angular File Upload wrapper, browse button, drop area, file list, and progress bar with custom CSS for height, width, colors, and fonts.
 platform: ej2-angular
 control: Style appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and Appearance in Angular Uploader
+# Style and Appearance in Angular File Upload
 
-The following CSS structure allows you to customize the Uploader component's appearance to match your design preferences.
+The following CSS structure allows you to customize the Angular File Upload component's appearance to match your design preferences.
 
-> Add these CSS rules to your application's global stylesheet (for example, `styles.css`) or to the component's `styleUrls` with the appropriate view-encapsulation setting, so the overrides apply to the Uploader's internal elements. The selectors that include `.e-bigger.e-small` target the bigger/small size variants of the Syncfusion theme.
+> Add these CSS rules to your application's global stylesheet (for example, `styles.css`) or to the component's `styleUrls` with the appropriate view-encapsulation setting, so the overrides apply to the Angular File Upload's internal elements. The selectors that include `.e-bigger.e-small` target the bigger/small size variants of the Syncfusion theme.
 
-## Customize the Uploader wrapper element
+## Customize the Angular File Upload wrapper element
 
 The wrapper is the outer container that holds the browse button, drop area, and file list. Use the following CSS to set its height and width:
 
@@ -76,4 +76,4 @@ The progress bar indicates the upload progress of each file. Use the following C
 
 ## See also
 
-* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/angular/documentation/uploader/template)
+* [Customize the appearance of Angular File Upload using a template](https://ej2.syncfusion.com/angular/documentation/uploader/template)

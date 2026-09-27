@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editing Style in Angular Data Grid
+# Editing Styles in Angular Data Grid
 
-The appearance of editing-related elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Below are examples for customizing various editing-related elements.
+Customize the appearance of editing elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) using CSS. The following examples demonstrate styling edited rows, edit dialogs, input fields, and command buttons.
 
-## Customizing the edited and added row element
+## Customize edited and added row table elements
 
-The `.e-editedrow` and `.e-addedrow` classes are used to style edited and added row table elements.
+Use the `.e-editedrow` and `.e-addedrow` classes to style edited and added row table elements.
 
 ```css
 .e-grid .e-editedrow table, .e-grid .e-addedrow table {
@@ -25,9 +25,9 @@ The `.e-editedrow` and `.e-addedrow` classes are used to style edited and added 
 ![Customizing the added row element](../images/edited-added-row-element.png)
 ![Customizing the edited row element](../images/edited-added-row-element-2.png)
 
-## Customizing the edited row input element
+## Customize the edited row input element
 
-The `.e-gridform` and `.e-input` classes are used to style edited form row input element.
+Use the `.e-gridform` and `.e-input` classes to style the input element in an edited form row.
 
 ```css
 .e-grid .e-gridform .e-rowcell .e-input-group .e-input.e-field {
@@ -38,9 +38,9 @@ The `.e-gridform` and `.e-input` classes are used to style edited form row input
 
 ![Customizing the edited and added row element](../images/edited-row-input-element.png)
 
-## Customizing the edit dialog header element
+## Customize the edit dialog header
 
-The `.e-edit-dialog` and `.e-dlg-header-content` classes are used to style the dialog header element.
+Use the `.e-edit-dialog` and `.e-dlg-header-content` classes to style the edit dialog header.
 
 ```css
 .e-edit-dialog .e-dlg-header-content {
@@ -50,9 +50,9 @@ The `.e-edit-dialog` and `.e-dlg-header-content` classes are used to style the d
 
 ![Customizing the edit dialog header element](../images/edit-dialog-header-element.png)
 
-## Customizing the edited row input element in dialog edit mode
+## Customize input fields in dialog edit mode
 
-The `.e-gridform` and `.e-float-input` classes are used to customize the input elements within the edit dialog.
+Use the `.e-gridform` and `.e-float-input` classes to customize the input elements within the edit dialog.
 
 ```css
 .e-gridform .e-rowcell .e-float-input .e-field {
@@ -62,13 +62,13 @@ The `.e-gridform` and `.e-float-input` classes are used to customize the input e
 
 ![Customizing the edited row input element in dialog](../images/edited-row-input-element-in-dialog.png)
 
-## Customizing the command column buttons
+## Customize the command column buttons
 
-The  `.e-edit`, `.e-delete`, `.e-update`, and `.e-cancel-icon`  classes are used to style the respective command column buttons in the grid.
+Use the  `.e-edit`, `.e-delete`, `.e-update`, and `.e-cancel-icon` classes to style the respective command column buttons in the grid.
 
 ```css
 
-.e-grid .e-delete::before ,.e-grid .e-cancel-icon::before{
+.e-grid .e-delete::before ,.e-grid .e-cancel-icon::before {
     color: #f51717;
 }
 .e-grid .e-edit::before, .e-grid .e-update::before {

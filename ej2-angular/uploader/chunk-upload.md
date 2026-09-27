@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Chunk Upload in Angular Uploader | Syncfusion
-description: Split large files into smaller sequential chunks in the Angular Uploader using chunkSize, with pause, resume, retry, and per-chunk success or failure events.
+title: Chunk Upload in Angular File Upload | Syncfusion
+description: Split large files into smaller sequential chunks in the Angular File Upload using chunkSize, with pause, resume, retry, and per-chunk success or failure events.
 platform: ej2-angular
 control: Chunk upload 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Chunk Upload in Angular Uploader
+# Chunk Upload in Angular File Upload
 
-The Uploader splits large files into smaller chunks and transmits them to the server using AJAX. You can pause, resume, and retry failed chunk uploads.
+The Angular File Upload splits large files into smaller chunks and transmits them to the server using AJAX. You can pause, resume, and retry failed chunk uploads.
 
 > * Chunk upload works only with asynchronous upload mode.
 > * This feature is available from Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release and later.
 
-To enable chunk upload, set the `chunkSize` option (in bytes) within the `asyncSettings` of the Uploader. For example, `[asyncSettings]='{ saveUrl: "...", chunkSize: 500000 }'` splits files into 500,000-byte chunks.
+To enable chunk upload, set the `chunkSize` option (in bytes) within the `asyncSettings` of the Angular File Upload. For example, `[asyncSettings]='{ saveUrl: "...", chunkSize: 500000 }'` splits files into 500,000-byte chunks.
 
 The chunk upload functionality divides selected files into manageable data chunks. These chunks are transmitted to the server sequentially using AJAX requests.
 Chunks are sent in sequential order; the next chunk is transmitted only after the previous chunk succeeds. If any chunk fails, the remaining chunks are not sent to the server.
@@ -39,7 +39,7 @@ The [chunkSuccess](https://ej2.syncfusion.com/angular/documentation/api/uploader
 
 To customize chunk upload behavior, the following options are available:
 
-* **RetryAfterDelay** — When a chunk request fails, the Uploader waits 500 milliseconds (by default) before retrying. Configure this delay using the [asyncSettings.retryAfterDelay](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel#retryafterdelay) property. You can modify the delay duration in milliseconds.
+* **RetryAfterDelay** — When a chunk request fails, the Angular File Upload waits 500 milliseconds (by default) before retrying. Configure this delay using the [asyncSettings.retryAfterDelay](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncSettingsModel#retryafterdelay) property. You can modify the delay duration in milliseconds.
 * **RetryCount** — Specifies the number of retry attempts for failed uploads. By default, the [retry](https://ej2.syncfusion.com/angular/documentation/api/uploader/asyncsettingsmodel#retrycount) action is performed up to 3 times (default `retryCount` is `3`). If the upload continues to fail after all retries, the request is aborted and the [failure](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#failure) event is triggered.
 
 The following sample sets the chunk upload delay to 3000 milliseconds and the retry count to 5. The failure event is triggered as the wrong saveUrl is used.
@@ -58,7 +58,7 @@ The following sample sets the chunk upload delay to 3000 milliseconds and the re
 
 ## Resumable upload
 
-The Uploader allows you to resume upload operations after network interruptions or manual pauses. You can pause and resume uploads using the public methods [pause](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#pause) and [resume](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#resume), or through UI interaction. The pause icon appears after the upload begins.
+The Angular File Upload allows you to resume upload operations after network interruptions or manual pauses. You can pause and resume uploads using the public methods [pause](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#pause) and [resume](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#resume), or through UI interaction. The pause icon appears after the upload begins.
 
 > Pause and resume functionality is available only when chunk upload is enabled. The pause icon is displayed by default in the file list while a chunk upload is in progress. Calling `cancel` on a paused chunk upload aborts the upload; the partially uploaded `.part` file may remain on the server.
 
@@ -76,7 +76,7 @@ The Uploader allows you to resume upload operations after network interruptions 
 
 ## Cancel upload
 
-The Uploader allows you to cancel file uploads by clicking the cancel icon or using the [cancel](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#cancel) method. The [canceling](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#cancelling) event is triggered when an upload is canceled. When canceled, partially uploaded files are removed from the server.
+The Angular File Upload allows you to cancel file uploads by clicking the cancel icon or using the [cancel](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#cancel) method. The [canceling](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#cancelling) event is triggered when an upload is canceled. When canceled, partially uploaded files are removed from the server.
 
 When a chunk upload fails, the pause icon changes to a retry icon. Click the retry icon to resend the failed chunk and resume uploading from the failure point. You can retry canceled uploads using the retry UI or the [retry](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#retry) method. The retry behavior depends on the upload mode; see the note below.
 
@@ -100,7 +100,7 @@ The following example demonstrates chunk upload with cancel support.
 
 ## Server-side configuration
 
-Server-side implementation varies based on your application requirements and business logic. The following code example demonstrates how to handle chunk uploads on the server using the Uploader component.
+Server-side implementation varies based on your application requirements and business logic. The following code example demonstrates how to handle chunk uploads on the server using the Angular File Upload component.
 
 > The `chunk-index` and `total-chunk` values are accessible through form data using `Request.Form`, which retrieves these values from the incoming upload request.
 > * `chunk-index` — Indicates the zero-based index of the current chunk being received.

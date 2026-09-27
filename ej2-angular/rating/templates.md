@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Templates in Angular Rating
 
-The rating component allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
+The Angular Rating component allows you to customize the appearance of the rating items using templates. You can use templates to specify a custom layout for the rating items, which can include any content you want. This allows you to create a more customized and interactive rating experience for the user.
 
-The rating component supports below templates for item customization.
+The Angular Rating component supports below templates for item customization.
 
 * [`emptyTemplate`](https://ej2.syncfusion.com/angular/documentation/api/rating#emptytemplate)
 * [`fullTemplate`](https://ej2.syncfusion.com/angular/documentation/api/rating#fulltemplate)

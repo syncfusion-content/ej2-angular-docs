@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Angular TextBox component provides a powerful, feature-rich alternative to CSS-based TextBox implementations. This migration guide helps you transition from CSS TextBox to the Angular TextBox component, which offers enhanced functionality including floating labels, built-in validation, clear button support, and improved accessibility.
 
-> From v16.3.21 onwards, the TextBox is available as an Angular component to achieve floating label TextBox functionality with minimal code. Refer to the [API reference](https://ej2.syncfusion.com/angular/documentation/api/textbox/) for complete TextBox properties, methods, and events documentation.
+> From v16.3.21 onwards, the Angular TextBox is available as an Angular component to achieve floating label TextBox functionality with minimal code. Refer to the [API reference](https://ej2.syncfusion.com/angular/documentation/api/textbox/) for complete TextBox properties, methods, and events documentation.
 
 ## Benefits of Migration
 

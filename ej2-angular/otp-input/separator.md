@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Separator in Angular OTP Input
 
-The separator specifies the character or symbol displayed between each OTP input field to visually distinguish and organize the inputs. Common separators include hyphens (`-`), spaces, or dashes. Configure the separator character using the [separator](https://ej2.syncfusion.com/angular/documentation/api/otp-input#separator) property.
+The separator specifies the character or symbol displayed between each Angular OTP input field to visually distinguish and organize the inputs. Common separators include hyphens (`-`), spaces, or dashes. Configure the separator character using the [separator](https://ej2.syncfusion.com/angular/documentation/api/otp-input#separator) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

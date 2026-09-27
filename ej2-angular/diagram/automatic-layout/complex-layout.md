@@ -48,7 +48,7 @@ When working with large datasets, binding the layout to a data source provides b
 
 ![Complex hierarchical tree layout](../images/complex-2.png)
 
-> **Note:** In Diagram layouts, all root nodes will always render at the same level. This default behavior cannot be changed to render different trees at distinct levels.
+> **Note:** In Angular Diagram layouts, all root nodes will always render at the same level. This default behavior cannot be changed to render different trees at distinct levels.
 
 ## Line Distribution
 

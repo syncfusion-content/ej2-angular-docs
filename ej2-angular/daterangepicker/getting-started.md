@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular DateRangePicker
 
-The DateRangePicker component enables users to select a start date and end date from an interactive calendar interface, making it easy to define, view, and manage date ranges for filtering, scheduling, and reporting.
+The Angular DateRangePicker component enables users to select a start date and end date from an interactive calendar interface, making it easy to define, view, and manage date ranges for filtering, scheduling, and reporting.
 
-This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateRangePicker component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
+This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Angular DateRangePicker component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
 The [Angular CLI](https://github.com/angular/angular-cli) simplifies creating, managing, and building Angular applications so you can start development quickly.
 
@@ -90,7 +90,7 @@ npm install @syncfusion/ej2-angular-calendars
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> DateRangePicker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateRangePicker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -104,11 +104,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/daterangepicker/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> DateRangePicker component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DateRangePicker component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the DateRangePicker import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular DateRangePicker import, template, and data into your generated file.
 
-> For the full property list, see the [DateRangePicker API reference](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker/index-default).
+> For the full property list, see the [Angular DateRangePicker API reference](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker/index-default).
 
 ```typescript
 
@@ -141,7 +141,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the DateRangePicker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular DateRangePicker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 
@@ -151,9 +151,9 @@ The following example illustrates the output in your browser.
 
 ## Setting the start and end date
 
-The start and end date in a date range can be set using the `startDate` and `endDate` properties. To learn more about range restriction in the DateRangePicker, please refer to the [range selection documentation](./range-selection).
+The start and end date in a date range can be set using the `startDate` and `endDate` properties. To learn more about range restriction in the Angular DateRangePicker, please refer to the [range selection documentation](./range-selection).
 
-The following example demonstrates the DateRangePicker with `startDate` and `endDate` properties:
+The following example demonstrates the Angular DateRangePicker with `startDate` and `endDate` properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -169,8 +169,8 @@ The following example demonstrates the DateRangePicker with `startDate` and `end
 
 ## See Also
 
-* [Render DateRangePicker with pre-defined ranges](./customization#preset-ranges)
-* [Render DateRangePicker with specific culture](./globalization)
-* [How to achieve validation with DateRangePicker](./how-to/custom-validation-using-form-validator)
-* [How to achieve two-way binding with DateRangePicker](./how-to/two-way-binding)
-* [Reactive forms with DateRangePicker](./how-to/reactive-form)
+* [Render Angular DateRangePicker with pre-defined ranges](./customization#preset-ranges)
+* [Render Angular DateRangePicker with specific culture](./globalization)
+* [How to achieve validation with Angular DateRangePicker](./how-to/custom-validation-using-form-validator)
+* [How to achieve two-way binding with Angular DateRangePicker](./how-to/two-way-binding)
+* [Reactive forms with Angular DateRangePicker](./how-to/reactive-form)

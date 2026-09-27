@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to enable rtl in Angular Toggle Switch Button
 
-Switch component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/switch#enablertl) as `true`.
+Angular Toggle Switch Button component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/switch#enablertl) as `true`.
 
-The following example illustrates how to enable right-to-left support in Switch component.
+The following example illustrates how to enable right-to-left support in Angular Toggle Switch Button component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

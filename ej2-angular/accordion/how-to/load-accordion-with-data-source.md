@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Load Accordion DataSource in Angular Accordion | Syncfusion
 description: Bind the Angular Accordion to a data source like OData with DataManager, mapping header and content fields into the items property.
@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to load Accordion with DataSource in Angular Accordion
 
-You can bind any data object to Accordion items, by mapping it to [`header`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#header) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#content)&nbsp; property.
+You can bind any data object to Angular Accordion items, by mapping it to [`header`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#header) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#content)&nbsp; property.
 
-To set up data binding, ensure the `@syncfusion/ej2-angular-navigations` and `@syncfusion/ej2-data` packages are installed. Use the `DataManager` from `@syncfusion/ej2-data` to query data sources, such as an `OData` service, and handle the response to populate the Accordion. The resulting data, formatted as a JSON object with [`header`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#header) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#content) fields, which is set to [`items`](https://ej2.syncfusion.com/angular/documentation/api/accordion#items) property of Accordion.
+To set up data binding, ensure the `@syncfusion/ej2-angular-navigations` and `@syncfusion/ej2-data` packages are installed. Use the `DataManager` from `@syncfusion/ej2-data` to query data sources, such as an `OData` service, and handle the response to populate the Angular Accordion. The resulting data, formatted as a JSON object with [`header`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#header) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionItem#content) fields, which is set to [`items`](https://ej2.syncfusion.com/angular/documentation/api/accordion#items) property of Angular Accordion.
 
-The example below demonstrates an Accordion populated with data from an OData service using `DataManager`.
+The example below demonstrates an Angular Accordion populated with data from an OData service using `DataManager`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

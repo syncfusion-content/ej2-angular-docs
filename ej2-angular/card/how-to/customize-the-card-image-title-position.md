@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize card image title position in Angular Card
 
-The Card component positions image titles in the bottom-left corner with an overlay effect by default. The title placement can be customized to any position over the image by applying custom CSS styles to override the default positioning.
+The Angular Card component positions image titles in the bottom-left corner with an overlay effect by default. The title placement can be customized to any position over the image by applying custom CSS styles to override the default positioning.
 
 
 {% tabs %}

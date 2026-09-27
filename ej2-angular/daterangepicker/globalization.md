@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [`Internationalization`](../common/Globalization/internationalization) and also add culture specific customization and translation to the text [`localization`](../common/globalization/localization).
 
-By default, DateRangePicker date format, week, and month names are specific to the English culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](../common/Globalization/internationalization) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org) JSON data. It provides the `loadCldr` method to load the culture specific CLDR JSON data. To go with the different culture other than `English`, follow the below steps.
+By default, Angular DateRangePicker date format, week, and month names are specific to the English culture. It utilizes the [Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 Internationalization](../common/Globalization/internationalization) package to parse and format the date object based on the culture by using the official [`UNICODE CLDR`](http://cldr.unicode.org) JSON data. It provides the `loadCldr` method to load the culture specific CLDR JSON data. To go with the different culture other than `English`, follow the below steps.
 
 * Install the `CLDR-Data` package by using the below command (it installs all the CLDR JSON data). To
 know about CLDR-Data refer the [`CLDR-Data`](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings) link.
@@ -28,7 +28,7 @@ Once the package installed, you can find the culture specific JSON data under th
 * Now use the [`loadCldr`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization#installing-cldr-data) method to load the culture specific CLDR JSON data
 from the installed location to `app.component.ts` file.
 
-* DateRangePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the DateRangePicker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
+* Angular DateRangePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the Angular DateRangePicker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
 
 ```typescript
 
@@ -46,7 +46,7 @@ loadCldr(
 
 ```
 
-> The `Localization` library allows you to localize default text content of the DateRangePicker. The DateRangePicker component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#locale) value and translation object.
+> The `Localization` library allows you to localize default text content of the Angular DateRangePicker. The Angular DateRangePicker component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#locale) value and translation object.
 
 Locale keywords |Text
 -----|-----
@@ -83,7 +83,7 @@ L10n.load({
 
  ```
 
-* Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#locale) property. In this below code example, initialize the DateRangePicker component in `German` culture with corresponding localized text.
+* Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#locale) property. In this below code example, initialize the Angular DateRangePicker component in `German` culture with corresponding localized text.
 
 ```typescript
 
@@ -146,9 +146,9 @@ The following sample demonstrate the DateRangePicker component in `German` cultu
 
 ## Right-To-Left
 
-The DateRangePicker supports RTL (right-to-left) functionality for languages like Arabic, Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#enablertl) property to set the RTL direction.
+The Angular DateRangePicker supports RTL (right-to-left) functionality for languages like Arabic, Hebrew to displays the text in the right-to-left direction. Use [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#enablertl) property to set the RTL direction.
 
-The below code example demonstrates the DateRangePicker component in `Hebrew` culture, also explains how to set the localized text to the placeholder using `L10n.load` method.
+The below code example demonstrates the Angular DateRangePicker component in `Hebrew` culture, also explains how to set the localized text to the placeholder using `L10n.load` method.
 
 ```typescript
 
@@ -193,7 +193,7 @@ export class AppComponent {
 
 ```
 
-The following example demonstrates the DateRangePicker in `Hebrew` culture with right-to-left direction.
+The following example demonstrates the Angular DateRangePicker in `Hebrew` culture with right-to-left direction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

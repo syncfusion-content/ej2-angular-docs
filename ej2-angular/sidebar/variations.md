@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Variations in Angular Sidebar
 
-The Sidebar component's expand behaviour can be modified based on the purpose of use.
+The Angular Sidebar component's expand behaviour can be modified based on the purpose of use.
 
-## Expanding types of Sidebar
+## Expanding types of Angular Sidebar
 
-The Sidebar can be set to initialize based on four different types that are consistent with the main component as explained below.
+The Angular Sidebar can be set to initialize based on four different types that are consistent with the main component as explained below.
 
  | Item | Description |
 |-----|-----|
@@ -25,7 +25,7 @@ The Sidebar can be set to initialize based on four different types that are cons
 
 > Note: `Auto` is the default expand mode.
 
-In the following sample, the types of Sidebar are demonstrated.
+In the following sample, the types of Angular Sidebar are demonstrated.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

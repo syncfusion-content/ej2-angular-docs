@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Custom Toolbar in Angular Data Grid
 
-Custom toolbar in [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables the creation of a customized toolbar layout and functionality to match specific application requirements. This is achieved by utilizing the [toolbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbartemplate) property, which provides comprehensive customization options for the toolbar layout and styling. Define a custom template for the toolbar and handle the actions of the toolbar items in the [clicked](https://ej2.syncfusion.com/angular/documentation/api/toolbar/index-default#clicked) event.
+A custom toolbar in the [Data Grid]([Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid)) can be created using the [toolbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#toolbartemplate)  property, which provides full control over layout and styling. Define a custom template for the toolbar and handle item actions through the [clicked](https://ej2.syncfusion.com/angular/documentation/api/toolbar/index-default#clicked) event.
 
 The following example demonstrates rendering the custom toolbar `toolbarTemplate` property.
 

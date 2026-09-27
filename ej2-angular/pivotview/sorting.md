@@ -3,7 +3,7 @@ layout: post
 title: Sorting in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table sorts field members in row and column axes and sorts value fields in ascending or descending order.
 platform: ej2-angular
-control: Sorting 
+control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -18,7 +18,7 @@ The Member Sorting functionality enables you to arrange field members in the row
 
 To enable member sorting, set the [`enableSorting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#enablesorting) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to **true**. Once enabled, you can click the sort icon next to each field in the row or column axis within the **Field List** or **Grouping Bar** UI to reorder members in ascending or descending order.
 
-> By default the [`enableSorting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#enablesorting) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) set as **true**. If we set it as **false**, then the field members arrange in pivot table as its data source order. And, the sort icons in grouping bar and field list buttons will be removed.
+> By default, the [`enableSorting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#enablesorting) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) is set to **true**. If you set it to **false**, the field members are arranged in the pivot table in their data-source order, and the sort icons in the grouping bar and field list buttons are removed.
 
 #### Visual Reference
 
@@ -38,7 +38,7 @@ You can also configure member sorting during initial rendering using the [`sortS
 * [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/sort#name): Specifies the name of the field to sort.
 * [`order`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/sort#order): Defines the sort direction, either **Ascending** or **Descending**.
 
-> By default the [`order`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/sort#order) property in the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/sort) set as **Ascending**. Meanwhile, we can arrange the field members as its order in data source by setting it as **None** where the sort icons in grouping bar and field list buttons for the corresponding field will be removed.
+> By default, the [`order`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/sort#order) property in the [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/sort) is set to **Ascending**. You can arrange the field members in their data-source order by setting `order` to **None**; in that case, the sort icons in the grouping bar and field list buttons for the corresponding field are removed.
 
 The following example demonstrates how to configure the Pivot Table to enable member sorting and set the "Year" field to sort in descending order:
 
@@ -148,7 +148,7 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 
 The [`onHeadersSort`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#onheaderssort) event is triggered each time a row or column header cell is rendered after sorting is applied. This event enables users to customize the order of headers(also referred to as members) in the pivot table. It provides the following parameters:
 
-* [`fieldName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/headersSortEventArgs#fieldname): It holds the field name where the sort settings applied.
+* [`fieldName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/headerssorteventargs#fieldname): It holds the field name where the sort settings are applied.
 
 * [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/headersSortEventArgs#sortorder): It holds the current sort order of the field.
 

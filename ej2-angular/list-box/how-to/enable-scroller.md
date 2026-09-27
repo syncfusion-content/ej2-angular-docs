@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to enable scroller in Angular ListBox
 
-The ListBox supports scrolling and it can be achieved by restricting the height of the list box using [`height`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#height) property.
+The Angular ListBox supports scrolling and it can be achieved by restricting the height of the list box using [`height`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#height) property.
 
 In the following sample, `height` of the list box is restricted to `290px`.
 

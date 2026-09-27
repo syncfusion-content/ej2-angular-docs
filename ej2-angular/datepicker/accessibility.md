@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular DatePicker
 
-The DatePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular DatePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the DatePicker component is outlined below.
+The accessibility compliance for the Angular DatePicker component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,21 +42,21 @@ The accessibility compliance for the DatePicker component is outlined below.
 
 The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 
-DatePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied for the input element.
+Angular DatePicker provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied for the input element.
 
 It helps to provide information about the widget for assistive technology to the disabled person in a screen reader.
 
 * **Aria-expanded** : attributes indicates the state of a collapsible element.
 
-* **Aria-disabled** : attribute indicates the disabled state of this DatePicker component.
+* **Aria-disabled** : attribute indicates the disabled state of this Angular DatePicker component.
 
-* **Aria-activedescendant** : attribute helps in managing the current active child of the DatePicker component.
+* **Aria-activedescendant** : attribute helps in managing the current active child of the Angular DatePicker component.
 
 For more information about accessibility of Calendar refer to the Calendar [Accessibility](https://helpej2.syncfusion.com/angular/documentation/calendar/accessibility) section.
 
 ## Keyboard Interaction
 
-You can use the following keys to interact with the DatePicker.
+You can use the following keys to interact with the Angular DatePicker.
 The component implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
 It supports the below list of shortcut keys.
@@ -91,7 +91,7 @@ Use the below list of keys to navigate the Calendar after the popup has opened.
 | <kbd>Control + Home</kbd>  | Focus the starting date in the current year. |
 | <kbd>Control + End</kbd>  | Focus the ending date in the current year. |
 
-To focus the DatePicker component use the `alt+t` keys.
+To focus the Angular DatePicker component use the `alt+t` keys.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -107,9 +107,9 @@ To focus the DatePicker component use the `alt+t` keys.
 
 ## Ensuring accessibility
 
-The DatePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular DatePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the DatePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-picker.html) in a new window to evaluate the accessibility of the DatePicker component with accessibility tools.
+The accessibility compliance of the Angular DatePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-picker.html) in a new window to evaluate the accessibility of the DatePicker component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/date-picker.html" %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Grid Row Spanning | Syncfusion
+title: Angular Data Grid Row Spanning | Syncfusion
 description: Learn how to implement row spanning in Angular Data Grid using Syncfusion. Merge cells across rows, configure rowspan behavior, and create rich data layouts.
 platform: ej2-angular
 control: Row spanning 
@@ -10,16 +10,16 @@ domainurl: ##DomainURL##
 
 # Row Spanning in Angular Data Grid
 
-The Grid provides row spanning capabilities to merge two or more cells in a row into a single cell, reducing information repetition across multiple rows and enhancing readability.
+The Data Grid supports row spanning, which merges adjacent cells vertically across multiple rows into a single cell, reducing data repetition and improving readability.
 
-## Row spanning
+## Enable row spanning
 
 Row spanning merges adjacent cells vertically into a single cell. The feature uses two key concepts:
 
-* [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs#rowspan): Specifies the number of consecutive row cells to be merged vertically.
-* [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs): Triggered for each grid cell, allowing custom cell configuration.
+- [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/querycellinfoeventargs#rowspan): Specifies the number of consecutive row cells to be merged vertically. |
+- `[queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/querycellinfoeventargs): Triggered for each grid cell, allowing custom cell configuration. 
 
-The `queryCellInfo` event enables row spanning by setting the `rowSpan` attribute during cell rendering. The Grid processes this attribute and renders the merged cell across the specified number of rows.
+The `queryCellInfo` event enables row spanning by setting the `rowSpan` attribute during cell rendering. The Data Grid processes this attribute and renders the merged cell across the specified number of rows.
 
 The following example demonstrates row spanning in action:
 
@@ -38,36 +38,17 @@ The following example demonstrates row spanning in action:
   
 {% previewsample "page.domainurl/samples/grid/spanning-cs2" %}
 
-> * Spanning can be disabled for a particular Grid page by using the `requestType` value from the `queryCellInfo` event argument.
+> * Spanning can be disabled for a particular Data Grid page by using the `requestType` value from the `queryCellInfo` event argument.
 > * The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
 
-## Limitations
+## Automatic row cell merging
 
-* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid#updatecell) method does not support modifications to spanned cells.
-* The following features are incompatible:
+When consecutive rows contain the same value in a column, the Data Grid automatically merges those cells into a single spanned cell. This reduces duplicate content and creates a cleaner, more readable layout.  
 
-  * Virtual scrolling
-  * Infinite scrolling
-  * Grouping
-  * Row drag and drop
-  * Autofill
-  * Inline editing
-  * Batch editing
-  * CRUD operations
+Enable this behavior by setting the [enableRowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablerowspan) property in the Data Grid configuration. During rendering, the grid detects identical values in the next row and merges them automatically. 
 
 
-## Row spanning using enableRowSpan property    
-
-For a simplified row spanning approach to vertically merge cells, use the [enableRowSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablerowspan) property.
-
-When `enableRowSpan` is enabled:
-
-* The Grid automatically detects cells with matching data across adjacent rows.
-* Matching cells merge into a single cell visually.
-* No manual span configuration through [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event required.
-* Improves readability by eliminating redundant data display.
-
-This example demonstrates the `enableRowSpan` property for merging cells vertically:
+This example shows automatic row cell merging when consecutive rows have the same value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,15 +64,12 @@ This example demonstrates the `enableRowSpan` property for merging cells vertica
 
 > Row spanning can also be controlled at the column level. Set `enableRowSpan` to `false` in a column definition to disable merging for that column.
 
-## Limitation
+## Row spanning constraints
 
-* Virtualization
-* Infinite Scrolling
-* Lazy Load Grouping
-* Row Drag and Drop
-* Column Virtualization
-* Detail Template
-* Editing
-* Export
-* Foreign Key
-* Hierarchy Grid
+Row spanning merges multiple cells into a single logical cell, altering the Data Grid’s default row and cell layout. Since many advanced features depend on a consistent row and cell structure, they are not compatible when spanning is enabled:
+
+- Virtualization and infinite scrolling: require fixed row heights for efficient rendering, but spanning changes row sizes.  
+- Row drag and drop: depends on clear row boundaries, which spanning modifies.  
+- Column virtualization: needs aligned columns, disrupted when cells span across rows.  
+- Detail templates and hierarchy grids: rely on standard row layouts, which spanning alters.  
+- Editing, exporting, and autofill: assume one-to-one cell mapping, removed by spanning.

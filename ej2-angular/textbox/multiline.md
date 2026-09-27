@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Multiline TextBox in Angular TextBox
 
-The multiline TextBox feature transforms the standard single-line input into a versatile textarea that accepts multiple lines of text. This functionality is essential for capturing longer content such as addresses, descriptions, comments, and feedback where space and formatting flexibility are required.
+The multiline Angular TextBox feature transforms the standard single-line input into a versatile textarea that accepts multiple lines of text. This functionality is essential for capturing longer content such as addresses, descriptions, comments, and feedback where space and formatting flexibility are required.
 
 ## Key Features Overview
 
-The multiline TextBox provides several enhanced capabilities:
+The multiline Angular TextBox provides several enhanced capabilities:
 - **Multi-line text input**: Accept paragraphs and formatted text content
 - **Auto-resizing**: Automatic height adjustment based on content
 - **Manual resizing**: User-controlled textarea dimensions
@@ -23,18 +23,18 @@ The multiline TextBox provides several enhanced capabilities:
 
 ## Prerequisites
 
-Before implementing a multiline TextBox, ensure the TextBox module is imported and configured in your Angular application.
+Before implementing a multiline Angular TextBox, ensure the TextBox module is imported and configured in your Angular application.
 
-## Create a Multiline TextBox
+## Create a Multiline Angular TextBox
 
-Transform the default TextBox into a multiline TextBox using one of the following two approaches:
+Transform the default Angular TextBox into a multiline TextBox using one of the following two approaches:
 
 1. **API Configuration**: Set the [multiline](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#multiline) property to `true`
-2. **HTML Element**: Pass an HTML5 textarea element directly to the TextBox component
+2. **HTML Element**: Pass an HTML5 textarea element directly to the Angular TextBox component
 
 Both methods create a textarea that supports multiple lines of text input with consistent styling and behavior.
 
-> The multiline TextBox allows vertical resizing by default, enabling users to adjust the input area height as needed.
+> The multiline Angular TextBox allows vertical resizing by default, enabling users to adjust the input area height as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -50,7 +50,7 @@ Both methods create a textarea that supports multiple lines of text input with c
 
 ## Auto Resizing
 
-Create a dynamic multiline TextBox that automatically adjusts its height based on content length. This feature eliminates the need for manual resizing and provides a seamless user experience for varying text lengths.
+Create a dynamic multiline Angular TextBox that automatically adjusts its height based on content length. This feature eliminates the need for manual resizing and provides a seamless user experience for varying text lengths.
 
 Implementation requires calculating the textarea height during two key events:
 - **Created event**: Sets initial height based on existing content
@@ -72,7 +72,7 @@ This approach ensures the textarea expands and contracts smoothly, accommodating
 
 ## Disable Resizing
 
-Prevent users from manually resizing the multiline TextBox by applying CSS styles that disable the resize functionality. This approach maintains consistent layout design and prevents potential UI disruption.
+Prevent users from manually resizing the multiline Angular TextBox by applying CSS styles that disable the resize functionality. This approach maintains consistent layout design and prevents potential UI disruption.
 
 Apply the following CSS styles to remove resize handles and lock the textarea dimensions:
 
@@ -106,11 +106,11 @@ textarea.e-input,
 
 ## Limit the Text Length
 
-Control text input length by implementing character limits on the multiline TextBox. This feature helps maintain data consistency and prevents excessive input that might impact performance or storage.
+Control text input length by implementing character limits on the multiline Angular TextBox. This feature helps maintain data consistency and prevents excessive input that might impact performance or storage.
 
 ### Setting Character Limits
 
-Set the maximum character limit using the `maxlength` attribute through the [addAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#addattributes) method. The TextBox automatically prevents additional input once the limit is reached.
+Set the maximum character limit using the `maxlength` attribute through the [addAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#addattributes) method. The Angular TextBox automatically prevents additional input once the limit is reached.
 
 ```typescript
 // Add maxlength attribute to limit input to 100 characters
@@ -119,7 +119,7 @@ this.textboxObject.addAttributes({ maxlength: '100' });
 
 ### Removing Character Limits
 
-Use the [`removeAttributes`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#removeattributes) method to remove one or more attributes from the TextBox element when character restrictions are no longer required. This is useful for dynamically modifying input behavior based on application requirements.
+Use the [`removeAttributes`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#removeattributes) method to remove one or more attributes from the Angular TextBox element when character restrictions are no longer required. This is useful for dynamically modifying input behavior based on application requirements.
 
 ```typescript
 // Remove maxlength restriction to allow unlimited input
@@ -143,7 +143,7 @@ this.textboxObject.removeAttributes('maxlength');
 
 Provide real-time feedback to users with a character counter that displays current text length and remaining available characters. This feature enhances user experience by showing input progress and helping users stay within defined limits.
 
-The character count updates dynamically during text input, deletion, and paste operations. Monitor the [`input`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#input) event of the multiline TextBox and calculate the current character count against any defined maximum limits.
+The character count updates dynamically during text input, deletion, and paste operations. Monitor the [`input`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#input) event of the multiline Angular TextBox and calculate the current character count against any defined maximum limits.
 
 Benefits of character counting include:
 - **User Guidance**: Clear indication of input limits and remaining space
@@ -166,5 +166,5 @@ Benefits of character counting include:
 
 - **Performance**: For auto-resizing TextBoxes, apply throttling to resize calculations to maintain responsiveness during rapid input
 - **Validation**: Combine character limits with proper error messaging for comprehensive input validation
-- **Responsive Design**: Test multiline TextBox behavior across different screen sizes and orientations
+- **Responsive Design**: Test multiline Angular TextBox behavior across different screen sizes and orientations
 - **User Experience**: Provide clear visual feedback for character limits and validation states

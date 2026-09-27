@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # About Syncfusion Angular Menu Bar Component.
 
-The Menu is a graphical user interface that serves as navigation header for your application or site.
+The Angular Menu Bar is a graphical user interface that serves as navigation header for your application or site.
 It has the support to provide multi-level nested menu items.
 
 ## Key features

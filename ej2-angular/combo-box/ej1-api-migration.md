@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Migrate from Essential JS 1 in Angular ComboBox
 
-This article describes the API migration process of ComboBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of Angular ComboBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DataBinding
 

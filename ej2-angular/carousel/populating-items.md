@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Populating Items in Angular Carousel
 
-The Carousel component supports two distinct approaches for rendering slides, each suited to different use cases and data scenarios:
+The Angular Carousel component supports two distinct approaches for rendering slides, each suited to different use cases and data scenarios:
 
 * Populating items using carousel item
 * Populating items using data source
 
 ## Populating items using carousel item
 
-When rendering the Carousel component using items binding, you can assign individual templates for each item or apply a common template across all items. This approach also allows customization of slide transition intervals for each item individually. The following example demonstrates item property binding functionality.
+When rendering the Angular Carousel component using items binding, you can assign individual templates for each item or apply a common template across all items. This approach also allows customization of slide transition intervals for each item individually. The following example demonstrates item property binding functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -33,7 +33,7 @@ When rendering the Carousel component using items binding, you can assign indivi
 
 ## Populating items using data source
 
-When rendering the Carousel component using data binding, you can assign a common template for all items through the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel#itemtemplate) property. Individual item intervals cannot be configured in this approach. The following example demonstrates data binding functionality.
+When rendering the Angular Carousel component using data binding, you can assign a common template for all items through the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel#itemtemplate) property. Individual item intervals cannot be configured in this approach. The following example demonstrates data binding functionality.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -49,7 +49,7 @@ When rendering the Carousel component using data binding, you can assign a commo
 
 ## Selection
 
-Carousel items populate starting from the first index by default. You can customize the initial slide selection through the following approaches:
+Angular Carousel items populate starting from the first index by default. You can customize the initial slide selection through the following approaches:
 
 * Select an item using the property.
 * Select an item using the method.
@@ -88,7 +88,7 @@ The [`prev`](https://ej2.syncfusion.com/angular/documentation/api/carousel#prev)
 
 ## Partial visible slides
 
-The Carousel component can display one complete slide alongside partial views of adjacent (previous and next) slides simultaneously. Enable or disable this feature using the [`partialVisible`](https://ej2.syncfusion.com/angular/documentation/api/carousel#partialVisible) property.
+The Angular Carousel component can display one complete slide alongside partial views of adjacent (previous and next) slides simultaneously. Enable or disable this feature using the [`partialVisible`](https://ej2.syncfusion.com/angular/documentation/api/carousel#partialVisible) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 # How to JSON data binding with DatePicker in Angular DatePicker
 
 In most of the real cases, the model data will be available with JSON format only.
-Here we have showcased DatePicker component by setting JSON string to value property.
+Here we have showcased Angular DatePicker component by setting JSON string to value property.
 In this JSON, we have used ISO formatted date string which is frequently used date format to get proper date and time value without any misreading.
-Also our DatePicker component supports the ISO formatted date value, so parsed JSON value can be directly set to DatePicker model.
+Also our Angular DatePicker component supports the ISO formatted date value, so parsed JSON value can be directly set to Angular DatePicker model.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to create collapsible Tabs in Angular Tab
 
-The Tab component can be configured to provide collapsible functionality by adding and removing custom CSS classes through event handlers. The implementation allows the active tab content to expand and all other panels to collapse, producing an accordion-like behavior within the Tab structure.
+The Angular Tab component can be configured to provide collapsible functionality by adding and removing custom CSS classes through event handlers. The implementation allows the active tab content to expand and all other panels to collapse, producing an accordion-like behavior within the Angular Tab structure.
 
 ## Steps
 
@@ -25,7 +25,7 @@ The Tab component can be configured to provide collapsible functionality by addi
 }
 ```
 
-> **Single-open behavior:** To make only one tab open at a time, toggle the collapse class on every inactive panel inside the `selected` handler.
+> **Single-open behavior:** To make only one Angular Tab open at a time, toggle the collapse class on every inactive panel inside the `selected` handler.
 
 The event handler logic adds the `collapse` class to hide content and removes it to display content, creating smooth expand and collapse transitions.
 
@@ -43,5 +43,5 @@ The event handler logic adds the `collapse` class to hide content and removes it
 
 ## See Also
 
-* [Render other components in Tab using Angular template](./render-other-components-in-tab-using-angular-template)
+* [Render other components in Angular Tab using Angular template](./render-other-components-in-tab-using-angular-template)
 * [Content Render Modes](../content-render-modes)

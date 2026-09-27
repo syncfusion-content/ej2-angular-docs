@@ -4,7 +4,7 @@ import { GridComponent, GridModule, PageService} from '@syncfusion/ej2-angular-g
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-  imports: [ GridModule, ButtonModule  ],
+  imports: [ GridModule, ButtonModule ],
   standalone: true,
   selector: 'app-root',
   template: `<button id="toggleBtn" ejs-button (click)="toggleTouchMode()">{{ buttonText }}</button>

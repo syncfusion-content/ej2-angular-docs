@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Customize badge color
 
-Even though badges come with `8 predefined colors`, you can also customize the color of the badge to suit your needs. Define custom color classes in `styles.css` (for example `.green`, `.blue`, `.purple`, and a `.gradient` background) and apply them to the badge element alongside the `e-badge` classes.
+Even though badges come with `8 predefined colors`, you can also customize the color of the Angular Badge to suit your needs. Define custom color classes in `styles.css` (for example `.green`, `.blue`, `.purple`, and a `.gradient` background) and apply them to the badge element alongside the `e-badge` classes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -28,7 +28,7 @@ Even though badges come with `8 predefined colors`, you can also customize the c
   
 {% previewsample "page.domainurl/samples/badge/color-cs2" %}
 
-## Customize badge size
+## Customize Angular Badge size
 
 Badges are designed to change their size based on the content. To change the size of a badge,
 adjust the `font-size` of the badge. Define CSS classes with different `font-size` values in
@@ -51,7 +51,7 @@ the badge element.
 
 ## Custom position
 
-Even though the badges support the conventional `top` and `bottom` positions, the position of the badges can be repositioned to suit your needs.
+Even though the Angular Badge support the conventional `top` and `bottom` positions, the position of the badges can be repositioned to suit your needs.
 This can be done by adding a custom class to the badge element to override the default position applied from the source. Define custom classes
 in `styles.css` (for example `.leftTop` and `.leftBottom`) that apply a `transform` to move the badge, and add the class to the badge element.
 

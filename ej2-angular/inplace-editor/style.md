@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
-## Customizing the In-place Editor text
+## Customizing the Angular In-place Editor text
 
-Use the following CSS to customize the default In-place Editor's text content properties like font-family, font-size, color and border bottom.
+Use the following CSS to customize the default Angular In-place Editor's text content properties like font-family, font-size, color and border bottom.
 
 ```CSS
 /* To change color, font family and font size */
@@ -26,9 +26,9 @@ Use the following CSS to customize the default In-place Editor's text content pr
 }
 ```
 
-## Customizing the In-place Editor action buttons
+## Customizing the Angular In-place Editor action buttons
 
-Use the following CSS to customize the default In-place Editor's action buttons.
+Use the following CSS to customize the default Angular In-place Editor's action buttons.
 
 ```CSS
 /* To change icon color for save button */

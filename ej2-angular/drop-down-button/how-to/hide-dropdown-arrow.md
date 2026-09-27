@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hide dropdown arrow in Angular Dropdown Menu | Syncfusion
-description: Hide the Angular Dropdown Menu dropdown arrow by adding the e-caret-hide class through cssClass.
+description: Hide the Angular Dropdown Menu arrow icon by applying the e-caret-hide class through the cssClass property for a cleaner appearance.
 platform: ej2-angular
 control: Hide dropdown arrow 
 documentation: ug
@@ -10,8 +10,8 @@ domainurl: ##DomainURL##
 
 # How to hide dropdown arrow in Angular Dropdown Menu
 
-You can hide the dropdown arrow from the DropDownButton by adding class `e-caret-hide`
-to DropDownButton element using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#cssclass) property.
+You can hide the dropdown arrow from the Angular Dropdown Menu by adding class `e-caret-hide`
+to Dropdown Menu element using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/index-default#cssclass) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

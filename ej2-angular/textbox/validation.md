@@ -14,7 +14,7 @@ The Angular TextBox component provides visual feedback for form validation throu
 
 ## Validation States
 
-The TextBox component supports visual validation states that can be applied by adding corresponding CSS classes to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#cssclass) property:
+The Angular TextBox component supports visual validation states that can be applied by adding corresponding CSS classes to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#cssclass) property:
 
 - **Error state** (`.e-error`): Indicates invalid input that requires correction
 - **Warning state** (`.e-warning`): Suggests potential issues or recommendations

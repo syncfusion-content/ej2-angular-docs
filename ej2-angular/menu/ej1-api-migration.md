@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # EJ1 API Migration in Angular Menu Bar
 
-This guide helps you migrate from Essential<sup style="font-size:70%">&reg;</sup> JS 1 (EJ1) to Essential<sup style="font-size:70%">&reg;</sup> JS 2 (EJ2) for the Angular Menu component. It outlines deprecated features, renamed APIs, and new equivalents to ensure a smooth transition.
+This guide helps you migrate from Essential<sup style="font-size:70%">&reg;</sup> JS 1 (EJ1) to Essential<sup style="font-size:70%">&reg;</sup> JS 2 (EJ2) for the Angular Menu Bar component. It outlines deprecated features, renamed APIs, and new equivalents to ensure a smooth transition.
 
 ## Properties
 

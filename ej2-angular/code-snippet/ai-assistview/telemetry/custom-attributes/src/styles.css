@@ -1,0 +1,19 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
+
+#wrapper {
+  height: 600px;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+  #wrapper {
+    width: 100%;
+  }
+}

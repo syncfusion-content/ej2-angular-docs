@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to use DropDownButton in Angular Color Picker
 
-This section explains how to render the ColorPicker component within a DropDownButton. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#target) property of the DropDownButton enables this integration. For details on using the `target` property, refer to the [`Popup templating`](./../../drop-down-button/popup-items#popup-templating) section.
+This section explains how to render the Angular Color Picker component within a DropDownButton. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#target) property of the DropDownButton enables this integration. For details on using the `target` property, refer to the [`Popup templating`](./../../drop-down-button/popup-items#popup-templating) section.
 
-In the following sample, the ColorPicker is rendered in inline mode by setting the [`inline`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#inline) property to `true`. The rendered ColorPicker wrapper is then passed as a `target` to the DropDownButton to achieve this integration.
+In the following sample, the Angular Color Picker is rendered in inline mode by setting the [`inline`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#inline) property to `true`. The rendered ColorPicker wrapper is then passed as a `target` to the DropDownButton to achieve this integration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

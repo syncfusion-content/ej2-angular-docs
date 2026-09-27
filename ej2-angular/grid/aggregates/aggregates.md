@@ -16,12 +16,24 @@ The Aggregates feature in [Angular Data Grid](https://www.syncfusion.com/angular
 - `Group Footer`: aggregate values for each group of records.
 - `Group Caption`: summary information shown alongside the group title.
 
+## Enable aggregates
+
 The aggregate feature is enabled by injecting the `AggregateService` module to the providers array.
 
-Aggregates in the Angular Grid are linked to columns using a few key properties:
+```ts
+import { AggregateService } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+  ...
+  providers: [AggregateService]
+})
+export class AppComponent { }
+```
+
+Aggregates in the Angular Data Grid are linked to columns using a few key properties:
 
 - `field`: Defines the field name of the column on which the aggregation is performed. The value must match the column’s data source field.
-- `type`: Defines the type of aggregate calculation for the column.for example Sum, Average, Min, Max, or Count.
+- `type`: Defines the type of aggregate calculation for the column. For example Sum, Average, Min, Max, or Count.
 - `Templates`: Decide where the result is displayed in the grid in `footerTemplate`, `groupFooterTemplate`, `groupCaptionTemplate`.
 - `format`: Applies formatting to numeric and date columns when displaying aggregate values.
 
@@ -31,8 +43,6 @@ Aggregates in the Angular Grid are linked to columns using a few key properties:
 - `e-aggregate`: Defines one aggregate row (can contain multiple columns).
 - `e-columns`: Wraps one or more aggregate column definitions.
 - `e-column`: Defines a single aggregate for a specific field and type.
-
-Aggregates can also be integrated using the [aggregates](https://ej2.syncfusion.com/angular/documentation/api/grid#aggregates) property of the grid instead of using directives. For example:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -51,11 +61,11 @@ Aggregates can also be integrated using the [aggregates](https://ej2.syncfusion.
     <e-aggregates>
         <e-aggregate>
             <e-columns>
-                <e-column field='Freight' type='sum'>
-                    <ng-template #groupFooterTemplate let-data>Sum: {{data.sum}}</ng-template>
+                <e-column field='Freight' type='Sum'>
+                    <ng-template #groupFooterTemplate let-data>Sum: {{data.Sum}}</ng-template>
                 </e-column>
-                <e-column field='Freight' type='max'>
-                    <ng-template #groupCaptionTemplate let-data>Max: {{data.max}}</ng-template>
+                <e-column field='Freight' type='Max'>
+                    <ng-template #groupCaptionTemplate let-data>Max: {{data.Max}}</ng-template>
                 </e-column>
             </e-columns>
         </e-aggregate>
@@ -71,10 +81,11 @@ Aggregates can also be integrated using the [aggregates](https://ej2.syncfusion.
   
 {% previewsample "page.domainurl/samples/grid/aggregates-cs1" %}
 
+> * Aggregates can also be configured using the [aggregates](https://ej2.syncfusion.com/angular/documentation/api/grid#aggregates) property instead of the `e-aggregates` directive. For a complete aggregate configuration example, refer to the [Multiple aggregates for a column](#multiple-aggregates-for-a-column) section.
 
-**Displaying aggregate values**
+## Displaying aggregate values
 
-By default, aggregate values are shown in the footer, group footer, and group caption cells of the grid. Control where the aggregate value is displayed using these properties:
+By default, aggregate values are shown in the footer, group footer, and group caption cells. The display of aggregate values can be configured to appear in any one of these cells, or enabled in all, by using the following properties:
 
 * [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#footertemplate): Displays the aggregate value in the footer cell.
 * [groupFooterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#groupfootertemplate): Displays the aggregate value in the group footer cell.
@@ -97,11 +108,11 @@ By default, aggregate values are shown in the footer, group footer, and group ca
     <e-aggregates>
         <e-aggregate>
             <e-columns>
-                <e-column field='Freight' type='sum'>
-                    <ng-template #groupFooterTemplate let-data>Sum: {{data.sum}}</ng-template>
+                <e-column field='Freight' type='Sum'>
+                    <ng-template #groupFooterTemplate let-data>Sum: {{data.Sum}}</ng-template>
                 </e-column>
                 <e-column field='Freight' type='max'>
-                    <ng-template #groupCaptionTemplate let-data>Max: {{data.max}}</ng-template>
+                    <ng-template #groupCaptionTemplate let-data>Max: {{data.Max}}</ng-template>
                 </e-column>
             </e-columns>
         </e-aggregate>
@@ -122,7 +133,7 @@ By default, aggregate values are shown in the footer, group footer, and group ca
 
 ## Built-in aggregate types
 
-The Angular Data Grid component provides built-in aggregate types, specified in the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property of an aggregate column. Multiple aggregate types can be used by providing an array of aggregate type strings.
+The Angular Data Grid provides built-in aggregate types that can be specified using the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective#type) property of an aggregate column. To apply multiple aggregate types to a column, specify the type property as an array of aggregate type strings.
 
 - `Sum`: Calculates the total of all values in the column.
 - `Average`: Calculates the mean of all values.
@@ -154,17 +165,17 @@ The following example demonstrates using built-in aggregate types in the grid:
     <e-aggregates>
         <e-aggregate>
             <e-columns>
-                <e-column field="Freight" type="max">
-                    <ng-template #footerTemplate let-data>Max: {{ data.max }}</ng-template>
+                <e-column field="Freight" type="Max">
+                    <ng-template #footerTemplate let-data>Max: {{ data.Max }}</ng-template>
                 </e-column>
-                <e-column field="ShippedDate" type="max">
-                    <ng-template #footerTemplate let-data>Max: {{ data.max | date: 'dd/MM/yyyy' }}</ng-template>
+                <e-column field="ShippedDate" type="Max">
+                    <ng-template #footerTemplate let-data>Max: {{ data.Max | date: 'dd/MM/yyyy' }}</ng-template>
                 </e-column>
-                <e-column field="OrderDate" type="min">
-                    <ng-template #footerTemplate let-data>Min: {{ data.min | date: 'dd/MM/yyyy' }}</ng-template>
+                <e-column field="OrderDate" type="Min">
+                    <ng-template #footerTemplate let-data>Min: {{ data.Min | date: 'dd/MM/yyyy' }}</ng-template>
                 </e-column>
                 <e-column field="isVerified" type="truecount">
-                    <ng-template #footerTemplate let-data>TrueCount: {{ data.truecount }}</ng-template>
+                    <ng-template #footerTemplate let-data>TrueCount: {{ data.TrueCount }}</ng-template>
                 </e-column>
             </e-columns>
         </e-aggregate>
@@ -181,9 +192,9 @@ The following example demonstrates using built-in aggregate types in the grid:
 
 ## Multiple aggregates for a column
 
-A grid column typically supports a single aggregate function such as Sum, Average, or Count, which produces one summary value for the entire column. In cases where different summary values are required at the same time, multiple aggregates can be configured. This feature makes it possible to calculate and display several values such as Sum, Average, Minimum, Maximum, or custom calculations concurrently for a specific column.
+A Data Grid column can display multiple aggregate values simultaneously, providing a more detailed summary of the underlying data. By configuring multiple aggregate functions for the same column, different metrics such as sum, average, count, minimum, maximum, and custom aggregate values can be calculated and displayed together. This helps present key insights in a single view, making it easier to analyze and compare data without additional calculations or columns.
 
-By specifying the aggregate [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregatecolumndirective#type) as an array, which allows multiple values to be shown together in a single summary row. For example:
+By specifying the aggregate [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregatecolumndirective#type) as an array, which allows multiple values to be shown together in a single summary row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

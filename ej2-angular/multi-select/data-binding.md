@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in Angular MultiSelect Dropdown | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Data binding in Syncfusion  Angular MultiSelect Dropdown component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular MultiSelect Dropdown
 
-The MultiSelect component loads data from either local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select#datasource) property. It supports data types of `array` or `DataManager`.
+The  Angular MultiSelect Dropdown component loads data from either local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select#datasource) property. It supports data types of `array` or `DataManager`.
 
-The MultiSelect component also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
+The  Angular MultiSelect Dropdown component also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -29,7 +29,7 @@ Local data can be represented in three ways as described below.
 
 ### 1. Array of string
 
-The MultiSelect component supports loading arrays of primitive data such as strings and numbers. Here, the value and text fields are the same.
+The  Angular MultiSelect Dropdown component supports loading arrays of primitive data such as strings and numbers. Here, the value and text fields are the same.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -45,7 +45,7 @@ The MultiSelect component supports loading arrays of primitive data such as stri
 
 ### 2. Array of object
 
-The MultiSelect component can generate its list items through an array of complex data. To do so,
+The  Angular MultiSelect Dropdown component can generate its list items through an array of complex data. To do so,
 map the appropriate columns to the [fields](https://ej2.syncfusion.com/angular/documentation/api/multi-select#fields) property.
 
 In the following example, the `id` column and `sports` column from complex data are mapped to the `value` and `text` fields, respectively.
@@ -64,7 +64,7 @@ In the following example, the `id` column and `sports` column from complex data 
 
 ### 3. Array of complex object
 
-The MultiSelect component can generate its list items through an array of complex data with nested properties. To do so,
+The  Angular MultiSelect Dropdown component can generate its list items through an array of complex data with nested properties. To do so,
 map the appropriate nested columns to the [fields](https://ej2.syncfusion.com/angular/documentation/api/multi-select#fields) property using dot notation.
 
 In the following example, the `Code.Id` column and `Country.Name` column from complex data are mapped to the [`value`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#value) field and [`text`](https://ej2.syncfusion.com/angular/documentation/api/multi-select/fieldSettingsModel#text) field, respectively.
@@ -83,7 +83,7 @@ In the following example, the `Code.Id` column and `Country.Name` column from co
 
 ## Binding remote data
 
-The MultiSelect component supports retrieval of data from remote data services with the help of
+The  Angular MultiSelect Dropdown component supports retrieval of data from remote data services with the help of
 `DataManager`. The [Query](https://ej2.syncfusion.com/angular/documentation/api/multi-select#query) property is used to fetch data from the database and bind it to the MultiSelect component.
 
 The following sample displays the first 6 contacts from "Customers" table of the `Northwind` Data Service.
@@ -104,7 +104,7 @@ The following sample displays the first 6 contacts from "Customers" table of the
 
 An `Observable` is used extensively by Angular since it provides significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
-MultiSelect component data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe to the observable object and resolve with the latest value emitted by it.
+ Angular MultiSelect Dropdown component data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe to the observable object and resolve with the latest value emitted by it.
 
 [app.component.ts]
 ```ts
@@ -115,7 +115,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-root',
-    // specifies the template string for the MultiSelect component with dataSource
+    // specifies the template string for the  Angular MultiSelect Dropdown component with dataSource
     template: `<ejs-multiselect  id='customers2' formControlName="skillname" name="skillname" #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-multiselect >`,
 })
 export class AppComponent {
@@ -132,7 +132,7 @@ export class AppComponent {
   // maps the remote data column to fields property
   public remoteFields: Object = { value: 'CustomerID' };
 
-  // set the placeholder to MultiSelect input element
+  // set the placeholder to  Angular MultiSelect Dropdown input element
   public remoteWaterMark: string = 'Select a customer';
 }
 ```

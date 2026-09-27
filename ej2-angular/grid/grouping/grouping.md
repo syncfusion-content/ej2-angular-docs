@@ -1,26 +1,26 @@
 ---
 layout: post
 title: Angular Grid Grouping | Syncfusion
-description: Learn how to use grouping in Angular Data Grid with configurable settings, aggregates, drop area control, reorderable columns, and expand or collapse options.
+description: Learn how to use grouping in Angular Data Grid with group settings, drop area control, reorderable columns, expand and collapse options, and grouping events.
 platform: ej2-angular
-control: Grouping 
+control: Grouping
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Grouping in Angular Data Grid
 
-The grouping feature in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) enables data to be organized into a hierarchical structure, allowing records to be expanded and collapsed for improved readability and analysis.
+The grouping feature in the [Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) organizes data into a hierarchical structure, allowing grouped records to be expanded and collapsed for improved readability and analysis.
 
-The group feature is enabled by injecting the `GroupService` to the providers array.
+To use the group feature, inject the `GroupService` into the providers array.
 
 To enable grouping, set the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid#allowgrouping) property to `true`. When grouping is enabled, column headers can be dragged into the group drop area to organize data.
 
-The [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings) property provides options to customize grouping behavior, such as:
+The [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings) property provides configuration options for customizing grouping behavior, including:
 
 - Showing or hiding the group drop area.
-- Controlling Grouped Column Display.
-- Defining custom caption templates for grouped rows.
+- Controlling the display of grouped columns.
+- Defining custom [caption templates](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#captiontemplate) for grouped rows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,14 +34,14 @@ The [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/gr
   
 {% previewsample "page.domainurl/samples/grid/grouping1-cs2" %}
 
-> - Columns can be grouped and ungrouped dynamically using the [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/group#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/group#ungroupcolumn) methods.
+> - Columns can be grouped and ungrouped dynamically using the [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#ungroupcolumn) methods.
 > - To disable grouping for a specific column, set the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowgrouping) property to `false` in column configuration.
 
-## Initial group
+## Initial grouping
 
-Initial grouping in the grid is configured by assigning an array of column field names to the [groupSettings.columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/groupSettings#columns) property. This approach is effective for organizing large datasets based on predefined criteria.
+Initial grouping in the grid is configured by assigning an array of column field names to the [groupSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#columns) property. This approach is effective for organizing large datasets based on predefined criteria.
 
-The example below demonstrates grouping by "Customer ID" and "Ship City", rendering the grid with data structured in a two-level hierarchy first by "Customer ID", followed by "Ship City" within each group.
+The following example groups data by "Customer ID" and "Ship City", creating a two-level hierarchy with records grouped first by "Customer ID" and then by "Ship City" within each group.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -57,9 +57,27 @@ The example below demonstrates grouping by "Customer ID" and "Ship City", render
 
 > To group multiple columns, specify an array of column names in the `groupSettings.columns` property.
 
-## Prevent grouping for particular column
+## Single and multiple column grouping
 
-Columns that contain unique identifiers or sensitive information may not be suitable for grouping. In such cases, grouping can be disabled by setting the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowgrouping) property to `false` in the column configuration, preventing the column header from being placed in the group drop area.
+The Data Grid supports grouping by one or more columns to organize data into hierarchical sections. In single-column grouping, records are grouped based on the values of a single column. In multiple-column grouping, records are grouped by multiple columns in sequence, creating nested groups that provide a more structured view of the data.
+
+The following example demonstrates switching between single-column and multiple-column grouping using a button click.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grouping-single-multiple/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grouping-single-multiple/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/grouping-single-multiple" %}
+
+## Prevent grouping for a particular column
+
+Some columns, such as those containing unique identifiers, may not require grouping. In such cases, grouping can be disabled by setting the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowgrouping) property to `false` in the column configuration, preventing the column header from being placed in the group drop area.
 
 The following example prevents grouping on the "Customer ID" column. While other columns can be grouped, "Customer ID" cannot be dragged to the group drop area.
 
@@ -75,13 +93,13 @@ The following example prevents grouping on the "Customer ID" column. While other
   
 {% previewsample "page.domainurl/samples/grid/grouping1-cs20" %}
 
-## Hide drop area
+## Hide the group drop area
 
-By default, the Grid shows a drop area container where column headers can be dragged to configure grouping or ungrouping. In scenarios where grouping through the drag-and-drop interface is not required, this drop area can be hidden.
+By default, the Data Grid shows a group drop area container where column headers can be dragged to configure grouping or ungrouping. In scenarios where grouping through the drag-and-drop interface is not required, this group drop area can be hidden.
 
-To disable the group drop area container, set the [groupSettings.showDropArea](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showdroparea) property to `false`. This hides the drop area from the UI, while still allowing grouping to be managed programmatically using the Grid [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#ungroupcolumn) methods if needed.
+To disable the group drop area container, set the [groupSettings.showDropArea](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showdroparea) property to `false`. This hides the group drop area from the UI, while still allowing grouping to be managed programmatically using the Data Grid [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#ungroupcolumn) methods if needed.
 
-In this example, the Syncfusion Angular<sup style="font-size:70%">&reg;</sup> [Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to dynamically show or hide the group drop area. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event updates the Grid's `groupSettings.showDropArea` property to either display or hide the drop area.
+In this example, the [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to dynamically show or hide the group drop area. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event updates the Data Grid's `groupSettings.showDropArea` property to either display or hide the group drop area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,13 +113,13 @@ In this example, the Syncfusion Angular<sup style="font-size:70%">&reg;</sup> [S
   
 {% previewsample "page.domainurl/samples/grid/grouping1-cs4" %}
 
-> The drop area is displayed only if at least one column is available for grouping.
+> The group drop area is displayed only if at least one column is available for grouping.
 
 ## Show the grouped column
 
-By default, when a column is grouped in the Grid, that column is hidden from the display. This keeps the layout clean and makes grouped rows easier to read. To keep grouped columns visible, set the [groupSettings.showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showgroupedcolumn) property to `true`.
+By default, when a column is grouped in the Data Grid, that column is hidden from the display. This keeps the layout clean and makes grouped rows easier to read. To keep grouped columns visible, set the [groupSettings.showGroupedColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showgroupedcolumn) property to `true`.
 
-In the example below, a Syncfusion Angular<sup style="font-size:70%">&reg;</sup> [Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to control this setting. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event updates the Grid's `groupSettings.showGroupedColumn` property, showing or hiding the grouped columns as needed.
+In the example below, a [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to control this setting. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event updates the Data Grid's `groupSettings.showGroupedColumn` property, showing or hiding the grouped columns as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -115,11 +133,11 @@ In the example below, a Syncfusion Angular<sup style="font-size:70%">&reg;</sup>
   
 {% previewsample "page.domainurl/samples/grid/grouping1-cs16" %}
 
-## Reordering on grouped columns 
+## Reordering grouped columns
 
 By default, grouped columns follow the order in which they are added to the group drop area. Because grouping order determines the hierarchy of data organization, modifying this order can present different structural views. For example, grouping by "Region" before "Sales Person" produces a different arrangement than the reverse.
 
-To allow reordering, set [groupSettings.allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#allowReordering) to `true`. This enables drag-and-drop rearrangement of grouped column badges, and the grid dynamically updates the data hierarchy to reflect the new order.
+To allow reordering, set [groupSettings.allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#allowreordering) to `true`. This enables drag-and-drop rearrangement of grouped column badges, and the grid dynamically updates the data hierarchy to reflect the new order.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,9 +151,11 @@ To allow reordering, set [groupSettings.allowReordering](https://ej2.syncfusion.
   
 {% previewsample "page.domainurl/samples/grid/grouping-anim-cs1" %}
 
-## Sort grouped columns in descending order during initial grouping
+## Sort groups in descending order
 
-Grouped columns are sorted in ascending order by default (A–Z, 0–9, oldest to newest). To display grouped values in descending order such as showing the most recent dates or highest values first (Z–A, 9–0, newest to oldest), configure the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) property with the appropriate [field](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#field) and set its [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#direction-string) to `Descending`.
+Grouped columns are sorted in ascending order by default (A-Z, 0-9, oldest to newest). To display grouped values in descending order (Z-A, 9-0, newest to oldest), configure the [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) property by specifying the corresponding [field](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#field) and setting its [direction](https://ej2.syncfusion.com/angular/documentation/api/grid/sortDescriptorModel#direction) to `Descending`.
+
+Since the grouped column order is driven by the sort pipeline, ensure the [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#allowsorting) property is enabled and the `SortService` is injected for this configuration to take effect.
 
 The following example demonstrates sorting the "Customer ID" column in descending order during the grid's initial load.
 
@@ -151,17 +171,9 @@ The following example demonstrates sorting the "Customer ID" column in descendin
   
 {% previewsample "page.domainurl/samples/grid/sort-group" %}
 
-## Group with paging
-
-The Grid component supports column grouping in combination with paging. When grouping is enabled, aggregated values and item counts are calculated based on the current page by default. As a result, group footers and caption summaries reflect only the visible page data. To include aggregate values and total item counts across all pages, set the [groupSettings.disablePageWiseAggregates](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablePageWiseAggregates) property to `false`.
-
-> When using remote data binding, enabling this option triggers two separate requests during grouping: 
-> * One to retrieve grouped data.
-> * Another to fetch aggregate values and total item counts.
-
 ## Group by format
 
-By default, grouping is based on the raw data values of each row. For numeric or datetime columns, grouping can also be performed using a specified format for example, grouping dates by month or numbers by range. To enable this behavior, set the [enableGroupByFormat](https://ej2.syncfusion.com/angular/documentation/api/grid/column#enablegroupbyformat) property on the corresponding column. This allows the grid to group values based on their specific format.
+By default, grouping is based on the raw data values of each row. For numeric or datetime columns, grouping can also be performed using formatted values. For example, dates can be grouped by month and numbers can be grouped by a specified range. To enable this behavior, set the [enableGroupByFormat](https://ej2.syncfusion.com/angular/documentation/api/grid/column#enablegroupbyformat) property on the corresponding column.
 
 The following example demonstrates grouping the "Order Date" and "Freight" columns using formatted values.
 
@@ -179,17 +191,27 @@ The following example demonstrates grouping the "Order Date" and "Freight" colum
 
 > Numeric columns can be grouped based on formats such as currency or percentage, while datetime columns can be grouped based on specific date or time formats.
 
-## Show grouped rows based on page size
+## Group or ungroup column externally
 
-In the Angular Data Grid, controlling the number of grouped rows per page is useful when working with grouped data and a fixed page size.
+The Data Grid supports both interactive and programmatic approaches to column grouping. Columns can be grouped manually via drag-and-drop or programmatically using the [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#ungroupcolumn) methods.
 
-By default, the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize) setting applies to individual grid rows, not grouped rows. To show grouped column rows based on the `pageSize`, a custom implementation can be used.
+The following example demonstrates how to group and ungroup columns programmatically. A [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component is used for column selection, and the selected column is grouped or ungrouped using the Group Column and Ungroup Column buttons, which invoke the appropriate Data Grid API method.
 
-This can be achieved by customizing the `generateQuery` method of the "Data prototype", allowing the query logic to be modified for grouped row pagination.
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/grouping1-cs17/src/app.component.ts %}
+{% endhighlight %}
 
-## Collapse all grouped rows at initial rendering
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/grouping1-cs17/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+	  
+{% previewsample "page.domainurl/samples/grid/grouping1-cs17" %}
 
-The Angular Data Grid provides the ability to expand or collapse grouped rows, enabling better control over data visibility. This is especially useful for large datasets where an initial summarized view is preferred.
+## Collapse all groups on initial load
+
+The Data Grid provides the ability to expand or collapse grouped rows, enabling better control over data visibility. This is especially useful for large datasets where an initial summarized view is preferred.
 
 To collapse all grouped rows on initial render, use the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#databound) event in combination with the [collapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid/group#collapseall) method. This is shown in the example below.
 
@@ -217,33 +239,15 @@ To collapse all grouped rows on initial render, use the [dataBound](https://ej2.
 ```
 > The collapse all approach is recommended for a limited number of records since collapsing every grouped record requires time. For large datasets, [lazy-load grouping](https://ej2.syncfusion.com/angular/documentation/grid/grouping/lazy-load-grouping) is recommended to optimize performance. This approach is also applicable to the [groupExpandAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupexpandall) method.
 
-## Group or ungroup column externally
-
-The Angular Data Grid supports both interactive and programmatic approaches to column grouping. Columns can be grouped manually via drag-and-drop or programmatically using the [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#ungroupcolumn) methods.
-
-The following example demonstrates implementing programmatic grouping and ungrouping using the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component for column selection. When the corresponding button is activated, the selected column is grouped or ungrouped using the appropriate API method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs17/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs17/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-	  
-{% previewsample "page.domainurl/samples/grid/grouping1-cs17" %}
-
 ## Expand or collapse externally
 
-The Angular Data Grid supports external control of grouped row visibility through programmatic expand and collapse. This functionality can be integrated using the grid's methods to manage grouped data display dynamically.
+The Data Grid supports external control of grouped row visibility through programmatic expand and collapse. This functionality can be integrated using the grid's methods to manage grouped data display dynamically.
 
-### Expand or collapse all grouped rows
+### Expand or collapse all groups
 
-The Angular Data Grid enables programmatic expand and collapse of all grouped rows using the [groupExpandAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupexpandall) and [groupCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcollapseall) methods.
+The Data Grid enables programmatic expand and collapse of all grouped rows using the [groupExpandAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupexpandall) and [groupCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/grid#groupcollapseall) methods.
 
-In the example below, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to control the visibility of grouped rows. When toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event triggers the appropriate method to expand or collapse all groups accordingly.
+In the example below, the [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is used to control the visibility of grouped rows. When toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event triggers the appropriate method to expand or collapse all groups accordingly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -257,9 +261,9 @@ In the example below, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/
 	  
 {% previewsample "page.domainurl/samples/grid/grouping1-cs18" %}
 
-### Expand or collapse selected grouped row
+### Expand or collapse a specific group
 
-The Angular Data Grid allows programmatic expand or collapse of specific grouped rows through the [expandCollapseRows](https://ej2.syncfusion.com/angular/documentation/api/grid/group#expandcollapserows) method, which toggles the state of a targeted group caption row based on its current visibility.
+The Data Grid allows programmatic expand or collapse of specific grouped rows through the [expandCollapseRows](https://ej2.syncfusion.com/angular/documentation/api/grid/group#expandcollapserows) method, which toggles the state of a targeted group caption row based on its current visibility.
 
 To implement this functionality, follow these steps:
 
@@ -314,7 +318,7 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public groupSettings?: GroupSettingsModel;
     public groupedRowIndex?: number;
-    public message?:string
+    public message?: string;
     @ViewChild('grid')
     public grid?: GridComponent;
 
@@ -350,9 +354,27 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/grid/grouping1-cs7" %}
 
-## Clear grouping 
+## Use grouping with paging
 
-The Angular Data Grid provides a [clearGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid#cleargrouping) method to remove all grouped columns programmatically. This is useful for resetting the grid to an ungrouped state.
+The Data Grid component supports column grouping in combination with paging. When grouping is enabled, aggregated values and item counts are calculated based on the current page by default. As a result, group footers and caption summaries reflect only the visible page data. To include aggregate values and total item counts across all pages, set the [groupSettings.disablePageWiseAggregates](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablepagewiseaggregates) property to `true`.
+
+This option is useful when grouped aggregates must represent the complete dataset rather than only the records visible on the current page.
+
+> When using remote data binding, enabling this option triggers two separate requests during grouping: 
+> * One to retrieve grouped data.
+> * Another to fetch aggregate values and total item counts.
+
+## Show grouped rows based on page size
+
+In the Data Grid, controlling the number of grouped rows per page is useful when working with grouped data and a fixed page size.
+
+By default, the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/grid/pageSettings#pagesize) setting applies to individual grid rows, not grouped rows. To show grouped column rows based on the `pageSize`, a custom implementation can be used.
+
+This can be achieved by customizing the `generateQuery` method of the grid's data module, which can be accessed using the [getDataModule](https://ej2.syncfusion.com/angular/documentation/api/grid#getdatamodule) method. This allows the query logic to be modified for grouped row pagination.
+
+## Clear grouping
+
+The Data Grid provides a [clearGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid#cleargrouping) method to remove all grouped columns programmatically. This is useful for resetting the grid to an ungrouped state.
 
 The following example demonstrates executing `clearGrouping` through an external button click.
 
@@ -370,7 +392,7 @@ The following example demonstrates executing `clearGrouping` through an external
 
 ## Grouping events
 
-The Angular Data Grid provides two key events for handling grouping operations. These events enable the integration of custom logic before and after a grouping action:
+The Data Grid provides two key events for handling grouping operations. These events enable the integration of custom logic before and after a grouping action:
 
 - [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin): Triggered before a grouping action starts. It provides details such as the group field name and `requestType`, allowing conditional logic or cancellation.
 - [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete): Triggered after a grouping action completes. It exposes the updated grid state for post-processing tasks like UI updates or data handling.
@@ -380,9 +402,9 @@ The following example demonstrates canceling grouping for the "Order ID" column 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { Component, OnInit, } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { GridModule, GroupService,GroupEventArgs, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridModule, GroupService, GroupEventArgs, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [GridModule],
@@ -404,15 +426,15 @@ export class AppComponent implements OnInit {
 
     public data?: object[];
     public groupSettings?: GroupSettingsModel;
-    public message?: string
+    public message?: string;
     ngOnInit(): void {
         this.data = data;
     }
 
     actionBegin(args: GroupEventArgs) {
         if (args.requestType === 'grouping' && args.columnName === 'OrderID') {
-            args.cancel = true
-            this.message = args.requestType + ' action is cancelled for ' + args.columnName + ' column';
+            args.cancel = true;
+            this.message = args.requestType + ' action is canceled for ' + args.columnName + ' column';
         }
     }
 
@@ -421,7 +443,7 @@ export class AppComponent implements OnInit {
             this.message = args.requestType + ' action completed for ' + args.columnName + ' column';
         }
         else {
-            this.message = ''
+            this.message = '';
         }
     }
 
@@ -439,13 +461,14 @@ export class AppComponent implements OnInit {
 
 > The [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs#requesttype) property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be "grouping".
 
-## Limitations
+## Grouping constraints
 
-Grouping is not compatible with autofill feature.
+[AutoFill](https://ej2.syncfusion.com/angular/documentation/api/grid#enableautofill) applies fill operations to records within the same group.
 
 ## See also
 
 * [Exporting grouped records](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)
 * [Lazy load grouping](./lazy-load-grouping)
-* [Group and caption aggregates](./caption-template)
+* [Group and caption aggregates](../aggregates/group-and-caption-aggregate)
+* [Caption template](./caption-template)
 * [Aggregates overview](../aggregates/aggregates)

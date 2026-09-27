@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Render hyperlinked items in Angular ListView component
 
-The ListView component supports template functionality which allows adding hyperlink navigation to list items. This can be achieved by using an `anchor` tag within the ListView [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property.
+The Angular ListView component supports template functionality which allows adding hyperlink navigation to list items. This can be achieved by using an `anchor` tag within the Angular ListView [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view#template) property.
 
-Here's how to implement hyperlink navigation in ListView items:
+Here's how to implement hyperlink navigation in Angular ListView items:
 
 ```typescript
 <ng-template #template let-data="">
-   <a target='_blank' href="{{data.url}}">{{data.name}}</a>
+   <a target='_blank' href="{{data.url}}" aria-label="template">{{data.name}}</a>
 </ng-template>
 ```
 
@@ -24,7 +24,7 @@ The template requires a data source with the following structure:
 - `url`: The hyperlink URL for navigation
 - `name`: The display text for the link
 
-The below sample demonstrates ListView with search engine URLs using hyperlink navigation:
+The below sample demonstrates Angular ListView with search engine URLs using hyperlink navigation:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

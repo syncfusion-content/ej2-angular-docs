@@ -1,12 +1,13 @@
-import { DiagramModule, BpmnDiagramsService, ShapeStyleModel, randomId,DiagramComponent, NodeModel, BpmnShapeModel  } from '@syncfusion/ej2-angular-diagrams'
+import { Diagram, DiagramModule, BpmnDiagrams, ShapeStyleModel, randomId,DiagramComponent, NodeModel, BpmnShapeModel  } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+
+Diagram.Inject(BpmnDiagrams);
 
 @Component({
 imports: [
          DiagramModule
     ],
 
-providers: [BpmnDiagramsService],
 standalone: true,
     selector: "app-container",
     template: `<button (click)="addTextAnnotation()">Add text Annotation</button><button (click)="addTextAnnotationNode()">Add text Annotation Node</button><button (click)="addTextAnnotationAlone()">Add text Annotation Alone</button><ejs-diagram #diagram id="diagram" width="100%" height="700px" [getNodeDefaults] ='getNodeDefaults' >

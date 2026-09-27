@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Stepper
 
-The Stepper component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Stepper component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Stepper component is outlined below.
+The accessibility compliance for the Angular Stepper component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the Stepper component is outlined below.
 
 ## WAI-ARIA attributes
 
-The following ARIA attributes are used in the Stepper component:
+The following ARIA attributes are used in the Angular Stepper component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -50,7 +50,7 @@ The following ARIA attributes are used in the Stepper component:
 
 ## Keyboard interaction
 
-The following keyboard shortcuts are supported by the Stepper component.
+The following keyboard shortcuts are supported by the Angular Stepper component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -64,9 +64,9 @@ The following keyboard shortcuts are supported by the Stepper component.
 
 ## Ensuring accessibility
 
-The Stepper component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Stepper component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Stepper component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/stepper.html) in a new window to evaluate the accessibility of the Stepper component with accessibility tools.
+The accessibility compliance of the Angular Stepper component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/stepper.html) in a new window to evaluate the accessibility of the Angular Stepper component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/stepper.html" %}
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Ej1 Api Migration in Angular Button
 
-This article describes the API migration process of Button component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of Angular Button component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Properties
 

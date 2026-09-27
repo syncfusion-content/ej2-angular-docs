@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Dropdown Tree
 
-The Dropdown Tree component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
+The Angular Dropdown Tree component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Dropdown Tree component is outlined below.
+The accessibility compliance for the Angular Dropdown Tree component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the Dropdown Tree component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Dropdown Tree component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox) patterns to meet accessibility requirements. The following ARIA attributes are used in the Dropdown Tree component:
+The Angular Dropdown Tree component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/listbox) patterns to meet accessibility requirements. The following ARIA attributes are used in the Angular Dropdown Tree component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -65,7 +65,7 @@ The Dropdown Tree component follows the [WAI-ARIA](https://www.w3.org/WAI/ARIA/a
 
 ## Keyboard interaction
 
-The Dropdown Tree component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox#keyboardinteraction) guidelines, making it accessible for users who rely on assistive technologies and keyboard navigation. The following keyboard shortcuts are supported by the Dropdown Tree component.
+The Angular Dropdown Tree component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/listbox#keyboardinteraction) guidelines, making it accessible for users who rely on assistive technologies and keyboard navigation. The following keyboard shortcuts are supported by the Angular Dropdown Tree component.
 
 | Interaction Keys | Description |
 |------|---------|
@@ -83,9 +83,9 @@ The Dropdown Tree component follows the [keyboard interaction](https://www.w3.or
 
 ## Ensuring accessibility
 
-The accessibility compliance of the Dropdown Tree component is verified using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The accessibility compliance of the Angular Dropdown Tree component is verified using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Dropdown Tree component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/drop-down-tree.html) in a new window to evaluate the accessibility of the Dropdown Tree component with accessibility tools.
+The accessibility compliance of the Angular Dropdown Tree component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/drop-down-tree.html) in a new window to evaluate the accessibility of the Angular Dropdown Tree component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/drop-down-tree.html" %}
 

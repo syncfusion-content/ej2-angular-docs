@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Localization in Angular Uploader | Syncfusion
-description: Localize Angular Uploader labels, status messages, and tooltips by creating a locale object and loading it through the L10n utility for any culture.
+title: Localization in Angular File Upload | Syncfusion
+description: Localize Angular File Uploadr labels, status messages, and tooltips by creating a locale object and loading it through the L10n utility for any culture.
 platform: ej2-angular
 control: Localization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Uploader
+# Localization in Angular File Upload
 
-The Localization library enables you to localize static text content in the Uploader, including action button labels, file status messages, icon titles, tooltips, and drag-area text. To localize the content, create a locale object for your culture and load it using the `L10n.load` method (import `L10n` from `@syncfusion/ej2-base`). Set the Uploader's `locale` property to the culture code you loaded so the component renders the localized strings.
+The Localization library enables you to localize static text content in the Angular File Upload, including action button labels, file status messages, icon titles, tooltips, and drag-area text. To localize the content, create a locale object for your culture and load it using the `L10n.load` method (import `L10n` from `@syncfusion/ej2-base`). Set the Angular File Upload's `locale` property to the culture code you loaded so the component renders the localized strings.
 
 The following table lists the localization keys and their descriptions:
 
@@ -37,7 +37,7 @@ The following table lists the localization keys and their descriptions:
 | totalFiles | Total files | Tooltip text for total files count |
 | size | Size | Tooltip text for file size |
 
-The example below loads French (`fr-CH`) values for several of these keys and sets the Uploader's `locale` to `fr-CH`.
+The example below loads French (`fr-CH`) values for several of these keys and sets the Angular File Upload's `locale` to `fr-CH`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -51,4 +51,4 @@ The example below loads French (`fr-CH`) values for several of these keys and se
   
 {% previewsample "page.domainurl/samples/uploader/uploader-cs11" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to localize Uploader labels, status messages, and tooltips.
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to localize Angular File Upload labels, status messages, and tooltips.

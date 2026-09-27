@@ -66,4 +66,4 @@ The whole popup can be customized as per the requirement. In the following examp
 ## See Also
 
 * [Popup items grouping](./how-to/group-items-in-popup)
-* [SplitButton popup with separator](./icons-and-separator#separator)
+* [Angular Split Button popup with separator](./icons-and-separator#separator)

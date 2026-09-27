@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Timeline
 
-The Timeline component displays a sequence of events, tasks, or milestones in chronological order, helping users visualize workflows, progress, and historical information.
+The Angular Timeline component displays a sequence of events, tasks, or milestones in chronological order, helping users visualize workflows, progress, and historical information.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Timeline component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-layouts
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Timeline component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Timeline component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -106,11 +106,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/timeline/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Timeline component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Timeline component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Timeline import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular Timeline import, template, and data into your generated file.
 
-> For the full property list, see the [Timeline API reference](https://ej2.syncfusion.com/angular/documentation/api/timeline/index-default).
+> For the full property list, see the [Angular Timeline API reference](https://ej2.syncfusion.com/angular/documentation/api/timeline/index-default).
 
 ```typescript
 import { Component } from '@angular/core';

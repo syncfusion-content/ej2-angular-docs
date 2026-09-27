@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to add font awesome icons in Angular Toolbar
 
-You can customize the Toolbar component items by using third-party icons other than the icons available in the Syncfusion<sup style="font-size:70%">&reg;</sup> library. In the following example, Font Awesome icons are used as Toolbar items.
+You can customize the Angular Toolbar component items by using third-party icons other than the icons available in the Syncfusion<sup style="font-size:70%">&reg;</sup> library. In the following example, Font Awesome icons are used as Toolbar items.
 
 * Add the Font Awesome CSS to your project. You can use the CDN link, or install via npm and reference the stylesheet through `angular.json`:
 
@@ -18,9 +18,9 @@ You can customize the Toolbar component items by using third-party icons other t
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   ```
 
-* Add the icons to the toolbar component using the [`prefixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective/#prefixicon) or [`suffixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective/#suffixicon) property. These properties allow you to specify the CSS class name of the third-party icon that will be displayed before or after the text in each toolbar item.
+* Add the icons to the Angular Toolbar component using the [`prefixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective/#prefixicon) or [`suffixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective/#suffixicon) property. These properties allow you to specify the CSS class name of the third-party icon that will be displayed before or after the text in each toolbar item.
 
-The following sample explains how to use Font Awesome icons in the toolbar component.
+The following sample explains how to use Font Awesome icons in the Angular Toolbar component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -38,7 +38,7 @@ The following sample explains how to use Font Awesome icons in the toolbar compo
 
 ## Icon customization
 
-The class `e-icons` standardizes the appearance of the icons to fit into toolbar items. You can override the icon appearance with the CSS classes below. Aim for higher specificity in your component styles rather than `!important` overrides, since `!important` may interfere with theme variables.
+The class `e-icons` standardizes the appearance of the icons to fit into Angular Toolbar items. You can override the icon appearance with the CSS classes below. Aim for higher specificity in your component styles rather than `!important` overrides, since `!important` may interfere with theme variables.
 
 Use the following CSS to set the color of icons.
 

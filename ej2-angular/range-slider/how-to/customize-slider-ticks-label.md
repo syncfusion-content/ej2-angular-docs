@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to customize slider ticks label in Angular Range Slider | Syncfusion
-description: Style individual Angular Range Slider ticks with custom colors, icons, and per-position styling using the e-tick class and nth-child selectors.
+title: How to customize slider ticks label in Angular Slider | Syncfusion
+description: Style individual Angular Slider ticks with custom colors, icons, and per-position styling using the e-tick class and nth-child selectors.
 platform: ej2-angular
-control: Range Slider
+control: Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize slider ticks label in Angular Range Slider
+# How to customize slider ticks label in Angular Slider
 
-Customize slider ticks to enhance visual reference points for slider values. Ticks display at intervals defined by [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#smallstep) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#largestep). Override the default `e-tick` CSS class to apply custom colors, icons, and styles. The following code snippet demonstrates how to customize tick appearance.
+Customize Angular Slider ticks to enhance visual reference points for slider values. Ticks display at intervals defined by [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#smallstep) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#largestep). Override the default `e-tick` CSS class to apply custom colors, icons, and styles. The following code snippet demonstrates how to customize tick appearance.
 
 ```typescript
 

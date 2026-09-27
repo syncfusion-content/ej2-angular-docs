@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization in Angular Diagram | Syncfusion®
-description: Save the Syncfusion® Angular Diagram to a JSON string and load it back later to persist user-created diagrams, implement undo/redo, or transfer diagrams between sessions.
+description: Save the Angular Diagram to a JSON string and load it back later to persist user-created diagrams, implement undo/redo, or transfer diagrams between sessions.
 platform: ej2-angular
 control: Serialization 
 documentation: ug
@@ -20,7 +20,7 @@ Use serialization when you need to:
 - Create diagram templates
 - Transfer diagrams between different sessions or users
 
-To save and load the diagram in Angular, refer to the below video link.
+To save and load the diagram in Angular, refer to the following video link.
 
 {% youtube "youtube:https://www.youtube.com/watch?v=Cz_9NHZAFaY" %}
 
@@ -30,20 +30,25 @@ To save and load the diagram in Angular, refer to the below video link.
 
 The [`saveDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#savediagram) method serializes the entire diagram configuration into a JSON string. This method captures all diagram elements, their properties, and the current state.
 
-```typescript
-//returns serialized string of the Diagram
-saveData = this.diagram.saveDiagram();
-
+```
+export class AppComponent {
+  @ViewChild('diagram', { static: true }) diagram: DiagramComponent;
+  public saveData: string;
+  saveDiagram(): void { 
+    // Returns the serialized string of the Diagram 
+    this.saveData = this.diagram.saveDiagram();
+  }
+}
 ```
 
 The serialized JSON string can be stored in various storage systems. The following example demonstrates local storage implementation:
 
-```typescript
-//Saves the string in to local storage
-localStorage.setItem('fileName', saveData);
+```
+// Saves the string into local storage
+localStorage.setItem('fileName', this.saveData);
 
 // Retrieve the saved string from local storage
-saveData = localStorage.getItem('fileName');
+this.saveData = localStorage.getItem('fileName') ?? '';
 
 ```
 
@@ -57,7 +62,7 @@ The diagram can also be saved as raster or vector image files. For more informat
 
 The [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaddiagram) method recreates the diagram from serialized JSON data. This method accepts the previously saved JSON string as a parameter.
 
-```typescript
+```
 export class AppComponent {
   @ViewChild('diagram', { static: true }) diagram: DiagramComponent;
   
@@ -85,13 +90,14 @@ N> Before loading a new diagram, the existing diagram content is automatically c
 
 The [`loaded`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaded) event triggers when all diagram elements finish loading through the [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaddiagram) method. Use this event to perform post-load customizations or validations.
 
-```typescript
+```
+import { ILoadedEventArgs } from '@syncfusion/ej2-angular-diagrams';
 
-<ejs-diagram #diagram id="diagram" width="100%" height="700px" (loaded)="loaded()" >
+<ejs-diagram #diagram id="diagram" width="100%" height="700px" (loaded)="loaded($event)" >
 </ejs-diagram>
 export class AppComponent {
-  public loaded(args:ILoadedEventArgs): void {
-      //You can use this event to customize diagram elements during the loading process
+  public loaded(args: ILoadedEventArgs): void {
+      // You can use this event to customize diagram elements during the loading process
   }
 }
 
@@ -99,13 +105,10 @@ export class AppComponent {
 
 The loaded event provides the following arguments:
 
-**name**
-- Type: String
-- Description: Returns the event name
-
-**diagram**
-- Type: Diagram
-- Description: Returns the complete diagram model with all properties
+| Argument | Type | Description |
+| --- | --- | --- |
+| name | String | Returns the event name |
+| diagram | Diagram | Returns the complete diagram model with all properties |
 
 ## Optimizing Serialized Data
 
@@ -116,18 +119,14 @@ The [`preventDefaults`](https://ej2.syncfusion.com/angular/documentation/api/dia
 When enabled, only explicitly set properties are included in the JSON output, significantly reducing file size and improving load times.
 
 
-```typescript
+```
+import { SerializationSettingsModel } from '@syncfusion/ej2-angular-diagrams';
 
-<ejs-diagram #diagram id="diagram" width="100%" height="700px" (serializationSettings)="serializationSettings" >
+<ejs-diagram #diagram id="diagram" width="100%" height="700px" [serializationSettings]="serializationSettings" >
 </ejs-diagram>
 export class AppComponent {
-  public serializationSettings: SerializationSettingsModel = {};
-  
-  ngOnInit() {
-    this.serializationSettings = { preventDefaults: true };
-  }
+  public serializationSettings: SerializationSettingsModel = { preventDefaults: true };
 }
-
 ```
 
 ## Detect Unsaved Changes
@@ -137,27 +136,45 @@ The [`isModified`](https://ej2.syncfusion.com/angular/documentation/api/diagram#
 This property can be used to show save indicators or to display a warning before unsaved changes are discarded.
 
 
-```typescript
+```
 // Check whether the diagram has unsaved changes.
-if (diagram.isModified) {
+if (this.diagram.isModified) {
     const confirmed = confirm('You have unsaved changes. Discard them?');
     if (!confirmed) return;
 }
-navigateTo('/home');
-
+// Replace the route path below with your application's target route.
+this.router.navigate(['/home']);
 ```
 
+N> This example is illustrative. Replace `['/home']` with the route path your application navigates to before discarding changes.
 
 ## File-Based Save and Load Operations
 
 ### Using Uploader Component
 
-JSON files can be uploaded and processed using the uploader component. Configure the uploader with appropriate server endpoints to handle file operations, then parse the uploaded JSON data to load diagrams.
+JSON files can be uploaded and processed using the uploader component. Configure the uploader with the appropriate server endpoints to handle file operations. Then parse the uploaded JSON data to load the diagrams.
 
 The uploader requires:
 - `saveUrl` property for receiving and storing uploaded files
 - `removeUrl` property for handling file deletion operations
 - File parsing logic to extract JSON data from uploaded files
+
+A typical parsing step is wired to the Uploader's `success` event. The raw `File` is read with a `FileReader` and the resulting JSON string is passed to `loadDiagram`:
+
+```
+onUploadSuccess(args: { file: FileInfo }) {
+  // rawFile is the underlying File object provided by the Uploader component
+  const file: File = args.file.rawFile as File;
+  const reader = new FileReader();
+  reader.readAsText(file);
+  reader.onloadend = this.loadDiagram.bind(this);
+}
+
+loadDiagram(event: ProgressEvent<FileReader>) {
+  const jsonString = event.target?.result as string;
+  this.diagram.loadDiagram(jsonString);
+}
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,21 +201,24 @@ This functionality supports:
 
 ### Saving Diagrams as Mermaid Syntax
 
-The [`saveDiagramAsMermaid`](https://ej2.syncfusion.com/angular/documentation/api/diagram#savediagramasmermaid) method converts compatible diagrams into Mermaid syntax format. This method works specifically with Flowchart and Mind map layouts.
+The [`saveDiagramAsMermaid`](https://ej2.syncfusion.com/angular/documentation/api/diagram#savediagramasmermaid) method converts compatible diagrams into Mermaid syntax format. This method works specifically with Flowchart and Mind map layouts. Call `saveDiagramAsMermaid()` after building a Flowchart or Mind map diagram to obtain the Mermaid string.
 
- ```typescript
-//returns the serialized Mermaid string of the Diagram
+```
+// Returns the serialized Mermaid string of the Diagram
 data = this.diagram.saveDiagramAsMermaid();
-
 ```
 
 ### Loading Diagrams from Mermaid Syntax
 
 The [`loadDiagramFromMermaid`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaddiagramfrommermaid) method creates diagrams from Mermaid syntax data, automatically generating the appropriate layout and styling.
 
+```
+this.diagram.loadDiagramFromMermaid(mermaidString);
+```
+
 #### Loading Flowchart Layout
 
-The following example demonstrates loading a flowchart diagram from Mermaid syntax:
+The following example demonstrates loading a flowchart diagram from Mermaid syntax, where nodes and connectors are arranged automatically based on the Mermaid flow statements:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -214,7 +234,7 @@ The following example demonstrates loading a flowchart diagram from Mermaid synt
 
 #### Loading Mind Map Layout
 
-The following example demonstrates loading a mind map diagram from Mermaid syntax:
+The following example demonstrates loading a mind map diagram from Mermaid syntax, generating a radially arranged hierarchy of nodes from the Mermaid mind-map statements:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -230,7 +250,7 @@ The following example demonstrates loading a mind map diagram from Mermaid synta
 
 #### Loading UML Sequence Diagram
 
-The following example demonstrates loading a UML Sequence diagram from Mermaid syntax:
+The following example demonstrates loading a UML Sequence diagram from Mermaid syntax, rendering participants and messages as sequence lanes and arrows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Angular Diagram | Syncfusion®
-description: Adapt the Syncfusion® Angular Diagram context menu and symbol palette search to specific cultures by setting the locale property and loading translated text via L10n.load.
+description: Adapt the Angular Diagram context menu and symbol palette search to specific cultures by setting the locale property and loading translated text via L10n.load.
 platform: ej2-angular
 control: Localization 
 documentation: ug
@@ -14,11 +14,13 @@ The EJ2 Angular Diagram component supports localization functionality, allowing 
 
 ## Localize Diagram context menu
 
+Before localizing the diagram, import `setCulture` and `L10n` from `@syncfusion/ej2-base`; ensure the package is installed.
+
 To localize the diagram context menu, define the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/diagram#locale) property of the diagram with the preferred culture. The example below demonstrates localization using 'de-DE', the locale code for German as used in Germany.
 
-```typescript
+```
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { DiagramModule, DiagramContextMenuService } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramComponent, DiagramContextMenuService } from '@syncfusion/ej2-angular-diagrams';
 import { Diagram, DiagramContextMenu, ContextMenuSettingsModel } from '@syncfusion/ej2-diagrams';
 import { setCulture, L10n } from '@syncfusion/ej2-base';
 
@@ -30,6 +32,7 @@ import { setCulture, L10n } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
     @ViewChild("diagram")
+    public diagram: DiagramComponent;
     public locale: string = 'de-DE';
     public contextMenuSettings: ContextMenuSettingsModel = {
         show: true
@@ -41,11 +44,11 @@ export class AppComponent implements OnInit {
 }
 ```
 
-Next, call the `setCulture('de')` function to set the default culture for all EJ2 components. This method accepts one parameter, cultureName, which specifies the culture name to be set as the default.
+The L10n key name must match the component's internal key (`diagram` for the diagram, `SymbolPalette` for the symbol palette). `setCulture` and `L10n.load` are typically called in `main.ts` or the root component's `ngOnInit` before the diagram renders.
 
-Define the localized text for the context menu items to replace the default English text:
+Then register the default culture and load the translated strings. The `setCulture('de')` function accepts one parameter, `cultureName`, which specifies the culture name to be set as the default.
 
-```typescript
+```
 
 // Set the default culture to German
 setCulture('de')
@@ -54,20 +57,20 @@ setCulture('de')
 L10n.load({
   'de-DE': {
     diagram: {
-      Cut: 'Corte',
-      Copy: 'Copia',
-      Paste: 'Pasta',
-      Undo: 'Deshacer',
-      Redo: 'Rehacer',
-      SelectAll: 'Seleccionar todo',
-      Grouping: 'Agrupación',
-      Group: 'Grupo',
-      Ungroup: 'Desagrupar',
-      Order: 'Fin',
-      BringToFront: 'Traer a delante',
-      MoveForward: 'Movimiento adelante',
-      SendToBack: 'Enviar a espalda',
-      SendBackward: 'Enviar hacia atrás',
+      Cut: 'Ausschneiden',
+      Copy: 'Kopieren',
+      Paste: 'Einfügen',
+      Undo: 'Rückgängig',
+      Redo: 'Wiederherstellen',
+      SelectAll: 'Alle auswählen',
+      Grouping: 'Gruppierung',
+      Group: 'Gruppe',
+      Ungroup: 'Gruppierung aufheben',
+      Order: 'Reihenfolge',
+      BringToFront: 'In den Vordergrund',
+      MoveForward: 'Nach vorne',
+      SendToBack: 'In den Hintergrund',
+      SendBackward: 'Nach hinten',
     },
   },
 });
@@ -89,13 +92,13 @@ The following code example demonstrates the complete locale settings for the con
 
 ## Localize Symbol palette
 
-Enable the search functionality in the symbol palette using the [`enableSearch`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel#enablesearch) property. The search box supports localization to match the application's target language.
+Enable the search functionality in the symbol palette using the [`enableSearch`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel#enablesearch) property.
 
 To localize the symbol palette search box, define the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel#locale) property of the symbol palette with the preferred culture. The example below uses 'de-DE' for German localization.
 
-The following code demonstrates symbol palette localization:
+The following code demonstrates symbol palette localization; `setCulture` and `L10n.load` need only be called once globally, as they apply to all EJ2 components in the app:
 
-```typescript
+```
 // Set the default culture to German
 setCulture('de');
 
@@ -108,7 +111,7 @@ L10n.load({
     }
 });
 
-// Initialize symbol palette
+// excerpt from AppComponent
 ngOnInit(): void {
     this.expandMode = 'Multiple';
     this.palettes = [{
@@ -123,6 +126,8 @@ ngOnInit(): void {
         iconCss: 'e-ddb-icons e-basic',
     }];
 }
+
+// Declarations for expandMode, palettes, and getBasicShapes() are omitted for brevity.
 ```
 
 The following code example shows the complete locale settings for the symbol palette:
@@ -139,4 +144,4 @@ The following code example shows the complete locale settings for the symbol pal
   
 {% previewsample "page.domainurl/samples/diagram/locale/localsymbolpalette-cs1" %}
 
-For comprehensive information about localization implementation across all Syncfusion components, refer to the [`localization`](https://ej2.syncfusion.com/angular/documentation/common/localization) documentation.
+For comprehensive information about localization implementation across all Syncfusion components, refer to the [`localization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) documentation.

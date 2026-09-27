@@ -19,14 +19,14 @@ The following table provides compatibility information for Syncfusion<sup style=
 | [Angular v22](https://blog.angular.dev/announcing-angular-v22-c52bb83a4664) | 34.1.29 and above |
 | [Angular v21](https://www.syncfusion.com/blogs/post/angular-21-updates-syncfusion-support) | 31.1.17 and above |
 | [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 30.1.37 and above |
-| [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
-| [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
-| [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 and above |
-| [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/) | 21.1.39 and above |
-| [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 and above |
-| [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/) | 20.2.36 and above |
-| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 and above |
-| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/) | 19.3.43 and above |
+| [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 to 34.2.9 |
+| [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 to 34.2.9 |
+| [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 to 34.2.9 |
+| [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/) | 21.1.39 to 34.2.9 |
+| [Angular v15](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8/) | 20.4.38 to 34.2.9 |
+| [Angular v14](https://blog.angular.io/angular-v14-is-now-available-391a6db736af/) | 20.2.36 to 34.2.9 |
+| [Angular v13](https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296/) | 19.4.38 to 34.2.9|
+| [Angular v12](https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49/) | 19.3.43 to 34.2.9 |
 
 ## Ivy and Non-Ivy Package Compatibility
 
@@ -35,6 +35,8 @@ The following table provides compatibility information for Syncfusion<sup style=
 1. **Ivy-compatible packages**: These are the default packages and do not require any special suffix.
 
 2. **Non-Ivy (View Engine) packages**: For applications still using the View Engine, append the `-ngcc` suffix to the package version in the `package.json` file.
+
+> Starting from Syncfusion<sup style="font-size:70%">&reg;</sup> Essential JS 2 Angular version **35.1.37**, the `ngcc` package support has been dropped. Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components supports the latest official Angular version and the versions currently under long-term support (LTS) — that is, Angular versions **20, 21, and 22**.
 
 ### Usage of ngcc Packages
 

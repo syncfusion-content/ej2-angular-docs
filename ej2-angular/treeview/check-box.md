@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # CheckBox in Angular Tree View
 
-The TreeView component allows you to check multiple nodes without affecting the UI's appearance by enabling the [showCheckBox](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property. When this property is enabled, a checkbox appears before each TreeView node text, providing users with an intuitive selection mechanism.
+The Angular Tree View component allows you to check multiple nodes without affecting the UI's appearance by enabling the [showCheckBox](https://ej2.syncfusion.com/angular/documentation/api/treeview/#showcheckbox) property. When this property is enabled, a checkbox appears before each Angular Tree View node text, providing users with an intuitive selection mechanism.
 
 The checkbox functionality follows a hierarchical relationship pattern:
 
@@ -26,7 +26,7 @@ The [`checkedNodes`](https://ej2.syncfusion.com/angular/documentation/api/treevi
 
 For event-driven checkbox control, use the [`nodeChecking`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecking) event to prevent node check actions for specific nodes. This event triggers before a TreeView node is checked or unchecked, allowing for custom validation. Set `args.cancel = true` to prevent the change. The [`nodeChecked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodechecked) event fires after a TreeView node has been successfully checked or unchecked; inspect `args.action` to know whether the change was a `check` or an `un-check`, and `args.isInteracted` to tell whether the change came from the user (versus `autoCheck` propagation).
 
-The TreeView methods `checkAll(ids?)`, `uncheckAll(ids?)`, and the `checkedNodes` property provide full programmatic control. Use `@ViewChild('tree') tree: TreeViewComponent;` to obtain a reference for these operations.
+The Angular Tree View methods `checkAll(ids?)`, `uncheckAll(ids?)`, and the `checkedNodes` property provide full programmatic control. Use `@ViewChild('tree') tree: TreeViewComponent;` to obtain a reference for these operations.
 
 In the following example, the `showCheckBox` property is enabled.
 

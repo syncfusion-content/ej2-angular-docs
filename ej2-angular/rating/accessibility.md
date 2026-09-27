@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Rating
 
-The Rating component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
+The Angular Rating component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
 
 The accessibility compliance for the Rating component is outlined below.
 
@@ -54,7 +54,7 @@ The Rating component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/pat
 
 ## Keyboard interaction
 
-The Rating component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/slider/#keyboardinteraction) guidelines to support users of assistive technologies and keyboard-only navigation. The following keyboard shortcuts enable efficient rating control.
+The Angular Rating component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/slider/#keyboardinteraction) guidelines to support users of assistive technologies and keyboard-only navigation. The following keyboard shortcuts enable efficient rating control.
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
@@ -66,7 +66,7 @@ The Rating component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/
 
 ## Ensuring accessibility
 
-The Rating component's accessibility standards compliance is verified using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing. The following sample demonstrates the accessibility features of the Rating component. Open the [sample](https://ej2.syncfusion.com/accessibility/rating.html) in a new window to evaluate component accessibility with accessibility validation tools.
+The Angular Rating component's accessibility standards compliance is verified using the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools during automated testing. The following sample demonstrates the accessibility features of the Angular Rating component. Open the [sample](https://ej2.syncfusion.com/accessibility/rating.html) in a new window to evaluate component accessibility with accessibility validation tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/rating.html" %}
 

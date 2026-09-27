@@ -14,11 +14,11 @@ The [`strictMode`](https://ej2.syncfusion.com/angular/documentation/api/datepick
 If the date is invalid, then the component will stay with the previous value.
 Else, if the date is out of range, then the component will set the date to the min/max date.
 
-The following example demonstrates the DatePicker in `strictMode` with min/max range of 5th to 25th in a month of May.
+The following example demonstrates the Angular DatePicker in `strictMode` with min/max range of 5th to 25th in a month of May.
 Here, it allows to enter only the valid date within the specified range. If you are trying to enter the out-of-range value as like 28th of May, then the value will set to the max date of 25th May. Since the value 28th is greater than to max value of 25th.
 Or else if you are trying to enter the invalid date, then the value will stay with the previous value.
 
-The following example demonstrates the DatePicker with strictMode `true`.
+The following example demonstrates the Angular DatePicker with strictMode `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -32,7 +32,7 @@ The following example demonstrates the DatePicker with strictMode `true`.
   
 {% previewsample "page.domainurl/samples/datepicker/getting-started-cs12" %}
 
-By default, the DatePicker act in strictMode `false` state, that allows to enter the invalid or out-of-range date in textbox.
+By default, the Angular DatePicker act in strictMode `false` state, that allows to enter the invalid or out-of-range date in textbox.
 
 If the date is out-of-range or invalid, then the model value will be set to `out of range` date value or `null` respectively with highlighted  `error` class to indicates the date is out of range or invalid.
 

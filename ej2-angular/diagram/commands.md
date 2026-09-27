@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD010 -->
 
-The commands in diagram component are used to perform various interactions within the diagram . Several commands are available in the diagram, as follows:
+The commands in Angular Diagram component are used to perform various interactions within the diagram . Several commands are available in the diagram, as follows:
 
 * Alignment commands
 * Distribute commands
@@ -438,7 +438,7 @@ The following code illustrates how to execute the `FitToPage` command.
 
 ## Command Manager
 
-The Diagram provides support for mapping or binding command execution to specific key gestures. It includes built-in commands and allows for the definition of custom commands through the [`commandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager#commands). Custom commands are executed when the specified key gesture is recognized.
+The Angular Diagram provides support for mapping or binding command execution to specific key gestures. It includes built-in commands and allows for the definition of custom commands through the [`commandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager#commands). Custom commands are executed when the specified key gesture is recognized.
 
 ## Custom Command
 

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to render other components in Toolbar using Angular template in Angular Toolbar
 
-The Angular Toolbar component supports embedding other Angular components directly within toolbar items using Angular's `ng-template` directive. This template-based approach enables integration of complex UI elements with full functionality, including dropdowns, input controls, buttons, and custom components as toolbar items.
+The Angular Toolbar component supports embedding other Angular components directly within Angular Toolbar items using Angular's `ng-template` directive. This template-based approach enables integration of complex UI elements with full functionality, including dropdowns, input controls, buttons, and custom components as Angular Toolbar items.
 
-Define an `ng-template` block as a sibling of the `<ejs-toolbar>` with a template reference variable, then reference it from the toolbar item through the `[template]` input. The `ng-template` is **not** placed inside the `e-item` tag; the `e-item` only references the template by name:
+Define an `ng-template` block as a sibling of the `<ejs-toolbar>` with a template reference variable, then reference it from the Angular Toolbar item through the `[template]` input. The `ng-template` is **not** placed inside the `e-item` tag; the `e-item` only references the template by name:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

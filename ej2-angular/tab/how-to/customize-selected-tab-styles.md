@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize selected tab styles in Angular Tab
 
-Customize the appearance of the active Tab by combining a custom HTML header (passed to the [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#text) property) with a custom CSS class assigned via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#cssclass) property of the Tab.
+Customize the appearance of the active Angular Tab by combining a custom HTML header (passed to the [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#text) property) with a custom CSS class assigned via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#cssclass) property of the Angular Tab.
 
 ## Steps
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular ListBox
 
-The ListBox component allows users to select one or more items from a predefined list, with support for templates, drag-and-drop, and sorting.
+The Angular ListBox component allows users to select one or more items from a predefined list, with support for templates, drag-and-drop, and sorting.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular ListBox component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-dropdowns
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> ListBox component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular ListBox component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 

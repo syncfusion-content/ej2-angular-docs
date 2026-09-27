@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Resize in Angular TextArea
 
-The TextArea component allows users to input and edit large amounts of text. Configure resizing behavior to enhance the user experience and accommodate varying content needs using the [resizeMode](https://ej2.syncfusion.com/angular/documentation/api/textarea/#resizeMode) property, which offers the following resize options:
+The Angular TextArea component allows users to input and edit large amounts of text. Configure resizing behavior to enhance the user experience and accommodate varying content needs using the [resizeMode](https://ej2.syncfusion.com/angular/documentation/api/textarea/#resizeMode) property, which offers the following resize options:
 
 | Type  | Description |
 | -- | -- |
@@ -35,7 +35,7 @@ The TextArea component allows users to input and edit large amounts of text. Con
 
 ## Width of Angular TextArea Component
 
-Customize the width of the TextArea using the [width](https://ej2.syncfusion.com/angular/documentation/api/textarea/#width) property. This property allows precise adjustment of the textarea's width according to your application's layout requirements.
+Customize the width of the Angular TextArea using the [width](https://ej2.syncfusion.com/angular/documentation/api/textarea/#width) property. This property allows precise adjustment of the textarea's width according to your application's layout requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

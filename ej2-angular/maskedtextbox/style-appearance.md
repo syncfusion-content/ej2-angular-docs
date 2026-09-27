@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Style and Appearance in Angular MaskedTextBox | Syncfusion
-description: Customize the Syncfusion Angular MaskedTextBox wrapper, input, and hover states with CSS overrides for height, font size, border, and color.
+title: Style and Appearance in Angular Input Mask | Syncfusion
+description: Customize the Syncfusion Angular Input Mask wrapper, input, and hover states with CSS overrides for height, font size, border, and color.
 platform: ej2-angular
 control: Style appearance 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style and Appearance in Angular MaskedTextBox
+# Style and Appearance in Angular Input Mask
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on the user preference.
 
-## Customizing the appearance of MaskedTextBox wrapper element
+## Customizing the appearance of Angular Input Mask wrapper element
 
-Use the following CSS to customize the appearance of the MaskedTextBox wrapper:
+Use the following CSS to customize the appearance of the Angular Input Mask wrapper:
 
 ```css
 /* To specify height, font size, and border */
@@ -29,9 +29,9 @@ Use the following CSS to customize the appearance of the MaskedTextBox wrapper:
 }
 ```
 
-## Customizing the MaskedTextBox element on hovering
+## Customizing the Angular Input Mask element on hovering
 
-Use the following CSS to customize the MaskedTextBox element on hover:
+Use the following CSS to customize the Angular Input Mask element on hover:
 
 ```css
 /* To specify border on hover */

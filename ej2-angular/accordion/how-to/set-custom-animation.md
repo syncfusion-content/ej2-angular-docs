@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to set custom animation in Angular Accordion | Syncfusion
 description: Configure custom expand and collapse animations on the Angular Accordion with effect, easing, and duration via the animation property.
@@ -16,7 +16,7 @@ The Angular Accordion component supports custom animations for expand and collap
 
 Default animation is given as `SlideDown` for expanding the panel using [`expand`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionAnimationSettingsModel#expand) animation property and `SlideUp` for collapsing the panel using [`collapse`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionAnimationSettingsModel#collapse) animation property. You can also disable the animation by setting animation [`effect`](https://ej2.syncfusion.com/angular/documentation/api/accordion/accordionActionSettingsModel#effect) as `none`.
 
-The sample demonstrates some types of animation that suits for Accordion. You can check all the animation effects here.
+The sample demonstrates some types of animation that suits for Angular Accordion. You can check all the animation effects here.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

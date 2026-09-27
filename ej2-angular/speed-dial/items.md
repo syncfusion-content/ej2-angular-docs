@@ -20,13 +20,13 @@ The Angular Speed Dial action items can be added by using [`items`](https://ej2.
 | [`id`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#id) | `string` | Defines a unique value for the SpeedDialItem which can be used to identify the item in event args. |
 | [`title`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#title) | `string` | Defines the title of SpeedDialItem to display tooltip. |
 
-## Icons in Speed Dial items
+## Icons in Angular Speed Dial items
 
-You can customize the icon and text of Speed Dial action items using [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#iconcss) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#text) properties.
+You can customize the icon and text of Angular Speed Dial action items using [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#iconcss) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#text) properties.
 
 ### Icon only
 
-You can show icon only in SpeedDial items by setting [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#iconcss) property. You can show tooltip on hover to show additional details to end-user by setting [`title`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#title) property.
+You can show icon only in Angular Speed Dial items by setting [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#iconcss) property. You can show tooltip on hover to show additional details to end-user by setting [`title`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#title) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -42,7 +42,7 @@ You can show icon only in SpeedDial items by setting [`iconCss`](https://ej2.syn
 
 ### Text only
 
-You can show only text in Speed Dial items by setting [`text`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#text) property.
+You can show only text in Angular Speed Dial items by setting [`text`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#text) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -58,7 +58,7 @@ You can show only text in Speed Dial items by setting [`text`](https://ej2.syncf
 
 ### Icon with text
 
-You can show icon along with text in Speed Dial items by setting [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#iconcss) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#text) properties.
+You can show icon along with text in Angular Speed Dial items by setting [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#iconcss) and [`text`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#text) properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -74,7 +74,7 @@ You can show icon along with text in Speed Dial items by setting [`iconCss`](htt
 
 ### Disabled
 
-You can disable Speed Dial items by setting [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#disabled) property as `true`.
+You can disable Angular Speed Dial items by setting [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#disabled) property as `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -90,7 +90,7 @@ You can disable Speed Dial items by setting [`disabled`](https://ej2.syncfusion.
 
 ## Animation
 
-The Speed Dial items can be animated during the opening and closing of the popup action items. You can customize the animation's `effect`, `delay`, and `duration` by setting [`animation`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#animation) property. By default, Speed Dial animates with a `fade` effect and supports all [`speeddialanimation`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialAnimationEffect/) effects.
+The Angular Speed Dial items can be animated during the opening and closing of the popup action items. You can customize the animation's `effect`, `delay`, and `duration` by setting [`animation`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#animation) property. By default, Angular Speed Dial animates with a `fade` effect and supports all [`speeddialanimation`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialAnimationEffect/) effects.
 
 Below example demonstrates the Speed Dial items with applied Zoom effect.
 
@@ -108,4 +108,4 @@ Below example demonstrates the Speed Dial items with applied Zoom effect.
 
 ## Template
 
-The Speed Dial supports to customize the action items and entire pop-up container by setting [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#itemtemplate) and [popupTemplate](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#popuptemplate) properties. For more details about templates, check out the link [here](https://ej2.syncfusion.com/angular/documentation/speed-dial/template/).
+The Angular Speed Dial supports to customize the action items and entire pop-up container by setting [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#itemtemplate) and [popupTemplate](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#popuptemplate) properties. For more details about templates, check out the link [here](https://ej2.syncfusion.com/angular/documentation/speed-dial/template/).

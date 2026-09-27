@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to add link to a button in Angular Button
 
-Link can be added to the Button by adding `e-link` using `cssClass` property and `<a>` tag with `href` attribute should be added inside the button element.
+Link can be added to the Angular Button by adding `e-link` using `cssClass` property and `<a>` tag with `href` attribute should be added inside the button element.
 
-The following example illustrates how to add link to a Button.
+The following example illustrates how to add link to a Angular Button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

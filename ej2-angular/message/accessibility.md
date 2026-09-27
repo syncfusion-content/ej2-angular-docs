@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Message
 
-The Message component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Message component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Message component is outlined below.
+The accessibility compliance for the Angular Message component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [Section 508](https://www.section508.gov) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -40,27 +40,27 @@ The accessibility compliance for the Message component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Message component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Message component:
+The Angular Message component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert) patterns to meet the accessibility. The following ARIA attributes are used in the Angular Message component:
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=alert` | Used to convey a significant and contextual message to the user. |
+| `role=alert` | Used to convey a significant and contextual Angular Message to the user. |
 | `aria-label` | Provides an accessible name for the close icon. |
 
 ## Keyboard interaction
 
-The Message component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Message component.
+The Angular Message component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Angular Message component.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Tab / Shift + Tab</kbd> | To focus the close icon in the message. |
-| <kbd>Enter / Space</kbd> | Closes the focused close icon's message. |
+| <kbd>Tab / Shift + Tab</kbd> | To focus the close icon in the Angular Message. |
+| <kbd>Enter / Space</kbd> | Closes the focused close icon's Angular Message. |
 
 ## Ensuring accessibility
 
-The Message component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Message component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Message component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/message.html) in a new window to evaluate the accessibility of the Message component with accessibility tools.
+The accessibility compliance of the Angular Message component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/message.html) in a new window to evaluate the accessibility of the Angular Message component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/message/accessibility-cs1" %}
 

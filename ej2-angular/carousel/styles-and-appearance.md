@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Styles and Appearance in Angular Carousel
 
-To modify the Carousel appearance, you need to override the default CSS of Carousel component. Please find the list of CSS classes and its corresponding section in Carousel component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
+To modify the Angular Carousel appearance, you need to override the default CSS of Angular Carousel component. Please find the list of CSS classes and its corresponding section in Angular Carousel component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
 ## CSS Structure in Angular Carousel Control
 

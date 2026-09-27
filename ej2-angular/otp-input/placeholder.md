@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Placeholder in Angular OTP Input
 
-The placeholder in OTP Input specifies the text displayed as a hint until the user enters a value. It provides guidance on the expected input format or purpose of each field.
+The placeholder in Angular OTP Input specifies the text displayed as a hint until the user enters a value. It provides guidance on the expected input format or purpose of each field.
 
-You can set the placeholder text by using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/otp-input#placeholder) property. Additionally, when providing a single character as the placeholder value all input fields within the OTP Input component will display the same character.
+You can set the placeholder text by using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/otp-input#placeholder) property. Additionally, when providing a single character as the placeholder value all input fields within the Angular OTP Input component will display the same character.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -28,7 +28,7 @@ You can set the placeholder text by using the [placeholder](https://ej2.syncfusi
 
 {% previewsample "page.domainurl/samples/otp-input/placeholder/placeholder_char" %}
 
-When a multi-character placeholder is provided, each input field displays characters from the placeholder string in sequence, up to the configured OTP input length.
+When a multi-character placeholder is provided, each input field displays characters from the placeholder string in sequence, up to the configured Angular OTP input length.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

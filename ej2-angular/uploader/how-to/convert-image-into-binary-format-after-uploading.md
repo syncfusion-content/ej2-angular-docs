@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Convert image to binary format after upload | Syncfusion
-description: Convert Angular Uploader image files into binary byte arrays on the server using a BinaryReader and ReadBytes instead of saving to a physical directory.
+description: Convert Angular File Upload image files into binary byte arrays on the server using a BinaryReader and ReadBytes instead of saving to a physical directory.
 platform: ej2-angular
 control: Convert image into binary format after uploading 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to convert image to binary after upload in Angular Uploader
+# How to convert image to binary after upload in Angular File Upload
 
-By default, the Uploader component saves uploaded image files to physical directories. You can also convert images to binary format on the server before saving them.
+By default, the Angular File Upload component saves uploaded image files to physical directories. You can also convert images to binary format on the server before saving them.
 To obtain binary data for an uploaded image, read the file's input stream on the server using a BinaryReader and call ReadBytes.
 
 Refer to the server-side code snippet below.

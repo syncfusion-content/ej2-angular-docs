@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Repeat Button in Angular Button
 
-The Button component provides repeat-click functionality through the `enableRepeat` property. When enabled, the Button continuously triggers the `clicked` event while the user presses and holds the Button.
+The Angular Button component provides repeat-click functionality through the `enableRepeat` property. When enabled, the Button continuously triggers the `clicked` event while the user presses and holds the Button.
 
 Repeat-click behavior is useful in scenarios where an action needs to be performed repeatedly without requiring multiple manual clicks, such as:
 
@@ -26,7 +26,7 @@ Repeat-click behavior is useful in scenarios where an action needs to be perform
 
 When the `enableRepeat` property is set to `true`, the Button raises an initial `clicked` event immediately when pressed. If the Button remains pressed, additional `clicked` events are generated automatically until the interaction ends.
 
-## Repeat Button properties
+## Repeat Angular Button properties
 
 The following properties are used to configure repeat-click behavior.
 
@@ -38,7 +38,7 @@ The following properties are used to configure repeat-click behavior.
 
 ### Enabling Repeat Clicks
 
-When `enableRepeat` is set to `true`, the Button raises an initial click event immediately and continues generating additional click events until the interaction ends.
+When `enableRepeat` is set to `true`, the Angular Button raises an initial click event immediately and continues generating additional click events until the interaction ends.
 
 This property is useful for controls that require sustained user interaction.
 
@@ -52,13 +52,13 @@ A larger `repeatDelay` value provides additional time before repeating starts, w
 
 ### Interval Between Repeats
 
-After the repeat cycle starts, the Button continues raising click events at the interval configured through `repeatInterval` until the Button is released.
+After the repeat cycle starts, the Angular Button continues raising click events at the interval configured through `repeatInterval` until the Button is released.
 
 Smaller `repeatInterval` values result in faster event generation, while larger values reduce the repeat frequency.
 
 ### Clicked event
 
-The `clicked` event is triggered whenever the Button is activated, including both the initial click and repeat-generated clicks.
+The `clicked` event is triggered whenever the Angular Button is activated, including both the initial click and repeat-generated clicks.
 
 The event arguments expose additional information that can be used to identify how the event was generated.
 

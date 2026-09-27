@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Item template
 
-The [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/context-menu#itemtemplate) property in the ContextMenu component allows you to define custom templates for displaying menu items. This feature enables you to customize the appearance, layout, and content of menu items beyond the default text-based display. Use item templates when you need to include icons, formatted text, additional metadata, or complex HTML structures within menu items.
+The [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/context-menu#itemtemplate) property in the Angular Context Menu component allows you to define custom templates for displaying menu items. This feature enables you to customize the appearance, layout, and content of menu items beyond the default text-based display. Use item templates when you need to include icons, formatted text, additional metadata, or complex HTML structures within menu items.
 
-The following sample uses an `<ng-template>` reference (`#itemTemplate`) inside the component template, and binds it to the ContextMenu via the `[itemTemplate]` property. The template exposes the data of each menu item through the implicit `let-data` variable.
+The following sample uses an `<ng-template>` reference (`#itemTemplate`) inside the component template, and binds it to the Angular Context Menu via the `[itemTemplate]` property. The template exposes the data of each menu item through the implicit `let-data` variable.
 
 `app.component.ts`:
 
@@ -55,7 +55,7 @@ The following sample uses an `<ng-template>` reference (`#itemTemplate`) inside 
 
 ## Customize specific menu items
 
-ContextMenu items can be customized using the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeitemrender) event. This event triggers while rendering each menu item, providing access to the item element and menu item data for customization based on specific requirements. The following example demonstrates how to add keyboard shortcuts to specific menu items by appending span elements during the rendering process.
+Angular Context Menu items can be customized using the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/context-menu#beforeitemrender) event. This event triggers while rendering each menu item, providing access to the item element and menu item data for customization based on specific requirements. The following example demonstrates how to add keyboard shortcuts to specific menu items by appending span elements during the rendering process.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -76,7 +76,7 @@ ContextMenu items can be customized using the [`beforeItemRender`](https://ej2.s
 
 ## Multi-level nesting
 
-The ContextMenu component supports multiple levels of nesting for creating hierarchical menu structures. You can create this by mapping child [`items`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#items) inside the parent item's array. The following example demonstrates a three-level nested ContextMenu structure.
+The Angular Context Menu component supports multiple levels of nesting for creating hierarchical menu structures. You can create this by mapping child [`items`](https://ej2.syncfusion.com/angular/documentation/api/context-menu/menuItemModel#items) inside the parent item's array. The following example demonstrates a three-level nested Angular Context Menu structure.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

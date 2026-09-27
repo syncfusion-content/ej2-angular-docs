@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Size and Color in Angular AppBar | Syncfusion
 description: Adjust the Angular AppBar height and palette with the mode and colorMode properties, including Regular, Prominent, Dense, Light, Dark, and Primary.
@@ -14,7 +14,7 @@ The Angular AppBar component provides flexible sizing and color customization op
 
 ## Size
 
-The AppBar size can be configured using the [mode](https://ej2.syncfusion.com/angular/documentation/api/appbar#mode) property. The AppBar supports three distinct size modes to accommodate different content requirements and design preferences:
+The Angular AppBar size can be configured using the [mode](https://ej2.syncfusion.com/angular/documentation/api/appbar#mode) property. The AppBar supports three distinct size modes to accommodate different content requirements and design preferences:
 
 * Regular AppBar
 * Prominent AppBar
@@ -22,7 +22,7 @@ The AppBar size can be configured using the [mode](https://ej2.syncfusion.com/an
 
 ### Regular AppBar
 
-This mode is the default one in which the AppBar is displayed with the default height.
+This mode is the default one in which the Angular AppBar is displayed with the default height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -38,7 +38,7 @@ This mode is the default one in which the AppBar is displayed with the default h
 
 ### Prominent AppBar
 
-This height mode can be set to the AppBar by setting `Prominent` to the property [mode](https://ej2.syncfusion.com/angular/documentation/api/appbar#mode). The prominent AppBar is displayed with a longer height and can be used for larger titles, images, or texts. It is also longer than the regular AppBar. In the following example, we have customized the prominent text using align-self and white-space CSS properties. You can change the prominent AppBar height if larger titles, images, or texts are used.
+This height mode can be set to the Angular AppBar by setting `Prominent` to the property [mode](https://ej2.syncfusion.com/angular/documentation/api/appbar#mode). The prominent AppBar is displayed with a longer height and can be used for larger titles, images, or texts. It is also longer than the regular Angular AppBar. In the following example, we have customized the prominent text using align-self and white-space CSS properties. You can change the prominent Angular AppBar height if larger titles, images, or texts are used.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -54,7 +54,7 @@ This height mode can be set to the AppBar by setting `Prominent` to the property
 
 ### Dense AppBar
 
-This height mode can be set to the AppBar by setting `Dense` to the property [mode](https://ej2.syncfusion.com/angular/documentation/api/appbar#mode). Dense AppBar is displayed with shorter height which is denser to accommodate all the AppBar content.
+This height mode can be set to the AppBar by setting `Dense` to the property [mode](https://ej2.syncfusion.com/angular/documentation/api/appbar#mode). Dense Angular AppBar is displayed with shorter height which is denser to accommodate all the AppBar content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -70,7 +70,7 @@ This height mode can be set to the AppBar by setting `Dense` to the property [mo
 
 ## Color
 
-The background and font colors can be set using the [colorMode](https://ej2.syncfusion.com/angular/documentation/api/appbar#colormode) property. The available types of background color for the AppBar are as follows:
+The background and font colors can be set using the [colorMode](https://ej2.syncfusion.com/angular/documentation/api/appbar#colormode) property. The available types of background color for the Angular AppBar are as follows:
 
 * Light AppBar
 * Dark AppBar
@@ -79,7 +79,7 @@ The background and font colors can be set using the [colorMode](https://ej2.sync
 
 ### Light AppBar
 
-This color mode is the default one in which the AppBar can be displayed with a light background and its corresponding font color.
+This color mode is the default one in which the Angular AppBar can be displayed with a light background and its corresponding font color.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -95,7 +95,7 @@ This color mode is the default one in which the AppBar can be displayed with a l
 
 ### Dark AppBar
 
-This color mode can be set to the AppBar by setting `Dark` to the property [colorMode](https://ej2.syncfusion.com/angular/documentation/api/appbar#colormode). A dark AppBar can be displayed with a dark background and its corresponding font color.
+This color mode can be set to the Angular AppBar by setting `Dark` to the property [colorMode](https://ej2.syncfusion.com/angular/documentation/api/appbar#colormode). A dark AppBar can be displayed with a dark background and its corresponding font color.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -111,7 +111,7 @@ This color mode can be set to the AppBar by setting `Dark` to the property [colo
 
 ### Primary AppBar
 
-This color mode can be set to the AppBar by setting `Primary` to the property [colorMode](https://ej2.syncfusion.com/angular/documentation/api/appbar#colormode). The primary AppBar can be displayed with primary colors.
+This color mode can be set to the Angular AppBar by setting `Primary` to the property [colorMode](https://ej2.syncfusion.com/angular/documentation/api/appbar#colormode). The primary AppBar can be displayed with primary colors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -127,7 +127,7 @@ This color mode can be set to the AppBar by setting `Primary` to the property [c
 
 ### Inherit AppBar
 
-This color mode can be set to the AppBar by setting `Inherit` to the property [colorMode](https://ej2.syncfusion.com/angular/documentation/api/appbar#colormode). The AppBar inherits the background and font color from its parent element.
+This color mode can be set to the Angular AppBar by setting `Inherit` to the property [colorMode](https://ej2.syncfusion.com/angular/documentation/api/appbar#colormode). The AppBar inherits the background and font color from its parent element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

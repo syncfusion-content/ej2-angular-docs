@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular ComboBox
 
-The ComboBox component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The Angular ComboBox component has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
-The ComboBox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular ComboBox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the ComboBox component is outlined below.
+The accessibility compliance for the Angular ComboBox component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,7 +42,7 @@ The accessibility compliance for the ComboBox component is outlined below.
 
 ## WAI-ARIA attributes
 
-The ComboBox component uses the `combobox` role, and each list item has an `option` role. The following `ARIA attributes` denote the ComboBox state.
+The Angular ComboBox component uses the `combobox` role, and each list item has an `option` role. The following `ARIA attributes` denote the Angular ComboBox state.
 
 | **Properties** | **Functionalities** |
 | --- | --- |
@@ -57,7 +57,7 @@ The ComboBox component uses the `combobox` role, and each list item has an `opti
 
 ## Keyboard interaction
 
-You can use the following key shortcuts to access the ComboBox without interruptions.
+You can use the following key shortcuts to access the Angular ComboBox without interruptions.
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |
@@ -74,7 +74,7 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 | <kbd>Home</kbd> | Cursor moves to before of first character in input |
 | <kbd>End</kbd> | Cursor moves to next of last character in input  |
 
-> In the following sample, <kbd>alt+t</kbd> keys are used to focus the ComboBox component.
+> In the following sample, <kbd>alt+t</kbd> keys are used to focus the Angular ComboBox component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -90,9 +90,9 @@ You can use the following key shortcuts to access the ComboBox without interrupt
 
 ## Ensuring accessibility
 
-The ComboBox component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular ComboBox component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the ComboBox component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/combo-box.html) in a new window to evaluate the accessibility of the ComboBox component with accessibility tools.
+The accessibility compliance of the Angular ComboBox component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/combo-box.html) in a new window to evaluate the accessibility of the Angular ComboBox component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/combo-box.html" %}
 

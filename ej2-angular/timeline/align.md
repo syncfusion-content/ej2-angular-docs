@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Align Items in Angular Timeline
 
-The Timeline component controls content positioning using the [align](../api/timeline#align) property, which accepts values `Before`, `After`, `Alternate`, or `AlternateReverse`. When items include both content and oppositeContent properties, the oppositeContent displays parallel to the main content, creating a balanced layout on opposite sides of the timeline.
+The Angular Timeline component controls content positioning using the [align](../api/timeline#align) property, which accepts values `Before`, `After`, `Alternate`, or `AlternateReverse`. When items include both content and oppositeContent properties, the oppositeContent displays parallel to the main content, creating a balanced layout on opposite sides of the timeline.
 
 ## Before
 

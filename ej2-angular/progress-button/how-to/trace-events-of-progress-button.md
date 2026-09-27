@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to trace events in Angular Progress Button
 
-The ProgressButton component triggers events based on its actions. The events can be used as extension points to perform custom operations.
+The Angular Progress Button component triggers events based on its actions. The events can be used as extension points to perform custom operations.
 
-The events available in ProgressButton are [`fail`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#fail), [`begin`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#begin), [`progress`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#progress), and [`end`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#end).
+The events available in Angular Progress Button are [`fail`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#fail), [`begin`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#begin), [`progress`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#progress), and [`end`](https://ej2.syncfusion.com/angular/documentation/api/progress-button#end).
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

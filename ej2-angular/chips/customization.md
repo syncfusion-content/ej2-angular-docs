@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Chips
 
-This section explains the customization of styles, leading icons, avatar, and trailing icons in the Chips component
+This section explains the customization of styles, leading icons, avatar, and trailing icons in the Angular Chips component
 
 ## Styles
 
-The Chips component has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#cssclass) property.
+The Angular Chips component has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#cssclass) property.
 
 | Class | Description |
 | -------- | -------- |
@@ -76,7 +76,7 @@ You can add and customize the avatar of Chips using the [`avatarIconCss`](https:
 
 ## Avatar Content
 
-You can add and customize the avatar content of Chips using the [`avatarText`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#avatartext) property.
+You can add and customize the avatar content of Angular Chips using the [`avatarText`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#avatartext) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -110,9 +110,9 @@ You can add and customize the trailing icon of Chips using the [`trailingIconCss
   
 {% previewsample "page.domainurl/samples/chips/customization/styles-cs5" %}
 
-## Outline Chips
+## Outline Angular Chips
 
-Outline chips has the border with the background transparent. It can be set using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#cssclass) property.
+Outline Angular Chips has the border with the background transparent. It can be set using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#cssclass) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -130,7 +130,7 @@ Outline chips has the border with the background transparent. It can be set usin
 
 ## Template
 
-The [`template`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#template) property of the Chips component allows users to fully customize the layout and design of each Chips. By using the `template` property, users can include custom HTML elements, such as links, icons, or additional content.
+The [`template`](https://ej2.syncfusion.com/angular/documentation/api/chips/index-default#template) property of the Angular Chips component allows users to fully customize the layout and design of each Chips. By using the `template` property, users can include custom HTML elements, such as links, icons, or additional content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

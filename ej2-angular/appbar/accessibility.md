@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular AppBar
 
-The AppBar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular AppBar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the AppBar component is outlined below.
+The accessibility compliance for the Angular AppBar component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -41,13 +41,13 @@ The accessibility compliance for the AppBar component is outlined below.
 
 ## Keyboard interaction
 
-The AppBar component provides focus element navigation based on its standard tab key order.
+The Angular AppBar component provides focus element navigation based on its standard tab key order.
 
 ## Ensuring accessibility
 
-The AppBar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular AppBar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the AppBar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/appbar.html) in a new window to evaluate the accessibility of the AppBar component with accessibility tools.
+The accessibility compliance of the Angular AppBar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/appbar.html) in a new window to evaluate the accessibility of the Angular AppBar component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/appbar.html" %}
 

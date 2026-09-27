@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Get selected items from ListView in Angular ListView component
 
-Users can select single or multiple items in the ListView component. The [`getSelectedItems`](https://ej2.syncfusion.com/angular/documentation/api/listview/#getselecteditems) method is used to retrieve the selected items from the ListView.
+Users can select single or multiple items in the Angular ListView component. The [`getSelectedItems`](https://ej2.syncfusion.com/angular/documentation/api/list-view/index-default#getselecteditems) method is used to retrieve the selected items from the Angular ListView.
 
 **`getSelectedItems` method**
 
-This method retrieves details of the currently selected items from the ListView. It returns either a [`SelectedItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view/selectedItem/) or a [`SelectedCollection`](https://ej2.syncfusion.com/angular/documentation/api/list-view/selectedCollection/), depending on the selection mode.
+This method retrieves details of the currently selected items from the Angular ListView. It returns either a [`SelectedItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view/selectedItem) or a [`SelectedCollection`](https://ej2.syncfusion.com/angular/documentation/api/list-view/selectedCollection), depending on the selection mode.
 
 The `getSelectedItems` method provides the following properties for the selected items:
 

@@ -60,6 +60,22 @@ The [responseItemTemplate](../api/ai-assistview#responseitemtemplate) can be uti
 
 {% previewsample "page.domainurl/samples/ai-assistview/templates/responseItemTemplate" %}
 
+## Response animation template
+
+The [responseAnimationTemplate](../api/ai-assistview#responseanimationtemplate) property allows a custom loading indicator or animation to be shown while the AI AssistView is generating a response. The animation template is shown in place of the response and removed once the response is added.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ai-assistview/templates/responseAnimation/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ai-assistview/templates/responseAnimation/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/ai-assistview/templates/responseAnimation" %}
+
 ## Prompt suggestion item template
 
 For customizing the prompt suggestion items, the [promptSuggestionItemTemplate](../api/ai-assistview#promptsuggestionitemtemplate) can be implemented using an `ng-template` directive. The context for this template includes the `index` and `promptSuggestion` items.

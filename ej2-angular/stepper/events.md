@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Events in Angular Stepper
 
-This section describes the Stepper events that will be triggered when an appropriate actions are performed. The following events are available in the Stepper component.
+This section describes the Angular Stepper events that will be triggered when an appropriate actions are performed. The following events are available in the Stepper component.
 
 ## created
 
-The Stepper component triggers the [created](https://ej2.syncfusion.com/angular/documentation/api/stepper#created) event when the component rendering is completed.
+The Angular Stepper component triggers the [created](https://ej2.syncfusion.com/angular/documentation/api/stepper#created) event when the component rendering is completed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -33,7 +33,7 @@ The Stepper component triggers the [created](https://ej2.syncfusion.com/angular/
 
 ## stepChanged
 
-The Stepper component triggers the [stepChanged](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepchanged) event after the active step is changed.
+The Angular Stepper component triggers the [stepChanged](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepchanged) event after the active step is changed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -52,7 +52,7 @@ The Stepper component triggers the [stepChanged](https://ej2.syncfusion.com/angu
 
 ## stepChanging
 
-The Stepper component triggers the [stepChanging](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepchanging) event before the active step change.
+The Angular Stepper component triggers the [stepChanging](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepchanging) event before the active step change.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -71,7 +71,7 @@ The Stepper component triggers the [stepChanging](https://ej2.syncfusion.com/ang
 
 ## stepClick
 
-The Stepper component triggers the [stepClick](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepclick) event when the step is clicked.
+The Angular Stepper component triggers the [stepClick](https://ej2.syncfusion.com/angular/documentation/api/stepper#stepclick) event when the step is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -90,7 +90,7 @@ The Stepper component triggers the [stepClick](https://ej2.syncfusion.com/angula
 
 ## beforeStepRender
 
-The Stepper component triggers the [beforeStepRender](https://ej2.syncfusion.com/angular/documentation/api/stepper#beforesteprender) event before rendering each step.
+The Angular Stepper component triggers the [beforeStepRender](https://ej2.syncfusion.com/angular/documentation/api/stepper#beforesteprender) event before rendering each step.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

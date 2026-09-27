@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Form Support in Angular TextArea
 
-The TextArea component seamlessly integrates with HTML forms for efficient submission of multiline text data. Include TextArea inputs within your forms to allow users to enter detailed content and submit it as part of the form submission. This integration enhances form usability by providing users with the ability to input lengthy descriptions, feedback, or other multiline text content.
+The Angular TextArea component seamlessly integrates with HTML forms for efficient submission of multiline text data. Include TextArea inputs within your forms to allow users to enter detailed content and submit it as part of the form submission. This integration enhances form usability by providing users with the ability to input lengthy descriptions, feedback, or other multiline text content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -26,9 +26,9 @@ The TextArea component seamlessly integrates with HTML forms for efficient submi
 
 ## Integration of Angular TextArea Component with FormValidator Component
 
-The TextArea component seamlessly integrates with the `FormValidator` component, allowing you to incorporate textarea inputs into form validation processes.
+The Angular TextArea component seamlessly integrates with the `FormValidator` component, allowing you to incorporate textarea inputs into form validation processes.
 
-By integrating TextArea with the `FormValidator` component, you can enforce validation rules specific to text inputs, such as required fields, minimum and maximum length constraints, and pattern matching. This ensures that user-submitted text data meets specified criteria and maintains data integrity.
+By integrating Angular TextArea with the `FormValidator` component, you can enforce validation rules specific to text inputs, such as required fields, minimum and maximum length constraints, and pattern matching. This ensures that user-submitted text data meets specified criteria and maintains data integrity.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

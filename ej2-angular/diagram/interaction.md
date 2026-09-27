@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interaction in Angular Diagram | Syncfusion®
-description: Select, drag, resize, and rotate elements in the Syncfusion® Angular Diagram using mouse, keyboard, and rubber-band selection, with hooks into selection, click, and position-change events.
+description: Select, drag, resize, and rotate elements in the Syncfusion® Diagram using mouse, keyboard, and rubber-band selection, with hooks into selection, click, and position-change events.
 platform: ej2-angular
 control: Interaction 
 documentation: ug
@@ -287,7 +287,7 @@ Fixed user handle interactions trigger these events:
 
 ## Determining mouse button clicks
 
-The diagram component can identify which mouse button triggered click events. The [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram#click) event provides details about the specific button used:
+The Angular Diagram component can identify which mouse button triggered click events. The [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram#click) event provides details about the specific button used:
 
 | Button | Description |
 |--------|-------------|
@@ -329,7 +329,7 @@ Navigate large diagrams using zoom and pan operations. Scroll bars enable naviga
 
 ## Keyboard shortcuts
 
-The diagram provides comprehensive keyboard support for common operations. The following table lists available keyboard shortcuts:
+The Angular Diagram provides comprehensive keyboard support for common operations. The following table lists available keyboard shortcuts:
 
 ### Selection and Navigation
 

@@ -14,8 +14,8 @@ Remote data binding enables the Data Grid to connect directly to external data s
 
 For proper functionality, the server response must include two key properties:
 
-- `result`: the records to display in the current viewport.
-- `count`: the total number of records in the dataset for pagination.
+- `result`: the records to display in the current viewport
+- `count`: the total number of records in the dataset for pagination
 
 
 ## Bind remote data using DataManager
@@ -35,11 +35,11 @@ Adaptors also provide native query support, automatically formatting requests in
 | REST APIs Using Web Methods | Connects to ASP.NET WebMethod-based services. | [WebMethodAdaptor](../connecting-to-adaptors/web-method-adaptor) |
 | Web API Services | Connects to ASP.NET Web APIs and supports server-side data operations. | [WebApiAdaptor](../connecting-to-adaptors/webapi-adaptor) |
 | Custom Remote Data | Integrates with custom remote data services and business-specific APIs. | [CustomAdaptor](../connecting-to-adaptors/custom-adaptor) |
-| Microsoft SQL Server | Connects to Microsoft SQL Server databases using ADO.NET and Entity Framework. | [SQL Server](../connecting-to-database/microsoft-sql-server) |
-| MySQL Server | Provides cross-platform data access for MySQL databases. | [MySQL Server](../connecting-to-database/mysql-server) |
-| PostgreSQL | Delivers advanced relational capabilities with PostgreSQL databases. | [PostgreSQL](../connecting-to-database/postgresql-server) |
-| SQLite | Supports embedded and local storage scenarios with SQLite databases. | [SQLite](../connecting-to-database/sqlite-server) |
-| Entity Framework | Integrates with EF and EF Core-based applications. | [Entity Framework](../connecting-to-orm/entityframework) |
+| Microsoft SQL Server | Connects to Microsoft SQL Server databases using ADO.NET and Entity Framework. | [SQL Server](./connecting-to-database/microsoft-sql-server) |
+| MySQL Server | Provides cross-platform data access for MySQL databases. | [MySQL Server](./connecting-to-database/mysql-server) |
+| PostgreSQL | Delivers advanced relational capabilities with PostgreSQL databases. | [PostgreSQL](./connecting-to-database/postgresql-server) |
+| SQLite | Supports embedded and local storage scenarios with SQLite databases. | [SQLite](./connecting-to-database/sqlite-server) |
+| Entity Framework | Integrates with EF and EF Core-based applications. | [Entity Framework](./connecting-to-orm/entityframework) |
 | Dapper | Offers lightweight SQL-based data access for applications. | [Dapper](../connecting-to-orm/dapper) |
 
 The following code example demonstrates connecting the Data Grid to a REST API using `UrlAdaptor`. For other service types, replace `UrlAdaptor` with the appropriate adaptor (e.g., `WebApiAdaptor`, `ODataV4Adaptor`, `WebMethodAdaptor`, `RemoteSaveAdaptor`, or `GraphQLAdaptor`).
