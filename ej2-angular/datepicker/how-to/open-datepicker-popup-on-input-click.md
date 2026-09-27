@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to open the DatePicker popup on input click in Angular DatePicker
 
-You can open the DatePicker popup on input focus by calling the `show` method in the input `focus` event.
+You can open the Angular DatePicker popup on input focus by calling the `show` method in the input `focus` event.
 
-The following example demonstrates how to open the DatePicker popup when the input is focused.
+The following example demonstrates how to open the Angular DatePicker popup when the input is focused.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

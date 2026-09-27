@@ -14,11 +14,11 @@ The action items in [Angular Speed Dial](https://www.syncfusion.com/angular-comp
 
 ## Linear display mode
 
-In `Linear` display mode, Speed Dial action items are displayed in a list-like format either horizontally or vertically. By default, Speed Dial items are displayed in `Linear` mode.
+In `Linear` display mode, Angular Speed Dial action items are displayed in a list-like format either horizontally or vertically. By default, Angular Speed Dial items are displayed in `Linear` mode.
 
 ### Direction
 
-You can open the action items on the top, left, up, and down side of the Speed Dial button by setting [`direction`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#direction) property. The default value is `Auto` where the action items are displayed based on the [`position`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#position)of the Speed Dial.
+You can open the action items on the top, left, up, and down side of the Angular Speed Dial button by setting [`direction`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#direction) property. The default value is `Auto` where the action items are displayed based on the [`position`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#position)of the Speed Dial.
 
 The `Linear` directions of Speed Dial are as follows:
 
@@ -42,4 +42,4 @@ The `Linear` directions of Speed Dial are as follows:
 
 ## Radial display mode (Radial Menu)
 
-In `Radial` mode, Speed Dial action items are displayed in a circular pattern like a radial menu. For more details about radial mode, check out the link [here](https://ej2.syncfusion.com/angular/documentation/speed-dial/radial-menu/).
+In `Radial` mode, Angular Speed Dial action items are displayed in a circular pattern like a radial menu. For more details about radial mode, check out the link [here](https://ej2.syncfusion.com/angular/documentation/speed-dial/radial-menu/).

@@ -148,7 +148,7 @@ Foreign-key sorting enables sorting based on displayed values rather than the un
 
 To sort a foreign key column based on its displayed text, the foreign key column can be enabled by using [column.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/column#datasource), [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) and [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) properties.
 
-### Sort foreign key column based on text for local data
+### Sort foreign key column based on text
 
 When working with local data in the grid, sorting is performed based on the [foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue) defined in the column. This field should be specified in the column definition with the corresponding foreign key value for each row. The grid then sorts the foreign key column according to the text representation of that value.
 

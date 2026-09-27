@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Mention
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#norecordstemplate) &nbsp;properties according to the culture currently assigned to the Mention.
+The Localization library allows you to localize static text content of the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#norecordstemplate) &nbsp;properties according to the culture currently assigned to the Angular Mention.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -20,7 +20,7 @@ The Localization library allows you to localize static text content of the [noRe
 
 To load the translation object to your application, use the load function of the **L10n** class.
 
-In the following sample, French culture is set to the mention component and no data is loaded. Hence, the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#norecordstemplate) property displays its text in French culture initially.
+In the following sample, French culture is set to the Angular Mention component and no data is loaded. Hence, the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/#norecordstemplate) property displays its text in French culture initially.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -37,4 +37,4 @@ In the following sample, French culture is set to the mention component and no d
 ## See Also
 
 * [Accessibility](./accessibility)
-* [How to bind the data to the mention](./data-binding)
+* [How to bind the data to the Angular Mention](./data-binding)

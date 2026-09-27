@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular OTP Input
 
-The OTP Input component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
+The Angular OTP Input component conforms to accessibility standards and guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) commonly used to evaluate accessibility.
 
-The accessibility compliance for the OTP Input component is outlined below.
+The accessibility compliance for the Angular OTP Input component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,7 +40,7 @@ The accessibility compliance for the OTP Input component is outlined below.
 
 ## WAI-ARIA attributes
 
-The following ARIA attributes are used in the OTP Input component:
+The following ARIA attributes are used in the Angular OTP Input component:
 
 | Attributes | Purpose |
 | ------------ | ----------------------- |
@@ -49,7 +49,7 @@ The following ARIA attributes are used in the OTP Input component:
 
 ## Keyboard interaction
 
-The following keyboard shortcuts are supported by the OTP Input component.
+The following keyboard shortcuts are supported by the Angular OTP Input component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -88,7 +88,7 @@ You can pass HTML attributes as key-value pairs to the [htmlAttributes](https://
 
 ## AriaLabels
 
-AriaLabels define the ARIA-label attribute for each input field in the OTP input component. ARIA-labels enhance accessibility by providing descriptive labels for screen reader users, improving the user experience for individuals with disabilities.
+AriaLabels define the ARIA-label attribute for each input field in the Angular OTP input component. ARIA-labels enhance accessibility by providing descriptive labels for screen reader users, improving the user experience for individuals with disabilities.
 
 You can provide an array of strings as ARIA-labels to the [ariaLabels](https://ej2.syncfusion.com/angular/documentation/api/otp-input#arialabels) property. Each string corresponds to the ARIA-label attribute for the respective input field in the OTP input component.
 

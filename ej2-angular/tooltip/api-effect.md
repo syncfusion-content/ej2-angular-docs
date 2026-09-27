@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # API effect in Angular Tooltip component
 
-Animation effects that are applicable for Tooltip.
+Animation effects that are applicable for Angular Tooltip.
 * FadeIn
 * FadeOut
 * FadeZoomIn

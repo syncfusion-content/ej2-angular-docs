@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Header in Angular Tab
 
-This section explains how to modify Tab header styles and configure header icons and their positions.
+This section explains how to modify Angular Tab header styles and configure header icons and their positions.
 
 ## Styles
 
-Apply these predefined classes to the Tab root element via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#cssclass) property to control the visual appearance and selection behavior of Tab headers:
+Apply these predefined classes to the Angular Tab root element via the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#cssclass) property to control the visual appearance and selection behavior of Angular Tab headers:
 
 * **e-fill**: The selected Tab header background displays as a solid fill, providing clear visual distinction for the active tab.
 * **e-background**: Tab headers have a solid fill background with the selected header featuring a highlighted border for emphasis.
@@ -39,7 +39,7 @@ Apply these predefined classes to the Tab root element via the [`cssClass`](http
 
 ## Icon positions
 
-Customize the position of Tab header icons using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#iconposition) property. This property works in conjunction with the header item's [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#iconcss) property to determine both the icon source and its placement.
+Customize the position of Angular Tab header icons using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#iconposition) property. This property works in conjunction with the header item's [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/headerModel#iconcss) property to determine both the icon source and its placement.
 
 The available position values are:
 
@@ -64,6 +64,6 @@ In RTL layouts, the `Left` and `Right` values are mirrored: `Right` places the i
 
 ## See Also
 
-* [How to customize selected tab styles](./how-to/customize-selected-tab-styles)
+* [How to customize selected Angular Tab styles](./how-to/customize-selected-tab-styles)
 * [Style and Appearance](./style)
 * [Orientation](./orientation)

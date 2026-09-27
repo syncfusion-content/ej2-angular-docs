@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # How to set the disabled state in Angular Split Button
 
-SplitButton component can be enabled or disabled by [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/split-button#disabled) property.
-To disable SplitButton component, set the disabled property as true.
+Angular Split Button component can be enabled or disabled by [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/split-button#disabled) property.
+To disable Angular Split Button component, set the disabled property as true.
 
-The following example illustrates how to set the disable state in SplitButton component.
+The following example illustrates how to set the disable state in Angular Split Button component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

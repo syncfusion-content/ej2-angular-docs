@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Operators in Angular Query Builder UI
 
-Operators define the comparison logic applied between a rule's field and value when building query rules. The Query Builder automatically assigns default operators based on the column's data type, and you can also customize them per column. For details on how the column `type` determines the value editor and the default operator set, see [Columns](./columns).
+Operators define the comparison logic applied between a rule's field and value when building query rules. The Angular Query Builder UI automatically assigns default operators based on the column's data type, and you can also customize them per column. For details on how the column `type` determines the value editor and the default operator set, see [Columns](./columns).
 
 ## Default operators
 

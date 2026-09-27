@@ -1,9 +1,9 @@
 ---
 layout: post
 title: UML Sequence Diagram in Angular Diagram | Syncfusion®
-description: Create UML sequence diagrams in the Syncfusion® Angular Diagram with participants, lifelines, messages, activations, and fragments for visualizing object interactions over time.
+description: Create UML sequence diagrams in Angular Diagram using participants, lifelines, messages, activation boxes, and conditional fragments.
 platform: ej2-angular
-control: UmlSequenceDiagram 
+control: UmlSequenceDiagram
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -40,7 +40,7 @@ A sequence diagram comprises several essential elements that work together to re
 #### Participant Types
 
 Participants can be displayed in two forms:
-- **Actors**: Human users or external systems (displayed with stick figure notation)
+- **Actors**: Human users or external systems (displayed as a stick figure)
 - **Objects**: System components, classes, or services (displayed as rectangular boxes)
 
 #### UmlSequenceParticipantModel Properties
@@ -50,22 +50,23 @@ Participants can be displayed in two forms:
 | id | string \| number | A unique identifier for the participant |
 | content | string | The display text for the participant |
 | showDestructionMarker | boolean | Indicates whether a destruction marker (X) is shown at the end of the lifeline |
-| activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant |
+| activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant. |
 | stereotype | UmlSequenceParticipantStereotype | The visual stereotype that determines how this participant is rendered (for example, Actor, Boundary, Control, Entity, Database). |
 
 #### Participant Stereotypes
 
-The [UmlSequenceParticipantStereotype](https://ej2.syncfusion.com/documentation/api/diagram/umlSequenceParticipantStereotype) enum defines the visual style of a participant. A stereotype helps show the role of a participant in the interaction.
+The [UmlSequenceParticipantStereotype](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceParticipantStereotype) enum defines the visual style of a participant. A stereotype helps show the role of a participant in the interaction.
 
 | Stereotype | Description | Shape |
 |---|---|---|
-| Default | A standard object participant rendered as a labelled rectangular box | ![Default](./images/umlSequenceDiagram-images/Default.png) |
+| Default | A standard object participant rendered as a labeled rectangular box | ![Default](./images/umlSequenceDiagram-images/Default.png) |
 | Actor | An actor that interacts with the system, rendered as a UML actor (stick figure) | ![Actor](./images/umlSequenceDiagram-images/Actor.png) |
 | Boundary | A boundary object or system interface (UI, API gateway, external system) | ![Boundary](./images/umlSequenceDiagram-images/Boundary.png) |
 | Control | A control object for coordinator, controller, or workflow elements | ![Control](./images/umlSequenceDiagram-images/Control.png) |
 | Entity | An entity object for passive data, domain, or persistent objects | ![Entity](./images/umlSequenceDiagram-images/Entity.png) |
 | Database | A database or persistent storage system, rendered as a cylindrical shape | ![Database](./images/umlSequenceDiagram-images/Database.png) |
 
+The following example shows how to create participants with different stereotypes:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -161,7 +162,6 @@ Fragments are essential for modeling:
 - Iterative processes (loops and repetitions)
 - Optional operations that may or may not execute
 - Error handling and exception flows
-- Parallel processing scenarios
 
 #### Fragment Types
 
@@ -187,7 +187,7 @@ The [UmlSequenceFragmentType](https://ej2.syncfusion.com/angular/documentation/a
 |---|---|---|
 | content | string | Text describing the condition or parameter |
 | messageIds | (string \| number)[] | Collection of message IDs included in this condition section |
-| fragmentIds | string[] | Collection of nested fragments ids (for complex structures) |
+| fragmentIds | string[] | Collection of nested fragment IDs (for complex structures) |
 
 #### Creating Fragments
 
@@ -211,7 +211,7 @@ The following example illustrates how to create fragments with different conditi
 
 The [spaceBetweenParticipants](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlSequenceDiagramModel#spaceBetweenParticipants) property controls the horizontal spacing between participants in the sequence diagram. Adjust this value to accommodate longer message labels or improve diagram readability.
 
-```ts
+```
 // Define the UML Sequence Diagram model with custom spacing
 const model: UmlSequenceDiagramModel = {
   // Increase space between participants for better readability

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Styles in Angular Speed Dial
 
-This section briefs different ways to style SpeedDial component.
+This section briefs different ways to style Angular Speed Dial component.
 
-## SpeedDial button
+## Angular Speed Dial button
 
 You can customize the icon and text of Angular Speed Dial button using [`openIconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#openiconcss), [`closeIconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#closeiconcss) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#content) properties.
 
@@ -34,7 +34,7 @@ You can use the [`openIconCss`](https://ej2.syncfusion.com/angular/documentation
 
 ### Text only
 
-You can show only text in Speed Dial button by setting [`content`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#content) property  without setting icon properties..
+You can show only text in Angular Speed Dial button by setting [`content`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#content) property  without setting icon properties..
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -50,7 +50,7 @@ You can show only text in Speed Dial button by setting [`content`](https://ej2.s
 
 ### Icon with text
 
-You show icon and text in SpeedDial button using [`openIconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#openiconcss), [`closeIconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#closeiconcss) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#content) properties together.
+You show icon and text in Angular Speed Dial button using [`openIconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#openiconcss), [`closeIconCss`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#closeiconcss) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#content) properties together.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -66,14 +66,14 @@ You show icon and text in SpeedDial button using [`openIconCss`](https://ej2.syn
 
 ## Disabled
 
-You can enable or disable the SpeedDial component using [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#disabled) property.
+You can enable or disable the Angular Speed Dial component using [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#disabled) property.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render SpeedDial component in disabled state -->
+    template: `<!-- To Render Angular Speed Dial component in disabled state -->
         <button ejs-speeddial id="speeddial" content='Edit' [disabled]='true'></button>`
 })
 
@@ -107,14 +107,14 @@ The Angular Speed Dial supports the following predefined styles that can be defi
 
 ## Visible
 
-You can set the Speed Dial button to visible/hidden state using [`visible`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#visible) property.
+You can set the Angular Speed Dial button to visible/hidden state using [`visible`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#visible) property.
 
 ```typescript
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render SpeedDial component in hidden state -->
+    template: `<!-- To Render Angular Speed Dial component in hidden state -->
         <button ejs-speeddial id="speeddial" content='Edit' [visible]='false'></button>`
 })
 
@@ -123,7 +123,7 @@ export class AppComponent { }
 
 ## Tooltip
 
-You can show tooltip on hover to show additional details to end-user by setting [`title`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#title) to Speed Dial button.
+You can show tooltip on hover to show additional details to end-user by setting [`title`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/speedDialItemModel/#title) to Angular Speed Dial button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -139,7 +139,7 @@ You can show tooltip on hover to show additional details to end-user by setting 
 
 ## Opens on hover
 
-You can use [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#opensonhover) property to open actions items on hover itself. By default action items displayed only when clicking the speed dial button.
+You can use [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#opensonhover) property to open actions items on hover itself. By default action items displayed only when clicking the Angular Speed Dial button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -155,7 +155,7 @@ You can use [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/ap
 
 ## Customized icon
 
-You can use the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#cssclass) property to customize the appearance of the speedDial component in its default primary state. Below example demonstrates the `cssClass` property usage in speedDial.
+You can use the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#cssclass) property to customize the appearance of the Angular Speed Dial component in its default primary state. Below example demonstrates the `cssClass` property usage in Angular Speed Dial.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

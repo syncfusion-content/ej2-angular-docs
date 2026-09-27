@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular DateRangePicker
 
-The DateRangePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular DateRangePicker component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the DateRangePicker component is outlined below.
+The accessibility compliance for the Angular DateRangePicker component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -42,20 +42,20 @@ The accessibility compliance for the DateRangePicker component is outlined below
 
 The web accessibility makes web content and web applications more accessible for disabled people.
 It especially helps in dynamic content change and development of advanced user interface controls  with AJAX, HTML, JavaScript, and related technologies.
-DateRangePicker provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
+Angular DateRangePicker provides built-in compliance with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices) specifications. WAI-ARIA supports is achieved through the attributes like `aria-expanded`, `aria-disabled`, `aria-activedescendant` applied to the input element.
 
 To know about the accessibility of Calendar refer to the Calendar's [Accessibility](../calendar/accessibility) section.
 
 It helps disabled persons by providing information about the widget for assistive technology  in the screen readers.
-DateRangePicker component contains grid role and grid cell for each day cell.
+Angular DateRangePicker component contains grid role and grid cell for each day cell.
 
 * **Aria-expanded**: attributes indicates the state of a collapsible element.
 
-* **Aria-disabled**:  Indicates the disabled state of the DateRangePicker component.
+* **Aria-disabled**:  Indicates the disabled state of the Angular DateRangePicker component.
 
 ## Keyboard Interaction
 
-You can use the following keys to interact with the DateRangePicker.
+You can use the following keys to interact with the Angular DateRangePicker.
 This component implements the keyboard navigation support by following the  [WAI-ARIA practices](http://www.w3.org/WAI/PF/aria-practices).
 
 It supports the following list of shortcut keys:
@@ -91,7 +91,7 @@ Use the following list of keys to navigate the currently focused Calendar after 
 | <kbd>Control + End</kbd>  | Focuses the last date of the current year. |
 | <kbd>Alt + Right</kbd>  | Focuses through out the pop-up container in forward direction. |
 | <kbd>Alt + Left</kbd>  | Focuses through out the pop-up container in backward direction. |
-> To focus the DateRangePicker component, use the `alt+t` keys.
+> To focus the Angular DateRangePicker component, use the `alt+t` keys.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -107,9 +107,9 @@ Use the following list of keys to navigate the currently focused Calendar after 
 
 ## Ensuring accessibility
 
-The DateRangePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular DateRangePicker component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the DateRangePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-range-picker.html) in a new window to evaluate the accessibility of the DateRangePicker component with accessibility tools.
+The accessibility compliance of the Angular DateRangePicker component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/date-range-picker.html) in a new window to evaluate the accessibility of the Angular DateRangePicker component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/date-range-picker.html" %}
 

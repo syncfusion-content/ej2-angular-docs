@@ -16,7 +16,9 @@ The [`symbolPalette`](https://ej2.syncfusion.com/angular/documentation/api/symbo
 
 The [`width`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#height) properties of the symbol palette allow you to define the size of the symbol palette.
 
-```typescript
+N> Import `SymbolPaletteModule` from `@syncfusion/ej2-angular-diagrams` and bind the `[palettes]` property to define the symbol groups.
+
+```
 @Component({
     selector: "app-container",
     template: `<ejs-symbolpalette id="symbolpalette" width="100%" height="700px">
@@ -50,7 +52,7 @@ The following code example illustrates how to define symbols in a palette and ho
 
 ## Add connectors in symbol palette
 
-Connectors can be added to the symbol palette by defining them in the symbols array of the palette. 
+Connectors can be added to the symbol palette by defining them in the symbols array of the palette.
 The following example shows how to render connectors in the symbol palette:
 
 {% tabs %}
@@ -106,7 +108,7 @@ Templates can be defined either as strings or functions and assigned to the node
 
 ## Drag and drop symbols from palette to diagram
 
-To drag and drop symbols from the palette to the diagram canvas, perform a mousedown action on the desired symbol in the palette, drag it to the desired location on the diagram canvas, and release the mouse button to drop it.
+To drag and drop symbols from the palette to the diagram canvas, press and hold the mouse button on the desired symbol in the palette. Drag it to the desired location on the diagram canvas, then release the mouse button to drop it.
 
 ![Drag and drop symbols](../images/symbol-palette-drag-drop.gif)
 
@@ -164,30 +166,12 @@ Symbols can be removed from the palette at runtime using the public method [`rem
   
 {% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/symbol-rmv" %}
 
-## Symbol defaults
-
-While adding more symbols such as nodes and connectors to the palette, you can define the default settings for those objects using the [`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel#getnodedefaults) and the [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel#getconnectordefaults) properties of symbol palette.
-These properties allow you to specify default configurations for nodes and connectors, ensuring consistency and saving time when adding multiple symbols. By setting these properties, you can predefine attributes such as size, color, shape for nodes and line style, thickness, for connectors. 
-
-In the following example, the fill color of node and target decorator shape of connector is defined in getNodeDefaults and getConnectorDefaults respectively.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/palettes/default-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/palettes/default-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/default-cs1" %}
-
-### Add palettes at runtime
+## Add palettes at runtime
 
 You can dynamically add palettes to the symbol palette at runtime to enhance flexibility and customization. This allows you to introduce new groups of symbols as needed without having to reload or reinitialize the diagram. The [`addPalettes`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#addpalettes) method of the symbol palette enables you to create and configure new palettes programmatically. This method takes parameters that define the palette's properties, such as the palette `ID`, `title`, and the `symbols` it contains.
 
 Follow the example below to see how to add a palette at runtime:
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/palettes/palette-add/src/app.component.ts %}
@@ -241,7 +225,14 @@ The [`fit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolI
 
 The `refresh` method allows you to refresh the symbols dynamically in the SymbolPalette.
 
-```ts
+```
 //To refresh the symbols in symbol palette
 symbolPalette.refresh();
 ```
+
+## See also
+
+- [Symbol palette customization](./palette-customization)
+- [Symbol palette events](./palette-events)
+- [Nodes](../nodes)
+- [Connectors](../connectors/connector-interaction)

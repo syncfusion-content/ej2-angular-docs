@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Style in Angular Range Slider | Syncfusion
-description: Customize the Angular Range Slider track, handle, limits, ticks, and buttons with CSS overrides for colors, sizes, and visual styling.
+title: Style in Angular Slider | Syncfusion
+description: Customize the Angular Slider track, handle, limits, ticks, and buttons with CSS overrides for colors, sizes, and visual styling.
 platform: ej2-angular
-control: Range Slider 
+control: Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Range Slider
+# Style in Angular Slider
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
-## Customizing the slider track
+## Customizing the Angular Slider track
 
-Use the following CSS to customize the slider track.
+Use the following CSS to customize the Angular Slider track.
 
 ```css
 .e-control-wrapper.e-slider-container.e-horizontal .e-slider-track {
@@ -23,7 +23,7 @@ Use the following CSS to customize the slider track.
 }
 ```
 
-## Customizing the slider handle
+## Customizing the Angular Slider handle
 
 Use the following CSS to customize the slider handle properties.
 
@@ -35,7 +35,7 @@ Use the following CSS to customize the slider handle properties.
 }
 ```
 
-## Customizing the slider limits
+## Customizing the Angular Slider limits
 
 Use the following CSS to customize the slider limits.
 
@@ -45,7 +45,7 @@ Use the following CSS to customize the slider limits.
 }
 ```
 
-## Customizing the slider ticks
+## Customizing the Angular Slider ticks
 
 Use the following CSS to customize the slider ticks.
 
@@ -56,7 +56,7 @@ Use the following CSS to customize the slider ticks.
 }
 ```
 
-## Customizing the slider buttons
+## Customizing the Angular Slider buttons
 
 Use the following CSS to customize the slider buttons.
 

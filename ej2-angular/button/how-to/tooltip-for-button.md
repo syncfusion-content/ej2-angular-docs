@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to tooltip for button in Angular Button
 
-Tooltip can be shown on button hover and it can be achieved by setting `title` attribute.
+Tooltip can be shown on Angular Button hover and it can be achieved by setting `title` attribute.
 
-The following snippets illustrates how to show tooltip on button hover.
+The following snippets illustrates how to show tooltip on Angular Button hover.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

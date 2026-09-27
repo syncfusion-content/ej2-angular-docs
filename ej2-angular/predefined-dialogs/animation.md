@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Predefined Dialogs
 
-Predefined dialogs can be animated during open and close actions. Customize animation using the `animationSettings` property to configure `delay`, `duration`, and `effect`.
+Angular Predefined dialogs can be animated during open and close actions. Customize animation using the `animationSettings` property to configure `delay`, `duration`, and `effect`.
 
 The following sample demonstrates the `Zoom` effect. The dialog opens with `ZoomIn` and closes with `ZoomOut`.
 

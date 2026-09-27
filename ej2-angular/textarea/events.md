@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Events in Angular TextArea
 
-This section describes the TextArea events that will be triggered when appropriate actions are performed. The following events are available in the TextArea component.
+This section describes the Angular TextArea events that will be triggered when appropriate actions are performed. The following events are available in the Angular TextArea component.
 
 ## Created Event
 
-The TextArea component triggers the [created](https://ej2.syncfusion.com/angular/documentation/api/textarea/#created) event when the component is created and initialized. Use this event to perform actions immediately after the TextArea becomes available.
+The Angular TextArea component triggers the [created](https://ej2.syncfusion.com/angular/documentation/api/textarea/#created) event when the component is created and initialized. Use this event to perform actions immediately after the Angular TextArea becomes available.
 
 ```typescript
 
@@ -38,7 +38,7 @@ export class AppComponent {
 
 ## Input Event
 
-The TextArea component triggers the [input](https://ej2.syncfusion.com/angular/documentation/api/textarea/#input) event each time the textarea value changes. Use this event to respond to real-time content modifications.
+The Angular TextArea component triggers the [input](https://ej2.syncfusion.com/angular/documentation/api/textarea/#input) event each time the textarea value changes. Use this event to respond to real-time content modifications.
 The [InputEventArgs](https://ej2.syncfusion.com/angular/documentation/api/textbox/InputEventArgs/) parameter provides details about the input event.
 
 ```typescript
@@ -64,7 +64,7 @@ export class AppComponent {
 
 ## Change Event
 
-The TextArea component triggers the [change](https://ej2.syncfusion.com/angular/documentation/api/textarea/#change) event when the textarea content changes and loses focus. Use this event to execute actions in response to user-made changes.
+The Angular TextArea component triggers the [change](https://ej2.syncfusion.com/angular/documentation/api/textarea/#change) event when the textarea content changes and loses focus. Use this event to execute actions in response to user-made changes.
 The [ChangedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/textbox/ChangedEventArgs/) parameter provides details about the changes to the textarea value.
 
 ```typescript
@@ -90,7 +90,7 @@ export class AppComponent {
 
 ## Focus Event
 
-The TextArea component triggers the [focus](https://ej2.syncfusion.com/angular/documentation/api/textarea/#focus) event when the textarea gains focus. Use this event to execute actions when the user interacts with the TextArea.
+The Angular TextArea component triggers the [focus](https://ej2.syncfusion.com/angular/documentation/api/textarea/#focus) event when the textarea gains focus. Use this event to execute actions when the user interacts with the Angular TextArea.
 The [FocusInEventArgs](https://ej2.syncfusion.com/angular/documentation/api/textbox/FocusInEventArgs/) parameter provides details about the focus event.
 
 ```typescript
@@ -100,7 +100,7 @@ import { FocusInEventArgs } from '@syncfusion/ej2-angular-inputs';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render TextArea component. -->
+  template: `<!-- To Render Angular TextArea component. -->
                 <div class="wrap">
                   <ejs-textarea id="default" (focus)="focusHandler($event)"/>
                 </div>`
@@ -116,7 +116,7 @@ export class AppComponent {
 
 ## Blur Event
 
-The TextArea component triggers the [blur](https://ej2.syncfusion.com/angular/documentation/api/textarea/#blur) event when the textarea loses focus. Use this event to execute actions when the user moves focus away from the TextArea.
+The Angular TextArea component triggers the [blur](https://ej2.syncfusion.com/angular/documentation/api/textarea/#blur) event when the textarea loses focus. Use this event to execute actions when the user moves focus away from the Angular TextArea.
 The [FocusOutEventArgs](https://ej2.syncfusion.com/angular/documentation/api/textbox/FocusOutEventArgs/) parameter provides details about the blur event.
 
 ```typescript
@@ -126,7 +126,7 @@ import { FocusOutEventArgs } from '@syncfusion/ej2-angular-inputs';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render TextArea component. -->
+  template: `<!-- To Render Angular TextArea component. -->
                 <div class="wrap">
                   <ejs-textarea id="default" (blur)="blurHandler($event)"/>
                 </div>`
@@ -142,7 +142,7 @@ export class AppComponent {
 
 ## Destroyed Event
 
-The TextArea component triggers the [destroyed](https://ej2.syncfusion.com/angular/documentation/api/textarea/#destroyed) event when the component is destroyed.
+The Angular TextArea component triggers the [destroyed](https://ej2.syncfusion.com/angular/documentation/api/textarea/#destroyed) event when the component is destroyed.
 
 ```typescript
 
@@ -150,7 +150,7 @@ import { Component } from '@angular/core';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render TextArea component. -->
+  template: `<!-- To Render Angular TextArea component. -->
                 <div class="wrap">
                     <ejs-textarea id="default" (destroyed)="destroyed()></ejs-textarea>
                 </div>`

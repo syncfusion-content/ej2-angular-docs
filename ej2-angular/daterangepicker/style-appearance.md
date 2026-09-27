@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
-## Customizing the appearance of DateRangePicker wrapper element
+## Customizing the appearance of Angular DateRangePicker wrapper element
 
 Use the following CSS to customize the appearance like height and font size of the wrapper element.
 
@@ -24,9 +24,9 @@ Use the following CSS to customize the appearance like height and font size of t
 }
 ```
 
-## Customizing the DateRangePicker icon element
+## Customizing the Angular DateRangePicker icon element
 
-Use the following CSS to customize the DateRangePicker icon element
+Use the following CSS to customize the Angular DateRangePicker icon element
 
 ```css
 /* To specify background color and font size */
@@ -36,9 +36,9 @@ Use the following CSS to customize the DateRangePicker icon element
 }
 ```
 
-## Customizing the DateRangePicker popup calendar header
+## Customizing the Angular DateRangePicker popup calendar header
 
-Use the following CSS to customize the DateRangePicker popup calendar header
+Use the following CSS to customize the Angular DateRangePicker popup calendar header
 
 ```css
 /* To specify background and height */
@@ -48,9 +48,9 @@ Use the following CSS to customize the DateRangePicker popup calendar header
 }
 ```
 
-## Customizing the DateRangePicker popup calendar header title
+## Customizing the Angular DateRangePicker popup calendar header title
 
-Use the following CSS to customize the DateRangePicker popup calendar header title
+Use the following CSS to customize the Angular DateRangePicker popup calendar header title
 
 ```css
 /* To specify color and font size */
@@ -60,9 +60,9 @@ Use the following CSS to customize the DateRangePicker popup calendar header tit
 }
 ```
 
-## Customizing the DateRangePicker popup calendar content
+## Customizing the Angular DateRangePicker popup calendar content
 
-Use the following CSS to customize the DateRangePicker popup calendar content
+Use the following CSS to customize the Angular DateRangePicker popup calendar content
 
 ```css
 /* To specify background color */
@@ -71,9 +71,9 @@ Use the following CSS to customize the DateRangePicker popup calendar content
 }
 ```
 
-## Customizing the DateRangePicker popup calendar content title
+## Customizing the Angular DateRangePicker popup calendar content title
 
-Use the following CSS to customize the DateRangePicker popup calendar content title
+Use the following CSS to customize the Angular DateRangePicker popup calendar content title
 
 ```css
 /* To specify color and font size */
@@ -83,9 +83,9 @@ Use the following CSS to customize the DateRangePicker popup calendar content ti
 }
 ```
 
-## Customizing the DateRangePicker popup calendar previous and next icon
+## Customizing the Angular DateRangePicker popup calendar previous and next icon
 
-Use the following CSS to customize the DateRangePicker popup calendar previous and next icon
+Use the following CSS to customize the Angular DateRangePicker popup calendar previous and next icon
 
 ```css
 /* To specify font size */
@@ -94,9 +94,9 @@ Use the following CSS to customize the DateRangePicker popup calendar previous a
 }
 ```
 
-## Customizing the DateRangePicker popup calendar date cell grid on hovering
+## Customizing the Angular DateRangePicker popup calendar date cell grid on hovering
 
-Use the following CSS to customize the DateRangePicker popup calendar date cell grid on hovering
+Use the following CSS to customize the Angular DateRangePicker popup calendar date cell grid on hovering
 
 ```css
 /* To specify background color and border */
@@ -106,9 +106,9 @@ Use the following CSS to customize the DateRangePicker popup calendar date cell 
 }
 ```
 
-## Customizing the DateRangePicker popup calendar primary button in footer
+## Customizing the Angular DateRangePicker popup calendar primary button in footer
 
-Use the following CSS to customize the DateRangePicker popup calendar primary button in footer
+Use the following CSS to customize the Angular DateRangePicker popup calendar primary button in footer
 
 ```css
 /* To specify background color and border color */
@@ -118,9 +118,9 @@ Use the following CSS to customize the DateRangePicker popup calendar primary bu
 }
 ```
 
-## Customizing the DateRangePicker popup calendar cancel button in footer
+## Customizing the Angular DateRangePicker popup calendar cancel button in footer
 
-Use the following CSS to customize the DateRangePicker popup calendar cancel button in footer
+Use the following CSS to customize the Angular DateRangePicker popup calendar cancel button in footer
 
 ```css
 /* To specify background color, color, and border color */
@@ -131,9 +131,9 @@ Use the following CSS to customize the DateRangePicker popup calendar cancel but
 }
 ```
 
-## Customizing the footer element in the DateRangePicker popup calendar
+## Customizing the footer element in the Angular DateRangePicker popup calendar
 
-Use the following CSS to customize the DateRangePicker popup calendar footer element
+Use the following CSS to customize the Angular DateRangePicker popup calendar footer element
 
 ```css
 /* To specify background color, color, and border color */
@@ -143,9 +143,9 @@ Use the following CSS to customize the DateRangePicker popup calendar footer ele
 }
 ```
 
-## Customizing the selected date cell grid in the DateRangePicker popup calendar
+## Customizing the selected date cell grid in the Angular DateRangePicker popup calendar
 
-Use the following CSS to customize the selected date cell grid in the DateRangePicker popup calendar
+Use the following CSS to customize the selected date cell grid in the Angular DateRangePicker popup calendar
 
 ```css
 /* To specify background and border */
@@ -157,7 +157,7 @@ Use the following CSS to customize the selected date cell grid in the DateRangeP
 
 ## Full screen mode support in mobiles and tablets
 
-The DateRangePicker component's full-screen mode feature enables users to view the component popup element in full-screen mode on mobile devices with improved visibility and a better user experience. It is important to mention that this feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the DateRangePicker component, simply set the [fullScreenMode](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#fullScreenMode) API value to `true`. This action will extend the calendar and presets popup element to occupy the entire screen on mobile devices.
+The Angular DateRangePicker component's full-screen mode feature enables users to view the component popup element in full-screen mode on mobile devices with improved visibility and a better user experience. It is important to mention that this feature is exclusively available for mobile and tablet devices in both landscape and portrait orientations. To activate the full screen mode within the Angular DateRangePicker component, simply set the [fullScreenMode](https://ej2.syncfusion.com/angular/documentation/api/daterangepicker#fullScreenMode) API value to `true`. This action will extend the calendar and presets popup element to occupy the entire screen on mobile devices.
 
 ```javascript
 import { Component } from '@angular/core';

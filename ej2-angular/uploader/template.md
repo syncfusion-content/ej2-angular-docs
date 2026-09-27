@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Template in Angular Uploader | Syncfusion
-description: Customize the Angular Uploader file list, buttons, and icons with the template property and showFileList, and trigger upload or remove from custom layouts.
+title: Template in Angular File Upload | Syncfusion
+description: Customize the Angular File Upload file list, buttons, and icons with the template property and showFileList, and trigger upload or remove from custom layouts.
 platform: ej2-angular
 control: Template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Uploader
+# Template in Angular File Upload
 
-You can customize the Uploader's appearance using templates and custom buttons.
+You can customize the Angular File Upload's appearance using templates and custom buttons.
 
 ## File list template
 
@@ -52,7 +52,7 @@ The following example demonstrates the implementation:
   
 {% previewsample "page.domainurl/samples/uploader/cus_template-cs1" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to customize the Uploader with file-list and custom templates.
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to customize the Angular File Upload with file-list and custom templates.
 
 ## See also
 

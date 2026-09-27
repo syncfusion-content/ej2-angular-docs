@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Icons
 
-To place the icon on a list box, set the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/list-box/fieldSettingsModel/#iconcss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the list.
+To place the icon on a Angular ListBox, set the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/list-box/fieldSettingsModel/#iconcss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the list.
 
 In the following sample, icon classes are mapped with `iconCss` field.
 
@@ -32,7 +32,7 @@ In the following sample, icon classes are mapped with `iconCss` field.
 
 ListBox items can be customized according to the requirement using [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#itemtemplate) property.
 
-In the following sample, the items in the cart are displayed using list box template,
+In the following sample, the items in the cart are displayed using Angular ListBox template,
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

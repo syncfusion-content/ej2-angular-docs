@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Value Binding in Angular MultiSelect Dropdown
 
-Value binding in the MultiSelect component allows you to associate data values with each list item, enabling efficient management and retrieval of selected values programmatically. The MultiSelect component provides flexibility in binding both primitive data types and complex objects to meet various application requirements.
+Value binding in the Angular MultiSelect Dropdown component allows you to associate data values with each list item, enabling efficient management and retrieval of selected values programmatically. The Angular MultiSelect Dropdown component provides flexibility in binding both primitive data types and complex objects to meet various application requirements.
 
 ## Binding Primitive Data Types
 
-The MultiSelect component supports binding primitive data types such as strings and numbers. You can bind local primitive data arrays, fetch and bind data from remote sources, or supply custom data. Bind primitive values to the [`value`](../api/multi-select#value) property of the MultiSelect.
+The Angular MultiSelect Dropdown component supports binding primitive data types such as strings and numbers. You can bind local primitive data arrays, fetch and bind data from remote sources, or supply custom data. Bind primitive values to the [`value`](../api/multi-select#value) property of the Angular MultiSelect Dropdown.
 
 Primitive data types include:
 
@@ -42,7 +42,7 @@ The following sample demonstrates preselected values for primitive data types:
 
 ## Binding Object Data Types
 
-The MultiSelect component supports object binding for datasets containing complex objects. When [`allowObjectBinding`](../api/multi-select#allowobjectbinding) is set to `true`, the component's [`value`](../api/multi-select#value) property contains objects of the same type as the selected items from the data source. This enables binding arrays of objects from local sources, remote endpoints, or custom data providers.
+The Angular MultiSelect Dropdown component supports object binding for datasets containing complex objects. When [`allowObjectBinding`](../api/multi-select#allowobjectbinding) is set to `true`, the component's [`value`](../api/multi-select#value) property contains objects of the same type as the selected items from the data source. This enables binding arrays of objects from local sources, remote endpoints, or custom data providers.
 
 The following sample demonstrates preselected values for object data types:
 

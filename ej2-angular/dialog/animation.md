@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Dialog
 
-The Dialog can be animated during open and close actions. Customize animation using the [`delay`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#delay), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#duration), and [`effect`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#effect) properties.
+The Angular Dialog can be animated during open and close actions. Customize animation using the [`delay`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#delay), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#duration), and [`effect`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationsettings#effect) properties.
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <tr>
 <td>
 delay</td><td>
-The Dialog animation will start with the mentioned delay (in milliseconds).</td></tr>
+The Angular Dialog animation will start with the mentioned delay (in milliseconds).</td></tr>
 <tr>
 <td>
 duration</td><td>
@@ -25,7 +25,7 @@ Specifies the animation duration in milliseconds to complete one animation cycle
 <tr>
 <td>
 effect</td><td>
-Specifies the animation effects of Dialog open and close actions effect.
+Specifies the animation effects of Angular Dialog open and close actions effect.
 <br /><br />
 List of supported animation effects:
 <br />
@@ -33,11 +33,11 @@ List of supported animation effects:
 'FlipXUp' | 'FlipYLeft' | 'FlipYRight' | 'SlideBottom' | 'SlideLeft' | 'SlideRight' | 'SlideTop' |
 'Zoom'| 'None'
 <br /><br />
-If the user sets ‘Fade’ effect, then the Dialog will open with ‘FadeIn’ effect and close with ‘FadeOut’ effect
+If the user sets ‘Fade’ effect, then the Angular Dialog will open with ‘FadeIn’ effect and close with ‘FadeOut’ effect
 </td></tr>
 </table>
 
-The following sample demonstrates the `Zoom` effect. The dialog opens with `ZoomIn` and closes with `ZoomOut`.
+The following sample demonstrates the `Zoom` effect. The Angular Dialog opens with `ZoomIn` and closes with `ZoomOut`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

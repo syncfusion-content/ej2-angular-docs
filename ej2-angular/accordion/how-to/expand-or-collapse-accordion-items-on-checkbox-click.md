@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Accordion with checkbox in Angular Accordion | Syncfusion
 description: Toggle Angular Accordion items from a checkbox using the click, expanding events, and the expandItem method for centralized control.
@@ -14,7 +14,7 @@ The Angular Accordion component typically expands or collapses items when clicki
 
 To implement this, ensure the `@syncfusion/ej2-angular-navigations` and `@syncfusion/ej2-angular-buttons` packages are installed. Use the Accordion’s [`click`](https://ej2.syncfusion.com/angular/documentation/api/accordion#click) and [`expanding`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expanding) events, along with the [`expandItem`](https://ej2.syncfusion.com/angular/documentation/api/accordion#expanditem) method, to manage item states. The checkbox’s [`change`](https://ej2.syncfusion.com/angular/documentation/api/check-box#change) event triggers the logic to expand or collapse items based on its state.
 
-The example below demonstrates a checkbox controlling the expand/collapse state of Accordion items.
+The example below demonstrates a checkbox controlling the expand/collapse state of Angular Accordion items.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}

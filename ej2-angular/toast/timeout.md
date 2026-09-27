@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Timeout in Angular Toast
 
-Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast/#timeout) property, toast will live till the timeOut reaches without user interaction, a timeOut value was considered as the millisecond.
+Angular Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast#timeout) property, Angular Toast will live till the timeOut reaches without user interaction, a timeOut value was considered as the millisecond.
 
 * `timeOut` delay can be visually represented through [`Progress Bar`](./config#progress-bar).
 
-* [`extendedTimeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast/#extendedtimeout) property can make how long the toast will display after a user hovers over it.
+* [`extendedTimeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast#extendedtimeout) property can make how long the Angular Toast will display after a user hovers over it.
 
-> You can terminate the process by using  `showCloseButton` property for destroying toast at any time.
+> You can terminate the process by using  `showCloseButton` property for destroying Angular Toast at any time.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -30,9 +30,9 @@ Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/doc
   
 {% previewsample "page.domainurl/samples/toast/toast-cs20" %}
 
-## Static toast
+## Static Angular Toast
 
-We can prevent auto hiding in a toast as visible like static. For this, we need to set zero (`0`) value in timeOut Property.
+We can prevent auto hiding in a Angular Toast as visible like static. For this, we need to set zero (`0`) value in timeOut Property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -48,4 +48,4 @@ We can prevent auto hiding in a toast as visible like static. For this, we need 
 
 ## See Also
 
-* [Hide the toast on click](./how-to/close-the-toast-with-click-tap)
+* [Hide the Angular Toast on click](./how-to/close-the-toast-with-click-tap)

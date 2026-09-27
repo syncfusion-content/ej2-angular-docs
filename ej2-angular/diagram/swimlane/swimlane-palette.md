@@ -14,7 +14,7 @@ The Angular Diagram component provides comprehensive support for adding swimlane
 
 ## Add Swimlane to Palette
 
-The diagram component supports adding both swimlane containers and individual phases to the symbol palette. This enables users to drag and drop pre-configured swimlane elements into their diagrams.
+The Angular Diagram component supports adding both swimlane containers and individual phases to the symbol palette. This enables users to drag and drop pre-configured swimlane elements into their diagrams.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,9 +29,16 @@ The diagram component supports adding both swimlane containers and individual ph
 {% previewsample "page.domainurl/samples/diagram/swimlane/palette-cs1" %}
 
 
-### Drag and drop swimlane to palette
+## Drag and drop a swimlane from the palette
 
 * The drag and drop support for swimlane shapes has been provided.
 * Horizontal lanes can be added to vertical swimlanes, and vice versa.
-* The phase will only drop on swimlane shape with same orientation. The following image illustrates how to drag symbol from palette.
+* A phase can be dropped only onto a swimlane shape with the same orientation. The following image illustrates how to drag a symbol from the palette.
+
 ![Drag Symbol from Palette](../images/swimlane-drag-dropGif.gif)
+
+## See also
+
+- [Swimlane](./swim-lane)
+- [Symbol palette](../symbol-palette/symbol-palette)
+- [Symbol palette customization](../symbol-palette/palette-customization)

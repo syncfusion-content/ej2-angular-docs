@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Color Picker
 
-The ColorPicker component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the ColorPicker component.
+The Angular Color Picker component adheres to accessibility guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WAI-ARIA roles](https://www.w3.org/TR/wai-aria/#roles). The following table outlines the accessibility compliance status of the Angular Color Picker component.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -38,7 +38,7 @@ The ColorPicker component adheres to accessibility guidelines and standards incl
 
 ## WAI-ARIA attributes
 
-The ColorPicker component implements [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to ensure accessibility compliance. The following ARIA attributes are used in the ColorPicker component:
+The Angular Color Picker component implements [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to ensure accessibility compliance. The following ARIA attributes are used in the ColorPicker component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -52,7 +52,7 @@ The ColorPicker component implements [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/
 
 ## Keyboard interaction
 
-The ColorPicker component supports [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, enabling full functionality for users relying on assistive technologies or keyboard-only navigation. The following keyboard shortcuts are supported:
+The Angular Color Picker component supports [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, enabling full functionality for users relying on assistive technologies or keyboard-only navigation. The following keyboard shortcuts are supported:
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -65,9 +65,9 @@ The ColorPicker component supports [keyboard interaction](https://www.w3.org/WAI
 
 ## Ensuring accessibility
 
-The ColorPicker component's accessibility is validated using industry-standard tools including [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during automated testing.
+The Angular Color Picker component's accessibility is validated using industry-standard tools including [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during automated testing.
 
-The accessibility compliance of the ColorPicker is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/color-picker.html) in a new window to evaluate the ColorPicker's accessibility with accessibility tools.
+The accessibility compliance of the Angular Color Picker is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/color-picker.html) in a new window to evaluate the ColorPicker's accessibility with accessibility tools.
 
 {% previewsample "page.domainurl/samples/colorpicker/getting-started/default-cs1" %}
 

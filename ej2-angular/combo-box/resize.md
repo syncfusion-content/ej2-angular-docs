@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Popup Resizing in Angular ComboBox
 
-You can dynamically adjust the size of the popup in the ComboBox component by using the [AllowResize](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
+You can dynamically adjust the size of the popup in the Angular ComboBox component by using the [AllowResize](https://ej2.syncfusion.com/angular/documentation/api/combo-box/index-default#allowresize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
 
 The following sample illustrates the implementation of the Popup Resize feature.
 
@@ -25,4 +25,4 @@ The following sample illustrates the implementation of the Popup Resize feature.
 {% endtabs %}
   
 
-![Resizing in ComboBox Component](../images/combobox-resize.gif)
+![Resizing in Angular ComboBox Component](../images/combobox-resize.gif)

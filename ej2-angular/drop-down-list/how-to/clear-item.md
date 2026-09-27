@@ -12,10 +12,10 @@ domainurl: ##DomainURL##
 
 You can clear the selected item in the following two ways.
 
-By clicking on the `clear icon` which is shown in the DropDownList element, you can clear the selected item in DropDownList through **interaction**. By using [`showClearButton`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#showclearbutton)
+By clicking on the `clear icon` which is shown in the DropDownList element, you can clear the selected item in Angular Dropdown List through **interaction**. By using [`showClearButton`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#showclearbutton)
 property, you can enable the clear icon in the DropDownList element.
 
-**Programmatically** you can set `null` value to any one of the index, text, or value properties to clear the selected item in DropDownList.
+**Programmatically** you can set `null` value to any one of the index, text, or value properties to clear the selected item in Angular Dropdown List.
 
 The following example demonstrates how to clear the selected item in DropDownList.
 

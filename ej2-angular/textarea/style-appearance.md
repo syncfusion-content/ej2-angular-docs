@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular TextArea
 
-Adjust the size of the TextArea by applying specific CSS classes:
+Adjust the size of the Angular TextArea by applying specific CSS classes:
 
 | Property  | Description |
 | -- | -- |
 | Small  | Add the `e-small` class to render a smaller-sized TextArea. |
 | Bigger | Add the `e-bigger` class to render a larger-sized TextArea. |
 
-Apply these classes to customize the TextArea appearance to match your application's design requirements.
+Apply these classes to customize the Angular TextArea appearance to match your application's design requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -33,7 +33,7 @@ Apply these classes to customize the TextArea appearance to match your applicati
 
 ## Filled and Outline Mode
 
-Enable filled and outline modes in the TextArea component by adding the `e-outline` or `e-filled` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textarea/#cssClass) property. These classes allow you to choose between filled or outline appearance, aligning with your application's design.
+Enable filled and outline modes in the Angular TextArea component by adding the `e-outline` or `e-filled` class to the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/textarea/#cssClass) property. These classes allow you to choose between filled or outline appearance, aligning with your application's design.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -51,7 +51,7 @@ Enable filled and outline modes in the TextArea component by adding the `e-outli
 
 ## Custom Styling with CssClass Property in TextArea
 
-The `cssClass` property provides a powerful way to apply custom styling to the TextArea component. Use this property to apply custom CSS classes to the textarea container, enabling control over styling properties such as color, padding, margins, borders, and more.
+The `cssClass` property provides a powerful way to apply custom styling to the Angular TextArea component. Use this property to apply custom CSS classes to the textarea container, enabling control over styling properties such as color, padding, margins, borders, and more.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -67,7 +67,7 @@ The `cssClass` property provides a powerful way to apply custom styling to the T
 
 ## Setting the Disabled State in TextArea
 
-Disable the TextArea using the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textarea/#enabled) property. Set this property to `false` to disable the textarea and prevent user interaction.
+Disable the Angular TextArea using the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textarea/#enabled) property. Set this property to `false` to disable the textarea and prevent user interaction.
 
 ```typescript
 
@@ -85,9 +85,9 @@ export class AppComponent { }
 
 ```
 
-## Set the Read-Only TextArea
+## Set the Read-Only Angular TextArea
 
-Make the TextArea read-only using the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textarea/#readonly) property. Set this property to `true` to prevent users from editing the textarea content.
+Make the Angular TextArea read-only using the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textarea/#readonly) property. Set this property to `true` to prevent users from editing the textarea content.
 
 ```typescript
 
@@ -95,7 +95,7 @@ import { Component } from '@angular/core';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render TextArea component. -->
+  template: `<!-- To Render Angular TextArea component. -->
                 <div class="wrap">
                   <ejs-textarea id='default' readonly="true" value="Readonly"></ejs-textarea>
                 </div>`
@@ -105,9 +105,9 @@ export class AppComponent { }
 
 ```
 
-## Set the Rounded Corner in TextArea
+## Set the Rounded Corner in Angular TextArea
 
-Render the TextArea with rounded corners by adding the `e-corner` class to the textarea container.
+Render the Angular TextArea with rounded corners by adding the `e-corner` class to the textarea container.
 
 > Rounded corners are visible only in box model textarea components.
 
@@ -117,7 +117,7 @@ import { Component } from '@angular/core';
  
 @Component({
   selector: 'app-root',
-  template: `<!-- To Render TextArea component. -->
+  template: `<!-- To Render Angular TextArea component. -->
                 <div class="wrap">
                   <div class="e-input-group e-corner">
                       <textarea class="e-input" placeholder="Enter your comments"></textarea>
@@ -129,9 +129,9 @@ export class AppComponent { }
 
 ```
 
-## Static Clear Button in TextArea
+## Static Clear Button in Angular TextArea
 
-Display a static clear button in the TextArea component by adding the `e-static-clear` class to the `cssClass` property. This class ensures the clear button remains visible at all times, allowing users to easily clear the textarea content without focusing on the control.
+Display a static clear button in the Angular TextArea component by adding the `e-static-clear` class to the `cssClass` property. This class ensures the clear button remains visible at all times, allowing users to easily clear the textarea content without focusing on the control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -145,9 +145,9 @@ Display a static clear button in the TextArea component by adding the `e-static-
   
 {% previewsample "page.domainurl/samples/textarea/style-appearance-cs4" %}
 
-## Customize the TextArea Background Color and Text Color
+## Customize the Angular TextArea Background Color and Text Color
 
-Customize TextArea styles such as background color, text color, and border color by overriding the default styles to achieve your desired appearance.
+Customize Angular TextArea styles such as background color, text color, and border color by overriding the default styles to achieve your desired appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -161,7 +161,7 @@ Customize TextArea styles such as background color, text color, and border color
   
 {% previewsample "page.domainurl/samples/textarea/style-appearance-cs5" %}
 
-## Change the Floating Label Color of the TextArea
+## Change the Floating Label Color of the Angular TextArea
 
 Change the floating label color for both `success` and `warning` validation states by applying the following CSS styles.
 
@@ -197,7 +197,7 @@ Change the floating label color for both `success` and `warning` validation stat
 
 ## Adding mandatory asterisk to placeholder
 
-To add a mandatory asterisk (*) to the placeholder in the TextArea component, you can utilize CSS to append the asterisk after the placeholder text.
+To add a mandatory asterisk (*) to the placeholder in the Angular TextArea component, you can utilize CSS to append the asterisk after the placeholder text.
 
 ```css
 

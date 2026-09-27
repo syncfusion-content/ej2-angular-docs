@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Asynchronous Upload in Angular Uploader | Syncfusion
-description: Configure asynchronous file uploads in the Angular Uploader using save and remove URLs, with support for auto, manual, single, and multiple file selection.
+title: Asynchronous Upload in Angular File Upload | Syncfusion
+description: Configure asynchronous file uploads in the Angular File Upload using save and remove URLs, with support for auto, manual, single, and multiple file selection.
 platform: ej2-angular
 control: Async 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Asynchronous Upload in Angular Uploader
+# Asynchronous Upload in Angular File Upload
 
-The Uploader component supports asynchronous file uploads to the server.
+The Angular File Upload component supports asynchronous file uploads to the server.
 The upload process requires save and remove action URLs to manage file operations on the server.
 
     *   The save action is necessary to handle the upload operation.
@@ -20,7 +20,7 @@ Files can be uploaded automatically or manually. For more information, refer to 
 
 ## Multiple file upload
 
-By default, the Uploader component allows you to select and upload multiple files simultaneously.
+By default, the Angular File Upload component allows you to select and upload multiple files simultaneously.
 The selected files are displayed in a list and persist until you clear them by clicking the clear button in the footer.
 The `multiple` attribute is added to the input element to enable multiple file selection. The following example demonstrates multiple file upload configuration.
 
@@ -267,10 +267,10 @@ public void Remove(IFormFile UploadFiles)
 
 ## Auto upload
 
-By default, the Uploader processes the files to upload once the files are selected and added to the upload queue.
+By default, the Angular File Upload processes the files to upload once the files are selected and added to the upload queue.
 To upload manually, disable the `autoUpload` property.
 When you disable this property, you can use the action buttons to call upload all or clear all actions manually.
-You can change those buttons' text using the `buttons` property in the Uploader component.
+You can change those buttons' text using the `buttons` property in the Angular File Upload component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -286,7 +286,7 @@ You can change those buttons' text using the `buttons` property in the Uploader 
 
 ## Sequential upload
 
-By default, the Uploader component processes multiple files to upload simultaneously. When you enable the [sequentialUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#sequentialupload) property, the selected files are processed sequentially (one after the other) to the server. After a file completes—whether successfully or having failed—the next file uploads automatically. This feature helps reduce upload traffic and the chance of upload failure.
+By default, the Angular File Upload component processes multiple files to upload simultaneously. When you enable the [sequentialUpload](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#sequentialupload) property, the selected files are processed sequentially (one after the other) to the server. After a file completes—whether successfully or having failed—the next file uploads automatically. This feature helps reduce upload traffic and the chance of upload failure.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -302,7 +302,7 @@ By default, the Uploader component processes multiple files to upload simultaneo
 
 ## Preloaded files
 
-The Uploader component allows you to preload the list of files that are uploaded on the server.
+The Angular File Upload component allows you to preload the list of files that are uploaded on the server.
 The preloaded files are useful to view and remove the files from the server, which can be achieved by the `files` property.
 By default, the files are configured with the uploaded successfully state on rendering the file list.
 The following properties are mandatory to configure the preloaded files:
@@ -325,7 +325,7 @@ The following properties are mandatory to configure the preloaded files:
 
 ## Adding additional HTTP headers with upload action
 
-The Uploader component allows you to add additional headers to the `save` and `remove` action requests using the `uploading` and `removing` events, which helps to send a validation token on file upload. Access the current request and set the request header within these events.
+The Angular File Upload component allows you to add additional headers to the `save` and `remove` action requests using the `uploading` and `removing` events, which helps to send a validation token on file upload. Access the current request and set the request header within these events.
 
 The following code block shows how to add additional headers to the save and remove action requests.
 

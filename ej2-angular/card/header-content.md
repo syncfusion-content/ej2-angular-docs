@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Header
 
-The Card component supports headers containing titles, subtitles, and images to provide context and visual hierarchy. The header section is created by adding a `div` element with the `e-card-header` class.
+The Angular Card component supports headers containing titles, subtitles, and images to provide context and visual hierarchy. The header section is created by adding a `div` element with the `e-card-header` class.
 
-The Card provides the following elements and corresponding class definitions to include header content:
+The Angular Card provides the following elements and corresponding class definitions to include header content:
 
 Elements   | Description
 ------------ | -------------
@@ -31,7 +31,7 @@ Class   | Description
 
 ### Adding Title and Subtitle
 
-To add a header to the Card component, create a wrapper `div` element with the `e-card-header-caption` class.
+To add a header to the Angular Card component, create a wrapper `div` element with the `e-card-header-caption` class.
 
 * Place a `div` element with the `e-card-header-title` class inside the header caption to define the main title text.
 
@@ -39,7 +39,7 @@ To add a header to the Card component, create a wrapper `div` element with the `
 
 ### Header Image
 
-The Card header provides an option for adding images within the header section. Images are positioned either before or after the header caption based on the HTML element's position in the header structure.
+The Angular Card header provides an option for adding images within the header section. Images are positioned either before or after the header caption based on the HTML element's position in the header structure.
 
 * Add a header image by creating a `div` element with the `e-card-header-image` class, positioned either before or after the header caption wrapper element.
 
@@ -57,7 +57,7 @@ The Card header provides an option for adding images within the header section. 
 
 ## Content
 
-The content section in Card components holds text, images, links, and all possible HTML elements. Content is adaptable within the Card root element and provides flexibility for various content types.
+The content section in Angular Card components holds text, images, links, and all possible HTML elements. Content is adaptable within the Card root element and provides flexibility for various content types.
 
 * Create a `div` element with the class `e-card-content`.
 * Place the content `div` element within the Card root element or inside any Card inner elements.

@@ -19,10 +19,10 @@ For more details about template-driven Forms refer to:<https://angular.io/guide/
 
 * In angular forms mentioning the name is must to process as form elements.
 
-* Mention the `name` attribute to DateRangePicker element which will be used to identify the form element. To register an DateRangePicker element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the DateRangePicker as a form element.
+* Mention the `name` attribute to DateRangePicker element which will be used to identify the form element. To register an DateRangePicker element to ngForm,  give the ngModel  to it so the FormsModule will  automatically detect the Angular DateRangePicker as a form element.
 After that, the DateRangePicker value will be selected based on the ngModel value.
 
-The following example  demonstrates template driven forms with DateRangePicker component.
+The following example  demonstrates template driven forms with Angular DateRangePicker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

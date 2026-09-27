@@ -1,18 +1,18 @@
 ---
 layout: post
-title: How to upload files programmatically in Angular Uploader | Syncfusion
-description: Trigger file uploads programmatically in the Angular Uploader by calling the upload method on selected files from getFilesData, with or without arguments.
+title: How to upload files programmatically in Angular File Upload | Syncfusion
+description: Trigger file uploads programmatically in the Angular File Upload by calling the upload method on selected files from getFilesData, with or without arguments.
 platform: ej2-angular
 control: Achieve file upload programmatically 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to upload files programmatically in Angular Uploader
+# How to upload files programmatically in Angular File Upload
 
 Upload files programmatically using the [upload](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#upload) method. Retrieve the selected files using the public [getFilesData](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#getfilesdata) method.
 
-To call these methods, first obtain the Uploader instance using the `@ViewChild` decorator, where the selector must match the template reference variable assigned to the `ejs-uploader` element (for example, `#defaultupload`).
+To call these methods, first obtain the Angular File Upload instance using the `@ViewChild` decorator, where the selector must match the template reference variable assigned to the `ejs-uploader` element (for example, `#defaultupload`).
 
 > Programmatic upload is useful when `autoUpload` is set to `false`. In that case, selected files are not uploaded automatically and must be uploaded manually via the `upload` method.
 

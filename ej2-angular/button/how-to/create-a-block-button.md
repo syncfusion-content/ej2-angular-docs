@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to create a block button in Angular Button
 
-You can customize a button into a block button that will span the entire width of its parent element.
+You can customize a Angular Button into a block button that will span the entire width of its parent element.
 To create a block button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property as `e-block`.
 
 {% tabs %}

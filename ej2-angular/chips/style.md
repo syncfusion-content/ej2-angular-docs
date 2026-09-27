@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
 
-## Customizing the Chips text
+## Customizing the Angular Chips text
 
-Use the following CSS to customize the Chips text properties.
+Use the following CSS to customize the Angular Chips text properties.
 
 ```css
 .e-chip .e-chip-text {
@@ -24,9 +24,9 @@ Use the following CSS to customize the Chips text properties.
 }
 ```
 
-## Customizing the Chips icon
+## Customizing the Angular Chips icon
 
-Use the following CSS to customize the Chips icon properties.
+Use the following CSS to customize the Angular Chips icon properties.
 
 ```css
 .e-chip .e-icon {
@@ -35,9 +35,9 @@ Use the following CSS to customize the Chips icon properties.
 }
 ```
 
-## Customizing the Chips delete button
+## Customizing the Angular Chips delete button
 
-Use the following CSS to customize the Chips delete button.
+Use the following CSS to customize the Angular Chips delete button.
 
 ```css
 .e-chip-list .e-chip .e-chip-delete.e-dlt-btn {
@@ -46,9 +46,9 @@ Use the following CSS to customize the Chips delete button.
 }
 ```
 
-## Customizing the Chips outline
+## Customizing the Angular Chips outline
 
-Use the following CSS to customize the Chips outline.
+Use the following CSS to customize the Angular Chips outline.
 
 ```css
 .e-chip-list .e-chip.e-outline {
@@ -57,27 +57,27 @@ Use the following CSS to customize the Chips outline.
 }
 ```
 
-## Customizing the Chips on selection
+## Customizing the Angular Chips on selection
 
-Use the following CSS to customize the Chips on selection.
+Use the following CSS to customize the Angular Chips on selection.
 
 ```css
-/* To customize single Chips on selection */
+/* To customize single Angular Chips on selection */
 .e-chip-list.e-selection .e-chip.e-active {
     background-color: #ffca1c;
     color: #e3165b;
 }
 
-/* To customize multiple Chips on selection */
+/* To customize multiple Angular Chips on selection */
 .e-chip-list .e-chip.e-active {
     background-color: #e3165b;
     color: white;
 }
 ```
 
-## Customizing the Chips avatar text
+## Customizing the Angular Chips avatar text
 
-Use the following CSS to customize the Chips avatar text properties.
+Use the following CSS to customize the Angular Chips avatar text properties.
 
 ```css
 .e-chip-list .e-chip .e-chip-avatar {
@@ -86,9 +86,9 @@ Use the following CSS to customize the Chips avatar text properties.
 }
 ```
 
-## Customizing the Chips height
+## Customizing the Angular Chips height
 
-Use the following CSS to customize the Chips height.
+Use the following CSS to customize the Angular Chips height.
 
 ```css
 .e-chip-list.e-chip {

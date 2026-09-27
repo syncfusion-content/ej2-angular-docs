@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Validation in Angular Uploader | Syncfusion
-description: Restrict Angular Uploader selections by file extension and size using allowedExtensions, minFileSize, and maxFileSize, with validation on select and drop.
+title: Validation in Angular File Upload | Syncfusion
+description: Restrict Angular File Upload selections by file extension and size using allowedExtensions, minFileSize, and maxFileSize, with validation on select and drop.
 platform: ej2-angular
 control: Validation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Validation in Angular Uploader
+# Validation in Angular File Upload
 
-The Uploader component validates selected files by file extension and size using the `allowedExtensions`, `minFileSize`, and `maxFileSize` properties. Files can be validated before uploading to the server and excluded from the upload process if needed. You can also filter the native browser dialog by setting the `accept` attribute on the input element. Validation occurs during both file selection and drag-and-drop operations.
+The Angular File Upload component validates selected files by file extension and size using the `allowedExtensions`, `minFileSize`, and `maxFileSize` properties. Files can be validated before uploading to the server and excluded from the upload process if needed. You can also filter the native browser dialog by setting the `accept` attribute on the input element. Validation occurs during both file selection and drag-and-drop operations.
 
 ## File type
 
-You can restrict file uploads to specific file types using the `allowedExtensions` property. Specify extensions as a comma-separated collection (for example, `.pdf,.doc,.docx`). The Uploader filters selected or dropped files against the specified types and processes only matching files. You can also enable validation by setting the `accept` attribute on the input element.
+You can restrict file uploads to specific file types using the `allowedExtensions` property. Specify extensions as a comma-separated collection (for example, `.pdf,.doc,.docx`). The Angular File Upload filters selected or dropped files against the specified types and processes only matching files. You can also enable validation by setting the `accept` attribute on the input element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -30,7 +30,7 @@ You can restrict file uploads to specific file types using the `allowedExtension
 
 ## File size
 
-The Uploader component validates files based on their size, preventing uploads of files that are too large or too small. File size limits are specified in bytes using the `minFileSize` and `maxFileSize` properties (for example, `10000` equals 10 KB). By default, the minimum file size is 0 bytes and the maximum file size is 28.4 MB.
+The Angular File Upload component validates files based on their size, preventing uploads of files that are too large or too small. File size limits are specified in bytes using the `minFileSize` and `maxFileSize` properties (for example, `10000` equals 10 KB). By default, the minimum file size is 0 bytes and the maximum file size is 28.4 MB.
 
 > The effective maximum upload size is also bounded by the server's request-size limit (for example, ASP.NET's `maxRequestLength`/`maxAllowedContentLength`), so a `maxFileSize` larger than that limit will still fail server-side.
 
@@ -48,7 +48,7 @@ The Uploader component validates files based on their size, preventing uploads o
 
 ## Maximum number of files
 
-You can limit the number of files that can be uploaded using the `selected` event (typed as `SelectedEventArgs`). In the event arguments, retrieve the existing/already-added files using `getFilesData()` and the newly selected files from `args.filesData`. Modify the merged list as needed, assign the updated list to `args.modifiedFilesData`, and set `args.isModified = true` so the Uploader applies the modified list. The limit (shown as 5 in the example) is a configurable value.
+You can limit the number of files that can be uploaded using the `selected` event (typed as `SelectedEventArgs`). In the event arguments, retrieve the existing/already-added files using `getFilesData()` and the newly selected files from `args.filesData`. Modify the merged list as needed, assign the updated list to `args.modifiedFilesData`, and set `args.isModified = true` so the Angular File Upload applies the modified list. The limit (shown as 5 in the example) is a configurable value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -83,6 +83,6 @@ You can prevent duplicate file uploads using the `selected` event. Compare the s
 ## See also
 
 * [Validate image/* on drop](./how-to/validate-image-on-drop)
-* [Determine whether Uploader has file input (required validation)](./how-to/determine-whether-uploader-has-file-input)
+* [Determine whether Angular File Upload has file input (required validation)](./how-to/determine-whether-uploader-has-file-input)
 * [Check file size before uploading it](./how-to/check-file-size-before-uploading-it)
 * [Check the MIME type of file before uploading it](./how-to/check-the-mime-type-of-file-before-upload-it)

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to set disabled state in Angular Toggle Switch Button
 
-Switch can be disabled by setting the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/switch/#disabled) property to `true`.
+Angular Toggle Switch Button can be disabled by setting the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/switch/#disabled) property to `true`.
 
-The following example illustrates how to disable support in Switch component.
+The following example illustrates how to disable support in Angular Toggle Switch Button component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

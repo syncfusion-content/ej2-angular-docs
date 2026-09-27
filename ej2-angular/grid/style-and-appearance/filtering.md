@@ -8,13 +8,17 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering Style in Angular Data Grid
+# Filtering Styles in Angular Data Grid
 
-Customize the appearance of filtering elements in the Syncfusion Angular Grid component using CSS. Below are examples for styling various filter bar elements, input fields, icons, dialog content, and Excel-style filter menus.
+Customize the appearance of filtering elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component using CSS. The following examples demonstrate styling the filter bar, filter icons, filter dialog, and Excel filter menu.
 
-## Customize the filter bar cell element
+## Customize filter bar styles
 
-The `.e-filterbarcell` class is used to style the filter bar cell element in the grid header.
+Use the following CSS selectors to customize the appearance of filter bar elements in the Angular Data Grid.
+
+### Filter bar cell
+
+Use the `.e-filterbarcell` class to style the filter bar cell element in the grid header.
 
 ```css
 .e-grid .e-filterbarcell {
@@ -24,9 +28,9 @@ The `.e-filterbarcell` class is used to style the filter bar cell element in the
 
 ![Filter bar cell element](../images/filter-bar-cell-element.png)
 
-## Customize the filter bar input element
+### Filter bar input
 
-The `.e-filterbarcell` and `.e-input` classes are used to style the filter bar input element.
+Use the `.e-filterbarcell` and `.e-input` classes to style the filter bar input element.
 
 ```css
 .e-grid .e-filterbarcell .e-input-group input.e-input{
@@ -36,9 +40,9 @@ The `.e-filterbarcell` and `.e-input` classes are used to style the filter bar i
 
 ![Filter bar input element](../images/filter-bar-input-element.png)
 
-## Customizing the filter bar input focus
+### Filter input focus
 
-The `.e-filterbarcell` and `.e-input-group.e-input-focus` classes are used to style the focused filter bar input element.
+Use the `.e-filterbarcell` and `.e-input-group.e-input-focus` classes to style the focused filter bar input element.
 
 ```css
 .e-grid .e-filterbarcell .e-input-group.e-input-focus{
@@ -48,9 +52,9 @@ The `.e-filterbarcell` and `.e-input-group.e-input-focus` classes are used to st
 
 ![Filter bar input focus](../images/filter-bar-input-element-focus.png)
 
-## Customizing the filter bar input clear icon
+### Filter input clear icon
 
-The `.e-clear-icon` class is used to style the clear icon element within the input group.
+Use the `.e-clear-icon` class to style the clear icon element within the input group.
 
 ```css
 .e-grid .e-filterbarcell .e-input-group .e-clear-icon::before {
@@ -62,7 +66,7 @@ The `.e-clear-icon` class is used to style the clear icon element within the inp
 
 ## Customize the grid filtering icon
 
-The `.e-icon-filter` class is used to style the filtering icon element in the grid header.
+Use the `.e-icon-filter` class to style the filtering icon element in the grid header.
 
 ```css
 .e-grid .e-icon-filter::before{
@@ -70,11 +74,15 @@ The `.e-icon-filter` class is used to style the filtering icon element in the gr
 }
 ```
 
-![Grid filtering icon](../images/grid-filtering-icon.png)
+![Data Grid filtering icon](../images/grid-filtering-icon.png)
 
-## Customizing the filter dialog content
+## Customize filter dialog appearance
 
-The `.e-filter-popup` `.e-dlg-content` classes are used to style the content element within the filter dialog.
+Use the following CSS selectors to customize the appearance of the filter dialog, including its content, footer, input fields, and buttons.
+
+### Dialog content
+
+Use the `.e-filter-popup` `.e-dlg-content` classes to style the content element within the filter dialog.
 
 ```css
 .e-grid .e-filter-popup .e-dlg-content {
@@ -84,9 +92,9 @@ The `.e-filter-popup` `.e-dlg-content` classes are used to style the content ele
 
 ![Filter dialog content](../images/filter-dialog-content.png)
 
-## Customizing the filter dialog footer
+### Dialog footer
 
-The `.e-filter-popup` `.e-footer-content` classes are used to style the footer element within the filter dialog.
+Use the `.e-filter-popup` `.e-footer-content` classes to style the footer element within the filter dialog.
 
 ```css
 .e-grid .e-filter-popup .e-footer-content {
@@ -96,9 +104,9 @@ The `.e-filter-popup` `.e-footer-content` classes are used to style the footer e
 
 ![Filter dialog footer](../images/filter-dialog-footer.png)
 
-## Customizing the filter dialog input element
+### Dialog input
 
-The `.e-filter-popup` and `.e-input` classes are used to style the input elements within the filter dialog.
+Use the `.e-filter-popup` and `.e-input` classes to style the input elements within the filter dialog.
 
 ```css
 .e-grid .e-filter-popup .e-input-group input.e-input{
@@ -108,9 +116,9 @@ The `.e-filter-popup` and `.e-input` classes are used to style the input element
 
 ![Filter dialog input element](../images/filter-dialog-input-element.png)
 
-## Customizing the filter dialog button element
+### Dialog buttons
 
-The `.e-filter-popup` and `.e-btn` classes are used to style the button elements within the filter dialog.
+Use the `.e-filter-popup` and `.e-btn` classes to style the button elements within the filter dialog.
 
 ```css
 .e-grid .e-filter-popup .e-btn{
@@ -120,9 +128,9 @@ The `.e-filter-popup` and `.e-btn` classes are used to style the button elements
 
 ![Filter dialog button element](../images/filter-dialog-button-element.png)
 
-## Customizing the excel filter dialog number filters element
+## Customize the excel filter dialog number filters element
 
-The `.e-filter-popup` `.e-contextmenu-wrapper ul` classes are used to style the number filter elements within the Excel filter dialog.
+Use the `.e-filter-popup` `.e-contextmenu-wrapper ul` classes to style the number filter elements within the Excel filter dialog.
 
 ```css
 .e-grid .e-filter-popup .e-contextmenu-wrapper ul{

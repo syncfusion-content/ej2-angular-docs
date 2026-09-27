@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 You can customize the  entire appearance of the input element and Calendar by using custom [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#cssclass) property.
 Also you can use the calendar's [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/renderDayCellEventArgs#renderdaycelleventargs) event to customize the appearance of the each day cell.
 
-Below is the list of classes that provides flexible way to customize the DatePicker component.
+Below is the list of classes that provides flexible way to customize the Angular DatePicker component.
 
 | **Class Name** | **Description** |
 | --- | --- |
@@ -67,7 +67,7 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 
 ## See Also
 
-* [Render DatePicker with CSS customization](./how-to/css-customization)
-* [How to disable the DatePicker control](./how-to/disable-placeholder-readonly)
-* [How to set read-only for DatePicker](./how-to/disable-placeholder-readonly)
-* [How to customize the DatePicker day header](./how-to/customize-the-datepicker-day-header)
+* [Render Angular DatePicker with CSS customization](./how-to/css-customization)
+* [How to disable the Angular DatePicker control](./how-to/disable-placeholder-readonly)
+* [How to set read-only for Angular DatePicker](./how-to/disable-placeholder-readonly)
+* [How to customize the Angular DatePicker day header](./how-to/customize-the-datepicker-day-header)

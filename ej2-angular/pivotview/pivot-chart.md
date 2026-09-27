@@ -3,14 +3,14 @@ layout: post
 title: Pivot Chart in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table renders 21 chart types, accumulation charts, drill operations, and label customization alongside the grid.
 platform: ej2-angular
-control: Pivot chart 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Pivot Chart in Angular Pivot Table
 
-The Pivot Chart in the Syncfusion Angular Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
+The Pivot Chart in the Syncfusion Angular Pivot Table component visualizes aggregated values in a graphical format. It provides essential options like drill down and drill up operations, 21 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
 Users can display the pivot chart component individually with pivot values and modify the report dynamically using the field list and grouping bar. The [`displayOption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayOptionModel) property in the Pivot Table allows users to control the visibility of both the grid and chart components. This property includes the following options:
 
@@ -39,7 +39,7 @@ The Pivot Table component supports both local and remote data binding options to
 
 ## Chart Types
 
-The Pivot Chart offers 21 different chart types, allowing users to visualize and analyze data in various ways. You can choose any of these chart types based on your needs:
+The Pivot Chart offers 21 different chart types. You can choose any of these chart types based on your needs:
 
 - Line
 - Column
@@ -88,7 +88,7 @@ Pivot Chart supports four types of accumulation charts:
 - Funnel
 - Pyramid
 
-You can use any of these chart types to visualize your aggregated data clearly. To select a specific accumulation chart, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel#type) property in the [`chartSeries`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel) option.
+You can use any of these chart types to visualize your aggregated data clearly. To select a specific accumulation chart, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotseriesmodel#type) property in the [`chartSeries`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotseriesmodel) option:
 
 In the code example below, the **Pie** chart is displayed by default. You can switch to other accumulation chart types, such as Doughnut, Funnel, or Pyramid, using the dropdown list.
 
@@ -108,9 +108,11 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 
 In accumulation charts, you can use the drill down and drill up options to explore data at different levels. When you click on a chart series, a built-in context menu appears with the following options:
 
-- **Expand**: Drill down to view more detailed data for the selected series, continuing until the lowest level is reached.
+- **Expand**: Drill down to view more detailed data for the selected series, until the lowest level is reached.
 - **Collapse**: Drill up to view higher-level, summarized information for that series, returning to the top level as needed.
 - **Exit**: Close the context menu without making any changes.
+
+The drill operation can also be triggered programmatically using the [`drillDown`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#drilldown) and [`drillUp`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#drillup) methods on the Pivot Table instance.
 
 > You can use the drill operation for row headers only in accumulation charts.
 
@@ -132,7 +134,7 @@ In accumulation charts, you can use the drill down and drill up options to explo
 
 In accumulation charts, only the values from a single column in the pivot chart are displayed. By default, the first column is used. If you want to show values from a different column, you can specify the column headers with the [`columnHeader`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel#columnheader) property in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#chartsettings).
 
-If the column has more than one header, enter all the headers separated by a delimiter, such as **Germany-Road Bikes**. You can set your preferred delimiter using the [`columnDelimiter`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel#columndelimiter) property in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#chartsettings). This allows you to display the correct values in your accumulation chart according to how your columns are grouped in the Pivot Table.
+If the column has more than one header, enter all the headers separated by a delimiter, such as **Germany-Road Bikes**. You can set your preferred delimiter using the [`columnDelimiter`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettingsmodel#columndelimiter) property in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#chartsettings).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,7 +150,7 @@ If the column has more than one header, enter all the headers separated by a del
 
 ### Label Customization
 
-By default, the data labels in accumulation charts display the header name. You can control their visibility using the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotChartDataLabelModel#visible) property in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel#datalabel) settings.
+By default, the data labels in accumulation charts display the header name. Use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotchartdatalabelmodel#visible) property in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotseriesmodel#datalabel) settings to control their visibility.
 
 To improve label arrangement and prevent overlapping, the **Smart Labels** option arranges labels efficiently. You can disable this option by setting the [`enableSmartLabels`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel#enablesmartlabels) property to **false** in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#chartsettings).
 
@@ -171,7 +173,15 @@ In the following code sample, the data labels are placed inside the chart points
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs227" %}
 
-The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the [`connectorStyle`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotChartDataLabelModel#connectorstyle) property in [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel#datalabel) to modify its color, length, width, and other properties. In the example below, the connector line appearance is changed to show a different style.
+The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the [`connectorStyle`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotchartdatalabelmodel#connectorstyle) property in [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotseriesmodel#datalabel). The most common sub-properties are:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `color` | `string` | The stroke color of the connector line. |
+| `width` | `number` | The stroke width in pixels. |
+| `length` | `string` | A CSS `dashArray`-style value to control the line pattern (e.g., `"4 4"`). |
+
+In the example below, the connector line appearance is changed to show a different style.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -219,7 +229,7 @@ You can convert a pie chart to a doughnut chart and vice-versa using the [`inner
 
 ### Exploding Series Points
 
-You can make an individual point in a pivot chart stand out by enabling the exploding option. To do this, set the [`explode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel#explode) property in the [`chartSeries`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel) to **true**. When this option is turned on, a chart point will separate from the rest of the series when a user clicks it with a mouse or taps it on a touch device. This makes it easier for users to highlight and identify specific data points in accumulation charts like Pie, Doughnut, Funnel, or Pyramid.
+You can highlight an individual point in a pivot chart by enabling the exploding option. To do this, set the [`explode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotseriesmodel#explode) property in the [`chartSeries`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotseriesmodel) to **true**. When this option is turned on, a chart point separates from the rest of the series when a user clicks it with a mouse or taps it on a touch device. This makes it easier to highlight specific data points in accumulation charts like Pie, Doughnut, Funnel, or Pyramid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -235,7 +245,7 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 ## Field List
 
-The field list makes it easy to add, remove, or rearrange fields in the pivot chart, so you can display exactly the data you need. To show the field list in the Pivot Chart, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property of the Pivot Table to **true**. When you make changes with the field list, the pivot chart updates right away to show the new results. To learn more about the field list and how it works, see the [field list](./field-list) topic in the documentation.
+The field list allows you to add, remove, or rearrange fields in the pivot chart, so you can display exactly the data you need. To show the field list in the Pivot Chart, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) property of the Pivot Table to **true**. When you make changes with the field list, the pivot chart updates right away to show the new results. To learn more about the field list and how it works, see the [field list](./field-list) topic in the documentation.
 
 The sample below demonstrates the field list shown in `Popup` mode within the pivot chart.
 
@@ -285,7 +295,7 @@ When using accumulation charts, the drop-down list appears on the column axis. T
 
 ## Single Axis
 
-By default, the pivot chart uses the first value field (measure) from your report as the value axis. If you want to display data using a different value field, you can do this easily. Use the [`value`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings#value) property inside [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings). This option lets you show a specific value field in the pivot chart, allowing you to focus on the data you need.
+By default, the pivot chart uses the first value field (measure) from your report as the value axis. To display data using a different value field, use the [`value`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettings#value) property inside [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettings). This option lets you show a specific value field in the pivot chart, allowing you to focus on the data you need.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -317,7 +327,7 @@ The pivot chart can be drawn with multiple value fields by setting the [`enableM
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs236" %}
 
-When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings#enablescrollonmultiaxis) property to **true** in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings). This ensures each pivot chart maintains a minimum height of "160px" to "180px" and displays a vertical scroll bar for better visibility.
+When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettings#enablescrollonmultiaxis) property to **true** in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings). This ensures each pivot chart maintains a minimum height of "160px" to "180px" (approximate) and displays a vertical scroll bar for better visibility.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -367,7 +377,7 @@ The following code sample shows a pivot chart with multiple value fields such as
 
 ### Show point color based on members
 
-When you enable multiple axes in the pivot chart, you can use the [`showPointColorByMembers`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel#showpointcolorbymembers) property in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel) to display the same color for each member on the column axis across all measures. Setting this property to **true** makes it easy for users to spot and compare each member throughout the entire chart.
+When you enable multiple axes in the pivot chart, you can use the [`showPointColorByMembers`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettingsmodel#showpointcolorbymembers) property in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettingsmodel) to display the same color for each member on the column axis across all measures. Setting this property to **true** makes it easier to spot and compare each member throughout the entire chart.
 
 In addition, users can show or hide specific members from all measures in the chart by clicking the corresponding legend item. This interaction allows users to focus on the members they want to analyze without distraction.
 
@@ -399,7 +409,7 @@ You can customize the series in the pivot chart by using the [`chartSeries`](htt
 
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs240" %}
 
-If you want to change each series separately, use the [`chartSeriesCreated`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#chartseriescreated) event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time.
+If you want to change each series separately, use the [`chartSeriesCreated`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotviewmodel#chartseriescreated) event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time. The event handler receives the `series` collection as a parameter, so you can update properties per series.
 
 The sample below shows how you can hide every even-numbered series in the pivot chart.
 
@@ -435,7 +445,7 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs242" %}
 
-Users can also modify multi-level labels on the primary x-axis by using the [`multiLevelLabelRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel#multilevellabelrender) event in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings). This event is triggered whenever a multi-level label is rendered on the chart. The event provides the following options:
+Users can also modify multi-level labels on the primary x-axis by using the [`multiLevelLabelRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettingsmodel#multilevellabelrender) event in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettings). This event is triggered whenever a multi-level label is rendered on the chart. The event provides the following options on its argument:
 
 - `axis`: Information about the current axis.
 - `text`: Option to change the content of the multi-level label.
@@ -458,7 +468,7 @@ The example below shows how to update the text and style for multi-level labels 
 
 ## Legend customization
 
-Users can easily change the legend in the pivot chart by using the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotChartSettingsLegendSettings) option inside the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings) property. By default, the legend is shown. If you want to hide it, set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotChartSettingsLegendSettings#visible) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotChartSettingsLegendSettings) to **false**.
+Users can change the legend in the pivot chart by using the [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotchartsettingslegendsettings) option inside the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettings) property. By default, the legend is shown. If you want to hide it, set the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotchartsettingslegendsettings#visible) property in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotchartsettingslegendsettings) to **false**.
 
 The pivot chart allows users to select from various legend shapes, including:
 
@@ -482,7 +492,7 @@ Users can also choose where the legend appears in the pivot chart by setting the
 - **Left**: Displays the legend to the left of the chart.
 - **Bottom**: Places the legend below the chart.
 - **Right**: Shows the legend on the right side.
-- **Custom**: Positions the legend using specific x and y values you provide.
+- **Custom**: Positions the legend using the `x` and `y` sub-properties you provide.
 
 > Note: Legends are not shown by default for accumulation charts such as pie, doughnut, pyramid, and funnel.
 
@@ -504,9 +514,9 @@ In the following code example, you can see how to set a different legend shape a
 
 ### Marker and crossHair
 
-You can show and customize markers and crosshair's on the pivot chart. To do this, use the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotChartSeriesMarkerSettings) and [`crosshair`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings#crosshair) options within the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings) property.
+You can show and customize markers and crosshairs on the pivot chart. To do this, use the [`marker`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotchartseriesmarkersettings) and [`crosshair`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettings#crosshair) options within the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettings) property.
 
-If you want to display a tooltip when hovering over an axis crosshair, use the [`crosshairTooltip`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotAxisModel#crosshairtooltip) option.
+If you want to display a tooltip when hovering over an axis crosshair, use the [`crosshairTooltip`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotaxismodel#crosshairtooltip) option. Common sub-properties include `enable` and `fill`.
 
 > Please note, marker and crosshair options do not work with accumulation chart types, such as pie, doughnut, pyramid, or funnel.
 
@@ -559,9 +569,14 @@ In the code sample below, all four zooming types are enabled, along with the too
 
 ### Tooltip
 
-The tooltip in the Pivot Chart is enabled by default, showing detailed information about each data point when users move the pointer over the chart. Users can change how the tooltip looks and functions by using the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotTooltipSettings) option inside the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings) property.
+The tooltip in the Pivot Chart is enabled by default, showing detailed information about each data point when users move the pointer over the chart. Users can change how the tooltip looks and functions by using the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivottooltipsettings) option inside the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartsettings) property. Common sub-properties include:
 
-If users do not want to show the tooltip, they can disable it by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotTooltipSettings#enable) property in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotTooltipSettings) to **false**.
+- `enable`: Set to `false` to hide the tooltip.
+- `template`: A custom HTML template id for the tooltip content.
+- `fill`: The background color of the tooltip.
+- `textStyle`: Font styling for the tooltip text.
+
+If users do not want to show the tooltip, they can disable it by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivottooltipsettings#enable) property in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivottooltipsettings) to **false**.
 
 The code below shows how to change the default tooltip appearance and settings in the Pivot Chart.
 

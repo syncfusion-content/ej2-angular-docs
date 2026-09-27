@@ -16,7 +16,7 @@ The PDF export action can be customized using the [pdfExportProperties](https://
 
 ## Export current page records
 
-Exporting the current page in Angular Data Grid to a PDF document provides the ability to export the currently displayed page records. This feature allows for generating PDF documents that specifically include the content from the current page of the grid.
+Exporting the current page in the Data Grid generates a PDF containing only the records displayed on that page.
 
 To export the current page of the grid to a PDF document, set the [exportType](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#exporttype) property to `CurrentPage`.
 
@@ -36,7 +36,7 @@ The following example demonstrates exporting current page to a PDF document when
 
 ## Export selected records
 
-Exporting only the selected records from the Angular Data Grid enables generating PDF documents that include only the desired data. This feature provides the flexibility to export specific records that are relevant to specific needs, enabling more focused and targeted PDF exports.
+Exporting selected records from the Data Grid generates a PDF containing only the specified records, offering flexibility for focused and targeted exports.
 
 To export only the selected records, utilize the [exportProperties.dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) property in the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbarclick) event. 
 
@@ -352,9 +352,9 @@ The following example demonstrates, changing the default font when exporting a d
 
 In addition to changing the default font, the Angular Data Grid provides the ability to use a custom font for the Grid header, content, and caption cells in the exported document. This can be achieved by utilizing the [pdfExportProperties.theme](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#theme) property.
 
-When using a custom font, it is important to provide the font in a format that can be easily embedded in the exported document. This is typically done by encoding the font file into a base64 string. This base64 encoded font data can then be used within the export settings to ensure the custom font is applied to the exported PDF.
+When using a custom font in PDF export, the font file should be encoded as a base64 string. This encoded data can then be applied in the export settings to ensure the custom font is embedded and rendered correctly.
 
-The following example demonstrates the usage of the custom "Algeria" font for exporting the grid. The "base64AlgeriaFont" variable contains the base64 encoded string representing the "Algeria" font file. This encoded font data is used in the PDF export properties to specify the custom font.
+The following example demonstrates using the custom "Algeria" font in PDF export. The base64AlgeriaFont variable contains the base64‑encoded string of the font file, which is applied in the export settings to specify the custom font.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

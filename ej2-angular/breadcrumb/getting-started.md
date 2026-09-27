@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Breadcrumb
 
-The Breadcrumb component displays the hierarchical path of the current page, helping users understand their location and navigate efficiently.
+The Angular Breadcrumb component displays the hierarchical path of the current page, helping users understand their location and navigate efficiently.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Breadcrumb component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -92,7 +92,7 @@ npm install @syncfusion/ej2-angular-navigations
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Breadcrumb component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Breadcrumb component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -106,11 +106,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/breadcrumb/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Breadcrumb component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Breadcrumb component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Breadcrumb import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular Breadcrumb import, template, and data into your generated file.
 
-> For the full property list, see the [Breadcrumb API reference](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb/index-default).
+> For the full property list, see the [Angular Breadcrumb API reference](https://ej2.syncfusion.com/angular/documentation/api/breadcrumb/index-default).
 
 ```javascript
 import { BreadcrumbModule } from '@syncfusion/ej2-angular-navigations'
@@ -149,7 +149,7 @@ When the build succeeds, the CLI reports a local URL (default: http://localhost:
 
 Stop the server with `Ctrl+C` in the terminal.
 
-The following example shows a basic `Breadcrumb` component.
+The following example shows a basic `Angular Breadcrumb` component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

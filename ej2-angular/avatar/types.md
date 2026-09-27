@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Types in Angular Avatar
 
-The Avatar component provides different sizes and visual styles to suit various design requirements. This section explains the available avatar sizes and shape types that can be customized using CSS classes.
+The Angular Avatar component provides different sizes and visual styles to suit various design requirements. This section explains the available avatar sizes and shape types that can be customized using CSS classes.
 
-## Avatar size
+## Angular Avatar size
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar provides predefined sizes that can be applied using CSS classes with the base `.e-avatar` class to control the avatar's dimensions.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Angular Avatar provides predefined sizes that can be applied using CSS classes with the base `.e-avatar` class to control the avatar's dimensions.
 
 | Class Name         | Description
 | :-------------     |:-------------
@@ -42,14 +42,14 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar provides predefi
 
 ## Avatar types
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Avatar supports two shape styles to match different design preferences:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Angular Avatar supports two shape styles to match different design preferences:
 
 * Default (Rectangular with rounded corners)
 * Circle
 
 ### Default
 
-The default avatar shape is rectangular with rounded corners, providing a modern appearance suitable for most applications. This style is applied by adding the base class `.e-avatar` to the target element.
+The default Angular Avatar shape is rectangular with rounded corners, providing a modern appearance suitable for most applications. This style is applied by adding the base class `.e-avatar` to the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

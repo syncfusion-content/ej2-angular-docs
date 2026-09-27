@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # API tooltipAnimationSettings in Angular Tooltip component
 
-Animation options common to both open and close actions of the Tooltip.
+Animation options common to both open and close actions of the Angular Tooltip.
 
 ## Properties
 
@@ -24,4 +24,4 @@ Specifies the duration in milliseconds for one animation cycle to complete.
 
 ### effect [`Effect`](https://ej2.syncfusion.com/angular/documentation/api-effect.html)
 
-Specifies the animation effect to apply to the tooltip during open and close actions.
+Specifies the animation effect to apply to the Angular Tooltip during open and close actions.

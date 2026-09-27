@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to resize images before upload in Angular Uploader | Syncfusion
-description: Resize image dimensions in the Angular Uploader before upload by drawing the selected file onto a canvas with custom width and height from the selected event.
+title: How to resize images before upload in Angular File Upload | Syncfusion
+description: Resize image dimensions in the Angular File Upload before upload by drawing the selected file onto a canvas with custom width and height from the selected event.
 platform: ej2-angular
 control: Resize images before uploading it to the server 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to resize images before upload in Angular Uploader
+# How to resize images before upload in Angular File Upload
 
 You can customize image dimensions before uploading them to the server.
 By using the `selected` event, you can retrieve the selected file information as an object. From this file data, create a new canvas element and render the image with custom dimensions. Refer to the following code example for implementation details.

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular AutoComplete
 
-The AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#datasource) property. It supports the data type of array or `DataManager`.
+The Angular AutoComplete loads the data either from local data sources or remote data services using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#datasource) property. It supports the data type of array or `DataManager`.
 
-The AutoComplete also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
+The Angular AutoComplete also supports different kinds of data services such as OData, OData V4, and Web API, and data formats such as XML, JSON, and JSONP with the help of `DataManager` adaptors.
 
 | Fields | Type | Description |
 |------|------|-------------|
@@ -20,7 +20,7 @@ The AutoComplete also supports different kinds of data services such as OData, O
 | groupBy |  `string` | Specifies the category under which the list item has to be grouped. |
 | iconCss |  `string` | Specifies the icon class of each list item. |
 
-> While binding complex data to AutoComplete, fields should be mapped correctly. Otherwise, the selected item remains undefined.
+> While binding complex data to Angular AutoComplete, fields should be mapped correctly. Otherwise, the selected item remains undefined.
 
 ## Bind to local data
 
@@ -28,7 +28,7 @@ Local data can be represented in three ways as described below.
 
 ### Array of string
 
-The AutoComplete has support to load array of primitive data such as strings and numbers.
+The Angular AutoComplete has support to load array of primitive data such as strings and numbers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -44,7 +44,7 @@ The AutoComplete has support to load array of primitive data such as strings and
 
 ### Array of object
 
-The AutoComplete can generate its list items through an array of complex data. To do so, map the appropriate columns to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) property.
+The Angular AutoComplete can generate its list items through an array of complex data. To do so, map the appropriate columns to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) property.
 
 In the following example, the `Game` column from complex data is mapped to the `value` field.
 
@@ -62,7 +62,7 @@ In the following example, the `Game` column from complex data is mapped to the `
 
 ### Array of complex object
 
-The AutoComplete can generate its list items through an array of complex data. To do so, map the appropriate columns to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) property using dot notation.
+The Angular AutoComplete can generate its list items through an array of complex data. To do so, map the appropriate columns to the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#fields) property using dot notation.
 
 In the following example, the `Country.Name` column from complex data is mapped to the `value` field.
 
@@ -80,7 +80,7 @@ In the following example, the `Country.Name` column from complex data is mapped 
 
 ## Bind to remote data
 
-The AutoComplete supports retrieval of data from remote data services with the help of the `DataManager`. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#query) property is used to fetch data from the database and bind it to the AutoComplete.
+The Angular AutoComplete supports retrieval of data from remote data services with the help of the `DataManager`. The [`Query`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#query) property is used to fetch data from the database and bind it to the AutoComplete.
 
 The following sample displays the first 6 contacts from the `Customers` table of the `Northwind` data service.
 
@@ -100,7 +100,7 @@ The following sample displays the first 6 contacts from the `Customers` table of
 
 An `Observable` is used extensively by Angular since it provides significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
-AutoComplete data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe to the observable object and resolve with the latest value emitted by it.
+Angular AutoComplete data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe to the observable object and resolve with the latest value emitted by it.
 
 [app.component.ts]
 ```ts
@@ -111,7 +111,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-root',
-    // specifies the template string for the AutoComplete component with dataSource
+    // specifies the template string for the Angular AutoComplete component with dataSource
     template: ` <ejs-autocomplete  id='customers2' #remote2 [dataSource]='data | async'  [fields]='remoteFields' [placeholder]='remoteWaterMark' ></ejs-autocomplete >`
 })
 export class AppComponent {
@@ -128,7 +128,7 @@ export class AppComponent {
   // maps the remote data column to fields property
   public remoteFields: Object = { value: 'CustomerID' };
 
-  // set the placeholder to AutoComplete input element
+  // set the placeholder to Angular AutoComplete input element
   public remoteWaterMark: string = 'Select a customer';
 }
 ```

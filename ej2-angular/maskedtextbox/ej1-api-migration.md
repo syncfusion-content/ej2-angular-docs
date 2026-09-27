@@ -1,16 +1,16 @@
 ---
 layout: post
-title: EJ1 API Migration in Angular MaskedTextBox | Syncfusion
-description: Migrate the Syncfusion Angular MaskedTextBox from Essential JS 1 MaskEdit by mapping maskFormat, customCharacter, validation, and events to JS 2 APIs.
+title: EJ1 API Migration in Angular Input Mask | Syncfusion
+description: Migrate the Syncfusion Angular Input Mask from Essential JS 1 MaskEdit by mapping maskFormat, customCharacter, validation, and events to JS 2 APIs.
 platform: ej2-angular
 control: Ej1 api migration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API Migration in Angular MaskedTextBox
+# EJ1 API Migration in Angular Input Mask
 
-This article describes the API migration process for the MaskedTextBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 (MaskEdit) to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process for the Angular Input Mask component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 (MaskEdit) to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Common
 

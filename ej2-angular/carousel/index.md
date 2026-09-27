@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # About Syncfusion Angular Carousel Component.
 
-The **Carousel** component allows users to display images with content, links, etc., like a slide show. Typical uses of carousels include scrolling news headlines, featured articles on home pages, and image galleries.
+The **Angular Carousel** component allows users to display images with content, links, etc., like a slide show. Typical uses of carousels include scrolling news headlines, featured articles on home pages, and image galleries.
 
 ## Key Features
 

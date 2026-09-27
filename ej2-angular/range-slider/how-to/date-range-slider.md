@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to build a Date Range Slider in Angular Range Slider | Syncfusion
-description: Format Angular Range Slider ticks and tooltips as dates by hooking the renderingTicks and tooltipChange events for date-aware display.
+title: How to build a Date Range Slider in Angular Slider | Syncfusion
+description: Format Angular Slider ticks and tooltips as dates by hooking the renderingTicks and tooltipChange events for date-aware display.
 platform: ej2-angular
-control: Range Slider 
+control: Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to build a Date Range Slider in Angular Range Slider
+# How to build a Date Range Slider in Angular Slider
 
-Create a Range Slider that displays date values by formatting ticks and tooltips. Use the [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#renderingticks) event to format tick labels as dates and the [`tooltipChange`](https://ej2.syncfusion.com/angular/documentation/api/slider/#tooltipchange) event to format tooltip text. The following sample demonstrates how to implement date formatting in a slider.
+Create a Angular Slider that displays date values by formatting ticks and tooltips. Use the [`renderingTicks`](https://ej2.syncfusion.com/angular/documentation/api/slider/#renderingticks) event to format tick labels as dates and the [`tooltipChange`](https://ej2.syncfusion.com/angular/documentation/api/slider/#tooltipchange) event to format tooltip text. The following sample demonstrates how to implement date formatting in a slider.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

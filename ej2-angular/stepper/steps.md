@@ -195,4 +195,4 @@ Customize the appearance of each step using the `cssClass` property of the `Step
 
 Set the validation state for each step to display a success or error icon using the `isValid` property of the `StepModel`. When set to `true`, a success icon appears; when `false`, an error icon is shown.
 
-> To know more about Stepper validation, please refer to the [Validation](./steps-validation#validating-steps) section.
+> To know more about Angular Stepper validation, please refer to the [Validation](./steps-validation#validating-steps) section.

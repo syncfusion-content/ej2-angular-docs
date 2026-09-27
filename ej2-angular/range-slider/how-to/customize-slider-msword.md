@@ -3,18 +3,18 @@ layout: post
 title: How to customize slider as MS Word in Angular Range Slider | Syncfusion
 description: Build a Microsoft Word-style Range Slider in Angular with customValues for ticks, a slim rectangular thumb, and themed increment and decrement buttons.
 platform: ej2-angular
-control: Range Slider 
+control: Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize slider as MS Word in Angular Range Slider
+# How to customize slider as MS Word in Angular Slider
 
-Create a Microsoft Word-style Range Slider by customizing the appearance of slider buttons, handles, and ticks. Ticks provide visual reference points for slider values. The following example demonstrates how to achieve the appearance shown below.
+Create a Microsoft Word-style Angular Slider by customizing the appearance of slider buttons, handles, and ticks. Ticks provide visual reference points for slider values. The following example demonstrates how to achieve the appearance shown below.
 
 ![Slider MSWord Customization](./images/msword.png)
 
-By default, the slider displays evenly spaced tick values. To display custom tick values like those in the MS Word interface, use the [customValues](https://ej2.syncfusion.com/angular/documentation/api/slider/#customvalues) property. Refer to the code snippet below to configure custom ticks.
+By default, the Angular Slider displays evenly spaced tick values. To display custom tick values like those in the MS Word interface, use the [customValues](https://ej2.syncfusion.com/angular/documentation/api/slider/#customvalues) property. Refer to the code snippet below to configure custom ticks.
 
 ```typescript
 
@@ -29,7 +29,7 @@ public renderedTicks(event) {
 
 ```
 
-To customize the slider handle (thumb), refer to the following CSS code snippet.
+To customize the Angular Slider handle (thumb), refer to the following CSS code snippet.
 
 ```css
 #slider.e-control.e-slider .e-handle {

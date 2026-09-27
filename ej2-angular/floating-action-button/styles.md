@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Styles in Angular Floating Action Button
 
-This section explains the different styles of Floating Action Button.
+This section explains the different styles of Angular Floating Action Button.
 
 ## FAB styles
 
@@ -37,11 +37,11 @@ The Angular Floating Action Button supports the following predefined styles that
   
 {% previewsample "page.domainurl/samples/floating-action-button/styles-cs1" %}
 
-> Predefined Floating Action Button styles provide only the visual indication. So, Floating Action Button [`content`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) property should define the Floating Action Button style for the users of assistive technologies such as screen readers.
+> Predefined Angular Floating Action Button styles provide only the visual indication. So, Angular Floating Action Button [`content`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#content) property should define the Floating Action Button style for the users of assistive technologies such as screen readers.
 
 ## Styles customization
 
-To modify the Floating Action Button appearance, you need to override the default CSS of Floating Action Button component. Please find the list of CSS classes and its corresponding section in Floating Action Button component. Also, you have an option to create your own custom theme for the components using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=fluent).
+To modify the Angular Floating Action Button appearance, you need to override the default CSS of Floating Action Button component. Please find the list of CSS classes and its corresponding section in Angular Floating Action Button component. Also, you have an option to create your own custom theme for the components using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=fluent).
 
 | CSS Class | Purpose of Class |
 |-----|----- |
@@ -53,7 +53,7 @@ To modify the Floating Action Button appearance, you need to override the defaul
 
 ## Show text on hover
 
-By using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass), you can customize the Floating Action Button to show text on hover with applied transition effect. For detailed information, refer `index.css` file below.
+By using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass), you can customize the Angular Floating Action Button to show text on hover with applied transition effect. For detailed information, refer `index.css` file below.
 
 The content will behave the same , when the `enableHtmlSanitizer` is enabled. Since we are adding only the valid tags in content, sanitizing the content will not affect it.
 
@@ -74,7 +74,7 @@ The content will behave the same , when the `enableHtmlSanitizer` is enabled. Si
 
 ## Outline customization
 
-By using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass) property, you can customize the outline color of the Floating Action Button. Refer the `index.css` file below.
+By using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass) property, you can customize the outline color of the Angular Floating Action Button. Refer the `index.css` file below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

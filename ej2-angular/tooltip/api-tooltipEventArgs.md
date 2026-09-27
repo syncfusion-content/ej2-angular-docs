@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # API tooltipEventArgs in Angular Tooltip component
 
-Interface for Tooltip event arguments.
+Interface for Angular Tooltip event arguments.
 
 ## Properties
 
@@ -20,7 +20,7 @@ Indicates whether to prevent the current action.
 
 ### collidedPosition `string`
 
-Denotes the collided tooltip position.
+Denotes the collided Angular Tooltip position.
 
 ### event `Event`
 
@@ -32,7 +32,7 @@ Specifies the name of the event.
 
 ### target `HTMLElement`
 
-Denotes the target element where the tooltip displays.
+Denotes the target element where the Angular Tooltip displays.
 
 ### type `String`
 

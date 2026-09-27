@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize popup width in Angular Dropdown Menu
 
-The dropdown popup width can be customized using the [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#popupwidth) property of the DropDownButton component. By default, the popup's width adjusts based on the content. However, this property allows setting a specific width, ensuring consistency and alignment with design requirements. The width can be specified using common CSS units or as a raw pixel value.
+The dropdown popup width can be customized using the [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/index-default#popupwidth) property of the Angular Dropdown Menu component. By default, the popup's width adjusts based on the content. However, this property allows setting a specific width, ensuring consistency and alignment with design requirements. The width can be specified using common CSS units or as a raw pixel value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

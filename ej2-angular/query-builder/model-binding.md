@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Model Binding in Angular Query Builder UI
 
-Model binding lets you configure the built-in Syncfusion editors used in the field, operator, and value columns of the Query Builder. Implement model binding by configuring the [`fieldModel`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#fieldmodel), [`operatorModel`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#operatormodel), and [`valueModel`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#valuemodel) properties. The `fieldModel` and `operatorModel` properties configure the DropDownList editors used for the field and operator columns, while the `valueModel` property configures the value editors, which vary based on the column `type`.
+Model binding lets you configure the built-in Syncfusion editors used in the field, operator, and value columns of the Angular Query Builder UI. Implement model binding by configuring the [`fieldModel`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#fieldmodel), [`operatorModel`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#operatormodel), and [`valueModel`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#valuemodel) properties. The `fieldModel` and `operatorModel` properties configure the DropDownList editors used for the field and operator columns, while the `valueModel` property configures the value editors, which vary based on the column `type`.
 
 The editor applied to a value column depends on the column `type`. The following table summarizes this mapping (see [Columns](./columns) for the supported column types):
 
@@ -21,7 +21,7 @@ The editor applied to a value column depends on the column `type`. The following
 | `boolean` | RadioButton |
 | `string` | TextBox (default) or DropDownList/MultiSelect when the column `values` are defined |
 
-The following snippet shows a minimal model binding configuration on the Query Builder:
+The following snippet shows a minimal model binding configuration on the Angular Query Builder UI:
 
 ```html
 <ejs-querybuilder width="100%" [rule]="importRules"

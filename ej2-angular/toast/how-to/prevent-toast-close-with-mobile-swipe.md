@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to prevent toast close with swipe in Angular Toast
 
-You can prevent the toast close with mobile swipe action by setting [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#beforeClose) argument cancel value to true while argument type as a swipe. The following code shows how to prevent toast close with mobile swipe.
+You can prevent the Angular Toast close with mobile swipe action by setting [beforeClose](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#beforeClose) argument cancel value to true while argument type as a swipe. The following code shows how to prevent Angular Toast close with mobile swipe.
 
-The following sample demonstrates preventing toast close with mobile swipe element displaying with custom code blocks.
+The following sample demonstrates preventing Angular Toast close with mobile swipe element displaying with custom code blocks.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

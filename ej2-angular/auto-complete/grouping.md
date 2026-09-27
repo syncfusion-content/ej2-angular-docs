@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular AutoComplete
 
-The AutoComplete supports organizing list items into groups based on different categories. The category of each list item can be mapped through the [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/fieldSettingsModel#groupby) field. The group header is displayed as both an inline header and a fixed header. The fixed group header content is updated dynamically while scrolling the suggestion list to show the category value of the visible group.
+The Angular AutoComplete supports organizing list items into groups based on different categories. The category of each list item can be mapped through the [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/fieldSettingsModel#groupby) field. The group header is displayed as both an inline header and a fixed header. The fixed group header content is updated dynamically while scrolling the suggestion list to show the category value of the visible group.
 
 In the following sample, vegetables are grouped according to their category using the [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/fieldSettingsModel#groupby) field.
 
@@ -32,4 +32,4 @@ The grouping header also provides customization options that allow custom stylin
 
 ## See Also
 
-[Group Template support to AutoComplete](./templates#group-template).
+[Group Template support to Angular AutoComplete](./templates#group-template).

@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to customize templates in Angular Context Menu
 
-The ContextMenu component supports extensive template customization, allowing you to embed complex UI elements and interactive components within menu items. This flexibility enables creating rich, context-aware menus that go beyond simple text-based navigation.
+The Angular Context Menu component supports extensive template customization, allowing you to embed complex UI elements and interactive components within menu items. This flexibility enables creating rich, context-aware menus that go beyond simple text-based navigation.
 
 ## Show table in sub ContextMenu
 
-Menu items of the ContextMenu can be customized according to client requirements. The section explains how to customize a table template in a sub menu item.
+Menu items of the Angular Context Menu can be customized according to client requirements. The section explains how to customize a table template in a sub menu item.
 
 This can be achieved by appending a table layout during `li` rendering using the `beforeItemRender` event.
 
@@ -30,9 +30,9 @@ This can be achieved by appending a table layout during `li` rendering using the
   
 {% previewsample "page.domainurl/samples/context-menu/table-cs1" %}
 
-## Show UI components in ContextMenu
+## Show UI components in Angular Context Menu
 
-UI components can also be placed inside each `li` element of the ContextMenu.
+UI components can also be placed inside each `li` element of the Angular Context Menu.
 
 In the following example, a CheckBox component is placed inside each `li` element. This is achieved by creating a CheckBox component in the `beforeItemRender` event and appending it into the `li` element.
 

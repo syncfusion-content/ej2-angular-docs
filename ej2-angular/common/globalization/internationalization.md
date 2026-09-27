@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internationalization in Angular Components | Syncfusion
-description: Learn how to implement internationalization in Syncfusion Angular components using CLDR data to format and parse dates, numbers, and currencies across different cultures and locales.
+description: Learn how to implement internationalization in Syncfusion Angular components using CLDR data for locale-based date, number, and currency formatting.
 platform: ej2-angular
 control: common
 documentation: ug

@@ -38,5 +38,5 @@ Use the [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab/t
 
 ## See Also
 
-* [Customize tab content height](./customize-tab-content-height)
+* [Customize Angular Tab content height](./customize-tab-content-height)
 * [Accessibility](../accessibility)

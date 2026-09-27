@@ -40,4 +40,4 @@ template: "#Template"
 
 ## See Also
 
-* [Add template dynamically](./how-to/add-dynamic-template/)
+* [Add template dynamically](./how-to/add-dynamic-template)

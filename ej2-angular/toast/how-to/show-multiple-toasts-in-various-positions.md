@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to show multiple toasts in positions in Angular Toast
 
-In default Toast position only updates once visible toasts get destroyed. If You needs to display multiple toasts with different position means needs to initiate another toast for achieving this.
+In default Angular Toast position only updates once visible Angular Toasts get destroyed. If You needs to display multiple Angular Toasts with different position means needs to initiate another Angular Toast for achieving this.
 
-Here below sample demonstrates to add multiple toasts adding in the different position.
+Here below sample demonstrates to add multiple Angular Toasts adding in the different position.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

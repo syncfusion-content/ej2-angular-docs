@@ -137,7 +137,7 @@ Customize the flow direction of the flowchart using the [`orientation`](https://
 This orientation arranges elements vertically, flowing from top to bottom. It is commonly used in flowcharts to represent the sequential progression of steps or actions in a process.
 
 ```typescript
-// Initialize the diagram
+// Initialize the Angular Diagram
 <ejs-diagram #diagram id="diagram" width="100%" height="600px" [layout]="layout"> </ejs-diagram>
 
 export class AppComponent {
@@ -162,7 +162,7 @@ export class AppComponent {
 This orientation arranges elements horizontally, flowing from left to right. It is typically used to represent processes or workflows that move sequentially across the page, emphasizing a linear progression of steps or actions.
 
 ```typescript
-// Initialize the diagram
+// Initialize the Angular Diagram
 <ejs-diagram #diagram id="diagram" width="100%" height="600px" [layout]="layout"> </ejs-diagram>
 
 export class AppComponent {

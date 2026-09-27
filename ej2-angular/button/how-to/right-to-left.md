@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to right-to-left in Angular Button
 
-Button component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/button#enablertl) as `true`.
+Angular Button component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/button#enablertl) as `true`.
 
-The following example illustrates how to enable right-to-left support in Button component.
+The following example illustrates how to enable right-to-left support in Angular Button component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

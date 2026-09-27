@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Manipulate ListView as grid layout in Angular ListView component
 
-The ListView component can display items in a grid layout with support for data manipulations such as adding, removing, sorting, and filtering items.
+The Angular ListView component can display items in a grid layout with support for data manipulations such as adding, removing, sorting, and filtering items.
 
 ## Grid Layout
 
 To render list items in a grid layout:
 
-1. Initialize the ListView with a dataSource
+1. Initialize the Angular ListView with a dataSource
 2. Apply the following CSS to transform the list items into a grid layout:
 
 ```css
@@ -45,11 +45,11 @@ Here's a basic example of ListView with grid layout:
 
 ## Data Manipulation
 
-The ListView component supports various data manipulation operations to manage list items effectively.
+The Angular ListView component supports various data manipulation operations to manage list items effectively.
 
 ### Add Item
 
-Use the [`addItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#additem) method to add new items to the ListView. The method accepts an array of items as its argument.
+Use the [`addItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view#additem) method to add new items to the Angular ListView. The method accepts an array of items as its argument.
 
 ```typescript
 
@@ -59,7 +59,7 @@ this.$refs.listViewInstance.addItem([{text: 'Apricot', id: '32'}]);
 
 ### Remove Item
 
-To remove items, use the [`removeItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#removeitem) method. Pass either the item object with an id or the list item element as the argument.
+To remove items, use the [`removeItem`](https://ej2.syncfusion.com/angular/documentation/api/list-view#removeitem) method. Pass either the item object with an id or the list item element as the argument.
 
 ```typescript
 
@@ -69,7 +69,7 @@ To remove items, use the [`removeItem`](https://ej2.syncfusion.com/angular/docum
 
 ### Sort Items
 
-Enable sorting by setting the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property to either 'Ascending' or 'Descending'.
+Enable sorting by setting the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view#sortorder) property to either 'Ascending' or 'Descending'.
 
 ```typescript
 // In template
@@ -82,7 +82,7 @@ this.listViewInstance.sortOrder = 'Ascending'
 
 ### Filter Items
 
-ListView data can be filtered with the help of [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). After filtering the data, update ListView [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource) with filtered data.
+Angular ListView data can be filtered with the help of [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). After filtering the data, update Angular ListView [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-view#datasource) with filtered data.
 
 ```typescript
 

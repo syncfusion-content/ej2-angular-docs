@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # How to show different types of toast in Angular Toast
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Toast has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#cssclass) property for achieving different types of toast.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Angular Toast has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toast/index-default#cssclass) property for achieving different types of Angular Toast.
 
 | Class | Description |
 | -------- | -------- |
-| e-success | Used to represent a positive Toast. |
-| e-info |  Used to represent an informative Toast. |
-| e-warning | Used to represent a Toast with caution. |
-| e-danger | Used to represent a negative Toast. |
+| e-success | Used to represent a positive Angular Toast. |
+| e-info |  Used to represent an informative Angular Toast. |
+| e-warning | Used to represent a Angular Toast with caution. |
+| e-danger | Used to represent a negative Angular Toast. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

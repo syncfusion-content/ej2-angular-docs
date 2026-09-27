@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Calendar
 
-Calendar allows you to customize the entire appearance by using the custom CSS and [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderdaycelleventargs) event to customize each day cell. The `renderDayCell` event provides arguments such as `date` (the cell date), `isDisabled` (whether the date is disabled), `isWeekend` (whether the date is a weekend), and the element-related properties, which can be used to control per-cell rendering.
+Angular Calendar allows you to customize the entire appearance by using the custom CSS and [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderdaycelleventargs) event to customize each day cell. The `renderDayCell` event provides arguments such as `date` (the cell date), `isDisabled` (whether the date is disabled), `isWeekend` (whether the date is a weekend), and the element-related properties, which can be used to control per-cell rendering.
 
-The following section demonstrates how to disable and highlight the specific dates in the Calendar.
+The following section demonstrates how to disable and highlight the specific dates in the Angular Calendar.
 
 ## Disable Weekends
 
-You can disable the weekends of every month in a Calendar by using the [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderdaycelleventargs) event. The `isDisabled` argument from this event allows you to define whether the date is to be disabled or not.
+You can disable the weekends of every month in a Angular Calendar by using the [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderdaycelleventargs) event. The `isDisabled` argument from this event allows you to define whether the date is to be disabled or not.
 
 > Set `isDisabled` to true to disable the date value.
 
@@ -38,7 +38,7 @@ The following example demonstrates how to disable weekends of every month.
 
 You can highlight the specific dates by adding the custom CSS or element to the day cell by using the [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderdaycelleventargs) event.
 
-Below is the list of classes that provides a flexible way to customize the Calendar component.
+Below is the list of classes that provides a flexible way to customize the Angular Calendar component.
 
 | **Class Name** | **Description** |
 | --- | --- |
@@ -59,7 +59,7 @@ Below is the list of classes that provides a flexible way to customize the Calen
 | e-rtl | Applied to the calendar in right-to-left mode. |
 | e-bigger | Applied to the calendar in bigger render mode. |
 
-The following example highlights the world health date (7th April every year) and world forest day (21st March every year) in a Calendar by using the custom icon and tooltip. The icon and tooltip styles are defined in the included `style.css`.
+The following example highlights the world health date (7th April every year) and world forest day (21st March every year) in a Angular Calendar by using the custom icon and tooltip. The icon and tooltip styles are defined in the included `style.css`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -78,7 +78,7 @@ The following example highlights the world health date (7th April every year) an
 
 ## Highlight Weekends
 
-You can highlight the weekends of every month in a Calendar by using the [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderdaycelleventargs) event. The following example demonstrates how to highlight the weekends of every month.
+You can highlight the weekends of every month in a Angular Calendar by using the [`renderDayCell`](https://ej2.syncfusion.com/angular/documentation/api/calendar/renderdaycelleventargs) event. The following example demonstrates how to highlight the weekends of every month.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -94,7 +94,7 @@ You can highlight the weekends of every month in a Calendar by using the [`rende
 
 ## See Also
 
-* [Add the external button in the Calendar popup](./how-to/set-clear-button-in-calendar)
-* [How to skip a month in Calendar](./how-to/skip-a-month-in-calendar)
+* [Add the external button in the Angular Calendar popup](./how-to/set-clear-button-in-calendar)
+* [How to skip a month in Angular Calendar](./how-to/skip-a-month-in-calendar)
 * [How to change the first day of the week](./how-to/change-the-first-day-of-week)
-* [How to customize the Calendar day header](./how-to/customize-the-calendar-day-header)
+* [How to customize the Angular Calendar day header](./how-to/customize-the-calendar-day-header)

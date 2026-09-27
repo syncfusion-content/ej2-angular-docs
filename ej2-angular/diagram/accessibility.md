@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Diagram
 
-The Diagram component provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg) specifications through attributes like `aria-label`, providing information to assistive technologies such as screen readers.
+The Angular Diagram component provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg) specifications through the `aria-label` attribute, providing information to assistive technologies such as screen readers.
 
-The following table outlines accessibility compliance for the Diagram component:
+The following table outlines accessibility compliance for the Angular Diagram component:
 
 | Accessibility Criteria                                                              | Compatibility                                                                        |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -40,15 +40,15 @@ The following table outlines accessibility compliance for the Diagram component:
 
 ## WAI-ARIA attributes
 
-The Diagram component follows [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg) patterns to meet accessibility requirements. The following ARIA attributes are used in the Diagram component:
+The following ARIA attributes are used in the Angular Diagram component:
 
 | Attributes | Purpose |
 | --- | --- |
-| `aria-label` | Provides an accessible name for Diagram objects. |
+| `aria-label` | Provides an accessible name for Angular Diagram objects. |
 
 ### Aria-label
 
-The `aria-label` attribute provides text labels with default descriptions for the following elements in the Diagram component:
+The `aria-label` attribute provides text labels with default descriptions for the following elements in the Angular Diagram component:
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -74,19 +74,19 @@ The `aria-label` attribute provides text labels with default descriptions for th
 </tr>
 <tr>
 <td>ResizeNorth</td>
-<td>Thumb to resize the selected object on the top side direction.</td>
+<td>Thumb to resize the selected object on the top side.</td>
 </tr>
 <tr>
 <td>ResizeSouth</td>
-<td>Thumb to resize the selected object on the bottom side direction.</td>
+<td>Thumb to resize the selected object on the bottom side.</td>
 </tr>
 <tr>
 <td>ResizeWest</td>
-<td>Thumb to resize the selected object on the left side direction.</td>
+<td>Thumb to resize the selected object on the left side.</td>
 </tr>
 <tr>
 <td>ResizeEast</td>
-<td>Thumb to resize the selected object on the right side direction.</td>
+<td>Thumb to resize the selected object on the right side.</td>
 </tr>
 <tr>
 <td>ConnectorSourceThumb</td>
@@ -104,36 +104,46 @@ The `aria-label` attribute provides text labels with default descriptions for th
 
 ## Screen Reader Support
 
-The Diagram component supports screen readers by properly conveying diagram information through ARIA attributes and semantic content structure.
+The Angular Diagram component supports screen readers by properly conveying diagram information through ARIA attributes and semantic content structure.
+
+## Right-To-Left Support
+
+Right-To-Left (RTL) rendering is not supported in the Diagram component.
+
+## Color Contrast
+
+The Angular Diagram component relies on the applied theme for color contrast and meets WCAG contrast requirements when using the built-in themes.
+
+N> WCAG 2.2 and Section 508 support is partial; see the compliance table links for the list of supported and unsupported criteria.
 
 ## Mobile Device Support
 
-The Diagram component is designed to be user-friendly and accessible on mobile devices, including for users with disabilities. The component is responsive, adapts to various screen sizes and orientations, and provides touch-friendly interactions.
+The Angular Diagram component is designed to be user-friendly and accessible on mobile devices, including for users with disabilities. The component is responsive, adapts to various screen sizes and orientations, and provides touch-friendly interactions.
 
 ## Keyboard Navigation Support
 
-The Diagram component supports keyboard navigation, allowing users who rely on assistive technologies to navigate and interact with the component effectively.
+The Angular Diagram component supports keyboard navigation, allowing users who rely on assistive technologies to navigate and interact with the component effectively. Some advanced interactions are partially supported, as indicated by the Intermediate rating in the compliance table.
 
 ### Keyboard Interaction
 
-The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html) guidelines, making it accessible for users who rely on keyboard navigation. The following keyboard shortcuts are supported:
+The Angular Diagram component follows [WCAG keyboard interaction](https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html) guidelines, making it accessible for users who rely on keyboard navigation. The following keyboard shortcuts are supported:
 
 **Selection and Clipboard Operations**
 
 | **Command** | **Action** |
 | --- | --- |
-| Ctrl + A | Select All |
-| Ctrl + X | Cut |
-| Ctrl + C | Copy |
-| Ctrl + V | Paste |
+| <kbd>Ctrl + A</kbd> | Select All |
+| <kbd>Ctrl + X</kbd> | Cut |
+| <kbd>Ctrl + C</kbd> | Copy |
+| <kbd>Ctrl + V</kbd> | Paste |
 
 **Edit Operations**
 
 | **Command** | **Action** |
 | --- | --- |
-| Ctrl + Z | Undo |
-| Ctrl + Y | Redo |
-| Delete | Delete |
+| <kbd>Ctrl + Z</kbd> | Undo |
+| <kbd>Ctrl + Y</kbd> | Redo |
+| <kbd>Delete</kbd> | Delete |
 
 **Navigation and Movement**
 
@@ -153,9 +163,9 @@ The Diagram component follows [keyboard interaction](https://www.w3.org/WAI/WCAG
 
 ## Ensuring Accessibility
 
-The Diagram component's accessibility levels are validated through [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Diagram component's accessibility levels are validated through [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Diagram component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/diagram.html) in a new window to evaluate accessibility using accessibility tools.
+The accessibility compliance of the Angular Diagram component is demonstrated in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/diagram.html) in a new window to evaluate accessibility using accessibility tools.
 
 ## See also
 

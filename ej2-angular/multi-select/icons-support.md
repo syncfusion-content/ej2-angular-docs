@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons Support in Angular MultiSelect Dropdown | Syncfusion
-description: Learn here all about Icons support in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Icons support in Syncfusion  Angular MultiSelect Dropdown component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Icons support 
 documentation: ug

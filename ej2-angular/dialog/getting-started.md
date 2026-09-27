@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular Dialog
 
-The Dialog component displays content, messages, forms, and interactive UI elements in modal or non-modal popup windows.
+The Angular Dialog  component displays content, messages, forms, and interactive UI elements in modal or non-modal popup windows.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Dialog component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework-host setups, refer to the [See Also](#see-also) links at the bottom of this page.
 
@@ -106,11 +106,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/dialog/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Dialog component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Dialog component
 
-After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Dialog import, template, and data into your generated file.
+After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the Angular Dialog import, template, and data into your generated file.
 
-> For the full property list, see the [Dialog API reference](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default).
+> For the full property list, see the [Angular Dialog API reference](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default).
 
 ```typescript
 
@@ -157,7 +157,7 @@ Add the following styles in the corresponding CSS file (for example, `src/app/ap
 ```
 
 > If the `target` property is not configured, `document.body` is considered the target. To display the dialog at a proper height, add a `min-height` to the target element.
-If the dialog is rendered against `body` and its height exceeds the body's height, the dialog's height will not be set automatically. In this scenario, set CSS on the `html` and `body` elements to provide full height.
+If the Angular Dialog is rendered against `body` and its height exceeds the body's height, the dialog's height will not be set automatically. In this scenario, set CSS on the `html` and `body` elements to provide full height.
 
 ```css
 html, body {

@@ -11,21 +11,21 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular/build:application",
           "options": {
             "outputPath": "dist/ej2-angular-grid-dom-virtual-scroll",
-            "index": "index.html",
-            "main": "src/main.ts",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-             "tsConfig": "tsconfig.json",
-             "assets": [
-              {
-                "glob": "*.png",
-                "input": "",
-                "output": ""
-              }
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -49,24 +49,21 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ej2-angular-grid-dom-virtual-scroll:build:production"
+              "browserTarget": "ej2-angular-grid-dom-virtual-scroll:build:production"
             },
             "development": {
-              "buildTarget": "ej2-angular-grid-dom-virtual-scroll:build:development"
+              "browserTarget": "ej2-angular-grid-dom-virtual-scroll:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ej2-angular-grid-dom-virtual-scroll:build"
+            "browserTarget": "ej2-angular-grid-dom-virtual-scroll:build"
           }
         },
         "test": {
@@ -98,8 +95,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "87dc02d4-5e1a-4911-912c-313d5e307282"
   }
 }

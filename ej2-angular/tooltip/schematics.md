@@ -24,7 +24,7 @@ To work with Angular schematics, create an Angular CLI application by running th
 ng new angular-application
 ```
 
-After running this command and installing all dependencies, you can generate EJ2 Tooltip components using schematics.
+After running this command and installing all dependencies, you can generate EJ2 Angular Tooltip components using schematics.
 
 ## Dependency and Module injection using Schematics
 
@@ -41,7 +41,7 @@ This command performs the following:
 
 ## Component generation using Schematics
 
-Use Angular Schematics to generate components, modules, and other files. Schematics can also generate Tooltip components.
+Use Angular Schematics to generate components, modules, and other files. Schematics can also generate Angular Tooltip components.
 
 Using Schematics to generate EJ2 Tooltip reduces configuration time and makes components ready for development immediately. To generate EJ2 Tooltip components with specific features, refer to the following table.
 
@@ -54,7 +54,7 @@ The general syntax for the ng generate command is: `ng generate @syncfusion/<com
 
 These commands perform the following:
 
-* Generate the Tooltip with specific features in `src/app` using the folder name from the `name` property.
+* Generate the Angular Tooltip with specific features in `src/app` using the folder name from the `name` property.
 * Import the generated component into `app.module.ts` and add an entry to the `declarations` array in the `@NgModule` decorator.
 
 > Note: You are not required to run the ng add command first, but `@syncfusion/ej2-angular-popups` must be installed.

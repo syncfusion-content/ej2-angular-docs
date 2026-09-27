@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to set title for Menu in Angular Menu Bar
 
-You can customize the title for icon-based menu items in the Syncfusion Angular Menu component by using the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeitemrender) event.
+You can customize the title for icon-based menu items in the Syncfusion Angular Menu Bar component by using the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeitemrender) event.
 
 This approach is useful when you want to provide descriptive tooltips for menu items that display only icons.
 

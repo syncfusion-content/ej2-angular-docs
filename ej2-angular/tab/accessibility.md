@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Tab
 
-The Tab component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and the [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria/#roles) used to evaluate component accessibility.
+The Angular Tab component follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and the [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria/#roles) used to evaluate component accessibility.
 
 The accessibility compliance for the Tab component is outlined below.
 
@@ -36,7 +36,7 @@ The accessibility compliance for the Tab component is outlined below.
 
 ## ARIA attributes
 
-The Tab component follows the [WAI-ARIA Tabs pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/). ARIA roles and attributes are applied automatically based on the component's state, orientation, and `overflowMode`. The following attributes are managed by the Tab:
+The Angular Tab component follows the [WAI-ARIA Tabs pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/). ARIA roles and attributes are applied automatically based on the component's state, orientation, and `overflowMode`. The following attributes are managed by the Tab:
 
 | Role / Attribute | Applied to | Functionalities |
 | --- | --- | --- |
@@ -70,14 +70,14 @@ By default, keyboard navigation is enabled. The component implements keyboard na
 
 ## Ensuring accessibility
 
-The Tab component's accessibility is validated during automated testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core).
+The Angular Tab component's accessibility is validated during automated testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core).
 
-Open the [Angular Tab accessibility sample](https://ej2.syncfusion.com/accessibility/tab.html) in a new window to evaluate the Tab with accessibility tools.
+Open the [Angular Tab accessibility sample](https://ej2.syncfusion.com/accessibility/tab.html) in a new window to evaluate the Angular Tab with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/tab.html" %}
 
 ## See also
 
 * [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)
-* [Tab Key Navigation](./how-to/tab-key-navigation)
+* [Angular Tab Key Navigation](./how-to/tab-key-navigation)
 * [Keyboard interaction reference](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/)

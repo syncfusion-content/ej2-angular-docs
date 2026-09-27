@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular Toolbar
 
-The following content provides the exact CSS structure that can be used to modify the Toolbar component's appearance based on user preference.
+The following content provides the exact CSS structure that can be used to modify the Angular Toolbar component's appearance based on user preference.
 
-## Customizing the Toolbar container
+## Customizing the Angular Toolbar container
 
-Use the following CSS to customize the Toolbar container.
+Use the following CSS to customize the Angular Toolbar container.
 
 ```css
 
@@ -24,9 +24,9 @@ Use the following CSS to customize the Toolbar container.
 
 ```
 
-## Customizing Toolbar items
+## Customizing Angular Toolbar items
 
-Use the following CSS to customize the items within the Toolbar.
+Use the following CSS to customize the items within the Angular Toolbar.
 
 ```css
 
@@ -37,7 +37,7 @@ Use the following CSS to customize the items within the Toolbar.
 
 ```
 
-Use the following CSS to customize the button elements within the Toolbar items.
+Use the following CSS to customize the button elements within the Angular Toolbar items.
 
 ```css
 
@@ -48,9 +48,9 @@ Use the following CSS to customize the button elements within the Toolbar items.
 
 ```
 
-## Customizing Toolbar item icons
+## Customizing Angular Toolbar item icons
 
-Use the following CSS to customize the icon appearance within Toolbar items.
+Use the following CSS to customize the icon appearance within Angular Toolbar items.
 
 ```css
 
@@ -63,7 +63,7 @@ Use the following CSS to customize the icon appearance within Toolbar items.
 
 ## Customizing hover state
 
-Use the following CSS to customize the appearance of Toolbar items during hover interactions.
+Use the following CSS to customize the appearance of Angular Toolbar items during hover interactions.
 
 ```css
 
@@ -76,7 +76,7 @@ Use the following CSS to customize the appearance of Toolbar items during hover 
 
 ## Customizing selected item state
 
-Use the following CSS to customize the appearance of focused or selected Toolbar items.
+Use the following CSS to customize the appearance of focused or selected Angular Toolbar items.
 
 ```css
 

@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Icons in Angular Message
 
-This section explains the message with no icons, how to show or hide the close icon and add the custom severity icon to the message.
+This section explains the Angular Message with no icons, how to show or hide the close icon and add the custom severity icon to the message.
 
 ## No Icon
 
 By default, severity icons can be displayed according to the severity types to make it more understandable to the user by visual information rather than text. To hide the severity icons, set the [showIcon](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#showicon) property to `false`.
 
-The following example demonstrates the different severity messages without the severity icons.
+The following example demonstrates the different severity Angular Messages without the severity icons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -34,7 +34,7 @@ The following example demonstrates the different severity messages without the s
 
 By default, the severity icons can be displayed according to the severity type to make it more understandable to the user by visual information rather than text. If the user wants to customize these icons, it can be achieved through the `cssClass` property.
 
-The following example demonstrates how the default message is rendered with a custom severity icon.
+The following example demonstrates how the default Angular Message is rendered with a custom severity icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -50,11 +50,11 @@ The following example demonstrates how the default message is rendered with a cu
 
 ## Close Icon
 
-The message can be rendered with or without the close icon. The close icon is used to hide the message, either by manually clicking the close icon or through keyboard interaction.
+The Angular Message can be rendered with or without the close icon. The close icon is used to hide the Angular Message, either by manually clicking the close icon or through keyboard interaction.
 
-By default, the close icon is not rendered in the message. To show the close icon, set the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#showcloseicon) property to `true`.
+By default, the close icon is not rendered in the Angular Message. To show the close icon, set the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/message/index-default#showcloseicon) property to `true`.
 
-In the following example, the messages are rendered with the close icon.
+In the following example, the Angular Messages are rendered with the close icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

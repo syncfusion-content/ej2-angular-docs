@@ -1,13 +1,13 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService, ToolbarService, ExcelExportService } from '@syncfusion/ej2-angular-treegrid'
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
 
 import { L10n } from '@syncfusion/ej2-base';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { ToolbarItems } from '@syncfusion/ej2-treegrid';
 import { Filter } from '@syncfusion/ej2-angular-treegrid';
@@ -62,7 +62,9 @@ imports: [
 
 providers: [PageService,
                 SortService,
-                FilterService],
+                FilterService,
+                ToolbarService,
+                ExcelExportService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' [enableRtl]='true' locale='ar-AE' #treegrid height='220' [allowPaging]='true' [allowExcelExport]='true' [pageSettings]='pager' [treeColumnIndex]='1' [allowFiltering]='true' [filterSettings]='filters' childMapping='subtasks' [toolbar]='toolbarOptions'>

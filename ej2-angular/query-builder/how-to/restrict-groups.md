@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to set maximum group count in Angular Query Builder UI
 
-Restrict group creation by defining the [`maxGroupCount`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#maxgroupcount) property. This property accepts a numeric value that specifies the maximum number of groups allowed in the Query Builder. The default value is 5.
+Restrict group creation by defining the [`maxGroupCount`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/index-default#maxgroupcount) property. This property accepts a numeric value that specifies the maximum number of groups allowed in the Angular Query Builder UI. The default value is 5.
 
-When the configured limit is reached, users cannot add additional groups. In the following example, `maxGroupCount` is set to 2, which limits the Query Builder hierarchy to a maximum of two groups.
+When the configured limit is reached, users cannot add additional groups. In the following example, `maxGroupCount` is set to 2, which limits the Angular Query Builder UI hierarchy to a maximum of two groups.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Localization in Angular AutoComplete
 
-The `L10n` library allows you to localize the static text content of the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) and [`actionFailureTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) properties according to the culture currently assigned to the AutoComplete.
+The `L10n` library allows you to localize the static text content of the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) and [`actionFailureTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) properties according to the culture currently assigned to the Angular AutoComplete.
 
 | Locale key | en-US (default)  |
 |------|------|
@@ -21,7 +21,7 @@ The `L10n` library allows you to localize the static text content of the [`noRec
 
 To load translation object into your application, use the `load` function of the `L10n` class.
 
-In the following sample, French culture is set on the AutoComplete and no data is loaded. Hence, the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property displays its text in French initially, and if the sample is run offline, the [`actionFailureTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) property displays its text in French.
+In the following sample, French culture is set on the Angular AutoComplete and no data is loaded. Hence, the [`noRecordsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#norecordstemplate) property displays its text in French initially, and if the sample is run offline, the [`actionFailureTemplate`](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/index-default#actionfailuretemplate) property displays its text in French.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -38,4 +38,4 @@ In the following sample, French culture is set on the AutoComplete and no data i
 ## See Also
 
 * [Accessibility](./accessibility.md)
-* [How to bind the data to the autocomplete](./data-binding.md)
+* [How to bind the data to the Angular AutoComplete](./data-binding.md)

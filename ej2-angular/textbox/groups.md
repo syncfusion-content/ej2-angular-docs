@@ -11,9 +11,9 @@ documentation: ug
 
 The Syncfusion Angular TextBox component provides essential features to enhance user experience, including a built-in clear button for quick input reset and the ability to configure custom HTML attributes. This guide covers these primary features along with additional state management capabilities.
 
-## Add a Clear Button to the TextBox
+## Add a Clear Button to the Angular TextBox
 
-The TextBox component includes a clear button feature that allows users to quickly reset the input value with a single click. The clear button automatically appears when the field contains text and disappears when the field is empty, providing a clean and intuitive user interface.
+The Angular TextBox component includes a clear button feature that allows users to quickly reset the input value with a single click. The clear button automatically appears when the field contains text and disappears when the field is empty, providing a clean and intuitive user interface.
 
 To enable the clear button functionality, set the [showClearButton](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#showclearbutton) property to `true`.
 
@@ -30,11 +30,11 @@ To enable the clear button functionality, set the [showClearButton](https://ej2.
 
 ## Set HTML Attributes
 
-The TextBox component supports standard HTML attributes through the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#htmlattributes) property. This property accepts an object in which the keys represent attribute names and the values represent their corresponding values, allowing developers to add attributes such as `name`, `type`, `maxlength`, `placeholder`, `title`, and others directly to the input element.
+The Angular TextBox component supports standard HTML attributes through the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#htmlattributes) property. This property accepts an object in which the keys represent attribute names and the values represent their corresponding values, allowing developers to add attributes such as `name`, `type`, `maxlength`, `placeholder`, `title`, and others directly to the input element.
 
 When an attribute is configured through both a dedicated component property and the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#htmlattributes) object, the component prioritizes the dedicated property value.
 
-The following example demonstrates how to configure common HTML attributes for a TextBox:
+The following example demonstrates how to configure common HTML attributes for a Angular TextBox:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -61,11 +61,11 @@ export class AppComponent {
 }
 ```
 
-## Configure TextBox States
+## Configure Angular TextBox States
 
 ### Set the Disabled State
 
-To disable the TextBox and prevent user interaction, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#enabled) property to `false`.
+To disable the Angular TextBox and prevent user interaction, set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#enabled) property to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -81,7 +81,7 @@ To disable the TextBox and prevent user interaction, set the [enabled](https://e
 
 ### Set the Read-Only State
 
-Make the TextBox read-only while maintaining its visual appearance and allowing text selection by setting the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#readonly) property to `true`.
+Make the Angular TextBox read-only while maintaining its visual appearance and allowing text selection by setting the [readonly](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#readonly) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -95,14 +95,14 @@ Make the TextBox read-only while maintaining its visual appearance and allowing 
   
 {% previewsample "page.domainurl/samples/textbox/getting-started-cs9" %}
 
-## TextBox Methods
+## Angular TextBox Methods
 
 ### Focus Management
 
-Control the focus state of the TextBox programmatically using the focus methods:
+Control the focus state of the Angular TextBox programmatically using the focus methods:
 
 - Use [`focusIn`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#focusin) to set focus to the TextBox
-- Use [`focusOut`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#focusout) to remove focus from the TextBox
+- Use [`focusOut`](https://ej2.syncfusion.com/angular/documentation/api/textbox/index-default#focusout) to remove focus from the Angular TextBox
 
 ```typescript
 import { Component, ViewChild } from '@angular/core';
@@ -206,7 +206,7 @@ export class AppComponent {
 
 Create the Angular TextBox component programmatically using the `createInput` method from the `ej2-inputs` library. This approach is useful when building dynamic forms or when textbox elements need to be generated based on runtime conditions.
 
-### Steps to Create TextBox Programmatically
+### Steps to Create Angular TextBox Programmatically
 
 Follow these steps to create a TextBox component programmatically:
 
@@ -218,9 +218,9 @@ Import the `Input` module from the `ej2-inputs` library as shown below.
 import {Input} from '@syncfusion/ej2-inputs';
 ```
 
-### Step 2: Create the TextBox Using createInput Method
+### Step 2: Create the Angular TextBox Using createInput Method
 
-Pass the HTML Input element as a parameter to the `createInput` method. This method transforms a standard HTML input element into a Syncfusion TextBox component with enhanced styling and functionality.
+Pass the HTML Input element as a parameter to the `createInput` method. This method transforms a standard HTML input element into a Syncfusion Angular TextBox component with enhanced styling and functionality.
 
 ### Step 3: Add Icons (Optional)
 
@@ -228,7 +228,7 @@ Add icons to the input by passing the `buttons` property value with the class na
 
 ### Implementation Example
 
-The following example demonstrates how to create TextBox components programmatically with and without icons:
+The following example demonstrates how to create Angular TextBox components programmatically with and without icons:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -244,7 +244,7 @@ The following example demonstrates how to create TextBox components programmatic
 
 ### Use Cases
 
-Programmatic TextBox creation is particularly beneficial in the following scenarios:
+Programmatic Angular TextBox creation is particularly beneficial in the following scenarios:
 
 - Building dynamic forms where the number of input fields varies based on user selections
 - Creating input components in response to API data or configuration changes

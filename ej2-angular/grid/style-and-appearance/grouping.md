@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping Style in Angular Data Grid
+# Grouping Styles in Angular Data Grid
 
-The appearance of grouping elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the group header, group expand/collapse icons, group caption row, and grouping indent cell.
+Customize the appearance of grouping elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) using CSS. The following examples demonstrate styling the group drop area, group expand and collapse icons, group caption rows, and group indent cells.
 
 ## Customize the group drop area header
 
-The `.e-groupdroparea` class is used to style the group header element.
+Use the `.e-groupdroparea` class to style the group header element.
 
 ```css
 .e-grid .e-groupdroparea {
@@ -26,24 +26,24 @@ The `.e-groupdroparea` class is used to style the group header element.
 
 ## Customize the group expand and collapse icons
 
-The `.e-icon-gdownarrow` and `.e-icon-grightarrow` classes are used to style the expand and collapse icons.
+Use the `.e-icon-gdownarrow` and `.e-icon-grightarrow` classes to style the expand and collapse icons.
 
 ```css
-.e-grid .e-icon-gdownarrow::before{
-    content:'\e7c9'
-    }
-    .e-grid .e-icon-grightarrow::before{
-    content:'\e80f'
+.e-grid .e-icon-gdownarrow::before {
+    content:'\e7c9';
+}
+.e-grid .e-icon-grightarrow::before {
+    content:'\e80f';
 }
 ```
 
-In this example, the `content` property is modified to change the icon displayed. Available Syncfusion<sup style="font-size:70%">&reg;</sup> icons can be used based on the active theme.
+In this example, the `content` property is modified to change the icon displayed. Use the appropriate Syncfusion<sup style="font-size:70%">&reg;</sup> icon based on the active theme
 
 ![Group expand or collapse icons](../images/group-expand-or-collapse-icons.png)
 
 ## Customize the group caption row
 
-The `.e-groupcaption` class is used to style the group caption row element, and the `.e-recordplusexpand` and `.e-recordpluscollapse` classes are used for the icons indicating record expansion or collapse.
+Use the `.e-groupcaption` class to style the group caption row element, and the `.e-recordplusexpand` and `.e-recordpluscollapse` classes are used for the icons indicating record expansion or collapse.
 
 ```css
 .e-grid .e-groupcaption {
@@ -60,7 +60,7 @@ The `.e-groupcaption` class is used to style the group caption row element, and 
 
 ## Customize the grouping indent cell
 
-The `.e-indentcell` class is used to style the indent cell that appears in grouped grid rows.
+Use the `.e-indentcell` class to style the indent cell that appears in grouped grid rows.
 
 ```css
 .e-grid .e-indentcell {

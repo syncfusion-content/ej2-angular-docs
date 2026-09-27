@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to apply fancy Tooltip customization in Angular Tooltip
 
-Customize the tooltip arrow by overriding CSS at the sample level.
+Customize the Angular Tooltip arrow by overriding CSS at the sample level.
 
-The Tooltip component is styled using CSS3 and positions the tip arrow according to tooltip positions such as `TopCenter`, `BottomLeft`, `RightTop`, and others.
+The Angular Tooltip component is styled using CSS3 and positions the tip arrow according to Angular Tooltip positions such as `TopCenter`, `BottomLeft`, `RightTop`, and others.
 
 The following sample demonstrates customizing the tip arrow as a Curved Tooltip and Bubble Tooltip.
 
@@ -57,7 +57,7 @@ Two `div` elements (inner and outer) are used to create the bubble tip arrow. To
 
 ```
 
-These tip arrow customizations are achieved through CSS changes at the sample level. Change the tooltip position by using the radio button click event.
+These tip arrow customizations are achieved through CSS changes at the sample level. Change the Angular Tooltip position by using the radio button click event.
 
 Disable the arrow tip pointer using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) property.
 

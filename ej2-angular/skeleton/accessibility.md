@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Skeleton
 
-The Skeleton component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Skeleton component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Skeleton component is outlined below.
+The accessibility compliance for the Angular Skeleton component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Section 508](https://www.section508.gov) Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | Color Contrast | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
@@ -40,20 +40,20 @@ The accessibility compliance for the Skeleton component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Skeleton component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Skeleton component:
+The Angular Skeleton component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert) patterns to meet the accessibility. The following ARIA attributes are used in the Angular Skeleton component:
 
 | Attributes | Purpose |
 | ------------ | ----------------------- |
 | `role=alert` | Used to convey important, time-sensitive or contextual message to the user. |
-| `aria-label` | Attribute provides the text label for the Skeleton. |
+| `aria-label` | Attribute provides the text label for the Angular Skeleton. |
 | `aria-live` | Attributes which indicates the content changes which are not interactable are live regions. |
 | `aria-busy` | Set to true until loading is complete, then set to false. |
 
 ## Ensuring accessibility
 
-The Skeleton component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Skeleton component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Skeleton component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/skeleton.html) in a new window to evaluate the accessibility of the Skeleton component with accessibility tools.
+The accessibility compliance of the Angular Skeleton component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/skeleton.html) in a new window to evaluate the accessibility of the Angular Skeleton component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/skeleton.html" %}
 

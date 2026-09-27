@@ -20,7 +20,7 @@ export class AppComponent {
     // To arrange ruler tick.
     private arrangeTicks(args: any) {
         if (args.tickInterval % 10 === 0) {
-          // Set the tick length to 25 when the interval is divisible by 10
+          // Set the tick length to 45 when the interval is divisible by 10
           args.tickLength = 45;
         }
     }

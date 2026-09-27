@@ -108,7 +108,7 @@ Template options are available to customize the indicators using the [`indicator
 
 ### Showing preview of slide in indicator
 
-You can customize the indicators to display preview images of each slide using the [`indicatorsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel#indicatorstemplate) property. The following example depicts the code for showing the preview image using a template for indicators in the carousel.
+You can customize the indicators to display preview images of each slide using the [`indicatorsTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel#indicatorstemplate) property. The following example depicts the code for showing the preview image using a template for indicators in the Angular Carousel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -133,7 +133,7 @@ Choose different types of indicators available using the [`indicatorsType`](http
 
 #### Default Indicator
 
-A default indicator in a carousel displays a set of dots that indicate the current position of the slide in the carousel. The Default indicator can be achieved by setting the [`indicatorsType`](https://ej2.syncfusion.com/angular/documentation/api/carousel#indicatorstype) to `Default`.
+A default indicator in a Angular Carousel displays a set of dots that indicate the current position of the slide in the carousel. The Default indicator can be achieved by setting the [`indicatorsType`](https://ej2.syncfusion.com/angular/documentation/api/carousel#indicatorstype) to `Default`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -149,7 +149,7 @@ A default indicator in a carousel displays a set of dots that indicate the curre
 
 #### Dynamic Indicator
 
-A dynamic indicator in a carousel provides visual cues or markers that dynamically change or update to indicate the current position. The Dynamic indicator can be achieved by setting the [`indicatorsType`](https://ej2.syncfusion.com/angular/documentation/api/carousel#indicatorstype) to `Dynamic`.
+A dynamic indicator in a Angular Carousel provides visual cues or markers that dynamically change or update to indicate the current position. The Dynamic indicator can be achieved by setting the [`indicatorsType`](https://ej2.syncfusion.com/angular/documentation/api/carousel#indicatorstype) to `Dynamic`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -199,7 +199,7 @@ The Progress Indicator type displays the current slide as a progress bar. The Pr
 
 ### Show or hide the play button
 
-The carousel [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/carousel#autoplay) functionality can be controlled through the user interface using the [`showPlayButton`](https://ej2.syncfusion.com/angular/documentation/api/carousel#showplaybutton) property. When this property is enabled, slide transitions are controlled using the play and pause button, which provides manual control over the automatic slide progression. This property depends on the [`buttonsVisibility`](https://ej2.syncfusion.com/angular/documentation/api/carousel#buttonsvisibility) property. The following example depicts the code to show the play button in the carousel.
+The Angular Carousel [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/carousel#autoplay) functionality can be controlled through the user interface using the [`showPlayButton`](https://ej2.syncfusion.com/angular/documentation/api/carousel#showplaybutton) property. When this property is enabled, slide transitions are controlled using the play and pause button, which provides manual control over the automatic slide progression. This property depends on the [`buttonsVisibility`](https://ej2.syncfusion.com/angular/documentation/api/carousel#buttonsvisibility) property. The following example depicts the code to show the play button in the Angular Carousel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -215,7 +215,7 @@ The carousel [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/c
 
 ### Play button template
 
-Template options are available to customize the play button using the [`playButtonTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel#playbuttontemplate) property. The following example depicts the code for applying a template to play Button in the carousel.
+Template options are available to customize the play button using the [`playButtonTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel#playbuttontemplate) property. The following example depicts the code for applying a template to play Button in the Angular Carousel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

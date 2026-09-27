@@ -14,13 +14,13 @@ The Angular Diagram component automatically tracks all user interactions and pro
 
 ## Prerequisites and setup
 
-To enable undo/redo functionality in the diagram, inject the UndoRedo module into the diagram component.
+To enable undo/redo functionality in the Angular Diagram, inject the UndoRedo module into the diagram component.
 
 N> The UndoRedo module must be injected to access undo/redo features in the diagram component.
 
 ## Basic undo and redo operations
 
-The diagram provides built-in support to track changes made through both user interactions and public API calls. These changes can be reversed or restored using keyboard shortcuts or programmatic commands.
+The Angular Diagram provides built-in support to track changes made through both user interactions and public API calls. These changes can be reversed or restored using keyboard shortcuts or programmatic commands.
 
 ### Keyboard shortcuts
 
@@ -36,16 +36,21 @@ The [`undo`](https://ej2.syncfusion.com/angular/documentation/api/diagram#undo) 
 @Component({
   selector: "app-container",
   // Diagram template
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px"  (created)='created($event)'>
-      </ejs-diagram>`,
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px">
+      </ejs-diagram>
+      <button (click)='onUndo()'>Undo</button>
+      <button (click)='onRedo()'>Redo</button>`,
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild("diagram")
     public diagram: DiagramComponent;
-    public created(args: Object): void {
+
+    public onUndo(): void {
         // Reverts the last action performed
         this.diagram.undo();
+    }
+    public onRedo(): void {
         // Restores the last undone action
         this.diagram.redo();
     }
@@ -119,6 +124,8 @@ Prevent specific actions from being recorded in the history using the [`canLog`]
 The history manager provides read-only access to both undo and redo stacks through the [`undoStack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history#undostack) and [`redoStack`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history#redostack) properties:
 
 ```typescript
+import { HistoryEntry } from '@syncfusion/ej2-angular-diagrams';
+
 @Component({
     selector: "app-container",
     // render initialized Diagram
@@ -175,9 +182,8 @@ During user interactions with nodes or connectors, the current history entry is 
 Use the [`clearHistory`](https://ej2.syncfusion.com/angular/documentation/api/diagram#clearhistory) method to remove all recorded actions from both undo and redo history stacks:
 
 ```typescript
-//Clears all the histories
+// Clears all history entries
 this.diagram.clearHistory();
-
 ```
 
 ### Retrieving history stacks

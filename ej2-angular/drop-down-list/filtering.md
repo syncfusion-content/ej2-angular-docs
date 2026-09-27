@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Filtering in Angular Dropdown List
 
-The DropDownList component provides built-in support for filtering data items when the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) property is enabled. The filtering operation begins as soon as you start typing characters in the search box.
+The Angular Dropdown List component provides built-in support for filtering data items when the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) property is enabled. The filtering operation begins as soon as you start typing characters in the search box.
 
-To display filtered items in the popup, you can filter the required data and return them to the DropDownList using the [`updateData`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs#updatedata) method within the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs) event.
+To display filtered items in the popup, you can filter the required data and return them to the Angular Dropdown List using the [`updateData`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs#updatedata) method within the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs) event.
 
-The following sample demonstrates how to query the data source and pass the filtered data to the DropDownList through the [`updateData`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs#updatedata) method in the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs) event.
+The following sample demonstrates how to query the data source and pass the filtered data to the Angular Dropdown List through the [`updateData`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs#updatedata) method in the [filtering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/filteringEventArgs) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -90,9 +90,9 @@ The following example demonstrates how to perform a case-sensitive filter.
 
 ## Diacritics Filtering
 
-The DropDownList component supports diacritics filtering, which helps to ignore [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results from lists of international characters. This feature is enabled by setting the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#ignoreaccent) property to `true`.
+The Angular Dropdown List component supports diacritics filtering, which helps to ignore [diacritics](https://en.wikipedia.org/wiki/Diacritic) and makes it easier to filter results from lists of international characters. This feature is enabled by setting the [ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#ignoreaccent) property to `true`.
 
-In the following sample, data containing diacritic characters is bound as the dataSource for the DropDownList.
+In the following sample, data containing diacritic characters is bound as the dataSource for the Angular Dropdown List.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

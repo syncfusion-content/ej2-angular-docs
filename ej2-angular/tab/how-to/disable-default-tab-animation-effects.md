@@ -30,7 +30,7 @@ public animation: object = {
 
 > **Accessibility remark:** Visual transitions can help certain users locate the changed panel. If you disable animations, consider keeping a short duration (e.g., `100` ms) so screen-reader focus updates remain perceptible.
 
-The following sample demonstrates Tab with default animations disabled.
+The following sample demonstrates Angular Tab with default animations disabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -47,4 +47,4 @@ The following sample demonstrates Tab with default animations disabled.
 ## See Also
 
 * [Set custom animation](./set-custom-animation)
-* [Set state persistence of the Tab component](./set-state-persistence-of-the-tab-component)
+* [Set state persistence of the Angular Tab component](./set-state-persistence-of-the-tab-component)

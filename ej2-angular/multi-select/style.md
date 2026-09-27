@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style and Appearance in Angular MultiSelect Dropdown
 
-The following content provides the CSS selectors and properties that you can use to customize the appearance of the Angular MultiSelect component.
+The following content provides the CSS selectors and properties that you can use to customize the appearance of the Angular MultiSelect Dropdown component.
 
 ## Customizing the background color of the wrapper element
 

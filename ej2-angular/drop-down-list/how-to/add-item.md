@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 You can add an item in between based on item [`index`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#index). If you add new item an without item index, it will be added as last item in list.
 
-To get started quickly with adding items in the Angular DropDownList component, you can check the video below.
+To get started quickly with adding items in the Angular Dropdown List component, you can check the video below.
 
 {% youtube "https://www.youtube.com/watch?v=tEuTP0SYxn4" %}
 
-The following example demonstrates how to add item in between in DropDownList.
+The following example demonstrates how to add item in between in Angular Dropdown List.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

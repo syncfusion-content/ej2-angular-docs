@@ -1,22 +1,22 @@
 ---
 layout: post
-title: JWT Authentication in Angular Uploader | Syncfusion
-description: Secure Angular Uploader save and remove requests with JWT tokens by adding an Authorization header in the uploading and removing events, validated server-side.
+title: JWT Authentication in Angular File Upload | Syncfusion
+description: Secure Angular File Upload save and remove requests with JWT tokens by adding an Authorization header in the uploading and removing events, validated server-side.
 platform: ej2-angular
 control: JWT Authentication  
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# JWT Authentication in Angular Uploader
+# JWT Authentication in Angular File Upload
 
 A JSON Web Token (JWT) is an open standard for securely transmitting information between parties as a JSON object. JWTs are commonly used for authentication and authorization. Clients include a JWT in request headers, which the server validates before processing. This approach adds a security layer, ensuring only authenticated users can upload or remove files.
 
-This guide demonstrates how to implement JWT authentication with the Uploader component in an Angular application. The server-side example uses .NET Core to validate JWT tokens before allowing file uploads or deletions.
+This guide demonstrates how to implement JWT authentication with the Angular File Upload component in an Angular application. The server-side example uses .NET Core to validate JWT tokens before allowing file uploads or deletions.
 
 ## Client-side setup
 
-To implement JWT authentication with the Uploader, use the `uploading` and `removing` events. Configure save and remove URLs using `asyncSettings`. Store the JWT in a component property.
+To implement JWT authentication with the Angular File Upload, use the `uploading` and `removing` events. Configure save and remove URLs using `asyncSettings`. Store the JWT in a component property.
 
 The `currentRequest` property and `setRequestHeader` method are used to add the JWT token to request headers during save and remove operations.
 

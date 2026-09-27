@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Symbol Palette Events in Angular Diagram | Syncfusion®
-description: Handle drag-enter, drag-leave, drag-over, and selection-change events in the Syncfusion® Angular Diagram symbol palette to validate drop targets and customize symbol placement.
+description: Subscribe to Angular Diagram Symbol Palette events for drag, drop, expand, and selection changes to react on user actions during symbol placement.
 platform: ej2-angular
 control: Symbol palette 
 documentation: ug
@@ -15,6 +15,17 @@ The Symbol Palette component provides several events that trigger during user in
 ## DragEnter event
 
 The [`DragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs) event triggers when a symbol enters the diagram surface while being dragged from the symbol palette. This event allows developers to customize the appearance of the dragged symbol or validate drop targets dynamically based on the diagram's current state.
+
+The `IDragEnterEventArgs` provides the following properties:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| cancel | boolean | Indicates whether the symbol should be added to or removed from the diagram. |
+| diagram | DiagramModel | The diagram instance. |
+| dragData | DropInfo | The node or connector dragged into the diagram from another component. |
+| dragItem | NodeModel / ConnectorModel | The node or connector returned to the diagram. |
+| element | NodeModel / ConnectorModel | The node or connector being dragged into the diagram. |
+| source | Object | The source object being dragged into the diagram. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,6 +43,13 @@ The [`DragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/i
 
 The [`DragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragLeaveEventArgs) event occurs when a dragged symbol leaves the diagram surface without being dropped. This event is particularly useful for cleaning up temporary visual changes applied during the drag operation or resetting any modified states.
 
+The `IDragLeaveEventArgs` provides the following properties:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| diagram | DiagramModel | The diagram instance. |
+| element | SelectorModel | The node or connector dragged outside the diagram. |
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/events/drag-leave/src/app.component.ts %}
@@ -47,6 +65,15 @@ The [`DragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/i
 ## DragOver event
 
 The [`DragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragOverEventArgs) event triggers continuously while a symbol is being dragged over the diagram surface. This event provides real-time feedback during drag operations and enables developers to implement dynamic drop validation.
+
+The `IDragOverEventArgs` provides the following properties:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| element | NodeModel / ConnectorModel | The element being dragged. |
+| source | Diagram | The source diagram reference. |
+| target | Diagram | The target diagram reference. |
+| cancel | boolean | Whether to cancel the drag operation. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,6 +91,15 @@ The [`DragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iD
 
 The [`Drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDropEventArgs) event triggers when a symbol is successfully dropped onto the diagram surface. This event serves as the final step in the drag-and-drop process and provides access to both the dropped symbol and the target location.
 
+The `IDropEventArgs` provides the following properties:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| element | NodeModel / ConnectorModel | The dropped element. |
+| source | Diagram | The source diagram reference. |
+| target | Diagram | The target diagram reference. |
+| cancel | boolean | Whether to cancel the drop operation. |
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/events/drop/src/app.component.ts %}
@@ -79,6 +115,13 @@ The [`Drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDropE
 ## PaletteExpanding event
 
 The [`PaletteExpanding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteExpandArgs) event triggers when a palette group is expanded or collapsed within the symbol palette. This event enables developers to control palette expansion behavior and implement custom logic based on palette state changes.
+
+The `IPaletteExpandArgs` provides the following properties:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| palette | PaletteModel | The palette being expanded or collapsed. |
+| cancel | boolean | Whether to cancel the expansion. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,6 +139,14 @@ The [`PaletteExpanding`](https://ej2.syncfusion.com/angular/documentation/api/di
 
 The [`PaletteSelectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iPaletteSelectionChangeArgs) event triggers when the selection changes within the symbol palette. This event provides information about both the previously selected and newly selected symbols, enabling developers to respond to selection changes appropriately.
 
+The `IPaletteSelectionChangeArgs` provides the following properties:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| oldValue | NodeModel / ConnectorModel | The previously selected symbol. |
+| newValue | NodeModel / ConnectorModel | The newly selected symbol. |
+| cancel | boolean | Whether to cancel the selection change. |
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/events/palette-selection/src/app.component.ts %}
@@ -107,3 +158,9 @@ The [`PaletteSelectionChange`](https://ej2.syncfusion.com/angular/documentation/
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/symbolpalette/events/palette-selection" %}
+
+## See also
+
+- [Symbol palette customization](./palette-customization)
+- [Nodes](../nodes)
+- [Interaction](../interaction)

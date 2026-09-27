@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Icons in Angular Breadcrumb
 
-The Breadcrumb component supports icons and images to provide visual representation and enhance navigation context for each item. Icons can be implemented using font icons, custom images, or SVG graphics through the `iconCss` property, with flexible positioning options to suit different design requirements.
+The Angular Breadcrumb component supports icons and images to provide visual representation and enhance navigation context for each item. Icons can be implemented using font icons, custom images, or SVG graphics through the `iconCss` property, with flexible positioning options to suit different design requirements.
 
-## Loading icon in Breadcrumb items
+## Loading icon in Angular Breadcrumb items
 
 To load icons on breadcrumb items, configure the `iconCss` property with the appropriate CSS class or styling.
 
-### Breadcrumb with Font Icon
+### Angular Breadcrumb with Font Icon
 
 To place font icons on breadcrumb items, set the `iconCss` property to `e-icons` with the required icon CSS class. By default, icons are positioned to the left side of the item text.
 
@@ -32,9 +32,9 @@ To place font icons on breadcrumb items, set the `iconCss` property to `e-icons`
   
 {% previewsample "page.domainurl/samples/breadcrumb/icons-cs1" %}
 
-### Breadcrumb with Image
+### Angular Breadcrumb with Image
 
-In the Breadcrumb component, images can be added to items using the `iconCss` property. In the following example, an image is added to the breadcrumb item using the iconCss class `e-image-home` with specified height and width dimensions.
+In the Angular Breadcrumb component, images can be added to items using the `iconCss` property. In the following example, an image is added to the Angular Breadcrumb item using the iconCss class `e-image-home` with specified height and width dimensions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -48,9 +48,9 @@ In the Breadcrumb component, images can be added to items using the `iconCss` pr
   
 {% previewsample "page.domainurl/samples/breadcrumb/icons-cs2" %}
 
-### Breadcrumb with SVG Image
+### Angular Breadcrumb with SVG Image
 
-In the Breadcrumb component, SVG images can be added to items using the `iconCss` property. In the following example, an SVG image is added to the breadcrumb item using the iconCss class `e-svg-home` with specified height and width dimensions.
+In the Angular Breadcrumb component, SVG images can be added to items using the `iconCss` property. In the following example, an SVG image is added to the Angular Breadcrumb item using the iconCss class `e-svg-home` with specified height and width dimensions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -66,7 +66,7 @@ In the Breadcrumb component, SVG images can be added to items using the `iconCss
 
 ## Icon Position
 
-By default, icons are positioned to the left side of the item text in the Breadcrumb component. To position icons to the right of breadcrumb items, add the `e-icon-right` class to the required item. In the following example, the `e-icon-right` class is added to breadcrumb items using the `beforeItemRender` event.
+By default, icons are positioned to the left side of the item text in the Angular Breadcrumb component. To position icons to the right of Angular Breadcrumb items, add the `e-icon-right` class to the required item. In the following example, the `e-icon-right` class is added to breadcrumb items using the `beforeItemRender` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -82,7 +82,7 @@ By default, icons are positioned to the left side of the item text in the Breadc
 
 ## Icon Only
 
-To display only icons for items without text, add icons using the `iconCss` property while omitting the `text` property. In the following example, breadcrumb items are demonstrated with only icons by providing the `iconCss` property.
+To display only icons for items without text, add icons using the `iconCss` property while omitting the `text` property. In the following example, Angular Breadcrumb items are demonstrated with only icons by providing the `iconCss` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -98,7 +98,7 @@ To display only icons for items without text, add icons using the `iconCss` prop
 
 ## Show icon only for first item
 
-To display an icon only for the first item in the Breadcrumb component, add icons to the first item using the `iconCss` property while leaving other items without icons. In the following example, the icon is provided only for the first item by setting the `iconCss` property.
+To display an icon only for the first item in the Angular Breadcrumb component, add icons to the first item using the `iconCss` property while leaving other items without icons. In the following example, the icon is provided only for the first item by setting the `iconCss` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

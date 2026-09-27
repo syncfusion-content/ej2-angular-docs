@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Frame in Angular Image Editor
 
-The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
+The frame feature in an Angular Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 
 ## Apply a frame to the image
 

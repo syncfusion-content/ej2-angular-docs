@@ -21,7 +21,7 @@ The following table describes the fields of the `animation` property:
 | [duration](https://ej2.syncfusion.com/angular/documentation/api/stepper/animationModel/#duration) | `number` | Specifies the duration of the animated transition for each step in milliseconds. The default value is `2000`. |
 | [delay](https://ej2.syncfusion.com/angular/documentation/api/stepper/animationModel/#delay) | `number` | Specifies the delay before initiating the animated transition for each step in milliseconds. The default value is `0`. |
 
-The example demonstrates animation settings with customized `duration` and `delay` for the Stepper component.
+The example demonstrates animation settings with customized `duration` and `delay` for the Angular Stepper component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

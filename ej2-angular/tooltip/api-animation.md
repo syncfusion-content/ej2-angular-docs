@@ -14,8 +14,8 @@ domainurl: ##DomainURL##
 
 ### close [`TooltipAnimationSettings`](https://ej2.syncfusion.com/angular/documentation/api-tooltipAnimationSettings.html)
 
-Animation settings applied to the tooltip when it closes.
+Animation settings applied to the Angular Tooltip when it closes.
 
 ### open [`TooltipAnimationSettings`](https://ej2.syncfusion.com/angular/documentation/api-tooltipAnimationSettings.html)
 
-Animation settings applied to the tooltip when it displays over the target.
+Animation settings applied to the Angular Tooltip when it displays over the target.

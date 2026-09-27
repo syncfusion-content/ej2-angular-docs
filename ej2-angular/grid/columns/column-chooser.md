@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Angular Grid Column Chooser | Syncfusion
+title: Angular Grid Column Chooser | Syncfusion
 description: Learn how to show, hide, and manage column visibility in Angular Data Grid using the Column Chooser.
 platform: ej2-angular
 control: Column chooser

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to bind slider with ngModel in Angular Range Slider | Syncfusion
-description: Bind the Angular Range Slider to a numeric input with two-way ngModel so both controls stay in sync as the user adjusts the value.
+title: How to bind slider with ngModel in Angular Slider | Syncfusion
+description: Bind the Angular Slider to a numeric input with two-way ngModel so both controls stay in sync as the user adjusts the value.
 platform: ej2-angular
 control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to bind slider with ngModel in Angular Range Slider
+# How to bind slider with ngModel in Angular Slider
 
-Implement two-way data binding between a Range Slider and other form controls using the [ngModel](https://angular.io/api/forms/NgModel) directive. Changes to the slider value automatically update bound properties, and vice versa. Follow the steps below to set up two-way binding.
+Implement two-way data binding between a Angular Slider and other form controls using the [ngModel](https://angular.io/api/forms/NgModel) directive. Changes to the slider value automatically update bound properties, and vice versa. Follow the steps below to set up two-way binding.
 
 * Create a [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component and bind its value property using ngModel. Refer to the code snippet below.
 

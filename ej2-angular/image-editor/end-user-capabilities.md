@@ -15,7 +15,7 @@ The following operations are available for end-users and are explained briefly i
 
 ## Open an image
 
-To open an image in the image editor, follow these steps.
+To open an image in the Angular Image Editor, follow these steps.
 
 * Click the Open icon on the left side of the toolbar.
 
@@ -103,7 +103,7 @@ To crop an image in the image editor, follow these steps.
 
 ## Annotations
 
-To add annotations to an image in the image editor, follow these steps.
+To add annotations to an image in the Angular Image Editor, follow these steps.
 
 * To add an annotation, click the annotation button in the toolbar and select the type of annotation, such as Line, Rectangle, Ellipse, Path, Arrow, Text, or Freehand drawing, to insert it into the image editor.
 
@@ -113,7 +113,7 @@ To add annotations to an image in the image editor, follow these steps.
 
 * Customize the annotations by changing their color and stroke width through the contextual toolbar (text annotations also support font family and font size). The contextual toolbar is enabled whenever an annotation is selected.
 
-* When annotations are selected in the Image Editor, the quick access toolbar becomes active, providing convenient access to various actions such as duplicating, deleting, or editing text associated with the selected annotation. This toolbar enables users to perform these common operations quickly and efficiently, streamlining their workflow and enhancing the overall editing experience.
+* When annotations are selected in the Angular Image Editor, the quick access toolbar becomes active, providing convenient access to various actions such as duplicating, deleting, or editing text associated with the selected annotation. This toolbar enables users to perform these common operations quickly and efficiently, streamlining their workflow and enhancing the overall editing experience.
 
 ![Image annotation showcase](../code-snippet/image-editor/images/annotation.jpg)
 
@@ -121,19 +121,19 @@ To add annotations to an image in the image editor, follow these steps.
 
 ### Fine-tune
 
-To perform fine-tuning on an image in the image editor, follow these steps.
+To perform fine-tuning on an image in the Angular Image Editor, follow these steps.
 
 * Click the fine-tune button, which displays the list of fine-tuning options available in the image editor.
 
 * Click one of the fine-tune options from the list, which shows a slider to adjust the corresponding setting.
 
-* Click on the canvas or the tick icon at the right corner of the toolbar in the image editor to apply the modifications.
+* Click on the canvas or the tick icon at the right corner of the toolbar in the Angular Image Editor to apply the modifications.
 
 ![Filtering and fine-tune showcase](../code-snippet/image-editor/images/finetune.jpg)
 
 ### Filters
 
-To apply filters to an image in the image editor, follow these steps.
+To apply filters to an image in the Angular Image Editor, follow these steps.
 
 * Click the filter button, which displays the list of filters available in the image editor.
 
@@ -145,7 +145,7 @@ To apply filters to an image in the image editor, follow these steps.
 
 ## Undo and redo operations
 
-To undo and redo the actions performed in the image editor, follow these steps.
+To undo and redo the actions performed in the Angular Image Editor, follow these steps.
 
 * The undo button is enabled once an action is performed in the image editor.
 
@@ -159,15 +159,15 @@ To undo and redo the actions performed in the image editor, follow these steps.
 
 ## Reset an image
 
-To revert all the changes made in the image editor, follow these steps.
+To revert all the changes made in the Angular Image Editor, follow these steps.
 
 * Click the reset button, which is located on the right side of the toolbar.
 
-* This will revert all the changes made in the image editor.
+* This will revert all the changes made in the Angular Image Editor.
 
 ## Export an image
 
-To save the modified image in the Image Editor, follow these steps:
+To save the modified image in the Angular Image Editor, follow these steps:
 
 * Click the Save button
     * Locate the Save button on the right side of the toolbar and click it.

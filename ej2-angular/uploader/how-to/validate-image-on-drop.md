@@ -1,19 +1,19 @@
 ---
 layout: post
-title: How to validate image on drop in Angular Uploader | Syncfusion
-description: Validate image files in the Angular Uploader on drag-and-drop by filtering extensions in the selected event for PNG, JPG, BMP, GIF, and TIFF formats.
+title: How to validate image on drop in Angular File Upload | Syncfusion
+description: Validate image files in the Angular File Upload on drag-and-drop by filtering extensions in the selected event for PNG, JPG, BMP, GIF, and TIFF formats.
 platform: ej2-angular
 control: Validate image on drop 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to validate image on drop in Angular Uploader
+# How to validate image on drop in Angular File Upload
 
-The Uploader component allows you to upload all image types by setting `image/*` to the [allowedExtensions](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#allowedextensions) property.
-You can set this directly to the `accept` attribute of the Uploader element.
+The Angular File Upload component allows you to upload all image types by setting `image/*` to the [allowedExtensions](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#allowedextensions) property.
+You can set this directly to the `accept` attribute of the Angular File Upload element.
 
-By default, this validation works when selecting files via the browse button. However, it is not enforced on dragged-and-dropped files. You can implement manual validation for drops by handling the `selected` event, checking each file's extension against an allow-list, marking disallowed entries, and setting `args.isModified = true` so the Uploader reflects the modified list.
+By default, this validation works when selecting files via the browse button. However, it is not enforced on dragged-and-dropped files. You can implement manual validation for drops by handling the `selected` event, checking each file's extension against an allow-list, marking disallowed entries, and setting `args.isModified = true` so the Angular File Upload reflects the modified list.
 
 In the following example, dropped files are validated against an `image/*` allow-list of PNG, JPG/JPEG, GIF, TIFF, and BPG extensions. Browse-button selections still rely on `allowedExtensions`/`accept`; the manual check applies only to drops.
 

@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Customize ListView with dynamic tags in Angular ListView component
 
-The ListView component can be customized to display items with dynamic tags using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property. This implementation allows users to add and remove tags dynamically from list items through interaction with a secondary ListView rendered within a Dialog component.
+The Angular ListView component can be customized to display items with dynamic tags using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view#template) property. This implementation allows users to add and remove tags dynamically from list items through interaction with a secondary Angular ListView rendered within a Dialog component.
 
 ## Implementation approach
 
-The dynamic tag functionality requires coordination between a parent ListView, a Dialog component, and a secondary ListView that serves as a tag selector. The following steps outline the complete implementation:
+The dynamic tag functionality requires coordination between a parent Angular ListView, a Dialog component, and a secondary ListView that serves as a tag selector. The following steps outline the complete implementation:
 
-* Initialize a dynamic ListView with the required properties to hold available tags for the parent ListView items. Bind the [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) event handler to capture user selections and add the chosen values as tags to the corresponding parent ListView item.
+* Initialize a dynamic Angular ListView with the required properties to hold available tags for the parent Angular ListView items. Bind the [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view#select) event handler to capture user selections and add the chosen values as tags to the corresponding parent Angular ListView item.
 
     ```typescript
 
-    //Select event handler for the tag selector ListView rendered within the dialog
+    //Select event handler for the tag selector Angular ListView rendered within the dialog
     addTag(e) {
         let listTag = document.createElement('span');
         listTag.className = 'advanced-option';
@@ -40,13 +40,13 @@ The dynamic tag functionality requires coordination between a parent ListView, a
 
     ```
 
-* Configure the Dialog component with appropriate content and append the dynamically created ListView to the dialog during the [`created`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#created) event. This ensures the tag selector ListView is properly initialized when the dialog becomes available.
+* Configure the Dialog component with appropriate content and append the dynamically created Angular ListView to the dialog during the [`created`](https://ej2.syncfusion.com/angular/documentation/api/dialog#created) event. This ensures the tag selector Angular ListView is properly initialized when the dialog becomes available.
 
-* Implement click event handling for the add button icon (+) to update the ListView data source with available tags and display the dialog containing the dynamic ListView selector. This method manages both the data binding and dialog visibility states.
+* Implement click event handling for the add button icon (+) to update the Angular ListView data source with available tags and display the dialog containing the dynamic Angular ListView selector. This method manages both the data binding and dialog visibility states.
 
     ```typescript
 
-    //Method to hide/show the dialog and update the ListView data source
+    //Method to hide/show the dialog and update the Angular ListView data source
     renderDialog(id) {
         if (document.getElementsByClassName('e-popup-open').length != 0) {
             this.dialog.hide();
@@ -60,7 +60,7 @@ The dynamic tag functionality requires coordination between a parent ListView, a
 
     ```
 
-* Bind click event handlers to dynamically added tags to enable removal functionality. This allows users to delete tags after they have been added to ListView items.
+* Bind click event handlers to dynamically added tags to enable removal functionality. This allows users to delete tags after they have been added to Angular ListView items.
 
     ```typescript
 

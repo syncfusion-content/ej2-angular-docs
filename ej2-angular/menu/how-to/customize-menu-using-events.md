@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize menu using events in Angular Menu Bar
 
-This section demonstrates how to customize the behavior of the Angular Menu component using events such as `beforeOpen`, `beforeClose`, `onOpen`, `onClose`, `select`, and `created`. These events allow dynamic modification of menu behavior, such as altering submenu content or handling item selection.
+This section demonstrates how to customize the behavior of the Angular Menu Bar component using events such as `beforeOpen`, `beforeClose`, `onOpen`, `onClose`, `select`, and `created`. These events allow dynamic modification of menu behavior, such as altering submenu content or handling item selection.
 
 The following table summarizes the available events and their purposes:
 

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Positions in Angular Floating Action Button
 
-The floating action button can be positioned anywhere on the [`target`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#target) using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#position) property. If the `target` is not defined, then FAB is positioned based on the browser viewport.
+The Angular Floating Action Button can be positioned anywhere on the [`target`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#target) using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#position) property. If the `target` is not defined, then FAB is positioned based on the browser viewport.
 
-The position values of Floating Action Button are as follows:
+The position values of Angular Floating Action Button are as follows:
 * TopLeft
 * TopCenter
 * TopRight
@@ -28,7 +28,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Floating Action Button in BottomLeft position. -->
+    template: `<!-- To Render Angular Floating Action Button in BottomLeft position. -->
                 <button ejs-fab id='fab' content='Add' position='BottomLeft'></button>`
 })
 
@@ -54,7 +54,7 @@ Below example demonstrates different supported positions of FAB.
 
 ## Custom position
 
-You can define the custom position of the Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properties using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass). For detailed information, refer `index.css` file below.
+You can define the custom position of the Angular Floating Action Button by override the `top`, `left`, `right`, and `bottom` CSS properties using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass). For detailed information, refer `index.css` file below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

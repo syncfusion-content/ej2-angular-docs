@@ -14,7 +14,7 @@ The Angular Stepper component supports different step types to customize how ste
 
 ## Default type
 
-In the default type, the Stepper displays steps with a combination of indicators and labels by setting the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property to `Default`. This is the default value for the Stepper component.
+In the default type, the Angular Stepper displays steps with a combination of indicators and labels by setting the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property to `Default`. This is the default value for the Angular Stepper component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -36,7 +36,7 @@ In the default type, the Stepper displays steps with a combination of indicators
 
 ## Label type
 
-In the label type, the Stepper displays steps with only labels by setting the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property to `Label`.
+In the label type, the Angular Stepper displays steps with only labels by setting the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property to `Label`.
 
 > The `label` property of the `StepModel` takes priority in displaying step content when `stepType` is set to `Label`.
 
@@ -62,7 +62,7 @@ In the label type, the Stepper displays steps with only labels by setting the [s
 
 You can display the label on the top, bottom, start, or end side of the steps using the [labelPosition](https://ej2.syncfusion.com/angular/documentation/api/stepper/#labelposition) property. 
 
-The following label positions are supported in the Stepper component:
+The following label positions are supported in the Angular Stepper component:
 
 | Value | Description |
 |-----|-----|
@@ -91,7 +91,7 @@ The following label positions are supported in the Stepper component:
 
 ## Indicator type
 
-In the indicator type, the Stepper displays steps with only indicators by setting the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property to `Indicator`.
+In the indicator type, the Angular Stepper displays steps with only indicators by setting the [stepType](https://ej2.syncfusion.com/angular/documentation/api/stepper/#steptype) property to `Indicator`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

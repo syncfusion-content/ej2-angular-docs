@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The following example demonstrates how to select all dates in the week that contains the selected date by using the [`values`](https://ej2.syncfusion.com/angular/documentation/api/calendar#values) property when the [`isMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/calendar#ismultiselection) property is enabled.
 
-The `values` property is used to maintain the collection of selected dates, while `isMultiSelection` allows multiple dates to be selected in the Calendar.
+The `values` property is used to maintain the collection of selected dates, while `isMultiSelection` allows multiple dates to be selected in the Angular Calendar.
 
 In this example, Moment.js methods are used to calculate the start and end dates of the week based on the selected date, and all dates within that range are selected.
 

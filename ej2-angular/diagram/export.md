@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export in Angular Diagram | Syncfusion®
-description: Export the Syncfusion® Angular Diagram as JPG, PNG, or SVG images for use in documents, presentations, or downstream processing, with options for region, margin, and multi-page output.
+description: Export the Angular Diagram to JPG, PNG, or SVG using the export API to save diagrams, documentation, or print-ready output programmatically.
 platform: ej2-angular
 control: Export 
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Angular Diagram component provides comprehensive support for exporting diagram content as image files (JPG, PNG) or vector graphics (SVG). This functionality enables users to save diagrams for documentation, presentations, or further processing. The [`exportDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#exportdiagram) method serves as the primary interface for all export operations.
 
-N> To export diagrams, inject `PrintAndExport` in the diagram component.
+N> To export diagrams, inject `PrintAndExportService` in the diagram component by adding it to the `providers` array of the `@Component` decorator.
 
 To print and export the diagram in Angular, refer to the below video link.
 
@@ -24,36 +24,54 @@ The following code demonstrates a simple diagram export operation:
 
 <!-- markdownlint-disable MD033 -->
 
-```typescript
+```
+import { Component, ViewChild } from '@angular/core';
+import { DiagramComponent, DiagramModule, PrintAndExportService } from '@syncfusion/ej2-angular-diagrams';
 import { IExportOptions } from '@syncfusion/ej2-diagrams';
 
-public options: IExportOptions;
-this.options = {};
-this.options.mode = 'Download';
-this.diagram.exportDiagram(this.options);
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [DiagramModule],
+  providers: [PrintAndExportService],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  @ViewChild('diagram')
+  public diagram: DiagramComponent;
+
+  public options: IExportOptions;
+  public exportDiagram(): void {
+    this.options = {};
+    this.options.mode = 'Download';
+    this.diagram.exportDiagram(this.options);
+  }
+}
 ```
 
 ## Export Configuration Options
 
 The diagram component supports extensive customization through the [`exportOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions) interface. The following table details all available configuration properties:
 
-| Name | Type | Description|
-|-------- | -------- | -------- |
-| bounds | object | Defines specific bounds for CustomBounds region export |
-| region | enum | Specifies the diagram area to export (PageSettings, Content, or CustomBounds) |
-| fileName | string | Sets the exported file name (default: "Diagram") |
-| format | string | Defines export format (JPG, PNG, or SVG) |
-| mode | string | Controls export behavior (Download or Data) |
-| margin | object | Adds spacing around the exported content |
-| stretch| enum | Adjusts aspect ratio and image quality of exported content |
-| multiplePage | boolean | Enables multi-page export for large diagrams |
-| pageWidth | number | Sets page width for multi-page exports |
-| pageHeight| number | Sets page height for multi-page exports |
-| pageOrientation | enum | Controls page orientation (Portrait or Landscape) |
+| Name | Type | Default | Description | Example Values |
+|-------- | -------- | -------- | -------- | -------- |
+| bounds | `Rect` | 0 | Defines specific bounds for the `CustomBounds` region export. | `new Rect(0, 0, 300, 300)` |
+| region | `DiagramRegions` | 'PageSettings' | Specifies the area of the diagram to be exported using the [`DiagramRegions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#region) type. | 'PageSettings', 'Content', 'CustomBounds' |
+| fileName | `string` | 'diagram' | Sets the name of the exported file. | 'diagram', 'Export' |
+| format | `FileFormats` | 'JPG' | Defines the format of the exported file using the [`FileFormats`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#format) type. | 'JPG', 'PNG', 'SVG' |
+| mode | `ExportModes` | 'Download' | Controls how the exported content is delivered using the [`ExportModes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#mode) type. | 'Download', 'Data' |
+| margin | `MarginModel` | { left: 0, top: 0, bottom: 0, right: 0 } | Sets the margin spacing around the exported content in pixels. | { left: 10, top: 10, bottom: 10, right: 10 } |
+| stretch | `Stretch` | 'Stretch' | Resizes the diagram content to fit the allocated export space using the [`Stretch`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#stretch) type. | 'None', 'Stretch', 'Meet', 'Slice' |
+| multiplePage | `boolean` | false | Enables exporting the diagram across multiple pages when content exceeds single page dimensions. | true, false |
+| pageWidth | `number` | null | Defines the width of each page in pixels when using multiple page export. | 816, 1056 |
+| pageHeight | `number` | null | Sets the height of each page in pixels for multiple page export scenarios. | 1056, 816 |
+| pageOrientation | `PageOrientation` | 'Landscape' | Controls the page orientation for the exported output using the [`PageOrientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#pageorientation) type. | 'Landscape', 'Portrait' |
 
-## File Name Configuration
+## File Name
 
-The [`fileName`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#filename) property specifies the name for downloaded files. When not specified, the default name "Diagram" is used.
+The [`fileName`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#filename) property specifies the name for downloaded files. When not specified, the default name "diagram" is used.
 
 ## Export Formats
 
@@ -77,7 +95,7 @@ The default export format is JPG. The following example shows format specificati
           
 {% previewsample "page.domainurl/samples/diagram/export/export-cs1" %}
 
-## Margin Configuration
+## Margin
 
 The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#margin) property adds whitespace around the exported diagram content. This spacing improves presentation and prevents content from appearing cramped.
 
@@ -105,14 +123,14 @@ The Data mode is useful for applications that need to process or transmit the ex
 
 <!-- markdownlint-disable MD033 -->
 
-```typescript
+```
 import { IExportOptions } from '@syncfusion/ej2-diagrams';
 
 public options: IExportOptions;
 this.options = {};
 this.options.mode = 'Data';
 this.options.margin = { left: 10, right: 10, top: 10, bottom: 10};
-this.options.fileName = 'format';
+this.options.fileName = 'Diagram';
 this.options.format = 'SVG';
 let base64data = this.diagram.exportDiagram(this.options);
 ```
@@ -124,7 +142,7 @@ The [`region`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExp
 | Region | Description |
 |-------- | -------- |
 | PageSettings | Exports based on the configured page dimensions and settings |
-| Content | Exports only the visible diagram elements, excluding empty space | 
+| Content | Exports only the visible diagram elements, excluding empty space |
 | CustomBounds | Exports a user-defined rectangular area |
 
 The following example demonstrates different region export options:
@@ -200,14 +218,14 @@ The [`getDiagramContent`](https://ej2.syncfusion.com/angular/documentation/api/d
 
 The [`stretch`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions#stretch) property improves exported image quality by adjusting the aspect ratio. Images exported with stretch enabled are clearer but result in larger file sizes.
 
-```typescript
+```
 import { IExportOptions } from '@syncfusion/ej2-diagrams';
 
 public options: IExportOptions;
 this.options = {};
 this.options.mode = 'Download';
 this.options.margin = { left: 10, right: 10, top: 10, bottom: 10};
-this.options.fileName = 'region';
+this.options.fileName = 'StretchExport';
 this.options.format = 'SVG';
 this.options.region = 'Content';
 this.options.stretch = 'Stretch';

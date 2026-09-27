@@ -52,13 +52,13 @@ The Check box component followed the [keyboard interaction](https://www.w3.org/W
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Space</kbd> | When the Check box has focus, pressing the Space key changes the state of the CheckBox. |
+| <kbd>Space</kbd> | When the Check box has focus, pressing the Space key changes the state of the Angular Checkbox. |
 
 ## Ensuring accessibility
 
 The Check box component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Check box component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/checkbox.html) in a new window to evaluate the accessibility of the CheckBox component with accessibility tools.
+The accessibility compliance of the Check box component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/checkbox.html) in a new window to evaluate the accessibility of the Angular Checkbox component with accessibility tools.
 
 {% previewsample "page.domainurl/samples/check-box/label-and-size-cs1" %}
 

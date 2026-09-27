@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Methods in Angular TextArea
 
-This section outlines the methods available for interacting with the TextArea component.
+This section outlines the methods available for interacting with the Angular TextArea component.
 
 ## FocusIn Method
 
-The [focusIn](https://ej2.syncfusion.com/angular/documentation/api/textarea/#focusIn) method sets focus to the textarea element, enabling user interaction. Call this method to programmatically focus the TextArea component, allowing users to interact with it via keyboard input or other means.
+The [focusIn](https://ej2.syncfusion.com/angular/documentation/api/textarea/#focusIn) method sets focus to the textarea element, enabling user interaction. Call this method to programmatically focus the Angular TextArea component, allowing users to interact with it via keyboard input or other means.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -30,7 +30,7 @@ The [focusIn](https://ej2.syncfusion.com/angular/documentation/api/textarea/#foc
 
 ## FocusOut Method
 
-The [focusOut](https://ej2.syncfusion.com/angular/documentation/api/textarea/#focusOut) method removes focus from the textarea element, ending user interaction. Use this method to programmatically remove focus from the TextArea component, such as after completing a specific task or when navigating to another element.
+The [focusOut](https://ej2.syncfusion.com/angular/documentation/api/textarea/#focusOut) method removes focus from the textarea element, ending user interaction. Use this method to programmatically remove focus from the Angular TextArea component, such as after completing a specific task or when navigating to another element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -46,7 +46,7 @@ The [focusOut](https://ej2.syncfusion.com/angular/documentation/api/textarea/#fo
 
 ## GetPersistData Method
 
-The [getPersistData](https://ej2.syncfusion.com/angular/documentation/api/textarea/#getPersistData) method retrieves the properties that need to be maintained in the persisted state. This method returns an object containing the properties to be persisted, including various configuration options and state information of the TextArea component. 
+The [getPersistData](https://ej2.syncfusion.com/angular/documentation/api/textarea/#getPersistData) method retrieves the properties that need to be maintained in the persisted state. This method returns an object containing the properties to be persisted, including various configuration options and state information of the Angular TextArea component. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

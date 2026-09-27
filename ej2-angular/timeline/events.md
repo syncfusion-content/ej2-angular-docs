@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Events in Angular Timeline
 
-This section describes the Timeline events that trigger when appropriate actions are performed. The following events are available in the Timeline component.
+This section describes the Angular Timeline events that trigger when appropriate actions are performed. The following events are available in the Timeline component.
 
 ## created
 
-The Timeline component triggers the [created](../api/timeline#created) event when the component rendering is complete and the Timeline is ready for interaction.
+The Angular Timeline component triggers the [created](../api/timeline#created) event when the component rendering is complete and the Timeline is ready for interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ The Timeline component triggers the [created](../api/timeline#created) event whe
 
 ## beforeItemRender
 
-The Timeline component triggers the [beforeItemRender](../api/timeline#beforeitemrender) event before rendering each timeline item, allowing customization of individual items during rendering.
+The Angular Timeline component triggers the [beforeItemRender](../api/timeline#beforeitemrender) event before rendering each timeline item, allowing customization of individual items during rendering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

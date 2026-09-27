@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # How to add rounded corners to Angular Menu Bar
 
-You can apply rounded corners to the Angular Menu component by assigning a custom CSS class using the `cssClass`[`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/menu/#cssclass) property. This allows you to modify the appearance of the menu container to better match your application's design.
+You can apply rounded corners to the Angular Menu Bar component by assigning a custom CSS class using the `cssClass`[`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/menu/#cssclass) property. This allows you to modify the appearance of the menu container to better match your application's design.
 
 ## How to Apply Rounded Corners
 
-To achieve rounded corners, define a CSS class with the desired `border-radius` value and assign it to the Menu component via the `cssClass` property.
+To achieve rounded corners, define a CSS class with the desired `border-radius` value and assign it to the Angular Menu Bar component via the `cssClass` property.
  
 For more information, refer to the `style.css` file mapped under the source tab.
 

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customization in Angular DateRangePicker
 
-DateRangePicker makes available for the UI customization which can be achieved with properties, events that are available with this component.
+Angular DateRangePicker makes available for the UI customization which can be achieved with properties, events that are available with this component.
 
 ## Day cell format
 
@@ -51,8 +51,8 @@ In below example, first day of the week in the pop-up calendar is customized to 
 
 ## Preset Ranges
 
-DateRangePicker has an option to set the pre-defined ranges with label using `presets` property.
-With help of this, we can set the frequently used ranges as preset ranges for quick selection in a DateRangePicker popup.
+Angular DateRangePicker has an option to set the pre-defined ranges with label using `presets` property.
+With help of this, we can set the frequently used ranges as preset ranges for quick selection in a Angular DateRangePicker popup.
 Here in following sample, you can choose the mostly using options from pre-defined ranges easily.
 
 {% tabs %}
@@ -69,6 +69,6 @@ Here in following sample, you can choose the mostly using options from pre-defin
 
 ## See Also
 
-* [How to customize DateRangePicker using cssClass](./how-to/customization-using-cssclass)
-* [How to disable DateRangePicker component](./how-to/disable-placeholder-readonly)
-* [How to customize the DateRangePicker day header](./how-to/customize-the-daterangepicker-day-header)
+* [How to customize Angular DateRangePicker using cssClass](./how-to/customization-using-cssclass)
+* [How to disable Angular DateRangePicker component](./how-to/disable-placeholder-readonly)
+* [How to customize the Angular DateRangePicker day header](./how-to/customize-the-daterangepicker-day-header)

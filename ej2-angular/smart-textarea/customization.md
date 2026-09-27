@@ -11,9 +11,23 @@ domainurl: ##DomainURL##
 
 # Customization in Angular Smart TextArea
 
-The [ShowSuggestionOnPopup](https://ej2.syncfusion.com/angular/documentation/api/smart-textarea/#aisuggestionhandler) property in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Smart TextArea allows you to control how text suggestions are displayed to the users.
+The [ShowSuggestionOnPopup](https://ej2.syncfusion.com/angular/documentation/api/smart-textarea/index-default#aisuggestionhandler) property in the Syncfusion<sup style="font-size:70%">®</sup> Angular Smart TextArea allows you to control how AI-generated text suggestions are presented to users. Depending on your application requirements, suggestions can be displayed in a popup window or directly within the text area as inline suggestions.
 
-* If `ShowSuggestionOnPopup` is `Enable`, suggestions displayed in the pop-up window
+Use this property to provide the most suitable suggestion experience for your users and workflows.
+
+The following values are supported:
+
+| Value | Description |
+|---------|-------------|
+| `Enable` | Displays AI suggestions in a popup window. |
+| `Disable` | Displays AI suggestions inline within the text area. |
+| `None` | Uses the default suggestion behavior. |
+
+By default, the `showSuggestionOnPopup` property is set to `None`.
+
+## Display suggestions in a popup
+
+Set the `showSuggestionOnPopup` property to `Enable` when you want AI suggestions to appear in a popup window. This mode helps users review and accept suggestions without interrupting the content already entered in the text area.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -26,7 +40,11 @@ The [ShowSuggestionOnPopup](https://ej2.syncfusion.com/angular/documentation/api
 
 ![SUggestion on popup](./images/smart-textarea-popup.gif)
 
-* If `ShowSuggestionOnPopup` is `false`, suggestions displayed inline.
+In popup mode, the generated suggestion is displayed in a separate popup interface, allowing users to review and apply the suggested content conveniently.
+
+## Display suggestions inline
+
+Set the `showSuggestionOnPopup` property to `Disable` when you want AI suggestions to be displayed directly within the text area. This approach provides a seamless writing experience by showing suggestions in context as users type.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
@@ -39,7 +57,7 @@ The [ShowSuggestionOnPopup](https://ej2.syncfusion.com/angular/documentation/api
 
 ![SUggestion inline](./images/smart-textarea-inline.gif)
 
-By default `showSuggestionOnPopup` is `None`.
+In inline mode, suggestions appear directly within the text area, enabling users to continue writing naturally while reviewing AI-generated recommendations.
 
 ## See also
 

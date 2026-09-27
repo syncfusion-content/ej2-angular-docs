@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to reset an image in Angular Image Editor
 
-The [`reset`](https://ej2.syncfusion.com/angular/documentation/api/image-editor#reset) method in the Image Editor control reverts all changes made to an image and restores it to its original state. It is particularly useful when multiple adjustments, annotations, or transformations have been applied and you want to start over with the unmodified image.
+The [`reset`](https://ej2.syncfusion.com/angular/documentation/api/image-editor#reset) method in the Angular Image Editor control reverts all changes made to an image and restores it to its original state. It is particularly useful when multiple adjustments, annotations, or transformations have been applied and you want to start over with the unmodified image.
 
 To reset the image:
 

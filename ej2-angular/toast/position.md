@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Position in Angular Toast
 
-Toast position can be updated based on predefined positions or user customizable positions. Predefined position combinations are updated in [`X`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel/#x) and [`Y`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel/#y) position properties.
+Angular Toast position can be updated based on predefined positions or user customizable positions. Predefined position combinations are updated in [`X`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel#x) and [`Y`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel#y) position properties.
 
 ## Predefined
 
@@ -25,12 +25,12 @@ Toast position can be updated based on predefined positions or user customizable
 * Top
 * Bottom
 
-> In the case of multiple Toast display, new Toast position will not update on dynamic change of property values, until the old Toast messages removed.
-> Toast occupies full width when we set width as '100%', so X positions won't affect changes when '100%' width.
+> In the case of multiple Angular Toast display, new Angular Toast position will not update on dynamic change of property values, until the old Angular Toast messages removed.
+> Angular Toast occupies full width when we set width as '100%', so X positions won't affect changes when '100%' width.
 
 ## Custom
 
-Custom `X` and `Y` Position can be given as pixels/numbers/percentage. The number value is considered as pixels. based value top and left value updated in the toast.
+Custom `X` and `Y` Position can be given as pixels/numbers/percentage. The number value is considered as pixels. based value top and left value updated in the Angular Toast.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -46,4 +46,4 @@ Custom `X` and `Y` Position can be given as pixels/numbers/percentage. The numbe
 
 ## See Also
 
-* [Render toast with different positions](./how-to/show-multiple-toasts-in-various-positions)
+* [Render Angular Toast with different positions](./how-to/show-multiple-toasts-in-various-positions)

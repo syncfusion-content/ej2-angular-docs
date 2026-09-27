@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The `Localization` library enables translation of default text used by the ColorPicker. The ColorPicker component includes static text for control buttons (Apply and Cancel) and the mode switcher. These strings can be translated to other languages (Arabic, German, French, etc.) by setting the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#locale) property and providing a translation object.
+The `Localization` library enables translation of default text used by the Angular Color Picker. The Angular Color Picker component includes static text for control buttons (Apply and Cancel) and the mode switcher. These strings can be translated to other languages (Arabic, German, French, etc.) by setting the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#locale) property and providing a translation object.
 
-The following list shows the locale keys and corresponding default text used by the Color Picker.
+The following list shows the locale keys and corresponding default text used by the Angular Color Picker.
 
 Locale key words |Text
 -----|-----
@@ -26,7 +26,7 @@ ModeSwitcher |Switch Mode
 
 To load a translation object in an application, use the `load` function of the `L10n` class.
 
-The following example demonstrates the ColorPicker configured for German (Deutsch) culture.
+The following example demonstrates the Angular Color Picker configured for German (Deutsch) culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -42,9 +42,9 @@ The following example demonstrates the ColorPicker configured for German (Deutsc
 
 ## Right-to-left (RTL)
 
-The ColorPicker component supports right-to-left (RTL) rendering, improving the user experience and accessibility for languages written right-to-left (Arabic, Persian, Urdu, etc.). Set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#enablertl) property to `true` to enable RTL mode.
+The Angular Color Picker component supports right-to-left (RTL) rendering, improving the user experience and accessibility for languages written right-to-left (Arabic, Persian, Urdu, etc.). Set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#enablertl) property to `true` to enable RTL mode.
 
-The following example shows how to enable RTL support for the ColorPicker component.
+The following example shows how to enable RTL support for the Angular Color Picker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

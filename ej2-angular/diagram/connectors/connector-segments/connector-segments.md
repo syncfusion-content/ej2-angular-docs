@@ -19,3 +19,9 @@ The Angular Diagram component supports three primary types of connector segments
 * Straight
 * Orthogonal
 * Bezier
+
+## See also
+
+* [Straight segment](./connector-straight)
+* [Orthogonal segment](./connector-orthogonal)
+* [Bezier segment](./connector-bezier/connector-bezier)

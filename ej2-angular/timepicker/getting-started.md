@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular TimePicker
 
-The TimePicker component enables users to select and input a specific time through an interactive time selection interface, providing an easy and accurate way to capture time-related information for scheduling, appointments, and time-based workflows.
+The Angular TimePicker component enables users to select and input a specific time through an interactive time selection interface, providing an easy and accurate way to capture time-related information for scheduling, appointments, and time-based workflows.
 
 This guide provides step-by-step instructions for setting up an Angular project with TypeScript using Angular CLI, and integrating Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TimePicker component. The recommended setup below targets modern Angular (CLI `ng add`). For module-based or framework host setups, see [See Also](#see-also).
 
@@ -90,7 +90,7 @@ npm install @syncfusion/ej2-angular-calendars
 
 ## Adding CSS reference
 
-Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> TimePicker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
+Themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TimePicker component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) documentation.
 
 Install the Material 3 theme package using the following npm command:
 
@@ -104,11 +104,11 @@ Then add the following CSS reference to the **src/styles.css** file. This is the
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/timepicker/index.css";
 ```
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> TimePicker component
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TimePicker component
 
 After package and theme setup, update the root component. File name and class name can vary by Angular CLI version (`src/app/app.ts` with `export class App`, or `app.component.ts` with `AppComponent`). Replace the root component content with the sample below, or merge the TimePicker import, template, and data into your generated file.
 
-> For the full property list, see the [TimePicker API reference](https://ej2.syncfusion.com/angular/documentation/api/timepicker/index-default).
+> For the full property list, see the [Angular TimePicker API reference](https://ej2.syncfusion.com/angular/documentation/api/timepicker/index-default).
 
 ```typescript
 
@@ -141,7 +141,7 @@ From the project root:
 ng serve
 ```
 
-When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the TimePicker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
+When the build succeeds, the CLI reports a local URL (default: http://localhost:4200). Open that URL in a browser to view the Angular TimePicker. If the port is already in use, the CLI prompts for another port, or you can run `ng serve --port 4201`.
 
 Stop the server with `Ctrl+C` in the terminal.
 
@@ -151,22 +151,22 @@ The following example illustrates the output in your browser.
 
 ## Setting the selected, min, and max time
 
-The following example demonstrates how to set the value, min and max time when initializing the TimePicker. The TimePicker allows selection of time values within a range from `7:00 AM` to `4:00 PM`. To learn more about time range restrictions, please refer to the [time range documentation](./time-range).
+The following example demonstrates how to set the value, min and max time when initializing the Angular TimePicker. The Angular TimePicker allows selection of time values within a range from `7:00 AM` to `4:00 PM`. To learn more about time range restrictions, please refer to the [time range documentation](./time-range).
   
 {% previewsample "page.domainurl/samples/timepicker/getting-started-cs3" %}
 
 ## Setting the time format
 
-Time format is a way of representing the time value in different string formats in the textbox and popup list. By default, the TimePicker's format is based on the culture. You can customize the format using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#format) property. To learn more about time format standards, refer to the [Date and Time Format documentation](../common/Globalization/internationalization#custom-number-formatting-and-parsing).
+Time format is a way of representing the time value in different string formats in the textbox and popup list. By default, the Angular TimePicker's format is based on the culture. You can customize the format using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#format) property. To learn more about time format standards, refer to the [Date and Time Format documentation](../common/Globalization/internationalization#custom-number-formatting-and-parsing).
 
-The following example demonstrates the TimePicker component in 24-hour format with 60-minute intervals. The time interval is set to 60 minutes using the [`step`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#step-number) property:
+The following example demonstrates the Angular TimePicker component in 24-hour format with 60-minute intervals. The time interval is set to 60 minutes using the [`step`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#step-number) property:
 
 {% previewsample "page.domainurl/samples/timepicker/getting-started-cs4" %}
 
 ## See Also
 
-* [Render TimePicker with min and max time](./time-range)
-* [How to achieve validation with TimePicker](./how-to/custom-validation-using-form-validator)
-* [Render TimePicker with specific culture](./globalization)
-* [How to achieve two-way binding with TimePicker](./how-to/two-way-binding)
-* [Reactive forms with TimePicker](./how-to/reactive-form)
+* [Render Angular TimePicker with min and max time](./time-range)
+* [How to achieve validation with Angular TimePicker](./how-to/custom-validation-using-form-validator)
+* [Render Angular TimePicker with specific culture](./globalization)
+* [How to achieve two-way binding with Angular TimePicker](./how-to/two-way-binding)
+* [Reactive forms with Angular TimePicker](./how-to/reactive-form)

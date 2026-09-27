@@ -26,7 +26,7 @@ Once the package installed, you can find the culture specific JSON data under th
 
 * Now use the [`loadCldr`](https://helpej2.syncfusion.com/angular/documentation/common/globalization/internationalization#installing-cldr-data) method to load the culture specific CLDR JSON data from the installed location to `app.component.ts` file.
 
-* DateTimePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the DateTimePicker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
+* Angular DateTime Picker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the Angular DateTime Picker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
 
 ```typescript
 
@@ -69,9 +69,9 @@ L10n.load({
 ```
 
 * Set the culture by using the `locale` property.
-In the following code example, the DateTimePicker is initialized in `German` culture with corresponding localized text.
+In the following code example, the Angular DateTime Picker is initialized in `German` culture with corresponding localized text.
 
-The following example demonstrates the DateTimePicker in `German` culture.
+The following example demonstrates the Angular DateTime Picker in `German` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -87,9 +87,9 @@ The following example demonstrates the DateTimePicker in `German` culture.
 
 ## Right-To-Left
 
-The DateTimePicker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction.
+The Angular DateTime Picker supports RTL (right-to-left) functionality for languages like Arabic and Hebrew to displays the text in the right-to-left direction.
 Use`enableRtl` property to set the RTL direction.
-The following code example initialize the DateTimePicker component in `Arabic` culture and also explains how to set the localized text to the placeholder using `load` method of `L10n` class.
+The following code example initialize the Angular DateTime Picker component in `Arabic` culture and also explains how to set the localized text to the placeholder using `load` method of `L10n` class.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

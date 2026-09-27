@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to add custom animation to Sidebar in Angular Sidebar
 
-The following example demonstrates the Sidebar rendered with custom animation effects. Click the buttons available in the main content area to check how the custom animations work with the Sidebar.
+The following example demonstrates the Angular Sidebar rendered with custom animation effects. Click the buttons available in the main content area to check how the custom animations work with the Angular Sidebar.
 
-The Sidebar will automatically adjust its expanding animation to match any custom size specified in `CSS` styles.
+The Angular Sidebar will automatically adjust its expanding animation to match any custom size specified in `CSS` styles.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

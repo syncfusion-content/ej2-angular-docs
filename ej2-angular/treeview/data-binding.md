@@ -10,21 +10,21 @@ domainurl: ##DomainURL##
 
 # Data Binding in Angular Tree View
 
-The TreeView component provides flexible data binding capabilities to display hierarchical data from various sources. Data binding is essential for populating the TreeView with dynamic content and can be configured through the `dataSource` property, which is a member of the [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview/#fields) property. This enables seamless integration with both local data arrays and remote data services.
+The Angular Tree View component provides flexible data binding capabilities to display hierarchical data from various sources. Data binding is essential for populating the Angular Tree View with dynamic content and can be configured through the `dataSource` property, which is a member of the [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview/#fields) property. This enables seamless integration with both local data arrays and remote data services.
 
 The `dataSource` property supports array of JavaScript objects and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
-TreeView implements `load on demand` (lazy loading) functionality by default to optimize performance when working with large datasets. This reduces bandwidth usage when consuming large amounts of data. The component loads first level nodes initially, and when a parent node is expanded, it dynamically loads the child nodes based on the `parentID/child` member. This approach significantly improves initial rendering performance and reduces memory consumption.
+Angular Tree View implements `load on demand` (lazy loading) functionality by default to optimize performance when working with large datasets. This reduces bandwidth usage when consuming large amounts of data. The component loads first level nodes initially, and when a parent node is expanded, it dynamically loads the child nodes based on the `parentID/child` member. This approach significantly improves initial rendering performance and reduces memory consumption.
 
 By default, the `loadOnDemand` property is set to true. When this property is disabled, all tree nodes are rendered at the beginning, which may impact performance with large datasets but provides immediate access to the entire tree structure.
 
-You can use the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#databound) event to perform actions. This event will be triggered once the data source is populated in the TreeView.
+You can use the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#databound) event to perform actions. This event will be triggered once the data source is populated in the Angular Tree View.
 
 ## Local data
 
-Local data binding enables the TreeView to work with JavaScript object arrays stored in memory. To bind local data to the TreeView, assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property.
+Local data binding enables the Angular Tree View to work with JavaScript object arrays stored in memory. To bind local data to the Angular Tree View, assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property.
 
-The TreeView component requires three essential fields to render local data source effectively:
+The Angular Tree View component requires three essential fields to render local data source effectively:
 
 - **id**: Unique identifier for each node (default: "id")
 - **text**: Display text for tree nodes (default: "text") 
@@ -83,13 +83,13 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 
 ## Remote data
 
-Remote data binding enables the TreeView to fetch data from external services and APIs. TreeView can be populated from a remote data service with the help of `DataManager` component and `Query` property, providing seamless integration with backend systems.
+Remote data binding enables the Angular Tree View to fetch data from external services and APIs. Angular Tree View can be populated from a remote data service with the help of `DataManager` component and `Query` property, providing seamless integration with backend systems.
 
 The component supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors. This flexibility allows integration with various backend technologies and data formats.
 
 You can assign service data as an instance of `DataManager` to the `dataSource` property. To interact with remote data source, you must provide the endpoint `url` and configure the appropriate adaptor for your service type.
 
-The `DataManager` acts as an interface between the service endpoint and the TreeView, requiring the following essential information to interact with service endpoint properly:
+The `DataManager` acts as an interface between the service endpoint and the Angular Tree View, requiring the following essential information to interact with service endpoint properly:
 
 * `DataManager->url`: Defines the service endpoint to fetch data.
 

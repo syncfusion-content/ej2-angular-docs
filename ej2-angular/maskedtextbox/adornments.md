@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Adornments in Angular MaskedTextBox | Syncfusion
-description: Add icons, labels, or action buttons to the Syncfusion Angular MaskedTextBox with prependTemplate and appendTemplate while preserving mask validation.
+title: Adornments in Angular Input Mask | Syncfusion
+description: Add icons, labels, or action buttons to the Syncfusion Angular Input Mask with prependTemplate and appendTemplate while preserving mask validation.
 platform: ej2-angular
 control: Adornments
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in Angular MaskedTextBox
+# Adornments in Angular Input Mask
 
-Adornments allow you to add custom elements before or after the MaskedTextBox input using the `prependTemplate` and `appendTemplate` properties. These templates support icons, labels, action buttons, and other visual elements while preserving mask validation and float label functionality.
+Adornments allow you to add custom elements before or after the Angular Input Mask input using the `prependTemplate` and `appendTemplate` properties. These templates support icons, labels, action buttons, and other visual elements while preserving mask validation and float label functionality.
 
 ## Common Use Cases
 
@@ -19,14 +19,14 @@ Adornments allow you to add custom elements before or after the MaskedTextBox in
 - **Context Labels**: Add static text like country codes, domain names, or measurement units.
 - **Visual Feedback**: Show status indicators without affecting mask behavior.
 
-## Adding Adornments to MaskedTextBox
+## Adding Adornments to Angular Input Mask
 
 Use `prependTemplate` to render elements before the masked input, and `appendTemplate` to render elements after it. These templates support any inline HTML or icon markup and do not interfere with mask validation.
 
 - **prependTemplate**: Renders HTML content before the input field
 - **appendTemplate**: Renders HTML content after the input field
 
-The following example shows how to implement adornments in the MaskedTextBox:
+The following example shows how to implement adornments in the Angular Input Mask:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -38,4 +38,4 @@ The following example shows how to implement adornments in the MaskedTextBox:
 {% endhighlight %}
 {% endtabs %}
 
-You can view the demo here: [MaskedTextBox Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/maskedtextbox/adornments).
+You can view the demo here: [Angular Input Mask Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/maskedtextbox/adornments).

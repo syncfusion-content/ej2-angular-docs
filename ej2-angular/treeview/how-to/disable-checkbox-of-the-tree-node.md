@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to disable checkbox of tree node in Angular Tree View
 
-You can disable the checkbox alone in the TreeView instead of disabling the whole node.
+You can disable the checkbox alone in the Angular Tree View instead of disabling the whole node.
 
 To implement this functionality, apply the `e-checkbox-disabled` CSS class to specific checkbox elements using the [`drawNode`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#drawnode) event. The `drawNode` event triggers during node rendering and provides access to the node element and its associated data, allowing conditional checkbox disabling based on your business logic.
 

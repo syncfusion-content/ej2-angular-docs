@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The client side validation takes place in the browser to avoid the waiting time to receive the response from sever. It validates the form elements to provide the better feedback messages to correct the every fields before the form submission.
 
-The following sample demonstrate how to achieve the client side validation in DateRangePicker component by using `FormValidator` function. It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
+The following sample demonstrate how to achieve the client side validation in Angular DateRangePicker component by using `FormValidator` function. It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

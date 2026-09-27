@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Header Style in Angular Data Grid
+# Header Styles in Angular Data Grid
 
-The appearance of the header elements in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component can be customized using CSS. Here are examples for customizing the grid header, header cell, and header cell div element.
+Customize the appearance of the header in the [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) using CSS. The following examples demonstrate styling the grid header, header cells, and header cell content.
 
-## Customize the Grid header root
+## Customize the header
 
-The `.e-gridheader` class is used to style the root element of the grid header.
+Use the `.e-gridheader` class to style the root element of the grid header.
 
 ```css
 .e-grid .e-gridheader {
@@ -24,9 +24,9 @@ The `.e-gridheader` class is used to style the root element of the grid header.
 
 ![Grid header](../images/grid-header.png)
 
-## Customize the Grid header cell
+## Customize the header cell
 
-The `.e-headercell` class is used to style the root element of the header cell elements.
+Use the `.e-headercell` class to style the root element of the header cell elements.
 
 ```css
 .e-grid .e-headercell {
@@ -35,11 +35,11 @@ The `.e-headercell` class is used to style the root element of the header cell e
 }
 ```
 
-![Grid header cell](../images/grid-header-cell.png)
+![Data Grid header cell](../images/grid-header-cell.png)
 
-## Customize the Grid header cell content
+## Customize the header cell content
 
-The `.e-headercelldiv` class is used to apply custom styles to the div element inside each grid header cell.
+Use the `.e-headercelldiv` class to apply custom styles to the div element inside each grid header cell.
 
 ```css
 .e-grid .e-headercelldiv {
@@ -49,4 +49,4 @@ The `.e-headercelldiv` class is used to apply custom styles to the div element i
 }
 ```
 
-![Grid header cell div element](../images/grid-header-cell-div-element.png)
+![Data Grid header cell div element](../images/grid-header-cell-div-element.png)

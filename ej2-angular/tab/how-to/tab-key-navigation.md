@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to enable Tab key navigation in Angular Tab
 
-The [`tabIndex`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemDirective/#tabindex) property of a Tab item enables Tab key navigation between specific items. When a positive value is assigned, users can switch focus to the next or previous tab item using **Tab** or **Shift+Tab**. By default, users can only switch between tab items using **arrow keys**.
+The [`tabIndex`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemDirective/#tabindex) property of a Angular Tab item enables Angular Tab key navigation between specific items. When a positive value is assigned, users can switch focus to the next or previous tab item using **Tab** or **Shift+Tab**. By default, users can only switch between tab items using **arrow keys**.
 
 ## Behavior by value
 
@@ -34,9 +34,9 @@ The [`tabIndex`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabIte
   
 {% previewsample "page.domainurl/samples/tab/tab-key-navigation-cs1" %}
 
-With this configuration, users can switch between tab items using the Tab and Shift+Tab keys in the order specified by the `tabIndex` values. The `tabIndex` property specifically controls Tab key navigation behavior.
+With this configuration, users can switch between Angular Tab items using the Angular Tab and Shift+Tab keys in the order specified by the `tabIndex` values. The `tabIndex` property specifically controls Tab key navigation behavior.
 
 ## See also
 
 * For keyboard access into the content panels, see [Accessibility](../accessibility).
-* For broader keyboard handling on the Tab header, see [Responsive Modes](../adaptive).
+* For broader keyboard handling on the Angular Tab header, see [Responsive Modes](../adaptive).

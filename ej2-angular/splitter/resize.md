@@ -12,8 +12,8 @@ domainurl: ##DomainURL##
 
 By default, pane resizing is enabled in the Angular Splitter component. A gripper element is added to the separator to make resizing intuitive and user-friendly.
 
-> The horizontal Splitter allows resizing in horizontal directions.  
-> The vertical Splitter allows resizing in vertical directions.
+> The horizontal Angular Splitter allows resizing in horizontal directions.  
+> The vertical Angular Splitter allows resizing in vertical directions.
 
 During resizing, the adjacent panes automatically adjust their dimensions to accommodate the change.
 

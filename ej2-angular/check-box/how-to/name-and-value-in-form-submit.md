@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to name and value in form submit in Angular Checkbox
 
-The [`name`](https://ej2.syncfusion.com/angular/documentation/api/check-box/index-default#name) attribute of the CheckBox is used to group Checkboxes. When the Checkboxes are
+The [`name`](https://ej2.syncfusion.com/angular/documentation/api/check-box/index-default#name) attribute of the Angular Checkbox is used to group Checkboxes. When the Checkboxes are
 grouped in form, the checked items [`value`](https://ej2.syncfusion.com/angular/documentation/api/check-box/index-default#value) attribute will post to the server on form submit
-which can be retrieved through the name. The [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/check-box/index-default#disabled) and unchecked CheckBox value will
+which can be retrieved through the name. The [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/check-box/index-default#disabled) and unchecked Angular Checkbox value will
 not be sent to the server on form submit.
 
 In the following code snippet, Cricket and Hockey are in the checked state, Tennis is in disabled state and Basketball is in unchecked state. Now, the value that is in checked state only be sent on form submit.

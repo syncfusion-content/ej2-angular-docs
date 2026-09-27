@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Floating Label in Angular TextArea
 
-The floating label feature in the TextArea component displays the placeholder text above the textarea when the user interacts with it, providing an intuitive user experience. Configure this behavior using the [floatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textarea/#floatLabelType) property, which offers the following options:
+The floating label feature in the Angular TextArea component displays the placeholder text above the textarea when the user interacts with it, providing an intuitive user experience. Configure this behavior using the [floatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textarea/#floatLabelType) property, which offers the following options:
 
 | Type  | Description |
 | -- | -- |
@@ -32,7 +32,7 @@ The floating label feature in the TextArea component displays the placeholder te
 
 ## Placeholder with Localization
 
-You can localize the TextArea placeholder text to different cultures using the `locale` property with the localization library.
+You can localize the Angular TextArea placeholder text to different cultures using the `locale` property with the localization library.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

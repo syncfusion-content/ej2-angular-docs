@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Adornments in Angular TextArea
 
-The TextArea component supports adornments that allow you to add custom elements before or after the textarea using the `prependTemplate` and `appendTemplate` properties. Adornment elements can include icons, text labels, or action buttons for formatting and content management. You can arrange adornments horizontally or vertically using the `adornmentFlow` and `adornmentOrientation` properties for flexible layouts.
+The Angular TextArea component supports adornments that allow you to add custom elements before or after the textarea using the `prependTemplate` and `appendTemplate` properties. Adornment elements can include icons, text labels, or action buttons for formatting and content management. You can arrange adornments horizontally or vertically using the `adornmentFlow` and `adornmentOrientation` properties for flexible layouts.
 
 ## Common Use Cases
 
@@ -21,9 +21,9 @@ The TextArea component supports adornments that allow you to add custom elements
 - **Validation & Status**: Character count or error icons.
 - **Flexible Layout**: Horizontal or vertical adornment flow.
 
-## Adding Adornments with Orientation to TextArea
+## Adding Adornments with Orientation to Angular TextArea
 
-Use the `prependTemplate` and `appendTemplate` properties to add custom HTML content before and after the TextArea.
+Use the `prependTemplate` and `appendTemplate` properties to add custom HTML content before and after the Angular TextArea.
 
 - **`prependTemplate`**: Renders elements before the textarea input.
 
@@ -39,7 +39,7 @@ Control how adornments are positioned and arranged using the `adornmentFlow` and
   - **Horizontal**: Items displayed in a row.
   - **Vertical**: Items displayed in a column.
 
-The following example demonstrates how to add adornments with orientation in the TextArea control.
+The following example demonstrates how to add adornments with orientation in the Angular TextArea control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -51,4 +51,4 @@ The following example demonstrates how to add adornments with orientation in the
 {% endhighlight %}
 {% endtabs %}
 
-You can view the demo here: [TextArea Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/textarea/adornments).
+You can view the demo here: [Angular TextArea Adornments demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/textarea/adornments).

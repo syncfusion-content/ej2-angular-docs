@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to disable Color Picker in Angular Color Picker
 
-To disable the ColorPicker, set the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#disabled) property to `true`. When disabled, the ColorPicker cannot be opened and is not interactive.
+To disable the Angular Color Picker, set the [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#disabled) property to `true`. When disabled, the Angular Color Picker cannot be opened and is not interactive.
 
-The following example demonstrates a disabled ColorPicker component.
+The following example demonstrates a disabled Angular Color Picker component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

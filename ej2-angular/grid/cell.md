@@ -14,7 +14,8 @@ A cell in the [Angular Data Grid](https://www.syncfusion.com/angular-components/
 
 ## Displaying the HTML content
 
-Displaying HTML content in a grid can be useful when displaying formatted content, such as images, links, or tables, in a tabular format. The Grid component allows HTML tags to be displayed in the grid header and content. By default, HTML content is encoded to prevent potential security vulnerabilities. However, the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column#disablehtmlencode) property can be set to `false` to display HTML tags without encoding. This feature is useful when displaying HTML content in a grid cell.
+Displaying HTML content in the Data Grid is useful for formatted elements such as images, links, or tables. The Grid allows HTML tags in headers and cells, but content is encoded by default for security. To render HTML without encoding, set the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column#disablehtmlencode) property to  `false`.
+
 
 In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added  to enable and disable the `disableHtmlEncode` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method is called to refresh the grid and display the updated content.
 

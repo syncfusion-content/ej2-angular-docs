@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to submit name and value in form in Angular Toggle Switch Button
 
-The [`name`](https://ej2.syncfusion.com/angular/documentation/api/switch#name) attribute of the Switch is used to group Switches. When the Switches are grouped in form, the checked items [`value`](https://ej2.syncfusion.com/angular/documentation/api/switch#value) attribute will post to the server on form submit. The disabled and unchecked Switch values will not be sent to the server on form submit.
+The [`name`](https://ej2.syncfusion.com/angular/documentation/api/switch#name) attribute of the Angular Toggle Switch Button is used to group Switches. When the Switches are grouped in form, the checked items [`value`](https://ej2.syncfusion.com/angular/documentation/api/switch#value) attribute will post to the server on form submit. The disabled and unchecked Switch values will not be sent to the server on form submit.
 
 In the following code snippet, USB and Wi-Fi in the [`checked`](../../switch#checked) state, and Bluetooth is in disabled state. Values that are in checked state only be sent on form submit.
 

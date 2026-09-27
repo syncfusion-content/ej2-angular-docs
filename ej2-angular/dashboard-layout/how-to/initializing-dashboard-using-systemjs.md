@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to initialize Dashboard Layout using SystemJS
+# How to initialize Angular Dashboard Layout using SystemJS
 
-The Dashboard Layout component can be initialized using `SystemJS` as follows.
+The Angular Dashboard Layout component can be initialized using `SystemJS` as follows.
 
 ## Installation and Configuration
 
@@ -27,15 +27,15 @@ To set up a basic Angular sample with `SystemJS` support, use the following comm
    For more information about Angular application setup, refer to the [Angular sample setup](https://v17.angular.io/guide/setup-local).
 
 
-### Installing Dashboard Layout Package
+### Installing Angular Dashboard Layout Package
 
-Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Dashboard Layout package using the following command:
+Install the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Dashboard Layout package using the following command:
 
     ```
       npm install @syncfusion/ej2-angular-layouts --save
     ```
 
-   The above package installs [Dashboard Layout component dependencies](#dependencies) which are required to render the component in an Angular environment.
+   The above package installs [Angular Dashboard Layout component dependencies](#dependencies) which are required to render the component in an Angular environment.
 
 ### SystemJS Configuration
 
@@ -184,12 +184,12 @@ export class AppComponent {
 }
 ```
 
-* Import the  Dashboard Layout module in the main Angular application module(`app.module.ts`) from the package `@syncfusion/ej2-angular-layouts`.
+* Import the  Angular Dashboard Layout module in the main Angular application module(`app.module.ts`) from the package `@syncfusion/ej2-angular-layouts`.
 
 ```javascript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import the DashboardLayoutModule for the Dashboard Layout component
+// import the DashboardLayoutModule for the Angular Dashboard Layout component
 import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
 import { AppComponent } from './app.component';
 

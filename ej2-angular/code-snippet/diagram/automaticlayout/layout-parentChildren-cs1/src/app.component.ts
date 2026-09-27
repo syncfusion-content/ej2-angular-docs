@@ -1,7 +1,7 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, Diagram, NodeModel, ConnectorModel, LayoutModel, DataSourceModel, HierarchicalTree, PaletteModel, NodeConstraints,
-  IDropEventArgs, randomId, DiagramModule, HierarchicalTreeService, DataBindingService, DataBinding, SymbolPaletteModule } from '@syncfusion/ej2-angular-diagrams';
+  IDropEventArgs, randomId, DiagramModule, DataBinding, SymbolPaletteModule } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
@@ -10,15 +10,14 @@ Diagram.Inject(DataBinding, HierarchicalTree);
 
 @Component({
   imports: [DiagramModule, SymbolPaletteModule],
-
-  providers: [HierarchicalTreeService, DataBindingService],
   standalone: true,
   selector: "app-container",
   template: `<div style="height: 600px; width: 150px; float: left">
   <ejs-symbolpalette id="symbolpalette" width="100%" height="600px" [expandMode]="expandMode" [palettes]="palettes" [symbolHeight]=50 [symbolWidth]=100>
   </ejs-symbolpalette></div>
-  <ejs-diagram #diagram id="diagram" width="80%" height="600px" [getNodeDefaults]="getNodeDefaults" [getConnectorDefaults]="getConnectorDefaults" 
-  [layout]="layout" [dataSourceSettings]="dataSourceSettings" (drop)="drop($event)"> </ejs-diagram>`,
+  <div style="float: right; width: calc(100% - 150px); height: 600px;">
+  <ejs-diagram #diagram id="diagram" width="100%" height="600px" [getNodeDefaults]="getNodeDefaults" [getConnectorDefaults]="getConnectorDefaults" 
+  [layout]="layout" [dataSourceSettings]="dataSourceSettings" (drop)="drop($event)"> </ejs-diagram></div>`,
   encapsulation: ViewEncapsulation.None
 })
 

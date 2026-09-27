@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to bind data using two way binding in Angular Toggle Switch Button
 
-Switch component supports two way binding.
+Angular Toggle Switch Button component supports two way binding.
 
-In this following example, two way binding for Switch is illustrated with CheckBox component. The steps to achieve two way binding in Switch are as follows,
+In this following example, two way binding for Angular Toggle Switch Button is illustrated with CheckBox component. The steps to achieve two way binding in Switch are as follows,
 
 * Initialize Switch component and bind the checked value using `ngModel` as in the below code using "banana in a box" syntax,
 
@@ -30,7 +30,7 @@ In this following example, two way binding for Switch is illustrated with CheckB
 
   ```
 
-* Now, the changes made in Switch will reflect in CheckBox (i.e When the state of Switch is changed to checked state then the CheckBox state will also change to checked state) and vice versa.
+* Now, the changes made in Angular Toggle Switch Button will reflect in CheckBox (i.e When the state of Switch is changed to checked state then the CheckBox state will also change to checked state) and vice versa.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

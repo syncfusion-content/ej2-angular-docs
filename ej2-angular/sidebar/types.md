@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Types and Positions in Angular Sidebar
 
-The Sidebar component allows configuration of its expand behavior using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#type) property to suit various layout requirements, such as overlaying content or resizing the main content area.
+The Angular Sidebar component allows configuration of its expand behavior using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#type) property to suit various layout requirements, such as overlaying content or resizing the main content area.
 
 ## Sidebar expand types
 
-The Sidebar can be set to initialize based on four different types that are consistent with the main component as explained below. When `dataBind` is invoked, it immediately applies any pending property changes to the component.
+The Angular Sidebar can be set to initialize based on four different types that are consistent with the main component as explained below. When `dataBind` is invoked, it immediately applies any pending property changes to the component.
 
  | Item | Description |
 |-----|-----|
@@ -25,7 +25,7 @@ The Sidebar can be set to initialize based on four different types that are cons
 
 > **Note**: The `Auto` type is the default, enabling responsive behavior based on screen size.
 
-The following sample demonstrates the different Sidebar types in action, showcasing their visual and functional distinctions.
+The following sample demonstrates the different Angular Sidebar types in action, showcasing their visual and functional distinctions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -43,5 +43,5 @@ The following sample demonstrates the different Sidebar types in action, showcas
 
 ## See Also
 
-* [How to add Sidebar with custom animation](./how-to/sidebar-with-variation-animation)
-* [How to add multiple Sidebar](./how-to/multiple-sidebar)
+* [How to add Angular Sidebar with custom animation](./how-to/sidebar-with-variation-animation)
+* [How to add multiple Angular Sidebar](./how-to/multiple-sidebar)

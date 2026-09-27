@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to prevent focus return in Angular Dialog
 
-By default, when the dialog closes, focus returns to the element that had focus before the dialog opened. Prevent this behavior in the [`beforeClose`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#beforeclose) event handler by setting the event argument's `preventFocus` property to `true`:
+By default, when the Angular Dialog closes, focus returns to the element that had focus before the Angular Dialog opened. Prevent this behavior in the [`beforeClose`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#beforeclose) event handler by setting the event argument's `preventFocus` property to `true`:
 
 ```ts
 public onBeforeClose(args: any): void {
@@ -18,7 +18,7 @@ public onBeforeClose(args: any): void {
 }
 ```
 
-Bind the `beforeClose` event to that handler as shown in the following sample. The sample renders a **Delete Multiple Items** confirmation dialog. With `preventFocus` set, focus is left on whatever element received focus inside the dialog when it closes (the user does not see focus snap back to the page).
+Bind the `beforeClose` event to that handler as shown in the following sample. The sample renders a **Delete Multiple Items** confirmation dialog. With `preventFocus` set, focus is left on whatever element received focus inside the Angular Dialog when it closes (the user does not see focus snap back to the page).
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

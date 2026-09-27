@@ -1,16 +1,16 @@
 ---
 layout: post
 title: CheckBox in Angular MultiSelect Dropdown | Syncfusion
-description: Learn here all about Checkbox in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Checkbox in Syncfusion  Angular MultiSelect Dropdown component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Checkbox 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CheckBox in Angular MultiSelect Dropdown
+# CheckBox in  Angular MultiSelect Dropdown Dropdown
 
-The MultiSelect component provides built-in support for selecting multiple values through checkboxes when the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#mode) property is set to `CheckBox`.
+The  Angular MultiSelect Dropdown component provides built-in support for selecting multiple values through checkboxes when the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#mode) property is set to `CheckBox`.
 
 To enable checkbox functionality, inject the `CheckBoxSelection` module into the MultiSelect component.
 
@@ -28,7 +28,7 @@ To enable checkbox functionality, inject the `CheckBoxSelection` module into the
 
 ## Select All
 
-The MultiSelect component has built-in support for selecting all list items using the `Select All` option in the header.
+The  Angular MultiSelect Dropdown component has built-in support for selecting all list items using the `Select All` option in the header.
 
 When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#showselectall) property is set to `true`, the **Select All** text displays by default. The label shown for the Select All option can be customized using the [`selectAllText`](https://ej2.syncfusion.com/angular/documentation/api/multi-select#selectalltext) property.
 

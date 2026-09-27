@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Rendering palette at initial load
 
-By default, the ColorPicker displays the Picker area when opened. To display the Palette area instead, set the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#mode) property to `Palette`.
+By default, the Angular Color Picker displays the Picker area when opened. To display the Palette area instead, set the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#mode) property to `Palette`.
 
 The following sample demonstrates rendering the Palette on initial load.
 
@@ -30,7 +30,7 @@ The following sample demonstrates rendering the Palette on initial load.
 
 ## Color value
 
-Use the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property to set the ColorPicker's selected color. The property accepts hex color codes in the following formats:
+Use the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#value) property to set the Angular Color Picker's selected color. The property accepts hex color codes in the following formats:
 - **3-digit hex**: `#RGB` (e.g., `#F00` for red)
 - **6-digit hex**: `#RRGGBB` (e.g., `#FF0000` for red)
 - **4-digit hex with alpha**: `#RGBA` (e.g., `#F00F` for opaque red)

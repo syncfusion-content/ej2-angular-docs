@@ -1,14 +1,13 @@
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, Diagram, NodeModel, ConnectorModel, SnapSettingsModel, LayoutModel,
-  DataSourceModel, DiagramModule, DataBindingService, DataBinding, FlowchartLayout, FlowchartLayoutService } from '@syncfusion/ej2-angular-diagrams';
+  DataSourceModel, DiagramModule, DataBinding, FlowchartLayout } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 Diagram.Inject(DataBinding, FlowchartLayout);
 
 @Component({
   imports: [DiagramModule],
 
-  providers: [FlowchartLayoutService, DataBindingService],
   standalone: true,
   selector: "app-container",
   template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]="getNodeDefaults"

@@ -1,0 +1,19 @@
+<div class="control-container">
+    <div id="recordingStatus" class="status-indicator ready">Ready to record</div>
+    <div id="transcriptDisplay" class="transcript-display">Waiting for speech input...</div>
+    <button id="aiAssistBtn" class="e-btn e-primary" (click)="onClick()">AI Assist</button>
+    <div id="editableText" contenteditable="true" class="editable-text">
+        <p>This sample wires up speech-to-text lifecycle events: onStart, onStop, transcriptChanged, and onError.
+           Watch the recording status badge and transcript panel update in real time as you speak.</p>
+    </div>
+    <div id="errorMessage" class="error-message" style="display: none;">
+        <span class="error-text">Error occurred</span>
+    </div>
+    <ejs-inlineaiassist id="defaultInlineAssist" #inlineAssistComponent
+        [relateTo]="'#aiAssistBtn'"
+        [responseSettings]="responseSetting"
+        [speechToTextSettings]="speechToTextSettings"
+        popupWidth="500px"
+        (promptRequest)="onPromptRequest($event)">
+    </ejs-inlineaiassist>
+</div>

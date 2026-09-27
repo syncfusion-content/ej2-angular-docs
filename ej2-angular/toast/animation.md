@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Animation in Angular Toast
 
-Toasts support custom animations for both shows and hide actions from the provided animation option of `Animation` library.
+Angular Toasts support custom animations for both shows and hide actions from the provided animation option of `Animation` library.
 
-Default animation is given as `FadeIn` for showing the toast and `FadeOut` for hiding the toast.
+Default animation is given as `FadeIn` for showing the toast and `FadeOut` for hiding the Angular Toast.
 
-The sample demonstrates some types of animation that suits Toast. You can check all the animation effects here.
+The sample demonstrates some types of animation that suits Angular Toast. You can check all the animation effects here.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

@@ -65,5 +65,5 @@ The [`FinetuneValueChanging`](https://ej2.syncfusion.com/angular/documentation/a
 The parameters available in the [`FinetuneEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/index-default#finetuneEventArgs) event are:
 
 * FinetuneEventArgs.finetune: Gets or sets the fine-tune type ([`ImageFinetuneOption`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/imagefinetuneoption)) to be applied to the image in the image editor.
-* FinetuneEventArgs.value: Gets or sets the fine-tuning value (number) to be applied to the image in the image editor.
+* FinetuneEventArgs.value: Gets or sets the fine-tuning value (number) to be applied to the image in the Angular Image Editor.
 * FinetuneEventArgs.cancel: Specifies a boolean value to cancel the fine-tuning action (default: `false`).

@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Horizontal Card in Angular Card
 
-By default, all card elements are aligned vertically in a stacked layout following the natural DOM flow. The horizontal layout provides an alternative arrangement where card elements are positioned side-by-side, creating a more compact and visually engaging presentation for content that benefits from lateral organization.
+By default, all Angular Card elements are aligned vertically in a stacked layout following the natural DOM flow. The horizontal layout provides an alternative arrangement where card elements are positioned side-by-side, creating a more compact and visually engaging presentation for content that benefits from lateral organization.
 
 To achieve horizontal alignment, add the `e-card-horizontal` class to the root card element. This transforms the default vertical layout into a horizontal arrangement where child elements flow from left to right.
 
-## Stacked cards
+## Stacked Angular Cards
 
-* A horizontally aligned card can include specific column to align vertical using `e-card-stacked` class.
+* A horizontally aligned Angular Card can include specific column to align vertical using `e-card-stacked` class.
 This will align the stacked section vertically aligned differentiating from horizontal layout.
 
 Class   | Description

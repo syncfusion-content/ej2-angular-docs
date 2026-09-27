@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Events in Angular Rating
 
-The Rating component provides events that fire during user interactions and state changes. The following events are available to customize component behavior.
+The Angular Rating component provides events that fire during user interactions and state changes. The following events are available to customize component behavior.
 
 ## beforeItemRender
 
-The Rating component triggers the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/rating#beforeitemrender) event before each rating item renders. Use this event to customize item properties before rendering. The [`RatingItemEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/rating/ratingItemEventArgs/) provides details about the item being prepared.
+The Angular Rating component triggers the [`beforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/rating#beforeitemrender) event before each rating item renders. Use this event to customize item properties before rendering. The [`RatingItemEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/rating/ratingItemEventArgs/) provides details about the item being prepared.
 
 ```typescript
 
@@ -39,7 +39,7 @@ export class AppComponent {
 
 ## created
 
-The rating component triggers the [`created`](https://ej2.syncfusion.com/angular/documentation/api/rating#created) event when the rendering of the rating component is completed.
+The Angular Rating component triggers the [`created`](https://ej2.syncfusion.com/angular/documentation/api/rating#created) event when the rendering of the rating component is completed.
 
 ```typescript
 
@@ -64,7 +64,7 @@ export class AppComponent {
 
 ## onItemHover
 
-The Rating component triggers the [`onItemHover`](https://ej2.syncfusion.com/angular/documentation/api/rating#onitemhover) event when a user hovers over a rating item. Use this event to provide visual feedback or update the UI based on the hovered item. The [`RatingHoverEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/rating/ratingHoverEventArgs/) provides details about the hovered item.
+The Angular Rating component triggers the [`onItemHover`](https://ej2.syncfusion.com/angular/documentation/api/rating#onitemhover) event when a user hovers over a rating item. Use this event to provide visual feedback or update the UI based on the hovered item. The [`RatingHoverEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/rating/ratingHoverEventArgs/) provides details about the hovered item.
 
 ```typescript
 
@@ -89,7 +89,7 @@ export class AppComponent {
 
 ## valueChanged
 
-The Rating component triggers the [`valueChanged`](https://ej2.syncfusion.com/angular/documentation/api/rating#valuechanged) event when the user selects a rating value. Use this event to capture user input and perform related actions. The [`RatingChangedEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/rating/ratingChangedEventArgs/) provides details about the rating change.
+The Angular Rating component triggers the [`valueChanged`](https://ej2.syncfusion.com/angular/documentation/api/rating#valuechanged) event when the user selects a rating value. Use this event to capture user input and perform related actions. The [`RatingChangedEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/rating/ratingChangedEventArgs/) provides details about the rating change.
 
 ```typescript
 
@@ -112,7 +112,7 @@ export class AppComponent {
 
 ```
 
-Below example demonstrates the valueChanged event of the Rating component.
+Below example demonstrates the valueChanged event of the Angular Rating component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

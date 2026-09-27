@@ -3,14 +3,14 @@ layout: post
 title: Row and Column in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table configures row and column axes with field options for width, alignment, and formatting.
 platform: ej2-angular
-control: Row and column 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and Column in Angular Pivot Table
+# Row and column in Angular Pivot Table
 
 To learn about how to use the row and column options effectively in the Angular Pivot Table, watch this video:
 
@@ -301,6 +301,7 @@ To set the cell selection mode, use the [`cellSelectionMode`](https://ej2.syncfu
 
 - **Flow** (default): Selects a continuous range of cells from the starting cell to the ending cell, including all rows in between.
 - **Box**: Selects a rectangular block of cells that spans from the starting cell to the ending cell, covering all intermediate rows and columns within the selected range.
+- **BoxWithBorder**: This mode works like Box mode but also highlights the selected cells with borders for better visibility.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -320,7 +321,7 @@ To set the cell selection mode, use the [`cellSelectionMode`](https://ej2.syncfu
 
 Highlighting selected cells in the Pivot Table with a different background color helps users quickly identify and focus on important data. To achieve this effect seamlessly, you can apply built-in CSS classes that customize the appearance of selected cells.
 
-In the example below, selected cells appear with a **green-yellow** background. Simply add the custom styles to your stylesheet, and they will be applied when you select a cell using the mouse or arrow keys.
+In the example below, selected cells appear with a **green-yellow** background. The styles are defined in the accompanying CSS file; include the same snippet in your application's stylesheet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -378,6 +379,10 @@ You can use these parameters to decide whether or not the cell should be selecte
 
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs266" %}
 
+### Limitations
+
+The [grouping](./grouping) feature is applied based on the selected row or column headers using the following [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridsettingsmodel#selectionsettings): selection [`mode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotselectionsettings#mode) set to **Cell**, selection [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotselectionsettings#type) set to **Multiple**, and [`cellSelectionMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotselectionsettings#cellselectionmode) set to **Box** by default. When using the selection and [grouping](./grouping) features together, cell selection is limited to row or column headers with these settings. Other settings, such as selection [`mode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotselectionsettings#mode) set to **Row** or **Column**, selection [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotselectionsettings#type) set to **Single**, or [`cellSelectionMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotselectionsettings#cellselectionmode) set to **Flow**, are incompatible with [grouping](./grouping) in the pivot table.
+
 ## Clip Mode
 
 The clip mode option in the Pivot Table determines how cell content is displayed when it exceeds the cell’s boundaries. You can set this option using the [`clipMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings#clipmode) property within the [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) configuration. The Pivot Table provides the following clip mode options:
@@ -402,9 +407,11 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 ## Cell Template
 
-You can change how each cell in the Pivot Table looks by using the [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#celltemplate) option. With [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#celltemplate), you can use either an HTML string or the ID of an HTML element to add custom content to every cell. This helps you display cell values in any format you prefer, such as adding icons, colors, or other elements for better understanding.
+You can change how each cell in the Pivot Table looks by using the [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#celltemplate) option. Set [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#celltemplate) to the `id` of an HTML element that contains the template markup. The element must be present in the DOM before the Pivot Table renders. This helps you display cell values in any format you prefer, such as adding icons, colors, or other elements for better understanding.
 
 For example, in the following sample, each year's revenue cost is shown along with trend icons. This gives users a clear and quick way to see changes in data at a glance.
+
+> The [`cellTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#celltemplate) property is triggered whenever the Pivot Table report configuration is updated through code-behind or UI actions such as sorting, filtering, and more. Therefore, binding a large dataset to the Pivot Table while defining a template for this property, or assigning a complex template to it, may lead to flickering issues in the Pivot Table UI.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

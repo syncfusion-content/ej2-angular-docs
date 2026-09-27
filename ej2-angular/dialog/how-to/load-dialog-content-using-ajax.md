@@ -10,8 +10,8 @@ domainurl: ##DomainURL##
 
 # How to load Dialog content using AJAX in Angular Dialog
 
-Load dialog content dynamically from an external source using the AJAX library. The AJAX library sends the request and loads the dialog content using its `success` event.
+Load Angular Dialog content dynamically from an external source using the AJAX library. The AJAX library sends the request and loads the Angular Dialog content using its `success` event.
 
-Refer to the following link to learn more about loading dialog content using AJAX:
+Refer to the following link to learn more about loading Angular Dialog content using AJAX:
 
 [AJAX Content](https://ej2.syncfusion.com/angular/demos/#/material/dialog/dialog-contents-via-ajax)

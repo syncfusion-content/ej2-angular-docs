@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Islamic Calendar in Angular Calendar
 
-In addition to the Gregorian calendar, the Calendar control supports the Islamic (Hijri) calendar. The Islamic calendar or Hijri calendar is a lunar calendar consisting of 12 months in a year of 354 or 355 days. To know more about the Islamic calendar, please refer to this [Wikipedia](https://en.wikipedia.org/wiki/Islamic_calendar) link. The Hijri month names are rendered from the loaded culture/CLDR data.
+In addition to the Gregorian calendar, the Angular Calendar control supports the Islamic (Hijri) calendar. The Islamic calendar or Hijri calendar is a lunar calendar consisting of 12 months in a year of 354 or 355 days. To know more about the Islamic calendar, please refer to this [Wikipedia](https://en.wikipedia.org/wiki/Islamic_calendar) link. The Hijri month names are rendered from the loaded culture/CLDR data.
 
 It also consists of all Gregorian calendar functionalities such as min and max dates, week number, start day of the week, multi selection, enable RTL, start and depth view, localization, and highlighting and customizing the specific dates.
 

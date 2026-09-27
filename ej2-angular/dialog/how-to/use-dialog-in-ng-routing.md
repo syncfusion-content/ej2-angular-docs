@@ -10,6 +10,6 @@ domainurl: ##DomainURL##
 
 # How to use Dialog in Angular routing in Angular Dialog
 
-The following example demonstrates how to update the dialog content using an Angular service in a routing application.
+The following example demonstrates how to update the Angular Dialog content using an Angular service in a routing application.
 
-[Dialog with ng-routing sample](https://stackblitz.com/edit/angular-router-example-ks2ltv?file=app%2Fapp.component.ts)
+[Angular Dialog with ng-routing sample](https://stackblitz.com/edit/angular-router-example-ks2ltv?file=app%2Fapp.component.ts)

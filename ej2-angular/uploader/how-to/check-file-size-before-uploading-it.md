@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to check file size before upload in Angular Uploader | Syncfusion
-description: Read the byte size of files in the Angular Uploader before upload using the uploading event and the bytesToSize helper to display values in KB or MB.
+title: How to check file size before upload in Angular File Upload | Syncfusion
+description: Read the byte size of files in the Angular File Upload before upload using the uploading event and the bytesToSize helper to display values in KB or MB.
 platform: ej2-angular
 control: Check file size before uploading it 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to check file size before upload in Angular Uploader
+# How to check file size before upload in Angular File Upload
 
-Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#uploading) event to obtain file sizes before uploading to the server. The `args.fileData` object reports size in bytes; convert it to `KB` or `MB` with the [bytesToSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#bytestosize) method on the `UploaderComponent` instance.
+Use the [uploading](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#uploading) event to obtain file sizes before uploading to the server. The `args.fileData` object reports size in bytes; convert it to `KB` or `MB` with the [bytesToSize](https://ej2.syncfusion.com/angular/documentation/api/uploader/index-default#bytestosize) method on the `Angular File Upload Component` instance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

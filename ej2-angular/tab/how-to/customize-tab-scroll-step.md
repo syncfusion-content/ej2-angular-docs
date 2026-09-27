@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # How to customize tab scroll step in Angular Tab
 
-The Tab component supports customizing the scrolling distance applied when clicking the left or right navigation icons. Set the [`scrollStep`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#scrollstep) property (in pixels) to control how far the header scrolls per click.
+The Angular Tab component supports customizing the scrolling distance applied when clicking the left or right navigation icons. Set the [`scrollStep`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabModel#scrollstep) property (in pixels) to control how far the header scrolls per click.
 
 ## Steps
 

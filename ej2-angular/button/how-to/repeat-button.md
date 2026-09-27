@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # How to repeat button in Angular Button
 
-The repeat button is a type of button in that the click event is triggered at regular time interval from the pressed state till the released state.
+The repeat Angular Button is a type of button in that the click event is triggered at regular time interval from the pressed state till the released state.
 
-The following example explains about how to achieve repeat button in mouse and touch events.
+The following example explains about how to achieve repeat Angular Button in mouse and touch events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

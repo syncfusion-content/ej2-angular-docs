@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Floating Action Button
 
-The Floating action button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Angular Floating Action Button component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The accessibility compliance for the Floating action button component is outlined below.
+The accessibility compliance for the Angular Floating Action Button component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -40,25 +40,25 @@ The accessibility compliance for the Floating action button component is outline
 
 ## WAI-ARIA attributes
 
-The Floating action button component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/button/) patterns to meet the accessibility. The following ARIA attributes are used in the Floating action button component:
+The Angular Floating Action Button component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/button/) patterns to meet the accessibility. The following ARIA attributes are used in the Angular Floating Action Button component:
 
 | Attributes | Purpose |
 | --- | --- |
-| `aria-label` | Provides an accessible name for the icon only floating action button. |
+| `aria-label` | Provides an accessible name for the icon only Angular Floating Action Button. |
 
 ## Keyboard interaction
 
-The Floating action button component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/button/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Floating action button component.
+The Angular Floating Action Button component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/button/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Angular Floating Action Button component.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Space</kbd> | When the floating action button has focus, pressing the space key changes the state of the floating action button. |
+| <kbd>Space</kbd> | When the Angular Floating Action Button has focus, pressing the space key changes the state of the floating action button. |
 
 ## Ensuring accessibility
 
-The Floating action button component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Angular Floating Action Button component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Floating action button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/floating-action-button.html) in a new window to evaluate the accessibility of the Floating action button component with accessibility tools.
+The accessibility compliance of the Angular Floating Action Button component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/floating-action-button.html) in a new window to evaluate the accessibility of the Angular Floating Action Button component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/floating-action-button.html" %}
 

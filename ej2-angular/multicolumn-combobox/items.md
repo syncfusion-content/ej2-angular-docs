@@ -76,7 +76,7 @@ The [query](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-com
 
 ## Adding placeholder
 
-You can use the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#placeholder) property to set a short hint that describes the expected value of the multicolumn combobox component.
+You can use the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#placeholder) property to set a short hint that describes the expected value of the Angular Multicolumn combobox component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

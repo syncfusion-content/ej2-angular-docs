@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # How to render Accordion content using ng-content in Angular Accordion
 
-The Syncfusion Angular Accordion component supports content projection using Angular’s `ng-content` directive, enabling reusable and flexible content integration into Accordion items. This is ideal for scenarios requiring consistent UI elements, such as forms or reusable panels, across multiple Accordion instances or components.
+The Syncfusion Angular Accordion component supports content projection using Angular’s `ng-content` directive, enabling reusable and flexible content integration into Angular Accordion items. This is ideal for scenarios requiring consistent UI elements, such as forms or reusable panels, across multiple Angular Accordion instances or components.
 
 
 To implement content projection, use `ng-template` with the `#content` attribute inside each `e-accordionitem` to define the content area. Include `ng-content` within `ng-template`, using a `select` attribute with a matching ID or class from the parent component’s template to project specific content. The `ng-content` directive is a core Angular feature requiring no additional Syncfusion dependencies.
 
-The example below demonstrates projecting content into Accordion items using `ng-content`.
+The example below demonstrates projecting content into Angular Accordion items using `ng-content`.
 ```javascript
   <e-accordionitem expanded='true' header='Athletics'>
     <ng-template #content>

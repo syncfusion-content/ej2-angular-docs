@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 The [`strictMode`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#strictmode) is an act that allows you to enter only valid time value within the specified min/max range in the textbox. If the time value is invalid, the component value sets to the previous value.
 If the time value is out of range, the component sets the time value to min/max value.
 
-The following example demonstrates the TimePicker in `strictMode` with min/max range of `10:00 AM` to `4:00 PM` . It allows you to enter only valid time within the specified range. If you enter the out-of-range value like `8:00 PM`, the value sets to the max time `4:00 PM` as the value `8:00 PM` is greater than `max` value of `4:00 PM`. If you enter invalid time value like `9:00 tt`, the value sets to the previous value.
+The following example demonstrates the Angular TimePicker in `strictMode` with min/max range of `10:00 AM` to `4:00 PM` . It allows you to enter only valid time within the specified range. If you enter the out-of-range value like `8:00 PM`, the value sets to the max time `4:00 PM` as the value `8:00 PM` is greater than `max` value of `4:00 PM`. If you enter invalid time value like `9:00 tt`, the value sets to the previous value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -27,7 +27,7 @@ The following example demonstrates the TimePicker in `strictMode` with min/max r
   
 {% previewsample "page.domainurl/samples/timepicker/getting-started-cs6" %}
 
-By default, the TimePicker act in strictMode `false` state, that allows to enter the invalid or out-of-range time in textbox.
+By default, the Angular TimePicker act in strictMode `false` state, that allows to enter the invalid or out-of-range time in textbox.
 
 If the time is out-of-range or invalid, then the model value will be set to `out of range` time value or `null` respectively with highlighted `error` class to indicates the time is out of range or invalid.
 

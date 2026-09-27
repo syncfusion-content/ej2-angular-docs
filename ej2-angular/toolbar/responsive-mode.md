@@ -17,7 +17,7 @@ The Angular Toolbar component automatically handles content overflow with respon
 
 ## Scrollable
 
-The default overflow mode of the Toolbar is `Scrollable`. This responsive mode displays all commands in a single horizontal line with scrolling navigation when content overflows the available container width.
+The default overflow mode of the Angular Toolbar is `Scrollable`. This responsive mode displays all commands in a single horizontal line with scrolling navigation when content overflows the available container width.
 
 * Navigation arrows appear at the start and end of the Toolbar to access hidden commands.
 * You can also see the hidden commands using touch swipe action.
@@ -51,9 +51,9 @@ The default overflow mode of the Toolbar is `Scrollable`. This responsive mode d
 
 ## Popup
 
-`Popup` is an alternative [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#overflowmode) where the Toolbar container displays commands that fit within the available space. Overflowing commands that exceed the viewing area automatically move to an overflow popup container.
+`Popup` is an alternative [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#overflowmode) where the Angular Toolbar container displays commands that fit within the available space. Overflowing commands that exceed the viewing area automatically move to an overflow popup container.
 
-Commands in the popup become accessible by opening the dropdown using the overflow icon at the end of the Toolbar. The [`hideItem`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#hideitem) method accepts a boolean second parameter: pass `true` to hide an item and `false` to show a previously hidden item.
+Commands in the popup become accessible by opening the dropdown using the overflow icon at the end of the Angular Toolbar. The [`hideItem`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#hideitem) method accepts a boolean second parameter: pass `true` to hide an item and `false` to show a previously hidden item.
 
 ![Toolbar popup](images/popup.gif)
 
@@ -63,11 +63,11 @@ Commands in the popup become accessible by opening the dropdown using the overfl
 
 Default popup priority is set as `none`, and when the commands of the Toolbar overflow, the ones listed last will be moved to the popup.
 
-Command display priority can be customized using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#overflow) property to control which items appear in the Toolbar versus the popup.
+Command display priority can be customized using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#overflow) property to control which items appear in the Angular Toolbar versus the popup.
 
 Property     | Description
 ------------ | -------------
-  show       | Always displays items on the Toolbar with primary priority
+  show       | Always displays items on the Angular Toolbar with primary priority
   hide       | Always displays items in the popup with secondary priority
   none       | No priority assigned - commands move to popup in normal order when content exceeds viewing area
 
@@ -101,7 +101,7 @@ When primary priority commands exceed available space, they move to the popup co
 
 The [`showTextOn`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#showtexton) property determines where button text displays within the Toolbar, popup, or both locations. This enables customization of text and image representations for different display contexts.
 
-For example, icon-only buttons can display on the Toolbar while the popup container shows detailed information with both icons and text.
+For example, icon-only buttons can display on the Angular Toolbar while the popup container shows detailed information with both icons and text.
 
 Available values:
 
@@ -125,9 +125,9 @@ The following example demonstrates text visibility limited to the popup containe
   
 {% previewsample "page.domainurl/samples/toolbar/toolbar-items-cs9" %}
 
-## Render toolbar with a less than minimum height
+## Render Angular Toolbar with a less than minimum height
 
-By default, the Toolbar renders with a minimum height to accommodate items properly. A customized toolbar with height less than the minimum can be achieved by overriding default styles from the application level.
+By default, the Angular Toolbar renders with a minimum height to accommodate items properly. A customized toolbar with height less than the minimum can be achieved by overriding default styles from the application level.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Checkbox in Angular Dropdown Tree
 
-The Dropdown Tree component allows you to check more than one item from the tree without affecting the UI's appearance by enabling the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#showcheckbox) property. When this property is enabled, a checkbox appears before each item text in the popup, enabling multi-selection functionality where users can select multiple tree nodes simultaneously.
+The Angular Dropdown Tree component allows you to check more than one item from the tree without affecting the UI's appearance by enabling the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#showcheckbox) property. When this property is enabled, a checkbox appears before each item text in the popup, enabling multi-selection functionality where users can select multiple tree nodes simultaneously.
 
 In the following example, the `showCheckBox` property is enabled.
 
@@ -30,7 +30,7 @@ In the following example, the `showCheckBox` property is enabled.
 
 ## Auto Check
 
-By default, the checkbox state of the parent and child items in the Dropdown Tree will not be dependent on each other. If you need a dependent checked state, then enable the [`autoCheck`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/treeSettingsModel#autocheck) property which is a member of [`treeSettings`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#treesettings) property. This feature creates a hierarchical checkbox behavior where parent and child selections are automatically synchronized.
+By default, the checkbox state of the parent and child items in the Angular Dropdown Tree will not be dependent on each other. If you need a dependent checked state, then enable the [`autoCheck`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/treeSettingsModel#autocheck) property which is a member of [`treeSettings`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#treesettings) property. This feature creates a hierarchical checkbox behavior where parent and child selections are automatically synchronized.
 
 The auto check functionality follows these rules:
 
@@ -58,7 +58,7 @@ In the following example, the `autoCheck` property is enabled to demonstrate hie
 
 ## Select All
 
-The Dropdown Tree component has built-in support to select all the tree items using the Select All options in the header. This feature provides a convenient way to quickly select or deselect all available tree items without having to check each item individually.
+The Angular Dropdown Tree component has built-in support to select all the tree items using the Select All options in the header. This feature provides a convenient way to quickly select or deselect all available tree items without having to check each item individually.
 
 When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#showselectall) property is set to true, a checkbox will be displayed in the popup header that allows you to select or deselect all the tree items in the popup. Note that the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#showcheckbox) property must be enabled for the Select All feature to work properly.
 
