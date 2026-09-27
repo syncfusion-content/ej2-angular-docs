@@ -22,13 +22,10 @@
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.json",
-             "assets": [
-              {
-                "glob": "*.png",
-                "input": "",
-                "output": ""
-              }
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "favicon.ico",
+              ".htaccess"
             ],
             "styles": [
               "src/styles.css"
@@ -73,8 +70,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "75513252-6e3f-411d-9b90-be0aec39f531"
   }
 }

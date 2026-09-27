@@ -16,8 +16,6 @@ The following example demonstrates how to use the context menu's `select` event 
 
 The context menu's `select` event exposes `args.item.id` (and `args.item.text`). Map known menu item IDs to Angular Tree View methods such as `this.tree.addNodes(...)`, `this.tree.removeNodes(...)`, and `this.tree.beginEdit(args.node)`. A switch statement on `args.item.id` keeps the integration compact.
 
-The context menu's `select` event exposes `args.item.id` (and `args.item.text`). Map known menu item IDs to TreeView methods such as `this.tree.addNodes(...)`, `this.tree.removeNodes(...)`, and `this.tree.beginEdit(args.node)`. A switch statement on `args.item.id` keeps the integration compact.
-
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/context-menu-cs1/src/app.component.ts %}

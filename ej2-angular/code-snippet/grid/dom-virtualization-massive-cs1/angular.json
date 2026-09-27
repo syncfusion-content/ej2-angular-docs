@@ -22,13 +22,10 @@
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.json",
-             "assets": [
-              {
-                "glob": "*.png",
-                "input": "",
-                "output": ""
-              }
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "favicon.ico",
+              ".htaccess"
             ],
             "styles": [
               "src/styles.css"
@@ -63,18 +60,15 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "syncfusion-component:build:production"
+              "browserTarget": "syncfusion-component:build:production"
             },
             "development": {
-              "buildTarget": "syncfusion-component:build:development"
+              "browserTarget": "syncfusion-component:build:development"
             }
           },
           "defaultConfiguration": "development"
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "600f791f-ce85-489e-9456-1a200454844f"
   }
 }

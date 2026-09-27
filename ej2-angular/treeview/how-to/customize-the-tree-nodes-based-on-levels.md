@@ -16,8 +16,6 @@ Level-based customization works by adding a custom CSS class to the Angular Tree
 
 The Angular Tree View emits a class of the form `e-level-<n>` on each node's `<li>` element, where `<n>` is the zero-based depth of the node (root nodes are `e-level-0`, their children are `e-level-1`, and so on). The component supports up to ten levels out of the box.
 
-The TreeView emits a class of the form `e-level-<n>` on each node's `<li>` element, where `<n>` is the zero-based depth of the node (root nodes are `e-level-0`, their children are `e-level-1`, and so on). The component supports up to ten levels out of the box.
-
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/customize-cs1/src/app.component.ts %}
