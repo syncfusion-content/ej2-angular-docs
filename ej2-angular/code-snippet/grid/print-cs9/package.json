@@ -17,6 +17,7 @@
     "@syncfusion/ej2-angular-charts": "*",
     "@syncfusion/ej2-charts": "*",
     "@syncfusion/ej2-angular-grids": "*",
+    "@syncfusion/ej2-material3-theme": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-calendars": "*",

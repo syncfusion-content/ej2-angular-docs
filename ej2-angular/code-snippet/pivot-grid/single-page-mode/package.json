@@ -33,7 +33,8 @@
     "tslib": "2.3.0",
     "zone.js": "0.16.0",
     "@syncfusion/ej2-pivotview": "*",
-    "@syncfusion/ej2-angular-pivotview": "*"
+    "@syncfusion/ej2-angular-pivotview": "*",
+    "@syncfusion/ej2-tailwind3-theme": "*"
   },
   "devDependencies": {
     "@angular/build": "21.2.22",
