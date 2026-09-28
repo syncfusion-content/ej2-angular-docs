@@ -75,7 +75,9 @@ Refer to the comparison for theme file sizes:
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI themes can be included in your application by four different methods:
 
-### Install via NPM
+> Starting with `v35.1.37`, styles are no longer shipped within individual component packages. component styles must now be referenced from the corresponding [theme packages](#refer-themes-through-npm-packages). Additionally, CDN links for individual component package styles are no longer available. Use the theme package style [CDN](https://unpkg.com/@syncfusion/ej2-tailwind3-theme/styles/button/index.css) or the consolidated theme [CDN](https://cdn.syncfusion.com/ej2/35.1.37/tailwind3.css) instead.
+
+### Refer themes through npm packages
 
 Themes are shipped as both combined and individual CSS/SCSS files. Each theme package includes combined and component-specific styles in both CSS and SCSS formats. For a list of available theme packages, refer to the [available theme packages](#theme-packages) section.
 
@@ -84,6 +86,92 @@ To use the combined SCSS/CSS files, install the required theme package.
 ```bash
 npm install @syncfusion/ej2-material3-theme
 ```
+
+**Referring all components CSS**
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI theme includes a precompiled CSS file encompassing styles for all Syncfusion<sup style="font-size:70%">&reg;</sup> components.
+
+```css
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>.css";
+```
+
+**Example:**
+
+```css
+@import "@syncfusion/ej2-material3-theme/styles/material3.css";
+```
+
+**Referring all components SCSS**
+
+```scss
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>.scss" as *;
+```
+
+**Example:**
+
+```scss
+@use "@syncfusion/ej2-material3-theme/styles/material3.scss" as *;
+```
+
+### Referring to individual component theme
+
+You can reference individual component themes from the unified theme package. In this package, each component includes an `index.css/index.scss` files that automatically loads all the required dependency styles.
+
+```css
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index.css";
+```
+
+**Example:**
+
+```css
+@import "@syncfusion/ej2-material3-theme/styles/grid/index.css";
+```
+
+### Referring All Components Optimized CSS File
+
+To reference optimized (lite) versions of all component styles using theme packages.
+
+```css
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>-lite.css";
+/* or */
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>-lite.scss" as *;
+```
+
+**Example:**
+
+```css
+@import "@syncfusion/ej2-fluent2-theme/styles/fluent2-lite.css";
+/* or */
+@use "@syncfusion/ej2-fluent2-theme/styles/fluent2-lite.scss" as *;
+```
+
+### Referring Individual Component Optimized CSS File
+
+For individual component's optimized CSS from theme packages:
+
+```css
+@import "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index-lite.css";
+/* or */
+@use "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index-lite.scss" as *;
+```
+
+**Example:**
+
+```css
+@import "@syncfusion/ej2-fluent2-theme/styles/grid/index-lite.css";
+/* or */
+@use "@syncfusion/ej2-fluent2-theme/styles/grid/index-lite.scss" as *;
+```
+
+#### Advantages of Individual Components Theme
+
+* Reduces page load time
+* Decreases bundle size
+* Avoids unused CSS
+
+### Compiling Themes from SCSS Source File
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI theme includes SCSS file compilation. Refer to [Compiling SCSS file](../common/how-to/sass) for more information.
 
 ### CDN Direct Referral
 
@@ -129,96 +217,6 @@ For optimized CSS files, use:
 | Microsoft Office Fabric | [https://cdn.syncfusion.com/ej2/32.1.19/fabric.css](https://cdn.syncfusion.com/ej2/32.1.19/fabric.css) |
 | Microsoft Office Fabric Dark | [https://cdn.syncfusion.com/ej2/32.1.19/fabric-dark.css](https://cdn.syncfusion.com/ej2/32.1.19/fabric-dark.css) |
 | High Contrast | [https://cdn.syncfusion.com/ej2/32.1.19/highcontrast.css](https://cdn.syncfusion.com/ej2/32.1.19/highcontrast.css) |
-
-### Using Precompiled CSS and SCSS File
-
-#### Precompiled CSS
-
-Precompiled signifies minified and optimized CSS.
-
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI theme includes a precompiled CSS file encompassing styles for all Syncfusion<sup style="font-size:70%">&reg;</sup> components.
-
-**Referring all components CSS**
-
-```css
-@import "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>.css";
-```
-
-**Example:**
-
-```css
-@import "@syncfusion/ej2-material3-theme/styles/material3.css";
-```
-
-**Referring all components SCSS**
-
-```scss
-@use "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>.scss" as *;
-```
-
-**Example:**
-
-```scss
-@use "@syncfusion/ej2-material3-theme/styles/material3.scss" as *;
-```
-
-You can reference individual component themes from the unified theme package. In this package, each component includes an `index.css/index.scss` files that automatically loads all the required dependency styles.
-
-```css
-@import "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index.css";
-```
-
-**Example:**
-
-```css
-@import "@syncfusion/ej2-material3-theme/styles/grid/index.css";
-```
-
-#### Referring All Components Optimized CSS File
-
-To reference optimized (lite) versions of all component styles using theme packages.
-
-```css
-@import "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>-lite.css";
-/* or */
-@use "@syncfusion/ej2-<theme-name>-theme/styles/<theme-name>-lite.scss" as *;
-```
-
-**Example:**
-
-```css
-@import "@syncfusion/ej2-fluent2-theme/styles/fluent2-lite.css";
-/* or */
-@use "@syncfusion/ej2-fluent2-theme/styles/fluent2-lite.scss" as *;
-```
-
-#### Referring Individual Component Optimized CSS File
-
-For individual component's optimized CSS from theme packages:
-
-```css
-@import "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index-lite.css";
-/* or */
-@use "@syncfusion/ej2-<theme-name>-theme/styles/<component-name>/index-lite.scss" as *;
-```
-
-**Example:**
-
-```css
-@import "@syncfusion/ej2-fluent2-theme/styles/grid/index-lite.css";
-/* or */
-@use "@syncfusion/ej2-fluent2-theme/styles/grid/index-lite.scss" as *;
-```
-
-#### Advantages of Individual Components Theme
-
-* Reduces page load time
-* Decreases bundle size
-* Avoids unused CSS
-
-### Compiling Themes from SCSS Source File
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI theme includes SCSS file compilation. Refer to [Compiling SCSS file](../common/how-to/sass) for more information.
 
 ## Common Variables
 

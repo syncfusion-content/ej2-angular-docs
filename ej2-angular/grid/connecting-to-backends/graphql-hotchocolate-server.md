@@ -861,16 +861,7 @@ Once the dependencies are installed, the required CSS files are made available i
 ```css
 [src/styles.css]
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/grid/index.css";
 ```
 
 For this project, the "Tailwind3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.
