@@ -694,16 +694,7 @@ npm install @syncfusion/ej2-data --save
 After installation, the necessary CSS files are available in the (**../node_modules/@syncfusion**) directory. Add the required CSS references to the (**src/styles.css**) file to ensure proper styling of the Grid component.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 
 ```
 

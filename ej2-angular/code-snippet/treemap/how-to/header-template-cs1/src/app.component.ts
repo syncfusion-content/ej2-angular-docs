@@ -1,21 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeMapModule, TreeMapAllModule } from '@syncfusion/ej2-angular-treemap'
-
-
-
-
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TreeMap, IDrillEndEventArgs, ILoadEventArgs } from '@syncfusion/ej2-angular-treemap';
 import { DrillDown } from './datasource';
 
 @Component({
-imports: [
-         TreeMapModule, TreeMapAllModule
-    ],
-
-,
-standalone: true,
+  imports: [TreeMapModule, TreeMapAllModule],
+  standalone: true,
   selector: 'app-container',
   template: '<ejs-treemap id="container" #treemap style="display:block;" [dataSource]="dataSource" [weightValuePath]="weightValuePath"[leafItemSettings]="leafItemSettings" [palette]="palette" format="n" useGroupingSeparator="true" enableDrillDown="true"(loaded)="loaded($event)" (drillEnd)="drillEnd($event)"><e-levels><e-level groupPath="Continent" fill="#336699" [border]="border"> </e-level><e-level groupPath="States" fill="#336699" [border]="border"> </e-level><e-level groupPath="Region" showHeader="false" fill="#336699" [border]="border"></e-level></e-levels></ejs-treemap>',
   encapsulation: ViewEncapsulation.None
@@ -66,5 +58,3 @@ export class AppComponent implements OnInit {
     width: 0.5
   };
 };
-
-

@@ -538,16 +538,7 @@ Once dependencies are installed, include the required CSS files in the **src/sty
 
 ```css
 
-@import '@syncfusion/ej2-base/styles/material3.css';  
-@import '@syncfusion/ej2-buttons/styles/material3.css';  
-@import '@syncfusion/ej2-calendars/styles/material3.css';  
-@import '@syncfusion/ej2-dropdowns/styles/material3.css';  
-@import '@syncfusion/ej2-inputs/styles/material3.css';  
-@import '@syncfusion/ej2-navigations/styles/material3.css';
-@import '@syncfusion/ej2-popups/styles/material3.css';
-@import '@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '@syncfusion/ej2-notifications/styles/material3.css';
-@import '@syncfusion/ej2-angular-grids/styles/material3.css';
+@import "@syncfusion/ej2-material3-theme/styles/grid/index.css";
 ```
 
 For this project, the "Material 3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.

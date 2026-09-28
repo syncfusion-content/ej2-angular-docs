@@ -34,24 +34,6 @@ The CSS used in the sample below applies a square `background-image` to both sta
 }
 ```
 
-The TreeView renders the expand/collapse icons on `.e-icon-expandable` and `.e-icon-collapsible` elements. You can override them with any of the following approaches:
-
-* **Custom font glyphs**: Set a different `font-family` and `content` value to swap the built-in character glyph.
-* **Background image**: Replace the icon with `background-image` and hide the original text via `font-size: 0`.
-* **SVG sprite**: Apply `background-image` with an inline SVG `data:` URL for vector icons that scale on high-DPI screens.
-
-The CSS used in the sample below applies a square `background-image` to both states:
-
-```css
-.accordion-tree .e-icon-expandable,
-.accordion-tree .e-icon-collapsible {
-  background-image: url('./icons/folder.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: 0;
-}
-```
-
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 {% include code-snippet/tree-view/getting-started-cs9/src/app.component.ts %}

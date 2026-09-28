@@ -419,16 +419,7 @@ Once the dependencies are installed, the required CSS files are made available i
 ```css
 [src/styles.css]
 
-@import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 ```
 
 For this project, the "Bootstrap 5.3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance) documentation to learn more about theming and customization options.

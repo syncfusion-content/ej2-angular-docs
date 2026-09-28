@@ -14,8 +14,6 @@ The Angular Toolbar component supports template configuration through Angular's 
 
 The [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#template) property on a Angular Toolbar item accepts an `ng-template` reference (`TemplateRef`). Reference the template by assigning it to the item `template` input. The example below illustrates embedding the Menu component within a Angular Toolbar item using an `<ng-template>` block.
 
-The [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#template) property on a Toolbar item accepts an `ng-template` reference (`TemplateRef`). Reference the template by assigning it to the item `template` input. The example below illustrates embedding the Menu component within a Toolbar item using an `<ng-template>` block.
-
 ## Integrate menu component
 
 

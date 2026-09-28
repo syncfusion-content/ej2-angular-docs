@@ -86,17 +86,7 @@ Syncfusion Angular controls include [built-in themes](https://ej2.syncfusion.com
 To use the "Material" theme, add the following imports to the **src/styles.css** file:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-grid-chart/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid-chart/index.css";
 ```
 
 ## Chart integration via context menu in Grid

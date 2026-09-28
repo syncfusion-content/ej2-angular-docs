@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Accessibility in Angular Components | Syncfusion
 description: Learn about accessibility standards, WCAG 2.2, Section 508, WAI-ARIA, and keyboard navigation support in Syncfusion Angular components.
