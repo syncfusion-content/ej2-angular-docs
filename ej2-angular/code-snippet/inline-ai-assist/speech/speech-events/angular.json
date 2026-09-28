@@ -25,11 +25,6 @@
                 "glob": "*.css",
                 "input": "",
                 "output": ""
-              },
-              {
-                "glob": "*.png",
-                "input": "",
-                "output": ""
               }
             ]
           },
