@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { Component } from '@angular/core';
 
 @Component({
-    imports: [
-    ],
+    imports: [],
     standalone: true,
     selector: 'my-app',
     template: `
