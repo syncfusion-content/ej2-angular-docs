@@ -72,3 +72,27 @@ In the following sample, selection is disabled for rows where the "Progress" col
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/treegrid/selection-cs14" %}
+
+## Hierarchy checkbox selection
+
+The hierarchy checkbox enables cascading selection of parent and child rows in Tree Grid. When a parent row checkbox is selected, all its child records are automatically selected, and the parent state updates based on children selection. To enable hierarchy checkbox selection, set the `showCheckbox` property to `true` in a column and configure the `hierarchyCheckboxMode` property. By default, hierarchy checkbox mode is set to `self`.
+
+The available modes are displayed in the following table.
+
+| Item | Description |
+|-----|-----|
+| `self` | Only the targeted row is selected; children and parent are not affected. |
+| `hierarchy` | Selection cascades to all descendants and adjusts the parent state accordingly. |
+| `filteredHierarchy` | Behaves like hierarchy, but applies the cascade only to records matching the current filter or search criteria. |
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/selection-cs15/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/selection-cs15/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/treegrid/selection-cs15" %}
