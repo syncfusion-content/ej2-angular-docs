@@ -1,0 +1,6 @@
+@import "node_modules/@syncfusion/ej2-material3-theme/styles/file-manager/index.css";
+
+
+.e-fe-tick::before {
+  content: '\e614';
+}

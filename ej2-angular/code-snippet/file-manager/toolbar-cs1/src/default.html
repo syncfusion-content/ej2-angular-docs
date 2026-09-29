@@ -1,0 +1,22 @@
+<ejs-filemanager id='files' #fileManager [ajaxSettings]='ajaxSettings' height="375px" >
+    <e-toolbaritems>
+        <e-toolbaritem name= "NewFolder" text= "Create folder" prefixIcon= "e-plus" tooltipText= "Create folder" ></e-toolbaritem>
+        <e-toolbaritem name= "Upload"></e-toolbaritem>
+        <e-toolbaritem name= "SortBy"></e-toolbaritem>
+        <e-toolbaritem name= "Refresh"></e-toolbaritem>
+        <e-toolbaritem name= "Cut"></e-toolbaritem>
+        <e-toolbaritem name= "Copy"></e-toolbaritem>
+        <e-toolbaritem name= "Paste"></e-toolbaritem>
+        <e-toolbaritem name= "Delete"></e-toolbaritem>
+        <e-toolbaritem name= "Download"></e-toolbaritem>
+        <e-toolbaritem name= "Rename"></e-toolbaritem>
+        <e-toolbaritem name= "Select">
+            <ng-template #template>
+                <ejs-checkbox #checkbox label="Select All" [checked]="false" (change)="onChange()"></ejs-checkbox>
+            </ng-template>
+        </e-toolbaritem>
+        <e-toolbaritem name= "Selection"></e-toolbaritem>
+        <e-toolbaritem name= "View"></e-toolbaritem>
+        <e-toolbaritem name= "Details"></e-toolbaritem>
+    </e-toolbaritems>
+</ejs-filemanager>

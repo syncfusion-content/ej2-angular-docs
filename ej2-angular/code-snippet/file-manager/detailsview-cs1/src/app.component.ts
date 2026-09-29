@@ -1,0 +1,46 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { FileManagerModule ,NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
+
+
+
+
+import { Component } from '@angular/core';
+
+@Component({
+imports: [FileManagerModule, ],
+
+providers:[NavigationPaneService, ToolbarService, DetailsViewService],
+standalone: true,
+    selector: 'app-root',
+    styleUrls: ['./app.component.css'],
+    template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [detailsViewSettings]='detailsViewSettings' [view]='view' height="375px">
+    </ejs-filemanager>`
+})
+export class AppComponent {
+    public ajaxSettings?: object;
+    public view?: string;
+    public detailsViewSettings?: object;
+    public hostUrl: string = 'https://physical-service.syncfusion.com/';
+    public ngOnInit(): void {
+        this.ajaxSettings = {
+            url: this.hostUrl + 'api/FileManager/FileOperations',
+            getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
+            uploadUrl: this.hostUrl + 'api/FileManager/Upload',
+            downloadUrl: this.hostUrl + 'api/FileManager/Download'
+        };
+        // Initial view of File Manager is set to details view
+        this.view = "Details";
+        // Details View settings customization
+        this.detailsViewSettings = {
+            columns: [
+                {field: 'name', headerText: 'File Name', minWidth: 120, width: 'auto', customAttributes: { class: 'e-fe-grid-name' },template: '${name}'},
+                {field: 'size', headerText: 'File Size',minWidth: 50, width: '110', template: '${size}'},
+                    { field: '_fm_modified', headerText: 'Date Modified',minWidth: 50, width: '190'}
+            ]
+        };
+    };
+}
+
+
+
