@@ -15,6 +15,7 @@
     "@angular/platform-browser-dynamic": "21.2.22",
     "@syncfusion/ej2-angular-buttons": "*",
     "@syncfusion/ej2-angular-treegrid": "*",
+    "@syncfusion/ej2-material3-theme": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-calendars": "*",

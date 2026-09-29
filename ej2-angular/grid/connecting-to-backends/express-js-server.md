@@ -530,6 +530,7 @@ Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-material3-theme --save
 ```
 
 ### Step 3: Include Syncfusion stylesheets

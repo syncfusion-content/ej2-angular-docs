@@ -623,12 +623,13 @@ Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-bootstrap5.3-theme --save
 ```
 
 After installation, the necessary CSS files are available in the (**../node_modules/@syncfusion**) directory. Add the required CSS references to the (**src/styles.css**) file to ensure proper styling of the Grid component.
 
 ```css
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-bootstrap5.3-theme/styles/grid/index.css";
 ```
 
 For this project, the "Bootstrap 5.3" theme is applied. Other themes can be selected, or the existing theme can be customized to meet specific project requirements. For detailed guidance on theming and customization, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation.
@@ -1429,7 +1430,7 @@ The following snippets assemble the final Angular Grid configuration used in the
     <e-column field="PublicTicketId" headerText="Ticket ID" width="130"
       textAlign="Right" [allowEditing]="false">
       <ng-template #template let-data>
-        <a class="status-text status-ticket-id">{{ data.PublicTicketId }}</a>
+        <a class="status-text status-ticket-id" aria-label="View ticket ID">{{ data.PublicTicketId }}</a>
       </ng-template>
     </e-column>
     <e-column field="Title" headerText="Subject" width="280"

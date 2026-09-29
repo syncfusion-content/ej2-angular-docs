@@ -107,6 +107,22 @@ Here's an example that demonstrates retrieving the row information when hovering
 
 > The `getRowInfo` method requires execution within the `rowDataBound` event context for proper functionality.
 
+## Empty record mode
+
+The `emptyRecordMode` property determines how the empty record row is displayed when the Grid has no records. It supports two modes: `Sticky`, which keeps the empty record row visible during scrolling, and `Normal`, which allows the empty record row to scroll along with the Grid content.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/empty-record-mode/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/empty-record-mode/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/empty-record-mode" %}
+
 ## Frozen rows
 
 The Angular Data Grid allows freezing rows to keep them visible while scrolling vertically through large datasets. This feature enhances usability by keeping key rows visible while scrolling.
