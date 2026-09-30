@@ -387,12 +387,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 --------------------------------------------------------------------------------
-Package: @syncfusion/ej2-calendars
-License: "SEE LICENSE IN license"
-
-
---------------------------------------------------------------------------------
-Package: @syncfusion/ej2-splitbuttons
+Package: @syncfusion/ej2-material3-theme
 License: "SEE LICENSE IN license"
 
 

@@ -367,11 +367,6 @@ License: "SEE LICENSE IN license"
 
 
 --------------------------------------------------------------------------------
-Package: @syncfusion/ej2-splitbuttons
-License: "SEE LICENSE IN license"
-
-
---------------------------------------------------------------------------------
 Package: @syncfusion/ej2-inputs
 License: "SEE LICENSE IN license"
 
@@ -436,5 +431,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+Package: @syncfusion/ej2-material3-theme
+License: "SEE LICENSE IN license"
+
 
 --------------------------------------------------------------------------------

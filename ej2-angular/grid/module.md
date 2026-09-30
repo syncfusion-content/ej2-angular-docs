@@ -17,6 +17,7 @@ Syncfusion Angular Grid modules help optimize your application’s bundle size b
 | [Paging](./paging) | `PageService` | Inject this module to use paging feature. |
 | [Sorting](./sorting) | `SortService` | Inject this module to use sorting feature. |
 | [Filtering](./filtering/filtering) | `FilterService` | Inject this module to use filtering feature. |
+| [Advanced Filtering](./filtering/advanced-filter) | `AdvancedFilterService` | Inject this module to use advanced filtering feature. |
 | [Grouping](./grouping/grouping) | `GroupService` | Inject this module to use grouping feature. |
 | [Lazy Load Grouping](./grouping/lazy-load-grouping) | `LazyLoadGroupService` | Inject this module to use lazy load grouping feature. |
 | [Editing](./editing/edit) | `EditService` | Inject this module to use editing feature. |

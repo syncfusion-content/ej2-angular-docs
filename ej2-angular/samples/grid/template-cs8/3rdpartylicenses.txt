@@ -321,6 +321,21 @@ License: "SEE LICENSE IN license"
 
 
 --------------------------------------------------------------------------------
+Package: @syncfusion/ej2-file-utils
+License: "SEE LICENSE IN license"
+
+
+--------------------------------------------------------------------------------
+Package: @syncfusion/ej2-compression
+License: "SEE LICENSE IN license"
+
+
+--------------------------------------------------------------------------------
+Package: @syncfusion/ej2-pdf-export
+License: "SEE LICENSE IN license"
+
+
+--------------------------------------------------------------------------------
 Package: @syncfusion/ej2-buttons
 License: "SEE LICENSE IN license"
 
@@ -332,6 +347,11 @@ License: "SEE LICENSE IN license"
 
 --------------------------------------------------------------------------------
 Package: @syncfusion/ej2-popups
+License: "SEE LICENSE IN license"
+
+
+--------------------------------------------------------------------------------
+Package: @syncfusion/ej2-splitbuttons
 License: "SEE LICENSE IN license"
 
 
@@ -407,7 +427,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 --------------------------------------------------------------------------------
-Package: @syncfusion/ej2-splitbuttons
+Package: @syncfusion/ej2-material3-theme
 License: "SEE LICENSE IN license"
 
 
