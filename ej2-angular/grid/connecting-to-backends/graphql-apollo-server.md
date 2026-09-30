@@ -519,9 +519,11 @@ To use Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component and Datam
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data
+npm install @syncfusion/ej2-material3-theme --save
 ```
 - `@syncfusion/ej2-angular-grids` –  required to use the Angular Data Grid component.
 - `@syncfusion/ej2-data` – Provides data utilities for binding and manipulating Grid data.
+- `@syncfusion/ej2-material3-theme` - Required to apply the Material 3 theme styles to the Data Grid component.
 
 ### Step 2: Including required Syncfusion stylesheets
 

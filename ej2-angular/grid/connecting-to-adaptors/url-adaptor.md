@@ -155,6 +155,7 @@ Open the terminal in the project's client folder and install the required Syncfu
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-material3-theme --save
 ```
 
 **Step 2: Import Grid Module**

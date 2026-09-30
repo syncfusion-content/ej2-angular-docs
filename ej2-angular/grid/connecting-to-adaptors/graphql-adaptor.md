@@ -258,6 +258,7 @@ To use Syncfusion Grid component and Datamanager, install the packages using the
 ```bash
 npm i @syncfusion/ej2-data 
 npm install @syncfusion/ej2-angular-grids --save
+npm install @syncfusion/ej2-material3-theme --save
 ```
 
 **Step 3: Registering Grid Module**

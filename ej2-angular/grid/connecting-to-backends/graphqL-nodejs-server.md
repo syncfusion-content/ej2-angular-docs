@@ -344,9 +344,11 @@ Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-tailwind-theme --save
 ```
 - `@syncfusion/ej2-angular-grids` – Required for using the Angular Data Grid component.
 - `@syncfusion/ej2-data` – Provides data utilities for advanced data operations in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager.
+- `@syncfusion/ej2-tailwind-theme` - Required to apply the Tailwind theme styles to the Data Grid component.
 
 ### Step 2: Including required Syncfusion stylesheets
 
@@ -355,7 +357,7 @@ Once the dependencies are installed, the required CSS files are made available i
 ```css
 [src/styles.css]
 
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-tailwind-theme/styles/grid/index.css";
 ```
 
 For this project, the "Tailwind" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.

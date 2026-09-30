@@ -163,6 +163,8 @@ The following example demonstrates the Angular TimePicker component in 24-hour f
 
 {% previewsample "page.domainurl/samples/timepicker/getting-started-cs4" %}
 
+N> The TimePicker component follows a **commit-on-Enter/focus-out** scenario. The underlying `value` is updated only when the user commits the edit by pressing **Enter** or moving focus away (**blur**). The `refresh` method rebuilds the component using the **last committed value**. If `refresh()` is invoked—either directly or indirectly via ResizeObserver callbacks, layout shifts, or dynamic validation updates—while the user is actively typing, uncommitted input is discarded and restored to the previous committed value.
+
 ## See Also
 
 * [Render Angular TimePicker with min and max time](./time-range)

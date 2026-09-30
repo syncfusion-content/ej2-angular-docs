@@ -156,6 +156,8 @@ The following example demonstrates how to set value, min and max dates when init
   
 {% previewsample "page.domainurl/samples/calendar/getting-started-cs9" %}
 
+N> The Calendar component follows a **commit-on-Enter/focus-out** scenario. The underlying `value` is updated only when the user commits the edit by pressing **Enter** or moving focus away (**blur**). The `refresh` method rebuilds the component using the **last committed value**. If `refresh()` is invoked—either directly or indirectly via ResizeObserver callbacks, layout shifts, or dynamic validation updates—while the user is actively typing, uncommitted input is discarded and restored to the previous committed value.
+
 ## See Also
 
 * [Select multiple dates in the Angular Calendar](./multi-select)

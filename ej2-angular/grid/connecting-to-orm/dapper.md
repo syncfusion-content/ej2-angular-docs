@@ -689,12 +689,14 @@ Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-bootstrap5.3-theme --save
+
 ```
 
 After installation, the necessary CSS files are available in the (**../node_modules/@syncfusion**) directory. Add the required CSS references to the (**src/styles.css**) file to ensure proper styling of the Grid component.
 
 ```css
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-bootstrap5.3-theme/styles/grid/index.css";
 
 ```
 
@@ -1646,7 +1648,7 @@ export class AppComponent {
             <e-column field="GuestEmail" headerText="Email" width="200" [validationRules]="requiredRule">
                 <ng-template #template let-data>
                     <div>
-                        <a href="mailto:{{data.GuestEmail}}">{{data.GuestEmail}}</a>
+                        <a href="mailto:{{data.GuestEmail}}" aria-label="Send email">{{data.GuestEmail}}</a>
                     </div>
                 </ng-template>
             </e-column>
