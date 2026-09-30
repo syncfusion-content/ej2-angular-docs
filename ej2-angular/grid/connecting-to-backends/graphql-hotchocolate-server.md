@@ -846,12 +846,14 @@ Navigate to the Angular client project and install the required Syncfusion<sup s
 
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-tailwind3-theme --save
 ```
 
 **Package descriptions:**
 
 - `@syncfusion/ej2-angular-grids`: Provides the Grid component with all features including editing, filtering, sorting, and paging.
 - `@syncfusion/ej2-data`: Provides data management utilities and adaptors including `GraphQLAdaptor`.
+- `@syncfusion/ej2-tailwind3-theme` - Required to apply the Tailwind 3 theme styles to the Data Grid component.
 
 ### Step 2: Add Syncfusion CSS references
 

@@ -731,6 +731,7 @@ After completing the initial setup, install the Syncfusion<sup style="font-size:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-bootstrap5.3-theme --save
 ```
 
 The client application is now prepared to reference the Grid component and the data layer.
