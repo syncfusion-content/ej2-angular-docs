@@ -18,16 +18,15 @@ The following tools and runtime are required to build and run a Syncfusion A2UI 
 
 | Tool | Version |
 |------|---------|
-| Node.js | 20 or higher |
-| Angular CLI | 17 or higher |
+| Angular | 21 or higher |
+| Angular CLI | 21 or higher |
+| Node.js | 22 or higher, Recommended: Latest Version |
 
 ### Angular supported versions
 
 | Angular version | Minimum `@syncfusion/ej2-angular-*` version |
 |-----------------|------------------------------------|
-| Angular v19 | 29.1.33 and above |
-| Angular v18 | 27.1.48 and above |
-| Angular v17 | 23.2.6 and above |
+| Angular v21 | 35.1.37 and above |
 
 
 ## Set up a development environment
