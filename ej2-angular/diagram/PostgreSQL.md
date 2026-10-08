@@ -591,11 +591,9 @@ N> If you're setting up the client folder for the first time after creating it w
 Import Syncfusion® CSS styles in the **client/src/styles.css** file for proper component rendering:
 
 ```
-/* Import Material theme base styles */
-@import '@syncfusion/ej2-base/styles/material.css';
-
 /* Import Diagram component-specific styles */
-@import '@syncfusion/ej2-diagrams/styles/material.css';
+@import '@syncfusion/ej2-material-theme/styles/material.css';
+
 ```
 
 N> Syncfusion® provides multiple themes (Material, Bootstrap, Fabric). This example uses Material theme for modern appearance.

@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Observable in Angular Gantt Chart Component
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports [Observable](https://v17.angular.io/guide/observables) data binding, enabling reactive updates to reflect task changes, such as real-time schedule adjustments, without manual intervention. By piping Observables through the [async](https://v17.angular.io/api/common/AsyncPipe) pipe, the component automatically subscribes to data changes, updates the UI, and manages subscription to prevent memory leaks. This is ideal for handling asynchronous data from APIs or WebSockets, ensuring efficient synchronization in project management scenarios. Observables require a data structure with `result` (an array of task data) and `count` (total record count) for proper binding, supporting features like virtual scrolling. Taskbars and grid rows include ARIA labels for accessibility, and the UI adapts to responsive designs, though large datasets may need caching for performance.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports [Observable](https://rxjs.dev/guide/observable) data binding, enabling reactive updates to reflect task changes, such as real-time schedule adjustments, without manual intervention. By piping Observables through the [async](https://angular.dev/api/common/AsyncPipe) pipe, the component automatically subscribes to data changes, updates the UI, and manages subscription to prevent memory leaks. This is ideal for handling asynchronous data from APIs or WebSockets, ensuring efficient synchronization in project management scenarios. Observables require a data structure with `result` (an array of task data) and `count` (total record count) for proper binding, supporting features like virtual scrolling. Taskbars and grid rows include ARIA labels for accessibility, and the UI adapts to responsive designs, though large datasets may need caching for performance.
 
-## Bind Observables with async pipe
+## Bind observables with async pipe
 
 Bind data to the Gantt Chart component using an Observable with the async pipe. The component subscribes on initialization, unsubscribe automatically on destruction, and updates only when new values are emitted.
 The Observable must emit an object with:
@@ -114,7 +114,7 @@ export class TaskStoreService extends Subject<any> {
 
 This service fetches tasks from an API, supporting pagination for large datasets.
 
-## CRUD operations with Observable binding
+## CRUD operations with observable binding
 
 The Gantt Chart component supports CRUD operations such as add, edit, and delete when using Observable data binding. For every such operation, it triggers the `dataSourceChanged` event, which serves as a unified mechanism for handling data modifications, allowing developers to process create, update, and delete actions programmatically and efficiently synchronize these changes with the underlying data source.
 
@@ -322,7 +322,7 @@ export class TaskStoreService extends BehaviorSubject<DataStateChangeEventArgs> 
 }
 ```
 
-## Sorting and filtering with Observable binding
+## Sorting and filtering with observable binding
 
 The Gantt Chart supports sorting and filtering with Observable data binding, triggering the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#datastatechange) event for custom or server-side processing. The `dataStateChange` event provides a state object with sorting and filtering details, which must be handled in the service layer to apply the required operations.
 

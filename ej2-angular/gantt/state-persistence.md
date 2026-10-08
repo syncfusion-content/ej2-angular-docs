@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports state management to retain its configuration and data after a browser refresh during the same session.
 
-To enable this, set the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) property to **true**. Once enabled, the component saves its state in the browser’s [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#) and restores it automatically after page reloads.
+To enable this, set the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) property to **true**. Once enabled, the component saves its state in the browser’s [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) and restores it automatically after page reloads.
 
 ## Restore initial Gantt state
 
@@ -133,7 +133,7 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/ga
   
 {% previewsample "page.domainurl/samples/gantt/column-prevent/default-cs1" %}
 
-### Persist the header template and header Text
+### Persist the header template and header text
 
 By default, properties such as column template, header text, header template, formatter, and value accessor are not persisted when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true**, as these are defined at the application level.
 

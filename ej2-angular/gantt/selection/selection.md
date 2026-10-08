@@ -18,8 +18,8 @@ To enable selection functionality, inject the [SelectionService](https://ej2.syn
 
 The Gantt Chart component supports two types of selection that can be set by using the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) property. They are:
 
-* **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
-* **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
+- **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
+- **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
 
 The following video demonstrates how selection works in the Angular Gantt Chart:
 
@@ -27,11 +27,11 @@ The following video demonstrates how selection works in the Angular Gantt Chart:
 
 ## Selection mode
 
-The Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) property: 
+The Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) property:
 
-* **Row:** Allows selection of rows only. This is the default mode.
-* **Cell:** Allows selection of cells only.
-* **Both:** Allows selection of both rows and cells at the same time.
+- **Row:** Allows selection of rows only. This is the default mode.
+- **Cell:** Allows selection of cells only.
+- **Both:** Allows selection of both rows and cells at the same time.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,7 +42,7 @@ The Gantt Chart component supports three types of selection modes, which can be 
 {% include code-snippet/gantt/selection/bothcellrow-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/selection/bothcellrow-cs1" %}
 
 ## Toggle selection
@@ -60,12 +60,40 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 {% include code-snippet/gantt/selection/toggleselection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/selection/toggleselection-cs1" %}
+
+## Hierarchy checkbox selection mode
+
+The hierarchy checkbox selection feature selects or deselects parent and child records through checkboxes. Set the [hierarchyCheckboxMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#hierarchycheckboxmode) property and define a dedicated column with the field name **CheckBox**.
+
+The supported modes are:
+
+- **Self**: Selecting a record affects only that record.
+- **Hierarchy**: Selecting a record selects its descendants and updates its parent selection state. This is the default mode.
+- **FilteredHierarchy**: Selection propagates only to records currently visible after filtering or searching.
+
+The following example demonstrates how to configure the hierarchy checkbox mode and switch between the supported modes at run time:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/selection/hierarchy-selection-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/selection/hierarchy-selection-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="data.ts" %}
+{% include code-snippet/gantt/selection/hierarchy-selection-cs1/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/gantt/selection/hierarchy-selection-cs1" %}
 
 ## Persist selection
 
-Persist Selection retains selected tasks even after performing actions such as sorting, filtering, or refreshing the data. To enable this, set `selectionSettings.persistSelection` to **true**.  
+Persist Selection retains selected tasks even after performing actions such as sorting, filtering, or refreshing the data. To enable this, set `selectionSettings.persistSelection` to **true**.
 
 > Cell selection is not supported by the persistence feature.
 
@@ -78,7 +106,7 @@ Persist Selection retains selected tasks even after performing actions such as s
 {% include code-snippet/gantt/selection/persistselection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/selection/persistselection-cs1" %}
 
 ## Hover highlighting
@@ -98,7 +126,7 @@ The following code example shows how to enable the hover highlighting in Gantt.
 {% include code-snippet/gantt/selection/selection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/selection/selection-cs1" %}
 
 ## Clear selection
@@ -114,7 +142,7 @@ To clear selected rows and cells in the Gantt Chart component, use the [clearSel
 {% include code-snippet/gantt/selection/clearselection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/gantt/selection/clearselection-cs1" %}
 
 ## Touch interaction

@@ -22,8 +22,8 @@ The following built-in column menu items are available:
 | SortDescending  | Sorts the column in descending order.        |
 | AutoFit         | Adjusts the width of the current column.     |
 | AutoFitAll      | Adjusts the width of all columns.            |
-| ColumnChooser   | Allows toggling column visibility .          |
-| Filter          | Displays filter options based on [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#type).  |
+| ColumnChooser   | Allows toggling column visibility.          |
+| Filter          | Displays filter UI options. Filter type is determined by [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#type) property, which accepts **'Menu'** (default) or **'Excel'** filter UI.  |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,9 +88,9 @@ The following example demonstrates hiding the **Filter** item when the column me
 
 ## Render nested column menu items
 
-Extend the column menu in Gantt Chart component by adding nested items using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuitems) property. This property accepts an array of built-in item names or custom objects to define additional actions.
+Extend the column menu in Gantt Chart component by adding nested items using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuitems) property. Nested menus allow you to group related menu items in expandable submenus. This property accepts an array of built-in item names or custom objects (with `items` array) to define additional actions and submenus.
 
-The following example demonstrates how to configure `columnMenuItems` to include a nested menu.
+The following example demonstrates how to configure `columnMenuItems` to include a nested submenu with child items. When a user hovers over an item with nested children, a submenu expands to show additional options.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -112,7 +112,14 @@ Customize the default column menu icon in Gantt Chart component by overriding th
 
 To customize the column menu icon, follow these steps:
 
-**1.** Add custom CSS to override the default icon:
+**1.** Import the required icon stylesheets to provide the icon font glyphs. Choose one based on your design system (e.g., Tailwind3 or Bootstrap5):
+
+```html
+<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/tailwind3.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
+```
+
+**2.** Add custom CSS to override the default icon with a Unicode character or custom icon:
 
 ```css
 .e-gantt .e-columnheader .e-icons.e-columnmenu::before {
@@ -120,12 +127,7 @@ To customize the column menu icon, follow these steps:
 }
 ```
 
-**2.** Import the required icon stylesheets (e.g., Tailwind3 or Bootstrap5):
-
-```html
-<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/tailwind3.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
-```
+> The icon stylesheets (Tailwind3, Bootstrap5, etc.) provide the icon glyph definitions. Without importing a stylesheet, custom Unicode characters may not display correctly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

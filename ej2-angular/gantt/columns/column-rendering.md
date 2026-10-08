@@ -13,7 +13,6 @@ domainurl: ##DomainURL##
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 
 > * If the `field` is not defined in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource), the column will display empty values.
-> * A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
 > * To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
 
 ## Define columns manually 
@@ -97,7 +96,7 @@ In the following example, `percentageFormatter` returns the progress value with 
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnrender-cs6" %}
 
-> The `valueAccessor` function may impact performance when used with large datasets or complex logic. To improve rendering speed, enable the virtualization feature so that only visible rows are processed and displayed.
+> The `valueAccessor` function may impact performance when used with large datasets or complex logic. To improve rendering speed, enable the [virtualization](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablevirtualization) feature so that only visible rows are processed and displayed. Set `enableVirtualization: true` in your Gantt configuration.
 
 ### Display array type columns
 
@@ -119,7 +118,7 @@ In the following example, the **Name** column shows the combined value of **Firs
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnrender-cs3" %}
 
->Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
+>Since customized values are displayed in the **Name** column, data operations such as sorting and filtering cannot be performed for this column. **Workaround:** If you need sorting/filtering, keep the base field column separate (sortable) and use this column for display only. Alternatively, implement server-side sorting/filtering on the base fields.
 
 ### Expression column
 
@@ -141,11 +140,11 @@ In the following example, the chart includes columns like **TaskID**, **TaskName
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnrender-cs4" %}
 
-> Since custom values are displayed in the **Total Price** column, operations like sorting and filtering are not supported for this column.
+> Since custom computed values are displayed in the **Total Price** column, sorting and filtering are not supported for this column. **Workaround:** Store the computed value in your data source if sorting/filtering is required, or implement these operations on the base fields (**units** and **unit price**).
 
 ### Display serial number
 
-You can display serial numbers for each row in the Gantt Chart component using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. This event triggers when data is bound to each row, allowing you to assign and display a serial number directly in the column.
+You can display serial numbers for each row in the Gantt Chart component using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdatabound) event. This event fires when data is bound to each row during initial render and during any data refresh. Use this event handler to assign and display a serial number for each visible row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

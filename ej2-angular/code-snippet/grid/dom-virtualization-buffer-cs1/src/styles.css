@@ -1,3 +1,6 @@
+@import 'node_modules/@syncfusion/ej2-material3-theme/styles/slider/index.css';
+@import 'node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css';
+
 .e-grid .e-row {
     line-height: 40px;
 }

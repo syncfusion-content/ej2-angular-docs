@@ -2,7 +2,7 @@ import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { Component, OnInit, ViewEncapsulation, } from '@angular/core';
 import { NgClass } from '@angular/common';
-import { TreeGridAllModule, DomVirtualizationService, SortService } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridModule, DomVirtualizationService, SortService } from '@syncfusion/ej2-angular-treegrid';
 import { domVirtualizationData, domVirtualizationDataSource } from './datasource';
 
 @Component({

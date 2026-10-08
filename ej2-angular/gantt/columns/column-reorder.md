@@ -29,12 +29,14 @@ To enable column reordering, set the [allowReordering](https://ej2.syncfusion.co
 {% previewsample "page.domainurl/samples/gantt/columns/columnreorder-cs1" %}
 
 > * You can modify the appearance of column headers during drag-and-drop using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrop) events.
-> * After columns are reordered, their data positions also change. Ensure any dependent logic is updated to reflect the new column order.
+> * After columns are reordered, the visual column index changes but field names remain the same. If your logic references column indices (e.g., `gantt.treeGrid.columns[0]`), update those references after reordering.
 > * You can disable the reordering of a particular column by setting the `allowReordering` property to **false**.
 
 ## Disable column reordering for specific columns
 
-In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, columns are reordered by default. To restrict reordering for a specific column, set its [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property to **false**.  
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, when [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowreordering) is enabled globally, you can restrict reordering for individual columns by setting their [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property to **false**.
+
+> Column-level `allowReordering: false` only works when global `allowReordering` is **true**; if global reordering is disabled, all columns cannot be reordered regardless of column-level settings.
 
 The following example demonstrates how reordering is restricted for the **TaskName** column.
 
@@ -56,11 +58,13 @@ The following example demonstrates how reordering is restricted for the **TaskNa
 
 You can programmatically reorder columns in Angular Gantt Chart component using available methods based on field names, index, or target index.  
 
-> To perform external column reordering, the column's [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property must be enabled.
+> To perform programmatic column reordering, the global [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowreordering) property must be enabled and the target column's [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property must not be set to **false**.
 
 ### Reorder columns using field names
 
-You can reorder columns in the Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#reordercolumns) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
+**Use this method when:** You have the field names of columns you want to reorder and prefer a readable, semantic approach.
+
+You can reorder columns in the Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#reordercolumns) method on the gantt instance. This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
 
 - **fromFName**: The field name of the column to move.  
 - **toFName**: The field name of the target column position.
@@ -83,10 +87,12 @@ The following demonstrates how to reorder columns by placing **TaskName** to pos
 
 ### Reorder columns using column index
 
-You can reorder columns in the Gantt Chart component using the [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbyindex) method of the grid object. This method repositions a column based on its current index and takes two parameters:
+**Use this method when:** You need to swap or move columns by their numeric position in the grid, or you're implementing UI controls that work with column positions.
 
-- **fromIndex**: Index of the column to move.  
-- **toIndex**: Target index to place the column.
+You can reorder columns in the Gantt Chart component using the [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbyindex) method on `gantt.treeGrid` object. This method repositions a column based on its current index and takes two parameters:
+
+- **fromIndex**: Index of the column to move (zero-based).  
+- **toIndex**: Target index where the column should be placed (zero-based).
 
 The following demonstrates how to reorder the column at index **1** to position **3**.
 
@@ -106,12 +112,14 @@ The following demonstrates how to reorder the column at index **1** to position 
 
 ### Reorder columns using target index
 
-You can reorder single or multiple columns in the Gantt Chart component using the [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbytargetindex) method of the grid object.  This method reorders columns based on their field names and the target index. It takes two parameters:  
-  
-- **fieldName**: The field name of the column to move. 
-- **toIndex**: The index where the column should be placed.
+**Use this method when:** You want to move multiple columns to a specific position using their field names, combining the semantic clarity of field names with positional control.
 
-The following demonstrates how to reorder a single column **TaskID** to index **3**, or move multiple columns **TaskID**, **TaskName** to index **3**.
+You can reorder single or multiple columns in the Gantt Chart component using the [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbytargetindex) method on `gantt.treeGrid` object. This method reorders columns based on their field names and the target index. It takes two parameters:  
+  
+- **fieldName**: The field name (or array of field names for multiple columns) of the column(s) to move. 
+- **toIndex**: The zero-based index where the column(s) should be placed.
+
+The following demonstrates how to reorder a single column **TaskID** to index **3**, or move multiple columns **TaskID** and **TaskName** together to index **3** (pass an array of field names: `['TaskID', 'TaskName']`).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

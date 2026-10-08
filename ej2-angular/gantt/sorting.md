@@ -89,7 +89,7 @@ You can externally remove sorting from a specific column in the Angular Gantt Ch
 
 ### Clear sorting
 
-You can clear all sorted columns in the Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to reset the Gantt Chart to its unsorted state.
+You can clear all sorted columns in the Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to remove all applied sorting and restore the default unsorted state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -224,6 +224,6 @@ By default, clicking a column header switches the sort order between ascending, 
 
 ## Touch interaction
 
-To perform a tap action on a column header in the Angular Gantt Chart component, the [sorting](sorting#sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
+To perform a tap action on a column header in the Angular Gantt Chart component, the [sorting](/ej2-angular/gantt/sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
 
 ![Multiple Sorting](images/multiple-sorting.png)

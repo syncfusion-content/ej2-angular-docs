@@ -397,6 +397,11 @@ License: "SEE LICENSE IN license"
 
 
 --------------------------------------------------------------------------------
+Package: @syncfusion/ej2-material3-theme
+License: "SEE LICENSE IN license"
+
+
+--------------------------------------------------------------------------------
 Package: zone.js
 License: "MIT"
 

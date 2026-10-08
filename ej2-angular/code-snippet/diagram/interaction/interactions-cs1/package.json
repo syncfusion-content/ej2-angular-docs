@@ -21,6 +21,7 @@
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-diagrams": "^27.1.52",
     "@syncfusion/ej2-diagrams": "*",
+    "@syncfusion/ej2-material3-theme": "*",
     "moment": "2.29.4",
     "rxjs": "7.8.0",
     "tslib": "2.3.0",

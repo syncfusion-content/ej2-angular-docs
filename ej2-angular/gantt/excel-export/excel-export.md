@@ -10,9 +10,27 @@ domainurl: ##DomainURL##
 
 # Excel Export in Angular Gantt Chart Component
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
- 
-To enable Excel or CSV export functionality, set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowexcelexport) property to **true** and inject the `ExcelExportService` into the component's `providers` array. 
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.
+
+## Enable Excel export functionality
+
+To enable Excel or CSV export functionality, set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowexcelexport) property to **true** and inject the `ExcelExportService` into the component's `providers` array.
+
+First, import `ExcelExportService` from the Syncfusion library:
+
+```typescript
+import { ExcelExportService } from '@syncfusion/ej2-gantt';
+```
+
+Then, add it to the component's `providers` array:
+
+```typescript
+@Component({
+  selector: 'app-gantt',
+  templateUrl: './app.component.html',
+  providers: [ExcelExportService]
+})
+``` 
 
 You can trigger export operations using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#csvexport) methods, typically within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event.
 
@@ -52,7 +70,7 @@ You can bind a custom data source for Excel or CSV export in the Angular Gantt C
   
 {% previewsample "page.domainurl/samples/gantt/excel-export/customData-cs1" %}
 
-## Exporting with cell and row spanning
+## Export with cell and row spanning
 
 To export merged cells and rows in Excel or CSV files using the Angular Gantt Chart component, handle the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#excelquerycellinfo) event and apply `rowSpan` and `colSpan` during the export process. The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event can be used to customize cell rendering within the Gantt view.
  
@@ -158,7 +176,7 @@ To export each Gantt to a separate worksheet, set [multipleExport.type](https://
   
 {% previewsample "page.domainurl/samples/gantt/excel-export/newSheet-cs1" %}
 
-## Export Gantt data as a Blob
+## Export gantt data as a blob
 
 To export Gantt data as a Blob object for advanced processing or custom download workflows, set the `isBlob` parameter to **true** in the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#csvexport) method. Use the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#excelexportcomplete) event to access the Blob and implement custom logic.
 

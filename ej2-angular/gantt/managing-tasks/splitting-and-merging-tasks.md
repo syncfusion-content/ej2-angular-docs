@@ -43,7 +43,7 @@ Merge split tasks using the context menu’s **Merge Task** option, requiring [e
 
 ## Get the clicked segment information
 
-You can get the clicked segment information using the [onTaskbarClick](https://helpej2.syncfusion.com/angular/documentation/gantt/events#ontaskbarclick) event.
+You can get the clicked segment information using the [onTaskbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#ontaskbarclick) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -58,7 +58,7 @@ You can get the clicked segment information using the [onTaskbarClick](https://h
 ## Limitations of Split tasks
 
 1. Parent and milestone tasks cannot be split into segments.
-2. The task must have a width greater than the timeline unit cell in order to be split.
+2. The task must have a width greater than the timeline unit cell to be split.
 3. Split task is not supported with `Multi taskbar`.
 
 ## See also

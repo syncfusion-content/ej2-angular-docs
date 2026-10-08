@@ -213,6 +213,12 @@ import { GanttModule, IGanttData } from "@syncfusion/ej2-angular-gantt";
           style="border-style:solid;height:100%;border-top-right-radius:0px;border-bottom-right-radius:0px;"
           [style.width.px]="calculateProgressWidth(data)"
         ></div>
+        <div class="e-notification-badge-container">
+          <span
+            class="e-badge e-badge-secondary e-badge-notification e-badge-overlap"
+            >{{ data.ganttProperties.progress }}%</span
+          >
+        </div>
       </div>
     </ng-template>`,
 })
@@ -390,7 +396,7 @@ Tooltips display on hover, with touch-and-hold support for mobile via the toolti
 
 ### Disable taskbar tooltip
 
-You can disable the taskbar tooltip using the [beforeTooltipRender](https://helpej2.syncfusion.com/angular/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
+You can disable the taskbar tooltip using the [beforeTooltipRender](https://ej2.syncfusion.com/angular/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
