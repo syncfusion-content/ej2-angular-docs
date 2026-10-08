@@ -42,6 +42,24 @@ The following example demonstrates dynamically changing the height of the rows u
 > * It applies the specified height to all rows in the grid, including header and footer rows.
 > *	Row-specific height customization requires the `rowDataBound` event approach.
 
+### Customize header and footer row heights
+
+The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the [headerRowHeight](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#headerrowheight) property to set the height of the header row and the [footerRowHeight](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#footerrowheight) property to set the height of the footer row.
+
+In the following example, the row height is configured to "100px" using the `rowHeight` property, and the header and footer row heights are configured to "50px" using the `headerRowHeight` and `footerRowHeight` properties.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-header-footer-height-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-header-footer-height-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/custom-header-footer-height-cs1" %}
+
 ### Customize specific row height
 
 The row height for a particular row can be customized when displaying more content in a particular row, reducing the height of a row to fit content, or making a specific row stand out from the other rows in the grid. This can be achieved by using the [rowHeight](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#rowheight) property of the Data Grid component along with the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#rowdatabound) event. This event triggers every time a request is made to access row information, element, or data, and before the row element is appended to the grid element.
@@ -106,6 +124,42 @@ Here's an example that demonstrates retrieving the row information when hovering
 {% previewsample "page.domainurl/samples/grid/row-hover-info-cs1" %}
 
 > The `getRowInfo` method requires execution within the `rowDataBound` event context for proper functionality.
+
+## Empty record mode
+
+The `emptyRecordMode` property determines how the empty record row is displayed when the Grid has no records. It supports two modes: `Sticky`, which keeps the empty record row visible during scrolling, and `Normal`, which allows the empty record row to scroll along with the Grid content.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/empty-record-mode/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/empty-record-mode/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/empty-record-mode" %}
+
+## Row Number in Data Grid
+
+The Angular Data Grid provides built-in support for displaying row numbers through a dedicated row number column. This column displays the position of each record in the current view and is automatically maintained by the Grid.
+
+To display row numbers, set the [columns->type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) property to `RowNumber`. This creates a read-only column for displaying row numbers, eliminating the need to include a separate row number field in the data source.
+
+The Grid automatically updates row numbers when operations such as paging, sorting, filtering, and grouping are performed. This ensures that the displayed row numbers always reflect the current view and order of the records.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/rownumber/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/rownumber/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid/rownumber" %}
 
 ## Frozen rows
 

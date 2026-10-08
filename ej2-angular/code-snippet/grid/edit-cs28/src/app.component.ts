@@ -14,6 +14,7 @@ import { EditService, EditSettingsModel, GridComponent, GridModule, ToolbarServi
         <button ejs-button id='delete' (click)='clickEvents($event)'>Delete</button>
         <button ejs-button id='updaterow' (click)='clickEvents($event)'>Update Row</button>
         <button ejs-button id='updatecell' (click)='clickEvents($event)'>Update cell</button>
+        <button ejs-button id='save' (click)='clickEvents($event)'>Save Bulk Changes</button>
         <div class="control-section"  style="padding-top:20px">
             <ejs-grid #grid id="Grid" [dataSource]='data' [editSettings]='editSettings' height='273'>
                 <e-columns>
@@ -65,9 +66,12 @@ export class AppComponent implements OnInit {
         {
             (this.grid as GridComponent).updateRow(0, {OrderID:10248,CustomerID: 'RTER', ShipCity: 'America', ShipName: 'Hanari'});
         }
-        else
+        else if((args.target as HTMLElement).id==='updatecell')
         {
             (this.grid as GridComponent).setCellValue(((this.grid as GridComponent).currentViewData[0] as  columnDataType).OrderID,'CustomerID','Value Changed'); 
+        }
+        else {
+            (this.grid as GridComponent).saveBulkChanges({ ShipName: 'Island Trading', ShipCity: 'Tokyo' }, (this.grid as GridComponent).getCurrentViewRecords().slice(0, 3), () => { (this.grid as GridComponent).refresh(); });
         }
     }
     generateCustomerId(): string {
