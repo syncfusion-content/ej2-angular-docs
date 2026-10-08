@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
     public toolbar?: ToolbarItems[];
     public filterSettings?: FilterSettingsModel;
     @ViewChild('grid')
-    public grid?: GridComponent;
+    public grid!: GridComponent;
 
     ngOnInit(): void {
         this.data = billingData;
@@ -51,14 +51,14 @@ export class AppComponent implements OnInit {
         this.filterSettings = { type: 'CheckBox' };
     }
 
-    actionComplete(args: SaveEventArgs) {
+    actionComplete(args: any) {
         if (args.action === 'edit' && args.requestType === 'save' && (args.columnName === 'Quantity' || args.columnName === 'Price')) {
             var total = args.data.Quantity * args.data.Price;
             this.grid.updateCell(args.index, "Total", total);
         }
     }
 
-    actionBegin(args: EditEventArgs) {
+    actionBegin(args: any) {
         if (args.requestType === 'beginEdit' && args.columnName === 'Total') {
             args.cancel = true;
         }

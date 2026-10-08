@@ -46,8 +46,8 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
     }
     created = () => {
-        (this.grid as GridComponent).getContentTable().addEventListener('click', (args) => {
-            if ((args.target as HTMLElement).classList.contains('e-rowcell')) {
+        (this.grid as GridComponent).getContentTable().addEventListener('click', (args:any) => {
+            if (args.target && (args.target as HTMLElement).classList.contains('e-rowcell')) {
                 (this.grid as GridComponent).editModule.editCell(args.target.closest('tr').rowIndex,
                     (this.grid as GridComponent).getColumnByIndex(parseInt((args.target as HTMLElement).getAttribute('aria-colindex') as string) - 1).field);
             }

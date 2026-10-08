@@ -326,11 +326,6 @@ License: "SEE LICENSE IN license"
 
 
 --------------------------------------------------------------------------------
-Package: @syncfusion/ej2-splitbuttons
-License: "SEE LICENSE IN license"
-
-
---------------------------------------------------------------------------------
 Package: @syncfusion/ej2-inputs
 License: "SEE LICENSE IN license"
 
@@ -398,6 +393,11 @@ THE SOFTWARE.
 
 --------------------------------------------------------------------------------
 Package: @syncfusion/ej2-angular-inputs
+License: "SEE LICENSE IN license"
+
+
+--------------------------------------------------------------------------------
+Package: @syncfusion/ej2-material3-theme
 License: "SEE LICENSE IN license"
 
 
