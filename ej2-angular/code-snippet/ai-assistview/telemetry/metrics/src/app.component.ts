@@ -8,7 +8,7 @@ import { AIAssistViewModule, AIAssistViewComponent, PromptRequestEventArgs, Tele
     template: `
         <ejs-aiassistview
             #telemetryAIAssistView
-            id="aiAssistView"
+            id="banner"
             [promptSuggestions]="promptSuggestions"
             [telemetrySettings]="telemetrySettings"
             (promptRequest)="onPromptRequest($event)">
@@ -51,11 +51,7 @@ export class App {
             };
             if (this.telemetryAIAssistView) {
                 this.telemetryAIAssistView.addPromptResponse(defaultResponse, true, telemetryData);
-                this.telemetryAIAssistView.promptSuggestions = [
-                    'Explain the basics of quantum computing.',
-                    'Suggest a healthy dinner recipe for tonight.',
-                    'How do I improve my public speaking skills?'
-                ];
+                this.telemetryAIAssistView.promptSuggestions = [...this.promptSuggestions];
             }
         }, 1000);
     };
