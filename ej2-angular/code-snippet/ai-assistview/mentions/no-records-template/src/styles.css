@@ -1,8 +1,8 @@
-#loader {
-  color: #008cff;
-  height: 40px;
-  width: 30%;
-  position: absolute;
-  top: 45%;
-  left: 45%;
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/ai-assistview/index.css';
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/drop-down-list/index.css';
+
+#wrapper {
+  height: 350px;
+  width: 650px;
+  margin: 0 auto;
 }

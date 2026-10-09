@@ -29,6 +29,7 @@
     "@syncfusion/ej2-popups": "*",
     "@syncfusion/ej2-dropdowns": "*",
     "@syncfusion/ej2-layouts": "*",
+    "@syncfusion/ej2-tailwind3-theme": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",

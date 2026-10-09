@@ -44,8 +44,9 @@ Before proceeding, click the **+** icon in the tab bar and select **Shell** from
 
 ![Shell tab in Replit](./images/replit-shell-tab.png)
 
-{% tabs %}
-{% highlight bash tabtitle="Agent Skills" %}
+{% tabcontents %}
+
+{% tabcontent Agent Skills %}
 
 Use the pre-installed Syncfusion® Angular Grid skills with the Replit Agent to generate the application code automatically.
 
@@ -89,8 +90,9 @@ Once the agent finishes generating the application code, it automatically starts
 
 ![App in Replit](./images/replit-app.png)
 
-{% endhighlight %}
-{% highlight bash tabtitle="Angular CLI" %}
+{% endtabcontent %}
+
+{% tabcontent Vite CLI %}
 
 Create the Angular application manually using the Vite CLI and add the Syncfusion® Angular Grid component step by step.
 
@@ -220,8 +222,9 @@ bootstrapApplication(AppComponent);
 
 > **Note:** Replace `YOUR_LICENSE_KEY` with your actual license key. The license key must be registered before any Syncfusion component is initialized to avoid the license warning banner. For more information, see [License Key Registration](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration).
 
-{% endhighlight %}
-{% endtabs %}
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ## Run the application
 

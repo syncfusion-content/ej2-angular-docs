@@ -24,7 +24,7 @@ The `.e-gantt` class is the root container for the entire Angular Gantt Chart. C
 
 Properties such as `font-family`, `background-color`, and spacing-related styles can be adjusted to align with the Gantt design.
 
-![Customizing root element](../images/gantt-chart-root-element.png)
+![Customizing root element](./images/gantt-chart-root-element.png)
 
 This customization applies a cursive font to the Angular Gantt Chart content. Additional styling can be applied to rows, alternate rows, selected rows, and hover states. Avoid using `!important` for hover styles in production environments. Instead, increase selector specificity to maintain consistent styling control.
 
@@ -51,7 +51,7 @@ The grid header in the Angular Gantt Chart contains column headers and table str
 
 Properties such as `background-color`, `border`, `font-weight`, and `padding` can be adjusted to align with the Gantt design.
 
-![Customizing header](../images/gantt-header.png)
+![Customizing header](./images/gantt-header.png)
 
 ### Customizing grid content and rows
 
@@ -79,7 +79,7 @@ Style the grid content area that displays task data in a tabular format. Use the
 
 Properties such as `background-color`, `border`, `font-weight`, and `padding` can be adjusted to align with the Gantt design.
 
-![Customizing grid content](../images/grid-content.png)
+![Customizing grid content](./images/grid-content.png)
 
 ## Styling the chart section
 
@@ -102,7 +102,7 @@ The chart content displays taskbars and the timeline visualization. Apply CSS to
 
 Properties such as `background-color`, `border`, and `height` can be adjusted to align with the Gantt design.
 
-![Customizing chart content](../images/gantt-chart-content.png)
+![Customizing chart content](./images/gantt-chart-content.png)
 
 ### Customizing timeline headers and date display
 
@@ -124,7 +124,7 @@ The timeline displays date information and task scheduling. Style the timeline h
 
 Properties such as `background-color`, `border`, `font-weight`, and `padding` can be adjusted to align with the Gantt design.
 
-![Customizing timeline](../images/gantt-timeline.png)
+![Customizing timeline](./images/gantt-timeline.png)
 
 ### Customizing taskbars and progress indicators
 
@@ -177,7 +177,7 @@ The taskbar represents tasks visually on the timeline. Customize parent taskbars
 
 Properties such as `background-color`, `border`, `height`, and `border-radius` can be adjusted to align with the Gantt design.
 
-![Customizing taskbar](../images/gantt-taskbar.png)
+![Customizing taskbar](./images/gantt-taskbar.png)
 
 ### Customizing baseline bars and milestones
 
@@ -195,7 +195,7 @@ The baseline in the Angular Gantt Chart represents planned task schedules for co
 
 Properties such as `background-color` and `height` can be adjusted to align with the Gantt design.
 
-![Customizing baseline](../images/gantt-baseline.png)
+![Customizing baseline](./images/gantt-baseline.png)
 
 ### Customizing connector lines for task dependencies
 
@@ -213,7 +213,7 @@ The connector lines in the Angular Gantt Chart show dependencies between tasks. 
 
 Properties such as `stroke`, `stroke-width`, and `fill` can be adjusted to align with the Gantt design.
 
-![Customizing connector lines](../images/gantt-connector-lines.png)
+![Customizing connector lines](./images/gantt-connector-lines.png)
 
 ### Customizing splitter and resize handlers
 
@@ -242,7 +242,7 @@ The splitter divides the grid and chart sections, while resize handlers allow us
 
 Properties such as `background-color`, `border`, `width`, `height`, and `border-radius` can be adjusted to align with the Gantt design.
 
-![Customizing splitter](../images/gantt-splitter.png)
+![Customizing splitter](./images/gantt-splitter.png)
 
 This customization applies a light blue background to the split bar and styles the resize handler with a circular appearance. Additional styling can be applied to arrow icons and hover states. Avoid using `!important` for hover styles in production environments. Instead, increase selector specificity to maintain consistent styling control.
 
@@ -271,7 +271,7 @@ The labels in the Angular Gantt Chart display task information on the taskbars. 
 
 Properties such as `color`, `font-weight`, `font-size`, `background-color`, and `padding` can be adjusted to align with the Gantt design.
 
-![Customizing labels](../images/gantt-labels.png)
+![Customizing labels](./images/gantt-labels.png)
 
 ### Customizing event markers and timeline indicators
 
@@ -290,7 +290,7 @@ The event markers in the Angular Gantt Chart highlight important dates or milest
 
 Properties such as `border-left-color`, `background-color`, `color`, and `font-weight` can be adjusted to align with the Gantt design.
 
-![Customizing event markers](../images/gantt-event-markers.png)
+![Customizing event markers](./images/gantt-event-markers.png)
 
 ### Customizing tooltip content and appearance
 
@@ -312,7 +312,7 @@ The tooltip in the Angular Gantt Chart displays detailed information when hoveri
 
 Properties such as `background-color`, `color`, `border`, `border-radius`, and `padding` can be adjusted to align with the Gantt design.
 
-![Customizing tooltip](../images/gantt-tooltip.png)
+![Customizing tooltip](./images/gantt-tooltip.png)
   
 ## Complete code example with CSS customization
 
@@ -334,7 +334,7 @@ Below is a complete example demonstrating how to customize multiple aspects of t
 
 {% previewsample "page.domainurl/samples/gantt/style-appearance-cs1" %}
 
-![style and appearance](../images/style-and-appearance.png)
+![style and appearance](./images/style-and-appearance.png)
 
 ## Configuring grid lines in the Angular Gantt Chart
 

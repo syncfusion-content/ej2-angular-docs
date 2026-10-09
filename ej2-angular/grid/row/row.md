@@ -139,7 +139,7 @@ The `emptyRecordMode` property determines how the empty record row is displayed 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/empty-record-mode" %}
+{% previewsample "page.domainurl/samples/grid/empty-record-mode" %}
 
 ## Row Number in Data Grid
 
@@ -159,7 +159,7 @@ The Grid automatically updates row numbers when operations such as paging, sorti
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid/rownumber" %}
+{% previewsample "page.domainurl/samples/grid/rownumber" %}
 
 ## Frozen rows
 

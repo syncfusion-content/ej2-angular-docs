@@ -3,11 +3,9 @@
     <div id="transcriptDisplay" class="transcript-display">Waiting for speech input...</div>
     <button id="aiAssistBtn" class="e-btn e-primary" (click)="onClick()">AI Assist</button>
     <div id="editableText" contenteditable="true" class="editable-text">
-        <p>This sample wires up speech-to-text lifecycle events: onStart, onStop, transcriptChanged, and onError.
-           Watch the recording status badge and transcript panel update in real time as you speak.</p>
-    </div>
-    <div id="errorMessage" class="error-message" style="display: none;">
-        <span class="error-text">Error occurred</span>
+        <p>This sample demonstrates configuring speech recognition language (en-US),
+           enabling interim results for real-time transcription, and customizing the
+           microphone button's appearance using buttonSettings.</p>
     </div>
     <ejs-inlineaiassist id="defaultInlineAssist" #inlineAssistComponent
         [relateTo]="'#aiAssistBtn'"

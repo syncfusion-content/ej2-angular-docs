@@ -1,0 +1,35 @@
+{
+  "name": "syncfusion-component",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "21.2.22",
+    "@angular/common": "21.2.22",
+    "@angular/compiler": "21.2.22",
+    "@angular/core": "21.2.22",
+    "@angular/forms": "21.2.22",
+    "@angular/platform-browser": "21.2.22",
+    "@angular/platform-browser-dynamic": "21.2.22",
+    "@angular/router": "21.2.22",
+    "@syncfusion/ej2-angular-interactive-chat": "*",
+    "@syncfusion/ej2-interactive-chat": "*",
+    "@syncfusion/ej2-fluent2-theme": "*",
+    "@syncfusion/ej2-tailwind3-theme": "*",
+    "rxjs": "7.8.0",
+    "tslib": "2.3.0",
+    "zone.js": "0.16.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "17.3.0",
+    "@angular/cli": "17.3.0",
+    "@angular/compiler-cli": "17.3.0",
+    "typescript": "5.3.3"
+  }
+}
