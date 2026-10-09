@@ -21,6 +21,7 @@
     "@syncfusion/ej2-angular-interactive-chat": "*",
     "@syncfusion/ej2-data": "*",
     "@syncfusion/ej2-interactive-chat": "*",
+    "@syncfusion/ej2-tailwind3-theme": "*",
     "rxjs": "7.8.0",
     "tslib": "2.3.0",
     "zone.js": "0.16.0"

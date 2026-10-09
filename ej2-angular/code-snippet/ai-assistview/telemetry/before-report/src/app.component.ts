@@ -8,7 +8,7 @@ import { AIAssistViewModule, AIAssistViewComponent, PromptRequestEventArgs, Tele
     template: `
     <div ejs-aiassistview
         #telemetryAIAssistView
-        id="aiAssistView"
+        id="banner"
         [promptSuggestions]="promptSuggestions"
         [telemetrySettings]="telemetrySettings"
         (promptRequest)="onPromptRequest($event)">
@@ -27,8 +27,7 @@ export class AppComponent {
 
     public promptSuggestions: string[] = [
         'Explain the basics of quantum computing.',
-        'Suggest a healthy dinner recipe for tonight.',
-        'How do I improve my public speaking skills?'
+        'Suggest a healthy dinner recipe for tonight.'
     ];
     public telemetrySettings: TelemetrySettingsModel = {
         enable: true,
@@ -48,11 +47,6 @@ export class AppComponent {
             const defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
             if (this.telemetryAIAssistView) {
                 this.telemetryAIAssistView.addPromptResponse(defaultResponse, true);
-                this.telemetryAIAssistView.promptSuggestions = [
-                    'Explain the basics of quantum computing.',
-                    'Suggest a healthy dinner recipe for tonight.',
-                    'How do I improve my public speaking skills?'
-                ];
             }
         }, 1000);
     };

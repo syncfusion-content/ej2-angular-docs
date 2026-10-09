@@ -1,19 +1,22 @@
-@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
-@import 'node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-tailwind3-theme/styles/ai-assistview/index.css';
+@import 'node_modules/@syncfusion/ej2-tailwind3-theme/styles/tooltip/index.css';
 
 #wrapper {
-  height: 600px;
-  width: 60vw;
+  height: 350px;
+  width: 650px;
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 750px) {
-  #wrapper {
-    width: 100%;
-  }
+#banner .e-view-container {
+  margin: auto;
+}
+#banner .e-banner-view {
+  margin-left: 0;
+}
+.banner-content .e-assistview-icon:before {
+  font-size: 35px;
+}
+
+#banner .banner-content {
+  text-align: center;
 }

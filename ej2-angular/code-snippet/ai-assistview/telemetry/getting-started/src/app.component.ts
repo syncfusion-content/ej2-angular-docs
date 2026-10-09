@@ -8,7 +8,7 @@ import { AIAssistViewModule, AIAssistViewComponent, PromptRequestEventArgs, Tool
     template: `
     <div ejs-aiassistview
         #telemetryAIAssistView
-        id="aiAssistView"
+        id="banner"
         [promptSuggestions]="promptSuggestions"
         [enableStreaming]="enableStreaming"
         [toolbarSettings]="toolbarSettings"
@@ -38,11 +38,7 @@ export class AppComponent {
         itemClicked: () => {
             if (this.telemetryAIAssistView) {
                 this.telemetryAIAssistView.prompts = [];
-                this.telemetryAIAssistView.promptSuggestions = [
-                    'Explain the basics of quantum computing.',
-                    'Suggest a healthy dinner recipe for tonight.',
-                    'How do I improve my public speaking skills?'
-                ];
+                this.telemetryAIAssistView.promptSuggestions = [...this.promptSuggestions];
             }
         }
     };
@@ -53,11 +49,7 @@ export class AppComponent {
             const defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service and pass usage data through the addPromptResponse third parameter to populate the telemetry report.';
             if (this.telemetryAIAssistView) {
                 this.telemetryAIAssistView.addPromptResponse(defaultResponse, true);
-                this.telemetryAIAssistView.promptSuggestions = [
-                    'Explain the basics of quantum computing.',
-                    'Suggest a healthy dinner recipe for tonight.',
-                    'How do I improve my public speaking skills?'
-                ];
+                this.telemetryAIAssistView.promptSuggestions = [...this.promptSuggestions];
             }
         }, 1000);
     };
