@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion A2UI Overview
+# Syncfusion Angular A2UI Overview
 
 The [Syncfusion A2UI for Angular package](https://www.npmjs.com/package/@syncfusion/ej2-angular-a2ui) bridges the [A2UI v0.9](https://a2ui.org/specification/v0.9-a2ui/) agent-to-UI protocol with Syncfusion's production-grade EJ2 Angular component library. It lets an AI agent stream a sequence of structured UI messages, instead of raw HTML or plain text, that the host application renders as fully interactive, data-bound Syncfusion components: **DataGrid**, **Chart**, **Scheduler**, and more.
 
@@ -102,3 +102,5 @@ Two support channels are available while you integrate Syncfusion A2UI for Angul
 * [AI Integration](./ai-integration)
 * [Supported Components](./supported-components)
 * [A2UI v0.9 protocol](https://a2ui.org/specification/v0.9-a2ui/)
+* [A2UI Blogs](https://www.syncfusion.com/blogs/post/a2ui-ai-powered-application)
+* [A2UI Feature Tour Pages](https://www.syncfusion.com/explore/a2ui/)
