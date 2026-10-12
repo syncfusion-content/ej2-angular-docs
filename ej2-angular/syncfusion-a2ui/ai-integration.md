@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# AI Integration with Syncfusion A2UI
+# AI Integration with Syncfusion Angular A2UI
 
 This page shows the production wiring between a Syncfusion A2UI Angular host and a remote [A2UI v0.9](https://a2ui.org/specification/v0.9-a2ui/) agent that speaks [JSON-RPC 2.0](https://www.jsonrpc.org/specification) over HTTP. The [Getting Started](./getting-started) page showed how to render a Syncfusion surface from a static A2UI v0.9 message list. This page covers the next step: connecting your Angular app to a remote, A2UI-compatible agent so the agent's responses drive the surface in real time, and the user's interactions inside the surface are forwarded back to the agent.
 

@@ -7,7 +7,7 @@ export let productData: Object[] = [
     Quantity: 4,
     GrossAmount: '=REF(COLUMN("Price"),ROW(1))*REF(COLUMN("Quantity"),ROW(1))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(1))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(1))+REF(COLUMN("TaxAmount"),ROW(1))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(1)),REF(COLUMN("TaxAmount"),ROW(1)))'
   },
   {
     Id: 2,
@@ -17,7 +17,7 @@ export let productData: Object[] = [
     Quantity: 6,
     GrossAmount: '=REF(COLUMN("Price"),ROW(2))*REF(COLUMN("Quantity"),ROW(2))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(2))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(2))+REF(COLUMN("TaxAmount"),ROW(2))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(2)),REF(COLUMN("TaxAmount"),ROW(2)))'
   },
   {
     Id: 3,
@@ -27,7 +27,7 @@ export let productData: Object[] = [
     Quantity: 3,
     GrossAmount: '=REF(COLUMN("Price"),ROW(3))*REF(COLUMN("Quantity"),ROW(3))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(3))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(3))+REF(COLUMN("TaxAmount"),ROW(3))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(3)),REF(COLUMN("TaxAmount"),ROW(3)))'
   },
   {
     Id: 4,
@@ -37,7 +37,7 @@ export let productData: Object[] = [
     Quantity: 2,
     GrossAmount: '=REF(COLUMN("Price"),ROW(4))*REF(COLUMN("Quantity"),ROW(4))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(4))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(4))+REF(COLUMN("TaxAmount"),ROW(4))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(4)),REF(COLUMN("TaxAmount"),ROW(4)))'
   },
   {
     Id: 5,
@@ -47,7 +47,7 @@ export let productData: Object[] = [
     Quantity: 5,
     GrossAmount: '=REF(COLUMN("Price"),ROW(5))*REF(COLUMN("Quantity"),ROW(5))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(5))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(5))+REF(COLUMN("TaxAmount"),ROW(5))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(5)),REF(COLUMN("TaxAmount"),ROW(5)))'
   },
   {
     Id: 6,
@@ -57,7 +57,7 @@ export let productData: Object[] = [
     Quantity: 7,
     GrossAmount: '=REF(COLUMN("Price"),ROW(6))*REF(COLUMN("Quantity"),ROW(6))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(6))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(6))+REF(COLUMN("TaxAmount"),ROW(6))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(6)),REF(COLUMN("TaxAmount"),ROW(6)))'
   },
   {
     Id: 7,
@@ -67,7 +67,7 @@ export let productData: Object[] = [
     Quantity: 4,
     GrossAmount: '=REF(COLUMN("Price"),ROW(7))*REF(COLUMN("Quantity"),ROW(7))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(7))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(7))+REF(COLUMN("TaxAmount"),ROW(7))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(7)),REF(COLUMN("TaxAmount"),ROW(7)))'
   },
   {
     Id: 8,
@@ -77,7 +77,7 @@ export let productData: Object[] = [
     Quantity: 3,
     GrossAmount: '=REF(COLUMN("Price"),ROW(8))*REF(COLUMN("Quantity"),ROW(8))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(8))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(8))+REF(COLUMN("TaxAmount"),ROW(8))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(8)),REF(COLUMN("TaxAmount"),ROW(8)))'
   },
   {
     Id: 9,
@@ -87,7 +87,7 @@ export let productData: Object[] = [
     Quantity: 1,
     GrossAmount: '=REF(COLUMN("Price"),ROW(9))*REF(COLUMN("Quantity"),ROW(9))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(9))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(9))+REF(COLUMN("TaxAmount"),ROW(9))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(9)),REF(COLUMN("TaxAmount"),ROW(9)))'
   },
   {
     Id: 10,
@@ -97,7 +97,7 @@ export let productData: Object[] = [
     Quantity: 2,
     GrossAmount: '=REF(COLUMN("Price"),ROW(10))*REF(COLUMN("Quantity"),ROW(10))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(10))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(10))+REF(COLUMN("TaxAmount"),ROW(10))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(10)),REF(COLUMN("TaxAmount"),ROW(10)))'
   },
   {
     Id: 11,
@@ -107,7 +107,7 @@ export let productData: Object[] = [
     Quantity: 5,
     GrossAmount: '=REF(COLUMN("Price"),ROW(11))*REF(COLUMN("Quantity"),ROW(11))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(11))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(11))+REF(COLUMN("TaxAmount"),ROW(11))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(11)),REF(COLUMN("TaxAmount"),ROW(11)))'
   },
   {
     Id: 12,
@@ -117,7 +117,7 @@ export let productData: Object[] = [
     Quantity: 3,
     GrossAmount: '=REF(COLUMN("Price"),ROW(12))*REF(COLUMN("Quantity"),ROW(12))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(12))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(12))+REF(COLUMN("TaxAmount"),ROW(12))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(12)),REF(COLUMN("TaxAmount"),ROW(12)))'
   },
   {
     Id: 13,
@@ -127,7 +127,7 @@ export let productData: Object[] = [
     Quantity: 8,
     GrossAmount: '=REF(COLUMN("Price"),ROW(13))*REF(COLUMN("Quantity"),ROW(13))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(13))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(13))+REF(COLUMN("TaxAmount"),ROW(13))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(13)),REF(COLUMN("TaxAmount"),ROW(13)))'
   },
   {
     Id: 14,
@@ -137,7 +137,7 @@ export let productData: Object[] = [
     Quantity: 10,
     GrossAmount: '=REF(COLUMN("Price"),ROW(14))*REF(COLUMN("Quantity"),ROW(14))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(14))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(14))+REF(COLUMN("TaxAmount"),ROW(14))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(14)),REF(COLUMN("TaxAmount"),ROW(14)))'
   },
   {
     Id: 15,
@@ -147,7 +147,7 @@ export let productData: Object[] = [
     Quantity: 4,
     GrossAmount: '=REF(COLUMN("Price"),ROW(15))*REF(COLUMN("Quantity"),ROW(15))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(15))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(15))+REF(COLUMN("TaxAmount"),ROW(15))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(15)),REF(COLUMN("TaxAmount"),ROW(15)))'
   },
   {
     Id: 16,
@@ -157,7 +157,7 @@ export let productData: Object[] = [
     Quantity: 6,
     GrossAmount: '=REF(COLUMN("Price"),ROW(16))*REF(COLUMN("Quantity"),ROW(16))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(16))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(16))+REF(COLUMN("TaxAmount"),ROW(16))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(16)),REF(COLUMN("TaxAmount"),ROW(16)))'
   },
   {
     Id: 17,
@@ -167,7 +167,7 @@ export let productData: Object[] = [
     Quantity: 2,
     GrossAmount: '=REF(COLUMN("Price"),ROW(17))*REF(COLUMN("Quantity"),ROW(17))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(17))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(17))+REF(COLUMN("TaxAmount"),ROW(17))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(17)),REF(COLUMN("TaxAmount"),ROW(17)))'
   },
   {
     Id: 18,
@@ -177,7 +177,7 @@ export let productData: Object[] = [
     Quantity: 1,
     GrossAmount: '=REF(COLUMN("Price"),ROW(18))*REF(COLUMN("Quantity"),ROW(18))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(18))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(18))+REF(COLUMN("TaxAmount"),ROW(18))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(18)),REF(COLUMN("TaxAmount"),ROW(18)))'
   },
   {
     Id: 19,
@@ -187,7 +187,7 @@ export let productData: Object[] = [
     Quantity: 9,
     GrossAmount: '=REF(COLUMN("Price"),ROW(19))*REF(COLUMN("Quantity"),ROW(19))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(19))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(19))+REF(COLUMN("TaxAmount"),ROW(19))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(19)),REF(COLUMN("TaxAmount"),ROW(19)))'
   },
   {
     Id: 20,
@@ -197,7 +197,7 @@ export let productData: Object[] = [
     Quantity: 3,
     GrossAmount: '=REF(COLUMN("Price"),ROW(20))*REF(COLUMN("Quantity"),ROW(20))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(20))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(20))+REF(COLUMN("TaxAmount"),ROW(20))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(20)),REF(COLUMN("TaxAmount"),ROW(20)))'
   },
   {
     Id: 21,
@@ -207,7 +207,7 @@ export let productData: Object[] = [
     Quantity: 4,
     GrossAmount: '=REF(COLUMN("Price"),ROW(21))*REF(COLUMN("Quantity"),ROW(21))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(21))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(21))+REF(COLUMN("TaxAmount"),ROW(21))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(21)),REF(COLUMN("TaxAmount"),ROW(21)))'
   },
   {
     Id: 22,
@@ -217,7 +217,7 @@ export let productData: Object[] = [
     Quantity: 7,
     GrossAmount: '=REF(COLUMN("Price"),ROW(22))*REF(COLUMN("Quantity"),ROW(22))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(22))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(22))+REF(COLUMN("TaxAmount"),ROW(22))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(22)),REF(COLUMN("TaxAmount"),ROW(22)))'
   },
   {
     Id: 23,
@@ -227,7 +227,7 @@ export let productData: Object[] = [
     Quantity: 5,
     GrossAmount: '=REF(COLUMN("Price"),ROW(23))*REF(COLUMN("Quantity"),ROW(23))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(23))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(23))+REF(COLUMN("TaxAmount"),ROW(23))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(23)),REF(COLUMN("TaxAmount"),ROW(23)))'
   },
   {
     Id: 24,
@@ -237,7 +237,7 @@ export let productData: Object[] = [
     Quantity: 6,
     GrossAmount: '=REF(COLUMN("Price"),ROW(24))*REF(COLUMN("Quantity"),ROW(24))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(24))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(24))+REF(COLUMN("TaxAmount"),ROW(24))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(24)),REF(COLUMN("TaxAmount"),ROW(24)))'
   },
   {
     Id: 25,
@@ -247,7 +247,7 @@ export let productData: Object[] = [
     Quantity: 3,
     GrossAmount: '=REF(COLUMN("Price"),ROW(25))*REF(COLUMN("Quantity"),ROW(25))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(25))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(25))+REF(COLUMN("TaxAmount"),ROW(25))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(25)),REF(COLUMN("TaxAmount"),ROW(25)))'
   },
   {
     Id: 26,
@@ -257,7 +257,7 @@ export let productData: Object[] = [
     Quantity: 8,
     GrossAmount: '=REF(COLUMN("Price"),ROW(26))*REF(COLUMN("Quantity"),ROW(26))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(26))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(26))+REF(COLUMN("TaxAmount"),ROW(26))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(26)),REF(COLUMN("TaxAmount"),ROW(26)))'
   },
   {
     Id: 27,
@@ -267,7 +267,7 @@ export let productData: Object[] = [
     Quantity: 2,
     GrossAmount: '=REF(COLUMN("Price"),ROW(27))*REF(COLUMN("Quantity"),ROW(27))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(27))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(27))+REF(COLUMN("TaxAmount"),ROW(27))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(27)),REF(COLUMN("TaxAmount"),ROW(27)))'
   },
   {
     Id: 28,
@@ -277,7 +277,7 @@ export let productData: Object[] = [
     Quantity: 5,
     GrossAmount: '=REF(COLUMN("Price"),ROW(28))*REF(COLUMN("Quantity"),ROW(28))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(28))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(28))+REF(COLUMN("TaxAmount"),ROW(28))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(28)),REF(COLUMN("TaxAmount"),ROW(28)))'
   },
   {
     Id: 29,
@@ -287,7 +287,7 @@ export let productData: Object[] = [
     Quantity: 3,
     GrossAmount: '=REF(COLUMN("Price"),ROW(29))*REF(COLUMN("Quantity"),ROW(29))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(29))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(29))+REF(COLUMN("TaxAmount"),ROW(29))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(29)),REF(COLUMN("TaxAmount"),ROW(29)))'
   },
   {
     Id: 30,
@@ -297,6 +297,6 @@ export let productData: Object[] = [
     Quantity: 4,
     GrossAmount: '=REF(COLUMN("Price"),ROW(30))*REF(COLUMN("Quantity"),ROW(30))',
     TaxAmount: '=REF(COLUMN("GrossAmount"),ROW(30))*0.7',
-    TotalAmount: '=REF(COLUMN("GrossAmount"),ROW(30))+REF(COLUMN("TaxAmount"),ROW(30))'
+    TotalAmount: '=CUSTOMSUM(REF(COLUMN("GrossAmount"),ROW(30)),REF(COLUMN("TaxAmount"),ROW(30)))'
   }
 ];
