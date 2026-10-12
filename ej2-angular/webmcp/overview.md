@@ -43,7 +43,7 @@ Before you can use WebMCP locally, enable the feature flag and install the brows
  
 1. Enable `WebMCP for testing` flag via `chrome://flags/`. Click **"Relaunch"** to restart Chrome.
  
-2. Search for **"WebMCP - Model Context Tool Inspector"** in [Chrome Web Store](WebMCP - Model Context Tool Inspector - Chrome Web Store). Click **"Add to Chrome"**.
+2. Search for **"WebMCP - Model Context Tool Inspector"** in [Chrome Web Store](https://chromewebstore.google.com/detail/webmcp-model-context-tool/gbpdfapgefenggkahomfgkhfehlcenpd). Click **"Add to Chrome"**.
  
 3. Visit [Google AI Studio](https://aistudio.google.com/app/apikey) to create or copy an API key. Open the WebMCP extension → paste your API key.
  
@@ -53,7 +53,11 @@ The WebMCP extension is now configured and ready to interact with WebMCP-enabled
 
 Follow these steps to integrate WebMCP support into Syncfusion® Angular components. The following example uses the Spreadsheet component.
 
-### Step 1: Enable WebMCP support
+### Step 1: Create an application
+
+Create an Angular application and integrate the Syncfusion® Angular Spreadsheet component by following the [Getting Started with Angular Spreadsheet](https://help.syncfusion.com/document-processing/excel/spreadsheet/angular/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+
+### Step 2: Enable WebMCP support
 
 Import the WebMCP module and inject it into the component to make WebMCP functionality available.
 
@@ -81,7 +85,7 @@ Spreadsheet.Inject(WebMcpSpreadsheet);
 export class AppComponent {}
 ```
 
-### Step 2: Register component tools
+### Step 3: Register component tools
 
 Set the `enableWebMcp` property to `true` to register the component's available tools with the WebMCP runtime.
 
@@ -120,7 +124,7 @@ Spreadsheet.Inject(WebMcpSpreadsheet);
 export class AppComponent {}
 ```
 
-### Step 3: Customize tool registration
+### Step 4: Customize tool registration
 
 Use the `webMcpSettings` property to customize how WebMCP tools are exposed to AI agents. The available settings are listed below.
 
@@ -176,7 +180,7 @@ export class AppComponent {
 
 > Use the `exposeTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
 
-### Step 4: Monitor and control tool execution
+### Step 5: Monitor and control tool execution
 
 The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This event allows you to:
 
@@ -238,6 +242,10 @@ export class AppComponent {
 - Configure `exposeTo` to limit access to trusted domains.
 - Monitor tool activity through the `beforeWebMcpToolExecute` event.
 - Apply application-specific validation before executing tool operations.
+
+## Explore the demo
+
+Explore the Syncfusion® Angular Spreadsheet component with WebMCP integration through this [demo](https://demos.syncfusion.com/spreadsheet-editor-sdk/webmcp/index.html).
 
 ## Next steps
 
