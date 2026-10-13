@@ -222,15 +222,15 @@ bootstrapApplication(AppComponent);
 
 > **Note:** Replace `YOUR_LICENSE_KEY` with your actual license key. The license key must be registered before any Syncfusion component is initialized to avoid the license warning banner. For more information, see [License Key Registration](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration).
 
-{% endtabcontent %}
-
-{% endtabcontents %}
-
 ## Run the application
 
 Once you have completed all the setup steps, click the **Run** button (▶) at the top of the Replit workspace. The Angular Grid application will be built and rendered in the preview pane.
 
 ![Syncfusion Grid rendered in Replit](./images/replit-grid-preview.png)
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ## Key features to explore
 
