@@ -91,7 +91,7 @@ Use the following CSS to customize the Angular Chips avatar text properties.
 Use the following CSS to customize the Angular Chips height.
 
 ```css
-.e-chip-list.e-chip {
+.e-chip-list .e-chip {
     height: 60px;
   }
 ```
