@@ -152,7 +152,7 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 
 ### Load-on-demand implementation
 
-Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [hasChildMapping](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#hasChildMapping) property in taskFields to enable this functionality.
+Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [hasChildMapping](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#haschildmapping) property in taskFields to enable this functionality.
 
 **Core concept**: The `hasChildMapping` property maps data source field names that indicate whether records contain child elements. This enables the component to display expand icons and manage dynamic loading without pre-loading entire hierarchical structures.
 

@@ -1,8 +1,4 @@
-
-@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/button/index.css";
 
 /* To customize button appearance */
 .e-custom {

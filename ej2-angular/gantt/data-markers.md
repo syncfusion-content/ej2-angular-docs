@@ -181,3 +181,18 @@ You can programmatically modify the styling of the indicator by targeting the `.
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/gantt/datamarkers/indicator-customize" %}
+
+## Hide data markers programmatically
+
+You can hide data markers programmatically by targeting the `.e-indicator-span` class of the rendered marker elements and setting their display style. The following example shows how to hide and show all data markers using external buttons:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/datamarkers/indicator-hide/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/datamarkers/indicator-hide/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/gantt/datamarkers/indicator-hide" %}

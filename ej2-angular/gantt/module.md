@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) uses a modular architecture for bundle size optimization. Basic rendering requires no additional modules. Advanced features like sorting, editing, toolbar, and export require explicit module injection through Angular's dependency injection system.
 
-This approach loads only the functionality you need, reducing bundle size and improving load times.
+This approach loads only the required functionality, reducing bundle size and improving load times.
 
 ## Inject modules
 
@@ -148,5 +148,5 @@ For detailed tree-shaking implementation, refer to the [Syncfusion Angular Tree 
 
 - [Event Markers](https://ej2.syncfusion.com/angular/documentation/gantt/eventmarkers)
 - [Virtual Scrolling](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
-- [Editing Tasks](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-task)
+- [Editing Tasks](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
 - [Overview](https://ej2.syncfusion.com/angular/documentation/gantt/overview)

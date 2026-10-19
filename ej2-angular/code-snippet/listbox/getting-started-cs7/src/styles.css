@@ -1,7 +1,4 @@
-@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/list-box/index.css";
 
 .e-section-control {
 	margin-top: 150px;

@@ -89,7 +89,7 @@ To customize rows in the chart section, the following methods are available:
 - `getRowByIndex`: Returns the HTML element of a chart row at a specific index.
 - `getChartRows`: Returns all chart row elements.
 
-The following example demonstrates how to use the `getRowByIndex` method of the `treegrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event of the Gantt chart.
+The following example demonstrates how to use the `getRowByIndex` method of the `treeGrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -307,7 +307,7 @@ Supported `newRowPosition` values:
 
 ## Show or hide a row using an external actions
 
-You can show or hide specific rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart based on external actions like a checkbox click, which is useful for temporarily hiding rows without changing the data source. This can be achieved using `getRowByIndex` from the `treeGrid` object and Gantt chart component, and `getRowsObject` from the Gantt instance, along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box#change) event to manage row visibility dynamically.
+You can show or hide specific rows in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart based on external actions like a checkbox click, which is useful for temporarily hiding rows without changing the data source. This can be achieved using `getRowByIndex` from the `treeGrid` object and the Gantt chart component, and `getRowsObject` from the Gantt instance, along with the [change](https://ej2.syncfusion.com/angular/documentation/api/check-box#change) event to manage row visibility dynamically.
 
 In this example, the `onCheckBoxChange` method checks the checkbox state and uses `getRowsObject` to iterate through all grid rows. If the **TaskName** value is **Perform Soil test**, the row is hidden using `getRowByIndex` by setting its display style to **none**, and its index is stored in a `hiddenRows` array. When the checkbox is unchecked, the method loops through `hiddenRows` to show each row by resetting its display style and then clears the array.
 
@@ -322,7 +322,7 @@ In this example, the `onCheckBoxChange` method checks the checkbox state and use
   
 {% previewsample "page.domainurl/samples/gantt/rows/hiderow-cs1" %}
 
-## See Also
+## See also
 
 * [Render parent rows in collapsed state](https://ej2.syncfusion.com/angular/documentation/gantt/columns/treecolumn#render-parent-rows-in-collapsed-state)  
 * [Retain expanded and collapsed state](https://ej2.syncfusion.com/angular/documentation/gantt/columns/treecolumn#retain-expanded-and-collapsed-state) 

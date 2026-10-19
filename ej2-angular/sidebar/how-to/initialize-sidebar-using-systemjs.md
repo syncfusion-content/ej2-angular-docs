@@ -99,8 +99,7 @@ This installs the Angular Sidebar and its dependencies required for rendering in
 Import the Angular Sidebar and dependent component's styles in `style.css`:
 
 ```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../../node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/sidebar/index.css";
 ```
 
 > **Note**: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.

@@ -84,6 +84,24 @@ The following example shows how to use the `formatter` function with all four pa
   
 {% previewsample "page.domainurl/samples/gantt/timeline/format-value-cs1" %}
 
+## Show week number in timeline cell
+
+The Gantt Chart allows week numbers to be displayed in timeline cells using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#formatter) property of the [timelineSettings.topTier](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelinesettingsmodel#toptier) configuration. The formatter function customizes the default timeline header text and displays values such as `Week 13`.
+
+The following example demonstrates how to display week numbers in the top-tier timeline cells while displaying individual days in the bottom-tier timeline.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/timeline/show-week-number/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/timeline/show-week-number/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/timeline/show-week-number" %}
+
 ## Timeline cell width
 
 In the Angular Gantt Chart component, the width of timeline cells can be configured using the [timelineSettings.timelineUnitSize](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings#timelineunitsize) property within `timelineSettings`. This value directly sets the width of the bottom tier cells.

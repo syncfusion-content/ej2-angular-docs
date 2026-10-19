@@ -42,7 +42,7 @@ The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-
 - [**Timeline configuration**](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/timeline) - Configure timeline tiers from minutes to decades with custom text
 - [**Zooming**](https://ej2.syncfusion.com/angular/documentation/gantt/timeline/zooming) - Zoom in and out to view tasks at different time scales
 - [**Timezone support**](https://ej2.syncfusion.com/angular/documentation/gantt/timezone) - Schedule projects across different timezones
-- [**Taskbars**](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar) - Customize taskbar appearance and display baselines for planned vs actual progres
+- [**Taskbars**](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar) - Customize taskbar appearance and display baselines for planned vs actual progress
 - [**Critical path**](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path) - Identify task sequences that determine project completion dates
 - [**Baseline**](https://ej2.syncfusion.com/angular/documentation/gantt/baseline) - Display planned vs actual schedules
 
@@ -95,7 +95,7 @@ The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-
 - [**PDF export**](https://ej2.syncfusion.com/angular/documentation/gantt/pdf-export/pdf-export) - Export chart to PDF with customization options
 - [**Header and footer**](https://ej2.syncfusion.com/angular/documentation/gantt/pdf-export/header-and-footer) - Customize PDF headers and footers
 
-## Integration and Migration
+## Integration and migration
 
 - [**SignalR integration**](https://ej2.syncfusion.com/angular/documentation/gantt/signalr) - Enable real-time collaboration
 - [**API migration**](https://ej2.syncfusion.com/angular/documentation/gantt/ej1-api-migration) - Upgrade from Essential JS 1 to JS 2
