@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Gantt Chart Component
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the component is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the component is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
 
 ## Accessibility compliance
 
@@ -30,8 +30,8 @@ The accessibility compliance for the Gantt Chart component provides detailed ins
 
 | Accessibility Criteria                                                                  | Compatibility                                                                                      |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Section 508](https://www.section508.gov/) Support                                      | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support                                        | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Section 508](https://www.section508.gov) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Screen Reader Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | Right-To-Left Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Color Contrast                                                                          | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
@@ -75,23 +75,23 @@ The Angular Gantt Chart component is structured using a combined TreeGrid and ch
 
 The accessibility checker tools highlight the following known issues:
 
-* The `<table>` element with `role="presentation"` or `role="none"` contains structural elements such as `<th>`.
-* Verify that the table is not being used solely to format text content in columns unless the table can be properly linearized.  
-* Content is not placed within a landmark element.  
-* Verify that the `<div>` element with `role="grid"` provides proper keyboard access.  
-* The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.  
-* Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.  
-* None of the descendant elements with `role="row"` are tabbable.  
-* The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.  
-* The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.  
-* The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.  
-* The tabbable element with role `"columnheader"` is not a widget role.  
-* The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.  
-* The element with `role="rowgroup"` does not contain required child elements with role `"row"`.  
-* The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.  
-* The `cellspacing` attribute is deprecated for the `<table>` element in HTML5.  
-* The ARIA attribute `aria-label` is not valid for a `<div>` element with `role="term"`.  
-* The ARIA attribute `aria-label` is not valid for a `<div>` element with the implicit `"generic"` role.  
+- The `<table>` element with `role="presentation"` or `role="none"` contains structural elements such as `<th>`.
+- Verify that the table is not being used solely to format text content in columns unless the table can be properly linearized.
+- Content is not placed within a landmark element.
+- Verify that the `<div>` element with `role="grid"` provides proper keyboard access.
+- The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.
+- Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.
+- None of the descendant elements with `role="row"` are tabbable.
+- The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.
+- The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.
+- The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.
+- The tabbable element with role `"columnheader"` is not a widget role.
+- The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.
+- The element with `role="rowgroup"` does not contain required child elements with role `"row"`.
+- The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.
+- The `cellspacing` attribute is deprecated for the `<table>` element in HTML5.
+- The ARIA attribute `aria-label` is not valid for a `<div>` element with `role="term"`.
+- The ARIA attribute `aria-label` is not valid for a `<div>` element with the implicit `"generic"` role.
 
 ## Keyboard navigation
 
@@ -130,23 +130,28 @@ The Gantt Chart component provides comprehensive keyboard navigation support fol
 
 The Gantt Chart component provides accessible error handling and validation feedback patterns for Gantt-specific scenarios including dependency validation, resource conflicts, and date constraint violations.
 
-
 ```typescript
 @Component({
-  template: `
-    <ejs-gantt [dataSource]="data" [editSettings]="editSettings" (actionFailure)="onActionFailure($event)">
+  template: ` <ejs-gantt
+      [dataSource]="data"
+      [editSettings]="editSettings"
+      (actionFailure)="onActionFailure($event)"
+    >
     </ejs-gantt>
-    <div role="alert" aria-live="assertive" class="sr-only" #errorRegion></div>`
+    <div
+      role="alert"
+      aria-live="assertive"
+      class="sr-only"
+      #errorRegion
+    ></div>`,
 })
-
-
 export class AccessibleGanttComponent {
-  @ViewChild('errorRegion') errorRegion: ElementRef;
+  @ViewChild("errorRegion") errorRegion: ElementRef;
 
   public onActionFailure(args: FailureEventArgs): void {
     const errorMessage = this.formatErrorMessage(args.error);
     this.errorRegion.nativeElement.textContent = errorMessage;
-    
+
     // Focus management for error scenarios.
     this.manageFocusForError(args);
   }
@@ -157,7 +162,9 @@ export class AccessibleGanttComponent {
 
   private manageFocusForError(args: FailureEventArgs): void {
     // Return focus to the element that caused the error.
-    const targetElement = document.querySelector(`[data-task-id="${args.data?.taskId}"]`);
+    const targetElement = document.querySelector(
+      `[data-task-id="${args.data?.taskId}"]`,
+    );
     if (targetElement) {
       (targetElement as HTMLElement).focus();
     }
@@ -191,7 +198,7 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)
-* [Keyboard Navigation in Angular Gantt Chart component](./keyboard-navigation)
-* [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
-* [Section 508 Standards](https://www.section508.gov/)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](https://ej2.syncfusion.com/angular/documentation/common/accessibility)
+- [Keyboard Navigation in Angular Gantt Chart component](https://ej2.syncfusion.com/angular/documentation/gantt/accessibility#keyboard-navigation)
+- [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22)
+- [Section 508 Standards](https://www.section508.gov)

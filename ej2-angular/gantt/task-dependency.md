@@ -38,24 +38,31 @@ The following example establishes dependencies:
 
 This code renders connector lines for dependencies like '2FS', updating taskbars on changes.
 
+> - Dependencies between tasks under the same parent are not supported.
+> - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+> - The format of the dependency string depends on the data type of the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfields#id) field mapped in the data source:
+>   - If the `id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `id` and the dependency type.
+>   - If the `id` field is a **string** or **GUID**, the format `[id] [PredecessorType]` is mandatory, with a single space between the `id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
+
 ## Understand task relationship types
 
 Task relationships are categorized into four types based on start and finish dates:
+
 - Start to Start (SS): Successor starts with predecessor.
 
-    ![Start to Start dependency](images/ss.png)
+  ![Start to Start dependency](images/ss.png)
 
 - Start to Finish (SF): Successor finishes when predecessor starts.
 
-    ![Start to Finish dependency](images/sf.png)
+  ![Start to Finish dependency](images/sf.png)
 
 - Finish to Start (FS): Successor starts after predecessor finishes (default).
 
-    ![Finish to Start dependency](images/fs.png)
+  ![Finish to Start dependency](images/fs.png)
 
 - Finish to Finish (FF): Successor finishes with predecessor.
 
-    ![Finish to Finish dependency](images/ff.png)
+  ![Finish to Finish dependency](images/ff.png)
 
 Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
 
@@ -122,6 +129,7 @@ This code preserves offsets during edits, requiring manual adjustments.
 ## Handle dependency validation modes
 
 Dependency validation during editing uses the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt#actionbegin) event with `requestType: 'validateLinkedTask'`. The `validateMode` argument defines modes:
+
 - `respectLink`: Prioritizes links, reverting invalid edits.
 - `removeLink`: Prioritizes editing, removing conflicting links.
 - `preserveLinkWithEditing`: Updates offsets to maintain links (default).
@@ -209,41 +217,115 @@ Connector lines are styled globally with [connectorLineWidth](https://ej2.syncfu
 The following example sets the connector line background color as red:
 
 ```typescript
-import { Component } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { Component } from "@angular/core";
+import { GanttModule } from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-    imports: [GanttModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-        <ejs-gantt height="430px" [dataSource]="taskData" [taskFields]="taskSettings" [projectStartDate]="projectStartDate"  [projectEndDate]="projectEndDate" [connectorLineWidth]="2" [connectorLineBackground]="'red'">
-        </ejs-gantt>`
+  imports: [GanttModule],
+  standalone: true,
+  selector: "app-root",
+  template: ` <ejs-gantt
+    height="430px"
+    [dataSource]="taskData"
+    [taskFields]="taskSettings"
+    [projectStartDate]="projectStartDate"
+    [projectEndDate]="projectEndDate"
+    [connectorLineWidth]="2"
+    [connectorLineBackground]="'red'"
+  >
+  </ejs-gantt>`,
 })
-
 export class AppComponent {
-    public taskData: object[] = [
-        { TaskID: 1, TaskName: "Product concept", StartDate: new Date("04/02/2025"), EndDate: new Date("04/08/2025") },
-        { TaskID: 2, TaskName: "Define the product usage", StartDate: new Date("04/02/2025"), EndDate: new Date("04/08/2025"), Duration: 1, Progress: 30, ParentId: 1 },
-        { TaskID: 3, TaskName: "Define the target audience", StartDate: new Date("04/02/2025"), EndDate: new Date("04/04/2025"), Duration: 2, Progress: 40, ParentId: 1 },
-        { TaskID: 4, TaskName: "Prepare product sketch and notes", StartDate: new Date("04/05/2025"), Duration: 2, Progress: 30, ParentId: 1, Predecessor: "2" },
-        { TaskID: 5, TaskName: "Concept approval", StartDate: new Date("04/08/2025"), EndDate: new Date("04/08/2025"), Duration: 0, ParentId: 1, Predecessor: "3,4" },
-        { TaskID: 6, TaskName: "Market research", StartDate: new Date("04/09/2025"), EndDate: new Date("04/18/2025"), Progress: 30 },
-        { TaskID: 7, TaskName: "Demand analysis", Progress: 40, ParentId: 6 },
-        { TaskID: 8, TaskName: "Customer strength", StartDate: new Date("04/09/2025"), EndDate: new Date("04/12/2025"), Duration: 4, Progress: 30, ParentId: 7, Predecessor: "5"},
-        { TaskID: 9, TaskName: "Market opportunity analysis", StartDate: new Date("04/09/2025"), EndDate: new Date("04/12/2025"), Duration: 4, ParentId: 7, Predecessor: "5" },
-        { TaskID: 10, TaskName: "Competitor analysis", StartDate: new Date("04/15/2025"), EndDate: new Date("04/18/2025"), Duration: 4, Progress: 30, ParentId: 6, Predecessor: "7,8" },
-    ];
-    public taskSettings: object = {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        dependency: 'Predecessor',
-        parentID: 'ParentId'
-    };
-
+  public taskData: object[] = [
+    {
+      TaskID: 1,
+      TaskName: "Product concept",
+      StartDate: new Date("04/02/2025"),
+      EndDate: new Date("04/08/2025"),
+    },
+    {
+      TaskID: 2,
+      TaskName: "Define the product usage",
+      StartDate: new Date("04/02/2025"),
+      EndDate: new Date("04/08/2025"),
+      Duration: 1,
+      Progress: 30,
+      ParentId: 1,
+    },
+    {
+      TaskID: 3,
+      TaskName: "Define the target audience",
+      StartDate: new Date("04/02/2025"),
+      EndDate: new Date("04/04/2025"),
+      Duration: 2,
+      Progress: 40,
+      ParentId: 1,
+    },
+    {
+      TaskID: 4,
+      TaskName: "Prepare product sketch and notes",
+      StartDate: new Date("04/05/2025"),
+      Duration: 2,
+      Progress: 30,
+      ParentId: 1,
+      Predecessor: "2",
+    },
+    {
+      TaskID: 5,
+      TaskName: "Concept approval",
+      StartDate: new Date("04/08/2025"),
+      EndDate: new Date("04/08/2025"),
+      Duration: 0,
+      ParentId: 1,
+      Predecessor: "3,4",
+    },
+    {
+      TaskID: 6,
+      TaskName: "Market research",
+      StartDate: new Date("04/09/2025"),
+      EndDate: new Date("04/18/2025"),
+      Progress: 30,
+    },
+    { TaskID: 7, TaskName: "Demand analysis", Progress: 40, ParentId: 6 },
+    {
+      TaskID: 8,
+      TaskName: "Customer strength",
+      StartDate: new Date("04/09/2025"),
+      EndDate: new Date("04/12/2025"),
+      Duration: 4,
+      Progress: 30,
+      ParentId: 7,
+      Predecessor: "5",
+    },
+    {
+      TaskID: 9,
+      TaskName: "Market opportunity analysis",
+      StartDate: new Date("04/09/2025"),
+      EndDate: new Date("04/12/2025"),
+      Duration: 4,
+      ParentId: 7,
+      Predecessor: "5",
+    },
+    {
+      TaskID: 10,
+      TaskName: "Competitor analysis",
+      StartDate: new Date("04/15/2025"),
+      EndDate: new Date("04/18/2025"),
+      Duration: 4,
+      Progress: 30,
+      ParentId: 6,
+      Predecessor: "7,8",
+    },
+  ];
+  public taskSettings: object = {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    progress: "Progress",
+    dependency: "Predecessor",
+    parentID: "ParentId",
+  };
 }
 ```
 
@@ -263,11 +345,45 @@ By default, Gantt task dates are validated based on predecessor values. To disab
 {% endtabs %}
 {% previewsample "page.domainurl/samples/gantt/taskdependency/disable-predecessor-cs1" %}
 
+## Manage specific dependency types
+
+The Gantt Chart supports the [allowedDependencyTypes](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#alloweddependencytypes) property to control which dependency relationship types can participate in dependency processing during data loading and editing operations.
+
+Only the dependency types included in the configured `allowedDependencyTypes` collection are processed and maintained. Dependency types that are not included in the collection are ignored during data loading and prevented during editing actions. This behavior applies to all CRUD operations.
+
+The supported dependency types are:
+
+- **FS** – Finish-to-Start
+- **SS** – Start-to-Start
+- **FF** – Finish-to-Finish
+- **SF** – Start-to-Finish
+
+**For example:**
+
+The following example allows only the Start to Finish (SF) dependency type. This code configures `allowedDependencyTypes: ['SF']` so that only **SF** relationships can be created during loading and editing, with all other dependency types disabled.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/taskdependency/allowedDependencyTypes-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/taskdependency/allowedDependencyTypes-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/gantt/taskdependency/allowedDependencyTypes-cs1" %}
+
+> **NOTE**
+> By default, all dependency types are allowed when the `allowedDependencyTypes` property is not specified.
+> Specifying an empty collection (`allowedDependencyTypes: []`) is equivalent to not defining the `allowedDependencyTypes` property. In both cases, all supported dependency types are allowed. The Gantt processes all supported dependency types during data loading and allows all dependency relationship types to be created or modified during editing operations.
+
 ## Limitation
 
 > When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
 
 ## See also
+
 - [How to configure task constraints?](https://ej2.syncfusion.com/angular/documentation/gantt/task-constraints)
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)
 - [How to enable critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

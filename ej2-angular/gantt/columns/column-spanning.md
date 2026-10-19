@@ -58,8 +58,8 @@ The following example demonstrates how to change the border color of spanned cel
 
 Column spanning is not compatible with the following features:
 
-1. Virtual scrolling
-2. Infinite scrolling
+* Virtual scrolling
+* Infinite scrolling
 
 Ensure these features are disabled when using column spanning to avoid rendering issues.
 

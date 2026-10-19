@@ -52,7 +52,7 @@ The following example demonstrates how the **StartDate** column is made visible 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/showHide-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/showHide-cs1" %}
 
 ## Include hidden columns in export
 
@@ -70,11 +70,11 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt/excel-export/showHide-cs1/src/data.ts %}
+{% include code-snippet/gantt/excel-export/exportHidden-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/exportHidden-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/exportHidden-cs1" %}
 
 ## Enable filtering in exported Excel
 
@@ -94,7 +94,7 @@ To enable filtering in exported Excel or CSV files in Gantt Chart component, set
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/excelOption-filtering" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/excelOption-filtering" %}
 
 ## Set custom file name
 
@@ -114,7 +114,7 @@ To specify a custom name for the exported Excel or CSV file in the Gantt Chart c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/excelOption-file-name" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/excelOption-file-name" %}
 
 ## Customize exported columns
 
@@ -134,7 +134,7 @@ The Gantt Chart component supports customizing column settings during Excel or C
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/excelOption-columns" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/excelOption-columns" %}
 
 ## Add header and footer to export
 
@@ -154,13 +154,13 @@ To add header and footer content to exported Excel or CSV files in the Gantt Cha
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/headerFooter-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/headerFooter-cs1" %}
 
 ## Apply font and color themes
 
 The Excel or CSV export feature in Gantt supports applying custom themes to the exported document, helping maintain a consistent and visually structured appearance.
 
-To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file
+To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file:
 
 - **caption**: Defines the style for the caption, typically used for titles or descriptions at the top of the sheet.
 - **header**: Specifies the styling for column headers.
@@ -180,7 +180,7 @@ To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/theme-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/theme-cs1" %}
 
 > By default, tailwind3 theme is applied to the exported Excel document.
 
@@ -204,4 +204,8 @@ In the example below, the background color is customized for the **Progress** co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/excel-export/cellFormat-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/excel-export/cellFormat-cs1" %}
+
+## Limitations
+
+CSV export preserves task data in a simple and widely compatible format. Since CSV files are designed for data representation rather than visual layout, Gantt Chart specific hierarchy indentation and structural formatting are not retained in the exported file.

@@ -383,7 +383,7 @@ export class AppModule {}
 
 ```CSS
 /* Add CSS styles in styles.css (e.g., for Tailwind theme).*/
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 /* Add other Syncfusion styles as needed */
 ```
 ### Step 2: Update the Angular Gantt Component

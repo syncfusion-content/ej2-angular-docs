@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Indent and Outdent in Angular Gantt Chart Component
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the component.
 
  * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
  * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
-To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting) to **true**, inject `EditService` and `SelectionService` in the `providers` of the component, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/angular/documentation/api/gantt/toolbarItem) to perform indent and outdent actions.
+To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting) to **true**, inject `EditService` and `SelectionService` in the `providers` of the component, and use either the **built-in context menu** or [ToolbarItem](https://ej2.syncfusion.com/angular/documentation/api/gantt/toolbarItem) to perform indent and outdent actions.
 
 The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property.
 
@@ -47,7 +47,7 @@ The following sample demonstrates how to programmatically select row index **2**
   
 {% previewsample "page.domainurl/samples/gantt/rows/indent-outdent-cs2" %}
 
-## Retrieve Indent and outdent details
+## Retrieve indent and outdent details
 
 You can retrieve indent and outdent details using the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event, where the `args.requestType` value will be either **indented** or **outdented**, indicating the type of action performed.
 

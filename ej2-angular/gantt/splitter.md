@@ -53,7 +53,7 @@ import { GanttComponent, GanttModule, SelectionService } from '@syncfusion/ej2-a
     selector: 'app-root',
     standalone: true,
     imports: [GanttModule],
-    providers: [SelectionService]
+    providers: [SelectionService],
     template: `
        <ejs-gantt #gantt id="ganttContainer" height="475px" width="650px" [dataSource]="data" [taskFields]="taskSettings"
         [allowSelection]="true" [labelSettings]="labelSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings"
@@ -139,7 +139,7 @@ import { GanttModule, GanttComponent, EditService, ISplitterResizedEventArgs,Sel
     selector: 'app-root',
     providers: [EditService, SelectionService, ToolbarService, DayMarkersService],
     standalone: true,
-    imports: [GanttModule]
+    imports: [GanttModule],
     template: `
         <div class="control-section">
             <ejs-gantt #gantt height="410px" [dataSource]="data" [taskFields]="taskFields" [splitterSettings]="splitterSettings" [treeColumnIndex]="1" (dataBound)="onDataBound()" (splitterResizing)="onSplitterResizing($event)"(splitterResized)="onSplitterResized($event)">

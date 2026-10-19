@@ -25,14 +25,15 @@ Before getting started, ensure the following:
 
 ## Create a project in Replit
 
-1. Sign in to [Replit](https://replit.com/).
-2. Click **New** and select **Empty project**.
+1.Sign in to [Replit](https://replit.com/).
+
+2.Click **New** and select **Empty project**.
 
 Replit creates an empty project with a default generated name.
 
 ![Empty Project in Replit](./images/replit-empty-project.png)
 
-3. To rename the project, click the project name dropdown located at the top of the Replit workspace, select **Edit project details**, and enter a name such as `angular-grid-app`.
+3.To rename the project, click the project name dropdown located at the top of the Replit workspace, select **Edit project details**, and enter a name such as `angular-grid-app`.
 
 ![Edit project details in Replit](./images/replit-edit-project.png)
 
@@ -92,13 +93,13 @@ Once the agent finishes generating the application code, it automatically starts
 
 {% endtabcontent %}
 
-{% tabcontent Vite CLI %}
+{% tabcontent Angular CLI %}
 
 Create the Angular application manually using the Vite CLI and add the Syncfusion® Angular Grid component step by step.
 
 ## Create a Vite Angular project
 
-1. Update the Node.js Version and Create an Angular Project
+1.Update the Node.js Version and Create an Angular Project
 
 In the Replit `.replit` file, add or update the `modules` entry to use Node.js 24 as shown below:
 
@@ -122,19 +123,19 @@ cd angular-grid-app
 
 > A Package Firewall warning may appear in Replit during dependency installation. This is related to Replit's security policy and does not affect the runtime compatibility of the Angular application or Syncfusion components after successful installation.
 
-2. Install the Syncfusion® Grid package and the Material3 theme:
+2.Install the Syncfusion® Grid package and the Material3 theme:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids @syncfusion/ej2-material3-theme --save
 ```
 
-3. Open the `src/styles.css` file and add the following import statement:
+3.Open the `src/styles.css` file and add the following import statement:
 
 ```css
 @import "@syncfusion/ej2-material3-theme/styles/material3.css";
 ```
 
-4. Update the `src/app/app.component.ts` file and replace its contents with:
+4.Update the `src/app/app.component.ts` file and replace its contents with:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -207,7 +208,7 @@ export class AppComponent implements OnInit {
 
 For more information on obtaining and registering a license key, see [How to Register a Syncfusion® License Key](../../licensing/license-key-registration).
 
-5. Update the `src/main.ts` file and register your Syncfusion license key before bootstrapping the application:
+5.Update the `src/main.ts` file and register your Syncfusion license key before bootstrapping the application:
 
 ```typescript
 import { bootstrapApplication } from '@angular/platform-browser';
