@@ -1,5 +1,1 @@
-
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-popups/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/tab/index.css";

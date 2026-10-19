@@ -1,7 +1,4 @@
-@import "node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/dashboard-layout/index.css";
 
 #dashboard_default .e-panel .e-panel-container .content {
     vertical-align: middle;

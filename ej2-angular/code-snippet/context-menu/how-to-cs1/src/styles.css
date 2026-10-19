@@ -1,9 +1,6 @@
 
-@import 'node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/material3.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/context-menu/index.css";
+
 
 .e-section-control {
 	margin-top: 150px;
