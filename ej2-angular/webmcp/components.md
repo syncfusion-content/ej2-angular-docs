@@ -76,7 +76,7 @@ The Syncfusion® Diagram component exposes **19 tools**, giving AI agents full p
 
 ## File Manager
 
-The Syncfusion® File Manager component exposes **7 tools** that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows.
+The Syncfusion® File Manager component exposes **7 tools** that enable AI agents to browse files, manage file operations, control the user interface, perform navigation, and automate common file management workflows. Explore the Syncfusion® Angular File Manager component with WebMCP integration through this [demo](https://demos.syncfusion.com/file-manager-sdk/web-mcp/index.html).
 
 | Tool Name | Description |
 |---|---|
@@ -133,9 +133,150 @@ The Syncfusion® Gantt component exposes 38 tools, giving AI agents full program
 | scrollToTask | Scrolls the view to bring a specific task into view. |
 | scrollToDate | Scrolls the timeline view to bring a specific date into view. |
 
+## Chart
+
+The Syncfusion® Chart component exposes **37 tools** that enable AI agents to inspect chart metadata, query and modify series data, update chart configurations, and interact with visual elements.
+
+| Tool Name | Description |
+|---|---|
+| addChartAnnotation | Adds one or more annotations to the Chart. |
+| addChartAxis | Adds secondary axes to the Chart. |
+| addChartSeries | Adds one or more series to the Chart. |
+| animateChart | Starts Chart animation with an optional duration in milliseconds (defaults to 1000 ms). |
+| appendChartData | Adds data records to a Chart series and optionally limits the number of retained records. |
+| clearChartSelection | Clears all Chart selections. |
+| clearChartSeries | Removes all series from the Chart. |
+| configureChartZoom | Updates Chart zoom settings. |
+| exportChart | Exports the Chart to a file format. **Supported formats:** `PNG`, `JPEG`, `SVG`, `PDF`, `XLSX`, `CSV`. |
+| getChartAnnotations | Returns all Chart annotations. |
+| getChartAxes | Returns Chart axis information. |
+| getChartIndicators | Returns configured Chart indicators. |
+| getChartLegend | Returns Chart legend information. |
+| getChartPoint | Returns information about a specific Chart point. |
+| getChartStriplines | Returns Chart stripline information. |
+| getSelectedChartData | Returns the currently selected Chart data points. |
+| getSeriesData | Returns data points from a Chart series. |
+| hideChartCrosshair | Hides the Chart crosshair. |
+| hideChartTooltip | Hides the Chart tooltip. |
+| inspectChart | Returns the current Chart configuration and series information. |
+| printChart | Prints the Chart. |
+| removeChartAnnotation | Removes a Chart annotation. |
+| removeChartAxis | Removes a secondary Chart axis. |
+| removeChartPoints | Removes data points from a Chart series. |
+| removeChartSeries | Removes a series from the Chart. |
+| resetChartZoom | Resets Chart zoom settings. |
+| selectChartPoints | Selects Chart data points. |
+| showChartCrosshair | Displays the Chart crosshair. |
+| showChartTooltip | Displays the Chart tooltip. |
+| toggleChartSeriesVisibility | Shows or hides a Chart series. |
+| updateChartAnnotation | Updates an existing Chart annotation. |
+| updateChartAxis | Updates Chart axis properties. |
+| updateChartDataSource | Updates the Chart data source or series data source. |
+| updateChartPoint | Updates a data point in a Chart series. |
+| updateChartProperties | Updates supported Chart properties. |
+| updateChartSeries | Updates properties of an existing Chart series. |
+| updateChartTitle | Updates the Chart title and subtitle. |
+
+### Example prompts
+
+Clear and specific prompts help the AI select and execute the appropriate Chart tools.
+
+> "Show the current chart configuration, including the series names, series types, axis settings, and zoom state."
+
+> "Add a line series named 'Revenue' with the provided data, and then update the chart title to 'Sales Trends 2024'."
+
+> "Update the primary Y-axis range from 0 to 1000 with an interval of 100."
+
+> "Hide the 'Expenses' series and show only the currently visible series."
+
+> "Add an annotation labeled 'Peak Sales' to the point with the highest value in the Revenue series."
+
+For best results, specify relevant series names or indices, axis names, annotation IDs, and point indices or X values.
+
+## DOCX Editor
+
+The Syncfusion® DOCX Editor component exposes **27 tools** that enable AI agents to manage document content, formatting, navigation, protection, and export. Explore the Syncfusion® Angular DOCX Editor component with WebMCP integration through this [demo](https://demos.syncfusion.com/docx-editor-sdk/webmcp/index.html).
+
+| Tool Name | Description |
+|---|---|
+| saveDocument | Saves or exports the current document in DOCX, DOTX, TXT, or SFDT format. |
+| getDocumentBookmarks | Returns all bookmark names available in the current document. |
+| configureDocumentEditorSettings | Configures editor appearance and behavior settings such as ruler, bookmarks, navigation pane, and fonts. |
+| find | Finds the next occurrence of specified text in the document. |
+| findAll | Finds all occurrences of specified text throughout the document. |
+| replaceAll | Replaces all occurrences of specified text with new content. |
+| insertText | Inserts plain text at the current cursor or selection position. |
+| paste | Pastes formatted SFDT content while preserving document structure and formatting. |
+| insertBookmark | Creates a bookmark at the current cursor position for navigation. |
+| selectBookmark | Navigates to and selects an existing bookmark. |
+| select | Selects content between specified document positions or coordinates. |
+| print | Opens the print dialog for the current document. |
+| enforceProtection | Protects the document and restricts editing with a password. |
+| stopProtection | Removes document protection and restores editing access. |
+| insertField | Inserts dynamic fields such as merge fields or page numbers. |
+| goToPage | Navigates to a specified page in the document. |
+| selectAll | Selects all content in the document. |
+| selectCurrentWord | Selects the word at the current cursor position. |
+| selectParagraph | Selects the current paragraph. |
+| pageCount | Returns the total number of pages in the document. |
+| getSelectionText | Retrieves the plain text content of the current selection. |
+| getSelectionSfdt | Retrieves the selected content as formatted SFDT. |
+| insertEditingRegion | Creates an editable region for specific users in a protected document. |
+| formatCharacter | Applies character formatting such as font, size, color, bold, italic, and highlighting. |
+| formatParagraph | Applies paragraph formatting such as alignment, indentation, and spacing. |
+| insertImage | Inserts an image with optional sizing and alternate text. |
+| insertHyperlink | Inserts a hyperlink with optional display text and screen tip. |
+
+### Example prompts
+
+The effectiveness of WebMCP tools depends on the quality of the prompt provided to the AI assistant. Clear and specific instructions help the AI choose the appropriate tool and produce accurate results. Here are some example prompts for the DOCX Editor component:
+
+> "Go to page 5, select the current paragraph, and make the text bold."
+
+## RichTextEditor
+
+The Syncfusion® Rich Text Editor component exposes **20 tools**, giving AI agents programmatic control over content, selection, formatting, block structure, links, tables, images, lists, dialogs, and editing actions. Explore the Syncfusion® Angular Rich Text Editor component with WebMCP integration through this [demo](https://demos.syncfusion.com/rich-text-editor-sdk/webmcp/index.html).
+
+| Tool Name | Description |
+|---|---|
+| getContent | Reads the complete HTML content currently inside the Rich Text Editor. |
+| getSelectedHtml | Reads the HTML content of the current selection. |
+| selectAllContent | Selects all content inside the Rich Text Editor for full-document operations. |
+| showDialog | Opens a built-in dialog for inserting or editing links, images, audio, video, or tables. |
+| closeDialog | Closes a currently open built-in insertion or editing dialog. |
+| insertContent | Inserts plain text or basic HTML at the cursor position, replacing the current selection if present. |
+| formatSelectedContent | Applies inline formatting such as bold, italic, underline, strike-through, superscript, subscript, uppercase, lowercase, font color, background color, font name, or font size. |
+| setBlockType | Changes the selected content or current line to a paragraph, heading, block quote, or plain preformatted block. |
+| setTextAlignment | Applies left, center, right, or justified alignment to the selected content. |
+| insertLink | Inserts a hyperlink at the cursor position or converts the selected text into a hyperlink. |
+| insertTable | Inserts a table with the specified number of rows, columns, and optional width configuration. |
+| insertImage | Inserts an image using a URL with optional alternative text, dimensions, and CSS classes. |
+| undoLastAction | Reverts the most recent change made in the editor. |
+| redoLastAction | Re-applies the most recent action that was undone. |
+| clearFormatting | Removes inline formatting from the selected content and resets it to the default style. |
+| printContent | Opens the browser print dialog for the Rich Text Editor content. |
+| setCodeBlock | Inserts a syntax-highlighted code block for the specified programming language. |
+| applyNumberedListFormat | Applies or removes numbered-list formatting using styles such as decimal, Roman numerals, or alphabetic numbering. |
+| applyBulletedListFormat | Applies or removes bulleted-list formatting using disc, circle, or square bullet styles. |
+| insertBR | Inserts a soft line break at the current cursor position without creating a new paragraph. |
+
+### Example prompts
+
+The effectiveness of WebMCP tools depends on the quality of the prompt provided to the AI assistant. Clear and specific instructions help the AI choose the appropriate tool and produce accurate results. Here are some example prompts for the Rich Text Editor component:
+
+> "Read the complete content and summarize the document."
+
+> "Convert the selected text into a level-two heading, center-align it, and make it bold."
+
+> "Insert a three-column table with five rows at the current cursor position."
+
+> "Add a hyperlink to the selected text using `https://www.syncfusion.com`."
+
+> "Remove all inline formatting from the selected content."
+
 ## PDF Viewer
 
-The Syncfusion® PDF Viewer component exposes **23 tools** that enable AI agents to navigate pages, search and extract text, inspect page metadata, manage form fields, inspect bookmarks, handle annotations, manage redactions, adjust viewing/zoom, print, download, and automate PDF document workflows.
+The Syncfusion® PDF Viewer component exposes **23 tools** that enable AI agents to navigate pages, search and extract text, inspect page metadata, manage form fields, inspect bookmarks, handle annotations, manage redactions, adjust viewing/zoom, print, download, and automate PDF document workflows. Explore the Syncfusion® Angular PDF Viewer component with WebMCP integration through this [demo](https://demos.syncfusion.com/pdf-viewer-sdk/webmcp/index.html).
 
 | Tool Name | Description |
 |---|---|
@@ -165,7 +306,7 @@ The Syncfusion® PDF Viewer component exposes **23 tools** that enable AI agents
 
 ## Pivot Table
 
-The Syncfusion® Pivot Table component exposes **23 tools**, giving AI agents full programmatic control over pivot data manipulation, analysis, formatting, and visualization.
+The Syncfusion® Pivot Table component exposes **23 tools**, giving AI agents full programmatic control over pivot data manipulation, analysis, formatting, and visualization. Explore the Syncfusion® Angular Pivot Table component with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/pivot-table/webmcp/index.html).
 
 | Tool Name | Description |
 |-----------|--------------|
@@ -207,7 +348,7 @@ The Syncfusion® Scheduler component exposes 5 tools, giving AI agents full prog
 
 ## Spreadsheet
 
-The Syncfusion® Spreadsheet component exposes **28 tools** across six categories, giving AI agents full programmatic control over data, formatting, structure, and visualizations.
+The Syncfusion® Spreadsheet component exposes **28 tools** across six categories, giving AI agents full programmatic control over data, formatting, structure, and visualizations. Explore the Syncfusion® Angular Spreadsheet component with WebMCP integration through this [demo](https://demos.syncfusion.com/spreadsheet-editor-sdk/webmcp/index.html).
 
 | Tool Name | Description |
 |---|---|
