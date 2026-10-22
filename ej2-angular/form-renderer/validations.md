@@ -14,7 +14,7 @@ Validations make sure a form only accepts values that satisfy the rules declared
 
 Validation runs in two situations:
 
-* **On submit** — when the user clicks a `buttonType: "submit"` button. The renderer checks every visible, enabled field. If any rule fails, the `submit` event will be raised with `isValid` argument with `false` as value and the failing field shows an error message.
+* **On submit** — when the user clicks a `buttonType: "submit"` button. The renderer checks every visible, enabled field. If any rule fails, the [submit](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#submit) event will be raised with [isValid](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/submiteventargs#isvalid) argument with `false` as value and the failing field shows an error message.
 * **On change** — for the most common rules, the renderer re-runs the validation as soon as the field's value changes, so the user sees errors clear in real time instead of waiting for submit.
 
 Validations come in two flavors:

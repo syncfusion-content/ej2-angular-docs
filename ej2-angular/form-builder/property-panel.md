@@ -39,63 +39,29 @@ In the property panel, different tabs are available for each form field. They ar
 The property panel automatically saves your changes as you make them. There is no Save button — any adjustment you make is instantly applied to your form and reflected on the design canvas. This makes editing fast and seamless, so you can focus on building your form without worrying about saving your work.
 
 ## Adding a new property in the property panel
-Properties of the built-in Syncfusion controls, or properties related to the [template](./template), can be added dynamically to the property panel using the `setProperty` method in the Form Builder.
+Properties of the built-in Syncfusion controls, or properties related to the [template](./template), can be added dynamically to the property panel using the [setProperty](https://ej2.syncfusion.com/angular/documentation/api/form-builder/index-default#setproperty) method in the Form Builder.
 
-```ts
-import { Component, ViewChild } from '@angular/core';
-import { FormBuilderComponent, FormBuilderModule, FormWidgetType } from '@syncfusion/ej2-angular-form-builder';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/form-builder/property-panel-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/form-builder/property-panel-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [FormBuilderModule],
-  template: `
-  <ejs-form-builder #formObj [enablePreview]="false"></ejs-form-builder>
-  `
-})
-export class App {
-  @ViewChild('formObj') public formObj?: FormBuilderComponent;
-
-    ngAfterViewInit() {
-    // Set property for Textarea widget
-    this.formObj?.setProperty(FormWidgetType.Textarea, {
-      key: 'enableRtl',
-      label: 'Enable RTL',
-      type: 'boolean',
-      default: false
-    });
-  }
-}
-```
-
-![Adding new Property in property panel](./images/from-builder-setproperty.png)
+{% previewsample "page.domainurl/samples/form-builder/property-panel-cs1" %}
 
 ## Hiding a property from the property panel
-An existing property in the property panel can be hidden by getting the property details using the `getProperty` method of the Form Builder and setting the `visible` property to **false**.
+An existing property in the property panel can be hidden by getting the property details using the [getProperty](https://ej2.syncfusion.com/angular/documentation/api/form-builder/index-default#getproperty) method of the Form Builder and setting the `visible` property to **false**.
 
-```ts
-import { Component, ViewChild } from '@angular/core';
-import { FormBuilderComponent, FormBuilderModule, FormWidgetType } from '@syncfusion/ej2-angular-form-builder';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/form-builder/property-panel-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/form-builder/property-panel-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [FormBuilderModule],
-  template: `
-  <ejs-form-builder #formObj [enablePreview]="false"></ejs-form-builder>
-  `
-})
-export class App {
-  @ViewChild('formObj') public formObj?: FormBuilderComponent;
-
-  ngAfterViewInit() {
-    const labelProp = this.formObj?.getProperty(FormWidgetType.Textarea, "label");
-    if (labelProp) {
-      labelProp.visible = false;
-    }
-    this.formObj?.refresh();
-  }
-}
-```
-
-![Hiding a property from property panel](./images/form-builder-hiding-property.png)
+{% previewsample "page.domainurl/samples/form-builder/property-panel-cs2" %}

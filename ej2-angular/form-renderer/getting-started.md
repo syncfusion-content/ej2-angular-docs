@@ -117,87 +117,7 @@ After package and theme setup, update the root component. File and class names c
 
 The Form Renderer is a schema-driven component. Define your form by passing a JSON schema to the `schema` property of the `<ej2-form-renderer>` element, and capture the submitted form data through the `submit` event.
 
- ```typescript
-import { Component } from '@angular/core';
-import { FormRendererAllModule, Schema } from '@syncfusion/ej2-angular-form-renderer';
-
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [FormRendererAllModule],
-  template: `<ejs-form-renderer [schema]="schema" (submit)="onSubmit($event)"></ejs-form-renderer>`
-})
-
-export class AppComponent {
-  public schema: Schema = {
-    "version": "0.1.0",
-    "properties": {
-      "emailAddress": {
-        "id": "textbox_1785491685456_167",
-        "name": "emailAddress",
-        "type": "string",
-        "label": "Email Address",
-        "textboxType": "email",
-        "required": true,
-        "widget": "textbox"
-      },
-      "password": {
-        "id": "textbox_1785491685456_537",
-        "name": "password",
-        "type": "string",
-        "label": "Password",
-        "textboxType": "password",
-        "required": true,
-        "minLength": 6,
-        "widget": "textbox"
-      },
-      "rememberMe": {
-        "id": "checkbox_1785491685456_262",
-        "name": "rememberMe",
-        "type": "boolean",
-        "label": "Remember Me",
-        "widget": "checkbox"
-      },
-      "submit": {
-        "id": "submit_button_initial",
-        "name": "defaultFormsubmit",
-        "type": "button",
-        "label": "Submit",
-        "buttonType": "submit",
-        "widget": "button",
-        "style": "primary",
-        "disabled": false
-      }
-    },
-    "layout": [
-      {
-        "type": "field",
-        "propertyId": "emailAddress"
-      },
-      {
-        "type": "field",
-        "propertyId": "password"
-      },
-      {
-        "type": "field",
-        "propertyId": "rememberMe"
-      },
-      {
-        "type": "field",
-        "propertyId": "submit"
-      }
-    ],
-    "settings": {
-      "name": "Untitled Form"
-    }
-  };
-  public onSubmit(args: any) {
-    if(args.data){
-    console.log(args.data, args.isValid);
-    }
-  }
-}
-```
+{% include code-snippet/form-renderer/getting-started-cs1/src/app.component.ts %}
 
 ## Running the application
 
@@ -211,7 +131,7 @@ When the build succeeds, the CLI reports a local URL (default: http://localhost:
 
 The output will appear as follows:
 
-![Angular Form Renderer](./images/form-renderer.png)
+{% previewsample "page.domainurl/samples/form-renderer/getting-started-cs1" %}
 
 ## See Also
 

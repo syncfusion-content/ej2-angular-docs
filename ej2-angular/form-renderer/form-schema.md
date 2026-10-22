@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Form Schema in Angular Form Renderer component
 
-The Form Renderer is a schema-driven component. Everything the form renders — fields, layout, validation, conditional logic, and expression values — is declared in a single JSON object called the **form schema**, and that schema is passed to the component through the `schema` property.
+The Form Renderer is a schema-driven component. Everything the form renders — fields, layout, validation, conditional logic, and expression values — is declared in a single JSON object called the **form schema**, and that schema is passed to the component through the [schema](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/schema) property.
 
 ```html
-<ejs-form-renderer id="form-renderer-control" :schema="formSchema"></ejs-form-renderer>
+<ejs-form-renderer id="form-renderer-control" [schema]="formSchema"></ejs-form-renderer>
 ```
 
 ## Creating the Form Schema Visually
@@ -76,7 +76,7 @@ A flat dictionary where each key represents a property and its corresponding val
 
 ### Layout Definitions
 
-The `layout` property in the form schema defines the layout nodes within which the widgets are placed. The example below uses the same `firstName` and `country` fields defined above, both placed within a single panel:
+The [layout](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/schema#layout) property in the form schema defines the layout nodes within which the widgets are placed. The example below uses the same `firstName` and `country` fields defined above, both placed within a single panel:
 
 ```json
 {
