@@ -1,0 +1,27 @@
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/dashboard-layout/index.css";
+
+.control-section {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#defaultLayout {
+    padding: 10px;
+}
+
+#defaultLayout .e-panel .e-panel-container .content {
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    line-height: 90px;
+}
+
+#defaultLayout .e-panel .e-panel-content {
+    align-content: center;
+    text-align: center;
+}
+
+#defaultLayout .e-panel {
+    transition: none !important;
+}
