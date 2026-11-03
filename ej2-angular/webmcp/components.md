@@ -50,7 +50,7 @@ The Syncfusion® DataGrid component exposes **27 tools**, giving AI agents full 
 
 ## Diagram
 
-The Syncfusion® Diagram component exposes **19 tools**, giving AI agents full programmatic control over diagram creation, manipulation, and management.
+The Syncfusion® Diagram component exposes **19 tools**, giving AI agents full programmatic control over diagram creation, manipulation, and management. Explore the Syncfusion® Angular Diagram component with WebMCP integration through this [demo](https://demos.syncfusion.com/diagram-sdk/diagram-webmcp/index.html).
 
 | Tool Name | Description |
 |-----------|-------------|
@@ -90,7 +90,7 @@ The Syncfusion® File Manager component exposes **7 tools** that enable AI agent
 
 ## Gantt Chart
 
-The Syncfusion® Gantt component exposes 38 tools, giving AI agents full programmatic control over tasks, scheduling, hierarchy, view/layout, undo/redo history, and exports.
+The Syncfusion® Gantt component exposes 38 tools, giving AI agents full programmatic control over tasks, scheduling, hierarchy, view/layout, undo/redo history, and exports. Explore the Syncfusion® Angular Gantt Chart component with WebMCP integration through this [demo](https://demos.syncfusion.com/gantt-sdk/gantt-chart/webmcp/index.html).
 
 | Tool Name | Description |
 |---|---|

@@ -1,7 +1,0 @@
-@import "node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-
-.e-excel-ascending,
-.e-excel-descending,
-.e-separator.e-excel-separator {
- display: none;
-}
