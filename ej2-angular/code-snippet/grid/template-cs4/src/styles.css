@@ -1,8 +1,0 @@
-@import "node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-
-.e-row[aria-selected="true"] .e-customizedexpandcell {
-    background-color: #e0e0e0;
-}
-.e-grid.e-gridhover tr[role='row']:hover {
-    background-color: #eee;
-}
