@@ -1,6 +1,0 @@
-@import "node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-
-.e-grid .e-toolbar .e-tbar-btn-text,
-.e-grid .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
-    display: none;
-}

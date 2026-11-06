@@ -1,8 +1,0 @@
-@import "node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";.e-grid .e-icon-grightarrow::before,
-.e-grid-menu .e-icon-grightarrow::before {
-content: '\e85f';
-}
-.e-grid .e-icon-gdownarrow::before,
-.e-grid-menu .e-icon-gdownarrow::before {
-content: '\e83f';
-}

@@ -1,8 +1,0 @@
-<ejs-schedule width='100%' height='550px' [selectedDate]="selectedDate" cssClass='schedule-event-template'  [readonly]='readonly' [eventSettings]="eventSettings">
-    <ng-template #eventSettingsTemplate let-data>
-        <div class='template-wrap' [style.background]="data.SecondaryColor">
-            <div class="subject" [style.background]="data.PrimaryColor">{{data.Subject}}</div>
-            <div class="time" [style.background]="data.PrimaryColor">Time: {{getTimeString(data.StartTime)}} - {{getTimeString(data.EndTime)}}</div>
-        </div>
-    </ng-template>
-</ejs-schedule>

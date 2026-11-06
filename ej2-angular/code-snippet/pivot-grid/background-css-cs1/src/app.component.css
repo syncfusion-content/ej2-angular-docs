@@ -1,9 +1,0 @@
-/* csslint ignore:start */
-
-.e-pivotview .e-cellselectionbackground,
-.e-pivotview .e-selectionbackground,
-.e-pivotview .e-grid .e-rowsheader.e-selectionbackground,
-.e-pivotview .e-grid .e-columnsheader.e-selectionbackground { 
-    background-color: greenYellow !important; 
-}
-/* csslint ignore:end */

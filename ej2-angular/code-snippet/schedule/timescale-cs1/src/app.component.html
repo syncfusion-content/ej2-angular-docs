@@ -1,8 +1,0 @@
-<ejs-schedule width='100%' height='550px' [selectedDate]="selectedDate" [eventSettings]="eventSettings" [timeScale]="timeScale">
-    <ng-template #timeScaleMajorSlotTemplate let-data>
-        <div class="majorTime">{{getMajorTime(data.date)}}</div>
-    </ng-template>
-    <ng-template #timeScaleMinorSlotTemplate let-data>
-        <div class="minorTime">{{getMinorTime(data.date)}}</div>
-    </ng-template>
-</ejs-schedule>
