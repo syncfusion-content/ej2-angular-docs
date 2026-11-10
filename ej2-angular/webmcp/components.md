@@ -336,7 +336,7 @@ The Syncfusion® Pivot Table component exposes **23 tools**, giving AI agents fu
 
 ## Scheduler
 
-The Syncfusion® Scheduler component exposes 5 tools, giving AI agents full programmatic control over events, view switching, and date navigation.
+The Syncfusion® Scheduler component exposes 5 tools, giving AI agents full programmatic control over events, view switching, and date navigation. Explore the Syncfusion® Angular Scheduler component with WebMCP integration through this [demo](https://demos.syncfusion.com/scheduler-sdk/webmcp-integration/index.html).
 
 | Tool Name | Description |
 | --- | --- |

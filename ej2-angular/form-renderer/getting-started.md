@@ -117,7 +117,11 @@ After package and theme setup, update the root component. File and class names c
 
 The Form Renderer is a schema-driven component. Define your form by passing a JSON schema to the `schema` property of the `<ej2-form-renderer>` element, and capture the submitted form data through the `submit` event.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/form-renderer/getting-started-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Running the application
 
