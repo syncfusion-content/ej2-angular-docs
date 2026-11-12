@@ -50,7 +50,7 @@ The Syncfusion® DataGrid component exposes **27 tools**, giving AI agents full 
 
 ## Diagram
 
-The Syncfusion® Diagram component exposes **19 tools**, giving AI agents full programmatic control over diagram creation, manipulation, and management.
+The Syncfusion® Diagram component exposes **19 tools**, giving AI agents full programmatic control over diagram creation, manipulation, and management. Explore the Syncfusion® Angular Diagram component with WebMCP integration through this [demo](https://demos.syncfusion.com/diagram-sdk/diagram-webmcp/index.html).
 
 | Tool Name | Description |
 |-----------|-------------|
