@@ -20,28 +20,20 @@ You can switch to the **Preview** tab to see a live preview of the form. This vi
 
 ## Disabling the preview
 
-The preview option can be disabling by setting the `enablePreview` property to `false`. The default value is `true`.
+The preview option can be disabling by setting the [enablePreview](https://ej2.syncfusion.com/angular/documentation/api/form-builder/index-default#enablepreview) property to `false`. The default value is `true`.
 
-```ts
-import { Component, ViewChild } from '@angular/core';
-import { FormBuilderComponent, FormBuilderModule } from '@syncfusion/ej2-angular-form-builder';
-
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [FormBuilderModule],
-  template: `
-  <ejs-form-builder #formObj [enablePreview]="false"></ejs-form-builder>
-  `
-})
-export class App {
-  @ViewChild('formObj') public formObj?: FormBuilderComponent;
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/form-builder/preview-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/form-builder/preview-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 The output will appear as follows:
 
-![Disabling the preview in Form Builder](./images/form-builder-disable-preview.png)
+{% previewsample "page.domainurl/samples/form-builder/preview-cs1" %}
 
 ## JSON code preview
 

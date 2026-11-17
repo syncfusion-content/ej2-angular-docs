@@ -41,7 +41,7 @@ The form created with the Form Renderer control can be submitted when a submit b
 }
 ```
 
-When the user clicks the submit button, the renderer validates the form. If validation passes, the `submit` event fires with the current form data and an `isValid` flag.
+When the user clicks the submit button, the renderer validates the form. If validation passes, the [submit](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#submit) event fires with the current form data and an [isValid](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/submiteventargs#isvalid) flag.
 
 | Member | Type | Description |
 | --- | --- | --- |
@@ -52,71 +52,16 @@ When the user clicks the submit button, the renderer validates the form. If vali
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a submit button. When the user clicks **Submit**, the `submit` event is raised with the form data and the validation status:
 
-```ts
-import { FormRenderer } from '@syncfusion/ej2-formrenderer';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/form-renderer/submit-form-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/form-renderer/submit-form-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-// initialize Form Renderer control
-let formRenderer: FormRenderer = new FormRenderer({
-    schema: {
-        "version": "0.1.0",
-        "properties": {
-            "emailAddress": {
-                "id": "textbox_1785491685456_167",
-                "name": "emailAddress",
-                "type": "string",
-                "label": "Email Address",
-                "textboxType": "email",
-                "required": true,
-                "widget": "textbox"
-            },
-            "password": {
-                "id": "textbox_1785491685456_537",
-                "name": "password",
-                "type": "string",
-                "label": "Password",
-                "textboxType": "password",
-                "required": true,
-                "minLength": 6,
-                "widget": "textbox"
-            },
-            "rememberMe": {
-                "id": "checkbox_1785491685456_262",
-                "name": "rememberMe",
-                "type": "boolean",
-                "label": "Remember Me",
-                "widget": "checkbox"
-            },
-            "submit": {
-                "id": "submit_button_initial",
-                "name": "defaultFormsubmit",
-                "type": "button",
-                "label": "Submit",
-                "buttonType": "submit",
-                "widget": "button",
-                "style": "primary",
-                "disabled": false
-            }
-        },
-        "layout": [
-            { "type": "field", "propertyId": "emailAddress" },
-            { "type": "field", "propertyId": "password" },
-            { "type": "field", "propertyId": "rememberMe" },
-            { "type": "field", "propertyId": "submit" }
-        ],
-        "settings": {
-            "name": "Untitled Form"
-        }
-    },
-    submit: onSubmit
-});
-
-// Render initialized Form Renderer.
-formRenderer.appendTo('#formrenderer');
-
-function onSubmit(args: any): void {
-    console.log(args);
-}
-```
+{% previewsample "page.domainurl/samples/form-renderer/submit-form-cs1" %}
 
 ## Resetting the form
 
@@ -141,67 +86,16 @@ The `reset` button does not raise an event. Clicking it triggers the browser's n
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a reset button. When the user clicks **Reset**, every field is restored to its initial state:
 
-```ts
-import { FormRenderer } from '@syncfusion/ej2-formrenderer';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/form-renderer/reset-form-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/form-renderer/reset-form-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-// initialize Form Renderer control
-let formRenderer: FormRenderer = new FormRenderer({
-    schema: {
-        "version": "0.1.0",
-        "properties": {
-            "emailAddress": {
-                "id": "textbox_1785491685456_167",
-                "name": "emailAddress",
-                "type": "string",
-                "label": "Email Address",
-                "textboxType": "email",
-                "required": true,
-                "widget": "textbox"
-            },
-            "password": {
-                "id": "textbox_1785491685456_537",
-                "name": "password",
-                "type": "string",
-                "label": "Password",
-                "textboxType": "password",
-                "required": true,
-                "minLength": 6,
-                "widget": "textbox"
-            },
-            "rememberMe": {
-                "id": "checkbox_1785491685456_262",
-                "name": "rememberMe",
-                "type": "boolean",
-                "label": "Remember Me",
-                "widget": "checkbox"
-            },
-            "reset": {
-                "id": "reset_button_initial",
-                "name": "defaultFormreset",
-                "type": "button",
-                "label": "Reset",
-                "buttonType": "reset",
-                "widget": "button",
-                "style": "primary",
-                "disabled": false
-            }
-        },
-        "layout": [
-            { "type": "field", "propertyId": "emailAddress" },
-            { "type": "field", "propertyId": "password" },
-            { "type": "field", "propertyId": "rememberMe" },
-            { "type": "field", "propertyId": "reset" }
-        ],
-        "settings": {
-            "name": "Untitled Form"
-        }
-    }
-});
-
-// Render initialized Form Renderer.
-formRenderer.appendTo('#formrenderer');
-```
-
+{% previewsample "page.domainurl/samples/form-renderer/reset-form-cs1" %}
 
 ## Adding custom click actions
 
@@ -222,7 +116,7 @@ A plain click button is a field in `properties` with `buttonType: "button"`. Use
 }
 ```
 
-When the user clicks a `buttonType: "button"` button, the renderer raises the `buttonClick` event.
+When the user clicks a `buttonType: "button"` button, the renderer raises the [buttonClick](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#buttonclick) event.
 
 | Member | Type | Description |
 | --- | --- | --- |
@@ -232,75 +126,20 @@ When the user clicks a `buttonType: "button"` button, the renderer raises the `b
 
 The following example renders a Form Renderer with email, password, and remember-me fields, along with a custom click button. When the user clicks **Cancel**, the `buttonClick` event is raised with the button's name, label, and the original click event:
 
-```ts
-import { FormRenderer } from '@syncfusion/ej2-formrenderer';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/form-renderer/custom-click-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/form-renderer/custom-click-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-// initialize Form Renderer control
-let formRenderer: FormRenderer = new FormRenderer({
-    schema: {
-        "version": "0.1.0",
-        "properties": {
-            "emailAddress": {
-                "id": "textbox_1785491685456_167",
-                "name": "emailAddress",
-                "type": "string",
-                "label": "Email Address",
-                "textboxType": "email",
-                "required": true,
-                "widget": "textbox"
-            },
-            "password": {
-                "id": "textbox_1785491685456_537",
-                "name": "password",
-                "type": "string",
-                "label": "Password",
-                "textboxType": "password",
-                "required": true,
-                "minLength": 6,
-                "widget": "textbox"
-            },
-            "rememberMe": {
-                "id": "checkbox_1785491685456_262",
-                "name": "rememberMe",
-                "type": "boolean",
-                "label": "Remember Me",
-                "widget": "checkbox"
-            },
-            "cancel": {
-                "id": "cancel_button_initial",
-                "name": "defaultFormcancel",
-                "type": "button",
-                "label": "Cancel",
-                "buttonType": "button",
-                "widget": "button",
-                "style": "primary",
-                "disabled": false
-            }
-        },
-        "layout": [
-            { "type": "field", "propertyId": "emailAddress" },
-            { "type": "field", "propertyId": "password" },
-            { "type": "field", "propertyId": "rememberMe" },
-            { "type": "field", "propertyId": "cancel" }
-        ],
-        "settings": {
-            "name": "Untitled Form"
-        }
-    },
-    buttonClick: onButtonClick
-});
-
-// Render initialized Form Renderer.
-formRenderer.appendTo('#formrenderer');
-
-function onButtonClick(args: any): void {
-    console.log(args);
-}
-```
+{% previewsample "page.domainurl/samples/form-renderer/custom-click-cs1" %}
 
 ## Detecting the field change
 
-When the value of any field changes, the renderer raises the `change` event. Typing into the `email` or `password` field, picking a date, toggling a switch, picking a value from a dropdown, and program-driven changes from expression evaluation all raise it.
+When the value of any field changes, the renderer raises the [change](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#change) event. Typing into the `email` or `password` field, picking a date, toggling a switch, picking a value from a dropdown, and program-driven changes from expression evaluation all raise it.
 
 | Member | Type | Description |
 | --- | --- | --- |
@@ -317,125 +156,35 @@ When the value of a field changes, the renderer:
 3. Re-runs any `customValidation` rules that depend on the field.
 4. Emits the `change` event with `{ fieldName, label, value }`.
 
-The following example renders a Form Renderer with textbox and checkbox fields. Whenever the value of any field changes, the `change` event is raised with the changed field's name, label, and new value:
+The following example renders a Form Renderer with textbox and checkbox fields. Whenever the value of any field changes, the [change](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#change) event is raised with the changed field's name, label, and new value:
 
-```ts
-import { FormRenderer } from '@syncfusion/ej2-formrenderer';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/form-renderer/field-change-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/form-renderer/field-change-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-// initialize Form Renderer control
-let formRenderer: FormRenderer = new FormRenderer({
-    schema: {
-        "version": "0.1.0",
-        "properties": {
-            "emailAddress": {
-                "id": "textbox_1785491685456_167",
-                "name": "emailAddress",
-                "type": "string",
-                "label": "Email Address",
-                "textboxType": "email",
-                "required": true,
-                "widget": "textbox"
-            },
-            "password": {
-                "id": "textbox_1785491685456_537",
-                "name": "password",
-                "type": "string",
-                "label": "Password",
-                "textboxType": "password",
-                "required": true,
-                "minLength": 6,
-                "widget": "textbox"
-            },
-            "rememberMe": {
-                "id": "checkbox_1785491685456_262",
-                "name": "rememberMe",
-                "type": "boolean",
-                "label": "Remember Me",
-                "widget": "checkbox"
-            }
-        },
-        "layout": [
-            { "type": "field", "propertyId": "emailAddress" },
-            { "type": "field", "propertyId": "password" },
-            { "type": "field", "propertyId": "rememberMe" }
-        ],
-        "settings": {
-            "name": "Untitled Form"
-        }
-    },
-    change: onChange
-});
-
-// Render initialized Form Renderer.
-formRenderer.appendTo('#formrenderer');
-
-function onChange(args: any): void {
-    console.log(args);
-}
-```
+{% previewsample "page.domainurl/samples/form-renderer/field-change-cs1" %}
 
 ## Customizing the form once the control is rendered
 
-The `created` event fires **once**, after the form has finished rendering and every input is in the DOM. Use it for any setup that needs the renderer to be ready — for example, calling `getComponent` to obtain an input instance, attaching a third-party mask, or wiring up toolbar buttons that operate on the form.
+The [created](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#created) event fires **once**, after the form has finished rendering and every input is in the DOM. Use it for any setup that needs the renderer to be ready — for example, calling [getComponent](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#getcomponent) to obtain an input instance, attaching a third-party mask, or wiring up toolbar buttons that operate on the form.
 
 The following example renders a Form Renderer with email, password, and remember-me fields. Once the form has finished rendering, the `created` event is raised with an empty payload:
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/form-renderer/created-event-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/form-renderer/created-event-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
 
-```ts
-import { FormRenderer } from '@syncfusion/ej2-formrenderer';
-
-// initialize Form Renderer control
-let formRenderer: FormRenderer = new FormRenderer({
-    schema: {
-        "version": "0.1.0",
-        "properties": {
-            "emailAddress": {
-                "id": "textbox_1785491685456_167",
-                "name": "emailAddress",
-                "type": "string",
-                "label": "Email Address",
-                "textboxType": "email",
-                "required": true,
-                "widget": "textbox"
-            },
-            "password": {
-                "id": "textbox_1785491685456_537",
-                "name": "password",
-                "type": "string",
-                "label": "Password",
-                "textboxType": "password",
-                "required": true,
-                "minLength": 6,
-                "widget": "textbox"
-            },
-            "rememberMe": {
-                "id": "checkbox_1785491685456_262",
-                "name": "rememberMe",
-                "type": "boolean",
-                "label": "Remember Me",
-                "widget": "checkbox"
-            }
-        },
-        "layout": [
-            { "type": "field", "propertyId": "emailAddress" },
-            { "type": "field", "propertyId": "password" },
-            { "type": "field", "propertyId": "rememberMe" }
-        ],
-        "settings": {
-            "name": "Untitled Form"
-        }
-    },
-    created: onCreated
-});
-
-// Render initialized Form Renderer.
-formRenderer.appendTo('#formrenderer');
-
-function onCreated(): void {
-    console.log("Form is created");
-}
-```
-
+{% previewsample "page.domainurl/samples/form-renderer/created-event-cs1" %}
 
 ## See also
 
