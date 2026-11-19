@@ -61,8 +61,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-renderer/submit-form-cs1" %}
-
 ## Resetting the form
 
 A reset button restores the form to its initial state. To enable form reset, declare a button field in `properties` with `buttonType: "reset"` and include it in the `layout` array.
@@ -94,8 +92,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% include code-snippet/form-renderer/reset-form-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "page.domainurl/samples/form-renderer/reset-form-cs1" %}
 
 ## Adding custom click actions
 
@@ -135,8 +131,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-renderer/custom-click-cs1" %}
-
 ## Detecting the field change
 
 When the value of any field changes, the renderer raises the [change](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#change) event. Typing into the `email` or `password` field, picking a date, toggling a switch, picking a value from a dropdown, and program-driven changes from expression evaluation all raise it.
@@ -167,8 +161,6 @@ The following example renders a Form Renderer with textbox and checkbox fields. 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-renderer/field-change-cs1" %}
-
 ## Customizing the form once the control is rendered
 
 The [created](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#created) event fires **once**, after the form has finished rendering and every input is in the DOM. Use it for any setup that needs the renderer to be ready — for example, calling [getComponent](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/index-default#getcomponent) to obtain an input instance, attaching a third-party mask, or wiring up toolbar buttons that operate on the form.
@@ -183,8 +175,6 @@ The following example renders a Form Renderer with email, password, and remember
 {% include code-snippet/form-renderer/created-event-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "page.domainurl/samples/form-renderer/created-event-cs1" %}
 
 ## See also
 
