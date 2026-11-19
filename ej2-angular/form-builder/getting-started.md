@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Form Builder Getting Started | Syncfusion
-description: Check out how to get started with the Syncfusion Angular Form Builder component, including installation, setup, and a basic example.
+title: Getting started with Angular Form Builder | Syncfusion
+description: Check out how to get started with the Syncfusion Angular Form Builder control, including installation, setup, and a basic example.
 platform: ej2-angular
 control: Getting Started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Form Builder component
+# Getting Started with Angular Form Builder control
 
 The Form Builder is an intuitive, visual form designer that lets the user to create and customize forms interactively by dragging and dropping fields—no code required. Users can visually design forms, configure field properties, and preview the generated form in real time. The Form Builder also allows to export the form schema for use with the [Form Renderer](https://ej2.syncfusion.com/angular/documentation/form-renderer/getting-started) control.
 
