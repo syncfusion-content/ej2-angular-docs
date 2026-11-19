@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting and Importing in Angular Form Builder control | Syncfusion
-description: Learn how to export and import in the Angular Form Builder control. Use export to reuse the generated form schema in Form Renderer, and import to continue editing an existing schema in Form Builder.
+description: Learn how to export and import form schemas in the Angular Form Builder. Reuse schemas in Form Renderer or continue editing existing forms.
 platform: ej2-angular
 control: Exporting and Importing
 documentation: ug
