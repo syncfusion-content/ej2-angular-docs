@@ -30,8 +30,6 @@ Multiple `<e-customwidgetsetting>` entries can be added inside `<e-customwidgets
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-renderer/template-cs1" %}
-
 ## Adding a template to a single or specific field
 
 To apply a template to a specific field rather than an entire widget type, use [fieldName](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/customwidgetsetting#fieldname) or [templateId](https://ej2.syncfusion.com/angular/documentation/api/form-renderer/customwidgetsetting#templateid) on `<e-customwidgetsetting>` instead of `type`:
@@ -47,5 +45,3 @@ To apply a template to a specific field rather than an entire widget type, use [
 {% include code-snippet/form-renderer/template-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "page.domainurl/samples/form-renderer/template-cs2" %}
