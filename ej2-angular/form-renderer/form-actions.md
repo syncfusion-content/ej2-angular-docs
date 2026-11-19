@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Form Actions in Angular Form Renderer Component | Syncfusion
-description: Learn all about the form actions such as submit, change, reset, and others in the Syncfusion Angular Form Renderer component of Syncfusion Essential JS 2 and more.
+description: Learn form actions such as submit, change, reset, and others in the Syncfusion Angular Form Renderer component of Syncfusion Essential JS 2.
 control: Form Actions
 platform: ej2-angular
 documentation: ug
