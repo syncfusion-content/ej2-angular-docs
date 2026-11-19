@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Property Panel
+# Configure Form Fields with the Property Panel
 
 The **Property Panel** is the right pane of the **Form Builder**. Whenever a field is selected on the design canvas — either by dropping a new field item or by clicking the **Edit** action on an existing field — the right pane switches to property mode and renders the configuration UI for that component.
 
