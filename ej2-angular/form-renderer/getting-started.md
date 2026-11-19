@@ -135,7 +135,7 @@ When the build succeeds, the CLI reports a local URL (default: http://localhost:
 
 The output will appear as follows:
 
-{% previewsample "page.domainurl/samples/form-renderer/getting-started-cs1" %}
+![Angular Form Renderer](./images/form-renderer.png)
 
 ## See Also
 
