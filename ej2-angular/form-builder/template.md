@@ -34,7 +34,7 @@ Once a field is dragged onto the design canvas, the custom template renders auto
 
 In the Preview tab, the templates are displayed so that you can validate the created form.
 
-{% previewsample "page.domainurl/samples/form-builder/template-cs1" %}
+![Templates in Form Builder](./images/form-builder-template.gif)
 
 ## Adding properties of the template in property panel
 
