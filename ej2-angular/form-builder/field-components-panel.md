@@ -93,7 +93,7 @@ Dragging a template onto the canvas inserts the entire set of components defined
 
 The output will appear as follows:
 
-{% previewsample "page.domainurl/samples/form-builder/field-components-cs1" %}
+![Templates tab](./images/form-builder-form-templates.png)
 
 ## Customizing the toolbox items
 
@@ -108,7 +108,7 @@ The form fields in the toolbox can be customized using the [toolboxCategories](h
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-builder/field-components-cs2" %}
+![Customizing toolbox items](./images/form-builder-toolbox-categories.png)
 
 ## Drag and drop behavior
 
