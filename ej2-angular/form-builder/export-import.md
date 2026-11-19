@@ -33,7 +33,7 @@ Exporting can be disabled in the Form Builder component by setting the [allowExp
 
 The output will appear as follows:
 
-{% previewsample "page.domainurl/samples/form-builder/export-import-cs1" %}
+![Disabling the export](./images/form-builder-export.png)
 
 ## Import form schema
 
@@ -50,4 +50,4 @@ The following example shows how to import a schema object to the Form Builder.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-builder/export-import-cs2" %}
+![Import from schema](./images/form-builder-import-schema.png)
