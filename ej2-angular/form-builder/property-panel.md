@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Property Panel
+# Configure Form Fields with the Property Panel
 
 The **Property Panel** is the right pane of the **Form Builder**. Whenever a field is selected on the design canvas — either by dropping a new field item or by clicking the **Edit** action on an existing field — the right pane switches to property mode and renders the configuration UI for that component.
 
@@ -50,7 +50,7 @@ Properties of the built-in Syncfusion controls, or properties related to the [te
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-builder/property-panel-cs1" %}
+![Adding new Property in property panel](./images/from-builder-setproperty.png)
 
 ## Hiding a property from the property panel
 An existing property in the property panel can be hidden by getting the property details using the [getProperty](https://ej2.syncfusion.com/angular/documentation/api/form-builder/index-default#getproperty) method of the Form Builder and setting the `visible` property to **false**.
@@ -64,4 +64,4 @@ An existing property in the property panel can be hidden by getting the property
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-builder/property-panel-cs2" %}
+![Hiding a property from property panel](./images/form-builder-hiding-property.png)
