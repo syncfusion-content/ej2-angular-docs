@@ -50,7 +50,7 @@ Properties of the built-in Syncfusion controls, or properties related to the [te
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-builder/property-panel-cs1" %}
+![Adding new Property in property panel](./images/from-builder-setproperty.png)
 
 ## Hiding a property from the property panel
 An existing property in the property panel can be hidden by getting the property details using the [getProperty](https://ej2.syncfusion.com/angular/documentation/api/form-builder/index-default#getproperty) method of the Form Builder and setting the `visible` property to **false**.
@@ -64,4 +64,4 @@ An existing property in the property panel can be hidden by getting the property
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/form-builder/property-panel-cs2" %}
+![Hiding a property from property panel](./images/form-builder-hiding-property.png)
