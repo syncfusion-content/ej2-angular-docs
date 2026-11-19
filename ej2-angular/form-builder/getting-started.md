@@ -142,7 +142,7 @@ When the build succeeds, the CLI reports a local URL (default: http://localhost:
 
 The output will appear as follows:
 
-{% previewsample "page.domainurl/samples/form-builder/getting-started-cs1" %}
+![Angular Form Builder](./images/form-builder.png)
 
 ## Basic components of the Form Builder
 
