@@ -172,7 +172,7 @@ The following example uses the `new` command to create an Angular project with S
 {% highlight bash tabtitle="CMD" %}
 sf new my-app --framework angular --template grid
 {% endhighlight %}
-{% endtabs %}.
+{% endtabs %}
 
 ## Syncfusion CLI commands
   
@@ -350,7 +350,6 @@ The `license activate` command supports following options.
 <td>--file "D:\license.txt"</td>
 <td>To activate the license from a custom file, by specifying its path.</td>
 </tr>
-<tr>
 </table>
 
 > Before activating a Syncfusion<sup style="font-size:70%">&reg;</sup> license through the CLI, remove any existing [registerLicense](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project) method call. If [registerLicense](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project) is present in the project, it overrides the CLI license activation.
@@ -399,11 +398,9 @@ The Syncfusion CLI stores a session token in the following location based on the
 <td>~/Library/Application Support/Syncfusion/session.json</td>
 </tr>
 <tr>
-<tr>
 <td>Linux</td>
 <td>~/.config/syncfusion/session.json</td>
 </tr>
-<tr>
 </table>
 
 #### logout command
@@ -481,7 +478,7 @@ sf --help
 {% endhighlight %}
 {% endtabs %}
 
-### FAQ
+## FAQ
 
 **Which frameworks are supported?**  
 The Syncfusion CLI supports React, Angular, Vue and TypeScript  applications.
